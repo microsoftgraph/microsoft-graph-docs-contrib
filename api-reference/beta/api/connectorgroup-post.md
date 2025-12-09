@@ -44,7 +44,7 @@ The following table lists the properties available for a **connectorGroup**. The
 |id|string| Unique identifier for this connectorGroup. Read-only. |
 |isDefault|Boolean| Indicates whether the connectorGroup is the default. Only a single connector group can be the default connectorGroup and this is preset by the system. |
 |name|string| The name associated with the connectorGroup. |
-|region|string| The region the connectorGroup is assigned to and will optimize traffic for. This region can only be set if **no** connectors or applications are assigned to the connectorGroup. The regions available include: North America, Europe, Australia, Asia, and India. Possible values are: `nam`, `eur`, `aus`, `asia`, `ind`.|
+|region|string| The region the connectorGroup is assigned to and will optimize traffic for. This region can only be set if **no** connectors or applications are assigned to the connectorGroup. The regions available include: North America, Europe, Australia, Asia, and India. The possible values are: `nam`, `eur`, `aus`, `asia`, `ind`.|
 
 ## Response
 

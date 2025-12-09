@@ -1,11 +1,11 @@
 ---
 title: "deviceComplianceUserStatus resource type"
-description: "Not yet documented"
+description: "Intune Deviceconfig Devicecomplianceuserstatus Resources ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/13/2024
+ms.date: 08/01/2024
 ---
 
 # deviceComplianceUserStatus resource type
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
 
 ## Methods
 |Method|Return Type|Description|
@@ -31,7 +31,7 @@ Not yet documented
 |id|String|Key of the entity.|
 |userDisplayName|String|User name of the DevicePolicyStatus.|
 |devicesCount|Int32|Devices count for that user.|
-|status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Compliance status of the policy report. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Compliance status of the policy report. The possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Last modified date time of the policy report.|
 |userPrincipalName|String|UserPrincipalName.|
 

@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /education/reports/readingCoachPassages
 ```
 
@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "get_readingCoachPassages_1"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/reports/readingCoachPassages
 ```
 
@@ -114,7 +114,7 @@ The following example shows the default response from the last 24 hours.
   "@odata.type": "Collection(microsoft.graph.readingCoachPassage)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -170,7 +170,7 @@ The following example shows a request.
   "name": "get_readingCoachPassages_2"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/reports/readingCoachPassages?$filter=practicedAtDateTime gt 2025-06-22T00:00:00Z and practicedAtDateTime lt 2025-06-23T00:00:00Z
 ```
 
@@ -215,7 +215,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.readingCoachPassage)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

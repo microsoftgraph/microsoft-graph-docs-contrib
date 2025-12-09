@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /deviceManagement/groupPolicyDefinitionFiles/{groupPolicyDefinitionFileId}
 PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/definitionFile
 PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues/{groupPolicyDefinitionValueId}/presentationValues/{groupPolicyPresentationValueId}/presentation/definition/category/definitionFile
@@ -58,7 +58,7 @@ The following table shows the properties that are required when you create the [
 |languageCodes|String collection|The supported language codes for the ADMX file.|
 |targetPrefix|String|Specifies the logical name that refers to the namespace within the ADMX file.|
 |targetNamespace|String|Specifies the URI used to identify the namespace within the ADMX file.|
-|policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Specifies the type of group policy. Possible values are: `admxBacked`, `admxIngested`.|
+|policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Specifies the type of group policy. The possible values are: `admxBacked`, `admxIngested`.|
 |revision|String|The revision version associated with the file.|
 |fileName|String|The file name of the ADMX file without the path. For example: edge.admx|
 |id|String|Key of the entity.|
@@ -73,7 +73,7 @@ If successful, this method returns a `200 OK` response code and an updated [grou
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitionFiles/{groupPolicyDefinitionFileId}
 Content-type: application/json
 Content-length: 392
@@ -95,7 +95,7 @@ Content-length: 392
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 505

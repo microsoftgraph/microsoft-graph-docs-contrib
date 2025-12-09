@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /identityGovernance/roleManagementAlerts/alerts/{unifiedRoleManagementAlertId}
 ```
 
@@ -62,7 +62,7 @@ The following example shows a request to dismiss an alert by specifying the aler
   "name": "update_unifiedrolemanagementalert"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alerts/DirectoryRole_67b47f38-0f0b-4e62-a3be-859140c2061f_StaleSignInAlert
 Content-Type: application/json
 
@@ -104,7 +104,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

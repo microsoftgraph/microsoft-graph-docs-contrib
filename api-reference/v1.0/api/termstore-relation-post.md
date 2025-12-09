@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/relations
 ```
 
@@ -45,7 +45,7 @@ The following table lists the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|relationship|microsoft.graph.termStore.relationType|Type of relation to be created. Possible values are: `pin`, `reuse`.|
+|relationship|microsoft.graph.termStore.relationType|Type of relation to be created. The possible values are: `pin`, `reuse`.|
 |set| [microsoft.graph.termStore.set](../resources/termstore-set.md)| The set where the relationship needs to be created.|
 |fromTerm| [microsoft.graph.termStore.term](../resources/termstore-term.md) | The term with which the relationship needs to be created.|
 
@@ -66,7 +66,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStores/27fd2d26-60d3-485c-9420-0c71f74a0cfd/terms/8861b57a-c777-49e7-826f-47d6afecf80d/relations
 Content-Type: application/json
 
@@ -91,7 +91,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.termStore.relation"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

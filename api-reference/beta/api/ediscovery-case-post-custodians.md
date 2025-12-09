@@ -14,6 +14,8 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [ediscovery-deprecation](../includes/ediscovery-subnamespace-deprecation.md)]
+
 Create a new [custodian](../resources/ediscovery-custodian.md) object. After the custodian object is created, you will need to create the custodian's [userSource](../resources/ediscovery-usersource.md) to reference their mailbox and OneDrive for Business site.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -32,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 POST /compliance/ediscovery/cases/{caseId}/custodians
 ```
 
@@ -69,7 +71,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/2192ca408ea2410eba3bec8ae873be6b/custodians
 Content-Type: application/json
 
@@ -119,7 +121,7 @@ Content-Type: application/json
 }
 -->
 
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

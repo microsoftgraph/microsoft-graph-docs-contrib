@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /domains/{domainsId}/federationConfiguration/{internalDomainFederationId}
 ```
 
@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and an [internalDoma
   "sampleKeys": ["contoso.com", "6601d14b-d113-8f64-fda2-9b5ddda18ecc"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/domains/contoso.com/federationConfiguration/6601d14b-d113-8f64-fda2-9b5ddda18ecc
 ```
 
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/domains/contoso.com/federationConfiguration
   "@odata.type": "microsoft.graph.internalDomainFederation"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

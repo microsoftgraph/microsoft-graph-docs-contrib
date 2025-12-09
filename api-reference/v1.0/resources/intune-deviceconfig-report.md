@@ -19,7 +19,7 @@ Device Configuration profile History reports.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|content|Stream|Not yet documented|
+|content|Stream||
 
 ## Relationships
 None

@@ -84,7 +84,7 @@ The following table shows the properties of the [group](../resources/group.md) r
 | securityEnabled | Boolean | Set to **true** for security-enabled groups, including Microsoft 365 groups. Required. |
 | owners | [directoryObject](../resources/directoryobject.md) collection | This property represents the owners for the group at creation time. Optional. |
 | members | [directoryObject](../resources/directoryobject.md) collection | This property represents the members for the group at creation time. Optional. |
-|visibility|String|Specifies the visibility of a Microsoft 365 group. Possible values are: `Private`, `Public`, `HiddenMembership`, or empty (which is interpreted as `Public`).|
+|visibility|String|Specifies the visibility of a Microsoft 365 group. The possible values are: `Private`, `Public`, `HiddenMembership`, or empty (which is interpreted as `Public`).|
 
 ## Response
 
@@ -170,7 +170,7 @@ The following example shows a request.
   "blockType": "request",
   "name": "post_administrativeunits_members"
 } -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/administrativeUnits/{id}/members
 Content-type: application/json
 
@@ -231,7 +231,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.group",
   "name": "post_administrativeunits_members"
 } -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

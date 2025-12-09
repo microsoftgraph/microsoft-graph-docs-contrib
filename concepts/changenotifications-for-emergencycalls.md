@@ -28,7 +28,7 @@ Microsoft Teams supports notifications for emergency calls. These notifications 
 |:---------------------------------------|:---------------------------------------------------------|:-------------------|
 | Delegated (work or school account)     | Not supported.                                           | Not supported.     |
 | Delegated (personal Microsoft account) | Not supported.                                           | Not supported.     |
-| Application                            | CallEvents-Emergency.Read.All                            | Beta.              |
+| Application                            | CallEvents-Emergency.Read.All                            | beta, v1.0        |
 
 ## Subscribe to emergency call started events
 
@@ -44,7 +44,7 @@ Subscriptions for emergency call events have a max subscription life time of one
 ### Subscription payload example
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {

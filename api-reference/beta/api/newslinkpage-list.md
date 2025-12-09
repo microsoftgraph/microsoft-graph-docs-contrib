@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "list_newslinkpage"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites/056d8292-ef8a-44fe-bd22-97abf08659b1/pages/microsoft.graph.newsLinkPage
 ```
 
@@ -103,7 +103,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.newsLinkPage)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

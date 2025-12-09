@@ -52,7 +52,7 @@ You can specify the following properties when creating a **connectedOrganization
 |displayName|String|The connected organization name. |
 |description|String|The connected organization description.|
 |identitySources|[identitySource](../resources/identitysource.md) collection|A collection with one element, the initial identity source in this connected organization.|
-|state|connectedOrganizationState|The state of a connected organization defines whether assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects` are applicable or not. Possible values are: `configured`, `proposed`.|
+|state|connectedOrganizationState|The state of a connected organization defines whether assignment policies with requestor scope type `AllConfiguredConnectedOrganizationSubjects` are applicable or not. The possible values are: `configured`, `proposed`.|
 
 
 

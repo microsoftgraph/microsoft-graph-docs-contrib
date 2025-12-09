@@ -12,7 +12,7 @@ ms.date: 06/21/2024
 
 Namespace: microsoft.graph
 
-Create a new [onenoteSection](../resources/section.md) in the specified notebook.
+Create a new [onenoteSection](../resources/onenotesection.md) in the specified notebook.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -43,7 +43,7 @@ Within the same hierarchy level, section names must be unique. The name cannot c
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [onenoteSection](../resources/section.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [onenoteSection](../resources/onenotesection.md) object in the response body.
 
 ## Example
 ##### Request

@@ -5,7 +5,7 @@ ms.localizationpriority: high
 author: "Jackson-Woods"
 ms.subservice: "entra-applications"
 doc_type: resourcePageType
-ms.date: 11/26/2024
+ms.date: 11/10/2025
 ms.custom: sfi-ropc-nochange
 ---
 
@@ -21,11 +21,13 @@ Inherits from [directoryObject](directoryobject.md).
 
 This resource is an open type that allows other properties to be passed in.
 
+The [agentIdentityBlueprint](../resources/agentidentityblueprint.md) resource inherits from this object.
+
 This resource supports:
 
 - Adding your own data to custom properties as [extensions](/graph/extensibility-overview).
 - Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/user-delta.md) function.
-- Alternate key syntax.  The `appId` property is a supported alternate key.  For more information, see [Get application](../api/application-get.md).
+- Alternate key syntax. The **appId** property is a supported alternate key.  For more information, see [Get application](../api/application-get.md).
 
 ## Methods
 
@@ -71,17 +73,19 @@ This resource supports:
 | appRoles | [appRole](approle.md) collection | The collection of roles defined for the application. With [app role assignments](approleassignment.md), these roles can be assigned to users, groups, or service principals associated with other applications. Not nullable. |
 |authenticationBehaviors|[authenticationBehaviors](../resources/authenticationbehaviors.md)| The collection of breaking change behaviors related to token issuance that are configured for the application. Authentication behaviors are unset by default (`null`) and must be explicitly enabled or disabled. Nullable. Returned only on `$select`. <br/><br/> For more information about authentication behaviors, see [Manage application authenticationBehaviors to avoid unverified use of email claims for user identification or authorization](/graph/applications-authenticationbehaviors).|
 |certification|[certification](certification.md)|Specifies the certification status of the application.|
+|createdByAppId|String|The globally unique **appId** (called **Application (client) ID** on the Microsoft Entra admin center) of the application that created this application. Set internally by Microsoft Entra ID. Read-only.|
 | createdDateTime | DateTimeOffset | The date and time the application was registered. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. <br><br> Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, and `eq` on `null` values) and `$orderby`. |
 |defaultRedirectUri|String|The default redirect URI. If specified and there's no explicit redirect URI in the sign-in request for SAML and OIDC flows, Microsoft Entra ID sends the token to this redirect URI. Microsoft Entra ID also sends the token to this default URI in SAML IdP-initiated single sign-on. The value must match one of the configured redirect URIs for the application.|
 | deletedDateTime | DateTimeOffset | The date and time the application was deleted. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
 | description | String | Free text field to provide a description of the application object to end users. The maximum allowed size is 1,024 characters. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`) and `$search`. |
-| disabledByMicrosoftStatus | String | Specifies whether Microsoft has disabled the registered application. Possible values are: `null` (default value), `NotDisabled`, and `DisabledDueToViolationOfServicesAgreement` (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement). <br><br> Supports `$filter` (`eq`, `ne`, `not`). |
+| disabledByMicrosoftStatus | String | Specifies whether Microsoft has disabled the registered application. The possible values are: `null` (default value), `NotDisabled`, and `DisabledDueToViolationOfServicesAgreement` (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement). <br><br> Supports `$filter` (`eq`, `ne`, `not`). |
 | displayName | String | The display name for the application. Maximum length is 256 characters. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values), `$search`, and `$orderby`. |
 | groupMembershipClaims | String | Configures the `groups` claim issued in a user or OAuth 2.0 access token that the application expects. To set this attribute, use one of the following string values: `None`, `SecurityGroup` (for security groups and Microsoft Entra roles), `All` (this gets all security groups, distribution groups, and Microsoft Entra directory roles that the signed-in user is a member of). |
 | id | String | Unique identifier for the application object. This property is referred to as **Object ID** in the Microsoft Entra admin center. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `in`). |
 | identifierUris | String collection | Also known as App ID URI, this value is set when an application is used as a resource app. The identifierUris acts as the prefix for the scopes you reference in your API's code, and it must be globally unique across Microsoft Entra ID. For more information on valid identifierUris patterns and best practices, see [Microsoft Entra application registration security best practices](/entra/identity-platform/security-best-practices-for-app-registration#application-id-uri-also-known-as-identifier-uri). Not nullable. <br><br>Supports `$filter` (`eq`, `ne`, `ge`, `le`, `startsWith`). |
 | info | [informationalUrl](informationalurl.md) | Basic profile information of the application, such as it's marketing, support, terms of service, and privacy statement URLs. The terms of service and privacy statement are surfaced to users through the user consent experience. For more information, see [How to: Add Terms of service and privacy statement for registered Microsoft Entra apps](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, and `eq` on `null` values). |
 | isDeviceOnlyAuthSupported | Boolean | Specifies whether this application supports device authentication without a user. The default is `false`.  |
+| isDisabled | Boolean | Specifies whether the service principal of the app in a tenant or across tenants for multi-tenant apps can obtain new access tokens or access protected resources. When set to `true`, existing tokens remain valid until they expire based on their configured lifetimes, and the app stays visible in the Enterprise apps list but users cannot sign in.`true` if the application is deactivated (disabled); otherwise `false`.|
 | isFallbackPublicClient | Boolean | Specifies the fallback application type as public client, such as an installed application running on a mobile device. The default value is `false`, which means the fallback application type is confidential client such as a web app. There are certain scenarios where Microsoft Entra ID can't determine the client application type. For example, the [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) flow where the application is configured without specifying a redirect URI. In those cases Microsoft Entra ID interprets the application type based on the value of this property.|
 | keyCredentials | [keyCredential](keycredential.md) collection | The collection of key credentials associated with the application. Not nullable. Supports `$filter` (`eq`, `not`, `ge`, `le`).|
 | logo | Stream | The main logo for the application. Not nullable. |
@@ -163,6 +167,7 @@ The following JSON representation shows the resource type.
   "authenticationBehaviors": {"@odata.type": "microsoft.graph.authenticationBehaviors"},
   "certification": {"@odata.type": "microsoft.graph.certification"},
   "createdDateTime": "String (timestamp)",
+  "createdByAppId": "String",
   "deletedDateTime": "String (timestamp)",
   "disabledByMicrosoftStatus": "String",
   "displayName": "String",
@@ -171,6 +176,7 @@ The following JSON representation shows the resource type.
   "identifierUris": ["String"],
   "info": {"@odata.type": "microsoft.graph.informationalUrl"},
   "isDeviceOnlyAuthSupported": false,
+  "isDisabled": "Boolean",
   "isFallbackPublicClient": false,
   "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
   "logo": "Stream",

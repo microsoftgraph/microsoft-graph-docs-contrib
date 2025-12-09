@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /networkAccess/connectivity/branches/{branchSiteId}/forwardingProfiles
 ```
 
@@ -73,7 +73,7 @@ The following example shows a request.
   "name": "create_branch_and_assign_forwardingprofile"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/networkAccess/connectivity/branches/{branchSiteId}/
 Content-Type: application/json
 
@@ -128,7 +128,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.networkaccess.forwardingProfile"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

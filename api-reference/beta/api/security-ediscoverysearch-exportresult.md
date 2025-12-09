@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearchId}/exportResult
 POST /security/cases/ediscoveryCases('{ediscoveryCaseId}')/searches('{ediscoverySearchId}')/exportResult
 ```
@@ -55,10 +55,10 @@ The following table lists the parameters that you can use with this action.
 | Parameter | Type | Description |
 |:---|:---|:---|
 | additionalOptions | [microsoft.graph.security.additionalOptions](../resources/security-ediscoverysearchexportoperation.md#additionaloptions-values) | The additional options for the export. The possible values are: `none`, `teamsAndYammerConversations`, `cloudAttachments`, `allDocumentVersions`, `subfolderContents`, `listAttachments`, `unknownFutureValue`, `htmlTranscripts`, `advancedIndexing`, `allItemsInFolder`, `includeFolderAndPath`, `condensePaths`, `friendlyName`, `splitSource`, `includeReport`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `htmlTranscripts`, `advancedIndexing`, `allItemsInFolder`, `includeFolderAndPath`, `condensePaths`, `friendlyName`, `splitSource`, `includeReport`. The `advancedIndexing` value is only available if **exportCriteria** includes `partiallyIndexed`. Required.|
-| cloudAttachmentVersion | microsoft.graph.security.cloudAttachmentVersion | The versions of cloud attachments to include in messages. Possible values are: `latest`, `recent10`, `recent100`, `all`, `unknownFutureValue`. The default value is `latest`. |
+| cloudAttachmentVersion | microsoft.graph.security.cloudAttachmentVersion | The versions of cloud attachments to include in messages. The possible values are: `latest`, `recent10`, `recent100`, `all`, `unknownFutureValue`. The default value is `latest`. |
 | description | String | The description of the export result. |
 | displayName | String | The display name of the export result. |
-| documentVersion | microsoft.graph.security.documentVersion | The versions of files in SharePoint to include. Possible values are: `latest`, `recent10`, `recent100`, `all`, `unknownFutureValue`. The default value is `latest`. |
+| documentVersion | microsoft.graph.security.documentVersion | The versions of files in SharePoint to include. The possible values are: `latest`, `recent10`, `recent100`, `all`, `unknownFutureValue`. The default value is `latest`. |
 | exportCriteria | [microsoft.graph.security.exportCriteria](../resources/security-ediscoverysearchexportoperation.md#exportcriteria-values) | The portion of the estimate results to be exported. The possible values are: `searchHits`, `partiallyIndexed`, `unknownFutureValue`. Required.|
 | exportFormat | [microsoft.graph.security.exportFormat](../resources/security-ediscoverysearchexportoperation.md#exportformat-values) | The desired format of the exported emails. The possible values are: `pst`, `msg`, `eml` (deprecated), `unknownFutureValue`. Required. The `eml` member is deprecated. It remains in beta for backward compatibility. Going forward, use either `pst` or `msg`. |
 | exportLocation | [microsoft.graph.security.exportLocation](../resources/security-ediscoverysearchexportoperation.md#exportlocation-values) | Location scope for partially indexed items. You can choose to include partially indexed items only in responsive locations with search hits or in all targeted locations. The possible values are: `responsiveLocations`, `nonresponsiveLocations`, `unknownFutureValue`. The `nonresponsiveLocations` value is only available if **exportCriteria** includes `partiallyIndexed`.|
@@ -83,7 +83,7 @@ The following example shows a request.
   "name": "export_result1"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/dbc06feb-a6a5-46a2-8e4e-534353b071e4/searches/6c2ab774-2d2a-46b9-a601-3130f518757b/exportResult
 Content-Type: application/json
 
@@ -135,7 +135,7 @@ The following example shows the response.
   "name": "export_result1"
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Length: 0
 Location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('01826ce3-43a3-4235-a121-81d05926efae')
@@ -155,7 +155,7 @@ The following example shows a request.
   "name": "export_result2"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/dbc06feb-a6a5-46a2-8e4e-534353b071e4/searches/6c2ab774-2d2a-46b9-a601-3130f518757b/exportResult
 Content-Type: application/json
 
@@ -208,7 +208,7 @@ The following example shows the response.
   "name": "export_result2"
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Length: 0
 Location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('c74d3039-5c79-4093-8e45-2abb94e32ba9')
@@ -228,7 +228,7 @@ The following example shows a request.
   "name": "export_result3"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/dbc06feb-a6a5-46a2-8e4e-534353b071e4/searches/6c2ab774-2d2a-46b9-a601-3130f518757b/exportResult
 Content-Type: application/json
 
@@ -281,7 +281,7 @@ The following example shows the response.
   "name": "export_result3"
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Length: 0
 Location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('4bf812e0-44ad-4856-a302-b4ea79725573')
@@ -301,7 +301,7 @@ The following example shows a request.
   "name": "export_result4"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/dbc06feb-a6a5-46a2-8e4e-534353b071e4/searches/6c2ab774-2d2a-46b9-a601-3130f518757b/exportResult
 Content-Type: application/json
 
@@ -354,7 +354,7 @@ The following example shows the response.
   "name": "export_result4"
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Length: 0
 Location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('05b5c707-ed0d-4f5c-bbfd-e4941137baf1')
@@ -374,7 +374,7 @@ The following example shows a request.
   "name": "export_result5"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/dbc06feb-a6a5-46a2-8e4e-534353b071e4/searches/6c2ab774-2d2a-46b9-a601-3130f518757b/exportResult
 Content-Type: application/json
 
@@ -429,7 +429,7 @@ The following example shows the response.
   "name": "export_result5"
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Length: 0
 Location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('dbc06feb-a6a5-46a2-8e4e-534353b071e4')/operations('d488f23e-f3cb-4a1c-9b9f-88ac4342f534')

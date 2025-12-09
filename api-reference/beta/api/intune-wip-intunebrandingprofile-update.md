@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 ```
 
@@ -82,7 +82,7 @@ The following table shows the properties that are required when you create the [
 |showOfficeWebApps|Boolean|Boolean that indicates if Office WebApps will be shown in Company Portal|
 |showConfigurationManagerApps|Boolean|Boolean that indicates if Configuration Manager Apps will be shown in Company Portal|
 |sendDeviceOwnershipChangePushNotification|Boolean|Boolean that indicates if a push notification is sent to users when their device ownership type changes from personal to corporate|
-|enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|Customized device enrollment flow displayed to the end user . Possible values are: `availableWithPrompts`, `availableWithoutPrompts`, `unavailable`.|
+|enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|Customized device enrollment flow displayed to the end user . The possible values are: `availableWithPrompts`, `availableWithoutPrompts`, `unavailable`.|
 |disableClientTelemetry|Boolean|Applies to telemetry sent from all clients to the Intune service. When disabled, all proactive troubleshooting and issue warnings within the client are turned off, and telemetry settings appear inactive or hidden to the device user.|
 |roleScopeTagIds|String collection|List of scope tags assigned to the branding profile|
 
@@ -95,7 +95,7 @@ If successful, this method returns a `200 OK` response code and an updated [intu
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 Content-type: application/json
 Content-length: 2059
@@ -164,7 +164,7 @@ Content-length: 2059
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 2231

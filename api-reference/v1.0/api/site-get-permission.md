@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /sites/{sitesId}/permissions/{permissionId}
 ```
 
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and the [permission]
   "name": "get_permission"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/sites/{sitesId}/permissions/{permissionId}
 ```
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/v1.0/sites/{sitesId}/permissions/{permissionId}
   "@odata.type": "microsoft.graph.permission"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

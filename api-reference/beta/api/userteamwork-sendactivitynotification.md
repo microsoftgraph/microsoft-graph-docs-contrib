@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Send an activity feed notification to a user. For more information, see [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /users/{userId | user-principal-name}/teamwork/sendActivityNotification
 ```
 
@@ -77,7 +77,7 @@ If successful, this action returns a `204 No Content` response code.
   "name": "userteamwork_sendactivitynotification"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/users/{userId}/teamwork/sendActivityNotification
 Content-Type: application/json
 
@@ -135,7 +135,7 @@ Content-Type: application/json
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -151,7 +151,7 @@ If you want to link an aspect that Microsoft Graph doesn't represent, or you wan
   "name": "team_sendactivitynotification_for_customer_topic"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/users/{userId}/teamwork/sendActivityNotification
 Content-Type: application/json
 
@@ -211,7 +211,7 @@ Content-Type: application/json
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -293,7 +293,7 @@ The following example shows the response.
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

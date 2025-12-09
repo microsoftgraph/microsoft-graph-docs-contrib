@@ -15,7 +15,7 @@ const workbookCommentReply = {
   contentType: 'plain'
 };
 
-await client.api('/drive/items/{id}/workbook/comments/{id}/replies')
+await client.api('/me/drive/items/01CYZLFJGUJ7JHBSZDFZFL25KSZGQTVAUN/workbook/comments/97A21473-8339-4BF0-BCB6-F55E4909FFB8/replies')
 	.version('beta')
 	.post(workbookCommentReply);
 

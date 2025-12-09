@@ -6,14 +6,6 @@ items:
   href: ../../resources/teams-api-overview.md
 - name: Administration (preview)
   items:
-  - name: Teams user configuration
-    items:
-    - name: Teams user configuration
-      href: ../../resources/teamsadministration-teamsuserconfiguration.md
-    - name: List
-      href: ../../api/teamsadministration-teamsadminroot-list-userconfigurations.md
-    - name: Get
-      href: ../../api/teamsadministration-teamsuserconfiguration-get.md
   - name: Number assignment
     items:
     - name: Number assignment
@@ -28,6 +20,48 @@ items:
       href: ../../api/teamsadministration-numberassignment-unassignnumber.md
     - name: updateNumber
       href: ../../api/teamsadministration-numberassignment-updatenumber.md
+  - name: Teams user configuration
+    items:
+    - name: Teams user configuration
+      href: ../../resources/teamsadministration-teamsuserconfiguration.md
+    - name: List
+      href: ../../api/teamsadministration-teamsadminroot-list-userconfigurations.md
+    - name: Get
+      href: ../../api/teamsadministration-teamsuserconfiguration-get.md
+  - name: Telephone number long running operation
+    items:
+    - name: Telephone number long running operation
+      href: ../../resources/teamsadministration-telephonenumberlongrunningoperation.md
+    - name: Get
+      href: ../../api/teamsadministration-telephonenumberlongrunningoperation-get.md
+  - name: Telephone number management root
+    items:
+    - name: Telephone number management root
+      href: ../../resources/teamsadministration-telephonenumbermanagementroot.md
+    - name: List number assignments
+      href: ../../api/teamsadministration-telephonenumbermanagementroot-list-numberassignments.md
+  - name: Teams policy assignment
+    items:
+    - name: Teams policy assignment
+      href: ../../resources/teamsadministration-teamspolicyassignment.md
+    - name: Get policy ID
+      href: ../../api/teamsadministration-teamspolicyassignment-getpolicyid.md
+  - name: Teams policy user assignment
+    items:
+    - name: Teams policy user assignment
+      href: ../../resources/teamsadministration-teamspolicyuserassignment.md
+    - name: Assign
+      href: ../../api/teamsadministration-teamspolicyuserassignment-assign.md
+    - name: Unassign
+      href: ../../api/teamsadministration-teamspolicyuserassignment-unassign.md
+  - name: Teams user configuration
+    items:
+    - name: Teams user configuration
+      href: ../../resources/teamsadministration-teamsuserconfiguration.md
+    - name: List
+      href: ../../api/teamsadministration-teamsadminroot-list-userconfigurations.md
+    - name: Get
+      href: ../../api/teamsadministration-teamsuserconfiguration-get.md
   - name: Telephone number long running operation
     items:
     - name: Telephone number long running operation
@@ -42,6 +76,8 @@ items:
       href: ../../resources/teamsadministration-effectivepolicyassignment.md
     - name: Policy assignment
       href: ../../resources/teamsadministration-policyassignment.md
+    - name: Policy identifier detail
+      href: ../../resources/teamsadministration-policyidentifierdetail.md
     - name: Telephone number long running operation details
       href: ../../resources/teamsadministration-telephonenumberlongrunningoperationdetails.md
 - name: Approvals
@@ -232,10 +268,24 @@ items:
       href: ../../api/presence-clearuserpreferredpresence.md
     - name: Set user status message
       href: ../../api/presence-setstatusmessage.md
+    - name: Set automatic location
+      href: ../../api/presence-setautomaticlocation.md
+    - name: Set manual location
+      href: ../../api/presence-setmanuallocation.md
+    - name: Clear automatic location
+      href: ../../api/presence-clearautomaticlocation.md
+    - name: Clear location
+      href: ../../api/presence-clearlocation.md
   - name: Ad hoc call
     items:
     - name: Ad hoc call (preview)
-      href: ../../resources/adhoccall.md
+      items:
+      - name: Ad hoc call (preview)
+        href: ../../resources/adhoccall.md
+      - name: getAllRecordings
+        href: ../../api/adhoccall-getallrecordings.md
+      - name: getAllTranscripts
+        href: ../../api/adhoccall-getalltranscripts.md
   - name: Calls
     items:
     - name: Call
@@ -392,6 +442,10 @@ items:
       href: ../../resources/callevent.md
     - name: Emergency call event
       href: ../../resources/emergencycallevent.md
+    - name: Complex types
+      items:
+      - name: Emergency caller info
+        href: ../../resources/emergencycallerinfo.md
   - name: Call records
     items:
     - name: Overview
@@ -532,6 +586,8 @@ items:
         href: ../../api/callrecording-delta.md
       - name: List recordings by organizer
         href: ../../api/onlinemeeting-getallrecordings.md
+      - name: Get recordings initiated by a specified user
+        href: ../../api/adhoccall-getallrecordings.md
     - name: Call transcript
       items:
       - name: Call transcript
@@ -544,6 +600,8 @@ items:
         href: ../../api/calltranscript-delta.md
       - name: List transcripts by organizer
         href: ../../api/onlinemeeting-getalltranscripts.md
+      - name: Get transcripts initiated by a specified user
+        href: ../../api/adhoccall-getalltranscripts.md
     - name: Virtual appointment
       items:
       - name: Get virtual appointment join link
@@ -662,6 +720,8 @@ items:
     items:
     - name: Out of office settings
       href: ../../resources/outofofficesettings.md
+    - name: User work location
+      href: ../../resources/userworklocation.md
 - name: Devices (preview)
   items:
   - name: Teamwork device
@@ -831,6 +891,8 @@ items:
       href: ../../api/channel-list-members.md
     - name: List all members
       href: ../../api/channel-list-allmembers.md
+    - name: Get member from channel allMembers collection
+      href: ../../api/channel-get-allmembers.md
     - name: Add channel member
       href: ../../api/channel-post-members.md
     - name: Get channel member

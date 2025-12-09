@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /networkaccess/filteringPolicies/{filteringPolicyId}/policyRules/{filteringRuleId}
 ```
 
@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "delete_filteringrule"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/networkaccess/filteringPolicies/bb1d249e-0691-477c-aae4-adfca179746a/policyRules/67f2edf8-1dc0-4a4f-87ea-9117541646de
 ```
 
@@ -101,7 +101,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

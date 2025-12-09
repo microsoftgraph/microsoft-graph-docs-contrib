@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /deviceManagement/derivedCredentials/{deviceManagementDerivedCredentialSettingsId}
 ```
 
@@ -54,8 +54,8 @@ The following table shows the properties that are required when you create the [
 |id|String|Unique identifier for the Derived Credential|
 |helpUrl|String|The URL that will be accessible to end users as they retrieve a derived credential using the Company Portal.|
 |displayName|String|The display name for the profile.|
-|issuer|[deviceManagementDerivedCredentialIssuer](../resources/intune-rapolicy-devicemanagementderivedcredentialissuer.md)|The derived credential provider to use. Possible values are: `intercede`, `entrustDatacard`, `purebred`, `xTec`.|
-|notificationType|[deviceManagementDerivedCredentialNotificationType](../resources/intune-rapolicy-devicemanagementderivedcredentialnotificationtype.md)|The methods used to inform the end user to open Company Portal to deliver Wi-Fi, VPN, or email profiles that use certificates to the device. Possible values are: `none`, `companyPortal`, `email`.|
+|issuer|[deviceManagementDerivedCredentialIssuer](../resources/intune-rapolicy-devicemanagementderivedcredentialissuer.md)|The derived credential provider to use. The possible values are: `intercede`, `entrustDatacard`, `purebred`, `xTec`.|
+|notificationType|[deviceManagementDerivedCredentialNotificationType](../resources/intune-rapolicy-devicemanagementderivedcredentialnotificationtype.md)|The methods used to inform the end user to open Company Portal to deliver Wi-Fi, VPN, or email profiles that use certificates to the device. The possible values are: `none`, `companyPortal`, `email`.|
 |renewalThresholdPercentage|Int32|The nominal percentage of time before certificate renewal is initiated by the client.|
 
 
@@ -67,7 +67,7 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/derivedCredentials/{deviceManagementDerivedCredentialSettingsId}
 Content-type: application/json
 Content-length: 278
@@ -84,7 +84,7 @@ Content-length: 278
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 327

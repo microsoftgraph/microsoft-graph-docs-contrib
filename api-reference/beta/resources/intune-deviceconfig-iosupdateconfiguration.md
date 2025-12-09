@@ -51,7 +51,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |scheduledInstallDays|[dayOfWeek](../resources/intune-deviceconfig-dayofweek.md) collection|Days in week for which active hours are configured. This collection can contain a maximum of 7 elements.|
 |utcTimeOffsetInMinutes|Int32|UTC Time Offset indicated in minutes|
 |enforcedSoftwareUpdateDelayInDays|Int32|Days before software updates are visible to iOS devices ranging from 0 to 90 inclusive|
-|updateScheduleType|[iosSoftwareUpdateScheduleType](../resources/intune-deviceconfig-iossoftwareupdatescheduletype.md)|Update schedule type. Possible values are: `updateOutsideOfActiveHours`, `alwaysUpdate`, `updateDuringTimeWindows`, `updateOutsideOfTimeWindows`.|
+|updateScheduleType|[iosSoftwareUpdateScheduleType](../resources/intune-deviceconfig-iossoftwareupdatescheduletype.md)|Update schedule type. The possible values are: `updateOutsideOfActiveHours`, `alwaysUpdate`, `updateDuringTimeWindows`, `updateOutsideOfTimeWindows`.|
 |customUpdateTimeWindows|[customUpdateTimeWindow](../resources/intune-deviceconfig-customupdatetimewindow.md) collection|If update schedule type is set to use time window scheduling, custom time windows when updates will be scheduled. This collection can contain a maximum of 20 elements.|
 
 ## Relationships

@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Get a list of the [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) objects associated with an [availableAccessPackage](../resources/availableaccesspackage.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 > [!NOTE]
 > This API call follows Entitlement Management scope rules. It only returns resource role scopes that the signed‑in user is allowed to see or request. Being an admin doesn’t override these checks—admins also need to be in scope for the access package to retrieve its resource role scopes.
 

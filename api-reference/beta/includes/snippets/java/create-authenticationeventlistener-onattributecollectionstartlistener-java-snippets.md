@@ -16,7 +16,7 @@ AuthenticationConditionsApplications applications = new AuthenticationConditions
 applications.setIncludeAllApplications(false);
 LinkedList<AuthenticationConditionApplication> includeApplications = new LinkedList<AuthenticationConditionApplication>();
 AuthenticationConditionApplication authenticationConditionApplication = new AuthenticationConditionApplication();
-authenticationConditionApplication.setAppId("a7eed01f-a333-4983-bc6b-d359ec9e5eef");
+authenticationConditionApplication.setAppId("0001111-aaaa-2222-bbbb-3333cccc4444");
 includeApplications.add(authenticationConditionApplication);
 applications.setIncludeApplications(includeApplications);
 conditions.setApplications(applications);

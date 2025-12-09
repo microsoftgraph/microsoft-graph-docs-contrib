@@ -30,7 +30,7 @@ Place represents different space types within a tenant. A **place** object can b
 |[room](./room.md) |Represents a room within the tenant. All rooms must be associated with Exchange mailboxes. A **room** can be added to a **floor** or to a **section**. The rich properties of the **room** include an email address for the room, accessibility, capacity, audio device, video device, and so on. |
 |[roomList](./roomlist.md) |A collection of rooms in the tenant. Places supports **roomList** to ensure room booking works in **Room Finder** across all clients on all devices, such as classic Outlook across desktop and mobile. <br/><br/>However, we recommend that you rely on the new **place** types and hierarchy if you don't use **roomFinder** in the tenant. For more information about **roomList**, see the [roomList](./roomlist.md) resource type. |
 |[section](./section.md) |Represents a section within a floor, including properties such as **name**, **parentId**, and **label**. A **floor** is always the parent of a **section**. |
-|[workspace](./workspace.md) |Represents a collection of desks. All workspaces must be associated with Exchange mailboxes. A **workspace** can be added to a **floor** or a **section**. The rich properties of a workspace include an email address for the workspace, mode, accessibility, and capacity. |
+|[workspace](./workspace.md) |Represents a collection of desks. All workspaces must be associated with Exchange mailboxes. A **workspace** can be added to a **section**. The rich properties of a workspace include an email address for the workspace, mode, accessibility, and capacity. |
 
 ### Map feature types
 
@@ -52,6 +52,16 @@ The Places API enables applications with appropriate read or write permissions t
 The map APIs in Places enable applications with appropriate read or write permissions to interact with map feature objects. Each map feature object includes fundamental properties like **id**, and other properties such as **placeId**, **geometry**, and **display_point**.
 
 Detailed descriptions of each type are available in their respective documentation sections. 
+
+### Prerequisites for Places list and descendant APIs
+
+Before you can use the [List place objects](../api/place-list.md) or [place: descendants](../api/place-descendants.md) APIs, you must ensure that Places settings are properly configured in your Microsoft 365 environment; otherwise, these APIs do not return any places unless the following setup steps are completed:
+
+1. Download and connect to the *MicrosoftPlaces* PowerShell module. For more information, see [Connect-MicrosoftPlaces](/microsoft-365/places/powershell/connect-microsoftplaces).
+2. Make places visible by enabling buildings with the following command. For more information, see [Set-PlacesSettings](/microsoft-365/places/powershell/set-placessettings#-enablebuildings).
+    ```PowerShell
+    Set-PlacesSettings -EnableBuildings 'Default:true'
+    ```
 
 ## Common use cases
 

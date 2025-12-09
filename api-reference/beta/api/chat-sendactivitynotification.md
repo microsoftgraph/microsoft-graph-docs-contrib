@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Send an activity feed notification in the scope of a chat. For more information, see [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /chats/{chatId}/sendActivityNotification
 ```
 
@@ -85,7 +85,7 @@ The following example shows the request.
   "name": "chat_sendactivitynotification_1"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/chats/{chatId}/sendActivityNotification
 Content-Type: application/json
 
@@ -150,7 +150,7 @@ The following example shows the response.
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -168,7 +168,7 @@ The following example shows the request.
   "name": "chat_sendactivitynotification_2"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/chats/{chatId}/sendActivityNotification
 Content-Type: application/json
 
@@ -233,7 +233,7 @@ The following example shows the response.
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -251,7 +251,7 @@ The following example shows the request.
   "name": "chat_sendactivitynotification_upn"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/chats/{chatId}/sendActivityNotification
 Content-Type: application/json
 
@@ -316,7 +316,7 @@ The following example shows the response.
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -334,7 +334,7 @@ The following example shows the request.
   "name": "chat_sendactivitynotification_3"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/chats/{chatId}/sendActivityNotification
 Content-Type: application/json
 
@@ -400,7 +400,7 @@ The following example shows the response.
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -420,7 +420,7 @@ The following example shows the request.
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/chats/19:1c3af46e9e0f4a5293343c8813c47619@thread.v2/sendActivityNotification
 Content-Type: application/json
 
@@ -485,7 +485,7 @@ The following example shows the response.
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -570,7 +570,7 @@ The following example shows the response.
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

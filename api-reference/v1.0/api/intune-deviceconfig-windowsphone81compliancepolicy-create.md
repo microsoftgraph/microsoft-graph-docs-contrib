@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceManagement/deviceCompliancePolicies
 ```
 
@@ -60,7 +60,7 @@ The following table shows the properties that are required when you create the w
 |passwordMinimumLength|Int32|Minimum length of passwords.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a password is required.|
 |passwordMinimumCharacterSetCount|Int32|The number of character sets required in the password.|
-|passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|The required password type. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|The required password type. The possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block. Valid values 0 to 24|
 |passwordRequired|Boolean|Whether or not to require a password.|
 |osMinimumVersion|String|Minimum Windows Phone version.|
@@ -76,10 +76,7 @@ If successful, this method returns a `201 Created` response code and a [windowsP
 
 ### Request
 Here is an example of the request.
-
-# [HTTP](#tab/http)
-<!-- { "blockType": "request" , "name" : "intune_deviceconfig_windowsphone81compliancepolicy_create_create_windowsphone81compliancepolicy" }-->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
 Content-length: 607
@@ -103,41 +100,9 @@ Content-length: 607
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/intune-deviceconfig-windowsphone81compliancepolicy-create-create-windowsphone81compliancepolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/intune-deviceconfig-windowsphone81compliancepolicy-create-create-windowsphone81compliancepolicy-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-deviceconfig-windowsphone81compliancepolicy-create-create-windowsphone81compliancepolicy-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-deviceconfig-windowsphone81compliancepolicy-create-create-windowsphone81compliancepolicy-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/intune-deviceconfig-windowsphone81compliancepolicy-create-create-windowsphone81compliancepolicy-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-deviceconfig-windowsphone81compliancepolicy-create-create-windowsphone81compliancepolicy-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/intune-deviceconfig-windowsphone81compliancepolicy-create-create-windowsphone81compliancepolicy-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.windowsPhone81CompliancePolicy" }-->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 779

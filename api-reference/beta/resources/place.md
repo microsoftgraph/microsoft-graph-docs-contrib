@@ -28,7 +28,7 @@ Base type of [building](../resources/building.md), [desk](../resources/desk.md),
 |[Update](../api/place-update.md) |[place](./place.md) |Update the properties of [place](../resources/place.md) object that can be a [building](../resources/building.md), [floor](../resources/floor.md), [section](../resources/section.md), [desk](../resources/desk.md), [room](../resources/room.md), [workspace](../resources/workspace.md), or [roomList](../resources/roomlist.md). |
 |[Delete](../api/place-delete.md) |None |Delete a [place](../resources/place.md) object. |
 |[Descendants](../api/place-descendants.md) |[place](./place.md) collection|Get all the descendants of a specific type under a [place](../resources/place.md). | 
-|[Create check-in claim](../api/place-post-checkins.md)|[checkInClaim](../resources/checkinclaim.md)|Create a new [checkInClaim](../resources/checkinclaim.md) object to record the check-in status for a specific place, such as a [desk](../resources/desk.md), [room](../resources/room.md), or [workspace](../resources/workspace.md), associated with a specific calendar reservation.|
+|[Create check-in claim](../api/place-post-checkins.md)|[checkInClaim](../resources/checkinclaim.md)|Create a new [checkInClaim](../resources/checkinclaim.md) object to record the check-in status for a specific place, such as a [desk](../resources/desk.md) or a [room](../resources/room.md), associated with a specific calendar reservation.|
 
 ## Properties
 
@@ -42,7 +42,6 @@ Base type of [building](../resources/building.md), [desk](../resources/desk.md),
 |isWheelChairAccessible |Boolean |Indicates whether the **place** is wheelchair accessible. |
 |parentId |String |The ID of a parent **place**. |
 |phone |String |The phone number of the **place**. |
-|placeId |String |An alternate immutable unique identifier of the **place**. Read-only. |
 |tags |String collection |Custom tags that are associated with the **place** for categorization or filtering. |
 
 ## Relationships
@@ -72,7 +71,6 @@ The following JSON representation shows the resource type.
   "label": "String",
   "parentId": "String",
   "phone": "String",
-  "placeId": "String",
   "tags": ["String"]
 }
 ```

@@ -42,4 +42,3 @@ The following JSON representation shows the resource type.
   "statusDetail": "String"
 }
 ```
-

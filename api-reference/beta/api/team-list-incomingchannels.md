@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /teams/{team-id}/incomingChannels
 ```
 
@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "list_channel"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/incomingChannels
 ```
 
@@ -108,7 +108,7 @@ The following example shows the response.
   "isCollection": true
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

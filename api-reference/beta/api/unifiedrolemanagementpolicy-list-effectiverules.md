@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/effectiveRules
 ```
 
@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_unifiedrolemanagementpolicyrule_effective_rules"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/ba9cc2d6-c2d6-ba9c-d6c2-9cbad6c29cba/effectiveRules
 ```
 
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/ba9cc2d6-c2
   "@odata.type": "Collection(microsoft.graph.unifiedRoleManagementPolicyRule)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

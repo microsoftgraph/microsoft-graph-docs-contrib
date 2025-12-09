@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /solutions/virtualEvents/webinars/getByUserIdAndRole(userId='{userId}', role='{role}')
 ```
 
@@ -41,7 +41,7 @@ In the request URL, provide the following query parameters with values.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |userId|String|The ID of the specified user in Microsoft Entra.|
-|role|String|User role of the specified user in the webinar. Possible values are: `organizer`, `coOrganizer`.|
+|role|String|User role of the specified user in the webinar. The possible values are: `organizer`, `coOrganizer`.|
 
 ## Request headers
 
@@ -67,7 +67,7 @@ The following example shows a request.
   "name": "virtualeventwebinarthis.getbyuseridandrole"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/getByUserIdAndRole(userId='b7ef013a-c73c-4ec7-8ccb-e56290f45f68', role='organizer')
 ```
 
@@ -110,7 +110,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.virtualEventWebinar)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

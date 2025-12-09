@@ -64,6 +64,8 @@ items:
       href: ../../api/security-incidenttask-executeresponseaction.md
   - name: Complex types
     items:
+    - name: AI agent evidence
+      href: ../../resources/security-aiagentevidence.md
     - name: Security group evidence
       href: ../../resources/security-securitygroupevidence.md
     - name: Teams message evidence
@@ -258,7 +260,7 @@ items:
       href: ../../api/tenantdatasecurityandgovernance-list-sensitivitylabels.md
     - name: Get a data security and compliance sensitivity label
       href: ../../api/sensitivitylabel-get.md
-    - name: List rights
+    - name: Get usage rights included
       href: ../../api/usagerightsincluded-get.md
   - name: Tenant data security and governance
     items:
@@ -278,6 +280,10 @@ items:
     items:
     - name: Activity metadata
       href: ../../resources/activitymetadata.md
+    - name: Ai agent info
+      href: ../../resources/aiagentinfo.md
+    - name: Ai interaction entity
+      href: ../../resources/aiinteractionentity.md
     - name: Ai interaction plugin
       href: ../../resources/aiinteractionplugin.md
     - name: Auto labeling
@@ -348,6 +354,8 @@ items:
       href: ../../resources/protectedapplicationmetadata.md
     - name: Protected content
       href: ../../resources/protectedcontent.md
+    - name: Resource access detail
+      href: ../../resources/resourceaccessdetail.md
     - name: Restrict access action
       href: ../../resources/restrictaccessaction.md
     - name: Restrict access action base
@@ -492,9 +500,9 @@ items:
     items:
     - name: Case operation
       href: ../../resources/security-caseoperation.md
-    - name: List case operations
+    - name: List
       href: ../../api/security-ediscoverycase-list-operations.md
-    - name: Get case operation by ID
+    - name: Get
       href: ../../api/security-caseoperation-get.md
   - name: eDiscovery custodian
     items:
@@ -790,7 +798,7 @@ items:
       href: ../../resources/security-sensorcandidate.md
     - name: List
       href: ../../api/security-identitycontainer-list-sensorcandidates.md
-    - name: activate
+    - name: Activate
       href: ../../api/security-sensorcandidate-activate.md
   - name: Sensor candidate activation configuration
     items:
@@ -800,6 +808,14 @@ items:
       href: ../../api/security-sensorcandidateactivationconfiguration-get.md
     - name: Update
       href: ../../api/security-identitycontainer-post-sensorcandidateactivationconfiguration.md
+  - name: Auto-auditing configuration
+    items:
+    - name: Auto-auditing configuration
+      href: ../../resources/security-autoauditingconfiguration.md
+    - name: Get
+      href: ../../api/security-autoauditingconfiguration-get.md
+    - name: Update
+      href: ../../api/security-autoauditingconfiguration-update.md
   - name: Complex types
     items:
     - name: Account
@@ -858,7 +874,7 @@ items:
       href: ../../api/tenantdatasecurityandgovernance-list-sensitivitylabels.md
     - name: Get a data security and compliance sensitivity label
       href: ../../api/sensitivitylabel-get.md
-    - name: List rights
+    - name: Get usage rights included
       href: ../../api/usagerightsincluded-get.md
   - name: Information protection policy setting
     items:
@@ -1044,6 +1060,52 @@ items:
     href: ../../api/securityactions-list.md
   - name: Cancel security action
     href: ../../api/securityaction-cancelsecurityaction.md
+- name: Security Copilot
+  items:
+  - name: Workspace
+    items:
+    - name: Workspace
+      href: ../../resources/security-securitycopilot-workspace.md
+    - name: List
+      href: ../../api/securitycopilot-list-workspaces.md
+  - name: Session
+    items:
+    - name: Session
+      href: ../../resources/security-securitycopilot-session.md
+    - name: List
+      href: ../../api/security-securitycopilot-workspace-list-sessions.md
+    - name: Create
+      href: ../../api/security-securitycopilot-workspace-post-sessions.md
+    - name: Get
+      href: ../../api/security-securitycopilot-session-get.md
+    - name: Update
+      href: ../../api/security-securitycopilot-session-update.md
+  - name: Prompt
+    items:
+    - name: Prompt
+      href: ../../resources/security-securitycopilot-prompt.md
+    - name: List
+      href: ../../api/security-securitycopilot-session-list-prompts.md
+    - name: Create
+      href: ../../api/security-securitycopilot-session-post-prompts.md
+    - name: Get
+      href: ../../api/security-securitycopilot-prompt-get.md
+  - name: Evaluation
+    items:
+    - name: Evaluation
+      href: ../../resources/security-securitycopilot-evaluation.md
+    - name: List
+      href: ../../api/security-securitycopilot-prompt-list-evaluations.md
+    - name: Create
+      href: ../../api/security-securitycopilot-prompt-post-evaluations.md
+    - name: Get
+      href: ../../api/security-securitycopilot-evaluation-get.md
+  - name: Plugin
+    items:
+    - name: Plugin
+      href: ../../resources/security-securitycopilot-plugin.md
+    - name: List
+      href: ../../api/security-securitycopilot-workspace-list-plugins.md
 - name: Threat intelligence (preview)
   items:
   - name: Overview

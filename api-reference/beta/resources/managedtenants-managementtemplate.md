@@ -25,7 +25,7 @@ Represents a group of actions and setting that can be performed against a manage
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|category|managementCategory|The management category for the management template. Possible values are: `custom`, `devices`, `identity`, `unknownFutureValue`. Required. Read-only.|
+|category|managementCategory|The management category for the management template. The possible values are: `custom`, `devices`, `identity`, `unknownFutureValue`. Required. Read-only.|
 |description|String|The description for the management template. Optional. Read-only.|
 |displayName|String|The display name for the management template. Required. Read-only.|
 |id|String|The unique identifier for the management template. Required. Read-only.|

@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /identityGovernance/permissionsManagement/scheduledPermissionsRequests
 ```
 
@@ -79,7 +79,7 @@ The following example shows a request.
   "name": "create_scheduledpermissionsrequest_aws_policy"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/scheduledPermissionsRequests
 Content-Type: application/json
 
@@ -162,7 +162,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.scheduledPermissionsRequest"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -220,7 +220,7 @@ The following example shows a request.
   "name": "create_scheduledpermissionsrequest_azure_roles"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/scheduledPermissionsRequests
 Content-Type: application/json
 
@@ -307,7 +307,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.scheduledPermissionsRequest"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -368,7 +368,7 @@ The following example shows a request.
   "name": "create_scheduledpermissionsrequest_from_gcp_actions"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/scheduledPermissionsRequests
 Content-Type: application/json
 
@@ -449,7 +449,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.scheduledPermissionsRequest"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
