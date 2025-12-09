@@ -1,6 +1,6 @@
 ---
 title: "Upsert places"
-description: "Upsert places one or more place objects in async mode."
+description: "Upsert one or more place objects in async mode."
 author: "Dongjing-MSIT"
 ms.date: 11/10/2025
 ms.localizationpriority: medium
@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Upsert places one or more [place](../resources/place.md) objects in async mode. This API allows you to create and update multiple places efficiently in a single request.
+Upsert one or more [place](../resources/place.md) objects in async mode. This API allows you to create and update multiple places efficiently in a single request.
 
-For more information on how to use this API, including scenarios, best practices, and concurrency limits, see [Working with the Places upsert places API in Microsoft Graph](/graph/places-bulk-upsert-overview).
+For more information on how to use this API, including scenarios, best practices, and concurrency limits, see [Working with the upsert Places API in Microsoft Graph](/graph/places-upsert-overview).
 
 > [!NOTE]
 > - Operations are retained for 15 days from creation.
