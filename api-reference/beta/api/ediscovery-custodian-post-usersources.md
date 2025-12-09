@@ -14,6 +14,8 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [ediscovery-deprecation](../includes/ediscovery-subnamespace-deprecation.md)]
+
 Create a new custodian [userSource](../resources/ediscovery-usersource.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
