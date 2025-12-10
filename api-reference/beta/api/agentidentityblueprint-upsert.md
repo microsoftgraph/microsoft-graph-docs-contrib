@@ -99,7 +99,7 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications/$entity",
     "id": "03ef14b0-ca33-4840-8f4f-d6e91916010e",
     "deletedDateTime": null,
-    "appId": "631a96bc-a705-4eda-9f99-fdaf9f54f6a2",
+    "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
     "identifierUris": [],
     "createdDateTime": "2019-09-17T19:10:35.2742618Z",
     "displayName": "Display name",
