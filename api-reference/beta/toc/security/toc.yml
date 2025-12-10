@@ -234,31 +234,25 @@ items:
     items:
     - name: Zone
       href: ../../resources/security-zone.md
-    - name: List
-      href: ../../api/security-list-zones.md
     - name: Create
       href: ../../api/security-post-zones.md
     - name: Get
       href: ../../api/security-zone-get.md
+    - name: List
+      href: ../../api/security-list-zones.md
     - name: Update
       href: ../../api/security-zone-update.md
     - name: Delete
       href: ../../api/security-delete-zones.md
-    - name: List environments
-      href: ../../api/security-zone-list-environments.md
-    - name: Create environment
-      href: ../../api/security-zone-post-environments.md
   - name: Environment
     items:
     - name: Environment
       href: ../../resources/security-environment.md
+    - name: Attach
+      href: ../../api/security-zone-post-environments.md
     - name: List
       href: ../../api/security-zone-list-environments.md
-    - name: Create
-      href: ../../api/security-zone-post-environments.md
-    - name: Get
-      href: ../../api/security-environment-get.md
-    - name: Delete
+    - name: Detach
       href: ../../api/security-zone-delete-environments.md
   - name: Aggregated environment
     href: ../../resources/security-aggregatedenvironment.md
