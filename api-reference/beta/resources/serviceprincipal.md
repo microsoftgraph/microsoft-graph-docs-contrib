@@ -18,7 +18,7 @@ Represents an instance of an application in a directory. Inherits from [director
 
 The [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) resource inherits from this object.
 
-This resource supports using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/serviceprincipal-delta.md) function. This resource is an open type that allows other properties to be passed in.
+This resource supports using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/serviceprincipal-delta.md) function. This resource is an open type that allows additional properties beyond those documented here.
 
 ## Methods
 
@@ -101,6 +101,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |homepage|String|Home page or landing page of the application.|
 | id | String | The unique identifier for the service principal. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `in`). |
 | info | [informationalUrl](informationalurl.md) | Basic profile information of the acquired application such as app's marketing, support, terms of service and privacy statement URLs. The terms of service and privacy statement are surfaced to users through the user consent experience. For more info, see How to: [Add Terms of service and privacy statement for registered Microsoft Entra apps](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, and `eq` on `null` values).  |
+| isDisabled | Boolean | Specifies whether the service principal of the app in a tenant or across tenants for multi-tenant apps can obtain new access tokens or access protected resources. When set to `true`, existing tokens remain valid until they expire based on their configured lifetimes, and the app stays visible in the Enterprise apps list but users cannot sign in.`true` if the application is deactivated (disabled); otherwise `false`.|
 |keyCredentials|[keyCredential](keycredential.md) collection|The collection of key credentials associated with the service principal. Not nullable. Supports `$filter` (`eq`, `not`, `ge`, `le`).            |
 |loginUrl|String|Specifies the URL where the service provider redirects the user to Microsoft Entra ID to authenticate. Microsoft Entra ID uses the URL to launch the application from Microsoft 365 or the Microsoft Entra My Apps. When blank, Microsoft Entra ID performs IdP-initiated sign-on for applications configured with [SAML-based single sign-on](/azure/active-directory/manage-apps/what-is-single-sign-on#saml-sso). The user launches the application from Microsoft 365, the Microsoft Entra My Apps, or the Microsoft Entra SSO URL.|
 |logoutUrl|String| Specifies the URL that the Microsoft's authorization service uses to sign out a user using OpenId Connect [front-channel](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html), or SAML sign out protocols.|
@@ -190,6 +191,7 @@ The following JSON representation shows the resource type.
   "homepage": "String",
   "id": "String (identifier)",
   "info": {"@odata.type": "microsoft.graph.informationalUrl"},
+  "isDisabled": "Boolean",
   "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
   "loginUrl": "String",
   "logoutUrl": "String",

@@ -14,6 +14,8 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [ediscovery-deprecation](../includes/ediscovery-subnamespace-deprecation.md)]
+
 Represents the operation that handles applying tags to documents in a review set based on a review set query.
 
 Inherits from [caseOperation](../resources/ediscovery-caseoperation.md).

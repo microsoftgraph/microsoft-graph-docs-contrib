@@ -156,6 +156,7 @@
           {
             "name": "Agent registry",
             "resources": [
+              "agentRegistry",
               "agentInstance",
               "agentCardManifest",
               "agentCollection"
@@ -287,22 +288,25 @@
           "resources": [
             "place",
             "building",
-            "desk",
             "floor",
-            "room",
-            "roomList",
             "section",
+            "room",
+            "desk",
             "workspace",
-            "checkInClaim"
+            "checkInClaim",
+            "placeOperation",
+            "roomList"
           ],
-          "complexTypes": [
-            "assignedPlaceMode",
-            "dropInPlaceMode",
+          "complexTypes": [            
             "mailboxDetails",
             "placeMode",
+            "assignedPlaceMode",
+            "dropInPlaceMode",
             "reservablePlaceMode",
+            "unavailablePlaceMode",
             "resourceLink",
-            "unavailablePlaceMode"
+            "placeExecutionResult",
+            "placeOperationProgress"
           ],
            "childNodes": [
             {
@@ -373,7 +377,7 @@
       ],
       "childNodes": [
         {
-          "name": "eDiscovery (preview)",
+          "name": "eDiscovery (deprecated)",
           "overview": "../../resources/ediscovery-ediscoveryapioverview.md",
           "resources": [
             "microsoft.graph.ediscovery.case",
@@ -585,7 +589,7 @@
             "cloudPcForensicStorageAccount",
             "cloudPcFrontlineSharedDeviceDetail",
             "cloudPcHealthCheckItem",
-            "cloudPcLaunchDetail",            
+            "cloudPcLaunchDetail",
             "cloudPcLaunchInfo",
             "cloudPcLoginResult",
             "cloudPcManagementAssignmentTarget",
@@ -1088,11 +1092,16 @@
           "overview": "../../resources/sharepoint-crossorganization-api-overview.md",
           "resources": [
             "sharePointGroupIdentityMapping",
+            "sharePointMigrationTask",
             "sharePointUserIdentityMapping"
           ],
           "complexTypes": [
             "sharePointIdentityMappingGroupMigrationData",
-            "sharePointIdentityMappingUserMigrationData"
+            "sharePointIdentityMappingUserMigrationData",
+            "sharePointMigrationTaskParameters",
+            "sharePointUserMigrationTaskParameters",
+            "sharePointSiteMigrationTaskParameters",
+            "sharePointGroupMigrationTaskParameters"
           ]
         }
       ]
@@ -1347,6 +1356,9 @@
                 "endUserSettings",
                 "entitlementManagementSettings",
                 "customAccessPackageWorkflowExtension",
+                "controlConfiguration",
+                "insiderRiskyUserApproval",
+                "entraIdProtectionRiskyUserApproval",
                 "customDataProvidedResourceUploadSession"
               ],
               "complexTypes": [
@@ -1604,7 +1616,7 @@
           "name": "Identity and sign-in",
           "shouldSort": true,
           "resources": [
-            "appRoleAssignment",            
+            "appRoleAssignment",
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
             "externalIdentitiesPolicy"
@@ -1656,7 +1668,7 @@
             {
               "name": "Verified ID",
               "resources": [
-                "verifiedIdProfile"                
+                "verifiedIdProfile"
               ]
             },
             {
@@ -2335,11 +2347,12 @@
         "mailFolder",
         "mailFolderOperation",
         "mailSearchFolder",
-        "messageRule"
+        "messageRule",
+        "userConfiguration"
       ],
       "childNodes": [
         {
-          "name": "Focused Inbox",
+          "name": "Focused inbox",
           "overview": "../../resources/manage-focused-inbox.md",
           "resources": [
             "inferenceClassificationOverride"
@@ -2355,6 +2368,8 @@
         }
       ],
       "complexTypes":[
+        "structuredDataEntry",
+        "structuredDataEntryTypedValue",
         "updateAllMessagesReadStateOperation"
       ]
     },

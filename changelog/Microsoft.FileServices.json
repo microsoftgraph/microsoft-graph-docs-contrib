@@ -4977,6 +4977,112 @@
     {
       "ChangeList": [
         {
+          "Id": "c81e7d2b-df4a-42db-a19e-c85713782820",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "sharePointMigrationTaskStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharePointMigrationTaskStatus** enumeration type.",
+          "Target": "sharePointMigrationTaskStatus"
+        },
+        {
+          "Id": "c81e7d2b-df4a-42db-a19e-c85713782820",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointGroupMigrationTaskParameters",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointGroupMigrationTaskParameters](https://learn.microsoft.com/en-us/graph/api/resources/sharePointGroupMigrationTaskParameters?view=graph-rest-beta) resource.",
+          "Target": "sharePointGroupMigrationTaskParameters"
+        },
+        {
+          "Id": "c81e7d2b-df4a-42db-a19e-c85713782820",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointMigrationTaskParameters",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointMigrationTaskParameters](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationTaskParameters?view=graph-rest-beta) resource.",
+          "Target": "sharePointMigrationTaskParameters"
+        },
+        {
+          "Id": "c81e7d2b-df4a-42db-a19e-c85713782820",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointSiteMigrationTaskParameters",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointSiteMigrationTaskParameters](https://learn.microsoft.com/en-us/graph/api/resources/sharePointSiteMigrationTaskParameters?view=graph-rest-beta) resource.",
+          "Target": "sharePointSiteMigrationTaskParameters"
+        },
+        {
+          "Id": "c81e7d2b-df4a-42db-a19e-c85713782820",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointUserMigrationTaskParameters",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointUserMigrationTaskParameters](https://learn.microsoft.com/en-us/graph/api/resources/sharePointUserMigrationTaskParameters?view=graph-rest-beta) resource.",
+          "Target": "sharePointUserMigrationTaskParameters"
+        },
+        {
+          "Id": "c81e7d2b-df4a-42db-a19e-c85713782820",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "crossOrganizationMigrationTasks",
+          "ChangeType": "Addition",
+          "Description": "Added the **crossOrganizationMigrationTasks** relationship to the [sharePointMigrationsRoot](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationsRoot?view=graph-rest-beta) resource.",
+          "Target": "sharePointMigrationsRoot"
+        },
+        {
+          "Id": "c81e7d2b-df4a-42db-a19e-c85713782820",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointMigrationTask",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointMigrationTask](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationTask?view=graph-rest-beta) resource and associated methods.",
+          "Target": "sharePointMigrationTask"
+        },
+        {
+          "Id": "c81e7d2b-df4a-42db-a19e-c85713782820",
+          "ApiChange": "Method",
+          "ChangedApiName": "cancel",
+          "ChangeType": "Addition",
+          "Description": "Added the [cancel](https://learn.microsoft.com/en-us/graph/api/sharePointMigrationTask-cancel?view=graph-rest-beta) method to the [sharePointMigrationTask](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationTask?view=graph-rest-beta) resource.",
+          "Target": "sharePointMigrationTask"
+        },
+        {
+          "Id": "c81e7d2b-df4a-42db-a19e-c85713782820",
+          "ApiChange": "Method",
+          "ChangedApiName": "getBySourceGroupMailNickname",
+          "ChangeType": "Addition",
+          "Description": "Added the [getBySourceGroupMailNickname](https://learn.microsoft.com/en-us/graph/api/sharePointMigrationTask-getBySourceGroupMailNickname?view=graph-rest-beta) method to the [sharePointMigrationTask](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationTask?view=graph-rest-beta) resource.",
+          "Target": "sharePointMigrationTask"
+        },
+        {
+          "Id": "c81e7d2b-df4a-42db-a19e-c85713782820",
+          "ApiChange": "Method",
+          "ChangedApiName": "getBySourceSiteUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the [getBySourceSiteUrl](https://learn.microsoft.com/en-us/graph/api/sharePointMigrationTask-getBySourceSiteUrl?view=graph-rest-beta) method to the [sharePointMigrationTask](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationTask?view=graph-rest-beta) resource.",
+          "Target": "sharePointMigrationTask"
+        },
+        {
+          "Id": "c81e7d2b-df4a-42db-a19e-c85713782820",
+          "ApiChange": "Method",
+          "ChangedApiName": "getBySourceUserPrincipalName",
+          "ChangeType": "Addition",
+          "Description": "Added the [getBySourceUserPrincipalName](https://learn.microsoft.com/en-us/graph/api/sharePointMigrationTask-getBySourceUserPrincipalName?view=graph-rest-beta) method to the [sharePointMigrationTask](https://learn.microsoft.com/en-us/graph/api/resources/sharePointMigrationTask?view=graph-rest-beta) resource.",
+          "Target": "sharePointMigrationTask"
+        },
+        {
+          "Id": "c81e7d2b-df4a-42db-a19e-c85713782820",
+          "ApiChange": "Resource",
+          "ChangedApiName": "groupIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [groupIdentity](https://learn.microsoft.com/en-us/graph/api/resources/groupIdentity?view=graph-rest-beta) resource.",
+          "Target": "groupIdentity"
+        }
+      ],
+      "Id": "c81e7d2b-df4a-42db-a19e-c85713782820",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-12-03T03:34:35.7331047Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "8c90bcec-9f17-47e9-b335-2665b8a53abc",
           "ApiChange": "Relationship",
           "ChangedApiName": "migrationJobs",
