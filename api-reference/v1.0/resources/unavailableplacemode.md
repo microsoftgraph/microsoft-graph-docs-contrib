@@ -21,7 +21,7 @@ Inherits from [placeMode](./placemode.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|reason|String|Reason for marking a [place](./place.md) unavailable.|
+|reason|String|The reason a [place](../resources/place.md) is marked unavailable.|
 
 ## Relationships
 None.
