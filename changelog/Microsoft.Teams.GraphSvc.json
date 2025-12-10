@@ -3177,7 +3177,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "layoutType",
           "ChangeType": "Addition",
-          "Description": "Added the **layoutType** property to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource. This property enables users to create channels with different conversation layouts (`post` for traditional post-reply format or `chat` for chat-like threading) and switch between them at any time.",
+          "Description": "Added the **layoutType** property to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
           "Target": "channel"
         },
         {
