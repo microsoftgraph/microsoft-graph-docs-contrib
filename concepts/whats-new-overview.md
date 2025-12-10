@@ -26,7 +26,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 - Use the **heightAdjustableState** property on [desk](/graph/api/resources/desk) to indicate whether a desk is height adjustable.
 - Use the **teamsEnabledState** property on [room](/graph/api/resources/room) to indicate whether a room is enabled for Microsoft Teams.
 - Use the **placeId** property on [room](/graph/api/resources/room) and [workspace](/graph/api/resources/workspace) as an alternative immutable unique identifier.
-- Use the [unavailablePlaceMode](/graph/api/resources/unavailableplacemode?view=graph-rest-beta&preserve-view=true) resource to indicate why a **desk** or **workspace** is marked as unavailable for booking.
+- Use the [unavailablePlaceMode](/graph/api/resources/unavailableplacemode) resource to indicate why a **desk** or **workspace** is marked as unavailable for booking.
 
 ## December 2025: New in preview only
 
