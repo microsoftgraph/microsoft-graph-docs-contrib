@@ -60,7 +60,7 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|placeId|String| Identifier of the place (when applicable). |
+|placeId|String| Identifier of the place, if applicable. |
 |workLocationType|workLocationType| Semantic type of the location. The possible values are: `unspecified`, `office`, `remote`, `timeOff`, `unknownFutureValue`.|
 
 ## Response
