@@ -5,7 +5,7 @@ author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
-ms.date: 12/20/2024
+ms.date: 12/10/2025
 ---
 
 # Get workHoursAndLocationsSetting
