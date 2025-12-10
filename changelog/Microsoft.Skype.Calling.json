@@ -99,6 +99,8 @@
       "SubArea": "Call"
     },
     {
+      "ChangeList": [
+        {
           "Id": "96a3bd97-9e44-40f3-9c29-031c22a205b5",
           "ApiChange": "Method",
           "ChangedApiName": "clearAutomaticLocation",
