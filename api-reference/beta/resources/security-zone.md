@@ -1,6 +1,6 @@
 ---
 title: "Zone resource type"
-description: "Represents a zone (also known as cloud scopes) which is an aggregate of cloud native environments used to manage security and access at scale in Microsoft Defender for Cloud."
+description: "A zone (also referred to ‘cloud scope’) is an aggregate of cloud-native environments utilized for managing access and security at scale within Microsoft Defender for Cloud. Zones enable the segmentation of multi-cloud environments - such as Azure, AWS, GCP, and connected DevOps or registry sources—into meaningful groupings, allowing for the consistent application of least-privilege access controls."
 author: "Yarinle4"
 ms.date: 11/26/2025
 ms.localizationpriority: medium
@@ -14,9 +14,9 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a zone (also known as cloud scopes) which is an aggregate of cloud native environments used to manage security and access at scale in Microsoft Defender for Cloud. Zones provide logical grouping for access control management, filtering experiences, and security configuration.
+A zone (also referred to ‘cloud scope’) is an aggregate of cloud-native environments utilized for managing access and security at scale within Microsoft Defender for Cloud. Zones enable the segmentation of multi-cloud environments - such as Azure, AWS, GCP, and connected DevOps or registry sources—into meaningful groupings, allowing for the consistent application of least-privilege access controls.  
 
-After creating a new Zone, you can assign a role to it. For more details, see [RBAC application multiple](../resources/rbacapplicationmultiple.md).
+Once you set up a new zone, you’re able to assign roles to it. For further information, refer to [RBAC permissions assignment](../resources/rbacapplicationmultiple.md).
 
 Inherits from [entity](../resources/entity.md)
 
@@ -24,10 +24,10 @@ Inherits from [entity](../resources/entity.md)
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Create](../api/security-post-zones.md)|[microsoft.graph.security.zone](../resources/security-zone.md)|Create a new zone object.|
-|[Get](../api/security-zone-get.md)|[microsoft.graph.security.zone](../resources/security-zone.md)|Get a Zone object by a spcific Zone Id.|
-|[List](../api/security-list-zones.md)|[microsoft.graph.security.zone](../resources/security-zone.md) collection|Get a list of the zone objects and their properties.|
-|[Update](../api/security-zone-update.md)|[microsoft.graph.security.zone](../resources/security-zone.md)|Update the properties of a zone object.|
-|[Delete](../api/security-delete-zones.md)|None|Delete a Zone object by providing the Zone ID.|
+|[Get](../api/security-zone-get.md)|[microsoft.graph.security.zone](../resources/security-zone.md)|Retrieves zone object by its ZoneId.|
+|[List](../api/security-list-zones.md)|[microsoft.graph.security.zone](../resources/security-zone.md) collection|Retrieves all zone objects and their properties.|
+|[Update](../api/security-zone-update.md)|[microsoft.graph.security.zone](../resources/security-zone.md)|Updates the properties of a zone object.|
+|[Delete](../api/security-delete-zones.md)|None|Deletes a zone object by its ZoneId.|
 
 ## Properties
 |Property|Type|Description|

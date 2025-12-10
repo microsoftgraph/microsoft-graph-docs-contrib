@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents audit information including user and timestamp for creation or modification actions. This complex type is used to track who performed an action and when it occurred.
+Represents audit metadata, including the user and timestamps for creation or modification actions. This complex type tracks who performed an action and when it occurred.
 
 
 ## Properties

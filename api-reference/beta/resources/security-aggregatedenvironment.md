@@ -14,8 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents environment count summaries by type within a zone. Aggregations provide a quick overview of how many environments of each type are attached to a zone.
-
+Refers to grouped environments by type within a specific zone. These aggregations provide a quick summary of how many environments of each type are attached to a zone.
 
 ## Properties
 |Property|Type|Description|

@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [Zone](../resources/security-zone.md) object by a spcific Zone Id.
+Get a [Zone](../resources/security-zone.md) object by a spcific ZoneId.
 
 ## Permissions
 

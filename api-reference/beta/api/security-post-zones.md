@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [Zone](../resources/security-zone.md) object. there is an option to provide a list of [Environment](../resources/security-Environment.md) objects to be included in the new Zone.
+Create a new [Zone](../resources/security-zone.md) object.
 
 ## Permissions
 
@@ -54,7 +54,7 @@ You can specify the following properties when creating a **zone**.
 |:---|:---|:---|
 |displayName|String|Human-readable name of the zone. Required.|
 |description|String|Optional description of the zone. Optional.|
-|environments|Collection([microsoft.graph.security.environment](../resources/security-environment.md))|Collection of environments to attach to the zone. Optional.|
+|environments|Collection([microsoft.graph.security.environment](../resources/security-environment.md))|Collection of environments to attach to the zone. Required.|
 
 
 

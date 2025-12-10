@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a specific [Environment](../resources/security-Environment.md) associated with a [Zone](../resources/security-zone.md) object.
+Retrieves a specific [Environment](../resources/security-Environment.md) associated with a [Zone](../resources/security-zone.md). The EnvironmentId must be URL-encoded. 
 
 ## Permissions
 

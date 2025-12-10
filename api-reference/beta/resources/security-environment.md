@@ -14,17 +14,16 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a cloud environment that can be attached to a zone for security management purposes. Environments can include Azure subscriptions, AWS accounts, GCP projects, and other cloud native resources.
+An environment is a cloud primitive entity that can be selected within a specific [zone](../resources/security-zone.md) for security management. Environments include Azure subscriptions, AWS accounts, GCP projects, and other resources native to the cloud. 
 
 Inherits from [entity](../resources/entity.md)
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create](../api/security-zone-post-environments.md)|[microsoft.graph.security.environment](../resources/security-environment.md)|Create a new environment object.|
-|[Get](../api/security-environment-get.md)|[microsoft.graph.security.environment](../resources/security-environment.md)|Read the properties and relationships of [microsoft.graph.security.environment](../resources/security-environment.md) object.|
-|[List](../api/security-zone-list-environments.md)|[microsoft.graph.security.environment](../resources/security-environment.md) collection|Get a list of the environment objects and their properties.|
-|[Delete](../api/security-zone-delete-environments.md)|None|Delete an environment object.|
+|[Attach](../api/security-zone-post-environments.md)|[microsoft.graph.security.environment](../resources/security-environment.md)|Associates an environment to a zone by providing the EnvironmentId.|[microsoft.graph.security.environment](../resources/security-environment.md)|Retrieves a specific environment associated with a zone. The EnvironmentId must be URL-encoded.|
+|[List](../api/security-zone-list-environments.md)|[microsoft.graph.security.environment](../resources/security-environment.md) collection| Retrieves all Environment objects associated with a zone.|
+|[Detach](../api/security-zone-delete-environments.md)|None|Detaches an environment from a zone by providing the  EnvironmentId. The EnvironmentId must be URL-encoded.|
 
 ## Properties
 |Property|Type|Description|
