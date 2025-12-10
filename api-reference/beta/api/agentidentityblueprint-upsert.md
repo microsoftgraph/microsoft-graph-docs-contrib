@@ -57,6 +57,8 @@ If an object with **uniqueName** doesn't exist and the `Prefer: create-if-missin
 
 If an application object with **uniqueName** already exists, this method updates the object and returns a `204 No Content` response code.
 
+For information about errors returned by agent identity APIs, see [Agent identity error codes](/entra/agent-id/identity-platform/error-codes).
+
 ## Examples
 
 #### Request

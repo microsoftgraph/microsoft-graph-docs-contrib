@@ -45,6 +45,8 @@ In the request body, supply a JSON representation of a [agentIdentityBlueprintPr
 
 If successful, this method returns a `201 Created` response code and a [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object in the response body.
 
+For information about errors returned by agent identity APIs, see [Agent identity error codes](/entra/agent-id/identity-platform/error-codes).
+
 ## Example
 
 ### Request
