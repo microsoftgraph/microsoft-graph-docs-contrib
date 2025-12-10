@@ -14,7 +14,7 @@ ms.custom: sfi-ga-blocked
 
 Namespace: microsoft.graph
 
-Represents a Microsoft Entra user account. This resource is an open type that allows other properties to be passed in. Inherits from [directoryObject](directoryobject.md). Only [a subset of user properties are returned by default in v1.0](../resources/users.md#common-properties). To retrieve other properties, you must specify them in a `$select` query option.
+Represents a Microsoft Entra user account. This resource is an open type that allows additional properties beyond those documented here. Inherits from [directoryObject](directoryobject.md). Only [a subset of user properties are returned by default in v1.0](../resources/users.md#common-properties). To retrieve other properties, you must specify them in a `$select` query option.
 
 This resource supports:
 
