@@ -27,7 +27,8 @@ Namespace: microsoft.graph.security
 | azureDevOpsOrganization | AzureDevOpsOrganization     | GUID (unique ID of the Azure DevOps organization)                | 3f5493e6-8aba-485d-9120-c881b1322b52                                                                                                      |
 | gitHubOrganization      | GitHubOrganization          | GitHub organization ID                                           | 48028332                                                                                                                                  |
 | gitLabGroup             | GitLabGroup                 | GitLab group ID                                                  | 70868764                                                                                                                                  |
-| jFrogArtifactory        | JFrogArtifactory            | Artifactory ID (^[a-zA-Z][a-zA-Z0-9]{2,31}$)                     | Artifactory123                                                                                                                           |
+| jFrogArtifactory        | JFrogArtifactory            | Artifactory ID (`^[a-zA-Z][a-zA-Z0-9]{2,31}`)
+$)                     | Artifactory123                                                                                                                           |
 | unknownFutureValue      | unknownFutureValue          | -                                                    | -
 
 
