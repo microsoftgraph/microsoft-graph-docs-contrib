@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Set the manual work location signal for a [user](../resources/user.md). The explicit value chosen by a user (or an authorized client) overrides any automatically detected or scheduled working hours and location.
+Set the manual work location signal for a [user](../resources/user.md). The explicit value chosen by a user or an authorized client overrides any automatically detected or scheduled working hours and location.
 
 - Precedence: manual > automatic > scheduled
 - Precision (within the same layer): more precise wins (for example, office + building > office)
