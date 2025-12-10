@@ -207,7 +207,7 @@ The following JSON representation shows the resource type.
   "mediaSize": "",
   "margin": {"@odata.type": "microsoft.graph.printMargin"},
   "mediaType": "String",
-  "finishings": "String collection",
+  "finishings": ["String"],
   "pagesPerSheet": "Int32",
   "multipageLayout": {"@odata.type": "microsoft.graph.printMultipageLayout"},
   "collate": true,
