@@ -27,7 +27,7 @@ Represents the aggregated work location state for a user, computed from multiple
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|placeId|String| Identifier of the place (when applicable). |
+|placeId|String| Identifier of the place, if applicable. |
 |source|workLocationSource| Indicates which layer wins the aggregation. The possible values are: `none`, `manual`, `scheduled`, `automatic`, `unknownFutureValue`.|
 |workLocationType|workLocationType| Semantic type of the location. The possible values are: `unspecified`, `office`, `remote`, `timeOff`, `unknownFutureValue`.|
 
