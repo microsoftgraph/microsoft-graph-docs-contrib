@@ -166,6 +166,7 @@ name. |
 | hasMembersWithLicenseErrors | Boolean | Indicates whether there are members in this group that have license errors from its group-based license assignment. <br><br>This property is never returned on a GET operation. You can use it as a $filter argument to get groups that have members with license errors (that is, filter for this property being `true`).  <br><br>Supports `$filter` (`eq`). |
 | hideFromAddressLists | Boolean | `true` if the group isn't displayed in certain parts of the Outlook user interface: in the **Address Book**, in address lists for selecting message recipients, and in the **Browse Groups** dialog for searching groups; false otherwise. The default value is `false`. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`). |
 | hideFromOutlookClients | Boolean | `true` if the group isn't displayed in Outlook clients, such as Outlook for Windows and Outlook on the web, false otherwise. The default value is `false`. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`). |
+| welcomeMessageEnabled | Boolean | Indicates whether a welcome message is sent to new members when they are added to the group. The default value is `true`. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`). |
 | id | String | The unique identifier for the group. <br><br>Returned by default. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `in`). |
 | isArchived | Boolean | When a group is associated with a team, this property determines whether the team is in read-only mode. <br/>To read this property, use the `/group/{groupId}/team` endpoint or the [Get team](../api/team-get.md) API. To update this property, use the [archiveTeam](../api/team-archive.md) and [unarchiveTeam](../api/team-unarchive.md) APIs. |
 | isAssignableToRole | Boolean | Indicates whether this group can be assigned to a Microsoft Entra role. Optional. <br><br>This property can only be set while creating the group and is immutable. If set to `true`, the **securityEnabled** property must also be set to `true`,  **visibility** must be `Hidden`, and the group cannot be a dynamic group (that is, **groupTypes** can't contain `DynamicMembership`). <br/><br/>Only callers with at least the Privileged Role Administrator role can set this property. The caller must also be assigned the _RoleManagement.ReadWrite.Directory_ permission to set this property or update the membership of such groups. For more, see [Using a group to manage Microsoft Entra role assignments](https://go.microsoft.com/fwlink/?linkid=2103037)<br><br>Using this feature requires a Microsoft Entra ID P1 license. Returned by default. Supports `$filter` (`eq`, `ne`, `not`). |
@@ -308,6 +309,7 @@ The following JSON representation shows the resource type.
   "groupTypes": ["String"],
   "hideFromAddressLists": "Boolean",
   "hideFromOutlookClients": "Boolean",
+  "welcomeMessageEnabled": "Boolean",
   "id": "String (identifier)",
   "isFavorite": "Boolean",
   "isArchived": "Boolean",
