@@ -92,6 +92,10 @@ items:
   items:
   - name: Overview
     href: ../../resources/communications-api-overview.md
+  - name: Ad hoc call
+    items:
+    - name: Ad hoc call (preview)
+      href: ../../resources/adhoccall.md
   - name: Call events
     items:
     - name: Call event
@@ -304,6 +308,8 @@ items:
         href: ../../resources/callrecording.md
       - name: List
         href: ../../api/onlinemeeting-list-recordings.md
+      - name: Get
+        href: ../../api/callrecording-get.md
       - name: Get
         href: ../../api/callrecording-get.md
       - name: Get delta by organizer
