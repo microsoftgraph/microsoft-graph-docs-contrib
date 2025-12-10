@@ -73,17 +73,17 @@ Content-type: application/json
 
 {
   "start": {
-    "dateTime": "2024-01-15T00:00:00.0000000",
-    "timeZone": "UTC"
+    "dateTime": "2025-12-15T00:00:00.0000000",
+    "timeZone": "Pacific Standard Time"
   },
   "end": {
-    "dateTime": "2024-01-15T23:59:59.0000000",
-    "timeZone": "UTC"
+    "dateTime": "2025-12-15T23:59:59.0000000",
+    "timeZone": "Pacific Standard Time"
   },
   "workLocationType": "timeOff",
   "timeOffDetails": {
     "subject": "Personal Day",
-    "isAllDay": true
+    "isAllDay": false
   }
 }
 ```
@@ -105,20 +105,22 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "id": "AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OABGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAENAAAiIsqMbYjsT5e-T7KzowPTAAABvv6cAAA=",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('12345678-1234-1234-1234-123456789012')/settings/workHoursAndLocations/occurrences/$entity",
+  "id": "AAMkADljNDFhMDJjLTA2ZDItNDY2Mi04YjcxLTIzZTI4YjUyMDA0ZgBGAAAAAAAB5FC96H6HQLms31sjXiKjBwDraVMWVv9mR6-bY0mUztIzAAAAAAENAADraVMWVv9mR6-bY0mUztIzAAPENZYpAAA=",
   "recurrenceId": null,
+  "workLocationType": "timeOff",
+  "placeId": null,
   "start": {
-    "dateTime": "2024-01-15T00:00:00.0000000",
-    "timeZone": "UTC"
+    "dateTime": "2025-12-15T00:00:00.0000000",
+    "timeZone": "Pacific Standard Time"
   },
   "end": {
-    "dateTime": "2024-01-15T23:59:59.0000000",
-    "timeZone": "UTC"
+    "dateTime": "2025-12-15T23:59:59.0000000",
+    "timeZone": "Pacific Standard Time"
   },
-  "workLocationType": "timeOff",
   "timeOffDetails": {
     "subject": "Personal Day",
-    "isAllDay": true
+    "isAllDay": false
   }
 }
 ```

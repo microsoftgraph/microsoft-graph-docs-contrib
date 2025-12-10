@@ -73,24 +73,25 @@ Content-type: application/json
 
 {
   "start": {
-    "dateTime": "2024-01-01T09:00:00.0000000",
-    "timeZone": "UTC"
+    "dateTime": "2025-12-11T09:00:00.0000000",
+    "timeZone": "Pacific Standard Time"
   },
   "end": {
-    "dateTime": "2024-01-01T17:00:00.0000000",
-    "timeZone": "UTC"
+    "dateTime": "2025-12-11T18:00:00.0000000",
+    "timeZone": "Pacific Standard Time"
   },
   "workLocationType": "office",
-  "placeId": "12345678-1234-1234-1234-123456789012",
   "recurrence": {
     "pattern": {
       "type": "weekly",
       "interval": 1,
-      "daysOfWeek": ["monday", "tuesday", "wednesday", "thursday", "friday"]
+      "firstDayOfWeek": "sunday",
+      "daysOfWeek": ["thursday"]
     },
     "range": {
       "type": "noEnd",
-      "startDate": "2024-01-01"
+      "startDate": "2025-12-11",
+      "recurrenceTimeZone": "Pacific Standard Time"
     }
   }
 }
@@ -113,26 +114,36 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "id": "AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OABGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAENAAAiIsqMbYjsT5e-T7KzowPTAAABvv6bAAA=",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('15b9b296-dac5-43d0-8b94-93bb67eef619')/settings/workHoursAndLocations/recurrences/$entity",
+  "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A62lTFlb-Zkev22NJlM7SMwADxDWWKgAA",
+  "workLocationType": "office",
+  "placeId": null,
   "start": {
-    "dateTime": "2024-01-01T09:00:00.0000000",
-    "timeZone": "UTC"
+    "dateTime": "2025-12-11T09:00:00.0000000",
+    "timeZone": "Pacific Standard Time"
   },
   "end": {
-    "dateTime": "2024-01-01T17:00:00.0000000",
-    "timeZone": "UTC"
+    "dateTime": "2025-12-11T18:00:00.0000000",
+    "timeZone": "Pacific Standard Time"
   },
-  "workLocationType": "office",
-  "placeId": "12345678-1234-1234-1234-123456789012",
   "recurrence": {
     "pattern": {
       "type": "weekly",
       "interval": 1,
-      "daysOfWeek": ["monday", "tuesday", "wednesday", "thursday", "friday"]
+      "firstDayOfWeek": "sunday",
+      "daysOfWeek": [
+        "thursday"
+      ],
+      "month": 0,
+      "dayOfMonth": 0,
+      "index": "first"
     },
     "range": {
       "type": "noEnd",
-      "startDate": "2024-01-01"
+      "startDate": "2025-12-11",
+      "endDate": null,
+      "recurrenceTimeZone": "Pacific Standard Time",
+      "numberOfOccurrences": 0
     }
   }
 }

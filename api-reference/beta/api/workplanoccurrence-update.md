@@ -70,11 +70,11 @@ Content-type: application/json
 {
   "start": {
     "dateTime": "2024-01-15T08:00:00.0000000",
-    "timeZone": "UTC"
+    "timeZone": "Pacific Standard Time"
   },
   "end": {
     "dateTime": "2024-01-15T12:00:00.0000000",
-    "timeZone": "UTC"
+    "timeZone": "Pacific Standard Time"
   },
   "workLocationType": "timeOff",
   "timeOffDetails": {
@@ -105,11 +105,11 @@ Content-type: application/json
   "recurrenceId": null,
   "start": {
     "dateTime": "2024-01-15T08:00:00.0000000",
-    "timeZone": "UTC"
+    "timeZone": "Pacific Standard Time"
   },
   "end": {
     "dateTime": "2024-01-15T12:00:00.0000000",
-    "timeZone": "UTC"
+    "timeZone": "Pacific Standard Time"
   },
   "workLocationType": "timeOff",
   "timeOffDetails": {

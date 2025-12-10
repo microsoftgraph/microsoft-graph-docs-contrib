@@ -87,7 +87,6 @@ Content-type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('12345678-1234-1234-1234-123456789012')/settings/workHoursAndLocations/$entity",
-  "@odata.type": "microsoft.graph.workHoursAndLocationsSetting",
   "maxSharedWorkLocationDetails": "approximate"
 }
 ```
