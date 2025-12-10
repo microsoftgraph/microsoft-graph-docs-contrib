@@ -91,26 +91,35 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('12345678-1234-1234-1234-123456789012')/settings/workHoursAndLocations/recurrences",
   "value": [
     {
-      "id": "AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OABGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAENAAAiIsqMbYjsT5e-T7KzowPTAAABvv6bAAA=",
+      "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A62lTFlb-Zkev22NJlM7SMwADowImVQAA",
+      "workLocationType": "remote",
+      "placeId": null,
       "start": {
-        "dateTime": "2024-01-01T09:00:00.0000000",
-        "timeZone": "UTC"
+        "dateTime": "2025-12-08T09:00:00.0000000",
+        "timeZone": "Pacific Standard Time"
       },
       "end": {
-        "dateTime": "2024-01-01T17:00:00.0000000",
-        "timeZone": "UTC"
+        "dateTime": "2025-12-08T18:00:00.0000000",
+        "timeZone": "Pacific Standard Time"
       },
-      "workLocationType": "office",
-      "workLocationDetails@odata.id": "https://graph.microsoft.com/v1.0/places/12345678-1234-1234-1234-123456789",
       "recurrence": {
         "pattern": {
           "type": "weekly",
           "interval": 1,
-          "daysOfWeek": ["monday", "tuesday", "wednesday", "thursday", "friday"]
+          "firstDayOfWeek": "sunday",
+          "daysOfWeek": [
+            "monday"
+          ],
+          "month": 0,
+          "dayOfMonth": 0,
+          "index": "first"
         },
         "range": {
           "type": "noEnd",
-          "startDate": "2024-01-01"
+          "startDate": "2025-12-08",
+          "endDate": null,
+          "recurrenceTimeZone": "Pacific Standard Time",
+          "numberOfOccurrences": 0
         }
       }
     }

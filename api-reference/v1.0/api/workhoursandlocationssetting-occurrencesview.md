@@ -77,7 +77,7 @@ The following example shows a request.
   "name": "workhoursandlocationssetting_occurrencesview"
 } -->
 ```http
-GET https://graph.microsoft.com/v1.0/me/settings/workHoursAndLocations/occurrencesView(startDateTime='2024-01-01T00:00:00Z',endDateTime='2024-01-07T23:59:59Z')
+GET https://graph.microsoft.com/v1.0/me/settings/workHoursAndLocations/occurrencesView(startDateTime='2025-12-01T00:00:00Z',endDateTime='2025-12-01T23:59:59Z')
 ```
 
 ### Response
@@ -100,17 +100,17 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.workPlanOccurrence)",
   "value": [
     {
-      "id": "AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OABGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAENAAAiIsqMbYjsT5e-T7KzowPTAAABvv6cAAA=",
-      "recurrenceId": "AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OABGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAENAAAiIsqMbYjsT5e-T7KzowPTAAABvv6bAAA=",
+      "id": "AAkBOQAICN4wbJIpwAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAOtpUxZW-2ZHr9tjSZTO0jMAA2pPCT8AABA=",
+      "recurrenceId": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A62lTFlb-Zkev22NJlM7SMwADak8JPwAA",
+      "workLocationType": "remote",
       "start": {
-        "dateTime": "2024-01-01T09:00:00.0000000",
-        "timeZone": "UTC"
+        "dateTime": "2025-12-01T09:00:00.0000000",
+        "timeZone": "Pacific Standard Time"
       },
       "end": {
-        "dateTime": "2024-01-01T17:00:00.0000000", 
-        "timeZone": "UTC"
-      },
-      "workLocationType": "office"
+        "dateTime": "2025-12-01T18:00:00.0000000",
+        "timeZone": "Pacific Standard Time"
+      }
     }
   ]
 }
