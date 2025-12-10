@@ -56,7 +56,9 @@ For the list of supported methods, see [place](./place.md).
 | reserved | The room is available only on a first-come, first-served basis. It can't be reserved.|
 
 ## Relationships
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|children|[place](../resources/place.md) collection|A collection of children places that is only used in the [Upsert places](../api/place-patch-places.md) API. A room doesn't have children. Inherited from [place](../resources/place.md). |
 
 ## JSON representation
 The following JSON representation shows the resource type.

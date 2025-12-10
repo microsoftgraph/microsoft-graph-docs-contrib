@@ -28,7 +28,10 @@ Base type of [building](../resources/building.md), [desk](../resources/desk.md),
 |[Update](../api/place-update.md) |[place](./place.md) |Update the properties of [place](../resources/place.md) object that can be a [building](../resources/building.md), [floor](../resources/floor.md), [section](../resources/section.md), [desk](../resources/desk.md), [room](../resources/room.md), [workspace](../resources/workspace.md), or [roomList](../resources/roomlist.md). |
 |[Delete](../api/place-delete.md) |None |Delete a [place](../resources/place.md) object. |
 |[Descendants](../api/place-descendants.md) |[place](./place.md) collection|Get all the descendants of a specific type under a [place](../resources/place.md). | 
-|[Create check-in claim](../api/place-post-checkins.md)|[checkInClaim](../resources/checkinclaim.md)|Create a new [checkInClaim](../resources/checkinclaim.md) object to record the check-in status for a specific place, such as a [desk](../resources/desk.md) or a [room](../resources/room.md), associated with a specific calendar reservation.|
+|[Create check-in claim](../api/place-post-checkins.md)|[checkInClaim](../resources/checkinclaim.md)|Create a new [checkInClaim](../resources/checkinclaim.md) object to record the check-in status for a specific place, such as a [desk](../resources/desk.md), [room](../resources/room.md), or [workspace](../resources/workspace.md), associated with a specific calendar reservation.|
+|[Upsert places](../api/place-patch-places.md)|Location header|Upsert one or more [place](../resources/place.md) objects in async mode.|
+|[Get operation](../api/place-getoperation.md)|[placeOperation](../resources/placeoperation.md)|Get a [placeOperation](../resources/placeoperation.md) by ID.|
+|[List operations](../api/place-listoperations.md)|[placeOperation](../resources/placeoperation.md) collection|List all existing [placeOperation](../resources/placeoperation.md) objects.|
 
 ## Properties
 
@@ -49,6 +52,7 @@ Base type of [building](../resources/building.md), [desk](../resources/desk.md),
 |Relationship|Type|Description|
 |:---|:---|:---|
 |checkIns| [checkInClaim](../resources/checkinclaim.md) collection | A subresource of a **place** object that indicates the check-in status of an Outlook calendar event booked at the place. |
+|children|[place](../resources/place.md) collection|A collection of children places that is only used in the [Upsert places](../api/place-patch-places.md) API.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
