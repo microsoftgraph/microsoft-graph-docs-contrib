@@ -20,7 +20,7 @@ Update the automatic work location for a [user](../resources/user.md). The autom
 - Precision (within the same layer): more precise wins (for example, office + building > office)
 - If a manual location is set, it overrides both automatic and scheduled settings.
 
-Use this operation from clients or services that automatically detect location (for example, Teams, network/location agents, or OEM docking apps). It doesn't clear manual or scheduled signals.
+Use this operation from clients or services that automatically detect location (for example, Teams, network and location agents, or OEM docking apps). It doesn't clear manual or scheduled signals.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -62,7 +62,7 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|placeId|String| Identifier of the place (when applicable). |
+|placeId|String| Identifier of the place, if applicable. |
 |workLocationType|workLocationType| Semantic type of the location. The possible values are: `unspecified`, `office`, `remote`, `timeOff`, `unknownFutureValue`.|
 
 ## Response
