@@ -14,6 +14,8 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [ediscovery-deprecation](../includes/ediscovery-subnamespace-deprecation.md)]
+
 Run an estimate of the number of emails and documents in the source collection. To learn more about source collections (also known as searches in eDiscovery), see [Collect data for a case in Advanced eDiscovery](/microsoft-365/compliance/collecting-data-for-ediscovery).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]

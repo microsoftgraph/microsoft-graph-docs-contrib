@@ -77,6 +77,48 @@
     {
       "ChangeList": [
         {
+          "Id": "96a3bd97-9e44-40f3-9c29-031c22a205b5",
+          "ApiChange": "Method",
+          "ChangedApiName": "clearAutomaticLocation",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `POST /users/{usersId}/presence/clearAutomaticLocation` (application) and `POST /communications/presences/{presenceId}/clearAutomaticLocation` endpoints from the [clearAutomaticLocation](https://learn.microsoft.com/en-us/graph/api/presence-clearAutomaticLocation?view=graph-rest-beta) method.",
+          "Target": "presence"
+        },
+        {
+          "Id": "96a3bd97-9e44-40f3-9c29-031c22a205b5",
+          "ApiChange": "Method",
+          "ChangedApiName": "clearLocation",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `POST /users/{usersId}/presence/clearLocation` (application) and `POST /communications/presences/{presenceId}/clearLocation` endpoints from the [clearLocation](https://learn.microsoft.com/en-us/graph/api/presence-clearLocation?view=graph-rest-beta) method.",
+          "Target": "presence"
+        },
+        {
+          "Id": "96a3bd97-9e44-40f3-9c29-031c22a205b5",
+          "ApiChange": "Method",
+          "ChangedApiName": "setAutomaticLocation",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `POST /users/{usersId}/presence/setAutomaticLocation` and `POST /communications/presences/{presenceId}/setAutomaticLocation` endpoints from the [setAutomaticLocation](https://learn.microsoft.com/en-us/graph/api/presence-setAutomaticLocation?view=graph-rest-beta) method.",
+          "Target": "presence"
+        },
+        {
+          "Id": "96a3bd97-9e44-40f3-9c29-031c22a205b5",
+          "ApiChange": "Method",
+          "ChangedApiName": "setManualLocation",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `POST /users/{usersId}/presence/setManualLocation` and `POST /communications/presences/{presenceId}/setManualLocation` endpoints from the [setManualLocation](https://learn.microsoft.com/en-us/graph/api/presence-setManualLocation?view=graph-rest-beta) method.",
+          "Target": "presence"
+        }
+      ],
+      "Id": "96a3bd97-9e44-40f3-9c29-031c22a205b5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-12-08T16:02:03.2817806Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "3cdabea4-6923-4c02-b014-2c4cdd22dfd4",
           "ApiChange": "Enumeration",
           "ChangedApiName": "workLocationSource",
