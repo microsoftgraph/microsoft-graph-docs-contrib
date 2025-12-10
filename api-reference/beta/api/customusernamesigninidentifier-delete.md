@@ -1,6 +1,6 @@
 ---
-title: "Delete customUsernameSignInIdentifier"
-description: "Delete a customUsernameSignInIdentifier object."
+title: "Delete signInIdentifierBase"
+description: "Delete a signInIdentifierBase object."
 author: "Gyanendersinghgithub"
 ms.date: 10/02/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# Delete customUsernameSignInIdentifier
+# Delete signInIdentifierBase
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [customUsernameSignInIdentifier](../resources/customusernamesigninidentifier.md) object.
+Delete a [signInIdentifierBase](../resources/signinidentifierbase.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
