@@ -1691,6 +1691,24 @@
       "CreatedDateTime": "2025-12-16T09:32:17.8914924Z",
       "WorkloadArea": "Personal contacts",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5ad7b623-ba67-4fe3-a307-3f582d7f2553",
+          "ApiChange": "Property",
+          "ChangedApiName": "welcomeMessageEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **welcomeMessageEnabled** property to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
+          "Target": "group"
+        }
+      ],
+      "Id": "5ad7b623-ba67-4fe3-a307-3f582d7f2553",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-12-10T00:00:00.000Z",
+      "WorkloadArea": "Groups",
+      "SubArea": ""
     }
   ]
 }
