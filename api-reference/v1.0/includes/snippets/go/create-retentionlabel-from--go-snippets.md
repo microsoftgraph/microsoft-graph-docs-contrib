@@ -52,18 +52,18 @@ descriptionForUsers := "retain for 7 years"
 requestBody.SetDescriptionForUsers(&descriptionForUsers) 
 descriptors := graphmodelssecurity.NewFilePlanDescriptor()
 additionalData := map[string]interface{}{
-	"authorityTemplate@odata.bind" : "https://graph.microsoft.com/beta/security/labels/authorities('fie3f4fc-b966-4c40-94de-fb8a383658e4')", 
-	"categoryTemplate@odata.bind" : "https://graph.microsoft.com/beta/security/labels/categories('0bjk8-b966-4c40-94de-fb8a383658e4')", 
-	"citationTemplate@odata.bind" : "https://graph.microsoft.com/beta/security/labels/citations('0e23f4fc-b966-4c40-94de-fb8a383658e4')", 
-	"departmentTemplate@odata.bind" : "https://graph.microsoft.com/beta/security/labels/departments('p99ef4fc-b966-4c40-94de-fb8a383658e4')", 
-	"filePlanReferenceTemplate@odata.bind" : "https://graph.microsoft.com/beta/security/labels/filePlanReferences('e095f4fc-b966-4c40-94de-fb8a383658e4')", 
+	"authorityTemplate@odata.bind" : "https://graph.microsoft.com/v1.0/security/labels/authorities('fie3f4fc-b966-4c40-94de-fb8a383658e4')", 
+	"categoryTemplate@odata.bind" : "https://graph.microsoft.com/v1.0/security/labels/categories('0bjk8-b966-4c40-94de-fb8a383658e4')", 
+	"citationTemplate@odata.bind" : "https://graph.microsoft.com/v1.0/security/labels/citations('0e23f4fc-b966-4c40-94de-fb8a383658e4')", 
+	"departmentTemplate@odata.bind" : "https://graph.microsoft.com/v1.0/security/labels/departments('p99ef4fc-b966-4c40-94de-fb8a383658e4')", 
+	"filePlanReferenceTemplate@odata.bind" : "https://graph.microsoft.com/v1.0/security/labels/filePlanReferences('e095f4fc-b966-4c40-94de-fb8a383658e4')", 
 }
 descriptors.SetAdditionalData(additionalData)
 requestBody.SetDescriptors(descriptors)
 defaultRecordBehavior := graphmodels.STARTLOCKED_DEFAULTRECORDBEHAVIOR 
 requestBody.SetDefaultRecordBehavior(&defaultRecordBehavior) 
 additionalData := map[string]interface{}{
-	"retentionEventType@odata.bind" : "https://graph.microsoft.com/beta/security/triggerTypes/retentionEventTypes('e095f4fc-b966-4c40-94de-fb8a383658e4')", 
+	"retentionEventType@odata.bind" : "https://graph.microsoft.com/v1.0/security/triggerTypes/retentionEventTypes('e095f4fc-b966-4c40-94de-fb8a383658e4')", 
 }
 requestBody.SetAdditionalData(additionalData)
 
