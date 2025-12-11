@@ -72,8 +72,8 @@ The following table explains the schema in the response.
 |Column          |Type     |Description|
 |:---------------|:--------|:----------|
 |UPN             |String   |The user principal name.|
-|LastSignOn      |String   |The date when the user last signed in through the legacy Remote Desktop client.|
-|DaysWithUsage   |String   |The total number of days that the user signed in through the legacy Remote Desktop client in the last 28 days.|
+|LastSignOn      |String   |The date when the user last signed in through the legacy Remote Desktop client. It is using the YYYY-MM-DD format and is always in UTC time.|
+|DaysWithUsage   |String   |The total number of days that the user signed in through the legacy Remote Desktop client in the last 28 days. It is calculated using UTC time.|
 
 ## Examples
 
