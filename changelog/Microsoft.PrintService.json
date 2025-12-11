@@ -1,13 +1,33 @@
 {
-  "changelog": [    
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "40b1a909-b908-4a48-a500-0a805d2d9c20",
+          "ApiChange": "Property",
+          "ChangedApiName": "mediaSizes",
+          "ChangeType": "Change",
+          "Description": "Added new supported [media sizes](https://learn.microsoft.com/graph/api/resources/printercapabilities?view=graph-rest-beta#mediasizes-values) to the **mediaSizes** property of the [printerCapabilities](https://learn.microsoft.com/en-us/graph/api/resources/printercapabilities?view=graph-rest-beta)
+ resource.",
+          "Target": "printerCapabilities"
+        }
+      ],
+      "Id": "40b1a909-b908-4a48-a500-0a805d2d9c20",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-12-08T01:02:56.1853617Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud printing"
+    },
     {
       "ChangeList": [
         {
           "Id": "b13a065e-2176-4464-84b4-589d6cf066b6",
           "ApiChange": "Property",
           "ChangedApiName": "mediaSizes",
-          "ChangeType": "Addition",
-          "Description": "Added support for additional [media sizes](https://learn.microsoft.com/graph/api/resources/printercapabilities?view=graph-rest-1.0#mediasizes-values)",
+          "ChangeType": "Change",
+          "Description": "Added new supported [media sizes](https://learn.microsoft.com/graph/api/resources/printercapabilities?view=graph-rest-1.0#mediasizes-values) to the **mediaSizes** property of the [printerCapabilities](https://learn.microsoft.com/en-us/graph/api/resources/printercapabilities?view=graph-rest-1.0)
+ resource.",
           "Target": "printerCapabilities"
         }
       ],
