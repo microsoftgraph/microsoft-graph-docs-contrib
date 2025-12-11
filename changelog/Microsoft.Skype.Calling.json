@@ -13,14 +13,6 @@
                 {
           "Id": "94772378-a35f-46e1-a514-13e6a88982a0",
           "ApiChange": "Property",
-          "ChangedApiName": "expiryDateTime",
-          "ChangeType": "Addition",
-          "Description": "Added the **expiryDateTime** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-1.0) resource.",
-          "Target": "onlineMeetingBase"
-        },
-        {
-          "Id": "94772378-a35f-46e1-a514-13e6a88982a0",
-          "ApiChange": "Property",
           "ChangedApiName": "meetingSpokenLanguageTag",
           "ChangeType": "Addition",
           "Description": "Added the **meetingSpokenLanguageTag** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
@@ -33,6 +25,14 @@
           "ChangeType": "Addition",
           "Description": "Added the **expiryDateTime** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
           "Target": "onlineMeeting"
+        },
+        {
+          "Id": "94772378-a35f-46e1-a514-13e6a88982a0",
+          "ApiChange": "Property",
+          "ChangedApiName": "expiryDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **expiryDateTime** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeetingBase"
         },
         {
           "Id": "94772378-a35f-46e1-a514-13e6a88982a0",
@@ -79,14 +79,6 @@
           "ApiChange": "Property",
           "ChangedApiName": "meetingOptionsWebUrl",
           "ChangeType": "Addition",
-          "Description": "Added the **meetingOptionsWebUrl** property from the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-1.0) resource.",
-          "Target": "onlineMeetingBase"
-        },
-        {
-          "Id": "94772378-a35f-46e1-a514-13e6a88982a0",
-          "ApiChange": "Property",
-          "ChangedApiName": "meetingOptionsWebUrl",
-          "ChangeType": "Addition",
           "Description": "Added the **meetingOptionsWebUrl** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-1.0) resource.",
           "Target": "onlineMeetingBase"
         },
@@ -95,7 +87,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "meetingOptionsWebUrl",
           "ChangeType": "Addition",
-          "Description": "Added the **meetingOptionsWebUrl** property from the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-1.0) resource.",
+          "Description": "Added the **meetingOptionsWebUrl** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-1.0) resource.",
           "Target": "virtualEventSession"
         },
         {
@@ -103,7 +95,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "meetingOptionsWebUrl",
           "ChangeType": "Addition",
-          "Description": "Added the **meetingOptionsWebUrl** property from the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Description": "Added the **meetingOptionsWebUrl** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
           "Target": "onlineMeeting"
         }
       ],
