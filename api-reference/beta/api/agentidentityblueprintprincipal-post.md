@@ -45,6 +45,8 @@ In the request body, supply a JSON representation of a [agentIdentityBlueprintPr
 
 If successful, this method returns a `201 Created` response code and a [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object in the response body.
 
+For information about errors returned by agent identity APIs, see [Agent identity error codes](/entra/agent-id/identity-platform/error-codes).
+
 ## Example
 
 ### Request
@@ -55,7 +57,7 @@ POST https://graph.microsoft.com/beta/servicePrincipals/microsoft.graph.agentIde
 Content-type: application/json
 
 {
-  "appId": "65415bb1-9267-4313-bbf5-ae259732ee12",
+  "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
 }
 ```
 
@@ -73,19 +75,19 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals/microsoft.graph.agentIdentityBlueprintPrincipal/$entity",
   "@odata.type": "#microsoft.graph.agentIdentityBlueprintPrincipal",
   "id": "59e617e5-e447-4adc-8b88-00af644d7c92",
   "accountEnabled": true,
-  "appId": "59e617e5-e447-4adc-8b88-00af644d7c92",
+  "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
   "appRoleAssignmentRequired": false,
   "createdByAppId": "00000003-0000-0000-c000-000000000000",
   "displayName": "foo",
   "publisherName": "Contoso",
   "servicePrincipalNames": [
-      "f1bd758f-4a1a-4b71-aa20-a248a22a8928"
+      "00001111-aaaa-2222-bbbb-3333cccc4444"
   ],
-  "signInAudience": "AzureAdMyOrg",
+  "signInAudience": "AzureADMyOrg",
   "servicePrincipalType": "Application",
   "tags": [],
   "appRoles": [],
