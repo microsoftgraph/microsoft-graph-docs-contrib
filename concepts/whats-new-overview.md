@@ -18,6 +18,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## December 2025: New and generally available
+
+### Teamwork and communications | Calls and online meetings
+
+When `$expand=members` is included, the [List chats](/graph/api/chat-list) API returns a maximum of 25 items, even if a larger `$top` value is specified.
+
 ## December 2025: New in preview only
 
 ### Calendars | Places
@@ -38,21 +44,22 @@ Use the SharePoint cross-tenant migration task APIs in Microsoft Graph to enable
 
 Added the `microsoftRevokedSessions` value to the [riskDetail](/graph/api/resources/riskdetail?view=graph-rest-beta&preserve-view=true) enumeration to indicate that Microsoft revoked sessions. This enumeration member applies to the following Microsoft Entra Identity Protection resources: [riskDetection](/graph/api/resources/riskdetection?view=graph-rest-beta&preserve-view=true), [riskUserActivity](/graph/api/resources/riskuseractivity?view=graph-rest-beta&preserve-view=true), [riskyUser](/graph/api/resources/riskyuser?view=graph-rest-beta&preserve-view=true), and [signIn](/graph/api/resources/signin?view=graph-rest-beta&preserve-view=true).
 
-### Teamwork and communications | Calls and online meetings
-
-The following endpoints are no longer supported for managing [work location](/graph/resources/userworklocation) for a user:
-- `POST /users/{usersId}/presence/clearAutomaticLocation`
-- `POST /communications/presences/{presenceId}/clearAutomaticLocation`
-- `POST /users/{usersId}/presence/clearLocation`
-- `POST /communications/presences/{presenceId}/clearLocation`
-- `POST /users/{usersId}/presence/setAutomaticLocation`
-- `POST /communications/presences/{presenceId}/setAutomaticLocation`
-- `POST /users/{usersId}/presence/setManualLocation`
-- `POST /communications/presences/{presenceId}/setManualLocation`
-
 ### Mail
 
 Use the [userConfiguration](/graph/api/resources/userconfiguration?view=graph-rest-beta&preserve-view=true) resource and its associated methods to manage user-specific settings, metadata, or application data tied to mailbox folders, using XML, binary, or dictionary formats.
+
+### Teamwork and communications | Calls and online meetings
+
+- When `$expand=members` is included, the [List chats](/graph/api/chat-list?view=graph-rest-beta&preserve-view=true) API returns a maximum of 25 items, even if a larger `$top` value is specified.
+- The following endpoints are no longer supported for managing [work location](/graph/resources/userworklocation?view=graph-rest-beta&preserve-view=true) for a user:
+  - `POST /users/{usersId}/presence/clearAutomaticLocation`
+  - `POST /communications/presences/{presenceId}/clearAutomaticLocation`
+  - `POST /users/{usersId}/presence/clearLocation`
+  - `POST /communications/presences/{presenceId}/clearLocation`
+  - `POST /users/{usersId}/presence/setAutomaticLocation`
+  - `POST /communications/presences/{presenceId}/setAutomaticLocation`
+  - `POST /users/{usersId}/presence/setManualLocation`
+  - `POST /communications/presences/{presenceId}/setManualLocation`
 
 ### Teamwork and communications | Messaging
 
