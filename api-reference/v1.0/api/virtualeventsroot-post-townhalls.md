@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /solutions/virtualEvents/townhalls
 ```
 
@@ -48,7 +48,7 @@ You can specify the following properties when you create a [virtualEventTownhall
 
 |Property|Type|Description|
 |:---|:---|:---|
-| audience | meetingAudience | The audience to whom the town hall is visible. Possible values are: `everyone`, `organization`, and `unknownFutureValue`. |
+| audience | meetingAudience | The audience to whom the town hall is visible. The possible values are: `everyone`, `organization`, and `unknownFutureValue`. |
 | coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | The identity information of coorganizers of the town hall. |
 | description | [itemBody](../resources/itembody.md) | A description of the town hall. |
 | displayName | String | Display name of the town hall. |
@@ -73,7 +73,7 @@ The following example shows a request.
   "name": "create_virtualeventtownhall"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/solutions/virtualEvents/townhalls
 Content-Type: application/json
 
@@ -122,7 +122,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.virtualEventTownhall"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

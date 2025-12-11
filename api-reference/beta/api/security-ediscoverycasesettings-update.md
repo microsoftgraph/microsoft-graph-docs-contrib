@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/settings
 ```
 
@@ -45,10 +45,10 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/settings
 
 |Property|Type|Description|
 |:---|:---|:---|
-|caseType|[microsoft.graph.security.caseType](../resources/security-ediscoverycasesettings.md#casetype-values)|The type of the eDiscovery case. Possible values are: `standard`, `premium`, `unknownFutureValue`.|
+|caseType|[microsoft.graph.security.caseType](../resources/security-ediscoverycasesettings.md#casetype-values)|The type of the eDiscovery case. The possible values are: `standard`, `premium`, `unknownFutureValue`.|
 |ocr|[microsoft.graph.security.ocrSettings](../resources/security-ocrsettings.md)|The OCR (Optical Character Recognition) settings for the eDiscovery case. Optional.|
 |redundancyDetection|[microsoft.graph.security.redundancyDetectionSettings](../resources/security-redundancydetectionsettings.md)|Redundancy (email threading and near duplicate detection) settings for an eDiscovery case. Optional.|
-|reviewSetSettings|[microsoft.graph.security.reviewSetSettings](../resources/security-ediscoverycasesettings.md#reviewsetsettings-values)|The settings of the review set for the case. Possible values are: `none`, `disableGrouping`, `unknownFutureValue`.|
+|reviewSetSettings|[microsoft.graph.security.reviewSetSettings](../resources/security-ediscoverycasesettings.md#reviewsetsettings-values)|The settings of the review set for the case. The possible values are: `none`, `disableGrouping`, `unknownFutureValue`.|
 |topicModeling|[microsoft.graph.security.topicModelingSettings](../resources/security-topicmodelingsettings.md)|Topic modeling (Themes) settings for an eDiscovery case. Optional.|
 
 ## Response
@@ -66,7 +66,7 @@ The following example shows a request.
   "name": "update_ediscoverycasesettings"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/settings
 Content-Type: application/json
 
@@ -131,6 +131,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

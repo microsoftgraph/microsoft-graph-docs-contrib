@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Provision SharePoint-managed Azure blob containers as temporary storage for migration content and metadata.
 
-[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /storage/fileStorage/containers/{fileStorageContainerId}/provisionMigrationContainers
 ```
 
@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "filestoragecontainerthis.provisionmigrationcontainers"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/provisionMigrationContainers
 ```
 
@@ -99,7 +99,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.sharePointMigrationContainerInfo"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

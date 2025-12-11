@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /networkAccess/connectivity/remoteNetworks
 ```
 
@@ -70,7 +70,7 @@ The following example shows a request.
   "name": "create_remoteNetwork_basic"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/networkAccess/connectivity/remoteNetworks
 Content-Type: application/json
 
@@ -89,7 +89,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.networkaccess.remoteNetwork"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -113,7 +113,7 @@ The following example shows a request.
   "name": "create_remoteNetwork_with_forwardingProfile"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/networkAccess/connectivity/remoteNetworks
 Content-Type: application/json
 
@@ -137,7 +137,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.networkaccess.remoteNetwork"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -161,7 +161,7 @@ The following example shows a request.
   "name": "create_remoteNetwork_with_forwardingProfile_deviceLink"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/networkAccess/connectivity/remoteNetworks
 Content-Type: application/json
 
@@ -206,7 +206,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.networkaccess.remoteNetwork"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

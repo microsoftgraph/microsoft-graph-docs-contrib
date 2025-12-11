@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /networkAccess/filteringProfiles/{filteringProfileId}/policies/{tlsInspectionPolicyLinkId}
 ```
 
@@ -67,7 +67,7 @@ The following example shows a request.
   "sampleKeys": ["d734d2de-f2df-4b4a-8c4c-5111f8878275", "70405a6c-b823-c521-c981-de9d08a21f8f"]
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/networkAccess/filteringProfiles/d734d2de-f2df-4b4a-8c4c-5111f8878275/policies/70405a6c-b823-c521-c981-de9d08a21f8f
 Content-Type: application/json
 
@@ -84,6 +84,6 @@ The following example shows the response.
   "blockType": "response"
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

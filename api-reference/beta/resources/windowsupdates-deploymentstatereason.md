@@ -19,7 +19,7 @@ A reason for a particular deployment state.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|value|microsoft.graph.windowsUpdates.deploymentStateReasonValue|Specifies a reason for the deployment state. Possible values are: `scheduledByOfferWindow`, `offeringByRequest`, `pausedByRequest`, `pausedByMonitoring`. Use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `faultedByContentOutdated`. Read-only.|
+|value|microsoft.graph.windowsUpdates.deploymentStateReasonValue|Specifies a reason for the deployment state. The possible values are: `scheduledByOfferWindow`, `offeringByRequest`, `pausedByRequest`, `pausedByMonitoring`. Use the `Prefer: include-unknown-enum-members` request header to get the following members in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `faultedByContentOutdated`. Read-only.|
 
 ## Relationships
 None.

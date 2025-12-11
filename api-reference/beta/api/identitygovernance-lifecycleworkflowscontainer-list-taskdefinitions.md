@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/lifecycleWorkflows/taskDefinitions
 ```
 
@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_list_taskdefinition"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/taskDefinitions
 ```
 
@@ -114,7 +114,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.identityGovernance.taskDefinition)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -661,7 +661,7 @@ The following example shows a request. Because the **category** is a flagged enu
   "name": "lifecycleworkflows_list_taskdefinition_filter_category"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/taskDefinitions?$filter=category has 'joiner'
 ```
 
@@ -705,7 +705,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.identityGovernance.taskDefinition)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

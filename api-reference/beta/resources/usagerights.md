@@ -23,19 +23,19 @@ For more information, see [Configure usage rights for Azure Information Protecti
 | Member      | Value | Description                                                                                   | Common roles mapping |
 | :---------- | :---- | :-------------------------------------------------------------------------------------------- | :------------------- |
 | VIEW        | 0     | Allows the user to open and read the protected content. Required for almost all other rights. | All                  |
-| EDIT        | 1     | Allows the user to modify the content. Implies VIEW.                                          | Reviewer, Co-Author, Co-Owner, Owner |
-| DOCEDIT     | 2     | Allows the user to modify the content (often synonymous with EDIT). Implies VIEW.             | Reviewer, Co-Author, Co-Owner, Owner |
-| PRINT       | 3     | Allows the user to print the content. Implies VIEW.                                           | Reviewer, Co-Author, Co-Owner, Owner |
-| EXTRACT     | 4     | Allows the user to copy content from the protected document. Implies VIEW.                    | Co-Author, Co-Owner, Owner |
-| EXPORT      | 5     | Allows the user to save the content in an unprotected format or remove protection. Implies EDIT and EXTRACT. | Co-Owner, Owner    |
-| FORWARD     | 6     | Allows the user to forward protected email. Implies REPLY and REPLYALL.                      | Co-Author, Co-Owner, Owner |
+| EDIT        | 1     | Allows the user to modify the content.                                          | Reviewer, Co-Author, Co-Owner, Owner |
+| DOCEDIT     | 2     | Allows the user to modify the content (often synonymous with EDIT).              | Reviewer, Co-Author, Co-Owner, Owner |
+| PRINT       | 3     | Allows the user to print the content.                                            | Reviewer, Co-Author, Co-Owner, Owner |
+| EXTRACT     | 4     | Allows the user to copy content from the protected document.                     | Co-Author, Co-Owner, Owner |
+| EXPORT      | 5     | Allows the user to save the content in an unprotected format or remove protection.  | Co-Owner, Owner    |
+| FORWARD     | 6     | Allows the user to forward protected email.                       | Co-Author, Co-Owner, Owner |
 | REPLY       | 7     | Allows the user to reply to protected email.                                                  | Reviewer, Co-Author, Co-Owner, Owner |
-| REPLYALL    | 8     | Allows the user to reply-all to protected email. Implies REPLY.                               | Reviewer, Co-Author, Co-Owner, Owner |
+| REPLYALL    | 8     | Allows the user to reply-all to protected email.                                | Reviewer, Co-Author, Co-Owner, Owner |
 | COMMENT     | 9     | Allows the user to add comments to the content (specific to certain applications).            | Reviewer, Co-Author, Co-Owner, Owner |
-| VIEWRIGHTSDATA | 10   | Allows the user to view the permissions applied to the content. Implies VIEW.                 | All                  |
-| EDITRIGHTSDATA | 11   | Allows the user to change the permissions applied to the content. Implies VIEWRIGHTSDATA.    | Co-Owner, Owner    |
+| VIEWRIGHTSDATA | 10   | Allows the user to view the permissions applied to the content.                  | All                  |
+| EDITRIGHTSDATA | 11   | Allows the user to change the permissions applied to the content.    | Co-Owner, Owner    |
 | OWNER       | 12    | Grants the user all rights, including the ability to change permissions.                      | Owner                |
-| OBJMODEL    | 13    | Allows programmatic access to the content (for example, via application add-ins). Implies VIEW.      | All                  |
+| OBJMODEL    | 13    | Allows programmatic access to the content (for example, via application add-ins).       | All                  |
 | UNKNOWN     | 14    | An unknown or unsupported right.                                                              | N/A                  |
 | ACCESSDENIED| 15    | Indicates the user was explicitly denied access (typically returned as an error, not a right).| N/A                  |
 | EXCEPTION   | 16    | Indicates an error occurred while retrieving rights.                                          | N/A                  |

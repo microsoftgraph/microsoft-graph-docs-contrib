@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /solutions/backupRestore/protectionUnits/{protectionUnitBaseId}/cancelOffboard
 ```
 
@@ -67,7 +67,7 @@ The following example shows a request.
   "name": "protectionunitbase_cancelOffboard_example1"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/protectionUnits/89014d8c-71fe-4d00-a01a-31850bc5b32c/cancelOffboard
 ```
 
@@ -111,7 +111,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -161,7 +161,7 @@ The following example shows a request.
   "name": "protectionunitbase_canceloffboard_example2"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/protectionUnits/89014d8c-71fe-4d00-a01a-31850bc5b32c/cancelOffboard
 ```
 
@@ -205,7 +205,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.publicError"
 }
 -->
-``` http
+```http
 HTTP/1.1 403 Operation Not Allowed
 Content-Type: application/json
 

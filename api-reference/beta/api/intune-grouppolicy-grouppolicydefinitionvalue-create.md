@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues
 ```
 
@@ -53,7 +53,7 @@ The following table shows the properties that are required when you create the g
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|The date and time the object was created.|
 |enabled|Boolean|Enables or disables the associated group policy definition.|
-|configurationType|[groupPolicyConfigurationType](../resources/intune-grouppolicy-grouppolicyconfigurationtype.md)|Specifies how the value should be configured. This can be either as a Policy or as a Preference. Possible values are: `policy`, `preference`.|
+|configurationType|[groupPolicyConfigurationType](../resources/intune-grouppolicy-grouppolicyconfigurationtype.md)|Specifies how the value should be configured. This can be either as a Policy or as a Preference. The possible values are: `policy`, `preference`.|
 |id|String|Key of the entity.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the entity was last modified.|
 
@@ -66,7 +66,7 @@ If successful, this method returns a `201 Created` response code and a [groupPol
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/definitionValues
 Content-type: application/json
 Content-length: 126
@@ -80,7 +80,7 @@ Content-length: 126
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 298

@@ -20,7 +20,7 @@ Windows Log Collection request entity.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier|
-|templateType|[deviceLogCollectionTemplateType](../resources/intune-devices-devicelogcollectiontemplatetype.md)|Indicates The template type that is sent with the collection request. defaule is Predefined. Possible values are: `predefined`, `unknownFutureValue`.|
+|templateType|[deviceLogCollectionTemplateType](../resources/intune-devices-devicelogcollectiontemplatetype.md)|Indicates The template type that is sent with the collection request. defaule is Predefined. The possible values are: `predefined`, `unknownFutureValue`.|
 
 ## Relationships
 None

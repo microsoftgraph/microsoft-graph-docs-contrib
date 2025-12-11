@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Create a new [sharePointMigrationJob](../resources/sharepointmigrationjob.md) object that is scheduled to run at a later time to migrate content from an intermediary storage to the target [fileStorageContainer](../resources/filestoragecontainer.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /storage/fileStorage/containers/{fileStorageContainerId}/migrationJobs
 ```
 
@@ -68,7 +68,7 @@ The following example shows how to create a **sharePointMigrationJob** that runs
   "name": "create_migrationjob_from_filestoragecontainer"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/migrationJobs
 Content-Type: application/json
 
@@ -116,7 +116,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.sharePointMigrationJob"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

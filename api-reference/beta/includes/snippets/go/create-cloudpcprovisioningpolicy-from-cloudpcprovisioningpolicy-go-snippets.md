@@ -58,6 +58,12 @@ windowsSetting.SetLocale(&locale)
 requestBody.SetWindowsSetting(windowsSetting)
 provisioningType := graphmodels.DEDICATED_CLOUDPCPROVISIONINGTYPE 
 requestBody.SetProvisioningType(&provisioningType) 
+userSettingsPersistenceConfiguration := graphmodels.NewCloudPcUserSettingsPersistenceConfiguration()
+userSettingsPersistenceEnabled := true
+userSettingsPersistenceConfiguration.SetUserSettingsPersistenceEnabled(&userSettingsPersistenceEnabled) 
+userSettingsPersistenceStorageSizeCategory := graphmodels.FOURGB_CLOUDPCUSERSETTINGSPERSISTENCESTORAGESIZECATEGORY 
+userSettingsPersistenceConfiguration.SetUserSettingsPersistenceStorageSizeCategory(&userSettingsPersistenceStorageSizeCategory) 
+requestBody.SetUserSettingsPersistenceConfiguration(userSettingsPersistenceConfiguration)
 additionalData := map[string]interface{}{
 domainJoinConfiguration := graph.New()
 domainJoinType := "hybridAzureADJoin"

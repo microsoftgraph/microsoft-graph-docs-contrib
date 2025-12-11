@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceManagement/detectedApps
 ```
 
@@ -55,7 +55,7 @@ The following table shows the properties that are required when you create the d
 |sizeInByte|Int64|Discovered application size in bytes. Read-only|
 |deviceCount|Int32|The number of devices that have installed this application|
 |publisher|String|Indicates the publisher of the discovered application. For example: 'Microsoft'.  The default value is an empty string.|
-|platform|[detectedAppPlatformType](../resources/intune-devices-detectedappplatformtype.md)|Indicates the operating system / platform of the discovered application.  Some possible values are Windows, iOS, macOS. The default value is unknown (0). Possible values are: `unknown`, `windows`, `windowsMobile`, `windowsHolographic`, `ios`, `macOS`, `chromeOS`, `androidOSP`, `androidDeviceAdministrator`, `androidWorkProfile`, `androidDedicatedAndFullyManaged`, `unknownFutureValue`.|
+|platform|[detectedAppPlatformType](../resources/intune-devices-detectedappplatformtype.md)|Indicates the operating system / platform of the discovered application.  Some possible values are Windows, iOS, macOS. The default value is unknown (0). The possible values are: `unknown`, `windows`, `windowsMobile`, `windowsHolographic`, `ios`, `macOS`, `chromeOS`, `androidOSP`, `androidDeviceAdministrator`, `androidWorkProfile`, `androidDedicatedAndFullyManaged`, `unknownFutureValue`.|
 
 
 
@@ -66,7 +66,7 @@ If successful, this method returns a `201 Created` response code and a [detected
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/deviceManagement/detectedApps
 Content-type: application/json
 Content-length: 228
@@ -84,7 +84,7 @@ Content-length: 228
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 277

@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /trustFramework/keySets/{trustFrameworkKeySetId}/keys_v2/{trustFrameworkKey_v2Id}
 ```
 
@@ -62,7 +62,7 @@ The following example shows a request.
   "name": "get_trustframeworkkey_v2"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/trustFramework/keySets/{trustFrameworkKeySetId}/keys_v2/{aTREvwojOB9ph3fr2r6eTf_5eD5fmQsfsapVMwYI3o}
 ```
 
@@ -106,7 +106,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.trustFrameworkKey_v2"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

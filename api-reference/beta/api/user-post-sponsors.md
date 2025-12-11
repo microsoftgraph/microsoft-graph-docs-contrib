@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /users/{id}/sponsors/$ref
 ```
 
@@ -65,7 +65,7 @@ The following example shows a request. The request body is a JSON object with an
   "name": "create_userSponsors"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/users/d8ab5060-f636-4cff-ae97-d4687f5c83f3/sponsors/$ref
 Content-Type: application/json
 
@@ -102,7 +102,7 @@ The following example shows a request. The request body is a JSON object with an
   "name": "create_groupSponsors"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/users/d8ab5060-f636-4cff-ae97-d4687f5c83f3/sponsors/$ref
 Content-Type: application/json
 

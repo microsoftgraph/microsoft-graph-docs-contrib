@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /solutions/virtualEvents/townhalls/getByUserRole(role='{role}')
 ```
 
@@ -39,7 +39,7 @@ In the request URL, provide the following query parameter with value.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|role|String|User role of the signed-in user in the **virtualEventTownhall**. Possible values are: `organizer`, `coOrganizer`.|
+|role|String|User role of the signed-in user in the **virtualEventTownhall**. The possible values are: `organizer`, `coOrganizer`.|
 
 ## Request headers
 
@@ -67,7 +67,7 @@ The following example shows a request.
   "name": "virtualeventtownhallthis.getbyuserrole"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/getByUserRole(role='organizer')
 ```
 
@@ -113,7 +113,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.virtualEventTownhall)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

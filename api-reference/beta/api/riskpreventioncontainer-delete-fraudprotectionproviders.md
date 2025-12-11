@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "riskpreventioncontainer_delete_fraudprotectionproviders" } -->
 [!INCLUDE [permissions-table](../includes/permissions/riskpreventioncontainer-delete-fraudprotectionproviders-permissions.md)]
 
-[!INCLUDE [rbac-fraudprovider-apis-write](../includes/rbac-for-apis/rbac-fraudprovider-apis-write.md)]
+[!INCLUDE [rbac-fraudprotection-apis-write](../includes/rbac-for-apis/rbac-fraudprotection-apis-write.md)]
 
 ## HTTP request
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /identity/riskPrevention/fraudProtectionProviders/{id}
 ```
 
@@ -62,7 +62,7 @@ The following example shows a request.
   "name": "delete_fraudprotectionprovider"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/identity/riskprevention/fraudprotectionproviders/d474f94f-0fcf-4224-a165-c1c5bad1600f
 ```
 
@@ -101,7 +101,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

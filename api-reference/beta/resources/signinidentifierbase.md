@@ -23,6 +23,8 @@ This is an abstract type from which the following types are derived.
 - [usernameSignInIdentifier](../resources/usernamesigninidentifier.md) resource type
 - [customUsernameSignInIdentifier](../resources/customusernamesigninidentifier.md) resource type
 
+For more information, see [Sign in with an alias or username (preview)](/entra/external-id/customers/how-to-sign-in-alias).
+
 ## Methods
 
 |Method|Return type|Description|

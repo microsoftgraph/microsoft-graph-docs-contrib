@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /tenantRelationships/managedTenants/tenantTags/{tenantTagId}/unassignTag
 ```
 
@@ -62,7 +62,7 @@ If successful, this action returns a `200 OK` response code and a [tenantTag](..
   "name": "tenanttag_unassigntag"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantTags/{tenantTagId}/unassignTag
 Content-Type: application/json
 
@@ -107,7 +107,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.managedTenants.tenantTag"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

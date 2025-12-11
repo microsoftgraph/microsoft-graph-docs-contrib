@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/scripts/{mobileAppContentScriptId}
 ```
 
@@ -54,7 +54,7 @@ The following table shows the properties that are required when you create the [
 |id|String|The unique identifier of the script associated with a mobileLobApp entity. This property is read-only. Inherited from [mobileAppContentScript](../resources/intune-apps-mobileappcontentscript.md)|
 |displayName|String|The display name for the script. Inherited from [mobileAppContentScript](../resources/intune-apps-mobileappcontentscript.md)|
 |content|String|The content of the script. This is a Base64-encoded representation of the script's original content. The content has a maximum size limit of 100KB. Inherited from [mobileAppContentScript](../resources/intune-apps-mobileappcontentscript.md)|
-|state|[mobileAppContentScriptState](../resources/intune-apps-mobileappcontentscriptstate.md)|Indicates the state of the script upload. Possible values are commitPending, commitSuccess, and commitFailed. This property is read-only. Inherited from [mobileAppContentScript](../resources/intune-apps-mobileappcontentscript.md). Possible values are: `commitPending`, `commitSuccess`, `commitFailed`, `unknownFutureValue`.|
+|state|[mobileAppContentScriptState](../resources/intune-apps-mobileappcontentscriptstate.md)|Indicates the state of the script upload. Possible values are commitPending, commitSuccess, and commitFailed. This property is read-only. Inherited from [mobileAppContentScript](../resources/intune-apps-mobileappcontentscript.md). The possible values are: `commitPending`, `commitSuccess`, `commitFailed`, `unknownFutureValue`.|
 |enforceSignatureCheck|Boolean|Indicates whether or not to enforce a signature check when running the script. When TRUE, the script cannot be run without enforcing a signature check. When FALSE, no signature check will be enforced when running the script. Default value is FALSE. Inherited from [win32LobAppScript](../resources/intune-apps-win32lobappscript.md)|
 |runAs32Bit|Boolean|Indicates whether the script will run as 32-bit or 64-bit. When TRUE, the script will run as 32-bit. When FALSE, the script will run as 64-bit. Default value is FALSE. Inherited from [win32LobAppScript](../resources/intune-apps-win32lobappscript.md)|
 
@@ -67,7 +67,7 @@ If successful, this method returns a `200 OK` response code and an updated [win3
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/contentVersions/{mobileAppContentId}/scripts/{mobileAppContentScriptId}
 Content-type: application/json
 Content-length: 233
@@ -84,7 +84,7 @@ Content-length: 233
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 282

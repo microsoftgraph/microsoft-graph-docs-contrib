@@ -30,6 +30,7 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 |[Get member](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Get a single user in the chat.|
 |[Remove member](../api/chat-delete-members.md)|None|Remove a user from the chat.|
 |[Get chat between user and app](../api/userscopeteamsappinstallation-get-chat.md) | [chat](chat.md)| Get one-on-one chat between user and the app |
+|[Remove all access for user](../api/chat-removeallaccessforuser.md)|None|Remove access to a chat for a user.|
 | **Messages** |||
 |[List messages in a chat](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a chat. |
 |[Get message reply](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Get a single message in a chat. |
@@ -60,7 +61,7 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-| chatType| [chatType](../resources/chat.md#chattype-values) | Specifies the type of chat. Possible values are: `group`, `oneOnOne`, `meeting`, `unknownFutureValue`.|
+| chatType| [chatType](../resources/chat.md#chattype-values) | Specifies the type of chat. The possible values are: `group`, `oneOnOne`, `meeting`, `unknownFutureValue`.|
 | createdDateTime| dateTimeOffset|  Date and time at which the chat was created. Read-only.|
 | id| String| The chat's unique identifier. Read-only.|
 | isHiddenForAllMembers | Boolean | Indicates whether the chat is hidden for all its members. Read-only.|

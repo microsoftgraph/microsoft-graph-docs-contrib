@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /education/reports/reflectCheckInResponses
 ```
 
@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "get_reflectCheckinResponses_1"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/reports/reflectCheckInResponses
 ```
 
@@ -114,7 +114,7 @@ The following example shows the default response that includes Reflect check-in 
   "@odata.type": "Collection(microsoft.graph.reflectCheckInResponse)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -163,7 +163,7 @@ The following example shows a request.
   "name": "get_reflectCheckinResponses_2"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/reports/reflectCheckInResponses?$filter=submitDateTime gt 2023-10-10T00:00:00.000Z and submitDateTime lt 2023-10-11T00:00:00.000Z
 ```
 
@@ -208,7 +208,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.reflectCheckInResponse)",
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
