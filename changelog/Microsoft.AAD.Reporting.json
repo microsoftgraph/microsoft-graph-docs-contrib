@@ -83,8 +83,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-11-17T02:31:16.6909577Z",
-      "WorkloadArea": "Reports",
-      "SubArea": "Identity and access reports"
+      "WorkloadArea": "Agents",
+      "SubArea": ""
     },
     {
       "ChangeList": [
