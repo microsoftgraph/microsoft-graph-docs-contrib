@@ -23,10 +23,10 @@ Represents a chat that is a collection of [chatMessages](chatmessage.md) between
 |  Method       |  Return Type  | Description| 
 |:---------------|:--------|:----------|
 | **Chat management** |||
-|[List chats](../api/chat-list.md) | [chat](chat.md) collection | Get the list of chats a user is part of.|
-|[Create chat](../api/chat-post.md) | [chat](chat.md) | Create a new chat.|
-|[Get chat](../api/chat-get.md) | [chat](chat.md) | Read properties and relationships of the chat.|
-|[Update chat](../api/chat-patch.md) | [chat](chat.md) | Update properties of the chat.|
+|[List](../api/chat-list.md) | [chat](chat.md) collection | Get the list of chats a user is part of.|
+|[Create](../api/chat-post.md) | [chat](chat.md) | Create a new chat.|
+|[Get](../api/chat-get.md) | [chat](chat.md) | Read properties and relationships of the chat.|
+|[Update](../api/chat-patch.md) | [chat](chat.md) | Update properties of the chat.|
 |[Delete](../api/chat-delete.md)|None|Delete a chat.|
 |[Remove all access for user](../api/chat-removeallaccessforuser.md)|None|Remove access to a chat for a user.|
 |[List members](../api/chat-list-members.md) | [conversationMember](conversationmember.md) collection | Get the list of all users in the chat.|
