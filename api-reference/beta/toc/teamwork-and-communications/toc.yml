@@ -943,13 +943,13 @@ items:
       href: ../../resources/chat.md
     - name: Chat management
       items:
-      - name: List chats
+      - name: List
         href: ../../api/chat-list.md
-      - name: Create chat
+      - name: Create
         href: ../../api/chat-post.md
-      - name: Get chat
+      - name: Get
         href: ../../api/chat-get.md
-      - name: Update chat
+      - name: Update
         href: ../../api/chat-patch.md
       - name: Delete
         href: ../../api/chat-delete.md
