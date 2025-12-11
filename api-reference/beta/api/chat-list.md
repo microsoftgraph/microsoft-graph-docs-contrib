@@ -20,7 +20,7 @@ This method supports federation. When a user ID is provided, the calling applica
 
 > [!NOTE]
 > * This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
-> * When `$expand=members` is included, the API returns a maximum of 25 items, even if a larger `$top` value is specified.
+> * When `$expand=members` is included, this API returns a maximum of 25 items, even if a larger `$top` value is specified.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
