@@ -40,7 +40,7 @@ Added the `microsoftRevokedSessions` value to the [riskDetail](/graph/api/resour
 
 ### Reports | Identity and access reports
 
-Removed the **conditionalAccessAudience** resource type. The return type of the **conditionalAccessAudiencea** property of the [signIn resource type](/graph/api/resources/signin?view=graph-rest-beta&preserve-view=true) is a collection of String objects and not the **conditionalAccessAudience** complex type.
+Removed the **conditionalAccessAudience** resource type. The return type of the **conditionalAccessAudiences** property of the [signIn resource type](/graph/api/resources/signin?view=graph-rest-beta&preserve-view=true) is a collection of String objects and not the **conditionalAccessAudience** complex type.
 
 ### Teamwork and communications | Calls and online meetings
 
