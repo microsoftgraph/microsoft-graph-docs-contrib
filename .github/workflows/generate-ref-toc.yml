@@ -1,4 +1,4 @@
-#cSpell:ignore microsoftgraph msgraph
+# cSpell:ignore microsoftgraph msgraph bangbang
 name: Generate reference TOC
 
 on:
@@ -47,11 +47,19 @@ jobs:
     - name: Build TOC generation tool
       working-directory: ./tool
       run: dotnet build --configuration Release
-    - name: Run cloud support tool
+    - name: Generate v1 TOC
+      id: v1_gen
+      continue-on-error: true
       env:
         TOOL: ./tool/src/bin/Release/net10.0/GenerateTOC
       run: |
         $TOOL --api-docs ./docs/api-reference/v1.0/api --resource-docs ./docs/api-reference/v1.0/resources --mapping ./docs/api-reference/v1.0/toc/toc.mapping.json --terms-override ./docs/api-reference/toc.terms.overrides.json --toc ./docs/api-reference/v1.0/toc.yml --static-toc ./docs/api-reference/v1.0/toc/static-toc.yml
+    - name: Generate beta TOC
+      id: beta_gen
+      continue-on-error: true
+      env:
+        TOOL: ./tool/src/bin/Release/net10.0/GenerateTOC
+      run: |
         $TOOL --api-docs ./docs/api-reference/beta/api --resource-docs ./docs/api-reference/beta/resources --mapping ./docs/api-reference/beta/toc/toc.mapping.json --terms-override ./docs/api-reference/toc.terms.overrides.json --toc ./docs/api-reference/beta/toc.yml --static-toc ./docs/api-reference/beta/toc/static-toc.yml
     - name: Get token
       id: get_token
@@ -68,26 +76,35 @@ jobs:
       env:
         GH_TOKEN: ${{ steps.get_token.outputs.app-token }}
         PULL_REQUEST: ${{ inputs.pull_request }}
+        V1_OUTCOME: ${{ steps.v1_gen.outcome }}
+        BETA_OUTCOME: ${{ steps.beta_gen.outcome }}
       run: |
-        $status = git status --porcelain
-        if ($status -eq $null) {
-          echo "result=TOC generation resulted in no changes" >> $env:GITHUB_OUTPUT
-          Write-Host "No changes to commit." -ForegroundColor Green
+        $v1Failed = $env:V1_OUTCOME -eq "failure"
+        $betaFailed = $env:BETA_OUTCOME -eq "failure"
+        if ($v1Failed -or $betaFailed) {
+          echo "result=':bangbang: TOC generation failed - please check logs :bangbang:'" >> $env:GITHUB_OUTPUT
+          exit 1
         } else {
-          git config user.email "GraphTooling@service.microsoft.com"
-          git config user.name "Microsoft Graph DevX Tooling"
-          if ($Env:PULL_REQUEST -eq $true) {
-            $timestamp = Get-Date -Format FileDateTimeUniversal
-            git checkout -b ref-toc-generation/$timestamp
-            git add .
-            git commit -m "Update reference TOC"
-            git push --set-upstream origin ref-toc-generation/$timestamp
-            gh pr create --base main --title "Update reference TOC" --body "Ran TOC generation tool" --label "ready to merge"
-            echo "result=TOC generation changes submitted via PR" >> $env:GITHUB_OUTPUT
+          $status = git status --porcelain
+          if ($status -eq $null) {
+            echo "result=TOC generation resulted in no changes" >> $env:GITHUB_OUTPUT
+            Write-Host "No changes to commit." -ForegroundColor Green
           } else {
-            git add .
-            git commit -m "Update reference TOC"
-            git push
-            echo "result=TOC generation changes committed successfully" >> $env:GITHUB_OUTPUT
+            git config user.email "GraphTooling@service.microsoft.com"
+            git config user.name "Microsoft Graph DevX Tooling"
+            if ($Env:PULL_REQUEST -eq $true) {
+              $timestamp = Get-Date -Format FileDateTimeUniversal
+              git checkout -b ref-toc-generation/$timestamp
+              git add .
+              git commit -m "Update reference TOC"
+              git push --set-upstream origin ref-toc-generation/$timestamp
+              gh pr create --base main --title "Update reference TOC" --body "Ran TOC generation tool" --label "ready to merge"
+              echo "result=TOC generation changes submitted via PR" >> $env:GITHUB_OUTPUT
+            } else {
+              git add .
+              git commit -m "Update reference TOC"
+              git push
+              echo "result=TOC generation changes committed successfully" >> $env:GITHUB_OUTPUT
+            }
           }
         }

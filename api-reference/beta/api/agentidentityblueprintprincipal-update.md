@@ -63,6 +63,8 @@ Provide the updated property values for the agent identity blueprint principal.
 
 If successful, this method returns a `204 No Content` response code.
 
+For information about errors returned by agent identity APIs, see [Agent identity error codes](/entra/agent-id/identity-platform/error-codes).
+
 ## Example
 
 ### Request
