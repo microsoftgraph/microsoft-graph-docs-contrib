@@ -7,8 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "mediaSizes",
           "ChangeType": "Change",
-          "Description": "Added new supported [media sizes](https://learn.microsoft.com/graph/api/resources/printercapabilities?view=graph-rest-beta#mediasizes-values) to the **mediaSizes** property of the [printerCapabilities](https://learn.microsoft.com/en-us/graph/api/resources/printercapabilities?view=graph-rest-beta)
- resource.",
+          "Description": "Added new supported [media sizes](https://learn.microsoft.com/graph/api/resources/printercapabilities?view=graph-rest-beta#mediasizes-values) to the **mediaSizes** property of the [printerCapabilities](https://learn.microsoft.com/en-us/graph/api/resources/printercapabilities?view=graph-rest-beta) resource.",
           "Target": "printerCapabilities"
         }
       ],
@@ -26,8 +25,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "mediaSizes",
           "ChangeType": "Change",
-          "Description": "Added new supported [media sizes](https://learn.microsoft.com/graph/api/resources/printercapabilities?view=graph-rest-1.0#mediasizes-values) to the **mediaSizes** property of the [printerCapabilities](https://learn.microsoft.com/en-us/graph/api/resources/printercapabilities?view=graph-rest-1.0)
- resource.",
+          "Description": "Added new supported [media sizes](https://learn.microsoft.com/graph/api/resources/printercapabilities?view=graph-rest-1.0#mediasizes-values) to the **mediaSizes** property of the [printerCapabilities](https://learn.microsoft.com/en-us/graph/api/resources/printercapabilities?view=graph-rest-1.0) resource.",
           "Target": "printerCapabilities"
         }
       ],
