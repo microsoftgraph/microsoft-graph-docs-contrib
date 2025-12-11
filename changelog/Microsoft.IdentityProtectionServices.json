@@ -1879,8 +1879,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-11-17T20:59:47.2626379Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Identity and sign-in"
+      "WorkloadArea": "Agents",
+      "SubArea": ""
     },
     {
       "ChangeList": [
