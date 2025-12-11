@@ -16,7 +16,7 @@ Namespace: microsoft.graph.networkaccess
 
 A remote network represents a location such as a branch office where customer premises equipment (CPE) is connected to the nearest deployment of Global Secure Access service though IPsec tunnels.
 
-Inherits from [microsoft.graph.entity](../resources/entity.md).
+Inherits from [microsoft.graph.networkaccess.baseEntity](../resources/baseEntity.md).
 
 ## Methods
 |Method|Return type|Description|
@@ -32,7 +32,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |:---|:---|:---|
 |id|String|Identifier for the remote network. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|last modified time.|
-|name|String|Name.|
+|name|String|Name. Inherited from [microsoft.graph.networkaccess.baseEntity](../resources/baseentity.md).|
 |region|microsoft.graph.networkaccess.region|Specify the region closest to your remote network. The possible value are: `eastUS`, `eastUS2`, `westUS`, `westUS2`, `westUS3`, `centralUS`, `northCentralUS`, `southCentralUS`, `northEurope`, `westEurope`, `franceCentral`, `germanyWestCentral`, `switzerlandNorth`, `ukSouth`, `canadaEast`, `canadaCentral`, `southAfricaWest`, `southAfricaNorth`, `uaeNorth`, `australiaEast`, `westCentralUS`, `centralIndia`, `southEastAsia`, `swedenCentral`, `southIndia`, `australiaSouthEast`, `koreaCentral`, `koreaSouth`, `polandCentral`, `brazilSouth`, `japanEast`, `japanWest`, `koreaSouth`, `italyNorth`, `franceSouth`, `israelCentral`, `unknownFutureValue`.|
 |version|String|Remote network version.|
 

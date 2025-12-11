@@ -28,7 +28,7 @@ You create a trust relationship between an external identity provider (IdP) and 
 
 ## Set up federated identity credentials through Microsoft Graph
 
-The [federatedIdentityCredential](federatedidentitycredential.md) resource represents the configuration of a federated identity credential via Microsoft Graph. Use the [Create federatedIdentityCredential](../api/application-post-federatedidentitycredentials.md) API to configure the object. The following properties are the building blocks of federated identity credentials:
+The [federatedIdentityCredential](../resources/federatedidentitycredential.md) resource represents the configuration of a federated identity credential via Microsoft Graph. Use the [Create federatedIdentityCredential](../api/federatedidentitycredential-post.md) API to configure the object. The following properties are the building blocks of federated identity credentials:
 
 + **audiences** - The audience that can appear in the external token. This field is mandatory and should be set to `api://AzureADTokenExchange` for Microsoft Entra ID. It says what Microsoft identity platform should accept in the `aud` claim in the incoming token. This value represents Microsoft Entra ID in your external identity provider and has no fixed value across identity providers - you might need to create a new application registration in your IdP to serve as the audience of this token.
 + **issuer** - The URL of the external identity provider. Must match the **issuer** claim of the external token being exchanged.
@@ -40,11 +40,11 @@ The combination of **issuer** and **subject** must be unique on the app.  When t
 
 ## Design considerations
 
-A maximum of 20 federated identity credentials can be added per application object or user-assigned managed identity.
+A maximum of 20 federated identity credentials can be added per application object or user-assigned managed identity or agentIdentityBlueprint.
 
 ## Related content
 
-+ [federatedIdentityCredential resource type](federatedidentitycredential.md)
++ [federatedIdentityCredential resource type](../resources/federatedidentitycredential.md)
 + [Workload identity federation](/azure/active-directory/develop/workload-identity-federation)
 + [What are managed identities for Azure resources?](/azure/active-directory/managed-identities-azure-resources/overview)
 <!--

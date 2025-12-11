@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 11/17/2025
+ms.date: 12/08/2025
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -1865,6 +1865,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### CopilotPackages.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 72f0655d-6228-4ddc-8e1b-164973b9213b | a2dcfcb9-cbe8-4d42-812d-952e55cf7f3f |
+| DisplayText | Read all packages information | Read all packages information |
+| Description | Allows the app to read packages information without a signed-in user. | Allows the user to read the packages information |
+| AdminConsentRequired | Yes | No |
+
+---
+
+### CopilotPackages.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | ed31732f-9495-47ed-ba3b-4ed0948c1c64 | e9c5fd18-ac15-43dd-9f5c-6f9611dd5604 |
+| DisplayText | Read and update all packages information | Read and update all packages information |
+| Description | Allows the app to read and update packages information without a signed-in user. | Allows the user to read and update the packages information |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
 ### CopilotSettings-LimitedMode.Read
 
 | Category | Application | Delegated |
@@ -3026,6 +3048,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | - | Access mailboxes as the signed-in user via Exchange Web Services |
 | Description | - | Allows the app to have the same access to mailboxes as the signed-in user via Exchange Web Services. |
 | AdminConsentRequired | - | No |
+
+---
+
+### ExchangeMessageTrace.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 89b20d8a-76e2-4057-867b-9961f800b9a4 | b2e7d27e-14e7-41ad-bb15-a88ceb9c3e90 |
+| DisplayText | Search the email message trace | Search the email message trace |
+| Description | Allows the app to search the email message trace, without a signed-in user. | Allows the app to search the email message trace on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 
@@ -4367,6 +4400,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | fef87b92-8391-4589-9da7-eb93dab7dc8a | - |
 | DisplayText | Read and write all the users' mailbox folders | - |
 | Description | Allows the app to read and write all the users' mailbox folders, without signed-in user. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
+### MailboxItem.Export
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 58d3e7fa-3ce9-4a0c-9baa-0971f64709d9 |
+| DisplayText | - | Export a user's mailbox items |
+| Description | - | Allows the app to export the user's mailbox items, on behalf of the signed-in user. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### MailboxItem.Export.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 937550e9-33a3-494b-88ae-d9cd394b1fbb | - |
+| DisplayText | Export all the users' mailbox items | - |
+| Description | Allows the app to export all the users' mailbox items, without signed-in user. | - |
 | AdminConsentRequired | Yes | - |
 
 ---

@@ -19,7 +19,7 @@ Represents sign-in parameters of the authenticating identity as defined in [Cond
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|agentIdRiskLevel|agentIdRiskLevel| Agent identity risk levels included in the policy. Possible values are: `none`, `low`, `medium`, `high`, `unknownFutureValue`. This enumeration is multivalued.|
+|agentIdRiskLevel|agentIdRiskLevel| Agent identity risk levels included in the policy. The possible values are: `none`, `low`, `medium`, `high`, `unknownFutureValue`. This enumeration is multivalued.|
 |authenticationFlow|[authenticationFlow](../resources/authenticationflow.md)| Type of authentication flow. The possible value is: `deviceCodeFlow` or `authenticationTransfer`. Default value is `none`.|
 |clientAppType|conditionalAccessClientApp|Client application type. The possible value is: `all`, `browser`, `mobileAppsAndDesktopClients`, `exchangeActiveSync`, `easSupported`, `other`, `unknownFutureValue`. Default value is `all`. |
 |country|String|Country from where the identity is authenticating.|

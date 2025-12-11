@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a collection of desks. A [workspace](./workspace.md) can be added to a [floor](./floor.md) or a [section](./section.md).
+Represents a collection of desks. A [workspace](./workspace.md) can be added to a [section](./section.md).
 
 Inherits from [place](./place.md).
 
@@ -44,7 +44,9 @@ For the list of supported methods, see [place](./place.md).
 |tags|String collection|Custom tags that are associated with the **workspace** for categorization or filtering. Inherited from [place](./place.md). |
 
 ## Relationships
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|children|[place](../resources/place.md) collection|A collection of children places that is only used in the [Upsert places](../api/place-patch-places.md) API. A workspace doesn't have children. Inherited from [place](../resources/place.md).|
 
 ## JSON representation
 The following JSON representation shows the resource type.
