@@ -22,7 +22,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Device and app management | Cloud printing
 
-Added new supported [media sizes](/graph/api/resources/printercapabilities#mediasizes-values) to the **mediaSizes** property of the [printerCapabilities](/graph/api/resources/printercapabilities) resource.
+Use the new supported [media sizes](/graph/api/resources/printercapabilities#mediasizes-values) in the **mediaSizes** property of the [printerCapabilities](/graph/api/resources/printercapabilities) resource.
 
 ## December 2025: New in preview only
 
@@ -32,7 +32,7 @@ Added new supported [media sizes](/graph/api/resources/printercapabilities#media
 
 ### Device and app management | Cloud printing
 
-Added new supported [media sizes](/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true#mediasizes-values) to the **mediaSizes** property of the [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true) resource.
+Use the new supported [media sizes](/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true#mediasizes-values) in the **mediaSizes** property of the [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true) resource.
 
 ### Files
 
