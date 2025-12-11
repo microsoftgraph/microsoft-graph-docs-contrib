@@ -18,6 +18,18 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## December 2025: New and generally available
+
+### Device and app management | Cloud printing
+
+Added new supported [media sizes](/graph/api/resources/printercapabilities#mediasizes-values) to the **mediaSizes** property of the [printerCapabilities](/graph/api/resources/printercapabilities) resource.
+
+## December 2025: New in preview only
+
+### Device and app management | Cloud printing
+
+Added new supported [media sizes](/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true#mediasizes-values) to the **mediaSizes** property of the [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true) resource.
+
 ## November 2025: New and generally available
 
 ### Backup storage
