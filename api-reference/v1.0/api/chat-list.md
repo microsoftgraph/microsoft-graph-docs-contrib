@@ -16,9 +16,9 @@ Retrieve the list of [chats](../resources/chat.md) that the user is part of.
 
 This method supports federation. When a user ID is provided, the calling application must belong to the same tenant that the user belongs to.
 
->**Note:** This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
-
->**Note:** When `$expand=members` is included, the API returns at most 25 items, even if a larger `$top` value is provided.
+> [!NOTE]
+> * This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
+> * When `$expand=members` is included, this API returns a maximum of 25 items, even if a larger `$top` value is specified.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
