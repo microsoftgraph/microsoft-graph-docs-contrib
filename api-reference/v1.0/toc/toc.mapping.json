@@ -2019,6 +2019,9 @@
                     }
                   ]
                 }
+              ],
+              "complexTypes": [
+                "microsoft.graph.onlineMeetingSensitivityLabelAssignment"
               ]
             },
             {

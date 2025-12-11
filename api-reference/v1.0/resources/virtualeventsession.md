@@ -43,6 +43,7 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
 | allowWhiteboard | Boolean | Indicates whether whiteboard is enabled for the virtual event session. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | anonymizeIdentityForRoles    | onlineMeetingRole collection | Specifies whose identity is anonymized in the virtual event session. The possible values are: `attendee`. The `attendee` value can't be removed through a PATCH operation once added. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).|
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for the virtual event session. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| expiryDateTime | DateTimeOffset | Indicates the date and time when the meeting resource expires. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | meetingOptionsWebUrl | String | Provides the URL to the Teams meeting options page for the specified meeting. This link allows *only the organizer* to configure meeting settings. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | chatRestrictions | [chatRestrictions](../resources/chatrestrictions.md) | Specifies the configuration settings for meeting chat restrictions. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | chatInfo              | [chatInfo](chatinfo.md) | The chat information associated with the virtual event session. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
@@ -57,6 +58,7 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
 | lobbyBypassSettings | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting lobby. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | meetingSpokenLanguageTag | String | Specifies the spoken language used during the meeting for recording and transcription purposes. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | recordAutomatically | Boolean | Indicates whether to record the virtual event session automatically. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| sensitivityLabelAssignment|[onlineMeetingSensitivityLabelAssignment](../resources/onlinemeetingsensitivitylabelassignment.md)|Specifies the sensitivity label applied to the Teams meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).|
 | startDateTime | [DateTimeTimeZone](../resources/datetimetimezone.md) | The virtual event session start time. |
 | subject | String | The subject of the virtual event session. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | videoOnDemandWebUrl | String | The [URL of the video on demand (VOD)](/microsoftteams/manage-vod-publishing) for Microsoft Teams events that allows webinar and town hall organizers to quickly publish and share event recordings. |
@@ -136,6 +138,9 @@ The following JSON representation shows the resource type.
   "meetingOptionsWebUrl": "String",
   "meetingSpokenLanguageTag": "String",
   "recordAutomatically": "Boolean",
+    "sensitivityLabelAssignment": {
+      "@odata.type": "microsoft.graph.onlineMeetingSensitivityLabelAssignment"
+  },
   "shareMeetingChatHistoryDefault": "String",
   "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "subject": "String",

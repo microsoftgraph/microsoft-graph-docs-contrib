@@ -41,6 +41,7 @@ Inherits from [entity](../resources/entity.md).
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for an online meeting. Read-only. |
 | chatInfo              | [chatInfo](chatinfo.md) | The chat information associated with this online meeting.  |
 | chatRestrictions      | [chatRestrictions](../resources/chatrestrictions.md) | Specifies the configuration settings for meeting chat restrictions. |
+| expiryDateTime | DateTimeOffset | Indicates the date and time when the meeting resource expires. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 | id | String | The default ID associated with the online meeting. Read-only.    |
 | isEndToEndEncryptionEnabled | Boolean | Indicates whether end-to-end encryption (E2EE) is enabled for the online meeting.  |
 | isEntryExitAnnounced  | Boolean | Indicates whether to announce when callers join or leave. |
@@ -49,6 +50,7 @@ Inherits from [entity](../resources/entity.md).
 | joinWebUrl | String | The join URL of the online meeting. Read-only. |
 | lobbyBypassSettings | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting lobby. |
 | meetingOptionsWebUrl | String | Provides the URL to the Teams meeting options page for the specified meeting. This link allows *only the organizer* to configure meeting settings. |
+| meetingSpokenLanguageTag | String | Specifies the spoken language used during the meeting for recording and transcription purposes. |
 | recordAutomatically | Boolean | Indicates whether to record the meeting automatically. |
 | sensitivityLabelAssignment|[onlineMeetingSensitivityLabelAssignment](../resources/onlinemeetingsensitivitylabelassignment.md)|Specifies the sensitivity label applied to the Teams meeting. |
 | shareMeetingChatHistoryDefault | meetingChatHistoryDefaultMode |Specifies whether meeting chat history is shared with participants.  The possible values are: `all`, `none`, `unknownFutureValue`.|
@@ -136,6 +138,7 @@ The following JSON representation shows the resource type.
   "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
   "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
   "chatRestrictions":{"@odata.type": "microsoft.graph.chatRestrictions"},
+  "expiryDateTime": "String (timestamp)",
   "id": "String (identifier)",  
   "isEndToEndEncryptionEnabled": "Boolean",
   "isEntryExitAnnounced": "Boolean",
@@ -144,6 +147,7 @@ The following JSON representation shows the resource type.
   "joinWebUrl": "String",
   "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
   "meetingOptionsWebUrl": "String",
+  "meetingSpokenLanguageTag": "String",
   "recordAutomatically": "Boolean",
   "sensitivityLabelAssignment": {
       "@odata.type": "microsoft.graph.onlineMeetingSensitivityLabelAssignment"
