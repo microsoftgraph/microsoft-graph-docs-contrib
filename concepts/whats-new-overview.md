@@ -3,7 +3,7 @@ title: "What's new in Microsoft Graph"
 description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, and other resources."
 author: "lauragra"
 ms.localizationpriority: high
-ms.date: 12/02/2025
+ms.date: 12/11/2025
 ms.topic: whats-new
 ---
 
@@ -19,6 +19,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
 ## December 2025: New in preview only
+
+### Reports | Identity and access reports
+
+Removed the **conditionalAccessAudience** resource type. The return type of the **conditionalAccessAudiencea** property of the [signIn resource type](/graph/api/resources/signin?view=graph-rest-beta&preserve-view=true) is a collection of String objects and not the **conditionalAccessAudience** complex type.
 
 ### Calendars | Places
 
