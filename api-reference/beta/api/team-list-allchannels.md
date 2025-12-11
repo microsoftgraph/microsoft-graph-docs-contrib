@@ -147,8 +147,7 @@ Content-Type: application/json
 }
 ```
 
-> **Known Limitation**: In the current beta release, the **layoutType** property returns `null` when listing all channels. To get the layout type of a specific channel, use the [Get channel](../api/channel-get.md) API. Full support for **layoutType** in list operations is planned for a future release.
-
+> This API has a [known issue](https://microsoftgraph.visualstudio.com/Known%20Issues/_workitems/edit/40502/) related to listing channels. The **layoutType** property returns `null` when listing channels. To get the layout type of a specific channel, use the [Get channel](../api/channel-get.md) API. Full support for **layoutType** in list operations is planned for a future release.
 
 ### Example 2: List all shared channels
 
