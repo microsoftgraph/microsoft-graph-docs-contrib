@@ -77,6 +77,14 @@
         {
           "Id": "94772378-a35f-46e1-a514-13e6a88982a0",
           "ApiChange": "Property",
+          "ChangedApiName": "sensitivityLabelAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the **sensitivityLabelAssignment** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventSession"
+        },
+        {
+          "Id": "94772378-a35f-46e1-a514-13e6a88982a0",
+          "ApiChange": "Property",
           "ChangedApiName": "meetingOptionsWebUrl",
           "ChangeType": "Addition",
           "Description": "Added the **meetingOptionsWebUrl** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-1.0) resource.",
