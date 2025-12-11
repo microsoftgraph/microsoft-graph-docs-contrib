@@ -121,7 +121,7 @@ Content-type: application/json
     "layoutType": null
 }
 ```
-
+> [!NOTE]
 > This API has a [known issue](https://microsoftgraph.visualstudio.com/Known%20Issues/_workitems/edit/40502/) related to listing channels. The **layoutType** property returns `null` when listing channels. To get the layout type of a specific channel, use the [Get channel](../api/channel-get.md) API. Full support for **layoutType** in list operations is planned for a future release.
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
