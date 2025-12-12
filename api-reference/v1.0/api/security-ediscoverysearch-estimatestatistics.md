@@ -112,5 +112,5 @@ The following example shows the response.
 -->
 ```http
 HTTP/1.1 202 Accepted
-Location: https://graph.microsoft.com/beta/security/cases/ediscoverycases('4c551bc5-f6f8-435c-8391-d1a08f1ffd5b')/operations('698514cc118f4c8b8cdf1bf0797bf478')
+Location: https://graph.microsoft.com/v1.0/security/cases/ediscoverycases('4c551bc5-f6f8-435c-8391-d1a08f1ffd5b')/operations('698514cc118f4c8b8cdf1bf0797bf478')
 ```

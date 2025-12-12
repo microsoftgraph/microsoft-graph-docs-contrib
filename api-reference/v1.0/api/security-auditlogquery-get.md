@@ -55,7 +55,7 @@ The following example shows a request.
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/security/auditLog/queries/{auditLogQueryId}
+GET https://graph.microsoft.com/v1.0/security/auditLog/queries/{auditLogQueryId}
 ```
 
 # [C#](#tab/csharp)
