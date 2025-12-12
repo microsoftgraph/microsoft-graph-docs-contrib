@@ -5,7 +5,7 @@ author: "ChyouChyou"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
-ms.date: 08/28/2025
+ms.date: 12/12/2025
 ---
 
 # cloudPcProvisioningPolicy: retry
