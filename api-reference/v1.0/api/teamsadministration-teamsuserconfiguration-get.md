@@ -12,9 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.teamsAdministration
 
-
-
-Read the Teams user configurations for a specific user using their ID (the user's identifier).
+Read the Teams [user configurations](../resources/teamsadministration-teamsuserconfiguration.md) for a specific user using their ID (the user's identifier).
 
 ## Permissions
 
@@ -66,9 +64,8 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/admin/teams/userConfigurations/{teamsUserConfigurationId}
+GET https://graph.microsoft.com/v1.0/admin/teams/userConfigurations/5c802b19-3600-83f1-1767-7b9edc7f38ab
 ```
-
 
 ### Response
 
