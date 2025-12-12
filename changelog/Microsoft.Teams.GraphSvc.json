@@ -3216,7 +3216,8 @@
     },
     {
       "ChangeList": [
-        {"Id": "24e2cf0f-cc2d-4bc1-8dce-7fd083e5db51",
+        {
+          "Id": "3e5eeaf8-7046-4713-ac62-2ddf24eb26f0",
           "ApiChange": "Property",
           "ChangedApiName": "migrationMode",
           "ChangeType": "Addition",
@@ -3224,7 +3225,7 @@
           "Target": "chat"
         },
         {
-          "Id": "24e2cf0f-cc2d-4bc1-8dce-7fd083e5db51",
+          "Id": "3e5eeaf8-7046-4713-ac62-2ddf24eb26f0",
           "ApiChange": "Property",
           "ChangedApiName": "originalCreatedDateTime",
           "ChangeType": "Addition",
@@ -3232,15 +3233,15 @@
           "Target": "chat"
         },
         {
-          "Id": "24e2cf0f-cc2d-4bc1-8dce-7fd083e5db51",
+          "Id": "3e5eeaf8-7046-4713-ac62-2ddf24eb26f0",
           "ApiChange": "Property",
           "ChangedApiName": "originalCreatedDateTime",
           "ChangeType": "Addition",
           "Description": "Added the **originalCreatedDateTime** property to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
           "Target": "channel"
         },
-         {
-          "Id": "24e2cf0f-cc2d-4bc1-8dce-7fd083e5db51",
+        {
+          "Id": "3e5eeaf8-7046-4713-ac62-2ddf24eb26f0",
           "ApiChange": "Property",
           "ChangedApiName": "migrationMode",
           "ChangeType": "Addition",
@@ -3272,10 +3273,12 @@
           "Target": "chat"
         }
       ],
-      "Id": "24e2cf0f-cc2d-4bc1-8dce-7fd083e5db51",
+      "Id": "3e5eeaf8-7046-4713-ac62-2ddf24eb26f0",
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2024-05-29T22:24:27.0548997Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
     }
   ]
 }
