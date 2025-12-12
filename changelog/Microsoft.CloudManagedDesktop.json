@@ -7,8 +7,16 @@
             "ApiChange": "Method",
             "ChangedApiName": "retry",
             "ChangeType": "Addition",
-            "Description": "Added the retry method to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+            "Description": "Added the [retry](https://learn.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-retry?view=graph-rest-beta) method to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
             "Target": "cloudPcProvisioningPolicy"
+          },
+          {
+            "Id": "d5b144a3-c87c-4d29-99b2-e01f9594fb69",
+            "ApiChange": "Property",
+            "ChangedApiName": "applicationTimeoutInMinutes",
+            "ChangeType": "Change",
+            "Description": "Updated the supported value range for the **applicationTimeoutInMinutes** property on [cloudPcAutopilotConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcAutopilotConfiguration?view=graph-rest-beta) from 10 to 360 to 30 to 360.",
+            "Target": "cloudPcAutopilotConfiguration"
           }
         ],
         "Id": "d5b144a3-c87c-4d29-99b2-e01f9594fb69",
