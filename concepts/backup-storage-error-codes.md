@@ -369,9 +369,9 @@ The following table lists the possible error and response codes that can be retu
 
 The error codes in this section apply to the following APIs:
 
-- [Create driveRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/onedriveforbusinessrestoresession-post-driverestoreartifactsbulkadditionrequests.md)
-- [Create mailboxRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/exchangerestoresession-post-mailboxrestoreartifactsbulkadditionrequests.md)
-- [Create siteRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/sharepointrestoresession-post-siterestoreartifactsbulkadditionrequests.md)
+- [Create driveRestoreArtifactsBulkAdditionRequests](/graph/api/onedriveforbusinessrestoresession-post-driverestoreartifactsbulkadditionrequests?view=graph-rest-beta&preserve-view=true)
+- [Create mailboxRestoreArtifactsBulkAdditionRequests](/graph/api/exchangerestoresession-post-mailboxrestoreartifactsbulkadditionrequests?view=graph-rest-beta&preserve-view=true)
+- [Create siteRestoreArtifactsBulkAdditionRequests](/graph/api/sharepointrestoresession-post-siterestoreartifactsbulkadditionrequests?view=graph-rest-beta&preserve-view=true)
 
 The following table lists the possible error and response codes that can be returned.
 
@@ -387,9 +387,9 @@ The following table lists the possible error and response codes that can be retu
 
 The error code in this section applies to the following APIs:
 
-- [Get driveRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/driverestoreartifactsbulkadditionrequest-get.md)
-- [Get mailboxRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/mailboxrestoreartifactsbulkadditionrequest-get.md)
-- [Get siteRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/siterestoreartifactsbulkadditionrequest-get.md)
+- [Get driveRestoreArtifactsBulkAdditionRequests](/graph/api/driverestoreartifactsbulkadditionrequest-get?view=graph-rest-beta&preserve-view=true)
+- [Get mailboxRestoreArtifactsBulkAdditionRequests](/graph/api/mailboxrestoreartifactsbulkadditionrequest-get?view=graph-rest-beta&preserve-view=true)
+- [Get siteRestoreArtifactsBulkAdditionRequests](/graph/api/siterestoreartifactsbulkadditionrequest-get?view=graph-rest-beta&preserve-view=true)
 
 The following table lists the possible error and response code that can be returned.
 
@@ -401,9 +401,9 @@ The following table lists the possible error and response code that can be retur
 
 The error code in this section applies to the following APIs:
 
-- [Delete driveRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/driverestoreartifactsbulkadditionrequest-delete.md)
-- [Delete mailboxRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/mailboxrestoreartifactsbulkadditionrequest-delete.md)
-- [Delete siteRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/siterestoreartifactsbulkadditionrequest-delete.md)
+- [Delete driveRestoreArtifactsBulkAdditionRequests](/graph/api/driverestoreartifactsbulkadditionrequest-delete?view=graph-rest-beta&preserve-view=true)
+- [Delete mailboxRestoreArtifactsBulkAdditionRequests](/graph/api/mailboxrestoreartifactsbulkadditionrequest-delete?view=graph-rest-beta&preserve-view=true)
+- [Delete siteRestoreArtifactsBulkAdditionRequests](/graph/api/siterestoreartifactsbulkadditionrequest-delete?view=graph-rest-beta&preserve-view=true)
 
 The following table lists the possible error and response code that can be returned.
 
