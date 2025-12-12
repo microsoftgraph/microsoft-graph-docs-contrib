@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of log events for traffic routed through the Global Secure Access services.
+Get a list of [log events for traffic](../resources/networkaccess-networkaccesstraffic.md) routed through the Global Secure Access services.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

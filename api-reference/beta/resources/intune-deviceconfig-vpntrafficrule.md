@@ -28,10 +28,10 @@ VPN Traffic Rule definition.
 |localAddressRanges|[iPv4Range](../resources/intune-shared-ipv4range.md) collection|Local address range. This collection can contain a maximum of 500 elements.|
 |remoteAddressRanges|[iPv4Range](../resources/intune-shared-ipv4range.md) collection|Remote address range. This collection can contain a maximum of 500 elements.|
 |appId|String|App identifier, if this traffic rule is triggered by an app.|
-|appType|[vpnTrafficRuleAppType](../resources/intune-deviceconfig-vpntrafficruleapptype.md)|App type, if this traffic rule is triggered by an app. Possible values are: `none`, `desktop`, `universal`.|
-|routingPolicyType|[vpnTrafficRuleRoutingPolicyType](../resources/intune-deviceconfig-vpntrafficruleroutingpolicytype.md)|When app triggered, indicates whether to enable split tunneling along this route. Possible values are: `none`, `splitTunnel`, `forceTunnel`.|
+|appType|[vpnTrafficRuleAppType](../resources/intune-deviceconfig-vpntrafficruleapptype.md)|App type, if this traffic rule is triggered by an app. The possible values are: `none`, `desktop`, `universal`.|
+|routingPolicyType|[vpnTrafficRuleRoutingPolicyType](../resources/intune-deviceconfig-vpntrafficruleroutingpolicytype.md)|When app triggered, indicates whether to enable split tunneling along this route. The possible values are: `none`, `splitTunnel`, `forceTunnel`.|
 |claims|String|Claims associated with this traffic rule.|
-|vpnTrafficDirection|[vpnTrafficDirection](../resources/intune-deviceconfig-vpntrafficdirection.md)|Specify whether the rule applies to inbound traffic or outbound traffic. Possible values are: `outbound`, `inbound`, `unknownFutureValue`.|
+|vpnTrafficDirection|[vpnTrafficDirection](../resources/intune-deviceconfig-vpntrafficdirection.md)|Specify whether the rule applies to inbound traffic or outbound traffic. The possible values are: `outbound`, `inbound`, `unknownFutureValue`.|
 
 ## Relationships
 None

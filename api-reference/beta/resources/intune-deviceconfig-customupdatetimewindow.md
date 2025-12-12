@@ -21,8 +21,8 @@ Custom update time window
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|startDay|[dayOfWeek](../resources/intune-deviceconfig-dayofweek.md)|Start day of the time window. Possible values are: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
-|endDay|[dayOfWeek](../resources/intune-deviceconfig-dayofweek.md)|End day of the time window. Possible values are: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
+|startDay|[dayOfWeek](../resources/intune-deviceconfig-dayofweek.md)|Start day of the time window. The possible values are: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
+|endDay|[dayOfWeek](../resources/intune-deviceconfig-dayofweek.md)|End day of the time window. The possible values are: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
 |startTime|TimeOfDay|Start time of the time window|
 |endTime|TimeOfDay|End time of the time window|
 

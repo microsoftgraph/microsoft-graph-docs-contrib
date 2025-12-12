@@ -33,7 +33,7 @@ Represents a defined name for a range of cells or value. Names can be primitive 
 |comment|String|The comment associated with this name.|
 |name|String|The name of the object. Read-only.|
 |scope|String|Indicates whether the name is scoped to the workbook or to a specific worksheet. Read-only.|
-|type|String|The type of reference is associated with the name. Possible values are: `String`, `Integer`, `Double`, `Boolean`, `Range`. Read-only.|
+|type|String|The type of reference is associated with the name. The possible values are: `String`, `Integer`, `Double`, `Boolean`, `Range`. Read-only.|
 |value|String|The formula that the name is defined to refer to. For example, `=Sheet14!$B$2:$H$12` and `=4.75`. Read-only.|
 |visible|Boolean|Indicates whether the object is visible.|
 

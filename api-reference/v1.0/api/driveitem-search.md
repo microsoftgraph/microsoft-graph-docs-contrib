@@ -32,7 +32,7 @@ GET /drives/{drive-id}/root/search(q='{search-text}')
 GET /groups/{group-id}/drive/root/search(q='{search-text}')
 GET /me/drive/root/search(q='{search-text}')
 GET /sites/{site-id}/drive/root/search(q='{search-text}')
-GET /users/{user-id}/drive/root/search(q='{search-text}')
+GET /users/{user-id | userPrincipalName}/drive/root/search(q='{search-text}')
 ```
 
 ## Optional query parameters

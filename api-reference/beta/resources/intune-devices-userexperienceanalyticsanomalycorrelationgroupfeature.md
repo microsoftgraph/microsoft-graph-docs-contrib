@@ -21,7 +21,7 @@ Describes the features of a device that are shared between all devices in a corr
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deviceFeatureType|[userExperienceAnalyticsAnomalyDeviceFeatureType](../resources/intune-devices-userexperienceanalyticsanomalydevicefeaturetype.md)|The type of device feature. Possible values are: manufacturer, model, osVersion, application or driver. Possible values are: `manufacturer`, `model`, `osVersion`, `application`, `driver`, `unknownFutureValue`.|
+|deviceFeatureType|[userExperienceAnalyticsAnomalyDeviceFeatureType](../resources/intune-devices-userexperienceanalyticsanomalydevicefeaturetype.md)|The type of device feature. The possible values are: manufacturer, model, osVersion, application or driver. The possible values are: `manufacturer`, `model`, `osVersion`, `application`, `driver`, `unknownFutureValue`.|
 |values|String collection|Specific metric values that describe the features of the given device feature type.|
 
 ## Relationships

@@ -22,7 +22,7 @@ Represents the details of a version of a [teamsApp](teamsapp.md).
 | description         | String   | Verbose description of the application. |
 | displayName         | String   | The name of the app provided by the app developer. |
 | id                  | String   | A unique ID (not the Teams app ID). |
-| publishingState| String |The published status of a specific version of a Teams app. Possible values are:</br>`submitted`—The specific version of the Teams app was submitted and is under review.</br>`published`—The request to publish the specific version of the Teams app was approved by the admin and the app is published.</br>`rejected`—The admin rejected the request to publish the specific version of the Teams app. |
+| publishingState| String |The published status of a specific version of a Teams app. The possible values are:</br>`submitted`—The specific version of the Teams app was submitted and is under review.</br>`published`—The request to publish the specific version of the Teams app was approved by the admin and the app is published.</br>`rejected`—The admin rejected the request to publish the specific version of the Teams app. |
 | shortDescription    | String   | Short description of the application. |
 | teamsAppId          | String   | The ID from the Teams app manifest. |
 | version             | String   | The version number of the application. |

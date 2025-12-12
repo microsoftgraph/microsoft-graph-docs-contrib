@@ -264,20 +264,32 @@ items:
     items:
     - name: Place
       href: ../../resources/place.md
-    - name: List places
+    - name: List
       href: ../../api/place-list.md
-    - name: Get place
+    - name: Create
+      href: ../../api/place-post.md
+    - name: Get
       href: ../../api/place-get.md
-    - name: Update place
+    - name: Update
       href: ../../api/place-update.md
-  - name: Room
+    - name: Delete
+      href: ../../api/place-delete.md
+    - name: Descendants
+      href: ../../api/place-descendants.md
+    - name: Create check-in claim
+      href: ../../api/place-post-checkins.md
+  - name: Building
     items:
-    - name: Room
-      href: ../../resources/room.md
-    - name: List places
-      href: ../../api/place-list.md
-    - name: Get place
-      href: ../../api/place-get.md
+    - name: Building
+      href: ../../resources/building.md
+    - name: Ingest map file
+      href: ../../api/building-ingestmapfile.md
+  - name: Desk
+    href: ../../resources/desk.md
+  - name: Floor
+    href: ../../resources/floor.md
+  - name: Room
+    href: ../../resources/room.md
   - name: Room list
     items:
     - name: Room list
@@ -288,3 +300,29 @@ items:
       href: ../../api/place-get.md
     - name: Update place
       href: ../../api/place-update.md
+  - name: Section
+    href: ../../resources/section.md
+  - name: Workspace
+    href: ../../resources/workspace.md
+  - name: Check-in claim
+    items:
+    - name: Check-in claim
+      href: ../../resources/checkinclaim.md
+    - name: Create
+      href: ../../api/place-post-checkins.md
+    - name: Get
+      href: ../../api/checkinclaim-get.md
+  - name: Complex types
+    items:
+    - name: Assigned place mode
+      href: ../../resources/assignedplacemode.md
+    - name: Drop in place mode
+      href: ../../resources/dropinplacemode.md
+    - name: Mailbox details
+      href: ../../resources/mailboxdetails.md
+    - name: Place mode
+      href: ../../resources/placemode.md
+    - name: Reservable place mode
+      href: ../../resources/reservableplacemode.md
+    - name: Resource link
+      href: ../../resources/resourcelink.md

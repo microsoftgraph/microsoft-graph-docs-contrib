@@ -29,24 +29,24 @@ This resource is an open type that allows additional properties beyond those doc
 |[Update](../api/agentidentityblueprintprincipal-update.md)|[agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md)|Update the properties of an agentIdentityBlueprintPrincipal object.|
 |[Delete](../api/agentidentityblueprintprincipal-delete.md)|None|Delete an agentIdentityBlueprintPrincipal object.|
 |**App role assignments**|||
-|[List appRoleAssignedTo](../api/serviceprincipal-list-approleassignedto.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get the users, groups, and agent identities assigned app roles for this agent identity blueprint principal.|
-|[Add appRoleAssignedTo](../api/serviceprincipal-post-approleassignedto.md)|[appRoleAssignment](../resources/approleassignment.md)|Assign an app role for this agent identity blueprint principal to a user, group, or service principal.|
-|[Remove appRoleAssignedTo](../api/serviceprincipal-delete-approleassignedto.md)|None|Remove an app role assignment for this agent identity blueprint principal from a user, group, or service principal.|
-|[List appRoleAssignments](../api/serviceprincipal-list-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get the app roles that this agent identity blueprint principal is assigned.|
-|[Add appRoleAssignment](../api/serviceprincipal-post-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md)|Assign an app role to this agent identity blueprint principal.|
-|[Remove appRoleAssignment](../api/serviceprincipal-delete-approleassignments.md)|None|Remove an app role assignment from this agent identity blueprint principal.|
+|[List app role assigned to](../api/serviceprincipal-list-approleassignedto.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get the users, groups, and agent identities assigned app roles for this agent identity blueprint principal.|
+|[Add app role assigned to](../api/serviceprincipal-post-approleassignedto.md)|[appRoleAssignment](../resources/approleassignment.md)|Assign an app role for this agent identity blueprint principal to a user, group, or service principal.|
+|[Remove app role assigned to](../api/serviceprincipal-delete-approleassignedto.md)|None|Remove an app role assignment for this agent identity blueprint principal from a user, group, or service principal.|
+|[List app role assignments](../api/serviceprincipal-list-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get the app roles that this agent identity blueprint principal is assigned.|
+|[Add app role assignment](../api/serviceprincipal-post-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md)|Assign an app role to this agent identity blueprint principal.|
+|[Remove app role assignment](../api/serviceprincipal-delete-approleassignments.md)|None|Remove an app role assignment from this agent identity blueprint principal.|
 |**Delegated permission grants**|||
-|[List oauth2PermissionGrants](../api/serviceprincipal-list-oauth2permissiongrants.md)|[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) collection|Get the delegated permission grants authorizing this agent identity blueprint principal to access an API on behalf of a signed-in user.|
+|[List OAuth 2.0 permission grants](../api/serviceprincipal-list-oauth2permissiongrants.md)|[oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) collection|Get the delegated permission grants authorizing this agent identity blueprint principal to access an API on behalf of a signed-in user.|
 |**Deleted items**|||
 |[List](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of recently deleted agent identities. |
 |[Get](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Retrieve the properties of a recently deleted agent identity. |
 |[Restore](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) | Restore a recently deleted agent identity. |
 |[Permanently delete](../api/directory-deleteditems-delete.md) | None | Permanently delete an agent identity. |
 |**Directory objects**|||
-|[List ownedObjects](../api/agentidentityblueprintprincipal-list-ownedobjects.md)|[directoryObject](../resources/directoryobject.md) collection|Get directory objects owned by this agent identity blueprint principal.|
-|[List createdObjects](../api/agentidentityblueprintprincipal-list-createdobjects.md)|[directoryObject](../resources/directoryobject.md) collection|Get directory objects created by this agent identity blueprint principal.|
+|[List owned objects](../api/agentidentityblueprintprincipal-list-ownedobjects.md)|[directoryObject](../resources/directoryobject.md) collection|Get directory objects owned by this agent identity blueprint principal.|
+|[List created objects](../api/agentidentityblueprintprincipal-list-createdobjects.md)|[directoryObject](../resources/directoryobject.md) collection|Get directory objects created by this agent identity blueprint principal.|
 |**Memberships**|||
-|[List memberOf](../api/agentidentityblueprintprincipal-list-memberof.md)|[directoryObject](../resources/directoryobject.md) collection|Get the groups that this agent identity blueprint principal is a direct member of.|
+|[List member of](../api/agentidentityblueprintprincipal-list-memberof.md)|[directoryObject](../resources/directoryobject.md) collection|Get the groups that this agent identity blueprint principal is a direct member of.|
 |**Owners**|||
 |[List owners](../api/agentidentityblueprintprincipal-list-owners.md)|[directoryObject](../resources/directoryobject.md) collection|Get the owners of this agent identity blueprint principal.|
 |[Add owners](../api/agentidentityblueprintprincipal-post-owners.md)|None|Assign an owner to this agent identity blueprint principal.|
@@ -71,7 +71,7 @@ This resource is an open type that allows additional properties beyond those doc
 |appRoleAssignmentRequired|Boolean|Specifies whether users or other service principals need to be granted an app role assignment for this agent identity blueprint principal before users can sign in or apps can get tokens. The default value is `false`. Not nullable. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |appRoles|[appRole](../resources/approle.md) collection|The roles exposed by the agent identity blueprint, which this agent identity blueprint principal represents. For more information, see the **appRoles** property definition on the application entity. Not nullable. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |createdByAppId|String|The **appId** (called **Application (client) ID** on the Microsoft Entra admin center) of the application that created this agent identity blueprint principal. Set internally by Microsoft Entra ID. Read-only. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
-|disabledByMicrosoftStatus|String|Specifies whether Microsoft has disabled the registered agent identity blueprint. Possible values are: `null` (default value), `NotDisabled`, and `DisabledDueToViolationOfServicesAgreement` (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement). Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|disabledByMicrosoftStatus|String|Specifies whether Microsoft has disabled the registered agent identity blueprint. The possible values are: `null` (default value), `NotDisabled`, and `DisabledDueToViolationOfServicesAgreement` (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement). Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |displayName|String|The display name for the agent identity blueprint principal. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |id|String|The unique identifier for the agent identity blueprint principal. Inherited from [entity](../resources/entity.md). Key. Not nullable. Read-only.|
 |info|[informationalUrl](../resources/informationalurl.md)|Basic profile information of the acquired application such as app's marketing, support, terms of service and privacy statement URLs. The terms of service and privacy statement are surfaced to users through the user consent experience. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
