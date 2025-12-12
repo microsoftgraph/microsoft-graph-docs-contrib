@@ -1,6 +1,6 @@
 ---
 title: "cloudPcProvisioningPolicy: retry"
-description: "Retry the provisioning operation for Cloud PCs that used the current policy for provisioning and failed to apply policies."
+description: "Retry the provisioning operation for Cloud PCs that used the current policy and failed to apply the provisioning policy."
 author: "ChyouChyou"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retry the provisioning operation for Cloud PCs that used the current policy for provisioning and failed to apply [provisioning policy](../resources/cloudpcprovisioningpolicy.md).
+Retry the provisioning operation for Cloud PCs that used the current policy and failed to apply the [provisioning policy](../resources/cloudpcprovisioningpolicy.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -67,7 +67,6 @@ Content-Type: application/json
 
 ### Response
 
-The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
