@@ -33,7 +33,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamsAdministration.effectivePolicyAssignment",
-  "policyAssignment": {"@odata.type": "microsoft.graph.teamsAdministration.policyAssignment"}
+  "policyAssignment": {"@odata.type": "microsoft.graph.teamsAdministration.policyAssignment"},
   "policyType": "String"
 }
 ```
