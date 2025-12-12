@@ -1275,6 +1275,24 @@ items:
         href: ../../api/customaccesspackageworkflowextension-update.md
       - name: Delete
         href: ../../api/customaccesspackageworkflowextension-delete.md
+    - name: Control configuration
+      href: ../../resources/controlconfiguration.md
+    - name: Insider risky user approval
+      items:
+      - name: Insider risky user approval
+        href: ../../resources/insiderriskyuserapproval.md
+      - name: Get
+        href: ../../api/insiderriskyuserapproval-get.md
+      - name: Update
+        href: ../../api/insiderriskyuserapproval-update.md
+    - name: Entra id protection risky user approval
+      items:
+      - name: Entra id protection risky user approval
+        href: ../../resources/entraidprotectionriskyuserapproval.md
+      - name: Get
+        href: ../../api/entraidprotectionriskyuserapproval-get.md
+      - name: Update
+        href: ../../api/entraidprotectionriskyuserapproval-update.md
     - name: Custom data provided resource upload session
       items:
       - name: Custom data provided resource upload session
