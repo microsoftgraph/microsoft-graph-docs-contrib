@@ -12,10 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.teamsAdministration
 
-
-
 Represents the effective policies associated with a user.
-
 
 ## Properties
 |Property|Type|Description|
@@ -36,10 +33,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamsAdministration.effectivePolicyAssignment",
-  "policyType": "String",
-  "policyAssignment": {
-    "@odata.type": "microsoft.graph.teamsAdministration.policyAssignment"
-  }
+  "policyAssignment": {"@odata.type": "microsoft.graph.teamsAdministration.policyAssignment"}
+  "policyType": "String"
 }
 ```
 
