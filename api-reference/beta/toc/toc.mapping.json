@@ -3252,7 +3252,7 @@
       ],
       "childNodes": [
         {
-          "name": "Administration (preview)",
+          "name": "Administration",
           "resources": [
             "microsoft.graph.teamsAdministration.numberAssignment",
             "microsoft.graph.teamsAdministration.teamsUserConfiguration",
