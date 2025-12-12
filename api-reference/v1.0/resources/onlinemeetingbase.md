@@ -149,9 +149,7 @@ The following JSON representation shows the resource type.
   "meetingOptionsWebUrl": "String",
   "meetingSpokenLanguageTag": "String",
   "recordAutomatically": "Boolean",
-  "sensitivityLabelAssignment": {
-      "@odata.type": "microsoft.graph.onlineMeetingSensitivityLabelAssignment"
-  },
+  "sensitivityLabelAssignment": {"@odata.type": "microsoft.graph.onlineMeetingSensitivityLabelAssignment"},
   "shareMeetingChatHistoryDefault": "microsoft.graph.meetingChatHistoryDefaultMode",
   "subject": "String",
   "videoTeleconferenceId": "String",
