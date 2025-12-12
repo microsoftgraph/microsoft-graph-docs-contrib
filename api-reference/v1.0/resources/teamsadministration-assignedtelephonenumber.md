@@ -1,6 +1,6 @@
 ---
 title: "assignedTelephoneNumber resource type"
-description: "Provides details about the phone number and its corresponding assignment category."
+description: "Represents details about the phone number and its corresponding assignment category."
 author: "praspatil05"
 ms.date: 12/03/2025
 ms.localizationpriority: medium
@@ -12,10 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.teamsAdministration
 
-
-
-Provides details about the phone number and its corresponding assignment category. The assignment category can include values such as `primary`, `private`, and `alternate`.
-
+Represents details about the phone number and its corresponding assignment category. The assignment category can include values such as `primary`, `private`, and `alternate`.
 
 ## Properties
 |Property|Type|Description|
@@ -36,8 +33,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamsAdministration.assignedTelephoneNumber",
-  "telephoneNumber": "String",
-  "assignmentCategory": "String"
+  "assignmentCategory": "String",
+  "telephoneNumber": "String"
 }
 ```
 
