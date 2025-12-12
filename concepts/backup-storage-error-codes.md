@@ -410,3 +410,22 @@ The following table lists the possible error and response code that can be retur
 | HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |403|InvalidStateForBulkRequestDeletion|Validation fails when the service type of the restore session and create request are different.|A bulk request can only be deleted when its status is `completed` or `completedWithErrors`.|
+
+## Known PowerShell errors
+
+The error codes in this section apply to the following APIs when called from PowerShell:
+
+- [Get backupRestoreRoot](/graph/api/backuprestoreroot-get)
+- [Enable backupRestoreRoot](/graph/api/backuprestoreroot-enable)
+- [Create serviceApp](/graph/api/backuprestoreroot-post-serviceapps)
+- [Delete serviceApp](/graph/api/backuprestoreroot-delete-serviceapps)
+
+The following table lists the possible error and response code that can be returned.
+
+| HTTP status code| Error code| Error message | Description|
+|:------------------|:--------------|:--------------|:--------------|
+|403|Forbidden|Method not allowed for known allowed listed internal apps|The request is forbidden when called from PowerShell.|
+
+For other API-specific errors, please see the specific API error codes.
+
+

@@ -17,6 +17,9 @@ Namespace: microsoft.graph
 
 Enable the [Microsoft 365 Backup Storage](../resources/backuprestoreroot.md) service for a tenant.
 
+[!NOTE]
+If this API is called via PowerShell, it returns a `403 Forbidden` response code.
+
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions

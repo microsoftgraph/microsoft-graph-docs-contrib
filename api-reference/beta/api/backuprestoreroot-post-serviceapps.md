@@ -17,6 +17,9 @@ Namespace: microsoft.graph
 
 Create a new [serviceApp](../resources/serviceapp.md).
 
+[!NOTE]
+If this API is called via PowerShell, it returns a `403 Forbidden` response code.
+
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
