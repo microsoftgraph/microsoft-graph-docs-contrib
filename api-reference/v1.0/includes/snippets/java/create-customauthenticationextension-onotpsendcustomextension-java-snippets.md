@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-CustomAuthenticationExtension customAuthenticationExtension = new CustomAuthenticationExtension();
+OnOtpSendCustomExtension customAuthenticationExtension = new OnOtpSendCustomExtension();
 customAuthenticationExtension.setOdataType("#microsoft.graph.onOtpSendCustomExtension");
 AzureAdTokenAuthentication authenticationConfiguration = new AzureAdTokenAuthentication();
 authenticationConfiguration.setOdataType("#microsoft.graph.azureAdTokenAuthentication");
@@ -24,11 +24,9 @@ HttpRequestEndpoint endpointConfiguration = new HttpRequestEndpoint();
 endpointConfiguration.setOdataType("#microsoft.graph.httpRequestEndpoint");
 endpointConfiguration.setTargetUrl("https://onotpsendcustomextension.b2c.expert/api/OnOTPCodeSendToTeamsDemo");
 customAuthenticationExtension.setEndpointConfiguration(endpointConfiguration);
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
- behaviorOnError = new ();
+CustomExtensionBehaviorOnError behaviorOnError = new CustomExtensionBehaviorOnError();
 behaviorOnError.setOdataType("microsoft.graph.customExtensionBehaviorOnError");
-additionalData.put("behaviorOnError", behaviorOnError);
-customAuthenticationExtension.setAdditionalData(additionalData);
+customAuthenticationExtension.setBehaviorOnError(behaviorOnError);
 CustomAuthenticationExtension result = graphClient.identity().customAuthenticationExtensions().post(customAuthenticationExtension);
 
 

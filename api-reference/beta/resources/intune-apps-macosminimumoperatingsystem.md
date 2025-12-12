@@ -35,6 +35,7 @@ The minimum operating system required for a macOS app.
 |v13_0|Boolean|Indicates the minimum OS X version support required for the managed device. When 'True', macOS with OS X 13.0 or later is required to install the app. If 'False', OS X Version 13.0 is not the minimum version. Default value is False. Exactly one of the minimum operating system boolean values will be TRUE.|
 |v14_0|Boolean|Indicates the minimum OS X version support required for the managed device. When 'True', macOS with OS X 14.0 or later is required to install the app. If 'False', OS X Version 14.0 is not the minimum version. Default value is False. Exactly one of the minimum operating system boolean values will be TRUE.|
 |v15_0|Boolean|Indicates the minimum OS X version support required for the managed device. When 'True', macOS with OS X 15.0 or later is required to install the app. If 'False', OS X Version 15.0 is not the minimum version. Default value is False. Exactly one of the minimum operating system boolean values will be TRUE.|
+|v26_0|Boolean|Indicates the minimum OS X version support required for the managed device. When 'True', macOS with OS X 26.0 or later is required to install the app. If 'False', OS X Version 26.0 is not the minimum version. Default value is False. Exactly one of the minimum operating system boolean values will be TRUE.|
 
 ## Relationships
 None
@@ -62,6 +63,7 @@ Here is a JSON representation of the resource.
   "v12_0": true,
   "v13_0": true,
   "v14_0": true,
-  "v15_0": true
+  "v15_0": true,
+  "v26_0": true
 }
 ```

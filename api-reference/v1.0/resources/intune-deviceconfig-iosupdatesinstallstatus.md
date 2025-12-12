@@ -1,11 +1,11 @@
 ---
 title: "iosUpdatesInstallStatus enum type"
-description: "Not yet documented"
+description: "Intune Deviceconfig Iosupdatesinstallstatus Resources ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: enumPageType
-ms.date: 09/13/2024
+ms.date: 08/01/2024
 ---
 
 # iosUpdatesInstallStatus enum type
@@ -14,26 +14,26 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
 
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|success|0|Not yet documented|
-|available|1|Not yet documented|
-|idle|2|Not yet documented|
-|unknown|3|Not yet documented|
-|downloading|-2016330712|Not yet documented|
-|downloadFailed|-2016330711|Not yet documented|
-|downloadRequiresComputer|-2016330710|Not yet documented|
-|downloadInsufficientSpace|-2016330709|Not yet documented|
-|downloadInsufficientPower|-2016330708|Not yet documented|
-|downloadInsufficientNetwork|-2016330707|Not yet documented|
-|installing|-2016330706|Not yet documented|
-|installInsufficientSpace|-2016330705|Not yet documented|
-|installInsufficientPower|-2016330704|Not yet documented|
-|installPhoneCallInProgress|-2016330703|Not yet documented|
-|installFailed|-2016330702|Not yet documented|
-|notSupportedOperation|-2016330701|Not yet documented|
-|sharedDeviceUserLoggedInError|-2016330699|Not yet documented|
-|deviceOsHigherThanDesiredOsVersion|-2016330696|Not yet documented|
+|success|0||
+|available|1||
+|idle|2||
+|unknown|3||
+|downloading|-2016330712||
+|downloadFailed|-2016330711||
+|downloadRequiresComputer|-2016330710||
+|downloadInsufficientSpace|-2016330709||
+|downloadInsufficientPower|-2016330708||
+|downloadInsufficientNetwork|-2016330707||
+|installing|-2016330706||
+|installInsufficientSpace|-2016330705||
+|installInsufficientPower|-2016330704||
+|installPhoneCallInProgress|-2016330703||
+|installFailed|-2016330702||
+|notSupportedOperation|-2016330701||
+|sharedDeviceUserLoggedInError|-2016330699||
+|deviceOsHigherThanDesiredOsVersion|-2016330696||

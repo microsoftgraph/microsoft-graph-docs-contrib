@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Send an activity feed notification in the scope of a team. For more information, see [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /teams/{teamId}/sendActivityNotification
 ```
 
@@ -85,7 +85,7 @@ This example shows how you can send an activity feed notification to a team. Thi
   "name": "team_sendactivitynotification_for_team_beta_e1"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/teams/{teamId}/sendActivityNotification
 Content-Type: application/json
 
@@ -147,7 +147,7 @@ Content-Type: application/json
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -163,7 +163,7 @@ Similar to the previous example, this example uses `entityUrl` for the `topic`. 
   "name": "team_sendactivitynotification_entityurl_topic_beta_e1"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/teams/{teamId}/sendActivityNotification
 Content-Type: application/json
 
@@ -229,7 +229,7 @@ Content-Type: application/json
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -246,7 +246,7 @@ Similar to the previous example, this example uses `entityUrl` for the `topic`. 
   "name": "team_sendactivitynotification_upn_beta_e3"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/teams/{teamId}/sendActivityNotification
 Content-Type: application/json
 
@@ -312,7 +312,7 @@ Content-Type: application/json
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -328,7 +328,7 @@ As seen in the previous examples, you can link to different aspects of the team.
   "name": "team_sendactivitynotification_set_topicsource_to_text_beta_e4"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/teams/{teamId}/sendActivityNotification
 Content-Type: application/json
 
@@ -391,7 +391,7 @@ Content-Type: application/json
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -412,7 +412,7 @@ The following example shows the request.
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7/sendActivityNotification
 Content-Type: application/json
 
@@ -477,7 +477,7 @@ The following example shows the response.
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -496,7 +496,7 @@ The following example shows the request.
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7/sendActivityNotification
 Content-Type: application/json
 
@@ -562,7 +562,7 @@ The following example shows the response.
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 
 ```
@@ -582,7 +582,7 @@ The following example shows the request.
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7/sendActivityNotification
 Content-Type: application/json
 
@@ -651,7 +651,7 @@ The following example shows the response.
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -740,7 +740,7 @@ The following example shows the response.
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

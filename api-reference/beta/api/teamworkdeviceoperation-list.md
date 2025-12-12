@@ -11,6 +11,8 @@ ms.date: 04/04/2024
 # List teamworkDeviceOperations
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-deprecation-disclaimer](../../includes/beta-deprecation-disclaimer.md)]
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of the [operations](../resources/teamworkdeviceoperation.md) that are running on a Microsoft Teams-enabled [device](../resources/teamworkdevice.md).
@@ -31,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /teamwork/devices/{teamworkDeviceId}/operations
 ```
 
@@ -67,7 +69,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_teamworkdeviceoperation"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teamwork/devices/0f3ce432-e432-0f3c-32e4-3c0f32e43c0f/operations
 ```
 
@@ -110,7 +112,7 @@ GET https://graph.microsoft.com/beta/teamwork/devices/0f3ce432-e432-0f3c-32e4-3c
   "isCollection": true
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

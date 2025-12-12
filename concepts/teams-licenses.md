@@ -11,6 +11,9 @@ ms.topic: article
 
 # Payment models and licensing requirements for Microsoft Teams APIs
 
+> [!IMPORTANT]
+> Starting August 25, 2025, the Teams APIs listed in this article are no longer metered, and no billing configuration is required to use these APIs. If your application is configured for billing, no action is required. This article is provided for reference as the final billing cycle for metered Microsoft Teams APIs concludes.
+
 This article describes the payment models and licensing requirements for Microsoft Teams APIs in Microsoft Graph. For a high-level description of metered APIs and services in Microsoft Graph, see [Overview of metered APIs and services in Microsoft Graph](metered-api-overview.md).
 
 Some APIs provide the option to choose a licensing and payment model via the `model` query parameter; others only support one model or don't support a licensing and payment model.
@@ -23,7 +26,7 @@ The following table lists the APIs and [change notification](/graph/api/subscrip
 | [Change notification](/graph/api/subscription-post-subscriptions) `resources`: <ul><li>/users/{user-id}/chats/getAllMessages</li><li>/me/chats/getAllMessages</li><li>/appCatalogs/teamsApps/{app-id}/installedToChats</li><li>/appCatalogs/teamsApps/{app-id}/installedToChats/getAllMessages</li><li>/appCatalogs/teamsApps/{app-id}/installedToChats/getAllMembers</li></ul> | B |
 | [Export APIs](/microsoftteams/export-teams-content): <ul><li>[GET /users/{user-id}/chats/getAllMessages](/graph/api/chats-getallmessages)</li><li>[GET /users/{user-id}/chats/getAllRetainedMessages](/graph/api/chat-getallretainedmessages)</li><li>[GET /me/chats/getAllMessages](/graph/api/chats-getallmessages)</li><li>[GET /teams/{team-id}/channels/getAllMessages](/graph/api/channel-getallmessages)</li><li>[GET /teams/{team-id}/channels/getAllRetainedMessages](/graph/api/channel-getallretainedmessages)</li><li>[GET /teamwork/deletedTeams/{deletedTeamId}/channels/getAllMessages](/graph/api/deletedteam-getallmessages)</li></ul> | A, B |
 | PATCH APIs, when updating the `policyViolation` property: <ul><li>[PATCH /teams/{team-id}/channels/{channel-id}/messages/{message-id}](/graph/api/chatmessage-update)</li><li>[PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}](/graph/api/chatmessage-update)</li><li>[PATCH /chats/{chatThread-id}/messages/{message-id}](/graph/api/chatmessage-update)</li></ul> | A |
-| Teams meeting APIs: <ul><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content)</li><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/metadataContent](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent)</li><li>[GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content](/graph/api/callrecording-get#example-2-get-callrecording-content)</li><li>[GET /copilot/users/{userId}/onlineMeetings/{meetingId}/aiInsights/{aiInsightId}](/graph/api/callaiinsight-get#example-1-get-a-callaiinsight)</li></ul> | No model parameter |
+| Teams meeting APIs: <ul><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content)</li><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/metadataContent](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent)</li><li>[GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content](/graph/api/callrecording-get#example-2-get-callrecording-content)</li><li>[GET /copilot/users/{userId}/onlineMeetings/{meetingId}/aiInsights/{aiInsightId}](/microsoft-365-copilot/extensibility/api/ai-services/meeting-insights/callaiinsight-get)</li></ul> | No model parameter |
 
 > [!NOTE]
 > To set up an active Azure subscription for your application for billing purposes, see [Enable metered Microsoft 365 APIs and services](/graph/metered-api-setup). For more information, see [Payment and billing updates](#payment-and-billing).
@@ -32,9 +35,9 @@ The following table lists the APIs and [change notification](/graph/api/subscrip
 
 The following payment models are available:
 
-- [`model=A`](#modela-requirements) is restricted to applications performing a [security or compliance function](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms), and requires a [supported license](#required-licenses-for-modela). 
+- [`model=A`](#modela-requirements) is restricted to applications performing a [security or compliance function](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms), and requires a [supported license](#required-licenses-for-modela).
 
-- [`model=B`](#modelb-requirements) is restricted to applications that don't perform a 
+- [`model=B`](#modelb-requirements) is restricted to applications that don't perform a
 [security or compliance function](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms).
 There are no licensing requirements for `model=B`.
 
@@ -45,7 +48,7 @@ There are no licensing requirements for `model=B`.
 
 ### `model=A` requirements
 
-`model=A` is restricted to applications performing a security or compliance function. For details, see the API Terms for Security & Compliance Applications section 
+`model=A` is restricted to applications performing a security or compliance function. For details, see the API Terms for Security & Compliance Applications section
 of the [product terms for Microsoft Azure Services](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftAzure/MCA#ServiceSpecificTerms).
 
 The following APIs support the `model=A` parameter.
@@ -58,12 +61,12 @@ The following APIs support the `model=A` parameter.
 | APIs: <ul><li>[GET /teams/{team-id}/channels/getAllMessages](/graph/api/channel-getallmessages)</li><li>[GET /teams/{team-id}/channels/getAllRetainedMessages](/graph/api/channel-getallretainedmessages)</li><li>[GET /teamwork/deletedTeams/{deletedTeamId}/channels/getAllMessages](/graph/api/deletedteam-getallmessages)</li></ul> | Any team member | (1600 messages × supported licenses with DLP enabled) per month per app | $0.00075 per message | Requests that return an empty list isn't charged. Seeded capacity is shared with chat export. |
 | APIs, when updating the `policyViolation` property: <ul><li>[PATCH /teams{team-id}/channels/{channel-id}/messages/{message-id}](/graph/api/chatmessage-update)</li><li>[PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}](/graph/api/chatmessage-update)</li><li>[PATCH /chats/{chatThread-id}/messages/{message-id}](/graph/api/chatmessage-update)</li></ul> |  Message sender |  (800 messages × supported licenses with DLP enabled) per month per app | $0.00075 per message |
 
-#### Required licenses for `model=A` 
+#### Required licenses for `model=A`
 
-The user needs a license that supports 
+The user needs a license that supports
 the Microsoft Communications DLP [service plan](/azure/active-directory/enterprise-users/licensing-service-plan-reference),
 such as one of these [supported licenses](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-loss-prevention-graph-apis-for-teams-data-loss-prevention-dlp-and-for-teams-export).
-Which user needs the license varies by API; 
+Which user needs the license varies by API;
 for details, see [`model=A` requirements](#modela-requirements).
 
 Guest users are exempt from these licensing requirements.
@@ -71,12 +74,12 @@ Similarly, messages sent from outside the tenant (federated chat) are exempt.
 Consumption meters still apply.
 
 It's the responsibility of the tenant owner (not the app owner) to ensure that users are properly licensed.
-Admins can use the [Information protection license report](/microsoftteams/teams-analytics-and-reports/information-protection-license-report) in 
-[Teams admin center](https://admin.teams.microsoft.com/analytics/reports) 
+Admins can use the [Information protection license report](/microsoftteams/teams-analytics-and-reports/information-protection-license-report) in
+[Teams admin center](https://admin.teams.microsoft.com/analytics/reports)
 to see which users don't have a supported license.
 
-Many supported licenses offer free trials. 
-[Office 365 E5](https://www.microsoft.com/microsoft-365/enterprise/office-365-e5?activetab=pivot%3aoverviewtab) 
+Many supported licenses offer free trials.
+[Office 365 E5](https://www.microsoft.com/microsoft-365/enterprise/office-365-e5?activetab=pivot%3aoverviewtab)
 for instance has a **Free trial** link under the **Buy** button.
 
 You might qualify for one through the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program); for details, see the [FAQ](/office/developer-program/microsoft-365-developer-program-faq#who-qualifies-for-a-microsoft-365-e5-developer-subscription-). Alternatively, you can [sign up for a 1-month free trial or purchase a Microsoft 365 plan](https://www.microsoft.com/en-us/microsoft-365/try).
@@ -100,7 +103,7 @@ The following APIs support the `model=B` parameter.
 
 ### Evaluation mode (default) requirements
 
-The following APIs support evaluation mode. The evaluation quota is enforced per app, per tenant, per month. The quota is reset at the beginning of each calendar month, and any unused amount doesn't get carried over to the next month. 
+The following APIs support evaluation mode. The evaluation quota is enforced per app, per tenant, per month. The quota is reset at the beginning of each calendar month, and any unused amount doesn't get carried over to the next month.
 
 | APIs or [change notification](/graph/api/subscription-post-subscriptions) `resources` | Evaluation quota | [Price for additional use](#payment-and-billing) | Notes |
 |:-----------------------------|:----------------|:-------|:------|
@@ -126,7 +129,7 @@ Seeded capacity isn't applicable for Teams meeting APIs. For details, see [Payme
 
 ## Payment requirements for meeting APIs
 
-This section describes the payment requirements for Teams meeting transcript and recording APIs. These APIs don't support the model A and model B payment models and can be used by any application, regardless of the use case. 
+This section describes the payment requirements for Teams meeting transcript and recording APIs. These APIs don't support the model A and model B payment models and can be used by any application, regardless of the use case.
 
 These APIs support an [evaluation mode](#evaluation-mode-default-requirements) that apps can use without configuring Azure billing. The following table summarizes the evaluation mode behavior.
 
@@ -155,9 +158,9 @@ The organization that owns the app registration is responsible for the payment. 
 ## Payment-related errors
 
 If incorrect licensing is detected, the API call fails and data isn't returned.
-Specifically, for most APIs, attempting to GET messages for an unlicensed user, results in a `402` error code. 
-For change notifications, messages sent by unlicensed users don't generate a change notification. 
-API calls and change notifications used in evaluation mode in excess of the evaluation quota fails. 
+Specifically, for most APIs, attempting to GET messages for an unlicensed user, results in a `402` error code.
+For change notifications, messages sent by unlicensed users don't generate a change notification.
+API calls and change notifications used in evaluation mode in excess of the evaluation quota fails.
 
 | Error code | Scenario | Sample error message |
 |:-----------|:-----------|:-----------------|
@@ -173,14 +176,14 @@ API calls and change notifications used in evaluation mode in excess of the eval
 
 This section describes how to monitor costs billed for the metered Microsoft Teams APIs.
 
-A subscription owner, or anyone with appropriate [RBAC (Roles Based Access Control) permissions](/azure/cost-management-billing/costs/assign-access-acm-data), can use **Cost Analysis** to track metered API consumption, as follows: 
+A subscription owner, or anyone with appropriate [RBAC (Roles Based Access Control) permissions](/azure/cost-management-billing/costs/assign-access-acm-data), can use **Cost Analysis** to track metered API consumption, as follows:
 
-1. Sign in to the Azure portal at https://portal.azure.com. 
-2. Go to [**Cost Management + Billing > Cost Management > Cost analysis**](https://ms.portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/~/costanalysis). 
-3. For the filter near the top, select **Service name: Microsoft Graph Services**. 
-4. For the **Group by** dropdown menu near the right, select **Meter**. 
+1. Sign in to the Azure portal at https://portal.azure.com.
+2. Go to [**Cost Management + Billing > Cost Management > Cost analysis**](https://ms.portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/~/costanalysis).
+3. For the filter near the top, select **Service name: Microsoft Graph Services**.
+4. For the **Group by** dropdown menu near the right, select **Meter**.
 
-This view offers a convenient way to observe API consumption per day over a period of time. 
+This view offers a convenient way to observe API consumption per day over a period of time.
 
 You can also use the pie charts near the bottom to further breakdown the costs for analysis, using the **Resource** and **Meter** filters.
 
@@ -216,15 +219,15 @@ You can also call the [getTeamsUserActivityUserDetail](/graph/api/reportroot-get
 |    Scenario    | Details |
 |:-------------------------|:--------|
 | Why was the number of messages billed higher than the number of messages in my Teams? | If your app is retrieving the same message multiple times, it is billed for multiple times. One way to avoid it is to use [change notifications](/graph/api/subscription-post-subscriptions) instead of [export APIs](/microsoftteams/export-teams-content).  If you must use export APIs, make sure to use filters (for example, `$filter=lastModifiedDateTime`, `$filter=from`). |
-| Did billing actually started on July 5? | Yes, we're onboarding partners in phases. For continued access, follow the instructions on [Enable metered Microsoft 365 APIs and services](/graph/metered-api-setup) to set up an active Azure subscription for billing purposes. 
+| Did billing actually started on July 5? | Yes, we're onboarding partners in phases. For continued access, follow the instructions on [Enable metered Microsoft 365 APIs and services](/graph/metered-api-setup) to set up an active Azure subscription for billing purposes.
 | What should I expect after setting up an Azure subscription? | Billing is effective immediately.  You can monitor the costs as described in the [View the costs billed for the metered Microsoft Teams APIs](#view-the-costs-billed-for-the-metered-microsoft-teams-apis) section above. |
 | Do I need to provide an Azure subscription if my application isn't calling metered APIs? | We recommend that you provide an Azure subscription because most scenarios use metered APIs. |
 | What happens if no Azure subscription is provided? | * No payment-related errors occur if the application isn't calling metered APIs. <br> * If no model parameter is passed, the `evaluation model` value is used by default. <br> * If calling a metered API passing `model=A`, provide a Microsoft 365 E5 eligible license and Azure subscription. <br> * If passing `model=B` when calling metered APIs, provide an active Azure subscription. <br> |
 | How do I create an Azure subscription? | The Azure subscription must be available in the same tenant where the app is registered. Customers with MCA or EA agreements can get a subscription from their existing account. Is also possible to create a PAYG subscription using a credit card or pay by check or wire transfer. For details, see [Enable metered Microsoft 365 APIs and services](/graph/metered-api-setup) and [cost management and billing](/azure/cost-management-billing/microsoft-customer-agreement). |
 | Who is responsible for the payment in the case of multitenant apps? | The organization that owns the app registration. |
 | Is possible to differentiate billing from multitenant or single tenant app? | Yes, this information must be provided as part of Azure billing details. |
-| Is there a charge when no message is returned using any model? | To discourage frequent [polling](/graph/api/resources/teams-api-overview), API requests that return an empty list of messages aren't charged. | 
+| Is there a charge when no message is returned using any model? | To discourage frequent [polling](/graph/api/resources/teams-api-overview), API requests that return an empty list of messages aren't charged. |
 | Where can I monitor the cost and billing? | A subscription owner, or anyone with appropriate RBAC (Roles Based Access Control) can use Azure Cost Analysis tool to track consumption per day or filter by meter, service name, resource ID among other parameters. For more details, please see [View the costs billed for the metered Microsoft Teams APIs](#view-the-costs-billed-for-the-metered-microsoft-teams-apis) above. |
-| Is there a volume discount? | Flat rates apply. |  
+| Is there a volume discount? | Flat rates apply. |
 | Are these APIs enrolled in [Microsoft Azure Consumption Commitment (MACC) program](/azure/marketplace/azure-consumption-commitment-enrollment)? | Not at this time.|
 

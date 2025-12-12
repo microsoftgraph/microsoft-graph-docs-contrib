@@ -4,7 +4,7 @@ description: "Retrieve a list of objects owned by the servicePrincipal.  This co
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-applications"
-author: "sureshja"
+author: "Jackson-Woods"
 ms.date: 04/18/2024
 ---
 

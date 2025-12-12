@@ -54,7 +54,7 @@ Inherits from [appleDeviceFeaturesConfigurationBase](../resources/intune-devicec
 |homeScreenGridHeight|Int32|Gets or sets the number of rows to render when configuring iOS home screen layout settings. If this value is configured, homeScreenGridWidth must be configured as well.|
 |notificationSettings|[iosNotificationSettings](../resources/intune-deviceconfig-iosnotificationsettings.md) collection|Notification settings for each bundle id. Applicable to devices in supervised mode only (iOS 9.3 and later). This collection can contain a maximum of 500 elements.|
 |singleSignOnSettings|[iosSingleSignOnSettings](../resources/intune-deviceconfig-iossinglesignonsettings.md)|The Kerberos login settings that enable apps on receiving devices to authenticate smoothly.|
-|wallpaperDisplayLocation|[iosWallpaperDisplayLocation](../resources/intune-deviceconfig-ioswallpaperdisplaylocation.md)|A wallpaper display location specifier. Possible values are: `notConfigured`, `lockScreen`, `homeScreen`, `lockAndHomeScreens`.|
+|wallpaperDisplayLocation|[iosWallpaperDisplayLocation](../resources/intune-deviceconfig-ioswallpaperdisplaylocation.md)|A wallpaper display location specifier. The possible values are: `notConfigured`, `lockScreen`, `homeScreen`, `lockAndHomeScreens`.|
 |wallpaperImage|[mimeContent](../resources/intune-shared-mimecontent.md)|A wallpaper image must be in either PNG or JPEG format. It requires a supervised device with iOS 8 or later version.|
 |singleSignOnExtension|[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)|Gets or sets a single sign-on extension profile. Deprecated: use IOSSingleSignOnExtension instead.|
 |iosSingleSignOnExtension|[iosSingleSignOnExtension](../resources/intune-deviceconfig-iossinglesignonextension.md)|Gets or sets a single sign-on extension profile.|
@@ -232,68 +232,32 @@ Here is a JSON representation of the resource.
     "value": "binary"
   },
   "singleSignOnExtension": {
-    "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
-    "realm": "String",
-    "domains": [
-      "String"
+    "@odata.type": "microsoft.graph.iosRedirectSingleSignOnExtension",
+    "extensionIdentifier": "String",
+    "teamIdentifier": "String",
+    "configurations": [
+      {
+        "@odata.type": "microsoft.graph.keyTypedValuePair",
+        "key": "String"
+      }
     ],
-    "blockAutomaticLogin": true,
-    "cacheName": "String",
-    "credentialBundleIdAccessControlList": [
+    "urlPrefixes": [
       "String"
-    ],
-    "domainRealms": [
-      "String"
-    ],
-    "isDefaultRealm": true,
-    "passwordBlockModification": true,
-    "passwordExpirationDays": 1024,
-    "passwordExpirationNotificationDays": 1024,
-    "userPrincipalName": "String",
-    "passwordRequireActiveDirectoryComplexity": true,
-    "passwordPreviousPasswordBlockCount": 1024,
-    "passwordMinimumLength": 1024,
-    "passwordMinimumAgeDays": 1024,
-    "passwordRequirementsDescription": "String",
-    "requireUserPresence": true,
-    "activeDirectorySiteCode": "String",
-    "passwordEnableLocalSync": true,
-    "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "String",
-    "signInHelpText": "String",
-    "managedAppsInBundleIdACLIncluded": true
+    ]
   },
   "iosSingleSignOnExtension": {
-    "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
-    "realm": "String",
-    "domains": [
-      "String"
+    "@odata.type": "microsoft.graph.iosRedirectSingleSignOnExtension",
+    "extensionIdentifier": "String",
+    "teamIdentifier": "String",
+    "configurations": [
+      {
+        "@odata.type": "microsoft.graph.keyTypedValuePair",
+        "key": "String"
+      }
     ],
-    "blockAutomaticLogin": true,
-    "cacheName": "String",
-    "credentialBundleIdAccessControlList": [
+    "urlPrefixes": [
       "String"
-    ],
-    "domainRealms": [
-      "String"
-    ],
-    "isDefaultRealm": true,
-    "passwordBlockModification": true,
-    "passwordExpirationDays": 1024,
-    "passwordExpirationNotificationDays": 1024,
-    "userPrincipalName": "String",
-    "passwordRequireActiveDirectoryComplexity": true,
-    "passwordPreviousPasswordBlockCount": 1024,
-    "passwordMinimumLength": 1024,
-    "passwordMinimumAgeDays": 1024,
-    "passwordRequirementsDescription": "String",
-    "requireUserPresence": true,
-    "activeDirectorySiteCode": "String",
-    "passwordEnableLocalSync": true,
-    "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "String",
-    "signInHelpText": "String",
-    "managedAppsInBundleIdACLIncluded": true
+    ]
   }
 }
 ```

@@ -4,32 +4,6 @@
 items:
 - name: Overview
   href: ../../resources/teams-api-overview.md
-- name: AI interactions
-  items:
-  - name: AI interaction history
-    items:
-    - name: AI interaction history
-      href: ../../resources/aiinteractionhistory.md
-    - name: Get all enterprise interactions
-      href: ../../api/aiinteractionhistory-getallenterpriseinteractions.md
-  - name: Complex types
-    items:
-    - name: AI interaction
-      href: ../../resources/aiinteraction.md
-    - name: AI interaction attachment
-      href: ../../resources/aiinteractionattachment.md
-    - name: AI interaction context
-      href: ../../resources/aiinteractioncontext.md
-    - name: AI interaction link
-      href: ../../resources/aiinteractionlink.md
-    - name: AI interaction mention
-      href: ../../resources/aiinteractionmention.md
-    - name: AI interaction mentioned identity set
-      href: ../../resources/aiinteractionmentionedidentityset.md
-    - name: AI user
-      href: ../../resources/aiuser.md
-    - name: Copilot root
-      href: ../../resources/copilotroot.md
 - name: Apps
   items:
   - name: Teams app
@@ -118,6 +92,20 @@ items:
   items:
   - name: Overview
     href: ../../resources/communications-api-overview.md
+  - name: Ad hoc call
+    items:
+    - name: Ad hoc call (preview)
+      href: ../../resources/adhoccall.md
+  - name: Call events
+    items:
+    - name: Call event
+      href: ../../resources/callevent.md
+    - name: Emergency call event
+      href: ../../resources/emergencycallevent.md
+    - name: Complex types
+      items:
+      - name: Emergency caller info
+        href: ../../resources/emergencycallerinfo.md
   - name: Call records
     items:
     - name: Overview
@@ -272,24 +260,6 @@ items:
         href: ../../resources/addlargegalleryviewoperation.md
       - name: Get large gallery view operation status
         href: ../../api/addlargegalleryviewoperation-get.md
-  - name: Copilot settings
-    items:
-    - name: Copilot admin limited mode
-      items:
-      - name: Copilot admin limited mode
-        href: ../../resources/copilotadminlimitedmode.md
-      - name: Get
-        href: ../../api/copilotadminlimitedmode-get.md
-      - name: Update
-        href: ../../api/copilotadminlimitedmode-update.md
-    - name: Complex types
-      items:
-      - name: Copilot admin
-        href: ../../resources/copilotadmin.md
-      - name: Copilot admin setting
-        href: ../../resources/copilotadminsetting.md
-      - name: Copilot root
-        href: ../../resources/copilotroot.md
   - name: Online meetings
     items:
     - name: Meeting attendance report
@@ -324,12 +294,22 @@ items:
         href: ../../api/onlinemeeting-list-transcripts.md
       - name: List recordings
         href: ../../api/onlinemeeting-list-recordings.md
+    - name: Online meeting engagement conversation
+      items:
+      - name: Online meeting engagement conversation
+        href: ../../resources/onlinemeetingengagementconversation.md
+      - name: Get all online meeting messages
+        href: ../../api/cloudcommunications-getallonlinemeetingmessages.md
+      - name: List reactions
+        href: ../../api/engagementconversationdiscussionmessage-list-reactions.md
     - name: Call recording
       items:
       - name: Call recording
         href: ../../resources/callrecording.md
       - name: List
         href: ../../api/onlinemeeting-list-recordings.md
+      - name: Get
+        href: ../../api/callrecording-get.md
       - name: Get
         href: ../../api/callrecording-get.md
       - name: Get delta by organizer
@@ -472,6 +452,10 @@ items:
         href: ../../api/virtualeventwebinar-getbyuseridandrole.md
       - name: Set external event information
         href: ../../api/virtualevent-setexternaleventinformation.md
+  - name: Complex types
+    items:
+    - name: Out of office settings
+      href: ../../resources/outofofficesettings.md
 - name: Employee learning
   displayName: Viva Learning
   items:
@@ -627,6 +611,8 @@ items:
         href: ../../api/chat-delete-members.md
       - name: Get chat between user and app
         href: ../../api/userscopeteamsappinstallation-get-chat.md
+      - name: Remove all access for user
+        href: ../../api/chat-removeallaccessforuser.md
     - name: Messages
       items:
       - name: List messages in a chat

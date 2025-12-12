@@ -43,3 +43,12 @@ The set of available policy types that can be configured for approval. The polic
 |deviceResetPasscode|19|Indicates that the configured policy type is for a Device Reset Passcode Action. Not in use at this time.|
 |unknownFutureValue|21|Evolvable enumeration sentinel value. Do not use.|
 |operationApprovalPolicy|22|Indicates that the configured policy type is for an Operation Approval Policy.|
+|autopilot|23|Indicates that the configured policy type is for Autopilot operations. Not in use at this time.|
+|windows365|24|Indicates that the configured policy type is for Windows 365 operations. Not in use at this time.|
+|deviceEnrollment|25|Indicates that the configured policy type is for Device Enrollment operations. Not in use at this time.|
+|deviceUpdate|26|Indicates that the configured policy type is for Device Update operations. Not in use at this time.|
+|enrollmentRestriction|27|Indicates that the configured policy type is for Enrollment Restriction operations. Not in use at this time.|
+|tenantConfiguration|28|Indicates that the configured policy type is for Tenant Configuration operations. Not in use at this time.|
+|tunnel|29|Indicates that the configured policy type is for Tunnel operations. Not in use at this time.|
+|endpointPrivilegeManagement|30|Indicates that the configured policy type is for Endpoint Privilege Management. Not in use at this time.|
+|deviceSecurityAction|31|Indicates that the configured policy type is for Device Security Action. Not in use at this time.|

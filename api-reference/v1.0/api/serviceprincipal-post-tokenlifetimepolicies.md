@@ -1,7 +1,7 @@
 ---
 title: "Assign tokenLifetimePolicy"
 description: "Assign a tokenLifetimePolicy to a service principal."
-author: "sureshja"
+author: "aricrowe57"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "assign_tokenlifetimepolicy_to_serviceprincipal"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals/2a8f9e7a-af01-413a-9592-c32ec0e5c1a7/tokenLifetimePolicies/$ref
 Content-Type: application/json
 
@@ -92,6 +92,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/assign-tokenlifetimepolicy-to-serviceprincipal-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/assign-tokenlifetimepolicy-to-serviceprincipal-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/assign-tokenlifetimepolicy-to-serviceprincipal-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -106,7 +110,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

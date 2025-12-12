@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /education/reports/reflectCheckInResponses
 ```
 
@@ -67,7 +67,7 @@ The following example shows a request.
   "name": "get_reflectCheckinResponses_1"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/reports/reflectCheckInResponses
 ```
 
@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/v1.0/education/reports/reflectCheckInResponses
 [!INCLUDE [sample-code](../includes/snippets/php/get-reflectcheckinresponses-1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-reflectcheckinresponses-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-reflectcheckinresponses-1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -108,7 +112,7 @@ The following example shows the default response that includes Reflect check-in 
   "@odata.type": "Collection(microsoft.graph.reflectCheckInResponse)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -157,7 +161,7 @@ The following example shows a request.
   "name": "get_reflectCheckinResponses_2"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/reports/reflectCheckInResponses?$filter=submitDateTime gt 2025-06-11T00:00:00.000Z and submitDateTime lt 2025-06-12T00:00:00Z
 ```
 
@@ -181,6 +185,10 @@ GET https://graph.microsoft.com/v1.0/education/reports/reflectCheckInResponses?$
 [!INCLUDE [sample-code](../includes/snippets/php/get-reflectcheckinresponses-2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-reflectcheckinresponses-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-reflectcheckinresponses-2-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -198,7 +206,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.reflectCheckInResponse)",
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

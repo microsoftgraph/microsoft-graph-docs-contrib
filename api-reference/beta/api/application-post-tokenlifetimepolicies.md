@@ -2,7 +2,7 @@
 title: "Assign tokenLifetimePolicy"
 description: "Assign a tokenLifetimePolicy to an application or service principal."
 ms.localizationpriority: medium
-author: "sureshja"
+author: "aricrowe57"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ms.date: 07/26/2024

@@ -52,7 +52,7 @@ If the label is not found, doesn't have admin-defined protection, or the user do
 
 ## Examples
 
-Request to get the rights for a specific sensitivity label for the user `4e4234dd-377b-42a3-935b-0e42f138fa23`
+Request to get the rights for a specific sensitivity label `4e4234dd-377b-42a3-935b-0e42f138fa23` for the user.
 
 ### Request
 
@@ -86,6 +86,10 @@ Client-Request-Id: 7c9b1b4c-5b5a-4e3e-9f1b-2d9b0b4a9a0a
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-rights-for-sensitivitylabel-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-rights-for-sensitivitylabel-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

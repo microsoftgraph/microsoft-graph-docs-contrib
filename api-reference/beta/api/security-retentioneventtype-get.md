@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/labels/retentionLabels/{retentionLabelId}/eventType
 GET /security/triggerTypes/retentionEventTypes/{retentionEventTypeId}
 GET /security/triggers/retentionEvents/{retentionEventId}/retentionEventType
@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
   "name": "get_retentioneventtype"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/triggerTypes/retentionEventTypes/{retentionEventTypeId}
 ```
 
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/beta/security/triggerTypes/retentionEventTypes/{
   "@odata.type": "microsoft.graph.security.retentionEventType"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

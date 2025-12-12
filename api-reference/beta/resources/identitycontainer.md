@@ -17,9 +17,8 @@ Namespace: microsoft.graph
 Represents the entry point to different features in [External Identities](/azure/active-directory/external-identities/) for both Microsoft Entra ID and Azure AD B2C tenants.
 
 ## Methods
-
 None.
-
+ 
 ## Properties
 
 None.
@@ -38,6 +37,7 @@ None.
 |userFlowAttributes|[identityUserFlowAttribute](identityUserFlowAttribute.md) collection| Represents entry point for identity userflow attributes.|
 |conditionalAccess|[conditionalAccessRoot](conditionalAccessRoot.md) collection| the entry point for the Conditional Access (CA) object model.|
 |continuousAccessEvaluationPolicy|[continuousAccessEvaluationPolicy](continuousAccessEvaluationPolicy.md)| Represents entry point for continuous access evaluation policy.|
+|riskPrevention|[riskPreventionContainer](../resources/riskpreventioncontainer.md)|Represents the entry point for fraud and risk prevention configurations in Microsoft Entra External ID, including third-party provider settings.|
 
 ## JSON representation
 

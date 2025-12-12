@@ -42,6 +42,11 @@ var requestBody = new CloudPcProvisioningPolicy
 		Locale = "en-US",
 	},
 	ProvisioningType = CloudPcProvisioningType.Dedicated,
+	UserSettingsPersistenceConfiguration = new CloudPcUserSettingsPersistenceConfiguration
+	{
+		UserSettingsPersistenceEnabled = true,
+		UserSettingsPersistenceStorageSizeCategory = CloudPcUserSettingsPersistenceStorageSizeCategory.FourGB,
+	},
 	AdditionalData = new Dictionary<string, object>
 	{
 		{

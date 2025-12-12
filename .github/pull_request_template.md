@@ -1,7 +1,7 @@
 > [!IMPORTANT]
 > Required for API changes:
-> - Link to API.md file: *ADD LINK HERE*
-> - Link to **PR** for public-facing schema changes (schema-Prod-beta/v1.0.csdl) **VALID PRs DON'T INCLUDE API.MD or permissions JSON FILES**:  *ADD LINK HERE*
+> - [] Link to API.md file: *ADD LINK HERE*
+> - [] Link to **PR** for public-facing schema changes (schema-Prod-beta/v1.0.csdl):  *ADD LINK HERE*
 
 ---
 Add other supporting information, such as a description of the PR changes:

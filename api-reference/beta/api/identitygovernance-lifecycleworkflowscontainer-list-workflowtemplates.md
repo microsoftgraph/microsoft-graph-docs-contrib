@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/lifecycleWorkflows/workflowTemplates
 ```
 
@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_list_workflowtemplate"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflowTemplates
 ```
 
@@ -112,7 +112,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.identityGovernance.workflowTemplate)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -678,7 +678,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_list_workflowtemplate_filter_category"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflowTemplates?$filter=category eq 'leaver'
 ```
 
@@ -824,6 +824,68 @@ Content-Type: application/json
                             "value": ""
                         }
                     ]
+                }
+            ]
+        },
+           {
+            "category": "leaver",
+            "description": "Configure pre-offboarding tasks for inactive users",
+            "displayName": "Pre-Offboard inactive users",
+            "id": "f1a0b3d4-5c7e-4b8c-9f6d-0a1e2f3b4c5d",
+            "executionConditions": {
+                "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+                "scope": {
+                    "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+                    "rule": "userType eq 'Member' and accountEnabled eq true"
+                },
+                "trigger": {
+                    "@odata.type": "#microsoft.graph.identityGovernance.userInactivityTrigger",
+                    "inactivityPeriodInDays": 90
+                }
+            },
+            "tasks@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflowTemplates('f1a0b3d4-5c7e-4b8c-9f6d-0a1e2f3b4c5d')/tasks",
+            "tasks": [
+                {
+                    "category": "leaver",
+                    "continueOnError": false,
+                    "description": "Disable user account in the directory",
+                    "displayName": "Disable user account",
+                    "executionSequence": 1,
+                    "id": "a1b2c3d4-e5f6-7890-abcd-1234567890ab",
+                    "isEnabled": true,
+                    "taskDefinitionId": "1dfdfcc7-52fa-4c2e-bf3a-e3919cc12950",
+                    "arguments": []
+                }
+            ]
+        },
+        {
+            "category": "leaver",
+            "description": "Configure offboarding tasks for inactive users",
+            "displayName": "Offboard inactive users",
+            "id": "078e626d-10ff-495f-87ad-bd6eeab69ec9",
+            "executionConditions": {
+                "@odata.type": "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+                "scope": {
+                    "@odata.type": "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+                    "rule": "userType eq 'Member' and accountEnabled eq false"
+                },
+                "trigger": {
+                    "@odata.type": "#microsoft.graph.identityGovernance.userInactivityTrigger",
+                    "inactivityPeriodInDays": 120
+                }
+            },
+            "tasks@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflowTemplates('078e626d-10ff-495f-87ad-bd6eeab69ec9')/tasks",
+            "tasks": [
+                {
+                    "category": "leaver",
+                    "continueOnError": false,
+                    "description": "Delete user account in the directory",
+                    "displayName": "Delete user account",
+                    "executionSequence": 2,
+                    "id": "b2c3d4e5-f678-90ab-cdef-1234567890cd",
+                    "isEnabled": true,
+                    "taskDefinitionId": "8d18588d-9ad3-4c0f-99d0-ec215f0e3dff",
+                    "arguments": []
                 }
             ]
         },

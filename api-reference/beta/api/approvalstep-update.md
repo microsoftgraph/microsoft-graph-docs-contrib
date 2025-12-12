@@ -24,7 +24,11 @@ The following tables show the least privileged permission or permissions require
 
 ### Permissions required for calling this API for entitlement management
 
-<!-- { "blockType": "permissions", "name": "approvalstep_update" } -->
+<!-- { 
+  "blockType": "permissions", 
+  "name": "approvalstep_update", 
+  "requestUrls": ["PATCH /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{id}/steps/{id}"]
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/approvalstep-update-permissions.md)]
 
 [!INCLUDE [rbac-entitlement-end-user-apis-write](../includes/rbac-for-apis/rbac-entitlement-management-end-user-apis-write.md)]
@@ -33,12 +37,12 @@ The following tables show the least privileged permission or permissions require
 
 ### For PIM for Microsoft Entra roles
 
-<!-- { "blockType": "permissions", "name": "approvalstep_update_2" } -->
+<!-- { "blockType": "permissions", "name": "approvalstep_update_2", "requestUrls": ["PATCH /roleManagement/directory/roleAssignmentApprovals/{id}/steps/{id}"] } -->
 [!INCLUDE [permissions-table](../includes/permissions/approvalstep-update-2-permissions.md)]
 
 ### Permissions required for calling this API for PIM for Groups
 
-<!-- { "blockType": "permissions", "name": "approvalstep_update_3" } -->
+<!-- { "blockType": "permissions", "name": "approvalstep_update_3", "requestUrls": ["PATCH /identityGovernance/privilegedAccess/group/assignmentApprovals/{id}/steps/{id}"] } -->
 [!INCLUDE [permissions-table](../includes/permissions/approvalstep-update-3-permissions.md)]
 
 ## HTTP request
@@ -76,7 +80,7 @@ The following table shows the properties that are required for this method.
 
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-| reviewResult | String | Decision of the approver. Possible values are: `Approve`, `Deny`.|
+| reviewResult | String | Decision of the approver. The possible values are: `Approve`, `Deny`.|
 | justification | String | Justification related to the approver's decision. |
 
 

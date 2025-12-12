@@ -14,7 +14,7 @@ ms.date: 11/07/2024
 When you send a request to create a subscription to get change notifications through webhooks, the subscription service checks if the **notificationUrl** property in your subscription request is valid. The validation process works as follows:
 
 > [!NOTE]
-> If you're subscribing to [lifecycle notifications](/graph/webhooks-lifecycle) as well, the subscription service also validates the **lifecycleNotificationUrl**.
+> If you're subscribing to [lifecycle notifications](/graph/change-notifications-lifecycle-events) as well, the subscription service also validates the **lifecycleNotificationUrl**.
 
 1. When a subscription is requested, Microsoft Graph encodes a validation token and includes it in a POST request to the notification URL as follows.
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a connection object.
+Read the properties and relationships of a [connection](../resources/networkaccess-connection.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /networkAccess/logs/connections/{connectionId}
 ```
 
@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
   "name": "get_connection"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/networkAccess/logs/connections/6e3f9793-04a3-9473-f647-29adc069debb
 ```
 
@@ -108,7 +108,7 @@ GET https://graph.microsoft.com/beta/networkAccess/logs/connections/6e3f9793-04a
   "@odata.type": "microsoft.graph.networkaccess.connection"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

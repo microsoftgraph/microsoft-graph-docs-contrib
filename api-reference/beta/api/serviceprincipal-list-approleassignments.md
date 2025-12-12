@@ -4,7 +4,7 @@ description: "Retrieve the list of app role assignments granted to a service pri
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-applications"
-author: "sureshja"
+author: "eringreenlee"
 ms.date: 10/15/2024
 ---
 
@@ -29,8 +29,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "serviceprincipal_list_approleassignments" } -->
 [!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-list-approleassignments-permissions.md)]
-
-
 
 [!INCLUDE [rbac-approleassignments-apis-read](../includes/rbac-for-apis/rbac-approleassignments-apis-read.md)]
 

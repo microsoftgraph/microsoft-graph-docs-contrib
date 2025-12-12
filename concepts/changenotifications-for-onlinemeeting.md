@@ -15,7 +15,7 @@ Change notifications in Microsoft Graph enable you to subscribe to call started,
 
 A subscription has a maximum expiry period of three days. To persist the subscription for more than this period, a subscription renewal request must be made. For more information, see [Update subscription](/graph/api/subscription-update). Alternatively, a user can wait for the subscription to expire and create a new subscription with the same meeting resource.
 
-This resource supports notifications with resource data. For more information about setting up notifications with resource data, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data).
+This resource supports notifications with resource data. For more information about setting up notifications with resource data, see [Set up change notifications that include resource data](/graph/change-notifications-with-resource-data).
 
 > [!NOTE]
 > Effective June 30 2024, to get changes that occurred to an active meeting call, we recommend that you subscribe to [rich notifications](#rich-notifications).
@@ -26,7 +26,7 @@ This resource supports notifications with resource data. For more information ab
 |:--------------------|:---------------------------------------------------------|:-------------------|
 |Delegated (work or school account) | Not supported. | Not supported. |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All | beta |
+|Application | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All | beta, v1.0  |
 
 ## Subscribe to online meeting call events
 
@@ -48,7 +48,7 @@ Set `includeResourceData` to `true` and provide appropriate values for `encrypti
 ### Subscription to rich notifications payload sample
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions 
 Content-Type: application/json
 
 {
@@ -227,7 +227,7 @@ The following are the supported meeting events:
 
 ## Related content
 
-- [Microsoft Graph change notifications](/graph/webhooks)
+- [Microsoft Graph change notifications](/graph/change-notifications-overview)
 - [Microsoft Teams API overview](/graph/teams-concept-overview)
 - [Online meeting resource](/graph/api/resources/onlineMeeting)
 - [Meeting notification C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-meeting-notification/csharp)

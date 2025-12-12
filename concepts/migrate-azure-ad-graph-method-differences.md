@@ -22,7 +22,7 @@ Some Azure Active Directory (Azure AD) Graph actions have changed. If an action 
 | getAvailableExtensionProperties | beta&nbsp;-&nbsp;_Not available_ <br> v1.0&nbsp;-&nbsp;[directoryObjects/getAvailableExtensionProperties](/graph/api/directoryobject-getavailableextensionproperties) |  |
 | getObjectsByObjectId | beta&nbsp;-&nbsp;[directoryObjects/getByIds](/graph/api/directoryobject-getbyids?view=graph-rest-beta&preserve-view=true) <br> v1.0&nbsp;-&nbsp;[directoryObjects/getByIds](/graph/api/directoryobject-getbyids) | |
 | invalidateAllRefreshTokens | beta&nbsp;-&nbsp;[revokeSignInSessions](/graph/api/user-revokesigninsessions?view=graph-rest-beta&preserve-view=true) <br> v1.0&nbsp;-&nbsp;[revokeSignInSessions](/graph/api/user-revokesigninsessions) | |
-| isMemberOf | beta&nbsp;-&nbsp;_Not planned_ <br> v1.0&nbsp;-&nbsp;_Not planned_ | Use [checkMemberGroups](/graph/api/user-checkmembergroups) and [List memberOf](/graph/api/group-list-memberof) instead. |
+| isMemberOf | beta&nbsp;-&nbsp;_Not planned_ <br> v1.0&nbsp;-&nbsp;_Not planned_ | Use [checkMemberGroups](/graph/api/directoryobject-checkmembergroups) and [List memberOf](/graph/api/group-list-memberof) instead. |
 | restore | beta&nbsp;-&nbsp;[restore&nbsp;(selected directory objects)](/graph/api/directory-deleteditems-restore?view=graph-rest-beta&preserve-view=true)<br> v1.0&nbsp;-&nbsp;[restore selected directory objects)](/graph/api/directory-deleteditems-restore) | You can also view supported directory objects such as deleted applications, users, and groups and permanently delete them. |
 
 ## Next step

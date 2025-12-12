@@ -2,7 +2,7 @@
 title: "servicePrincipal: getPasswordSingleSignOnCredentials"
 description: "Get a list of single sign-on credentials using a password for a user or group."
 ms.localizationpriority: medium
-author: "sureshja"
+author: "Jackson-Woods"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ms.date: 10/15/2024

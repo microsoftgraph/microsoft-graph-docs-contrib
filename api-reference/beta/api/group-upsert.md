@@ -24,6 +24,8 @@ You can create or update the following types of group:
 
 > **Note**: To create a [team](../resources/team.md), first create a group, and then add a team to it. For more information, see [Create team](../api/team-put-teams.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -42,7 +44,7 @@ In order for an app with Group.Create permission to create a group with owners o
 
 <!-- { "blockType": "ignored" } -->
 
-``` http
+```http
 PATCH /groups(uniqueName='uniqueName')
 ```
 
@@ -415,7 +417,7 @@ The following example shows the response. The value of the **preferredDataLocati
   "blockType": "response"
 } -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

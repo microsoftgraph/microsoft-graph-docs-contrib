@@ -2,7 +2,7 @@
 title: "Assign appliesTo"
 description: "Assign an appManagementPolicy to an application or service principal object."
 ms.localizationpriority: medium
-author: "madansr7"
+author: "aricrowe57"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ms.date: 07/30/2024
@@ -127,7 +127,7 @@ The following example shows a request to assign an appManagementPolicy to a serv
   "name": "assign_appliesTo_ex2"
 }-->
 
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/appManagementPolicies/$ref
 
 {

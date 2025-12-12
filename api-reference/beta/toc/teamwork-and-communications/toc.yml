@@ -6,6 +6,20 @@ items:
   href: ../../resources/teams-api-overview.md
 - name: Administration (preview)
   items:
+  - name: Number assignment
+    items:
+    - name: Number assignment
+      href: ../../resources/teamsadministration-numberassignment.md
+    - name: List
+      href: ../../api/teamsadministration-telephonenumbermanagementroot-list-numberassignments.md
+    - name: Get
+      href: ../../api/teamsadministration-numberassignment-get.md
+    - name: assignNumber
+      href: ../../api/teamsadministration-numberassignment-assignnumber.md
+    - name: unassignNumber
+      href: ../../api/teamsadministration-numberassignment-unassignnumber.md
+    - name: updateNumber
+      href: ../../api/teamsadministration-numberassignment-updatenumber.md
   - name: Teams user configuration
     items:
     - name: Teams user configuration
@@ -14,6 +28,46 @@ items:
       href: ../../api/teamsadministration-teamsadminroot-list-userconfigurations.md
     - name: Get
       href: ../../api/teamsadministration-teamsuserconfiguration-get.md
+  - name: Telephone number long running operation
+    items:
+    - name: Telephone number long running operation
+      href: ../../resources/teamsadministration-telephonenumberlongrunningoperation.md
+    - name: Get
+      href: ../../api/teamsadministration-telephonenumberlongrunningoperation-get.md
+  - name: Telephone number management root
+    items:
+    - name: Telephone number management root
+      href: ../../resources/teamsadministration-telephonenumbermanagementroot.md
+    - name: List number assignments
+      href: ../../api/teamsadministration-telephonenumbermanagementroot-list-numberassignments.md
+  - name: Teams policy assignment
+    items:
+    - name: Teams policy assignment
+      href: ../../resources/teamsadministration-teamspolicyassignment.md
+    - name: Get policy ID
+      href: ../../api/teamsadministration-teamspolicyassignment-getpolicyid.md
+  - name: Teams policy user assignment
+    items:
+    - name: Teams policy user assignment
+      href: ../../resources/teamsadministration-teamspolicyuserassignment.md
+    - name: Assign
+      href: ../../api/teamsadministration-teamspolicyuserassignment-assign.md
+    - name: Unassign
+      href: ../../api/teamsadministration-teamspolicyuserassignment-unassign.md
+  - name: Teams user configuration
+    items:
+    - name: Teams user configuration
+      href: ../../resources/teamsadministration-teamsuserconfiguration.md
+    - name: List
+      href: ../../api/teamsadministration-teamsadminroot-list-userconfigurations.md
+    - name: Get
+      href: ../../api/teamsadministration-teamsuserconfiguration-get.md
+  - name: Telephone number long running operation
+    items:
+    - name: Telephone number long running operation
+      href: ../../resources/teamsadministration-telephonenumberlongrunningoperation.md
+    - name: Get
+      href: ../../api/teamsadministration-telephonenumberlongrunningoperation-get.md
   - name: Complex types
     items:
     - name: Assigned telephone number
@@ -22,30 +76,10 @@ items:
       href: ../../resources/teamsadministration-effectivepolicyassignment.md
     - name: Policy assignment
       href: ../../resources/teamsadministration-policyassignment.md
-- name: AI interactions
-  items:
-  - name: AI interaction history
-    items:
-    - name: AI interaction history
-      href: ../../resources/aiinteractionhistory.md
-    - name: Get all enterprise interactions
-      href: ../../api/aiinteractionhistory-getallenterpriseinteractions.md
-  - name: Complex types
-    items:
-    - name: AI interaction
-      href: ../../resources/aiinteraction.md
-    - name: AI interaction attachment
-      href: ../../resources/aiinteractionattachment.md
-    - name: AI interaction context
-      href: ../../resources/aiinteractioncontext.md
-    - name: AI interaction link
-      href: ../../resources/aiinteractionlink.md
-    - name: AI interaction mention
-      href: ../../resources/aiinteractionmention.md
-    - name: AI interaction mentioned identity set
-      href: ../../resources/aiinteractionmentionedidentityset.md
-    - name: AI user
-      href: ../../resources/aiuser.md
+    - name: Policy identifier detail
+      href: ../../resources/teamsadministration-policyidentifierdetail.md
+    - name: Telephone number long running operation details
+      href: ../../resources/teamsadministration-telephonenumberlongrunningoperationdetails.md
 - name: Approvals
   items:
   - name: Approval item
@@ -234,6 +268,24 @@ items:
       href: ../../api/presence-clearuserpreferredpresence.md
     - name: Set user status message
       href: ../../api/presence-setstatusmessage.md
+    - name: Set automatic location
+      href: ../../api/presence-setautomaticlocation.md
+    - name: Set manual location
+      href: ../../api/presence-setmanuallocation.md
+    - name: Clear automatic location
+      href: ../../api/presence-clearautomaticlocation.md
+    - name: Clear location
+      href: ../../api/presence-clearlocation.md
+  - name: Ad hoc call
+    items:
+    - name: Ad hoc call (preview)
+      items:
+      - name: Ad hoc call (preview)
+        href: ../../resources/adhoccall.md
+      - name: getAllRecordings
+        href: ../../api/adhoccall-getallrecordings.md
+      - name: getAllTranscripts
+        href: ../../api/adhoccall-getalltranscripts.md
   - name: Calls
     items:
     - name: Call
@@ -390,6 +442,10 @@ items:
       href: ../../resources/callevent.md
     - name: Emergency call event
       href: ../../resources/emergencycallevent.md
+    - name: Complex types
+      items:
+      - name: Emergency caller info
+        href: ../../resources/emergencycallerinfo.md
   - name: Call records
     items:
     - name: Overview
@@ -454,24 +510,6 @@ items:
         href: ../../resources/callrecords-smslogrow.md
       - name: Get SMS log
         href: ../../api/callrecords-callrecord-getsmslog.md
-  - name: Copilot settings
-    items:
-    - name: Copilot admin limited mode
-      items:
-      - name: Copilot admin limited mode
-        href: ../../resources/copilotadminlimitedmode.md
-      - name: Get
-        href: ../../api/copilotadminlimitedmode-get.md
-      - name: Update
-        href: ../../api/copilotadminlimitedmode-update.md
-    - name: Complex types
-      items:
-      - name: Copilot admin
-        href: ../../resources/copilotadmin.md
-      - name: Copilot admin setting
-        href: ../../resources/copilotadminsetting.md
-      - name: Copilot root
-        href: ../../resources/copilotroot.md
   - name: Online meetings
     items:
     - name: Meeting attendance report
@@ -502,8 +540,6 @@ items:
         href: ../../api/onlinemeeting-delete.md
       - name: Create or get
         href: ../../api/onlinemeeting-createorget.md
-      - name: List AI insights
-        href: ../../api/onlinemeeting-list-aiinsights.md
       - name: List recordings
         href: ../../api/onlinemeeting-list-recordings.md
       - name: List transcripts
@@ -538,14 +574,6 @@ items:
         href: ../../api/meetingregistration-update.md
       - name: Delete
         href: ../../api/meetingregistration-delete.md
-    - name: Call AI insight
-      items:
-      - name: Call AI insight
-        href: ../../resources/callaiinsight.md
-      - name: List
-        href: ../../api/onlinemeeting-list-aiinsights.md
-      - name: Get
-        href: ../../api/callaiinsight-get.md
     - name: Call recording
       items:
       - name: Call recording
@@ -558,6 +586,8 @@ items:
         href: ../../api/callrecording-delta.md
       - name: List recordings by organizer
         href: ../../api/onlinemeeting-getallrecordings.md
+      - name: Get recordings initiated by a specified user
+        href: ../../api/adhoccall-getallrecordings.md
     - name: Call transcript
       items:
       - name: Call transcript
@@ -570,6 +600,8 @@ items:
         href: ../../api/calltranscript-delta.md
       - name: List transcripts by organizer
         href: ../../api/onlinemeeting-getalltranscripts.md
+      - name: Get transcripts initiated by a specified user
+        href: ../../api/adhoccall-getalltranscripts.md
     - name: Virtual appointment
       items:
       - name: Get virtual appointment join link
@@ -580,20 +612,8 @@ items:
         href: ../../api/virtualappointment-sendvirtualappointmentsms.md
     - name: Complex types
       items:
-      - name: Action item
-        href: ../../resources/actionitem.md
-      - name: AI online meeting
-        href: ../../resources/aionlinemeeting.md
-      - name: Call AI insight viewpoint
-        href: ../../resources/callaiinsightviewpoint.md
       - name: Identity set
         href: ../../resources/identityset.md
-      - name: Meeting note
-        href: ../../resources/meetingnote.md
-      - name: Meeting note subpoint
-        href: ../../resources/meetingnotesubpoint.md
-      - name: Mention event
-        href: ../../resources/mentionevent.md
   - name: Virtual events
     items:
     - name: Virtual event presenter
@@ -696,6 +716,12 @@ items:
       items:
       - name: Virtual event external information
         href: ../../resources/virtualeventexternalinformation.md
+  - name: Complex types
+    items:
+    - name: Out of office settings
+      href: ../../resources/outofofficesettings.md
+    - name: User work location
+      href: ../../resources/userworklocation.md
 - name: Devices (preview)
   items:
   - name: Teamwork device
@@ -865,6 +891,8 @@ items:
       href: ../../api/channel-list-members.md
     - name: List all members
       href: ../../api/channel-list-allmembers.md
+    - name: Get member from channel allMembers collection
+      href: ../../api/channel-get-allmembers.md
     - name: Add channel member
       href: ../../api/channel-post-members.md
     - name: Get channel member

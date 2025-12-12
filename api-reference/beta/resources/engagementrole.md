@@ -21,14 +21,20 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/employeeexperience-list-roles.md)|[engagementRole](../resources/engagementrole.md) collection|Get the static list of the assignable roles in Viva Engage.|
-|[List](../api/employeeexperienceuser-list-assignedroles.md)|[engagementRole](../resources/engagementrole.md)|Get a list of  Viva Engage roles assigned to a user or a signed-in user.|
+|[List](../api/employeeexperience-list-roles.md)|[engagementRole](../resources/engagementrole.md) collection|Get a list of all the [roles](../resources/engagementrole.md) that can be assigned in Viva Engage.|
+|[List members](../api/engagementrole-list-members.md)|[engagementRoleMember](../resources/engagementrolemember.md) collection|Get a list of users with assigned [roles](../resources/engagementrole.md) in Viva Engage.|
+|[List assigned roles](../api/employeeexperienceuser-list-assignedroles.md)|[engagementRole](../resources/engagementrole.md)|Get a list of all the [roles](../resources/engagementrole.md) assigned to a user in Viva Engage.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The name of the role.|
 |id|String|The unique identifier of the role. Read-only. Inherits from [entity](../resources/entity.md)|
+
+## Relationships
+| Relationship | Type | Description |
+|:---|:---|:---|
+|members|[engagementRoleMember](../resources/engagementrolemember.md) collection|Users that have this role assigned.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

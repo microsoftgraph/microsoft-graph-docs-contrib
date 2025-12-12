@@ -2,7 +2,7 @@
 title: "Get appManagementPolicy"
 description: "Get an application management policy."
 ms.localizationpriority: medium
-author: "madansr7"
+author: "aricrowe57"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ms.date: 08/09/2024

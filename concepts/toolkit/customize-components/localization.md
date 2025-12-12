@@ -9,6 +9,9 @@ ms.topic: concept-article
 
 # Localizing the Microsoft Graph Toolkit components
 
+> [!CAUTION]
+> The Microsoft Graph Toolkit is deprecated. The retirement period begins September 1, 2025, with full retirement planned for August 28, 2026. Developers should migrate to using the Microsoft Graph SDKs or other supported Microsoft Graph tools for building web experiences. For more information, see the [deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-toolkit-retirement/).
+
 Localization is an important aspect of application development to support users with various language requirements globally.
 
 You can localize the Microsoft Graph Toolkit components to ensure that the UI reflects the target language.

@@ -21,23 +21,23 @@ In [PIM for Groups](../resources/privilegedidentitymanagement-for-groups-api-ove
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### For entitlement management
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | EntitlementManagement.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+### For Entitlement Management
+<!-- { 
+  "blockType": "permissions", 
+  "name": "approval_filterbycurrentuser", 
+  "requestUrls": ["GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/filterByCurrentUser(on='approver')"]
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/approval-filterbycurrentuser-permissions.md)]
 
 ### For PIM for Groups
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | PrivilegedAssignmentSchedule.Read.AzureADGroup, PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+<!-- { 
+  "blockType": "permissions", 
+  "name": "approval_filterbycurrentuser_2", 
+  "requestUrls": ["GET /identityGovernance/privilegedAccess/group/assignmentApprovals/filterByCurrentUser(on='approver')"]
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/approval-filterbycurrentuser-2-permissions.md)]
 
 ## HTTP request
 
@@ -60,7 +60,7 @@ GET /identityGovernance/privilegedAccess/group/assignmentApprovals/filterByCurre
 ```
 
 ## Function parameters
-This method supports the OData query parameters for paging through a large result set. For general information, see [OData query parameters](/graph/query-parameters).
+In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|

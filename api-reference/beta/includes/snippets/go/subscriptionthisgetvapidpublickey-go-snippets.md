@@ -16,7 +16,7 @@ import (
 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
-subscriptions, err := graphClient.Subscriptions().BySubscriptionId("subscription-id").Get(context.Background(), nil)
+getVapidPublicKey, err := graphClient.Subscriptions().GetVapidPublicKey().GetAsGetVapidPublicKeyGetResponse(context.Background(), nil)
 
 
 ```

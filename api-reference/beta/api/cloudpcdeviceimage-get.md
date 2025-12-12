@@ -120,7 +120,7 @@ Content-Type: application/json
     "expirationDate": "2024-06-11",
     "osBuildNumber": "21H2",
     "osStatus": "supported",
-    "operatingSystem": "Windows 10 Enterprise",
+    "operatingSystem": "Windows 11 Enterprise",
     "version": "0.0.1",
     "sourceImageResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/images/exampleImageForDev",
     "lastModifiedDateTime": "2023-11-03T07:03:44.97Z",

@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /me/profile/awards/{id}
 GET /users/{id | userPrincipalName}/profile/awards/{id}
 ```
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and an [personAward]
   "name": "get_personAward"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile/awards/{id}
 ```
 
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/beta/me/profile/awards/{id}
   "@odata.type": "microsoft.graph.personAward"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

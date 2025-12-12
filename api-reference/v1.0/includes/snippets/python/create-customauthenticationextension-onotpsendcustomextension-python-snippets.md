@@ -6,12 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
-from msgraph.generated.models.custom_authentication_extension import CustomAuthenticationExtension
+from msgraph.generated.models.on_otp_send_custom_extension import OnOtpSendCustomExtension
 from msgraph.generated.models.azure_ad_token_authentication import AzureAdTokenAuthentication
 from msgraph.generated.models.custom_extension_client_configuration import CustomExtensionClientConfiguration
 from msgraph.generated.models.http_request_endpoint import HttpRequestEndpoint
+from msgraph.generated.models.custom_extension_behavior_on_error import CustomExtensionBehaviorOnError
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
-request_body = CustomAuthenticationExtension(
+request_body = OnOtpSendCustomExtension(
 	odata_type = "#microsoft.graph.onOtpSendCustomExtension",
 	authentication_configuration = AzureAdTokenAuthentication(
 		odata_type = "#microsoft.graph.azureAdTokenAuthentication",
@@ -27,11 +28,9 @@ request_body = CustomAuthenticationExtension(
 		odata_type = "#microsoft.graph.httpRequestEndpoint",
 		target_url = "https://onotpsendcustomextension.b2c.expert/api/OnOTPCodeSendToTeamsDemo",
 	),
-	additional_data = {
-			"behavior_on_error" : {
-					"@odata_type" : "microsoft.graph.customExtensionBehaviorOnError",
-			},
-	}
+	behavior_on_error = CustomExtensionBehaviorOnError(
+		odata_type = "microsoft.graph.customExtensionBehaviorOnError",
+	),
 )
 
 result = await graph_client.identity.custom_authentication_extensions.post(request_body)

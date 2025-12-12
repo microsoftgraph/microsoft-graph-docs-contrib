@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /security/incidentTasks/{incidentTaskId}
 ```
 
@@ -67,7 +67,7 @@ If successful, this method returns a `200 OK` response code and the updated [sec
   "name": "update_incidenttask"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/security/incidentTasks/213213
 Content-Type: application/json
 
@@ -96,6 +96,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/update-incidenttask-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-incidenttask-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/update-incidenttask-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -110,7 +114,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.security.incidentTask"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

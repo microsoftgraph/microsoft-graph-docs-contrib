@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 Assign an external authentication method to another user. This API doesn't support self-service operations.
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 POST /users/{usersId}/authentication/externalAuthenticationMethods
 ```
 
@@ -70,7 +70,7 @@ The following example shows a request.
   "name": "create_externalauthenticationmethod_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/users/{id}/authentication/externalAuthenticationMethods
 Content-Type: application/json
 
@@ -101,12 +101,15 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-externalauthenticationmethod-from--php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-externalauthenticationmethod-from--powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/create-externalauthenticationmethod-from--python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -118,7 +121,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.externalAuthenticationMethod"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

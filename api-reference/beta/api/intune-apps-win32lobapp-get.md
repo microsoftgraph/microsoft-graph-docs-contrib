@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
@@ -57,16 +57,16 @@ If successful, this method returns a `200 OK` response code and [win32LobApp](..
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3973
+Content-Length: 4257
 
 {
   "value": {
@@ -184,7 +184,15 @@ Content-Length: 3973
     "setupFilePath": "Setup File Path value",
     "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value",
     "displayVersion": "Display Version value",
-    "allowAvailableUninstall": true
+    "allowAvailableUninstall": true,
+    "activeInstallScript": {
+      "@odata.type": "microsoft.graph.mobileAppScriptReference",
+      "targetId": "Target Id value"
+    },
+    "activeUninstallScript": {
+      "@odata.type": "microsoft.graph.mobileAppScriptReference",
+      "targetId": "Target Id value"
+    }
   }
 }
 ```

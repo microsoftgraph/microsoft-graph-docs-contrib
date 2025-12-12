@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/incidentTasks
 ```
 
@@ -74,7 +74,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "get_list_incidenttasks"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/incidentTasks
 ```
 
@@ -98,6 +98,10 @@ GET https://graph.microsoft.com/beta/security/incidentTasks
 [!INCLUDE [sample-code](../includes/snippets/php/get-list-incidenttasks-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-list-incidenttasks-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-list-incidenttasks-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -113,7 +117,7 @@ GET https://graph.microsoft.com/beta/security/incidentTasks
   "@odata.type": "collection(microsoft.graph.security.incidentTask)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -154,8 +158,6 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "getlistincidenttasks: Unable to locate the corresponding response for this method. Missing or incorrect code block annotation."
-  ]
+  "suppressions": []
 }
 -->

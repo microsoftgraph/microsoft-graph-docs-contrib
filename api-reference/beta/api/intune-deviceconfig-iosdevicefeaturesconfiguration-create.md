@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceManagement/deviceConfigurations
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
@@ -73,7 +73,7 @@ The following table shows the properties that are required when you create the i
 |homeScreenGridHeight|Int32|Gets or sets the number of rows to render when configuring iOS home screen layout settings. If this value is configured, homeScreenGridWidth must be configured as well.|
 |notificationSettings|[iosNotificationSettings](../resources/intune-deviceconfig-iosnotificationsettings.md) collection|Notification settings for each bundle id. Applicable to devices in supervised mode only (iOS 9.3 and later). This collection can contain a maximum of 500 elements.|
 |singleSignOnSettings|[iosSingleSignOnSettings](../resources/intune-deviceconfig-iossinglesignonsettings.md)|The Kerberos login settings that enable apps on receiving devices to authenticate smoothly.|
-|wallpaperDisplayLocation|[iosWallpaperDisplayLocation](../resources/intune-deviceconfig-ioswallpaperdisplaylocation.md)|A wallpaper display location specifier. Possible values are: `notConfigured`, `lockScreen`, `homeScreen`, `lockAndHomeScreens`.|
+|wallpaperDisplayLocation|[iosWallpaperDisplayLocation](../resources/intune-deviceconfig-ioswallpaperdisplaylocation.md)|A wallpaper display location specifier. The possible values are: `notConfigured`, `lockScreen`, `homeScreen`, `lockAndHomeScreens`.|
 |wallpaperImage|[mimeContent](../resources/intune-shared-mimecontent.md)|A wallpaper image must be in either PNG or JPEG format. It requires a supervised device with iOS 8 or later version.|
 |singleSignOnExtension|[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)|Gets or sets a single sign-on extension profile. Deprecated: use IOSSingleSignOnExtension instead.|
 |iosSingleSignOnExtension|[iosSingleSignOnExtension](../resources/intune-deviceconfig-iossinglesignonextension.md)|Gets or sets a single sign-on extension profile.|
@@ -87,10 +87,10 @@ If successful, this method returns a `201 Created` response code and a [iosDevic
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 7083
+Content-length: 5427
 
 {
   "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
@@ -240,78 +240,42 @@ Content-length: 7083
     "value": "dmFsdWU="
   },
   "singleSignOnExtension": {
-    "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
-    "realm": "Realm value",
-    "domains": [
-      "Domains value"
+    "@odata.type": "microsoft.graph.iosRedirectSingleSignOnExtension",
+    "extensionIdentifier": "Extension Identifier value",
+    "teamIdentifier": "Team Identifier value",
+    "configurations": [
+      {
+        "@odata.type": "microsoft.graph.keyTypedValuePair",
+        "key": "Key value"
+      }
     ],
-    "blockAutomaticLogin": true,
-    "cacheName": "Cache Name value",
-    "credentialBundleIdAccessControlList": [
-      "Credential Bundle Id Access Control List value"
-    ],
-    "domainRealms": [
-      "Domain Realms value"
-    ],
-    "isDefaultRealm": true,
-    "passwordBlockModification": true,
-    "passwordExpirationDays": 6,
-    "passwordExpirationNotificationDays": 2,
-    "userPrincipalName": "User Principal Name value",
-    "passwordRequireActiveDirectoryComplexity": true,
-    "passwordPreviousPasswordBlockCount": 2,
-    "passwordMinimumLength": 5,
-    "passwordMinimumAgeDays": 6,
-    "passwordRequirementsDescription": "Password Requirements Description value",
-    "requireUserPresence": true,
-    "activeDirectorySiteCode": "Active Directory Site Code value",
-    "passwordEnableLocalSync": true,
-    "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
-    "signInHelpText": "Sign In Help Text value",
-    "managedAppsInBundleIdACLIncluded": true
+    "urlPrefixes": [
+      "Url Prefixes value"
+    ]
   },
   "iosSingleSignOnExtension": {
-    "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
-    "realm": "Realm value",
-    "domains": [
-      "Domains value"
+    "@odata.type": "microsoft.graph.iosRedirectSingleSignOnExtension",
+    "extensionIdentifier": "Extension Identifier value",
+    "teamIdentifier": "Team Identifier value",
+    "configurations": [
+      {
+        "@odata.type": "microsoft.graph.keyTypedValuePair",
+        "key": "Key value"
+      }
     ],
-    "blockAutomaticLogin": true,
-    "cacheName": "Cache Name value",
-    "credentialBundleIdAccessControlList": [
-      "Credential Bundle Id Access Control List value"
-    ],
-    "domainRealms": [
-      "Domain Realms value"
-    ],
-    "isDefaultRealm": true,
-    "passwordBlockModification": true,
-    "passwordExpirationDays": 6,
-    "passwordExpirationNotificationDays": 2,
-    "userPrincipalName": "User Principal Name value",
-    "passwordRequireActiveDirectoryComplexity": true,
-    "passwordPreviousPasswordBlockCount": 2,
-    "passwordMinimumLength": 5,
-    "passwordMinimumAgeDays": 6,
-    "passwordRequirementsDescription": "Password Requirements Description value",
-    "requireUserPresence": true,
-    "activeDirectorySiteCode": "Active Directory Site Code value",
-    "passwordEnableLocalSync": true,
-    "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
-    "signInHelpText": "Sign In Help Text value",
-    "managedAppsInBundleIdACLIncluded": true
+    "urlPrefixes": [
+      "Url Prefixes value"
+    ]
   }
 }
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 7255
+Content-Length: 5599
 
 {
   "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
@@ -464,68 +428,32 @@ Content-Length: 7255
     "value": "dmFsdWU="
   },
   "singleSignOnExtension": {
-    "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
-    "realm": "Realm value",
-    "domains": [
-      "Domains value"
+    "@odata.type": "microsoft.graph.iosRedirectSingleSignOnExtension",
+    "extensionIdentifier": "Extension Identifier value",
+    "teamIdentifier": "Team Identifier value",
+    "configurations": [
+      {
+        "@odata.type": "microsoft.graph.keyTypedValuePair",
+        "key": "Key value"
+      }
     ],
-    "blockAutomaticLogin": true,
-    "cacheName": "Cache Name value",
-    "credentialBundleIdAccessControlList": [
-      "Credential Bundle Id Access Control List value"
-    ],
-    "domainRealms": [
-      "Domain Realms value"
-    ],
-    "isDefaultRealm": true,
-    "passwordBlockModification": true,
-    "passwordExpirationDays": 6,
-    "passwordExpirationNotificationDays": 2,
-    "userPrincipalName": "User Principal Name value",
-    "passwordRequireActiveDirectoryComplexity": true,
-    "passwordPreviousPasswordBlockCount": 2,
-    "passwordMinimumLength": 5,
-    "passwordMinimumAgeDays": 6,
-    "passwordRequirementsDescription": "Password Requirements Description value",
-    "requireUserPresence": true,
-    "activeDirectorySiteCode": "Active Directory Site Code value",
-    "passwordEnableLocalSync": true,
-    "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
-    "signInHelpText": "Sign In Help Text value",
-    "managedAppsInBundleIdACLIncluded": true
+    "urlPrefixes": [
+      "Url Prefixes value"
+    ]
   },
   "iosSingleSignOnExtension": {
-    "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
-    "realm": "Realm value",
-    "domains": [
-      "Domains value"
+    "@odata.type": "microsoft.graph.iosRedirectSingleSignOnExtension",
+    "extensionIdentifier": "Extension Identifier value",
+    "teamIdentifier": "Team Identifier value",
+    "configurations": [
+      {
+        "@odata.type": "microsoft.graph.keyTypedValuePair",
+        "key": "Key value"
+      }
     ],
-    "blockAutomaticLogin": true,
-    "cacheName": "Cache Name value",
-    "credentialBundleIdAccessControlList": [
-      "Credential Bundle Id Access Control List value"
-    ],
-    "domainRealms": [
-      "Domain Realms value"
-    ],
-    "isDefaultRealm": true,
-    "passwordBlockModification": true,
-    "passwordExpirationDays": 6,
-    "passwordExpirationNotificationDays": 2,
-    "userPrincipalName": "User Principal Name value",
-    "passwordRequireActiveDirectoryComplexity": true,
-    "passwordPreviousPasswordBlockCount": 2,
-    "passwordMinimumLength": 5,
-    "passwordMinimumAgeDays": 6,
-    "passwordRequirementsDescription": "Password Requirements Description value",
-    "requireUserPresence": true,
-    "activeDirectorySiteCode": "Active Directory Site Code value",
-    "passwordEnableLocalSync": true,
-    "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
-    "signInHelpText": "Sign In Help Text value",
-    "managedAppsInBundleIdACLIncluded": true
+    "urlPrefixes": [
+      "Url Prefixes value"
+    ]
   }
 }
 ```

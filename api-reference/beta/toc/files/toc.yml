@@ -26,6 +26,10 @@ items:
     href: ../../api/driveitem-search.md
   - name: Get special folder
     href: ../../api/drive-get-specialfolder.md
+  - name: Recent (deprecated)
+    href: ../../api/drive-recent.md
+  - name: Shared with me (deprecated)
+    href: ../../api/drive-sharedwithme.md
 - name: Drive item
   items:
   - name: Drive item
@@ -52,6 +56,8 @@ items:
     href: ../../api/driveitem-get-content-format.md
   - name: Delete item
     href: ../../api/driveitem-delete.md
+  - name: Restore item
+    href: ../../api/driveitem-restore.md
   - name: Permanently delete item
     href: ../../api/driveitem-permanentdelete.md
   - name: Move item
@@ -112,6 +118,18 @@ items:
       href: ../../api/opentypeextension-post-opentypeextension.md
     - name: Get open extension
       href: ../../api/opentypeextension-get.md
+- name: Drive item version
+  items:
+  - name: Drive item version
+    href: ../../resources/driveitemversion.md
+  - name: List
+    href: ../../api/driveitem-list-versions.md
+  - name: Get
+    href: ../../api/driveitemversion-get.md
+  - name: Download version
+    href: ../../api/driveitemversion-get-contents.md
+  - name: Restore version
+    href: ../../api/driveitemversion-restoreversion.md
 - name: Bundle
   items:
   - name: Bundle
@@ -183,7 +201,7 @@ items:
   - name: Update recycle bin settings
     href: ../../api/filestoragecontainer-update-recyclebinsettings.md
   - name: Restore recycle bin items
-    href: ../../api/recyclebinitem-restore.md
+    href: ../../api/filestoragecontainer-restore-recyclebinitem.md
   - name: Delete recycle bin items
     href: ../../api/recyclebinitem-delete.md
   - name: List recycle bin items
@@ -192,6 +210,10 @@ items:
     href: ../../api/filestoragecontainer-lock.md
   - name: Unlock
     href: ../../api/filestoragecontainer-unlock.md
+  - name: Create migration job
+    href: ../../api/filestoragecontainer-post-migrationjobs.md
+  - name: Provision migration containers
+    href: ../../api/filestoragecontainer-provisionmigrationcontainers.md
 - name: File storage container type
   items:
   - name: File storage container type
@@ -272,8 +294,8 @@ items:
     href: ../../api/recyclebin-list-items.md
   - name: Delete
     href: ../../api/recyclebinitem-delete.md
-  - name: Restore
-    href: ../../api/recyclebinitem-restore.md
+  - name: Restore recycleBinItem by driveItemId
+    href: ../../api/filestoragecontainer-restore-recyclebinitem.md
 - name: Shared drive item
   items:
   - name: Shared drive item
@@ -310,8 +332,102 @@ items:
     href: ../../api/sharepointgroupmember-get.md
   - name: Delete
     href: ../../api/sharepointgroup-delete-members.md
+- name: SharePoint migration
+  items:
+  - name: Overview
+    href: ../../resources/sharepointmigration-api-overview.md
+  - name: SharePoint migration event
+    items:
+    - name: SharePoint migration event
+      href: ../../resources/sharepointmigrationevent.md
+    - name: List progress events
+      href: ../../api/sharepointmigrationjob-list-progressevents.md
+  - name: SharePoint migration finish manifest file upload event
+    href: ../../resources/sharepointmigrationfinishmanifestfileuploadevent.md
+  - name: SharePoint migration job
+    items:
+    - name: SharePoint migration job
+      href: ../../resources/sharepointmigrationjob.md
+    - name: Create
+      href: ../../api/filestoragecontainer-post-migrationjobs.md
+    - name: Delete
+      href: ../../api/sharepointmigrationjob-delete.md
+    - name: List progress events
+      href: ../../api/sharepointmigrationjob-list-progressevents.md
+    - name: Provision migration containers
+      href: ../../api/filestoragecontainer-provisionmigrationcontainers.md
+  - name: SharePoint migration job cancelled event
+    href: ../../resources/sharepointmigrationjobcancelledevent.md
+  - name: SharePoint migration job deleted event
+    href: ../../resources/sharepointmigrationjobdeletedevent.md
+  - name: SharePoint migration job error event
+    href: ../../resources/sharepointmigrationjoberrorevent.md
+  - name: SharePoint migration job postponed event
+    href: ../../resources/sharepointmigrationjobpostponedevent.md
+  - name: SharePoint migration job progress event
+    href: ../../resources/sharepointmigrationjobprogressevent.md
+  - name: SharePoint migration job queued event
+    href: ../../resources/sharepointmigrationjobqueuedevent.md
+  - name: SharePoint migration job start event
+    href: ../../resources/sharepointmigrationjobstartevent.md
+  - name: Complex types
+    items:
+    - name: SharePoint migration container info
+      href: ../../resources/sharepointmigrationcontainerinfo.md
+- name: SharePoint cross-tenant migration (preview)
+  items:
+  - name: Overview
+    href: ../../resources/sharepoint-crossorganization-api-overview.md
+  - name: SharePoint group identity mapping
+    items:
+    - name: SharePoint group identity mapping
+      href: ../../resources/sharepointgroupidentitymapping.md
+    - name: Get
+      href: ../../api/sharepointgroupidentitymapping-get.md
+    - name: Update
+      href: ../../api/sharepointgroupidentitymapping-update.md
+  - name: SharePoint migration task
+    items:
+    - name: SharePoint migration task
+      href: ../../resources/sharepointmigrationtask.md
+    - name: Get
+      href: ../../api/sharepointmigrationtask-get.md
+    - name: Create or update
+      href: ../../api/sharepointmigrationtask-update.md
+    - name: Get by source user principal name
+      href: ../../api/sharepointmigrationtask-getbysourceuserprincipalname.md
+    - name: Get by source site URL
+      href: ../../api/sharepointmigrationtask-getbysourcesiteurl.md
+    - name: Get by source group mail nickname
+      href: ../../api/sharepointmigrationtask-getbysourcegroupmailnickname.md
+    - name: Cancel
+      href: ../../api/sharepointmigrationtask-cancel.md
+  - name: SharePoint user identity mapping
+    items:
+    - name: SharePoint user identity mapping
+      href: ../../resources/sharepointuseridentitymapping.md
+    - name: Get
+      href: ../../api/sharepointuseridentitymapping-get.md
+    - name: Update
+      href: ../../api/sharepointuseridentitymapping-update.md
+  - name: Complex types
+    items:
+    - name: SharePoint group migration task parameters
+      href: ../../resources/sharepointgroupmigrationtaskparameters.md
+    - name: SharePoint identity mapping group migration data
+      href: ../../resources/sharepointidentitymappinggroupmigrationdata.md
+    - name: SharePoint identity mapping user migration data
+      href: ../../resources/sharepointidentitymappingusermigrationdata.md
+    - name: SharePoint migration task parameters
+      href: ../../resources/sharepointmigrationtaskparameters.md
+    - name: SharePoint site migration task parameters
+      href: ../../resources/sharepointsitemigrationtaskparameters.md
+    - name: SharePoint user migration task parameters
+      href: ../../resources/sharepointusermigrationtaskparameters.md
 - name: Complex types
   items:
+  - name: File storage container type agent settings
+    href: ../../resources/filestoragecontainertypeagentsettings.md
   - name: File storage container type registration settings
     href: ../../resources/filestoragecontainertyperegistrationsettings.md
   - name: File storage container type settings

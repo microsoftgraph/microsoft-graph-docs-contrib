@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let subscription = await client.api('/subscriptions/getVapidPublicKey')
+let string = await client.api('/subscriptions/getVapidPublicKey')
 	.version('beta')
 	.get();
 

@@ -8,9 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Models;
-using Microsoft.Kiota.Abstractions.Serialization;
 
-var requestBody = new CustomAuthenticationExtension
+var requestBody = new OnOtpSendCustomExtension
 {
 	OdataType = "#microsoft.graph.onOtpSendCustomExtension",
 	AuthenticationConfiguration = new AzureAdTokenAuthentication
@@ -30,16 +29,9 @@ var requestBody = new CustomAuthenticationExtension
 		OdataType = "#microsoft.graph.httpRequestEndpoint",
 		TargetUrl = "https://onotpsendcustomextension.b2c.expert/api/OnOTPCodeSendToTeamsDemo",
 	},
-	AdditionalData = new Dictionary<string, object>
+	BehaviorOnError = new CustomExtensionBehaviorOnError
 	{
-		{
-			"behaviorOnError" , new UntypedObject(new Dictionary<string, UntypedNode>
-			{
-				{
-					"@odata.type", new UntypedString("microsoft.graph.customExtensionBehaviorOnError")
-				},
-			})
-		},
+		OdataType = "microsoft.graph.customExtensionBehaviorOnError",
 	},
 };
 

@@ -47,7 +47,7 @@ To register a **fileStorageContainerType** in the current tenant.
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PUT /storage/fileStorage/containerTypeRegistrations/{fileStorageContainerTypeId}
 ```
 
@@ -84,12 +84,13 @@ The following example shows how to create a **fileStorageContainerTypeRegistrati
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_filestoragecontainertyperegistration"
 }
 -->
-``` http
+```http
 PUT https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/de988700-d700-020e-0a00-0831f3042f00
 Content-Type: application/json
 
@@ -109,6 +110,12 @@ Content-Type: application/json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-filestoragecontainertyperegistration-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -118,7 +125,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.fileStorageContainerTypeRegistration"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -164,12 +171,13 @@ The following example shows how to create a **fileStorageContainerTypeRegistrati
 
 #### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_filestoragecontainertyperegistration_no_billing"
 }
 -->
-``` http
+```http
 PUT https://graph.microsoft.com/beta/storage/fileStorage/containerTypeRegistrations/52a2630c-5e6a-41ff-8645-15406bafe66a
 Content-Type: application/json
 
@@ -184,6 +192,12 @@ Content-Type: application/json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-filestoragecontainertyperegistration-no-billing-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 The following example shows the response.
 <!-- {
@@ -191,6 +205,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 405 Method Not Allowed
 ```

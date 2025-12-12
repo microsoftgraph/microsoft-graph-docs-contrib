@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /deviceManagement/windowsUpdateCatalogItems/{windowsUpdateCatalogItemId}
 ```
 
@@ -57,16 +57,16 @@ If successful, this method returns a `200 OK` response code and [windowsQualityU
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 GET https://graph.microsoft.com/beta/deviceManagement/windowsUpdateCatalogItems/{windowsUpdateCatalogItemId}
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1724
+Content-Length: 1747
 
 {
   "value": {
@@ -100,15 +100,15 @@ Content-Length: 1724
         }
       }
     ],
-    "qualityUpdateSeverityInformation": {
-      "@odata.type": "microsoft.graph.windowsQualityUpdateCatalogItemSeverityInformation",
-      "maxSeverity": "important",
+    "cveSeverityInformation": {
+      "@odata.type": "microsoft.graph.windowsQualityUpdateCveSeverityInformation",
+      "maxSeverityLevel": "important",
       "maxBaseScore": 4.0,
       "exploitedCves": [
         {
-          "@odata.type": "microsoft.graph.windowsQualityUpdateCatalogItemExploitedCve",
-          "number": "Number value",
-          "url": "Url value"
+          "@odata.type": "microsoft.graph.windowsQualityUpdateCveDetail",
+          "cveNumber": "Cve Number value",
+          "cveInformationUrl": "https://example.com/cveInformationUrl/"
         }
       ]
     }

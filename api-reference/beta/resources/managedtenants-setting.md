@@ -22,7 +22,7 @@ Represents a setting that is used within a baseline.
 |displayName|String|The display name for the setting. Required. Read-only.|
 |jsonValue|String|The value for the setting serialized as string of JSON. Required. Read-only.|
 |overwriteAllowed|Boolean|A flag indicating whether the setting can be override existing configurations when applied. Required. Read-only.|
-|valueType|managementParameterValueType|The data type for the setting. Possible values are: `string`, `integer`, `boolean`, `guid`, `stringCollection`, `integerCollection`, `booleanCollection`, `guidCollection`, `unknownFutureValue`. Required. Read-only.|
+|valueType|managementParameterValueType|The data type for the setting. The possible values are: `string`, `integer`, `boolean`, `guid`, `stringCollection`, `integerCollection`, `booleanCollection`, `guidCollection`, `unknownFutureValue`. Required. Read-only.|
 
 ## Relationships
 None.

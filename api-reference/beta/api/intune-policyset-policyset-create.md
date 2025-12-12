@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceAppManagement/policySets
 ```
 
@@ -56,8 +56,8 @@ The following table shows the properties that are required when you create the p
 |lastModifiedDateTime|DateTimeOffset|Last modified time of the PolicySet.|
 |displayName|String|DisplayName of the PolicySet.|
 |description|String|Description of the PolicySet.|
-|status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Validation/assignment status of the PolicySet. Possible values are: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
-|errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Error code if any occured. Possible values are: `noError`, `unauthorized`, `notFound`, `deleted`.|
+|status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Validation/assignment status of the PolicySet. The possible values are: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
+|errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Error code if any occured. The possible values are: `noError`, `unauthorized`, `notFound`, `deleted`.|
 |guidedDeploymentTags|String collection|Tags of the guided deployment|
 |roleScopeTags|String collection|RoleScopeTags of the PolicySet|
 
@@ -70,7 +70,7 @@ If successful, this method returns a `201 Created` response code and a [policySe
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 POST https://graph.microsoft.com/beta/deviceAppManagement/policySets
 Content-type: application/json
 Content-length: 317
@@ -92,7 +92,7 @@ Content-length: 317
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 489

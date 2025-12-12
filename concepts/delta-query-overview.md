@@ -127,6 +127,7 @@ Delta query is currently supported for the following resources. Some resources t
 |:--------------------------------------------------------------------|:--------------------------------------------------------------------------------|
 | [application](/graph/api/resources/application)                     | [application: delta](/graph/api/application-delta) function                     |
 | [administrativeUnit](/graph/api/resources/administrativeunit)       | [administrativeUnit: delta](/graph/api/administrativeunit-delta) function       |
+| [agentIdentityBlueprint](/graph/api/resources/agentidentityblueprint)                     | [application: delta](/graph/api/application-delta) function                     |
 | [callRecording](/graph/api/resources/callrecording)                 | [callRecording: delta](/graph/api/callrecording-delta) function                 |
 | [callTranscript](/graph/api/resources/calltranscript)               | [callTranscript: delta](/graph/api/calltranscript-delta) function               |
 | [chatMessage](/graph/api/resources/chatmessage)                     | [chatMessage: delta](/graph/api/chatmessage-delta) function                     |

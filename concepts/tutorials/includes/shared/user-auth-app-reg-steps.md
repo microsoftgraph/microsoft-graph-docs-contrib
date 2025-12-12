@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 
 ## Register an application for user authentication
 
-Register an application that supports [user authentication](/graph/auth-v2-user) using [device code flow](/azure/active-directory/develop/v2-oauth2-device-code). You can register an application using the Microsoft Entra admin center, or by using the [Microsoft Graph PowerShell SDK](/graph/powershell/get-started).
+Register an application that supports [user authentication](/graph/auth-v2-user) using [device code flow](/azure/active-directory/develop/v2-oauth2-device-code). You can register an application using the Microsoft Entra admin center, or by using the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started).
 
 ### [Microsoft Entra admin center](#tab/aad)
 
@@ -38,7 +38,7 @@ Register an application that supports [user authentication](/graph/auth-v2-user)
 
 ### [PowerShell](#tab/powershell)
 
-To use PowerShell, you need the Microsoft Graph PowerShell SDK. If you don't have it, see [Install the Microsoft Graph PowerShell SDK](/graph/powershell/installation) for installation instructions.
+To use PowerShell, you need the Microsoft Graph PowerShell SDK. If you don't have it, see [Install the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation) for installation instructions.
 
 > [!IMPORTANT]
 > The PowerShell script requires a work/school account with the Application administrator, Cloud application administrator, or Global administrator role. If your account has the Application developer role, you can register in the Microsoft Entra admin center.

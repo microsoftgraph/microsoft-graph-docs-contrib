@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /networkAccess/tls/externalCertificateAuthorityCertificates/{externalCertificateAuthorityCertificateId}
 ```
 
@@ -63,7 +63,7 @@ The following example shows a request.
   "sampleKeys": ["365da4f6-6194-401d-b787-b09815be36e3"]
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/networkAccess/tls/externalCertificateAuthorityCertificates/365da4f6-6194-401d-b787-b09815be36e3
 ```
 
@@ -87,6 +87,10 @@ DELETE https://graph.microsoft.com/beta/networkAccess/tls/externalCertificateAut
 [!INCLUDE [sample-code](../includes/snippets/php/delete-externalcertificateauthoritycertificate-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-externalcertificateauthoritycertificate-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/delete-externalcertificateauthoritycertificate-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -101,6 +105,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

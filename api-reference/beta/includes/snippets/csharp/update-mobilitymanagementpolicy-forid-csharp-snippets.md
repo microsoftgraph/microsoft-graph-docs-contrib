@@ -18,7 +18,7 @@ var requestBody = new MobilityManagementPolicy
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-var result = await graphClient.Policies.MobileDeviceManagementPolicies["{mobilityManagementPolicy-id}"].PatchAsync(requestBody);
+var result = await graphClient.Policies.MobileDeviceManagementPolicies["{mobileDeviceManagementPolicy-id}"].PatchAsync(requestBody);
 
 
 ```

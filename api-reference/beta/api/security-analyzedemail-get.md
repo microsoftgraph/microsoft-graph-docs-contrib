@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/collaboration/analyzedEmails/{analyzedEmailId}
 ```
 
@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/collaboration/analyzedEmails/{analyzedEmailId}
 ```
 
@@ -109,7 +109,7 @@ The following example shows the response.
   "name" : "get_analyzedemail"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -212,7 +212,7 @@ Content-Type: application/json
   "name": "get_analyzedemail_urls"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/collaboration/analyzedEmails/{analyzedEmailId}/Urls
 ```
 
@@ -259,7 +259,7 @@ The following example shows the response.
   "name" : "get_analyzedemail_urls"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -289,7 +289,7 @@ Content-Type: application/json
   "name": "get_analyzedemail_attachments"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/collaboration/analyzedEmails/{analyzedEmailId}/attachments
 ```
 
@@ -335,7 +335,7 @@ The following example shows the response.
   "name" : "get_analyzedemail_attachments"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

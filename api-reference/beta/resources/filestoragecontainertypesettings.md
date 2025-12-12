@@ -22,6 +22,7 @@ Represents the settings associated with a [fileStorageContainerType](../resource
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|agent|[fileStorageContainerTypeAgentSettings](../resources/fileStorageContainerTypeAgentSettings.md)|Contains agent-related settings. Optional|
 |consumingTenantOverridables|fileStorageContainerTypeSettingsOverride|A comma-separated list of settings that can be overridden in the consuming tenant. The possible values are: `urlTemplate`, `isDiscoverabilityEnabled`, `isSearchEnabled`, `isItemVersioningEnabled`, `itemMajorVersionLimit`, `maxStoragePerContainerInBytes`, `unknownFutureValue`.|
 |isDiscoverabilityEnabled|Boolean|Indicates whether items from containers are surfaced in experiences such as **My Activity** or Microsoft 365.|
 |isItemVersioningEnabled|Boolean|Indicates whether item versioning is enabled.|
@@ -53,7 +54,10 @@ The following JSON representation shows the resource type.
   "itemMajorVersionLimit": "Int64",
   "maxStoragePerContainerInBytes": "Int64",
   "sharingCapability": "String",
-  "urlTemplate": "String"
+  "urlTemplate": "String",
+  "agent": {
+    "@odata.type": "microsoft.graph.fileStorageContainerTypeAgentSettings"
+  }
 }
 ```
 

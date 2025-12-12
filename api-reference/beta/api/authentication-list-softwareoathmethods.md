@@ -38,7 +38,7 @@ Get details of your own software OATH token authentication methods.
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /me/authentication/softwareOathMethods
 ```
 
@@ -47,7 +47,7 @@ Get details of your own or another user's software OATH token authentication met
 [!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /users/{id | userPrincipalName}/authentication/softwareOathMethods
 ```
 
@@ -73,7 +73,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_softwareoathauthenticationmethod"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/authentication/softwareOathMethods
 ```
 
@@ -115,7 +115,7 @@ GET https://graph.microsoft.com/beta/me/authentication/softwareOathMethods
   "@odata.type": "Collection(microsoft.graph.softwareOathAuthenticationMethod)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

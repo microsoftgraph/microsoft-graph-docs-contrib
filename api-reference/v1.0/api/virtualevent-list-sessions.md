@@ -25,8 +25,8 @@ Currently, the following virtual event types are supported:
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "virtualeventsession_list" } -->
-[!INCLUDE [permissions-table](../includes/permissions/virtualeventsession-list-permissions.md)]
+<!-- { "blockType": "permissions", "name": "virtualevent_list_sessions" } -->
+[!INCLUDE [permissions-table](../includes/permissions/virtualevent-list-sessions-permissions.md)]
 
 > [!NOTE]
 > To use application permissions for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and assign it to a user. This allows the authorized application to access registrants' information from virtual events created by that specific user.
@@ -40,13 +40,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 To list all sessions of a webinar:
 
-``` http
+```http
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions
 ```
 
 To list all sessions of a town hall:
 
-``` http
+```http
 GET /solutions/virtualEvents/townhalls/{townhallId}/sessions
 ```
 
@@ -90,7 +90,7 @@ The following example shows a request.
   "sampleKeys": ["f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd/sessions
 ```
 
@@ -134,7 +134,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.virtualEventSession)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

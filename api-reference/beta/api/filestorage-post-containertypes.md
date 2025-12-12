@@ -20,6 +20,8 @@ Create a new [fileStorageContainerType](../resources/filestoragecontainertype.md
 > * The tenant must own the application that is assigned as the owner of the **fileStorageContainerType** (**owningAppId**).
 > * The registration of a container type in a newly created tenant can fail if the tenant isn't yet fully ready. You might need to wait at least an hour before you can register a container type in a new tenant.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -40,7 +42,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /storage/fileStorage/containerTypes
 ```
 
@@ -72,12 +74,14 @@ If successful, this method returns a `201 Created` response code and a [fileStor
 
 ### Request
 The following example shows how to create a trial [fileStorageContainerType](../resources/filestoragecontainertype.md).
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_filestoragecontainertype_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/storage/fileStorage/containerTypes
 Content-Type: application/json
 
@@ -88,10 +92,39 @@ Content-Type: application/json
   "settings": {
     "isItemVersioningEnabled": true,
     "isSharingRestricted": false,
-    "consumingTenantOverridables": "isSearchEnabled,itemMajorVersionLimit"
+    "consumingTenantOverridables": "isSearchEnabled,itemMajorVersionLimit",
+    "agent": {
+      "chatEmbedAllowedHosts": ["https://localhost:3000"]
+    }
   }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-filestoragecontainertype-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-filestoragecontainertype-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-filestoragecontainertype-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-filestoragecontainertype-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-filestoragecontainertype-from--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-filestoragecontainertype-from--python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 The following example shows the response.
@@ -102,7 +135,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.fileStorageContainerType"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -124,7 +157,10 @@ Content-Type: application/json
     "itemMajorVersionLimit": 50,
     "maxStoragePerContainerInBytes": 104857600,
     "isSharingRestricted": false,
-    "consumingTenantOverridables": "isSearchEnabled,itemMajorVersionLimit"
+    "consumingTenantOverridables": "isSearchEnabled,itemMajorVersionLimit",
+    "agent": {
+      "chatEmbedAllowedHosts": ["https://localhost:3000"]
+    }
   }
 }
 ```

@@ -2,7 +2,7 @@
 title: "Remove tokenLifetimePolicy"
 description: "Remove a tokenLifetimePolicy from an application."
 ms.localizationpriority: medium
-author: "sureshja"
+author: "aricrowe57"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ms.date: 07/26/2024
