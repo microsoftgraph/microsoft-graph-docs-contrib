@@ -1354,7 +1354,7 @@
                 "customAccessPackageWorkflowExtension",
                 "controlConfiguration",
                 "insiderRiskyUserApproval",
-                "entraIdProtectionRiskyUserApproval"
+                "entraIdProtectionRiskyUserApproval",
                 "customDataProvidedResourceUploadSession"
               ],
               "complexTypes": [
