@@ -15,8 +15,8 @@ Namespace: microsoft.graph
 
 Delete a [serviceApp](../resources/serviceapp.md).
 
-[!NOTE]
-If this API is called via PowerShell, it returns a `403 Forbidden` response code.
+> [!NOTE]
+> When this API is called via PowerShell, it returns a `403 Forbidden` response code.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
