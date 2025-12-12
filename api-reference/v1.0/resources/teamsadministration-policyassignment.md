@@ -12,10 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.teamsAdministration
 
-
-
 Represents the details of a policy instance, such as **displayName** and **groupId**.
-
 
 ## Properties
 |Property|Type|Description|
@@ -38,10 +35,10 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamsAdministration.policyAssignment",
-  "policyId": "String",
-  "displayName": "String",
   "assignmentType": "String",
-  "groupId": "String"
+  "displayName": "String",
+  "groupId": "String",
+  "policyId": "String"
 }
 ```
 
