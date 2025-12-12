@@ -442,3 +442,7 @@ items:
       href: ../../resources/resourcelink.md
     - name: Unavailable place mode
       href: ../../resources/unavailableplacemode.md
+- name: Work hours and locations (preview)
+  items:
+  - name: Overview
+    href: ../../resources/workhoursandlocationssetting.md
