@@ -310,13 +310,9 @@ items:
       href: ../../api/cloudpcprovisioningpolicy-apply.md
     - name: Apply configuration
       href: ../../api/cloudpcprovisioningpolicy-applyconfig.md
-<<<<<<< HEAD
     - name: Retry
       href: ../../api/cloudpcprovisioningpolicy-retry.md
-  - name: Cloud PC reports
-=======
   - name: Cloud PC report
->>>>>>> origin/main
     items:
     - name: Cloud PC report
       href: ../../resources/cloudpcreport.md
