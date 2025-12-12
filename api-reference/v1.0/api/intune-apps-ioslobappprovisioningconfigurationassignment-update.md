@@ -62,7 +62,7 @@ Here is an example of the request.
 
 <!-- { "blockType": "ignored" , "name" : "intune_apps_ioslobappprovisioningconfigurationassignment_update_update_ioslobappprovisioningconfigurationassignment" }-->
 ```http
-PATCH https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}/assignments/{iosLobAppProvisioningConfigurationAssignmentId}
+PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}/assignments/{iosLobAppProvisioningConfigurationAssignmentId}
 Content-type: application/json
 Content-length: 351
 
