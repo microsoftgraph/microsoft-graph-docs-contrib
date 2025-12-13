@@ -971,6 +971,8 @@ items:
         href: ../../api/appconsentapprovalroute-list-appconsentrequests.md
       - name: Get
         href: ../../api/appconsentrequest-get.md
+      - name: Filter by current user
+        href: ../../api/appconsentrequest-filterbycurrentuser.md
     - name: User consent request
       items:
       - name: User consent request

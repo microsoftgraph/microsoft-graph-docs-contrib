@@ -14,6 +14,8 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [ediscovery-deprecation](../includes/ediscovery-subnamespace-deprecation.md)]
+
 Create a new tag for the specified case.  The tags are used in review sets while reviewing content.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]

@@ -44,6 +44,8 @@ In the request body, supply a JSON representation of a [agentIdentity](../resour
 
 If successful, this method returns a `201 Created` response code and a [agentIdentity](../resources/agentidentity.md) object in the response body.
 
+For information about errors returned by agent identity APIs, see [Agent identity error codes](/entra/agent-id/identity-platform/error-codes).
+
 ## Examples
 ### Request
 The following example shows a request.

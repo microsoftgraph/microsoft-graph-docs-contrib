@@ -1,6 +1,50 @@
 {
   "changelog": [
     {
+      "ChangeList": [
+        {
+          "Id": "ce1c767e-c906-4117-bb0f-80a11b8949f0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "adhocCall",
+          "ChangeType": "Addition",
+          "Description": "Added the [adhocCall](https://learn.microsoft.com/en-us/graph/api/resources/adhocCall?view=graph-rest-1.0) resource.",
+          "Target": "adhocCall"
+        },
+        {
+          "Id": "ce1c767e-c906-4117-bb0f-80a11b8949f0",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "adhocCalls",
+          "ChangeType": "Addition",
+          "Description": "Added the **adhocCalls** relationship to the [cloudCommunications](https://learn.microsoft.com/en-us/graph/api/resources/cloudCommunications?view=graph-rest-1.0) resource.",
+          "Target": "cloudCommunications"
+        }
+      ],
+      "Id": "ce1c767e-c906-4117-bb0f-80a11b8949f0",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-12-08T19:30:25.6003569Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": "Microsoft.Teams.Shifts"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2139f9e1-e0a4-47df-9905-ec16b82a0bf0",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "adhocCalls",
+          "ChangeType": "Addition",
+          "Description": "Added the **adhocCalls** relationship to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "2139f9e1-e0a4-47df-9905-ec16b82a0bf0",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-12-09T19:30:25.6008288Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
       "ChangeList":  [
         {
           "Id": "b3f8a7e2-4d6c-4c9a-9f3e-8a2d7c1f5b91",
@@ -3149,6 +3193,66 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2025-11-03T16:03:44.5549271Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c7d3f892-4e61-4b28-9a5c-8f2d1e3b4c7a",
+          "ApiChange": "Method",
+          "ChangedApiName": "channel",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get member from channel allMembers collection](https://learn.microsoft.com/en-us/graph/api/channel-get-allmembers?view=graph-rest-beta) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Target": "channel"
+        }
+      ],
+      "Id": "c7d3f892-4e61-4b28-9a5c-8f2d1e3b4c7a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-12-05T00:00:00.0000000Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a1b2c3d4-5e6f-7g8h-9i0j-k1l2m3n4o5p6",
+          "ApiChange": "Property",
+          "ChangedApiName": "layoutType",
+          "ChangeType": "Addition",
+          "Description": "Added the **layoutType** property to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "b2c3d4e5-6f7g-8h9i-0j1k-l2m3n4o5p6q7",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "channelLayoutType",
+          "ChangeType": "Addition",
+          "Description": "Added the **channelLayoutType** enumeration to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource. The enumeration defines layout types for channels with values `post` (traditional post-reply), `chat` (chat-like threading), and `unknownFutureValue`.",
+          "Target": "channel"
+        },
+        {
+          "Id": "c3d4e5f6-7g8h-9i0j-1k2l-m3n4o5p6q7r8",
+          "ApiChange": "Method",
+          "ChangedApiName": "Create channel",
+          "ChangeType": "Change",
+          "Description": "Updated the [Create channel](https://learn.microsoft.com/en-us/graph/api/channel-post?view=graph-rest-beta) method to support the **layoutType** optional property in the request body. Users can now specify the channel layout type during creation.",
+          "Target": "channel"
+        },
+        {
+          "Id": "d4e5f6g7-8h9i-0j1k-2l3m-n4o5p6q7r8s9",
+          "ApiChange": "Method",
+          "ChangedApiName": "Update channel",
+          "ChangeType": "Change",
+          "Description": "Updated the [Update channel](https://learn.microsoft.com/en-us/graph/api/channel-patch?view=graph-rest-beta) method to support updating the **layoutType** property. Users can switch between `post` and `chat` layouts at any time.",
+          "Target": "channel"
+        }
+      ],
+      "Id": "a1b2c3d4-5e6f-7g8h-9i0j-k1l2m3n4o5p6",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-12-11T00:00:00.0000000Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Messaging"
     }

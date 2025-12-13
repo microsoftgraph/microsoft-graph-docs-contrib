@@ -379,6 +379,8 @@ items:
       href: outlook-immutable-id.md
     - name: Subscribe to change notifications
       href: outlook-change-notifications-overview.md
+    - name: Upsert places
+      href: places-upsert-overview.md
   - name: Compliance
     href: compliance-concept-overview.md
   - name: Cross-device experiences
