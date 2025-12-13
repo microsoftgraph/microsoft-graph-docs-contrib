@@ -47,8 +47,8 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and collection of [team](../resources/team.md) objects in the response body.
 
-> [!Note]
-> Currently, this API call returns only the **id**, **displayName**, and **description** properties of a [team](../resources/team.md). To get all properties, use the [Get team](../api/team-get.md) operation. 
+> [!NOTE]
+> Currently, this API call returns all properties of a [team](../resources/team.md) object, but only populates the **id**, **displayName**, **description**, **visibility**, and **tenantId** properties. All other properties are returned as `null`. To get all populated properties, use the [Get team](../api/team-get.md) operation. 
 
 ## Examples
 
@@ -113,21 +113,49 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams",
   "value": [
     {
       "id": "172b0cce-e65d-44ce-9a49-91d9f2e8493a",
+      "createdDateTime": null,
       "displayName": "Contoso Team",
-      "description": "This is a Contoso team, used to showcase the range of properties supported by this API"
+      "description": "This is a Contoso team, used to showcase the range of properties supported by this API",
+      "internalId": null,
+      "classification": null,
+      "specialization": null,
+      "visibility": "public",
+      "webUrl": null,
+      "isArchived": null,
+      "tenantId": "b3246f44-b4gb-4627-96c6-25b18fa2c910",
+      "isMembershipLimitedToOwners": null,
+      "memberSettings": null,
+      "guestSettings": null,
+      "messagingSettings": null,
+      "funSettings": null,
+      "discoverySettings": null,
+      "tagSettings": null,
+      "summary": null
     },
     {
       "id": "890972b0cce-e65d-44ce-9a49-568hhsd7n",
+      "createdDateTime": null,
       "displayName": "Contoso General Team",
-      "description": "This is a general Contoso team"
-    },
-    {
-      "id": "98678abcce0-e65d-44ce-9a49-9980bj8kl0e",
-      "displayName": "Contoso API Team",
-      "description": "This is Contoso API team"
+      "description": "This is a general Contoso team",
+      "internalId": null,
+      "classification": null,
+      "specialization": null,
+      "visibility": "private",
+      "webUrl": null,
+      "isArchived": null,
+      "tenantId": "b3246f44-b4gb-4627-96c6-25b18fa2c910",
+      "isMembershipLimitedToOwners": null,
+      "memberSettings": null,
+      "guestSettings": null,
+      "messagingSettings": null,
+      "funSettings": null,
+      "discoverySettings": null,
+      "tagSettings": null,
+      "summary": null
     }
   ]
 }
@@ -196,16 +224,49 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams",
   "value": [
     {
       "id": "172b0cce-e65d-44ce-9a49-91d9f2e8493a",
+      "createdDateTime": null,
       "displayName": "A Contoso Team",
-      "description": "This is a Contoso team, used to showcase the range of properties supported by this API"
+      "description": "This is a Contoso team, used to showcase the range of properties supported by this API",
+      "internalId": null,
+      "classification": null,
+      "specialization": null,
+      "visibility": "public",
+      "webUrl": null,
+      "isArchived": null,
+      "tenantId": "b3246f44-b4gb-4627-96c6-25b18fa2c910",
+      "isMembershipLimitedToOwners": null,
+      "memberSettings": null,
+      "guestSettings": null,
+      "messagingSettings": null,
+      "funSettings": null,
+      "discoverySettings": null,
+      "tagSettings": null,
+      "summary": null
     },
     {
       "id": "890972b0cce-e65d-44ce-9a49-568hhsd7n",
+      "createdDateTime": null,
       "displayName": "A Contoso Notification Team",
-      "description": "This is a notification Contoso team"
+      "description": "This is a notification Contoso team",
+      "internalId": null,
+      "classification": null,
+      "specialization": null,
+      "visibility": "private",
+      "webUrl": null,
+      "isArchived": null,
+      "tenantId": "b3246f44-b4gb-4627-96c6-25b18fa2c910",
+      "isMembershipLimitedToOwners": null,
+      "memberSettings": null,
+      "guestSettings": null,
+      "messagingSettings": null,
+      "funSettings": null,
+      "discoverySettings": null,
+      "tagSettings": null,
+      "summary": null
     }
   ]
 }
@@ -272,6 +333,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams(id,description)",
   "value": [
     {
       "id": "172b0cce-e65d-44ce-9a49-91d9f2e8493a",
