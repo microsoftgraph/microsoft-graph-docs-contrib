@@ -1,5 +1,0 @@
-{
-  "dependencies": {
-    "@azure/mcp-win32-x64": "^2.0.0-beta.8"
-  }
-}
