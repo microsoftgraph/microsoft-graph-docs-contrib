@@ -68,7 +68,6 @@ If successful, this method returns a `201 Created` response code and a [microsof
 ### Request
 Here's an example of a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_retentionlabel_from_"
@@ -85,7 +84,7 @@ Content-length: 555
   "behaviorDuringRetentionPeriod": "retain",
   "actionAfterRetentionPeriod": "startDispositionReview",
   "retentionTrigger": "dateOfEvent",
-  "retentionEventType@odata.bind": "https://graph.microsoft.com/beta/security/triggerTypes/retentionEventTypes('e095f4fc-b966-4c40-94de-fb8a383658e4')",
+  "retentionEventType@odata.bind": "https://graph.microsoft.com/v1.0/security/triggerTypes/retentionEventTypes('e095f4fc-b966-4c40-94de-fb8a383658e4')",
   "retentionDuration": {
     "@odata.type": "microsoft.graph.security.retentionDurationInDays",
     "days": 2555
@@ -102,44 +101,20 @@ Content-length: 555
   "descriptionForAdmins": "retain for 7 years",
   "descriptionForUsers": "retain for 7 years",
   "descriptors": {
-    "authorityTemplate@odata.bind" : "https://graph.microsoft.com/beta/security/labels/authorities('fie3f4fc-b966-4c40-94de-fb8a383658e4')",
-    "categoryTemplate@odata.bind" : "https://graph.microsoft.com/beta/security/labels/categories('0bjk8-b966-4c40-94de-fb8a383658e4')",
-    "citationTemplate@odata.bind" : "https://graph.microsoft.com/beta/security/labels/citations('0e23f4fc-b966-4c40-94de-fb8a383658e4')",
-    "departmentTemplate@odata.bind" : "https://graph.microsoft.com/beta/security/labels/departments('p99ef4fc-b966-4c40-94de-fb8a383658e4')",
-    "filePlanReferenceTemplate@odata.bind" : "https://graph.microsoft.com/beta/security/labels/filePlanReferences('e095f4fc-b966-4c40-94de-fb8a383658e4')"
+    "authorityTemplate@odata.bind" : "https://graph.microsoft.com/v1.0/security/labels/authorities('fie3f4fc-b966-4c40-94de-fb8a383658e4')",
+    "categoryTemplate@odata.bind" : "https://graph.microsoft.com/v1.0/security/labels/categories('0bjk8-b966-4c40-94de-fb8a383658e4')",
+    "citationTemplate@odata.bind" : "https://graph.microsoft.com/v1.0/security/labels/citations('0e23f4fc-b966-4c40-94de-fb8a383658e4')",
+    "departmentTemplate@odata.bind" : "https://graph.microsoft.com/v1.0/security/labels/departments('p99ef4fc-b966-4c40-94de-fb8a383658e4')",
+    "filePlanReferenceTemplate@odata.bind" : "https://graph.microsoft.com/v1.0/security/labels/filePlanReferences('e095f4fc-b966-4c40-94de-fb8a383658e4')"
   },
   "defaultRecordBehavior":"startLocked",
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-retentionlabel-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-retentionlabel-from--go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-retentionlabel-from--java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-retentionlabel-from--javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-retentionlabel-from--php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-retentionlabel-from--python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response
-Here's an example of the response.
+The following example shows the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

@@ -3213,6 +3213,48 @@
       "CreatedDateTime": "2025-12-05T00:00:00.0000000Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a1b2c3d4-5e6f-7g8h-9i0j-k1l2m3n4o5p6",
+          "ApiChange": "Property",
+          "ChangedApiName": "layoutType",
+          "ChangeType": "Addition",
+          "Description": "Added the **layoutType** property to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "b2c3d4e5-6f7g-8h9i-0j1k-l2m3n4o5p6q7",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "channelLayoutType",
+          "ChangeType": "Addition",
+          "Description": "Added the **channelLayoutType** enumeration to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource. The enumeration defines layout types for channels with values `post` (traditional post-reply), `chat` (chat-like threading), and `unknownFutureValue`.",
+          "Target": "channel"
+        },
+        {
+          "Id": "c3d4e5f6-7g8h-9i0j-1k2l-m3n4o5p6q7r8",
+          "ApiChange": "Method",
+          "ChangedApiName": "Create channel",
+          "ChangeType": "Change",
+          "Description": "Updated the [Create channel](https://learn.microsoft.com/en-us/graph/api/channel-post?view=graph-rest-beta) method to support the **layoutType** optional property in the request body. Users can now specify the channel layout type during creation.",
+          "Target": "channel"
+        },
+        {
+          "Id": "d4e5f6g7-8h9i-0j1k-2l3m-n4o5p6q7r8s9",
+          "ApiChange": "Method",
+          "ChangedApiName": "Update channel",
+          "ChangeType": "Change",
+          "Description": "Updated the [Update channel](https://learn.microsoft.com/en-us/graph/api/channel-patch?view=graph-rest-beta) method to support updating the **layoutType** property. Users can switch between `post` and `chat` layouts at any time.",
+          "Target": "channel"
+        }
+      ],
+      "Id": "a1b2c3d4-5e6f-7g8h-9i0j-k1l2m3n4o5p6",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-12-11T00:00:00.0000000Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
     }
   ]
 }
