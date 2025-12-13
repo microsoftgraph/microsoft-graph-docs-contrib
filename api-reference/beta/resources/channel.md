@@ -73,6 +73,7 @@ where files are shared, and where tabs are added.
 |email|String| The email address for sending messages to the channel. Read-only.|
 |webUrl|String|A hyperlink to the channel in Microsoft Teams. This URL is supplied when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.|
 |membershipType|[channelMembershipType](../resources/channel.md#channelmembershiptype-values)|The type of the channel. Can be set during creation and can't be changed. The possible values are: `standard`, `private`, `unknownFutureValue`, `shared`. The default value is `standard`. Use the `Prefer: include-unknown-enum-members` request header to get the following members in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `shared`.|
+|layoutType|[channelLayoutType](../resources/channel.md#channellayouttype-values)|The layout type of the channel. Can be set during creation and can be updated. The possible values are: `post`, `chat`, `unknownFutureValue`. The default value is `post`. Channels with `post` layout use traditional post-reply conversation format, while channels with `chat` layout provide a chat-like threading experience similar to group chats.|
 |createdDateTime|dateTimeOffset|Read only. Timestamp at which the channel was created.|
 |moderationSettings|[channelModerationSettings](../resources/channelmoderationsettings.md)|Settings to configure channel moderation to control who can start new posts and reply to posts in that channel.|
 |summary|[channelSummary](../resources/channelsummary.md)|Contains summary information about the channel, including number of guests, members, owners, and an indicator for members from other tenants. The **summary** property is only returned if it appears in the `$select` clause of the [Get channel](../api/channel-get.md) method.|
@@ -87,6 +88,14 @@ where files are shared, and where tabs are added.
 | private            | Channel can have members that are a subset of all the members on the parent team. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                                 |
 | shared             | Members can be directly added to the channel without adding them to the team.     |
+
+### channelLayoutType values
+
+| Member             | Description                                                                                                          |
+|:-------------------|:---------------------------------------------------------------------------------------------------------------------|
+| post               | Traditional post-reply conversation format. Posts are displayed in a structured format with replies nested under the original post. This is the default layout type.                   |
+| chat               | Chat-like threading experience similar to group chats. Messages are displayed in a continuous flow with support for threaded conversations on specific topics.|
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                                                                    |
 
 ### Instance attributes
 
@@ -135,6 +144,7 @@ The following JSON representation shows the resource type.
   "email": "string",
   "webUrl": "string",
   "membershipType": "String",
+  "layoutType": "string",
   "isArchived": false,
   "createdDateTime": "string (timestamp)",
   "moderationSettings": { "@odata.type": "microsoft.graph.channelModerationSettings" }
