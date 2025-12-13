@@ -902,6 +902,14 @@ Namespace: microsoft.graph.security
 |  failed    |
 |  unknownFutureValue  |
 
+### recipientType values
+
+|Member|
+|:---|
+|user|
+|roleGroup|
+|unknownFutureValue|
+
 ### teamsMessageDeliveryAction values
 
 | Member |
