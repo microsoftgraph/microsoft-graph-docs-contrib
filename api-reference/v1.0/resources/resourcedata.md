@@ -12,7 +12,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Represents the resource data attached to the [change notification](../resources/changenotification.md) sent to the subscriber. This resource is an open type and allows other properties to be passed in.
+Represents the resource data attached to the [change notification](../resources/changenotification.md) sent to the subscriber. This resource is an open type that allows additional properties beyond those documented here.
 
 For details, see [Use Microsoft Graph to get change notifications](change-notifications-api-overview.md).
 

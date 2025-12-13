@@ -17,7 +17,7 @@ Represents an application. Any application that outsources authentication to Mic
 
 Inherits from [directoryObject](directoryobject.md).
 
-This resource is an open type that allows other properties to be passed in.
+This resource is an open type that allows additional properties beyond those documented here.
 
 This resource supports:
 

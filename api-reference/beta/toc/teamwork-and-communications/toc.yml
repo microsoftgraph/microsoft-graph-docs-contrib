@@ -279,7 +279,13 @@ items:
   - name: Ad hoc call
     items:
     - name: Ad hoc call (preview)
-      href: ../../resources/adhoccall.md
+      items:
+      - name: Ad hoc call (preview)
+        href: ../../resources/adhoccall.md
+      - name: getAllRecordings
+        href: ../../api/adhoccall-getallrecordings.md
+      - name: getAllTranscripts
+        href: ../../api/adhoccall-getalltranscripts.md
   - name: Calls
     items:
     - name: Call
@@ -576,12 +582,12 @@ items:
         href: ../../api/onlinemeeting-list-recordings.md
       - name: Get
         href: ../../api/callrecording-get.md
-      - name: Get
-        href: ../../api/callrecording-get.md
       - name: Get delta by organizer
         href: ../../api/callrecording-delta.md
       - name: List recordings by organizer
         href: ../../api/onlinemeeting-getallrecordings.md
+      - name: Get recordings initiated by a specified user
+        href: ../../api/adhoccall-getallrecordings.md
     - name: Call transcript
       items:
       - name: Call transcript
@@ -594,6 +600,8 @@ items:
         href: ../../api/calltranscript-delta.md
       - name: List transcripts by organizer
         href: ../../api/onlinemeeting-getalltranscripts.md
+      - name: Get transcripts initiated by a specified user
+        href: ../../api/adhoccall-getalltranscripts.md
     - name: Virtual appointment
       items:
       - name: Get virtual appointment join link
@@ -883,6 +891,8 @@ items:
       href: ../../api/channel-list-members.md
     - name: List all members
       href: ../../api/channel-list-allmembers.md
+    - name: Get member from channel allMembers collection
+      href: ../../api/channel-get-allmembers.md
     - name: Add channel member
       href: ../../api/channel-post-members.md
     - name: Get channel member
