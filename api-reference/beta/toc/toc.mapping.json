@@ -332,7 +332,7 @@
            ]
          },
          {
-          "name": "Work hours and locations (preview)",
+          "name": "Work hours and locations",
           "overview": "../../resources/workhoursandlocationssetting.md",
           "resources": [
             "workHoursAndLocationsSetting",
