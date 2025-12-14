@@ -75,8 +75,8 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | recordAutomatically | Boolean | Indicates whether to record the meeting automatically. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 |sensitivityLabelAssignment|[onlineMeetingSensitivityLabelAssignment](../resources/onlinemeetingsensitivitylabelassignment.md)|Specifies the sensitivity label applied to the Teams meeting.|
 | shareMeetingChatHistoryDefault | [meetingChatHistoryDefaultMode](#meetingchathistorydefaultmode-values) | Specifies whether meeting chat history is shared with participants. The possible values are: `all`, `none`, `unknownFutureValue`. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
-| subject               | String                                        | The subject of the online meeting. Required when you create an online meeting. |
 | startDateTime         | DateTime                                      | The meeting start time in UTC.                                                                                             |
+| subject               | String                                        | The subject of the online meeting. Required when you create an online meeting. |
 | videoTeleconferenceId | String                                        | The video teleconferencing ID. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).                                                                                 |
 | watermarkProtection | [watermarkProtectionValues](watermarkprotectionvalues.md)     | Specifies whether the client application should apply a watermark a content type. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | attendeeReport (deprecated) | Stream | The content stream of the attendee report of a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only. |
