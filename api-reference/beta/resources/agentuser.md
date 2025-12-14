@@ -84,7 +84,7 @@ This resource is an open type that allows additional properties beyond those doc
 |faxNumber|String|The fax number of the user. Inherited from [user](../resources/user.md).|
 |givenName|String|The given name (first name) of the user. Maximum length is 64 characters. Inherited from [user](../resources/user.md).|
 |id|String|The unique identifier for the user. It should be treated as an opaque identifier. Inherited from [directoryObject](../resources/directoryobject.md). Not nullable. Read-only. Inherits from [entity](../resources/entity.md)|
-|identityParentId|String|References the object ID of the associated agent identity. This property is required when creating the object, and it can't be cleared during updates. Inherited from [user](../resources/user.md).|
+|identityParentId|String|References the object ID of the associated [agent identity](../resources/agentidentity.md). This property is required when creating the object, and it can't be cleared during updates. Inherited from [user](../resources/user.md).|
 |imAddresses|String collection|The instant message voice-over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only. Inherited from [user](../resources/user.md).|
 |infoCatalogs|String collection|Identifies the info segments assigned to the user. Inherited from [user](../resources/user.md).|
 |isLicenseReconciliationNeeded|Boolean|Indicates whether the user is pending an exchange mailbox license assignment. Read-only. Inherited from [user](../resources/user.md).|
