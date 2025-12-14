@@ -53,7 +53,7 @@ You can specify the following properties when creating a **environment**.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Environment identifier. Required.|
-|kind|[environmentKind](../resources/enums-security-environmentKind.md)|Environment type. The possible values are: `azureSubscription`, `awsOrganization`, `awsAccount`, `gcpOrganization`, `gcpProject`, `dockersHubOrganization`, `devOpsConnection`, `azureDevOpsOrganization`, `gitHubOrganization`, `gitLabGroup`, `jFrogArtifactory`, `unknownFutureValue`. Required.|
+|kind|[microsoft.graph.security.environmentKind](../resources/enums-security-environmentKind.md)|Environment type. The possible values are: `azureSubscription`, `awsOrganization`, `awsAccount`, `gcpOrganization`, `gcpProject`, `dockersHubOrganization`, `devOpsConnection`, `azureDevOpsOrganization`, `gitHubOrganization`, `gitLabGroup`, `jFrogArtifactory`, `unknownFutureValue`. Required.|
 
 
 
