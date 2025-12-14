@@ -118,8 +118,8 @@ The following JSON representation shows the resource type.
   "allowedPresenters": "String",
   "allowLiveShare": "String",
   "allowMeetingChat": "String",
-  "allowPowerPointSharing": "Boolean",
   "allowParticipantsToChangeName": "Boolean",
+  "allowPowerPointSharing": "Boolean",
   "allowTeamworkReactions": "Boolean",
   "allowWhiteboard": "Boolean",
   "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
@@ -137,9 +137,7 @@ The following JSON representation shows the resource type.
   "meetingOptionsWebUrl": "String",
   "meetingSpokenLanguageTag": "String",
   "recordAutomatically": "Boolean",
-    "sensitivityLabelAssignment": {
-      "@odata.type": "microsoft.graph.onlineMeetingSensitivityLabelAssignment"
-  },
+  "sensitivityLabelAssignment": {"@odata.type": "microsoft.graph.onlineMeetingSensitivityLabelAssignment"},
   "shareMeetingChatHistoryDefault": "String",
   "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "subject": "String",
