@@ -52,7 +52,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a collection of [team](../resources/team.md) objects in the response body.
 
 > [!NOTE]
-> Currently, this API call returns all properties of a [team](../resources/team.md) object, but only populates the **id**, **displayName**, **description**, **isArchived**, and **tenantId** properties. All other properties are returned as `null`. To get all populated properties, use the [Get team](../api/team-get.md) operation.
+> Currently, this API call returns all properties of a [team](../resources/team.md) object, but only the **id**, **displayName**, **description**, **isArchived**, and **tenantId** properties are populated. All other properties are returned as `null`. To get all properties with values, use the [Get team](../api/team-get.md) operation.
 
 
 ## Example
