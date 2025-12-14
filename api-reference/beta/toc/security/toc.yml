@@ -228,7 +228,7 @@ items:
       href: ../../resources/security-auditdata.md
     - name: Default audit data
       href: ../../resources/security-defaultauditdata.md
-- name: Cloude scopes / zones (preview)
+- name: Cloud scopes / zones (preview)
   items:
   - name: Zone
     items:
@@ -250,6 +250,8 @@ items:
       href: ../../resources/security-environment.md
     - name: Attach
       href: ../../api/security-zone-post-environments.md
+    - name: Get
+      href: ../../api/security-environment-get.md
     - name: List
       href: ../../api/security-zone-list-environments.md
     - name: Detach
