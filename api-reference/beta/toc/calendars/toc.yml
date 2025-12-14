@@ -444,6 +444,8 @@ items:
       href: ../../resources/unavailableplacemode.md
 - name: Work hours and locations
   items:
+  - name: Work hours and locations setting
+    items:
     - name: Work hours and locations setting
       href: ../../resources/workhoursandlocationssetting.md
     - name: Get
