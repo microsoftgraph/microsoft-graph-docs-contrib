@@ -48,7 +48,7 @@ Inherits from [entity](entity.md).
 |:---------------|:--------|:----------|
 |[Get](../api/usersettings-get.md) |[userSettings](../resources/usersettings.md)| Get the user and organization settings. |
 |[Update](../api/usersettings-update.md) |[userSettings](../resources/usersettings.md)| Update the user current settings. |
-|[List Windows settings](../api/usersettings-list-windows.md)|[windowsSetting](../resources/windowssetting.md) collection|Get the **windowsSetting** objects and their properties for the signed in user.|
+|[List Windows settings](../api/usersettings-list-windows.md)|[windowsSetting](../resources/windowssetting.md) collection|Get the **windowsSetting** objects and their properties for the signed-in user.|
 |[Get work hours and locations](../api/workhoursandlocationssetting-get.md)|[workHoursAndLocationsSetting](workhoursandlocationssetting.md)|Get the properties and relationships of your own [workHoursAndLocationsSetting](../resources/workhoursandlocationssetting.md).|
 
 ## Properties
