@@ -55,7 +55,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "onlineMeetingSensitivityLabelAssignment",
           "ChangeType": "Addition",
-          "Description": "Added the [onlineMeetingSensitivityLabelAssignment](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingSensitivityLabelAssignment?view=graph-rest-1.0) resource.",
+          "Description": "Added the [onlineMeetingSensitivityLabelAssignment](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingSensitivityLabelAssignment?view=graph-rest-1.0) resource type.",
           "Target": "onlineMeetingSensitivityLabelAssignment"
         },
         {
@@ -111,8 +111,8 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2025-12-10T23:08:18.974258Z",
-      "WorkloadArea": "Cloud communications",
-      "SubArea": "Call"
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
