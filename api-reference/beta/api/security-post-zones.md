@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [Zone](../resources/security-zone.md) object.
+Create a new [zone](../resources/security-zone.md) object.
 
 ## Permissions
 
@@ -107,8 +107,8 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.security.zone",
   "id": "03f98aee-fee9-06b4-e5d3-647ef536acac",
-  "displayName": "String",
-  "description": "String",
+  "displayName": "Production Zone",
+  "description": "Zone for production environments",
   "created": {
     "@odata.type": "microsoft.graph.security.auditInfo"
   },

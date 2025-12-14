@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [Zone](../resources/security-zone.md) object by a spcific ZoneId.
+Get a [zone](../resources/security-zone.md) object by a specific ZoneId.
 
 ## Permissions
 
@@ -85,17 +85,15 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.security.zone",
-    "id": "03f98aee-fee9-06b4-e5d3-647ef536acac",
-    "displayName": "String",
-    "description": "String",
-    "created": {
-      "@odata.type": "microsoft.graph.security.auditInfo"
-    },
-    "modified": {
-      "@odata.type": "microsoft.graph.security.auditInfo"
-    }
+  "@odata.type": "#microsoft.graph.security.zone",
+  "id": "03f98aee-fee9-06b4-e5d3-647ef536acac",
+  "displayName": "Production Zone",
+  "description": "Zone for production environments",
+  "created": {
+    "@odata.type": "microsoft.graph.security.auditInfo"
+  },
+  "modified": {
+    "@odata.type": "microsoft.graph.security.auditInfo"
   }
 }
 ```

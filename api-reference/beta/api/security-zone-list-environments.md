@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all [Environment](../resources/security-Environment.md) objects associated with a [Zone](../resources/security-zone.md) object.
+Get all [environment](../resources/security-environment.md) objects associated with a [zone](../resources/security-zone.md) object.
 
 ## Permissions
 
@@ -89,7 +89,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.security.environment",
       "id": "23613f44-7f57-d1fc-b9a4-448cd3e8c7c3",
-      "kind": "String"
+      "kind": "azureSubscription"
     }
   ]
 }

@@ -24,17 +24,17 @@ Inherits from [entity](../resources/entity.md)
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Create](../api/security-post-zones.md)|[microsoft.graph.security.zone](../resources/security-zone.md)|Create a new zone object.|
-|[Get](../api/security-zone-get.md)|[microsoft.graph.security.zone](../resources/security-zone.md)|Retrieves zone object by its ZoneId.|
-|[List](../api/security-list-zones.md)|[microsoft.graph.security.zone](../resources/security-zone.md) collection|Retrieves all zone objects and their properties.|
+|[Get](../api/security-zone-get.md)|[microsoft.graph.security.zone](../resources/security-zone.md)|Read the properties and relationships of a zone object.|
+|[List](../api/security-list-zones.md)|[microsoft.graph.security.zone](../resources/security-zone.md) collection|Get a list of zone objects and their properties.|
 |[Update](../api/security-zone-update.md)|[microsoft.graph.security.zone](../resources/security-zone.md)|Updates the properties of a zone object.|
-|[Delete](../api/security-delete-zones.md)|None|Deletes a zone object by its ZoneId.|
+|[Delete](../api/security-delete-zones.md)|None|Delete a zone object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |created|[microsoft.graph.security.auditInfo](../resources/security-auditinfo.md)|Creation metadata including user and timestamp.|
 |description|String|Optional description of the zone.|
-|displayName|String|Human-readable name of the zone. Required.|
+|displayName|String|Human-readable name of the zone.|
 |id|String|Unique identifier for the zone. Inherits from [entity](../resources/entity.md)|
 |modified|[microsoft.graph.security.auditInfo](../resources/security-auditinfo.md)|Last modification metadata including user and timestamp.|
 

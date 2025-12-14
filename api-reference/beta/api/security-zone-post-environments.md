@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Attach an [Environment](../resources/security-Environment.md) object to a [Zone](../resources/security-zone.md) object by providing the EnvironmentId.
+Attach an [environment](../resources/security-environment.md) object to a [zone](../resources/security-zone.md) object by providing the EnvironmentId.
 
 ## Permissions
 
@@ -77,7 +77,8 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.security.environment",
-  "kind": "String"
+  "id": "23613f44-7f57-d1fc-b9a4-448cd3e8c7c3",
+  "kind": "azureSubscription"
 }
 ```
 
@@ -99,7 +100,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.security.environment",
   "id": "23613f44-7f57-d1fc-b9a4-448cd3e8c7c3",
-  "kind": "String"
+  "kind": "azureSubscription"
 }
 ```
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [Zone](../resources/security-zone.md) object by providing the ZoneId.
+Delete a [zone](../resources/security-zone.md) object by providing the ZoneId.
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /security/zones/{zoneId}/$ref
+DELETE /security/zones/{zoneId}
 ```
 
 ## Request headers

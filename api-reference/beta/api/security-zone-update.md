@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [Zone](../resources/security-zone.md) object.
+Update the properties of a [zone](../resources/security-zone.md) object.
 
 ## Permissions
 
@@ -76,14 +76,8 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.security.zone",
-  "displayName": "String",
-  "description": "String",
-  "created": {
-    "@odata.type": "microsoft.graph.security.auditInfo"
-  },
-  "modified": {
-    "@odata.type": "microsoft.graph.security.auditInfo"
-  }
+  "displayName": "Production Zone",
+  "description": "Zone for production environments"
 }
 ```
 
@@ -105,8 +99,8 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.security.zone",
   "id": "03f98aee-fee9-06b4-e5d3-647ef536acac",
-  "displayName": "String",
-  "description": "String",
+  "displayName": "Production Zone",
+  "description": "Zone for production environments",
   "created": {
     "@odata.type": "microsoft.graph.security.auditInfo"
   },

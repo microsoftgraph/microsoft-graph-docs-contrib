@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Detach an [Environment](../resources/security-Environment.md) object from a [Zone](../resources/security-zone.md) object by providing the EnvironmentId. EnvironmentId should be URL encoded.
+Detach an [environment](../resources/security-environment.md) object from a [zone](../resources/security-zone.md) object by providing the EnvironmentId. EnvironmentId should be URL encoded.
 
 ## Permissions
 
@@ -62,7 +62,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/security/zones/{zoneId}/environments/{environmentId}
+DELETE https://graph.microsoft.com/beta/security/zones/{zoneId}/environments/{environmentId}/$ref
 ```
 
 

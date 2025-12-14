@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieves a specific [Environment](../resources/security-Environment.md) associated with a [Zone](../resources/security-zone.md). The EnvironmentId must be URL-encoded. 
+Retrieves a specific [environment](../resources/security-environment.md) associated with a [zone](../resources/security-zone.md). The EnvironmentId must be URL-encoded. 
 
 ## Permissions
 
@@ -85,11 +85,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.security.environment",
-    "id": "23613f44-7f57-d1fc-b9a4-448cd3e8c7c3",
-    "kind": "String"
-  }
+  "@odata.type": "#microsoft.graph.security.environment",
+  "id": "23613f44-7f57-d1fc-b9a4-448cd3e8c7c3",
+  "kind": "azureSubscription"
 }
 ```
 
