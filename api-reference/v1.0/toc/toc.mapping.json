@@ -1948,6 +1948,7 @@
             "presence"
           ],
           "complexTypes": [
+            "onlineMeetingSensitivityLabelAssignment",
             "outOfOfficeSettings"
           ],
           "childNodes": [
@@ -2019,9 +2020,6 @@
                     }
                   ]
                 }
-              ],
-              "complexTypes": [
-                "microsoft.graph.onlineMeetingSensitivityLabelAssignment"
               ]
             },
             {
