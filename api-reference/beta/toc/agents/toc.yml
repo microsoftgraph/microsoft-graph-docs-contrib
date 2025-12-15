@@ -52,6 +52,14 @@ items:
         href: ../../api/directory-deleteditems-restore.md
       - name: Permanently delete
         href: ../../api/directory-deleteditems-delete.md
+    - name: Inheritable permissions
+      items:
+      - name: List inheritable permissions
+        href: ../../api/agentidentityblueprint-list-inheritablepermissions.md
+      - name: Add inheritable permissions
+        href: ../../api/agentidentityblueprint-post-inheritablepermissions.md
+      - name: Remove inheritable permissions
+        href: ../../api/agentidentityblueprint-delete-inheritablepermissions.md
     - name: Owners
       items:
       - name: List owners

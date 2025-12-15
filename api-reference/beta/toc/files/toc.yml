@@ -332,7 +332,7 @@ items:
     href: ../../api/sharepointgroupmember-get.md
   - name: Delete
     href: ../../api/sharepointgroup-delete-members.md
-- name: SharePoint migration (preview)
+- name: SharePoint migration
   items:
   - name: Overview
     href: ../../resources/sharepointmigration-api-overview.md
@@ -386,6 +386,22 @@ items:
       href: ../../api/sharepointgroupidentitymapping-get.md
     - name: Update
       href: ../../api/sharepointgroupidentitymapping-update.md
+  - name: SharePoint migration task
+    items:
+    - name: SharePoint migration task
+      href: ../../resources/sharepointmigrationtask.md
+    - name: Get
+      href: ../../api/sharepointmigrationtask-get.md
+    - name: Create or update
+      href: ../../api/sharepointmigrationtask-update.md
+    - name: Get by source user principal name
+      href: ../../api/sharepointmigrationtask-getbysourceuserprincipalname.md
+    - name: Get by source site URL
+      href: ../../api/sharepointmigrationtask-getbysourcesiteurl.md
+    - name: Get by source group mail nickname
+      href: ../../api/sharepointmigrationtask-getbysourcegroupmailnickname.md
+    - name: Cancel
+      href: ../../api/sharepointmigrationtask-cancel.md
   - name: SharePoint user identity mapping
     items:
     - name: SharePoint user identity mapping
@@ -396,10 +412,18 @@ items:
       href: ../../api/sharepointuseridentitymapping-update.md
   - name: Complex types
     items:
+    - name: SharePoint group migration task parameters
+      href: ../../resources/sharepointgroupmigrationtaskparameters.md
     - name: SharePoint identity mapping group migration data
       href: ../../resources/sharepointidentitymappinggroupmigrationdata.md
     - name: SharePoint identity mapping user migration data
       href: ../../resources/sharepointidentitymappingusermigrationdata.md
+    - name: SharePoint migration task parameters
+      href: ../../resources/sharepointmigrationtaskparameters.md
+    - name: SharePoint site migration task parameters
+      href: ../../resources/sharepointsitemigrationtaskparameters.md
+    - name: SharePoint user migration task parameters
+      href: ../../resources/sharepointusermigrationtaskparameters.md
 - name: Complex types
   items:
   - name: File storage container type agent settings

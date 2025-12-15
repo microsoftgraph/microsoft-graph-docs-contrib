@@ -39,11 +39,12 @@ For more supported methods, see [place](./place.md).
 |phone|String|The phone number of the **building**. Inherited from [place](./place.md). |
 |resourceLinks|[resourceLink](./resourcelink.md) collection|A set of links to external resources that are associated with the **building**. Inherited from [place](./place.md). |
 |tags|String collection|Custom tags that are associated with the building for categorization or filtering. Inherited from [place](./place.md). |
-|wifiState |placeFeatureEnablement |A state that indicates whether the building has Wi-Fi. Possible values are: `unknown`, `enabled`, `disabled`, `unknownFutureValue`.|
+|wifiState |placeFeatureEnablement |A state that indicates whether the building has Wi-Fi. The possible values are: `unknown`, `enabled`, `disabled`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+|children|[place](../resources/place.md) collection|A collection of children places that is only used in the [Upsert places](../api/place-patch-places.md) API. The children of a building should be of type [floor](../resources/floor.md). Inherited from [place](../resources/place.md).|
 |map|[buildingMap](../resources/buildingmap.md)|Map file associated with a building in Places. This object is the IMDF-format representation of building.geojson.|
 
 ## JSON representation

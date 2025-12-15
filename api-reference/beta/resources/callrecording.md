@@ -5,7 +5,7 @@ author: "v-sdhakshina"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
-ms.date: 08/06/2025
+ms.date: 10/16/2025
 ---
 
 # callRecording resource type
@@ -21,11 +21,11 @@ Represents a recording associated with an [online meeting](onlinemeeting.md) or 
 |  Method       |  Return Type  | Description|
 |:---------------|:--------|:----------|
 |[List](../api/onlinemeeting-list-recordings.md) | [callRecording](callrecording.md) collection | Get the list of [callRecording](../resources/callrecording.md) objects associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md).|
-|[Get](../api/callrecording-get.md) | [callRecording](callrecording.md) | Get a [callRecording](../resources/callrecording.md) object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md).|
-|[Get](../api/callrecording-get.md) | [callRecording](../resources/callrecording.md) | Get a [callRecording](../resources/callrecording.md) object associated with a meeting and an ad hoc call after the instance has ended.|
+|[Get](../api/callrecording-get.md) | [callRecording](../resources/callrecording.md) | Get a [callRecording](../resources/callrecording.md) object associated with a scheduled [meeting](../resources/onlinemeeting.md) and an [ad hoc call](adhoccall.md) after the instance has ended.|
 |[Get delta by organizer](../api/callrecording-delta.md) | [callRecording](callrecording.md) collection | Get a set of [callRecording](../resources/callrecording.md) resources that were added for [onlineMeeting](../resources/onlinemeeting.md) instances organized by the specified user.|
-|[List recordings by organizer](../api/onlinemeeting-getallrecordings.md) | [callRecording](callrecording.md) collection | Get the [callRecording](../resources/callrecording.md) objects for all the [onlineMeeting](../resources/onlinemeeting.md) instances organized by the specified user.|
- 
+|[List recordings by organizer](../api/onlinemeeting-getallrecordings.md) | [callRecording](callrecording.md) collection | Get the [callRecording](../resources/callrecording.md) objects for all the [onlineMeeting](../resources/onlinemeeting.md) instances initiated by the specified user.|
+|[Get recordings initiated by a specified user](../api/adhoccall-getallrecordings.md) | [callRecording](callrecording.md) collection | Get the [callRecording](callrecording.md) objects for all the [ad hoc call](adhoccall.md) instances initiated by a specific user.|
+
 ## Properties
 
 | Property   | Type |Description|
