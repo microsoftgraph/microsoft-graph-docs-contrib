@@ -67,9 +67,9 @@ The following endpoints are no longer supported for managing [user work location
 ### Teamwork and communications | Messaging
 
 - [Get](/graph/api/channel-get-allmembers?view=graph-rest-beta&preserve-view=true) a specific member from the channel **allMembers** collection. This API provides unified access to both direct and indirect members across all channel types, including shared channels.
-- [Start](/graph/api/channel-startmigration?view=graph-rest-beta) the migration of external messages by enabling migration mode in an existing channel.
-- [Start](/graph/api/chat-startmigration?view=graph-rest-beta) the migration of external messages by enabling migration mode in an existing chat.
-- [Complete](/graph/api/chat-completemigration?view=graph-rest-beta) the migration of external messages by removing migration mode from a chat.
+- [Start](/graph/api/channel-startmigration) the migration of external messages by enabling migration mode in an existing channel.
+- [Start](/graph/api/chat-startmigration) the migration of external messages by enabling migration mode in an existing chat.
+- [Complete](/graph/api/chat-completemigration) the migration of external messages by removing migration mode from a chat.
 
 Use the **layoutType** property on the [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource to create channels with different conversation experiences and switch between them at any time. The property supports two values: `post` for traditional post-reply format and `chat` for a chat-like threading experience. You can set the layout type when [creating a channel](/graph/api/channel-post?view=graph-rest-beta&preserve-view=true) and [update it](/graph/api/channel-patch?view=graph-rest-beta&preserve-view=true) later to switch between layouts.
 
