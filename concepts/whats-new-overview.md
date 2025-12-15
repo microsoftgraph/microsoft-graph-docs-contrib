@@ -54,7 +54,7 @@ Use the [userConfiguration](/graph/api/resources/userconfiguration?view=graph-re
 
 ### Teamwork and communications | Calls and online meetings
 
-The following endpoints are no longer supported for managing [user work location](/graph/api/resources/userworklocation?view=graph-rest-beta) for a user:
+The following endpoints are no longer supported for managing [user work location](/graph/api/resources/userworklocation) for a user:
 - `POST /users/{usersId}/presence/clearAutomaticLocation`
 - `POST /communications/presences/{presenceId}/clearAutomaticLocation`
 - `POST /users/{usersId}/presence/clearLocation`
