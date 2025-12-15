@@ -27,7 +27,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Device and app management | Cloud PC
 
-[Get](/graph/api/cloudpc-retrievecloudpclaunchdetail) the [cloudPcLaunchDetail](/graph/api/resources/cloudpclaunchdetail.md) for a specific Cloud PC that belongs to the current signed-in user.
+[Get](/graph/api/cloudpc-retrievecloudpclaunchdetail) the [cloudPcLaunchDetail](/graph/api/resources/cloudpclaunchdetail) for a specific Cloud PC that belongs to the current signed-in user.
 
 ### Files
 
@@ -54,7 +54,7 @@ Use the [userConfiguration](/graph/api/resources/userconfiguration?view=graph-re
 
 ### Teamwork and communications | Calls and online meetings
 
-The following endpoints are no longer supported for managing [work location](/graph/resources/userworklocation) for a user:
+The following endpoints are no longer supported for managing [user work location](/graph/api/resources/userworklocation?view=graph-rest-beta) for a user:
 - `POST /users/{usersId}/presence/clearAutomaticLocation`
 - `POST /communications/presences/{presenceId}/clearAutomaticLocation`
 - `POST /users/{usersId}/presence/clearLocation`
