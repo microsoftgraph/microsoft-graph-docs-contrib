@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a key. This resource is an open type that allows other properties to be passed in.
+Represents a key. This resource is an open type that allows additional properties beyond those documented here.
 
 ## Properties
 | Property | Type   | Description |

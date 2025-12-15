@@ -330,7 +330,19 @@
               ]
              }
            ]
-         }
+         },
+         {
+          "name": "Work hours and locations (preview)",
+          "overview": "../../resources/workhoursandlocationssetting.md",
+          "resources": [
+            "workHoursAndLocationsSetting",
+            "workPlanOccurrence",
+            "workPlanRecurrence"
+          ],
+          "complexTypes": [
+            "timeOffDetails"
+          ]
+        }
       ]
     },
     {
