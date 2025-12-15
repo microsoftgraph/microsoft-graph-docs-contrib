@@ -22,8 +22,8 @@ For more information on how to use this API, including scenarios, best practices
 > - Operations are retained for 15 days from creation.
 > - This API has a throttling limit of three calls per second. For more information, see [Microsoft Graph service-specific throttling limits](/graph/throttling-limits).
 > - All requests require the `OData-Version: 4.01` header.
-> - Currently, you can't use assigned mode of desk and isTeamsEnabled of room with this API.
-> - For now, the place operation can’t handle a large number of places at once—especially rooms, desks, and workspaces. The current limit is around 20–30 rooms, desks and workspaces. This will be improved in the future.
+> - Currently, this API doesn’t support the assigned mode for desks or the `isTeamsEnabled` property for rooms.
+> - For now, the place operation can’t handle a large number of places at once—especially rooms, desks, and workspaces. The current limit is approximately 20–30 rooms, desks, or workspaces.
 
 ## Permissions
 
