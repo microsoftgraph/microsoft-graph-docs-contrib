@@ -1,6 +1,6 @@
 ---
 title: "cloudPcProvisioningPolicy: retry"
-description: "Retry the provisioning operation for Cloud PCs that used the current policy and failed to apply the provisioning policy."
+description: "Retry the provisioning operation for Cloud PCs that used the current `frontline shared` policy and failed to apply the provisioning policy. "
 author: "ChyouChyou"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -42,9 +42,13 @@ POST /deviceManagement/virtualEndpoint/provisioningPolicies/{provisioningPolicyI
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
+## Request body
+
+In the request body, supply an empty JSON object `{}` for this method.
+
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `202 No Accepted` response code.
 
 ## Examples
 
