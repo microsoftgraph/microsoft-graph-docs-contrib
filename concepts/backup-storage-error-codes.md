@@ -424,4 +424,4 @@ The following table lists the possible error and response code that can be retur
 
 | HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
-|403|Forbidden|Method not allowed for known allowed listed internal apps.|The request is forbidden when it's called from PowerShell.|
+|403|Forbidden|Method not allowed for known allowed listed internal apps.|The request is forbidden when called from Microsoft Graph PowerShell because these APIs are intended for use by registered Backup Controller applications. The Microsoft Graph PowerShell SDK isn't a supported client for these operations.|
