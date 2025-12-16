@@ -25,16 +25,16 @@ The file can be a text file or Word document or binary file received in an email
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|category|[threatCategory](enums.md#threatcategory-values)|The threat category. Possible values are: `spam`, `phishing`, `malware`.|
+|category|[threatCategory](enums.md#threatcategory-values)|The threat category. The possible values are: `spam`, `phishing`, `malware`.|
 |contentData|String|Base64 encoded file content. The file content can't fetch back because it isn't stored.|
-|contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|The content type of threat assessment. Possible values are: `mail`, `url`, `file`.|
+|contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|The content type of threat assessment. The possible values are: `mail`, `url`, `file`.|
 |createdBy|[identitySet](identityset.md)|The threat assessment request creator.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|expectedAssessment|[threatExpectedAssessment](enums.md#threatexpectedassessment-values)|The expected assessment from submitter. Possible values are: `block`, `unblock`.|
+|expectedAssessment|[threatExpectedAssessment](enums.md#threatexpectedassessment-values)|The expected assessment from submitter. The possible values are: `block`, `unblock`.|
 |fileName|String|The file name.|
 |id|String|The threat assessment request ID is a globally unique identifier (GUID).|
-|requestSource|[threatAssessmentRequestSource](enums.md#threatassessmentrequestsource-values)|The source of threat assessment request. Possible values are: `administrator`.|
-|status|[threatAssessmentStatus](enums.md#threatassessmentstatus-values)|The assessment process status. Possible values are: `pending`, `completed`.|
+|requestSource|[threatAssessmentRequestSource](enums.md#threatassessmentrequestsource-values)|The source of threat assessment request. The possible values are: `administrator`.|
+|status|[threatAssessmentStatus](enums.md#threatassessmentstatus-values)|The assessment process status. The possible values are: `pending`, `completed`.|
 
 ## Relationships
 

@@ -55,7 +55,7 @@ The following table shows the properties that are required when you create the s
 |managedDeviceId|String|Intune device id|
 |deviceDisplayName|String|Display name of the device|
 |userPrincipalName|String|User Principal Name|
-|state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|Security baseline compliance state. Possible values are: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|
+|state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|Security baseline compliance state. The possible values are: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|
 |lastReportedDateTime|DateTimeOffset|Last modified date time of the policy report|
 
 

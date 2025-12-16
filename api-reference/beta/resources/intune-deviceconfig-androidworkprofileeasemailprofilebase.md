@@ -41,12 +41,12 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|Authentication method for Exchange ActiveSync. Possible values are: `usernameAndPassword`, `certificate`, `derivedCredential`.|
-|durationOfEmailToSync|[emailSyncDuration](../resources/intune-deviceconfig-emailsyncduration.md)|Duration of time email should be synced to. Possible values are: `userDefined`, `oneDay`, `threeDays`, `oneWeek`, `twoWeeks`, `oneMonth`, `unlimited`.|
-|emailAddressSource|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|Email attribute that is picked from AAD and injected into this profile before installing on the device. Possible values are: `userPrincipalName`, `primarySmtpAddress`.|
+|authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|Authentication method for Exchange ActiveSync. The possible values are: `usernameAndPassword`, `certificate`, `derivedCredential`.|
+|durationOfEmailToSync|[emailSyncDuration](../resources/intune-deviceconfig-emailsyncduration.md)|Duration of time email should be synced to. The possible values are: `userDefined`, `oneDay`, `threeDays`, `oneWeek`, `twoWeeks`, `oneMonth`, `unlimited`.|
+|emailAddressSource|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|Email attribute that is picked from AAD and injected into this profile before installing on the device. The possible values are: `userPrincipalName`, `primarySmtpAddress`.|
 |hostName|String|Exchange location (URL) that the mail app connects to.|
 |requireSsl|Boolean|Indicates whether or not to use SSL.|
-|usernameSource|[androidUsernameSource](../resources/intune-deviceconfig-androidusernamesource.md)|Username attribute that is picked from AAD and injected into this profile before installing on the device. Possible values are: `username`, `userPrincipalName`, `samAccountName`, `primarySmtpAddress`.|
+|usernameSource|[androidUsernameSource](../resources/intune-deviceconfig-androidusernamesource.md)|Username attribute that is picked from AAD and injected into this profile before installing on the device. The possible values are: `username`, `userPrincipalName`, `samAccountName`, `primarySmtpAddress`.|
 
 ## Relationships
 |Relationship|Type|Description|

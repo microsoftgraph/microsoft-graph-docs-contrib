@@ -3,6 +3,104 @@
     {
       "ChangeList": [
         {
+          "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "resourceAccessStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **resourceAccessStatus** enumeration type.",
+          "Target": "resourceAccessStatus"
+        },
+        {
+          "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "resourceAccessType",
+          "ChangeType": "Addition",
+          "Description": "Added the **resourceAccessType** enumeration type.",
+          "Target": "resourceAccessType"
+        },
+        {
+          "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiAgentInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiAgentInfo](https://learn.microsoft.com/en-us/graph/api/resources/aiAgentInfo?view=graph-rest-beta) resource type.",
+          "Target": "aiAgentInfo"
+        },
+        {
+          "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiInteractionEntity",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiInteractionEntity](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionEntity?view=graph-rest-beta) resource type.",
+          "Target": "aiInteractionEntity"
+        },
+        {
+          "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
+          "ApiChange": "Property",
+          "ChangedApiName": "identifier",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **identifier** property from the [aiInteractionPlugin](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionPlugin?view=graph-rest-beta) resource in favor of the **identifier** property inherited from its base type.",
+          "Target": "aiInteractionPlugin"
+        },
+        {
+          "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
+          "ApiChange": "Property",
+          "ChangedApiName": "name",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **name** property from the [aiInteractionPlugin](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionPlugin?view=graph-rest-beta) resource in favor of the **name** property inherited from its base type.",
+          "Target": "aiInteractionPlugin"
+        },
+        {
+          "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
+          "ApiChange": "Property",
+          "ChangedApiName": "version",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **version** property from the [aiInteractionPlugin](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionPlugin?view=graph-rest-beta) resource in favor of the **version** property inherited from its base type.",
+          "Target": "aiInteractionPlugin"
+        },
+        {
+          "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
+          "ApiChange": "Property",
+          "ChangedApiName": "accessedResources",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **accessedResources** property of the [processConversationMetadata](https://learn.microsoft.com/en-us/graph/api/resources/processConversationMetadata?view=graph-rest-beta) resource. The **accessedResources** property is deprecated and stopped returning data on August 20, 2025. Going forward, use the **accessedResources_v2** property.",
+          "Target": "processConversationMetadata"
+        },
+        {
+          "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
+          "ApiChange": "Property",
+          "ChangedApiName": "accessedResources_v2",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessedResources_v2** property to the [processConversationMetadata](https://learn.microsoft.com/en-us/graph/api/resources/processConversationMetadata?view=graph-rest-beta) resource.",
+          "Target": "processConversationMetadata"
+        },
+        {
+          "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
+          "ApiChange": "Property",
+          "ChangedApiName": "agents",
+          "ChangeType": "Addition",
+          "Description": "Added the **agents** property to the [processConversationMetadata](https://learn.microsoft.com/en-us/graph/api/resources/processConversationMetadata?view=graph-rest-beta) resource.",
+          "Target": "processConversationMetadata"
+        },
+        {
+          "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
+          "ApiChange": "Resource",
+          "ChangedApiName": "resourceAccessDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [resourceAccessDetail](https://learn.microsoft.com/en-us/graph/api/resources/resourceAccessDetail?view=graph-rest-beta) resource type.",
+          "Target": "resourceAccessDetail"
+        }
+      ],
+      "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-25T22:21:11.3484441Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Data security and compliance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "1bcf0683-8da5-49e2-ad7b-939947ea200d",
           "ApiChange": "Property",
           "ChangedApiName": "hasProtection",
@@ -19,7 +117,7 @@
       "SubArea": "Data security and compliance"
     },
     {
-        "ChangeList": [
+      "ChangeList": [
         {
           "Id": "f772b158-7bd6-4602-8f3d-5cbeca16c806",
           "ApiChange": "Resource",

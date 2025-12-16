@@ -36,7 +36,7 @@ Inherits from [entity](../resources/entity.md).
 |sizeInGB|Int32|Indicates the size of this image in gigabytes. For example, `64`. Read-only.|
 |skuName|String|The SKU name of this image that is passed to Azure Resource Manager (ARM) to retrieve the image resource. Read-only.|
 |startDate|Date| The date when the Cloud PC image is available for provisioning new Cloud PCs. For example, `2022-09-20`. Read-only.|
-|status|[cloudPcGalleryImageStatus](#cloudpcgalleryimagestatus-values)|The status of the gallery image on the Cloud PC. Possible values are: `supported`, `supportedWithWarning`, `notSupported`, `unknownFutureValue`. The default value is `supported`. Read-only.|
+|status|[cloudPcGalleryImageStatus](#cloudpcgalleryimagestatus-values)|The status of the gallery image on the Cloud PC. The possible values are: `supported`, `supportedWithWarning`, `notSupported`, `unknownFutureValue`. The default value is `supported`. Read-only.|
 
 ### cloudPcGalleryImageStatus values
 

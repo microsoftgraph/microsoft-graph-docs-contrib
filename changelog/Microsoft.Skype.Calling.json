@@ -1,6 +1,122 @@
 {
   "changelog": [
-       {
+    {
+      "ChangeList": [
+        {
+          "Id": "96a3bd97-9e44-40f3-9c29-031c22a205b5",
+          "ApiChange": "Method",
+          "ChangedApiName": "clearAutomaticLocation",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `POST /users/{usersId}/presence/clearAutomaticLocation` (application) and `POST /communications/presences/{presenceId}/clearAutomaticLocation` endpoints from the [clearAutomaticLocation](https://learn.microsoft.com/en-us/graph/api/presence-clearAutomaticLocation?view=graph-rest-beta) method.",
+          "Target": "presence"
+        },
+        {
+          "Id": "96a3bd97-9e44-40f3-9c29-031c22a205b5",
+          "ApiChange": "Method",
+          "ChangedApiName": "clearLocation",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `POST /users/{usersId}/presence/clearLocation` (application) and `POST /communications/presences/{presenceId}/clearLocation` endpoints from the [clearLocation](https://learn.microsoft.com/en-us/graph/api/presence-clearLocation?view=graph-rest-beta) method.",
+          "Target": "presence"
+        },
+        {
+          "Id": "96a3bd97-9e44-40f3-9c29-031c22a205b5",
+          "ApiChange": "Method",
+          "ChangedApiName": "setAutomaticLocation",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `POST /users/{usersId}/presence/setAutomaticLocation` and `POST /communications/presences/{presenceId}/setAutomaticLocation` endpoints from the [setAutomaticLocation](https://learn.microsoft.com/en-us/graph/api/presence-setAutomaticLocation?view=graph-rest-beta) method.",
+          "Target": "presence"
+        },
+        {
+          "Id": "96a3bd97-9e44-40f3-9c29-031c22a205b5",
+          "ApiChange": "Method",
+          "ChangedApiName": "setManualLocation",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `POST /users/{usersId}/presence/setManualLocation` and `POST /communications/presences/{presenceId}/setManualLocation` endpoints from the [setManualLocation](https://learn.microsoft.com/en-us/graph/api/presence-setManualLocation?view=graph-rest-beta) method.",
+          "Target": "presence"
+        }
+      ],
+      "Id": "96a3bd97-9e44-40f3-9c29-031c22a205b5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-12-08T16:02:03.2817806Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3cdabea4-6923-4c02-b014-2c4cdd22dfd4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "workLocationSource",
+          "ChangeType": "Addition",
+          "Description": "Added the **workLocationSource** enumeration type.",
+          "Target": "workLocationSource"
+        },
+        {
+          "Id": "3cdabea4-6923-4c02-b014-2c4cdd22dfd4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "workLocationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **workLocationType** enumeration type.",
+          "Target": "workLocationType"
+        },
+        {
+          "Id": "3cdabea4-6923-4c02-b014-2c4cdd22dfd4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userWorkLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [userWorkLocation](https://learn.microsoft.com/en-us/graph/api/resources/userWorkLocation?view=graph-rest-beta) resource.",
+          "Target": "userWorkLocation"
+        },
+        {
+          "Id": "3cdabea4-6923-4c02-b014-2c4cdd22dfd4",
+          "ApiChange": "Property",
+          "ChangedApiName": "workLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the **workLocation** property to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-beta) resource.",
+          "Target": "presence"
+        },
+        {
+          "Id": "3cdabea4-6923-4c02-b014-2c4cdd22dfd4",
+          "ApiChange": "Method",
+          "ChangedApiName": "clearAutomaticLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [clearAutomaticLocation](https://learn.microsoft.com/en-us/graph/api/presence-clearAutomaticLocation?view=graph-rest-beta) method to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-beta) resource.",
+          "Target": "presence"
+        },
+        {
+          "Id": "3cdabea4-6923-4c02-b014-2c4cdd22dfd4",
+          "ApiChange": "Method",
+          "ChangedApiName": "clearLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [clearLocation](https://learn.microsoft.com/en-us/graph/api/presence-clearLocation?view=graph-rest-beta) method to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-beta) resource.",
+          "Target": "presence"
+        },
+        {
+          "Id": "3cdabea4-6923-4c02-b014-2c4cdd22dfd4",
+          "ApiChange": "Method",
+          "ChangedApiName": "setAutomaticLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [setAutomaticLocation](https://learn.microsoft.com/en-us/graph/api/presence-setAutomaticLocation?view=graph-rest-beta) method to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-beta) resource.",
+          "Target": "presence"
+        },
+        {
+          "Id": "3cdabea4-6923-4c02-b014-2c4cdd22dfd4",
+          "ApiChange": "Method",
+          "ChangedApiName": "setManualLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [setManualLocation](https://learn.microsoft.com/en-us/graph/api/presence-setManualLocation?view=graph-rest-beta) method to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-beta) resource.",
+          "Target": "presence"
+        }
+      ],
+      "Id": "3cdabea4-6923-4c02-b014-2c4cdd22dfd4",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-25T16:02:03.2817806Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
       "ChangeList": [
         {
           "Id": "27f09bdb-b642-4beb-8aee-3192c7c6cd0f",
@@ -125,7 +241,6 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2025-11-13T17:05:23.3008252Z",
-
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
     },

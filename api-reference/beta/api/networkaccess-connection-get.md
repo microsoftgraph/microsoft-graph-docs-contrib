@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a connection object.
+Read the properties and relationships of a [connection](../resources/networkaccess-connection.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

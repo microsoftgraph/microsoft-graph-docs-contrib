@@ -29,17 +29,17 @@ Inherits from [entity](../resources/entity.md).
 | allowAttendeeToEnableMic | Boolean | Indicates whether attendees can turn on their microphone. |
 | allowBreakoutRooms | Boolean | Indicates whether breakout rooms are enabled for the meeting. |
 | allowCopyingAndSharingMeetingContent | Boolean | Indicates whether copying and sharing meeting content is enabled for the meeting. |
-| allowedLobbyAdmitters      | [allowedLobbyAdmitterRoles](#allowedlobbyadmitterroles-values) | Specifies the users who can admit from the lobby. Possible values are: `organizerAndCoOrganizersAndPresenters`, `organizerAndCoOrganizers`, `unknownFutureValue`. |
-| allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| Specifies who can be a presenter in a meeting. Possible values are: `everyone`, `organization`, `roleIsPresenter`, `organizer`, `unknownFutureValue`. |
-| allowLiveShare | [meetingLiveShareOptions](#meetingliveshareoptions-values) | Indicates whether live share is enabled for the meeting. Possible values are: `enabled`, `disabled`, `unknownFutureValue`. |
-| allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Specifies the mode of meeting chat. Possible values are: `enabled`, `disabled`, `limited`, `unknownFutureValue`. |
+| allowedLobbyAdmitters      | [allowedLobbyAdmitterRoles](#allowedlobbyadmitterroles-values) | Specifies the users who can admit from the lobby. The possible values are: `organizerAndCoOrganizersAndPresenters`, `organizerAndCoOrganizers`, `unknownFutureValue`. |
+| allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| Specifies who can be a presenter in a meeting. The possible values are: `everyone`, `organization`, `roleIsPresenter`, `organizer`, `unknownFutureValue`. |
+| allowLiveShare | [meetingLiveShareOptions](#meetingliveshareoptions-values) | Indicates whether live share is enabled for the meeting. The possible values are: `enabled`, `disabled`, `unknownFutureValue`. |
+| allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Specifies the mode of meeting chat. The possible values are: `enabled`, `disabled`, `limited`, `unknownFutureValue`. |
 | allowParticipantsToChangeName | Boolean | Specifies if participants are allowed to rename themselves in an instance of the meeting. |
 | allowPowerPointSharing | Boolean | Indicates whether PowerPoint live is enabled for the meeting. |
 | allowRecording | Boolean | Indicates whether recording is enabled for the meeting. |
 | allowTeamworkReactions | Boolean | Indicates if Teams reactions are enabled for the meeting. |
 | allowTranscription | Boolean | Indicates whether transcription is enabled for the meeting. |
 | allowWhiteboard | Boolean | Indicates whether whiteboard is enabled for the meeting. |
-| anonymizeIdentityForRoles    | onlineMeetingRole collection | Specifies whose identity is anonymized in the meeting. Possible values are: `attendee`. The `attendee` value can't be removed through a PATCH operation once added.|
+| anonymizeIdentityForRoles    | onlineMeetingRole collection | Specifies whose identity is anonymized in the meeting. The possible values are: `attendee`. The `attendee` value can't be removed through a PATCH operation once added.|
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for an online meeting. Read-only. |
 | chatInfo              | [chatInfo](chatinfo.md) | The chat information associated with this online meeting.  |
 | chatRestrictions      | [chatRestrictions](../resources/chatrestrictions.md) | Specifies the configuration settings for meeting chat restrictions. |
@@ -55,7 +55,7 @@ Inherits from [entity](../resources/entity.md).
 | meetingSpokenLanguageTag | String | Specifies the spoken language used during the meeting for recording and transcription purposes. |
 | recordAutomatically | Boolean | Indicates whether to record the meeting automatically. |
 | sensitivityLabelAssignment|[onlineMeetingSensitivityLabelAssignment](../resources/onlinemeetingsensitivitylabelassignment.md)|Specifies the sensitivity label applied to the Teams meeting.|
-| shareMeetingChatHistoryDefault | [meetingChatHistoryDefaultMode](#meetingchathistorydefaultmode-values) |Specifies whether meeting chat history is shared with participants.  Possible values are: `all`, `none`, `unknownFutureValue`.|
+| shareMeetingChatHistoryDefault | [meetingChatHistoryDefaultMode](#meetingchathistorydefaultmode-values) |Specifies whether meeting chat history is shared with participants.  The possible values are: `all`, `none`, `unknownFutureValue`.|
 | subject | String | The subject of the online meeting. |
 | videoTeleconferenceId | String | The video teleconferencing ID. Read-only. |
 | watermarkProtection | [watermarkProtectionValues](watermarkprotectionvalues.md)     | Specifies whether the client application should apply a watermark to a content type.  |

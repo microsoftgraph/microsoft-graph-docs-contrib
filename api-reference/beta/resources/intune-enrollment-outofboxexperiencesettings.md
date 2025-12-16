@@ -23,8 +23,8 @@ The Windows Autopilot Deployment Profile settings used by the Autopilot device f
 |:---|:---|:---|
 |hidePrivacySettings|Boolean|Show or hide privacy settings to user|
 |hideEULA|Boolean|Show or hide EULA to user|
-|userType|[windowsUserType](../resources/intune-enrollment-windowsusertype.md)|Type of user. Possible values are: `administrator`, `standard`, `unknownFutureValue`.|
-|deviceUsageType|[windowsDeviceUsageType](../resources/intune-enrollment-windowsdeviceusagetype.md)|AAD join authentication type. Possible values are: `singleUser`, `shared`, `unknownFutureValue`.|
+|userType|[windowsUserType](../resources/intune-enrollment-windowsusertype.md)|Type of user. The possible values are: `administrator`, `standard`, `unknownFutureValue`.|
+|deviceUsageType|[windowsDeviceUsageType](../resources/intune-enrollment-windowsdeviceusagetype.md)|AAD join authentication type. The possible values are: `singleUser`, `shared`, `unknownFutureValue`.|
 |skipKeyboardSelectionPage|Boolean|If set, then skip the keyboard selection page if Language and Region are set|
 |hideEscapeLink|Boolean|If set to true, then the user can't start over with different account, on company sign-in|
 

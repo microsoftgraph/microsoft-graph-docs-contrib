@@ -53,7 +53,7 @@ The following table shows the properties that are available when you create an [
 |description|String|A brief description of the acronym that gives users more information about the acronym and what it stands for. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
 |displayName|String|The actual short form or acronym. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
 |standsFor|String|What the acronym stands for.|
-|state|microsoft.graph.search.answerState|State of the acronym. Possible values are: `published`, `draft`, `excluded`, `unknownFutureValue`.|
+|state|microsoft.graph.search.answerState|State of the acronym. The possible values are: `published`, `draft`, `excluded`, `unknownFutureValue`.|
 |webUrl|String|The URL of the page or website where users can go for more information about the acronym. Inherited from [searchAnswer](../resources/search-searchanswer.md).|
 
 ## Response
