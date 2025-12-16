@@ -12,8 +12,6 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Provides information about the quarantine state of a [synchronizationJob](synchronization-synchronizationjob.md).
 
 ## Properties

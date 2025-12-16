@@ -12,8 +12,6 @@ ms.date: 05/24/2024
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents the structure of active and deleted [fileStorageContainer](../resources/filestoragecontainer.md) objects.
 
 ## Methods
