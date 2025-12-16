@@ -15,7 +15,7 @@
               "ApiChange": "Property",
               "ChangedApiName": "applicationTimeoutInMinutes",
               "ChangeType": "Change",
-              "Description": "Updated the supported value range for the **applicationTimeoutInMinutes** property on [cloudPcAutopilotConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcAutopilotConfiguration?view=graph-rest-beta) from 10 to 360 to 30 to 360.",
+              "Description": "Updated the supported value range for the **applicationTimeoutInMinutes** property on [cloudPcAutopilotConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcAutopilotConfiguration?view=graph-rest-beta) from 10–360 to 30–360.",
               "Target": "cloudPcAutopilotConfiguration"
             }
           ],
