@@ -47,7 +47,7 @@ The following table lists the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|relationship|relationType|Type of relation to be created. Possible values are: `pin`, `reuse`.|
+|relationship|relationType|Type of relation to be created. The possible values are: `pin`, `reuse`.|
 |set| [microsoft.graph.termstore.set](../resources/termstore-set.md)| The set where the relationship needs to be created.
 |fromTerm| [microsoft.graph.termstore.term](../resources/termstore-term.md) | The term with which the relationship needs to be created.
 

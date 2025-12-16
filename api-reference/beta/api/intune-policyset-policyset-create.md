@@ -56,8 +56,8 @@ The following table shows the properties that are required when you create the p
 |lastModifiedDateTime|DateTimeOffset|Last modified time of the PolicySet.|
 |displayName|String|DisplayName of the PolicySet.|
 |description|String|Description of the PolicySet.|
-|status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Validation/assignment status of the PolicySet. Possible values are: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
-|errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Error code if any occured. Possible values are: `noError`, `unauthorized`, `notFound`, `deleted`.|
+|status|[policySetStatus](../resources/intune-policyset-policysetstatus.md)|Validation/assignment status of the PolicySet. The possible values are: `unknown`, `validating`, `partialSuccess`, `success`, `error`, `notAssigned`.|
+|errorCode|[errorCode](../resources/intune-policyset-errorcode.md)|Error code if any occured. The possible values are: `noError`, `unauthorized`, `notFound`, `deleted`.|
 |guidedDeploymentTags|String collection|Tags of the guided deployment|
 |roleScopeTags|String collection|RoleScopeTags of the PolicySet|
 

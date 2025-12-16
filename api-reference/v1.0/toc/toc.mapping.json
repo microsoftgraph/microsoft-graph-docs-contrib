@@ -225,8 +225,22 @@
           "name": "Places",
           "resources": [
             "place",
+            "building",
+            "desk",
+            "floor",
             "room",
-            "roomList"
+            "roomList",
+            "section",
+            "workspace",
+            "checkInClaim"
+          ],
+          "complexTypes": [
+            "assignedPlaceMode",
+            "dropInPlaceMode",
+            "mailboxDetails",
+            "placeMode",
+            "reservablePlaceMode",
+            "resourceLink"
           ]
         }
       ]
@@ -655,6 +669,27 @@
         "recycleBin",
         "recycleBinItem",
         "sharedDriveItem"
+      ],
+      "childNodes": [
+        {
+          "name": "SharePoint migration",
+          "overview": "../../resources/sharepointmigration-api-overview.md",
+          "resources": [
+            "sharePointMigrationEvent",
+            "sharePointMigrationFinishManifestFileUploadEvent",
+            "sharePointMigrationJob",
+            "sharePointMigrationJobCancelledEvent",
+            "sharePointMigrationJobDeletedEvent",
+            "sharePointMigrationJobErrorEvent",
+            "sharePointMigrationJobPostponedEvent",
+            "sharePointMigrationJobProgressEvent",
+            "sharePointMigrationJobQueuedEvent",
+            "sharePointMigrationJobStartEvent"
+          ],
+          "complexTypes": [
+            "sharePointMigrationContainerInfo"
+          ]
+        }
       ]
     },
     {
@@ -1003,14 +1038,24 @@
           "resources": [
             "appRoleAssignment",
             "dataPolicyOperation",
-            "oAuth2PermissionGrant",
-            "certificateBasedAuthConfiguration",
-            "webApplicationFirewallProvider",
-            "cloudFlareWebApplicationFirewallProvider",
-            "akamaiWebApplicationFirewallProvider",
-            "webApplicationFirewallVerificationModel"
+            "oAuth2PermissionGrant"
           ],
           "childNodes": [
+            {
+              "name": "Certificate-based authentication (CBA)",
+              "resources": [
+                "certificateBasedAuthConfiguration"
+              ]
+            },
+            {
+              "name": "Web application firewall",
+              "resources": [
+                "webApplicationFirewallProvider",
+                "akamaiWebApplicationFirewallProvider",
+                "cloudFlareWebApplicationFirewallProvider",
+                "webApplicationFirewallVerificationModel"
+              ]
+            },
             {
               "name": "Authentication event listeners",
               "resources": [
@@ -1403,7 +1448,7 @@
               ]
             },
             {
-              "name": "Microsoft Entra audit logs",
+              "name": "Microsoft Entra logs",
               "overview": "../../resources/azure-ad-auditlog-overview.md",
               "resources": [
                 "directoryAudit",
@@ -1619,7 +1664,8 @@
             "microsoft.graph.security.ediscoveryHoldPolicy",
             "microsoft.graph.security.ediscoverySearch",
             "microsoft.graph.security.ediscoveryReviewSet",
-            "microsoft.graph.security.ediscoveryReviewTag"
+            "microsoft.graph.security.ediscoveryReviewTag",
+            "microsoft.graph.security.ediscoveryCaseMember"
           ],
           "childNodes": [
             {
@@ -1906,6 +1952,12 @@
             "outOfOfficeSettings"
           ],
           "childNodes": [
+            {
+              "name": "Ad hoc call",
+              "resources": [
+                "adhocCall"
+              ]
+            },            
             {
               "name": "Calls",
               "resources": [

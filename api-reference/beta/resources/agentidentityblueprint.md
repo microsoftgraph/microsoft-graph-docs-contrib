@@ -34,12 +34,12 @@ This resource is an open type that allows additional properties beyond those doc
 |[Remove password](../api/agentidentityblueprint-removepassword.md)|[passwordCredential](../resources/passwordcredential.md)|Remove a password or secret from an agent identity blueprint.|
 |[Add key](../api/agentidentityblueprint-addkey.md)|[keyCredential](../resources/keycredential.md)|Add a key credential to an agent identity blueprint.|
 |[Remove key](../api/agentidentityblueprint-removekey.md)|None|Remove a key credential from an agent identity blueprint.|
-|[List federatedIdentityCredential](../api/agentidentityblueprint-list-federatedidentitycredentials.md)|[federatedIdentityCredential](../resources/federatedidentitycredential.md) collection|Get a list of the [federatedIdentityCredential](../resources/federatedidentitycredential.md) objects and their properties.|
-|[Create federatedIdentityCredential](../api/agentidentityblueprint-post-federatedidentitycredentials.md)|[federatedIdentityCredential](../resources/federatedidentitycredential.md)|Create a new [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.|
-|[Get federatedIdentityCredential](../api/agentidentityblueprint-federatedidentitycredential-get.md)|[federatedIdentityCredential](../resources/federatedidentitycredential.md)|Get the properties of a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.|
-|[Update federatedIdentityCredential](../api/agentidentityblueprint-federatedidentitycredential-update.md)|None|Update the properties of a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.|
-|[Upsert federatedIdentityCredential](../api/agentidentityblueprint-federatedidentitycredential-upsert.md)|[federatedIdentityCredential](../resources/federatedidentitycredential.md)|Create a new [federatedIdentityCredential](../resources/federatedidentitycredential.md) if it doesn't exist, or update the properties of an existing [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.|
-|[Delete federatedIdentityCredential](../api/agentidentityblueprint-federatedidentitycredential-delete.md)|None|Deletes a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.|
+|[List federated identity credential](../api/federatedidentitycredential-list.md)|[federatedIdentityCredential](../resources/federatedidentitycredential.md) collection|Get a list of the [federatedIdentityCredential](../resources/federatedidentitycredential.md) objects and their properties.|
+|[Create federated identity credential](../api/federatedidentitycredential-post.md)|[federatedIdentityCredential](../resources/federatedidentitycredential.md)|Create a new [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.|
+|[Get federated identity credential](../api/federatedidentitycredential-get.md)|[federatedIdentityCredential](../resources/federatedidentitycredential.md)|Read the properties and relationships of a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.|
+|[Update federated identity credential](../api/federatedidentitycredential-update.md)|None|Update the properties of a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.|
+|[Upsert federated identity credential](../api/federatedidentitycredential-upsert.md)|[federatedIdentityCredential](../resources/federatedidentitycredential.md)|Create a new [federatedIdentityCredential](../resources/federatedidentitycredential.md) if it doesn't exist, or update the properties of an existing [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.|
+|[Delete federated identity credential](../api/federatedidentitycredential-delete.md)|None|Delete a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.|
 |**Deleted items**|||
 |[List](../api/directory-deleteditems-list.md) | [directoryObject](directoryobject.md) collection | Retrieve a list of recently deleted agent identities. |
 |[Get](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) | Retrieve the properties of a recently deleted agent identity. |
@@ -56,6 +56,10 @@ This resource is an open type that allows additional properties beyond those doc
 |**Verified publisher**| | |
 |[Set](../api/agentidentityblueprint-setverifiedpublisher.md)| None | Set the verified publisher of an application.|
 |[Unset](../api/agentidentityblueprint-unsetverifiedpublisher.md)| None | Unset the verified publisher of an application.|
+|**Inheritable permissions**|||
+|[List inheritable permissions](../api/agentidentityblueprint-list-inheritablepermissions.md)|[inheritablePermission](../resources/inheritablepermission.md) collection|Get a list of the inheritablePermission objects and their properties.|
+|[Add inheritable permission](../api/agentidentityblueprint-post-inheritablepermissions.md)|[inheritablePermission](../resources/inheritablepermission.md)|Create a new inheritablePermission object.|
+|[Delete inheritable permission](../api/agentidentityblueprint-delete-inheritablepermissions.md)|None|Delete an inheritablePermission object.|
 
 ## Properties
 
@@ -72,7 +76,7 @@ This resource is an open type that allows additional properties beyond those doc
 |createdDateTime|DateTimeOffset|The date and time the agent identity blueprint was registered. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. Read-only. Inherited from [application](../resources/application.md).|
 |createdByAppId|String|The **appId** (called **Application (client) ID** on the Microsoft Entra admin center) of the application that created this agent identity blueprint. Set internally by Microsoft Entra ID. Read-only. Inherited from [application](../resources/application.md).|
 |description|String|Free text field to provide a description of the agent identity blueprint to end users. The maximum allowed size is 1,024 characters. Inherited from [application](../resources/application.md).|
-|disabledByMicrosoftStatus|String|Specifies whether Microsoft has disabled the registered agent identity blueprint. Possible values are: `null` (default value), `NotDisabled`, and `DisabledDueToViolationOfServicesAgreement` (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement). Inherited from [application](../resources/application.md).|
+|disabledByMicrosoftStatus|String|Specifies whether Microsoft has disabled the registered agent identity blueprint. The possible values are: `null` (default value), `NotDisabled`, and `DisabledDueToViolationOfServicesAgreement` (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement). Inherited from [application](../resources/application.md).|
 |displayName|String|The display name for the agent identity blueprint. Maximum length is 256 characters. Inherited from [application](../resources/application.md).|
 |groupMembershipClaims|String|Configures the `groups` claim issued in a user or OAuth 2.0 access token that the agent identity blueprint expects. To set this attribute, use one of the following string values: `None`, `SecurityGroup` (for security groups and Microsoft Entra roles), `All` (this gets all security groups, distribution groups, and Microsoft Entra directory roles that the signed-in user is a member of). Inherited from [application](../resources/application.md).|
 |id|String|Unique identifier for the agent identity blueprint object. This property is referred to as **Object ID** in the Microsoft Entra admin center. Key. Not nullable. Read-only. Inherited from [directoryObject](../resources/directoryobject.md).|
@@ -95,8 +99,9 @@ This resource is an open type that allows additional properties beyond those doc
 |:---|:---|:---|
 |appManagementPolicies|[appManagementPolicy](../resources/appmanagementpolicy.md) collection|The appManagementPolicy applied to this agent identity blueprint. Inherited from [microsoft.graph.application](../resources/application.md)|
 |federatedIdentityCredentials|[federatedIdentityCredential](../resources/federatedidentitycredential.md) collection|Federated identities for agent identity blueprints. Inherited from [microsoft.graph.application](../resources/application.md)|
+|inheritablePermissions|[inheritablePermission](../resources/inheritablepermission.md) collection|Defines scopes of a resource application that may be automatically granted to agent identities without additional consent.|
 |owners|[directoryObject](../resources/directoryobject.md) collection|Directory objects that are owners of this agent identity blueprint. The owners are a set of nonadmin users or service principals allowed to modify this object. Read-only. Nullable. Inherited from [microsoft.graph.application](../resources/application.md)|
-|sponsors|[directoryObject](../resources/directoryobject.md) collection|The sponsors for this agent identity blueprint. Sponsors are users or groups who can authorize and manage the lifecycle of agent identity instances.|
+|sponsors|[directoryObject](../resources/directoryobject.md) collection|The sponsors for this agent identity blueprint. Sponsors are users or groups who can authorize and manage the lifecycle of agent identity instances. Required during the create operation.|
 
 ## JSON representation
 The following JSON representation shows the resource type. Only a subset of all properties are returned by default. All other properties can only be retrieved using `$select`.

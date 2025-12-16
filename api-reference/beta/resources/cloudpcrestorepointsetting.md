@@ -20,7 +20,7 @@ Represents the settings of a point-in-time restore of a Cloud PC.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|frequencyType|[cloudPcRestorePointFrequencyType](#cloudpcrestorepointfrequencytype-values)|The time interval in hours to take snapshots (restore points) of a Cloud PC automatically. Possible values are: `default`, `fourHours`, `sixHours`, `twelveHours`, `sixteenHours`, `twentyFourHours`, `unknownFutureValue`. The default value is `default` that indicates that the time interval for automatic capturing of restore point snapshots is set to 12 hours.|
+|frequencyType|[cloudPcRestorePointFrequencyType](#cloudpcrestorepointfrequencytype-values)|The time interval in hours to take snapshots (restore points) of a Cloud PC automatically. The possible values are: `default`, `fourHours`, `sixHours`, `twelveHours`, `sixteenHours`, `twentyFourHours`, `unknownFutureValue`. The default value is `default` that indicates that the time interval for automatic capturing of restore point snapshots is set to 12 hours.|
 |userRestoreEnabled|Boolean|If `true`, the user has the ability to use snapshots to restore Cloud PCs. If `false`, non-admin users can't use snapshots to restore the Cloud PC.|
 |frequencyInHours (deprecated)|Int32|The time interval in hours to take snapshots (restore points) of a Cloud PC automatically. Possible values are `4`, `6`, `12`, `16`, and `24`. The default frequency is 12 hours. The **frequencyInHours** property is deprecated and will stop returning data on January 31, 2024. Going forward, use the **frequencyType** property.|
 

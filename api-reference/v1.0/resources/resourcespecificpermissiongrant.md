@@ -34,7 +34,7 @@ For more information about granting apps consent to access a specific instance o
 | deletedDateTime | dateTimeOffset| Not used.                                                                             |
 | id              | string        | The unique identifier of the resource-specific permission grant. Read-only.           |
 | resourceAppId   | string        | ID of the Microsoft Entra app that is hosting the resource. Read-only.                        |
-| permissionType  | string        | The type of permission. Possible values are: `Application`, `Delegated`. Read-only. |
+| permissionType  | string        | The type of permission. The possible values are: `Application`, `Delegated`. Read-only. |
 | permission      | string        | The name of the resource-specific permission. Read-only.                                                |
 
 ## JSON representation

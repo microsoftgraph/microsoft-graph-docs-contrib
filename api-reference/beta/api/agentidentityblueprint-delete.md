@@ -53,6 +53,8 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `204 No Content` response code.
 
+For information about errors returned by agent identity APIs, see [Agent identity error codes](/entra/agent-id/identity-platform/error-codes).
+
 ## Examples
 
 ### Request

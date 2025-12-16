@@ -22,7 +22,7 @@ Inherits from [windowsUpdateFilter](../resources/windowsupdates-windowsupdatefil
 
 |Property|Type|Description|
 |:---|:---|:---|
-|remediationType|microsoft.graph.windowsUpdates.remediationType|The type of remediation content that is offered to the device. Possible values are: `inPlaceUpgrade`, `unknownFutureValue`.|
+|remediationType|microsoft.graph.windowsUpdates.remediationType|The type of remediation content that is offered to the device. The possible values are: `inPlaceUpgrade`, `unknownFutureValue`.|
 
 ## Relationships
 None.

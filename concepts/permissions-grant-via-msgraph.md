@@ -52,7 +52,7 @@ The following request retrieves the app roles defined by the Microsoft Graph ser
   "name": "get-approles-for-microsoftgraph"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=displayName eq 'Microsoft Graph'&$select=id,displayName,appId,appRoles
+GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=appId eq '00000003-0000-0000-c000-000000000000'&$select=id,displayName,appId,appRoles
 ```
 
 # [C#](#tab/csharp)
@@ -386,7 +386,7 @@ This request retrieves the delegated permissions defined by the Microsoft Graph 
   "name": "get-scopes-for-microsoftgraph"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=displayName eq 'Microsoft Graph'&$select=id,displayName,appId,oauth2PermissionScopes
+GET https://graph.microsoft.com/v1.0/servicePrincipals?$filter=appId eq '00000003-0000-0000-c000-000000000000'&$select=id,displayName,appId,oauth2PermissionScopes
 ```
 
 # [C#](#tab/csharp)
@@ -640,6 +640,25 @@ Content-type: application/json
     ]
 }
 ```
+
+### Update the permission grant
+
+To add more permissions or remove some permissions for the client to the resource service principal for the user, update the **oauth2PermissionGrant** object as shown in the following request. The request returns a `204 No Content` response.
+
+<!-- {
+  "blockType": "request",
+  "name": "update-delegated-perms-sp-oauth2permissiongrants"
+}-->
+```msgraph-interactive
+PATCH https://graph.microsoft.com/v1.0/oauth2PermissionGrants/47nZsM8O_UuNq5Jz3QValETpqX7OcT1EgRxx6AR7VXqdkr0_VoxiRIUeDrmns6Kl
+Content-type: application/json
+
+{
+    "scope": "openid profile offline_access DelegatedPermissionGrant.ReadWrite.All AccessReview.ReadWrite.All AgentIdentityBlueprint.ReadWrite.All"
+}
+```
+
+---
 
 ## Step 3: Revoke delegated permissions granted to a service principal on behalf of a user [optional]
 
