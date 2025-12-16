@@ -3728,6 +3728,13 @@ Possible values for user account types (group membership), per Windows definitio
 | unknownFutureValue |
 | rosterUpdated |
 
+### resourceLinkType values
+
+Member|
+|:---|
+|url|
+|unknownFutureValue|
+
 ### fileStorageContainerBillingClassification values 
 
 |Member|
