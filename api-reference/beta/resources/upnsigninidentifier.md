@@ -3,7 +3,7 @@ title: "upnSignInIdentifier resource type"
 description: "Represents a UPN (User Principal Name) sign-in identifier that enables users to authenticate using their User Principal Name."
 author: "Gyanendersinghgithub"
 ms.date: 10/02/2025
-toc.title: Upn sign-in identifier
+toc.title: UPN sign-in identifier
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a UPN (User Principal Name) sign-in identifier that enables users to authenticate using their User Principal Name. This is a built-in sign-in identifier that cannot be created or deleted, but can be enabled or disabled.
+Represents a sign-in identifier that enables users to authenticate using their user principal name. This is a built-in sign-in identifier that cannot be created or deleted, but can be enabled or disabled.
 
 Inherits from [signInIdentifierBase](../resources/signinidentifierbase.md).
 
