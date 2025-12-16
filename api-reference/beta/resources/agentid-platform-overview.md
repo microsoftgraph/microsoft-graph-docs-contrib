@@ -78,7 +78,7 @@ Permissions for managing the agent registry:
 - AgentCollection.Read*
 - AgentInstance.Read*
 
-Permissions for managing the agent blueprints and identities:
+Permissions for managing the agent identity blueprints and identities:
 - AgentIdentity*
 
 Permissions for nmanaging agent users:
