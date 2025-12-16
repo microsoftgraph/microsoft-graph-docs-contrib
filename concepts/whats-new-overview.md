@@ -24,6 +24,9 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Use the new supported [media sizes](/graph/api/resources/printercapabilities#mediasizes-values) in the **mediaSizes** property of the [printerCapabilities](/graph/api/resources/printercapabilities) resource.
 
+### Teamwork and communications | Calls and online meetings
+
+The [callRecord: getPstnCalls](/graph/api/callrecords-callrecord-getpstncalls) API now clarifies that it doesn't return information for **Telstra** calling plans only.
 ### Identity and access | Governance
 
 Use the following resources to represent the data sent to Azure Logic Apps as part of a custom extension callout request when a custom extension in a catalog is used:
@@ -77,15 +80,16 @@ Removed the **conditionalAccessAudience** resource type. The return type of the 
 
 ### Teamwork and communications | Calls and online meetings
 
-The following endpoints are no longer supported for managing [user work location](/graph/api/resources/userworklocation) for a user:
-- `POST /users/{usersId}/presence/clearAutomaticLocation`
-- `POST /communications/presences/{presenceId}/clearAutomaticLocation`
-- `POST /users/{usersId}/presence/clearLocation`
-- `POST /communications/presences/{presenceId}/clearLocation`
-- `POST /users/{usersId}/presence/setAutomaticLocation`
-- `POST /communications/presences/{presenceId}/setAutomaticLocation`
-- `POST /users/{usersId}/presence/setManualLocation`
-- `POST /communications/presences/{presenceId}/setManualLocation`
+- The [callRecord: getPstnCalls](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta&preserve-view=true) API now clarifies that it doesn't return information for **Telstra** calling plans only.
+- The following endpoints are no longer supported for managing [user work location](/graph/api/resources/userworklocation?view=graph-rest-beta&preserve-view=true):
+  - `POST /users/{usersId}/presence/clearAutomaticLocation`
+  - `POST /communications/presences/{presenceId}/clearAutomaticLocation`
+  - `POST /users/{usersId}/presence/clearLocation`
+  - `POST /communications/presences/{presenceId}/clearLocation`
+  - `POST /users/{usersId}/presence/setAutomaticLocation`
+  - `POST /communications/presences/{presenceId}/setAutomaticLocation`
+  - `POST /users/{usersId}/presence/setManualLocation`
+  - `POST /communications/presences/{presenceId}/setManualLocation`
 
 ### Teamwork and communications | Messaging
 
