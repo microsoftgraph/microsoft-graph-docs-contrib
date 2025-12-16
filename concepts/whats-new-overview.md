@@ -42,7 +42,7 @@ Use the new supported [media sizes](/graph/api/resources/printercapabilities?vie
 ### Device and app management | Cloud PC
 
 - [Retry](/graph/api/cloudpcprovisioningpolicy-retry?view=graph-rest-beta&preserve-view=true) the provisioning operation for Cloud PCs that used the current frontline shared policy and failed to apply the [provisioning policy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true).
-- Updated the supported value range for the **applicationTimeoutInMinutes** property on [cloudPcAutopilotConfiguration](/graph/api/resources/cloudpcautopilotconfiguration?view=graph-rest-beta&preserve-view=true) from 10 to 360 to 30 to 360.
+- Updated the supported value range for the **applicationTimeoutInMinutes** property on [cloudPcAutopilotConfiguration](/graph/api/resources/cloudpcautopilotconfiguration?view=graph-rest-beta&preserve-view=true) from `10` to `360` to `30` to `360`.
 
 ### Files
 
