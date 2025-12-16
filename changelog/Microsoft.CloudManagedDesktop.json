@@ -1,6 +1,24 @@
 {
   "changelog": [
         {
+          "ChangeList": [
+            {
+              "Id": "461939f1-516e-4817-9853-e40eb3728eeb",
+              "ApiChange": "Member",
+              "ChangedApiName": "mexico",
+              "ChangeType": "Addition",
+              "Description": "Added the `mexico` member to the **cloudPcGeographicLocationType** enumeration.",
+              "Target": "cloudPcGeographicLocationType"
+            }
+          ],
+          "Id": "461939f1-516e-4817-9853-e40eb3728eeb",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2025-12-20T10:03:56.9188489Z",
+          "WorkloadArea": "Devices and app management",
+          "SubArea": "Cloud PC"
+        },
+        {
         "ChangeList": [
           {
             "Id": "df3dc513-c1cb-417b-b1e6-53f6e5adb37e",
