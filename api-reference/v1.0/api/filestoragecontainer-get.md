@@ -112,7 +112,8 @@ Content-Type: application/json
   "settings": {
     "isOcrEnabled": false,
     "itemMajorVersionLimit": 50,
-    "isItemVersioningEnabled": true
+    "isItemVersioningEnabled": true,
+    "itemDefaultSensitivityLabelId": "3d8789ae-7375-4ded-8eeb-d6bc226e42fb"
   }
 }
 ```

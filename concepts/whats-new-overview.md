@@ -20,19 +20,14 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## December 2025: New and generally available
 
-### Device and app management | Cloud printing
+### Files
 
-Use the new supported [media sizes](/graph/api/resources/printercapabilities#mediasizes-values) in the **mediaSizes** property of the [printerCapabilities](/graph/api/resources/printercapabilities) resource.
+- Use the following new resources and their methods to further support structured file storage in SharePoint Embedded applications:
+  - [fileStorageContainerType](/graph/api/resources/filestoragecontainertype)
+  - [fileStorageContainerTypeAppPermissionGrant](/graph/api/resources/filestoragecontainertypeapppermissiongrant)
+  - [fileStorageContainerTypeRegistration](/graph/api/resources/filestoragecontainertyperegistration)
 
-### Identity and access | Governance
-
-Use the following resources to represent the data sent to Azure Logic Apps as part of a custom extension callout request when a custom extension in a catalog is used:
-- [accessPackageAssignmentCalloutData](/graph/api/resources/accesspackageassignmentcalloutdata) - for access package assignments
-- [accessPackageAssignmentRequestCalloutData](/graph/api/resources/accesspackageassignmentrequestcalloutdata) - for access package assignment requests
-
-## December 2025: New in preview only
-
-### Calendars | Places
+### Identity and access | Directory management
 
 - Manage flexible work hours and locations using the following resources: [workHoursAndLocationsSetting](/graph/api/resources/workhoursandlocationssetting?view=graph-rest-beta&preserve-view=true), [workPlanOccurrence](/graph/api/resources/workplanoccurrence?view=graph-rest-beta&preserve-view=true), and [workPlanRecurrence](/graph/api/resources/workplanrecurrence?view=graph-rest-beta&preserve-view=true). These resources allow you to define recurring and specific work patterns, locations, and time off for modern hybrid scenarios.
 - [Upsert](/graph/api/place-patch-places?view=graph-rest-beta&preserve-view=true) one or more [place](/graph/api/resources/place?view=graph-rest-beta&preserve-view=true) objects in async mode.
@@ -44,6 +39,10 @@ Use the following resources to represent the data sent to Azure Logic Apps as pa
 ### Device and app management | Cloud printing
 
 Use the new supported [media sizes](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true#mediasizes-values) in the **mediaSizes** property of the [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true) resource.
+
+### Device and app management | Cloud PC
+
+[Retrieve](/graph/api/cloudpcreport-retrievecloudpcrecommendationreports) Cloud PC recommendation reports for usage optimization and cost savings.
 
 ### Files
 
@@ -77,15 +76,16 @@ Removed the **conditionalAccessAudience** resource type. The return type of the 
 
 ### Teamwork and communications | Calls and online meetings
 
-The following endpoints are no longer supported for managing [user work location](/graph/api/resources/userworklocation) for a user:
-- `POST /users/{usersId}/presence/clearAutomaticLocation`
-- `POST /communications/presences/{presenceId}/clearAutomaticLocation`
-- `POST /users/{usersId}/presence/clearLocation`
-- `POST /communications/presences/{presenceId}/clearLocation`
-- `POST /users/{usersId}/presence/setAutomaticLocation`
-- `POST /communications/presences/{presenceId}/setAutomaticLocation`
-- `POST /users/{usersId}/presence/setManualLocation`
-- `POST /communications/presences/{presenceId}/setManualLocation`
+- The [callRecord: getPstnCalls](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta&preserve-view=true) API now clarifies that it doesn't return information for **Telstra** calling plans only.
+- The following endpoints are no longer supported for managing [user work location](/graph/api/resources/userworklocation?view=graph-rest-beta&preserve-view=true):
+  - `POST /users/{usersId}/presence/clearAutomaticLocation`
+  - `POST /communications/presences/{presenceId}/clearAutomaticLocation`
+  - `POST /users/{usersId}/presence/clearLocation`
+  - `POST /communications/presences/{presenceId}/clearLocation`
+  - `POST /users/{usersId}/presence/setAutomaticLocation`
+  - `POST /communications/presences/{presenceId}/setAutomaticLocation`
+  - `POST /users/{usersId}/presence/setManualLocation`
+  - `POST /communications/presences/{presenceId}/setManualLocation`
 
 ### Teamwork and communications | Messaging
 
@@ -154,9 +154,10 @@ Added the **riskFactors** and **riskScore** properties to the [applicationTempla
 - Removed the **placeId** property from the [place](/graph/api/resources/place?view=graph-rest-beta&preserve-view=true) resource and its derived types. Going forward only the following derived types of **place** have the **placeId** property: [room](/graph/api/resources/room?view=graph-rest-beta&preserve-view=true) and [workspace](/graph/api/resources/workspace?view=graph-rest-beta&preserve-view=true).
 - Removed the [offlinePlaceMode](/graph/api/resources/offlineplacemode?view=graph-rest-beta&preserve-view=true) resource in favor of the [unavailablePlaceMode](/graph/api/resources/unavailableplacemode?view=graph-rest-beta&preserve-view=true) resource.
 
-### Devices and app management | Cloud PC
+### Device and app management | Cloud PC
 
-Removed the **osArchitecture** property from the [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true) and [cloudPcGalleryImage](/graph/api/resources/cloudpcgalleryimage?view=graph-rest-beta&preserve-view=true) resources.
+- Removed the **osArchitecture** property from the [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true) and [cloudPcGalleryImage](/graph/api/resources/cloudpcgalleryimage?view=graph-rest-beta&preserve-view=true) resources.
+- [Retrieve](/graph/api/cloudpcreport-retrievecloudpcclientappusagereport?view=graph-rest-beta&preserve-view=true) related reports for Cloud PC usage, including the client application used by users to sign in to the Cloud PC device.
 
 ### Files
 
