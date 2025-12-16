@@ -25,6 +25,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 - Manage flexible work hours and locations using the following resources: [workHoursAndLocationsSetting](/graph/api/resources/workhoursandlocationssetting?view=graph-rest-beta&preserve-view=true), [workPlanOccurrence](/graph/api/resources/workplanoccurrence?view=graph-rest-beta&preserve-view=true), and [workPlanRecurrence](/graph/api/resources/workplanrecurrence?view=graph-rest-beta&preserve-view=true). These resources allow you to define recurring and specific work patterns, locations, and time off for modern hybrid scenarios.
 - [Upsert](/graph/api/place-patch-places?view=graph-rest-beta&preserve-view=true) one or more [place](/graph/api/resources/place?view=graph-rest-beta&preserve-view=true) objects in async mode.
 
+### Device and app management | Cloud PC
+
+[Get](/graph/api/cloudpc-retrievecloudpclaunchdetail) the [cloudPcLaunchDetail](/graph/api/resources/cloudpclaunchdetail) for a specific Cloud PC that belongs to the current signed-in user.
+
 ### Files
 
 Use the SharePoint cross-tenant migration task APIs in Microsoft Graph to enable organizations to manage the tasks during tenant-to-tenant migrations. For more information, see [sharePointMigrationTask](/graph/api/resources/sharepointmigrationtask?view=graph-rest-beta&preserve-view=true).
@@ -45,12 +49,12 @@ Use the [userConfiguration](/graph/api/resources/userconfiguration?view=graph-re
 
 ### Reports | Identity and access reports
 
-- Added the [retry hold policy API](/graph/api/api/security-ediscoveryholdpolicy-retrypolicy) for triggering a retry of an [eDiscovery hold policy](/graph/api/resources/security-ediscoveryholdpolicy).
+- Added the [retry hold policy API](/graph/api/security-ediscoveryholdpolicy-retrypolicy) for triggering a retry of an [eDiscovery hold policy](/graph/api/resources/security-ediscoveryholdpolicy).
 - Added the [eDiscoveryCaseMember resource type and its associated APIs](/graph/api/resources/security-ediscoverycasemember) for managing members of an eDiscovery case.
 
 ### Teamwork and communications | Calls and online meetings
 
-The following endpoints are no longer supported for managing [work location](/graph/resources/userworklocation) for a user:
+The following endpoints are no longer supported for managing [user work location](/graph/api/resources/userworklocation) for a user:
 - `POST /users/{usersId}/presence/clearAutomaticLocation`
 - `POST /communications/presences/{presenceId}/clearAutomaticLocation`
 - `POST /users/{usersId}/presence/clearLocation`
@@ -63,9 +67,9 @@ The following endpoints are no longer supported for managing [work location](/gr
 ### Teamwork and communications | Messaging
 
 - [Get](/graph/api/channel-get-allmembers?view=graph-rest-beta&preserve-view=true) a specific member from the channel **allMembers** collection. This API provides unified access to both direct and indirect members across all channel types, including shared channels.
-- [Start](https://learn.microsoft.com/en-us/graph/api/channel-startmigration?view=graph-rest-beta) the migration of external messages by enabling migration mode in an existing channel.
-- [Start](https://learn.microsoft.com/en-us/graph/api/chat-startmigration?view=graph-rest-beta) the migration of external messages by enabling migration mode in an existing chat.
-- [Complete](https://learn.microsoft.com/en-us/graph/api/chat-completemigration?view=graph-rest-beta) the migration of external messages by removing migration mode from a chat.
+- [Start](/graph/api/channel-startmigration) the migration of external messages by enabling migration mode in an existing channel.
+- [Start](/graph/api/chat-startmigration) the migration of external messages by enabling migration mode in an existing chat.
+- [Complete](/graph/api/chat-completemigration) the migration of external messages by removing migration mode from a chat.
 
 Use the **layoutType** property on the [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource to create channels with different conversation experiences and switch between them at any time. The property supports two values: `post` for traditional post-reply format and `chat` for a chat-like threading experience. You can set the layout type when [creating a channel](/graph/api/channel-post?view=graph-rest-beta&preserve-view=true) and [update it](/graph/api/channel-patch?view=graph-rest-beta&preserve-view=true) later to switch between layouts.
 
