@@ -411,7 +411,7 @@ The following table lists the possible error and response code that can be retur
 |:------------------|:--------------|:--------------|:--------------|
 |403|InvalidStateForBulkRequestDeletion|Validation fails when the service type of the restore session and create request are different.|A bulk request can only be deleted when its status is `completed` or `completedWithErrors`.|
 
-## Known PowerShell errors
+## PowerShell errors
 
 The error codes in this section apply to the following APIs when they're called from PowerShell:
 
