@@ -48,7 +48,7 @@ In the request body, supply an empty JSON object `{}` for this method.
 
 ## Response
 
-If successful, this method returns a `202 No Accepted` response code.
+If successful, this method returns a `202 Accepted` response code.
 
 ## Examples
 
@@ -58,7 +58,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "cloudpcprovisioningpolicythis.retry"
+  "name": "cloudpcprovisioningpolicy_retry"
 }
 -->
 ``` http
@@ -72,8 +72,7 @@ Content-Type: application/json
 ### Response
 
 <!-- {
-  "blockType": "response",
-  "truncated": true
+  "blockType": "response"
 }
 -->
 ``` http
