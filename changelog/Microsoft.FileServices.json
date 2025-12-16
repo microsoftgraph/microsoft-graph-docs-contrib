@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "e6d0db29-6c02-4778-a0e1-87dd002f1e8e",
+          "ApiChange": "Property",
+          "ChangedApiName": "deleted",
+          "ChangeType": "Addition",
+          "Description": "Added the **deleted** property to the [listItem](https://learn.microsoft.com/en-us/graph/api/resources/listItem?view=graph-rest-1.0) resource.",
+          "Target": "listItem"
+        }
+      ],
+      "Id": "e6d0db29-6c02-4778-a0e1-87dd002f1e8e",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-12-15T20:51:08.101659Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "3f2504e0-4f89-11d3-9a0c-0305e82c3301",
           "ApiChange": "Method",
           "ChangedApiName": "sharedWithMe",

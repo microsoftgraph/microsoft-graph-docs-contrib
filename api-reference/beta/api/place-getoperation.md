@@ -200,12 +200,8 @@ Content-Type: application/json
       "succeededPlace": {
         "@odata.type": "#microsoft.graph.section",
         "id": "2cb2701d-0896-4c69-91bb-582d82d7c68c",
-        "displayName": "s1",
-        "parentId": "94eb964a-b166-4f0a-953d-54dc9032d9d5",
-        "tags": [
-          "Working Section",
-          "CVP"
-        ]
+        "displayName": "HR",
+        "parentId": "94eb964a-b166-4f0a-953d-54dc9032d9d5"
       }
     }
   ]
