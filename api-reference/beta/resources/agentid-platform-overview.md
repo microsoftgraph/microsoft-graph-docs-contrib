@@ -71,7 +71,7 @@ Microsoft Entra [signIn logs](../resources/signin.md) capture activities perform
 
 ## Permissions for managing agent identities
 
-Microsoft Graph provides granular permissions to manage agent identities and their associated components. The permissions follow the following patterns and are published in the [Microsoft Graph permissions reference](/graph/permissions-reference.md).
+Microsoft Graph provides granular permissions to manage agent identities and their associated components. The permissions follow the following patterns and are published in the [Microsoft Graph permissions reference](/graph/permissions-reference).
 
 Permissions for managing the agent registry:
 - AgentCardManifest.Read*
