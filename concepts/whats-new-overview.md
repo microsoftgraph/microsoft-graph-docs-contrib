@@ -18,6 +18,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## December 2025: New and generally available
+
+### Teamwork and communications | Calls and online meetings
+
+The [callRecord: getPstnCalls](/graph/api/callrecords-callrecord-getpstncalls) API now clarifies that it doesn't return information for **Telstra** calling plans only.
+
 ## December 2025: New in preview only
 
 ### Calendars | Places
@@ -40,15 +46,16 @@ Added the `microsoftRevokedSessions` value to the [riskDetail](/graph/api/resour
 
 ### Teamwork and communications | Calls and online meetings
 
-The following endpoints are no longer supported for managing [work location](/graph/resources/userworklocation) for a user:
-- `POST /users/{usersId}/presence/clearAutomaticLocation`
-- `POST /communications/presences/{presenceId}/clearAutomaticLocation`
-- `POST /users/{usersId}/presence/clearLocation`
-- `POST /communications/presences/{presenceId}/clearLocation`
-- `POST /users/{usersId}/presence/setAutomaticLocation`
-- `POST /communications/presences/{presenceId}/setAutomaticLocation`
-- `POST /users/{usersId}/presence/setManualLocation`
-- `POST /communications/presences/{presenceId}/setManualLocation`
+- The [callRecord: getPstnCalls](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta&preserve-view=true) API now clarifies that it doesn't return information for **Telstra** calling plans only.
+- The following endpoints are no longer supported for managing [work location](/graph/resources/userworklocation?view=graph-rest-beta&preserve-view=true) for a user:
+  - `POST /users/{usersId}/presence/clearAutomaticLocation`
+  - `POST /communications/presences/{presenceId}/clearAutomaticLocation`
+  - `POST /users/{usersId}/presence/clearLocation`
+  - `POST /communications/presences/{presenceId}/clearLocation`
+  - `POST /users/{usersId}/presence/setAutomaticLocation`
+  - `POST /communications/presences/{presenceId}/setAutomaticLocation`
+  - `POST /users/{usersId}/presence/setManualLocation`
+  - `POST /communications/presences/{presenceId}/setManualLocation`
 
 ### Mail
 
