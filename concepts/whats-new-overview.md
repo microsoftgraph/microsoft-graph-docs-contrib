@@ -20,6 +20,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## December 2025: New and generally available
 
+### Device and app management | Cloud printing
+
+Use the new supported [media sizes](/graph/api/resources/printercapabilities#mediasizes-values) in the **mediaSizes** property of the [printerCapabilities](/graph/api/resources/printercapabilities) resource.
+
+## December 2025: New in preview only
+
 ### Calendars | Places
 
 - Manage flexible work hours and locations using the following resources: [workHoursAndLocationsSetting](/graph/api/resources/workhoursandlocationssetting?view=graph-rest-beta&preserve-view=true), [workPlanOccurrence](/graph/api/resources/workplanoccurrence?view=graph-rest-beta&preserve-view=true), and [workPlanRecurrence](/graph/api/resources/workplanrecurrence?view=graph-rest-beta&preserve-view=true). These resources allow you to define recurring and specific work patterns, locations, and time off for modern hybrid scenarios.
@@ -28,6 +34,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 ### Device and app management | Cloud PC
 
 [Get](/graph/api/cloudpc-retrievecloudpclaunchdetail) the [cloudPcLaunchDetail](/graph/api/resources/cloudpclaunchdetail) for a specific Cloud PC that belongs to the current signed-in user.
+
+### Device and app management | Cloud printing
+
+Use the new supported [media sizes](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true#mediasizes-values) in the **mediaSizes** property of the [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true) resource.
 
 ### Files
 
