@@ -413,7 +413,7 @@ The following table lists the possible error and response code that can be retur
 
 ## PowerShell errors
 
-The error codes in this section apply to the following APIs when they're called from PowerShell:
+The error codes in this section apply to the following APIs when they're called from Microsoft Graph PowerShell:
 
 - [Get backupRestoreRoot](/graph/api/backuprestoreroot-get)
 - [Enable backupRestoreRoot](/graph/api/backuprestoreroot-enable)
