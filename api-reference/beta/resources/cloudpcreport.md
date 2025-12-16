@@ -18,6 +18,8 @@ Represents the Windows 365 Cloud PC-related reports.
 
 Use a method in the [Methods](#methods) section to get the corresponding report data in the response.
 
+Inherits from [entity](../resources/entity.md).
+
 ## Methods
 
 |Method|Return type|Description|
@@ -29,7 +31,7 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier for the reports. Read-only. |
+|id|String|The unique identifier for the reports. Read-only. Inherited from [entity](../resources/entity.md).|
 
 ### cloudPcRecommendationReportType values
 
@@ -56,7 +58,8 @@ The following JSON representation shows the resource type.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.cloudPcReport",
-  "openType": false
+  "openType": false,
+  "baseType": "microsoft.graph.entity"
 }
 -->
 ``` json
