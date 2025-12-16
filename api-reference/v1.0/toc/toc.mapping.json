@@ -666,11 +666,17 @@
         "driveItemVersion",
         "bundle",
         "fileStorageContainer",
+        "fileStorageContainerType",
+        "fileStorageContainerTypeAppPermissionGrant",
+        "fileStorageContainerTypeRegistration",
         "permission",
         "recycleBin",
         "recycleBinItem",
         "sharedDriveItem"
       ],
+      "complexTypes": [
+        "fileStorageContainerTypeRegistrationSettings",
+        "fileStorageContainerTypeSettings"
       "childNodes": [
         {
           "name": "SharePoint migration",

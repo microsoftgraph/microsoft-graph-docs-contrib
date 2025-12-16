@@ -20,22 +20,14 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## December 2025: New and generally available
 
-### Device and app management | Cloud printing
+### Files
 
-Use the new supported [media sizes](/graph/api/resources/printercapabilities#mediasizes-values) in the **mediaSizes** property of the [printerCapabilities](/graph/api/resources/printercapabilities) resource.
+- Use the following new resources and their methods to further support structured file storage in SharePoint Embedded applications:
+  - [fileStorageContainerType](/graph/api/resources/filestoragecontainertype)
+  - [fileStorageContainerTypeAppPermissionGrant](/graph/api/resources/filestoragecontainertypeapppermissiongrant)
+  - [fileStorageContainerTypeRegistration](/graph/api/resources/filestoragecontainertyperegistration)
 
-### Teamwork and communications | Calls and online meetings
-
-The [callRecord: getPstnCalls](/graph/api/callrecords-callrecord-getpstncalls) API now clarifies that it doesn't return information for **Telstra** calling plans only.
-### Identity and access | Governance
-
-Use the following resources to represent the data sent to Azure Logic Apps as part of a custom extension callout request when a custom extension in a catalog is used:
-- [accessPackageAssignmentCalloutData](/graph/api/resources/accesspackageassignmentcalloutdata) - for access package assignments
-- [accessPackageAssignmentRequestCalloutData](/graph/api/resources/accesspackageassignmentrequestcalloutdata) - for access package assignment requests
-
-## December 2025: New in preview only
-
-### Calendars | Places
+### Identity and access | Directory management
 
 - Manage flexible work hours and locations using the following resources: [workHoursAndLocationsSetting](/graph/api/resources/workhoursandlocationssetting?view=graph-rest-beta&preserve-view=true), [workPlanOccurrence](/graph/api/resources/workplanoccurrence?view=graph-rest-beta&preserve-view=true), and [workPlanRecurrence](/graph/api/resources/workplanrecurrence?view=graph-rest-beta&preserve-view=true). These resources allow you to define recurring and specific work patterns, locations, and time off for modern hybrid scenarios.
 - [Upsert](/graph/api/place-patch-places?view=graph-rest-beta&preserve-view=true) one or more [place](/graph/api/resources/place?view=graph-rest-beta&preserve-view=true) objects in async mode.
