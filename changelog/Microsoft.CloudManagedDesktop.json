@@ -1,38 +1,30 @@
 {
   "changelog": [
-      {
-      "ChangeList": [
         {
-          "Id": "f178819f-70f1-4489-811a-9bb2a9c79086",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "cloudPcImageOsArchitectureType",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **cloudPcImageOsArchitectureType** enumeration type.",
-          "Target": "cloudPcImageOsArchitectureType"
-        },
-        {
-          "Id": "f178819f-70f1-4489-811a-9bb2a9c79086",
-          "ApiChange": "Property",
-          "ChangedApiName": "osArchitecture",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **osArchitecture** property from the [cloudPcDeviceImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcDeviceImage?view=graph-rest-beta) resource.",
-          "Target": "cloudPcDeviceImage"
-        },
-        {
-          "Id": "f178819f-70f1-4489-811a-9bb2a9c79086",
-          "ApiChange": "Property",
-          "ChangedApiName": "osArchitecture",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **osArchitecture** property from the [cloudPcGalleryImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcGalleryImage?view=graph-rest-beta) resource.",
-          "Target": "cloudPcGalleryImage"
-        }
-      ],
-          "Id": "f178819f-70f1-4489-811a-9bb2a9c79086",
-          "Cloud": "Prod",
-          "Version": "beta",
-          "CreatedDateTime": "2025-12-02T09:55:21.2146082Z",
-          "WorkloadArea": "Devices and app management",
-          "SubArea": "Cloud PC"
+        "ChangeList": [
+          {
+            "Id": "df3dc513-c1cb-417b-b1e6-53f6e5adb37e",
+            "ApiChange": "Resource",
+            "ChangedApiName": "cloudPcLaunchDetail",
+            "ChangeType": "Addition",
+            "Description": "Added the [cloudPcLaunchDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudpclaunchdetail?view=graph-rest-1.0) resource type.",
+            "Target": "cloudPcLaunchDetail"
+          },
+          {
+            "Id": "a9aa06c3-81cd-4a9e-b50d-d2aa3310c083",
+            "ApiChange": "Method",
+            "ChangedApiName": "retrieveCloudPcLaunchDetail",
+            "ChangeType": "Addition",
+            "Description": "Added the [retrieveCloudPcLaunchDetail](https://learn.microsoft.com/en-us/graph/api/cloudpc-retrievecloudpclaunchdetail?view=graph-rest-1.0) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-1.0) resource.",
+            "Target": "cloudPC"
+          }
+        ],
+        "Id": "51bc25b3-f26a-4f49-839a-5ecbe3d5f4dc",
+        "Cloud": "Prod",
+        "Version": "v1.0",
+        "CreatedDateTime": "2025-12-15T08:21:53.8509284Z",
+        "WorkloadArea": "Devices and app management",
+        "SubArea": "Cloud PC"
       },
       {
       "ChangeList": [
