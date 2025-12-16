@@ -107,7 +107,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#authenticationMethodsPolicy",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#authenticationMethodsPolicy",
     "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET policies/authenticationMethodsPolicy?$select=description,displayName",
     "id": "authenticationMethodsPolicy",
     "displayName": "Authentication Methods Policy",
@@ -148,7 +148,7 @@ Content-Type: application/json
             "targetType": "group"
         }
     },
-    "authenticationMethodConfigurations@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations",
+    "authenticationMethodConfigurations@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations",
     "authenticationMethodConfigurations": [
         {
             "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
@@ -168,7 +168,7 @@ Content-Type: application/json
                 "enforcementType": "block",
                 "aaGuids": []
             },
-            "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Fido2')/microsoft.graph.fido2AuthenticationMethodConfiguration/includeTargets",
+            "includeTargets@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Fido2')/microsoft.graph.fido2AuthenticationMethodConfiguration/includeTargets",
             "includeTargets": [
                 {
                     "targetType": "group",
@@ -236,7 +236,7 @@ Content-Type: application/json
                     }
                 }
             },
-            "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('MicrosoftAuthenticator')/microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration/includeTargets",
+            "includeTargets@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('MicrosoftAuthenticator')/microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration/includeTargets",
             "includeTargets": [
                 {
                     "targetType": "group",
@@ -251,7 +251,7 @@ Content-Type: application/json
             "id": "Sms",
             "state": "disabled",
             "excludeTargets": [],
-            "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Sms')/microsoft.graph.smsAuthenticationMethodConfiguration/includeTargets",
+            "includeTargets@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Sms')/microsoft.graph.smsAuthenticationMethodConfiguration/includeTargets",
             "includeTargets": [
                 {
                     "targetType": "group",
@@ -276,7 +276,7 @@ Content-Type: application/json
                     "targetType": "group"
                 }
             ],
-            "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('TemporaryAccessPass')/microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration/includeTargets",
+            "includeTargets@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('TemporaryAccessPass')/microsoft.graph.temporaryAccessPassAuthenticationMethodConfiguration/includeTargets",
             "includeTargets": [
                 {
                     "targetType": "group",
@@ -290,7 +290,7 @@ Content-Type: application/json
             "id": "HardwareOath",
             "state": "enabled",
             "excludeTargets": [],
-            "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('HardwareOath')/microsoft.graph.hardwareOathAuthenticationMethodConfiguration/includeTargets",
+            "includeTargets@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('HardwareOath')/microsoft.graph.hardwareOathAuthenticationMethodConfiguration/includeTargets",
             "includeTargets": [
                 {
                     "targetType": "group",
@@ -304,7 +304,7 @@ Content-Type: application/json
             "id": "SoftwareOath",
             "state": "enabled",
             "excludeTargets": [],
-            "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('SoftwareOath')/microsoft.graph.softwareOathAuthenticationMethodConfiguration/includeTargets",
+            "includeTargets@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('SoftwareOath')/microsoft.graph.softwareOathAuthenticationMethodConfiguration/includeTargets",
             "includeTargets": [
                 {
                     "targetType": "group",
@@ -321,7 +321,7 @@ Content-Type: application/json
             "callerIdNumber": null,
             "isCustomGreetingEnabled": false,
             "excludeTargets": [],
-            "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Voice')/microsoft.graph.voiceAuthenticationMethodConfiguration/includeTargets",
+            "includeTargets@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Voice')/microsoft.graph.voiceAuthenticationMethodConfiguration/includeTargets",
             "includeTargets": [
                 {
                     "targetType": "group",
@@ -336,7 +336,7 @@ Content-Type: application/json
             "state": "disabled",
             "allowExternalIdToUseEmailOtp": "default",
             "excludeTargets": [],
-            "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Email')/microsoft.graph.emailAuthenticationMethodConfiguration/includeTargets",
+            "includeTargets@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('Email')/microsoft.graph.emailAuthenticationMethodConfiguration/includeTargets",
             "includeTargets": [
                 {
                     "targetType": "group",
@@ -376,7 +376,7 @@ Content-Type: application/json
                 "state": "disabled",
                 "exemptedCertificateAuthoritiesSubjectKeyIdentifiers": []
             },
-            "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('X509Certificate')/microsoft.graph.x509CertificateAuthenticationMethodConfiguration/includeTargets",
+            "includeTargets@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('X509Certificate')/microsoft.graph.x509CertificateAuthenticationMethodConfiguration/includeTargets",
             "includeTargets": [
                 {
                     "targetType": "group",
@@ -406,7 +406,7 @@ Content-Type: application/json
                 "clientId": "966c7a17-8cb9-47a6-8504-c1e50b05f21d",
                 "discoveryUrl": "https://Adatum.com/.well-known/openid-configurationx"
             },
-            "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('fda55161-0d73-48ec-b29f-d29689e3d1b6')/microsoft.graph.externalAuthenticationMethodConfiguration/includeTargets",
+            "includeTargets@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('fda55161-0d73-48ec-b29f-d29689e3d1b6')/microsoft.graph.externalAuthenticationMethodConfiguration/includeTargets",
             "includeTargets": [
                 {
                     "targetType": "group",
