@@ -35,13 +35,13 @@ With these APIs you can now set different work locations and schedules to accomm
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| maxSharedWorkLocationDetails | [maxWorkLocationDetails](../resources/workhoursandlocationssetting.md#maxworklocationdetails-values) | Controls the level of work location details that can be shared with colleagues. The possible values are: `unknown`, `none`, `approximate`, `specific`, `unknownFutureValue`. |
+| maxSharedWorkLocationDetails | [maxWorkLocationDetails](../resources/workhoursandlocationssetting.md#maxworklocationdetails-values) | Controls the level of work location details that can be shared with colleagues. |
 
 ### maxWorkLocationDetails values
 
 | Member | Description |
 |:-------|:------------|
-| unknown | The level of location details to share is unknown. |
+| unknown | The level of location details to share is unknown. This value is for backward compatibility only and can't be set as a new value. |
 | none | No location details are shared. |
 | approximate | Only general work location type is shared, such as office or remote. |
 | specific | Detailed location information is shared, such as building and desk information. |
