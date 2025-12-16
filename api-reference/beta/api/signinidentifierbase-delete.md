@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [signInIdentifierBase](../resources/signinidentifierbase.md) object.
+Delete a [signInIdentifierBase](../resources/signinidentifierbase.md) object. Supported only for the [customUsernameSignInIdentifier](../resources/customusernamesigninidentifier.md) derived type.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
