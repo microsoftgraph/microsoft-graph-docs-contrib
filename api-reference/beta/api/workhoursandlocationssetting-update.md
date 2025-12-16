@@ -52,7 +52,7 @@ PATCH /users/{id | userPrincipalName}/settings/workHoursAndLocations
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| maxSharedWorkLocationDetails | [maxWorkLocationDetails](../resources/workhoursandlocationssetting.md#maxworklocationdetails-values) | Controls the level of work location details that can be shared with colleagues. The possible values are: `unknown`, `none`, `approximate`, `specific`, `unknownFutureValue`. |
+| maxSharedWorkLocationDetails | [maxWorkLocationDetails](../resources/workhoursandlocationssetting.md#maxworklocationdetails-values) | Controls the level of work location details that can be shared with colleagues. The allowed values are: `none`, `approximate`, `specific`. |
 
 ## Response
 
