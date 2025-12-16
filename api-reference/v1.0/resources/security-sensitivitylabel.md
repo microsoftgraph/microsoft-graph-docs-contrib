@@ -50,92 +50,139 @@ Describes the information protection label that details how to properly apply a 
 | sensitivity    | Int32             | The sensitivity value of the label, where lower is less sensitive.                                         |
 | tooltip        | String            | The tooltip that should be displayed for the label in a UI.                                                |
 
-## Sensitivity Label API Filtering Rules
+## Sensitivity label API filtering rules
 
-This section outlines the filtering rules and constraints for various Sensitivity Label APIs.
+This section outlines the filtering rules and constraints available to apply to various sensitivity label API calls.
 
-### Scenario 1: SensitivityLabel APIs (/ and /id)
+### Scenario 1: Return sensitivity labels (1 or more) 
+The user calls the API and filters by one or more label ID GUIDs.
 
-#### Rules
-
-1. **OR Restriction with scopeToUser**
-   - If `scopeToUser` filter parameter is present, then `or` is not allowed in the filter parameters
-
-2. **Prefiltering Behavior with OR**
-   - If `or` is present in the filter parameters, then `locale` and `contentFormats` filter parameters (if present) will not be used for prefiltering
-
-3. **Inner OR Exception**
-   - Inner `or` operations that fall under the parameter tree are permitted
-
-### Scenario 2: SensitivityLabelAndRights APIs expand=Rights (/ and /id) - Single ID
+#### Example
+   ``` odata
+   $filter=((id eq 'guid1') or (id eq 'guid2') or (id eq 'guid3'))
+   ```
 
 #### Rules
 
-1. **OR Restriction with Multiple Parameters**
-   - If any of the following filter parameters are present: `scopeToUser`, `id`, or `ownerEmail`, then `or` is not allowed in the filter parameters
+1. **OR restriction with isScopedToUser**
+   - If `isScopedToUser` filter parameter is present, then `or` is not allowed in the filter parameters
 
-2. **ownerEmail Validation**
-   - `ownerEmail` present without `id` will throw `ArgumentException`
+2. **Prefiltering behavior with OR**
+   - If `or` is present in the filter parameters, then `locale` and `contentFormats` filter parameters (if present) won't be used for prefiltering
 
-3. **Prefiltering Behavior with OR**
-   - If `or` is present in the filter parameters, then `locale` and `contentFormats` filter parameters (if present) will not be used for prefiltering
-
-4. **Inner OR Exception**
+3. **Inner OR exception**
    - Inner `or` operations that fall under the parameter tree are permitted
 
-### Scenario 2.5: SensitivityLabel And Rights APIs expand=Rights (/ and /id) - Multiple IDs
+### Scenario 2: Return results for sensitivity labels using a filter on a single ID and user right
 
-#### Supported Pattern
+The user calls the API and filters by one label ID GUID and one user right.
 
-This API supports the following specific filtering pattern:
-
-```odata
-$filter=(id in ('guid1', 'guid2')) or ((id eq 'guid3' and rights/ownerEmail eq 'ownerEmail1') or (id eq 'guid4') or (id eq 'guid5' and rights/ownerEmail eq 'ownerEmail2') or (id eq 'guid6'))
-```
+#### Example
+   ``` odata
+   $filter=(id eq 'guid1' and ownerEmail eq 'ownerEmail1')
+   ```
 
 #### Rules
 
-1. **Strict OR Pattern**
-   - Only the pattern shown above is supported for `or` operations
-   - Any other `or` usage with this API will result in `ArgumentException`
+1. **OR restriction with multiple parameters**
+   - If any of the following filter parameters are present: `isScopedToUser`, `id`, or `ownerEmail`, then `or` isn't allowed in the filter parameters
 
-2. **Inner OR Exception**
-   - Inner `or` operations that fall under the parameter tree are permitted
+2. **ownerEmail validation**
+   - `ownerEmail` present without `id` throws an `ArgumentException`.
 
-### Scenario 3: SensitivityLabel Rights /id/rights
+3. **Prefiltering behavior with OR**
+   - If `or` is present in the $filter string, then `locale` and `contentFormats` filter parameters are ignored and not used to prefilter the results.
+
+4. **Inner OR exception**
+   - You can use inner `or` operations between individual clauses.
+
+### Scenario 2.5: Return results for sensitivity labels using a filter for multiple IDs and user rights
+
+   The user wants to call the API and filter by multiple IDs and ownerEmail. To achieve this outcome, you must combine both the label ID and ownerEmail in one boolean clause.
+
+#### Example
+   ``` odata
+   $filter=(
+      (id eq 'guid1' and ownerEmail eq 'ownerEmail1')
+     or (id eq 'guid2')
+     or (id eq 'guid3' and ownerEmail eq 'ownerEmail2')
+   )
+   ```
+
+This `$filter` pattern is an extension to the standard OData specification. In standard OData, combining multiple tuples with `or` in this way is not typically supported. However, this API allows you to use a tuple-based OR pattern, where each `(id, ownerEmail)` pair is evaluated independently, and the resulting rights information is merged. For more information about standard OData `$filter` behavior, see the [OData specification](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/#FilterSystemQueryOption).
+
+We recommend using filters that use a single call with multiple IDs to retrieve rights for multiple labels because it reduces the number of API calls you need to make from your app.
+
+`ownerEmail` is optional and can be omitted to fetch label-level rights only.
+
 
 #### Rules
 
-1. **OR Restriction with ownerEmail**
-   - `or` operations with filter parameter `ownerEmail` will result in an exception
+1. **Strict OR pattern**
 
-2. **Inner OR Exception**
-   - Inner `or` operations that fall under the parameter tree are permitted
+   - Only the tuple-based structure combined by OR operations as shown above is supported.
 
-### isScopedToUser Parameter Rules
+   - Any other combination of OR operations or mixing unrelated filters aren't allowed and results in an ArgumentException.
+
+2. **ownerEmail validation**
+
+   - `ownerEmail` must always appear together with an `id`. Using `ownerEmail` alone results in an `ArgumentException`.
+
+
+3. **Inner OR exception**
+
+   - You can combine clauses using subclauses. Here's an example of a subclause: (id eq 'guid1' and ownerEmail eq 'ownerEmail1')
+
+   - In this example, there are three subclauses. When combining the ID and ownerEmail, use AND in the subclause. Don't use OR otherwise it throws an exception.
+
+
+4. **Prefiltering behavior**
+
+   - When `or` is used, the `locale` and `contentFormats` parameters (if provided) are ignored for prefiltering.
+
+#### Behavior summary
+
+| Case                  | Example                                                                                                                                         | Description                                                                                                      |
+| --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| Label ID only         | `(id eq 'guid1')`                                                                                                                               | Returns rights defined on the label.                                                                             |
+| Label ID + ownerEmail | `(id eq 'guid1' and ownerEmail eq 'ownerEmail1')`                                                                                               | Evaluates rights for the specified user.                                                                         |
+| Multiple tuples       | `(id eq 'guid1' and ownerEmail eq 'ownerEmail1') or (id eq 'guid2') or (id eq 'guid3' and ownerEmail eq 'ownerEmail2')`           | Combine conditions with **OR**. Returns a merged list of labels and rights for all matched labels and users.     |
+
+
+### Scenario 3: Sensitivity label rights /id/rights
+
+#### Rules
+
+1. **OR restriction with ownerEmail**
+   - `or` operations with filter parameter `ownerEmail` results in an exception.
+
+2. **Inner OR exception**
+   - Inner `or` operations that fall under the parameter tree are permitted.
+
+### isScopedToUser parameter rules
 
 This section outlines the behavior and constraints for the `isScopedToUser` parameter in sensitivity label APIs.
 
-#### Parameter Behavior
+#### Parameter behavior
 
 ##### isScopedToUser = true
 - **Result**: Shows enabled labels only
-- **Use Case**: Standard filtering for active/enabled labels
+- **Use case**: Standard filtering for active/enabled labels
 - **Status**: Recommended usage
 
 ##### isScopedToUser = false
 - **Result**: Shows disabled labels only
-- **Use Case**: Limited - ideally not used with this value
+- **Use case**: Limited - ideally not used with this value
 - **Status**: Not recommended for typical operations
 
 ##### isScopedToUser not passed
 - **Result**: Shows all labels (both enabled and disabled)
-- **Use Case**: Comprehensive label retrieval
+- **Use case**: Comprehensive label retrieval
 - **Status**: Default behavior when parameter is omitted
 
 #### Restrictions
 
-##### Tenant Labels Exception
+##### Tenant labels exception
 - **Behavior**: When getting tenant labels, using `isScopedToUser` will throw `ArgumentException`
 - **Reason**: Parameter is not applicable for tenant-level label operations
 - **Solution**: Omit the `isScopedToUser` parameter when working with tenant labels

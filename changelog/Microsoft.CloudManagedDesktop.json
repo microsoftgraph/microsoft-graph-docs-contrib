@@ -8273,6 +8273,48 @@
       "CreatedDateTime": "2025-11-06T08:35:01.708544Z",
       "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3f30a5f4-bbc6-46c3-9a6e-dd460637aeb1",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcRecommendationReportType",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcRecommendationReportType** enumeration type.",
+          "Target": "cloudPcRecommendationReportType"
+        },
+        {
+          "Id": "3f30a5f4-bbc6-46c3-9a6e-dd460637aeb1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcReport](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcReport?view=graph-rest-1.0) resource.",
+          "Target": "cloudPcReport"
+        },
+        {
+          "Id": "3f30a5f4-bbc6-46c3-9a6e-dd460637aeb1",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "report",
+          "ChangeType": "Addition",
+          "Description": "Added the **report** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-1.0) resource.",
+          "Target": "virtualEndpoint"
+        },
+        {
+          "Id": "3f30a5f4-bbc6-46c3-9a6e-dd460637aeb1",
+          "ApiChange": "Method",
+          "ChangedApiName": "retrieveCloudPcRecommendationReports",
+          "ChangeType": "Addition",
+          "Description": "Added the [retrieveCloudPcRecommendationReports](https://learn.microsoft.com/en-us/graph/api/cloudPcReport-retrieveCloudPcRecommendationReports?view=graph-rest-1.0) method to the [cloudPcReport](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcReport?view=graph-rest-1.0) resource.",
+          "Target": "cloudPcReport"
+        }
+      ],
+      "Id": "3f30a5f4-bbc6-46c3-9a6e-dd460637aeb1",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-12-16T03:45:23.7953752Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
     }
   ]
 }

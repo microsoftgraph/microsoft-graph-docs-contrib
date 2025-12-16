@@ -394,6 +394,7 @@
             "cloudPcDeviceImage",
             "cloudPcGalleryImage",
             "cloudPcProvisioningPolicy",
+            "cloudPcReport",
             "cloudPcUserSetting"
           ],
           "complexTypes": [

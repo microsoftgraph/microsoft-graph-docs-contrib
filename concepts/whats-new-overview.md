@@ -24,6 +24,15 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Use the new supported [media sizes](/graph/api/resources/printercapabilities#mediasizes-values) in the **mediaSizes** property of the [printerCapabilities](/graph/api/resources/printercapabilities) resource.
 
+### Teamwork and communications | Calls and online meetings
+
+The [callRecord: getPstnCalls](/graph/api/callrecords-callrecord-getpstncalls) API now clarifies that it doesn't return information for **Telstra** calling plans only.
+### Identity and access | Governance
+
+Use the following resources to represent the data sent to Azure Logic Apps as part of a custom extension callout request when a custom extension in a catalog is used:
+- [accessPackageAssignmentCalloutData](/graph/api/resources/accesspackageassignmentcalloutdata) - for access package assignments
+- [accessPackageAssignmentRequestCalloutData](/graph/api/resources/accesspackageassignmentrequestcalloutdata) - for access package assignment requests
+
 ## December 2025: New in preview only
 
 ### Calendars | Places
@@ -33,16 +42,14 @@ Use the new supported [media sizes](/graph/api/resources/printercapabilities#med
 
 ### Device and app management | Cloud PC
 
-[Get](/graph/api/cloudpc-retrievecloudpclaunchdetail) the [cloudPcLaunchDetail](/graph/api/resources/cloudpclaunchdetail) for a specific Cloud PC that belongs to the current signed-in user.
+- [Get](/graph/api/cloudpc-retrievecloudpclaunchdetail) the [cloudPcLaunchDetail](/graph/api/resources/cloudpclaunchdetail) for a specific Cloud PC that belongs to the current signed-in user.
+- [Retry](/graph/api/cloudpcprovisioningpolicy-retry?view=graph-rest-beta&preserve-view=true) the provisioning operation for Cloud PCs that used the current frontline shared policy and failed to apply the [provisioning policy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true).
+- Updated the supported value range for the **applicationTimeoutInMinutes** property on [cloudPcAutopilotConfiguration](/graph/api/resources/cloudpcautopilotconfiguration?view=graph-rest-beta&preserve-view=true) from `10` to `360` to `30` to `360`.
+- [Retrieve](/graph/api/cloudpcreport-retrievecloudpcrecommendationreports) Cloud PC recommendation reports for usage optimization and cost savings.
 
 ### Device and app management | Cloud printing
 
 Use the new supported [media sizes](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true#mediasizes-values) in the **mediaSizes** property of the [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true) resource.
-
-### Device and app management | Cloud PC
-
-- [Retry](/graph/api/cloudpcprovisioningpolicy-retry?view=graph-rest-beta&preserve-view=true) the provisioning operation for Cloud PCs that used the current frontline shared policy and failed to apply the [provisioning policy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true).
-- Updated the supported value range for the **applicationTimeoutInMinutes** property on [cloudPcAutopilotConfiguration](/graph/api/resources/cloudpcautopilotconfiguration?view=graph-rest-beta&preserve-view=true) from `10` to `360` to `30` to `360`.
 
 ### Files
 
@@ -50,6 +57,9 @@ Use the SharePoint cross-tenant migration task APIs in Microsoft Graph to enable
 
 ### Identity and access | Governance
 
+- Use the following resources to represent the data sent to Azure Logic Apps as part of a custom extension callout request when a custom extension in a catalog is used:
+  - [accessPackageAssignmentCalloutData](/graph/api/resources/accesspackageassignmentcalloutdata?view=graph-rest-beta&preserve-view=true) - for access package assignments
+  - [accessPackageAssignmentRequestCalloutData](/graph/api/resources/accesspackageassignmentrequestcalloutdata?view=graph-rest-beta&preserve-view=true) - for access package assignment requests
 - Added the [controlConfiguration](/graph/api/resources/controlconfiguration?view=graph-rest-beta&preserve-view=true) resource and the **controlConfigurations** relationship to the [entitlementManagement](/graph/api/resources/entitlementmanagement?view=graph-rest-beta&preserve-view=true) resource to represent the policies that control lifecycle and access to access packages across the organization.
 - Added the [entraIdProtectionRiskyUserApproval](/graph/api/resources/entraidprotectionriskyuserapproval?view=graph-rest-beta&preserve-view=true) resource to represent the approval configuration for risky users detected by Microsoft Entra ID Protection.
 - Added the [insiderRiskyUserApproval](/graph/api/resources/insiderriskyuserapproval?view=graph-rest-beta&preserve-view=true) resource to represent the approval configuration for risky users detected by Microsoft Purview Insider Risk Management.
@@ -64,20 +74,25 @@ Use the [userConfiguration](/graph/api/resources/userconfiguration?view=graph-re
 
 ### Reports | Identity and access reports
 
+Removed the **conditionalAccessAudience** resource type. The return type of the **conditionalAccessAudiences** property of the [signIn resource type](/graph/api/resources/signin?view=graph-rest-beta&preserve-view=true) is a collection of String objects and not the **conditionalAccessAudience** complex type.
+
+### Security | eDiscovery
+
 - Added the [retry hold policy API](/graph/api/security-ediscoveryholdpolicy-retrypolicy) for triggering a retry of an [eDiscovery hold policy](/graph/api/resources/security-ediscoveryholdpolicy).
 - Added the [eDiscoveryCaseMember resource type and its associated APIs](/graph/api/resources/security-ediscoverycasemember) for managing members of an eDiscovery case.
 
 ### Teamwork and communications | Calls and online meetings
 
-The following endpoints are no longer supported for managing [user work location](/graph/api/resources/userworklocation) for a user:
-- `POST /users/{usersId}/presence/clearAutomaticLocation`
-- `POST /communications/presences/{presenceId}/clearAutomaticLocation`
-- `POST /users/{usersId}/presence/clearLocation`
-- `POST /communications/presences/{presenceId}/clearLocation`
-- `POST /users/{usersId}/presence/setAutomaticLocation`
-- `POST /communications/presences/{presenceId}/setAutomaticLocation`
-- `POST /users/{usersId}/presence/setManualLocation`
-- `POST /communications/presences/{presenceId}/setManualLocation`
+- The [callRecord: getPstnCalls](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta&preserve-view=true) API now clarifies that it doesn't return information for **Telstra** calling plans only.
+- The following endpoints are no longer supported for managing [user work location](/graph/api/resources/userworklocation?view=graph-rest-beta&preserve-view=true):
+  - `POST /users/{usersId}/presence/clearAutomaticLocation`
+  - `POST /communications/presences/{presenceId}/clearAutomaticLocation`
+  - `POST /users/{usersId}/presence/clearLocation`
+  - `POST /communications/presences/{presenceId}/clearLocation`
+  - `POST /users/{usersId}/presence/setAutomaticLocation`
+  - `POST /communications/presences/{presenceId}/setAutomaticLocation`
+  - `POST /users/{usersId}/presence/setManualLocation`
+  - `POST /communications/presences/{presenceId}/setManualLocation`
 
 ### Teamwork and communications | Messaging
 
