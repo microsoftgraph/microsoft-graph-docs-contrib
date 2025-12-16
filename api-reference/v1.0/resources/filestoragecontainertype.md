@@ -67,4 +67,3 @@ The following JSON representation shows the resource type.
   "settings": {"@odata.type": "microsoft.graph.fileStorageContainerTypeSettings"}
 }
 ```
-
