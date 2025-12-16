@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 Represents your working hours and location preferences for modern hybrid work scenarios.
 
-Access to your work hours and location information is useful in scenarios that involve activity planning, resource allocation, and meeting scheduling. You can [get](../api/workhoursandlocationssetting-get.md) and [update](../api/workhoursandlocationssetting-update.md) your work hours and locations as part of your personal work planning.
+Work hours and location information is useful in scenarios that involve planning in office days with colleagues, and scheduling meetings across different working hours and time zones. You can [get](../api/workhoursandlocationssetting-get.md) and [update](../api/workhoursandlocationssetting-update.md) your work hours and locations as part of your personal work planning.
 
-You can set different work locations and schedules to accommodate your flexible work arrangements. These settings are useful for hybrid work scenarios where you might work from the office some days and remotely on others. You can set recurring patterns for regular schedules and create specific occurrences for exceptions or special arrangements.
+With these APIs you can now set different work locations and schedules to accommodate your flexible work arrangements.
 
 ## Methods
 
