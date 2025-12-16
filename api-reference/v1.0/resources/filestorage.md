@@ -12,7 +12,7 @@ ms.date: 11/25/2025
 
 Namespace: microsoft.graph
 
-Represents the structure of active and deleted [fileStorageContainer](../resources/filestoragecontainer.md) objects, [fileStorageContainerTypes](../resources/filestoragecontainer.md), and [fileStorageContainerTypeRegistrations](../resources/filestoragecontainertyperegistration.md).
+Represents the structure of active and deleted [fileStorageContainer](../resources/filestoragecontainer.md) objects.
 
 ## Methods
 |Method|Return type|Description|
