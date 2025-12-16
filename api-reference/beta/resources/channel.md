@@ -90,7 +90,7 @@ where files are shared, and where tabs are added.
 | standard           | Channel inherits the list of members of the parent team.                          |
 | private            | Channel can have members that are a subset of all the members on the parent team. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                                 |
-| shared             | Members can be directly added to the channel without adding them to the team.     |                                                             |
+| shared             | Members can be directly added to the channel without adding them to the team.     |
 
 ### migrationMode values
 
