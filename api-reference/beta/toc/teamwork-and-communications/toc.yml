@@ -905,6 +905,8 @@ items:
       href: ../../api/channel-update-members.md
     - name: Remove channel member
       href: ../../api/channel-delete-members.md
+    - name: Start migration
+      href: ../../api/channel-startmigration.md
     - name: Complete migration
       href: ../../api/channel-completemigration.md
     - name: List tabs in channel
@@ -973,6 +975,10 @@ items:
         href: ../../api/chat-hideforuser.md
       - name: Unhide chat
         href: ../../api/chat-unhideforuser.md
+      - name: Start migration
+        href: ../../api/chat-startmigration.md
+      - name: Complete migration
+        href: ../../api/chat-completemigration.md
     - name: Messages
       items:
       - name: List messages in a chat

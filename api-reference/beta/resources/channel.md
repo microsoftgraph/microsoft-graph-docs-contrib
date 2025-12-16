@@ -45,7 +45,8 @@ where files are shared, and where tabs are added.
 |[Unarchive channel](../api/channel-unarchive.md) | None | Unarchive a channel.|
 |[Update channel member's role](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | Update the properties of a member of the channel. Only supported for channels with a **membershipType** of `private` or `shared`.|
 |[Remove channel member](../api/channel-delete-members.md) | None | Delete a member from a channel. Only supported for channels with a **membershipType** of `private` or `shared`.|
-|[Complete migration](../api/channel-completemigration.md)|[channel](channel.md)| Removes the migration mode from the channel and makes the channel available to users to post and read messages.|
+|[Start migration](../api/channel-startmigration.md)|[channel](channel.md)| Start the migration of external messages by enabling migration mode in an existing [channel](../resources/channel.md).|
+|[Complete migration](../api/channel-completemigration.md)|[channel](channel.md)| Complete migration on existing [channels](../resources/channel.md) or new channels.|
 |[List tabs in channel](../api/channel-list-tabs.md) | [teamsTab](teamstab.md) | List tabs pinned to a channel.|
 |[Add tab to channel](../api/channel-post-tabs.md) | [teamsTab](teamstab.md) | Add (pin) a tab to a channel.|
 |[Get tab in channel](../api/channel-get-tabs.md) | [teamsTab](teamstab.md) | Get a specific tab pinned to a channel.|
@@ -70,12 +71,14 @@ where files are shared, and where tabs are added.
 |displayName|String|Channel name as it appears to the user in Microsoft Teams. The maximum length is 50 characters.|
 |id|String|The channel's unique identifier. Read-only.|
 |isFavoriteByDefault|Boolean|Indicates whether the channel should be marked as recommended for all members of the team to show in their channel list. **Note:** All recommended channels automatically show in the channels list for education and frontline worker users. The property can only be set programmatically via the [Create team](../api/team-post.md) method. The default value is `false`.|
+|migrationMode|[migrationMode](../resources/channel.md#migrationmode-values)|Indicates whether a channel is in migration mode. This value is `null` for channels that never entered migration mode. The possible values are: `inProgress`, `completed`, `unknownFutureValue`.|
 |email|String| The email address for sending messages to the channel. Read-only.|
 |webUrl|String|A hyperlink to the channel in Microsoft Teams. This URL is supplied when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.|
 |membershipType|[channelMembershipType](../resources/channel.md#channelmembershiptype-values)|The type of the channel. Can be set during creation and can't be changed. The possible values are: `standard`, `private`, `unknownFutureValue`, `shared`. The default value is `standard`. Use the `Prefer: include-unknown-enum-members` request header to get the following members in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `shared`.|
-|layoutType|[channelLayoutType](../resources/channel.md#channellayouttype-values)|The layout type of the channel. Can be set during creation and can be updated. The possible values are: `post`, `chat`, `unknownFutureValue`. The default value is `post`. Channels with `post` layout use traditional post-reply conversation format, while channels with `chat` layout provide a chat-like threading experience similar to group chats.|
+|layoutType|[channelLayoutType](channellayouttype.md)|The layout type of the channel. Can be set during creation and can be updated. The possible values are: `post`, `chat`, `unknownFutureValue`. The default value is `post`. Channels with `post` layout use traditional post-reply conversation format, while channels with `chat` layout provide a chat-like threading experience similar to group chats.|
 |createdDateTime|dateTimeOffset|Read only. Timestamp at which the channel was created.|
 |moderationSettings|[channelModerationSettings](../resources/channelmoderationsettings.md)|Settings to configure channel moderation to control who can start new posts and reply to posts in that channel.|
+|originalCreatedDateTime|dateTimeOffset|Timestamp of the original creation time for the channel. The value is `null` if the channel never entered migration mode.|
 |summary|[channelSummary](../resources/channelsummary.md)|Contains summary information about the channel, including number of guests, members, owners, and an indicator for members from other tenants. The **summary** property is only returned if it appears in the `$select` clause of the [Get channel](../api/channel-get.md) method.|
 |tenantId |string | The ID of the Microsoft Entra tenant. |
 |isArchived| Boolean | Indicates whether the channel is archived. Read-only. |
@@ -89,13 +92,13 @@ where files are shared, and where tabs are added.
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                                 |
 | shared             | Members can be directly added to the channel without adding them to the team.     |
 
-### channelLayoutType values
+### migrationMode values
 
-| Member             | Description                                                                                                          |
-|:-------------------|:---------------------------------------------------------------------------------------------------------------------|
-| post               | Traditional post-reply conversation format. Posts are displayed in a structured format with replies nested under the original post. This is the default layout type.                   |
-| chat               | Chat-like threading experience similar to group chats. Messages are displayed in a continuous flow with support for threaded conversations on specific topics.|
-| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                                                                    |
+| Member             | Description                                                                       |
+|:-------------------|:----------------------------------------------------------------------------------|
+| inProgress           | The channel or chat entered migration mode.                          |
+| completed            | The channel or chat is out of migration mode. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                                 |
 
 ### Instance attributes
 
@@ -144,9 +147,11 @@ The following JSON representation shows the resource type.
   "email": "string",
   "webUrl": "string",
   "membershipType": "String",
+  "migrationMode": "String",
   "layoutType": "string",
   "isArchived": false,
   "createdDateTime": "string (timestamp)",
+  "originalCreatedDateTime": "String (timestamp)",
   "moderationSettings": { "@odata.type": "microsoft.graph.channelModerationSettings" }
 }
 ```

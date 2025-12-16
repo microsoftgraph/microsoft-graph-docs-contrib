@@ -45,7 +45,7 @@
       "SubArea": "Directory management"
     },
     {
-      "ChangeList":  [
+      "ChangeList": [
         {
           "Id": "b3f8a7e2-4d6c-4c9a-9f3e-8a2d7c1f5b91",
           "ApiChange": "Method",
@@ -55,7 +55,7 @@
           "Target": "chat"
         }
       ],
-       "Id": "b3f8a7e2-4d6c-4c9a-9f3e-8a2d7c1f5b91",
+      "Id": "b3f8a7e2-4d6c-4c9a-9f3e-8a2d7c1f5b91",
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2025-11-19T19:29:18.2759291Z",
@@ -2664,7 +2664,7 @@
       "WorkloadArea": "Teamwork and Communications",
       "SubArea": ""
     },
-   {
+    {
       "ChangeList": [
         {
           "Id": "1a1004c8-bead-497d-8af6-e84a70b03ddf",
@@ -3253,6 +3253,72 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-12-11T00:00:00.0000000Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3e5eeaf8-7046-4713-ac62-2ddf24eb26f0",
+          "ApiChange": "Property",
+          "ChangedApiName": "migrationMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **migrationMode** property to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "3e5eeaf8-7046-4713-ac62-2ddf24eb26f0",
+          "ApiChange": "Property",
+          "ChangedApiName": "originalCreatedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **originalCreatedDateTime** property to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "3e5eeaf8-7046-4713-ac62-2ddf24eb26f0",
+          "ApiChange": "Property",
+          "ChangedApiName": "originalCreatedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **originalCreatedDateTime** property to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "3e5eeaf8-7046-4713-ac62-2ddf24eb26f0",
+          "ApiChange": "Property",
+          "ChangedApiName": "migrationMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **migrationMode** property to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "3e5eeaf8-7046-4713-ac62-2ddf24eb26f0",
+          "ApiChange": "Method",
+          "ChangedApiName": "startMigration",
+          "ChangeType": "Addition",
+          "Description": "Added the [channel: startMigration](https://learn.microsoft.com/en-us/graph/api/channel-startmigration?view=graph-rest-beta) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "3e5eeaf8-7046-4713-ac62-2ddf24eb26f0",
+          "ApiChange": "Method",
+          "ChangedApiName": "startMigration",
+          "ChangeType": "Addition",
+          "Description": "Added the [chat: startMigration](https://learn.microsoft.com/en-us/graph/api/chat-startmigration?view=graph-rest-beta) method to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "3e5eeaf8-7046-4713-ac62-2ddf24eb26f0",
+          "ApiChange": "Method",
+          "ChangedApiName": "completeMigration",
+          "ChangeType": "Addition",
+          "Description": "Added the [chat: completeMigration](https://learn.microsoft.com/en-us/graph/api/chat-completemigration?view=graph-rest-beta) method to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "3e5eeaf8-7046-4713-ac62-2ddf24eb26f0",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2024-12-12T22:24:27.0548997Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Messaging"
     }
