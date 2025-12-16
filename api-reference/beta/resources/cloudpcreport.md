@@ -50,7 +50,8 @@ The following JSON representation shows the resource type.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.cloudPcReport",
-  "openType": false
+  "openType": false,
+  "baseType": "microsoft.graph.entity"
 }
 -->
 ``` json
