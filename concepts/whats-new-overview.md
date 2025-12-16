@@ -20,9 +20,11 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## December 2025: New and generally available
 
-### Files
+### Device and app management | Cloud printing
 
-Use the **deleted** property on [listItem](/graph/api/resources/listitem) to indicate that the item was deleted when it appears in the result of a delta enumeration.
+Use the new supported [media sizes](/graph/api/resources/printercapabilities#mediasizes-values) in the **mediaSizes** property of the [printerCapabilities](/graph/api/resources/printercapabilities) resource.
+
+## December 2025: New in preview only
 
 ### Calendars | Places
 
@@ -32,6 +34,10 @@ Use the **deleted** property on [listItem](/graph/api/resources/listitem) to ind
 ### Device and app management | Cloud PC
 
 [Get](/graph/api/cloudpc-retrievecloudpclaunchdetail) the [cloudPcLaunchDetail](/graph/api/resources/cloudpclaunchdetail) for a specific Cloud PC that belongs to the current signed-in user.
+
+### Device and app management | Cloud printing
+
+Use the new supported [media sizes](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true#mediasizes-values) in the **mediaSizes** property of the [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true) resource.
 
 ### Files
 
