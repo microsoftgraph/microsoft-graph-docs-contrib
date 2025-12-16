@@ -62,7 +62,7 @@ If successful, this method returns a `204 No Content` response code.
 -->
 
 ```http
-DELETE https://graph.microsoft.com/beta/directory/federationConfigurations/96db02e2-80c1-5555-bc3a-de92ffb8c5be
+DELETE https://graph.microsoft.com/v1.0/directory/federationConfigurations/96db02e2-80c1-5555-bc3a-de92ffb8c5be
 ```
 
 # [C#](#tab/csharp)
