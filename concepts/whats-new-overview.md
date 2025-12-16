@@ -48,6 +48,10 @@ Use the following resources to represent the data sent to Azure Logic Apps as pa
 
 Use the new supported [media sizes](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true#mediasizes-values) in the **mediaSizes** property of the [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true) resource.
 
+### Device and app management | Cloud PC
+
+[Retrieve](/graph/api/cloudpcreport-retrievecloudpcrecommendationreports) Cloud PC recommendation reports for usage optimization and cost savings.
+
 ### Files
 
 Use the SharePoint cross-tenant migration task APIs in Microsoft Graph to enable organizations to manage the tasks during tenant-to-tenant migrations. For more information, see [sharePointMigrationTask](/graph/api/resources/sharepointmigrationtask?view=graph-rest-beta&preserve-view=true).
