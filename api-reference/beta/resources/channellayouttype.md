@@ -31,3 +31,4 @@ The following JSON representation shows the enum type.
   "@odata.type": "microsoft.graph.channelLayoutType",
   "value": "post"
 }
+```
