@@ -23,6 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /me/settings/workHoursAndLocations/occurrences/setCurrentLocation
 ```
@@ -31,6 +32,7 @@ POST /me/settings/workHoursAndLocations/occurrences/setCurrentLocation
 
 When using the `/users/{id}` endpoint, the ID must be your own user ID.
 
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{id | userPrincipalName}/settings/workHoursAndLocations/occurrences/setCurrentLocation
 ```
