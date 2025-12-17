@@ -70,7 +70,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.security.autoAuditingConfiguration",
-  "isAutomatic": true
+  "isAutomatic": "Boolean"
 }
 ```
 

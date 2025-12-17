@@ -113,7 +113,8 @@ Content-Type: application/json
 {
   "value": {
     "@odata.type": "#microsoft.graph.security.autoAuditingConfiguration",
-    "isAutomatic": true
+    "id": "30c3f541-b3c9-413f-ca1b-de272d4fd356",
+    "isAutomatic": "Boolean"
   }
 }
 ```
