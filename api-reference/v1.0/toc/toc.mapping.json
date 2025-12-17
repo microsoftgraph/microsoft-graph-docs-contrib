@@ -243,9 +243,8 @@
             "resourceLink"
           ]
         },
-         {
+        {
           "name": "Work hours and locations",
-          "overview": "../../resources/workhoursandlocationssetting.md",
           "resources": [
             "workHoursAndLocationsSetting",
             "workPlanOccurrence",
@@ -689,6 +688,7 @@
       "complexTypes": [
         "fileStorageContainerTypeRegistrationSettings",
         "fileStorageContainerTypeSettings"
+      ],
       "childNodes": [
         {
           "name": "SharePoint migration",
