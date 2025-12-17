@@ -27,6 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/settings/workHoursAndLocations
 ```
@@ -35,6 +36,7 @@ GET /me/settings/workHoursAndLocations
 
 When using the `/users/{id}` endpoint, the ID must be your own user ID.
 
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}/settings/workHoursAndLocations
 ```
