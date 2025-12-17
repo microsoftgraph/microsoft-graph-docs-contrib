@@ -53,7 +53,7 @@ The [callRecord: getPstnCalls](/graph/api/callrecords-callrecord-getpstncalls) A
 
 ## December 2025: New in preview only
 
-### Calendars | Places
+### Identity and access | Directory management
 
 [Upsert](/graph/api/place-patch-places?view=graph-rest-beta&preserve-view=true) one or more [place](/graph/api/resources/place?view=graph-rest-beta&preserve-view=true) objects in async mode.
 
@@ -68,6 +68,10 @@ Added `mexico` as a new supported value for the **geographicLocationType** prope
 ### Device and app management | Cloud printing
 
 Use the new supported [media sizes](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true#mediasizes-values) in the **mediaSizes** property of the [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true) resource.
+
+### Device and app management | Cloud PC
+
+[Retrieve](/graph/api/cloudpcreport-retrievecloudpcrecommendationreports) Cloud PC recommendation reports for usage optimization and cost savings.
 
 ### Files
 

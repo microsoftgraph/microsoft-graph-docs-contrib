@@ -1,6 +1,6 @@
 ---
-title: "Get usernameSignInIdentifier"
-description: "Read the properties and relationships of usernameSignInIdentifier object."
+title: "Delete signInIdentifierBase"
+description: "Delete a signInIdentifierBase object."
 author: "Gyanendersinghgithub"
 ms.date: 10/02/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "entra-sign-in"
 doc_type: apiPageType
 ---
 
-# Get usernameSignInIdentifier
+# Delete signInIdentifierBase
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of [usernameSignInIdentifier](../resources/usernamesigninidentifier.md) object.
+Delete a [signInIdentifierBase](../resources/signinidentifierbase.md) object. Supported only for the [customUsernameSignInIdentifier](../resources/customusernamesigninidentifier.md) derived type.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -22,8 +22,8 @@ Read the properties and relationships of [usernameSignInIdentifier](../resources
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "usernamesigninidentifier_get" } -->
-[!INCLUDE [permissions-table](../includes/permissions/usernamesigninidentifier-get-permissions.md)]
+<!-- { "blockType": "permissions", "name": "signinidentifierbase_delete" } -->
+[!INCLUDE [permissions-table](../includes/permissions/signinidentifierbase-delete-permissions.md)]
 
 [!INCLUDE [rbac-signin-id-apis](../includes/rbac-for-apis/rbac-signin-id-apis.md)]
 
@@ -34,12 +34,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /identity/signInIdentifiers/{signInIdentifier-name}
+DELETE /identity/signInIdentifiers/{signInIdentifier-name}
 ```
 
-## Optional query parameters
+## Path parameters
 
-This method doesn't support OData query parameters to help customize the response. The sign-in identifier is retrieved directly through the URL path.
+|Parameter|Type|Description|
+|:---|:---|:---|
+|signInIdentifier-name|String|The name of the sign-in identifier to delete. Supported values for custom username identifiers: `CustomUsername1`, `CustomUsername2`. **Note**: Built-in identifiers (`Email`, `UPN`, `Username`) can't be deleted.|
 
 ## Request headers
 
@@ -53,7 +55,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [usernameSignInIdentifier](../resources/usernamesigninidentifier.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -63,35 +65,35 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_usernamesigninidentifier"
+  "name": "delete_customusernamesigninidentifier"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identity/signInIdentifiers/Username
+DELETE https://graph.microsoft.com/beta/identity/signInIdentifiers/CustomUsername1
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-usernamesigninidentifier-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-customusernamesigninidentifier-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-usernamesigninidentifier-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/delete-customusernamesigninidentifier-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-usernamesigninidentifier-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/delete-customusernamesigninidentifier-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-usernamesigninidentifier-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-customusernamesigninidentifier-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-usernamesigninidentifier-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/delete-customusernamesigninidentifier-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-usernamesigninidentifier-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/delete-customusernamesigninidentifier-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -102,19 +104,9 @@ The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.usernameSignInIdentifier"
+  "truncated": true
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "value": {
-    "@odata.type": "#microsoft.graph.usernameSignInIdentifier",
-    "name": "Username",
-    "isEnabled": "true"
-  }
-}
+HTTP/1.1 204 No Content
 ```

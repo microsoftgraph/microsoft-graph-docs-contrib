@@ -4,7 +4,7 @@ description: "Add sponsors to an agentIdentityBlueprint by posting to the sponso
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-applications"
+ms.subservice: "entra-agent-id"
 doc_type: apiPageType
 ---
 

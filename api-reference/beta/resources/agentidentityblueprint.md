@@ -4,7 +4,7 @@ description: "An agent identity blueprint is a specialized application type that
 author: "zallison22"
 ms.date: 11/10/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-applications"
+ms.subservice: "entra-agent-id"
 doc_type: resourcePageType
 ---
 
