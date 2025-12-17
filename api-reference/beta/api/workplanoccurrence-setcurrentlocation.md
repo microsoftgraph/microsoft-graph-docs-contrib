@@ -51,8 +51,8 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter | Type | Description |
 |:----------|:-----|:------------|
 | placeId | String | Identifier of a place from the Microsoft Graph Places Directory API. Only applicable when **workLocationType** is set to `office`. |
-| updateScope | [workLocationUpdateScope](#worklocationupdatescope-values) | The scope of the update. The allowed values are: `currentSegment`, `currentDay`. |
-| workLocationType | [workLocationType](../resources/workplanoccurrence.md#worklocationtype-values) | The new work location type to set. Supports a subset of the values of **workLocationType**. The allowed values are: `office`, `remote`. |
+| updateScope | [workLocationUpdateScope](#worklocationupdatescope-values) | The scope of the update. Supports a subset of the values of **workLocationUpdateScope**. The possible values are: `currentSegment`, `currentDay`. |
+| workLocationType | [workLocationType](../resources/workplanoccurrence.md#worklocationtype-values) | The new work location type to set. Supports a subset of the values of **workLocationType**. The possible values are: `office`, `remote`. |
 
 ### workLocationUpdateScope values
 
