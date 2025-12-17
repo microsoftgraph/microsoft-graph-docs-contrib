@@ -20,6 +20,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## December 2025: New and generally available
 
+### Calendars | Work hours and locations
+
+Manage flexible work hours and locations using the following resources: [workHoursAndLocationsSetting](/graph/api/resources/workhoursandlocationssetting), [workPlanOccurrence](/graph/api/resources/workplanoccurrence), and [workPlanRecurrence](/graph/api/resources/workplanrecurrence). These resources allow you to define recurring and specific work patterns, locations, and time off for modern hybrid scenarios.
+
 ### Files
 
 - Use the following new resources and their methods to further support structured file storage in SharePoint Embedded applications:
