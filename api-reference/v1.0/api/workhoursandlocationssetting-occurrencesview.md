@@ -35,6 +35,7 @@ GET /me/settings/workHoursAndLocations/occurrencesView(startDateTime='{startDate
 
 When using the `/users/{id}` endpoint, the ID must be your own user ID.
 
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}/settings/workHoursAndLocations/occurrencesView(startDateTime='{startDateTime}',endDateTime='{endDateTime}')
 ```
