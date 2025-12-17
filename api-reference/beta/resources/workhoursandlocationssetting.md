@@ -49,8 +49,8 @@ Work hours and location information are useful in scenarios that involve plannin
 
 | Relationship | Type | Description |
 |:-------------|:-----|:------------|
-| recurrences | [workPlanRecurrence](workplanrecurrence.md) collection | Collection of recurring work plans defined by the user. |
 | occurrences | [workPlanOccurrence](workplanoccurrence.md) collection | Collection of work plan occurrences. |
+| recurrences | [workPlanRecurrence](workplanrecurrence.md) collection | Collection of recurring work plans defined by the user. |
 
 ## JSON representation
 
