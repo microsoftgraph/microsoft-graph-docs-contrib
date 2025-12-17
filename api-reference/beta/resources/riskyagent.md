@@ -4,7 +4,7 @@ description: Represents the Microsoft Entra agents that are at risk as evaluated
 author: jiayle27
 ms.date: 11/27/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-agent-id"
+ms.subservice: entra-sign-in
 doc_type: resourcePageType
 ---
 

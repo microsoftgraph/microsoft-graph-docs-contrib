@@ -4,7 +4,7 @@ description: 'Identity Protection of agents - riskyAgentUser resource type'
 author: jiayle27
 ms.date: 11/13/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-agent-id"
+ms.subservice: entra-sign-in
 doc_type: resourcePageType
 ---
 
