@@ -4,7 +4,7 @@ description: "Get a list of the agentInstance objects and their properties."
 author: "jasondou"
 ms.date: 11/11/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-id"
+ms.subservice: "entra-agent-id"
 doc_type: apiPageType
 ---
 

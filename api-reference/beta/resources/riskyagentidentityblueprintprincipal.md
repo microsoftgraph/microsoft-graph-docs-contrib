@@ -4,7 +4,7 @@ description: 'Identity Protection of agents - riskyAgentIdentityBlueprintPrincip
 author: jiayle27
 ms.date: 11/13/2025
 ms.localizationpriority: medium
-ms.subservice: entra-sign-in
+ms.subservice: "entra-agent-id"
 doc_type: resourcePageType
 ---
 
