@@ -35,6 +35,7 @@ POST /me/settings/workHoursAndLocations/recurrences
 
 When using the `/users/{id}` endpoint, the ID must be your own user ID.
 
+<!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{id | userPrincipalName}/settings/workHoursAndLocations/recurrences
 ```
