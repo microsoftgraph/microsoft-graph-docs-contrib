@@ -16,9 +16,7 @@ Namespace: microsoft.graph
 
 Represents your working hours and location preferences for modern hybrid work scenarios.
 
-Work hours and location information is useful in scenarios that involve planning in office days with colleagues, and scheduling meetings across different working hours and time zones. You can [get](../api/workhoursandlocationssetting-get.md) and [update](../api/workhoursandlocationssetting-update.md) your work hours and locations as part of your personal work planning.
-
-With these APIs you can now set different work locations and schedules to accommodate your flexible work arrangements.
+Work hours and location information are useful in scenarios that involve planning in-office days with colleagues and scheduling meetings across different working hours and time zones. You can [get](../api/workhoursandlocationssetting-get.md) and [update](../api/workhoursandlocationssetting-update.md) your work hours and locations as part of your personal work planning. Use these APIs to set different work locations and schedules to accommodate your flexible work arrangements.
 
 ## Methods
 
@@ -35,13 +33,13 @@ With these APIs you can now set different work locations and schedules to accomm
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| maxSharedWorkLocationDetails | [maxWorkLocationDetails](../resources/workhoursandlocationssetting.md#maxworklocationdetails-values) | Controls the level of work location details that can be shared with colleagues. |
+| maxSharedWorkLocationDetails | [maxWorkLocationDetails](../resources/workhoursandlocationssetting.md#maxworklocationdetails-values) | Controls the level of work location details that can be shared with colleagues. The possible values are: `unknown`, `none`, `approximate`, `specific`, `unknownFutureValue`. |
 
 ### maxWorkLocationDetails values
 
 | Member | Description |
 |:-------|:------------|
-| unknown | The level of location details to share is unknown. This value is for backward compatibility only and can't be set as a new value. |
+| unknown | The level of location details to share is unknown. This value exists for backward compatibility only and can't be set as a new value. |
 | none | No location details are shared. |
 | approximate | Only general work location type is shared, such as office or remote. |
 | specific | Detailed location information is shared, such as building and desk information. |
