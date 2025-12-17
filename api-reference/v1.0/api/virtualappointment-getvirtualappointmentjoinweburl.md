@@ -111,7 +111,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Edm.String",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Edm.String",
   "value": "https://visit.teams.microsoft.com/webrtc-svc/api/route?tid=a796be92-&convId=19:meeting_=True"
 }
 ```

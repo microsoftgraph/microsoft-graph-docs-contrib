@@ -56,7 +56,7 @@ The following example shows a request.
   "name": "delete_calendar"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/me/calendar
+DELETE https://graph.microsoft.com/v1.0/me/calendars/{id}
 ```
 
 # [JavaScript](#tab/javascript)
