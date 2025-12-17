@@ -5,8 +5,8 @@
         {
           "Id": "30294cf3-5880-4607-b248-63dab5496aaa",
           "ApiChange": "Enum type",
-          "ChangedApiName": "cloudPcReportName",
-          "ChangeType": "Change",
+          "ChangedApiName": "cloudPCInventoryReport",
+          "ChangeType": "Addition",
           "Description": "Added the `cloudPCInventoryReport` member to the **cloudPcReportName** enumeration type.",
           "Target": "cloudPcReportName"
         }
