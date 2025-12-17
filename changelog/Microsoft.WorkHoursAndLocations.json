@@ -97,7 +97,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "workHoursAndLocationsSetting",
           "ChangeType": "Addition",
-          "Description": "Added the [workHoursAndLocationsSetting](https://learn.microsoft.com/en-us/graph/api/resources/workhoursandlocationssetting?view=graph-rest-v1.0) resource and associated methods.",
+          "Description": "Added the [workHoursAndLocationsSetting](https://learn.microsoft.com/en-us/graph/api/resources/workhoursandlocationssetting?view=graph-rest-1.0) resource and associated methods.",
           "Target": "workHoursAndLocationsSetting"
         },
         {
@@ -105,7 +105,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "workPlanRecurrence",
           "ChangeType": "Addition",
-          "Description": "Added the [workPlanRecurrence](https://learn.microsoft.com/en-us/graph/api/resources/workplanrecurrence?view=graph-rest-v1.0) resource and associated methods.",
+          "Description": "Added the [workPlanRecurrence](https://learn.microsoft.com/en-us/graph/api/resources/workplanrecurrence?view=graph-rest-1.0) resource and associated methods.",
           "Target": "workPlanRecurrence"
         },
         {
@@ -113,7 +113,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "workPlanOccurrence",
           "ChangeType": "Addition",
-          "Description": "Added the [workPlanOccurrence](https://learn.microsoft.com/en-us/graph/api/resources/workplanoccurrence?view=graph-rest-v1.0) resource and associated methods.",
+          "Description": "Added the [workPlanOccurrence](https://learn.microsoft.com/en-us/graph/api/resources/workplanoccurrence?view=graph-rest-1.0) resource and associated methods.",
           "Target": "workPlanOccurrence"
         },
         {
@@ -121,7 +121,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "timeOffDetails",
           "ChangeType": "Addition",
-          "Description": "Added the [timeOffDetails](https://learn.microsoft.com/en-us/graph/api/resources/timeoffdetails?view=graph-rest-v1.0) resource type.",
+          "Description": "Added the [timeOffDetails](https://learn.microsoft.com/en-us/graph/api/resources/timeoffdetails?view=graph-rest-1.0) resource type.",
           "Target": "timeOffDetails"
         },
         {
@@ -153,7 +153,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "workHoursAndLocations",
           "ChangeType": "Addition",
-          "Description": "Added the **workHoursAndLocations** relationship to the [userSettings](https://learn.microsoft.com/en-us/graph/api/resources/usersettings?view=graph-rest-v1.0) resource.",
+          "Description": "Added the **workHoursAndLocations** relationship to the [userSettings](https://learn.microsoft.com/en-us/graph/api/resources/usersettings?view=graph-rest-1.0) resource.",
           "Target": "userSettings"
         },
         {
@@ -161,7 +161,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "occurrencesView",
           "ChangeType": "Addition",
-          "Description": "Added the [occurrencesView](https://learn.microsoft.com/en-us/graph/api/workhoursandlocationssetting-occurrencesview?view=graph-rest-v1.0) method to the [workHoursAndLocationsSetting](https://learn.microsoft.com/en-us/graph/api/resources/workhoursandlocationssetting?view=graph-rest-v1.0) resource.",
+          "Description": "Added the [occurrencesView](https://learn.microsoft.com/en-us/graph/api/workhoursandlocationssetting-occurrencesview?view=graph-rest-1.0) method to the [workHoursAndLocationsSetting](https://learn.microsoft.com/en-us/graph/api/resources/workhoursandlocationssetting?view=graph-rest-1.0) resource.",
           "Target": "workHoursAndLocationsSetting"
         },
         {
@@ -169,7 +169,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "setCurrentLocation",
           "ChangeType": "Addition",
-          "Description": "Added the [setCurrentLocation](https://learn.microsoft.com/en-us/graph/api/workplanoccurrence-setcurrentlocation?view=graph-rest-v1.0) method to the [workPlanOccurrence](https://learn.microsoft.com/en-us/graph/api/resources/workplanoccurrence?view=graph-rest-v1.0) resource.",
+          "Description": "Added the [setCurrentLocation](https://learn.microsoft.com/en-us/graph/api/workplanoccurrence-setcurrentlocation?view=graph-rest-1.0) method to the [workPlanOccurrence](https://learn.microsoft.com/en-us/graph/api/resources/workplanoccurrence?view=graph-rest-1.0) resource.",
           "Target": "workPlanOccurrence"
         }
       ],
