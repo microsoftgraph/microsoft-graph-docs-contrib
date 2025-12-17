@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update an [autoAuditingConfiguration](../resources/security-autoauditingconfiguration.md) object.
+Update the properties of a autoAuditingConfiguration object.
 
 ## Permissions
 
@@ -22,8 +22,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "security_autoauditingconfiguration_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-autoauditingconfiguration-update-permissions.md)]
-
-[!INCLUDE [rbac-mdi-apis](../includes/rbac-for-apis/rbac-mdi-apis.md)]
 
 ## HTTP request
 
@@ -44,14 +42,19 @@ PATCH /security/identities/autoAuditingConfiguration
 
 ## Request body
 
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+
+
+**TODO: Remove properties that don't apply**
 |Property|Type|Description|
 |:---|:---|:---|
-|isAutomatic|Boolean|Required.|
+|isAutomatic|Boolean|**TODO: Add Description** Required.|
+
 
 
 ## Response
 
-If successful, this method returns a `200 OK` response code.
+If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.security.autoAuditingConfiguration](../resources/security-autoauditingconfiguration.md) object in the response body.
 
 ## Examples
 
@@ -91,4 +94,11 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.security.autoAuditingConfiguration",
+  "id": "30c3f541-b3c9-413f-ca1b-de272d4fd356",
+  "isAutomatic": "Boolean"
+}
 ```

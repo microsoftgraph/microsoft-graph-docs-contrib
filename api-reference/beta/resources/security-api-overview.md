@@ -140,7 +140,6 @@ The Defender for Identity sensors management APIs allows you to:
 - Manage sensor settings, such as adding descriptions, enabling or disabling delayed updates, and specifying the domain controller that the sensor connects to for querying Entra ID.
 - Identify sensors that are ready to be activated.
 - Define whether the sensors in your infrastructure are to be activated automatically or manually.
-- Automatically configures Windows event collection on your domain controller to support detections in the new Defender for Identity sensor
 
 ## Incidents
 
