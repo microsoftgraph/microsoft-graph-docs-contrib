@@ -27,7 +27,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|autoAuditingConfiguration|[microsoft.graph.security.autoAuditingConfiguration](../resources/security-autoauditingconfiguration.md)|Represents automatic configuration for collection of Windows event logs as needed for Defender for Identity sensors.|
+|autoAuditingConfiguration|[autoAuditingConfiguration](../resources/security-autoauditingconfiguration.md)|Represents automatic configuration for collection of Windows event logs as needed for Defender for Identity sensors.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
