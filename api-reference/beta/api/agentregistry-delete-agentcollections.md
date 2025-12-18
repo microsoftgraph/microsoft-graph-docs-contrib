@@ -4,7 +4,7 @@ description: "Delete an agentCollection object."
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-id"
+ms.subservice: "entra-agent-id"
 doc_type: apiPageType
 ---
 

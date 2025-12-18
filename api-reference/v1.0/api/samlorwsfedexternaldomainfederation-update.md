@@ -73,7 +73,7 @@ If successful, this method returns a `200 OK` response code and an updated [saml
 -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederation/d5a56845-6845-d5a5-4568-a5d54568a5d5
+PATCH https://graph.microsoft.com/v1.0/directory/federationConfigurations/graph.samlOrWsFedExternalDomainFederation/d5a56845-6845-d5a5-4568-a5d54568a5d5
 Content-Type: application/json
 
 {

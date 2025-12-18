@@ -16,7 +16,7 @@ Namespace: microsoft.graph.healthMonitoring
 
 Represents a collection of supporting data locations that can be queried for debugging an [alert](../resources/healthmonitoring-alert.md) in Microsoft Entra Health monitoring.
 
-This resource is an open type that allows other properties to be passed in.
+This resource is an open type that allows additional properties beyond those documented here.
 
 
 Inherits from [healthMonitoringDictionary](../resources/healthmonitoring-healthmonitoringdictionary.md).
