@@ -240,15 +240,14 @@ Content-Length: 853
 
 ## Programmatic export of unlicensed Copilot Chat usage
 
-Currently, there is no public Microsoft Graph API or PowerShell cmdlet that provides access to Copilot Chat usage data for unlicensed users included in the Copilot Chat Usage report.
+Currently, there's no public Microsoft Graph API or PowerShell cmdlet that provides access to Copilot Chat usage data for unlicensed users included in the Copilot Chat Usage report.
 
 Unlicensed Copilot Chat interactions are logged only in the Microsoft Purview Unified Audit Log.
 
-To automatically export unlicensed usage data, use one of the following:
+Use one of the following methods to automatically extract `CopilotInteraction` events from the Unified Audit Log:
 
 - **PowerShell**: `Search-UnifiedAuditLog` to filter `CopilotInteraction` events and export them (CSV).
-- **Office 365 Management Activity API**: to stream audit logs into SIEM or analytics platforms.
-
+- **Office 365 Management Activity API**: To stream audit logs into SIEM or analytics platforms.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
