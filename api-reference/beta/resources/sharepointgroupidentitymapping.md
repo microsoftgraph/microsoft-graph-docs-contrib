@@ -52,9 +52,9 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.sharePointGroupIdentityMapping",
+  "deleted": {"@odata.type": "microsoft.graph.deleted"},
   "groupType": "String",
   "id": "String (identifier)",
-  "deleted": {"@odata.type": "microsoft.graph.deleted"},
   "sourceGroupIdentity": {"@odata.type": "microsoft.graph.identity"},
   "sourceOrganizationId": "Guid",
   "targetGroupIdentity": {"@odata.type": "microsoft.graph.identity"},
