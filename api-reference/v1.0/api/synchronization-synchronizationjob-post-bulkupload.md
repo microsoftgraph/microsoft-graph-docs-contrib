@@ -237,7 +237,7 @@ HTTP/1.1 202 Accepted
 Content-Type: application/scim+json
 client-request-id: 92cd10f6-fcc3-5d61-098e-a6dd35e460ef
 content-length: "0"
-location: "https://graph.microsoft.com/beta/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'"
+location: "https://graph.microsoft.com/v1.0/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'"
 request-id: beeb9ea0-f7e4-4fe7-8507-cd834c88f18b
 
 {}
@@ -426,7 +426,7 @@ HTTP/1.1 202 Accepted
 Content-Type: application/scim+json
 client-request-id: 92cd10f6-fcc3-5d61-098e-a6dd35e460ef
 content-length: "0"
-location: "https://graph.microsoft.com/beta/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'"
+location: "https://graph.microsoft.com/v1.0/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'"
 request-id: beeb9ea0-f7e4-4fe7-8507-cd834c88f18b
 
 {}
@@ -490,7 +490,7 @@ HTTP/1.1 202 Accepted
 Content-Type: application/scim+json
 client-request-id: 92cd20f6-fcc3-5d61-098e-a6dd35e460ef
 content-length: "0"
-location: "https://graph.microsoft.com/beta/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'"
+location: "https://graph.microsoft.com/v1.0/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'"
 request-id: beec9ea0-f7e4-4fe7-8507-cd834c88f18b
 
 {}
