@@ -677,6 +677,7 @@
       "complexTypes": [
         "fileStorageContainerTypeRegistrationSettings",
         "fileStorageContainerTypeSettings"
+      ],
       "childNodes": [
         {
           "name": "SharePoint migration",
