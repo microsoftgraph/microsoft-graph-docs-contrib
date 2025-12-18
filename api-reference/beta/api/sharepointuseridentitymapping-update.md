@@ -51,7 +51,7 @@ PATCH /solutions/sharePoint/migrations/crossOrganizationUserMappings
 
 |Property|Type|Description|
 |:---|:---|:---|
-|deleted|[deleted](../resources/deleted.md)|Indicate that an identity mapping has been successfully deleted. Inherited from [sharePointIdentityMapping](../resources/sharepointidentitymapping.md). Optional.|
+|deleted|[deleted](../resources/deleted.md)|Indicates that an identity mapping was deleted successfully. Optional. Inherited from [sharePointIdentityMapping](../resources/sharepointidentitymapping.md).|
 |sourceUserIdentity|[userIdentity](../resources/useridentity.md)|The identity information of the source user.|
 |sourceOrganizationId|Guid|The unique identifier of the source organization in the migration. Inherited from [sharePointIdentityMapping](../resources/sharepointidentitymapping.md).|
 |targetUserIdentity|[userIdentity](../resources/useridentity.md)|The identity information of the target user.|
@@ -130,10 +130,10 @@ Content-Type: application/json
         "userPrincipalName": "user1@contoso.com"
       },
       "targetUserIdentity": {
-        "userPrincipalName": "admin@a830edad9050849ken005.onmicrosoft.com"
+        "userPrincipalName": "admin@fabrikam.onmicrosoft.com"
       },
       "targetUserMigrationData": {
-        "email": "admin@a830edad9050849ken005.onmicrosoft.com"
+        "email": "admin@fabrikam.onmicrosoft.com"
       }
     },
     {
