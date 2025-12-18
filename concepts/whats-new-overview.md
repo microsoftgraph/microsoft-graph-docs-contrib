@@ -59,7 +59,7 @@ Use the [userConfiguration](/graph/api/resources/userconfiguration?view=graph-re
 
 ### Personal contacts
 
-Use the **primaryEmailAddress**, **secondaryEmailAddress**, and **tertiaryEmailAddress** properties on [contact](graph/api/resources/contact?view=graph-rest-beta&preserve-view=true) to get or set the primary, secondary, and tertiary email addresses of a contact.
+Use the **primaryEmailAddress**, **secondaryEmailAddress**, and **tertiaryEmailAddress** properties on [contact](/graph/api/resources/contact?view=graph-rest-beta&preserve-view=true) to get or set the primary, secondary, and tertiary email addresses of a contact.
 
 ### Reports | Identity and access reports
 
