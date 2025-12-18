@@ -16,10 +16,10 @@ Namespace: microsoft.graph
 
 Get details about Microsoft 365 active users.
 
-> [!Note] 
+> [!Note]
 >
-> For details about different report views and names, see [Microsoft 365 reports - Active Users](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d).
-> If you want to use the Microsoft Graph reports API to get usage data for unlicensed Copilot users, refer [Programmatic export of unlicensed Copilot Chat usage](#programmatic-export-of-unlicensed-copilot-chat-usage). 
+> For details about different report views and names, see [Microsoft 365 reports - Active Users](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d).<br>
+> If you want to use the Microsoft Graph reports API to get usage data for unlicensed Copilot users, refer [Programmatic export of unlicensed Copilot Chat usage](#programmatic-export-of-unlicensed-copilot-chat-usage).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
