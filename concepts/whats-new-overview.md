@@ -94,6 +94,10 @@ Added the `microsoftRevokedSessions` value to the [riskDetail](/graph/api/resour
 
 Use the [userConfiguration](/graph/api/resources/userconfiguration?view=graph-rest-beta&preserve-view=true) resource and its associated methods to manage user-specific settings, metadata, or application data tied to mailbox folders, using XML, binary, or dictionary formats.
 
+### Personal contacts
+
+Use the **primaryEmailAddress**, **secondaryEmailAddress**, and **tertiaryEmailAddress** properties on [contact](/graph/api/resources/contact?view=graph-rest-beta&preserve-view=true) to get or set the primary, secondary, and tertiary email addresses of a contact.
+
 ### Reports | Identity and access reports
 
 Removed the **conditionalAccessAudience** resource type. The return type of the **conditionalAccessAudiences** property of the [signIn resource type](/graph/api/resources/signin?view=graph-rest-beta&preserve-view=true) is a collection of String objects and not the **conditionalAccessAudience** complex type.
