@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: apiPageType
-ms.date: 04/05/2024
+ms.date: 12/18/2025
 ---
 
 # reportRoot: getOffice365ActiveUserDetail
