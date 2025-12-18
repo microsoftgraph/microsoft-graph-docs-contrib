@@ -169,7 +169,7 @@ Content-type: text/plain
   "name": "get_devices_select"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/devices?$select=id,extensionAttributes
+GET https://graph.microsoft.com/v1.0/devices?$select=id,extensionAttributes
 ```
 
 # [C#](#tab/csharp)
