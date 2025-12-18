@@ -20,29 +20,50 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## December 2025: New and generally available
 
+### Device and app management | Cloud PC
+
+- [Retrieve](/graph/api/cloudpcreport-retrievecloudpcrecommendationreports) Cloud PC recommendation reports for usage optimization and cost savings.
+- [Get](/graph/api/cloudpc-retrievecloudpclaunchdetail) the [cloudPcLaunchDetail](/graph/api/resources/cloudpclaunchdetail) for a specific Cloud PC that belongs to the current signed-in user.
+
+### Device and app management | Cloud printing
+
+Use the new supported [media sizes](/graph/api/resources/printercapabilities#mediasizes-values) in the **mediaSizes** property of the [printerCapabilities](/graph/api/resources/printercapabilities) resource.
+
 ### Files
 
-- Use the following new resources and their methods to further support structured file storage in SharePoint Embedded applications:
+Use the following new resources and their methods to further support structured file storage in SharePoint Embedded applications:
   - [fileStorageContainerType](/graph/api/resources/filestoragecontainertype)
   - [fileStorageContainerTypeAppPermissionGrant](/graph/api/resources/filestoragecontainertypeapppermissiongrant)
   - [fileStorageContainerTypeRegistration](/graph/api/resources/filestoragecontainertyperegistration)
 
-### Identity and access | Directory management
+### Identity and access | Governance
 
-- Manage flexible work hours and locations using the following resources: [workHoursAndLocationsSetting](/graph/api/resources/workhoursandlocationssetting?view=graph-rest-beta&preserve-view=true), [workPlanOccurrence](/graph/api/resources/workplanoccurrence?view=graph-rest-beta&preserve-view=true), and [workPlanRecurrence](/graph/api/resources/workplanrecurrence?view=graph-rest-beta&preserve-view=true). These resources allow you to define recurring and specific work patterns, locations, and time off for modern hybrid scenarios.
-- [Upsert](/graph/api/place-patch-places?view=graph-rest-beta&preserve-view=true) one or more [place](/graph/api/resources/place?view=graph-rest-beta&preserve-view=true) objects in async mode.
+Use the following resources to represent the data sent to Azure Logic Apps as part of a custom extension callout request when a custom extension in a catalog is used:
+- [accessPackageAssignmentCalloutData](/graph/api/resources/accesspackageassignmentcalloutdata) - for access package assignments
+- [accessPackageAssignmentRequestCalloutData](/graph/api/resources/accesspackageassignmentrequestcalloutdata) - for access package assignment requests
 
-### Device and app management | Cloud PC
+### Security | eDiscovery
 
-[Get](/graph/api/cloudpc-retrievecloudpclaunchdetail) the [cloudPcLaunchDetail](/graph/api/resources/cloudpclaunchdetail) for a specific Cloud PC that belongs to the current signed-in user.
+- Added the [retry hold policy API](/graph/api/security-ediscoveryholdpolicy-retrypolicy) for triggering a retry of an [eDiscovery hold policy](/graph/api/resources/security-ediscoveryholdpolicy).
+- Added the [eDiscoveryCaseMember resource type and its associated APIs](/graph/api/resources/security-ediscoverycasemember) for managing members of an eDiscovery case.
+
+### Teamwork and communications | Calls and online meetings
+
+The [callRecord: getPstnCalls](/graph/api/callrecords-callrecord-getpstncalls) API now clarifies that it doesn't return information for **Telstra** calling plans only.
+
+## December 2025: New in preview only
+
+### Calendars | Places
+
+[Upsert](/graph/api/place-patch-places?view=graph-rest-beta&preserve-view=true) one or more [place](/graph/api/resources/place?view=graph-rest-beta&preserve-view=true) objects in async mode.
+
+### Calendars | Work hours and locations
+
+Manage flexible work hours and locations using the following resources: [workHoursAndLocationsSetting](/graph/api/resources/workhoursandlocationssetting?view=graph-rest-beta&preserve-view=true), [workPlanOccurrence](/graph/api/resources/workplanoccurrence?view=graph-rest-beta&preserve-view=true), and [workPlanRecurrence](/graph/api/resources/workplanrecurrence?view=graph-rest-beta&preserve-view=true). These resources allow you to define recurring and specific work patterns, locations, and time off for modern hybrid scenarios.
 
 ### Device and app management | Cloud printing
 
 Use the new supported [media sizes](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true#mediasizes-values) in the **mediaSizes** property of the [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true) resource.
-
-### Device and app management | Cloud PC
-
-[Retrieve](/graph/api/cloudpcreport-retrievecloudpcrecommendationreports) Cloud PC recommendation reports for usage optimization and cost savings.
 
 ### Files
 
@@ -69,11 +90,6 @@ Use the [userConfiguration](/graph/api/resources/userconfiguration?view=graph-re
 
 Removed the **conditionalAccessAudience** resource type. The return type of the **conditionalAccessAudiences** property of the [signIn resource type](/graph/api/resources/signin?view=graph-rest-beta&preserve-view=true) is a collection of String objects and not the **conditionalAccessAudience** complex type.
 
-### Security | eDiscovery
-
-- Added the [retry hold policy API](/graph/api/security-ediscoveryholdpolicy-retrypolicy) for triggering a retry of an [eDiscovery hold policy](/graph/api/resources/security-ediscoveryholdpolicy).
-- Added the [eDiscoveryCaseMember resource type and its associated APIs](/graph/api/resources/security-ediscoverycasemember) for managing members of an eDiscovery case.
-
 ### Teamwork and communications | Calls and online meetings
 
 - The [callRecord: getPstnCalls](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta&preserve-view=true) API now clarifies that it doesn't return information for **Telstra** calling plans only.
@@ -90,11 +106,10 @@ Removed the **conditionalAccessAudience** resource type. The return type of the 
 ### Teamwork and communications | Messaging
 
 - [Get](/graph/api/channel-get-allmembers?view=graph-rest-beta&preserve-view=true) a specific member from the channel **allMembers** collection. This API provides unified access to both direct and indirect members across all channel types, including shared channels.
-- [Start](/graph/api/channel-startmigration) the migration of external messages by enabling migration mode in an existing channel.
-- [Start](/graph/api/chat-startmigration) the migration of external messages by enabling migration mode in an existing chat.
-- [Complete](/graph/api/chat-completemigration) the migration of external messages by removing migration mode from a chat.
-
-Use the **layoutType** property on the [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource to create channels with different conversation experiences and switch between them at any time. The property supports two values: `post` for traditional post-reply format and `chat` for a chat-like threading experience. You can set the layout type when [creating a channel](/graph/api/channel-post?view=graph-rest-beta&preserve-view=true) and [update it](/graph/api/channel-patch?view=graph-rest-beta&preserve-view=true) later to switch between layouts.
+- [Start](/graph/api/channel-startmigration?view=graph-rest-beta&preserve-view=true) the migration of external messages by enabling migration mode in an existing channel.
+- [Start](/graph/api/chat-startmigration?view=graph-rest-beta&preserve-view=true) the migration of external messages by enabling migration mode in an existing chat.
+- [Complete](/graph/api/chat-completemigration?view=graph-rest-beta&preserve-view=true) the migration of external messages by removing migration mode from a chat.
+- Use the **layoutType** property on the [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource to create channels with different conversation experiences and switch between them at any time. The property supports two values: `post` for traditional post-reply format and `chat` for a chat-like threading experience. You can set the layout type when [creating a channel](/graph/api/channel-post?view=graph-rest-beta&preserve-view=true) and [update it](/graph/api/channel-patch?view=graph-rest-beta&preserve-view=true) later to switch between layouts.
 
 ## November 2025: New and generally available
 
