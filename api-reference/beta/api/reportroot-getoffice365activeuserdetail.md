@@ -16,7 +16,10 @@ Namespace: microsoft.graph
 
 Get details about Microsoft 365 active users.
 
-> **Note:** For details about different report views and names, see [Microsoft 365 reports - Active Users](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d).
+> [!Note] 
+>
+> For details about different report views and names, see [Microsoft 365 reports - Active Users](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d).
+> If you want to use the Microsoft Graph reports API to get usage data for unlicensed Copilot users, refer [Programmatic export of unlicensed Copilot Chat usage](#programmatic-export-of-unlicensed-copilot-chat-usage). 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -27,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "reportroot_getoffice365activeuserdetail" } -->
 [!INCLUDE [permissions-table](../includes/permissions/reportroot-getoffice365activeuserdetail-permissions.md)]
 
-**Note**: For delegated permissions, to allow apps to read service usage reports on behalf of a user, the tenant administrator must assign the user the appropriate Microsoft Entra ID limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+**Note**: For delegated permissions, to allow apps to read service usage reports on behalf of a user, the tenant administrator must assign the user the appropriate Microsoft Entra ID limited administrator role. For more information, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
@@ -234,6 +237,19 @@ Content-Length: 853
   ]
 }
 ```
+
+## Programmatic export of unlicensed Copilot Chat usage
+
+Currently, there is no public Microsoft Graph API or PowerShell cmdlet that provides access to Copilot Chat usage data for unlicensed users included in the Copilot Chat Usage report.
+
+Unlicensed Copilot Chat interactions are logged only in the Microsoft Purview Unified Audit Log.
+
+To automatically export unlicensed usage data, use one of the following:
+
+- **PowerShell**: `Search-UnifiedAuditLog` to filter `CopilotInteraction` events and export them (CSV).
+- **Office 365 Management Activity API**: to stream audit logs into SIEM or analytics platforms.
+
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
 <!-- {
