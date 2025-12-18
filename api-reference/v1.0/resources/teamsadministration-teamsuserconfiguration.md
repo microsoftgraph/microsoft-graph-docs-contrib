@@ -2,7 +2,7 @@
 title: "teamsUserConfiguration resource type"
 description: "Contains information of users who have accounts hosted on Microsoft Teams."
 author: "praspatil05"
-ms.date: 03/19/2025
+ms.date: 12/03/2025
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.teamsAdministration
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Contains information of users who have accounts hosted on Microsoft Teams.
 
 Inherits from [entity](../resources/entity.md).
@@ -21,8 +19,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/teamsadministration-teamsadminroot-list-userconfigurations.md)|[microsoft.graph.teamsAdministration.teamsUserConfiguration](../resources/teamsadministration-teamsuserconfiguration.md) collection|Get user configurations for all Teams users who belong to a tenant.|
-|[Get](../api/teamsadministration-teamsuserconfiguration-get.md)|[microsoft.graph.teamsAdministration.teamsUserConfiguration](../resources/teamsadministration-teamsuserconfiguration.md)|Read the Teams user configurations for a specific user using their ID (the user's identifier).|
+|[List](../api/teamsadministration-teamsadminroot-list-userconfigurations.md)|[microsoft.graph.teamsAdministration.teamsUserConfiguration](../resources/teamsadministration-teamsuserconfiguration.md) collection|Get [user configurations](../resources/teamsadministration-teamsuserconfiguration.md) for all Teams users who belong to a tenant.|
+|[Get](../api/teamsadministration-teamsuserconfiguration-get.md)|[microsoft.graph.teamsAdministration.teamsUserConfiguration](../resources/teamsadministration-teamsuserconfiguration.md)|Read the Teams [user configurations](../resources/teamsadministration-teamsuserconfiguration.md) for a specific user using their ID (the user's identifier).|
 
 ## Properties
 |Property|Type|Description|
@@ -35,7 +33,7 @@ Inherits from [entity](../resources/entity.md).
 |isEnterpriseVoiceEnabled|Boolean|Indicates whether voice capability is enabled.|
 |modifiedDateTime|DateTimeOffset|The date and time when the user's details were last modified. The system updates this value each time the user's details are changed. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |telephoneNumbers|[microsoft.graph.teamsAdministration.assignedTelephoneNumber](../resources/teamsadministration-assignedtelephonenumber.md) collection|Includes both the phone number and its corresponding assignment category. The assignment category can include values such as `primary`, `private`, and `alternate`.|
-|tenantId|String|The unique identifier of the tenant in Entra to which this user is assigned. |
+|tenantId|String|The unique identifier of the tenant in Entra to which this user is assigned.|
 |userPrincipalName|String|The sign-in address of the user.|
 
 ## Relationships
@@ -49,6 +47,7 @@ The following JSON representation shows the resource type.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.teamsAdministration.teamsUserConfiguration",
+  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
@@ -67,4 +66,3 @@ The following JSON representation shows the resource type.
   "userPrincipalName": "String"
 }
 ```
-

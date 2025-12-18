@@ -2,7 +2,7 @@
 title: "assignedTelephoneNumber resource type"
 description: "Represents details about the phone number and its corresponding assignment category."
 author: "praspatil05"
-ms.date: 03/19/2025
+ms.date: 12/03/2025
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
@@ -11,8 +11,6 @@ doc_type: resourcePageType
 # assignedTelephoneNumber resource type
 
 Namespace: microsoft.graph.teamsAdministration
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents details about the phone number and its corresponding assignment category. The assignment category can include values such as `primary`, `private`, and `alternate`.
 

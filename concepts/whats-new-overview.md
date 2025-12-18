@@ -51,6 +51,10 @@ Use the following resources to represent the data sent to Azure Logic Apps as pa
 - Added the [retry hold policy API](/graph/api/security-ediscoveryholdpolicy-retrypolicy) for triggering a retry of an [eDiscovery hold policy](/graph/api/resources/security-ediscoveryholdpolicy).
 - Added the [eDiscoveryCaseMember resource type and its associated APIs](/graph/api/resources/security-ediscoverycasemember) for managing members of an eDiscovery case.
 
+### Teamwork and communications | Administration
+
+[Get](/graph/api/teamsadministration-teamsuserconfiguration-get) or [list](/graph/api/teamsadministration-teamsadminroot-list-userconfigurations) user configurations for users with accounts in the Teams context.
+
 ### Teamwork and communications | Calls and online meetings
 
 The [callRecord: getPstnCalls](/graph/api/callrecords-callrecord-getpstncalls) API now clarifies that it doesn't return information for **Telstra** calling plans only.

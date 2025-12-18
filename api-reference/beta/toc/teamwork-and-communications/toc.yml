@@ -4,7 +4,7 @@
 items:
 - name: Overview
   href: ../../resources/teams-api-overview.md
-- name: Administration (preview)
+- name: Administration
   items:
   - name: Number assignment
     items:
