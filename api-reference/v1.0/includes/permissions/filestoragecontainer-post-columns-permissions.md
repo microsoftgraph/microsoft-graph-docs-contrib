@@ -1,5 +1,5 @@
 ---
-description: Automatically generated file. DO NOT MODIFY
+description: "Automatically generated file. DO NOT MODIFY"
 ms.topic: include
 ms.localizationpriority: medium
 ---
@@ -9,3 +9,4 @@ ms.localizationpriority: medium
 |Delegated (work or school account)|FileStorageContainer.Selected|Not available.|
 |Delegated (personal Microsoft account)|FileStorageContainer.Selected|Not available.|
 |Application|FileStorageContainer.Selected|Not available.|
+
