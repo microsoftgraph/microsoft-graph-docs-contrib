@@ -244,22 +244,22 @@
             "reservablePlaceMode",
             "resourceLink"
           ],
-           "childNodes": [
+          "childNodes": [
             {
-             "name": "Maps",
-             "resources":[
-               "buildingMap",
-               "fixtureMap",
-               "footprintMap",
-               "levelMap",
-               "sectionMap",
-               "unitMap"
-             ],
+              "name": "Maps",
+              "resources": [
+                "buildingMap",
+                "fixtureMap",
+                "footprintMap",
+                "levelMap",
+                "sectionMap",
+                "unitMap"
+              ],
               "complexTypes": [
                 "importBuildingMapSetting"
               ]
-             }
-           ]
+            }
+          ]
         }
       ]
     },
