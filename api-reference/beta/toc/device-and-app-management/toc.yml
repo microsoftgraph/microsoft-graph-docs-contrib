@@ -318,6 +318,8 @@ items:
       href: ../../resources/cloudpcreport.md
     - name: Retrieve Cloud PC recommendation reports
       href: ../../api/cloudpcreport-retrievecloudpcrecommendationreports.md
+    - name: Retrieve Cloud PC client app usage reports
+      href: ../../api/cloudpcreport-retrievecloudpcclientappusagereport.md
   - name: Cloud PC service plan
     items:
     - name: Cloud PC service plan

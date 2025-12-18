@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|SignInIdentifier.Read.All|SignInIdentifier.ReadWrite.All|
+|Delegated (work or school account)|FileStorageContainerTypeReg.Selected|FileStorageContainerTypeReg.Manage.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|SignInIdentifier.Read.All|SignInIdentifier.ReadWrite.All|
+|Application|FileStorageContainerTypeReg.Selected|Not available.|
 
