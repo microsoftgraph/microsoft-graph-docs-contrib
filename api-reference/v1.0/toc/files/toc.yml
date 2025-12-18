@@ -188,6 +188,10 @@ items:
     href: ../../api/filestoragecontainer-lock.md
   - name: Unlock
     href: ../../api/filestoragecontainer-unlock.md
+  - name: Create migration job
+    href: ../../api/filestoragecontainer-post-migrationjobs.md
+  - name: Provision migration containers
+    href: ../../api/filestoragecontainer-provisionmigrationcontainers.md
 - name: File storage container type
   items:
   - name: File storage container type
@@ -234,10 +238,6 @@ items:
     href: ../../api/filestoragecontainertyperegistration-list-applicationpermissiongrants.md
   - name: Create file storage container type app permission grant
     href: ../../api/filestoragecontainertyperegistration-post-applicationpermissiongrants.md
-  - name: Create migration job
-    href: ../../api/filestoragecontainer-post-migrationjobs.md
-  - name: Provision migration containers
-    href: ../../api/filestoragecontainer-provisionmigrationcontainers.md
 - name: Permission
   items:
   - name: Permission
@@ -276,12 +276,6 @@ items:
     href: ../../resources/shareddriveitem.md
   - name: Use sharing links
     href: ../../api/shares-get.md
-- name: Complex types
-  items:
-  - name: File storage container type registration settings
-    href: ../../resources/filestoragecontainertyperegistrationsettings.md
-  - name: File storage container type settings
-    href: ../../resources/filestoragecontainertypesettings.md
 - name: SharePoint migration
   items:
   - name: Overview
@@ -324,3 +318,9 @@ items:
     items:
     - name: SharePoint migration container info
       href: ../../resources/sharepointmigrationcontainerinfo.md
+- name: Complex types
+  items:
+  - name: File storage container type registration settings
+    href: ../../resources/filestoragecontainertyperegistrationsettings.md
+  - name: File storage container type settings
+    href: ../../resources/filestoragecontainertypesettings.md

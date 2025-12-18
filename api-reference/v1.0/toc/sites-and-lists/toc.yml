@@ -38,10 +38,16 @@ items:
     href: ../../api/sites-list-followed.md
   - name: Get permission
     href: ../../api/site-get-permission.md
+  - name: List permissions
+    href: ../../api/site-list-permissions.md
   - name: Create permissions
     href: ../../api/site-post-permissions.md
   - name: Delete permission
     href: ../../api/site-delete-permission.md
+  - name: Update permission
+    href: ../../api/site-update-permission.md
+  - name: List operations
+    href: ../../api/site-list-operations.md
   - name: List pages
     href: ../../api/basesitepage-list.md
 - name: List
