@@ -80,30 +80,23 @@ The CSV file includes the following headers for columns:
 - Has OneDrive License
 - Has SharePoint License
 - Has Skype For Business License
-- Has Yammer License
-- Has Teams License
+- Has Yammer License*
+- Has Teams License*
 - Exchange Last Activity Date
 - OneDrive Last Activity Date
 - SharePoint Last Activity Date
 - Skype For Business Last Activity Date
-- Yammer Last Activity Date
-- Teams Last Activity Date
+- Yammer Last Activity Date*
+- Teams Last Activity Date*
 - Exchange License Assign Date
 - OneDrive License Assign Date
 - SharePoint License Assign Date
 - Skype For Business License Assign Date
-- Yammer License Assign Date
-- Teams License Assign Date
+- Yammer License Assign Date*
+- Teams License Assign Date*
 - Assigned Products
 
-The following columns aren't supported in Microsoft Graph China operated by 21Vianet:
-
-- Has Yammer License
-- Has Teams License
-- Yammer Last Activity Date
-- Teams Last Activity Date
-- Yammer License Assign Date
-- Teams License Assign Date
+*These columns aren't supported in Microsoft Graph China operated by 21Vianet.
 
 ### JSON
 
