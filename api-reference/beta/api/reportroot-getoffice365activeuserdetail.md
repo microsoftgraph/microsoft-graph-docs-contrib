@@ -247,7 +247,7 @@ Unlicensed Copilot Chat interactions are logged only in the Microsoft Purview Un
 Use one of the following methods to automatically extract `CopilotInteraction` events from the Unified Audit Log:
 
 - **PowerShell**: `Search-UnifiedAuditLog` to filter `CopilotInteraction` events and export them (CSV).
-- **Office 365 Management Activity API**: To stream audit logs into SIEM or analytics platforms.
+- **Office 365 Management Activity API**: To stream audit logs into Security Information and Event Management (SIEM) or analytics platforms.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
