@@ -50,7 +50,7 @@ PATCH /solutions/sharePoint/migrations/crossOrganizationGroupMappings
 
 |Property|Type|Description|
 |:---|:---|:---|
-|deleted|[deleted](../resources/deleted.md)|Indicate that an identity mapping has been successfully deleted. Inherited from [sharePointIdentityMapping](../resources/sharepointidentitymapping.md). Optional.|
+|deleted|[deleted](../resources/deleted.md)|Indicates that an identity mapping was deleted successfully. Optional. Inherited from [sharePointIdentityMapping](../resources/sharepointidentitymapping.md).|
 |groupType|sharePointIdentityMappingGroupType|Indicates the type of group. The possible values are: `none`, `regularGroup`, `m365Group`, `unknownFutureValue`.|
 |sourceGroupIdentity|[identity](../resources/identity.md)|The identity information of the source group.|
 |sourceOrganizationId|Guid|The unique identifier of the source organization in the migration. Inherited from [sharePointIdentityMapping](../resources/sharepointidentitymapping.md).|
