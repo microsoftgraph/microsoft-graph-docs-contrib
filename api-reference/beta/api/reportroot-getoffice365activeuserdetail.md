@@ -20,7 +20,7 @@ Get details about Microsoft 365 active users.
 > [!Note]
 >
 > For details about different report views and names, see [Microsoft 365 reports - Active Users](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d).<br>
-> If you want to use the Microsoft Graph reports API to get usage data for unlicensed Copilot users, refer [Programmatically export unlicensed Copilot Chat usage](#programmatically-export-unlicensed-copilot-chat-usage)).
+> If you want to use the Microsoft Graph reports API to get usage data for unlicensed Copilot users, refer [Programmatically export unlicensed Copilot Chat usage](#programmatically-export-unlicensed-copilot-chat-usage).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
