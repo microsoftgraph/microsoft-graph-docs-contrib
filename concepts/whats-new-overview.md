@@ -63,7 +63,11 @@ Manage flexible work hours and locations using the following resources: [workHou
 
 ### Device and app management | Cloud printing
 
-Use the new supported [media sizes](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true#mediasizes-values) in the **mediaSizes** property of the [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true) resource.
+- Use the new supported [media sizes](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true#mediasizes-values) in the **mediaSizes** property of the [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true) resource.
+- [Get](/graph/api/cloudpc-retrievecloudpclaunchdetail) the [cloudPcLaunchDetail](/graph/api/resources/cloudpclaunchdetail) for a specific Cloud PC that belongs to the current signed-in user.
+- [Retry](/graph/api/cloudpcprovisioningpolicy-retry?view=graph-rest-beta&preserve-view=true) the provisioning operation for Cloud PCs that used the current frontline shared policy and failed to apply the [provisioning policy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true).
+- Updated the supported value range for the **applicationTimeoutInMinutes** property on [cloudPcAutopilotConfiguration](/graph/api/resources/cloudpcautopilotconfiguration?view=graph-rest-beta&preserve-view=true) from 10–360 to 30–360.
+- [Retrieve](/graph/api/cloudpcreport-retrievecloudpcrecommendationreports) Cloud PC recommendation reports for usage optimization and cost savings.
 
 ### Files
 
