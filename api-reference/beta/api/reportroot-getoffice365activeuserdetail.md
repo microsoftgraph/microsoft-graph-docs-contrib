@@ -19,7 +19,7 @@ Get details about Microsoft 365 active users.
 
 > [!Note]
 >
-> For details about different report views and names, see [Microsoft 365 reports - Active Users](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d).<br>
+> For details about different report views and names, see [Microsoft 365 reports - Active Users](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d).  
 > If you want to use the Microsoft Graph reports API to get usage data for unlicensed Copilot users, refer [Programmatically export unlicensed Copilot Chat usage](#programmatically-export-unlicensed-copilot-chat-usage).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } --> 
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET /reports/getOffice365ActiveUserDetail(period='{period_value}')
@@ -46,8 +46,8 @@ GET /reports/getOffice365ActiveUserDetail(date={date_value})
 
 In the request URL, provide one of the following parameters with a valid value.
 
-| Parameter | Type   | Description                              |
-| :-------- | :----- | :--------------------------------------- |
+| Parameter | Type   | Description |
+| :-------- | :----- | :---------- |
 | period    | string | Specifies the length of time over which the report is aggregated. The supported values for `{period_value}` are: D7, D30, D90, and D180. These values follow the format D*n* where *n* represents the number of days over which the report is aggregated. |
 | date      | Date   | Specifies the date for which you want to view the users who performed any activity. `{date_value}` must have a format of YYYY-MM-DD. As this report is only available for the past 30 days, `{date_value}` should be a date from that range. |
 
@@ -57,9 +57,9 @@ This method supports the `$format`, `$top`, and `$skipToken` [OData query parame
 
 ## Request headers
 
-| Name          | Description               |
-| :------------ | :------------------------ |
-|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Name          | Description |
+| :------------ | :---------- |
+| Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts). |
 
 ## Response
 
@@ -145,7 +145,7 @@ GET https://graph.microsoft.com/beta/reports/getOffice365ActiveUserDetail(period
 
 The following example shows the response.
 
-<!-- { "blockType": "ignored" } --> 
+<!-- { "blockType": "ignored" } -->
 
 ```http
 HTTP/1.1 302 Found
