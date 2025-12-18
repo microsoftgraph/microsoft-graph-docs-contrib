@@ -52,7 +52,7 @@ In the request URL, provide one of the following parameters with a valid value.
 
 > **Note:** You need to set either period or date in the URL.
 
-This method supports the `$format`, `$top`, and `$skipToken` [OData query parameters](/graph/query-parameters) to customize the response. The default output type is text/csv. However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.
+This method supports the `$format`, `$top`, and `$skipToken` [OData query parameters](/graph/query-parameters) to customize the response. The default output type is text/csv. However, if you want to specify the output type, use the OData $format query parameter set to text/csv or application/json.
 
 ## Request headers
 
@@ -238,15 +238,15 @@ Content-Length: 853
 }
 ```
 
-## Programmatic export of unlicensed Copilot Chat usage
+## Programmatically export unlicensed Copilot Chat usage
 
-Currently, there's no public Microsoft Graph API or PowerShell cmdlet that provides access to Copilot Chat usage data for unlicensed users included in the Copilot Chat Usage report.
+Currently, no public Microsoft Graph API or PowerShell cmdlet provides access to Copilot Chat usage data for unlicensed users included in the Copilot Chat Usage report.
 
 Unlicensed Copilot Chat interactions are logged only in the Microsoft Purview Unified Audit Log.
 
-Use one of the following methods to automatically extract `CopilotInteraction` events from the Unified Audit Log:
+To automatically extract `CopilotInteraction` events from the Unified Audit Log, use one of the following methods:
 
-- **PowerShell**: `Search-UnifiedAuditLog` to filter `CopilotInteraction` events and export them (CSV).
+- **PowerShell**: Use `Search-UnifiedAuditLog` to filter `CopilotInteraction` events and export them (CSV file).
 - **Office 365 Management Activity API**: To stream audit logs into Security Information and Event Management (SIEM) or analytics platforms.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
