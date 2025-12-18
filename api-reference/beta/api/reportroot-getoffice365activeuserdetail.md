@@ -8,6 +8,7 @@ doc_type: apiPageType
 ms.date: 12/18/2025
 ---
 
+<!-- markdownlint-disable MD024 -->
 # reportRoot: getOffice365ActiveUserDetail
 
 Namespace: microsoft.graph
@@ -19,7 +20,7 @@ Get details about Microsoft 365 active users.
 > [!Note]
 >
 > For details about different report views and names, see [Microsoft 365 reports - Active Users](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d).<br>
-> If you want to use the Microsoft Graph reports API to get usage data for unlicensed Copilot users, refer [Programmatic export of unlicensed Copilot Chat usage](#programmatic-export-of-unlicensed-copilot-chat-usage).
+> If you want to use the Microsoft Graph reports API to get usage data for unlicensed Copilot users, refer [Programmatically export unlicensed Copilot Chat usage](#programmatically-export-unlicensed-copilot-chat-usage)).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -185,7 +186,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/reports/getOffice365ActiveUserDetail(period='D7')?$format=application/json
 ```
 
-
 #### Response
 
 The following example shows the response.
@@ -247,7 +247,7 @@ Unlicensed Copilot Chat interactions are logged only in the Microsoft Purview Un
 To automatically extract `CopilotInteraction` events from the Unified Audit Log, use one of the following methods:
 
 - **PowerShell**: Use `Search-UnifiedAuditLog` to filter `CopilotInteraction` events and export them (CSV file).
-- **Office 365 Management Activity API**: To stream audit logs into Security Information and Event Management (SIEM) or analytics platforms.
+- **Office 365 Management Activity API**: Stream audit logs into Security Information and Event Management (SIEM) or analytics platforms.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
