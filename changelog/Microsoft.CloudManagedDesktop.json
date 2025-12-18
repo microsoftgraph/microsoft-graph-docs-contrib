@@ -55,6 +55,40 @@
       {
       "ChangeList": [
         {
+          "Id": "3a60b3d3-e039-499a-896c-95cf43520b96",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcOperatingSystem",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcOperatingSystem** enumeration type.",
+          "Target": "cloudPcOperatingSystem"
+        },
+        {
+          "Id": "3a60b3d3-e039-499a-896c-95cf43520b96",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcUserAccountType",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcUserAccountType** enumeration type.",
+          "Target": "cloudPcUserAccountType"
+        },
+        {
+          "Id": "3a60b3d3-e039-499a-896c-95cf43520b96",
+          "ApiChange": "Method",
+          "ChangedApiName": "reprovision",
+          "ChangeType": "Addition",
+          "Description": "Added the [reprovision](https://learn.microsoft.com/en-us/graph/api/cloudpc-reprovision?view=graph-rest-1.0) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-1.0) resource.",
+          "Target": "cloudPC"
+        }
+      ],
+      "Id": "3a60b3d3-e039-499a-896c-95cf43520b96",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-12-18T04:17:53.1340728Z",
+      "WorkloadArea": "Devices and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "382c3075-26fc-4093-8518-75389ec935f3",
           "ApiChange": "Member",
           "ChangedApiName": "microsoft365Opal",
@@ -75,7 +109,7 @@
           "Cloud": "Prod",
           "Version": "beta",
           "CreatedDateTime": "2025-10-31T09:55:21.2146082Z",
-          "WorkloadArea": "Devices and apps",
+          "WorkloadArea": "Devices and app management",
           "SubArea": "Cloud PC"
       },
       {

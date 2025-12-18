@@ -29,6 +29,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Use the new supported [media sizes](/graph/api/resources/printercapabilities#mediasizes-values) in the **mediaSizes** property of the [printerCapabilities](/graph/api/resources/printercapabilities) resource.
 
+### Device and app management | Cloud PC
+
+[Reprovision](/graph/api/cloudpc-reprovision) a specific Cloud PC.
+
 ### Files
 
 Use the following new resources and their methods to further support structured file storage in SharePoint Embedded applications:
