@@ -4237,6 +4237,24 @@
       "CreatedDateTime": "2025-11-17T02:41:02.1904173Z",
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "42d1da6e-c7d4-4982-9bd7-59958be34493",
+          "ApiChange": "Member",
+          "ChangedApiName": "qrCode",
+          "ChangeType": "Addition",
+          "Description": "Added the `qrCode` member to the **usageAuthMethod** enumeration.",
+          "Target": "usageAuthMethod"
+        }
+      ],
+      "Id": "42d1da6e-c7d4-4982-9bd7-59958be34493",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-12-18T14:45:07.058603Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
     }
   ]
 }

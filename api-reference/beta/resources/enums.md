@@ -1839,6 +1839,7 @@ Namespace: microsoft.graph
 | fido2SecurityKey |
 | oneTimePasscode |
 | passKeySynced |
+| qrCode |
 
 ### authenticationAppAdminConfiguration values
 
