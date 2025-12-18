@@ -84,7 +84,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/stagingbeta/$metadata#solutions/sharePoint/migrations/crossOrganizationUserMappings/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/sharePoint/migrations/crossOrganizationUserMappings/$entity",
   "id": "AQAAAAEAAAB1c2VyMUBjb250b3NvLmNvbQ",
   "sourceOrganizationId": "11111111-1111-1111-1111-111111111111",
   "userType": "regularUser",
@@ -92,10 +92,10 @@ Content-Type: application/json
     "userPrincipalName": "user1@contoso.com"
   },
   "targetUserIdentity": {
-    "userPrincipalName": "admin@a830edad9050849ken005.onmicrosoft.com"
+    "userPrincipalName": "admin@fabrikam.onmicrosoft.com"
   },
   "targetUserMigrationData": {
-    "email": "admin@a830edad9050849ken005.onmicrosoft.com"
+    "email": "admin@fabrikam.onmicrosoft.com"
   }
 }
 ```
