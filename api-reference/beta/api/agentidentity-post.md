@@ -4,7 +4,7 @@ description: "Create a new agent identity object."
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-applications"
+ms.subservice: "entra-agent-id"
 doc_type: apiPageType
 ---
 
@@ -43,6 +43,8 @@ In the request body, supply a JSON representation of a [agentIdentity](../resour
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [agentIdentity](../resources/agentidentity.md) object in the response body.
+
+For information about errors returned by agent identity APIs, see [Agent identity error codes](/entra/agent-id/identity-platform/error-codes).
 
 ## Examples
 ### Request

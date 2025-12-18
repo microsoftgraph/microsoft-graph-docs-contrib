@@ -69,7 +69,7 @@ The following example shows a request.
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/directory/onPremisesSynchronization/{id}
+GET https://graph.microsoft.com/v1.0/directory/onPremisesSynchronization/{id}
 ```
 
 # [C#](#tab/csharp)
