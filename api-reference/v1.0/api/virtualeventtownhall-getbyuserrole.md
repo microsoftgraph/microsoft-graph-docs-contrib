@@ -68,7 +68,7 @@ The following example shows a request.
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/getByUserRole(role='organizer')
+GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/townhalls/getByUserRole(role='organizer')
 ```
 
 # [C#](#tab/csharp)

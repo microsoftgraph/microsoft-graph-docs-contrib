@@ -4,6 +4,24 @@
 items:
 - name: Overview
   href: ../../resources/teams-api-overview.md
+- name: Administration
+  items:
+  - name: Teams user configuration
+    items:
+    - name: Teams user configuration
+      href: ../../resources/teamsadministration-teamsuserconfiguration.md
+    - name: List
+      href: ../../api/teamsadministration-teamsadminroot-list-userconfigurations.md
+    - name: Get
+      href: ../../api/teamsadministration-teamsuserconfiguration-get.md
+  - name: Complex types
+    items:
+    - name: Assigned telephone number
+      href: ../../resources/teamsadministration-assignedtelephonenumber.md
+    - name: Effective policy assignment
+      href: ../../resources/teamsadministration-effectivepolicyassignment.md
+    - name: Policy assignment
+      href: ../../resources/teamsadministration-policyassignment.md
 - name: Apps
   items:
   - name: Teams app

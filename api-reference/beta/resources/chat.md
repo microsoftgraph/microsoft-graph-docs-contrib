@@ -38,6 +38,8 @@ Represents a chat that is a collection of [chatMessages](chatmessage.md) between
 |[Mark chat as unread](../api/chat-markchatunreadforuser.md) |None| Mark chat as unread for a user.|
 |[Hide chat](../api/chat-hideforuser.md)|None|Hide a chat for a user.|
 |[Unhide chat](../api/chat-unhideforuser.md)|None|Unhide a chat for a user.|
+|[Start migration](../api/chat-startmigration.md)|[chat](chat.md)| Start the migration of external messages by enabling migration mode in an existing [chat](../resources/chat.md).|
+|[Complete migration](../api/chat-completemigration.md)|[chat](chat.md)| Complete the migration of external messages by removing migration mode from a [chat](../resources/chat.md).|
 | **Messages** |||
 |[List messages in a chat](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a chat. |
 |[Get message reply](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Get a single message in a chat. |
@@ -77,12 +79,13 @@ Represents a chat that is a collection of [chatMessages](chatmessage.md) between
 | id| String| The chat's unique identifier. Read-only.|
 | isHiddenForAllMembers | Boolean | Indicates whether the chat is hidden for all its members. Read-only.|
 | lastUpdatedDateTime| dateTimeOffset|  Date and time at which the chat was renamed or list of members were last changed. Read-only.|
+| migrationMode|[migrationMode](../resources/channel.md#migrationmode-values)|Indicates whether a chat is in migration mode. This value is `null` for chats that never entered migration mode. The possible values are: `inProgress`, `completed`, `unknownFutureValue`.|
 | onlineMeetingInfo | [teamworkOnlineMeetingInfo](../resources/teamworkonlinemeetinginfo.md) | Represents details about an online meeting. If the chat isn't associated with an online meeting, the property is empty. Read-only.|
+| originalCreatedDateTime|dateTimeOffset|Timestamp of the original creation time for the chat. The value is `null` if the chat never entered migration mode.|
 | tenantId| String | The identifier of the tenant in which the chat was created. Read-only.|
 | topic| String|  (Optional) Subject or topic for the chat. Only available for group chats.|
 | viewpoint|[chatViewpoint](../resources/chatviewpoint.md)|Represents caller-specific information about the chat, such as last message read date and time. This property is populated only when the request is made in a delegated context.|
 | webUrl| String | The URL for the chat in Microsoft Teams. The URL should be treated as an opaque blob, and not parsed. Read-only.|
-
 
 ### chatType values 
 
@@ -92,6 +95,14 @@ Represents a chat that is a collection of [chatMessages](chatmessage.md) between
 |group               | Indicates that the chat is a group chat. The roster size (of at least two people) can be updated for this type of chat. Members can be removed/added later.|
 |meeting             | Indicates that the chat is associated with an online meeting. This type of chat is only created as part of the creation of an online meeting.|
 |unknownFutureValue  | Evolvable enumeration sentinel value. Don't use. |
+
+### migrationMode values
+
+| Member             | Description                                                                       |
+|:-------------------|:----------------------------------------------------------------------------------|
+| inProgress           | Chat has entered migration mode.                          |
+| completed            | Chat is out of migration mode. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.     |
 
 ## Relationships
 
@@ -121,17 +132,15 @@ The following JSON representation shows the resource type.
   "chatType": "String",
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
-  "id": "string (identifier)",
+  "id": "String (identifier)",
   "isHiddenForAllMembers": "Boolean",
-  "lastUpdatedDateTime": "String (timestamp)",  
-  "onlineMeetingInfo": {
-    "@odata.type": "microsoft.graph.teamworkOnlineMeetingInfo"
-  },
+  "lastUpdatedDateTime": "String (timestamp)",
+  "migrationMode": "String",  
+  "onlineMeetingInfo": {"@odata.type": "microsoft.graph.teamworkOnlineMeetingInfo"},
+  "originalCreatedDateTime": "String (timestamp)",
   "tenantId": "String",  
   "topic": "String",
-  "viewpoint": {
-    "@odata.type": "microsoft.graph.chatViewpoint"
-  },
+  "viewpoint": {"@odata.type": "microsoft.graph.chatViewpoint"},
   "webUrl": "String"
 }
 ```

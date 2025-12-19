@@ -3,6 +3,7 @@ title: "emailSignInIdentifier resource type"
 description: "Represents an email sign-in identifier that allows users to authenticate using their email address."
 author: "Gyanendersinghgithub"
 ms.date: 10/02/2025
+toc.title: Email sign-in identifier
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
@@ -19,10 +20,10 @@ Represents an email sign-in identifier that allows users to authenticate using t
 Inherits from [signInIdentifierBase](../resources/signinidentifierbase.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[Get](../api/emailsigninidentifier-get.md)|[emailSignInIdentifier](../resources/emailsigninidentifier.md)|Read the properties and relationships of emailSignInIdentifier object.|
-|[Update](../api/emailsigninidentifier-update.md)|[emailSignInIdentifier](../resources/emailsigninidentifier.md)|Update the properties of an emailSignInIdentifier object.|
+
+None.
+
+For the list of API operations for managing this resource type, see the [signInIdentifierBase](../resources/signInIdentifierBase.md) resource type.
 
 ## Properties
 |Property|Type|Description|

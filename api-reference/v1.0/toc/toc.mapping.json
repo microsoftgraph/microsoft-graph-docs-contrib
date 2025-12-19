@@ -223,24 +223,53 @@
         },
         {
           "name": "Places",
+          "overview": "../../resources/places-api-overview.md",
           "resources": [
             "place",
             "building",
-            "desk",
             "floor",
-            "room",
-            "roomList",
             "section",
+            "room",
+            "desk",
             "workspace",
-            "checkInClaim"
+            "checkInClaim",
+            "placeOperation",
+            "roomList"
           ],
           "complexTypes": [
-            "assignedPlaceMode",
-            "dropInPlaceMode",
             "mailboxDetails",
             "placeMode",
+            "assignedPlaceMode",
+            "dropInPlaceMode",
             "reservablePlaceMode",
             "resourceLink"
+          ],
+          "childNodes": [
+            {
+              "name": "Maps",
+              "resources": [
+                "buildingMap",
+                "fixtureMap",
+                "footprintMap",
+                "levelMap",
+                "sectionMap",
+                "unitMap"
+              ],
+              "complexTypes": [
+                "importBuildingMapSetting"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Work hours and locations",
+          "resources": [
+            "workHoursAndLocationsSetting",
+            "workPlanOccurrence",
+            "workPlanRecurrence"
+          ],
+          "complexTypes": [
+            "timeOffDetails"
           ]
         }
       ]
@@ -394,6 +423,7 @@
             "cloudPcDeviceImage",
             "cloudPcGalleryImage",
             "cloudPcProvisioningPolicy",
+            "cloudPcReport",
             "cloudPcUserSetting"
           ],
           "complexTypes": [
@@ -665,10 +695,17 @@
         "driveItemVersion",
         "bundle",
         "fileStorageContainer",
+        "fileStorageContainerType",
+        "fileStorageContainerTypeAppPermissionGrant",
+        "fileStorageContainerTypeRegistration",
         "permission",
         "recycleBin",
         "recycleBinItem",
         "sharedDriveItem"
+      ],
+      "complexTypes": [
+        "fileStorageContainerTypeRegistrationSettings",
+        "fileStorageContainerTypeSettings"
       ],
       "childNodes": [
         {
@@ -1664,7 +1701,8 @@
             "microsoft.graph.security.ediscoveryHoldPolicy",
             "microsoft.graph.security.ediscoverySearch",
             "microsoft.graph.security.ediscoveryReviewSet",
-            "microsoft.graph.security.ediscoveryReviewTag"
+            "microsoft.graph.security.ediscoveryReviewTag",
+            "microsoft.graph.security.ediscoveryCaseMember"
           ],
           "childNodes": [
             {
@@ -1930,6 +1968,17 @@
         "Microsoft Teams"
       ],
       "childNodes": [
+        {
+          "name": "Administration",
+          "resources": [
+            "microsoft.graph.teamsAdministration.teamsUserConfiguration"
+          ],
+          "complexTypes": [
+            "microsoft.graph.teamsAdministration.assignedTelephoneNumber",
+            "microsoft.graph.teamsAdministration.effectivePolicyAssignment",
+            "microsoft.graph.teamsAdministration.policyAssignment"
+          ]
+        },
         {
           "name": "Apps",
           "resources": [

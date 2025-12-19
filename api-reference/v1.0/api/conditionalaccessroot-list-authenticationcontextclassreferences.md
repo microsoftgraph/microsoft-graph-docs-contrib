@@ -13,8 +13,6 @@ ms.date: 10/17/2024
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Retrieve a list of [authenticationContextClassReference](../resources/authenticationcontextclassreference.md) objects.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
