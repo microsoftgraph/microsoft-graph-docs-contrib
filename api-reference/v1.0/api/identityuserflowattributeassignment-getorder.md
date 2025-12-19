@@ -112,7 +112,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta$metadata#microsoft.graph.assignmentOrder",
+    "@odata.context": "https://graph.microsoft.com/v1.0$metadata#microsoft.graph.assignmentOrder",
     "order": [
         "extension_GUID_ShoeSize",
         "City"
