@@ -26,7 +26,7 @@ Represents the summary of the number of successful sign-ins for each authenticat
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authenticationMethod|usageAuthMethod|The authentication method for the given summary. |
+|authenticationMethod|usageAuthMethod|The authentication method for the given summary. The possible values are: `email`, `mobileSMS`, `mobileCall`, `officePhone`, `securityQuestion`, `appNotification`, `appCode`, `alternateMobileCall`, `fido`, `appPassword`, `unknownFutureValue`, `externalAuthMethod`, `hardwareOneTimePasscode`, `windowsHelloForBusiness`, `microsoftAuthenticatorPasswordless`, `temporaryAccessPass`, `macOsSecureEnclaveKey`, `passKeyDeviceBound`, `passKeyDeviceBoundAuthenticator`, `passKeyDeviceBoundWindowsHello`, `softwareOneTimePasscode`, `microsoftAuthenticatorPush`, `mobilePhone`, `sms`, `alternateMobilePhone`, `fido2SecurityKey`, `oneTimePasscode`, `passKeySynced`, `qrCode`.  Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `externalAuthMethod` , `hardwareOneTimePasscode` , `windowsHelloForBusiness` , `microsoftAuthenticatorPasswordless` , `temporaryAccessPass` , `macOsSecureEnclaveKey` , `passKeyDeviceBound` , `passKeyDeviceBoundAuthenticator` , `passKeyDeviceBoundWindowsHello` , `softwareOneTimePasscode` , `microsoftAuthenticatorPush` , `mobilePhone` , `sms` , `alternateMobilePhone` , `fido2SecurityKey` , `oneTimePasscode` , `passKeySynced`, `qrCode`. |
 |successActivityCount|Int64|The total number of successful sign in events for the given authentication method.|
 
 ## Relationships
@@ -45,7 +45,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.userSignInUsageByAuthMethodActivity",
   "authenticationMethod": "String (identifier)",
-  "successActivityCount": "Integer"
+  "successActivityCount": "Int64"
 }
 ```
 
