@@ -26,7 +26,7 @@ Represents the summary of the number of successful sign-ins for each authenticat
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authenticationMethod|String|The authentication method for the given summary. The possible values are: `email`, `mobileSMS`, `mobileCall`, `officePhone`, `securityQuestion`, `appNotification`, `appCode`, `alternateMobileCall`, `fido`, `appPassword`, `unknownFutureValue`, `externalAuthMethod`, `hardwareOneTimePasscode`, `windowsHelloForBusiness`, `microsoftAuthenticatorPasswordless`, `temporaryAccessPass`, `macOsSecureEnclaveKey`, `passKeyDeviceBound`, `passKeyDeviceBoundAuthenticator`, `passKeyDeviceBoundWindowsHello`, `softwareOneTimePasscode`, `microsoftAuthenticatorPush`, `mobilePhone`, `sms`, `alternateMobilePhone`, `fido2SecurityKey`, `oneTimePasscode`, `passKeySynced`, `qrCode`. |
+|authenticationMethod|String|The authentication method for the given summary. |
 |successActivityCount|Int64|The total number of successful sign in events for the given authentication method.|
 
 ## Relationships
