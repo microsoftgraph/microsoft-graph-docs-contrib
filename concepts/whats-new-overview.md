@@ -66,6 +66,10 @@ Use the following resources to represent the data sent to Azure Logic Apps as pa
 
 [Get](/graph/api/teamsadministration-teamsuserconfiguration-get) or [list](/graph/api/teamsadministration-teamsadminroot-list-userconfigurations) user configurations for users with accounts in the Teams context.
 
+[Get the policy ID](/graph/api/teamsadministration-teamspolicyassignment-getpolicyid) for a given policy name and policy type within Teams administration.
+[Assign a Teams policy](/graph/api/teamsadministration-teamspolicyuserassignment-assign) to a user using the user ID, policy type, and policy ID.
+[Unassign a Teams policy](/graph/api/teamsadministration-teamspolicyuserassignment-unassign) from a user using the user ID and policy type.
+
 
 ## December 2025: New in preview only
 
