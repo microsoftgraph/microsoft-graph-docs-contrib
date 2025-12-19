@@ -2,7 +2,7 @@
 title: "presence: clearAutomaticLocation"
 description: "Clear the automatic work location signal for a user."
 author: "garchiro7"
-ms.date: 10/23/2025
+ms.date: 12/15/2025
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
@@ -12,8 +12,6 @@ doc_type: apiPageType
 # presence: clearAutomaticLocation
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Clear the automatic work location signal for a [user](../resources/user.md). After clearing, the user’s final aggregated work location is recomputed according to the precedence rules:
 
@@ -58,7 +56,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code. It doesn't return anything in the response body.
+If successful, this action returns a `200 OK` response code.
 
 ## Examples
 
@@ -71,7 +69,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/me/presence/clearAutomaticLocation
+POST https://graph.microsoft.com/v1.0/me/presence/clearAutomaticLocation
 ```
 
 

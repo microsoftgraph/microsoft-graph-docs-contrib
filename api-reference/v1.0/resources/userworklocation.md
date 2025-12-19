@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents the aggregated work location state for a user, computed from multiple signals: scheduled, automatic, and manual. It provides a consistent, privacy-aware way to indicate where a user works (for example, office, remote, or time off) and includes metadata that supports hybrid work scenarios.
 
 - Precedence: manual > automatic > scheduled

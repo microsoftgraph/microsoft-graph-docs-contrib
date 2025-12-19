@@ -20,9 +20,14 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## December 2025: New and generally available
 
-### Calendars | Work hours and locations
+### Teamwork and communications | Calls and online meetings
 
-Manage flexible work hours and locations using the following resources: [workHoursAndLocationsSetting](/graph/api/resources/workhoursandlocationssetting), [workPlanOccurrence](/graph/api/resources/workplanoccurrence), and [workPlanRecurrence](/graph/api/resources/workplanrecurrence). These resources allow you to define recurring and specific work patterns, locations, and time off for modern hybrid scenarios.
+- The [callRecord: getPstnCalls](/graph/api/callrecords-callrecord-getpstncalls) API now clarifies that it doesn't return information for **Telstra** calling plans only.
+- Use the following new endpoints to enable the management of work location for a user:
+  - [Clear](/graph/api/presence-clearautomaticlocation) the automatic work location value for a user.
+  - [Clear](/graph/api/presence-clearlocation) the work location signals for a user, including both the manual and automatic layers for the current date.
+  - [Set](/graph/api/presence-setautomaticlocation) the automatic work location for a user.
+  - [Set](/graph/api/presence-setmanuallocation) the user’s manual work location signal.
 
 ### Device and app management | Cloud PC
 
@@ -51,9 +56,10 @@ Use the following resources to represent the data sent to Azure Logic Apps as pa
 - Added the [retry hold policy API](/graph/api/security-ediscoveryholdpolicy-retrypolicy) for triggering a retry of an [eDiscovery hold policy](/graph/api/resources/security-ediscoveryholdpolicy).
 - Added the [eDiscoveryCaseMember resource type and its associated APIs](/graph/api/resources/security-ediscoverycasemember) for managing members of an eDiscovery case.
 
-### Teamwork and communications | Calls and online meetings
+### Teamwork and communications | Administration
 
-The [callRecord: getPstnCalls](/graph/api/callrecords-callrecord-getpstncalls) API now clarifies that it doesn't return information for **Telstra** calling plans only.
+[Get](/graph/api/teamsadministration-teamsuserconfiguration-get) or [list](/graph/api/teamsadministration-teamsadminroot-list-userconfigurations) user configurations for users with accounts in the Teams context.
+
 
 ## December 2025: New in preview only
 
