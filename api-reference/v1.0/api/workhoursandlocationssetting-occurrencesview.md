@@ -5,14 +5,12 @@ author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
-ms.date: 12/10/2025
+ms.date: 12/19/2025
 ---
 
 # workHoursAndLocationsSetting: occurrencesView
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get [work plan occurrences](../resources/workplanoccurrence.md) from your own work plan within a specified date range. This function requires the **startDateTime** and **endDateTime** parameters.
 
@@ -80,7 +78,7 @@ The following example shows a request.
   "name": "workhoursandlocationssetting_occurrencesview"
 } -->
 ```http
-GET https://graph.microsoft.com/beta/me/settings/workHoursAndLocations/occurrencesView(startDateTime='2025-12-01T00:00:00Z',endDateTime='2025-12-01T23:59:59Z')
+GET https://graph.microsoft.com/v1.0/me/settings/workHoursAndLocations/occurrencesView(startDateTime='2025-12-01T00:00:00Z',endDateTime='2025-12-01T23:59:59Z')
 ```
 
 ### Response
@@ -100,7 +98,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.workPlanOccurrence)",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.workPlanOccurrence)",
   "value": [
     {
       "id": "AAkBOQAICN4wbJIpwAAuAAAAAB2EAxGqZhHNm8gAqgAvxFoNAOtpUxZW-2ZHr9tjSZTO0jMAA2pPCT8AABA=",

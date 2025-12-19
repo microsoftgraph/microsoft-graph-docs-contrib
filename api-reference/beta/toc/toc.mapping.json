@@ -332,8 +332,7 @@
            ]
          },
          {
-          "name": "Work hours and locations (preview)",
-          "overview": "../../resources/workhoursandlocationssetting.md",
+          "name": "Work hours and locations",
           "resources": [
             "workHoursAndLocationsSetting",
             "workPlanOccurrence",

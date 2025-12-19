@@ -1,33 +1,34 @@
 ---
-title: "Update workPlanRecurrence"
-description: "Update the properties of a workPlanRecurrence object in your own work plan."
+title: "Create workPlanRecurrence"
+description: "Create a new workPlanRecurrence object in your own work plan."
 author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
-ms.date: 12/10/2025
+ms.date: 12/19/2025
 ---
 
-# Update workPlanRecurrence
+# Create workPlanRecurrence
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Update the properties of a [workPlanRecurrence](../resources/workplanrecurrence.md) object in your own work plan. Updates require the full recurrence object to be provided (PUT semantics). PATCH isn't supported.
+Create a new [workPlanRecurrence](../resources/workplanrecurrence.md) object in your own work plan.
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "workplanrecurrence_update" } -->
-[!INCLUDE [permissions-table](../includes/permissions/workplanrecurrence-update-permissions.md)]
+<!-- { "blockType": "permissions", "name": "workhoursandlocationssetting_post_recurrences" } -->
+[!INCLUDE [permissions-table](../includes/permissions/workhoursandlocationssetting-post-recurrences-permissions.md)]
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "ignored"
+} -->
+
 ```http
-PUT /me/settings/workHoursAndLocations/recurrences/{id}
+POST /me/settings/workHoursAndLocations/recurrences
 ```
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
@@ -36,7 +37,7 @@ When using the `/users/{id}` endpoint, the ID must be your own user ID.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PUT /users/{id | userPrincipalName}/settings/workHoursAndLocations/recurrences/{id}
+POST /users/{id | userPrincipalName}/settings/workHoursAndLocations/recurrences
 ```
 
 ## Request headers
@@ -52,7 +53,7 @@ In the request body, supply a JSON representation of a [workPlanRecurrence](../r
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [workPlanRecurrence](../resources/workplanrecurrence.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [workPlanRecurrence](../resources/workplanrecurrence.md) object in the response body.
 
 ## Examples
 
@@ -62,11 +63,11 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "workplanrecurrence_update"
+  "name": "workhoursandlocationssetting_post_recurrences"
 } -->
 
 ```http
-PUT https://graph.microsoft.com/beta/me/settings/workHoursAndLocations/recurrences/AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A62lTFlb-Zkev22NJlM7SMwADaJA3YgAA
+POST https://graph.microsoft.com/v1.0/me/settings/workHoursAndLocations/recurrences
 Content-type: application/json
 
 {
@@ -108,11 +109,11 @@ The following example shows the response.
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('15b9b296-dac5-43d0-8b94-93bb67eef619')/settings/workHoursAndLocations/recurrences/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('15b9b296-dac5-43d0-8b94-93bb67eef619')/settings/workHoursAndLocations/recurrences/$entity",
   "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A62lTFlb-Zkev22NJlM7SMwADxDWWKgAA",
   "workLocationType": "office",
   "placeId": null,

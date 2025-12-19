@@ -5,14 +5,12 @@ author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
-ms.date: 12/10/2025
+ms.date: 12/19/2025
 ---
 
 # Update workPlanRecurrence
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of a [workPlanRecurrence](../resources/workplanrecurrence.md) object in your own work plan. Updates require the full recurrence object to be provided (PUT semantics). PATCH isn't supported.
 
@@ -66,7 +64,7 @@ The following example shows a request.
 } -->
 
 ```http
-PUT https://graph.microsoft.com/beta/me/settings/workHoursAndLocations/recurrences/AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A62lTFlb-Zkev22NJlM7SMwADaJA3YgAA
+PUT https://graph.microsoft.com/v1.0/me/settings/workHoursAndLocations/recurrences/AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A62lTFlb-Zkev22NJlM7SMwADaJA3YgAA
 Content-type: application/json
 
 {
@@ -112,7 +110,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('15b9b296-dac5-43d0-8b94-93bb67eef619')/settings/workHoursAndLocations/recurrences/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('15b9b296-dac5-43d0-8b94-93bb67eef619')/settings/workHoursAndLocations/recurrences/$entity",
   "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A62lTFlb-Zkev22NJlM7SMwADxDWWKgAA",
   "workLocationType": "office",
   "placeId": null,

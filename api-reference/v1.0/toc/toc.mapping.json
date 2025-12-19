@@ -260,6 +260,17 @@
               ]
             }
           ]
+        },
+        {
+          "name": "Work hours and locations",
+          "resources": [
+            "workHoursAndLocationsSetting",
+            "workPlanOccurrence",
+            "workPlanRecurrence"
+          ],
+          "complexTypes": [
+            "timeOffDetails"
+          ]
         }
       ]
     },
@@ -1986,7 +1997,8 @@
             "presence"
           ],
           "complexTypes": [
-            "outOfOfficeSettings"
+            "outOfOfficeSettings",
+            "userWorkLocation"
           ],
           "childNodes": [
             {

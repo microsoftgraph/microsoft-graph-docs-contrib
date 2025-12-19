@@ -1,24 +1,24 @@
 ---
-title: "presence: setManualLocation"
-description: "Set the manual work location signal for a user."
+title: "presence: setAutomaticLocation"
+description: "Update the automatic work location for a user."
 author: "garchiro7"
-ms.date: 10/23/2025
+ms.date: 12/15/2025
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# presence: setManualLocation
+# presence: setAutomaticLocation
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Set the manual work location signal for a [user](../resources/user.md). The explicit value chosen by a user or an authorized client overrides any automatically detected or scheduled working hours and location.
+Update the automatic work location for a [user](../resources/user.md). The automatic layer participates in the standard precedence model:
 
 - Precedence: manual > automatic > scheduled
 - Precision (within the same layer): more precise wins (for example, office + building > office)
 - If a manual location is set, it overrides both automatic and scheduled settings.
+
+Use this operation from clients or services that automatically detect location (for example, Teams, network and location agents, or OEM docking apps). It doesn't clear manual or scheduled signals.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -28,10 +28,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "presence-setmanuallocation-permissions"
+  "name": "presence-setautomaticlocation-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/presence-setmanuallocation-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/presence-setautomaticlocation-permissions.md)]
 
 ## HTTP request
 
@@ -40,7 +40,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /me/presence/setManualLocation
+POST /me/presence/setAutomaticLocation
 ```
 
 ## Request headers
@@ -59,11 +59,11 @@ The following table lists the parameters that are required when you call this ac
 |Parameter|Type|Description|
 |:---|:---|:---|
 |placeId|String| Identifier of the place, if applicable. |
-|workLocationType| workLocationType | Semantic type of the location. Supports a subset of the values for **workLocationType**. The possible values are: `office`, `remote`, `timeOff`. |
+|workLocationType|workLocationType| Semantic type of the location. Supports a subset of the values for **workLocationType**. The possible values are: `office`, `remote`, `timeOff`. |
 
 ## Response
 
-If successful, this action returns a `200 OK` response code. It doesn't return anything in the response body.
+If successful, this action returns a `200 OK` response code.
 
 ## Examples
 
@@ -72,11 +72,11 @@ If successful, this action returns a `200 OK` response code. It doesn't return a
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "presencethis.setmanuallocation"
+  "name": "presencethis.setautomaticlocation"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/me/presence/setManualLocation
+POST https://graph.microsoft.com/v1.0/me/presence/setAutomaticLocation
 Content-Type: application/json
 
 {

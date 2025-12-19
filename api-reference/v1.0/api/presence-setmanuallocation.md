@@ -2,7 +2,7 @@
 title: "presence: setManualLocation"
 description: "Set the manual work location signal for a user."
 author: "garchiro7"
-ms.date: 10/23/2025
+ms.date: 12/15/2025
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: apiPageType
@@ -11,8 +11,6 @@ doc_type: apiPageType
 # presence: setManualLocation
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Set the manual work location signal for a [user](../resources/user.md). The explicit value chosen by a user or an authorized client overrides any automatically detected or scheduled working hours and location.
 
@@ -59,11 +57,11 @@ The following table lists the parameters that are required when you call this ac
 |Parameter|Type|Description|
 |:---|:---|:---|
 |placeId|String| Identifier of the place, if applicable. |
-|workLocationType| workLocationType | Semantic type of the location. Supports a subset of the values for **workLocationType**. The possible values are: `office`, `remote`, `timeOff`. |
+|workLocationType|workLocationType| Semantic type of the location. Supports a subset of the values for **workLocationType**. The possible values are: `office`, `remote`, `timeOff`. |
 
 ## Response
 
-If successful, this action returns a `200 OK` response code. It doesn't return anything in the response body.
+If successful, this action returns a `200 OK` response code.
 
 ## Examples
 
@@ -76,7 +74,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/me/presence/setManualLocation
+POST https://graph.microsoft.com/v1.0/me/presence/setManualLocation
 Content-Type: application/json
 
 {
