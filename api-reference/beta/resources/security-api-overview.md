@@ -50,6 +50,7 @@ Use [runHuntingQuery](../api/security-security-runhuntingquery.md) to run a [Kus
 5. A response code of HTTP 429 means you have reached the quota for either the number of API calls or execution time. Refer to the response body to confirm the limit you have reached.
 
 6. The maximum query result size of a single request cannot exceed 124 MB. Exceeding the size limit results in HTTP 400 Bad Request with the message "Query execution has exceeded the allowed result size. Optimize your query by limiting the number of results and try again."
+7. Query results have an overall size limit of 50 MB. This limit doesn't just refer to the number of records; factors such as the number of columns, data types, and field lengths also contribute to the query result size.
 
 ## Custom detections
 You can create advanced hunting [Custom detection rules](/microsoft-365/security/defender/custom-detections-overview) specific to your security operations to allow you to proactively monitor for threats and take action. For instance, you can make custom detection rules that look for known indicators or misconfigured devices. These automatically trigger alerts and any response actions that you specify.

@@ -17,8 +17,23 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
+ 
+## December 2025: New in private preview
+
+### Files
+
+Use the **deleted** property on [sharePointGroupIdentityMapping](/graph/api/resources/sharepointgroupidentitymapping?view=graph-rest-beta&preserve-view=true) and [sharePointUserIdentityMapping](/graph/api/resources/sharepointuseridentitymapping?view=graph-rest-beta&preserve-view=true) to indicate that an identity mapping was deleted successfully.
 
 ## December 2025: New and generally available
+
+### Teamwork and communications | Calls and online meetings
+
+- The [callRecord: getPstnCalls](/graph/api/callrecords-callrecord-getpstncalls) API now clarifies that it doesn't return information for **Telstra** calling plans only.
+- Use the following new endpoints to enable the management of work location for a user:
+  - [Clear](/graph/api/presence-clearautomaticlocation) the automatic work location value for a user.
+  - [Clear](/graph/api/presence-clearlocation) the work location signals for a user, including both the manual and automatic layers for the current date.
+  - [Set](/graph/api/presence-setautomaticlocation) the automatic work location for a user.
+  - [Set](/graph/api/presence-setmanuallocation) the user’s manual work location signal.
 
 ### Device and app management | Cloud PC
 
@@ -28,10 +43,6 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 ### Device and app management | Cloud printing
 
 Use the new supported [media sizes](/graph/api/resources/printercapabilities#mediasizes-values) in the **mediaSizes** property of the [printerCapabilities](/graph/api/resources/printercapabilities) resource.
-
-### Device and app management | Cloud PC
-
-[Reprovision](/graph/api/cloudpc-reprovision) a specific Cloud PC.
 
 ### Files
 
@@ -55,9 +66,6 @@ Use the following resources to represent the data sent to Azure Logic Apps as pa
 
 [Get](/graph/api/teamsadministration-teamsuserconfiguration-get) or [list](/graph/api/teamsadministration-teamsadminroot-list-userconfigurations) user configurations for users with accounts in the Teams context.
 
-### Teamwork and communications | Calls and online meetings
-
-The [callRecord: getPstnCalls](/graph/api/callrecords-callrecord-getpstncalls) API now clarifies that it doesn't return information for **Telstra** calling plans only.
 
 ## December 2025: New in preview only
 
@@ -71,11 +79,7 @@ Manage flexible work hours and locations using the following resources: [workHou
 
 ### Device and app management | Cloud printing
 
-- Use the new supported [media sizes](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true#mediasizes-values) in the **mediaSizes** property of the [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true) resource.
-- [Get](/graph/api/cloudpc-retrievecloudpclaunchdetail) the [cloudPcLaunchDetail](/graph/api/resources/cloudpclaunchdetail) for a specific Cloud PC that belongs to the current signed-in user.
-- [Retry](/graph/api/cloudpcprovisioningpolicy-retry?view=graph-rest-beta&preserve-view=true) the provisioning operation for Cloud PCs that used the current frontline shared policy and failed to apply the [provisioning policy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true).
-- Updated the supported value range for the **applicationTimeoutInMinutes** property on [cloudPcAutopilotConfiguration](/graph/api/resources/cloudpcautopilotconfiguration?view=graph-rest-beta&preserve-view=true) from 10–360 to 30–360.
-- [Retrieve](/graph/api/cloudpcreport-retrievecloudpcrecommendationreports) Cloud PC recommendation reports for usage optimization and cost savings.
+Use the new supported [media sizes](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true#mediasizes-values) in the **mediaSizes** property of the [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true) resource.
 
 ### Files
 
