@@ -5,14 +5,12 @@ author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
-ms.date: 12/10/2025
+ms.date: 12/19/2025
 ---
 
 # List recurrences
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the [recurrences](../resources/workplanrecurrence.md) from your own work plan via the **recurrences** navigation property.
 
@@ -71,7 +69,7 @@ The following example shows a request.
   "name": "workhoursandlocationssetting_list_recurrences"
 } -->
 ```http
-GET https://graph.microsoft.com/beta/me/settings/workHoursAndLocations/recurrences
+GET https://graph.microsoft.com/v1.0/me/settings/workHoursAndLocations/recurrences
 ```
 
 ### Response
@@ -91,7 +89,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('12345678-1234-1234-1234-123456789012')/settings/workHoursAndLocations/recurrences",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('12345678-1234-1234-1234-123456789012')/settings/workHoursAndLocations/recurrences",
   "value": [
     {
       "id": "AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A62lTFlb-Zkev22NJlM7SMwADowImVQAA",

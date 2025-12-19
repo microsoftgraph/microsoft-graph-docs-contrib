@@ -5,14 +5,12 @@ author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
-ms.date: 12/10/2025
+ms.date: 12/19/2025
 ---
 
 # Delete workPlanRecurrence
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [workPlanRecurrence](../resources/workplanrecurrence.md) object from your own work plan.
 
@@ -65,7 +63,7 @@ The following example shows a request.
 } -->
 
 ```http
-DELETE https://graph.microsoft.com/beta/me/settings/workHoursAndLocations/recurrences/AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A62lTFlb-Zkev22NJlM7SMwADaJA3YgAA
+DELETE https://graph.microsoft.com/v1.0/me/settings/workHoursAndLocations/recurrences/AAkALgAAAAAAHYQDEapmEc2byACqAC-EWg0A62lTFlb-Zkev22NJlM7SMwADaJA3YgAA
 ```
 
 ### Response

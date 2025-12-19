@@ -20,6 +20,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## December 2025: New and generally available
 
+### Calendars | Work hours and locations
+
+Manage flexible work hours and locations using the following resources: [workHoursAndLocationsSetting](/graph/api/resources/workhoursandlocationssetting), [workPlanOccurrence](/graph/api/resources/workplanoccurrence), and [workPlanRecurrence](/graph/api/resources/workplanrecurrence). These resources allow you to define recurring and specific work patterns, locations, and time off for modern hybrid scenarios.
+
 ### Device and app management | Cloud PC
 
 - [Retrieve](/graph/api/cloudpcreport-retrievecloudpcrecommendationreports) Cloud PC recommendation reports for usage optimization and cost savings.
@@ -28,10 +32,6 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 ### Device and app management | Cloud printing
 
 Use the new supported [media sizes](/graph/api/resources/printercapabilities#mediasizes-values) in the **mediaSizes** property of the [printerCapabilities](/graph/api/resources/printercapabilities) resource.
-
-### Device and app management | Cloud PC
-
-[Reprovision](/graph/api/cloudpc-reprovision) a specific Cloud PC.
 
 ### Files
 
@@ -51,10 +51,6 @@ Use the following resources to represent the data sent to Azure Logic Apps as pa
 - Added the [retry hold policy API](/graph/api/security-ediscoveryholdpolicy-retrypolicy) for triggering a retry of an [eDiscovery hold policy](/graph/api/resources/security-ediscoveryholdpolicy).
 - Added the [eDiscoveryCaseMember resource type and its associated APIs](/graph/api/resources/security-ediscoverycasemember) for managing members of an eDiscovery case.
 
-### Teamwork and communications | Administration
-
-[Get](/graph/api/teamsadministration-teamsuserconfiguration-get) or [list](/graph/api/teamsadministration-teamsadminroot-list-userconfigurations) user configurations for users with accounts in the Teams context.
-
 ### Teamwork and communications | Calls and online meetings
 
 The [callRecord: getPstnCalls](/graph/api/callrecords-callrecord-getpstncalls) API now clarifies that it doesn't return information for **Telstra** calling plans only.
@@ -71,11 +67,7 @@ Manage flexible work hours and locations using the following resources: [workHou
 
 ### Device and app management | Cloud printing
 
-- Use the new supported [media sizes](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true#mediasizes-values) in the **mediaSizes** property of the [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true) resource.
-- [Get](/graph/api/cloudpc-retrievecloudpclaunchdetail) the [cloudPcLaunchDetail](/graph/api/resources/cloudpclaunchdetail) for a specific Cloud PC that belongs to the current signed-in user.
-- [Retry](/graph/api/cloudpcprovisioningpolicy-retry?view=graph-rest-beta&preserve-view=true) the provisioning operation for Cloud PCs that used the current frontline shared policy and failed to apply the [provisioning policy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true).
-- Updated the supported value range for the **applicationTimeoutInMinutes** property on [cloudPcAutopilotConfiguration](/graph/api/resources/cloudpcautopilotconfiguration?view=graph-rest-beta&preserve-view=true) from 10–360 to 30–360.
-- [Retrieve](/graph/api/cloudpcreport-retrievecloudpcrecommendationreports) Cloud PC recommendation reports for usage optimization and cost savings.
+Use the new supported [media sizes](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true#mediasizes-values) in the **mediaSizes** property of the [printerCapabilities](/graph/api/resources/printercapabilities?view=graph-rest-beta&preserve-view=true) resource.
 
 ### Files
 
@@ -101,10 +93,6 @@ Use the [userConfiguration](/graph/api/resources/userconfiguration?view=graph-re
 ### Personal contacts
 
 Use the **primaryEmailAddress**, **secondaryEmailAddress**, and **tertiaryEmailAddress** properties on [contact](/graph/api/resources/contact?view=graph-rest-beta&preserve-view=true) to get or set the primary, secondary, and tertiary email addresses of a contact.
-
-### Reports | Identity and access reports
-
-Removed the **conditionalAccessAudience** resource type. The return type of the **conditionalAccessAudiences** property of the [signIn resource type](/graph/api/resources/signin?view=graph-rest-beta&preserve-view=true) is a collection of String objects and not the **conditionalAccessAudience** complex type.
 
 ### Teamwork and communications | Calls and online meetings
 

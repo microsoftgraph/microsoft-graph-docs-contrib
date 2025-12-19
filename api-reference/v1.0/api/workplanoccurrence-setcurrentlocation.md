@@ -5,14 +5,12 @@ author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
-ms.date: 12/10/2025
+ms.date: 12/19/2025
 ---
 
 # workPlanOccurrence: setCurrentLocation
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update your [work](../resources/workplanoccurrence.md) location for the current day or current active segment. This action allows you to quickly update your work location without modifying individual occurrences.
 
@@ -84,7 +82,7 @@ The following example shows a request.
 } -->
 
 ```http
-POST https://graph.microsoft.com/beta/me/settings/workHoursAndLocations/occurrences/setCurrentLocation
+POST https://graph.microsoft.com/v1.0/me/settings/workHoursAndLocations/occurrences/setCurrentLocation
 Content-type: application/json
 
 {
@@ -121,7 +119,7 @@ The following example shows a request.
 } -->
 
 ```http
-POST https://graph.microsoft.com/beta/me/settings/workHoursAndLocations/occurrences/setCurrentLocation
+POST https://graph.microsoft.com/v1.0/me/settings/workHoursAndLocations/occurrences/setCurrentLocation
 Content-type: application/json
 
 {

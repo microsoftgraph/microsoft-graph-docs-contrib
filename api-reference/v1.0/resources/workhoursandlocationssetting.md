@@ -5,14 +5,12 @@ author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: resourcePageType
-ms.date: 12/10/2025
+ms.date: 12/19/2025
 ---
 
 # workHoursAndLocationsSetting resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents your working hours and location preferences for modern hybrid work scenarios.
 
