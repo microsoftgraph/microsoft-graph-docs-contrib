@@ -5,14 +5,12 @@ author: "emilbekj"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
-ms.date: 12/10/2025
+ms.date: 12/19/2025
 ---
 
 # Get workHoursAndLocationsSetting
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the properties and relationships of your own [workHoursAndLocationsSetting](../resources/workhoursandlocationssetting.md).
 
@@ -70,7 +68,7 @@ The following example shows a request to get basic work hours and location setti
   "name": "workhoursandlocationssetting_get"
 } -->
 ```http
-GET https://graph.microsoft.com/beta/me/settings/workHoursAndLocations
+GET https://graph.microsoft.com/v1.0/me/settings/workHoursAndLocations
 ```
 
 ### Response
@@ -88,7 +86,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('12345678-1234-1234-1234-123456789012')/settings/workHoursAndLocations/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('12345678-1234-1234-1234-123456789012')/settings/workHoursAndLocations/$entity",
   "maxSharedWorkLocationDetails": "approximate"
 }
 ```
