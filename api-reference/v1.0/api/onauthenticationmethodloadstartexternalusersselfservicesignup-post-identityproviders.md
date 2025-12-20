@@ -58,10 +58,10 @@ The following example shows a request that adds Google as identity provider opti
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc37-d421-421d-857b-87804d61e33e/microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAuthenticationMethodLoadStart/microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp/identityProviders/$ref
+POST https://graph.microsoft.com/v1.0/identity/authenticationEventsFlows/0313cc37-d421-421d-857b-87804d61e33e/microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAuthenticationMethodLoadStart/microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp/identityProviders/$ref
 
 {
-    "@odata.id": "https://graph.microsoft.com/beta/identityProviders/Google-OAUTH"
+    "@odata.id": "https://graph.microsoft.com/v1.0/identityProviders/Google-OAUTH"
 }
 ```
 
