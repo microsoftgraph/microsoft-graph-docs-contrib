@@ -58,6 +58,17 @@ The following table shows the availability for each API across all cloud deploym
 | [Viva Engage device usage](../resources/reportroot.md#viva-engage-device-usage)                                 | ✔                              | ➖                                    | ➖                                             | ➖                                      |
 | [Viva Engage groups activity](../resources/reportroot.md#viva-engage-groups-activity)                           | ✔                              | ➖                                    | ➖                                             | ➖                                      |
 
+## How to programmatically export unlicensed Copilot Chat usage
+
+Currently, no public Microsoft Graph API or PowerShell cmdlet provides access to Copilot Chat usage data for unlicensed users included in the Copilot Chat usage report.
+
+Unlicensed Copilot Chat interactions are logged only in the Microsoft Purview unified audit log.
+
+To automatically extract `CopilotInteraction` events from the unified audit log, use one of the following methods:
+
+- **PowerShell**: Use `Search-UnifiedAuditLog` to filter `CopilotInteraction` events and export them to a CSV file.
+- **Office 365 management activity API**: Stream audit logs into security information and event management (SIEM) or analytics platforms.
+
 ## Next steps
 
 Reports resources and APIs can open up new ways for you to engage with users and manage their experiences with Microsoft Graph. To learn more:
