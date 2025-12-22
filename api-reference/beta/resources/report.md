@@ -5,7 +5,7 @@ ms.localizationpriority: high
 ms.subservice: "reports"
 author: "sarahwxy"
 doc_type: conceptualPageType
-ms.date: 09/29/2024
+ms.date: 12/22/2025
 ---
 
 # Working with Microsoft 365 usage reports in Microsoft Graph
@@ -18,7 +18,7 @@ For more information about the settings that govern identification/de-identifica
 
 ## Authorization
 
-Microsoft Graph controls access to resources via permissions. You must specify the permissions you need in order to access Reports resources. Typically, you specify permissions in the Microsoft Entra admin center. For more information, see [Microsoft Graph permissions reference](/graph/permissions-reference) and [Reports permissions](/graph/permissions-reference#reports-permissions).
+Microsoft Graph controls access to resources through permissions. You must specify the permissions you need to access Reports resources. Typically, you specify permissions in the Microsoft Entra admin center. For more information, see [Microsoft Graph permissions reference](/graph/permissions-reference) and [Reports permissions](/graph/permissions-reference#reports-permissions).
 
 ## Settings
 
@@ -37,7 +37,7 @@ The following table shows the availability for each API across all cloud deploym
 | [Microsoft 365 Apps usage](../resources/reportroot.md#microsoft-365-apps-usage)                                 | ✔                              | ✔                                     | ✔                                              | ➖                                      |
 | [Microsoft 365 browser usage](../resources/reportroot.md#microsoft-365-browser-usage)                           | ✔                              | ➖                                    | ➖                                             | ➖                                      |
 | [Microsoft 365 Groups activity](../resources/reportroot.md#microsoft-365-groups-activity)                       | ✔                              | ➖                                    | ✔                                              | ➖                                      |
-| [Microsoft Forms usage](../resources/reportroot.md#forms-activity)                                              | ✔                              | ➖                                    |
+| [Microsoft Forms usage](../resources/reportroot.md#forms-activity)                                              | ✔                              | ➖                                    |                                                |                                         |
 | [Microsoft Graph API usage](../resources/reportroot.md#microsoft-graph-api-usage-preview)                               | ✔                              | ➖                                    | ➖                                             | ➖                                      |
 | [Microsoft Teams device usage](../resources/reportroot.md#microsoft-teams-device-usage)                         | ✔                              | ✔                                     | ✔                                              | ✔                                       |
 | [Microsoft Teams team activity](../resources/reportroot.md#microsoft-teams-team-activity)                       | ✔                              | ✔                                     | ✔                                              | ✔                                       |
@@ -58,20 +58,20 @@ The following table shows the availability for each API across all cloud deploym
 | [Viva Engage device usage](../resources/reportroot.md#viva-engage-device-usage)                                 | ✔                              | ➖                                    | ➖                                             | ➖                                      |
 | [Viva Engage groups activity](../resources/reportroot.md#viva-engage-groups-activity)                           | ✔                              | ➖                                    | ➖                                             | ➖                                      |
 
-## How to programmatically export unlicensed Copilot Chat usage
+## Programmatically export unlicensed Copilot Chat usage
 
 Currently, no public Microsoft Graph API or PowerShell cmdlet provides access to Copilot Chat usage data for unlicensed users included in the Copilot Chat usage report.
 
-Unlicensed Copilot Chat interactions are logged only in the Microsoft Purview unified audit log.
+Unlicensed Copilot Chat interactions are logged only in the Microsoft Purview Unified Audit log.
 
 To automatically extract `CopilotInteraction` events from the unified audit log, use one of the following methods:
 
-- **PowerShell**: Use `Search-UnifiedAuditLog` to filter `CopilotInteraction` events and export them to a CSV file.
-- **Office 365 management activity API**: Stream audit logs into security information and event management (SIEM) or analytics platforms.
+- **PowerShell**: Use `Search-UnifiedAuditLog` on Exchange Online PowerShell (EXO) to filter `CopilotInteraction` events and export them to a CSV file. Microsoft Graph PowerShell doesn't expose `Search-UnifiedAuditLog` and can't query the Unified Audit Log.
+- **Office 365 management activity API**: Stream audit logs into Security Information and Event Management (SIEM) or analytics platforms using this API.
 
 ## Next steps
 
-Reports resources and APIs can open up new ways for you to engage with users and manage their experiences with Microsoft Graph. To learn more:
+Reports resources and APIs can open up new ways for you to engage with users and manage their experiences by using Microsoft Graph. To learn more:
 
 - Drill down on the methods and properties of the resources most helpful to your scenario.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
