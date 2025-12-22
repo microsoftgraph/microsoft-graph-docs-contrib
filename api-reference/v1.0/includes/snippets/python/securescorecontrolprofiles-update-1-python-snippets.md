@@ -16,11 +16,6 @@ request_body = SecureScoreControlProfile(
 		sub_provider = None,
 		vendor = "Microsoft",
 	),
-	additional_data = {
-			"assigned_to" : "",
-			"comment" : "control is under 'Third Party' exception",
-			"state" : "Third Party",
-	}
 )
 
 result = await graph_client.security.secure_score_control_profiles.by_secure_score_control_profile_id('secureScoreControlProfile-id').patch(request_body)
