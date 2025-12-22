@@ -74,6 +74,19 @@ _id_ property is always returned.
   an `$orderby` expression, the return order is not guaranteed.
 - There is no support for `$search`.
 
+
+> [!NOTE]
+> Delta queries for messages can return change events that don't match the filter conditions specified in the initial request.  
+> These include:
+>
+> - `@removed` entries with `"reason": "deleted"` when an item is moved or removed from the folder.
+> - Read/unread state changes.
+>
+> These events do **not** originate from changes to the message itself. They are emitted as part of the folder‑level synchronization process that delta tokens rely on.  
+> Delta tracking operates at the **collection** level, not the message‑level, and therefore these events are **not filtered out**.  
+>
+> Clients should be prepared to handle such entries to maintain an accurate and fully synchronized local view of the message collection.
+
 ## Request headers
 | Name       | Type | Description |
 |:---------------|:----------|:----------|
