@@ -12,8 +12,6 @@ ms.date: 09/13/2024
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Read the properties and relationships of a [workingTimeSchedule](../resources/workingtimeschedule.md) object.
 
 ## Permissions
@@ -33,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /users/{usersId}/solutions/schedule
 ```
 
@@ -65,8 +63,8 @@ The following example shows a request.
   "name": "get_workingtimeschedule"
 }
 -->
-``` http
-GET https://graph.microsoft.com/beta/users/ccdf8279-8a3f-4c10-af1a-4a7f46b1489f/solutions/schedule
+```http
+GET https://graph.microsoft.com/v1.0/users/ccdf8279-8a3f-4c10-af1a-4a7f46b1489f/solutions/schedule
 ```
 
 
@@ -80,7 +78,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.workingTimeSchedule"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

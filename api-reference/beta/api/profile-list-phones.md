@@ -72,7 +72,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile/phones
 ```
 
@@ -114,7 +114,7 @@ GET https://graph.microsoft.com/beta/me/profile/phones
   "@odata.type": "collection(microsoft.graph.itemPhone)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

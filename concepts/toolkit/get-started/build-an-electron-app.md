@@ -9,6 +9,9 @@ ms.topic: how-to
 
 # Use the Microsoft Graph Toolkit with Electron
 
+> [!CAUTION]
+> The Microsoft Graph Toolkit is deprecated. The retirement period begins September 1, 2025, with full retirement planned for August 28, 2026. Developers should migrate to using the Microsoft Graph SDKs or other supported Microsoft Graph tools for building web experiences. For more information, see the [deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-toolkit-retirement/).
+
 This article describes how to use the Microsoft Graph Toolkit to create an Electron app and connect it to Microsoft 365. After completing the steps, you'll have an Electron app that shows the upcoming appointments of the currently signed-in user from Microsoft 365.
 
 ## Create an Electron app

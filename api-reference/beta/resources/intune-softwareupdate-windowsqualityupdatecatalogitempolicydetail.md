@@ -23,7 +23,7 @@ Class to describe quality update policy's approval detail for specific catalog i
 |:---|:---|:---|
 |policyId|Guid|Policy Id for this approval intend|
 |catalogItemId|String|Catalog item id for this approval intend|
-|approvalStatus|[windowsQualityUpdateApprovalStatus](../resources/intune-softwareupdate-windowsqualityupdateapprovalstatus.md)|Approval status for this approval intend. Possible values are: `unknown`, `approved`, `suspended`, `unknownFutureValue`.|
+|approvalStatus|[windowsQualityUpdateApprovalStatus](../resources/intune-softwareupdate-windowsqualityupdateapprovalstatus.md)|Approval status for this approval intend. The possible values are: `unknown`, `approved`, `suspended`, `unknownFutureValue`.|
 
 ## Relationships
 None

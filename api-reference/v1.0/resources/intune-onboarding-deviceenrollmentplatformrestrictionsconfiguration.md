@@ -1,11 +1,11 @@
 ---
 title: "deviceEnrollmentPlatformRestrictionsConfiguration resource type"
-description: "Device Enrollment Configuration that restricts the types of devices a user can enroll"
+description: "Default Device Enrollment Platform Restrictions Configuration that restricts the types of devices a user can enroll"
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/13/2024
+ms.date: 08/01/2024
 ---
 
 # deviceEnrollmentPlatformRestrictionsConfiguration resource type
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Device Enrollment Configuration that restricts the types of devices a user can enroll
+Default Device Enrollment Platform Restrictions Configuration that restricts the types of devices a user can enroll
 
 
 Inherits from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)
@@ -38,11 +38,11 @@ Inherits from [deviceEnrollmentConfiguration](../resources/intune-onboarding-dev
 |createdDateTime|DateTimeOffset|Created date time in UTC of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Last modified date time in UTC of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |version|Int32|The version of the device enrollment configuration Inherited from [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
-|iosRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Ios restrictions based on platform, platform operating system version, and device ownership|
-|windowsRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Windows restrictions based on platform, platform operating system version, and device ownership|
-|windowsMobileRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Windows mobile restrictions based on platform, platform operating system version, and device ownership|
-|androidRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Android restrictions based on platform, platform operating system version, and device ownership|
-|macOSRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Mac restrictions based on platform, platform operating system version, and device ownership|
+|iosRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Indicates restrictions for IOS platform.|
+|windowsRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Indicates restrictions for Windows platform.|
+|windowsMobileRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Indicates restrictions for Windows Mobile platform.|
+|androidRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Indicates restrictions for Android platform.|
+|macOSRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Indicates restrictions for MacOS platform.|
 
 ## Relationships
 |Relationship|Type|Description|

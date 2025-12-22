@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
@@ -68,7 +68,7 @@ The following table shows the properties that are required when you create the [
 |ssid|String|This is the name of the Wi-Fi network that is broadcast to all devices.|
 |connectAutomatically|Boolean|Connect automatically when this network is in range. Setting this to true will skip the user prompt and automatically connect the device to Wi-Fi network.|
 |connectWhenNetworkNameIsHidden|Boolean|When set to true, this profile forces the device to connect to a network that doesn't broadcast its SSID to all devices.|
-|wiFiSecurityType|[androidWiFiSecurityType](../resources/intune-deviceconfig-androidwifisecuritytype.md)|Indicates whether Wi-Fi endpoint uses an EAP based security type. Possible values are: `open`, `wpaEnterprise`, `wpa2Enterprise`, `wep`, `wpaPersonal`, `unknownFutureValue`.|
+|wiFiSecurityType|[androidWiFiSecurityType](../resources/intune-deviceconfig-androidwifisecuritytype.md)|Indicates whether Wi-Fi endpoint uses an EAP based security type. The possible values are: `open`, `wpaEnterprise`, `wpa2Enterprise`, `wep`, `wpaPersonal`, `unknownFutureValue`.|
 
 
 
@@ -79,7 +79,7 @@ If successful, this method returns a `200 OK` response code and an updated [andr
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
 Content-length: 1208
@@ -124,7 +124,7 @@ Content-length: 1208
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 1380

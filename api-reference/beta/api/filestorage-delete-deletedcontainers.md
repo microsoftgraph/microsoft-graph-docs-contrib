@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /storage/fileStorage/deletedContainers/{containerId}
 ```
 
@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "remove_deleted_filestoragecontainer"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/storage/fileStorage/deletedContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z
 ```
 
@@ -99,7 +99,7 @@ The following example shows the response.
   "truncated": true,
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

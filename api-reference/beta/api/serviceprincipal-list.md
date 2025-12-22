@@ -4,7 +4,7 @@ description: "Retrieve a list of servicePrincipal objects."
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-applications"
-author: "sureshja"
+author: "Jackson-Woods"
 ms.date: 04/19/2024
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [servicePrincipal](../resources/serviceprincipal.md) objects.
+Retrieve a list of [servicePrincipal](../resources/serviceprincipal.md) objects. This API also returns [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) objects, which are identified by the **@odata.type** property of `#microsoft.graph.agentIdentityBlueprintPrincipal`.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -40,7 +40,7 @@ GET /servicePrincipals
 
 ## Optional query parameters
 
-This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. The default and maximum page sizes are 100 and 999 service principal objects respectively. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
+This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$search`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. The default and maximum page size is 100 service principal objects. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
 By default, this API doesn't return the value of the **key** in the **keyCredentials** property when listing all service principals. To retrieve the public key info in **key**, the **keyCredentials** property must be specified in a `$select` query. For example, `$select=id,appId,keyCredentials`.
 
@@ -59,7 +59,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [servicePrincipal](../resources/serviceprincipal.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [servicePrincipal](../resources/serviceprincipal.md) and [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) objects in the response body.
 
 ## Examples
 

@@ -30,13 +30,14 @@ For the list of supported methods, see [place](./place.md).
 |id|String|The unique identifier for the section. Read-only. This identifier isn't immutable and can change if the mailbox or tenant configuration changes. Inherited from [place](./place.md). |
 |isWheelChairAccessible|Boolean|Indicates whether the **section** is wheelchair accessible. Inherited from [place](./place.md).|
 |label |String |User-defined description of the **section**. Inherited from [place](./place.md). |
-|parentId|String|The ID of a parent [place](./place.md). Inherited from [place](./place.md).|
+|parentId|String|The ID of a parent [floor](./floor.md). Inherited from [place](./place.md).|
 |phone|String|The phone number of the **section**. Inherited from [place](./place.md).|
-|placeId|String|An alternate immutable unique identifier of the **section**. Read-only. Inherited from [place](./place.md).|
 |tags|String collection|Custom tags that are associated with the section for categorization or filtering. Inherited from [place](./place.md).|
 
 ## Relationships
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|children|[place](../resources/place.md) collection|A collection of children places that is only used in the [Upsert places](../api/place-patch-places.md) API. The children of a section can be of type [room](../resources/room.md), [desk](../resources/desk.md), or [workspace](../resources/workspace.md). Inherited from [place](../resources/place.md).|
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -59,7 +60,6 @@ The following JSON representation shows the resource type.
   "label": "String",  
   "parentId": "String",
   "phone": "String",
-  "placeId": "String",
   "tags": ["String"]
 }
 ```

@@ -1,5 +1,161 @@
 {
   "changelog": [
+   {
+      "ChangeList": [
+        {
+          "Id": "fcda7807-b752-40fb-9a05-786f9ea09f57",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "themes",
+          "ChangeType": "Addition",
+          "Description": "Added the **themes** relationship to the [organizationalBranding](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBranding?view=graph-rest-beta) resource.",
+          "Target": "organizationalBranding"
+        },
+        {
+          "Id": "fcda7807-b752-40fb-9a05-786f9ea09f57",
+          "ApiChange": "Resource",
+          "ChangedApiName": "organizationalBrandingTheme",
+          "ChangeType": "Addition",
+          "Description": "Added the [organizationalBrandingTheme](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingTheme?view=graph-rest-beta) resource and its associated APIs for managing app-based branding for your tenant.",
+          "Target": "organizationalBrandingTheme"
+        },
+        {
+          "Id": "fcda7807-b752-40fb-9a05-786f9ea09f57",
+          "ApiChange": "Resource",
+          "ChangedApiName": "organizationalBrandingThemeLocalization",
+          "ChangeType": "Addition",
+          "Description": "Added the [organizationalBrandingThemeLocalization](https://learn.microsoft.com/en-us/graph/api/resources/organizationalBrandingThemeLocalization?view=graph-rest-beta) resource and its associated APIs for managing locale-specific app-based branding for your tenant.",
+          "Target": "organizationalBrandingThemeLocalization"
+        }
+      ],
+      "Id": "fcda7807-b752-40fb-9a05-786f9ea09f57",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-18T08:09:18.7181928Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6c1e2f06-f22d-4af3-8f7b-7cfac988dff9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentUser](https://learn.microsoft.com/en-us/graph/api/resources/agentUser?view=graph-rest-beta) resource.",
+          "Target": "agentUser"
+        },
+        {
+          "Id": "6c1e2f06-f22d-4af3-8f7b-7cfac988dff9",
+          "ApiChange": "Property",
+          "ChangedApiName": "identityParentId",
+          "ChangeType": "Addition",
+          "Description": "Added the **identityParentId** property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "6c1e2f06-f22d-4af3-8f7b-7cfac988dff9",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-17T00:45:53.8864749Z",
+      "WorkloadArea": "Agents",
+      "SubArea": "Agent users"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5be1f640-5b61-49aa-92b3-8a3e153d8838",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Domain-InternalFederation.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added the **Domain-InternalFederation.Read.All** application and delegated permission for reading [internalDomainFederation](https://learn.microsoft.com/en-us/graph/api/resources/internaldomainfederation?view=graph-rest-1.0) resources.",
+          "Target": "internalDomainFederation"
+        },
+        {
+          "Id": "5be1f640-5b61-49aa-92b3-8a3e153d8838",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Domain-InternalFederation.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added the **Domain-InternalFederation.ReadWrite.All** application and delegated permission for reading and writing [internalDomainFederation](https://learn.microsoft.com/en-us/graph/api/resources/internaldomainfederation?view=graph-rest-1.0) resources.",
+          "Target": "internalDomainFederation"
+        },
+        {
+          "Id": "5be1f640-5b61-49aa-92b3-8a3e153d8838",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Added the **Domain-InternalFederation.ReadWrite.All** application and delegated permission for updating the [domain](https://learn.microsoft.com/en-us/graph/api/domain-update?view=graph-rest-1.0) resource. The delegated permission is the lesser-privileged higher-privileged alternative to *Directory.AccessAsUser.All* delegated permission while the application permission allows applications to update domains with their own identity without a signed-in user.",
+          "Target": "domain"
+        },
+        {
+          "Id": "5be1f640-5b61-49aa-92b3-8a3e153d8838",
+          "ApiChange": "Permission",
+          "ChangedApiName": "internalDomainFederation APIs",
+          "ChangeType": "Change",
+          "Description": "Resolved a known permissions issue for [internalDomainFederation](https://learn.microsoft.com/en-us/graph/api/resources/internaldomainfederation?view=graph-rest-1.0) WRITE APIs that previously required consenting to the *Directory.AccessAsUser.All* permission for delegated scenarios. Apps can now use the new *Domain-InternalFederation.ReadWrite.All* permission as a lesser-privileged alternative.",
+          "Target": "internalDomainFederation"
+        }
+      ],
+      "Id": "5be1f640-5b61-49aa-92b3-8a3e153d8838",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-10-10T07:26:09.529Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c38d1210-4dc9-4e1f-a2f0-2c8650451536",
+          "ApiChange": "Property",
+          "ChangedApiName": "isContinuousAccessEvaluationEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isContinuousAccessEvaluationEnabled** property to the [onPremisesPublishing](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesPublishing?view=graph-rest-beta) resource.",
+          "Target": "onPremisesPublishing"
+        }
+      ],
+      "Id": "c38d1210-4dc9-4e1f-a2f0-2c8650451536",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-09-10T22:59:30.0647952Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a0f2cefd-9f4c-4d53-a662-2f2ba2202b5d",
+          "ApiChange": "Method",
+          "ChangedApiName": "List",
+          "ChangeType": "Change",
+          "Description": "From the end of September 2025, the maximum page size for the [List servicePrincipals](https://learn.microsoft.com/en-us/graph/api/serviceprincipal-list?view=graph-rest-1.0) API will be 100 objects from the previous 999 objects.",
+          "Target": "servicePrincipal"
+        }
+      ],
+      "Id": "a0f2cefd-9f4c-4d53-a662-2f2ba2202b5d",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-09-04T19:55:00.0000000Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6660c8ae-bef6-48f8-b2b5-d0c315b9eb43",
+          "ApiChange": "Method",
+          "ChangedApiName": "List",
+          "ChangeType": "Change",
+          "Description": "From the end of September 2025, the maximum page size for the [List servicePrincipals](https://learn.microsoft.com/en-us/graph/api/serviceprincipal-list?view=graph-rest-beta) API will be 100 objects from the previous 999 objects.",
+          "Target": "servicePrincipal"
+        }
+      ],
+      "Id": "6660c8ae-bef6-48f8-b2b5-d0c315b9eb43",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-09-04T19:55:00.0000000Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
         {
       "ChangeList": [
         {
@@ -23,7 +179,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "deletedItems",
           "ChangeType": "Addition",
-          "Description": "Added the **deletedItems** relationship to the [policyRoot](https://learn.microsoft.com/en-us/graph/api/resources/policyRoot?view=graph-rest-beta) resource.",
+          "Description": "Added the **deletedItems** relationship to the [policyRoot](https://learn.microsoft.com/en-us/graph/api/resources/policyroot?view=graph-rest-beta) resource.",
           "Target": "policyRoot"
         },
         {
@@ -201,6 +357,32 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-04-18T21:26:04.1966845Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "010934ac-58ad-41a8-ada4-84943068c2d2",
+          "ApiChange": "Property",
+          "ChangedApiName": "isDisabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isDisabled** property to the [application](https://learn.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
+          "Target": "application"
+        },
+        {
+          "Id": "010934ac-58ad-41a8-ada4-84943068c2d2",
+          "ApiChange": "Property",
+          "ChangedApiName": "isDisabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isDisabled** property to the [servicePrincipal](https://learn.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-beta) resource.",
+          "Target": "servicePrincipal"
+        }
+      ],
+      "Id": "010934ac-58ad-41a8-ada4-84943068c2d2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-12-09T22:48:54.7556185Z",
       "WorkloadArea": "Applications",
       "SubArea": ""
     },
@@ -7703,7 +7885,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "externalIdentitiesPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the **externalIdentitiesPolicy** relationship to the [policyRoot](https://learn.microsoft.com/en-us/graph/api/resources/policyRoot?view=graph-rest-beta) resource.",
+          "Description": "Added the **externalIdentitiesPolicy** relationship to the [policyRoot](https://learn.microsoft.com/en-us/graph/api/resources/policyroot?view=graph-rest-beta) resource.",
           "Target": "policyRoot"
         }
       ],
@@ -13569,7 +13751,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "permissionGrantPreApprovalPolicies",
           "ChangeType": "Addition",
-          "Description": "Added the **permissionGrantPreApprovalPolicies** relationship to the [policyRoot](https://learn.microsoft.com/en-us/graph/api/resources/policyRoot?view=graph-rest-beta) resource.",
+          "Description": "Added the **permissionGrantPreApprovalPolicies** relationship to the [policyRoot](https://learn.microsoft.com/en-us/graph/api/resources/policyroot?view=graph-rest-beta) resource.",
           "Target": "policyRoot"
         },
         {
@@ -14555,6 +14737,174 @@
       "CreatedDateTime": "2025-03-19T03:14:15.5239708Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "360608d1-0e8f-4fce-b8c7-939ebc9161ab",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentIdentity](https://learn.microsoft.com/en-us/graph/api/resources/agentIdentity?view=graph-rest-beta) resource.",
+          "Target": "agentIdentity"
+        },
+        {
+          "Id": "360608d1-0e8f-4fce-b8c7-939ebc9161ab",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentIdentityBlueprint",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentIdentityBlueprint](https://learn.microsoft.com/en-us/graph/api/resources/agentIdentityBlueprint?view=graph-rest-beta) resource.",
+          "Target": "agentIdentityBlueprint"
+        },
+        {
+          "Id": "360608d1-0e8f-4fce-b8c7-939ebc9161ab",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "inheritablePermissions",
+          "ChangeType": "Addition",
+          "Description": "Added the **inheritablePermissions** relationship to the [agentIdentityBlueprint](https://learn.microsoft.com/en-us/graph/api/resources/agentIdentityBlueprint?view=graph-rest-beta) resource.",
+          "Target": "agentIdentityBlueprint"
+        },
+        {
+          "Id": "360608d1-0e8f-4fce-b8c7-939ebc9161ab",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentIdentityBlueprintPrincipal",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentIdentityBlueprintPrincipal](https://learn.microsoft.com/en-us/graph/api/resources/agentIdentityBlueprintPrincipal?view=graph-rest-beta) resource.",
+          "Target": "agentIdentityBlueprintPrincipal"
+        },
+        {
+          "Id": "360608d1-0e8f-4fce-b8c7-939ebc9161ab",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdByAppId",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdByAppId** property to the [application](https://learn.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
+          "Target": "application"
+        },
+        {
+          "Id": "360608d1-0e8f-4fce-b8c7-939ebc9161ab",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdByAppId",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdByAppId** property to the [servicePrincipal](https://learn.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-beta) resource.",
+          "Target": "servicePrincipal"
+        }
+      ],
+      "Id": "360608d1-0e8f-4fce-b8c7-939ebc9161ab",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-17T23:52:29.3280091Z",
+      "WorkloadArea": "Agents",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "39f10270-454d-4d4b-81dc-26552aab1dd7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "b2bManagementPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [b2bManagementPolicy](https://learn.microsoft.com/en-us/graph/api/resources/b2bManagementPolicy?view=graph-rest-beta) resource.",
+          "Target": "b2bManagementPolicy"
+        },
+        {
+          "Id": "39f10270-454d-4d4b-81dc-26552aab1dd7",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "b2bManagementPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **b2bManagementPolicies** relationship to the [policyRoot](https://learn.microsoft.com/en-us/graph/api/resources/policyRoot?view=graph-rest-beta) resource.",
+          "Target": "policyRoot"
+        }
+      ],
+      "Id": "39f10270-454d-4d4b-81dc-26552aab1dd7",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-18T17:35:49.5146879Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b7ae127f-784f-4b75-a55a-f8fab58a962b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPremAuthenticationPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPremAuthenticationPolicy](https://learn.microsoft.com/en-us/graph/api/resources/onpremauthenticationpolicy?view=graph-rest-beta) resource.",
+          "Target": "onPremAuthenticationPolicy"
+        },
+        {
+          "Id": "b7ae127f-784f-4b75-a55a-f8fab58a962b",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "onPremAuthenticationPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **onPremAuthenticationPolicies** relationship to the [policyRoot](https://learn.microsoft.com/en-us/graph/api/resources/policyroot?view=graph-rest-beta) resource.",
+          "Target": "policyRoot"
+        }
+      ],
+      "Id": "b7ae127f-784f-4b75-a55a-f8fab58a962b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-25T23:46:33.003696Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3e67990a-54dc-4054-9970-91f26e1d9e50",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "scopeCollectionKind",
+          "ChangeType": "Addition",
+          "Description": "Added the **scopeCollectionKind** enumeration type.",
+          "Target": "scopeCollectionKind"
+        },
+        {
+          "Id": "3e67990a-54dc-4054-9970-91f26e1d9e50",
+          "ApiChange": "Resource",
+          "ChangedApiName": "allAllowedScopes",
+          "ChangeType": "Addition",
+          "Description": "Added the [allAllowedScopes](https://learn.microsoft.com/en-us/graph/api/resources/allAllowedScopes?view=graph-rest-beta) resource.",
+          "Target": "allAllowedScopes"
+        },
+        {
+          "Id": "3e67990a-54dc-4054-9970-91f26e1d9e50",
+          "ApiChange": "Resource",
+          "ChangedApiName": "enumeratedScopes",
+          "ChangeType": "Addition",
+          "Description": "Added the [enumeratedScopes](https://learn.microsoft.com/en-us/graph/api/resources/enumeratedScopes?view=graph-rest-beta) resource.",
+          "Target": "enumeratedScopes"
+        },
+        {
+          "Id": "3e67990a-54dc-4054-9970-91f26e1d9e50",
+          "ApiChange": "Resource",
+          "ChangedApiName": "inheritableScopes",
+          "ChangeType": "Addition",
+          "Description": "Added the [inheritableScopes](https://learn.microsoft.com/en-us/graph/api/resources/inheritableScopes?view=graph-rest-beta) resource.",
+          "Target": "inheritableScopes"
+        },
+        {
+          "Id": "3e67990a-54dc-4054-9970-91f26e1d9e50",
+          "ApiChange": "Resource",
+          "ChangedApiName": "noScopes",
+          "ChangeType": "Addition",
+          "Description": "Added the [noScopes](https://learn.microsoft.com/en-us/graph/api/resources/noScopes?view=graph-rest-beta) resource.",
+          "Target": "noScopes"
+        },
+        {
+          "Id": "3e67990a-54dc-4054-9970-91f26e1d9e50",
+          "ApiChange": "Resource",
+          "ChangedApiName": "inheritablePermission",
+          "ChangeType": "Addition",
+          "Description": "Added the [inheritablePermission](https://learn.microsoft.com/en-us/graph/api/resources/inheritablePermission?view=graph-rest-beta) resource.",
+          "Target": "inheritablePermission"
+        }
+      ],
+      "Id": "3e67990a-54dc-4054-9970-91f26e1d9e50",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-12-08T13:04:08.76263Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
     }
   ]
 }

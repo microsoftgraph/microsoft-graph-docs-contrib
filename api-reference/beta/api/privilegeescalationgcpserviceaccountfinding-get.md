@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/gcp/findings/{id}/microsoft.graph.privilegeEscalationGcpServiceAccountFinding
 ```
 
@@ -59,7 +59,7 @@ The following example shows a request.
   "name": "get_privilegeescalationgcpserviceaccountfinding"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/MSxQcml2aWxlZ2VFc2NhbGF0aW9uR2NwU2VydmljZUFjY291bnRGaW5kaW5nLDE0OTMwOQ/microsoft.graph.privilegeEscalationGcpServiceAccountFinding
 ```
 
@@ -78,7 +78,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.privilegeEscalationGcpServiceAccountFinding"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

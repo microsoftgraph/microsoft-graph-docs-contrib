@@ -32,7 +32,7 @@ Enrollment Configuration Assignment
 |:---|:---|:---|
 |id|String|Key of the enrollment configuration assignment|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Represents an assignment to managed devices in the tenant|
-|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Type of resource used for deployment to a group, direct or policySet. Possible values are: `direct`, `policySets`.|
+|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|Type of resource used for deployment to a group, direct or policySet. The possible values are: `direct`, `policySets`.|
 |sourceId|String|Identifier for resource used for deployment to a group|
 
 ## Relationships

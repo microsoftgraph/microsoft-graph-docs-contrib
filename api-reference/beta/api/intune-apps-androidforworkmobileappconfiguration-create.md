@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceAppManagement/mobileAppConfigurations
 ```
 
@@ -62,7 +62,7 @@ The following table shows the properties that are required when you create the a
 |packageId|String|Android For Work app configuration package id.|
 |payloadJson|String|Android For Work app configuration JSON payload.|
 |permissionActions|[androidPermissionAction](../resources/intune-apps-androidpermissionaction.md) collection|List of Android app permissions and corresponding permission actions.|
-|profileApplicability|[androidProfileApplicability](../resources/intune-apps-androidprofileapplicability.md)|Android Enterprise profile applicability (AndroidWorkProfile, DeviceOwner, or default (applies to both)). Possible values are: `default`, `androidWorkProfile`, `androidDeviceOwner`.|
+|profileApplicability|[androidProfileApplicability](../resources/intune-apps-androidprofileapplicability.md)|Android Enterprise profile applicability (AndroidWorkProfile, DeviceOwner, or default (applies to both)). The possible values are: `default`, `androidWorkProfile`, `androidDeviceOwner`.|
 |connectedAppsEnabled|Boolean|Setting to specify whether to allow ConnectedApps experience for this app.|
 
 
@@ -74,7 +74,7 @@ If successful, this method returns a `201 Created` response code and a [androidF
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations
 Content-type: application/json
 Content-length: 642
@@ -106,7 +106,7 @@ Content-length: 642
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 814

@@ -26,7 +26,7 @@ Represents the street address of a resource such as a contact or event.
 |postOfficeBox|String|The post office box number.|
 |state|String|The state.|
 |street|String|The street.|
-|type|physicalAddressType|The type of address. Possible values are: `unknown`, `home`, `business`, `other`.|
+|type|physicalAddressType|The type of address. The possible values are: `unknown`, `home`, `business`, `other`.|
 
 ## Relationships
 

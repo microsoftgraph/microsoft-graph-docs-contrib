@@ -12,8 +12,6 @@ ms.date: 08/23/2024
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 An event in a [user](user.md) calendar, or the default calendar of a Microsoft 365 [group](group.md).
 
 The maximum number of attendees included in an **event**, and the maximum number of recipients in an [eventMessage](eventmessage.md) sent from an Exchange Online mailbox is 500. For more information, see [sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits).
@@ -99,13 +97,13 @@ This resource supports:
 |reminderMinutesBeforeStart|Int32|The number of minutes before the event start time that the reminder alert occurs.|
 |responseRequested|Boolean|Default is true, which represents the organizer would like an invitee to send a response to the event.|
 |responseStatus|[ResponseStatus](responsestatus.md)|Indicates the type of response sent in response to an event message.|
-|sensitivity|String| Possible values are: `normal`, `personal`, `private`, and `confidential`.|
+|sensitivity|String| The possible values are: `normal`, `personal`, `private`, and `confidential`.|
 |seriesMasterId|String|The ID for the recurring series master item, if this event is part of a recurring series.|
-|showAs|String|The status to show. Possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
+|showAs|String|The status to show. The possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |start|[DateTimeTimeZone](datetimetimezone.md)|The start date, time, and time zone of the event. By default, the start time is in UTC.|
 |subject|String|The text of the event's subject line.|
 |transactionId|String|A custom identifier specified by a client app for the server to avoid redundant [POST](../api/calendar-post-events.md) operations in case of client retries to create the same event. It's useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request. After you set **transactionId** when creating an event, you can't change **transactionId** in a subsequent update. This property is only returned in a response payload if an app has set it. Optional.|
-|type|String|The event type. Possible values are: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Read-only|
+|type|String|The event type. The possible values are: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Read-only|
 |webLink|String|The URL to open the event in Outlook on the web.<br/><br/>Outlook on the web opens the event in the browser if you are signed in to your mailbox. Otherwise, Outlook on the web prompts you to sign in.<br/><br/>This URL can't be accessed from within an iFrame.|
 
 > [!NOTE]

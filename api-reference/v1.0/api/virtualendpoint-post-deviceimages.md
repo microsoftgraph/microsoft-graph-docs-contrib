@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "virtualendpoint_post_deviceimages" } -->
 [!INCLUDE [permissions-table](../includes/permissions/virtualendpoint-post-deviceimages-permissions.md)]
 
+> **Note:** When using application-only authentication, you need to grant the `Subscriptions.Read` permission to Windows 365 in advance. For more information, see [Customer permissions](/windows-365/enterprise/customer-permissions).
+
 ## HTTP request
 
 <!-- {
@@ -30,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 POST /deviceManagement/virtualEndpoint/deviceImages
 ```
 
@@ -70,7 +72,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/deviceImages
 Content-Type: application/json
 
@@ -123,7 +125,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

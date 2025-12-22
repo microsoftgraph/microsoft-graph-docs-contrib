@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /me/mailFolders/{mailFolderId}/updateAllMessagesReadState
 POST /users/{userId}/mailFolders/{mailFolderId}/updateAllMessagesReadState
 ```
@@ -57,13 +57,13 @@ The following table lists the parameters that are required when you call this ac
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this action returns a `202 Accepted` response code.
 
 ## Examples
 
 ### Request
 
-The following example shows a request.
+The following example marks messages in the mail folder as read.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -71,13 +71,13 @@ The following example shows a request.
   "sampleKeys": ["AAMkAGVmMDEzM"]
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/updateAllMessagesReadState
 Content-Type: application/json
 
 {
-  "isRead": "true",
-  "suppressReadReceipts": "true"
+  "isRead": true,
+  "suppressReadReceipts": true
 }
 ```
 
@@ -120,6 +120,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
-HTTP/1.1 204 No Content
+```http
+HTTP/1.1 202 Accepted
 ```

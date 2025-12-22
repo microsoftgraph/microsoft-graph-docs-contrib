@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /solutions/backupRestore/protectionPolicies/{protectionPolicyBaseId}/deactivate
 ```
 
@@ -67,7 +67,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/solutions/backupRestore/ProtectionPolicies/61633878-8321-4950-bfaf-ed285bdd1461/deactivate
 ```
 
@@ -111,7 +111,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.protectionPolicyBase"
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Location: https://graph.microsoft.com/v1.0/solutions/backupRestore/protectionPolicies('61633878-8321-4950-bfaf-ed285bdd1461')
 
@@ -174,7 +174,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/solutions/backupRestore/protectionPolicies/61633878-8321-4950-bfaf-ed285bdd1461/deactivate
 ```
 
@@ -219,7 +219,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 400 Bad Request
 Content-Location: https://graph.microsoft.com/v1.0/solutions/backupRestore/ProtectionPolicies/61633878-8321-4950-bfaf-ed285bdd1461
 

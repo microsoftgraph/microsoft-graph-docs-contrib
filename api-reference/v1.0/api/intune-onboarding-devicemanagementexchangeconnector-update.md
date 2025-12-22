@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 ```
 
@@ -49,13 +49,13 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Not yet documented|
+|id|String||
 |lastSyncDateTime|DateTimeOffset|Last sync time for the Exchange Connector|
-|status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange Connector Status. Possible values are: `none`, `connectionPending`, `connected`, `disconnected`, `unknownFutureValue`.|
+|status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Exchange Connector Status. The possible values are: `none`, `connectionPending`, `connected`, `disconnected`, `unknownFutureValue`.|
 |primarySmtpAddress|String|Email address used to configure the Service To Service Exchange Connector.|
 |serverName|String|The name of the Exchange server.|
 |connectorServerName|String|The name of the server hosting the Exchange Connector.|
-|exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune-onboarding-devicemanagementexchangeconnectortype.md)|The type of Exchange Connector Configured. Possible values are: `onPremises`, `hosted`, `serviceToService`, `dedicated`, `unknownFutureValue`.|
+|exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune-onboarding-devicemanagementexchangeconnectortype.md)|The type of Exchange Connector Configured. The possible values are: `onPremises`, `hosted`, `serviceToService`, `dedicated`, `unknownFutureValue`.|
 |version|String|The version of the ExchangeConnectorAgent|
 |exchangeAlias|String|An alias assigned to the Exchange server|
 |exchangeOrganization|String|Exchange Organization to the Exchange server|
@@ -69,10 +69,7 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 
 ### Request
 Here is an example of the request.
-
-# [HTTP](#tab/http)
-<!-- { "blockType": "request" , "name" : "intune_onboarding_devicemanagementexchangeconnector_update_update_devicemanagementexchangeconnector" }-->
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/exchangeConnectors/{deviceManagementExchangeConnectorId}
 Content-type: application/json
 Content-length: 490
@@ -91,41 +88,9 @@ Content-length: 490
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/intune-onboarding-devicemanagementexchangeconnector-update-update-devicemanagementexchangeconnector-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/intune-onboarding-devicemanagementexchangeconnector-update-update-devicemanagementexchangeconnector-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-onboarding-devicemanagementexchangeconnector-update-update-devicemanagementexchangeconnector-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-onboarding-devicemanagementexchangeconnector-update-update-devicemanagementexchangeconnector-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/intune-onboarding-devicemanagementexchangeconnector-update-update-devicemanagementexchangeconnector-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-onboarding-devicemanagementexchangeconnector-update-update-devicemanagementexchangeconnector-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/intune-onboarding-devicemanagementexchangeconnector-update-update-devicemanagementexchangeconnector-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.deviceManagementExchangeConnector" }-->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 539

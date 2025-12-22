@@ -36,7 +36,7 @@ Contains properties for the deployment state of a WindowsDefenderApplicationCont
 |lastSyncDateTime|DateTimeOffset|Last sync date time.|
 |osVersion|String|Windows OS Version.|
 |osDescription|String|Windows OS Version Description.|
-|deploymentStatus|[windowsDefenderApplicationControlSupplementalPolicyStatuses](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicystatuses.md)|The deployment state of the policy. Possible values are: `unknown`, `success`, `tokenError`, `notAuthorizedByToken`, `policyNotFound`.|
+|deploymentStatus|[windowsDefenderApplicationControlSupplementalPolicyStatuses](../resources/intune-unlock-windowsdefenderapplicationcontrolsupplementalpolicystatuses.md)|The deployment state of the policy. The possible values are: `unknown`, `success`, `tokenError`, `notAuthorizedByToken`, `policyNotFound`.|
 |userName|String|The name of the user of this device.|
 |userPrincipalName|String|User Principal Name.|
 |policyVersion|String|Human readable version of the WindowsDefenderApplicationControl supplemental policy.|

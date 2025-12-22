@@ -15,7 +15,10 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Defines the types of domains to which the federated token validation applies.
-This object is an abstract type from which the [allDomains](../resources/alldomains.md) and [enumeratedDomains](../resources/enumerateddomains.md) resources derive.
+
+This object is an abstract type from which the following resources derive:
+- [allDomains](../resources/alldomains.md)
+- [enumeratedDomains](../resources/enumerateddomains.md)
 
 ## Properties
 |Property|Type|Description|

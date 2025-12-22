@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/versions
 ```
 
@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_list_workflowversion"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/156ce798-1eb6-4e0a-8515-e79f54d04390/versions
 ```
 
@@ -113,7 +113,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.identityGovernance.workflowVersion)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -166,7 +166,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_list_workflowversion_select"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/15239232-66ed-445b-8292-2f5bbb2eb833/versions?$select=category,displayName,versionNumber
 ```
 
@@ -208,7 +208,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
   "@odata.type": "Collection(microsoft.graph.identityGovernance.workflowVersion)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
@@ -65,23 +65,23 @@ The following table shows the properties that are required when you create the [
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |accountManagerPolicy|[sharedPCAccountManagerPolicy](../resources/intune-deviceconfig-sharedpcaccountmanagerpolicy.md)|Specifies how accounts are managed on a shared PC. Only applies when disableAccountManager is false.|
-|allowedAccounts|[sharedPCAllowedAccountType](../resources/intune-deviceconfig-sharedpcallowedaccounttype.md)|Indicates which type of accounts are allowed to use on a shared PC. Possible values are: `notConfigured`, `guest`, `domain`.|
-|localStorage|[enablement](../resources/intune-shared-enablement.md)|Specifies whether local storage is allowed on a shared PC. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|allowedAccounts|[sharedPCAllowedAccountType](../resources/intune-deviceconfig-sharedpcallowedaccounttype.md)|Indicates which type of accounts are allowed to use on a shared PC. The possible values are: `notConfigured`, `guest`, `domain`.|
+|localStorage|[enablement](../resources/intune-shared-enablement.md)|Specifies whether local storage is allowed on a shared PC. The possible values are: `notConfigured`, `enabled`, `disabled`.|
 |allowLocalStorage|Boolean|Specifies whether local storage is allowed on a shared PC.|
-|setAccountManager|[enablement](../resources/intune-shared-enablement.md)|Disables the account manager for shared PC mode. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|setAccountManager|[enablement](../resources/intune-shared-enablement.md)|Disables the account manager for shared PC mode. The possible values are: `notConfigured`, `enabled`, `disabled`.|
 |disableAccountManager|Boolean|Disables the account manager for shared PC mode.|
-|setEduPolicies|[enablement](../resources/intune-shared-enablement.md)|Specifies whether the default shared PC education environment policies should be enabled/disabled/not configured. For Windows 10 RS2 and later, this policy will be applied without setting Enabled to true. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|setEduPolicies|[enablement](../resources/intune-shared-enablement.md)|Specifies whether the default shared PC education environment policies should be enabled/disabled/not configured. For Windows 10 RS2 and later, this policy will be applied without setting Enabled to true. The possible values are: `notConfigured`, `enabled`, `disabled`.|
 |disableEduPolicies|Boolean|Specifies whether the default shared PC education environment policies should be disabled. For Windows 10 RS2 and later, this policy will be applied without setting Enabled to true.|
-|setPowerPolicies|[enablement](../resources/intune-shared-enablement.md)|Specifies whether the default shared PC power policies should be enabled/disabled. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|setPowerPolicies|[enablement](../resources/intune-shared-enablement.md)|Specifies whether the default shared PC power policies should be enabled/disabled. The possible values are: `notConfigured`, `enabled`, `disabled`.|
 |disablePowerPolicies|Boolean|Specifies whether the default shared PC power policies should be disabled.|
-|signInOnResume|[enablement](../resources/intune-shared-enablement.md)|Specifies the requirement to sign in whenever the device wakes up from sleep mode. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|signInOnResume|[enablement](../resources/intune-shared-enablement.md)|Specifies the requirement to sign in whenever the device wakes up from sleep mode. The possible values are: `notConfigured`, `enabled`, `disabled`.|
 |disableSignInOnResume|Boolean|Disables the requirement to sign in whenever the device wakes up from sleep mode.|
 |enabled|Boolean|Enables shared PC mode and applies the shared pc policies.|
 |idleTimeBeforeSleepInSeconds|Int32|Specifies the time in seconds that a device must sit idle before the PC goes to sleep. Setting this value to 0 prevents the sleep timeout from occurring.|
 |kioskAppDisplayName|String|Specifies the display text for the account shown on the sign-in screen which launches the app specified by SetKioskAppUserModelId. Only applies when KioskAppUserModelId is set.|
 |kioskAppUserModelId|String|Specifies the application user model ID of the app to use with assigned access.|
 |maintenanceStartTime|TimeOfDay|Specifies the daily start time of maintenance hour.|
-|fastFirstSignIn|[enablement](../resources/intune-shared-enablement.md)|Specifies whether to auto connect new non-admin Azure AD accounts to pre-configured candidate local accounts. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|fastFirstSignIn|[enablement](../resources/intune-shared-enablement.md)|Specifies whether to auto connect new non-admin Azure AD accounts to pre-configured candidate local accounts. The possible values are: `notConfigured`, `enabled`, `disabled`.|
 
 
 
@@ -92,7 +92,7 @@ If successful, this method returns a `200 OK` response code and an updated [shar
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
 Content-length: 1920
@@ -156,7 +156,7 @@ Content-length: 1920
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 2092

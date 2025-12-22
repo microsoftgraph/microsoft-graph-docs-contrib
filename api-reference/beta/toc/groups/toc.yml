@@ -56,6 +56,10 @@ items:
       href: ../../api/group-renew.md
     - name: Validate properties
       href: ../../api/group-validateproperties.md
+    - name: Get source of authority (SOA)
+      href: ../../api/onpremisessyncbehavior-get.md
+    - name: Update source of authority (SOA)
+      href: ../../api/onpremisessyncbehavior-update.md
   - name: App role assignments
     items:
     - name: List
@@ -238,11 +242,3 @@ items:
     href: ../../api/grouplifecyclepolicy-removegroup.md
   - name: Renew group
     href: ../../api/grouplifecyclepolicy-renewgroup.md
-- name: On-premises sync behavior (Source of Authority)
-  items:
-  - name: On-premises sync behavior (Source of Authority)
-    href: ../../resources/onpremisessyncbehavior.md
-  - name: Get
-    href: ../../api/onpremisessyncbehavior-get.md
-  - name: Update
-    href: ../../api/onpremisessyncbehavior-update.md

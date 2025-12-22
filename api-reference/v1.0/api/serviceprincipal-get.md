@@ -1,7 +1,7 @@
 ---
 title: "Get servicePrincipal"
 description: "Retrieve the properties and relationships of servicePrincipal object."
-author: "sureshja"
+author: "Jackson-Woods"
 ms.localizationpriority: high
 ms.subservice: "entra-applications"
 doc_type: apiPageType
@@ -228,7 +228,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#servicePrincipals(id,appId,displayName,appRoles,publishedPermissionScopes)/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#servicePrincipals(id,appId,displayName,appRoles,publishedPermissionScopes)/$entity",
     "id": "7408235b-7540-4850-82fe-a5f15ed019e2",
     "appId": "00000003-0000-0000-c000-000000000000",
     "displayName": "Microsoft Graph",

@@ -4,7 +4,7 @@ description: "Use this API to add an owner for the service principal."
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-applications"
-author: "sureshja"
+author: "Jackson-Woods"
 ms.date: 07/30/2024
 ---
 

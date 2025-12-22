@@ -4,7 +4,7 @@ description: "Represents an instance of an application in a directory. Inherits 
 ms.localizationpriority: high
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
-author: "sureshja"
+author: "Jackson-Woods"
 ms.date: 10/01/2024
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Represents an instance of an application in a directory. Inherits from [directoryObject](directoryobject.md).
 
-This resource supports using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/serviceprincipal-delta.md) function. This resource is an open type that allows other properties to be passed in.
+This resource supports using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/serviceprincipal-delta.md) function. This resource is an open type that allows additional properties beyond those documented here.
 
 ## Methods
 
@@ -85,7 +85,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|An open complex type that holds the value of a custom security attribute that is assigned to a directory object. Nullable. <br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, `startsWith`). Filter value is case sensitive. <br><li>To read this property, the calling app must be assigned the *CustomSecAttributeAssignment.Read.All* permission. To write this property, the calling app must be assigned the *CustomSecAttributeAssignment.ReadWrite.All* permissions. <li>To read or write this property in delegated scenarios, the admin must be assigned the *Attribute Assignment Administrator* role.|
 | deletedDateTime | DateTimeOffset | The date and time the service principal was deleted. Read-only. |
 | description | String | Free text field to provide an internal end-user facing description of the service principal. End-user portals such [MyApps](/azure/active-directory/user-help/my-apps-portal-end-user-access) displays the application description in this field. The maximum allowed size is 1,024 characters. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`) and `$search`.|
-| disabledByMicrosoftStatus | String | Specifies whether Microsoft has disabled the registered application. Possible values are: `null` (default value), `NotDisabled`, and `DisabledDueToViolationOfServicesAgreement` (reasons include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement). <br><br> Supports `$filter` (`eq`, `ne`, `not`).  |
+| disabledByMicrosoftStatus | String | Specifies whether Microsoft has disabled the registered application. The possible values are: `null` (default value), `NotDisabled`, and `DisabledDueToViolationOfServicesAgreement` (reasons include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement). <br><br> Supports `$filter` (`eq`, `ne`, `not`).  |
 |displayName|String|The display name for the service principal. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values), `$search`, and `$orderby`. |
 |homepage|String|Home page or landing page of the application.|
 |id|String|The unique identifier for the service principal. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `in`).|

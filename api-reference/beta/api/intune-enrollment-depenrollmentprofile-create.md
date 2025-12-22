@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles
 ```
 
@@ -65,7 +65,7 @@ The following table shows the properties that are required when you create the d
 |isMandatory|Boolean|Indicates if the profile is mandatory|
 |locationDisabled|Boolean|Indicates if Location service setup pane is disabled|
 |supportPhoneNumber|String|Support phone number|
-|iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|Indicates the iTunes pairing mode. Possible values are: `disallow`, `allow`, `requiresCertificate`.|
+|iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|Indicates the iTunes pairing mode. The possible values are: `disallow`, `allow`, `requiresCertificate`.|
 |profileRemovalDisabled|Boolean|Indicates if the profile removal option is disabled|
 |managementCertificates|[managementCertificateWithThumbprint](../resources/intune-enrollment-managementcertificatewiththumbprint.md) collection|Management certificates for Apple Configurator|
 |restoreBlocked|Boolean|Indicates if Restore setup pane is blocked|
@@ -92,7 +92,7 @@ If successful, this method returns a `201 Created` response code and a [depEnrol
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles
 Content-type: application/json
 Content-length: 1354
@@ -140,7 +140,7 @@ Content-length: 1354
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 1403

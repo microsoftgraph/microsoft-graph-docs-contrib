@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceManagement/deviceConfigurations
 ```
 
@@ -62,7 +62,7 @@ The following table shows the properties that are required when you create the w
 |maintenanceWindowBlocked|Boolean|Indicates whether or not to Block setting a maintenance window for device updates.|
 |maintenanceWindowDurationInHours|Int32|Maintenance window duration for device updates. Valid values 0 to 5|
 |maintenanceWindowStartTime|TimeOfDay|Maintenance window start time for device updates.|
-|miracastChannel|[miracastChannel](../resources/intune-deviceconfig-miracastchannel.md)|The channel. Possible values are: `userDefined`, `one`, `two`, `three`, `four`, `five`, `six`, `seven`, `eight`, `nine`, `ten`, `eleven`, `thirtySix`, `forty`, `fortyFour`, `fortyEight`, `oneHundredFortyNine`, `oneHundredFiftyThree`, `oneHundredFiftySeven`, `oneHundredSixtyOne`, `oneHundredSixtyFive`.|
+|miracastChannel|[miracastChannel](../resources/intune-deviceconfig-miracastchannel.md)|The channel. The possible values are: `userDefined`, `one`, `two`, `three`, `four`, `five`, `six`, `seven`, `eight`, `nine`, `ten`, `eleven`, `thirtySix`, `forty`, `fortyFour`, `fortyEight`, `oneHundredFortyNine`, `oneHundredFiftyThree`, `oneHundredFiftySeven`, `oneHundredSixtyOne`, `oneHundredSixtyFive`.|
 |miracastBlocked|Boolean|Indicates whether or not to Block wireless projection.|
 |miracastRequirePin|Boolean|Indicates whether or not to require a pin for wireless projection.|
 |settingsBlockMyMeetingsAndFiles|Boolean|Specifies whether to disable the "My meetings and files" feature in the Start menu, which shows the signed-in user's meetings and files from Office 365.|
@@ -74,7 +74,7 @@ The following table shows the properties that are required when you create the w
 |settingsSleepTimeoutInMinutes|Int32|Specifies the number of minutes until the Hub enters sleep mode.|
 |welcomeScreenBlockAutomaticWakeUp|Boolean|Indicates whether or not to Block the welcome screen from waking up automatically when someone enters the room.|
 |welcomeScreenBackgroundImageUrl|String|The welcome screen background image URL. The URL must use the HTTPS protocol and return a PNG image.|
-|welcomeScreenMeetingInformation|[welcomeScreenMeetingInformation](../resources/intune-deviceconfig-welcomescreenmeetinginformation.md)|The welcome screen meeting information shown. Possible values are: `userDefined`, `showOrganizerAndTimeOnly`, `showOrganizerAndTimeAndSubject`.|
+|welcomeScreenMeetingInformation|[welcomeScreenMeetingInformation](../resources/intune-deviceconfig-welcomescreenmeetinginformation.md)|The welcome screen meeting information shown. The possible values are: `userDefined`, `showOrganizerAndTimeOnly`, `showOrganizerAndTimeAndSubject`.|
 
 
 
@@ -85,10 +85,7 @@ If successful, this method returns a `201 Created` response code and a [windows1
 
 ### Request
 Here is an example of the request.
-
-# [HTTP](#tab/http)
-<!-- { "blockType": "request" , "name" : "intune_deviceconfig_windows10teamgeneralconfiguration_create_create_windows10teamgeneralconfiguration" }-->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 Content-type: application/json
 Content-length: 1150
@@ -121,41 +118,9 @@ Content-length: 1150
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/intune-deviceconfig-windows10teamgeneralconfiguration-create-create-windows10teamgeneralconfiguration-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/intune-deviceconfig-windows10teamgeneralconfiguration-create-create-windows10teamgeneralconfiguration-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-deviceconfig-windows10teamgeneralconfiguration-create-create-windows10teamgeneralconfiguration-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-deviceconfig-windows10teamgeneralconfiguration-create-create-windows10teamgeneralconfiguration-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/intune-deviceconfig-windows10teamgeneralconfiguration-create-create-windows10teamgeneralconfiguration-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-deviceconfig-windows10teamgeneralconfiguration-create-create-windows10teamgeneralconfiguration-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/intune-deviceconfig-windows10teamgeneralconfiguration-create-create-windows10teamgeneralconfiguration-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.windows10TeamGeneralConfiguration" }-->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 1322

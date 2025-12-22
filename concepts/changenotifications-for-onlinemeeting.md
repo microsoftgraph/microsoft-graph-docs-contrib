@@ -26,7 +26,7 @@ This resource supports notifications with resource data. For more information ab
 |:--------------------|:---------------------------------------------------------|:-------------------|
 |Delegated (work or school account) | Not supported. | Not supported. |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All | beta |
+|Application | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All | beta, v1.0  |
 
 ## Subscribe to online meeting call events
 
@@ -48,7 +48,7 @@ Set `includeResourceData` to `true` and provide appropriate values for `encrypti
 ### Subscription to rich notifications payload sample
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions 
 Content-Type: application/json
 
 {

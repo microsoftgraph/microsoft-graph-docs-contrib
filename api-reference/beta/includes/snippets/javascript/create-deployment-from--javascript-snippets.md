@@ -25,7 +25,7 @@ const deployment = {
             gradualRollout: {
                 '@odata.type': '#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings',
                 durationBetweenOffers: 'P7D',
-                devicePerOffer: 100
+                devicesPerOffer: 100
             }
         },
         monitoring: {

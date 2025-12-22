@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Delete [recycleBinItem](../resources/recyclebinitem.md) objects permanently from the [recycleBin](../resources/recyclebin.md) of a [fileStorageContainer](../resources/filestoragecontainer.md). Items deleted by this method can't be restored. 
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /storage/fileStorage/containers/{containerId}/recycleBin/items/delete
 ```
 
@@ -71,7 +71,7 @@ The following example shows a request.
   "@odata.type": "Collection(microsoft.graph.recyclebinitem)"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/recycleBin/items/delete
 Content-Type: application/json
 
@@ -115,7 +115,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

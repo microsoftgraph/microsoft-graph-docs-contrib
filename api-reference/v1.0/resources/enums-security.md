@@ -902,6 +902,14 @@ Namespace: microsoft.graph.security
 |  failed    |
 |  unknownFutureValue  |
 
+### recipientType values
+
+|Member|
+|:---|
+|user|
+|roleGroup|
+|unknownFutureValue|
+
 ### teamsMessageDeliveryAction values
 
 | Member |
@@ -1039,6 +1047,37 @@ Namespace: microsoft.graph.security
 |warn|
 |audit|
 |block|
+
+### sensorCandidateActivationMode values
+
+|Member|
+|:---|
+|manual|
+|automated|
+|unknownFutureValue|
+
+
+### action values
+
+|Member|
+|:---|
+|disable|
+|enable|
+|forcePasswordReset|
+|revokeAllSessions|
+|requireUserToSignInAgain|
+|markUserAsCompromised|
+|unknownFutureValue|
+
+
+### identityProvider values
+
+|Member|
+|:---|
+|entraID|
+|activeDirectory|
+|okta|
+|unknownFutureValue|
 
 <!--
 {

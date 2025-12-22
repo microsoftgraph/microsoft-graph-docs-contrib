@@ -1,6 +1,6 @@
 ---
 title: "Upsert federatedIdentityCredential"
-description: "Create a new federatedIdentityCredential object if it doesn't exist, or update the properties of an existing federatedIdentityCredential object."
+description: "Create a new federatedIdentityCredential object if it doesn't exist, or update the properties of an existing federatedIdentityCredential object assigned to an application or an agentIdentityBlueprint."
 author: "nickludwig"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
@@ -13,25 +13,42 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [federatedIdentityCredential](../resources/federatedidentitycredential.md) object for an application if it doesn't exist, or update the properties of an existing [federatedIdentityCredential](../resources/federatedidentitycredential.md) object. By [configuring a trust relationship](/azure/active-directory/develop/workload-identity-federation-create-trust) between your Microsoft Entra application registration and the identity provider for your compute platform, you can use tokens issued by that platform to authenticate with Microsoft identity platform and call APIs in the Microsoft ecosystem. Maximum of 20 objects can be added to an application.
+Create a new [federatedIdentityCredential](../resources/federatedidentitycredential.md) object for an [application](../resources/application.md) or an [agentIdentityBlueprint](../resources/agentidentityblueprint.md) if it doesn't exist, or update the properties of an existing [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.
+
+By [configuring a trust relationship](/azure/active-directory/develop/workload-identity-federation-create-trust) between your Microsoft Entra application registration or agentIdentityBlueprint and the identity provider for your compute platform, you can use tokens issued by that platform to authenticate with Microsoft identity platform and call APIs in the Microsoft ecosystem. Maximum of 20 objects can be added to an application or agentIdentityBlueprint.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+### Permissions for an application
+
 <!-- { "blockType": "permissions", "name": "federatedidentitycredential-upsert" } -->
 [!INCLUDE [permissions-table](../includes/permissions/federatedidentitycredential-upsert-permissions.md)]
 
 [!INCLUDE [rbac-apps-serviceprincipal-creds-apis](../includes/rbac-for-apis/rbac-apps-serviceprincipal-creds-apis.md)]
 
+### Permissions for an agentIdentityBlueprint
+<!-- { "blockType": "permissions", "name": "federatedidentitycredential_upsert_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/federatedidentitycredential-upsert-2-permissions.md)]
+
+[!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]
+
 ## HTTP request
 
-You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
+For an **application**:
+- You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /applications/{id}/federatedIdentityCredentials(name='{name}')
 PATCH /applications(appId='{appId}')/federatedIdentityCredentials(name='{name}')
+```
+
+For an **agentIdentityBlueprint**:
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /applications/{id}/microsoft.graph.agentIdentityBlueprint/federatedIdentityCredentials(name='{name}')
 ```
 
 ## Request headers
@@ -45,6 +62,7 @@ PATCH /applications(appId='{appId}')/federatedIdentityCredentials(name='{name}')
 ## Request body
 
 In the request body, supply a JSON representation of the [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.
+
 The following table lists the properties that are required when you create the [federatedIdentityCredential](../resources/federatedidentitycredential.md). Note that the **name** property is required as part of the request URL.
 
 |Property|Type|Description|
@@ -62,11 +80,11 @@ If an application object with **name** already exists, this method updates the [
 
 ## Examples
 
-### Example 1: Create a new federatedIdentityCredential if it doesn't exist
+### Example 1: Create a new federatedIdentityCredential for an application if it doesn't exist
 
 The following example creates a federatedIdentityCredential because a federatedIdentityCredential with the specified **name** value doesn't exist.
 
-### Request
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -74,7 +92,7 @@ The following example shows a request.
   "name": "upsert_federatedidentitycredential_create"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/applications(uniqueName='app-65278')/federatedIdentityCredentials(name='fic01-app-65278')
 Content-Type: application/json
 
@@ -87,7 +105,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -98,7 +116,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.federatedIdentityCredential"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -115,7 +133,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Update an existing federatedIdentityCredential
+### Example 2: Update an existing federatedIdentityCredential for an application
 
 The following example updates the federatedIdentityCredential because a federatedIdentityCredential with the specified **name** value exists.
 
@@ -128,7 +146,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/applications(uniqueName='app-65278')/federatedIdentityCredentials(name='fic01-app-65278')
 Content-Type: application/json
 Prefer: create-if-missing
@@ -150,6 +168,59 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
+```
+
+### Example 3: Create a new federatedIdentityCredential for an agentIdentityBlueprint if it doesn't exist
+
+The following example creates a federatedIdentityCredential for an agentIdentityBlueprint because a federatedIdentityCredential with the specified **name** value doesn't exist.
+
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "agentidentityblueprint_upsert_federatedidentitycredential_create"
+}
+-->
+```http
+PATCH https://graph.microsoft.com/beta/applications(uniqueName='app-65278')/microsoft.graph.agentIdentityBlueprint/federatedIdentityCredentials(name='fic01-app-65278')
+Content-Type: application/json
+
+{
+    "issuer": "https://login.microsoftonline.com/3d1e2be9-a10a-4a0c-8380-7ce190f98ed9/v2.0",
+    "subject": "a7d388c3-5e3f-4959-ac7d-786b3383006a",
+    "audiences": [
+        "api://AzureADTokenExchange"
+    ]
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.federatedIdentityCredential"
+}
+-->
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications('bcd7c908-1c4d-4d48-93ee-ff38349a75c8')/federatedIdentityCredentials/$entity",
+    "id": "d9b7bf1e-429e-4678-8132-9b00c9846cc4",
+    "name": "testing02fic01-app-65278",
+    "issuer": "https://login.microsoftonline.com/3d1e2be9-a10a-4a0c-8380-7ce190f98ed9/v2.0",
+    "subject": "a7d388c3-5e3f-4959-ac7d-786b3383006a",
+    "description": null,
+    "audiences": [
+        "api://AzureADTokenExchange"
+    ]
+}
 ```

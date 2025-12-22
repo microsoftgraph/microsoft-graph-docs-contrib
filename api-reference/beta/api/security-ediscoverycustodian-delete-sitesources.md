@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/{ediscoveryCustodianId}/siteSources/{siteSourceId}
 ```
 
@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "delete_ediscoverycustodian_sitesource"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/security/cases/ediscoveryCases/4c551bc5-f6f8-435c-8391-d1a08f1ffd5b/custodians/2114ada2-3958-4945-bb6e-66fe9fca4772/siteSources/08345ae2-bc5a-4d71-a18b-c490993959ee
 ```
 
@@ -103,6 +103,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

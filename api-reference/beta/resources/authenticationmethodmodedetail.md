@@ -30,7 +30,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authenticationMethod|baseAuthenticationMethod|The authentication method that this mode modifies. The possible values are: `password`, `voice`, `hardwareOath`, `softwareOath`, `sms`, `fido2`, `windowsHelloForBusiness`, `microsoftAuthenticator`, `temporaryAccessPass`, `email`, `x509Certificate`, `federation`, `unknownFutureValue`, `qrCodePin`. Use the `Prefer: include-unknown-enum-members` request header to get the following value from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `qrCodePin`.|
+|authenticationMethod|baseAuthenticationMethod|The authentication method that this mode modifies. The possible values are: `password`, `voice`, `hardwareOath`, `softwareOath`, `sms`, `fido2`, `windowsHelloForBusiness`, `microsoftAuthenticator`, `temporaryAccessPass`, `email`, `x509Certificate`, `federation`, `unknownFutureValue`, `qrCodePin`. Use the `Prefer: include-unknown-enum-members` request header to get the following members from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `qrCodePin`.|
 |displayName|String|The display name of this mode|
 |id|String|The system-generated identifier for this mode. Inherited from [entity](../resources/entity.md).|
 

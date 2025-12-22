@@ -1085,6 +1085,26 @@ Namespace: microsoft.graph.security
 |okta|
 |unknownFutureValue|
 
+### sensorCandidateActivationMode values
+
+|Member|
+|:---|
+|manual|
+|automated|
+|unknownFutureValue|
+
+### serviceStatus values
+
+|Member|
+|:---|
+|stopped|
+|starting|
+|running|
+|disabled|
+|onboarding|
+|unknown|
+|unknownFutureValue|
+
 <!--
 {
   "type": "#page.annotation",

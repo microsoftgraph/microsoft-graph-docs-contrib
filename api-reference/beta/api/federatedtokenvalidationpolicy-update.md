@@ -5,7 +5,7 @@ author: "vimrang"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 04/17/2024
+ms.date: 09/09/2025
 ---
 
 # Update federatedTokenValidationPolicy
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PUT /policies/federatedTokenValidationPolicy
 ```
 
@@ -45,6 +45,8 @@ PUT /policies/federatedTokenValidationPolicy
 
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+
+You must specify the `@odata.type` property with the value of the **validatingDomains** subtype in the request body, which might be `@odata.type: "#microsoft.graph.enumeratedDomains"` or `@odata.type: "#microsoft.graph.allDomains"`.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -66,7 +68,7 @@ The following example shows a request.
   "name": "update_federatedtokenvalidationpolicy"
 }
 -->
-``` http
+```http
 PUT https://graph.microsoft.com/beta/policies/federatedTokenValidationPolicy
 Content-Type: application/json
 
@@ -74,7 +76,7 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.federatedTokenValidationPolicy",
   "deletedDateTime": "String (timestamp)",
   "validatingDomains": {
-    "@odata.type": "microsoft.graph.validatingDomains",
+    "@odata.type": "microsoft.graph.enumeratedDomains",
     "rootDomains": "enumerated",
     "domainNames": ["contoso.com","fabrikam.com"]
   }
@@ -96,7 +98,7 @@ The following example shows the response
   "@odata.type": "microsoft.graph.federatedTokenValidationPolicy"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

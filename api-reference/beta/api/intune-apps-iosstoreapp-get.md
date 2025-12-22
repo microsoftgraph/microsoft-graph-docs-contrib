@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
@@ -57,16 +57,16 @@ If successful, this method returns a `200 OK` response code and [iosStoreApp](..
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1604
+Content-Length: 1626
 
 {
   "value": {
@@ -116,7 +116,8 @@ Content-Length: 1604
       "v15_0": true,
       "v16_0": true,
       "v17_0": true,
-      "v18_0": true
+      "v18_0": true,
+      "v26_0": true
     }
   }
 }

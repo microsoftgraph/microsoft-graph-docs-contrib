@@ -32,7 +32,7 @@ Represents an entity that acts as a container for administrator functionality.
 | reportSettings |[microsoft.graph.adminReportSettings](../resources/adminreportsettings.md)|A container for administrative resources to manage reports.|
 | serviceAnnouncement | [serviceAnnouncement](serviceannouncement.md) | A container for service communications resources. Read-only. |
 | sharepointSettings | [sharepointSettings](../resources/sharepointSettings.md) | A container for administrative resources to manage tenant-level settings for SharePoint and OneDrive. |
-| teams|[microsoft.graph.teamsAdministration.teamsAdminRoot](../resources/teamsadministration-teamsadminroot.md)|A container for all Teams telephone number management functionalities and user configurations.|
+| teams|[microsoft.graph.teamsAdministration.teamsAdminRoot](../resources/teamsadministration-teamsadminroot.md)|A container for Teams administration functionalities, such as user configurations, telephone number management, and policy assignments.|
 | windows |[microsoft.graph.adminWindows](../resources/adminwindows.md)|A container for all Windows administrator functionalities. Read-only.|
 
 ## JSON representation

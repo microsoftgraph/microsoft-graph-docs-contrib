@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/deviceRunStates
 ```
 
@@ -52,7 +52,7 @@ The following table shows the properties that are required when you create the d
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the device compliance script device state entity. This property is read-only.|
-|detectionState|[runState](../resources/intune-shared-runstate.md)|Detection state from the lastest device compliance script execution. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|detectionState|[runState](../resources/intune-shared-runstate.md)|Detection state from the lastest device compliance script execution. The possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |lastStateUpdateDateTime|DateTimeOffset|The last timestamp of when the device compliance script executed|
 |expectedStateUpdateDateTime|DateTimeOffset|The next timestamp of when the device compliance script is expected to execute|
 |lastSyncDateTime|DateTimeOffset|The last time that Intune Managment Extension synced with Intune|
@@ -68,7 +68,7 @@ If successful, this method returns a `201 Created` response code and a [deviceCo
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceComplianceScripts/{deviceComplianceScriptId}/deviceRunStates
 Content-type: application/json
 Content-length: 387
@@ -86,7 +86,7 @@ Content-length: 387
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 436

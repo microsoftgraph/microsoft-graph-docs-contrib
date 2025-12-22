@@ -578,6 +578,16 @@ Namespace: microsoft.graph.networkaccess
 |reportOnly|
 |unknownFutureValue|
 
+### deploymentStage values 
+
+|Member|
+|:---|
+|inProgress|
+|pending|
+|failed|
+|succeeded|
+|unknownFutureValue|
+
 ### cloudApplicationCategory values
 
 |Member|

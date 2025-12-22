@@ -32,7 +32,7 @@ To reference the content within the object, you must use `$value`. This returns 
 }
 -->
 
-``` http
+```http
 DELETE /identity/b2xUserFlows/{id}/languages/{id}/overridesPages/$value
 ```
 
@@ -65,8 +65,8 @@ The following example shows a request.
 }
 -->
 
-``` http
-DELETE https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_Partner/languages/en/overridesPages/selfasserted1_1/$value
+```http
+DELETE https://graph.microsoft.com/v1.0/identity/b2xUserFlows/B2X_1_Partner/languages/en/overridesPages/selfasserted1_1/$value
 ```
 
 # [C#](#tab/csharp)
@@ -109,6 +109,6 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

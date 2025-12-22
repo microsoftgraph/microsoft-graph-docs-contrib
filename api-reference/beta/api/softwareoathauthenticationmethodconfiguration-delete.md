@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/softwareOath
 ```
 
@@ -59,7 +59,7 @@ The following example shows a request.
   "name": "delete_softwareoathauthenticationmethodconfiguration"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/softwareOath
 ```
 
@@ -100,7 +100,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

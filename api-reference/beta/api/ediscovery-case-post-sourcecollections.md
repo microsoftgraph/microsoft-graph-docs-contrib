@@ -14,6 +14,8 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [ediscovery-deprecation](../includes/ediscovery-subnamespace-deprecation.md)]
+
 Create a new [sourceCollection](../resources/ediscovery-sourcecollection.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -32,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 POST /compliance/ediscovery/cases/{caseId}/sourceCollections
 ```
 
@@ -51,7 +53,7 @@ The following table lists the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|dataSourceScopes|microsoft.graph.ediscovery.dataSourceScopes|When specified, the collection will span across a service for an entire workload. Possible values are: `none`,`allTenantMailboxes`,`allTenantSites`,`allCaseCustodians`,`allCaseNoncustodialDataSources`. **Note:** Either one custodian or specifying dataSourceScope is required when creating a source collection.|
+|dataSourceScopes|microsoft.graph.ediscovery.dataSourceScopes|When specified, the collection will span across a service for an entire workload. The possible values are: `none`,`allTenantMailboxes`,`allTenantSites`,`allCaseCustodians`,`allCaseNoncustodialDataSources`. **Note:** Either one custodian or specifying dataSourceScope is required when creating a source collection.|
 |displayName|String|The display name of the **sourceCollection**|
 |custodianSources|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) collection|The custodian sources to include in this search. You can get the URL from from custodian [siteSources](../api/ediscovery-custodian-list-sitesources.md), [unifiedGroupSources](../api/ediscovery-custodian-list-unifiedgroupsources.md), or [userSources](../api/ediscovery-custodian-list-usersources.md) plus the ID of the source. **Note:** Either one custodian or specifying tenant source is required when creating a source collection. |
 
@@ -71,7 +73,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4a30-acfc-5272b691ba5b/sourceCollections
 Content-Type: application/json
 
@@ -124,7 +126,7 @@ Content-Type: application/json
 }
 -->
 
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

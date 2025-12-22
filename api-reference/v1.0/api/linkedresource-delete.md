@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /me/todo/lists/{todoTaskListId}/tasks/{taskId}/linkedResources/{linkedResourcesId}
 DELETE /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/linkedResources/{linkedResourcesId}
 ```
@@ -57,7 +57,7 @@ The following example shows a request.
   "name": "delete_linkedresource"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/v1.0/me/todo/lists/dfsdc-f9dfdfs-dcsda9/tasks/e2dc-f9cce2-dce29/linkedResources/f9cddce2-dce2-f9cd-e2dc-cdf9e2dccdf9
 ```
 
@@ -98,6 +98,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

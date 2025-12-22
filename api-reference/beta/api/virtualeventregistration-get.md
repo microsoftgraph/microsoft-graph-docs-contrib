@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}
 ```
 
@@ -74,7 +74,7 @@ The following example shows a request.
   "sampleKeys": ["f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21-a8a6-4a6b-97f8-ced53d30f143", "127962bb-84e1-7b62-fd98-1c9d39def7b6"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21-a8a6-4a6b-97f8-ced53d30f143/registrations/127962bb-84e1-7b62-fd98-1c9d39def7b6
 ```
 
@@ -119,7 +119,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.virtualEventRegistration"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -182,7 +182,7 @@ The following example shows a request.
   "sampleKeys": ["f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21", "127962bb-84e1-7b62-fd98-1c9d39def7b6"]
 }
 -->
-``` http
+```http
 GET https://graph.microsoft.com/beta/solutions/virtualEvent/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21/registrations/127962bb-84e1-7b62-fd98-1c9d39def7b6?$expand=sessions
 ```
 

@@ -19,8 +19,8 @@ App configuration key types.
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|stringType|0|Not yet documented|
-|integerType|1|Not yet documented|
-|realType|2|Not yet documented|
-|booleanType|3|Not yet documented|
-|tokenType|4|Not yet documented|
+|stringType|0||
+|integerType|1||
+|realType|2||
+|booleanType|3||
+|tokenType|4||

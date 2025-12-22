@@ -3,6 +3,242 @@
     {
       "ChangeList": [
         {
+          "Id": "1739ffde-c445-4039-b873-31a801b8db6a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "mobileAppContentScriptState",
+          "ChangeType": "Addition",
+          "Description": "Added the **mobileAppContentScriptState** enumeration type.",
+          "Target": "mobileAppContentScriptState"
+        },
+        {
+          "Id": "1739ffde-c445-4039-b873-31a801b8db6a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mobileAppScriptReference",
+          "ChangeType": "Addition",
+          "Description": "Added the mobileAppScriptReference resource.",
+          "Target": "mobileAppScriptReference"
+        },
+        {
+          "Id": "1739ffde-c445-4039-b873-31a801b8db6a",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "scripts",
+          "ChangeType": "Addition",
+          "Description": "Added the **scripts** relationship to the mobileAppContent resource.",
+          "Target": "mobileAppContent"
+        },
+        {
+          "Id": "1739ffde-c445-4039-b873-31a801b8db6a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mobileAppContentScript",
+          "ChangeType": "Addition",
+          "Description": "Added the mobileAppContentScript resource.",
+          "Target": "mobileAppContentScript"
+        },
+        {
+          "Id": "1739ffde-c445-4039-b873-31a801b8db6a",
+          "ApiChange": "Property",
+          "ChangedApiName": "activeInstallScript",
+          "ChangeType": "Addition",
+          "Description": "Added the **activeInstallScript** property to the win32LobApp resource.",
+          "Target": "win32LobApp"
+        },
+        {
+          "Id": "1739ffde-c445-4039-b873-31a801b8db6a",
+          "ApiChange": "Property",
+          "ChangedApiName": "activeUninstallScript",
+          "ChangeType": "Addition",
+          "Description": "Added the **activeUninstallScript** property to the win32LobApp resource.",
+          "Target": "win32LobApp"
+        },
+        {
+          "Id": "1739ffde-c445-4039-b873-31a801b8db6a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "win32LobAppInstallPowerShellScript",
+          "ChangeType": "Addition",
+          "Description": "Added the win32LobAppInstallPowerShellScript resource.",
+          "Target": "win32LobAppInstallPowerShellScript"
+        },
+        {
+          "Id": "1739ffde-c445-4039-b873-31a801b8db6a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "win32LobAppScript",
+          "ChangeType": "Addition",
+          "Description": "Added the win32LobAppScript resource.",
+          "Target": "win32LobAppScript"
+        },
+        {
+          "Id": "1739ffde-c445-4039-b873-31a801b8db6a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "win32LobAppUninstallPowerShellScript",
+          "ChangeType": "Addition",
+          "Description": "Added the win32LobAppUninstallPowerShellScript resource.",
+          "Target": "win32LobAppUninstallPowerShellScript"
+        },
+        {
+          "Id": "840509be-d374-4d6c-abba-2920133a03aa",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "iosWiredNetworkEapType",
+          "ChangeType": "Addition",
+          "Description": "Added the **iosWiredNetworkEapType** enumeration type.",
+          "Target": "iosWiredNetworkEapType"
+        },
+        {
+          "Id": "840509be-d374-4d6c-abba-2920133a03aa",
+          "ApiChange": "Property",
+          "ChangedApiName": "offlineAppAccessEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **offlineAppAccessEnabled** property to the androidDeviceOwnerKioskModeApp resource.",
+          "Target": "androidDeviceOwnerKioskModeApp"
+        },
+        {
+          "Id": "840509be-d374-4d6c-abba-2920133a03aa",
+          "ApiChange": "Property",
+          "ChangedApiName": "preSignInAppAccessEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **preSignInAppAccessEnabled** property to the androidDeviceOwnerKioskModeApp resource.",
+          "Target": "androidDeviceOwnerKioskModeApp"
+        },
+        {
+          "Id": "840509be-d374-4d6c-abba-2920133a03aa",
+          "ApiChange": "Property",
+          "ChangedApiName": "kioskModeManagedHomeScreenAppSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **kioskModeManagedHomeScreenAppSettings** property to the androidDeviceOwnerGeneralDeviceConfiguration resource.",
+          "Target": "androidDeviceOwnerGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "840509be-d374-4d6c-abba-2920133a03aa",
+          "ApiChange": "Resource",
+          "ChangedApiName": "iosWiredNetworkConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the iosWiredNetworkConfiguration resource.",
+          "Target": "iosWiredNetworkConfiguration"
+        },
+        {
+          "Id": "9510ff38-dbe0-4ff3-8761-15d6dd94ce53",
+          "ApiChange": "Property",
+          "ChangedApiName": "disableEntraGroupPolicyAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the **disableEntraGroupPolicyAssignment** property to the deviceManagementConfigurationPolicy resource.",
+          "Target": "deviceManagementConfigurationPolicy"
+        },
+        {
+          "Id": "9510ff38-dbe0-4ff3-8761-15d6dd94ce53",
+          "ApiChange": "Property",
+          "ChangedApiName": "disableEntraGroupPolicyAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the **disableEntraGroupPolicyAssignment** property to the deviceManagementConfigurationPolicyTemplate resource.",
+          "Target": "deviceManagementConfigurationPolicyTemplate"
+        },
+        {
+          "Id": "c2be41c4-1275-4392-b6a9-0eae49140188",
+          "ApiChange": "Property",
+          "ChangedApiName": "sessionStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **sessionStatus** property to the retrieveRemoteHelpSessionResponse resource.",
+          "Target": "retrieveRemoteHelpSessionResponse"
+        },
+        {
+          "Id": "c2be41c4-1275-4392-b6a9-0eae49140188",
+          "ApiChange": "Property",
+          "ChangedApiName": "webClientUri",
+          "ChangeType": "Addition",
+          "Description": "Added the **webClientUri** property to the retrieveRemoteHelpSessionResponse resource.",
+          "Target": "retrieveRemoteHelpSessionResponse"
+        },
+        {
+          "Id": "94d084a7-265e-4721-9def-48ad953cee22",
+          "ApiChange": "Method",
+          "ChangedApiName": "retrieveEnrollmentTimeGroupingFailureReport",
+          "ChangeType": "Addition",
+          "Description": "Added the retrieveEnrollmentTimeGroupingFailureReport method to the deviceManagementReports resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "4e9c2bd7-78de-4ce5-ab11-e6a398ba3c91",
+          "ApiChange": "Edmx",
+          "ChangedApiName": "4.0",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **4.0** resource.",
+          "Target": "4.0"
+        },
+        {
+          "Id": "80598349-090e-499a-a72d-3c047be619c1",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "windowsUpdateCveSeverityLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **windowsUpdateCveSeverityLevel** enumeration type.",
+          "Target": "windowsUpdateCveSeverityLevel"
+        },
+        {
+          "Id": "80598349-090e-499a-a72d-3c047be619c1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsQualityUpdateCveDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the windowsQualityUpdateCveDetail resource.",
+          "Target": "windowsQualityUpdateCveDetail"
+        },
+        {
+          "Id": "80598349-090e-499a-a72d-3c047be619c1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsQualityUpdateCveSeverityInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the windowsQualityUpdateCveSeverityInformation resource.",
+          "Target": "windowsQualityUpdateCveSeverityInformation"
+        },
+        {
+          "Id": "80598349-090e-499a-a72d-3c047be619c1",
+          "ApiChange": "Property",
+          "ChangedApiName": "cveSeverityInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the **cveSeverityInformation** property to the windowsQualityUpdateCatalogItem resource.",
+          "Target": "windowsQualityUpdateCatalogItem"
+        }
+      ],
+      "Id": "1739ffde-c445-4039-b873-31a801b8db6a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-08-19T20:15:54.8064961Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "32280a3f-91eb-4985-a879-5cc7096244b7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "iosDdmLobAppAssignmentSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [iosDdmLobAppAssignmentSettings](https://learn.microsoft.com/en-us/graph/api/resources/intune-iosDdmLobAppAssignmentSettings?view=graph-rest-1.0) resource.",
+          "Target": "iosDdmLobAppAssignmentSettings"
+        },
+        {
+          "Id": "32280a3f-91eb-4985-a879-5cc7096244b7",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "mobileAppRelationships",
+          "ChangeType": "Addition",
+          "Description": "Added the **mobileAppRelationships** relationship to the [deviceAppManagement](https://learn.microsoft.com/en-us/graph/api/resources/intune-deviceAppManagement?view=graph-rest-1.0) resource.",
+          "Target": "deviceAppManagement"
+        },
+        {
+          "Id": "32280a3f-91eb-4985-a879-5cc7096244b7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mobileAppRelationship",
+          "ChangeType": "Addition",
+          "Description": "Added the [mobileAppRelationship](https://learn.microsoft.com/en-us/graph/api/resources/intune-mobileAppRelationship?view=graph-rest-1.0) resource.",
+          "Target": "mobileAppRelationship"
+        }
+      ],
+      "Id": "32280a3f-91eb-4985-a879-5cc7096244b7",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-07-30T21:41:14.1814738Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "d93e87e3-7f23-4ab2-b869-40da0b0b27a5",
           "ApiChange": "Property",
           "ChangedApiName": "permissions",
@@ -393,7 +629,7 @@
       "Cloud": "Review",
       "Version": "beta",
       "CreatedDateTime": "2025-05-30T15:58:46.2577191Z",
-      "WorkloadArea": "Microsoft.Intune.AndroidFOTA",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Corporate management"
     },
     {

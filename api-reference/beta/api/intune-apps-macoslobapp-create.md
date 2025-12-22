@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceAppManagement/mobileApps
 ```
 
@@ -64,8 +64,8 @@ The following table shows the properties that are required when you create the m
 |owner|String|The owner of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|uploadState|Int32|The upload state. Possible values are: 0 - `Not Ready`, 1 - `Ready`, 2 - `Processing`. This property is read-only. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. This property is read-only. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md). Possible values are: `notPublished`, `processing`, `published`.|
+|uploadState|Int32|The upload state. The possible values are: 0 - `Not Ready`, 1 - `Ready`, 2 - `Processing`. This property is read-only. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. This property is read-only. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md). The possible values are: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|The value indicating whether the app is assigned to at least one group. This property is read-only. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |roleScopeTagIds|String collection|List of scope tag ids for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|The total number of dependencies the child app has. This property is read-only. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -93,10 +93,10 @@ If successful, this method returns a `201 Created` response code and a [macOSLob
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1754
+Content-length: 1774
 
 {
   "@odata.type": "#microsoft.graph.macOSLobApp",
@@ -142,7 +142,8 @@ Content-length: 1754
     "v12_0": true,
     "v13_0": true,
     "v14_0": true,
-    "v15_0": true
+    "v15_0": true,
+    "v26_0": true
   },
   "buildNumber": "Build Number value",
   "versionNumber": "Version Number value",
@@ -165,10 +166,10 @@ Content-length: 1754
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1926
+Content-Length: 1946
 
 {
   "@odata.type": "#microsoft.graph.macOSLobApp",
@@ -217,7 +218,8 @@ Content-Length: 1926
     "v12_0": true,
     "v13_0": true,
     "v14_0": true,
-    "v15_0": true
+    "v15_0": true,
+    "v26_0": true
   },
   "buildNumber": "Build Number value",
   "versionNumber": "Version Number value",

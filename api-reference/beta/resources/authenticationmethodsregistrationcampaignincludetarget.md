@@ -22,7 +22,7 @@ Represents the users and groups that are targeted for authentication method regi
 |:---|:---|:---|
 |id|String|The object identifier of a Microsoft Entra user or group.|
 |targetedAuthenticationMethod|String|The authentication method that the user is prompted to register. The value must be `microsoftAuthenticator`.|
-|targetType|authenticationMethodTargetType|The type of the authentication method target. Possible values are: `user`, `group`, `unknownFutureValue`.|
+|targetType|authenticationMethodTargetType|The type of the authentication method target. The possible values are: `user`, `group`, `unknownFutureValue`.|
 
 ## Relationships
 None.

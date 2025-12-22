@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceManagement/deviceConfigurations
 ```
 
@@ -61,7 +61,7 @@ The following table shows the properties that are required when you create the w
 |cameraBlocked|Boolean|Indicates whether or not to block camera.|
 |cellularBlockWifiTethering|Boolean|Indicates whether or not to block Wi-Fi tethering. Has no impact if Wi-Fi is blocked.|
 |compliantAppsList|[appListItem](../resources/intune-deviceconfig-applistitem.md) collection|List of apps in the compliance (either allow list or block list, controlled by CompliantAppListType). This collection can contain a maximum of 10000 elements.|
-|compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|List that is in the AppComplianceList. Possible values are: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
+|compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|List that is in the AppComplianceList. The possible values are: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |diagnosticDataBlockSubmission|Boolean|Indicates whether or not to block diagnostic data submission.|
 |emailBlockAddingAccounts|Boolean|Indicates whether or not to block custom email accounts.|
 |locationServicesBlocked|Boolean|Indicates whether or not to block location services.|
@@ -74,7 +74,7 @@ The following table shows the properties that are required when you create the w
 |passwordMinimumCharacterSetCount|Int32|Number of character sets a password must contain.|
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block. Valid values 0 to 24|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Number of sign in failures allowed before factory reset.|
-|passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Password type that is required. Possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Password type that is required. The possible values are: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordRequired|Boolean|Indicates whether or not to require a password.|
 |screenCaptureBlocked|Boolean|Indicates whether or not to block screenshots.|
 |storageBlockRemovableStorage|Boolean|Indicates whether or not to block removable storage.|
@@ -94,10 +94,7 @@ If successful, this method returns a `201 Created` response code and a [windowsP
 
 ### Request
 Here is an example of the request.
-
-# [HTTP](#tab/http)
-<!-- { "blockType": "request" , "name" : "intune_deviceconfig_windowsphone81generalconfiguration_create_create_windowsphone81generalconfiguration" }-->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 Content-type: application/json
 Content-length: 1461
@@ -147,41 +144,9 @@ Content-length: 1461
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/intune-deviceconfig-windowsphone81generalconfiguration-create-create-windowsphone81generalconfiguration-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/intune-deviceconfig-windowsphone81generalconfiguration-create-create-windowsphone81generalconfiguration-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-deviceconfig-windowsphone81generalconfiguration-create-create-windowsphone81generalconfiguration-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-deviceconfig-windowsphone81generalconfiguration-create-create-windowsphone81generalconfiguration-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/intune-deviceconfig-windowsphone81generalconfiguration-create-create-windowsphone81generalconfiguration-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-deviceconfig-windowsphone81generalconfiguration-create-create-windowsphone81generalconfiguration-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/intune-deviceconfig-windowsphone81generalconfiguration-create-create-windowsphone81generalconfiguration-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.windowsPhone81GeneralConfiguration" }-->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 1633

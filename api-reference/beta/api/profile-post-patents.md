@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /me/profile/patents
 POST /users/{id | userPrincipalName}/profile/patents
 ```
@@ -46,7 +46,7 @@ The following table shows the properties that are possible to set when creating 
 
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). The possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |description|String|Descpription of the patent or filing. |
 |displayName|String|Title of the patent or filing. |
 |inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
@@ -69,7 +69,7 @@ If successful, this method returns a `201 Created` response code and an [itemPat
   "name": "create_itempatent_from_profile"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/me/profile/patents
 Content-Type: application/json
 
@@ -120,7 +120,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.itemPatent"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

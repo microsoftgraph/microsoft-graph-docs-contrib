@@ -9,11 +9,14 @@ ms.topic: article
 
 # Microsoft Graph Toolkit providers
 
-The Microsoft Graph Toolkit providers enable your application to authenticate with Microsoft Identity and access Microsoft Graph in only few lines of code. Each provider handles user authentication and acquiring the access tokens to call Microsoft Graph APIs, so that you don't have to write this code yourself.
+> [!CAUTION]
+> The Microsoft Graph Toolkit is deprecated. The retirement period begins September 1, 2025, with full retirement planned for August 28, 2026. Developers should migrate to using the Microsoft Graph SDKs or other supported Microsoft Graph tools for building web experiences. For more information, see the [deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-toolkit-retirement/).
+
+The Microsoft Graph Toolkit providers enable your application to authenticate with Microsoft Identity and access Microsoft Graph in only a few lines of code. Each provider handles user authentication and acquiring the access tokens to call Microsoft Graph APIs, so that you don't have to write this code yourself.
 
 You can use the providers on their own, without components, to quickly implement authentication for your app and make calls to Microsoft Graph via the JavaScript client SDK.
 
-The providers are required when using the Microsoft Graph Toolkit components as the components use them to access Microsoft Graph. If you already have your own authentication and want to use the components, you can use a [custom provider](./custom.md) instead.
+The providers are required when using the Microsoft Graph Toolkit components, as the components use them to access Microsoft Graph. If you already have your own authentication and want to use the components, you can use a [custom provider](./custom.md) instead.
 
 The Toolkit includes the following providers.
 

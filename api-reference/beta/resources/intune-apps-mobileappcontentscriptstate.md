@@ -21,4 +21,7 @@ A list of possible script lifecycle states.
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|commitSuccess|0|Indicates that the script content is ready.|
+|commitPending|0|Indicates that the script content is in a pending state.|
+|commitSuccess|1|Indicates that the script content is ready.|
+|commitFailed|2|Indicates that the script is in an unusable state.|
+|unknownFutureValue|3|Evolvable enumeration sentinel value. Do not use.|

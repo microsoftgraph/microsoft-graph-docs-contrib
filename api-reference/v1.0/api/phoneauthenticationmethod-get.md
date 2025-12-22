@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve a single [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) object for a user. This method is available only for standard Microsoft Entra ID and B2B users, but not B2C users.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -40,7 +40,7 @@ Retrieve details of your own phone authentication method.
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /me/authentication/phoneMethods/{phoneMethodId}
 ```
 
@@ -49,7 +49,7 @@ Retrieve details of your own or another user's phone authentication method.
 [!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /users/{userId | userPrincipalName}/authentication/phoneMethods/{phoneMethodId}
 ```
 

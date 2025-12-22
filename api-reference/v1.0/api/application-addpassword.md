@@ -2,7 +2,7 @@
 title: "application: addPassword"
 description: "Add a strong password to an application."
 ms.localizationpriority: medium
-author: "madansr7"
+author: "Jackson-Woods"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ms.date: 04/16/2024

@@ -1,7 +1,7 @@
 ---
 title: "tenantAppManagementPolicy resource type"
 description: "Application auth method tenant default policy enforces app management operation restrictions."
-author: "madansr7"
+author: "aricrowe57"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType

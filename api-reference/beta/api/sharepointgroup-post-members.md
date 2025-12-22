@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Create a new [sharePointGroupMember](../resources/sharepointgroupmember.md) object within a [sharePointGroup](../resources/sharepointgroup.md). A **sharePointGroup** can have up to 5,000 users. For more information on service limits, see [SharePoint online limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#sharepoint-groups). Users and Microsoft 365 groups are supported as viable identities for **sharePointGroupMember**. The newly created **sharePointGroupMember** immediately inherits [driveItem](../resources/driveitem.md) permissions that have been granted to the **sharePointGroup**. It may take several minutes for substrate-related functionality, such as search and Copilot, to reflect the addition of the new **sharePointGroupMember**.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /storage/fileStorage/containers/{fileStorageContainerId}/sharePointGroups/{sharePointGroupId}/members
 ```
 
@@ -71,7 +71,7 @@ The following example shows a request that creates a **sharePointGroupMember** u
   "name": "create_sharepointgroup_members",
   "@odata.type": "microsoft.graph.sharePointGroupMember"
 } -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/10/members
 Content-Type: application/json
 
@@ -121,7 +121,7 @@ The following example shows the response with a JSON object that represents the 
   "truncated": true,
   "@odata.type": "microsoft.graph.sharePointGroupMember"
 } -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

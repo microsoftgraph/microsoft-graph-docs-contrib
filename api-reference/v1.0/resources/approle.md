@@ -4,7 +4,7 @@ description: "Represents an application role that may be requested by a client a
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
-author: "psignoret"
+author: "eringreenlee"
 ms.date: 04/03/2024
 ---
 

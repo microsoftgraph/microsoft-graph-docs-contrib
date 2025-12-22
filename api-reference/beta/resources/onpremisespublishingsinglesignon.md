@@ -25,7 +25,7 @@ If you are configuring password-based single-sign this must be set using [create
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |kerberosSignOnSettings| [kerberosSignOnSettings](kerberossignonsettings.md)| The Kerberos Constrained Delegation settings for applications that use Integrated Window Authentication. |
-|singleSignOnMode|singleSignOnMode| The preferred single-sign on mode for the application. Possible values are: `none`, `onPremisesKerberos`, `aadHeaderBased`,`pingHeaderBased`, `oAuthToken`. |
+|singleSignOnMode|singleSignOnMode| The preferred single-sign on mode for the application. The possible values are: `none`, `onPremisesKerberos`, `aadHeaderBased`,`pingHeaderBased`, `oAuthToken`. |
 
 ## Relationships
 

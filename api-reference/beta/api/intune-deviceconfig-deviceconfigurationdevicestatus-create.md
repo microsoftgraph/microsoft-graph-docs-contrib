@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatuses
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/rootCertificate/deviceStatuses
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosScepCertificateProfile/rootCertificate/deviceStatuses
@@ -63,7 +63,7 @@ The following table shows the properties that are required when you create the d
 |deviceModel|String|The device model that is being reported|
 |platform|Int32|Platform of the device that is being reported|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|The DateTime when device compliance grace period expires|
-|status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Compliance status of the policy report. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Compliance status of the policy report. The possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Last modified date time of the policy report.|
 |userPrincipalName|String|UserPrincipalName.|
 
@@ -76,7 +76,7 @@ If successful, this method returns a `201 Created` response code and a [deviceCo
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/deviceStatuses
 Content-type: application/json
 Content-length: 447
@@ -96,7 +96,7 @@ Content-length: 447
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 496

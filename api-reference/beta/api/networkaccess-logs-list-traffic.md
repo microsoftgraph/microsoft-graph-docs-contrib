@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of log events for traffic routed through the Global Secure Access services.
+Get a list of [log events for traffic](../resources/networkaccess-networkaccesstraffic.md) routed through the Global Secure Access services.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /networkAccess/logs/traffic
 ```
 
@@ -68,7 +68,7 @@ The following example shows a request.
   "name": "list_networkaccesstraffic"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/networkAccess/logs/traffic
 ```
 
@@ -111,7 +111,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.networkaccess.networkAccessTraffic)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

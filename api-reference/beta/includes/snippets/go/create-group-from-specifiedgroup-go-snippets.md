@@ -20,7 +20,7 @@ odataId := "https://graph.microsoft.com/odata/groups('dc3d2ce5-7c5e-4dca-a0ef-21
 requestBody.SetOdataId(&odataId) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
-graphClient.Policies().MobileDeviceManagementPolicies().ByMobilityManagementPolicyId("mobilityManagementPolicy-id").IncludedGroups().Ref().Post(context.Background(), requestBody, nil)
+graphClient.Policies().MobileDeviceManagementPolicies().ByMobileDeviceManagementPolicyId("mobileDeviceManagementPolicy-id").IncludedGroups().Ref().Post(context.Background(), requestBody, nil)
 
 
 ```

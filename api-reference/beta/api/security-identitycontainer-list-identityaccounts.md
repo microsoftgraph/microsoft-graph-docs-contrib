@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 
 Get a list of the [identityAccounts](../resources/security-identityaccounts.md) objects and their properties.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. Choose the permis
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/identities/identityAccounts
 ```
 
@@ -68,7 +68,7 @@ The following example shows a request.
   "name": "list_identityaccounts"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/identities/identityAccounts
 ```
 
@@ -112,7 +112,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.identityAccounts"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -173,7 +173,7 @@ The following example shows a request.
   "name": "list_identityaccounts_filtered"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/identities/identityAccounts?$filter=onPremisesSecurityIdentifier eq 'S-1-5-21-989687458-3461180213-172365591-281652'
 ```
 
@@ -217,7 +217,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.identityAccounts"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

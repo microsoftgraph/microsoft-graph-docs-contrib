@@ -4,7 +4,7 @@ description: "Contains a password credential associated with an application or a
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
-author: "sureshja"
+author: "Jackson-Woods"
 ms.date: 07/29/2024
 ---
 

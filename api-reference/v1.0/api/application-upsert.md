@@ -1,7 +1,7 @@
 ---
 title: "Upsert application"
 description: "Create a new application object if it doesn't exist, or update the properties of an existing application object."
-author: "sureshja"
+author: "Jackson-Woods"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
@@ -72,7 +72,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/applications(uniqueName='app-65278')
 Content-Type: application/json
 Prefer: create-if-missing
@@ -197,7 +197,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/applications(uniqueName='app-65278')
 Content-Type: application/json
 Prefer: create-if-missing
@@ -241,6 +241,6 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

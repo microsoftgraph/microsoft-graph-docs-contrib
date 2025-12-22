@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /deviceManagement/virtualEndpoint/cloudPCs/retrieveCloudPcCountByStatus?customFilter={customFilter}
 ```
 
@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "cloudpc_retrievecloudpccountbystatus"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/retrieveCloudPcCountByStatus?customFilter=contains(tolower(managedDeviceName), 'a') or contains(tolower(imageDisplayName), 'a') or contains(tolower(userPrincipalName), 'a')
 ```
 
@@ -110,7 +110,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.cloudPcStatusSummary)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
