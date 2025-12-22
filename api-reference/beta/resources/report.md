@@ -1,6 +1,6 @@
 ---
 title: "Working with Microsoft 365 usage reports in Microsoft Graph"
-description: "With Microsoft Graph, you can access Microsoft 365 usage reports resources to get the information about how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who might not need a Microsoft 365 license at all."
+description: "With Microsoft Graph, you can access Microsoft 365 usage reports resources to get the information about how people in your business are using Microsoft 365 services."
 ms.localizationpriority: high
 ms.subservice: "reports"
 author: "sarahwxy"
@@ -14,7 +14,7 @@ ms.date: 09/29/2024
 
 With Microsoft Graph, you can access Microsoft 365 usage reports resources to get the information about how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who might not need a Microsoft 365 license at all.
 
-For details about the settings that govern identification/de-identification of information in the Microsoft 365 usage reports data, see [Microsoft 365 Reports in the admin center](/microsoft-365/admin/activity-reports/activity-reports) .
+For more information about the settings that govern identification/de-identification of information in the Microsoft 365 usage reports data, see [Microsoft 365 Reports in the admin center](/microsoft-365/admin/activity-reports/activity-reports) .
 
 ## Authorization
 
@@ -57,6 +57,17 @@ The following table shows the availability for each API across all cloud deploym
 | [Viva Engage activity](../resources/reportroot.md#viva-engage-activity)                                         | ✔                              | ➖                                    | ➖                                             | ➖                                      |
 | [Viva Engage device usage](../resources/reportroot.md#viva-engage-device-usage)                                 | ✔                              | ➖                                    | ➖                                             | ➖                                      |
 | [Viva Engage groups activity](../resources/reportroot.md#viva-engage-groups-activity)                           | ✔                              | ➖                                    | ➖                                             | ➖                                      |
+
+## How to programmatically export unlicensed Copilot Chat usage
+
+Currently, no public Microsoft Graph API or PowerShell cmdlet provides access to Copilot Chat usage data for unlicensed users included in the Copilot Chat usage report.
+
+Unlicensed Copilot Chat interactions are logged only in the Microsoft Purview unified audit log.
+
+To automatically extract `CopilotInteraction` events from the unified audit log, use one of the following methods:
+
+- **PowerShell**: Use `Search-UnifiedAuditLog` to filter `CopilotInteraction` events and export them to a CSV file.
+- **Office 365 management activity API**: Stream audit logs into security information and event management (SIEM) or analytics platforms.
 
 ## Next steps
 

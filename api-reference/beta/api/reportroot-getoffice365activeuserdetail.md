@@ -17,10 +17,9 @@ Namespace: microsoft.graph
 
 Get details about Microsoft 365 active users.
 
-> [!Note]
->
+> [!NOTE]
 > - For details about different report views and names, see [Microsoft 365 reports - Active Users](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d).  
-> - If you want to use the Microsoft Graph reports API to get usage data for unlicensed Copilot users, refer [Programmatically export unlicensed Copilot Chat usage](#programmatically-export-unlicensed-copilot-chat-usage).
+> - If you want to use the Microsoft Graph reports API to get usage data for unlicensed Copilot users, see [How to programmatically export unlicensed Copilot Chat usage](../resources/report.md#how-to-programmatically-export-unlicensed-copilot-chat-usage).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -53,7 +52,7 @@ In the request URL, provide one of the following parameters with a valid value.
 
 > **Note:** You need to set either period or date in the URL.
 
-This method supports the `$format`, `$top`, and `$skipToken` [OData query parameters](/graph/query-parameters) to customize the response. The default output type is text/csv. However, if you want to specify the output type, use the OData $format query parameter set to text/csv or application/json.
+This method supports the `$format`, `$top`, and `$skipToken` [OData query parameters](/graph/query-parameters) to customize the response. The default output type is text/csv. However, if you want to specify the output type, use the OData `$format` query parameter set to text/csv or application/json.
 
 ## Request headers
 
@@ -65,11 +64,11 @@ This method supports the `$format`, `$top`, and `$skipToken` [OData query parame
 
 ### CSV
 
-If the request is successful, the method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. You can find this URL in the `Location` header of the response.
+If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. You can find this URL in the `Location` header of the response.
 
 Preauthenticated download URLs are only valid for a short period of time (a few minutes) and don't require an `Authorization` header.
 
-The CSV file includes the following headers for columns:
+The CSV file contains the following column headers:
 
 - Report Refresh Date
 - User Principal Name
@@ -123,7 +122,6 @@ The following example outputs CSV.
 
 The following example shows a request.
 
-
 <!-- {
   "blockType": "ignored",
   "name": "reportroot_getoffice365activeuserdetail_csv"
@@ -132,7 +130,6 @@ The following example shows a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getOffice365ActiveUserDetail(period='D7')?$format=text/csv
 ```
-
 
 #### Response
 
@@ -168,7 +165,6 @@ The following example returns JSON.
 #### Request
 
 The following example shows a request.
-
 
 <!-- {
   "blockType": "ignored",
@@ -230,17 +226,6 @@ Content-Length: 853
   ]
 }
 ```
-
-## Programmatically export unlicensed Copilot Chat usage
-
-Currently, no public Microsoft Graph API or PowerShell cmdlet provides access to Copilot Chat usage data for unlicensed users included in the Copilot Chat Usage report.
-
-Unlicensed Copilot Chat interactions are logged only in the Microsoft Purview Unified Audit Log.
-
-To automatically extract `CopilotInteraction` events from the Unified Audit Log, use one of the following methods:
-
-- **PowerShell**: Use `Search-UnifiedAuditLog` to filter `CopilotInteraction` events and export them (CSV file).
-- **Office 365 Management Activity API**: Stream audit logs into Security Information and Event Management (SIEM) or analytics platforms.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
