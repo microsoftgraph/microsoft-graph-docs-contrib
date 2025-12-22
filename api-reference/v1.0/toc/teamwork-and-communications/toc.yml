@@ -621,11 +621,13 @@ items:
       href: ../../resources/chat.md
     - name: Chat management
       items:
-      - name: Create chat
+      - name: List
+        href: ../../api/chat-list.md
+      - name: Create
         href: ../../api/chat-post.md
-      - name: Get chat
+      - name: Get
         href: ../../api/chat-get.md
-      - name: Update chat
+      - name: Update
         href: ../../api/chat-patch.md
       - name: Delete
         href: ../../api/chat-delete.md

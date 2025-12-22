@@ -23,9 +23,9 @@ Consider the following points when completing migration for new and existing cha
 
 After a **completeMigration** request is made for existing or new channels, you can still import more messages into the team by calling [channel: startMigration](channel-startmigration.md).
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 [!INCLUDE [channel-support](../../includes/supported-channels-for-import.md)]
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
