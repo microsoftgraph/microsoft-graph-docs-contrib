@@ -332,8 +332,7 @@
            ]
          },
          {
-          "name": "Work hours and locations (preview)",
-          "overview": "../../resources/workhoursandlocationssetting.md",
+          "name": "Work hours and locations",
           "resources": [
             "workHoursAndLocationsSetting",
             "workPlanOccurrence",
@@ -3271,7 +3270,7 @@
       ],
       "childNodes": [
         {
-          "name": "Administration (preview)",
+          "name": "Administration",
           "resources": [
             "microsoft.graph.teamsAdministration.numberAssignment",
             "microsoft.graph.teamsAdministration.teamsUserConfiguration",

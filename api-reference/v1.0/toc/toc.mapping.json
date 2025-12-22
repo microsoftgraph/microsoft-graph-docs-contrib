@@ -223,24 +223,53 @@
         },
         {
           "name": "Places",
+          "overview": "../../resources/places-api-overview.md",
           "resources": [
             "place",
             "building",
-            "desk",
             "floor",
-            "room",
-            "roomList",
             "section",
+            "room",
+            "desk",
             "workspace",
-            "checkInClaim"
+            "checkInClaim",
+            "placeOperation",
+            "roomList"
           ],
           "complexTypes": [
-            "assignedPlaceMode",
-            "dropInPlaceMode",
             "mailboxDetails",
             "placeMode",
+            "assignedPlaceMode",
+            "dropInPlaceMode",
             "reservablePlaceMode",
             "resourceLink"
+          ],
+          "childNodes": [
+            {
+              "name": "Maps",
+              "resources": [
+                "buildingMap",
+                "fixtureMap",
+                "footprintMap",
+                "levelMap",
+                "sectionMap",
+                "unitMap"
+              ],
+              "complexTypes": [
+                "importBuildingMapSetting"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Work hours and locations",
+          "resources": [
+            "workHoursAndLocationsSetting",
+            "workPlanOccurrence",
+            "workPlanRecurrence"
+          ],
+          "complexTypes": [
+            "timeOffDetails"
           ]
         }
       ]
@@ -677,6 +706,7 @@
       "complexTypes": [
         "fileStorageContainerTypeRegistrationSettings",
         "fileStorageContainerTypeSettings"
+      ],
       "childNodes": [
         {
           "name": "SharePoint migration",
@@ -1939,6 +1969,17 @@
       ],
       "childNodes": [
         {
+          "name": "Administration",
+          "resources": [
+            "microsoft.graph.teamsAdministration.teamsUserConfiguration"
+          ],
+          "complexTypes": [
+            "microsoft.graph.teamsAdministration.assignedTelephoneNumber",
+            "microsoft.graph.teamsAdministration.effectivePolicyAssignment",
+            "microsoft.graph.teamsAdministration.policyAssignment"
+          ]
+        },
+        {
           "name": "Apps",
           "resources": [
             "teamsApp",
@@ -1956,7 +1997,8 @@
             "presence"
           ],
           "complexTypes": [
-            "outOfOfficeSettings"
+            "outOfOfficeSettings",
+            "userWorkLocation"
           ],
           "childNodes": [
             {

@@ -17,6 +17,9 @@ Namespace: microsoft.graph
 
 Get the [serviceStatus](../resources/servicestatus.md) of the [Microsoft 365 Backup Storage](../resources/backuprestoreroot.md) service in a tenant.
 
+> [!NOTE]
+> These APIs are intended for use by registered Backup Controller applications. If this API is called via Microsoft Graph PowerShell, it returns a `403 Forbidden` response code because the Microsoft Graph PowerShell SDK isn't a supported client for these operations.
+
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
@@ -83,10 +86,6 @@ GET https://graph.microsoft.com/beta/solutions/backupRestore
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/backuprestoreroot-get-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/backuprestoreroot-get-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

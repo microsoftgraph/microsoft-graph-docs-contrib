@@ -28,6 +28,7 @@ Represents a Cloud PC provisioning policy.
 |[Assign](../api/cloudpcprovisioningpolicy-assign.md)|None |Assign a [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) to user groups.|
 |[Apply](../api/cloudpcprovisioningpolicy-apply.md)|None|Apply the current [provisioning policy](../resources/cloudpcprovisioningpolicy.md) configuration to all Cloud PC devices under a specified policy. Currently, you can only change the region.|
 |[Apply configuration](../api/cloudpcprovisioningpolicy-applyconfig.md)|None|Update the [provisioning policy](../resources/cloudpcprovisioningpolicy.md) configuration for a set of Cloud PC devices by their IDs.|
+|[Retry](../api/cloudpcprovisioningpolicy-retry.md)|None| Retry the provisioning operation for Cloud PCs that used the current frontline shared policy and failed to apply the [provisioning policy](../resources/cloudpcprovisioningpolicy.md).|
 
 ## Properties
 
