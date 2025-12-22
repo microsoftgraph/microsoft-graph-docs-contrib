@@ -28,8 +28,8 @@ vendorInformation.SetVendor(&vendor)
 requestBody.SetVendorInformation(vendorInformation)
 additionalData := map[string]interface{}{
 	"assignedTo" : "", 
-	"comment" : "control is reviewed", 
-	"state" : "Reviewed", 
+	"comment" : "control is under 'Third Party' exception", 
+	"state" : "Third Party", 
 }
 requestBody.SetAdditionalData(additionalData)
 

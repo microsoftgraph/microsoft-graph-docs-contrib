@@ -24,10 +24,10 @@ var requestBody = new SecureScoreControlProfile
 			"assignedTo" , ""
 		},
 		{
-			"comment" , "control is reviewed"
+			"comment" , "control is under 'Third Party' exception"
 		},
 		{
-			"state" , "Reviewed"
+			"state" , "Third Party"
 		},
 	},
 };

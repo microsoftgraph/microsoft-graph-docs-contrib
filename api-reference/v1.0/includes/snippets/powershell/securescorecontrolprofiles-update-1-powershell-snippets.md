@@ -8,8 +8,8 @@ Import-Module Microsoft.Graph.Security
 
 $params = @{
 	assignedTo = ""
-	comment = "control is reviewed"
-	state = "Reviewed"
+	comment = "control is under 'Third Party' exception"
+	state = "Third Party"
 	vendorInformation = @{
 		provider = "SecureScore"
 		providerVersion = $null

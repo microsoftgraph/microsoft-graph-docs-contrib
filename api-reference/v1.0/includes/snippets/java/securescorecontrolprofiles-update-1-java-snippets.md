@@ -17,8 +17,8 @@ vendorInformation.setVendor("Microsoft");
 secureScoreControlProfile.setVendorInformation(vendorInformation);
 HashMap<String, Object> additionalData = new HashMap<String, Object>();
 additionalData.put("assignedTo", "");
-additionalData.put("comment", "control is reviewed");
-additionalData.put("state", "Reviewed");
+additionalData.put("comment", "control is under 'Third Party' exception");
+additionalData.put("state", "Third Party");
 secureScoreControlProfile.setAdditionalData(additionalData);
 SecureScoreControlProfile result = graphClient.security().secureScoreControlProfiles().bySecureScoreControlProfileId("{secureScoreControlProfile-id}").patch(secureScoreControlProfile);
 

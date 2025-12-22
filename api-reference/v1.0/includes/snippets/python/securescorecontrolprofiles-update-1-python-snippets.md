@@ -18,8 +18,8 @@ request_body = SecureScoreControlProfile(
 	),
 	additional_data = {
 			"assigned_to" : "",
-			"comment" : "control is reviewed",
-			"state" : "Reviewed",
+			"comment" : "control is under 'Third Party' exception",
+			"state" : "Third Party",
 	}
 )
 

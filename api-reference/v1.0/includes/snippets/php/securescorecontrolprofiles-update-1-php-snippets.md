@@ -21,8 +21,8 @@ $vendorInformation->setVendor('Microsoft');
 $requestBody->setVendorInformation($vendorInformation);
 $additionalData = [
 	'assignedTo' => '',
-	'comment' => 'control is reviewed',
-	'state' => 'Reviewed',
+	'comment' => 'control is under 'Third Party' exception',
+	'state' => 'Third Party',
 ];
 $requestBody->setAdditionalData($additionalData);
 
