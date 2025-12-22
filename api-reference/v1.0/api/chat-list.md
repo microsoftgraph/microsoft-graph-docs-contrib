@@ -17,7 +17,7 @@ Retrieve the list of [chats](../resources/chat.md) that the user is part of.
 This method supports federation. When a user ID is provided, the calling application must belong to the same tenant that the user belongs to.
 
 > [!NOTE]
-> This API has a `[known issue](https://microsoftgraph.visualstudio.com/Known%20Issues/_workitems/edit/40947). When this API is called with the `$expand=members` query parameter, the response returns a maximum of **25 member items**, even if a larger `$top` value is specified. This behavior differs from the expected behavior where the `$top` parameter controls the maximum number of items returned. As a result, applications that rely on `$expand=members` might not retrieve the full list of members in a single request.
+> This API has a `[known issue](https://microsoftgraph.visualstudio.com/Known%20Issues/_workitems/edit/40947)`. When this API is called with the `$expand=members` query parameter, the response returns a maximum of **25 member items**, even if a larger `$top` value is specified. This behavior differs from the expected behavior where the `$top` parameter controls the maximum number of items returned. As a result, applications that rely on `$expand=members` might not retrieve the full list of members in a single request.
 > The API also behaves differently in one or more national clouds. For more information, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
