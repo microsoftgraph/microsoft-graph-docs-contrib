@@ -18,22 +18,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
  
-## December 2025: New in private preview
-
-### Files
-
-Use the **deleted** property on [sharePointGroupIdentityMapping](/graph/api/resources/sharepointgroupidentitymapping?view=graph-rest-beta&preserve-view=true) and [sharePointUserIdentityMapping](/graph/api/resources/sharepointuseridentitymapping?view=graph-rest-beta&preserve-view=true) to indicate that an identity mapping was deleted successfully.
-
 ## December 2025: New and generally available
-
-### Teamwork and communications | Calls and online meetings
-
-- The [callRecord: getPstnCalls](/graph/api/callrecords-callrecord-getpstncalls) API now clarifies that it doesn't return information for **Telstra** calling plans only.
-- Use the following new endpoints to enable the management of work location for a user:
-  - [Clear](/graph/api/presence-clearautomaticlocation) the automatic work location value for a user.
-  - [Clear](/graph/api/presence-clearlocation) the work location signals for a user, including both the manual and automatic layers for the current date.
-  - [Set](/graph/api/presence-setautomaticlocation) the automatic work location for a user.
-  - [Set](/graph/api/presence-setmanuallocation) the user’s manual work location signal.
 
 ### Device and app management | Cloud PC
 
@@ -66,6 +51,14 @@ Use the following resources to represent the data sent to Azure Logic Apps as pa
 
 [Get](/graph/api/teamsadministration-teamsuserconfiguration-get) or [list](/graph/api/teamsadministration-teamsadminroot-list-userconfigurations) user configurations for users with accounts in the Teams context.
 
+### Teamwork and communications | Calls and online meetings
+
+- The [callRecord: getPstnCalls](/graph/api/callrecords-callrecord-getpstncalls) API now clarifies that it doesn't return information for **Telstra** calling plans only.
+- Use the following new endpoints to enable the management of work location for a user:
+  - [Clear](/graph/api/presence-clearautomaticlocation) the automatic work location value for a user.
+  - [Clear](/graph/api/presence-clearlocation) the work location signals for a user, including both the manual and automatic layers for the current date.
+  - [Set](/graph/api/presence-setautomaticlocation) the automatic work location for a user.
+  - [Set](/graph/api/presence-setmanuallocation) the user’s manual work location signal.
 
 ## December 2025: New in preview only
 
@@ -83,7 +76,8 @@ Use the new supported [media sizes](/graph/api/resources/printercapabilities?vie
 
 ### Files
 
-Use the SharePoint cross-tenant migration task APIs in Microsoft Graph to enable organizations to manage the tasks during tenant-to-tenant migrations. For more information, see [sharePointMigrationTask](/graph/api/resources/sharepointmigrationtask?view=graph-rest-beta&preserve-view=true).
+- Use the SharePoint cross-tenant migration task APIs in Microsoft Graph to enable organizations to manage the tasks during tenant-to-tenant migrations. For more information, see [sharePointMigrationTask](/graph/api/resources/sharepointmigrationtask?view=graph-rest-beta&preserve-view=true).
+- Use the **deleted** property on [sharePointGroupIdentityMapping](/graph/api/resources/sharepointgroupidentitymapping?view=graph-rest-beta&preserve-view=true) and [sharePointUserIdentityMapping](/graph/api/resources/sharepointuseridentitymapping?view=graph-rest-beta&preserve-view=true) to indicate that an identity mapping was deleted successfully.
 
 ### Identity and access | Governance
 
