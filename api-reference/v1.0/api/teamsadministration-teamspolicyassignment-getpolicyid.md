@@ -1,10 +1,10 @@
 ---
 title: "teamsPolicyAssignment: getPolicyId"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Get the policy ID for a given policy name and policy type within Teams administration."
+author: "praspatil05"
 ms.date: 12/19/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.teamsAdministration
 
 
 
-**TODO: Add Description**
+Get the [policy ID](../resources/teamsadministration-policyidentifierdetail.md) for a given policy name and policy type within Teams administration.
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /admin/teams/policy/getPolicyId
+GET /admin/teams/policy/getPolicyId(type='{policyType}',name='{policyName}')
 ```
 
 ## Function parameters
@@ -42,8 +42,8 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|type|String|**TODO: Add Description**|
-|name|String|**TODO: Add Description**|
+|type|String|The policy type, such as `teamsMeetingBroadcastPolicy` and `teamsMeetingPolicy`.|
+|name|String|The name of the policy instance, such as `allOn`.|
 
 
 ## Request headers
@@ -71,7 +71,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/admin/teams/policy/getPolicyId(type='parameterValue',name='parameterValue')
+GET https://graph.microsoft.com/v1.0/admin/teams/policy/getPolicyId(type='TeamsMeetingPolicy',name='AllOn')
 ```
 
 
@@ -93,9 +93,8 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.teamsAdministration.policyIdentifierDetail",
-      "id": "String (identifier)",
-      "name": "String",
-      "policyId": "String"
+      "name": "Tag:AllOn",
+      "policyId": "VnMAaN3X2X1B9tEHx1CJWfC76PSaKEzA4NoUuqIMRUo"
     }
   ]
 }

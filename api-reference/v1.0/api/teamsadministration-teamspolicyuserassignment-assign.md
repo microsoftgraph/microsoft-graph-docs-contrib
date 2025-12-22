@@ -1,10 +1,10 @@
 ---
 title: "teamsPolicyUserAssignment: assign"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Assign a Teams policy to a user using the user ID, policy type, and policy ID."
+author: "praspatil05"
 ms.date: 12/19/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.teamsAdministration
 
 
 
-**TODO: Add Description**
+Assign a Teams [policy](../resources/teamsadministration-teamspolicyuserassignment.md) to a user using the user ID, policy type, and policy ID.
 
 ## Permissions
 
@@ -52,7 +52,7 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|value|[microsoft.graph.teamsAdministration.teamsPolicyUserAssignment](../resources/teamsadministration-teamspolicyuserassignment.md) collection|**TODO: Add Description**|
+|value|[microsoft.graph.teamsAdministration.teamsPolicyUserAssignment](../resources/teamsadministration-teamspolicyuserassignment.md) collection|A collection of user-policy assignment objects that specify the user ID, policy type, and policy ID to assign.|
 
 
 
@@ -75,13 +75,13 @@ POST https://graph.microsoft.com/v1.0/admin/teams/policy/userAssignments/assign
 Content-Type: application/json
 
 {
+
   "value": [
     {
       "@odata.type": "#microsoft.graph.teamsAdministration.teamsPolicyUserAssignment",
-      "id": "String (identifier)",
-      "userId": "String",
-      "policyType": "String",
-      "policyId": "String"
+      "userId": "5c802b19-3600-83f1-1767-7b9edc7f38ab",
+      "policyType": "TeamsMeetingPolicy",
+      "policyId": "VnMAaN3X2X1B9tEHx1CJWfC76PSaKEzA4NoUuqIMRUo"
     }
   ]
 }

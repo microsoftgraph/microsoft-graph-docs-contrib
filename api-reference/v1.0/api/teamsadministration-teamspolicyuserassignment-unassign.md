@@ -1,10 +1,10 @@
 ---
 title: "teamsPolicyUserAssignment: unassign"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Unassign a Teams policy from a user using the user ID and policy type."
+author: "praspatil05"
 ms.date: 12/19/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "teams"
 doc_type: apiPageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.teamsAdministration
 
 
 
-**TODO: Add Description**
+Unassign a Teams [policy](../resources/teamsadministration-teamspolicyuserassignment.md) from a user using the user ID and policy type.
 
 ## Permissions
 
@@ -52,7 +52,7 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|value|[microsoft.graph.teamsAdministration.teamsPolicyUserAssignment](../resources/teamsadministration-teamspolicyuserassignment.md) collection|**TODO: Add Description**|
+|value|[microsoft.graph.teamsAdministration.teamsPolicyUserAssignment](../resources/teamsadministration-teamspolicyuserassignment.md) collection|A collection of user-policy assignment objects that specify the user ID and policy type to unassign.|
 
 
 
@@ -74,14 +74,13 @@ The following example shows a request.
 POST https://graph.microsoft.com/v1.0/admin/teams/policy/userAssignments/unassign
 Content-Type: application/json
 
+
 {
   "value": [
     {
       "@odata.type": "#microsoft.graph.teamsAdministration.teamsPolicyUserAssignment",
-      "id": "String (identifier)",
-      "userId": "String",
-      "policyType": "String",
-      "policyId": "String"
+      "userId": "5c802b19-3600-83f1-1767-7b9edc7f38ab",
+      "policyType": "TeamsMeetingPolicy"
     }
   ]
 }
