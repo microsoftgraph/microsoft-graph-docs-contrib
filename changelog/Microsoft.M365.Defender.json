@@ -3217,6 +3217,110 @@
       "CreatedDateTime": "2025-09-09T14:49:56.5114766Z",
       "WorkloadArea": "Security",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2d1d8323-7e36-4891-bfd1-b91af452e0b2",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "investigationState",
+          "ChangeType": "Addition",
+          "Description": "Added the **investigationState** enumeration type.",
+          "Target": "investigationState"
+        },
+        {
+          "Id": "2d1d8323-7e36-4891-bfd1-b91af452e0b2",
+          "ApiChange": "Property",
+          "ChangedApiName": "investigationState",
+          "ChangeType": "Addition",
+          "Description": "Added the **investigationState** property to the [alert](https://learn.microsoft.com/en-us/graph/api/resources/security-alert?view=graph-rest-beta) resource.",
+          "Target": "alert"
+        }
+      ],
+      "Id": "2d1d8323-7e36-4891-bfd1-b91af452e0b2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-03T14:39:53.8840974Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1f966026-fff4-422d-873c-771c78f1fc69",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "investigationState",
+          "ChangeType": "Addition",
+          "Description": "Added the **investigationState** enumeration type.",
+          "Target": "investigationState"
+        },
+        {
+          "Id": "1f966026-fff4-422d-873c-771c78f1fc69",
+          "ApiChange": "Property",
+          "ChangedApiName": "investigationState",
+          "ChangeType": "Addition",
+          "Description": "Added the **investigationState** property to the [alert](https://learn.microsoft.com/en-us/graph/api/resources/security-alert?view=graph-rest-1.0) resource.",
+          "Target": "alert"
+        }
+      ],
+      "Id": "1f966026-fff4-422d-873c-771c78f1fc69",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-11-03T14:39:53.8840974Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f1264e2a-be60-499c-bcc2-ca86665583e9",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "aiAgentPlatform",
+          "ChangeType": "Addition",
+          "Description": "Added the **aiAgentPlatform** enumeration type.",
+          "Target": "aiAgentPlatform"
+        },
+        {
+          "Id": "f1264e2a-be60-499c-bcc2-ca86665583e9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiAgentEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiAgentEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-aiAgentEvidence?view=graph-rest-beta) resource type.",
+          "Target": "aiAgentEvidence"
+        }
+      ],
+      "Id": "f1264e2a-be60-499c-bcc2-ca86665583e9",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-18T07:26:03.8393466Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Alerts and incidents"
+    },
+    {
+       "ChangeList": [
+        {
+          "Id": "3c220c93-efad-4018-8c6e-c3f3d6501238",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "aiAgentPlatform",
+          "ChangeType": "Addition",
+          "Description": "Added the **aiAgentPlatform** enumeration type.",
+          "Target": "aiAgentPlatform"
+        },
+        {
+          "Id": "3c220c93-efad-4018-8c6e-c3f3d6501238",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiAgentEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiAgentEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-aiAgentEvidence?view=graph-rest-1.0) resource type.",
+          "Target": "aiAgentEvidence"
+        }
+      ],
+      "Id": "3c220c93-efad-4018-8c6e-c3f3d6501238",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-11-18T07:26:03.8396017Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Alerts and incidents"
     }
   ]
 }

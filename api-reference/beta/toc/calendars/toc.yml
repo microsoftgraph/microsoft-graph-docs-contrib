@@ -288,26 +288,46 @@ items:
       href: ../../api/place-delete.md
     - name: Descendants
       href: ../../api/place-descendants.md
+    - name: Create check-in claim
+      href: ../../api/place-post-checkins.md
+    - name: Upsert places
+      href: ../../api/place-patch-places.md
+    - name: Get operation
+      href: ../../api/place-getoperation.md
+    - name: List operations
+      href: ../../api/place-listoperations.md
   - name: Building
     items:
     - name: Building
       href: ../../resources/building.md
     - name: Ingest map file
       href: ../../api/building-ingestmapfile.md
-  - name: Check-in claim (preview)
+  - name: Floor
+    href: ../../resources/floor.md
+  - name: Section
+    href: ../../resources/section.md
+  - name: Room
+    href: ../../resources/room.md
+  - name: Desk
+    href: ../../resources/desk.md
+  - name: Workspace
+    href: ../../resources/workspace.md
+  - name: Check-in claim
     items:
-    - name: Check-in claim (preview)
+    - name: Check-in claim
       href: ../../resources/checkinclaim.md
     - name: Create
       href: ../../api/place-post-checkins.md
     - name: Get
       href: ../../api/checkinclaim-get.md
-  - name: Desk
-    href: ../../resources/desk.md
-  - name: Floor
-    href: ../../resources/floor.md
-  - name: Room
-    href: ../../resources/room.md
+  - name: Place operation
+    items:
+    - name: Place operation
+      href: ../../resources/placeoperation.md
+    - name: List
+      href: ../../api/place-listoperations.md
+    - name: Get
+      href: ../../api/place-getoperation.md
   - name: Room list
     items:
     - name: Room list
@@ -318,10 +338,6 @@ items:
       href: ../../api/place-get.md
     - name: Update place
       href: ../../api/place-update.md
-  - name: Section
-    href: ../../resources/section.md
-  - name: Workspace
-    href: ../../resources/workspace.md
   - name: Devices (preview)
     items:
     - name: Workplace sensor device
@@ -414,11 +430,65 @@ items:
       href: ../../resources/dropinplacemode.md
     - name: Mailbox details
       href: ../../resources/mailboxdetails.md
-    - name: Offline place mode
-      href: ../../resources/offlineplacemode.md
+    - name: Place execution result
+      href: ../../resources/placeexecutionresult.md
     - name: Place mode
       href: ../../resources/placemode.md
+    - name: Place operation progress
+      href: ../../resources/placeoperationprogress.md
     - name: Reservable place mode
       href: ../../resources/reservableplacemode.md
     - name: Resource link
       href: ../../resources/resourcelink.md
+    - name: Unavailable place mode
+      href: ../../resources/unavailableplacemode.md
+- name: Work hours and locations (preview)
+  items:
+  - name: Overview
+    href: ../../resources/workhoursandlocationssetting.md
+  - name: Work hours and locations setting
+    items:
+    - name: Work hours and locations setting
+      href: ../../resources/workhoursandlocationssetting.md
+    - name: Get
+      href: ../../api/workhoursandlocationssetting-get.md
+    - name: Update
+      href: ../../api/workhoursandlocationssetting-update.md
+    - name: Occurrences view
+      href: ../../api/workhoursandlocationssetting-occurrencesview.md
+    - name: List recurrences
+      href: ../../api/workhoursandlocationssetting-list-recurrences.md
+    - name: Create recurrence
+      href: ../../api/workhoursandlocationssetting-post-recurrences.md
+    - name: Create occurrence
+      href: ../../api/workhoursandlocationssetting-post-occurrences.md
+  - name: Work plan occurrence
+    items:
+    - name: Work plan occurrence
+      href: ../../resources/workplanoccurrence.md
+    - name: Create
+      href: ../../api/workhoursandlocationssetting-post-occurrences.md
+    - name: Update
+      href: ../../api/workplanoccurrence-update.md
+    - name: Delete
+      href: ../../api/workplanoccurrence-delete.md
+    - name: Set current location
+      href: ../../api/workplanoccurrence-setcurrentlocation.md
+    - name: Occurrences view
+      href: ../../api/workhoursandlocationssetting-occurrencesview.md
+  - name: Work plan recurrence
+    items:
+    - name: Work plan recurrence
+      href: ../../resources/workplanrecurrence.md
+    - name: List
+      href: ../../api/workhoursandlocationssetting-list-recurrences.md
+    - name: Create
+      href: ../../api/workhoursandlocationssetting-post-recurrences.md
+    - name: Update
+      href: ../../api/workplanrecurrence-update.md
+    - name: Delete
+      href: ../../api/workplanrecurrence-delete.md
+  - name: Complex types
+    items:
+    - name: Time off details
+      href: ../../resources/timeoffdetails.md
