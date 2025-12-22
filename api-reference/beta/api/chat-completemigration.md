@@ -18,9 +18,9 @@ Complete the migration of external messages by removing migration mode from a [c
 
 After a **completeMigration** request is made for an existing or new chat, you can start a migration session by calling [chat: startMigration](chat-startmigration.md).
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 [!INCLUDE [chat-support](../../includes/supported-chats-for-import.md)]
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

@@ -21,9 +21,9 @@ You can define a minimum timestamp for content migration that enables the import
 - The **createdDateTime** can only be moved towards the past.
 - The **createdDateTime** can't be updated to a value newer than the current **createdDateTime**.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 [!INCLUDE [chat-support](../../includes/supported-chats-for-import.md)]
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
