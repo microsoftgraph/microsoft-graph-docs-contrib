@@ -5,7 +5,7 @@ author: "yyuank"
 ms.reviewer: "iamut"
 ms.date: 11/17/2025
 ms.localizationpriority: medium
-ms.subservice: entra-users
+ms.subservice: "entra-agent-id"
 doc_type: resourcePageType
 ---
 

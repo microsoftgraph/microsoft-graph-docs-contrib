@@ -125,7 +125,7 @@ The following example shows the response.
 HTTP/1.1 202 Accepted
 cache-control: no-cache,
 client-request-id: 3ec98906-7187-927e-5203-2ed4533175c6,
-location: https://graph.microsoft.com/beta/compliance/ediscovery/cases('5b840b94-f821-4c4a-8cad-3a90062bf51a')/operations('2ad2da7c7dbb404abfbbb28b7b6babd6'),
+location: https://graph.microsoft.com/v1.0/compliance/ediscovery/cases('5b840b94-f821-4c4a-8cad-3a90062bf51a')/operations('2ad2da7c7dbb404abfbbb28b7b6babd6'),
 request-id: 9e6b9230-113c-49de-8f7d-ecb90d35b0de
 ```
 

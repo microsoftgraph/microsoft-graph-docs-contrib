@@ -89,6 +89,96 @@
       "CreatedDateTime": "2025-12-12T00:00:00Z",
       "WorkloadArea": "Calendars",
       "SubArea": "Work hours and locations"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "357e25f3-b621-4d56-a950-8527fe5a39b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workHoursAndLocationsSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [workHoursAndLocationsSetting](https://learn.microsoft.com/en-us/graph/api/resources/workhoursandlocationssetting?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "workHoursAndLocationsSetting"
+        },
+        {
+          "Id": "357e25f3-b621-4d56-a950-8527fe5a39b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workPlanRecurrence",
+          "ChangeType": "Addition",
+          "Description": "Added the [workPlanRecurrence](https://learn.microsoft.com/en-us/graph/api/resources/workplanrecurrence?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "workPlanRecurrence"
+        },
+        {
+          "Id": "357e25f3-b621-4d56-a950-8527fe5a39b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workPlanOccurrence",
+          "ChangeType": "Addition",
+          "Description": "Added the [workPlanOccurrence](https://learn.microsoft.com/en-us/graph/api/resources/workplanoccurrence?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "workPlanOccurrence"
+        },
+        {
+          "Id": "357e25f3-b621-4d56-a950-8527fe5a39b4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "timeOffDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [timeOffDetails](https://learn.microsoft.com/en-us/graph/api/resources/timeoffdetails?view=graph-rest-1.0) resource type.",
+          "Target": "timeOffDetails"
+        },
+        {
+          "Id": "357e25f3-b621-4d56-a950-8527fe5a39b4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "workLocationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **workLocationType** enumeration type.",
+          "Target": "workLocationType"
+        },
+        {
+          "Id": "357e25f3-b621-4d56-a950-8527fe5a39b4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "maxWorkLocationDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the **maxWorkLocationDetails** enumeration type.",
+          "Target": "maxWorkLocationDetails"
+        },
+        {
+          "Id": "357e25f3-b621-4d56-a950-8527fe5a39b4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "workLocationUpdateScope",
+          "ChangeType": "Addition",
+          "Description": "Added the **workLocationUpdateScope** enumeration type.",
+          "Target": "workLocationUpdateScope"
+        },
+        {
+          "Id": "357e25f3-b621-4d56-a950-8527fe5a39b4",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "workHoursAndLocations",
+          "ChangeType": "Addition",
+          "Description": "Added the **workHoursAndLocations** relationship to the [userSettings](https://learn.microsoft.com/en-us/graph/api/resources/usersettings?view=graph-rest-1.0) resource.",
+          "Target": "userSettings"
+        },
+        {
+          "Id": "357e25f3-b621-4d56-a950-8527fe5a39b4",
+          "ApiChange": "Method",
+          "ChangedApiName": "occurrencesView",
+          "ChangeType": "Addition",
+          "Description": "Added the [occurrencesView](https://learn.microsoft.com/en-us/graph/api/workhoursandlocationssetting-occurrencesview?view=graph-rest-1.0) method to the [workHoursAndLocationsSetting](https://learn.microsoft.com/en-us/graph/api/resources/workhoursandlocationssetting?view=graph-rest-1.0) resource.",
+          "Target": "workHoursAndLocationsSetting"
+        },
+        {
+          "Id": "357e25f3-b621-4d56-a950-8527fe5a39b4",
+          "ApiChange": "Method",
+          "ChangedApiName": "setCurrentLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [setCurrentLocation](https://learn.microsoft.com/en-us/graph/api/workplanoccurrence-setcurrentlocation?view=graph-rest-1.0) method to the [workPlanOccurrence](https://learn.microsoft.com/en-us/graph/api/resources/workplanoccurrence?view=graph-rest-1.0) resource.",
+          "Target": "workPlanOccurrence"
+        }
+      ],
+      "Id": "357e25f3-b621-4d56-a950-8527fe5a39b4",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-12-16T00:00:00Z",
+      "WorkloadArea": "Calendars",
+      "SubArea": "Work hours and locations"
     }
   ]
 }

@@ -332,8 +332,7 @@
            ]
          },
          {
-          "name": "Work hours and locations (preview)",
-          "overview": "../../resources/workhoursandlocationssetting.md",
+          "name": "Work hours and locations",
           "resources": [
             "workHoursAndLocationsSetting",
             "workPlanOccurrence",
@@ -2153,7 +2152,8 @@
               "resources": [
                 "microsoft.graph.networkaccess.crossTenantAccessSettings",
                 "microsoft.graph.networkaccess.conditionalAccessSettings",
-                "microsoft.graph.networkaccess.forwardingOptions"
+                "microsoft.graph.networkaccess.forwardingOptions",
+                "microsoft.graph.networkaccess.customBlockPage"
               ]
             },
             {
@@ -3271,7 +3271,7 @@
       ],
       "childNodes": [
         {
-          "name": "Administration (preview)",
+          "name": "Administration",
           "resources": [
             "microsoft.graph.teamsAdministration.numberAssignment",
             "microsoft.graph.teamsAdministration.teamsUserConfiguration",

@@ -18,7 +18,7 @@ Unlock a [fileStorageContainer](../resources/filestoragecontainer.md) for users 
 
 This action updates the value of the **lockState** property.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

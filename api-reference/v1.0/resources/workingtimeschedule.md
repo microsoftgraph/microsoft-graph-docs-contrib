@@ -12,8 +12,6 @@ ms.date: 09/13/2024
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Contains triggers for policies associated with the start and end of working hours for users.
 
 ## Methods
