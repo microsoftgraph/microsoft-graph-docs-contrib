@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Reprovision a specific [Cloud PC](../resources/cloudpc.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

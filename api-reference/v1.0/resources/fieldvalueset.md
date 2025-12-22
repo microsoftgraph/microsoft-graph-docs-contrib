@@ -45,7 +45,7 @@ The server returns lookup values if your request includes a `select` statement w
 Example:
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Author,BookTitle,PageCount)
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Author,BookTitle,PageCount)
 ```
 
 You may request up to 12 lookup fields in a single query, plus any number of regular fields.

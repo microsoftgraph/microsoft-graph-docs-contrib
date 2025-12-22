@@ -47,7 +47,7 @@ Here are popular requests for working with report data:
 |--|--|
 | GET tenant user activities | [https://graph.microsoft.com/v1.0/auditLogs/directoryAudits](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/directoryAudits&version=v1.0) |
 | GET custom security attribute audit logs | [https://graph.microsoft.com/v1.0/auditLogs/customSecurityAttributeAudits](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/customSecurityAttributeAudits&version=v1.0) |
-| GET tenant sign-ins | [https://graph.microsoft.com/beta/auditLogs/signIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signIns&version=v1.0) |
+| GET tenant sign-ins | [https://graph.microsoft.com/v1.0/auditLogs/signIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signIns&version=v1.0) |
 
 ## License requirements
 

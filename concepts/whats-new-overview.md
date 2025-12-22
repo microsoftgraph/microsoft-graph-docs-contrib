@@ -17,7 +17,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
-
+ 
 ## December 2025: New and generally available
 
 ### Teamwork and communications | Messaging
@@ -40,7 +40,8 @@ Use the new supported [media sizes](/graph/api/resources/printercapabilities?vie
 
 ### Files
 
-Use the SharePoint cross-tenant migration task APIs in Microsoft Graph to enable organizations to manage the tasks during tenant-to-tenant migrations. For more information, see [sharePointMigrationTask](/graph/api/resources/sharepointmigrationtask?view=graph-rest-beta&preserve-view=true).
+- Use the SharePoint cross-tenant migration task APIs in Microsoft Graph to enable organizations to manage the tasks during tenant-to-tenant migrations. For more information, see [sharePointMigrationTask](/graph/api/resources/sharepointmigrationtask?view=graph-rest-beta&preserve-view=true).
+- Use the **deleted** property on [sharePointGroupIdentityMapping](/graph/api/resources/sharepointgroupidentitymapping?view=graph-rest-beta&preserve-view=true) and [sharePointUserIdentityMapping](/graph/api/resources/sharepointuseridentitymapping?view=graph-rest-beta&preserve-view=true) to indicate that an identity mapping was deleted successfully.
 
 ### Identity and access | Governance
 

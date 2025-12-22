@@ -117,7 +117,7 @@ Content-type: application/json
 
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#/conditionalAccess/authenticationContextClassReferences",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#/conditionalAccess/authenticationContextClassReferences",
   "value": [
     {
       "id": "c1",

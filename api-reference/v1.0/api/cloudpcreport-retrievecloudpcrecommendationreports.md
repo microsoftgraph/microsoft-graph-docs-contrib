@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Retrieve Cloud PC recommendation [reports](../resources/cloudpcreport.md) for usage optimization and cost savings. The usage category report categorizes a Cloud PC as `Undersized`, `Oversized`, `Rightsized`, or `Underutilized`, and also provides the recommended SKU when the Cloud PC isn't `Rightsized`.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
