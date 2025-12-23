@@ -63,6 +63,10 @@ Use the new supported [media sizes](/graph/api/resources/printercapabilities?vie
 
 Added the `microsoftRevokedSessions` value to the [riskDetail](/graph/api/resources/riskdetail?view=graph-rest-beta&preserve-view=true) enumeration to indicate that Microsoft revoked sessions. This enumeration member applies to the following Microsoft Entra Identity Protection resources: [riskDetection](/graph/api/resources/riskdetection?view=graph-rest-beta&preserve-view=true), [riskUserActivity](/graph/api/resources/riskuseractivity?view=graph-rest-beta&preserve-view=true), [riskyUser](/graph/api/resources/riskyuser?view=graph-rest-beta&preserve-view=true), and [signIn](/graph/api/resources/signin?view=graph-rest-beta&preserve-view=true).
 
+### Identity and access | Network access
+
+Customize the block page message displayed to users when Global Secure Access blocks their access to web resources. Use the [customBlockPage](/graph/api/resources/networkaccess-customblockpage?view=graph-rest-beta&preserve-view=true) resource to configure custom messages with limited markdown support.
+
 ### Mail
 
 Use the [userConfiguration](/graph/api/resources/userconfiguration?view=graph-rest-beta&preserve-view=true) resource and its associated methods to manage user-specific settings, metadata, or application data tied to mailbox folders, using XML, binary, or dictionary formats.
@@ -83,7 +87,7 @@ Use the [userConfiguration](/graph/api/resources/userconfiguration?view=graph-re
 ### Teamwork and communications | Calls and online meetings
 
 - When `$expand=members` is included, the [List chats](/graph/api/chat-list?view=graph-rest-beta&preserve-view=true) API returns a maximum of 25 items, even if a larger `$top` value is specified.
-- The following endpoints are no longer supported for managing [work location](/graph/resources/userworklocation?view=graph-rest-beta&preserve-view=true) for a user:
+- The following endpoints are no longer supported for managing [work location](/graph/api/resources/userworklocation?view=graph-rest-beta&preserve-view=true) for a user:
   - `POST /users/{usersId}/presence/clearAutomaticLocation`
   - `POST /communications/presences/{presenceId}/clearAutomaticLocation`
   - `POST /users/{usersId}/presence/clearLocation`
@@ -125,10 +129,6 @@ Use the [userConfiguration](/graph/api/resources/userconfiguration?view=graph-re
 Deleted security groups can now be restored from [deleted items](/graph/api/resources/directory) within 30 days of deletion, similar to Microsoft 365 groups. Use the [Restore deleted item](/graph/api/directory-deleteditems-restore) API to restore a deleted security group.
 
 ### Identity and access | Governance
-
-Added the [userInactivityTrigger](/graph/api/resources/userinactivitytrigger) resource to support automatic triggering of access reviews based on user inactivity.
-
-### Identity and access | Identity and sign-in
 
 Added the [userInactivityTrigger](/graph/api/resources/identitygovernance-userinactivitytrigger?view=graph-rest-beta&preserve-view=true) resource to support automatic triggering of access reviews based on user inactivity.
 
