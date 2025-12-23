@@ -125,6 +125,7 @@ Alerts from the following security providers are available via the legacy **aler
 
 [Microsoft Purview Audit](/microsoft-365/compliance/audit-solutions-overview) provides an integrated solution to help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. Thousands of user and admin operations performed in dozens of Microsoft 365 services and solutions are captured, recorded, and retained in your organization's unified audit log. Audit records for these events are searchable by security ops, IT admins, insider risk teams, and compliance and legal investigators in your organization. This capability provides visibility into the activities performed across your Microsoft 365 organization.
 
+
 ## Identities
 
 ### Health issues
@@ -138,10 +139,8 @@ The Microsoft Defender for Identity health issues API allows you to monitor the 
 The Defender for Identity sensors management APIs allows you to:
 - Create detailed reports of the sensors in your workspace, including information about the server name, sensor version, type, state, and health status.
 - Manage sensor settings, such as adding descriptions, enabling or disabling delayed updates, and specifying the domain controller that the sensor connects to for querying Entra ID.
-- Identify servers that are ready to be activated with the unified agent.
-- Enable or disable the automatic activation of eligible servers for the unified agent.
-- Activate or deactivate the unified agent on eligible servers.
-- Enable or disable the automatic enabling of the required events auditing configuration during the sensor’s activation.
+- Identify sensors that are ready to be activated.
+- Define whether the sensors in your infrastructure are to be activated automatically or manually.
 
 ## Incidents
 
