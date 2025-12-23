@@ -19,7 +19,7 @@ Represents the [authentication event listeners](authenticationeventlistener.md) 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|eventType|authenticationEventType|The type of authentication event that triggered the custom authentication extension request. The possible values are: `tokenIssuanceStart`, `pageRenderStart`, `unknownFutureValue`, `attributeCollectionStart`, `attributeCollectionSubmit`, `emailOtpSend`. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `attributeCollectionStart`, `attributeCollectionSubmit`, `emailOtpSend`. |
+|eventType|authenticationEventType|The type of authentication event that triggered the [custom authentication extension](../resources/customauthenticationextension.md) request. The possible values are: `tokenIssuanceStart`, `pageRenderStart`, `unknownFutureValue`, `attributeCollectionStart`, `attributeCollectionSubmit`, `emailOtpSend`. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `attributeCollectionStart`, `attributeCollectionSubmit`, `emailOtpSend`. |
 |executedListenerId|String|ID of the [authentication event listener](authenticationeventlistener.md) that was executed.|
 |handlerResult|[authenticationEventHandlerResult](../resources/authenticationeventhandlerresult.md)|The result from the listening client, such as an Azure Logic App and Azure Functions, of this authentication event.|
 
