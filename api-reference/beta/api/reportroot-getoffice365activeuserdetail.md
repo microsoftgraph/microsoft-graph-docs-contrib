@@ -75,12 +75,12 @@ The CSV file contains the following column headers:
 - Display Name
 - Is Deleted
 - Deleted Date
-- Has Exchange License
-- Has OneDrive License
-- Has SharePoint License
-- Has Skype For Business License
-- Has Yammer License*
-- Has Teams License*
+- hasExchangeLicense
+- hasOneDriveLicense
+- hasSharePointLicense
+- hasSkypeForBusinessLicense
+- hasYammerLicense*
+- hasTeamsLicense*
 - Exchange Last Activity Date
 - OneDrive Last Activity Date
 - SharePoint Last Activity Date
@@ -92,7 +92,7 @@ The CSV file contains the following column headers:
 - SharePoint License Assign Date
 - Skype For Business License Assign Date
 - Yammer License Assign Date*
-- Teams License Assign Date*
+- teamsLicenseAssignDate*
 - Assigned Products
 
 *These columns aren't supported in Microsoft Graph China operated by 21Vianet.
