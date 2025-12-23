@@ -16,12 +16,11 @@ Namespace: microsoft.graph.security
 
 Represents audit metadata, including the user and timestamps for creation or modification actions. This complex type tracks who performed an action and when it occurred.
 
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |by|String|User who performed the action.|
-|dateTime|DateTimeOffset|Timestamp of the action.|
+|dateTime|DateTimeOffset|Timestamp of the action. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 
 ## Relationships
 None.
