@@ -1,0 +1,46 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "3015f3d8-b93e-46f9-b81b-e476d2398b9c",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "environmentKind",
+          "ChangeType": "Addition",
+          "Description": "Added the **environmentKind** enumeration type.",
+          "Target": "environmentKind"
+        },
+        {
+          "Id": "3015f3d8-b93e-46f9-b81b-e476d2398b9c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aggregatedEnvironment",
+          "ChangeType": "Addition",
+          "Description": "Added the [aggregatedEnvironment](https://learn.microsoft.com/en-us/graph/api/resources/security-aggregatedEnvironment?view=graph-rest-beta) resource.",
+          "Target": "aggregatedEnvironment"
+        },
+        {
+          "Id": "3015f3d8-b93e-46f9-b81b-e476d2398b9c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "environment",
+          "ChangeType": "Addition",
+          "Description": "Added the [environment](https://learn.microsoft.com/en-us/graph/api/resources/security-environment?view=graph-rest-beta) resource.",
+          "Target": "environment"
+        },
+        {
+          "Id": "3015f3d8-b93e-46f9-b81b-e476d2398b9c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "zone",
+          "ChangeType": "Addition",
+          "Description": "Added the [zone](https://learn.microsoft.com/en-us/graph/api/resources/security-zone?view=graph-rest-beta) resource.",
+          "Target": "zone"
+        }
+      ],
+      "Id": "3015f3d8-b93e-46f9-b81b-e476d2398b9c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-12-23T08:40:56.0101974Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    }
+  ]
+}
