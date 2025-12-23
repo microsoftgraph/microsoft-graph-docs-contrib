@@ -79,7 +79,7 @@ _id_ property is always returned.
 > Delta queries for messages can return change events that don't match the filter conditions specified in the initial request.  
 > These include:
 >
-> - `@removed` entries with `"reason": "deleted"` when an item is moved or removed from the folder.
+> - `@removed` entries with `"reason": "deleted"` when an item is deleted or moved from the folder.
 > - Read/unread state changes.
 >
 > These events do **not** originate from changes to the message itself. They are emitted as part of the folder‑level synchronization process that delta tokens rely on.  
