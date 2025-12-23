@@ -20,6 +20,11 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
  
 ## December 2025: New and generally available
 
+### Security | eDiscovery
+
+- Added the [retry hold policy API](/graph/api/security-ediscoveryholdpolicy-retrypolicy) for triggering a retry of an [eDiscovery hold policy](/graph/api/resources/security-ediscoveryholdpolicy).
+- Added the [eDiscoveryCaseMember resource type and its associated APIs](/graph/api/resources/security-ediscoverycasemember) for managing members of an eDiscovery case.
+
 ### Teamwork and communications | Messaging
 
 When `$expand=members` is included, the [List chats](/graph/api/chat-list) API returns a maximum of 25 items, even if a larger `$top` value is specified.
@@ -80,7 +85,7 @@ Use the [userConfiguration](/graph/api/resources/userconfiguration?view=graph-re
 ### Teamwork and communications | Calls and online meetings
 
 - When `$expand=members` is included, the [List chats](/graph/api/chat-list?view=graph-rest-beta&preserve-view=true) API returns a maximum of 25 items, even if a larger `$top` value is specified.
-- The following endpoints are no longer supported for managing [work location](/graph/resources/userworklocation?view=graph-rest-beta&preserve-view=true) for a user:
+- The following endpoints are no longer supported for managing [work location](/graph/api/resources/userworklocation?view=graph-rest-beta&preserve-view=true) for a user:
   - `POST /users/{usersId}/presence/clearAutomaticLocation`
   - `POST /communications/presences/{presenceId}/clearAutomaticLocation`
   - `POST /users/{usersId}/presence/clearLocation`
@@ -122,10 +127,6 @@ Use the [userConfiguration](/graph/api/resources/userconfiguration?view=graph-re
 Deleted security groups can now be restored from [deleted items](/graph/api/resources/directory) within 30 days of deletion, similar to Microsoft 365 groups. Use the [Restore deleted item](/graph/api/directory-deleteditems-restore) API to restore a deleted security group.
 
 ### Identity and access | Governance
-
-Added the [userInactivityTrigger](/graph/api/resources/userinactivitytrigger) resource to support automatic triggering of access reviews based on user inactivity.
-
-### Identity and access | Identity and sign-in
 
 Added the [userInactivityTrigger](/graph/api/resources/identitygovernance-userinactivitytrigger?view=graph-rest-beta&preserve-view=true) resource to support automatic triggering of access reviews based on user inactivity.
 
