@@ -331,6 +331,24 @@
       "CreatedDateTime": "2025-11-17T15:49:25.5275052Z",
       "WorkloadArea": "Security",
       "SubArea": ""
-    }    
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b94d7abd-235d-4f28-b929-fb4e73102610",
+          "ApiChange": "Property",
+          "ChangedApiName": "domainName",
+          "ChangeType": "Addition",
+          "Description": "Added the **domainName** property to the [sensorCandidate](https://learn.microsoft.com/en-us/graph/api/resources/security-sensorCandidate?view=graph-rest-1.0) resource.",
+          "Target": "sensorCandidate"
+        }
+      ],
+      "Id": "b94d7abd-235d-4f28-b929-fb4e73102610",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-12-23T12:59:27.0649263Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    }
   ]
 }
