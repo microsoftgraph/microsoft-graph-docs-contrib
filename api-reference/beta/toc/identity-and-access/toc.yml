@@ -4548,6 +4548,14 @@ items:
         href: ../../api/networkaccess-forwardingoptions-get.md
       - name: Update
         href: ../../api/networkaccess-forwardingoptions-update.md
+    - name: Custom block page
+      items:
+      - name: Custom block page
+        href: ../../resources/networkaccess-customblockpage.md
+      - name: Get
+        href: ../../api/networkaccess-customblockpage-get.md
+      - name: Update
+        href: ../../api/networkaccess-customblockpage-update.md
   - name: Forwarding traffic
     items:
     - name: Forwarding profile
