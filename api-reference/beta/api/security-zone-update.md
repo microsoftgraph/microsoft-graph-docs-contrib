@@ -102,10 +102,14 @@ Content-Type: application/json
   "displayName": "Production Zone",
   "description": "Zone for production environments",
   "created": {
-    "@odata.type": "microsoft.graph.security.auditInfo"
+    "@odata.type": "microsoft.graph.security.auditInfo",
+    "by": "admin@microsoft.com",
+    "dateTime": "2024-01-15T10:30:00Z"
   },
   "modified": {
-    "@odata.type": "microsoft.graph.security.auditInfo"
+    "@odata.type": "microsoft.graph.security.auditInfo",
+    "by": "admin@microsoft.com",
+    "dateTime": "2024-01-20T14:45:00Z"
   }
 }
 ```

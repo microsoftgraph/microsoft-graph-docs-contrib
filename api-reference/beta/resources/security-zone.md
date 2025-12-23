@@ -1,6 +1,6 @@
 ---
 title: "Zone resource type"
-description: "A zone (also referred to ‘cloud scope’) is an aggregate of cloud-native environments utilized for managing access and security at scale within Microsoft Defender for Cloud. Zones enable the segmentation of multi-cloud environments - such as Azure, AWS, GCP, and connected DevOps or registry sources—into meaningful groupings, allowing for the consistent application of least-privilege access controls."
+description: "Represents an aggregate of cloud-native environments (also referred to as 'cloud scope') utilized for managing access and security at scale within Microsoft Defender for Cloud. Zones enable the segmentation of multi-cloud environments - such as Azure, AWS, GCP, and connected DevOps or registry sources—into meaningful groupings, allowing for the consistent application of least-privilege access controls."
 author: "Yarinle4"
 ms.date: 11/26/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A zone (also referred to ‘cloud scope’) is an aggregate of cloud-native environments utilized for managing access and security at scale within Microsoft Defender for Cloud. Zones enable the segmentation of multi-cloud environments - such as Azure, AWS, GCP, and connected DevOps or registry sources—into meaningful groupings, allowing for the consistent application of least-privilege access controls.  
+Represents an aggregate of cloud-native environments (also referred to as 'cloud scope') utilized for managing access and security at scale within Microsoft Defender for Cloud. Zones enable the segmentation of multi-cloud environments - such as Azure, AWS, GCP, and connected DevOps or registry sources—into meaningful groupings, allowing for the consistent application of least-privilege access controls.
 
 Once you set up a new zone, you’re able to assign roles to it. For further information, refer to [RBAC permissions assignment](../resources/rbacapplicationmultiple.md).
 

@@ -1,6 +1,6 @@
 ---
-title: "Environment Kind enum values"
-description: "Environment kind enumeration values"
+title: "Security cloud enum values"
+description: "Microsoft Graph security cloud enumeration values"
 author: "Yarinle4"
 ms.date: 11/26/2025
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.subservice: "security"
 doc_type: enumTypes
 ---
 
-# Microsoft Graph security enumeration values
+# Microsoft Graph security cloud enumeration values
 
 Namespace: microsoft.graph.security
 
@@ -22,7 +22,7 @@ Namespace: microsoft.graph.security
 | awsAccount              | AwsAccount                  | Numeric value of an AWS account ID                               | 12037495                                                                                                                                  |
 | gcpOrganization         | GcpOrganization             | Numeric value of a GCP organization ID                           | 548374839182756832                                                                                                                       |
 | gcpProject              | GcpProject                  | Numeric value of a GCP project (Project Number)                  | 548374839182756832                                                                                                                       |
-| dockersHubOrganization  | DockersHubOrganization      | DockerHub organization name                                      | Adfehfh5732jfgjg                                                                                                                          |
+| dockerHubOrganization   | DockerHubOrganization       | DockerHub organization name                                      | Adfehfh5732jfgjg                                                                                                                          |
 | devOpsConnection        | DevOpsConnection            | GUID **or** Azure Resource ID of a DevOps security connector     | 3353810e-f85f-4d0a-8377-ad8180edb8d2<br>/subscriptions/31d30e45-c89d-4e69-b85e-aada1da04075/resourcegroups/dfd-annotations-cloudtest/providers/Microsoft.Security/securityconnectors/dfdar-df-ct-scus |
 | azureDevOpsOrganization | AzureDevOpsOrganization     | GUID (unique ID of the Azure DevOps organization)                | 3f5493e6-8aba-485d-9120-c881b1322b52                                                                                                      |
 | gitHubOrganization      | GitHubOrganization          | GitHub organization ID                                           | 48028332                                                                                                                                  |

@@ -448,8 +448,6 @@ items:
         href: ../../api/security-ediscoveryholdpolicy-post-usersources.md
       - name: Delete
         href: ../../api/security-ediscoveryholdpolicy-delete-usersources.md
-      - name: Retry policy
-        href: ../../api/security-ediscoveryholdpolicy-retrypolicy.md
   - name: eDiscovery search
     items:
     - name: eDiscovery search

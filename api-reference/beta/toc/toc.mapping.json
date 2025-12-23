@@ -2841,7 +2841,7 @@
             "microsoft.graph.security.defaultAuditData"
           ]
         },
-                {
+        {
           "name": "Cloud scopes / zones (preview)",
           "resources": [
             "microsoft.graph.security.zone",

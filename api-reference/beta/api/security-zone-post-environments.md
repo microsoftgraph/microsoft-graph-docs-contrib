@@ -1,6 +1,6 @@
 ---
 title: "Attach environment"
-description: "Create a new environment object."
+description: "Attach an environment object to a zone object."
 author: "Yarinle4"
 ms.date: 11/26/2025
 ms.localizationpriority: medium
