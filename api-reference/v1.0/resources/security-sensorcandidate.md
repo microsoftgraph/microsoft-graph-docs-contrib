@@ -50,7 +50,7 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "computerDnsName": "String",
   "senseClientVersion": "String",
-  "lastSeenDateTime": "String (timestamp)"ת
+  "lastSeenDateTime": "String (timestamp)",
   "domainName": "String"
 }
 ```
