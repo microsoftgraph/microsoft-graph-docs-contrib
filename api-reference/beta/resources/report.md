@@ -12,7 +12,7 @@ ms.date: 12/22/2025
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-With Microsoft Graph, you can access Microsoft 365 usage reports resources to get the information about how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who might not need a Microsoft 365 license at all.
+By using Microsoft Graph, you can access Microsoft 365 usage reports resources to get information about how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who might not need a Microsoft 365 license at all.
 
 For more information about the settings that govern identification/de-identification of information in the Microsoft 365 usage reports data, see [Microsoft 365 Reports in the admin center](/microsoft-365/admin/activity-reports/activity-reports) .
 
@@ -22,7 +22,7 @@ Microsoft Graph controls access to resources through permissions. You must speci
 
 ## Settings
 
-In Microsoft 365 reports, user information such as usernames, groups, and sites are concealed; actual values aren't displayed. You can use the [adminReportSettings](../resources/adminreportsettings.md) API to control the display of user information in the reports.
+In Microsoft 365 reports, user information such as usernames, groups, and sites is concealed; actual values aren't displayed. You can use the [adminReportSettings](../resources/adminreportsettings.md) API to control the display of user information in the reports.
 
 ## Cloud deployments
 
