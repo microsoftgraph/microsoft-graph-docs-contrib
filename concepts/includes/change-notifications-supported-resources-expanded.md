@@ -10,18 +10,10 @@ ms.date: 11/07/2024
 
 <!-- markdownlint-disable MD041-->
 
-An app can subscribe to changes on the Microsoft Graph resources listed in the table.
+An app can subscribe to changes on the Microsoft Graph resources listed in the table. Subscriptions to resources marked with an asterisk (`*`) are only available on the `/beta` endpoint.
 
 > [!NOTE]
-> Subscriptions to resources marked with an asterisk (`*`) are only available on the `/beta` endpoint.
-
-
-> [!IMPORTANT]
-> For Microsoft Teams resources, the **"Per organization: 10,000 total subscriptions" limit is shared cumulatively across all Teams change notification subscriptions** in the tenant.  
->  
-> This means subscriptions created for different Teams resources, such as chats, chat messages, call transcripts, call recordings, channels, teams, and conversation members, **all contribute to the same organizational quota pool**.  
->  
-> When the combined number of active Teams subscriptions reaches this limit, additional subscription creation requests for any Teams resource will fail with a `403 Forbidden` error.
+> For Microsoft Teams resources, the **per-organization limit of 10,000 total subscriptions** is shared cumulatively across **all Teams change notification subscriptions** in the tenant. It includes subscriptions created for different Teams resources—such as chats, chat messages, call transcripts, call recordings, channels, teams, and conversation members—which **all count toward the same organizational quota**. When the combined number of active Teams subscriptions reaches this limit, **any additional subscription creation request for a Teams resource fails** with a `403 Forbidden` error.
 
 
 | Resource | Supported resource paths | Limitations |
