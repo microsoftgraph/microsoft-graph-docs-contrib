@@ -20,10 +20,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
  
 ## December 2025: New and generally available
 
-### Security | eDiscovery
+### Teamwork and communications | Calls and online meetings
 
-- Added the [retry hold policy API](/graph/api/security-ediscoveryholdpolicy-retrypolicy) for triggering a retry of an [eDiscovery hold policy](/graph/api/resources/security-ediscoveryholdpolicy).
-- Added the [eDiscoveryCaseMember resource type and its associated APIs](/graph/api/resources/security-ediscoverycasemember) for managing members of an eDiscovery case.
+- Use the **sensitivityLabelAssignment** property on [onlineMeeting](/graph/api/resources/onlinemeeting) and [virtualEventSession](/graph/api/resources/virtualeventsession) to specify the sensitivity label applied to the Teams meeting.
+- Use the **expiryDateTime** property on [onlineMeeting](/graph/api/resources/onlinemeeting) and [virtualEventSession](/graph/api/resources/virtualeventsession) to indicate the date and time when the meeting resource expires.
+- Use the **meetingSpokenLanguageTag** property on [onlineMeeting](/graph/api/resources/onlinemeeting) and [virtualEventSession](/graph/api/resources/virtualeventsession) to specify the spoken language used during the meeting for recording and transcription purposes.
+- Use the **meetingOptionsWebUrl** property on [onlineMeeting](/graph/api/resources/onlinemeeting) and [virtualEventSession](/graph/api/resources/virtualeventsession) to get the URL to the Teams meeting options page for the specified meeting.
 
 ### Teamwork and communications | Messaging
 

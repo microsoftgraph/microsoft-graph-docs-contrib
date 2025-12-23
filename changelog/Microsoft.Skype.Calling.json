@@ -1,6 +1,120 @@
 {
-  "changelog": [
+  "changelog": [    
+    {
+      "ChangeList": [
         {
+          "Id": "94772378-a35f-46e1-a514-13e6a88982a0",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingSpokenLanguageTag",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingSpokenLanguageTag** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "94772378-a35f-46e1-a514-13e6a88982a0",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingSpokenLanguageTag",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingSpokenLanguageTag** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "94772378-a35f-46e1-a514-13e6a88982a0",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingSpokenLanguageTag",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingSpokenLanguageTag** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventSession"
+        },
+        {
+          "Id": "94772378-a35f-46e1-a514-13e6a88982a0",
+          "ApiChange": "Property",
+          "ChangedApiName": "expiryDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **expiryDateTime** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "94772378-a35f-46e1-a514-13e6a88982a0",
+          "ApiChange": "Property",
+          "ChangedApiName": "expiryDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **expiryDateTime** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "94772378-a35f-46e1-a514-13e6a88982a0",
+          "ApiChange": "Property",
+          "ChangedApiName": "expiryDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **expiryDateTime** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventSession"
+        },
+        {
+          "Id": "94772378-a35f-46e1-a514-13e6a88982a0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onlineMeetingSensitivityLabelAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [onlineMeetingSensitivityLabelAssignment](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingSensitivityLabelAssignment?view=graph-rest-1.0) resource type.",
+          "Target": "onlineMeetingSensitivityLabelAssignment"
+        },
+        {
+          "Id": "94772378-a35f-46e1-a514-13e6a88982a0",
+          "ApiChange": "Property",
+          "ChangedApiName": "sensitivityLabelAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the **sensitivityLabelAssignment** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "94772378-a35f-46e1-a514-13e6a88982a0",
+          "ApiChange": "Property",
+          "ChangedApiName": "sensitivityLabelAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the **sensitivityLabelAssignment** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "94772378-a35f-46e1-a514-13e6a88982a0",
+          "ApiChange": "Property",
+          "ChangedApiName": "sensitivityLabelAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the **sensitivityLabelAssignment** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventSession"
+        },
+        {
+          "Id": "94772378-a35f-46e1-a514-13e6a88982a0",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingOptionsWebUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingOptionsWebUrl** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "94772378-a35f-46e1-a514-13e6a88982a0",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingOptionsWebUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingOptionsWebUrl** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventSession"
+        },
+        {
+          "Id": "94772378-a35f-46e1-a514-13e6a88982a0",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingOptionsWebUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingOptionsWebUrl** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "94772378-a35f-46e1-a514-13e6a88982a0",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-12-23T23:08:18.974258Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+},
+{
       "ChangeList": [
         {
           "Id": "16233155-22b1-43c8-bc48-1546a2b8ce31",
