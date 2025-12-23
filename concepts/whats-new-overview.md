@@ -20,6 +20,11 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
  
 ## December 2025: New and generally available
 
+### Security | eDiscovery
+
+- Added the [retry hold policy API](/graph/api/security-ediscoveryholdpolicy-retrypolicy) for triggering a retry of an [eDiscovery hold policy](/graph/api/resources/security-ediscoveryholdpolicy).
+- Added the [eDiscoveryCaseMember resource type and its associated APIs](/graph/api/resources/security-ediscoverycasemember) for managing members of an eDiscovery case.
+
 ### Teamwork and communications | Messaging
 
 When `$expand=members` is included, the [List chats](/graph/api/chat-list) API returns a maximum of 25 items, even if a larger `$top` value is specified.
