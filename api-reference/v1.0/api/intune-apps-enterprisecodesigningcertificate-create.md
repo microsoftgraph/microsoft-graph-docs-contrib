@@ -70,7 +70,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request" , "name" : "intune_apps_enterprisecodesigningcertificate_create_create_enterprisecodesigningcertificate" }-->
 ```http
-POST https://graph.microsoft.com/beta/deviceAppManagement/enterpriseCodeSigningCertificates
+POST https://graph.microsoft.com/v1.0/deviceAppManagement/enterpriseCodeSigningCertificates
 Content-type: application/json
 Content-length: 390
 

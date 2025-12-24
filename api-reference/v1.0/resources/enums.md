@@ -3737,9 +3737,78 @@ Possible values for user account types (group membership), per Windows definitio
 | unknownFutureValue |
 | rosterUpdated |
 
-### resourceLinkType values 
+### resourceLinkType values
 
 |Member|
 |:---|
 |url|
+|unknownFutureValue|
+
+### fileStorageContainerBillingClassification values 
+
+|Member|
+|:---|
+|standard|
+|trial|
+|directToCustomer|
+|unknownFutureValue|
+
+### fileStorageContainerBillingStatus values 
+
+|Member|
+|:---|
+|invalid|
+|valid|
+|unknownFutureValue|
+
+### fileStorageContainerTypeAppPermission values 
+|Member|
+|:---|
+|none|
+|readContent|
+|writeContent|
+|manageContent|
+|create|
+|delete|
+|read|
+|write|
+|enumeratePermissions|
+|addPermissions|
+|updatePermissions|
+|deletePermissions|
+|deleteOwnPermission|
+|managePermissions|
+|full|
+|unknownFutureValue|
+
+### fileStorageContainerTypeSettingsOverride values 
+
+|Member|
+|:---|
+|urlTemplate|
+|isDiscoverabilityEnabled|
+|isSearchEnabled|
+|isItemVersioningEnabled|
+|itemMajorVersionLimit|
+|maxStoragePerContainerInBytes|
+|unknownFutureValue|
+
+
+### workLocationSource values 
+
+|Member|
+|:---|
+|manual|
+|scheduled|
+|automatic|
+|unknownFutureValue|
+
+### workLocationType values
+
+|Member|
+|:---|
+|unspecified|
+|office|
+|remote|
+|timeOff|
 |unknownFutureValue|
