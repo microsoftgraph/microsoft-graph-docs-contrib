@@ -18,58 +18,18 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
  
-## December 2025: New in private preview
-
-### Files
-
-Use the **deleted** property on [sharePointGroupIdentityMapping](/graph/api/resources/sharepointgroupidentitymapping?view=graph-rest-beta&preserve-view=true) and [sharePointUserIdentityMapping](/graph/api/resources/sharepointuseridentitymapping?view=graph-rest-beta&preserve-view=true) to indicate that an identity mapping was deleted successfully.
-
 ## December 2025: New and generally available
 
 ### Teamwork and communications | Calls and online meetings
 
-- The [callRecord: getPstnCalls](/graph/api/callrecords-callrecord-getpstncalls) API now clarifies that it doesn't return information for **Telstra** calling plans only.
-- Use the following new endpoints to enable the management of work location for a user:
-  - [Clear](/graph/api/presence-clearautomaticlocation) the automatic work location value for a user.
-  - [Clear](/graph/api/presence-clearlocation) the work location signals for a user, including both the manual and automatic layers for the current date.
-  - [Set](/graph/api/presence-setautomaticlocation) the automatic work location for a user.
-  - [Set](/graph/api/presence-setmanuallocation) the user’s manual work location signal.
+- Use the **sensitivityLabelAssignment** property on [onlineMeeting](/graph/api/resources/onlinemeeting) and [virtualEventSession](/graph/api/resources/virtualeventsession) to specify the sensitivity label applied to the Teams meeting.
+- Use the **expiryDateTime** property on [onlineMeeting](/graph/api/resources/onlinemeeting) and [virtualEventSession](/graph/api/resources/virtualeventsession) to indicate the date and time when the meeting resource expires.
+- Use the **meetingSpokenLanguageTag** property on [onlineMeeting](/graph/api/resources/onlinemeeting) and [virtualEventSession](/graph/api/resources/virtualeventsession) to specify the spoken language used during the meeting for recording and transcription purposes.
+- Use the **meetingOptionsWebUrl** property on [onlineMeeting](/graph/api/resources/onlinemeeting) and [virtualEventSession](/graph/api/resources/virtualeventsession) to get the URL to the Teams meeting options page for the specified meeting.
 
-### Device and app management | Cloud PC
+### Teamwork and communications | Messaging
 
-- [Retrieve](/graph/api/cloudpcreport-retrievecloudpcrecommendationreports) Cloud PC recommendation reports for usage optimization and cost savings.
-- [Get](/graph/api/cloudpc-retrievecloudpclaunchdetail) the [cloudPcLaunchDetail](/graph/api/resources/cloudpclaunchdetail) for a specific Cloud PC that belongs to the current signed-in user.
-
-### Device and app management | Cloud printing
-
-Use the new supported [media sizes](/graph/api/resources/printercapabilities#mediasizes-values) in the **mediaSizes** property of the [printerCapabilities](/graph/api/resources/printercapabilities) resource.
-
-### Files
-
-Use the following new resources and their methods to further support structured file storage in SharePoint Embedded applications:
-  - [fileStorageContainerType](/graph/api/resources/filestoragecontainertype)
-  - [fileStorageContainerTypeAppPermissionGrant](/graph/api/resources/filestoragecontainertypeapppermissiongrant)
-  - [fileStorageContainerTypeRegistration](/graph/api/resources/filestoragecontainertyperegistration)
-
-### Identity and access | Governance
-
-Use the following resources to represent the data sent to Azure Logic Apps as part of a custom extension callout request when a custom extension in a catalog is used:
-- [accessPackageAssignmentCalloutData](/graph/api/resources/accesspackageassignmentcalloutdata) - for access package assignments
-- [accessPackageAssignmentRequestCalloutData](/graph/api/resources/accesspackageassignmentrequestcalloutdata) - for access package assignment requests
-
-### Security | eDiscovery
-
-- Added the [retry hold policy API](/graph/api/security-ediscoveryholdpolicy-retrypolicy) for triggering a retry of an [eDiscovery hold policy](/graph/api/resources/security-ediscoveryholdpolicy).
-- Added the [eDiscoveryCaseMember resource type and its associated APIs](/graph/api/resources/security-ediscoverycasemember) for managing members of an eDiscovery case.
-
-### Teamwork and communications | Administration
-
-[Get](/graph/api/teamsadministration-teamsuserconfiguration-get) or [list](/graph/api/teamsadministration-teamsadminroot-list-userconfigurations) user configurations for users with accounts in the Teams context.
-
-[Get the policy ID](/graph/api/teamsadministration-teamspolicyassignment-getpolicyid) for a given policy name and policy type within Teams administration.
-[Assign a Teams policy](/graph/api/teamsadministration-teamspolicyuserassignment-assign) to a user using the user ID, policy type, and policy ID.
-[Unassign a Teams policy](/graph/api/teamsadministration-teamspolicyuserassignment-unassign) from a user using the user ID and policy type.
-
+When `$expand=members` is included, the [List chats](/graph/api/chat-list) API returns a maximum of 25 items, even if a larger `$top` value is specified.
 
 ## December 2025: New in preview only
 
@@ -87,7 +47,8 @@ Use the new supported [media sizes](/graph/api/resources/printercapabilities?vie
 
 ### Files
 
-Use the SharePoint cross-tenant migration task APIs in Microsoft Graph to enable organizations to manage the tasks during tenant-to-tenant migrations. For more information, see [sharePointMigrationTask](/graph/api/resources/sharepointmigrationtask?view=graph-rest-beta&preserve-view=true).
+- Use the SharePoint cross-tenant migration task APIs in Microsoft Graph to enable organizations to manage the tasks during tenant-to-tenant migrations. For more information, see [sharePointMigrationTask](/graph/api/resources/sharepointmigrationtask?view=graph-rest-beta&preserve-view=true).
+- Use the **deleted** property on [sharePointGroupIdentityMapping](/graph/api/resources/sharepointgroupidentitymapping?view=graph-rest-beta&preserve-view=true) and [sharePointUserIdentityMapping](/graph/api/resources/sharepointuseridentitymapping?view=graph-rest-beta&preserve-view=true) to indicate that an identity mapping was deleted successfully.
 
 ### Identity and access | Governance
 
@@ -102,18 +63,31 @@ Use the SharePoint cross-tenant migration task APIs in Microsoft Graph to enable
 
 Added the `microsoftRevokedSessions` value to the [riskDetail](/graph/api/resources/riskdetail?view=graph-rest-beta&preserve-view=true) enumeration to indicate that Microsoft revoked sessions. This enumeration member applies to the following Microsoft Entra Identity Protection resources: [riskDetection](/graph/api/resources/riskdetection?view=graph-rest-beta&preserve-view=true), [riskUserActivity](/graph/api/resources/riskuseractivity?view=graph-rest-beta&preserve-view=true), [riskyUser](/graph/api/resources/riskyuser?view=graph-rest-beta&preserve-view=true), and [signIn](/graph/api/resources/signin?view=graph-rest-beta&preserve-view=true).
 
+### Identity and access | Network access
+
+Customize the block page message displayed to users when Global Secure Access blocks their access to web resources. Use the [customBlockPage](/graph/api/resources/networkaccess-customblockpage?view=graph-rest-beta&preserve-view=true) resource to configure custom messages with limited markdown support.
+
 ### Mail
 
 Use the [userConfiguration](/graph/api/resources/userconfiguration?view=graph-rest-beta&preserve-view=true) resource and its associated methods to manage user-specific settings, metadata, or application data tied to mailbox folders, using XML, binary, or dictionary formats.
 
-### Personal contacts
-
-Use the **primaryEmailAddress**, **secondaryEmailAddress**, and **tertiaryEmailAddress** properties on [contact](/graph/api/resources/contact?view=graph-rest-beta&preserve-view=true) to get or set the primary, secondary, and tertiary email addresses of a contact.
-
-### Teamwork and communications | Calls and online meetings
+### Mail
 
 - The [callRecord: getPstnCalls](/graph/api/callrecords-callrecord-getpstncalls?view=graph-rest-beta&preserve-view=true) API now clarifies that it doesn't return information for **Telstra** calling plans only.
 - The following endpoints are no longer supported for managing [user work location](/graph/api/resources/userworklocation?view=graph-rest-beta&preserve-view=true):
+  - `POST /users/{usersId}/presence/clearAutomaticLocation`
+  - `POST /communications/presences/{presenceId}/clearAutomaticLocation`
+  - `POST /users/{usersId}/presence/clearLocation`
+  - `POST /communications/presences/{presenceId}/clearLocation`
+  - `POST /users/{usersId}/presence/setAutomaticLocation`
+  - `POST /communications/presences/{presenceId}/setAutomaticLocation`
+  - `POST /users/{usersId}/presence/setManualLocation`
+  - `POST /communications/presences/{presenceId}/setManualLocation`
+
+### Teamwork and communications | Calls and online meetings
+
+- When `$expand=members` is included, the [List chats](/graph/api/chat-list?view=graph-rest-beta&preserve-view=true) API returns a maximum of 25 items, even if a larger `$top` value is specified.
+- The following endpoints are no longer supported for managing [work location](/graph/api/resources/userworklocation?view=graph-rest-beta&preserve-view=true) for a user:
   - `POST /users/{usersId}/presence/clearAutomaticLocation`
   - `POST /communications/presences/{presenceId}/clearAutomaticLocation`
   - `POST /users/{usersId}/presence/clearLocation`
@@ -155,10 +129,6 @@ Use the **primaryEmailAddress**, **secondaryEmailAddress**, and **tertiaryEmailA
 Deleted security groups can now be restored from [deleted items](/graph/api/resources/directory) within 30 days of deletion, similar to Microsoft 365 groups. Use the [Restore deleted item](/graph/api/directory-deleteditems-restore) API to restore a deleted security group.
 
 ### Identity and access | Governance
-
-Added the [userInactivityTrigger](/graph/api/resources/userinactivitytrigger) resource to support automatic triggering of access reviews based on user inactivity.
-
-### Identity and access | Identity and sign-in
 
 Added the [userInactivityTrigger](/graph/api/resources/identitygovernance-userinactivitytrigger?view=graph-rest-beta&preserve-view=true) resource to support automatic triggering of access reviews based on user inactivity.
 

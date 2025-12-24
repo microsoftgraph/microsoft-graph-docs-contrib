@@ -2001,6 +2001,8 @@
             "presence"
           ],
           "complexTypes": [
+            "onlineMeetingSensitivityLabelAssignment",
+            "outOfOfficeSettings",
             "outOfOfficeSettings",
             "userWorkLocation"
           ],

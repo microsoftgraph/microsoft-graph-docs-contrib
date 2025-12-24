@@ -22,11 +22,7 @@ Get a list of the [onPremAuthenticationPolicy](../resources/onpremauthentication
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "policyroot-list-onpremauthenticationpolicies-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "policyroot_list_onpremauthenticationpolicies" } -->
 [!INCLUDE [permissions-table](../includes/permissions/policyroot-list-onpremauthenticationpolicies-permissions.md)]
 
 [!INCLUDE [onpremauthenticationpolicy-entra-roles-read](../includes/rbac-for-apis/onpremauthenticationpolicy-entra-roles-read.md)]

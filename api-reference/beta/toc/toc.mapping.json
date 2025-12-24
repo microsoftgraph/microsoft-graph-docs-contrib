@@ -2152,7 +2152,8 @@
               "resources": [
                 "microsoft.graph.networkaccess.crossTenantAccessSettings",
                 "microsoft.graph.networkaccess.conditionalAccessSettings",
-                "microsoft.graph.networkaccess.forwardingOptions"
+                "microsoft.graph.networkaccess.forwardingOptions",
+                "microsoft.graph.networkaccess.customBlockPage"
               ]
             },
             {
@@ -2950,8 +2951,7 @@
             "microsoft.graph.security.identityAccounts",
             "microsoft.graph.security.user",
             "microsoft.graph.security.sensorCandidate",
-            "microsoft.graph.security.sensorCandidateActivationConfiguration",
-            "microsoft.graph.security.autoAuditingConfiguration"
+            "microsoft.graph.security.sensorCandidateActivationConfiguration"
           ],
           "complexTypes": [
             "microsoft.graph.security.deploymentAccessKeyType",

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get the status of a SharePoint [site](../resources/site.md) creation operation to monitor its progress.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
