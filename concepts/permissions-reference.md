@@ -575,8 +575,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read the API connectors used in user authentication flows, without a signed-in user. | Allows the app to read the API connectors used in user authentication flows, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
-Refer to [Best practice for choosing permission types](permissions-overview.md#best-practice-for-choosing-permission-types-to-register-your-connector-agent) to register your connector agent successfully.
-
 ---
 
 ### APIConnectors.ReadWrite.All
@@ -587,8 +585,6 @@ Refer to [Best practice for choosing permission types](permissions-overview.md#b
 | DisplayText | Read and write API connectors for authentication flows | Read and write API connectors for authentication flows |
 | Description | Allows the app to read, create and manage the API connectors used in user authentication flows, without a signed-in user. | Allows the app to read, create and manage the API connectors used in user authentication flows, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
-
-Refer to [Best practice for choosing permission types](permissions-overview.md#best-practice-for-choosing-permission-types-to-register-your-connector-agent) to register your connector agent successfully.
 
 ---
 
