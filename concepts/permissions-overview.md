@@ -81,8 +81,8 @@ The following image illustrates an app's privileges in delegated vs app-only acc
 
 ### Best practice for choosing permission types to register your connector agent
 
-Graph connector agents run as background services and require Microsoft Graph Application permissions.
-**Delegated permissions aren't supported** for connector agent registration and cause registration failures, even if permissions appear correctly configured.
+Graph connector agents run as background services and require Microsoft Graph Application permissions.<br>
+**Delegated permissions aren't supported** for connector agent registration and cause registration failures, even if permissions appear correctly configured.<br>
 Request the **least-privileged Application permissions** needed for your connector scenario and ensure **tenant‑wide admin consent** is granted.
 
 ## Permissions naming pattern
@@ -221,7 +221,7 @@ Some Microsoft Graph permissions grant access to a wider range of data or operat
 
 In API reference documentation relating to Microsoft Entra ID resources, some of these higher privileged permissions might be intentionally excluded from the table of permissions supported to access the API.
 
-In addition, the Global Administrator role is the highest privileged built-in role in Microsoft Entra ID. In API reference documentation, this role is intentionally excluded from the list of roles supported to access the API in favor of lesser-privileged roles.
+In addition, the Global Administrator role is the highest privileged built-in role in Microsoft Entra ID. In API reference documentation, this role is intentionally excluded from the list of roles that support access to the API in favor of lesser-privileged roles.
 
 ## Limits on requested permissions per app
 
