@@ -1,78 +1,78 @@
 {
   "changelog": [
     {
-        "ChangeList": [
-            {
-                "Id": "371175e2-5a48-4494-83f3-88fde874ac7b",
-                "ApiChange": "Resource",
-                "ChangedApiName": "policyIdentifierDetail",
-                "ChangeType": "Addition",
-                "Description": "Added the [policyIdentifierDetail](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-policyIdentifierDetail?view=graph-rest-beta) resource type.",
-                "Target": "policyIdentifierDetail"
-            },
-            {
-                "Id": "371175e2-5a48-4494-83f3-88fde874ac7b",
-                "ApiChange": "Resource",
-                "ChangedApiName": "teamsPolicyAssignment",
-                "ChangeType": "Addition",
-                "Description": "Added the [teamsPolicyAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsPolicyAssignment?view=graph-rest-beta) resource and an associated method.",
-                "Target": "teamsPolicyAssignment"
-            },
-            {
-                "Id": "371175e2-5a48-4494-83f3-88fde874ac7b",
-                "ApiChange": "Resource",
-                "ChangedApiName": "teamsPolicyUserAssignment",
-                "ChangeType": "Addition",
-                "Description": "Added the [teamsPolicyUserAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsPolicyUserAssignment?view=graph-rest-beta) resource and associated methods.",
-                "Target": "teamsPolicyUserAssignment"
-            },
-            {
-                "Id": "371175e2-5a48-4494-83f3-88fde874ac7b",
-                "ApiChange": "Relationship",
-                "ChangedApiName": "policy",
-                "ChangeType": "Addition",
-                "Description": "Added the **policy** relationship to the [teamsAdminRoot](https://learn.microsoft.com/en-us/graph/api/resources/teamsadministration-teamsAdminRoot?view=graph-rest-beta) resource.",
-                "Target": "teamsAdminRoot"
-            },
-            {
-                "Id": "371175e2-5a48-4494-83f3-88fde874ac7b",
-                "ApiChange": "Method",
-                "ChangedApiName": "assign",
-                "ChangeType": "Addition",
-                "Description": "Added the [assign](https://learn.microsoft.com/en-us/graph/api/teamsAdministration-teamsPolicyUserAssignment-assign?view=graph-rest-beta) method to the [teamsPolicyUserAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsPolicyUserAssignment?view=graph-rest-beta) resource.",
-                "Target": "teamsPolicyUserAssignment"
-            },
-            {
-                "Id": "371175e2-5a48-4494-83f3-88fde874ac7b",
-                "ApiChange": "Method",
-                "ChangedApiName": "unassign",
-                "ChangeType": "Addition",
-                "Description": "Added the [unassign](https://learn.microsoft.com/en-us/graph/api/teamsAdministration-teamsPolicyUserAssignment-unassign?view=graph-rest-beta) method to the [teamsPolicyUserAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsPolicyUserAssignment?view=graph-rest-beta) resource.",
-                "Target": "teamsPolicyUserAssignment"
-            },
-            {
-                "Id": "371175e2-5a48-4494-83f3-88fde874ac7b",
-                "ApiChange": "Method",
-                "ChangedApiName": "getPolicyId",
-                "ChangeType": "Addition",
-                "Description": "Added the [getPolicyId](https://learn.microsoft.com/en-us/graph/api/teamsAdministration-teamsPolicyAssignment-getPolicyId?view=graph-rest-beta) method to the [teamsPolicyAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsPolicyAssignment?view=graph-rest-beta) resource.",
-                "Target": "teamsPolicyAssignment"
-            },
-            {
-                "Id": "7ac3b00e-b7c0-4d0d-ab38-3f6cd59a3fbd",
-                "ApiChange": "Relationship",
-                "ChangedApiName": "userAssignments",
-                "ChangeType": "Addition",
-                "Description": "Added the **userAssignments** relationship to the [teamsPolicyAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsPolicyAssignment?view=graph-rest-beta) resource.",
-                "Target": "teamsPolicyAssignment"
-            }
-        ],
-        "Id": "371175e2-5a48-4494-83f3-88fde874ac7b",
-        "Cloud": "Prod",
-        "Version": "beta",
-        "CreatedDateTime": "2025-09-26T08:28:18.2482078Z",
-        "WorkloadArea": "Teamwork and communications",
-        "SubArea": "Administration"
+      "ChangeList": [
+        {
+          "Id": "371175e2-5a48-4494-83f3-88fde874ac7b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "policyIdentifierDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [policyIdentifierDetail](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-policyIdentifierDetail?view=graph-rest-beta) resource type.",
+          "Target": "policyIdentifierDetail"
+        },
+        {
+          "Id": "371175e2-5a48-4494-83f3-88fde874ac7b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsPolicyAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsPolicyAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsPolicyAssignment?view=graph-rest-beta) resource and an associated method.",
+          "Target": "teamsPolicyAssignment"
+        },
+        {
+          "Id": "371175e2-5a48-4494-83f3-88fde874ac7b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsPolicyUserAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsPolicyUserAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsPolicyUserAssignment?view=graph-rest-beta) resource and associated methods.",
+          "Target": "teamsPolicyUserAssignment"
+        },
+        {
+          "Id": "371175e2-5a48-4494-83f3-88fde874ac7b",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "policy",
+          "ChangeType": "Addition",
+          "Description": "Added the **policy** relationship to the [teamsAdminRoot](https://learn.microsoft.com/en-us/graph/api/resources/teamsadministration-teamsAdminRoot?view=graph-rest-beta) resource.",
+          "Target": "teamsAdminRoot"
+        },
+        {
+          "Id": "371175e2-5a48-4494-83f3-88fde874ac7b",
+          "ApiChange": "Method",
+          "ChangedApiName": "assign",
+          "ChangeType": "Addition",
+          "Description": "Added the [assign](https://learn.microsoft.com/en-us/graph/api/teamsAdministration-teamsPolicyUserAssignment-assign?view=graph-rest-beta) method to the [teamsPolicyUserAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsPolicyUserAssignment?view=graph-rest-beta) resource.",
+          "Target": "teamsPolicyUserAssignment"
+        },
+        {
+          "Id": "371175e2-5a48-4494-83f3-88fde874ac7b",
+          "ApiChange": "Method",
+          "ChangedApiName": "unassign",
+          "ChangeType": "Addition",
+          "Description": "Added the [unassign](https://learn.microsoft.com/en-us/graph/api/teamsAdministration-teamsPolicyUserAssignment-unassign?view=graph-rest-beta) method to the [teamsPolicyUserAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsPolicyUserAssignment?view=graph-rest-beta) resource.",
+          "Target": "teamsPolicyUserAssignment"
+        },
+        {
+          "Id": "371175e2-5a48-4494-83f3-88fde874ac7b",
+          "ApiChange": "Method",
+          "ChangedApiName": "getPolicyId",
+          "ChangeType": "Addition",
+          "Description": "Added the [getPolicyId](https://learn.microsoft.com/en-us/graph/api/teamsAdministration-teamsPolicyAssignment-getPolicyId?view=graph-rest-beta) method to the [teamsPolicyAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsPolicyAssignment?view=graph-rest-beta) resource.",
+          "Target": "teamsPolicyAssignment"
+        },
+        {
+          "Id": "7ac3b00e-b7c0-4d0d-ab38-3f6cd59a3fbd",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "userAssignments",
+          "ChangeType": "Addition",
+          "Description": "Added the **userAssignments** relationship to the [teamsPolicyAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsPolicyAssignment?view=graph-rest-beta) resource.",
+          "Target": "teamsPolicyAssignment"
+        }
+      ],
+      "Id": "371175e2-5a48-4494-83f3-88fde874ac7b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-09-26T08:28:18.2482078Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Administration"
     },
     {
       "ChangeList": [
