@@ -48,7 +48,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [team](../resources/team.md) objects in the response body.
 
 > [!NOTE]
-> Currently, this API call returns all properties of a [team](../resources/team.md) object, but only the **id**, **displayName**, **description**, **visibility**, and **tenantId** properties are populated. All other properties are returned as `null`. To get all properties with values, use the [Get team](../api/team-get.md) operation.
+> Currently, this API call returns all properties of a [team](../resources/team.md) object, but only populates the **id**, **displayName**, **description**, and **visibility** properties. All other properties are returned as `null`. To get all populated properties, use the [Get team](../api/team-get.md) operation. 
 
 ## Examples
 
@@ -126,7 +126,6 @@ Content-type: application/json
       "visibility": "public",
       "webUrl": null,
       "isArchived": null,
-      "tenantId": "b3246f44-b4gb-4627-96c6-25b18fa2c910",
       "isMembershipLimitedToOwners": null,
       "memberSettings": null,
       "guestSettings": null,
@@ -147,7 +146,6 @@ Content-type: application/json
       "visibility": "private",
       "webUrl": null,
       "isArchived": null,
-      "tenantId": "b3246f44-b4gb-4627-96c6-25b18fa2c910",
       "isMembershipLimitedToOwners": null,
       "memberSettings": null,
       "guestSettings": null,
@@ -237,7 +235,6 @@ Content-type: application/json
       "visibility": "public",
       "webUrl": null,
       "isArchived": null,
-      "tenantId": "b3246f44-b4gb-4627-96c6-25b18fa2c910",
       "isMembershipLimitedToOwners": null,
       "memberSettings": null,
       "guestSettings": null,
@@ -258,7 +255,6 @@ Content-type: application/json
       "visibility": "private",
       "webUrl": null,
       "isArchived": null,
-      "tenantId": "b3246f44-b4gb-4627-96c6-25b18fa2c910",
       "isMembershipLimitedToOwners": null,
       "memberSettings": null,
       "guestSettings": null,
