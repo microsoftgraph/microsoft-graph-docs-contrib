@@ -42,7 +42,7 @@ For example, an application gets the *Files.Read.All* delegated permission on be
 
 **Therefore, in a delegated scenario, the privileges that an app has to act on behalf of a user is determined by the Microsoft Graph permissions that the app has been granted *and* the user's own permissions.**
 
-In a delegated access scenario, an app might allow users to sign in with their personal Microsoft accounts, like Outlook.com, work or school accounts, or allow both account types. All delegated permissions are valid for work or school accounts, but not all are valid for personal Microsoft accounts. Use the [Microsoft Graph permissions reference](permissions-reference.md) to identify delegated permissions that are valid for personal Microsoft accounts.
+In a delegated access scenario, an app might allow users to sign in with their personal Microsoft accounts, like Outlook.com, work or school accounts, or both account types. All delegated permissions are valid for work or school accounts, but not all are valid for personal Microsoft accounts. Use the [Microsoft Graph permissions reference](permissions-reference.md) to identify delegated permissions that are valid for personal Microsoft accounts.
 
 When a user signs in to an app, they, or, in some cases, an administrator, get a chance to consent to the delegated permissions. If they grant consent, the app can access resources and APIs within the boundaries of the user's permissions.
 
@@ -63,6 +63,7 @@ Apart from being assigned Microsoft Graph application permissions, an app might 
 > [!NOTE]
 > Permissions granted through [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) don't limit the app to calling Microsoft Graph APIs only.
 
+
 ### Comparison of delegated and application permissions
 
 | Category | Delegated permissions | Application permissions |
@@ -77,6 +78,12 @@ Apart from being assigned Microsoft Graph application permissions, an app might 
 The following image illustrates an app's privileges in delegated vs app-only access scenarios.
 
 :::image type="content" source="images/auth-v2/app-privileges-illustration.png" alt-text="Illustration of application privileges in delegated vs app-only access scenarios.":::
+
+### Best practice for choosing permission types to register your connector agent
+
+Graph connector agents run as background services and require Microsoft Graph Application permissions.
+**Delegated permissions aren't supported** for connector agent registration and cause registration failures, even if permissions appear correctly configured.
+Request the **least-privileged Application permissions** needed for your connector scenario and ensure **tenant‑wide admin consent** is granted.
 
 ## Permissions naming pattern
 
@@ -95,7 +102,7 @@ Examples:
 - *Application.ReadWrite.All* - Allows the app to manage all applications in the tenant.
 - *Application.ReadWrite.OwnedBy* - Allows the app to manage only the applications that it creates or owns.
 - *Group.Create* - Allows the application to create new groups, but not modify or delete them.
-- *Member.Read.Hidden* - Allows the app to read hidden memberships
+- *Member.Read.Hidden* - Allows the app to read hidden memberships.
 
 For the full list of permissions exposed by Microsoft Graph, see the [Microsoft Graph permissions reference](permissions-reference.md).
 
@@ -103,7 +110,7 @@ For the full list of permissions exposed by Microsoft Graph, see the [Microsoft 
 
 RSC is an authorization framework that grants scoped access to the data exposed by a resource. Through RSC, an authorized user can give an app access to the data of a specific instance of a resource type. They don't need to give app access to every instance of the resource type in the entire tenant.
 
-RSC permissions are also available for consent and are supported by only a subset of features available through Microsoft Graph such as Teams, chats, and messages. Learn more about [RSC permissions](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) or discover the [full list of RSC permissions available](./permissions-reference.md#resource-specific-consent-rsc-permissions).
+RSC permissions are also available for consent and are supported by only a subset of features available through Microsoft Graph such as Teams, chats, and messages. For more information, see [RSC permissions](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) and the [full list of RSC permissions available](./permissions-reference.md#resource-specific-consent-rsc-permissions).
 
 ## Limited information returned for inaccessible member objects
 
@@ -116,7 +123,7 @@ For example, a group can have users, groups, applications, service principals, d
 - To read the basic properties of a group's members that are groups, *GroupMember.Read.All* is the least privileged permission.
 - To read the basic properties of a group's members that are devices, *Device.Read.All* is the least privileged permission.
 - To read the basic properties of a group's members that are service principals, *Application.Read.All* is the least privileged permission.
-- As per the principle of least privilege, you should prefer using the preceding permissions as appropriate for your application. However, as an alternative to the individual resource-level permissions, the app can be assigned the *Directory.Read.All* permission to read *all properties for all member types*.
+- As per the principle of least privilege, use the preceding permissions as appropriate for your application. However, as an alternative to the individual resource-level permissions, assign the app the *Directory.Read.All* permission to read *all properties for all member types*.
 
 ### Example
 
@@ -210,7 +217,7 @@ Apply the principle of least privilege when assigning and granting Microsoft Gra
 
 ### Permissions to use with caution
 
-Some Microsoft Graph permissions grant access to a wider range of data or operations than others. Use such permissions with caution. For example, the *Directory.AccessAsUser.All* permission is the highest privileged delegated permission that grants access to nearly all API operations across Microsoft Entra ID. *Directory.ReadWrite.All* permission is second in privilege ranking. *Directory.Read.All* is the highest privileged read-only permission for Microsoft Entra ID resources. Use these permissions with caution and only when necessary. Always use lesser-privileged options permissions instead.
+Some Microsoft Graph permissions grant access to a wider range of data or operations than others. Use these permissions with caution. For example, the *Directory.AccessAsUser.All* permission is the highest privileged delegated permission that grants access to nearly all API operations across Microsoft Entra ID. *Directory.ReadWrite.All* permission is second in privilege ranking. *Directory.Read.All* is the highest privileged read-only permission for Microsoft Entra ID resources. Use these permissions with caution and only when necessary. Always use lesser-privileged options permissions instead.
 
 In API reference documentation relating to Microsoft Entra ID resources, some of these higher privileged permissions might be intentionally excluded from the table of permissions supported to access the API.
 

@@ -13,9 +13,9 @@ ms.date: 12/22/2025
 
 # Microsoft Graph permissions reference
 
-For an app to access data in Microsoft Graph, the user or administrator must grant it the permissions it needs. This article lists the delegated and application permissions exposed by Microsoft Graph. For guidance about how to use the permissions, see the [Overview of Microsoft Graph permissions](permissions-overview.md).
+For an app to access data in Microsoft Graph, the user or administrator must grant it the necessary permissions. This article lists the delegated and application permissions exposed by Microsoft Graph. For guidance about how to use the permissions, see the [Overview of Microsoft Graph permissions](permissions-overview.md).
 
-To read information about all Microsoft Graph permissions programmatically, sign in to an API client such as Graph Explorer using an account that has at least the *Application.Read.All* permission and run the following request.
+To read information about all Microsoft Graph permissions programmatically, sign in to an API client such as Graph Explorer by using an account that has at least the *Application.Read.All* permission and run the following request.
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000-c000-000000000000')?$select=id,appId,displayName,appRoles,oauth2PermissionScopes,resourceSpecificApplicationPermissions
@@ -575,6 +575,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read the API connectors used in user authentication flows, without a signed-in user. | Allows the app to read the API connectors used in user authentication flows, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
+Refer to [Best practice for choosing permission types](permissions-overview.md#best-practice-for-choosing-permission-types-to-register-your-connector-agent) to register your connector agent successfully.
+
 ---
 
 ### APIConnectors.ReadWrite.All
@@ -585,6 +587,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Read and write API connectors for authentication flows | Read and write API connectors for authentication flows |
 | Description | Allows the app to read, create and manage the API connectors used in user authentication flows, without a signed-in user. | Allows the app to read, create and manage the API connectors used in user authentication flows, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
+
+Refer to [Best practice for choosing permission types](permissions-overview.md#best-practice-for-choosing-permission-types-to-register-your-connector-agent) to register your connector agent successfully.
 
 ---
 
