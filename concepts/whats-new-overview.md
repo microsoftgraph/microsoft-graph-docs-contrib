@@ -43,7 +43,7 @@ When `$expand=members` is included, the [List chats](/graph/api/chat-list) API r
 
 ### Calendars | Places
 
-- [Upsert](/graph/api/place-patch-places?view=graph-rest-beta&preserve-view=true) one or more [place](/graph/api/resources/place?view=graph-rest-beta&preserve-view=true) objects in async mode.
+[Upsert](/graph/api/place-patch-places?view=graph-rest-beta&preserve-view=true) one or more [place](/graph/api/resources/place?view=graph-rest-beta&preserve-view=true) objects in async mode.
 
 ### Calendars | Work hours and locations
 
