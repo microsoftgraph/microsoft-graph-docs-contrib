@@ -18,7 +18,7 @@ Contains a list of [restorePoint](../resources/restorepoint.md) objects associat
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|artifactHitCount|int| Total number of mailbox items that can be restored for a granular restore session.|
+|artifactHitCount|Int32| Total number of mailbox items that can be restored for a granular restore session.|
 
 ## Relationships
 
@@ -37,6 +37,6 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.restorePointSearchResult",
-  "artifactHitCount": "Int"
+  "artifactHitCount": "Int32"
 }
 ```
