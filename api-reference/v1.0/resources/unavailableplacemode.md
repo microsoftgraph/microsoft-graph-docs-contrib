@@ -12,13 +12,11 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Describes why a desk or a workspace is marked as unavailable for booking.
 
 This mode is supported for [desk](./desk.md) and [workspace](./workspace.md) objects.
 
-Inherits from [placeMode](../resources/placemode.md).
+Inherits from [placeMode](./placemode.md).
 
 ## Properties
 |Property|Type|Description|

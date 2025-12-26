@@ -242,7 +242,8 @@
             "assignedPlaceMode",
             "dropInPlaceMode",
             "reservablePlaceMode",
-            "resourceLink"
+            "resourceLink",
+            "unavailablePlaceMode"
           ],
           "childNodes": [
             {
