@@ -7,7 +7,7 @@ ms.reviewer: jackson.woods
 ms.topic: concept-article
 ms.localizationpriority: high
 ms.subservice: entra-applications
-ms.date: 08/29/2025
+ms.date: 12/26/2025
 ms.custom: graphiamtop20, scenarios:getting-started, sfi-ga-nochange
 #customer intent: As a developer integrating with Microsoft Graph, I want to learn about using Microsoft Graph permissions, so that I can properly request and manage permissions for my app.
 ---
