@@ -34,7 +34,7 @@ To support these access scenarios, Microsoft Graph exposes *delegated permission
 
 *Delegated permissions*, also called *scopes*, work in the delegated access scenario. These permissions let the application act on behalf of a signed-in user. However, the application can't access anything the signed-in user couldn't access.
 
-For example, an application gets the ´Files.Read.All´ delegated permission on behalf of Tom, a user. The application can only read all files in the organization that Tom can already access. Tom might be able to access the files because he has permissions through one of the following ways:
+For example, an application gets the *Files.Read.All* delegated permission on behalf of Tom, a user. The application can only read all files in the organization that Tom can already access. Tom might be able to access the files because he has permissions through one of the following ways:
 
 - Tom created or owns the files.
 - The files were shared directly with Tom, or indirectly shared through a team or group membership.
@@ -51,7 +51,7 @@ When a user signs in to an app, they, or, in some cases, an administrator, get a
 
 ### Application permissions
 
-*Application permissions*, also called *app roles*, work in the app-only access scenario, without a signed-in user present. The application can access *any* data that the permission is associated with. For example, an application granted the ´Files.Read.All´ application permission can read any file in the organization.
+*Application permissions*, also called *app roles*, work in the app-only access scenario, without a signed-in user present. The application can access *any* data that the permission is associated with. For example, an application granted the *Files.Read.All* application permission can read any file in the organization.
 
 For apps that access resources and APIs without a signed-in user, an administrator consents to the application permissions when the app is installed in the tenant or through the Microsoft Entra admin center. Only Privileged Role Administrator and Global Administrator can consent to application permissions.
 
@@ -99,11 +99,11 @@ Microsoft Graph exposes granular permissions that help you control the access th
 | `{constraint}` | Determines the potential extent of access an app has within the directory. This value might not be explicitly declared. When undeclared, the default constraint is limited to data that's owned by the signed-in user. | `All`, `AppFolder`, `OwnedBy`, `Selected`, `Shared`, `Hidden`      |
 
 Examples:
-- ´User.Read´ - Allows the app to read information about the signed-in user.
-- ´Application.ReadWrite.All´ - Allows the app to manage all applications in the tenant.
-- ´Application.ReadWrite.OwnedBy´ - Allows the app to manage only the applications that it creates or owns.
-- ´Group.Create´ - Allows the application to create new groups, but not modify or delete them.
-- ´Member.Read.Hidden´ - Allows the app to read hidden memberships.
+- *User.Read* - Allows the app to read information about the signed-in user.
+- *Application.ReadWrite.All* - Allows the app to manage all applications in the tenant.
+- *Application.ReadWrite.OwnedBy* - Allows the app to manage only the applications that it creates or owns.
+- *Group.Create* - Allows the application to create new groups, but not modify or delete them.
+- *Member.Read.Hidden* - Allows the app to read hidden memberships.
 
 For the full list of permissions exposed by Microsoft Graph, see the [Microsoft Graph permissions reference](permissions-reference.md).
 
@@ -119,12 +119,12 @@ Container objects such as groups support members of various types, for example u
 
 This principle applies to all relationships that are of [directoryObject](/graph/api/resources/directoryobject) type. Examples include `/groups/{id}/members`, `/users/{id}/memberOf`, and `me/ownedObjects`.
 
-For example, a group can have users, groups, applications, service principals, devices, and contacts as members. An app is granted the ´GroupMember.Read.All´ least privileged permission to [List group members](/graph/api/group-list-members). In the response object, only the **id** and **@odata.type** properties are populated for all the members that are returned. The other properties are indicated as `null`. For this API, and to return more information for the group's members, the app needs the following additional permissions:
-- To read the basic properties of a group's members that are users, ´User.ReadBasic.All´ is the least privileged permission.
-- To read the basic properties of a group's members that are groups, ´GroupMember.Read.All´ is the least privileged permission.
-- To read the basic properties of a group's members that are devices, ´Device.Read.All´ is the least privileged permission.
-- To read the basic properties of a group's members that are service principals, ´Application.Read.All´ is the least privileged permission.
-- As per the principle of least privilege, use the preceding permissions as appropriate for your application; however, as an alternative to the individual resource-level permissions, assign the app the `Directory.Read.All` permission to read *all properties for all member types*.
+For example, a group can have users, groups, applications, service principals, devices, and contacts as members. An app is granted the *GroupMember.Read.All* least privileged permission to [List group members](/graph/api/group-list-members). In the response object, only the **id** and **@odata.type** properties are populated for all the members that are returned. The other properties are indicated as `null`. For this API, and to return more information for the group's members, the app needs the following additional permissions:
+- To read the basic properties of a group's members that are users, *User.ReadBasic.All* is the least privileged permission.
+- To read the basic properties of a group's members that are groups, *GroupMember.Read.All* is the least privileged permission.
+- To read the basic properties of a group's members that are devices, *Device.Read.All* is the least privileged permission.
+- To read the basic properties of a group's members that are service principals, *Application.Read.All* is the least privileged permission.
+- As per the principle of least privilege, use the preceding permissions as appropriate for your application; however, as an alternative to the individual resource-level permissions, assign the app the *Directory.Read.All* permission to read *all properties for all member types*.
 
 ### Example
 
@@ -208,9 +208,9 @@ Microsoft Graph exposes granular permissions that allow an app to request only t
 
 Consider the following examples:
 
-- An app needs to read the profile information of the signed-in user. The app requires only the ´User.Read´ permission, which is the least privileged permission to access the signed-in user's information. Granting the app the ´User.ReadWrite´ permission makes it over-privileged because the app doesn't need to update the user's profile.
-- An app needs to read the groups in the tenant without a signed-in user. The app requires only the ´GroupMember.Read.All´ application permission, which is the least privileged permission to read groups in the tenant without a signed-in user.
-- An app needs to read or write to a calendar of the signed-in user. The app manages dynamic jobs, and syncs from the user's Outlook calendar to keep the app up-to-date so to schedule jobs for the user. Even though [getting](/graph/api/event-delta) the user's calendar data requires ´Calendars.Read´, [updating](/graph/api/user-post-events) the calendar with scheduled jobs requires a higher privileged permission, ´Calendars.ReadWrite´. In this case, the app should request ´Calendars.ReadWrite´.
+- An app needs to read the profile information of the signed-in user. The app requires only the *User.Read* permission, which is the least privileged permission to access the signed-in user's information. Granting the app the *User.ReadWrite* permission makes it over-privileged because the app doesn't need to update the user's profile.
+- An app needs to read the groups in the tenant without a signed-in user. The app requires only the *GroupMember.Read.All* application permission, which is the least privileged permission to read groups in the tenant without a signed-in user.
+- An app needs to read or write to a calendar of the signed-in user. The app manages dynamic jobs, and syncs from the user's Outlook calendar to keep the app up-to-date so to schedule jobs for the user. Even though [getting](/graph/api/event-delta) the user's calendar data requires *Calendars.Read*, [updating](/graph/api/user-post-events) the calendar with scheduled jobs requires a higher privileged permission, *Calendars.ReadWrite*. In this case, the app should request *Calendars.ReadWrite*.
 
 Granting an application more privileges than it needs is a poor security practice. It increases the app's exposure to unauthorized and unintended access to data or operations. Also, requesting more permissions than necessary might cause users to refrain from consenting to an app, affecting an app's adoption and usage.
 
@@ -218,7 +218,7 @@ Apply the principle of least privilege when assigning and granting Microsoft Gra
 
 ### Permissions to use with caution
 
-Some Microsoft Graph permissions grant access to a wider range of data or operations than others. Use these permissions with caution. For example, the ´Directory.AccessAsUser.All´ permission is the highest privileged delegated permission that grants access to nearly all API operations across Microsoft Entra ID. ´Directory.ReadWrite.All´ permission is second in privilege ranking. ´Directory.Read.All´ is the highest privileged read-only permission for Microsoft Entra ID resources. Use these permissions with caution and only when necessary. Always use lesser-privileged options permissions instead.
+Some Microsoft Graph permissions grant access to a wider range of data or operations than others. Use these permissions with caution. For example, the *Directory.AccessAsUser.All* permission is the highest privileged delegated permission that grants access to nearly all API operations across Microsoft Entra ID. *Directory.ReadWrite.All* permission is second in privilege ranking. *Directory.Read.All* is the highest privileged read-only permission for Microsoft Entra ID resources. Use these permissions with caution and only when necessary. Always use lesser-privileged options permissions instead.
 
 In API reference documentation relating to Microsoft Entra ID resources, some of these higher privileged permissions might be intentionally excluded from the table of permissions supported to access the API.
 
