@@ -129,7 +129,7 @@ The following example shows the response.
   "name": "create_file_attachment_with_post"
 } -->
 ```http
-HTTP/1.1 202 Accpted
+HTTP/1.1 202 Accepted
 ```
 
 ### Example 2: Include an item attachment
@@ -289,7 +289,7 @@ The following example shows the response.
   "name": "create_reference_attachment_with_post"
 } -->
 ```http
-HTTP/1.1 202 Accpted
+HTTP/1.1 202 Accepted
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

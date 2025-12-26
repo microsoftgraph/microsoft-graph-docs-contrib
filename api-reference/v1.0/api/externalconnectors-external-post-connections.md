@@ -119,7 +119,7 @@ The following example shows the response. Note that the **id**, **name**, and **
 }
 -->
 ``` http
-HTTP/1.1 200 Created
+HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
