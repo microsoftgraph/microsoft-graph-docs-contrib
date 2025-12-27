@@ -1,5 +1,5 @@
 ---
-title: "List zone objects"
+title: "List zones"
 description: "Get a list of the zone objects and their properties."
 author: "Yarinle4"
 ms.date: 11/26/2025
@@ -8,7 +8,7 @@ ms.subservice: "security"
 doc_type: apiPageType
 ---
 
-# List zone objects
+# List zones
 
 Namespace: microsoft.graph.security
 
@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [zone](../resources/security-zone.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.security.zone](../resources/security-zone.md) objects in the response body.
 
 ## Examples
 
@@ -68,7 +68,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/security/zones
 ```
-
 
 ### Response
 
