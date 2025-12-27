@@ -1,6 +1,6 @@
 ---
 title: "environment resource type"
-description: "Represents a cloud environment that can be selected within a specific zone for security management."
+description: "Represents a cloud-native environment that can be selected within a specific zone for security management."
 author: "Yarinle4"
 ms.date: 11/26/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a cloud environment that can be selected within a specific [zone](../resources/security-zone.md) for security management. Environments include Azure subscriptions, AWS accounts, GCP projects, and other resources native to the cloud.
+Represents a cloud-native environment that can be selected within a specific [zone](../resources/security-zone.md) for security management. Environments include Azure subscriptions, AWS accounts, GCP projects, and other resources native to the cloud.
 
 Inherits from [entity](../resources/entity.md)
 
