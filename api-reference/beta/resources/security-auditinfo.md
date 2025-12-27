@@ -1,6 +1,6 @@
 ---
 title: "auditInfo resource type"
-description: "Represents audit information including user and timestamp for creation or modification actions."
+description: "Represents audit metadata, including the user and timestamps for creation or modification actions."
 author: "Yarinle4"
 ms.date: 11/26/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents audit metadata, including the user and timestamps for creation or modification actions. This complex type tracks who performed an action and when it occurred.
+Represents audit metadata, including the user and timestamps for creation or modification actions. This resource tracks who performed an action and when it occurred.
 
 ## Properties
 |Property|Type|Description|
