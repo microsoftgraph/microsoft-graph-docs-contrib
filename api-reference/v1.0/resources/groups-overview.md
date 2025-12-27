@@ -219,9 +219,9 @@ You can configure other settings for groups, such as:
 
 ## Group search limitations for guests in organizations
 
-Apps can search for groups in an organization's directory by querying the `/groups` resource (for example, `https://graph.microsoft.com/beta/groups`). This capability is available to administrators and members, but not to guests.
+Apps can search for groups in an organization's directory by querying the `/groups` resource (for example, `https://graph.microsoft.com/v1.0/groups`). This capability is available to administrators and members, but not to guests.
 
-Guests, depending on the permissions granted to the app, can view the profile of a specific group (for example, `https://graph.microsoft.com/beta/group/fc06287e-d082-4aab-9d5e-d6fd0ed7c8bc`). However, they can't perform queries on the `/groups` resource that return multiple results.
+Guests, depending on the permissions granted to the app, can view the profile of a specific group (for example, `https://graph.microsoft.com/v1.0/group/fc06287e-d082-4aab-9d5e-d6fd0ed7c8bc`). However, they can't perform queries on the `/groups` resource that return multiple results.
 
 Members generally have broader access to group resources, while guests have restricted permissions, limiting their access to certain group features. For more information, see [Compare member and guest default permissions](/entra/fundamentals/users-default-permissions?context=graph%2Fcontext#compare-member-and-guest-default-permissions).
 

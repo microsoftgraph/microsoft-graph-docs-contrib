@@ -21,7 +21,7 @@ Represents additional configuration options for user provisioning and management
 | Property                       | Type    | Description                                                     |
 | :----------------------------- | :------ | :-------------------------------------------------------------- |
 | allowStudentContactAssociation | Boolean | Indicates whether student contact association should be allowed. |
-| studentAgeGroup | microsoft.graph.industryData.studentAgeGroup | Indicates the age group classification for students. Possible values are: `minor`, `notAdult`, `adult`, `unknownFutureValue`. Use `null` to disable age group enforcement. |
+| studentAgeGroup | microsoft.graph.industryData.studentAgeGroup | Indicates the age group classification for students. The possible values are: `minor`, `notAdult`, `adult`, `unknownFutureValue`. Use `null` to disable age group enforcement. |
 | markAllStudentsAsMinors (deprecated) | Boolean | Indicates whether all students should be marked as minors. The **markAllStudentsAsMinors** property is deprecated and will stop returning data on October 15, 2025. Going forward, use the **studentAgeGroup** property. |
 
 ## Relationships

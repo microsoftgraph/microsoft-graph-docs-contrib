@@ -448,6 +448,8 @@ items:
         href: ../../api/security-ediscoveryholdpolicy-post-usersources.md
       - name: Delete
         href: ../../api/security-ediscoveryholdpolicy-delete-usersources.md
+      - name: Retry policy
+        href: ../../api/security-ediscoveryholdpolicy-retrypolicy.md
   - name: eDiscovery search
     items:
     - name: eDiscovery search
@@ -542,6 +544,16 @@ items:
       href: ../../api/security-ediscoverycase-delete-tags.md
     - name: List tags as hierarchy
       href: ../../api/security-ediscoveryreviewtag-ashierarchy.md
+  - name: eDiscovery case member
+    items:
+    - name: eDiscovery case member
+      href: ../../resources/security-ediscoverycasemember.md
+    - name: List
+      href: ../../api/security-ediscoverycasemember-list.md
+    - name: Add
+      href: ../../api/security-ediscoverycasemember-post.md
+    - name: Remove
+      href: ../../api/security-ediscoverycasemember-delete.md
   - name: Complex types
     items:
     - name: eDiscovery add to review set operation

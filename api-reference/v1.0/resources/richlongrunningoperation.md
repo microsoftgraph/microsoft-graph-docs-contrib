@@ -30,7 +30,7 @@ Represents the status of a long-running operation on a [site](../resources/site.
 |percentageComplete|Int32|A value between 0 and 100 that indicates the progress of the operation.|
 |resourceId|String|The unique identifier for the result.|
 |resourceLocation|String|The canonical URL of the resource.|
-|status|longRunningOperationStatus|The status of the long-running operation. Possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`.|
+|status|longRunningOperationStatus|The status of the long-running operation. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`.|
 |statusDetail|String|The detail about the status value.|
 |type|String| The type of the operation.|
 

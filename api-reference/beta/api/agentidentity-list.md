@@ -4,7 +4,7 @@ description: "Retrieve a list of agentIdentity objects."
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-applications"
+ms.subservice: "entra-agent-id"
 doc_type: apiPageType
 ---
 
@@ -20,11 +20,7 @@ Retrieve a list of [agentIdentity](../resources/agentidentity.md) objects. Does 
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "agentidentity-list-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "agentidentity_list" } -->
 [!INCLUDE [permissions-table](../includes/permissions/agentidentity-list-permissions.md)]
 
 [!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]
@@ -121,8 +117,8 @@ Content-type: application/json
       "id": "1b7313c4-05d0-4a08-88e3-7b76c003a0a2",
       "displayName": "My Agent Identity",
       "createdDateTime": "2019-09-17T19:10:35.2742618Z",
-      "createdByAppId": "631a96bc-a705-4eda-9f99-fdaf9f54f6a2",
-      "agentIdentityBlueprintId": "631a96bc-a705-4eda-9f99-fdaf9f54f6a2",
+      "createdByAppId": "00001111-aaaa-2222-bbbb-3333cccc4444",
+      "agentIdentityBlueprintId": "00001111-aaaa-2222-bbbb-3333cccc4444",
       "accountEnabled": true,
       "disabledByMicrosoftStatus": null,
       "servicePrincipalType": "ServiceIdentity",

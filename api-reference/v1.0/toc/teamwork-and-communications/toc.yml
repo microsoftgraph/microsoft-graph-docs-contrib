@@ -4,6 +4,24 @@
 items:
 - name: Overview
   href: ../../resources/teams-api-overview.md
+- name: Administration
+  items:
+  - name: Teams user configuration
+    items:
+    - name: Teams user configuration
+      href: ../../resources/teamsadministration-teamsuserconfiguration.md
+    - name: List
+      href: ../../api/teamsadministration-teamsadminroot-list-userconfigurations.md
+    - name: Get
+      href: ../../api/teamsadministration-teamsuserconfiguration-get.md
+  - name: Complex types
+    items:
+    - name: Assigned telephone number
+      href: ../../resources/teamsadministration-assignedtelephonenumber.md
+    - name: Effective policy assignment
+      href: ../../resources/teamsadministration-effectivepolicyassignment.md
+    - name: Policy assignment
+      href: ../../resources/teamsadministration-policyassignment.md
 - name: Apps
   items:
   - name: Teams app
@@ -92,6 +110,10 @@ items:
   items:
   - name: Overview
     href: ../../resources/communications-api-overview.md
+  - name: Ad hoc call
+    items:
+    - name: Ad hoc call (preview)
+      href: ../../resources/adhoccall.md
   - name: Call events
     items:
     - name: Call event
@@ -306,6 +328,8 @@ items:
         href: ../../api/onlinemeeting-list-recordings.md
       - name: Get
         href: ../../api/callrecording-get.md
+      - name: Get
+        href: ../../api/callrecording-get.md
       - name: Get delta by organizer
         href: ../../api/callrecording-delta.md
       - name: List recordings by organizer
@@ -348,6 +372,14 @@ items:
       href: ../../api/presence-clearuserpreferredpresence.md
     - name: Set user status message
       href: ../../api/presence-setstatusmessage.md
+    - name: Set automatic location
+      href: ../../api/presence-setautomaticlocation.md
+    - name: Set manual location
+      href: ../../api/presence-setmanuallocation.md
+    - name: Clear automatic location
+      href: ../../api/presence-clearautomaticlocation.md
+    - name: Clear location
+      href: ../../api/presence-clearlocation.md
   - name: Virtual events
     items:
     - name: Virtual event presenter
@@ -448,8 +480,14 @@ items:
         href: ../../api/virtualevent-setexternaleventinformation.md
   - name: Complex types
     items:
+    - name: Online meeting sensitivity label assignment
+      href: ../../resources/onlinemeetingsensitivitylabelassignment.md
     - name: Out of office settings
       href: ../../resources/outofofficesettings.md
+    - name: Out of office settings
+      href: ../../resources/outofofficesettings.md
+    - name: User work location
+      href: ../../resources/userworklocation.md
 - name: Employee learning
   displayName: Viva Learning
   items:
@@ -587,11 +625,13 @@ items:
       href: ../../resources/chat.md
     - name: Chat management
       items:
-      - name: Create chat
+      - name: List
+        href: ../../api/chat-list.md
+      - name: Create
         href: ../../api/chat-post.md
-      - name: Get chat
+      - name: Get
         href: ../../api/chat-get.md
-      - name: Update chat
+      - name: Update
         href: ../../api/chat-patch.md
       - name: Delete
         href: ../../api/chat-delete.md

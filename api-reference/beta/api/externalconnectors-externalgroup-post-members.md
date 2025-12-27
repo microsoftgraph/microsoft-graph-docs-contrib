@@ -52,8 +52,8 @@ You can specify the following properties when creating an **externalGroupMember*
 | Property       | Type                    | Description                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
 | id             | String                  | The unique `id` of the member. It would be the objectId in case of Microsoft Entra users or groups and the externalGroupId in case of external groups. Required.                                   |
-| type           | microsoft.graph.externalConnectors.externalGroupMemberType | The type of member added to the external group. Possible values are: `user` or `group` when the identitySource is `azureActiveDirectory` and just `group` when the identitySource is `external`. Required. |
-| identitySource | microsoft.graph.externalConnectors.identitySourceType      | The identity source that the member belongs to. Possible values are: `azureActiveDirectory`, `external`. Required.                                                                                       |
+| type           | microsoft.graph.externalConnectors.externalGroupMemberType | The type of member added to the external group. The possible values are: `user` or `group` when the identitySource is `azureActiveDirectory` and just `group` when the identitySource is `external`. Required. |
+| identitySource | microsoft.graph.externalConnectors.identitySourceType      | The identity source that the member belongs to. The possible values are: `azureActiveDirectory`, `external`. Required.                                                                                       |
 
 ## Response
 

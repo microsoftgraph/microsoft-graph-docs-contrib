@@ -50,7 +50,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|updateCategory|microsoft.graph.windowsUpdates.updateCategory|The category of updates for Windows Autopatch to stop managing. Supports a subset of the values for **updateCategory**. Possible values are: `driver`, `feature`, `quality`, `unknownFutureValue`.|
+|updateCategory|microsoft.graph.windowsUpdates.updateCategory|The category of updates for Windows Autopatch to stop managing. Supports a subset of the values for **updateCategory**. The possible values are: `driver`, `feature`, `quality`, `unknownFutureValue`.|
 |assets|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|List of **updatableAsset** resources to unenroll from update management for the given **updateCategory**.|
 
 ## Response

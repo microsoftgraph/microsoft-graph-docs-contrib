@@ -1,6 +1,6 @@
 ---
 title: "userExperienceAnalyticsAnomalyCorrelationGroupPrevalence enum type"
-description: "Indicates the level of prevalence of the correlation group features in the anomaly. Possible values are: high, medium or low"
+description: "Indicates the level of prevalence of the correlation group features in the anomaly. The possible values are: high, medium or low"
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Indicates the level of prevalence of the correlation group features in the anomaly. Possible values are: high, medium or low
+Indicates the level of prevalence of the correlation group features in the anomaly. The possible values are: high, medium or low
 
 ## Members
 |Member|Value|Description|

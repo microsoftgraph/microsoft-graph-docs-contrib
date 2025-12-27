@@ -59,6 +59,7 @@ Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
+|administrationScopeTargets|[microsoft.graph.directoryObject](../resources/directoryobject.md) collection|The [administrative units](../resources/administrativeunit.md) in the scope of the workflow. Inherited from [microsoft.graph.identityGovernance.workflowBase](../resources/identitygovernance-workflowbase.md). Optional. <br><br>Supports `$expand`.|
 |createdBy|[user](../resources/user.md)|The unique identifier of the Microsoft Entra user that created the [workflow](../resources/identitygovernance-workflow.md) object. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).<br><br>Supports `$filter`(`eq`, `ne`) and `$expand`.|
 |executionScope|[microsoft.graph.user](../resources/user.md) collection|The list of users that meet the [workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md) of a workflow.|
 |lastModifiedBy|[user](../resources/user.md)|The user who last modified the [workflow](../resources/identitygovernance-workflow.md) object. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).<br><br>Supports `$filter`(`eq`, `ne`) and `$expand`.|

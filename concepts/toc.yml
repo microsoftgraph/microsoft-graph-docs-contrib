@@ -379,6 +379,8 @@ items:
       href: outlook-immutable-id.md
     - name: Subscribe to change notifications
       href: outlook-change-notifications-overview.md
+    - name: Upsert places
+      href: places-upsert-overview.md
   - name: Compliance
     href: compliance-concept-overview.md
   - name: Cross-device experiences
@@ -872,6 +874,10 @@ items:
     - name: Overview
       href: teams-concept-overview.md
       displayName: teams, team, teamwork, Microsoft Teams
+    - name: Channel
+      items:
+      - name: Managing channel memberships
+        href: manage-channel-memberships.md
     - name: Messaging APIs
       items:
       - name: Working with Microsoft Teams messaging

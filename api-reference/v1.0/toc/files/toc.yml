@@ -188,6 +188,56 @@ items:
     href: ../../api/filestoragecontainer-lock.md
   - name: Unlock
     href: ../../api/filestoragecontainer-unlock.md
+  - name: Create migration job
+    href: ../../api/filestoragecontainer-post-migrationjobs.md
+  - name: Provision migration containers
+    href: ../../api/filestoragecontainer-provisionmigrationcontainers.md
+- name: File storage container type
+  items:
+  - name: File storage container type
+    href: ../../resources/filestoragecontainertype.md
+  - name: List
+    href: ../../api/filestorage-list-containertypes.md
+  - name: Create
+    href: ../../api/filestorage-post-containertypes.md
+  - name: Get
+    href: ../../api/filestoragecontainertype-get.md
+  - name: Update
+    href: ../../api/filestoragecontainertype-update.md
+  - name: Delete
+    href: ../../api/filestorage-delete-containertypes.md
+- name: File storage container type app permission grant
+  items:
+  - name: File storage container type app permission grant
+    href: ../../resources/filestoragecontainertypeapppermissiongrant.md
+  - name: List
+    href: ../../api/filestoragecontainertyperegistration-list-applicationpermissiongrants.md
+  - name: Create
+    href: ../../api/filestoragecontainertyperegistration-post-applicationpermissiongrants.md
+  - name: Get
+    href: ../../api/filestoragecontainertypeapppermissiongrant-get.md
+  - name: Update
+    href: ../../api/filestoragecontainertypeapppermissiongrant-update.md
+  - name: Delete
+    href: ../../api/filestoragecontainertyperegistration-delete-applicationpermissiongrants.md
+- name: File storage container type registration
+  items:
+  - name: File storage container type registration
+    href: ../../resources/filestoragecontainertyperegistration.md
+  - name: List
+    href: ../../api/filestorage-list-containertyperegistrations.md
+  - name: Create
+    href: ../../api/filestorage-post-containertyperegistrations.md
+  - name: Get
+    href: ../../api/filestoragecontainertyperegistration-get.md
+  - name: Update
+    href: ../../api/filestoragecontainertyperegistration-update.md
+  - name: Delete
+    href: ../../api/filestorage-delete-containertyperegistrations.md
+  - name: List application permission grants
+    href: ../../api/filestoragecontainertyperegistration-list-applicationpermissiongrants.md
+  - name: Create file storage container type app permission grant
+    href: ../../api/filestoragecontainertyperegistration-post-applicationpermissiongrants.md
 - name: Permission
   items:
   - name: Permission
@@ -226,3 +276,51 @@ items:
     href: ../../resources/shareddriveitem.md
   - name: Use sharing links
     href: ../../api/shares-get.md
+- name: SharePoint migration
+  items:
+  - name: Overview
+    href: ../../resources/sharepointmigration-api-overview.md
+  - name: SharePoint migration event
+    items:
+    - name: SharePoint migration event
+      href: ../../resources/sharepointmigrationevent.md
+    - name: List progress events
+      href: ../../api/sharepointmigrationjob-list-progressevents.md
+  - name: SharePoint migration finish manifest file upload event
+    href: ../../resources/sharepointmigrationfinishmanifestfileuploadevent.md
+  - name: SharePoint migration job
+    items:
+    - name: SharePoint migration job
+      href: ../../resources/sharepointmigrationjob.md
+    - name: Create
+      href: ../../api/filestoragecontainer-post-migrationjobs.md
+    - name: Delete
+      href: ../../api/sharepointmigrationjob-delete.md
+    - name: List progress events
+      href: ../../api/sharepointmigrationjob-list-progressevents.md
+    - name: Provision migration containers
+      href: ../../api/filestoragecontainer-provisionmigrationcontainers.md
+  - name: SharePoint migration job cancelled event
+    href: ../../resources/sharepointmigrationjobcancelledevent.md
+  - name: SharePoint migration job deleted event
+    href: ../../resources/sharepointmigrationjobdeletedevent.md
+  - name: SharePoint migration job error event
+    href: ../../resources/sharepointmigrationjoberrorevent.md
+  - name: SharePoint migration job postponed event
+    href: ../../resources/sharepointmigrationjobpostponedevent.md
+  - name: SharePoint migration job progress event
+    href: ../../resources/sharepointmigrationjobprogressevent.md
+  - name: SharePoint migration job queued event
+    href: ../../resources/sharepointmigrationjobqueuedevent.md
+  - name: SharePoint migration job start event
+    href: ../../resources/sharepointmigrationjobstartevent.md
+  - name: Complex types
+    items:
+    - name: SharePoint migration container info
+      href: ../../resources/sharepointmigrationcontainerinfo.md
+- name: Complex types
+  items:
+  - name: File storage container type registration settings
+    href: ../../resources/filestoragecontainertyperegistrationsettings.md
+  - name: File storage container type settings
+    href: ../../resources/filestoragecontainertypesettings.md

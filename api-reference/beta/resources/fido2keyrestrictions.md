@@ -21,7 +21,7 @@ Represents the key restrictions that are enforced as part of the [FIDO2 security
 |Property|Type|Description|
 |:---|:---|:---|
 |aaGuids|String collection|A collection of Authenticator Attestation GUIDs. AADGUIDs define key types and manufacturers.|
-|enforcementType|fido2RestrictionEnforcementType|Enforcement type. Possible values are: `allow`, `block`.|
+|enforcementType|fido2RestrictionEnforcementType|Enforcement type. The possible values are: `allow`, `block`.|
 |isEnforced|Boolean|Determines if the configured key enforcement is enabled.|
 
 ## Relationships

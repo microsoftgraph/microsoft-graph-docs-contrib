@@ -17,7 +17,7 @@ Create a new [permission](../resources/permission.md) object on a [list item](..
 
 >**Note:** You can only use this method to create a new application permission; you can't use it to create a new list item permission for a user.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -56,10 +56,24 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_permission_from_"
+  "name": "listitem_post_permissions",
+  "sampleKeys": ["contoso.sharepoint.com,48f1898f-77d9-4a1b-bddc-1f49bb6dc134,7206fc09-e4af-48b3-8730-ed7321396d7a"]
 }
 -->
+```http
+POST https://graph.microsoft.com/beta/sites/contoso.sharepoint.com,48f1898f-77d9-4a1b-bddc-1f49bb6dc134,7206fc09-e4af-48b3-8730-ed7321396d7a/lists/44ca0d29-33d3-47c9-8f12-eb0c46e3c7ad/items/1/permissions
+Content-Type: application/json
 
+{
+  "grantedToV2": {
+    "application": {
+      "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+      "displayName": "Contoso Time Manager App"
+    }
+  },
+  "roles": ["write"]
+}
+```
 ---
 
 ### Response
@@ -82,22 +96,18 @@ Content-Type: application/json
   "roles": [
     "write"
   ],
-  "grantedToIdentities": [
-    {
-      "application": {
-        "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-        "displayName": "Contoso Time Manager App"
-      }
+  "grantedTo": {
+    "application": {
+      "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+      "displayName": "Contoso Time Manager App"
     }
-  ],
-  "grantedToIdentitiesV2": [
-    {
-      "application": {
-        "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-        "displayName": "Contoso Time Manager App"
-      }
+  },
+  "grantedToV2": {
+    "application": {
+      "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+      "displayName": "Contoso Time Manager App"
     }
-  ]
+  }
 }
 ```
 
@@ -106,3 +116,4 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "ListItems/Permissions/Create listitem permissions"
 } -->
+

@@ -39,7 +39,7 @@ Inherits from [entity](../resources/entity.md).
 | description          | String                                         | Description of the class.                                          |
 | displayName          | String                                         | Name of the class.                                                 |
 | externalId           | String                                         | ID of the class from the syncing system.                           |
-| externalSource       | educationExternalSource                        | How this class was created. Possible values are: `sis`, `manual`.  |
+| externalSource       | educationExternalSource                        | How this class was created. The possible values are: `sis`, `manual`.  |
 | externalSourceDetail | String                                         | The name of the external source this resource was generated from. |
 | externalName         | String                                         | Name of the class in the syncing system.                           |
 | grade                | String                                         | Grade level of the class.                                          |

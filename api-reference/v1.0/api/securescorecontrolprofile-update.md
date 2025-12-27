@@ -1,6 +1,6 @@
 ---
 title: "Update secureScoreControlProfile"
-description: "Update an editable secureScoreControlProfile object within any integrated solution to change various properties, such as assignedTo or tenantNote."
+description: "Update an editable secureScoreControlProfile object within any integrated solution to change various properties, such as tenantNote."
 author: "preetikr"
 ms.localizationpriority: medium
 ms.subservice: security
@@ -44,9 +44,6 @@ In the request body, supply a JSON representation of the values for relevant fie
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|assignedTo|String|Name of the analyst the control is assigned to for triage, implementation, or remediation.|
-|comment|String|Analyst comments on the control (for customer control management).|
-|state| String|Analyst driven setting on the control. Possible values are: `Default`, `Ignored`, `ThirdParty`, `Reviewed`.|
 | vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | Complex type containing details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=SecureScore;). **Provider and vendor fields are required.** |
 
 
@@ -76,9 +73,6 @@ PATCH https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles/NonOw
 Content-type: application/json
 
 {
-  "assignedTo": "",
-  "comment": "control is reviewed",
-  "state": "Reviewed",
   "vendorInformation": {
 
     "provider": "SecureScore",
@@ -149,9 +143,6 @@ PATCH https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles/NonOw
 Content-type: application/json
 
 {
-  "assignedTo": "",
-  "comment": "control is reviewed",
-  "state": "Reviewed",
   "vendorInformation": {
     "provider": "SecureScore",
     "providerVersion": null,
@@ -233,8 +224,8 @@ Content-type: application/json
   "controlStateUpdates": [
     {
       "assignedTo": "",
-      "comment": "control is reviewed",
-      "state": "Reviewed",
+      "comment": "control is under 'Third Party' exception",
+      "state": "Third Party",
       "updatedBy": "user1@contoso.com",
       "updatedDateTime": "2019-03-19T22:37:14.628799Z"
     }

@@ -3,6 +3,7 @@ title: "signInIdentifierBase resource type"
 description: "Represents the base type for sign-in identifiers that enable users to authenticate with alternative identifiers. Use concrete types like emailSignInIdentifier, upnSignInIdentifier, usernameSignInIdentifier, or customUsernameSignInIdentifier for actual API operations."
 author: "Gyanendersinghgithub"
 ms.date: 10/02/2025
+toc.title: Sign-in identifier base
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
@@ -23,12 +24,15 @@ This is an abstract type from which the following types are derived.
 - [usernameSignInIdentifier](../resources/usernamesigninidentifier.md) resource type
 - [customUsernameSignInIdentifier](../resources/customusernamesigninidentifier.md) resource type
 
+For more information, see [Sign in with an alias or username (preview)](/entra/external-id/customers/how-to-sign-in-alias).
+
 ## Methods
 
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get](../api/signinidentifierbase-get.md)|[signInIdentifierBase](../resources/signinidentifierbase.md)|Read the properties and relationships of [signInIdentifierBase](../resources/signinidentifierbase.md) object.|
 |[Update](../api/signinidentifierbase-update.md)|[signInIdentifierBase](../resources/signinidentifierbase.md)|Update the properties of a signInIdentifierBase object.|
+|[Delete](../api/signinidentifierbase-delete.md)|None|Delete a signInIdentifierBase object. Supported only for the customUsernameSignInIdentifier derived type.|
 
 ## Properties
 

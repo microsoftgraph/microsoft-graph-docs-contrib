@@ -3,6 +3,64 @@
     {
       "ChangeList": [
         {
+          "Id": "8f70e7ce-d948-4dfc-a6d2-a3a9d56e2930",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "structuredDataEntryValueType",
+          "ChangeType": "Addition",
+          "Description": "Added the **structuredDataEntryValueType** enumeration type.",
+          "Target": "structuredDataEntryValueType"
+        },
+        {
+          "Id": "8f70e7ce-d948-4dfc-a6d2-a3a9d56e2930",
+          "ApiChange": "Resource",
+          "ChangedApiName": "structuredDataEntry",
+          "ChangeType": "Addition",
+          "Description": "Added the [structuredDataEntry](https://learn.microsoft.com/en-us/graph/api/resources/structuredDataEntry?view=graph-rest-beta) resource.",
+          "Target": "structuredDataEntry"
+        },
+        {
+          "Id": "8f70e7ce-d948-4dfc-a6d2-a3a9d56e2930",
+          "ApiChange": "Resource",
+          "ChangedApiName": "structuredDataEntryTypedValue",
+          "ChangeType": "Addition",
+          "Description": "Added the [structuredDataEntryTypedValue](https://learn.microsoft.com/en-us/graph/api/resources/structuredDataEntryTypedValue?view=graph-rest-beta) resource.",
+          "Target": "structuredDataEntryTypedValue"
+        },
+        {
+          "Id": "8f70e7ce-d948-4dfc-a6d2-a3a9d56e2930",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [userConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/userConfiguration?view=graph-rest-beta) resource.",
+          "Target": "userConfiguration"
+        },
+        {
+          "Id": "8f70e7ce-d948-4dfc-a6d2-a3a9d56e2930",
+          "ApiChange": "Property",
+          "ChangedApiName": "structuredData",
+          "ChangeType": "Addition",
+          "Description": "Added the **structuredData** property to the [userConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/userConfiguration?view=graph-rest-beta) resource.",
+          "Target": "userConfiguration"
+        },
+        {
+          "Id": "8f70e7ce-d948-4dfc-a6d2-a3a9d56e2930",
+          "ApiChange": "Property",
+          "ChangedApiName": "xmlData",
+          "ChangeType": "Addition",
+          "Description": "Added the **xmlData** property to the [userConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/userConfiguration?view=graph-rest-beta) resource.",
+          "Target": "userConfiguration"
+        }
+      ],
+      "Id": "8f70e7ce-d948-4dfc-a6d2-a3a9d56e2930",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-12-08T10:36:11.9898019Z",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a00ff349-57eb-47d9-8484-17d27853c5ff",
           "ApiChange": "Resource",
           "ChangedApiName": "exportItemResponse",
@@ -1598,6 +1656,40 @@
       "Version": "beta",
       "CreatedDateTime": "2025-08-18T07:02:56.8800332Z",
       "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "0a1bdc8e-6a09-4a30-998b-1a4413badda9",
+          "ApiChange": "Property",
+          "ChangedApiName": "primaryEmailAddress",
+          "ChangeType": "Addition",
+          "Description": "Added the **primaryEmailAddress** property to the [contact](https://learn.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-beta) resource.",
+          "Target": "contact"
+        },
+        {
+          "Id": "0a1bdc8e-6a09-4a30-998b-1a4413badda9",
+          "ApiChange": "Property",
+          "ChangedApiName": "secondaryEmailAddress",
+          "ChangeType": "Addition",
+          "Description": "Added the **secondaryEmailAddress** property to the [contact](https://learn.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-beta) resource.",
+          "Target": "contact"
+        },
+        {
+          "Id": "0a1bdc8e-6a09-4a30-998b-1a4413badda9",
+          "ApiChange": "Property",
+          "ChangedApiName": "tertiaryEmailAddress",
+          "ChangeType": "Addition",
+          "Description": "Added the **tertiaryEmailAddress** property to the [contact](https://learn.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-beta) resource.",
+          "Target": "contact"
+        }
+      ],
+      "Id": "0a1bdc8e-6a09-4a30-998b-1a4413badda9",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-12-16T09:32:17.8914924Z",
+      "WorkloadArea": "Personal contacts",
       "SubArea": ""
     }
   ]
