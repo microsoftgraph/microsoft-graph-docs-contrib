@@ -1,6 +1,6 @@
 ---
-title: "List environment objects"
-description: "Get a list of the environment objects and their properties."
+title: "List environments"
+description: "Get all environment objects associated with a zone object."
 author: "Yarinle4"
 ms.date: 11/26/2025
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.subservice: "security"
 doc_type: apiPageType
 ---
 
-# List environment objects
+# List environments
 
 Namespace: microsoft.graph.security
 
@@ -69,7 +69,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/security/zones/03f98aee-fee9-06b4-e5d3-647ef536acac/environments
 ```
 
-
 ### Response
 
 The following example shows the response.
@@ -77,7 +76,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.security.environment"
+  "@odata.type": "Collection(microsoft.graph.security.environment)"
 }
 -->
 ``` http
