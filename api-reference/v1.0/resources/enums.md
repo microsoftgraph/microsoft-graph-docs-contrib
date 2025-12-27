@@ -1568,6 +1568,15 @@ Possible types of Windows settings.
 | pager |
 | radio |
 
+### placeFeatureEnablement values 
+
+|Member|
+|:---|
+|unknown|
+|enabled|
+|disabled|
+|unknownFutureValue|
+
 ### plannerContainerType values
 
 | Member |
