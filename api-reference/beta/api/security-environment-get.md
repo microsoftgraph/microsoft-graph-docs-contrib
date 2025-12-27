@@ -1,6 +1,6 @@
 ---
 title: "Get environment"
-description: "Read the properties and relationships of microsoft.graph.security.environment object."
+description: "Get a specific environment associated with a zone."
 author: "Yarinle4"
 ms.date: 11/26/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieves a specific [environment](../resources/security-environment.md) associated with a [zone](../resources/security-zone.md). The EnvironmentId must be URL-encoded. 
+Get a specific [environment](../resources/security-environment.md) associated with a [zone](../resources/security-zone.md). The **environmentId** must be URL-encoded.
 
 ## Permissions
 
@@ -68,7 +68,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/security/zones/03f98aee-fee9-06b4-e5d3-647ef536acac/environments/23613f44-7f57-d1fc-b9a4-448cd3e8c7c3
 ```
-
 
 ### Response
 
