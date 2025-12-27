@@ -65,7 +65,6 @@ The following example shows a request.
 DELETE https://graph.microsoft.com/beta/security/zones/03f98aee-fee9-06b4-e5d3-647ef536acac/environments/23613f44-7f57-d1fc-b9a4-448cd3e8c7c3
 ```
 
-
 ### Response
 
 The following example shows the response.
