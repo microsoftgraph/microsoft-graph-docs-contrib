@@ -1,6 +1,6 @@
 ---
 title: "Get zone"
-description: "Read the properties and relationships of microsoft.graph.security.zone object."
+description: "Get a zone object by a specific zoneId."
 author: "Yarinle4"
 ms.date: 11/26/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [zone](../resources/security-zone.md) object by a specific ZoneId.
+Get a [zone](../resources/security-zone.md) object by a specific **zoneId**.
 
 ## Permissions
 
@@ -68,7 +68,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/security/zones/03f98aee-fee9-06b4-e5d3-647ef536acac
 ```
-
 
 ### Response
 
