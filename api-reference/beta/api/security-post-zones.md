@@ -46,17 +46,15 @@ POST /security/zones
 
 ## Request body
 
-In the request body, supply a JSON representation of the [microsoft.graph.security.zone](../resources/security-zone.md) object.
+In the request body, supply a JSON representation of the [zone](../resources/security-zone.md) object.
 
-You can specify the following properties when creating a **zone**.
+You can specify the following properties when you create a **zone**.
 
 |Property|Type|Description|
 |:---|:---|:---|
+|description|String|Description of the zone. Optional.|
 |displayName|String|Human-readable name of the zone. Required.|
-|description|String|Optional description of the zone. Optional.|
-|environments|Collection([microsoft.graph.security.environment](../resources/security-environment.md))|Collection of environments to attach to the zone. Required.|
-
-
+|environments|[microsoft.graph.security.environment](../resources/security-environment.md) collection|Collection of environments to attach to the zone. Required.|
 
 ## Response
 
@@ -87,7 +85,6 @@ Content-Type: application/json
   ]
 }
 ```
-
 
 ### Response
 
