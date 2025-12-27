@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "aggregatedEnvironment",
           "ChangeType": "Addition",
-          "Description": "Added the [aggregatedEnvironment](https://learn.microsoft.com/en-us/graph/api/resources/security-aggregatedEnvironment?view=graph-rest-beta) resource.",
+          "Description": "Added the [aggregatedEnvironment](https://learn.microsoft.com/en-us/graph/api/resources/security-aggregatedEnvironment?view=graph-rest-beta) resource type.",
           "Target": "aggregatedEnvironment"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "environment",
           "ChangeType": "Addition",
-          "Description": "Added the [environment](https://learn.microsoft.com/en-us/graph/api/resources/security-environment?view=graph-rest-beta) resource.",
+          "Description": "Added the [environment](https://learn.microsoft.com/en-us/graph/api/resources/security-environment?view=graph-rest-beta) resource and supported methods.",
           "Target": "environment"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "zone",
           "ChangeType": "Addition",
-          "Description": "Added the [zone](https://learn.microsoft.com/en-us/graph/api/resources/security-zone?view=graph-rest-beta) resource.",
+          "Description": "Added the [zone](https://learn.microsoft.com/en-us/graph/api/resources/security-zone?view=graph-rest-beta) resource and supported methods.",
           "Target": "zone"
         },
         {
@@ -48,7 +48,7 @@
       "Version": "beta",
       "CreatedDateTime": "2025-12-23T08:40:56.0101974Z",
       "WorkloadArea": "Security",
-      "SubArea": ""
+      "SubArea": "Cloud zones"
     }
   ]
 }
