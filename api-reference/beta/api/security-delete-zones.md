@@ -1,6 +1,6 @@
 ---
 title: "Delete zone"
-description: "Delete a zone object."
+description: "Delete a zone object by providing the zoneId."
 author: "Yarinle4"
 ms.date: 11/26/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [zone](../resources/security-zone.md) object by providing the ZoneId.
+Delete a [zone](../resources/security-zone.md) object by providing the **zoneId**.
 
 ## Permissions
 
@@ -64,7 +64,6 @@ The following example shows a request.
 ``` http
 DELETE https://graph.microsoft.com/beta/security/zones/03f98aee-fee9-06b4-e5d3-647ef536acac
 ```
-
 
 ### Response
 
