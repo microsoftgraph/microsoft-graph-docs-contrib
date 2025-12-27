@@ -51,10 +51,8 @@ PATCH /security/zones/{zoneId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Human-readable name of the zone. Optional.|
 |description|String|Description of the zone. Optional.|
-
-
+|displayName|String|Human-readable name of the zone. Optional.|
 
 ## Response
 
@@ -81,7 +79,6 @@ Content-Type: application/json
 }
 ```
 
-
 ### Response
 
 The following example shows the response.
@@ -103,12 +100,12 @@ Content-Type: application/json
   "description": "Zone for production environments",
   "created": {
     "@odata.type": "microsoft.graph.security.auditInfo",
-    "by": "admin@microsoft.com",
+    "by": "admin@contoso.com",
     "dateTime": "2024-01-15T10:30:00Z"
   },
   "modified": {
     "@odata.type": "microsoft.graph.security.auditInfo",
-    "by": "admin@microsoft.com",
+    "by": "admin@contoso.com",
     "dateTime": "2024-01-20T14:45:00Z"
   }
 }
