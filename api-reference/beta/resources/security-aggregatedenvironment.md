@@ -36,8 +36,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.aggregatedEnvironment",
-  "kind": "String (identifier)",
-  "count": "Integer"
+  "count": "Int32",
+  "kind": "String (identifier)"
 }
 ```
 
