@@ -1,6 +1,6 @@
 ---
-title: "Detach environment"
-description: "Detach an environment from a Zone by providing the environment ID. Environment ID should be URL encoded."
+title: "Delete environment"
+description: "Delete an environment from a zone by providing the environment ID. Environment ID should be URL encoded."
 author: "Yarinle4"
 ms.date: 11/26/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "security"
 doc_type: apiPageType
 ---
 
-# Detach environment
+# Delete environment
 
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Detach an [environment](../resources/security-environment.md) object from a [zone](../resources/security-zone.md) object by providing the EnvironmentId. EnvironmentId should be URL encoded.
+Delete an [environment](../resources/security-environment.md) object from a [zone](../resources/security-zone.md) object by providing the EnvironmentId. EnvironmentId should be URL encoded.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "security-zone-delete-environments-permissions"
+  "name": "security-environment-delete-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/security-zone-delete-environments-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/security-environment-delete-permissions.md)]
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /security/zones/{zoneId}/environments/{environmentId}/$ref
+DELETE /security/zones/{zoneId}/environments/{environmentId}
 ```
 
 ## Request headers
@@ -62,7 +62,7 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/security/zones/{zoneId}/environments/{environmentId}/$ref
+DELETE https://graph.microsoft.com/beta/security/zones/03f98aee-fee9-06b4-e5d3-647ef536acac/environments/23613f44-7f57-d1fc-b9a4-448cd3e8c7c3
 ```
 
 
@@ -76,5 +76,3 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 204 No Content
-```
-

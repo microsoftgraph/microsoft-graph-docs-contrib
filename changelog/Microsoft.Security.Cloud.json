@@ -33,6 +33,14 @@
           "ChangeType": "Addition",
           "Description": "Added the [zone](https://learn.microsoft.com/en-us/graph/api/resources/security-zone?view=graph-rest-beta) resource.",
           "Target": "zone"
+        },
+        {
+          "Id": "3015f3d8-b93e-46f9-b81b-e476d2398b9c",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "zones",
+          "ChangeType": "Addition",
+          "Description": "Added the **zones** relationship to the [security](https://learn.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-beta) resource.",
+          "Target": "security"
         }
       ],
       "Id": "3015f3d8-b93e-46f9-b81b-e476d2398b9c",

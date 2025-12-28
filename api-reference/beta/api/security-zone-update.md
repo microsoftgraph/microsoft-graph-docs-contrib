@@ -71,7 +71,7 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/security/zones/{zoneId}
+PATCH https://graph.microsoft.com/beta/security/zones/03f98aee-fee9-06b4-e5d3-647ef536acac
 Content-Type: application/json
 
 {

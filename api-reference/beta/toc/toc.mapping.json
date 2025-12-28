@@ -2846,7 +2846,6 @@
           "resources": [
             "microsoft.graph.security.zone",
             "microsoft.graph.security.environment",
-            "microsoft.graph.security.aggregatedEnvironment"
           ],
           "complexTypes": [
               "microsoft.graph.security.auditInfo"

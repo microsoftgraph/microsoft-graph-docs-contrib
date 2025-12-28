@@ -72,7 +72,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/zones/{zoneId}/environments
+POST https://graph.microsoft.com/beta/security/zones/03f98aee-fee9-06b4-e5d3-647ef536acac/environments
 Content-Type: application/json
 
 {

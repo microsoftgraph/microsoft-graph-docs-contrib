@@ -1,6 +1,6 @@
 ---
 title: "aggregatedEnvironment resource type"
-description: "Represents environment count summaries by type within a zone."
+description: "Represents grouped environments by type within a specific zone. These aggregations provide a quick summary of how many environments of each type are attached to a zone."
 author: "Yarinle4"
 ms.date: 11/26/2025
 ms.localizationpriority: medium

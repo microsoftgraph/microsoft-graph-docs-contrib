@@ -77,15 +77,14 @@ POST https://graph.microsoft.com/beta/security/zones
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.zone",
-  "displayName": "String",
-  "description": "String",
-  "created": {
-    "@odata.type": "microsoft.graph.security.auditInfo"
-  },
-  "modified": {
-    "@odata.type": "microsoft.graph.security.auditInfo"
-  }
+  "displayName": "Production Zone",
+  "description": "Zone for production environments",
+  "environments": [
+    {
+      "id": "/subscriptions/03e34771-839c-40e0-89f4-01f2e6ced082",
+      "kind": "azureSubscription"
+    }
+  ]
 }
 ```
 
