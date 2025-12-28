@@ -24,7 +24,7 @@ Inherits from [entity](../resources/entity.md)
 |[List](../api/security-zone-list-environments.md)|[microsoft.graph.security.environment](../resources/security-environment.md) collection|Get all [environment](../resources/security-environment.md) objects associated with a [zone](../resources/security-zone.md) object.|
 |[Create](../api/security-zone-post-environments.md)|[microsoft.graph.security.environment](../resources/security-environment.md)|Create an [environment](../resources/security-environment.md) object to attach it to a [zone](../resources/security-zone.md).|
 |[Get](../api/security-environment-get.md)|[microsoft.graph.security.environment](../resources/security-environment.md)|Get a specific [environment](../resources/security-environment.md) associated with a [zone](../resources/security-zone.md). The **environmentId** must be URL-encoded.|
-|[Delete](../api/security-zone-delete-environments.md)|None|Delete an [environment](../resources/security-environment.md) object by providing the **environmentId** to detach it from a [zone](../resources/security-zone.md).|
+|[Delete](../api/security-environment-delete.md)|None|Delete an [environment](../resources/security-environment.md) object by providing the **environmentId** to detach it from a [zone](../resources/security-zone.md).|
 
 ## Properties
 |Property|Type|Description|

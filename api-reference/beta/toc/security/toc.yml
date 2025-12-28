@@ -255,7 +255,7 @@ items:
     - name: Get
       href: ../../api/security-environment-get.md
     - name: Delete
-      href: ../../api/security-zone-delete-environments.md
+      href: ../../api/security-environment-delete.md
   - name: Aggregated environment
     href: ../../resources/security-aggregatedenvironment.md
   - name: Complex types
