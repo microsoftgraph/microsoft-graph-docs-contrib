@@ -1,5 +1,5 @@
 ---
-title: "zone resource type"
+title: "Zone resource type"
 description: "Represents an aggregate of cloud-native environments (also referred to as cloud scope) used to manage access and security at scale within Microsoft Defender for Cloud."
 author: "Yarinle4"
 ms.date: 11/26/2025
@@ -8,7 +8,7 @@ ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
-# zone resource type
+# Zone resource type
 
 Namespace: microsoft.graph.security
 

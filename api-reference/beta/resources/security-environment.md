@@ -1,5 +1,5 @@
 ---
-title: "environment resource type"
+title: "Environment resource type"
 description: "Represents a cloud-native environment that can be selected within a specific zone for security management."
 author: "Yarinle4"
 ms.date: 11/26/2025
@@ -8,7 +8,7 @@ ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
-# environment resource type
+# Environment resource type
 
 Namespace: microsoft.graph.security
 
