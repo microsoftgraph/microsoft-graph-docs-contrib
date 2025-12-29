@@ -54,7 +54,7 @@ The following table shows the properties that can be supplied when you update an
 
 
 ## Response
-If successful, this method returns a `204 Accepted` response code and an [accessReview](../resources/accessreview.md) object in the response body.
+If successful, this method returns a `202 Accepted` response code and an [accessReview](../resources/accessreview.md) object in the response body.
 
 ## Example
 
@@ -116,7 +116,7 @@ Content-type: application/json
   "@odata.type": "microsoft.graph.accessReview"
 } -->
 ```http
-HTTP/1.1 204 Accepted
+HTTP/1.1 202 Accepted
 Content-type: application/json
 
 {

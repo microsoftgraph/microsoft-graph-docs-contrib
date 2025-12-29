@@ -109,7 +109,7 @@ Content-type: application/json
   "@odata.type": "microsoft.graph.program"
 } -->
 ```http
-HTTP/1.1 204 Accepted
+HTTP/1.1 202 Accepted
 Content-type: application/json
 
 {
