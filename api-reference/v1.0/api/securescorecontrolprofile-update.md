@@ -191,7 +191,7 @@ The following is an example of the response when the optional `Prefer: return=re
 
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.secureScoreControlProfile"
 } -->
 
