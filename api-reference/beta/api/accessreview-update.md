@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 
 In the Microsoft Entra [access reviews](../resources/accessreviews-root.md) feature, update an existing [accessReview](../resources/accessreview.md) object to change one or more of its properties.
 
-This API is not intended to change the reviewers or decisions of a review.  To change the reviewers, use the [addReviewer](accessreview-addreviewer.md) or [removeReviewer](accessreview-removereviewer.md) APIs.  To stop an already-started one-time review, or an already-started instance of a recurring review, early, use the [stop](accessreview-stop.md) API. To apply the decisions to the target group or app access rights, use the [apply](accessreview-apply.md) API. 
+This API is not intended to change the reviewers or decisions of a review. To change the reviewers, use the [addReviewer](accessreview-addreviewer.md) or [removeReviewer](accessreview-removereviewer.md) APIs. To stop an already-started one-time review, or an already-started instance of a recurring review, early, use the [stop](accessreview-stop.md) API. To apply the decisions to the target group or app access rights, use the [apply](accessreview-apply.md) API. 
 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -47,8 +47,8 @@ The following table shows the properties that can be supplied when you update an
 | Property      | Type           | Description                                                                                                |
 |:--------------|:---------------|:-----------------------------------------------------------------------------------------------------------|
 | displayName   | String         | The access review name.                                                                                    |
-| startDateTime | DateTimeOffset | The DateTime when the review is scheduled to be start.  This must be a date in the future.                 |
-| endDateTime   | DateTimeOffset | The DateTime when the review is scheduled to end. This must be at least one day later than the start date. |
+| startDateTime | DateTimeOffset | The DateTime when the review is scheduled to be start. This date must be in the future.                 |
+| endDateTime   | DateTimeOffset | The DateTime when the review is scheduled to end. This date must be at least one day after the start date. |
 | description   | String         | The description, to show to the reviewers.                                                                 |
 
 
