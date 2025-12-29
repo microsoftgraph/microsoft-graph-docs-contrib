@@ -12,7 +12,7 @@ ms.date: 03/06/2024
 
 Namespace: microsoft.graph
 
-Update an editable **secureScoreControlProfile** object within any integrated solution to change various properties, such as **assignedTo** or **tenantNote**.
+Update an editable **secureScoreControlProfile** object within any integrated solution to change various properties, such as **tenantNote**.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -223,9 +223,6 @@ Content-type: application/json
   "complianceInformation": null,
   "controlStateUpdates": [
     {
-      "assignedTo": "",
-      "comment": "control is under 'Third Party' exception",
-      "state": "Third Party",
       "updatedBy": "user1@contoso.com",
       "updatedDateTime": "2019-03-19T22:37:14.628799Z"
     }
