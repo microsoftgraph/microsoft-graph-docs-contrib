@@ -1,6 +1,6 @@
 ---
 title: "message: delta"
-description: "Get a set of messages that have been added, deleted, or updated in a specified folder."
+description: "Get a set of messages added, deleted, or updated in a specified folder."
 ms.localizationpriority: high
 author: "SuryaLashmiS"
 ms.subservice: "outlook"
@@ -12,11 +12,11 @@ ms.date: 06/21/2024
 
 Namespace: microsoft.graph
 
-Get a set of messages that have been added, deleted, or updated in a specified folder.
+Get a set of messages added, deleted, or updated in a specified folder.
 
 A **delta** function call for messages in a folder is similar to a GET request, except that by appropriately
 applying [state tokens](/graph/delta-query-overview) in one or more of these calls, you can [query for incremental changes in the messages in
-that folder](/graph/delta-query-messages). This allows you to maintain and synchronize a local store of a user's messages without
+that folder](/graph/delta-query-messages). It allows you to maintain and synchronize a local store of a user's messages without
 having to fetch the entire set of messages from the server every time.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
@@ -154,7 +154,7 @@ If the request is successful, the response would include a state token, which is
 Respectively, they indicate whether you should continue with the round or you have completed
 getting all the changes for that round.
 
-The response below shows a _skipToken_ in an _@odata.nextLink_ response header.
+The response shows a _skipToken_ in an _@odata.nextLink_ response header.
 
 Note: The response object shown here might be shortened for readability.
 <!-- {
