@@ -2845,7 +2845,7 @@
           "name": "Cloud zones (preview)",
           "resources": [
             "microsoft.graph.security.zone",
-            "microsoft.graph.security.environment",
+            "microsoft.graph.security.environment"
           ],
           "complexTypes": [
               "microsoft.graph.security.auditInfo"
