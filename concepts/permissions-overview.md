@@ -243,3 +243,4 @@ The **appRoles**, **oauth2PermissionScopes**, and **resourceSpecificApplicationP
 - [Microsoft Graph permissions reference](permissions-reference.md).
 - [Overview of role-based access control in Microsoft Entra ID](/azure/active-directory/roles/custom-overview).
 - [Understanding delegated access](/azure/active-directory/develop/delegated-access-primer)
+
