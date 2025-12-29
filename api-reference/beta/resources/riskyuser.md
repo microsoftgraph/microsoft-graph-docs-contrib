@@ -38,11 +38,11 @@ For more information about risk events, see [Microsoft Entra ID Protection](/azu
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
 |id|string|Unique ID of the user at risk.|
-|isDeleted|Boolean|Indicates whether the user is deleted. Possible values are: `true`, `false`.|
+|isDeleted|Boolean|Indicates whether the user is deleted. The possible values are: `true`, `false`.|
 |isProcessing|Boolean|Indicates whether a user's risky state is being processed by the backend.|
 |riskLastUpdatedDateTime|DateTimeOffset|The date and time that the risky user was last updated.  The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |riskLevel|riskLevel| Level of the detected risky user. The possible values are `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.  |
-|riskState|riskState| State of the user's risk. Possible values are: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.  |
+|riskState|riskState| State of the user's risk. The possible values are: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.  |
 |riskDetail|[riskDetail](../resources/riskdetail.md)|Details of the detected risk. <br/>**Note:** Details for this property are only available for Microsoft Entra ID P2 customers. All other customers are returned `hidden`.|
 |userDisplayName|string|Risky user display name.|
 |userPrincipalName|string|Risky user principal name.|

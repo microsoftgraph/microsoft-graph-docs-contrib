@@ -21,7 +21,7 @@ Represents a container for holding content and its type.
 | Property    | Type                                    | Description                                                                                                                     |
 |:------------|:----------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------|
 | content     | String                                  | The content of the item.                                                                                                        |
-| contentType | microsoft.graph.windowsUpdates.bodyType | The type of the content indicated by the enum value of **bodyType**. Possible values are: `text`, `html`, `unknownFutureValue`. |
+| contentType | microsoft.graph.windowsUpdates.bodyType | The type of the content indicated by the enum value of **bodyType**. The possible values are: `text`, `html`, `unknownFutureValue`. |
 
 ## Relationships
 

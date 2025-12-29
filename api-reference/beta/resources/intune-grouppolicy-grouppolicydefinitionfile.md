@@ -32,7 +32,7 @@ The entity represents an ADMX (Administrative Template) XML file. The ADMX file 
 |languageCodes|String collection|The supported language codes for the ADMX file.|
 |targetPrefix|String|Specifies the logical name that refers to the namespace within the ADMX file.|
 |targetNamespace|String|Specifies the URI used to identify the namespace within the ADMX file.|
-|policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Specifies the type of group policy. Possible values are: `admxBacked`, `admxIngested`.|
+|policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Specifies the type of group policy. The possible values are: `admxBacked`, `admxIngested`.|
 |revision|String|The revision version associated with the file.|
 |fileName|String|The file name of the ADMX file without the path. For example: edge.admx|
 |id|String|Key of the entity.|

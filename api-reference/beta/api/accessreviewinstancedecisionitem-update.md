@@ -54,7 +54,7 @@ The following table shows the properties accepted to update an `accessReviewInst
 
 | Property     | Type       | Description |
 |:-------------|:------------|:------------|
-| decision  | String | Access decision for the entity being reviewed. Possible values are: `Approve` `Deny` `NotReviewed` `DontKnow`. Required.  |
+| decision  | String | Access decision for the entity being reviewed. The possible values are: `Approve` `Deny` `NotReviewed` `DontKnow`. Required.  |
 |  justification | String | Context of the review provided to admins. Required if justificationRequiredOnApproval is True on the accessReviewScheduleDefinition.  |
 | applyResult | String| The result of the apply action. Only supported for BYOD scenarios. Possible values: `New`, `AppliedSuccessfully`, `AppliedWithUnknownFailure`, `AppliedSuccessfullyButObjectNotFound`, and `ApplyNotSupported`. |
 | applyDescription | String | A description of the applyResult |
@@ -124,7 +124,7 @@ Content-Type: application/json
   "blockType": "response"
 } -->
 ```http
-HTTP/1.1 204 Accepted
+HTTP/1.1 202 Accepted
 ```
 
 
@@ -183,7 +183,7 @@ Content-Type: application/json
   "blockType": "response"
 } -->
 ```http
-HTTP/1.1 204 Accepted
+HTTP/1.1 202 Accepted
 ```
 
 ### Example 3: Update a applyResult on an accessReviewInstance
@@ -246,7 +246,7 @@ Content-Type: application/json
   "blockType": "response"
 } -->
 ```http
-HTTP/1.1 204 Accepted
+HTTP/1.1 202 Accepted
 ```
 
 <!--

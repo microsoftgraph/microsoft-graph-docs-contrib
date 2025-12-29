@@ -14,11 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Set the manual work location signal for a [user](../resources/user.md). The explicit value chosen by a user (or an authorized client) overrides any automatically detected or scheduled working hours and location.
+Set the manual work location signal for a [user](../resources/user.md). The explicit value chosen by a user or an authorized client overrides any automatically detected or scheduled working hours and location.
 
 - Precedence: manual > automatic > scheduled
 - Precision (within the same layer): more precise wins (for example, office + building > office)
 - If a manual location is set, it overrides both automatic and scheduled settings.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -39,8 +41,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 POST /me/presence/setManualLocation
-POST /users/{usersId}/presence/setManualLocation
-POST /communications/presences/{presenceId}/setManualLocation
 ```
 
 ## Request headers
@@ -58,12 +58,12 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|placeId|String| Identifier of the place (when applicable). |
-|workLocationType|workLocationType| Semantic type of the location. The possible values are: `unspecified`, `office`, `remote`, `timeOff`, `unknownFutureValue`.|
+|placeId|String| Identifier of the place, if applicable. |
+|workLocationType| workLocationType | Semantic type of the location. Supports a subset of the values for **workLocationType**. The possible values are: `office`, `remote`, `timeOff`. |
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this action returns a `200 OK` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -94,6 +94,6 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
 ```
 
