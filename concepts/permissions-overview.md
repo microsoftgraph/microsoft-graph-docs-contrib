@@ -69,7 +69,7 @@ Apart from being assigned Microsoft Graph application permissions, an app might 
 |--|--|--|
 | Types of apps | Web app / Mobile / Single-page app (SPA) | Web / Daemon |
 | Access context | [Get access on behalf of a user](auth-v2-user.md) | [Get access without a user](auth-v2-service.md) |
-| Who can consent | <li> Users can consent for their data <li> Admins can consent for all users | Only admin can consent |
+| Who can consent | <ul><li> Users can consent for their data</li> <li> Admins can consent for all users</li></ul><br/><br/>User consent availability also depends on your tenant's [app consent policies](/entra/identity/enterprise-apps/manage-app-consent-policies). Even when admin consent isn't required for a permission by default, your organization's policies may still restrict user consent | Only admin can consent |
 | Other names | <li> Scopes <li>OAuth2 permissions | <li> App roles <li>App-only permissions <li>Direct access permissions  |
 | Result of consent | [oAuth2PermissionGrant](/graph/api/resources/oauth2permissiongrant) object| [appRoleAssignment](/graph/api/resources/approleassignment) object |
 | Supported **signInAudience** types | AzureADMyOrg <br/> AzureADMultipleOrgs <br/> AzureADandPersonalMicrosoftAccount <br/> PersonalMicrosoftAccount | AzureADMyOrg <br/> AzureADMultipleOrgs <br/> AzureADandPersonalMicrosoftAccount |
