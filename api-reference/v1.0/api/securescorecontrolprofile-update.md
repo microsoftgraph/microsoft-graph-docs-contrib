@@ -12,7 +12,7 @@ ms.date: 03/06/2024
 
 Namespace: microsoft.graph
 
-Update an editable **secureScoreControlProfile** object within any integrated solution to change various properties, such as **assignedTo** or **tenantNote**.
+Update an editable **secureScoreControlProfile** object within any integrated solution to change various properties, such as **tenantNote**.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -51,7 +51,7 @@ In the request body, supply a JSON representation of the values for relevant fie
 
 If successful, this method returns a `204 No Content` response code.
 
-If the optional request header is used, the method returns a `200 OK` response code and the updated [secureScoreControlProfiles](../resources/securescorecontrolprofile.md) object in the response body.
+If the optional `Prefer: return=representation` request header is used, the method returns a `200 OK` response code and the updated [secureScoreControlProfiles](../resources/securescorecontrolprofile.md) object in the response body.
 
 ## Example
 
@@ -141,6 +141,7 @@ The following example shows a request that includes the `Prefer` request header.
 ```http
 PATCH https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles/NonOwnerAccess
 Content-type: application/json
+Prefer: return=representation
 
 {
   "vendorInformation": {
@@ -223,9 +224,6 @@ Content-type: application/json
   "complianceInformation": null,
   "controlStateUpdates": [
     {
-      "assignedTo": "",
-      "comment": "control is under 'Third Party' exception",
-      "state": "Third Party",
       "updatedBy": "user1@contoso.com",
       "updatedDateTime": "2019-03-19T22:37:14.628799Z"
     }
