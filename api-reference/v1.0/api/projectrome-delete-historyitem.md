@@ -59,7 +59,7 @@ The following example shows a request.
 }-->
 
 ```http
-PUT https://graph.microsoft.com/v1.0/me/activities/{activity-id}/historyItems/{item-id}
+DELETE https://graph.microsoft.com/v1.0/me/activities/{activity-id}/historyItems/{item-id}
 ```
 
 ##### Response
