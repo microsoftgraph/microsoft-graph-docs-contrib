@@ -35,7 +35,7 @@ GET /me/mailFolders/{id}/messages/delta
 GET /users/{id}/mailFolders/{id}/messages/delta
 ```
 
-To specifically get only created, updated or deleted messages in the specified mailFolder:
+To specifically get only created, updated, or deleted messages in the specified mailFolder:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/messages/delta?changeType=created
@@ -60,7 +60,7 @@ includes the encoded, desired parameters.
 |:---------------|:--------|:----------|
 | $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `@odata.deltaLink` URL of the previous **delta** function call for the same message collection, indicating the completion of that round of change tracking. Save and apply the entire `@odata.deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
 | $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `@odata.nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same message collection. |
-| changeType | string | A custom query option to filter the delta response based on the type of change. Supported values are `created`, `updated` or `deleted`.|
+| changeType | string | A custom query option to filter the delta response based on the type of change. Supported values are `created`, `updated`, or `deleted`.|
 
 ### OData query parameters
 
