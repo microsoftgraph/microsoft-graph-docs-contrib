@@ -77,10 +77,10 @@ Content-Type: application/json
 
 > **Note:** The `/organization/{organizationId}/settings` path is deprecated in the beta experience. Going forward, use the `/admin/people` path.
 
-If successful, the response returns a `201 OK` response code and a **profileCardProperty** object in the response body. The value for the `Alias` attribute is displayed on a user's profile card.
+If successful, the response returns a `201 Created` response code and a **profileCardProperty** object in the response body. The value for the `Alias` attribute is displayed on a user's profile card.
 
 ``` http
-HTTP/1.1 201 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
@@ -150,12 +150,12 @@ Content-Type: application/json
 
 If a language isn't supported, the property name is shown with the default value.
 
-If successful, the response returns a `201 OK` response code and a **profileCardProperty** object in the response body. In this example, you can assume that the profile card displays **Kostenstelle** for all users who set their language settings to German on the profile card. For all other users, **Cost center** is displayed on the profile card.
+If successful, the response returns a `201 Created` response code and a **profileCardProperty** object in the response body. In this example, you can assume that the profile card displays **Kostenstelle** for all users who set their language settings to German on the profile card. For all other users, **Cost center** is displayed on the profile card.
 
 #### Response
 
 ``` http
-HTTP/1.1 201 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
