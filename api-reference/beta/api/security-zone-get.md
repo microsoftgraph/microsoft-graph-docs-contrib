@@ -86,16 +86,51 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/security/$metadata#zones/$entity",
   "@odata.type": "#microsoft.graph.security.zone",
-  "id": "03f98aee-fee9-06b4-e5d3-647ef536acac",
+  "id": "05cfec937c214892a14448562ef4bf4a",
   "displayName": "Production Zone",
   "description": "Zone for production environments",
   "created": {
-    "@odata.type": "microsoft.graph.security.auditInfo"
+    "by": "Yarin",
+    "dateTime": "2023-10-01T12:00:00Z"
   },
   "modified": {
-    "@odata.type": "microsoft.graph.security.auditInfo"
-  }
+    "by": "Yarin",
+    "dateTime": "2023-10-01T12:00:00Z"
+  },
+  "aggregations": [
+    {
+      "kind": "azureSubscription",
+      "count": 1
+    },
+    {
+      "kind": "awsAccount",
+      "count": 2
+    },
+    {
+      "kind": "gcpProject",
+      "count": 1
+    }
+  ],
+  "environments": [
+    {
+      "kind": "awsAccount",
+      "id": "181994123251"
+    },
+    {
+      "kind": "awsAccount",
+      "id": "326438728454"
+    },
+    {
+      "kind": "azureSubscription",
+      "id": "02687862-a843-4846-81f0-efe9ef244daa"
+    },
+    {
+      "kind": "gcpProject",
+      "id": "69483221284"
+    }
+  ]
 }
 ```
 

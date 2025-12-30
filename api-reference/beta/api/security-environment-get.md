@@ -68,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/zones/03f98aee-fee9-06b4-e5d3-647ef536acac/environments/23613f44-7f57-d1fc-b9a4-448cd3e8c7c3
+GET https://graph.microsoft.com/beta/security/zones/05cfec937c214892a14448562ef4bf4a/environments/181994123251
 ```
 
 ### Response
@@ -86,9 +86,10 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/security/zones/$metadata#environments/$entity",
   "@odata.type": "#microsoft.graph.security.environment",
-  "id": "23613f44-7f57-d1fc-b9a4-448cd3e8c7c3",
-  "kind": "azureSubscription"
+  "kind": "awsAccount",
+  "id": "181994123251"
 }
 ```
 

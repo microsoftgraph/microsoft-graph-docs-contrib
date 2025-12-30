@@ -72,13 +72,12 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/security/zones/03f98aee-fee9-06b4-e5d3-647ef536acac/environments
+POST https://graph.microsoft.com/beta/security/zones/f6e190cba2f64bcba703694aedb81712/environments
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.environment",
-  "id": "23613f44-7f57-d1fc-b9a4-448cd3e8c7c3",
-  "kind": "azureSubscription"
+  "kind": "azureSubscription",
+  "id": "d34fd44c-ebfa-4a9c-bceb-9eeafe72ac15"
 }
 ```
 
@@ -97,9 +96,10 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/security/$metadata#environments/$entity",
   "@odata.type": "#microsoft.graph.security.environment",
-  "id": "23613f44-7f57-d1fc-b9a4-448cd3e8c7c3",
-  "kind": "azureSubscription"
+  "kind": "azureSubscription",
+  "id": "d34fd44c-ebfa-4a9c-bceb-9eeafe72ac15"
 }
 ```
 

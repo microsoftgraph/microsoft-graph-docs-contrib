@@ -81,8 +81,20 @@ Content-Type: application/json
   "description": "Zone for production environments",
   "environments": [
     {
-      "id": "/subscriptions/03e34771-839c-40e0-89f4-01f2e6ced082",
-      "kind": "azureSubscription"
+      "kind": "awsAccount",
+      "id": "181994123251"
+    },
+    {
+      "kind": "awsAccount",
+      "id": "326438728454"
+    },
+    {
+      "kind": "azureSubscription",
+      "id": "02687862-a843-4846-81f0-efe9ef244daa"
+    },
+    {
+      "kind": "gcpProject",
+      "id": "69483221284"
     }
   ]
 }
@@ -103,16 +115,51 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/security/$metadata#zones/$entity",
   "@odata.type": "#microsoft.graph.security.zone",
-  "id": "03f98aee-fee9-06b4-e5d3-647ef536acac",
+  "id": "05cfec937c214892a14448562ef4bf4a",
   "displayName": "Production Zone",
   "description": "Zone for production environments",
   "created": {
-    "@odata.type": "microsoft.graph.security.auditInfo"
+    "by": "Yarin",
+    "dateTime": "2023-10-01T12:00:00Z"
   },
   "modified": {
-    "@odata.type": "microsoft.graph.security.auditInfo"
-  }
+    "by": "Yarin",
+    "dateTime": "2023-10-01T12:00:00Z"
+  },
+  "environments": [
+    {
+      "kind": "awsAccount",
+      "id": "181994123251"
+    },
+    {
+      "kind": "awsAccount",
+      "id": "326438728454"
+    },
+    {
+      "kind": "azureSubscription",
+      "id": "02687862-a843-4846-81f0-efe9ef244daa"
+    },
+    {
+      "kind": "gcpProject",
+      "id": "69483221284"
+    }
+  ],
+  "aggregations": [
+    {
+      "kind": "azureSubscription",
+      "count": 1
+    },
+    {
+      "kind": "awsAccount",
+      "count": 2
+    },
+    {
+      "kind": "gcpProject",
+      "count": 1
+    }
+  ]
 }
 ```
 

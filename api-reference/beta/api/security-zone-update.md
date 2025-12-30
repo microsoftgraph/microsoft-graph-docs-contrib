@@ -71,13 +71,12 @@ The following example shows a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/security/zones/03f98aee-fee9-06b4-e5d3-647ef536acac
+PATCH https://graph.microsoft.com/beta/security/zones/05cfec937c214892a14448562ef4bf4a
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.security.zone",
-  "displayName": "Production Zone",
-  "description": "Zone for production environments"
+  "displayName": "Updated Production Zone",
+  "description": "Updated description for production environments"
 }
 ```
 
@@ -96,20 +95,51 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/security/$metadata#zones/$entity",
   "@odata.type": "#microsoft.graph.security.zone",
-  "id": "03f98aee-fee9-06b4-e5d3-647ef536acac",
-  "displayName": "Production Zone",
-  "description": "Zone for production environments",
+  "id": "05cfec937c214892a14448562ef4bf4a",
+  "displayName": "Updated Production Zone",
+  "description": "Updated description for production environments",
   "created": {
-    "@odata.type": "microsoft.graph.security.auditInfo",
-    "by": "admin@contoso.com",
-    "dateTime": "2024-01-15T10:30:00Z"
+    "by": "Yarin",
+    "dateTime": "2023-10-01T12:00:00Z"
   },
   "modified": {
-    "@odata.type": "microsoft.graph.security.auditInfo",
-    "by": "admin@contoso.com",
-    "dateTime": "2024-01-20T14:45:00Z"
-  }
+    "by": "Yarin",
+    "dateTime": "2023-10-15T14:30:00Z"
+  },
+  "aggregations": [
+    {
+      "kind": "azureSubscription",
+      "count": 1
+    },
+    {
+      "kind": "awsAccount",
+      "count": 2
+    },
+    {
+      "kind": "gcpProject",
+      "count": 1
+    }
+  ],
+  "environments": [
+    {
+      "kind": "awsAccount",
+      "id": "181994123251"
+    },
+    {
+      "kind": "awsAccount",
+      "id": "326438728454"
+    },
+    {
+      "kind": "azureSubscription",
+      "id": "02687862-a843-4846-81f0-efe9ef244daa"
+    },
+    {
+      "kind": "gcpProject",
+      "id": "69483221284"
+    }
+  ]
 }
 ```
 

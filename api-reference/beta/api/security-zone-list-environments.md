@@ -68,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/zones/03f98aee-fee9-06b4-e5d3-647ef536acac/environments
+GET https://graph.microsoft.com/beta/security/zones/05cfec937c214892a14448562ef4bf4a/environments
 ```
 
 ### Response
@@ -86,11 +86,27 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/security/zones/$metadata#environments",
   "value": [
     {
       "@odata.type": "#microsoft.graph.security.environment",
-      "id": "23613f44-7f57-d1fc-b9a4-448cd3e8c7c3",
-      "kind": "azureSubscription"
+      "kind": "awsAccount",
+      "id": "181994123251"
+    },
+    {
+      "@odata.type": "#microsoft.graph.security.environment",
+      "kind": "awsAccount",
+      "id": "326438728454"
+    },
+    {
+      "@odata.type": "#microsoft.graph.security.environment",
+      "kind": "azureSubscription",
+      "id": "02687862-a843-4846-81f0-efe9ef244daa"
+    },
+    {
+      "@odata.type": "#microsoft.graph.security.environment",
+      "kind": "gcpProject",
+      "id": "69483221284"
     }
   ]
 }
