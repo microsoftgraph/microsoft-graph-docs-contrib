@@ -62,7 +62,7 @@ Use the cloud zones API to:
 - Attach and detach environments (such as Azure subscriptions, AWS accounts, GCP projects, or DevOps connections) to zones
 - Query zones and their associated environments
 
-For more information, see [Manage cloud scopes and unified role-based access control](https://learn.microsoft.com/en-us/azure/defender-for-cloud/cloud-scopes-unified-rbac?pivots=defender-portal).
+For more information, see [Manage cloud scopes and unified role-based access control](/azure/defender-for-cloud/cloud-scopes-unified-rbac?pivots=defender-portal).
 
 
 ## Custom detections
