@@ -1,6 +1,6 @@
 ---
 title: "Create environment"
-description: "Create an environment object to attach it to a zone."
+description: "Create an environment object to attach it to a zone. You can create up to 1,000 environments per zone."
 author: "Yarinle4"
 ms.date: 11/26/2025
 ms.localizationpriority: medium

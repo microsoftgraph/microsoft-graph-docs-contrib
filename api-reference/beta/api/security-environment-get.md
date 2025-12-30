@@ -1,6 +1,6 @@
 ---
 title: "Get environment"
-description: "Get a specific environment associated with a zone."
+description: "Get a specific environment associated with a zone. The environment ID must be URL-encoded."
 author: "Yarinle4"
 ms.date: 11/26/2025
 ms.localizationpriority: medium

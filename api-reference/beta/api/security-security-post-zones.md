@@ -1,6 +1,6 @@
 ---
 title: "Create zone"
-description: "Create a new zone object."
+description: "Create a new zone object. You can create up to 1,000 zones per tenant."
 author: "Yarinle4"
 ms.date: 11/26/2025
 ms.localizationpriority: medium

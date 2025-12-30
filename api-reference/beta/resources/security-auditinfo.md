@@ -1,6 +1,6 @@
 ---
 title: "auditInfo resource type"
-description: "Represents audit metadata, including the user and timestamps for creation or modification actions."
+description: "Represents audit metadata, including the user or application and timestamps for creation or modification actions. This resource tracks who performed an action and when it occurred."
 author: "Yarinle4"
 ms.date: 11/26/2025
 ms.localizationpriority: medium

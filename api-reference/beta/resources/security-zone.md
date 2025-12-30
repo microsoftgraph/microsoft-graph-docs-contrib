@@ -16,7 +16,12 @@ Namespace: microsoft.graph.security
 
 Represents an aggregate of cloud-native environments (also referred to as a *cloud scope*) used to manage access and security at scale within Microsoft Defender for Cloud. Zones enable the segmentation of multi-cloud environments, such as Azure, AWS, GCP, and connected DevOps or registry sources, into meaningful groupings, allowing for the consistent application of least‑privilege access controls.
 
-When you set up a new zone, you can assign roles to it. For more information about role‑based access control permission assignments, see [rbacApplicationMultiple](../resources/rbacapplicationmultiple.md).
+When you set up a new zone, you can assign roles to it. For more information about role‑based access control permission assignments, see [rbacApplicationMultiple](../resources/rbacapplicationmultiple.md).
+
+For more information, see [Manage cloud scopes and unified role-based access control](https://learn.microsoft.com/en-us/azure/defender-for-cloud/cloud-scopes-unified-rbac?pivots=defender-portal).
+
+> [!NOTE]
+> There is no default zone in a tenant. Environments are not automatically attached to any zone—they must be explicitly assigned to zones by administrators. An environment can be attached to multiple zones simultaneously, allowing for flexible grouping and overlapping access control scenarios.
 
 Inherits from [entity](../resources/entity.md).
 

@@ -1,6 +1,6 @@
 ---
 title: "Delete environment"
-description: "Delete an environment from a zone by providing the environment ID. Environment ID should be URL encoded."
+description: "Delete an environment from a zone by providing the environment ID. The environment ID should be URL-encoded."
 author: "Yarinle4"
 ms.date: 11/26/2025
 ms.localizationpriority: medium
