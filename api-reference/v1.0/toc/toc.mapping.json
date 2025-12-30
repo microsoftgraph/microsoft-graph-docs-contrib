@@ -1972,7 +1972,7 @@
         {
           "name": "Administration",
           "resources": [
-            "microsoft.graph.teamsAdministration.teamsUserConfiguration"
+            "microsoft.graph.teamsAdministration.teamsUserConfiguration",
             "microsoft.graph.teamsAdministration.teamsPolicyAssignment",
             "microsoft.graph.teamsAdministration.teamsPolicyUserAssignment",
             "microsoft.graph.teamsAdministration.teamsUserConfiguration"
@@ -1980,7 +1980,7 @@
           "complexTypes": [
             "microsoft.graph.teamsAdministration.assignedTelephoneNumber",
             "microsoft.graph.teamsAdministration.effectivePolicyAssignment",
-            "microsoft.graph.teamsAdministration.policyAssignment"
+            "microsoft.graph.teamsAdministration.policyAssignment",
             "microsoft.graph.teamsAdministration.policyIdentifierDetail"
           ]
         },
