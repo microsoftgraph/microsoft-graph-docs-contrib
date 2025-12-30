@@ -1149,3 +1149,20 @@ Namespace: microsoft.graph.security
   "namespace": "microsoft.graph.security"
 }
 -->
+
+### environmentKind values 
+
+|Member|
+|:---|
+|azureSubscription|
+|awsOrganization|
+|awsAccount|
+|gcpOrganization|
+|gcpProject|
+|dockersHubOrganization|
+|devOpsConnection|
+|azureDevOpsOrganization|
+|gitHubOrganization|
+|gitLabGroup|
+|jFrogArtifactory|
+|unknownFutureValue|

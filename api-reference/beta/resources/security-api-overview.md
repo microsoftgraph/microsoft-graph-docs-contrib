@@ -52,14 +52,18 @@ Use [runHuntingQuery](../api/security-security-runhuntingquery.md) to run a [Kus
 6. The maximum query result size of a single request cannot exceed 124 MB. Exceeding the size limit results in HTTP 400 Bad Request with the message "Query execution has exceeded the allowed result size. Optimize your query by limiting the number of results and try again."
 7. Query results have an overall size limit of 50 MB. This limit doesn't just refer to the number of records; factors such as the number of columns, data types, and field lengths also contribute to the query result size.
 
-## Cloud zones (preview)
+## Zones / Cloud scopes (preview)
 
-Cloud zones in Microsoft Defender for Cloud enable you to group and manage cloud environments across multiple cloud providers (Azure, AWS, GCP) and DevOps platforms. A [zone](security-zone.md) is a logical container that groups related cloud environments, making it easier to apply consistent security policies and monitor security posture across your multi-cloud infrastructure.
+Cloud zones in Microsoft Defender for Cloud enable you to group and manage cloud environments across multiple cloud providers (Azure, AWS, GCP) and DevOps platforms. A [zone](security-zone.md) is a logical container that groups related cloud environments, making it easier to apply consistent security policies and monitor security posture across your multi-cloud infrastructure. A tenant can have a maximum of 1,000 zones.
+
 
 Use the cloud zones API to:
 - Create, update, and delete zones for organizing cloud environments
 - Attach and detach environments (such as Azure subscriptions, AWS accounts, GCP projects, or DevOps connections) to zones
 - Query zones and their associated environments
+
+For more information, see [Manage cloud scopes and unified role-based access control](https://learn.microsoft.com/en-us/azure/defender-for-cloud/cloud-scopes-unified-rbac?pivots=defender-portal).
+
 
 ## Custom detections
 You can create advanced hunting [Custom detection rules](/microsoft-365/security/defender/custom-detections-overview) specific to your security operations to allow you to proactively monitor for threats and take action. For instance, you can make custom detection rules that look for known indicators or misconfigured devices. These automatically trigger alerts and any response actions that you specify.
@@ -321,11 +325,11 @@ The following are some of the most popular requests for working with the Microso
 | List health issues | [List health issues](../api/security-identitycontainer-list-healthissues.md) | [https://graph.microsoft.com/beta/security/identities/healthIssues](https://developer.microsoft.com/graph/graph-explorer?request=security/identities/healthIssues&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
 | List sensors | [List sensors](../api/security-identitycontainer-list-sensors.md) | [https://graph.microsoft.com/beta/security/identities/sensors](https://developer.microsoft.com/graph/graph-explorer?request=security/identities/sensors&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
 | **Cloud zones (preview)**|||
-| List zones | [List zones](../api/security-list-zones.md) | [https://graph.microsoft.com/beta/security/zones](https://developer.microsoft.com/graph/graph-explorer?request=security/zones&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
+| List zones | [List zones](../api/security-security-list-zones.md) | [https://graph.microsoft.com/beta/security/zones](https://developer.microsoft.com/graph/graph-explorer?request=security/zones&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
 | Get zone | [Get zone](../api/security-zone-get.md) | [https://graph.microsoft.com/beta/security/zones/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/zones/{id}&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
-| Create zone | [Create zone](../api/security-post-zones.md) | [https://graph.microsoft.com/beta/security/zones](https://developer.microsoft.com/graph/graph-explorer?request=security/zones&method=POST&version=beta&GraphUrl=https://graph.microsoft.com) |
+| Create zone | [Create zone](../api/security-security-post-zones.md) | [https://graph.microsoft.com/beta/security/zones](https://developer.microsoft.com/graph/graph-explorer?request=security/zones&method=POST&version=beta&GraphUrl=https://graph.microsoft.com) |
 | Update zone | [Update zone](../api/security-zone-update.md) | [https://graph.microsoft.com/beta/security/zones/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/zones/{id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com) |
-| Delete zone | [Delete zone](../api/security-zone-delete.md) | [https://graph.microsoft.com/beta/security/zones/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/zones/{id}&method=DELETE&version=beta&GraphUrl=https://graph.microsoft.com) |
+| Delete zone | [Delete zone](../api/security-security-delete-zones.md) | [https://graph.microsoft.com/beta/security/zones/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/zones/{id}&method=DELETE&version=beta&GraphUrl=https://graph.microsoft.com) |
 | List environments | [List environments](../api/security-zone-list-environments.md) | [https://graph.microsoft.com/beta/security/zones/{id}/environments](https://developer.microsoft.com/graph/graph-explorer?request=security/zones/{id}/environments&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
 | Get environment | [Get environment](../api/security-environment-get.md) | [https://graph.microsoft.com/beta/security/zones/{id}/environments/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/zones/{id}/environments/{id}&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
 | Attach environment | [Attach environment](../api/security-zone-post-environments.md) | [https://graph.microsoft.com/beta/security/zones/{id}/environments](https://developer.microsoft.com/graph/graph-explorer?request=security/zones/{id}/environments&method=POST&version=beta&GraphUrl=https://graph.microsoft.com) |

@@ -1,5 +1,5 @@
 ---
-title: "Zone resource type"
+title: "zone resource type"
 description: "Represents an aggregate of cloud-native environments (also referred to as cloud scope) used to manage access and security at scale within Microsoft Defender for Cloud."
 author: "Yarinle4"
 ms.date: 11/26/2025
@@ -8,7 +8,7 @@ ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
-# Zone resource type
+# zone resource type
 
 Namespace: microsoft.graph.security
 
@@ -23,11 +23,11 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/security-list-zones.md)|[microsoft.graph.security.zone](../resources/security-zone.md) collection|Get a list of the [zone](../resources/security-zone.md) objects and their properties.|
-|[Create](../api/security-post-zones.md)|[microsoft.graph.security.zone](../resources/security-zone.md)|Create a new [zone](../resources/security-zone.md) object.|
+|[List](../api/security-security-list-zones.md)|[microsoft.graph.security.zone](../resources/security-zone.md) collection|Get a list of the [zone](../resources/security-zone.md) objects and their properties.|
+|[Create](../api/security-security-post-zones.md)|[microsoft.graph.security.zone](../resources/security-zone.md)|Create a new [zone](../resources/security-zone.md) object.|
 |[Get](../api/security-zone-get.md)|[microsoft.graph.security.zone](../resources/security-zone.md)|Get a [zone](../resources/security-zone.md) object by a specific **zoneId**.|
 |[Update](../api/security-zone-update.md)|[microsoft.graph.security.zone](../resources/security-zone.md)|Update the properties of a [zone](../resources/security-zone.md) object.|
-|[Delete](../api/security-zone-delete.md)|None|Delete a [zone](../resources/security-zone.md) object by providing the **zoneId**.|
+|[Delete](../api/security-security-delete-zones.md)|None|Delete a [zone](../resources/security-zone.md) object by providing the **zoneId**.|
 
 ## Properties
 |Property|Type|Description|

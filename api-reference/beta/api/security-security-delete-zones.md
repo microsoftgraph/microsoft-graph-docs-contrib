@@ -22,10 +22,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "security-zone-delete-permissions"
+  "name": "security-security-delete-zones-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/security-zone-delete-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/security-security-delete-zones-permissions.md)]
+
+[!INCLUDE [rbac-security-zone-apis-write](../includes/rbac-for-apis/rbac-security-zone-apis-write.md)]
 
 ## HTTP request
 
@@ -75,5 +77,3 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 204 No Content
-```
-

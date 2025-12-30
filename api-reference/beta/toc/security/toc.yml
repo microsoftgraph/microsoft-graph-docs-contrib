@@ -235,15 +235,15 @@ items:
     - name: Zone
       href: ../../resources/security-zone.md
     - name: List
-      href: ../../api/security-list-zones.md
+      href: ../../api/security-security-list-zones.md
     - name: Create
-      href: ../../api/security-post-zones.md
+      href: ../../api/security-security-post-zones.md
     - name: Get
       href: ../../api/security-zone-get.md
     - name: Update
       href: ../../api/security-zone-update.md
     - name: Delete
-      href: ../../api/security-zone-delete.md
+      href: ../../api/security-security-delete-zones.md
   - name: Environment
     items:
     - name: Environment

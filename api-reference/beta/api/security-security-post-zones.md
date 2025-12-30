@@ -22,10 +22,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "security-post-zones-permissions"
+  "name": "security-security-post-zones-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/security-post-zones-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/security-security-post-zones-permissions.md)]
+
+[!INCLUDE [rbac-security-zone-apis-write](../includes/rbac-for-apis/rbac-security-zone-apis-write.md)]
 
 ## HTTP request
 
