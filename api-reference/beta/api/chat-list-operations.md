@@ -108,7 +108,7 @@ GET https://graph.microsoft.com/beta/chats/19:c253a29b5f694b55a6baad8e83510af7@t
 }
 -->
 ``` http
-HTTP/1.1 202 OK
+HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
