@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an [environment](../resources/security-environment.md) object from a [zone](../resources/security-zone.md) object by providing the EnvironmentId. EnvironmentId should be URL encoded.
+Delete an [environment](../resources/security-environment.md) object from a [zone](../resources/security-zone.md) object by providing the environment ID. The environment ID should be URL-encoded.
 
 ## Permissions
 
@@ -57,7 +57,15 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following example shows a request.
+The following example shows a request to detach an Azure subscription environment from a zone.
+
+The environment ID for Azure subscriptions uses the `/subscriptions/{subscription-id}` format and must be URL-encoded when used in the request URL.
+
+| Format | Value |
+|:---|:---|
+| Original | `/subscriptions/d34fd44c-ebfa-4a9c-bceb-9eeafe72ac15` |
+| URL-encoded | `%2Fsubscriptions%2Fd34fd44c-ebfa-4a9c-bceb-9eeafe72ac15` |
+
 <!-- {
   "blockType": "request",
   "name": "delete_environment"

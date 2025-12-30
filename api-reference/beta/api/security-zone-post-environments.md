@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create an [environment](../resources/security-environment.md) object to attach it to a [zone](../resources/security-zone.md).
+Create an [environment](../resources/security-environment.md) object to attach it to a [zone](../resources/security-zone.md). You can create up to 1,000 environments per zone.
 
 ## Permissions
 
@@ -77,7 +77,7 @@ Content-Type: application/json
 
 {
   "kind": "azureSubscription",
-  "id": "d34fd44c-ebfa-4a9c-bceb-9eeafe72ac15"
+  "id": "/subscriptions/d34fd44c-ebfa-4a9c-bceb-9eeafe72ac15"
 }
 ```
 
@@ -99,7 +99,7 @@ Content-Type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/security/$metadata#environments/$entity",
   "@odata.type": "#microsoft.graph.security.environment",
   "kind": "azureSubscription",
-  "id": "d34fd44c-ebfa-4a9c-bceb-9eeafe72ac15"
+  "id": "/subscriptions/d34fd44c-ebfa-4a9c-bceb-9eeafe72ac15"
 }
 ```
 

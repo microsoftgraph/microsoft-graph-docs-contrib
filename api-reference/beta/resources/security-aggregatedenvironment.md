@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents grouped environments by type within a specific zone. These aggregations provide a quick summary of how many environments of each type are attached to a zone.
+Represents grouped [environments](../resources/security-environments.md) by type within a specific [zone](../resources/security-zone.md). These aggregations provide a quick summary of how many environments of each type are attached to a zone.
 
 ## Properties
 |Property|Type|Description|

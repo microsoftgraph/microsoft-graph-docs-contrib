@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [zone](../resources/security-zone.md) object.
+Create a new [zone](../resources/security-zone.md) object. You can create up to 1,000 zones per tenant.
 
 ## Permissions
 
@@ -56,7 +56,7 @@ You can specify the following properties when you create a **zone**.
 |:---|:---|:---|
 |description|String|Description of the zone. Optional.|
 |displayName|String|Human-readable name of the zone. Required.|
-|environments|[microsoft.graph.security.environment](../resources/security-environment.md) collection|Collection of environments to attach to the zone. Required.|
+|environments|[microsoft.graph.security.environment](../resources/security-environment.md) collection|Collection of environments to attach to the zone. Optional.|
 
 ## Response
 
@@ -90,7 +90,7 @@ Content-Type: application/json
     },
     {
       "kind": "azureSubscription",
-      "id": "02687862-a843-4846-81f0-efe9ef244daa"
+      "id": "/subscriptions/02687862-a843-4846-81f0-efe9ef244daa"
     },
     {
       "kind": "gcpProject",
@@ -139,7 +139,7 @@ Content-Type: application/json
     },
     {
       "kind": "azureSubscription",
-      "id": "02687862-a843-4846-81f0-efe9ef244daa"
+      "id": "/subscriptions/02687862-a843-4846-81f0-efe9ef244daa"
     },
     {
       "kind": "gcpProject",

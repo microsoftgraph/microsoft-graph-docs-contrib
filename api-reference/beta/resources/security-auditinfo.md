@@ -14,12 +14,12 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents audit metadata, including the user and timestamps for creation or modification actions. This resource tracks who performed an action and when it occurred.
+Represents audit metadata, including the user or application and timestamps for creation or modification actions. This resource tracks who performed an action and when it occurred.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|by|String|User who performed the action.|
+|by|String|Display name of the user or application that performed the action.|
 |dateTime|DateTimeOffset|Timestamp of the action. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 
 ## Relationships

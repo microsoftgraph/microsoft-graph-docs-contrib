@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a specific [environment](../resources/security-environment.md) associated with a [zone](../resources/security-zone.md). The **environmentId** must be URL-encoded.
+Get a specific [environment](../resources/security-environment.md) associated with a [zone](../resources/security-zone.md). The **environment ID** must be URL-encoded.
 
 ## Permissions
 
@@ -59,19 +59,21 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 
 ## Examples
 
-### Request
+### Example 1: Get an AWS account environment
 
-The following example shows a request.
+#### Request
+
+The following example shows a request to get an AWS account environment.
 <!-- {
   "blockType": "request",
-  "name": "get_environment"
+  "name": "get_environment_aws"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/security/zones/05cfec937c214892a14448562ef4bf4a/environments/181994123251
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -90,6 +92,49 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.security.environment",
   "kind": "awsAccount",
   "id": "181994123251"
+}
+```
+
+### Example 2: Get an Azure subscription environment
+
+The environment ID for Azure subscriptions uses the `/subscriptions/{subscription-id}` format and must be URL-encoded when used in the request URL.
+
+| Format | Value |
+|:---|:---|
+| Original | `/subscriptions/18d1c06d-520b-46d1-b309-be218fbc811e` |
+| URL-encoded | `%2Fsubscriptions%2F18d1c06d-520b-46d1-b309-be218fbc811e` |
+
+#### Request
+
+The following example shows a request to get an Azure subscription environment with a URL-encoded environment ID.
+<!-- {
+  "blockType": "request",
+  "name": "get_environment_azure"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/security/zones/05cfec937c214892a14448562ef4bf4a/environments/%2Fsubscriptions%2F18d1c06d-520b-46d1-b309-be218fbc811e
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.security.environment"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/security/zones/$metadata#environments/$entity",
+  "@odata.type": "#microsoft.graph.security.environment",
+  "kind": "azureSubscription",
+  "id": "/subscriptions/18d1c06d-520b-46d1-b309-be218fbc811e"
 }
 ```
 

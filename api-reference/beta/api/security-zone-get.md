@@ -124,7 +124,7 @@ Content-Type: application/json
     },
     {
       "kind": "azureSubscription",
-      "id": "02687862-a843-4846-81f0-efe9ef244daa"
+      "id": "/subscriptions/02687862-a843-4846-81f0-efe9ef244daa"
     },
     {
       "kind": "gcpProject",

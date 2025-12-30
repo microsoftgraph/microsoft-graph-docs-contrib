@@ -41,7 +41,34 @@ GET /security/zones
 
 ## Optional query parameters
 
-This method supports the `$select`, `$filter`, `$count`, `$top`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, `$count`, `$orderby`, `$top`, `$skip`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). The default and maximum page sizes are 1000 zones objects.
+
+The following table lists the filter and orderby query support for each property.
+
+|Property|$filter operators|$orderby|
+|:---|:---|:---|
+|created/dateTime|`ge`, `le`, `gt`, `lt`|✓|
+|description|`eq`, `contains`||
+|displayName|`eq`, `contains`|✓|
+|id|`eq`||
+|modified/dateTime|`ge`, `le`, `gt`, `lt`|✓|
+|aggregations/kind|`eq` (within `any()` expression)||
+|aggregations/count|`gt`, `lt`, `ge`, `le` (within `any()` expression)||
+
+The following table shows example query patterns.
+
+|Query pattern|Example|
+|:---|:---|
+|Filter by display name|`$filter=displayName eq 'Production Zone'`|
+|Filter by description contains|`$filter=contains(description, 'production')`|
+|Filter by creation date|`$filter=created/dateTime ge 2023-01-01T00:00:00Z`|
+|Filter by environment type|`$filter=aggregations/any(a: a/kind eq 'azureSubscription')`|
+|Filter by environment count|`$filter=aggregations/any(a: a/kind eq 'azureSubscription' and a/count gt 5)`|
+|Order by display name|`$orderby=displayName asc`|
+|Order by creation date descending|`$orderby=created/dateTime desc`|
+|Pagination|`$top=10&$skip=20&$count=true`|
+|Select specific fields|`$select=id,displayName,aggregations`|
+|Expand environments|`$expand=environments`|
 
 ## Request headers
 

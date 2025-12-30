@@ -41,7 +41,24 @@ GET /security/zones/{zoneId}/environments
 
 ## Optional query parameters
 
-This method supports the `$select`, `$filter`, `$count`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, `$count`, `$orderby`, `$top`, and `$skip` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). The default and maximum page sizes are 1000 environments objects.
+
+The following table lists the filter and orderby query support for each property.
+
+|Property|$filter operators|$orderby|
+|:---|:---|:---|
+|id|`eq`, `contains`|✓|
+|kind|`eq`, `in`|✓|
+
+The following table shows example query patterns.
+
+|Query pattern|Example|
+|:---|:---|
+|Filter by environment kind|`$filter=kind eq 'azureSubscription'`|
+|Filter by multiple kinds|`$filter=kind in ('azureSubscription', 'awsAccount')`|
+|Filter by ID pattern|`$filter=contains(id, '123')`|
+|Order by kind then ID|`$orderby=kind asc,id asc`|
+|Pagination|`$top=10&$skip=20&$count=true`|
 
 ## Request headers
 
@@ -101,7 +118,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.security.environment",
       "kind": "azureSubscription",
-      "id": "02687862-a843-4846-81f0-efe9ef244daa"
+      "id": "/subscriptions/02687862-a843-4846-81f0-efe9ef244daa"
     },
     {
       "@odata.type": "#microsoft.graph.security.environment",

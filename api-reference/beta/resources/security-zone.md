@@ -32,17 +32,17 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|created|[microsoft.graph.security.auditInfo](../resources/security-auditinfo.md)|Creation metadata, including user and timestamp.|
-|description|String|Optional description of the zone.|
-|displayName|String|Human-readable name of the zone.|
-|id|String|Unique identifier for the zone. Inherited from [entity](../resources/entity.md).|
-|modified|[microsoft.graph.security.auditInfo](../resources/security-auditinfo.md)|Last modification metadata, including user and timestamp.|
+|created|[microsoft.graph.security.auditInfo](../resources/security-auditinfo.md)|Creation metadata, including user and timestamp. Supports `$orderby` (**dateTime** property only). Supports `$filter` (`ge`, `le`, `gt`, `lt`) on the **dateTime** property. For example, `$filter=created/dateTime ge 2023-01-01T00:00:00Z`.|
+|description|String|Optional description of the zone. Up to 255 characters. Supports `$filter` (`eq`, `contains`). For example, `$filter=contains(description, 'production')`.|
+|displayName|String|Human-readable name of the zone. Up to 1,024 characters. Supports `$filter` (`eq`, `contains`), and `$orderby`. For example, `$filter=displayName eq 'Production Zone'` or `$orderby=displayName asc`.|
+|id|String|Unique identifier for the zone. Inherited from [entity](../resources/entity.md). Supports `$filter` (`eq`).|
+|modified|[microsoft.graph.security.auditInfo](../resources/security-auditinfo.md)|Last modification metadata, including user and timestamp. Supports `$orderby` (**dateTime** property only). Supports `$filter` (`ge`, `le`, `gt`, `lt`) on the **dateTime** property. For example, `$orderby=modified/dateTime desc`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|aggregations|[microsoft.graph.security.aggregatedEnvironment](../resources/security-aggregatedenvironment.md) collection|Environment count summaries by type. Read-only.|
-|environments|[microsoft.graph.security.environment](../resources/security-environment.md) collection|Collection of attached environments.|
+|aggregations|[microsoft.graph.security.aggregatedEnvironment](../resources/security-aggregatedenvironment.md) collection|Environment count summaries by type. Read-only. Supports `$filter` (`eq`) on the **kind** property. For example, `$filter=aggregations/any(a: a/kind eq 'azureSubscription')`.|
+|environments|[microsoft.graph.security.environment](../resources/security-environment.md) collection|Collection of attached environments. Supports `$expand`.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
