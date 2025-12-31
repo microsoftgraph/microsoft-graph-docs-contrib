@@ -25,7 +25,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|policy|[teamsPolicyAssignment](../resources/teamsadministration-teamspolicyassignment.md)|Represents a navigation property to the Teams policy assignment object.|
+|policy|[microsoft.graph.teamsAdministration.teamsPolicyAssignment](../resources/teamsadministration-teamspolicyassignment.md)|Represents a navigation property to the Teams policy assignment object.|
 |userConfigurations|[microsoft.graph.teamsAdministration.teamsUserConfiguration](../resources/teamsadministration-teamsuserconfiguration.md) collection|Represents the configuration information of users who have accounts hosted on Microsoft Teams|
 
 ## JSON representation
