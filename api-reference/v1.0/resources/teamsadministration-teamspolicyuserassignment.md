@@ -12,13 +12,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.teamsAdministration
 
-
-
 Represents a Teams policy assignment object used to assign or unassign a policy for a specific user. It includes the user's ID, the type of policy (for example, `TeamsMeetingBroadcastPolicy`), and the targeted policy ID.
 
-
 Inherits from [entity](../resources/entity.md).
-
 
 ## Methods
 |Method|Return type|Description|
@@ -43,7 +39,7 @@ The following JSON representation shows the resource type.
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.teamsAdministration.teamsPolicyUserAssignment",
   "baseType": "microsoft.graph.entity",
-  "openType": "id"
+  "openType": false
 }
 -->
 ``` json

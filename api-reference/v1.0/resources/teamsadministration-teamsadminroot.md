@@ -12,13 +12,9 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.teamsAdministration
 
-
-
 Represents a collection of user configurations and telephone number administration methods.
 
-
 Inherits from [entity](../resources/entity.md).
-
 
 ## Methods
 None.
@@ -39,7 +35,7 @@ The following JSON representation shows the resource type.
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.teamsAdministration.teamsAdminRoot",
   "baseType": "microsoft.graph.entity",
-  "openType": "id"
+  "openType": false
 }
 -->
 ``` json
