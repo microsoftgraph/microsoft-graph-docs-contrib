@@ -343,3 +343,4 @@ Content-type: application/json
 
 - [Get team](../api/team-get.md)
 - [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
+
