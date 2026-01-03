@@ -49,6 +49,9 @@ GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
+> [!IMPORTANT]
+> Retrieving mailboxSettings through the /users/ endpoint requires an application context to be used.
+
 To get specific settings - only the automatic replies settings, date format, locale, time format, time zone, working hours, or user's recipient or mailbox type (for example, user purpose):
 <!-- { "blockType": "ignored" } -->
 ```http
