@@ -123,10 +123,10 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "id": "0a4f4e74-4e74-0a4f-744e-4f0a744e4f0a",
-  "name": "String",
-  "description": "String",
-  "state": "ready",
+  "id": "contosohr",
+  "name": "Contoso HR",
+  "description": "Connection to index Contoso HR system",
+  "state": "draft",
   "configuration": {
     "authorizedAppIds": [
       "d310d35d-72ec-47dd-92f2-fb9c40936555"
