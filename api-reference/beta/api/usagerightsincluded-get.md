@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get the usage rights granted to the calling user for a specific sensitivity label that has admin-defined permissions.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

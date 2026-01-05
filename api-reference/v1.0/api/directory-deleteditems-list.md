@@ -64,7 +64,7 @@ This method supports the query parameters that are supported by the resource tha
 Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For example:
 
 ```http
-GET https://graph.microsoft.com/beta/directory/deletedItems/microsoft.graph.group?&$count=true&$orderby=deletedDateTime desc&$select=id,displayName,deletedDateTime
+GET https://graph.microsoft.com/v1.0/directory/deletedItems/microsoft.graph.group?&$count=true&$orderby=deletedDateTime desc&$select=id,displayName,deletedDateTime
 ConsistencyLevel: eventual
 ```
 

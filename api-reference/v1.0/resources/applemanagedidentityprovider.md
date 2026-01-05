@@ -11,8 +11,6 @@ ms.date: 07/22/2024
 # appleManagedIdentityProvider resource type
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents the Apple identity provider in an Azure AD B2C tenant.
 
 You can configure Apple as a social identity provider for an Azure AD B2C tenant. Based on the information, Apple provides, the API generates a client secret. Apple needs the secret to be renewed every six months. You have to manually rotate the secret.

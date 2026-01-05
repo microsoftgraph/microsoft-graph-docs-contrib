@@ -5712,7 +5712,7 @@ Possible values for user account types (group membership), per Windows definitio
 |all|
 |unknownFutureValue|
 
-### siteTemplateType values 
+### siteTemplateType values
 
 |Member|
 |:---|
@@ -5862,3 +5862,11 @@ Possible values for user account types (group membership), per Windows definitio
 | cancelled          |
 | failed             |
 | unknownFutureValue |
+
+### kind values
+
+|Member|
+|:---|
+|unrestricted|
+|allowedTenants|
+|unknownFutureValue|

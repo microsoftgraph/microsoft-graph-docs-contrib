@@ -3,7 +3,7 @@ title: "agentIdentityBlueprint: unsetVerifiedPublisher"
 description: "Unset the verified publisher of an agentIdentityBlueprint."
 ms.localizationpriority: medium
 author: "xurobertMSFT"
-ms.subservice: "entra-applications"
+ms.subservice: "entra-agent-id"
 doc_type: "apiPageType"
 ms.date: 04/05/2024
 ---

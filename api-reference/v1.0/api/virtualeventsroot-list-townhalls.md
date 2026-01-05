@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 
 ```http
-GET https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls
+GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/townhalls
 ```
 
 ### Response
