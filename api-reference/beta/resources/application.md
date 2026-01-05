@@ -103,6 +103,7 @@ This resource supports:
 | samlMetadataUrl | String | The URL where the service exposes SAML metadata for federation. This property is valid only for single-tenant applications. Nullable. |
 | serviceManagementReference | String | References application or service contact information from a Service or Asset Management database. Nullable. |
 | signInAudience | String | Specifies the Microsoft accounts that are supported for the current application. The possible values are: `AzureADMyOrg` (default), `AzureADMultipleOrgs`, `AzureADandPersonalMicrosoftAccount`, and `PersonalMicrosoftAccount`. See more in the [table](#signinaudience-values). <br/><br/>The value of this object also limits the number of permissions an app can request. For more information, see [Limits on requested permissions per app](#limits-on-requested-permissions-per-app). <br><br>The value for this property has implications on other app object properties. As a result, if you change this property, you may need to change other properties first. For more information, see [Validation differences for signInAudience](/azure/active-directory/develop/supported-accounts-validation?context=graph/context).<br><br>Supports `$filter` (`eq`, `ne`, `not`).|
+| signInAudienceRestrictions | [signInAudienceRestrictionsBase](../resources/signinaudiencerestrictionsbase.md) | Specifies restrictions on the supported account types specified in **signInAudience**. The value type determines the restrictions that can be applied:<ul><li>[unrestrictedAudience](../resources/unrestrictedaudience.md): There are no additional restrictions on the supported account types allowed by **signInAudience**.</li><li>[allowedTenantsAudience](../resources/allowedtenantsaudience.md): The application can only be used in the specified Entra tenants. Only supported when **signInAudience** is `AzureADMultipleOrgs`.</li></ul> Default is a value of type [unrestrictedAudience](../resources/unrestrictedaudience.md).|
 | servicePrincipalLockConfiguration | [servicePrincipalLockConfiguration](servicePrincipalLockConfiguration.md) | Specifies whether sensitive properties of a multitenant application should be locked for editing after the application is provisioned in a tenant. Nullable. `null` by default. |
 | spa                     | [spaApplication](../resources/spaapplication.md)                            | Specifies settings for a single-page application, including sign out URLs and redirect URIs for authorization codes and access tokens. |
 | tags |String collection| Custom strings that can be used to categorize and identify the application. Not nullable. Strings added here also appear in the **tags** property of any associated [service principals](serviceprincipal.md).<br><br>Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`) and `$search`.|
@@ -193,6 +194,9 @@ The following JSON representation shows the resource type.
   "servicePrincipalLockConfiguration": {"@odata.type": "microsoft.graph.servicePrincipalLockConfiguration"},
   "serviceManagementReference": "String",
   "signInAudience": "String",
+  "signInAudienceRestrictions": {
+    "@odata.type": "microsoft.graph.signInAudienceRestrictionsBase"
+  },
   "spa": {"@odata.type": "microsoft.graph.spaApplication"},
   "tags": ["String"],
   "tokenEncryptionKeyId": "String",

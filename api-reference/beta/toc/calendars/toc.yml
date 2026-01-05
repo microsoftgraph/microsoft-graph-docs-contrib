@@ -442,3 +442,51 @@ items:
       href: ../../resources/resourcelink.md
     - name: Unavailable place mode
       href: ../../resources/unavailableplacemode.md
+- name: Work hours and locations
+  items:
+  - name: Work hours and locations setting
+    items:
+    - name: Work hours and locations setting
+      href: ../../resources/workhoursandlocationssetting.md
+    - name: Get
+      href: ../../api/workhoursandlocationssetting-get.md
+    - name: Update
+      href: ../../api/workhoursandlocationssetting-update.md
+    - name: Occurrences view
+      href: ../../api/workhoursandlocationssetting-occurrencesview.md
+    - name: List recurrences
+      href: ../../api/workhoursandlocationssetting-list-recurrences.md
+    - name: Create recurrence
+      href: ../../api/workhoursandlocationssetting-post-recurrences.md
+    - name: Create occurrence
+      href: ../../api/workhoursandlocationssetting-post-occurrences.md
+  - name: Work plan occurrence
+    items:
+    - name: Work plan occurrence
+      href: ../../resources/workplanoccurrence.md
+    - name: Create
+      href: ../../api/workhoursandlocationssetting-post-occurrences.md
+    - name: Update
+      href: ../../api/workplanoccurrence-update.md
+    - name: Delete
+      href: ../../api/workplanoccurrence-delete.md
+    - name: Set current location
+      href: ../../api/workplanoccurrence-setcurrentlocation.md
+    - name: Occurrences view
+      href: ../../api/workhoursandlocationssetting-occurrencesview.md
+  - name: Work plan recurrence
+    items:
+    - name: Work plan recurrence
+      href: ../../resources/workplanrecurrence.md
+    - name: List
+      href: ../../api/workhoursandlocationssetting-list-recurrences.md
+    - name: Create
+      href: ../../api/workhoursandlocationssetting-post-recurrences.md
+    - name: Update
+      href: ../../api/workplanrecurrence-update.md
+    - name: Delete
+      href: ../../api/workplanrecurrence-delete.md
+  - name: Complex types
+    items:
+    - name: Time off details
+      href: ../../resources/timeoffdetails.md

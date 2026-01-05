@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 
 Remove an [ediscoveryCaseMember](../resources/security-ediscoverycasemember.md) from an [ediscoveryCase](../resources/security-ediscoverycase.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

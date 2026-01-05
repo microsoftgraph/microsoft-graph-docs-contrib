@@ -4,7 +4,7 @@ description: "Adds a strong password to an agent identity blueprint. You can als
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-applications"
+ms.subservice: "entra-agent-id"
 doc_type: apiPageType
 ---
 
