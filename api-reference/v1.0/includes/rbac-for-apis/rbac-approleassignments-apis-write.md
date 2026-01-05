@@ -15,3 +15,5 @@ ms.topic: include
 > - User Administrator
 > - Application Administrator
 > - Cloud Application Administrator
+>
+> *The roles listed above are not required when the signed-in user is a native member of the tenant (member user) and is an owner of the resource application. Please reference [Default user permissions](https://learn.microsoft.com/en-us/entra/fundamentals/users-default-permissions) for more information.*
