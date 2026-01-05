@@ -184,6 +184,16 @@ Namespace: microsoft.graph.security
 |unknown|
 |unknownFutureValue|
 
+### mailboxConfigurationType values
+
+|Member|
+|:---|
+|mailForwardingRule|
+|owaSettings|
+|ewsSettings|
+|mailDelegation|
+|userInboxRule|
+|unknownFutureValue|
 ### logDataProvider values 
 
 |Member|
