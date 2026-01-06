@@ -12,14 +12,14 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.teamsAdministration
 
-Represents the root entity for managing Teams policy assignments. It provides access to user policy assignments and supports the resolution of policyId.
+Represents the root entity for managing Teams policy assignments. It provides access to user policy assignments and supports the resolution of policy IDs.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get policy ID](../api/teamsadministration-teamspolicyassignment-getpolicyid.md)|[microsoft.graph.teamsAdministration.policyIdentifierDetail](../resources/teamsadministration-policyidentifierdetail.md) collection|Get the policy ID for a given policy name and policy type within Teams administration.|
+|[Get policy ID](../api/teamsadministration-teamspolicyassignment-getpolicyid.md)|[microsoft.graph.teamsAdministration.policyIdentifierDetail](../resources/teamsadministration-policyidentifierdetail.md) collection|Get the [policy ID](../resources/teamsadministration-policyidentifierdetail.md) for a given policy name and policy type within Teams administration.|
 
 ## Properties
 None.
@@ -27,7 +27,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|userAssignments|[microsoft.graph.teamsAdministration.teamsPolicyUserAssignment](../resources/teamsadministration-teamspolicyuserassignment.md) collection|Navigation property to the collection of user policy assignments.|
+|userAssignments|[microsoft.graph.teamsAdministration.teamsPolicyUserAssignment](../resources/teamsadministration-teamspolicyuserassignment.md) collection|The collection of user policy assignments.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
