@@ -1972,7 +1972,6 @@
         {
           "name": "Administration",
           "resources": [
-            "microsoft.graph.teamsAdministration.teamsUserConfiguration",
             "microsoft.graph.teamsAdministration.teamsPolicyAssignment",
             "microsoft.graph.teamsAdministration.teamsPolicyUserAssignment",
             "microsoft.graph.teamsAdministration.teamsUserConfiguration"
