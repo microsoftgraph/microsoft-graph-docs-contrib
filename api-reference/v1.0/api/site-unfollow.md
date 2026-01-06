@@ -76,8 +76,6 @@ Content-Type: application/json
 }
 ```
 
----
-
 ### Response
 
 If successful, it returns the following JSON response. 
