@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "security-security-delete-zones-permissions"
+  "name": "security-zone-delete-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/security-security-delete-zones-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/security-zone-delete-permissions.md)]
 
 [!INCLUDE [rbac-security-zone-apis-write](../includes/rbac-for-apis/rbac-security-zone-apis-write.md)]
 
