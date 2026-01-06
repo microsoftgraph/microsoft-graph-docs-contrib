@@ -12,8 +12,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.teamsAdministration
 
-
-
 Get the [policy ID](../resources/teamsadministration-policyidentifierdetail.md) for a given policy name and policy type within Teams administration.
 
 ## Permissions
@@ -42,9 +40,8 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|type|String|The policy type, such as `teamsMeetingBroadcastPolicy` and `teamsMeetingPolicy`.|
 |name|String|The name of the policy instance, such as `allOn`.|
-
+|type|String|The policy type, such as `teamsMeetingBroadcastPolicy` and `teamsMeetingPolicy`.|
 
 ## Request headers
 
@@ -58,7 +55,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [microsoft.graph.teamsAdministration.policyIdentifierDetail](../resources/teamsadministration-policyidentifierdetail.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and a collection of [microsoft.graph.teamsAdministration.policyIdentifierDetail](../resources/teamsadministration-policyidentifierdetail.md) in the response body.
 
 ## Examples
 
@@ -73,7 +70,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/v1.0/admin/teams/policy/getPolicyId(type='TeamsMeetingPolicy',name='AllOn')
 ```
-
 
 ### Response
 
