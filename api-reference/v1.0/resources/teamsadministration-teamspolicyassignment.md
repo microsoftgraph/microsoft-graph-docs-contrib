@@ -41,8 +41,7 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.teamsAdministration.teamsPolicyAssignment",
-  "id": "String (identifier)"
+  "@odata.type": "#microsoft.graph.teamsAdministration.teamsPolicyAssignment"
 }
 ```
 
