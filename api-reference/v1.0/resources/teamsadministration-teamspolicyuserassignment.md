@@ -26,7 +26,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |policyId|String|The unique identifier (GUID) of the policy within the specified policy type.|
-|policyType|String|The type of Teams policy assigned or unassigned, such as `TeamsMeetingBroadcastPolicy`.|
+|policyType|String|The type of Teams policy assigned or unassigned, such as `teamsMeetingBroadcastPolicy`.|
 |userId|String|The unique identifier (GUID) of the user.|
 
 ## Relationships
@@ -46,9 +46,9 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.teamsAdministration.teamsPolicyUserAssignment",
   "id": "String (identifier)",
-  "userId": "String",
+  "policyId": "String",
   "policyType": "String",
-  "policyId": "String"
+  "userId": "String"
 }
 ```
 
