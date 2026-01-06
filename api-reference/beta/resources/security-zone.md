@@ -21,7 +21,7 @@ When you set up a new zone, you can assign roles to it. For more information abo
 For more information, see [Manage cloud scopes and unified role-based access control](/azure/defender-for-cloud/cloud-scopes-unified-rbac?pivots=defender-portal).
 
 > [!NOTE]
-> There's no default zone in a tenant. Environments aren't automatically attached to any zone—they must be explicitly assigned to zones by administrators. An environment can be attached to multiple zones simultaneously, allowing for flexible grouping and overlapping access control scenarios.
+> A tenant has no default zone. Environments aren't automatically attached to any zone; they must be explicitly assigned to zones by administrators. An environment can be attached to multiple zones simultaneously, which allows for flexible grouping and overlapping access‑control scenarios.
 
 Inherits from [entity](../resources/entity.md).
 
