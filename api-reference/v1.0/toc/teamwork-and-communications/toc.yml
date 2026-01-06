@@ -6,14 +6,6 @@ items:
   href: ../../resources/teams-api-overview.md
 - name: Administration
   items:
-  - name: Teams user configuration
-    items:
-    - name: Teams user configuration
-      href: ../../resources/teamsadministration-teamsuserconfiguration.md
-    - name: List
-      href: ../../api/teamsadministration-teamsadminroot-list-userconfigurations.md
-    - name: Get
-      href: ../../api/teamsadministration-teamsuserconfiguration-get.md
   - name: Teams policy assignment
     items:
     - name: Teams policy assignment
