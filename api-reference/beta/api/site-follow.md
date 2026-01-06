@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /users/{user-id | userPrincipalName}/followedSites/add
+POST /users/{id | userPrincipalName}/followedSites/add
 ```
 
 ## Request body
@@ -54,7 +54,7 @@ Here's and example that shows how to follow multiple sites.
 <!-- { "blockType": "request", "name": "follow-site", "scopes": "sites.readwrite.all" } -->
 
 ```http
-POST https://graph.microsoft.com/beta/users/{user-id}/followedSites/add
+POST https://graph.microsoft.com/beta/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/followedSites/add
 Content-Type: application/json
 
 {
@@ -69,7 +69,6 @@ Content-Type: application/json
     ] 
 }
 ```
----
 
 ### Response
 
