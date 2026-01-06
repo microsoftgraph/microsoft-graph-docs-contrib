@@ -1,6 +1,6 @@
 ---
 title: "teamsAdminRoot resource type"
-description: "Represents a collection of user configurations."
+description: "Represents a collection of user configurations and telephone number administration methods."
 author: "praspatil05"
 ms.date: 12/19/2025
 ms.localizationpriority: medium
@@ -40,8 +40,7 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.teamsAdministration.teamsAdminRoot",
-  "id": "String (identifier)"
+  "@odata.type": "#microsoft.graph.teamsAdministration.teamsAdminRoot"
 }
 ```
 
