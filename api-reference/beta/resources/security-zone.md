@@ -32,7 +32,7 @@ Inherits from [entity](../resources/entity.md).
 |[Create](../api/security-security-post-zones.md)|[microsoft.graph.security.zone](../resources/security-zone.md)|Create a new [zone](../resources/security-zone.md) object.|
 |[Get](../api/security-zone-get.md)|[microsoft.graph.security.zone](../resources/security-zone.md)|Get a [zone](../resources/security-zone.md) object by a specific **zoneId**.|
 |[Update](../api/security-zone-update.md)|[microsoft.graph.security.zone](../resources/security-zone.md)|Update the properties of a [zone](../resources/security-zone.md) object.|
-|[Delete](../api/security-security-delete-zones.md)|None|Delete a [zone](../resources/security-zone.md) object by providing the **zoneId**.|
+|[Delete](../api/security-zone-delete.md)|None|Delete a [zone](../resources/security-zone.md) object by providing the **zoneId**.|
 
 ## Properties
 |Property|Type|Description|
