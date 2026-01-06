@@ -43,7 +43,7 @@ GET /security/zones
 
 This method supports the `$select`, `$filter`, `$count`, `$orderby`, `$top`, `$skip`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). The default and maximum page sizes are 1000 zones objects.
 
-The following table lists the filter and orderby query support for each property.
+The following table lists the `$filter` and `$orderby` query support for each property.
 
 |Property|$filter operators|$orderby|
 |:---|:---|:---|

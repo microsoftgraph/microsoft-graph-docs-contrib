@@ -41,9 +41,9 @@ GET /security/zones/{zoneId}/environments
 
 ## Optional query parameters
 
-This method supports the `$select`, `$filter`, `$count`, `$orderby`, `$top`, and `$skip` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). The default and maximum page sizes are 1000 environments objects.
+This method supports the `$select`, `$filter`, `$count`, `$orderby`, `$top`, and `$skip` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters). The default and maximum page sizes are 1,000 environment objects.
 
-The following table lists the filter and orderby query support for each property.
+The following table lists the `$filter` and `$orderby` query support for each property.
 
 |Property|$filter operators|$orderby|
 |:---|:---|:---|
@@ -72,7 +72,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [environment](../resources/security-environment.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.security.environment](../resources/security-environment.md) objects in the response body.
 
 ## Examples
 
