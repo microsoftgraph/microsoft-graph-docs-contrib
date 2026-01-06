@@ -52,18 +52,16 @@ Use [runHuntingQuery](../api/security-security-runhuntingquery.md) to run a [Kus
 6. The maximum query result size of a single request cannot exceed 124 MB. Exceeding the size limit results in HTTP 400 Bad Request with the message "Query execution has exceeded the allowed result size. Optimize your query by limiting the number of results and try again."
 7. Query results have an overall size limit of 50 MB. This limit doesn't just refer to the number of records; factors such as the number of columns, data types, and field lengths also contribute to the query result size.
 
-## Zones / Cloud scopes (preview)
+## Cloud zones (preview)
 
-Cloud zones in Microsoft Defender for Cloud enable you to group and manage cloud environments across multiple cloud providers (Azure, AWS, GCP) and DevOps platforms. A [zone](security-zone.md) is a logical container that groups related cloud environments, making it easier to apply consistent security policies and monitor security posture across your multi-cloud infrastructure. A tenant can have a maximum of 1,000 zones.
-
+Cloud zones in Microsoft Defender for Cloud enable you to group and manage cloud environments across multiple cloud providers (Azure, AWS, and GCP) and DevOps platforms. A [zone](security-zone.md) is a logical container that groups related cloud environments, making it easier to apply consistent security policies and monitor security posture across your multi-cloud infrastructure. A tenant can have a maximum of 1,000 zones.
 
 Use the cloud zones API to:
-- Create, update, and delete zones for organizing cloud environments
-- Attach and detach environments (such as Azure subscriptions, AWS accounts, GCP projects, or DevOps connections) to zones
-- Query zones and their associated environments
+- Create, update, and delete zones for organizing cloud environments.
+- Attach and detach environments (such as Azure subscriptions, AWS accounts, GCP projects, or DevOps connections) to zones.
+- Query zones and their associated environments.
 
 For more information, see [Manage cloud scopes and unified role-based access control](/azure/defender-for-cloud/cloud-scopes-unified-rbac?pivots=defender-portal).
-
 
 ## Custom detections
 You can create advanced hunting [Custom detection rules](/microsoft-365/security/defender/custom-detections-overview) specific to your security operations to allow you to proactively monitor for threats and take action. For instance, you can make custom detection rules that look for known indicators or misconfigured devices. These automatically trigger alerts and any response actions that you specify.
