@@ -18,6 +18,14 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## January 2026: New and generally available
+
+### Teamwork and communications | Administration
+
+- [Get the policy ID](/graph/api/teamsadministration-teamspolicyassignment-getpolicyid) for a given policy name and policy type within Teams administration.
+- [Assign a Teams policy](/graph/api/teamsadministration-teamspolicyuserassignment-assign) to a user using the user ID, policy type, and policy ID.
+- [Unassign a Teams policy](/graph/api/teamsadministration-teamspolicyuserassignment-unassign) from a user using the user ID and policy type.
+
 ## December 2025: New and generally available
 
 ### Calendars | Places
@@ -113,13 +121,6 @@ Customize the block page message displayed to users when Global Secure Access bl
 - [Start](/graph/api/chat-startmigration?view=graph-rest-beta&preserve-view=true) the migration of external messages by enabling migration mode in an existing chat.
 - [Complete](/graph/api/chat-completemigration?view=graph-rest-beta&preserve-view=true) the migration of external messages by removing migration mode from a chat.
 - Use the **layoutType** property on the [channel](/graph/api/resources/channel?view=graph-rest-beta&preserve-view=true) resource to create channels with different conversation experiences and switch between them at any time. The property supports two values: `post` for traditional post-reply format and `chat` for a chat-like threading experience. You can set the layout type when [creating a channel](/graph/api/channel-post?view=graph-rest-beta&preserve-view=true) and [update it](/graph/api/channel-patch?view=graph-rest-beta&preserve-view=true) later to switch between layouts.
-
-### Teamwork and communications | Administration
-
-- [Get the policy ID](/graph/api/teamsadministration-teamspolicyassignment-getpolicyid) for a given policy name and policy type within Teams administration.
-- [Assign a Teams policy](/graph/api/teamsadministration-teamspolicyuserassignment-assign) to a user using the user ID, policy type, and policy ID.
-- [Unassign a Teams policy](/graph/api/teamsadministration-teamspolicyuserassignment-unassign) from a user using the user ID and policy type.
-
 
 ## Contribute to Microsoft Graph
 
