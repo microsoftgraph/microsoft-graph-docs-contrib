@@ -81,15 +81,15 @@
           "ApiChange": "Resource",
           "ChangedApiName": "policyIdentifierDetail",
           "ChangeType": "Addition",
-          "Description": "Added the [policyIdentifierDetail](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-policyIdentifierDetail?view=graph-rest-1.0) resource.",
+          "Description": "Added the [policyIdentifierDetail](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-policyIdentifierDetail?view=graph-rest-1.0) resource type.",
           "Target": "policyIdentifierDetail"
         },
         {
           "Id": "3b306dbf-c232-4ffe-a2f8-5714e47472eb",
-          "ApiChange": "Resource",
-          "ChangedApiName": "teamsAdminRoot",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "policy",
           "ChangeType": "Addition",
-          "Description": "Added the [teamsAdminRoot](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsAdminRoot?view=graph-rest-1.0) resource.",
+          "Description": "Added the **policy** relationship to the [teamsAdminRoot](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsAdminRoot?view=graph-rest-1.0) resource.",
           "Target": "teamsAdminRoot"
         },
         {
@@ -97,7 +97,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamsPolicyAssignment",
           "ChangeType": "Addition",
-          "Description": "Added the [teamsPolicyAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsPolicyAssignment?view=graph-rest-1.0) resource.",
+          "Description": "Added the [teamsPolicyAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsPolicyAssignment?view=graph-rest-1.0) resource and an associated method.",
           "Target": "teamsPolicyAssignment"
         },
         {
@@ -105,7 +105,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamsPolicyUserAssignment",
           "ChangeType": "Addition",
-          "Description": "Added the [teamsPolicyUserAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsPolicyUserAssignment?view=graph-rest-1.0) resource.",
+          "Description": "Added the [teamsPolicyUserAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsPolicyUserAssignment?view=graph-rest-1.0) resource and associated methods.",
           "Target": "teamsPolicyUserAssignment"
         },
         {
@@ -138,7 +138,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2025-12-19T04:38:38.1916429Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Policy Administration"
+      "SubArea": "Administration"
     }
   ]
 }
