@@ -1,10 +1,10 @@
 ---
 title: "policyIdentifierDetail resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide GitHub Name. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+description: "Represents the identifier details of a Teams policy, including the policy name and its unique ID."
+author: "praspatil05"
 ms.date: 12/19/2025
 ms.localizationpriority: medium
-ms.subservice: "**TODO: Add MS subservice. See [topic-level metadata reference](https://eng.ms/docs/products/microsoft-graph-service/microsoft-graph/document-apis/metadata)**"
+ms.subservice: "teams"
 doc_type: resourcePageType
 ---
 # policyIdentifierDetail resource type
@@ -40,7 +40,6 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamsAdministration.policyIdentifierDetail",
-  "id": "String (identifier)",
   "name": "String",
   "policyId": "String"
 }
