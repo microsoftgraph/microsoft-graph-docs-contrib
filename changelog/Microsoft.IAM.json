@@ -3,6 +3,88 @@
     {
       "ChangeList": [
         {
+          "Id": "9c7e7018-c36e-42f2-9fd3-70ab85b8a22a",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "externalAuthenticationMethods",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalAuthenticationMethods** relationship to the [authentication](https://learn.microsoft.com/en-us/graph/api/resources/authentication?view=graph-rest-1.0) resource.",
+          "Target": "authentication"
+        },
+        {
+          "Id": "9c7e7018-c36e-42f2-9fd3-70ab85b8a22a",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdDateTime** property to the [authenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethod?view=graph-rest-1.0) resource.",
+          "Target": "authenticationMethod"
+        },
+        {
+          "Id": "9c7e7018-c36e-42f2-9fd3-70ab85b8a22a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalAuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalAuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/externalAuthenticationMethod?view=graph-rest-1.0) resource.",
+          "Target": "externalAuthenticationMethod"
+        },
+        {
+          "Id": "9c7e7018-c36e-42f2-9fd3-70ab85b8a22a",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdDateTime",
+          "ChangeType": "Change",
+          "Description": "Changed the **createdDateTime** property to be inherited from [authenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethod?view=graph-rest-1.0) in the [fido2AuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/fido2AuthenticationMethod?view=graph-rest-1.0) resource.",
+          "Target": "fido2AuthenticationMethod"
+        },
+        {
+          "Id": "9c7e7018-c36e-42f2-9fd3-70ab85b8a22a",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdDateTime",
+          "ChangeType": "Change",
+          "Description": "Changed the **createdDateTime** property to be inherited from [authenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethod?view=graph-rest-1.0) in the [microsoftAuthenticatorAuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/microsoftAuthenticatorAuthenticationMethod?view=graph-rest-1.0) resource.",
+          "Target": "microsoftAuthenticatorAuthenticationMethod"
+        },
+        {
+          "Id": "9c7e7018-c36e-42f2-9fd3-70ab85b8a22a",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdDateTime",
+          "ChangeType": "Change",
+          "Description": "Changed the **createdDateTime** property to be inherited from [authenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethod?view=graph-rest-1.0) in the [passwordAuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/passwordAuthenticationMethod?view=graph-rest-1.0) resource.",
+          "Target": "passwordAuthenticationMethod"
+        },
+        {
+          "Id": "9c7e7018-c36e-42f2-9fd3-70ab85b8a22a",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdDateTime",
+          "ChangeType": "Change",
+          "Description": "Changed the **createdDateTime** property to be inherited from [authenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethod?view=graph-rest-1.0) in the [platformCredentialAuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/platformCredentialAuthenticationMethod?view=graph-rest-1.0) resource.",
+          "Target": "platformCredentialAuthenticationMethod"
+        },
+        {
+          "Id": "9c7e7018-c36e-42f2-9fd3-70ab85b8a22a",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdDateTime",
+          "ChangeType": "Change",
+          "Description": "Changed the **createdDateTime** property to be inherited from [authenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethod?view=graph-rest-1.0) in the [temporaryAccessPassAuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/temporaryAccessPassAuthenticationMethod?view=graph-rest-1.0) resource.",
+          "Target": "temporaryAccessPassAuthenticationMethod"
+        },
+        {
+          "Id": "9c7e7018-c36e-42f2-9fd3-70ab85b8a22a",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdDateTime",
+          "ChangeType": "Change",
+          "Description": "Changed the **createdDateTime** property to be inherited from [authenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/authenticationMethod?view=graph-rest-1.0) in the [windowsHelloForBusinessAuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/windowsHelloForBusinessAuthenticationMethod?view=graph-rest-1.0) resource.",
+          "Target": "windowsHelloForBusinessAuthenticationMethod"
+        }
+      ],
+      "Id": "9c7e7018-c36e-42f2-9fd3-70ab85b8a22a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-01-06T09:29:43.5270306Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "d9c34227-2a99-49e5-ac9c-e8444f685ce5",
           "ApiChange": "Resource",
           "ChangedApiName": "containerFilter",

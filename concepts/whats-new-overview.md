@@ -18,6 +18,15 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## January 2026: New and generally available
+
+### Identity and access | Identity and sign-in
+
+- Added the [externalAuthenticationMethod](/graph/api/resources/externalAuthenticationMethod) resource to represent external authentication methods registered to a user for authentication using an external identity provider.
+- Added the **externalAuthenticationMethods** relationship to the [authentication](/graph/api/resources/authentication) resource.
+- Added the **createdDateTime** property to the [authenticationMethod](/graph/api/resources/authenticationMethod) resource.
+- Changed the **createdDateTime** property to be inherited from [authenticationMethod](/graph/api/resources/authenticationMethod) in the following derived authentication method resources: [fido2AuthenticationMethod](/graph/api/resources/fido2AuthenticationMethod), [microsoftAuthenticatorAuthenticationMethod](/graph/api/resources/microsoftAuthenticatorAuthenticationMethod), [passwordAuthenticationMethod](/graph/api/resources/passwordAuthenticationMethod), [platformCredentialAuthenticationMethod](/graph/api/resources/platformCredentialAuthenticationMethod), [temporaryAccessPassAuthenticationMethod](/graph/api/resources/temporaryAccessPassAuthenticationMethod), and [windowsHelloForBusinessAuthenticationMethod](/graph/api/resources/windowsHelloForBusinessAuthenticationMethod).
+
 ## December 2025: New and generally available
 
 ### Calendars | Places
