@@ -131,7 +131,7 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 |movingRegion|Indicates that the Cloud PC is being moved from one region to another.|
 |resizePendingLicense|Indicates that the Cloud PC resize process was initiated but can't be completed because the target license hasn't been identified. It's currently awaiting customer action to resolve the licensing issue.|
 |modifyingSingleSignOn|Indicates that the Cloud PC is updating the single sign on setting.|
-|refreshPolicyConfiguration|Indicates that the Cloud PC is in the progress of refresh new policy configurations.|
+|refreshPolicyConfiguration|Indicates that the Cloud PC is in the process of refreshing the new policy configurations.|
 |preparing|Indicates that the Cloud PC is preparing with IT admin defined configuration (Applications, Configuration and Security), appears after provisioning status.​ Only apply to Frontline Shared devices.|
 
 ### frontlineCloudPcAccessState values
