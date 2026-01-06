@@ -2848,7 +2848,7 @@
             "microsoft.graph.security.environment"
           ],
           "complexTypes": [
-              "microsoft.graph.security.auditInfo"
+            "microsoft.graph.security.auditInfo"
           ]
         },
         {
