@@ -102,12 +102,6 @@ Content-Type: application/json
         "displayName": "System Administrator"
       }
     },
-    "runningOnBehalfOf": {
-      "user": {
-        "id": "823da47e-fc25-48d8-8b5a-6186c760f0df",
-        "displayName": "System Administrator"
-      }
-    },
     "createdDateTime": "2024-12-12T09:52:18.7982733Z",
     "lastModifiedDateTime": "2024-12-12T09:52:18.7982733Z",
     "parameters": {

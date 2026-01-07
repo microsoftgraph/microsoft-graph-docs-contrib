@@ -6,20 +6,6 @@ items:
   items:
   - name: Overview
     href: ../../resources/unified-tenant-configuration-management-api-overview.md
-  - name: Configuration application
-    items:
-    - name: Configuration application
-      href: ../../resources/configurationapplication.md
-    - name: List
-      href: ../../api/configurationmanagement-list-configurationapplications.md
-    - name: Create
-      href: ../../api/configurationmanagement-post-configurationapplications.md
-    - name: Get
-      href: ../../api/configurationapplication-get.md
-    - name: Update
-      href: ../../api/configurationapplication-update.md
-    - name: Delete
-      href: ../../api/configurationapplication-delete.md
   - name: Configuration baseline
     items:
     - name: Configuration baseline

@@ -40,7 +40,6 @@ Inherits from [entity](../resources/entity.md).
 |mode|monitorMode|Monitor mode in which the monitor runs.  The possible values are: `monitorOnly`, `unknownFutureValue`. The default value is `monitorOnly`.|
 |monitorRunFrequencyInHours|Int32|Frequency at which the monitor runs. The default frequency is six hours. Regardless of when you create or update a monitor, it gets triggered within the next 6 hours. Currently, monitors are picked up at fixed times: 6 AM, 12 PM, 6 PM, and 12 AM (all in GMT). For example, if you create a monitor at 9 AM, it gets triggered around 12 PM. If you update a monitor at 4 PM, it gets triggered around 6 PM.|
 |parameters|[openComplexDictionaryType](../resources/opencomplexdictionarytype.md)|Key-value pairs that contain parameter values which might be used in the baseline.|
-|runningOnBehalfOf|[identitySet](../resources/identityset.md)|The user for whom the monitor runs.|
 |status|monitorStatus|Status of the monitor  The possible values are: `active`, `unknownFutureValue`. The default value is `active`.|
 |tenantId|String|Globally unique identifier (GUID) of the tenant for which the monitor runs. Fetched automatically by the system.|
 
@@ -70,7 +69,6 @@ The following JSON representation shows the resource type.
   "mode": "String",
   "monitorRunFrequencyInHours": "Int32",
   "parameters": {"@odata.type": "microsoft.graph.openComplexDictionaryType"},
-  "runningOnBehalfOf": {"@odata.type": "microsoft.graph.identitySet"},
   "status": "String",
   "tenantId": "String"
 }
