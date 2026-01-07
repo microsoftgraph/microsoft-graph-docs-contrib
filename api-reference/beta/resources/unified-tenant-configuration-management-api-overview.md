@@ -35,7 +35,6 @@ The following table lists common use cases for the UTCM APIs.
 
 | Use case                                                   | REST resource                                                                | See also                                                                                         |
 | :---------------------------------------------------------- | :---------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------- |
-| Create and manage applications | [configurationApplication](../resources/configurationapplication.md)               | [configurationApplication methods](../resources/configurationapplication.md#methods)               |
 | Get a baseline and create a snapshot job | [configurationBaseline](../resources/configurationbaseline.md) | [configurationBaseline methods](../resources/configurationbaseline.md#methods) |
 | List and get drifts | [configurationDrift](../resources/configurationdrift.md) | [configurationDrift methods](../resources/configurationdrift.md#methods) |
 | Create and manage monitors | [configurationMonitor](../resources/configurationmonitor.md) | [configurationMonitor methods](../resources/configurationmonitor.md#methods) |

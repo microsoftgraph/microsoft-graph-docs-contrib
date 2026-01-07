@@ -28,7 +28,6 @@ None.
 | configurationDrifts | [configurationDrift](../resources/configurationdrift.md) collection | A container for configuration drift resources. |
 | configurationSnapshotJobs | [configurationSnapshotJob](../resources/configurationsnapshotjob.md) collection | A container for snapshot job resources. |
 | configurationSnapshots | [configurationBaseline](../resources/configurationbaseline.md) collection | A container for configuration snapshot baselines. |
-| configurationApplications | [configurationApplication](../resources/configurationapplication.md) collection | A container for configuration application resources. |
 
 ## JSON representation
 The following JSON representation shows the resource type.
