@@ -3,6 +3,7 @@ title: "Microsoft Graph error responses and resource types"
 description: "Learn about errors that can be returned in Microsoft Graph responses. Errors are returned using standard HTTP status codes and a JSON error response object."
 ms.localizationpriority: high
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Microsoft Graph error responses and resource types
@@ -20,7 +21,7 @@ The following table lists and describes the HTTP status codes that can be return
 | 400         | Bad Request                     | Can't process the request because it's malformed or incorrect.                                                                       |
 | 401         | Unauthorized                    | Required authentication information is either missing or not valid for the resource.                                                   |
 | 402         | Payment Required                | The [payment requirements](metered-api-list.md) for the API haven't been met.                                                  |
-| 403         | Forbidden                       | Access is denied to the requested resource. The user might not have enough permission or might not have a required license. <br /><br /> **Important:** If conditional access policies are applied to a resource, an `HTTP 403; Forbidden error=insufficient_claims` message may be returned. For more information on Microsoft Graph and conditional access, see [Developer Guidance for Microsoft Entra Conditional Access](/azure/active-directory/develop/active-directory-conditional-access-developer).  |
+| 403         | Forbidden                       | Access is denied to the requested resource. The user does not have enough permission or does not have a required license. <br /><br /> **Important:** If conditional access policies are applied to a resource, an `HTTP 403; Forbidden error=insufficient_claims` message is returned. For more information on Microsoft Graph and conditional access, see [Developer Guidance for Microsoft Entra Conditional Access](/azure/active-directory/develop/active-directory-conditional-access-developer).  |
 | 404         | Not Found                       | The requested resource doesn’t exist.                                                                                                  |
 | 405         | Method Not Allowed              | The HTTP method in the request isn't allowed on the resource.                                                                         |
 | 406         | Not Acceptable                  | This service doesn’t support the format requested in the Accept header.                                                                |
@@ -36,7 +37,7 @@ The following table lists and describes the HTTP status codes that can be return
 | 429         | Too Many Requests               | Client application has been throttled and shouldn't attempt to repeat the request until an amount of time has elapsed.                |
 | 500         | Internal Server Error           | There was an internal server error while processing the request.                                                                       |
 | 501         | Not Implemented                 | The requested feature isn’t implemented.                                                                                               |
-| 503         | Service Unavailable             | The service is temporarily unavailable for maintenance or is overloaded. You may repeat the request after a delay, the length of which may be specified in a Retry-After header.|
+| 503         | Service Unavailable             | The service is temporarily unavailable for maintenance or is overloaded. You can repeat the request after a delay, the length of which can be specified in a Retry-After header.|
 | 504         | Gateway Timeout                 | The server, while acting as a proxy, didn't receive a timely response from the upstream server it needed to access in attempting to complete the request. |
 | 507         | Insufficient Storage            | The maximum storage quota has been reached.                                                                                            |
 | 509         | Bandwidth Limit Exceeded        | Your app has been throttled for exceeding the maximum bandwidth cap. Your app can retry the request again after more time has elapsed. |
@@ -92,8 +93,8 @@ The error resource is composed of a single resource:
 |:---------------|:-----------------------|:-----------------------------------------------------------------------------------------------------------|
 | **code**       | string                 | An error code string for the error that occurred                                                            |
 | **message**    | string                 | A developer ready message about the error that occurred. This shouldn't be displayed to the user directly. |
-| **innererror** | error object           | Optional. An additional error object that might be more specific than the top-level error.                     |
-| **details**    | error object           | Optional. A list of more error objects that might provide a breakdown of multiple errors encountered while processing the request. |
+| **innererror** | error object           | Optional. An additional error object that is more specific than the top-level error.                     |
+| **details**    | error object           | Optional. A list of more error objects that provide a breakdown of multiple errors encountered while processing the request. |
 
 <!--<a name="msg_properties"> </a> -->
 
@@ -101,7 +102,7 @@ The error resource is composed of a single resource:
 
 The **code** property contains a machine-readable value that you can take a dependency on in your code.  
 
-The **innererror** object might recursively contain more **innererror** objects
+The **innererror** object can recursively contain more **innererror** objects
 with more specific error **codes** properties. When handling an error, apps
 should loop through all the nested error codes that are available and use the most detailed
 one that they understand.
@@ -115,7 +116,7 @@ dynamic information specific to the failed request. You should only code
 against error codes returned in **code** properties.
 
 The **details** property is an optional array of error objects that have the same JSON format as the top-level error object.
-If a request is composed of multiple operations, such as a bulk or batch operation, it might be necessary to return an independent error for each operation. In this case, the **details** list is populated with these individual errors.
+If a request is composed of multiple operations, such as a bulk or batch operation, it is necessary to return an independent error for each operation. In this case, the **details** list is populated with these individual errors.
 
 <!-- {
   "type": "#page.annotation",

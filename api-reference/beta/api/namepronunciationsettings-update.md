@@ -25,13 +25,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "namepronunciationsettings_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/namepronunciationsettings-update-permissions.md)]
 
+[!INCLUDE [rbac-peopleadmin-apis-write](../includes/rbac-for-apis/rbac-peopleadmin-apis-write.md)]
+
 <!-- {
   "blockType": "request"
 }-->
 
 ## HTTP request
 
-``` http
+```http
 PATCH /admin/people/namePronunciation
 ```
 
@@ -68,7 +70,7 @@ The following example shows a request.
   "name": "update_namepronunciationsettings"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/admin/people/namePronunciation
 Content-Type: application/json
 
@@ -80,10 +82,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-namepronunciationsettings-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-namepronunciationsettings-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -122,7 +120,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.namePronunciationSettings"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

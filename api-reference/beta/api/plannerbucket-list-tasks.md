@@ -1,5 +1,5 @@
 ---
-title: "List tasks"
+title: "List plannerTask objects for a plannerBucket"
 description: "Retrieve a list of plannerTask objects associated to a plannerBucket object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 04/05/2024
 ---
 
-# List tasks
+# List plannerTask objects for a plannerBucket
 
 Namespace: microsoft.graph
 
@@ -60,10 +60,6 @@ GET https://graph.microsoft.com/beta/planner/buckets/gcrYAaAkgU2EQUvpkNNXLGQAGTt
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/plannerbucket-get-tasks-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/plannerbucket-get-tasks-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -142,7 +138,7 @@ Content-type: application/json
 <!--
 {
   "type": "#page.annotation",
-  "description": "List tasks",
+  "description": "List plannerTask objects for a plannerBucket",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

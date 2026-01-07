@@ -23,7 +23,7 @@ exportCriteria := graphmodels.PARTIALLYINDEXED_EXPORTCRITERIA
 requestBody.SetExportCriteria(&exportCriteria) 
 exportLocation := graphmodels.RESPONSIVELOCATIONS_EXPORTLOCATION 
 requestBody.SetExportLocation(&exportLocation) 
-additionalOptions := graphmodels.CLOUDATTACHMENTS_ADDITIONALOPTIONS 
+additionalOptions := graphmodels.SPLITSOURCE, INCLUDEFOLDERANDPATH, CONDENSEPATHS, FRIENDLYNAME_ADDITIONALOPTIONS 
 requestBody.SetAdditionalOptions(&additionalOptions) 
 exportFormat := graphmodels.EML_EXPORTFORMAT 
 requestBody.SetExportFormat(&exportFormat) 

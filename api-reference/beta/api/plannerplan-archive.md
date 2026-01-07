@@ -39,7 +39,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /planner/plans/{planId}/archive
 ```
 
@@ -79,7 +79,7 @@ The following example shows a request.
   "name": "plannerplanthis.archive"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/planner/plans/{planId}/archive
 Content-Type: application/json
 
@@ -90,10 +90,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/plannerplanthisarchive-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/plannerplanthisarchive-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -131,7 +127,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

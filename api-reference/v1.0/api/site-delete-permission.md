@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /sites/{sitesId}/permissions/{permissionId}
 ```
 
@@ -53,16 +53,12 @@ If successful, this method returns `204 No Content` response code. It doesn't re
   "name": "delete_permission_2"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/v1.0/sites/{sitesId}/permissions/{permissionId}
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-permission-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-permission-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -5,6 +5,7 @@ author: "jewan-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "onenote"
 ms.date: 11/07/2024
+ms.topic: troubleshooting-error-codes
 ---
 
 # Error codes for the OneNote API in Microsoft Graph
@@ -353,7 +354,7 @@ Resource consumption is too high for the request. Either the target user account
 The user account was suspended.
 
 ### 30105
-The user's personal OneDrive for Business site isn't provisioned, which is required to access notebooks. The OneNote service will provision the site now. This process may take several minutes.
+The user's personal OneDrive for Business site isn't provisioned, which is required to access notebooks. The OneNote service will provision the site now. This process might take several minutes.
 
 ### 30106
 OneDrive for Business is being provisioned for the user.

@@ -49,6 +49,138 @@
       "CreatedDateTime": "2025-04-23T18:19:09.3414986Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Network access"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "79b66c9c-f0da-4978-a466-480385a0bb34",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudApplicationCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudApplicationCategory** enumeration type.",
+          "Target": "cloudApplicationCategory"
+        },
+        {
+          "Id": "79b66c9c-f0da-4978-a466-480385a0bb34",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicationAnalyticsUsagePoint",
+          "ChangeType": "Addition",
+          "Description": "Added the [applicationAnalyticsUsagePoint](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-applicationAnalyticsUsagePoint?view=graph-rest-beta) resource.",
+          "Target": "applicationAnalyticsUsagePoint"
+        },
+        {
+          "Id": "79b66c9c-f0da-4978-a466-480385a0bb34",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudApplicationMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudApplicationMetadata](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-cloudApplicationMetadata?view=graph-rest-beta) resource.",
+          "Target": "cloudApplicationMetadata"
+        },
+        {
+          "Id": "79b66c9c-f0da-4978-a466-480385a0bb34",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudApplicationReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudApplicationReport](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-cloudApplicationReport?view=graph-rest-beta) resource.",
+          "Target": "cloudApplicationReport"
+        },
+        {
+          "Id": "79b66c9c-f0da-4978-a466-480385a0bb34",
+          "ApiChange": "Resource",
+          "ChangedApiName": "enterpriseApplicationReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [enterpriseApplicationReport](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-enterpriseApplicationReport?view=graph-rest-beta) resource.",
+          "Target": "enterpriseApplicationReport"
+        },
+        {
+          "Id": "79b66c9c-f0da-4978-a466-480385a0bb34",
+          "ApiChange": "Property",
+          "ChangedApiName": "cloudApplicationMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudApplicationMetadata** property to the [networkAccessTraffic](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-networkAccessTraffic?view=graph-rest-beta) resource.",
+          "Target": "networkAccessTraffic"
+        },
+        {
+          "Id": "79b66c9c-f0da-4978-a466-480385a0bb34",
+          "ApiChange": "Method",
+          "ChangedApiName": "getApplicationUsageAnalytics",
+          "ChangeType": "Addition",
+          "Description": "Added the [getApplicationUsageAnalytics](https://learn.microsoft.com/en-us/graph/api/networkaccess-reports-getApplicationUsageAnalytics?view=graph-rest-beta) method to the [reports](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-reports?view=graph-rest-beta) resource.",
+          "Target": "reports"
+        },
+        {
+          "Id": "79b66c9c-f0da-4978-a466-480385a0bb34",
+          "ApiChange": "Method",
+          "ChangedApiName": "getCloudApplicationReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getCloudApplicationReport](https://learn.microsoft.com/en-us/graph/api/networkaccess-reports-getCloudApplicationReport?view=graph-rest-beta) method to the [reports](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-reports?view=graph-rest-beta) resource.",
+          "Target": "reports"
+        },
+        {
+          "Id": "79b66c9c-f0da-4978-a466-480385a0bb34",
+          "ApiChange": "Method",
+          "ChangedApiName": "getEnterpriseApplicationReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getEnterpriseApplicationReport](https://learn.microsoft.com/en-us/graph/api/networkaccess-reports-getEnterpriseApplicationReport?view=graph-rest-beta) method to the [reports](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-reports?view=graph-rest-beta) resource.",
+          "Target": "reports"
+        }
+      ],
+      "Id": "79b66c9c-f0da-4978-a466-480385a0bb34",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-08-28T09:27:52.4878125Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Network access"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5e350fb4-6671-42ea-94c7-63edcf6aa46c",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudApplicationCategory",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **cloudApplicationCategory** enumeration type.",
+          "Target": "cloudApplicationCategory"
+        },
+        {
+          "Id": "5e350fb4-6671-42ea-94c7-63edcf6aa46c",
+          "ApiChange": "Property",
+          "ChangedApiName": "categories",
+          "ChangeType": "Addition",
+          "Description": "Added the **categories** property to the [cloudApplicationMetadata](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-cloudapplicationmetadata?view=graph-rest-beta) resource.",
+          "Target": "cloudApplicationMetadata"
+        },
+        {
+          "Id": "5e350fb4-6671-42ea-94c7-63edcf6aa46c",
+          "ApiChange": "Property",
+          "ChangedApiName": "category",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **category** property from the [cloudApplicationMetadata](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-cloudapplicationmetadata?view=graph-rest-beta) resource.",
+          "Target": "cloudApplicationMetadata"
+        },
+        {
+          "Id": "5e350fb4-6671-42ea-94c7-63edcf6aa46c",
+          "ApiChange": "Property",
+          "ChangedApiName": "categories",
+          "ChangeType": "Addition",
+          "Description": "Added the **categories** property to the [cloudApplicationReport](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-cloudapplicationreport?view=graph-rest-beta) resource.",
+          "Target": "cloudApplicationReport"
+        },
+        {
+          "Id": "5e350fb4-6671-42ea-94c7-63edcf6aa46c",
+          "ApiChange": "Property",
+          "ChangedApiName": "category",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **category** property from the [cloudApplicationReport](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-cloudapplicationreport?view=graph-rest-beta) resource.",
+          "Target": "cloudApplicationReport"
+        }
+      ],
+      "Id": "5e350fb4-6671-42ea-94c7-63edcf6aa46c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-17T15:01:14.088682Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Network access"
     }
   ]
 }

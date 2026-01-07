@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /employeeExperience/goals/exportJobs
 ```
 
@@ -61,16 +61,12 @@ The following example shows a request.
   "name": "list_goalsexportjob1"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/employeeExperience/goals/exportJobs
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-goalsexportjob1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-goalsexportjob1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -104,7 +100,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.goalsExportJob)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -133,16 +129,12 @@ The following example shows a request.
   "name": "list_goalsexportjob2"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs?$filter= goalsOrganizationId eq '3d9a8150-90fd-42bd-9777-25ba783d4a05'
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-goalsexportjob2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-goalsexportjob2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -176,7 +168,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.goalsExportJob)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -205,16 +197,12 @@ The following example shows a request.
   "name": "list_goalsexportjob3"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/employeeexperience/goals/exportJobs?$filter= explorerViewId eq ‘9ab0fcab-c1d4-4b26-963b-a3c33155f853’ 
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-goalsexportjob3-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-goalsexportjob3-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -248,7 +236,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.publicError"
 }
 -->
-``` http
+```http
 HTTP/1.1 400 Bad Request
 Content-type: application/json
 

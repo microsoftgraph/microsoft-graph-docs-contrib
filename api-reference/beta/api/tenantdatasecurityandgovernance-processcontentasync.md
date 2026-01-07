@@ -1,7 +1,7 @@
 ---
 title: "tenantDataSecurityAndGovernance: processContentAsync"
 toc.title: "tenantDataSecurityAndGovernance: processContentAsync"
-description: "Process a batch of content entries asynchronously against data protection policies."
+description: "Process a batch of tenant-wide content entries asynchronously against data protection policies."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Process a batch of content entries asynchronously against data protection policies.
+Process a batch of tenant-wide content entries asynchronously against data protection policies.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -23,6 +23,7 @@ Process a batch of content entries asynchronously against data protection polici
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+<!-- { "blockType": "permissions", "name": "tenantdatasecurityandgovernance_processcontentasync" } -->
 [!INCLUDE [permissions-table](../includes/permissions/tenantdatasecurityandgovernance-processcontentasync-permissions.md)]
 
 ## HTTP request
@@ -45,6 +46,8 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter             | Type                                                                                                       | Description                                                                                                            |
 | :-------------------- | :---------------------------------------------- | :------------------------------------------------------ |
 | processContentRequests| [processContentBatchRequest](../resources/processcontentbatchrequest.md) collection | Required. A collection of individual content processing requests, each with its own user context, content, and request ID. |
+
+The size of the text in each content entry is limited to 2 MB. The maximum number of content entries per request is 64. These could be spread across up to 64 **processContentRequests**, each containing one content entry or 2 **processContentRequests**, each containing 32 content entries or some other combination that does not exceed 64 content entries.
 
 ## Response
 
@@ -155,8 +158,6 @@ Content-type: application/json
 ### Response
 
 The following example shows the 204 No Content response.
-
-> **Note:** The response object shown here might be shortened for readability.
 
 ```http
 HTTP/1.1 204 No Content

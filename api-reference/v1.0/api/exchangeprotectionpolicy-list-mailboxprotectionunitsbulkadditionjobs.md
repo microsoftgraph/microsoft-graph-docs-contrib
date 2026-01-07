@@ -69,10 +69,6 @@ GET https://graph.microsoft.com/v1.0/solutions/backupRestore/exchangeProtectionP
 [!INCLUDE [sample-code](../includes/snippets/csharp/exchangeprotectionpolicy-list-mailboxprotectionunitsbulkadditionjobs-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/exchangeprotectionpolicy-list-mailboxprotectionunitsbulkadditionjobs-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/exchangeprotectionpolicy-list-mailboxprotectionunitsbulkadditionjobs-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -87,6 +83,10 @@ GET https://graph.microsoft.com/v1.0/solutions/backupRestore/exchangeProtectionP
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/exchangeprotectionpolicy-list-mailboxprotectionunitsbulkadditionjobs-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/exchangeprotectionpolicy-list-mailboxprotectionunitsbulkadditionjobs-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

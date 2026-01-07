@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearchId}/estimateStatistics
 ```
 
@@ -36,14 +36,21 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySear
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
 
 ## Request body
-Don't supply a request body for this method.
+
+In the request body, supply a JSON representation of the parameters.
+
+The following table lists the parameters that you can use with this action.
+
+| Parameter | Type | Description |
+|:---|:---|:---|
+| statisticsOptions | [microsoft.graph.security.statisticsOptions](../resources/security-ediscoveryestimateoperation.md#statisticsoptions-values) | Bitwise options that specify the statistics to generate. The possible values are: `includeRefiners`, `includeQueryStats`, `includeUnindexedStats`, `advancedIndexing`, `locationsWithoutHits`, `unknownFutureValue`. The `advancedIndexing` and `locationsWithoutHits` values are only considered if `includeUnindexedStats` is set.|
 
 ## Response
 
-If the estimate is started successfully, this action returns a `202 Accepted` response code.
-The response will also contain a `Location` header, which contains the location of the [microsoft.graph.security.estimateStatisticsOperation](../resources/security-ediscoveryestimateoperation.md) that was created to handle the estimate. Check the status of the estimate operation by making a GET request to the location.
+If the estimate is started successfully, this action returns a `202 Accepted` response code. The response contains a `Location` header, which contains the location of the [microsoft.graph.security.estimateStatisticsOperation](../resources/security-ediscoveryestimateoperation.md) that was created to handle the estimate. Check the status of the estimate operation by making a GET request to the value of the `Location` header.
 
 ## Examples
 
@@ -56,16 +63,17 @@ The following example shows a request.
   "name": "ediscoverysearchthis.estimatestatistics"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/searches/c61a5860-d634-4d14-aea7-d82b6f4eb7af/estimatestatistics
+Content-Type: application/json
+
+{
+  "statisticsOptions": "includeRefiners, includeQueryStats, includeUnindexedStats, advancedIndexing, locationsWithoutHits"
+}
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/ediscoverysearchthisestimatestatistics-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/ediscoverysearchthisestimatestatistics-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -102,6 +110,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
-HTTP/1.1 204 No Content
+```http
+HTTP/1.1 202 Accepted
+Location: https://graph.microsoft.com/v1.0/security/cases/ediscoverycases('4c551bc5-f6f8-435c-8391-d1a08f1ffd5b')/operations('698514cc118f4c8b8cdf1bf0797bf478')
 ```

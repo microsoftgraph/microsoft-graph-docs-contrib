@@ -76,8 +76,8 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter          | Type                           | Description
 |:-------------------|:-------------------------------|:-------------------------
-| recipients         | Collection([driveRecipient][]) | A collection of recipients who will receive access.
-| roles              | Collection(String)             | If the link is an "existing access" link, specifies roles to be granted to the users. Otherwise must match the role of the link.
+| recipients         | [driveRecipient][] collection | A collection of recipients who receive access.
+| roles              | String collection             | If the link is an "existing access" link, specifies roles to be granted to the users. Otherwise must match the role of the link.
 
 For a list of available roles, see [roles property values](../resources/permission.md#roles-property-values).
 
@@ -119,10 +119,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/permission-grant-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/permission-grant-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -1,5 +1,5 @@
 ---
-title: "List tasks"
+title: "List plannerTask objects"
 description: "Retrieve a list of **plannertask** objects."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 04/05/2024
 ---
 
-# List tasks
+# List plannerTask objects
 
 Namespace: microsoft.graph
 
@@ -60,10 +60,6 @@ GET https://graph.microsoft.com/beta/planner/tasks
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/planner-get-tasks-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/planner-get-tasks-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -141,7 +137,7 @@ Content-type: application/json
 <!--
 {
   "type": "#page.annotation",
-  "description": "List tasks",
+  "description": "List plannerTask objects",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

@@ -13,7 +13,7 @@ ms.date: 10/17/2024
 
 Namespace: microsoft.graph
 
-Represents a Microsoft Entra group, a Microsoft 365 group, or a security group. This resource is an open type that allows other properties to be passed in.
+Represents a Microsoft Entra group, a Microsoft 365 group, or a security group. This resource is an open type that allows additional properties beyond those documented here.
 
 Inherits from [directoryObject](directoryobject.md).
 
@@ -22,7 +22,7 @@ For performance reasons, the [create](../api/group-post-groups.md), [get](../api
 This resource supports:
 
 - Adding your data to custom properties as [extensions](/graph/extensibility-overview).
-- Subscribing to [change notifications](/graph/webhooks).
+- Subscribing to [change notifications](/graph/change-notifications-overview).
 - Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/group-delta.md) function.
 
 ## Methods
@@ -149,6 +149,7 @@ This resource supports:
 | id | String | The unique identifier for the group. <br><br>Returned by default. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.<br><br>Supports `$filter` (`eq`, `ne`, `not`, `in`). |
 | isArchived | Boolean | When a group is associated with a team, this property determines whether the team is in read-only mode.<br/>To read this property, use the `/group/{groupId}/team` endpoint or the [Get team](../api/team-get.md) API. To update this property, use the [archiveTeam](../api/team-archive.md) and [unarchiveTeam](../api/team-unarchive.md) APIs. |
 | isAssignableToRole | Boolean | Indicates whether this group can be assigned to a Microsoft Entra role. Optional. <br><br>This property can only be set while creating the group and is immutable. If set to `true`, the **securityEnabled** property must also be set to `true`, **visibility** must be `Hidden`, and the group can't be a dynamic group (that is, **groupTypes** can't contain `DynamicMembership`). <br/><br/>Only callers with at least the Privileged Role Administrator role can set this property. The caller must also be assigned the _RoleManagement.ReadWrite.Directory_ permission to set this property or update the membership of such groups. For more, see [Using a group to manage Microsoft Entra role assignments](https://go.microsoft.com/fwlink/?linkid=2103037)<br><br>Using this feature requires a Microsoft Entra ID P1 license. Returned by default. Supports `$filter` (`eq`, `ne`, `not`). |
+| isManagementRestricted | Boolean | Indicates whether the group is a member of a restricted management administrative unit. If not set, the default value is `null` and the default behavior is false. Read-only. <br/><br/> To manage a group member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit. <br><br>Returned only on `$select`. |
 | isSubscribedByMail | Boolean | Indicates whether the signed-in user is subscribed to receive email conversations. The default value is `true`. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`). |
 | licenseProcessingState | String | Indicates the status of the group license assignment to all group members. The default value is `false`. Read-only. Possible values: `QueuedForProcessing`, `ProcessingInProgress`, and `ProcessingComplete`.<br><br>Returned only on `$select`. Read-only. |
 | mail | String | The SMTP address for the group, for example, "serviceadmins@contoso.com". <br><br>Returned by default. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values). |
@@ -173,7 +174,7 @@ This resource supports:
 | theme | string | Specifies a Microsoft 365 group's color theme. Possible values are `Teal`, `Purple`, `Green`, `Blue`, `Pink`, `Orange`, or `Red`. <br><br>Returned by default. |
 | uniqueName | String | The unique identifier that can be assigned to a group and used as an alternate key. Immutable. Read-only. |
 | unseenCount | Int32 | Count of conversations that received new posts since the signed-in user last visited the group. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`). |
-| visibility | String | Specifies the group join policy and group content visibility for groups. Possible values are: `Private`, `Public`, or `HiddenMembership`. `HiddenMembership` can be set only for Microsoft 365 groups when the groups are created. It can't be updated later. Other values of visibility can be updated after group creation.<br> If visibility value isn't specified during group creation on Microsoft Graph, a security group is created as `Private` by default, and the Microsoft 365 group is `Public`. Groups assignable to roles are always `Private`. To learn more, see [group visibility options](#group-visibility-options). <br><br>Returned by default. Nullable. |
+| visibility | String | Specifies the group join policy and group content visibility for groups. The possible values are: `Private`, `Public`, or `HiddenMembership`. `HiddenMembership` can be set only for Microsoft 365 groups when the groups are created. It can't be updated later. Other values of visibility can be updated after group creation.<br> If visibility value isn't specified during group creation on Microsoft Graph, a security group is created as `Private` by default, and the Microsoft 365 group is `Public`. Groups assignable to roles are always `Private`. To learn more, see [group visibility options](#group-visibility-options). <br><br>Returned by default. Nullable. |
 
 ### Group visibility options
 
@@ -354,10 +355,10 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "allowExternalSenders": false,
+  "allowExternalSenders": "Boolean",
   "acceptedSenders": [{ "@odata.type": "microsoft.graph.directoryObject" }],
   "assignedLicenses": [{ "@odata.type": "microsoft.graph.assignedLicense" }],
-  "autoSubscribeNewMembers": true,
+  "autoSubscribeNewMembers": "Boolean",
   "calendar": { "@odata.type": "microsoft.graph.calendar" },
   "calendarView": [{ "@odata.type": "microsoft.graph.event" }],
   "classification": "String",
@@ -371,14 +372,15 @@ The following JSON representation shows the resource type.
   "events": [{ "@odata.type": "microsoft.graph.event" }],
   "groupTypes": ["String"],
   "hasMembersWithLicenseErrors": "Boolean",
-  "hideFromAddressLists": false,
-  "hideFromOutlookClients": false,
+  "hideFromAddressLists": "Boolean",
+  "hideFromOutlookClients": "Boolean",
   "id": "String (identifier)",
-  "isAssignableToRole": false,
-  "isSubscribedByMail": true,
+  "isAssignableToRole": "Boolean",
+  "isManagementRestricted": "Boolean",
+  "isSubscribedByMail": "Boolean",
   "licenseProcessingState": "String",
   "mail": "String",
-  "mailEnabled": true,
+  "mailEnabled": "Boolean",
   "mailNickname": "String",
   "memberOf": [{ "@odata.type": "microsoft.graph.directoryObject" }],
   "members": [{ "@odata.type": "microsoft.graph.directoryObject" }],
@@ -390,7 +392,7 @@ The following JSON representation shows the resource type.
     { "@odata.type": "microsoft.graph.onPremisesProvisioningError" }
   ],
   "onPremisesSecurityIdentifier": "String",
-  "onPremisesSyncEnabled": true,
+  "onPremisesSyncEnabled": "Boolean",
   "owners": [{ "@odata.type": "microsoft.graph.directoryObject" }],
   "preferredDataLocation": "String",
   "proxyAddresses": ["String"],
@@ -398,7 +400,7 @@ The following JSON representation shows the resource type.
   "photos": [{ "@odata.type": "microsoft.graph.profilePhoto" }],
   "rejectedSenders": [{ "@odata.type": "microsoft.graph.directoryObject" }],
   "renewedDateTime": "String (timestamp)",
-  "securityEnabled": true,
+  "securityEnabled": "Boolean",
   "securityIdentifier": "String",
   "serviceProvisioningErrors": [
     { "@odata.type": "microsoft.graph.serviceProvisioningXmlError" }
@@ -406,7 +408,7 @@ The following JSON representation shows the resource type.
   "sites": [{ "@odata.type": "microsoft.graph.site" }],
   "threads": [{ "@odata.type": "microsoft.graph.conversationThread" }],
   "uniqueName": "String",
-  "unseenCount": 1024,
+  "unseenCount": "Int32",
   "visibility": "String"
 }
 ```

@@ -7,6 +7,7 @@ doc_type: conceptualPageType
 ms.subservice: search
 description: "Learn how to use the Copilot connectors SDK to build your first custom connector."
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Build your first custom Copilot connector

@@ -1,7 +1,6 @@
 ---
 title: "processContentMetadataBase resource type"
-toc.title: "processContentMetadataBase resource type (preview)"
-description: "Abstract base type representing metadata for a content entry being processed, including identifiers, content details, and timestamps."
+description: "An abstract base type that represents metadata for a content entry being processed, including identifiers, content details, and timestamps."
 author: "ArunGedela"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
@@ -15,14 +14,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abstract base type representing metadata for a content entry being processed, including identifiers, content details, and timestamps. Use [processConversationMetadata](./processconversationmetadata.md) for conversation content and [processFileMetadata](./processfilemetadata.md) for file content.
+An abstract base type that represents metadata for a content entry being processed, including identifiers, content details, and timestamps. Use [processConversationMetadata](./processconversationmetadata.md) for conversation content and [processFileMetadata](./processfilemetadata.md) for file content.
+
+This is an abstract type from which the following resources derive:
+- [processConversationMetadata](../resources/processconversationmetadata.md)
+- [processFileMetadata](../resources/processfilemetadata.md)
+
+Base type of [processConversationMetadata](./processconversationmetadata.md) and [processFileMetadata](./processfilemetadata.md).
 
 ## Properties
 
 | Property         | Type                                                                           | Description                                                                                                                                                           |
 | :--------------- | :----------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | content          | [contentBase](../resources/contentbase.md)  | Represents the actual content, either as text (`textContent`) or binary data (`binaryContent`). Optional if metadata alone is sufficient for policy evaluation. **Do not use for [contentActivities](../api/activitiescontainer-post-contentactivities.md).**|
-| correlationId    | String                                                                         | An GUID identifier used to group multiple related content entries (for example, different parts of the same file upload, messages in a conversation).                     |
+| correlationId    | String                                                                         | An identifier used to group multiple related content entries (for example, different parts of the same file upload, messages in a conversation).                     |
 | createdDateTime  | DateTimeOffset                                                                 | Required. Timestamp indicating when the original content was created (for example, file creation time, message sent time).                                                               |
 | identifier       | String                                                                         | Required. A unique identifier for this specific content entry within the context of the calling application or enforcement plane (for example, message ID, file path/URL).       |
 | isTruncated      | Boolean                                                                        | Required. Indicates if the provided `content` has been truncated from its original form (for example, due to size limits).                                                           |
@@ -38,7 +43,6 @@ None.
 ## JSON representation
 
 The following JSON representation shows the resource type. 
->**Note** This is an abstract type and won't be instantiated directly.
 <!-- {
   "blockType": "resource",
   "abstract": true,

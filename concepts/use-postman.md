@@ -4,6 +4,8 @@ description: "Postman is an API platform for building and using APIs. Use the Mi
 author: "jasonjoh"
 ms.localizationpriority: high
 ms.date: 11/07/2024
+ms.custom: sfi-image-nochange
+ms.topic: how-to
 ---
 
 # Use Postman with the Microsoft Graph API

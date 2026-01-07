@@ -5,6 +5,7 @@ ms.localizationpriority: high
 ms.subservice: "project-rome"
 ms.custom: scenarios:getting-started
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Cross-device experiences in Microsoft Graph

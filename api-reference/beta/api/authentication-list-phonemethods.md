@@ -6,7 +6,7 @@ author: "luc-msft"
 ms.reviewer: intelligentaccesspm
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
-ms.date: 10/23/2024
+ms.date: 07/31/2025
 ---
 
 # List phoneMethods
@@ -21,17 +21,14 @@ Retrieve a list of [phone authentication method](../resources/phoneauthenticatio
 
 ## Permissions
 
-The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### Permissions acting on self
-
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+<!-- { 
+  "blockType": "permissions", 
+  "name": "authentication_list_phonemethods", 
+  "requestUrls": ["GET /users/{id | userPrincipalName}/authentication/phoneMethods"]
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-list-phonemethods-permissions.md)]
-
-### Permissions acting on other users
-
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-[!INCLUDE [permissions-table](../includes/permissions/authentication-list-phonemethods-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
 
@@ -41,22 +38,26 @@ The following tables show the least privileged permission or permissions require
 ## HTTP request
 
 List your own phone authentication methods.
-<!-- { "blockType": "ignored" } -->
-``` http
-GET /me/authentication/phoneMethods
-```
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
-List your own or another user's phone authentication methods.
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
+GET /me/authentication/phoneMethods
+```
+
+List your own or another user's phone authentication methods.
+
+[!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
+
+<!-- { "blockType": "ignored" } -->
+```http
 GET /users/{id | userPrincipalName}/authentication/phoneMethods
 ```
 
 ## Optional query parameters
 
-This method does not support optional query parameters to customize the response.
+Not supported.
 
 ## Request headers
 
@@ -90,10 +91,6 @@ GET https://graph.microsoft.com/beta/me/authentication/phoneMethods
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-phonemethods-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-phonemethods-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

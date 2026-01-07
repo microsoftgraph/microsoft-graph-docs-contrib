@@ -33,7 +33,7 @@ Forward a **chatMessage** in a **chat** to a **chat**:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /chats/{chatId}/messages/forwardToChat
 ```
 
@@ -43,7 +43,7 @@ Forward a **chatMessage** in a **channel** to a **chat**:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /teams/{teamId}/channels/{channelId}/messages/forwardToChat
 POST /teams/{teamId}/channels/{channelId}/messages/{messageId}/replies/forwardToChat
 ```
@@ -114,10 +114,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/chatmessageforwardmessage-from-chat-to-chat-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/chatmessageforwardmessage-from-chat-to-chat-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/chatmessageforwardmessage-from-chat-to-chat-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -155,7 +151,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.forwardToChatResult)"
 } -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -210,10 +206,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/chatmessageforwardmessage-from-channel-to-chat-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/chatmessageforwardmessage-from-channel-to-chat-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/chatmessageforwardmessage-from-channel-to-chat-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -251,7 +243,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.forwardToChatResult)"
 } -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -306,10 +298,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/chatmessageforwardreplymessage-from-channel-to-chat-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/chatmessageforwardreplymessage-from-channel-to-chat-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/chatmessageforwardreplymessage-from-channel-to-chat-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -346,7 +334,7 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "Collection(microsoft.graph.forwardToChatResult)"
 } -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

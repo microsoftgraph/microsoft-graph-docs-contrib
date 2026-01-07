@@ -65,10 +65,6 @@ GET https://graph.microsoft.com/v1.0/storage/fileStorage/containers/b!ISJs1WRro0
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-filestoragecontainer-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-filestoragecontainer-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-filestoragecontainer-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -116,7 +112,8 @@ Content-Type: application/json
   "settings": {
     "isOcrEnabled": false,
     "itemMajorVersionLimit": 50,
-    "isItemVersioningEnabled": true
+    "isItemVersioningEnabled": true,
+    "itemDefaultSensitivityLabelId": "3d8789ae-7375-4ded-8eeb-d6bc226e42fb"
   }
 }
 ```

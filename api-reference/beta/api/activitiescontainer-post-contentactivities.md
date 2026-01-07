@@ -2,8 +2,8 @@
 title: "Create contentActivity"
 toc.title: "Create contentActivity"
 description: "Create a content activity for the signed-in user."
-author: "ArunGedela"
-ms.date: 04/03/2025
+author: "kylemar"
+ms.date: 06/19/2025
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a content activity for the signed-in user.
+Create a [content activity](../resources/contentactivity.md) for the signed-in user.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -38,6 +38,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 POST /me/dataSecurityAndGovernance/activities/contentActivities
+```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+<!-- { "blockType": "ignored" } -->
+```http
+POST /users/{userId}/dataSecurityAndGovernance/activities/contentActivities
 ```
 
 ## Request headers
@@ -71,48 +78,73 @@ POST https://graph.microsoft.com/beta/me/dataSecurityAndGovernance/activities/co
 Content-Type: application/json
 
 {
-    "contentMetadata": {
+    "contentToProcess": {
        "contentEntries": [
           {
              "@odata.type": "microsoft.graph.processConversationMetadata",
-             "identifier": "d6ab5054-e111-45c3-9fba-9f2a59c9bbf8",
-             "name":"CA Purview API Explorer message",
-             "correlationId": "edfb7f88-b963-4ef2-8b30-5cb90f80e01e",
+             "identifier": "07785517-9081-4fe7-a9dc-85bcdf5e9075",
+             "name":"PC Purview API Explorer message",
+             "correlationId": "d63eafd2-e3a9-4c1a-b726-a2e9b9d9580d",
              "sequenceNumber": 0, 
              "isTruncated": false,
-             "createdDateTime": "2025-05-28T20:20:37",
-             "modifiedDateTime": "2025-05-28T20:20:37"
+             "createdDateTime": "2025-05-27T17:23:20",
+             "modifiedDateTime": "2025-05-27T17:23:20",
+             "agents": [
+              {
+                "identifier": "b262a092-6a2b-4682-9c7f-00baf80dbd84",
+                "name": "Copilot Agent",
+                "version": "1.2",
+                "blueprintId": "c262a092-6a2b-4682-9c7f-00baf80dbd94"
+              }
+            ],
+            "plugins": [
+              {
+                "identifier": "f1a2b3c4-d5e6-7890-abcd-ef1234567890",
+                "name": "Microsoft Purview Data Scanner",
+                "version": "1.1"
+              }
+            ],
+            "accessedResources_v2": [
+              {
+                "identifier": "3f2d6e5b-98d4-4f2a-9a61-45c0a8b7d123",
+                "name": "Report.xlsx",
+                "url": "https://contoso.sharepoint.com/sites/finance",
+                "labelId": "a7b4f8c9-1e2d-4f45-89b1-23456789abcd",
+                "accessType": "read",
+                "status": "success",
+                "isCrossPromptInjectionDetected": false
+              }
+            ]
           }
        ],
        "activityMetadata": { 
-          "activity": "downloadText"
+          "activity": "uploadText"
        },
        "deviceMetadata": {
           "operatingSystemSpecifications": {
              "operatingSystemPlatform": "Windows 11",
              "operatingSystemVersion": "10.0.26100.0" 
+          },
+          "ipAddress": "127.0.0.1"
+       },
+       "protectedAppMetadata": {
+          "name": "PC Purview API Explorer",
+          "version": "0.2",
+          "applicationLocation":{
+             "@odata.type": "microsoft.graph.policyLocationApplication",
+             "value": "83ef208a-0396-4893-9d4f-d36efbffc8bd"
           }
        },
        "integratedAppMetadata": {
-          "name": "CA Purview API Explorer",
-          "version": "0.1" 
-       },
-       "userId":"7c497f10-cba8-4a8d-9449-db4b76d1ef80",
-       "scopeIdentifier":"0"
+          "name": "PC Purview API Explorer",
+          "version": "0.2" 
+       }
     }
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-contentactivity-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-contentactivity-from--cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-contentactivity-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)

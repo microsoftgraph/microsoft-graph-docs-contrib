@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of tenant-level or group-specific group settings objects.
+Retrieve a list of tenant-level or group-specific [directory settings](../resources/directorysetting.md) objects.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -23,16 +23,14 @@ Retrieve a list of tenant-level or group-specific group settings objects.
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 ### List tenant-wide settings
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-
+<!-- { "blockType": "permissions", "name": "group_list_settings" } -->
 [!INCLUDE [permissions-table](../includes/permissions/group-list-settings-permissions.md)]
 
-### List group-specific settings
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-
-[!INCLUDE [permissions-table](../includes/permissions/group-list-settings-2-permissions.md)]
-
 [!INCLUDE [rbac-group-directorysettings-all](../includes/rbac-for-apis/rbac-group-directorysettings-all.md)]
+
+### List group-specific settings
+<!-- { "blockType": "permissions", "name": "group_list_settings_2" } -->
+[!INCLUDE [permissions-table](../includes/permissions/group-list-settings-2-permissions.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -79,10 +77,6 @@ GET https://graph.microsoft.com/beta/settings
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-settings-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-settings-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

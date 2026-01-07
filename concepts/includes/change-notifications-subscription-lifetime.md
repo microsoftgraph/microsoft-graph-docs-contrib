@@ -35,13 +35,14 @@ ms.date: 11/07/2024
 | Group [conversation][]                         | 4,230 minutes (under three days)  |
 | OneDrive [driveItem][]                         | 42,300 minutes (under 30 days)    |
 | SharePoint [list][]                            | 42,300 minutes (under 30 days)    |
-| Outlook [message][], [event][], [contact][]    | 10,080 minutes (under seven days)  |
+| Outlook [message][], [event][], [contact][]    | 10,080 minutes (under seven days) <br/><br/>For subscriptions with resource data (rich notification subscriptions), subscription lifetime is 1440 minutes (under one day).  |
 | [user][], [group][], other directory resources | 41,760 minutes (under 29 days)    |
 | [onlineMeeting][]                              | 4,230 minutes (under three days)  |
 | [presence][]                                   | 60 minutes (1 hour)               |
 | Print [printer][]                              | 4,230 minutes (under three days)  |
 | Print [printTaskDefinition][]                  | 4,230 minutes (under three days)  |
 | [todoTask][]                                   | 4,230 minutes (under three days) <br/><br/>Webhooks for this resource are only available in the global endpoint and not in the national clouds.  |
+| Microsoft Entra Health Monitoring [alert][health monitoring alert] | 42,300 minutes (under 30 days)    |
 | **baseTask** (deprecated)                      | 4,230 minutes (under three days)  |
 
 > **Note:** Existing applications and new applications should not exceed the supported value. In the future, any requests to create or renew a subscription beyond the maximum value will fail.
@@ -76,3 +77,4 @@ ms.date: 11/07/2024
 [callRecording]: /graph/api/resources/callrecording
 [teamsAppInstallation]: /graph/api/resources/teamsappinstallation
 [approvals]: /graph/api/resources/approvalItem
+[health monitoring alert]: /graph/api/resources/healthmonitoring-alert

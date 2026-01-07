@@ -5,7 +5,7 @@ author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
-ms.date: 07/23/2024
+ms.date: 07/29/2025
 ---
 
 # Get longRunningOperation
@@ -27,14 +27,22 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ### For role management alerts
 
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+<!-- { 
+  "blockType": "permissions", 
+  "name": "longrunningoperation_get", 
+  "requestUrls": ["GET /identityGovernance/roleManagementAlerts/operations/{longRunningOperationId}"]
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/longrunningoperation-get-permissions.md)]
 
 [!INCLUDE [rbac-pim-alerts-apis-read](../includes/rbac-for-apis/rbac-pim-alerts-apis-read.md)]
 
 ### For authentication methods (password reset)
 
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+<!-- { 
+  "blockType": "permissions", 
+  "name": "longrunningoperation_get_2", 
+  "requestUrls": ["GET /users/{id | userPrincipalName}/authentication/operations/{id}"]
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/longrunningoperation-get-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
@@ -46,7 +54,7 @@ To retrieve details of a long running operation of role management alert refresh
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/roleManagementAlerts/operations/{longRunningOperationId}
 ```
 
@@ -56,7 +64,7 @@ To retrieve the status of a long running operation of authentication method rese
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /users/{id | userPrincipalName}/authentication/operations/{id}
 ```
 
@@ -88,16 +96,12 @@ The following example shows a request.
   "name": "get_longrunningoperation_roleManagementalerts_running"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/operations/refresh:DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_StaleSignInAlert
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-longrunningoperation-rolemanagementalerts-running-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-longrunningoperation-rolemanagementalerts-running-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -135,7 +139,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.longRunningOperation"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -160,16 +164,12 @@ The following example shows a request.
   "name": "get_longrunningoperation_roleManagementalerts_succeeded"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/operations/refresh:DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_StaleSignInAlert
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-longrunningoperation-rolemanagementalerts-succeeded-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-longrunningoperation-rolemanagementalerts-succeeded-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -207,7 +207,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.longRunningOperation"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -241,10 +241,6 @@ GET https://graph.microsoft.com/beta/users/{id | userPrincipalName}/authenticati
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-longrunningoperation-passwordreset-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-longrunningoperation-passwordreset-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -283,7 +279,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.longRunningOperation"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -314,10 +310,6 @@ GET https://graph.microsoft.com/beta/external/industryData/operations/d194fa3e-1
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-longrunningoperation-industrydata-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-longrunningoperation-industrydata-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

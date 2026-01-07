@@ -30,12 +30,7 @@ var requestBody = new Deployment
 			{
 				OdataType = "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
 				DurationBetweenOffers = TimeSpan.Parse("P7D"),
-				AdditionalData = new Dictionary<string, object>
-				{
-					{
-						"devicePerOffer" , 100
-					},
-				},
+				DevicesPerOffer = 100,
 			},
 		},
 		Monitoring = new MonitoringSettings

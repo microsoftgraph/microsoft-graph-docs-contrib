@@ -44,7 +44,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /users
 ```
 
@@ -79,7 +79,7 @@ If successful, this method returns a `201 Created` response code and a [user](..
 
 Here is an example of the request.
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/users
 Content-type: application/json
 Content-length: 46
@@ -93,7 +93,7 @@ Content-length: 46
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. Properties returned from an actual call vary according to context.
 
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 95

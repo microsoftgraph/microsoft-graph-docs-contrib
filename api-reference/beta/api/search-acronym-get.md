@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /search/acronyms/{acronymsId}
 ```
 
@@ -65,16 +65,12 @@ The following example shows a request.
   "name": "get_acronym"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/search/acronyms/733b26d5-af76-4eea-ac69-1a0ce8716897
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-acronym-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-acronym-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -114,7 +110,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.search.acronym"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

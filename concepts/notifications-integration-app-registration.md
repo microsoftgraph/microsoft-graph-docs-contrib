@@ -5,6 +5,8 @@ ms.localizationpriority: high
 ms.subservice: "notifications"
 author: "merzink"
 ms.date: 11/07/2024
+ms.custom: sfi-image-nochange
+ms.topic: article
 ---
 
 # Manage app registration and API permission for Microsoft Graph notifications (deprecated)

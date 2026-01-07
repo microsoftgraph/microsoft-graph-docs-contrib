@@ -16,6 +16,8 @@ Used for creating a new custom extension based on the **onAttributeCollectionSta
 
 Inherits from [customAuthenticationExtension](../resources/customauthenticationextension.md).
 
+[Try out this event in the Woodgrove demo tenant](/entra/identity-platform/custom-extension-overview#attribute-collection-start).
+
 ## Methods
 None.
 

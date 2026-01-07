@@ -34,14 +34,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 To rename the [cloudPC](../resources/cloudpc.md) of the specified user (who is the signed-in user) in the organization using delegated permission:
 
-``` http
+```http
 POST /me/cloudPCs/{cloudPCId}/rename
 POST /users/{userId}/cloudPCs/{cloudPCId}/rename
 ```
 
 To rename the specified [cloudPC](../resources/cloudpc.md) in the organization, using either delegated permission (the signed-in user should be the administrator) or application permission:
 
-``` http
+```http
 POST /deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/rename
 ```
 
@@ -80,7 +80,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/c2bbb5dd-2574-451b-a508-bbaa6ac48ace/rename
 Content-Type: application/json
 
@@ -91,10 +91,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/rename-cloudpc-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -127,7 +123,7 @@ Content-Type: application/json
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -143,16 +139,12 @@ HTTP/1.1 204 No Content
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/me/cloudPCs/36bd4942-0ca8-11ed-861d-0242ac120002/rename
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-rename-cloudpc-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/user-rename-cloudpc-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -185,6 +177,6 @@ POST https://graph.microsoft.com/beta/me/cloudPCs/36bd4942-0ca8-11ed-861d-0242ac
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change which could break your applications. While Intune /beta APIs are supported by Microsoft, you should use these at your own discretion. In general, /beta APIs are not recommended for use in production applications. To determine whether an API is available in v1.0, use the Version selector
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -28,10 +28,10 @@ VPN Traffic Rule definition.
 |localAddressRanges|[iPv4Range](../resources/intune-shared-ipv4range.md) collection|Local address range. This collection can contain a maximum of 500 elements.|
 |remoteAddressRanges|[iPv4Range](../resources/intune-shared-ipv4range.md) collection|Remote address range. This collection can contain a maximum of 500 elements.|
 |appId|String|App identifier, if this traffic rule is triggered by an app.|
-|appType|[vpnTrafficRuleAppType](../resources/intune-deviceconfig-vpntrafficruleapptype.md)|App type, if this traffic rule is triggered by an app. Possible values are: `none`, `desktop`, `universal`.|
-|routingPolicyType|[vpnTrafficRuleRoutingPolicyType](../resources/intune-deviceconfig-vpntrafficruleroutingpolicytype.md)|When app triggered, indicates whether to enable split tunneling along this route. Possible values are: `none`, `splitTunnel`, `forceTunnel`.|
+|appType|[vpnTrafficRuleAppType](../resources/intune-deviceconfig-vpntrafficruleapptype.md)|App type, if this traffic rule is triggered by an app. The possible values are: `none`, `desktop`, `universal`.|
+|routingPolicyType|[vpnTrafficRuleRoutingPolicyType](../resources/intune-deviceconfig-vpntrafficruleroutingpolicytype.md)|When app triggered, indicates whether to enable split tunneling along this route. The possible values are: `none`, `splitTunnel`, `forceTunnel`.|
 |claims|String|Claims associated with this traffic rule.|
-|vpnTrafficDirection|[vpnTrafficDirection](../resources/intune-deviceconfig-vpntrafficdirection.md)|Specify whether the rule applies to inbound traffic or outbound traffic. Possible values are: `outbound`, `inbound`, `unknownFutureValue`.|
+|vpnTrafficDirection|[vpnTrafficDirection](../resources/intune-deviceconfig-vpntrafficdirection.md)|Specify whether the rule applies to inbound traffic or outbound traffic. The possible values are: `outbound`, `inbound`, `unknownFutureValue`.|
 
 ## Relationships
 None

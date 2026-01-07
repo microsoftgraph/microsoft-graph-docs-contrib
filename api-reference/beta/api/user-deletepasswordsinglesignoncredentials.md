@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /users/{usersId}/deletePasswordSingleSignOnCredentials
 ```
 
@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "userthis.deletepasswordsinglesignoncredentials"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/users/{usersId}/deletePasswordSingleSignOnCredentials
 Content-Type: application/json
 
@@ -80,10 +80,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/userthisdeletepasswordsinglesignoncredentials-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/userthisdeletepasswordsinglesignoncredentials-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -120,7 +116,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /networkAccess/reports/usageProfiling(startDateTime={startDateTime},endDateTime={endDateTime},aggregatedBy={aggregatedBy})
 ```
 
@@ -75,16 +75,12 @@ The following example shows a request.
   "name": "reportsthis.usageprofiling"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/networkAccess/reports/usageProfiling(startDateTime=2023-03-01T00:00:00Z,endDateTime=2023-03-31T23:59:59Z,aggregatedBy='transactions',discoveredApplicationSegmentId=null)
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportsthisusageprofiling-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/reportsthisusageprofiling-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -123,7 +119,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.networkaccess.usageProfilingPoint)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

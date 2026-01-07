@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /solutions/backupRestore/protectionPolicies/{protectionPolicyBaseId}/deactivate
 ```
 
@@ -68,16 +68,12 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/ProtectionPolicies/61633878-8321-4950-bfaf-ed285bdd1461/deactivate
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/protectionpolicybase-deactivate-example-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/protectionpolicybase-deactivate-example-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -116,7 +112,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.protectionPolicyBase"
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/protectionPolicies('61633878-8321-4950-bfaf-ed285bdd1461')
 
@@ -127,6 +123,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/prote
    "id":"61633878-8321-4950-bfaf-ed285bdd1461",
    "displayName":"Exchange Protection Policy",
    "status":"updating",
+   "isEnabled": false,
    "createdBy":{
       "application":{
          "id":"1fec8e78-bce4-4aaf-ab1b-5451cc387264",
@@ -178,16 +175,12 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/protectionPolicies/61633878-8321-4950-bfaf-ed285bdd1461/deactivate
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/protectionpolicybase-deactivate-example-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/protectionpolicybase-deactivate-example-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -227,7 +220,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 400 Bad Request
 Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/ProtectionPolicies/61633878-8321-4950-bfaf-ed285bdd1461
 

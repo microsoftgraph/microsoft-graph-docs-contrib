@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change which could break your applications. While Intune /beta APIs are supported by Microsoft, you should use these at your own discretion. In general, /beta APIs are not recommended for use in production applications. To determine whether an API is available in v1.0, use the Version selector
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -27,10 +27,10 @@ An item describing notification setting.
 |enabled|Boolean|Indicates whether notifications are allowed for this app.|
 |showInNotificationCenter|Boolean|Indicates whether notifications can be shown in notification center.|
 |showOnLockScreen|Boolean|Indicates whether notifications can be shown on the lock screen.|
-|alertType|[iosNotificationAlertType](../resources/intune-deviceconfig-iosnotificationalerttype.md)|Indicates the type of alert for notifications for this app. Possible values are: `deviceDefault`, `banner`, `modal`, `none`.|
+|alertType|[iosNotificationAlertType](../resources/intune-deviceconfig-iosnotificationalerttype.md)|Indicates the type of alert for notifications for this app. The possible values are: `deviceDefault`, `banner`, `modal`, `none`.|
 |badgesEnabled|Boolean|Indicates whether badges are allowed for this app.|
 |soundsEnabled|Boolean|Indicates whether sounds are allowed for this app.|
-|previewVisibility|[iosNotificationPreviewVisibility](../resources/intune-deviceconfig-iosnotificationpreviewvisibility.md)|Overrides the notification preview policy set by the user on an iOS device. Possible values are: `notConfigured`, `alwaysShow`, `hideWhenLocked`, `neverShow`.|
+|previewVisibility|[iosNotificationPreviewVisibility](../resources/intune-deviceconfig-iosnotificationpreviewvisibility.md)|Overrides the notification preview policy set by the user on an iOS device. The possible values are: `notConfigured`, `alwaysShow`, `hideWhenLocked`, `neverShow`.|
 
 ## Relationships
 None

@@ -815,6 +815,454 @@
       "CreatedDateTime": "2024-11-11T00:00:00.8805486Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Network access"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "securityRuleStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **securityRuleStatus** enumeration type.",
+          "Target": "securityRuleStatus"
+        },
+        {
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "tlsCertificateStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **tlsCertificateStatus** enumeration type.",
+          "Target": "tlsCertificateStatus"
+        },
+        {
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "tlsInspectionAction",
+          "ChangeType": "Addition",
+          "Description": "Added the **tlsInspectionAction** enumeration type.",
+          "Target": "tlsInspectionAction"
+        },
+        {
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tlsInspectionDestination",
+          "ChangeType": "Addition",
+          "Description": "Added the [tlsInspectionDestination](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-tlsInspectionDestination?view=graph-rest-beta) resource.",
+          "Target": "tlsInspectionDestination"
+        },
+        {
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tlsInspectionFqdnDestination",
+          "ChangeType": "Addition",
+          "Description": "Added the [tlsInspectionFqdnDestination](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-tlsInspectionFqdnDestination?view=graph-rest-beta) resource.",
+          "Target": "tlsInspectionFqdnDestination"
+        },
+        {
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tlsInspectionMatchingConditions",
+          "ChangeType": "Addition",
+          "Description": "Added the [tlsInspectionMatchingConditions](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-tlsInspectionMatchingConditions?view=graph-rest-beta) resource.",
+          "Target": "tlsInspectionMatchingConditions"
+        },
+        {
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tlsInspectionPolicySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [tlsInspectionPolicySettings](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-tlsInspectionPolicySettings?view=graph-rest-beta) resource.",
+          "Target": "tlsInspectionPolicySettings"
+        },
+        {
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tlsInspectionRuleSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [tlsInspectionRuleSettings](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-tlsInspectionRuleSettings?view=graph-rest-beta) resource.",
+          "Target": "tlsInspectionRuleSettings"
+        },
+        {
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tlsInspectionWebCategoryDestination",
+          "ChangeType": "Addition",
+          "Description": "Added the [tlsInspectionWebCategoryDestination](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-tlsInspectionWebCategoryDestination?view=graph-rest-beta) resource.",
+          "Target": "tlsInspectionWebCategoryDestination"
+        },
+        {
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "validityDate",
+          "ChangeType": "Addition",
+          "Description": "Added the [validityDate](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-validityDate?view=graph-rest-beta) resource.",
+          "Target": "validityDate"
+        },
+        {
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalCertificateAuthorityCertificate",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalCertificateAuthorityCertificate](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-externalCertificateAuthorityCertificate?view=graph-rest-beta) resource.",
+          "Target": "externalCertificateAuthorityCertificate"
+        },
+        {
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "tls",
+          "ChangeType": "Addition",
+          "Description": "Added the **tls** relationship to the [networkAccessRoot](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-networkAccessRoot?view=graph-rest-beta) resource.",
+          "Target": "networkAccessRoot"
+        },
+        {
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "tlsInspectionPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **tlsInspectionPolicies** relationship to the [networkAccessRoot](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-networkAccessRoot?view=graph-rest-beta) resource.",
+          "Target": "networkAccessRoot"
+        },
+        {
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tlsInspectionPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [tlsInspectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-tlsInspectionPolicy?view=graph-rest-beta) resource.",
+          "Target": "tlsInspectionPolicy"
+        },
+        {
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tlsInspectionPolicyLink",
+          "ChangeType": "Addition",
+          "Description": "Added the [tlsInspectionPolicyLink](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-tlsInspectionPolicyLink?view=graph-rest-beta) resource.",
+          "Target": "tlsInspectionPolicyLink"
+        },
+        {
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tlsInspectionRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [tlsInspectionRule](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-tlsInspectionRule?view=graph-rest-beta) resource.",
+          "Target": "tlsInspectionRule"
+        },
+        {
+          "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tlsTermination",
+          "ChangeType": "Addition",
+          "Description": "Added the [tlsTermination](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-tlsTermination?view=graph-rest-beta) resource.",
+          "Target": "tlsTermination"
+        }
+      ],
+      "Id": "4721b4db-6721-46bf-8cd0-ca271cb809a5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-07-09T21:06:04.9437879Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Network access"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "0dab07b3-4b00-41a5-88bc-6159b5c5da86",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "securityRuleStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **securityRuleStatus** enumeration type.",
+          "Target": "securityRuleStatus"
+        },
+        {
+          "Id": "0dab07b3-4b00-41a5-88bc-6159b5c5da86",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "threatIntelligenceAction",
+          "ChangeType": "Addition",
+          "Description": "Added the **threatIntelligenceAction** enumeration type.",
+          "Target": "threatIntelligenceAction"
+        },
+        {
+          "Id": "0dab07b3-4b00-41a5-88bc-6159b5c5da86",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "threatIntelligenceSeverity",
+          "ChangeType": "Addition",
+          "Description": "Added the **threatIntelligenceSeverity** enumeration type.",
+          "Target": "threatIntelligenceSeverity"
+        },
+        {
+          "Id": "0dab07b3-4b00-41a5-88bc-6159b5c5da86",
+          "ApiChange": "Resource",
+          "ChangedApiName": "threatIntelligenceDestination",
+          "ChangeType": "Addition",
+          "Description": "Added the [threatIntelligenceDestination](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-threatIntelligenceDestination?view=graph-rest-beta) resource.",
+          "Target": "threatIntelligenceDestination"
+        },
+        {
+          "Id": "0dab07b3-4b00-41a5-88bc-6159b5c5da86",
+          "ApiChange": "Resource",
+          "ChangedApiName": "threatIntelligenceFqdnDestination",
+          "ChangeType": "Addition",
+          "Description": "Added the [threatIntelligenceFqdnDestination](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-threatIntelligenceFqdnDestination?view=graph-rest-beta) resource.",
+          "Target": "threatIntelligenceFqdnDestination"
+        },
+        {
+          "Id": "0dab07b3-4b00-41a5-88bc-6159b5c5da86",
+          "ApiChange": "Resource",
+          "ChangedApiName": "threatIntelligenceMatchingConditions",
+          "ChangeType": "Addition",
+          "Description": "Added the [threatIntelligenceMatchingConditions](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-threatIntelligenceMatchingConditions?view=graph-rest-beta) resource.",
+          "Target": "threatIntelligenceMatchingConditions"
+        },
+        {
+          "Id": "0dab07b3-4b00-41a5-88bc-6159b5c5da86",
+          "ApiChange": "Resource",
+          "ChangedApiName": "threatIntelligencePolicySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [threatIntelligencePolicySettings](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-threatIntelligencePolicySettings?view=graph-rest-beta) resource.",
+          "Target": "threatIntelligencePolicySettings"
+        },
+        {
+          "Id": "0dab07b3-4b00-41a5-88bc-6159b5c5da86",
+          "ApiChange": "Resource",
+          "ChangedApiName": "threatIntelligenceRuleSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [threatIntelligenceRuleSettings](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-threatIntelligenceRuleSettings?view=graph-rest-beta) resource.",
+          "Target": "threatIntelligenceRuleSettings"
+        },
+        {
+          "Id": "0dab07b3-4b00-41a5-88bc-6159b5c5da86",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "threatIntelligencePolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **threatIntelligencePolicies** relationship to the [networkAccessRoot](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-networkAccessRoot?view=graph-rest-beta) resource.",
+          "Target": "networkAccessRoot"
+        },
+        {
+          "Id": "0dab07b3-4b00-41a5-88bc-6159b5c5da86",
+          "ApiChange": "Resource",
+          "ChangedApiName": "threatIntelligencePolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [threatIntelligencePolicy](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-threatIntelligencePolicy?view=graph-rest-beta) resource.",
+          "Target": "threatIntelligencePolicy"
+        },
+        {
+          "Id": "0dab07b3-4b00-41a5-88bc-6159b5c5da86",
+          "ApiChange": "Resource",
+          "ChangedApiName": "threatIntelligencePolicyLink",
+          "ChangeType": "Addition",
+          "Description": "Added the [threatIntelligencePolicyLink](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-threatIntelligencePolicyLink?view=graph-rest-beta) resource.",
+          "Target": "threatIntelligencePolicyLink"
+        },
+        {
+          "Id": "0dab07b3-4b00-41a5-88bc-6159b5c5da86",
+          "ApiChange": "Resource",
+          "ChangedApiName": "threatIntelligenceRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [threatIntelligenceRule](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-threatIntelligenceRule?view=graph-rest-beta) resource.",
+          "Target": "threatIntelligenceRule"
+        }
+      ],
+      "Id": "0dab07b3-4b00-41a5-88bc-6159b5c5da86",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-07-08T08:59:54.4165982Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Network access"
+    }, 
+    {
+      "ChangeList": [
+        {
+          "Id": "cf7de672-7875-42c2-aba3-ee4a49856e36",
+          "ApiChange": "Resource",
+          "ChangedApiName": "enrichedAuditLogsSettings",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **enrichedAuditLogsSettings** resource.",
+          "Target": "enrichedAuditLogsSettings"
+        },
+        {
+          "Id": "cf7de672-7875-42c2-aba3-ee4a49856e36",
+          "ApiChange": "Resource",
+          "ChangedApiName": "enrichedAuditLogs",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **enrichedAuditLogs** resource. Please note that we are modifying the way to consume Enriched Microsoft 365 logs [Learn more](https://learn.microsoft.com/en-us/entra/global-secure-access/how-to-view-enriched-logs)",
+          "Target": "enrichedAuditLogs"
+        },
+        {
+          "Id": "cf7de672-7875-42c2-aba3-ee4a49856e36",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "enrichedAuditLogs",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **enrichedAuditLogs** relationship from the [settings](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-settings?view=graph-rest-beta) resource.",
+          "Target": "settings"
+        }
+      ],
+      "Id": "cf7de672-7875-42c2-aba3-ee4a49856e36",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-07-02T09:17:30.3342398Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Network access"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "9c79593d-37e0-481b-917a-7b25327607a0",
+          "ApiChange": "Method",
+          "ChangedApiName": "getWebCategoryByUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the [getWebCategoryByUrl](https://learn.microsoft.com/en-us/graph/api/networkaccess-connectivity-getWebCategoryByUrl?view=graph-rest-beta) method to the [connectivity](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-connectivity?view=graph-rest-beta) resource.",
+          "Target": "connectivity"
+        },
+        {
+          "Id": "9c79593d-37e0-481b-917a-7b25327607a0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webCategories",
+          "ChangeType": "Addition",
+          "Description": "Added the **webCategories** property to the [connectivity](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-conenctivity?view=graph-rest-beta) resource type.",
+          "Target": "connectivity"
+        }
+      ],
+      "Id": "9c79593d-37e0-481b-917a-7b25327607a0",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-08-26T07:42:57.8177927Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Network access"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "283089d1-5042-441b-bbf6-3c09e8a8322c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "blockPageConfigurationBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [blockPageConfigurationBase](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-blockPageConfigurationBase?view=graph-rest-beta) resource.",
+          "Target": "blockPageConfigurationBase"
+        },
+        {
+          "Id": "283089d1-5042-441b-bbf6-3c09e8a8322c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "markdownBlockMessageConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [markdownBlockMessageConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-markdownBlockMessageConfiguration?view=graph-rest-beta) resource.",
+          "Target": "markdownBlockMessageConfiguration"
+        },
+        {
+          "Id": "283089d1-5042-441b-bbf6-3c09e8a8322c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customBlockPage",
+          "ChangeType": "Addition",
+          "Description": "Added the [customBlockPage](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-customBlockPage?view=graph-rest-beta) resource.",
+          "Target": "customBlockPage"
+        },
+        {
+          "Id": "283089d1-5042-441b-bbf6-3c09e8a8322c",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "customBlockPage",
+          "ChangeType": "Addition",
+          "Description": "Added the **customBlockPage** relationship to the [settings](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-settings?view=graph-rest-beta) resource.",
+          "Target": "settings"
+        }
+      ],
+      "Id": "283089d1-5042-441b-bbf6-3c09e8a8322c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-12-22T08:52:45.5098998Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Network access"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ae2295eb-2e29-43b6-8de7-4219db8e9e4c",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "deploymentStage",
+          "ChangeType": "Addition",
+          "Description": "Added the **deploymentStage** enumeration type.",
+          "Target": "deploymentStage"
+        },
+        {
+          "Id": "ae2295eb-2e29-43b6-8de7-4219db8e9e4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deploymentConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [deploymentConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-deploymentConfiguration?view=graph-rest-beta) resource.",
+          "Target": "deploymentConfiguration"
+        },
+        {
+          "Id": "ae2295eb-2e29-43b6-8de7-4219db8e9e4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deploymentStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [deploymentStatus](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-deploymentStatus?view=graph-rest-beta) resource.",
+          "Target": "deploymentStatus"
+        },
+        {
+          "Id": "ae2295eb-2e29-43b6-8de7-4219db8e9e4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deployment",
+          "ChangeType": "Addition",
+          "Description": "Added the [deployment](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-deployment?view=graph-rest-beta) resource.",
+          "Target": "deployment"
+        },
+        {
+          "Id": "ae2295eb-2e29-43b6-8de7-4219db8e9e4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "baseEntity",
+          "ChangeType": "Addition",
+          "Description": "Added the [baseEntity](https://learn.microsoft.com/en-us/graph/api/resources/baseentity?view=graph-rest-beta) resource.",
+          "Target": "baseEntity"
+        }
+      ],
+      "Id": "ae2295eb-2e29-43b6-8de7-4219db8e9e4c",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2025-09-16T18:57:36.187954Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Network access"
+    },
+    {  
+      "ChangeList": [
+        {
+        "Id": "6e4d580d-8ec9-4c61-aca3-9ba57418e6df",
+        "ApiChange": "Member",
+        "ChangedApiName": "enabled",
+        "ChangeType": "Addition",
+        "Description": "Added the `enabled` member to the **tlsCertificateStatus** enumeration.",
+        "Target": "tlsCertificateStatus"
+      },
+      {
+        "Id": "6e4d580d-8ec9-4c61-aca3-9ba57418e6df",
+        "ApiChange": "Member",
+        "ChangedApiName": "disabled",
+        "ChangeType": "Addition",
+        "Description": "Added the `disabled` member to the **tlsCertificateStatus** enumeration.",
+        "Target": "tlsCertificateStatus"
+      }
+    ],
+    "Id": "6e4d580d-8ec9-4c61-aca3-9ba57418e6df",
+    "Cloud": "Prod",
+    "Version": "beta",
+    "CreatedDateTime": "2025-10-14T18:12:45.537745Z",
+    "WorkloadArea": "Identity and access",
+    "SubArea": "Network access"
+  },
+  {
+    "ChangeList": [
+        {
+          "Id": "8f995a7e-d92f-42ad-a744-5de10b241fe3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "urlDestinationFilteringRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [urlDestinationFilteringRule](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-urlDestinationFilteringRule?view=graph-rest-beta) resource.",
+          "Target": "urlDestinationFilteringRule"
+        }
+      ],
+      "Id": "8f995a7e-d92f-42ad-a744-5de10b241fe3",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-03T15:22:46.6349195Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Network access"
     }
   ]
 }

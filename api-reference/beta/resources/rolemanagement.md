@@ -20,6 +20,7 @@ Represents a Microsoft 365 RBAC role management entity that provides access to r
 The unified role management API currently supports the following RBAC providers in Microsoft 365:
 - Cloud PC 
 - device management (Intune)
+- Defender (Microsoft Defender XDR)
 - directory (Microsoft Entra directory roles)
 - entitlement management (Microsoft Entra entitlement management)
 - Exchange Online
@@ -45,6 +46,7 @@ None.
 |:-------------|:------------|:------------|
 |cloudPC|[rbacApplicationMultiple](rbacapplicationmultiple.md)|Provides access to role definitions and role assignments of a Cloud PC RBAC provider. Read-only. Nullable.|
 |deviceManagement|[rbacApplicationMultiple](rbacapplicationmultiple.md)| Provides access to role definitions and role assignments of an Intune RBAC provider. Read-only. Nullable.|
+|defender|[unifiedRbacApplicationMultiple](unifiedrbacapplicationmultiple.md)|Provides access to role definitions and role assignments of the Microsoft Defender Unified RBAC provider. Read-only. Nullable. |
 |directory|[rbacApplication](rbacapplication.md)|Provides access to role definitions and role assignments of a Microsoft Entra RBAC provider. Read-only. Nullable.|
 |entitlementManagement|[rbacApplication](rbacapplication.md)| Provides access to role definitions and role assignments of Microsoft Entra entitlement management. Read-only. Nullable.|
 |exchange|[unifiedRbacApplication](unifiedrbacapplication.md)| Provides access to role definitions and role assignments of Exchange providers. Read-only. Nullable.|

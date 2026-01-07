@@ -5,6 +5,7 @@ author: "TarkanSevilmis"
 ms.localizationpriority: high
 ms.subservice: "planner"
 ms.date: 11/07/2024
+ms.topic: concept-article
 ---
 
 # Planner tasks and plans API overview

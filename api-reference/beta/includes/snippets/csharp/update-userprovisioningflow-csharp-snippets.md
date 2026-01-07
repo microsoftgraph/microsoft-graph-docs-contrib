@@ -21,7 +21,7 @@ var requestBody = new UserProvisioningFlow
 		},
 		AdditionalOptions = new AdditionalUserOptions
 		{
-			MarkAllStudentsAsMinors = true,
+			StudentAgeGroup = StudentAgeGroup.Minor,
 			AllowStudentContactAssociation = true,
 		},
 	},

@@ -1,19 +1,19 @@
 ---
 author: spgraph-docs-team
-description: "Retrieve the contents of a specific version of a driveItem. "
+description: "Retrieve the contents of a specific version of a driveItem."
 ms.date: 09/10/2017
 title: Download a previous version
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
 ---
-# Download contents of a DriveItemVersion resource (preview)
+# Download contents of a driveItemVersion resource
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the contents of a specific version of a [driveItem](../resources/driveitem.md).
+Retrieve the contents of a specific [version](../resources/driveitemversion.md) of a [driveItem](../resources/driveitem.md).
 
 >**Note:** Getting the content of the current version is not supported. Instead, use the [driveItem content endpoint](driveitem-get-content.md).
 
@@ -26,6 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "driveitemversion_get_contents" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitemversion-get-contents-permissions.md)]
 
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
 
 ## HTTP request
 
@@ -64,10 +65,6 @@ GET /me/drive/items/{item-id}/versions/{version-id}/content
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-version-contents-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-version-contents-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

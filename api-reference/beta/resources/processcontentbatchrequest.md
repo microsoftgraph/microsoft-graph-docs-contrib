@@ -1,5 +1,5 @@
 ---
-title: "processContentBatchRequest resource type (preview)"
+title: "processContentBatchRequest resource type"
 description: "Represents a single entry within a request submitted to the processContentAsync action."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a single entry within a request submitted to the processContentAsync action.
+Represents a single entry within a request submitted to the [processContentAsync](../api/tenantdatasecurityandgovernance-processcontentasync.md) action.
 
 ## Properties
 

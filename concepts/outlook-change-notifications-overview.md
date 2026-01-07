@@ -6,6 +6,7 @@ ms.localizationpriority: high
 ms.subservice: "outlook"
 ms.custom: scenarios:getting-started
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Change notifications for Outlook resources in Microsoft Graph
@@ -81,7 +82,7 @@ If you lose the permission granted earlier for a subscription and the subscripti
 
 ## Receive notification payloads
 
-Depending on your subscription, notifications may include resource data. Subscriptions with resource data allow you to get the
+Depending on your subscription, notifications include resource data. Subscriptions with resource data allow you to get the
 resource payload along with the notification, avoiding the overhead for a separate API call to get the changed resource data.
 
 ### Receive notifications with resource data

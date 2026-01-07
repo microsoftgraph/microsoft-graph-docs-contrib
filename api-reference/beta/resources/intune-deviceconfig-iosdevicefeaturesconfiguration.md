@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change which could break your applications. While Intune /beta APIs are supported by Microsoft, you should use these at your own discretion. In general, /beta APIs are not recommended for use in production applications. To determine whether an API is available in v1.0, use the Version selector
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -54,7 +54,7 @@ Inherits from [appleDeviceFeaturesConfigurationBase](../resources/intune-devicec
 |homeScreenGridHeight|Int32|Gets or sets the number of rows to render when configuring iOS home screen layout settings. If this value is configured, homeScreenGridWidth must be configured as well.|
 |notificationSettings|[iosNotificationSettings](../resources/intune-deviceconfig-iosnotificationsettings.md) collection|Notification settings for each bundle id. Applicable to devices in supervised mode only (iOS 9.3 and later). This collection can contain a maximum of 500 elements.|
 |singleSignOnSettings|[iosSingleSignOnSettings](../resources/intune-deviceconfig-iossinglesignonsettings.md)|The Kerberos login settings that enable apps on receiving devices to authenticate smoothly.|
-|wallpaperDisplayLocation|[iosWallpaperDisplayLocation](../resources/intune-deviceconfig-ioswallpaperdisplaylocation.md)|A wallpaper display location specifier. Possible values are: `notConfigured`, `lockScreen`, `homeScreen`, `lockAndHomeScreens`.|
+|wallpaperDisplayLocation|[iosWallpaperDisplayLocation](../resources/intune-deviceconfig-ioswallpaperdisplaylocation.md)|A wallpaper display location specifier. The possible values are: `notConfigured`, `lockScreen`, `homeScreen`, `lockAndHomeScreens`.|
 |wallpaperImage|[mimeContent](../resources/intune-shared-mimecontent.md)|A wallpaper image must be in either PNG or JPEG format. It requires a supervised device with iOS 8 or later version.|
 |singleSignOnExtension|[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)|Gets or sets a single sign-on extension profile. Deprecated: use IOSSingleSignOnExtension instead.|
 |iosSingleSignOnExtension|[iosSingleSignOnExtension](../resources/intune-deviceconfig-iossinglesignonextension.md)|Gets or sets a single sign-on extension profile.|
@@ -232,68 +232,32 @@ Here is a JSON representation of the resource.
     "value": "binary"
   },
   "singleSignOnExtension": {
-    "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
-    "realm": "String",
-    "domains": [
-      "String"
+    "@odata.type": "microsoft.graph.iosRedirectSingleSignOnExtension",
+    "extensionIdentifier": "String",
+    "teamIdentifier": "String",
+    "configurations": [
+      {
+        "@odata.type": "microsoft.graph.keyTypedValuePair",
+        "key": "String"
+      }
     ],
-    "blockAutomaticLogin": true,
-    "cacheName": "String",
-    "credentialBundleIdAccessControlList": [
+    "urlPrefixes": [
       "String"
-    ],
-    "domainRealms": [
-      "String"
-    ],
-    "isDefaultRealm": true,
-    "passwordBlockModification": true,
-    "passwordExpirationDays": 1024,
-    "passwordExpirationNotificationDays": 1024,
-    "userPrincipalName": "String",
-    "passwordRequireActiveDirectoryComplexity": true,
-    "passwordPreviousPasswordBlockCount": 1024,
-    "passwordMinimumLength": 1024,
-    "passwordMinimumAgeDays": 1024,
-    "passwordRequirementsDescription": "String",
-    "requireUserPresence": true,
-    "activeDirectorySiteCode": "String",
-    "passwordEnableLocalSync": true,
-    "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "String",
-    "signInHelpText": "String",
-    "managedAppsInBundleIdACLIncluded": true
+    ]
   },
   "iosSingleSignOnExtension": {
-    "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
-    "realm": "String",
-    "domains": [
-      "String"
+    "@odata.type": "microsoft.graph.iosRedirectSingleSignOnExtension",
+    "extensionIdentifier": "String",
+    "teamIdentifier": "String",
+    "configurations": [
+      {
+        "@odata.type": "microsoft.graph.keyTypedValuePair",
+        "key": "String"
+      }
     ],
-    "blockAutomaticLogin": true,
-    "cacheName": "String",
-    "credentialBundleIdAccessControlList": [
+    "urlPrefixes": [
       "String"
-    ],
-    "domainRealms": [
-      "String"
-    ],
-    "isDefaultRealm": true,
-    "passwordBlockModification": true,
-    "passwordExpirationDays": 1024,
-    "passwordExpirationNotificationDays": 1024,
-    "userPrincipalName": "String",
-    "passwordRequireActiveDirectoryComplexity": true,
-    "passwordPreviousPasswordBlockCount": 1024,
-    "passwordMinimumLength": 1024,
-    "passwordMinimumAgeDays": 1024,
-    "passwordRequirementsDescription": "String",
-    "requireUserPresence": true,
-    "activeDirectorySiteCode": "String",
-    "passwordEnableLocalSync": true,
-    "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "String",
-    "signInHelpText": "String",
-    "managedAppsInBundleIdACLIncluded": true
+    ]
   }
 }
 ```

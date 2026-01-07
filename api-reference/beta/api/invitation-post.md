@@ -95,10 +95,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-invitation-post-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-invitation-post-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-invitation-post-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -162,7 +158,8 @@ Content-type: application/json
         ]
     },
     "invitedUser": {
-        "id": "cbb896f9-8306-49d0-b56b-b8e39cd28825"
+        "id": "cbb896f9-8306-49d0-b56b-b8e39cd28825",
+        "userPrincipalName": "admin_fabrikam.com#EXT#@doc.onmicrosoft.com"
     }
 }
 ```
@@ -194,10 +191,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-invitation-resetredemption-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-invitation-resetredemption-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -262,7 +255,8 @@ Content-type: application/json
         ]
     },
     "invitedUser": {
-        "id": "264e6d50-eaec-461e-b187-873b1bcf855f"
+        "id": "264e6d50-eaec-461e-b187-873b1bcf855f",
+        "userPrincipalName": "AdeleV_fabrikam.com#EXT#@doc.onmicrosoft.com"
     }
 }
 ```

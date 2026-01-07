@@ -21,29 +21,35 @@ Reset a user's PIN and generate a new temporary PIN that's represented by a [qrP
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### Permissions acting on self
-
-<!-- { "blockType": "ignored"  } -->
+<!-- { 
+  "blockType": "permissions", 
+  "name": "qrpin_update", 
+  "requestUrls": ["PATCH /users/{id}/authentication/qrCodePinMethod/pin"]
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/qrpin-update-permissions.md)]
-
-### Permissions acting on other users
-
-<!-- { "blockType": "ignored"  } -->
-[!INCLUDE [permissions-table](../includes/permissions/qrpin-update-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
 ## HTTP request
 
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
+Reset your PIN and generate a new temporary PIN.
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+<!-- { "blockType": "ignored" } -->
+```http
 PATCH /me/authentication/qrCodePinMethod/pin
+```
+
+Reset another user's PIN and generate a new temporary PIN.
+
+[!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
+
+<!-- { "blockType": "ignored" } -->
+```http
 PATCH /users/{id}/authentication/qrCodePinMethod/pin
 ```
-[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 ## Request headers
 
 |Name|Description|
@@ -77,7 +83,7 @@ The following example shows a request.
   "name": "create_qrpin_from_"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/users/7c4999f7-9c25-4f8e-8b84-766eb28a1b49/authentication/qrCodePinMethod/pin
 Content-Type: application/json
 
@@ -89,10 +95,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-qrpin-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-qrpin-from--cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -131,7 +133,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.qrPin"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

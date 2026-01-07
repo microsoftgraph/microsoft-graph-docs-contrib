@@ -11,7 +11,6 @@ const options = {
 const client = Client.init(options);
 
 let customAuthenticationExtensions = await client.api('/identity/customAuthenticationExtensions')
-	.filter('isOf(\'microsoft.graph.onTokenIssuanceStartCustomExtension\')')
 	.get();
 
 ```

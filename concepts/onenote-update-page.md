@@ -5,6 +5,7 @@ author: "jewan-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "onenote"
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Update OneNote page content
@@ -459,7 +460,7 @@ The OneNote service root URL uses the following format for all calls to the OneN
 
 `https://graph.microsoft.com/{version}/me/onenote/`
 
-The `version` segment in the URL represents the version of Microsoft Graph that you want to use. `v1.0` is for stable production code. `beta` is to try out a feature that's in development. Features and functionality in beta may change, so you shouldn't use it in your production code.
+The `version` segment in the URL represents the version of Microsoft Graph that you want to use. `v1.0` is for stable production code. `beta` is to try out a feature that's in development. Features and functionality in beta might change, so you shouldn't use it in your production code.
 
 `me` is for OneNote content that the current user can access (owned and shared). `users/{id}` is for OneNote content that the specified user (in the URL) has shared with the current user. Use the [users](/graph/api/resources/user) API.
 

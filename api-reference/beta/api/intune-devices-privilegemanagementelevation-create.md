@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change which could break your applications. While Intune /beta APIs are supported by Microsoft, you should use these at your own discretion. In general, /beta APIs are not recommended for use in production applications. To determine whether an API is available in v1.0, use the Version selector.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceManagement/privilegeManagementElevations
 ```
 
@@ -55,10 +55,10 @@ The following table shows the properties that are required when you create the p
 |deviceId|String|The Intune deviceId. Unique identifier for the managed device. Example: `92ce5047-9553-4731-817f-9b401a999a1b`|
 |deviceName|String|The name associated with the device in the intune database. Example: `JOHNDOE-LAPTOP`.|
 |eventDateTime|DateTimeOffset|The date and time when the application was elevated. Example:`2014-01-01T00:00:00Z`|
-|elevationType|[privilegeManagementElevationType](../resources/intune-devices-privilegemanagementelevationtype.md)|Indicates the type of elevation on the application. Possible values are `undetermined`, `unmanagedElevation`, `zeroTouchElevation`, `userConfirmedElevation`, and `supportApprovedElevation`. Defaults to `undetermined`. Possible values are: `undetermined`, `unmanagedElevation`, `zeroTouchElevation`, `userConfirmedElevation`, `supportApprovedElevation`, `unknownFutureValue`.|
+|elevationType|[privilegeManagementElevationType](../resources/intune-devices-privilegemanagementelevationtype.md)|Indicates the type of elevation on the application. Possible values are `undetermined`, `unmanagedElevation`, `zeroTouchElevation`, `userConfirmedElevation`, and `supportApprovedElevation`. Defaults to `undetermined`. The possible values are: `undetermined`, `unmanagedElevation`, `zeroTouchElevation`, `userConfirmedElevation`, `supportApprovedElevation`, `unknownFutureValue`.|
 |filePath|String|The full file path of the application including the filename and file extension. Example: `C:\Program Files\vscode.exe`|
 |upn|String|The User Principal Name of the user who performed the elevation. Example: `john@domain.com`|
-|userType|[privilegeManagementEndUserType](../resources/intune-devices-privilegemanagementendusertype.md)|The type of account performed the elevation on Windows. Possible values are: `undetermined`, `azureAd`, `hybrid`, and `local`. Defaults to `undetermined`. Possible values are: `undetermined`, `azureAd`, `hybrid`, `local`, `unknownFutureValue`.|
+|userType|[privilegeManagementEndUserType](../resources/intune-devices-privilegemanagementendusertype.md)|The type of account performed the elevation on Windows. The possible values are: `undetermined`, `azureAd`, `hybrid`, and `local`. Defaults to `undetermined`. The possible values are: `undetermined`, `azureAd`, `hybrid`, `local`, `unknownFutureValue`.|
 |productName|String|The product name of the application. This value is set by the creator of the application. Example: `Visual Studio`|
 |companyName|String|The company name of the application. This value is set by the creator of the application. Example: `Microsoft Corporation`|
 |fileVersion|String|The version of the application. This value is set by the creator of the application. Example: `6.2211.1035.1000`|
@@ -68,7 +68,7 @@ The following table shows the properties that are required when you create the p
 |fileDescription|String|The file description of the application. This value is set by the creator of the application. Example: `Editor of multiple coding languages.`|
 |certificatePayload|String|The certificate payload of the application. This is computed by hashing the certificate information on the client. Example: `32c220482c68413fbf8290e3b1e49b0a85901cfcd62ab0738760568a2a6e8a50`|
 |result|Int32|The result of the elevation action with 0 being success, and everything else being exit code if the elevation was unsuccessful. The value will always be 0 on all unmanaged elevation. Example: `0`. Valid values 0 to 2147483647|
-|processType|[privilegeManagementProcessType](../resources/intune-devices-privilegemanagementprocesstype.md)|Indicates the type of process that is elevated. Possible values are `undefined`, `parent` and `child`. Possible values are: `undefined`, `parent`, `child`, `unknownFutureValue`.|
+|processType|[privilegeManagementProcessType](../resources/intune-devices-privilegemanagementprocesstype.md)|Indicates the type of process that is elevated. Possible values are `undefined`, `parent` and `child`. The possible values are: `undefined`, `parent`, `child`, `unknownFutureValue`.|
 |ruleId|String|Unique identifier of the rule configured to run the application with elevated access|
 |parentProcessName|String|The name of parent process associated with the elevated process. This is always populated for both parent and child process types|
 |policyId|String|Unique Identifier of the policy configured to run the application with elevated access|
@@ -84,7 +84,7 @@ If successful, this method returns a `201 Created` response code and a [privileg
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/privilegeManagementElevations
 Content-type: application/json
 Content-length: 892
@@ -118,7 +118,7 @@ Content-length: 892
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 941

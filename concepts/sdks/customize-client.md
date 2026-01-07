@@ -4,6 +4,7 @@ description: "Provides instructions on how to change the default behavior of the
 ms.localizationpriority: medium
 author: DarrelMiller
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Customize the Microsoft Graph SDK service client

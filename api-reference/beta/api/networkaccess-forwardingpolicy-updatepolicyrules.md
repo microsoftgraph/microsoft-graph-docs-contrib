@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /networkAccess/forwardingPolicies/{id}/updatePolicyRules
 ```
 
@@ -66,7 +66,7 @@ The following example shows a request.
   "name": "forwardingpolicythis.updatepolicyrules"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/networkAccess/forwardingPolicies/{id}/updatePolicyRules
 Content-Type: application/json
 
@@ -79,10 +79,6 @@ Content-Type: application/json
   ]
 }
 ```
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/forwardingpolicythisupdatepolicyrules-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/forwardingpolicythisupdatepolicyrules-javascript-snippets.md)]
@@ -97,7 +93,7 @@ The following example shows a response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

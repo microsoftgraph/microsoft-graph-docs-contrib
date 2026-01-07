@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /admin//windows/updates/deploymentAudiences/{deploymentAudienceId}/exclusions
 ```
 **Note:** Only `$skipToken` is supported for paging. Client-driven paging isn't implemented.
@@ -62,16 +62,12 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_updatableasset_audience_exclusions"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/be0538f6-91d8-4b4a-8dbc-d6f9b70da20b/exclusions
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-updatableasset-audience-exclusions-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-updatableasset-audience-exclusions-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -104,7 +100,7 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/b
   "@odata.type": "Collection(microsoft.graph.windowsUpdates.updatableAsset)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

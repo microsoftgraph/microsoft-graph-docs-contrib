@@ -98,14 +98,16 @@ items:
     href: ../../api/educationassignment-delete-rubric.md
   - name: Get delta
     href: ../../api/educationassignment-delta.md
-  - name: Add educationGradingCategory
+  - name: Add grading category
     href: ../../api/educationassignment-post-gradingcategory.md
-  - name: Remove educationGradingCategory
+  - name: Remove grading category
     href: ../../api/educationassignment-delete-gradingcategory.md
   - name: Activate assignment
     href: ../../api/educationassignment-activate.md
   - name: Deactivate assignment
     href: ../../api/educationassignment-deactivate.md
+  - name: Add grading scheme
+    href: ../../api/educationassignment-put-gradingscheme.md
 - name: Assignment defaults
   items:
   - name: Assignment defaults
@@ -124,14 +126,18 @@ items:
     href: ../../api/educationassignmentresource-get.md
   - name: Delete
     href: ../../api/educationassignmentresource-delete.md
+  - name: List dependent resources
+    href: ../../api/educationassignmentresource-list-dependentresources.md
 - name: Assignment settings
   items:
   - name: Assignment settings
     href: ../../resources/educationassignmentsettings.md
-  - name: Get educationAssignmentSettings
+  - name: Get
     href: ../../api/educationassignmentsettings-get.md
-  - name: Update educationAssignmentSettings
+  - name: Update
     href: ../../api/educationassignmentsettings-update.md
+  - name: Add default grading scheme
+    href: ../../api/educationassignmentsettings-put-defaultgradingscheme.md
   - name: Update educationGradingCategory
     href: ../../api/educationgradingcategory-update.md
 - name: Category
@@ -170,6 +176,18 @@ items:
     href: ../../api/educationassignment-delete-gradingcategory.md
   - name: Update
     href: ../../api/educationgradingcategory-update.md
+- name: Grading scheme
+  items:
+  - name: Grading scheme
+    href: ../../resources/educationgradingscheme.md
+  - name: Create
+    href: ../../api/educationassignmentsettings-post-gradingschemes.md
+  - name: Get
+    href: ../../api/educationgradingscheme-get.md
+  - name: Update
+    href: ../../api/educationgradingscheme-update.md
+  - name: Delete
+    href: ../../api/educationgradingscheme-delete.md
 - name: Module
   items:
   - name: Module
@@ -266,14 +284,52 @@ items:
   items:
   - name: Submission resource
     href: ../../resources/educationsubmissionresource.md
-  - name: List submission resources
+  - name: List
     href: ../../api/educationsubmission-list-resources.md
-  - name: Get submission resource
+  - name: Get
     href: ../../api/educationsubmissionresource-get.md
-  - name: Delete submission resource
+  - name: Delete
     href: ../../api/educationsubmissionresource-delete.md
+  - name: List dependent resources
+    href: ../../api/educationsubmissionresource-list-dependentresources.md
+- name: Reading assignment submission
+  items:
+  - name: Reading assignment submission
+    href: ../../resources/readingassignmentsubmission.md
+  - name: List
+    href: ../../api/reportsroot-list-readingassignmentsubmissions.md
+- name: Reading coach passage
+  items:
+  - name: Reading coach passage
+    href: ../../resources/readingcoachpassage.md
+  - name: List
+    href: ../../api/reportsroot-list-readingcoachpassages.md
+- name: Reflect check-in response
+  items:
+  - name: Reflect check-in response
+    href: ../../resources/reflectcheckinresponse.md
+  - name: List
+    href: ../../api/reportsroot-list-reflectcheckinresponses.md
+- name: Speaker assignment submission
+  items:
+  - name: Speaker assignment submission
+    href: ../../resources/speakerassignmentsubmission.md
+  - name: List
+    href: ../../api/reportsroot-list-speakerassignmentsubmissions.md
 - name: Complex types
   items:
+  - name: Challenging word
+    href: ../../resources/challengingword.md
+  - name: Education AI feedback audience engagement settings
+    href: ../../resources/educationaifeedbackaudienceengagementsettings.md
+  - name: Education AI feedback content settings
+    href: ../../resources/educationaifeedbackcontentsettings.md
+  - name: Education AI feedback criteria
+    href: ../../resources/educationaifeedbackcriteria.md
+  - name: Education AI feedback delivery settings
+    href: ../../resources/educationaifeedbackdeliverysettings.md
+  - name: Education AI feedback settings
+    href: ../../resources/educationaifeedbacksettings.md
   - name: Education assignment class recipient
     href: ../../resources/educationassignmentclassrecipient.md
   - name: Education assignment grade
@@ -298,6 +354,8 @@ items:
     href: ../../resources/educationfeedback.md
   - name: Education file resource
     href: ../../resources/educationfileresource.md
+  - name: Education grading scheme grade
+    href: ../../resources/educationgradingschemegrade.md
   - name: Education link resource
     href: ../../resources/educationlinkresource.md
   - name: Education linked assignment resource
@@ -308,6 +366,16 @@ items:
     href: ../../resources/educationpowerpointresource.md
   - name: Education resource
     href: ../../resources/educationresource.md
+  - name: Education speaker coach audience engagement settings
+    href: ../../resources/educationspeakercoachaudienceengagementsettings.md
+  - name: Education speaker coach content settings
+    href: ../../resources/educationspeakercoachcontentsettings.md
+  - name: Education speaker coach delivery settings
+    href: ../../resources/educationspeakercoachdeliverysettings.md
+  - name: Education speaker coach settings
+    href: ../../resources/educationspeakercoachsettings.md
+  - name: Education speaker progress resource
+    href: ../../resources/educationspeakerprogressresource.md
   - name: Education submission individual recipient
     href: ../../resources/educationsubmissionindividualrecipient.md
   - name: Education submission recipient

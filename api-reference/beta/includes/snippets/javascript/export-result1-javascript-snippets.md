@@ -13,7 +13,7 @@ const client = Client.init(options);
 const exportResult = {
   displayName: 'Export 1 - simple PST',
   exportCriteria: 'searchHits',
-  additionalOptions: 'none',
+  additionalOptions: 'htmlTranscripts, splitSource, includeFolderAndPath, condensePaths, friendlyName',
   exportFormat: 'pst'
 };
 

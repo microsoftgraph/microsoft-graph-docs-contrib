@@ -1,5 +1,5 @@
 ---
-title: "message: markAsNotJunk"
+title: "message: markAsNotJunk (deprecated)"
 description: "Mark a message as not junk."
 author: "kagunase"
 ms.localizationpriority: medium
@@ -8,11 +8,14 @@ doc_type: apiPageType
 ms.date: 04/04/2024
 ---
 
-# message: markAsNotJunk
+# message: markAsNotJunk (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> The **markAsNotJunk** API is deprecated and will stop returning data on December 30, 2025. Going forward use the [reportMessage](../api/message-reportmessage.md) API.
 
 Mark a [message](../resources/message.md) as not junk. This API removes the sender from the list of blocked senders and moves the message to the **Inbox** folder, when **moveToInbox** is `true`.
 
@@ -79,10 +82,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-markasnotjunk-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/message-markasnotjunk-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -65,15 +65,11 @@ The following example shows a request.
 }-->
 
 ```
-GET https://graph.microsoft.com/v1.0/policies/activityBasedTimeoutPolicies/{id}
+GET https://graph.microsoft.com/v1.0/policies/activityBasedTimeoutPolicies/cf70ac6c-8a1a-40cd-a523-a2b4a56de0df
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-activitybasedtimeoutpolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-activitybasedtimeoutpolicy-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -119,12 +115,19 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "definition": [
-    "definition-value"
-  ],
-  "displayName": "displayName-value",
-  "isOrganizationDefault": true,
-  "id": "id-value"
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/activityBasedTimeoutPolicies",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET policies/activityBasedTimeoutPolicies?$select=definition,isOrganizationDefault",
+    "value": [
+        {
+            "id": "cf70ac6c-8a1a-40cd-a523-a2b4a56de0df",
+            "deletedDateTime": null,
+            "definition": [
+                "{\"ActivityBasedTimeoutPolicy\":{\"Version\":1,\"ApplicationPolicies\":[{\"ApplicationId\":\"default\",\"WebSessionIdleTimeout\":\"00:05:00\"}]}}"
+            ],
+            "displayName": "activityBasedTimeoutPolicies test",
+            "isOrganizationDefault": true
+        }
+    ]
 }
 ```
 

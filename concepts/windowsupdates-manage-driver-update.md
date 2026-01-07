@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: conceptualPageType
 ms.date: 11/07/2024
+ms.topic: install-set-up-deploy
 ---
 
 # Deploy a driver update using Windows Autopatch
@@ -23,7 +24,7 @@ Devices must meet the [prerequisites for Windows Autopatch](windowsupdates-conce
 When you enroll a device in driver management, Windows Autopatch becomes the authority for driver updates coming from Windows Update. As a result, devices do not receive drivers from Windows Update until a deployment is created or they are added to a driver update policy with approvals. To enroll a device, you must provide an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) ID.
 
 ### Request
-``` http
+```http
 POST https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/enrollAssets
 Content-Type: application/json
 {
@@ -47,7 +48,7 @@ Content-Type: application/json
 
 ### Response
 
-``` http
+```http
 HTTP/1.1 202 Accepted
 ```
 
@@ -326,12 +327,12 @@ HTTP/1.1 204 No Content
 
 ## Unenroll from driver management
 
-When you [unenroll](/graph/api/windowsupdates-updatableasset-unenrollassets) a device from management for a given update category, the device is no longer managed by Windows Autopatch and may start receiving other updates from Windows Update based on its policy configuration. The unenrolled device is removed from all audiences and deployments that contain content for the given update category. The device remains registered with Windows Autopatch and is still enrolled and receiving content for other update categories, if applicable.
+When you [unenroll](/graph/api/windowsupdates-updatableasset-unenrollassets) a device from management for a given update category, the device is no longer managed by Windows Autopatch and might start receiving other updates from Windows Update based on its policy configuration. The unenrolled device is removed from all audiences and deployments that contain content for the given update category. The device remains registered with Windows Autopatch and is still enrolled and receiving content for other update categories, if applicable.
 
 
 ### Request
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/unenrollAssets
 Content-Type: application/json
 {
@@ -347,6 +348,6 @@ Content-Type: application/json
 
 ### Response
 
-``` http
+```http
 HTTP/1.1 202 Accepted
 ```

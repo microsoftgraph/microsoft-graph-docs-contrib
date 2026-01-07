@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PUT /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}
 ```
 
@@ -93,7 +93,7 @@ Content-Type: application/json
         "resourceScopes": [
             {
                 "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-                "query": "/beta/roleManagement/directory/roleDefinitions/9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+                "query": "/v1.0/roleManagement/directory/roleDefinitions/9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
                 "queryType": "MicrosoftGraph"
             }
         ]
@@ -131,7 +131,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.accessReviewInstance"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -160,7 +160,7 @@ Content-Type: application/json
         "resourceScopes": [
             {
                 "@odata.type": "#microsoft.graph.accessReviewQueryScope",
-                "query": "/beta/roleManagement/directory/roleDefinitions/9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
+                "query": "/v1.0/roleManagement/directory/roleDefinitions/9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3",
                 "queryType": "MicrosoftGraph",
                 "queryRoot": null
             }

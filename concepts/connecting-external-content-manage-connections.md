@@ -5,24 +5,19 @@ ms.localizationpriority: high
 author: mecampos
 doc_type: conceptualPageType
 ms.subservice: search
-ms.date: 11/07/2024
+ms.date: 07/22/2025
+ms.topic: article
 ---
 <!---<author of this doc: rsamai>--->
 
 # Create, update, and delete connections in Microsoft Graph
 
-The Microsoft 365 Copilot connectors (formerly Microsoft Graph connectors) platform offers an intuitive way to add your external data into Microsoft Graph. A connection is a logical container for your external data that an administrator can manage as a single unit.
+Microsoft 365 Copilot connectors offer an intuitive way to add your external data into Microsoft Graph. A connection is a logical container for your external data that an administrator can manage as a single unit.
 
-After a connection has been created, you can add your content from any external data source such as an on-premises content source or an external software as a service (SaaS) service. You can only view and manage the connections that you [created](/graph/api/externalconnectors-external-post-connections) or were explicitly authorized to manage. A search admin can view and manage all the connections in the tenant from the Modern Admin Center.
+After a connection is created, you can add your content from any external data source such as an on-premises content source or an external software as a service (SaaS) service. You can only view and manage the connections that you [created](/graph/api/externalconnectors-external-post-connections) or were explicitly authorized to manage. A search admin can view and manage all the connections in the tenant via the **Copilot** > **Agents and connectors** section of the Microsoft 365 admin center.
 
 <!-- markdownlint-disable MD036 -->
 ![Sample custom helpdesk system Tickets connector structure.](./images/connectors-images/connecting-external-content-manage-connections-connector-structure.png)
-
-*Sample custom helpdesk system Tickets Connector structure.*
-
-![Admin view of connections including the custom Tickets connector.](./images/connectors-images/connecting-external-content-manage-connections-admin-view.png)
-
-*Admin view of connections including the custom Tickets connector.*
 
 <!-- markdownlint-enable MD036 -->
 
@@ -88,7 +83,7 @@ Update the activity settings by sending a patch request on the connection.
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/external/connections/contosohr
 ```
 The following **activitySettings** payload is sent with the patch request.
@@ -132,7 +127,7 @@ To change the display name, description, or enabled content experiences for an e
 
 To remove all items that were indexed via a connection, you can [delete a connection](/graph/api/externalconnectors-externalconnection-delete).
 
-## Next steps
+## Related content
 
 - [Register the connection schema](connecting-external-content-manage-schema.md)
 - [Review the Copilot connectors API reference](/graph/api/resources/connectors-api-overview)

@@ -6,6 +6,7 @@ ms.subservice: "notifications"
 ms.custom: scenarios:getting-started
 author: "merzink"
 ms.date: 11/07/2024
+ms.topic: concept-article
 ---
 
 # Enabling human-centric notification experiences using Microsoft Graph notifications (deprecated)

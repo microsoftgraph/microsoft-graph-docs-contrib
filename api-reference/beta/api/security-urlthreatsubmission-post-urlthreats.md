@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/threatSubmission/urlThreats
 ```
 
@@ -66,7 +66,7 @@ The following example shows a request.
   "name": "create_urlthreatsubmission_from_urlthreats"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/threatSubmission/urlThreats
 Content-type: application/json
 
@@ -79,10 +79,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-urlthreatsubmission-from-urlthreats-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-urlthreatsubmission-from-urlthreats-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -122,7 +118,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.urlThreatSubmission"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

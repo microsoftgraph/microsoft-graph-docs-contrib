@@ -40,7 +40,7 @@ Currently, **targetProduct** supports the following products:
 
    There's a limit of 15,000 indicators per tenant for Microsoft Defender for Endpoint.
 
-- **Microsoft Sentinel** – Only existing customers can use the **tiIndicator** API to send threat intelligence indicators to Microsoft Sentinel. For the most up-to-date, detailed instructions on how to send threat intelligent indicators to Microsoft Sentinel, see [Connect your threat intelligence platform to Microsoft Sentinel with the upload API](/azure/sentinel/connect-threat-intelligence-upload-api).
+- **Microsoft Sentinel** – For the most up-to-date, detailed instructions on how to send threat intelligent indicators to Microsoft Sentinel, see [Connect your threat intelligence platform to Microsoft Sentinel with the upload API](/azure/sentinel/connect-threat-intelligence-upload-api).
   
 For details about the types of indicators supported and limits on indicator counts per tenant, see [Manage indicators](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
 
@@ -73,13 +73,13 @@ For details about the types of indicators supported and limits on indicator coun
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|action|string| The action to apply if the indicator is matched from within the targetProduct security tool. Possible values are: `unknown`, `allow`, `block`, `alert`. **Required.**|
+|action|string| The action to apply if the indicator is matched from within the targetProduct security tool. The possible values are: `unknown`, `allow`, `block`, `alert`. **Required.**|
 |activityGroupNames|String collection|The cyber threat intelligence name(s) for the parties responsible for the malicious activity covered by the threat indicator.|
 |additionalInformation|String|A catchall area for extra data from the indicator that is not specifically covered by other tiIndicator properties. The security tool specified by targetProduct typically does not utilize this data.|
 |azureTenantId|String| Stamped by the system when the indicator is ingested. The Microsoft Entra tenant id of submitting client. **Required.**|
 |confidence|Int32|An integer representing the confidence the data within the indicator accurately identifies malicious behavior. Acceptable values are 0 – 100 with 100 being the highest.|
 |description|String| Brief description (100 characters or less) of the threat represented by the indicator. **Required.**|
-|diamondModel|[diamondModel](#diamondmodel-values)|The area of the Diamond Model in which this indicator exists. Possible values are: `unknown`, `adversary`, `capability`, `infrastructure`, `victim`.|
+|diamondModel|[diamondModel](#diamondmodel-values)|The area of the Diamond Model in which this indicator exists. The possible values are: `unknown`, `adversary`, `capability`, `infrastructure`, `victim`.|
 |expirationDateTime|DateTimeOffset| DateTime string indicating when the Indicator expires. All indicators must have an expiration date to avoid stale indicators persisting in the system. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. **Required.**|
 |externalId|String| An identification number that ties the indicator back to the indicator provider’s system (for example, a foreign key). |
 |id|String|Created by the system when the indicator is ingested. Generated GUID/unique identifier. Read-only.|
@@ -93,8 +93,8 @@ For details about the types of indicators supported and limits on indicator coun
 |severity|Int32| An integer representing the severity of the malicious behavior identified by the data within the indicator. Acceptable values are 0 – 5 where 5 is the most severe and zero isn't severe at all. Default value is 3. |
 |tags|String collection|A JSON array of strings that stores arbitrary tags/keywords. |
 |targetProduct|String|A string value representing a single security product to which the indicator should be applied. Acceptable values are: `Azure Sentinel`, `Microsoft Defender ATP`. **Required**|
-|threatType|[threatType](#threattype-values)| Each indicator must have a valid Indicator Threat Type. Possible values are: `Botnet`, `C2`, `CryptoMining`, `Darknet`, `DDoS`, `MaliciousUrl`, `Malware`, `Phishing`, `Proxy`, `PUA`, `WatchList`. **Required.** |
-|tlpLevel|[tlpLevel](#tlplevel-values)| Traffic Light Protocol value for the indicator. Possible values are: `unknown`, `white`, `green`, `amber`, `red`. **Required.**|
+|threatType|[threatType](#threattype-values)| Each indicator must have a valid Indicator Threat Type. The possible values are: `Botnet`, `C2`, `CryptoMining`, `Darknet`, `DDoS`, `MaliciousUrl`, `Malware`, `Phishing`, `Proxy`, `PUA`, `WatchList`. **Required.** |
+|tlpLevel|[tlpLevel](#tlplevel-values)| Traffic Light Protocol value for the indicator. The possible values are: `unknown`, `white`, `green`, `amber`, `red`. **Required.**|
 
 ### Indicator observables - email
 
@@ -116,7 +116,7 @@ For details about the types of indicators supported and limits on indicator coun
 |:-------------|:------------|:------------|
 |fileCompileDateTime|DateTimeOffset|DateTime when the file was compiled. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |fileCreatedDateTime|DateTimeOffset| DateTime when the file was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-|fileHashType|string| The type of hash stored in fileHashValue. Possible values are: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`.|
+|fileHashType|string| The type of hash stored in fileHashValue. The possible values are: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`.|
 |fileHashValue|String| The file hash value.|
 |fileMutexName|String| Mutex name used in file-based detections.|
 |fileName|String|Name of the file if the indicator is file-based. Multiple file names may be delimited by commas. |

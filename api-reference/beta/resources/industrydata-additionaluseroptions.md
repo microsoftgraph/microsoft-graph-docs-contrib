@@ -1,11 +1,11 @@
 ---
 title: "additionalUserOptions resource type"
-description: "The different management choices for the users to be provisioned."
-author: "cristobal-buenrostro"
+description: "Represents additional configuration options for user provisioning and management in industry data synchronization scenarios. This resource provides settings that control how users, particularly students, are processed and configured during data synchronization operations."
+author: "mohanrajc"
 ms.localizationpriority: medium
 ms.subservice: "industry-data-etl"
 doc_type: resourcePageType
-ms.date: 03/28/2024
+ms.date: 06/30/2025
 ---
 
 # additionalUserOptions resource type
@@ -14,14 +14,15 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The different management choices for the users to be provisioned.
+Represents additional configuration options for user provisioning and management in industry data synchronization scenarios. This resource provides settings that control how users, particularly students, are processed and configured during data synchronization operations.
 
 ## Properties
 
 | Property                       | Type    | Description                                                     |
 | :----------------------------- | :------ | :-------------------------------------------------------------- |
 | allowStudentContactAssociation | Boolean | Indicates whether student contact association should be allowed. |
-| markAllStudentsAsMinors        | Boolean | Indicates whether all students should be marked as minors.       |
+| studentAgeGroup | microsoft.graph.industryData.studentAgeGroup | Indicates the age group classification for students. The possible values are: `minor`, `notAdult`, `adult`, `unknownFutureValue`. Use `null` to disable age group enforcement. |
+| markAllStudentsAsMinors (deprecated) | Boolean | Indicates whether all students should be marked as minors. The **markAllStudentsAsMinors** property is deprecated and will stop returning data on October 15, 2025. Going forward, use the **studentAgeGroup** property. |
 
 ## Relationships
 
@@ -40,7 +41,8 @@ The following JSON representation shows the resource type.
 ```json
 {
   "@odata.type": "#microsoft.graph.industryData.additionalUserOptions",
+  "allowStudentContactAssociation": "Boolean",
   "markAllStudentsAsMinors": "Boolean",
-  "allowStudentContactAssociation": "Boolean"
+  "studentAgeGroup": "String"
 }
 ```

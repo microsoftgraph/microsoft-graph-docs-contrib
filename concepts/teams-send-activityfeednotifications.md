@@ -5,6 +5,7 @@ author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 ms.date: 05/15/2025
+ms.topic: how-to
 ---
 
 # Send activity feed notifications to users in Microsoft Teams
@@ -220,9 +221,6 @@ For details about what topics are supported for each scenario, see the specific 
 
 ## Custom activity icons in activity feed notifications
 
-> [!NOTE]
-> Custom activity icons in activity feed notifications are available only in the [Teams public developer preview](/microsoftteams/platform/resources/dev-preview/developer-preview-intro?tabs=new-teams-client).
-
 You can use custom activity icons in activity feed notifications to help users easily identify the source and intent of the notification. A notification with a custom activity icon adds a unique and Teams-native feel, enhancing user engagement with your app. The following screenshot shows an activity feed notification with a custom activity icon.
 
 :::image type="content" source="images/custom-icon-notification-activity-feed.png" alt-text="The screenshot shows activity feed notifications with custom activity icons." lightbox="images/custom-icon-notification-activity-feed.png":::
@@ -321,7 +319,7 @@ The following example shows how you can send an activity feed notification for a
   "name": "chat_sendactivitynotification_for_task_created_in_chat"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/chats/{chatId}/sendActivityNotification
 Content-Type: application/json
 
@@ -349,10 +347,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/chat-sendactivitynotification-for-task-created-in-chat-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/chat-sendactivitynotification-for-task-created-in-chat-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -387,7 +381,7 @@ Content-Type: application/json
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -403,7 +397,7 @@ The following example shows how you can send an activity feed notification for a
   "name": "team_sendactivitynotification_task_created_in_teams"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/teams/{teamId}/sendActivityNotification
 Content-Type: application/json
 
@@ -431,10 +425,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/team-sendactivitynotification-task-created-in-teams-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/team-sendactivitynotification-task-created-in-teams-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -469,7 +459,7 @@ Content-Type: application/json
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -490,7 +480,7 @@ The Yammer notification example shown earlier uses a custom topic because Micros
   "name": "team_sendactivitynotification_customer_task"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/teams/{teamId}/sendActivityNotification
 Content-Type: application/json
 
@@ -519,10 +509,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/team-sendactivitynotification-customer-task-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/team-sendactivitynotification-customer-task-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -557,7 +543,7 @@ Content-Type: application/json
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -573,7 +559,7 @@ The following example shows how you can send an activity feed notification to al
   "name": "team_sendactivitynotification_about_event"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/teams/7155e3c8-175e-4311-97ef-572edc3aa3db/sendActivityNotification
 Content-Type: application/json
 
@@ -596,10 +582,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/team-sendactivitynotification-about-event-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/team-sendactivitynotification-about-event-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -634,7 +616,7 @@ Content-Type: application/json
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -650,7 +632,7 @@ The following example shows how you can send an activity feed notification to al
   "name": "team_sendactivitynotification_channelmember_about_event"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/teams/7155e3c8-175e-4311-97ef-572edc3aa3db/sendActivityNotification
 Content-Type: application/json
 
@@ -674,10 +656,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/team-sendactivitynotification-channelmember-about-event-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/team-sendactivitynotification-channelmember-about-event-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -712,7 +690,7 @@ Content-Type: application/json
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -729,7 +707,7 @@ The following example shows how you can send an activity feed notification to al
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/chats/19:d65713bc498c4a428c71ef9353e6ce20@thread.v2/sendActivityNotification
 Content-Type: application/json
 
@@ -752,10 +730,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/chat-sendactivitynotification-chatmember-about-event-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/chat-sendactivitynotification-chatmember-about-event-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -790,7 +764,7 @@ Content-Type: application/json
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -807,7 +781,7 @@ The following example shows how to send an activity feed notification to multipl
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/teamwork/sendActivityNotificationToRecipients
 Content-Type: application/json
 
@@ -847,10 +821,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/teamwork-sendactivitynotificationtorecipients-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/teamwork-sendactivitynotificationtorecipients-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/v1/teamwork-sendactivitynotificationtorecipients-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -885,7 +855,7 @@ Content-Type: application/json
 }
 -->
 
-``` http
+```http
 HTTP/1.1 202 Accepted
 ```
 
@@ -903,7 +873,7 @@ This example notifies the team owner to take a short break. Modify the `value` i
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/teams/{teamId}/sendActivityNotification
 Content-Type: application/json
 
@@ -931,10 +901,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/team-sendactivitynotification-take-a-break-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/team-sendactivitynotification-take-a-break-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -969,7 +935,7 @@ Content-Type: application/json
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

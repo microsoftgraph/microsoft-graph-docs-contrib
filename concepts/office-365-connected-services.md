@@ -5,6 +5,7 @@ ms.localizationpriority: high
 ms.subservice: "reports"
 author: "sarahwxy"
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Configure Microsoft 365 services with the Microsoft Graph API in Visual Studio

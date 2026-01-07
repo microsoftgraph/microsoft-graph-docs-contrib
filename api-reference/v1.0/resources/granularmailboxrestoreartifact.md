@@ -25,16 +25,17 @@ Inherits from [mailboxRestoreArtifact](../resources/mailboxRestoreArtifact.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|artifactCount|int|.|
-|id|String|The unique identifier of the restore artifact.|
+|artifactCount|Int32|This property will be deprecated soon. Don't use.|
 |completionDateTime|DateTimeOffset|The time when the restoration of the artifact is completed. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
 |destinationType|[destinationType](../resources/mailboxrestoreartifact.md#destinationtype-values)|Indicates the restoration destination. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md). The possible values are: `new`, `inPlace`, `unknownFutureValue`.|
 |error|[publicError](../resources/publicerror.md)|Contains error details if the restoration of the artifact fails. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
+|id|String|The unique identifier of the restore artifact.|
 |restoredFolderId|String|The new restored folder identifier for the user.|
 |restoredFolderName|String|The new restored folder name.|
+|restoredItemCount|Int32|The number of items that are being restored in the folder.|
 |searchResponseId|String|.|
 |startDateTime|DateTimeOffset|The time when the restoration of the artifact started. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).|
-|status|[artifactRestoreStatus](../resources/mailboxrestoreartifact.md#artifactrestorestatus-values)|The restoration status of the artifact. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).T he possible values are: `added`, `scheduling`, `scheduled`, `inProgress`, `succeeded`, `failed`, `unknownFutureValue`.|
+|status|[artifactRestoreStatus](../resources/mailboxrestoreartifact.md#artifactrestorestatus-values)|The restoration status of the artifact. Inherited from [restoreArtifactBase](../resources/restoreartifactbase.md).The possible values are: `added`, `scheduling`, `scheduled`, `inProgress`, `succeeded`, `failed`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -54,7 +55,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.granularMailboxRestoreArtifact",
-  "artifactCount": "Int",
+  "artifactCount": "Int32",
   "id": "String (identifier)",
   "destinationType": "String",
   "status": "String",
@@ -65,6 +66,7 @@ The following JSON representation shows the resource type.
   },
   "restoredFolderId": "String",
   "restoredFolderName": "String",
+  "restoredItemCount": "Int32",
   "searchResponseId": "String"
 }
 ```

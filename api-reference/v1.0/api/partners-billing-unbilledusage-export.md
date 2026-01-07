@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /reports/partners/billing/usage/unbilled/export
 ```
 
@@ -50,8 +50,8 @@ The following table shows the parameters that you can use with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|attributeSet|[microsoft.graph.partners.billing.attributeSet](../resources/partners-billing-attributeset.md)|Attributes that should be exported. Possible values are: `full`, `basic`, `unknownFutureValue`. The default value is `full`. Choose `full` for a complete response or `basic` for a subset of attributes. Optional.|
-|billingPeriod|[microsoft.graph.partners.billing.billingPeriod](../resources/partners-billing-unbilledusage.md#billingperiod-values)|The billing period for the export data. Possible values are: `current`, `last`, `unknownFutureValue`. Choose `current` for the current billing period and `last` for the last billing period. Required.|
+|attributeSet|[microsoft.graph.partners.billing.attributeSet](../resources/partners-billing-attributeset.md)|Attributes that should be exported. The possible values are: `full`, `basic`, `unknownFutureValue`. The default value is `full`. Choose `full` for a complete response or `basic` for a subset of attributes. Optional.|
+|billingPeriod|[microsoft.graph.partners.billing.billingPeriod](../resources/partners-billing-unbilledusage.md#billingperiod-values)|The billing period for the export data. The possible values are: `current`, `last`, `unknownFutureValue`. Choose `current` for the current billing period and `last` for the last billing period. Required.|
 |currencyCode|String|The currency code for the partner billing. Required.|
 
 ## Response
@@ -70,7 +70,7 @@ The following example shows a request.
   "name": "unbilledusagethis.export"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/reports/partners/billing/usage/unbilled/export
 Content-Type: application/json
 
@@ -83,10 +83,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/unbilledusagethisexport-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/unbilledusagethisexport-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -124,7 +120,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 Location: https://graph.microsoft.com/v1.0/reports/partners/billing/operations/9ab9cb54-d07f-4f52-9ea6-a09d7de52c14

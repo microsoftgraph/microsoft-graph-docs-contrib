@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change which could break your applications. While Intune /beta APIs are supported by Microsoft, you should use these at your own discretion. In general, /beta APIs are not recommended for use in production applications. To determine whether an API is available in v1.0, use the Version selector
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -41,7 +41,7 @@ The user experience analytics anomaly entity contains device details.
 |anomalyOnDeviceFirstOccurrenceDateTime|DateTimeOffset|Indicates the first occurance date and time for the anomaly on the device.|
 |anomalyOnDeviceLatestOccurrenceDateTime|DateTimeOffset|Indicates the latest occurance date and time for the anomaly on the device.|
 |correlationGroupId|String|The unique identifier of the correlation group.|
-|deviceStatus|[userExperienceAnalyticsDeviceStatus](../resources/intune-devices-userexperienceanalyticsdevicestatus.md)|Indicates the device status with respect to the correlation group. At risk devices are devices that share correlation group features but may not yet be affected by an anomaly, such as when a device is experiencing crashes on an application but that application has not been used on the device but is currently installed. This could lead to the device becoming anomalous if the application in question were to be used. Possible values are: anomolous, affected or atRisk. Possible values are: `anomalous`, `affected`, `atRisk`, `unknownFutureValue`.|
+|deviceStatus|[userExperienceAnalyticsDeviceStatus](../resources/intune-devices-userexperienceanalyticsdevicestatus.md)|Indicates the device status with respect to the correlation group. At risk devices are devices that share correlation group features but may not yet be affected by an anomaly, such as when a device is experiencing crashes on an application but that application has not been used on the device but is currently installed. This could lead to the device becoming anomalous if the application in question were to be used. The possible values are: anomolous, affected or atRisk. The possible values are: `anomalous`, `affected`, `atRisk`, `unknownFutureValue`.|
 
 ## Relationships
 None

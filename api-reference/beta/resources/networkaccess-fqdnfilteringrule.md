@@ -27,10 +27,10 @@ For the list of API operations for managing this resource type, see [filteringRu
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|destinations|[microsoft.graph.networkaccess.ruleDestination](../resources/networkaccess-ruledestination.md) collection|The list of potential destinations and destination types that the user may access, including FQDNs and web categories, within the context of a network filtering policy. Inherited from [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md).|
+|destinations|[microsoft.graph.networkaccess.ruleDestination](../resources/networkaccess-ruledestination.md) collection|The list of potential destinations and destination types that the user may access, including fully qualified domain names (FQDNs), uniform resource locators (URLs), and web categories, within the context of a network filtering policy. Inherited from [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md).|
 |id|String|The unique identifier for the **fqdnFilteringRule**. Inherited from [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md).|
 |name|String|Display name. Inherited from [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md).|
-|ruleType|microsoft.graph.networkaccess.networkDestinationType|The network destination type used by a filtering rule. Supports a subset of the values for **networkDestinationType**. The possible values are: `fqdn`, `webCategory`, `unknownFutureValue`. Inherited from [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md). |
+|ruleType|microsoft.graph.networkaccess.networkDestinationType|The network destination type used by a filtering rule. Supports a subset of the values for **networkDestinationType**. The possible values are: `url`, `fqdn`, `webCategory`, `unknownFutureValue`. Inherited from [microsoft.graph.networkaccess.filteringRule](../resources/networkaccess-filteringrule.md). |
 
 ## Relationships
 None.

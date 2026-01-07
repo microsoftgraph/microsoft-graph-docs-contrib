@@ -1,6 +1,6 @@
 ---
 title: item resource type
-description: An item object in Dynamics 365 Business Central.
+description: "Represents an item in Dynamics 365 Business Central."
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -22,10 +22,10 @@ Represents an item in Dynamics 365 Business Central.
 
 | Method                                      |Return Type|Description |
 |:--------------------------------------------|:----------|:-----------|
-|[Get item](../api/dynamics-item-get.md)      |item     |Gets an item object.   |
-|[Create item](../api/dynamics-create-item.md)  |item     |Creates an item object.|
-|[Update item](../api/dynamics-item-update.md)  |item     |Updates an item object.|
-|[Delete item](../api/dynamics-item-delete.md)|none      |Deletes an item object.|
+|[Create](../api/dynamics-create-item.md)  |item     |Create an **item** object.|
+|[Get](../api/dynamics-item-get.md)      |item     |Get an **item** object.   |
+|[Update](../api/dynamics-item-update.md)  |item     |Update an **item** object.|
+|[Delete](../api/dynamics-item-delete.md)|none      |Delete an **item** object.|
 
 ## Properties
 | Property	         | Type	|Description                                          |

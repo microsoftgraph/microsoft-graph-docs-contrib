@@ -4,11 +4,15 @@ description: "The file component is used to display a file by showing the icon, 
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # File component in Microsoft Graph Toolkit
 
-The File component is used to represent an individual [file/folder from OneDrive or SharePoint](/graph/onedrive-concept-overview). The component displays information such as the file or folder name, the file type icon, and the author and last modified date. You can provide the identifiers for a file and the component generates the query to retrieve the file based on the identifiers provided. This component can be used on its own or as part of the [mgt-file-list](./file-list.md) components.
+> [!CAUTION]
+> The Microsoft Graph Toolkit is deprecated. The retirement period begins September 1, 2025, with full retirement planned for August 28, 2026. Developers should migrate to using the Microsoft Graph SDKs or other supported Microsoft Graph tools for building web experiences. For more information, see the [deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-toolkit-retirement/).
+
+The File component is used to represent an individual [file/folder from OneDrive or SharePoint](/graph/onedrive-concept-overview). The component displays information such as the file or folder name, the file type icon, and the author and last modified date. You can provide the identifiers for a file, and the component generates the query to retrieve the file based on the identifiers provided. This component can be used on its own or as part of the [mgt-file-list](./file-list.md) components.
 
 ## Example
 

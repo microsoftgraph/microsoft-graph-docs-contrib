@@ -20,10 +20,7 @@ Calculate the sensitivity label that should be inherited by an output artifact, 
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "sensitivitylabel-computeinheritance-permissions"
-} -->
+<!-- { "blockType": "permissions", "name": "sensitivitylabel_computeinheritance" } -->
 [!INCLUDE [permissions-table](../includes/permissions/sensitivitylabel-computeinheritance-permissions.md)]
 
 ## HTTP request
@@ -50,13 +47,7 @@ GET /security/dataSecurityAndGovernance/sensitivityLabels/computeInheritance
 
 ## Request body
 
-In the request body, supply a JSON object with the following parameters.
-
-| Parameter      | Type              | Description                                                                                                                                                                            |
-| :------------- | :---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| labelIds       | String collection | Required. A collection of sensitivity label GUIDs from the input or referenced artifacts.                                                                                              |
-| locale         | String            | Optional. Specifies the locale for the returned `sensitivityLabel` object. |
-| contentFormats | String collection | Optional. A collection of content formats (for example, `File`, `Email`) applicable to the *output* artifact. Filters the input `labelIds` to consider only those applicable to these formats during inheritance calculation. |
+Don't supply a request body for this method.
 
 ## Response
 
@@ -83,10 +74,6 @@ Client-Request-Id: c5e4d3b2-a1f0-e9d8-c7b6-a5e4d3b2a1f0
 
 "4e4234dd-377b-42a3-935b-0e42f138fa23"  // General (Sensitivity 10, File/Email)
 ```
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/compute-inheritance-from-labels-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/compute-inheritance-from-labels-javascript-snippets.md)]
@@ -117,9 +104,8 @@ Content-Type: application/json
   "toolTip": "Data that requires protection.",
   "isEnabled": true,
   "isEndpointProtectionEnabled": true,
+  "hasProtection": true,
   "autoTooltip": "",
-  "isSmimeSignEnabled": true,
-  "isSmimeEncryptEnabled": true,
   "actionSource": "manual",
   "applicableTo": "email,teamwork,file",
   "sublabels": []

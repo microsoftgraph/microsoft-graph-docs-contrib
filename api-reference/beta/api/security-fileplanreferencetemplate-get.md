@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/labels/filePlanReferences/{filePlanReferenceTemplateId}
 GET /security/labels/retentionLabels/{retentionLabelId}/descriptors/filePlanReferenceTemplate
 ```
@@ -59,16 +59,12 @@ The following example shows a request.
   "name": "get_fileplanreferencetemplate"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/labels/filePlanReferences/b1f7b518-a44f-1d4b-c6f1-ab8771d3907c
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-fileplanreferencetemplate-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-fileplanreferencetemplate-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -98,7 +94,7 @@ GET https://graph.microsoft.com/beta/security/labels/filePlanReferences/b1f7b518
 ---
 
 ### Response
-Here's an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -106,7 +102,7 @@ Here's an example of the response.
   "@odata.type": "microsoft.graph.security.filePlanReferenceTemplate"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -116,13 +112,13 @@ Content-Type: application/json
     "id": "b1f7b518-a44f-1d4b-c6f1-ab8771d3907c",
     "displayName": "FIN 01-02-001",
     "createdBy": {
-    "user": {
-      "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-      "displayName": "Admin"
-    }
-  },
-  "createdDateTime" : "2021-03-24T02:09:08Z"
-}
+      "user": {
+        "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+        "displayName": "Admin"
+      }
+    },
+    "createdDateTime": "2021-03-24T02:09:08Z"
+  }
 }
 ```
 

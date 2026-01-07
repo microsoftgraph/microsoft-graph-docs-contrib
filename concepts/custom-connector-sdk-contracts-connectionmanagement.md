@@ -7,6 +7,7 @@ doc_type: conceptualPageType
 ms.subservice: search
 description: "Learn about the connection management API and models in the Copilot connectors SDK."
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Copilot connectors SDK connection management API and models

@@ -25,6 +25,7 @@ const cloudPcUserSetting = {
       disasterRecoveryType: 'premium',
       userInitiatedDisasterRecoveryAllowed: true
   },
+  provisioningSourceType: 'image',
   restorePointSetting: {
     frequencyInHours: 16,
     frequencyType: 'sixteenHours',

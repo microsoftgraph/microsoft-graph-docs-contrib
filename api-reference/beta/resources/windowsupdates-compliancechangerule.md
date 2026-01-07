@@ -17,11 +17,11 @@ Namespace: microsoft.graph.windowsUpdates
 An abstract type that represents a rule for governing the automatic creation of compliance changes.
 
 ## Properties
-| Property              | Type           | Description                                         |
-|:----------------------|:---------------|:----------------------------------------------------|
-| createdDateTime       | DateTimeOffset | The date and time when the rule was created.        |
-| lastEvaluatedDateTime | DateTimeOffset | The date and time when the rule was last evaluated. |
-| lastModifiedDateTime  | DateTimeOffset | The date and time when the rule was last modified.  |
+| Property                 | Type           | Description                                         |
+|:-------------------------|:---------------|:----------------------------------------------------|
+| createdDateTime          | DateTimeOffset | The date and time when the rule was created.        |
+| lastEvaluatedDateTime    | DateTimeOffset | The date and time when the rule was last evaluated. |
+| lastModifiedDateTime     | DateTimeOffset | The date and time when the rule was last modified.  |
 
 ## Relationships
 None.

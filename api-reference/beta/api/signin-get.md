@@ -5,7 +5,7 @@ description: "Get a signIn object that contains all sign-ins for a Microsoft Ent
 ms.localizationpriority: medium
 author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
-ms.date: 11/08/2024
+ms.date: 06/18/2025
 ---
 
 # Get signIn
@@ -38,7 +38,7 @@ GET /auditLogs/signIns/{id}
 
 ## Optional query parameters
 
-This method supports OData query parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query-parameters).
+This method doesn't support [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a [signIn](../re
 
 ### Request
 
-The following example shows a request.
+The following example shows a request. **id** is synonymous with the **RequestID** property in the sign-in logs window of the Microsoft Entra admin center. 
 
 # [HTTP](#tab/http)
 <!-- {
@@ -72,10 +72,6 @@ GET https://graph.microsoft.com/beta/auditLogs/signIns/66ea54eb-blah-4ee5-be62-f
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-signin-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

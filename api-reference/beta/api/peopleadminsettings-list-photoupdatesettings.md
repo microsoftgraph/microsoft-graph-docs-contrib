@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Get a list of the [photoUpdateSettings](../resources/photoupdatesettings.md) objects and their properties.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -29,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /admin/people/photoUpdateSettings
 ```
 
@@ -56,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 
-``` http
+```http
 GET /admin/people/photoUpdateSettings
 ```
 
@@ -64,7 +66,7 @@ GET /admin/people/photoUpdateSettings
 
 If successful, this method returns a 200 OK response code and an photoUpdateSettings object in the response body.
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

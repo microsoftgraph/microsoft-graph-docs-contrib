@@ -4,9 +4,13 @@ description: "Get an overview of how Microsoft Graph Toolkit manages permissions
 ms.localizationpriority: medium
 author: gavinbarron
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Permissions in Microsoft Graph Toolkit
+
+> [!CAUTION]
+> The Microsoft Graph Toolkit is deprecated. The retirement period begins September 1, 2025, with full retirement planned for August 28, 2026. Developers should migrate to using the Microsoft Graph SDKs or other supported Microsoft Graph tools for building web experiences. For more information, see the [deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-toolkit-retirement/).
 
 This article provides a summary of how Microsoft Graph Toolkit manages permissions and works with incremental consent to reduce user friction.
 

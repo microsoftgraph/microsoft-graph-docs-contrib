@@ -3,6 +3,430 @@
     {
       "ChangeList": [
         {
+          "Id": "e45f1bb8-e874-49b1-8055-967c42bf53a3",
+          "ApiChange": "Member",
+          "ChangedApiName": "optimizedPartitionSize",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `optimizedPartitionSize` member from the **exportOptions** enumeration.",
+          "Target":"exportOptions"
+        },
+        {
+          "Id": "e45f1bb8-e874-49b1-8055-967c42bf53a3",
+          "ApiChange": "Member",
+          "ChangedApiName": "optimizedPartitionSize",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `optimizedPartitionSize` member from the **additionalOptions** enumeration.",
+          "Target":"additionalOptions"
+        }
+      ],
+      "Id": "e45f1bb8-e874-49b1-8055-967c42bf53a3",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-06-10T17:13:06.5520497Z",
+      "WorkloadArea": "Security",
+      "SubArea": "eDiscovery"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Member",
+          "ChangedApiName": "advancedIndexing",
+          "ChangeType": "Addition",
+          "Description": "Added the `advancedIndexing` member to the **additionalDataOptions** enumeration.",
+          "Target": "additionalDataOptions"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Member",
+          "ChangedApiName": "listAttachments",
+          "ChangeType": "Addition",
+          "Description": "Added the `listAttachments` member to the **additionalDataOptions** enumeration.",
+          "Target": "additionalDataOptions"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Member",
+          "ChangedApiName": "htmlTranscripts",
+          "ChangeType": "Addition",
+          "Description": "Added the `htmlTranscripts` member to the **additionalDataOptions** enumeration.",
+          "Target": "additionalDataOptions"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Member",
+          "ChangedApiName": "messageConversationExpansion",
+          "ChangeType": "Addition",
+          "Description": "Added the `messageConversationExpansion` member to the **additionalDataOptions** enumeration.",
+          "Target": "additionalDataOptions"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Member",
+          "ChangedApiName": "locationsWithoutHits",
+          "ChangeType": "Addition",
+          "Description": "Added the `locationsWithoutHits` member to the **additionalDataOptions** enumeration.",
+          "Target": "additionalDataOptions"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Member",
+          "ChangedApiName": "allItemsInFolder",
+          "ChangeType": "Addition",
+          "Description": "Added the `allItemsInFolder` member to the **additionalDataOptions** enumeration.",
+          "Target": "additionalDataOptions"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Member",
+          "ChangedApiName": "htmlTranscripts",
+          "ChangeType": "Addition",
+          "Description": "Added the `htmlTranscripts` member to the **additionalOptions** enumeration.",
+          "Target": "additionalOptions"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Member",
+          "ChangedApiName": "advancedIndexing",
+          "ChangeType": "Addition",
+          "Description": "Added the `advancedIndexing` member to the **additionalOptions** enumeration.",
+          "Target": "additionalOptions"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Member",
+          "ChangedApiName": "allItemsInFolder",
+          "ChangeType": "Addition",
+          "Description": "Added the `allItemsInFolder` member to the **additionalOptions** enumeration.",
+          "Target": "additionalOptions"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Member",
+          "ChangedApiName": "includeFolderAndPath",
+          "ChangeType": "Addition",
+          "Description": "Added the `includeFolderAndPath` member to the **additionalOptions** enumeration.",
+          "Target": "additionalOptions"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Member",
+          "ChangedApiName": "condensePaths",
+          "ChangeType": "Addition",
+          "Description": "Added the `condensePaths` member to the **additionalOptions** enumeration.",
+          "Target": "additionalOptions"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Member",
+          "ChangedApiName": "friendlyName",
+          "ChangeType": "Addition",
+          "Description": "Added the `friendlyName` member to the **additionalOptions** enumeration.",
+          "Target": "additionalOptions"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Member",
+          "ChangedApiName": "splitSource",
+          "ChangeType": "Addition",
+          "Description": "Added the `splitSource` member to the **additionalOptions** enumeration.",
+          "Target": "additionalOptions"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Member",
+          "ChangedApiName": "optimizedPartitionSize",
+          "ChangeType": "Addition",
+          "Description": "Added the `optimizedPartitionSize` member to the **additionalOptions** enumeration.",
+          "Target": "additionalOptions"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Member",
+          "ChangedApiName": "includeReport",
+          "ChangeType": "Addition",
+          "Description": "Added the `includeReport` member to the **additionalOptions** enumeration.",
+          "Target": "additionalOptions"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudAttachmentVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudAttachmentVersion** enumeration type.",
+          "Target": "cloudAttachmentVersion"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "documentVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the **documentVersion** enumeration type.",
+          "Target": "documentVersion"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Member",
+          "ChangedApiName": "msg",
+          "ChangeType": "Addition",
+          "Description": "Added the `msg` member to the **exportFileStructure** enumeration.",
+          "Target": "exportFileStructure"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Member",
+          "ChangedApiName": "splitSource",
+          "ChangeType": "Addition",
+          "Description": "Added the `splitSource` member to the **exportOptions** enumeration.",
+          "Target": "exportOptions"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Member",
+          "ChangedApiName": "includeFolderAndPath",
+          "ChangeType": "Addition",
+          "Description": "Added the `includeFolderAndPath` member to the **exportOptions** enumeration.",
+          "Target": "exportOptions"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Member",
+          "ChangedApiName": "friendlyName",
+          "ChangeType": "Addition",
+          "Description": "Added the `friendlyName` member to the **exportOptions** enumeration.",
+          "Target": "exportOptions"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Member",
+          "ChangedApiName": "condensePaths",
+          "ChangeType": "Addition",
+          "Description": "Added the `condensePaths` member to the **exportOptions** enumeration.",
+          "Target": "exportOptions"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Member",
+          "ChangedApiName": "optimizedPartitionSize",
+          "ChangeType": "Addition",
+          "Description": "Added the `optimizedPartitionSize` member to the **exportOptions** enumeration.",
+          "Target": "exportOptions"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "itemsToInclude",
+          "ChangeType": "Addition",
+          "Description": "Added the **itemsToInclude** enumeration type.",
+          "Target": "itemsToInclude"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "statisticsOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **statisticsOptions** enumeration type.",
+          "Target": "statisticsOptions"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Property",
+          "ChangedApiName": "additionalDataOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **additionalDataOptions** property to the [ediscoveryAddToReviewSetOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryAddToReviewSetOperation?view=graph-rest-1.0) resource.",
+          "Target": "ediscoveryAddToReviewSetOperation"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Property",
+          "ChangedApiName": "cloudAttachmentVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudAttachmentVersion** property to the [ediscoveryAddToReviewSetOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryAddToReviewSetOperation?view=graph-rest-1.0) resource.",
+          "Target": "ediscoveryAddToReviewSetOperation"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Property",
+          "ChangedApiName": "documentVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the **documentVersion** property to the [ediscoveryAddToReviewSetOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryAddToReviewSetOperation?view=graph-rest-1.0) resource.",
+          "Target": "ediscoveryAddToReviewSetOperation"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Property",
+          "ChangedApiName": "itemsToInclude",
+          "ChangeType": "Addition",
+          "Description": "Added the **itemsToInclude** property to the [ediscoveryAddToReviewSetOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryAddToReviewSetOperation?view=graph-rest-1.0) resource.",
+          "Target": "ediscoveryAddToReviewSetOperation"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Property",
+          "ChangedApiName": "statisticsOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **statisticsOptions** property to the [ediscoveryEstimateOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryEstimateOperation?view=graph-rest-1.0) resource.",
+          "Target": "ediscoveryEstimateOperation"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Property",
+          "ChangedApiName": "cloudAttachmentVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudAttachmentVersion** property to the [ediscoverySearchExportOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoverySearchExportOperation?view=graph-rest-1.0) resource.",
+          "Target": "ediscoverySearchExportOperation"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Property",
+          "ChangedApiName": "documentVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the **documentVersion** property to the [ediscoverySearchExportOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoverySearchExportOperation?view=graph-rest-1.0) resource.",
+          "Target": "ediscoverySearchExportOperation"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "itemsToInclude",
+          "ChangeType": "Addition",
+          "Description": "Added the **itemsToInclude** parameter to the [addToReviewSet](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryReviewSet-addtoreviewset?view=graph-rest-1.0) method.",
+          "Target": "addToReviewSet"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "cloudAttachmentVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudAttachmentVersion** parameter to the [addToReviewSet](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryReviewSet-addtoreviewset?view=graph-rest-1.0) method.",
+          "Target": "addToReviewSet"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "documentVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the **documentVersion** parameter to the [addToReviewSet](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryReviewSet-addtoreviewset?view=graph-rest-1.0) method.",
+          "Target": "addToReviewSet"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "statisticsOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **statisticsOptions** parameter to the [estimateStatistics](https://learn.microsoft.com/en-us/graph/api/security-ediscoverySearch-estimatestatistics?view=graph-rest-1.0) method.",
+          "Target": "estimateStatistics"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "cloudAttachmentVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudAttachmentVersion** parameter to the [exportReport](https://learn.microsoft.com/en-us/graph/api/security-ediscoverySearch-exportreport?view=graph-rest-1.0) method.",
+          "Target": "exportReport"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "documentVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the **documentVersion** parameter to the [exportReport](https://learn.microsoft.com/en-us/graph/api/security-ediscoverySearch-exportreport?view=graph-rest-1.0) method.",
+          "Target": "exportReport"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "cloudAttachmentVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudAttachmentVersion** parameter to the [exportResult](https://learn.microsoft.com/en-us/graph/api/security-ediscoverySearch-exportresult?view=graph-rest-1.0) method.",
+          "Target": "exportResult"
+        },
+        {
+          "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "documentVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the **documentVersion** parameter to the [exportResult](https://learn.microsoft.com/en-us/graph/api/security-ediscoverySearch-exportresult?view=graph-rest-1.0) method.",
+          "Target": "exportResult"
+        }
+      ],
+      "Id": "7b95b87a-75b0-4e71-ad5c-01b598e6b5d8",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-01-30T17:13:06.5520497Z",
+      "WorkloadArea": "Security",
+      "SubArea": "eDiscovery"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "cb2aa45a-2a19-4385-b841-ce4a84b40f01",
+          "ApiChange": "Property",
+          "ChangedApiName": "description",
+          "ChangeType": "Addition",
+          "Description": "Added the **description** property to the [ediscoveryReviewSet](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryreviewset?view=graph-rest-beta) resource.",
+          "Target": "ediscoveryReviewSet"
+        },
+        {
+          "Id": "cb2aa45a-2a19-4385-b841-ce4a84b40f01",
+          "ApiChange": "Property",
+          "ChangedApiName": "description",
+          "ChangeType": "Addition",
+          "Description": "Added the **description** property to the [dataSet](https://learn.microsoft.com/en-us/graph/api/resources/security-dataset?view=graph-rest-beta) resource.",
+          "Target": "dataSet"
+        },
+        {
+          "Id": "cb2aa45a-2a19-4385-b841-ce4a84b40f01",
+          "ApiChange": "Method",
+          "ChangedApiName": "ediscoveryReviewSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [update](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryreviewset-update?view=graph-rest-beta) method to the [ediscoveryReviewSet](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryreviewset?view=graph-rest-beta) resource.",
+          "Target": "ediscoveryReviewSet"
+        }
+      ],
+      "Id": "cb2aa45a-2a19-4385-b841-ce4a84b40f01",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-05-04T17:22:08.9220938Z",
+      "WorkloadArea": "Security",
+      "SubArea": "eDiscovery"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "07d79d56-72d0-45b4-80ac-48f307d281e8",
+          "ApiChange": "Property",
+          "ChangedApiName": "description",
+          "ChangeType": "Addition",
+          "Description": "Added the **description** property to the [ediscoveryReviewSet](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryreviewset?view=graph-rest-1.0) resource.",
+          "Target": "ediscoveryReviewSet"
+        },
+        {
+          "Id": "cb2aa45a-2a19-4385-b841-ce4a84b40f01",
+          "ApiChange": "Property",
+          "ChangedApiName": "description",
+          "ChangeType": "Addition",
+          "Description": "Added the **description** property to the [dataSet](https://learn.microsoft.com/en-us/graph/api/resources/security-dataset?view=graph-rest-1.0) resource.",
+          "Target": "dataSet"
+        },
+        {
+          "Id": "07d79d56-72d0-45b4-80ac-48f307d281e8",
+          "ApiChange": "Method",
+          "ChangedApiName": "ediscoveryReviewSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [update](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryreviewset-update?view=graph-rest-1.0) method to the [ediscoveryReviewSet](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryreviewset?view=graph-rest-1.0) resource.",
+          "Target": "ediscoveryReviewSet"
+        }
+      ],
+      "Id": "07d79d56-72d0-45b4-80ac-48f307d281e8",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-05-04T17:22:08.9223681Z",
+      "WorkloadArea": "Security",
+      "SubArea": "eDiscovery"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "040f8df8-d943-4012-b3e7-908849a51f57",
           "ApiChange": "Method",
           "ChangedApiName": "unifiedGroupSource",
@@ -1180,6 +1604,280 @@
       "Version": "beta",
       "CreatedDateTime": "2022-03-31T17:05:38.1837303Z",
       "WorkloadArea": "Compliance",
+      "SubArea": "eDiscovery"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4d361e36-9d33-49ae-bf29-c61f80e46e86",
+          "ApiChange": "Resource",
+          "ChangedApiName": "reportFileMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the [reportFileMetadata](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryReportFileMetadata?view=graph-rest-beta) resource.",
+          "Target": "reportFileMetadata"
+        },
+        {
+          "Id": "4d361e36-9d33-49ae-bf29-c61f80e46e86",
+          "ApiChange": "Property",
+          "ChangedApiName": "reportFileMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the **reportFileMetadata** property to the [ediscoveryAddToReviewSetOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryAddToReviewSetOperation?view=graph-rest-beta) resource.",
+          "Target": "ediscoveryAddToReviewSetOperation"
+        },
+        {
+          "Id": "4d361e36-9d33-49ae-bf29-c61f80e46e86",
+          "ApiChange": "Property",
+          "ChangedApiName": "reportFileMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the **reportFileMetadata** property to the [ediscoveryEstimateOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryEstimateOperation?view=graph-rest-beta) resource.",
+          "Target": "ediscoveryEstimateOperation"
+        }
+      ],
+      "Id": "4d361e36-9d33-49ae-bf29-c61f80e46e86",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-07-23T22:41:55.458412Z",
+      "WorkloadArea": "Security",
+      "SubArea": "eDiscovery"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d0ce94bb-aad3-44b8-939f-80d32cdb33c6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "reportFileMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the [reportFileMetadata](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryReportFileMetadata?view=graph-rest-1.0) resource.",
+          "Target": "reportFileMetadata"
+        },
+        {
+          "Id": "d0ce94bb-aad3-44b8-939f-80d32cdb33c6",
+          "ApiChange": "Property",
+          "ChangedApiName": "reportFileMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the **reportFileMetadata** property to the [ediscoveryAddToReviewSetOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryAddToReviewSetOperation?view=graph-rest-1.0) resource.",
+          "Target": "ediscoveryAddToReviewSetOperation"
+        },
+        {
+          "Id": "d0ce94bb-aad3-44b8-939f-80d32cdb33c6",
+          "ApiChange": "Property",
+          "ChangedApiName": "reportFileMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the **reportFileMetadata** property to the [ediscoveryEstimateOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryEstimateOperation?view=graph-rest-1.0) resource.",
+          "Target": "ediscoveryEstimateOperation"
+        }
+      ],
+      "Id": "d0ce94bb-aad3-44b8-939f-80d32cdb33c6",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-07-23T22:41:55.4587083Z",
+      "WorkloadArea": "Security",
+      "SubArea": "eDiscovery"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a9d63552-3961-4e39-ab11-ffe2f4607ea8",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "caseType",
+          "ChangeType": "Addition",
+          "Description": "Added the **caseType** enumeration type.",
+          "Target": "caseType"
+        },
+        {
+          "Id": "a9d63552-3961-4e39-ab11-ffe2f4607ea8",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "reviewSetSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **reviewSetSettings** enumeration type.",
+          "Target": "reviewSetSettings"
+        },
+        {
+          "Id": "a9d63552-3961-4e39-ab11-ffe2f4607ea8",
+          "ApiChange": "Property",
+          "ChangedApiName": "caseType",
+          "ChangeType": "Addition",
+          "Description": "Added the **caseType** property to the [ediscoveryCaseSettings](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryCaseSettings?view=graph-rest-beta) resource.",
+          "Target": "ediscoveryCaseSettings"
+        },
+        {
+          "Id": "a9d63552-3961-4e39-ab11-ffe2f4607ea8",
+          "ApiChange": "Property",
+          "ChangedApiName": "reviewSetSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **reviewSetSettings** property to the [ediscoveryCaseSettings](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryCaseSettings?view=graph-rest-beta) resource.",
+          "Target": "ediscoveryCaseSettings"
+        }
+      ],
+      "Id": "a9d63552-3961-4e39-ab11-ffe2f4607ea8",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-09-09T22:53:48.8933999Z",
+      "WorkloadArea": "Security",
+      "SubArea": "eDiscovery"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "39c28435-306e-4b4d-9058-3358953936a1",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "caseType",
+          "ChangeType": "Addition",
+          "Description": "Added the **caseType** enumeration type.",
+          "Target": "caseType"
+        },
+        {
+          "Id": "39c28435-306e-4b4d-9058-3358953936a1",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "reviewSetSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **reviewSetSettings** enumeration type.",
+          "Target": "reviewSetSettings"
+        },
+        {
+          "Id": "39c28435-306e-4b4d-9058-3358953936a1",
+          "ApiChange": "Property",
+          "ChangedApiName": "caseType",
+          "ChangeType": "Addition",
+          "Description": "Added the **caseType** property to the [ediscoveryCaseSettings](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryCaseSettings?view=graph-rest-1.0) resource.",
+          "Target": "ediscoveryCaseSettings"
+        },
+        {
+          "Id": "39c28435-306e-4b4d-9058-3358953936a1",
+          "ApiChange": "Property",
+          "ChangedApiName": "reviewSetSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **reviewSetSettings** property to the [ediscoveryCaseSettings](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryCaseSettings?view=graph-rest-1.0) resource.",
+          "Target": "ediscoveryCaseSettings"
+        }
+      ],
+      "Id": "39c28435-306e-4b4d-9058-3358953936a1",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-09-09T22:53:48.8936551Z",
+      "WorkloadArea": "Security",
+      "SubArea": "eDiscovery"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5a189897-82c9-4e1d-91d5-45fccd4f1a0c",
+          "ApiChange": "Method",
+          "ChangedApiName": "retryPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [retryPolicy](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryHoldPolicy-retryPolicy?view=graph-rest-beta) method to the [ediscoveryHoldPolicy](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryHoldPolicy?view=graph-rest-beta) resource.",
+          "Target": "ediscoveryHoldPolicy"
+        }
+      ],
+      "Id": "5a189897-82c9-4e1d-91d5-45fccd4f1a0c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-09-04T21:21:47.9769966Z",
+      "WorkloadArea": "Compliance",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6277d224-ec34-4bd9-8466-45e30230ac03",
+          "ApiChange": "Member",
+          "ChangedApiName": "holdPolicySync",
+          "ChangeType": "Addition",
+          "Description": "Added the `holdPolicySync` member to the **caseAction** enumeration.",
+          "Target": "caseAction"
+        },
+        {
+          "Id": "6277d224-ec34-4bd9-8466-45e30230ac03",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ediscoveryHoldPolicySyncOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [ediscoveryHoldPolicySyncOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryHoldPolicySyncOperation?view=graph-rest-beta) resource.",
+          "Target": "ediscoveryHoldPolicySyncOperation"
+        }
+      ],
+      "Id": "6277d224-ec34-4bd9-8466-45e30230ac03",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-10-10T23:21:27.4853763Z",
+      "WorkloadArea": "Security",
+      "SubArea": "eDiscovery"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "473cf35f-a067-41ea-aded-175089d3bfdb",
+          "ApiChange": "Member",
+          "ChangedApiName": "holdPolicySync",
+          "ChangeType": "Addition",
+          "Description": "Added the `holdPolicySync` member to the **caseAction** enumeration.",
+          "Target": "caseAction"
+        },
+        {
+          "Id": "473cf35f-a067-41ea-aded-175089d3bfdb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ediscoveryHoldPolicySyncOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [ediscoveryHoldPolicySyncOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryHoldPolicySyncOperation?view=graph-rest-1.0) resource.",
+          "Target": "ediscoveryHoldPolicySyncOperation"
+        }
+      ],
+      "Id": "473cf35f-a067-41ea-aded-175089d3bfdb",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-10-10T23:21:27.4857021Z",
+      "WorkloadArea": "Security",
+      "SubArea": "eDiscovery"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "55145815-2684-45ba-97d1-42e5347ad336",
+          "ApiChange": "Method",
+          "ChangedApiName": "retryPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [retryPolicy](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryHoldPolicy-retryPolicy?view=graph-rest-1.0) method to the [ediscoveryHoldPolicy](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryHoldPolicy?view=graph-rest-1.0) resource.",
+          "Target": "ediscoveryHoldPolicy"
+        }
+      ],
+      "Id": "55145815-2684-45ba-97d1-42e5347ad336",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-12-12T20:47:34.5607727Z",
+      "WorkloadArea": "Security",
+      "SubArea": "eDiscovery"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "bbf1bc12-f27a-4c86-865b-392c7bd14976",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "recipientType",
+          "ChangeType": "Addition",
+          "Description": "Added the **recipientType** enumeration type.",
+          "Target": "recipientType"
+        },
+        {
+          "Id": "bbf1bc12-f27a-4c86-865b-392c7bd14976",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "caseMembers",
+          "ChangeType": "Addition",
+          "Description": "Added the **caseMembers** relationship to the [ediscoveryCase](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryCase?view=graph-rest-1.0) resource.",
+          "Target": "ediscoveryCase"
+        },
+        {
+          "Id": "bbf1bc12-f27a-4c86-865b-392c7bd14976",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ediscoveryCaseMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [ediscoveryCaseMember](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryCaseMember?view=graph-rest-1.0) resource.",
+          "Target": "ediscoveryCaseMember"
+        }
+      ],
+      "Id": "bbf1bc12-f27a-4c86-865b-392c7bd14976",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-12-12T21:34:30.6183597Z",
+      "WorkloadArea": "Security",
       "SubArea": "eDiscovery"
     }
   ]

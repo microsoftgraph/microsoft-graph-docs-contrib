@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 author: "lumine2008"
 ms.subservice: "excel"
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Manage sessions and persistence in Excel

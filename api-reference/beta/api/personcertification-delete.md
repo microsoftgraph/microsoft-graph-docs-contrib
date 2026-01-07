@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /me/profile/certifications/{id}
 DELETE /users/{id | userPrincipalName}/profile/certifications/{id}
 ```
@@ -54,16 +54,12 @@ If successful, this method returns a `204 No Content` response code.
   "name": "delete_personCertification"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/users/{userId}/profile/certifications/{id}
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-personcertification-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-personcertification-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -99,7 +95,7 @@ DELETE https://graph.microsoft.com/beta/users/{userId}/profile/certifications/{i
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

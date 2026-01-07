@@ -20,11 +20,7 @@ Get a list of [recycleBinItem](../resources/recyclebinitem.md) objects from the 
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "filestoragecontainer-list-recyclebinitem-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "filestoragecontainer_list_recyclebinitem" } -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-list-recyclebinitem-permissions.md)]
 
 [!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-permissions.md)]
@@ -72,10 +68,6 @@ GET https://graph.microsoft.com/v1.0/storage/fileStorage/containers/b!ISJs1WRro0
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-recyclebinitem-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-recyclebinitem-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

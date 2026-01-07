@@ -37,7 +37,7 @@ For a specific user:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /users/{user-id}@{tenant-id}/settings/windows/{windowsSettingId}/instances
 ````
 
@@ -79,16 +79,12 @@ The following example shows a request.
   "name": "list_windowssettinginstance"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/settings/windows/{windowsSettingId}/instances
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-windowssettinginstance-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-windowssettinginstance-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -127,7 +123,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.windowsSettingInstance)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /me/mailFolders/{id}/permanentDelete
 POST /users/{id | userPrincipalName}/mailFolders/{id}/permanentDelete
 ```
@@ -63,16 +63,12 @@ The following example shows a request.
   "name": "mailsearchfolderthis.permanentdelete"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzM/permanentDelete
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/mailsearchfolderthispermanentdelete-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/mailsearchfolderthispermanentdelete-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -110,7 +106,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

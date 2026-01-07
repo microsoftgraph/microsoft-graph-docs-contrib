@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /solutions/backupRestore/oneDriveForBusinessRestoreSessions/{oneDriveForBusinessRestoreSessionId}
 ```
 
@@ -72,7 +72,7 @@ The following example shows a request.
   "name": "onedriveforbusinessrestoresession_update"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessRestoreSessions/1b014d8c-71fe-4d00-8ab2-31850bc5b32c
 
 {
@@ -119,10 +119,6 @@ PATCH https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusine
 [!INCLUDE [sample-code](../includes/snippets/csharp/onedriveforbusinessrestoresession-update-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/onedriveforbusinessrestoresession-update-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/onedriveforbusinessrestoresession-update-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -155,7 +151,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.oneDriveForBusinessRestoreSession"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 
 {

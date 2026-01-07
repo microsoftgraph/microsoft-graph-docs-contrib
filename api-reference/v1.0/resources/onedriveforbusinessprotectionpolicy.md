@@ -8,6 +8,7 @@ ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
 toc.title: OneDrive for Business protection policy
 ms.date: 08/06/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # oneDriveForBusinessProtectionPolicy resource type

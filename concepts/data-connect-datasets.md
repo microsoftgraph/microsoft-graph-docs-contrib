@@ -7,6 +7,7 @@ ms.localizationpriority: high
 ms.subservice: "data-connect"
 #Customer intent: As a data analyst, I want to understand the datasets, regions, and storage locations supported by Microsoft Graph Data Connect, so that I can determine if it meets my data analysis needs.
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Datasets, regions, and sinks supported by Microsoft Graph Data Connect

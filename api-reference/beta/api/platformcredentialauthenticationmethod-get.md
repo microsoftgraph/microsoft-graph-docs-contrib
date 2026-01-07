@@ -5,7 +5,7 @@ author: "Veena11"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 04/04/2024
+ms.date: 07/31/2025
 ---
 
 # Get platformCredentialAuthenticationMethod
@@ -20,39 +20,40 @@ Read the properties and relationships of a [platformCredentialAuthenticationMeth
 
 ## Permissions
 
-The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### Permissions acting on self
-
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+<!-- { 
+  "blockType": "permissions", 
+  "name": "platformcredentialauthenticationmethod_get", 
+  "requestUrls": ["GET /me/authentication/platformCredentialMethods/{platformCredentialAuthenticationMethodId}"]
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/platformcredentialauthenticationmethod-get-permissions.md)]
-
-### Permissions acting on other users
-
-<!-- { "blockType": "permissions", "name": "platformcredentialauthenticationmethod_get_2" } -->
-[!INCLUDE [permissions-table](../includes/permissions/platformcredentialauthenticationmethod-get-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
 
 ## HTTP request
 
-To read details of your own Platform Credential authentication method:
-<!-- { "blockType": "ignored" } -->
-``` http
-GET /me/authentication/platformCredentialMethods/{platformCredentialAuthenticationMethodId}
-```
+Read details of your own Platform Credential authentication method.
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
-To read details of your own or another user's Platform Credential authentication method:
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
+GET /me/authentication/platformCredentialMethods/{platformCredentialAuthenticationMethodId}
+```
+
+Read details of your own or another user's Platform Credential authentication method.
+
+[!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
+
+<!-- { "blockType": "ignored" } -->
+```http
 GET /users/{id | userPrincipalName}/authentication/platformCredentialMethods/{platformCredentialAuthenticationMethodId}
 ```
 
 ## Optional query parameters
 
-This method supports the $expand query parameter to customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$expand` query parameter to customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 To read the **device** navigation property for another user, specify it in an `$expand` query as follows: `/users/{id}/authentication/platformCredentialMethods/{id}?$expand=device`.
 
@@ -81,16 +82,12 @@ The following example shows a request.
   "sampleKeys": ["R18B3t8Ogh9XIOGmPt81d6p_KXJs1YTxfGgGqeVFJSM1"]
 }-->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/authentication/platformCredentialMethods/R18B3t8Ogh9XIOGmPt81d6p_KXJs1YTxfGgGqeVFJSM1
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-platformcredentialauthenticationmethod-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-platformcredentialauthenticationmethod-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -131,7 +128,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.platformCredentialAuthenticationMethod"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -139,7 +136,8 @@ Content-type: application/json
   "value": {
       "id": "R18B3t8Ogh9XIOGmPt81d6p_KXJs1YTxfGgGqeVFJSM1",
       "displayName": "My Macbook Pro",
-      "creationDateTime": "2023-09-02T04:16:49Z"
+      "creationDateTime": "2023-09-02T04:16:49Z",
+      "lastUsedDateTime": null
   }
 }
 ```

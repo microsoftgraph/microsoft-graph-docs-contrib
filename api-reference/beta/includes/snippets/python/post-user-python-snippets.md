@@ -11,6 +11,7 @@ from msgraph_beta.generated.models.industry_data.user_management_options import 
 from msgraph_beta.generated.models.industry_data.additional_user_attributes import AdditionalUserAttributes
 from msgraph_beta.generated.models.additional_user_attributes import AdditionalUserAttributes
 from msgraph_beta.generated.models.industry_data.additional_user_options import AdditionalUserOptions
+from msgraph_beta.generated.models.student_age_group import StudentAgeGroup
 from msgraph_beta.generated.models.industry_data.user_creation_options import UserCreationOptions
 from msgraph_beta.generated.models.industry_data.user_configuration import UserConfiguration
 from msgraph_beta.generated.models.industry_data.simple_password_settings import SimplePasswordSettings
@@ -23,7 +24,7 @@ request_body = UserProvisioningFlow(
 			AdditionalUserAttributes.UserGradeLevel,
 		],
 		additional_options = AdditionalUserOptions(
-			mark_all_students_as_minors = True,
+			student_age_group = StudentAgeGroup.Minor,
 			allow_student_contact_association = False,
 		),
 	),

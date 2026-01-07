@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /directory/templates/deviceTemplates
 ```
 
@@ -82,7 +82,7 @@ The following example shows a request.
   "name": "create_devicetemplate_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/directory/templates/deviceTemplates
 Content-Type: application/json
 Content-length: 106
@@ -99,10 +99,6 @@ Content-length: 106
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-devicetemplate-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-devicetemplate-from--cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -141,7 +137,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.deviceTemplate"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -172,7 +168,7 @@ The following example shows a request.
   "name": "create_devicetemplate_from_with_owner"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/directory/templates/deviceTemplates
 Content-Type: application/json
 Content-length: 106
@@ -192,10 +188,6 @@ Content-length: 106
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-devicetemplate-from-with-owner-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-devicetemplate-from-with-owner-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -234,7 +226,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.deviceTemplate"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

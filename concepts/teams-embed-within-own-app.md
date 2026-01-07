@@ -5,6 +5,7 @@ author: "erichui-ms"
 ms.localizationpriority: high
 ms.subservice: "teams"
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Embed Microsoft Teams in your app
@@ -44,7 +45,7 @@ Before sending a new [chatMessage](/graph/api/resources/chatmessage), you must c
   "blockType": "request",
   "name": "step_2"
 }-->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/chats
 Content-Type: application/json
 
@@ -80,10 +81,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/step-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/step-2-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/v1/step-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -117,7 +114,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.chat"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -158,10 +155,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/step-3-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/step-3-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -273,10 +266,6 @@ GET https://graph.microsoft.com/v1.0/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/step-4-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/step-4-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -483,15 +472,15 @@ Microsoft Graph offers several kinds of [change notifications for messages](/gra
 - Per tenant, across all chats: `"resource": "/chats/getAllMessages"`
 - Per app, across all chats in a tenant where the app is installed: `"resource": "/appCatalogs/teamsApps/{id}/installedToChats/getAllMessages"`
 
-If you want to track only specific chats, `/messages` is an option, but you should consider how many different chats you’ll need to track. There’s a [limit](/graph/webhooks#teams-resource-limitations) (for example, 10,000) on the number of per-chat change notifications; for details, see [subscriptions](/graph/api/resources/subscription). Instead, consider subscribing to one of the three `/getAllMessages` options, which get messages across all chats of a user, tenant, or app.
+If you want to track only specific chats, `/messages` is an option, but you should consider how many different chats you need to track. There's a [limit](/graph/change-notifications-overview#teams-resource-limitations) on the number of per-chat change notifications. Instead, consider subscribing to one of the three `/getAllMessages` options, which get messages across all chats of a user, tenant, or app.
 
 All four options are called by your backend server component. Because they all support [application](/graph/auth/auth-concepts) permissions, pay attention to the access control logic to show and hide chats accordingly as users join or leave. The per-user option, which also supports [delegated](/graph/auth/auth-concepts) permissions, might be easier to implement, because the change notifications are already user specific; however, this it might be more expensive in the long run because the same message would trigger multiple change notifications, one for each subscribed user, and you might need a bigger cache to store the duplicated messages. For more details about permissions and licensing requirements for the different subscribed resources, see [Create subscription](/graph/api/subscription-post-subscriptions).
 
 Change notification subscriptions have consumption charges. Specify the `model` parameter on the **resource** property, as shown in the following example.
 
-When creating the subscription, make sure that the **includeResourceData** property is set to `true`, and that you have specified the **encryptionCertificate** and **encryptionCertificateId** properties. Otherwise, the encrypted content won't be returned in the change notifications. For details, see [Set up change notifications that include resource data](/graph/webhooks#notification-endpoint-validation).
+When creating the subscription, make sure that the **includeResourceData** property is set to `true`, and that you have specified the **encryptionCertificate** and **encryptionCertificateId** properties. Otherwise, the encrypted content won't be returned in the change notifications. For details, see [Set up change notifications that include resource data](/graph/change-notifications-overview#notification-endpoint-validation).
 
-The following example shows how to get all messages per user. Before you use this example, the subscription notification endpoint (specified in the **notificationUrl** property) must be able to respond to a validation request, as described in [Set up notifications for changes in user data](/graph/webhooks#notification-endpoint-validation). If the validation fails, the request to create the subscription returns a `400 Bad Request` error.
+The following example shows how to get all messages per user. Before you use this example, the subscription notification endpoint specified in the **notificationUrl** property must be able to respond to a validation request, as described in [Set up notifications for changes in user data](/graph/change-notifications-overview#notification-endpoint-validation). If the validation fails, the request to create the subscription returns a `400 Bad Request` error.
 
 For more details about this example, see [Create subscription](/graph/api/subscription-post-subscriptions). 
 
@@ -520,10 +509,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/step-6-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/step-6-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -577,7 +562,7 @@ Content-type: application/json
   "creatorId": "8888a8a8-8a88-888a-88aa-8a888a88888a",
   "includeResourceData": true,
   "latestSupportedTlsVersion": "v1_2",
-  "encryptionCertificate": "MMMM/sMMMsssMsMMMsMMsMMMs4sMMsM4ssMsMsMMMss4ssMMMssssssM4s4MMMsMMMMMMMMsMMMMMMMssMMsMMMMMMMMM4MMMMMsMMMMMMMssMMsMMMMMMMMMM4MMMssMsMMMMMMMs4MMMMsMM4sssMsM4MsMMMsMssMMsMsMMM4MMssMMMsMssMMsMsMMMsMMssMMMsMsMsMMssMsMMMMMMMsM4MMMss4ssMMMsMMssM4MsMsM4Ms4sM4MssMssMsMssMMMMMMsMMMMMsMMsssMMMMMMMMMssMMMMMMMMsMssMMMMM4ssMMs4sMsM/+MM4444s4M/+4sss4MMMMMsMsMsss/s/sMMsMss4sMsMMMss4M4Ms44M4M4MsssssM4M4MMMM444Mss4+s4M44MsssMMMs4Ms4MsMMsMMsMsMMM4sMMMMsssMssssMMss44MMs+MMssMsMsM4sMMs4MsMsM4ssM4MMMsMMs4sMMM4MsM+MsMss+sMsMM4sMM4sMMM4ss4ssssMMMsssM4MMssM+MsM/sMMss4MsMMM44+/MMMsMs4s44M++ssssssMMs/MsMMMMsMMssMsssssMMss4MMMsM4s4MssMsMssMsMMMMMMs4sMMssMsMMMM/ss4sMMsMMsMMMsMMMMMsssM4MMsMMMsMMMMMsssMMsMsMMssMsMMMsMMMMMMMsMsMsMMMsMMMMMMMsMsMMMMMsMMMMMMMsMMMMMsMsMsMsMMMMMMMsMMssMsMMMMsMsM4Ms+sMssMs4sMsMsssM4M4Ms4MMMMMMMMMssssMMMsssMsMMMMsMMMMMMs4sssM4MMMMMMsMMMMMMsMMsssssMMsMs4sM4MsMs4sM4Mss44ssM4ss44ssMsssM4sssMsM4MssMMsM44sMMsMMM4MM4MsMM4MMMMsM4MMM4MMMMMsMMssMsMsMMMsM4MsMsMsMM4sssMsMsMMMsMMMMMMMMMMM4s4sMM4Ms4sssssMsMsMM4sMsssMMssM4MMMMMMMMsMMMMMMMMsMM4MMssMMM4MMMMsMsMMssMsMMMsMMMMMMMsMMMsM4M4MMMMMMsMMMMMMsMMsssssMMsMs4sM4MsMs4ssMMsM4MsM4MsMM4MMsMMM4sMMsMMMMMsMsMMMM4MMsssMM4MMMMsMM4sssMsMsMMMMMsMMM4MsMssMMMMsssMsMMMMssMsMMsMM4sMssM4MssMMsMM4sMssssM4ssMMsM44sMMsMMM4MM4MsMM4MMMMsM4MMM4MMMMMsMMssMsMsMMMsM4MsMsMsMM4sssMsMsMMMsMMMMMMMMMMM4s4sMM4Ms4ssss4MsMsMM4sMsssMMssM4MMMMMMMMsMMMMMMMMsMM4MMssMMM4MMMMsMsMMssMsMMMsMMMMMMMsMMMsM4M4MM4MM4MsMsMMMMMsM4M4ssMMMssssMMMMMsM/s4MsMMMMsMMMM4MMs4MMMMMMsMsMsMMMM4MMMMsMsMssMMssMMsssMssM4ss4MssM4ssMMssssssMMsss4ss44sssMsMsMMMM4MssMsMMMMMMMMMMMsssMMsMMMMMM/sMM4sMssM4MssM4ssMMss4MsMsMsM44sM4MssMssMsMsM4MMMM4MMMMsMsMMssMsMMMsMMMMMMMsMMMsM4MsssMssMMsMs4sM4MsMM4ssMMsM4MsM4MssM4MMMMsMsMMssMsMMMsMMMMMMMsMMMsM4MsssMssMMsMs4sM4MsMs4ssMMsM4MsM4MssM4MMMMsMsMMssMsMMMsMMMMMMMsMMMsM4MsssMssMMsMs4sM4MsMs4ssMMsM4MsM4MssM4MMMMsMsMMssMsMMMsMMMMMMMsMMMsM4MsssMssMMsMs4sM4MsMM4ssMMsM4MsM4MssM4MMMMsMsMMssMsMMMsMMMMMMMsMMMsM4MsMM4MM4MsMsMMMMsMMMsMMMMssMssss4s+MMM44MMMsMsMM4MM4MsMMMMMMMMMMsMMMMMMsMMMsssMsMMMMsMMsMMMssssssM4s4MMMsMMMMMMMMMMMM4MMMMssss444MsMsMMM44MM/444sMMMs4sMsMM4sMMMssMM4+M4sssMs+MsMMMMM/M/s4MMssM4ssss/4MMMsssMsMMss44sMsss4++ss/4s+s4sMs+4sM4MsM/4/MssMMMsMssMs4MsMss4MMsMsMssssssMMM4MsMM4s+MMM4M4sMMMMs4s4sMMMMsM444ssM4MMsssMMMMsM4MsMsMMM4sMsMs4sMsMMMMMs4MsMsMsMsM4sMs4sMMMMMsssMssMsMsMMss4MMM4sMsM4sMMssMMsM44MM4ss4s4Ms44sMMM4ssss4Ms4sMM4MMMMM4MMs+ss4MsMssMss4s==",
+  "encryptionCertificate": "MMMM/sMMMsssMsMMMsMMsMMMs4sMMsMMs...sssMssMsMsMMss4MMM4sMsM4sMss4s==",
   "encryptionCertificateId": "44M4444M4444M4M44MM4444MM4444MMMM44MM4M4",
   "notificationUrlAppId": null
 }
@@ -585,7 +570,7 @@ Content-type: application/json
 
 ## Step 7: Receive and decrypt change notifications
 
-Whenever there is a change to the subscribed resource, a [change notification](/graph/api/resources/changenotificationcollection) is sent to the **notificationUrl**.  For security reasons, the content is encrypted. To decrypt the content, see [Decrypting resource data from change notifications](/graph/webhooks-with-resource-data#decrypting-resource-data-from-change-notifications).
+Whenever there is a change to the subscribed resource, a [change notification](/graph/api/resources/changenotificationcollection) is sent to the **notificationUrl**.  For security reasons, the content is encrypted. To decrypt the content, see [Decrypting resource data from change notifications](/graph/change-notifications-with-resource-data#decrypting-resource-data-from-change-notifications).
 
 When you create the subscription, make sure that the **includeResourceData** property is set to `true`, and that you have specified the **encryptionCertificate** and **encryptionCertificateId** properties. Otherwise, the encrypted content won't be returned in the change notifications. For details, see [Notification endpoint validation](/graph/api/subscription-post-subscriptions#notification-endpoint-validation).
 
@@ -723,10 +708,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/step-8-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/step-8-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/v1/step-8-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -802,10 +783,6 @@ GET https://graph.microsoft.com/v1.0/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/step-9-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/step-9-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

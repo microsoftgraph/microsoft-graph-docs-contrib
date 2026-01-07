@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let community = await client.api('/employeeExperience/communities/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0')
+let community = await client.api('/employeeExperience/communities/eyXxdHlwZSI6Ikdyb3VwIiwiaABCDiI4MzIxMjc1In0')
 	.get();
 
 ```

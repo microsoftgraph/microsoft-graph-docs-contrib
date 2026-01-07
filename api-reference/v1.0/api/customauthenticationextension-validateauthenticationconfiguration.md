@@ -5,7 +5,7 @@ author: "soneff"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 10/17/2024
+ms.date: 07/21/2025
 ---
 
 # customAuthenticationExtension: validateAuthenticationConfiguration
@@ -13,7 +13,10 @@ Namespace: microsoft.graph
 
 An API to check validity of the endpoint and and authentication configuration for a [customAuthenticationExtension](../resources/customauthenticationextension.md) object, which can represent one of the following derived types:
 
-- [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) resource type.resource type.
+- [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) resource type.
+- [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) resource type.
+- [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) resource type.
+- [onOtpSendCustomExtension](../resources/onOtpSendCustomExtension.md) resource type.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -52,11 +55,11 @@ POST /identity/customAuthenticationExtensions/validateAuthenticationConfiguratio
 
 ## Request body
 
-In the request body, supply JSON representation of the parameters.
+In the request body, provide a JSON object with the following parameters.
 
-The following table shows the parameters that can be used with this action. Supply a endpointConfiguration and authenticationConfiguration if querying at the root level. Otherwise, for a specific custom extension, do not supply a request body for this method.
+Supply a **endpointConfiguration** and **authenticationConfiguration** if querying at the root level. Otherwise, for a specific custom extension, don't supply a request body for this method.
 
-|Parameter|Type|Description|
+|Property|Type|Description|
 |:---|:---|:---|
 |endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The HTTP endpoint for the custom authentication extension to be validated.|
 |authenticationConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The authentication configuration for the custom authenticaion extension to validate.|
@@ -107,7 +110,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.authenticationConfigurationValidation",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.authenticationConfigurationValidation", 
     "errors": [
         {
             "code": "IncorrectResourceIdFormat",
@@ -136,7 +139,6 @@ Content-Type: application/json
 
 #### Request
 The following example shows a request.
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -149,10 +151,6 @@ POST https://graph.microsoft.com/v1.0/identity/customAuthenticationExtensions/9f
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/customauthenticationextensionthisvalidateauthenticationconfiguration-byid-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/customauthenticationextensionthisvalidateauthenticationconfiguration-byid-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

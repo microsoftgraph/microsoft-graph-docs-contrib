@@ -60,7 +60,6 @@ items:
     href: ../../api/peopleadminsettings-list-profilesources.md
   - name: Create profile source
     href: ../../api/peopleadminsettings-post-profilesources.md
-  - name: Pronouns settings
   - name: List profile property settings
     href: ../../api/peopleadminsettings-list-profilepropertysettings.md
   - name: Create profile property setting
@@ -115,14 +114,6 @@ items:
       href: ../../api/profilepropertysetting-update.md
     - name: Delete
       href: ../../api/profilepropertysetting-delete.md
-  - name: Pronouns settings
-    items:
-    - name: Pronouns settings
-      href: ../../resources/pronounssettings.md
-    - name: List
-      href: ../../api/peopleadminsettings-list-pronouns.md
-    - name: Update
-      href: ../../api/namepronunciationsettings-update.md
   - name: Profile source
     displayName: source attribution, connector source
     items:
@@ -138,6 +129,13 @@ items:
       href: ../../api/profilesource-update.md
     - name: Delete
       href: ../../api/profilesource-delete.md
+  - name: Pronouns settings
+    items:
+    - name: Pronouns settings
+      href: ../../resources/pronounssettings.md
+    - name: List
+      href: ../../api/peopleadminsettings-list-pronouns.md
+    - name: Update
       href: ../../api/pronounssettings-update.md
 - name: Insights settings
   items:
@@ -543,6 +541,14 @@ items:
       href: ../../api/personwebsite-update.md
     - name: Delete
       href: ../../api/personwebsite-delete.md
+  - name: Complex types
+    items:
+    - name: Company detail
+      href: ../../resources/companydetail.md
+    - name: Origin tenant info
+      href: ../../resources/origintenantinfo.md
+    - name: Position detail
+      href: ../../resources/positiondetail.md
 - name: Profile source
   displayName: source attribution, connector source
   items:

@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change which could break your applications. While Intune /beta APIs are supported by Microsoft, you should use these at your own discretion. In general, /beta APIs are not recommended for use in production applications. To determine whether an API is available in v1.0, use the Version selector
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -39,10 +39,11 @@ Inherits from [windowsUpdateCatalogItem](../resources/intune-softwareupdate-wind
 |releaseDateTime|DateTimeOffset|The date the catalog item was released Inherited from [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |endOfSupportDate|DateTimeOffset|The last supported date for a catalog item Inherited from [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |kbArticleId|String|Identifies the knowledge base article associated with the Windows quality update catalog item. Read-only|
-|classification|[windowsQualityUpdateCategory](../resources/intune-softwareupdate-windowsqualityupdatecategory.md)|The category of the Windows quality update. Possible values are: all, security, nonSecurity. Read-only. Possible values are: `all`, `security`, `nonSecurity`.|
-|qualityUpdateCadence|[windowsQualityUpdateCadence](../resources/intune-softwareupdate-windowsqualityupdatecadence.md)|The publishing cadence of the quality update. Possible values are: monthly, outOfBand. This property cannot be modified and is automatically populated when the catalog is created. Read-only. Possible values are: `monthly`, `outOfBand`, `unknownFutureValue`.|
+|classification|[windowsQualityUpdateCategory](../resources/intune-softwareupdate-windowsqualityupdatecategory.md)|The category of the Windows quality update. The possible values are: all, security, nonSecurity. Read-only. The possible values are: `all`, `security`, `nonSecurity`, `unknownFutureValue`, `quickMachineRecovery`.|
+|qualityUpdateCadence|[windowsQualityUpdateCadence](../resources/intune-softwareupdate-windowsqualityupdatecadence.md)|The publishing cadence of the quality update. The possible values are: monthly, outOfBand. This property cannot be modified and is automatically populated when the catalog is created. Read-only. The possible values are: `monthly`, `outOfBand`, `unknownFutureValue`.|
 |isExpeditable|Boolean|When TRUE, indicates that the quality updates qualify for expedition. When FALSE, indicates the quality updates do not quality for expedition. Default value is FALSE. Read-only|
 |productRevisions|[windowsQualityUpdateCatalogProductRevision](../resources/intune-softwareupdate-windowsqualityupdatecatalogproductrevision.md) collection|The operating system product revisions that are released as part of this quality update. Read-only.|
+|cveSeverityInformation|[windowsQualityUpdateCveSeverityInformation](../resources/intune-softwareupdate-windowsqualityupdatecveseverityinformation.md)|CVE information for catalog items|
 
 ## Relationships
 None
@@ -86,6 +87,18 @@ Here is a JSON representation of the resource.
         "articleUrl": "String"
       }
     }
-  ]
+  ],
+  "cveSeverityInformation": {
+    "@odata.type": "microsoft.graph.windowsQualityUpdateCveSeverityInformation",
+    "maxSeverityLevel": "String",
+    "maxBaseScore": "4.2",
+    "exploitedCves": [
+      {
+        "@odata.type": "microsoft.graph.windowsQualityUpdateCveDetail",
+        "cveNumber": "String",
+        "cveInformationUrl": "String"
+      }
+    ]
+  }
 }
 ```

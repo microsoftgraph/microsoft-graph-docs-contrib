@@ -38,7 +38,7 @@ Assign a hardware OATH authentication method to yourself.
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /me/authentication/hardwareOathMethods
 ```
 
@@ -49,7 +49,7 @@ Assign a hardware OATH authentication method to another user.
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /users/{usersId}/authentication/hardwareOathMethods
 ```
 
@@ -85,7 +85,7 @@ The following example shows a request.
   "name": "create_hardwareoathauthenticationmethod_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods
 Content-Type: application/json
 
@@ -98,10 +98,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-hardwareoathauthenticationmethod-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-hardwareoathauthenticationmethod-from--cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -140,7 +136,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.hardwareOathAuthenticationMethod"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

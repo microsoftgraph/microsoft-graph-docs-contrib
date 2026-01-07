@@ -40,7 +40,7 @@ items:
           href: ../../resources/userregistrationmethodsummary.md
         - name: List
           href: ../../api/authenticationmethodsroot-usersregisteredbymethod.md
-  - name: Microsoft Entra audit logs
+  - name: Microsoft Entra logs
     items:
     - name: Overview
       href: ../../resources/azure-ad-auditlog-overview.md
@@ -52,14 +52,20 @@ items:
         href: ../../api/directoryaudit-list.md
       - name: Get
         href: ../../api/directoryaudit-get.md
-    - name: Sign in
+    - name: Sign-in
       items:
-      - name: Sign in
+      - name: Sign-in
         href: ../../resources/signin.md
       - name: List
         href: ../../api/signin-list.md
       - name: Get
         href: ../../api/signin-get.md
+      - name: Confirm compromised
+        href: ../../api/signin-confirmcompromised.md
+      - name: Confirm safe
+        href: ../../api/signin-confirmsafe.md
+      - name: Dismiss
+        href: ../../api/signin-dismiss.md
     - name: Provisioning object summary
       items:
       - name: Provisioning object summary

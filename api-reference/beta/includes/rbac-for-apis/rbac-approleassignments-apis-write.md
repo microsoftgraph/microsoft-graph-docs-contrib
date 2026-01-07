@@ -11,7 +11,8 @@ ms.topic: include
 > - Directory Writer
 > - Hybrid Identity Administrator
 > - Identity Governance Administrator
-> - Privileged Role Administrator
+> - Privileged Role Administrator - the least privileged role supported for Microsoft Graph and Azure AD Graph app roles
 > - User Administrator
 > - Application Administrator
 > - Cloud Application Administrator
+> - Agent ID Administrator - For agent users only

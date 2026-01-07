@@ -35,13 +35,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}
 ```
 
 ## Optional query parameters
 
-This method does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$expand` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -59,7 +59,11 @@ If successful, this method returns a `200 OK` response code and a [virtualEventR
 
 ## Examples
 
-### Request
+### Example 1: Get a webinar registration by ID
+
+The following example shows how to get a webinar registration by registration ID.
+
+#### Request
 
 The following example shows a request.
 
@@ -70,16 +74,12 @@ The following example shows a request.
   "sampleKeys": ["f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21-a8a6-4a6b-97f8-ced53d30f143", "127962bb-84e1-7b62-fd98-1c9d39def7b6"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21-a8a6-4a6b-97f8-ced53d30f143/registrations/127962bb-84e1-7b62-fd98-1c9d39def7b6
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-virtualeventregistration-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-virtualeventregistration-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -108,7 +108,7 @@ GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/f4b39f1c-5
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -119,7 +119,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.virtualEventRegistration"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -168,3 +168,100 @@ Content-Type: application/json
   ]
 }
 ```
+
+### Example 2: Get a webinar registration by ID and include sessions
+
+The following example shows how to get a webinar registration by registration ID and use `$expand` to include **sessions**.
+
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "get_virtualEventRegistration_sessions",
+  "sampleKeys": ["f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21", "127962bb-84e1-7b62-fd98-1c9d39def7b6"]
+}
+-->
+```http
+GET https://graph.microsoft.com/beta/solutions/virtualEvent/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21/registrations/127962bb-84e1-7b62-fd98-1c9d39def7b6?$expand=sessions
+```
+
+#### Response
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.virtualEventRegistration"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.virtualEventRegistration",
+  "id": "127962bb-84e1-7b62-fd98-1c9d39def7b6",
+  "userId": "String",
+  "firstName": "Emilee",
+  "lastName": "Pham",
+  "email": "EmileeMPham@contoso.com",
+  "externalRegistrationInformation": {
+    "referrer": "Fabrikam",
+    "registrationId": "myExternalRegistrationId"
+  },
+  "status": "registered",
+  "registrationDateTime": "2025-01-07T22:04:17",
+  "cancelationDateTime": null,
+  "registrationQuestionAnswers": [
+    {
+      "questionId": "95320781-96b3-4b8f-8cf8-e6561d23447a",
+      "displayName": "Which city do you currently work in?",
+      "value": null,
+      "booleanValue": null,
+      "multiChoiceValues": [
+        "Seattle"
+      ]
+    }
+  ],
+  "sessions@odata.navigationLink": "/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21/registrations/127962bb-84e1-7b62-fd98-1c9d39def7b6/sessions",
+  "sessions": [
+    {
+      "@odata.type": "#microsoft.graph.virtualEventSession",
+      "id": "8d62dd52-4dff-4c75-96a9-f905cc3ff942",
+      "startDateTime": "2025-01-08T12:30:00Z",
+      "endDateTime": "2025-01-09T22:00:00Z",
+      "videoOnDemandWebUrl": "https://df.events.teams.microsoft.com/webinars/webinarId/sessions/session1",
+      "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZDVjNzk3OWEtYjc2NS00NTA1LTkyMzQtYTYzMGI5YmFmMjM5%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%221cd068e4-5b08-4e75-a7f9-7b4e067a0820%22%7d",
+      "subject": "Session one",
+      "participants": {
+        "@odata.type": "microsoft.graph.meetingParticipants"
+      },
+      "isBroadcast": null,
+      "broadcastSettings": null,
+      "capabilities": [],
+      "audioConferencing": null,
+      "chatInfo": {
+        "threadId": "19:meeting_ZDVjNzk3OWEtYjc2NS00NTA1LTkyMzQtYTYzMGI5YmFmMjM5@thread.v2",
+        "messageId": "0",
+        "replyChainMessageId": null
+      },
+      "videoTeleconferenceId": null,
+      "externalId": null,
+      "joinMeetingIdSettings": null,
+      "lobbyBypassSettings": null,
+      "isEntryExitAnnounced": null,
+      "allowedPresenters": null,
+      "allowAttendeeToEnableMic": null,
+      "allowAttendeeToEnableCamera": null,
+      "allowMeetingChat": null,
+      "shareMeetingChatHistoryDefault": null,
+      "allowTeamworkReactions": null,
+      "recordAutomatically": null,
+      "watermarkProtection": null,
+      "allowParticipantsToChangeName": null
+    }
+  ]
+}
+```
+

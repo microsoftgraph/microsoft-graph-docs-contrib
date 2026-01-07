@@ -66,9 +66,9 @@ items:
     - name: Federated identity credential
       href: ../../resources/federatedidentitycredential.md
     - name: List
-      href: ../../api/application-list-federatedidentitycredentials.md
+      href: ../../api/federatedidentitycredential-list.md
     - name: Create
-      href: ../../api/application-post-federatedidentitycredentials.md
+      href: ../../api/federatedidentitycredential-post.md
     - name: Get
       href: ../../api/federatedidentitycredential-get.md
     - name: Update
@@ -225,6 +225,14 @@ items:
       href: ../../api/onpremisespublishingprofile-get.md
     - name: Update
       href: ../../api/onpremisespublishingprofile-update.md
+  - name: Private access sensor
+    items:
+    - name: Private access sensor
+      href: ../../resources/privateaccesssensor.md
+    - name: List
+      href: ../../api/onpremisespublishingprofile-list-sensors.md
+    - name: Get
+      href: ../../api/privateaccesssensor-get.md
   - name: Published resource
     items:
     - name: Published resource

@@ -12,8 +12,8 @@ use Microsoft\Graph\Generated\Models\ActivityBasedTimeoutPolicy;
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ActivityBasedTimeoutPolicy();
-$requestBody->setDefinition(['definition-value', 	]);
-$requestBody->setDisplayName('displayName-value');
+$requestBody->setDefinition(['{\"ActivityBasedTimeoutPolicy\":{\"Version\":1,\"ApplicationPolicies\":[{\"ApplicationId\":\"default\",\"WebSessionIdleTimeout\":\"00:05:00\"}]}}', 	]);
+$requestBody->setDisplayName('activityBasedTimeoutPolicies test');
 $requestBody->setIsOrganizationDefault(true);
 
 $result = $graphServiceClient->policies()->activityBasedTimeoutPolicies()->post($requestBody)->wait();

@@ -13,7 +13,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Represents a policy that can control the idle timeout for web sessions for applications that support activity-based timeout functionality. Applications enforce automatic sign out after a period of inactivity. This type of policy can only be applied at the organization level (by setting the **isOrganizationDefault** property to `true`).
+Represents a policy that can control the idle timeout for web sessions for [applications that support activity-based timeout functionality](/microsoft-365/admin/manage/idle-session-timeout-web-apps). Applications enforce automatic sign out after a period of inactivity. This type of policy can only be applied at the organization level (by setting the **isOrganizationDefault** property to `true`).
 
 Inherits from [stsPolicy](stsPolicy.md).
 

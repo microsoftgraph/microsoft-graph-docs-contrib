@@ -42,6 +42,7 @@ Inherits from [entity](entity.md).
 |Relationship|Type|Description|
 |:---|:---|:---|
 |emailMethods|[emailAuthenticationMethod](../resources/emailauthenticationmethod.md) collection|Represents the email addresses registered to a user for authentication. |
+|externalAuthenticationMethods|[externalAuthenticationMethod](../resources/externalauthenticationmethod.md) collection|Represents the external methods registered to a user for authentication. |
 |fido2Methods|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) collection|Represents the FIDO2 security keys registered to a user for authentication.|
 |hardwareOathMethods|[hardwareOathAuthenticationMethod](../resources/hardwareoathauthenticationmethod.md) collection|The hardware OATH time-based one-time password (TOTP) devices assigned to a user for authentication.|
 |methods|[authenticationMethod](../resources/authenticationmethod.md) collection| Represents all authentication methods registered to a user.|

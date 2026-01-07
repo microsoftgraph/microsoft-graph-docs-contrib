@@ -13,9 +13,6 @@ Namespace: microsoft.graph
 
 Search the hierarchy of items for items matching a query.
 You can search within a folder hierarchy, a whole drive, or files shared with the current user.
->[!Note] 
->If a file doesn't appear in search results, manually searching for it in OneDrive UI may trigger indexing and help resolve the issue.
-
 
 ## Permissions
 
@@ -35,7 +32,7 @@ GET /drives/{drive-id}/root/search(q='{search-text}')
 GET /groups/{group-id}/drive/root/search(q='{search-text}')
 GET /me/drive/root/search(q='{search-text}')
 GET /sites/{site-id}/drive/root/search(q='{search-text}')
-GET /users/{user-id}/drive/root/search(q='{search-text}')
+GET /users/{user-id | userPrincipalName}/drive/root/search(q='{search-text}')
 ```
 
 ## Optional query parameters
@@ -70,10 +67,6 @@ GET /me/drive/root/search(q='Contoso Project')
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/item-search-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/item-search-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -154,10 +147,6 @@ GET /me/drive/search(q='Contoso Project')
 [!INCLUDE [sample-code](../includes/snippets/csharp/item-search-all-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/item-search-all-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/item-search-all-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -187,7 +176,7 @@ GET /me/drive/search(q='Contoso Project')
 ### Response
 
 Responses when searching from the **drive** resource may include items outside of the drive (items shared with the current user).
-These items will include the [**remoteItem**](../resources/remoteitem.md) facet to indicate they are stored outside of the target drive.
+These items include the [**remoteItem**](../resources/remoteitem.md) facet to indicate they are stored outside of the target drive.
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
 
@@ -217,8 +206,7 @@ Content-type: application/json
 
 ## Error responses
 
-See [Error Responses][error-response] for more information about
-how errors are returned.
+For more information about how errors are returned, see [Error responses][error-response].
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md

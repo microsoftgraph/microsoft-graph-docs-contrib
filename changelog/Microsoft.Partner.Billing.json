@@ -163,7 +163,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "unbilled",
           "ChangeType": "Addition",
-          "Description": "Added the **unbilled** relationship to the [billingReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-billingReconciliation?view=graph-rest-beta) resource type.",
+          "Description": "Added the **unbilled** relationship to the [billingReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-billingReconciliation?view=graph-rest-beta) resource.",
           "Target": "billingReconciliation"
         },
         {
@@ -345,6 +345,40 @@
       "CreatedDateTime": "2024-02-14T08:51:46.3920632Z",
       "WorkloadArea": "Reports",
       "SubArea": "Partner billing reports"
-    }
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c2ab2208-959d-41f7-9990-b559351720e1",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "unbilled",
+          "ChangeType": "Addition",
+          "Description": "Added the **unbilled** relationship to the [billingReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-billingReconciliation?view=graph-rest-1.0) resource.",
+          "Target": "billingReconciliation"
+        },
+        {
+          "Id": "c2ab2208-959d-41f7-9990-b559351720e1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unbilledReconciliation",
+          "ChangeType": "Addition",
+          "Description": "Added the [unbilledReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-unbilledReconciliation?view=graph-rest-1.0) resource type.",
+          "Target": "unbilledReconciliation"
+        },
+        {
+          "Id": "c2ab2208-959d-41f7-9990-b559351720e1",
+          "ApiChange": "Method",
+          "ChangedApiName": "export",
+          "ChangeType": "Addition",
+          "Description": "Added the [export](https://learn.microsoft.com/en-us/graph/api/partners-billing-unbilledReconciliation-export?view=graph-rest-1.0) method to the [unbilledReconciliation](https://learn.microsoft.com/en-us/graph/api/resources/partners-billing-unbilledReconciliation?view=graph-rest-1.0) resource.",
+          "Target": "unbilledReconciliation"
+        }
+      ],
+      "Id": "c2ab2208-959d-41f7-9990-b559351720e1",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-06-11T06:03:44.8445178Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Partner billing reports"
+    }    
   ]
 }

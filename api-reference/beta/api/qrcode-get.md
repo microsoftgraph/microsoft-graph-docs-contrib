@@ -22,32 +22,33 @@ Read the properties and relationships of a [qrCode](../resources/qrcode.md) obje
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### Permissions acting on self
-
-<!-- { "blockType": "ignored"  } -->
+<!-- { 
+  "blockType": "permissions", 
+  "name": "qrcode_get", 
+  "requestUrls": ["GET /users/{id}/authentication/qrCodePinMethod/standardQRCode", "GET /users/{id}/authentication/qrCodePinMethod/temporaryQRCode"]
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/qrcode-get-permissions.md)]
-
-### Permissions acting on others
-
-<!-- { "blockType": "ignored"  } -->
-[!INCLUDE [permissions-table](../includes/permissions/qrcode-get-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
 
 ## HTTP request
 
 Retrieve your own QR Code.
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /me/authentication/qrCodePinMethod/standardQRCode
 GET /me/authentication/qrCodePinMethod/temporaryQRCode
 ```
 
-[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
-
 Retrieve another user's QR Code.
+
+[!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
+
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /users/{id}/authentication/qrCodePinMethod/standardQRCode
 GET /users/{id}/authentication/qrCodePinMethod/temporaryQRCode
 ```
@@ -81,16 +82,12 @@ The following example shows a request.
   "name": "get_qrcode"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/7c4999f7-9c25-4f8e-8b84-766eb28a1b49/authentication/qrCodePinMethod/standardQRCode
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-qrcode-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-qrcode-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -129,7 +126,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.qrCode"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -41,7 +41,7 @@ The following tables show the least privileged permission or permissions require
 
 Get details of your own Microsoft Authenticator Passwordless Phone Sign-in authentication method.
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /me/authentication/passwordlessMicrosoftAuthenticatorMethods
 ```
 
@@ -49,7 +49,7 @@ GET /me/authentication/passwordlessMicrosoftAuthenticatorMethods
 
 Get details of your own or another user's Microsoft Authenticator Passwordless Phone Sign-in authentication method.
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /users/{id | userPrincipalName}/authentication/passwordlessMicrosoftAuthenticatorMethods
 ```
 
@@ -78,16 +78,12 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "get_passwordlessmicrosoftauthenticatorauthenticationmethod_2"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/authentication/passwordlessMicrosoftAuthenticatorMethods
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-passwordlessmicrosoftauthenticatorauthenticationmethod-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-passwordlessmicrosoftauthenticatorauthenticationmethod-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -126,7 +122,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.passwordlessMicrosoftAuthenticatorAuthenticationMethod)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

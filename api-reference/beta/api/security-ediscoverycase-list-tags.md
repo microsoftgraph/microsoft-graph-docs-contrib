@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-``` http
+```http
 GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags
 ```
 
@@ -52,16 +52,12 @@ The following example shows a request that lists tags.
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-cebe-478f-b1af-d3227f1fd645/tags
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-ediscoveryreviewtag-and-properties-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-ediscoveryreviewtag-and-properties-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -99,7 +95,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.ediscoveryReviewTag"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -1,5 +1,5 @@
 ---
-title: "tenantScope resource type (preview)"
+title: "tenantScope resource type"
 description: "Represents the entire tenant as a scope within policy bindings."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the entire tenant ('All users') as a scope within policy bindings.
+
+Inherits from [scopeBase](../resources/scopebase.md).
 
 ## Properties
 

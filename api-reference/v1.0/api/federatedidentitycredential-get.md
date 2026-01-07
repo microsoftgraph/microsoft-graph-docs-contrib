@@ -1,6 +1,6 @@
 ---
 title: "Get federatedIdentityCredential"
-description: "Read the properties and relationships of a federatedIdentityCredential object."
+description: "Read the properties and relationships of a federatedIdentityCredential object assigned to an application."
 author: "nickludwig"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
@@ -12,7 +12,7 @@ ms.date: 04/04/2024
 Namespace: microsoft.graph
 
 
-Read the properties and relationships of a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.
+Read the properties and relationships of a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object assigned to an [application](../resources/application.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -22,6 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "federatedidentitycredential_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/federatedidentitycredential-get-permissions.md)]
 
+[!INCLUDE [rbac-apps-serviceprincipal-creds-apis](../includes/rbac-for-apis/rbac-apps-serviceprincipal-creds-apis.md)]
 
 ## HTTP request
 
@@ -31,8 +32,11 @@ You can also address the federated identity credential with either its **id** or
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredentialId}
+
 GET /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredentialName}
+
 GET /applications(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialId}
+
 GET /applications(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialName}
 ```
 
@@ -55,8 +59,6 @@ If successful, this method returns a `200 OK` response code and a [federatedIden
 
 ### Request
 
-
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -69,10 +71,6 @@ GET https://graph.microsoft.com/v1.0/applications/acd7c908-1c4d-4d48-93ee-ff3834
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-federatedidentitycredential-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-federatedidentitycredential-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

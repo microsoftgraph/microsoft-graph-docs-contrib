@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /users/{userId | user-principal-name}/teamwork/sendActivityNotification
 ```
 
@@ -77,7 +77,7 @@ If successful, this action returns a `204 No Content` response code.
   "name": "userteamwork_sendactivitynotification"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/users/{userId}/teamwork/sendActivityNotification
 Content-Type: application/json
 
@@ -101,10 +101,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/userteamwork-sendactivitynotification-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/userteamwork-sendactivitynotification-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -139,7 +135,7 @@ Content-Type: application/json
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -155,7 +151,7 @@ If you want to link an aspect that Microsoft Graph doesn't represent, or you wan
   "name": "team_sendactivitynotification_for_customer_topic"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/users/{userId}/teamwork/sendActivityNotification
 Content-Type: application/json
 
@@ -180,10 +176,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-for-customer-topic-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/team-sendactivitynotification-for-customer-topic-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -219,7 +211,7 @@ Content-Type: application/json
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -266,10 +258,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/userteamwork-sendactivitynotification-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/userteamwork-sendactivitynotification-3-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/userteamwork-sendactivitynotification-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -305,7 +293,7 @@ The following example shows the response.
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

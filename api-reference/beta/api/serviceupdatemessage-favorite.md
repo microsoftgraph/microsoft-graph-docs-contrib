@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /admin/serviceAnnouncement/messages/favorite
 ```
 
@@ -62,7 +62,7 @@ If successful, this action returns a `200 OK` response code and a Boolean value 
   "name": "serviceupdatemessage_favorite"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/admin/serviceAnnouncement/messages/favorite
 Content-Type: application/json
 
@@ -73,10 +73,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceupdatemessage-favorite-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/serviceupdatemessage-favorite-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -112,7 +108,7 @@ Content-Type: application/json
   "@odata.type": "string"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

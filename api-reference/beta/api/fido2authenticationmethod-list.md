@@ -1,12 +1,12 @@
 ---
 title: "List fido2AuthenticationMethod"
 description: "Retrieve a list of the fido2AuthenticationMethod objects and their properties."
-author: "calvinlui"
+author: "hanki71"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 10/23/2024
+ms.date: 07/28/2024
 ---
 
 # List fido2AuthenticationMethod
@@ -14,43 +14,44 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of a user's [FIDO2 Security Key Authentication Method](../resources/fido2authenticationmethod.md) objects and their properties.
+Retrieve a list of a user's [FIDO2 security key authentication method](../resources/fido2authenticationmethod.md) objects and their properties.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### Permissions acting on self
-
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+<!-- { 
+  "blockType": "permissions", 
+  "name": "fido2authenticationmethod_list", 
+  "requestUrls": ["GET /users/{id | userPrincipalName}/authentication/fido2Methods"]
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/fido2authenticationmethod-list-permissions.md)]
-
-### Permissions acting on other users
-
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-[!INCLUDE [permissions-table](../includes/permissions/fido2authenticationmethod-list-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
 
 ## HTTP request
 
 Retrieve the details of your own FIDO2 authentication methods.
-<!-- { "blockType": "ignored" } -->
-``` http
-GET /me/authentication/fido2Methods
-```
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
-Retrieve the details of your own or another user's FIDO2 authentication methods.
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
+GET /me/authentication/fido2Methods
+```
+
+Retrieve the details of your own or another user's FIDO2 authentication methods.
+
+[!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
+
+<!-- { "blockType": "ignored" } -->
+```http
 GET /users/{id | userPrincipalName}/authentication/fido2Methods
 ```
 
 ## Optional query parameters
-This method does not support optional query parameters to customize the response.
+Not supported.
 
 ## Request headers
 |Name|Description|
@@ -74,16 +75,12 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "get_fido2authenticationmethod_2"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/authentication/fido2Methods
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-fido2authenticationmethod-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-fido2authenticationmethod-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -122,7 +119,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.fido2AuthenticationMethod)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -137,7 +134,8 @@ Content-type: application/json
       "attestationCertificates": [
           "dbe793efdf1945e2df25d93653a1e8a3268a9075"
       ],
-      "attestationLevel": "attested"
+      "attestationLevel": "attested",
+      "passkeyType": "deviceBound"
     },
     {
       "id": "_jpuR-TGZgk6aQCLF3BQjA2",
@@ -148,7 +146,8 @@ Content-type: application/json
       "attestationCertificates": [
           "b479e7652167f574296e76bfa76731b8ccd22ed7"
       ],
-      "attestationLevel": "attested"
+      "attestationLevel": "attested",
+      "passkeyType": "deviceBound"
     }
   ]
 }

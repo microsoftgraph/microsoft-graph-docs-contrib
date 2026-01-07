@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change which could break your applications. While Intune /beta APIs are supported by Microsoft, you should use these at your own discretion. In general, /beta APIs are not recommended for use in production applications. To determine whether an API is available in v1.0, use the Version selector.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceManagement/deviceHealthScripts
 ```
 
@@ -60,13 +60,13 @@ The following table shows the properties that are required when you create the d
 |remediationScriptContent|Binary|The entire content of the remediation powershell script|
 |createdDateTime|DateTimeOffset|The timestamp of when the device health script was created. This property is read-only.|
 |lastModifiedDateTime|DateTimeOffset|The timestamp of when the device health script was modified. This property is read-only.|
-|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indicates the type of execution context. Possible values are: `system`, `user`.|
+|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indicates the type of execution context. The possible values are: `system`, `user`.|
 |enforceSignatureCheck|Boolean|Indicate whether the script signature needs be checked|
 |runAs32Bit|Boolean|Indicate whether PowerShell script(s) should run as 32-bit|
 |roleScopeTagIds|String collection|List of Scope Tag IDs for the device health script|
 |isGlobalScript|Boolean|Determines if this is Microsoft Proprietary Script. Proprietary scripts are read-only|
 |highestAvailableVersion|String|Highest available version for a Microsoft Proprietary script|
-|deviceHealthScriptType|[deviceHealthScriptType](../resources/intune-devices-devicehealthscripttype.md)|DeviceHealthScriptType for the script policy. Possible values are: `deviceHealthScript`, `managedInstallerScript`.|
+|deviceHealthScriptType|[deviceHealthScriptType](../resources/intune-devices-devicehealthscripttype.md)|DeviceHealthScriptType for the script policy. The possible values are: `deviceHealthScript`, `managedInstallerScript`.|
 |detectionScriptParameters|[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md) collection|List of ComplexType DetectionScriptParameters objects.|
 |remediationScriptParameters|[deviceHealthScriptParameter](../resources/intune-devices-devicehealthscriptparameter.md) collection|List of ComplexType RemediationScriptParameters objects.|
 
@@ -79,7 +79,7 @@ If successful, this method returns a `201 Created` response code and a [deviceHe
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts
 Content-type: application/json
 Content-length: 1276
@@ -126,7 +126,7 @@ Content-length: 1276
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 1448

@@ -4,7 +4,7 @@ description: "Indicates the identity of the application that performed the actio
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-monitoring-health"
-author: "sureshja"
+author: "Jackson-Woods"
 ms.date: 07/23/2024
 ---
 

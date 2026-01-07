@@ -14,7 +14,7 @@ from msgraph_beta.generated.models.export_format import ExportFormat
 request_body = ExportResultPostRequestBody(
 	display_name = "Export 1 - simple PST",
 	export_criteria = ExportCriteria.SearchHits,
-	additional_options = AdditionalOptions.None,
+	additional_options = AdditionalOptions.HtmlTranscripts | AdditionalOptions.SplitSource | AdditionalOptions.IncludeFolderAndPath | AdditionalOptions.CondensePaths | AdditionalOptions.FriendlyName,
 	export_format = ExportFormat.Pst,
 )
 

@@ -49,7 +49,7 @@ In the request body, supply the new value for **classifyAs**. For best performan
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|classifyAs|string| Specifies how incoming messages from a specific sender should always be classified as. Possible values are: `focused`, `other`.|
+|classifyAs|string| Specifies how incoming messages from a specific sender should always be classified as. The possible values are: `focused`, `other`.|
 
 ## Response
 
@@ -75,10 +75,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-inferenceclassificationoverride-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-inferenceclassificationoverride-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /security/labels/categories/{categoryTemplateId}/subcategories/{subcategoryTemplateId}/$ref
 ```
 
@@ -53,16 +53,12 @@ The following example shows a request.
   "name": "delete_subcategorytemplate"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/security/labels/categories/6cf65e55-6baf-44ff-5dcc-08d8de97b1d5/subcategories/f44dkle55-6baf-44ff-5dcc-08d8de97b1d5
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-subcategorytemplate-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-subcategorytemplate-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -99,7 +95,7 @@ Here's an example of the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

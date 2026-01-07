@@ -16,7 +16,7 @@ import (
 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
-calendars, err := graphClient.Me().Calendars().ByCalendarId("calendar-id").Get(context.Background(), nil)
+delta, err := graphClient.Me().Calendars().Delta().GetAsDeltaGetResponse(context.Background(), nil)
 
 
 ```

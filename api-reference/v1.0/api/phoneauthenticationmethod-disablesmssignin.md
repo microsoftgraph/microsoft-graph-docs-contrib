@@ -6,7 +6,7 @@ author: "luc-msft"
 ms.reviewer: intelligentaccesspm
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
-ms.date: 11/21/2024
+ms.date: 07/31/2025
 ---
 
 # phoneAuthenticationMethod: disableSmsSignIn
@@ -19,39 +19,34 @@ Disable SMS sign-in for an existing `mobile` phone number registered to a user. 
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### Permissions acting on self
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|UserAuthenticationMethod.ReadWrite|UserAuthenticationMethod.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|Not supported.|Not supported.|
-
-### Permissions acting on other users
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|UserAuthenticationMethod.ReadWrite.All|Not available.|
-|Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|UserAuthenticationMethod.ReadWrite.All|Not available.|
+<!-- { 
+  "blockType": "permissions", 
+  "name": "phoneauthenticationmethod_disablesmssignin", 
+  "requestUrls": ["POST /users/{id | userPrincipalName}/authentication/phoneMethods/{id}/disableSmsSignIn"]
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/phoneauthenticationmethod-disablesmssignin-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
 ## HTTP request
 
 Disable SMS sign-in for your own mobile phone authentication method.
-<!-- { "blockType": "ignored" } -->
-``` http
-POST /me/authentication/phoneMethods/{mobilePhoneMethodId}/disableSmsSignIn
-```
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
-Disable SMS sign-in for your own or another user's mobile phone authentication method.
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
+POST /me/authentication/phoneMethods/{mobilePhoneMethodId}/disableSmsSignIn
+```
+
+Disable SMS sign-in for your own or another user's mobile phone authentication method.
+
+[!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
+
+<!-- { "blockType": "ignored" } -->
+```http
 POST /users/{id | userPrincipalName}/authentication/phoneMethods/{mobilePhoneMethodId}/disableSmsSignIn
 ```
 
@@ -92,10 +87,6 @@ POST https://graph.microsoft.com/v1.0/me/authentication/phoneMethods/3179e48a-75
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/phoneauthenticationmethod-disablesmssignin-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/phoneauthenticationmethod-disablesmssignin-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

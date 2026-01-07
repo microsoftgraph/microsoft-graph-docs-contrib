@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of all the roles that can be assigned in Viva Engage.
+Get a list of all the [roles](../resources/engagementrole.md) that can be assigned in Viva Engage.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -37,7 +37,15 @@ GET /employeeExperience/roles
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` (`eq`), `$select`, `$top`, and `$count` OData query parameters. For general information, see [OData query parameters](/graph/query-parameters). Only the **displayName** and **id** properties support the `$filter` parameter.
+
+The following table shows how you can use OData query parameters with this API. 
+
+| Description | HTTP request |
+|:---|:---|
+| Get the first 10 roles and include the count of total roles | `GET /employeeExperience/roles?$top=10&$count=true` |
+| Filter roles by the display name `Network Admin` | `GET /employeeExperience/roles?$filter=displayName eq 'Network Admin'` |
+| Get only the **id** and **displayName** properties for a list of roles | `GET /employeeExperience/roles?$select=id,displayName` |
 
 ## Request headers
 
@@ -68,8 +76,28 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/employeeExperience/roles
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-engagementrole-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-engagementrole-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-engagementrole-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/list-engagementrole-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-engagementrole-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-engagementrole-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

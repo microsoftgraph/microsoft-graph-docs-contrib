@@ -7,6 +7,7 @@ ms.subservice: "industry-data-etl"
 ms.custom: scenarios:getting-started
 doc_type: conceptual
 ms.date: 11/07/2024
+ms.topic: concept-article
 ---
 
 # Overview of the industry data API in Microsoft Graph (preview)

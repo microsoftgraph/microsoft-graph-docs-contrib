@@ -4,6 +4,7 @@ description: Learn about the Microsoft Graph SDKs.
 author: MichaelMainer
 ms.custom: scenarios:getting-started
 ms.date: 11/07/2024
+ms.topic: concept-article
 ---
 
 # Microsoft Graph SDK overview

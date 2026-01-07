@@ -1,5 +1,5 @@
 ---
-title: "dlpActionInfo resource type (preview)"
+title: "dlpActionInfo resource type"
 description: "Base type for actions defined within a Data Loss Prevention (DLP) rule."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -16,13 +16,13 @@ Namespace: microsoft.graph
 
 Base type for actions defined within a Data Loss Prevention (DLP) rule.
 
-Specific actions like `blockAccessAction` or `notifyUserAction` inherit from this type.
+Specific actions like [restrictAccessActionBase](../resources/restrictaccessactionbase.md)  inherit from this type.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|action|microsoft.graph.security.dlpAction|The type of DLP action. Possible values are `notifyUser`, `blockAccess`, `deviceRestriction`, `browserRestriction`,`restrictAccess`,`generateAlert`,`generateIncidentReportAction`,`sPBlockAnonymousAccess`,`sPRuntimeAccessControl`,`sPSharingNotifyUser`,`sPSharingGenerateIncidentReport`.|
+|action|microsoft.graph.security.dlpAction|The type of DLP action. Possible value is `restrictAccessAction`.|
 
 ## Relationships
 

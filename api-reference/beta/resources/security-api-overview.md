@@ -5,7 +5,7 @@ ms.localizationpriority: high
 author: "preetikr"
 doc_type: conceptualPageType
 ms.subservice: "security"
-ms.date: 10/31/2024
+ms.date: 11/03/2025
 ---
 
 # Use the Microsoft Graph security API
@@ -50,6 +50,7 @@ Use [runHuntingQuery](../api/security-security-runhuntingquery.md) to run a [Kus
 5. A response code of HTTP 429 means you have reached the quota for either the number of API calls or execution time. Refer to the response body to confirm the limit you have reached.
 
 6. The maximum query result size of a single request cannot exceed 124 MB. Exceeding the size limit results in HTTP 400 Bad Request with the message "Query execution has exceeded the allowed result size. Optimize your query by limiting the number of results and try again."
+7. Query results have an overall size limit of 50 MB. This limit doesn't just refer to the number of records; factors such as the number of columns, data types, and field lengths also contribute to the query result size.
 
 ## Custom detections
 You can create advanced hunting [Custom detection rules](/microsoft-365/security/defender/custom-detections-overview) specific to your security operations to allow you to proactively monitor for threats and take action. For instance, you can make custom detection rules that look for known indicators or misconfigured devices. These automatically trigger alerts and any response actions that you specify.
@@ -106,7 +107,7 @@ Alerts from the following security providers are available via the legacy **aler
 
 > **Note:** New providers are continuously onboarding to the Microsoft Graph security ecosystem. To request new providers or for extended support from existing providers, [file an issue in the Microsoft Graph security GitHub repo](https://github.com/microsoftgraph/security-api-solutions/issues/new).
 
-\* File issue: Alert status gets updated across Microsoft Graph security API integrated applications but isn't reflected in the provider’s management experience.
+\* File issue: Alert status gets updated across Microsoft Graph security API integrated applications but isn't reflected in the provider's management experience.
 
 \*\* Microsoft Defender for Endpoint requires additional [user roles](/windows/security/threat-protection/microsoft-defender-atp/user-roles) to those required by the Microsoft Graph security API. Only the users in both Microsoft Defender for Endpoint and Microsoft Graph security API roles can have access to the Microsoft Defender for Endpoint data. Because application-only authentication isn't limited by this, we recommend that you use an application-only authentication token.
 
@@ -135,7 +136,11 @@ The Microsoft Defender for Identity health issues API allows you to monitor the 
 
 ### Sensors
 
-The Defender for Identity sensors management API allows you to create detailed reports of the sensors in your workspace, including information about the server name, sensor version, type, state, and health status. It also enables you to manage sensor settings, such as adding descriptions, enabling or disabling delayed updates, and specifying the domain controller that the sensor connects to for querying Entra ID.
+The Defender for Identity sensors management APIs allows you to:
+- Create detailed reports of the sensors in your workspace, including information about the server name, sensor version, type, state, and health status.
+- Manage sensor settings, such as adding descriptions, enabling or disabling delayed updates, and specifying the domain controller that the sensor connects to for querying Entra ID.
+- Identify sensors that are ready to be activated.
+- Define whether the sensors in your infrastructure are to be activated automatically or manually.
 
 ## Incidents
 
@@ -163,6 +168,21 @@ The  [incident](security-incident.md) resource and its APIs allow you to sort 
 
 > **Note:** We recommend that you use the [threat submission](https://github.com/microsoftgraph/microsoft-graph-docs/pull/16242/files#threat-submission) API instead.
 
+## Security Copilot (Preview)
+
+Microsoft Security Copilot is a generative AI-powered security analysis tool that enables defenders to respond to threats quickly, process signals at machine speed, and assess risk exposure in minutes. It enhances the effectiveness of security professionals across roles and workflows, supporting incident response, threat hunting, intelligence gathering, posture management, and more.
+
+Security Copilot transforms natural language prompts into intelligent, actionable guidance, streamlining complex operations and bridging cybersecurity talent gaps. It allows defenders to complete tasks in minutes instead of hours or days.
+
+The Security Copilot resource and its APIs allow developers to embed Security Copilot chat experiences into custom portals or applications. It supports creating sessions, prompts, evaluations using the available plugins, enabling tailored AI-driven security workflows.
+
+- A [session](../resources/security-securitycopilot-session.md) in Security Copilot stores any AI prompts and evaluation results generated. Sessions can only be viewed by the user who created the session.
+- You can have one or more [prompt](../resources/security-securitycopilot-prompt.md) objects within a session. Creating a prompt does not generate an automatic AI result. The evaluation API is required to start processing the prompt.
+- AI processing begins as soon as an [evaluation](../resources/security-securitycopilot-evaluation.md) is created. Creation of an evaluation using the prompt starts the AI reasoning. The API allows you to poll for the intermediary results until the AI evaluation is complete.
+
+For more information, see:
+- [Security Copilot primary use cases](/copilot/security/use-case-role-overview)
+- [Usage and billing in Microsoft Security Copilot](/copilot/security/manage-usage)
 
 ## Records management
 
@@ -171,6 +191,7 @@ Most organizations need to manage data to proactively comply with industry regul
 ## Secure Score
 
 [Microsoft Secure Score](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Office-365-Secure-Score-is-now-Microsoft-Secure-Score/ba-p/182358) is a security analytics solution that gives you visibility into your security portfolio and how to improve it. With a single score, you can better understand what you have done to reduce your risk in Microsoft solutions. You can also compare your score with other organizations and see how your score has been trending over time. The [secureScore](securescore.md) and [secureScoreControlProfile](securescorecontrolprofiles.md) entities help you balance your organization's security and productivity needs while enabling the appropriate mix of security features. You can also project what your score will be after you adopt security features.
+
 
 ## Threat intelligence (preview)
 
@@ -195,7 +216,8 @@ You can integrate the [tiIndicator](tiindicator.md) entity into your application
 Threat indicators sent via the Microsoft Graph security API are available today in the following products:
 
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) – Enables you to alert and/or block threat indicators associated with malicious activity. You can also allow an indicator for ignoring the indicator from automated investigations. For details about the types of indicators supported and limits on indicator counts per tenant, see [Manage indicators](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
-- [Microsoft Sentinel](/azure/sentinel/overview) – Only existing customers can use the [tiIndicator](tiindicator.md) API to send threat intelligence indicators to Microsoft Sentinel. For the most up-to-date, detailed instructions on how to send threat intelligent indicators to Microsoft Sentinel, see [Connect your threat intelligence platform to Microsoft Sentinel](/azure/sentinel/connect-threat-intelligence-tip).
+- [Microsoft Sentinel](/azure/sentinel/overview) – For the most up-to-date, detailed instructions on how to send threat intelligent indicators to Microsoft Sentinel, see [Connect your threat intelligence platform to Microsoft Sentinel](/azure/sentinel/connect-threat-intelligence-tip).
+
 ## Threat submission
 
 The Microsoft Graph threat submission API helps organizations to submit a threat received by any user in a tenant. This empowers customers to report spam or suspicious emails, phishing URLs, or malware attachments they receive to Microsoft. Microsoft checks the submission against the organizational policies in effect and sends it to human graders for analysis. The result then helps tenant administrators understand the threat scanning verdict and adjust their organizational policy. Admins can also use the results to report legitimate emails to prevent them from getting blocked.
@@ -211,6 +233,9 @@ The Microsoft Graph threat submission API helps organizations to submit a threat
 
 ### Sensors
 The Defender for Identity sensors management API allows you to create detailed reports of the sensors in your workspace, including information about the server's name, sensor version, type, state, and health status. It also enables you to manage sensor settings, such as adding descriptions, enabling or disabling delayed updates, and specifying the domain controller that the sensor connects to to query Entra ID.
+
+### identityAccounts
+The [identityAccounts resource and related APIs](../resources/security-identityaccounts.md) allows you to retrieve details of users that are flagged by Microsoft Defender for Identity alerts, and apply actions such as disabling accounts and resetting the user password for the compromised user.
 
 ## Data security and governance (preview)
 Microsoft Purview unifies data governance and compliance across your organization's data estate. It provides centralized controls for data discovery, classification, and protection - integrating directly with Microsoft 365 and third-party data sources. Think of it as a command center for managing sensitive information and ensuring regulatory compliance across all your data, whether it lives in databases, documents, or cloud storage.
@@ -249,6 +274,12 @@ The following are some of the most popular requests for working with the Microso
 | **Secure score control profiles**|||
 |List secure score control profiles|[List secureScoreControlProfiles](../api/securescorecontrolprofiles-list.md)|[https://graph.microsoft.com/beta/security/secureScoreControlProfiles](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScoreControlProfiles&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
 |Update secure score control profiles|[Update secureScoreControlProfiles](../api/securescorecontrolprofiles-update.md)|[https://graph.microsoft.com/beta/security/secureScoreControlProfiles/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScoreControlProfiles/{id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com)|
+| **Security Copilot (preview)**|||
+|List sessions|[List sessions](../api/security-securitycopilot-workspace-list-sessions.md)|[https://graph.microsoft.com/beta/security/securityCopilot/workspaces/default/sessions](https://developer.microsoft.com/graph/graph-explorer?request=security/securitycopilot/workspaces/default/sessions&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Create session|[Create session](../api/security-securitycopilot-workspace-post-sessions.md)|[https://graph.microsoft.com/beta/security/securityCopilot/workspaces/default/sessions](https://developer.microsoft.com/graph/graph-explorer?request=security/securitycopilot/workspaces/default/sessions&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Create prompt|[Create prompt](../api/security-securitycopilot-session-post-prompts.md)| [https://graph.microsoft.com/beta/security/securityCopilot/workspaces/default/sessions/{id}/prompts](https://developer.microsoft.com/graph/graph-explorer?request=security/securitycopilot/workspaces/default/sessions/{id}/prompts&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Create evaluation|[Create evaluation](../api/security-securitycopilot-prompt-post-evaluations.md)|[https://graph.microsoft.com/beta/security/securityCopilot/workspaces/default/sessions/{id}/prompts/{id}/evaluations](https://developer.microsoft.com/graph/graph-explorer?request=security/securitycopilot/workspaces/default/sessions/{id}/prompts/{id}/evaluations&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Get evaluation|[Get evaluation](../api/security-securitycopilot-evaluation-get.md)| [https://graph.microsoft.com/beta/security/securityCopilot/workspaces/default/sessions/{id}/evaluations{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/securitycopilot/workspaces/default/sessions/{id}/prompts/{id}/evaluations/{id}&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
 | **Threat intelligence indications (preview)**|||
 |Get TI indicator|[Get tiIndicator](../api/tiindicator-get.md)| [https://graph.microsoft.com/beta/security/tiIndicators/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/{id}&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
 |List TI Indicators | [List tiIndicators](../api/tiindicators-list.md) | [https://graph.microsoft.com/beta/security/tiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
@@ -286,7 +317,7 @@ The following are some of the most popular requests for working with the Microso
 | Create content activity|[Create content activity](../api/activitiescontainer-post-contentactivities.md)||
 
 
-You can use Microsoft Graph [webhooks](/graph/webhooks) to subscribe to and receive notifications about updates to Microsoft Graph security API entities.
+You can use Microsoft Graph [change notifications](/graph/change-notifications-overview) to subscribe to and receive notifications about updates to Microsoft Graph security API entities.
 
 ## Next steps
 
@@ -294,7 +325,7 @@ The Microsoft Graph security API can open up new ways for you to engage with dif
 
 - Drill down into [alerts](alert.md), [tiIndicator](tiindicator.md) (preview), [securityAction](securityaction.md) (preview), [secureScore](securescore.md), and [secureScoreControlProfiles](securescorecontrolprofiles.md).
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer). Under **Sample queries**, choose **Show more samples** and set the Security category to **On**.
-- Try [subscribing to and receiving notifications](/graph/webhooks) on entity changes.
+- Try [subscribing to and receiving notifications](/graph/change-notifications-overview) on entity changes.
 
 ## Related content
 

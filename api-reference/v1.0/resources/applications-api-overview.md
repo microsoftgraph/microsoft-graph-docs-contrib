@@ -3,7 +3,7 @@ title: Manage Microsoft Entra Applications Using Microsoft Graph
 description: Learn how to register, update, and manage Microsoft Entra applications and service principals using Microsoft Graph APIs.
 author: FaithOmbongi
 ms.author: ombongifaith
-ms.reviewer: sureshja
+ms.reviewer: Jackson-Woods
 ms.date: 04/29/2025
 ms.topic: concept-article
 ms.localizationpriority: medium
@@ -23,6 +23,8 @@ In Microsoft Entra, an application is defined by an **application** object and a
 The application object is located in the tenant where the app is registered. A service principal is created in the tenant where the app is registered, and in every tenant where it's installed and used. For more information, see [Application and service principal objects in Microsoft Entra ID](/entra/identity-platform/app-objects-and-service-principals).
 
 In Microsoft Graph, an application is represented by the [application resource type](application.md), and a service principal is represented by the [servicePrincipal resource type](serviceprincipal.md). The details of the two objects can be accessed on the Microsoft Entra admin center through the **Entra ID** > **App registrations** and **Entra ID** > **Enterprise applications** menus respectively.
+
+Service principals inherit specific properties from their associated app registrations. These properties are synchronized from the app registration, but the synchronization isn't immediate or continuous. Sometimes, updating a service principal may prompt the directory to refresh properties from the app registration, causing updates that weren't part of the original request.
 
 ## API use cases for managing applications
 

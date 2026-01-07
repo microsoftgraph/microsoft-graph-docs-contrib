@@ -186,6 +186,10 @@ Outlook service limits apply to the public cloud and [national cloud deployments
 
 [!INCLUDE [Outlook throttling documentation](../includes/throttling-outlook.md)]
 
+## Places service limits
+
+[!INCLUDE [Places throttling documentation](../includes/throttling-places.md)]
+
 ## Project Rome service limits
 
 [!INCLUDE [Project Rome throttling documentation](../includes/throttling-project-rome.md)]
@@ -213,6 +217,10 @@ Outlook service limits apply to the public cloud and [national cloud deployments
 ## Viva Engage service limits
 
 [!INCLUDE [Viva Engage throttling documentation](../includes/throttling-viva-engage.md)]
+
+## Windows 365 service limits
+
+[!INCLUDE [Windows 365 throttling documentation](../includes/throttling-windows-365.md)]
 
 ## Related content
 

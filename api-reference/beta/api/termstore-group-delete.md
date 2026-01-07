@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /termStore/groups/{groupId}
 ```
 
@@ -56,16 +56,12 @@ If successful, this method returns a `204 No Content` response code.
   "name": "delete_group_from_store"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/termStore/groups/{groupId}
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-group-from-store-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-group-from-store-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -96,7 +92,7 @@ DELETE https://graph.microsoft.com/beta/termStore/groups/{groupId}
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

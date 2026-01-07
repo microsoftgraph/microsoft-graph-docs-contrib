@@ -2,7 +2,7 @@
 title: "servicePrincipal: addPassword"
 description: "Add a strong password to a servicePrincipal."
 ms.localizationpriority: medium
-author: "sureshja"
+author: "Jackson-Woods"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ms.date: 04/05/2024
@@ -22,6 +22,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "serviceprincipal_addpassword" } -->
 [!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-addpassword-permissions.md)]
+
+[!INCLUDE [rbac-apps-serviceprincipal-creds-apis](../includes/rbac-for-apis/rbac-apps-serviceprincipal-creds-apis.md)]
 
 ## HTTP request
 
@@ -44,7 +46,7 @@ POST /servicePrincipals(appId='{appId}')/addPassword
 
 In the request body, provide an empty [passwordCredential](../resources/passwordcredential.md) object or with the following optional properties.
 
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 | displayName | String | Friendly name for the password. Optional. |
 | endDateTime | DateTimeOffset | The date and time at which the password expires represented using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional. The default value is "startDateTime + 2 years". |

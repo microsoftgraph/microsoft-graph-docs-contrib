@@ -42,7 +42,7 @@ POST /education/classes/{id}/modules
 In the request body, supply a JSON representation of an [educationModule](../resources/educationmodule.md) object.
 
 ## Response
-If successful, this method returns a `201 OK` response code and an [educationModule](../resources/educationmodule.md) object in the request body.
+If successful, this method returns a `201 Created` response code and an [educationModule](../resources/educationmodule.md) object in the request body.
 
 ## Example
 
@@ -67,10 +67,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-educationmodule-from-educationclass-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-educationmodule-from-educationclass-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -110,7 +106,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.educationModule"
 } -->
 ```http
-HTTP/1.1 201 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {

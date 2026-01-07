@@ -7,15 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 // Code snippets are only available for the latest version. Current version is 5.x
 
 // Dependencies
-using Microsoft.Graph.Beta.Security.Cases.EdiscoveryCases.Item.Searches.Item.MicrosoftGraphSecurityExportResult;
-using Microsoft.Graph.Beta.Models.Security;
+using Microsoft.Graph.Security.Cases.EdiscoveryCases.Item.Searches.Item.MicrosoftGraphSecurityExportResult;
+using Microsoft.Graph.Models.Security;
 
 var requestBody = new ExportResultPostRequestBody
 {
 	DisplayName = "Export 5",
 	ExportCriteria = ExportCriteria.PartiallyIndexed,
 	ExportLocation = ExportLocation.ResponsiveLocations,
-	AdditionalOptions = AdditionalOptions.CloudAttachments,
+	AdditionalOptions = AdditionalOptions.SplitSource | AdditionalOptions.IncludeFolderAndPath | AdditionalOptions.CondensePaths | AdditionalOptions.FriendlyName,
 	ExportFormat = ExportFormat.Eml,
 	CloudAttachmentVersion = CloudAttachmentVersion.All,
 	DocumentVersion = DocumentVersion.Recent100,

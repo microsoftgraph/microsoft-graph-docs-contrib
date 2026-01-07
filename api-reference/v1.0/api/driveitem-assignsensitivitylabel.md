@@ -28,6 +28,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "driveitem_assignsensitivitylabel" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-assignsensitivitylabel-permissions.md)]
 
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
+
 ## HTTP request
 
 <!-- {
@@ -67,7 +69,7 @@ If successful, the API returns a `202 Accepted` HTTP response code with an empty
 For more information about how to monitor the progress of an assign sensitivity label operation, see [monitoring long-running operations](/graph/long-running-actions-overview).
 
 In addition to general errors that apply to Microsoft Graph, this API returns the `423 Locked` response code, which indicates that the file being accessed is locked. In such cases, the **code** property of the response object indicates the error type that blocks the operation.
-Also, Few Irm Protected sensitivity labels can't be updated by Application and need delegated user access to validate if the user has proper rights, and for these scenarios the API will throw `Not Supported` response code.
+Also, Few Irm Protected sensitivity labels can't be updated by Application and need delegated user access to validate if the user has proper rights, and for these scenarios the API returns a `Not Supported` response code.
 
 The following table lists the possible values for the error types.
 
@@ -113,7 +115,7 @@ Here's is an example of the response.
 HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/QXNzaWduU2Vuc2l0aXZpdHlMYWJlbCxiMzc3ODY3OS04OWQ3LTRkYmYtYjg0MC1jYWM1NzRhY2FlNmE?tempAuth=eyJ0eXAiOiJKV1QiLCJhb....
 ```
-The value of the `Location` header provides a URL for a service that will return the current state of the assign sensitivity label operation.
+The value of the `Location` header provides a URL for a service that returns the current state of the assign sensitivity label operation.
 You can use this information to [determine when the assign sensitivity label operation has finished](/graph/long-running-actions-overview).
 
 ### Remarks

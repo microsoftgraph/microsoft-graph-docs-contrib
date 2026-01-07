@@ -19,7 +19,7 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 $queryParameters = SensitivityLabelsRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->filter = "applicableTo eq 'File' and id in ('4e4234dd-377b-42a3-935b-0e42f138fa23','b7a21bba-8197-491f-a5d6-0d0f955397ca')";
+$queryParameters->filter = "applicableTo has 'File' and id in ('4e4234dd-377b-42a3-935b-0e42f138fa23','b7a21bba-8197-491f-a5d6-0d0f955397ca')";
 $requestConfiguration->queryParameters = $queryParameters;
 
 

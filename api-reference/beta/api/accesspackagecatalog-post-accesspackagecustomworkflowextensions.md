@@ -17,7 +17,7 @@ Create a new [accessPackageAssignmentRequestWorkflowExtension](../resources/acce
 
 You must explicitly provide an `@odata.type` property that indicates whether the object is an  **accessPackageAssignmentRequestWorkflowExtension** or an **accessPackageAssignmentWorkflowExtension**.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -102,10 +102,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageassignmentrequestworkflowextension-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-accesspackageassignmentrequestworkflowextension-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -210,10 +206,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageassignmentworkflowextension-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-accesspackageassignmentworkflowextension-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accesspackageassignmentworkflowextension-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -275,3 +267,77 @@ Content-Type: application/json
 }
 ```
 
+### Example 3: Create a custom extension for use with an approval stage callback
+
+The following is an example of a access package assignment request custom workflow extension.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accessPackageAssignmentRequestWorkflowExtension_direct_approval"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/a9286c9c-7659-4b2e-ba44-4d1f2ce07746/accessPackagecustomWorkflowExtensions
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",
+  "displayName": "test_action_0124_email",
+  "description": "this is for graph testing only",
+  "endpointConfiguration": {
+    "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
+    "subscriptionId": "38ab2ccc-3747-4567-b36b-9478f5602f0d",
+    "resourceGroupName": "test",
+    "logicAppWorkflowName": "elm-extension-email"
+  },
+  "authenticationConfiguration": {
+    "@odata.type": "#microsoft.graph.azureAdPopTokenAuthentication"
+  },
+  "callbackConfiguration": {
+    "@odata.type": "microsoft.graph.accessPackageRequestApprovalStageCallbackConfiguration",
+    "durationBeforeTimeout": "PT1H"
+  }
+}
+```
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.customCalloutExtension"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+   "value":{
+      "@odata.type":"#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",
+      "id":"5afcb385-d500-450c-bbf6-3b74a44403da",
+      "displayName":"test_action_0124_email",
+      "description":"this is for graph testing only",
+      "createdDateTime":"2022-01-24T21:48:57.15Z",
+      "lastModifiedDateTime":"2022-01-24T21:55:44.953Z",
+      "clientConfiguration":null,
+      "endpointConfiguration":{
+         "@odata.type":"#microsoft.graph.logicAppTriggerEndpointConfiguration",
+         "subscriptionId":"e8eb46ab-626d-451f-8668-9434e73cf43b",
+         "resourceGroupName":"test",
+         "logicAppWorkflowName":"elm-extension-email",
+         "url":"https://prod-31.eastus.logic.azure.com:443/workflows/8ccffea766ae48e680gd9a22d1549bbc/triggers/manual/paths/invoke?api-version=2016-10-01"
+      },
+      "authenticationConfiguration":{
+         "@odata.type":"#microsoft.graph.azureAdPopTokenAuthentication"
+      },
+      "callbackConfiguration":{
+         "@odata.type":"microsoft.graph.accessPackageRequestApprovalStageCallbackConfiguration",
+         "durationBeforeTimeout":"PT1H"
+      }
+   }
+} 
+```

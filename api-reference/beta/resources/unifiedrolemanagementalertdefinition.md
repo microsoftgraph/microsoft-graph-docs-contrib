@@ -7,6 +7,7 @@ ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 toc.title: Role management alert definition
 ms.date: 06/12/2024
+ms.custom: sfi-ga-nochange
 ---
 
 # unifiedRoleManagementAlertDefinition resource type

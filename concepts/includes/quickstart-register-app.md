@@ -7,8 +7,8 @@ ms.reviewer: jackson.woods
 ms.topic: include
 ms.localizationpriority: high
 ms.subservice: entra-applications
+ms.custom: sfi-image-nochange, sfi-ropc-nochange
 #Customer intent: As developer, I want to know how to register my client application with the Microsoft identity platform so it can be authorized to access data in the Microsoft cloud.
-
 # Content in this include file is largely duplicated from https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app
 ---
 
@@ -20,7 +20,7 @@ For your app to use the identity and access management (IAM) capabilities of Mic
 ## Prerequisites
 
 - A Microsoft Entra ID tenant. If you don't have a tenant, create a [free Azure account to get free subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account).
-- An account that has at least the [Cloud Application Administrator](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json#cloud-application-administrator) role.
+- [Cloud Application Administrator](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json#cloud-application-administrator) is the least privileged role supported to complete the steps in this article.
 
 ## Register an application
 

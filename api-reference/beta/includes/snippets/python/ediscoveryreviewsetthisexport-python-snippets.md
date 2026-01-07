@@ -13,7 +13,7 @@ from msgraph_beta.generated.models.export_file_structure import ExportFileStruct
 request_body = ExportPostRequestBody(
 	output_name = "Export via API",
 	description = "Export for the Contoso investigation",
-	export_options = ExportOptions.OriginalFiles | ExportOptions.Tags | ExportOptions.SplitSource | ExportOptions.IncludeFolderAndPath | ExportOptions.FriendlyName | ExportOptions.CondensePaths | ExportOptions.OptimizedPartitionSize,
+	export_options = ExportOptions.OriginalFiles | ExportOptions.Tags | ExportOptions.SplitSource | ExportOptions.IncludeFolderAndPath | ExportOptions.FriendlyName | ExportOptions.CondensePaths,
 	export_structure = ExportFileStructure.Msg,
 )
 

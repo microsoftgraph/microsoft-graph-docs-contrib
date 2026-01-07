@@ -1,6 +1,6 @@
 ---
 title: "eventQuery resource type"
-description: "Represents the workload (SharePoint Online, OneDrive for Business, Exchange Online) and identification information associated with a retention event."
+description: "Represents the workload (SharePoint Online, OneDrive for work or school, Exchange Online) and identification information associated with a retention event."
 author: "sseth"
 ms.localizationpriority: medium
 ms.subservice: "compliance"
@@ -14,19 +14,19 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the workload (SharePoint Online, OneDrive for Business, Exchange Online) and identification information associated with a retention event.
+Represents the workload (SharePoint in Microsoft 365, OneDrive for work or school, Exchange Online) and identification information associated with a retention event.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|queryType|microsoft.graph.security.queryType|Represents the type of query associated with an event. 'files' for SPO and ODB and 'messages' for EXO.The possible values are: `files`, `messages`, `unknownFutureValue`.|
-|query|String|Represents unique identification for the  query. 'Asset ID' for SharePoint Online and OneDrive for Business, 'keywords' for Exchange Online.|
+|queryType|microsoft.graph.security.queryType|Represents the type of query associated with an event. 'files' for SharePoint in Microsoft 365 and OneDrive for work or school, and 'messages' for Exchange Online. The possible values are: `files`, `messages`, `unknownFutureValue`.|
+|query|String|Represents unique identification for the  query. 'Asset ID' for SharePoint in Microsoft 365 and OneDrive for work or school, 'keywords' for Exchange Online.|
 
 ## Relationships
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.eventQuery"

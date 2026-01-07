@@ -25,6 +25,7 @@ To customize the authentication process, listeners can be registered which speci
 - [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md) resource type
 - [onPhoneMethodLoadStartListener](../resources/onphonemethodloadstartlistener.md)
 - [onEmailOtpSendListener](../resources/onemailotpsendlistener.md) resource type
+- [onFraudProtectionLoadStartListener](../resources/onFraudProtectionLoadStartListener.md) resource type
 
 > [!NOTE]
 >
@@ -47,6 +48,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |authenticationEventsFlowId|String|The identifier of the [authenticationEventsFlow](../resources/authenticationeventsflow.md) object.|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger.|
+|displayName|String|The display name of the listener.|
 |id|String|Identifier for this authenticationEventListener. Inherited from [entity](../resources/entity.md).|
 |priority|Int32| The priority of this handler. Between 0 (lower priority) and 1000 (higher priority).|
 
@@ -67,6 +69,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.authenticationEventListener",
   "id": "String (identifier)",
+  "displayName": "String",
   "priority": "Integer",
   "conditions": {
     "@odata.type": "microsoft.graph.authenticationConditions"

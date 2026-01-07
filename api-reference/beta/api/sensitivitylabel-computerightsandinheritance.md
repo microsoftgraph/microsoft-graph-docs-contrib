@@ -16,17 +16,13 @@ Namespace: microsoft.graph
 
 Computes the rights and inheritance for sensitivity labels based on the input content and labels.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "sensitivitylabel-computerightsandinheritance-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "sensitivitylabel_computerightsandinheritance" } -->
 [!INCLUDE [permissions-table](../includes/permissions/sensitivitylabel-computerightsandinheritance-permissions.md)]
 
 ## HTTP request
@@ -35,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/dataSecurityAndGovernance/sensitivityLabels/computeRightsAndInheritance
 ```
 
@@ -74,7 +70,7 @@ The following example shows a request.
   "name": "sensitivitylabelthis.computerightsandinheritance"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/sensitivityLabels/computeRightsAndInheritance
 Content-Type: application/json
 
@@ -96,10 +92,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/sensitivitylabelthiscomputerightsandinheritance-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/sensitivitylabelthiscomputerightsandinheritance-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/sensitivitylabelthiscomputerightsandinheritance-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -114,6 +106,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/sensitivitylabelthiscomputerightsandinheritance-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/sensitivitylabelthiscomputerightsandinheritance-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -132,7 +128,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.computeRightsAndInheritanceResult"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

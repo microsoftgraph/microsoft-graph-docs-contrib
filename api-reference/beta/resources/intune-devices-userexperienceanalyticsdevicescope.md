@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change which could break your applications. While Intune /beta APIs are supported by Microsoft, you should use these at your own discretion. In general, /beta APIs are not recommended for use in production applications. To determine whether an API is available in v1.0, use the Version selector
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -36,9 +36,9 @@ The user experience analytics device scope entity contains device scope configur
 |ownerId|String|The unique identifier of the person (admin) who created the device scope configuration.|
 |isBuiltIn|Boolean|Indicates whether the device scope configuration is built-in or custom. When TRUE, the device scope configuration is built-in. When FALSE, the device scope configuration is custom. Default value is FALSE.|
 |enabled|Boolean|Indicates whether a device scope is enabled or disabled. When TRUE, the device scope is enabled. When FALSE, the device scope is disabled. Default value is FALSE.|
-|status|[deviceScopeStatus](../resources/intune-devices-devicescopestatus.md)|Indicates the device scope status after the device scope has been enabled. Possible values are: none, computing, insufficientData or completed. Default value is none. Possible values are: `none`, `computing`, `insufficientData`, `completed`, `unknownFutureValue`.|
-|parameter|[deviceScopeParameter](../resources/intune-devices-devicescopeparameter.md)|Device scope configuration parameter. It will be extended in future to add more parameter. Eg: device scope parameter can be OS version, Disk Type, Device manufacturer, device model or Scope tag. Default value: scopeTag. Possible values are: `none`, `scopeTag`, `unknownFutureValue`.|
-|operator|[deviceScopeOperator](../resources/intune-devices-devicescopeoperator.md)|Device scope configuration query operator. Possible values are: equals, notEquals, contains, notContains, greaterThan, lessThan. Default value: equals. Possible values are: `none`, `equals`, `unknownFutureValue`.|
+|status|[deviceScopeStatus](../resources/intune-devices-devicescopestatus.md)|Indicates the device scope status after the device scope has been enabled. The possible values are: none, computing, insufficientData or completed. Default value is none. The possible values are: `none`, `computing`, `insufficientData`, `completed`, `unknownFutureValue`.|
+|parameter|[deviceScopeParameter](../resources/intune-devices-devicescopeparameter.md)|Device scope configuration parameter. It will be extended in future to add more parameter. Eg: device scope parameter can be OS version, Disk Type, Device manufacturer, device model or Scope tag. Default value: scopeTag. The possible values are: `none`, `scopeTag`, `unknownFutureValue`.|
+|operator|[deviceScopeOperator](../resources/intune-devices-devicescopeoperator.md)|Device scope configuration query operator. The possible values are: equals, notEquals, contains, notContains, greaterThan, lessThan. Default value: equals. The possible values are: `none`, `equals`, `unknownFutureValue`.|
 |valueObjectId|String|The unique identifier for a user device scope tag Id used for the creation of device scope configuration.|
 |value|String|The device scope configuration query clause value.|
 |createdDateTime|DateTimeOffset|Indicates the creation date and time for the custom device scope.|

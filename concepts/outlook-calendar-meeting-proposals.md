@@ -5,6 +5,7 @@ author: "iamgirishck"
 ms.localizationpriority: high
 ms.subservice: "outlook"
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Propose new meeting times in Outlook calendar

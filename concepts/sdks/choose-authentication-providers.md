@@ -4,6 +4,7 @@ description: "Learn how to choose scenario-specific authentication providers for
 ms.localizationpriority: medium
 author: MichaelMainer
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 <!-- markdownlint-disable MD024 MD051 -->

@@ -6,6 +6,7 @@ ms.localizationpriority: high
 ms.subservice: "partner-customer-administration"
 ms.custom: graphiamtop20, no-azure-ad-ps-ref
 ms.date: 02/19/2025
+ms.topic: how-to
 ---
 
 # Call Microsoft Graph from a Cloud Solution Provider application

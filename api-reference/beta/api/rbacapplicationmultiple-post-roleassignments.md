@@ -20,6 +20,7 @@ Create a new [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentm
 The following RBAC providers are currently supported:
 - Cloud PC 
 - device management (Intune)
+- Defender (Microsoft Defender XDR)
 
 For other Microsoft 365 applications (like Microsoft Entra ID), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
 
@@ -39,6 +40,10 @@ The following tables show the least privileged permission or permissions require
 <!-- { "blockType": "permissions", "name": "rbacapplicationmultiple_post_roleassignments_2" } -->
 [!INCLUDE [permissions-table](../includes/permissions/rbacapplicationmultiple-post-roleassignments-2-permissions.md)]
 
+### For Defender provider
+
+<!-- { "blockType": "permissions", "name": "rbacapplicationmultiple_post_roleassignments_3" } -->
+[!INCLUDE [permissions-table](../includes/permissions/rbacapplicationmultiple-post-roleassignments-3-permissions.md)]
 
 ## HTTP request
 
@@ -55,6 +60,13 @@ To create role assignment for an Intune provider:
 
 ```http
 POST /roleManagement/deviceManagement/roleAssignments
+```
+
+To create role assignment for a Defender provider:
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /roleManagement/defender/roleAssignments
 ```
 
 ## Request headers
@@ -105,10 +117,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleassignmentmultiple-from-rbacapplication-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-unifiedroleassignmentmultiple-from-rbacapplication-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -197,10 +205,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleassignmentmultiple-intune-specific-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-unifiedroleassignmentmultiple-intune-specific-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignmentmultiple-intune-specific-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -280,10 +284,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleassignmentmultiple-from-rbacapplication-cloudpc-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-unifiedroleassignmentmultiple-from-rbacapplication-cloudpc-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignmentmultiple-from-rbacapplication-cloudpc-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -341,6 +341,101 @@ Content-type: application/json
     "appScopeIds": []
 }
 ```
+
+### Example 4: Create a role assignment in Defender over all and future workloads, in scope of CloudSet '123':
+
+Use the following information for creating Intune role assignments:
+- To allow assignments over all and future workloads, use the `/` value in **appScopeIds**.
+- To allow assignments over workload, on all scopes, don't add any scope after the following workload IDs in **appScopeIds**: `Mdi`, `Mdc`, `Mda`, `Mde`, `Mdo`, `SecureScoreExternal`.
+- To allow assignments over specific scope, use `/<ScopeType>/<ScopeId>` in  **appScopeIds**.
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_unifiedroleassignmentmultiple_defender_specific"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/roleManagement/defender/roleAssignments
+Content-type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.unifiedRoleAssignmentMultiple",
+     "displayName": "Example role assignment",
+    "roleDefinitionId": "b5c08161-a7af-481c-ace2-a20a69a48fb1",
+    "principalIds": [
+        "8e811502-ebda-4782-8f81-071d17f0f892",
+        "30e3492f-964c-4d73-88c6-986a53c6e2a0"
+    ],
+    "appScopeIds": [
+        "Mdc", "/CloudSet/123"
+    ]
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleassignmentmultiple-defender-specific-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignmentmultiple-defender-specific-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroleassignmentmultiple-defender-specific-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedroleassignmentmultiple-defender-specific-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-unifiedroleassignmentmultiple-defender-specific-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-unifiedroleassignmentmultiple-defender-specific-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+> **Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignmentMultiple"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#roleManagement/defender/roleAssignments/$entity",
+    "@odata.type": "#microsoft.graph.unifiedRoleAssignmentMultiple",
+    "id": "28ca5a85-489a-49a0-b555-0a6d81e56f0d",
+    "roleDefinitionId": "b5c08161-a7af-481c-ace2-a20a69a48fb1",
+    "principalIds": [
+        "8e811502-ebda-4782-8f81-071d17f0f892",
+        "30e3492f-964c-4d73-88c6-986a53c6e2a0"
+    ],
+    "appScopeIds": [
+        "Mdc", "/CloudSet/123"
+    ]
+}
+```
+
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

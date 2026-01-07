@@ -39,7 +39,7 @@ Get details of a hardware OATH authentication method assigned to you.
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}
 ```
 
@@ -50,7 +50,7 @@ Get details of a hardware OATH authentication method assigned to another user.
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /users/{usersId}/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}
 ```
 
@@ -83,16 +83,12 @@ The following example shows a request.
   "name": "get_hardwareoathauthenticationmethod"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-hardwareoathauthenticationmethod-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-hardwareoathauthenticationmethod-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -131,7 +127,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.hardwareOathAuthenticationMethod"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -139,6 +135,7 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.hardwareOathAuthenticationMethod",
     "id": "aad49556-####-####-####-############",
+    "lastUsedDateTime": "2022-11-06T23:16:12Z",
     "device": {
         "id": "aad49556-####-####-####-############",
         "displayName": "Amy Masters Token",

@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /admin/windows/updates/deployments
 ```
 
@@ -65,7 +65,7 @@ If successful, this method returns a `201 Created` response code and a [deployme
   "name": "create_deployment_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/admin/windows/updates/deployments
 Content-Type: application/json
 
@@ -84,7 +84,7 @@ Content-Type: application/json
             "gradualRollout": {
                 "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
                 "durationBetweenOffers": "P7D",
-                "devicePerOffer": 100
+                "devicesPerOffer": 100
             }
         },
         "monitoring": {
@@ -103,10 +103,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-deployment-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-deployment-from--cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -143,7 +139,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.windowsUpdates.deployment"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -166,7 +162,7 @@ Content-Type: application/json
       "gradualRollout": {
         "@odata.type": "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
         "durationBetweenOffers": "P1D",
-        "devicePerOffer": 1000
+        "devicesPerOffer": 1000
       }
     },
     "monitoring": {

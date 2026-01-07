@@ -101,7 +101,7 @@ For basic notifications, validate them using the **clientState** value as explai
 Rich notifications include a **validationTokens** property, which contains an array of [JSON Web Tokens](https://datatracker.ietf.org/doc/html/rfc7519) (JWT). Each token is unique to the app and tenant pair. A change notification might contain a mix of items for various apps and tenants that subscribed using the same **notificationUrl**.
 
 > [!NOTE]
-> Microsoft Graph doesn't send validation tokens for [change notifications delivered through Azure Event Hubs](change-notifications-delivery.md) because the subscription service doesn't need to validate the **notificationUrl** for Event Hubs.
+> Microsoft Graph doesn't send validation tokens for [change notifications delivered through Azure Event Hubs](change-notifications-delivery-event-hubs.md) because the subscription service doesn't need to validate the **notificationUrl** for Event Hubs.
 
 In the following example, the change notification contains two items for the same app, and for two different tenants, therefore the **validationTokens** array contains two tokens that need to be validated.
 
@@ -319,7 +319,7 @@ export function isTokenValid(token, appId, tenantId) {
 }
 ```
 
---- 
+---
 
 ## Decrypting resource data from change notifications
 
@@ -388,7 +388,7 @@ To decrypt resource data, your app should perform the reverse steps, using the p
 
 1. Use the symmetric key to calculate the HMAC-SHA256 signature for the value in **data**. Compare it to the value in **dataSignature**. If they don't match, assume the payload is tampered with, and don't decrypt it.
 
-1. Decrypt the **data** proeprty using the symmetric key with Advanced Encryption Standard (AES), such as the .NET [Aes](/dotnet/api/system.security.cryptography.aes?view=netframework-4.8&preserve-view=true).
+1. Decrypt the **data** property using the symmetric key with Advanced Encryption Standard (AES), such as the .NET [Aes](/dotnet/api/system.security.cryptography.aes?view=netframework-4.8&preserve-view=true).
 
     - Use the following decryption parameters for the AES algorithm:
 

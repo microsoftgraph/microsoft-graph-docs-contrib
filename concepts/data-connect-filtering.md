@@ -5,6 +5,7 @@ author: "rimisra2"
 ms.localizationpriority: high
 ms.subservice: "data-connect"
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # User selection and filtering capabilities in Microsoft Graph Data Connect

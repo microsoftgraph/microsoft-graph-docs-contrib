@@ -26,7 +26,7 @@ For details about how to create change notifications, see [Microsoft Graph API c
 
 Before you can receive a notification via webhooks, you must create a publicly accessible, HTTPS-secured endpoint that is addressable via URL. If your endpoint isn't publicly accessible, Microsoft Graph doesn't send notifications to your endpoint.
 
-Your endpoint must provide correct, consistent, and timely HTTP responses in order to reliably receive notifications. If an endpoint doesn't respond in a timely manner, the change notification service may begin to drop notifications. Dropped notifications can't be recovered.
+Your endpoint must provide correct, consistent, and timely HTTP responses in order to reliably receive notifications. If an endpoint doesn't respond in a timely manner, the change notification service might begin to drop notifications. Dropped notifications can't be recovered.
 
 Your endpoint must also continue to remain authenticated to Microsoft Graph, either by continually renewing your subscription or by responding to lifecycle notifications.
 
@@ -34,13 +34,13 @@ Your endpoint must also continue to remain authenticated to Microsoft Graph, eit
 Once the Microsoft Graph change notifications service receives a 2xx class code from your endpoint, the notification is considered sent. As long as the change notifications service receives any other HTML response (even an error code) within 10 seconds, the service continues to try to deliver the notification for up to 4 hours.
 
  - If you're able to process the notification within a 3-second window, you should return a `200 - OK` status code to Microsoft Graph
- - If your service may take more than 10 seconds to process the notification, then you may choose to persist the notification in a queue on your endpoint and return `202 - Accepted` status code to Microsoft Graph.
+ - If your service takes more than 10 seconds to process the notification, then you should persist the notification in a queue on your endpoint and return `202 - Accepted` status code to Microsoft Graph.
  - If the notification isn't processed or queued, return a 5xx class code to indicate an error so that Microsoft Graph can retry the notification.
 
-Notifications that fail to deliver are retried at exponential backoff intervals. Missed notifications may take up to 4 hours to resend once your endpoint comes online.
+Notifications that fail to deliver are retried at exponential backoff intervals. Missed notifications might take up to 4 hours to resend once your endpoint comes online.
 
 ### Throttling
-For security and performance reasons, Microsoft Graph throttles notifications sent to endpoints that become slow or unresponsive. It may include dropping notifications in a way that they can't be recovered.
+For security and performance reasons, Microsoft Graph throttles notifications sent to endpoints that become slow or unresponsive. It might include dropping notifications in a way that they can't be recovered.
 
 1. An endpoint is marked "slow" once more than 10% of responses take longer than 10 seconds in a 10-minute window.
       - Once an endpoint is marked "slow", any new notifications are sent on a 10-second delay.
@@ -111,10 +111,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/change-notifications-subscriptions-example-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/change-notifications-subscriptions-example-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/v1/change-notifications-subscriptions-example-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -168,7 +164,7 @@ A change notification payload sent to your endpoint can contain a collection of 
 
 When the user receives an email, Microsoft Graph sends a change notification object to the client app as shown in the following example. See [changeNotificationCollection](/graph/api/resources/changenotificationcollection) and the related [changeNotification](/graph/api/resources/changenotification) for details of the notification payload.
 
-When many changes occur, Microsoft Graph may send multiple notifications that correspond to different subscriptions in the same `POST` request.
+When many changes occur, Microsoft Graph might send multiple notifications that correspond to different subscriptions in the same `POST` request.
 
 ```json
 {
@@ -199,16 +195,16 @@ When you receive a change notification:
 
 1. Validate the **clientState** property. It must match the value originally submitted with the subscription creation request.
 
-    If there's a mismatch, don't consider the change notification as valid. It's possible that the change notification isn't originated from Microsoft Graph and may have been sent by a rogue actor. You should also investigate where the change notification comes from and take appropriate action.
+    If there's a mismatch, don't consider the change notification as valid. It's possible that the change notification isn't originated from Microsoft Graph and might have been sent by a rogue actor. You should also investigate where the change notification comes from and take appropriate action.
 
 1. Update your client app based on your business logic.
 
 ## Subscription lifecycle
-When they're no longer needed, subscriptions may be deleted or expire. When you create your subscription, you set an expiration date using the **expirationDateTime** property. Once this time passes, Microsoft Graph deletes the subscription and doesn't send notifications to your endpoint. You may also explicitly delete your subscription.
+When they're no longer needed, subscriptions might be deleted or expire. When you create your subscription, you set an expiration date using the **expirationDateTime** property. Once this time passes, Microsoft Graph deletes the subscription and doesn't send notifications to your endpoint. You might also explicitly delete your subscription.
 
 The simplest way to continue receiving notifications is to continue renewing your subscription request. Each notification includes a **subscriptionExpirationDateTime** property. You can use it to guide you when to renew your subscription.
 
-Each subscription also includes an access token granted to the endpoint. The expiration time of this access token may occur before the subscription expiration. You can manage access token expiration using lifecycle notifications for your subscription.
+Each subscription also includes an access token granted to the endpoint. The expiration time of this access token might occur before the subscription expiration. You can manage access token expiration using lifecycle notifications for your subscription.
 
 ### Renew a subscription
 
@@ -228,10 +224,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/change-notifications-subscriptions-example-renewal-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/change-notifications-subscriptions-example-renewal-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -279,10 +271,6 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/change-notifications-subscriptions-example-delete-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/change-notifications-subscriptions-example-delete-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/v1/change-notifications-subscriptions-example-delete-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -312,7 +300,7 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 If successful, Microsoft Graph returns a `204 No Content` code.
 
 ### Lifecycle notifications for your subscription
-For increased flexibility and reliability, when you create a subscription, you may also subscribe to the lifecycle notifications for that subscription by providing a **lifecycleNotificationUrl** endpoint that receives, processes, and responds to lifecycle notifications.
+For increased flexibility and reliability, when you create a subscription, you might also subscribe to the lifecycle notifications for that subscription by providing a **lifecycleNotificationUrl** endpoint that receives, processes, and responds to lifecycle notifications.
 
 When you subscribe to lifecycle notifications, Microsoft Graph alerts you:
 - When the access token is about to expire.

@@ -24,11 +24,7 @@ Currently the supported virtual event types are:
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "virtualeventpresenter-delete-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "virtualeventpresenter_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/virtualeventpresenter-delete-permissions.md)]
 
 ## HTTP request
@@ -38,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 DELETE /solutions/virtualEvents/townhalls/{townhallId}/presenters/{presenterId}
 DELETE /solutions/virtualEvents/webinars/{webinarId}/presenters/{presenterId}
 ```
@@ -70,16 +66,12 @@ The following example shows how to delete a presenter from a **virtualEventTownh
   "sampleKeys": ["502dadea-b5d8-44aa-a851-a0ac496a36bf@09a21d49-f0f3-4b3f-96b6-f381e9430742", "7b7e1acd-a3e0-4533-8c1d-c1a4ca0b2e2b"]
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/v1.0/solutions/virtualEvents/townhalls/502dadea-b5d8-44aa-a851-a0ac496a36bf@09a21d49-f0f3-4b3f-96b6-f381e9430742/presenters/7b7e1acd-a3e0-4533-8c1d-c1a4ca0b2e2b
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-presenters-from-virtualeventtownhall-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-presenters-from-virtualeventtownhall-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -119,6 +111,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

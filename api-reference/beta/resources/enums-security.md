@@ -187,6 +187,17 @@ Namespace: microsoft.graph.security
 |unknown|
 |unknownFutureValue|
 
+### mailboxConfigurationType values
+
+|Member|
+|:---|
+|mailForwardingRule|
+|owaSettings|
+|ewsSettings|
+|mailDelegation|
+|userInboxRule|
+|unknownFutureValue|
+
 ### logDataProvider values 
 
 |Member|
@@ -1055,6 +1066,55 @@ Namespace: microsoft.graph.security
 |automatic|
 |recommended|
 
+### restrictionAction values
+
+|Member|
+|:---|
+|warn|
+|audit|
+|block|
+
+### action values
+
+|Member|
+|:---|
+|disable|
+|enable|
+|forcePasswordReset|
+|revokeAllSessions|
+|requireUserToSignInAgain|
+|markUserAsCompromised|
+|unknownFutureValue|
+
+
+### identityProvider values
+
+|Member|
+|:---|
+|entraID|
+|activeDirectory|
+|okta|
+|unknownFutureValue|
+
+### sensorCandidateActivationMode values
+
+|Member|
+|:---|
+|manual|
+|automated|
+|unknownFutureValue|
+
+### serviceStatus values
+
+|Member|
+|:---|
+|stopped|
+|starting|
+|running|
+|disabled|
+|onboarding|
+|unknown|
+|unknownFutureValue|
 
 <!--
 {

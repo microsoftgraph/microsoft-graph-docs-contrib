@@ -21,7 +21,7 @@ headers.Add("Authorization", "Bearer {token}")
 headers.Add("Client-Request-Id", "a0b9c8d7-e6f5-a4b3-c2d1-e0f9a8b7c6d5")
 
 
-requestFilter := "applicableTo eq 'File' and id in ('4e4234dd-377b-42a3-935b-0e42f138fa23','b7a21bba-8197-491f-a5d6-0d0f955397ca')"
+requestFilter := "applicableTo has 'File' and id in ('4e4234dd-377b-42a3-935b-0e42f138fa23','b7a21bba-8197-491f-a5d6-0d0f955397ca')"
 
 requestParameters := &graphsecurity.DataSecurityAndGovernanceSensitivityLabelsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,

@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /admin/windows/updates/resourceConnections
 ```
 
@@ -75,7 +75,7 @@ The following example shows a request.
   "name": "create_operationalInsightsConnection_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/admin/windows/updates/resourceConnections
 Content-Type: application/json
 Content-length: 97
@@ -90,10 +90,6 @@ Content-length: 97
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-operationalinsightsconnection-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-operationalinsightsconnection-from--cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -131,7 +127,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.windowsUpdates.operationalInsightsConnection"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

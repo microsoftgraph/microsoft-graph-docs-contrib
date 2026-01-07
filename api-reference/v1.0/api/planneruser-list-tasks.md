@@ -27,7 +27,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 GET /me/planner/tasks
 GET /users/{id}/planner/tasks
-GET /drive/root/createdByUser/planner/tasks
 ```
 
 ## Request headers
@@ -59,10 +58,6 @@ GET https://graph.microsoft.com/v1.0/me/planner/tasks
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/planneruser-get-tasks-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/planneruser-get-tasks-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

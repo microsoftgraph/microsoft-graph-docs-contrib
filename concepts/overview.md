@@ -28,7 +28,7 @@ Together, the Microsoft Graph API, connectors, and Data Connect power the Micros
 
 Microsoft Graph exposes REST APIs and client libraries to access data on the following Microsoft cloud services:
 
-- **Microsoft 365 core services:** Bookings, Calendar, Delve, Excel, Microsoft Purview eDiscovery, Microsoft Search, OneDrive, OneNote, Outlook/Exchange, People (Outlook contacts), Planner, SharePoint, Teams, To Do, Viva Insights
+- **Microsoft 365 core services:** Bookings, Calendar, Excel, Microsoft Purview eDiscovery, Microsoft Search, OneDrive, OneNote, Outlook/Exchange, People (Outlook contacts), Planner, SharePoint, Teams, To Do, Viva Insights
 - **Enterprise Mobility + Security services:** Advanced Threat Analytics, Advanced Threat Protection, Microsoft Entra, Identity Manager, and Intune
 - **Windows services:** activities, devices, notifications, Universal Print
 - **Dynamics 365 Business Central services**

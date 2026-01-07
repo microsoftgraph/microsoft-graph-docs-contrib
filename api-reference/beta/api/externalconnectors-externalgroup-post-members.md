@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 POST /external/connections/{connectionsId}/groups/{externalGroupId}/members
 ```
 
@@ -52,8 +52,8 @@ You can specify the following properties when creating an **externalGroupMember*
 | Property       | Type                    | Description                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
 | id             | String                  | The unique `id` of the member. It would be the objectId in case of Microsoft Entra users or groups and the externalGroupId in case of external groups. Required.                                   |
-| type           | microsoft.graph.externalConnectors.externalGroupMemberType | The type of member added to the external group. Possible values are: `user` or `group` when the identitySource is `azureActiveDirectory` and just `group` when the identitySource is `external`. Required. |
-| identitySource | microsoft.graph.externalConnectors.identitySourceType      | The identity source that the member belongs to. Possible values are: `azureActiveDirectory`, `external`. Required.                                                                                       |
+| type           | microsoft.graph.externalConnectors.externalGroupMemberType | The type of member added to the external group. The possible values are: `user` or `group` when the identitySource is `azureActiveDirectory` and just `group` when the identitySource is `external`. Required. |
+| identitySource | microsoft.graph.externalConnectors.identitySourceType      | The identity source that the member belongs to. The possible values are: `azureActiveDirectory`, `external`. Required.                                                                                       |
 
 ## Response
 
@@ -76,7 +76,7 @@ If successful, this method returns a `201 Created` response code and an **extern
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/external/connections/contosohr/groups/31bea3d537902000/members
 Content-Type: application/json
 
@@ -88,10 +88,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-externalgroupmember-from--1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-externalgroupmember-from--1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -131,7 +127,7 @@ Content-Type: application/json
 }
 -->
 
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -156,7 +152,7 @@ Content-Type: application/json
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/external/connections/contosohr/groups/31bea3d537902000/members
 Content-Type: application/json
 
@@ -168,10 +164,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-externalgroupmember-from--2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-externalgroupmember-from--2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -210,7 +202,7 @@ Content-Type: application/json
 }
 -->
 
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -233,7 +225,7 @@ Content-Type: application/json
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/external/connections/contosohr/groups/31bea3d537902000/members
 Content-Type: application/json
 
@@ -245,10 +237,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-externalgroupmember-from--3-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-externalgroupmember-from--3-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -287,7 +275,7 @@ Content-Type: application/json
 }
 -->
 
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

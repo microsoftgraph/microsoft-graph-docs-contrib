@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "openshiftchangerequest_approve" } -->
 [!INCLUDE [permissions-table](../includes/permissions/openshiftchangerequest-approve-permissions.md)]
 
+[!INCLUDE [approveforuser-application-permission](../includes/approveforuser-application-permission.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -37,7 +39,7 @@ POST /teams/{id}/schedule/openShiftChangeRequests/{openShiftChangeRequestId}/app
 |:--------------|:--------------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-type | application/json. Required. |
-| MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
+| MS-APP-ACTS-AS (deprecated) | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. Until January 1, 2026, this API supports application permissions only when used in combination with the deprecated `MS-APP-ACTS-AS` header.|
 
 ## Request body
 
@@ -53,11 +55,9 @@ If successful, this method returns a `200 OK` response code. It doesn't return a
 
 ## Examples
 
-The following example shows how to call this API.
-
 ### Request
 
-Here's an example  of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -82,7 +82,7 @@ Content-type: application/json
 
 ### Response
 
-Here's an example  of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->

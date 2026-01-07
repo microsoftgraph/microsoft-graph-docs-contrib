@@ -11,34 +11,41 @@ const options = {
 const client = Client.init(options);
 
 const contentActivity = {
-    contentMetadata: {
+    contentToProcess: {
        contentEntries: [
           {
              '@odata.type': 'microsoft.graph.processConversationMetadata',
-             identifier: 'd6ab5054-e111-45c3-9fba-9f2a59c9bbf8',
-             name: 'CA Purview API Explorer message',
-             correlationId: 'edfb7f88-b963-4ef2-8b30-5cb90f80e01e',
+             identifier: '07785517-9081-4fe7-a9dc-85bcdf5e9075',
+             name: 'PC Purview API Explorer message',
+             correlationId: 'd63eafd2-e3a9-4c1a-b726-a2e9b9d9580d',
              sequenceNumber: 0, 
              isTruncated: false,
-             createdDateTime: '2025-05-28T20:20:37',
-             modifiedDateTime: '2025-05-28T20:20:37'
+             createdDateTime: '2025-05-27T17:23:20',
+             modifiedDateTime: '2025-05-27T17:23:20'
           }
        ],
        activityMetadata: { 
-          activity: 'downloadText'
+          activity: 'uploadText'
        },
        deviceMetadata: {
           operatingSystemSpecifications: {
              operatingSystemPlatform: 'Windows 11',
              operatingSystemVersion: '10.0.26100.0' 
+          },
+          ipAddress: '127.0.0.1'
+       },
+       protectedAppMetadata: {
+          name: 'PC Purview API Explorer',
+          version: '0.2',
+          applicationLocation: {
+             '@odata.type': 'microsoft.graph.policyLocationApplication',
+             value: '83ef208a-0396-4893-9d4f-d36efbffc8bd'
           }
        },
        integratedAppMetadata: {
-          name: 'CA Purview API Explorer',
-          version: '0.1' 
-       },
-       userId: '7c497f10-cba8-4a8d-9449-db4b76d1ef80',
-       scopeIdentifier: '0'
+          name: 'PC Purview API Explorer',
+          version: '0.2' 
+       }
     }
 };
 

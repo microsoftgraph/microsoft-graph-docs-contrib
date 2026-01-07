@@ -11,6 +11,6 @@ use Microsoft\Graph\Beta\GraphServiceClient;
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$result = $graphServiceClient->me()->calendars()->byCalendarId('calendar-id')->get()->wait();
+$result = $graphServiceClient->me()->calendars()->delta()->get()->wait();
 
 ```

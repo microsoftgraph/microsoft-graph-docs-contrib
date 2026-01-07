@@ -1,16 +1,15 @@
 ---
 title: "Delete federatedIdentityCredential"
-description: "Delete a federatedIdentityCredential object."
+description: "Delete a federatedIdentityCredential object from an application."
 author: "nickludwig"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
-ms.date: 04/04/2024
+ms.date: 12/04/2025
 ---
 
 # Delete federatedIdentityCredential
 Namespace: microsoft.graph
-
 
 Delete a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object from an application.
 
@@ -22,6 +21,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "federatedidentitycredential_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/federatedidentitycredential-delete-permissions.md)]
 
+[!INCLUDE [rbac-apps-serviceprincipal-creds-apis](../includes/rbac-for-apis/rbac-apps-serviceprincipal-creds-apis.md)]
 
 ## HTTP request
 
@@ -31,8 +31,11 @@ You can also address the federated identity credential with either its **id** or
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredentialId}
+
 DELETE /applications/{id}/federatedIdentityCredentials/{federatedIdentityCredentialName}
+
 DELETE /applications(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialId}
+
 DELETE /applications(appId='{appId}')/federatedIdentityCredentials/{federatedIdentityCredentialName}
 ```
 
@@ -52,8 +55,6 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -66,10 +67,6 @@ DELETE https://graph.microsoft.com/v1.0/applications/bcd7c908-1c4d-4d48-93ee-ff3
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-federatedidentitycredential-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-federatedidentitycredential-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

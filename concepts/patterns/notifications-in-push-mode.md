@@ -4,6 +4,7 @@ description: "Learn about the Microsoft Graph integration pattern for event-base
 author: "OlgaPodo"
 ms.localizationpriority: medium
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Get real-time updates for data changes by using Microsoft Graph

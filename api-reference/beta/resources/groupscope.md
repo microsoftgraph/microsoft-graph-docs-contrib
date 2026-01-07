@@ -1,5 +1,5 @@
 ---
-title: "groupScope resource type (preview)"
+title: "groupScope resource type"
 description: "Represents a Microsoft 365 group or distribution list as a scope within policy bindings."
 author: "ArunGedela"
 ms.date: 04/08/2025
@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Microsoft 365 group or distribution list as a scope within policy bindings. 
+Represents a Microsoft 365 group or distribution list as a scope within policy bindings.
+
+Inherits from [scopeBase](../resources/scopebase.md).
 
 ## Properties
 

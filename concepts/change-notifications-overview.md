@@ -49,7 +49,7 @@ Microsoft Graph can deliver change notifications to clients via the following ch
 
 - **Webhooks**. For more information, see [Receive change notifications through webhooks](./change-notifications-delivery-webhooks.md).
 - **Azure Event Hubs**. For more information, see [Receive change notifications through Azure Event Hubs](./change-notifications-delivery-event-hubs.md).
-- **Azure Event Grid** (preview). For more information, see [Receive change notifications through Azure Event Grid](/azure/event-grid/subscribe-to-graph-api-events?context=graph%2Fcontext).
+- **Azure Event Grid**. For more information, see [Receive change notifications through Azure Event Grid](/azure/event-grid/subscribe-to-graph-api-events?context=graph%2Fcontext).
 
 ## Managing subscriptions
 
@@ -87,11 +87,9 @@ The following code samples are available on GitHub.
 
 - [Rich notifications (notifications with resource data)](./change-notifications-with-resource-data.md)
 - [Lifecycle notifications](./change-notifications-lifecycle-events.md)
-- Tutorials
-    - [Change notifications for cloud printing](./universal-print-webhook-notifications.md)
-    - [Change notifications for Outlook resources](./outlook-change-notifications-overview.md)
-    - [Change notifications for Microsoft Teams resources](./teams-change-notification-in-microsoft-teams-overview.md)
-    - [Change notifications for Copilot AI interactions](./aiinteraction-changenotifications-overview.md)
+- [Change notifications for cloud printing](./universal-print-webhook-notifications.md)
+- [Change notifications for Outlook resources](./outlook-change-notifications-overview.md)
+- [Change notifications for Microsoft Teams resources](./teams-change-notification-in-microsoft-teams-overview.md)
 
 
 [contact]: /graph/api/resources/contact

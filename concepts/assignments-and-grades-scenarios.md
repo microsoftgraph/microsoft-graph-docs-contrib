@@ -6,6 +6,7 @@ author: "cristobal-buenrostro"
 ms.subservice: "education"
 doc_type: conceptualPageType
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Connect to assignments and grades
@@ -30,3 +31,4 @@ You can read and update data and integrate your app with assignments and grades 
 - [Download all resources from a set of assignments](/graph/download-resources-from-assignment)
 - [I have a web app that needs to create assignments with links back to my website](/microsoftteams/platform/concepts/build-and-test/share-to-teams-from-web-apps)
 - [Get recently modified submissions](/graph/api/educationclass-getrecentlymodifiedsubmissions)
+- [Create an assignment with a Speaker Progress resource](/graph/create-assignment-with-speaker-progress-resource)

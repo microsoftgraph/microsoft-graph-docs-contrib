@@ -1,6 +1,6 @@
 ---
 title: "personAward resource type"
-description: "personAward resource type"
+description: "Represents an award that has been associated with a user's profile."
 ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.subservice: "people"
@@ -23,12 +23,12 @@ Inherits from [itemFacet](../resources/itemfacet.md).
 |[Create](../api/profile-post-awards.md)|[personAward](../resources/personaward.md)|Create a new personAward object.|
 |[Get](../api/personaward-get.md)|[personAward](../resources/personaward.md)|Read the properties and relationships of an [personAward](../resources/personaward.md) object.|
 |[Update](../api/personaward-update.md)|[personAward](../resources/personaward.md)|Update the properties of an [personAward](../resources/personaward.md) object.|
-|[Delete](../api/personaward-delete.md)|None|Deletes an [personAward](../resources/personaward.md) object.|
+|[Delete](../api/personaward-delete.md)|None|Delete an [personAward](../resources/personaward.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). The possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |createdBy|[identitySet](../resources/identityset.md)|Provides the identifier of the user and/or application that created the entity. Inherited from [itemFacet](../resources/itemfacet.md).|
 |createdDateTime|DateTimeOffset|Provides the dateTimeOffset for when the entity was created. Inherited from [itemFacet](../resources/itemfacet.md).|
 |description|String|Descpription of the award or honor. |

@@ -70,10 +70,6 @@ GET https://graph.microsoft.com/v1.0/solutions/backupRestore/exchangeRestoreSess
 [!INCLUDE [sample-code](../includes/snippets/csharp/mailboxrestoreartifact-list-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/mailboxrestoreartifact-list-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/mailboxrestoreartifact-list-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -125,6 +121,7 @@ Content-Type: application/json
       "completionDateTime": "2023-12-04T13:22:12.7209691Z",
       "restoredFolderId": "0bdb38aa-5ad4-43ae-b63d-54426c97caa3",
       "restoredFolderName": "testmailbox101",
+      "restoredItemCount": 5,
       "restorePoint": {
           "id": "ffd2687a-f507-4a82-9dff-2fa78cfdaa41_1801645000_12_2",
           "protectionDateTime": "2023-12-04T00:00:00Z",
@@ -139,6 +136,7 @@ Content-Type: application/json
       "completionDateTime": "2024-02-10T13:22:12.7209691Z",
       "restoredFolderId": "f8bb7c43-dabd-4300-a56a-510f093bc537",
       "restoredFolderName": "testmailbox102",
+      "restoredItemCount": 10,
       "restorePoint": {
           "id": "86ba0fa7-db56-4c70-bf47-62adafefc0ee_1801645000_12_2",
           "protectionDateTime": "2024-02-10T00:00:00Z",

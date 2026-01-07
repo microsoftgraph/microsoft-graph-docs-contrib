@@ -4,6 +4,7 @@ description: "Learn how to use delegated authentication with Postman for Microso
 author: "jasonjoh"
 ms.localizationpriority: high
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Use delegated authentication with Postman for Microsoft Graph

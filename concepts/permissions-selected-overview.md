@@ -73,7 +73,7 @@ The following table lists the four roles that can be assigned to an application 
   "name": "create_permission_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/sites/{siteId}/permissions
 Content-Type: application/json
 
@@ -89,10 +89,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/v1/create-permission-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/create-permission-from--cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -135,7 +131,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.permission"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

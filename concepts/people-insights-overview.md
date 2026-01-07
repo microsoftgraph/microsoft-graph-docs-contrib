@@ -5,6 +5,7 @@ ms.date: 4/9/2019
 author: "anthona"
 ms.localizationpriority: high
 ms.subservice: "insights"
+ms.topic: how-to
 ---
 
 # Use the people API to get information about the people most relevant to you

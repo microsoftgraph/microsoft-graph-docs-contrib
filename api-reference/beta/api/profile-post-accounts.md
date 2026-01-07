@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /me/profile/account
 POST /users/{id | userPrincipalName}/profile/account
 ```
@@ -46,7 +46,7 @@ The following table shows the properties that are required when you create a new
 
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). The possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |countryCode|String|Contains the two-character country code associated with the users account.  |
 |inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
 |preferredLanguageTag|[localeInfo](../resources/localeinfo.md)|Contains the language the user has associated as preferred for the account.   |
@@ -65,7 +65,7 @@ If successful, this method returns a `201 Created` response code and a [userAcco
   "name": "create_useraccountinformation_from_profile"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/me/profile/account
 Content-Type: application/json
 
@@ -77,10 +77,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-useraccountinformation-from-profile-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-useraccountinformation-from-profile-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -117,7 +113,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.userAccountInformation"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -147,7 +143,9 @@ Content-Type: application/json
   "ageGroup": "adult",
   "countryCode": "NO",
   "preferredLanguageTag": null,
-  "userPrincipalName": "innocenty.popov@adventureworks.com"
+  "userPrincipalName": "innocenty.popov@adventureworks.com",
+  "originTenantInfo": null,
+  "userPersona": null
 }
 ```
 

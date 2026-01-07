@@ -46,16 +46,16 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|shift|string|Specifies which way to shift the cells.  Possible values are: `Up`, `Left`.|
+|shift|string|Specifies which way to shift the cells.  The possible values are: `Up`, `Left`.|
 
 ## Response
 
-If successful, this method returns `200 OK` response code. It doesn't return anything in the response body.
+If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 Here is an example of how to call this API.
 ##### Request
-The following example shows a request.
+This example shows how to delete a cell and shift the other cells up.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -67,16 +67,12 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/
 Content-type: application/json
 
 {
-  "shift": "shift-value"
+  "shift": "Up"
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/range-delete-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/range-delete-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -107,7 +103,7 @@ The following example shows the response.
   "blockType": "response"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

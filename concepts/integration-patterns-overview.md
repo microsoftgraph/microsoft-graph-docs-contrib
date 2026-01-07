@@ -4,6 +4,7 @@ description: "Get an overview of the integration patterns that you can apply to 
 author: "OlgaPodo"
 ms.localizationpriority: medium
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Common integration patterns with Microsoft Graph

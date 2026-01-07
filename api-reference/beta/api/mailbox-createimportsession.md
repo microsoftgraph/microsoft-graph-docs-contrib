@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a session to [import an Exchange mailbox item](/graph/import-exchange-mailbox-item) using its [FastTransfer stream](/openspecs/exchange_server_protocols/ms-oxcfxics/a2648823-0a98-43ee-98e8-590e4f7bcbbe) (FTS) format.
+Create a session to [import an Exchange mailbox item](/graph/import-exchange-mailbox-item) that was exported using the [exportItems](./mailbox-exportitems.md) API.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /admin/exchange/mailboxes/{mailboxId}/createImportSession
 ```
 
@@ -62,16 +62,12 @@ The following example shows how to create an import session. The opaque URL, ret
   "sampleKeys": ["MBX:e0643f21@a7809c93"]
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93/createImportSession
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/mailboxthiscreateimportsession-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/mailboxthiscreateimportsession-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -106,7 +102,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.mailboxItemImportSession"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 232

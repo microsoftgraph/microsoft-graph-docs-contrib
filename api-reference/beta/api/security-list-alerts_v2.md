@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/alerts_v2
 ```
 
@@ -48,7 +48,7 @@ The following are examples of their use:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/alerts_v2?$filter={property}+eq+'{property-value}'
 GET /security/alerts_V2?$top=100&$skip=200
 ```
@@ -80,16 +80,12 @@ The following example shows a request.
   "name": "security_list_alerts"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/alerts_v2
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/security-list-alerts-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/security-list-alerts-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -130,7 +126,7 @@ The following example shows a response.
   "@odata.type": "Collection(microsoft.graph.security.alert)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

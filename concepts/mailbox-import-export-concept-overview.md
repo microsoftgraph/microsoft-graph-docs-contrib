@@ -7,28 +7,32 @@ ms.subservice: "outlook"
 ms.custom: scenarios:getting-started
 doc_type: conceptual
 ms.date: 12/06/2024
+ms.topic: concept-article
 ---
 
 # Overview of the mailbox import and export APIs in Microsoft Graph (preview)
 
-The mailbox import and export APIs in Microsoft Graph let your application import and export contents from Exchange Online mailboxes. Contents within a mailbox can be accessed as a set of [folders](/graph/api/resources/mailboxfolder) and [items](/graph/api/resources/mailboxitem) in a uniform format without having to understand the metadata and structure of each item type separately. These items can be [exported](/graph/api/mailbox-exportitems) in [FastTransfer stream](/openspecs/exchange_server_protocols/ms-oxcfxics/a2648823-0a98-43ee-98e8-590e4f7bcbbe) format in full fidelity. Full-fidelity exports ensure that when you [import](/graph/api/mailbox-createimportsession) an item back, Exchange recreates the item without any loss of information.
+The mailbox import and export APIs in Microsoft Graph let your application import and export contents from Exchange Online mailboxes. Contents within a mailbox can be accessed as a set of [folders](/graph/api/resources/mailboxfolder) and [items](/graph/api/resources/mailboxitem) in a uniform format without having to understand the metadata and structure of each item type separately. These items can be [exported](/graph/api/mailbox-exportitems) as an opaque stream in full fidelity (you can't change the export stream). Full-fidelity exports ensure that when you [import](/graph/api/mailbox-createimportsession) an item back into a mailbox, Exchange recreates the item without any loss of information.
 
-These APIs support access to data in users' primary and [in-place archive](/exchange/clients-and-mobile-in-exchange-online/archive-client-and-compliance-&-security-feature-details?tabs=Archive-features#archive-mailbox) mailboxes on Exchange Online. Items can be imported to the same mailbox or a different one.
+These APIs support access to data in users' primary mailboxes and shared mailboxes on Exchange Online. Items can be imported to the same mailbox or a different one.
+
+> [!Important]
+> The mailbox import and export APIs in Microsoft Graph are not designed for mailbox backup and restore. For mailbox backup and restore in Microsoft 365, see [Microsoft 365 Backup](/graph/backup-storage-concept-overview).
 
 ## Why integrate with the mailbox import and export APIs?
 
-### Backup and restore mailbox items in full fidelity
+### Export a copy of a mailbox item in full-fidelity
 
-Exchange is a gold mine of important information: email, contacts, tasks, and calendars are core to the functions of an organization. Sometimes users and administrators encounter a need to restore an item or a set of items in a mailbox, and also make changes to the folder hierarchy of a  mailbox. Many independent software vendors (ISVs) address this scenario by performing item-level backups of mailbox content, and restoring the content back into mailboxes when necessary. When using APIs that don't support the FastTransfer stream format, restoring mailbox content can be a challenge.
+Exchange is a gold mine of important information: email, contacts, tasks, and calendars are core to the functions of an organization. Exporting an item in full fidelity is the best option for exporting items that you want to import back into an Exchange mailbox.
+
+### Copy items from one mailbox to another
+
+You can use the mailbox import and export APIs to copy items between mailboxes, which is common for many workflows. Exchange developers can use these APIs to automate the process.
 
 The following are some of the scenarios that the mailbox import and export APIs enable:
 
 - [Get a list of mailboxes that belong to a user](/graph/api/usersettings-list-exchange)
 - [Import or export mailbox items](/graph/api/resources/mailboxitem#methods)
-
-### Move items from one mailbox to another
-
-You can use the mailbox import and export APIs to move items between mailboxes, which is common for many workflows. Exchange developers can use these APIs to automate the process.
 
 ## API reference
 

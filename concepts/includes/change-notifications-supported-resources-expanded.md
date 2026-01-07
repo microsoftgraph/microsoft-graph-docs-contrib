@@ -10,10 +10,11 @@ ms.date: 11/07/2024
 
 <!-- markdownlint-disable MD041-->
 
-An app can subscribe to changes on the Microsoft Graph resources listed in the table.
+An app can subscribe to changes on the Microsoft Graph resources listed in the table. Subscriptions to resources marked with an asterisk (`*`) are only available on the `/beta` endpoint.
 
 > [!NOTE]
-> Subscriptions to resources marked with an asterisk (`*`) are only available on the `/beta` endpoint.
+> For Microsoft Teams resources, the **per-organization limit of 10,000 total subscriptions** is shared cumulatively across **all Teams change notification subscriptions** in the tenant. It includes subscriptions created for different Teams resources—such as chats, chat messages, call transcripts, call recordings, channels, teams, and conversation members—which **all count toward the same organizational quota**. When the combined number of active Teams subscriptions reaches this limit, **any additional subscription creation request for a Teams resource fails** with a `403 Forbidden` error.
+
 
 | Resource | Supported resource paths | Limitations |
 |---|---|---|
@@ -23,6 +24,7 @@ An app can subscribe to changes on the Microsoft Graph resources listed in the t
 | [driveItem][] on OneDrive (personal) | Changes to content within the hierarchy of _any folder_: `/users/{id}/drive/root` | - |
 | [driveItem][] on OneDrive for work or school | Changes to content within the hierarchy of the _root folder_: `/drives/{id}/root` , `/users/{id}/drive/root` | - |
 | [group][] | Changes to all groups: `/groups`  <br><br> Changes to a specific group: `/groups/{id}` <br><br> Changes to owners of a specific group:  `/groups/{id}/owners` <br><br> Changes to members of a specific group: `/groups/{id}/members` | Maximum subscription quotas: <li> Per app (for all tenants combined): 50,000 total subscriptions. <li> Per tenant (for all applications combined): 1,000 total subscriptions across all apps. <li> Per app and tenant combination: 100 total subscriptions.<br/><br/>Not supported for Azure AD B2C tenants.<br/><br/>**NOTE:** Creation and soft-deletion of groups also trigger the `updated` **changeType**. |
+| Microsoft Entra Health Monitoring [alert][health monitoring alert] | Changes to all health monitoring alerts: `/reports/healthmonitoring/alerts` <br><br> Changes to a specific type of alert: `/reports/healthmonitoring/alert` with the `notificationQueryOptions` property in request payload set as `$filter=alertType eq '{alertType}'` |-|
 | [list][] under a SharePoint [site][] | Changes to content within the _list_:  `/sites/{site-id}/lists/{list-id}` | - |
 | Microsoft 365 group [conversation][] | Changes to a group's conversations: `groups/{id}/conversations` | - |
 | Outlook [message][] | Changes to all messages in a user's mailbox: `/users/{id}/messages` , `/me/messages` <br><br> Changes to messages in a user's Inbox: `/users/{id}/mailFolders('inbox')/messages` , `/me/mailFolders('inbox')/messages` | A maximum of 1,000 active subscriptions per mailbox for all applications is allowed. |
@@ -51,7 +53,7 @@ An app can subscribe to changes on the Microsoft Graph resources listed in the t
 > [!NOTE]
 > Many resources have limits or quotas on how many subscriptions can be made against that resource.  When exceeding that limit, attempts to create a subscription will result in a `403 Forbidden` error response. The **message** property of the error response will explain the limit that has been exceeded.
 
-Some of these resources support rich notifications (notifications with resource data). For more information about resources that support rich notifications, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data#supported-resources).
+Some of these resources support rich notifications (notifications with resource data). For their details, see [Set up change notifications that include resource data](/graph/change-notifications-with-resource-data#supported-resources).
 
 [aiInteraction]: /graph/api/resources/aiinteraction
 [channel]: /graph/api/resources/channel
@@ -83,3 +85,4 @@ Some of these resources support rich notifications (notifications with resource 
 [callTranscript]: /graph/api/resources/calltranscript
 [callRecording]: /graph/api/resources/callrecording
 [approvals]: /graph/api/resources/approvalItem
+[health monitoring alert]: /graph/api/resources/healthmonitoring-alert

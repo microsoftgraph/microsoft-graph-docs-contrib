@@ -4,6 +4,7 @@ description: "Learn how to use app-only (application) authentication with Postma
 author: "jasonjoh"
 ms.localizationpriority: high
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Use app-only authentication with Postman for Microsoft Graph

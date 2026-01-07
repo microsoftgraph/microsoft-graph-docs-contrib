@@ -16,17 +16,13 @@ Namespace: microsoft.graph
 
 Get a list of [sharePointGroup](../resources/sharepointgroup.md) objects and their properties.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "filestoragecontainer-list-sharepointgroups-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "filestoragecontainer_list_sharepointgroups" } -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-list-sharepointgroups-permissions.md)]
 
 > [!NOTE]
@@ -38,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /storage/fileStorage/containers/{fileStorageContainerId}/sharePointGroups
 ```
 
@@ -78,16 +74,12 @@ The following example shows a request.
   "blockType": "request",
   "name": "list_sharepointgroups_1"
 }-->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-sharepointgroups-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-sharepointgroups-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -121,7 +113,7 @@ The following example shows the response that contains the collection of **share
   "truncated": true,
   "@odata.type": "Collection(microsoft.graph.sharePointGroup)"
 } -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -156,16 +148,12 @@ The following example shows a request.
   "blockType": "request",
   "name": "list_sharepointgroups_2"
 }-->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-sharepointgroups-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-sharepointgroups-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -199,7 +187,7 @@ The following example shows the response. Because no **sharePointGroup** objects
   "truncated": true,
   "@odata.type": "Collection(microsoft.graph.sharePointGroup)"
 } -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

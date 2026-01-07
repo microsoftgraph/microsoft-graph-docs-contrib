@@ -1,5 +1,5 @@
 ---
-title: "Update governanceRoleSetting"
+title: "Update governanceRoleSetting (deprecated)"
 description: "Update the properties of governanceRoleSetting."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -9,7 +9,7 @@ ROBOTS: NOINDEX
 ms.date: 03/08/2024
 ---
 
-# Update governanceRoleSetting
+# Update governanceRoleSetting (deprecated)
 
 Namespace: microsoft.graph
 
@@ -91,10 +91,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-governancerolesetting-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-governancerolesetting-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

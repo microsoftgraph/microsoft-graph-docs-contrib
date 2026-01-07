@@ -37,14 +37,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 To extract the content label as the signed-in user (delegated permission) or a specified user (application permission):
 
-``` http
+```http
 POST /users/{usersId}/security/informationProtection/sensitivityLabels/extractContentLabel
 POST /users/me/security/informationProtection/sensitivityLabels/extractContentLabel
 ```
 
 To extract the content label as a service principal (application permission):
 
-``` http
+```http
 POST /users/security/informationProtection/sensitivityLabels/extractContentLabel
 ```
 
@@ -130,10 +130,6 @@ User-agent: ContosoLOBApp/1.0
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/sensitivitylabelthisextractcontentlabel-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/sensitivitylabelthisextractcontentlabel-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceManagement/complianceManagementPartners
 ```
 
@@ -51,7 +51,7 @@ The following table shows the properties that are required when you create the c
 |:---|:---|:---|
 |id|String|Id of the entity|
 |lastHeartbeatDateTime|DateTimeOffset|Timestamp of last heartbeat after admin onboarded to the compliance management partner|
-|partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Partner state of this tenant. Possible values are: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
+|partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Partner state of this tenant. The possible values are: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |displayName|String|Partner display name|
 |macOsOnboarded|Boolean|Partner onboarded for Mac devices.|
 |androidOnboarded|Boolean|Partner onboarded for Android devices.|
@@ -69,13 +69,10 @@ If successful, this method returns a `201 Created` response code and a [complian
 
 ### Request
 Here is an example of the request.
-
-# [HTTP](#tab/http)
-<!-- { "blockType": "request" , "name" : "intune_onboarding_compliancemanagementpartner_create_create_compliancemanagementpartner" }-->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/deviceManagement/complianceManagementPartners
 Content-type: application/json
-Content-length: 1186
+Content-length: 1237
 
 {
   "@odata.type": "#microsoft.graph.complianceManagementPartner",
@@ -89,8 +86,9 @@ Content-length: 1186
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
-        "collectionId": "Collection Id value"
+        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
+        "targetType": "user",
+        "entraObjectId": "Entra Object Id value"
       }
     }
   ],
@@ -98,8 +96,9 @@ Content-length: 1186
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
-        "collectionId": "Collection Id value"
+        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
+        "targetType": "user",
+        "entraObjectId": "Entra Object Id value"
       }
     }
   ],
@@ -107,56 +106,21 @@ Content-length: 1186
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
-        "collectionId": "Collection Id value"
+        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
+        "targetType": "user",
+        "entraObjectId": "Entra Object Id value"
       }
     }
   ]
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/intune-onboarding-compliancemanagementpartner-create-create-compliancemanagementpartner-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-onboarding-compliancemanagementpartner-create-create-compliancemanagementpartner-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/intune-onboarding-compliancemanagementpartner-create-create-compliancemanagementpartner-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-onboarding-compliancemanagementpartner-create-create-compliancemanagementpartner-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-onboarding-compliancemanagementpartner-create-create-compliancemanagementpartner-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/intune-onboarding-compliancemanagementpartner-create-create-compliancemanagementpartner-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-onboarding-compliancemanagementpartner-create-create-compliancemanagementpartner-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/intune-onboarding-compliancemanagementpartner-create-create-compliancemanagementpartner-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.complianceManagementPartner" }-->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1235
+Content-Length: 1286
 
 {
   "@odata.type": "#microsoft.graph.complianceManagementPartner",
@@ -171,8 +135,9 @@ Content-Length: 1235
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
-        "collectionId": "Collection Id value"
+        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
+        "targetType": "user",
+        "entraObjectId": "Entra Object Id value"
       }
     }
   ],
@@ -180,8 +145,9 @@ Content-Length: 1235
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
-        "collectionId": "Collection Id value"
+        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
+        "targetType": "user",
+        "entraObjectId": "Entra Object Id value"
       }
     }
   ],
@@ -189,8 +155,9 @@ Content-Length: 1235
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
-        "collectionId": "Collection Id value"
+        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
+        "targetType": "user",
+        "entraObjectId": "Entra Object Id value"
       }
     }
   ]

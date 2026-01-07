@@ -15,7 +15,7 @@ var requestBody = new ExportResultPostRequestBody
 	DisplayName = "Export 2",
 	ExportCriteria = ExportCriteria.SearchHits | ExportCriteria.PartiallyIndexed,
 	ExportLocation = ExportLocation.ResponsiveLocations | ExportLocation.NonresponsiveLocations,
-	AdditionalOptions = AdditionalOptions.None,
+	AdditionalOptions = AdditionalOptions.SplitSource,
 	ExportFormat = ExportFormat.Pst,
 };
 

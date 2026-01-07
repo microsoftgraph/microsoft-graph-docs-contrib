@@ -74,7 +74,7 @@ In the request body, supply the values for relevant fields that should be update
 | categories|String collection|The categories associated with the event.|
 | end|DateTimeTimeZone|The date, time, and time zone that the event ends. See additional [notes for updating specific properties](#notes-for-updating-specific-properties). |
 |hideAttendees|Boolean|When set to `true`, each attendee only sees themselves in the meeting request and meeting **Tracking** list. Default is false.|
-| importance|String|The importance of the event. Possible values are: `low`, `normal`, `high`.|
+| importance|String|The importance of the event. The possible values are: `low`, `normal`, `high`.|
 | isAllDay|Boolean|Set to true if the event lasts all day. If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.|
 |isOnlineMeeting|Boolean| `True` if this event has online meeting information, `false` otherwise. Default is false. Optional.|
 | isReminderOn|Boolean|Set to true if an alert is set to remind the user of the event.|
@@ -84,8 +84,8 @@ In the request body, supply the values for relevant fields that should be update
 | recurrence|PatternedRecurrence|The recurrence pattern for the event.|
 | reminderMinutesBeforeStart|Int32|The number of minutes before the event start time that the reminder alert occurs.|
 | responseRequested|Boolean|Set to true if the sender would like a response when the event is accepted or declined.|
-| sensitivity|String| Possible values are: `normal`, `personal`, `private`, `confidential`.|
-| showAs|String|The status to show. Possible values are: `free` , `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
+| sensitivity|String| The possible values are: `normal`, `personal`, `private`, `confidential`.|
+| showAs|String|The status to show. The possible values are: `free` , `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 | start|DateTimeTimeZone|The start date, time, and time zone of the event. See additional [notes for updating specific properties](#notes-for-updating-specific-properties). |
 | subject|String|The text of the event's subject line.|
 
@@ -134,10 +134,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-event-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-event-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -46,7 +46,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|shift|string|Specifies which way to shift the cells.  Possible values are: `Down`, `Right`.|
+|shift|string|Specifies which way to shift the cells.  The possible values are: `Down`, `Right`.|
 
 ## Response
 
@@ -55,7 +55,7 @@ If successful, this method returns `200 OK` response code and [workbookRange](..
 ## Example
 Here is an example of how to call this API.
 ##### Request
-The following example shows a request.
+This example shows how to insert a cell into the worksheet and shift the other cells down.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -67,16 +67,12 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/
 Content-type: application/json
 
 {
-  "shift": "shift-value"
+  "shift": "Down"
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/range-insert-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/range-insert-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

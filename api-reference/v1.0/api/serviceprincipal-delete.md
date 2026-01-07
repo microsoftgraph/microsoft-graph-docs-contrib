@@ -4,7 +4,7 @@ description: "Delete servicePrincipal."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "entra-applications"
-author: "sureshja"
+author: "Jackson-Woods"
 ms.date: 04/18/2024
 ---
 
@@ -21,6 +21,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "serviceprincipal_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/serviceprincipal-delete-permissions.md)]
+
+[!INCLUDE [rbac-serviceprincipal-apis-write](../includes/rbac-for-apis/rbac-serviceprincipal-apis-write.md)]
 
 ## HTTP request
 
@@ -61,10 +63,6 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-serviceprincipal-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-serviceprincipal-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

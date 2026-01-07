@@ -13,8 +13,6 @@ ms.date: 10/17/2024
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Retrieve a list of [authenticationContextClassReference](../resources/authenticationcontextclassreference.md) objects.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -74,10 +72,6 @@ GET /identity/conditionalAccess/authenticationContextClassReferences
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-authenticationcontextclassreference-v1-e1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-authenticationcontextclassreference-v1-e1-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-authenticationcontextclassreference-v1-e1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -123,7 +117,7 @@ Content-type: application/json
 
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#/conditionalAccess/authenticationContextClassReferences",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#/conditionalAccess/authenticationContextClassReferences",
   "value": [
     {
       "id": "c1",

@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /admin/windows/updates/products/FindByCatalogId(catalogID='catalogID')
 ```
 
@@ -70,16 +70,12 @@ The following example shows a request.
   "name": "windowsupdates.FindByCatalogId"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/windows/updates/products/FindByCatalogId(catalogID='10cb1ba292c5586e22c9991be3f12fbd39f2ebf231cb5d201c67f42fbaccc567')?expand=revisions($expand=catalogEntry,knowledgeBaseArticle),knownIssues($expand=originatingKnowledgeBaseArticle,resolvingKnowledgeBaseArticle)
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/windowsupdatesfindbycatalogid-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/windowsupdatesfindbycatalogid-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -119,7 +115,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.windowsUpdates.product)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

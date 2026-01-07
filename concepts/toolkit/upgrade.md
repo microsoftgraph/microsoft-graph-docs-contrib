@@ -4,9 +4,13 @@ description: "Upgrade guide to help you move from a previous version of the Tool
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: upgrade-and-migration-article
 ---
 
 # Upgrade to the latest version of Microsoft Graph Toolkit
+
+> [!CAUTION]
+> The Microsoft Graph Toolkit is deprecated. The retirement period begins September 1, 2025, with full retirement planned for August 28, 2026. Developers should migrate to using the Microsoft Graph SDKs or other supported Microsoft Graph tools for building web experiences. For more information, see the [deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-toolkit-retirement/).
 
 This article provides a summary of the breaking changes introduced in Microsoft Graph Toolkit versions and how these changes might affect your solution.
 

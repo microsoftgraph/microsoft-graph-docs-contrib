@@ -1,22 +1,25 @@
 ---
 title: "customAppScope resource type"
-description: "Represents a customized RBAC scope object from each provider."
+description: "Represents a customized RBAC scope object from each RBAC provider."
 ms.localizationpriority: medium
 author: "cubika"
 ms.subservice: "entra-directory-management"
 doc_type: "resourcePageType"
 ms.date: 07/22/2024
+toc.title: Custom app scope for RBAC providers
 ---
 
 # customAppScope resource type
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a customized RBAC scope object from each provider. This resource is a subtype of [appScope](appscope.md), which is a scope defined and understood by a specific application. A custom app scope has its own lifecycle for role assignment objects across various RBAC providers. A custom app scope can also store custom attributes sourced from different RBAC providers.
+Represents a customized RBAC scope object from each RBAC provider. This resource is a subtype of [appScope](appscope.md), which is a scope defined and understood by a specific application. A custom app scope has its own lifecycle for role assignment objects across various RBAC providers. A custom app scope can also store custom attributes sourced from different RBAC providers.
 
 For example, in the Exchange Online provider, **customAppScope** maps to [management role scope](/exchange/understanding-management-role-scopes-exchange-2013-help) that can be managed separately by Exchange administrators. The CRUD operations for **customAppScope** entities are supported. You can use the ID of a **customAppScope** as the **appScopeId** of a [unifiedRoleAssignment](unifiedroleassignment.md).
 
-Currently only the Exchange Online RBAC provider is supported.
+The following providers are supported:
+- Exchange Online RBAC provider
+- Microsoft Defender XDR Unified RBAC provider
 
 Inherits from [appScope](appscope.md).
 
@@ -24,11 +27,12 @@ Inherits from [appScope](appscope.md).
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List](../api/unifiedrbacapplication-list-customappscopes.md) | [customAppScope](customappscope.md) collection | Get a list of [customAppScope](../resources/customappscope.md) objects for an RBAC provider. |
-| [Create](../api/unifiedrbacapplication-post-customappscope.md) | [customAppScope](customappscope.md) | Create a new [customAppScope](../resources/customappscope.md) object for an RBAC provider. |
-| [Get](../api/customappscope-get.md) | [customAppScope](customappscope.md) | Get the properties of a [customAppScope](../resources/customappscope.md) object for an RBAC provider. |
-| [Update](../api/customappscope-update.md)| None | Update an existing [customAppScope](../resources/customappscope.md) object of an RBAC provider.|
-| [Delete](../api/customappscope-delete.md) | None | Delete a [customAppScope](../resources/customappscope.md) object of an RBAC provider. |
+| [List for Exchange Online and Defender](../api/unifiedrbacapplication-list-customappscopes.md) | [customAppScope](customappscope.md) collection | Get a list of [customAppScope](../resources/customappscope.md) objects for the Exchange Online or Defender RBAC providers. |
+| [List for Defender](../api/unifiedrbacapplicationmultiple-list-customappscopes.md) | [customAppScope](customappscope.md) collection | Get a list of [customAppScope](../resources/customappscope.md) objects for the Defender RBAC provider. |
+| [Create for Exchange Online](../api/unifiedrbacapplication-post-customappscope.md) | [customAppScope](customappscope.md) | Create a new [customAppScope](../resources/customappscope.md) object for an RBAC provider. |
+| [Get for Exchange Online](../api/customappscope-get.md) | [customAppScope](customappscope.md) | Get the properties of a [customAppScope](../resources/customappscope.md) object for an RBAC provider. |
+| [Update for Exchange Online](../api/customappscope-update.md)| None | Update an existing [customAppScope](../resources/customappscope.md) object of an RBAC provider.|
+| [Delete for Exchange Online](../api/customappscope-delete.md) | None | Delete a [customAppScope](../resources/customappscope.md) object of an RBAC provider. |
 
 ## Properties
 

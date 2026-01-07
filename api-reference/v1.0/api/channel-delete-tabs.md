@@ -66,10 +66,6 @@ DELETE https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/channeldeletetabs-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/channeldeletetabs-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/channeldeletetabs-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

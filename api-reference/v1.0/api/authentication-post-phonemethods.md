@@ -6,7 +6,7 @@ author: "luc-msft"
 ms.reviewer: intelligentaccesspm
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
-ms.date: 04/04/2024
+ms.date: 07/31/2025
 ---
 
 # Create phoneMethod
@@ -19,22 +19,24 @@ Adding a phone number makes it available for use in both Azure multi-factor auth
 
 Additionally, if a user is enabled by policy to use SMS sign-in and a `mobile` number is added, the system attempts to register the number for use in that system.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+<!-- { 
+  "blockType": "permissions", 
+  "name": "authentication_post_phonemethods", 
+  "requestUrls": ["POST /users/{id | userPrincipalName}/authentication/phoneMethods"]
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-post-phonemethods-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-write](../includes/rbac-for-apis/rbac-authentication-methods-apis-write.md)]
 
-Users can't add a phone authentication method to their own account.
-
 ## HTTP request
 
-Add a phone authentication method to another user's account.
+Add a phone authentication method to another user's account. Users can't add a phone authentication method to their own account.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{id | userPrincipalName}/authentication/phoneMethods
@@ -54,7 +56,7 @@ In the request body, supply a JSON representation of a [phoneAuthenticationMetho
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |phoneNumber|String|The phone number to text or call for authentication. Phone numbers use the format `+{country code} {number}x{extension}`, with extension optional. For example, `+1 5555551234` or `+1 5555551234x123` are valid. Numbers are rejected when creating or updating if they don't match the required format.|
-|phoneType|String|Possible values are: `mobile`, `alternateMobile`, and `office`.|
+|phoneType|String|The possible values are: `mobile`, `alternateMobile`, and `office`.|
 
 ## Response
 
@@ -86,10 +88,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-phoneauthenticationmethod-from-authentication-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-phoneauthenticationmethod-from-authentication-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

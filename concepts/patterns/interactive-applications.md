@@ -4,6 +4,7 @@ description: "Learn about the integration pattern that uses Microsoft Graph APIs
 author: "OlgaPodo"
 ms.localizationpriority: medium
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Build interactive apps by using Microsoft Graph APIs
@@ -39,7 +40,7 @@ The following considerations support the use of this integration pattern:
 
 - **Availability**: The client app periodically polls Microsoft Graph APIs for data. The client app can make requests and process the data at a speed controlled by the client environment.
 
-- **Latency**: The client app queries Microsoft Graph APIs for data in real time; however, there may be some latency depending on the network conditions and the load on the Microsoft Graph service.
+- **Latency**: The client app queries Microsoft Graph APIs for data in real time; however, there might be some latency depending on the network conditions and the load on the Microsoft Graph service.
 
 - **Scalability**: The client app can scale horizontally by adding more instances to the App Service plan. Microsoft Graph APIs can handle a large number of requests, but they also have throttling limits and policies to prevent abuse. The client app should implement retry logic and exponential back-off to handle throttling errors gracefully.
 

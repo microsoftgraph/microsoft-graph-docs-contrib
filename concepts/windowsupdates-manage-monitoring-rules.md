@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: conceptualPageType
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Manage monitoring rules using Windows Autopatch
@@ -101,7 +102,7 @@ Content-Type: application/json
 ```
 
 ## Step 2: Resume a deployment that was paused by a monitoring rule
-When a monitoring rule triggers, it provides the opportunity to investigate update issues that may have lead to it being applied. After investigation, you may wish to resume the deployment. There are two ways to do so: removing the monitoring rule or updating the monitoring rule threshold.
+When a monitoring rule triggers, it provides the opportunity to investigate update issues that might have lead to it being applied. After investigation, you might wish to resume the deployment. There are two ways to do so: removing the monitoring rule or updating the monitoring rule threshold.
 
 ### Example: Resume deployment by removing a monitoring rule
 When a monitoring rule that pauses the deployment is triggered, one way to resume the deployment is to remove the rule.
@@ -110,7 +111,7 @@ The following example shows how to resume the deployment by removing the rule.
 
 #### Request
 
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/admin/windows/updates/deployments/b5171742-1742-b517-4217-17b5421717b5
 Content-Type: application/json
 
@@ -127,7 +128,7 @@ Content-Type: application/json
 
 #### Response
 
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 
@@ -170,7 +171,7 @@ The following example shows how to resume the deployment by changing the monitor
 
 #### Request
 
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/admin/windows/updates/deployments/b5171742-1742-b517-4217-17b5421717b5
 Content-Type: application/json
 
@@ -193,7 +194,7 @@ Content-Type: application/json
 
 #### Response
 
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 

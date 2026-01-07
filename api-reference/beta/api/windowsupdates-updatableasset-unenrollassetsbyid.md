@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /admin/windows/updates/updatableAssets/unenrollAssetsById
 ```
 
@@ -50,8 +50,8 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|updateCategory|microsoft.graph.windowsUpdates.updateCategory|The category of updates for Windows Autopatch to stop managing. Supports a subset of the values for **updateCategory**. Possible values are: `driver`, `feature`, `quality`, `unknownFutureValue`.|
-|memberEntityType|String|The full type of the **updatableAsset** resources. Possible values are: `#microsoft.graph.windowsUpdates.azureADDevice`.|
+|updateCategory|microsoft.graph.windowsUpdates.updateCategory|The category of updates for Windows Autopatch to stop managing. Supports a subset of the values for **updateCategory**. The possible values are: `driver`, `feature`, `quality`, `unknownFutureValue`.|
+|memberEntityType|String|The full type of the **updatableAsset** resources. The possible values are: `#microsoft.graph.windowsUpdates.azureADDevice`.|
 |ids|String collection|List of identifiers that correspond to the **updatableAsset** resources to unenroll from update management for the given **updateCategory**.|
 
 ## Response
@@ -68,7 +68,7 @@ If successful, this action returns a `202 Accepted` response code. It doesn't re
   "name": "updatableasset_unenrollassetsbyid"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/unenrollAssetsById
 Content-Type: application/json
 
@@ -85,10 +85,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/updatableasset-unenrollassetsbyid-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/updatableasset-unenrollassetsbyid-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -124,7 +120,7 @@ Content-Type: application/json
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 ```
 

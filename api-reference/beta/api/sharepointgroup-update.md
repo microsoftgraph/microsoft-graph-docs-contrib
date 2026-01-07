@@ -16,17 +16,13 @@ Namespace: microsoft.graph
 
 Update the properties of a [sharePointGroup](../resources/sharepointgroup.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "sharepointgroup-update-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "sharepointgroup_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/sharepointgroup-update-permissions.md)]
 
 > [!NOTE]
@@ -38,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /storage/fileStorage/containers/{fileStorageContainerId}/sharePointGroups/{sharePointGroupId}
 ```
 
@@ -74,7 +70,7 @@ The following example shows a request.
   "name": "update_sharePointGroup",
   "@odata.type": "microsoft.graph.sharePointGroup"
 } -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/12
 Content-Type: application/json
 
@@ -87,10 +83,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-sharepointgroup-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-sharepointgroup-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -125,7 +117,7 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.sharePointGroup"
 } -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

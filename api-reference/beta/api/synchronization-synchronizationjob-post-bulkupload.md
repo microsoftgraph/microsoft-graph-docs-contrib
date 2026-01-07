@@ -4,7 +4,7 @@ description: "Perform a new bulkUpload."
 author: "cmmdesai"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
-doc_type: apiPageType 
+doc_type: apiPageType
 ms.date: 04/05/2024
 ---
 
@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 POST /servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/bulkUpload
 ```
 
@@ -488,7 +488,7 @@ Content-Type: application/scim+json
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Type: application/scim+json
 client-request-id: 92cd20f6-fcc3-5d61-098e-a6dd35e460ef

@@ -5,6 +5,7 @@ author: "jewan-microsoft"
 ms.localizationpriority: high
 ms.subservice: "onenote"
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 

@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change which could break your applications. While Intune /beta APIs are supported by Microsoft, you should use these at your own discretion. In general, /beta APIs are not recommended for use in production applications. To determine whether an API is available in v1.0, use the Version selector
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -23,8 +23,8 @@ The Windows Autopilot Deployment Profile settings used by the Autopilot device f
 |:---|:---|:---|
 |hidePrivacySettings|Boolean|Show or hide privacy settings to user|
 |hideEULA|Boolean|Show or hide EULA to user|
-|userType|[windowsUserType](../resources/intune-enrollment-windowsusertype.md)|Type of user. Possible values are: `administrator`, `standard`, `unknownFutureValue`.|
-|deviceUsageType|[windowsDeviceUsageType](../resources/intune-enrollment-windowsdeviceusagetype.md)|AAD join authentication type. Possible values are: `singleUser`, `shared`, `unknownFutureValue`.|
+|userType|[windowsUserType](../resources/intune-enrollment-windowsusertype.md)|Type of user. The possible values are: `administrator`, `standard`, `unknownFutureValue`.|
+|deviceUsageType|[windowsDeviceUsageType](../resources/intune-enrollment-windowsdeviceusagetype.md)|AAD join authentication type. The possible values are: `singleUser`, `shared`, `unknownFutureValue`.|
 |skipKeyboardSelectionPage|Boolean|If set, then skip the keyboard selection page if Language and Region are set|
 |hideEscapeLink|Boolean|If set to true, then the user can't start over with different account, on company sign-in|
 

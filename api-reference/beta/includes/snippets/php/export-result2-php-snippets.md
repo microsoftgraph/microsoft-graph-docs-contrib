@@ -19,7 +19,7 @@ $requestBody = new ExportResultPostRequestBody();
 $requestBody->setDisplayName('Export 2');
 $requestBody->setExportCriteria(new ExportCriteria('searchHits, partiallyIndexed'));
 $requestBody->setExportLocation(new ExportLocation('responsiveLocations, nonresponsiveLocations'));
-$requestBody->setAdditionalOptions(new AdditionalOptions('none'));
+$requestBody->setAdditionalOptions(new AdditionalOptions('splitSource'));
 $requestBody->setExportFormat(new ExportFormat('pst'));
 
 $graphServiceClient->security()->cases()->ediscoveryCases()->byEdiscoveryCaseId('ediscoveryCase-id')->searches()->byEdiscoverySearchId('ediscoverySearch-id')->microsoftGraphSecurityExportResult()->post($requestBody)->wait();

@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /networkAccess/connectivity/remoteNetworks/{remoteNetworkId}/deviceLinks
 ```
 
@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 The following is an example of a request.
 
-``` http
+```http
 GET hhttps://graph.microsoft.com/beta/networkAccess/connectivity/remoteNetworks/4ecfc62c-ec85-42fd-af37-5a93c7deb1d9/deviceLinks
 ```
 
@@ -74,7 +74,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.networkaccess.deviceLink)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

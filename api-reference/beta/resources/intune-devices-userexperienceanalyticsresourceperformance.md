@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change which could break your applications. While Intune /beta APIs are supported by Microsoft, you should use these at your own discretion. In general, /beta APIs are not recommended for use in production applications. To determine whether an API is available in v1.0, use the Version selector
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -45,13 +45,13 @@ The user experience analytics resource performance entity.
 |ramSpikeTimePercentageThreshold|Double|Threshold of ramSpikeTimeScore. Valid values 0 to 100|
 |deviceResourcePerformanceScore|Int32|Resource performance score of a specific device. Valid values 0 to 100|
 |averageSpikeTimeScore|Int32|AverageSpikeTimeScore of a device or a model type. Valid values 0 to 100|
-|machineType|[userExperienceAnalyticsMachineType](../resources/intune-devices-userexperienceanalyticsmachinetype.md)|Helps to identify if device is a physical device or virtual. Possible values are: `unknown`, `physical`, `virtual`, `unknownFutureValue`.|
+|machineType|[userExperienceAnalyticsMachineType](../resources/intune-devices-userexperienceanalyticsmachinetype.md)|Helps to identify if device is a physical device or virtual. The possible values are: `unknown`, `physical`, `virtual`, `unknownFutureValue`.|
 |cpuDisplayName|String|The name of the processor on the device, For example, 11th Gen Intel(R) Core(TM) i7.|
 |totalProcessorCoreCount|Int32|The count of cores of the processor of device. Valid values 0 to 512|
 |cpuClockSpeedInMHz|Double|The clock speed of the processor, in MHz. Valid values 0 to 1000000|
 |totalRamInMB|Double|The total RAM of the device, in MB. Valid values 0 to 1000000|
-|diskType|[diskType](../resources/intune-devices-disktype.md)|The type of disk storage used on the device. Possible values are: `unknown`, `hdd`, `ssd`, `unknownFutureValue`.|
-|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The health state of the user experience analytics model. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`, `unknownFutureValue`.|
+|diskType|[diskType](../resources/intune-devices-disktype.md)|The type of disk storage used on the device. The possible values are: `unknown`, `hdd`, `ssd`, `unknownFutureValue`.|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The health state of the user experience analytics model. The possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`, `unknownFutureValue`.|
 
 ## Relationships
 None

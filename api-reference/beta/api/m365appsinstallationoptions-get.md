@@ -33,7 +33,7 @@ When calling on behalf of a user, the user needs to belong to the following [Mic
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /admin/microsoft365Apps/installationOptions
 ```
 
@@ -62,16 +62,12 @@ The following example shows a request.
   "name": "get_m365AppsInstallationOptions"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/microsoft365Apps/installationOptions
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-m365appsinstallationoptions-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-m365appsinstallationoptions-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -105,7 +101,7 @@ The following example shows a response.
   "@odata.type": "microsoft.graph.m365AppsInstallationOptions"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

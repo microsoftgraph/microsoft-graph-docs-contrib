@@ -71,10 +71,6 @@ GET https://graph.microsoft.com/beta/solutions/backupRestore/exchangeProtectionP
 [!INCLUDE [sample-code](../includes/snippets/csharp/exchangeprotectionpolicy-list-mailboxprotectionunitsbulkadditionjobs-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/exchangeprotectionpolicy-list-mailboxprotectionunitsbulkadditionjobs-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/exchangeprotectionpolicy-list-mailboxprotectionunitsbulkadditionjobs-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

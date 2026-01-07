@@ -23,7 +23,7 @@ The following tables show the least privileged permission or permissions require
 Permissions to get a **usageRight** for a user:
 
 <!-- { "blockType": "ignored"} -->
-``` http
+```http
 GET /me/cloudLicensing/usageRights/{usageRightId}
 GET /users/{userId}/cloudLicensing/usageRights/{usageRightId}
 ```
@@ -34,7 +34,7 @@ GET /users/{userId}/cloudLicensing/usageRights/{usageRightId}
 Permissions to get a **usageRight** for a group:
 
 <!-- { "blockType": "ignored"} -->
-``` http
+```http
 GET /groups/{groupId}/cloudLicensing/usageRights/{usageRightId}
 ```
 
@@ -47,7 +47,7 @@ To get a usage right for the signed-in user using delegated (`/me`) permissions:
 
 <!-- { "blockType": "ignored" }
 -->
-``` http
+```http
 GET /me/cloudLicensing/usageRights/{usageRightId}
 ```
 
@@ -55,7 +55,7 @@ To get a usage right for a specific user or a group using either delegated or ap
 
 <!-- { "blockType": "ignored" }
 -->
-``` http
+```http
 GET /users/{userId}/cloudLicensing/usageRights/{usageRightId}
 GET /groups/{groupId}/cloudLicensing/usageRights/{usageRightId}
 ```
@@ -94,7 +94,7 @@ The following example shows a request.
   "sampleKeys": ["48fbdf70-9e09-40df-9dbe-17af483ab113","i6sq63x2vd3esbkifv7m42xdaugc6lfpqf3ozgvdlvk3ttnamby3"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/48fbdf70-9e09-40df-9dbe-17af483ab113/cloudLicensing/usageRights/i6sq63x2vd3esbkifv7m42xdaugc6lfpqf3ozgvdlvk3ttnamby3
 ```
 
@@ -114,7 +114,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.cloudLicensing.usageRight"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -148,7 +148,7 @@ The following example shows a request.
   "sampleKeys": ["1003985b-dfc1-4f42-97d4-65f70a335ca8","j6sq63x2vd3esbkifv7m42xdaugc6lfpqf3ozgvdlvk3ttnamby4"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/1003985b-dfc1-4f42-97d4-65f70a335ca8/cloudLicensing/usageRights/j6sq63x2vd3esbkifv7m42xdaugc6lfpqf3ozgvdlvk3ttnamby4
 ```
 
@@ -168,7 +168,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.cloudLicensing.usageRight"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

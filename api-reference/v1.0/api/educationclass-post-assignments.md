@@ -57,6 +57,7 @@ Content-type: application/json
 {
     "dueDateTime": "2022-09-16T00:00:00Z",
     "displayName": "Reading test 09.14",
+    "languageTag": "es-MX",
     "instructions": {
         "contentType": "text",
         "content": "Read chapter 4"
@@ -75,10 +76,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-educationassignment-from-educationclass-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-educationassignment-from-educationclass-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

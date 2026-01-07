@@ -28,10 +28,6 @@ items:
     href: ../../api/user-revokesigninsessions.md
   - name: Export personal data
     href: ../../api/user-exportpersonaldata.md
-  - name: AI interaction
-    items:
-    - name: Get all enterprise interactions
-      href: ../../api/aiinteractionhistory-getallenterpriseinteractions.md
   - name: App role assignments
     items:
     - name: List
@@ -62,6 +58,18 @@ items:
       href: ../../api/user-list-calendarview.md
     - name: Reminder view
       href: ../../api/user-reminderview.md
+  - name: Cloud PC
+    items:
+    - name: List Cloud PCs
+      href: ../../api/user-list-cloudpcs.md
+  - name: Data security and governance
+    items:
+    - name: Compute protection scopes
+      href: ../../api/userprotectionscopecontainer-compute.md
+    - name: Create content activity
+      href: ../../api/activitiescontainer-post-contentactivities.md
+    - name: Process content
+      href: ../../api/userdatasecurityandgovernance-processcontent.md
   - name: Delegated permission grants
     items:
     - name: List delegated permission grants
@@ -104,6 +112,10 @@ items:
       href: ../../api/drive-get.md
     - name: List children
       href: ../../api/driveitem-list-children.md
+  - name: Employee experience
+    items:
+    - name: List assigned roles
+      href: ../../api/employeeexperienceuser-list-assignedroles.md
   - name: Groups
     items:
     - name: List joined teams

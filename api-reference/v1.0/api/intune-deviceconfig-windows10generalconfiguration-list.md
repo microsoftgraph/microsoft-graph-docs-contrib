@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /deviceManagement/deviceConfigurations
 ```
 
@@ -52,52 +52,13 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 Here is an example of the request.
-
-# [HTTP](#tab/http)
-<!-- { "blockType": "request" , "name" : "intune_deviceconfig_windows10generalconfiguration_list_list_windows10generalconfigurations" }-->
-``` http
+```http
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/intune-deviceconfig-windows10generalconfiguration-list-list-windows10generalconfigurations-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-deviceconfig-windows10generalconfiguration-list-list-windows10generalconfigurations-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/intune-deviceconfig-windows10generalconfiguration-list-list-windows10generalconfigurations-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-deviceconfig-windows10generalconfiguration-list-list-windows10generalconfigurations-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-deviceconfig-windows10generalconfiguration-list-list-windows10generalconfigurations-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/intune-deviceconfig-windows10generalconfiguration-list-list-windows10generalconfigurations-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-deviceconfig-windows10generalconfiguration-list-list-windows10generalconfigurations-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/intune-deviceconfig-windows10generalconfiguration-list-list-windows10generalconfigurations-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.windows10GeneralConfiguration" }-->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 10959
@@ -112,22 +73,17 @@ Content-Length: 10959
       "description": "Description value",
       "displayName": "Display Name value",
       "version": 7,
-      "enterpriseCloudPrintDiscoveryEndPoint": "Enterprise Cloud Print Discovery End Point value",
-      "enterpriseCloudPrintOAuthAuthority": "Enterprise Cloud Print OAuth Authority value",
-      "enterpriseCloudPrintOAuthClientIdentifier": "Enterprise Cloud Print OAuth Client Identifier value",
-      "enterpriseCloudPrintResourceIdentifier": "Enterprise Cloud Print Resource Identifier value",
-      "enterpriseCloudPrintDiscoveryMaxLimit": 5,
-      "enterpriseCloudPrintMopriaDiscoveryResourceIdentifier": "Enterprise Cloud Print Mopria Discovery Resource Identifier value",
-      "searchBlockDiacritics": true,
-      "searchDisableAutoLanguageDetection": true,
-      "searchDisableIndexingEncryptedItems": true,
-      "searchEnableRemoteQueries": true,
-      "searchDisableIndexerBackoff": true,
-      "searchDisableIndexingRemovableDrive": true,
-      "searchEnableAutomaticIndexSizeManangement": true,
-      "diagnosticsDataSubmissionMode": "none",
-      "oneDriveDisableFileSync": true,
-      "smartScreenEnableAppInstallControl": true,
+      "networkProxyApplySettingsDeviceWide": true,
+      "networkProxyDisableAutoDetect": true,
+      "networkProxyAutomaticConfigurationUrl": "https://example.com/networkProxyAutomaticConfigurationUrl/",
+      "networkProxyServer": {
+        "@odata.type": "microsoft.graph.windows10NetworkProxyServer",
+        "address": "Address value",
+        "exceptions": [
+          "Exceptions value"
+        ],
+        "useForLocalAddresses": true
+      },
       "personalizationDesktopImageUrl": "https://example.com/personalizationDesktopImageUrl/",
       "personalizationLockScreenImageUrl": "https://example.com/personalizationLockScreenImageUrl/",
       "bluetoothAllowedServices": [
@@ -193,6 +149,12 @@ Content-Length: 10959
       "defenderProcessesToExclude": [
         "Defender Processes To Exclude value"
       ],
+      "enterpriseCloudPrintDiscoveryEndPoint": "Enterprise Cloud Print Discovery End Point value",
+      "enterpriseCloudPrintOAuthAuthority": "Enterprise Cloud Print OAuth Authority value",
+      "enterpriseCloudPrintOAuthClientIdentifier": "Enterprise Cloud Print OAuth Client Identifier value",
+      "enterpriseCloudPrintResourceIdentifier": "Enterprise Cloud Print Resource Identifier value",
+      "enterpriseCloudPrintDiscoveryMaxLimit": 5,
+      "enterpriseCloudPrintMopriaDiscoveryResourceIdentifier": "Enterprise Cloud Print Mopria Discovery Resource Identifier value",
       "lockScreenAllowTimeoutConfiguration": true,
       "lockScreenBlockActionCenterNotifications": true,
       "lockScreenBlockCortana": true,
@@ -211,6 +173,26 @@ Content-Length: 10959
       "privacyAdvertisingId": "blocked",
       "privacyAutoAcceptPairingAndConsentPrompts": true,
       "privacyBlockInputPersonalization": true,
+      "searchBlockDiacritics": true,
+      "searchDisableAutoLanguageDetection": true,
+      "searchDisableIndexingEncryptedItems": true,
+      "searchEnableRemoteQueries": true,
+      "searchDisableIndexerBackoff": true,
+      "searchDisableIndexingRemovableDrive": true,
+      "searchEnableAutomaticIndexSizeManangement": true,
+      "settingsBlockSettingsApp": true,
+      "settingsBlockSystemPage": true,
+      "settingsBlockDevicesPage": true,
+      "settingsBlockNetworkInternetPage": true,
+      "settingsBlockPersonalizationPage": true,
+      "settingsBlockAccountsPage": true,
+      "settingsBlockTimeLanguagePage": true,
+      "settingsBlockEaseOfAccessPage": true,
+      "settingsBlockPrivacyPage": true,
+      "settingsBlockUpdateSecurityPage": true,
+      "settingsBlockAppsPage": true,
+      "settingsBlockGamingPage": true,
+      "smartScreenEnableAppInstallControl": true,
       "startBlockUnpinningAppsFromTaskbar": true,
       "startMenuAppListVisibility": "collapse",
       "startMenuHideChangeAccountSettings": true,
@@ -239,18 +221,8 @@ Content-Length: 10959
       "startMenuPinnedFolderPictures": "hide",
       "startMenuPinnedFolderSettings": "hide",
       "startMenuPinnedFolderVideos": "hide",
-      "settingsBlockSettingsApp": true,
-      "settingsBlockSystemPage": true,
-      "settingsBlockDevicesPage": true,
-      "settingsBlockNetworkInternetPage": true,
-      "settingsBlockPersonalizationPage": true,
-      "settingsBlockAccountsPage": true,
-      "settingsBlockTimeLanguagePage": true,
-      "settingsBlockEaseOfAccessPage": true,
-      "settingsBlockPrivacyPage": true,
-      "settingsBlockUpdateSecurityPage": true,
-      "settingsBlockAppsPage": true,
-      "settingsBlockGamingPage": true,
+      "diagnosticsDataSubmissionMode": "none",
+      "oneDriveDisableFileSync": true,
       "windowsSpotlightBlockConsumerSpecificFeatures": true,
       "windowsSpotlightBlocked": true,
       "windowsSpotlightBlockOnActionCenter": true,
@@ -259,17 +231,6 @@ Content-Length: 10959
       "windowsSpotlightBlockWelcomeExperience": true,
       "windowsSpotlightBlockWindowsTips": true,
       "windowsSpotlightConfigureOnLockScreen": "disabled",
-      "networkProxyApplySettingsDeviceWide": true,
-      "networkProxyDisableAutoDetect": true,
-      "networkProxyAutomaticConfigurationUrl": "https://example.com/networkProxyAutomaticConfigurationUrl/",
-      "networkProxyServer": {
-        "@odata.type": "microsoft.graph.windows10NetworkProxyServer",
-        "address": "Address value",
-        "exceptions": [
-          "Exceptions value"
-        ],
-        "useForLocalAddresses": true
-      },
       "accountsBlockAddingNonMicrosoftAccountEmail": true,
       "antiTheftModeBlocked": true,
       "bluetoothBlocked": true,

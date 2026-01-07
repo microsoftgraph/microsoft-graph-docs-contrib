@@ -17,7 +17,7 @@ A contact is an item in Outlook where you can organize and save information abou
 This resource supports:
 
 - Adding your own data to custom properties as [extensions](/graph/extensibility-overview).
-- Subscribing to [change notifications](/graph/webhooks).
+- Subscribing to [change notifications](/graph/change-notifications-overview).
 - Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates,
 by providing a [delta](../api/contact-delta.md) function.
 

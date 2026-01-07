@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/13/2024
+ms.date: 08/01/2024
 ---
 
 # managedAppRegistration resource type
@@ -22,7 +22,7 @@ The ManagedAppRegistration resource represents the details of an app, with manag
 |:---|:---|:---|
 |[List managedAppRegistrations](../api/intune-mam-managedappregistration-list.md)|[managedAppRegistration](../resources/intune-mam-managedappregistration.md) collection|List properties and relationships of the [managedAppRegistration](../resources/intune-mam-managedappregistration.md) objects.|
 |[Get managedAppRegistration](../api/intune-mam-managedappregistration-get.md)|[managedAppRegistration](../resources/intune-mam-managedappregistration.md)|Read properties and relationships of the [managedAppRegistration](../resources/intune-mam-managedappregistration.md) object.|
-|[getUserIdsWithFlaggedAppRegistration function](../api/intune-mam-managedappregistration-getuseridswithflaggedappregistration.md)|String collection|Not yet documented|
+|[getUserIdsWithFlaggedAppRegistration function](../api/intune-mam-managedappregistration-getuseridswithflaggedappregistration.md)|String collection||
 
 ## Properties
 |Property|Type|Description|

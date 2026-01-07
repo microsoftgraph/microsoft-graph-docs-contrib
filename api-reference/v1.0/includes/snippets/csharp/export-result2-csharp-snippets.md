@@ -7,15 +7,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 // Code snippets are only available for the latest version. Current version is 5.x
 
 // Dependencies
-using Microsoft.Graph.Beta.Security.Cases.EdiscoveryCases.Item.Searches.Item.MicrosoftGraphSecurityExportResult;
-using Microsoft.Graph.Beta.Models.Security;
+using Microsoft.Graph.Security.Cases.EdiscoveryCases.Item.Searches.Item.MicrosoftGraphSecurityExportResult;
+using Microsoft.Graph.Models.Security;
 
 var requestBody = new ExportResultPostRequestBody
 {
 	DisplayName = "Export 2",
 	ExportCriteria = ExportCriteria.SearchHits | ExportCriteria.PartiallyIndexed,
 	ExportLocation = ExportLocation.ResponsiveLocations | ExportLocation.NonresponsiveLocations,
-	AdditionalOptions = AdditionalOptions.None,
+	AdditionalOptions = AdditionalOptions.SplitSource,
 	ExportFormat = ExportFormat.Pst,
 };
 

@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** APIs under the /beta version in Microsoft Graph are subject to change which could break your applications. While Intune /beta APIs are supported by Microsoft, you should use these at your own discretion. In general, /beta APIs are not recommended for use in production applications. To determine whether an API is available in v1.0, use the Version selector
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -37,8 +37,8 @@ A new entity to represent driver inventories.
 |releaseDateTime|DateTimeOffset|The release date time of the driver.|
 |driverClass|String|The class of the driver.|
 |applicableDeviceCount|Int32|The number of devices for which this driver is applicable.|
-|approvalStatus|[driverApprovalStatus](../resources/intune-softwareupdate-driverapprovalstatus.md)|The approval status for this driver. Possible values are: `needsReview`, `declined`, `approved`, `suspended`.|
-|category|[driverCategory](../resources/intune-softwareupdate-drivercategory.md)|The category for this driver. Possible values are: `recommended`, `previouslyApproved`, `other`.|
+|approvalStatus|[driverApprovalStatus](../resources/intune-softwareupdate-driverapprovalstatus.md)|The approval status for this driver. The possible values are: `needsReview`, `declined`, `approved`, `suspended`.|
+|category|[driverCategory](../resources/intune-softwareupdate-drivercategory.md)|The category for this driver. The possible values are: `recommended`, `previouslyApproved`, `other`.|
 |deployDateTime|DateTimeOffset|The date time when a driver should be deployed if approvalStatus is approved.|
 
 ## Relationships

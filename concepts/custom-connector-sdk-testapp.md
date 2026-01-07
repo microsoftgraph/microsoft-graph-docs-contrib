@@ -7,6 +7,7 @@ doc_type: conceptualPageType
 ms.subservice: search
 description: "Learn how to use the test application that's included in the Copilot connectors SDK."
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Copilot connectors SDK test application

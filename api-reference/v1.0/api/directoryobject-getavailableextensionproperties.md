@@ -1,6 +1,6 @@
 ---
 title: "directoryObject: getAvailableExtensionProperties"
-description: "Get all or a filtered list of the directory extension properties that have been registered in a directory."
+description: "Get all or a filtered list of the directory extension properties that are registered in a directory."
 author: "dkershaw10"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
@@ -11,7 +11,7 @@ ms.date: 03/06/2024
 # directoryObject: getAvailableExtensionProperties
 Namespace: microsoft.graph
 
-Return all directory extension definitions that have been registered in a directory, including through multi-tenant apps. The following entities support extension properties:
+Return all directory extension definitions that are registered in a directory, including through multitenant apps. The following entities support extension properties:
 
 + [user](../resources/user.md)
 + [group](../resources/group.md)
@@ -20,6 +20,10 @@ Return all directory extension definitions that have been registered in a direct
 + [device](../resources/device.md)
 + [organization](../resources/organization.md)
 
+> [!IMPORTANT]
+> 
+> This API has a known issue and only processes results for tenants with up to 1,000 service principals; otherwise, it returns an empty response. Use [List extensionProperties (directory extensions)](/graph/api/application-list-extensionproperty) instead.
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
@@ -27,6 +31,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "directoryobject_getavailableextensionproperties" } -->
 [!INCLUDE [permissions-table](../includes/permissions/directoryobject-getavailableextensionproperties-permissions.md)]
+
+[!INCLUDE [rbac-apps-applications-directoryextensions-apis](../includes/rbac-for-apis/rbac-apps-applications-directoryextensions-apis.md)]
 
 ## HTTP request
 
@@ -51,7 +57,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|isSyncedFromOnPremises|Boolean|`true` to specify that only extension properties that are synced from the on-premises directory should be returned; `false` to specify that only extension properties that are not synced from the on-premises directory should be returned. If the parameter is omitted, all extension properties (both synced and non-synced) are returned. Optional.|
+|isSyncedFromOnPremises|Boolean|`true` to specify that only extension properties that are synced from the on-premises directory should be returned; `false` to specify that only extension properties that aren't synced from the on-premises directory should be returned. If the parameter is omitted, all extension properties (both synced and nonsynced) are returned. Optional.|
 
 
 ## Response
@@ -78,10 +84,6 @@ POST https://graph.microsoft.com/v1.0/directoryObjects/getAvailableExtensionProp
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/directoryobject-getavailableextensionproperties-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/directoryobject-getavailableextensionproperties-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

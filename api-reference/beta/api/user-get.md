@@ -1,6 +1,6 @@
 ---
 title: "Get user"
-description: "Retrieve the properties and relationships of user object."
+description: "Retrieve the properties and relationships of a user object."
 author: "yyuank"
 ms.reviewer: "iamut"
 ms.localizationpriority: high
@@ -15,9 +15,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of [user](../resources/user.md) object.
+Retrieve the properties and relationships of a [user](../resources/user.md) object. If the ID specified is that of an [agentUser](../resources/agentuser.md), the API returns the properties of the **agentUser** object.
 
-This operation returns by default only a subset of the more commonly used properties for each user. These _default_ properties are noted in the [Properties](../resources/user.md#properties) section. To get properties that are _not_ returned by default, do a [GET operation](user-get.md) for the user and specify the properties in a `$select` OData query option. Because the **user** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **user** instance.
+This operation returns by default only a subset of the more commonly used properties. These _default_ properties are noted in the [Properties](../resources/user.md#properties) section. To get properties that are _not_ returned by default, do a [GET operation](user-get.md) and specify the properties in a `$select` OData query option. Because the **user** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **user** instance.
 
 Customers through Microsoft Entra ID for customers can also use this API operation to retrieve their details.
 
@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 >[!NOTE]
 > The `User.Read` permission allows the app to read the profile, and discover relationships such as the group membership, reports, and manager of the signed-in user only.
 
-### Permissions for specific scenarios
+#### Permissions for specific scenarios
 - To read the **employeeLeaveDateTime** property:
   - In delegated scenarios, the signed-in user needs at least one of the following Microsoft Entra roles: *Lifecycle Workflows Administrator* (least privilege), *Global Reader*; the app must be granted the *User-LifeCycleInfo.Read.All* delegated permission.
   - In app-only scenarios with Microsoft Graph permissions, the app must be granted the *User-LifeCycleInfo.Read.All* permission.
@@ -46,20 +46,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-For a specific user:
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me
-GET /users/{id | userPrincipalName}
-```
-
-[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
-
-> [!TIP]
->
-> + When the **userPrincipalName** begins with a `$` character, the GET request URL syntax `/users/$x@y.com` fails with a `400 Bad Request` error code. The request fails because the URL violates the OData URL convention, which expects only system query options to be prefixed with a `$` character. Remove the slash (/) after `/users` and enclose the **userPrincipalName** in parentheses and single quotes, as follows: `/users('$x@y.com')`. For example, `/users('$AdeleVance@contoso.com')`.
-> + To query a B2B user using the **userPrincipalName**, encode the hash (#) character. That is, replace the `#` symbol with `%23`. For example, `/users/AdeleVance_adatum.com%23EXT%23@contoso.com`.
-
 For the signed-in user:
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -68,16 +54,26 @@ GET /me
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
+For a specified **user** or **agentUser**:
+```
+GET /users/{id | userPrincipalName}
+```
+
+> [!TIP]
+>
+> + When the **userPrincipalName** begins with a `$` character, the GET request URL syntax `/users/$x@y.com` fails with a `400 Bad Request` error code. The request fails because the URL violates the OData URL convention, which expects only system query options to be prefixed with a `$` character. Remove the slash (/) after `/users` and enclose the **userPrincipalName** in parentheses and single quotes, as follows: `/users('$x@y.com')`. For example, `/users('$AdeleVance@contoso.com')`.
+> + To query a B2B user using the **userPrincipalName**, encode the hash (#) character. That is, replace the `#` symbol with `%23`. For example, `/users/AdeleVance_adatum.com%23EXT%23@contoso.com`.
+
 ## Optional query parameters
 
-This method supports the `$select` [OData query parameter](/graph/query-parameters) to retrieve specific user properties, including those not returned by default. Extension properties also support query parameters as follows:
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to retrieve specific properties, including those not returned by default. Extension properties also support query parameters as follows:
 
-| Extension type                     | Comments                                                                            |
-|------------------------------------|-------------------------------------------------------------------------------------|
-| onPremisesExtensionAttributes 1-15 | Returned only with `$select`.                                                       |
-| Schema extensions                  | Returned only with `$select`.                                                       |
-| Open extensions                    | Returned only through the [Get open extension](opentypeextension-get.md) operation. |
-| Directory extensions               | Returned only with `$select`.                                                       |
+| Extension type | Comments |
+|--|--|
+| onPremisesExtensionAttributes 1-15 | Returned only with `$select`. |
+| Schema extensions | Returned only with `$select`. |
+| Open extensions | Returned only through the [Get open extension](opentypeextension-get.md) operation. |
+| Directory extensions | Returned only with `$select`. |
 
 ## Request headers
 
@@ -91,13 +87,13 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [user](../resources/user.md) object in the response body. It returns the default properties unless you use `$select` to specify specific properties. This method returns `202 Accepted` when the request has been processed successfully but the server requires more time to complete related background operations.
+If successful, this method returns a `200 OK` response code and [user](../resources/user.md) or [agentUser](../resources/agentuser.md) object in the response body. It returns the default properties unless you use `$select` to specify specific properties. This method returns `202 Accepted` when the request has been processed successfully but the server requires more time to complete related background operations.
 
-If a user with the ID doesn't exist, this method returns a `404 Not Found` error code.
+If an object with the ID doesn't exist, this method returns a `404 Not Found` error code.
 
 ## Example
 
-### Example 1: Get the properties of the signed-in user
+### Example 1: Get the properties of the signed-in user or authenticated agentUser
 
 #### Request
 
@@ -113,10 +109,6 @@ GET https://graph.microsoft.com/beta/me
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-user-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-user-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -175,8 +167,7 @@ Content-type: application/json
 
 #### Request
 
-The following example shows a request.
-
+The following example shows a request. If the ID specified is that of an [agentUser](../resources/agentuser.md), the API returns the properties of the **agentUser** object.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -189,10 +180,6 @@ GET https://graph.microsoft.com/beta/users/{id}
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-other-user-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-other-user-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -266,10 +253,6 @@ GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=disp
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-user-select-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-user-select-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -374,10 +357,6 @@ GET https://graph.microsoft.com/beta/users/{id}?$select=customSecurityAttributes
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-user-customsecurityattributes-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-user-customsecurityattributes-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-user-customsecurityattributes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -469,10 +448,6 @@ GET https://graph.microsoft.com/beta/users/4562bcc8-c436-4f95-b7c0-4f8ce89dca5e?
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-schemaextension-for-ext55gb1l09-mslearncourses--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-schemaextension-for-ext55gb1l09-mslearncourses--cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

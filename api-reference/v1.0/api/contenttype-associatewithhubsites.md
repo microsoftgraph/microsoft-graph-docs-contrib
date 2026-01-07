@@ -54,8 +54,8 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |-|-|-|
-|hubSiteUrls| Collection(string) |List of canonical URLs to the hub sites where the content type needs to be enforced. Required.|
-|propagateToExistingLists| Boolean |If `true`, content types will be enforced on existing lists in the hub sites; otherwise, it'll be applied only to newly created lists.|
+|hubSiteUrls| String collection |List of canonical URLs to the hub sites where the content type needs to be enforced. Required.|
+|propagateToExistingLists| Boolean |If `true`, content types are enforced on existing lists in the hub sites; otherwise, they're applied only to newly created lists.|
 
 ## Response
 
@@ -86,10 +86,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/contenttype-associatewithhubsites-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/contenttype-associatewithhubsites-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

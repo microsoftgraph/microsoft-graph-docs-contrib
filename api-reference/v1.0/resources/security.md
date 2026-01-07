@@ -29,6 +29,7 @@ None
 |:-------------|:------------|:------------|
 |alerts|[alert](alert.md) collection| Read-only. Nullable.|
 |alerts_v2 | [microsoft.graph.security.alert](security-alert.md) collection | A collection of alerts in Microsoft 365 Defender.|
+|data security and compliance|[microsoft.graph.tenantDataSecurityAndGovernance](../resources/tenantdatasecurityandgovernance.md)|A container for Microsoft Purview data security and compliance APIs.|
 |identities|[microsoft.graph.security.identityContainer](../resources/security-identitycontainer.md)|A container for security identities APIs.|
 |incidents | [microsoft.graph.security.incident](security-incident.md) collection | A collection of incidents in Microsoft 365 Defender, each of which is a set of correlated alerts and associated metadata that reflects the story of an attack.|
 

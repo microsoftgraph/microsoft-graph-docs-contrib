@@ -4,7 +4,7 @@ description: "Get a landingPage associated with an attack simulation campaign fo
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.subservice: "security"
-doc_type: resourcePageType
+doc_type: apiPageType
 ms.date: 04/04/2024
 ---
 
@@ -18,13 +18,10 @@ Get a [landingPage](../resources/landingpage.md) associated with an attack simul
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                            |
-|:---------------------------------------|:-----------------------------------------------------------------------|
-| Delegated (work or school account)     | AttackSimulation.Read.All, AttackSimulation.ReadWrite.All              |
-| Delegated (personal Microsoft account) | Not supported.                                                         |
-| Application                            | AttackSimulation.Read.All, AttackSimulation.ReadWrite.All              |
+<!-- { "blockType": "permissions", "name": "landingpage_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/landingpage-get-permissions.md)]
 
 ## HTTP request
 
@@ -32,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/attackSimulation/landingPages/{landingPageId}
 GET /security/attackSimulation/simulations/{simulationId}/landingPage
 ```
@@ -67,16 +64,12 @@ The following example shows a request.
   "name": "get_landingpage"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/attackSimulation/landingPages/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-landingpage-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-landingpage-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -117,7 +110,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.landingPage"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

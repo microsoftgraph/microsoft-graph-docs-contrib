@@ -53,15 +53,12 @@ PATCH /education/classes/{educationClassId}/assignmentSettings/gradingSchemes/{e
 |grades|[educationGradingSchemeGrade](../resources/educationgradingschemegrade.md) collection|The name of the grading scheme.|
 |hidePointsDuringGrading|Boolean|The display setting for the UI. Indicates whether teachers can grade with points in addition to letter grades.|
 
-
-
 ## Response
 
 If successful, this method returns a `200 OK` response code and an updated [educationGradingScheme](../resources/educationgradingscheme.md) object in the response body.
 
-## Examples
+## Example
 
-## Example 1: Update educationGradingScheme
 ### Request
 
 The following example shows a request.
@@ -82,10 +79,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationgradingscheme-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-educationgradingscheme-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -147,154 +140,6 @@ Content-Type: application/json
             "displayName": "Okay",
             "minPercentage": 0,
             "defaultPercentage": null
-        }
-    ]
-}
-```
-
-## Example 2: Update educationGradingScheme by using delta payload
-### Request
-
-The following example shows a request.
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "update_educationgradingscheme_deltaPayload"
-}
--->
-``` http
-PATCH https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignmentSettings/gradingschemes/
-Content-Type: application/json
-
-{
-    "@context": "#$delta",
-    "value": [
-        {
-            "id": "e445acb2-145e-466f-a070-f677d4178f93",
-            "displayName": "New Pass - fail Scheme created",
-            "hidePointsDuringGrading": true
-        },
-        {
-            "displayName": "New Qualitative Scheme",
-            "grades": [
-                {
-                    "displayName": "Great",
-                    "minPercentage": 82
-                },
-                {
-                    "displayName": "Good",
-                    "minPercentage": 70
-                },
-                {
-                    "displayName": "Okay",
-                    "minPercentage": 0
-                }
-            ]
-        },        
-        {
-            "@removed": {
-                "reason": "deleted"
-            },
-            "id": "d99ee8a9-a3f2-4f93-9183-4d86b8d4930b"
-        }
-    ]
-}
-```
-
-# [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-educationgradingscheme-deltapayload-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-### Response
-
-The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationGradingScheme"
-}
--->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignmentSettings/gradingSchemes/$delta",
-    "value": [
-        {
-            "id": "d0c2769f-cd0f-4e30-8d1d-9312270de5c4",
-            "displayName": "New Qualitative Scheme",
-            "hidePointsDuringGrading": false,
-            "grades": [
-                {
-                    "displayName": "Great",
-                    "minPercentage": 82,
-                    "defaultPercentage": null
-                },
-                {
-                    "displayName": "Good",
-                    "minPercentage": 70,
-                    "defaultPercentage": null
-                },
-                {
-                    "displayName": "Okay",
-                    "minPercentage": 0,
-                    "defaultPercentage": null
-                }
-            ]
-        },
-        {
-            "id": "e445acb2-145e-466f-a070-f677d4178f93",
-            "displayName": "New Pass - fail Scheme created",
-            "hidePointsDuringGrading": true,
-            "grades": [
-                {
-                    "displayName": "Great",
-                    "minPercentage": 82,
-                    "defaultPercentage": null
-                },
-                {
-                    "displayName": "Good",
-                    "minPercentage": 70,
-                    "defaultPercentage": null
-                },
-                {
-                    "displayName": "Okay",
-                    "minPercentage": 0,
-                    "defaultPercentage": null
-                }
-            ]
         }
     ]
 }
