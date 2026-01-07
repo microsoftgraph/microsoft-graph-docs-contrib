@@ -1,6 +1,6 @@
 ---
 title: "usageRights enum type"
-description: "Enumerates the possible usage rights that a user can have on content protected by a sensitivity label."
+description: "Enumerates a user's usage rights when content is protected with a sensitivity label."
 author: "zhengnlu"
 ms.date: 01/05/2026
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enumerates the possible usage rights that a user can have on content protected by a sensitivity label. These rights define the actions a user is permitted to perform on labeled content.
+Enumerates a user's usage rights when content is protected with a sensitivity label. These rights define the actions a user is permitted to perform on labeled content.
 
 This is a **flags enum** (`IsFlags="true"`). Multiple rights can be combined in a single value.
 
