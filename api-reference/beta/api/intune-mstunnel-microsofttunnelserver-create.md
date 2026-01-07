@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 POST /deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTunnelServers
 ```
 
@@ -53,11 +53,11 @@ The following table shows the properties that are required when you create the m
 |:---|:---|:---|
 |id|String|The unique identifier for the managed server. This ID is assigned at registration time. Supports: $filter, $select, $top, $skip, $orderby. $search is not supported. Read-only.|
 |displayName|String|The display name of the server. It is the same as the host name during registration and can be changed later. Supports: $filter, $select, $top, $skip, $orderby. $search is not supported. Max allowed length is 200 chars.|
-|tunnelServerHealthStatus|[microsoftTunnelServerHealthStatus](../resources/intune-mstunnel-microsofttunnelserverhealthstatus.md)|Indicates the server's health Status as of the last evaluation time. Health is evaluated every 60 seconds, and the possible values are: unknown, healthy, unhealthy, warning, offline, upgradeInProgress, upgradeFailed. Supports: $filter, $select, $top, $skip, $orderby. $search is not supported. Read-only. The possible values are: `unknown`, `healthy`, `unhealthy`, `warning`, `offline`, `upgradeInProgress`, `upgradeFailed`, `unknownFutureValue`.|
+|tunnelServerHealthStatus|[microsoftTunnelServerHealthStatus](../resources/intune-mstunnel-microsofttunnelserverhealthstatus.md)|Indicates the server's health Status as of the last evaluation time. Health is evaluated every 60 seconds, and the possible values are: unknown, healthy, unhealthy, warning, offline, upgradeInProgress, upgradeFailed. Supports: $filter, $select, $top, $skip, $orderby. $search is not supported. Read-only. Possible values are: `unknown`, `healthy`, `unhealthy`, `warning`, `offline`, `upgradeInProgress`, `upgradeFailed`, `unknownFutureValue`.|
 |lastCheckinDateTime|DateTimeOffset|Indicates when the server last checked in. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Supports: $filter, $select, $top, $skip, $orderby. $search is not supported Read-only.|
 |agentImageDigest|String|The digest of the current agent image running on this server. Supports: $filter, $select, $top, $skip, $orderby. $search is not supported. Read-only.|
 |serverImageDigest|String|The digest of the current server image running on this server. Supports: $filter, $select, $top, $skip, $orderby. $search is not supported. Read-only.|
-|deploymentMode|[microsoftTunnelDeploymentMode](../resources/intune-mstunnel-microsofttunneldeploymentmode.md)|Microsoft Tunnel server deployment mode. The value is set when the server is registered. Possible values are standaloneRootful, standaloneRootless, podRootful, podRootless. Default value: standaloneRootful. Supports: $filter, $select, $top, $skip, $orderby. $search is not supported. Read-only. The possible values are: `standaloneRootful`, `standaloneRootless`, `podRootful`, `podRootless`, `unknownFutureValue`.|
+|deploymentMode|[microsoftTunnelDeploymentMode](../resources/intune-mstunnel-microsofttunneldeploymentmode.md)|Microsoft Tunnel server deployment mode. The value is set when the server is registered. Possible values are standaloneRootful, standaloneRootless, podRootful, podRootless. Default value: standaloneRootful. Supports: $filter, $select, $top, $skip, $orderby. $search is not supported. Read-only. Possible values are: `standaloneRootful`, `standaloneRootless`, `podRootful`, `podRootless`, `unknownFutureValue`.|
 
 
 
@@ -68,7 +68,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 
 ### Request
 Here is an example of the request.
-```http
+``` http
 POST https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelSites/{microsoftTunnelSiteId}/microsoftTunnelServers
 Content-type: application/json
 Content-length: 355
@@ -86,7 +86,7 @@ Content-length: 355
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 404

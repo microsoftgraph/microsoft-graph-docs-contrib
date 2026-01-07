@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 PATCH /deviceManagement/hardwareConfigurations/{hardwareConfigurationId}/deviceRunStates/{hardwareConfigurationDeviceStateId}
 ```
 
@@ -57,7 +57,7 @@ The following table shows the properties that are required when you create the [
 |upn|String|User Principal Name (UPN).|
 |internalVersion|Int32|The Policy internal version|
 |lastStateUpdateDateTime|DateTimeOffset|The last timestamp of when the hardware configuration executed|
-|configurationState|[runState](../resources/intune-shared-runstate.md)|Configuration state from the lastest hardware configuration execution. The possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|configurationState|[runState](../resources/intune-shared-runstate.md)|Configuration state from the lastest hardware configuration execution. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |configurationOutput|String|Output of the hardware configuration execution|
 |configurationError|String|Error from the hardware configuration execution|
 |assignmentFilterIds|String|A list of identifier strings of different assignment filters applied|
@@ -72,7 +72,7 @@ If successful, this method returns a `200 OK` response code and an updated [hard
 
 ### Request
 Here is an example of the request.
-```http
+``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/hardwareConfigurations/{hardwareConfigurationId}/deviceRunStates/{hardwareConfigurationDeviceStateId}
 Content-type: application/json
 Content-length: 497
@@ -94,7 +94,7 @@ Content-length: 497
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 546

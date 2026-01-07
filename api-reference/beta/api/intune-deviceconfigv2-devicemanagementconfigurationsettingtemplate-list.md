@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 GET /deviceManagement/templateSettings
 GET /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurationPolicyTemplateId}/settingTemplates
 ```
@@ -55,16 +55,16 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 Here is an example of the request.
-```http
+``` http
 GET https://graph.microsoft.com/beta/deviceManagement/templateSettings
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 930
+Content-Length: 1508
 
 {
   "value": [
@@ -76,6 +76,19 @@ Content-Length: 930
         "settingInstanceTemplateId": "Setting Instance Template Id value",
         "settingDefinitionId": "Setting Definition Id value",
         "isRequired": true,
+        "auditRuleInformation": {
+          "@odata.type": "microsoft.graph.deviceManagementAuditPowerShellRuleDetail",
+          "auditType": "registry",
+          "auditRuleMetadata": {
+            "@odata.type": "microsoft.graph.deviceManagementAuditRuleMetadata",
+            "metadataType": "stig",
+            "ruleId": "Rule Id value",
+            "ruleName": "Rule Name value",
+            "ruleDescription": "Rule Description value",
+            "ruleVersion": "Rule Version value",
+            "ruleSeverity": "Rule Severity value"
+          }
+        },
         "simpleSettingValueTemplate": {
           "@odata.type": "microsoft.graph.deviceManagementConfigurationStringSettingValueTemplate",
           "settingValueTemplateId": "Setting Value Template Id value",

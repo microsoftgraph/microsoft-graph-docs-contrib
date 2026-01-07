@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 PATCH /deviceAppManagement/symantecCodeSigningCertificate
 ```
 
@@ -53,7 +53,7 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|The key of the entity. This property is read-only.|
 |content|Binary|The Windows Symantec Code-Signing Certificate in the raw data format.|
-|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|The Cert Status Provisioned or not Provisioned. The possible values are: `notProvisioned`, `provisioned`.|
+|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|The Cert Status Provisioned or not Provisioned. Possible values are: `notProvisioned`, `provisioned`.|
 |password|String|The Password required for .pfx file.|
 |subjectName|String|The Subject Name for the cert.|
 |subject|String|The Subject value for the cert.|
@@ -71,7 +71,7 @@ If successful, this method returns a `200 OK` response code and an updated [syma
 
 ### Request
 Here is an example of the request.
-```http
+``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/symantecCodeSigningCertificate
 Content-type: application/json
 Content-length: 421
@@ -92,7 +92,7 @@ Content-length: 421
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 470

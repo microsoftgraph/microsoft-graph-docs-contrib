@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 PATCH /deviceManagement/templateSettings/{deviceManagementConfigurationSettingTemplateId}
 PATCH /deviceManagement/configurationPolicyTemplates/{deviceManagementConfigurationPolicyTemplateId}/settingTemplates/{deviceManagementConfigurationSettingTemplateId}
 ```
@@ -64,10 +64,10 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 
 ### Request
 Here is an example of the request.
-```http
+``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/templateSettings/{deviceManagementConfigurationSettingTemplateId}
 Content-type: application/json
-Content-length: 784
+Content-length: 1310
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSettingTemplate",
@@ -76,6 +76,19 @@ Content-length: 784
     "settingInstanceTemplateId": "Setting Instance Template Id value",
     "settingDefinitionId": "Setting Definition Id value",
     "isRequired": true,
+    "auditRuleInformation": {
+      "@odata.type": "microsoft.graph.deviceManagementAuditPowerShellRuleDetail",
+      "auditType": "registry",
+      "auditRuleMetadata": {
+        "@odata.type": "microsoft.graph.deviceManagementAuditRuleMetadata",
+        "metadataType": "stig",
+        "ruleId": "Rule Id value",
+        "ruleName": "Rule Name value",
+        "ruleDescription": "Rule Description value",
+        "ruleVersion": "Rule Version value",
+        "ruleSeverity": "Rule Severity value"
+      }
+    },
     "simpleSettingValueTemplate": {
       "@odata.type": "microsoft.graph.deviceManagementConfigurationStringSettingValueTemplate",
       "settingValueTemplateId": "Setting Value Template Id value",
@@ -90,10 +103,10 @@ Content-length: 784
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 833
+Content-Length: 1359
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSettingTemplate",
@@ -103,6 +116,19 @@ Content-Length: 833
     "settingInstanceTemplateId": "Setting Instance Template Id value",
     "settingDefinitionId": "Setting Definition Id value",
     "isRequired": true,
+    "auditRuleInformation": {
+      "@odata.type": "microsoft.graph.deviceManagementAuditPowerShellRuleDetail",
+      "auditType": "registry",
+      "auditRuleMetadata": {
+        "@odata.type": "microsoft.graph.deviceManagementAuditRuleMetadata",
+        "metadataType": "stig",
+        "ruleId": "Rule Id value",
+        "ruleName": "Rule Name value",
+        "ruleDescription": "Rule Description value",
+        "ruleVersion": "Rule Version value",
+        "ruleSeverity": "Rule Severity value"
+      }
+    },
     "simpleSettingValueTemplate": {
       "@odata.type": "microsoft.graph.deviceManagementConfigurationStringSettingValueTemplate",
       "settingValueTemplateId": "Setting Value Template Id value",

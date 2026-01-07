@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 GET /deviceManagement/androidManagedStoreAccountEnterpriseSettings
 ```
 
@@ -57,22 +57,23 @@ If successful, this method returns a `200 OK` response code and [androidManagedS
 
 ### Request
 Here is an example of the request.
-```http
+``` http
 GET https://graph.microsoft.com/beta/deviceManagement/androidManagedStoreAccountEnterpriseSettings
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1192
+Content-Length: 1255
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.androidManagedStoreAccountEnterpriseSettings",
     "id": "b71357c9-57c9-b713-c957-13b7c95713b7",
     "bindStatus": "bound",
+    "managedGooglePlayEnterpriseType": "managedGoogleDomain",
     "lastAppSyncDateTime": "2016-12-31T23:57:22.8606813-08:00",
     "lastAppSyncStatus": "credentialsNotValid",
     "ownerUserPrincipalName": "Owner User Principal Name value",

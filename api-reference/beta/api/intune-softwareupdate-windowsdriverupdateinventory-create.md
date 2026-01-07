@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 POST /deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId}/driverInventories
 ```
 
@@ -58,8 +58,8 @@ The following table shows the properties that are required when you create the w
 |releaseDateTime|DateTimeOffset|The release date time of the driver.|
 |driverClass|String|The class of the driver.|
 |applicableDeviceCount|Int32|The number of devices for which this driver is applicable.|
-|approvalStatus|[driverApprovalStatus](../resources/intune-softwareupdate-driverapprovalstatus.md)|The approval status for this driver. The possible values are: `needsReview`, `declined`, `approved`, `suspended`.|
-|category|[driverCategory](../resources/intune-softwareupdate-drivercategory.md)|The category for this driver. The possible values are: `recommended`, `previouslyApproved`, `other`.|
+|approvalStatus|[driverApprovalStatus](../resources/intune-softwareupdate-driverapprovalstatus.md)|The approval status for this driver. Possible values are: `needsReview`, `declined`, `approved`, `suspended`.|
+|category|[driverCategory](../resources/intune-softwareupdate-drivercategory.md)|The category for this driver. Possible values are: `recommended`, `previouslyApproved`, `other`.|
 |deployDateTime|DateTimeOffset|The date time when a driver should be deployed if approvalStatus is approved.|
 
 
@@ -71,7 +71,7 @@ If successful, this method returns a `201 Created` response code and a [windowsD
 
 ### Request
 Here is an example of the request.
-```http
+``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsDriverUpdateProfiles/{windowsDriverUpdateProfileId}/driverInventories
 Content-type: application/json
 Content-length: 425
@@ -92,7 +92,7 @@ Content-length: 425
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 474

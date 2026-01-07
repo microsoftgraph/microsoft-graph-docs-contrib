@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 POST /deviceManagement/deviceConfigurations
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
@@ -72,9 +72,9 @@ The following table shows the properties that are required when you create the a
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutes of inactivity before the screen times out.|
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block. Valid values 0 to 24|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Number of sign in failures allowed before factory reset. Valid values 1 to 16|
-|passwordRequiredType|[androidForWorkRequiredPasswordType](../resources/intune-deviceconfig-androidforworkrequiredpasswordtype.md)|Type of password that is required. The possible values are: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
-|requiredPasswordComplexity|[androidRequiredPasswordComplexity](../resources/intune-deviceconfig-androidrequiredpasswordcomplexity.md)|Indicates the required device password complexity on Android. One of: NONE, LOW, MEDIUM, HIGH. This is a new API targeted to Android 12+. The possible values are: `none`, `low`, `medium`, `high`.|
-|workProfileDataSharingType|[androidForWorkCrossProfileDataSharingType](../resources/intune-deviceconfig-androidforworkcrossprofiledatasharingtype.md)|Type of data sharing that is allowed. The possible values are: `deviceDefault`, `preventAny`, `allowPersonalToWork`, `noRestrictions`.|
+|passwordRequiredType|[androidForWorkRequiredPasswordType](../resources/intune-deviceconfig-androidforworkrequiredpasswordtype.md)|Type of password that is required. Possible values are: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
+|requiredPasswordComplexity|[androidRequiredPasswordComplexity](../resources/intune-deviceconfig-androidrequiredpasswordcomplexity.md)|Indicates the required device password complexity on Android. One of: NONE, LOW, MEDIUM, HIGH. This is a new API targeted to Android 12+. Possible values are: `none`, `low`, `medium`, `high`.|
+|workProfileDataSharingType|[androidForWorkCrossProfileDataSharingType](../resources/intune-deviceconfig-androidforworkcrossprofiledatasharingtype.md)|Type of data sharing that is allowed. Possible values are: `deviceDefault`, `preventAny`, `allowPersonalToWork`, `noRestrictions`.|
 |workProfileBlockNotificationsWhileDeviceLocked|Boolean|Indicates whether or not to block notifications while device locked.|
 |workProfileBlockAddingAccounts|Boolean|Block users from adding/removing accounts in work profile.|
 |workProfileBluetoothEnableContactSharing|Boolean|Allow bluetooth devices to access enterprise contacts.|
@@ -83,7 +83,7 @@ The following table shows the properties that are required when you create the a
 |workProfileBlockCamera|Boolean|Block work profile camera.|
 |workProfileBlockCrossProfileContactsSearch|Boolean|Block work profile contacts availability in personal profile.|
 |workProfileBlockCrossProfileCopyPaste|Boolean|Boolean that indicates if the setting disallow cross profile copy/paste is enabled.|
-|workProfileDefaultAppPermissionPolicy|[androidForWorkDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androidforworkdefaultapppermissionpolicytype.md)|Type of password that is required. The possible values are: `deviceDefault`, `prompt`, `autoGrant`, `autoDeny`.|
+|workProfileDefaultAppPermissionPolicy|[androidForWorkDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androidforworkdefaultapppermissionpolicytype.md)|Type of password that is required. Possible values are: `deviceDefault`, `prompt`, `autoGrant`, `autoDeny`.|
 |workProfilePasswordBlockFaceUnlock|Boolean|Indicates whether or not to block face unlock for work profile.|
 |workProfilePasswordBlockFingerprintUnlock|Boolean|Indicates whether or not to block fingerprint unlock for work profile.|
 |workProfilePasswordBlockIrisUnlock|Boolean|Indicates whether or not to block iris unlock for work profile.|
@@ -99,15 +99,15 @@ The following table shows the properties that are required when you create the a
 |workProfilePasswordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutes of inactivity before the screen times out.|
 |workProfilePasswordPreviousPasswordBlockCount|Int32|Number of previous work profile passwords to block. Valid values 0 to 24|
 |workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|Number of sign in failures allowed before work profile is removed and all corporate data deleted. Valid values 1 to 16|
-|workProfilePasswordRequiredType|[androidForWorkRequiredPasswordType](../resources/intune-deviceconfig-androidforworkrequiredpasswordtype.md)|Type of work profile password that is required. The possible values are: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
-|workProfileRequiredPasswordComplexity|[androidRequiredPasswordComplexity](../resources/intune-deviceconfig-androidrequiredpasswordcomplexity.md)|Indicates the required work profile password complexity on Android. One of: NONE, LOW, MEDIUM, HIGH. This is a new API targeted to Android 12+. The possible values are: `none`, `low`, `medium`, `high`.|
+|workProfilePasswordRequiredType|[androidForWorkRequiredPasswordType](../resources/intune-deviceconfig-androidforworkrequiredpasswordtype.md)|Type of work profile password that is required. Possible values are: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
+|workProfileRequiredPasswordComplexity|[androidRequiredPasswordComplexity](../resources/intune-deviceconfig-androidrequiredpasswordcomplexity.md)|Indicates the required work profile password complexity on Android. One of: NONE, LOW, MEDIUM, HIGH. This is a new API targeted to Android 12+. Possible values are: `none`, `low`, `medium`, `high`.|
 |workProfileRequirePassword|Boolean|Password is required or not for work profile|
 |securityRequireVerifyApps|Boolean|Require the Android Verify apps feature is turned on.|
 |vpnAlwaysOnPackageIdentifier|String|Enable lockdown mode for always-on VPN.|
 |vpnEnableAlwaysOnLockdownMode|Boolean|Enable lockdown mode for always-on VPN.|
 |workProfileAllowWidgets|Boolean|Allow widgets from work profile apps.|
 |workProfileBlockPersonalAppInstallsFromUnknownSources|Boolean|Prevent app installations from unknown sources in the personal profile.|
-|workProfileAccountUse|[androidWorkProfileAccountUse](../resources/intune-deviceconfig-androidworkprofileaccountuse.md)|Control user's ability to add accounts in work profile including Google accounts. The possible values are: `allowAllExceptGoogleAccounts`, `blockAll`, `allowAll`, `unknownFutureValue`.|
+|workProfileAccountUse|[androidWorkProfileAccountUse](../resources/intune-deviceconfig-androidworkprofileaccountuse.md)|Control user's ability to add accounts in work profile including Google accounts. Possible values are: `allowAllExceptGoogleAccounts`, `blockAll`, `allowAll`, `unknownFutureValue`.|
 |allowedGoogleAccountDomains|String collection|Determine domains allow-list for accounts that can be added to work profile.|
 |blockUnifiedPasswordForWorkProfile|Boolean|Prevent using unified password for unlocking device and work profile.|
 
@@ -120,7 +120,7 @@ If successful, this method returns a `201 Created` response code and a [androidF
 
 ### Request
 Here is an example of the request.
-```http
+``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
 Content-length: 3343
@@ -209,7 +209,7 @@ Content-length: 3343
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 3515

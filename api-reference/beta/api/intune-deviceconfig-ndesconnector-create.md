@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 POST /deviceManagement/ndesConnectors
 ```
 
@@ -53,7 +53,7 @@ The following table shows the properties that are required when you create the n
 |:---|:---|:---|
 |id|String|The key of the NDES Connector.|
 |lastConnectionDateTime|DateTimeOffset|Last connection time for the Ndes Connector|
-|state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Ndes Connector Status. The possible values are: `none`, `active`, `inactive`.|
+|state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Ndes Connector Status. Possible values are: `none`, `active`, `inactive`.|
 |displayName|String|The friendly name of the Ndes Connector.|
 |machineName|String|Name of the machine running on-prem certificate connector service.|
 |enrolledDateTime|DateTimeOffset|Timestamp when on-prem certificate connector was enrolled in Intune.|
@@ -69,7 +69,7 @@ If successful, this method returns a `201 Created` response code and a [ndesConn
 
 ### Request
 Here is an example of the request.
-```http
+``` http
 POST https://graph.microsoft.com/beta/deviceManagement/ndesConnectors
 Content-type: application/json
 Content-length: 394
@@ -90,7 +90,7 @@ Content-length: 394
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 443

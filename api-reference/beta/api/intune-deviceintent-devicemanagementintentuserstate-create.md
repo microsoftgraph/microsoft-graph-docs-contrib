@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 POST /deviceManagement/intents/{deviceManagementIntentId}/userStates
 ```
 
@@ -56,7 +56,7 @@ The following table shows the properties that are required when you create the d
 |userName|String|The user name that is being reported on a device|
 |deviceCount|Int32|Count of Devices that belongs to a user for an intent|
 |lastReportedDateTime|DateTimeOffset|Last modified date time of an intent report|
-|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|User state for an intent. The possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|User state for an intent. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 
 
 
@@ -67,7 +67,7 @@ If successful, this method returns a `201 Created` response code and a [deviceMa
 
 ### Request
 Here is an example of the request.
-```http
+``` http
 POST https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManagementIntentId}/userStates
 Content-type: application/json
 Content-length: 275
@@ -84,7 +84,7 @@ Content-length: 275
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 324

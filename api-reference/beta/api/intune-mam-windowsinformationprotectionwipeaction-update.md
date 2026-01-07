@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 PATCH /deviceAppManagement/windowsInformationProtectionWipeActions/{windowsInformationProtectionWipeActionId}
 ```
 
@@ -52,7 +52,7 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity.|
-|status|[actionState](../resources/intune-shared-actionstate.md)|Wipe action status. The possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|status|[actionState](../resources/intune-shared-actionstate.md)|Wipe action status. Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |targetedUserId|String|The UserId being targeted by this wipe action.|
 |targetedDeviceRegistrationId|String|The DeviceRegistrationId being targeted by this wipe action.|
 |targetedDeviceName|String|Targeted device name.|
@@ -68,7 +68,7 @@ If successful, this method returns a `200 OK` response code and an updated [wind
 
 ### Request
 Here is an example of the request.
-```http
+``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/windowsInformationProtectionWipeActions/{windowsInformationProtectionWipeActionId}
 Content-type: application/json
 Content-length: 412
@@ -86,7 +86,7 @@ Content-length: 412
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 461

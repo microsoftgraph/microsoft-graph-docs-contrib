@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 PATCH /deviceAppManagement/deviceAppManagementTasks/{deviceAppManagementTaskId}
 ```
 
@@ -56,12 +56,12 @@ The following table shows the properties that are required when you create the [
 |description|String|The description.|
 |createdDateTime|DateTimeOffset|The created date.|
 |dueDateTime|DateTimeOffset|The due date.|
-|category|[deviceAppManagementTaskCategory](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|The category. The possible values are: `unknown`, `advancedThreatProtection`.|
-|priority|[deviceAppManagementTaskPriority](../resources/intune-partnerintegration-deviceappmanagementtaskpriority.md)|The priority. The possible values are: `none`, `high`, `low`.|
+|category|[deviceAppManagementTaskCategory](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|The category. Possible values are: `unknown`, `advancedThreatProtection`.|
+|priority|[deviceAppManagementTaskPriority](../resources/intune-partnerintegration-deviceappmanagementtaskpriority.md)|The priority. Possible values are: `none`, `high`, `low`.|
 |creator|String|The email address of the creator.|
 |creatorNotes|String|Notes from the creator.|
 |assignedTo|String|The name or email of the admin this task is assigned to.|
-|status|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|The status. The possible values are: `unknown`, `pending`, `active`, `completed`, `rejected`.|
+|status|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|The status. Possible values are: `unknown`, `pending`, `active`, `completed`, `rejected`.|
 
 
 
@@ -72,7 +72,7 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 
 ### Request
 Here is an example of the request.
-```http
+``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/deviceAppManagementTasks/{deviceAppManagementTaskId}
 Content-type: application/json
 Content-length: 400
@@ -93,7 +93,7 @@ Content-length: 400
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 508

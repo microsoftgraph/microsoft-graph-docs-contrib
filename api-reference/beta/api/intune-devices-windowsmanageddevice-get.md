@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 GET /deviceManagement/managedDevices/{managedDeviceId}
 GET /deviceManagement/comanagedDevices/{managedDeviceId}
 GET /deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunStates/{deviceHealthScriptDeviceStateId}/managedDevice
@@ -63,16 +63,16 @@ If successful, this method returns a `200 OK` response code and [windowsManagedD
 
 ### Request
 Here is an example of the request.
-```http
+``` http
 GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10141
+Content-Length: 10493
 
 {
   "value": {
@@ -175,6 +175,7 @@ Content-Length: 10141
     "remoteAssistanceSessionErrorDetails": "Remote Assistance Session Error Details value",
     "isEncrypted": true,
     "userPrincipalName": "User Principal Name value",
+    "enrolledByUserPrincipalName": "Enrolled By User Principal Name value",
     "model": "Model value",
     "manufacturer": "Manufacturer value",
     "imei": "Imei value",
@@ -290,6 +291,14 @@ Content-Length: 10141
         "value": "Value value",
         "valueType": "Value Type value",
         "updatable": true
+      }
+    ],
+    "supplementalDeviceDetails": [
+      {
+        "@odata.type": "microsoft.graph.supplementalDeviceDetail",
+        "propertyName": "Property Name value",
+        "propertyValue": "Property Value value",
+        "propertyType": "Property Type value"
       }
     ],
     "enrollmentProfileName": "Enrollment Profile Name value",

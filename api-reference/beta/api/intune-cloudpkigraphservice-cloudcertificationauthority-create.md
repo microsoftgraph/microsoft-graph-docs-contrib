@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 POST /deviceManagement/cloudCertificationAuthority
 ```
 
@@ -59,14 +59,14 @@ The following table shows the properties that are required when you create the c
 |certificateDownloadUrl|String|The URL to download the certification authority certificate. Read-only.|
 |certificationAuthorityIssuerUri|String|The URI of the issuing certification authority of a subordinate certification authority. Returns null if a root certification authority. Nullable. Read-only.|
 |ocspResponderUri|String|The Online Certificate Status Protocol (OCSP) responder URI that can be used to determine certificate status. Read-only.|
-|certificationAuthorityStatus|[cloudCertificationAuthorityStatus](../resources/intune-cloudpkigraphservice-cloudcertificationauthoritystatus.md)|Cloud certification authority current status. Unknown value returned by default if the cloud certification authority status is not known. After cloud certification authorities are created their status is set to active. Cloud certification authorities can be set to paused to stop issuing certificates. The possible values are: unknown, active, paused, signingPending, revoked. Read-only. Supports $filter and $orderby. The possible values are: `unknown`, `active`, `paused`, `revoked`, `signingPending`, `unknownFutureValue`.|
+|certificationAuthorityStatus|[cloudCertificationAuthorityStatus](../resources/intune-cloudpkigraphservice-cloudcertificationauthoritystatus.md)|Cloud certification authority current status. Unknown value returned by default if the cloud certification authority status is not known. After cloud certification authorities are created their status is set to active. Cloud certification authorities can be set to paused to stop issuing certificates. Possible values are: unknown, active, paused, signingPending, revoked. Read-only. Supports $filter and $orderby. Possible values are: `unknown`, `active`, `paused`, `revoked`, `signingPending`, `unknownFutureValue`.|
 |eTag|String|ETag for optimistic concurrency control. Read/write.|
 |lastModifiedDateTime|DateTimeOffset|Last modification date and time of this certification authority entity instance. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Nullable. Read/write.|
 |roleScopeTagIds|String collection|List of Scope Tags for this entity instance. Scope tags limit access to an entity instance. Nullable. Read/write.|
 |createdDateTime|DateTimeOffset|Creation date of this cloud certification authority entity instance. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Nullable. Read-only.|
 |certificationAuthorityIssuerId|String|Issuer (parent) certification authority identifier. Nullable. Read-only. Supports $orderby and $select.|
 |issuerCommonName|String||
-|cloudCertificationAuthorityType|[cloudCertificationAuthorityType](../resources/intune-cloudpkigraphservice-cloudcertificationauthoritytype.md)|The certification authority type. rootCertificationAuthority value indicates root certification authorities that be used to create issuing certification authorities. issuingCertificationAuthority value indicates that a certification authority can be used to issue leaf certificates. The possible values are: rootCertificationAuthority, issuingCertificationAuthority, issuingCertificationAuthorityWithExternalRoot. Read-only. Supports $orderby. The possible values are: `unknown`, `rootCertificationAuthority`, `issuingCertificationAuthority`, `issuingCertificationAuthorityWithExternalRoot`, `unknownFutureValue`.|
+|cloudCertificationAuthorityType|[cloudCertificationAuthorityType](../resources/intune-cloudpkigraphservice-cloudcertificationauthoritytype.md)|The certification authority type. rootCertificationAuthority value indicates root certification authorities that be used to create issuing certification authorities. issuingCertificationAuthority value indicates that a certification authority can be used to issue leaf certificates. Possible values are: rootCertificationAuthority, issuingCertificationAuthority, issuingCertificationAuthorityWithExternalRoot. Read-only. Supports $orderby. Possible values are: `unknown`, `rootCertificationAuthority`, `issuingCertificationAuthority`, `issuingCertificationAuthorityWithExternalRoot`, `unknownFutureValue`.|
 |validityPeriodInYears|Int32|The certification authority validity period in years configured by admins.|
 |validityStartDateTime|DateTimeOffset|The start date time of the validity period of a certification authority certificate. Certificates cannot be used before this date time as they are not yet valid. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Nullable. Read-only. Supports $orderby.|
 |validityEndDateTime|DateTimeOffset|The end date time of the validity period of a certification authority certificate. Certificates cannot be used after this date time as they are longer valid. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Nullable. Read-only. Supports $orderby.|
@@ -75,8 +75,8 @@ The following table shows the properties that are required when you create the c
 |countryName|String|The country name that is used to compose the subject name of a certification authority certificate in the form "C=<VALUE>". Nullable. Example: US. Read-only.|
 |stateName|String|The state or province name that is used to compose the subject name of a certification authority certificate in the form "ST=<VALUE>". Nullable. Example: Washington. Read-only.|
 |localityName|String|The locality (town, city, etc.) name that is used to compose the subject name of a certification authority certificate in the form "L=<VALUE>". This is Nullable. Example: Redmond. Read-only.|
-|certificateKeySize|[cloudCertificationAuthorityCertificateKeySize](../resources/intune-cloudpkigraphservice-cloudcertificationauthoritycertificatekeysize.md)|The configured cryptography and key size in bits used to generate the certification authority certificate. The possible values are: rsa2048, rsa3072, rsa4096, eCP256, eCP256k, eCP384, eCP521. Read-only. The possible values are: `unknown`, `rsa2048`, `rsa3072`, `rsa4096`, `eCP256`, `eCP256k`, `eCP384`, `eCP521`, `unknownFutureValue`.|
-|cloudCertificationAuthorityHashingAlgorithm|[cloudCertificationAuthorityHashingAlgorithm](../resources/intune-cloudpkigraphservice-cloudcertificationauthorityhashingalgorithm.md)|Certification authority certificate hashing algorithm. The possible values are: sha256, sha384, sha512. Read-only. The possible values are: `unknown`, `sha256`, `sha384`, `sha512`, `unknownFutureValue`.|
+|certificateKeySize|[cloudCertificationAuthorityCertificateKeySize](../resources/intune-cloudpkigraphservice-cloudcertificationauthoritycertificatekeysize.md)|The configured cryptography and key size in bits used to generate the certification authority certificate. Possible values are: rsa2048, rsa3072, rsa4096, eCP256, eCP256k, eCP384, eCP521. Read-only. Possible values are: `unknown`, `rsa2048`, `rsa3072`, `rsa4096`, `eCP256`, `eCP256k`, `eCP384`, `eCP521`, `unknownFutureValue`.|
+|cloudCertificationAuthorityHashingAlgorithm|[cloudCertificationAuthorityHashingAlgorithm](../resources/intune-cloudpkigraphservice-cloudcertificationauthorityhashingalgorithm.md)|Certification authority certificate hashing algorithm. Possible values are: sha256, sha384, sha512. Read-only. Possible values are: `unknown`, `sha256`, `sha384`, `sha512`, `unknownFutureValue`.|
 |thumbprint|String|Secure Hash Algorithm 1 digest of the certificate that can be used to identify it. Read-only. Supports $select.|
 |serialNumber|String|The serial number used to uniquely identify a certificate with its issuing certification authority. Read-only. Supports $select.|
 |subjectName|String|The subject name of the certificate. The subject is the target or intended beneficiary of the security being provided, such as a company or government entity. Read-only. Supports $orderby and $select.|
@@ -85,7 +85,7 @@ The following table shows the properties that are required when you create the c
 |extendedKeyUsages|[extendedKeyUsage](../resources/intune-cloudpkigraphservice-extendedkeyusage.md) collection|The certificate extended key usages, which specify the usage capabilities of the certificate. Read-only.|
 |versionNumber|Int32|The certification authority version, which is incremented each time the certification authority is renewed. Read-only.|
 |rootCertificateCommonName|String|The common name of the certificate subject name of the certification authority issuer. This property can be used to identify the certification authority that issued the current certification authority. For issuing certification authorities, this is the common name of the certificate subject name of the root certification authority to which it is anchored. For externally signed certification authorities, this is the common name of the certificate subject name of the signing certification authority. For root certification authorities, this is the common name of the certification authority's own certificate subject name. Read-only.|
-|keyPlatform|[cloudCertificationAuthorityKeyPlatformType](../resources/intune-cloudpkigraphservice-cloudcertificationauthoritykeyplatformtype.md)|The key platform used to store the certification authority keys. Read-only. The possible values are: `unknown`, `software`, `hardwareSecurityModule`, `unknownFutureValue`.|
+|keyPlatform|[cloudCertificationAuthorityKeyPlatformType](../resources/intune-cloudpkigraphservice-cloudcertificationauthoritykeyplatformtype.md)|The key platform used to store the certification authority keys. Read-only. Possible values are: `unknown`, `software`, `hardwareSecurityModule`, `unknownFutureValue`.|
 
 
 
@@ -96,7 +96,7 @@ If successful, this method returns a `201 Created` response code and a [cloudCer
 
 ### Request
 Here is an example of the request.
-```http
+``` http
 POST https://graph.microsoft.com/beta/deviceManagement/cloudCertificationAuthority
 Content-type: application/json
 Content-length: 1843
@@ -148,7 +148,7 @@ Content-length: 1843
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 2015

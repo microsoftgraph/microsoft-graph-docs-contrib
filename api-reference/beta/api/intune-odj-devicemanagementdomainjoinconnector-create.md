@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 POST /deviceManagement/domainJoinConnectors
 ```
 
@@ -54,7 +54,7 @@ The following table shows the properties that are required when you create the d
 |id|String|Unique identifier to represent a connector.|
 |displayName|String|The connector display name.|
 |lastConnectionDateTime|DateTimeOffset|Last time connector contacted Intune.|
-|state|[deviceManagementDomainJoinConnectorState](../resources/intune-odj-devicemanagementdomainjoinconnectorstate.md)|The connector state. The possible values are: `active`, `error`, `inactive`.|
+|state|[deviceManagementDomainJoinConnectorState](../resources/intune-odj-devicemanagementdomainjoinconnectorstate.md)|The connector state. Possible values are: `active`, `error`, `inactive`.|
 |version|String|The version of the connector.|
 
 
@@ -66,7 +66,7 @@ If successful, this method returns a `201 Created` response code and a [deviceMa
 
 ### Request
 Here is an example of the request.
-```http
+``` http
 POST https://graph.microsoft.com/beta/deviceManagement/domainJoinConnectors
 Content-type: application/json
 Content-length: 235
@@ -82,7 +82,7 @@ Content-length: 235
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 284

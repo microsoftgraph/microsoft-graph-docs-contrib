@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 POST /deviceManagement/deviceConfigurations
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
@@ -63,8 +63,8 @@ The following table shows the properties that are required when you create the w
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|allowDeviceHealthMonitoring|[enablement](../resources/intune-shared-enablement.md)|Enables device health monitoring on the device. The possible values are: `notConfigured`, `enabled`, `disabled`.|
-|configDeviceHealthMonitoringScope|[windowsHealthMonitoringScope](../resources/intune-deviceconfig-windowshealthmonitoringscope.md)|Specifies set of events collected from the device where health monitoring is enabled. The possible values are: `undefined`, `healthMonitoring`, `bootPerformance`, `windowsUpdates`, `privilegeManagement`.|
+|allowDeviceHealthMonitoring|[enablement](../resources/intune-shared-enablement.md)|Enables device health monitoring on the device. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|configDeviceHealthMonitoringScope|[windowsHealthMonitoringScope](../resources/intune-deviceconfig-windowshealthmonitoringscope.md)|Specifies set of events collected from the device where health monitoring is enabled. Possible values are: `undefined`, `healthMonitoring`, `bootPerformance`, `windowsUpdates`, `privilegeManagement`.|
 |configDeviceHealthMonitoringCustomScope|String|Specifies custom set of events collected from the device where health monitoring is enabled|
 
 
@@ -76,7 +76,7 @@ If successful, this method returns a `201 Created` response code and a [windowsH
 
 ### Request
 Here is an example of the request.
-```http
+``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
 Content-length: 1244
@@ -119,7 +119,7 @@ Content-length: 1244
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 1416

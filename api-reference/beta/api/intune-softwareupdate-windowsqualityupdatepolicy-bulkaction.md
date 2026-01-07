@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 POST /deviceManagement/windowsQualityUpdatePolicies/{windowsQualityUpdatePolicyId}/bulkAction
 ```
 
@@ -63,7 +63,7 @@ If successful, this action returns a `200 OK` response code and a [bulkCatalogIt
 
 ### Request
 Here is an example of the request.
-```http
+``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsQualityUpdatePolicies/{windowsQualityUpdatePolicyId}/bulkAction
 
 Content-type: application/json
@@ -79,7 +79,7 @@ Content-length: 62
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 205

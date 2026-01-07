@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 POST /deviceManagement/depOnboardingSettings
 ```
 
@@ -59,7 +59,7 @@ The following table shows the properties that are required when you create the d
 |lastSyncTriggeredDateTime|DateTimeOffset|When Intune last requested a sync.|
 |shareTokenWithSchoolDataSyncService|Boolean|Whether or not the Dep token sharing is enabled with the School Data Sync service.|
 |lastSyncErrorCode|Int32|Error code reported by Apple during last dep sync.|
-|tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Gets or sets the Dep Token Type. The possible values are: `none`, `dep`, `appleSchoolManager`.|
+|tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Gets or sets the Dep Token Type. Possible values are: `none`, `dep`, `appleSchoolManager`.|
 |tokenName|String|Friendly Name for Dep Token|
 |syncedDeviceCount|Int32|Gets synced device count|
 |dataSharingConsentGranted|Boolean|Consent granted for data sharing with Apple Dep Service|
@@ -74,7 +74,7 @@ If successful, this method returns a `201 Created` response code and a [depOnboa
 
 ### Request
 Here is an example of the request.
-```http
+``` http
 POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings
 Content-type: application/json
 Content-length: 576
@@ -99,7 +99,7 @@ Content-length: 576
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 689

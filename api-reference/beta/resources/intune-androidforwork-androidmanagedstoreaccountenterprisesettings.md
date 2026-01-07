@@ -33,18 +33,20 @@ Enterprise settings for an Android managed store account.
 |[addApps action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-addapps.md)|None||
 |[retrieveStoreLayout function](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-retrievestorelayout.md)|[androidManagedStoreLayoutType](../resources/intune-androidforwork-androidmanagedstorelayouttype.md)|Gets the Managed Google Play store layout type from Google EMM API.|
 |[setStoreLayout action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-setstorelayout.md)|None|Sets the Managed Google Play store layout type via Google EMM API.|
+|[requestEnterpriseUpgradeUrl action](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-requestenterpriseupgradeurl.md)|String||
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The Android store account enterprise settings identifier|
-|bindStatus|[androidManagedStoreAccountBindStatus](../resources/intune-androidforwork-androidmanagedstoreaccountbindstatus.md)|Bind status of the tenant with the Google EMM API. The possible values are: `notBound`, `bound`, `boundAndValidated`, `unbinding`.|
+|bindStatus|[androidManagedStoreAccountBindStatus](../resources/intune-androidforwork-androidmanagedstoreaccountbindstatus.md)|Bind status of the tenant with the Google EMM API. Possible values are: `notBound`, `bound`, `boundAndValidated`, `unbinding`.|
+|managedGooglePlayEnterpriseType|[managedGooglePlayEnterpriseType](../resources/intune-androidforwork-managedgoogleplayenterprisetype.md)|The managed Google Play enterprise type associated with a tenant. Possible values are: unspecified, managedGoogleDomain, managedGooglePlayAccountsEnterprise. Default is: unspecified. Read-Only. Possible values are: `enterpriseTypeUnspecified`, `managedGoogleDomain`, `managedGooglePlayAccountsEnterprise`, `unknownFutureValue`.|
 |lastAppSyncDateTime|DateTimeOffset|Last completion time for app sync|
-|lastAppSyncStatus|[androidManagedStoreAccountAppSyncStatus](../resources/intune-androidforwork-androidmanagedstoreaccountappsyncstatus.md)|Last application sync result. The possible values are: `success`, `credentialsNotValid`, `androidForWorkApiError`, `managementServiceError`, `unknownError`, `none`.|
+|lastAppSyncStatus|[androidManagedStoreAccountAppSyncStatus](../resources/intune-androidforwork-androidmanagedstoreaccountappsyncstatus.md)|Last application sync result. Possible values are: `success`, `credentialsNotValid`, `androidForWorkApiError`, `managementServiceError`, `unknownError`, `none`.|
 |ownerUserPrincipalName|String|Owner UPN that created the enterprise|
 |ownerOrganizationName|String|Organization name used when onboarding Android Enterprise|
 |lastModifiedDateTime|DateTimeOffset|Last modification time for Android enterprise settings|
-|enrollmentTarget|[androidManagedStoreAccountEnrollmentTarget](../resources/intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)|Indicates which users can enroll devices in Android Enterprise device management. The possible values are: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|
+|enrollmentTarget|[androidManagedStoreAccountEnrollmentTarget](../resources/intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)|Indicates which users can enroll devices in Android Enterprise device management. Possible values are: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|
 |targetGroupIds|String collection|Specifies which AAD groups can enroll devices in Android for Work device management if enrollmentTarget is set to 'Targeted'|
 |deviceOwnerManagementEnabled|Boolean|Indicates if this account is flighting for Android Device Owner Management with CloudDPC.|
 |companyCodes|[androidEnrollmentCompanyCode](../resources/intune-androidforwork-androidenrollmentcompanycode.md) collection|Company codes for AndroidManagedStoreAccountEnterpriseSettings|
@@ -67,6 +69,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.androidManagedStoreAccountEnterpriseSettings",
   "id": "String (identifier)",
   "bindStatus": "String",
+  "managedGooglePlayEnterpriseType": "String",
   "lastAppSyncDateTime": "String (timestamp)",
   "lastAppSyncStatus": "String",
   "ownerUserPrincipalName": "String",

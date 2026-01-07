@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 POST /deviceManagement/operationApprovalRequests/{operationApprovalRequestId}/cancelApproval
 ```
 
@@ -52,7 +52,7 @@ The following table shows the parameters that can be used with this action.
 |Property|Type|Description|
 |:---|:---|:---|
 |justification|String|Indicates the justification for cancellation of a request that has already been approved. Maximum length of justification is 1024 characters. For example: 'Cancelled - Change 23423 no longer needed.'|
-|approvalSource|[operationApprovalSource](../resources/intune-rbac-operationapprovalsource.md)|Indicates the source of the action on the approval request. The possible values are: `unknown`, `adminConsole`, `email`. Default value is `unknown`.|
+|approvalSource|[operationApprovalSource](../resources/intune-rbac-operationapprovalsource.md)|Indicates the source of the action on the approval request. Possible values are: `unknown`, `adminConsole`, `email`. Default value is `unknown`.|
 
 
 
@@ -63,7 +63,7 @@ If successful, this action returns a `200 OK` response code and a String in the 
 
 ### Request
 Here is an example of the request.
-```http
+``` http
 POST https://graph.microsoft.com/beta/deviceManagement/operationApprovalRequests/{operationApprovalRequestId}/cancelApproval
 
 Content-type: application/json
@@ -77,7 +77,7 @@ Content-length: 83
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 40

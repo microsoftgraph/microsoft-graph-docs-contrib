@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 POST /deviceManagement/userPfxCertificates
 ```
 
@@ -53,13 +53,13 @@ The following table shows the properties that are required when you create the u
 |:---|:---|:---|
 |id|String|Unique identifier for the PFX certificate.|
 |thumbprint|String|SHA-1 thumbprint of the PFX certificate.|
-|intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|Certificate's intended purpose from the point-of-view of deployment. The possible values are: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
+|intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|Certificate's intended purpose from the point-of-view of deployment. Possible values are: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
 |userPrincipalName|String|User Principal Name of the PFX certificate.|
 |startDateTime|DateTimeOffset|Certificate's validity start date/time.|
 |expirationDateTime|DateTimeOffset|Certificate's validity expiration date/time.|
 |providerName|String|Crypto provider used to encrypt this blob.|
 |keyName|String|Name of the key (within the provider) used to encrypt the blob.|
-|paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Padding scheme used by the provider during encryption/decryption. The possible values are: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.|
+|paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Padding scheme used by the provider during encryption/decryption. Possible values are: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.|
 |encryptedPfxBlob|Binary|Encrypted PFX blob.|
 |encryptedPfxPassword|String|Encrypted PFX password.|
 |createdDateTime|DateTimeOffset|Date/time when this PFX certificate was imported.|
@@ -74,7 +74,7 @@ If successful, this method returns a `201 Created` response code and a [userPFXC
 
 ### Request
 Here is an example of the request.
-```http
+``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userPfxCertificates
 Content-type: application/json
 Content-length: 523
@@ -96,7 +96,7 @@ Content-length: 523
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-```http
+``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 695
