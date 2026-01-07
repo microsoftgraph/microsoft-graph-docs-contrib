@@ -5,14 +5,12 @@ author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
-ms.date: 05/20/2024
+ms.date: 01/7/2026
 ---
 
 # Delete column
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [columnDefinition](../resources/columndefinition.md) from a [fileStorageContainer](../resources/filestoragecontainer.md).  
 
@@ -66,7 +64,7 @@ The following example shows a request.
 }
 -->
 ```http
-DELETE https://graph.microsoft.com/beta/storageContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103
+DELETE https://graph.microsoft.com/v1.0/storageContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103
 Content-Type: application/json
 
 {
@@ -99,4 +97,3 @@ The following example shows the response.
 ```http
 HTTP/1.1 204 No Content
 ```
-

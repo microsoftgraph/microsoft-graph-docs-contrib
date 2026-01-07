@@ -1,20 +1,18 @@
 ---
-title: "Delete column"
-description: "Delete a columnDefinition from a fileStorageContainer."
+title: "Get column"
+description: "Get a column from a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
-ms.date: 05/20/2024
+ms.date: 01/07/2026
 ---
 
-# Delete column
+# Get column
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Delete a [columnDefinition](../resources/columndefinition.md) from a [fileStorageContainer](../resources/filestoragecontainer.md).  
+Get the properties of a column represented as a [columnDefinition](../resources/columndefinition.md) in a [fileStorageContainer](../resources/filestoragecontainer.md).  
 
 ## Permissions
 
@@ -22,11 +20,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "filestoragecontainer-delete-columns-permissions"
+  "name": "filestoragecontainer-get-columns-permissions"
 }
 -->
-
-[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-delete-columns-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-get-columns-permissions.md)]
 
 [!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-permissions.md)]
 
@@ -37,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ```http
-DELETE /storageContainers/{containerId}/columns/{columnId}
+GET /storageContainers/{containerId}/columns/{column-id}
 ```
 
 ## Request headers
@@ -46,33 +43,50 @@ DELETE /storageContainers/{containerId}/columns/{columnId}
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
+
 ## Request body
 
 Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `200 OK` response code and a [columnDefinition](../resources/columndefinition.md) object in the response body.
 
 ## Examples
 
 ### Request
 
 The following example shows a request.
-
 <!-- {
   "blockType": "request",
-  "name": "delete_columndefinition_for_fileStorageContainer"
+  "name": "get_columndefinition_for_fileStorageContainer"
 }
 -->
 ```http
-DELETE https://graph.microsoft.com/beta/storageContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103
+GET https://graph.microsoft.com/v1.0/storageContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103
+```
+
+
+### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.columnDefinition"
+}
+-->
+```http
+HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
   "description": "test",
+  "displayName": "Title",
   "enforceUniqueValues": false,
   "hidden": false,
+  "id": "99ddcf45-e2f7-4f17-82b0-6fba34445103",
   "indexed": false,
   "name": "Title",
   "text": {
@@ -82,21 +96,5 @@ Content-Type: application/json
     "maxLength": 255
   }
 }
-```
-
-
-### Response
-
-The following example shows the response.
-
->**Note:** The response object shown here might be shortened for readability.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
-```http
-HTTP/1.1 204 No Content
 ```
 
