@@ -233,8 +233,8 @@ For this scenario, the author should add these files to `temp-docstubs`:
 
 ### Additional prerequisites
 After gathering the inputs, you must also prompt the author to provide:
-- **author**: The value to use in the front matter `author` field across all new files
-- **ms.subservice**: The value to use in the front matter `ms.subservice` field across all new files
+- **author**: Value to replace TODO placeholders in the `author` field (only for new files or where TODO exists)
+- **ms.subservice**: Value to replace TODO placeholders in the `ms.subservice` field (only for new files or where TODO exists)
 
 ### Critical guidance on doc stubs
 
@@ -947,9 +947,10 @@ When authoring or updating documentation, ensure compliance with these standards
 Before working on any file, apply these rules to both resource and API files:
 
 ### Front matter
-- **Replace TODO placeholders:**
-  - Use the `author` value provided by the author
-  - Use the `ms.subservice` value provided by the author
+- **Replace TODO placeholders only:**
+  - If `author` field has TODO: replace with author-provided value
+  - If `ms.subservice` field has TODO: replace with author-provided value
+  - Do NOT update these fields if they already contain values
 - **[Optional] Improve the description:**
   - Make it user-friendly and clear
   - Use information from API.md to enhance it
@@ -958,6 +959,7 @@ Before working on any file, apply these rules to both resource and API files:
   - `ms.date`
   - `doc_type`
   - `ms.localizationpriority`
+  - `author` and `ms.subservice` if already populated
 
 ### File body
 - **H1 title:** Leave unchanged
