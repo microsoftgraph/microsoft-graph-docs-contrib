@@ -40,6 +40,7 @@ Looking for the API reference for this service, see [Unified tenant configuratio
 
 ## Next steps
 
+- To learn how to authenticate and set up the UTCM service principal, see [Set up authentication for unified tenant configuration management APIs](/graph/utcm-authentication-setup).
 - To learn more about the unified tenant configuration management APIs, see [Use the unified tenant configuration management APIs in Microsoft Graph (preview)](/graph/api/resources/unified-tenant-configuration-management-api-overview?view=graph-rest-beta&preserve-view=true).
 - To learn more about the supported workloads and resource types for UTCM, see [Supported workloads and resource types](/graph/utcm-supported-resourcetypes).
 - Try the unified tenant configuration management APIs in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
