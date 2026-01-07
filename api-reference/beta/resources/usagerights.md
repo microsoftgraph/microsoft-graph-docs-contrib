@@ -45,7 +45,7 @@ This is a **flags enum** (`IsFlags="true"`). Multiple rights can be combined in 
 | purviewClaimsChallengeNotSupportedException | 262144 | Represents an exception indicating Purview claims challenge is not supported. |
 | exception | 524288 | Represents a general exception condition. |
 | labelNotFoundException | 1048576 | Represents label not found exception condition. |
-| unknownFutureValue | 2097152 | The action was set, to keep the enum evolvable, for future values in policy. |
+| unknownFutureValue | 2097152 | Represents a sentinel value used to keep the enum evolvable for future values. |
 
 ## JSON representation
 
