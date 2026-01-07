@@ -16,11 +16,10 @@ Namespace: microsoft.graph
 
 Enumerates a user's usage rights when content is protected with a sensitivity label. These rights define the actions a user is permitted to perform on labeled content.
 
-This is a **flags enum** (`IsFlags="true"`). Multiple rights can be combined in a single value.
-
 ## Members
 
-> Note: Because this is a flags enum, the **Value** column represents bit flags (powers of two). A single rights set can include multiple members by combining values.
+> Note: The numeric values shown here reflect the service's internal **flags enum** (bit flags / powers of two) and are included for completeness.  
+> In API responses, callers typically see **a list of right names (strings)** (for example, `["view","print"]`) rather than a single combined numeric value.
 
 | Member | Value | Description |
 | :----- | ----: | :---------- |
@@ -47,6 +46,17 @@ This is a **flags enum** (`IsFlags="true"`). Multiple rights can be combined in 
 | labelNotFoundException | 1048576 | Represents label not found exception condition. |
 | unknownFutureValue | 2097152 | Represents a sentinel value used to keep the enum evolvable for future values. |
 
+### Example: combining flags (internal representation)
+Internally, multiple rights can be combined into one value by bitwise OR:
+- `view` = 1024  
+- `print` = 128  
+- Combined (`view | print`) = 1152  
+
+When returned to callers, this rights set is typically represented as:
+```json
+["view", "print"]
+```
+
 ## JSON representation
 
 The following JSON representation shows the enum type.
@@ -58,3 +68,4 @@ The following JSON representation shows the enum type.
 {
   "@odata.type": "#microsoft.graph.usageRights"
 }
+```
