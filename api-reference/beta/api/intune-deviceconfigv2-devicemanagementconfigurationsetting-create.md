@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceManagement/auditPolicies/{deviceManagementAuditPolicyId}/settings
 POST /deviceManagement/inventoryPolicies/{deviceManagementInventoryPolicyId}/settings
 POST /deviceManagement/compliancePolicies/{deviceManagementCompliancePolicyId}/settings
@@ -66,7 +66,7 @@ If successful, this method returns a `201 Created` response code and a [deviceMa
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/auditPolicies/{deviceManagementAuditPolicyId}/settings
 Content-type: application/json
 Content-length: 26306
@@ -437,7 +437,7 @@ Content-length: 26306
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 26355
