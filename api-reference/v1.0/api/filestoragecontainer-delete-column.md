@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ```http
-DELETE /storageContainers/{containerId}/columns/{columnId}
+DELETE /storage/fileStorage/containers/{containerId}/columns/{columnId}
 ```
 
 ## Request headers
@@ -64,22 +64,7 @@ The following example shows a request.
 }
 -->
 ```http
-DELETE https://graph.microsoft.com/v1.0/storageContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103
-Content-Type: application/json
-
-{
-  "description": "test",
-  "enforceUniqueValues": false,
-  "hidden": false,
-  "indexed": false,
-  "name": "Title",
-  "text": {
-    "allowMultipleLines": false,
-    "appendChangesToExistingText": false,
-    "linesForEditing": 0,
-    "maxLength": 255
-  }
-}
+DELETE https://graph.microsoft.com/v1.0/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103
 ```
 
 
