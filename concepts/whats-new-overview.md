@@ -18,6 +18,13 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## January 2026: New and generally avaliable
+
+### Files
+
+Use the following new methods added to further support structured file storage in SharePoint Embedded applications:
+  - [fileStorageContainer](/graph/api/resources/filestoragecontainer)
+
 ## December 2025: New and generally available
 
 ### Calendars | Places
