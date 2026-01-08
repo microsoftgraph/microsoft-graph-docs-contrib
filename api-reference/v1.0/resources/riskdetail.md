@@ -1,0 +1,55 @@
+---
+title: "riskDetail enum type"
+description: "Represents the reason behind a specific state of a risky user, sign-in, or service principal."
+author: "FaithOmbongi"
+ms.localizationpriority: medium
+ms.date: 11/28/2025
+ms.subservice: "entra-sign-in"
+doc_type: enumPageType
+---
+
+# riskDetail enum type
+
+Namespace: microsoft.graph
+
+Represents the reason behind a specific state of a risky user, sign-in, or service principal. This enumeration is used by multiple resources.
+
+The following table lists the members of an `[evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations)`. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `m365DAdminDismissedDetection`, `adminConfirmedServicePrincipalCompromised`, `adminDismissedAllRiskForServicePrincipal`, `userChangedPasswordOnPremises`, `adminDismissedRiskForSignIn`, `adminConfirmedAccountSafe`.
+
+## Members
+
+| Member | Description |
+|:---|:---|
+| none | No details are available for the risk state.<br/><br/>Applies to:<ul><li>[riskDetection](../resources/riskdetection.md)</li><li>[riskServicePrincipalActivity](../resources/riskserviceprincipalactivity.md)</li><li>[riskUserActivity](../resources/riskuseractivity.md)</li><li>[riskyServicePrincipal](../resources/riskyserviceprincipal.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md)</li><li>[signIn](../resources/signin.md)</li></ul> |
+| adminGeneratedTemporaryPassword | An admin generated a temporary password for the user.<br/><br/>Applies to:<ul><li>[riskDetection](../resources/riskdetection.md)</li><li>[riskUserActivity](../resources/riskuseractivity.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li></ul> |
+| userPerformedSecuredPasswordChange | The user performed a secure password change.<br/><br/>Applies to:<ul><li>[riskDetection](../resources/riskdetection.md)</li><li>[riskUserActivity](../resources/riskuseractivity.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li></ul> |
+| userPerformedSecuredPasswordReset | The user performed a secure password reset.<br/><br/>Applies to:<ul><li>[riskDetection](../resources/riskdetection.md)</li><li>[riskUserActivity](../resources/riskuseractivity.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li></ul> |
+| adminConfirmedSigninSafe | An admin confirmed the sign-in as safe.<br/><br/>Applies to:<ul><li>[riskDetection](../resources/riskdetection.md)</li><li>[riskUserActivity](../resources/riskuseractivity.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li></ul> |
+| aiConfirmedSigninSafe | AI confirmed the sign-in as safe.<br/><br/>Applies to:<ul><li>[riskDetection](../resources/riskdetection.md)</li><li>[riskUserActivity](../resources/riskuseractivity.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li></ul> |
+| userPassedMFADrivenByRiskBasedPolicy | The user passed multifactor authentication (MFA) driven by a risk-based policy.<br/><br/>Applies to:<ul><li>[riskDetection](../resources/riskdetection.md)</li><li>[riskUserActivity](../resources/riskuseractivity.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li></ul> |
+| adminDismissedAllRiskForUser | An admin dismissed all risk for the user.<br/><br/>Applies to:<ul><li>[riskDetection](../resources/riskdetection.md)</li><li>[riskUserActivity](../resources/riskuseractivity.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li></ul> |
+| adminConfirmedSigninCompromised | An admin confirmed the sign-in as compromised.<br/><br/>Applies to:<ul><li>[riskDetection](../resources/riskdetection.md)</li><li>[riskUserActivity](../resources/riskuseractivity.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li></ul> |
+| hidden | The risk state is hidden.<br/><br/>Applies to:<ul><li>[riskDetection](../resources/riskdetection.md)</li><li>[riskServicePrincipalActivity](../resources/riskserviceprincipalactivity.md)</li><li>[riskUserActivity](../resources/riskuseractivity.md)</li><li>[riskyServicePrincipal](../resources/riskyserviceprincipal.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md)</li><li>[signIn](../resources/signin.md)</li></ul> |
+| adminConfirmedUserCompromised | An admin confirmed the user as compromised.<br/><br/>Applies to:<ul><li>[riskDetection](../resources/riskdetection.md)</li><li>[riskUserActivity](../resources/riskuseractivity.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li></ul> |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use.<br/><br/>Applies to:<ul><li>[riskDetection](../resources/riskdetection.md)</li><li>[riskServicePrincipalActivity](../resources/riskserviceprincipalactivity.md)</li><li>[riskUserActivity](../resources/riskuseractivity.md)</li><li>[riskyServicePrincipal](../resources/riskyserviceprincipal.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md)</li><li>[signIn](../resources/signin.md)</li></ul> |
+| m365DAdminDismissedDetection | A Microsoft Defender XDR admin dismissed the detection.<br/><br/>Applies to:<ul><li>[riskDetection](../resources/riskdetection.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li></ul> |
+| adminConfirmedServicePrincipalCompromised | An admin confirmed the service principal as compromised.<br/><br/>Applies to:<ul><li>[riskDetection](../resources/riskdetection.md)</li><li>[riskServicePrincipalActivity](../resources/riskserviceprincipalactivity.md)</li><li>[riskyServicePrincipal](../resources/riskyserviceprincipal.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md)</li><li>[signIn](../resources/signin.md)</li></ul> |
+| adminDismissedAllRiskForServicePrincipal | An admin dismissed all risk for the service principal.<br/><br/>Applies to:<ul><li>[riskDetection](../resources/riskdetection.md)</li><li>[riskServicePrincipalActivity](../resources/riskserviceprincipalactivity.md)</li><li>[riskyServicePrincipal](../resources/riskyserviceprincipal.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md)</li><li>[signIn](../resources/signin.md)</li></ul> |
+| userChangedPasswordOnPremises | The user changed their password on-premises.<br/><br/>Applies to:<ul><li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li></ul> |
+| adminDismissedRiskForSignIn | An admin dismissed the risk for the sign-in.<br/><br/>Applies to:<ul><li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li></ul> |
+| adminConfirmedAccountSafe | An admin confirmed the account as safe.<br/><br/>Applies to:<ul><li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li></ul> |
+
+## JSON representation
+
+The following JSON representation shows the resource type.
+
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.riskDetail"
+}-->
+
+```json
+{
+  "@odata.type": "#microsoft.graph.riskDetail"
+}
+```

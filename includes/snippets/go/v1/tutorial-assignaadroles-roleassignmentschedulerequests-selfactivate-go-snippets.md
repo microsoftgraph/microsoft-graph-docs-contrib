@@ -18,7 +18,7 @@ import (
 requestBody := graphmodels.NewUnifiedRoleAssignmentScheduleRequest()
 action := graphmodels.SELFACTIVATE_UNIFIEDROLESCHEDULEREQUESTACTIONS 
 requestBody.SetAction(&action) 
-principalId := "7146daa8-1b4b-4a66-b2f7-cf593d03c8d2"
+principalId := "d9771b4c-06c5-491a-92cb-3aa4e225a725"
 requestBody.SetPrincipalId(&principalId) 
 roleDefinitionId := "fe930be7-5e62-47db-91af-98c3a49a38b1"
 requestBody.SetRoleDefinitionId(&roleDefinitionId) 
@@ -27,7 +27,7 @@ requestBody.SetDirectoryScopeId(&directoryScopeId)
 justification := "Need to invalidate all app refresh tokens for Contoso users."
 requestBody.SetJustification(&justification) 
 scheduleInfo := graphmodels.NewRequestSchedule()
-startDateTime , err := time.Parse(time.RFC3339, "2024-03-25T15:13:00.000Z")
+startDateTime , err := time.Parse(time.RFC3339, "2025-03-21T11:46:00.000Z")
 scheduleInfo.SetStartDateTime(&startDateTime) 
 expiration := graphmodels.NewExpirationPattern()
 type := graphmodels.AFTERDURATION_EXPIRATIONPATTERNTYPE 

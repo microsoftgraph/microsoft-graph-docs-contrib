@@ -5,14 +5,14 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/12/2024
+ms.date: 08/01/2024
 ---
 
 # androidPermissionAction resource type
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -22,7 +22,7 @@ Mapping between an Android app permission and the action Android should take whe
 |Property|Type|Description|
 |:---|:---|:---|
 |permission|String|Android permission string, defined in the official Android documentation.  Example 'android.permission.READ_CONTACTS'.|
-|action|[androidPermissionActionType](../resources/intune-apps-androidpermissionactiontype.md)|Type of Android permission action. Possible values are: `prompt`, `autoGrant`, `autoDeny`.|
+|action|[androidPermissionActionType](../resources/intune-apps-androidpermissionactiontype.md)|Type of Android permission action. The possible values are: `prompt`, `autoGrant`, `autoDeny`.|
 
 ## Relationships
 None

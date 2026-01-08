@@ -1,42 +1,42 @@
 ---
-title: "Generate proof-of-possession tokens for rolling keys and update certificates programmatically"
-description: "Learn how to generate a proof-of-possession (PoP) token that is required as part of the request validation for the addKey and removeKey methods on apps and service principals."
+title: Generate PoP Tokens for Key Rolling and Certificate Updates
+description: Learn how to generate proof-of-possession (PoP) tokens to automate key rolling and certificate updates for applications using Microsoft Graph.
 ms.localizationpriority: high
 ms.subservice: entra-applications
 ms.topic: how-to
 author: FaithOmbongi
 ms.author: ombongifaith
 ms.reviewer: saurabh.madan, odaishalabi
-ms.date: 06/12/2024
+ms.date: 04/25/2025
 #customer intent: As a developer, I want to automate the process of rolling keys for applications and service principals.
 ---
 
-# Generate proof-of-possession tokens for rolling keys and update certificates programmatically
+# Generate proof-of-possession (PoP) tokens for automating key rolling and certificate updates using Microsoft Graph
 
-You can use the **addKey** and **removeKey** methods defined on the [application](/graph/api/resources/application) and [servicePrincipal](/graph/api/resources/serviceprincipal) resources to roll expiring keys programmatically.
+The **addKey** and **removeKey** methods defined on the [application](/graph/api/resources/application) and [servicePrincipal](/graph/api/resources/serviceprincipal) resources let you roll expiring keys programmatically.
 
-As part of the request validation for these methods, a proof-of-possession (PoP) of an existing key is verified before the methods can be invoked. The proof is represented by a self-signed JSON Web Token (JWT). This token must be signed using the private key of one of the application's existing valid certificates. The recommended lifespan for the token is 10 minutes.
+As part of the request validation for these methods, a proof-of-possession (PoP) of an existing key is verified before the methods can be invoked. The proof uses a self-signed JSON Web Token (JWT). This token must be signed using the private key of one of the application's existing valid certificates. The token's recommended lifespan is 10 minutes.
 
-This article provides code examples in C# to demonstrate how to:
+This article includes C# code examples to demonstrate how to:
 1. Compute the client assertion by using an existing valid certificate.
 2. Generate the PoP token by using the generated client assertion key.
 3. Use the PoP token to upload a new certificate to the app or service principal object using the **addKey** method.
 4. Use the PoP token to remove a certificate from the app or service principal object using the **removeKey** method.
 
 > [!IMPORTANT]
-> Applications that don't have any existing *valid* certificates because certificates haven't been added yet or existing certificates have expired can't use this service action. Instead, use the [Update application](/graph/applications-how-to-add-certificate) operation to update the **keyCredentials** property. For more information, see [Add a certificate to an app using Microsoft Graph](applications-how-to-add-certificate.md).
+> Applications without existing *valid* certificates, either because none have been added or existing ones have expired, can't use this service action. Instead, use the [Update application](/graph/applications-how-to-add-certificate) operation to update **keyCredentials**. For more information, see [Add a certificate to an app using Microsoft Graph](applications-how-to-add-certificate.md).
 
 ## Prerequisites
 
 - Have a valid client certificate on the target app or service principal. 
-  - You need the details of a valid existing vertificate to generate the client assertion key and PoP token.
+  - You need the details of a valid existing certificate to generate the client assertion key and PoP token.
     - For testing purposes, you can use a self-signed certificate. To learn how to create a self-signed certificate, see [Create a self-signed public certificate to authenticate your application](/entra/identity-platform/howto-create-self-signed-certificate).
-    - Export the certificate with its private key in `.pfx` format. You can alternatively update the script to only require the public certificate without the private key.
-- The client ID (called **appId** on the API) and object ID (called **id** on the API) of the application or service principal for which you're generating the PoP token.   
+    - Export the certificate with its private key in `.pfx` format. Alternatively, update the script to require only the public certificate without the private key.
+- The client ID (called **appId** on the API) and object ID (called **id** on the API) of the application or service principal for which you generate the PoP token.   
 
 ## Sample code
 
-The token should contain the following claims:
+The token contains the following claims:
 
 - **aud**: Audience needs to be `00000002-0000-0000-c000-000000000000`.
 - **iss**: Issuer should be the ID of the **application** or **servicePrincipal** object that initiates the request.
@@ -59,9 +59,9 @@ namespace SampleCertCall
         static void Main(string[] args)
         {
             //=============================
-            // Global variables which will be used to store app registation info, you can use appsettings.json to store such data
+            // Global variables used to store app registration info. You can use appsettings.json to store this data.
             //=============================
-            string clientId = "Enter_the_Application_Id_Here"; //client ID or appId of the target app or service principal
+            string clientId = "Enter_the_Application_Id_Here"; // Client ID or app ID of the target app or service principal
             string tenantID = "Enter_the_Tenant_Id_Here"; // Tenant ID value
             string scopes = "https://graph.microsoft.com/.default"; // The "https://graph.microsoft.com/.default" is required in the client credentials flow, see the consent documentation (https://learn.microsoft.com/en-us/entra/identity-platform/scopes-oidc#the-default-scope)
             string objectId = "Enter_the_Object_Id_Here"; // The object ID is the identifier of the app or service principal you want to work with. Depending on the endpoint you use, it can be either the application objectId (https://graph.microsoft.com/v1.0/applications)) or the service principal objectId (https://graph.microsoft.com/v1.0/ServicePrincipals)).
@@ -75,14 +75,14 @@ namespace SampleCertCall
             X509Certificate2 signingCert = null;
             try
             {
-                if (!password.IsNullOrEmpty())
+                if (!string.IsNullOrEmpty(password))
                     signingCert = new X509Certificate2(pfxFilePath, password);
                 else
                     signingCert = new X509Certificate2(pfxFilePath);
             }
             catch (System.Security.Cryptography.CryptographicException ex)
             {
-                Console.WriteLine("Check the old/uploaded certificate {CertificateDiskPath}, you need to add a correct certificate path and/or password for this sample to work\n" + ex.Message);
+                Console.WriteLine("Check the old or uploaded certificate {CertificateDiskPath}. Add the correct certificate path or password for this sample to work.\n" + ex.Message);
                 Environment.Exit(-1);
             }
 
@@ -122,7 +122,7 @@ namespace SampleCertCall
             while (choice != 0)
             {
                 Console.WriteLine("\n=================================================");
-                Console.WriteLine("Please choose one of the following options:");
+                Console.WriteLine("Choose one of the following options:");
                 Console.WriteLine("=================================================");
                 Console.WriteLine("0. Exit");
                 Console.WriteLine("1. Display access token");
@@ -189,7 +189,7 @@ namespace SampleCertCall
                         else
                         {
                             Console.WriteLine("\n______________________");
-                            Console.WriteLine("Something went wrong!");
+                            Console.WriteLine("An error occurred.");
                             Console.WriteLine("______________________\n");
                         }
 
@@ -244,7 +244,7 @@ namespace SampleCertCall
                         else
                         {
                             Console.WriteLine("\n______________________");
-                            Console.WriteLine("ERROR: Invalid Certificate ID");
+                            Console.WriteLine("Error: Invalid certificate ID.");
                             Console.WriteLine("______________________\n");
                         }
                         break;
@@ -489,7 +489,11 @@ namespace SampleCertCall
             var stringPayload = JsonConvert.SerializeObject(payload);
             var httpContent = new StringContent(stringPayload, Encoding.UTF8, "application/json");
 
-            var res = client.PostAsync(url, httpContent).Result;
+            // var res = client.PostAsync(url, httpContent).Result;
+
+            // var res = client.PostAsync(url, httpContent).GetAwaiter().GetResult();
+
+            var res = await client.PostAsync(url, httpContent);
 
             return res.StatusCode;
         }
@@ -708,8 +712,8 @@ You can also generate the proof using signature in Azure KeyVault. It's importan
 
 ## Related content
 
-Now that you have your PoP token, you can use it to:
-- [Add a key](/graph/api/application-addkey) or [remove a key](/graph/api/application-removekey) from your application.
-- [Add a key](/graph/api/serviceprincipal-addkey) or [remove a key](/graph/api/serviceprincipal-removekey) from your service principal.
+Now that you have your PoP token, use it to:
+- [Add a key](/graph/api/application-addkey) or [remove a key](/graph/api/application-removekey) from the application.
+- [Add a key](/graph/api/serviceprincipal-addkey) or [remove a key](/graph/api/serviceprincipal-removekey) from the service principal.
 
-To learn more about client assertions, see [Microsoft identity platform application authentication certificate credentials](/entra/identity-platform/certificate-credentials#claims-payload).
+Learn more about client assertions in [Microsoft identity platform application authentication certificate credentials](/entra/identity-platform/certificate-credentials#claims-payload).

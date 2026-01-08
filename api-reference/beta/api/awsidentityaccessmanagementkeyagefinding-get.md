@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Read the properties and relationships of an [awsIdentityAccessManagementKeyAgeFinding](../resources/awsidentityaccessmanagementkeyagefinding.md) object.
 
 ## Permissions
@@ -82,7 +84,7 @@ Content-Type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.awsIdentityAccessManagementKeyAgeFinding/$entity",
-    "id": "MSxBd3NJZGVudGl0eUFjY2Vzc01hbmFnZW1lbnRLZXlBZ2VGaW5kaW5nLDIyMDE4",
+    "id": "MSxB...aW5nLDIyMDE4",
     "createdDateTime": "2023-10-25T23:48:12.102767Z",
     "status": "inactive",
     "permissionsCreepIndex": {
@@ -94,9 +96,9 @@ Content-Type: application/json
         "available": 58
     },
     "accessKey": {
-        "id": "QUtJQTU1VUhNS0IzM1hTWFRSNjI",
-        "externalId": "AKIA55UHMKB33XSXTR62",
-        "displayName": "AKIA55UHMKB33XSXTR62",
+        "id": "QUtJQ...FRSNjI",
+        "externalId": "AKIA55.....62",
+        "displayName": "AKIA55.....62",
         "source": {
             "@odata.type": "#microsoft.graph.awsSource",
             "identityProviderType": "aws",
@@ -111,8 +113,8 @@ Content-Type: application/json
         },
         "owner": {
             "id": "YXJuOmF3czppYW06Ojk1Njk4Nzg4NzczNTp1c2VyL2FuZHl3YW5n",
-            "externalId": "arn:aws:iam::956987887735:user/andywang",
-            "displayName": "andywang",
+            "externalId": "arn:aws:iam::956987887735:user/contoso",
+            "displayName": "contoso",
             "source": {
                 "@odata.type": "#microsoft.graph.awsSource",
                 "identityProviderType": "aws",
@@ -122,4 +124,5 @@ Content-Type: application/json
     }
 }
 ```
+
 

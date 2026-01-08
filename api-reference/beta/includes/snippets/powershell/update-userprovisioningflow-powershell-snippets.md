@@ -14,7 +14,7 @@ $params = @{
 		"userGradeLevel"
 	)
 	additionalOptions = @{
-		markAllStudentsAsMinors = $true
+		studentAgeGroup = "minor"
 		allowStudentContactAssociation = $true
 	}
 }

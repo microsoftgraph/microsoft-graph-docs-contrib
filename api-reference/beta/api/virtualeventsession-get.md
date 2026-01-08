@@ -41,7 +41,7 @@ To get a session of a webinar:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}
 ```
 
@@ -51,7 +51,7 @@ To get a session of a town hall:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /solutions/virtualEvents/townhalls/{townhallId}/sessions/{sessionId}
 ```
 
@@ -86,16 +86,12 @@ The following example shows a request.
   "sampleKeys": ["f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd", "8d62dd52-4dff-4c75-96a9-f905cc3ff942"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/f8ce2a5f-0e6a-4186-aa90-1f64bc023566@5466a424-aadf-425c-9b24-034ca28d4bdd/sessions/8d62dd52-4dff-4c75-96a9-f905cc3ff942
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-virtualeventsession-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-virtualeventsession-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -134,7 +130,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.virtualEventSession"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -145,6 +141,7 @@ Content-Type: application/json
     "startDateTime": "2023-08-08T12:30:00Z",
     "endDateTime": "2023-08-09T22:00:00Z",
     "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZDVjNzk3OWEtYjc2NS00NTA1LTkyMzQtYTYzMGI5YmFmMjM5%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%221cd068e4-5b08-4e75-a7f9-7b4e067a0820%22%7d",
+    "videoOnDemandWebUrl": "https://df.events.teams.microsoft.com/webinars/webinarId/sessions/session1",
     "subject": "Session one",
     "participants": {
       "@odata.type": "microsoft.graph.meetingParticipants"
@@ -171,7 +168,8 @@ Content-Type: application/json
     "allowTeamworkReactions": null,
     "recordAutomatically": null,
     "watermarkProtection": null,
-    "allowParticipantsToChangeName": null
+    "allowParticipantsToChangeName": null,
+    "meetingSpokenLanguageTag": "en-US"
   }
 }
 ```

@@ -48,6 +48,30 @@ items:
       href: ../../api/security-incident-update.md
     - name: Create comment for incident
       href: ../../api/security-incident-post-comments.md
+  - name: Incident task
+    items:
+    - name: Overview
+      href: ../../resources/security-incidenttask.md
+    - name: Incident task
+      href: ../../resources/security-incidenttask.md
+    - name: List
+      href: ../../api/security-list-incidenttasks.md
+    - name: Get
+      href: ../../api/security-incidenttask-get.md
+    - name: Update
+      href: ../../api/security-incidenttask-update.md
+    - name: Execute response action
+      href: ../../api/security-incidenttask-executeresponseaction.md
+  - name: Complex types
+    items:
+    - name: AI agent evidence
+      href: ../../resources/security-aiagentevidence.md
+    - name: Security group evidence
+      href: ../../resources/security-securitygroupevidence.md
+    - name: Teams message evidence
+      href: ../../resources/security-teamsmessageevidence.md
+    - name: User account
+      href: ../../resources/security-useraccount.md
 - name: Attack simulation and training
   items:
   - name: Simulation
@@ -204,6 +228,146 @@ items:
       href: ../../resources/security-auditdata.md
     - name: Default audit data
       href: ../../resources/security-defaultauditdata.md
+- name: Data security and compliance
+  items:
+  - name: Content activity
+    items:
+    - name: Content activity
+      href: ../../resources/contentactivity.md
+    - name: Create
+      href: ../../api/activitiescontainer-post-contentactivities.md
+  - name: Sensitivity label
+    items:
+    - name: Sensitivity label
+      href: ../../resources/security-sensitivitylabel.md
+    - name: List
+      href: ../../api/security-informationprotection-list-sensitivitylabels.md
+    - name: Get
+      href: ../../api/security-sensitivitylabel-get.md
+    - name: Compute inheritance
+      href: ../../api/sensitivitylabel-computeinheritance.md
+    - name: Compute rights and inheritance
+      href: ../../api/sensitivitylabel-computerightsandinheritance.md
+    - name: Evaluate application
+      href: ../../api/security-sensitivitylabel-evaluateapplication.md
+    - name: Evaluate classification result
+      href: ../../api/security-sensitivitylabel-evaluateclassificationresults.md
+    - name: Evaluate removal
+      href: ../../api/security-sensitivitylabel-evaluateremoval.md
+    - name: Extract content label
+      href: ../../api/security-sensitivitylabel-extractcontentlabel.md
+    - name: List data security and compliance sensitivity labels
+      href: ../../api/tenantdatasecurityandgovernance-list-sensitivitylabels.md
+    - name: Get a data security and compliance sensitivity label
+      href: ../../api/sensitivitylabel-get.md
+    - name: Get usage rights included
+      href: ../../api/usagerightsincluded-get.md
+  - name: Tenant data security and governance
+    items:
+    - name: Tenant data security and governance
+      href: ../../resources/tenantdatasecurityandgovernance.md
+    - name: Process content async
+      href: ../../api/tenantdatasecurityandgovernance-processcontentasync.md
+  - name: User data security and governance
+    items:
+    - name: User data security and governance
+      href: ../../resources/userdatasecurityandgovernance.md
+    - name: Compute protection scopes
+      href: ../../api/userprotectionscopecontainer-compute.md
+    - name: Process content
+      href: ../../api/userdatasecurityandgovernance-processcontent.md
+  - name: Complex types
+    items:
+    - name: Activity metadata
+      href: ../../resources/activitymetadata.md
+    - name: Ai agent info
+      href: ../../resources/aiagentinfo.md
+    - name: Ai interaction entity
+      href: ../../resources/aiinteractionentity.md
+    - name: Ai interaction plugin
+      href: ../../resources/aiinteractionplugin.md
+    - name: Auto labeling
+      href: ../../resources/autolabeling.md
+    - name: Binary content
+      href: ../../resources/binarycontent.md
+    - name: Block access action
+      href: ../../resources/blockaccessaction.md
+    - name: Classifcation error base
+      href: ../../resources/classifcationerrorbase.md
+    - name: Classification error
+      href: ../../resources/classificationerror.md
+    - name: Classification inner error
+      href: ../../resources/classificationinnererror.md
+    - name: Compute rights and inheritance result
+      href: ../../resources/computerightsandinheritanceresult.md
+    - name: Content base
+      href: ../../resources/contentbase.md
+    - name: Custom metadata dictionary
+      href: ../../resources/custommetadatadictionary.md
+    - name: Device metadata
+      href: ../../resources/devicemetadata.md
+    - name: Dlp action info
+      href: ../../resources/dlpactioninfo.md
+    - name: Group scope
+      href: ../../resources/groupscope.md
+    - name: Integrated application metadata
+      href: ../../resources/integratedapplicationmetadata.md
+    - name: Label action base
+      href: ../../resources/labelactionbase.md
+    - name: Label content right
+      href: ../../resources/labelcontentright.md
+    - name: Label policy
+      href: ../../resources/labelpolicy.md
+    - name: Notify user action
+      href: ../../resources/notifyuseraction.md
+    - name: Operating system specifications
+      href: ../../resources/operatingsystemspecifications.md
+    - name: Policy binding
+      href: ../../resources/policybinding.md
+    - name: Policy location application
+      href: ../../resources/policylocationapplication.md
+    - name: Policy location domain
+      href: ../../resources/policylocationdomain.md
+    - name: Policy location URL
+      href: ../../resources/policylocationurl.md
+    - name: Policy scope base
+      href: ../../resources/policyscopebase.md
+    - name: Policy tenant scope
+      href: ../../resources/policytenantscope.md
+    - name: Policy user scope
+      href: ../../resources/policyuserscope.md
+    - name: Process content batch request
+      href: ../../resources/processcontentbatchrequest.md
+    - name: Process content request
+      href: ../../resources/processcontentrequest.md
+    - name: Process content response
+      href: ../../resources/processcontentresponse.md
+    - name: Process content responses
+      href: ../../resources/processcontentresponses.md
+    - name: Process conversation metadata
+      href: ../../resources/processconversationmetadata.md
+    - name: Process file metadata
+      href: ../../resources/processfilemetadata.md
+    - name: Processing error
+      href: ../../resources/processingerror.md
+    - name: Protected application metadata
+      href: ../../resources/protectedapplicationmetadata.md
+    - name: Protected content
+      href: ../../resources/protectedcontent.md
+    - name: Resource access detail
+      href: ../../resources/resourceaccessdetail.md
+    - name: Restrict access action
+      href: ../../resources/restrictaccessaction.md
+    - name: Restrict access action base
+      href: ../../resources/restrictaccessactionbase.md
+    - name: Scope base
+      href: ../../resources/scopebase.md
+    - name: Tenant scope
+      href: ../../resources/tenantscope.md
+    - name: Text content
+      href: ../../resources/textcontent.md
+    - name: User scope
+      href: ../../resources/userscope.md
 - name: Detection rule
   items:
   - name: Detection rule
@@ -336,9 +500,9 @@ items:
     items:
     - name: Case operation
       href: ../../resources/security-caseoperation.md
-    - name: List case operations
+    - name: List
       href: ../../api/security-ediscoverycase-list-operations.md
-    - name: Get case operation by ID
+    - name: Get
       href: ../../api/security-caseoperation-get.md
   - name: eDiscovery custodian
     items:
@@ -362,18 +526,30 @@ items:
       href: ../../api/security-ediscoverycustodian-removehold.md
     - name: Get last index operation
       href: ../../api/security-ediscoverycustodian-list-lastindexoperation.md
-    - name: List site sources
-      href: ../../api/security-ediscoverycustodian-list-sitesources.md
-    - name: Create site source
-      href: ../../api/security-ediscoverycustodian-post-sitesources.md
-    - name: List unified group sources
-      href: ../../api/security-ediscoverycustodian-list-unifiedgroupsources.md
-    - name: Create unified group source
-      href: ../../api/security-ediscoverycustodian-post-unifiedgroupsources.md
-    - name: List user sources
-      href: ../../api/security-ediscoverycustodian-list-usersources.md
-    - name: Create user source
-      href: ../../api/security-ediscoverycustodian-post-usersources.md
+    - name: Site sources
+      items:
+      - name: List
+        href: ../../api/security-ediscoverycustodian-list-sitesources.md
+      - name: Create
+        href: ../../api/security-ediscoverycustodian-post-sitesources.md
+      - name: Delete
+        href: ../../api/security-ediscoverycustodian-delete-sitesources.md
+    - name: Unified group sources
+      items:
+      - name: List
+        href: ../../api/security-ediscoverycustodian-list-unifiedgroupsources.md
+      - name: Create
+        href: ../../api/security-ediscoverycustodian-post-unifiedgroupsources.md
+      - name: Delete
+        href: ../../api/security-unifiedgroupsource-delete.md
+    - name: User sources
+      items:
+      - name: List
+        href: ../../api/security-ediscoverycustodian-list-usersources.md
+      - name: Create
+        href: ../../api/security-ediscoverycustodian-post-usersources.md
+      - name: Delete
+        href: ../../api/security-ediscoverycustodian-delete-usersources.md
   - name: eDiscovery noncustodial data source
     items:
     - name: eDiscovery noncustodial data source
@@ -408,14 +584,24 @@ items:
       href: ../../api/security-ediscoveryholdpolicy-update.md
     - name: Delete
       href: ../../api/security-ediscoverycase-delete-legalholds.md
-    - name: List site sources
-      href: ../../api/security-ediscoverycustodian-list-sitesources.md
-    - name: Create site source
-      href: ../../api/security-ediscoveryholdpolicy-post-sitesources.md
-    - name: List user sources
-      href: ../../api/security-ediscoverycustodian-list-usersources.md
-    - name: Create user source
-      href: ../../api/security-ediscoveryholdpolicy-post-usersources.md
+    - name: Retry policy
+      href: ../../api/security-ediscoveryholdpolicy-retrypolicy.md
+    - name: Site sources
+      items:
+      - name: List
+        href: ../../api/security-ediscoveryholdpolicy-list-sitesources.md
+      - name: Create
+        href: ../../api/security-ediscoveryholdpolicy-post-sitesources.md
+      - name: Delete
+        href: ../../api/security-ediscoveryholdpolicy-delete-sitesources.md
+    - name: User sources
+      items:
+      - name: List
+        href: ../../api/security-ediscoveryholdpolicy-list-usersources.md
+      - name: Create
+        href: ../../api/security-ediscoveryholdpolicy-post-usersources.md
+      - name: Delete
+        href: ../../api/security-ediscoveryholdpolicy-delete-usersources.md
   - name: eDiscovery search
     items:
     - name: eDiscovery search
@@ -466,6 +652,8 @@ items:
       href: ../../api/security-ediscoverycase-post-reviewsets.md
     - name: Get
       href: ../../api/security-ediscoveryreviewset-get.md
+    - name: Update
+      href: ../../api/security-ediscoveryreviewset-update.md
     - name: Export
       href: ../../api/security-ediscoveryreviewset-export.md
     - name: Add to review set
@@ -476,6 +664,26 @@ items:
       href: ../../api/security-ediscoveryreviewset-list-queries.md
     - name: Create review set query
       href: ../../api/security-ediscoveryreviewset-post-queries.md
+    - name: eDiscovery review set query
+      items:
+      - name: eDiscovery review set query
+        href: ../../resources/security-ediscoveryreviewsetquery.md
+      - name: List
+        href: ../../api/security-ediscoveryreviewset-list-queries.md
+      - name: Create
+        href: ../../api/security-ediscoveryreviewset-post-queries.md
+      - name: Get
+        href: ../../api/security-ediscoveryreviewsetquery-get.md
+      - name: Update
+        href: ../../api/security-ediscoveryreviewsetquery-update.md
+      - name: Delete
+        href: ../../api/security-ediscoveryreviewset-delete-queries.md
+      - name: Export
+        href: ../../api/security-ediscoveryreviewsetquery-export.md
+      - name: Apply tags
+        href: ../../api/security-ediscoveryreviewsetquery-applytags.md
+      - name: Run (preview)
+        href: ../../api/security-ediscoveryreviewsetquery-run.md
   - name: eDiscovery review tag
     items:
     - name: eDiscovery review tag
@@ -492,6 +700,24 @@ items:
       href: ../../api/security-ediscoverycase-delete-tags.md
     - name: List tags as hierarchy
       href: ../../api/security-ediscoveryreviewtag-ashierarchy.md
+  - name: eDiscovery case member
+    items:
+    - name: eDiscovery case member
+      href: ../../resources/security-ediscoverycasemember.md
+    - name: List
+      href: ../../api/security-ediscoverycasemember-list.md
+    - name: Add
+      href: ../../api/security-ediscoverycasemember-post.md
+    - name: Remove
+      href: ../../api/security-ediscoverycasemember-delete.md
+  - name: Complex types
+    items:
+    - name: eDiscovery add to review set operation
+      href: ../../resources/security-ediscoveryaddtoreviewsetoperation.md
+    - name: eDiscovery estimate operation
+      href: ../../resources/security-ediscoveryestimateoperation.md
+    - name: Report file metadata
+      href: ../../resources/security-ediscoveryreportfilemetadata.md
 - name: Email and collaboration protection
   items:
   - name: Analyzed email
@@ -554,12 +780,44 @@ items:
       href: ../../api/security-sensor-getdeploymentpackageuri.md
     - name: Regenerate deployment access key
       href: ../../api/security-sensor-regeneratedeploymentaccesskey.md
+  - name: Identity accounts
+    items:
+    - name: Identity accounts
+      href: ../../resources/security-identityaccounts.md
+    - name: List
+      href: ../../api/security-identitycontainer-list-identityaccounts.md
+    - name: Get
+      href: ../../api/security-identityaccounts-get.md
+    - name: invokeAction
+      href: ../../api/security-identityaccounts-invokeaction.md
+  - name: User
+    href: ../../resources/security-user.md
+  - name: Sensor candidate
+    items:
+    - name: Sensor candidate
+      href: ../../resources/security-sensorcandidate.md
+    - name: List
+      href: ../../api/security-identitycontainer-list-sensorcandidates.md
+    - name: Activate
+      href: ../../api/security-sensorcandidate-activate.md
+  - name: Sensor candidate activation configuration
+    items:
+    - name: Sensor candidate activation configuration
+      href: ../../resources/security-sensorcandidateactivationconfiguration.md
+    - name: Get
+      href: ../../api/security-sensorcandidateactivationconfiguration-get.md
+    - name: Update
+      href: ../../api/security-identitycontainer-post-sensorcandidateactivationconfiguration.md
   - name: Complex types
     items:
+    - name: Account
+      href: ../../resources/security-account.md
     - name: Deployment access key type
       href: ../../resources/security-deploymentaccesskeytype.md
     - name: Identity container
       href: ../../resources/security-identitycontainer.md
+    - name: Invoke action result
+      href: ../../resources/security-invokeactionresult.md
     - name: Network adapter
       href: ../../resources/security-networkadapter.md
     - name: Sensor deployment package
@@ -592,6 +850,10 @@ items:
       href: ../../api/security-informationprotection-list-sensitivitylabels.md
     - name: Get
       href: ../../api/security-sensitivitylabel-get.md
+    - name: Compute inheritance
+      href: ../../api/sensitivitylabel-computeinheritance.md
+    - name: Compute rights and inheritance
+      href: ../../api/sensitivitylabel-computerightsandinheritance.md
     - name: Evaluate application
       href: ../../api/security-sensitivitylabel-evaluateapplication.md
     - name: Evaluate classification result
@@ -600,6 +862,12 @@ items:
       href: ../../api/security-sensitivitylabel-evaluateremoval.md
     - name: Extract content label
       href: ../../api/security-sensitivitylabel-extractcontentlabel.md
+    - name: List data security and compliance sensitivity labels
+      href: ../../api/tenantdatasecurityandgovernance-list-sensitivitylabels.md
+    - name: Get a data security and compliance sensitivity label
+      href: ../../api/sensitivitylabel-get.md
+    - name: Get usage rights included
+      href: ../../api/usagerightsincluded-get.md
   - name: Information protection policy setting
     items:
     - name: Information protection policy setting
@@ -784,6 +1052,52 @@ items:
     href: ../../api/securityactions-list.md
   - name: Cancel security action
     href: ../../api/securityaction-cancelsecurityaction.md
+- name: Security Copilot
+  items:
+  - name: Workspace
+    items:
+    - name: Workspace
+      href: ../../resources/security-securitycopilot-workspace.md
+    - name: List
+      href: ../../api/securitycopilot-list-workspaces.md
+  - name: Session
+    items:
+    - name: Session
+      href: ../../resources/security-securitycopilot-session.md
+    - name: List
+      href: ../../api/security-securitycopilot-workspace-list-sessions.md
+    - name: Create
+      href: ../../api/security-securitycopilot-workspace-post-sessions.md
+    - name: Get
+      href: ../../api/security-securitycopilot-session-get.md
+    - name: Update
+      href: ../../api/security-securitycopilot-session-update.md
+  - name: Prompt
+    items:
+    - name: Prompt
+      href: ../../resources/security-securitycopilot-prompt.md
+    - name: List
+      href: ../../api/security-securitycopilot-session-list-prompts.md
+    - name: Create
+      href: ../../api/security-securitycopilot-session-post-prompts.md
+    - name: Get
+      href: ../../api/security-securitycopilot-prompt-get.md
+  - name: Evaluation
+    items:
+    - name: Evaluation
+      href: ../../resources/security-securitycopilot-evaluation.md
+    - name: List
+      href: ../../api/security-securitycopilot-prompt-list-evaluations.md
+    - name: Create
+      href: ../../api/security-securitycopilot-prompt-post-evaluations.md
+    - name: Get
+      href: ../../api/security-securitycopilot-evaluation-get.md
+  - name: Plugin
+    items:
+    - name: Plugin
+      href: ../../resources/security-securitycopilot-plugin.md
+    - name: List
+      href: ../../api/security-securitycopilot-workspace-list-plugins.md
 - name: Threat intelligence (preview)
   items:
   - name: Overview

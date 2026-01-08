@@ -22,6 +22,8 @@ The **alertEvidence** base type and its derived evidence types provide a means t
 - [Mailbox evidence](security-mailboxevidence.md) for the hacked user account with a role of `compromised`.
 
 This resource is the base type for the following evidence types: 
+* [activeDirectoryDomainEvidence](security-activedirectorydomainevidence.md) 
+* [aiAgentEvidence](security-aiagentevidence.md)
 * [amazonResourceEvidence](security-amazonresourceevidence.md)
 * [analyzedMessageEvidence](security-analyzedmessageevidence.md)
 * [azureResourceEvidence](security-azureresourceevidence.md)
@@ -45,14 +47,16 @@ This resource is the base type for the following evidence types:
 * [kubernetesSecretEvidence](security-kubernetessecretevidence.md)
 * [kubernetesServiceEvidence](security-kubernetesserviceevidence.md)
 * [kubernetesServiceAccountEvidence](security-kubernetesserviceaccountevidence.md)
-* [mailClusterEvidence](security-mailclusterevidence.md)
+* [mailboxConfigurationEvidence](security-mailboxconfigurationevidence.md)
 * [mailboxEvidence](security-mailboxevidence.md)
+* [mailClusterEvidence](security-mailclusterevidence.md)
 * [nicEvidence](security-nicevidence.md)
 * [oauthApplicationEvidence](security-oauthapplicationevidence.md)
 * [processEvidence](security-processevidence.md)
 * [registryKeyEvidence](security-registrykeyevidence.md)
 * [registryValueEvidence](security-registryvalueevidence.md)
 * [securityGroupEvidence](security-securitygroupevidence.md)
+* [teamsMessageEvidence](security-teamsmessageevidence.md)
 * [urlEvidence](security-urlevidence.md)
 * [userEvidence](security-userevidence.md)
 
@@ -83,7 +87,7 @@ This resource is the base type for the following evidence types:
 
 | Member                     | Description                                    |
 | :--------------------------| :--------------------------------------------- |
-| none                       | No threats were found.                         |
+| none                       | The remediation status is unknown.             |
 | remediated                 | Remediation action completed successfully. |
 | prevented                  | The threat was prevented from executing.       |
 | blocked                    | The threat was blocked while executing.        |

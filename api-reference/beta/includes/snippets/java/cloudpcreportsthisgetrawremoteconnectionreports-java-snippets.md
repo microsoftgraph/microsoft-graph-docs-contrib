@@ -12,7 +12,7 @@ com.microsoft.graph.beta.devicemanagement.virtualendpoint.reports.getrawremoteco
 getRawRemoteConnectionReportsPostRequestBody.setFilter("ActivityId eq 'cb6ad4c4-8a17-4245-a644-e4436b1ee204'");
 LinkedList<String> select = new LinkedList<String>();
 select.add("RoundTripTimeInMs");
-select.add("AvailableBandwidthInMBps");
+select.add("AvailableBandwidthInMbps");
 select.add("SignInDateTime");
 getRawRemoteConnectionReportsPostRequestBody.setSelect(select);
 getRawRemoteConnectionReportsPostRequestBody.setSkip(0);

@@ -12,7 +12,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Contains information related to the subject of a content search. This resource is an open type and supports adding addition properties; for example, customer ID.
+Contains information related to the subject of a content search. This resource is an open type that allows additional properties beyond those documented here.
 
 ## Properties
 |Property|Type|Description|

@@ -1,18 +1,19 @@
 ---
-title: "Build your first custom Microsoft Graph connector"
+title: "Build your first custom Microsoft 365 Copilot connector"
 author: rchanda1392
 manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.subservice: search
-description: "Learn how to use the Microsoft Graph connectors SDK to build your first custom connector."
+description: "Learn how to use the Copilot connectors SDK to build your first custom connector."
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
-# Build your first custom Microsoft Graph connector
+# Build your first custom Copilot connector
 
-Microsoft Graph connectors enable you to add your own data into Microsoft Graph and have it power various Microsoft 365 experiences.
-The following set of articles show you how to use the [Microsoft Graph connectors SDK](/graph/custom-connector-sdk-overview) to create a custom connector in C# and use it to power Microsoft Search. This custom connector uses a sample data appliance parts inventory in a CSV file for the Contoso Appliance Repair organization.
+Microsoft 365 Copilot connectors (formerly Microsoft Graph connectors) enable you to add your own data into Microsoft Graph and have it power various Microsoft 365 experiences.
+The following set of articles show you how to use the [Copilot connectors SDK](/graph/custom-connector-sdk-overview) to create a custom connector in C# and use it to power Microsoft Search. This custom connector uses a sample data appliance parts inventory in a CSV file for the Contoso Appliance Repair organization.
 
 >[!Note]
 >If you want to use a language other than C# to build your connector, see [Build a connector using other languages](/graph/custom-connector-sdk-other-languages).

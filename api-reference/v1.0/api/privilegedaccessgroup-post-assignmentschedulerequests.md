@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /identityGovernance/privilegedAccess/group/assignmentScheduleRequests
 ```
 
@@ -49,10 +49,10 @@ You can specify the following properties when creating a **privilegedAccessGroup
 |accessId|privilegedAccessGroupRelationships|The identifier of the membership or ownership assignment relationship to the group. The possible values are: `owner`, `member`. Required.|
 |action|String|Represents the type of the operation on the group membership or ownership assignment request. The possible values are: `adminAssign`, `adminUpdate`, `adminRemove`, `selfActivate`, `selfDeactivate`, `adminExtend`, `adminRenew`. <br/><ul><li>`adminAssign`: For administrators to assign group membership or ownership to principals.</li><li>`adminRemove`: For administrators to remove principals from group membership or ownership.</li><li> `adminUpdate`: For administrators to change existing group membership or ownership assignments.</li><li>`adminExtend`: For administrators to extend expiring assignments.</li><li>`adminRenew`: For administrators to renew expired assignments.</li><li>`selfActivate`: For principals to activate their assignments.</li><li>`selfDeactivate`: For principals to deactivate their active assignments.</li></ul> Required.|
 |customData|String|Free text field to define any custom data for the request. Optional.|
-|groupId|String|The identifier of the group representing the scope of the membership or ownership assignment through PIM for groups. Required.|
+|groupId|String|The identifier of the group representing the scope of the membership or ownership assignment through PIM for Groups. Required.|
 |justification|String|A message provided by users and administrators when they create the **privilegedAccessGroupAssignmentScheduleRequest** object. Optional.|
-|principalId|String|The identifier of the principal whose membership or ownership assignment is granted through PIM for groups. Required.|
-|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|The period of the group membership or ownership assignment for PIM for groups. Recurring schedules are currently unsupported. Required.|
+|principalId|String|The identifier of the principal whose membership or ownership assignment is granted through PIM for Groups. Required.|
+|scheduleInfo|[requestSchedule](../resources/requestschedule.md)|The period of the group membership or ownership assignment for PIM for Groups. Recurring schedules are currently unsupported. Required.|
 |ticketInfo|[ticketInfo](../resources/ticketinfo.md)|Ticket details linked to the group membership or ownership assignment request including details of the ticket number and ticket system. Optional.|
 
 ## Response
@@ -72,7 +72,7 @@ The following request creates an assignment schedule request to assign a princip
   "name": "create_privilegedaccessgroupassignmentschedulerequest_from_v1_e1"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/identityGovernance/privilegedAccess/group/assignmentScheduleRequests
 Content-Type: application/json
 
@@ -94,10 +94,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-privilegedaccessgroupassignmentschedulerequest-from-v1-e1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-privilegedaccessgroupassignmentschedulerequest-from-v1-e1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -135,7 +131,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.privilegedAccessGroupAssignmentScheduleRequest"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -184,7 +180,7 @@ In the following request, a user identified by **principalId** `3cce9d87-3986-4f
   "name": "create_privilegedaccessgroupassignmentschedulerequest_from_v1_e2"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/identityGovernance/privilegedAccess/group/assignmentScheduleRequests
 Content-Type: application/json
 
@@ -206,10 +202,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-privilegedaccessgroupassignmentschedulerequest-from-v1-e2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-privilegedaccessgroupassignmentschedulerequest-from-v1-e2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -247,7 +239,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.privilegedAccessGroupAssignmentScheduleRequest"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

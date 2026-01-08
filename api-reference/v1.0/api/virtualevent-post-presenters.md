@@ -24,11 +24,7 @@ Currently, the following types of virtual events are supported:
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "virtualevent-post-presenters-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "virtualevent_post_presenters" } -->
 [!INCLUDE [permissions-table](../includes/permissions/virtualevent-post-presenters-permissions.md)]
 
 ## HTTP request
@@ -38,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 POST /solutions/virtualEvents/townhalls/{townhallId}/presenters
 POST /solutions/virtualEvents/webinars/{webinarId}/presenters
 ```
@@ -88,7 +84,7 @@ The following example shows a request.
   "sampleKeys": ["6b48b5dd-e3a0-428c-b7ad-90896b87a047@09a21d49-f0f3-4b3f-96b6-f381e9430742"]
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/6b48b5dd-e3a0-428c-b7ad-90896b87a047@09a21d49-f0f3-4b3f-96b6-f381e9430742/presenters
 Content-Type: application/json
 
@@ -102,10 +98,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-virtualeventpresenter-internal--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-virtualeventpresenter-internal--cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -145,7 +137,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.virtualEventPresenter"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -177,7 +169,7 @@ The following example shows a request.
   "sampleKeys": ["6b48b5dd-e3a0-428c-b7ad-90896b87a047@09a21d49-f0f3-4b3f-96b6-f381e9430742"]
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/6b48b5dd-e3a0-428c-b7ad-90896b87a047@09a21d49-f0f3-4b3f-96b6-f381e9430742/presenters
 Content-Type: application/json
 
@@ -192,10 +184,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-virtualeventpresenter-external-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-virtualeventpresenter-external-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -235,7 +223,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.virtualEventPresenter"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -267,7 +255,7 @@ The following example shows a request.
   "sampleKeys": ["502dadea-b5d8-44aa-a851-a0ac496a36bf@09a21d49-f0f3-4b3f-96b6-f381e9430742"]
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/solutions/virtualEvents/townhalls/502dadea-b5d8-44aa-a851-a0ac496a36bf@09a21d49-f0f3-4b3f-96b6-f381e9430742/presenters
 Content-Type: application/json
 
@@ -281,10 +269,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-virtualeventpresenter-internal-3-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-virtualeventpresenter-internal-3-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -324,7 +308,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.virtualEventPresenter"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -356,7 +340,7 @@ The following example shows a request.
   "sampleKeys": ["502dadea-b5d8-44aa-a851-a0ac496a36bf@09a21d49-f0f3-4b3f-96b6-f381e9430742"]
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/solutions/virtualEvents/townhalls/502dadea-b5d8-44aa-a851-a0ac496a36bf@09a21d49-f0f3-4b3f-96b6-f381e9430742/presenters
 Content-Type: application/json
 
@@ -371,10 +355,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-virtualeventpresenter-external-4-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-virtualeventpresenter-external-4-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -414,7 +394,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.virtualEventPresenter"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

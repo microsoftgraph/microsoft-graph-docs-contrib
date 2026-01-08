@@ -12,6 +12,8 @@ ms.date: 04/03/2024
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-deprecation-disclaimer](../../includes/beta-deprecation-disclaimer.md)]
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents details about a Microsoft Teams-enabled device that is provisioned for the tenant.

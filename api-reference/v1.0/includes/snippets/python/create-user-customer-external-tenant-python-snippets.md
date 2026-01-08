@@ -22,7 +22,7 @@ request_body = User(
 	mail = "adelev@adatum.com",
 	password_profile = PasswordProfile(
 		password = "passwordValue",
-		force_change_password_next_sign_in = False,
+		force_change_password_next_sign_in = True,
 	),
 	password_policies = "DisablePasswordExpiration",
 )

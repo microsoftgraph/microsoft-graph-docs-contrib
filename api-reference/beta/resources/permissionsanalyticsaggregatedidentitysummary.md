@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Represents the total number of identities of a specific kind, for example, roles, and the number of a specific finding for that identity, for example, inactive roles, in an authorization system.
 
 ## Properties
@@ -40,4 +42,5 @@ The following JSON representation shows the resource type.
   "findingsCount": "Integer"
 }
 ```
+
 

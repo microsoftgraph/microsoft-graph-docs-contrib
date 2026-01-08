@@ -11,12 +11,7 @@ ms.date: 06/10/2024
 # Create ediscoveryCase
 Namespace: microsoft.graph.security
 
-
-
 Create a new [ediscoveryCase](../resources/security-ediscoverycase.md) object.
-
->[!NOTE]
-> This API only creates an eDiscovery (Premium) case using the new case format. To learn more about the new case format in eDiscovery, see [Use the new case format in eDiscovery (Premium)](/microsoft-365/compliance/advanced-ediscovery-new-case-format).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -32,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/cases/ediscoveryCases
 ```
 
@@ -68,7 +63,7 @@ The following example shows a request.
   "name": "create_ediscoverycase_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases
 Content-Type: application/json
 
@@ -81,10 +76,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-ediscoverycase-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-ediscoverycase-from--cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -122,7 +113,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.ediscoveryCase"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

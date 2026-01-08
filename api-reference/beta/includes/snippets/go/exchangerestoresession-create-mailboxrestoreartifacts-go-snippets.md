@@ -20,19 +20,15 @@ requestBody := graphmodels.NewExchangeRestoreSession()
 
 mailboxRestoreArtifact := graphmodels.NewMailboxRestoreArtifact()
 restorePoint := graphmodels.NewRestorePoint()
-additionalData := map[string]interface{}{
-	"@odata.id" : "1f1fccc3-a642-4f61-bf49-f37b9a888279", 
-}
-restorePoint.SetAdditionalData(additionalData)
+id := "1f1fccc3-a642-4f61-bf49-f37b9a888279"
+restorePoint.SetId(&id) 
 mailboxRestoreArtifact.SetRestorePoint(restorePoint)
 destinationType := graphmodels.INPLACE_DESTINATIONTYPE 
 mailboxRestoreArtifact.SetDestinationType(&destinationType) 
 mailboxRestoreArtifact1 := graphmodels.NewMailboxRestoreArtifact()
 restorePoint := graphmodels.NewRestorePoint()
-additionalData := map[string]interface{}{
-	"@odata.id" : "1f1fccc3-a642-4f61-bf49-f37b9a888280", 
-}
-restorePoint.SetAdditionalData(additionalData)
+id := "1f1fccc3-a642-4f61-bf49-f37b9a888280"
+restorePoint.SetId(&id) 
 mailboxRestoreArtifact1.SetRestorePoint(restorePoint)
 destinationType := graphmodels.INPLACE_DESTINATIONTYPE 
 mailboxRestoreArtifact1.SetDestinationType(&destinationType) 

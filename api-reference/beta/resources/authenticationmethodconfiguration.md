@@ -27,13 +27,14 @@ The following authentication methods are derived from the **authenticationMethod
 + [temporaryAccessPassAuthenticationMethodConfiguration](temporaryaccesspassauthenticationmethodconfiguration.md)
 + [voiceAuthenticationMethodConfiguration](voiceauthenticationmethodconfiguration.md)
 + [x509CertificateAuthenticationMethodConfiguration](x509certificateauthenticationmethodconfiguration.md)
++ [qrCodePinAuthenticationMethodConfiguration](qrcodepinauthenticationmethodconfiguration.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from a policy.|
 |id|String|The policy name.|
-|state|authenticationMethodState|The state of the policy. Possible values are: `enabled`, `disabled`.|
+|state|authenticationMethodState|The state of the policy. The possible values are: `enabled`, `disabled`.|
 
 ## Relationships
 None.

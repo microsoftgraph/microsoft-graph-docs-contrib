@@ -39,16 +39,18 @@ Assign and activate a hardware OATH authentication method for yourself by using 
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /me/authentication/hardwareOathMethods/assignAndActivateBySerialNumber
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 Assign and activate a hardware OATH authentication method for another user by using the device serial number.
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /users/{usersId}/authentication/hardwareOathMethods/assignAndActivateBySerialNumber
 ```
 
@@ -88,7 +90,7 @@ The following example shows a request.
   "name": "hardwareoathauthenticationmethodthis.assignandactivatebyserialnumber"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods/assignAndActivateBySerialNumber
 Content-Type: application/json
 
@@ -101,10 +103,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/hardwareoathauthenticationmethodthisassignandactivatebyserialnumber-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/hardwareoathauthenticationmethodthisassignandactivatebyserialnumber-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -123,6 +121,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/hardwareoathauthenticationmethodthisassignandactivatebyserialnumber-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/hardwareoathauthenticationmethodthisassignandactivatebyserialnumber-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/hardwareoathauthenticationmethodthisassignandactivatebyserialnumber-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -137,7 +139,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

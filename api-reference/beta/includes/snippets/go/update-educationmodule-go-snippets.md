@@ -18,6 +18,8 @@ import (
 requestBody := graphmodels.NewEducationModule()
 displayName := "New_Module5 updated"
 requestBody.SetDisplayName(&displayName) 
+languageTag := "en-GB"
+requestBody.SetLanguageTag(&languageTag) 
 description := "updated for description"
 requestBody.SetDescription(&description) 
 

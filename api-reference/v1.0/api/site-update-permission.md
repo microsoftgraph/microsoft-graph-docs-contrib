@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /sites/{sitesId}/permissions/{permissionId}
 ```
 
@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a [permission](.
   "name": "update_permission_from_"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/sites/{sitesId}/permissions/{permissionId}
 Content-Type: application/json
 
@@ -67,10 +67,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-permission-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-permission-from--cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -107,7 +103,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.permission"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

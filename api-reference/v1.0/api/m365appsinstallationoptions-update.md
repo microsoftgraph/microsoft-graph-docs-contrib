@@ -31,7 +31,7 @@ When calling on behalf of a user, the user needs to belong to the Office apps ad
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /admin/microsoft365Apps/installationOptions
 ```
 
@@ -69,7 +69,7 @@ The following examples show a requet to set the Microsoft 365 update channel.
   "name": "update_m365AppsInstallationOptions"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/admin/microsoft365Apps/installationOptions
 Content-Type: application/json
 
@@ -80,10 +80,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-m365appsinstallationoptions-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-m365appsinstallationoptions-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -117,7 +113,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 
 ```
@@ -128,7 +124,7 @@ HTTP/1.1 204 No Content
 
 The following example shows a request to set the Microsoft 365 apps installation options for a platform.
 
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/admin/microsoft365Apps/installationOptions
 Content-Type: application/json
 
@@ -149,7 +145,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 
 ```
@@ -160,7 +156,7 @@ HTTP/1.1 204 No Content
 
 The following example shows a request to set Microsoft 365 apps update channel and installation options simutaneously.
 
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/admin/microsoft365Apps/installationOptions
 Content-Type: application/json
 
@@ -188,7 +184,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 
 ```

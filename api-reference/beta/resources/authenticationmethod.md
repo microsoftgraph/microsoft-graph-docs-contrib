@@ -22,16 +22,19 @@ Inherits from [entity](../resources/entity.md).
 This resource type is an abstract type that's inherited by the following derived types:
 
 + [emailAuthenticationMethod](emailauthenticationmethod.md)
++ [externalAuthenticationMethod](externalauthenticationmethod.md)
 + [fido2AuthenticationMethod](fido2authenticationmethod.md)
 + [hardwareOathAuthenticationMethod](hardwareOathAuthenticationMethod.md)
 + [microsoftAuthenticatorAuthenticationMethod](microsoftauthenticatorauthenticationmethod.md)
 + [passwordlessMicrosoftAuthenticatorAuthenticationMethod](passwordlessmicrosoftauthenticatorauthenticationmethod.md) (deprecated)    
 + [passwordAuthenticationMethod](passwordauthenticationmethod.md)
 + [phoneAuthenticationMethod](phoneauthenticationmethod.md)
++ [platformCredentialAuthenticationMethod](platformcredentialauthenticationmethod.md)
 + [softwareOathAuthenticationMethod](softwareoathauthenticationmethod.md)
 + [temporaryAccessPassAuthenticationMethod](temporaryaccesspassauthenticationmethod.md)
 + [windowsHelloForBusinessAuthenticationMethod](windowshelloforbusinessauthenticationmethod.md)
 + [platformCredentialAuthenticationMethod](platformcredentialauthenticationmethod.md)
++ [qrCodePinAuthenticationmethod](qrcodepinauthenticationmethod.md)
 
 > [!IMPORTANT]
 > Listing users' authentication methods only returns methods supported on this API version and registered to the user. See [Microsoft Entra authentication methods API overview](authenticationmethods-overview.md) for a list of currently supported methods.
@@ -48,6 +51,7 @@ This resource type is an abstract type that's inherited by the following derived
 |:-------------|:------------|:------------|
 |id|String| The identifier of this instance of an authentication method registered to this user. Read-only. Inherited from [entity](../resources/entity.md). |
 |createdDateTime|DateTimeOffset| The date and time the authentication method was registered to the user. Read-only. Optional. This optional value is `null` if the authentication method doesn't populate it. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|lastUsedDateTime|DateTimeOffset|The date and time the authentication method was last used by the user. Read-only. Optional. This optional value is `null` if the authentication method doesn't populate it. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 
 ## Relationships
 
@@ -70,7 +74,8 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.authenticationMethod",
   "id": "String (identifier)",
-  "createdDateTime": "String (timestamp)"
+  "createdDateTime": "String (timestamp)",
+  "lastUsedDateTime": "String (timestamp)"
 }
 ```
 

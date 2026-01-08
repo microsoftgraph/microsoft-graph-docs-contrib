@@ -1,12 +1,11 @@
----
+﻿---
 title: "namedLocation resource type"
 description: "This is the base class that represents a Microsoft Entra ID named location. Named locations are custom rules that define network locations which can then be used in a Conditional Access policy."
+author: "ashyasingh"
+ms.date: 08/11/2025
 ms.localizationpriority: medium
-author: "lisaychuang"
-ms.reviewer: conditionalaccesspm
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-ms.date: 07/22/2024
 ---
 
 # namedLocation resource type
@@ -17,61 +16,51 @@ Namespace: microsoft.graph
 
 This is the base class that represents a Microsoft Entra ID named location. Named locations are custom rules that define network locations which can then be used in a Conditional Access (CA) policy.
 
-## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
+Inherits from [policyDeletableItem](../resources/policydeletableitem.md).
+
+
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
 | [List](../api/conditionalaccessroot-list-namedlocations.md) | [namedLocation](namedLocation.md) collection | Get all the **namedLocation** objects in the organization. |
 | [Get](../api/namedlocation-get.md) | [namedLocation](namedlocation.md) | Read the properties and relationships of a **namedLocation** object. |
 | [Delete](../api/namedlocation-delete.md) | None | Delete a **namedLocation** object. |
+|[List deleted named locations](../api/policydeletableitem-list.md) | [namedLocation](../resources/namedlocation.md) collection | List all deleted **namedLocation** objects. |
+|[Get deleted named location](../api/policydeletableitem-get.md) | [namedLocation](../resources/namedlocation.md)| Get a single deleted **namedLocation** object. |
+|[Restore deleted named location](../api/namedlocation-restore.md)|[namedLocation](../resources/namedlocation.md)|Restore a **namedLocation**  object. |
+|[Permanently delete a soft deleted named location](../api/policydeletableitem-delete.md) | None | Permanently delete a deleted **namedLocation** object. |
 
 ## Properties
-
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|createdDateTime|DateTimeOffset|The Timestamp type represents creation date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
+|Property|Type|Description|
+|:---|:---|:---|
 |displayName|String|Human-readable name of the location.|
 |id|String|Identifier of a namedLocation object. Read-only.|
 |modifiedDateTime|DateTimeOffset|The Timestamp type represents last modified date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
+|createdDateTime|DateTimeOffset|The Timestamp type represents creation date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
+|deletedDateTime|DateTimeOffset|Shows the last date and time the named location was deleted.Inherited from [policyDeletableItem](../resources/policydeletableitem.md).|
 
 ## Relationships
-
 None.
 
 ## JSON representation
-
 The following JSON representation shows the resource type.
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.namedLocation",
-  "keyProperty": "id"
-}-->
-
-```json
+  "baseType": "microsoft.graph.policyDeletableItem",
+  "openType": false
+}
+-->
+``` json
 {
-  "createdDateTime": "String (timestamp)",
-  "displayName": "String",
+  "@odata.type": "#microsoft.graph.namedLocation",
+  "deletedDateTime": "String (timestamp)",
   "id": "String (identifier)",
+  "displayName": "String",
+  "createdDateTime": "String (timestamp)",
   "modifiedDateTime": "String (timestamp)"
 }
 ```
 
-## Related content
-
-+ [What is Conditional Access?](/azure/active-directory/conditional-access/overview)
-+ [Using the location condition in a Conditional Access policy](/azure/active-directory/conditional-access/location-condition)
-
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "namedLocation resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->

@@ -18,6 +18,8 @@ import (
 requestBody := graphmodels.NewEducationModule()
 displayName := "Module 2"
 requestBody.SetDisplayName(&displayName) 
+languageTag := "en-GB"
+requestBody.SetLanguageTag(&languageTag) 
 description := "Description for Module 2"
 requestBody.SetDescription(&description) 
 

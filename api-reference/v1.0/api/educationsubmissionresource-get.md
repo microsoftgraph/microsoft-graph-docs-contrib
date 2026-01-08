@@ -64,10 +64,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationwordresource-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-educationwordresource-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationwordresource-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -154,10 +150,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationfileresource-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-educationfileresource-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -248,10 +240,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationexcelresource-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-educationexcelresource-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationexcelresource-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -338,10 +326,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationpowerpointresource-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-educationpowerpointresource-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -432,10 +416,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationlinkresource-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-educationlinkresource-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationlinkresource-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -524,10 +504,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationmediaresource-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-educationmediaresource-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationmediaresource-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -595,6 +571,160 @@ Content-type: application/json
             }
         }
     }
+}
+```
+
+### Example 7: Expand dependent resources
+
+The following example shows how to get the dependent [educationSubmissionResource](../resources/educationsubmissionresource.md) objects for a given submission resource.
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "expand_dependentResources_submission",
+  "sampleKeys": ["de45722a-c202-43a9-9dd5-d82c45bcef91","4d1ecd2d-c913-41ba-be3c-d896b65d09f0","fd921642-a333-4c4d-9335-2200f36400a9"]
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/education/classes/de45722a-c202-43a9-9dd5-d82c45bcef91/assignments/4d1ecd2d-c913-41ba-be3c-d896b65d09f0/submissions/fd921642-a333-4c4d-9335-2200f36400a9/resources?$expand=dependentResources
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/expand-dependentresources-submission-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/expand-dependentresources-submission-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/expand-dependentresources-submission-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/expand-dependentresources-submission-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/expand-dependentresources-submission-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/expand-dependentresources-submission-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/expand-dependentresources-submission-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationSubmissionResource"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('de45722a-c202-43a9-9dd5-d82c45bcef91')/assignments('4d1ecd2d-c913-41ba-be3c-d896b65d09f0')/submissions('fd921642-a333-4c4d-9335-2200f36400a9')/resources(dependentResources())",
+  "value": [
+    {
+      "assignmentResourceUrl": "https://assignments.edu.cloud.microsoft/api/v1.0/edu/classes/de45722a-c202-43a9-9dd5-d82c45bcef91/assignments/4d1ecd2d-c913-41ba-be3c-d896b65d09f0/resources/ae7beedb-488d-4534-9307-3fbc2fac29b4",
+      "id": "d927f453-3297-487a-8929-fa1c68f18bf3",
+      "resource": {
+        "@odata.type": "#microsoft.graph.educationExternalResource",
+        "displayName": "A Baby Polar Bear Grows Up",
+        "createdDateTime": "2025-09-23T23:29:29.9648545Z",
+        "lastModifiedDateTime": "2025-09-23T23:29:29.9648776Z",
+        "webUrl": null,
+        "createdBy": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "ccb65bcd-04ba-421a-8791-a299a70904b6",
+            "displayName": null
+          }
+        },
+        "lastModifiedBy": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "ccb65bcd-04ba-421a-8791-a299a70904b6",
+            "displayName": null
+          }
+        }
+      },
+      "dependentResources@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('de45722a-c202-43a9-9dd5-d82c45bcef91')/assignments('4d1ecd2d-c913-41ba-be3c-d896b65d09f0')/submissions('fd921642-a333-4c4d-9335-2200f36400a9')/resources('d927f453-3297-487a-8929-fa1c68f18bf3')/dependentResources",
+      "dependentResources": [
+        {
+          "assignmentResourceUrl": "https://assignments.edu.cloud.microsoft/api/v1.0/edu/classes/de45722a-c202-43a9-9dd5-d82c45bcef91/assignments/4d1ecd2d-c913-41ba-be3c-d896b65d09f0/resources/090d693a-60a1-454e-8bfb-464cea5e796d",
+          "id": "d92ad210-15ce-40ba-a216-11c7baffada8",
+          "resource": {
+            "@odata.type": "#microsoft.graph.educationExternalResource",
+            "displayName": "A Baby Polar Bear Grows Up (US History)",
+            "createdDateTime": "2025-09-23T23:29:29.7443913Z",
+            "lastModifiedDateTime": "2025-09-23T23:29:29.9648707Z",
+            "webUrl": "https://forms.office.com/Pages/AssignmentsDesignPage.aspx#TopView=Preview&FormId=kowztj5TbU-jJ5lCY3EjmSpyRd4CwqlDndXYLEW875FUQ1lPUUE2NEk0TEMzVlVNRjhGQlgwRTRPSCQlQCN0PWcu",
+            "createdBy": {
+              "application": null,
+              "device": null,
+              "user": {
+                "id": "ccb65bcd-04ba-421a-8791-a299a70904b6",
+                "displayName": null
+              }
+            },
+            "lastModifiedBy": {
+              "application": null,
+              "device": null,
+              "user": {
+                "id": "ccb65bcd-04ba-421a-8791-a299a70904b6",
+                "displayName": null
+              }
+            }
+          }
+        },
+        {
+          "assignmentResourceUrl": null,
+          "id": "7b7153b4-44d8-40f9-b3de-ad2c3e04902d",
+          "resource": {
+            "@odata.type": "#microsoft.graph.educationMediaResource",
+            "displayName": "v_618c7257-c489-4dd3-9f97-58984184a733.webm",
+            "createdDateTime": "2025-09-23T23:37:31.5828888Z",
+            "lastModifiedDateTime": "2025-09-23T23:37:31.5828966Z",
+            "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!OttVdlohTEOX2TQZemXSranQ4OQ3V_BOoMB0C081JqWpyrOjFml8Qpy1XCbr5JBo/items/01QUVMP7NZMWMPDRSXF5C2DT4SLFS2RCUZ",
+            "createdBy": {
+              "application": null,
+              "device": null,
+              "user": {
+                "id": "c0eae257-f843-4af3-a307-c698f6ac8f23",
+                "displayName": null
+              }
+            },
+            "lastModifiedBy": {
+              "application": null,
+              "device": null,
+              "user": {
+                "id": "c0eae257-f843-4af3-a307-c698f6ac8f23",
+                "displayName": null
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
 }
 ```
 

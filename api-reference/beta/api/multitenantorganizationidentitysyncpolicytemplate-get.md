@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /policies/crossTenantAccessPolicy/templates/multiTenantOrganizationIdentitySynchronization
 ```
 
@@ -62,16 +62,12 @@ The following example gets the user synchronization settings of the template.
   "name": "get_multitenantorganizationidentitysyncpolicytemplate"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/templates/multiTenantOrganizationIdentitySynchronization
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-multitenantorganizationidentitysyncpolicytemplate-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-multitenantorganizationidentitysyncpolicytemplate-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -110,7 +106,7 @@ The following example response shows the unconfigured (or reset) state of the cr
   "@odata.type": "microsoft.graph.multiTenantOrganizationIdentitySyncPolicyTemplate"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -126,7 +122,7 @@ Content-Type: application/json
 
 The following example response shows a configured state of the cross-tenant access policy template for user synchronization settings, after inbound user synchronization has been configured.
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

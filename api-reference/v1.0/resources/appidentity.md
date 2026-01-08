@@ -2,7 +2,7 @@
 title: "appIdentity resource type"
 description: "Indicates the identity of the application that performed the action or was changed. This resource is called by the directoryAudit API"
 ms.localizationpriority: medium
-author: "dhanyahk"
+author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ms.date: 08/08/2024

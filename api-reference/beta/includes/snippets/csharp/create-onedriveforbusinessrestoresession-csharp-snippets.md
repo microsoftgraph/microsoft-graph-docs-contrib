@@ -17,12 +17,7 @@ var requestBody = new OneDriveForBusinessRestoreSession
 		{
 			RestorePoint = new RestorePoint
 			{
-				AdditionalData = new Dictionary<string, object>
-				{
-					{
-						"@odata.id" , "1f1fccc3-a642-4f61-bf49-f37b9a888279"
-					},
-				},
+				Id = "1f1fccc3-a642-4f61-bf49-f37b9a888279",
 			},
 			DestinationType = DestinationType.New,
 		},
@@ -30,12 +25,7 @@ var requestBody = new OneDriveForBusinessRestoreSession
 		{
 			RestorePoint = new RestorePoint
 			{
-				AdditionalData = new Dictionary<string, object>
-				{
-					{
-						"@odata.id" , "1f1fccc3-a642-4f61-bf49-f37b9a888280"
-					},
-				},
+				Id = "1f1fccc3-a642-4f61-bf49-f37b9a888280",
 			},
 			DestinationType = DestinationType.New,
 		},

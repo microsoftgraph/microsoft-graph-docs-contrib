@@ -10,7 +10,7 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 VirtualEventRegistration virtualEventRegistration = new VirtualEventRegistration();
 VirtualEventExternalRegistrationInformation externalRegistrationInformation = new VirtualEventExternalRegistrationInformation();
-externalRegistrationInformation.setReferrer("Facebook");
+externalRegistrationInformation.setReferrer("Fabrikam");
 externalRegistrationInformation.setRegistrationId("myExternalRegistrationId");
 virtualEventRegistration.setExternalRegistrationInformation(externalRegistrationInformation);
 virtualEventRegistration.setPreferredTimezone("Pacific Standard Time");

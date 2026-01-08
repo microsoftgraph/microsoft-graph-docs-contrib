@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /users/{usersId}/messages/{messageId}/permanentDelete
 POST /users/{usersId}/mailFolders/{mailFolderId}/messages/{messageId}/permanentDelete
 ```
@@ -64,16 +64,12 @@ The following example shows a request.
   "name": "messagethis.permanentdelete"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/users/{usersId}/messages/{messageId}/permanentDelete
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/messagethispermanentdelete-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/messagethispermanentdelete-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -111,7 +107,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

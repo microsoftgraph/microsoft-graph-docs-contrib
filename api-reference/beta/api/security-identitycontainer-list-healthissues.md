@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/identities/healthIssues
 ```
 
@@ -46,7 +46,7 @@ The following examples show how to use optional query parameters.
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/identities/healthIssues?$filter=Status eq 'open'
 ```
 
@@ -55,7 +55,7 @@ GET /security/identities/healthIssues?$filter=Status eq 'open'
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/identities/healthIssues?$filter=Status eq 'open'&$top=5
 ```
 
@@ -64,7 +64,7 @@ GET /security/identities/healthIssues?$filter=Status eq 'open'&$top=5
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/identities/healthIssues?$filter=Status eq 'open' and healthIssueType eq 'global'
 GET /security/identities/healthIssues?$filter=Status eq 'open' and healthIssueType eq 'sensor'
 ```
@@ -74,7 +74,7 @@ GET /security/identities/healthIssues?$filter=Status eq 'open' and healthIssueTy
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/identities/healthIssues?$filter=Status eq 'open' and severity eq 'medium'
 GET /security/identities/healthIssues?$filter=Status eq 'open' and severity eq 'low'
 ```
@@ -87,7 +87,7 @@ The following example shows how to get global health alerts where the domain nam
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/identities/healthissues?$filter=Status eq 'open' and healthIssueType eq 'global' and domainNames/any(s:endswith(s,'contoso.com'))
 GET /security/identities/healthissues?$filter=Status eq 'open' and healthIssueType eq 'global' and sensorDNSNames/any(s:endswith(s,'contoso.com'))
 ```
@@ -117,16 +117,12 @@ The following example shows a request.
   "name": "get_healthIssues"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/identities/healthIssues
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-healthissues-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-healthissues-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -166,7 +162,7 @@ The following example shows the response.
   "name": "get_healthIssues"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

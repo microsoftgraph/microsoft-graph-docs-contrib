@@ -21,7 +21,7 @@ displayName := "Export 1 - simple PST"
 requestBody.SetDisplayName(&displayName) 
 exportCriteria := graphmodels.SEARCHHITS_EXPORTCRITERIA 
 requestBody.SetExportCriteria(&exportCriteria) 
-additionalOptions := graphmodels.NONE_ADDITIONALOPTIONS 
+additionalOptions := graphmodels.HTMLTRANSCRIPTS, SPLITSOURCE, INCLUDEFOLDERANDPATH, CONDENSEPATHS, FRIENDLYNAME_ADDITIONALOPTIONS 
 requestBody.SetAdditionalOptions(&additionalOptions) 
 exportFormat := graphmodels.PST_EXPORTFORMAT 
 requestBody.SetExportFormat(&exportFormat) 

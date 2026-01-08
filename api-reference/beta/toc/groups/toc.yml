@@ -16,12 +16,12 @@ items:
     href: ../../api/group-get.md
   - name: Update
     href: ../../api/group-update.md
+  - name: Upsert
+    href: ../../api/group-upsert.md
   - name: Delete
     href: ../../api/group-delete.md
   - name: Get delta
     href: ../../api/group-delta.md
-  - name: Upsert
-    href: ../../api/group-upsert.md
   - name: Group management
     items:
     - name: List members
@@ -56,6 +56,10 @@ items:
       href: ../../api/group-renew.md
     - name: Validate properties
       href: ../../api/group-validateproperties.md
+    - name: Get source of authority (SOA)
+      href: ../../api/onpremisessyncbehavior-get.md
+    - name: Update source of authority (SOA)
+      href: ../../api/onpremisessyncbehavior-update.md
   - name: App role assignments
     items:
     - name: List

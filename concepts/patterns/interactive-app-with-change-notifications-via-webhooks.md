@@ -4,6 +4,7 @@ description: "Learn how to use the Microsoft Graph integration pattern for inter
 author: "OlgaPodo"
 ms.localizationpriority: medium
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Build interactive Microsoft Graph apps with real-time feed

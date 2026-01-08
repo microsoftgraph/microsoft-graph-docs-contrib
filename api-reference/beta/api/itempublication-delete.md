@@ -1,6 +1,6 @@
 ---
 title: "Delete itemPublication"
-description: "Deletes an itemPublication object."
+description: "Delete an itemPublication object."
 ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.subservice: "people"
@@ -12,7 +12,7 @@ ms.date: 06/11/2024
 
 Namespace: microsoft.graph
 
-Deletes an [itemPublication](../resources/itempublication.md) object.
+Delete an [itemPublication](../resources/itempublication.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /me/profile/publications/{id}
 DELETE /users/{id | userPrincipalName}/profile/publications/{id}
 ```
@@ -55,16 +55,12 @@ If successful, this method returns a `204 No Content` response code.
   "name": "delete_itemPublication"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/me/profile/publications/{id}
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-itempublication-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-itempublication-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -100,7 +96,7 @@ DELETE https://graph.microsoft.com/beta/me/profile/publications/{id}
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

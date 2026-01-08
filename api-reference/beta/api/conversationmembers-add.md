@@ -99,10 +99,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/bulkaddmembers-team-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/bulkaddmembers-team-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/bulkaddmembers-team-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -134,6 +130,7 @@ Content-Type: application/json
 The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -164,10 +161,14 @@ Content-Type: application/json
 
 ### Example 2: Add members in bulk to a team using user principal name
 
+The following example shows how to add multiple members to a team using the user principal name of the members.
+
+> [!NOTE]
+> You can't use the user principal name (UPN) to add a guest user to a team.
+
 #### Request
 
-The following example shows a request to add multiple members to a team using user principal name of the members.
-
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -197,10 +198,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/bulkaddmembers-team-upn-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/bulkaddmembers-team-upn-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -14,12 +14,7 @@ var requestBody = new TimeOffReason
 	DisplayName = "Vacation",
 	IconType = TimeOffReasonIconType.Plane,
 	IsActive = true,
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"code" , "VacationCode"
-		},
-	},
+	Code = "VacationCode",
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

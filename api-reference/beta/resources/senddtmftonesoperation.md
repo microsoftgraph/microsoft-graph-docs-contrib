@@ -23,10 +23,10 @@ Inherits from [commsOperation](commsoperation.md).
 | Property            | Type                        | Description|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
 | clientContext       | String                      | A unique string that the client sends to Microsoft Graph to keep context in multiple requests. Maximum size is 256 characters. |
-| completionReason    | [sendDtmfCompletionReason](senddtmftonesoperation.md#senddtmfcompletionreason-values)    | The results of the action. Possible values are: `unknown`, `completedSuccessfully`, `mediaOperationCanceled`, `unknownfutureValue`. |
+| completionReason    | [sendDtmfCompletionReason](senddtmftonesoperation.md#senddtmfcompletionreason-values)    | The results of the action. The possible values are: `unknown`, `completedSuccessfully`, `mediaOperationCanceled`, `unknownfutureValue`. |
 | id                  | String                      | Read-only.                                                                         |
 | resultInfo          | [resultInfo](resultinfo.md) | The result information with a specific status code, subcode, and message. Read-only.        |
-| status              | String                      | The status of the operation. Possible values are: `notStarted`, `running`, `completed`, `failed`.               |
+| status              | String                      | The status of the operation. The possible values are: `notStarted`, `running`, `completed`, `failed`.               |
 
 ### sendDtmfCompletionReason values
 | Member            | Description|

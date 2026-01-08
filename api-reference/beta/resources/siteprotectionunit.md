@@ -40,7 +40,8 @@ Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 |siteId|String|Unique identifier of the SharePoint site.|
 |siteName|String|Name of the SharePoint site.|
 |siteWebUrl|String|The web URL of the SharePoint site.|
-|status|[protectionUnitStatus](../resources/protectionunitbase.md#protectionunitstatus-values)|The individual enable, disable, or removal status of the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md). The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `unknownFutureValue`.|
+|status|[protectionUnitStatus](../resources/protectionunitbase.md#protectionunitstatus-values)|The individual enablement/disablement/removal status of the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md). The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `offboardRequested`, `offboarded`, `cancelOffboardRequested`, `unknownFutureValue`.|
+|offboardRequestedDateTime|DateTimeOffset|The time when protection unit offboard was requested. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 
 ## Relationships
 
@@ -71,7 +72,8 @@ The following JSON representation shows the resource type.
   "siteId": "String",
   "siteName": "String",
   "siteWebUrl": "String",
-  "status": "String"
+  "status": "String",
+  "offboardRequestedDateTime": "String (timestamp)",
 }
 ```
 

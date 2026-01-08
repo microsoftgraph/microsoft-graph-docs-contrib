@@ -1,0 +1,55 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "84077cc7-dd85-4478-894a-b9ecf450f68f",
+          "ApiChange": "Member",
+          "ChangedApiName": "privateAccess",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `privateAccess` member from the **onPremisesPublishingType** enumeration.",
+          "Target": "onPremisesPublishingType"
+        },
+        {
+          "Id": "84077cc7-dd85-4478-894a-b9ecf450f68f",
+          "ApiChange": "Member",
+          "ChangedApiName": "servicePrincipalName",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `servicePrincipalName` member from the **privateNetworkDestinationType** enumeration.",
+          "Target": "privateNetworkDestinationType"
+        },
+        {
+          "Id": "84077cc7-dd85-4478-894a-b9ecf450f68f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "sensorStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **sensorStatus** enumeration type.",
+          "Target": "sensorStatus"
+        },
+        {
+          "Id": "84077cc7-dd85-4478-894a-b9ecf450f68f",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "sensors",
+          "ChangeType": "Addition",
+          "Description": "Added the **sensors** relationship to the [onPremisesPublishingProfile](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesPublishingProfile?view=graph-rest-beta) resource.",
+          "Target": "onPremisesPublishingProfile"
+        },
+        {
+          "Id": "84077cc7-dd85-4478-894a-b9ecf450f68f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privateAccessSensor",
+          "ChangeType": "Addition",
+          "Description": "Added the [privateAccessSensor](https://learn.microsoft.com/en-us/graph/api/resources/privateAccessSensor?view=graph-rest-beta) resource.",
+          "Target": "privateAccessSensor"
+        }
+      ],
+      "Id": "84077cc7-dd85-4478-894a-b9ecf450f68f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-05T18:40:39.4452054Z",
+      "WorkloadArea": "Application",
+      "SubArea": ""
+    }
+  ]
+}
+

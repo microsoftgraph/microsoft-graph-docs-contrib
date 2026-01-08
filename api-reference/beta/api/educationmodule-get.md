@@ -63,10 +63,6 @@ GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationmodule-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-educationmodule-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationmodule-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -116,6 +112,7 @@ Content-type: application/json
     "status": "draft",
     "createdDateTime": "2023-07-24T22:02:06.8286097Z",
     "lastModifiedDateTime": "2023-07-24T22:02:44.2906308Z",
+    "languageTag": null,
     "id": "72a3879f-af73-4179-8a0e-4cb29c0fa369",
     "createdBy": {
         "application": null,

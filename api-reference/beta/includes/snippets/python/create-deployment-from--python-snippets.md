@@ -32,9 +32,7 @@ request_body = Deployment(
 			gradual_rollout = RateDrivenRolloutSettings(
 				odata_type = "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
 				duration_between_offers = "P7D",
-				additional_data = {
-						"device_per_offer" : 100,
-				}
+				devices_per_offer = 100,
 			),
 		),
 		monitoring = MonitoringSettings(

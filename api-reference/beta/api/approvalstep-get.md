@@ -22,9 +22,13 @@ Retrieve the properties of an [approvalStep](../resources/approvalstep.md) objec
 
 The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### Permissions required for calling this API for entitlement management
+### For entitlement management
 
-<!-- { "blockType": "permissions", "name": "approvalstep_get" } -->
+<!-- { 
+  "blockType": "permissions", 
+  "name": "approvalstep_get", 
+  "requestUrls": ["GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{id}/steps/{id}"]
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/approvalstep-get-permissions.md)]
 
 [!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
@@ -33,12 +37,12 @@ The following tables show the least privileged permission or permissions require
 
 ### For PIM for Microsoft Entra roles
 
-<!-- { "blockType": "permissions", "name": "approvalstep_get_2" } -->
+<!-- { "blockType": "permissions", "name": "approvalstep_get_2", "requestUrls": ["GET /roleManagement/directory/roleAssignmentApprovals/{id}/steps/{id}"] } -->
 [!INCLUDE [permissions-table](../includes/permissions/approvalstep-get-2-permissions.md)]
 
-### Permissions required for calling this API for PIM for groups
+### Permissions required for calling this API for PIM for Groups
 
-<!-- { "blockType": "permissions", "name": "approvalstep_get_3" } -->
+<!-- { "blockType": "permissions", "name": "approvalstep_get_3", "requestUrls": ["GET /identityGovernance/privilegedAccess/group/assignmentApprovals/{id}/steps/{id}"] } -->
 [!INCLUDE [permissions-table](../includes/permissions/approvalstep-get-3-permissions.md)]
 
 ## HTTP request
@@ -57,7 +61,7 @@ To get an approval step in PIM for Microsoft Entra roles:
 GET /roleManagement/directory/roleAssignmentApprovals/{id}/steps/{id}
 ```
 
-To get an approval step in PIM for groups:
+To get an approval step in PIM for Groups:
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -96,10 +100,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-approvalstep-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-approvalstep-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

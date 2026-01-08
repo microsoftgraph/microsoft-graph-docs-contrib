@@ -1,5 +1,5 @@
 ---
-title: "governanceRoleAssignmentRequest resource type"
+title: "governanceRoleAssignmentRequest resource type (deprecated)"
 description: "Represents the request for role assignment operations in Privileged Identity Management."
 ms.localizationpriority: medium
 doc_type: resourcePageType
@@ -9,7 +9,7 @@ ROBOTS: NOINDEX
 ms.date: 05/23/2024
 ---
 
-# governanceRoleAssignmentRequest resource type
+# governanceRoleAssignmentRequest resource type (deprecated)
 
 Namespace: microsoft.graph
 

@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Read the properties and relationships of an [overprovisionedServerlessFunctionFinding](../resources/overprovisionedserverlessfunctionfinding.md) object.
 
 ## Permissions
@@ -30,7 +32,7 @@ Get AWS overprovisioned serverless functions:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/aws/findings/{id}/microsoft.graph.overprovisionedServerlessFunctionFinding
 ```
 
@@ -39,7 +41,7 @@ Get AWS overprovisioned serverless functions:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/azure/findings/{id}/microsoft.graph.overprovisionedServerlessFunctionFinding
 ```
 
@@ -48,7 +50,7 @@ Get GCP overprovisioned serverless functions:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/gcp/findings/{id}/microsoft.graph.overprovisionedServerlessFunctionFinding
 ```
 
@@ -80,7 +82,7 @@ The following example shows a request.
   "name": "get_overprovisionedserverlessfunctionfinding"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxPdmVycHJvdmlzaW9uZWRTZXJ2ZXJsZXNzRnVuY3Rpb25GaW5kaW5nLDQ3MDQ/microsoft.graph.overprovisionedServerlessFunctionFinding
 ```
 
@@ -100,7 +102,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.overprovisionedServerlessFunctionFinding"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -140,3 +142,4 @@ Content-type: application/json
     }
 }
 ```
+

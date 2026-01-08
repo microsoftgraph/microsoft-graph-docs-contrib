@@ -10,9 +10,9 @@ const options = {
 
 const client = Client.init(options);
 
-let getRecentlyModifiedSubmissions = await client.api('/education/classes/bf1f1963-05f6-4cba-903c-5892b4ce3bd7/getRecentlyModifiedSubmissions')
+let getRecentlyModifiedSubmissions = await client.api('/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/getRecentlyModifiedSubmissions')
 	.version('beta')
-	.filter('status eq \'working\'')
+	.filter('lastModifiedDateTime gt 2025-04-10T19:02:00.8753517Z')
 	.get();
 
 ```

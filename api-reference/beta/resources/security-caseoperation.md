@@ -16,34 +16,35 @@ Namespace: microsoft.graph.security
 
 An abstract entity that represents a long-running eDiscovery process. It contains a common set of properties that are shared among inheriting entities. Entities that derive from **caseOperation** include:
 
-- [Index operation](../resources/security-ediscoveryindexoperation.md)
-- [Hold operation](../resources/security-ediscoveryholdoperation.md)
-- [Purge data operation](../resources/security-ediscoverypurgedataoperation.md)
-- [Estimate operation](../resources/security-ediscoveryestimateoperation.md)
-- [Add to review set operation](../resources/security-ediscoveryaddtoreviewsetoperation.md)
-- [Tag operation](../resources/security-ediscoverytagoperation.md)
-- [Export operation](../resources/security-ediscoveryexportoperation.md)
-- [Search export operation](../resources/security-ediscoverysearchexportoperation.md)
+- [ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md)
+- [ediscoveryHoldOperation](../resources/security-ediscoveryholdoperation.md)
+- [ediscoveryPurgeDataOperation](../resources/security-ediscoverypurgedataoperation.md)
+- [ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md)
+- [ediscoveryAddToReviewSetOperation](../resources/security-ediscoveryaddtoreviewsetoperation.md)
+- [ediscoveryTagOperation](../resources/security-ediscoverytagoperation.md)
+- [ediscoveryExportOperation](../resources/security-ediscoveryexportoperation.md)
+- [ediscoverySearchExportOperation](../resources/security-ediscoverysearchexportoperation.md)
+- [ediscoveryHoldPolicySyncOperation](../resources/security-ediscoveryholdpolicysyncoperation.md)
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List case operations](../api/security-ediscoverycase-list-operations.md)|[microsoft.graph.security.caseOperation](../resources/security-caseoperation.md) collection|Get a list of the [caseOperation](../resources/security-caseoperation.md) objects and their properties.|
-|[Get case operation by ID](../api/security-caseoperation-get.md)|[microsoft.graph.security.caseOperation](../resources/security-caseoperation.md)|Read the properties and relationships of a [caseOperation](../resources/security-caseoperation.md) object.|
+|[List](../api/security-ediscoverycase-list-operations.md)|[microsoft.graph.security.caseOperation](../resources/security-caseoperation.md) collection|Get a list of the [caseOperation](../resources/security-caseoperation.md) objects and their properties.|
+|[Get](../api/security-caseoperation-get.md)|[microsoft.graph.security.caseOperation](../resources/security-caseoperation.md)|Read the properties and relationships of a [caseOperation](../resources/security-caseoperation.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|[microsoft.graph.security.caseAction](../resources/security-caseoperation.md#caseaction-values)| The type of action the operation represents. Possible values are: `contentExport`,  `applyTags`, `convertToPdf`, `index`, `estimateStatistics`, `addToReviewSet`, `holdUpdate`, `unknownFutureValue`, `purgeData`, `exportReport`, `exportResult`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `purgeData`, `exportReport`, `exportResult`.|
+|action|[microsoft.graph.security.caseAction](../resources/security-caseoperation.md#caseaction-values)| The type of action the operation represents. The possible values are: `contentExport`,  `applyTags`, `convertToPdf`, `index`, `estimateStatistics`, `addToReviewSet`, `holdUpdate`, `unknownFutureValue`, `purgeData`, `exportReport`, `exportResult`, `holdPolicySync`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `purgeData`, `exportReport`, `exportResult`, `holdPolicySync`.|
 |completedDateTime|DateTimeOffset| The date and time the operation was completed. |
 |createdBy|[identitySet](../resources/identityset.md)| The user that created the operation. |
 |createdDateTime|DateTimeOffset| The date and time the operation was created. |
 |id|String| The ID for the operation. Read-only. |
 |percentProgress|Int32| The progress of the operation. |
 |resultInfo|[resultInfo](../resources/resultinfo.md)| Contains success and failure-specific result information. |
-|status|[microsoft.graph.security.caseOperationStatus](../resources/security-caseoperation.md#caseoperationstatus-values)| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`.|
+|status|[microsoft.graph.security.caseOperationStatus](../resources/security-caseoperation.md#caseoperationstatus-values)| The status of the case operation. The possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`, `unknownFutureValue`.|
 
 ### caseAction values
 
@@ -60,6 +61,7 @@ Inherits from [entity](../resources/entity.md).
 | purgeData | The operation represents purging content from the source workloads. |
 | exportReport | The operation exports an item report from an estimated search.|
 | exportResult | The operation exports item results from an estimated search. |
+| holdPolicySync | The operation represents the addition or update of a legal hold policy.|
 
 ### caseOperationStatus values
 

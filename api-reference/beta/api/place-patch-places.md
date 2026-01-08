@@ -1,0 +1,163 @@
+---
+title: "Upsert places"
+description: "Upsert one or more place objects in async mode."
+author: "Dongjing-MSIT"
+ms.date: 11/10/2025
+ms.localizationpriority: medium
+ms.subservice: "outlook"
+doc_type: apiPageType
+---
+
+# Upsert places
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Upsert one or more [place](../resources/place.md) objects in async mode. This API allows you to create and update multiple places efficiently in a single request.
+
+For more information on how to use this API, including scenarios, best practices, and concurrency limits, see [Working with the upsert Places API in Microsoft Graph](/graph/places-upsert-overview).
+
+> [!NOTE]
+> - Operations are retained for 15 days from creation.
+> - This API has a throttling limit of three calls per second. For more information, see [Microsoft Graph service-specific throttling limits](/graph/throttling-limits).
+> - All requests require the `OData-Version: 4.01` header.
+> - Currently, this API doesn’t support the assigned mode for desks or the `isTeamsEnabled` property for rooms.
+> - For now, the place operation can’t handle a large number of places at once—especially rooms, desks, and workspaces. The current limit is approximately 20–30 rooms, desks, or workspaces.
+
+## Permissions
+
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "place_patch_places" } -->
+[!INCLUDE [permissions-table](../includes/permissions/place-patch-places-permissions.md)]
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+PATCH /places
+```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
+|OData-Version|4.01. Required.|
+
+## Request body
+
+In the request body, supply a JSON representation of the [place](../resources/place.md) delta set.
+
+The same properties can be specified as when you [create](../api/place-post.md) or [update](../api/place-update.md) a **place** object.
+
+## Response
+
+If successful, this method returns a `202 Accepted` response code and an operation URL in the `Location` response header that you can use to [get](../api/place-getoperation.md) the operation.
+
+## Example
+
+### Request
+
+The following example shows a request that combines multiple operations, including updating an existing building, creating new places with a hierarchy, and updating properties:
+
+- Update an existing building to set the display name to `Demo Building A`, enable Wi-Fi, and create a new floor `Demo Floor 1` as a child of the updated building.
+- Create a new building `Demo Building B` with a child floor `Demo Floor 1` that contains a new section `Demo Section A` with an existing desk and a new room `Demo Room 1`.
+- Create a new workspace in reservable mode under an existing parent.
+- Update the display name of an existing section.
+
+<!-- {
+  "blockType": "request",
+  "name": "mixed_create_update"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/places
+Content-Type: application/json
+OData-Version: 4.01
+
+{
+  "@context": "#$delta",
+  "value": [
+    {
+      "@odata.type": "microsoft.graph.building",
+      "id": "25e5905a-7fee-4f36-ba31-29e85c14bf18",
+      "displayName": "Demo Building A",
+      "hasWifi": true,
+      "children@delta": [
+        {
+          "@odata.type": "microsoft.graph.floor",
+          "displayName": "Demo Floor 1"
+        }
+      ]
+    },
+    {
+      "@odata.type": "microsoft.graph.building",
+      "displayName": "Demo Building B",
+      "children@delta": [
+        {
+          "@odata.type": "microsoft.graph.floor",
+          "displayName": "Demo Floor 1",
+          "children@delta": [
+            {
+              "@odata.type": "microsoft.graph.section",
+              "displayName": "Demo Section A",
+              "children@delta": [
+                {
+                  "@odata.type": "#microsoft.graph.desk",
+                  "id": "211ffb37-e880-475a-b73a-43f484609536"
+                },
+                {
+                  "@odata.type": "#microsoft.graph.room",
+                  "displayName": "Demo Room 1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@odata.type": "microsoft.graph.workspace",
+      "parentId": "2cb2701d-0896-4c69-91bb-582d82d7c68c",
+      "displayName": "Demo Workspace 1",
+      "mode": {
+        "@odata.type": "#microsoft.graph.reservablePlaceMode"
+      }
+    },
+    {
+      "@odata.type": "#microsoft.graph.section",
+      "id": "2cb2701d-0896-4c69-91bb-582d82d7c68c",
+      "displayName": "HR"
+    }
+  ]
+}
+```
+
+### Response
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 202 Accepted
+Location: https://graph.microsoft.com/beta/places/getOperation(id='0f5d3cc5-d1bd-4cba-9b0e-e9ad68527ab5')
+```
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Upsert places in async mode",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->

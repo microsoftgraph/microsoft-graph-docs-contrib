@@ -6,6 +6,7 @@ ms.localizationpriority: high
 ms.subservice: "education"
 ms.custom: scenarios:getting-started
 ms.date: 11/07/2024
+ms.topic: concept-article
 ---
 
 # Education API overview
@@ -50,7 +51,7 @@ The following are examples of a few scenarios enabled by the assignments API:
 [Microsoft Reflect](https://reflect.microsoft.com/) is a wellbeing app designed to foster connection, expression, and learning by promoting self-awareness, empathy, and emotional growth. You can integrate with Microsoft Reflect to get student responses to Reflect check-ins.
 
 The Microsoft Reflect reports APIs support the following scenarios:
-- [Get reflectCheckInResponse](/graph/api/reflectcheckinresponse-get?view=graph-rest-beta&preserve-view=true)
+- [List reflectCheckInResponses](/graph/api/reportsroot-list-reflectcheckinresponses?view=graph-rest-1.0&preserve-view=true)
 
 ## API reference
 

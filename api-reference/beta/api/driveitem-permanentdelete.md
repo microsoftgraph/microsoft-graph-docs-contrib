@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Permanently delete a [driveItem](../resources/driveitem.md) by using its ID. If you delete items using this method, they're permanently removed and aren't sent to the recycle bin, unlike the [Delete driveItem](../api/driveitem-delete.md) API, which sends the item to the recycle bin. Therefore, permanently deleted drive items can't be restored afterward.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -21,6 +21,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "driveitem_permanentdelete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-permanentdelete-permissions.md)]
+
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
 
 ## HTTP request
 

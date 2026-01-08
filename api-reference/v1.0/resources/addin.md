@@ -4,7 +4,7 @@ description: "Defines custom behavior that a consuming service can use to call a
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
-author: "sureshja"
+author: "Jackson-Woods"
 ms.date: 05/15/2024
 ---
 

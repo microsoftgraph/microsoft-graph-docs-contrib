@@ -4,6 +4,7 @@ description: "Describes how to create a client to use to make calls to Microsoft
 ms.localizationpriority: medium
 author: MichaelMainer
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Create a Microsoft Graph client

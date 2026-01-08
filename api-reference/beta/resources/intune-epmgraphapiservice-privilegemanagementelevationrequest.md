@@ -5,14 +5,14 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/13/2024
+ms.date: 08/01/2024
 ---
 
 # privilegeManagementElevationRequest resource type
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -40,7 +40,7 @@ These are elevation approval requests for EPM support arbitrated scenario initia
 |requestLastModifiedDateTime|DateTimeOffset|The date and time when the elevation request was either submitted/created or approved/denied. The value cannot be modified and is automatically populated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Returned by default. Read-only.|
 |requestJustification|String|Justification provided by the end user for the elevation request. For example :'Need to elevate to install microsoft word'. Read-only.|
 |applicationDetail|[elevationRequestApplicationDetail](../resources/intune-epmgraphapiservice-elevationrequestapplicationdetail.md)|Details of the application which is being requested to elevate, allowing the admin to understand the identity of the application. It includes file info such as FilePath, FileHash, FilePublisher, and etc. Returned by default. Read-only.|
-|status|[elevationRequestState](../resources/intune-epmgraphapiservice-elevationrequeststate.md)|This indicates the current state of the elevation request. Possible values are: 'none', 'pending', 'approved', 'denied' or 'expired'. Defaults to 'none'. Returned by default. Read-only. Possible values are: `none`, `pending`, `approved`, `denied`, `expired`, `unknownFutureValue`, `revoked`, `completed`.|
+|status|[elevationRequestState](../resources/intune-epmgraphapiservice-elevationrequeststate.md)|This indicates the current state of the elevation request. The possible values are: 'none', 'pending', 'approved', 'denied' or 'expired'. Defaults to 'none'. Returned by default. Read-only. The possible values are: `none`, `pending`, `approved`, `denied`, `expired`, `unknownFutureValue`, `revoked`, `completed`.|
 |reviewCompletedByUserId|String|This is the Azure Active Directory (AAD) user id of the administrator who approved or denied the request. For example: 'F1A57311-B9EB-45B7-9415-8555E68EDC9E'. This field would be String.Empty before the request is either approved or denied. Read-only.|
 |reviewCompletedByUserPrincipalName|String|This is the User Principal Name (UPN) of the administrator who approved or denied the request. For example: 'admin@contoso.com'. This field would be String.Empty before the request is either approved or denied. Read-only.|
 |reviewCompletedDateTime|DateTimeOffset|The DateTime for which the request was approved or denied. For example, midnight UTC on August 3rd, 2023 would look like this: '2023-08-03T00:00:00Z'. Read-only.|

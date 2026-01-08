@@ -31,7 +31,7 @@ To retrieve the course activity list for a signed-in user:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /me/employeeExperience/learningCourseActivities
 ```
 
@@ -41,7 +41,7 @@ To retrieve the course activity list for a user:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /users/{user-id}/employeeExperience/learningCourseActivities
 ```
 
@@ -77,16 +77,12 @@ The following example shows how to retrieve all the course activities for a give
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/7ba2228a-e020-11ec-9d64-0242ac120002/employeeExperience/learningCourseActivities
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-learningcourseactivity-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-learningcourseactivity-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -120,7 +116,7 @@ GET https://graph.microsoft.com/v1.0/users/7ba2228a-e020-11ec-9d64-0242ac120002/
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -206,7 +202,7 @@ The following example shows how to retrieve all the course activities for a give
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

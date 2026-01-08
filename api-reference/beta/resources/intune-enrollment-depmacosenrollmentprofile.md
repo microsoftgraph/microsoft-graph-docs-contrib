@@ -5,14 +5,14 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/12/2024
+ms.date: 08/01/2024
 ---
 
 # depMacOSEnrollmentProfile resource type
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -83,6 +83,7 @@ Inherits from [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrol
 |hideAdminAccount|Boolean|Indicates whether the admin account should be hidded or not|
 |requestRequiresNetworkTether|Boolean|Indicates if the device is network-tethered to run the command|
 |autoAdvanceSetupEnabled|Boolean|Indicates if Setup Assistant will automatically advance through its screen|
+|depProfileAdminAccountPasswordRotationSetting|[depProfileAdminAccountPasswordRotationSetting](../resources/intune-enrollment-depprofileadminaccountpasswordrotationsetting.md)|Settings for local admin account password automatic rotation.|
 
 ## Relationships
 None
@@ -151,6 +152,15 @@ Here is a JSON representation of the resource.
   "adminAccountPassword": "String",
   "hideAdminAccount": true,
   "requestRequiresNetworkTether": true,
-  "autoAdvanceSetupEnabled": true
+  "autoAdvanceSetupEnabled": true,
+  "depProfileAdminAccountPasswordRotationSetting": {
+    "@odata.type": "microsoft.graph.depProfileAdminAccountPasswordRotationSetting",
+    "autoRotationPeriodInDays": 1024,
+    "depProfileDelayAutoRotationSetting": {
+      "@odata.type": "microsoft.graph.depProfileDelayAutoRotationSetting",
+      "onRetrievalAutoRotatePasswordEnabled": true,
+      "onRetrievalDelayAutoRotatePasswordInHours": 1024
+    }
+  }
 }
 ```

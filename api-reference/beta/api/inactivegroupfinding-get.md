@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Get details about an [inactiveGroupFinding](../resources/inactivegroupfinding.md) object in AWS, Azure, or GCP environments.
 
 ## Permissions
@@ -80,7 +82,7 @@ The following example shows a request for an inactive group in a GCP project.
   "name": "get_inactivegroupfinding"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/MSxJbmFjdGl2ZUdyb3VwRmluZGluZyw2MDI0NA/microsoft.graph.inactiveGroupFinding
 ```
 
@@ -100,7 +102,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.inactiveGroupFinding"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -136,3 +138,4 @@ Content-Type: application/json
     }
 }
 ```
+

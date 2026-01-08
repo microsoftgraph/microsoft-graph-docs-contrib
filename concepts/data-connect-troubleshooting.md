@@ -5,6 +5,8 @@ author: "David1997sb"
 ms.localizationpriority: high
 ms.subservice: "data-connect"
 ms.date: 11/07/2024
+ms.custom: sfi-image-nochange, sfi-ga-nochange
+ms.topic: troubleshooting-general
 ---
 
 # Troubleshoot Microsoft Graph Data Connect
@@ -63,7 +65,7 @@ If the destination storage account needs to be closed for public access, you nee
 2. After you find the Office to Azure mapping, you need to determine the compatible location of your destination storage account (see the following table). You can look up how to configure your Azure storage account and [grant access from an internet IP range](/azure/storage/common/storage-network-security?tabs=azure-portal#grant-access-from-an-internet-ip-range). 
 
 > [!NOTE]
-> This indicates the Azure regions that may NOT be used per region for the destination storage **when it is closed for public access**. This is also the region for which the IP addresses need to be added to the allow list to allow data delivery. To find IP ranges, see [Azure IP Ranges and Service Tags](https://www.microsoft.com/download/details.aspx?id=56519).  
+> This indicates the Azure regions that might NOT be used per region for the destination storage **when it is closed for public access**. This is also the region for which the IP addresses need to be added to the allow list to allow data delivery. To find IP ranges, see [Azure IP Ranges and Service Tags](https://www.microsoft.com/download/details.aspx?id=56519).  
 
 For details about this destination storage region restriction, see:
 
@@ -152,6 +154,10 @@ az resource create --resource-group <resource_group_name> --name mgdc-<app_id> -
 The following error message indicates that a **Microsoft.GraphServices** type resource was already manually created for the app with a different name. This resource is used for billing purposes, and no further action is required.
 
 ![Screenshot that shows an error for the already existent billing resource.](images/app-registration-already-premium-usage.png)
+
+### Developer email missing
+
+When creating a new registration, it might appear successful, but you receive a "Developer email not found" error. This happens when the registration is created with a guest user; use a non-guest user to successfully complete the registration.
 
 ## Related content
 

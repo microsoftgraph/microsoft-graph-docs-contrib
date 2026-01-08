@@ -41,9 +41,9 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|name|string|The display name of the worksheet.|
-|position|int|The zero-based position of the worksheet within the workbook.|
-|visibility|string|The Visibility of the worksheet. Possible values are: `Visible`, `Hidden`, `VeryHidden`.|
+|name|string|The display name of the worksheet. Optional.|
+|position|int|The zero-based position of the worksheet within the workbook. Optional.|
+|visibility|string|The Visibility of the worksheet. Optional. The possible values are: `Visible`, `Hidden`, `VeryHidden`.|
 
 ## Response
 
@@ -62,18 +62,14 @@ PATCH https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{
 Content-type: application/json
 
 {
-  "position": 99,
-  "name": "name-value",
-  "visibility": "visibility-value"
+  "position": 0,
+  "name": "Sheet2",
+  "visibility": "Hidden"
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-worksheet-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-worksheet-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -110,10 +106,10 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "id-value",
-  "position": 99,
-  "name": "name-value",
-  "visibility": "visibility-value"
+  "id": "{FC034FA8-F8CC-4D24-9C0A-02A81B7792A0}",
+  "position": 0,
+  "name": "Sheet2",
+  "visibility": "Hidden"
 }
 ```
 

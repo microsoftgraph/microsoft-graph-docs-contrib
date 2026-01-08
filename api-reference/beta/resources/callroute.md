@@ -22,7 +22,7 @@ The callRoute type.
 | :------------------ | :---------------------------- | :----------------------------------------------------------- |
 | final               | [identitySet](identityset.md) | The identity that was resolved to in the call.               |
 | original            | [identitySet](identityset.md) | The identity that was originally used in the call.           |
-| routingType         | String                        | Possible values are: `forwarded`, `lookup`, `selfFork`.  |
+| routingType         | String                        | The possible values are: `forwarded`, `lookup`, `selfFork`.  |
 
 ## Relationships
 None.

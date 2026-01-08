@@ -20,7 +20,7 @@ Represents the current status of the [synchronizationJob](synchronization-synchr
 
 | Property                              | Type      | Description    |
 |:--------------------------------------|:----------|:---------------|
-|code|synchronizationStatusCode|High-level status code of the synchronization job. Possible values are: `NotConfigured`, `NotRun`, `Active`, `Paused`, `Quarantine`.|
+|code|synchronizationStatusCode|High-level status code of the synchronization job. The possible values are: `NotConfigured`, `NotRun`, `Active`, `Paused`, `Quarantine`.|
 |countSuccessiveCompleteFailures|Int64|Number of consecutive times this job failed.|
 |escrowsPruned|Boolean|`true` if the job's escrows (object-level errors) were pruned during initial synchronization. Escrows can be pruned if during the initial synchronization, you reach the threshold of errors that would normally put the job in quarantine. Instead of going into quarantine, the synchronization process clears the job's errors and continues until the initial synchronization is completed. When the initial synchronization is completed, the job will pause and wait for the customer to clean up the errors.|
 |lastExecution|[synchronizationTaskExecution](synchronization-synchronizationtaskexecution.md)|Details of the last execution of the job.|

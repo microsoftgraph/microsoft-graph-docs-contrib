@@ -20,7 +20,7 @@ var requestBody = new GetDailyAggregatedRemoteConnectionReportsPostRequestBody
 		"ManagedDeviceName",
 		"UsageInHour",
 		"RoundTripTimeInMsP50",
-		"AvailableBandwidthInMBpsP50",
+		"AvailableBandwidthInMbpsP50",
 		"RemoteSignInTimeInSecP50",
 		"UserPrincipalName",
 	},

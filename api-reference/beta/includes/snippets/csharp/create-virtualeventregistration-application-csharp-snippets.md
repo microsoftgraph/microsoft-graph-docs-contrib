@@ -16,7 +16,7 @@ var requestBody = new VirtualEventRegistration
 	Email = "DianeDemoss@contoso.com",
 	ExternalRegistrationInformation = new VirtualEventExternalRegistrationInformation
 	{
-		Referrer = "Facebook",
+		Referrer = "Fabrikam",
 		RegistrationId = "myExternalRegistrationId",
 	},
 	PreferredTimezone = "Pacific Standard Time",

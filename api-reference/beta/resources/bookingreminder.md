@@ -22,7 +22,7 @@ Represents when and whom to send an email reminder.
 |:---------------|:--------|:----------|
 |message|String|The message in the reminder.|
 |offset|Duration|The amount of time before the start of an appointment that the reminder should be sent. It's denoted in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.|
-|recipients|bookingReminderRecipients| The persons who should receive the reminder. Possible values are: `allAttendees`, `staff`, `customer` and `unknownFutureValue`.|
+|recipients|bookingReminderRecipients| The persons who should receive the reminder. The possible values are: `allAttendees`, `staff`, `customer` and `unknownFutureValue`.|
 
 ## Relationships
 

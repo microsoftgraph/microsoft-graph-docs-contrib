@@ -1,34 +1,29 @@
 ---
 title: "Create column"
 description: "Create a columnDefinition in a fileStorageContainer."
-author: "harmoneddie"
+author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
-ms.date: 12/10/2024
+ms.date: 11/12/2025
 ---
 
 # Create column
 
 Namespace: microsoft.graph
 
-Create a columnDefinition for a [fileStorageContainer](../resources/filestoragecontainer.md) that specifies a [columnDefinition](../resources/columndefinition.md). 
+Create a column for a [fileStorageContainer](../resources/filestoragecontainer.md) that specifies a [columnDefinition](../resources/columndefinition.md). 
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "filestoragecontainer-post-columns-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "filestoragecontainer_post_columns" } -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-post-columns-permissions.md)]
 
-> [!NOTE]
-> [!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-permissions.md)]
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-permissions.md)]
 
 ## HTTP request
 
@@ -36,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /storage/fileStorage/containers/{containerId}/columns
 ```
 
@@ -80,7 +75,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/columns
 Content-Type: application/json
 
@@ -98,7 +93,6 @@ Content-Type: application/json
   }
 }
 ```
----
 
 ### Response
 
@@ -113,7 +107,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

@@ -19,7 +19,7 @@ The following table lists the latency to expect between an event happening in th
 | [alert][] <sup>1</sup>  | Less than 3 minutes  | 5 minutes       |
 | [approvals][]           | Less than 10 seconds | 40 seconds      |
 | [calendar][]            | Less than 1 minute   | 3 minutes       |
-| [callRecord][]          | Less than 15 minutes | 60 minutes      |
+| [callRecord][] <sup>2</sup> | Less than 30 minutes | 150 minutes |
 | [callRecording][]       | Less than 10 seconds | 60 minutes      |
 | [callTranscript][]      | Less than 10 seconds | 60 minutes      |
 | [channel][]             | Less than 10 seconds | 60 minutes      |
@@ -28,10 +28,11 @@ The following table lists the latency to expect between an event happening in th
 | [contact][]             | Less than 1 minute   | 3 minutes       |
 | [conversation][]        | Unknown              | Unknown         |
 | [conversationMember][]  | Less than 10 seconds | 60 minutes      |
-| [driveItem][]           | Less than 1 minute   | 5 minutes       |
+| [driveItem][]           | Less than 1 minute   | 60 minutes      |
 | [event][]               | Unknown              | Unknown         |
 | [group][]               | Unknown              | Unknown         |
-| [list][]                | Less than 1 minute   | 5 minutes       |
+| [health monitoring alert][] | Unknown           | Unknown         |
+| [list][]                | Less than 1 minute   | 60 minutes      |
 | [message][]             | Less than 1 minute   | 3 minutes       |
 | [offerShiftRequest][]   | Less than 1 minute   | 60 minutes      |
 | [onlineMeeting][]       | Less than 10 seconds | 1 minute        |
@@ -48,6 +49,7 @@ The following table lists the latency to expect between an event happening in th
 | [user][]                | Unknown              | Unknown         |
 
 <sup>1</sup> The latency provided for the **alert** resource is only applicable after the alert is created. It doesn't include the time it takes for a rule to create an alert from the data.
+<sup>2</sup> The latency provided for the **callRecord** resource is only applicable to the first version of a call record. Subsequent versions of a call record might be updated beyond the stated latencies.
 
 [aiInteraction]: /graph/api/resources/aiinteraction
 [contact]: /graph/api/resources/contact
@@ -80,3 +82,4 @@ The following table lists the latency to expect between an event happening in th
 [calendar]: /graph/api/resources/calendar
 [teamsAppInstallation]: /graph/api/resources/teamsappinstallation
 [approvals]: /graph/api/resources/approvalItem
+[health monitoring alert]: /graph/api/resources/healthmonitoring-alert

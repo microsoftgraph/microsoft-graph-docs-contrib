@@ -23,7 +23,7 @@ Inherits from [informationProtectionAction](../resources/security-informationpro
 | Property                    | Type                                                                                           | Description                                                                                                 |
 | :-------------------------- | :--------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------- |
 | actions                     | [informationProtectionAction](../resources/security-informationprotectionaction.md) collection | Actions to take if the label is accepted by the user.                                                       |
-| actionSource                | String                                                                                         | Specifies why the label was selected. Possible values are: `manual`, `automatic`, `recommended`, `default`. |
+| actionSource                | String                                                                                         | Specifies why the label was selected. The possible values are: `manual`, `automatic`, `recommended`, `default`. |
 | responsibleSensitiveTypeIds | GUID collection                                                                                | The sensitive information type GUIDs that caused the recommendation to be given.                            |
 
 ## Relationships

@@ -1,7 +1,7 @@
 ---
 title: "organizationalBranding resource type"
-description: "Contains details of the organization's branding."
-author: "quievey"
+description: "Contains details of the organization's default branding."
+author: "nanguil"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType

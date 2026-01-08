@@ -39,7 +39,7 @@ To get the specified BitLocker key without returning the **key** property:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /informationProtection/bitlocker/recoveryKeys/{bitlockeryRecoveryKeyId}
 ```
 
@@ -48,7 +48,7 @@ To get the specified BitLocker key including its **key** property:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /informationProtection/bitlocker/recoveryKeys/{bitlockeryRecoveryKeyId}?$select=key
 ```
 
@@ -93,10 +93,6 @@ ocp-client-version: 1.2
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bitlockerrecoverykey-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-bitlockerrecoverykey-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -175,10 +171,6 @@ ocp-client-version: 1.2
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-bitlockerrecoverykey-key-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-bitlockerrecoverykey-key-2-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-bitlockerrecoverykey-key-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -217,7 +209,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

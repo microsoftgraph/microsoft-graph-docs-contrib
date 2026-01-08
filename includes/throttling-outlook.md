@@ -20,7 +20,7 @@ The Outlook service applies limits to each app ID and mailbox combination - that
 
 | API                                                      | Resources      |
 |------------------------------------------------------------|-----------------|
-| Search API (preview)                  | <li>[External item (Microsoft Search)](/graph/api/resources/externalitem) |
+| Search API (preview)                  | <li>[External item (Microsoft Search)](/graph/api/resources/externalconnectors-externalitem) |
 | Profile API                                      | <li>[Photo](/graph/api/resources/profilephoto)   |
 | Calendar API | <li>[event](/graph/api/resources/event) <li> [eventMessage](/graph/api/resources/eventmessage) <li> [calendar](/graph/api/resources/calendar) <li>  [calendarGroup](/graph/api/resources/calendargroup) <li> [outlookCategory](/graph/api/resources/outlookcategory) <li> [attachment](/graph/api/resources/attachment) <li> [place (preview)](/graph/api/resources/place)   |
 | Mail API                                      | <li>  [message](/graph/api/resources/message) <li> [mailFolder](/graph/api/resources/mailfolder) <li> [mailSearchFolder](/graph/api/resources/mailsearchfolder) <li> [messageRule](/graph/api/resources/messagerule) <li> [outlookCategory](/graph/api/resources/outlookcategory) <li> [attachment](/graph/api/resources/attachment)|

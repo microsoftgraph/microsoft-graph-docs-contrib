@@ -1,11 +1,11 @@
 ---
-title: "List networkAccessTraffic"
-description: "Get a list of log events for traffic routed through the Global Secure Access services."
-author: "Moti-ba"
+title: "List traffic"
+description: "Get a list of the networkAccessTraffic objects and their properties."
+author: "miritsadon"
+ms.date: 04/08/2025
 ms.localizationpriority: medium
-ms.subservice: entra-global-secure-access
+ms.subservice: "entra-global-secure-access"
 doc_type: apiPageType
-ms.date: 08/13/2024
 ---
 
 # List networkAccessTraffic
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of log events for traffic routed through the Global Secure Access services.
+Get a list of [log events for traffic](../resources/networkaccess-networkaccesstraffic.md) routed through the Global Secure Access services.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /networkAccess/logs/traffic
 ```
 
@@ -40,11 +40,11 @@ This method supports the `$select`, `$expand`, `$filter`, `$sort`, and `$top` OD
 
 |Name|Syntax|Notes|
 |:---|:---|:---|
-|Server-side pagination|@odata.nextLink=https://graph.microsoft.com/beta/networkAccess/logs/traffic?$skiptoken="generatedtoken"|Page size default and limit is 1000.|
+|Server-side pagination|@odata.nextLink=https://graph.microsoft.com/beta/networkAccess/logs/traffic?$skiptoken="generatedtoken"|The page size defaults to and is limited to 1000.|
 |Filter|/logs/traffic?$filter=connectionId eq 'a812bcdc-aa36-4c51-b70d-20a84f0ce556'|All properties are filterable.|
-|Sort|/logs/traffic?$orderby=createdDateTime desc|Can order by all properties.|
-|Top|/logs/traffic?$top=50|Max value 1000.|
-|Select|/logs/traffic?$select=transactionId,connectionId,createdDateTime|Select properties.|
+|Sort|/logs/traffic?$orderby=createdDateTime desc|You can order by all properties.|
+|Top|/logs/traffic?$top=50|The maximum value is 1000.|
+|Select|/logs/traffic?$select=transactionId,connectionId,createdDateTime|Select specific properties.|
 
 ## Request headers
 |Name|Description|
@@ -52,7 +52,7 @@ This method supports the `$select`, `$expand`, `$filter`, `$sort`, and `$top` OD
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Don't supply a request body for this method.
+Do not supply a request body for this method.
 
 ## Response
 
@@ -68,16 +68,12 @@ The following example shows a request.
   "name": "list_networkaccesstraffic"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/networkAccess/logs/traffic
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-networkaccesstraffic-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-networkaccesstraffic-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -115,7 +111,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.networkaccess.networkAccessTraffic)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -159,6 +155,23 @@ Content-Type: application/json
         "referrer": "process",
         "origin": "https://developer.mozilla.org",
         "xForwardedFor": "incentivize"
+      },
+      "destinationUrl": "https://destinationfqdn/file.zip",
+      "filteringProfileId": "ff612f2c-04b7-4234-8a8f-079ec1b7b4bc",
+      "filteringProfileName": "Block Social and malicious files",
+      "policyName": "Block malicious files Syros",
+      "initiatingProcessName": "msedge.exe",
+      "vendorNames": ["Microsoft"],
+      "httpMethod": "get",
+      "responseCode": 403,
+      "popProcessingRegion": "EastUS2",
+      "operationStatus": "success",
+      "destinationWebCategory": {
+        "displayName": "General,IllegalSoftware",
+        "group": null
+      },
+      "applicationSnapshot": {
+        "appId": ""
       }
     },
     {
@@ -197,9 +210,20 @@ Content-Type: application/json
         "referrer": "process",
         "origin": "https://developer.mozilla.org",
         "xForwardedFor": "incentivize"
+      },
+      "cloudApplicationMetadata": {
+        "@odata.type": "microsoft.graph.networkaccess.cloudApplicationMetadata",
+        "cloudApplicationCatalogId": "12345",
+        "name": "ChatGPT",
+        "category": "generativeAi",
+        "generalScore": 85,
+        "riskScore": 15,
+        "complianceScore": 90,
+        "legalScore": 88,
+        "loginUser": "user1@microsoft.com",
+        "securityScore": 92
       }
     }
   ]
 }
 ```
-

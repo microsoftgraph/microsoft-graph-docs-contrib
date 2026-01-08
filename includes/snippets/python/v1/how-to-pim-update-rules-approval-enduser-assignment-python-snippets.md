@@ -38,7 +38,6 @@ request_body = UnifiedRoleManagementPolicyApprovalRule(
 		approval_mode = "SingleStage",
 		approval_stages = [
 			UnifiedApprovalStage(
-				odata_type = "microsoft.graph.unifiedApprovalStage",
 				approval_stage_time_out_in_days = 1,
 				is_approver_justification_required = True,
 				escalation_time_in_minutes = 0,

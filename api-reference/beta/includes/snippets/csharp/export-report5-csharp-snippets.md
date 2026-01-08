@@ -16,6 +16,13 @@ var requestBody = new ExportReportPostRequestBody
 	ExportCriteria = ExportCriteria.PartiallyIndexed,
 	ExportLocation = ExportLocation.ResponsiveLocations,
 	AdditionalOptions = AdditionalOptions.CloudAttachments,
+	CloudAttachmentVersion = CloudAttachmentVersion.All,
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"doucmentVersion" , "recent100"
+		},
+	},
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

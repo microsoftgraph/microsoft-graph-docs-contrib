@@ -6,7 +6,7 @@ author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.subservice: "entra-groups"
 doc_type: apiPageType
-ms.date: 11/30/2024
+ms.date: 09/09/2025
 ---
 
 # Add members
@@ -27,7 +27,7 @@ The following table shows the least privileged permission that's required by eac
 
 | Supported resource                        | Delegated (work or school account)                      | Delegated (personal Microsoft account) | Application                                             |
 |:------------------------------------------|:--------------------------------------------------------|:---------------------------------------|:--------------------------------------------------------|
-| [device](../resources/device.md)          | GroupMember.ReadWrite.All and Device.ReadWrite.All      | Not supported.                         | GroupMember.ReadWrite.All and Device.ReadWrite.All      |
+| [device](../resources/device.md)          | GroupMember.ReadWrite.All and Device.Read.All           | Not supported.                         | GroupMember.ReadWrite.All and Device.ReadWrite.All      |
 | [group](../resources/group.md)            | GroupMember.ReadWrite.All                               | Not supported.                         | GroupMember.ReadWrite.All       |
 | [orgContact](../resources/device.md)      | GroupMember.ReadWrite.All and OrgContact.Read.All       | Not supported.                         | GroupMember.ReadWrite.All and OrgContact.Read.All       |
 | [servicePrincipal](../resources/group.md) | GroupMember.ReadWrite.All and Application.ReadWrite.All | Not supported.                         | GroupMember.ReadWrite.All and Application.ReadWrite.All |
@@ -55,7 +55,7 @@ The following table shows the least privileged permission that's required by eac
 
 ```http
 POST /groups/{group-id}/members/$ref
-PATCH /groups/{group-id}/members
+PATCH /groups/{group-id}
 ```
 
 ## Request headers
@@ -69,7 +69,7 @@ PATCH /groups/{group-id}/members
 
 When using the `POST /groups/{group-id}/members/$ref` syntax, supply a JSON object that contains an **@odata.id** property with a reference by ID to a supported group member object type.
 
-When using the `PATCH /groups/{group-id}/members` syntax, supply a JSON object that contains a **members@odata.bind** property with one or more references by IDs to a supported group member object type. That is:
+When using the `PATCH /groups/{group-id}` syntax, supply a JSON object that contains a **members@odata.bind** property with one or more references by IDs to a supported group member object type. That is:
 - For Microsoft 365 groups, only `https://graph.microsoft.com/v1.0/directoryObjects/{id}` and `https://graph.microsoft.com/v1.0/groups/{id}` is allowed where `{id}` must be a user because only users can members of Microsoft 365 groups.
 - For security groups, the following ID references are allowed:
   - `https://graph.microsoft.com/v1.0/directoryObjects/{id}` where `{id}` must belong to a user, security group, device, service principal, or organizational contact.
@@ -81,7 +81,7 @@ When using the `PATCH /groups/{group-id}/members` syntax, supply a JSON object t
 ## Response
 
 If successful, this method returns a `204 No Content` response code. It returns a `400 Bad Request` response code when the object is already a member of the group or is unsupported as a group member. It returns a `404 Not Found` response code when the object being added doesn't exist. It returns `403 Unauthorized` in one of the following scenarios:
-- You're attempting to add a member to a [group that can't be managed through Microsoft Graph](../resources/groups-overview.md#group-types-in-microsoft-entra-id-and-microsoft-graph). This API supports only security and Microsoft 365 groups.
+- You're attempting to add a member to a [group that can't be managed through Microsoft Graph](../resources/groups-overview.md#types-of-groups-supported-in-microsoft-graph). This API supports only security and Microsoft 365 groups.
 - You're attempting to add a member you don't have permissions to add. Refer to the preceding [Permissions](#permissions) section for the permissions required to add different member types.
 - You're attempting to add a member to a role-assignable group and you don't have the required permissions.
 
@@ -111,10 +111,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/add-group-member-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/add-group-member-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -162,6 +158,7 @@ This example shows how to add multiple members to a group with OData bind suppor
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "add_multiple_members_to_group"
@@ -179,6 +176,36 @@ Content-type: application/json
     ]
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/add-multiple-members-to-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/add-multiple-members-to-group-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/add-multiple-members-to-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/add-multiple-members-to-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/add-multiple-members-to-group-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/add-multiple-members-to-group-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/add-multiple-members-to-group-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

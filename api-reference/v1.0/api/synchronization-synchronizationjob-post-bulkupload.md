@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/synchronization-synchronizationjob-post-bulkupload-permissions.md)]
 
 > [!NOTE]
-> This API is primarily meant for use within an application or service responsible for processing authoritative identity data and uploading it to Microsoft Entra ID. Tenant admins can either [configure a service principal or managed identity](/azure/active-directory/app-provisioning/inbound-provisioning-api-grant-access) to grant permission to perform the upload. There is no separate user-assignable Microsoft Entra built-in directory role for this API. Outside of applications that have acquired `SynchronizationData-User.Upload` permission with admin consent, only admin users with *Global Administrator* role can invoke the API.
+> This API is primarily meant for use within an application or service responsible for processing authoritative identity data and uploading it to Microsoft Entra ID. Tenant admins can either [configure a service principal or managed identity](/azure/active-directory/app-provisioning/inbound-provisioning-api-grant-access) to grant permission to perform the upload. There is no separate user-assignable Microsoft Entra built-in directory role for this API. Outside of applications that have acquired `SynchronizationData-User.Upload` permission with admin consent, admin users with the User Administrator role can invoke the API.
 
 ## HTTP request
 
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 POST /servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/bulkUpload
 ```
 
@@ -54,10 +54,10 @@ If successful, returns a `202 Accepted` response and nothing in the response bod
 
 | HTTP Status Code | Explanation |
 |:---|:---|
-| 202 (Accepted) | The bulk request is staged for execution and will be processed by the associated provisioning job. The `Location` key in the response header points to the [provisioning logs endpoint](../api/provisioningobjectsummary-list.md) that can be used to check the status of the bulk request provisioning. |
+| 202 (Accepted) | The bulk request is staged for execution and is processed by the associated provisioning job. The `Location` key in the response header points to the [provisioning logs endpoint](../api/provisioningobjectsummary-list.md) that can be used to check the status of the bulk request provisioning. |
 | 400 (Bad Request) | Request is unparseable, syntactically incorrect, or violates the schema. The most common cause of this error is the absence of the `Content-Type` request header. Make sure it's present and set to `application/scim+json`.|
 | 401 (Unauthorized) | The authorization header is invalid or missing. Ensure that the authorization header has a valid access token. |
-| 403 (Forbidden) |  The operation isn't permitted based on the supplied authorization header. Make sure that the API client has the `SynchronizationData-User.Upload` permission and for delegated scenarios, the caller must be a global administrator.|
+| 403 (Forbidden) |  The operation isn't permitted based on the supplied authorization header. Make sure that the API client has the `SynchronizationData-User.Upload` permission and for delegated scenarios, the caller must be a User Administrator.|
 
 ## Examples
 
@@ -237,7 +237,7 @@ HTTP/1.1 202 Accepted
 Content-Type: application/scim+json
 client-request-id: 92cd10f6-fcc3-5d61-098e-a6dd35e460ef
 content-length: "0"
-location: "https://graph.microsoft.com/beta/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'"
+location: "https://graph.microsoft.com/v1.0/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'"
 request-id: beeb9ea0-f7e4-4fe7-8507-cd834c88f18b
 
 {}
@@ -426,7 +426,7 @@ HTTP/1.1 202 Accepted
 Content-Type: application/scim+json
 client-request-id: 92cd10f6-fcc3-5d61-098e-a6dd35e460ef
 content-length: "0"
-location: "https://graph.microsoft.com/beta/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'"
+location: "https://graph.microsoft.com/v1.0/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'"
 request-id: beeb9ea0-f7e4-4fe7-8507-cd834c88f18b
 
 {}
@@ -485,12 +485,12 @@ Content-Type: application/scim+json
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Type: application/scim+json
 client-request-id: 92cd20f6-fcc3-5d61-098e-a6dd35e460ef
 content-length: "0"
-location: "https://graph.microsoft.com/beta/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'"
+location: "https://graph.microsoft.com/v1.0/auditLogs/provisioning/?$filter=jobid%20eq%20'API2AAD.b16687d38faf42adb29892cdcaf01c6e.1a03de52-b9c3-4e2c-a1e3-9145aaa8e530'"
 request-id: beec9ea0-f7e4-4fe7-8507-cd834c88f18b
 
 {}

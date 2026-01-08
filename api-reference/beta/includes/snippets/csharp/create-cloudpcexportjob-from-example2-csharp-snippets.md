@@ -18,7 +18,7 @@ var requestBody = new CloudPcExportJob
 		"ManagedDeviceName",
 		"AvgRoundTripTimeInMsP50",
 		"LastConnectionRoundTripTimeInMs",
-		"AvgAvailableBandwidthInMBpsP50",
+		"AvgAvailableBandwidthInMbpsP50",
 		"LastConnectionAvailableBandWidthInMSps",
 		"AvgRemoteSignInTimeInSecP50",
 		"UDPConnectionPercentage",

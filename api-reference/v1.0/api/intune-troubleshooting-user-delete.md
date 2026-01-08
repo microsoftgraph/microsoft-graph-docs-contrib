@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: apiPageType
-ms.date: 03/14/2024
+ms.date: 08/01/2024
 ---
 
 # Delete user
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /users/{usersId}
 ```
 
@@ -52,20 +52,12 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 Here is an example of the request.
-
-<!-- { "blockType": "request" , "name" : "intune_troubleshooting_user_delete_delete_user" }-->
-``` http
-DELETE https://graph.microsoft.com/v1/users/{usersId}
+```http
+DELETE https://graph.microsoft.com/v1.0/users/{usersId}
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response"}-->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
-
-
-
-

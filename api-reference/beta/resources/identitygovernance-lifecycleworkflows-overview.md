@@ -7,6 +7,7 @@ ms.subservice: "entra-id-governance"
 doc_type: conceptualPageType
 ms.topic: overview
 ms.date: 03/12/2024
+ms.custom: sfi-image-nochange
 ---
 
 # Overview of Lifecycle Workflows APIs

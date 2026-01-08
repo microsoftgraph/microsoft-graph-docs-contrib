@@ -1,6 +1,6 @@
 ---
 title: "getHistoricalReport action"
-description: "Not yet documented"
+description: "Intune Reporting Devicemanagementreports Gethistoricalreport Api ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceManagement/reports/getHistoricalReport
 ```
 
@@ -49,14 +49,14 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|name|String|Not yet documented|
-|select|String collection|Not yet documented|
-|search|String|Not yet documented|
-|groupBy|String collection|Not yet documented|
-|orderBy|String collection|Not yet documented|
-|skip|Int32|Not yet documented|
-|top|Int32|Not yet documented|
-|filter|String|Not yet documented|
+|name|String||
+|select|String collection||
+|groupBy|String collection||
+|orderBy|String collection||
+|search|String||
+|skip|Int32||
+|top|Int32||
+|filter|String||
 
 
 
@@ -67,11 +67,9 @@ If successful, this action returns a `200 OK` response code and a Stream in the 
 
 ### Request
 Here is an example of the request.
-
-# [HTTP](#tab/http)
-<!-- { "blockType": "request" , "name" : "intune_reporting_devicemanagementreports_gethistoricalreport_gethistoricalreport_action" }-->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/deviceManagement/reports/getHistoricalReport
+
 Content-type: application/json
 Content-length: 242
 
@@ -80,58 +78,22 @@ Content-length: 242
   "select": [
     "Select value"
   ],
-  "search": "Search value",
   "groupBy": [
     "Group By value"
   ],
   "orderBy": [
     "Order By value"
   ],
+  "search": "Search value",
   "skip": 4,
   "top": 3,
   "filter": "Filter value"
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/intune-reporting-devicemanagementreports-gethistoricalreport-gethistoricalreport-action-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/intune-reporting-devicemanagementreports-gethistoricalreport-gethistoricalreport-action-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/intune-reporting-devicemanagementreports-gethistoricalreport-gethistoricalreport-action-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-reporting-devicemanagementreports-gethistoricalreport-gethistoricalreport-action-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-reporting-devicemanagementreports-gethistoricalreport-gethistoricalreport-action-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/intune-reporting-devicemanagementreports-gethistoricalreport-gethistoricalreport-action-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-reporting-devicemanagementreports-gethistoricalreport-gethistoricalreport-action-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/intune-reporting-devicemanagementreports-gethistoricalreport-gethistoricalreport-action-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph." }-->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 83

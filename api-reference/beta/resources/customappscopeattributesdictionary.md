@@ -15,8 +15,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a dictionary type that holds custom attributes for scope objects in different RBAC providers. The keys might vary based on the implementation from RBAC providers.
-
-Currently only the Exchange Online RBAC provider is supported.
+Inherits from [Dictionary](../resources/dictionary.md). Used by Exchange Online provider and Microsoft Defender XDR Unified RBAC provider.
 
 ## Properties
 

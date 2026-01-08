@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Read the properties and relationships of an [externallyAccessibleAzureBlobContainerFinding](../resources/externallyaccessibleazureblobcontainerfinding.md) object.
 
 ## Permissions
@@ -28,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/azure/findings/{id}/microsoft.graph.externallyAccessibleAzureBlobContainerFinding
 ```
 
@@ -57,7 +59,7 @@ The following example shows a request.
   "name": "get_externallyaccessibleazureblobcontainerfinding"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/MSxFeHRlcm5hbGx5QWNjZXNzaWJsZUF6dXJlQmxvYkNvbnRhaW5lckZpbmRpbmcsNzIzNg/microsoft.graph.externallyAccessibleAzureBlobContainerFinding
 ```
 
@@ -76,7 +78,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.externallyAccessibleAwsStorageBucketFinding"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -94,3 +96,4 @@ Content-Type: application/json
     }
 }
 ```
+

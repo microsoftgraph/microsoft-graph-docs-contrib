@@ -18,7 +18,7 @@ Represents attributes of an item to be attached.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|attachmentType|String| The type of attachment. Possible values are: `file`, `item`, `reference`. Required.|
+|attachmentType|String| The type of attachment. The possible values are: `file`, `item`, `reference`. Required.|
 |contentId|String| The CID or Content-Id of the attachment for referencing for the in-line attachments using the `<img src="cid:contentId">` tag in HTML messages. Optional.|
 |contentType|String|The nature of the data in the attachment. Optional.|
 |isInline|Boolean|`true` if the attachment is an inline attachment; otherwise, `false`. Optional.|

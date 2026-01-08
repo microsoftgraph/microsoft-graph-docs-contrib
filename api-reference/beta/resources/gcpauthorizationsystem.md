@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Represents a GCP authorization system onboarded to Permissions Management.
 
 Inherits from [authorizationSystem](../resources/authorizationsystem.md).
@@ -62,4 +64,5 @@ The following JSON representation shows the resource type.
   "authorizationSystemType": "String"
 }
 ```
+
 

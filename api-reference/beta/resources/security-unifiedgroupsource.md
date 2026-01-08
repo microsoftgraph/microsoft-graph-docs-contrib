@@ -19,7 +19,12 @@ The container for a custodian's group.
 Inherits from [dataSource](../resources/security-datasource.md).
 
 ## Methods
-None.
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List](../api/security-ediscoverycustodian-list-unifiedgroupsources.md)|[microsoft.graph.security.unifiedGroupSource](../resources/security-unifiedgroupsource.md) collection|Get a list of the [unifiedGroupSource](../resources/security-unifiedgroupsource.md) objects associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).|
+|[Create](../api/security-ediscoverycustodian-post-unifiedgroupsources.md)|[microsoft.graph.security.unifiedGroupSource](../resources/security-unifiedgroupsource.md)|Create a new [unifiedGroupSource](../resources/security-unifiedgroupsource.md) object associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).|
+|[Delete](../api/security-unifiedgroupsource-delete.md)|None|Delete a [unifiedGroupSource](../resources/security-unifiedgroupsource.md) object associated with an [ediscoveryCustodian](../resources/security-ediscoverycustodian.md).|
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
@@ -27,7 +32,7 @@ None.
 |createdDateTime|DateTimeOffset|The date and time the **unifiedGroupSource** was created.|
 |displayName|String|The display name of the unified group, which is the name of the group.|
 |id|String|The ID of the **unifiedGroupSource**. This isn't the ID of the actual group.|
-|includedSources|microsoft.graph.security.sourceType|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
+|includedSources|microsoft.graph.security.sourceType|Specifies which sources are included in this group. The possible values are: `mailbox`, `site`.|
 |holdStatus|microsoft.graph.security.dataSourceHoldStatus|The hold status of the **unifiedGroupSource**. The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`.|
 
 ### sourceType values

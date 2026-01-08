@@ -27,7 +27,7 @@ const place = {
     longitude: -122.0,
     accuracy: null,
     altitudeAccuracy: null
- }
+  }
 };
 
 await client.api('/places/Building1RroomList@contoso.com')

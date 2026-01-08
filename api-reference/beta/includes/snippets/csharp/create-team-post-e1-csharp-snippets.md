@@ -12,8 +12,8 @@ using Microsoft.Graph.Beta.Models;
 var requestBody = new Team
 {
 	DisplayName = "My Sample Team",
-	Description = "My Sample Team's Description",
-	FirstChannelName = "My First Channel of the sample team",
+	Description = "My sample team's description",
+	FirstChannelName = "My first channel of the sample team",
 	AdditionalData = new Dictionary<string, object>
 	{
 		{

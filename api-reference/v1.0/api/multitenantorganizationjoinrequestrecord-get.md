@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /tenantRelationships/multiTenantOrganization/joinRequest
 ```
 
@@ -60,16 +60,12 @@ The following example gets the status of a tenant joining a multitenant organiza
   "name": "get_multitenantorganizationjoinrequestrecord"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/tenantRelationships/multiTenantOrganization/joinRequest
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-multitenantorganizationjoinrequestrecord-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-multitenantorganizationjoinrequestrecord-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -108,7 +104,7 @@ The following example shows the response before an added tenant joins a multiten
   "@odata.type": "microsoft.graph.multiTenantOrganizationJoinRequestRecord"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -124,7 +120,7 @@ Content-Type: application/json
 
 The following example shows the response after an added tenant [requests to join a multitenant organization](multitenantorganizationjoinrequestrecord-update.md) and the state is still `pending`.
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -144,7 +140,7 @@ Content-Type: application/json
 
 The following example shows the response after an added tenant successfully joins a multitenant organization and the state is changed to `active`.
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -160,7 +156,7 @@ Content-Type: application/json
 
 The following example shows the response when an added tenant fails to join a multitenant organization. To reset a failed join request, see [Update multiTenantOrganizationJoinRequestRecord](multitenantorganizationjoinrequestrecord-update.md).
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

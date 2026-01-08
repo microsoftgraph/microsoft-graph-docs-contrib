@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: conceptualPageType
 ms.date: 11/07/2024
+ms.topic: install-set-up-deploy
 ---
 
 # Deploy an expedited quality update using Windows Autopatch
@@ -480,4 +481,4 @@ While deployment is in progress, you can pause the deployment by updating its **
 
 ## After a deployment
 
-After all devices assigned to a deployment audience have been initially offered the update, not all devices may have started or completed the update, due to factors like device connectivity. As long as the deployment still exists, it ensures that Windows Update is offering the update to the assigned devices whenever they reconnect.
+After all devices assigned to a deployment audience have been initially offered the update, not all devices might have started or completed the update, due to factors like device connectivity. As long as the deployment still exists, it ensures that Windows Update is offering the update to the assigned devices whenever they reconnect.

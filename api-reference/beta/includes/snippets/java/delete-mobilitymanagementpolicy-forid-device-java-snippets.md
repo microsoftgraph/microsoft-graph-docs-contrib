@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-graphClient.policies().mobileDeviceManagementPolicies().byMobilityManagementPolicyId("{mobilityManagementPolicy-id}").delete();
+graphClient.policies().mobileDeviceManagementPolicies().byMobileDeviceManagementPolicyId("{mobileDeviceManagementPolicy-id}").delete();
 
 
 ```

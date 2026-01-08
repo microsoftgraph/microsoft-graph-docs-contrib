@@ -15,12 +15,12 @@ from msgraph.generated.models.ticket_info import TicketInfo
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = UnifiedRoleAssignmentScheduleRequest(
 	action = UnifiedRoleScheduleRequestActions.SelfActivate,
-	principal_id = "7146daa8-1b4b-4a66-b2f7-cf593d03c8d2",
+	principal_id = "d9771b4c-06c5-491a-92cb-3aa4e225a725",
 	role_definition_id = "fe930be7-5e62-47db-91af-98c3a49a38b1",
 	directory_scope_id = "/",
 	justification = "Need to invalidate all app refresh tokens for Contoso users.",
 	schedule_info = RequestSchedule(
-		start_date_time = "2024-03-25T15:13:00.000Z",
+		start_date_time = "2025-03-21T11:46:00.000Z",
 		expiration = ExpirationPattern(
 			type = ExpirationPatternType.AfterDuration,
 			duration = "PT5H",

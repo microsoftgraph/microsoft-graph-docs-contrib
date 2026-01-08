@@ -10,7 +10,7 @@ from msgraph_beta.generated.solutions.business_scenarios.item.planner.tasks.task
 from kiota_abstractions.base_request_configuration import RequestConfiguration
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 query_params = TasksRequestBuilder.TasksRequestBuilderGetQueryParameters(
-		filter = "location/microsoft.graph.businessScenarioGroupTarget/groupId eq '7a339254-4b2b-4410-b295-c890a16776ee'",
+		filter = "target/microsoft.graph.businessScenarioGroupTarget/groupId eq '7a339254-4b2b-4410-b295-c890a16776ee'",
 )
 
 request_configuration = RequestConfiguration(

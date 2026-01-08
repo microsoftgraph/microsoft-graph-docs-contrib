@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Bookings
+Import-Module Microsoft.Graph.BackupRestore
 
 $params = @{
 	protectionUnitIds = @(
@@ -21,6 +21,6 @@ restorePointPreference = "latest"
 tags = "fastRestore"
 }
 
-Search-MgBackupRestorePoint -BodyParameter $params
+Search-MgSolutionBackupRestorePoint -BodyParameter $params
 
 ```

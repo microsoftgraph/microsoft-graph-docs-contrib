@@ -81,10 +81,6 @@ GET https://graph.microsoft.com/beta/directory/certificateAuthorities/mutualTlsO
 [!INCLUDE [sample-code](../includes/snippets/csharp/certificateauthoritypath-list-mutualtlsoauthconfigurations-permissions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/certificateauthoritypath-list-mutualtlsoauthconfigurations-permissions-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/certificateauthoritypath-list-mutualtlsoauthconfigurations-permissions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -99,6 +95,10 @@ GET https://graph.microsoft.com/beta/directory/certificateAuthorities/mutualTlsO
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/certificateauthoritypath-list-mutualtlsoauthconfigurations-permissions-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/certificateauthoritypath-list-mutualtlsoauthconfigurations-permissions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

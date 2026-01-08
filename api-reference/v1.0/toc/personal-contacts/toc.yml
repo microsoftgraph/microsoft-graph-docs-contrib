@@ -14,6 +14,8 @@ items:
     href: ../../api/contact-update.md
   - name: Delete contact
     href: ../../api/contact-delete.md
+  - name: Permanently delete
+    href: ../../api/contact-permanentdelete.md
   - name: Get contact delta
     href: ../../api/contact-delta.md
   - name: Open extensions
@@ -42,6 +44,8 @@ items:
     href: ../../api/contactfolder-update.md
   - name: Delete contact folder
     href: ../../api/contactfolder-delete.md
+  - name: Permanently delete
+    href: ../../api/contactfolder-permanentdelete.md
   - name: List child folders
     href: ../../api/contactfolder-list-childfolders.md
   - name: Create child folder

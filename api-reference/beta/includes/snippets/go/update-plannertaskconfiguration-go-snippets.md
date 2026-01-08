@@ -10,11 +10,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 // Dependencies
 import (
 	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
 	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  graphsolutions "github.com/microsoftgraph/msgraph-beta-sdk-go/solutions"
 	  //other-imports
 )
 
+headers := abstractions.NewRequestHeaders()
+headers.Add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
+
+configuration := &graphsolutions.BusinessScenariosItemPlannerTaskConfigurationRequestBuilderPatchRequestConfiguration{
+	Headers: headers,
+}
 requestBody := graphmodels.NewPlannerTaskConfiguration()
 editPolicy := graphmodels.NewPlannerTaskPolicy()
 
@@ -22,56 +30,7 @@ editPolicy := graphmodels.NewPlannerTaskPolicy()
 plannerTaskRoleBasedRule := graphmodels.NewPlannerTaskRoleBasedRule()
 defaultRule := "block"
 plannerTaskRoleBasedRule.SetDefaultRule(&defaultRule) 
-role := graphmodels.NewPlannerRelationshipBasedUserType()
-roleKind := graphmodels.RELATIONSHIP_PLANNERUSERROLEKIND 
-role.SetRoleKind(&roleKind) 
-role := graphmodels.DEFAULTRULES_PLANNERRELATIONSHIPUSERROLES 
-role.SetRole(&role) 
-plannerTaskRoleBasedRule.SetRole(role)
 propertyRule := graphmodels.NewPlannerTaskPropertyRule()
-percentComplete := []string {
-	"allow",
-}
-propertyRule.SetPercentComplete(percentComplete)
-ruleKind := graphmodels.TASKRULE_PLANNERRULEKIND 
-propertyRule.SetRuleKind(&ruleKind) 
-assignments := graphmodels.NewPlannerFieldRules()
-defaultRules := []string {
-	"addSelf",
-}
-assignments.SetDefaultRules(defaultRules)
-overrides := []graphmodels.PlannerRuleOverrideable {
-
-}
-assignments.SetOverrides(overrides)
-propertyRule.SetAssignments(assignments)
-plannerTaskRoleBasedRule.SetPropertyRule(propertyRule)
-plannerTaskRoleBasedRule1 := graphmodels.NewPlannerTaskRoleBasedRule()
-defaultRule := "block"
-plannerTaskRoleBasedRule1.SetDefaultRule(&defaultRule) 
-role := graphmodels.NewPlannerRelationshipBasedUserType()
-roleKind := graphmodels.RELATIONSHIP_PLANNERUSERROLEKIND 
-role.SetRoleKind(&roleKind) 
-role := graphmodels.TASKASSIGNEES_PLANNERRELATIONSHIPUSERROLES 
-role.SetRole(&role) 
-plannerTaskRoleBasedRule1.SetRole(role)
-propertyRule := graphmodels.NewPlannerTaskPropertyRule()
-startDate := []string {
-	"allow",
-}
-propertyRule.SetStartDate(startDate)
-dueDate := []string {
-	"allow",
-}
-propertyRule.SetDueDate(dueDate)
-percentComplete := []string {
-	"allow",
-}
-propertyRule.SetPercentComplete(percentComplete)
-order := []string {
-	"allow",
-}
-propertyRule.SetOrder(order)
 ruleKind := graphmodels.TASKRULE_PLANNERRULEKIND 
 propertyRule.SetRuleKind(&ruleKind) 
 references := graphmodels.NewPlannerFieldRules()
@@ -79,26 +38,8 @@ defaultRules := []string {
 	"allow",
 }
 references.SetDefaultRules(defaultRules)
-
-
-plannerRuleOverride := graphmodels.NewPlannerRuleOverride()
-name := "userCreated"
-plannerRuleOverride.SetName(&name) 
-rules := []string {
-	"allow",
-}
-plannerRuleOverride.SetRules(rules)
-plannerRuleOverride1 := graphmodels.NewPlannerRuleOverride()
-name := "applicationCreated"
-plannerRuleOverride1.SetName(&name) 
-rules := []string {
-	"block",
-}
-plannerRuleOverride1.SetRules(rules)
-
 overrides := []graphmodels.PlannerRuleOverrideable {
-	plannerRuleOverride,
-	plannerRuleOverride1,
+
 }
 references.SetOverrides(overrides)
 propertyRule.SetReferences(references)
@@ -107,6 +48,16 @@ defaultRules := []string {
 	"allow",
 }
 checkLists.SetDefaultRules(defaultRules)
+overrides := []graphmodels.PlannerRuleOverrideable {
+
+}
+checkLists.SetOverrides(overrides)
+propertyRule.SetCheckLists(checkLists)
+assignments := graphmodels.NewPlannerFieldRules()
+defaultRules := []string {
+	"allow",
+}
+assignments.SetDefaultRules(defaultRules)
 
 
 plannerRuleOverride := graphmodels.NewPlannerRuleOverride()
@@ -120,35 +71,7 @@ plannerRuleOverride1 := graphmodels.NewPlannerRuleOverride()
 name := "applicationCreated"
 plannerRuleOverride1.SetName(&name) 
 rules := []string {
-	"check",
-}
-plannerRuleOverride1.SetRules(rules)
-
-overrides := []graphmodels.PlannerRuleOverrideable {
-	plannerRuleOverride,
-	plannerRuleOverride1,
-}
-checkLists.SetOverrides(overrides)
-propertyRule.SetCheckLists(checkLists)
-assignments := graphmodels.NewPlannerFieldRules()
-defaultRules := []string {
-	"block",
-}
-assignments.SetDefaultRules(defaultRules)
-
-
-plannerRuleOverride := graphmodels.NewPlannerRuleOverride()
-name := "userCreated"
-plannerRuleOverride.SetName(&name) 
-rules := []string {
-	"removeSelf",
-}
-plannerRuleOverride.SetRules(rules)
-plannerRuleOverride1 := graphmodels.NewPlannerRuleOverride()
-name := "applicationCreated"
-plannerRuleOverride1.SetName(&name) 
-rules := []string {
-	"check",
+	"allow",
 }
 plannerRuleOverride1.SetRules(rules)
 
@@ -168,17 +91,27 @@ overrides := []graphmodels.PlannerRuleOverrideable {
 }
 appliedCategories.SetOverrides(overrides)
 propertyRule.SetAppliedCategories(appliedCategories)
-plannerTaskRoleBasedRule1.SetPropertyRule(propertyRule)
+plannerTaskRoleBasedRule.SetPropertyRule(propertyRule)
+additionalData := map[string]interface{}{
+userType := graphmodels.NewPlannerRelationshipBasedUserType()
+	role := graphmodels.DEFAULTRULES_PLANNERRELATIONSHIPUSERROLES 
+	userType.SetRole(&role) 
+additionalData := map[string]interface{}{
+		"selectionKind" : "relationship", 
+}
+	userType.SetAdditionalData(additionalData)
+	plannerTaskRoleBasedRule.SetUserType(userType)
+}
+plannerTaskRoleBasedRule.SetAdditionalData(additionalData)
 
 rules := []graphmodels.PlannerTaskRoleBasedRuleable {
 	plannerTaskRoleBasedRule,
-	plannerTaskRoleBasedRule1,
 }
 editPolicy.SetRules(rules)
 requestBody.SetEditPolicy(editPolicy)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
-taskConfiguration, err := graphClient.Solutions().BusinessScenarios().ByBusinessScenarioId("businessScenario-id").Planner().TaskConfiguration().Patch(context.Background(), requestBody, nil)
+taskConfiguration, err := graphClient.Solutions().BusinessScenarios().ByBusinessScenarioId("businessScenario-id").Planner().TaskConfiguration().Patch(context.Background(), requestBody, configuration)
 
 
 ```

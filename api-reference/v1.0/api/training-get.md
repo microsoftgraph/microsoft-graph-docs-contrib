@@ -4,7 +4,7 @@ description: "Get an attack simulation training for a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.subservice: "security"
-doc_type: resourcePageType
+doc_type: apiPageType
 ms.date: 04/04/2024
 ---
 
@@ -12,19 +12,16 @@ ms.date: 04/04/2024
 
 Namespace: microsoft.graph
 
-Get an attack simulation [training](../resources/training.md) for a tenant. 
+Get an attack simulation [training](../resources/training.md) for a tenant.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                            |
-|:---------------------------------------|:-----------------------------------------------------------------------|
-| Delegated (work or school account)     | AttackSimulation.Read.All, AttackSimulation.ReadWrite.All              |
-| Delegated (personal Microsoft account) | Not supported.                                                         |
-| Application                            | AttackSimulation.Read.All, AttackSimulation.ReadWrite.All              |
+<!-- { "blockType": "permissions", "name": "training_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/training-get-permissions.md)]
 
 ## HTTP request
 
@@ -32,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/attackSimulation/trainings/{trainingId}
 ```
 
@@ -65,16 +62,12 @@ The following example shows a request.
   "name": "get_training"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/attackSimulation/trainings/21b2b7d1-11ae-a7a8-99c8-9029a4e70cc9
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-training-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-training-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -115,7 +108,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.training"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

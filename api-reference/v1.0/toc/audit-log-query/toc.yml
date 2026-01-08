@@ -1,0 +1,30 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
+items:
+- name: Overview
+  href: ../../resources/security-auditlogquery.md
+- name: Audit log query
+  items:
+  - name: Audit log query
+    href: ../../resources/security-auditlogquery.md
+  - name: List audit log queries
+    href: ../../api/security-auditcoreroot-list-auditlogqueries.md
+  - name: Create audit log query
+    href: ../../api/security-auditcoreroot-post-auditlogqueries.md
+  - name: Get audit log query
+    href: ../../api/security-auditlogquery-get.md
+  - name: List records
+    href: ../../api/security-auditlogquery-list-records.md
+- name: Audit log record
+  items:
+  - name: Audit log record
+    href: ../../resources/security-auditlogrecord.md
+  - name: List
+    href: ../../api/security-auditlogquery-list-records.md
+- name: Complex types
+  items:
+  - name: Audit data
+    href: ../../resources/security-auditdata.md
+  - name: Default audit data
+    href: ../../resources/security-defaultauditdata.md

@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: conceptualPageType
 ms.date: 04/11/2023
+ms.custom: sfi-ga-nochange
 ---
 
 # Overview of custom security attributes using the Microsoft Graph API

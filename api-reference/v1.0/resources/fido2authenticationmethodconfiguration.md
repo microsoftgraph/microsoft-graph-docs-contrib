@@ -1,6 +1,6 @@
 ---
 title: "fido2AuthenticationMethodConfiguration resource type"
-description: "Represents a FIDO2 authentication methods policy"
+description: "Represents a FIDO2 authentication methods policy."
 author: "calvinlui"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
@@ -34,16 +34,17 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 |id|String|The authentication method policy identifier.|
 |isAttestationEnforced|Boolean|Determines whether attestation must be enforced for FIDO2 security key registration.|
 |isSelfServiceRegistrationAllowed|Boolean|Determines if users can register new FIDO2 security keys.|
-|keyRestrictions|[fido2KeyRestrictions](../resources/fido2keyrestrictions.md)|Controls whether key restrictions are enforced on FIDO2 security keys, either allowing or disallowing certain key types as defined by Authenticator Attestation GUID (AAGUID), an identifier that indicates the type (e.g. make and model) of the authenticator.|
-|state|authenticationMethodState|Possible values are: `enabled`, `disabled`.|
+|keyRestrictions|[fido2KeyRestrictions](../resources/fido2keyrestrictions.md)|Controls whether key restrictions are enforced on FIDO2 security keys, either allowing or disallowing certain key types as defined by Authenticator Attestation GUID (AAGUID), an identifier that indicates the type (for example, make and model) of the authenticator.|
+|state|authenticationMethodState|The possible values are: `enabled`, `disabled`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |includeTargets|[authenticationMethodTarget](../resources/authenticationmethodtarget.md) collection|A collection of groups that are enabled to use the authentication method.|
 
+## JSON representation
+
 The following JSON representation shows the resource type.
-The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

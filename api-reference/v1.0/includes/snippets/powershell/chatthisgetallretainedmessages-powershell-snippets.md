@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Users.Functions
+Import-Module Microsoft.Graph.Teams
 
 Get-MgUserChatRetainedMessage -UserId $userId
 

@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -21,8 +21,8 @@ Describes the status for a single FOTA deployment.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|state|[zebraFotaDeploymentState](../resources/intune-androidfotaservice-zebrafotadeploymentstate.md)|See zebraFotaDeploymentState enum for possible values. Possible values are: `pendingCreation`, `createFailed`, `created`, `inProgress`, `completed`, `pendingCancel`, `canceled`, `unknownFutureValue`.|
-|errorCode|[zebraFotaErrorCode](../resources/intune-androidfotaservice-zebrafotaerrorcode.md)|An error code indicating the failure reason, when the deployment state is `createFailed`. Possible values: See zebraFotaErrorCode enum. Possible values are: `success`, `noDevicesFoundInSelectedAadGroups`, `noIntuneDevicesFoundInSelectedAadGroups`, `noZebraFotaEnrolledDevicesFoundForCurrentTenant`, `noZebraFotaEnrolledDevicesFoundInSelectedAadGroups`, `noZebraFotaDevicesFoundForSelectedDeviceModel`, `zebraFotaCreateDeploymentRequestFailure`, `unknownFutureValue`.|
+|state|[zebraFotaDeploymentState](../resources/intune-androidfotaservice-zebrafotadeploymentstate.md)|See zebraFotaDeploymentState enum for possible values. The possible values are: `pendingCreation`, `createFailed`, `created`, `inProgress`, `completed`, `pendingCancel`, `canceled`, `unknownFutureValue`.|
+|errorCode|[zebraFotaErrorCode](../resources/intune-androidfotaservice-zebrafotaerrorcode.md)|An error code indicating the failure reason, when the deployment state is `createFailed`. Possible values: See zebraFotaErrorCode enum. The possible values are: `success`, `noDevicesFoundInSelectedAadGroups`, `noIntuneDevicesFoundInSelectedAadGroups`, `noZebraFotaEnrolledDevicesFoundForCurrentTenant`, `noZebraFotaEnrolledDevicesFoundInSelectedAadGroups`, `noZebraFotaDevicesFoundForSelectedDeviceModel`, `zebraFotaCreateDeploymentRequestFailure`, `unknownFutureValue`.|
 |totalDevices|Int32|An integer that indicates the total number of devices in the deployment.|
 |totalCreated|Int32|An integer that indicates the total number of devices that have a job in the CREATED state. Typically indicates jobs that did not reach the devices. |
 |totalScheduled|Int32|An integer that indicates the total number of devices that received the json and are scheduled. |

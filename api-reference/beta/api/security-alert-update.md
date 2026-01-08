@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /security/alerts_v2/{alertId}
 ```
 
@@ -45,9 +45,10 @@ PATCH /security/alerts_v2/{alertId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|status|microsoft.graph.security.alertStatus|The status of the alert. Possible values are: `new`, `inProgress`, `resolved`, `unknownFutureValue`.|
-|classification|microsoft.graph.security.alertClassification|Specifies the classification of the alert. Possible values are: `unknown`, `falsePositive`, `truePositive`, `informationalExpectedActivity`, `unknownFutureValue`.|
-|determination|microsoft.graph.security.alertDetermination|Specifies the determination of the alert. Possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
+|status|microsoft.graph.security.alertStatus|The status of the alert. The possible values are: `new`, `inProgress`, `resolved`, `unknownFutureValue`.|
+|classification|microsoft.graph.security.alertClassification|Specifies the classification of the alert. The possible values are: `unknown`, `falsePositive`, `truePositive`, `informationalExpectedActivity`, `unknownFutureValue`.|
+|customDetails|microsoft.graph.security.dictionary| User defined custom fields with string values. |
+|determination|microsoft.graph.security.alertDetermination|Specifies the determination of the alert. The possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
 |assignedTo|String|Owner of the incident, or null if no owner is assigned.|
 
 
@@ -67,7 +68,7 @@ The following example shows a request.
   "name": "update_alert_v2"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/security/alerts_v2/da637551227677560813_-961444813
 Content-Type: application/json
 Content-length: 2450
@@ -76,16 +77,13 @@ Content-length: 2450
     "assignedTo": "secAdmin@contoso.com",
     "classification": "truePositive",
     "determination": "malware",
-    "status": "inProgress"
+    "status": "inProgress",
+    "CustomDetails": {"newKey":"newValue"}
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-alert-v2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-alert-v2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -124,7 +122,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -161,6 +159,7 @@ Content-type: application/json
     "lastActivityDateTime": "2021-05-02T07:56:58.222Z",
     "comments": [],
     "evidence": [],
-    "systemTags" : []
+    "systemTags" : [],
+    "customDetails": {"newKey":"newValue"}
 }
 ```

@@ -1,11 +1,11 @@
 ---
 title: "organizationalBrandingProperties resource type"
 description: "Contains details of the organization's branding."
-author: "quievey"
+author: nanguil
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-ms.date: 05/10/2024
+ms.date: 12/01/2025
 ---
 
 # organizationalBrandingProperties resource type

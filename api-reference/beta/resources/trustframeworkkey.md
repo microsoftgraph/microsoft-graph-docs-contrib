@@ -34,7 +34,7 @@ Represents a JWK (JSON Web Key). TrustFrameworkKey is a JSON data structure that
 |q|String|RSA Key - second prime. The field isn't readable.|
 |qi|String|RSA Key - Coefficient. The field isn't readable.|
 |status|trustFrameworkKeyStatus|Status of the key. The possible values are: `enabled`, `disabled`, `unknownFutureValue`.|
-|use|String|The **use** (public key use) parameter identifies the intended use of the public key. The **use** parameter is employed to indicate whether a public key is used for encrypting data or verifying the signature on data. Possible values are: `sig` (signature), `enc` (encryption).|
+|use|String|The **use** (public key use) parameter identifies the intended use of the public key. The **use** parameter is employed to indicate whether a public key is used for encrypting data or verifying the signature on data. The possible values are: `sig` (signature), `enc` (encryption).|
 |x5c|String collection|The **x5c** (X.509 certificate chain) parameter contains a chain of one or more PKIX certificates. For more information, see [RFC 5280](https://tools.ietf.org/html/rfc5280).|
 |x5t|String|The **x5t** (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (also known as digest) of the DER encoding of an X.509 certificate. For more information, see [RFC 5280](https://tools.ietf.org/html/rfc5280).|
 

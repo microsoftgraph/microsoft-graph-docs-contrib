@@ -25,7 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /security/labels/departments/{departmentTemplateId}/$ref
 DELETE /security/labels/retentionLabels/{retentionLabelId}/descriptors/departmentTemplate/$ref
 ```
@@ -53,16 +53,12 @@ Here's an example of a request.
   "name": "delete_departmenttemplate"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/v1.0/security/labels/departments/6cf65e55-6baf-44ff-5dcc-08d8de97b1d5
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-departmenttemplate-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-departmenttemplate-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -99,7 +95,7 @@ Here's an example of the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

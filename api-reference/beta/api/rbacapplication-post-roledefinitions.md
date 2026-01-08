@@ -20,6 +20,7 @@ Create a new [unifiedRoleDefinition](../resources/unifiedroledefinition.md) obje
 The following RBAC providers are currently supported:
 - Cloud PC
 - device management (Intune)
+- Defender (Microsoft Defender XDR)
 - directory (Microsoft Entra ID)
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -38,12 +39,17 @@ The following tables show the least privileged permission or permissions require
 <!-- { "blockType": "permissions", "name": "rbacapplication_post_roledefinitions_2" } -->
 [!INCLUDE [permissions-table](../includes/permissions/rbacapplication-post-roledefinitions-2-permissions.md)]
 
+### For a Defender provider
+
+<!-- { "blockType": "permissions", "name": "rbacapplication_post_roledefinitions_3" } -->
+[!INCLUDE [permissions-table](../includes/permissions/rbacapplication-post-roledefinitions-3-permissions.md)]
+
 <a name='for-a-directory-azure-ad-provider'></a>
 
 ### For a directory (Microsoft Entra ID) provider
 
-<!-- { "blockType": "permissions", "name": "rbacapplication_post_roledefinitions_3" } -->
-[!INCLUDE [permissions-table](../includes/permissions/rbacapplication-post-roledefinitions-3-permissions.md)]
+<!-- { "blockType": "permissions", "name": "rbacapplication_post_roledefinitions_4" } -->
+[!INCLUDE [permissions-table](../includes/permissions/rbacapplication-post-roledefinitions-4-permissions.md)]
 
 [!INCLUDE [rbac-role-definition-apis-write](../includes/rbac-for-apis/rbac-role-definition-apis-write.md)]
 
@@ -53,6 +59,12 @@ To create a role definition for a device management provider:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /roleManagement/deviceManagement/roleDefinitions
+```
+
+To create a role definition for a Defender provider:
+<!-- { "blockType": "ignored" } -->
+```http
+POST /roleManagement/defender/roleDefinitions
 ```
 
 To create a role definition for a directory provider:
@@ -121,10 +133,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroledefinition-from-rbacapplication-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-unifiedroledefinition-from-rbacapplication-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -235,10 +243,6 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroledefinition-from-rbacapplication-cloudpc-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-unifiedroledefinition-from-rbacapplication-cloudpc-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroledefinition-from-rbacapplication-cloudpc-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -298,5 +302,93 @@ Content-type: application/json
         }
     ],
     "resourceScopes":["/"]
+}
+```
+
+## Example 3: Create a custom role for a Defender provider
+
+### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_unifiedroledefinition_from_rbacapplication_defender"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/roleManagement/defender/roleDefinitions
+Content-type: application/json
+
+{
+  "description": "Role 1 description",
+  "displayName": "Role 1",
+  "rolePermissions":
+    [
+        {
+            "allowedResourceActions": 
+            [
+                "microsoft.xdr/securityposture/read"
+            ]
+        }
+    ]
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroledefinition-from-rbacapplication-defender-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroledefinition-from-rbacapplication-defender-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-unifiedroledefinition-from-rbacapplication-defender-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-unifiedroledefinition-from-rbacapplication-defender-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-unifiedroledefinition-from-rbacapplication-defender-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-unifiedroledefinition-from-rbacapplication-defender-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response
+
+The following example shows the response.
+> **Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleDefinition"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/defender/roleDefinitions/$entity",
+    "id": "d5eec5e0-6992-4c6b-b430-0f833f1a815b",
+    "description": "Role 1 description",
+    "displayName": "Role 1",
+    "rolePermissions": [
+        {
+            "allowedResourceActions": [
+                "microsoft.xdr/securityposture/read"
+            ]
+        }
+    ]
 }
 ```

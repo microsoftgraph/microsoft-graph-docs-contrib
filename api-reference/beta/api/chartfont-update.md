@@ -50,7 +50,7 @@ In the request body, supply the values for relevant fields that should be update
 |italic|Boolean|Represents the italic status of the font.|
 |name|string|Font name (for example "Calibri")|
 |size|double|Size of the font (for example, 11)|
-|underline|string|Type of underline applied to the font. Possible values are: `None`, `Single`.|
+|underline|string|Type of underline applied to the font. The possible values are: `None`, `Single`.|
 
 ## Response
 
@@ -81,10 +81,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-chartfont-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-chartfont-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

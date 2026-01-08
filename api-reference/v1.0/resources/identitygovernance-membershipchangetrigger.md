@@ -19,7 +19,7 @@ Inherits from [microsoft.graph.identityGovernance.workflowExecutionTrigger](../r
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|changeType|microsoft.graph.identityGovernance.membershipChangeType|Defines what change that happens to the workflow group to trigger the [workflowExecutionTrigger](../resources/identitygovernance-workflowexecutiontrigger.md). Possible values are: `add`, `remove`, `unknownFutureValue`.|
+|changeType|microsoft.graph.identityGovernance.membershipChangeType|Defines what change that happens to the workflow group to trigger the [workflowExecutionTrigger](../resources/identitygovernance-workflowexecutiontrigger.md). The possible values are: `add`, `remove`, `unknownFutureValue`.|
 
 ## Relationships
 None.

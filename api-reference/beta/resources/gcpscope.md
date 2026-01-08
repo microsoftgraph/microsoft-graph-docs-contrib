@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Represents the service and resource type of a GCP resource. For example, a compute instance resource has a `compute` **service** and `instances` **resourceType**.
 
 ## Properties
@@ -40,4 +42,5 @@ The following JSON representation shows the resource type.
   "resourceType": "String"
 }
 ```
+
 

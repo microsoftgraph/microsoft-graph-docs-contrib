@@ -4,6 +4,7 @@ description: "Build experiences that cross devices and platforms seamlessly by u
 ms.localizationpriority: medium
 ms.subservice: "project-rome"
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Build cross-device apps powered by Project Rome

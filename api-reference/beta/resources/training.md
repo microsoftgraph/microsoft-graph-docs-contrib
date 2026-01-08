@@ -30,7 +30,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|availabilityStatus|trainingAvailabilityStatus|The training availability status. Possible values are: `unknown`, `notAvailable`, `available`, `archive`, `delete`, `unknownFutureValue`.|
+|availabilityStatus|trainingAvailabilityStatus|The training availability status. The possible values are: `unknown`, `notAvailable`, `available`, `archive`, `delete`, `unknownFutureValue`.|
 |createdBy|[emailIdentity](../resources/emailidentity.md)|The identity of the user who created the training.|
 |createdDateTime|DateTimeOffset|The date and time when the training was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |customUrl|String|The training URL|
@@ -41,10 +41,10 @@ Inherits from [entity](../resources/entity.md).
 |id|String|The unique identifier for the **training** object. Inherited from [entity](../resources/entity.md).|
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|The identity of the user who last modified the training.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the training was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|source|[simulationContentSource](../resources/simulation.md#simulationcontentsource-values)|The source of the training content. Possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
+|source|[simulationContentSource](../resources/simulation.md#simulationcontentsource-values)|The source of the training content. The possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
 |supportedLocales|String collection|The supported locales for content for the associated training.|
 |tags|String collection|Training tags.|
-|type|trainingType|The type of training. Possible values are: `unknown`, `phishing`, `unknownFutureValue`.|
+|type|trainingType|The type of training. The possible values are: `unknown`, `phishing`, `unknownFutureValue`.|
 
 ## Relationships
 

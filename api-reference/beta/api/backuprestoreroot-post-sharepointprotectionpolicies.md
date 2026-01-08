@@ -93,10 +93,6 @@ POST https://graph.microsoft.com/beta/solutions/backupRestore/sharePointProtecti
 [!INCLUDE [sample-code](../includes/snippets/csharp/sharepointprotectionpolicy-create-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/sharepointprotectionpolicy-create-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/sharepointprotectionpolicy-create-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -143,6 +139,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/prote
   "id": "b218eb4a-ea72-42bd-8f0b-d0bbf794bec7",
   "displayName": "SharePoint Protection Policy",
   "status": "inactive",
+  "isEnabled": false,
   "createdBy": {
     "application": {
       "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",

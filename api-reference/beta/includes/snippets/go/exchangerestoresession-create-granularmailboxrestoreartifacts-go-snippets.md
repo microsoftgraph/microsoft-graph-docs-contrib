@@ -20,10 +20,8 @@ requestBody := graphmodels.NewExchangeRestoreSession()
 
 granularMailboxRestoreArtifact := graphmodels.NewGranularMailboxRestoreArtifact()
 restorePoint := graphmodels.NewRestorePoint()
-additionalData := map[string]interface{}{
-	"@odata.id" : "1f1fccc3-a642-4f61-bf49-f37b9a888279", 
-}
-restorePoint.SetAdditionalData(additionalData)
+id := "1f1fccc3-a642-4f61-bf49-f37b9a888279"
+restorePoint.SetId(&id) 
 granularMailboxRestoreArtifact.SetRestorePoint(restorePoint)
 destinationType := graphmodels.INPLACE_DESTINATIONTYPE 
 granularMailboxRestoreArtifact.SetDestinationType(&destinationType) 

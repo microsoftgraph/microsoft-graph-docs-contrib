@@ -13,6 +13,8 @@ from msgraph_beta.generated.models.cloud_pc_provisioning_policy_image_type impor
 from msgraph_beta.generated.models.cloud_pc_windows_settings import CloudPcWindowsSettings
 from msgraph_beta.generated.models.cloud_pc_windows_setting import CloudPcWindowsSetting
 from msgraph_beta.generated.models.cloud_pc_provisioning_type import CloudPcProvisioningType
+from msgraph_beta.generated.models.cloud_pc_user_settings_persistence_configuration import CloudPcUserSettingsPersistenceConfiguration
+from msgraph_beta.generated.models.cloud_pc_user_settings_persistence_storage_size_category import CloudPcUserSettingsPersistenceStorageSizeCategory
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = CloudPcProvisioningPolicy(
 	odata_type = "#microsoft.graph.cloudPcProvisioningPolicy",
@@ -40,6 +42,10 @@ request_body = CloudPcProvisioningPolicy(
 		locale = "en-US",
 	),
 	provisioning_type = CloudPcProvisioningType.Dedicated,
+	user_settings_persistence_configuration = CloudPcUserSettingsPersistenceConfiguration(
+		user_settings_persistence_enabled = True,
+		user_settings_persistence_storage_size_category = CloudPcUserSettingsPersistenceStorageSizeCategory.FourGB,
+	),
 	additional_data = {
 			"domain_join_configuration" : {
 					"domain_join_type" : "hybridAzureADJoin",

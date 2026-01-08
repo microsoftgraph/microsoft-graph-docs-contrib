@@ -8,9 +8,11 @@ items:
   items:
   - name: Site
     href: ../../resources/site.md
-  - name: Get root site
+  - name: Create
+    href: ../../api/site-post-sites.md
+  - name: Get
     href: ../../api/site-get.md
-  - name: Get site
+  - name: Get root site
     href: ../../api/site-get.md
   - name: Get site by path
     href: ../../api/site-getbypath.md
@@ -64,10 +66,22 @@ items:
     href: ../../api/site-post-documentprocessingjobs.md
   - name: List operations
     href: ../../api/site-list-operations.md
+  - name: Get operation status
+    href: ../../api/site-getoperationstatus.md
   - name: Get site settings
     href: ../../api/sitesettings-get.md
   - name: Get delta
     href: ../../api/site-delta.md
+  - name: Open extensions
+    items:
+    - name: Create open extension
+      href: ../../api/opentypeextension-post-opentypeextension.md
+    - name: Get open extension
+      href: ../../api/opentypeextension-get.md
+    - name: Update open extension
+      href: ../../api/opentypeextension-update.md
+    - name: Delete open extension
+      href: ../../api/opentypeextension-delete.md
 - name: List
   items:
   - name: List
@@ -152,6 +166,8 @@ items:
   items:
   - name: List item
     href: ../../resources/listitem.md
+  - name: List
+    href: ../../api/listitem-list.md
   - name: Create
     href: ../../api/listitem-create.md
   - name: Get
@@ -211,8 +227,8 @@ items:
   - name: List
     href: ../../api/recyclebin-list-items.md
   - name: Delete
-    href: ../../api/filestoragecontainer-delete-recyclebinitem.md
-  - name: Restore
+    href: ../../api/recyclebinitem-delete.md
+  - name: Restore recycleBinItem by driveItemId
     href: ../../api/filestoragecontainer-restore-recyclebinitem.md
 - name: Rich long running operation
   items:
@@ -314,6 +330,8 @@ items:
       href: ../../api/sitepage-getwebpartsbyposition.md
     - name: Save as template
       href: ../../api/sitepage-saveastemplate.md
+    - name: Create from template
+      href: ../../api/sitepage-createfromtemplate.md
     - name: Horizontal section
       items:
       - name: Horizontal section
@@ -444,3 +462,7 @@ items:
       href: ../../api/termstore-term-list-relations.md
     - name: Create
       href: ../../api/termstore-relation-post.md
+- name: Complex types
+  items:
+  - name: Identity input
+    href: ../../resources/identityinput.md

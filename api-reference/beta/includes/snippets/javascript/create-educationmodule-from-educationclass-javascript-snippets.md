@@ -12,6 +12,7 @@ const client = Client.init(options);
 
 const educationModule = {
   displayName: 'Module 2',
+  languageTag: 'en-GB',
   description: 'Description for Module 2'
 };
 

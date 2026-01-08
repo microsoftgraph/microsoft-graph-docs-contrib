@@ -1,7 +1,7 @@
 ---
 title: "allDomains resource type"
 description: "A derived complex type that defines the type of domains that Microsoft Entra ID validates."
-author: "rahul-nagraj"
+author: "vimrang"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType

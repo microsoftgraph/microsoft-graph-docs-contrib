@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "24dd5b12-32ad-4764-9db1-e505a7b3914f",
+          "ApiChange": "Member",
+          "ChangedApiName": "aiModelProvider",
+          "ChangeType": "Addition",
+          "Description": "Added the `aiModelProvider` member to the **appCategory** enumeration.",
+          "Target": "appCategory"
+        },
+        {
+          "Id": "24dd5b12-32ad-4764-9db1-e505a7b3914f",
+          "ApiChange": "Member",
+          "ChangedApiName": "mcpServer",
+          "ChangeType": "Addition",
+          "Description": "Added the `mcpServer` member to the **appCategory** enumeration.",
+          "Target": "appCategory"
+        },
+        {
+          "Id": "24dd5b12-32ad-4764-9db1-e505a7b3914f",
+          "ApiChange": "Member",
+          "ChangedApiName": "clientAiApp",
+          "ChangeType": "Addition",
+          "Description": "Added the `clientAiApp` member to the **appCategory** enumeration.",
+          "Target": "appCategory"
+        }
+      ],
+      "Id": "24dd5b12-32ad-4764-9db1-e505a7b3914f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-05-26T08:24:47.4400671Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c4d10034-f6d7-4d64-8cc1-d0b8e00447b4",
           "ApiChange": "Relationship",
           "ChangedApiName": "dataDiscovery",

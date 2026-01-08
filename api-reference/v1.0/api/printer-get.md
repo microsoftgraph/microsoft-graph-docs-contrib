@@ -32,7 +32,7 @@ To use the Universal Print service, the user or app's tenant must have an active
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /print/printers/{id}
 GET /print/shares/{id}/printer
 ```
@@ -69,16 +69,12 @@ By default, the response doesn't contain [printerCapabilities](../resources/prin
   "name": "get_printer"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/print/printers/{printerId}
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-printer-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-printer-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -115,7 +111,7 @@ GET https://graph.microsoft.com/v1.0/print/printers/{printerId}
   "@odata.type": "microsoft.graph.printer"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -197,16 +193,12 @@ Content-Type: application/json
   "name": "get_printer_capabilities"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/print/printers/{printerId}?$select=id,displayName,capabilities
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-printer-capabilities-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-printer-capabilities-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -244,7 +236,7 @@ GET https://graph.microsoft.com/v1.0/print/printers/{printerId}?$select=id,displ
   "@odata.type": "microsoft.graph.printer"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

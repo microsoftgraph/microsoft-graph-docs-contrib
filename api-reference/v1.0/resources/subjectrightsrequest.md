@@ -38,7 +38,7 @@ Inherits from [entity](../resources/entity.md).
 |createdBy|[identitySet](../resources/identityset.md)|Identity information for the entity that created the request.|
 |createdDateTime|DateTimeOffset|The date and time when the request was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 |dataSubject|[dataSubject](../resources/datasubject.md)|Information about the data subject.|
-|dataSubjectType|dataSubjectType|The type of the data subject. Possible values are: `customer`, `currentEmployee`, `formerEmployee`, `prospectiveEmployee`, `student`, `teacher`, `faculty`, `other`, `unknownFutureValue`.|
+|dataSubjectType|dataSubjectType|The type of the data subject. The possible values are: `customer`, `currentEmployee`, `formerEmployee`, `prospectiveEmployee`, `student`, `teacher`, `faculty`, `other`, `unknownFutureValue`.|
 |description|String|Description for the request.|
 |displayName|String|The name of the request.|
 |externalId|String|The external ID for the request that is immutable after creation and is used for tracking the request for the external system. This property is defined only for APIs accessed using the `\security` query path and not the `\privacy` query path.|
@@ -55,8 +55,8 @@ Inherits from [entity](../resources/entity.md).
 |regulations|String collection|List of regulations that this request fulfill.|
 |siteLocations|[subjectRightsRequestSiteLocation](../resources/subjectrightsrequestsitelocation.md)| The SharePoint and OneDrive site locations that should be searched. This property is defined only for APIs accessed using the `\security` query path and not the `\privacy` query path.|
 |stages|[subjectRightsRequestStageDetail](../resources/subjectrightsrequeststagedetail.md) collection|Information about the different stages for the request.|
-|status|subjectRightsRequestStatus|The status of the request. Possible values are: `active`, `closed`, `unknownFutureValue`.|
-|type|subjectRightsRequestType|The type of the request. Possible values are: `export`, `delete`, `access`, `tagForAction`, `unknownFutureValue`.|
+|status|subjectRightsRequestStatus|The status of the request. The possible values are: `active`, `closed`, `unknownFutureValue`.|
+|type|subjectRightsRequestType|The type of the request. The possible values are: `export`, `delete`, `access`, `tagForAction`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|

@@ -12,6 +12,8 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-deprecation-disclaimer](../../includes/beta-deprecation-disclaimer.md)]
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents details about async operations running on a Microsoft Teams-enabled [device](../resources/teamworkdevice.md), including operation status. Any async operation running on a device creates a **teamworkDeviceOperation** object.

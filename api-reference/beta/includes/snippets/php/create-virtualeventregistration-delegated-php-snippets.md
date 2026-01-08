@@ -15,7 +15,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new VirtualEventRegistration();
 $externalRegistrationInformation = new VirtualEventExternalRegistrationInformation();
-$externalRegistrationInformation->setReferrer('Facebook');
+$externalRegistrationInformation->setReferrer('Fabrikam');
 $externalRegistrationInformation->setRegistrationId('myExternalRegistrationId');
 $requestBody->setExternalRegistrationInformation($externalRegistrationInformation);
 $requestBody->setPreferredTimezone('Pacific Standard Time');

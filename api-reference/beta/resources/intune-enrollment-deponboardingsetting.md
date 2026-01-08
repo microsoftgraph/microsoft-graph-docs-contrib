@@ -5,14 +5,14 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/13/2024
+ms.date: 08/01/2024
 ---
 
 # depOnboardingSetting resource type
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -33,6 +33,7 @@ The depOnboardingSetting represents an instance of the Apple DEP service being o
 |[shareForSchoolDataSyncService action](../api/intune-enrollment-deponboardingsetting-shareforschooldatasyncservice.md)|None||
 |[unshareForSchoolDataSyncService action](../api/intune-enrollment-deponboardingsetting-unshareforschooldatasyncservice.md)|None||
 |[getExpiringVppTokenCount function](../api/intune-enrollment-deponboardingsetting-getexpiringvpptokencount.md)|Int32||
+|[releaseAppleDevices action](../api/intune-enrollment-deponboardingsetting-releaseappledevices.md)|None||
 
 ## Properties
 |Property|Type|Description|
@@ -45,7 +46,7 @@ The depOnboardingSetting represents an instance of the Apple DEP service being o
 |lastSyncTriggeredDateTime|DateTimeOffset|When Intune last requested a sync.|
 |shareTokenWithSchoolDataSyncService|Boolean|Whether or not the Dep token sharing is enabled with the School Data Sync service.|
 |lastSyncErrorCode|Int32|Error code reported by Apple during last dep sync.|
-|tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Gets or sets the Dep Token Type. Possible values are: `none`, `dep`, `appleSchoolManager`.|
+|tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Gets or sets the Dep Token Type. The possible values are: `none`, `dep`, `appleSchoolManager`.|
 |tokenName|String|Friendly Name for Dep Token|
 |syncedDeviceCount|Int32|Gets synced device count|
 |dataSharingConsentGranted|Boolean|Consent granted for data sharing with Apple Dep Service|
@@ -56,6 +57,8 @@ The depOnboardingSetting represents an instance of the Apple DEP service being o
 |:---|:---|:---|
 |defaultIosEnrollmentProfile|[depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md)|Default iOS Enrollment Profile|
 |defaultMacOsEnrollmentProfile|[depMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile.md)|Default MacOs Enrollment Profile|
+|defaultVisionOSEnrollmentProfile|[depVisionOSEnrollmentProfile](../resources/intune-enrollment-depvisionosenrollmentprofile.md)|Default VisionOS Enrollment Profile|
+|defaultTvOSEnrollmentProfile|[depTvOSEnrollmentProfile](../resources/intune-enrollment-deptvosenrollmentprofile.md)|Default TvOS Enrollment Profile|
 |enrollmentProfiles|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) collection|The enrollment profiles.|
 |importedAppleDeviceIdentities|[importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md) collection|The imported Apple device identities.|
 

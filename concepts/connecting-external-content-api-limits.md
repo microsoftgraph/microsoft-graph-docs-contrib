@@ -1,25 +1,17 @@
 ---
-title: "Microsoft Graph connectors API limits"
-description: "Keep implementation and operational limits in mind when designing Microsoft Graph connectors. Includes connection, schema, and group limits."
+title: "Microsoft 365 Copilot connectors API limits"
+description: "Keep implementation and operational limits in mind when designing Copilot connectors. Includes connection, schema, and group limits."
 author: mecampos
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.subservice: search
-ms.date: 11/07/2024
+ms.date: 05/15/2025
+ms.topic: article
 ---
 
-# Microsoft Graph connectors API limits
+# Copilot connectors API limits
 
-This article describes implementation and operational limits for Microsoft Graph connectors. Keep these limits in mind when designing connectors.
-
-## Connection limits
-
-| Limit type | Limit |
-| ---------- | ----- |
-| [Connection](/graph/api/resources/externalconnectors-externalconnection) resources per Microsoft 365 tenant | 30 |
-| [Items](/graph/api/resources/externalconnectors-externalitem) per connection | 5,000,000 |
-| Connection byte size | 500 GB |
-| Items per tenant | 50,000,000 |
+This article describes implementation and operational limits for Microsoft 365 Copilot connectors (formerly Microsoft Graph connectors). Keep these limits in mind when designing connectors.
 
 ## Schema limits
 
@@ -39,7 +31,6 @@ This article describes implementation and operational limits for Microsoft Graph
 
 | Limit type | Limit |
 | ---------- | ----- |
-| Throughput limit to ingest items through a connection | 25 items/sec |
 | Item size; this limit applies to the request body when [ingesting and indexing an item](/graph/api/externalconnectors-externalconnection-put-items) | 4 MB |
 | Number of [activities](/graph/api/resources/externalconnectors-externalactivity); this is the [throttling](#throttling) threshold per activities call | 20 activities |
 | Property size | N/A |

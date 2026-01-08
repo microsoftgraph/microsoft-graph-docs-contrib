@@ -1,5 +1,5 @@
 ---
-title: "Get governanceRoleSetting"
+title: "Get governanceRoleSetting (deprecated)"
 description: "Retrieve the properties and relationships of a governanceRoleSetting."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -9,7 +9,7 @@ ROBOTS: NOINDEX
 ms.date: 08/13/2024
 --- 
 
-# Get governanceRoleSetting
+# Get governanceRoleSetting (deprecated)
 
 Namespace: microsoft.graph
 
@@ -65,10 +65,6 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleSetting
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-governancerolesetting-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-governancerolesetting-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

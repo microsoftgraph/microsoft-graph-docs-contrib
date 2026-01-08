@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Get a list of the [inactiveGroupFinding](../resources/inactivegroupfinding.md) objects and their properties in AWS, Azure, and GCP environments.
 
 ## Permissions
@@ -87,10 +89,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-inactivegroupfinding-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-inactivegroupfinding-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-inactivegroupfinding-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -126,7 +124,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.inactiveGroupFinding)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -196,3 +194,4 @@ Content-Type: application/json
     ]
 }
 ```
+

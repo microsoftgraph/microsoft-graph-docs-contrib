@@ -39,6 +39,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /me/licenseDetails
 GET /users/{id}/licenseDetails
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 ## Optional query parameters
 This method supports the `$select` query parameter. For general information, see [OData query parameters](/graph/query-parameters).
 
@@ -68,10 +70,6 @@ GET https://graph.microsoft.com/beta/me/licenseDetails
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-licensedetails-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-licensedetails-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

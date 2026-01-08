@@ -5,14 +5,14 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/12/2024
+ms.date: 08/01/2024
 ---
 
 # userExperienceAnalyticsAnomalyCorrelationGroupOverview resource type
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -34,7 +34,7 @@ The user experience analytics anomaly correlation group overview entity contains
 |anomalyId|String|The unique identifier of the anomaly. Anomaly details such as name and type can be found in the UserExperienceAnalyticsAnomalySeverityOverview entity.|
 |correlationGroupId|String|The unique identifier for the correlation group which will uniquely identify one of the correlation group within an anomaly. The correlation Id can be mapped to the correlation group name by concatinating the correlation group features. Example of correlation group name which is the indicative of concatenated features names are  for names, Contoso manufacture 4.4.1 and Windows 11.22621.1485.|
 |correlationGroupFeatures|[userExperienceAnalyticsAnomalyCorrelationGroupFeature](../resources/intune-devices-userexperienceanalyticsanomalycorrelationgroupfeature.md) collection|Describes the features of a device that are shared between all devices in a correlation group.|
-|correlationGroupPrevalence|[userExperienceAnalyticsAnomalyCorrelationGroupPrevalence](../resources/intune-devices-userexperienceanalyticsanomalycorrelationgroupprevalence.md)|The prevalence of the correlation group. Possible values are: high, medium or low. Possible values are: `high`, `medium`, `low`, `unknownFutureValue`.|
+|correlationGroupPrevalence|[userExperienceAnalyticsAnomalyCorrelationGroupPrevalence](../resources/intune-devices-userexperienceanalyticsanomalycorrelationgroupprevalence.md)|The prevalence of the correlation group. The possible values are: high, medium or low. The possible values are: `high`, `medium`, `low`, `unknownFutureValue`.|
 |correlationGroupPrevalencePercentage|Double|The percentage of the devices in the correlation group that are anomalous. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |totalDeviceCount|Int32|Indicates the total number of devices in the tenant. Valid values -2147483648 to 2147483647|
 |anomalyCorrelationGroupCount|Int32|Indicates the number of correlation groups in the anomaly. Valid values -2147483648 to 2147483647|

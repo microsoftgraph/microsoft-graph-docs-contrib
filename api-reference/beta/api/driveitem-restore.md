@@ -1,6 +1,6 @@
 ---
 title: "driveItem: restore"
-description: "Restore a driveItem that has been deleted and is currently in the recycle bin."
+description: "Restore a deleted driveItem that is currently in the recycle bin."
 ms.localizationpriority: medium
 author: "spgraph-docs-team"
 ms.subservice: onedrive
@@ -14,9 +14,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore a [driveItem](../resources/driveitem.md) that has been deleted and is currently in the recycle bin.
+Restore a deleted [driveItem](../resources/driveitem.md) that is currently in the [recycle bin](../resources/recyclebin.md).
 
->**Note**: This functionality is currently only available for OneDrive Personal.
+> [!IMPORTANT]
+> This functionality is currently only available for OneDrive Personal.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -26,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "driveitem_restore" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-restore-permissions.md)]
+
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
 
 ## HTTP request
 
@@ -84,10 +87,6 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/restore-item-e1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/restore-item-e1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -1,6 +1,6 @@
 ---
 title: "channel: doesUserHaveAccess"
-description: "Determine whether a user has access to a shared channel."
+description: "Determine whether a user has access to a channel."
 author: "devjha-ms"
 ms.localizationpriority: medium
 ms.subservice: "teams"
@@ -11,7 +11,7 @@ ms.date: 04/04/2024
 # channel: doesUserHaveAccess
 Namespace: microsoft.graph
 
-Determine whether a [user](../resources/useridentity.md) has access to a shared [channel](../resources/channel.md).
+Determine whether a [user](../resources/useridentity.md) has access to a [channel](../resources/channel.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -58,7 +58,7 @@ If successful, this function returns a `200 OK` response code and a Boolean in t
 
 ### Example 1: Check access for an internal user
 
-The following example shows a request that checks whether an internal user has access to a shared channel.
+The following example shows a request that checks whether an internal user has access to a channel.
 
 #### Request
 
@@ -78,10 +78,6 @@ GET https://graph.microsoft.com/v1.0/teams/0fddfdc5-f319-491f-a514-be1bc1bf9ddc/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/channel-doesuserhaveaccess-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/channel-doesuserhaveaccess-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -141,10 +137,6 @@ GET https://graph.microsoft.com/v1.0/teams/0fddfdc5-f319-491f-a514-be1bc1bf9ddc/
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -180,7 +172,7 @@ Content-Type: application/json
 
 ### Example 3: Check user access for a user using the user principal name
 
-The following example shows a request that uses the **userPrincipalName** property to check whether an internal user has access to a shared channel.
+The following example shows a request that uses the **userPrincipalName** property to check whether an internal user has access to a channel.
 
 #### Request
 
@@ -199,10 +191,6 @@ GET https://graph.microsoft.com/v1.0/teams/0fddfdc5-f319-491f-a514-be1bc1bf9ddc/
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

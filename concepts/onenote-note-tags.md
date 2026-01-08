@@ -5,6 +5,8 @@ author: "jewan-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "onenote"
 ms.date: 11/07/2024
+ms.custom: sfi-image-nochange
+ms.topic: how-to
 ---
 
 # Use note tags on OneNote pages

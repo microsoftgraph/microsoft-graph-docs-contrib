@@ -65,10 +65,6 @@ GET https://graph.microsoft.com/beta/drive/items/{id}/workbook/comments/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-workbookcomment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-workbookcomment-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-workbookcomment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -110,7 +106,10 @@ Content-type: application/json
 {
   "content": "This is my comment.",
   "contentType": "plain",
-  "id": "{97A21473-8339-4BF0-BCB6-F55E4909FFB8}"
+  "id": "{97A21473-8339-4BF0-BCB6-F55E4909FFB8}",
+  "cellAddress": "Sheet1!A1",
+  "richContent": "",
+  "mentions": []
 }
 ```
 

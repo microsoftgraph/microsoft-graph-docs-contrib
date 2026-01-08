@@ -16,7 +16,7 @@ import (
 )
 
 requestBody := graphmodels.NewConditionalAccessPolicy()
-displayName := "Require MFA to EXO from non-complaint devices."
+displayName := "Require MFA to EXO from non-compliant devices."
 requestBody.SetDisplayName(&displayName) 
 state := graphmodels.ENABLED_CONDITIONALACCESSPOLICYSTATE 
 requestBody.SetState(&state) 

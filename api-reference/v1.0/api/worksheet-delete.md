@@ -39,7 +39,7 @@ DELETE /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}
 
 ## Response
 
-If successful, this method returns `200 OK` response code. It doesn't return anything in the response body.
+If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 Here is an example of how to call this API.
@@ -57,10 +57,6 @@ DELETE https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/worksheet-delete-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/worksheet-delete-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -92,7 +88,7 @@ The following example shows the response.
   "truncated": true
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

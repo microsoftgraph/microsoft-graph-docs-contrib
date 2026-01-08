@@ -21,12 +21,8 @@ Only the **Organizer** and **Co-organizer** can make changes to a townhall event
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "virtualevent-update-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/virtualevent-update-permissions.md)]
+<!-- { "blockType": "permissions", "name": "virtualeventtownhall_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/virtualeventtownhall-update-permissions.md)]
 
 ## HTTP request
 
@@ -34,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /solutions/virtualEvents/townhalls/{id}
 ```
 
@@ -74,7 +70,7 @@ The following example shows a request.
   "name": "update_virtualeventtownhall"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/solutions/virtualEvents/townhalls/fc6e8c15-2fd7-1dd5-caa0-87056e6a12be
 Content-Type: application/json
 
@@ -92,10 +88,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-virtualeventtownhall-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-virtualeventtownhall-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -136,7 +128,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.virtualEventTownhall"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

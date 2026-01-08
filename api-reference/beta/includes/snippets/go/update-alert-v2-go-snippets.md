@@ -24,6 +24,12 @@ determination := graphmodels.MALWARE_ALERTDETERMINATION
 requestBody.SetDetermination(&determination) 
 status := graphmodels.INPROGRESS_ALERTSTATUS 
 requestBody.SetStatus(&status) 
+customDetails := graphmodelssecurity.NewDictionary()
+additionalData := map[string]interface{}{
+	"newKey" : "newValue", 
+}
+customDetails.SetAdditionalData(additionalData)
+requestBody.SetCustomDetails(customDetails)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 alerts_v2, err := graphClient.Security().Alerts_v2().ByAlertId("alert-id").Patch(context.Background(), requestBody, nil)

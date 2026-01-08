@@ -42,14 +42,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 To evaluate removal as the signed-in user (delegated permission) or a specified user (application permission):
 
-``` http
+```http
 POST /users/{usersId}/security/informationProtection/sensitivityLabels/evaluateRemoval
 POST /users/me/security/informationProtection/sensitivityLabels/evaluateRemoval
 ```
 
 To evaluate removal as a service principal (application permission):
 
-``` http
+```http
 POST /users/security/informationProtection/sensitivityLabels/evaluateRemoval
 ```
 
@@ -144,10 +144,6 @@ User-agent: ContosoLOBApp/1.0
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/sensitivitylabelthisevaluateremoval-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/sensitivitylabelthisevaluateremoval-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

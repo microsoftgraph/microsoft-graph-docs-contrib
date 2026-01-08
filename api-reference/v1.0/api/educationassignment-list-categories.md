@@ -74,10 +74,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-assignment-categories-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-assignment-categories-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-assignment-categories-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -142,15 +138,11 @@ The following example shows a request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/77c30802-3e00-4e91-975f-f2aaa2c5a569/assignments/c3307ea8-1343-4109-aeb9-92b9a74bf131/categories?$filter=id eq '74b03ab5-5832-4f99-89f5-d52da13d93f7'
+GET https://graph.microsoft.com/v1.0/education/classes/77c30802-3e00-4e91-975f-f2aaa2c5a569/assignments/c3307ea8-1343-4109-aeb9-92b9a74bf131/categories?$filter=id eq '74b03ab5-5832-4f99-89f5-d52da13d93f7'
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-assignment-categories-with-filter-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-assignment-categories-with-filter-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -193,7 +185,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('77c30802-3e00-4e91-975f-f2aaa2c5a569')/assignments('c3307ea8-1343-4109-aeb9-92b9a74bf131')/categories",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('77c30802-3e00-4e91-975f-f2aaa2c5a569')/assignments('c3307ea8-1343-4109-aeb9-92b9a74bf131')/categories",
     "value": [
         {
             "displayName": "test category",

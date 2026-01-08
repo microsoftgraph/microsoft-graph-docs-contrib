@@ -60,6 +60,9 @@ Namespace: microsoft.graph.security
 |generativeAi|
 |unknown|
 |unknownFutureValue|
+|aiModelProvider|
+|mcpServer|
+|clientAiApp|
 
 ### appInfoCsaStarLevel values 
 
@@ -182,6 +185,17 @@ Namespace: microsoft.graph.security
 |machineName|
 |other|
 |unknown|
+|unknownFutureValue|
+
+### mailboxConfigurationType values
+
+|Member|
+|:---|
+|mailForwardingRule|
+|owaSettings|
+|ewsSettings|
+|mailDelegation|
+|userInboxRule|
 |unknownFutureValue|
 
 ### logDataProvider values 
@@ -883,6 +897,37 @@ Namespace: microsoft.graph.security
 | reasonLostInTransit |
 | bulk |
 
+### antispamTeamsDirection values
+
+| Member |
+| :------|
+|  unknown   |
+|  inbound   |
+|  outbound  |
+|  intraorg  |
+|  unknownFutureValue  |
+
+### teamsDeliveryLocation values
+
+| Member |
+| :------|
+|  unknown   |
+|  teams     |
+|  quarantine     |
+|  failed    |
+|  unknownFutureValue  |
+
+### teamsMessageDeliveryAction values
+
+| Member |
+| :------|
+|  unknown   |
+|  deliveredAsSpam     |
+|  delivered |
+|  blocked   |
+|  replaced  |
+|  unknownFutureValue  |
+
 ### cloudAttachmentVersion values
 
 |Member|
@@ -901,6 +946,174 @@ Namespace: microsoft.graph.security
 |recent10   |
 |recent100  |
 |all        |
+|unknownFutureValue|
+
+### recipientType values
+
+|Member|
+|:---|
+|user|
+|roleGroup|
+|unknownFutureValue|
+
+### contentProcessingErrorType values
+
+|Member|
+|:---|
+|transient|
+|permanent|
+|unknownFutureValue|
+
+### dlpAction values
+
+|Member|
+|:---|
+|notifyUser|
+|blockAccess|
+|deviceRestriction|
+|browserRestriction|
+|unknownFutureValue|
+|restrictAccess|
+|generateAlert|
+|generateIncidentReportAction|
+|sPBlockAnonymousAccess|
+|sPRuntimeAccessControl|
+|sPSharingNotifyUser|
+|sPSharingGenerateIncidentReport|
+
+### executionMode values
+
+|Member|
+|:---|
+|evaluateInline|
+|evaluateOffline|
+|unknownFutureValue|
+
+### overrideOption values
+
+|Member|
+|:---|
+|notAllowed|
+|allowFalsePositiveOverride|
+|allowWithJustification|
+|allowWithoutJustification|
+|unknownFutureValue|
+|allowWithAcknowledgement|
+
+### policyPivotProperty values
+
+|Member|
+|:---|
+|none|
+|activity|
+|location|
+|unknownFutureValue|
+
+### protectionScopeState values
+
+|Member|
+|:---|
+|notModified|
+|modified|
+|unknownFutureValue|
+
+### userActivityTypes values
+
+|Member|
+|:---|
+|none|
+|uploadText|
+|uploadFile|
+|downloadText|
+|downloadFile|
+|unknownFutureValue|
+
+### userActivityType values
+
+|Member|
+|:---|
+|uploadText|
+|uploadFile|
+|downloadText|
+|downloadFile|
+|unknownFutureValue|
+
+### labelActionSource values
+
+|Member|
+|:---|
+|manual|
+|automatic|
+|recommended|
+|none|
+|unknownFutureValue|
+
+### sensitivityLabelTarget values
+
+|Member|
+|:---|
+|email|
+|site|
+|unifiedGroup|
+|teamwork|
+|unknownFutureValue|
+
+### applicationMode values
+
+|Member|
+|:---|
+|manual|
+|automatic|
+|recommended|
+
+### restrictionAction values
+
+|Member|
+|:---|
+|warn|
+|audit|
+|block|
+
+### action values
+
+|Member|
+|:---|
+|disable|
+|enable|
+|forcePasswordReset|
+|revokeAllSessions|
+|requireUserToSignInAgain|
+|markUserAsCompromised|
+|unknownFutureValue|
+
+
+### identityProvider values
+
+|Member|
+|:---|
+|entraID|
+|activeDirectory|
+|okta|
+|unknownFutureValue|
+
+### sensorCandidateActivationMode values
+
+|Member|
+|:---|
+|manual|
+|automated|
+|unknownFutureValue|
+
+### serviceStatus values
+
+|Member|
+|:---|
+|stopped|
+|starting|
+|running|
+|disabled|
+|onboarding|
+|unknown|
 |unknownFutureValue|
 
 <!--

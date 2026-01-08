@@ -5,6 +5,7 @@ author: "MSFTRickyCastaneda"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Configure the built-in tab types in Microsoft Teams

@@ -62,10 +62,6 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-worksheetcollection-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-worksheetcollection-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-worksheetcollection-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -103,10 +99,10 @@ Content-type: application/json
 {
   "value": [
     {
-      "id": "id-value",
-      "position": 99,
-      "name": "name-value",
-      "visibility": "visibility-value"
+      "id": "{FC034FA8-F8CC-4D24-9C0A-02A81B7792A0}",
+      "position": 0,
+      "name": "Sheet1",
+      "visibility": "Visible"
     }
   ]
 }

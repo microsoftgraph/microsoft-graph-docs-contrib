@@ -13,6 +13,10 @@ Namespace: microsoft.graph
 
 Get the [permission](../resources/permission.md) resources from the permissions navigation property on a site.
 
+> [!IMPORTANT]
+> Using the LIST method to retrieve SharePoint subsites' permissions isn't supported at this time.
+
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
@@ -27,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /sites/{sitesId}/permissions
 ```
 
@@ -56,16 +60,12 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_permission_for_specifiedSite"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/sites/{sitesId}/permissions
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-permission-for-specifiedsite-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-permission-for-specifiedsite-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -101,7 +101,7 @@ GET https://graph.microsoft.com/v1.0/sites/{sitesId}/permissions
   "@odata.type": "Collection(microsoft.graph.permission)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

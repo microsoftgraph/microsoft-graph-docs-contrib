@@ -16,7 +16,13 @@ Namespace: microsoft.graph
 
 Create a [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) object associated with a [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md).
 
-The initial status upon creation of the restore session is `active`. When all the drives are added to the corresponding OneDrive restore session and the restore session is activated, the status becomes `completed`. If any failures are encountered during resource resolution, the status of the restore session becomes `completedWithErrors`.
+The following steps describe how to create and manage a **oneDriveForBusinessRestoreSession** with bulk artifact additions.
+
+1. Create a new [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) with empty payload.
+1. Create a new [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) object associated with a [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md).
+1. Get the status of the [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) for the OneDrive for work or school restore session. The initial status upon creation is `active` and remains in this state until the [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) is activated.
+1. Activate the [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) created in the first step.
+1. Monitor the status of the [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md). When all the drives are added to the corresponding [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md), the status of the [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) changes to `completed`. If any failures occur during resource resolution, the status changes to `completedWithErrors`.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -37,7 +43,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /solutions/backupRestore/oneDriveForBusinessRestoreSessions/{oneDriveForBusinessRestoreSessionId}/driveRestoreArtifactsBulkAdditionRequests
 ```
 
@@ -52,22 +58,31 @@ POST /solutions/backupRestore/oneDriveForBusinessRestoreSessions/{oneDriveForBus
 
 In the request body, supply a JSON representation of the [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) object.
 
+You can specify the following properties when you create a **driveRestoreArtifactsBulkAdditionRequest** object.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|directoryObjectIds|String collection|The list of directory object IDs. Optional.|
+|drives|String collection|The list of OneDrive for work or school email addresses. Optional.|
+
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) object in the response body.
+
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
 
 ## Examples
 
 ### Request
 
-The following example shows a request that adds a list of drives to the specified Onedrive for work or school restore session in a bulk operation.
+The following example shows a request that adds a list of drives to the specified OneDrive for work or school restore session in a bulk operation.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_driverestoreartifactsbulkadditionrequest_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessRestoreSessions/493635f0-b8c0-4c7f-bcb7-b20c85d97efe/driveRestoreArtifactsBulkAdditionRequests
 Content-Type: application/json
 
@@ -94,10 +109,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-driverestoreartifactsbulkadditionrequest-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-driverestoreartifactsbulkadditionrequest-from--cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-driverestoreartifactsbulkadditionrequest-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -112,6 +123,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-driverestoreartifactsbulkadditionrequest-from--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-driverestoreartifactsbulkadditionrequest-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -129,7 +144,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.driveRestoreArtifactsBulkAdditionRequest"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

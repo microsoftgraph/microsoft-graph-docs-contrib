@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Read the properties and relationships of a [superGcpServiceAccountFinding](../resources/supergcpserviceaccountfinding.md) object.
 
 ## Permissions
@@ -28,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/gcp/findings/{id}/microsoft.graph.superGcpServiceAccountFinding
 ```
 
@@ -57,7 +59,7 @@ The following example shows a request.
   "name": "get_supergcpserviceaccountfinding"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/MSxTdXBlckdjcFNlcnZpY2VBY2NvdW50RmluZGluZyw3MDc4/microsoft.graph.superGcpServiceAccountFinding
 ```
 
@@ -76,7 +78,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.superGcpServiceAccountFinding"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -116,4 +118,5 @@ Content-type: application/json
     }
 }
 ```
+
 

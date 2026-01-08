@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Represents data returned from a WebAuthn Authenticator after it creates a new public key credential.  
 
-This resource is an open type that allows other properties to be passed in.  
+This resource is an open type that allows additional properties beyond those documented here.  
 
 ## Properties
 None.

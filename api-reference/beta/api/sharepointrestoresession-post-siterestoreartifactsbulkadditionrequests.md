@@ -16,7 +16,13 @@ Namespace: microsoft.graph
 
 Create a new [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object associated with a [sharePointRestoreSession](../resources/sharepointrestoresession.md).
 
-The initial status upon creation of the restore session is `active`. When all the sites are added to the corresponding SharePoint restore session and the restore session is activated, the status becomes `completed`. If any failures are encountered during resource resolution, the status of the restore session becomes `completedWithErrors`.
+The following steps describe how to create and manage a **sharePointRestoreSession** with bulk artifact additions:
+
+1. Create a new [sharePointRestoreSession](../resources/sharepointrestoresession.md) with empty payload.
+1. Create a new [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object associated with a [sharePointRestoreSession](../resources/sharepointrestoresession.md).
+1. Get the status of the [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) for the SharePoint restore session. The initial status upon creation is `active` and remains in this state until the [sharePointRestoreSession](../resources/sharepointrestoresession.md) is activated.
+1. Activate the [sharePointRestoreSession](../resources/sharepointrestoresession.md) created in the first step.
+1. Monitor the status of the [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md). When all the sites are added to the corresponding [sharePointRestoreSession](../resources/sharepointrestoresession.md), the status of the [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) changes to `completed`. If any failures occur during resource resolution, the status changes to `completedWithErrors`.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -37,7 +43,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /solutions/backupRestore/sharePointRestoreSessions/{sharePointRestoreSessionId}/siteRestoreArtifactsBulkAdditionRequests
 ```
 
@@ -52,9 +58,18 @@ POST /solutions/backupRestore/sharePointRestoreSessions/{sharePointRestoreSessio
 
 In the request body, supply a JSON representation of the [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object.
 
+You can specify the following properties when you create a **siteRestoreArtifactsBulkAdditionRequest** object.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|siteIds|String collection|The list of SharePoint site IDs. Optional.|
+|siteWebUrls|String collection|The list of SharePoint site URLs. Optional.|
+
 ## Response
 
 If successful, this method returns a `201 Created` response code and a [siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) object in the response body.
+
+For a list of possible error responses, see [Backup Storage API error responses](/graph/backup-storage-error-codes).
 
 ## Examples
 
@@ -68,7 +83,7 @@ The following example shows a request that adds a list of sites to the specified
   "name": "create_siterestoreartifactsbulkadditionrequest_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/sharePointRestoreSessions/959ba739-70b5-43c4-8c90-b2c22014f18b/siteRestoreArtifactsBulkAdditionRequests
 Content-Type: application/json
 
@@ -93,10 +108,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-siterestoreartifactsbulkadditionrequest-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-siterestoreartifactsbulkadditionrequest-from--cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-siterestoreartifactsbulkadditionrequest-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -111,6 +122,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-siterestoreartifactsbulkadditionrequest-from--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-siterestoreartifactsbulkadditionrequest-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -128,7 +143,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.siteRestoreArtifactsBulkAdditionRequest"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

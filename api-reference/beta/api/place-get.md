@@ -1,11 +1,11 @@
 ---
 title: "Get place"
-description: "Retrieve the properties and relationships of a place object."
+description: "Read the properties of a place object specified by its ID."
+author: tiwarisakshi02
+ms.date: 06/11/2025
 ms.localizationpriority: medium
-author: "vrod9429"
-ms.subservice: "outlook"
-doc_type: "apiPageType"
-ms.date: 07/22/2024
+ms.subservice: outlook
+doc_type: apiPageType
 ---
 
 # Get place
@@ -13,15 +13,20 @@ ms.date: 07/22/2024
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Get the properties and relationships of a [place](../resources/place.md) object specified by either its ID or email address. 
+
+Read the properties of a [place](../resources/place.md) object specified by its ID.
 
 The **place** object can be one of the following types:
 
+* A [building](../resources/building.md), which includes rich properties such as resource links and has a wireless network.
+* A [floor](../resources/floor.md), which includes rich properties such as sort order.
+* A [section](../resources/section.md).
+* A [desk](../resources/desk.md), which includes rich properties such as mailbox details and mode.
 * A [room](../resources/room.md), which includes rich properties such as an email address for the room, and accessibility, capacity, and device support. 
 * A [workspace](../resources/workspace.md), which includes properties such as an email address for the workspace, and accessibility and capacity. 
-* A [room list](../resources/roomlist.md), which includes an email address for the room list, and a navigation property to get the collection of **room** instances in that room list.
+* A [roomList](../resources/roomlist.md), which includes an email address for the room list, and a navigation property to get the collection of **room** instances in that room list.
 
-The **room**, **workspace**, and **roomList** resources are derived from the **place** object.
+The listed resources are derived from the **place** object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -34,21 +39,22 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
-
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ```http
 GET /places/{id}
 ```
 
 ## Optional query parameters
-Use `$select` to get specific **place** properties.
 
-For more information about OData query options, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` query parameter to help get specific properties. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
-| Name          | Description               |
-|:--------------|:--------------------------|
+|Name|Description|
+|:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
@@ -57,24 +63,214 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [place](../resources/place.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [place](../resources/place.md) object in the response body.
 
 ## Examples
 
-### Example 1: Get a room
+### Example 1: Get a building
+The following example shows a request to get a [building](../resources/building.md). 
 #### Request
+The following example shows a request.
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_building"
+}
+-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/places/ca147fcf-ae27-43bb-9d91-f11e626e58bf
+```
 
-The following example specifies the **id** of a **room** to get its properties.
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-building-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.place"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.building",
+  "id": "ca147fcf-ae27-43bb-9d91-f11e626e58bf",
+  "placeId": "ca147fcf-ae27-43bb-9d91-f11e626e58bf",
+  "displayName": "B06",
+  "phone": "+1 (425) 615 8888 Ext 06",
+  "isWheelChairAccessible": true,
+  "label": "This is a building for demo",
+  "hasWiFi": true,
+  "geoCoordinates": {
+    "latitude": 47.644125,
+    "longitude": -122.122411,
+    "accuracy": null,
+    "altitude": null,
+    "altitudeAccuracy": null
+  },
+  "resourceLinks": [
+    {
+      "name": "Microsoft Web",
+      "linkType": "url",
+      "value": "www.microsoft.com"
+    }
+  ]
+}
+```
+
+### Example 2: Get a floor
+The following example shows a request to get a [floor](../resources/floor.md).
+#### Request
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["3162F1E1-C4C0-604B-51D8-91DA78989EB1"],
-  "name": "get_room"
-}-->
-
+  "name": "get_floor"
+}
+-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
+GET https://graph.microsoft.com/beta/places/49558ad4-6ede-46d7-8254-3ca9f90fc4e2
+```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-floor-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.place"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.floor",
+  "id": "49558ad4-6ede-46d7-8254-3ca9f90fc4e2",
+  "placeId": "49558ad4-6ede-46d7-8254-3ca9f90fc4e2",
+  "displayName": "3",
+  "parentId": "ca147fcf-ae27-43bb-9d91-f11e626e58bf",
+  "sortOrder": 3
+}
+```
+
+### Example 3: Get a section
+The following example shows a request to get a [section](../resources/section.md).
+#### Request
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "place_get_section"
+}
+-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/places/ca163ae1-14a3-4e2a-8a97-5f82d672186f
+```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/place-get-section-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.place"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.section",
+  "id": "ca163ae1-14a3-4e2a-8a97-5f82d672186f",
+  "placeId": "ca163ae1-14a3-4e2a-8a97-5f82d672186f",
+  "displayName": "Mode Section 1",
+  "parentId": "49558ad4-6ede-46d7-8254-3ca9f90fc4e2"
+}
+```
+
+### Example 4: Get a desk
+The following example shows a request to get a [desk](../resources/desk.md).
+#### Request
+The following example shows a request.
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_desk"
+}
+-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/places/df7dd4ef-04c4-41dd-816e-35475f4dd546
+```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-desk-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.place"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.desk",
+  "id": "df7dd4ef-04c4-41dd-816e-35475f4dd546",
+  "placeId": "df7dd4ef-04c4-41dd-816e-35475f4dd546",
+  "displayName": "Desk6",
+  "parentId": "ca163ae1-14a3-4e2a-8a97-5f82d672186f",
+  "mode": {
+    "@odata.type": "#microsoft.graph.unavailablePlaceMode",
+    "reason": "New"
+  }
+}
+```
+
+### Example 5: Get a room
+The following example shows a request to get a [room](../resources/room.md).
+#### Request
+The following example shows a request.
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_room"
+}
+-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/places/0be387a4-d53b-410f-9daf-f4fa07e5b05a
 ```
 
 # [JavaScript](#tab/javascript)
@@ -84,71 +280,44 @@ GET https://graph.microsoft.com/beta/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
 ---
 
 #### Response
-
 The following example shows the response.
-
->**Note**: The response object shown here might be shortened for readability.
-
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "name": "get_room",
   "truncated": true,
-  "@odata.type": "microsoft.graph.room"
-} -->
-
+  "@odata.type": "microsoft.graph.place"
+}
+-->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
+Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/$entity",
-    "@odata.type": "#microsoft.graph.room",
-    "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
-    "emailAddress": "cf100@contoso.com",
-    "displayName": "Conf Room 100",
-    "address": {
-      "street": "4567 Main Street",
-      "city": "Buffalo",
-      "state": "NY",
-      "postalCode": "98052",
-      "countryOrRegion": "USA"
-    },
-    "geoCoordinates": {
-      "latitude": 47.640568390488626,
-      "longitude": -122.1293731033803
-    },
-    "phone": "000-000-0000",
-    "nickname": "Conf Room",
-    "label": "100",
-    "capacity": 50,
-    "building": "1",
-    "floorNumber": 1,
-    "isWheelChairAccessible": false,
-    "bookingType": "standard",
-    "tags": [
-      "bean bags"
-    ],
-    "audioDeviceName": null,
-    "videoDeviceName": null,
-    "displayDeviceName": "surface hub",
-    "placeId": "62cfc8cb-fc2b-4783-aeea-f9ce0f8e2904"
+  "@odata.type": "#microsoft.graph.room",
+  "id": "0be387a4-d53b-410f-9daf-f4fa07e5b05a",
+  "placeId": "4923e5a8-453e-4edf-b272-9c33757d4fb3",
+  "displayName": "TestRoom-123",
+  "parentId": "88d25c73-e9c2-4284-86d7-2cf5685b67b9",
+  "isWheelChairAccessible": true,
+  "emailAddress": "TestRoom-123@contoso.com",
+  "nickname": "TestRoomZihan-123",
+  "bookingType": "standard",
+  "isTeamsEnabled": true
 }
 ```
-### Example 2: Get a workspace
+
+### Example 6: Get a workspace
+The following example shows a request to get a [workspace](../resources/workspace.md).
 #### Request
-
-The following example specifies the **id** of a **workspace** to get its properties.
-
-
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["3162F1E1-C4C0-604B-51D8-91DA78989EB1"],
   "name": "get_workspace"
-}-->
-
+}
+-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
+GET https://graph.microsoft.com/beta/places/ec10ce32-2065-40ba-aa2f-ecd5ea175420
 ```
 
 # [JavaScript](#tab/javascript)
@@ -158,63 +327,40 @@ GET https://graph.microsoft.com/beta/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
 ---
 
 #### Response
-
 The following example shows the response.
-
->**Note**: The response object shown here might be shortened for readability.
-
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "name": "get_workspace",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workspace"
-} -->
+  "@odata.type": "microsoft.graph.place"
+}
+-->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
+Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/$entity",
-    "@odata.type": "#microsoft.graph.workspace",
-    "id": "3162F1E1-C4C0-604B-51D8-91DA78989EB1",
-    "emailAddress": "ws100@contoso.com",
-    "displayName": "Workspace 100",
-    "address": {
-      "street": "4567 Main Street",
-      "city": "Buffalo",
-      "state": "NY",
-      "postalCode": "98052",
-      "countryOrRegion": "USA"
-    },
-    "geoCoordinates": {
-      "latitude": 47.640568390488626,
-      "longitude": -122.1293731033803
-    },
-    "phone": "000-000-0000",
-    "nickname": "Workspace",
-    "label": "100",
-    "capacity": 50,
-    "building": "1",
-    "floorNumber": 1,
-    "isWheelChairAccessible": false,
-    "tags": [
-      "bean bags"
-    ],
-    "placeId": "357e8ddc-8af5-4c7c-bc38-ddb3bcfec0d9"
+  "@odata.type": "#microsoft.graph.workspace",
+  "id": "ec10ce32-2065-40ba-aa2f-ecd5ea175420",
+  "placeId": "8abb4849-b6a0-4c45-baab-92a6b63227a5",
+  "displayName": "deskpool 003",
+  "parentId": "46e0d2ec-d026-4e1d-861d-80ede4470f67",
+  "emailAddress": "deskpool0039052bd811752731134695@contoso.com",
+  "nickname": "deskpool 003",
+  "capacity": 10
 }
 ```
-### Example 3: Get a room list
+
+### Example 7: Get a room list
+The following example shows a request to get a [roomList](../resources/roomlist.md).
 #### Request
-
-The following example specifies the **emailAddress** of a **roomList** to get its properties.
-
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["bldg1@contoso.com"],
   "name": "get_roomlist"
-}-->
-
+}
+-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/places/bldg1@contoso.com
 ```
@@ -226,26 +372,21 @@ GET https://graph.microsoft.com/beta/places/bldg1@contoso.com
 ---
 
 #### Response
-
 The following example shows the response.
-
->**Note**: The response object shown here might be shortened for readability.
-
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "name": "get_roomlist",
   "truncated": true,
-  "@odata.type": "microsoft.graph.roomList"
-} -->
-
+  "@odata.type": "microsoft.graph.place"
+}
+-->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
+Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#places/$entity",
   "@odata.type": "#microsoft.graph.roomList",
-  "id": "DC404124-302A-92AA-F98D-7B4DEB0C1705",
+  "id": "dc404124-302a-92aa-f98d-7b4deb0c1705",
   "displayName": "Building 1",
   "address": {
     "street": "4567 Main Street",
@@ -254,21 +395,8 @@ Content-type: application/json
     "postalCode": "98052",
     "countryOrRegion": "USA"
   },
-  "geoCoordinates": null,
-  "phone": null,
   "emailAddress": "bldg1@contoso.com",
   "placeId": "406bd1b2-237c-4710-bda2-8b7900d61b27"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Get place",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
-
 

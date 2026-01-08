@@ -5,14 +5,14 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/12/2024
+ms.date: 08/01/2024
 ---
 
 # groupPolicySettingMapping resource type
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -44,10 +44,10 @@ The Group Policy setting to MDM/Intune mapping.
 |mdmCspName|String|The CSP name this group policy setting maps to.|
 |mdmSettingUri|String|The MDM CSP URI this group policy setting maps to.|
 |mdmMinimumOSVersion|Int32|The minimum OS version this mdm setting supports.|
-|settingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|The setting type (security or admx) of the Group Policy. Possible values are: `unknown`, `policy`, `account`, `securityOptions`, `userRightsAssignment`, `auditSetting`, `windowsFirewallSettings`, `appLockerRuleCollection`, `dataSourcesSettings`, `devicesSettings`, `driveMapSettings`, `environmentVariables`, `filesSettings`, `folderOptions`, `folders`, `iniFiles`, `internetOptions`, `localUsersAndGroups`, `networkOptions`, `networkShares`, `ntServices`, `powerOptions`, `printers`, `regionalOptionsSettings`, `registrySettings`, `scheduledTasks`, `shortcutSettings`, `startMenuSettings`.|
+|settingType|[groupPolicySettingType](../resources/intune-gpanalyticsservice-grouppolicysettingtype.md)|The setting type (security or admx) of the Group Policy. The possible values are: `unknown`, `policy`, `account`, `securityOptions`, `userRightsAssignment`, `auditSetting`, `windowsFirewallSettings`, `appLockerRuleCollection`, `dataSourcesSettings`, `devicesSettings`, `driveMapSettings`, `environmentVariables`, `filesSettings`, `folderOptions`, `folders`, `iniFiles`, `internetOptions`, `localUsersAndGroups`, `networkOptions`, `networkShares`, `ntServices`, `powerOptions`, `printers`, `regionalOptionsSettings`, `registrySettings`, `scheduledTasks`, `shortcutSettings`, `startMenuSettings`.|
 |isMdmSupported|Boolean|Indicates if the setting is supported by Intune or not|
-|mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|Indicates if the setting is supported in Mdm or not. Possible values are: `unknown`, `supported`, `unsupported`, `deprecated`.|
-|settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|The scope of the setting. Possible values are: `unknown`, `device`, `user`.|
+|mdmSupportedState|[mdmSupportedState](../resources/intune-gpanalyticsservice-mdmsupportedstate.md)|Indicates if the setting is supported in Mdm or not. The possible values are: `unknown`, `supported`, `unsupported`, `deprecated`.|
+|settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|The scope of the setting. The possible values are: `unknown`, `device`, `user`.|
 |intuneSettingUriList|String collection|The list of Intune Setting URIs this group policy setting maps to|
 |intuneSettingDefinitionId|String|The Intune Setting Definition Id|
 |admxSettingDefinitionId|String|Admx Group Policy Id|

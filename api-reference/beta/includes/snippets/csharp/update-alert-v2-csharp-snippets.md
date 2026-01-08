@@ -15,6 +15,15 @@ var requestBody = new Alert
 	Classification = AlertClassification.TruePositive,
 	Determination = AlertDetermination.Malware,
 	Status = AlertStatus.InProgress,
+	CustomDetails = new Dictionary
+	{
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"newKey" , "newValue"
+			},
+		},
+	},
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

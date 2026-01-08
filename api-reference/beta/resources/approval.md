@@ -1,6 +1,6 @@
 ---
 title: "approval resource type"
-description: "The approval object associated with a userConsentRequest, an accessPackageAssignmentRequest or a privilegedAccessGroupAssignmentScheduleRequest."
+description: "The approval object associated with a userConsentRequest, an accessPackageAssignmentRequest, or a privilegedAccessGroupAssignmentScheduleRequest."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
@@ -24,7 +24,7 @@ In [Role management](../resources/rolemanagement.md), the approval object for de
 
 In [PIM for Microsoft Entra roles](../resources/privilegedidentitymanagementv3-overview.md), the approval object for decisions to approve or deny requests to activate eligible roles.
 
-In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), the approval object for decisions to approve or deny requests to activate group membership or ownership.
+In [PIM for Groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), the approval object for decisions to approve or deny requests to activate group membership or ownership.
 
 ## Methods
 
@@ -36,7 +36,7 @@ In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-ove
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The identifier of the approval object. <br/><li> In entitlement management, it is the same identifier as the identifier of the [access package assignment request](accesspackageassignmentrequest.md). <li>In PIM for Microsoft Entra roles, it is the same identifier as the identifier of the [assignment schedule request](../resources/unifiedroleassignmentschedulerequest.md). <li>In PIM for groups, it is the same identifier as the identifier of the [assignment schedule request](../resources/privilegedaccessgroupassignmentschedulerequest.md).|
+|id|String|The identifier of the approval object. <br/><ul><li> In entitlement management, it's the same identifier as the identifier of the [access package assignment request](accesspackageassignmentrequest.md). </li><li>In PIM for Microsoft Entra roles, it's the same identifier as the identifier of the [assignment schedule request](../resources/unifiedroleassignmentschedulerequest.md). </li><li>In PIM for Groups, it's the same identifier as the identifier of the [assignment schedule request](../resources/privilegedaccessgroupassignmentschedulerequest.md).</li></ul>|
 
 ## Relationships
 |Relationship|Type|Description|

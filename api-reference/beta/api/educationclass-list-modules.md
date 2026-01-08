@@ -73,10 +73,6 @@ GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-modules-for-classid-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-modules-for-classid-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-modules-for-classid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -122,47 +118,23 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/modules",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<guid>')/modules?$select=createdBy,createdDateTime",
     "value": [
         {
             "displayName": "Module 1",
-            "description": "<div style=\"font-family: inherit; font-size: inherit; color: inherit; background-color: inherit;\">Description for module 1 updated</div>",
-            "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!-Ik2sRPLDEWy_bR8l75jfeDcpXQcRKVOmcml10NQLQ1F2UVvTgEnTKi0GO59dbCL/items/01VANVJQZUN7H5IXZPURF3DDZKOAEHN6ZW",
-            "isPinned": false,
-            "status": "draft",
-            "createdDateTime": "2023-07-19T22:18:24.0753841Z",
-            "lastModifiedDateTime": "2023-07-19T22:38:03.8575605Z",
-            "id": "5955f965-99aa-4fba-ad88-e291afeaf81d",
-            "createdBy": {
-                "application": null,
-                "device": null,
-                "user": {
-                    "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
-                    "displayName": null
-                }
-            },
-            "lastModifiedBy": {
-                "application": null,
-                "device": null,
-                "user": {
-                    "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
-                    "displayName": null
-                }
-            }
-        },
-        {
-            "displayName": "Module 4",
-            "description": "<div style=\"font-family: inherit; font-size: inherit; color: inherit; background-color: inherit;\">description for module 4</div>",
+            "description": "Description for Module 1",
             "resourcesFolderUrl": null,
             "isPinned": false,
-            "status": "published",
-            "createdDateTime": "2023-07-20T17:24:54.6405196Z",
-            "lastModifiedDateTime": "2023-07-20T17:32:25.4635665Z",
-            "id": "4ae4afc7-af22-45c1-9f11-cee40a60c967",
+            "status": "draft",
+            "createdDateTime": "2024-01-17T17:41:42.8815952Z",
+            "lastModifiedDateTime": "2025-04-29T14:52:48.3049056Z",
+            "languageTag": null,
+            "id": "1b9a03b6-dcc5-4ff1-8226-b92e25072f43",
             "createdBy": {
                 "application": null,
                 "device": null,
                 "user": {
-                    "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                    "id": "fadaae59-b18c-44d1-993f-fe8a281bd69c",
                     "displayName": null
                 }
             },
@@ -170,7 +142,7 @@ Content-type: application/json
                 "application": null,
                 "device": null,
                 "user": {
-                    "id": "cb1a4af3-0aba-4679-aa12-9f99bab0b61a",
+                    "id": "fadaae59-b18c-44d1-993f-fe8a281bd69c",
                     "displayName": null
                 }
             }

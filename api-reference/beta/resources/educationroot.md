@@ -14,12 +14,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The `/education` namespace exposes functionality that is specific to the education sector. 
+The `/education` namespace exposes functionality that is specific to the education sector.
 Some objects in the `/education` namespace can be found in other parts of Microsoft Graph (for example, [users](user.md)). The education namespace provides education-specific properties and features on these objects.
 
 ## Methods
 
-| Method		   | Return Type	|Description|
+|Method|Return Type|Description|
 |:---------------|:--------|:----------|
 |[List classes](../api/educationroot-list-classes.md) |[educationClass](educationclass.md) collection| Get an **educationClass** object collection.|
 |[Create class](../api/educationroot-post-classes.md) |[educationClass](educationclass.md)| Create a new **educationClass** by posting to the classes collection.|
@@ -29,14 +29,16 @@ Some objects in the `/education` namespace can be found in other parts of Micros
 |[Create user](../api/educationroot-post-users.md) |[educationUser](educationuser.md)| Create a new **educationUser** by posting to the users collection.|
 
 ## Properties
+
 None.
 
 ## Relationships
-| Relationship | Type	|Description|
+
+|Relationship|Type|Description|
 |:---------------|:--------|:----------|
 |classes|[educationClass](educationclass.md) collection| Classes taught at the school. Nullable.|
 |me|[educationUser](educationuser.md)| Represents a user in the system. Nullable.|
-|reports|[reportsRoot](../resources/reportsroot.md)|A container for reading assignment submissions and reflection check-in responses. Read-only. Nullable. |
+|reports|[reportsRoot](../resources/reportsroot.md)|A container for all endpoints related to education analytics reports. Read-only. Nullable.|
 |schools|[educationSchool](educationschool.md) collection| Schools to which the user belongs. Nullable.|
 |users|[educationUser](educationuser.md) collection| Users in the school. Nullable.|
 
@@ -52,5 +54,3 @@ None.
   "suppressions": []
 }
 -->
-
-

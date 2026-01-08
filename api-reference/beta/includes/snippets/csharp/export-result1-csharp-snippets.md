@@ -14,7 +14,7 @@ var requestBody = new ExportResultPostRequestBody
 {
 	DisplayName = "Export 1 - simple PST",
 	ExportCriteria = ExportCriteria.SearchHits,
-	AdditionalOptions = AdditionalOptions.None,
+	AdditionalOptions = AdditionalOptions.HtmlTranscripts | AdditionalOptions.SplitSource | AdditionalOptions.IncludeFolderAndPath | AdditionalOptions.CondensePaths | AdditionalOptions.FriendlyName,
 	ExportFormat = ExportFormat.Pst,
 };
 

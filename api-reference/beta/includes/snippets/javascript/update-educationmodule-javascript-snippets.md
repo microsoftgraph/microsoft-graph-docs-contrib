@@ -12,6 +12,7 @@ const client = Client.init(options);
 
 const educationModule = {
     displayName: 'New_Module5 updated',
+    languageTag: 'en-GB',
     description: 'updated for description'
 };
 

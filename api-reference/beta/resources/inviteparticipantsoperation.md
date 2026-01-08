@@ -24,7 +24,7 @@ Represents the status of a long-running participant invitation operation, trigge
 | id                             | String                      | The server operation id. Read-only.                                                                                              |
 | participants | [invitationParticipantInfo](invitationParticipantInfo.md) collection | The participants to invite. |
 | resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only.                                                                                             |
-| status                         | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.                                                  |
+| status                         | String                      | The possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.                                                  |
 
 ## Relationships
 None.

@@ -2,7 +2,7 @@
 title: "signInStatus resource type"
 description: "Provides the sign-in status (Success or Failure) of the sign-in."
 ms.localizationpriority: medium
-author: "dhanyahk"
+author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ms.date: 03/15/2024

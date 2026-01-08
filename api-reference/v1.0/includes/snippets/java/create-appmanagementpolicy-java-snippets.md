@@ -52,7 +52,6 @@ HashMap<String, Object> additionalData = new HashMap<String, Object>();
  identifierUris = new ();
  nonDefaultUriAddition = new ();
 nonDefaultUriAddition.setState("disabled");
-nonDefaultUriAddition.setRestrictForAppsCreatedAfterDateTime(null);
 nonDefaultUriAddition.setExcludeAppsReceivingV2Tokens(true);
 nonDefaultUriAddition.setExcludeSaml(true);
 identifierUris.setNonDefaultUriAddition(nonDefaultUriAddition);

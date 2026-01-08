@@ -22,9 +22,9 @@ Inherits from [endUserNotificationSetting](../resources/endusernotificationsetti
 
 |Property|Type|Description|
 |:---|:---|:---|
-|notificationPreference|endUserNotificationPreference|Notification preference. Possible values are: `unknown`, `microsoft`, `custom`, `unknownFutureValue`. Inherited from [endUserNotificationSetting](../resources/endusernotificationsetting.md).|
+|notificationPreference|endUserNotificationPreference|Notification preference. The possible values are: `unknown`, `microsoft`, `custom`, `unknownFutureValue`. Inherited from [endUserNotificationSetting](../resources/endusernotificationsetting.md).|
 |positiveReinforcement|[positiveReinforcementNotification](../resources/positivereinforcementnotification.md)|Positive reinforcement details. Inherited from [endUserNotificationSetting](../resources/endusernotificationsetting.md).|
-|settingType|endUserNotificationSettingType|Setting type. Possible values are: `unknown`, `noTraining`, `trainingSelected`, `noNotification`, `unknownFutureValue`. Inherited from [endUserNotificationSetting](../resources/endusernotificationsetting.md).|
+|settingType|endUserNotificationSettingType|Setting type. The possible values are: `unknown`, `noTraining`, `trainingSelected`, `noNotification`, `unknownFutureValue`. Inherited from [endUserNotificationSetting](../resources/endusernotificationsetting.md).|
 |trainingAssignment|[baseEndUserNotification](../resources/baseendusernotification.md)|Training assignment details.|
 |trainingReminder|[trainingReminderNotification](../resources/trainingremindernotification.md)|Training reminder details.|
 

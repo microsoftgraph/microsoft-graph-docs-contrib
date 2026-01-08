@@ -33,12 +33,10 @@ request_body = AccessPackageAssignmentRequest(
 				"assignment_policy_id" : "c5f7847f-83a8-4315-a754-d94a6f39b875",
 		}
 	),
+	justification = "Access for direct employee",
 	request_type = AccessPackageRequestType.UserAdd,
 	answers = [
 	],
-	additional_data = {
-			"justification" : "Access for direct employee",
-	}
 )
 
 result = await graph_client.identity_governance.entitlement_management.assignment_requests.post(request_body)

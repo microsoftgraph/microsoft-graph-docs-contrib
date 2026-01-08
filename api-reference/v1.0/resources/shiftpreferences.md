@@ -23,14 +23,14 @@ Represents a user's availability to be assigned shifts in the [schedule](schedul
 
 ## Properties
 
-|Property          |Type           |Description                                                                                                                                      |
-|--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| Property | Type | Description |
+|--|--|--|
 | availability | [shiftAvailability](shiftavailability.md) collection | Availability of the user to be scheduled for work and its recurrence pattern. |
-| createdDateTime | `Edm.DateTimeOffset` | Timestamp corresponding to when the entity was created. |
-| id | `Edm.String` | The identifier of the entity. |
+| createdDateTime | DateTimeOffset | Timestamp corresponding to when the entity was created. |
+| id | String | The identifier of the entity. |
 | lastModifiedBy | [identitySet](identityset.md) | Identity of the person who last modified the entity. |
-| lastModifiedDateTime | `Edm.DateTimeOffset` | Timestamp corresponding to when the entity was last modified. |
-| @odata.etag | `Edm.String` | The change key for the entity. |
+| lastModifiedDateTime | DateTimeOffset | Timestamp corresponding to when the entity was last modified. |
+| @odata.etag | String | The change key for the entity. |
 
 ## Relationships
 
@@ -64,4 +64,3 @@ The following JSON representation shows the resource type.
   "section": "documentation",
   "tocPath": ""
 }-->
-

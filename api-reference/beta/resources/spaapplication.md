@@ -4,7 +4,7 @@ description: "Specifies settings for a single-page application."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
-author: "sureshja"
+author: "Jackson-Woods"
 ms.date: 07/22/2024
 ---
 

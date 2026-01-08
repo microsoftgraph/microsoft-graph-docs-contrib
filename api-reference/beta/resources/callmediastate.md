@@ -20,7 +20,7 @@ Represents the media state for a [call](call.md).
 
 | Property            | Type    | Description                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
-| audio           | mediaState  | The audio media state. Possible values are: `active`, `inactive`, `unknownFutureValue`. |
+| audio           | mediaState  | The audio media state. The possible values are: `active`, `inactive`, `unknownFutureValue`. |
 
 ## Relationships
 None.

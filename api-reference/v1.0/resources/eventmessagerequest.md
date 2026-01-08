@@ -101,7 +101,7 @@ The following JSON representation shows the resource type.
 |hasAttachments|Boolean|Indicates whether the message has attachments.|
 |id|String|Read-only.|
 |importance|String| The importance of the message: `Low`, `Normal`, `High`.|
-|inferenceClassification|String| Possible values are: `Focused`, `Other`.|
+|inferenceClassification|String| The possible values are: `Focused`, `Other`.|
 |isDelegated|Boolean|True if this meeting request response is accessible to a delegate, false otherwise. Default is false.|
 |isDeliveryReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
 |isDraft|Boolean|Indicates whether the message is a draft. A message is a draft if it hasn't been sent yet.|

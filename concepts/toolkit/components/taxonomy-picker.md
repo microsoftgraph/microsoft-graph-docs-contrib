@@ -4,13 +4,17 @@ description: "Use the taxonomy picker component to query the Microsoft Graph API
 ms.localizationpriority: medium
 author: anoopt
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Taxonomy picker component in the Microsoft Graph Toolkit
 
+> [!CAUTION]
+> The Microsoft Graph Toolkit is deprecated. The retirement period begins September 1, 2025, with full retirement planned for August 28, 2026. Developers should migrate to using the Microsoft Graph SDKs or other supported Microsoft Graph tools for building web experiences. For more information, see the [deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-toolkit-retirement/).
+> 
 The taxonomy picker is a component that can query the [Microsoft Graph API for Taxonomy](/graph/api/resources/termstore-term) and render a dropdown control with terms, allowing selection of **a single** term based on the specified term set `id` or a combination of the specified term set `id` and the specified term `id`.
 
-The component retrieves the first level terms that are present under a specified term set or term. If only the term set ID is provided, it returns the first level terms under that term set. If both the term set ID and term ID are provided, it returns the first-level terms under the specified term.
+The component retrieves the first-level terms that are present under a specified term set or term. If only the term set ID is provided, it returns the first-level terms under that term set. If both the term set ID and term ID are provided, it returns the first-level terms under the specified term.
 
 > **Note**
 > This capability currently supports a **single** selection of terms coming from the term store.
@@ -39,19 +43,19 @@ You can use several attributes to change the behavior of the component. The requ
 
 | Attribute                 | Property                | Description                                                                                                                                                                                                                                                                 | Type    |
 | ------------------------- | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| term-set-id               | termsetId               | Mandatory. The ID of the term set to retrieve first level terms from.                                                                                                                                                                                                       | String  |
-| term-id                   | termId                  | Optional. The ID of the term to retrieve first level terms from. If not provided, the function retrieves the first level terms under the term set specified by `term-set-id`. <br> _Note_ that this term must be one of the terms under the term set with ID `term-set-id`. | String  |
-| site-id                   | siteId                  | Optional. The id of the site where the term set is present. If not specified, the term set is assumed to be at the tenant level.                                                                                                                                            | String  |
+| term-set-id               | termsetId               | Mandatory. The ID of the term set to retrieve first-level terms from.                                                                                                                                                                                                       | String  |
+| term-id                   | termId                  | Optional. The ID of the term to retrieve first-level terms from. If not provided, the function retrieves the first-level terms under the term set specified by `term-set-id`. <br> _Note_ that this term must be one of the terms under the term set with ID `term-set-id`. | String  |
+| site-id                   | siteId                  | Optional. The ID of the site where the term set is present. If not specified, the term set is assumed to be at the tenant level.                                                                                                                                            | String  |
 | version                   | version                 | Optional. API version to use when making the GET request. Default is `beta`.                                                                                                                                                                                                | String  |
-| placeholder               | placeholder             | Optional. The placeholder to use in the combobox. Default value is `Select a term`.                                                                                                                                                                                         | string  |
-| locale                    | locale                  | Optional. The locale of the terms that need to be displayed. This is useful only when terms have multiple labels in different languages.                                                                                                                               | String  |
-| default-selected-term-id  | defaultSelectedTermId   | Optional. The id of the term that should be selected by default.                                                                                                                                                                                                            | String  |
+| placeholder               | placeholder             | Optional. The placeholder to use in the combobox. The default value is `Select a term`.                                                                                                                                                                                         | string  |
+| locale                    | locale                  | Optional. The locale of the terms that need to be displayed. It's useful only when terms have multiple labels in different languages.                                                                                                                               | String  |
+| default-selected-term-id  | defaultSelectedTermId   | Optional. The ID of the term that should be selected by default.                                                                                                                                                                                                            | String  |
 | position                  | position                | Optional. The position of the dropdown. Can be 'above' or 'below'. Default is `below`                                                                                                                                                                                       | String  |
 | disabled                  | disabled                | Optional. Sets whether the taxonomy picker is disabled. When disabled, the user isn't able to search or select terms.                                                                                                                                                      | NA      |
-| cache-enabled             | cacheEnabled            | Optional. When set, it indicates that the response from the resource will be cached. Default is `false`.                                                                                                                                                                    | Boolean |
-| cache-invalidation-period | cacheInvalidationPeriod | Optional. (Number of milliseconds) When set in combination with `cacheEnabled`, the delay before the cache reaches its invalidation period will be modified by this value. Default is `0` and will use the default invalidation period.                                     | Number  |
+| cache-enabled             | cacheEnabled            | Optional. When set, it indicates that the response from the resource is cached. Default is `false`.                                                                                                                                                                    | Boolean |
+| cache-invalidation-period | cacheInvalidationPeriod | Optional. (Number of milliseconds) When set in combination with `cacheEnabled`, the delay before the cache reaches its invalidation period is modified by this value. Default is `0` and uses the default invalidation period.                                     | Number  |
 
-The following example changes the behavior of the component to fetch first level child terms of specified term set.
+The following example changes the behavior of the component to fetch first-level child terms of the specified term set.
 
 ```html
 <mgt-taxonomy-picker
@@ -59,7 +63,7 @@ The following example changes the behavior of the component to fetch first level
 ></mgt-taxonomy-picker>
 ```
 
-The following example changes the behavior of the component to fetch first level child terms of specified term.
+The following example changes the behavior of the component to fetch first-level child terms of the specified term.
 
 ```html
 <mgt-taxonomy-picker
@@ -68,7 +72,7 @@ The following example changes the behavior of the component to fetch first level
 ></mgt-taxonomy-picker>
 ```
 
-The following example changes the behavior of the component to fetch the French labels of the first level child terms of specified term.
+The following example changes the behavior of the component to fetch the French labels of the first-level child terms of the specified term.
 
 ```html
 <mgt-taxonomy-picker
@@ -78,7 +82,7 @@ The following example changes the behavior of the component to fetch the French 
 ></mgt-taxonomy-picker>
 ```
 
-The following example changes the behavior of the component to fetch first level child terms of specified term set that is present in a specified site.
+The following example changes the behavior of the component to fetch first-level child terms of the specified term set that is present in a specified site.
 
 ```html
 <mgt-taxonomy-picker
@@ -87,7 +91,7 @@ The following example changes the behavior of the component to fetch first level
 ></mgt-taxonomy-picker>
 ```
 
-The following example changes the behavior of the component to fetch first level child terms of specified term set and sets a specified term to be selected by default.
+The following example changes the behavior of the component to fetch first-level child terms of the specified term set and sets a specified term to be selected by default.
 
 ```html
 <mgt-taxonomy-picker
@@ -123,13 +127,13 @@ To learn more, see [styling components](../customize-components/style.md).
 
 | Method                  | Description                                                                                                                                 |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
-| refresh(force?:boolean) | Call the method to refresh the data. By default, the UI will only update if the data changes. Pass `true` to force the component to update. |
+| refresh(force?:boolean) | Call the method to refresh the data. By default, the UI only updates if the data changes. Pass `true` to force the component to update. |
 
 ## Events
 
 | Event              | When is it emitted                                               | Custom data                                                                                                          | Cancelable | Bubbles | Works with custom template |
 | ------------------ | ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | :--------: | :-----: | :------------------------: |
-| `selectionChanged` | Fired when the user makes a change in selection in the dropdown. | The selected term that will of the type [`TermStore.Term`](/graph/api/resources/termstore-term#json-representation) |     No     |   Yes   |            Yes             |
+| `selectionChanged` | Fired when the user makes a change in selection in the dropdown. | The selected term that is of the type [`TermStore.Term`](/graph/api/resources/termstore-term#json-representation) |     No     |   Yes   |            Yes             |
 
 For more information about handling events, see [events](../customize-components/events.md).
 

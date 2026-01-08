@@ -1,11 +1,11 @@
 ---
 title: "Use the Microsoft Graph API to export partner billing data"
 description: "The partner billing API in Microsoft Graph offers Microsoft direct partners a faster, more efficient way to export their high-volume billed and unbilled Azure usage data."
-author: "sourishdeb"
+author: "tingh-msft"
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.subservice: "reports"
-ms.date: 05/13/2024
+ms.date: 06/11/2025
 ---
 
 # Use the Microsoft Graph API to export partner billing data
@@ -34,27 +34,34 @@ To export reconciliation data, the calling principal must be in the partner tena
 
 ## Common use cases
 
-The partner billing API provides methods and actions that allow Microsoft direct partners to export their high-volume billed reconciliation data and billed and unbilled Azure usage data.
+The partner billing API provides methods and actions that allow Microsoft direct partners to export their high-volume billed and unbilled Azure usage data. This API also enables them to export billed and unbilled invoice reconciliation data.
 
 ### Billed usage data
 
 | Use case | API |
-|--|--|
+|:--|:--|
 | Create a new export operation to export billed usage data | [billedUsage: export](../api/partners-billing-billedusage-export.md) |
 | Poll for operation status update | [Get operation](../api/partners-billing-operation-get.md) |
 
 ### Unbilled usage data
 
 | Use case | API |
-|--|--|
+|:--|:--|
 | Create a new export operation to export unbilled usage data | [unbilledUsage: export](../api/partners-billing-unbilledusage-export.md) |
 | Poll for operation status update | [Get operation](../api/partners-billing-operation-get.md) |
 
 ### Billed invoice reconciliation data
 
 | Use case | API |
-|--|--|
+|:--|:--|
 | Create a new export operation to export billed invoice reconciliation data | [billedReconciliation: export](../api/partners-billing-billedreconciliation-export.md) |
+| Poll for operation status update | [Get operation](../api/partners-billing-operation-get.md) |
+
+### Unbilled invoice reconciliation data
+
+| Use case | API |
+|:--|:--|
+| Create a new export operation to export unbilled invoice reconciliation data | [unbilledReconciliation: export](../api/partners-billing-unbilledreconciliation-export.md) |
 | Poll for operation status update | [Get operation](../api/partners-billing-operation-get.md) |
 
 ## Asynchronous data retrieval
@@ -65,9 +72,9 @@ The download of usage or reconciliation data is a long-running operation that co
 
 Use the [billedUsage: export](../api/partners-billing-billedusage-export.md) or [unbilledUsage: export](../api/partners-billing-unbilledusage-export.md) API to access billed or unbilled consumption line items. The API returns a `202 Accepted` response code and a `Location` header that contains the URL to the long-running operation. You can check the status of the long-running operation by making a GET request at regular intervals until you receive a success status with a [manifest](../resources/partners-billing-manifest.md) URL.
 
-### Non-usage line-item endpoint
+### Invoice line-item endpoint
 
-Use the [billedReconciliation: export](../api/partners-billing-billedreconciliation-export.md) API to access billed invoice reconciliation line items. The API returns a `202 Accepted` response code and a `Location` header that contains the URL to the long-running operation. You can check the status of the long-running operation by making a GET request at regular intervals until you receive a success status with a [manifest](../resources/partners-billing-manifest.md) URL.
+Use the [billedReconciliation: export](../api/partners-billing-billedreconciliation-export.md) or [unbilledReconciliation: export](../api/partners-billing-unbilledreconciliation-export.md) API to access billed or unbilled invoice reconciliation line items. The API returns a `202 Accepted` response code and a `Location` header that contains the URL to the long-running operation. You can check the status of the long-running operation by making a GET request at regular intervals until you receive a success status with a [manifest](../resources/partners-billing-manifest.md) URL.
 
 ### Operation status endpoint
 

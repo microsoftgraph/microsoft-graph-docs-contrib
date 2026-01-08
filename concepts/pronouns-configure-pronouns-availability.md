@@ -4,8 +4,9 @@ description: "Learn how to use Microsoft Graph APIs to enable, disable, or get s
 author: "aymen-ms"
 ms.localizationpriority: high
 ms.subservice: "people"
-ms.custom: scenarios:getting-started
+ms.custom: scenarios:getting-started, sfi-ga-nochange
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Manage pronouns settings for an organization using the Microsoft Graph API
@@ -14,7 +15,7 @@ Using the Microsoft Graph API, you can enable, disable, or get settings that man
 
 Pronouns, in this context, are words used to replace a person's name in a sentence. Pronouns and their gender-neutral versions exist in many languages. For example, in English, "she", "her, "he", "him", and the gender-neutral "they", and "them" are common pronouns. Correctly using someone’s pronouns shows inclusion and respect. Sharing pronouns helps people avoid guessing or making assumptions based solely on names or initial observations of the person. In a hybrid, multicultural work or school environment, the simple act of using the right pronouns can help build trust and improve communication among one another.
 
-Global administrators can enable or disable pronouns for everyone in the organization, using the Microsoft 365 admin center or Microsoft Graph API. By default, pronouns are disabled.
+Global Administrators or People Administrators can enable or disable pronouns for everyone in the organization, using the Microsoft 365 admin center or Microsoft Graph API. By default, pronouns are disabled.
 
 Enabling pronouns in an organization facilitates associating users with their preferred pronouns within the organization. This includes the following end user experiences:
 
@@ -98,13 +99,13 @@ Use the [get](/graph/api/peopleadminsettings-list-pronouns?view=graph-rest-1.0&p
 
 The following example gets the current display settings that have pronouns disabled.
 
-``` http
+```http
 GET https://graph.microsoft.com/v1.0/admin/people/pronouns
 ```
 
 If successful, the response returns a `200 OK` response code and a [pronounsSettings](/graph/api/resources/pronounssettings?view=graph-rest-1.0&preserve-view=true) object in the response body.
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -117,7 +118,7 @@ Content-Type: application/json
 
 Use the [update](/graph/api/pronounssettings-update?view=graph-rest-1.0&preserve-view=true) operation to enable pronouns in your organization.
 
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/admin/people/pronouns
 Content-Type: application/json
 
@@ -128,7 +129,7 @@ Content-Type: application/json
 
 If successful, the response returns a `200 OK` response code and a [pronounsSettings](/graph/api/resources/pronounssettings?view=graph-rest-1.0&preserve-view=true) object in the response body.
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -141,7 +142,7 @@ Content-Type: application/json
 
 Use the update operation to make pronouns unavailable in your organization.
 
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/admin/people/pronouns
 Content-Type: application/json
 
@@ -152,7 +153,7 @@ Content-Type: application/json
 
 If successful, the response returns a `200 OK` response code and a [pronounsSettings](/graph/api/resources/pronounssettings?view=graph-rest-1.0&preserve-view=true) object in the response body.
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

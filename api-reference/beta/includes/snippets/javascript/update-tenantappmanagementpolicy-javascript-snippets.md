@@ -60,7 +60,17 @@ const tenantAppManagementPolicy = {
             nonDefaultUriAddition: {
                 restrictForAppsCreatedAfterDateTime: '2024-01-01T10:37:00Z',
                 excludeAppsReceivingV2Tokens: true,
-                excludeSaml: true
+                excludeSaml: true,
+                excludeActors: {
+                    customSecurityAttributes: [
+                        {
+                            '@odata.type': 'microsoft.graph.customSecurityAttributeStringValueExemption',
+                            id: 'PolicyExemptions_AppManagementExemption',
+                            operator: 'equals',
+                            value: 'ExemptFromIdentifierUriAdditionRestriction'
+                        }
+                    ]
+                }
             }
         }
     }

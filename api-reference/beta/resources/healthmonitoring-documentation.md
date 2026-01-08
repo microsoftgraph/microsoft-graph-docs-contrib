@@ -14,7 +14,7 @@ Namespace: microsoft.graph.healthMonitoring
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a key-value pair that contains the name of and a link to the documentation to aid in investigating an alert in Microsoft Entra Health monitoring. This resource is an open type that allows other properties to be passed in.
+Represents a key-value pair that contains the name of and a link to the documentation to aid in investigating an alert in Microsoft Entra Health monitoring. This resource is an open type that allows additional properties beyond those documented here.
 
 Inherits from [healthMonitoringDictionary](../resources/healthmonitoring-healthmonitoringdictionary.md).
 

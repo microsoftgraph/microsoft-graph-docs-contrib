@@ -76,10 +76,6 @@ GET https://graph.microsoft.com/beta/directory/authenticationMethodDevices/hardw
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-hardwareoathtokenauthenticationmethoddevice-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-hardwareoathtokenauthenticationmethoddevice-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-hardwareoathtokenauthenticationmethoddevice-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -94,6 +90,10 @@ GET https://graph.microsoft.com/beta/directory/authenticationMethodDevices/hardw
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-hardwareoathtokenauthenticationmethoddevice-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-hardwareoathtokenauthenticationmethoddevice-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -179,10 +179,6 @@ GET https://graph.microsoft.com/beta/directory/authenticationMethodDevices/hardw
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-hardwareoathtokenauthenticationmethoddevice-filter-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-hardwareoathtokenauthenticationmethoddevice-filter-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-hardwareoathtokenauthenticationmethoddevice-filter-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -197,6 +193,10 @@ GET https://graph.microsoft.com/beta/directory/authenticationMethodDevices/hardw
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-hardwareoathtokenauthenticationmethoddevice-filter-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-hardwareoathtokenauthenticationmethoddevice-filter-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -263,10 +263,6 @@ GET https://graph.microsoft.com/beta/directory/authenticationMethodDevices/hardw
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-hardwareoathtokenauthenticationmethoddevice-serialnumber-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-hardwareoathtokenauthenticationmethoddevice-serialnumber-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-hardwareoathtokenauthenticationmethoddevice-serialnumber-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -281,6 +277,10 @@ GET https://graph.microsoft.com/beta/directory/authenticationMethodDevices/hardw
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-hardwareoathtokenauthenticationmethoddevice-serialnumber-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-hardwareoathtokenauthenticationmethoddevice-serialnumber-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

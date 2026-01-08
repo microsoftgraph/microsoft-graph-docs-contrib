@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const conditionalAccessPolicy = {
-    displayName: 'Require MFA to EXO from non-complaint devices.',
+    displayName: 'Require MFA to EXO from non-compliant devices.',
     state: 'enabled',
     conditions: {
         applications: {

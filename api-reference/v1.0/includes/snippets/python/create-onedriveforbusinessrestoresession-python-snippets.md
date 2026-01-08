@@ -15,17 +15,13 @@ request_body = OneDriveForBusinessRestoreSession(
 	drive_restore_artifacts = [
 		DriveRestoreArtifact(
 			restore_point = RestorePoint(
-				additional_data = {
-						"@odata_id" : "1f1fccc3-a642-4f61-bf49-f37b9a888279",
-				}
+				id = "1f1fccc3-a642-4f61-bf49-f37b9a888279",
 			),
 			destination_type = DestinationType.New,
 		),
 		DriveRestoreArtifact(
 			restore_point = RestorePoint(
-				additional_data = {
-						"@odata_id" : "1f1fccc3-a642-4f61-bf49-f37b9a888280",
-				}
+				id = "1f1fccc3-a642-4f61-bf49-f37b9a888280",
 			),
 			destination_type = DestinationType.New,
 		),

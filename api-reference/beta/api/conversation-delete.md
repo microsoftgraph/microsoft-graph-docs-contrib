@@ -46,7 +46,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ## Example
 ### Request
-Here's an example  of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -59,10 +59,6 @@ DELETE https://graph.microsoft.com/beta/groups/{id}/conversations/{id}
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-conversation-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-conversation-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -92,7 +88,7 @@ DELETE https://graph.microsoft.com/beta/groups/{id}/conversations/{id}
 ---
 
 ### Response
-Here's an example  of the response. 
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

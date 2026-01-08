@@ -15,8 +15,10 @@ use Microsoft\Graph\Beta\Generated\Models\X509CertificateRule;
 use Microsoft\Graph\Beta\Generated\Models\X509CertificateRuleType;
 use Microsoft\Graph\Beta\Generated\Models\X509CertificateIssuerHintsConfiguration;
 use Microsoft\Graph\Beta\Generated\Models\X509CertificateIssuerHintsState;
-use Microsoft\Graph\Beta\Generated\Models\AuthenticationMethodTarget;
+use Microsoft\Graph\Beta\Generated\Models\X509CertificateAuthorityScope;
+use Microsoft\Graph\Beta\Generated\Models\IncludeTarget;
 use Microsoft\Graph\Beta\Generated\Models\AuthenticationMethodTargetType;
+use Microsoft\Graph\Beta\Generated\Models\AuthenticationMethodTarget;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -50,6 +52,18 @@ $requestBody->setAuthenticationModeConfiguration($authenticationModeConfiguratio
 $issuerHintsConfiguration = new X509CertificateIssuerHintsConfiguration();
 $issuerHintsConfiguration->setState(new X509CertificateIssuerHintsState('disabled'));
 $requestBody->setIssuerHintsConfiguration($issuerHintsConfiguration);
+$certificateAuthorityScopesX509CertificateAuthorityScope1 = new X509CertificateAuthorityScope();
+$certificateAuthorityScopesX509CertificateAuthorityScope1->setSubjectKeyIdentifier('aaaaaaaabbbbcccc111122222222222222333333');
+$certificateAuthorityScopesX509CertificateAuthorityScope1->setPublicKeyInfrastructureIdentifier('Contoso PKI');
+$includeTargetsIncludeTarget1 = new IncludeTarget();
+$includeTargetsIncludeTarget1->setId('aaaaaaaa-bbbb-cccc-1111-222222222222');
+$includeTargetsIncludeTarget1->setTargetType(new AuthenticationMethodTargetType('group'));
+$includeTargetsArray []= $includeTargetsIncludeTarget1;
+$certificateAuthorityScopesX509CertificateAuthorityScope1->setIncludeTargets($includeTargetsArray);
+
+$certificateAuthorityScopesArray []= $certificateAuthorityScopesX509CertificateAuthorityScope1;
+$requestBody->setCertificateAuthorityScopes($certificateAuthorityScopesArray);
+
 $includeTargetsAuthenticationMethodTarget1 = new AuthenticationMethodTarget();
 $includeTargetsAuthenticationMethodTarget1->setTargetType(new AuthenticationMethodTargetType('group'));
 $includeTargetsAuthenticationMethodTarget1->setId('all_users');
@@ -57,6 +71,13 @@ $includeTargetsAuthenticationMethodTarget1->setIsRegistrationRequired(false);
 $includeTargetsArray []= $includeTargetsAuthenticationMethodTarget1;
 $requestBody->setIncludeTargets($includeTargetsArray);
 
+$additionalData = [
+'crlValidationConfiguration' => [
+'state' => 'disabled',
+'exemptedCertificateAuthoritiesSubjectKeyIdentifiers' => [],
+],
+];
+$requestBody->setAdditionalData($additionalData);
 
 $result = $graphServiceClient->policies()->authenticationMethodsPolicy()->authenticationMethodConfigurations()->byAuthenticationMethodConfigurationId('authenticationMethodConfiguration-id')->patch($requestBody)->wait();
 

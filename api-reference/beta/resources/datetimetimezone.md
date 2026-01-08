@@ -123,7 +123,7 @@ Asia/Damascus
 
 Africa/Johannesburg
 
-Europe/Kyiv (Kiev)
+Europe/Kyiv
 
 Europe/Istanbul
 

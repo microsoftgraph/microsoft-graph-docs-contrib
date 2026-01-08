@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-> The Privileged Identity Management (PIM) API for **Azure resources** and **Microsoft Entra roles** iteration 2 will be deprecated soon. Use the new [Azure REST PIM API for Azure resources](/rest/api/authorization/role-eligibility-schedule-requests) and [PIM API for Microsoft Entra roles iteration 3](privilegedidentitymanagementv3-overview.md). To migrate, see the [migration guidance](/graph/api/resources/privilegedidentitymanagement-root).
+> The Privileged Identity Management (PIM) API for **Azure resources** and **Microsoft Entra roles** is deprecated and will stop returning data on October 28, 2026. Use the new [Azure REST PIM API for Azure resources](/rest/api/authorization/role-eligibility-schedule-requests) and [PIM API for Microsoft Entra roles iteration 3](privilegedidentitymanagementv3-overview.md). To migrate, see the [migration guidance](/graph/api/resources/privilegedidentitymanagement-root).
 
 [Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure) is a service that enables you to manage, control, and monitor access to important resources in your organization. This scope includes access to resources in Microsoft Entra ID, Azure resources, and other Microsoft services like Microsoft 365 or Microsoft Intune.
 

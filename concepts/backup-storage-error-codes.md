@@ -6,6 +6,7 @@ ms.localizationpriority: high
 ms.subservice: "m365-backup-storage"
 doc_type: conceptualPageType
 ms.date: 11/07/2024
+ms.topic: troubleshooting-error-codes
 ---
 
 # Backup Storage API error responses
@@ -31,6 +32,7 @@ The following table lists the possible error and response codes that can be retu
 |400|InvalidProtectionUnitId|Thrown when one of the Protection Unit IDs is invalid.|Protection Unit ID is invalid.|
 |413|ProtectionUnitsLimitBreached|Thrown when the user tries to add more Protection Units than supported in one request.|Number of Protection Units in each request must not exceed 50.|
 |409|PolicyCreationNotAllowed|Thrown when an active protection policy already exists for the service and the user tries to create a new policy.|Can't create Policy. Another active Policy already exists.|
+|409|ProtectionUnitAlreadyExists|Artifact ArtifactId is not eligible for protection because it is already protected under policy PolicyId.| Thrown when artifact is already protected under another policy.
 |500|PolicySaveFailed|Thrown when a transient error occurs in the M365 Backup service.|An unknown error occurred. Try again.|
 
 ## Get protection policy API errors
@@ -58,8 +60,8 @@ The following table lists the possible error and response codes that can be retu
 
 | HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
-|200|ProtectionUnitAlreadyExists|This is a delta patch ProtectionUnit level error returned when the request has duplicate Protection Unit in the list that is already present in the service.|ProtectionUnit level error: ProtectionUnit already exists.|
 |200|ProtectionUnitNotFound|This is a delta patch ProtectionUnit level error returned when the user requests to remove Protection Unit, which isn't present in the service.|ProtectionUnit level error: ProtectionUnit doesn't exist.|
+|200|ProtectionUnitAlreadyExists|Artifact ArtifactId is not eligible for protection because it is already protected under policy PolicyId.| Thrown when artifact is already protected under another policy.
 |400|DuplicateProtectionUnitInList|This is a Protection Unit level error returned when the request has duplicate artifacts in the list.|Protection Unit level error: Duplicate Protection Unit in list.|
 |400|ProtectionUnitActionNotAllowed|The artifact with the given protection unit ID can't be removed as it's protected by a dynamic rule.| Protection units protected via dynamic rules can't be removed manually.|
 |404|PolicyNotFound|Thrown when the ID is valid but the policy doesn't exist.|Unable to get the Protection Policy.|
@@ -362,3 +364,64 @@ The following table lists the possible error and response codes that can be retu
 |403|UnableToReadBillingProfile|Unable to read billing profile from billing profile provider.|Unable to read billing profile from billing profile provider.|
 |402|InvalidBillingProfile|Invalid billing profile received from the provider.|Invalid billing profile received from the provider.|
 |400|InvalidAppOwnerTenantId|Owning tenant id not found|Invalid App owner tenant id received from the user.|
+
+## Create bulk addition requests for restoring artifacts API errors
+
+The error codes in this section apply to the following APIs:
+
+- [Create driveRestoreArtifactsBulkAdditionRequests](/graph/api/onedriveforbusinessrestoresession-post-driverestoreartifactsbulkadditionrequests?view=graph-rest-beta&preserve-view=true)
+- [Create mailboxRestoreArtifactsBulkAdditionRequests](/graph/api/exchangerestoresession-post-mailboxrestoreartifactsbulkadditionrequests?view=graph-rest-beta&preserve-view=true)
+- [Create siteRestoreArtifactsBulkAdditionRequests](/graph/api/sharepointrestoresession-post-siterestoreartifactsbulkadditionrequests?view=graph-rest-beta&preserve-view=true)
+
+The following table lists the possible error and response codes that can be returned.
+
+| HTTP status code| Error code| Error message | Description|
+|:------------------|:--------------|:--------------|:--------------|
+|400|InvalidBulkRestoreArtifactId|Bulk restore request ID is invalid.|Invalid GUID provided in URI.|
+|400|BulkRestoreInvalidCreateRequest|BulkRestoreCreateRequest is null.|The create request is null or invalid.|
+|400|BulkRestoreRestorationResourcesCountExceedsLimit|Bulk restore input limit exceeded.|Input size is too large.|
+|400|BulkRestoreInvalidCreateRequestSiteUrl|Bulk restore site web URL is invalid.|Site URL is null, empty, or in an incorrect format.|
+|400|BulkRestoreInvalidCreateRequestUserEmail|Bulk restore user email is invalid.|Email is null, empty, or in an incorrect format.|
+
+## Get bulk addition requests for restoring artifacts API errors
+
+The error code in this section applies to the following APIs:
+
+- [Get driveRestoreArtifactsBulkAdditionRequests](/graph/api/driverestoreartifactsbulkadditionrequest-get?view=graph-rest-beta&preserve-view=true)
+- [Get mailboxRestoreArtifactsBulkAdditionRequests](/graph/api/mailboxrestoreartifactsbulkadditionrequest-get?view=graph-rest-beta&preserve-view=true)
+- [Get siteRestoreArtifactsBulkAdditionRequests](/graph/api/siterestoreartifactsbulkadditionrequest-get?view=graph-rest-beta&preserve-view=true)
+
+The following table lists the possible error and response code that can be returned.
+
+| HTTP status code| Error code| Error message | Description|
+|:------------------|:--------------|:--------------|:--------------|
+|404|BulkRestoreArtifactsNotFound|No bulkRestoreArtifact item with the given bulkRestoreArtifactId.|No restoreArtifactBulkAdditionRequest associated with the provided bulkRestoreArtifactId in the URI.|
+
+## Delete bulk addition requests for restoring artifacts API errors
+
+The error code in this section applies to the following APIs:
+
+- [Delete driveRestoreArtifactsBulkAdditionRequests](/graph/api/driverestoreartifactsbulkadditionrequest-delete?view=graph-rest-beta&preserve-view=true)
+- [Delete mailboxRestoreArtifactsBulkAdditionRequests](/graph/api/mailboxrestoreartifactsbulkadditionrequest-delete?view=graph-rest-beta&preserve-view=true)
+- [Delete siteRestoreArtifactsBulkAdditionRequests](/graph/api/siterestoreartifactsbulkadditionrequest-delete?view=graph-rest-beta&preserve-view=true)
+
+The following table lists the possible error and response code that can be returned.
+
+| HTTP status code| Error code| Error message | Description|
+|:------------------|:--------------|:--------------|:--------------|
+|403|InvalidStateForBulkRequestDeletion|Validation fails when the service type of the restore session and create request are different.|A bulk request can only be deleted when its status is `completed` or `completedWithErrors`.|
+
+## PowerShell errors
+
+The error codes in this section apply to the following APIs when they're called from Microsoft Graph PowerShell:
+
+- [Get backupRestoreRoot](/graph/api/backuprestoreroot-get)
+- [Enable backupRestoreRoot](/graph/api/backuprestoreroot-enable)
+- [Create serviceApp](/graph/api/backuprestoreroot-post-serviceapps)
+- [Delete serviceApp](/graph/api/backuprestoreroot-delete-serviceapps)
+
+The following table lists the possible error and response code that can be returned.
+
+| HTTP status code| Error code| Error message | Description|
+|:------------------|:--------------|:--------------|:--------------|
+|403|Forbidden|Method not allowed for known allowed listed internal apps.|The request is forbidden when called from Microsoft Graph PowerShell because these APIs are intended for use by registered Backup Controller applications. The Microsoft Graph PowerShell SDK isn't a supported client for these operations.|

@@ -5,14 +5,14 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/13/2024
+ms.date: 08/01/2024
 ---
 
 # windowsInformationProtectionWipeAction resource type
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -31,7 +31,7 @@ Represents wipe requests issued by tenant admin for Bring-Your-Own-Device(BYOD) 
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity.|
-|status|[actionState](../resources/intune-shared-actionstate.md)|Wipe action status. Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|status|[actionState](../resources/intune-shared-actionstate.md)|Wipe action status. The possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |targetedUserId|String|The UserId being targeted by this wipe action.|
 |targetedDeviceRegistrationId|String|The DeviceRegistrationId being targeted by this wipe action.|
 |targetedDeviceName|String|Targeted device name.|

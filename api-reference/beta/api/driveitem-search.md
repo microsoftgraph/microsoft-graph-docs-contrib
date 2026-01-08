@@ -34,7 +34,7 @@ GET /drives/{drive-id}/root/search(q='{search-text}')
 GET /groups/{group-id}/drive/root/search(q='{search-text}')
 GET /me/drive/root/search(q='{search-text}')
 GET /sites/{site-id}/drive/root/search(q='{search-text}')
-GET /users/{user-id}/drive/root/search(q='{search-text}')
+GET /users/{user-id | userPrincipalName}/drive/root/search(q='{search-text}')
 ```
 
 ## Optional query parameters
@@ -62,10 +62,6 @@ GET /me/drive/root/search(q='Contoso Project')
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/item-search-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/item-search-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -144,10 +140,6 @@ GET /me/drive/search(q='Contoso Project')
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/item-search-all-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/item-search-all-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

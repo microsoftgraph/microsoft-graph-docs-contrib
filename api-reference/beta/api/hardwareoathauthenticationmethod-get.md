@@ -39,16 +39,18 @@ Get details of a hardware OATH authentication method assigned to you.
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 Get details of a hardware OATH authentication method assigned to another user.
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /users/{usersId}/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}
 ```
 
@@ -81,16 +83,12 @@ The following example shows a request.
   "name": "get_hardwareoathauthenticationmethod"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods/{hardwareOathAuthenticationMethodId}
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-hardwareoathauthenticationmethod-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-hardwareoathauthenticationmethod-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -109,6 +107,10 @@ GET https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods/{hard
 [!INCLUDE [sample-code](../includes/snippets/php/get-hardwareoathauthenticationmethod-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-hardwareoathauthenticationmethod-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-hardwareoathauthenticationmethod-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -125,7 +127,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.hardwareOathAuthenticationMethod"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -133,6 +135,7 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.hardwareOathAuthenticationMethod",
     "id": "aad49556-####-####-####-############",
+    "lastUsedDateTime": "2022-11-06T23:16:12Z",
     "device": {
         "id": "aad49556-####-####-####-############",
         "displayName": "Amy Masters Token",

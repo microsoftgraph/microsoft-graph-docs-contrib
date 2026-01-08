@@ -5,14 +5,14 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/12/2024
+ms.date: 08/01/2024
 ---
 
 # microsoftTunnelServerLogCollectionResponse resource type
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -33,7 +33,7 @@ Entity that stores the server log collection status.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier for server log collection response. Read-only.|
-|status|[microsoftTunnelLogCollectionStatus](../resources/intune-mstunnel-microsofttunnellogcollectionstatus.md)|The status of log collection. Possible values are: pending, completed, failed. Possible values are: `pending`, `completed`, `failed`, `unknownFutureValue`.|
+|status|[microsoftTunnelLogCollectionStatus](../resources/intune-mstunnel-microsofttunnellogcollectionstatus.md)|The status of log collection. The possible values are: pending, completed, failed. The possible values are: `pending`, `completed`, `failed`, `unknownFutureValue`.|
 |startDateTime|DateTimeOffset|The start time of the logs collected|
 |endDateTime|DateTimeOffset|The end time of the logs collected|
 |sizeInBytes|Int64|The size of the logs in bytes|

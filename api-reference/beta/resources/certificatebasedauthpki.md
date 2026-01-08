@@ -1,11 +1,12 @@
 ---
 title: "certificateBasedAuthPki resource type"
 description: "The collection of public key infrastructure instances for the certificate based authentication."
-author: "suawat"
+author: "vimrang"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ms.date: 11/15/2024
+toc.title: Certificate-based auth PKI
 ---
 
 # certificateBasedAuthPki resource type
@@ -14,11 +15,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The collection of public key infrastructure (PKI) instances for the [certificate-based authentication method](../resources/x509certificateauthenticationmethodconfiguration.md). The [certificate-based authentication method](../resources/x509certificateauthenticationmethodconfiguration.md) must be enabled in the tenant for you to manage these PKI instances.
-
+Represents a collection of public key infrastructure (PKI) instances for the [certificate-based authentication method](../resources/x509certificateauthenticationmethodconfiguration.md). You must enable the certificate-based authentication method in the tenant to manage these PKI instances.
 
 Inherits from [directoryObject](../resources/directoryobject.md).
 
+For more information, see [Set up Microsoft Entra certificate-based authentication](/entra/identity/authentication/how-to-certificate-based-authentication).
 
 ## Methods
 |Method|Return type|Description|
@@ -38,7 +39,7 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |deletedDateTime|DateTimeOffset|The date and time when the object was soft deleted. Inherited from base class and `null` for objects that are not deleted. Inherited from [directoryObject](../resources/directoryobject.md).|
-|displayName|String|The name of the object.|
+|displayName|String|The name of the object. Maximum length is 256 characters.|
 |id|String|The ID of the object. Inherited from [entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the object was created or last modified.|
 |status|String|The status of any asynchronous jobs runs on the object which can be upload or delete.|

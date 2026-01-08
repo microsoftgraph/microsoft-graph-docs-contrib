@@ -23,7 +23,7 @@ Inherits from [learningCourseActivity](../resources/learningcourseactivity.md).
 |@odata.type|String|Indicates whether this is a [learningAssignment](../resources/learningassignment.md) or [learningSelfInitiated](../resources/learningselfinitiatedcourse.md) course activity. Required.|
 |assignedDateTime|DateTimeOffset|Assigned date for the course activity. Optional.|
 |assignerUserId|String|The user ID of the assigner. Optional.|
-|assignmentType|String|The assignment type for the course activity. Possible values are: `required`, `recommended`, `unknownFutureValue`, `peerRecommended`. Use the `Prefer: include-unknown-enum-members` request header to get the following value or values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `peerRecommended`. Required.|
+|assignmentType|String|The assignment type for the course activity. The possible values are: `required`, `recommended`, `unknownFutureValue`, `peerRecommended`. Use the `Prefer: include-unknown-enum-members` request header to get the following value or values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `peerRecommended`. Required.|
 |completedDateTime|DateTimeOffset|Date and time when the assignment was completed. Optional.|
 |completionPercentage|Int32|The percentage of the course completed by the user. If a value is provided, it must be between `0` and `100` (inclusive). Optional.|
 |dueDateTime|DateTimeOffset|Due date for the course activity. Optional.|
@@ -34,7 +34,7 @@ Inherits from [learningCourseActivity](../resources/learningcourseactivity.md).
 |learningProviderId|String|The registration ID of the provider. Required.|
 |notes|String|Notes for the course activity. Optional.|
 |startedDateTime|DateTimeOffset|The date and time when the self-initiated course was started by the learner. Optional.|
-|status|courseStatus|The status of the course activity. Possible values are: `notStarted`, `inProgress`, `completed`. Required.|
+|status|courseStatus|The status of the course activity. The possible values are: `notStarted`, `inProgress`, `completed`. Required.|
 
 ## Relationships
 

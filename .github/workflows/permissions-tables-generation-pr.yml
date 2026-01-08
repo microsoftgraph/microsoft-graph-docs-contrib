@@ -39,15 +39,14 @@ jobs:
         GITHUB_TOKEN: ${{ steps.get_token.outputs.app-token }}
         MESSAGE_TITLE: "Permissions tables update"
         MESSAGE_BODY: "Scheduled permissions tables update"
-        REVIEWERS: millicentachieng
-        ASSIGNEDTO: millicentachieng
+        LABEL: "ready for content review"
         BASE: main
       run: |
         git fetch origin main
         commitCount=`git rev-list origin/main.. --count`
         if [ $commitCount == 1 ]; then
           curl -fsSL https://github.com/github/hub/raw/master/script/get | bash -s 2.14.1
-          bin/hub pull-request -b "$BASE" -h "$GITHUB_REF" -m "$MESSAGE_TITLE" -m "$MESSAGE_BODY" -r "$REVIEWERS" -a "$ASSIGNEDTO"
+          bin/hub pull-request -b "$BASE" -h "$GITHUB_REF" -m "$MESSAGE_TITLE" -m "$MESSAGE_BODY" -l "$LABEL"
         else
           echo "this is a subsequent commit to the permissions-tables-update branch, so ignoring PR generation request.."
         fi

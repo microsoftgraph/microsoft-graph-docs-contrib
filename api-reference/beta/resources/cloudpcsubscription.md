@@ -19,8 +19,8 @@ Represents the subscription information that can be used to store a snapshot or 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|subscriptionId|String|The ID of the subscription.|
-|subscriptionName|String|The name of the subscription.|
+|subscriptionId|String|Indicates the ID of the subscription.|
+|subscriptionName|String|Indicates the name of the subscription.|
 
 ## Relationships
 None.

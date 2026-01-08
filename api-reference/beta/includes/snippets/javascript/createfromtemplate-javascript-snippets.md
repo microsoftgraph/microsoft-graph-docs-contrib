@@ -10,14 +10,14 @@ const options = {
 
 const client = Client.init(options);
 
-const baseSitePage = {
+const createFromTemplate = {
     title: 'Sample',
     name: 'Sample.aspx',
     templateId: 'f6ed8c43-9923-4c6c-ba09-9c32b8f10aeb'
 };
 
-await client.api('/sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pages/createFromTemplate')
+await client.api('/sites/dd00d52e-0db7-4d5f-8269-90060ac688d1/pages/sitePage/createFromTemplate')
 	.version('beta')
-	.post(baseSitePage);
+	.post(createFromTemplate);
 
 ```

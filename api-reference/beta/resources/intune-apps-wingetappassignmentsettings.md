@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -24,7 +24,7 @@ Inherits from [mobileAppAssignmentSettings](../resources/intune-shared-mobileapp
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|notifications|[winGetAppNotification](../resources/intune-shared-wingetappnotification.md)|The notification status for this app assignment. Possible values are: `showAll`, `showReboot`, `hideAll`, `unknownFutureValue`.|
+|notifications|[winGetAppNotification](../resources/intune-shared-wingetappnotification.md)|The notification status for this app assignment. The possible values are: `showAll`, `showReboot`, `hideAll`, `unknownFutureValue`.|
 |restartSettings|[winGetAppRestartSettings](../resources/intune-shared-wingetapprestartsettings.md)|The reboot settings to apply for this app assignment.|
 |installTimeSettings|[winGetAppInstallTimeSettings](../resources/intune-shared-wingetappinstalltimesettings.md)|The install time settings to apply for this app assignment.|
 

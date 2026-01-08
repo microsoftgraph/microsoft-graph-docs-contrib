@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Represents findings for a list of potential exploiting of a misconfigured IAM policy or configuration oversight to gain elevated access to other permissions and resources in AWS and GCP.
 
 Inherits from [finding](../resources/finding.md).
@@ -59,4 +61,5 @@ The following JSON representation shows the resource type.
   }
 }
 ```
+
 

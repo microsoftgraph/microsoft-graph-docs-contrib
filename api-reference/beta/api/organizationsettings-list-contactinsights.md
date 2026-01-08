@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /organization/{organizationId}/settings/contactInsights
 ```
 
@@ -58,16 +58,12 @@ The following example shows a request.
   "name": "get_insightssettingscontactrequest"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/contactInsights
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-insightssettingscontactrequest-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-insightssettingscontactrequest-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -105,7 +101,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.insightsSettings",
   "name": "get_insightssettingscontactrequest"
 } -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

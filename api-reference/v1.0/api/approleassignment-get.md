@@ -48,7 +48,7 @@ To get details of an appRole granted to a service principal:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /servicePrincipals/{client-serviceprincipal-id}/appRoleAssignments/{appRoleAssignment-id}
 GET /servicePrincipals(appId='{client-servicePrincipal-appId}')/appRoleAssignments/{appRoleAssignment-id}
 ```
@@ -58,7 +58,7 @@ To get details of an appRole granted to a user, group, or client service princip
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /servicePrincipals(appId='{resource-servicePrincipal-appId}')/appRoleAssignedTo/{appRoleAssignment-id}
 GET /servicePrincipals/{resource-serviceprincipal-id}/appRoleAssignedTo/{appRoleAssignment-id}
 ```
@@ -68,7 +68,7 @@ To get details of an appRole granted to a group:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /groups/{group-id}/appRoleAssignments/{appRoleAssignment-id}
 ```
 
@@ -77,10 +77,12 @@ To get details of an appRole granted to a user:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /users/{user-id}/appRoleAssignments/{appRoleAssignment-id}
 GET /me/appRoleAssignments/{appRoleAssignment-id}
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 ## Optional query parameters
 This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
@@ -109,7 +111,7 @@ The following request queries the resource service principal to get details of a
   "sampleKeys": ["00000003-0000-0000-c000-000000000000", "ep6PKgGvOkGVksMuwOXBpxV3dkHvwM1ElSjMUzZtaIA"]
 }
 -->
-``` http
+```http
 GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000-c000-000000000000')/appRoleAssignedTo/ep6PKgGvOkGVksMuwOXBpxV3dkHvwM1ElSjMUzZtaIA
 ```
 
@@ -124,7 +126,7 @@ The following example shows the response. It shows a client service principal na
   "@odata.type": "microsoft.graph.appRoleAssignment"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -152,7 +154,7 @@ The following request queries the client service principal to get details of an 
   "sampleKeys": ["ceb96a54-de95-49a0-b38c-c55263fcf421", "ep6PKgGvOkGVksMuwOXBpxV3dkHvwM1ElSjMUzZtaIA"]
 }
 -->
-``` http
+```http
 GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='ceb96a54-de95-49a0-b38c-c55263fcf421')/appRoleAssignments/ep6PKgGvOkGVksMuwOXBpxV3dkHvwM1ElSjMUzZtaIA
 ```
 
@@ -166,7 +168,7 @@ The following example shows the response. It shows a client service principal na
   "@odata.type": "microsoft.graph.appRoleAssignment"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -194,16 +196,12 @@ The following request queries the signed-in user's appRoleAssignments.
   "name": "get_approleassignment"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/appRoleAssignments/Lo6gEKI-4EyAy9X91LBepo6Aq0Rt6QxBjWRl76txk8I
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-approleassignment-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-approleassignment-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -242,7 +240,7 @@ The following example shows the response. It shows the signed-in user has the de
   "@odata.type": "microsoft.graph.appRoleAssignment"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

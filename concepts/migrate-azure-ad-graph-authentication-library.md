@@ -7,13 +7,13 @@ ms.reviewer: krbash
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.subservice: entra-applications
-ms.date: 01/24/2025
+ms.date: 02/14/2025
 #Customer intent: As a developer, I want to learn what authentication libraries to use, so that I can update my code accordingly as I migrate my app from Azure AD Graph to Microsoft Graph.
 ---
 
 # Review app authentication library changes
 
-This article is part of *step 3: review app details* of the [process to migrate apps](migrate-azure-ad-graph-planning-checklist.md).
+> This article is part of *Step 3: review app details* in the [Azure AD Graph app migration planning checklist](migrate-azure-ad-graph-planning-checklist.md) series.
 
 Most apps use an authentication library to acquire and manage access tokens to call Microsoft Graph. Microsoft offers two authentication libraries:
 

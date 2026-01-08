@@ -4,7 +4,7 @@ ms.date: 09/10/2017
 title: driveRecipient resource type
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
-description: "The driveRecipient resource represents a person, group, or other recipient to share with using the invite action."
+description: "Represents a person, group, or other recipient to share with using the invite action."
 doc_type: resourcePageType
 ---
 
@@ -20,11 +20,11 @@ Only one of these values is required; multiple values are not accepted.
 ## Properties
 The recipients resource has these properties.
 
-| Property name | Type   | Description                                                                                             |
-|:--------------|:-------|:--------------------------------------------------------------------------------------------------------|
-| alias         | String | The alias of the domain object, for cases where an email address is unavailable (e.g. security groups). |
-| email         | String | The email address for the recipient, if the recipient has an associated email address.                  |
-| objectId      | String | The unique identifier for the recipient in the directory.                                               |
+| Property name | Type   | Description                                                                                                     |
+|:--------------|:-------|:----------------------------------------------------------------------------------------------------------------|
+| alias         | String | The alias of the domain object, for cases where an email address is unavailable (for example, security groups). |
+| email         | String | The email address for the recipient, if the recipient has an associated email address.                          |
+| objectId      | String | The unique identifier for the recipient in the directory.                                                       |
 
 ## JSON representation
 

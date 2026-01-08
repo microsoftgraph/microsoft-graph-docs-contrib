@@ -1,5 +1,5 @@
 ---
-title: "List governanceRoleAssignments"
+title: "List governanceRoleAssignments (deprecated)"
 description: "Retrieve a collection of governanceRoleAssignments."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -9,7 +9,7 @@ ROBOTS: NOINDEX
 ms.date: 08/13/2024
 ---
 
-# List governanceRoleAssignments
+# List governanceRoleAssignments (deprecated)
 
 Namespace: microsoft.graph
 

@@ -19,6 +19,7 @@ var requestBody = new EducationAssignment
 	},
 	DueDateTime = DateTimeOffset.Parse("2021-09-10T00:00:00Z"),
 	AddedStudentAction = EducationAddedStudentAction.None,
+	LanguageTag = "pt-BR",
 	AddToCalendarAction = EducationAddToCalendarOptions.StudentsAndPublisher,
 };
 

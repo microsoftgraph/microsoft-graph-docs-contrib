@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /security/threatSubmission/emailThreatSubmissionPolicies/{id}
 ```
 
@@ -53,7 +53,7 @@ If successful, this method returns a `204 No Content` response code.
   "name": "delete_emailthreatsubmissionpolicy"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/security/threatSubmission/emailThreatSubmissionPolices/{id}
 ```
 
@@ -65,7 +65,7 @@ DELETE https://graph.microsoft.com/beta/security/threatSubmission/emailThreatSub
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

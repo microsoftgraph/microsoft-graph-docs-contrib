@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 Represents the source of an authorization system identity.
 
 The following resource types inherit from this resource:
@@ -46,4 +48,5 @@ The following JSON representation shows the resource type.
   "identityProviderType": "String"
 }
 ```
+
 

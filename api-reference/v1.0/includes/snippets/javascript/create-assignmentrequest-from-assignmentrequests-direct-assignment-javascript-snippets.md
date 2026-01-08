@@ -12,12 +12,16 @@ const client = Client.init(options);
 
 const accessPackageAssignmentRequest = {
   requestType: 'AdminAdd',
-  accessPackageAssignment: {
+  assignment: {
      target: {
         email: 'user@contoso.com'
      },
-     assignmentPolicyId: '2264bf65-76ba-417b-a27d-54d291f0cbc8',
-     accessPackageId: 'a914b616-e04e-476b-aa37-91038f0b165b'
+     assignmentPolicy: {
+        id: '11114b50-0a08-4f96-83e9-1d714aa2cd79'
+     },
+     accessPackage: {
+        id: '11115C72-0612-4C43-A044-FC0A4E71A4C5'
+     }
   }
 };
 

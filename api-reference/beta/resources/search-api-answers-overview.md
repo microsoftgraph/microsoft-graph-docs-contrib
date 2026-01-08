@@ -44,7 +44,7 @@ The following table lists the language tags, locales, and the corresponding coun
 |`fr-ca`| French (Canada) | Canada - French | 
 |`fr-fr`| French (France) | France | 
 |`de-de`| German (Germany) | Germany | 
-|`zh-hk`| Chinese (Hong Kong) | Hong Kong |
+|`zh-hk`| Chinese (Hong Kong SAR) | Hong Kong SAR |
 |`en-in`| English (India) | India |
 |`it-it`| Italian (Italy) | Italy |
 |`pt-br`| Portuguese (Brazil) | Brazil |
@@ -65,7 +65,7 @@ The following table lists the language tags, locales, and the corresponding coun
 |`de-ch`| German (Switzerland) | Switzerland - German |
 |`en-za`| English (South Africa) | South Africa |
 |`zh-tw`| Chinese (Taiwan) | Taiwan |
-|`tr-tr`| Turkish (Turkey) | Turkey |
+|`tr-tr`| Turkish (Türkiye) | Türkiye |
 |`en-gb`| English (United Kingdom) | United Kingdom |
 |`en-us`| English (United States) | United States - English |
 |`es-us`| Spanish (United States) | United States - Spanish |

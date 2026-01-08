@@ -25,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "driveitem_list_children" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-list-children-permissions.md)]
 
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -34,7 +36,7 @@ GET /drives/{drive-id}/items/{item-id}/children
 GET /groups/{group-id}/drive/items/{item-id}/children
 GET /me/drive/items/{item-id}/children
 GET /sites/{site-id}/drive/items/{item-id}/children
-GET /users/{user-id}/drive/items/{item-id}/children
+GET /users/{user-id | userPrincipalName}/drive/items/{item-id}/children
 ```
 
 ## Optional query parameters
@@ -64,10 +66,6 @@ GET /me/drive/root/children
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-children-root-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-children-root-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -110,10 +108,6 @@ GET /drives/{drive-id}/items/{item-id}/children
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-children-files-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-children-files-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

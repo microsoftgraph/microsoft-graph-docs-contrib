@@ -10,7 +10,7 @@ from msgraph_beta.generated.education.classes.item.get_recently_modified_submiss
 from kiota_abstractions.base_request_configuration import RequestConfiguration
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 query_params = GetRecentlyModifiedSubmissionsRequestBuilder.GetRecentlyModifiedSubmissionsRequestBuilderGetQueryParameters(
-		filter = "status eq 'working'",
+		filter = "lastModifiedDateTime gt 2025-04-10T19:02:00.8753517Z",
 )
 
 request_configuration = RequestConfiguration(

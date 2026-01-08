@@ -20,19 +20,15 @@ requestBody := graphmodels.NewOneDriveForBusinessRestoreSession()
 
 driveRestoreArtifact := graphmodels.NewDriveRestoreArtifact()
 restorePoint := graphmodels.NewRestorePoint()
-additionalData := map[string]interface{}{
-	"@odata.id" : "1f1fccc3-a642-4f61-bf49-f37b9a888279", 
-}
-restorePoint.SetAdditionalData(additionalData)
+id := "1f1fccc3-a642-4f61-bf49-f37b9a888279"
+restorePoint.SetId(&id) 
 driveRestoreArtifact.SetRestorePoint(restorePoint)
 destinationType := graphmodels.NEW_DESTINATIONTYPE 
 driveRestoreArtifact.SetDestinationType(&destinationType) 
 driveRestoreArtifact1 := graphmodels.NewDriveRestoreArtifact()
 restorePoint := graphmodels.NewRestorePoint()
-additionalData := map[string]interface{}{
-	"@odata.id" : "1f1fccc3-a642-4f61-bf49-f37b9a888280", 
-}
-restorePoint.SetAdditionalData(additionalData)
+id := "1f1fccc3-a642-4f61-bf49-f37b9a888280"
+restorePoint.SetId(&id) 
 driveRestoreArtifact1.SetRestorePoint(restorePoint)
 destinationType := graphmodels.NEW_DESTINATIONTYPE 
 driveRestoreArtifact1.SetDestinationType(&destinationType) 

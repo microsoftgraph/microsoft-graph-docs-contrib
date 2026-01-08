@@ -13,6 +13,7 @@ using Microsoft.Kiota.Abstractions.Serialization;
 var requestBody = new AccessPackageAssignmentRequest
 {
 	RequestType = AccessPackageRequestType.UserAdd,
+	Justification = "Need access to New Hire access package",
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
@@ -22,9 +23,6 @@ var requestBody = new AccessPackageAssignmentRequest
 					"accessPackageId", new UntypedString("a914b616-e04e-476b-aa37-91038f0b165b")
 				},
 			})
-		},
-		{
-			"justification" , "Need access to New Hire access package"
 		},
 	},
 };

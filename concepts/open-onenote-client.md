@@ -4,6 +4,7 @@ description: "Use the links property of a page or notebook to open a OneNote app
 author: "Jewan-microsoft"
 ms.localizationpriority: medium
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Open the OneNote client

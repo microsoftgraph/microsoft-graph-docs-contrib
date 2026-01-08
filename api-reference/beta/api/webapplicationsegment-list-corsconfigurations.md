@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /applications/{applicationObjectId}/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/applicationSegments/{webApplicationSegment-id}/corsConfigurations
 ```
 
@@ -68,7 +68,7 @@ The following example shows a request.
   "name": "list_corsconfiguration_v2"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/applications/{applicationObjectId}/onPremisesPublishing/segmentsConfiguration/microsoft.graph.webSegmentConfiguration/applicationSegments/{segmentId}/corsConfigurations
 ```
 
@@ -88,7 +88,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.corsConfiguration_v2)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

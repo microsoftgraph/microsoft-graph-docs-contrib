@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /me/todo/lists/{id}/tasks/{id}/attachments
 POST /users/{id}/todo/lists/{id}/tasks/{id}/attachments
 ```
@@ -71,7 +71,7 @@ The following example shows a request.
   "sampleKeys": ["AAMkpsDRVK=", "AAKdfjhgsjhgJ="]
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/me/todo/lists/AAMkpsDRVK=/tasks/AAKdfjhgsjhgJ=/attachments
 Content-Type: application/json
 
@@ -85,10 +85,6 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-taskfileattachment-from--csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/create-taskfileattachment-from--cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -126,7 +122,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.taskFileAttachment"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

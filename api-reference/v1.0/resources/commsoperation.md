@@ -27,7 +27,7 @@ If an operation with a status of `notStarted`, `running` or `null` is returned, 
 | clientContext      | String                      | Unique Client Context string. Max limit is 256 chars.                           |
 | ID                 | String                      | The operation ID. Read-only.                                                    |
 | resultInfo         | [resultInfo](resultinfo.md) | The result information. Read-only.                                              |
-| status             | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only. |
+| status             | String                      | The possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only. |
 
 ## Relationships
 None

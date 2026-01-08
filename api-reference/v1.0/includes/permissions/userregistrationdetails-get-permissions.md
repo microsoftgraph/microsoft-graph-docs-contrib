@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|AuditLog.Read.All|UserAuthenticationMethod.Read.All|
+|Delegated (work or school account)|AuditLog.Read.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|AuditLog.Read.All|UserAuthenticationMethod.Read.All|
+|Application|AuditLog.Read.All|Not available.|
 

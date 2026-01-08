@@ -16,7 +16,7 @@ request_body = ExportResultPostRequestBody(
 	display_name = "Export 2",
 	export_criteria = ExportCriteria.SearchHits | ExportCriteria.PartiallyIndexed,
 	export_location = ExportLocation.ResponsiveLocations | ExportLocation.NonresponsiveLocations,
-	additional_options = AdditionalOptions.None,
+	additional_options = AdditionalOptions.SplitSource,
 	export_format = ExportFormat.Pst,
 )
 

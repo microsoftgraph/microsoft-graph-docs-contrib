@@ -18,6 +18,9 @@ $requestBody->setDescription('Description of My Application Storage Container');
 $requestBody->setContainerTypeId('91710488-5756-407f-9046-fbe5f0b4de73');
 $settings = new FileStorageContainerSettings();
 $settings->setIsOcrEnabled(true);
+$settings->setItemMajorVersionLimit(50);
+$settings->setIsItemVersioningEnabled(true);
+$settings->setItemDefaultSensitivityLabelId('3d8789ae-7375-4ded-8eeb-d6bc226e42fb');
 $requestBody->setSettings($settings);
 
 $result = $graphServiceClient->storage()->fileStorage()->containers()->post($requestBody)->wait();

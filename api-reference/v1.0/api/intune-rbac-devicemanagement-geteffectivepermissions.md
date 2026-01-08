@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Retrieves the effective permissions of the currently authenticated user
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /deviceManagement/getEffectivePermissions
 ```
 
@@ -46,7 +48,7 @@ The following table shows the parameters that can be used with this function.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|scope|String|Not yet documented|
+|scope|String||
 
 
 
@@ -57,17 +59,13 @@ If successful, this function returns a `200 OK` response code and a [rolePermiss
 
 ### Request
 Here is an example of the request.
-
-<!-- { "blockType": "request" , "name" : "intune_rbac_devicemanagement_geteffectivepermissions_geteffectivepermissions_function" }-->
-``` http
-GET https://graph.microsoft.com/v1.0/deviceManagement/getEffectivePermissions
+```http
+GET https://graph.microsoft.com/v1.0/deviceManagement/getEffectivePermissions(scope='parameterValue')
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.rolePermission", "isCollection": true }-->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 416

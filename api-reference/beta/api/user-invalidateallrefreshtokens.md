@@ -45,6 +45,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 POST /me/invalidateAllRefreshTokens
 POST /users/{id | userPrincipalName}/invalidateAllRefreshTokens
 ```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
@@ -73,10 +75,6 @@ POST https://graph.microsoft.com/beta/me/invalidateAllRefreshTokens
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-invalidateallrefreshtokens-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/user-invalidateallrefreshtokens-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

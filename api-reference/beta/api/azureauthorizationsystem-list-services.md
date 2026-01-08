@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 List services for the Azure authorization system onboarded to Permissions Management.
 
 ## Permissions
@@ -96,4 +98,5 @@ Content-Type: application/json
   ]
 }
 ```
+
 

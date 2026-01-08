@@ -5,14 +5,14 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/13/2024
+ms.date: 08/01/2024
 ---
 
 # hardwareConfiguration resource type
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -39,7 +39,7 @@ BIOS configuration and other settings provides customers the ability to configur
 |lastModifiedDateTime|DateTimeOffset|The date and time  of when the BIOS configuration profile was last modified. The value cannot be modified and is automatically populated when the device is enrolled. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Returned by default. Read-Only. Read-Only. This property is read-only.|
 |fileName|String|The file name for the BIOS configuration profile's ConfigurationFileContent. Max length is 150 characters. Required.|
 |configurationFileContent|Binary|The file content contains custom hardware settings that will be applied to the assigned devices' BIOS. Max allowed file size is 5KB. Represented as bytes. Required.|
-|hardwareConfigurationFormat|[hardwareConfigurationFormat](../resources/intune-deviceconfig-hardwareconfigurationformat.md)|The OEM type associated with BIOS configuration profile's custom hardware settings. All devices that adheres to profile must be from the same selected OEM. Possible values are Dell, Surface, and Surface dock. Required. Possible values are: `dell`, `surface`, `surfaceDock`.|
+|hardwareConfigurationFormat|[hardwareConfigurationFormat](../resources/intune-deviceconfig-hardwareconfigurationformat.md)|The OEM type associated with BIOS configuration profile's custom hardware settings. All devices that adheres to profile must be from the same selected OEM. Possible values are Dell, Surface, and Surface dock. Required. The possible values are: `dell`, `surface`, `surfaceDock`.|
 |roleScopeTagIds|String collection|A list of unique Scope Tag IDs associated with the hardware configuration. Optional.|
 |perDevicePasswordDisabled|Boolean|When TRUE, indicates whether the policy-assigned devices' passwords are disabled. When FALSE, indicates they are enabled. Default is FALSE. Required.|
 

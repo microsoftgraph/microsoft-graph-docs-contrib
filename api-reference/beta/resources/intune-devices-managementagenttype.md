@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -33,7 +33,7 @@ Management agent type.
 |jamf|32|The device attributes are fetched from Jamf.|
 |googleCloudDevicePolicyController|64|The device is managed by Google's CloudDPC.|
 |microsoft365ManagedMdm|258|This device is managed by Microsoft 365 through Intune.|
-|msSense|1024||
+|msSense|1024|This device is managed by Microsoft Defender for Endpoint.|
 |intuneAosp|2048|This device is managed by Intune's MDM for AOSP (Android Open Source Project) devices|
 |google|8192|Indicates the management agent to manage the device is Google.|
 |unknownFutureValue|8193|Evolvable enumeration sentinel value. Do not use.|

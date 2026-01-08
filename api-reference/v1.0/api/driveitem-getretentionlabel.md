@@ -5,7 +5,7 @@ author: "kyracatwork"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
-ms.date: 08/14/2024
+ms.date: 11/06/2025
 ---
 
 # driveItem: getRetentionLabel
@@ -25,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "driveitem_getretentionlabel" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-getretentionlabel-permissions.md)]
 
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
+
 ## HTTP request
 
 <!-- {
@@ -32,7 +34,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ```http
-GET /driveitem/retentionLabel
 GET /drives/{drive-id}/items/{item-id}/retentionLabel
 GET /drives/{drive-id}/items/{item-id}?$expand=retentionLabel
 ```
@@ -64,11 +65,11 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "driveItem_getRetentionLabel",
-  "sampleKeys": ["22e064df-3562-4a3c-98c3-74721ca06aa0", "44d372fc-2eb6-4c85-8538-f3a0386a568f"]
+  "sampleKeys": ["b!t18F8ybsHUq1z3LTz8xvZqP8zaSWjkFNhsME-Fepo75dTf9vQKfeRblBZjoSQrd7", "01NKDM7HMOJTVYMDOSXFDK2QJDXCDI3WUK"]
 }
 -->
 ```http
-GET https://graph.microsoft.com/v1.0/drives/22e064df-3562-4a3c-98c3-74721ca06aa0/lists/documents/items/44d372fc-2eb6-4c85-8538-f3a0386a568f/driveitem/retentionLabel
+GET https://graph.microsoft.com/v1.0/drives/b!t18F8ybsHUq1z3LTz8xvZqP8zaSWjkFNhsME-Fepo75dTf9vQKfeRblBZjoSQrd7/items/01NKDM7HMOJTVYMDOSXFDK2QJDXCDI3WUK/retentionLabel
 ```
 
 ### Response

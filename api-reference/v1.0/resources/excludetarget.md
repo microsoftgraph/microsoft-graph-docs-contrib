@@ -19,7 +19,7 @@ Represents the users or groups of users that are excluded from a policy.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The object identifier of a Microsoft Entra user or group.|
-|targetType|authenticationMethodTargetType|The type of the authentication method target. Possible values are: `user`, `group`, `unknownFutureValue`.|
+|targetType|authenticationMethodTargetType|The type of the authentication method target. The possible values are: `user`, `group`, `unknownFutureValue`.|
 
 ## Relationships
 None.

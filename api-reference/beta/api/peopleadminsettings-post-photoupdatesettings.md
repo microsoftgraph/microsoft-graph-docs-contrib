@@ -27,13 +27,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/photoupdatesettings-update-permissions.md)]
 
+[!INCLUDE [rbac-peopleadmin-apis-write](../includes/rbac-for-apis/rbac-peopleadmin-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /admin/people/photoUpdateSettings
 ```
 
@@ -64,12 +66,13 @@ If successful, this method returns a `201 Created` response code and a [photoUpd
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_photoupdatesettings_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/admin/people/photoUpdateSettings
 Content-Type: application/json
 
@@ -82,6 +85,12 @@ Content-Type: application/json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-photoupdatesettings-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 The following example shows the response.
@@ -92,7 +101,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.photoUpdateSettings"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

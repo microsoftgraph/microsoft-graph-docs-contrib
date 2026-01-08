@@ -44,8 +44,8 @@ PATCH /education/classes/{id}/assignmentDefaults
 
 |Property|Type|Description|
 |:---|:---|:---|
-|addedStudentAction|educationAddedStudentAction| Class-level default actions for students added after the assignment publication date. Possible values are: `none`, `assignIfOpen`. The default value is `none`.|
-|addToCalendarAction|educationAddToCalendarOptions|Optional field to control the **assignment** behavior  for adding **assignments** to students' and teachers' calendars when the **assignment** is published. The possible values are: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `unknownFutureValue`, `studentsOnly`. Use the `Prefer: include-unknown-enum-members` request header to get the following value from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `studentsOnly`. Optional.|
+|addedStudentAction|educationAddedStudentAction| Class-level default actions for students added after the assignment publication date. The possible values are: `none`, `assignIfOpen`. The default value is `none`.|
+|addToCalendarAction|educationAddToCalendarOptions|Optional field to control the **assignment** behavior  for adding **assignments** to students' and teachers' calendars when the **assignment** is published. The possible values are: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `unknownFutureValue`, `studentsOnly`. Use the `Prefer: include-unknown-enum-members` request header to get the following members from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `studentsOnly`. Optional.|
 |dueTime|TimeOfDay| Class-level default value for due time field. Default value is `23:59:00`|
 |notificationChannelUrl|String| Default Teams channel to send notifications related to the assignment. Default value is `null`.|
 
@@ -70,16 +70,12 @@ Content-Type: application/json
 
 {
   "addedStudentAction": "assignIfOpen",
-  "notificationChannelUrl": "https://graph.microsoft.com/beta/teams('acdefc6b-2dc6-4e71-b1e9-6d9810ab1793')/channels('3da03fc4-8eac-4459-84fb-1422dc01f65e')"
+  "notificationChannelUrl": "https://graph.microsoft.com/v1.0/teams('acdefc6b-2dc6-4e71-b1e9-6d9810ab1793')/channels('3da03fc4-8eac-4459-84fb-1422dc01f65e')"
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationassignmentdefaults-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-educationassignmentdefaults-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -123,7 +119,7 @@ Content-Type: application/json
 {
   "addedStudentAction": "assignIfOpen",
   "dueTime": "String",
-  "notificationChannelUrl": "https://graph.microsoft.com/beta/teams('acdefc6b-2dc6-4e71-b1e9-6d9810ab1793')/channels('3da03fc4-8eac-4459-84fb-1422dc01f65e')"
+  "notificationChannelUrl": "https://graph.microsoft.com/v1.0/teams('acdefc6b-2dc6-4e71-b1e9-6d9810ab1793')/channels('3da03fc4-8eac-4459-84fb-1422dc01f65e')"
 }
 ```
 

@@ -1,0 +1,9 @@
+{
+  "redirections": [
+    {
+      "source_path_from_root": "/concepts/auth-limit-mailbox-access.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/exchange/permissions-exo/application-rbac",
+      "redirect_document_id": false
+    }
+  ]
+}

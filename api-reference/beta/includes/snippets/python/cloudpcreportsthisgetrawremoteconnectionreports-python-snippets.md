@@ -12,7 +12,7 @@ request_body = GetRawRemoteConnectionReportsPostRequestBody(
 	filter = "ActivityId eq 'cb6ad4c4-8a17-4245-a644-e4436b1ee204'",
 	select = [
 		"RoundTripTimeInMs",
-		"AvailableBandwidthInMBps",
+		"AvailableBandwidthInMbps",
 		"SignInDateTime",
 	],
 	skip = 0,

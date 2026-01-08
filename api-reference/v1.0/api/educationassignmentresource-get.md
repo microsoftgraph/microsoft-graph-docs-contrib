@@ -1,6 +1,6 @@
 ---
 title: "Get educationAssignmentResource"
-description: "Get the properties of a specific resource on an assignment.  "
+description: "Get the properties of a specific resource on an assignment."
 author: "Sureshpadimi88"
 ms.localizationpriority: medium
 ms.subservice: "education"
@@ -56,15 +56,11 @@ The following example shows a request.
   "name": "get_educationassignmentresource"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/resources/fb92ec62-3996-4c3a-ad41-720dd930c834
+GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/1618dfb0-3ff2-4edf-8d5c-b8f81df00e80/resources/fb92ec62-3996-4c3a-ad41-720dd930c834
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationassignmentresource-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-educationassignmentresource-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -156,10 +152,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationlinkresource-from-educationassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-educationlinkresource-from-educationassignment-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationlinkresource-from-educationassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -244,10 +236,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationexcelresource-from-educationassignment-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-educationexcelresource-from-educationassignment-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -336,10 +324,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationpowerpointresource-from-educationassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-educationpowerpointresource-from-educationassignment-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationpowerpointresource-from-educationassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -424,10 +408,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationfileresource-from-educationassignment-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-educationfileresource-from-educationassignment-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -516,10 +496,6 @@ GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationmediaresource-from-educationassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-educationmediaresource-from-educationassignment-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationmediaresource-from-educationassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -585,6 +561,262 @@ Content-type: application/json
             }
         }
     }
+}
+```
+
+### Example 7: Get an educationSpeakerProgressResource
+
+The following example shows how to get an [educationSpeakerProgressResource](../resources/educationspeakerprogressresource.md) assignment resource.
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "specific_educationSpeakerProgressResource"
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/fe9c8d6f-baad-4b5e-b9d5-e2bb33e4ed19/resources/af98a1e1-3393-4ee0-8bcc-8b5bb4598d1c
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/specific-educationspeakerprogressresource-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/specific-educationspeakerprogressresource-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/specific-educationspeakerprogressresource-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/specific-educationspeakerprogressresource-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/specific-educationspeakerprogressresource-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/specific-educationspeakerprogressresource-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/specific-educationspeakerprogressresource-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+> **Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationSpeakerProgressResource"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignments('fe9c8d6f-baad-4b5e-b9d5-e2bb33e4ed19')/resources/$entity",
+  "distributeForStudentWork": true,
+  "id": "af98a1e1-3393-4ee0-8bcc-8b5bb4598d1c",
+  "resource": {
+    "@odata.type": "#microsoft.graph.educationSpeakerProgressResource",
+    "displayName": "speakerProgressTestResource",
+    "createdDateTime": "2025-03-17T16:26:03.5530234Z",
+    "lastModifiedDateTime": "2025-03-17T16:26:03.5530384Z",
+    "recordingTimeLimitInMinutes": 5,
+    "showRehearsalReportToStudentBeforeMediaUpload": true,
+    "maxRecordingAttempts": 1,
+    "isVideoRequired": true,
+    "isAiFeedbackEnabled": true,
+    "presentationTitle": "speakerProgressTestResource",
+    "spokenLanguageLocale": "en-US",
+    "createdBy": {
+      "application": null,
+      "device": null,
+      "user": {
+        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+        "displayName": null
+      }
+    },
+    "lastModifiedBy": {
+      "application": null,
+      "device": null,
+      "user": {
+        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+        "displayName": null
+      }
+    },
+    "speakerCoachSettings": {
+      "deliverySettings": {
+        "isPaceEnabled": false,
+        "areFillerWordsEnabled": false,
+        "isPitchEnabled": false,
+        "isPronunciationEnabled": true
+      },
+      "contentSettings": {
+        "isInclusivenessEnabled": false,
+        "isRepetitiveLanguageEnabled": false
+      },
+      "audienceEngagementSettings": {
+        "isBodyLanguageEnabled": false
+      }
+    },
+    "aiFeedbackCriteria": {
+      "speechType": "informative",
+      "aiFeedbackSettings": {
+        "deliverySettings": {
+          "isLanguageUseEnabled": false,
+          "areRhetoricalTechniquesEnabled": false,
+          "isStyleEnabled": true
+        },
+        "contentSettings": {
+          "isSpeechOrganizationEnabled": false,
+          "isMessageClarityEnabled": false,
+          "isQualityOfInformationEnabled": false
+        },
+        "audienceEngagementSettings": {
+          "areEngagementStrategiesEnabled": false,
+          "isEmotionalAndIntellectualAppealEnabled": false,
+          "isCallToActionEnabled": false
+        }
+      }
+    }
+  }
+}
+```
+
+### Example 8: Expand dependent resources
+
+The following example shows how to get the dependent [educationAssignmentResource](../resources/educationassignmentresource.md) objects for a given assignment resource.
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "expand_dependentResources",
+  "sampleKeys": ["de45722a-c202-43a9-9dd5-d82c45bcef91","4d1ecd2d-c913-41ba-be3c-d896b65d09f0","ae7beedb-488d-4534-9307-3fbc2fac29b4"]
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/education/classes/de45722a-c202-43a9-9dd5-d82c45bcef91/assignments/4d1ecd2d-c913-41ba-be3c-d896b65d09f0/resources/ae7beedb-488d-4534-9307-3fbc2fac29b4?$expand=dependentResources
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/expand-dependentresources-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/expand-dependentresources-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/expand-dependentresources-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/expand-dependentresources-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/expand-dependentresources-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/expand-dependentresources-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/expand-dependentresources-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationAssignmentResource"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('de45722a-c202-43a9-9dd5-d82c45bcef91')/assignments('4d1ecd2d-c913-41ba-be3c-d896b65d09f0')/resources(dependentResources())/$entity",
+  "distributeForStudentWork": true,
+  "id": "ae7beedb-488d-4534-9307-3fbc2fac29b4",
+  "resource": {
+    "@odata.type": "#microsoft.graph.educationExternalResource",
+    "displayName": "A Baby Polar Bear Grows Up",
+    "createdDateTime": "2025-09-23T23:28:52.6976467Z",
+    "lastModifiedDateTime": "2025-09-23T23:28:52.6976561Z",
+    "webUrl": null,
+    "createdBy": {
+      "application": null,
+      "device": null,
+      "user": {
+        "id": "7313562f-6ac1-43c0-803e-f345a1792f7b",
+        "displayName": null
+      }
+    },
+    "lastModifiedBy": {
+      "application": null,
+      "device": null,
+      "user": {
+        "id": "7313562f-6ac1-43c0-803e-f345a1792f7b",
+        "displayName": null
+      }
+    }
+  },
+  "dependentResources@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('de45722a-c202-43a9-9dd5-d82c45bcef91')/assignments('4d1ecd2d-c913-41ba-be3c-d896b65d09f0')/resources('ae7beedb-488d-4534-9307-3fbc2fac29b4')/dependentResources",
+  "dependentResources": [
+    {
+      "distributeForStudentWork": true,
+      "id": "090d693a-60a1-454e-8bfb-464cea5e796d",
+      "resource": {
+        "@odata.type": "#microsoft.graph.educationExternalResource",
+        "displayName": "A Baby Polar Bear Grows Up (US History)",
+        "createdDateTime": "2025-09-23T23:28:58.0188865Z",
+        "lastModifiedDateTime": "2025-09-23T23:28:58.0188956Z",
+        "webUrl": "https://forms.office.com/Pages/AssignmentsDesignPage.aspx#TopView=Preview&FormId=kowztj5TbU-jJ5lCY3EjmSpyRd4CwqlDndXYLEW875FUQ1lPUUE2NEk0TEMzVlVNRjhGQlgwRTRPSCQlQCN0PWcu",
+        "createdBy": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "7313562f-6ac1-43c0-803e-f345a1792f7b",
+            "displayName": null
+          }
+        },
+        "lastModifiedBy": {
+          "application": null,
+          "device": null,
+          "user": {
+            "id": "7313562f-6ac1-43c0-803e-f345a1792f7b",
+            "displayName": null
+          }
+        }
+      }
+    }
+  ]
 }
 ```
 

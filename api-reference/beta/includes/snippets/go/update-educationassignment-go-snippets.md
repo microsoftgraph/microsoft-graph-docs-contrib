@@ -29,6 +29,8 @@ dueDateTime , err := time.Parse(time.RFC3339, "2021-09-10T00:00:00Z")
 requestBody.SetDueDateTime(&dueDateTime) 
 addedStudentAction := graphmodels.NONE_EDUCATIONADDEDSTUDENTACTION 
 requestBody.SetAddedStudentAction(&addedStudentAction) 
+languageTag := "pt-BR"
+requestBody.SetLanguageTag(&languageTag) 
 addToCalendarAction := graphmodels.STUDENTSANDPUBLISHER_EDUCATIONADDTOCALENDAROPTIONS 
 requestBody.SetAddToCalendarAction(&addToCalendarAction) 
 

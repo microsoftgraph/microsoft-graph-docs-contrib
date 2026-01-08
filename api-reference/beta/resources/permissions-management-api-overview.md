@@ -11,6 +11,8 @@ ms.date: 05/13/2024
 
 # Discover, remediate, and monitor permissions in multicloud infrastructures using permissions management APIs (preview)
 
+[!INCLUDE [permissions-management-retirement-note](../../includes/permissions-management-retirement-note.md)]
+
 [Microsoft Entra Permissions Management](https://www.microsoft.com/en/security/business/identity-access/microsoft-entra-permissions-management) provides comprehensive visibility into permissions assigned to all identities across multiple cloud infrastructures such as Microsoft Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP). The permissions management APIs in Microsoft Graph provide the programmatic way to discover, manage, and monitor these permissions in your multicloud infrastructure.
 
 This article introduces the Permissions Management capabilities that you can manage programmatically through Microsoft Graph.
@@ -46,9 +48,9 @@ The following key API scenarios allow you to retrieve the inventory for authoriz
 
 | Description | APIs |
 |--|--|
-|List all identities in an authorization system|<li> [List all AWS identities](../api/awsassociatedidentities-list-all.md) <li> [List all Azure identities](../api/azureassociatedidentities-list-all.md) <li> [List all GCP identities](../api/azureassociatedidentities-list-all.md)|
-|List identity types in specific authorization systems|<li>List [roles](../api/awsassociatedidentities-list-roles.md) and [users](../api/awsassociatedidentities-list-users.md) in AWS <li> List [managed identities](../api/azureassociatedidentities-list-managedidentities.md), [users](../api/azureassociatedidentities-list-users.md), and [service principals](../api/azureassociatedidentities-list-serviceprincipals.md) in Azure <li> List [users](../api/gcpassociatedidentities-list-users.md), and [service accounts](../api/gcpassociatedidentities-list-serviceaccounts.md) in GCP |
-|Other inventory| <li> List [actions](../api/awsauthorizationsystem-list-actions.md), [policies](../api/awsauthorizationsystem-list-policies.md), [resources](../api/awsauthorizationsystem-list-resources.md), and [services](../api/awsauthorizationsystem-list-services.md) in AWS <li> List [actions](../api/azureauthorizationsystem-list-actions.md), [resources](../api/azureauthorizationsystem-list-resources.md), [role definitions](../api/azureauthorizationsystem-list-roledefinitions.md), and [services](../api/azureauthorizationsystem-list-services.md) in Azure <li> List [actions](../api/gcpauthorizationsystem-list-actions.md), [resources](../api/gcpauthorizationsystem-list-resources.md), [roles](../api/gcpauthorizationsystem-list-roles.md), and [services](../api/gcpauthorizationsystem-list-services.md) in GCP|
+|List all identities in an authorization system|<ul><li> [List all AWS identities](../api/awsassociatedidentities-list-all.md) </li><li> [List all Azure identities](../api/azureassociatedidentities-list-all.md) </li><li> [List all GCP identities](../api/azureassociatedidentities-list-all.md)</li></ul>|
+|List identity types in specific authorization systems|<ul><li>List [roles](../api/awsassociatedidentities-list-roles.md) and [users](../api/awsassociatedidentities-list-users.md) in AWS </li><li> List [managed identities](../api/azureassociatedidentities-list-managedidentities.md), [users](../api/azureassociatedidentities-list-users.md), and [service principals](../api/azureassociatedidentities-list-serviceprincipals.md) in Azure </li><li> List [users](../api/gcpassociatedidentities-list-users.md), and [service accounts](../api/gcpassociatedidentities-list-serviceaccounts.md) in GCP</li></ul> |
+|Other inventory| <ul><li> List [actions](../api/awsauthorizationsystem-list-actions.md), [policies](../api/awsauthorizationsystem-list-policies.md), [resources](../api/awsauthorizationsystem-list-resources.md), and [services](../api/awsauthorizationsystem-list-services.md) in AWS </li><li> List [actions](../api/azureauthorizationsystem-list-actions.md), [resources](../api/azureauthorizationsystem-list-resources.md), [role definitions](../api/azureauthorizationsystem-list-roledefinitions.md), and [services](../api/azureauthorizationsystem-list-services.md) in Azure </li><li> List [actions](../api/gcpauthorizationsystem-list-actions.md), [resources](../api/gcpauthorizationsystem-list-resources.md), [roles](../api/gcpauthorizationsystem-list-roles.md), and [services](../api/gcpauthorizationsystem-list-services.md) in GCP</li></ul>|
 
 ## Permissions requests
 
@@ -75,9 +77,9 @@ The following sample findings are available through the APIs:
 
 | Finding | Sample scenarios API |
 |--|--|
-|Inactive identities: Identities that haven't used any of their granted permissions in the last 90 days.| <li> [Inactive users across multiple authorization systems](../api/inactiveuserfinding-list.md) <li> [Inactive serverless functions across multiple authorization systems](../api/inactiveserverlessfunctionfinding-list.md) <li> [Inactive Azure service principals](../api/inactiveazureserviceprincipalfinding-list.md) <li> [Inactive GCP service accounts]() <li> [Inactive AWS roles](../api/inactiveawsrolefinding-list.md) <li> [Inactive AWS resources, such as ec2](../api/inactiveawsresourcefinding-list.md)|
-|Inactive groups: No identity has utilized the permissions assigned via the group over the last 90 days.   |<li>[Inactive groups across multiple authorization systems](../api/inactivegroupfinding-list.md)  |
-|Super identities: Administrator-level permissions across the authorization system. These identities can manage all the resources under the authorization system. |<li>[Super users across multiple authorization systems](../api/superuserfinding-list.md) <li> [Super serverless functions across multiple authorization systems](../api/superserverlessfunctionfinding-list.md) <li> [Super Azure service principals](../api/superazureserviceprincipalfinding-list.md) <li> [Super GCP service accounts](../api/supergcpserviceaccountfinding-list.md) <li> [Super AWS roles]() <li> [Super AWS resources, such as ec2](../api/superawsresourcefinding-list.md)|
+|Inactive identities: Identities that haven't used any of their granted permissions in the last 90 days.| <ul><li> [Inactive users across multiple authorization systems](../api/inactiveuserfinding-list.md) </li><li> [Inactive serverless functions across multiple authorization systems](../api/inactiveserverlessfunctionfinding-list.md) </li><li> [Inactive Azure service principals](../api/inactiveazureserviceprincipalfinding-list.md) </li><li> [Inactive GCP service accounts]() </li><li> [Inactive AWS roles](../api/inactiveawsrolefinding-list.md) </li><li> [Inactive AWS resources, such as ec2](../api/inactiveawsresourcefinding-list.md)</li></ul>|
+|Inactive groups: No identity has utilized the permissions assigned via the group over the last 90 days.   |<ul><li>[Inactive groups across multiple authorization systems](../api/inactivegroupfinding-list.md) </li></ul> |
+|Super identities: Administrator-level permissions across the authorization system. These identities can manage all the resources under the authorization system. |<ul><li>[Super users across multiple authorization systems](../api/superuserfinding-list.md) </li><li> [Super serverless functions across multiple authorization systems](../api/superserverlessfunctionfinding-list.md) </li><li> [Super Azure service principals](../api/superazureserviceprincipalfinding-list.md) </li><li> [Super GCP service accounts](../api/supergcpserviceaccountfinding-list.md) </li><li> [Super AWS roles]() </li><li> [Super AWS resources, such as ec2](../api/superawsresourcefinding-list.md)|</li></ul>
 
 Other findings include:
 
@@ -108,10 +110,7 @@ For more information, see [Permissions Management roles and permissions levels](
 - [What's Microsoft Entra Permissions Management](/entra/permissions-management/overview)
 - [Quickstart guide to Microsoft Entra Permissions Management](/entra/permissions-management/permissions-management-quickstart-guide)
 - [Microsoft Entra Permissions Management operations reference](/entra/architecture/permissions-manage-ops-guide-intro)
-- Microsoft Entra permissions management API operations quick references:
-  - [For AWS authorization systems](/graph/permissions-management-how-to-authorization-system-aws)
-  - [For Azure authorization systems](/graph/permissions-management-how-to-authorization-system-azure)
-  - [For GCP authorization systems](/graph/permissions-management-how-to-authorization-system-gcp)
+- [Quick reference: Permissions Management API operations for Azure, AWS, and GCP authorization systems](/graph/permissions-management-howto)
 
 <!-- {
   "type": "#page.annotation",

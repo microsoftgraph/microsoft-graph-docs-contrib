@@ -1,6 +1,6 @@
 ---
-title: "List versions of a driveItem"
-description: "OneDrive and SharePoint can be configured to retain the history for files."
+title: "List versions"
+description: "Retrieve the versions of a file."
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
 doc_type: apiPageType
@@ -8,14 +8,15 @@ author: "spgraph-docs-team"
 ms.date: 04/05/2024
 ---
 
-# List versions of a driveItem
+# List versions
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-OneDrive and SharePoint can be configured to retain the history for files.
-Depending on the service and configuration, a new version can be created for each edit, each time the file is saved, manually, or never.
+Retrieve the [versions](../resources/driveitemversion.md) of a [file](../resources/driveitem.md). 
+
+OneDrive and SharePoint can be configured to retain the history for files. Depending on the service and configuration, a new version can be created for each edit, each time the file is saved, manually, or never.
 
 Previous versions of a document may be retained for a finite period of time depending on admin settings that may be unique per user or location.
 
@@ -27,6 +28,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "driveitem_list_versions" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-list-versions-permissions.md)]
+
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
 
 
 ## HTTP request
@@ -62,10 +65,6 @@ GET /me/drive/items/{item-id}/versions
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-previous-versions-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-previous-versions-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -1,6 +1,6 @@
 ---
 author: spgraph-docs-team
-ms.date: 09/10/2017
+ms.date: 06/18/2025
 title: Delete a file or folder
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "driveitem_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-delete-permissions.md)]
 
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +42,8 @@ DELETE /users/{userId}/drive/items/{itemId}
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| if-match      | String. If this request header is included and the eTag (or cTag) provided doesn't match the current tag on the item, a `412 Precondition Failed` response is returned and the item won't be deleted. |
+| if-match      | String. Optional. If this request header is included and the eTag (or cTag) provided doesn't match the current tag on the item, a `412 Precondition Failed` response is returned and the item isn't deleted. |
+| prefer        | String. Optional. A value of `bypass-shared-lock` bypasses any shared locks on the driveItem (for example, from a coauthoring session). A value of `bypass-checked-out` bypasses the checkout condition on the driveItem. Multiple comma-separated values are allowed. |
 
 ## Example
 
@@ -56,10 +59,6 @@ DELETE https://graph.microsoft.com/v1.0/me/drive/items/{item-id}
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-drive-item-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/delete-drive-item-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

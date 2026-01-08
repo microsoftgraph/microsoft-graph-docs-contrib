@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/collaboration/analyzedEmails
 ```
 
@@ -55,7 +55,7 @@ The following example shows how to use the `$filter` parameter to customize the 
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/collaboration/analyzedemails?startTime=2024-02-18&endTime=2024-02-20&filter=networkMessageId eq 'bde1f764-bbf4-5673-fbba-0asdhsgfhf1'
 GET /security/collaboration/analyzedemails?startTime=2024-02-18&endTime=2024-02-20&filter=networkMessageId eq 'bde1f764-bbf4-5673-fbba-0asdhsgfhf1' and recipientEmailAddress eq 'tomas.richardson@contoso.com'
 ```
@@ -84,7 +84,7 @@ The following example shows a request.
   "name": "list_analyzedemail"
 }
 -->
-``` http
+```http
 GET https:security/collaboration/analyzedemails?startTime=2024-02-18&endTime=2024-02-20
 ```
 
@@ -98,7 +98,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.security.analyzedEmail)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -124,8 +124,16 @@ Content-Type: application/json
       "latestDelivery": {
         "@odata.type": "microsoft.graph.security.analyzedEmailDeliveryDetail"
       },
-      "attachmentsCount": "Integer",
-      "urlsCount": "Integer",
+      "attachments": [
+        {
+          "@odata.type": "microsoft.graph.security.analyzedEmailAttachment"
+        }
+      ],
+      "urls": [
+        {
+          "@odata.type": "microsoft.graph.security.analyzedEmailUrl"
+        }
+      ],
       "language": "String",
       "sizeInBytes": "Integer",
       "alertIds": [
@@ -156,7 +164,30 @@ Content-Type: application/json
       "bulkComplaintLevel": "String",
       "emailClusterId": "String",
       "policyAction": "String",
-      "policy": "String"
+      "policy": "String",
+      "timelineEvents": [
+        {
+          "@odata.type": "microsoft.graph.security.timelineEvent"
+        }
+      ],
+      "threatDetectionDetails": [
+        {
+          "@odata.type": "microsoft.graph.security.threatDetectionDetail"
+        }
+      ],
+      "primaryOverrideSource": "String",
+      "inboundConnectorFormattedName": "String",
+      "policyType": "String",
+      "clientType": "String",
+      "dlpRules": [
+        {
+          "@odata.type": "microsoft.graph.security.analyzedEmailDlpRuleInfo"
+        }
+      ],
+      "forwardingDetail": "String",
+      "recipientDetail": {
+        "@odata.type": "microsoft.graph.security.analyzedEmailRecipientDetail"
+      }
     }
   ]
 }

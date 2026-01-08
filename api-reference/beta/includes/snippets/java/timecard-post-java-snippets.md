@@ -9,6 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 TimeCard timeCard = new TimeCard();
+timeCard.setUserId("a3601044-a1b5-438e-b742-f78d01d68a67");
 TimeCardEvent clockInEvent = new TimeCardEvent();
 OffsetDateTime dateTime = OffsetDateTime.parse("2019-03-18T00:00:00.000Z");
 clockInEvent.setDateTime(dateTime);
@@ -40,9 +41,6 @@ start.setNotes(notes3);
 timeCardBreak.setStart(start);
 breaks.add(timeCardBreak);
 timeCard.setBreaks(breaks);
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
-additionalData.put("onBehalfOfUserId", "a3601044-a1b5-438e-b742-f78d01d68a67");
-timeCard.setAdditionalData(additionalData);
 TimeCard result = graphClient.teams().byTeamId("{team-id}").schedule().timeCards().post(timeCard);
 
 

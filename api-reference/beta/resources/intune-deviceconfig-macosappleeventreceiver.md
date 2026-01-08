@@ -5,14 +5,14 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/12/2024
+ms.date: 08/01/2024
 ---
 
 # macOSAppleEventReceiver resource type
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -23,7 +23,7 @@ Represents a process that can receive an Apple Event notification.
 |:---|:---|:---|
 |codeRequirement|String|Code requirement for the app or binary that receives the Apple Event.|
 |identifier|String|Bundle ID of the app or file path of the process or executable that receives the Apple Event.|
-|identifierType|[macOSProcessIdentifierType](../resources/intune-deviceconfig-macosprocessidentifiertype.md)|Use bundle ID for an app or path for a process or executable that receives the Apple Event. Possible values are: `bundleID`, `path`.|
+|identifierType|[macOSProcessIdentifierType](../resources/intune-deviceconfig-macosprocessidentifiertype.md)|Use bundle ID for an app or path for a process or executable that receives the Apple Event. The possible values are: `bundleID`, `path`.|
 |allowed|Boolean|Allow or block this app from receiving Apple events.|
 
 ## Relationships

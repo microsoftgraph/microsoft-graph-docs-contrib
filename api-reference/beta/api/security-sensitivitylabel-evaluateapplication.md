@@ -50,14 +50,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 To evaluate as the signed-in user (delegated permission) or a specified user (application permission):
 
-``` http
+```http
 POST /users/{usersId}/security/informationProtection/sensitivityLabels/evaluateApplication
 POST /me/security/informationProtection/sensitivityLabels/evaluateApplication
 ```
 
 To evaluate as a service principal (application permission):
 
-``` http
+```http
 POST /security/informationProtection/sensitivityLabels/evaluateApplication
 ```
 
@@ -96,7 +96,7 @@ The following example shows a request.
   "sampleKeys": ["bob@contoso.com"]
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/users/bob@contoso.com/security/informationProtection/sensitivityLabels/evaluateApplication
 Content-Type: application/json
 Content-length: 181
@@ -168,10 +168,6 @@ User-agent: ContosoLobApp/1.0
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/sensitivitylabelthisevaluateapplication-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/sensitivitylabelthisevaluateapplication-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -5,14 +5,14 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/12/2024
+ms.date: 08/01/2024
 ---
 
 # appleVpnAlwaysOnConfiguration resource type
 
 Namespace: microsoft.graph
 
-> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+> **Important:** Microsoft supports Intune /beta APIs, but they are subject to more frequent change. Microsoft recommends using version v1.0 when possible. Check an API's availability in version v1.0 using the Version selector.
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
@@ -21,11 +21,11 @@ Always On VPN configuration for MacOS and iOS IKEv2
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|tunnelConfiguration|[vpnTunnelConfigurationType](../resources/intune-deviceconfig-vpntunnelconfigurationtype.md)|Determines what connections the specific tunnel configuration applies to. Possible values are: `wifiAndCellular`, `cellular`, `wifi`.|
+|tunnelConfiguration|[vpnTunnelConfigurationType](../resources/intune-deviceconfig-vpntunnelconfigurationtype.md)|Determines what connections the specific tunnel configuration applies to. The possible values are: `wifiAndCellular`, `cellular`, `wifi`.|
 |userToggleEnabled|Boolean|Allow the user to toggle the VPN configuration using the UI|
-|voicemailExceptionAction|[vpnServiceExceptionAction](../resources/intune-deviceconfig-vpnserviceexceptionaction.md)|Determine whether voicemail service will be exempt from the always-on VPN connection. Possible values are: `forceTrafficViaVPN`, `allowTrafficOutside`, `dropTraffic`.|
-|airPrintExceptionAction|[vpnServiceExceptionAction](../resources/intune-deviceconfig-vpnserviceexceptionaction.md)|Determine whether AirPrint service will be exempt from the always-on VPN connection. Possible values are: `forceTrafficViaVPN`, `allowTrafficOutside`, `dropTraffic`.|
-|cellularExceptionAction|[vpnServiceExceptionAction](../resources/intune-deviceconfig-vpnserviceexceptionaction.md)|Determine whether Cellular service will be exempt from the always-on VPN connection. Possible values are: `forceTrafficViaVPN`, `allowTrafficOutside`, `dropTraffic`.|
+|voicemailExceptionAction|[vpnServiceExceptionAction](../resources/intune-deviceconfig-vpnserviceexceptionaction.md)|Determine whether voicemail service will be exempt from the always-on VPN connection. The possible values are: `forceTrafficViaVPN`, `allowTrafficOutside`, `dropTraffic`.|
+|airPrintExceptionAction|[vpnServiceExceptionAction](../resources/intune-deviceconfig-vpnserviceexceptionaction.md)|Determine whether AirPrint service will be exempt from the always-on VPN connection. The possible values are: `forceTrafficViaVPN`, `allowTrafficOutside`, `dropTraffic`.|
+|cellularExceptionAction|[vpnServiceExceptionAction](../resources/intune-deviceconfig-vpnserviceexceptionaction.md)|Determine whether Cellular service will be exempt from the always-on VPN connection. The possible values are: `forceTrafficViaVPN`, `allowTrafficOutside`, `dropTraffic`.|
 |allowAllCaptiveNetworkPlugins|Boolean|Specifies whether traffic from all captive network plugins should be allowed outside the vpn|
 |allowedCaptiveNetworkPlugins|[specifiedCaptiveNetworkPlugins](../resources/intune-deviceconfig-specifiedcaptivenetworkplugins.md)|Determines whether all, some, or no non-native captive networking apps are allowed|
 |allowCaptiveWebSheet|Boolean|Determines whether traffic from the Websheet app is allowed outside of the VPN|

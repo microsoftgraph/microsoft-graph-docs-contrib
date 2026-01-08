@@ -34,10 +34,6 @@ items:
     href: ../../api/user-revokesigninsessions.md
   - name: Export personal data
     href: ../../api/user-exportpersonaldata.md
-  - name: AI interaction
-    items:
-    - name: Get all enterprise interactions
-      href: ../../api/aiinteractionhistory-getallenterpriseinteractions.md
   - name: App role assignments
     items:
     - name: List
@@ -74,6 +70,14 @@ items:
       href: ../../api/user-list-calendarview.md
     - name: Reminder view
       href: ../../api/user-reminderview.md
+  - name: Call delegation
+    items:
+    - name: Get delegation settings
+      href: ../../api/delegationsettings-get.md
+    - name: List delegates
+      href: ../../api/callsettings-list-delegates.md
+    - name: List delegators
+      href: ../../api/callsettings-list-delegators.md
   - name: Cloud licensing
     items:
     - name: List usage rights
@@ -82,10 +86,18 @@ items:
       href: ../../api/cloudlicensing-usageright-get.md
   - name: Cloud PC
     items:
-    - name: List cloud PCs
+    - name: List Cloud PCs
       href: ../../api/user-list-cloudpcs.md
     - name: Get launch info
       href: ../../api/cloudpc-getcloudpclaunchinfo.md
+  - name: Data security and governance
+    items:
+    - name: Compute protection scopes
+      href: ../../api/userprotectionscopecontainer-compute.md
+    - name: Create content activity
+      href: ../../api/activitiescontainer-post-contentactivities.md
+    - name: Process content
+      href: ../../api/userdatasecurityandgovernance-processcontent.md
   - name: Delegated permission grants
     items:
     - name: List delegated permission grants
@@ -134,6 +146,10 @@ items:
       href: ../../api/drive-get.md
     - name: List children
       href: ../../api/driveitem-list-children.md
+  - name: Employee experience
+    items:
+    - name: List assigned roles
+      href: ../../api/employeeexperienceuser-list-assignedroles.md
   - name: Groups
     items:
     - name: List joined teams
@@ -186,6 +202,12 @@ items:
       href: ../../api/onenote-list-notebooks.md
     - name: Create notebook
       href: ../../api/onenote-post-notebooks.md
+  - name: On-premises sync behavior (Source of Authority)
+    items:
+    - name: Get
+      href: ../../api/onpremisessyncbehavior-get.md
+    - name: Update
+      href: ../../api/onpremisessyncbehavior-update.md
   - name: Org hierarchy
     items:
     - name: Assign manager

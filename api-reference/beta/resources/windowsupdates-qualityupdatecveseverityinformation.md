@@ -22,7 +22,7 @@ Represents the summary of severity information regarding the Common Vulnerabilit
 |:---|:---|:---|
 |exploitedCves|[microsoft.graph.windowsUpdates.cveInformation](../resources/windowsupdates-cveinformation.md) collection| Collection of information about each publicly exploited vulnerability addressed in the quality update.|
 |maxBaseScore|Double|Highest base score that occurs of any CVE addressed by the quality update. Read-only.|
-|maxSeverityLevel|microsoft.graph.windowsUpdates.cveSeverityLevel| Highest severity level that occurs of any CVE addressed by the quality update. Possible values are: `critical`, `important`, `moderate`, `unknownFutureValue`. Read-only.|
+|maxSeverityLevel|microsoft.graph.windowsUpdates.cveSeverityLevel| Highest severity level that occurs of any CVE addressed by the quality update. The possible values are: `critical`, `important`, `moderate`, `unknownFutureValue`. Read-only.|
 
 ## Relationships
 

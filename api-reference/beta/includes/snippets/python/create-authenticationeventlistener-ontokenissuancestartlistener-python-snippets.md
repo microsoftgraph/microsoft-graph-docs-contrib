@@ -20,7 +20,7 @@ request_body = OnTokenIssuanceStartListener(
 			include_all_applications = False,
 			include_applications = [
 				AuthenticationConditionApplication(
-					app_id = "a13d0fc1-04ab-4ede-b215-63de0174cbb4",
+					app_id = "0001111-aaaa-2222-bbbb-3333cccc4444",
 				),
 			],
 		),
