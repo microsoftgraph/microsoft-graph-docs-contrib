@@ -421,3 +421,9 @@ Content-Type: application/json
   "notificationPreference": "unknown"
 }
 ```
+
+### Example 6: Get detailed report for each simulation. 
+
+To get detailed user activity for an individual simulation, you can use the below method to retrieve detailed simulation report.  
+
+https://learn.microsoft.com/en-us/graph/api/usersimulationdetails-list?view=graph-rest-1.0&tabs=http
