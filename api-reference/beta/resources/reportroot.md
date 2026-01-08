@@ -23,7 +23,7 @@ Represents a container for Microsoft Entra ID and Microsoft 365 reporting resour
 For details about report views and names, see [Microsoft 365 reports - Microsoft 365 Copilot usage](/microsoft-365/admin/activity-reports/microsoft-365-copilot-usage). 
 
 > [!NOTE]
-> The Microsoft 365 Copilot usage APIs have moved. For more information, see [Copilot report root](/microsoft-365-copilot/extensibility/api/admin-settings/reports/resources/copilotreportroot). 
+> The Microsoft 365 Copilot usage APIs are moving. For more information, see [Copilot report root](/microsoft-365-copilot/extensibility/api/admin-settings/reports/resources/copilotreportroot). 
 
 
 | Method                                                                                 | Return type | Description                                                                                                    |
