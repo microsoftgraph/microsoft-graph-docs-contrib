@@ -228,7 +228,7 @@ items:
       href: ../../resources/security-auditdata.md
     - name: Default audit data
       href: ../../resources/security-defaultauditdata.md
-- name: Cloud scopes / zones (preview)
+- name: Cloud zones or scopes (preview)
   items:
   - name: Zone
     items:
@@ -243,7 +243,7 @@ items:
     - name: Update
       href: ../../api/security-zone-update.md
     - name: Delete
-      href: ../../api/security-security-delete-zones.md
+      href: ../../api/security-zone-delete.md
   - name: Environment
     items:
     - name: Environment
@@ -256,8 +256,6 @@ items:
       href: ../../api/security-environment-get.md
     - name: Delete
       href: ../../api/security-environment-delete.md
-  - name: Aggregated environment
-    href: ../../resources/security-aggregatedenvironment.md
   - name: Complex types
     items:
     - name: Audit info
