@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a [driveItem](..
 >
 > * Newly created private channels (post‑migration) no longer create a dedicated folder. All files are stored in the root folder, and the API returns the root folder’s `driveItem`.
 >
-> For more details about private channel enhancements and migration, see [New enhancements in private channels in Microsoft Teams](https://techcommunity.microsoft.com/blog/microsoftteamsblog/new-enhancements-in-private-channels-in-microsoft-teams-unlock-their-full-potent/4438767).
+> * For more details about private channel enhancements and migration, see [New enhancements in private channels in Microsoft Teams](https://techcommunity.microsoft.com/blog/microsoftteamsblog/new-enhancements-in-private-channels-in-microsoft-teams-unlock-their-full-potent/4438767).
 
 ## Example
 ### Request
