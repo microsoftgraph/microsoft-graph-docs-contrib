@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ```http
-DELETE /storageContainers/{containerId}/columns/{columnId}
+DELETE /storage/fileStorage/containers/{containerId}/columns/{columnId}
 ```
 
 ## Request headers
