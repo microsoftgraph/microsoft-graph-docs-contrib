@@ -1,7 +1,7 @@
 ---
 title: "fileStorageContainer: unarchive"
 description: "Unarchive an archived fileStorageContainer."
-author: "guptasandeep"
+author: "singhman-msft"
 ms.date: 11/15/2024
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -10,7 +10,15 @@ doc_type: apiPageType
 
 # fileStorageContainer: unarchive
 
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Unarchive an archived [fileStorageContainer](../resources/filestoragecontainer.md).
+
+This action updates the [archivalDetails](../resources/sitearchivaldetails.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -19,11 +27,20 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "filestoragecontainer_unarchive" } -->
 [!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-unarchive-permissions.md)]
 
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-permissions.md)]
+
+> [!NOTE]
+> When delegated permissions are used, only members who are assigned the `PrincipalOwner` or `Owner` role can call this method.
+
 ## HTTP request
 
 ```http
 POST /storageContainers/{containerId}/unarchive
 ```
+
+## Request body
+
+Don't supply a request body for this method.
 
 ## Request headers
 
@@ -31,13 +48,9 @@ POST /storageContainers/{containerId}/unarchive
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
-## Request body
-
-Don't supply a request body for this method.
-
 ## Response
 
-If successful, this method returns a `202 Accepted` response code. The response also contains a `Location` header, which contains the location of the site that is unarchived. To check the status of the unarchive operation, make a GET request to the location URL.
+If successful, this method returns a `202 Accepted` response code. The response also contains a `Location` header, which contains the location of the container that is unarchived. To check the status of the unarchive operation, make a GET request to the location URL.
 
 ## Examples
 

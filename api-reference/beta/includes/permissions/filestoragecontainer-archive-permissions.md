@@ -8,4 +8,4 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)|FileStorageContainer.Selected|FileStorageContainer.Manage.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|FileStorageContainer.Selected|FileStorageContainer.Selected|
+|Application|FileStorageContainer.Selected|Not available.|
