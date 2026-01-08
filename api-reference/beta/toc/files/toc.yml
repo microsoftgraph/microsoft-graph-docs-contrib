@@ -194,7 +194,7 @@ items:
     href: ../../api/filestoragecontainer-post-columns.md
   - name: Update column
     href: ../../api/filestoragecontainer-update-column.md
-  - name: Delete file storage container column
+  - name: Delete column
     href: ../../api/filestoragecontainer-delete-column.md
   - name: Get column
     href: ../../api/filestoragecontainer-get-column.md
