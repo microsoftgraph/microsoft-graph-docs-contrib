@@ -1,6 +1,6 @@
 ---
 title: "userExperienceAnalyticsMachineType enum type"
-description: "Indicates if machine is physical or virtual. The possible values are: physical or virtual"
+description: "Indicates if machine is physical or virtual. Possible values are: physical or virtual"
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Indicates if machine is physical or virtual. The possible values are: physical or virtual
+Indicates if machine is physical or virtual. Possible values are: physical or virtual
 
 ## Members
 |Member|Value|Description|

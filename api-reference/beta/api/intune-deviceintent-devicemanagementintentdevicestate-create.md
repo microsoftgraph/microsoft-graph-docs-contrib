@@ -56,7 +56,7 @@ The following table shows the properties that are required when you create the d
 |userName|String|The user name that is being reported on a device|
 |deviceDisplayName|String|Device name that is being reported|
 |lastReportedDateTime|DateTimeOffset|Last modified date time of an intent report|
-|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Device state for an intent. The possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Device state for an intent. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |deviceId|String|Device id that is being reported|
 
 

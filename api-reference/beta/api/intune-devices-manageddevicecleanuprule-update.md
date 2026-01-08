@@ -54,7 +54,7 @@ The following table shows the properties that are required when you create the [
 |id|String|Indicates the identifier of the device cleanup rule. This id is assigned at the time when the device cleanup rule is created. Read-only.|
 |displayName|String|Indicates the display name of the device cleanup rule.|
 |description|String|Indicates the description for the device clean up rule.|
-|deviceCleanupRulePlatformType|[deviceCleanupRulePlatformType](../resources/intune-devices-devicecleanupruleplatformtype.md)|Indicates the managed device platform for which the admin wants to create the device clean up rule. The possible values are: `all`, `androidAOSP`, `androidDeviceAdministrator`, `androidDedicatedAndFullyManagedCorporateOwnedWorkProfile`, `chromeOS`, `androidPersonallyOwnedWorkProfile`, `ios`, `macOS`, `windows`, `windowsHolographic`, `unknownFutureValue`, `visionOS`, `tvOS`.|
+|deviceCleanupRulePlatformType|[deviceCleanupRulePlatformType](../resources/intune-devices-devicecleanupruleplatformtype.md)|Indicates the managed device platform for which the admin wants to create the device clean up rule. Possible values are: `all`, `androidAOSP`, `androidDeviceAdministrator`, `androidDedicatedAndFullyManagedCorporateOwnedWorkProfile`, `chromeOS`, `androidPersonallyOwnedWorkProfile`, `ios`, `macOS`, `windows`, `windowsHolographic`, `unknownFutureValue`, `visionOS`, `tvOS`.|
 |lastModifiedDateTime|DateTimeOffset|Indicates the date and time when the device cleanup rule was last modified. This property is read-only.|
 |deviceInactivityBeforeRetirementInDays|Int32|Indicates the number of days when the device has not contacted Intune. Valid values 0 to 2147483647|
 

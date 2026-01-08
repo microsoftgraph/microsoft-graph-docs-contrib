@@ -53,13 +53,13 @@ The following table shows the properties that are required when you create the d
 |:---|:---|:---|
 |id|String|Unique Identifier for the custom attribute entity.|
 |customAttributeName|String|The name of the custom attribute.|
-|customAttributeType|[deviceCustomAttributeValueType](../resources/intune-devices-devicecustomattributevaluetype.md)|The expected type of the custom attribute's value. The possible values are: `integer`, `string`, `dateTime`.|
+|customAttributeType|[deviceCustomAttributeValueType](../resources/intune-devices-devicecustomattributevaluetype.md)|The expected type of the custom attribute's value. Possible values are: `integer`, `string`, `dateTime`.|
 |displayName|String|Name of the device management script.|
 |description|String|Optional description for the device management script.|
 |scriptContent|Binary|The script content.|
 |createdDateTime|DateTimeOffset|The date and time the device management script was created. This property is read-only.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the device management script was last modified. This property is read-only.|
-|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indicates the type of execution context. The possible values are: `system`, `user`.|
+|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indicates the type of execution context. Possible values are: `system`, `user`.|
 |fileName|String|Script file name.|
 |roleScopeTagIds|String collection|List of Scope Tag IDs for this PowerShellScript instance.|
 

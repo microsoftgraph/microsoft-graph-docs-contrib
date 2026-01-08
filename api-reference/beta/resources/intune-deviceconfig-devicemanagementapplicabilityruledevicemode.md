@@ -21,9 +21,9 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deviceMode|[windows10DeviceModeType](../resources/intune-deviceconfig-windows10devicemodetype.md)|Applicability rule for device mode. The possible values are: `standardConfiguration`, `sModeConfiguration`.|
+|deviceMode|[windows10DeviceModeType](../resources/intune-deviceconfig-windows10devicemodetype.md)|Applicability rule for device mode. Possible values are: `standardConfiguration`, `sModeConfiguration`.|
 |name|String|Name for object.|
-|ruleType|[deviceManagementApplicabilityRuleType](../resources/intune-deviceconfig-devicemanagementapplicabilityruletype.md)|Applicability Rule type. The possible values are: `include`, `exclude`.|
+|ruleType|[deviceManagementApplicabilityRuleType](../resources/intune-deviceconfig-devicemanagementapplicabilityruletype.md)|Applicability Rule type. Possible values are: `include`, `exclude`.|
 
 ## Relationships
 None
