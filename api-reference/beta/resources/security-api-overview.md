@@ -54,7 +54,7 @@ Use [runHuntingQuery](../api/security-security-runhuntingquery.md) to run a [Kus
 
 ## Cloud zones (preview)
 
-Cloud zones in Microsoft Defender for Cloud enable you to group and manage cloud environments across multiple cloud providers (Azure, AWS, and GCP) and DevOps platforms. A [zone](security-zone.md) is a logical container that groups related cloud environments, making it easier to apply consistent security policies and monitor security posture across your multi-cloud infrastructure. A tenant can have a maximum of 1,000 zones.
+Cloud zones (cloud scopes) in Microsoft Defender for Cloud enable you to group and manage cloud environments across multiple cloud providers (Azure, AWS, and GCP) and DevOps platforms. A [zone](security-zone.md) is a logical container that groups related cloud environments, making it easier to apply consistent security policies and monitor security posture across your multi-cloud infrastructure. A tenant can have a maximum of 1,000 zones.
 
 Use the cloud zones API to:
 - Create, update, and delete zones for organizing cloud environments.

@@ -1143,13 +1143,6 @@ Namespace: microsoft.graph.security
 |microsoftSentinel|
 |microsoftThreatIntelligence|
 
-<!--
-{
-  "type": "#page.annotation",
-  "namespace": "microsoft.graph.security"
-}
--->
-
 ### environmentKind values 
 
 |Member|
@@ -1166,3 +1159,10 @@ Namespace: microsoft.graph.security
 |gitLabGroup|
 |jFrogArtifactory|
 |unknownFutureValue|
+
+<!--
+{
+  "type": "#page.annotation",
+  "namespace": "microsoft.graph.security"
+}
+-->

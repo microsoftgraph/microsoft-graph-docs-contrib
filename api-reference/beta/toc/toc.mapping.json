@@ -2842,7 +2842,7 @@
           ]
         },
         {
-          "name": "Cloud zones (preview)",
+          "name": "Cloud zones or scopes (preview)",
           "resources": [
             "microsoft.graph.security.zone",
             "microsoft.graph.security.environment"

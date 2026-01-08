@@ -29,11 +29,8 @@ Inherits from [entity](../resources/entity.md)
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Environment identifier. Inherited from [entity](../resources/entity.md). Supports `$filter` (`eq`, `contains`). For example, `$filter=contains(id, '123')`. Supports `$orderby`.|
-|kind|microsoft.graph.security.environmentKind|Environment type. The possible values are: `azureSubscription`, `awsOrganization`, `awsAccount`, `gcpOrganization`, `gcpProject`, `dockersHubOrganization`, `devOpsConnection`, `azureDevOpsOrganization`, `gitHubOrganization`, `gitLabGroup`, `jFrogArtifactory`, `unknownFutureValue`. Supports `$filter` (`eq`, `in`). For example, `$filter=kind eq 'azureSubscription'` or `$filter=kind in ('azureSubscription', 'awsAccount')`. Supports `$orderby`.|
-
-> [!NOTE]
-> For Azure subscriptions, use the `/subscriptions/{subscription-id}` format for the **id** property (for example, `/subscriptions/02687862-a843-4846-81f0-efe9ef244daa`). For other environment types, use the native identifier—for example, AWS account number (`181994123251`) or GCP project number (`69483221284`).
+|id|String|Environment identifier. Inherited from [entity](../resources/entity.md). Supports `$orderby` and `$filter` (`eq`, `contains`). For example, `$filter=contains(id, '123')`. <br/><br/>For Azure subscriptions, use the `/subscriptions/{subscription-id}` format for the **id** property. For example, `/subscriptions/02687862-a843-4846-81f0-efe9ef244daa`. For other environment types, use the native identifier - for example, AWS account number (`181994123251`) or GCP project number (`69483221284`).|
+|kind|microsoft.graph.security.environmentKind|Environment type. The possible values are: `azureSubscription`, `awsOrganization`, `awsAccount`, `gcpOrganization`, `gcpProject`, `dockersHubOrganization`, `devOpsConnection`, `azureDevOpsOrganization`, `gitHubOrganization`, `gitLabGroup`, `jFrogArtifactory`, `unknownFutureValue`. <br/><br/>Supports `orderby` and `$filter` (`eq`, `in`). For example, `$filter=kind eq 'azureSubscription'` or `$filter=kind in ('azureSubscription', 'awsAccount')`.|
 
 ## Relationships
 None.
