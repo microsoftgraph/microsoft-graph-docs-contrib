@@ -34,7 +34,7 @@ The Role Assignment resource. Role assignments tie together a role definition wi
 |displayName|String|Indicates the display name of the role assignment. For example: 'Houston administrators and users'. Max length is 128 characters.|
 |description|String|Indicates the description of the role assignment. For example: 'All administrators, employees and scope tags associated with the Houston office.' Max length is 1024 characters.|
 |scopeMembers|String collection|Indicates the list of role scope member security groups Entra IDs. For example, {dec942f4-6777-4998-96b4-522e383b08e2}.|
-|scopeType|[roleAssignmentScopeType](../resources/intune-rbac-roleassignmentscopetype.md)|Indicates the groups included as scope groups for the role assignment. The possible values are: `resourceScope`, `allDevices`, `allLicensedUsers`, `allDevicesAndLicensedUsers`. Default value is `resourceScope`. The possible values are: `resourceScope`, `allDevices`, `allLicensedUsers`, `allDevicesAndLicensedUsers`, `unknownFutureValue`.|
+|scopeType|[roleAssignmentScopeType](../resources/intune-rbac-roleassignmentscopetype.md)|Indicates the groups included as scope groups for the role assignment. Possible values are: `resourceScope`, `allDevices`, `allLicensedUsers`, `allDevicesAndLicensedUsers`. Default value is `resourceScope`. Possible values are: `resourceScope`, `allDevices`, `allLicensedUsers`, `allDevicesAndLicensedUsers`, `unknownFutureValue`.|
 |resourceScopes|String collection|Indicates the list of resource scope security group Entra IDs. For example: {dec942f4-6777-4998-96b4-522e383b08e2}.|
 
 ## Relationships

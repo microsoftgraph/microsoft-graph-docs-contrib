@@ -30,7 +30,7 @@ Contains properties for a script associated with amobileLobApp entity.
 |id|String|The unique identifier of the script associated with a mobileLobApp entity. This property is read-only.|
 |displayName|String|The display name for the script.|
 |content|String|The content of the script. This is a Base64-encoded representation of the script's original content. The content has a maximum size limit of 100KB.|
-|state|[mobileAppContentScriptState](../resources/intune-apps-mobileappcontentscriptstate.md)|Indicates the state of the script upload. Possible values are commitPending, commitSuccess, and commitFailed. This property is read-only. The possible values are: `commitPending`, `commitSuccess`, `commitFailed`, `unknownFutureValue`.|
+|state|[mobileAppContentScriptState](../resources/intune-apps-mobileappcontentscriptstate.md)|Indicates the state of the script upload. Possible values are commitPending, commitSuccess, and commitFailed. This property is read-only. Possible values are: `commitPending`, `commitSuccess`, `commitFailed`, `unknownFutureValue`.|
 
 ## Relationships
 None

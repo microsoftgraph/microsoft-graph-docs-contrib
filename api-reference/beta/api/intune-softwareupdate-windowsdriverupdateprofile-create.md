@@ -54,7 +54,7 @@ The following table shows the properties that are required when you create the w
 |id|String|The Intune policy id.|
 |displayName|String|The display name for the profile.|
 |description|String|The description of the profile which is specified by the user.|
-|approvalType|[driverUpdateProfileApprovalType](../resources/intune-softwareupdate-driverupdateprofileapprovaltype.md)|Driver update profile approval type. For example, manual or automatic approval. The possible values are: `manual`, `automatic`.|
+|approvalType|[driverUpdateProfileApprovalType](../resources/intune-softwareupdate-driverupdateprofileapprovaltype.md)|Driver update profile approval type. For example, manual or automatic approval. Possible values are: `manual`, `automatic`.|
 |deviceReporting|Int32|Number of devices reporting for this profile|
 |newUpdates|Int32|Number of new driver updates available for this profile.|
 |deploymentDeferralInDays|Int32|Deployment deferral settings in days, only applicable when ApprovalType is set to automatic approval.|

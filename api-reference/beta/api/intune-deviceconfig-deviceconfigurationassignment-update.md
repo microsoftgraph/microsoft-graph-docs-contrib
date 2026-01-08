@@ -59,9 +59,9 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|The key of the assignment.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The assignment target for the device configuration.|
-|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|The assignment source for the device configuration, direct or parcel/policySet. This property is read-only. The possible values are: `direct`, `policySets`.|
+|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|The assignment source for the device configuration, direct or parcel/policySet. This property is read-only. Possible values are: `direct`, `policySets`.|
 |sourceId|String|The identifier of the source of the assignment. This property is read-only.|
-|intent|[deviceConfigAssignmentIntent](../resources/intune-deviceconfig-deviceconfigassignmentintent.md)|The admin intent to apply or remove the profile. The possible values are: `apply`, `remove`.|
+|intent|[deviceConfigAssignmentIntent](../resources/intune-deviceconfig-deviceconfigassignmentintent.md)|The admin intent to apply or remove the profile. Possible values are: `apply`, `remove`.|
 
 
 
