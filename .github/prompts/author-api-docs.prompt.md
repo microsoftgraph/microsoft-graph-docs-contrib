@@ -16,8 +16,9 @@ Before beginning the documentation process, first ask the author which documenta
 1. Author fresh APIs / fresh API changes to beta
 2. Promote APIs from beta to v1.0
 3. Document deprecated APIs
+4. Other documentation tasks (cleanup, backfilling, maintenance, etc.)
 
-**Please respond with 1, 2, or 3 to proceed.**
+**Please respond with 1, 2, 3, or 4 to proceed.**
 
 Once the author responds, follow the appropriate workflow below.
 
@@ -1611,6 +1612,125 @@ Before completing any authoring task, verify:
 - [ ] All properties referencing updated enumerations have been updated
 - [ ] All permissions files copied
 - [ ] Provided summary of all files created/modified to author
+
+---
+
+## Scenario 4: Other documentation tasks
+
+This scenario covers any documentation maintenance, cleanup, or custom authoring needs that don't fit into the standard workflows (fresh APIs, promotions, or deprecations).
+
+### Overview
+
+Microsoft Graph documentation requires ongoing maintenance beyond documenting new APIs and changes. Authors may need assistance with:
+- **Cleanup tasks:** Fixing inconsistencies, formatting issues, broken links, or outdated content
+- **Backfilling:** Adding missing documentation for existing APIs that were never fully documented
+- **Content improvements:** Enhancing descriptions, examples, or clarifying existing documentation
+- **Bulk updates:** Applying consistent changes across multiple files
+- **Special projects:** Custom documentation needs that require adherence to Microsoft Graph standards
+
+### How to use this scenario
+
+Since this scenario is flexible and task-driven, the typical inputs (doc stubs, API.md files, changelog) may not be applicable or provided. Instead:
+
+**Provide a detailed task description:**
+- Clearly describe what you want to accomplish
+- Include specific files, resources, or APIs involved (if known)
+- Explain the desired outcome or acceptance criteria
+- Share any relevant context, constraints, or requirements
+
+**Example task prompts:**
+- "Review all files in api-reference/beta/resources/ that reference the 'user' resource and ensure the links are formatted correctly"
+- "The 'application' resource is missing examples in the GET operation. Add comprehensive examples based on the beta version"
+- "Clean up all deprecated properties in identity-related resources to ensure they follow the deprecation table format"
+- "I need to backfill documentation for the 'servicePrincipal' PATCH operation that was never completed"
+- "Update all changelog entries in Microsoft.AAD.LCM.json to ensure descriptions follow the required format"
+
+### Guidelines and standards to follow
+
+When working on Scenario 4 tasks, you MUST adhere to all Microsoft Graph API documentation standards and guidelines. Reference these sources:
+
+**Primary documentation standards:**
+1. **author-api-docs.prompt.md (this file):** Reference sections include:
+   - [Reference Standards: Namespace Qualification](#reference-standards-namespace-qualification)
+   - [Reference Standards: General Formatting Rules](#reference-standards-general-formatting-rules)
+   - All quality checklists from Scenarios 1, 2, and 3
+   - Common processes (changelog, What's new, TOC updates)
+
+2. **review-api-docs.prompt.md:** Microsoft Graph REST API Documentation Review Guidelines covering:
+   - API Reference Topics requirements
+   - Resource Topics requirements
+   - Changelog Files requirements
+   - Common issues to avoid
+   - Version-specific guidelines (beta vs v1.0)
+
+3. **copilot-instructions.md:** Additional review guidelines and file type classifications
+
+**Key principles to remember:**
+- All filenames must be lowercase
+- Properties and relationships must be in alphabetical order
+- Follow namespace qualification rules for types in subnamespaces
+- Use appropriate deprecation patterns when updating deprecated content
+- Maintain consistent formatting (headings, tables, links)
+- Follow beta disclaimer requirements for beta documentation
+- Ensure examples use pseudo-values, not data types
+- Respect version-specific link formatting (preserve-view for beta, none for v1.0)
+
+### Workflow for Scenario 4
+
+1. **Understand the task:**
+   - Read the author's detailed task description
+   - Ask clarifying questions if the requirements are unclear
+   - Identify which guidelines and standards apply to this specific task
+
+2. **Gather context:**
+   - Read relevant files mentioned in the task
+   - Search for related documentation to understand patterns and existing implementations
+   - Review guidelines from author-api-docs.prompt.md, review-api-docs.prompt.md, and copilot-instructions.md that apply to the task
+
+3. **Plan the approach:**
+   - Break down complex tasks into manageable steps
+   - Identify all files that need to be created, modified, or reviewed
+   - Determine the order of operations to ensure consistency
+
+4. **Execute the work:**
+   - Make changes following Microsoft Graph documentation standards
+   - Apply quality checks as you work (alphabetical order, formatting, links, etc.)
+   - Test or validate changes where applicable (e.g., check for markdown lint errors)
+
+5. **Provide a summary:**
+   - List all files created or modified
+   - Highlight any issues found and resolved
+   - Note any items that require author review or decision
+   - Suggest next steps if applicable
+
+### When to update changelog and What's new
+
+**Update changelog and What's new ONLY when:**
+- The task explicitly involves documenting API changes that should be announced
+- You're backfilling documentation for recently added APIs that haven't been logged yet
+- You're documenting deprecations that need to be communicated
+
+**Do NOT update changelog and What's new when:**
+- Fixing typos, formatting issues, or broken links
+- Improving descriptions or examples for existing, stable APIs
+- Reorganizing content without changing API functionality
+- Cleaning up documentation debt
+
+If unsure whether to update changelog/What's new, ask the author for clarification.
+
+### Quality assurance
+
+Before completing Scenario 4 tasks, verify:
+- [ ] Task requirements fully understood and addressed
+- [ ] All relevant guidelines from author-api-docs.prompt.md, review-api-docs.prompt.md, and copilot-instructions.md have been followed
+- [ ] Files are properly formatted (lowercase names, alphabetical order, correct headings)
+- [ ] Links are functional and follow version-specific formatting rules
+- [ ] Namespace qualification applied correctly for subnamespace types
+- [ ] Beta disclaimers present where required
+- [ ] Examples use pseudo-values, not data types
+- [ ] No markdown lint errors
+- [ ] Changelog and What's new updated only if appropriate
+- [ ] Summary of changes provided to author
 
 ---
 

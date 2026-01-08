@@ -52,7 +52,7 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity.|
-|status|[actionState](../resources/intune-shared-actionstate.md)|Wipe action status. The possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|status|[actionState](../resources/intune-shared-actionstate.md)|Wipe action status. Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |targetedUserId|String|The UserId being targeted by this wipe action.|
 |targetedDeviceRegistrationId|String|The DeviceRegistrationId being targeted by this wipe action.|
 |targetedDeviceName|String|Targeted device name.|

@@ -66,7 +66,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1839
+Content-Length: 1908
 
 {
   "value": {
@@ -123,7 +123,8 @@ Content-Length: 1839
     },
     "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
     "versionNumber": "Version Number value",
-    "buildNumber": "Build Number value"
+    "buildNumber": "Build Number value",
+    "appleDeviceAppDeliveryProtocolType": "mobileDeviceManagement"
   }
 }
 ```
