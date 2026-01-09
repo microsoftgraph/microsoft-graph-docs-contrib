@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a [driveItem](..
 
 > [!NOTE]
 >
-> * For private channels created before the Lightweight Group (LWG) migration, a dedicated folder that matches the channel name may still exist. Any files uploaded before migration remain in this folder.
+> * For private channels created before the move to group compliance as part of enhancements, a dedicated folder that matches the channel name may still exist. Any files uploaded before the enhancement remain in this folder.
 >
 > * After a private channel is migrated, the default file location changes to the root folder, and the `GET /teams/{team-id}/channels/{channel-id}/filesFolder` API returns the root folder’s `driveItem`.
 >
