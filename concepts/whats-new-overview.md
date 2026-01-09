@@ -18,6 +18,16 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## January 2026: New and generally available
+
+### Reports | Microsoft 365 usage reports
+
+Going forward, use the Microsoft 365 Copilot usage APIs under the `/copilot` URL path segment. For more information, see:
+- [Copilot report root](/microsoft-365-copilot/extensibility/api/admin-settings/reports/resources/copilotreportroot)
+- [Get Copilot user count summary](/microsoft-365-copilot/extensibility/api/admin-settings/reports/copilotreportroot-getmicrosoft365copilotusercountsummary)
+- [Get Copilot user count trend](/microsoft-365-copilot/extensibility/api/admin-settings/reports/copilotreportroot-getmicrosoft365copilotusercounttrend)
+- [Get Copilot usage user detail](/microsoft-365-copilot/extensibility/api/admin-settings/reports/copilotreportroot-getmicrosoft365copilotusageuserdetail)
+
 ## December 2025: New and generally available
 
 ### Calendars | Places
