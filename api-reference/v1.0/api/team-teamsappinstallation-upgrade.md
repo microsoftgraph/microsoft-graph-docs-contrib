@@ -26,6 +26,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 > [!NOTE]
 > - The TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ReadWriteForTeampermissions, TeamsAppInstallation.ReadWriteSelfForTeam.All, and TeamsAppInstallation.ReadWriteForTeam.All permissions cannot be used to install apps that require consent to [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions.
 > - The Group.ReadWrite.All and Directory.ReadWrite.All permissions are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission and avoid using these permissions going forward.
+> - The TeamsAppInstallation.ManageSelectedForTeam.All is the least privileged application permission required to install or upgrade a Teams app that requires consent to [resource-specific consent (RSC)](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
