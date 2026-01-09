@@ -12,8 +12,6 @@ ms.date: 06/10/2024
 # Update ediscoveryReviewTag
 Namespace: microsoft.graph.security
 
-
-
 Update the properties of an [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
@@ -42,18 +40,13 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags/{ediscoveryReviewT
 
 ## Request body
 
-
-
-In the request body, supply only the values for properties to update. Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values. 
-
-The following table specifies the properties that can be updated
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Display name of the tag. Required.|
 |description|String|Description of the tag. Optional.|
 |childSelectability|microsoft.graph.security.childSelectability|This value controls whether the UX presents the tags as checkboxes or a radio button group. The possible values are: `One`, `Many`. Required.|
-
 
 ## Response
 
