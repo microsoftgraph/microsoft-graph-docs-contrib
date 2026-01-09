@@ -71,6 +71,9 @@ POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/58399dff-ce
     "displayName": "My tag API",
     "description": "Use Graph API to create tags",
     "childSelectability": "Many"
+	"parent@odata.bind":
+	"https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/{ediscoveryCaseID}/tags/{parentTagID}"
+	
 }
 ```
 
