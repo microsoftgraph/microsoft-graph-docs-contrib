@@ -20,9 +20,9 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## February 2026: New in preview only
 
-### Files
+### Files | File storage container
 
-[Archive](/graph/api/filestoragecontainer-archive?view=graph-rest-beta&preserve-view=true) or [unarchive](/graph/api/filestoragecontainer-unarchive?view=graph-rest-beta&preserve-view=true) a storage container.
+[Archive](/graph/api/filestoragecontainer-archive?view=graph-rest-beta&preserve-view=true) or [unarchive](/graph/api/filestoragecontainer-unarchive?view=graph-rest-beta&preserve-view=true) a SharePoint Embedded storage container.
 
 ## December 2025: New and generally available
 
