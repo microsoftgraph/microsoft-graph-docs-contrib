@@ -71,12 +71,12 @@ All content must align with the [Microsoft Style Guide](https://docs.microsoft.c
 
 ### 2. API Docs Authoring Guidelines
 
-Reference the [author-api-docs.prompt.md](.github/prompts/author-api-docs.prompt.md) file for:
-- Namespace qualification rules
-- General formatting rules (alphabetical ordering, file naming conventions, beta disclaimer)
-- TOC structure requirements
-- Changelog format and structure
-- What's new formatting
+Reference [author-api-docs.prompt.md](.github/prompts/author-api-docs.prompt.md) for:
+- **Reference Standards: Namespace Qualification** - Namespace qualification rules for subnamespace types
+- **Reference Standards: General Formatting Rules** - Alphabetical ordering, file naming conventions, beta disclaimer
+- **Common Process: Updating the Changelog** - Changelog format and structure
+- **Common Process: Updating What's New** - What's new formatting and link rules
+- **Common Process: Updating the Table of Contents (TOC)** - TOC structure requirements
 
 ### 3. API Docs Review Guidelines
 
@@ -145,22 +145,22 @@ For files in `api-reference/v1.0/resources/` and `api-reference/beta/resources/`
 
 ### Changelog Files Review
 
-For files in `changelog/`:
+For files in `changelog/`, verify structure matches [templates/changelog-patterns.md](templates/changelog-patterns.md).
 
 **Required Elements:**
-- [ ] Complete changelog record structure (ChangeList, Id, Cloud, Version, CreatedDateTime, WorkloadArea, SubArea)
-- [ ] Same Id value across the complete changelog record (record-level Id matches all ChangeList item Ids within that record)
-- [ ] Cloud value is `Prod`
-- [ ] Version value is `v1.0` or `beta`
-- [ ] Proper UTC DateTime format for CreatedDateTime
-- [ ] Links use full HTTP URLs with en-us locale
-- [ ] Links include version parameter without preserve-view=true
+- [ ] Complete changelog record structure (ChangeList array + Id, Cloud, Version, CreatedDateTime, WorkloadArea, SubArea)
+- [ ] Same GUID in all ChangeList items and record-level Id
+- [ ] Cloud value is "prd"
+- [ ] Version value is "v1.0" or "beta"
+- [ ] CreatedDateTime in ISO 8601/RFC 3339 format with fractional seconds and Z suffix (e.g., "2025-11-17T17:38:10.4694969Z")
+- [ ] Description links use full URLs with en-us locale
+- [ ] WorkloadArea and SubArea match CDK taxonomy (https://aka.ms/msgraphcdk)
 
-**Common Issues to Flag:**
-- [ ] Multiple API elements in single record
-- [ ] Missing or incorrect descriptions
-- [ ] Malformed links
-- [ ] Incomplete record structure (missing metadata properties)
+**Common Issues:**
+- [ ] Multiple unrelated API elements in single ChangeList item
+- [ ] Missing or vague descriptions
+- [ ] Malformed links or missing en-us locale
+- [ ] Incomplete record structure (missing metadata)
 
 ### Version-Specific Validation
 
@@ -178,46 +178,26 @@ For files in `changelog/`:
 
 ## Namespace Qualification Review
 
-Verify proper namespace qualification following these rules:
+Verify proper namespace qualification following the rules detailed in [author-api-docs.prompt.md - Reference Standards: Namespace Qualification](.github/prompts/author-api-docs.prompt.md#reference-standards-namespace-qualification).
 
-**Fully qualify types in these contexts ONLY:**
-- Resource topic: Type column in Properties tables
-- Resource topic: Type column in Relationships tables
-- Resource topic: Return type column in Methods tables
-- Method topic: Type column in Path parameters tables
-- Method topic: Type column in Function parameters tables
-- Method topic: Type column in Query parameters tables
-- Method topic: Type column in Request body tables
-- Method topic: Method return type in Response section
-
-**File naming for subnamespaces:**
-- [ ] Files for subnamespace resources prepend subnamespace name
-- [ ] Examples: `callrecords-callrecord.md`, `security-alert.md`
+**Quick checklist:**
+- [ ] Files for subnamespace resources prepend subnamespace name (e.g., `callrecords-callrecord.md`, `security-alert.md`)
 - [ ] Lowercase with `microsoft.graph.` prefix removed
-
-**HTTP requests for actions/functions in subnamespaces:**
-- [ ] Namespace of binding parameter type specified in HTTP request
-- [ ] Example: `POST /me/microsoft.graph.callRecords.getDirectRoutingCalls`
+- [ ] Namespace of binding parameter type specified in HTTP request for actions/functions
+- [ ] Types in subnamespaces are fully qualified in table Type columns and Response sections
 
 ---
 
 ## Formatting and Style Review
 
-**File naming:**
-- [ ] All filenames are lowercase
-- [ ] Hyphens separate words
-- [ ] Resource files: `{resourcename}.md`
-- [ ] API method files: `{resourcename}-{operation}.md`
-- [ ] Subnamespace files: `{subnamespace}-{resourcename}.md`
+Verify compliance with formatting rules detailed in [author-api-docs.prompt.md - Reference Standards: General Formatting Rules](.github/prompts/author-api-docs.prompt.md#reference-standards-general-formatting-rules).
 
-**Alphabetical ordering:**
-- [ ] Properties in Properties tables
-- [ ] Relationships in Relationships tables
-- [ ] H3 sections in What's new (within each month)
-
-**Markdown formatting:**
+**Quick checklist:**
+- [ ] All filenames are lowercase with hyphens separating words
+- [ ] Properties and Relationships tables in alphabetical order
+- [ ] H3 sections in What's new in alphabetical order (within each month)
 - [ ] Symbol names wrapped in backticks: `MyClass`, `handleClick()`
-- [ ] File references formatted as links (not backticks): [path/file.ts](path/file.ts)
+- [ ] File references formatted as links: [path/file.ts](path/file.ts)
 - [ ] Enum values styled with inline code (backticks)
 - [ ] Resource/property references styled with **bold** or links
 
