@@ -3,6 +3,88 @@
     {
       "ChangeList": [
         {
+          "Id": "32395157-c113-44fb-8f3c-80f8da0f2c3f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "placeFeatureEnablement",
+          "ChangeType": "Addition",
+          "Description": "Added the **placeFeatureEnablement** enumeration type.",
+          "Target": "placeFeatureEnablement"
+        },
+        {
+          "Id": "32395157-c113-44fb-8f3c-80f8da0f2c3f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "offlinePlaceMode",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **offlinePlaceMode** resource.",
+          "Target": "offlinePlaceMode"
+        },
+        {
+          "Id": "32395157-c113-44fb-8f3c-80f8da0f2c3f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unavailablePlaceMode",
+          "ChangeType": "Addition",
+          "Description": "Added the [unavailablePlaceMode](https://learn.microsoft.com/en-us/graph/api/resources/unavailablePlaceMode?view=graph-rest-beta) resource.",
+          "Target": "unavailablePlaceMode"
+        },
+        {
+          "Id": "32395157-c113-44fb-8f3c-80f8da0f2c3f",
+          "ApiChange": "Property",
+          "ChangedApiName": "wifiState",
+          "ChangeType": "Addition",
+          "Description": "Added the **wifiState** property to the [building](https://learn.microsoft.com/en-us/graph/api/resources/building?view=graph-rest-beta) resource.",
+          "Target": "building"
+        },
+        {
+          "Id": "32395157-c113-44fb-8f3c-80f8da0f2c3f",
+          "ApiChange": "Property",
+          "ChangedApiName": "heightAdjustableState",
+          "ChangeType": "Addition",
+          "Description": "Added the **heightAdjustableState** property to the [desk](https://learn.microsoft.com/en-us/graph/api/resources/desk?view=graph-rest-beta) resource.",
+          "Target": "desk"
+        },
+        {
+          "Id": "32395157-c113-44fb-8f3c-80f8da0f2c3f",
+          "ApiChange": "Property",
+          "ChangedApiName": "placeId",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **placeId** property from the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta) resource.",
+          "Target": "place"
+        },
+        {
+          "Id": "32395157-c113-44fb-8f3c-80f8da0f2c3f",
+          "ApiChange": "Property",
+          "ChangedApiName": "placeId",
+          "ChangeType": "Addition",
+          "Description": "Added the **placeId** property to the [room](https://learn.microsoft.com/en-us/graph/api/resources/room?view=graph-rest-beta) resource.",
+          "Target": "room"
+        },
+        {
+          "Id": "32395157-c113-44fb-8f3c-80f8da0f2c3f",
+          "ApiChange": "Property",
+          "ChangedApiName": "teamsEnabledState",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamsEnabledState** property to the [room](https://learn.microsoft.com/en-us/graph/api/resources/room?view=graph-rest-beta) resource.",
+          "Target": "room"
+        },
+        {
+          "Id": "32395157-c113-44fb-8f3c-80f8da0f2c3f",
+          "ApiChange": "Property",
+          "ChangedApiName": "placeId",
+          "ChangeType": "Addition",
+          "Description": "Added the **placeId** property to the [workspace](https://learn.microsoft.com/en-us/graph/api/resources/workspace?view=graph-rest-beta) resource.",
+          "Target": "workspace"
+        }
+      ],
+      "Id": "32395157-c113-44fb-8f3c-80f8da0f2c3f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-20T04:28:14.4935787Z",
+      "WorkloadArea": "Calendar",
+      "SubArea": "Places"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
           "ApiChange": "Enum type",
           "ChangedApiName": "wifi",
@@ -616,6 +698,396 @@
       "Version": "beta",
       "CreatedDateTime": "2025-09-09T23:36:37.579824Z",
       "WorkloadArea": "Calendars",
+      "SubArea": "Places"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2ee695d4-18dc-45f9-a9f2-74677efd4fd5",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "placeOperationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **placeOperationStatus** enumeration type.",
+          "Target": "placeOperationStatus"
+        },
+        {
+          "Id": "2ee695d4-18dc-45f9-a9f2-74677efd4fd5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "placeExecutionResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [placeExecutionResult](https://learn.microsoft.com/en-us/graph/api/resources/placeExecutionResult?view=graph-rest-beta) resource.",
+          "Target": "placeExecutionResult"
+        },
+        {
+          "Id": "2ee695d4-18dc-45f9-a9f2-74677efd4fd5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "placeOperationProgress",
+          "ChangeType": "Addition",
+          "Description": "Added the [placeOperationProgress](https://learn.microsoft.com/en-us/graph/api/resources/placeOperationProgress?view=graph-rest-beta) resource.",
+          "Target": "placeOperationProgress"
+        },
+        {
+          "Id": "2ee695d4-18dc-45f9-a9f2-74677efd4fd5",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "children",
+          "ChangeType": "Addition",
+          "Description": "Added the **children** relationship to the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta) resource and its derived types.",
+          "Target": "place"
+        },
+        {
+          "Id": "2ee695d4-18dc-45f9-a9f2-74677efd4fd5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "placeOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [placeOperation](https://learn.microsoft.com/en-us/graph/api/resources/placeOperation?view=graph-rest-beta) resource and associated methods.",
+          "Target": "placeOperation"
+        },
+        {
+          "Id": "2ee695d4-18dc-45f9-a9f2-74677efd4fd5",
+          "ApiChange": "Method",
+          "ChangedApiName": "getOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [getOperation](https://learn.microsoft.com/en-us/graph/api/place-getOperation?view=graph-rest-beta) method to the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta) resource.",
+          "Target": "place"
+        },
+        {
+          "Id": "2ee695d4-18dc-45f9-a9f2-74677efd4fd5",
+          "ApiChange": "Method",
+          "ChangedApiName": "place",
+          "ChangeType": "Addition",
+          "Description": "Added the [Upsert places](https://learn.microsoft.com/en-us/graph/api/place-patch-places?view=graph-rest-beta) method to the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta) resource.",
+          "Target": "place"
+        },
+        {
+          "Id": "2ee695d4-18dc-45f9-a9f2-74677efd4fd5",
+          "ApiChange": "Method",
+          "ChangedApiName": "listOperations",
+          "ChangeType": "Addition",
+          "Description": "Added the [listOperations](https://learn.microsoft.com/en-us/graph/api/place-listOperations?view=graph-rest-beta) method to the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta) resource.",
+          "Target": "place"
+        }
+      ],
+      "Id": "2ee695d4-18dc-45f9-a9f2-74677efd4fd5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-12-09T05:36:40.1956456Z",
+      "WorkloadArea": "Calendar",
+      "SubArea": "Places"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ee0d11da-856e-4e72-8b6e-72a124e62216",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "resourceLinkType",
+          "ChangeType": "Addition",
+          "Description": "Added the **resourceLinkType** enumeration type.",
+          "Target": "resourceLinkType"
+        },
+        {
+          "Id": "ee0d11da-856e-4e72-8b6e-72a124e62216",
+          "ApiChange": "Resource",
+          "ChangedApiName": "assignedPlaceMode",
+          "ChangeType": "Addition",
+          "Description": "Added the [assignedPlaceMode](https://learn.microsoft.com/en-us/graph/api/resources/assignedPlaceMode?view=graph-rest-1.0) resource.",
+          "Target": "assignedPlaceMode"
+        },
+        {
+          "Id": "ee0d11da-856e-4e72-8b6e-72a124e62216",
+          "ApiChange": "Resource",
+          "ChangedApiName": "dropInPlaceMode",
+          "ChangeType": "Addition",
+          "Description": "Added the [dropInPlaceMode](https://learn.microsoft.com/en-us/graph/api/resources/dropInPlaceMode?view=graph-rest-1.0) resource.",
+          "Target": "dropInPlaceMode"
+        },
+        {
+          "Id": "ee0d11da-856e-4e72-8b6e-72a124e62216",
+          "ApiChange": "Resource",
+          "ChangedApiName": "importBuildingMapSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [importBuildingMapSetting](https://learn.microsoft.com/en-us/graph/api/resources/importBuildingMapSetting?view=graph-rest-1.0) resource.",
+          "Target": "importBuildingMapSetting"
+        },
+        {
+          "Id": "ee0d11da-856e-4e72-8b6e-72a124e62216",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mailboxDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [mailboxDetails](https://learn.microsoft.com/en-us/graph/api/resources/mailboxDetails?view=graph-rest-1.0) resource.",
+          "Target": "mailboxDetails"
+        },
+        {
+          "Id": "ee0d11da-856e-4e72-8b6e-72a124e62216",
+          "ApiChange": "Resource",
+          "ChangedApiName": "placeMode",
+          "ChangeType": "Addition",
+          "Description": "Added the [placeMode](https://learn.microsoft.com/en-us/graph/api/resources/placeMode?view=graph-rest-1.0) resource.",
+          "Target": "placeMode"
+        },
+        {
+          "Id": "ee0d11da-856e-4e72-8b6e-72a124e62216",
+          "ApiChange": "Resource",
+          "ChangedApiName": "reservablePlaceMode",
+          "ChangeType": "Addition",
+          "Description": "Added the [reservablePlaceMode](https://learn.microsoft.com/en-us/graph/api/resources/reservablePlaceMode?view=graph-rest-1.0) resource.",
+          "Target": "reservablePlaceMode"
+        },
+        {
+          "Id": "ee0d11da-856e-4e72-8b6e-72a124e62216",
+          "ApiChange": "Resource",
+          "ChangedApiName": "resourceLink",
+          "ChangeType": "Addition",
+          "Description": "Added the [resourceLink](https://learn.microsoft.com/en-us/graph/api/resources/resourceLink?view=graph-rest-1.0) resource.",
+          "Target": "resourceLink"
+        },
+        {
+          "Id": "ee0d11da-856e-4e72-8b6e-72a124e62216",
+          "ApiChange": "Resource",
+          "ChangedApiName": "baseMapFeature",
+          "ChangeType": "Addition",
+          "Description": "Added the [baseMapFeature](https://learn.microsoft.com/en-us/graph/api/resources/baseMapFeature?view=graph-rest-1.0) resource.",
+          "Target": "baseMapFeature"
+        },
+        {
+          "Id": "ee0d11da-856e-4e72-8b6e-72a124e62216",
+          "ApiChange": "Resource",
+          "ChangedApiName": "building",
+          "ChangeType": "Addition",
+          "Description": "Added the [building](https://learn.microsoft.com/en-us/graph/api/resources/building?view=graph-rest-1.0) resource.",
+          "Target": "building"
+        },
+        {
+          "Id": "ee0d11da-856e-4e72-8b6e-72a124e62216",
+          "ApiChange": "Resource",
+          "ChangedApiName": "buildingMap",
+          "ChangeType": "Addition",
+          "Description": "Added the [buildingMap](https://learn.microsoft.com/en-us/graph/api/resources/buildingMap?view=graph-rest-1.0) resource.",
+          "Target": "buildingMap"
+        },
+        {
+          "Id": "ee0d11da-856e-4e72-8b6e-72a124e62216",
+          "ApiChange": "Resource",
+          "ChangedApiName": "desk",
+          "ChangeType": "Addition",
+          "Description": "Added the [desk](https://learn.microsoft.com/en-us/graph/api/resources/desk?view=graph-rest-1.0) resource.",
+          "Target": "desk"
+        },
+        {
+          "Id": "ee0d11da-856e-4e72-8b6e-72a124e62216",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fixtureMap",
+          "ChangeType": "Addition",
+          "Description": "Added the [fixtureMap](https://learn.microsoft.com/en-us/graph/api/resources/fixtureMap?view=graph-rest-1.0) resource.",
+          "Target": "fixtureMap"
+        },
+        {
+          "Id": "ee0d11da-856e-4e72-8b6e-72a124e62216",
+          "ApiChange": "Resource",
+          "ChangedApiName": "floor",
+          "ChangeType": "Addition",
+          "Description": "Added the [floor](https://learn.microsoft.com/en-us/graph/api/resources/floor?view=graph-rest-1.0) resource.",
+          "Target": "floor"
+        },
+        {
+          "Id": "ee0d11da-856e-4e72-8b6e-72a124e62216",
+          "ApiChange": "Resource",
+          "ChangedApiName": "footprintMap",
+          "ChangeType": "Addition",
+          "Description": "Added the [footprintMap](https://learn.microsoft.com/en-us/graph/api/resources/footprintMap?view=graph-rest-1.0) resource.",
+          "Target": "footprintMap"
+        },
+        {
+          "Id": "ee0d11da-856e-4e72-8b6e-72a124e62216",
+          "ApiChange": "Resource",
+          "ChangedApiName": "levelMap",
+          "ChangeType": "Addition",
+          "Description": "Added the [levelMap](https://learn.microsoft.com/en-us/graph/api/resources/levelMap?view=graph-rest-1.0) resource.",
+          "Target": "levelMap"
+        },
+        {
+          "Id": "ee0d11da-856e-4e72-8b6e-72a124e62216",
+          "ApiChange": "Property",
+          "ChangedApiName": "isWheelChairAccessible",
+          "ChangeType": "Addition",
+          "Description": "Added the **isWheelChairAccessible** property to the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-1.0) resource.",
+          "Target": "place"
+        },
+        {
+          "Id": "ee0d11da-856e-4e72-8b6e-72a124e62216",
+          "ApiChange": "Property",
+          "ChangedApiName": "label",
+          "ChangeType": "Addition",
+          "Description": "Added the **label** property to the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-1.0) resource.",
+          "Target": "place"
+        },
+        {
+          "Id": "ee0d11da-856e-4e72-8b6e-72a124e62216",
+          "ApiChange": "Property",
+          "ChangedApiName": "parentId",
+          "ChangeType": "Addition",
+          "Description": "Added the **parentId** property to the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-1.0) resource.",
+          "Target": "place"
+        },
+        {
+          "Id": "ee0d11da-856e-4e72-8b6e-72a124e62216",
+          "ApiChange": "Property",
+          "ChangedApiName": "tags",
+          "ChangeType": "Addition",
+          "Description": "Added the **tags** property to the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-1.0) resource.",
+          "Target": "place"
+        },
+        {
+          "Id": "ee0d11da-856e-4e72-8b6e-72a124e62216",
+          "ApiChange": "Property",
+          "ChangedApiName": "isWheelChairAccessible",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **isWheelChairAccessible** property from the [room](https://learn.microsoft.com/en-us/graph/api/resources/room?view=graph-rest-1.0) resource.",
+          "Target": "room"
+        },
+        {
+          "Id": "ee0d11da-856e-4e72-8b6e-72a124e62216",
+          "ApiChange": "Property",
+          "ChangedApiName": "label",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **label** property from the [room](https://learn.microsoft.com/en-us/graph/api/resources/room?view=graph-rest-1.0) resource.",
+          "Target": "room"
+        },
+        {
+          "Id": "ee0d11da-856e-4e72-8b6e-72a124e62216",
+          "ApiChange": "Property",
+          "ChangedApiName": "tags",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **tags** property from the [room](https://learn.microsoft.com/en-us/graph/api/resources/room?view=graph-rest-1.0) resource.",
+          "Target": "room"
+        },
+        {
+          "Id": "ee0d11da-856e-4e72-8b6e-72a124e62216",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "workspaces",
+          "ChangeType": "Addition",
+          "Description": "Added the **workspaces** relationship to the [roomList](https://learn.microsoft.com/en-us/graph/api/resources/roomList?view=graph-rest-1.0) resource.",
+          "Target": "roomList"
+        },
+        {
+          "Id": "ee0d11da-856e-4e72-8b6e-72a124e62216",
+          "ApiChange": "Resource",
+          "ChangedApiName": "section",
+          "ChangeType": "Addition",
+          "Description": "Added the [section](https://learn.microsoft.com/en-us/graph/api/resources/section?view=graph-rest-1.0) resource.",
+          "Target": "section"
+        },
+        {
+          "Id": "ee0d11da-856e-4e72-8b6e-72a124e62216",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sectionMap",
+          "ChangeType": "Addition",
+          "Description": "Added the [sectionMap](https://learn.microsoft.com/en-us/graph/api/resources/sectionMap?view=graph-rest-1.0) resource.",
+          "Target": "sectionMap"
+        },
+        {
+          "Id": "ee0d11da-856e-4e72-8b6e-72a124e62216",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unitMap",
+          "ChangeType": "Addition",
+          "Description": "Added the [unitMap](https://learn.microsoft.com/en-us/graph/api/resources/unitMap?view=graph-rest-1.0) resource.",
+          "Target": "unitMap"
+        },
+        {
+          "Id": "ee0d11da-856e-4e72-8b6e-72a124e62216",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workspace",
+          "ChangeType": "Addition",
+          "Description": "Added the [workspace](https://learn.microsoft.com/en-us/graph/api/resources/workspace?view=graph-rest-1.0) resource.",
+          "Target": "workspace"
+        },
+        {
+          "Id": "ee0d11da-856e-4e72-8b6e-72a124e62216",
+          "ApiChange": "Method",
+          "ChangedApiName": "ingestMapFile",
+          "ChangeType": "Addition",
+          "Description": "Added the [ingestMapFile](https://learn.microsoft.com/en-us/graph/api/building-ingestMapFile?view=graph-rest-1.0) method to the [building](https://learn.microsoft.com/en-us/graph/api/resources/building?view=graph-rest-1.0) resource.",
+          "Target": "building"
+        },
+        {
+          "Id": "ee0d11da-856e-4e72-8b6e-72a124e62216",
+          "ApiChange": "Method",
+          "ChangedApiName": "descendants",
+          "ChangeType": "Addition",
+          "Description": "Added the [descendants](https://learn.microsoft.com/en-us/graph/api/place-descendants?view=graph-rest-1.0) method to the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-1.0) resource.",
+          "Target": "place"
+        }
+      ],
+      "Id": "ee0d11da-856e-4e72-8b6e-72a124e62216",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-12-02T07:34:22.5269035Z",
+      "WorkloadArea": "Calendar",
+      "SubArea": "Places"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "89aa8abd-3fce-4c90-a2f0-5b8e6557a3dd",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "placeFeatureEnablement",
+          "ChangeType": "Addition",
+          "Description": "Added the **placeFeatureEnablement** enumeration type.",
+          "Target": "placeFeatureEnablement"
+        },
+        {
+          "Id": "89aa8abd-3fce-4c90-a2f0-5b8e6557a3dd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unavailablePlaceMode",
+          "ChangeType": "Addition",
+          "Description": "Added the [unavailablePlaceMode](https://learn.microsoft.com/en-us/graph/api/resources/unavailablePlaceMode?view=graph-rest-1.0) resource.",
+          "Target": "unavailablePlaceMode"
+        },
+        {
+          "Id": "89aa8abd-3fce-4c90-a2f0-5b8e6557a3dd",
+          "ApiChange": "Property",
+          "ChangedApiName": "wifiState",
+          "ChangeType": "Addition",
+          "Description": "Added the **wifiState** property to the [building](https://learn.microsoft.com/en-us/graph/api/resources/building?view=graph-rest-1.0) resource.",
+          "Target": "building"
+        },
+        {
+          "Id": "89aa8abd-3fce-4c90-a2f0-5b8e6557a3dd",
+          "ApiChange": "Property",
+          "ChangedApiName": "heightAdjustableState",
+          "ChangeType": "Addition",
+          "Description": "Added the **heightAdjustableState** property to the [desk](https://learn.microsoft.com/en-us/graph/api/resources/desk?view=graph-rest-1.0) resource.",
+          "Target": "desk"
+        },
+        {
+          "Id": "89aa8abd-3fce-4c90-a2f0-5b8e6557a3dd",
+          "ApiChange": "Property",
+          "ChangedApiName": "placeId",
+          "ChangeType": "Addition",
+          "Description": "Added the **placeId** property to the [room](https://learn.microsoft.com/en-us/graph/api/resources/room?view=graph-rest-1.0) resource.",
+          "Target": "room"
+        },
+        {
+          "Id": "89aa8abd-3fce-4c90-a2f0-5b8e6557a3dd",
+          "ApiChange": "Property",
+          "ChangedApiName": "teamsEnabledState",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamsEnabledState** property to the [room](https://learn.microsoft.com/en-us/graph/api/resources/room?view=graph-rest-1.0) resource.",
+          "Target": "room"
+        },
+        {
+          "Id": "89aa8abd-3fce-4c90-a2f0-5b8e6557a3dd",
+          "ApiChange": "Property",
+          "ChangedApiName": "placeId",
+          "ChangeType": "Addition",
+          "Description": "Added the **placeId** property to the [workspace](https://learn.microsoft.com/en-us/graph/api/resources/workspace?view=graph-rest-1.0) resource.",
+          "Target": "workspace"
+        }
+      ],
+      "Id": "89aa8abd-3fce-4c90-a2f0-5b8e6557a3dd",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-12-26T08:33:18.5751667Z",
+      "WorkloadArea": "Calendar",
       "SubArea": "Places"
     }
   ]

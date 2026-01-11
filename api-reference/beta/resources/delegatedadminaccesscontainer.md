@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An admin access container through which directory roles are assigned via an access assignment.
+An admin access container through which directory roles are [assigned via an access assignment](../resources/delegatedadminaccessassignment.md).
 
 ## Properties
 |Property|Type|Description|

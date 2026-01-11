@@ -29,7 +29,7 @@ Inherits from [changeTrackedEntity](changetrackedentity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assignedTo|scheduleChangeRequestActor|Indicates who the request is assigned to. Possible values are: `sender`, `recipient`, `manager`, `system`, `unknownFutureValue`.|
+|assignedTo|scheduleChangeRequestActor|Indicates who the request is assigned to. The possible values are: `sender`, `recipient`, `manager`, `system`, `unknownFutureValue`.|
 |createdBy|[identitySet](../resources/identityset.md)|The user who created the **scheduleChangeRequest**. Inherited from [changeTrackedEntity](changetrackedentity.md).|
 |createdDateTime|DateTimeOffset|The date and time when the **scheduleChangeRequest** was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on `Jan 1, 2014 is 2014-01-01T00:00:00Z`. Inherited from [changeTrackedEntity](changetrackedentity.md).|
 |id|String|The unique identifier for the **scheduleChangeRequest**. Inherited from [changeTrackedEntity](changetrackedentity.md).|
@@ -41,7 +41,7 @@ Inherits from [changeTrackedEntity](changetrackedentity.md).
 |senderDateTime|DateTimeOffset|The date and time when the sender sent the **scheduleChangeRequest**. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on `Jan 1, 2014 is 2014-01-01T00:00:00Z`.|
 |senderMessage|String|The message sent by the sender of the **scheduleChangeRequest**. Optional.|
 |senderUserId|String|The user ID of the sender of the **scheduleChangeRequest**.|
-|state|scheduleChangeState|The state of the **scheduleChangeRequest**. Possible values are: `pending`, `approved`, `declined`, `unknownFutureValue`.|
+|state|scheduleChangeState|The state of the **scheduleChangeRequest**. The possible values are: `pending`, `approved`, `declined`, `unknownFutureValue`.|
 
 ## Relationships
 None.

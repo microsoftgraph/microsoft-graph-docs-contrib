@@ -17,7 +17,6 @@ $requestBody->setDisplayName('Updated Name');
 $requestBody->setDescription('Updated Description');
 $settings = new FileStorageContainerSettings();
 $settings->setIsOcrEnabled(false);
-$settings->setItemDefaultSensitivityLabelId('3d8789ae-7375-4ded-8eeb-d6bc226e42fb');
 $requestBody->setSettings($settings);
 
 $result = $graphServiceClient->storage()->fileStorage()->containers()->byFileStorageContainerId('fileStorageContainer-id')->patch($requestBody)->wait();

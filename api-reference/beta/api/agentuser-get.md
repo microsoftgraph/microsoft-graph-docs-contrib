@@ -5,7 +5,7 @@ author: "yyuank"
 ms.reviewer: "iamut"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
-ms.subservice: entra-id
+ms.subservice: "entra-agent-id"
 doc_type: apiPageType
 ---
 
@@ -70,6 +70,7 @@ If successful, this method returns a `200 OK` response code and an [agentUser](.
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_AgentUser"
@@ -78,6 +79,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/users/microsoft.graph.agentUser/929393ae-1e1d-159f-0d83-29f7df42e7b9
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-agentuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response

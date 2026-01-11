@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Unarchive an archived SharePoint [site](../resources/site.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

@@ -25,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -116,7 +116,7 @@ The following table shows the properties that are required when you create the [
 |deployedAppCount|Int32|Count of apps to which the current policy is deployed.|
 |faceIdBlocked|Boolean|Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True.|
 |allowWidgetContentSync|Boolean|Indicates  if content sync for widgets is allowed for iOS on App Protection Policies|
-|exemptedAppProtocols|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|Apps in this list will be exempt from the policy and will be able to receive data from managed apps.|
+|exemptedAppProtocols|[keyValuePair](../resources/intune-mam-keyvaluepair.md) collection|Apps in this list will be exempt from the policy and will be able to receive data from managed apps.|
 |minimumWipeSdkVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |allowedIosDeviceModels|String|Semicolon seperated list of device models allowed, as a string, for the managed app to work.|
 |appActionIfIosDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or wipe, if the specified device model is not allowed. Possible values are: `block`, `wipe`, `warn`, `blockWhenSettingIsSupported`.|

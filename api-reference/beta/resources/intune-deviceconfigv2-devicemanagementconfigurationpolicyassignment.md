@@ -32,7 +32,7 @@ The DeviceManagementConfigurationPolicyAssignment entity assigns a specific Devi
 |:---|:---|:---|
 |id|String|The key of the assignment.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The assignment target for the DeviceManagementConfigurationPolicy.|
-|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|The assignment source for the device compliance policy, direct or parcel/policySet. Possible values are: `direct`, `policySets`.|
+|source|[deviceAndAppManagementAssignmentSource](../resources/intune-shared-deviceandappmanagementassignmentsource.md)|The assignment source for the device compliance policy, direct or parcel/policySet. The possible values are: `direct`, `policySets`.|
 |sourceId|String|The identifier of the source of the assignment.|
 
 ## Relationships

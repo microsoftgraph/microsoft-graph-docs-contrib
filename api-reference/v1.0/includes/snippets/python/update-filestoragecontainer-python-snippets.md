@@ -14,7 +14,6 @@ request_body = FileStorageContainer(
 	description = "Updated Description",
 	settings = FileStorageContainerSettings(
 		is_ocr_enabled = False,
-		item_default_sensitivity_label_id = "3d8789ae-7375-4ded-8eeb-d6bc226e42fb",
 	),
 )
 

@@ -32,17 +32,19 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|defaultPasskeyProfile|String|The non-deletable baseline passkey profile, within the passkey profile collection. It is automatically created when migrating to passkey profiles and initially mirrors the tenant's legacy global Passkey (FIDO2) authentication methods policy settings.|
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from the policy.|
 |id|String|The authentication method policy identifier.|
-|isAttestationEnforced|Boolean|Determines whether attestation must be enforced for FIDO2 security key registration.|
-|isSelfServiceRegistrationAllowed|Boolean|Determines if users can register new FIDO2 security keys.|
-|keyRestrictions|[fido2KeyRestrictions](../resources/fido2keyrestrictions.md)|Controls whether key restrictions are enforced on FIDO2 security keys, either allowing or disallowing certain key types as defined by Authenticator Attestation GUID (AAGUID), an identifier that indicates the type (for example, make and model) of the authenticator.|
-|state|authenticationMethodState|Possible values are: `enabled`, `disabled`.|
+|isAttestationEnforced|Boolean|Determines whether attestation must be enforced for FIDO2 passkey registration.|
+|isSelfServiceRegistrationAllowed|Boolean|Determines if users can register new FIDO2 passkeys.|
+|keyRestrictions|[fido2KeyRestrictions](../resources/fido2keyrestrictions.md)|Controls whether key restrictions are enforced on FIDO2 passkeys, either allowing or disallowing certain key types as defined by Authenticator Attestation GUID (AAGUID), an identifier that indicates the type (for example, make and model) of the authenticator.|
+|state|authenticationMethodState|The possible values are: `enabled`, `disabled`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
 |includeTargets|[authenticationMethodTarget](../resources/authenticationmethodtarget.md) collection|A collection of groups that are enabled to use the authentication method.|
+|passkeyProfiles|[passkeyProfile](../resources/passkeyprofile.md) collection|A collection of configuration profiles that control the registration of and authentication with Passkeys (FIDO2).|
 
 ## JSON representation
 
@@ -60,6 +62,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
   "id": "String (identifier)",
   "state": "String",
+  "defaultPasskeyProfile": "String",
   "excludeTargets": [
     {
       "@odata.type": "microsoft.graph.excludeTarget"

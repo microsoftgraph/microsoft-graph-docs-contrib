@@ -4,7 +4,7 @@ description: "Read the properties and relationships of agentIdentity object."
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-applications"
+ms.subservice: "entra-agent-id"
 doc_type: apiPageType
 ---
 
@@ -58,6 +58,7 @@ If successful, this method returns a `200 OK` response code and an [agentIdentit
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_agentidentity"
@@ -66,6 +67,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/microsoft.graph.agentIdentity
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-agentidentity-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response
@@ -86,8 +93,8 @@ Content-Type: application/json
   "id": "1b7313c4-05d0-4a08-88e3-7b76c003a0a2",
   "displayName": "My Agent Identity",
   "createdDateTime": "2019-09-17T19:10:35.2742618Z",
-  "createdByAppId": "631a96bc-a705-4eda-9f99-fdaf9f54f6a2",
-  "agentIdentityBlueprintId": "631a96bc-a705-4eda-9f99-fdaf9f54f6a2",
+  "createdByAppId": "00001111-aaaa-2222-bbbb-3333cccc4444",
+  "agentIdentityBlueprintId": "00001111-aaaa-2222-bbbb-3333cccc4444",
   "accountEnabled": true,
   "disabledByMicrosoftStatus": null,
   "servicePrincipalType": "ServiceIdentity",

@@ -64,6 +64,8 @@ items:
       href: ../../api/security-incidenttask-executeresponseaction.md
   - name: Complex types
     items:
+    - name: AI agent evidence
+      href: ../../resources/security-aiagentevidence.md
     - name: Security group evidence
       href: ../../resources/security-securitygroupevidence.md
     - name: Teams message evidence
@@ -278,6 +280,10 @@ items:
     items:
     - name: Activity metadata
       href: ../../resources/activitymetadata.md
+    - name: Ai agent info
+      href: ../../resources/aiagentinfo.md
+    - name: Ai interaction entity
+      href: ../../resources/aiinteractionentity.md
     - name: Ai interaction plugin
       href: ../../resources/aiinteractionplugin.md
     - name: Auto labeling
@@ -348,6 +354,8 @@ items:
       href: ../../resources/protectedapplicationmetadata.md
     - name: Protected content
       href: ../../resources/protectedcontent.md
+    - name: Resource access detail
+      href: ../../resources/resourceaccessdetail.md
     - name: Restrict access action
       href: ../../resources/restrictaccessaction.md
     - name: Restrict access action base
@@ -800,14 +808,6 @@ items:
       href: ../../api/security-sensorcandidateactivationconfiguration-get.md
     - name: Update
       href: ../../api/security-identitycontainer-post-sensorcandidateactivationconfiguration.md
-  - name: Auto-auditing configuration
-    items:
-    - name: Auto-auditing configuration
-      href: ../../resources/security-autoauditingconfiguration.md
-    - name: Get
-      href: ../../api/security-autoauditingconfiguration-get.md
-    - name: Update
-      href: ../../api/security-autoauditingconfiguration-update.md
   - name: Complex types
     items:
     - name: Account

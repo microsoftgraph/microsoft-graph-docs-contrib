@@ -56,7 +56,7 @@ Students are regular members of the class, and Teachers are owners and have appr
 |displayName|String|Name of the class.|
 |externalId|String|ID of the class from the syncing system.|
 |externalName|String|Name of the class in the syncing system.|
-|externalSource|String|The type of external source this resource was generated from (automatically determined from `externalSourceDetail`). Possible values are: `sis`, `lms`, or `manual`.|
+|externalSource|String|The type of external source this resource was generated from (automatically determined from `externalSourceDetail`). The possible values are: `sis`, `lms`, or `manual`.|
 |externalSourceDetail|String|The name of the external source from which this resource was generated.|
 |grade|String|Grade level of the class.|
 |mailNickname|String|Mail name for sending email to all members, if this is enabled.|

@@ -5,7 +5,7 @@ author: "yyuank"
 ms.reviewer: "iamut"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
-ms.subservice: entra-id
+ms.subservice: "entra-agent-id"
 doc_type: apiPageType
 ---
 
@@ -59,6 +59,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_sponsors_from_agentuser"
@@ -67,6 +68,12 @@ The following example shows a request.
 ``` http
 DELETE https://graph.microsoft.com/beta/users/{usersId}/sponsors/{id}/$ref
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-sponsors-from-agentuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response

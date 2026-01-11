@@ -35,14 +35,14 @@ A threat assessment request can be one of the following types:
 
 | Property     | Type        | Description |
 | :-------------|:------------|:------------|
-|category|threatCategory|The threat category. Possible values are: `spam`, `phishing`, `malware`.|
-|contentType|threatAssessmentContentType|The content type of threat assessment. Possible values are: `mail`, `url`, `file`.|
+|category|threatCategory|The threat category. The possible values are: `spam`, `phishing`, `malware`.|
+|contentType|threatAssessmentContentType|The content type of threat assessment. The possible values are: `mail`, `url`, `file`.|
 |createdBy|[identitySet](identityset.md)|The threat assessment request creator.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|expectedAssessment|threatExpectedAssessment|The expected assessment from submitter. Possible values are: `block`, `unblock`.|
+|expectedAssessment|threatExpectedAssessment|The expected assessment from submitter. The possible values are: `block`, `unblock`.|
 |id|String|The threat assessment request ID is a globally unique identifier (GUID).|
-|requestSource|threatAssessmentRequestSource|The source of the threat assessment request. Possible values are: `user`, `administrator`.|
-|status|threatAssessmentStatus|The assessment process status. Possible values are: `pending`, `completed`.|
+|requestSource|threatAssessmentRequestSource|The source of the threat assessment request. The possible values are: `user`, `administrator`.|
+|status|threatAssessmentStatus|The assessment process status. The possible values are: `pending`, `completed`.|
 
 ## Relationships
 

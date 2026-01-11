@@ -4,7 +4,7 @@ description: "Get a list of the agentIdentityBlueprint objects and their propert
 author: "zallison22"
 ms.date: 11/10/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-applications"
+ms.subservice: "entra-agent-id"
 doc_type: apiPageType
 ---
 
@@ -20,11 +20,7 @@ Get a list of the [agentIdentityBlueprint](../resources/agentidentityblueprint.m
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "agentidentityblueprint-list-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "agentidentityblueprint_list" } -->
 [!INCLUDE [permissions-table](../includes/permissions/agentidentityblueprint-list-permissions.md)]
 
 [!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]
@@ -66,6 +62,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_agentidentityblueprint"
@@ -74,6 +71,36 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/applications/microsoft.graph.agentIdentityBlueprint
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-agentidentityblueprint-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-agentidentityblueprint-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-agentidentityblueprint-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-agentidentityblueprint-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-agentidentityblueprint-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-agentidentityblueprint-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-agentidentityblueprint-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response

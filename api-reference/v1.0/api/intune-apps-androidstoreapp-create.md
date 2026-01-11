@@ -23,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -62,7 +62,7 @@ The following table shows the properties that are required when you create the a
 |owner|String|The owner of the app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. This property is read-only. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md). Possible values are: `notPublished`, `processing`, `published`.|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. This property is read-only. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md). The possible values are: `notPublished`, `processing`, `published`.|
 |packageId|String|The package identifier. This property is read-only.|
 |appStoreUrl|String|The Android app store URL.|
 |minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune-apps-androidminimumoperatingsystem.md)|The value for the minimum applicable operating system.|

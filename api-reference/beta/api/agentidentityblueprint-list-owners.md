@@ -4,7 +4,7 @@ description: "Retrieve a list of owners of the agent identity blueprint."
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-applications"
+ms.subservice: "entra-agent-id"
 doc_type: apiPageType
 ---
 
@@ -64,6 +64,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_agentidentityblueprint_owners"
@@ -72,6 +73,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/applications/bbec3106-565f-4907-941e-96b4dbfef21c/microsoft.graph.agentIdentityBlueprint/owners
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-agentidentityblueprint-owners-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

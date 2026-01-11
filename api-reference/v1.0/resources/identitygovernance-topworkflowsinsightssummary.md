@@ -24,7 +24,7 @@ Represents a summary of the workflows that are processed the most, or the _top w
 |successfulUsers|Int32|Count of successful users processed by the workflow.|
 |totalRuns|Int32|Count of total runs of workflow.|
 |totalUsers|Int32|Total number of users processed by the workflow.|
-|workflowCategory|microsoft.graph.identityGovernance.lifecycleWorkflowCategory|The category of the workflow. The possible values are: `joiner`, `leaver`, `unknownFutureValue`, `mover`. Use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `mover`.|
+|workflowCategory|microsoft.graph.identityGovernance.lifecycleWorkflowCategory|The category of the workflow. The possible values are: `joiner`, `leaver`, `unknownFutureValue`, `mover`. Use the `Prefer: include-unknown-enum-members` request header to get the following members in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `mover`.|
 |workflowDisplayName|String|The name of the workflow.|
 |workflowId|String|The workflow ID.|
 |workflowVersion|Int32|The version of the workflow that was a top workflow ran.|

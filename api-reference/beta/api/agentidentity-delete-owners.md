@@ -4,7 +4,7 @@ description: "Remove an owner from a agentIdentity."
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-applications"
+ms.subservice: "entra-agent-id"
 doc_type: apiPageType
 ---
 
@@ -55,6 +55,7 @@ If successful, this method returns a `204 No Content` response code.
 
 The following example shows the request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "agentidentity_delete_owners"
@@ -64,6 +65,12 @@ The following example shows the request.
 DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/microsoft.graph.agentIdentity/owners/1511d5e7-c324-4362-ad4b-16c20076e5aa/$ref
 
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/agentidentity-delete-owners-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

@@ -54,7 +54,7 @@ The following table shows the properties accepted to update an `accessReviewInst
 
 | Property     | Type       | Description |
 |:-------------|:------------|:------------|
-| decision  | String | Access decision for the entity being reviewed. Possible values are: `Approve` `Deny` `NotReviewed` `DontKnow`. Required.  |
+| decision  | String | Access decision for the entity being reviewed. The possible values are: `Approve` `Deny` `NotReviewed` `DontKnow`. Required.  |
 |  justification | String | Context of the review provided to admins. Required if justificationRequiredOnApproval is True on the accessReviewScheduleDefinition.  |
 | applyResult | String| The result of the apply action. Only supported for BYOD scenarios. Possible values: `New`, `AppliedSuccessfully`, `AppliedWithUnknownFailure`, `AppliedSuccessfullyButObjectNotFound`, and `ApplyNotSupported`. |
 | applyDescription | String | A description of the applyResult |
@@ -124,7 +124,7 @@ Content-Type: application/json
   "blockType": "response"
 } -->
 ```http
-HTTP/1.1 204 Accepted
+HTTP/1.1 202 Accepted
 ```
 
 
@@ -183,7 +183,7 @@ Content-Type: application/json
   "blockType": "response"
 } -->
 ```http
-HTTP/1.1 204 Accepted
+HTTP/1.1 202 Accepted
 ```
 
 ### Example 3: Update a applyResult on an accessReviewInstance
@@ -194,6 +194,7 @@ The following is an example of updating the applyResult on a BYOD decision.
 
 
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_accessReviewDefinitionInstanceDecisionsItem_3"
@@ -208,6 +209,36 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-accessreviewdefinitioninstancedecisionsitem-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-accessreviewdefinitioninstancedecisionsitem-3-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-accessreviewdefinitioninstancedecisionsitem-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-accessreviewdefinitioninstancedecisionsitem-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-accessreviewdefinitioninstancedecisionsitem-3-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-accessreviewdefinitioninstancedecisionsitem-3-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-accessreviewdefinitioninstancedecisionsitem-3-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -215,7 +246,7 @@ Content-Type: application/json
   "blockType": "response"
 } -->
 ```http
-HTTP/1.1 204 Accepted
+HTTP/1.1 202 Accepted
 ```
 
 <!--

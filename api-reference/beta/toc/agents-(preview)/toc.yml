@@ -32,18 +32,18 @@ items:
         href: ../../api/agentidentityblueprint-addkey.md
       - name: Remove key
         href: ../../api/agentidentityblueprint-removekey.md
-      - name: List federatedIdentityCredential
-        href: ../../api/agentidentityblueprint-list-federatedidentitycredentials.md
-      - name: Create federatedIdentityCredential
-        href: ../../api/agentidentityblueprint-post-federatedidentitycredentials.md
-      - name: Get federatedIdentityCredential
-        href: ../../api/agentidentityblueprint-federatedidentitycredential-get.md
-      - name: Update federatedIdentityCredential
-        href: ../../api/agentidentityblueprint-federatedidentitycredential-update.md
-      - name: Upsert federatedIdentityCredential
-        href: ../../api/agentidentityblueprint-federatedidentitycredential-upsert.md
-      - name: Delete federatedIdentityCredential
-        href: ../../api/agentidentityblueprint-federatedidentitycredential-delete.md
+      - name: List federated identity credential
+        href: ../../api/federatedidentitycredential-list.md
+      - name: Create federated identity credential
+        href: ../../api/federatedidentitycredential-post.md
+      - name: Get federated identity credential
+        href: ../../api/federatedidentitycredential-get.md
+      - name: Update federated identity credential
+        href: ../../api/federatedidentitycredential-update.md
+      - name: Upsert federated identity credential
+        href: ../../api/federatedidentitycredential-upsert.md
+      - name: Delete federated identity credential
+        href: ../../api/federatedidentitycredential-delete.md
     - name: Deleted items
       items:
       - name: List
@@ -76,6 +76,14 @@ items:
         href: ../../api/agentidentityblueprint-setverifiedpublisher.md
       - name: Unset
         href: ../../api/agentidentityblueprint-unsetverifiedpublisher.md
+    - name: Inheritable permissions
+      items:
+      - name: List inheritable permissions
+        href: ../../api/agentidentityblueprint-list-inheritablepermissions.md
+      - name: Add inheritable permission
+        href: ../../api/agentidentityblueprint-post-inheritablepermissions.md
+      - name: Delete inheritable permission
+        href: ../../api/agentidentityblueprint-delete-inheritablepermissions.md
   - name: Agent identity blueprint principal
     items:
     - name: Agent identity blueprint principal
@@ -92,21 +100,21 @@ items:
       href: ../../api/agentidentityblueprintprincipal-delete.md
     - name: App role assignments
       items:
-      - name: List appRoleAssignedTo
+      - name: List app role assigned to
         href: ../../api/serviceprincipal-list-approleassignedto.md
-      - name: Add appRoleAssignedTo
+      - name: Add app role assigned to
         href: ../../api/serviceprincipal-post-approleassignedto.md
-      - name: Remove appRoleAssignedTo
+      - name: Remove app role assigned to
         href: ../../api/serviceprincipal-delete-approleassignedto.md
-      - name: List appRoleAssignments
+      - name: List app role assignments
         href: ../../api/serviceprincipal-list-approleassignments.md
-      - name: Add appRoleAssignment
+      - name: Add app role assignment
         href: ../../api/serviceprincipal-post-approleassignments.md
-      - name: Remove appRoleAssignment
+      - name: Remove app role assignment
         href: ../../api/serviceprincipal-delete-approleassignments.md
     - name: Delegated permission grants
       items:
-      - name: List oauth2PermissionGrants
+      - name: List OAuth 2.0 permission grants
         href: ../../api/serviceprincipal-list-oauth2permissiongrants.md
     - name: Deleted items
       items:
@@ -120,13 +128,13 @@ items:
         href: ../../api/directory-deleteditems-delete.md
     - name: Directory objects
       items:
-      - name: List ownedObjects
+      - name: List owned objects
         href: ../../api/agentidentityblueprintprincipal-list-ownedobjects.md
-      - name: List createdObjects
+      - name: List created objects
         href: ../../api/agentidentityblueprintprincipal-list-createdobjects.md
     - name: Memberships
       items:
-      - name: List memberOf
+      - name: List member of
         href: ../../api/agentidentityblueprintprincipal-list-memberof.md
     - name: Owners
       items:
@@ -208,6 +216,8 @@ items:
         href: ../../api/agentidentity-delete-sponsors.md
 - name: Agent registry
   items:
+  - name: Agent registry
+    href: ../../resources/agentregistry.md
   - name: Agent instance
     items:
     - name: Agent instance

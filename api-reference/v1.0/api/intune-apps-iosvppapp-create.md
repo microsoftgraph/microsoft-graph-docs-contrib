@@ -23,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -62,7 +62,7 @@ The following table shows the properties that are required when you create the i
 |owner|String|The owner of the app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. This property is read-only. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md). Possible values are: `notPublished`, `processing`, `published`.|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. This property is read-only. Inherited from [mobileApp](../resources/intune-apps-mobileapp.md). The possible values are: `notPublished`, `processing`, `published`.|
 |usedLicenseCount|Int32|The number of VPP licenses in use.|
 |totalLicenseCount|Int32|The total number of VPP licenses.|
 |releaseDateTime|DateTimeOffset|The VPP application release date and time.|
@@ -70,7 +70,7 @@ The following table shows the properties that are required when you create the i
 |licensingType|[vppLicensingType](../resources/intune-apps-vpplicensingtype.md)|The supported License Type.|
 |applicableDeviceType|[iosDeviceType](../resources/intune-apps-iosdevicetype.md)|The applicable iOS Device Type.|
 |vppTokenOrganizationName|String|The organization associated with the Apple Volume Purchase Program Token|
-|vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|The type of volume purchase program which the given Apple Volume Purchase Program Token is associated with. Possible values are: `business`, `education`. Possible values are: `business`, `education`.|
+|vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|The type of volume purchase program which the given Apple Volume Purchase Program Token is associated with. The possible values are: `business`, `education`. The possible values are: `business`, `education`.|
 |vppTokenAppleId|String|The Apple Id associated with the given Apple Volume Purchase Program Token.|
 |vppTokenDisplayName|String|Display name of the VPP token associated with this app.|
 |bundleId|String|The Identity Name.|

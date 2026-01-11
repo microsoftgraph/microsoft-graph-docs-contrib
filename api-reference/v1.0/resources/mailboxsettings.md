@@ -23,11 +23,11 @@ You can [get](../api/user-get-mailboxsettings.md) or [update](../api/user-update
 |archiveFolder|string|Folder ID of an archive folder for the user.|
 |automaticRepliesSetting|[automaticRepliesSetting](automaticrepliessetting.md)|Configuration settings to automatically notify the sender of an incoming email with a message from the signed-in user.|
 |dateFormat|string|The date format for the user's mailbox.|
-|delegateMeetingMessageDeliveryOptions|delegateMeetingMessageDeliveryOptions| If the user has a calendar delegate, this specifies whether the delegate, mailbox owner, or both receive meeting messages and meeting responses. Possible values are: `sendToDelegateAndInformationToPrincipal`, `sendToDelegateAndPrincipal`, `sendToDelegateOnly`.|
+|delegateMeetingMessageDeliveryOptions|delegateMeetingMessageDeliveryOptions| If the user has a calendar delegate, this specifies whether the delegate, mailbox owner, or both receive meeting messages and meeting responses. The possible values are: `sendToDelegateAndInformationToPrincipal`, `sendToDelegateAndPrincipal`, `sendToDelegateOnly`.|
 |language|[localeInfo](localeinfo.md)|The locale information for the user, including the preferred language and country/region.|
 |timeFormat|string|The time format for the user's mailbox.|
 |timeZone|string|The default time zone for the user's mailbox.|
-|userPurpose|[userPurpose](#userpurpose-values)|The purpose of the mailbox. Differentiates a mailbox for a single user from a shared mailbox and equipment mailbox in Exchange Online. Possible values are: `user`, `linked`, `shared`, `room`, `equipment`, `others`, `unknownFutureValue`. Read-only. |
+|userPurpose|[userPurpose](#userpurpose-values)|The purpose of the mailbox. Differentiates a mailbox for a single user from a shared mailbox and equipment mailbox in Exchange Online. The possible values are: `user`, `linked`, `shared`, `room`, `equipment`, `others`, `unknownFutureValue`. Read-only. |
 |workingHours|[workingHours](workinghours.md)|The days of the week and hours in a specific time zone that the user works.|
 
 ### userPurpose values

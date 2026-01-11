@@ -4,7 +4,7 @@ description: "Add a key credential to an agent identity blueprint. This method, 
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-applications"
+ms.subservice: "entra-agent-id"
 doc_type: apiPageType
 ---
 
@@ -77,6 +77,7 @@ If successful, this action returns a `200 OK` response code and a [keyCredential
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "agentidentityblueprintthis.addkey"
@@ -96,6 +97,12 @@ Content-Type: application/json
   "proof": "String"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/agentidentityblueprintthisaddkey-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response

@@ -223,10 +223,54 @@
         },
         {
           "name": "Places",
+          "overview": "../../resources/places-api-overview.md",
           "resources": [
             "place",
+            "building",
+            "floor",
+            "section",
             "room",
+            "desk",
+            "workspace",
+            "checkInClaim",
+            "placeOperation",
             "roomList"
+          ],
+          "complexTypes": [
+            "mailboxDetails",
+            "placeMode",
+            "assignedPlaceMode",
+            "dropInPlaceMode",
+            "reservablePlaceMode",
+            "resourceLink",
+            "unavailablePlaceMode"
+          ],
+          "childNodes": [
+            {
+              "name": "Maps",
+              "resources": [
+                "buildingMap",
+                "fixtureMap",
+                "footprintMap",
+                "levelMap",
+                "sectionMap",
+                "unitMap"
+              ],
+              "complexTypes": [
+                "importBuildingMapSetting"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Work hours and locations",
+          "resources": [
+            "workHoursAndLocationsSetting",
+            "workPlanOccurrence",
+            "workPlanRecurrence"
+          ],
+          "complexTypes": [
+            "timeOffDetails"
           ]
         }
       ]
@@ -380,6 +424,7 @@
             "cloudPcDeviceImage",
             "cloudPcGalleryImage",
             "cloudPcProvisioningPolicy",
+            "cloudPcReport",
             "cloudPcUserSetting"
           ],
           "complexTypes": [
@@ -651,10 +696,38 @@
         "driveItemVersion",
         "bundle",
         "fileStorageContainer",
+        "fileStorageContainerType",
+        "fileStorageContainerTypeAppPermissionGrant",
+        "fileStorageContainerTypeRegistration",
         "permission",
         "recycleBin",
         "recycleBinItem",
         "sharedDriveItem"
+      ],
+      "complexTypes": [
+        "fileStorageContainerTypeRegistrationSettings",
+        "fileStorageContainerTypeSettings"
+      ],
+      "childNodes": [
+        {
+          "name": "SharePoint migration",
+          "overview": "../../resources/sharepointmigration-api-overview.md",
+          "resources": [
+            "sharePointMigrationEvent",
+            "sharePointMigrationFinishManifestFileUploadEvent",
+            "sharePointMigrationJob",
+            "sharePointMigrationJobCancelledEvent",
+            "sharePointMigrationJobDeletedEvent",
+            "sharePointMigrationJobErrorEvent",
+            "sharePointMigrationJobPostponedEvent",
+            "sharePointMigrationJobProgressEvent",
+            "sharePointMigrationJobQueuedEvent",
+            "sharePointMigrationJobStartEvent"
+          ],
+          "complexTypes": [
+            "sharePointMigrationContainerInfo"
+          ]
+        }
       ]
     },
     {
@@ -1003,14 +1076,24 @@
           "resources": [
             "appRoleAssignment",
             "dataPolicyOperation",
-            "oAuth2PermissionGrant",
-            "certificateBasedAuthConfiguration",
-            "webApplicationFirewallProvider",
-            "cloudFlareWebApplicationFirewallProvider",
-            "akamaiWebApplicationFirewallProvider",
-            "webApplicationFirewallVerificationModel"
+            "oAuth2PermissionGrant"
           ],
           "childNodes": [
+            {
+              "name": "Certificate-based authentication (CBA)",
+              "resources": [
+                "certificateBasedAuthConfiguration"
+              ]
+            },
+            {
+              "name": "Web application firewall",
+              "resources": [
+                "webApplicationFirewallProvider",
+                "akamaiWebApplicationFirewallProvider",
+                "cloudFlareWebApplicationFirewallProvider",
+                "webApplicationFirewallVerificationModel"
+              ]
+            },
             {
               "name": "Authentication event listeners",
               "resources": [
@@ -1403,7 +1486,7 @@
               ]
             },
             {
-              "name": "Microsoft Entra audit logs",
+              "name": "Microsoft Entra logs",
               "overview": "../../resources/azure-ad-auditlog-overview.md",
               "resources": [
                 "directoryAudit",
@@ -1525,6 +1608,7 @@
             "microsoft.graph.security.incident"
           ],
           "complexTypes": [
+            "microsoft.graph.security.aiAgentEvidence",
             "microsoft.graph.security.securityGroupEvidence",
             "microsoft.graph.security.teamsMessageEvidence",
             "microsoft.graph.security.userAccount"
@@ -1618,7 +1702,8 @@
             "microsoft.graph.security.ediscoveryHoldPolicy",
             "microsoft.graph.security.ediscoverySearch",
             "microsoft.graph.security.ediscoveryReviewSet",
-            "microsoft.graph.security.ediscoveryReviewTag"
+            "microsoft.graph.security.ediscoveryReviewTag",
+            "microsoft.graph.security.ediscoveryCaseMember"
           ],
           "childNodes": [
             {
@@ -1885,6 +1970,17 @@
       ],
       "childNodes": [
         {
+          "name": "Administration",
+          "resources": [
+            "microsoft.graph.teamsAdministration.teamsUserConfiguration"
+          ],
+          "complexTypes": [
+            "microsoft.graph.teamsAdministration.assignedTelephoneNumber",
+            "microsoft.graph.teamsAdministration.effectivePolicyAssignment",
+            "microsoft.graph.teamsAdministration.policyAssignment"
+          ]
+        },
+        {
           "name": "Apps",
           "resources": [
             "teamsApp",
@@ -1902,9 +1998,18 @@
             "presence"
           ],
           "complexTypes": [
-            "outOfOfficeSettings"
+            "onlineMeetingSensitivityLabelAssignment",
+            "outOfOfficeSettings",
+            "outOfOfficeSettings",
+            "userWorkLocation"
           ],
           "childNodes": [
+            {
+              "name": "Ad hoc call",
+              "resources": [
+                "adhocCall"
+              ]
+            },            
             {
               "name": "Calls",
               "resources": [

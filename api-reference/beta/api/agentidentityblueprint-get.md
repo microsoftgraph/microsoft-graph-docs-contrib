@@ -4,7 +4,7 @@ description: "Read the properties and relationships of agentIdentityBlueprint ob
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-applications"
+ms.subservice: "entra-agent-id"
 doc_type: apiPageType
 ---
 
@@ -62,6 +62,7 @@ If successful, this method returns a `200 OK` response code and an [agentIdentit
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_agentidentityblueprint"
@@ -70,6 +71,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/applications/{id}/microsoft.graph.agentIdentityBlueprint
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-agentidentityblueprint-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response

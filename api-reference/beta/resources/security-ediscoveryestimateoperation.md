@@ -24,7 +24,7 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|[microsoft.graph.security.caseAction](../resources/security-caseoperation.md#caseaction-values)| The type of action the operation represents. Possible values are: `contentExport`, `applyTags`, `convertToPdf`, `index`, `estimateStatistics`, `addToReviewSet`, `holdUpdate`, `unknownFutureValue`, `purgeData`, `exportReport`, `exportResult`, `holdPolicySync`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `purgeData`, `exportReport`, `exportResult`, `holdPolicySync`. Inherited from [caseOperation](../resources/security-caseoperation.md).|
+|action|[microsoft.graph.security.caseAction](../resources/security-caseoperation.md#caseaction-values)| The type of action the operation represents. The possible values are: `contentExport`, `applyTags`, `convertToPdf`, `index`, `estimateStatistics`, `addToReviewSet`, `holdUpdate`, `unknownFutureValue`, `purgeData`, `exportReport`, `exportResult`, `holdPolicySync`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `purgeData`, `exportReport`, `exportResult`, `holdPolicySync`. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |completedDateTime|DateTimeOffset|The date and time the operation was completed. Read-only. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |createdBy|[identitySet](../resources/identityset.md)|The user who created the operation. Read-only. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |createdDateTime|DateTimeOffset|The date and time the operation was started. Read-only. Inherited from [caseOperation](../resources/security-caseoperation.md).|
@@ -36,8 +36,8 @@ None.
 |reportFileMetadata|[microsoft.graph.security.reportFileMetadata](../resources/security-ediscoveryreportfilemetadata.md) collection|Contains the properties for report file metadata, including **downloadUrl**, **fileName**, and **size**.|
 |resultInfo|[resultInfo](../resources/resultinfo.md)|Contains success and failure-specific result information. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |siteCount|Int32|The number of mailboxes that had search hits.|
-|statisticsOptions|[microsoft.graph.security.statisticsOptions](#statisticsoptions-values)|The options to generate statistics. Possible values are: `includeRefiners`, `includeQueryStats`, `includeUnindexedStats`, `advancedIndexing`, `locationsWithoutHits`, `unknownFutureValue`.|
-|status|microsoft.graph.security.caseOperationStatus| The status of the case operation. Possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`, `unknownFutureValue`. Inherited from [caseOperation](../resources/security-caseoperation.md).|
+|statisticsOptions|[microsoft.graph.security.statisticsOptions](#statisticsoptions-values)|The options to generate statistics. The possible values are: `includeRefiners`, `includeQueryStats`, `includeUnindexedStats`, `advancedIndexing`, `locationsWithoutHits`, `unknownFutureValue`.|
+|status|microsoft.graph.security.caseOperationStatus| The status of the case operation. The possible values are: `notStarted`, `submissionFailed`, `running`, `succeeded`, `partiallySucceeded`, `failed`, `unknownFutureValue`. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |unindexedItemCount|Int64|The estimated count of unindexed items for the collection.|
 |unindexedItemsSize|Int64|The estimated size of unindexed items for the collection.|
 

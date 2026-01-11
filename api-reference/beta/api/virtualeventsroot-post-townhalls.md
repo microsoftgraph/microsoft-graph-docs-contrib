@@ -70,6 +70,7 @@ If successful, this method returns a `201 Created` response code and a [virtualE
 ### Request
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_virtualeventtownhall"
@@ -106,6 +107,12 @@ Accept-Language: en-US
     }
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-virtualeventtownhall-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

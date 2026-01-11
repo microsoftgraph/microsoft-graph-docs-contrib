@@ -241,6 +241,14 @@ items:
       href: toolkit/upgrade.md
   - name: Deploy in IaC with templates
     href: /graph/templates?toc=/graph/toc.json
+  - name: Use the MCP Server for Enterprise
+    items:
+    - name: Overview
+      href: mcp-server/overview.md
+    - name: Get started
+      href: mcp-server/get-started.md
+    - name: Explore the repository
+      href: https://github.com/mcp/microsoft/EnterpriseMCP
 - name: Services and features
   expanded: true
   items:
@@ -371,6 +379,8 @@ items:
       href: outlook-immutable-id.md
     - name: Subscribe to change notifications
       href: outlook-change-notifications-overview.md
+    - name: Upsert places
+      href: places-upsert-overview.md
   - name: Compliance
     href: compliance-concept-overview.md
   - name: Cross-device experiences
@@ -864,6 +874,10 @@ items:
     - name: Overview
       href: teams-concept-overview.md
       displayName: teams, team, teamwork, Microsoft Teams
+    - name: Channel
+      items:
+      - name: Managing channel memberships
+        href: manage-channel-memberships.md
     - name: Messaging APIs
       items:
       - name: Working with Microsoft Teams messaging

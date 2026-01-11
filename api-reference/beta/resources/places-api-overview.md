@@ -30,7 +30,7 @@ Place represents different space types within a tenant. A **place** object can b
 |[room](./room.md) |Represents a room within the tenant. All rooms must be associated with Exchange mailboxes. A **room** can be added to a **floor** or to a **section**. The rich properties of the **room** include an email address for the room, accessibility, capacity, audio device, video device, and so on. |
 |[roomList](./roomlist.md) |A collection of rooms in the tenant. Places supports **roomList** to ensure room booking works in **Room Finder** across all clients on all devices, such as classic Outlook across desktop and mobile. <br/><br/>However, we recommend that you rely on the new **place** types and hierarchy if you don't use **roomFinder** in the tenant. For more information about **roomList**, see the [roomList](./roomlist.md) resource type. |
 |[section](./section.md) |Represents a section within a floor, including properties such as **name**, **parentId**, and **label**. A **floor** is always the parent of a **section**. |
-|[workspace](./workspace.md) |Represents a collection of desks. All workspaces must be associated with Exchange mailboxes. A **workspace** can be added to a **floor** or a **section**. The rich properties of a workspace include an email address for the workspace, mode, accessibility, and capacity. |
+|[workspace](./workspace.md) |Represents a collection of desks. All workspaces must be associated with Exchange mailboxes. A **workspace** can be added to a **section**. The rich properties of a workspace include an email address for the workspace, mode, accessibility, and capacity. |
 
 ### Map feature types
 
@@ -71,6 +71,7 @@ The following table lists some of the common uses for the Places API.
 | :--- | :--- | :--- |
 | Create and manage a place  | [place](../resources/place.md) | [place methods](../resources/place.md#methods) |
 | Interact with place spaces such as building, floor, section, room, room list, workspace, or desk | [place](../resources/place.md) |[place methods](../resources/place.md#methods) |
+| Upsert places  | [place](../resources/place.md) | [Upsert places](../api/place-patch-places.md) |
 | Ingest the map file for a building | [building](../resources/building.md) | [Ingest map file](../api/building-ingestmapfile.md) |
 | List levels in a building  | [levelMap](../resources/levelmap.md) | [List levels](../api/buildingmap-list-levels.md) |
 | List footprints in a building  | [footprintMap](../resources/footprintmap.md) | [List footprints](../api/buildingmap-list-footprints.md) |

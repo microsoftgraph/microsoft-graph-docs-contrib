@@ -4,7 +4,7 @@ description: "Retrieve a list of agentIdentityBlueprintPrincipal objects."
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-applications"
+ms.subservice: "entra-agent-id"
 doc_type: apiPageType
 ---
 
@@ -56,6 +56,7 @@ If successful, this method returns a `200 OK` response code and collection of [a
 #### Request
 
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_agent_identity_blueprint_principal"
@@ -64,6 +65,36 @@ If successful, this method returns a `200 OK` response code and collection of [a
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/servicePrincipals/microsoft.graph.agentIdentityBlueprintPrincipal
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-agent-identity-blueprint-principal-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-agent-identity-blueprint-principal-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-agent-identity-blueprint-principal-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-agent-identity-blueprint-principal-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-agent-identity-blueprint-principal-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-agent-identity-blueprint-principal-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-agent-identity-blueprint-principal-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -88,10 +119,10 @@ Content-type: application/json
       "id": "f7c938db-8c3d-4d04-937b-456c3242ed95",
       "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
       "createdDateTime": "2019-09-17T19:10:35.2742618Z",
-      "createdByAppId": "1cc9739b-9dcd-4d1e-89ed-783005d571b8",
+      "createdByAppId": "00000003-0000-0000-c000-000000000000",
       "accountEnabled": true,
       "appDisplayName": "My Sample App",
-      "appOwnerOrganizationId": "65415bb1-9267-4313-bbf5-ae259732ee12",
+      "appOwnerOrganizationId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
       "appRoleAssignmentRequired": false,
       "appRoles": [],
       "disabledByMicrosoftStatus": null,
