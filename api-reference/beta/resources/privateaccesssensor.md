@@ -63,6 +63,3 @@ The following JSON representation shows the resource type.
   "isAuditMode": "Boolean"
 }
 ```
-
-
-
