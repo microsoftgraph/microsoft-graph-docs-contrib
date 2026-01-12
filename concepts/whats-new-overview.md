@@ -22,7 +22,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Files
 
-Use the following new methods added to further support structured file storage in SharePoint Embedded applications:
+Use the following new container columns methods added to further support structured file storage in SharePoint Embedded applications:
   - [fileStorageContainer](/graph/api/resources/filestoragecontainer)
 
 ## December 2025: New and generally available
