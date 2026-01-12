@@ -39,14 +39,15 @@ Base type of [qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepoli
 |:---|:---|:---|
 |approvalRules|[microsoft.graph.windowsUpdates.contentApprovalRule](../resources/windowsupdates-contentapprovalrule.md) collection| The approved rule of the policy that determines which published content matches the rule on an ongoing basis.|
 |createdDateTime|DateTimeOffset| The date and time the policy is created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
-|description|String| The policy description. |
-|displayName|String| The policy display name. |
+|description|String| The policy description. The maximum length is 1,500 characters. |
+|displayName|String| The policy display name. The maximum length is 200 characters. |
 |id|String| The policy unique identifier.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the policy was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+|applicableContent|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) collection|TODO|
 |approvals|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) collection| Represents a set of quality updates policy approval types. |
 |rings|[microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-ring.md) collection| Represents a set of deployment rings that contains update deployment settings. |
 
