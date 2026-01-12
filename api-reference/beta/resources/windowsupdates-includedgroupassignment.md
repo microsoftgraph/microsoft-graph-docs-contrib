@@ -1,6 +1,6 @@
 ---
 title: "includedGroupAssignment resource type"
-description: "Represents an entity that governs the update deployment audience with included groups. Groups are logical containers of devices represented by Microsoft Entra groups."
+description: "Represents an entity that governs the update deployment audience with included groups."
 author: "andredm7"
 ms.date: 10/08/2025
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ Namespace: microsoft.graph.windowsUpdates
 
 Represents an entity that governs the update deployment audience with included groups. Groups are logical containers of devices represented by Microsoft Entra groups.
 
-Inherits from [microsoft.graph.windowsUpdates.groupAssignment](../resources/windowsupdates-groupassignment.md).
+Inherits from [groupAssignment](../resources/windowsupdates-groupassignment.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assignments|[microsoft.graph.windowsUpdates.assignedGroup](../resources/windowsupdates-assignedgroup.md) collection| Represents an entity that governs the update deployment audience which is a Microsoft Entra group.|
+|assignments|[microsoft.graph.windowsUpdates.assignedGroup](../resources/windowsupdates-assignedgroup.md) collection| A collection of entities that govern the update deployment audience, defined as a Microsoft Entra group. |
 
 ## Relationships
 None.
@@ -36,11 +36,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.includedGroupAssignment",
-  "assignments": [
-    {
-      "@odata.type": "microsoft.graph.windowsUpdates.assignedGroup"
-    }
-  ]
+  "assignments": [{"@odata.type": "microsoft.graph.windowsUpdates.assignedGroup"}]
 }
 ```
 
