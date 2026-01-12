@@ -108,6 +108,11 @@ Customize the block page message displayed to users when Global Secure Access bl
   - `POST /users/{usersId}/presence/setManualLocation`
   - `POST /communications/presences/{presenceId}/setManualLocation`
 
+### Reports | Identity and access reports
+
+- Removed the **conditionalAccessAudience** resource type. The return type of the **conditionalAccessAudiences** property of the [signIn resource type](/graph/api/resources/signin?view=graph-rest-beta&preserve-view=true) is a collection of String objects and not the **conditionalAccessAudience** complex type.
+- Added `qrCode` as a new supported value for the **authMethod** property on [credentialUsageSummary](/graph/api/resources/credentialusagesummary?view=graph-rest-beta&preserve-view=true), [userCredentialUsageDetails](/graph/api/resources/usercredentialusagedetails?view=graph-rest-beta&preserve-view=true), [userEventsSummary](/graph/api/resources/usereventssummary?view=graph-rest-beta&preserve-view=true), and [userRegistrationActivitySummary](/graph/api/resources/userregistrationactivitysummary?view=graph-rest-beta&preserve-view=true).
+
 ### Teamwork and communications | Calls and online meetings
 
 - When `$expand=members` is included, the [List chats](/graph/api/chat-list?view=graph-rest-beta&preserve-view=true) API returns a maximum of 25 items, even if a larger `$top` value is specified.
