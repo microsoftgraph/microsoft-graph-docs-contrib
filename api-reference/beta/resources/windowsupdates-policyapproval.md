@@ -1,6 +1,6 @@
 ---
 title: "policyApproval resource type"
-description: "Represents a set of quality updates policy approval types."
+description: "Represents a set of policy approval types for quality updates."
 author: "andredm7"
 ms.date: 01/12/2026
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a set of quality updates policy approval types.
+Represents a set of policy approval types for quality updates.
 
 ## Methods
 |Method|Return type|Description|
@@ -35,7 +35,7 @@ Represents a set of quality updates policy approval types.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|catalogEntry|[microsoft.graph.windowsUpdates.catalogEntry](../resources/windowsupdates-catalogentry.md)| Lists the content that you can approve for deployment. Read-only.|
+|catalogEntry|[microsoft.graph.windowsUpdates.catalogEntry](../resources/windowsupdates-catalogentry.md)| The content that you can approve for deployment. Read-only.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
