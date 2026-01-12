@@ -78,6 +78,16 @@ Added support for [mailboxConfigurationEvidence](/graph/api/resources/security-m
 
 Manage flexible work hours and locations using the following resources: [workHoursAndLocationsSetting](/graph/api/resources/workhoursandlocationssetting?view=graph-rest-beta&preserve-view=true), [workPlanOccurrence](/graph/api/resources/workplanoccurrence?view=graph-rest-beta&preserve-view=true), and [workPlanRecurrence](/graph/api/resources/workplanrecurrence?view=graph-rest-beta&preserve-view=true). These resources allow you to define recurring and specific work patterns, locations, and time off for modern hybrid scenarios.
 
+### Teamwork and communications | Apps
+
+Manage Teams apps at the channel level within a team using the following APIs:
+- [List apps](/graph/api/channel-list-enabledapps?view=graph-rest-beta&preserve-view=true) in a channel.
+- [Get an app](/graph/api/teamsapp-get?view=graph-rest-beta&preserve-view=true) in a channel.
+- [Enable a new Teams app](/graph/api/channel-post-enabledapps?view=graph-rest-beta&preserve-view=true) in a channel.
+- [Disable an app](/graph/api/channel-delete-enabledapps?view=graph-rest-beta&preserve-view=true) in a channel.
+
+## September 2025: New and generally available
+
 ### Applications
 
 Use the **signInAudienceRestrictions** property on the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) resource to restrict multitenant applications to specific Microsoft Entra tenants. This feature enables organizations to limit application usage to a specific list of allowed tenant IDs, providing enhanced security and compliance controls for multitenant scenarios.
