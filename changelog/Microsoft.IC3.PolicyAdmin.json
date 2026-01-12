@@ -77,39 +77,39 @@
     {
       "ChangeList": [
         {
-          "Id": "3b306dbf-c232-4ffe-a2f8-5714e47472eb",
+          "Id": "569d7e25-104c-4799-aaa1-27308d915af7",
           "ApiChange": "Resource",
           "ChangedApiName": "policyIdentifierDetail",
           "ChangeType": "Addition",
-          "Description": "Added the [policyIdentifierDetail](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-policyIdentifierDetail?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [policyIdentifierDetail](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-policyIdentifierDetail?view=graph-rest-1.0) resource.",
           "Target": "policyIdentifierDetail"
         },
         {
-          "Id": "3b306dbf-c232-4ffe-a2f8-5714e47472eb",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "policy",
+          "Id": "569d7e25-104c-4799-aaa1-27308d915af7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsAdminRoot",
           "ChangeType": "Addition",
-          "Description": "Added the **policy** relationship to the [teamsAdminRoot](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsAdminRoot?view=graph-rest-1.0) resource.",
+          "Description": "Added the [teamsAdminRoot](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsAdminRoot?view=graph-rest-1.0) resource.",
           "Target": "teamsAdminRoot"
         },
         {
-          "Id": "3b306dbf-c232-4ffe-a2f8-5714e47472eb",
+          "Id": "569d7e25-104c-4799-aaa1-27308d915af7",
           "ApiChange": "Resource",
           "ChangedApiName": "teamsPolicyAssignment",
           "ChangeType": "Addition",
-          "Description": "Added the [teamsPolicyAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsPolicyAssignment?view=graph-rest-1.0) resource and an associated method.",
+          "Description": "Added the [teamsPolicyAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsPolicyAssignment?view=graph-rest-1.0) resource.",
           "Target": "teamsPolicyAssignment"
         },
         {
-          "Id": "3b306dbf-c232-4ffe-a2f8-5714e47472eb",
+          "Id": "569d7e25-104c-4799-aaa1-27308d915af7",
           "ApiChange": "Resource",
           "ChangedApiName": "teamsPolicyUserAssignment",
           "ChangeType": "Addition",
-          "Description": "Added the [teamsPolicyUserAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsPolicyUserAssignment?view=graph-rest-1.0) resource and associated methods.",
+          "Description": "Added the [teamsPolicyUserAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsPolicyUserAssignment?view=graph-rest-1.0) resource.",
           "Target": "teamsPolicyUserAssignment"
         },
         {
-          "Id": "3b306dbf-c232-4ffe-a2f8-5714e47472eb",
+          "Id": "569d7e25-104c-4799-aaa1-27308d915af7",
           "ApiChange": "Method",
           "ChangedApiName": "assign",
           "ChangeType": "Addition",
@@ -117,7 +117,7 @@
           "Target": "teamsPolicyUserAssignment"
         },
         {
-          "Id": "3b306dbf-c232-4ffe-a2f8-5714e47472eb",
+          "Id": "569d7e25-104c-4799-aaa1-27308d915af7",
           "ApiChange": "Method",
           "ChangedApiName": "unassign",
           "ChangeType": "Addition",
@@ -125,7 +125,7 @@
           "Target": "teamsPolicyUserAssignment"
         },
         {
-          "Id": "3b306dbf-c232-4ffe-a2f8-5714e47472eb",
+          "Id": "569d7e25-104c-4799-aaa1-27308d915af7",
           "ApiChange": "Method",
           "ChangedApiName": "getPolicyId",
           "ChangeType": "Addition",
@@ -133,12 +133,12 @@
           "Target": "teamsPolicyAssignment"
         }
       ],
-      "Id": "3b306dbf-c232-4ffe-a2f8-5714e47472eb",
+      "Id": "569d7e25-104c-4799-aaa1-27308d915af7",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2025-12-19T04:38:38.1916429Z",
+      "CreatedDateTime": "2026-01-12T20:18:09.8587658Z",
       "WorkloadArea": "Teamwork and communications",
-      "SubArea": "Administration"
+      "SubArea": "Policy Administration"
     }
   ]
 }
