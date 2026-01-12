@@ -1,6 +1,6 @@
 ---
 title: "qualityUpdatePolicy resource type"
-description: "Represents an entity that governs the Quality Update deployment settings content to an associated deployment audience which can be one or more Microsoft Entra groups."
+description: "Represents an entity that governs the quality update deployment settings content for an associated deployment audience."
 author: "andredm7"
 ms.date: 01/12/2026
 ms.localizationpriority: medium
@@ -14,9 +14,9 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an entity that governs the Quality Update deployment settings content to an associated deployment audience which can be one or more Microsoft Entra groups.
+Represents an entity that governs the quality update deployment settings content for an associated deployment audience. This audience can consist of one or more Microsoft Entra groups.
 
-Inherits from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md).
+Inherits from [policy](../resources/windowsupdates-policy.md).
 
 ## Methods
 |Method|Return type|Description|
@@ -35,19 +35,19 @@ Inherits from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdate
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|approvalRules|[microsoft.graph.windowsUpdates.contentApprovalRule](../resources/windowsupdates-contentapprovalrule.md) collection| The policy's approved rule to determine which published content matches the rule on an ongoing basis. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md).|
-|createdDateTime|DateTimeOffset|  The date and time the Quality Update policy is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, `2014 is 2014-01-01T00:00:00Z`. Read-only. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md).|
-|description|String| The Quality Update policy description. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md).|
-|displayName|String| The Quality Update policy display name. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md).|
-|id|String| The Quality Update policy unique identifier. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md). Inherits from [entity](../resources/entity.md)|
-|lastModifiedDateTime|DateTimeOffset| The date and time the Quality Update policy was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, `2014 is 2014-01-01T00:00:00Z`. Read-only. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md).|
+|approvalRules|[microsoft.graph.windowsUpdates.contentApprovalRule](../resources/windowsupdates-contentapprovalrule.md) collection| The approved rule of the policy that determines which published content matches the rule on an ongoing basis. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md).|
+|createdDateTime|DateTimeOffset| The date and time when the quality update policy is created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md).|
+|description|String| The quality update policy description. The maximum length is 1,500 characters. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md). |
+|displayName|String| The quality update policy display name. The maximum length is 200 characters. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md). |
+|id|String| The policy unique identifier. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md).|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the quality update policy was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|applicableContent|[microsoft.graph.windowsUpdates.applicableContent](../resources/windowsupdates-applicablecontent.md) collection| Represents content applicable for offering to the related collection of devices. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md)|
-|approvals|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) collection|Represents a set of Quality Updates policy approval types. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md)|
-|rings|[microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-ring.md) collection| Represents a set of deployment rings containing update deployment settings. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md)|
+|applicableContent|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) collection|Represents content applicable for offering to the related collection of devices. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md).|
+|approvals|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) collection| Represents a set of quality updates policy approval types. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md). |
+|rings|[microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-ring.md) collection| Represents a set of deployment rings that contains update deployment settings. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md). |
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -62,16 +62,12 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdatePolicy",
-  "displayName": "String",
-  "description": "String",
-  "approvalRules": [
-    {
-      "@odata.type": "microsoft.graph.windowsUpdates.qualityUpdateApprovalRule"
-    }
-  ],
-  "isAutoEnrollDevices": "Boolean",
-  "id": "String (identifier)",
+  "approvalRules": [{"@odata.type": "microsoft.graph.windowsUpdates.qualityUpdateApprovalRule"}],
   "createdDateTime": "String (timestamp)",
+  "description": "String",
+  "displayName": "String",
+  "id": "String (identifier)",
+  "isAutoEnrollDevices": "Boolean",
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
