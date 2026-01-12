@@ -1,5 +1,5 @@
 ---
-title: "windows update policy resource type"
+title: "policy resource type"
 description: "An abstract type that governs the update deployment settings content for an associated deployment audience, which can consist of one or more Microsoft Entra groups."
 author: "andredm7"
 ms.date: 01/12/2026
@@ -8,7 +8,7 @@ ms.subservice: "windows-autopatch"
 doc_type: resourcePageType
 ---
 
-# Windows Update Policy Resource Type
+# policy resource type
 
 Namespace: microsoft.graph.windowsUpdates
 
