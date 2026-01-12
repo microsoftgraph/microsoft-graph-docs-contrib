@@ -26,7 +26,7 @@ Namespace: microsoft.graph
 |secureByDefault|Boolean|Device should be noncompliant when there is no compliance policy targeted when this is true|
 |enhancedJailBreak|Boolean|Is feature enabled or not for enhanced jailbreak detection.|
 |deviceInactivityBeforeRetirementInDay|Int32|When the device does not check in for specified number of days, the company data might be removed and the device will not be under management. Valid values 30 to 270|
-|derivedCredentialProvider|[derivedCredentialProviderType](../resources/intune-deviceconfig-derivedcredentialprovidertype.md)|The Derived Credential Provider to use for this account. The possible values are: `notConfigured`, `entrustDataCard`, `purebred`, `xTec`, `intercede`.|
+|derivedCredentialProvider|[derivedCredentialProviderType](../resources/intune-deviceconfig-derivedcredentialprovidertype.md)|The Derived Credential Provider to use for this account. Possible values are: `notConfigured`, `entrustDataCard`, `purebred`, `xTec`, `intercede`.|
 |derivedCredentialUrl|String|The Derived Credential Provider self-service URI.|
 |androidDeviceAdministratorEnrollmentEnabled|Boolean|The property to determine if Android device administrator enrollment is enabled for this account.|
 |ignoreDevicesForUnsupportedSettingsEnabled|Boolean|The property to determine whether to ignore unsupported compliance settings on certian models of devices.|
