@@ -30,7 +30,7 @@ The organization resource represents an instance of global settings and resource
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The GUID for the object.|
-|mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune-onboarding-mdmauthority.md)|Mobile device management authority. The possible values are: `unknown`, `intune`, `sccm`, `office365`.|
+|mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune-onboarding-mdmauthority.md)|Mobile device management authority. Possible values are: `unknown`, `intune`, `sccm`, `office365`.|
 |certificateConnectorSetting|[certificateConnectorSetting](../resources/intune-onboarding-certificateconnectorsetting.md)|Certificate connector setting.|
 
 ## Relationships

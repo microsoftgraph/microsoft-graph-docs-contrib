@@ -56,7 +56,7 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |displayName|String|The string id of the category's display name Inherited from [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|
 |isRoot|Boolean|Defines if the category is a root category Inherited from [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|
-|ingestionSource|[ingestionSource](../resources/intune-grouppolicy-ingestionsource.md)|Defines this category's ingestion source (0 - unknown, 1 - custom, 2 - global) Inherited from [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md). The possible values are: `unknown`, `custom`, `builtIn`, `unknownFutureValue`.|
+|ingestionSource|[ingestionSource](../resources/intune-grouppolicy-ingestionsource.md)|Defines this category's ingestion source (0 - unknown, 1 - custom, 2 - global) Inherited from [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md). Possible values are: `unknown`, `custom`, `builtIn`, `unknownFutureValue`.|
 |id|String|Key of the entity. Inherited from [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|
 |lastModifiedDateTime|DateTimeOffset|The date and time the entity was last modified. Inherited from [groupPolicyCategory](../resources/intune-grouppolicy-grouppolicycategory.md)|
 

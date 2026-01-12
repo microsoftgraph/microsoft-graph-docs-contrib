@@ -23,7 +23,7 @@ A `managedAppLogUpload` represents the log upload result for a given Mobile Appl
 |:---|:---|:---|
 |managedAppComponent|String|The Mobile Application Management (MAM) Logs Uploading Component. Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs. Read-only.|
 |managedAppComponentDescription|String|The Mobile Application Management (MAM) Logs Uploading Component. Such components can be the application itself, the MAM SDK, and other on-device components that are capable of uploading diagnostic logs. Read-only.|
-|status|[managedAppLogUploadState](../resources/intune-mam-managedapploguploadstate.md)|The status of the log upload. If a result is present, the log collection is complete and the upload status for the component is final. completed is the default value. Read-only. The possible values are: `pending`, `inProgress`, `completed`, `declinedByUser`, `timedOut`, `failed`, `unknownFutureValue`.|
+|status|[managedAppLogUploadState](../resources/intune-mam-managedapploguploadstate.md)|The status of the log upload. If a result is present, the log collection is complete and the upload status for the component is final. completed is the default value. Read-only. Possible values are: `pending`, `inProgress`, `completed`, `declinedByUser`, `timedOut`, `failed`, `unknownFutureValue`.|
 |referenceId|String|A provider-specific reference id for the uploaded logs. Read-only.|
 
 ## Relationships

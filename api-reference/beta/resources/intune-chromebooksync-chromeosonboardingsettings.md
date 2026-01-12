@@ -34,7 +34,7 @@ Entity that represents a Chromebook tenant settings
 |:---|:---|:---|
 |id|String|The ChromebookTenant's Id|
 |ownerUserPrincipalName|String|The ChromebookTenant's OwnerUserPrincipalName|
-|onboardingStatus|[onboardingStatus](../resources/intune-chromebooksync-onboardingstatus.md)|The ChromebookTenant's OnboardingStatus. The possible values are: `unknown`, `inprogress`, `onboarded`, `failed`, `offboarding`, `unknownFutureValue`.|
+|onboardingStatus|[onboardingStatus](../resources/intune-chromebooksync-onboardingstatus.md)|The ChromebookTenant's OnboardingStatus. Possible values are: `unknown`, `inprogress`, `onboarded`, `failed`, `offboarding`, `unknownFutureValue`.|
 |lastModifiedDateTime|DateTimeOffset|The ChromebookTenant's LastModifiedDateTime|
 |lastDirectorySyncDateTime|DateTimeOffset|The ChromebookTenant's LastDirectorySyncDateTime|
 

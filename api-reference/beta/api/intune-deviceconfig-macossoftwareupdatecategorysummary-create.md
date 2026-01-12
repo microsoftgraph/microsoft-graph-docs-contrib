@@ -55,7 +55,7 @@ The following table shows the properties that are required when you create the m
 |displayName|String|The name of the report|
 |deviceId|String|The device ID.|
 |userId|String|The user ID.|
-|updateCategory|[macOSSoftwareUpdateCategory](../resources/intune-deviceconfig-macossoftwareupdatecategory.md)|Software update type. The possible values are: `critical`, `configurationDataFile`, `firmware`, `other`.|
+|updateCategory|[macOSSoftwareUpdateCategory](../resources/intune-deviceconfig-macossoftwareupdatecategory.md)|Software update type. Possible values are: `critical`, `configurationDataFile`, `firmware`, `other`.|
 |successfulUpdateCount|Int32|Number of successful updates on the device|
 |failedUpdateCount|Int32|Number of failed updates on the device|
 |totalUpdateCount|Int32|Number of total updates on the device|

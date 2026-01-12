@@ -1,6 +1,6 @@
 ---
 title: "windowsQualityUpdateCadence enum type"
-description: "The publishing cadence of the quality update. The possible values are: monthly, outOfBand. This property cannot be modified and is automatically populated when the catalog is created."
+description: "The publishing cadence of the quality update. Possible values are: monthly, outOfBand. This property cannot be modified and is automatically populated when the catalog is created."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-The publishing cadence of the quality update. The possible values are: monthly, outOfBand. This property cannot be modified and is automatically populated when the catalog is created.
+The publishing cadence of the quality update. Possible values are: monthly, outOfBand. This property cannot be modified and is automatically populated when the catalog is created.
 
 ## Members
 |Member|Value|Description|

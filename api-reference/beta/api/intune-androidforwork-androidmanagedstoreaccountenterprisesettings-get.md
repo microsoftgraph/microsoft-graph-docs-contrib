@@ -66,13 +66,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1192
+Content-Length: 1255
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.androidManagedStoreAccountEnterpriseSettings",
     "id": "b71357c9-57c9-b713-c957-13b7c95713b7",
     "bindStatus": "bound",
+    "managedGooglePlayEnterpriseType": "managedGoogleDomain",
     "lastAppSyncDateTime": "2016-12-31T23:57:22.8606813-08:00",
     "lastAppSyncStatus": "credentialsNotValid",
     "ownerUserPrincipalName": "Owner User Principal Name value",

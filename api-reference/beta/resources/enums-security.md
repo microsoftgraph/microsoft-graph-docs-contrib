@@ -5,7 +5,7 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "security"
 author: "BenAlfasi"
-ms.date: 11/11/2024
+ms.date: 01/08/2026
 ---
 
 # Security enum values
@@ -1086,6 +1086,15 @@ Namespace: microsoft.graph.security
 |markUserAsCompromised|
 |unknownFutureValue|
 
+### alertStatus values
+
+|Member|
+|:---|
+|unknown|
+|new|
+|inProgress|
+|resolved|
+|unknownFutureValue|
 
 ### identityProvider values
 
@@ -1115,6 +1124,24 @@ Namespace: microsoft.graph.security
 |onboarding|
 |unknown|
 |unknownFutureValue|
+
+### serviceSource values
+
+|Member|
+|:---|
+|unknown|
+|microsoftDefenderForEndpoint|
+|microsoftDefenderForIdentity|
+|microsoftDefenderForCloudApps|
+|microsoftDefenderForOffice365|
+|microsoft365Defender|
+|azureAdIdentityProtection|
+|microsoftAppGovernance|
+|dataLossPrevention|
+|unknownFutureValue|
+|microsoftDefenderForCloud|
+|microsoftSentinel|
+|microsoftThreatIntelligence|
 
 <!--
 {

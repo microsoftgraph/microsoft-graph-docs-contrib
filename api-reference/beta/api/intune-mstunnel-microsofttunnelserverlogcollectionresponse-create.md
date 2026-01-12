@@ -52,7 +52,7 @@ The following table shows the properties that are required when you create the m
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier for server log collection response. Read-only.|
-|status|[microsoftTunnelLogCollectionStatus](../resources/intune-mstunnel-microsofttunnellogcollectionstatus.md)|The status of log collection. The possible values are: pending, completed, failed. The possible values are: `pending`, `completed`, `failed`, `unknownFutureValue`.|
+|status|[microsoftTunnelLogCollectionStatus](../resources/intune-mstunnel-microsofttunnellogcollectionstatus.md)|The status of log collection. Possible values are: pending, completed, failed. Possible values are: `pending`, `completed`, `failed`, `unknownFutureValue`.|
 |startDateTime|DateTimeOffset|The start time of the logs collected|
 |endDateTime|DateTimeOffset|The end time of the logs collected|
 |sizeInBytes|Int64|The size of the logs in bytes|

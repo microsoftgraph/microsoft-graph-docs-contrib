@@ -24,12 +24,12 @@ Inherits from [win32LobAppRule](../resources/intune-apps-win32lobapprule.md)
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|The rule type indicating the purpose of the rule. Inherited from [win32LobAppRule](../resources/intune-apps-win32lobapprule.md). The possible values are: `detection`, `requirement`.|
+|ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|The rule type indicating the purpose of the rule. Inherited from [win32LobAppRule](../resources/intune-apps-win32lobapprule.md). Possible values are: `detection`, `requirement`.|
 |check32BitOn64System|Boolean|A value indicating whether to search the 32-bit registry on 64-bit systems.|
 |keyPath|String|The full path of the registry entry containing the value to detect.|
 |valueName|String|The name of the registry value to detect.|
-|operationType|[win32LobAppRegistryRuleOperationType](../resources/intune-apps-win32lobappregistryruleoperationtype.md)|The registry operation type. The possible values are: `notConfigured`, `exists`, `doesNotExist`, `string`, `integer`, `version`, `appVersion`, `unknownFutureValue`.|
-|operator|[win32LobAppRuleOperator](../resources/intune-apps-win32lobappruleoperator.md)|The operator for registry detection. The possible values are: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
+|operationType|[win32LobAppRegistryRuleOperationType](../resources/intune-apps-win32lobappregistryruleoperationtype.md)|The registry operation type. Possible values are: `notConfigured`, `exists`, `doesNotExist`, `string`, `integer`, `version`, `appVersion`, `unknownFutureValue`.|
+|operator|[win32LobAppRuleOperator](../resources/intune-apps-win32lobappruleoperator.md)|The operator for registry detection. Possible values are: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
 |comparisonValue|String|The registry comparison value.|
 
 ## Relationships
