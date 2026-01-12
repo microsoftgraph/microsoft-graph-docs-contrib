@@ -1,6 +1,6 @@
 ---
 title: "Update column"
-description: "Update a columnDefinition in a fileStorageContainer."
+description: "Update an existing column represented as a columnDefinition in a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ```http
-PATCH /storage/fileStorage/containers/{containerId}/columns/{column-id}
+PATCH /storage/fileStorage/containers/{containerId}/columns/{columnId}
 ```
 
 ## Request headers
@@ -44,7 +44,7 @@ PATCH /storage/fileStorage/containers/{containerId}/columns/{column-id}
 
 ## Request body
 
-In the request body, supply a JSON representation of the [columnDefinition](../resources/columndefinition.md) object with the properties to update. The `id` property can't be changed. Existing properties not included in the request body maintain their previous values. To optimize performance, don't include existing values that didn't change.
+In the request body, supply a JSON representation of the [columnDefinition](../resources/columndefinition.md) object with the properties to update. The **id** property can't be changed. Existing properties not included in the request body maintain their previous values. To optimize performance, don't include existing values that didn't change.
 
 ## Response
 
@@ -56,7 +56,6 @@ If successful, this method returns a `200 OK` response code and a [columnDefinit
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_columndefinition_for_fileStorageContainer"
@@ -72,38 +71,11 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-columndefinition-for-filestoragecontainer-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-columndefinition-for-filestoragecontainer-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-columndefinition-for-filestoragecontainer-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-columndefinition-for-filestoragecontainer-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-columndefinition-for-filestoragecontainer-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/update-columndefinition-for-filestoragecontainer-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
 
 The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
-
 <!-- {
   "blockType": "response",
   "truncated": true,
