@@ -84,19 +84,24 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/admin/windows/updates/$metadata#policies",
   "value": [
     {
       "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdatePolicy",
-      "displayName": "Patch Tuesday Test",
-      "description": "Quality update policy to test upcoming Patch Tuesday updates",
+      "displayName": "Display Name value",
+      "description": "Description value",
+      "isAutoEnrollDevices": false,
+      "id": "7650b117-e3fc-424a-ae94-988104652bdd",
+      "createdDateTime": "2025-01-17T12:20:32.3403729-08:00",
+      "lastModifiedDateTime": "2025-01-17T12:21:57-08:00",
       "approvalRules": [
         {
-          "@odata.type": "microsoft.graph.windowsUpdates.qualityUpdateApprovalRule"
+          "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateApprovalRule",
+          "deferralInDays": 0,
+          "classification": "nonSecurity",
+          "cadence": "outOfBand"
         }
-      ],
-      "id": "f316bfd9-c84e-a334-cebe-071d3c64b2c1",
-      "createdDateTime": "2020-06-09T10:00:00Z",
-      "lastModifiedDateTime": "2020-06-09T10:00:00Z"
+      ]
     }
   ]
 }
