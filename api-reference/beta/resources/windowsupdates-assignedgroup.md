@@ -1,6 +1,6 @@
 ---
 title: "assignedGroup resource type"
-description: "Represents an entity that governs the update deployment audience which is a Microsoft Entra group."
+description: "Represents an entity that governs the update deployment audience defined as a Microsoft Entra group."
 author: "andredm7"
 ms.date: 10/08/2025
 ms.localizationpriority: medium
@@ -14,17 +14,17 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an entity that governs the update deployment audience which is a Microsoft Entra group.
+Represents an entity that governs the update deployment audience defined as a Microsoft Entra group.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|groupId|String| The unique identifier for the group. Returned by default. Inherited from directoryObject. Key. Not nullable. Read-only. Supports $filter (eq, ne, not, in).|
+|groupId|String| The unique identifier for the group. Returned by default. Key. Not nullable. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `in`).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|group|[group](../resources/group.md)| Represents a Microsoft Entra group|
+|group|[group](../resources/group.md)| Represents a Microsoft Entra group.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
