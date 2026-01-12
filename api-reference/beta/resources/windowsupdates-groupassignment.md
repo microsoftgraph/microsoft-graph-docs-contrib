@@ -1,6 +1,6 @@
 ---
 title: "groupAssignment resource type"
-description: "Represents an entity that governs the aggregate of all the update deployment audiences which can be one or more Microsoft Entra group assigments."
+description: "An abstract type that represents an entity that governs the aggregate of update deployment audiences."
 author: "andredm7"
 ms.date: 10/02/2025
 ms.localizationpriority: medium
@@ -14,9 +14,9 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an entity that governs the aggregate of all the update deployment audiences which can be one or more Microsoft Entra group assigments.
+An abstract type that represents an entity that governs the aggregate of update deployment audiences. Each audience represents one or more Microsoft Entra group assignments.
 
-This is an abstract type.
+Base type of [excludedGroupAssignment](../resources/windowsupdates-excludedgroupassignment.md) and [includedGroupAssignment](../resources/windowsupdates-includedgroupassignment.md).
 
 ## Properties
 None.
