@@ -3333,7 +3333,7 @@
           "Target": "channel"
         },
         {
-          "Id": "14ec2f31-54af-4ef3-9b8d-d1bc2aac0dce",
+          "Id": "f48a71c8-6c27-4b6a-9191-21b3c33674ad",
           "ApiChange": "Method",
           "ChangedApiName": "teamsApp",
           "ChangeType": "Addition",
@@ -3341,7 +3341,7 @@
           "Target": "teamsApp"
         },
         {
-          "Id": "14ec2f31-54af-4ef3-9b8d-d1bc2aac0dce",
+          "Id": "f48a71c8-6c27-4b6a-9191-21b3c33674ad",
           "ApiChange": "Method",
           "ChangedApiName": "teamsApp",
           "ChangeType": "Addition",
@@ -3349,7 +3349,7 @@
           "Target": "teamsApp"
         },
         {
-          "Id": "14ec2f31-54af-4ef3-9b8d-d1bc2aac0dce",
+          "Id": "f48a71c8-6c27-4b6a-9191-21b3c33674ad",
           "ApiChange": "Method",
           "ChangedApiName": "teamsApp",
           "ChangeType": "Addition",
@@ -3357,7 +3357,7 @@
           "Target": "teamsApp"
         },
         {
-          "Id": "14ec2f31-54af-4ef3-9b8d-d1bc2aac0dce",
+          "Id": "f48a71c8-6c27-4b6a-9191-21b3c33674ad",
           "ApiChange": "Method",
           "ChangedApiName": "teamsApp",
           "ChangeType": "Addition",
