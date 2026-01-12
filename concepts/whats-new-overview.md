@@ -3,7 +3,7 @@ title: "What's new in Microsoft Graph"
 description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, and other resources."
 author: "lauragra"
 ms.localizationpriority: high
-ms.date: 12/11/2025
+ms.date: 01/12/2026
 ms.topic: whats-new
 ---
 
@@ -20,6 +20,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## January 2026: New and generally available
 
+### Reports | Identity and access reports
+
+- Added `qrCode` as a new supported value for the **usageAuthMethod** enumeration which is the type for the **authMethod** property on [credentialUsageSummary](/graph/api/resources/credentialusagesummary?view=graph-rest-beta&preserve-view=true), [userCredentialUsageDetails](/graph/api/resources/usercredentialusagedetails?view=graph-rest-beta&preserve-view=true), [userEventsSummary](/graph/api/resources/usereventssummary?view=graph-rest-beta&preserve-view=true), and [userRegistrationActivitySummary](/graph/api/resources/userregistrationactivitysummary?view=graph-rest-beta&preserve-view=true) resources. This value represents the use of the [QR code](/graph/api/resources/qrcodepinauthenticationmethod?view=graph-rest-beta&preserve-view=true) as an authentication method.
+
 ### Reports | Microsoft 365 usage reports
 
 Going forward, use the Microsoft 365 Copilot usage APIs under the `/copilot` URL path segment. For more information, see:
@@ -27,6 +31,16 @@ Going forward, use the Microsoft 365 Copilot usage APIs under the `/copilot` URL
 - [Get Copilot user count summary](/microsoft-365-copilot/extensibility/api/admin-settings/reports/copilotreportroot-getmicrosoft365copilotusercountsummary)
 - [Get Copilot user count trend](/microsoft-365-copilot/extensibility/api/admin-settings/reports/copilotreportroot-getmicrosoft365copilotusercounttrend)
 - [Get Copilot usage user detail](/microsoft-365-copilot/extensibility/api/admin-settings/reports/copilotreportroot-getmicrosoft365copilotusageuserdetail)
+
+### Teamwork and communications | Apps
+
+The `TeamsAppInstallation.ManageSelectedForTeam.All` is the least privileged application permission required to install or upgrade a Teams app that requires consent to [resource-specific consent (RSC)](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions when using the [teamsAppInstallation in a team: upgrade](/graph/api/team-teamsappinstallation-upgrade) API.
+
+## January 2026: New in preview only
+
+### Teamwork and communications | Apps
+
+The `TeamsAppInstallation.ManageSelectedForTeam.All` is the least privileged application permission required to install or upgrade a Teams app that requires consent to [resource-specific consent (RSC)](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions when using the [teamsAppInstallation in a team: upgrade](/graph/api/team-teamsappinstallation-upgrade?view=graph-rest-beta&preserve-view=true) API.
 
 ## December 2025: New and generally available
 
@@ -63,6 +77,16 @@ Added support for [mailboxConfigurationEvidence](/graph/api/resources/security-m
 ## November 2025: New in preview only
 
 Manage flexible work hours and locations using the following resources: [workHoursAndLocationsSetting](/graph/api/resources/workhoursandlocationssetting?view=graph-rest-beta&preserve-view=true), [workPlanOccurrence](/graph/api/resources/workplanoccurrence?view=graph-rest-beta&preserve-view=true), and [workPlanRecurrence](/graph/api/resources/workplanrecurrence?view=graph-rest-beta&preserve-view=true). These resources allow you to define recurring and specific work patterns, locations, and time off for modern hybrid scenarios.
+
+### Teamwork and communications | Apps
+
+Manage Teams apps at the channel level within a team using the following APIs:
+- [List apps](/graph/api/channel-list-enabledapps?view=graph-rest-beta&preserve-view=true) in a channel.
+- [Get an app](/graph/api/teamsapp-get?view=graph-rest-beta&preserve-view=true) in a channel.
+- [Enable a new Teams app](/graph/api/channel-post-enabledapps?view=graph-rest-beta&preserve-view=true) in a channel.
+- [Disable an app](/graph/api/channel-delete-enabledapps?view=graph-rest-beta&preserve-view=true) in a channel.
+
+## September 2025: New and generally available
 
 ### Applications
 
@@ -107,6 +131,10 @@ Customize the block page message displayed to users when Global Secure Access bl
   - `POST /communications/presences/{presenceId}/setAutomaticLocation`
   - `POST /users/{usersId}/presence/setManualLocation`
   - `POST /communications/presences/{presenceId}/setManualLocation`
+
+### Reports | Identity and access reports
+
+- Removed the **conditionalAccessAudience** resource type. The return type of the **conditionalAccessAudiences** property of the [signIn resource type](/graph/api/resources/signin?view=graph-rest-beta&preserve-view=true) is a collection of String objects and not the **conditionalAccessAudience** complex type.
 
 ### Teamwork and communications | Calls and online meetings
 
