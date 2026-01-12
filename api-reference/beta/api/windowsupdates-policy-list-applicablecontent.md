@@ -1,6 +1,6 @@
 ---
 title: "List applicableContent"
-description: "List applicable update content for offering to the related Microsoft Entra and/or Windows Autopatch Groups."
+description: "Lists applicable update content for offering to either Microsoft Entra groups, Windows Autopatch groups, or both."
 author: "andredm7"
 ms.date: 10/22/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "windows-autopatch"
 doc_type: apiPageType
 ---
 
-# List applicable Content
+# List applicableContent
 
 Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List applicable update content for offering to the related Microsoft Entra and/or Windows Autopatch Groups.
+Lists applicable update content for offering to either Microsoft Entra groups, Windows Autopatch groups, or both.
 
 ## Permissions
 
@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [applicableContent](../resources/windowsupdates-applicablecontent.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.windowsUpdates.applicableContent](../resources/windowsupdates-applicablecontent.md) objects in the response body.
 
 ## Examples
 
@@ -66,9 +66,8 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/windows/updates/policies/{policyId}/applicableContent
+GET https://graph.microsoft.com/beta/admin/windows/updates/policies/45a01ef3-fb4b-8c1d-2428-1f060464033c/applicableContent
 ```
-
 
 ### Response
 

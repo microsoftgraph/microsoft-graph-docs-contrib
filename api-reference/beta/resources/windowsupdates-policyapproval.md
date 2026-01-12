@@ -1,6 +1,6 @@
 ---
 title: "policyApproval resource type"
-description: "Set of Quality Updates Policy Approval types"
+description: "Represents a set of quality updates policy approval types."
 author: "andredm7"
 ms.date: 09/30/2025
 ms.localizationpriority: medium
@@ -14,9 +14,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Set of Quality Updates policy approval types.
-
-Inherits from [entity](../resources/entity.md)
+Represents a set of quality updates policy approval types.
 
 ## Methods
 |Method|Return type|Description|
@@ -30,9 +28,9 @@ Inherits from [entity](../resources/entity.md)
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset| The date and time the policy approval is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, `2014 is 2014-01-01T00:00:00Z`. Read-only.|
-|id|String| The unique identifier for the policy approval. Read-only. Inherits from [entity](../resources/entity.md).|
-|lastModifiedDateTime|DateTimeOffset| The date and time the policy approval was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, `2014 is 2014-01-01T00:00:00Z`. Read-only.|
+|createdDateTime|DateTimeOffset| The date and time the policy approval is created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
+|id|String| The unique identifier for the policy approval. Read-only.|
+|lastModifiedDateTime|DateTimeOffset| The date and time the policy approval was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -52,10 +50,10 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.policyApproval",
   "catalogEntryId": "String",
-  "status": "String",
-  "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)"
+  "id": "String (identifier)",
+  "lastModifiedDateTime": "String (timestamp)",
+  "status": "String"
 }
 ```
 

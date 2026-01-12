@@ -8528,6 +8528,48 @@ items:
       href: ../../api/windowsupdates-operationalinsightsconnection-get.md
     - name: Delete operational insights connection
       href: ../../api/windowsupdates-operationalinsightsconnection-delete.md
+  - name: Policy
+    items:
+    - name: Policy
+      href: ../../resources/windowsupdates-policy.md
+    - name: List
+      href: ../../api/adminwindowsupdates-list-updatepolicies.md
+    - name: Create
+      href: ../../api/adminwindowsupdates-post-updatepolicies.md
+    - name: Get
+      href: ../../api/windowsupdates-policy-get.md
+    - name: Update
+      href: ../../api/windowsupdates-updatepolicy-update.md
+    - name: Delete
+      href: ../../api/windowsupdates-updatepolicy-delete.md
+    - name: List applicable content
+      href: ../../api/windowsupdates-policy-list-applicablecontent.md
+    - name: Create applicable content
+      href: ../../api/windowsupdates-policy-post-applicablecontent.md
+    - name: List approvals
+      href: ../../api/windowsupdates-policyapproval-list.md
+    - name: Create policy approval
+      href: ../../api/windowsupdates-policyapproval-post.md
+    - name: List rings
+      href: ../../api/windowsupdates-policy-list-rings.md
+    - name: Create ring
+      href: ../../api/windowsupdates-policy-post-rings.md
+    - name: Delete ring
+      href: ../../api/windowsupdates-policy-delete-rings.md
+  - name: Policy approval
+    items:
+    - name: Policy approval
+      href: ../../resources/windowsupdates-policyapproval.md
+    - name: List
+      href: ../../api/windowsupdates-policyapproval-list.md
+    - name: Create
+      href: ../../api/windowsupdates-policyapproval-post.md
+    - name: Get
+      href: ../../api/windowsupdates-policyapproval-get.md
+    - name: Update
+      href: ../../api/windowsupdates-policyapproval-update.md
+    - name: Delete
+      href: ../../api/windowsupdates-policyapproval-delete.md
   - name: Product
     items:
     - name: Product
@@ -8538,6 +8580,42 @@ items:
       href: ../../api/windowsupdates-product-findbycatalogid.md
     - name: Find by knowledge base number
       href: ../../api/windowsupdates-product-findbykbnumber.md
+  - name: Quality update policy
+    items:
+    - name: Quality update policy
+      href: ../../resources/windowsupdates-qualityupdatepolicy.md
+    - name: List
+      href: ../../api/windowsupdates-qualityupdatepolicy-list.md
+    - name: Get
+      href: ../../api/windowsupdates-qualityupdatepolicy-get.md
+    - name: Update
+      href: ../../api/windowsupdates-qualityupdatepolicy-update.md
+    - name: Delete
+      href: ../../api/windowsupdates-qualityupdatepolicy-delete.md
+    - name: List applicableContent
+      href: ../../api/windowsupdates-policy-list-applicablecontent.md
+    - name: Create applicableContent
+      href: ../../api/windowsupdates-policy-post-applicablecontent.md
+    - name: List approvals
+      href: ../../api/windowsupdates-policyapproval-list.md
+    - name: Create policyApproval
+      href: ../../api/windowsupdates-policyapproval-post.md
+    - name: List rings
+      href: ../../api/windowsupdates-policy-list-rings.md
+    - name: Create ring
+      href: ../../api/windowsupdates-policy-post-rings.md
+  - name: Quality update ring
+    items:
+    - name: Quality update ring
+      href: ../../resources/windowsupdates-qualityupdatering.md
+    - name: List
+      href: ../../api/windowsupdates-qualityupdatering-list.md
+    - name: Get
+      href: ../../api/windowsupdates-qualityupdatering-get.md
+    - name: Update
+      href: ../../api/windowsupdates-qualityupdatering-update.md
+    - name: Delete
+      href: ../../api/windowsupdates-qualityupdatering-delete.md
   - name: Resource connection
     items:
     - name: Resource connection
@@ -8548,6 +8626,20 @@ items:
       href: ../../api/windowsupdates-resourceconnection-get.md
     - name: Delete
       href: ../../api/windowsupdates-resourceconnection-delete.md
+  - name: Ring
+    items:
+    - name: Ring
+      href: ../../resources/windowsupdates-ring.md
+    - name: List
+      href: ../../api/windowsupdates-policy-list-rings.md
+    - name: Create
+      href: ../../api/windowsupdates-policy-post-rings.md
+    - name: Get
+      href: ../../api/windowsupdates-ring-get.md
+    - name: Update
+      href: ../../api/windowsupdates-ring-update.md
+    - name: Delete
+      href: ../../api/windowsupdates-policy-delete-rings.md
   - name: Updatable asset
     items:
     - name: Updatable asset
@@ -8628,6 +8720,8 @@ items:
       href: ../../resources/windowsupdates-applicablecontent.md
     - name: Applicable content device match
       href: ../../resources/windowsupdates-applicablecontentdevicematch.md
+    - name: Assigned group
+      href: ../../resources/windowsupdates-assignedgroup.md
     - name: Build version details
       href: ../../resources/windowsupdates-buildversiondetails.md
     - name: Catalog content
@@ -8662,12 +8756,18 @@ items:
       href: ../../resources/windowsupdates-durationdrivenrolloutsettings.md
     - name: Edition
       href: ../../resources/windowsupdates-edition.md
+    - name: Excluded group assignment
+      href: ../../resources/windowsupdates-excludedgroupassignment.md
     - name: Expedite settings
       href: ../../resources/windowsupdates-expeditesettings.md
     - name: Feature update catalog entry
       href: ../../resources/windowsupdates-featureupdatecatalogentry.md
     - name: Gradual rollout settings
       href: ../../resources/windowsupdates-gradualrolloutsettings.md
+    - name: Group assignment
+      href: ../../resources/windowsupdates-groupassignment.md
+    - name: Included group assignment
+      href: ../../resources/windowsupdates-includedgroupassignment.md
     - name: Item body
       href: ../../resources/windowsupdates-itembody.md
     - name: Knowledge base article

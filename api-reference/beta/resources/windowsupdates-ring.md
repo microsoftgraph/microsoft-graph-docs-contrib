@@ -1,6 +1,6 @@
 ---
 title: "ring resource type"
-description: "Represents an entity that governs the update deployment ring. An update deployment ring supports only devices, and is used to phase a rollout strategy for windows updates."
+description: "An abstract type that governs the update deployment ring."
 author: "andredm7"
 ms.date: 10/08/2025
 ms.localizationpriority: medium
@@ -14,11 +14,9 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an entity that governs the update deployment ring. An update deployment ring supports only devices, and is used to phase a rollout strategy for windows updates.
+An abstract type that governs the update deployment ring.An update deployment ring supports only devices and is used to phase a rollout strategy for Windows updates.
 
-This is an abstract type.
-
-Inherits from [entity](../resources/entity.md)
+Base type of [qualityUpdateRing](../resources/windowsupdates-qualityupdatering.md).
 
 ## Methods
 |Method|Return type|Description|
@@ -32,15 +30,15 @@ Inherits from [entity](../resources/entity.md)
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset| The date and time the ring is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, `2014 is 2014-01-01T00:00:00Z`. Read-only|
-|deferralInDays|Int32| The Quality Update deferral period (days). The value must be between 0 and 30. Optional.|
+|createdDateTime|DateTimeOffset| The date and time the ring is created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only|
+|deferralInDays|Int32| The quality update deferral period in days. The value must be between `0` and `30`. Optional.|
 |description|String| The ring description. Required |
 |displayName|String| The ring display name. Required.|
-|excludedGroupAssignment|[microsoft.graph.windowsUpdates.excludedGroupAssignment](../resources/windowsupdates-excludedgroupassignment.md)| Represents an entity that governs the update deployment audience with excluded groups. Groups are logical containers of devices represented by Microsoft Entra groups.|
-|id|String| The unique identifier for the ring. Inherits from [entity](../resources/entity.md)|
-|includedGroupAssignment|[microsoft.graph.windowsUpdates.includedGroupAssignment](../resources/windowsupdates-includedgroupassignment.md)| Represents an entity that governs the update deployment audience with included groups. Groups are logical containers of devices represented by Microsoft Entra groups.|
-|isPaused|Boolean| Represents the pause action for the Quality Update ring policy. Required.|
-|lastModifiedDateTime|DateTimeOffset| The date and time the ring was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, `2014 is 2014-01-01T00:00:00Z`. Read-only.|
+|excludedGroupAssignment|[microsoft.graph.windowsUpdates.excludedGroupAssignment](../resources/windowsupdates-excludedgroupassignment.md)| Governs the update deployment audience with excluded groups. Groups are logical containers of devices represented by Microsoft Entra groups.|
+|id|String| The unique identifier for the ring.|
+|includedGroupAssignment|[microsoft.graph.windowsUpdates.includedGroupAssignment](../resources/windowsupdates-includedgroupassignment.md)| Governs the update deployment audience with included groups. Groups are logical containers of devices represented by Microsoft Entra groups.|
+|isPaused|Boolean| The pause action for the quality update ring policy. Required.|
+|lastModifiedDateTime|DateTimeOffset| The date and time the ring was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 
 ## Relationships
 None.
@@ -57,18 +55,14 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.ring",
-  "displayName": "String",
-  "description": "String",
-  "includedGroupAssignment": {
-    "@odata.type": "microsoft.graph.windowsUpdates.includedGroupAssignment"
-  },
-  "excludedGroupAssignment": {
-    "@odata.type": "microsoft.graph.windowsUpdates.excludedGroupAssignment"
-  },
-  "deferralInDays": "Integer",
-  "isPaused": "Boolean",
-  "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
+  "deferralInDays": "Int32",
+  "description": "String",
+  "displayName": "String",
+  "excludedGroupAssignment": {"@odata.type": "microsoft.graph.windowsUpdates.excludedGroupAssignment"},
+  "id": "String (identifier)",
+  "includedGroupAssignment": {"@odata.type": "microsoft.graph.windowsUpdates.includedGroupAssignment"},
+  "isPaused": "Boolean",
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```

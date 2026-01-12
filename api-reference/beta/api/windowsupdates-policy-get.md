@@ -1,6 +1,6 @@
 ---
 title: "Get policy"
-description: "Read the properties and relationships of microsoft.graph.windowsUpdates.policy object."
+description: "Read the properties and relationships of policy object."
 author: "andredm7"
 ms.date: 10/22/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md) object.
+Read the properties and relationships of a [policy](../resources/windowsupdates-policy.md) object.
 
 ## Permissions
 
@@ -68,7 +68,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/admin/windows/updates/policies/45a01ef3-fb4b-8c1d-2428-1f060464033c
 ```
-
 
 ### Response
 

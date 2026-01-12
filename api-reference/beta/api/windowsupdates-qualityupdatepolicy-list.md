@@ -14,7 +14,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the qualityUpdatePolicy objects and their properties.
+Get a list of the [qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md) objects and their properties.
 
 ## Permissions
 
@@ -69,7 +69,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/admin/windows/updates/policies?$filter=isof('microsoft.graph.windowsUpdates.qualityUpdatePolicy')
 ```
 
-
 ### Response
 
 The following example shows the response.
@@ -77,7 +76,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.windowsUpdates.qualityUpdatePolicy"
+  "@odata.type": "Collection(microsoft.graph.windowsUpdates.qualityUpdatePolicy)"
 }
 -->
 ``` http

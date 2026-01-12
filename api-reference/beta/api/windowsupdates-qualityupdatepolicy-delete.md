@@ -14,7 +14,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a qualityUpdatePolicy object.
+Delete a [qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md) object.
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /admin/windows/updates/policies/7650b117-e3fc-424a-ae94-988104652bdd
+DELETE /admin/windows/updates/policies/{policyId}
 ```
 
 ## Request headers

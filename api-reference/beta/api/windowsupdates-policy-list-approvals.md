@@ -1,6 +1,6 @@
 ---
-title: "Create a policyApproval"
-description: "Create a microsoft.graph.windowsUpdates.policyApproval object."
+title: "List approvals"
+description: "Get a list of the policyApproval objects and their properties."
 author: "andredm7"
 ms.date: 10/22/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "windows-autopatch"
 doc_type: apiPageType
 ---
 
-# Create a policyApproval
+# List approvals
 
 Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a [microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) object.
+Get a list of the [policyApproval](../resources/windowsupdates-policyapproval.md) objects and their properties.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "windowsupdates-policyapproval-post-permissions"
+  "name": "windowsupdates-policy-list-approvals-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/windowsupdates-policyapproval-post-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/windowsupdates-policy-list-approvals-permissions.md)]
 
 ## HTTP request
 
@@ -34,12 +34,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /admin/windows/updates/policies/{policyId}/approvals/
+GET /admin/windows/updates/policies/{policyId}/approvals
 ```
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, `$count`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) objects in the response body.
 
 ## Examples
 
@@ -62,11 +62,11 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "post_policyapproval"
+  "name": "list_policyapproval"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/admin/windows/updates/policies/ab3a53f0-f7aa-10b1-04d4-8680584cbbb6/approvals/
+GET https://graph.microsoft.com/beta/admin/windows/updates/policies/45a01ef3-fb4b-8c1d-2428-1f060464033c/approvals
 ```
 
 ### Response
@@ -76,7 +76,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.windowsUpdates.policyApproval"
+  "@odata.type": "Collection(microsoft.graph.windowsUpdates.policyApproval)"
 }
 -->
 ``` http
@@ -84,12 +84,16 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.type": "#microsoft.graph.windowsUpdates.policyApproval",
-    "catalogEntryId": "1d8864c1-531f-4d5b-8225-8653ef4316d8",
-    "status": "suspended",
-    "id": "ab3a53f0-f7aa-10b1-04d4-8680584cbbb6",
-    "createdDateTime": "2020-06-09T10:00:00Z",
-    "lastModifiedDateTime": "2020-06-09T10:00:00Z"
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.windowsUpdates.policyApproval",
+      "catalogEntryId": "1d8864c1-531f-4d5b-8225-8653ef4316d8",
+      "status": "suspended",
+      "id": "ab3a53f0-f7aa-10b1-04d4-8680584cbbb6",
+      "createdDateTime": "2020-06-09T10:00:00Z",
+      "lastModifiedDateTime": "2020-06-09T10:00:00Z"
+    }
+  ]
 }
 ```
 

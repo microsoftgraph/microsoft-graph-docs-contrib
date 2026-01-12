@@ -14,7 +14,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a qualityUpdatePolicy object.
+Update the properties of a [qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md) object.
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /admin/windows/updates/policies/f316bfd9-c84e-a334-cebe-071d3c64b2c1
+PATCH /admin/windows/updates/policies/{policyId}
 ```
 
 ## Request headers
@@ -48,15 +48,13 @@ PATCH /admin/windows/updates/policies/f316bfd9-c84e-a334-cebe-071d3c64b2c1
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-## Properties
-
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String| The Quality Update policy display name. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md). Required.|
-|description|String| The Quality Update policy description Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md). Required.|
-|approvalRules|[microsoft.graph.windowsUpdates.contentApprovalRule](../resources/windowsupdates-contentapprovalrule.md) collection| The policy's approved rule to determine which published content matches the rule on an ongoing basis. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md). Required.|
-|createdDateTime|DateTimeOffset| The date and time the Quality Update policy is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, `2014 is 2014-01-01T00:00:00Z`. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md). Optional.|
-|lastModifiedDateTime|DateTimeOffset| The date and time the Quality Update policy was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, `2014 is 2014-01-01T00:00:00Z`. Inherited from [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md). Optional.|
+|approvalRules|[microsoft.graph.windowsUpdates.contentApprovalRule](../resources/windowsupdates-contentapprovalrule.md) collection| The approved rule of the policy that determines which published content matches the rule on an ongoing basis. Inherited from [policy](../resources/windowsupdates-policy.md). Required.|
+|createdDateTime|DateTimeOffset| The date and time the quality update policy is created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [policy](../resources/windowsupdates-policy.md). Optional.|
+|description|String| The quality update policy description. Inherited from [policy](../resources/windowsupdates-policy.md). Required.|
+|displayName|String| The quality update policy display name. Inherited from [policy](../resources/windowsupdates-policy.md). Required.|
+|lastModifiedDateTime|DateTimeOffset| The date and time the quality update policy was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [policy](../resources/windowsupdates-policy.md). Optional.|
 
 ## Response
 

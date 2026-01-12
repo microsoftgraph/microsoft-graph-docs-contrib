@@ -1,6 +1,6 @@
 ---
-title: "Delete update policy approval"
-description: "Delete update policy approval object."
+title: "Delete policyApproval"
+description: "Delete a policyApproval object."
 author: "andredm7"
 ms.date: 01/12/2026
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "windows-autopatch"
 doc_type: apiPageType
 ---
 
-# Delete an update policy approval
+# Delete policyApproval
 
 Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a policyApproval object.
+Delete a [policyApproval](../resources/windowsupdates-policyapproval.md) object.
 
 ## Permissions
 
@@ -42,23 +42,14 @@ DELETE /admin/windows/updates/policies/{policyId}/approvals/{policyApprovalId}
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Content-Type|application/json. Required.|
 
 ## Request body
 
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
-
-
-## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|createdDateTime|DateTimeOffset|The date and time the policy approval is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, `2014 is 2014-01-01T00:00:00Z`. Optional.|
-|lastModifiedDateTime|DateTimeOffset| The date and time the policy approval was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, `2014 is 2014-01-01T00:00:00Z`. Read-only. Optional.|
-
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and an updated [microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
@@ -71,16 +62,8 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/admin/windows/updates/policies/{policyId}/approvals/30d62e80-4028-4b1c-a458-da06c33173b0
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.windowsUpdates.policyApproval",
-  "catalogEntryId": "1d8864c1-531f-4d5b-8225-8653ef4316d8",
-  "status": "suspended"
-}
+DELETE https://graph.microsoft.com/beta/admin/windows/updates/policies/45a01ef3-fb4b-8c1d-2428-1f060464033c/approvals/30d62e80-4028-4b1c-a458-da06c33173b0
 ```
-
 
 ### Response
 

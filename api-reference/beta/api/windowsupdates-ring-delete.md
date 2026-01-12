@@ -14,7 +14,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a ring object.
+Delete a [ring](../resources/windowsupdates-ring.md) object.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "windowsupdates-policy-delete-rings-permissions"
+  "name": "windowsupdates-ring-delete-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/windowsupdates-policy-delete-rings-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/windowsupdates-ring-delete-permissions.md)]
 
 ## HTTP request
 
@@ -62,9 +62,8 @@ The following example shows a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/admin/windows/updates/policies//rings/86364b9d-d04a-46f3-b2ee-7ef4157ab6fc
+DELETE https://graph.microsoft.com/beta/admin/windows/updates/policies/45a01ef3-fb4b-8c1d-2428-1f060464033c/rings/86364b9d-d04a-46f3-b2ee-7ef4157ab6fc
 ```
-
 
 ### Response
 

@@ -1,6 +1,6 @@
 ---
 title: "Get qualityUpdatePolicy"
-description: "Read the properties and relationships of microsoft.graph.windowsUpdates.qualityUpdatePolicy object."
+description: "Read the properties and relationships of a qualityUpdatePolicy object."
 author: "andredm7"
 ms.date: 10/08/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of [microsoft.graph.windowsUpdates.qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md) object.
+Read the properties and relationships of a [qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md) object.
 
 ## Permissions
 
