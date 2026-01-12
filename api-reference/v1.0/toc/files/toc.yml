@@ -176,7 +176,7 @@ items:
     href: ../../api/filestoragecontainer-delete-customproperty.md
   - name: List columns
     href: ../../api/filestoragecontainer-list-columns.md
-  - name: Add column
+  - name: Create column
     href: ../../api/filestoragecontainer-post-columns.md
   - name: Update column
     href: ../../api/filestoragecontainer-update-column.md
