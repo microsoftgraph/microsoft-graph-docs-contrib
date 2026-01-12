@@ -1,6 +1,6 @@
 ---
 title: "Get column"
-description: "Get a column from a fileStorageContainer."
+description: "Get the properties of a column represented as a columnDefinition in a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ```http
-GET /storage/fileStorage/containers/{containerId}/columns/{column-id}
+GET /storage/fileStorage/containers/{containerId}/columns/{columnId}
 ```
 
 ## Request headers
@@ -65,7 +65,6 @@ The following example shows a request.
 ```http
 GET https://graph.microsoft.com/v1.0/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103
 ```
-
 
 ### Response
 
