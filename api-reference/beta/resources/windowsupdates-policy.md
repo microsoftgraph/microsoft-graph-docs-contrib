@@ -1,6 +1,6 @@
 ---
 title: "policy resource type"
-description: "An abstract type that governs the update deployment settings content for an associated deployment audience, which can consist of one or more Microsoft Entra groups."
+description: "An abstract type that governs the update deployment settings content for an associated deployment audience."
 author: "andredm7"
 ms.date: 01/12/2026
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract type that governs the update deployment settings content for an associated deployment audience, which can consist of one or more Microsoft Entra groups.
+An abstract type that governs the update deployment settings content for an associated deployment audience. This audience can consist of one or more Microsoft Entra groups.
 
 Base type of [qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md). 
 
@@ -47,7 +47,7 @@ Base type of [qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepoli
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|applicableContent|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) collection|TODO|
+|applicableContent|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) collection|Represents content applicable for offering to the related collection of devices.|
 |approvals|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) collection| Represents a set of quality updates policy approval types. |
 |rings|[microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-ring.md) collection| Represents a set of deployment rings that contains update deployment settings. |
 
