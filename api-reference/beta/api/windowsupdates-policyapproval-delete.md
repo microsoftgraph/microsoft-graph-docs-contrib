@@ -2,7 +2,7 @@
 title: "Delete update policy approval"
 description: "Delete update policy approval object."
 author: "andredm7"
-ms.date: 10/22/2025
+ms.date: 01/12/2026
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: apiPageType
