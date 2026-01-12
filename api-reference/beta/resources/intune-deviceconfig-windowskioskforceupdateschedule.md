@@ -22,8 +22,8 @@ Windows 10 force update schedule for Kiosk devices.
 |Property|Type|Description|
 |:---|:---|:---|
 |startDateTime|DateTimeOffset|The start time for the force restart.|
-|recurrence|[windows10AppsUpdateRecurrence](../resources/intune-deviceconfig-windows10appsupdaterecurrence.md)|Recurrence schedule. The possible values are: `none`, `daily`, `weekly`, `monthly`.|
-|dayofWeek|[dayOfWeek](../resources/intune-deviceconfig-dayofweek.md)|Day of week. The possible values are: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
+|recurrence|[windows10AppsUpdateRecurrence](../resources/intune-deviceconfig-windows10appsupdaterecurrence.md)|Recurrence schedule. Possible values are: `none`, `daily`, `weekly`, `monthly`.|
+|dayofWeek|[dayOfWeek](../resources/intune-deviceconfig-dayofweek.md)|Day of week. Possible values are: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
 |dayofMonth|Int32|Day of month. Valid values 1 to 31|
 |runImmediatelyIfAfterStartDateTime|Boolean|If true, runs the task immediately if StartDateTime is in the past, else, runs at the next recurrence.|
 
