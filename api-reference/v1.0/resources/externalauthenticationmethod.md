@@ -51,7 +51,6 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.externalAuthenticationMethod",
   "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
-  "lastUsedDateTime": "String (timestamp)",
   "configurationId": "String",
   "displayName": "String"
 }
