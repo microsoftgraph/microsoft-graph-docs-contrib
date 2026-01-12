@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_qualityupdatepolicy"
+  "name": "list_qualityupdatepolicy",
 }
 -->
 ``` http
@@ -76,7 +76,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.windowsUpdates.qualityUpdatePolicy)"
+  "@odata.type": "Collection(microsoft.graph.windowsUpdates.qualityUpdatePolicy)",
 }
 -->
 ``` http
