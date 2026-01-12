@@ -2,7 +2,7 @@
 title: "policyApproval resource type"
 description: "Represents a set of quality updates policy approval types."
 author: "andredm7"
-ms.date: 09/30/2025
+ms.date: 01/12/2026
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: resourcePageType
@@ -19,8 +19,8 @@ Represents a set of quality updates policy approval types.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/windowsupdates-policyapproval-list.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) collection|Get a list of the policyApproval objects and their properties. Use no policyapprovalID to get a list of all policy approvals|
-|[Create](../api/windowsupdates-policyapproval-post.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md)|Create a new policyApproval object.|
+|[List](../api/windowsupdates-policy-list-approvals.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) collection|Get a list of the policyApproval objects and their properties. Use no policyapprovalID to get a list of all policy approvals|
+|[Create](../api/windowsupdates-policy-post-approvals.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md)|Create a new policyApproval object.|
 |[Get](../api/windowsupdates-policyapproval-get.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md)|Read the properties and relationships of [microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) object. You must use a policyapprovalID to get details.|
 |[Update](../api/windowsupdates-policyapproval-update.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md)|Update the properties of a policyApproval object.|
 |[Delete](../api/windowsupdates-policyapproval-delete.md)|None|Delete a policyApproval object.|

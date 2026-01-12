@@ -2,7 +2,7 @@
 title: "ring resource type"
 description: "An abstract type that governs the update deployment ring."
 author: "andredm7"
-ms.date: 10/08/2025
+ms.date: 01/12/2026
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: resourcePageType
@@ -25,7 +25,7 @@ Base type of [qualityUpdateRing](../resources/windowsupdates-qualityupdatering.m
 |[Create](../api/windowsupdates-policy-post-rings.md)|[microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-ring.md)|Create a new ring object.|
 |[Get](../api/windowsupdates-ring-get.md)|[microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-ring.md)|Read the properties and relationships of [microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-ring.md) object.|
 |[Update](../api/windowsupdates-ring-update.md)|[microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-ring.md)|Update the properties of a ring object.|
-|[Delete](../api/windowsupdates-policy-delete-rings.md)|None|Delete a ring object.|
+|[Delete](../api/windowsupdates-ring-delete.md)|None|Delete a ring object.|
 
 ## Properties
 |Property|Type|Description|
