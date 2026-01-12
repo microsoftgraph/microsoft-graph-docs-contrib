@@ -297,6 +297,17 @@ Fully qualify any type (including enum types) that is defined in a subnamespace 
 - For API methods: `{resourcename}-{operation}.md`
 - For subnamespace resources: `{subnamespace}-{resourcename}.md`
 
+**Linking to API and resource files:**
+- When linking from an API file to a resource file or enum file, always prefix the link path with `../resources/`
+- When linking from a resource file to an API file, always prefix the link path with `../api/`
+- When linking from a resource file to another resource file or enum file, always prefix the link path with `../resources/`
+- When linking from an API file to another API file, always prefix the link path with `../api/`
+- Examples:
+  - From API file: `[user](../resources/user.md)`
+  - From API file: `[security alert](../resources/security-alert.md)`
+  - From resource file: `[Get security alert](../api/security-alert-get.md)`
+  - From resource file: `[alertStatus](../resources/security-alertstatus.md)`
+
 **Beta disclaimer:**
 - All beta documentation must include the beta disclaimer immediately after the namespace declaration
 - Use the standard boilerplate text for beta disclaimers
@@ -1313,6 +1324,7 @@ When a new relationship is added to an existing resource:
 
 3. **Update property description:**
    - List all possible values in the description
+   - **For flagged enums:** Add "This flagged enumeration allows multiple members to be selected simultaneously." before listing the possible values
    - **For evolvable enums (if unknownFutureValue is last member):**
      - Format: "The possible values are: `value1`, `value2`, `unknownFutureValue`."
    - **For evolvable enums (if members follow unknownFutureValue):**
@@ -1335,11 +1347,18 @@ Document within the **Properties** section of the resource that uses the enum. T
 
 1. **Create H3 section after Properties table:**
    - Title: "{enum-type} values"
+
    - **For evolvable enums (if members follow unknownFutureValue):**
      - Add introductory text before the table:
        ```markdown
        The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations).
        Use the `Prefer: include-unknown-enum-members` request header to get the following members in this evolvable enum: `value3`.
+       ```
+   - **For flagged enums:**
+     - Append the following boilerplate text to the introductory text before the table:
+      ```markdown
+       The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations).
+       Use the `Prefer: include-unknown-enum-members` request header to get the following members in this evolvable enum: `value3`. This flagged enumeration allows multiple members to be selected simultaneously.
        ```
 
 2. **Create table:**
@@ -1381,6 +1400,7 @@ Create a dedicated topic for the enumeration. This option is rarely applicable.
 1. **Create enum topic:**
    - Title: "{enum-type} enum type"
    - Single sentence describing the enum's purpose
+   - **For flagged enums:** Append "This flagged enumeration allows multiple members to be selected simultaneously." to the introductory text.
    - **For evolvable enums:** Mention it's an evolvable enumeration
 
 2. **Add Members H2 section:**
