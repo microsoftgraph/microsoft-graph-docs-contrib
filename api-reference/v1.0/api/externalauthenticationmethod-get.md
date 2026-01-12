@@ -113,8 +113,7 @@ Content-Type: application/json
     "id": "78381c69-811f-51f6-66ec-c2c2aa0e2b46",
     "createdDateTime": "2025-04-01T00:00:00Z",
     "configurationId": "26310fee-860b-4eab-8749-ab730dcf335e",
-    "displayName": "Adatum",
-    "lastUsedDateTime": null
+    "displayName": "Adatum"
   }
 }
 ```
