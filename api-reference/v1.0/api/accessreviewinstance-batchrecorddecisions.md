@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/batchRecordDecisions
 ```
 
@@ -46,7 +46,7 @@ The following table lists the properties that you can use to review [accessRevie
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|decision|String|Access decision for the entity being reviewed. Possible values are: `Approve`, `Deny`, `NotReviewed`, `DontKnow`. Required.|
+|decision|String|Access decision for the entity being reviewed. The possible values are: `Approve`, `Deny`, `NotReviewed`, `DontKnow`. Required.|
 |justification|String|Context of the review provided to admins. Required if **justificationRequiredOnApproval** of the settings property of the **accessReviewScheduleDefinition** is `true` .|
 |principalId|String|If supplied, all the **accessReviewInstanceDecisionItems** with matching **principalId** values will be reviewed in this batch. If not supplied, all **accessReviewInstanceDecisionItems** will be reviewed.|
 |resourceId|String|If supplied, all the **accessReviewInstanceDecisionItems** with matching **resourceId** will be reviewed in this batch. If not supplied, all **accessReviewInstanceDecisionItems** will be reviewed.|
@@ -65,7 +65,7 @@ If successful, this action returns a `204 No Content` response code.
   "name": "accessreviewinstance_batchrecorddecisions"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/e6cafba0-cbf0-4748-8868-0810c7f4cc06/instances/1234fba0-cbf0-6778-8868-9999c7f4cc06/batchRecordDecisions
 Content-type: application/json
 
@@ -112,6 +112,6 @@ Content-type: application/json
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

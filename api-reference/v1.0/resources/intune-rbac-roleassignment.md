@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/13/2024
+ms.date: 08/01/2024
 ---
 
 # roleAssignment resource type
@@ -28,15 +28,15 @@ The Role Assignment resource. Role assignments tie together a role definition wi
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Key of the entity. This is read-only and automatically generated.|
-|displayName|String|The display or friendly name of the role Assignment.|
-|description|String|Description of the Role Assignment.|
-|resourceScopes|String collection|List of ids of role scope member security groups.  These are IDs from Azure Active Directory.|
+|id|String|The unique identifier of the request. This ID is assigned at when the entity is created. Read-only.|
+|displayName|String|Indicates the display name of the role assignment. For example: 'Houston administrators and users'. Max length is 128 characters.|
+|description|String|Indicates the description of the role assignment. For example: 'All administrators, employees and scope tags associated with the Houston office.' Max length is 1024 characters.|
+|resourceScopes|String collection|Indicates the list of resource scope security group Entra IDs. For example: {dec942f4-6777-4998-96b4-522e383b08e2}.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|roleDefinition|[roleDefinition](../resources/intune-rbac-roledefinition.md)|Role definition this assignment is part of.|
+|roleDefinition|[roleDefinition](../resources/intune-rbac-roledefinition.md)|Indicates the role definition for this role assignment.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

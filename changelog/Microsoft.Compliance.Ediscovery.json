@@ -1775,6 +1775,110 @@
       "CreatedDateTime": "2025-09-04T21:21:47.9769966Z",
       "WorkloadArea": "Compliance",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6277d224-ec34-4bd9-8466-45e30230ac03",
+          "ApiChange": "Member",
+          "ChangedApiName": "holdPolicySync",
+          "ChangeType": "Addition",
+          "Description": "Added the `holdPolicySync` member to the **caseAction** enumeration.",
+          "Target": "caseAction"
+        },
+        {
+          "Id": "6277d224-ec34-4bd9-8466-45e30230ac03",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ediscoveryHoldPolicySyncOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [ediscoveryHoldPolicySyncOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryHoldPolicySyncOperation?view=graph-rest-beta) resource.",
+          "Target": "ediscoveryHoldPolicySyncOperation"
+        }
+      ],
+      "Id": "6277d224-ec34-4bd9-8466-45e30230ac03",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-10-10T23:21:27.4853763Z",
+      "WorkloadArea": "Security",
+      "SubArea": "eDiscovery"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "473cf35f-a067-41ea-aded-175089d3bfdb",
+          "ApiChange": "Member",
+          "ChangedApiName": "holdPolicySync",
+          "ChangeType": "Addition",
+          "Description": "Added the `holdPolicySync` member to the **caseAction** enumeration.",
+          "Target": "caseAction"
+        },
+        {
+          "Id": "473cf35f-a067-41ea-aded-175089d3bfdb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ediscoveryHoldPolicySyncOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [ediscoveryHoldPolicySyncOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryHoldPolicySyncOperation?view=graph-rest-1.0) resource.",
+          "Target": "ediscoveryHoldPolicySyncOperation"
+        }
+      ],
+      "Id": "473cf35f-a067-41ea-aded-175089d3bfdb",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-10-10T23:21:27.4857021Z",
+      "WorkloadArea": "Security",
+      "SubArea": "eDiscovery"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "55145815-2684-45ba-97d1-42e5347ad336",
+          "ApiChange": "Method",
+          "ChangedApiName": "retryPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [retryPolicy](https://learn.microsoft.com/en-us/graph/api/security-ediscoveryHoldPolicy-retryPolicy?view=graph-rest-1.0) method to the [ediscoveryHoldPolicy](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryHoldPolicy?view=graph-rest-1.0) resource.",
+          "Target": "ediscoveryHoldPolicy"
+        }
+      ],
+      "Id": "55145815-2684-45ba-97d1-42e5347ad336",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-12-12T20:47:34.5607727Z",
+      "WorkloadArea": "Security",
+      "SubArea": "eDiscovery"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "bbf1bc12-f27a-4c86-865b-392c7bd14976",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "recipientType",
+          "ChangeType": "Addition",
+          "Description": "Added the **recipientType** enumeration type.",
+          "Target": "recipientType"
+        },
+        {
+          "Id": "bbf1bc12-f27a-4c86-865b-392c7bd14976",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "caseMembers",
+          "ChangeType": "Addition",
+          "Description": "Added the **caseMembers** relationship to the [ediscoveryCase](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryCase?view=graph-rest-1.0) resource.",
+          "Target": "ediscoveryCase"
+        },
+        {
+          "Id": "bbf1bc12-f27a-4c86-865b-392c7bd14976",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ediscoveryCaseMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [ediscoveryCaseMember](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoveryCaseMember?view=graph-rest-1.0) resource.",
+          "Target": "ediscoveryCaseMember"
+        }
+      ],
+      "Id": "bbf1bc12-f27a-4c86-865b-392c7bd14976",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-12-12T21:34:30.6183597Z",
+      "WorkloadArea": "Security",
+      "SubArea": "eDiscovery"
     }
   ]
 }

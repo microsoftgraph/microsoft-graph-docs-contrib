@@ -38,7 +38,7 @@ Read details of your own Platform Credential authentication method.
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /me/authentication/platformCredentialMethods/{platformCredentialAuthenticationMethodId}
 ```
 
@@ -47,7 +47,7 @@ Read details of your own or another user's Platform Credential authentication me
 [!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /users/{id | userPrincipalName}/authentication/platformCredentialMethods/{platformCredentialAuthenticationMethodId}
 ```
 
@@ -82,7 +82,7 @@ The following example shows a request.
   "sampleKeys": ["R18B3t8Ogh9XIOGmPt81d6p_KXJs1YTxfGgGqeVFJSM1"]
 }-->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/authentication/platformCredentialMethods/R18B3t8Ogh9XIOGmPt81d6p_KXJs1YTxfGgGqeVFJSM1
 ```
 
@@ -128,7 +128,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.platformCredentialAuthenticationMethod"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -136,7 +136,8 @@ Content-type: application/json
   "value": {
       "id": "R18B3t8Ogh9XIOGmPt81d6p_KXJs1YTxfGgGqeVFJSM1",
       "displayName": "My Macbook Pro",
-      "creationDateTime": "2023-09-02T04:16:49Z"
+      "creationDateTime": "2023-09-02T04:16:49Z",
+      "lastUsedDateTime": null
   }
 }
 ```

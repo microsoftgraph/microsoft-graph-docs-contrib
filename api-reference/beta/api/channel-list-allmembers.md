@@ -31,12 +31,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "channel_list_allmembers" } -->
 [!INCLUDE [permissions-table](../includes/permissions/channel-list-allmembers-permissions.md)]
 
-> [!NOTE]
-> The `ChannelMember.Read.Group` and `ChannelMember.ReadWrite.Group` permissions use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). Currently, these permissions don't work for shared channels.
-
 ## HTTP request
 
-<!-- { "blockType" : "ignored" } -->
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{team-id}/channels/{channel-id}/allMembers
 ```
@@ -132,7 +129,9 @@ Content-type: application/json
       "@odata.type": "#microsoft.graph.aadUserConversationMember",
       "@microsoft.graph.originalSourceMembershipUrl": "https://graph.microsoft.com/beta/tenants/2432b57b-0abd-43db-aa7b-16eadd115d34/teams/1e769eab-06a8-4b2e-ac42-1f040a4e52a1/channels/19%3AlRZHL5VwvZs0XN2orTn7DlinJDETkgSVTHXbDLUEKf01%40thread.tacv2/members/MCMjMyMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpsUlpITDVWd3ZaczBYTjJvclRuN0RsaW5KREVUa2dTVlRIWGJETFVFS2YwMUB0aHJlYWQudGFjdjIjIzI4YzEwMjQ0LTRiYWQtNGZkYS05OTNjLWYzMzJmYWVmOTRmMA==",
       "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyNlZWY5Y2IzNi0wNmRlLTQ2OWItODdjZC03MGY0Y2JlMzJkMTQ=",
-      "roles": [],
+      "roles": [
+        "Owner"
+      ],
       "displayName": "Caleb Foster",
       "userId": "eef9cb36-06de-469b-87cd-70f4cbe32d14",
       "email": "calfos@contoso.com",
@@ -142,9 +141,7 @@ Content-type: application/json
       "@odata.type": "#microsoft.graph.aadUserConversationMember",
       "@microsoft.graph.originalSourceMembershipUrl": "https://graph.microsoft.com/beta/tenants/2432b57b-0abd-43db-aa7b-16eadd115d34/teams/1e769eab-06a8-4b2e-ac42-1f040a4e52a1/members/MCMjMSMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxZTc2OWVhYi0wNmE4LTRiMmUtYWM0Mi0xZjA0MGE0ZTUyYTEjIzQ1OTVkMmYyLTdiMzEtNDQ2Yy04NGZkLTliNzk1ZTYzMTE0Yg==",
       "id": "MmFiOWM3OTYtMjkwMi00NWY4LWI3MTItN2M1YTYzY2Y0MWM0IyNiMzI0NmY0NC1jMDkxLTQ2MjctOTZjNi0yNWIxOGZhMmM5MTA=",
-      "roles": [
-        "Owner"
-      ],
+      "roles": [],
       "displayName": "Eric Solomon",
       "userId": "b3246f44-c091-4627-96c6-25b18fa2c910",
       "email": "ericsol@contoso.com",
@@ -235,7 +232,8 @@ Content-Type: application/json
 
 ## Related content
 
-[List the members of a team](team-list-members.md).
+- [List the members of a team](team-list-members.md).
+- [Get member from channel allMembers collection](channel-get-allmembers.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

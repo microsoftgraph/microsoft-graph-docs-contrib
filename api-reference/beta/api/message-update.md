@@ -52,8 +52,8 @@ In the request body, supply the values for relevant fields that should be update
 |ccRecipients|Recipient collection|The Cc recipients for the message. |
 |flag|[followupFlag](../resources/followupflag.md)|The flag value that indicates the status, start date, due date, or completion date for the message.|
 |from|Recipient|The mailbox owner and sender of the message. Must correspond to the actual mailbox used. |
-|importance|String|The importance of the message. Possible values are: `Low`, `Normal`, `High`.|
-|inferenceClassification | String | The classification of the message for the user, based on inferred relevance or importance, or on an explicit override. Possible values are: `focused` or `other`. |
+|importance|String|The importance of the message. The possible values are: `Low`, `Normal`, `High`.|
+|inferenceClassification | String | The classification of the message for the user, based on inferred relevance or importance, or on an explicit override. The possible values are: `focused` or `other`. |
 |internetMessageId |String |The message ID in the format specified by [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). Updatable only if isDraft = true.|
 |isDeliveryReceiptRequested|Boolean|Indicates whether a read receipt is requested for the message.|
 |isRead|Boolean|Indicates whether the message has been read.|

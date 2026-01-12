@@ -1,5 +1,5 @@
 ---
-title: "List governanceResources"
+title: "List governanceResources (deprecated)"
 description: "Retrieve a collection of governanceResource that the requestor has access to."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -9,7 +9,7 @@ ROBOTS: NOINDEX
 ms.date: 08/13/2024
 ---
 
-# List governanceResources
+# List governanceResources (deprecated)
 
 Namespace: microsoft.graph
 

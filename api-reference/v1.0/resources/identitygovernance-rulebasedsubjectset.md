@@ -83,6 +83,7 @@ You can also configure rules using [Directory (Microsoft Entra ID) extensions](/
 | `"rule": "(otherMails/any(p:startsWith(p, 'Av')))"`                    | Run the workflow for users whose **otherMails** starts with `Av`.                       |
 | `"rule": "(department eq 'Marketing') and (accountEnabled in (true))"` | Run the workflow for users in the marketing department and whose account is enabled.    |
 | `"rule": "(department eq 'Marketing') or (not (city eq 'Redmond'))"`   | Run the workflow for users in the marketing department and whose city is not "Redmond". |
+| `"rule": "(customSecurityAttributes/OnsightLocation/CustomerOnsite eq true)"`    | Run the workflow for users who have the custom security attribute for **CustomerOnSite** set as `true`. |
 
 ## Relationships
 

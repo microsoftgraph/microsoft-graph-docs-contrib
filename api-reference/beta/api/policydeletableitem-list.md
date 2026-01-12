@@ -2,7 +2,7 @@
 title: "List policyDeletableItem objects"
 description: "Get a list of the policyDeletableItem objects and their properties."
 author: "ashyasingh"
-ms.date: 06/18/2025
+ms.date: 10/07/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 Get a list of the [policyDeletableItem](../resources/policydeletableitem.md) objects and their properties, which might be one of the following deleted policy types:
 - [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md)
 - [crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md)
+- [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)
+- [namedLocation](../resources/namedlocation.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -24,14 +26,33 @@ Get a list of the [policyDeletableItem](../resources/policydeletableitem.md) obj
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+### Permissions for retrieving cross-tenant access policy objects
+
 <!-- {
   "blockType": "permissions",
   "name": "policydeletableitem-list-permissions",
-  "requestUrls" : ["GET /policies/deletedItems/crossTenantPartners", "GET /policies/deletedItems/crossTenantSyncPolicyPartners"], 
-  "mergePermissions": true
+  "requestUrls": ["GET /policies/deletedItems/crossTenantPartners", "GET /policies/deletedItems/crossTenantSyncPolicyPartners"],
+  "mergePermissions": true 
+  
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/policydeletableitem-list-permissions.md)]
+
+[!INCLUDE [rbac-xtap-apis-read](../includes/rbac-for-apis/rbac-xtap-apis-read.md)]
+
+### Permissions for retrieving conditional access policy objects
+
+<!-- {
+  "blockType": "permissions",
+  "name": "policydeletableitem-list-permissions",
+  "requestUrls": ["GET /identity/conditionalAccess/deletedItems/policies", "GET /identity/conditionalAccess/deletedItems/namedLocations"],
+  "mergePermissions": true
+
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/policydeletableitem-list-2-permissions.md)]
+
+[!INCLUDE [rbac-conditionalaccess-apis-read](../includes/rbac-for-apis/rbac-conditionalaccess-apis-read.md)]
 
 ## HTTP request
 
@@ -41,7 +62,7 @@ List deleted **crossTenantAccessPolicyConfigurationPartner** objects:
 }
 -->
 ```HTTP
-GET /policies/deletedItems/crossTenantPartners/
+GET /policies/deletedItems/crossTenantPartners
 ```
 
 List deleted **crossTenantIdentitySyncPolicyPartner** objects:
@@ -50,12 +71,30 @@ List deleted **crossTenantIdentitySyncPolicyPartner** objects:
 }
 -->
 ```HTTP
-GET /policies/deletedItems/crossTenantSyncPolicyPartners/
+GET /policies/deletedItems/crossTenantSyncPolicyPartners
+```
+
+List deleted **conditionalAccessPolicy** objects:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+```http
+GET /identity/conditionalAccess/deletedItems/policies
+```
+
+List deleted **namedLocation** objects:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+```http
+GET /identity/conditionalAccess/deletedItems/namedLocations
 ```
 
 ## Optional query parameters
 
-Not supported.
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -73,7 +112,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Get deleted crossTenantAccessPolicyConfigurationPartner objects
+### Example 1: Get deleted crossTenantAccessPolicyConfigurationPartner objects
 
 #### Request
 
@@ -190,7 +229,7 @@ Content-Type: application/json
 ```
 
 
-### Get deleted crossTenantIdentitySyncPolicyPartner objects
+### Example 2: Get deleted crossTenantIdentitySyncPolicyPartner objects
 
 #### Request
 
@@ -258,3 +297,223 @@ Content-Type: application/json
   ]
 }
 ```
+
+### Example 3: Get deleted conditionalAccessPolicy objects
+
+#### Request
+
+The following example shows a request for a conditionalAccessPolicy.
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "list_policydeletableitem_conditionalAccessPolicy"
+}
+-->
+```HTTP
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/policies
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-policydeletableitem-conditionalaccesspolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-policydeletableitem-conditionalaccesspolicy-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-policydeletableitem-conditionalaccesspolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-policydeletableitem-conditionalaccesspolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-policydeletableitem-conditionalaccesspolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-policydeletableitem-conditionalaccesspolicy-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.policyDeletableItem"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/deletedItems/policies",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identity/conditionalAccess/deletedItems/policies?$select=conditions,createdDateTime",
+    "value": [
+        {
+            "id": "1a71ea59-9583-4f16-9de4-47ecb42adfc6",
+            "templateId": null,
+            "displayName": "Demo",
+            "createdDateTime": "2024-06-26T22:13:41.3634477Z",
+            "modifiedDateTime": "2025-01-22T17:30:09.4040798Z",
+            "state": "disabled",
+            "deletedDateTime": "2025-09-12T17:01:05Z",
+            "partialEnablementStrategy": null,
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "all"
+                ],
+                "platforms": null,
+                "times": null,
+                "deviceStates": null,
+                "devices": null,
+                "applications": {
+                    "includeApplications": [
+                        "None"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": [],
+                    "applicationFilter": null
+                },
+                "users": {
+                    "includeUsers": [
+                        "None"
+                    ],
+                    "excludeUsers": [],
+                    "includeGroups": [],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": [],
+                    "includeGuestsOrExternalUsers": null,
+                    "excludeGuestsOrExternalUsers": null
+                },
+                "locations": {
+                    "includeLocations": [
+                        "41f20046-7b5b-4721-b049-eccd63d614ef"
+                    ],
+                    "excludeLocations": []
+                },
+                "clientApplications": {
+                    "includeServicePrincipals": [
+                        "ServicePrincipalsInMyTenant"
+                    ],
+                    "excludeServicePrincipals": []
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "block"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": [],
+                "authenticationStrength@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/deletedItems/policies('1a71ea59-9583-4f16-9de4-47ecb42adfc6')/grantControls/authenticationStrength/$entity",
+                "authenticationStrength": null
+            }
+        }
+    ]
+}
+```
+
+### Example 4: Get deleted namedLocation objects
+
+#### Request
+
+The following example shows a request for a namedLocation.
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "list_policydeletableitem_namedLocation"
+}
+-->
+```HTTP
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/namedLocations
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-policydeletableitem-namedlocation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-policydeletableitem-namedlocation-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-policydeletableitem-namedlocation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-policydeletableitem-namedlocation-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-policydeletableitem-namedlocation-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-policydeletableitem-namedlocation-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.policyDeletableItem"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/conditionalAccess/deletedItems/namedLocations",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET identity/conditionalAccess/deletedItems/namedLocations?$select=createdDateTime,displayName",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.countryNamedLocation",
+            "id": "1a4c0633-332f-4691-a27a-fd8334938a62",
+            "displayName": "Calvin Test USA",
+            "modifiedDateTime": "2025-09-05T22:12:01.4444669Z",
+            "createdDateTime": "2025-09-05T22:12:01.4444669Z",
+            "deletedDateTime": "2025-09-08T16:03:43Z",
+            "countriesAndRegions": [
+                "US"
+            ],
+            "includeUnknownCountriesAndRegions": false,
+            "countryLookupMethod": "clientIpAddress"
+        },
+        {
+            "@odata.type": "#microsoft.graph.ipNamedLocation",
+            "id": "003fe866-1f11-4356-8ddc-22e52f491cc5",
+            "displayName": "Pallav IP Test",
+            "modifiedDateTime": "2025-09-10T15:36:17.992593Z",
+            "createdDateTime": "2025-09-10T15:35:45.6440841Z",
+            "deletedDateTime": "2025-09-12T16:56:35Z",
+            "isTrusted": false,
+            "ipRanges": [
+                {
+                    "@odata.type": "#microsoft.graph.iPv4CidrRange",
+                    "cidrAddress": "127.30.27.128/30"
+                }
+            ]
+        }
+    ]
+}
+```
+

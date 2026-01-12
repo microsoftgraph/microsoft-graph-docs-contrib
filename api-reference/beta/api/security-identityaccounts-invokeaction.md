@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 
 Perform actions such as revoking accounts and forcing password reset for [identity accounts](../resources/security-identityaccounts.md) that are observed in Microsoft Defender for Identity. This action allows reading and performing identity security actions on behalf of the signed-in identity.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -37,7 +37,7 @@ One of the following permissions is required to call this API. Choose the permis
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/identities/identityAccounts/{identityAccountsId}/invokeAction
 ```
 
@@ -84,7 +84,7 @@ The following example shows a request.
   "name": "identityaccountsthis.invokeaction"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/identities/identityAccounts/0104216-0539-4838-88b1-55baafdc296b/invokeAction
 Content-Type: application/json
 
@@ -135,7 +135,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.invokeActionResult"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

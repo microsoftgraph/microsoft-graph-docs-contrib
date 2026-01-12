@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /identityGovernance/privilegedAccess/group/assignmentScheduleRequests
 ```
 
@@ -72,7 +72,7 @@ The following request creates an assignment schedule request to assign a princip
   "name": "create_privilegedaccessgroupassignmentschedulerequest_from_v1_e1"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/identityGovernance/privilegedAccess/group/assignmentScheduleRequests
 Content-Type: application/json
 
@@ -131,7 +131,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.privilegedAccessGroupAssignmentScheduleRequest"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -180,7 +180,7 @@ In the following request, a user identified by **principalId** `3cce9d87-3986-4f
   "name": "create_privilegedaccessgroupassignmentschedulerequest_from_v1_e2"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/identityGovernance/privilegedAccess/group/assignmentScheduleRequests
 Content-Type: application/json
 
@@ -239,7 +239,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.privilegedAccessGroupAssignmentScheduleRequest"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

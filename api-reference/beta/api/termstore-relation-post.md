@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /termStore/sets/{setId}/terms/{termId}/relations
 ```
 
@@ -47,7 +47,7 @@ The following table lists the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|relationship|relationType|Type of relation to be created. Possible values are: `pin`, `reuse`.|
+|relationship|relationType|Type of relation to be created. The possible values are: `pin`, `reuse`.|
 |set| [microsoft.graph.termstore.set](../resources/termstore-set.md)| The set where the relationship needs to be created.
 |fromTerm| [microsoft.graph.termstore.term](../resources/termstore-term.md) | The term with which the relationship needs to be created.
 
@@ -61,7 +61,7 @@ If successful, this method returns a `201 Created` response code and a [relation
 
 ### Request
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/termStore/sets/{setId}/terms/{termId}/relations
 Content-Type: application/json
 
@@ -86,7 +86,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.termstore.relation"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 {

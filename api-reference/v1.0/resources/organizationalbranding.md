@@ -23,11 +23,6 @@ You can't change your original configuration's language. However, companies can 
 >
 >Microsoft Entra ID P1 or P2 editions are available for customers in China using the worldwide instance of Microsoft Entra ID. Microsoft Entra ID P1 or P2 editions aren't currently supported in the Azure service operated by 21Vianet in China. For more information, talk to us using the [Microsoft Entra Forum](https://feedback.azure.com/forums/169401-azure-active-directory/).
 
-> [!TIP]
-> [![Try it now](/graph/try-it-now.png)](https://woodgrovedemo.com/#usecase=CompanyBranding)
-> 
-> To try out this feature, go to the Woodgrove Groceries demo and explore the "User experience" user case.
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|

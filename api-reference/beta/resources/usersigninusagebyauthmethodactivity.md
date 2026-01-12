@@ -26,7 +26,7 @@ Represents the summary of the number of successful sign-ins for each authenticat
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authenticationMethod|usageAuthMethod|The authentication method for the given summary. |
+|authenticationMethod|String|The authentication method for the given summary. |
 |successActivityCount|Int64|The total number of successful sign in events for the given authentication method.|
 
 ## Relationships
@@ -45,7 +45,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.userSignInUsageByAuthMethodActivity",
   "authenticationMethod": "String (identifier)",
-  "successActivityCount": "Integer"
+  "successActivityCount": "Int64"
 }
 ```
 

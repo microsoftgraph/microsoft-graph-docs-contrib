@@ -42,7 +42,7 @@ Retrieve details of your own phone authentication method.
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /me/authentication/phoneMethods/{phoneMethodId}
 ```
 
@@ -51,7 +51,7 @@ Retrieve details of your own or another user's phone authentication method.
 [!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /users/{userId | userPrincipalName}/authentication/phoneMethods/{phoneMethodId}
 ```
 
@@ -144,6 +144,7 @@ Content-type: application/json
   "phoneNumber": "+1 2065555555",
   "phoneType": "mobile",
   "smsSignInState": "ready",
+  "lastUsedDateTime": "2022-11-06T23:16:12Z",
   "id": "3179e48a-750b-4051-897c-87b9720928f7"
 }
 ```

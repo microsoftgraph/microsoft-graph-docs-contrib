@@ -16,7 +16,7 @@ Mark an event in the Microsoft Entra [sign-in](../resources/signin.md) logs as r
 
 For details about investigating Identity Protection risks, see [How to investigate risk](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /auditLogs/signIns/confirmCompromised
 ```
 
@@ -71,7 +71,7 @@ The following example shows a request.
   "name": "signinthis.confirmcompromised"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/auditLogs/signIns/confirmCompromised
 Content-Type: application/json
 
@@ -121,7 +121,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

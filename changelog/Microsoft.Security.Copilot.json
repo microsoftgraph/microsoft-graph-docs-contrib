@@ -1,0 +1,142 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "98a4ec82-2ea1-4690-b0e4-992661369515",
+          "ApiChange": "Resource",
+          "ChangedApiName": "securityCopilot",
+          "ChangeType": "Addition",
+          "Description": "Added the [securityCopilot](https://learn.microsoft.com/en-us/graph/api/resources/securityCopilot?view=graph-rest-beta) resource.",
+          "Target": "securityCopilot"
+        },
+        {
+          "Id": "98a4ec82-2ea1-4690-b0e4-992661369515",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "evaluationResultType",
+          "ChangeType": "Addition",
+          "Description": "Added the **evaluationResultType** enumeration type.",
+          "Target": "evaluationResultType"
+        },
+        {
+          "Id": "98a4ec82-2ea1-4690-b0e4-992661369515",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "evaluationState",
+          "ChangeType": "Addition",
+          "Description": "Added the **evaluationState** enumeration type.",
+          "Target": "evaluationState"
+        },
+        {
+          "Id": "98a4ec82-2ea1-4690-b0e4-992661369515",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "pluginAuthTypes",
+          "ChangeType": "Addition",
+          "Description": "Added the **pluginAuthTypes** enumeration type.",
+          "Target": "pluginAuthTypes"
+        },
+        {
+          "Id": "98a4ec82-2ea1-4690-b0e4-992661369515",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "pluginCatalogScope",
+          "ChangeType": "Addition",
+          "Description": "Added the **pluginCatalogScope** enumeration type.",
+          "Target": "pluginCatalogScope"
+        },
+        {
+          "Id": "98a4ec82-2ea1-4690-b0e4-992661369515",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "pluginCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the **pluginCategory** enumeration type.",
+          "Target": "pluginCategory"
+        },
+        {
+          "Id": "98a4ec82-2ea1-4690-b0e4-992661369515",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "pluginPreviewStates",
+          "ChangeType": "Addition",
+          "Description": "Added the **pluginPreviewStates** enumeration type.",
+          "Target": "pluginPreviewStates"
+        },
+        {
+          "Id": "98a4ec82-2ea1-4690-b0e4-992661369515",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "pluginSettingDisplayType",
+          "ChangeType": "Addition",
+          "Description": "Added the **pluginSettingDisplayType** enumeration type.",
+          "Target": "pluginSettingDisplayType"
+        },
+        {
+          "Id": "98a4ec82-2ea1-4690-b0e4-992661369515",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "pluginSettingType",
+          "ChangeType": "Addition",
+          "Description": "Added the **pluginSettingType** enumeration type.",
+          "Target": "pluginSettingType"
+        },
+        {
+          "Id": "98a4ec82-2ea1-4690-b0e4-992661369515",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "promptType",
+          "ChangeType": "Addition",
+          "Description": "Added the **promptType** enumeration type.",
+          "Target": "promptType"
+        },
+        {
+          "Id": "98a4ec82-2ea1-4690-b0e4-992661369515",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "skillPreviewState",
+          "ChangeType": "Addition",
+          "Description": "Added the **skillPreviewState** enumeration type.",
+          "Target": "skillPreviewState"
+        },
+        {
+          "Id": "98a4ec82-2ea1-4690-b0e4-992661369515",
+          "ApiChange": "Resource",
+          "ChangedApiName": "evaluation",
+          "ChangeType": "Addition",
+          "Description": "Added the [evaluation](https://learn.microsoft.com/en-us/graph/api/resources/security.securityCopilot-evaluation?view=graph-rest-beta) resource.",
+          "Target": "evaluation"
+        },
+        {
+          "Id": "98a4ec82-2ea1-4690-b0e4-992661369515",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plugin",
+          "ChangeType": "Addition",
+          "Description": "Added the [plugin](https://learn.microsoft.com/en-us/graph/api/resources/security.securityCopilot-plugin?view=graph-rest-beta) resource.",
+          "Target": "plugin"
+        },
+        {
+          "Id": "98a4ec82-2ea1-4690-b0e4-992661369515",
+          "ApiChange": "Resource",
+          "ChangedApiName": "prompt",
+          "ChangeType": "Addition",
+          "Description": "Added the [prompt](https://learn.microsoft.com/en-us/graph/api/resources/security.securityCopilot-prompt?view=graph-rest-beta) resource.",
+          "Target": "prompt"
+        },
+        {
+          "Id": "98a4ec82-2ea1-4690-b0e4-992661369515",
+          "ApiChange": "Resource",
+          "ChangedApiName": "session",
+          "ChangeType": "Addition",
+          "Description": "Added the [session](https://learn.microsoft.com/en-us/graph/api/resources/security.securityCopilot-session?view=graph-rest-beta) resource.",
+          "Target": "session"
+        },
+        {
+          "Id": "98a4ec82-2ea1-4690-b0e4-992661369515",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workspace",
+          "ChangeType": "Addition",
+          "Description": "Added the [workspace](https://learn.microsoft.com/en-us/graph/api/resources/security.securityCopilot-workspace?view=graph-rest-beta) resource.",
+          "Target": "workspace"
+        }
+      ],
+      "Id": "98a4ec82-2ea1-4690-b0e4-992661369515",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-03T23:45:08.4671181Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Security Copilot"
+    }
+  ]
+}

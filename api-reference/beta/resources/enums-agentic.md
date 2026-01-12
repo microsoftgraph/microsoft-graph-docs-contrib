@@ -5,7 +5,7 @@ author: "egreenberg14"
 ms.date: 05/01/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
-doc_type: enumTypes
+doc_type: enumPageType
 ---
 
 # Microsoft Graph agentic enumeration values
@@ -17,10 +17,11 @@ Namespace: microsoft.graph.agentic
 |Member|
 |:---|
 |notAgentic|
-|agenticAppBuilder|
 |agenticApp|
 |agenticAppInstance|
 |unknownFutureValue|
+|agentIdentityBlueprintPrincipal|
+|agentIDuser|
 
 <!-- {
   "type": "#page.annotation",

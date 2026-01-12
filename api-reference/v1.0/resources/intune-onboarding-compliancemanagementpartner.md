@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/13/2024
+ms.date: 08/01/2024
 ---
 
 # complianceManagementPartner resource type
@@ -30,7 +30,7 @@ Compliance management partner for all platforms
 |:---|:---|:---|
 |id|String|Id of the entity|
 |lastHeartbeatDateTime|DateTimeOffset|Timestamp of last heartbeat after admin onboarded to the compliance management partner|
-|partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Partner state of this tenant. Possible values are: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
+|partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Partner state of this tenant. The possible values are: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |displayName|String|Partner display name|
 |macOsOnboarded|Boolean|Partner onboarded for Mac devices.|
 |androidOnboarded|Boolean|Partner onboarded for Android devices.|
@@ -64,8 +64,9 @@ Here is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
-        "collectionId": "String"
+        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
+        "targetType": "String",
+        "entraObjectId": "String"
       }
     }
   ],
@@ -73,8 +74,9 @@ Here is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
-        "collectionId": "String"
+        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
+        "targetType": "String",
+        "entraObjectId": "String"
       }
     }
   ],
@@ -82,8 +84,9 @@ Here is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
-        "collectionId": "String"
+        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
+        "targetType": "String",
+        "entraObjectId": "String"
       }
     }
   ]

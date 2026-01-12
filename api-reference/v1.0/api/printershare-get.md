@@ -32,7 +32,7 @@ In addition to the following permissions, the user or app's tenant must have an 
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /print/shares/{printerShareId}
 GET /print/printers/{printerId}/shares/{printerShareId}
 ```
@@ -76,7 +76,7 @@ If successful, this method returns a `200 OK` response code and a [printerShare]
   "name": "get_printershare"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/print/shares/{printerShareId}
 ```
 
@@ -118,7 +118,7 @@ GET https://graph.microsoft.com/v1.0/print/shares/{printerShareId}
   "@odata.type": "microsoft.graph.printerShare"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -198,7 +198,7 @@ Content-Type: application/json
   "name": "get_printershare_capabilities"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/print/shares/{printerShareId}?$select=id,displayName,capabilities
 ```
 
@@ -241,7 +241,7 @@ GET https://graph.microsoft.com/v1.0/print/shares/{printerShareId}?$select=id,di
   "@odata.type": "microsoft.graph.printerShare"
 }
 --> 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

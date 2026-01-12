@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /deviceAppManagement/deviceAppManagementTasks/{deviceAppManagementTaskId}
 ```
 
@@ -67,7 +67,7 @@ The following table shows the properties that are required when you create the [
 |endpointSecurityPolicyProfile|[endpointSecurityConfigurationProfileType](../resources/intune-partnerintegration-endpointsecurityconfigurationprofiletype.md)|The endpoint security policy profile. Possible values are: `unknown`, `antivirus`, `windowsSecurity`, `bitLocker`, `fileVault`, `firewall`, `firewallRules`, `endpointDetectionAndResponse`, `deviceControl`, `appAndBrowserIsolation`, `exploitProtection`, `webProtection`, `applicationControl`, `attackSurfaceReductionRules`, `accountProtection`.|
 |insights|String|Information about the mitigation.|
 |managedDeviceCount|Int32|The number of vulnerable devices.|
-|intendedSettings|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|The intended settings and their values.|
+|intendedSettings|[keyValuePair](../resources/intune-partnerintegration-keyvaluepair.md) collection|The intended settings and their values.|
 
 
 
@@ -78,7 +78,7 @@ If successful, this method returns a `200 OK` response code and an updated [secu
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/deviceAppManagementTasks/{deviceAppManagementTaskId}
 Content-type: application/json
 Content-length: 746
@@ -111,7 +111,7 @@ Content-length: 746
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 854

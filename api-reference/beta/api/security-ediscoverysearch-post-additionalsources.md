@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearchId}/additionalSources
 ```
 
@@ -67,7 +67,7 @@ The following example shows a request that creates an eDiscovery source from a s
   "name": "create_additional_source_associated_ediscovery_search"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearchId}/additionalSources
 
 {
@@ -117,7 +117,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.dataSource"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 
 {
@@ -153,7 +153,7 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/17011798-ca
 
 The following example shows the response.
 
-``` http
+```http
 HTTP/1.1 200 Created
 
 {

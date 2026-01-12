@@ -35,7 +35,7 @@ Delete your own temporary access pass authentication method.
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 DELETE /me/authentication/temporaryAccessPassMethods/{id}
 ```
 
@@ -44,7 +44,7 @@ Delete your own or another user's temporary access pass authentication method.
 [!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 DELETE /users/{id | userPrincipalName}/authentication/temporaryAccessPassMethods/{id}
 ```
 
@@ -112,6 +112,6 @@ DELETE https://graph.microsoft.com/v1.0/users/071cc716-8147-4397-a5ba-b2105951cc
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

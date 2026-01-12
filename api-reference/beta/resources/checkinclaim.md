@@ -6,7 +6,7 @@ ms.date: 08/06/2025
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: resourcePageType
-toc.title: "Check-in claim (preview)"
+toc.title: "Check-in claim"
 ---
 
 # checkInClaim resource type
@@ -35,9 +35,9 @@ Represents the check-in status to a place for an Outlook calendar event.
 |Member|Description|
 |:---|:---|
 |unspecified| Default value when no other check-in method is used. We recommend that you use a value other than `unspecified`. |
-|manual| Manual check-ins to a building via Outlook calendar, Teams, Places, or to a desk via email reminder. |
-|inferred| Building check-ins based on wireless network, badging data, or GPS signal. |
-|verified| Check-ins via a device bound to a place. |
+|manual| Manual check-in to a desk or room based on an email or Teams chat reminder.|
+|inferred| Check-in based on wireless network, badge access, or GPS signal.|
+|verified| Check-in via a device bound to a place.|
 |unknownFutureValue| Evolvable enumeration sentinel value. Don't use.  |
 
 ## Relationships

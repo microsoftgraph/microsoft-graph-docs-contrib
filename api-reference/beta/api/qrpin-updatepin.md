@@ -36,7 +36,7 @@ Update your own QR Code PIN.
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 PATCH /me/authentication/qrCodePinMethod/pin/updatepin
 ```
 
@@ -45,7 +45,7 @@ Update another user's QR Code PIN.
 [!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 PATCH /users/{usersId}/authentication/qrCodePinMethod/pin/updatepin
 ```
 
@@ -83,7 +83,7 @@ The following example shows a request.
   "name": "qrpinthis.updatepin"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/me/authentication/qrCodePinMethod/pin/updatePin
 Content-Type: application/json
 
@@ -108,7 +108,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [application](../resources/application.md) object.
+Create a new [application](../resources/application.md) object. This API can also create an [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object when the **@odata.type** property is set to `#microsoft.graph.agentIdentityBlueprint`.
 
 > [!IMPORTANT]
 >
@@ -38,23 +38,25 @@ POST /applications
 ```
 
 ## Request headers
+
 | Name           | Description                |
 |:---------------|:---------------------------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type   | application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of [application](../resources/application.md) object. The request body must contain  **displayName**, which is a required property.
+In the request body, supply a JSON representation of [application](../resources/application.md) object. The request body must contain  **displayName**, which is a required property. To create an [agentIdentityBlueprint](../resources/agentidentityblueprint.md), also set the **@odata.type** property to `#microsoft.graph.agentIdentityBlueprint`.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and an [application](../resources/application.md) object in the response body.
+If successful, this method returns `201 Created` response code and an [application](../resources/application.md) or [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object in the response body.
 
 ## Examples
 
 ### Example 1: Create an application with the default settings
 
 #### Request
+
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -175,6 +177,7 @@ Content-type: application/json
 ### Example 2: Create a new application and add a password secret
 
 #### Request
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -272,6 +275,68 @@ Content-type: application/json
 }
 ```
 
+### Example 3: Create a new multitenant application limited to only some tenants
+
+#### Request
+
+The following example creates a multitenant application that can only be used in two allowed Microsoft Entra tenants (and the tenant where the app is registered).
+
+<!-- {
+  "blockType": "request",
+  "name": "create_application_with_signinaudiencerestrictions"
+}-->
+```http
+POST https://graph.microsoft.com/beta/applications
+Content-type: application/json
+
+{
+  "displayName": "MyAppName",
+  "signInAudience": "AzureADMultipleOrgs",
+  "signInAudienceRestrictions": {
+    "@odata.type": "#microsoft.graph.allowedTenantsAudience",
+    "isHomeTenantAllowed": true,
+    "allowedTenantIds": [
+      "818ce016-78c2-457c-91d7-c02c2faaa5fe",
+      "c62670b0-53a1-4a38-b26c-4093cbaa510a"
+    ]
+  }
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+> **Note**: The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.application"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications/$entity",
+    "id": "83ab4737-da9d-4084-86f2-f8fbec220647",
+    "appId": "9519e58c-bd06-4120-a7fd-2220d4de8409",
+    "createdDateTime": "2025-11-01T19:10:02.6626202Z",
+    "displayName": "MyAppName",
+    "signInAudience": "AzureADMultipleOrgs",
+    "signInAudienceRestrictions": {
+      "@odata.type": "#microsoft.graph.allowedTenantsAudience",
+      "isHomeTenantAllowed": true,
+      "allowedTenantIds": [
+        "818ce016-78c2-457c-91d7-c02c2faaa5fe",
+        "c62670b0-53a1-4a38-b26c-4093cbaa510a"
+      ]
+    }
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -285,6 +350,3 @@ Content-type: application/json
   ]
 }
 -->
-
-
-

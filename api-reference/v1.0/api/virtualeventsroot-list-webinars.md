@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 GET /solutions/virtualEvents/webinars
 ```
 
@@ -68,7 +68,7 @@ The following example shows a request.
   "name": "list_virtualeventwebinars"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars
 ```
 
@@ -112,7 +112,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.virtualEventWebinar)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

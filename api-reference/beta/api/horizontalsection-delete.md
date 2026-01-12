@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Remove a [horizontalSection](../resources/horizontalSection.md) from a [sitePage](../resources/sitepage.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -55,7 +57,7 @@ If the target horizontal section is not found, this method returns `404 Not Foun
 
 <!-- { "blockType": "ignored" } -->
 
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab6327d5b202/microsoft.graph.sitePage/canvasLayout/horizontalSections/1
 ```
 

@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags
 ```
 
@@ -40,7 +40,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags
 ## Request body
 In the request body, supply a JSON representation of the [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.
 
-You can specify the following properties when you create an **ediscoveryReviewTag**.
+You can specify the following properties when you create an **ediscoveryReviewTag**. The **parent** relationship can also be specified.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -64,13 +64,16 @@ The following example shows a request.
   "name": "create_ediscoveryreviewtag_ID_tags"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/58399dff-cebe-478f-b1af-d3227f1fd645/tags
 
 {
     "displayName": "My tag API",
     "description": "Use Graph API to create tags",
-    "childSelectability": "Many"
+    "childSelectability": "Many",
+	"parent@odata.bind":
+	"https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/{ediscoveryCaseID}/tags/{parentTagID}"
+	
 }
 ```
 
@@ -113,7 +116,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.ediscoveryReviewTag"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -148,7 +151,7 @@ The following example shows a request.
   "name": "create_ediscoveryreviewtag_with_a_parent"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/58399dff-cebe-478f-b1af-d3227f1fd645/tags
 
 {
@@ -198,7 +201,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.ediscoveryReviewTag"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

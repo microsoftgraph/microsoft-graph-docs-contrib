@@ -5,7 +5,7 @@ author: "GGsmile"
 ms.localizationpriority: medium
 ms.subservice: "reports"
 doc_type: apiPageType
-ms.date: 10/01/2024
+ms.date: 01/08/2025
 ---
 
 # reportRoot: getMicrosoft365CopilotUserCountSummary
@@ -13,6 +13,9 @@ ms.date: 10/01/2024
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!NOTE]
+> Going forward, use the Microsoft 365 Copilot usage APIs under the `/copilot` URL path segment. For more information, see [Copilot report root](/microsoft-365-copilot/extensibility/api/admin-settings/reports/resources/copilotreportroot) and [Get Copilot user count summary](/microsoft-365-copilot/extensibility/api/admin-settings/reports/copilotreportroot-getmicrosoft365copilotusercountsummary).
 
 Get the aggregated number of active and enabled users of Microsoft 365 Copilot for a specified time period.
 
@@ -33,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /reports/getMicrosoft365CopilotUserCountSummary(period='{period_value}')
 ```
 
@@ -108,7 +111,7 @@ The following example shows a request.
   "name": "reportroot_getmicrosoft365copilotusercountsummary_csv"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getMicrosoft365CopilotUserCountSummary(period='D7')?$format=text/csv
 ```
 
@@ -147,7 +150,7 @@ GET https://graph.microsoft.com/beta/reports/getMicrosoft365CopilotUserCountSumm
 The following example shows the response.
 
 <!-- { "blockType": "response" } -->
-``` http
+```http
 HTTP/1.1 302 Found
 Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
@@ -181,7 +184,7 @@ The following example shows a request.
   "name": "reportroot_getmicrosoft365copilotusercountsummary_json"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/getMicrosoft365CopilotUserCountSummary(period='D7')?$format=application/json
 ```
 

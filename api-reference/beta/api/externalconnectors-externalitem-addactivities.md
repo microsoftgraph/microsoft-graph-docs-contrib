@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST external/connections/{connectionsId}/items/{externalItemId}/addActivities
 ```
 
@@ -77,7 +77,7 @@ The following example shows a request.
   "sampleKeys": ["contosohr", "TSP228082938"]
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228082938/addActivities
 Content-Type: application/json
 Content-length: 190
@@ -139,7 +139,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.externalConnectors.externalActivityResult)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

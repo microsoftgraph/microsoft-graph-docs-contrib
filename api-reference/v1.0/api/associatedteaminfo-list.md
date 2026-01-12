@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /users/{user-id}/teamwork/associatedTeams
 ```
 
@@ -67,7 +67,7 @@ The following example shows a request.
   "name": "list_associatedteaminfo"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/teamwork/associatedTeams
 ```
 
@@ -113,7 +113,7 @@ The following example shows the response.
   "isCollection": true
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -3,6 +3,168 @@
     {
       "ChangeList": [
         {
+          "Id": "3f47a05d-c32d-4274-9c57-6343d75b451c",
+          "ApiChange": "Method",
+          "ChangedApiName": "assign",
+          "ChangeType": "Addition",
+          "Description": "Added the assign method to the deviceManagementAuditPolicy resource.",
+          "Target": "deviceManagementAuditPolicy"
+        },
+        {
+          "Id": "6b12922f-ea1f-47ff-b6c3-38840b4f6f15",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "androidManagedStoreLayoutType",
+          "ChangeType": "Addition",
+          "Description": "Added the **androidManagedStoreLayoutType** enumeration type.",
+          "Target": "androidManagedStoreLayoutType"
+        },
+        {
+          "Id": "6b12922f-ea1f-47ff-b6c3-38840b4f6f15",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "managedGooglePlayEnterpriseType",
+          "ChangeType": "Addition",
+          "Description": "Added the **managedGooglePlayEnterpriseType** enumeration type.",
+          "Target": "managedGooglePlayEnterpriseType"
+        },
+        {
+          "Id": "6b12922f-ea1f-47ff-b6c3-38840b4f6f15",
+          "ApiChange": "Property",
+          "ChangedApiName": "managedGooglePlayEnterpriseType",
+          "ChangeType": "Addition",
+          "Description": "Added the **managedGooglePlayEnterpriseType** property to the androidManagedStoreAccountEnterpriseSettings resource.",
+          "Target": "androidManagedStoreAccountEnterpriseSettings"
+        },
+        {
+          "Id": "6b12922f-ea1f-47ff-b6c3-38840b4f6f15",
+          "ApiChange": "Method",
+          "ChangedApiName": "requestEnterpriseUpgradeUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the requestEnterpriseUpgradeUrl method to the androidManagedStoreAccountEnterpriseSettings resource.",
+          "Target": "androidManagedStoreAccountEnterpriseSettings"
+        },
+        {
+          "Id": "6b12922f-ea1f-47ff-b6c3-38840b4f6f15",
+          "ApiChange": "Method",
+          "ChangedApiName": "setStoreLayout",
+          "ChangeType": "Addition",
+          "Description": "Added the setStoreLayout method to the androidManagedStoreAccountEnterpriseSettings resource.",
+          "Target": "androidManagedStoreAccountEnterpriseSettings"
+        },
+        {
+          "Id": "6b12922f-ea1f-47ff-b6c3-38840b4f6f15",
+          "ApiChange": "Method",
+          "ChangedApiName": "retrieveStoreLayout",
+          "ChangeType": "Addition",
+          "Description": "Added the retrieveStoreLayout method to the androidManagedStoreAccountEnterpriseSettings resource.",
+          "Target": "androidManagedStoreAccountEnterpriseSettings"
+        },
+        {
+          "Id": "f1cbd86b-32e8-40bf-b082-c73fb7e2fe1f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "appleDeviceDeliveryProtocol",
+          "ChangeType": "Addition",
+          "Description": "Added the **appleDeviceDeliveryProtocol** enumeration type.",
+          "Target": "appleDeviceDeliveryProtocol"
+        },
+        {
+          "Id": "f1cbd86b-32e8-40bf-b082-c73fb7e2fe1f",
+          "ApiChange": "Property",
+          "ChangedApiName": "appleDeviceAppDeliveryProtocolType",
+          "ChangeType": "Addition",
+          "Description": "Added the **appleDeviceAppDeliveryProtocolType** property to the iosLobApp resource.",
+          "Target": "iosLobApp"
+        },
+        {
+          "Id": "ab0faacc-0a7e-451a-b7de-90984f37325b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsZtdnsExemptionRule",
+          "ChangeType": "Addition",
+          "Description": "Added the windowsZtdnsExemptionRule resource.",
+          "Target": "windowsZtdnsExemptionRule"
+        },
+        {
+          "Id": "ab0faacc-0a7e-451a-b7de-90984f37325b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsZtdnsSecureDnsServer",
+          "ChangeType": "Addition",
+          "Description": "Added the windowsZtdnsSecureDnsServer resource.",
+          "Target": "windowsZtdnsSecureDnsServer"
+        },
+        {
+          "Id": "ab0faacc-0a7e-451a-b7de-90984f37325b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsZtdnsSecureDnsServerDnsOverHttpsConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the windowsZtdnsSecureDnsServerDnsOverHttpsConfiguration resource.",
+          "Target": "windowsZtdnsSecureDnsServerDnsOverHttpsConfiguration"
+        },
+        {
+          "Id": "ab0faacc-0a7e-451a-b7de-90984f37325b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsZtdnsSecureDnsServerDnsOverTlsConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the windowsZtdnsSecureDnsServerDnsOverTlsConfiguration resource.",
+          "Target": "windowsZtdnsSecureDnsServerDnsOverTlsConfiguration"
+        },
+        {
+          "Id": "ab0faacc-0a7e-451a-b7de-90984f37325b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsZtdnsConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the windowsZtdnsConfiguration resource.",
+          "Target": "windowsZtdnsConfiguration"
+        },
+        {
+          "Id": "fb5fec4a-8313-49ce-b881-d1014602a6d9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "keyValuePair",
+          "ChangeType": "Addition",
+          "Description": "Added the keyValuePair resource.",
+          "Target": "keyValuePair"
+        },
+        {
+          "Id": "fb5fec4a-8313-49ce-b881-d1014602a6d9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the deviceManagement resource.",
+          "Target": "deviceManagement"
+        },
+        {
+          "Id": "cfb90c00-d8cf-4855-90a6-438957380178",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "deviceInventoryKqlQueries",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceInventoryKqlQueries** relationship to the deviceManagement resource.",
+          "Target": "deviceManagement"
+        },
+        {
+          "Id": "3a66cef4-8821-4999-9cae-1450ba4c2d68",
+          "ApiChange": "Member",
+          "ChangedApiName": "quickMachineRecovery",
+          "ChangeType": "Addition",
+          "Description": "Added the `quickMachineRecovery` member to the **windowsQualityUpdateCategory** enumeration.",
+          "Target": "windowsQualityUpdateCategory"
+        },
+        {
+          "Id": "12850bf5-57aa-405c-ac85-7241a28595a7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "iosDdmLobAppAssignmentSettings",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **iosDdmLobAppAssignmentSettings** resource.",
+          "Target": "iosDdmLobAppAssignmentSettings"
+        }
+      ],
+      "Id": "3f47a05d-c32d-4274-9c57-6343d75b451c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-10-21T16:02:41.7234267Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "1739ffde-c445-4039-b873-31a801b8db6a",
           "ApiChange": "Enumeration",
           "ChangedApiName": "mobileAppContentScriptState",
@@ -209,7 +371,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "iosDdmLobAppAssignmentSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [iosDdmLobAppAssignmentSettings](https://learn.microsoft.com/en-us/graph/api/resources/intune-iosDdmLobAppAssignmentSettings?view=graph-rest-1.0) resource.",
+          "Description": "Added the iosDdmLobAppAssignmentSettings resource.",
           "Target": "iosDdmLobAppAssignmentSettings"
         },
         {
@@ -217,7 +379,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "mobileAppRelationships",
           "ChangeType": "Addition",
-          "Description": "Added the **mobileAppRelationships** relationship to the [deviceAppManagement](https://learn.microsoft.com/en-us/graph/api/resources/intune-deviceAppManagement?view=graph-rest-1.0) resource.",
+          "Description": "Added the **mobileAppRelationships** relationship to the deviceAppManagement resource.",
           "Target": "deviceAppManagement"
         },
         {
@@ -225,7 +387,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mobileAppRelationship",
           "ChangeType": "Addition",
-          "Description": "Added the [mobileAppRelationship](https://learn.microsoft.com/en-us/graph/api/resources/intune-mobileAppRelationship?view=graph-rest-1.0) resource.",
+          "Description": "Added the mobileAppRelationship resource.",
           "Target": "mobileAppRelationship"
         }
       ],

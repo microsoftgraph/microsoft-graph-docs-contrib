@@ -1,11 +1,11 @@
 ---
 title: "deviceManagementExportJob resource type"
-description: "Entity representing a job to export a report"
+description: "Entity representing a job to export a report."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/13/2024
+ms.date: 08/01/2024
 ---
 
 # deviceManagementExportJob resource type
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Entity representing a job to export a report
+Entity representing a job to export a report.
 
 ## Methods
 |Method|Return Type|Description|
@@ -28,17 +28,17 @@ Entity representing a job to export a report
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for this entity|
-|reportName|String|Name of the report|
-|filter|String|Filters applied on the report|
-|select|String collection|Columns selected from the report|
-|format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Format of the exported report. Possible values are: `csv`, `pdf`, `json`, `unknownFutureValue`.|
-|snapshotId|String|A snapshot is an identifiable subset of the dataset represented by the ReportName. A sessionId or CachedReportConfiguration id can be used here. If a sessionId is specified, Filter, Select, and OrderBy are applied to the data represented by the sessionId. Filter, Select, and OrderBy cannot be specified together with a CachedReportConfiguration id.|
-|localizationType|[deviceManagementExportJobLocalizationType](../resources/intune-reporting-devicemanagementexportjoblocalizationtype.md)|Configures how the requested export job is localized. Possible values are: `localizedValuesAsAdditionalColumn`, `replaceLocalizableValues`.|
-|status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status of the export job. Possible values are: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
-|url|String|Temporary location of the exported report|
-|requestDateTime|DateTimeOffset|Time that the exported report was requested|
-|expirationDateTime|DateTimeOffset|Time that the exported report expires|
+|id|String|Unique identifier for this entity.|
+|reportName|String|Name of the report. The maximum length allowed for this property is 2000 characters.|
+|filter|String|Filters applied on the report. The maximum length allowed for this property is 2000 characters.|
+|select|String collection|Columns selected from the report. The maximum number of allowed columns names is 256. The maximum length allowed for each column name in this property is 1000 characters.|
+|format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Format of the exported report. Possible values are `csv` and `json`. The possible values are: `csv`, `pdf`, `json`, `unknownFutureValue`.|
+|snapshotId|String|A snapshot is an identifiable subset of the dataset represented by the ReportName. A sessionId or CachedReportConfiguration id can be used here. If a sessionId is specified, Filter, Select, and OrderBy are applied to the data represented by the sessionId. Filter, Select, and OrderBy cannot be specified together with a CachedReportConfiguration id. The maximum length allowed for this property is 128 characters.|
+|localizationType|[deviceManagementExportJobLocalizationType](../resources/intune-reporting-devicemanagementexportjoblocalizationtype.md)|Configures how the requested export job is localized. Possible values are `replaceLocalizableValues` and `localizedValuesAsAdditionalColumn`. The possible values are: `localizedValuesAsAdditionalColumn`, `replaceLocalizableValues`.|
+|status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status of the export job. Possible values are `unknown`, `notStarted`, `inProgress`, `completed` and `failed`. The possible values are: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
+|url|String|Temporary location of the exported report.|
+|requestDateTime|DateTimeOffset|Time that the exported report was requested.|
+|expirationDateTime|DateTimeOffset|Time that the exported report expires.|
 
 ## Relationships
 None

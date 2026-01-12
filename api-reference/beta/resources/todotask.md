@@ -36,6 +36,9 @@ This resource supports the following:
 |[Create checklistItem](../api/todotask-post-checklistitems.md)|[checklistItem](../resources/checklistitem.md)|Create a new **checklistItem** object.|
 |[List linkedResources](../api/todotask-list-linkedresources.md)|[linkedResource](../resources/linkedresource.md) collection|Get the linkedResources from the linkedResources navigation property.|
 |[Create linkedResources](../api/todotask-post-linkedresources.md)|[linkedResource](../resources/linkedresource.md)|Create a new linkedResources object.|
+|**Extended properties**| | |
+|[Create single-value property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[todoTask](todotask.md)  |Create one or more single-value extended properties in a new or existing [todoTask](../resources/todotask.md) object. |
+|[Get single-value property](../api/singlevaluelegacyextendedproperty-get.md)  | [todoTask](todotask.md) | Get [todoTask](../resources/todotask.md) objects that contain a single-value extended property by using `$expand` or `$filter`. |
 
 ## Properties
 |Property|Type|Description|
@@ -48,13 +51,13 @@ This resource supports the following:
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date and time in the specified time zone that the task is to be finished.|
 |hasAttachments|Boolean|Indicates whether the task has attachments.|
 |id|String|Unique identifier for the task. By default, this value changes when the item is moved from one list to another.|
-|importance|importance|The importance of the task. Possible values are: `low`, `normal`, `high`.|
+|importance|importance|The importance of the task. The possible values are: `low`, `normal`, `high`.|
 |isReminderOn|Boolean|Set to true if an alert is set to remind the user of the task.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|The recurrence pattern for the task.|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date and time in the specified time zone for a reminder alert of the task to occur.|
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The date and time in the specified time zone at which the task is scheduled to start.|
-|status|taskStatus|Indicates the state or progress of the task. Possible values are: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
+|status|taskStatus|Indicates the state or progress of the task. The possible values are: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
 |title|String|A brief description of the task.|
 
 ## Relationships
@@ -64,6 +67,7 @@ This resource supports the following:
 |checklistItems|[checklistItem](../resources/checklistitem.md) collection|A collection of smaller subtasks linked to the more complex parent task. |
 |extensions|[extension](extension.md) collection| The collection of open extensions defined for the task. Nullable.|
 |linkedResources|[linkedResource](../resources/linkedresource.md) collection|A collection of resources linked to the task.|
+|singleValueExtendedProperties|[singleValueExtendedProperty](../resources/singlevalueextendedproperty.md) collection|A collection of custom fields linked to the task.|
 
 
 ## JSON representation

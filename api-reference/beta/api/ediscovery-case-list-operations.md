@@ -1,6 +1,6 @@
 ---
-title: "List operations"
-description: "Get the list caseOperations from a case object."
+title: "List eDiscovery caseOperation objects"
+description: "Get the list case operations from an eDiscovery case object."
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.subservice: "ediscovery"
@@ -8,13 +8,15 @@ doc_type: resourcePageType
 ms.date: 06/11/2024
 ---
 
-# List operations
+# LList eDiscovery caseOperation objects
 
 Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of [caseOperations](../resources/ediscovery-caseoperation.md) from a [case](../resources/ediscovery-case.md) object.
+[!INCLUDE [ediscovery-deprecation](../includes/ediscovery-subnamespace-deprecation.md)]
+
+Get the list of [caseOperations](../resources/ediscovery-caseoperation.md) from an eDiscovery [case](../resources/ediscovery-case.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -35,7 +37,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 
-``` http
+```http
 GET /compliance/ediscovery/cases/{caseId}/operations
 ```
 
@@ -68,7 +70,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/061b9a92-8926-4bd9-b41d-abf35edc7583/operations
 ```
 
@@ -112,7 +114,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/061b9a92-8926-4
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

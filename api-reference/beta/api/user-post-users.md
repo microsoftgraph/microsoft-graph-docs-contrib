@@ -15,25 +15,29 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [user](../resources/user.md).
-The request body contains the user to create. At a minimum, you must specify the required properties for the user. You can optionally specify any other writable properties.
+Create a new [user](../resources/user.md). If you specify an **@odata.type** property with a value of `#microsoft.graph.agentUser` with the required properties, this API creates an [agentUser](../resources/agentuser.md) object.
 
-This operation returns by default only a subset of the properties for each user. These default properties are noted in the [Properties](../resources/user.md#properties) section. To get properties that are not returned by default, do a [GET operation](user-get.md) and specify the properties in a `$select` OData query option.
+At a minimum, you must specify the required properties. You can optionally specify any other writable properties.
+
+This operation returns by default only a subset of the properties for each **user** and **agentUser**. These default properties are noted in the [Properties](../resources/user.md#properties) section. To get properties that are not returned by default, do a [GET operation](user-get.md) and specify the properties in a `$select` OData query option.
 
 >[!NOTE]
->To create external users as part of B2B collaboration with your organization, use the [invitation API](invitation-post.md). To create a customer, citizen, or business partner in Microsoft Entra External ID in external tenants, see [Example 3: Create a customer account](#example-3-create-a-customer-account-in-external-tenants).
+>To create external users as part of B2B collaboration with your organization, use the [invitation API](invitation-post.md). To create a customer, citizen, or business partner in Microsoft Entra External ID in external tenants, see [Example 4: Create a customer account](#example-4-create-a-customer-account-in-external-tenants).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.ReadWrite.All, Directory.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | User.ReadWrite.All, Directory.ReadWrite.All |
+|Permission type      | Least privileged permission | Higher privileged permissions |
+|:--------------------|:---------------------------|:-----------------------------|
+|Delegated (work or school account) | User.ReadWrite.All | Directory.ReadWrite.All |
+|Delegated (personal Microsoft account) | Not supported. | |
+|Application | User.ReadWrite.All | Directory.ReadWrite.All |
+
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -50,7 +54,9 @@ POST /users
 
 In the request body, supply a JSON representation of [user](../resources/user.md) object.
 
-The following table lists the properties that are required when you create a user. If you're including an **identities** property for the user you're creating, not all the properties listed are required. For a social identity, none of the properties are required.
+The following table lists the properties that are *required* when you create a **user** or **agentUser**.
+- You must specify an **@odata.type** property with a value of `#microsoft.graph.agentUser` to create an **agentUser**, otherwise a **user** is created and the iden
+- If you're including an **identities** property for the user you're creating, not all the properties listed are required. For a social identity, none of the properties are required.
 
 | Parameter | Type | Description|
 |:---------------|:--------|:----------|
@@ -58,26 +64,29 @@ The following table lists the properties that are required when you create a use
 |displayName |String |The name to display in the address book for the user.|
 |onPremisesImmutableId |String |Required only when creating a new user account if you are using a federated domain for the user's **userPrincipalName** (UPN) property.|
 |mailNickname |String |The mail alias for the user.|
-|passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |The password profile for the user.|
+|passwordProfile|[passwordProfile](../resources/passwordprofile.md) |The password profile for the user. Applies to [user](../resources/user.md) only and not allowed for [agentUser](../resources/agentuser.md). |
 |userPrincipalName |String |The user principal name (someuser@contoso.com). It's an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](../resources/organization.md). <br>NOTE: This property cannot contain accent characters. Only the following characters are allowed `A - Z`, `a - z`, `0 - 9`, ` ' . - _ ! # ^ ~`. For the complete list of allowed characters, see [username policies](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts).|
+| identityParentId | String | The object ID of the associated [agent identity](../resources/agentidentity.md). Required for **agentUser** where **@odata.type** of `#microsoft.graph.agentUser` must be set and ignored for regular users. If not set, a regular user is created.|
 
-Because the **user** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the user instance while creating it.
+Because this resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the user instance while creating it.
 
-Federated users created via this API will be forced to sign in every 12 hours by default. For information about how to change this, see [Exceptions for token lifetimes](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).
+Federated users created via this API must sign in every 12 hours by default. For information about how to change this, see [Exceptions for token lifetimes](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).
 
 >[!NOTE]
 >Adding a [B2C local account](../resources/objectidentity.md) to an existing **user** object is not allowed, unless the **user** object already contains a local account identity.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [user](../resources/user.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [user](../resources/user.md) or [agentUser](../resources/agentuser.md) object in the response body.
+
+Omitting the `@odata.type` property of `#microsoft.graph.agentUser` creates a user object, even if the **identityParentId** is specified. Attempting to create an **agentUser** with a **identityParentId** already linked to another agentUser returns a `400 Bad Request` error.
 
 ## Example
 
 ### Example 1: Create a user
 
 #### Request
-The following example shows a request.
+The following example shows a request, specifying only the required properties.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -131,7 +140,6 @@ Content-type: application/json
 
 ---
 
-In the request body, supply a JSON representation of [user](../resources/user.md) object.
 ##### Response
 The following example shows the response.
 
@@ -163,7 +171,95 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Create a user with social and local account identities in Azure AD B2C
+### Example 2: Create an agent user
+
+#### Request
+The following example shows a request, specifying only the required properties.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_agentuser"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/users
+Content-type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.agentUser",
+  "accountEnabled": true,
+  "displayName": "Adele Vance",
+  "mailNickname": "AdeleV",
+  "userPrincipalName": "AdeleV@contoso.com",
+  "identityParentId": ""
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-agentuser-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-agentuser-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-agentuser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-agentuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-agentuser-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-agentuser-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-agentuser-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+##### Response
+The following example shows the response.
+
+>[!NOTE]
+>The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users/$entity",
+    "@odata.type": "#microsoft.graph.agentUser",
+    "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd",
+    "businessPhones": [],
+    "displayName": "Adele Vance",
+    "givenName": "Adele",
+    "jobTitle": "Product Marketing Manager",
+    "mail": "AdeleV@contoso.com",
+    "mobilePhone": "+1 425 555 0109",
+    "officeLocation": "18/2111",
+    "preferredLanguage": "en-US",
+    "surname": "Vance",
+    "userPrincipalName": "AdeleV@contoso.com"
+}
+```
+
+### Example 3: Create a user with social and local account identities in Azure AD B2C
 
 Create a new user, with a local account identity with a sign-in name, an email address as sign-in, and with a social identity. This example is typically used for migration scenarios in Azure AD B2C tenants.
 
@@ -280,7 +376,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Create a customer account in external tenants
+### Example 4: Create a customer account in external tenants
 
 This example shows how to create a customer account in Microsoft Entra External ID in external tenants.
 
