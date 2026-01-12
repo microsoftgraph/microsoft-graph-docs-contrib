@@ -8528,32 +8528,14 @@ items:
       href: ../../api/windowsupdates-operationalinsightsconnection-get.md
     - name: Delete operational insights connection
       href: ../../api/windowsupdates-operationalinsightsconnection-delete.md
-  - name: Policy
-    items:
-    - name: Policy
-      href: ../../resources/windowsupdates-policy.md
-    - name: List
-      href: ../../api/adminwindowsupdates-list-updatepolicies.md
-    - name: Create
-      href: ../../api/adminwindowsupdates-post-updatepolicies.md
-    - name: Get
-      href: ../../api/windowsupdates-policy-get.md
-    - name: Update
-      href: ../../api/windowsupdates-updatepolicy-update.md
-    - name: Delete
-      href: ../../api/windowsupdates-updatepolicy-delete.md
-    - name: List applicable content
-      href: ../../api/windowsupdates-policy-list-applicablecontent.md
-    - name: Create applicable content
-      href: ../../api/windowsupdates-policy-post-applicablecontent.md
-    - name: List rings
-      href: ../../api/windowsupdates-policy-list-rings.md
-    - name: Create ring
-      href: ../../api/windowsupdates-policy-post-rings.md
   - name: Policy approval
     items:
     - name: Policy approval
       href: ../../resources/windowsupdates-policyapproval.md
+    - name: List
+      href: ../../api/windowsupdates-policy-list-approvals.md
+    - name: Create
+      href: ../../api/windowsupdates-policy-post-approvals.md
     - name: Get
       href: ../../api/windowsupdates-policyapproval-get.md
     - name: Update
@@ -8586,6 +8568,10 @@ items:
       href: ../../api/windowsupdates-policy-list-applicablecontent.md
     - name: Create applicableContent
       href: ../../api/windowsupdates-policy-post-applicablecontent.md
+    - name: List approvals
+      href: ../../api/windowsupdates-policy-list-approvals.md
+    - name: Create policyApproval
+      href: ../../api/windowsupdates-policy-post-approvals.md
     - name: List rings
       href: ../../api/windowsupdates-policy-list-rings.md
     - name: Create ring
@@ -8624,6 +8610,8 @@ items:
       href: ../../api/windowsupdates-ring-get.md
     - name: Update
       href: ../../api/windowsupdates-ring-update.md
+    - name: Delete
+      href: ../../api/windowsupdates-ring-delete.md
   - name: Updatable asset
     items:
     - name: Updatable asset
