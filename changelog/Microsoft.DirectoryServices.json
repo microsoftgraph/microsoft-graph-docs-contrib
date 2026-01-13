@@ -1,6 +1,56 @@
 {
   "changelog": [
-   {
+{
+      "ChangeList": [
+        {
+          "Id": "fccc0463-d545-4848-a52f-b77d4f364666",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "kind",
+          "ChangeType": "Addition",
+          "Description": "Added the **kind** enumeration type.",
+          "Target": "kind"
+        },
+        {
+          "Id": "fccc0463-d545-4848-a52f-b77d4f364666",
+          "ApiChange": "Resource",
+          "ChangedApiName": "allowedTenantsAudience",
+          "ChangeType": "Addition",
+          "Description": "Added the [allowedTenantsAudience](https://learn.microsoft.com/en-us/graph/api/resources/allowedTenantsAudience?view=graph-rest-beta) resource.",
+          "Target": "allowedTenantsAudience"
+        },
+        {
+          "Id": "fccc0463-d545-4848-a52f-b77d4f364666",
+          "ApiChange": "Resource",
+          "ChangedApiName": "signInAudienceRestrictionsBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [signInAudienceRestrictionsBase](https://learn.microsoft.com/en-us/graph/api/resources/signInAudienceRestrictionsBase?view=graph-rest-beta) resource.",
+          "Target": "signInAudienceRestrictionsBase"
+        },
+        {
+          "Id": "fccc0463-d545-4848-a52f-b77d4f364666",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unrestrictedAudience",
+          "ChangeType": "Addition",
+          "Description": "Added the [unrestrictedAudience](https://learn.microsoft.com/en-us/graph/api/resources/unrestrictedAudience?view=graph-rest-beta) resource.",
+          "Target": "unrestrictedAudience"
+        },
+        {
+          "Id": "fccc0463-d545-4848-a52f-b77d4f364666",
+          "ApiChange": "Property",
+          "ChangedApiName": "signInAudienceRestrictions",
+          "ChangeType": "Addition",
+          "Description": "Added the **signInAudienceRestrictions** property to the [application](https://learn.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
+          "Target": "application"
+        }
+      ],
+      "Id": "fccc0463-d545-4848-a52f-b77d4f364666",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-12-29T17:07:34.1334231Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
       "ChangeList": [
         {
           "Id": "fcda7807-b752-40fb-9a05-786f9ea09f57",
@@ -357,6 +407,32 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-04-18T21:26:04.1966845Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "010934ac-58ad-41a8-ada4-84943068c2d2",
+          "ApiChange": "Property",
+          "ChangedApiName": "isDisabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isDisabled** property to the [application](https://learn.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
+          "Target": "application"
+        },
+        {
+          "Id": "010934ac-58ad-41a8-ada4-84943068c2d2",
+          "ApiChange": "Property",
+          "ChangedApiName": "isDisabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isDisabled** property to the [servicePrincipal](https://learn.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-beta) resource.",
+          "Target": "servicePrincipal"
+        }
+      ],
+      "Id": "010934ac-58ad-41a8-ada4-84943068c2d2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-12-09T22:48:54.7556185Z",
       "WorkloadArea": "Applications",
       "SubArea": ""
     },
@@ -14767,7 +14843,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-11-17T23:52:29.3280091Z",
-      "WorkloadArea": "Applications",
+      "WorkloadArea": "Agents",
       "SubArea": ""
     },
     {

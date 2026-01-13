@@ -25,7 +25,7 @@ Inherits from [win32LobAppDetection](../resources/intune-apps-win32lobappdetecti
 |Property|Type|Description|
 |:---|:---|:---|
 |productCode|String|The product code of Win32 Line of Business (LoB) app.|
-|productVersionOperator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|The operator to detect product version. The possible values are: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
+|productVersionOperator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|The operator to detect product version. Possible values are: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
 |productVersion|String|The product version of Win32 Line of Business (LoB) app.|
 
 ## Relationships

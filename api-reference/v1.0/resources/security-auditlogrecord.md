@@ -12,8 +12,6 @@ ms.date: 05/23/2024
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents an audit log entry that contains standard audit attributes and auditData specific to the Microsoft 365 service.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).

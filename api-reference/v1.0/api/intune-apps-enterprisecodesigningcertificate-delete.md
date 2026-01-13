@@ -54,7 +54,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request" , "name" : "intune_apps_enterprisecodesigningcertificate_delete_delete_enterprisecodesigningcertificate" }-->
 ``` http
-DELETE https://graph.microsoft.com/beta/deviceAppManagement/enterpriseCodeSigningCertificates/{enterpriseCodeSigningCertificateId}
+DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/enterpriseCodeSigningCertificates/{enterpriseCodeSigningCertificateId}
 ```
 
 # [C#](#tab/csharp)

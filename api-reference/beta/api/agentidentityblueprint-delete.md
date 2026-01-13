@@ -4,7 +4,7 @@ description: "Delete an agentIdentityBlueprint object."
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-applications"
+ms.subservice: "entra-agent-id"
 doc_type: apiPageType
 ---
 
@@ -52,6 +52,8 @@ Don't supply a request body for this method.
 ## Response
 
 If successful, this method returns a `204 No Content` response code.
+
+For information about errors returned by agent identity APIs, see [Agent identity error codes](/entra/agent-id/identity-platform/error-codes).
 
 ## Examples
 

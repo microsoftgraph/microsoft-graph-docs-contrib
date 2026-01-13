@@ -192,6 +192,52 @@ items:
     href: ../../api/filestoragecontainer-post-migrationjobs.md
   - name: Provision migration containers
     href: ../../api/filestoragecontainer-provisionmigrationcontainers.md
+- name: File storage container type
+  items:
+  - name: File storage container type
+    href: ../../resources/filestoragecontainertype.md
+  - name: List
+    href: ../../api/filestorage-list-containertypes.md
+  - name: Create
+    href: ../../api/filestorage-post-containertypes.md
+  - name: Get
+    href: ../../api/filestoragecontainertype-get.md
+  - name: Update
+    href: ../../api/filestoragecontainertype-update.md
+  - name: Delete
+    href: ../../api/filestorage-delete-containertypes.md
+- name: File storage container type app permission grant
+  items:
+  - name: File storage container type app permission grant
+    href: ../../resources/filestoragecontainertypeapppermissiongrant.md
+  - name: List
+    href: ../../api/filestoragecontainertyperegistration-list-applicationpermissiongrants.md
+  - name: Create
+    href: ../../api/filestoragecontainertyperegistration-post-applicationpermissiongrants.md
+  - name: Get
+    href: ../../api/filestoragecontainertypeapppermissiongrant-get.md
+  - name: Update
+    href: ../../api/filestoragecontainertypeapppermissiongrant-update.md
+  - name: Delete
+    href: ../../api/filestoragecontainertyperegistration-delete-applicationpermissiongrants.md
+- name: File storage container type registration
+  items:
+  - name: File storage container type registration
+    href: ../../resources/filestoragecontainertyperegistration.md
+  - name: List
+    href: ../../api/filestorage-list-containertyperegistrations.md
+  - name: Create
+    href: ../../api/filestorage-post-containertyperegistrations.md
+  - name: Get
+    href: ../../api/filestoragecontainertyperegistration-get.md
+  - name: Update
+    href: ../../api/filestoragecontainertyperegistration-update.md
+  - name: Delete
+    href: ../../api/filestorage-delete-containertyperegistrations.md
+  - name: List application permission grants
+    href: ../../api/filestoragecontainertyperegistration-list-applicationpermissiongrants.md
+  - name: Create file storage container type app permission grant
+    href: ../../api/filestoragecontainertyperegistration-post-applicationpermissiongrants.md
 - name: Permission
   items:
   - name: Permission
@@ -272,3 +318,9 @@ items:
     items:
     - name: SharePoint migration container info
       href: ../../resources/sharepointmigrationcontainerinfo.md
+- name: Complex types
+  items:
+  - name: File storage container type registration settings
+    href: ../../resources/filestoragecontainertyperegistrationsettings.md
+  - name: File storage container type settings
+    href: ../../resources/filestoragecontainertypesettings.md

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Create a new [documentProcessingJob](../resources/documentprocessingjob.md) object. The document processing job queues a document, or all documents in a folder, for processing by the applied content models.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

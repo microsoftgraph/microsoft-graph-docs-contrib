@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
-ms.date: 07/22/2024
+ms.date: 01/12/2026
 toc.title: User credential usage details (deprecated)
 ---
 
@@ -30,7 +30,7 @@ Represents the self-service password reset usage for a given tenant. Details inc
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| authMethod | usageAuthMethod | Represents the authentication method that the user used. The possible values are: `email`, `mobileSMS`, `mobileCall`, `officePhone`, `securityQuestion`, `appNotification`, `appCode`, `alternateMobileCall`, `fido`, `appPassword`, `unknownFutureValue`, `externalAuthMethod`, `hardwareOneTimePasscode`, `windowsHelloForBusiness`, `microsoftAuthenticatorPasswordless`, `temporaryAccessPass`, `macOsSecureEnclaveKey`, `passKeyDeviceBound`, `passKeyDeviceBoundAuthenticator`, `passKeyDeviceBoundWindowsHello`, `softwareOneTimePasscode`, `microsoftAuthenticatorPush`, `mobilePhone`, `sms`, `alternateMobilePhone`, `fido2SecurityKey`, `oneTimePasscode`, `passKeySynced`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `externalAuthMethod` , `hardwareOneTimePasscode` , `windowsHelloForBusiness` , `microsoftAuthenticatorPasswordless` , `temporaryAccessPass` , `macOsSecureEnclaveKey` , `passKeyDeviceBound` , `passKeyDeviceBoundAuthenticator` , `passKeyDeviceBoundWindowsHello` , `softwareOneTimePasscode` , `microsoftAuthenticatorPush` , `mobilePhone` , `sms` , `alternateMobilePhone` , `fido2SecurityKey` , `oneTimePasscode` , `passKeySynced`.|
+| authMethod | [usageAuthMethod](../resources/usageauthmethod.md) | Represents the authentication method that the user used. |
 | eventDateTime | DateTimeOffset | The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 | failureReason | String | Provides the failure reason for the corresponding reset or registration workflow. |
 | feature | featureType | The possible values are: `registration`, `reset`, `unknownFutureValue`. |

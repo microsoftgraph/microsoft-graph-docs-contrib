@@ -60,3 +60,5 @@ Remote actions Intune supports.
 |initiateDeviceAttestation|38|Indicates remote device action to intiate Mobile Device Management (MDM) attestation if device is capable for it.|
 |changeAssignments|39|Indicates remote device action to override assignments for a Device.|
 |delete|40|Indicates remote device action to delete a device from Intune portal.|
+|suspendManagedHomeScreen|41|Indicates remote device action to temporarily suspend the Managed Home Screen kiosk app.|
+|restoreManagedHomeScreen|42|Indicates remote device action to restore the Managed Home Screen kiosk app.|

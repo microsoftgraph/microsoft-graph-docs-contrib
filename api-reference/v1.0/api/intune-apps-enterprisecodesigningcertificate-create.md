@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -70,7 +70,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request" , "name" : "intune_apps_enterprisecodesigningcertificate_create_create_enterprisecodesigningcertificate" }-->
 ```http
-POST https://graph.microsoft.com/beta/deviceAppManagement/enterpriseCodeSigningCertificates
+POST https://graph.microsoft.com/v1.0/deviceAppManagement/enterpriseCodeSigningCertificates
 Content-type: application/json
 Content-length: 390
 

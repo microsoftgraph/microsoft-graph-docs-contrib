@@ -26,8 +26,8 @@ Inherits from [mobileAppTroubleshootingHistoryItem](../resources/intune-troubles
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|Time when the history item occurred. Inherited from [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
 |troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Object containing detailed information about the error and its remediation. Inherited from [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
-|actionType|[mobileAppActionType](../resources/intune-troubleshooting-mobileappactiontype.md)|Action type for Intune Application. The possible values are: `unknown`, `installCommandSent`, `installed`, `uninstalled`, `userRequestedInstall`.|
-|runState|[runState](../resources/intune-shared-runstate.md)|Status of the item. The possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
+|actionType|[mobileAppActionType](../resources/intune-troubleshooting-mobileappactiontype.md)|Action type for Intune Application. Possible values are: `unknown`, `installCommandSent`, `installed`, `uninstalled`, `userRequestedInstall`.|
+|runState|[runState](../resources/intune-shared-runstate.md)|Status of the item. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |errorCode|String|Error code for the failure, empty if no failure.|
 
 ## Relationships

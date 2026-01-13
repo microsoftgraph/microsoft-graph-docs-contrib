@@ -27,12 +27,12 @@ The entity describes all of the information about a single group policy.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|classType|[groupPolicyDefinitionClassType](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|Identifies the type of groups the policy can be applied to. The possible values are: `user`, `machine`.|
+|classType|[groupPolicyDefinitionClassType](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|Identifies the type of groups the policy can be applied to. Possible values are: `user`, `machine`.|
 |displayName|String|The localized policy name.|
 |explainText|String|The localized explanation or help text associated with the policy. The default value is empty.|
 |categoryPath|String|The localized full category path for the policy.|
 |supportedOn|String|Localized string used to specify what operating system or application version is affected by the policy.|
-|policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Specifies the type of group policy. The possible values are: `admxBacked`, `admxIngested`.|
+|policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Specifies the type of group policy. Possible values are: `admxBacked`, `admxIngested`.|
 |hasRelatedDefinitions|Boolean|Signifies whether or not there are related definitions to this definition|
 |groupPolicyCategoryId|Guid|The category id of the parent category|
 |minDeviceCspVersion|String|Minimum required CSP version for device configuration in this definition|
