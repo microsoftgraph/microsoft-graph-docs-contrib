@@ -1,6 +1,6 @@
 ---
 title: "List columns"
-description: "List columns in a fileStorageContainer."
+description: "Get the collection of columns represented as columnDefinition resources in a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
