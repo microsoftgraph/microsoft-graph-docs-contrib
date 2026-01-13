@@ -5419,7 +5419,7 @@
           "ChangeType": "Addition",
           "Description": "Added the **columns** relationship to the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainer?view=graph-rest-1.0) resource.",
           "Target": "fileStorageContainer"
-        },
+        }
       ],
       "Id": "c7c1fe73-14e6-45dd-abbc-c857e3ced486",
       "Cloud": "Prod",
