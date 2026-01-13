@@ -43,7 +43,7 @@ The following JSON representation shows the resource type.
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.windowsUpdates.recoveryUpdateCatalogEntry",
   "baseType": "microsoft.graph.windowsUpdates.softwareUpdateCatalogEntry",
-  "openType": "id"
+  "openType": "false"
 }
 -->
 ``` json
