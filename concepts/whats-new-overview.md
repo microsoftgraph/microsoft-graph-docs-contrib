@@ -34,6 +34,7 @@ Going forward, use the Microsoft 365 Copilot usage APIs under the `/copilot` URL
 
 ### Security
 
+Made the following updates to APIs for managing Microsoft Defender for Identity (MDI) sensors:
 - Added the **domainName** property to the [sensorCandidate](/graph/api/resources/security-sensorcandidate) resource to specify the domain name of the sensor.
 - Added the **serviceStatus** property to the [sensor](/graph/api/resources/security-sensor) resource to indicate the service status. The possible values are: `stopped`, `starting`, `running`, `disabled`, `onboarding`, `unknown`, `unknownFutureValue`.
 
