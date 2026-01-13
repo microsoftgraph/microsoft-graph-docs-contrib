@@ -5449,7 +5449,7 @@
       ],
       "Id": "2da9e53b-3b1a-4842-9063-2a2713fa2f6f",
       "Cloud": "Prod",
-      "Version": "v1.0",
+      "Version": "beta",
       "CreatedDateTime": "2026-01-08T05:31:00.804975Z",
       "WorkloadArea": "Files",
       "SubArea": ""
