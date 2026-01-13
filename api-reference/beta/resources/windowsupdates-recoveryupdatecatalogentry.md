@@ -19,13 +19,8 @@ Represents an entity that governs the Quick Machine Recovery Update Catalog Entr
 Inherits from [microsoft.graph.windowsUpdates.softwareUpdateCatalogEntry](../resources/windowsupdates-softwareupdatecatalogentry.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List](../api/windowsupdates-recoveryupdatecatalogentry-list.md)|[microsoft.graph.windowsUpdates.recoveryUpdateCatalogEntry](../resources/windowsupdates-recoveryupdatecatalogentry.md) collection|Get a list of the recoveryUpdateCatalogEntry objects and their properties.|
-|[Get](../api/windowsupdates-recoveryupdatecatalogentry-get.md)|[microsoft.graph.windowsUpdates.recoveryUpdateCatalogEntry](../resources/windowsupdates-recoveryupdatecatalogentry.md)|Read the properties and relationships of [microsoft.graph.windowsUpdates.recoveryUpdateCatalogEntry](../resources/windowsupdates-recoveryupdatecatalogentry.md) object.|
-|[Update](../api/windowsupdates-recoveryupdatecatalogentry-update.md)|[microsoft.graph.windowsUpdates.recoveryUpdateCatalogEntry](../resources/windowsupdates-recoveryupdatecatalogentry.md)|Update the properties of a recoveryUpdateCatalogEntry object.|
-|[Delete](../api/windowsupdates-recoveryupdatecatalogentry-delete.md)|None|Delete a recoveryUpdateCatalogEntry object.|
-|[List productRevisions](../api/windowsupdates-recoveryupdatecatalogentry-list-productrevisions.md)|[microsoft.graph.windowsUpdates.productRevision](../resources/windowsupdates-productrevision.md) collection| Enumerate Windows product revisions. |
+
+See [microsoft.graph.windowsUpdates.catalogEntry](../resources/windowsupdates-catalogentry.md), for a list of supported methods.
 
 ## Properties
 |Property|Type|Description|
