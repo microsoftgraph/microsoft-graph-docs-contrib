@@ -22,8 +22,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Files
 
-Use the following new container columns methods added to further support structured file storage in SharePoint Embedded applications:
-  - [fileStorageContainer](/graph/api/resources/filestoragecontainer)
+Use the following new container columns APIs added to further support structured file storage in SharePoint Embedded applications:
+  - [Get column](/graph/api/filestoragecontainer-get-column)
+  - [Update column](/graph/api/filestoragecontainer-update-column)
+  - [Delete column](/graph/api/filestoragecontainer-delete-column)
   
 ### Reports | Identity and access reports
 
