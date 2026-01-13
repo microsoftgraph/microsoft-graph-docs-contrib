@@ -24,11 +24,11 @@ VPN On-Demand Rule definition.
 |ssids|String collection|Network Service Set Identifiers (SSIDs).|
 |dnsSearchDomains|String collection|DNS Search Domains.|
 |probeUrl|String|A URL to probe. If this URL is successfully fetched (returning a 200 HTTP status code) without redirection, this rule matches.|
-|action|[vpnOnDemandRuleConnectionAction](../resources/intune-deviceconfig-vpnondemandruleconnectionaction.md)|Action. The possible values are: `connect`, `evaluateConnection`, `ignore`, `disconnect`.|
-|domainAction|[vpnOnDemandRuleConnectionDomainAction](../resources/intune-deviceconfig-vpnondemandruleconnectiondomainaction.md)|Domain Action (Only applicable when Action is evaluate connection). The possible values are: `connectIfNeeded`, `neverConnect`.|
+|action|[vpnOnDemandRuleConnectionAction](../resources/intune-deviceconfig-vpnondemandruleconnectionaction.md)|Action. Possible values are: `connect`, `evaluateConnection`, `ignore`, `disconnect`.|
+|domainAction|[vpnOnDemandRuleConnectionDomainAction](../resources/intune-deviceconfig-vpnondemandruleconnectiondomainaction.md)|Domain Action (Only applicable when Action is evaluate connection). Possible values are: `connectIfNeeded`, `neverConnect`.|
 |domains|String collection|Domains (Only applicable when Action is evaluate connection).|
 |probeRequiredUrl|String|Probe Required Url (Only applicable when Action is evaluate connection and DomainAction is connect if needed).|
-|interfaceTypeMatch|[vpnOnDemandRuleInterfaceTypeMatch](../resources/intune-deviceconfig-vpnondemandruleinterfacetypematch.md)|Network interface to trigger VPN. The possible values are: `notConfigured`, `ethernet`, `wiFi`, `cellular`.|
+|interfaceTypeMatch|[vpnOnDemandRuleInterfaceTypeMatch](../resources/intune-deviceconfig-vpnondemandruleinterfacetypematch.md)|Network interface to trigger VPN. Possible values are: `notConfigured`, `ethernet`, `wiFi`, `cellular`.|
 |dnsServerAddressMatch|String collection|DNS Search Server Address.|
 
 ## Relationships

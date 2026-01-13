@@ -146,6 +146,14 @@ items:
     items:
     - name: Teams app
       href: ../../resources/teamsapp.md
+    - name: List apps in channel
+      href: ../../api/channel-list-enabledapps.md
+    - name: Get app in channel
+      href: ../../api/teamsapp-get.md
+    - name: Add app to channel
+      href: ../../api/channel-post-enabledapps.md
+    - name: Remove app from channel
+      href: ../../api/channel-delete-enabledapps.md
     - name: List apps in catalog
       href: ../../api/appcatalogs-list-teamsapps.md
     - name: Publish apps to catalog
@@ -919,6 +927,12 @@ items:
       href: ../../api/channel-patch-tabs.md
     - name: Remove tab from channel
       href: ../../api/channel-delete-tabs.md
+    - name: List apps in channel
+      href: ../../api/channel-list-enabledapps.md
+    - name: Add app to channel
+      href: ../../api/channel-post-enabledapps.md
+    - name: Remove app from channel
+      href: ../../api/channel-delete-enabledapps.md
     - name: Provision channel email address
       href: ../../api/channel-provisionemail.md
     - name: Remove channel email address

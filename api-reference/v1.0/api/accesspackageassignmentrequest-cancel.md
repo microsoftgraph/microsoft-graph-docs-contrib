@@ -97,5 +97,5 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/a
 }
 -->
 ``` http
-HTTP/1.1 200 Status OK
+HTTP/1.1 200 OK
 ```

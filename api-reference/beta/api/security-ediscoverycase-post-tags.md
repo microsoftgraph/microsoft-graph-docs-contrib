@@ -42,7 +42,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags
 ## Request body
 In the request body, supply a JSON representation of the [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.
 
-You can specify the following properties when you create an **ediscoveryReviewTag**.
+You can specify the following properties when you create an **ediscoveryReviewTag**. The **parent** relationship can also be specified.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -72,7 +72,9 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-ce
 {
     "displayName": "My tag API",
     "description": "Use Graph API to create tags",
-    "childSelectability": "Many"
+    "childSelectability": "Many",
+    "parent@odata.bind":
+	"https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/{ediscoveryCaseID}/tags/{parentTagID}"
 }
 ```
 
