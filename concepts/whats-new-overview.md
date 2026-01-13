@@ -26,7 +26,7 @@ Use the following new container columns APIs added to further support structured
   - [Get column](/graph/api/filestoragecontainer-get-column)
   - [Update column](/graph/api/filestoragecontainer-update-column)
   - [Delete column](/graph/api/filestoragecontainer-delete-column)
-  
+
 ### Reports | Identity and access reports
 
 - Added `qrCode` as a new supported value for the **usageAuthMethod** enumeration which is the type for the **authMethod** property on [credentialUsageSummary](/graph/api/resources/credentialusagesummary?view=graph-rest-beta&preserve-view=true), [userCredentialUsageDetails](/graph/api/resources/usercredentialusagedetails?view=graph-rest-beta&preserve-view=true), [userEventsSummary](/graph/api/resources/usereventssummary?view=graph-rest-beta&preserve-view=true), and [userRegistrationActivitySummary](/graph/api/resources/userregistrationactivitysummary?view=graph-rest-beta&preserve-view=true) resources. This value represents the use of the [QR code](/graph/api/resources/qrcodepinauthenticationmethod?view=graph-rest-beta&preserve-view=true) as an authentication method.
@@ -44,6 +44,11 @@ Going forward, use the Microsoft 365 Copilot usage APIs under the `/copilot` URL
 The `TeamsAppInstallation.ManageSelectedForTeam.All` is the least privileged application permission required to install or upgrade a Teams app that requires consent to [resource-specific consent (RSC)](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions when using the [teamsAppInstallation in a team: upgrade](/graph/api/team-teamsappinstallation-upgrade) API.
 
 ## January 2026: New in preview only
+
+### Files
+
+- Updated the endpoint for the [Get column](/graph/api/filestoragecontainer-get-column?view=graph-rest-beta&preserve-view=true) method on [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true) resource to use `GET /storage/fileStorage/containers/{containerId}/columns/{columnId}` instead of `GET /storageContainers/{containerId}/columns/{columnId}` in the request URL.
+- Updated the endpoint for the [Delete column](/graph/api/filestoragecontainer-delete-column?view=graph-rest-beta&preserve-view=true) method on [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true) resource to use `DELETE /storage/fileStorage/containers/{containerId}/columns/{columnId}` instead of `DELETE /storageContainers/{containerId}/columns/{columnId}` in the request URL.
 
 ### Teamwork and communications | Apps
 
