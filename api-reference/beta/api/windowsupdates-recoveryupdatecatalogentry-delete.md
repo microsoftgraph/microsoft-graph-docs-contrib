@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "windowsupdates-intune-recoveryupdatecatalogentry-delete-permissions"
+  "name": "windowsupdates-recoveryupdatecatalogentry-delete-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/windowsupdates-intune-recoveryupdatecatalogentry-delete-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/windowsupdates-recoveryupdatecatalogentry-delete-permissions.md)]
 
 ## HTTP request
 

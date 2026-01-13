@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "windowsupdates-intune-recoveryupdatecatalogentry-update-permissions"
+  "name": "windowsupdates-recoveryupdatecatalogentry-update-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/windowsupdates-intune-recoveryupdatecatalogentry-update-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/windowsupdates-recoveryupdatecatalogentry-update-permissions.md)]
 
 ## HTTP request
 
@@ -59,7 +59,7 @@ PATCH /recoveryUpdateCatalogEntry
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.windowsUpdates.recoveryUpdateCatalogEntry](../resources/windowsupdates-quickmachinerecoveryupdatecatalogentry.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.windowsUpdates.recoveryUpdateCatalogEntry](../resources/windowsupdates-recoveryupdatecatalogentry.md) object in the response body.
 
 ## Examples
 

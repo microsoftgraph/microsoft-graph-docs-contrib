@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "windowsupdates-intune-recoveryupdatecatalogentry-list-productrevisions-permissions"
+  "name": "windowsupdates-recoveryupdatecatalogentry-list-productrevisions-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/windowsupdates-intune-recoveryupdatecatalogentry-list-productrevisions-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/windowsupdates-recoveryupdatecatalogentry-list-productrevisions-permissions.md)]
 
 ## HTTP request
 

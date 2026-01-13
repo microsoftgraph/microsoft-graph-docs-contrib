@@ -21,11 +21,11 @@ Inherits from [microsoft.graph.windowsUpdates.softwareUpdateCatalogEntry](../res
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/windowsupdates-quickmachinerecoveryupdatecatalogentry-list.md)|[microsoft.graph.windowsUpdates.recoveryUpdateCatalogEntry](../resources/windowsupdates-quickmachinerecoveryupdatecatalogentry.md) collection|Get a list of the recoveryUpdateCatalogEntry objects and their properties.|
-|[Get](../api/windowsupdates-quickmachinerecoveryupdatecatalogentry-get.md)|[microsoft.graph.windowsUpdates.recoveryUpdateCatalogEntry](../resources/windowsupdates-quickmachinerecoveryupdatecatalogentry.md)|Read the properties and relationships of [microsoft.graph.windowsUpdates.recoveryUpdateCatalogEntry](../resources/windowsupdates-quickmachinerecoveryupdatecatalogentry.md) object.|
-|[Update](../api/windowsupdates-quickmachinerecoveryupdatecatalogentry-update.md)|[microsoft.graph.windowsUpdates.recoveryUpdateCatalogEntry](../resources/windowsupdates-quickmachinerecoveryupdatecatalogentry.md)|Update the properties of a recoveryUpdateCatalogEntry object.|
-|[Delete](../api/windowsupdates-quickmachinerecoveryupdatecatalogentry-delete.md)|None|Delete a recoveryUpdateCatalogEntry object.|
-|[List productRevisions](../api/windowsupdates-quickmachinerecoveryupdatecatalogentry-list-productrevisions.md)|[microsoft.graph.windowsUpdates.productRevision](../resources/windowsupdates-productrevision.md) collection| Enumerate Windows product revisions. |
+|[List](../api/windowsupdates-recoveryupdatecatalogentry-list.md)|[microsoft.graph.windowsUpdates.recoveryUpdateCatalogEntry](../resources/windowsupdates-recoveryupdatecatalogentry.md) collection|Get a list of the recoveryUpdateCatalogEntry objects and their properties.|
+|[Get](../api/windowsupdates-recoveryupdatecatalogentry-get.md)|[microsoft.graph.windowsUpdates.recoveryUpdateCatalogEntry](../resources/windowsupdates-recoveryupdatecatalogentry.md)|Read the properties and relationships of [microsoft.graph.windowsUpdates.recoveryUpdateCatalogEntry](../resources/windowsupdates-recoveryupdatecatalogentry.md) object.|
+|[Update](../api/windowsupdates-recoveryupdatecatalogentry-update.md)|[microsoft.graph.windowsUpdates.recoveryUpdateCatalogEntry](../resources/windowsupdates-recoveryupdatecatalogentry.md)|Update the properties of a recoveryUpdateCatalogEntry object.|
+|[Delete](../api/windowsupdates-recoveryupdatecatalogentry-delete.md)|None|Delete a recoveryUpdateCatalogEntry object.|
+|[List productRevisions](../api/windowsupdates-recoveryupdatecatalogentry-list-productrevisions.md)|[microsoft.graph.windowsUpdates.productRevision](../resources/windowsupdates-productrevision.md) collection| Enumerate Windows product revisions. |
 
 ## Properties
 |Property|Type|Description|

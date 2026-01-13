@@ -1,6 +1,6 @@
 ---
-title: "Get Quick Machine Recovery Update Catalog Entry"
-description: "Read the properties and relationships of microsoft.graph.windowsUpdates.recoveryUpdateCatalogEntry object."
+title: "List Quick Machine Recovery Product Revisions"
+description: "Lists product revisions that are associated with a recovery update."
 author: "andredm7"
 ms.date: 01/16/2026
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "windows-autopatch"
 doc_type: apiPageType
 ---
 
-# Get Recovery Update Catalog Entry
+# List Quick Machine Recovery Product Revisions
 
 Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of [microsoft.graph.windowsUpdates.recoveryUpdateCatalogEntry](../resources/windowsupdates-quickmachinerecoveryupdatecatalogentry.md) object.
+Lists product revisions that are associated with a recovery update.
 
 ## Permissions
 
@@ -22,10 +22,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "windowsupdates-intune-recoveryupdatecatalogentry-get-permissions"
+  "name": "windowsupdates-recoveryupdatecatalogentry-list-productrevisions-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/windowsupdates-intune-recoveryupdatecatalogentry-get-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/windowsupdates-recoveryupdatecatalogentry-list-productrevisions-permissions.md)]
 
 ## HTTP request
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /recoveryUpdateCatalogEntry
+GET /recoveryUpdateCatalogEntry/productRevisions
 ```
 
 ## Optional query parameters
@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.windowsUpdates.recoveryUpdateCatalogEntry](../resources/windowsupdates-quickmachinerecoveryupdatecatalogentry.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [productRevision](../resources/windowsupdates-productrevision.md) objects in the response body.
 
 ## Examples
 
@@ -62,11 +62,11 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "get_recoveryupdatecatalogentry"
+  "name": "list_productrevision"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/recoveryUpdateCatalogEntry
+GET https://graph.microsoft.com/beta/recoveryUpdateCatalogEntry/productRevisions
 ```
 
 
@@ -77,7 +77,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.windowsUpdates.recoveryUpdateCatalogEntry"
+  "@odata.type": "microsoft.graph.windowsUpdates.productRevision"
 }
 -->
 ``` http
@@ -85,14 +85,20 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.windowsUpdates.recoveryUpdateCatalogEntry",
-    "id": "59fb7daa-37ab-b2de-637f-1d21c6eda8c2",
-    "displayName": "String",
-    "deployableUntilDateTime": "String (timestamp)",
-    "releaseDateTime": "String (timestamp)",
-    "catalogName": "String"
-  }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.windowsUpdates.productRevision",
+      "id": "500d7d30-36b6-6a4d-ed0a-3b77e60af139",
+      "displayName": "String",
+      "releaseDateTime": "String (timestamp)",
+      "isHotpatchUpdate": "Boolean",
+      "version": "String",
+      "product": "String",
+      "osBuild": {
+        "@odata.type": "microsoft.graph.windowsUpdates.buildVersionDetails"
+      }
+    }
+  ]
 }
 ```
 
