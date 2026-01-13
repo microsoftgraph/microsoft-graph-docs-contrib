@@ -5427,6 +5427,32 @@
       "CreatedDateTime": "2026-01-08T05:31:00.804975Z",
       "WorkloadArea": "Files",
       "SubArea": ""
+    },    
+    {
+      "ChangeList": [
+        {
+          "Id": "2da9e53b-3b1a-4842-9063-2a2713fa2f6f",
+          "ApiChange": "Method",
+          "ChangedApiName": "fileStorageContainer",
+          "ChangeType": "Change",
+          "Description": "Updated the endpoint for the [Delete column](https://learn.microsoft.com/graph/api/filestoragecontainer-delete-column?view=graph-rest-beta) method of the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource to use `DELETE /storage/fileStorage/containers/{containerId}/columns/{columnId}` instead of `DELETE /storageContainers/{containerId}/columns/{columnId}` in the request URL.",
+          "Target": "fileStorageContainer"
+        },
+        {
+          "Id": "2da9e53b-3b1a-4842-9063-2a2713fa2f6f",
+          "ApiChange": "Method",
+          "ChangedApiName": "fileStorageContainer",
+          "ChangeType": "Change",
+          "Description": "Updated the endpoint for the [Get column](https://learn.microsoft.com/graph/api/filestoragecontainer-get-column?view=graph-rest-beta) method of the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource to use `GET /storage/fileStorage/containers/{containerId}/columns/{columnId}` instead of `GET /storageContainers/{containerId}/columns/{columnId}` in the request URL.",
+          "Target": "fileStorageContainer"
+        }
+      ],
+      "Id": "2da9e53b-3b1a-4842-9063-2a2713fa2f6f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-01-08T05:31:00.804975Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
     }
   ]
 }
