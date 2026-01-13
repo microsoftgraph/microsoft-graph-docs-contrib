@@ -50,6 +50,14 @@
           "Description": "Added the [qualityUpdateRing](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-qualityUpdateRing?view=graph-rest-beta) resource and associated methods.",
           "Target": "qualityUpdateRing"
         },
+         {
+          "Id": "3f3aee72-dcdf-4f64-bce6-1898296386e7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "recoveryUpdateCatalogEntry",
+          "ChangeType": "Addition",
+          "Description": "Added the [recoveryUpdateCatalogEntry](https://learn.microsoft.com/en-us/graph/api/resources/intune-windowsUpdates-recoveryUpdateCatalogEntry?view=graph-rest-beta) resource.",
+          "Target": "recoveryUpdateCatalogEntry"
+        },
         {
           "Id": "45203e80-195f-4090-bfa9-fee7891f4a5e",
           "ApiChange": "Resource",
