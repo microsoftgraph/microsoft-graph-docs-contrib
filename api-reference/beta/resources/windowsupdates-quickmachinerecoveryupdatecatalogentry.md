@@ -25,7 +25,7 @@ Inherits from [microsoft.graph.windowsUpdates.softwareUpdateCatalogEntry](../res
 |[Get](../api/windowsupdates-quickmachinerecoveryupdatecatalogentry-get.md)|[microsoft.graph.windowsUpdates.recoveryUpdateCatalogEntry](../resources/windowsupdates-quickmachinerecoveryupdatecatalogentry.md)|Read the properties and relationships of [microsoft.graph.windowsUpdates.recoveryUpdateCatalogEntry](../resources/windowsupdates-quickmachinerecoveryupdatecatalogentry.md) object.|
 |[Update](../api/windowsupdates-quickmachinerecoveryupdatecatalogentry-update.md)|[microsoft.graph.windowsUpdates.recoveryUpdateCatalogEntry](../resources/windowsupdates-quickmachinerecoveryupdatecatalogentry.md)|Update the properties of a recoveryUpdateCatalogEntry object.|
 |[Delete](../api/windowsupdates-quickmachinerecoveryupdatecatalogentry-delete.md)|None|Delete a recoveryUpdateCatalogEntry object.|
-|[List productRevisions](../api/windowsupdates-intune-recoveryupdatecatalogentry-list-productrevisions.md)|[microsoft.graph.windowsUpdates.productRevision](../resources/windowsupdates-productrevision.md) collection| Enumerate Windows product revisions. |
+|[List productRevisions](../api/windowsupdates-quickmachinerecoveryupdatecatalogentry-list-productrevisions.md)|[microsoft.graph.windowsUpdates.productRevision](../resources/windowsupdates-productrevision.md) collection| Enumerate Windows product revisions. |
 
 ## Properties
 |Property|Type|Description|

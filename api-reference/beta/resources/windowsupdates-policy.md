@@ -1,14 +1,14 @@
 ---
-title: "policy resource type"
+title: "Windows Updates Policy Resource Type"
 description: "An abstract type that governs the update deployment settings content for an associated deployment audience."
 author: "andredm7"
-ms.date: 01/12/2026
+ms.date: 01/16/2026
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: resourcePageType
 ---
 
-# policy resource type
+# Windows Updates Policy Resource Type
 
 Namespace: microsoft.graph.windowsUpdates
 
