@@ -54,7 +54,7 @@ The following table shows the properties that are required when you create the [
 |id|String|The GUID for the object|
 |lastSyncDateTime|DateTimeOffset|Last data sync date time with DDS service.|
 |lastManualSyncTriggerDateTime|DateTimeOffset|Last data sync date time with DDS service.|
-|syncStatus|[windowsAutopilotSyncStatus](../resources/intune-enrollment-windowsautopilotsyncstatus.md)|Indicates the status of sync with Device data sync (DDS) service. The possible values are: `unknown`, `inProgress`, `completed`, `failed`.|
+|syncStatus|[windowsAutopilotSyncStatus](../resources/intune-enrollment-windowsautopilotsyncstatus.md)|Indicates the status of sync with Device data sync (DDS) service. Possible values are: `unknown`, `inProgress`, `completed`, `failed`.|
 
 
 

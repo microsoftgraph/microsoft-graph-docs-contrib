@@ -480,6 +480,10 @@ items:
         href: ../../api/virtualevent-setexternaleventinformation.md
   - name: Complex types
     items:
+    - name: Online meeting sensitivity label assignment
+      href: ../../resources/onlinemeetingsensitivitylabelassignment.md
+    - name: Out of office settings
+      href: ../../resources/outofofficesettings.md
     - name: Out of office settings
       href: ../../resources/outofofficesettings.md
     - name: User work location

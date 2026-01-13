@@ -1,7 +1,7 @@
 ---
 title: "userRegistrationActivitySummary resource type"
 description: "Represents the summary of the number of successful/unsuccessful registration and reset events for each authentication method."
-ms.date: 07/23/2025
+ms.date: 01/12/2026
 author: "egreenberg14"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
@@ -25,7 +25,7 @@ Represents the summary of the number of successful/unsuccessful registration and
 ## Properties
 |Property|Type|Description| 
 |:---|:---|:---|
-|authMethod|usageAuthMethod|The authentication method for the given summary. The possible values are: `email`, `mobileSMS`, `mobileCall`, `officePhone`, `securityQuestion`, `appNotification`, `appCode`, `alternateMobileCall`, `fido`, `appPassword`, `unknownFutureValue`, `externalAuthMethod`, `hardwareOneTimePasscode`, `windowsHelloForBusiness`, `microsoftAuthenticatorPasswordless`, `temporaryAccessPass`, `macOsSecureEnclaveKey`, `passKeyDeviceBound`, `passKeyDeviceBoundAuthenticator`, `passKeyDeviceBoundWindowsHello`, `softwareOneTimePasscode`, `microsoftAuthenticatorPush`, `mobilePhone`, `sms`, `alternateMobilePhone`, `fido2SecurityKey`, `oneTimePasscode`, `passKeySynced`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `externalAuthMethod` , `hardwareOneTimePasscode` , `windowsHelloForBusiness` , `microsoftAuthenticatorPasswordless` , `temporaryAccessPass` , `macOsSecureEnclaveKey` , `passKeyDeviceBound` , `passKeyDeviceBoundAuthenticator` , `passKeyDeviceBoundWindowsHello` , `softwareOneTimePasscode` , `microsoftAuthenticatorPush` , `mobilePhone` , `sms` , `alternateMobilePhone` , `fido2SecurityKey` , `oneTimePasscode` , `passKeySynced`. Supports `$filter` (`eq`).|
+|authMethod|[usageAuthMethod](../resources/usageauthmethod.md)|The authentication method for the given summary. Supports `$filter` (`eq`).|
 |failureActivityCount|Int64|The total number of failed activities for the corresponding authMethod and feature. Supports `$filter` (`eq`).|
 |feature|featureType|The type of activity. The possible values are: `registration`, `reset`, `unknownFutureValue`. Supports `$filter` (`eq`).|
 |id|String|The unique id for the given summary. Supports `$filter` (`eq`).|

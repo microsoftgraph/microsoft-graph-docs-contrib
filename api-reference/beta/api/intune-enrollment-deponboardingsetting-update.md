@@ -25,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -59,7 +59,7 @@ The following table shows the properties that are required when you create the [
 |lastSyncTriggeredDateTime|DateTimeOffset|When Intune last requested a sync.|
 |shareTokenWithSchoolDataSyncService|Boolean|Whether or not the Dep token sharing is enabled with the School Data Sync service.|
 |lastSyncErrorCode|Int32|Error code reported by Apple during last dep sync.|
-|tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Gets or sets the Dep Token Type. The possible values are: `none`, `dep`, `appleSchoolManager`.|
+|tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Gets or sets the Dep Token Type. Possible values are: `none`, `dep`, `appleSchoolManager`.|
 |tokenName|String|Friendly Name for Dep Token|
 |syncedDeviceCount|Int32|Gets synced device count|
 |dataSharingConsentGranted|Boolean|Consent granted for data sharing with Apple Dep Service|

@@ -7,13 +7,13 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 12/22/2025
+ms.date: 01/12/2026
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
 # Microsoft Graph permissions reference
 
-For an app to access data in Microsoft Graph, the user or administrator must grant it the permissions it needs. This article lists the delegated and application permissions exposed by Microsoft Graph. For guidance about how to use the permissions, see the [Overview of Microsoft Graph permissions](permissions-overview.md).
+For an app to access data in Microsoft Graph, the user or administrator must grant it the necessary permissions. This article lists the delegated and application permissions exposed by Microsoft Graph. For guidance about how to use the permissions, see the [Overview of Microsoft Graph permissions](permissions-overview.md).
 
 To read information about all Microsoft Graph permissions programmatically, sign in to an API client such as Graph Explorer using an account that has at least the *Application.Read.All* permission and run the following request.
 

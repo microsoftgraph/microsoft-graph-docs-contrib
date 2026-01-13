@@ -21,7 +21,7 @@ Windows 10 Associated Application definition.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|appType|[windows10AppType](../resources/intune-deviceconfig-windows10apptype.md)|Application type. The possible values are: `desktop`, `universal`.|
+|appType|[windows10AppType](../resources/intune-deviceconfig-windows10apptype.md)|Application type. Possible values are: `desktop`, `universal`.|
 |identifier|String|Identifier.|
 
 ## Relationships

@@ -242,7 +242,8 @@
             "assignedPlaceMode",
             "dropInPlaceMode",
             "reservablePlaceMode",
-            "resourceLink"
+            "resourceLink",
+            "unavailablePlaceMode"
           ],
           "childNodes": [
             {
@@ -1997,6 +1998,8 @@
             "presence"
           ],
           "complexTypes": [
+            "onlineMeetingSensitivityLabelAssignment",
+            "outOfOfficeSettings",
             "outOfOfficeSettings",
             "userWorkLocation"
           ],
