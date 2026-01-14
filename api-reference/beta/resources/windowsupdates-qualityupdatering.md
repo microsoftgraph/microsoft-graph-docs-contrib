@@ -19,17 +19,12 @@ Represents an entity that governs the update deployment ring specifically for qu
 Inherits from [ring](../resources/windowsupdates-ring.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List](../api/windowsupdates-qualityupdatering-list.md)|[microsoft.graph.windowsUpdates.qualityUpdateRing](../resources/windowsupdates-qualityupdatering.md) collection|Get a list of the qualityUpdateRing objects and their properties.|
-|[Get](../api/windowsupdates-qualityupdatering-get.md)|[microsoft.graph.windowsUpdates.qualityUpdateRing](../resources/windowsupdates-qualityupdatering.md)|Read the properties and relationships of [microsoft.graph.windowsUpdates.qualityUpdateRing](../resources/windowsupdates-qualityupdatering.md) object.|
-|[Update](../api/windowsupdates-qualityupdatering-update.md)|[microsoft.graph.windowsUpdates.qualityUpdateRing](../resources/windowsupdates-qualityupdatering.md)|Update the properties of a qualityUpdateRing object.|
-|[Delete](../api/windowsupdates-qualityupdatering-delete.md)|None|Delete a qualityUpdateRing object.|
+For the list of supported methods, see [ring](../resources/windowsupdates-ring.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset| The date and time the quality updates ring is created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [ring](../resources/windowsupdates-ring.md).|
+|createdDateTime|DateTimeOffset| The date and time when the quality updates ring is created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [ring](../resources/windowsupdates-ring.md).|
 |deferralInDays|Int32| The quality update deferral period in days. The value must be between `0` and `30`. Inherited from [ring](../resources/windowsupdates-ring.md).|
 |description|String| The quality update ring description. Inherited from [ring](../resources/windowsupdates-ring.md).|
 |displayName|String| The quality update ring display name. Inherited from [ring](../resources/windowsupdates-ring.md).|
