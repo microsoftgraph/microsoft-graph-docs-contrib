@@ -1,6 +1,6 @@
 ---
 title: "Get ring"
-description: "Read the properties and relationships of microsoft.graph.windowsUpdates.ring object."
+description: "Read the properties and relationships of ring object."
 author: "andredm7"
 ms.date: 10/22/2025
 ms.localizationpriority: medium
@@ -14,7 +14,9 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of [microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-ring.md) object.
+Read the properties and relationships of [ring](../resources/windowsupdates-ring.md) object.
+
+You can use this method with the following child object type: [qualityUpdateRing](../resources/windowsupdates-qualityupdatering.md).
 
 ## Permissions
 
@@ -53,22 +55,21 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-ring.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-ring.md) object or a derived type in the response body.
 
 ## Examples
 
 ### Request
 
-The following example shows a request.
+The following example shows how to get a quality update ring.
 <!-- {
   "blockType": "request",
-  "name": "get_ring"
+  "name": "get_qualityupdatering"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/windows/updates/policies/{policyId}/rings/03f72335-b88c-519e-16e7-039fdab8670f
+GET https://graph.microsoft.com/beta/admin/windows/updates/policies/a7aa99c1-34a2-850c-5223-7816fde70713/rings/a2c7637a-cda5-e59e-2385-972c4ee528d2
 ```
-
 
 ### Response
 
@@ -77,29 +78,29 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.windowsUpdates.ring"
+  "@odata.type": "microsoft.graph.windowsUpdates.qualityUpdateRing"
 }
 -->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-
 {
   "value": {
-    "@odata.type": "#microsoft.graph.windowsUpdates.ring",
-    "displayName": "Ring0 - IT devices",
-    "description": "First deployment ring to test updates before going to prod.",
+    "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateRing",
+    "displayName": "IT Test - Ring0",
+    "description": "First deployment ring to test updates with IT devices",
     "includedGroupAssignment": {
       "@odata.type": "microsoft.graph.windowsUpdates.includedGroupAssignment"
     },
     "excludedGroupAssignment": {
       "@odata.type": "microsoft.graph.windowsUpdates.excludedGroupAssignment"
     },
-    "deferralInDays": 4,
+    "deferralInDays": 3,
     "isPaused": false,
-    "id": "03f72335-b88c-519e-16e7-039fdab8670f",
+    "id": "a2c7637a-cda5-e59e-2385-972c4ee528d2",
     "createdDateTime": "2020-06-09T10:00:00Z",
-    "lastModifiedDateTime": "2020-06-09T10:00:00Z"
+    "lastModifiedDateTime": "2020-06-09T10:00:00Z",
+    "isHotpatchEnabled": true
   }
 }
 ```
