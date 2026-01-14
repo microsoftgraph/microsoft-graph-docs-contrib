@@ -16,7 +16,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Get a list of the [policy](../resources/windowsupdates-policy.md) objects and their properties. 
 
-You can use this method to retrieve the following child object type: [qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md).
+You can use this method with the following child object type: [qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md).
 
 ## Permissions
 
