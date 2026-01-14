@@ -14,7 +14,9 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [policy](../resources/windowsupdates-policy.md) object.
+Read the properties and relationships of a [policy](../resources/windowsupdates-policy.md) object. You can use this method to retrieve a **policy** object or any derived type.
+
+The following resource inherits from **policy**: [qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md).
 
 ## Permissions
 
@@ -53,7 +55,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md) object or a derived type in the response body.
 
 ## Examples
 
