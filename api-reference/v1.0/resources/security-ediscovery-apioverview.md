@@ -19,9 +19,6 @@ The Microsoft Purview APIs for eDiscovery enable organizations to automate repet
 
 > [!NOTE]
 > Usage of these APIs may require subscriptions to specific Microsoft offerings and is subject to the [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use?context=graph%252fcontext).  Upon general availability, Microsoft may require you or your customer to pay additional fees.
->
-> Currently, the eDiscovery APIs in Microsoft Graph only work with eDiscovery (Premium) cases.
-
 The eDiscovery APIs are defined in the OData subnamespace, microsoft.graph.security. The following table shows key entities in the eDiscovery API.
 
 | Name | Type | Use case |
