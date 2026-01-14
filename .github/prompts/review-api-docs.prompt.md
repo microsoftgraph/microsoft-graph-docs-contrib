@@ -37,7 +37,7 @@ Ask the reviewer which documentation changes need to be reviewed:
 While not required, providing these files significantly improves review quality and completeness:
 
 **Optional Context Files (provide if available):**
-- **Summary of API changes:** A description of what documentation changes were expected based on the schema changes (identifies files changed, methods documented, resources added/updated, namespace information)
+- **Summary of API changes in documentation-plan.md:** A description of what documentation changes were expected based on the schema changes (identifies files changed, methods documented, resources added/updated, namespace information)
 - **API.md file:** The API specification file describing capabilities in detail
 
 **Why these files help:**
@@ -205,11 +205,11 @@ Verify compliance with formatting rules detailed in [author-api-docs.prompt.md -
 
 ## Optional Context-Enhanced Review
 
-If the reviewer provided context files (Summary of API changes or API.md):
+If the reviewer provided context files (Summary of API changes in documentation-plan.md or API.md):
 
 ### Validate Against Summary of API Changes
 
-If provided, check that:
+If documentation-plan.md file is provided, check that:
 - [ ] All files mentioned in the summary were changed
 - [ ] All methods listed in the summary are documented
 - [ ] All resources listed in the summary are documented
@@ -365,7 +365,7 @@ If requested, provide specific edits to fix identified issues.
 3. **Use find/search** - Look for TODO placeholders across all files
 4. **Validate links** - Ensure all referenced resources and types exist and are correctly linked
 5. **Check consistency** - Resource names, namespaces, and terminology should be consistent across all files
-6. **Compare with context** - If Summary of API changes or API.md provided, validate against them first
+6. **Compare with context** - If Summary of API changes (documentation-plan.md file) or API.md provided, validate against them first
 7. **Flag autogeneration issues** - If doc stubs appear to have over-generated content, mention this
 
 ---
@@ -378,4 +378,4 @@ If you encounter any of these situations during review:
 - **Complex changelog structure:** Review the Common Process: Updating the Changelog section in author-api-docs.prompt.md
 - **Ambiguous formatting:** Default to Microsoft Graph CDK standards documented in copilot-instructions.md
 
-**Remember:** A comprehensive review is possible only with the optional context files (Summary of API changes and API.md). Without them, the review is limited to guidelines compliance only.
+**Remember:** A comprehensive review is possible only with the optional context files (Summary of API changes in a documentation-plan.md file and API.md). Without them, the review is limited to guidelines compliance only.

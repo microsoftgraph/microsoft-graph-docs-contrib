@@ -32,6 +32,19 @@ Once the author responds, follow the appropriate workflow below.
 
 The following sections describe setup steps and processes that are common to both documentation scenarios. Reference these sections as needed during your workflow.
 
+### Common Setup: Verify Working Branch
+
+**Before making any file changes, verify the author is NOT on the main branch.**
+
+1. Check current branch: `git branch --show-current`
+2. If on `main`:
+   - **STOP** - do not make changes
+   - Instruct: "⚠️ Switch to a working branch before proceeding: `git checkout -b <branch-name>`"
+   - Wait for confirmation
+3. If on another branch, proceed
+
+**Why:** Documentation changes require a working branch for change isolation, safety, and collaboration.
+
 ### Common Setup: temp-docstubs Folder
 
 Before beginning any documentation process, instruct the author to add all required files to the `temp-docstubs` folder in this workspace:

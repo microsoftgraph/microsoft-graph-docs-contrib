@@ -1116,6 +1116,18 @@ Namespace: microsoft.graph.security
 |microsoftSentinel|
 |microsoftThreatIntelligence|
 
+### serviceStatus values
+
+|Member|
+|:---|
+|stopped|
+|starting|
+|running|
+|disabled|
+|onboarding|
+|unknown|
+|unknownFutureValue|
+
 <!--
 {
   "type": "#page.annotation",

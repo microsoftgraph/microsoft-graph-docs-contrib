@@ -26,6 +26,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |Property|Type| Description                                                                                                                                                    |
 |:---|:---|:---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |computerDnsName|String| The DNS name of the computer associated with the sensor.                                                                                                       |
+|domainName|String| The domain name of the sensor.|
 |id|String| The unique identifier for the sensor candidate. Inherited from [microsoft.graph.entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
 |lastSeenDateTime|DateTimeOffset| The date and time when the sensor was last seen.                                                                                                               |
 |senseClientVersion|String| The version of the Defender for Identity sensor client. Supports `$filter` (`eq`).                                                                                                       |
@@ -49,6 +50,7 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "computerDnsName": "String",
   "senseClientVersion": "String",
-  "lastSeenDateTime": "String (timestamp)"
+  "lastSeenDateTime": "String (timestamp)",
+  "domainName": "String"
 }
 ```
