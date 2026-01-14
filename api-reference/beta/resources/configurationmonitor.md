@@ -36,6 +36,8 @@ Inherits from [entity](../resources/entity.md).
 |description|String|User-friendly description of the monitor given by the user.|
 |displayName|String|User-friendly name given by the user to the monitor.|
 |id|String|Globally unique identifier (GUID) for the monitor. System-generated. Inherited from [entity](../resources/entity.md).|
+|inactivationReason|String|The reason for the monitor's inactivation.|
+|lastModifiedBy|[identitySet](../resources/identityset.md)|The user who last modified the monitor.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the monitor was last modified. If no modifications are made to the monitor, it's the same as **createdDateTime**. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |mode|monitorMode|Monitor mode in which the monitor runs.  The possible values are: `monitorOnly`, `unknownFutureValue`. The default value is `monitorOnly`.|
 |monitorRunFrequencyInHours|Int32|Frequency at which the monitor runs. The default frequency is six hours. Regardless of when you create or update a monitor, it gets triggered within the next 6 hours. Currently, monitors are picked up at fixed times: 6 AM, 12 PM, 6 PM, and 12 AM (all in GMT). For example, if you create a monitor at 9 AM, it gets triggered around 12 PM. If you update a monitor at 4 PM, it gets triggered around 6 PM.|
@@ -65,6 +67,8 @@ The following JSON representation shows the resource type.
   "description": "String",
   "displayName": "String",
   "id": "String (identifier)",
+  "inactivationReason": "String",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
   "mode": "String",
   "monitorRunFrequencyInHours": "Int32",

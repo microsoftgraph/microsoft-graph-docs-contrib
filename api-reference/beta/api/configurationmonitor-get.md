@@ -90,6 +90,7 @@ Content-Type: application/json
 {
   "value": {
     "id": "fe082480-bdc2-a90c-25f8-4c7fb2fe2f81",
+    "inactivationReason": null,
     "displayName": "Demo Monitor",
     "description": "This is a demo monitor.",
     "tenantId": "96bf81b4-2694-42bb-9204-70081135ca61",
@@ -103,6 +104,12 @@ Content-Type: application/json
       }
     },
     "createdDateTime": "2024-12-12T09:52:18.7982733Z",
+    "lastModifiedBy": {
+      "user": {
+        "id": "823da47e-fc25-48d8-8b5a-6186c760f0df",
+        "displayName": "System Administrator"
+      }
+    },
     "lastModifiedDateTime": "2024-12-12T09:52:18.7982733Z",
     "parameters": {
       "FQDN": "contoso.onmicrosoft.com",

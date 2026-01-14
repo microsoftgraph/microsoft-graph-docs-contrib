@@ -89,6 +89,7 @@ Content-Type: application/json
   "value": [
     {
       "id": "bf77ee1e-7750-40cb-8bcd-524dc4cdab02",
+      "inactivationReason": null,
       "displayName": "Demo Monitor",
       "description": "This is a Monitor with EXO resources",
       "tenantId": "96bf81b4-2694-42bb-9204-70081135ca61",
@@ -96,6 +97,12 @@ Content-Type: application/json
       "monitorRunFrequencyInHours": 6,
       "mode": "monitorOnly",
       "createdDateTime": "2024-12-12T09:52:18.7982733Z",
+      "lastModifiedBy": {
+        "user": {
+          "id": "823da47e-fc25-48d8-8b5a-6186c760f0df",
+          "displayName": "System Administrator"
+        }
+      },
       "lastModifiedDateTime": "2024-12-12T09:52:18.8274415Z",
       "createdBy": {
         "user": {
@@ -110,6 +117,7 @@ Content-Type: application/json
     },
     {
       "id": "b166c9cb-db29-438b-95fb-247da1dc72c3",
+      "inactivationReason": null,
       "displayName": "Demo Monitor 1",
       "description": "It is a monitor that is monitoring all accepted domains of the tenant",
       "tenantId": "96bf81b4-2694-42bb-9204-70081135ca61",
@@ -117,6 +125,12 @@ Content-Type: application/json
       "monitorRunFrequencyInHours": 6,
       "mode": "monitorOnly",
       "createdDateTime": "2024-12-12T05:24:01.9729016Z",
+      "lastModifiedBy": {
+        "user": {
+          "id": "823da47e-fc25-48d8-8b5a-6186c760f0df",
+          "displayName": "System Administrator"
+        }
+      },
       "lastModifiedDateTime": "2024-12-12T05:24:02.030975Z",
       "createdBy": {
         "user": {
@@ -131,6 +145,7 @@ Content-Type: application/json
     },
     {
       "id": "a1cbec62-453e-421f-94b5-7a4288bc122a",
+      "inactivationReason": null,
       "displayName": "Sample Monitor",
       "description": "Sample EXO Monitor with SharedMailbox AcceptedDomain and MailContact",
       "tenantId": "96bf81b4-2694-42bb-9204-70081135ca61",
@@ -138,6 +153,12 @@ Content-Type: application/json
       "monitorRunFrequencyInHours": 6,
       "mode": "monitorOnly",
       "createdDateTime": "2024-12-11T05:50:42.6436339Z",
+      "lastModifiedBy": {
+        "user": {
+          "id": "823da47e-fc25-48d8-8b5a-6186c760f0df",
+          "displayName": "System Administrator"
+        }
+      },
       "lastModifiedDateTime": "2024-12-11T05:50:42.6974645Z",
       "createdBy": {
         "user": {
