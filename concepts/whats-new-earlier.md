@@ -31,7 +31,7 @@ Find information about previous additions and updates to Microsoft Graph APIs, d
   - [driveItem: removeRetentionLabel](/graph/api/driveitem-removeretentionlabel)
   - [driveItem: setRetentionLabel](/graph/api/driveitem-setretentionlabel)
 
-### Identity and access | Directory management
+### Groups
 
 Deleted security groups can now be restored from [deleted items](/graph/api/resources/directory) within 30 days of deletion, similar to Microsoft 365 groups. Use the [Restore deleted item](/graph/api/directory-deleteditems-restore) API to restore a deleted security group.
 
