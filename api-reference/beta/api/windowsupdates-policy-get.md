@@ -61,14 +61,14 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 
 ### Request
 
-The following example shows a request.
+The following example shows how to get a quality update policy.
 <!-- {
   "blockType": "request",
-  "name": "get_policy"
+  "name": "get_qualityupdatepolicy"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/windows/updates/policies/45a01ef3-fb4b-8c1d-2428-1f060464033c
+GET https://graph.microsoft.com/beta/admin/windows/updates/policies/f316bfd9-c84e-a334-cebe-071d3c64b2c1
 ```
 
 ### Response
@@ -78,16 +78,15 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.windowsUpdates.policy"
+  "@odata.type": "microsoft.graph.windowsUpdates.qualityUpdatePolicy"
 }
 -->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-
 {
   "value": {
-    "@odata.type": "#microsoft.graph.windowsUpdates.policy",
+    "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdatePolicy",
     "displayName": "Patch Tuesday Test",
     "description": "Quality update policy to test upcoming Patch Tuesday updates",
     "approvalRules": [
@@ -95,10 +94,9 @@ Content-Type: application/json
         "@odata.type": "microsoft.graph.windowsUpdates.qualityUpdateApprovalRule"
       }
     ],
-    "id": "45a01ef3-fb4b-8c1d-2428-1f060464033c",
+    "id": "f316bfd9-c84e-a334-cebe-071d3c64b2c1",
     "createdDateTime": "2020-06-09T10:00:00Z",
     "lastModifiedDateTime": "2020-06-09T10:00:00Z"
   }
 }
 ```
-
