@@ -178,12 +178,12 @@ items:
     href: ../../api/filestoragecontainer-list-columns.md
   - name: Create column
     href: ../../api/filestoragecontainer-post-columns.md
+  - name: Get column
+    href: ../../api/filestoragecontainer-get-column.md
   - name: Update column
     href: ../../api/filestoragecontainer-update-column.md
   - name: Delete column
     href: ../../api/filestoragecontainer-delete-column.md
-  - name: Get column
-    href: ../../api/filestoragecontainer-get-column.md
   - name: Update recycle bin settings
     href: ../../api/filestoragecontainer-update-recyclebinsettings.md
   - name: Delete recycle bin items

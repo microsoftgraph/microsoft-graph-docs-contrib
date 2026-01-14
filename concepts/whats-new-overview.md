@@ -22,9 +22,11 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Files
 
-Use the following new container columns methods added to further support structured file storage in SharePoint Embedded applications:
-  - [fileStorageContainer](/graph/api/resources/filestoragecontainer)
-  
+Use the following new container columns APIs added to further support structured file storage in SharePoint Embedded applications:
+  - [Get column](/graph/api/filestoragecontainer-get-column)
+  - [Update column](/graph/api/filestoragecontainer-update-column)
+  - [Delete column](/graph/api/filestoragecontainer-delete-column)
+
 ### Reports | Identity and access reports
 
 - Added `qrCode` as a new supported value for the **usageAuthMethod** enumeration which is the type for the **authMethod** property on [credentialUsageSummary](/graph/api/resources/credentialusagesummary?view=graph-rest-beta&preserve-view=true), [userCredentialUsageDetails](/graph/api/resources/usercredentialusagedetails?view=graph-rest-beta&preserve-view=true), [userEventsSummary](/graph/api/resources/usereventssummary?view=graph-rest-beta&preserve-view=true), and [userRegistrationActivitySummary](/graph/api/resources/userregistrationactivitysummary?view=graph-rest-beta&preserve-view=true) resources. This value represents the use of the [QR code](/graph/api/resources/qrcodepinauthenticationmethod?view=graph-rest-beta&preserve-view=true) as an authentication method.
@@ -54,6 +56,10 @@ The `TeamsAppInstallation.ManageSelectedForTeam.All` is the least privileged app
 - Deprecated the **accessedResources** property on [processConversationMetadata](/graph/api/resources/processconversationmetadata?view=graph-rest-beta&preserve-view=true) in favor of the **accessedResources_v2** property.
 - Use the **accessedResources_v2** property on [processConversationMetadata](/graph/api/resources/processconversationmetadata?view=graph-rest-beta&preserve-view=true) to get detailed information about resources accessed during the conversation, including identifiers, access type, and status.
 - Use the **agents** property on [processConversationMetadata](/graph/api/resources/processconversationmetadata?view=graph-rest-beta&preserve-view=true) to get information about AI agents that participated in the preparation of the message.
+### Files
+
+- Updated the endpoint for the [Get column](/graph/api/filestoragecontainer-get-column?view=graph-rest-beta&preserve-view=true) method on [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true) resource to use `GET /storage/fileStorage/containers/{containerId}/columns/{columnId}` instead of `GET /storageContainers/{containerId}/columns/{columnId}` in the request URL.
+- Updated the endpoint for the [Delete column](/graph/api/filestoragecontainer-delete-column?view=graph-rest-beta&preserve-view=true) method on [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true) resource to use `DELETE /storage/fileStorage/containers/{containerId}/columns/{columnId}` instead of `DELETE /storageContainers/{containerId}/columns/{columnId}` in the request URL.
 
 ### Teamwork and communications | Apps
 
