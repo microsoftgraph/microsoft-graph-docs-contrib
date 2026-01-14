@@ -1,6 +1,6 @@
 ---
 title: "List applicableContent"
-description: "Lists applicable update content for offering to either Microsoft Entra groups, Windows Autopatch groups, or both."
+description: "List applicable update content to offer to Microsoft Entra groups, Windows Autopatch groups, or both."
 author: "andredm7"
 ms.date: 10/22/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Lists applicable update content for offering to either Microsoft Entra groups, Windows Autopatch groups, or both.
+List [applicable update content](../resources/windowsupdates-applicablecontent.md) to offer to Microsoft Entra groups, Windows Autopatch groups, or both.
 
 ## Permissions
 
