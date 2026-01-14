@@ -355,7 +355,7 @@ Defined the following endpoints as supported for the [driveItem: discardCheckout
 
 ### Security | eDiscovery
 
-- Added `holdPolicySync` as a supported value for the **action** property of the [caseOperation](/graph/resources/security-caseoperation) and its inherited types.
+- Added `holdPolicySync` as a supported value for the **action** property of the [caseOperation](/graph/api/resources/security-caseoperation) and its inherited types.
 - Use the **caseType** property on [ediscoveryCaseSettings](/graph/api/resources/security-ediscoverycasesettings) to get or set the type of an eDiscovery case.
 - Use the **reviewSetSettings** property on [ediscoveryCaseSettings](/graph/api/resources/security-ediscoverycasesettings) to get or set the review set settings for a case.
 
@@ -425,7 +425,7 @@ Added a note to the **artifactCount** property of the [granularMailboxRestoreArt
 
 ### Security | eDiscovery
 
-Added `holdPolicySync` as a supported value for the **action** property of the [caseOperation](/graph/resources/security-caseoperation?view=graph-rest-beta&preserve-view=true) and its inherited types.
+Added `holdPolicySync` as a supported value for the **action** property of the [caseOperation](/graph/api/resources/security-caseoperation?view=graph-rest-beta&preserve-view=true) and its inherited types.
 
 ### Teamwork and communications | Messaging
 
@@ -5086,7 +5086,7 @@ Intune [June](https://developer.microsoft.com/graph/changelog#june-2020) updates
 ### Identity and access
 - IT professionals can use [connector](/graph/api/resources/connector?view=graph-rest-beta&preserve-view=true) resources that are lightweight agents to connect to [Azure AD Application Proxy](/azure/active-directory/manage-apps/what-is-application-proxy), and [publish on-premises web applications apps externally](/graph/api/resources/onpremisespublishing?view=graph-rest-beta&preserve-view=true), so that remote users of their organizations can access these apps in a secure manner.
 - Manage an [authentication policy](/graph/api/resources/authenticationflowspolicy?view=graph-rest-beta&preserve-view=true) at a tenant level, to enable or disable [self-service sign-up](/graph/api/resources/selfservicesignupauthenticationflowconfiguration?view=graph-rest-beta&preserve-view=true) of external users.
-- [Provision a user account on demand](/graph/api/synchronization-synchronizationjob-provision-on-demand?view=graph-rest-beta&preserve-view=true), and be able to specify the objects to provision and synchronization rules to execute.
+- [Provision a user account on demand](/graph/api/synchronization-synchronizationjob-provisionondemand?view=graph-rest-beta&preserve-view=true), and be able to specify the objects to provision and synchronization rules to execute.
 
 ### Search
 - Make use of enhancements on a [property](/graph/api/resources/externalconnectors-property) in a [schema](/graph/api/resources/externalconnectors-schema): **isRefinable** to enable filtering of search results and for a more refined control of the search experience, and **aliases** and **labels** for better relevance.
