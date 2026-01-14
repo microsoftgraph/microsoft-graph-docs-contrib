@@ -16,7 +16,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 Read the properties and relationships of a [policy](../resources/windowsupdates-policy.md) object.
 
-You can use this method to retrieve the following child object type: [qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md).
+You can use this method with the following child object type: [qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md).
 
 ## Permissions
 
