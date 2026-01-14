@@ -19,11 +19,11 @@ Represents a set of policy approval types for quality updates.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/windowsupdates-policy-list-approvals.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) collection|Get a list of the policyApproval objects and their properties. Use no policyapprovalID to get a list of all policy approvals|
-|[Create](../api/windowsupdates-policy-post-approvals.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md)|Create a new policyApproval object.|
-|[Get](../api/windowsupdates-policyapproval-get.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md)|Read the properties and relationships of [microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) object. You must use a policyapprovalID to get details.|
-|[Update](../api/windowsupdates-policyapproval-update.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md)|Update the properties of a policyApproval object.|
-|[Delete](../api/windowsupdates-policyapproval-delete.md)|None|Delete a policyApproval object.|
+|[List](../api/windowsupdates-policy-list-approvals.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) collection|Get a list of the [policyApproval](../resources/windowsupdates-policyapproval.md) objects and their properties.|
+|[Create](../api/windowsupdates-policy-post-approvals.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md)|Create a new [policyApproval](../resources/windowsupdates-policyapproval.md) object.|
+|[Get](../api/windowsupdates-policyapproval-get.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md)|Read the properties and relationships of a [policyApproval](../resources/windowsupdates-policyapproval.md) object.|
+|[Update](../api/windowsupdates-policyapproval-update.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md)|Update the properties of a [policyApproval](../resources/windowsupdates-policyapproval.md) object.|
+|[Delete](../api/windowsupdates-policyapproval-delete.md)|None|Delete a [policyApproval](../resources/windowsupdates-policyapproval.md) object.|
 
 ## Properties
 |Property|Type|Description|
