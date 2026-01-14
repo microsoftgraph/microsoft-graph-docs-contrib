@@ -23,7 +23,7 @@ Enumerates a user's usage rights when content is protected with a sensitivity la
 
 | Member | Value | Description |
 | :----- | ----: | :---------- |
-| unknown | 1 | Represents an unknown or undefined usage right. |
+| unknown | 1 | Represents an unknown or undefined usage right. For example, when there's a service outage. |
 | docEdit | 2 | Represents the right to edit the document (Full Edit Rights). |
 | edit | 4 | Represents the right to edit the content. |
 | comment | 8 | Represents the right to add comments to the content. |
