@@ -31,17 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-To get a list of policies:
-
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
-GET /admin/windows/updates/policies
-```
-
-To get a list of quality update policies:
+To get a list of **qualityUpdatePolicy** objects:
 
 <!-- {
   "blockType": "ignored"
