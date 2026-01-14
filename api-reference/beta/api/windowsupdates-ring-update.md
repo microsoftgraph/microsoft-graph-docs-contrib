@@ -14,7 +14,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a ring object.
+Update the properties of a [ring](../resources/windowsupdates-ring.md) object.
 
 ## Permissions
 
@@ -50,14 +50,14 @@ PATCH /admin/windows/updates/policies/{policyId}/rings/{ringId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String| The ring display name. Required.|
+|createdDateTime|DateTimeOffset| The date and time when the ring is created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional.|
+|deferralInDays|Int32|  The quality update deferral period (days). The value must be between `0` and `30`. Optional.|
 |description|String| The ring description. Required.|
-|includedGroupAssignment|[microsoft.graph.windowsUpdates.includedGroupAssignment](../resources/windowsupdates-includedgroupassignment.md)| Represents an entity that governs the update deployment audience with included groups. Groups are logical containers of devices represented by Microsoft Entra groups. Required.|
-|excludedGroupAssignment|[microsoft.graph.windowsUpdates.excludedGroupAssignment](../resources/windowsupdates-excludedgroupassignment.md)| Represents an entity that governs the update deployment audience with excluded groups. Groups are logical containers of devices represented by Microsoft Entra groups. Required.|
-|deferralInDays|Int32|  The Quality Update deferral period (days). The value must be between 0 and 30. Optional.|
-|isPaused|Boolean| Represents the pause action for the Quality Update ring policy. Required.|
-|createdDateTime|DateTimeOffset|  The date and time the ring is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, `2014 is 2014-01-01T00:00:00Z`. Optional.|
-|lastModifiedDateTime|DateTimeOffset| The date and time the ring was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, `2014 is 2014-01-01T00:00:00Z`. Optional.|
+|displayName|String| The ring display name. Required.|
+|excludedGroupAssignment|[microsoft.graph.windowsUpdates.excludedGroupAssignment](../resources/windowsupdates-excludedgroupassignment.md)| Governs the update deployment audience with excluded groups. Groups are logical containers of devices represented by Microsoft Entra groups. Required.|
+|includedGroupAssignment|[microsoft.graph.windowsUpdates.includedGroupAssignment](../resources/windowsupdates-includedgroupassignment.md)| Governs the update deployment audience with included groups. Groups are logical containers of devices represented by Microsoft Entra groups. Required.|
+|isPaused|Boolean| The pause action for the quality update ring policy. Required.|
+|lastModifiedDateTime|DateTimeOffset| The date and time when the ring was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional.|
 
 ## Response
 
@@ -67,7 +67,7 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 
 ### Request
 
-The following example shows a request.
+The following example shows how to update a quality update ring.
 <!-- {
   "blockType": "request",
   "name": "update_ring",
@@ -78,7 +78,7 @@ PATCH https://graph.microsoft.com/beta/admin/windows/updates/policies/{policyId}
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.windowsUpdates.ring",
+  "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateRing",
   "displayName": "String",
   "description": "String",
   "includedGroupAssignment": {
@@ -88,9 +88,11 @@ Content-Type: application/json
     "@odata.type": "microsoft.graph.windowsUpdates.excludedGroupAssignment"
   },
   "deferralInDays": "Integer",
-  "isPaused": "Boolean"
+  "isPaused": "Boolean",
+  "isHotpatchEnabled": "Boolean"
 }
 ```
+
 
 ### Response
 
@@ -99,17 +101,16 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.windowsUpdates.ring",
+  "@odata.type": "microsoft.graph.windowsUpdates.qualityUpdateRing",
 }
 -->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-
 {
-  "@odata.type": "#microsoft.graph.windowsUpdates.ring",
-  "displayName": "Patch Tuesday Test",
-  "description": "Quality update policy to test upcoming Patch Tuesday updates",
+  "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateRing",
+  "displayName": "Ring0 - IT devices",
+  "description": "First deployment ring to test updates before going to prod.",
   "includedGroupAssignment": {
     "@odata.type": "microsoft.graph.windowsUpdates.includedGroupAssignment"
   },
@@ -118,9 +119,10 @@ Content-Type: application/json
   },
   "deferralInDays": 5,
   "isPaused": false,
-  "id": "03f72335-b88c-519e-16e7-039fdab8670f",
+  "id": "a2c7637a-cda5-e59e-2385-972c4ee528d2",
   "createdDateTime": "2020-06-09T10:00:00Z",
-  "lastModifiedDateTime": "2020-06-09T10:00:00Z"
+  "lastModifiedDateTime": "2020-06-09T10:00:00Z",
+  "isHotpatchEnabled": true
 }
 ```
 
