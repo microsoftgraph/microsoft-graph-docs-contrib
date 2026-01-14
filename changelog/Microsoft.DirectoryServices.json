@@ -31,43 +31,8 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2026-01-13T00:00:00.0000000Z",
-      "WorkloadArea": "Identity and access",
       "WorkloadArea": "Groups",
       "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e",
-          "ApiChange": "Method",
-          "ChangedApiName": "Get deletedItem",
-          "ChangeType": "Change",
-          "Description": "Updated the [Get deletedItem](https://learn.microsoft.com/en-us/graph/api/directory-deleteditems-get?view=graph-rest-beta) API to support soft delete for security groups.",
-          "Target": "Get deletedItem"
-        },
-        {
-          "Id": "b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e",
-          "ApiChange": "Method",
-          "ChangedApiName": "List deletedItems",
-          "ChangeType": "Change",
-          "Description": "Updated the [List deletedItems](https://learn.microsoft.com/en-us/graph/api/directory-deleteditems-list?view=graph-rest-beta) API to support soft delete for security groups.",
-          "Target": "List deletedItems"
-        },
-        {
-          "Id": "b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e",
-          "ApiChange": "Method",
-          "ChangedApiName": "Restore deletedItem",
-          "ChangeType": "Change",
-          "Description": "Updated the [Restore deletedItem](https://learn.microsoft.com/en-us/graph/api/directory-deleteditems-restore?view=graph-rest-beta) API to support soft delete for security groups.",
-          "Target": "Restore deletedItem"
-        }
-      ],
-      "Id": "b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2026-01-13T00:00:00.0000000Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
