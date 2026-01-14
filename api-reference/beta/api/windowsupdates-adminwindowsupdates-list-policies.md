@@ -1,6 +1,6 @@
 ---
-title: "List qualityUpdatePolicy objects"
-description: "Get a list of the qualityUpdatePolicy objects and their properties."
+title: "List policies"
+description: "Get a list of the policy objects and their properties."
 author: "andredm7"
 ms.date: 10/08/2025
 ms.localizationpriority: medium
@@ -8,13 +8,13 @@ ms.subservice: "windows-autopatch"
 doc_type: apiPageType
 ---
 
-# List qualityUpdatePolicy objects
+# List policies
 
 Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md) objects and their properties.
+Get a list of the [policy](../resources/windowsupdates-policy.md) objects and their properties. 
 
 ## Permissions
 
@@ -22,12 +22,24 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "windowsupdates-qualityupdatepolicy-list-permissions"
+  "name": "windowsupdates-adminwindowsupdates-list-policies-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/windowsupdates-qualityupdatepolicy-list-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/windowsupdates-adminwindowsupdates-list-policies-permissions.md)]
 
 ## HTTP request
+
+To get a list of policies:
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /admin/windows/updates/policies
+```
+
+To get a list of quality update policies:
 
 <!-- {
   "blockType": "ignored"
@@ -59,7 +71,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following example shows a request.
+The following example shows how to get a list of quality update policies.
 <!-- {
   "blockType": "request",
   "name": "list_qualityupdatepolicy",
