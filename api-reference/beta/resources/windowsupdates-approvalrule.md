@@ -1,6 +1,6 @@
 ---
-title: "Windows updates approvalRule resource type"
-description: "Represents an entity that governs the overall Windows Update Approval deployment rules."
+title: "approvalRule resource type"
+description: "An abstract type that represents an entity that governs the overall Windows update approval deployment rules."
 author: "andredm7"
 ms.date: 01/16/2026
 ms.localizationpriority: medium
@@ -8,23 +8,22 @@ ms.subservice: "windows-autopatch"
 doc_type: resourcePageType
 ---
 
-# Windows update Approval Rule Resource Type
+# approvalRule resource type
 
 Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an entity that governs the overall Windows Update Approval deployment rules.
+An abstract type that represents an entity that governs the overall Windows update approval deployment rules.
 
-This is an abstract type.
+Base type of [qualityUpdateApprovalRule](../resources/windowsupdates-qualityupdateapprovalrule.md) and [recoveryApprovalRule](../resources/windowsupdates-recoveryapprovalrule.md). 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deferralInDays|Int32| The Windows Update deferral period in days. The value must be between `0` and `30`. |
+|deferralInDays|Int32| The Windows update deferral period in days. The value must be between `0` and `30`. |
 
 ## Relationships
-
 None.
 
 ## JSON representation
@@ -37,7 +36,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.approvalRule",
-  "deferralInDays": "Integer"
+  "deferralInDays": "Int32"
 }
 ```
 
