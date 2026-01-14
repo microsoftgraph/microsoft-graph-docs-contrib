@@ -23,7 +23,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "Restore deletedItem",
           "ChangeType": "Change",
-          "Description": "Updated the [Restore deletedItem](https://learn.microsoft.com/en-us/graph/api/directory-deleteditems-restore?view=graph-rest-v1.0) API to support restoring soft deleted security groups.",
+          "Description": "Updated the [Restore deletedItem](https://learn.microsoft.com/en-us/graph/api/directory-deleteditems-restore?view=graph-rest-v1.0) API to support restoring soft deleted security [groups](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-v1.0).",
           "Target": "Restore deletedItem"
         }
       ],
