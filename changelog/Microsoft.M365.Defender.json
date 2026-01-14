@@ -3409,7 +3409,7 @@
     {
       "ChangeList": [
         {
-          "Id": "6ce072ee-0e60-4b67-a9ad-110d3668c6fb",
+          "Id": "763c9469-a7c4-49b0-b55a-30043ec35ede",
           "ApiChange": "Resource",
           "ChangedApiName": "autoAuditingConfiguration",
           "ChangeType": "Addition",
@@ -3417,26 +3417,18 @@
           "Target": "autoAuditingConfiguration"
         },
         {
-          "Id": "9c269dbd-21c1-4289-b5af-3ac53f0f9fce",
+          "Id": "763c9469-a7c4-49b0-b55a-30043ec35ede",
           "ApiChange": "Relationship",
-          "ChangedApiName": "settings",
+          "ChangedApiName": "autoAuditingConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the **settings** relationship to the [identityContainer](https://learn.microsoft.com/en-us/graph/api/resources/security-identityContainer?view=graph-rest-beta) resource.",
-          "Target": "identityContainer"
-        },
-        {
-          "Id": "9c269dbd-21c1-4289-b5af-3ac53f0f9fce",
-          "ApiChange": "Resource",
-          "ChangedApiName": "settingsContainer",
-          "ChangeType": "Addition",
-          "Description": "Added the [settingsContainer](https://learn.microsoft.com/en-us/graph/api/resources/security-settingsContainer?view=graph-rest-beta) resource.",
+          "Description": "Added the **autoAuditingConfiguration** relationship to the [settingsContainer](https://learn.microsoft.com/en-us/graph/api/resources/security-settingsContainer?view=graph-rest-beta) resource.",
           "Target": "settingsContainer"
         }
       ],
-      "Id": "9c269dbd-21c1-4289-b5af-3ac53f0f9fce",
+      "Id": "763c9469-a7c4-49b0-b55a-30043ec35ede",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2025-10-28T12:05:55.8786134Z",
+      "CreatedDateTime": "2026-01-14T09:12:41.0410693Z",
       "WorkloadArea": "Security",
       "SubArea": ""
     }
