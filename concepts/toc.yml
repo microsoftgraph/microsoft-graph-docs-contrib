@@ -247,6 +247,8 @@ items:
       href: mcp-server/overview.md
     - name: Get started
       href: mcp-server/get-started.md
+    - name: Sample prompts
+      href: mcp-server/mcp-server-sample-prompts.md
     - name: Explore the repository
       href: https://github.com/mcp/microsoft/EnterpriseMCP
 - name: Services and features
