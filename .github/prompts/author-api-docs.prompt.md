@@ -1017,7 +1017,7 @@ When authoring or updating documentation, ensure compliance with these standards
 ### Resource reference files
 
 **Resource names:**
-- Must be in lower camel case
+- Must be in lower camel case (e.g., `user`,`deviceManagementScript`)
 - Do not capitalize the first letter of a resource name
 - The resource name must be an exact match (including casing) in all 4 locations:
   1. Metadata page title in YAML front matter
@@ -1576,7 +1576,7 @@ Before completing any authoring task, verify:
 - [ ] File copied from doc stubs folder to correct target directory
 - [ ] File name is all lowercase
 - [ ] File name prepended with subnamespace name if applicable (e.g., callrecords-session.md)
-- [ ] Resource name is in lower camel case (first letter not capitalized)
+- [ ] Resource name is in lower camel case (first letter not capitalized. e.g., user, deviceManagementScript)
 - [ ] Resource name matches exactly (including casing) in all 4 locations: metadata title, H1 title, @odata.type in comment block, @odata.type in JSON
 - [ ] Namespace line correctly reflects microsoft.graph or subnamespace
 - [ ] Front matter: TODO placeholders replaced with author-provided values
