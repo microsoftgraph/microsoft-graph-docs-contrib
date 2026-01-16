@@ -1,6 +1,6 @@
 ---
-title: "RecoveryApprovalRule resource type"
-description: "Represents an entity that governs the QMR approval deployment rules."
+title: "recoveryApprovalRule resource type"
+description: "Represents an entity that governs the quality update approval deployment rules."
 author: "andredm7"
 ms.date: 01/20/2026
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.subservice: "windows-autopatch"
 doc_type: resourcePageType
 ---
 
-# RecoveryApprovalRule resource type
+# recoveryApprovalRule resource type
 
 Namespace: microsoft.graph.windowsUpdates
 
@@ -38,5 +38,6 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.recoveryApprovalRule",
+  "deferralInDays": "Int32"
 }
 ```
