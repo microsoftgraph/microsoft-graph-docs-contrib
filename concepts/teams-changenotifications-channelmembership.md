@@ -153,7 +153,7 @@ For notifications without resource data, the payload looks like the following. T
 ```
 The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload for the channel member. 
 
-### Example 2: Subscribe to changes to receive indirect membership notifications for shared channels using query parameters (preview)
+### Example 2: Subscribe to changes to receive indirect membership notifications for shared channels using query parameters
 
 The following query parameters in a subscription request enable notifications for both direct and indirect membership updates.
 
@@ -227,7 +227,7 @@ The **@microsoft.graph.originalSourceMembershipUrl** annotation shows the origin
 > * When subscribed to changes to receive both direct and indirect notifications for shared channels, we recommend that you choose to receive notifications with the resource. This approach allows you to use the **@microsoft.graph.originalSourceMembershipUrl** annotation to identify direct or indirect membership changes.
 > * When a subscriber receives a notification that a member was removed, use the [channel: doesUserHaveAccess](/graph/api/channel-doesuserhaveaccess) API to verify that the user's access was actually revoked.
 
-## Subscribe to changes when a specific channel is shared with or unshared from a team (preview)
+## Subscribe to changes when a specific channel is shared with or unshared from a team
 
 Subscribers can receive change notifications when a specific channel is shared with or unshared from a team. 
 
