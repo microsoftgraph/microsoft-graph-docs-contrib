@@ -7,7 +7,7 @@ author: FaithOmbongi
 ms.reviewer: julija.pettere, intelligentaccesspm
 ms.subservice: "entra-sign-in"
 doc_type: "conceptualPageType"
-ms.date: 07/02/2024
+ms.date: 01/16/2026
 ---
 
 # Microsoft Entra authentication methods API overview
@@ -26,6 +26,8 @@ The authentication method APIs are used to manage a user's authentication method
 * You can retrieve details of a user's Windows Hello for Business registration, and delete it if the user has lost the device.
 * You can add an email address to a user. The user can then use that email as part of the Self-Service Password Reset (SSPR) process.
     * You can update that email, or delete it from the user.
+
+Some APIs support self-service operations that allow users to manage their own authentication methods. For example, users can add, update, or delete their own phone numbers and email addresses used for authentication and SSPR. When performing self-service operations, users must complete multi-factor authentication (MFA) if they haven't authenticated within the last 10 minutes of their current session.
 
 The ability for a user to use an authentication method is governed by the [authentication method policy](authenticationmethodspolicies-overview.md) for the tenant. For example, only users in the R&D department might be enabled to use the FIDO2 method while all users might be enabled to use Microsoft Authenticator.
 
