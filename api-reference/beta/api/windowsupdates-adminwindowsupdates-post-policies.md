@@ -56,9 +56,9 @@ You can specify the following properties when you create a **policy**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String| The policy display name. The maximum length is 200 characters. Required.|
-|description|String| The policy description. The maximum length is 1,500 characters. Required.|
 |approvalRules|[microsoft.graph.windowsUpdates.approvalRule](../resources/windowsupdates-approvalrule.md) collection| The approved rule of the policy that determines which published content matches the rule on an ongoing basis. Required.|
+|description|String| The policy description. The maximum length is 1,500 characters. Required.|
+|displayName|String| The policy display name. The maximum length is 200 characters. Required.|
 
 ## Response
 
