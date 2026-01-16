@@ -40,7 +40,7 @@ Some APIs support self-service operations that allow users to manage their own a
 >3. **User completes MFA** - During the interactive OAuth2 request, users with registered MFA methods must complete authentication. The MFA credential remains valid for 10 minutes.
 >4. **Retry with new token** - Use the newly obtained access token to retry the credential management request.
 > For more information about implementing claims challenges in your application, see:
->     - [OpenID Connect specification: Requesting Claims using the "claims" Request Parameter](https://openid.net/specs/openid-connect-core-1_0-final.html#ClaimsParameter)
+>    - [OpenID Connect specification: Requesting Claims using the "claims" Request Parameter](https://openid.net/specs/openid-connect-core-1_0-final.html#ClaimsParameter)
 >    - [Claims challenges, claims requests and client capabilities](/entra/identity-platform/claims-challenge)
 
 The ability for a user to use an authentication method is governed by the [authentication method policy](authenticationmethodspolicies-overview.md) for the tenant. For example, only users in the R&D department might be enabled to use the FIDO2 method while all users might be enabled to use Microsoft Authenticator.

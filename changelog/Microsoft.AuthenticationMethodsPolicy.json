@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationMethod",
           "ChangeType": "Change",
-          "Description": "Added multi-factor authentication (MFA) requirement for self-service operations for supported authentication methods. Starting January 20, 2026, users who manage their own [Microsoft Entra authentication methods API overview](https://learn.microsoft.com/en-us/graph/api/resources/authenticationmethods-overview?view=graph-rest-1.0) through self-service operations, such as adding, updating, or deleting phone numbers and email addresses, must complete multifactor authentication (MFA) if they haven't authenticated within the last 10 minutes of their current session.",
+          "Description": "Added multi-factor authentication (MFA) requirement for self-service operations for supported authentication methods. Starting January 20, 2026, users who manage their own authentication methods through self-service operations, such as adding, updating, or deleting phone numbers and email addresses, must complete multifactor authentication (MFA) if they haven't authenticated within the last 10 minutes of their current session. For more guidance on handling this change in your application, see [Microsoft Entra authentication methods API overview](https://learn.microsoft.com/en-us/graph/api/resources/authenticationmethods-overview?view=graph-rest-1.0).",
           "Target": "authenticationMethod"
         }
       ],
