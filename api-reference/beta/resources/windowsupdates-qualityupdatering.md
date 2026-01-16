@@ -26,8 +26,8 @@ For the list of supported methods, see [ring](../resources/windowsupdates-ring.m
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset| The date and time when the quality updates ring is created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [ring](../resources/windowsupdates-ring.md).|
 |deferralInDays|Int32| The quality update deferral period in days. The value must be between `0` and `30`. Inherited from [ring](../resources/windowsupdates-ring.md).|
-|description|String| The quality update ring description. Inherited from [ring](../resources/windowsupdates-ring.md).|
-|displayName|String| The quality update ring display name. Inherited from [ring](../resources/windowsupdates-ring.md).|
+|description|String| The quality update ring description. The maximum length is 1,500 characters. Inherited from [ring](../resources/windowsupdates-ring.md).|
+|displayName|String| The quality update ring display name. The maximum length is 200 characters. Inherited from [ring](../resources/windowsupdates-ring.md).|
 |excludedGroupAssignment|[microsoft.graph.windowsUpdates.excludedGroupAssignment](../resources/windowsupdates-excludedgroupassignment.md)| Governs the update deployment audience with excluded groups. Groups are logical containers of devices represented by Microsoft Entra groups. Inherited from [ring](../resources/windowsupdates-ring.md).|
 |id|String| The unique identifier for the quality update ring. Inherited from [ring](../resources/windowsupdates-ring.md).|
 |includedGroupAssignment|[microsoft.graph.windowsUpdates.includedGroupAssignment](../resources/windowsupdates-includedgroupassignment.md)| Governs the update deployment audience with included groups. Groups are logical containers of devices represented by Microsoft Entra groups. Inherited from [ring](../resources/windowsupdates-ring.md).|
