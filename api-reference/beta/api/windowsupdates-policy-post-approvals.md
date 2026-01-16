@@ -45,13 +45,13 @@ POST /admin/windows/updates/policies/{policyId}/approvals
 
 ## Request body
 
-In the request body, supply a JSON representation of the [microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-intune-policyapproval.md) object.
+In the request body, supply a JSON representation of the [policyApproval](../resources/windowsupdates-policyapproval.md) object.
 
-You can specify the following properties when creating a **policyApproval**.
+You can specify the following properties when you create a **policyApproval**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|catalogEntryId|String|The catalog entry id to approve. Required.|
+|catalogEntryId|String|The catalog entry ID to approve. Required.|
 |status|microsoft.graph.windowsUpdates.approvalStatus|The approval status. The possible values are: `approved`, `suspended`, `unknownFutureValue`. Required.|
 
 ## Response
