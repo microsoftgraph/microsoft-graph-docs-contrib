@@ -8,7 +8,7 @@ ms.subservice: "windows-autopatch"
 doc_type: resourcePageType
 ---
 
-# policy resource type
+# Windowsupdatespolicy resource type
 
 Namespace: microsoft.graph.windowsUpdates
 

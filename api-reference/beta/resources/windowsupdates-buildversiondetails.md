@@ -1,6 +1,6 @@
 ---
 title: "buildVersionDetails resource type"
-description: "Represents the build version details of a product revision that is associated with a quality update."
+description: "Represents the build version details of a product revision that is associated with an update."
 author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
