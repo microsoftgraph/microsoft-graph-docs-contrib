@@ -45,7 +45,14 @@ POST /admin/windows/updates/policies/{policyId}/approvals
 
 ## Request body
 
-Don't supply a request body for this method.
+In the request body, supply a JSON representation of the [microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-intune-policyapproval.md) object.
+
+You can specify the following properties when creating a **policyApproval**.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|catalogEntryId|String|The catalog entry id to approve. Required.|
+|status|microsoft.graph.windowsUpdates.approvalStatus|The approval status. The possible values are: `approved`, `suspended`, `unknownFutureValue`. Required.|
 
 ## Response
 
@@ -63,6 +70,13 @@ The following example shows a request.
 -->
 ``` http
 POST https://graph.microsoft.com/beta/admin/windows/updates/policies/ab3a53f0-f7aa-10b1-04d4-8680584cbbb6/approvals
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.windowsUpdates.policyApproval",
+  "catalogEntryId": "1d8864c1-531f-4d5b-8225-8653ef4316d8",
+  "status": "approved"
+}
 ```
 
 ### Response
@@ -82,7 +96,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.policyApproval",
   "catalogEntryId": "1d8864c1-531f-4d5b-8225-8653ef4316d8",
-  "status": "suspended",
+  "status": "approved",
   "id": "ab3a53f0-f7aa-10b1-04d4-8680584cbbb6",
   "createdDateTime": "2020-06-09T10:00:00Z",
   "lastModifiedDateTime": "2020-06-09T10:00:00Z"

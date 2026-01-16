@@ -31,6 +31,8 @@ Represents a set of policy approval types for quality updates.
 |createdDateTime|DateTimeOffset| The date and time the policy approval is created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |id|String| The unique identifier for the policy approval. Read-only.|
 |lastModifiedDateTime|DateTimeOffset| The date and time the policy approval was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
+|catalogEntryId|String|The catalog entry id is approved|
+|status|microsoft.graph.windowsUpdates.approvalStatus|The approval status. The possible values are: `approved`, `suspended`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
