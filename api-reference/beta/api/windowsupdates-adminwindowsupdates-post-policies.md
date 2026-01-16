@@ -1,6 +1,6 @@
 ---
-title: "Create windows update policy"
-description: "Create a new windows update policy object."
+title: "Create policy"
+description: "Create a new Windows update policy object."
 author: "andredm7"
 ms.date: 01/20/2026
 ms.localizationpriority: medium
@@ -14,7 +14,9 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new policy object.
+Create a new Windows update [policy](../resources/windowsupdates-policy.md) object.
+
+You can use this method with the following child object type: [qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md).
 
 ## Permissions
 
@@ -22,10 +24,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "adminwindowsupdates-post-policies-permissions"
+  "name": "windowsupdates-adminwindowsupdates-post-policies-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/adminwindowsupdates-post-policies-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/windowsupdates-adminwindowsupdates-post-policies-permissions.md)]
 
 ## HTTP request
 
@@ -46,9 +48,9 @@ POST /admin/windows/updates/policies
 
 ## Request body
 
-In the request body, supply a JSON representation of the [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md) object.
+In the request body, supply a JSON representation of the [policy](../resources/windowsupdates-policy.md) object.
 
-You can specify the following properties when creating a **policy**.
+You can specify the following properties when you create a **policy**.
 
 ## Properties
 
@@ -57,8 +59,6 @@ You can specify the following properties when creating a **policy**.
 |displayName|String| The policy display name. The maximum length is 200 characters. Required.|
 |description|String| The policy description. The maximum length is 1,500 characters. Required.|
 |approvalRules|[microsoft.graph.windowsUpdates.approvalRule](../resources/windowsupdates-approvalrule.md) collection| The approved rule of the policy that determines which published content matches the rule on an ongoing basis. Required.|
-|createdDateTime|DateTimeOffset| The date and time when the policy is created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Optional.|
-|lastModifiedDateTime|DateTimeOffset|The date and time when the policy was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Optional.|
 
 ## Response
 
@@ -68,10 +68,10 @@ If successful, this method returns a `201 Created` response code and a [microsof
 
 ### Request
 
-The following example shows a request.
+The following example shows how to create a quality update policy.
 <!-- {
   "blockType": "request",
-  "name": "create_updatespolicy_from_"
+  "name": "create_qualityupdatepolicy"
 }
 -->
 ``` http
@@ -79,14 +79,17 @@ POST https://graph.microsoft.com/beta/admin/windows/updates/policies
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.windowsUpdates.policy",
-  "displayName": "String",
-  "description": "String",
+  "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdatePolicy",
+  "displayName": "Patch Tuesday 123",
+  "description": "Testing Patch Tuesday in test environment",
   "approvalRules": [
     {
-      "@odata.type": "microsoft.graph.windowsUpdates.qualityUpdateApprovalRule"
+      "@odata.type": "microsoft.graph.windowsUpdates.qualityUpdateApprovalRule",
+      "deferralInDays": 0,
+      "classification": "nonSecurity",
+      "cadence": "outOfBand"
     }
-  ],
+  ]
 }
 ```
 
