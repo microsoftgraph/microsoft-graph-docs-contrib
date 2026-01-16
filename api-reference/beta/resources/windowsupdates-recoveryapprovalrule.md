@@ -1,6 +1,6 @@
 ---
 title: "recoveryApprovalRule resource type"
-description: "Represents an entity that governs the quality update approval deployment rules."
+description: "Represents an entity that governs the recovery approval rules."
 author: "andredm7"
 ms.date: 01/20/2026
 ms.localizationpriority: medium
