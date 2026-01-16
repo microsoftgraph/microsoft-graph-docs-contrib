@@ -47,7 +47,7 @@ The `TeamsAppInstallation.ManageSelectedForTeam.All` is the least privileged app
 ### Device and app management | Device updates
 
 Added a new approval and deployment management model for Windows quality updates in Autopatch-managed environments. You can now define quality update policies with customizable approval rules, assign deployment rings to group devices for phased rollout, and manage the approval status of update content before deploying to devices. The following resources provide more information:
-  - [policy](/graph/api/resources/windowsupdates-policy?view=graph-rest-beta&preserve-view=true
+  - [policy](/graph/api/resources/windowsupdates-policy?view=graph-rest-beta&preserve-view=true)
   - [qualityUpdatePolicy](/graph/api/resources/windowsupdates-qualityupdatepolicy?view=graph-rest-beta&preserve-view=true)
   - [policyApproval](/graph/api/resources/windowsupdates-policyapproval?view=graph-rest-beta&preserve-view=true)
   - [ring](/graph/api/resources/windowsupdates-ring?view=graph-rest-beta&preserve-view=true)
