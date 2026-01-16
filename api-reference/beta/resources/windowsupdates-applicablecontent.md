@@ -19,7 +19,7 @@ Represents content applicable for offering to the related collection of devices.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List applicable content](../api/windowsupdates-policy-list-applicablecontent.md)|[microsoft.graph.windowsUpdates.applicableContent](../resources/windowsupdates-catalogentry.md) collection|List [applicable update content](../resources/windowsupdates-applicablecontent.md) to offer to Microsoft Entra groups, Windows Autopatch groups, or both. |
+|[List applicable content](../api/windowsupdates-policy-list-applicablecontent.md)|[microsoft.graph.windowsUpdates.applicableContent](../resources/windowsupdates-applicablecontent.md) collection|List [applicable update content](../resources/windowsupdates-applicablecontent.md) to offer to Microsoft Entra groups, Windows Autopatch groups, or both. |
 
 ## Properties
 |Property|Type|Description|
