@@ -83,9 +83,9 @@ Content-Type: application/json
   "description": "Pre-production test policy",
   "deferralInDays": 5,
   "isPaused": true,
-  "isHotpatchEnabled": true,
-
-  }
+  "isHotpatchEnabled": true
+}
+```
 
 ### Response
 
