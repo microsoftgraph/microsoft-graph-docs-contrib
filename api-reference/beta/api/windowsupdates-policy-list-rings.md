@@ -104,7 +104,7 @@ Content-Type: application/json
       "id": "a2c7637a-cda5-e59e-2385-972c4ee528d2",
       "createdDateTime": "2020-06-09T10:00:00Z",
       "lastModifiedDateTime": "2020-06-09T10:00:00Z",
-      "isHotpatchEnabled": "true"
+      "isHotpatchEnabled": true
     }
   ]
 }
