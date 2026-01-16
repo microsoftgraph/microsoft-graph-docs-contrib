@@ -8,4 +8,4 @@ ms.topic: include
 > - Authentication Administrator
 > - Privileged Authentication Administrator
 >
-> When managing their own authentication methods, users must complete multi-factor authentication (MFA) if they haven't authenticated within the last 10 minutes of their current session.
+> When users manage their own authentication methods, the system prompts them to complete multi-factor authentication (MFA) if they last authenticated more than 10 minutes ago in the current session.

@@ -35,7 +35,7 @@ The authentication method APIs are used to manage a user's authentication method
 Some APIs support self-service operations that allow users to manage their own authentication methods. For example, users can add, update, or delete their own phone numbers and email addresses used for authentication and SSPR. 
 
 > [!IMPORTANT]
-> Starting January 20, 2026, self-service credential management operations require users to complete multifactor authentication (MFA) if they haven't authenticated within the last 10 minutes of their current session. This change applies to both end users and administrators managing credentials and may result in more frequent MFA prompts for users who are already registered for MFA.
+> Starting January 20, 2026, self-service credential management operations require users to complete multifactor authentication (MFA) if they last authenticated more than 10 minutes ago in the current session. This change applies to both end users and administrators managing credentials and may result in more frequent MFA prompts for users who are already registered for MFA.
 > When calling credential management APIs, your application must handle 401 Unauthorized responses appropriately:
 > 1. **Detect the 401 response** - When the API returns a 401 status code, the user needs to complete MFA.
 > 2. **Request fresh MFA** - Create a new interactive OAuth2 request with the following claims parameter:
