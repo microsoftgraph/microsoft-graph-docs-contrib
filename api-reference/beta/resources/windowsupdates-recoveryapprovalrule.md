@@ -37,6 +37,6 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateApprovalRule",
+  "@odata.type": "#microsoft.graph.windowsUpdates.recoveryApprovalRule",
 }
 ```
