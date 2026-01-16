@@ -73,8 +73,8 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.policyApproval",
-  "catalogEntryId": "String",
-  "status": "String"
+  "catalogEntryId": "1d8864c1-531f-4d5b-8225-8653ef4316d8",
+  "status": "suspended"
 }
 ```
 

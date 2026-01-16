@@ -16,6 +16,8 @@ Namespace: microsoft.graph.windowsUpdates
 
 Create a new [ring](../resources/windowsupdates-ring.md) object.
 
+You can use this method with the following child object type: [qualityUpdateRing](../resources/windowsupdates-qualityupdatering.md).
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -67,10 +69,10 @@ If successful, this method returns a `201 Created` response code and a [microsof
 
 ### Request
 
-The following example shows a request.
+The following example shows how to create a quality update ring.
 <!-- {
   "blockType": "request",
-  "name": "create_ring_from_"
+  "name": "create_qualityupdatering"
 }
 -->
 ``` http
@@ -78,17 +80,17 @@ POST https://graph.microsoft.com/beta/admin/windows/updates/policies/86364b9d-d0
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.windowsUpdates.ring",
-  "displayName": "String",
-  "description": "String",
+  "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateRing",
+  "displayName": "Ring0 - IT devices",
+  "description": "First deployment ring to test updates before going to prod.",
   "includedGroupAssignment": {
     "@odata.type": "microsoft.graph.windowsUpdates.includedGroupAssignment"
   },
   "excludedGroupAssignment": {
     "@odata.type": "microsoft.graph.windowsUpdates.excludedGroupAssignment"
   },
-  "deferralInDays": "Integer",
-  "isPaused": "Boolean"
+  "deferralInDays": 5,
+  "isPaused": false
 }
 ```
 
@@ -99,7 +101,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.windowsUpdates.ring"
+  "@odata.type": "microsoft.graph.windowsUpdates.qualityUpdateRing"
 }
 -->
 ``` http

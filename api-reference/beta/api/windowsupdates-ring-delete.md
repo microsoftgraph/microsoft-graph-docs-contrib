@@ -57,10 +57,10 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following example shows a request.
+The following example shows how to delete a quality update ring.
 <!-- {
   "blockType": "request",
-  "name": "delete_ring"
+  "name": "delete_qualityupdatering"
 }
 -->
 ``` http

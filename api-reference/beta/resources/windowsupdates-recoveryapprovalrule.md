@@ -14,7 +14,7 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an entity that governs the quality update approval deployment rules.
+Represents an entity that governs the recovery approval rules.
 
 Inherits from [approvalRule](../resources/windowsupdates-approvalrule.md).
 
