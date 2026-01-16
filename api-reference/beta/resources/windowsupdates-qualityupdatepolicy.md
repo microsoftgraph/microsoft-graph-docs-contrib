@@ -52,7 +52,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdatePolicy",
-  "approvalRules": [{"@odata.type": "microsoft.graph.windowsUpdates.approvalrule"}],
+  "approvalRules": [{"@odata.type": "microsoft.graph.windowsUpdates.approvalRule"}],
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
