@@ -35,7 +35,7 @@ Base type of [policy](../resources/windowsupdates-policy.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|approvalRules|[microsoft.graph.windowsUpdates.contentApprovalRule](../resources/windowsupdates-contentapprovalrule.md) collection| The approved rule of the policy that determines which published content matches the rule on an ongoing basis.|
+|approvalRules|[microsoft.graph.windowsUpdates.approvalRule](../resources/windowsupdates-approvalrule.md) collection| The approved rule of the policy that determines which published content matches the rule on an ongoing basis.|
 |createdDateTime|DateTimeOffset| The date and time when the policy is created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |description|String| The policy description. The maximum length is 1,500 characters. |
 |displayName|String| The policy display name. The maximum length is 200 characters. |
@@ -61,7 +61,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.policy",
-  "approvalRules": [{"@odata.type": "microsoft.graph.windowsUpdates.qualityUpdateApprovalRule"}],
+  "approvalRules": [{"@odata.type": "microsoft.graph.windowsUpdates.approvalRule"}],
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
