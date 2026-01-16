@@ -21,11 +21,11 @@ Base type of [policy](../resources/windowsupdates-policy.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/adminwindowsupdates-list-policies.md)|[microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md) collection|Get a list of the policy objects and their properties.|
-|[Create](../api/adminwindowsupdates-post-policies.md)|[microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md)|Create a new policy object.|
-|[Get](../api/windowsupdates-policy-get.md)|[microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md)|Read the properties and relationships of [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md) object.|
-|[Update](../api/windowsupdates-updatepolicy-update.md)|[microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md)|Update the properties of a policy object.|
-|[Delete](../api/windowsupdates-updatepolicy-delete.md)|None|Delete a policy object.|
+|[List](../api/windowsupdates-adminwindowsupdates-list-policies.md)|[microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md) collection|Get a list of the [policy](../resources/windowsupdates-policy.md) objects and their properties.|
+|[Create](../api/windowsupdates-adminwindowsupdates-post-policies.md)|[microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md)|Create a new Windows update [policy](../resources/windowsupdates-policy.md) object.|
+|[Get](../api/windowsupdates-policy-get.md)|[microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md)|Read the properties and relationships of a [policy](../resources/windowsupdates-policy.md) object.|
+|[Update](../api/windowsupdates-policy-update.md)|[microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md)|Update the properties of a [policy](../resources/windowsupdates-policy.md) object.|
+|[Delete](../api/windowsupdates-policy-delete.md)|None|Delete a Windows update [policy](../resources/windowsupdates-policy.md) object.|
 |[List applicable content](../api/windowsupdates-policy-list-applicablecontent.md)|[microsoft.graph.windowsUpdates.applicableContent](../resources/windowsupdates-applicablecontent.md) collection| List [applicable update content](../resources/windowsupdates-applicablecontent.md) to offer to Microsoft Entra groups, Windows Autopatch groups, or both.|
 |[List approvals](../api/windowsupdates-policy-list-approvals.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) collection| Get a list of the [policyApproval](../resources/windowsupdates-policyapproval.md) objects and their properties.|
 |[Create policy approval](../api/windowsupdates-policy-post-approvals.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md)|Create a new [policyApproval](../resources/windowsupdates-policyapproval.md) object.|
