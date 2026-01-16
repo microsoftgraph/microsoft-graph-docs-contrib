@@ -71,7 +71,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "create_policy_from_"
+  "name": "create_updatepolicy_from_"
 }
 -->
 ``` http
@@ -89,7 +89,6 @@ Content-Type: application/json
   ],
 }
 ```
-
 
 ### Response
 
@@ -123,4 +122,3 @@ Content-Type: application/json
   ]
 }
 ```
-

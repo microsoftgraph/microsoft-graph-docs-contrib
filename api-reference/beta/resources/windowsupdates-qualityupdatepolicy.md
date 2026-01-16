@@ -21,12 +21,9 @@ Inherits from [policy](../resources/windowsupdates-policy.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/windowsupdates-qualityupdatepolicy-list.md)|[microsoft.graph.windowsUpdates.qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md) collection|Get a list of the qualityUpdatePolicy objects and their properties.|
-|[Get](../api/windowsupdates-qualityupdatepolicy-get.md)|[microsoft.graph.windowsUpdates.qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md)|Read the properties and relationships of [microsoft.graph.windowsUpdates.qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md) object.|
 |[Update](../api/windowsupdates-qualityupdatepolicy-update.md)|[microsoft.graph.windowsUpdates.qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md)|Update the properties of a qualityUpdatePolicy object.|
 |[Delete](../api/windowsupdates-qualityupdatepolicy-delete.md)|None|Delete a qualityUpdatePolicy object.|
 |[List applicableContent](../api/windowsupdates-policy-list-applicablecontent.md)|[microsoft.graph.windowsUpdates.applicableContent](../resources/windowsupdates-applicablecontent.md) collection| Get a list of the applicableContent objects and their properties.|
-|[Create applicableContent](../api/windowsupdates-policy-post-applicablecontent.md)|[microsoft.graph.windowsUpdates.applicableContent](../resources/windowsupdates-applicablecontent.md)|Create a new applicableContent object.|
 |[List approvals](../api/windowsupdates-policy-list-approvals.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md) collection| Get a list of the policyApproval objects and their properties.|
 |[Create policyApproval](../api/windowsupdates-policy-post-approvals.md)|[microsoft.graph.windowsUpdates.policyApproval](../resources/windowsupdates-policyapproval.md)|Create a new policyApproval object.|
 |[List rings](../api/windowsupdates-policy-list-rings.md)|[microsoft.graph.windowsUpdates.ring](../resources/windowsupdates-ring.md) collection| Get a list of the ring objects and their properties.|

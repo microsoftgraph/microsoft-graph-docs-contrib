@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [policy](../resources/policy.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [policy](../resources/windowsupdates-policy.md) objects in the response body.
 
 ## Examples
 
@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_policy"
+  "name": "list_updatepolicy"
 }
 -->
 ``` http
