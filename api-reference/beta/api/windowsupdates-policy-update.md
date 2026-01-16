@@ -2,7 +2,7 @@
 title: "Update policy"
 description: "Update the properties of a policy object."
 author: "andredm7"
-ms.date: 16/01/2025
+ms.date: 01/16/2026
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: apiPageType

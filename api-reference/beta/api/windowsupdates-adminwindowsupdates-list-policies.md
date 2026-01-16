@@ -2,7 +2,7 @@
 title: "List policies"
 description: "Get a list of the policy objects and their properties."
 author: "andredm7"
-ms.date: 10/08/2025
+ms.date: 01/16/2026
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: apiPageType

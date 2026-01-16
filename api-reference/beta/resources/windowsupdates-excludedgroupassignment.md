@@ -2,7 +2,7 @@
 title: "excludedGroupAssignment resource type"
 description: "Represents an entity that governs the update deployment audience with excluded groups."
 author: "andredm7"
-ms.date: 10/08/2025
+ms.date: 01/16/2026
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: resourcePageType
