@@ -33,7 +33,8 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "name": "microsoft.graph.windowsUpdates.qualityUpdateApprovalRule",
+  "@odata.type": "microsoft.graph.windowsUpdates.qualityUpdateApprovalRule",
+  "baseType": "microsoft.graph.windowsUpdates.approvalrule"
 }
 -->
 ``` json
