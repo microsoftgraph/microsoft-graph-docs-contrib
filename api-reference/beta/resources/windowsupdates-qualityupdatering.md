@@ -52,7 +52,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateRing",
   "createdDateTime": "String (timestamp)",
-  "deferralInDays": "Integer",
+  "deferralInDays": "Int32",
   "description": "String",
   "displayName": "String",
   "excludedGroupAssignment": {"@odata.type": "microsoft.graph.windowsUpdates.excludedGroupAssignment"},
