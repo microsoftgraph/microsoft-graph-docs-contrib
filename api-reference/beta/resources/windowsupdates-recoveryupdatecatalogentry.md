@@ -2,7 +2,7 @@
 title: "recoveryUpdateCatalogEntry resource type"
 description: "Represents an entity that governs the quick machine recovery update catalog entry."
 author: "andredm7"
-ms.date: 01/16/2026
+ms.date: 01/20/2026
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: resourcePageType
@@ -20,7 +20,7 @@ Inherits from [softwareUpdateCatalogEntry](../resources/windowsupdates-softwareu
 
 ## Methods
 
-See [microsoft.graph.windowsUpdates.catalogEntry](../resources/windowsupdates-catalogentry.md), for a list of supported methods.
+None.
 
 ## Properties
 |Property|Type|Description|

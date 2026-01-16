@@ -1,11 +1,11 @@
 ---
 title: "complianceChange resource type"
 description: "An abstract type that represents a change to enforce policy such as approving content."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: resourcePageType
-ms.date: 09/16/2024
+ms.date: 01/20/2026
 ---
 
 # complianceChange resource type

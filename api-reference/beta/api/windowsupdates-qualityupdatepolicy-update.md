@@ -83,7 +83,6 @@ Content-Type: application/json
       "@odata.type": "microsoft.graph.windowsUpdates.contentApprovalRule"
     }
   ],
-  "isAutoEnrollDevices": "Boolean"
 }
 ```
 

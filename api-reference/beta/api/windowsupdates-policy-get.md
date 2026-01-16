@@ -2,7 +2,7 @@
 title: "Get policy"
 description: "Read the properties and relationships of policy object."
 author: "andredm7"
-ms.date: 10/22/2025
+ms.date: 01/20/2026
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: apiPageType

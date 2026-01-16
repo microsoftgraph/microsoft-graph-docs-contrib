@@ -1,8 +1,8 @@
 ---
-title: "policy resource type"
+title: "Windows update policy resource type"
 description: "An abstract type that governs the update deployment settings content for an associated deployment audience."
 author: "andredm7"
-ms.date: 01/16/2026
+ms.date: 01/20/2026
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: resourcePageType
@@ -16,13 +16,13 @@ Namespace: microsoft.graph.windowsUpdates
 
 An abstract type that governs the update deployment settings content for an associated deployment audience. This audience can consist of one or more Microsoft Entra groups.
 
-Base type of [qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md). 
+Base type of [policy](../resources/windowsupdates-policy.md). 
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/adminwindowsupdates-list-updatepolicies.md)|[microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md) collection|Get a list of the policy objects and their properties.|
-|[Create](../api/adminwindowsupdates-post-updatepolicies.md)|[microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md)|Create a new policy object.|
+|[List](../api/adminwindowsupdates-list-policies.md)|[microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md) collection|Get a list of the policy objects and their properties.|
+|[Create](../api/adminwindowsupdates-post-policies.md)|[microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md)|Create a new policy object.|
 |[Get](../api/windowsupdates-policy-get.md)|[microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md)|Read the properties and relationships of [microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md) object.|
 |[Update](../api/windowsupdates-updatepolicy-update.md)|[microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md)|Update the properties of a policy object.|
 |[Delete](../api/windowsupdates-updatepolicy-delete.md)|None|Delete a policy object.|
@@ -67,7 +67,6 @@ The following JSON representation shows the resource type.
   "description": "String",
   "displayName": "String",
   "id": "String (identifier)",
-  "isAutoEnrollDevices": "Boolean",
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```

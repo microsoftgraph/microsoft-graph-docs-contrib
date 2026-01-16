@@ -2,7 +2,7 @@
 title: "policyApproval resource type"
 description: "Represents a set of policy approval types for quality updates."
 author: "andredm7"
-ms.date: 01/12/2026
+ms.date: 01/20/2026
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: resourcePageType

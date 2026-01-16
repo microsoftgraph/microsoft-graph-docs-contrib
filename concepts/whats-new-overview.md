@@ -20,6 +20,17 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## January 2026: New and generally available
 
+### Windows Updates (Autopatch) | Public Preview (Beta) of new APIs
+
+#### Quality Update Approvals
+- Create/Get/Update/Delete a Windows Autopatch quality update policy with approval rules.
+- Create/Get/Update/Delete a Windows Autopatch quality update ring with deployment settings.
+- List applicable Quality Update deployment content.
+
+#### Quick Machine Recovery
+- Create/Get/Update/Delete a Windows Autopatch quality update policy with approval rules and recovery approval rules.
+- List recovery update catalog entry.
+
 ### Reports | Identity and access reports
 
 - Added `qrCode` as a new supported value for the **usageAuthMethod** enumeration which is the type for the **authMethod** property on [credentialUsageSummary](/graph/api/resources/credentialusagesummary?view=graph-rest-beta&preserve-view=true), [userCredentialUsageDetails](/graph/api/resources/usercredentialusagedetails?view=graph-rest-beta&preserve-view=true), [userEventsSummary](/graph/api/resources/usereventssummary?view=graph-rest-beta&preserve-view=true), and [userRegistrationActivitySummary](/graph/api/resources/userregistrationactivitysummary?view=graph-rest-beta&preserve-view=true) resources. This value represents the use of the [QR code](/graph/api/resources/qrcodepinauthenticationmethod?view=graph-rest-beta&preserve-view=true) as an authentication method.

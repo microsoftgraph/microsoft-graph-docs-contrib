@@ -5,7 +5,7 @@ author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: resourcePageType
-ms.date: 10/08/2024
+ms.date: 01/20/2026
 ---
 
 # adminWindowsUpdates resource type
@@ -31,6 +31,7 @@ Represents an entity that acts as a container for all Windows Autopatch function
 |resourceConnections|[microsoft.graph.windowsUpdates.resourceConnection](../resources/windowsupdates-resourceconnection.md) collection|Service connections to external resources such as analytics workspaces.|
 |updatableAssets|[microsoft.graph.windowsUpdates.updatableAsset](../resources/windowsupdates-updatableasset.md) collection|Assets registered with Windows Autopatch that can receive updates.|
 |updatePolicies|[microsoft.graph.windowsUpdates.updatePolicy](../resources/windowsupdates-updatepolicy.md) collection|A collection of policies for approving the deployment of different content to an audience over time.|
+|policies|[microsoft.graph.windowsUpdates.policy](../resources/windowsupdates-policy.md) collection|A collection of policies for approving the deployment of different content to an audience over time.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
