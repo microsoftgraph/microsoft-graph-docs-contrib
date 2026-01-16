@@ -35,7 +35,7 @@ The following JSON representation shows the resource type.
   "blockType": "resource",
   "abstract": true,
   "@odata.type": "microsoft.graph.windowsUpdates.qualityUpdateApprovalRule",
-  "baseType": "microsoft.graph.windowsUpdates.approvalrule"
+  "baseType": "microsoft.graph.windowsUpdates.approvalRule"
 }
 -->
 ``` json
