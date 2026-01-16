@@ -86,22 +86,8 @@ Content-Type: application/json
   "deferralInDays": 5,
   "isPaused": true,
   "isHotpatchEnabled": true,
-  "includedGroupAssignment": {
-    "assignments":
-    [
-      {"groupId": "3ee6cc4e-b04b-4cfe-8576-5daf28443498"},
-      {"groupId": "e13ec3a6-dc1b-4586-8c71-c5dc7f044370"},
-      {"groupId": "709ca16d-4fd1-4fe0-8253-663da5c5289d"}
-    ]
-  },
-  "excludedGroupAssignment": {
-    "assignments":
-    [
-      {"groupId": "a0d7bb13-30bb-48fd-9c30-d787a57fd6b9"},
-      {"groupId": "949e03ee-84f7-4a3d-986c-14786d0f21b0"}
-    ]
+
   }
-}
 
 ### Response
 
@@ -116,6 +102,7 @@ The following example shows the response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateRing",
   "displayName": "Ring0 - IT devices",
