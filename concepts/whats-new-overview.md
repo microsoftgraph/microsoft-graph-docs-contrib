@@ -54,6 +54,10 @@ The `TeamsAppInstallation.ManageSelectedForTeam.All` is the least privileged app
 
 The `TeamsAppInstallation.ManageSelectedForTeam.All` is the least privileged application permission required to install or upgrade a Teams app that requires consent to [resource-specific consent (RSC)](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions when using the [teamsAppInstallation in a team: upgrade](/graph/api/team-teamsappinstallation-upgrade?view=graph-rest-beta&preserve-view=true) API.
 
+### Teamwork and communications | Calls and online meetings
+
+Introduce `capacity` property on the virtual event objects: [virtualEventTownhall](/graph/api/resources/virtualeventtownhall) or [virtualEventWebinar](/graph/api/resources/virtualeventwebinar. This property allows customers to specify the expected attendee size when creating or updating events and retrieve it later. Validation ensures compliance with SKU and licensing limits, returning actionable errors when capacity exceeds entitlement.
+
 ## December 2025: New and generally available
 
 ### Calendars | Places

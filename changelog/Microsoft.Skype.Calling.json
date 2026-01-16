@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "721aca61-943c-4876-ad1f-063720d75265",
+          "ApiChange": "Property",
+          "ChangedApiName": "capacity",
+          "ChangeType": "Addition",
+          "Description": "Added the **capacity** property to the [virtualEvent](https://learn.microsoft.com/en-us/graph/api/resources/virtualEvent?view=graph-rest-beta) resource.",
+          "Target": "virtualEvent"
+        }
+      ],
+      "Id": "721aca61-943c-4876-ad1f-063720d75265",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2026-01-15T00:27:39.1921591Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "94772378-a35f-46e1-a514-13e6a88982a0",
           "ApiChange": "Property",
           "ChangedApiName": "meetingSpokenLanguageTag",
