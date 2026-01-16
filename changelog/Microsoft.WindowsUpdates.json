@@ -1251,16 +1251,40 @@
           "ApiChange": "Resource",
           "ChangedApiName": "qualityUpdateRing",
           "ChangeType": "Addition",
-          "Description": "Added the [qualityUpdateRing](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-qualityUpdateRing?view=graph-rest-beta) resource and associated methods.",
+          "Description": "Added the [qualityUpdateRing](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-qualityUpdateRing?view=graph-rest-beta) resource.",
           "Target": "qualityUpdateRing"
         },
-         {
-          "Id": "3f3aee72-dcdf-4f64-bce6-1898296386e7",
+        {
+          "Id": "45203e80-195f-4090-bfa9-fee7891f4a5e",
           "ApiChange": "Resource",
           "ChangedApiName": "recoveryUpdateCatalogEntry",
           "ChangeType": "Addition",
-          "Description": "Added the [recoveryUpdateCatalogEntry](https://learn.microsoft.com/en-us/graph/api/resources/intune-windowsUpdates-recoveryUpdateCatalogEntry?view=graph-rest-beta) resource.",
+          "Description": "Added the [recoveryUpdateCatalogEntry](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-recoveryUpdateCatalogEntry?view=graph-rest-beta) resource type.",
           "Target": "recoveryUpdateCatalogEntry"
+        },
+        {
+          "Id": "45203e80-195f-4090-bfa9-fee7891f4a5e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "approvalRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [approvalRule](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-approvalRule?view=graph-rest-beta) resource type.",
+          "Target": "approvalRule"
+        },
+        {
+          "Id": "45203e80-195f-4090-bfa9-fee7891f4a5e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "recoveryApprovalRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [recoveryApprovalRule](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-recoveryApprovalRule?view=graph-rest-beta) resource type.",
+          "Target": "recoveryApprovalRule"
+        },
+        {
+          "Id": "45203e80-195f-4090-bfa9-fee7891f4a5e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "qualityUpdateApprovalRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [qualityUpdateApprovalRule](https://learn.microsoft.com/en-us/graph/api/resources/windowsUpdates-qualityUpdateApprovalRule?view=graph-rest-beta) resource type.",
+          "Target": "qualityUpdateApprovalRule"
         },
         {
           "Id": "45203e80-195f-4090-bfa9-fee7891f4a5e",
@@ -1306,7 +1330,7 @@
       "Id": "45203e80-195f-4090-bfa9-fee7891f4a5e",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2025-10-22T05:53:32.9474232Z",
+      "CreatedDateTime": "2026-01-20T05:53:32.9474232Z",
       "WorkloadArea": "Device and app management",
       "SubArea": "Device updates"
     }
