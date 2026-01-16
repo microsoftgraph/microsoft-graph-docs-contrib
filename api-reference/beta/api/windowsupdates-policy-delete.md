@@ -1,20 +1,22 @@
 ---
-title: "Delete qualityUpdatePolicy"
-description: "Delete a qualityUpdatePolicy object."
+title: "Delete policy"
+description: "Delete a Windows update policy object."
 author: "andredm7"
-ms.date: 10/08/2025
+ms.date: 16/01/2026
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: apiPageType
 ---
 
-# Delete qualityUpdatePolicy
+# Delete policy
 
 Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md) object.
+Delete a Windows update [policy](../resources/windowsupdates-policy.md) object.
+
+You can use this method with the following child object type: [qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md).
 
 ## Permissions
 
@@ -22,10 +24,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "windowsupdates-qualityupdatepolicy-delete-permissions"
+  "name": "windowsupdates-policy-delete-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/windowsupdates-qualityupdatepolicy-delete-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/windowsupdates-policy-delete-permissions.md)]
 
 ## HTTP request
 
@@ -55,7 +57,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following example shows a request.
+The following example shows how to delete a quality update policy.
 <!-- {
   "blockType": "request",
   "name": "delete_qualityupdatepolicy"
