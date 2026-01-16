@@ -52,9 +52,9 @@ PATCH /admin/windows/updates/policies/{policyId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|approvalRules|[microsoft.graph.windowsUpdates.approvalRule](../resources/windowsupdates-approvalrule.md) collection| The approved rule of the policy that determines which published content matches the rule on an ongoing basis. Inherited from [policy](../resources/windowsupdates-policy.md). Required.|
-|description|String| The quality update policy description. The maximum length is 1,500 characters. Inherited from [policy](../resources/windowsupdates-policy.md). Required.|
-|displayName|String| The quality update policy display name. The maximum length is 200 characters. Inherited from [policy](../resources/windowsupdates-policy.md). Required.|
+|approvalRules|[microsoft.graph.windowsUpdates.approvalRule](../resources/windowsupdates-approvalrule.md) collection| The approved rule of the policy that determines which published content matches the rule on an ongoing basis.|
+|description|String| The quality update policy description. The maximum length is 1,500 characters.|
+|displayName|String| The quality update policy display name. The maximum length is 200 characters. |
 
 ## Response
 
