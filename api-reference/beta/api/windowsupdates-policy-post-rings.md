@@ -52,14 +52,12 @@ You can specify the following properties when you create a **ring** object.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset| The date and time the ring is created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional.|
 |deferralInDays|Int32| The quality update deferral period in days. The value must be between `0` and `30`. Optional.|
-|description|String| The ring description. Required.|
-|displayName|String| The ring display name. Required.|
+|description|String| The ring description. The maximum length is 1,500 characters. Required.|
+|displayName|String| The ring display name. The maximum length is 200 characters. Required.|
 |excludedGroupAssignment|[microsoft.graph.windowsUpdates.excludedGroupAssignment](../resources/windowsupdates-excludedgroupassignment.md)| Governs the update deployment audience with excluded groups. Groups are logical containers of devices represented by Microsoft Entra groups. Required.|
 |includedGroupAssignment|[microsoft.graph.windowsUpdates.includedGroupAssignment](../resources/windowsupdates-includedgroupassignment.md)| Governs the update deployment audience with included groups. Groups are logical containers of devices represented by Microsoft Entra groups. Required.|
 |isPaused|Boolean| The pause action for the quality update ring policy. Required.|
-|lastModifiedDateTime|DateTimeOffset| The date and time when the ring was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional.|
 
 ## Response
 
