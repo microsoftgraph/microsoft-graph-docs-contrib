@@ -44,7 +44,7 @@ The `TeamsAppInstallation.ManageSelectedForTeam.All` is the least privileged app
 
 ## January 2026: New in preview only
 
-### Device and app management | Cloud PC
+### Devices and app management | Cloud PC
 
 Use the **category** property on [cloudPcSourceDeviceImage](/graph/api/resources/cloudpcsourcedeviceimage?view=graph-rest-beta&preserve-view=true) to get the category of the source image that is requested. For more information, see [Get cloudPcSourceDeviceImage objects with a specific category](/graph/api/cloudpcdeviceimage-getsourceimages?view=graph-rest-beta&preserve-view=true#example-2-get-cloudpcsourcedeviceimage-objects-with-a-specific-category).
 
