@@ -33,7 +33,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The ID of the relation.|
-|relationship|String|The type of relation. Possible values are: `pin`, `reuse`.|
+|relationship|String|The type of relation. The possible values are: `pin`, `reuse`.|
 
 ## Relationships
 |Relationship|Type|Description|

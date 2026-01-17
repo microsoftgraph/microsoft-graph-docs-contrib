@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 List all the [contentModelUsage](../resources/contentmodel.md) information related to a [contentModel](../resources/contentmodel.md) applied to a SharePoint document library.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

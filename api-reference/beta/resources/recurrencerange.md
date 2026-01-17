@@ -27,7 +27,7 @@ You can specify the date range for a recurring event in one of 3 ways depending 
 |numberOfOccurrences|Int32|The number of times to repeat the event. Required and must be positive if **type** is `numbered`.|
 |recurrenceTimeZone|String |Time zone for the **startDate** and **endDate** properties. Optional. If not specified, the time zone of the event is used.|
 |startDate|Date|The date to start applying the recurrence pattern. The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event. Must be the same value as the **start** property of the recurring [event](event.md). Required.|
-|type|String|The recurrence range. Possible values are: `endDate`, `noEnd`, `numbered`. Required.|
+|type|String|The recurrence range. The possible values are: `endDate`, `noEnd`, `numbered`. Required.|
 
 Use the **type** property to specify the different types of **recurrenceRange**. Note the required properties for each type, as described in the following table.
 

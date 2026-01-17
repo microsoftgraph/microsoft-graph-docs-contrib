@@ -53,6 +53,14 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [driveItem](../resources/driveitem.md) object in the response body.
 
+> [!NOTE]
+>
+> * For private channels created before the move to group compliance as part of enhancements, a dedicated folder that matches the channel name may still exist. Any files uploaded before the enhancement remain in this folder.
+>
+> * After a private channel is migrated, the default file location changes to the root folder, and the `GET /teams/{team-id}/channels/{channel-id}/filesFolder` API returns the root folder’s `driveItem`. Newly created private channels (post‑migration) no longer create a dedicated folder. All files are stored in the root folder, and the API returns the root folder’s `driveItem`.
+>
+> For more details about private channel enhancements and migration, see [New enhancements in private channels in Microsoft Teams](https://techcommunity.microsoft.com/blog/microsoftteamsblog/new-enhancements-in-private-channels-in-microsoft-teams-unlock-their-full-potent/4438767).
+
 ## Example
 ### Request
 The following example shows a request.

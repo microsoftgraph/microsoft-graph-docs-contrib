@@ -80,7 +80,7 @@ The following table shows the properties that are required for this method.
 
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-| reviewResult | String | Decision of the approver. Possible values are: `Approve`, `Deny`.|
+| reviewResult | String | Decision of the approver. The possible values are: `Approve`, `Deny`.|
 | justification | String | Justification related to the approver's decision. |
 
 

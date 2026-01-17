@@ -5,13 +5,29 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
 author: "MSGraphDocsvTeam"
-ms.date: 11/18/2025
+ms.date: 12/02/2025
 ms.custom: sfi-ropc-nochange
 ---
 
 # Enum values
 
 Namespace: microsoft.graph
+
+### structuredDataEntryValueType values
+
+|Member|
+|:---|
+|dateTime|
+|boolean|
+|byte|
+|string|
+|integer32|
+|unsignedInteger32|
+|integer64|
+|unsignedInteger64|
+|stringArray|
+|byteArray|
+|unknownFutureValue|
 
 ### placeFeatureEnablement values
 
@@ -772,6 +788,24 @@ Namespace: microsoft.graph
 | governed |
 | unknownFutureValue |
 
+### accessPackageSuggestionFilterByCurrentUserOptions values
+
+| Member |
+| ---- |
+| none |
+| relatedPeopleAssignments |
+| assignmentHistory |
+| unknownFutureValue |
+
+### accessPackageSuggestionRelatedPeopleInsightLevel values
+
+| Member |
+| ---- |
+| disabled |
+| count |
+| countAndNames |
+| unknownFutureValue |
+
 ### customExtensionCalloutInstanceStatus values
 
 | Member |
@@ -909,6 +943,15 @@ Namespace: microsoft.graph
 | unknownFutureValue |
 | remoteDesktopToken |
 | refreshToken       |
+
+### approverInformationVisibilityvalues
+
+| Member |
+| ---- |
+| no |
+| yes |
+| default |
+| unknownFutureValue |
 
 ### protocolType values
 
@@ -1743,32 +1786,6 @@ Namespace: microsoft.graph
 | scopeBasedAuthRequirementPolicy |
 | authenticationStrengths |
 
-### riskDetail values
-
-| Member |
-| ----------------------------------------- |
-| none |
-| adminGeneratedTemporaryPassword |
-| userPerformedSecuredPasswordChange |
-| userPerformedSecuredPasswordReset |
-| adminConfirmedSigninSafe |
-| aiConfirmedSigninSafe |
-| userPassedMFADrivenByRiskBasedPolicy |
-| adminDismissedAllRiskForUser |
-| adminConfirmedSigninCompromised |
-| hidden |
-| adminConfirmedUserCompromised |
-| unknownFutureValue |
-| adminConfirmedServicePrincipalCompromised |
-| adminDismissedAllRiskForServicePrincipal |
-| m365DAdminDismissedDetection |
-| userChangedPasswordOnPremises |
-| adminDismissedRiskForSignIn |
-| adminConfirmedAccountSafe |
-| adminConfirmedAgentSafe |
-| adminConfirmedAgentCompromised |
-| adminDismissedRiskForAgent |
-
 <!-- maintenance comment: Do not delete enum delcaration for riskEventType until all properties of this type are marked as deleted. Dec 28, 2021: Pending eventTypes (in riskUserActivity) and riskType (in riskDetection)-->
 ### riskEventType values
 
@@ -1822,6 +1839,7 @@ Namespace: microsoft.graph
 | fido2SecurityKey |
 | oneTimePasscode |
 | passKeySynced |
+| qrCode |
 
 ### authenticationAppAdminConfiguration values
 
@@ -2912,14 +2930,14 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### riskLevel values
 
-| Member |
-| ------------------ |
-| low |
-| medium |
-| high |
-| hidden |
-| none |
-| unknownFutureValue |
+|Member|
+|:---|
+|low|
+|medium|
+|high|
+|hidden|
+|none|
+|unknownFutureValue|
 
 ### riskState values
 
@@ -3074,15 +3092,6 @@ Possible values for user account types (group membership), per Windows definitio
 | nearRealtime |
 | offline |
 | unknownFutureValue |
-
-### activityType values
-
-| Member |
-| ------------------ |
-| signin |
-| user |
-| unknownFutureValue |
-| servicePrincipal |
 
 ### chatMessagePolicyViolationUserActionType values
 
@@ -4016,18 +4025,6 @@ Possible values for user account types (group membership), per Windows definitio
 | or |
 | and |
 
-### subjectRightsRequestStage values
-
-| Member |
-| ------------------ |
-| contentRetrieval |
-| contentReview |
-| generateReport |
-| contentDeletion |
-| caseResolved |
-| unknownFutureValue |
-| approval |
-
 ### subjectRightsRequestStageStatus values
 
 | Member |
@@ -4502,6 +4499,16 @@ Possible values for user account types (group membership), per Windows definitio
 | privateContent |
 | sharedContent |
 | unknownFutureValue |
+
+### purviewInsiderRiskManagementLevel values
+
+|Member|
+|:---|
+|none|
+|minor|
+|moderate|
+|elevated|
+|unknownFutureValue|
 
 ### chatMessageActions values
 
@@ -5706,13 +5713,45 @@ Possible values for user account types (group membership), per Windows definitio
 |all|
 |unknownFutureValue|
 
-### siteTemplateType values 
+### siteTemplateType values
 
 |Member|
 |:---|
 |sitepagepublishing|
 |group|
 |sts|
+|unknownFutureValue|
+
+### placeOperationStatus values 
+
+|Member|
+|:---|
+|created|
+|inProgress|
+|succeeded|
+|failed|
+|partiallySucceeded|
+|expired|
+|unknownFutureValue|
+
+### workLocationSource values
+
+|Member|
+|:---|
+|none|
+|manual|
+|scheduled|
+|automatic|
+|unknownFutureValue|
+
+### workLocationType values 
+
+|Member|
+|:---|
+|unspecified|
+|office|
+|remote|
+|timeOff|
 |unknownFutureValue|
 
 ### sharePointIdentityMappingGroupType values 
@@ -5783,4 +5822,52 @@ Possible values for user account types (group membership), per Windows definitio
 |synced|
 |finalizing|
 |forceComplete|
+|unknownFutureValue|
+
+### resourceAccessStatus values
+
+|Member|
+|:---|
+|none|
+|failure|
+|success|
+|unknownFutureValue|
+
+### resourceAccessType values
+
+|Member|
+|:---|
+|none|
+|read|
+|write|
+|create|
+|unknownFutureValue|
+
+### scopeCollectionKind values 
+
+|Member|
+|:---|
+|allAllowed|
+|enumerated|
+|none|
+|scopeKindNotSet|
+|unknownFutureValue|
+
+### sharePointMigrationTaskStatus values
+
+| Member             |
+|:------------------ |
+| notStarted         |
+| inProgress         |
+| completed          |
+| cancelled          |
+| failed             |
+| unknownFutureValue |
+
+### kind values
+
+|Member|
+|:---|
+|unrestricted|
+|allowedTenants|
 |unknownFutureValue|

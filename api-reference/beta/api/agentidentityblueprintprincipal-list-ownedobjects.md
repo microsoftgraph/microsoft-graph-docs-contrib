@@ -4,7 +4,7 @@ description: "Retrieve a list of objects owned by the agent identity blueprint p
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-applications"
+ms.subservice: "entra-agent-id"
 doc_type: apiPageType
 ---
 
@@ -22,11 +22,7 @@ Retrieve a list of objects owned by the [agentIdentityBlueprintPrincipal](../res
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "agentidentityblueprintprincipal-list-ownedobjects-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "agentidentityblueprintprincipal_list_ownedobjects" } -->
 [!INCLUDE [permissions-table](../includes/permissions/agentidentityblueprintprincipal-list-ownedobjects-permissions.md)]
 
 [!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]

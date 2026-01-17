@@ -27,7 +27,7 @@ Inherits from [identitySet](identityset.md).
 | assertedIdentity | [communicationsUserIdentity](communicationsuseridentity.md) or [communicationsPhoneIdentity](communicationsphoneidentity.md) | An **identity** the participant would like to present itself as to the other participants in the call. |
 | azureCommunicationServicesUser | [azureCommunicationServicesUserIdentity](azurecommunicationservicesuseridentity.md) | The Azure Communication Services user associated with this action. |
 | encrypted | [communicationsEncryptedIdentity](communicationsencryptedidentity.md) | The encrypted user associated with this action. |
-| endpointType | endpointType | Type of endpoint the participant uses. Possible values are: `default`, `voicemail`, `skypeForBusiness`, `skypeForBusinessVoipPhone` and `unknownFutureValue`. |
+| endpointType | endpointType | Type of endpoint the participant uses. The possible values are: `default`, `voicemail`, `skypeForBusiness`, `skypeForBusinessVoipPhone` and `unknownFutureValue`. |
 | guest | [communicationsGuestIdentity](communicationsguestidentity.md) | The guest user associated with this action. |
 | onPremises | [communicationsUserIdentity](communicationsuseridentity.md) | The Skype for Business on-premises user associated with this action. |
 | phone | [communicationsPhoneIdentity](communicationsphoneidentity.md) | The phone user associated with this action. |
