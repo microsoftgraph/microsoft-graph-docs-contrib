@@ -2,32 +2,32 @@
 title: "Set up authentication for unified tenant configuration management APIs"
 description: "Learn how to authenticate and configure the unified tenant configuration management service principal in Microsoft Graph."
 author: "swatyario"
-ms.date: 04/10/2025
+ms.date: 19/01/2026
 ms.localizationpriority: medium
 ms.subservice: "tenant-administration"
 ---
 
 # Set up authentication for unified tenant configuration management APIs
 
-This article describes how to authenticate to the unified tenant configuration management (UTCM) APIs in Microsoft Graph and configure the UTCM service principal for your organization.
+Learn how to authenticate to the unified tenant configuration management (UTCM) APIs and configure the UTCM service principal for your organization.
 
 ## Authentication
 
-There are two levels of authentication required when working with UTCM APIs:
+Two levels of authentication are required when you work with UTCM APIs:
 
 1. **Authenticate to Microsoft Graph** with a principal that has the right permission to manage monitors and run snapshots.
 2. **Configure authentication for monitors** to determine what authentication method monitors use to impersonate calls to the various workload endpoints or to run a snapshot job.
 
 ### Authenticate to Microsoft Graph
 
-To manage monitors or initiate a snapshot job, you must first obtain an access token to Microsoft Graph by authenticating using either a user's credentials (user delegated flow) or a service principal. The following table summarizes the required permissions:
+To manage monitors or initiate a snapshot job, you must first obtain an access token to Microsoft Graph by authenticating with either a user's credentials (user-delegated flow) or a service principal. The following table summarizes the required permissions:
 
-| Scenario | User Delegated | Service Principal |
+| Scenario | User delegated | Service principal |
 |---|---|---|
 | Monitor management | Any privileged role* | ConfigurationMonitoring.Read.All or ConfigurationMonitoring.ReadWrite.All |
 | Snapshots | Any privileged role* | ConfigurationMonitoring.ReadWrite.All |
 
-*For a complete list of privileged roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference).
+\* For a complete list of privileged roles, see [Microsoft Entra built-in roles](/entra/identity/role-based-access-control/permissions-reference).
 
 ### Authentication to run a monitor
 
@@ -41,9 +41,11 @@ When **runAsUTCMServicePrincipal** is set to `true` on a monitor, the monitor ex
 
 ## Set up the UTCM service principal
 
-During public preview, organizations must add the UTCM service principal to their tenant and grant the required permissions.
+During public preview, organizations must add the UTCM service principal to their tenant and grant it the required permissions.
 
 ### Add the UTCM service principal to a tenant
+
+You can use the following options when you add the UTCM service principal to a tenant.
 
 #### Option 1: Use PowerShell
 
@@ -66,7 +68,7 @@ During public preview, organizations must add the UTCM service principal to thei
    New-MgServicePrincipal -AppId '03b07b79-c5bc-4b5e-9bfa-13acf4a99998'
    ```
 
-#### Option 2: Use Microsoft Graph API
+#### Option 2: Use the Microsoft Graph API
 
 Make the following request to create the service principal:
 
@@ -85,7 +87,7 @@ After adding the UTCM service principal to your tenant, you must grant it the ne
 
 #### Option 1: Use PowerShell
 
-The following example script grants `User.ReadWrite.All` and `Policy.Read.All` permissions to the UTCM service principal:
+The following example script grants the `User.ReadWrite.All` and `Policy.Read.All` permissions to the UTCM service principal:
 
 ```powershell
 $permissions = @('User.ReadWrite.All', 'Policy.Read.All')
@@ -128,4 +130,4 @@ Replace the placeholder values:
 
 - [Overview of the unified tenant configuration management APIs](/graph/unified-tenant-configuration-management-concept-overview)
 - [Supported workloads and resource types](/graph/utcm-supported-resourcetypes)
-- [Unified tenant configuration management API reference](../api-reference/beta/resources/unified-tenant-configuration-management-api-overview.md)
+- [Unified tenant configuration management API overview](../api-reference/beta/resources/unified-tenant-configuration-management-api-overview.md)
