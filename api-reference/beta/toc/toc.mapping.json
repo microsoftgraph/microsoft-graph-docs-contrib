@@ -3576,7 +3576,6 @@
           "overview": "../../resources/unified-tenant-configuration-management-api-overview.md",
           "shouldSort": true,
           "resources": [
-            "configurationApplication",
             "configurationBaseline",
             "configurationDrift",
             "configurationMonitor",
