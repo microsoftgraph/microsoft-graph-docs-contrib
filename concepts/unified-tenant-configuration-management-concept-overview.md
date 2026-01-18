@@ -32,7 +32,7 @@ As the Microsoft 365 ecosystem grows, keeping tenant settings aligned with the d
 
 ### Easily extract and understand current configuration states
 
-The [snapshot](../api-reference/beta/resources/configurationsnapshotjob.md) APIs in UTCM simplify the process of retrieving the current configuration across multiple workloads within a tenant. Administrators can use these snapshots to get a clear, declarative view of how settings are currently applied, which making audits, reviews, and troubleshooting much easier.
+The [snapshot](../api-reference/beta/resources/configurationsnapshotjob.md) APIs in UTCM simplify the process of retrieving the current configuration across multiple workloads within a tenant. Administrators can use these snapshots to get a clear, declarative view of how settings are currently applied, which makes audits, reviews, and troubleshooting much easier.
 
 ## API reference
 
