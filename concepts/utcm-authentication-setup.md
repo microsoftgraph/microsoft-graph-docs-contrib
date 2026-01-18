@@ -130,4 +130,4 @@ Replace the placeholder values:
 
 - [Overview of the unified tenant configuration management APIs](/graph/unified-tenant-configuration-management-concept-overview)
 - [Supported workloads and resource types](/graph/utcm-supported-resourcetypes)
-- [Unified tenant configuration management API overview](../api-reference/beta/resources/unified-tenant-configuration-management-api-overview.md)
+- [Unified tenant configuration management API overview](/graph/api/resources/unified-tenant-configuration-management-api-overview?view=graph-rest-beta&preserve-view=true)
