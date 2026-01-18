@@ -2,7 +2,7 @@
 title: "Set up authentication for unified tenant configuration management APIs"
 description: "Learn how to authenticate and configure the unified tenant configuration management service principal in Microsoft Graph."
 author: "swatyario"
-ms.date: 19/01/2026
+ms.date: 01/19/2026
 ms.localizationpriority: medium
 ms.subservice: "tenant-administration"
 ---
