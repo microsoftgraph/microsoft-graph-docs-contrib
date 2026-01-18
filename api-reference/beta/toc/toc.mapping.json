@@ -3569,7 +3569,7 @@
       ]
     },
     {
-      "name": "Tenant administration",
+      "name": "Tenant administration (preview)",
       "childNodes": [
         {
           "name": "Configuration management",
