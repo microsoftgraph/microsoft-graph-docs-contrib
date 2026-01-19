@@ -1143,6 +1143,23 @@ Namespace: microsoft.graph.security
 |microsoftSentinel|
 |microsoftThreatIntelligence|
 
+### environmentKind values 
+
+|Member|
+|:---|
+|azureSubscription|
+|awsOrganization|
+|awsAccount|
+|gcpOrganization|
+|gcpProject|
+|dockersHubOrganization|
+|devOpsConnection|
+|azureDevOpsOrganization|
+|gitHubOrganization|
+|gitLabGroup|
+|jFrogArtifactory|
+|unknownFutureValue|
+
 <!--
 {
   "type": "#page.annotation",
