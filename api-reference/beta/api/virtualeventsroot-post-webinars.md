@@ -56,7 +56,7 @@ You can specify the following properties when you create a [virtualEventWebinar]
 |Property|Type|Description|
 |:---|:---|:---|
 | audience | [meetingAudience](../resources/virtualeventwebinar.md#meetingaudience-values) | The audience to whom the webinar is visible. |
-| capacity | String |This inrepresent the expected attendee size for Virtual Events. |
+| capacity | Integer |This inrepresent the expected attendee size for Virtual Events. |
 | coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | The identity information of coorganizers of the webinar. |
 | description | [itemBody](../resources/itembody.md) | A description of the webinar. |
 | displayName | String | The display name of the webinar. |

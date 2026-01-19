@@ -31,7 +31,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|capacity|String|This inrepresent the expected attendee size for Virtual Events. |
+|capacity|Integer|This inrepresent the expected attendee size for Virtual Events. |
 |createdBy|[communicationsIdentitySet](communicationsidentityset.md)|The identity information for the creator of the virtual event. Inherited from [virtualEvent](../resources/virtualevent.md).|
 |description|[itemBody](../resources/itembody.md)|A description of the virtual event.|
 |displayName|String|The display name of the virtual event. |
@@ -72,7 +72,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.virtualEvent",
-  "capacity": "String",
+  "capacity": "Integer",
   "createdBy": {"@odata.type": "microsoft.graph.communicationsIdentitySet"},
   "description": {"@odata.type": "microsoft.graph.itemBody"},
   "displayName": "String",
