@@ -128,6 +128,105 @@ The following example shows the response.
 ```http
 HTTP/1.1 204 No Content
 ```
+## Removing certificates that also have passwords
+Some certificates such as signing certs contain a private key, and in order to access the private key, it must also have a password. As the certificate is stored in keyCredentials, the password is stored in passwordCredentials with a matching customKeyIdentifier. It is not possible to delete a cert with a password without also deleting its correspinding password and vice-versa. You must delete both at the same time within the same request.
+
+Warning: It is not easy to add or remove certificates or passwords using Microsoft Graph API. You can accidently overwrite the keyCredentials or passwordCredentials property and lose all of your other certs and passwords.
+
+
+### Sample script
+
+```powershell
+<#################################################################################
+DISCLAIMER:
+
+This is not an official PowerShell Script. We designed it specifically for the situation you have
+encountered right now.
+
+Please do not modify or change any preset parameters.
+
+Please note that we will not be able to support the script if it's changed or altered in any way
+or used in a different situation for other means.
+
+This code-sample is provided "AS IS" without warranty of any kind, either expressed or implied,
+including but not limited to the implied warranties of merchantability and/or fitness for a
+particular purpose.
+
+This sample is not supported under any Microsoft standard support program or service.
+
+Microsoft further disclaims all implied warranties including, without limitation, any implied
+warranties of merchantability or of fitness for a particular purpose.
+
+The entire risk arising out of the use or performance of the sample and documentation remains with
+you.
+
+In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or
+delivery of the script be liable for any damages whatsoever (including, without limitation, damages
+for loss of business profits, business interruption, loss of business information, or other
+pecuniary loss) arising out of the use of or inability to use the sample or documentation, even if
+Microsoft has been advised of the possibility of such damages.
+
+#################################################################################>
+
+function Remove-EntraCredential
+{
+    param
+    (
+        [string][ValidateSet("Application","ServicePrincipal")][Parameter(mandatory=$true)]$AppType,
+        [string][Parameter(mandatory=$true)]$Id,
+        [string][Parameter(mandatory=$true)]$KeyId
+    )
+    if($AppType -eq "Application") {
+        $app = Get-MgApplication -Filter "appId eq '$Id' or id eq '$Id'" -Property id,passwordCredentials,keyCredentials
+    } elseif($AppType -eq "ServicePrincipal") {
+        $app = Get-MgServicePrincipal -Filter "appId eq '$Id' or id eq '$Id'" -Property id,passwordCredentials,keyCredentials
+    }
+    $keycreds = $app.KeyCredentials
+    $passcreds = $app.passwordCredentials
+    $Bytes = ($keycreds | Where-Object {$_.KeyId -eq $KeyId}).customKeyIdentifier
+    try {
+        $customKeyIdentifier =[Convert]::ToBase64String($Bytes)
+    } catch {
+        # KeyId not found in keyCredentials
+    }
+    
+    $newKeyCredentials = @()
+    foreach($cred in $keycreds) {
+        $CredcustomKeyIdentifier = [Convert]::ToBase64String($cred.CustomKeyIdentifier)
+        if($CredcustomKeyIdentifier -ne $customKeyIdentifier) {
+          $cred.Key = $null
+          $newKeyCredentials += $cred
+        }
+    }
+
+    $newPassowrdCredentials = @()
+    foreach($cred in $passcreds) {
+        try {
+          $CredcustomKeyIdentifier = [Convert]::ToBase64String($Cred.customKeyIdentifier)
+        } catch {
+          # customKeyIdentifier does not exist
+        }
+        if($CredcustomKeyIdentifier -ne $customKeyIdentifier -and $cred.keyid -ne $KeyId) {
+          $newPassowrdCredentials += $cred
+        }
+    }
+
+    if($AppType -eq "Application") {
+        Update-MgApplication -ApplicationId $app.id -KeyCredentials $newKeyCredentials -PasswordCredentials $newPassowrdCredentials
+    } elseif($AppType -eq "ServicePrincipal") { 
+        Update-MgServicePrincipal -ServicePrincipalId $app.id -KeyCredentials $newKeyCredentials -PasswordCredentials $newPassowrdCredentials
+    }
+}
+```
+This script will attempt to remove credentials and their associated credentials (Client Secrets and Certificates) based on the provided KeyId. You do need to know whether you are upding a application or servicePrinciapal object, the id of the object, and keyId of the credentials.
+
+```powershell
+USAGE:
+  Remove-EntraCredential -AppType {Application|ServicePrincipal} -Id {ObjectId} -KeyId {KeyId}
+Examples:
+  Remove-EntraCredential -AppType ServicePrincipal -Id 00000000-fede-4708-8876-000000000000 -KeyId 00000000-74a1-4aa7-87fc-000000000000
+  Remove-EntraCredential -AppType Application -Id 00000000-fede-4708-8876-000000000000 -KeyId 00000000-74a1-4aa7-87fc-000000000000
+```
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
