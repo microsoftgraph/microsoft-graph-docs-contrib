@@ -13,13 +13,11 @@ doc_type: conceptualPageType
 The Microsoft Purview APIs for eDiscovery enable organizations to automate repetitive tasks and integrate with their existing eDiscovery tools to build repeatable workflows that industry regulations might require. You can use the eDiscovery APIs to help with your legal needs.
 
 > [!IMPORTANT]
-> The Microsoft Purview APIs for eDiscovery are intended for the use of eDiscovery operations for litigation, investigation, and regulatory requests. These APIs shouldn't be used as a substitute for journaling data out of the Microsoft 365 system or any other mass download.
+> - The Microsoft Purview APIs for eDiscovery are intended for the use of eDiscovery operations for litigation, investigation, and regulatory requests. These APIs shouldn't be used as a substitute for journaling data out of the Microsoft 365 system or any other mass download.
 >
-> For information about setting up app-only access, see [Set up application authentication](/graph/security-ediscovery-appauthsetup).
-
-> [!NOTE]
-> Usage of these APIs may require subscriptions to specific Microsoft offerings and is subject to the [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use?context=graph%252fcontext).  Upon general availability, Microsoft may require you or your customer to pay additional fees.
-The eDiscovery APIs are defined in the OData subnamespace, microsoft.graph.security. The following table shows key entities in the eDiscovery API.
+> - For information about setting up app-only access, see [Set up application authentication](/graph/security-ediscovery-appauthsetup).
+> 
+> - Usage of eDiscovery APIs in Microsoft Graph is subject to the same licensing and subscriptions for your organization that grant you access to standard or premium eDiscovery features in the Microsoft Purview portal. For more information, see [Learn about eDiscovery: Features and capabilities](/purview/edisc#features-and-capabilities).
 
 | Name | Type | Use case |
 |:---|:---|:---|
