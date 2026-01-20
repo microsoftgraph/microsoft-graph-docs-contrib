@@ -90,7 +90,8 @@ Content-type: application/json
         }
       ]
     }
-  }
+  },
+  "activationUrl": "https://www.contoso.com/article?id=12345"
 }
 ```
 

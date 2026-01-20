@@ -3,12 +3,12 @@ title: "agentIdentityBlueprint: unsetVerifiedPublisher"
 description: "Unset the verified publisher of an agentIdentityBlueprint."
 ms.localizationpriority: medium
 author: "xurobertMSFT"
-ms.subservice: "entra-applications"
+ms.subservice: "entra-agent-id"
 doc_type: "apiPageType"
 ms.date: 04/05/2024
 ---
 
-# agentIdentityBlueprint unsetVerifiedPublisher
+# agentIdentityBlueprint: unsetVerifiedPublisher
 
 Namespace: microsoft.graph
 
@@ -21,8 +21,8 @@ Unset the [verifiedPublisher](../resources/verifiedPublisher.md) previously set 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "agentIdentityBlueprint_unsetverifiedpublisher" } -->
-[!INCLUDE [permissions-table](../includes/permissions/agentIdentityBlueprint-unsetverifiedpublisher-permissions.md)]
+<!-- { "blockType": "permissions", "name": "agentidentityblueprint_unsetverifiedpublisher" } -->
+[!INCLUDE [permissions-table](../includes/permissions/agentidentityblueprint-unsetverifiedpublisher-permissions.md)]
 
 [!INCLUDE [rbac-application-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]
 

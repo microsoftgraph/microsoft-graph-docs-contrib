@@ -11,11 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const secureScoreControlProfile = {
-  assignedTo: '',
-  comment: 'control is reviewed',
-  state: 'Reviewed',
   vendorInformation: {
-
     provider: 'SecureScore',
     providerVersion: null,
     subProvider: null,

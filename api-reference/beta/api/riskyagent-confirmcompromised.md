@@ -16,15 +16,13 @@ Namespace: microsoft.graph
 
 Confirm one or more [riskyAgent](../resources/riskyagent.md) objects as compromised. This action sets the targeted agent's **riskLevel** to `high`.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "riskyagent-confirmcompromised-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "riskyagent_confirmcompromised" } -->
 [!INCLUDE [permissions-table](../includes/permissions/riskyagent-confirmcompromised-permissions.md)]
 
 [!INCLUDE [rbac-identity-protection-apis-write](../includes/rbac-for-apis/rbac-identity-protection-apis-write.md)]

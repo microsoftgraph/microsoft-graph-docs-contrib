@@ -69,7 +69,7 @@ The following example shows a request.
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/directory/onPremisesSynchronization/{id}
+GET https://graph.microsoft.com/v1.0/directory/onPremisesSynchronization/{id}
 ```
 
 # [C#](#tab/csharp)
@@ -117,7 +117,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/onPremisesSynchronization/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directory/onPremisesSynchronization/$entity",
   "id": "12cce4b4-4ab8-40b7-be4d-f5d7742ec185",
   "configuration": {
     "accidentalDeletionPrevention": {

@@ -22,7 +22,7 @@ Inherits from [securityScheme](../resources/securityscheme.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String|A description of the security scheme. Inherited from [securityScheme](../resources/securityscheme.md).|
-|in|String|The location of the API key. Possible values are: `query`, `header`, or `cookie`.|
+|in|String|The location of the API key. The possible values are: `query`, `header`, or `cookie`.|
 |name|String|The name of the API key parameter (for example, `api_key` or `X-API-Key`).|
 |type|String|The type of the security scheme. Inherited from [securityScheme](../resources/securityscheme.md).|
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Restore [recycleBinItem](../resources/recyclebinitem.md) objects from the [recycleBin](../resources/recyclebin.md) of a [fileStorageContainer](../resources/filestoragecontainer.md). A [recycleBinItem](../resources/recyclebinitem.md) can be restored either by its `id` or using the original [driveItemId](../resources/driveitem.md) as an alternate key.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

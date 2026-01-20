@@ -18,7 +18,7 @@ Contains stateful information about file hashes (cryptographic and location-sens
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|hashType|[fileHashType](filehashtypeenumtype.md) enum|File hash type. Possible values are: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.|
+|hashType|[fileHashType](filehashtypeenumtype.md) enum|File hash type. The possible values are: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.|
 |hashValue|String|Value of the file hash.|
 
 ## Relationships
