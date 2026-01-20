@@ -5,7 +5,7 @@ ms.localizationpriority: high
 author: "swatyario"
 ms.subservice: "tenant-administration"
 doc_type: conceptualPageType
-ms.date: 04/10/2025
+ms.date: 01/19/2026
 ---
 
 # Use the unified tenant configuration management APIs in Microsoft Graph (preview)

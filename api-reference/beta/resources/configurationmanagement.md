@@ -5,7 +5,7 @@ author: "swatyario"
 ms.localizationpriority: medium
 ms.subservice: "tenant-administration"
 doc_type: resourcePageType
-ms.date: 06/08/2025
+ms.date: 01/19/2026
 ---
 
 # configurationManagement resource type

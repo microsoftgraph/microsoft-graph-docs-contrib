@@ -2,7 +2,7 @@
 title: "clientCredentials resource type"
 description: "Represents the information and properties of a clientCredentials object that is one of the prerequisites for administrators to call the unified tenant configuration management application onboarding API."
 author: "swatya"
-ms.date: 04/10/2025
+ms.date: 01/19/2026
 ms.localizationpriority: medium
 ms.subservice: "tenant-administration"
 doc_type: resourcePageType

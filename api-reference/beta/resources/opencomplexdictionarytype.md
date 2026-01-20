@@ -2,7 +2,7 @@
 title: "openComplexDictionaryType resource type"
 description: "Represents a dictionary type that consists of key-value pairs."
 author: "swatya"
-ms.date: 04/10/2025
+ms.date: 01/19/2026
 ms.localizationpriority: medium
 ms.subservice: "tenant-administration"
 doc_type: resourcePageType

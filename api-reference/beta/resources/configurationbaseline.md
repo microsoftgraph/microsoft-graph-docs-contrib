@@ -2,7 +2,7 @@
 title: "configurationBaseline resource type"
 description: "Represents a baseline that contains details of at least one resource and one property associated with the resource that the admin wants to monitor via the configurationMonitor object."
 author: "swatyario"
-ms.date: 04/10/2025
+ms.date: 01/19/2026
 ms.localizationpriority: medium
 ms.subservice: "tenant-administration"
 doc_type: resourcePageType

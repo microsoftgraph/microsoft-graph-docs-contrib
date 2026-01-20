@@ -2,7 +2,7 @@
 title: "Delete configurationSnapshotJob"
 description: "Delete a configurationSnapshotJob object."
 author: "swatyario"
-ms.date: 04/10/2025
+ms.date: 01/19/2026
 ms.localizationpriority: medium
 ms.subservice: "tenant-administration"
 doc_type: apiPageType

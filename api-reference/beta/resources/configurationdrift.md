@@ -2,7 +2,7 @@
 title: "configurationDrift resource type"
 description: "Represents the information and properties of a configurationDrift object."
 author: "swatyario"
-ms.date: 04/10/2025
+ms.date: 01/19/2026
 ms.localizationpriority: medium
 ms.subservice: "tenant-administration"
 doc_type: resourcePageType

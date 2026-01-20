@@ -2,7 +2,7 @@
 title: "Supported workloads and resource types"
 description: "Learn the supported workloads and resource types in the unified tenant configuration management API."
 author: "swatyario"
-ms.date: 04/10/2025
+ms.date: 01/19/2026
 ms.localizationpriority: medium
 ---
 

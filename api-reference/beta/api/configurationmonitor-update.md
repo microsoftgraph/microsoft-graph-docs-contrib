@@ -2,7 +2,7 @@
 title: "Update configurationMonitor"
 description: "Update the properties of a configurationMonitor object, including the monitor name, description, and baseline."
 author: "swatyario"
-ms.date: 04/10/2025
+ms.date: 01/19/2026
 ms.localizationpriority: medium
 ms.subservice: "tenant-administration"
 doc_type: apiPageType
