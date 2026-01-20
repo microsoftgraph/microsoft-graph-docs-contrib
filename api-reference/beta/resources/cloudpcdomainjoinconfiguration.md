@@ -5,7 +5,7 @@ author: "AshleyYangSZ"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
-ms.date: 03/07/2024
+ms.date: 01/20/2026
 ---
 
 # cloudPcDomainJoinConfiguration resource type

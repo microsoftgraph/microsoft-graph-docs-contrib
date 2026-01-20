@@ -5,7 +5,7 @@ author: "RuiHou105"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
-ms.date: 10/07/2024
+ms.date: 01/20/2026
 ---
 
 # cloudPcSupportedRegion resource type

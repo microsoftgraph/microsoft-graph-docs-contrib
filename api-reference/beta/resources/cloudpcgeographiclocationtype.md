@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Represents the geographic location where a region is located for Microsoft-hosted network for backup Cloud PCs.
 
+This is an evolvable enumeration. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `mexico`.
+
 ## Members
 
 | Member             | Description                                                                      |
@@ -35,3 +37,4 @@ Represents the geographic location where a region is located for Microsoft-hoste
 | centralAmerica     | The region belongs to the geographic location: Central America.                  |
 | usGovernment       | The region belongs to the geographic location: US government.                    |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                                 |
+| mexico             | The region belongs to the geographic location: Mexico.                           |
