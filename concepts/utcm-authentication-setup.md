@@ -37,8 +37,6 @@ When a monitor executes, it impersonates the UTCM-specified principal. The UTCM 
 03b07b79-c5bc-4b5e-9bfa-13acf4a99998
 ```
 
-When **runAsUTCMServicePrincipal** is set to `true` on a monitor, the monitor executes on behalf of this service principal.
-
 ## Set up the UTCM service principal
 
 During public preview, organizations must add the UTCM service principal to their tenant and grant it the required permissions.
