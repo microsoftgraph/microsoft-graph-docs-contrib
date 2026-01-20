@@ -2374,7 +2374,7 @@
         "mailFolderOperation",
         "mailSearchFolder",
         "messageRule",
-        "userConfiguration"
+        "exchangeMessageTrace"
       ],
       "childNodes": [
         {
@@ -2852,6 +2852,16 @@
           "complexTypes": [
             "microsoft.graph.security.auditData",
             "microsoft.graph.security.defaultAuditData"
+          ]
+        },
+        {
+          "name": "Cloud zones or scopes (preview)",
+          "resources": [
+            "microsoft.graph.security.zone",
+            "microsoft.graph.security.environment"
+          ],
+          "complexTypes": [
+            "microsoft.graph.security.auditInfo"
           ]
         },
         {
