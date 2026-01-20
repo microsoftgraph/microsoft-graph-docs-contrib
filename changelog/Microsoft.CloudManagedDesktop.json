@@ -107,6 +107,32 @@
     {
       "ChangeList": [
         {
+          "Id": "a133189e-3073-4c81-8d4d-40325d6c5cf6",
+          "ApiChange": "Member",
+          "ChangedApiName": "fSLogixInstalledSourceImageNotSupported",
+          "ChangeType": "Addition",
+          "Description": "Added the `fSLogixInstalledSourceImageNotSupported` member to the **cloudPcDeviceImageErrorCode** enumeration.",
+          "Target": "cloudPcDeviceImageErrorCode"
+        },
+        {
+          "Id": "a133189e-3073-4c81-8d4d-40325d6c5cf6",
+          "ApiChange": "Member",
+          "ChangedApiName": "startMenuAppLimitExceeded",
+          "ChangeType": "Addition",
+          "Description": "Added the `startMenuAppLimitExceeded` member to the **cloudPcDeviceImageErrorCode** enumeration.",
+          "Target": "cloudPcDeviceImageErrorCode"
+        }
+      ],
+          "Id": "a133189e-3073-4c81-8d4d-40325d6c5cf6",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2025-01-19T02:37:30.6320897Z",
+          "WorkloadArea": "Device and app management",
+          "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "382c3075-26fc-4093-8518-75389ec935f3",
           "ApiChange": "Member",
           "ChangedApiName": "microsoft365Opal",

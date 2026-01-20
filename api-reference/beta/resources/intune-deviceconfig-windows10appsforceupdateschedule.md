@@ -22,7 +22,7 @@ Windows 10 force update schedule for Apps
 |Property|Type|Description|
 |:---|:---|:---|
 |startDateTime|DateTimeOffset|The start time for the force restart.|
-|recurrence|[windows10AppsUpdateRecurrence](../resources/intune-deviceconfig-windows10appsupdaterecurrence.md)|Recurrence schedule. The possible values are: `none`, `daily`, `weekly`, `monthly`.|
+|recurrence|[windows10AppsUpdateRecurrence](../resources/intune-deviceconfig-windows10appsupdaterecurrence.md)|Recurrence schedule. Possible values are: `none`, `daily`, `weekly`, `monthly`.|
 |runImmediatelyIfAfterStartDateTime|Boolean|If true, runs the task immediately if StartDateTime is in the past, else, runs at the next recurrence.|
 
 ## Relationships

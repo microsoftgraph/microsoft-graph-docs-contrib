@@ -1839,6 +1839,7 @@ Namespace: microsoft.graph
 | fido2SecurityKey |
 | oneTimePasscode |
 | passKeySynced |
+| qrCode |
 
 ### authenticationAppAdminConfiguration values
 
@@ -5482,6 +5483,19 @@ Possible values for user account types (group membership), per Windows definitio
 | medal            |
 | bullseye         |
 | unknownFutureValue |
+
+### exchangeMessageTraceStatus values
+
+|Member|
+|:---|
+|gettingStatus|
+|pending|
+|failed|
+|delivered|
+|expanded|
+|quarantined|
+|filteredAsSpam|
+|unknownFutureValue|
 
 ### notificationEventsType values
 

@@ -46,8 +46,8 @@ Inherits from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |owner|String|The owner of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|uploadState|Int32|The upload state. The possible values are: 0 - `Not Ready`, 1 - `Ready`, 2 - `Processing`. This property is read-only. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. This property is read-only. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md). The possible values are: `notPublished`, `processing`, `published`.|
+|uploadState|Int32|The upload state. Possible values are: 0 - `Not Ready`, 1 - `Ready`, 2 - `Processing`. This property is read-only. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. This property is read-only. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md). Possible values are: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|The value indicating whether the app is assigned to at least one group. This property is read-only. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |roleScopeTagIds|String collection|List of scope tag ids for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|The total number of dependencies the child app has. This property is read-only. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
@@ -62,6 +62,7 @@ Inherits from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |expirationDateTime|DateTimeOffset|The expiration time.|
 |versionNumber|String|The version number of iOS Line of Business (LoB) app.|
 |buildNumber|String|The build number of iOS Line of Business (LoB) app.|
+|appleDeviceAppDeliveryProtocolType|[appleDeviceDeliveryProtocol](../resources/intune-apps-appledevicedeliveryprotocol.md)|The protocol used to deliver the app to the apple device(s). When the property is set to Declarative Device Management (DDM) protocol ('declarativeDeviceManagement') then it can no longer be modified or updated to 'mobileDeviceManagement' or 'default'. Default value is: 'default' which indicates Apple MDM protocol. Possible values are: `default`, `mobileDeviceManagement`, `declarativeDeviceManagement`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -134,6 +135,7 @@ Here is a JSON representation of the resource.
   },
   "expirationDateTime": "String (timestamp)",
   "versionNumber": "String",
-  "buildNumber": "String"
+  "buildNumber": "String",
+  "appleDeviceAppDeliveryProtocolType": "String"
 }
 ```
