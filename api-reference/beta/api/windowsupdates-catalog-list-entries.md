@@ -118,10 +118,10 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
       "id": "c1dec151-c151-c1de-51c1-dec151c1dec1",
-      "displayName": "String",
-      "releaseDateTime": "String (timestamp)",
-      "deployableUntilDateTime": "String (timestamp)",
-      "version": "String"
+      "displayName": "Test security updates",
+      "releaseDateTime": "2023-07-11T00:00:00Z",
+      "deployableUntilDateTime": "2023-07-11T00:00:00Z",
+      "version": "v2"
     },
     {
       "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
