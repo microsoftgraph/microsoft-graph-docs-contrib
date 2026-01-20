@@ -1059,6 +1059,12 @@ items:
         href: ../../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-setandroiddeviceownerfullymanagedenrollmentstate.md
       - name: addApps action
         href: ../../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-addapps.md
+      - name: retrieveStoreLayout function
+        href: ../../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-retrievestorelayout.md
+      - name: setStoreLayout action
+        href: ../../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-setstorelayout.md
+      - name: requestEnterpriseUpgradeUrl action
+        href: ../../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-requestenterpriseupgradeurl.md
     - name: Android managed store app
       items:
       - name: Android managed store app
@@ -4811,6 +4817,8 @@ items:
         href: ../../api/intune-raimportcerts-userpfxcertificate-create.md
       - name: Delete userPFXCertificate
         href: ../../api/intune-raimportcerts-userpfxcertificate-delete.md
+      - name: Update userPFXCertificate
+        href: ../../api/intune-raimportcerts-userpfxcertificate-update.md
     - name: VPN configuration
       items:
       - name: VPN configuration

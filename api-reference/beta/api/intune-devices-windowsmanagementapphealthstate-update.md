@@ -52,7 +52,7 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique Identifier for the Windows management app health state. This property is read-only.|
-|healthState|[healthState](../resources/intune-devices-healthstate.md)|Windows management app health state. The possible values are: `unknown`, `healthy`, `unhealthy`.|
+|healthState|[healthState](../resources/intune-devices-healthstate.md)|Windows management app health state. Possible values are: `unknown`, `healthy`, `unhealthy`.|
 |installedVersion|String|Windows management app installed version.|
 |lastCheckInDateTime|DateTimeOffset|Windows management app last check-in time.|
 |deviceName|String|Name of the device on which Windows management app is installed.|

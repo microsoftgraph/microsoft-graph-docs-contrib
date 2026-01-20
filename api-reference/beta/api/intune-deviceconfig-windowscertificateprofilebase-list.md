@@ -35,8 +35,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ```http
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsZtdnsConfiguration/rootCertificatesForServerValidation
-GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsZtdnsConfiguration/rootCertificatesForClientAuthentication
+GET /deviceManagement/deviceConfigurations
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
 
 ## Request headers
@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 ```http
-GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsZtdnsConfiguration/rootCertificatesForServerValidation
+GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ```
 
 ### Response
