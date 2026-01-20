@@ -24,7 +24,7 @@ Inherits from [signInAudienceRestrictionsBase](../resources/signinaudiencerestri
 
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedTenantIds|String collection|The list of Entra tenant IDs where the application can be used as either a client application or a resource application (API). Must contain at least one value. May not include more than 20 values. The tenant ID where the application is registered may be included, but is not required (see **isHomeTenantAllowed**). Required.|
+|allowedTenantIds|String collection|The list of Entra tenant IDs where the application can be used as either a client application or a resource application (API). This property must contain at least one value and can't include more than 20 values. The tenant ID where the application is registered may be included, but is not required (see **isHomeTenantAllowed**). Required.|
 |isHomeTenantAllowed|Boolean|Whether the tenant where the application is registered is allowed. Currently, only `true` is supported. Default is `true`.|
 |kind|kind|If provided, must be `allowedTenants`. Optional. Inherited from [signInAudienceRestrictionsBase](../resources/signinaudiencerestrictionsbase.md).|
 
