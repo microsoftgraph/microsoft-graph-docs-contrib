@@ -29,6 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|DeviceManagementManagedDevices.PrivilegedOperations.All|
 
+#### >>> Missing a permission "DeviceManagementManagedDevices.PrivilegedOperations.All". When executing the command it is presented an error message referring to this permission <<< ###
+
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
