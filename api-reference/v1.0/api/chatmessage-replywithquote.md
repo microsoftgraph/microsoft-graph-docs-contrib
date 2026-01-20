@@ -5,7 +5,7 @@ author: "AdityaSharma6"
 ms.subservice: "teams"
 doc_type: apiPageType
 ms.localizationpriority: medium
-ms.date: 02/20/2025
+ms.date: 01/20/2025
 ---
 
 # chatMessage: replyWithQuote
@@ -16,8 +16,6 @@ Reply with quote to a single [chat message](../resources/chatmessage.md) or mult
 
 > [!NOTE]
 > When replying with a quote to multiple messages, a maximum of 10 messages can be used for the reply.
-
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -64,7 +62,6 @@ If successful, this method returns a `201 Created` response code and a new [chat
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "chatmessage.replyWithQuote",
@@ -86,7 +83,6 @@ Content-Type: application/json
   }
 }
 ```
----
 
 ### Response
 
