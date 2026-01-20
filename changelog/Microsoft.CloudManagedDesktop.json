@@ -1,6 +1,24 @@
 {
   "changelog": [
+    {
+      "ChangeList": [
         {
+          "Id": "30294cf3-5880-4607-b248-63dab5496aaa",
+          "ApiChange": "Member",
+          "ChangedApiName": "cloudPCInventoryReport",
+          "ChangeType": "Addition",
+          "Description": "Added the `cloudPCInventoryReport` member to the **cloudPcReportName** enumeration type.", 1Code has comments. Press enter to view.
+          "Target": "cloudPcReportName"
+        }
+      ],
+      "Id":"30294cf3-5880-4607-b248-63dab5496aaa",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-01-21T16:55:21.2146082Z",
+      "WorkloadArea": "Devices and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
           "ChangeList": [
             {
               "Id": "461939f1-516e-4817-9853-e40eb3728eeb",
