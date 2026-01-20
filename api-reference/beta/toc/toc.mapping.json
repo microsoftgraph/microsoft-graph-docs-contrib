@@ -2361,7 +2361,7 @@
         "mailFolderOperation",
         "mailSearchFolder",
         "messageRule",
-        "userConfiguration"
+        "exchangeMessageTrace"
       ],
       "childNodes": [
         {
