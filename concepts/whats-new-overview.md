@@ -42,6 +42,10 @@ Made the following updates to APIs for managing Microsoft Defender for Identity 
 
 The `TeamsAppInstallation.ManageSelectedForTeam.All` is the least privileged application permission required to install or upgrade a Teams app that requires consent to [resource-specific consent (RSC)](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions when using the [teamsAppInstallation in a team: upgrade](/graph/api/team-teamsappinstallation-upgrade) API.
 
+### Teamwork and communications | Messaging
+
+[Reply with quote](/graph/api/chatmessage-replywithquote) to a single chat message or multiple chat messages in a chat.
+
 ## January 2026: New in preview only
 
 ### Security | Data security and compliance
