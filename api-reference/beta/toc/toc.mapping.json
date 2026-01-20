@@ -2842,6 +2842,16 @@
           ]
         },
         {
+          "name": "Cloud zones or scopes (preview)",
+          "resources": [
+            "microsoft.graph.security.zone",
+            "microsoft.graph.security.environment"
+          ],
+          "complexTypes": [
+            "microsoft.graph.security.auditInfo"
+          ]
+        },
+        {
           "name": "Data security and compliance",
           "resources": [
             "contentActivity",
