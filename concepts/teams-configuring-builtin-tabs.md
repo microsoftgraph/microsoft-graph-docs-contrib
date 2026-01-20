@@ -72,6 +72,9 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
 
 ## Document library tabs
 
+> [!WARNING]
+> Creating Document Library tabs using the `teamsAppId` `com.microsoft.teamspace.tab.files.sharepoint` is deprecated and no longer supported via Microsoft Graph API.
+
 For document library tabs, the `teamsAppId` is `com.microsoft.teamspace.tab.files.sharepoint`. 
 The following is the configuration.
 
