@@ -1,6 +1,6 @@
 ---
 title: "deviceEventLevel enum type"
-description: "Indicates device event level. The possible values are: None, Verbose, Information, Warning, Error, Critical"
+description: "Indicates device event level. Possible values are: None, Verbose, Information, Warning, Error, Critical"
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Indicates device event level. The possible values are: None, Verbose, Information, Warning, Error, Critical
+Indicates device event level. Possible values are: None, Verbose, Information, Warning, Error, Critical
 
 ## Members
 |Member|Value|Description|

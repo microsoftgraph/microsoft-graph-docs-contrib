@@ -2,6 +2,8 @@
 # GENERATED FILE - DO NOT EDIT
 #
 items:
+- name: Overview
+  href: ../../resources/calendar-overview.md
 - name: Calendar
   items:
   - name: Calendar
@@ -442,10 +444,8 @@ items:
       href: ../../resources/resourcelink.md
     - name: Unavailable place mode
       href: ../../resources/unavailableplacemode.md
-- name: Work hours and locations (preview)
+- name: Work hours and locations
   items:
-  - name: Overview
-    href: ../../resources/workhoursandlocationssetting.md
   - name: Work hours and locations setting
     items:
     - name: Work hours and locations setting

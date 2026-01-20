@@ -7,13 +7,13 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 12/15/2025
+ms.date: 01/19/2026
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
 # Microsoft Graph permissions reference
 
-For an app to access data in Microsoft Graph, the user or administrator must grant it the permissions it needs. This article lists the delegated and application permissions exposed by Microsoft Graph. For guidance about how to use the permissions, see the [Overview of Microsoft Graph permissions](permissions-overview.md).
+For an app to access data in Microsoft Graph, the user or administrator must grant it the necessary permissions. This article lists the delegated and application permissions exposed by Microsoft Graph. For guidance about how to use the permissions, see the [Overview of Microsoft Graph permissions](permissions-overview.md).
 
 To read information about all Microsoft Graph permissions programmatically, sign in to an API client such as Graph Explorer using an account that has at least the *Application.Read.All* permission and run the following request.
 
@@ -7036,6 +7036,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | e46a01e9-b2cf-4d89-8424-bcdc6dd445ab | 8b377c27-ea19-4863-a948-8a8588c8f2c3 |
 | DisplayText | Get labels tenant scope. | Get labels app scope. |
 | Description | Allows the app to get sensitivity labels. | Allows the app to get sensitivity labels. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### SentimentSurvey.Export.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 84fa35c1-f997-4c1c-894c-bb52108cfbbf | df9fd94d-51ff-443d-8f31-ae4dc1b5b8d8 |
+| DisplayText | Export all Sentiment Survey | Export all Sentiment Survey |
+| Description | Allows the app to read all Sentiment Survey, without a signed-in user.  | Allows the app to export all Sentiment Survey, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---

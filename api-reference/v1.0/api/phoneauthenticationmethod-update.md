@@ -21,7 +21,7 @@ If a user is enabled by policy to use SMS to sign in and the `mobile` number is 
 
 Self-service operations aren't supported.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

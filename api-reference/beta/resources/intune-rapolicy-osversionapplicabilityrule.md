@@ -24,7 +24,7 @@ Inherits from [applicabilityRule](../resources/intune-rapolicy-applicabilityrule
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|filterType|[filterAssociationType](../resources/intune-rapolicy-filterassociationtype.md)| Inherited from [applicabilityRule](../resources/intune-rapolicy-applicabilityrule.md). The possible values are: `unknown`, `include`, `exclude`.|
+|filterType|[filterAssociationType](../resources/intune-rapolicy-filterassociationtype.md)| Inherited from [applicabilityRule](../resources/intune-rapolicy-applicabilityrule.md). Possible values are: `unknown`, `include`, `exclude`.|
 |minOSVersion|String||
 |maxOSVersion|String||
 

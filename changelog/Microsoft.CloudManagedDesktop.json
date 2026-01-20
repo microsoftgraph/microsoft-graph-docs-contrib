@@ -14,7 +14,33 @@
           "Id": "461939f1-516e-4817-9853-e40eb3728eeb",
           "Cloud": "Prod",
           "Version": "beta",
-          "CreatedDateTime": "2025-12-21T10:03:56.9188489Z",
+          "CreatedDateTime": "2026-01-21T10:03:56.9188489Z",
+          "WorkloadArea": "Device and app management",
+          "SubArea": "Cloud PC"
+        },
+        {
+          "ChangeList": [
+            {
+              "Id": "d5b144a3-c87c-4d29-99b2-e01f9594fb69",
+              "ApiChange": "Method",
+              "ChangedApiName": "retry",
+              "ChangeType": "Addition",
+              "Description": "Added the [retry](https://learn.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-retry?view=graph-rest-beta) method to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+              "Target": "cloudPcProvisioningPolicy"
+            },
+            {
+              "Id": "d5b144a3-c87c-4d29-99b2-e01f9594fb69",
+              "ApiChange": "Property",
+              "ChangedApiName": "applicationTimeoutInMinutes",
+              "ChangeType": "Change",
+              "Description": "Updated the supported value range for the **applicationTimeoutInMinutes** property on [cloudPcAutopilotConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcAutopilotConfiguration?view=graph-rest-beta) from 10–360 to 30–360.",
+              "Target": "cloudPcAutopilotConfiguration"
+            }
+          ],
+          "Id": "d5b144a3-c87c-4d29-99b2-e01f9594fb69",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2025-12-18T08:20:05.2461949Z",
           "WorkloadArea": "Device and app management",
           "SubArea": "Cloud PC"
         },
@@ -47,6 +73,66 @@
       {
       "ChangeList": [
         {
+          "Id": "3a60b3d3-e039-499a-896c-95cf43520b96",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcOperatingSystem",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcOperatingSystem** enumeration type.",
+          "Target": "cloudPcOperatingSystem"
+        },
+        {
+          "Id": "3a60b3d3-e039-499a-896c-95cf43520b96",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcUserAccountType",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcUserAccountType** enumeration type.",
+          "Target": "cloudPcUserAccountType"
+        },
+        {
+          "Id": "3a60b3d3-e039-499a-896c-95cf43520b96",
+          "ApiChange": "Method",
+          "ChangedApiName": "reprovision",
+          "ChangeType": "Addition",
+          "Description": "Added the [reprovision](https://learn.microsoft.com/en-us/graph/api/cloudpc-reprovision?view=graph-rest-1.0) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-1.0) resource.",
+          "Target": "cloudPC"
+        }
+      ],
+      "Id": "3a60b3d3-e039-499a-896c-95cf43520b96",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-12-18T04:17:53.1340728Z",
+      "WorkloadArea": "Devices and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a133189e-3073-4c81-8d4d-40325d6c5cf6",
+          "ApiChange": "Member",
+          "ChangedApiName": "fSLogixInstalledSourceImageNotSupported",
+          "ChangeType": "Addition",
+          "Description": "Added the `fSLogixInstalledSourceImageNotSupported` member to the **cloudPcDeviceImageErrorCode** enumeration.",
+          "Target": "cloudPcDeviceImageErrorCode"
+        },
+        {
+          "Id": "a133189e-3073-4c81-8d4d-40325d6c5cf6",
+          "ApiChange": "Member",
+          "ChangedApiName": "startMenuAppLimitExceeded",
+          "ChangeType": "Addition",
+          "Description": "Added the `startMenuAppLimitExceeded` member to the **cloudPcDeviceImageErrorCode** enumeration.",
+          "Target": "cloudPcDeviceImageErrorCode"
+        }
+      ],
+          "Id": "a133189e-3073-4c81-8d4d-40325d6c5cf6",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2025-01-19T02:37:30.6320897Z",
+          "WorkloadArea": "Device and app management",
+          "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "382c3075-26fc-4093-8518-75389ec935f3",
           "ApiChange": "Member",
           "ChangedApiName": "microsoft365Opal",
@@ -67,7 +153,7 @@
           "Cloud": "Prod",
           "Version": "beta",
           "CreatedDateTime": "2025-10-31T09:55:21.2146082Z",
-          "WorkloadArea": "Devices and apps",
+          "WorkloadArea": "Devices and app management",
           "SubArea": "Cloud PC"
       },
       {

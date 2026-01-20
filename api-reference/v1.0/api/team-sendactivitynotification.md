@@ -590,7 +590,7 @@ Content-Type: application/json
 {
     "topic": {
         "source": "entityUrl",
-        "value": "https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages/{messageId}/replies/{replyId}"
+        "value": "https://graph.microsoft.com/v1.0/teams/{teamId}/channels/{channelId}/messages/{messageId}/replies/{replyId}"
     },
     "activityType": "reservationStatusUpdated",
     "previewText": {

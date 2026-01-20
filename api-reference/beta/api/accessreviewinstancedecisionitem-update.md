@@ -124,7 +124,7 @@ Content-Type: application/json
   "blockType": "response"
 } -->
 ```http
-HTTP/1.1 204 Accepted
+HTTP/1.1 202 Accepted
 ```
 
 
@@ -183,7 +183,7 @@ Content-Type: application/json
   "blockType": "response"
 } -->
 ```http
-HTTP/1.1 204 Accepted
+HTTP/1.1 202 Accepted
 ```
 
 ### Example 3: Update a applyResult on an accessReviewInstance
@@ -246,7 +246,7 @@ Content-Type: application/json
   "blockType": "response"
 } -->
 ```http
-HTTP/1.1 204 Accepted
+HTTP/1.1 202 Accepted
 ```
 
 <!--

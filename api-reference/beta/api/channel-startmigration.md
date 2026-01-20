@@ -18,9 +18,9 @@ Start the migration of external messages by enabling migration mode in an existi
 
 Users are also allowed to define a minimum timestamp for content to be migrated, allowing them to import messages from the past. The provided timestamp must be older than the current **createdDateTime** for a [channel](../resources/channel.md). The provided timestamp is used to replace the existing **createdDateTime** of the [channel](../resources/channel.md).
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 [!INCLUDE [channel-support](../../includes/supported-channels-for-import.md)]
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

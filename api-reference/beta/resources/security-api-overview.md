@@ -50,6 +50,18 @@ Use [runHuntingQuery](../api/security-security-runhuntingquery.md) to run a [Kus
 5. A response code of HTTP 429 means you have reached the quota for either the number of API calls or execution time. Refer to the response body to confirm the limit you have reached.
 
 6. The maximum query result size of a single request cannot exceed 124 MB. Exceeding the size limit results in HTTP 400 Bad Request with the message "Query execution has exceeded the allowed result size. Optimize your query by limiting the number of results and try again."
+7. Query results have an overall size limit of 50 MB. This limit doesn't just refer to the number of records; factors such as the number of columns, data types, and field lengths also contribute to the query result size.
+
+## Cloud zones (preview)
+
+Cloud zones (cloud scopes) in Microsoft Defender for Cloud enable you to group and manage cloud environments across multiple cloud providers (Azure, AWS, and GCP) and DevOps platforms. A [zone](security-zone.md) is a logical container that groups related cloud environments, making it easier to apply consistent security policies and monitor security posture across your multi-cloud infrastructure. A tenant can have a maximum of 1,000 zones.
+
+Use the cloud zones API to:
+- Create, update, and delete zones for organizing cloud environments.
+- Attach and detach environments (such as Azure subscriptions, AWS accounts, GCP projects, or DevOps connections) to zones.
+- Query zones and their associated environments.
+
+For more information, see [Manage cloud scopes and unified role-based access control](/azure/defender-for-cloud/cloud-scopes-unified-rbac?pivots=defender-portal).
 
 ## Custom detections
 You can create advanced hunting [Custom detection rules](/microsoft-365/security/defender/custom-detections-overview) specific to your security operations to allow you to proactively monitor for threats and take action. For instance, you can make custom detection rules that look for known indicators or misconfigured devices. These automatically trigger alerts and any response actions that you specify.
@@ -124,6 +136,7 @@ Alerts from the following security providers are available via the legacy **aler
 
 [Microsoft Purview Audit](/microsoft-365/compliance/audit-solutions-overview) provides an integrated solution to help organizations effectively respond to security events, forensic investigations, internal investigations, and compliance obligations. Thousands of user and admin operations performed in dozens of Microsoft 365 services and solutions are captured, recorded, and retained in your organization's unified audit log. Audit records for these events are searchable by security ops, IT admins, insider risk teams, and compliance and legal investigators in your organization. This capability provides visibility into the activities performed across your Microsoft 365 organization.
 
+
 ## Identities
 
 ### Health issues
@@ -137,10 +150,8 @@ The Microsoft Defender for Identity health issues API allows you to monitor the 
 The Defender for Identity sensors management APIs allows you to:
 - Create detailed reports of the sensors in your workspace, including information about the server name, sensor version, type, state, and health status.
 - Manage sensor settings, such as adding descriptions, enabling or disabling delayed updates, and specifying the domain controller that the sensor connects to for querying Entra ID.
-- Identify servers that are ready to be activated with the unified agent.
-- Enable or disable the automatic activation of eligible servers for the unified agent.
-- Activate or deactivate the unified agent on eligible servers.
-- Enable or disable the automatic enabling of the required events auditing configuration during the sensor’s activation.
+- Identify sensors that are ready to be activated.
+- Define whether the sensors in your infrastructure are to be activated automatically or manually.
 
 ## Incidents
 
@@ -311,6 +322,16 @@ The following are some of the most popular requests for working with the Microso
 | **Identities**|||
 | List health issues | [List health issues](../api/security-identitycontainer-list-healthissues.md) | [https://graph.microsoft.com/beta/security/identities/healthIssues](https://developer.microsoft.com/graph/graph-explorer?request=security/identities/healthIssues&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
 | List sensors | [List sensors](../api/security-identitycontainer-list-sensors.md) | [https://graph.microsoft.com/beta/security/identities/sensors](https://developer.microsoft.com/graph/graph-explorer?request=security/identities/sensors&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
+| **Cloud zones (preview)**|||
+| List zones | [List zones](../api/security-security-list-zones.md) | [https://graph.microsoft.com/beta/security/zones](https://developer.microsoft.com/graph/graph-explorer?request=security/zones&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
+| Get zone | [Get zone](../api/security-zone-get.md) | [https://graph.microsoft.com/beta/security/zones/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/zones/{id}&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
+| Create zone | [Create zone](../api/security-security-post-zones.md) | [https://graph.microsoft.com/beta/security/zones](https://developer.microsoft.com/graph/graph-explorer?request=security/zones&method=POST&version=beta&GraphUrl=https://graph.microsoft.com) |
+| Update zone | [Update zone](../api/security-zone-update.md) | [https://graph.microsoft.com/beta/security/zones/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/zones/{id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com) |
+| Delete zone | [Delete zone](../api/security-zone-delete.md) | [https://graph.microsoft.com/beta/security/zones/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/zones/{id}&method=DELETE&version=beta&GraphUrl=https://graph.microsoft.com) |
+| List environments | [List environments](../api/security-zone-list-environments.md) | [https://graph.microsoft.com/beta/security/zones/{id}/environments](https://developer.microsoft.com/graph/graph-explorer?request=security/zones/{id}/environments&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
+| Get environment | [Get environment](../api/security-environment-get.md) | [https://graph.microsoft.com/beta/security/zones/{id}/environments/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/zones/{id}/environments/{id}&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
+| Attach environment | [Attach environment](../api/security-zone-post-environments.md) | [https://graph.microsoft.com/beta/security/zones/{id}/environments](https://developer.microsoft.com/graph/graph-explorer?request=security/zones/{id}/environments&method=POST&version=beta&GraphUrl=https://graph.microsoft.com) |
+| Delete environment | [Delete environment](../api/security-environment-delete.md) | [https://graph.microsoft.com/beta/security/zones/{id}/environments/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/zones/{id}/environments/{id}&method=DELETE&version=beta&GraphUrl=https://graph.microsoft.com) |
 | **Data security and governance (preview)**|||
 | Compute protection scopes|[Compute protection scopes](../api/userprotectionscopecontainer-compute.md)||
 | Process content|[Process content](../api/userdatasecurityandgovernance-processcontent.md)||

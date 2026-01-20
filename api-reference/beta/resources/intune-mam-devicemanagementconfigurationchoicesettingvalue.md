@@ -25,7 +25,7 @@ Inherits from [deviceManagementConfigurationSettingValue](../resources/intune-ma
 |Property|Type|Description|
 |:---|:---|:---|
 |value|String|Choice setting value: an OptionDefinition ItemId.|
-|children|[deviceManagementConfigurationSettingInstance](../resources/intune-shared-devicemanagementconfigurationsettinginstance.md) collection|Child settings.|
+|children|[deviceManagementConfigurationSettingInstance](../resources/intune-mam-devicemanagementconfigurationsettinginstance.md) collection|Child settings.|
 
 ## Relationships
 None

@@ -1568,6 +1568,15 @@ Possible types of Windows settings.
 | pager |
 | radio |
 
+### placeFeatureEnablement values 
+
+|Member|
+|:---|
+|unknown|
+|enabled|
+|disabled|
+|unknownFutureValue|
+
 ### plannerContainerType values
 
 | Member |
@@ -3753,7 +3762,6 @@ Possible values for user account types (group membership), per Windows definitio
 |unknownFutureValue|
 
 ### fileStorageContainerTypeAppPermission values 
-
 |Member|
 |:---|
 |none|
@@ -3783,4 +3791,24 @@ Possible values for user account types (group membership), per Windows definitio
 |isItemVersioningEnabled|
 |itemMajorVersionLimit|
 |maxStoragePerContainerInBytes|
+|unknownFutureValue|
+
+
+### workLocationSource values 
+
+|Member|
+|:---|
+|manual|
+|scheduled|
+|automatic|
+|unknownFutureValue|
+
+### workLocationType values
+
+|Member|
+|:---|
+|unspecified|
+|office|
+|remote|
+|timeOff|
 |unknownFutureValue|

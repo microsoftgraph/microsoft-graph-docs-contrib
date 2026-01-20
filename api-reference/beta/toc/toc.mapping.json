@@ -261,6 +261,7 @@
         "Outlook",
         "Outlook calendar"
       ],
+      "overview": "../../resources/calendar-overview.md",
       "resources": [
         "calendar",
         "event",
@@ -332,8 +333,7 @@
            ]
          },
          {
-          "name": "Work hours and locations (preview)",
-          "overview": "../../resources/workhoursandlocationssetting.md",
+          "name": "Work hours and locations",
           "resources": [
             "workHoursAndLocationsSetting",
             "workPlanOccurrence",
@@ -2153,7 +2153,8 @@
               "resources": [
                 "microsoft.graph.networkaccess.crossTenantAccessSettings",
                 "microsoft.graph.networkaccess.conditionalAccessSettings",
-                "microsoft.graph.networkaccess.forwardingOptions"
+                "microsoft.graph.networkaccess.forwardingOptions",
+                "microsoft.graph.networkaccess.customBlockPage"
               ]
             },
             {
@@ -2360,7 +2361,7 @@
         "mailFolderOperation",
         "mailSearchFolder",
         "messageRule",
-        "userConfiguration"
+        "exchangeMessageTrace"
       ],
       "childNodes": [
         {
@@ -2841,6 +2842,16 @@
           ]
         },
         {
+          "name": "Cloud zones or scopes (preview)",
+          "resources": [
+            "microsoft.graph.security.zone",
+            "microsoft.graph.security.environment"
+          ],
+          "complexTypes": [
+            "microsoft.graph.security.auditInfo"
+          ]
+        },
+        {
           "name": "Data security and compliance",
           "resources": [
             "contentActivity",
@@ -2951,8 +2962,7 @@
             "microsoft.graph.security.identityAccounts",
             "microsoft.graph.security.user",
             "microsoft.graph.security.sensorCandidate",
-            "microsoft.graph.security.sensorCandidateActivationConfiguration",
-            "microsoft.graph.security.autoAuditingConfiguration"
+            "microsoft.graph.security.sensorCandidateActivationConfiguration"
           ],
           "complexTypes": [
             "microsoft.graph.security.deploymentAccessKeyType",
@@ -3271,7 +3281,7 @@
       ],
       "childNodes": [
         {
-          "name": "Administration (preview)",
+          "name": "Administration",
           "resources": [
             "microsoft.graph.teamsAdministration.numberAssignment",
             "microsoft.graph.teamsAdministration.teamsUserConfiguration",
