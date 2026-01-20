@@ -7,7 +7,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "cloudPCInventoryReport",
           "ChangeType": "Addition",
-          "Description": "Added the `cloudPCInventoryReport` member to the **cloudPcReportName** enumeration type.", 1Code has comments. Press enter to view.
+          "Description": "Added the `cloudPCInventoryReport` member to the **cloudPcReportName** enumeration type.",
           "Target": "cloudPcReportName"
         }
       ],
