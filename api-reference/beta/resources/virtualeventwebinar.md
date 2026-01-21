@@ -37,7 +37,7 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | Property | Type | Description |
 | -------- | ---- | ----------- |
 | audience | [meetingAudience](#meetingaudience-values) | To whom the webinar is visible. |
-| capacity | Integer |This inrepresent the expected attendee size for Virtual Events. |
+| capacity | Integer | Represents the expected number of attendees for virtual events. |
 | coOrganizers  | [communicationsUserIdentity](communicationsuseridentity.md) collection | Identity information of coorganizers of the webinar. |
 | createdBy | [communicationsIdentitySet](communicationsidentityset.md) | Identity information for the creator of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | description | [itemBody](../resources/itembody.md) | Description of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |

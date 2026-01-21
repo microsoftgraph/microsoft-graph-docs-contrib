@@ -56,7 +56,7 @@ The `TeamsAppInstallation.ManageSelectedForTeam.All` is the least privileged app
 
 ### Teamwork and communications | Calls and online meetings
 
-Introduce `capacity` property on the virtual event objects: [virtualEventTownhall](/graph/api/resources/virtualeventtownhall) or [virtualEventWebinar](/graph/api/resources/virtualeventwebinar. This property allows customers to specify the expected attendee size when creating or updating events and retrieve it later. Validation ensures compliance with SKU and licensing limits, returning actionable errors when capacity exceeds entitlement.
+Introduce the`capacity` property to virtual event objects: [virtualEventTownhall](/graph/api/resources/virtualeventtownhall) or [virtualEventWebinar](/graph/api/resources/virtualeventwebinar. This property allows customers to specify the expected attendee size when creating or updating events and retrieve it later. Validation ensures compliance with SKU and licensing limits, returning actionable errors when capacity exceeds entitlement.  
 
 ## December 2025: New and generally available
 
