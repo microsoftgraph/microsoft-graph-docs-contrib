@@ -1799,9 +1799,6 @@
                 "crossTenantAccessPolicyConfigurationDefault",
                 "crossTenantAccessPolicyConfigurationPartner",
                 "crossTenantIdentitySyncPolicyPartner"
-              ],
-              "complexTypes": [
-                "crossTenantGroupSyncInbound"
               ]
             },
             {
