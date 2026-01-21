@@ -1,5 +1,23 @@
 {
   "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "669c182d-5661-4365-bcd6-9b201ac1fbbe",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedTenantIds",
+          "ChangeType": "Change",
+          "Description": "Updated the **allowedTenantIds** property description on the [allowedTenantsAudience](https://learn.microsoft.com/en-us/graph/api/resources/allowedtenantsaudience?view=graph-rest-beta) resource to specify that it can't include more than 20 values.",
+          "Target": "allowedTenantsAudience"
+        }
+      ],
+      "Id": "669c182d-5661-4365-bcd6-9b201ac1fbbe",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-01-21T08:06:50.9954919Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
      {
       "ChangeList": [
         {
