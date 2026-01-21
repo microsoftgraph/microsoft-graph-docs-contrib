@@ -1,11 +1,11 @@
 ---
 title: "List updatable asset group members"
 description: "List the members of an updatableAssetGroup resource. Members are of the azureADDevice type."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 09/16/2024
+ms.date: 10/22/2025
 ---
 
 # List updatable asset group members

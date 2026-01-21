@@ -27,7 +27,7 @@ Items with this property should be removed from your local state.
 
 > **Note:** You should only delete a folder locally if it's empty after syncing all the changes.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
