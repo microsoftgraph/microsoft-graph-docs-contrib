@@ -73,6 +73,72 @@
       "CreatedDateTime": "2025-09-26T08:28:18.2482078Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Administration"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "569d7e25-104c-4799-aaa1-27308d915af7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "policyIdentifierDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [policyIdentifierDetail](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-policyIdentifierDetail?view=graph-rest-1.0) resource.",
+          "Target": "policyIdentifierDetail"
+        },
+        {
+          "Id": "569d7e25-104c-4799-aaa1-27308d915af7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsAdminRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsAdminRoot](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsAdminRoot?view=graph-rest-1.0) resource.",
+          "Target": "teamsAdminRoot"
+        },
+        {
+          "Id": "569d7e25-104c-4799-aaa1-27308d915af7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsPolicyAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsPolicyAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsPolicyAssignment?view=graph-rest-1.0) resource.",
+          "Target": "teamsPolicyAssignment"
+        },
+        {
+          "Id": "569d7e25-104c-4799-aaa1-27308d915af7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsPolicyUserAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsPolicyUserAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsPolicyUserAssignment?view=graph-rest-1.0) resource.",
+          "Target": "teamsPolicyUserAssignment"
+        },
+        {
+          "Id": "569d7e25-104c-4799-aaa1-27308d915af7",
+          "ApiChange": "Method",
+          "ChangedApiName": "assign",
+          "ChangeType": "Addition",
+          "Description": "Added the [assign](https://learn.microsoft.com/en-us/graph/api/teamsAdministration-teamsPolicyUserAssignment-assign?view=graph-rest-1.0) method to the [teamsPolicyUserAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsPolicyUserAssignment?view=graph-rest-1.0) resource.",
+          "Target": "teamsPolicyUserAssignment"
+        },
+        {
+          "Id": "569d7e25-104c-4799-aaa1-27308d915af7",
+          "ApiChange": "Method",
+          "ChangedApiName": "unassign",
+          "ChangeType": "Addition",
+          "Description": "Added the [unassign](https://learn.microsoft.com/en-us/graph/api/teamsAdministration-teamsPolicyUserAssignment-unassign?view=graph-rest-1.0) method to the [teamsPolicyUserAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsPolicyUserAssignment?view=graph-rest-1.0) resource.",
+          "Target": "teamsPolicyUserAssignment"
+        },
+        {
+          "Id": "569d7e25-104c-4799-aaa1-27308d915af7",
+          "ApiChange": "Method",
+          "ChangedApiName": "getPolicyId",
+          "ChangeType": "Addition",
+          "Description": "Added the [getPolicyId](https://learn.microsoft.com/en-us/graph/api/teamsAdministration-teamsPolicyAssignment-getPolicyId?view=graph-rest-1.0) method to the [teamsPolicyAssignment](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsPolicyAssignment?view=graph-rest-1.0) resource.",
+          "Target": "teamsPolicyAssignment"
+        }
+      ],
+      "Id": "569d7e25-104c-4799-aaa1-27308d915af7",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-01-21T20:18:09.8587658Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Policy Administration"
     }
   ]
 }
