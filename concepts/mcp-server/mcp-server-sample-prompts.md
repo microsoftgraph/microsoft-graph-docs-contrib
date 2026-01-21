@@ -6,14 +6,14 @@ ms.author: eunicewaweru
 ms.reviewer: Licantrop0
 ms.subservice: ent-mcp-server
 ms.topic: how-to
-ms.date: 01/15/2026
+ms.date: 01/21/2026
 
-#customer intent: As an IT administrator or developer, I want to see example prompts for the Microsoft MCP Server so that I can effectively query my tenant's identity and device data using natural language.
+#customer intent: As an IT administrator or developer, I want to see example prompts that show me how to query my tenant's identity, security, and device data using natural language with the Microsoft MCP Server for Enterprise.
 ---
 
 # Sample prompts for Microsoft MCP Server for Enterprise
 
-The Microsoft MCP Server for Enterprise translates natural language questions into Microsoft Graph API calls, allowing you to query your tenant's identity and device data conversationally. This article provides sample prompts organized by common scenarios to help you get started.
+Query your Microsoft Entra tenant data using natural language. The Microsoft MCP Server for Enterprise translates your questions into Microsoft Graph API calls, providing conversational access to identity, device, security, and compliance information. This article provides sample prompts organized by common scenarios to help you get started.
 
 > [!TIP]
 > When using these prompts, the MCP-enabled AI agent shows you the underlying Microsoft Graph API calls it executes. You can use these API calls in your own scripts, applications, or automation workflows.
