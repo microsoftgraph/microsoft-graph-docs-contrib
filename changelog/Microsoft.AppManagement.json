@@ -7,7 +7,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "allowedTenantIds",
           "ChangeType": "Change",
-          "Description": "Updated the **allowedTenantIds** property description on the [allowedTenantsAudience](https://learn.microsoft.com/en-us/graph/api/resources/allowedtenantsaudience?view=graph-rest-beta) resource to specify that it can't include more than 20 values.",
+          "Description": "Updated the **allowedTenantIds** property description on the [allowedTenantsAudience](https://learn.microsoft.com/en-us/graph/api/resources/allowedtenantsaudience?view=graph-rest-beta) resource to specify that it can't include more than 20 values. This object is configured as part of **signInAudienceRestrictions** on an [application](https://learn.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta).",
           "Target": "allowedTenantsAudience"
         }
       ],
