@@ -3297,7 +3297,6 @@
           "name": "Administration",
           "resources": [
             "microsoft.graph.teamsAdministration.numberAssignment",
-            "microsoft.graph.teamsAdministration.teamsUserConfiguration",
             "microsoft.graph.teamsAdministration.telephoneNumberLongRunningOperation",
             "microsoft.graph.teamsAdministration.telephoneNumberManagementRoot",
             "microsoft.graph.teamsAdministration.teamsPolicyAssignment",

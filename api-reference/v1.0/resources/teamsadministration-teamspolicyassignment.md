@@ -2,7 +2,7 @@
 title: "teamsPolicyAssignment resource type"
 description: "Represents the root entity for managing Teams policy assignments."
 author: "praspatil05"
-ms.date: 08/14/2025
+ms.date: 12/19/2025
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
@@ -11,8 +11,6 @@ doc_type: resourcePageType
 # teamsPolicyAssignment resource type
 
 Namespace: microsoft.graph.teamsAdministration
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the root entity for managing Teams policy assignments. It provides access to user policy assignments and supports the resolution of policy IDs.
 
