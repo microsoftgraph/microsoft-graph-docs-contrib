@@ -456,22 +456,6 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **Required scope:** `MCP.EntitlementManagement.Read.All`
 
-### Lifecycle workflows
-
-**Prompt:** "List all lifecycle workflows"
-
-**What it does:** Shows workflows configured for automating user lifecycle tasks.
-
-**Required scope:** `MCP.LifecycleWorkflows.Read.All`
-
----
-
-**Prompt:** "Show me workflow execution reports"
-
-**What it does:** Retrieves execution history and status for lifecycle workflows.
-
-**Required scope:** `MCP.LifecycleWorkflows-Reports.Read.All`
-
 ## Organization and domain information
 
 **Prompt:** "What is my tenant ID?"
@@ -514,11 +498,11 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 ---
 
-**Prompt:** "Show me health monitoring alerts"
+**Prompt:** "Show me recent audit log activity"
 
-**What it does:** Retrieves active alerts about service health issues in your tenant.
+**What it does:** Retrieves recent directory audit log entries to monitor administrative actions and changes in your tenant.
 
-**Required scope:** `MCP.HealthMonitoringAlert.Read.All`
+**Required scope:** `MCP.AuditLog.Read.All`
 
 ## Synchronization and provisioning
 
@@ -530,11 +514,11 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 ---
 
-**Prompt:** "List all synchronization jobs"
+**Prompt:** "Show me sync service audit logs"
 
-**What it does:** Shows active synchronization configurations.
+**What it does:** Retrieves audit log entries for synchronization service activities, providing visibility into sync operations and changes.
 
-**Required scope:** `MCP.Synchronization.Read.All`
+**Required scope:** `MCP.AuditLog.Read.All`
 
 ---
 
@@ -544,21 +528,6 @@ Before using these prompts, ensure you've completed the setup in [Get started wi
 
 **Required scope:** `MCP.ProvisioningLog.Read.All`
 
-## Network access and security
-
-**Prompt:** "List all network access policies"
-
-**What it does:** Retrieves Global Secure Access policies if configured.
-
-**Required scope:** `MCP.NetworkAccess.Read.All`
-
----
-
-**Prompt:** "Show me network access reports"
-
-**What it does:** Retrieves usage and security reports for Global Secure Access.
-
-**Required scope:** `MCP.NetworkAccess-Reports.Read.All`
 
 ## Tips for effective prompts
 
