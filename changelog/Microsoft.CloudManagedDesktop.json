@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "71dd0205-a512-4e0b-98df-3ddae9454863",
+          "ApiChange": "Member",
+          "ChangedApiName": "refreshPolicyConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the `refreshPolicyConfiguration` member to the **cloudPcStatus** enumeration.",
+          "Target": "cloudPcStatus"
+        }
+      ],
+      "Id": "71dd0205-a512-4e0b-98df-3ddae9454863",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-01-21T02:56:39.1048878Z",
+      "WorkloadArea": "Devices and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b88cc6c6-4eff-4a61-9835-9086446bdcb6",
           "ApiChange": "Enumeration",
           "ChangedApiName": "cloudPcSourceImageCategory",
@@ -60,24 +78,6 @@
           "Version": "beta",
           "CreatedDateTime": "2026-01-21T10:03:56.9188489Z",
           "WorkloadArea": "Device and app management",
-          "SubArea": "Cloud PC"
-        },
-        {
-          "ChangeList": [
-            {
-              "Id": "71dd0205-a512-4e0b-98df-3ddae9454863",
-              "ApiChange": "Member",
-              "ChangedApiName": "refreshPolicyConfiguration",
-              "ChangeType": "Addition",
-              "Description": "Added the `refreshPolicyConfiguration` member to the **cloudPcStatus** enumeration.",
-              "Target": "cloudPcStatus"
-            }
-          ],
-          "Id": "71dd0205-a512-4e0b-98df-3ddae9454863",
-          "Cloud": "Prod",
-          "Version": "beta",
-          "CreatedDateTime": "2026-01-06T02:56:39.1048878Z",
-          "WorkloadArea": "Devices and app management",
           "SubArea": "Cloud PC"
         },
         {
