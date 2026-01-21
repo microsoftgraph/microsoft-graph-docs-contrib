@@ -18,7 +18,7 @@ Namespace: microsoft.graph
 Clear the automatic work location signal for a [user](../resources/user.md). After clearing, the user’s final aggregated work location is recomputed according to the precedence rules:
 
 - Precedence: manual > automatic > scheduled
-- If a manual location is set, clearing the automatic signal doesn't change the final location (manual still takes precedence).
+- If a manual location is set, clearing the automatic signal doesn't change the final location because the manual location still takes precedence.
 - If no manual location is set, the final location falls back to the scheduled signal (calendar working hours and location – WHL) for the current segment, or to none if there's no scheduled signal.
 
 Use this operation when you need to remove the current autodetected signal without affecting manual or scheduled layers.
@@ -44,8 +44,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 POST /me/presence/clearAutomaticLocation
-POST /users/{usersId}/presence/clearAutomaticLocation
-POST /communications/presences/{presenceId}/clearAutomaticLocation
 ```
 
 ## Request headers
@@ -60,7 +58,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this action returns a `200 OK` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -86,6 +84,6 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
 ```
 

@@ -12,8 +12,6 @@ ms.date: 09/18/2024
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Trigger the policies associated with the end of working hours for a specific user.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -67,7 +65,7 @@ The following example shows a request.
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/users/ccdf8279-8a3f-4c10-af1a-4a7f46b1489f/solutions/workingTimeSchedule/endWorkingTime
+POST https://graph.microsoft.com/v1.0/users/ccdf8279-8a3f-4c10-af1a-4a7f46b1489f/solutions/workingTimeSchedule/endWorkingTime
 ```
 
 # [C#](#tab/csharp)

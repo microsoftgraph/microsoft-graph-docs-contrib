@@ -52,7 +52,7 @@ The following table shows the parameters that can be used with this action.
 |Property|Type|Description|
 |:---|:---|:---|
 |justification|String|Indicates the justification for approving the request. Maximum length of justification is 1024 characters. For example: 'Approved per Change 23423 - needed for Feb 2023 application baseline updates.'|
-|approvalSource|[operationApprovalSource](../resources/intune-rbac-operationapprovalsource.md)|Indicates the source of the action on the approval request. The possible values are: `unknown`, `adminConsole`, `email`. Default value is `unknown`.|
+|approvalSource|[operationApprovalSource](../resources/intune-rbac-operationapprovalsource.md)|Indicates the source of the action on the approval request. Possible values are: `unknown`, `adminConsole`, `email`. Default value is `unknown`.|
 
 
 

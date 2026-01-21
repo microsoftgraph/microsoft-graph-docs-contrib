@@ -1657,6 +1657,58 @@
       "CreatedDateTime": "2025-08-18T07:02:56.8800332Z",
       "WorkloadArea": "Mail",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "0a1bdc8e-6a09-4a30-998b-1a4413badda9",
+          "ApiChange": "Property",
+          "ChangedApiName": "primaryEmailAddress",
+          "ChangeType": "Addition",
+          "Description": "Added the **primaryEmailAddress** property to the [contact](https://learn.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-beta) resource.",
+          "Target": "contact"
+        },
+        {
+          "Id": "0a1bdc8e-6a09-4a30-998b-1a4413badda9",
+          "ApiChange": "Property",
+          "ChangedApiName": "secondaryEmailAddress",
+          "ChangeType": "Addition",
+          "Description": "Added the **secondaryEmailAddress** property to the [contact](https://learn.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-beta) resource.",
+          "Target": "contact"
+        },
+        {
+          "Id": "0a1bdc8e-6a09-4a30-998b-1a4413badda9",
+          "ApiChange": "Property",
+          "ChangedApiName": "tertiaryEmailAddress",
+          "ChangeType": "Addition",
+          "Description": "Added the **tertiaryEmailAddress** property to the [contact](https://learn.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-beta) resource.",
+          "Target": "contact"
+        }
+      ],
+      "Id": "0a1bdc8e-6a09-4a30-998b-1a4413badda9",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-12-16T09:32:17.8914924Z",
+      "WorkloadArea": "Personal contacts",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5ad7b623-ba67-4fe3-a307-3f582d7f2553",
+          "ApiChange": "Property",
+          "ChangedApiName": "welcomeMessageEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **welcomeMessageEnabled** property to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
+          "Target": "group"
+        }
+      ],
+      "Id": "5ad7b623-ba67-4fe3-a307-3f582d7f2553",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-01-20T00:00:00.000Z",
+      "WorkloadArea": "Groups",
+      "SubArea": ""
     }
   ]
 }

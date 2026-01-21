@@ -4,7 +4,7 @@ description: "Add a key credential to an agent identity blueprint. This method, 
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-applications"
+ms.subservice: "entra-agent-id"
 doc_type: apiPageType
 ---
 

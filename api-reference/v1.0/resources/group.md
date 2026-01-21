@@ -13,7 +13,7 @@ ms.date: 10/17/2024
 
 Namespace: microsoft.graph
 
-Represents a Microsoft Entra group, a Microsoft 365 group, or a security group. This resource is an open type that allows other properties to be passed in.
+Represents a Microsoft Entra group, a Microsoft 365 group, or a security group. This resource is an open type that allows additional properties beyond those documented here.
 
 Inherits from [directoryObject](directoryobject.md).
 

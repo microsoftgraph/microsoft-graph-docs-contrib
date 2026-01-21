@@ -228,6 +228,38 @@ items:
       href: ../../resources/security-auditdata.md
     - name: Default audit data
       href: ../../resources/security-defaultauditdata.md
+- name: Cloud zones or scopes (preview)
+  items:
+  - name: Zone
+    items:
+    - name: Zone
+      href: ../../resources/security-zone.md
+    - name: List
+      href: ../../api/security-security-list-zones.md
+    - name: Create
+      href: ../../api/security-security-post-zones.md
+    - name: Get
+      href: ../../api/security-zone-get.md
+    - name: Update
+      href: ../../api/security-zone-update.md
+    - name: Delete
+      href: ../../api/security-zone-delete.md
+  - name: Environment
+    items:
+    - name: Environment
+      href: ../../resources/security-environment.md
+    - name: List
+      href: ../../api/security-zone-list-environments.md
+    - name: Create
+      href: ../../api/security-zone-post-environments.md
+    - name: Get
+      href: ../../api/security-environment-get.md
+    - name: Delete
+      href: ../../api/security-environment-delete.md
+  - name: Complex types
+    items:
+    - name: Audit info
+      href: ../../resources/security-auditinfo.md
 - name: Data security and compliance
   items:
   - name: Content activity
@@ -808,14 +840,6 @@ items:
       href: ../../api/security-sensorcandidateactivationconfiguration-get.md
     - name: Update
       href: ../../api/security-identitycontainer-post-sensorcandidateactivationconfiguration.md
-  - name: Auto-auditing configuration
-    items:
-    - name: Auto-auditing configuration
-      href: ../../resources/security-autoauditingconfiguration.md
-    - name: Get
-      href: ../../api/security-autoauditingconfiguration-get.md
-    - name: Update
-      href: ../../api/security-autoauditingconfiguration-update.md
   - name: Complex types
     items:
     - name: Account

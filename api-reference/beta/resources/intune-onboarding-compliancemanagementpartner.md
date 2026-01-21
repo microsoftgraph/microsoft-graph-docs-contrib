@@ -32,7 +32,7 @@ Compliance management partner for all platforms
 |:---|:---|:---|
 |id|String|Id of the entity|
 |lastHeartbeatDateTime|DateTimeOffset|Timestamp of last heartbeat after admin onboarded to the compliance management partner|
-|partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Partner state of this tenant. The possible values are: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
+|partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Partner state of this tenant. Possible values are: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |displayName|String|Partner display name|
 |macOsOnboarded|Boolean|Partner onboarded for Mac devices.|
 |linuxOnboarded|Boolean|Partner onboarded for Linux devices.|
