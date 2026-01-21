@@ -54,9 +54,9 @@ Use [runHuntingQuery](../api/security-security-runhuntingquery.md) to run a [Kus
 
 ### Migrate from the older APIs
 
-The advanced hunting APIs in Microsoft Graph replace the older version of the API that was available through the `https://api.security.microsoft.com/api/advancedhunting/run` and `https://api.security.microsoft.com/api/advancedqueries/run` endpoints. The older APIs are now deprecated and will stop returning data on dd/mm/yyyy.
+The advanced hunting APIs in Microsoft Graph replace the older version of the API that was available through the `https://api.security.microsoft.com/api/advancedhunting/run` and `https://api.security.microsoft.com/api/advancedqueries/run` endpoints. The older APIs are now retired and will stop returning data on February 1, 2027.
 
-To migrate to the new advanced hunting APIs in Microsoft Graph, update the following parameters in your application:
+To migrate to the advanced hunting APIs in Microsoft Graph, update the following parameters in your application:
 
 > [!div class="mx-tableFixed"]
 > |Subject  |Older parameters  |Microsoft Graph  |
