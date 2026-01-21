@@ -58,13 +58,14 @@ The advanced hunting APIs in Microsoft Graph replace the older version of the AP
 
 To migrate to the new advanced hunting APIs in Microsoft Graph, update the following parameters in your application:
 
-|Subject  |Older parameters  |Microsoft Graph  |
-|---------|---------|---------|
-|Endpoints     | https://api.securitycenter.microsoft.com/api/advancedqueries/run <br/><br/> https://api.security.microsoft.com/api/advancedhunting/run        | [https://graph.microsoft.com/beta/security/runHuntingQuery](../api/security-security-runhuntingquery.md)       |
-|Resource URI|Microsoft Defender for Endpoint on `https://api.securitycenter.microsoft.com`|Microsoft Graph on `https://graph.microsoft.com`|
-|API permissions     | *AdvancedQuery.Read* (delegated) and *AdvancedQuery.Read.All* (application) under Microsoft Defender for Endpoint (formerly Windows Defender Advanced Threat Protection) <br/><br/> *AdvancedHunting.Read* (delegated) and *AdvancedHunting.Read.All* (application) under Microsoft Threat Protection       | [*ThreatHunting.Read.All*](https://learn.microsoft.com/en-us/graph/permissions-reference#threathuntingreadall) (delegated and application)       |
-|Request body     | **Query** property. For example `{"Query":"DeviceProcessEvents &#124;where InitiatingProcessFileName =~ 'powershell.exe' &#124;where ProcessCommandLine contains 'appdata'&#124;project Timestamp, FileName, InitiatingProcessFileName, DeviceId&#124;limit 2"}`        |  **Query** and **Timespan** properties. For example, `{"Query": "DeviceProcessEvents", "Timespan": "P90D"}`      |
-|Response     | **QueryResponse** object consisting of **Stats**, **Schema**, and **Results**        |  [huntingQueryResults resource type](../resources/security-huntingqueryresults)", consisting of **schema** (instead of **Schema**) and **results** (instead of **Results**).       |
+> [!div class="mx-tableFixed"]
+> |Subject  |Older parameters  |Microsoft Graph  |
+> |---------|---------|---------|
+> |Endpoints     | [https://api.securitycenter.microsoft.com/api/advancedqueries/run](/defender-endpoint/api/run-advanced-query-api) <br/><br/> [https://api.security.microsoft.com/api/advancedhunting/run](/defender-xdr/api-advanced-hunting)        | [https://graph.microsoft.com/beta/security/runHuntingQuery](../api/security-security-runhuntingquery.md)       |
+> |Resource URI|Microsoft Defender for Endpoint on `https://api.securitycenter.microsoft.com`|Microsoft Graph on `https://graph.microsoft.com`|
+> |API permissions     | *AdvancedQuery.Read* (delegated) and *AdvancedQuery.Read.All* (application) under Microsoft Defender for Endpoint (formerly Windows Defender Advanced Threat Protection) <br/><br/> *AdvancedHunting.Read* (delegated) and *AdvancedHunting.Read.All* (application) under Microsoft Threat Protection       | [*ThreatHunting.Read.All*](/graph/permissions-reference#threathuntingreadall) (delegated and application)       |
+> |Request body     | **Query** property. For example `{"Query":"DeviceProcessEvents &#124;where InitiatingProcessFileName =~ 'powershell.exe' &#124;where ProcessCommandLine contains 'appdata'&#124;project Timestamp, FileName, InitiatingProcessFileName, DeviceId&#124;limit 2"}`        |  **Query** and **Timespan** properties. For example, `{"Query": "DeviceProcessEvents", "Timespan": "P90D"}`      |
+> |Response     | **QueryResponse** object consisting of **Stats**, **Schema**, and **Results**        |  [huntingQueryResults resource type](../resources/security-huntingqueryresults)", consisting of **schema** (instead of **Schema**) and **results** (instead of **Results**).       |
 
 For more information about how to authorize your app to call Microsoft Graph APIs, see [Get access on behalf of a user](/graph/auth-v2-user) and [Get access without a user](/graph/auth-v2-service).
 
