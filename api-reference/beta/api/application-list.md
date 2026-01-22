@@ -520,6 +520,67 @@ Content-type: application/json
     ]
 }
 ```
+### Example 7: List applications with signInAudienceRestrictions
+
+#### Request
+
+The following example shows a request that uses `$select` to specify the properties that should be returned. This includes the **signInAudienceRestrictions** property which is *only* returned if requested with `$select`.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_application_selectsigninaudiencerestrictions"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/applications?$select=id,appId,displayName,signInAudience,signInAudienceRestrictions
+```
+
+#### Response
+
+The following example shows the response.
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.application",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applications(id,appId,displayName,signInAudience,signInAudienceRestrictions)",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/applications?$select=id%2cappId%2cdisplayName%2csignInAudience%2csignInAudienceRestrictions&$skiptoken=RFNwdAIAAQ...",
+    "value": [
+        {
+            "id": "5ea443cf-12f6-41ab-9d8a-5ce727149aa5",
+            "appId": "422cc61e-7b6b-4a85-86ab-fb30889ab0ce",
+            "displayName": "Test app 1",
+            "signInAudience": "AzureADandPersonalMicrosoftAccount",
+            "signInAudienceRestrictions": {
+                "@odata.type": "#microsoft.graph.unrestrictedAudience",
+                "kind": "unrestricted"
+            }
+        },
+        {
+            "id": "84ac0248-da58-40c5-b98f-984f85899017",
+            "appId": "2fc17695-80db-4ac5-96dd-6aa82d8dfcdc",
+            "displayName": "New app with org restrictions",
+            "signInAudience": "AzureADMultipleOrgs",
+            "signInAudienceRestrictions": {
+                "@odata.type": "#microsoft.graph.allowedTenantsAudience",
+                "kind": "allowedTenants",
+                "allowedTenantIds": [
+                    "3be81b2e-2cfa-49f8-9fe1-c7c7223b9658",
+                    "7c33a22a-27ff-4948-840f-7beb8169d6e4"
+                ],
+                "isHomeTenantAllowed": true
+            }
+        }
+    ]
+}
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
