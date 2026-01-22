@@ -1837,6 +1837,7 @@
               "overview": "../../resources/identityprotection-overview.md",
               "resources": [
                 "riskDetection",
+                "riskyAgent",
                 "riskyUser",
                 "riskyUserHistoryItem",
                 "servicePrincipalRiskDetection",
