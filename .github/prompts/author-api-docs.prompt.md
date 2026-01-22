@@ -231,29 +231,21 @@ After updating the changelog, update the What's new section in `concepts/whats-n
 
 ### Common Process: Updating the Table of Contents (TOC)
 
-After updating What's new, update the appropriate TOC file to make the new documentation discoverable:
+After updating What's new, update the appropriate TOC mapping file to make new documentation discoverable:
 
-**Step 1: Locate the TOC file**
-- For beta documentation: `api-reference/beta/toc/toc.mapping.json`
-- For v1.0 documentation: `api-reference/v1.0/toc/toc.mapping.json`
+**Step 1: Locate the TOC mapping file**
+- Beta: `api-reference/beta/toc/toc.mapping.json`
+- v1.0: `api-reference/v1.0/toc/toc.mapping.json`
+- **Never update toc.yml directly** - only update toc.mapping.json
 
-**Step 2: Find the appropriate node**
-- Search for the relevant workload area node
-- TOC structure uses nested nodes with `displayName` and `resources` arrays
+**Step 2: Find the relevant workload area node**
+- TOC structure uses nested nodes with `displayName`, `resources`, and `complexTypes` arrays
 
-**Step 3: Add to resources array**
-- Add new resources to the `resources` array in alphabetical order
-- Use the resource file name without the .md extension
-- Example: `"user"` for user.md
-
-**Step 4: Add new API methods**
-- API methods are NOT typically added to TOC unless specifically requested
-- The TOC auto-generates API method entries from the resource's Methods table
-
-**Step 5: Important approval notes**
-- TOC changes typically require approval from the content team
-- Mention to the author that TOC updates may need additional review
-- Follow up if unsure about the correct TOC location
+**Step 3: Add to the correct array**
+- **Entity Types** (resources WITH Methods section): Add to `resources` array using the resource title name (e.g., `"user"` for "user resource"). Add in alphabetical order unless specifically requested.
+- **Complex Types** (resources WITHOUT Methods section): Add to `complexTypes` array using the resource title name (e.g., `"bookingReminder"` for "bookingReminder resource type")
+- Complex types should NEVER be in the `resources` array
+- API methods are NOT typically added to TOC - they auto-generate from the resource's Methods table
 
 ### Reference Standards: Namespace Qualification
 
@@ -361,9 +353,16 @@ For this scenario, the author should add these files to `temp-docstubs`:
 - **Location:** Ask the author to add all doc stub files to the `temp-docstubs` folder (they can create subfolders within it for organization if needed)
 
 ### Additional prerequisites
-After gathering the inputs, you must also prompt the author to provide:
-- **author**: Value to replace TODO placeholders in the `author` field (only for new files or where TODO exists)
-- **ms.subservice**: Value to replace TODO placeholders in the `ms.subservice` field (only for new files or where TODO exists)
+After gathering the inputs, determine values to replace TODO placeholders in the following front matter of new files:
+
+**For author field:**
+- Use the GitHub alias of the signed-in user by default
+- If unavailable, prompt the author to provide it
+
+**For ms.subservice field:**
+- Inspect existing API/resource files being updated and use their `ms.subservice` value (exclude enum files)
+- If multiple distinct values exist, ask the author to confirm which to use
+- If only new files (no existing files being updated), prompt the author to provide the value
 
 ### Critical guidance on doc stubs
 
@@ -625,7 +624,7 @@ Remove "(preview)" from TOC entries as applicable:
 - [ ] Major services topic updated to remove "(preview)"
 
 **For TOC:**
-- [ ] toc.title attribute updated or removed in resource YAML headers
+- [ ] TOC mapping file updated in api-reference/v1.0/toc/toc.mapping.json if applicable
 - [ ] Methods table links updated in resource topics
 - [ ] Concept toc.yml updated if applicable
 
@@ -1077,8 +1076,8 @@ Before working on any file, apply these rules to both resource and API files:
 
 ### Front matter
 - **Replace TODO placeholders only:**
-  - If `author` field has TODO: replace with author-provided value
-  - If `ms.subservice` field has TODO: replace with author-provided value
+  - If `author` field has TODO: replace with the determined author value (GitHub alias if available, or author-provided value)
+  - If `ms.subservice` field has TODO: replace with the determined ms.subservice value (from existing files being updated, or author-provided value if no existing files)
   - Do NOT update these fields if they already contain values
 - **[Optional] Improve the description:**
   - Make it user-friendly and clear
@@ -1701,6 +1700,7 @@ Before completing any authoring task, verify:
 - [ ] All resource files documented (new or updated)
 - [ ] All API files documented (new or updated)
 - [ ] All enumerations documented (new or updated)
+- [ ] All TOC changes made if applicable
 - [ ] All properties referencing updated enumerations have been updated
 - [ ] All permissions files copied
 - [ ] Provided summary of all files created/modified to author
@@ -1821,7 +1821,7 @@ Before completing Scenario 4 tasks, verify:
 - [ ] Beta disclaimers present where required
 - [ ] Examples use pseudo-values, not data types
 - [ ] No markdown lint errors
-- [ ] Changelog and What's new updated only if appropriate
+- [ ] Changelog, What's new, and TOC mapping updated only if appropriate
 - [ ] Summary of changes provided to author
 
 ---
