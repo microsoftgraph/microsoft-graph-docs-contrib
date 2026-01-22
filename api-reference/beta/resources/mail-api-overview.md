@@ -69,6 +69,7 @@ The Microsoft Graph API also provides methods and actions that support common us
 | Search and filter messages | [message](../resources/message.md) | [Query parameters](/graph/query-parameters)  |
 | Get notified of changes to messages in a folder | [subscription](../resources/subscription.md) | [Working with webhooks in Microsoft Graph](../resources/change-notifications-api-overview.md) |
 | Synchronize messages or mail folder hierarchy | [message](../resources/message.md) | [Get incremental changes to messages in a folder](/graph/delta-query-messages) |
+| Trace messages through the Exchange Online organization | [messageTrace (preview)](../resources/exchangemessagetrace.md) | [Methods of messageTrace](../resources/exchangemessagetrace.md#methods) |
 | **App development** | | |
 | Add custom app data as Internet message headers of a message | [message](../resources/message.md) | Add custom data to the **internetMessageHeaders** collection of the message. |
 | Add custom app data to a message by using extensions | [openTypeExtension](../resources/opentypeextension.md), <br>[schemaExtension](../resources/schemaextension.md) | [Add custom data to resources using extensions](/graph/extensibility-overview) |

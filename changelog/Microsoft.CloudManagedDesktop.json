@@ -1,5 +1,85 @@
 {
   "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "71dd0205-a512-4e0b-98df-3ddae9454863",
+          "ApiChange": "Member",
+          "ChangedApiName": "refreshPolicyConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the `refreshPolicyConfiguration` member to the **cloudPcStatus** enumeration.",
+          "Target": "cloudPcStatus"
+        }
+      ],
+      "Id": "71dd0205-a512-4e0b-98df-3ddae9454863",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-01-21T02:56:39.1048878Z",
+      "WorkloadArea": "Devices and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b88cc6c6-4eff-4a61-9835-9086446bdcb6",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcSourceImageCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcSourceImageCategory** enumeration type.",
+          "Target": "cloudPcSourceImageCategory"
+        },
+        {
+          "Id": "b88cc6c6-4eff-4a61-9835-9086446bdcb6",
+          "ApiChange": "Property",
+          "ChangedApiName": "category",
+          "ChangeType": "Addition",
+          "Description": "Added the **category** property to the [cloudPcSourceDeviceImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcSourceDeviceImage?view=graph-rest-beta) resource.",
+          "Target": "cloudPcSourceDeviceImage"
+        }
+      ],
+      "Id": "b88cc6c6-4eff-4a61-9835-9086446bdcb6",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-01-21T02:49:22.7461765Z",
+      "WorkloadArea": "Devices and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "30294cf3-5880-4607-b248-63dab5496aaa",
+          "ApiChange": "Member",
+          "ChangedApiName": "cloudPCInventoryReport",
+          "ChangeType": "Addition",
+          "Description": "Added the `cloudPCInventoryReport` member to the **cloudPcReportName** enumeration type.",
+          "Target": "cloudPcReportName"
+        }
+      ],
+      "Id":"30294cf3-5880-4607-b248-63dab5496aaa",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-01-21T16:55:21.2146082Z",
+      "WorkloadArea": "Devices and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+          "ChangeList": [
+            {
+              "Id": "461939f1-516e-4817-9853-e40eb3728eeb",
+              "ApiChange": "Member",
+              "ChangedApiName": "mexico",
+              "ChangeType": "Addition",
+              "Description": "Added the `mexico` member to the **cloudPcGeographicLocationType** enumeration.",
+              "Target": "cloudPcGeographicLocationType"
+            }
+          ],
+          "Id": "461939f1-516e-4817-9853-e40eb3728eeb",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2026-01-21T10:03:56.9188489Z",
+          "WorkloadArea": "Device and app management",
+          "SubArea": "Cloud PC"
+        },
         {
           "ChangeList": [
             {
@@ -49,7 +129,7 @@
         "Cloud": "Prod",
         "Version": "v1.0",
         "CreatedDateTime": "2025-12-15T08:21:53.8509284Z",
-        "WorkloadArea": "Devices and app management",
+        "WorkloadArea": "Device and app management",
         "SubArea": "Cloud PC"
       },
       {
@@ -85,6 +165,32 @@
       "CreatedDateTime": "2025-12-18T04:17:53.1340728Z",
       "WorkloadArea": "Devices and app management",
       "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a133189e-3073-4c81-8d4d-40325d6c5cf6",
+          "ApiChange": "Member",
+          "ChangedApiName": "fSLogixInstalledSourceImageNotSupported",
+          "ChangeType": "Addition",
+          "Description": "Added the `fSLogixInstalledSourceImageNotSupported` member to the **cloudPcDeviceImageErrorCode** enumeration.",
+          "Target": "cloudPcDeviceImageErrorCode"
+        },
+        {
+          "Id": "a133189e-3073-4c81-8d4d-40325d6c5cf6",
+          "ApiChange": "Member",
+          "ChangedApiName": "startMenuAppLimitExceeded",
+          "ChangeType": "Addition",
+          "Description": "Added the `startMenuAppLimitExceeded` member to the **cloudPcDeviceImageErrorCode** enumeration.",
+          "Target": "cloudPcDeviceImageErrorCode"
+        }
+      ],
+          "Id": "a133189e-3073-4c81-8d4d-40325d6c5cf6",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2025-01-19T02:37:30.6320897Z",
+          "WorkloadArea": "Device and app management",
+          "SubArea": "Cloud PC"
     },
     {
       "ChangeList": [
@@ -143,7 +249,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-10-24T08:21:53.8509284Z",
-      "WorkloadArea": "Devices and app management",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
     },
     {
@@ -177,7 +283,7 @@
       "Cloud": "Review",
       "Version": "beta",
       "CreatedDateTime": "2025-09-23T02:57:30.4566481Z",
-      "WorkloadArea": "Devices and app management",
+      "WorkloadArea": "Device and app management",
       "SubArea": "Cloud PC"
     },
     {
