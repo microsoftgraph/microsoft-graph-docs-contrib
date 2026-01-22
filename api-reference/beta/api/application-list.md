@@ -526,7 +526,6 @@ Content-type: application/json
 
 The following example shows a request that uses `$select` to specify the properties that should be returned. This includes the **signInAudienceRestrictions** property which is *only* returned if requested with `$select`.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_application_selectsigninaudiencerestrictions"
