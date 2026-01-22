@@ -13,6 +13,22 @@ ms.custom: sfi-ropc-nochange
 
 Namespace: microsoft.graph
 
+### structuredDataEntryValueType values
+
+|Member|
+|:---|
+|dateTime|
+|boolean|
+|byte|
+|string|
+|integer32|
+|unsignedInteger32|
+|integer64|
+|unsignedInteger64|
+|stringArray|
+|byteArray|
+|unknownFutureValue|
+
 ### placeFeatureEnablement values
 
 |Member|
@@ -1823,6 +1839,7 @@ Namespace: microsoft.graph
 | fido2SecurityKey |
 | oneTimePasscode |
 | passKeySynced |
+| qrCode |
 
 ### authenticationAppAdminConfiguration values
 
@@ -5467,6 +5484,19 @@ Possible values for user account types (group membership), per Windows definitio
 | bullseye         |
 | unknownFutureValue |
 
+### exchangeMessageTraceStatus values
+
+|Member|
+|:---|
+|gettingStatus|
+|pending|
+|failed|
+|delivered|
+|expanded|
+|quarantined|
+|filteredAsSpam|
+|unknownFutureValue|
+
 ### notificationEventsType values
 
 |Member|
@@ -5696,7 +5726,7 @@ Possible values for user account types (group membership), per Windows definitio
 |all|
 |unknownFutureValue|
 
-### siteTemplateType values 
+### siteTemplateType values
 
 |Member|
 |:---|
@@ -5705,7 +5735,20 @@ Possible values for user account types (group membership), per Windows definitio
 |sts|
 |unknownFutureValue|
 
-### workLocationSource values 
+### placeOperationStatus values 
+
+|Member|
+|:---|
+|created|
+|inProgress|
+|succeeded|
+|failed|
+|partiallySucceeded|
+|expired|
+|unknownFutureValue|
+
+### workLocationSource values
+
 |Member|
 |:---|
 |none|
@@ -5813,6 +5856,16 @@ Possible values for user account types (group membership), per Windows definitio
 |create|
 |unknownFutureValue|
 
+### scopeCollectionKind values 
+
+|Member|
+|:---|
+|allAllowed|
+|enumerated|
+|none|
+|scopeKindNotSet|
+|unknownFutureValue|
+
 ### sharePointMigrationTaskStatus values
 
 | Member             |
@@ -5823,3 +5876,11 @@ Possible values for user account types (group membership), per Windows definitio
 | cancelled          |
 | failed             |
 | unknownFutureValue |
+
+### kind values
+
+|Member|
+|:---|
+|unrestricted|
+|allowedTenants|
+|unknownFutureValue|

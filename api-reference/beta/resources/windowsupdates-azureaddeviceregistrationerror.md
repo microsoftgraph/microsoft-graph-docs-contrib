@@ -1,11 +1,11 @@
 ---
 title: "azureADDeviceRegistrationError resource type"
 description: "An error in the registration process of a Microsoft Entra device that prevents Windows Autopatch from enrolling the device in update management or deploying content to the device."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: resourcePageType
-ms.date: 09/16/2024
+ms.date: 01/20/2026
 ---
 
 # azureADDeviceRegistrationError resource type

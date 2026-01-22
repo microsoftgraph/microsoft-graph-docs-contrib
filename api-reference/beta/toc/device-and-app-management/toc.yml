@@ -310,12 +310,16 @@ items:
       href: ../../api/cloudpcprovisioningpolicy-apply.md
     - name: Apply configuration
       href: ../../api/cloudpcprovisioningpolicy-applyconfig.md
+    - name: Retry
+      href: ../../api/cloudpcprovisioningpolicy-retry.md
   - name: Cloud PC report
     items:
     - name: Cloud PC report
       href: ../../resources/cloudpcreport.md
     - name: Retrieve Cloud PC recommendation reports
       href: ../../api/cloudpcreport-retrievecloudpcrecommendationreports.md
+    - name: Retrieve Cloud PC client app usage reports
+      href: ../../api/cloudpcreport-retrievecloudpcclientappusagereport.md
   - name: Cloud PC service plan
     items:
     - name: Cloud PC service plan
@@ -1055,6 +1059,12 @@ items:
         href: ../../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-setandroiddeviceownerfullymanagedenrollmentstate.md
       - name: addApps action
         href: ../../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-addapps.md
+      - name: retrieveStoreLayout function
+        href: ../../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-retrievestorelayout.md
+      - name: setStoreLayout action
+        href: ../../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-setstorelayout.md
+      - name: requestEnterpriseUpgradeUrl action
+        href: ../../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-requestenterpriseupgradeurl.md
     - name: Android managed store app
       items:
       - name: Android managed store app
@@ -4807,6 +4817,8 @@ items:
         href: ../../api/intune-raimportcerts-userpfxcertificate-create.md
       - name: Delete userPFXCertificate
         href: ../../api/intune-raimportcerts-userpfxcertificate-delete.md
+      - name: Update userPFXCertificate
+        href: ../../api/intune-raimportcerts-userpfxcertificate-update.md
     - name: VPN configuration
       items:
       - name: VPN configuration
@@ -8516,6 +8528,46 @@ items:
       href: ../../api/windowsupdates-operationalinsightsconnection-get.md
     - name: Delete operational insights connection
       href: ../../api/windowsupdates-operationalinsightsconnection-delete.md
+  - name: Policy
+    items:
+    - name: Policy
+      href: ../../resources/windowsupdates-policy.md
+    - name: List
+      href: ../../api/windowsupdates-adminwindowsupdates-list-policies.md
+    - name: Create
+      href: ../../api/windowsupdates-adminwindowsupdates-post-policies.md
+    - name: Get
+      href: ../../api/windowsupdates-policy-get.md
+    - name: Update
+      href: ../../api/windowsupdates-policy-update.md
+    - name: Delete
+      href: ../../api/windowsupdates-policy-delete.md
+    - name: List applicable content
+      href: ../../api/windowsupdates-policy-list-applicablecontent.md
+    - name: List approvals
+      href: ../../api/windowsupdates-policy-list-approvals.md
+    - name: Create policy approval
+      href: ../../api/windowsupdates-policy-post-approvals.md
+    - name: List rings
+      href: ../../api/windowsupdates-policy-list-rings.md
+    - name: Create ring
+      href: ../../api/windowsupdates-policy-post-rings.md
+  - name: Quality update policy
+    href: ../../resources/windowsupdates-qualityupdatepolicy.md
+  - name: Policy approval
+    items:
+    - name: Policy approval
+      href: ../../resources/windowsupdates-policyapproval.md
+    - name: List
+      href: ../../api/windowsupdates-policy-list-approvals.md
+    - name: Create
+      href: ../../api/windowsupdates-policy-post-approvals.md
+    - name: Get
+      href: ../../api/windowsupdates-policyapproval-get.md
+    - name: Update
+      href: ../../api/windowsupdates-policyapproval-update.md
+    - name: Delete
+      href: ../../api/windowsupdates-policyapproval-delete.md
   - name: Product
     items:
     - name: Product
@@ -8536,6 +8588,22 @@ items:
       href: ../../api/windowsupdates-resourceconnection-get.md
     - name: Delete
       href: ../../api/windowsupdates-resourceconnection-delete.md
+  - name: Ring
+    items:
+    - name: Ring
+      href: ../../resources/windowsupdates-ring.md
+    - name: List
+      href: ../../api/windowsupdates-policy-list-rings.md
+    - name: Create
+      href: ../../api/windowsupdates-policy-post-rings.md
+    - name: Get
+      href: ../../api/windowsupdates-ring-get.md
+    - name: Update
+      href: ../../api/windowsupdates-ring-update.md
+    - name: Delete
+      href: ../../api/windowsupdates-ring-delete.md
+  - name: Quality update ring
+    href: ../../resources/windowsupdates-qualityupdatering.md
   - name: Updatable asset
     items:
     - name: Updatable asset
@@ -8613,9 +8681,17 @@ items:
     - name: Admin Windows Updates
       href: ../../resources/adminwindowsupdates.md
     - name: Applicable content
-      href: ../../resources/windowsupdates-applicablecontent.md
+      items:
+      - name: Applicable content
+        href: ../../resources/windowsupdates-applicablecontent.md
+      - name: List applicable content
+        href: ../../api/windowsupdates-policy-list-applicablecontent.md
     - name: Applicable content device match
       href: ../../resources/windowsupdates-applicablecontentdevicematch.md
+    - name: Approval rule
+      href: ../../resources/windowsupdates-approvalrule.md
+    - name: Assigned group
+      href: ../../resources/windowsupdates-assignedgroup.md
     - name: Build version details
       href: ../../resources/windowsupdates-buildversiondetails.md
     - name: Catalog content
@@ -8650,12 +8726,18 @@ items:
       href: ../../resources/windowsupdates-durationdrivenrolloutsettings.md
     - name: Edition
       href: ../../resources/windowsupdates-edition.md
+    - name: Excluded group assignment
+      href: ../../resources/windowsupdates-excludedgroupassignment.md
     - name: Expedite settings
       href: ../../resources/windowsupdates-expeditesettings.md
     - name: Feature update catalog entry
       href: ../../resources/windowsupdates-featureupdatecatalogentry.md
     - name: Gradual rollout settings
       href: ../../resources/windowsupdates-gradualrolloutsettings.md
+    - name: Group assignment
+      href: ../../resources/windowsupdates-groupassignment.md
+    - name: Included group assignment
+      href: ../../resources/windowsupdates-includedgroupassignment.md
     - name: Item body
       href: ../../resources/windowsupdates-itembody.md
     - name: Knowledge base article
@@ -8672,6 +8754,8 @@ items:
       href: ../../resources/windowsupdates-monitoringsettings.md
     - name: Product revision
       href: ../../resources/windowsupdates-productrevision.md
+    - name: Quality update approval rule
+      href: ../../resources/windowsupdates-qualityupdateapprovalrule.md
     - name: Quality update catalog entry
       href: ../../resources/windowsupdates-qualityupdatecatalogentry.md
     - name: Quality update cve severity information
@@ -8680,6 +8764,10 @@ items:
       href: ../../resources/windowsupdates-qualityupdatefilter.md
     - name: Rate driven rollout settings
       href: ../../resources/windowsupdates-ratedrivenrolloutsettings.md
+    - name: Recovery approval rule
+      href: ../../resources/windowsupdates-recoveryapprovalrule.md
+    - name: Recovery update catalog entry
+      href: ../../resources/windowsupdates-recoveryupdatecatalogentry.md
     - name: Remediation update filter
       href: ../../resources/windowsupdates-remediationupdatefilter.md
     - name: Safeguard profile

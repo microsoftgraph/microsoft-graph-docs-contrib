@@ -1,0 +1,166 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "4df46906-26ae-4652-b529-823ef37f4784",
+          "ApiChange": "Member",
+          "ChangedApiName": "personEmails",
+          "ChangeType": "Addition",
+          "Description": "Added the `personEmails` member to the **label** enumeration.",
+          "Target": "label"
+        },
+        {
+          "Id": "4df46906-26ae-4652-b529-823ef37f4784",
+          "ApiChange": "Member",
+          "ChangedApiName": "personAddresses",
+          "ChangeType": "Addition",
+          "Description": "Added the `personAddresses` member to the **label** enumeration.",
+          "Target": "label"
+        },
+        {
+          "Id": "4df46906-26ae-4652-b529-823ef37f4784",
+          "ApiChange": "Member",
+          "ChangedApiName": "personAnniversaries",
+          "ChangeType": "Addition",
+          "Description": "Added the `personAnniversaries` member to the **label** enumeration.",
+          "Target": "label"
+        },
+        {
+          "Id": "4df46906-26ae-4652-b529-823ef37f4784",
+          "ApiChange": "Member",
+          "ChangedApiName": "personName",
+          "ChangeType": "Addition",
+          "Description": "Added the `personName` member to the **label** enumeration.",
+          "Target": "label"
+        },
+        {
+          "Id": "4df46906-26ae-4652-b529-823ef37f4784",
+          "ApiChange": "Member",
+          "ChangedApiName": "personNote",
+          "ChangeType": "Addition",
+          "Description": "Added the `personNote` member to the **label** enumeration.",
+          "Target": "label"
+        },
+        {
+          "Id": "4df46906-26ae-4652-b529-823ef37f4784",
+          "ApiChange": "Member",
+          "ChangedApiName": "personPhones",
+          "ChangeType": "Addition",
+          "Description": "Added the `personPhones` member to the **label** enumeration.",
+          "Target": "label"
+        },
+        {
+          "Id": "4df46906-26ae-4652-b529-823ef37f4784",
+          "ApiChange": "Member",
+          "ChangedApiName": "personCurrentPosition",
+          "ChangeType": "Addition",
+          "Description": "Added the `personCurrentPosition` member to the **label** enumeration.",
+          "Target": "label"
+        },
+        {
+          "Id": "4df46906-26ae-4652-b529-823ef37f4784",
+          "ApiChange": "Member",
+          "ChangedApiName": "personWebAccounts",
+          "ChangeType": "Addition",
+          "Description": "Added the `personWebAccounts` member to the **label** enumeration.",
+          "Target": "label"
+        },
+        {
+          "Id": "4df46906-26ae-4652-b529-823ef37f4784",
+          "ApiChange": "Member",
+          "ChangedApiName": "personWebSite",
+          "ChangeType": "Addition",
+          "Description": "Added the `personWebSite` member to the **label** enumeration.",
+          "Target": "label"
+        },
+        {
+          "Id": "4df46906-26ae-4652-b529-823ef37f4784",
+          "ApiChange": "Member",
+          "ChangedApiName": "personSkills",
+          "ChangeType": "Addition",
+          "Description": "Added the `personSkills` member to the **label** enumeration.",
+          "Target": "label"
+        },
+        {
+          "Id": "4df46906-26ae-4652-b529-823ef37f4784",
+          "ApiChange": "Member",
+          "ChangedApiName": "personProjects",
+          "ChangeType": "Addition",
+          "Description": "Added the `personProjects` member to the **label** enumeration.",
+          "Target": "label"
+        },
+        {
+          "Id": "4df46906-26ae-4652-b529-823ef37f4784",
+          "ApiChange": "Member",
+          "ChangedApiName": "personAccount",
+          "ChangeType": "Addition",
+          "Description": "Added the `personAccount` member to the **label** enumeration.",
+          "Target": "label"
+        },
+        {
+          "Id": "4df46906-26ae-4652-b529-823ef37f4784",
+          "ApiChange": "Member",
+          "ChangedApiName": "personAwards",
+          "ChangeType": "Addition",
+          "Description": "Added the `personAwards` member to the **label** enumeration.",
+          "Target": "label"
+        },
+        {
+          "Id": "4df46906-26ae-4652-b529-823ef37f4784",
+          "ApiChange": "Member",
+          "ChangedApiName": "personCertifications",
+          "ChangeType": "Addition",
+          "Description": "Added the `personCertifications` member to the **label** enumeration.",
+          "Target": "label"
+        },
+        {
+          "Id": "4df46906-26ae-4652-b529-823ef37f4784",
+          "ApiChange": "Member",
+          "ChangedApiName": "personAssistants",
+          "ChangeType": "Addition",
+          "Description": "Added the `personAssistants` member to the **label** enumeration.",
+          "Target": "label"
+        },
+        {
+          "Id": "4df46906-26ae-4652-b529-823ef37f4784",
+          "ApiChange": "Member",
+          "ChangedApiName": "personColleagues",
+          "ChangeType": "Addition",
+          "Description": "Added the `personColleagues` member to the **label** enumeration.",
+          "Target": "label"
+        },
+        {
+          "Id": "4df46906-26ae-4652-b529-823ef37f4784",
+          "ApiChange": "Member",
+          "ChangedApiName": "personManager",
+          "ChangeType": "Addition",
+          "Description": "Added the `personManager` member to the **label** enumeration.",
+          "Target": "label"
+        },
+        {
+          "Id": "4df46906-26ae-4652-b529-823ef37f4784",
+          "ApiChange": "Member",
+          "ChangedApiName": "personAlternateContacts",
+          "ChangeType": "Addition",
+          "Description": "Added the `personAlternateContacts` member to the **label** enumeration.",
+          "Target": "label"
+        },
+        {
+          "Id": "4df46906-26ae-4652-b529-823ef37f4784",
+          "ApiChange": "Member",
+          "ChangedApiName": "personEmergencyContacts",
+          "ChangeType": "Addition",
+          "Description": "Added the `personEmergencyContacts` member to the **label** enumeration.",
+          "Target": "label"
+        }
+      ],
+      "Id": "4df46906-26ae-4652-b529-823ef37f4784",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-12-05T11:31:39.5202536Z",
+      "WorkloadArea": "External data connections",
+      "SubArea": ""
+    }
+  ]
+}

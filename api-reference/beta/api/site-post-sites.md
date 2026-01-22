@@ -62,7 +62,7 @@ You can specify the following properties when you create a **site**.
 
 ## Response
 
-If successful, this method returns a `202 Created` response code and a [site](../resources/site.md) object in the response body. The response also contains a `Location` header, which contains the location of the [getOperationStatus](./site-getoperationstatus.md) that was created to handle the site creation operation. Check the status of the creation operation by making a GET request to this location.
+If successful, this method returns a `202 Accepted` response code and a [site](../resources/site.md) object in the response body. The response also contains a `Location` header, which contains the location of the [getOperationStatus](./site-getoperationstatus.md) that was created to handle the site creation operation. Check the status of the creation operation by making a GET request to this location.
 
 ## Examples
 

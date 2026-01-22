@@ -1,11 +1,11 @@
 ---
 title: "catalogContent resource type"
 description: "Represents content that can be deployed from the catalog."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: resourcePageType
-ms.date: 09/16/2024
+ms.date: 01/20/2026
 ---
 
 # catalogContent resource type

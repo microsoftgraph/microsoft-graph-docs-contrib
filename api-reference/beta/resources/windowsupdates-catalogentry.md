@@ -1,11 +1,11 @@
 ---
 title: "catalogEntry resource type"
 description: "An abstract type that represents metadata for a piece of content that you can approve for deployment."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: resourcePageType
-ms.date: 09/16/2024
+ms.date: 01/20/2026
 ---
 
 # catalogEntry resource type

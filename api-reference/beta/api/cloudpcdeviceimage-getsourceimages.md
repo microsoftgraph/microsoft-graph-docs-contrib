@@ -36,6 +36,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /deviceManagement/virtualEndpoint/deviceImages/getSourceImages
 ```
 
+## Optional query parameters
+
+This method supports the `$filter` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 ## Request headers
 
 |Name|Description|
@@ -48,11 +52,15 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and a collection of [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) objects in the response body.
 
 ## Examples
 
-### Request
+### Example 1: Get cloudPcSourceDeviceImage objects without any query parameters
+
+The following example shows how to get **cloudPcSourceDeviceImage** objects without any query parameters.
+
+#### Request
 
 The following example shows a request.
 
@@ -93,7 +101,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImag
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -117,7 +125,64 @@ Content-Type: application/json
       "resourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/images/exampleImageForDev",
       "displayName": "exampleImageForDev",
       "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
-      "subscriptionDisplayName": "Reserved for IT"
+      "subscriptionDisplayName": "Reserved for IT",
+      "category": "managedImage"
+    },
+    {
+      "id": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/galleries/exampleGallery/images/exampleImageForDev/versions/1.0.0",
+      "resourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/galleries/exampleGallery/images/exampleImageForDev/versions/1.0.0",
+      "displayName": "1.0.0",
+      "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
+      "subscriptionDisplayName": "Reserved for IT",
+      "category": "azureComputeGallery"
+    }
+  ]
+}
+```
+
+### Example 2: Get cloudPcSourceDeviceImage objects with a specific category
+
+The following example shows how to get **cloudPcSourceDeviceImage** objects with a specific category.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "cloudpcdeviceimage_getsourceimageswithcategory"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/deviceImages/getSourceImages?$filter=category eq 'managedImage'
+```
+
+#### Response
+
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.cloudPcSourceDeviceImage)"
+}
+-->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.cloudPcSourceDeviceImage)",
+  "value": [
+    {
+      "id": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/images/exampleImageForDev",
+      "resourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/images/exampleImageForDev",
+      "displayName": "exampleImageForDev",
+      "subscriptionId": "0ac520ee-14c0-480f-b6c9-0a90c585ffff",
+      "subscriptionDisplayName": "Reserved for IT",
+      "category": "managedImage"
     }
   ]
 }

@@ -38,6 +38,7 @@ Inherits from [entity](../resources/entity.md).
 |id|String|Unique identifier to represent the sensor. Inherited from [entity](../resources/entity.md).|
 |openHealthIssuesCount|Int64|This field displays the count of health issues related to this sensor.|
 |sensorType|[microsoft.graph.security.sensorType](#sensortype-values)|The type of the sensor. The possible values are: `adConnectIntegrated`, `adcsIntegrated`, `adfsIntegrated`, `domainControllerIntegrated`, `domainControllerStandalone`, `unknownFutureValue`.|
+|serviceStatus| microsoft.graph.security.serviceStatus | The service status. The possible values are: `stopped`, `starting`, `running`, `disabled`, `onboarding`, `unknown`, `unknownFutureValue`. |
 |settings|[microsoft.graph.security.sensorSettings](../resources/security-sensorsettings.md)|Sensor settings information.|
 |version|String|The version of the sensor.|
 
@@ -104,6 +105,7 @@ The following JSON representation shows the resource type.
   "openHealthIssuesCount": "Int64",
   "sensorType": "String",
   "settings": {"@odata.type": "microsoft.graph.security.sensorSettings"},
-  "version": "String"
+  "version": "String",
+  "serviceStatus": "String"
 }
 ```

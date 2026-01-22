@@ -42,7 +42,7 @@ For the list of supported methods, see [place](./place.md).
 |nickname |String |A short, friendly name for the **room**, often used for easier identification or display in UI. |
 |parentId |String |The ID of a parent [floor](./floor.md) or [section](./section.md). Inherited from [place](../resources/place.md). |
 |phone |String |The phone number of the **room**. Inherited from [place](../resources/place.md).|
-|placeId |String |An alternate immutable unique identifier of the **room**. Read-only.|
+|placeId |String |An alternative immutable unique identifier of the **room**. Read-only.|
 |tags |String collection |Custom tags that are associated with the **room** for categorization or filtering. Inherited from [place](../resources/place.md).|
 |teamsEnabledState |placeFeatureEnablement |A state that indicates whether the room is enabled for Microsoft Teams. The possible values are: `unknown`, `enabled`, `disabled`, `unknownFutureValue`.|
 |videoDeviceName |String |The name of the video device that is available in the **room**. |
@@ -56,7 +56,9 @@ For the list of supported methods, see [place](./place.md).
 | reserved | The room is available only on a first-come, first-served basis. It can't be reserved.|
 
 ## Relationships
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|children|[place](../resources/place.md) collection|A collection of children places that is only used in the [Upsert places](../api/place-patch-places.md) API. A room doesn't have children. Inherited from [place](../resources/place.md). |
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -89,7 +91,7 @@ The following JSON representation shows the resource type.
   "nickname": "String",
   "parentId": "String",
   "phone": "String",
-  "placeId": "String (alternate identifier)",
+  "placeId": "String (alternative identifier)",
   "tags": ["String"],
   "teamsEnabledState": "String",
   "videoDeviceName": "String"

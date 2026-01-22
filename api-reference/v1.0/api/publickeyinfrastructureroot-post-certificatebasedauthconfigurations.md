@@ -69,7 +69,7 @@ The following example shows a request.
 -->
 
 ```http
-POST https://graph.microsoft.com/beta/directory/publicKeyInfrastructure/certificateBasedAuthConfigurations
+POST https://graph.microsoft.com/v1.0/directory/publicKeyInfrastructure/certificateBasedAuthConfigurations
 Content-Type: application/json
 
 {
