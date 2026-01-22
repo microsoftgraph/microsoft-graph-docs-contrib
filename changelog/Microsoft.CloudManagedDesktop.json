@@ -1,5 +1,103 @@
 {
   "changelog": [
+        {
+      "ChangeList": [
+        {
+          "Id": "545056ad-2214-4951-992a-1c30faaf80dd",
+          "ApiChange": "Method",
+          "ChangedApiName": "configureAgent",
+          "ChangeType": "Addition",
+          "Description": "Added the [configureAgent](https://learn.microsoft.com/en-us/graph/api/cloudpcexternalpartner-configureagent?view=graph-rest-beta) method to the [cloudPcExternalPartner](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcExternalPartner?view=graph-rest-beta) resource.",
+          "Target": "cloudPcExternalPartner"
+        },
+        {
+          "Id": "545056ad-2214-4951-992a-1c30faaf80dd",
+          "ApiChange": "Method",
+          "ChangedApiName": "deployAgent",
+          "ChangeType": "Addition",
+          "Description": "Added the [deployAgent](https://learn.microsoft.com/en-us/graph/api/cloudpcexternalpartner-deployagent?view=graph-rest-beta) method to the [cloudPcExternalPartner](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcExternalPartner?view=graph-rest-beta) resource.",
+          "Target": "cloudPcExternalPartner"
+        },
+        {
+          "Id": "545056ad-2214-4951-992a-1c30faaf80dd",
+          "ApiChange": "Method",
+          "ChangedApiName": "retrieveDeployAgentActionResults",
+          "ChangeType": "Addition",
+          "Description": "Added the [retrieveDeployAgentActionResults](https://learn.microsoft.com/en-us/graph/api/cloudpcexternalpartner-retrievedeployagentactionresults?view=graph-rest-beta) method to the [cloudPcExternalPartner](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcExternalPartner?view=graph-rest-beta) resource.",
+          "Target": "cloudPcExternalPartner"
+        },
+        {
+          "Id": "545056ad-2214-4951-992a-1c30faaf80dd",
+          "ApiChange": "Method",
+          "ChangedApiName": "retrieveActionReports",
+          "ChangeType": "Addition",
+          "Description": "Added the [retrieveActionReports](https://learn.microsoft.com/en-us/graph/api/cloudpcexternalpartner-retrieveactionreports?view=graph-rest-beta) method to the [cloudPcExternalPartner](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcExternalPartner?view=graph-rest-beta) resource.",
+          "Target": "cloudPcExternalPartner"
+        },
+        {
+          "Id": "545056ad-2214-4951-992a-1c30faaf80dd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcExternalPartnerAgentSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcExternalPartnerAgentSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcExternalPartnerAgentSetting?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcExternalPartnerAgentSetting"
+        },
+        {
+          "Id": "545056ad-2214-4951-992a-1c30faaf80dd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcExternalPartnerActionReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcExternalPartnerActionReport](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcExternalPartnerActionReport?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcExternalPartnerActionReport"
+        },
+        {
+          "Id": "545056ad-2214-4951-992a-1c30faaf80dd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcExternalPartnerActionResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcExternalPartnerActionResult](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcExternalPartnerActionResult?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcExternalPartnerActionResult"
+        },
+        {
+          "Id": "545056ad-2214-4951-992a-1c30faaf80dd",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "cloudPcExternalPartnerActionStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcExternalPartnerActionStatus** enumeration type.",
+          "Target": "cloudPcExternalPartnerActionStatus"
+        },
+        {
+          "Id": "545056ad-2214-4951-992a-1c30faaf80dd",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "cloudPcExternalPartnerActionErrorCode",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcExternalPartnerActionErrorCode** enumeration type.",
+          "Target": "cloudPcExternalPartnerActionErrorCode"
+        },
+        {
+          "Id": "545056ad-2214-4951-992a-1c30faaf80dd",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "cloudPcExternalPartnerActionType",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcExternalPartnerActionType** enumeration type.",
+          "Target": "cloudPcExternalPartnerActionType"
+        },
+        {
+          "Id": "545056ad-2214-4951-992a-1c30faaf80dd",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "cloudPcExternalPartnerAuthenticatedMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcExternalPartnerAuthenticatedMethod** enumeration type.",
+          "Target": "cloudPcExternalPartnerAuthenticatedMethod"
+        }
+      ],
+      "Id": "545056ad-2214-4951-992a-1c30faaf80dd",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-01-22T14:38:10.7650846Z",
+      "WorkloadArea": "Devices and app management",
+      "SubArea": "Cloud PC"
+    },
     {
       "ChangeList": [
         {
