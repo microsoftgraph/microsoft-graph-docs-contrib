@@ -535,8 +535,6 @@ The following example shows a request that uses `$select` to specify the propert
 GET https://graph.microsoft.com/beta/applications?$select=id,appId,displayName,signInAudience,signInAudienceRestrictions
 ```
 
----
-
 #### Response
 
 The following example shows the response.
