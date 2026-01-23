@@ -14,12 +14,11 @@ ms.date: 01/19/2026
 
 The unified tenant configuration management (UTCM) APIs allow administrators to control and manage configuration settings across a single workload or multiple workloads within the organization.
 
+The tenant configuration APIs need admins to first add UTCM service principal to their tenant and then grant permissions to it. This is a pre-requisite step. Read more here: [Set up authentication for unified tenant configuration management APIs](/graph/utcm-authentication-setup)
+
 ## Authorization
 
 To call the UTCM APIs in Microsoft Graph, your app needs to acquire an access token. For details about access tokens, see [Get access tokens to call Microsoft Graph](/graph/auth/). Your app also needs the appropriate permissions. For more information, see [Microsoft Graph permissions reference](/graph/permissions-reference).
-
-> [!IMPORTANT] 
-> The UTCM APIs work only with built-in Azure roles. Administrators must be assigned one of the supported roles (for example, Exchange administrator, Global reader, and Compliance administrator) to access the APIs.
 
 ## Tenant monitoring APIs
 
@@ -47,10 +46,10 @@ The following table lists common use cases for the UTCM APIs.
 
 The following API limits apply to the [configurationMonitor](../resources/configurationmonitor.md) API:
 
-- You can create a maximum of 10 **configurationMonitor** objects per tenant.
-- A maximum of 500 configuration resources per **configurationMonitor** can be included in a **configurationBaseline**. For example, if an administrator wants to monitor 300 transport rules and 200 conditional access policies, they can include them in the baseline during monitor creation.
-- A **configurationMonitor** can run at one of the following frequencies: six hours, 12 hours, or 24 hours.
-- When an administrator updates the baseline for a monitor, all associated monitoring results and drifts are automatically deleted.
+- You can create up to 30 **configurationMonitor** objects per tenant.
+- Each configurationMonitor runs at a **fixed interval of six hours**. A monitor cannot be configured to run at any other frequency.
+- An administrator can monitor up to **800 configuration resources per day per tenant**, across all monitors. Administrators decide how to use this quota—through a single monitor or multiple monitors. Example: If an admin includes **20 transport rules** and **30 conditional access policies** in a monitor's baseline, that monitor tracks **50 resources per cycle**. Since the monitor runs every six hours (**4 cycles/day**), this results in **200 monitored resources per day**. Additional monitors can be created until the daily **800‑resource** limit is reached.
+- When an administrator updates the baseline of an existing monitor, **all previously generated monitoring results and detected drifts for that monitor** are automatically deleted.
 
 ### Drifts
 
@@ -63,9 +62,8 @@ The following API limits apply to the [configurationDrift](../resources/configur
 
 The following API limits apply to the [configurationSnapshotJob](../resources/configurationsnapshotjob.md) API:
 
-- You can take a maximum of five snapshots per day per tenant.
-- You can take a maximum of 20 snapshots per month per tenant.
-- You can extract a maximum of 1,000 resources per snapshot.
+- You can extract a maximum of 20000 resources per tenant per month. This is a cumulative limit across all snapshots.
+- There is **no maximum number of snapshots** you can create per day or per month. You may generate as many snapshots as needed, as long as the **total number of resources extracted** stays within the **20,000-resource monthly quota** for the tenant.
 - A maximum of 12 snapshot jobs are visible to the administrator. If the administrator wants to create more snapshot jobs, they have to delete one or more of the existing jobs.
 - A snapshot is retained for a maximum of seven days, after which it is automatically deleted.
 
@@ -79,3 +77,5 @@ Use the Microsoft Graph UTCM APIs to control and manage configuration settings a
 ## Related content
 
 [Overview of the unified tenant configuration management APIs in Microsoft Graph (preview)](/graph/unified-tenant-configuration-management-concept-overview)
+
+[Set up authentication for unified tenant configuration management APIs](/graph/utcm-authentication-setup)

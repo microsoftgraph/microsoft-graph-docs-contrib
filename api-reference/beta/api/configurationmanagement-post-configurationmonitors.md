@@ -111,7 +111,7 @@ Content-Type: application/json
         "properties": {
           "Name": "Chris",
           "DisplayName": "Chris",
-          "ExternalEmailAddress": "SMTP:chris@ach.com",
+          "ExternalEmailAddress": "SMTP:chris@fabrikam.com",
           "Alias": "Chrisa",
           "Ensure": "Present"
         }
