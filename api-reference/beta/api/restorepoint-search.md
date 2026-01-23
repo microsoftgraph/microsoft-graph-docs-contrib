@@ -217,12 +217,13 @@ Content-Type: application/json
 
 {
   "artifactQuery": {
-    "queryExpression": "(Sender -eq 'abc@contoso.com') -and (Subject -like '*Check email*' -or Subject -like ' Important') -and (HasAttachment -eq 'true') -and (PitrDumpsterActionTriggeredTime -gt '{2024-09-21T08:20:00.0000000Z}')",
+    "queryExpression": "(Sender -like 'abc@contoso.com') -and (Subject -like '*Check email*' -or Subject -like ' Important') -and (HasAttachment -eq 'true')",
     "artifactType": "message"
   },
   "protectionUnitIds": ["23014d8c-71fe-4d00-a01a-31850bc5b42a"],
   "protectionTimePeriod": {
-    "startDateTime": "2021-01-01T00:00:00Z"
+    "startDateTime": "2021-01-01T00:00:00Z",
+    "endDateTime": "2021-01-30T00:00:00Z"
   },
   "restorePointPreference": "oldest"
 }
@@ -349,6 +350,6 @@ Search for contacts by name pattern.
 Search for emails combining multiple criteria including message type, subject, sender, and attachments.
 
 ```
-(MessageKind -eq 'Email') -and (Subject -like 'Invoice*') -and (Sender -like '*@vendor.com') -and (HasAttachment -eq 'true')
+(MessageKind -eq 'Email') -and (Subject -like 'Invoice*') -and (Sender -like 'vendor*') -and (HasAttachment -eq 'true')
 ```
 
