@@ -19,8 +19,8 @@ Represents the details of the Cloud PC external partner action results. Such as 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|activityId|String|The activity id associated with the external partner action. Read-only.|
-|cloudPcId|String|The Cloud PC id associated with the external partner action. Read-only.|
+|activityId|String|The activity ID associated with the external partner action. Read-only.|
+|cloudPcId|String|The Cloud PC ID associated with the external partner action. Read-only.|
 |errorCode|[cloudPcExternalPartnerActionErrorCode](#cloudpcexternalpartneractionerrorcode-values)|The error code of action. Read-only. The possible values are: `none`, `executeActionFailed`, `executeActionTimeout`, `deviceNotFound`, `deviceNotAvailable`, `checkDiskSpaceFailed`, `checkNetworkConnectionFailed`, `agentNotFound`, `invalidAgentFormat`, `invalidAgentChecksum`, `unknownFutureValue`.|
 |errorMessage|String|The error message of the action. Read-only.|
 |lastModifiedDateTime|DateTimeOffset|The last update time of the action. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only.|
@@ -31,10 +31,10 @@ Represents the details of the Cloud PC external partner action results. Such as 
 
 |Member|Description|
 |:---|:---|
-|none|Default. Indicates that the action executes succeeded.|
-|executeActionFailed|Indicates that the action executes failed.|
-|executeActionTimeout|Indicates that the action executes timeout.|
-|deviceNotFound|Indicates that the Cloud PC device doesn't exist. For example, deleted or never exist|
+|none|Default. Indicates that the action execution succeeded.|
+|executeActionFailed|Indicates that the action execution failed.|
+|executeActionTimeout|Indicates that the action execution timeout.|
+|deviceNotFound|Indicates that the Cloud PC device doesn't exist. For example, deleted or never existed|
 |deviceNotAvailable|Indicates that the Cloud PC device isn't available. For example, in provisioning.|
 |checkDiskSpaceFailed|Indicates that the check disk space failed.|
 |checkNetworkConnectionFailed|Indicates that the check network connection failed.|
@@ -48,11 +48,11 @@ Represents the details of the Cloud PC external partner action results. Such as 
 |Member|Description|
 |:---|:---|
 |created|Default. Indicates that the Cloud PC external partner action is created.|
-|pending|Indicates that the Cloud PC external partner action is in pending.|
+|pending|Indicates that the Cloud PC external partner action is pending.|
 |canceled|Indicates that the Cloud PC external partner action is canceled.|
-|running|Indicates that the Cloud PC external partner action is in running.|
+|running|Indicates that the Cloud PC external partner action is running.|
 |succeeded|Indicates that the Cloud PC external partner action is processed successfully.|
-|failed|Indicates that the Cloud PC external partner action is failed to process.|
+|failed|Indicates that the Cloud PC external partner action failed to process.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships

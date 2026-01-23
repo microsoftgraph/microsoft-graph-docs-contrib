@@ -102,7 +102,7 @@ Content-Type: application/json
             "installParameters": [
                 "/quiet",
                 "/norestart",
-                "TOKENID=\\\"e69c1577-d465-4e57-af33-0ddea43feeb1\\\""
+                "TOKENID=e69c1577-d465-4e57-af33-0ddea43feeb1"
             ],
             "autoDeploymentEnabled": true
         }
@@ -119,16 +119,7 @@ Content-Type: application/json
         "agentName": null,
         "activityId": "9adc7d86-6411-407e-b936-abfa0470dccf",
         "activityMessage": null,
-        "agentSetting": {
-            "agentUrl": "https://rmmExample.microsoft.com/agent/rmmExampleAgent.msi",
-            "agentSha256": "EC6AF1EA0367D16DDE6639A89A080A524CEBC4D4BEDFE00ED0CAC4B865A918D8",
-            "installParameters": [
-                "/quiet",
-                "/norestart",
-                "TOKENID=\\\"e69c1577-d465-4e57-af33-0ddea43feeb1\\\""
-            ],
-            "autoDeploymentEnabled": true
-        }
+        "agentSetting": null
     }
   ]
 }

@@ -1,6 +1,6 @@
 ---
 title: "cloudPcExternalPartner: configureAgent"
-description: "Config the agent setting of the cloudPcExternalPartner."
+description: "Configure the agent setting of the cloudPcExternalPartner."
 author: "XunZhangSZ"
 ms.date: 01/21/2026
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Config the [cloudPcExternalPartnerAgentSetting](../resources/cloudpcexternalpartneragentsetting.md) of the [cloudPcExternalPartner](../resources/cloudpcexternalpartner.md) object. This setting is used for RMM agent installation. RMM partner need to contact Microsoft Team to onboard and allow list the agent URL prefix to the allow list before using this API. If `autoDeploymentEnabled` is enabled, the new provisioned Cloud PC is triggered agent deployment automatically. Currently, only support Windows 365 Business Cloud PC.
+Config the [cloudPcExternalPartnerAgentSetting](../resources/cloudpcexternalpartneragentsetting.md) of the [cloudPcExternalPartner](../resources/cloudpcexternalpartner.md) object. This setting is used for RMM partner agent installation. RMM partner need to contact Microsoft Team to onboard and allow list the agent URL prefix to the allow list before using this API. If `autoDeploymentEnabled` is enabled, the new provisioned Cloud PC is triggered agent deployment automatically. Currently supports only Windows 365 Business Cloud PC.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -82,7 +82,7 @@ Content-Type: application/json
       "installParameters": [
           "/quiet",
           "/norestart",
-          "TOKENID="e69c1577-d465-4e57-af33-0ddea43feeb1""
+          "TOKENID=e69c1577-d465-4e57-af33-0ddea43feeb1"
       ],
       "autoDeploymentEnabled": true
   }

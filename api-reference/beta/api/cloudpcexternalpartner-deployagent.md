@@ -1,6 +1,6 @@
 ---
 title: "cloudPcExternalPartner: deployAgent"
-description: "Trigger agent deployment for a set of Windows 365 Cloud PCs which have provisioned."
+description: "Trigger agent deployment for a set of Windows 365 Cloud PCs that provisioned."
 author: "XunZhangSZ"
 ms.date: 01/21/2026
 ms.localizationpriority: medium

@@ -29,11 +29,11 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 - Added [retrieveActionReports](/graph/api/cloudpcexternalpartner-retrieveactionreports?view=graph-rest-beta&preserve-view=true) as a new action for [cloudpcexternalpartner](/graph/api/resources/cloudpcexternalpartner?view=graph-rest-beta&preserve-view=true).
 
-- Added [cloudPcExternalPartnerAgentSetting](/graph/api/resources/cloudPcExternalPartnerAgentSetting?view=graph-rest-beta&preserve-view=true) as a new complex type for [cloudpcexternalpartner](/graph/api/resources/cloudpcexternalpartner?view=graph-rest-beta&preserve-view=true).
+- Added [cloudPcExternalPartnerAgentSetting](/graph/api/resources/cloudpcexternalpartneragentsetting?view=graph-rest-beta&preserve-view=true) as a new complex type for [cloudpcexternalpartner](/graph/api/resources/cloudpcexternalpartner?view=graph-rest-beta&preserve-view=true).
 
-- Added [cloudPcExternalPartnerActionResult](/graph/api/resources/cloudPcExternalPartnerActionResult?view=graph-rest-beta&preserve-view=true) as a new complex type for [cloudpcexternalpartner](/graph/api/resources/cloudpcexternalpartner?view=graph-rest-beta&preserve-view=true).
+- Added [cloudPcExternalPartnerActionResult](/graph/api/resources/cloudpcexternalpartneractionresult?view=graph-rest-beta&preserve-view=true) as a new complex type for [cloudpcexternalpartner](/graph/api/resources/cloudpcexternalpartner?view=graph-rest-beta&preserve-view=true).
 
-- Added [cloudPcExternalPartnerActionReport](/graph/api/resources/cloudPcExternalPartnerActionReport?view=graph-rest-beta&preserve-view=true) as a new complex type for [cloudpcexternalpartner](/graph/api/resources/cloudpcexternalpartner?view=graph-rest-beta&preserve-view=true).
+- Added [cloudPcExternalPartnerActionReport](/graph/api/resources/cloudpcexternalpartneractionreport?view=graph-rest-beta&preserve-view=true) as a new complex type for [cloudpcexternalpartner](/graph/api/resources/cloudpcexternalpartner?view=graph-rest-beta&preserve-view=true).
 
 ### Reports | Microsoft 365 usage reports
 
