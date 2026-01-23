@@ -166,8 +166,8 @@
       "Id": "38093077-4be7-4687-b812-1de93c82854e",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2026-01-20T05:11:09.4766745Z",
-      "WorkloadArea": "Tenant administration",
+      "CreatedDateTime": "2026-01-23T05:11:09.4766745Z",
+      "WorkloadArea": "tenant-administration",
       "SubArea": "Configuration management"
     }
   ]
