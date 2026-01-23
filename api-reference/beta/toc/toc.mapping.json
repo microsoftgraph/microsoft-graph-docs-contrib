@@ -1836,6 +1836,7 @@
               "name": "Identity protection",
               "overview": "../../resources/identityprotection-overview.md",
               "resources": [
+                "agentRiskDetection",
                 "riskDetection",
                 "riskyAgent",
                 "riskyUser",
