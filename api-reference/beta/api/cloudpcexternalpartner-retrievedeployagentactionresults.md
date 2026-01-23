@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the status of a specific deployment action on a specific Cloud PC device. If both activityId and activityId are empty, the paging results will be returned, and the pagination size is 100.
+Retrieve the status of a specific deployment action on a specific Cloud PC device. If both activityId and activityId are empty, the paging results are returned, and the pagination size is 100.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -45,7 +45,7 @@ In the request URL, provide the following query parameters with values.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |activityId|String|The activity id of agent deployment.|
-|cloudPcId|String|The cloud pc id that belongs the given deployment ativity.|
+|cloudPcId|String|The Cloud PC id that belongs the given deployment activity.|
 
 
 ## Request headers

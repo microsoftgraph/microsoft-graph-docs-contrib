@@ -14,14 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the agent settings of external partner. This setting will be use to deploy agent action.
+Represents the agent settings of external partner. This setting is used to deploy agent action.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |agentSha256|String|The hash value of agent file by sha256 algorithm.|
-|agentUrl|String|The download link url of the agent, when admin sets this url, then partner can call deploy agent API to deploy this agent to targeted cloud PCs. The format is like this: `https://www.external-partner.com/resources/agents/exampleAgentFile.exe`|
-|autoDeploymentEnabled|Boolean|Indicates whether partner agent auto deployment is enabled. When true, then the partner agent will be deployed after the cloud PC is provisioned. When false, auto deployment is not performed. Default value is `false`|
+|agentUrl|String|The download link url of the agent, when admin sets this url, then partner can call deploy agent API to deploy this agent to targeted Cloud PCs. The format is like this: `https://www.external-partner.com/resources/agents/exampleAgentFile.exe`|
+|autoDeploymentEnabled|Boolean|Indicates whether partner agent auto deployment is enabled. When true, then the partner agent will be deployed after the Cloud PC is provisioned. When false, auto deployment isn't performed. Default value is `false`|
 |installParameters|String collection|The install command parameters when run the agent install command. The format is like this: `["/p paramValue", "/quiet"]`|
 
 ## Relationships

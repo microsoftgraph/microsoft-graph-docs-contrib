@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Config the [cloudPcExternalPartnerAgentSetting](../resources/cloudpcexternalpartneragentsetting.md) of the [cloudPcExternalPartner](../resources/cloudpcexternalpartner.md) object. This setting will be used for RMM agent installation. RMM partner need to contact Microsoft Team to onboard and whitelist the agent URL prefix before using this API. If `autoDeploymentEnabled` is enabled, the new provisioned Cloud PC will be triggered agent deployment automatically. Currenty, only support Windows 365 Business Cloud PC.
+Config the [cloudPcExternalPartnerAgentSetting](../resources/cloudpcexternalpartneragentsetting.md) of the [cloudPcExternalPartner](../resources/cloudpcexternalpartner.md) object. This setting is used for RMM agent installation. RMM partner need to contact Microsoft Team to onboard and allow list the agent URL prefix to the allow list before using this API. If `autoDeploymentEnabled` is enabled, the new provisioned Cloud PC is triggered agent deployment automatically. Currently, only support Windows 365 Business Cloud PC.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

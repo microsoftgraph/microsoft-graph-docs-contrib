@@ -20,7 +20,7 @@ Represents the details of the Cloud PC external partner action results. Such as 
 |Property|Type|Description|
 |:---|:---|:---|
 |activityId|String|The activity id associated with the external partner action. Read-only.|
-|cloudPcId|String|The cloud PC id associated with the external partner action. Read-only.|
+|cloudPcId|String|The Cloud PC id associated with the external partner action. Read-only.|
 |errorCode|[cloudPcExternalPartnerActionErrorCode](#cloudpcexternalpartneractionerrorcode-values)|The error code of action. Read-only. The possible values are: `none`, `executeActionFailed`, `executeActionTimeout`, `deviceNotFound`, `deviceNotAvailable`, `checkDiskSpaceFailed`, `checkNetworkConnectionFailed`, `agentNotFound`, `invalidAgentFormat`, `invalidAgentChecksum`, `unknownFutureValue`.|
 |errorMessage|String|The error message of the action. Read-only.|
 |lastModifiedDateTime|DateTimeOffset|The last update time of the action. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only.|
@@ -31,29 +31,29 @@ Represents the details of the Cloud PC external partner action results. Such as 
 
 |Member|Description|
 |:---|:---|
-|none|Default. Indicates that the action execute succeeded.|
-|executeActionFailed|Indicates that the action execute failed.|
-|executeActionTimeout|Indicates that the action execute timeout.|
-|deviceNotFound|Indicates that the Cloud PC device does not exist. For example, deleted or never exist|
-|deviceNotAvailable|Indicates that the Cloud PC device is not available. For example, in provisioning.|
+|none|Default. Indicates that the action executes succeeded.|
+|executeActionFailed|Indicates that the action executes failed.|
+|executeActionTimeout|Indicates that the action executes timeout.|
+|deviceNotFound|Indicates that the Cloud PC device doesn't exist. For example, deleted or never exist|
+|deviceNotAvailable|Indicates that the Cloud PC device isn't available. For example, in provisioning.|
 |checkDiskSpaceFailed|Indicates that the check disk space failed.|
 |checkNetworkConnectionFailed|Indicates that the check network connection failed.|
-|agentNotFound|Indicates that the agent does not exist.|
-|invalidAgentFormat|Indicates that the agent format is invalid. Only exe and msi file are valid. For example, vscode.exe, vscode.msi.|
+|agentNotFound|Indicates that the agent doesn't exist.|
+|invalidAgentFormat|Indicates that the agent format is invalid. Only exe and msi files are valid. For example, vscode.exe, vscode.msi.|
 |invalidAgentChecksum|Indicates that the agent checksum is invalid.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ### cloudPcExternalPartnerActionStatus values
 
 |Member|Description|
 |:---|:---|
-|created|Default. Indicates that the Cloud PC external partner action has been created.|
+|created|Default. Indicates that the Cloud PC external partner action is created.|
 |pending|Indicates that the Cloud PC external partner action is in pending.|
-|canceled|Indicates that the Cloud PC external partner action has been cancelled.|
-|running| Indicates that the Cloud PC external partner action is in running.|
-|succeeded| Indicates that the Cloud PC external partner action has been processed successfully.|
-|failed| Indicates that the Cloud PC external partner action has failed to process.|
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use.|
+|canceled|Indicates that the Cloud PC external partner action is canceled.|
+|running|Indicates that the Cloud PC external partner action is in running.|
+|succeeded|Indicates that the Cloud PC external partner action is processed successfully.|
+|failed|Indicates that the Cloud PC external partner action is failed to process.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 None.
