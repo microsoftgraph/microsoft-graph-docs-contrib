@@ -1,7 +1,7 @@
 ---
 title: "Get internalDomainFederation"
 description: "Read the properties and relationships of an internalDomainFederation object."
-author: "rahul-nagraj"
+author: "vimrang"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType

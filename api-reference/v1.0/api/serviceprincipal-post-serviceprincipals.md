@@ -1,7 +1,7 @@
 ---
 title: "Create serviceprincipal"
 description: "Create a new serviceprincipal object."
-author: "sureshja"
+author: "Jackson-Woods"
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-applications"

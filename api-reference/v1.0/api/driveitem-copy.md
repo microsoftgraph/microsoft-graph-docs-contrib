@@ -1,7 +1,7 @@
 ---
 author: spgraph-docs-team
 description: "Asynchronously create a copy of a driveItem (including any children) under a new parent item or with a new name."
-ms.date: 05/14/2025
+ms.date: 09/23/2025
 title: "driveItem: copy"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
@@ -12,21 +12,22 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 
-Create a copy of a [driveItem][item-resource] asynchronously including child items. You can specify a new parent folder, or provide a new name. Once the request is accepted, the operation is queued and processed asynchronously. Use the [monitor URL](/graph/long-running-actions-overview) to track progress until the operation completes.
+Create a copy of a [driveItem][item-resource] asynchronously, including child items. You can specify a new parent folder or provide a new name. Once the request is accepted, the operation is queued and processed asynchronously. Use the [monitor URL](/graph/long-running-actions-overview) to track progress until the operation completes.
+
+The copy operation is restricted to 30,000 driveItems. For more information, see [SharePoint limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#moving-and-copying-across-sites).
 
 > [!IMPORTANT]
-> Metadata is not retained when a driveItem is copied, including system metadata and custom metadata. An entirely new driveItem is created in the target location instead.
->
-> Permissions are not retained when a driveItem is copied. The copied driveItem inherits the permissions of the destination folder.
->
-> File versions are only retained when the `includeAllVersionHistory` parameter is explicitly set to `true`. Otherwise, only the latest version is copied.
->
-> The copy operation is restricted to 30,000 driveItems. For more information, see [SharePoint limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#moving-and-copying-across-sites).
-
+> * Metadata isn't retained when a **driveItem** is copied, including system metadata and custom metadata. An entirely new **driveItem** is created in the target location instead.
+> * File versions are only retained when the **includeAllVersionHistory** parameter is explicitly set to `true`. Otherwise, only the latest version is copied.
+> * Cross-geo copy isn't supported when using app-only authentication.
+> * A known issue occurs when the **includeAllVersionHistory** request parameter is ignored if the **name** request parameter is also passed. To avoid this issue, perform the copy operation without the **name** parameter first, then rename the target item when the copy completes.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
+
+> [!NOTE]
+> Permissions are not retained when a driveItem is copied. The copied driveItem inherits the permissions of the destination folder
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
@@ -67,19 +68,17 @@ In the request body, provide a JSON object with the following parameters.
 
 | Name            | Value                                          | Description                                                                                                 |
 |:----------------|:-----------------------------------------------|:------------------------------------------------------------------------------------------------------------|
-| parentReference | [ItemReference](../resources/itemreference.md) | Optional. Reference to the parent item the copy is created in.                                         |
-| name            | string                                         | Optional. The new name for the copy. If this information isn't provided, the same name is used as the original.    |
 | childrenOnly    | Boolean                                        | Optional. If set to `true`, the children of the **driveItem** are copied but not the **driveItem** itself. The default value is `false`. Valid _only_ on folder items. |
-| includeAllVersionHistory    | Boolean                            | Optional. If set to `true`, source files version history (major versions and minor versions, if any) should be copied to the destination, within the target version setting limit. If `false`, only the latest major version is copied to the destination. The default value is `false`.   |
+| includeAllVersionHistory    | Boolean                            | Optional. If set to `true`, the source file's version history (major versions and minor versions, if any) should be copied to the destination, within the target version setting limit. If `false`, only the latest major version is copied to the destination. The default value is `false`. |
+| name            | String                                         | Optional. The new name for the copy. If this information isn't provided, the same name is used as the original.    |
+| parentReference | [itemReference](../resources/itemreference.md) | Optional. Reference to the parent item the copy is created in.                                         |
 
->[!NOTE]
->The `parentReference` parameter should include the `driveId` and `id` parameters for the target folder.
- 
-
+> [!NOTE]
+> The **parentReference** parameter should include the **driveId** and **id** parameters for the target folder.
 
 ## Response
 
-The response returns details about how to [monitor the progress](/graph/long-running-actions-overview) of the copy, upon accepting the request. The response indicates whether the copy operation was accepted or rejected - for example, if the destination filename is already in use.
+The response returns details about how to [monitor the progress](/graph/long-running-actions-overview) of the copy, upon accepting the request. The response indicates whether the copy operation was accepted or rejected; for example, if the destination filename is already in use.
 
 ## Examples
 

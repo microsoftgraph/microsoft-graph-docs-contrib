@@ -1,11 +1,11 @@
 ---
 title: "Delete updatePolicy"
 description: "Delete an updatePolicy object."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 08/31/2024
+ms.date: 10/22/2025
 ---
 
 # Delete updatePolicy
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /admin/windows/updates/updatePolicies/{updatePolicyId}
 ```
 
@@ -57,7 +57,7 @@ The following example shows a request.
   "name": "delete_updatepolicy"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/a7aa99c1-34a2-850c-5223-7816fde70713
 ```
 
@@ -98,6 +98,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

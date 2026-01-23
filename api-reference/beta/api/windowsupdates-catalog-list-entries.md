@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /admin/windows/updates/catalog/entries
 ```
 ## Optional query parameters
@@ -65,7 +65,7 @@ The following example shows a request.
   "name": "list_catalogentry"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries
 ```
 
@@ -109,7 +109,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.windowsUpdates.catalogEntry)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -118,10 +118,10 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
       "id": "c1dec151-c151-c1de-51c1-dec151c1dec1",
-      "displayName": "String",
-      "releaseDateTime": "String (timestamp)",
-      "deployableUntilDateTime": "String (timestamp)",
-      "version": "String"
+      "displayName": "Test security updates",
+      "releaseDateTime": "2023-07-11T00:00:00Z",
+      "deployableUntilDateTime": "2023-07-11T00:00:00Z",
+      "version": "v2"
     },
     {
       "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",

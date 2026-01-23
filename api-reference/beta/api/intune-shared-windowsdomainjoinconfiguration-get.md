@@ -24,11 +24,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)||
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp; &nbsp; **Device configuration** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 | &nbsp; &nbsp; **Enrollment** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application||
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp; &nbsp; **Device configuration** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 | &nbsp; &nbsp; **Enrollment** | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 
@@ -41,7 +41,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
@@ -52,7 +52,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/deploymentProfile/microsoft.graph.activeDirectoryWindowsAutopilotDeploymentProfile/domainJoinConfiguration
 ```
 
@@ -81,7 +81,7 @@ If successful, this method returns a `200 OK` response code and [windowsDomainJo
 
 Here is an example of the request.
 
-``` http
+```http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
@@ -89,7 +89,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. Properties returned from an actual call depend on the context.
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 560

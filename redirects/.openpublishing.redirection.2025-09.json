@@ -1,0 +1,19 @@
+{
+  "redirections": [
+    {
+      "source_path_from_root": "/api-reference/beta/api/educationassignment-post-gradingscheme.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/educationassignment-put-gradingscheme?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/educationassignmentsettings-post-defaultgradingscheme.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/educationassignmentsettings-put-defaultgradingscheme?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/educationgradingscheme-post.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/educationassignmentsettings-post-gradingschemes?view=graph-rest-beta",
+      "redirect_document_id": false
+    }
+  ]
+}

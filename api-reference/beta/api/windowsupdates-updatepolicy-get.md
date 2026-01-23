@@ -1,11 +1,11 @@
 ---
 title: "Get updatePolicy"
 description: "Read the properties and relationships of an updatePolicy object."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 09/16/2024
+ms.date: 01/20/2026
 ---
 
 # Get updatePolicy
@@ -31,12 +31,13 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /admin/windows/updates/updatePolicies/{updatePolicyId}
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+This method supports the `$select`, `$filter`, `$count`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -60,7 +61,7 @@ The following example shows a request.
   "name": "get_updatepolicy"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/a7aa99c1-34a2-850c-5223-7816fde70713
 ```
 
@@ -103,7 +104,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.windowsUpdates.updatePolicy"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

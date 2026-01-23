@@ -132,8 +132,8 @@ items:
       href: ../../api/cloudpc-retrievecloudpccountbystatus.md
     - name: List for user
       href: ../../api/user-list-cloudpcs.md
-    - name: Get launch info
-      href: ../../api/cloudpc-getcloudpclaunchinfo.md
+    - name: Retrieve launch detail
+      href: ../../api/cloudpc-retrievecloudpclaunchdetail.md
     - name: Get connectivity history
       href: ../../api/cloudpc-getcloudpcconnectivityhistory.md
     - name: Get supported remote actions
@@ -150,6 +150,10 @@ items:
       href: ../../api/cloudpc-retrievesnapshots.md
     - name: Get frontline access state
       href: ../../api/cloudpc-getfrontlinecloudpcaccessstate.md
+    - name: Get launch info (deprecated)
+      href: ../../api/cloudpc-getcloudpclaunchinfo.md
+    - name: Retrieve frontline Cloud PC detail
+      href: ../../api/cloudpc-retrievefrontlinecloudpcdetail.md
   - name: Cloud PC audit event
     items:
     - name: Cloud PC audit event
@@ -160,6 +164,18 @@ items:
       href: ../../api/cloudpcauditevent-get.md
     - name: Get audit activity types
       href: ../../api/cloudpcauditevent-getauditactivitytypes.md
+  - name: Cloud PC bulk action
+    items:
+    - name: Cloud PC bulk action
+      href: ../../resources/cloudpcbulkaction.md
+    - name: List
+      href: ../../api/virtualendpoint-list-bulkactions.md
+    - name: Create
+      href: ../../api/virtualendpoint-post-bulkactions.md
+    - name: Get
+      href: ../../api/cloudpcbulkaction-get.md
+    - name: Retry
+      href: ../../api/cloudpcbulkaction-retry.md
   - name: Cloud PC cloud app
     items:
     - name: Cloud PC cloud app
@@ -214,9 +230,21 @@ items:
       href: ../../api/cloudpcexternalpartnersetting-get.md
     - name: Update
       href: ../../api/cloudpcexternalpartnersetting-update.md
-  - name: Cloud PC front line service plan
+  - name: Cloud PC external partner
     items:
-    - name: Cloud PC front line service plan
+    - name: Cloud PC external partner
+      href: ../../resources/cloudpcexternalpartner.md
+    - name: List
+      href: ../../api/virtualendpoint-list-externalpartners.md
+    - name: Create
+      href: ../../api/virtualendpoint-post-externalpartners.md
+    - name: Get
+      href: ../../api/cloudpcexternalpartner-get.md
+    - name: Update
+      href: ../../api/cloudpcexternalpartner-update.md
+  - name: Cloud PC frontline service plan
+    items:
+    - name: Cloud PC frontline service plan
       href: ../../resources/cloudpcfrontlineserviceplan.md
     - name: List
       href: ../../api/virtualendpoint-list-frontlineserviceplans.md
@@ -230,6 +258,12 @@ items:
       href: ../../api/virtualendpoint-list-galleryimages.md
     - name: Get
       href: ../../api/cloudpcgalleryimage-get.md
+  - name: Cloud PC managed license
+    items:
+    - name: Cloud PC managed license
+      href: ../../resources/cloudpcmanagedlicense.md
+    - name: List
+      href: ../../api/virtualendpoint-list-managedlicenses.md
   - name: Cloud PC Azure network connection
     items:
     - name: Cloud PC Azure network connection
@@ -276,56 +310,16 @@ items:
       href: ../../api/cloudpcprovisioningpolicy-apply.md
     - name: Apply configuration
       href: ../../api/cloudpcprovisioningpolicy-applyconfig.md
-  - name: Cloud PC reports
+    - name: Retry
+      href: ../../api/cloudpcprovisioningpolicy-retry.md
+  - name: Cloud PC report
     items:
-    - name: Cloud PC reports
-      href: ../../resources/cloudpcreports.md
-    - name: Get action status reports
-      href: ../../api/cloudpcreports-getactionstatusreports.md
-    - name: Get bulk action status reports
-      href: ../../api/cloudpcreports-retrievebulkactionstatusreport.md
-    - name: Get Cloud PC troubleshooting reports
-      href: ../../api/cloudpcreports-retrievecloudpctroubleshootreports.md
-    - name: Get frontline report
-      href: ../../api/cloudpcreports-getfrontlinereport.md
-    - name: Get inaccessible Cloud PC reports
-      href: ../../api/cloudpcreports-getinaccessiblecloudpcreports.md
-    - name: Get raw remote connection reports
-      href: ../../api/cloudpcreports-getrawremoteconnectionreports.md
-    - name: Get real-time remote connection latency reports
-      href: ../../api/cloudpcreports-getrealtimeremoteconnectionlatency.md
-    - name: Get real-time remote connection status reports
-      href: ../../api/cloudpcreports-getrealtimeremoteconnectionstatus.md
-    - name: Get remote connection historical reports
-      href: ../../api/cloudpcreports-getremoteconnectionhistoricalreports.md
-    - name: Get total aggregated remote connection reports
-      href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
+    - name: Cloud PC report
+      href: ../../resources/cloudpcreport.md
     - name: Retrieve Cloud PC recommendation reports
-      href: ../../api/cloudpcreports-retrievecloudpcrecommendationreports.md
-    - name: Retrieve Cloud PC tenant metrics report
-      href: ../../api/cloudpcreports-retrievecloudpctenantmetricsreport.md
-    - name: Retrieve cross-region disaster recovery report
-      href: ../../api/cloudpcreports-retrievecrossregiondisasterrecoveryreport.md
-    - name: Retrieve connection quality reports
-      href: ../../api/cloudpcreports-retrieveconnectionqualityreports.md
-    - name: Get daily aggregated remote connection reports
-      href: ../../api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
-    - name: Get Cloud PC performance report (deprecated)
-      href: ../../api/cloudpcreports-getcloudpcperformancereport.md
-    - name: Get Cloud PC recommendation reports (deprecated)
-      href: ../../api/cloudpcreports-getcloudpcrecommendationreports.md
-    - name: Get connection quality reports (deprecated)
-      href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
-    - name: Get shared use license usage report (deprecated)
-      href: ../../api/cloudpcreports-getshareduselicenseusagereport.md
-    - name: Cloud PC export job
-      items:
-      - name: Cloud PC export job
-        href: ../../resources/cloudpcexportjob.md
-      - name: Create export job
-        href: ../../api/cloudpcreports-post-exportjobs.md
-      - name: Get export job
-        href: ../../api/cloudpcexportjob-get.md
+      href: ../../api/cloudpcreport-retrievecloudpcrecommendationreports.md
+    - name: Retrieve Cloud PC client app usage reports
+      href: ../../api/cloudpcreport-retrievecloudpcclientappusagereport.md
   - name: Cloud PC service plan
     items:
     - name: Cloud PC service plan
@@ -336,6 +330,12 @@ items:
     items:
     - name: Cloud PC snapshot
       href: ../../resources/cloudpcsnapshot.md
+    - name: Import snapshot
+      href: ../../api/cloudpcsnapshot-importsnapshot.md
+    - name: Purge imported snapshot
+      href: ../../api/cloudpcsnapshot-purgeimportedsnapshot.md
+    - name: Retrieve imported snapshots
+      href: ../../api/cloudpcsnapshot-retrievesnapshotimportresults.md
     - name: Retrieve snapshots
       href: ../../api/cloudpc-retrievesnapshots.md
   - name: Cloud PC supported region
@@ -360,6 +360,16 @@ items:
       href: ../../api/cloudpcusersetting-delete.md
     - name: Assign
       href: ../../api/cloudpcusersetting-assign.md
+  - name: Cloud PC user settings persistence detail
+    items:
+    - name: Cloud PC user settings persistence detail
+      href: ../../resources/cloudpcusersettingspersistencedetail.md
+    - name: Batch delete user settings persistence profile
+      href: ../../api/cloudpcusersettingspersistencedetail-batchcleanupusersettingspersistenceprofile.md
+    - name: Retrieve user settings persistence profiles
+      href: ../../api/cloudpcusersettingspersistencedetail-retrieveusersettingspersistenceprofiles.md
+    - name: Retrieve user settings persistence usage
+      href: ../../api/cloudpcusersettingspersistencedetail-retrieveusersettingspersistenceprofileusage.md
   - name: Virtual endpoint
     items:
     - name: Virtual endpoint
@@ -392,11 +402,11 @@ items:
       href: ../../api/virtualendpoint-list-supportedregions.md
     - name: List service plans
       href: ../../api/virtualendpoint-list-serviceplans.md
-    - name: List external partner settings
-      href: ../../api/virtualendpoint-list-externalpartnersettings.md
-    - name: Create external partner setting
-      href: ../../api/virtualendpoint-post-externalpartnersettings.md
-    - name: List front line service plans
+    - name: List external partners
+      href: ../../api/virtualendpoint-list-externalpartners.md
+    - name: Create external partner
+      href: ../../api/virtualendpoint-post-externalpartners.md
+    - name: List frontline service plans
       href: ../../api/virtualendpoint-list-frontlineserviceplans.md
     - name: List bulk actions
       href: ../../api/virtualendpoint-list-bulkactions.md
@@ -406,18 +416,54 @@ items:
       href: ../../api/virtualendpoint-retrievetenantencryptionsetting.md
     - name: List cloud apps
       href: ../../api/virtualendpoint-list-cloudapps.md
-  - name: Cloud PC bulk action
+    - name: List managed licenses
+      href: ../../api/virtualendpoint-list-managedlicenses.md
+    - name: List external partner settings (deprecated)
+      href: ../../api/virtualendpoint-list-externalpartnersettings.md
+    - name: Create external partner setting (deprecated)
+      href: ../../api/virtualendpoint-post-externalpartnersettings.md
+  - name: Cloud PC reports (deprecated)
     items:
-    - name: Cloud PC bulk action
-      href: ../../resources/cloudpcbulkaction.md
-    - name: List
-      href: ../../api/virtualendpoint-list-bulkactions.md
-    - name: Create
-      href: ../../api/virtualendpoint-post-bulkactions.md
-    - name: Get
-      href: ../../api/cloudpcbulkaction-get.md
-    - name: Retry
-      href: ../../api/cloudpcbulkaction-retry.md
+    - name: Cloud PC reports (deprecated)
+      href: ../../resources/cloudpcreports.md
+    - name: Get action status reports
+      href: ../../api/cloudpcreports-getactionstatusreports.md
+    - name: Get bulk action status reports
+      href: ../../api/cloudpcreports-retrievebulkactionstatusreport.md
+    - name: Get Cloud PC troubleshooting reports
+      href: ../../api/cloudpcreports-retrievecloudpctroubleshootreports.md
+    - name: Get frontline report
+      href: ../../api/cloudpcreports-getfrontlinereport.md
+    - name: Get inaccessible Cloud PC reports
+      href: ../../api/cloudpcreports-getinaccessiblecloudpcreports.md
+    - name: Get raw remote connection reports
+      href: ../../api/cloudpcreports-getrawremoteconnectionreports.md
+    - name: Get real-time remote connection latency reports
+      href: ../../api/cloudpcreports-getrealtimeremoteconnectionlatency.md
+    - name: Get real-time remote connection status reports
+      href: ../../api/cloudpcreports-getrealtimeremoteconnectionstatus.md
+    - name: Get remote connection historical reports
+      href: ../../api/cloudpcreports-getremoteconnectionhistoricalreports.md
+    - name: Get total aggregated remote connection reports
+      href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
+    - name: Retrieve Cloud PC tenant metrics report
+      href: ../../api/cloudpcreports-retrievecloudpctenantmetricsreport.md
+    - name: Retrieve cross-region disaster recovery report
+      href: ../../api/cloudpcreports-retrievecrossregiondisasterrecoveryreport.md
+    - name: Retrieve connection quality reports
+      href: ../../api/cloudpcreports-retrieveconnectionqualityreports.md
+    - name: Get daily aggregated remote connection reports
+      href: ../../api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
+    - name: Get Cloud PC performance report (deprecated)
+      href: ../../api/cloudpcreports-getcloudpcperformancereport.md
+    - name: Get Cloud PC recommendation reports (deprecated)
+      href: ../../api/cloudpcreports-getcloudpcrecommendationreports.md
+    - name: Get connection quality reports (deprecated)
+      href: ../../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
+    - name: Get shared use license usage report (deprecated)
+      href: ../../api/cloudpcreports-getshareduselicenseusagereport.md
+    - name: Retrieve Cloud PC recommendation reports (deprecated)
+      href: ../../api/cloudpcreports-retrievecloudpcrecommendationreports.md
   - name: Alert monitoring
     items:
     - name: Monitoring
@@ -437,6 +483,16 @@ items:
         href: ../../api/devicemanagement-alertrecord-setportalnotificationassent.md
     - name: Alert rule
       href: ../../resources/devicemanagement-alertrule.md
+  - name: Cloud PC reports
+    items:
+    - name: Cloud PC export job
+      items:
+      - name: Cloud PC export job
+        href: ../../resources/cloudpcexportjob.md
+      - name: Create export job
+        href: ../../api/cloudpcreports-post-exportjobs.md
+      - name: Get export job
+        href: ../../api/cloudpcexportjob-get.md
   - name: Complex types
     items:
     - name: App scope
@@ -511,7 +567,9 @@ items:
       href: ../../resources/cloudpcfrontlineshareddevicedetail.md
     - name: Cloud PC health check item
       href: ../../resources/cloudpchealthcheckitem.md
-    - name: Cloud PC launch info
+    - name: Cloud PC launch detail
+      href: ../../resources/cloudpclaunchdetail.md
+    - name: Cloud PC launch info (deprecated)
       href: ../../resources/cloudpclaunchinfo.md
     - name: Cloud PC login result
       href: ../../resources/cloudpcloginresult.md
@@ -541,6 +599,10 @@ items:
       href: ../../resources/cloudpcreviewstatus.md
     - name: Cloud PC scoped permission
       href: ../../resources/cloudpcscopedpermission.md
+    - name: Cloud PC snapshot import action detail
+      href: ../../resources/cloudpcsnapshotimportactiondetail.md
+    - name: Cloud PC snapshot import action result
+      href: ../../resources/cloudpcsnapshotimportactionresult.md
     - name: Cloud PC source device image
       href: ../../resources/cloudpcsourcedeviceimage.md
     - name: Cloud PC status detail
@@ -549,6 +611,8 @@ items:
       href: ../../resources/cloudpcstatusdetails.md
     - name: Cloud PC status summary
       href: ../../resources/cloudpcstatussummary.md
+    - name: Cloud PC storage blob detail
+      href: ../../resources/cloudpcstorageblobdetail.md
     - name: Cloud PC subscription
       href: ../../resources/cloudpcsubscription.md
     - name: Cloud PC supported region restriction detail
@@ -557,10 +621,18 @@ items:
       href: ../../resources/cloudpcuserrolescopetaginfo.md
     - name: Cloud PC user setting assignment
       href: ../../resources/cloudpcusersettingassignment.md
+    - name: Cloud PC user settings persistence configuration
+      href: ../../resources/cloudpcusersettingspersistenceconfiguration.md
+    - name: Cloud PC user settings persistence profile
+      href: ../../resources/cloudpcusersettingspersistenceprofile.md
+    - name: Cloud PC user settings persistence usage result
+      href: ../../resources/cloudpcusersettingspersistenceusageresult.md
     - name: Cloud PC Windows setting
       href: ../../resources/cloudpcwindowssetting.md
     - name: Cloud PC Windows settings
       href: ../../resources/cloudpcwindowssettings.md
+    - name: Frontline Cloud PC detail
+      href: ../../resources/frontlinecloudpcdetail.md
     - name: Key value pair
       href: ../../resources/keyvaluepair.md
     - name: Microsoft managed desktop
@@ -987,6 +1059,12 @@ items:
         href: ../../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-setandroiddeviceownerfullymanagedenrollmentstate.md
       - name: addApps action
         href: ../../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-addapps.md
+      - name: retrieveStoreLayout function
+        href: ../../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-retrievestorelayout.md
+      - name: setStoreLayout action
+        href: ../../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-setstorelayout.md
+      - name: requestEnterpriseUpgradeUrl action
+        href: ../../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-requestenterpriseupgradeurl.md
     - name: Android managed store app
       items:
       - name: Android managed store app
@@ -8450,6 +8528,46 @@ items:
       href: ../../api/windowsupdates-operationalinsightsconnection-get.md
     - name: Delete operational insights connection
       href: ../../api/windowsupdates-operationalinsightsconnection-delete.md
+  - name: Policy
+    items:
+    - name: Policy
+      href: ../../resources/windowsupdates-policy.md
+    - name: List
+      href: ../../api/windowsupdates-adminwindowsupdates-list-policies.md
+    - name: Create
+      href: ../../api/windowsupdates-adminwindowsupdates-post-policies.md
+    - name: Get
+      href: ../../api/windowsupdates-policy-get.md
+    - name: Update
+      href: ../../api/windowsupdates-policy-update.md
+    - name: Delete
+      href: ../../api/windowsupdates-policy-delete.md
+    - name: List applicable content
+      href: ../../api/windowsupdates-policy-list-applicablecontent.md
+    - name: List approvals
+      href: ../../api/windowsupdates-policy-list-approvals.md
+    - name: Create policy approval
+      href: ../../api/windowsupdates-policy-post-approvals.md
+    - name: List rings
+      href: ../../api/windowsupdates-policy-list-rings.md
+    - name: Create ring
+      href: ../../api/windowsupdates-policy-post-rings.md
+  - name: Quality update policy
+    href: ../../resources/windowsupdates-qualityupdatepolicy.md
+  - name: Policy approval
+    items:
+    - name: Policy approval
+      href: ../../resources/windowsupdates-policyapproval.md
+    - name: List
+      href: ../../api/windowsupdates-policy-list-approvals.md
+    - name: Create
+      href: ../../api/windowsupdates-policy-post-approvals.md
+    - name: Get
+      href: ../../api/windowsupdates-policyapproval-get.md
+    - name: Update
+      href: ../../api/windowsupdates-policyapproval-update.md
+    - name: Delete
+      href: ../../api/windowsupdates-policyapproval-delete.md
   - name: Product
     items:
     - name: Product
@@ -8470,6 +8588,22 @@ items:
       href: ../../api/windowsupdates-resourceconnection-get.md
     - name: Delete
       href: ../../api/windowsupdates-resourceconnection-delete.md
+  - name: Ring
+    items:
+    - name: Ring
+      href: ../../resources/windowsupdates-ring.md
+    - name: List
+      href: ../../api/windowsupdates-policy-list-rings.md
+    - name: Create
+      href: ../../api/windowsupdates-policy-post-rings.md
+    - name: Get
+      href: ../../api/windowsupdates-ring-get.md
+    - name: Update
+      href: ../../api/windowsupdates-ring-update.md
+    - name: Delete
+      href: ../../api/windowsupdates-ring-delete.md
+  - name: Quality update ring
+    href: ../../resources/windowsupdates-qualityupdatering.md
   - name: Updatable asset
     items:
     - name: Updatable asset
@@ -8547,9 +8681,17 @@ items:
     - name: Admin Windows Updates
       href: ../../resources/adminwindowsupdates.md
     - name: Applicable content
-      href: ../../resources/windowsupdates-applicablecontent.md
+      items:
+      - name: Applicable content
+        href: ../../resources/windowsupdates-applicablecontent.md
+      - name: List applicable content
+        href: ../../api/windowsupdates-policy-list-applicablecontent.md
     - name: Applicable content device match
       href: ../../resources/windowsupdates-applicablecontentdevicematch.md
+    - name: Approval rule
+      href: ../../resources/windowsupdates-approvalrule.md
+    - name: Assigned group
+      href: ../../resources/windowsupdates-assignedgroup.md
     - name: Build version details
       href: ../../resources/windowsupdates-buildversiondetails.md
     - name: Catalog content
@@ -8584,12 +8726,18 @@ items:
       href: ../../resources/windowsupdates-durationdrivenrolloutsettings.md
     - name: Edition
       href: ../../resources/windowsupdates-edition.md
+    - name: Excluded group assignment
+      href: ../../resources/windowsupdates-excludedgroupassignment.md
     - name: Expedite settings
       href: ../../resources/windowsupdates-expeditesettings.md
     - name: Feature update catalog entry
       href: ../../resources/windowsupdates-featureupdatecatalogentry.md
     - name: Gradual rollout settings
       href: ../../resources/windowsupdates-gradualrolloutsettings.md
+    - name: Group assignment
+      href: ../../resources/windowsupdates-groupassignment.md
+    - name: Included group assignment
+      href: ../../resources/windowsupdates-includedgroupassignment.md
     - name: Item body
       href: ../../resources/windowsupdates-itembody.md
     - name: Knowledge base article
@@ -8606,6 +8754,8 @@ items:
       href: ../../resources/windowsupdates-monitoringsettings.md
     - name: Product revision
       href: ../../resources/windowsupdates-productrevision.md
+    - name: Quality update approval rule
+      href: ../../resources/windowsupdates-qualityupdateapprovalrule.md
     - name: Quality update catalog entry
       href: ../../resources/windowsupdates-qualityupdatecatalogentry.md
     - name: Quality update cve severity information
@@ -8614,6 +8764,10 @@ items:
       href: ../../resources/windowsupdates-qualityupdatefilter.md
     - name: Rate driven rollout settings
       href: ../../resources/windowsupdates-ratedrivenrolloutsettings.md
+    - name: Recovery approval rule
+      href: ../../resources/windowsupdates-recoveryapprovalrule.md
+    - name: Recovery update catalog entry
+      href: ../../resources/windowsupdates-recoveryupdatecatalogentry.md
     - name: Remediation update filter
       href: ../../resources/windowsupdates-remediationupdatefilter.md
     - name: Safeguard profile

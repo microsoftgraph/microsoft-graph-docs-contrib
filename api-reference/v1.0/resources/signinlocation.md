@@ -2,7 +2,7 @@
 title: "signInLocation resource type"
 description: "Provides the city, state and country/region from where the sign-in happened."
 ms.localizationpriority: medium
-author: "dhanyahk"
+author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ms.date: 04/03/2024

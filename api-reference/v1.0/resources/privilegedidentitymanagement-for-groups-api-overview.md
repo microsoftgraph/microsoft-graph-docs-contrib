@@ -8,15 +8,15 @@ ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.topic: overview
 ms.subservice: entra-id-governance
-ms.date: 09/25/2024
+ms.date: 08/29/2025
 #Customer intent: As a security administrator, I want to understand how to use PIM for Groups to govern membership and ownership of groups in my organization.
 ---
 
-# Govern membership and ownership of groups using PIM for Groups
+# Govern membership and ownership of groups by using PIM for Groups
 
-With [Privileged Identity Management for groups (PIM for Groups)](/entra/id-governance/privileged-identity-management/concept-pim-for-groups), you can govern how principals are assigned membership or ownership of [groups](groups-overview.md). Security and Microsoft 365 Groups are critical resources that you can use to provide access to Microsoft cloud resources like Microsoft Entra roles, Azure roles, Azure SQL, Azure Key Vault, Intune; and third-party applications. PIM for Groups gives you more control over how and when principals are members or owners of groups, and therefore have privileges granted through their group membership or ownership.
+With [Privileged Identity Management for groups (PIM for Groups)](/entra/id-governance/privileged-identity-management/concept-pim-for-groups), you can govern how principals are assigned membership or ownership of [groups](groups-overview.md). Security and Microsoft 365 Groups are critical resources that you can use to provide access to Microsoft cloud resources like Microsoft Entra roles, Azure roles, Azure SQL, Azure Key Vault, Intune, and third-party applications. PIM for Groups gives you more control over how and when principals are members or owners of groups, and therefore have privileges granted through their group membership or ownership.
 
-The PIM for Groups APIs in Microsoft Graph provide you with more governance over security and Microsoft 365 Groups such as the following capabilities:
+The PIM for Groups APIs in Microsoft Graph provide you with more governance over security and Microsoft 365 Groups, such as the following capabilities:
 
 - Providing principals just-in-time membership or ownership of groups
 - Assigning principals temporary membership or ownership of groups
@@ -43,9 +43,9 @@ The following table lists scenarios for using PIM for Groups APIs to manage acti
 
 ## PIM for Groups APIs for managing eligible assignments of group owners and members
 
-Your principals might not require permanent membership or ownership of groups because they don't require the privileges granted through the membership or ownership all the time. In this case, PIM for Groups allows you to make the principals eligible for the membership or ownership of the groups.
+Your principals might not require permanent membership or ownership of groups because they don't need the privileges granted through the membership or ownership all the time. In this case, PIM for Groups allows you to make the principals eligible for the membership or ownership of the groups.
 
-When a principal has an eligible assignment, they activate their assignment when they need the privileges granted through the groups to perform privileged tasks. An eligible assignment can be permanent or temporary. The activation is always time-bound for a maximum of 8 hours. The principal can also extend or renew their membership or ownership of the group.
+When a principal has an eligible assignment, they activate their assignment when they need the privileges granted through the groups to perform privileged tasks. An eligible assignment can be permanent or temporary. The activation is always time-bound for a maximum of eight hours. The principal can also extend or renew their membership or ownership of the group.
 
 The following table lists scenarios for using PIM for Groups APIs to manage eligible assignments for principals and the corresponding APIs to call.
 
@@ -59,13 +59,13 @@ The following table lists scenarios for using PIM for Groups APIs to manage elig
 
 ## Policy settings in PIM for Groups
 
-PIM for Groups defines settings or rules that govern how principals can be assigned membership or ownership of security and Microsoft 365 Groups. Such rules include whether multifactor authentication (MFA), justification, or approval is required to activate an eligible membership or ownership for a group, or whether you can create permanent assignments or eligibilities for principals to the groups. The rules are defined in policies and a policy can be applied to a group.
+PIM for Groups defines settings or rules that govern how principals can be assigned membership or ownership of security and Microsoft 365 Groups. Such rules include whether multifactor authentication (MFA), justification, or approval is required to activate an eligible membership or ownership for a group, or whether you can create permanent assignments or eligibilities for principals to the groups. You define the rules in policies, and you can apply a policy to a group.
 
-In Microsoft Graph, these rules are managed through the [unifiedRoleManagementPolicy](unifiedrolemanagementpolicy.md) and the [unifiedRoleManagementPolicyAssignment](unifiedrolemanagementpolicyassignment.md) resource types and their related methods.
+In Microsoft Graph, you manage these rules through the [unifiedRoleManagementPolicy](unifiedrolemanagementpolicy.md) and the [unifiedRoleManagementPolicyAssignment](unifiedrolemanagementpolicyassignment.md) resource types and their related methods.
 
 For example, assume that by default, PIM for Groups doesn't allow permanent active membership and ownership assignments and defines a maximum of six months for active assignments. Attempting to create a [privilegedAccessGroupAssignmentScheduleRequest](privilegedAccessGroupAssignmentScheduleRequest.md) object without expiry date returns a `400 Bad Request` response code for violation of the expiration rule.
 
-PIM for Groups allows you to configure various rules including:
+PIM for Groups allows you to configure various rules, including:
 
 - Whether principals can be assigned permanent eligible assignments
 - The maximum duration allowed for a group membership or ownership activation and whether justification or approval is required to activate eligible membership or ownership
@@ -90,37 +90,37 @@ For more information about using Microsoft Graph to configure rules, see [Overvi
 
 ## Onboarding groups to PIM for Groups
 
-You can't onboard a group to PIM for Groups explicitly. When you request to add assignment to group using [Create assignmentScheduleRequest](../api/privilegedaccessgroup-post-assignmentschedulerequests.md) or [Create eligibilityScheduleRequest](../api/privilegedaccessgroup-post-eligibilityschedulerequests.md), or you update PIM policy (role settings) for a group using [Update unifiedRoleManagementPolicy](../api/unifiedrolemanagementpolicy-update.md) or [Update unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-update.md), the group is onboarded to PIM automatically if it wasn't onboarded before.
+You can't explicitly onboard a group to PIM for Groups. When you request to add an assignment to a group by using [Create assignmentScheduleRequest](../api/privilegedaccessgroup-post-assignmentschedulerequests.md) or [Create eligibilityScheduleRequest](../api/privilegedaccessgroup-post-eligibilityschedulerequests.md), or when you update the PIM policy (role settings) for a group by using [Update unifiedRoleManagementPolicy](../api/unifiedrolemanagementpolicy-update.md) or [Update unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-update.md), PIM automatically onboards the group if it wasn't onboarded before.
 
-You can call one of the following APIs for both groups that are onboarded to PIM and groups that aren't onboarded to PIM yet, but we recommend doing it only for groups that are onboarded to PIM to reduce the chances of getting throttled.
+You can call the following APIs for both groups that are onboarded to PIM and groups that aren't onboarded to PIM yet. To reduce the chances of getting throttled, call these APIs only for groups that are onboarded to PIM.
 - [List assignmentScheduleRequests](../api/privilegedaccessgroup-list-assignmentschedulerequests.md)
 - [List assignmentSchedules](../api/privilegedaccessgroup-list-assignmentschedules.md)
-- [List assignmentScheduleInstances](../api/privilegedaccessgroup-list-assignmentscheduleinstances.md),
+- [List assignmentScheduleInstances](../api/privilegedaccessgroup-list-assignmentscheduleinstances.md)
 - [List eligibilityScheduleRequests](../api/privilegedaccessgroup-list-eligibilityschedulerequests.md)
 - [List eligibilitySchedules](../api/privilegedaccessgroup-list-eligibilityschedules.md)
 - [List eligibilityScheduleInstances](../api/privilegedaccessgroup-list-eligibilityscheduleinstances.md)
 
-After PIM onboards a group, IDs of the PIM policies and policy assignments of the specific group change. Call the [Get unifiedRoleManagementPolicy](../api/unifiedrolemanagementpolicy-get.md) or [Get unifiedRoleManagementPolicyAssignment](../api/unifiedrolemanagementpolicyassignment-get.md) API to get the updated IDs.
+After PIM onboards a group, the IDs of the PIM policies and policy assignments for the specific group change. To get the updated IDs, call the [Get unifiedRoleManagementPolicy](../api/unifiedrolemanagementpolicy-get.md) or [Get unifiedRoleManagementPolicyAssignment](../api/unifiedrolemanagementpolicyassignment-get.md) API.
 
 Once PIM onboards a group, you can't offboard it, but you can remove all eligible and time-bound assignments as necessary.
 
 ## PIM for Groups and the group object
 
-Membership and ownership of any security and Microsoft 365 group (except dynamic groups and groups synchronized from on-premises) can be governed through PIM for Groups. The group doesn't have to be role-assignable to be enabled in PIM for Groups.
+You can use PIM for Groups to govern membership and ownership of any security and Microsoft 365 group, except dynamic groups and groups synchronized from on-premises. The group doesn't need to be role-assignable to enable it in PIM for Groups.
 
 When you assign a principal *active* permanent or temporary membership or ownership of a group, or when they make a just-in-time activation:
 
-- The principal's details are returned when you query the **members** and **owners** relationships through the [List group members](../api/group-list-members.md) or [List group owners](../api/group-list-owners.md) APIs.
-- You can remove the principal from the group using the [Remove group owner](../api/group-delete-owners.md) or [Remove group member](../api/group-delete-members.md) APIs.
-- If changes to the group are tracked using the [Get delta](../api/group-delta.md) and [Get delta for directory objects](../api/directoryobject-delta.md) functions, an `@odata.nextLink` contains the new member or owner.
-- The changes to group **members** and **owners** made through PIM for Groups are logged in Microsoft Entra audit logs and can be read through the [List directory audits](../api/directoryaudit-list.md) API.
+- You see the principal's details when you query the **members** and **owners** relationships through the [List group members](../api/group-list-members.md) or [List group owners](../api/group-list-owners.md) APIs.
+- You can remove the principal from the group by using the [Remove group owner](../api/group-delete-owners.md) or [Remove group member](../api/group-delete-members.md) APIs.
+- If you track changes to the group by using the [Get delta](../api/group-delta.md) and [Get delta for directory objects](../api/directoryobject-delta.md) functions, an `@odata.nextLink` contains the new member or owner.
+- You see the changes to group **members** and **owners** made through PIM for Groups logged in Microsoft Entra audit logs, and you can read them through the [List directory audits](../api/directoryaudit-list.md) API.
 
-When a principal is assigned *eligible* permanent or temporary membership or ownership of a group, the members and owners relationships of the group aren't updated.
+When you assign a principal *eligible* permanent or temporary membership or ownership of a group, the members and owners relationships of the group aren't updated.
 
 When a principal's *temporary active* membership or ownership of a group expires:
 
 - The principal's details are automatically removed from the **members** and **owners** relationships.
-- If changes to the group are tracked using the [Get delta](../api/group-delta.md) and [Get delta for directory objects](../api/directoryobject-delta.md) functions, an `@odata.nextLink` indicates the removed group member or owner.
+- If you track changes to the group by using the [Get delta](../api/group-delta.md) and [Get delta for directory objects](../api/directoryobject-delta.md) functions, an `@odata.nextLink` indicates the removed group member or owner.
 
 <!-- Start of: Link to ZT guidance: H2 section -->
 
@@ -130,7 +130,7 @@ When a principal's *temporary active* membership or ownership of a group expires
 
 ## Licensing
 
-The tenant where Privileged Identity Management is being used must have enough purchased or trial licenses. For more information, see [Microsoft Entra ID Governance licensing fundamentals](/entra/id-governance/licensing-fundamentals).
+The tenant where you use Privileged Identity Management must have enough purchased or trial licenses. For more information, see [Microsoft Entra ID Governance licensing fundamentals](/entra/id-governance/licensing-fundamentals).
 
 ## Related content
 
@@ -138,7 +138,7 @@ The tenant where Privileged Identity Management is being used must have enough p
 
   <!-- {
   "type": "#page.annotation",
-  "description": "Govern membership and ownership of groups using privileged identity management (PIM) for groups",
+  "description": "Govern membership and ownership of groups by using privileged identity management (PIM) for groups",
   "section": "documentation",
   "suppressions": [
     "Error: /resources/privilegedidentitymanagement-for-groups-api-overview.md:

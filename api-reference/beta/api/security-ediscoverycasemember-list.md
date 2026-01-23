@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 
 Get a list of [ediscoveryCaseMember](../resources/security-ediscoverycasemember.md) objects for an [ediscoveryCase](../resources/security-ediscoverycase.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET security/cases/ediscoveryCases/{ediscoveryCaseId}/caseMembers
 ```
 
@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "list_ediscoverycasemember"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/caseMembers
 ```
 
@@ -107,7 +107,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.ediscoveryCaseMember"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

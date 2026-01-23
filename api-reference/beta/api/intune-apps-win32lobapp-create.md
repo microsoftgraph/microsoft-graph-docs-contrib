@@ -25,16 +25,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceAppManagement/mobileApps
 ```
 
@@ -76,8 +76,8 @@ The following table shows the properties that are required when you create the w
 |size|Int64|The total size, including all uploaded files. This property is read-only. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |installCommandLine|String|Indicates the command line to install this app. Used to install the Win32 app. Example: `msiexec /i "Orca.Msi" /qn`.|
 |uninstallCommandLine|String|Indicates the command line to uninstall this app. Used to uninstall the app. Example: `msiexec /x "{85F4CBCB-9BBC-4B50-A7D8-E1106771498D}" /qn`.|
-|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Indicates the Windows architecture(s) this app should be installed on. The app will be treated as not applicable for devices with architectures not matching the selected value. When a non-null value is provided for the `allowedArchitectures` property, the value of the `applicableArchitectures` property is set to `none`. Default value is `none`. Possible values are: `none`, `x86`, `x64`.|
-|allowedArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Indicates the Windows architecture(s) this app should be installed on. The app will be treated as not applicable for devices with architectures not matching the selected value. When a non-null value is provided for the `allowedArchitectures` property, the value of the `applicableArchitectures` property is set to `none`. Possible values are: `null`, `x86`, `x64`, `arm64`.|
+|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Indicates the Windows architecture(s) this app should be installed on. The app will be treated as not applicable for devices with architectures not matching the selected value. When a non-null value is provided for the `allowedArchitectures` property, the value of the `applicableArchitectures` property is set to `none`. Default value is `none`. Possible values are: `none`, `x86`, `x64`. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
+|allowedArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Indicates the Windows architecture(s) this app should be installed on. The app will be treated as not applicable for devices with architectures not matching the selected value. When a non-null value is provided for the `allowedArchitectures` property, the value of the `applicableArchitectures` property is set to `none`. Possible values are: `null`, `x86`, `x64`, `arm64`. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Indicates the value for the minimum applicable operating system.|
 |minimumFreeDiskSpaceInMB|Int32|Indicates the value for the minimum free disk space which is required to install this app. Allowed range from `0` to `driver's maximum available free space`.|
 |minimumMemoryInMB|Int32|Indicates the value for the minimum physical memory which is required to install this app. Allowed range from `0` to `total physical memory from WMI helper`.|
@@ -105,7 +105,7 @@ If successful, this method returns a `201 Created` response code and a [win32Lob
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
 Content-length: 3820
@@ -236,7 +236,7 @@ Content-length: 3820
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 3992

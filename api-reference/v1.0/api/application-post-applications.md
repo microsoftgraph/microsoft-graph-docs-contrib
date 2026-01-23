@@ -1,7 +1,7 @@
 ---
 title: "Create application"
 description: "Create a new application."
-author: "sureshja"
+author: "Jackson-Woods"
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.subservice: "entra-applications"

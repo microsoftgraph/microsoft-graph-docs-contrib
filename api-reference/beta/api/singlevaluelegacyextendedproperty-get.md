@@ -39,6 +39,7 @@ The following user resources are supported:
 - [message](../resources/message.md)
 - [Outlook task](../resources/outlooktask.md)
 - [Outlook task folder](../resources/outlooktaskfolder.md)
+- [todoTask](../resources/todotask.md)
 
 As well as the following group resources:
 
@@ -46,8 +47,7 @@ As well as the following group resources:
 - group [event](../resources/event.md)
 - group [post](../resources/post.md)
 
-See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use
-open extensions or extended properties, and how to specify extended properties.
+For more information about when to use open extensions or extended properties, and how to specify extended properties, see [Extended properties overview](../resources/extended-properties-overview.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -60,14 +60,14 @@ Depending on the resource you're getting the extended property from and the perm
 | [contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [contactFolder](../resources/contactfolder.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [event](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
-| group [calendar](../resources/calendar.md) | Group.Read.All | Not supported | Not supported |
-| group [event](../resources/event.md) | Group.Read.All | Not supported | Not supported |
-| group [post](../resources/post.md) | Group.Read.All | Not supported | Group.Read.All |
+| group [calendar](../resources/calendar.md) | Group.Read.All | Not supported. | Not supported. |
+| group [event](../resources/event.md) | Group.Read.All | Not supported. | Not supported. |
+| group [post](../resources/post.md) | Group.Read.All | Not supported. | Group.Read.All |
 | [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
-| [Outlook task](../resources/outlooktask.md) | Tasks.Read | Tasks.Read | Not supported |
-| [Outlook task folder](../resources/outlooktaskfolder.md) | Tasks.Read | Tasks.Read | Not supported |
-
+| [Outlook task](../resources/outlooktask.md) | Tasks.Read | Tasks.Read | Not supported. |
+| [Outlook task folder](../resources/outlooktaskfolder.md) | Tasks.Read | Tasks.Read | Not supported. |
+| [todoTask](../resources/todotask.md) | Tasks.Read | Not supported. | Tasks.Read.All |
 
 ## HTTP request
 
@@ -149,6 +149,15 @@ GET /me/outlook/taskFolders/{id}?$expand=singleValueExtendedProperties($filter=i
 GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/outlook/taskGroups/{id}/taskFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+Get a **todoTask** instance:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}?$expand=singleValueExtendedProperties($filter=id eq '{propertyId}')
+GET /me/todo/lists/{todoTaskListId}/tasks?$expand=singleValueExtendedProperties($filter=id eq '{propertyId}')
 ```
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
@@ -324,10 +333,10 @@ GET /groups/{id}/events?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '
 ```
 
 ## Path parameters
-|**Parameter**|**Type**|**Description**|
+|Parameter|Type|Description|
 |:-----|:-----|:-----|
-|id_value|String|The ID of the extended property to match. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.|
-|property_value |String|The value of the extended property to match. Required where listed in the **HTTP request** section above. If {property_value} is not a string, make sure you explicitly cast `ep/value` to the appropriate Edm data type when comparing it with {property_value}. See [request 4](#request-4) below for examples. |
+|id_value|String|The ID of the extended property to match. It must follow one of the supported formats. For more information, see [Outlook extended properties overview](../resources/extended-properties-overview.md). Required.|
+|property_value |String|The value of the extended property to match. Required where listed in the **HTTP request** section above. If `{property_value}` isn't a string, make sure you explicitly cast `ep/value` to the appropriate Edm data type when comparing it with `{property_value}`. For examples, see [request 4](#request-4). |
 
 ## Request headers
 | Name      |Description|
@@ -341,11 +350,11 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code.
 
-#### GET resource instance using `$expand`
-The response body includes an object representing the requested resource instance, expanded with the matching [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) object.
+### GET resource instance using `$expand`
+The response body includes an object that represents the requested resource instance, expanded with the matching [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) object.
 
-#### GET resource instances that contain an extended property matching a filter
-The response body includes one or more objects representing the resource instances that contain a matching extended property. The response body does not include the extended property.
+### GET resource instances that contain an extended property matching a filter
+The response body includes one or more objects that represent the resource instances that contain a matching extended property. The response body doesn't include the extended property.
 
 ## Example
 #### Request 1

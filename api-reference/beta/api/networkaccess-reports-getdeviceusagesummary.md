@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a summary of device onboarding and offboarding within a specified timeframe. This summary includes the total number of devices, active devices, and inactive devices.
+Get a summary of device onboarding and offboarding within a specified timeframe as logged in [Global Secure Access](../resources/networkaccess-global-secure-access-api-overview.md). This summary includes the total number of devices, active devices, and inactive devices.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /networkAccess/reports/getDeviceUsageSummary(startDateTime={startDateTime},endDateTime={endDateTime},activityPivotDateTime={activityPivotDateTime})
 ```
 
@@ -67,7 +67,7 @@ The following example shows a request.
   "name": "reportsthis.getdeviceusagesummary"
 }
 -->
-``` http
+```http
 GET https://graph.microsoft.com/beta/networkAccess/reports/getDeviceUsageSummary (startDateTime=2023-01-29T00:00:00Z,endDateTime=2023-01-31T00:00:00Z, activityPivotDateTime=2023-01-30T00:00:00Z)
 ```
 
@@ -81,7 +81,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.networkaccess.deviceUsageSummary"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

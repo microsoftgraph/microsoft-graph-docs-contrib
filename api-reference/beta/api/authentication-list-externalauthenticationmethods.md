@@ -26,14 +26,19 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "authentication-list-externalauthenticationmethods-permissions"
+  "name": "authentication-list-externalauthenticationmethods-permissions",
+  "requestUrls": ["GET /me/authentication/externalAuthenticationMethods"]
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-list-externalauthenticationmethods-permissions.md)]
 
 ### Permissions acting on other users
 
-<!-- { "blockType": "permissions", "name": "authentication_list_externalauthenticationmethods_2" } -->
+<!-- { 
+  "blockType": "permissions", 
+  "name": "authentication_list_externalauthenticationmethods_2", 
+  "requestUrls": ["GET /users/{usersId}/authentication/externalAuthenticationMethods"]
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/authentication-list-externalauthenticationmethods-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
@@ -45,7 +50,7 @@ To retrieve details of your own external authentication methods:
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /me/authentication/externalAuthenticationMethods
 ```
 
@@ -54,7 +59,7 @@ To retrieve details of your own or another user's external authentication method
 [!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /users/{usersId}/authentication/externalAuthenticationMethods
 ```
 
@@ -87,7 +92,7 @@ The following example shows a request.
   "name": "list_externalauthenticationmethod"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/authentication/externalAuthenticationMethods
 ```
 
@@ -131,7 +136,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.externalAuthenticationMethod"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -21,15 +21,17 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 |  Method       |  Return Type  | Description| 
 |:---------------|:--------|:----------|
 | **Chat management** |||
-|[Create chat](../api/chat-post.md) | [chat](chat.md) | Create a new chat.|
-|[Get chat](../api/chat-get.md) | [chat](chat.md) | Read properties and relationships of the chat.|
-|[Update chat](../api/chat-patch.md) | [chat](chat.md) | Update properties of the chat.|
+|[List](../api/chat-list.md) | [chat](chat.md) collection | Get the list of chats a user is part of.|
+|[Create](../api/chat-post.md) | [chat](chat.md) | Create a new chat.|
+|[Get](../api/chat-get.md) | [chat](chat.md) | Read properties and relationships of the chat.|
+|[Update](../api/chat-patch.md) | [chat](chat.md) | Update properties of the chat.|
 |[Delete](../api/chat-delete.md)|None|Delete a chat.|
 |[List members](../api/chat-list-members.md) | [conversationMember](conversationmember.md) collection | Get the list of all users in the chat.|
 |[Add member](../api/chat-post-members.md) | Location header | Add a user to the chat.|
 |[Get member](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Get a single user in the chat.|
 |[Remove member](../api/chat-delete-members.md)|None|Remove a user from the chat.|
 |[Get chat between user and app](../api/userscopeteamsappinstallation-get-chat.md) | [chat](chat.md)| Get one-on-one chat between user and the app |
+|[Remove all access for user](../api/chat-removeallaccessforuser.md)|None|Remove access to a chat for a user.|
 | **Messages** |||
 |[List messages in a chat](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a chat. |
 |[Get message reply](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Get a single message in a chat. |
@@ -60,7 +62,7 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-| chatType| [chatType](../resources/chat.md#chattype-values) | Specifies the type of chat. Possible values are: `group`, `oneOnOne`, `meeting`, `unknownFutureValue`.|
+| chatType| [chatType](../resources/chat.md#chattype-values) | Specifies the type of chat. The possible values are: `group`, `oneOnOne`, `meeting`, `unknownFutureValue`.|
 | createdDateTime| dateTimeOffset|  Date and time at which the chat was created. Read-only.|
 | id| String| The chat's unique identifier. Read-only.|
 | isHiddenForAllMembers | Boolean | Indicates whether the chat is hidden for all its members. Read-only.|

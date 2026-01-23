@@ -25,16 +25,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceAppManagement/mobileApps
 ```
 
@@ -87,10 +87,10 @@ If successful, this method returns a `201 Created` response code and a [managedI
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1395
+Content-length: 1415
 
 {
   "@odata.type": "#microsoft.graph.managedIOSStoreApp",
@@ -138,17 +138,18 @@ Content-length: 1395
     "v15_0": true,
     "v16_0": true,
     "v17_0": true,
-    "v18_0": true
+    "v18_0": true,
+    "v26_0": true
   }
 }
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1567
+Content-Length: 1587
 
 {
   "@odata.type": "#microsoft.graph.managedIOSStoreApp",
@@ -199,7 +200,8 @@ Content-Length: 1567
     "v15_0": true,
     "v16_0": true,
     "v17_0": true,
-    "v18_0": true
+    "v18_0": true,
+    "v26_0": true
   }
 }
 ```

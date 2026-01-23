@@ -27,10 +27,8 @@ schedule := graphmodelswindowsupdates.NewScheduleSettings()
 gradualRollout := graphmodelswindowsupdates.NewRateDrivenRolloutSettings()
 durationBetweenOffers , err := abstractions.ParseISODuration("P7D")
 gradualRollout.SetDurationBetweenOffers(&durationBetweenOffers) 
-additionalData := map[string]interface{}{
-	"devicePerOffer" : int32(100) , 
-}
-gradualRollout.SetAdditionalData(additionalData)
+devicesPerOffer := int32(100)
+gradualRollout.SetDevicesPerOffer(&devicesPerOffer) 
 schedule.SetGradualRollout(gradualRollout)
 settings.SetSchedule(schedule)
 monitoring := graphmodelswindowsupdates.NewMonitoringSettings()

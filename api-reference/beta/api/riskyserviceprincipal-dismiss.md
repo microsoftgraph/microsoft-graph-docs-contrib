@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /identityProtection/riskyServicePrincipals/dismiss
 ```
 
@@ -59,7 +59,7 @@ If successful, this action returns a `204 No Content` response code. It doesn't 
   "name": "riskyserviceprincipal_dismiss"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identityProtection/riskyServicePrincipals/dismiss
 Content-Type: application/json
 
@@ -106,6 +106,6 @@ Content-Type: application/json
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

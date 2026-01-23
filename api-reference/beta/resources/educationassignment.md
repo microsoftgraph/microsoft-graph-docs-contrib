@@ -47,16 +47,17 @@ Inherits from [entity](../resources/entity.md).
 |[Attach rubric](../api/educationassignment-put-rubric.md)|None|Attach an existing **educationRubric** to this **assignment**.|
 |[Remove rubric](../api/educationassignment-delete-rubric.md)|None|Detach the **educationRubric** from this **assignment**.|
 |[Get delta](../api/educationassignment-delta.md)|[educationAssignment](../resources/educationassignment.md) collection|Get a list of newly created or updated **assignments** without having to perform a full read of the collection.|
-|[Add educationGradingCategory](../api/educationassignment-post-gradingcategory.md)|[educationGradingCategory](../resources/educationgradingcategory.md)|Add gradingCategory by posting to the gradingCategory collection.|
-|[Remove educationGradingCategory](../api/educationassignment-delete-gradingcategory.md)|None|Remove an [educationGradingCategory](../resources/educationgradingcategory.md) object.|
+|[Add grading category](../api/educationassignment-post-gradingcategory.md)|[educationGradingCategory](../resources/educationgradingcategory.md)|Add **gradingCategory** by posting to the **gradingCategory** collection.|
+|[Remove grading category](../api/educationassignment-delete-gradingcategory.md)|None|Remove an [educationGradingCategory](../resources/educationgradingcategory.md) object.|
 |[Activate assignment](../api/educationassignment-activate.md) |[educationAssignment](educationassignment.md) | Activate an inactive **educationAssignment** to signal that the assignment has further action items for teachers or students.|
 |[Deactivate assignment](../api/educationassignment-deactivate.md) |[educationAssignment](educationassignment.md) | Mark an assigned **educationAssignment** as inactive to signal that the assignment has no further action items for both teachers and students.|
+|[Add grading scheme](../api/educationassignment-put-gradingscheme.md)|[educationGradingScheme](../resources/educationgradingscheme.md)|Add an existing [educationGradingScheme](../resources/educationgradingscheme.md) to an existing **educationAssignment**.|
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |addedStudentAction|String|Optional field to control the **assignment** behavior for students who are added after the **assignment** is published. If not specified, defaults to `none`. Supported values are: `none`, `assignIfOpen`. For example, a teacher can use `assignIfOpen` to indicate that an assignment should be assigned to any new student who joins the class while the assignment is still open, and `none` to indicate that an assignment shouldn't be assigned to new students.|
-|addToCalendarAction| educationAddToCalendarOptions|Optional field to control the **assignment** behavior  for adding **assignments** to students' and teachers' calendars when the **assignment** is published. The possible values are: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `unknownFutureValue`, and `studentsOnly`. Use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `studentsOnly`. The default value is `none`.|
+|addToCalendarAction| educationAddToCalendarOptions|Optional field to control the **assignment** behavior  for adding **assignments** to students' and teachers' calendars when the **assignment** is published. The possible values are: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `unknownFutureValue`, and `studentsOnly`. Use the `Prefer: include-unknown-enum-members` request header to get the following members in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `studentsOnly`. The default value is `none`.|
 |allowLateSubmissions|Boolean| Identifies whether students can submit after the due date. If this property isn't specified during create, it defaults to true. |
 |allowStudentsToAddResourcesToSubmission|Boolean| Identifies whether students can add their own resources to a **submission** or if they can only modify resources added by the teacher. |
 |assignDateTime|DateTimeOffset|The date when the **assignment** should become active.  If in the future, the **assignment** isn't shown to the student until this date.  The **Timestamp** type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
@@ -78,7 +79,7 @@ Inherits from [entity](../resources/entity.md).
 |moduleUrl|string| The URL of the module from which to access the **assignment**.|
 |notificationChannelUrl|String|Optional field to specify the URL of the [channel](channel.md) to post the **assignment** publish notification. If not specified or null, defaults to the `General` channel. This field only applies to **assignments** where the **assignTo** value is [educationAssignmentClassRecipient](educationassignmentclassrecipient.md). Updating the **notificationChannelUrl** isn't allowed after the **assignment** has been published.|
 |resourcesFolderUrl|string| Folder URL where all the file resources for this **assignment** are stored.|
-|status|string| Status of the **assignment**. You can't PATCH this value. Possible values are: `draft`, `scheduled`, `published`, `assigned`, `unknownFutureValue`, `inactive`. Use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `inactive`.|
+|status|string| Status of the **assignment**. You can't PATCH this value. The possible values are: `draft`, `scheduled`, `published`, `assigned`, `unknownFutureValue`, `inactive`. Use the `Prefer: include-unknown-enum-members` request header to get the following members in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `inactive`.|
 |webUrl|string| The deep link URL for the given **assignment**.|
 
 ## Relationships
@@ -89,6 +90,7 @@ Inherits from [entity](../resources/entity.md).
 |categories|[educationCategory](educationcategory.md) collection| When set, enables users to easily find **assignments** of a given type.  Read-only. Nullable.|
 |rubric|[educationRubric](educationrubric.md)|When set, the grading rubric attached to this **assignment**.|
 |gradingCategory|[educationGradingCategory](educationgradingcategory.md) collection| When set, enables users to weight assignments differently when computing a class average grade.|
+|gradingScheme|[educationGradingScheme](educationgradingscheme.md) | When set, enables users to configure custom string grades based on the percentage of total points earned on this **assignment**.|
 
 ## JSON representation
 

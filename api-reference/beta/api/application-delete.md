@@ -1,7 +1,7 @@
 ---
 title: "Delete application"
 description: "Deletes an application."
-author: "sureshja"
+author: "Jackson-Woods"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Deletes an application. When deleted, apps are moved to a temporary container and can be restored within 30 days. After that time, they are permanently deleted.
+
+This API can also delete an [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object by its ID.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

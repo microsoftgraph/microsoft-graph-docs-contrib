@@ -3,7 +3,7 @@ title: "Enum values"
 description: "Microsoft Graph enumeration values."
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
-ms.date: 06/23/2025
+ms.date: 12/02/2025
 author: "MSGraphDocsvTeam"
 doc_type: enumPageType
 ms.custom: sfi-ropc-nochange
@@ -12,6 +12,15 @@ ms.custom: sfi-ropc-nochange
 # Enum values
 
 Namespace: microsoft.graph
+
+### readingCoachStoryType values
+
+|Member|
+|:---|
+|aiGenerated|
+|readWorks|
+|userProvided|
+|unknownFutureValue|
 
 ### responseFeedbackType values
 
@@ -796,6 +805,15 @@ Namespace: microsoft.graph
 | draft |
 | published |
 
+### educationSpeechType values
+
+|Member|
+|:---|
+|informative|
+|personal|
+|persuasive|
+|unknownFutureValue|
+
 ### fido2RestrictionEnforcementType values
 
 | Member |
@@ -1162,15 +1180,6 @@ Namespace: microsoft.graph
 | external |
 | externalPartner |
 | externalNonPartner |
-
-### activityType values
-
-| Member |
-| ------------------ |
-| signin |
-| user |
-| unknownFutureValue |
-| servicePrincipal |
 
 ### riskDetectionTimingType values
 
@@ -1558,6 +1567,15 @@ Possible types of Windows settings.
 | otherFax |
 | pager |
 | radio |
+
+### placeFeatureEnablement values 
+
+|Member|
+|:---|
+|unknown|
+|enabled|
+|disabled|
+|unknownFutureValue|
 
 ### plannerContainerType values
 
@@ -2504,18 +2522,6 @@ Possible values for user account types (group membership), per Windows definitio
 | high |
 | critical |
 | unknownFutureValue |
-
-### subjectRightsRequestStage values
-
-| Member |
-| ------------------ |
-| contentRetrieval |
-| contentReview |
-| generateReport |
-| contentDeletion |
-| caseResolved |
-| unknownFutureValue |
-| approval |
 
 ### subjectRightsRequestStageStatus values
 
@@ -3626,4 +3632,183 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |standard|
 |bulk|
+|unknownFutureValue|
+
+### sharePointMigrationJobErrorLevel values
+
+|Member|
+|:---|
+|important|
+|warning|
+|error|
+|fatalError|
+|unknownFutureValue|
+
+### sharePointMigrationObjectType values
+
+|Member|
+|:---|
+|site|
+|web|
+|folder|
+|list|
+|listItem|
+|file|
+|alert|
+|sharedWithObject|
+|invalid|
+|unknownFutureValue|
+
+### protectionSource values 
+
+|Member|
+|:---|
+|none|
+|manual|
+|dynamicRule|
+|unknownFutureValue|
+
+### engagementConversationMessageReactionType values
+
+| Member           |
+|:-----------------|
+| like             |
+| love             |
+| celebrate        |
+| thank            |
+| laugh            |
+| sad              |
+| happy            |
+| excited          |
+| smile            |
+| silly            |
+| intenseLaugh     |
+| starStruck       |
+| goofy            |
+| thinking         |
+| surprised        |
+| mindBlown        |
+| scared           |
+| crying           |
+| shocked          |
+| angry            |
+| agree            |
+| praise           |
+| takingNotes      |
+| heartBroken      |
+| support          |
+| confirmed        |
+| watching         |
+| brain            |
+| medal            |
+| bullseye         |
+| unknownFutureValue |
+
+### webApplicationFirewallDnsRecordType values 
+
+|Member|
+|:---|
+|cname|
+|unknownFutureValue|
+
+### webApplicationFirewallProviderType values 
+
+|Member|
+|:---|
+|akamai|
+|cloudflare|
+|unknownFutureValue|
+
+### webApplicationFirewallVerificationStatus values 
+
+|Member|
+|:---|
+|success|
+|warning|
+|failure|
+|unknownFutureValue|
+
+### callEventType values
+
+| Member |
+| ------------------ |
+| callStarted |
+| callEnded |
+| unknownFutureValue |
+| rosterUpdated |
+
+### resourceLinkType values
+
+|Member|
+|:---|
+|url|
+|unknownFutureValue|
+
+### fileStorageContainerBillingClassification values 
+
+|Member|
+|:---|
+|standard|
+|trial|
+|directToCustomer|
+|unknownFutureValue|
+
+### fileStorageContainerBillingStatus values 
+
+|Member|
+|:---|
+|invalid|
+|valid|
+|unknownFutureValue|
+
+### fileStorageContainerTypeAppPermission values 
+|Member|
+|:---|
+|none|
+|readContent|
+|writeContent|
+|manageContent|
+|create|
+|delete|
+|read|
+|write|
+|enumeratePermissions|
+|addPermissions|
+|updatePermissions|
+|deletePermissions|
+|deleteOwnPermission|
+|managePermissions|
+|full|
+|unknownFutureValue|
+
+### fileStorageContainerTypeSettingsOverride values 
+
+|Member|
+|:---|
+|urlTemplate|
+|isDiscoverabilityEnabled|
+|isSearchEnabled|
+|isItemVersioningEnabled|
+|itemMajorVersionLimit|
+|maxStoragePerContainerInBytes|
+|unknownFutureValue|
+
+
+### workLocationSource values 
+
+|Member|
+|:---|
+|manual|
+|scheduled|
+|automatic|
+|unknownFutureValue|
+
+### workLocationType values
+
+|Member|
+|:---|
+|unspecified|
+|office|
+|remote|
+|timeOff|
 |unknownFutureValue|

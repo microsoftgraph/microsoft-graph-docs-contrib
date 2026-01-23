@@ -9,6 +9,9 @@ ms.topic: article
 
 # Agenda component in Microsoft Graph Toolkit
 
+>[!CAUTION]
+> The Microsoft Graph Toolkit is deprecated. The retirement period begins September 1, 2025, with full retirement planned for August 28, 2026. Developers should migrate to using the Microsoft Graph SDKs or other supported Microsoft Graph tools for building web experiences. For more information, see the [deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-toolkit-retirement/).
+
 The `mgt-agenda` web component represents events in a user or group calendar. By default, the calendar displays the current signed in user events for the current day. The component can also use any endpoint that returns events from Microsoft Graph.
 
 ## Example

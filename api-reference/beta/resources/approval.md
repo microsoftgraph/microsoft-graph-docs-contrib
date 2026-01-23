@@ -36,7 +36,7 @@ In [PIM for Groups](../resources/privilegedidentitymanagement-for-groups-api-ove
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The identifier of the approval object. <br/><li> In entitlement management, it's the same identifier as the identifier of the [access package assignment request](accesspackageassignmentrequest.md). <li>In PIM for Microsoft Entra roles, it's the same identifier as the identifier of the [assignment schedule request](../resources/unifiedroleassignmentschedulerequest.md). <li>In PIM for Groups, it's the same identifier as the identifier of the [assignment schedule request](../resources/privilegedaccessgroupassignmentschedulerequest.md).|
+|id|String|The identifier of the approval object. <br/><ul><li> In entitlement management, it's the same identifier as the identifier of the [access package assignment request](accesspackageassignmentrequest.md). </li><li>In PIM for Microsoft Entra roles, it's the same identifier as the identifier of the [assignment schedule request](../resources/unifiedroleassignmentschedulerequest.md). </li><li>In PIM for Groups, it's the same identifier as the identifier of the [assignment schedule request](../resources/privilegedaccessgroupassignmentschedulerequest.md).</li></ul>|
 
 ## Relationships
 |Relationship|Type|Description|

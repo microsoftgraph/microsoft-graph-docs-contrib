@@ -1,5 +1,5 @@
 ---
-title: "cloudPC: getCloudPcLaunchInfo"
+title: "cloudPC: getCloudPcLaunchInfo (deprecated)"
 description: "Get the cloudPCLaunchInfo for a specific cloudPC that belongs to the current signed-in user."
 author: "andrewku0409"
 ms.localizationpriority: medium
@@ -8,10 +8,13 @@ doc_type: apiPageType
 ms.date: 04/04/2024
 ---
 
-# cloudPC: getCloudPcLaunchInfo
+# cloudPC: getCloudPcLaunchInfo (deprecated)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> This API is deprecated and will stop returning data on October 30, 2026. Going forward, use the [retrieveCloudPcLaunchDetail](../api/cloudpc-retrievecloudpclaunchdetail.md) API.
 
 Get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for a specific [cloudPC](../resources/cloudpc.md) that belongs to the current signed-in user.
 
@@ -32,14 +35,14 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 To get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for a specific [cloudPC](../resources/cloudpc.md) of the specified user (who is the signed-in user) in the organization using delegated permission:
 
-``` http
+```http
 GET /me/cloudPCs/{cloudPCId}/getCloudPcLaunchInfo
 GET /users/{userId}/cloudPCs/{id}/getCloudPcLaunchInfo
 ```
 
 To get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for a specific [cloudPC](../resources/cloudpc.md) in the organization using delegated permission (the signed-in user should be the administrator):
 
-``` http
+```http
 GET /deviceManagement/virtualEndpoint/cloudPCs/{cloudPCId}/getCloudPcLaunchInfo
 ```
 
@@ -68,7 +71,7 @@ If successful, this function returns a `200 OK` response code and a [cloudPcLaun
   "name": "cloudpc.getcloudpclaunchinfo"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/cloudPCs/{cloudPCId}/getCloudPcLaunchInfo
 ```
 
@@ -105,7 +108,7 @@ GET https://graph.microsoft.com/beta/me/cloudPCs/{cloudPCId}/getCloudPcLaunchInf
   "@odata.type": "microsoft.graph.cloudPcLaunchInfo"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

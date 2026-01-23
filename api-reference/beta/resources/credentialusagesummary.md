@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
 doc_type: "resourcePageType"
-ms.date: 07/22/2024
+ms.date: 01/12/2026
 toc.title: Credential usage summary (deprecated)
 ---
 
@@ -30,9 +30,9 @@ Represents the current state of how many users in your organization are using se
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| authMethod | usageAuthMethod | Represents the authentication method that the user used. Possible values are:`email`, `mobileSMS`, `mobileCall`, `officePhone`, `securityQuestion` (only used for self-service password reset), `appNotification`, `appCode`, `alternateMobileCall` (supported only in registration), `fido`, `appPassword`, `unknownFutureValue`. |
+| authMethod | [usageAuthMethod](../resources/usageauthmethod.md) | Represents the authentication method that the user used. |
 | failureActivityCount | Int64 | Provides the count of failed resets or registration data. |
-| feature | featureType | Defines the feature to report. Possible values are: `registration`, `reset`, `unknownFutureValue`. |
+| feature | featureType | Defines the feature to report. The possible values are: `registration`, `reset`, `unknownFutureValue`. |
 | id | String | The unique identifier for the activity. Read-only. |
 | successfulActivityCount | Int64 | Provides the count of successful registrations or resets. |
 

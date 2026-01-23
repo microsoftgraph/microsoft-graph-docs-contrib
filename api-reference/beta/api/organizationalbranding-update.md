@@ -15,11 +15,6 @@ Namespace: microsoft.graph
 
 Update the properties of the default branding object specified by the [organizationalBranding](../resources/organizationalbranding.md) resource.
 
-> [!TIP]
-> [![Try it now](/graph/try-it-now.png)](https://woodgrovedemo.com/#usecase=CompanyBranding)
-> 
-> To try out this feature, go to the Woodgrove Groceries demo and explore the "User experience" user case.
-
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
@@ -38,7 +33,7 @@ To update String data types, such as signInPageText and usernameHintText, use th
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /organization/{organizationId}/branding
 PUT /organization/{organizationId}/branding/localizations/{organizationalBrandingLocalizationId}/{Stream object type such as backgroundImage}
 ```

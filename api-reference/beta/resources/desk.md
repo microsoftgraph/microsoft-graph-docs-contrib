@@ -29,18 +29,20 @@ For the list of supported methods, see [place](./place.md).
 |displayDeviceName |String |The name of the display device (for example, `monitor` or `projector`) that is available at the **desk**. |
 |displayName|String|The name that is associated with the **desk**. Inherited from [place](./place.md).|
 |geoCoordinates|[outlookGeoCoordinates](./outlookgeocoordinates.md)|Specifies the **desk** location in latitude, longitude, and (optionally) altitude coordinates. Inherited from [place](./place.md).|
+|heightAdjustableState |placeFeatureEnablement|A state that indicates whether the desk is height adjustable. The possible values are: `unknown`, `enabled`, `disabled`, `unknownFutureValue`.|
 |id|String|The unique identifier for the **desk**. Read-only. This identifier isn't immutable and can change if the mailbox or tenant configuration changes. Inherited from [place](./place.md). |
 |isWheelChairAccessible|Boolean|Indicates whether the **desk** is wheelchair accessible. Inherited from [place](./place.md).|
 |label |String |User-defined description of the **desk**. Inherited from [place](../resources/place.md).|
 |mailboxDetails |[mailboxDetails](mailboxdetails.md) |The mailbox object **id** and email address that are associated with the desk. |
-|mode |[placeMode](./placemode.md) |The mode of the desk. The supported modes are:<ul><li>[assignedPlaceMode](./assignedplacemode.md) - Desks that are assigned to a user.</li><li>[reservablePlaceMode](./reservableplacemode.md) - Desks that can be booked in advance using desk reservation tools.</li><li>[dropInPlaceMode](./dropinplacemode.md) - First come, first served desks. When you plug into a peripheral on one of these desks, the desk is booked for you, assuming the peripheral is associated with the desk in the Microsoft Teams Rooms Pro management portal.</li><li>[offlinePlaceMode](./offlineplacemode.md) - Desk that is taken down for maintenance or marked as not reservable.</li></ul> |
-|parentId|String|The ID of a parent [place](../resources/place.md). Inherited from [place](./place.md).|
+|mode |[placeMode](./placemode.md) |The mode of the desk. The supported modes are:<ul><li>[assignedPlaceMode](./assignedplacemode.md) - Desks that are assigned to a user.</li><li>[reservablePlaceMode](./reservableplacemode.md) - Desks that can be booked in advance using desk reservation tools.</li><li>[dropInPlaceMode](./dropinplacemode.md) - First come, first served desks. When you plug into a peripheral on one of these desks, the desk is booked for you, assuming the peripheral is associated with the desk in the Microsoft Teams Rooms pro management portal.</li><li>[unavailablePlaceMode](./unavailableplacemode.md) - Desks that are taken down for maintenance or marked as not reservable.</li></ul> |
+|parentId|String|The ID of a parent [section](./section.md). Inherited from [place](./place.md).|
 |phone|String|The phone number of the **desk**. Inherited from [place](./place.md).|
-|placeId|String|An alternate immutable unique identifier of the **desk**. Read-only. Inherited from [place](./place.md).|
 |tags|String collection|Custom tags that are associated with the **desk** for categorization or filtering. Inherited from [place](./place.md).|
 
 ## Relationships
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|children|[place](../resources/place.md) collection|A collection of children places that is only used in the [Upsert places](../api/place-patch-places.md) API. A desk doesn't have children. Inherited from [place](../resources/place.md). |
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -59,6 +61,7 @@ The following JSON representation shows the resource type.
   "displayDeviceName": "String",
   "displayName": "String",
   "geoCoordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
+  "heightAdjustableState": "String",
   "id": "String (identifier)",
   "isWheelChairAccessible": "Boolean",
   "label": "String",
@@ -66,7 +69,6 @@ The following JSON representation shows the resource type.
   "mode": {"@odata.type": "microsoft.graph.placeMode"},
   "parentId": "String",
   "phone": "String",
-  "placeId": "String",
   "tags": ["String"]
 }
 ```

@@ -8,29 +8,29 @@ ms.topic: how-to
 ms.localizationpriority: high
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, sfi-image-nochange
-ms.date: 08/26/2024
+ms.date: 08/29/2025
 #customer intent: As a developer, I want to understand how my app can call Microsoft Graph on behalf of a signed-in user to access resources in a tenant.
 ---
 
 # Get access without a user
 
-To call Microsoft Graph, an app must obtain an access token from the Microsoft identity platform. This access token includes information about whether the app is authorized to access Microsoft Graph on behalf of a signed-in user or with its own identity. This article provides guidance on how an app can [access Microsoft Graph with its own identity](./auth/auth-concepts.md#access-scenarios), also called *app-only access*.
+To call Microsoft Graph, an app must get an access token from the Microsoft identity platform. This access token shows whether the app is authorized to access Microsoft Graph on behalf of a signed-in user or with its own identity. This article explains how an app can [access Microsoft Graph with its own identity](./auth/auth-concepts.md#access-scenarios), also called *app-only access*.
 
-This article details the raw HTTP requests involved for an app to call Microsoft Graph with its own identity using a popular flow called the [OAuth 2.0 client credentials grant flow](/entra/identity-platform/v2-oauth2-client-creds-grant-flow). Alternatively, you can avoid writing raw HTTP requests and use a Microsoft-built or supported authentication library that helps you to get access tokens and call Microsoft Graph. For more information, see [Use the Microsoft Authentication Library (MSAL)](#use-the-microsoft-authentication-library-msal).
+This article explains the raw HTTP requests an app makes to call Microsoft Graph with its own identity by using the popular [OAuth 2.0 client credentials grant flow](/entra/identity-platform/v2-oauth2-client-creds-grant-flow). Typically, you don't need to write raw HTTP requests and instead use a Microsoft-built or supported authentication library that helps you get access tokens and call Microsoft Graph. For more information, see [Use the Microsoft Authentication Library (MSAL)](#use-the-microsoft-authentication-library-msal).
 
 In this article, you complete the following steps in using the client credentials flow:
 
 1. Configure Microsoft Graph application permissions on the app.
-2. Request administrator consent.
-3. Request an access token.
-4. Call Microsoft Graph using the access token.
+1. Request administrator consent.
+1. Request an access token.
+1. Call Microsoft Graph by using the access token.
 
 ## Prerequisites
 
 Before proceeding with the steps in this article:
 
 1. Understand the authentication and authorization concepts in the Microsoft identity platform. For more information, see [Authentication and authorization basics](auth/auth-concepts.md).
-2. Register the app with Microsoft Entra ID. For more information, see [Register an application with the Microsoft identity platform](auth-register-app-v2.md). Save the following values from the app registration:
+1. Register the app with Microsoft Entra ID. For more information, see [Register an application with the Microsoft identity platform](auth-register-app-v2.md). Save the following values from the app registration:
     - The application ID (referred to as Object ID on the Microsoft Entra admin center).
     - A client secret (application password), a certificate, or a federated identity credential.
     - A redirect URI for the app to receive token responses from Microsoft Entra ID.
@@ -40,7 +40,7 @@ Before proceeding with the steps in this article:
 
 Microsoft Graph exposes [application permissions](./permissions-overview.md#application-permissions) for apps that call Microsoft Graph with their own identity. These permissions always require administrator consent.
 
-You preconfigure the application permissions the app needs when you register the app. An administrator can consent to these permissions either using the [Microsoft Entra admin center](https://entra.microsoft.com) when they install the app in their organization, or you can provide a sign-up experience in the app through which administrators can consent to the permissions you configured. Once Microsoft Entra ID records the administrator consent, the app can request tokens without having to request consent again.
+Preconfigure the application permissions the app needs when you register the app. An administrator can consent to these permissions either by using the [Microsoft Entra admin center](https://entra.microsoft.com) when they install the app in their organization, or you can provide a sign-up experience in the app through which administrators can consent to the permissions you configured. Once Microsoft Entra ID records the administrator consent, the app can request tokens without having to request consent again.
 
 To configure application permissions for the app in the app registrations experience on the Microsoft Entra admin center, follow these steps:
 
@@ -58,7 +58,7 @@ The following screenshot shows the **Select Permissions** dialog box for Microso
 
 ## Step 2: Request administrator consent
 
-Administrators can grant the permissions your app needs at the [Microsoft Entra admin center](https://entra.microsoft.com). However, when you don't have access to the Microsoft Entra admin center, you can provide a sign-up experience for administrators by using the Microsoft identity platform `/adminconsent` endpoint.
+Administrators can grant the permissions your app needs at the [Microsoft Entra admin center](https://entra.microsoft.com). However, if you don't have access to the Microsoft Entra admin center, you can provide a sign-up experience for administrators by using the Microsoft identity platform `/adminconsent` endpoint.
 
 > [!IMPORTANT]
 > 
@@ -110,15 +110,15 @@ https://localhost/myapp/permissions?admin_consent=True&tenant=38d49456-54d4-455d
 
 | Parameter     | Description
 |:--------------|:------------
-| tenant        | The tenant that granted your application the permissions that it requested, in GUID format.
-| state         | A value that is included in the request that also is returned in the token response. It can be a string of any content that you want. The state is used to encode information about the user's state in the app before the authentication request occurred, such as the page or view they were on.
+| tenant        | The tenant that grants your application the permissions that it requested, in GUID format.
+| state         | A value that is included in the request that also is returned in the token response. It can be a string of any content that you want. The state encodes information about the user's state in the app before the authentication request occurred, such as the page or view they were on.
 | admin_consent | Set to **True**.
 
 ## Step 3: Request an access token
 
-In the OAuth 2.0 client credentials grant flow, you use the application ID and client secret values that you saved when you registered your app to request an access token directly from the Microsoft identity platform `/token` endpoint.
+In the OAuth 2.0 client credentials grant flow, use the application ID and client secret values that you saved when you registered your app to request an access token directly from the Microsoft identity platform `/token` endpoint.
 
-You specify the preconfigured permissions by passing `https://graph.microsoft.com/.default` as the value for the `scope` parameter in the token request.
+Specify the preconfigured permissions by passing `https://graph.microsoft.com/.default` as the value for the `scope` parameter in the token request.
 
 ### Token request
 
@@ -154,7 +154,7 @@ curl --location --request POST 'https://login.microsoftonline.com/{tenant}/oauth
 |:--------------|:----------|:------------
 | tenant        | Required  | The tenant that you want to request permission from. The value can be in GUID or a friendly name format.
 | client_id     | Required  | The application ID that the [Azure app registration portal](https://go.microsoft.com/fwlink/?linkid=2083908) assigned when you registered your app.
-| scope         | Required  | The value passed for the **scope** parameter in this request should be the identifier (app ID URI) of the resource you want, affixed with the `.default` suffix. For example, the Microsoft Graph resource app ID URI is `https://graph.microsoft.com/`. For Microsoft Graph, the value of **scope** is therefore `https://graph.microsoft.com/.default`. This value informs the Microsoft identity platform endpoint to include in the access token all the app-level permissions the admin has consented to.
+| scope         | Required  | The value passed for the **scope** parameter in this request should be the identifier (app ID URI) of the resource you want, affixed with the `.default` suffix. For example, the Microsoft Graph resource app ID URI is `https://graph.microsoft.com/`. For Microsoft Graph, the value of **scope** is therefore `https://graph.microsoft.com/.default`. This value informs the Microsoft identity platform endpoint to include in the access token all the app-level permissions the admin consented to.
 | client_secret | Required  | The client secret that you generated for your app in the app registration portal. Ensure that it's URL encoded.
 | grant_type    | Required  | Must be `client_credentials`.
 
@@ -180,7 +180,7 @@ A successful response looks like this:
 
 ## Step 4: Use the access token to call Microsoft Graph
 
-After you have an access token, the app uses it to call Microsoft Graph by attaching the access token as a **Bearer** token to the **Authorization** header in an HTTP request. The following request gets all users in the tenant. The app must have the _User.Read.All_ permission to call this API.
+After you get an access token, the app uses it to call Microsoft Graph by attaching the access token as a **Bearer** token to the **Authorization** header in an HTTP request. The following request gets all users in the tenant. The app must have the _User.Read.All_ permission to call this API.
 
 # [HTTP](#tab/http)
 ```http
@@ -198,7 +198,7 @@ curl --location --request GET 'https://graph.microsoft.com/v1.0/users' \
 
 ---
 
-A successful response looks like this (some response headers have been removed):
+A successful response looks like this (some response headers are removed):
 
 ```json
 HTTP/1.1 200 OK
@@ -251,19 +251,19 @@ Apps that call Microsoft Graph with their own identity fall into one of two cate
 - [Background services (daemons)](/entra/identity-platform/scenario-daemon-app-registration) that run on a server without a signed-in user.
 - Apps that have a signed-in user but also call Microsoft Graph with their own identity. For example, to use functionality that requires more elevated privileges than the user has.
 
-In this article, the app used a client secret as the credential. You can optionally configure a certificate or a federated identity credential.
+In this article, the app uses a client secret as the credential. You can optionally configure a certificate or a federated identity credential.
 
 For more information about apps that call Microsoft Graph with their own identity and use the client credentials flow, see [Authentication flows and application scenarios: Daemon app that calls a web API in the daemon's name](/entra/identity-platform/authentication-flows-app-scenarios#daemon-app-that-calls-a-web-api-in-the-daemons-name).
 
 ## Use the Microsoft Authentication Library (MSAL)
 
-In this article, you walked through the low-level protocol details required only when manually crafting and issuing raw HTTP requests to execute the client credentials flow. In production apps, use a [Microsoft-built or supported authentication library](/entra/identity-platform/msal-overview), such as the Microsoft Authentication Library (MSAL), to get security tokens and call protected web APIs such as Microsoft Graph.
+In this article, you see the low-level protocol details required only when manually crafting and issuing raw HTTP requests to execute the client credentials flow. In production apps, use a [Microsoft-built or supported authentication library](/entra/identity-platform/msal-overview), such as the Microsoft Authentication Library (MSAL), to get security tokens and call protected web APIs such as Microsoft Graph.
 
-MSAL and other supported authentication libraries simplify the process for you by handling details such as validation, cookie handling, token caching, and secure connections; allowing you to focus on the functionality of your application.
+MSAL and other supported authentication libraries simplify the process for you by handling details such as validation, cookie handling, token caching, and secure connections. These libraries let you focus on the functionality of your application.
 
 Access the [Microsoft identity platform code samples](/entra/identity-platform/sample-v2-code?tabs=apptype#service--daemon) to see how to use MSAL to get access tokens and call Microsoft Graph.
 
 ## Related content
 
-- Explore [Microsoft Graph tutorials](/graph/tutorials) for code samples that are built using different SDKs to create basic applications that authenticate using certificate-based credentials to access data in app-only scenarios.
+- Explore [Microsoft Graph tutorials](/graph/tutorials) for code samples that use different SDKs to create basic applications that authenticate with certificate-based credentials to access data in app-only scenarios.
 - [Add a certificate to an app using Microsoft Graph](/graph/applications-how-to-add-certificate) shows a step-by-step process to add a certificate to an app for certificate-based authentication and app-only access to data.

@@ -19,6 +19,13 @@ var requestBody = new FileStorageContainerType
 		IsItemVersioningEnabled = true,
 		IsSharingRestricted = false,
 		ConsumingTenantOverridables = FileStorageContainerTypeSettingsOverride.IsSearchEnabled | FileStorageContainerTypeSettingsOverride.ItemMajorVersionLimit,
+		Agent = new FileStorageContainerTypeAgentSettings
+		{
+			ChatEmbedAllowedHosts = new List<string>
+			{
+				"https://localhost:3000",
+			},
+		},
 	},
 };
 

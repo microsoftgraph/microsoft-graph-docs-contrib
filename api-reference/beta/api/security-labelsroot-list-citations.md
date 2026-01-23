@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/labels/citations
 ```
 
@@ -58,7 +58,7 @@ The following example shows a request.
   "name": "list_citationtemplate"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/labels/citations
 ```
 
@@ -101,7 +101,7 @@ Here's an example of the response.
   "@odata.type": "Collection(microsoft.graph.security.citationTemplate)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

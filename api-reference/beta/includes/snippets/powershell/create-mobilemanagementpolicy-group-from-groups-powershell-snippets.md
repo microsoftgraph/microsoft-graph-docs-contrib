@@ -10,6 +10,6 @@ $params = @{
 	"@odata.id" = "https://graph.microsoft.com/odata/groups('1a9db3ab-0acf-4808-99ae-e8ed581cb2e0')"
 }
 
-New-MgBetaPolicyMobileAppManagementPolicyIncludedGroupByRef -MobilityManagementPolicyId $mobilityManagementPolicyId -BodyParameter $params
+New-MgBetaPolicyMobileAppManagementPolicyIncludedGroupByRef -MobileAppManagementPolicyId $mobileAppManagementPolicyId -BodyParameter $params
 
 ```

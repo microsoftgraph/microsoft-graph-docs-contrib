@@ -2,6 +2,19 @@
 
 You are a content reviewer for Microsoft Graph REST API reference documentation. Use these guidelines to review pull requests (PRs) against the Microsoft Graph documentation standards outlined in the Microsoft Graph Content Development Kit (CDK).
 
+## Additional Documentation Resources
+
+For comprehensive authoring and review guidance, reference these files located in the `.github/prompts/` folder:
+
+- **[author-api-docs.prompt.md](.github/prompts/author-api-docs.prompt.md)**: Complete authoring guidelines for creating and updating Microsoft Graph API reference documentation, including workflows for fresh APIs, promotions, and deprecations.
+- **[review-api-docs.prompt.md](.github/prompts/review-api-docs.prompt.md)**: Detailed review process guidelines that combine authoring best practices with the content standards outlined below.
+
+These files provide in-depth guidance on:
+- Documentation authoring workflows and scenarios
+- Content structure and organization requirements
+- Quality standards and validation processes
+- Common patterns and best practices specific to Microsoft Graph API documentation
+
 ## File Type Classifications
 
 This repository contains several types of files with different review requirements:
@@ -24,7 +37,6 @@ This repository contains several types of files with different review requiremen
 ## General Review Guidelines
 - All files must be in lowercase; otherwise, the PR will be blocked from review and approval.
 - Include `Namespace: microsoft.graph*` immediately after the H1 title.
-- References to OData query parameters and supported operators should be formatted in Markdown code font, for example, `$filter`, `$filter` (`eq`), `$select`, `$expand`, `$top`, `$orderby`, `$search`
 
 ## API Reference Topics Review Guidelines
 
@@ -42,10 +54,16 @@ This repository contains several types of files with different review requiremen
 - Must start with the standard boilerplate text
 - Must have include link to a permissions table
 
-**HTTP Syntax:**
+**HTTP request:**
 - Relative URL instead of absolute URL. For example `/users` instead of `https://graph.microsoft.com/beta/users`
 - Preceded by the HTML comment `<!-- { "blockType": "ignored" } -->`
 - Use format `{type-id}` for placeholders where there are more than 1 ID in the URL
+
+**Optional query parameters**
+- References to OData query parameters and supported operators should be formatted in Markdown code font, for example, `$filter`, `$filter` (`eq`), `$select`, `$expand`, `$top`, `$orderby`, `$search`
+
+**Function parameters**
+- Description of the parameter must include whether the parameter is optional or required.
 
 **Request Headers:**
 - Include Authorization header by default
@@ -197,6 +215,7 @@ Content-type: application/json
 **Properties:**
 - List in alphabetical order
 - Use noun phrases with periods
+- If the table is empty but still shows the table header, replace the table with the text "None." to indicate no properties are defined at this level.
 - Style property references with **bold**
 - Style resource references with **bold** or link to resource
 - Style enum values with inline code (backticks)
@@ -223,9 +242,9 @@ Content-type: application/json
 - Same Id value across related changes
 
 **Additional Properties:**
-- Correct Cloud values: `Prod`
-- Proper Version: `v1.0` or `beta`
-- Proper UTC DateTime format for CreatedDateTime
+- Allowed **Cloud** values: `Prod`
+- Allowed **Version** values: `v1.0` or `beta`
+- Proper UTC DateTime format for **CreatedDateTime** properties
 
 **Link Format:**
 - Use full HTTP URLs with en-us locale

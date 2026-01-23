@@ -30,7 +30,7 @@ Represents an eDiscovery tag, which is used to mark documents during review to s
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|childSelectability|microsoft.graph.security.childSelectability|Indicates whether a single or multiple child tags can be associated with a document. Possible values are: `One`, `Many`.  This value controls whether the UX presents the tags as checkboxes or a radio button group.|
+|childSelectability|microsoft.graph.security.childSelectability|Indicates whether a single or multiple child tags can be associated with a document. The possible values are: `One`, `Many`.  This value controls whether the UX presents the tags as checkboxes or a radio button group.|
 |createdBy|[identitySet](../resources/identityset.md)|The user who created the tag.|
 |description|String|The description for the tag.|
 |displayName|String|Display name of the tag.|

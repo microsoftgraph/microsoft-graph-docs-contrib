@@ -14,7 +14,7 @@ from msgraph_beta.generated.models.restore_point_preference import RestorePointP
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = SearchPostRequestBody(
 	artifact_query = ArtifactQuery(
-		query_expression = "(Sender -eq 'abc@contoso.com') -and (Subject -like '*Check email*' -or Subject -like ' Important') -and (HasAttachment -eq 'true') -and (PitrDumpsterActionTriggeredTime -gt '{2024-09-21T08:20:00.0000000Z}')",
+		query_expression = "(Sender -like 'abc@contoso.com') -and (Subject -like '*Check email*' -or Subject -like ' Important') -and (HasAttachment -eq 'true') -and (PitrDumpsterActionTriggeredTime -gt '2024-09-21T08:20:00.0000000Z')",
 		artifact_type = RestorableArtifact.Message,
 	),
 	protection_unit_ids = [

@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /solutions/backupRestore/restoreSessions/{restoreSessionBaseId}
 ```
 
@@ -62,7 +62,7 @@ The following example shows a request.
   "name": "restoresessionbase_delete"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/v1.0/solutions/backupRestore/restoreSessions/61633878-8321-4950-bfaf-ed285bdd1461
 ```
 
@@ -104,6 +104,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

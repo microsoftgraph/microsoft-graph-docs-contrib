@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|UserAuthenticationMethod.Read|UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All|
+|Delegated (work or school account)|UserAuthMethod-SoftwareOATH.Read|UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.Read, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All, UserAuthMethod-SoftwareOATH.Read.All, UserAuthMethod-SoftwareOATH.ReadWrite, UserAuthMethod-SoftwareOATH.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|UserAuthenticationMethod.Read.All|UserAuthenticationMethod.ReadWrite.All|
+|Application|UserAuthMethod-SoftwareOATH.Read.All|UserAuthenticationMethod.ReadWrite.All, UserAuthenticationMethod.Read.All, UserAuthMethod-SoftwareOATH.ReadWrite.All|
 

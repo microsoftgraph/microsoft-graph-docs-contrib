@@ -12,6 +12,14 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+The Places API in Microsoft Graph provides a unified way to manage and interact with physical spaces, such as buildings, rooms, desks, and workspaces, within an organization.
+
+## Supported types
+
+The following types are supported in the Places API.
+
+### Place types
+
 Place represents different space types within a tenant. A **place** object can be one of the following types.
 
 |Place type	|Details |
@@ -22,11 +30,38 @@ Place represents different space types within a tenant. A **place** object can b
 |[room](./room.md) |Represents a room within the tenant. All rooms must be associated with Exchange mailboxes. A **room** can be added to a **floor** or to a **section**. The rich properties of the **room** include an email address for the room, accessibility, capacity, audio device, video device, and so on. |
 |[roomList](./roomlist.md) |A collection of rooms in the tenant. Places supports **roomList** to ensure room booking works in **Room Finder** across all clients on all devices, such as classic Outlook across desktop and mobile. <br/><br/>However, we recommend that you rely on the new **place** types and hierarchy if you don't use **roomFinder** in the tenant. For more information about **roomList**, see the [roomList](./roomlist.md) resource type. |
 |[section](./section.md) |Represents a section within a floor, including properties such as **name**, **parentId**, and **label**. A **floor** is always the parent of a **section**. |
-|[workspace](./workspace.md) |Represents a collection of desks. All workspaces must be associated with Exchange mailboxes. A **workspace** can be added to a **floor** or a **section**. The rich properties of a workspace include an email address for the workspace, mode, accessibility, and capacity. |
+|[workspace](./workspace.md) |Represents a collection of desks. All workspaces must be associated with Exchange mailboxes. A **workspace** can be added to a **section**. The rich properties of a workspace include an email address for the workspace, mode, accessibility, and capacity. |
+
+### Map feature types
+
+The map feature represents the corresponding map of a place. A map feature object can be one of the following types.
+
+|Map feature type	|Details|
+|:--|:--|
+|[buildingMap](./buildingmap.md) | Represents a map file associated with a [building](./building.md) in Places. This object is the IMDF-format representation of building.geojson. |
+|[fixtureMap](./fixturemap.md) |Represents a fixture.geojson file in IMDF format that defines movable or semi-permanent physical assets within a space. These assets support utility, service, or aesthetic functions without affecting structural integrity. |
+|[footprintMap](./footprintmap.md) |Represents a footprint.geojson file in IMDF format that defines the approximate physical extent of a referenced [building](./building.md). |
+|[levelMap](./levelmap.md) |Represents a level.geojson file in IMDF format that defines the physical floor structure within a [building](../resources/building.md).|
+|[sectionMap](./sectionmap.md) |Represents a section.geojson file in IMDF format that defines sections (such as zones or partitions) on the floor of a [building](../resources/building.md). |
+|[unitMap](./unitmap.md) |Represents a unit.geojson file in IMDF format that defines units (such as rooms or offices) on a floor of a [building](../resources/building.md). |
 
 ## Using the Places API
 
-The Places API enables applications with appropriate read or write permissions to interact with **place** objects. Every **place** object includes fundamental properties such as **id**, **placeId**, and **displayName**. More advanced types—like rooms, workspaces, and desks—offer additional properties including **mode**, **emailAddress**, and **deviceInformation**. Detailed descriptions of each type are available in their respective documentation sections. 
+The Places API enables applications with appropriate read or write permissions to interact with **place** objects. Every **place** object includes fundamental properties such as **id**, **placeId**, and **displayName**. More advanced types, such as rooms, workspaces, and desks, offer more properties such as **mode**, **emailAddress**, and **deviceInformation**.
+
+The map APIs in Places enable applications with appropriate read or write permissions to interact with map feature objects. Each map feature object includes fundamental properties like **id**, and other properties such as **placeId**, **geometry**, and **display_point**.
+
+Detailed descriptions of each type are available in their respective documentation sections. 
+
+### Prerequisites for Places list and descendant APIs
+
+Before you can use the [List place objects](../api/place-list.md) or [place: descendants](../api/place-descendants.md) APIs, you must ensure that Places settings are properly configured in your Microsoft 365 environment; otherwise, these APIs do not return any places unless the following setup steps are completed:
+
+1. Download and connect to the *MicrosoftPlaces* PowerShell module. For more information, see [Connect-MicrosoftPlaces](/microsoft-365/places/powershell/connect-microsoftplaces).
+2. Make places visible by enabling buildings with the following command. For more information, see [Set-PlacesSettings](/microsoft-365/places/powershell/set-placessettings#-enablebuildings).
+    ```PowerShell
+    Set-PlacesSettings -EnableBuildings 'Default:true'
+    ```
 
 ## Common use cases
 
@@ -36,6 +71,14 @@ The following table lists some of the common uses for the Places API.
 | :--- | :--- | :--- |
 | Create and manage a place  | [place](../resources/place.md) | [place methods](../resources/place.md#methods) |
 | Interact with place spaces such as building, floor, section, room, room list, workspace, or desk | [place](../resources/place.md) |[place methods](../resources/place.md#methods) |
+| Upsert places  | [place](../resources/place.md) | [Upsert places](../api/place-patch-places.md) |
+| Ingest the map file for a building | [building](../resources/building.md) | [Ingest map file](../api/building-ingestmapfile.md) |
+| List levels in a building  | [levelMap](../resources/levelmap.md) | [List levels](../api/buildingmap-list-levels.md) |
+| List footprints in a building  | [footprintMap](../resources/footprintmap.md) | [List footprints](../api/buildingmap-list-footprints.md) |
+| Get and delete a **buildingMap** | [buildingMap](./buildingmap.md) | [buildingMap methods](../resources/buildingmap.md#methods) |
+| Create and manage a **unitMap**  | [unitMap](../resources/unitmap.md) | [unitMap methods](../resources/unitmap.md#methods) |
+| Create and manage a **fixtureMap**  | [fixtureMap](../resources/fixturemap.md) | [fixtureMap methods](../resources/fixturemap.md#methods) |
+| Create and manage a **sectionMap**  | [sectionMap](../resources/sectionmap.md) | [sectionMap methods](../resources/sectionmap.md#methods) |
 
 ## Comparing Places APIs with findRooms and findRoomLists 
 

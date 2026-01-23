@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /policies/authenticationmethodspolicy/authenticationmethodconfigurations/qrcodepin
 ```
 
@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "get_qrcodepinauthenticationmethodconfiguration"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/authenticationmethodspolicy/authenticationmethodconfigurations/qrcodepin
 ```
 
@@ -108,7 +108,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.qrCodePinAuthenticationMethodConfiguration"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

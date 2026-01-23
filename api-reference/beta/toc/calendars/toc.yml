@@ -2,6 +2,8 @@
 # GENERATED FILE - DO NOT EDIT
 #
 items:
+- name: Overview
+  href: ../../resources/calendar-overview.md
 - name: Calendar
   items:
   - name: Calendar
@@ -288,18 +290,46 @@ items:
       href: ../../api/place-delete.md
     - name: Descendants
       href: ../../api/place-descendants.md
+    - name: Create check-in claim
+      href: ../../api/place-post-checkins.md
+    - name: Upsert places
+      href: ../../api/place-patch-places.md
+    - name: Get operation
+      href: ../../api/place-getoperation.md
+    - name: List operations
+      href: ../../api/place-listoperations.md
   - name: Building
-    href: ../../resources/building.md
+    items:
+    - name: Building
+      href: ../../resources/building.md
+    - name: Ingest map file
+      href: ../../api/building-ingestmapfile.md
   - name: Floor
     href: ../../resources/floor.md
   - name: Section
     href: ../../resources/section.md
-  - name: Desk
-    href: ../../resources/desk.md
   - name: Room
     href: ../../resources/room.md
+  - name: Desk
+    href: ../../resources/desk.md
   - name: Workspace
     href: ../../resources/workspace.md
+  - name: Check-in claim
+    items:
+    - name: Check-in claim
+      href: ../../resources/checkinclaim.md
+    - name: Create
+      href: ../../api/place-post-checkins.md
+    - name: Get
+      href: ../../api/checkinclaim-get.md
+  - name: Place operation
+    items:
+    - name: Place operation
+      href: ../../resources/placeoperation.md
+    - name: List
+      href: ../../api/place-listoperations.md
+    - name: Get
+      href: ../../api/place-getoperation.md
   - name: Room list
     items:
     - name: Room list
@@ -328,6 +358,72 @@ items:
         href: ../../api/workplacesensordevice-delete.md
       - name: Ingest telemetry
         href: ../../api/workplacesensordevice-ingesttelemetry.md
+  - name: Maps (preview)
+    items:
+    - name: Building map
+      items:
+      - name: Building map
+        href: ../../resources/buildingmap.md
+      - name: Get
+        href: ../../api/buildingmap-get.md
+      - name: Delete
+        href: ../../api/buildingmap-delete.md
+      - name: List footprints
+        href: ../../api/buildingmap-list-footprints.md
+      - name: List levels
+        href: ../../api/buildingmap-list-levels.md
+    - name: Fixture map
+      items:
+      - name: Fixture map
+        href: ../../resources/fixturemap.md
+      - name: List
+        href: ../../api/levelmap-list-fixtures.md
+      - name: Update
+        href: ../../api/fixturemap-update.md
+      - name: Delete
+        href: ../../api/fixturemap-delete.md
+    - name: Footprint map
+      items:
+      - name: Footprint map
+        href: ../../resources/footprintmap.md
+      - name: List
+        href: ../../api/buildingmap-list-footprints.md
+    - name: Level map
+      items:
+      - name: Level map
+        href: ../../resources/levelmap.md
+      - name: List
+        href: ../../api/buildingmap-list-levels.md
+      - name: List fixtures
+        href: ../../api/levelmap-list-fixtures.md
+      - name: List sections
+        href: ../../api/levelmap-list-sections.md
+      - name: List units
+        href: ../../api/levelmap-list-units.md
+    - name: Section map
+      items:
+      - name: Section map
+        href: ../../resources/sectionmap.md
+      - name: List
+        href: ../../api/levelmap-list-sections.md
+      - name: Update
+        href: ../../api/sectionmap-update.md
+      - name: Delete
+        href: ../../api/sectionmap-delete.md
+    - name: Unit map
+      items:
+      - name: Unit map
+        href: ../../resources/unitmap.md
+      - name: List
+        href: ../../api/levelmap-list-units.md
+      - name: Update
+        href: ../../api/unitmap-update.md
+      - name: Delete
+        href: ../../api/unitmap-delete.md
+    - name: Complex types
+      items:
+      - name: Import building map setting
+        href: ../../resources/importbuildingmapsetting.md
   - name: Complex types
     items:
     - name: Assigned place mode
@@ -336,11 +432,63 @@ items:
       href: ../../resources/dropinplacemode.md
     - name: Mailbox details
       href: ../../resources/mailboxdetails.md
-    - name: Offline place mode
-      href: ../../resources/offlineplacemode.md
+    - name: Place execution result
+      href: ../../resources/placeexecutionresult.md
     - name: Place mode
       href: ../../resources/placemode.md
+    - name: Place operation progress
+      href: ../../resources/placeoperationprogress.md
     - name: Reservable place mode
       href: ../../resources/reservableplacemode.md
     - name: Resource link
       href: ../../resources/resourcelink.md
+    - name: Unavailable place mode
+      href: ../../resources/unavailableplacemode.md
+- name: Work hours and locations
+  items:
+  - name: Work hours and locations setting
+    items:
+    - name: Work hours and locations setting
+      href: ../../resources/workhoursandlocationssetting.md
+    - name: Get
+      href: ../../api/workhoursandlocationssetting-get.md
+    - name: Update
+      href: ../../api/workhoursandlocationssetting-update.md
+    - name: Occurrences view
+      href: ../../api/workhoursandlocationssetting-occurrencesview.md
+    - name: List recurrences
+      href: ../../api/workhoursandlocationssetting-list-recurrences.md
+    - name: Create recurrence
+      href: ../../api/workhoursandlocationssetting-post-recurrences.md
+    - name: Create occurrence
+      href: ../../api/workhoursandlocationssetting-post-occurrences.md
+  - name: Work plan occurrence
+    items:
+    - name: Work plan occurrence
+      href: ../../resources/workplanoccurrence.md
+    - name: Create
+      href: ../../api/workhoursandlocationssetting-post-occurrences.md
+    - name: Update
+      href: ../../api/workplanoccurrence-update.md
+    - name: Delete
+      href: ../../api/workplanoccurrence-delete.md
+    - name: Set current location
+      href: ../../api/workplanoccurrence-setcurrentlocation.md
+    - name: Occurrences view
+      href: ../../api/workhoursandlocationssetting-occurrencesview.md
+  - name: Work plan recurrence
+    items:
+    - name: Work plan recurrence
+      href: ../../resources/workplanrecurrence.md
+    - name: List
+      href: ../../api/workhoursandlocationssetting-list-recurrences.md
+    - name: Create
+      href: ../../api/workhoursandlocationssetting-post-recurrences.md
+    - name: Update
+      href: ../../api/workplanrecurrence-update.md
+    - name: Delete
+      href: ../../api/workplanrecurrence-delete.md
+  - name: Complex types
+    items:
+    - name: Time off details
+      href: ../../resources/timeoffdetails.md

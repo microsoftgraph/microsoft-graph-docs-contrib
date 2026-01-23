@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 
 Add an [ediscoveryCaseMember](../resources/security-ediscoverycasemember.md) to an [ediscoveryCase](../resources/security-ediscoverycase.md). The [ediscoveryCaseMember](../resources/security-ediscoverycasemember.md) can be one of two types: a user or a role group.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST security/cases/ediscoveryCases/{ediscoveryCaseId}/caseMembers
 ```
 
@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "user/smtp"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/caseMembers
 Content-Type: application/json
 
@@ -118,7 +118,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.ediscoveryCaseMember"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -141,7 +141,7 @@ The following example shows a request.
   "name": "roleGroup/displayName"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/caseMembers
 Content-Type: application/json
 
@@ -190,7 +190,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.ediscoveryCaseMember"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -213,7 +213,7 @@ The following example shows a request.
   "name": "user/id"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/caseMembers
 Content-Type: application/json
 
@@ -262,7 +262,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.ediscoveryCaseMember"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -285,7 +285,7 @@ The following example shows a request.
   "name": "roleGroup/id"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/caseMembers
 Content-Type: application/json
 
@@ -334,7 +334,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.ediscoveryCaseMember"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

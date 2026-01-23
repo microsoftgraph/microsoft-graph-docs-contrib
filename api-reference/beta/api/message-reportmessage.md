@@ -22,11 +22,7 @@ Report a [message](../resources/message.md) as junk, phishing, or not junk, whic
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "message-reportmessage-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "message_reportmessage" } -->
 [!INCLUDE [permissions-table](../includes/permissions/message-reportmessage-permissions.md)]
 
 ## HTTP request
@@ -35,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /me/messages/{messageId}/reportMessage
 POST /users/{userId}/messages/{messageId}/reportMessage
 ```
@@ -74,7 +70,7 @@ The following example shows a request.
   "name": "messagethis.reportmessage"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/me/messages/AAMkADhAAATs28OAAA=/reportMessage
 Content-Type: application/json
 
@@ -120,7 +116,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.message"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

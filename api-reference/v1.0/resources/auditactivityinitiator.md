@@ -2,7 +2,7 @@
 title: "auditActivityInitiator resource type"
 description: "Identifies the resource object that initiates the activity. The initiator can be a user, an app, or a system (which is considered as an app)."
 ms.localizationpriority: medium
-author: "dhanyahk"
+author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ms.date: 07/22/2024

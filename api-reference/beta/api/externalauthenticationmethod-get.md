@@ -25,14 +25,19 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "externalauthenticationmethod-get-permissions"
+  "name": "externalauthenticationmethod-get-permissions",
+  "requestUrls": ["GET /me/authentication/externalAuthenticationMethods/{externalAuthenticationMethodId}"]
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/externalauthenticationmethod-get-permissions.md)]
 
 ### Permissions acting on other users
 
-<!-- { "blockType": "permissions", "name": "externalauthenticationmethod_get_2" } -->
+<!-- { 
+  "blockType": "permissions", 
+  "name": "externalauthenticationmethod_get_2", 
+  "requestUrls": ["GET /users/{usersId}/authentication/externalAuthenticationMethods/{externalAuthenticationMethodId}"]
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/externalauthenticationmethod-get-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
@@ -45,7 +50,7 @@ To read details of your own external authentication method:
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /me/authentication/externalAuthenticationMethods/{externalAuthenticationMethodId}
 ```
 
@@ -54,7 +59,7 @@ To read details of your own or another user's external authentication method:
 [!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /users/{usersId}/authentication/externalAuthenticationMethods/{externalAuthenticationMethodId}
 ```
 
@@ -87,7 +92,7 @@ The following example shows a request.
   "name": "get_externalauthenticationmethod"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/authentication/externalAuthenticationMethods/{externalAuthenticationMethodId}
 ```
 
@@ -131,7 +136,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.externalAuthenticationMethod"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -141,7 +146,8 @@ Content-Type: application/json
     "id": "78381c69-811f-51f6-66ec-c2c2aa0e2b46",
     "createdDateTime": "2025-04-01T00:00:00Z",
     "configurationId": "26310fee-860b-4eab-8749-ab730dcf335e",
-    "displayName": "Adatum"
+    "displayName": "Adatum",
+    "lastUsedDateTime": null
   }
 }
 ```

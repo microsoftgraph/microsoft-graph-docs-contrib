@@ -13,7 +13,7 @@ ms.date: 10/17/2024
 
 Namespace: microsoft.graph
 
-Represents a Microsoft Entra group, a Microsoft 365 group, or a security group. This resource is an open type that allows other properties to be passed in.
+Represents a Microsoft Entra group, a Microsoft 365 group, or a security group. This resource is an open type that allows additional properties beyond those documented here.
 
 Inherits from [directoryObject](directoryobject.md).
 
@@ -174,7 +174,7 @@ This resource supports:
 | theme | string | Specifies a Microsoft 365 group's color theme. Possible values are `Teal`, `Purple`, `Green`, `Blue`, `Pink`, `Orange`, or `Red`. <br><br>Returned by default. |
 | uniqueName | String | The unique identifier that can be assigned to a group and used as an alternate key. Immutable. Read-only. |
 | unseenCount | Int32 | Count of conversations that received new posts since the signed-in user last visited the group. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`). |
-| visibility | String | Specifies the group join policy and group content visibility for groups. Possible values are: `Private`, `Public`, or `HiddenMembership`. `HiddenMembership` can be set only for Microsoft 365 groups when the groups are created. It can't be updated later. Other values of visibility can be updated after group creation.<br> If visibility value isn't specified during group creation on Microsoft Graph, a security group is created as `Private` by default, and the Microsoft 365 group is `Public`. Groups assignable to roles are always `Private`. To learn more, see [group visibility options](#group-visibility-options). <br><br>Returned by default. Nullable. |
+| visibility | String | Specifies the group join policy and group content visibility for groups. The possible values are: `Private`, `Public`, or `HiddenMembership`. `HiddenMembership` can be set only for Microsoft 365 groups when the groups are created. It can't be updated later. Other values of visibility can be updated after group creation.<br> If visibility value isn't specified during group creation on Microsoft Graph, a security group is created as `Private` by default, and the Microsoft 365 group is `Public`. Groups assignable to roles are always `Private`. To learn more, see [group visibility options](#group-visibility-options). <br><br>Returned by default. Nullable. |
 
 ### Group visibility options
 

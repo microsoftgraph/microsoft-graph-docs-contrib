@@ -54,8 +54,10 @@ The following table shows the properties accepted to update an `accessReviewInst
 
 | Property     | Type       | Description |
 |:-------------|:------------|:------------|
-| decision  | String | Access decision for the entity being reviewed. Possible values are: `Approve` `Deny` `NotReviewed` `DontKnow`. Required.  |
+| decision  | String | Access decision for the entity being reviewed. The possible values are: `Approve` `Deny` `NotReviewed` `DontKnow`. Required.  |
 |  justification | String | Context of the review provided to admins. Required if justificationRequiredOnApproval is True on the accessReviewScheduleDefinition.  |
+| applyResult | String| The result of the apply action. Only supported for BYOD scenarios. Possible values: `New`, `AppliedSuccessfully`, `AppliedWithUnknownFailure`, `AppliedSuccessfullyButObjectNotFound`, and `ApplyNotSupported`. |
+| applyDescription | String | A description of the applyResult |
 
 ## Response
 If successful, this method returns a `204 No Content` response code and no response body.
@@ -122,7 +124,7 @@ Content-Type: application/json
   "blockType": "response"
 } -->
 ```http
-HTTP/1.1 204 Accepted
+HTTP/1.1 202 Accepted
 ```
 
 
@@ -181,7 +183,70 @@ Content-Type: application/json
   "blockType": "response"
 } -->
 ```http
-HTTP/1.1 204 Accepted
+HTTP/1.1 202 Accepted
+```
+
+### Example 3: Update a applyResult on an accessReviewInstance
+
+#### Request
+
+The following is an example of updating the applyResult on a BYOD decision.
+
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_accessReviewDefinitionInstanceDecisionsItem_3"
+}-->
+``` http
+PATCH https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/5eac5a70-7cd7-4f20-92b0-f9dba70dd7f0/instances/6444d4fd-ab55-4608-8cf9-c6702d172bcc/decisions/e6cafba0-cbf0-4748-8868-0810c7f4cc06
+Content-Type: application/json
+
+{
+  "applyResult": "AppliedSuccessfully",
+  "applyDescription": "Completed by John Doe",
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-accessreviewdefinitioninstancedecisionsitem-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-accessreviewdefinitioninstancedecisionsitem-3-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-accessreviewdefinitioninstancedecisionsitem-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-accessreviewdefinitioninstancedecisionsitem-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-accessreviewdefinitioninstancedecisionsitem-3-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-accessreviewdefinitioninstancedecisionsitem-3-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-accessreviewdefinitioninstancedecisionsitem-3-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 202 Accepted
 ```
 
 <!--

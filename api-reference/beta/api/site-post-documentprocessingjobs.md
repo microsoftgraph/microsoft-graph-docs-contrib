@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Create a new [documentProcessingJob](../resources/documentprocessingjob.md) object. The document processing job queues a document, or all documents in a folder, for processing by the applied content models.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /sites/{sitesId}/documentProcessingJobs
 ```
 
@@ -72,7 +72,7 @@ The following example shows a request.
   "name": "create_documentprocessingjob_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/sites/ede4bb84-6c94-4c39-8acf-3d9dbb667fba/documentProcessingJobs
 Content-Type: application/json
 
@@ -119,7 +119,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.documentProcessingJob"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

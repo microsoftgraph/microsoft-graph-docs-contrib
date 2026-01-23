@@ -23,7 +23,7 @@ This resource type contains information related to audio recording.
 | recordingAccessToken           | String                      | The access token required to retrieve the recording.                                                                                              |
 | recordingLocation              | String                      | The location where the recording is located.                                                                                                      |
 | resultInfo                     | [resultInfo](resultinfo.md) | The result information.  Read-only.                                                                                              |
-| status                         | String                      | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.                                                |
+| status                         | String                      | The possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.                                                |
 
 ## Relationships
 None

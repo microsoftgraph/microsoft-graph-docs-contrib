@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|Not supported.|Not supported.|
+|Delegated (work or school account)|VirtualEvent.ReadWrite|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|VirtualEventRegistration-Anon.ReadWrite.Chat|Not available.|
+|Application|VirtualEventRegistration-Anon.ReadWrite.Chat|VirtualEventRegistration-Anon.ReadWrite.All|
 

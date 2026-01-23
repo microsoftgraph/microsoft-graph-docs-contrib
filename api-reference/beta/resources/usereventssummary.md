@@ -5,7 +5,7 @@ author: "egreenberg14"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
-ms.date: 07/23/2025
+ms.date: 01/12/2026
 ---
 
 # userEventsSummary resource type
@@ -27,7 +27,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authMethod|usageAuthMethod|The authentication method being targeted in the event. The possible values are: `email`, `mobileSMS`, `mobileCall`, `officePhone`, `securityQuestion`, `appNotification`, `appCode`, `alternateMobileCall`, `fido`, `appPassword`, `unknownFutureValue`, `externalAuthMethod`.. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `externalAuthMethod`.|
+|authMethod|[usageAuthMethod](../resources/usageauthmethod.md)|The authentication method being targeted in the event.|
 |eventDateTime|DateTimeOffset|The date and time (UTC) when the event occurred.  The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |failureReason|String|The specific reason why the event failed (if it was not successful.)|
 |feature|featureType|The type of event that occurred. The possible values are: `registration`, `reset`, `unknownFutureValue`.|

@@ -70,7 +70,7 @@ The following example shows a request.
   "sampleKeys": ["AAMehdkfuhgAAA=", "AAMkAGUzY5QKjAAA=", "AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8="]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/todo/lists/AAMehdkfuhgAAA=/tasks/AAMkAGUzY5QKjAAA=/attachments/AAMkAGUzY5QKjAAABEgAQAMkpJI_X-LBFgvrv1PlZYd8=
 ```
 
@@ -113,7 +113,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.taskFileAttachment"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -119,22 +119,22 @@ Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#cloudPcGalleryImage",
-  "id": "MicrosoftWindowsDesktop_windows-ent-cpc_19h2-ent-cpc-os",
-  "displayName": "Windows 10 Enterprise + OS Optimizations 1909",
-  "offerDisplayName": "Windows 10 Enterprise + OS Optimizations",
-  "skuDisplayName": "1909",
-  "publisher": "MicrosoftWindowsDesktop",
-  "publisherName": "MicrosoftWindowsDesktop",
+  "id": "microsoftwindowsdesktop_windows-ent-cpc_win11-24H2-ent-cpc",
+  "displayName": "Windows 11 Enterprise 24H2",
+  "offerDisplayName": "Windows 11 Enterprise",
+  "skuDisplayName": "24H2",
+  "publisher": "microsoftwindowsdesktop",
+  "publisherName": "microsoftwindowsdesktop",
   "offer": "windows-ent-cpc",
   "offerName": "windows-ent-cpc",
-  "sku": "19h2-ent-cpc-os",
-  "skuName": "19h2-ent-cpc-os",
+  "sku": "win11-24H2-ent-cpc",
+  "skuName": "win11-24H2-ent-cpc",
   "recommendedSku": "light",
   "status": "supported",
   "sizeInGB": 64,
-  "startDate": "2019-11-12",
-  "endDate": "2022-05-10",
-  "expirationDate": "2022-11-10",
-  "osVersionNumber": "10.0.18363.720"
+  "startDate": "2024-09-30",
+  "endDate": "2027-10-11",
+  "expirationDate": "2028-04-11",
+  "osVersionNumber": "10.0.26100.0"
 }
 ```

@@ -19,9 +19,8 @@ Represents a container that exposes navigation properties for cloud communicatio
 Inherits from [entity](../resources/entity.md)
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[getAllOnlineMeetingMessages](../api/cloudcommunications-getallonlinemeetingmessages.md)|[engagementConversationMessage](../resources/engagementconversationmessage.md) collection|Get all Teams question and answer (Q&A) conversation messages in a tenant.|
+
+None.
 
 ## Properties
 None.
@@ -29,7 +28,8 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|onlineMeetingConversations|[onlineMeetingEngagementConversation](../resources/onlinemeetingengagementconversation.md) collection|A collection of structured question-and-answer (Q&A) thread in Teams directly associated with online meetings.|
+|adhocCalls|[adhocCall](../resources/adhoccall.md) collection|A collection of ad hoc calls in Teams. |
+|onlineMeetingConversations|[onlineMeetingEngagementConversation](../resources/onlinemeetingengagementconversation.md) collection|A collection of structured question-and-answer (Q&A) threads in Teams directly associated with online meetings.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

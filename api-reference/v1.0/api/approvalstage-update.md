@@ -62,7 +62,7 @@ The following table shows the properties that are required for this method.
 
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-| reviewResult | String | Decision of the approver. Possible values are: `Approve`, `Deny`. Required.|
+| reviewResult | String | Decision of the approver. The possible values are: `Approve`, `Deny`. Required.|
 | justification | String | Justification related to the approver's decision. |
 
 
@@ -81,7 +81,7 @@ If successful, this method returns a `204 No Content` response code in the respo
   "name": "patch_approvalstage"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/abd306ef-f7b2-4a10-9fd1-493454322489/stages/d4fa4045-4716-436d-aec5-57b0a713f095
 
 {

@@ -191,7 +191,7 @@ The following example shows a request.
   "name": "timecard-clockin2"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/teams/fd15cad8-80f6-484f-9666-3caf695fbf32/schedule/timeCards/clockin
 Content-type: application/json
 

@@ -73,7 +73,7 @@ The following table lists the four roles that can be assigned to an application 
   "name": "create_permission_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/sites/{siteId}/permissions
 Content-Type: application/json
 
@@ -131,7 +131,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.permission"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
