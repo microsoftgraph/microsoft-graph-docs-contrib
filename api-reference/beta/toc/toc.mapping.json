@@ -3593,6 +3593,31 @@
       ]
     },
     {
+      "name": "Tenant administration (preview)",
+      "childNodes": [
+        {
+          "name": "Configuration management",
+          "overview": "../../resources/unified-tenant-configuration-management-api-overview.md",
+          "shouldSort": true,
+          "resources": [
+            "configurationBaseline",
+            "configurationDrift",
+            "configurationMonitor",
+            "configurationMonitoringResult",
+            "configurationSnapshotJob"
+          ],
+          "complexTypes": [
+            "baselineParameter",
+            "baselineResource",
+            "clientCredentials",
+            "driftedProperty",
+            "errorDetail",
+            "openComplexDictionaryType"
+          ]
+        }
+      ]
+    },
+    {
       "name": "To-do tasks",
       "overview": "../../resources/todo-overview.md",
       "keywords": [
