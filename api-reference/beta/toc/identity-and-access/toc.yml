@@ -3019,6 +3019,20 @@ items:
         href: ../../api/riskdetection-list.md
       - name: Get
         href: ../../api/riskdetection-get.md
+    - name: Risky agent
+      items:
+      - name: Risky agent
+        href: ../../resources/riskyagent.md
+      - name: List
+        href: ../../api/riskyagent-list.md
+      - name: Get
+        href: ../../api/riskyagent-get.md
+      - name: Dismiss
+        href: ../../api/riskyagent-dismiss.md
+      - name: Confirm compromised
+        href: ../../api/riskyagent-confirmcompromised.md
+      - name: Confirm safe
+        href: ../../api/riskyagent-confirmsafe.md
     - name: Risky user
       items:
       - name: Risky user

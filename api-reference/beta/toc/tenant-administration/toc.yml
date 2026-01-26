@@ -1,0 +1,72 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
+items:
+- name: Configuration management
+  items:
+  - name: Overview
+    href: ../../resources/unified-tenant-configuration-management-api-overview.md
+  - name: Configuration baseline
+    items:
+    - name: Configuration baseline
+      href: ../../resources/configurationbaseline.md
+    - name: Get
+      href: ../../api/configurationbaseline-get.md
+    - name: Create snapshot
+      href: ../../api/configurationbaseline-createsnapshot.md
+  - name: Configuration drift
+    items:
+    - name: Configuration drift
+      href: ../../resources/configurationdrift.md
+    - name: List
+      href: ../../api/configurationmanagement-list-configurationdrifts.md
+    - name: Get
+      href: ../../api/configurationdrift-get.md
+  - name: Configuration monitor
+    items:
+    - name: Configuration monitor
+      href: ../../resources/configurationmonitor.md
+    - name: List
+      href: ../../api/configurationmanagement-list-configurationmonitors.md
+    - name: Create
+      href: ../../api/configurationmanagement-post-configurationmonitors.md
+    - name: Get
+      href: ../../api/configurationmonitor-get.md
+    - name: Update
+      href: ../../api/configurationmonitor-update.md
+    - name: Delete
+      href: ../../api/configurationmonitor-delete.md
+    - name: Get configuration baseline
+      href: ../../api/configurationbaseline-get.md
+  - name: Configuration monitoring result
+    items:
+    - name: Configuration monitoring result
+      href: ../../resources/configurationmonitoringresult.md
+    - name: List
+      href: ../../api/configurationmanagement-list-configurationmonitoringresults.md
+    - name: Get
+      href: ../../api/configurationmonitoringresult-get.md
+  - name: Configuration snapshot job
+    items:
+    - name: Configuration snapshot job
+      href: ../../resources/configurationsnapshotjob.md
+    - name: List
+      href: ../../api/configurationmanagement-list-configurationsnapshotjobs.md
+    - name: Get
+      href: ../../api/configurationsnapshotjob-get.md
+    - name: Delete
+      href: ../../api/configurationsnapshotjob-delete.md
+  - name: Complex types
+    items:
+    - name: Baseline parameter
+      href: ../../resources/baselineparameter.md
+    - name: Baseline resource
+      href: ../../resources/baselineresource.md
+    - name: Client credentials
+      href: ../../resources/clientcredentials.md
+    - name: Drifted property
+      href: ../../resources/driftedproperty.md
+    - name: Error detail
+      href: ../../resources/errordetail.md
+    - name: Open complex dictionary type
+      href: ../../resources/opencomplexdictionarytype.md

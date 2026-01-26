@@ -1,0 +1,70 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "e057c2e9-095d-40c0-a4b0-00023c567c9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "admin",
+          "ChangeType": "Addition",
+          "Description": "Added the [admin](https://learn.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-beta) resource.",
+          "Target": "admin"
+        },
+        {
+          "Id": "e057c2e9-095d-40c0-a4b0-00023c567c9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "exchangeAdmin",
+          "ChangeType": "Addition",
+          "Description": "Added the [exchangeAdmin](https://learn.microsoft.com/en-us/graph/api/resources/exchangeAdmin?view=graph-rest-beta) resource.",
+          "Target": "exchangeAdmin"
+        },
+        {
+          "Id": "e057c2e9-095d-40c0-a4b0-00023c567c9e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "exchangeMessageTraceStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **exchangeMessageTraceStatus** enumeration type.",
+          "Target": "exchangeMessageTraceStatus"
+        },
+        {
+          "Id": "e057c2e9-095d-40c0-a4b0-00023c567c9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "exchangeMessageTrace",
+          "ChangeType": "Addition",
+          "Description": "Added the [exchangeMessageTrace](https://learn.microsoft.com/en-us/graph/api/resources/exchangeMessageTrace?view=graph-rest-beta) resource.",
+          "Target": "exchangeMessageTrace"
+        },
+        {
+          "Id": "e057c2e9-095d-40c0-a4b0-00023c567c9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "exchangeMessageTraceDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [exchangeMessageTraceDetail](https://learn.microsoft.com/en-us/graph/api/resources/exchangeMessageTraceDetail?view=graph-rest-beta) resource.",
+          "Target": "exchangeMessageTraceDetail"
+        },
+        {
+          "Id": "e057c2e9-095d-40c0-a4b0-00023c567c9e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "messageTracingRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [messageTracingRoot](https://learn.microsoft.com/en-us/graph/api/resources/messageTracingRoot?view=graph-rest-beta) resource.",
+          "Target": "messageTracingRoot"
+        },
+        {
+          "Id": "e057c2e9-095d-40c0-a4b0-00023c567c9e",
+          "ApiChange": "Method",
+          "ChangedApiName": "getDetailsByRecipient",
+          "ChangeType": "Addition",
+          "Description": "Added the [getDetailsByRecipient](https://learn.microsoft.com/en-us/graph/api/exchangeMessageTrace-getDetailsByRecipient?view=graph-rest-beta) method to the [exchangeMessageTrace](https://learn.microsoft.com/en-us/graph/api/resources/exchangeMessageTrace?view=graph-rest-beta) resource.",
+          "Target": "exchangeMessageTrace"
+        }
+      ],
+      "Id": "e057c2e9-095d-40c0-a4b0-00023c567c9e",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-01-19T12:07:06.4477747Z",
+      "WorkloadArea": "Mail",
+      "SubArea": "Message trace"
+    }
+  ]
+}

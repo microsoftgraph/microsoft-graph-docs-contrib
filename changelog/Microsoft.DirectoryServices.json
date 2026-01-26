@@ -3,6 +3,40 @@
 {
       "ChangeList": [
         {
+          "Id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get deletedItem",
+          "ChangeType": "Change",
+          "Description": "Updated the [Get deletedItem](https://learn.microsoft.com/en-us/graph/api/directory-deleteditems-get?view=graph-rest-v1.0) API to support retrieving soft deleted security [groups](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-v1.0).",
+          "Target": "Get deletedItem"
+        },
+        {
+          "Id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+          "ApiChange": "Method",
+          "ChangedApiName": "List deletedItems",
+          "ChangeType": "Change",
+          "Description": "Updated the [List deletedItems](https://learn.microsoft.com/en-us/graph/api/directory-deleteditems-list?view=graph-rest-v1.0) API to support retrieving soft deleted security [groups](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-v1.0).",
+          "Target": "List deletedItems"
+        },
+        {
+          "Id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+          "ApiChange": "Method",
+          "ChangedApiName": "Restore deletedItem",
+          "ChangeType": "Change",
+          "Description": "Updated the [Restore deletedItem](https://learn.microsoft.com/en-us/graph/api/directory-deleteditems-restore?view=graph-rest-v1.0) API to support restoring soft deleted security [groups](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-v1.0).",
+          "Target": "Restore deletedItem"
+        }
+      ],
+      "Id": "a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-01-13T00:00:00.0000000Z",
+      "WorkloadArea": "Groups",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "fccc0463-d545-4848-a52f-b77d4f364666",
           "ApiChange": "Enumeration",
           "ChangedApiName": "kind",
@@ -14955,6 +14989,32 @@
       "CreatedDateTime": "2025-12-08T13:04:08.76263Z",
       "WorkloadArea": "Applications",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "930b1167-0c5d-41b4-aae7-68904edecee0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "crossTenantGroupSyncInbound",
+          "ChangeType": "Addition",
+          "Description": "Added the [crossTenantGroupSyncInbound](https://learn.microsoft.com/en-us/graph/api/resources/crossTenantGroupSyncInbound?view=graph-rest-beta) resource type.",
+          "Target": "crossTenantGroupSyncInbound"
+        },
+        {
+          "Id": "930b1167-0c5d-41b4-aae7-68904edecee0",
+          "ApiChange": "Property",
+          "ChangedApiName": "groupSyncInbound",
+          "ChangeType": "Addition",
+          "Description": "Added the **groupSyncInbound** property to the [crossTenantIdentitySyncPolicyPartner](https://learn.microsoft.com/en-us/graph/api/resources/crossTenantIdentitySyncPolicyPartner?view=graph-rest-beta) resource.",
+          "Target": "crossTenantIdentitySyncPolicyPartner"
+        }
+      ],
+      "Id": "930b1167-0c5d-41b4-aae7-68904edecee0",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-01-21T15:10:03.772112Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     }
   ]
 }

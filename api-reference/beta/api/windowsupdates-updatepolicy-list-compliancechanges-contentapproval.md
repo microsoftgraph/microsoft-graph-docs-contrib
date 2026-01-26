@@ -1,11 +1,11 @@
 ---
 title: "List contentApprovals"
 description: "Get a list of the contentApproval objects and their properties."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 09/16/2024
+ms.date: 01/20/2026
 ---
 
 # List contentApprovals
@@ -36,7 +36,8 @@ GET /admin/windows/updates/updatePolicies/{updatePolicyId}/complianceChanges/mic
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+This method supports the `$select`, `$filter`, `$count`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|

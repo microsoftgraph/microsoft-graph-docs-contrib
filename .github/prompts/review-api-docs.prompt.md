@@ -124,7 +124,7 @@ For files in `api-reference/v1.0/api/` and `api-reference/beta/api/`:
 For files in `api-reference/v1.0/resources/` and `api-reference/beta/resources/`:
 
 **Required Elements:**
-- [ ] Title is in lower camel case
+- [ ] Title is in lower camel case (e.g. `user`, `deviceManagementScript`)
 - [ ] Description begins with present-tense verb (represents, contains)
 - [ ] Namespace declaration immediately after H1 title
 - [ ] Methods table uses succinct method names (avoids repeating resource name)
