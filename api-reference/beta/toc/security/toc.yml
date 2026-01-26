@@ -840,6 +840,14 @@ items:
       href: ../../api/security-sensorcandidateactivationconfiguration-get.md
     - name: Update
       href: ../../api/security-identitycontainer-post-sensorcandidateactivationconfiguration.md
+  - name: Auto auditing configuration
+    items:
+    - name: Auto auditing configuration
+      href: ../../resources/security-autoauditingconfiguration.md
+    - name: Get
+      href: ../../api/security-autoauditingconfiguration-get.md
+    - name: Update
+      href: ../../api/security-autoauditingconfiguration-update.md
   - name: Complex types
     items:
     - name: Account
