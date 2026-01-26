@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "ediscovery_noncustodialdatasource_list" } -->
 [!INCLUDE [permissions-table](../includes/permissions/ediscovery-noncustodialdatasource-list-permissions.md)]
 
+[!INCLUDE [rbac-ediscovery-read](../includes/rbac-for-apis/rbac-ediscovery-apis-read.md)]
+
 ## HTTP request
 
 <!-- {

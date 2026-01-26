@@ -30,6 +30,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "ediscovery_case_post" } -->
 [!INCLUDE [permissions-table](../includes/permissions/ediscovery-case-post-permissions.md)]
 
+[!INCLUDE [rbac-ediscovery-write](../includes/rbac-for-apis/rbac-ediscovery-apis-write.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->

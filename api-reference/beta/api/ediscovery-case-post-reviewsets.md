@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "ediscovery_case_post_reviewsets" } -->
 [!INCLUDE [permissions-table](../includes/permissions/ediscovery-case-post-reviewsets-permissions.md)]
 
+[!INCLUDE [rbac-ediscovery-reviewset](../includes/rbac-for-apis/rbac-ediscovery-reviewset-apis.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->

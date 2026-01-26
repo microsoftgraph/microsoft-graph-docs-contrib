@@ -24,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "security_ediscoverycustodian_activate" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoverycustodian-activate-permissions.md)]
 
+[!INCLUDE [rbac-ediscovery-custodian](../includes/rbac-for-apis/rbac-ediscovery-custodian-apis.md)]
+
 ## HTTP request
 
 <!-- {

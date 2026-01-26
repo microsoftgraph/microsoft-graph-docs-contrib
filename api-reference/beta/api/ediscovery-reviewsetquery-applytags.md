@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "ediscovery_reviewsetquery_applytags" } -->
 [!INCLUDE [permissions-table](../includes/permissions/ediscovery-reviewsetquery-applytags-permissions.md)]
 
+[!INCLUDE [rbac-rbac-ediscovery-export-apis](../includes/rbac-for-apis/rbac-ediscovery-export-apis.md)]
+
 ## HTTP request
 
 <!-- {

@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "security_ediscoveryreviewset_export" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoveryreviewset-export-permissions.md)]
 
+[!INCLUDE [rbac-ediscovery-export](../includes/rbac-for-apis/rbac-ediscovery-export-apis.md)]
+
 ## HTTP request
 
 <!-- {
