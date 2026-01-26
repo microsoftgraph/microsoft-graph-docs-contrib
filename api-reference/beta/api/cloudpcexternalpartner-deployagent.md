@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Trigger agent deployment for a set of Windows 365 Cloud PCs that are provisioned. This API is supported when the connection is enabled and the agent setting is configured. Currently, only support Windows 365 business Cloud PC.
+Trigger agent deployment for a set of Windows 365 Cloud PCs that are provisioned, and return an activity ID. This API is supported when the connection is enabled and the agent setting is configured. Currently, only support Windows 365 business Cloud PC.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
