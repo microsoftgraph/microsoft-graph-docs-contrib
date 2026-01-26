@@ -1836,7 +1836,9 @@
               "name": "Identity protection",
               "overview": "../../resources/identityprotection-overview.md",
               "resources": [
+                "agentRiskDetection",
                 "riskDetection",
+                "riskyAgent",
                 "riskyUser",
                 "riskyUserHistoryItem",
                 "servicePrincipalRiskDetection",
@@ -3587,6 +3589,31 @@
             "timeRange",
             "userSolutionRoot",
             "workforceIntegrationEncryption"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tenant administration (preview)",
+      "childNodes": [
+        {
+          "name": "Configuration management",
+          "overview": "../../resources/unified-tenant-configuration-management-api-overview.md",
+          "shouldSort": true,
+          "resources": [
+            "configurationBaseline",
+            "configurationDrift",
+            "configurationMonitor",
+            "configurationMonitoringResult",
+            "configurationSnapshotJob"
+          ],
+          "complexTypes": [
+            "baselineParameter",
+            "baselineResource",
+            "clientCredentials",
+            "driftedProperty",
+            "errorDetail",
+            "openComplexDictionaryType"
           ]
         }
       ]

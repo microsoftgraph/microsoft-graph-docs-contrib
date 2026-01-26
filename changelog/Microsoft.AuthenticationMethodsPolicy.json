@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "a1b2c3d4-5e6f-7890-abcd-ef1234567890",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationMethod",
+          "ChangeType": "Change",
+          "Description": "Added multi-factor authentication (MFA) requirement for self-service operations for supported authentication methods. Starting January 26, 2026, users who manage their own authentication methods through self-service operations, such as adding, updating, or deleting phone numbers and email addresses, must complete multifactor authentication (MFA) if they last authenticated more than 10 minutes ago in the current session. For more guidance on handling this change in your application, see [Microsoft Entra authentication methods API overview](https://learn.microsoft.com/en-us/graph/api/resources/authenticationmethods-overview?view=graph-rest-1.0).",
+          "Target": "authenticationMethod"
+        }
+      ],
+      "Id": "a1b2c3d4-5e6f-7890-abcd-ef1234567890",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-01-26T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "799131f4-3b4c-4f47-a100-a173117b0f96",
           "ApiChange": "Resource",
           "ChangedApiName": "x509CertificateAuthorityScope",
