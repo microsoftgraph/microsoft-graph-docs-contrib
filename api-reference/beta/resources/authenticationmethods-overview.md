@@ -7,7 +7,7 @@ author: FaithOmbongi
 ms.reviewer: julija.pettere, intelligentaccesspm
 ms.subservice: "entra-sign-in"
 doc_type: "conceptualPageType"
-ms.date: 07/02/2024
+ms.date: 01/16/2026
 ---
 
 # Microsoft Entra authentication methods API overview
@@ -31,6 +31,23 @@ The authentication method APIs are used to manage a user's authentication method
 * You can update that email, or delete it from the user.
 * You can assign and activate a hardware OATH token for a user.
 * You can retrieve details of a user's QR code authentication, and delete standard QR code if they lost it.
+
+Some APIs support self-service operations that allow users to manage their own authentication methods. For example, users can add, update, or delete their own phone numbers and email addresses used for authentication and SSPR. 
+
+> [!IMPORTANT]
+> Starting January 26, 2026, self-service credential management operations require users to complete multifactor authentication (MFA) if they last authenticated more than 10 minutes ago in the current session. This change applies to both end users and administrators managing credentials and may result in more frequent MFA prompts for users who are already registered for MFA.
+> When calling credential management APIs, your application must handle 403 Forbidden responses appropriately:
+> 1. **Detect the 403 response** - When the API returns a 403 status code, the user needs to complete MFA.
+> 2. **Request fresh MFA** - Create a new interactive OAuth2 request with the following claims parameter:
+>    ```json
+>    {"access_token":{"amr":{"essential":true,"values":["ngcmfa"]}}}
+>    ```
+>3. **User completes MFA** - During the interactive OAuth2 request, users with registered MFA methods must complete authentication. The MFA credential remains valid for 10 minutes.
+>4. **Retry with new token** - Use the newly obtained access token to retry the credential management request.
+>
+> For more information about implementing claims challenges in your application, see:
+>    - [OpenID Connect specification: Requesting Claims using the "claims" Request Parameter](https://openid.net/specs/openid-connect-core-1_0-final.html#ClaimsParameter)
+>    - [Claims challenges, claims requests and client capabilities](/entra/identity-platform/claims-challenge)
 
 The ability for a user to use an authentication method is governed by the [authentication method policy](authenticationmethodspolicies-overview.md) for the tenant. For example, only users in the R&D department might be enabled to use the FIDO2 method while all users might be enabled to use Microsoft Authenticator.
 
