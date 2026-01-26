@@ -3011,6 +3011,14 @@ items:
     items:
     - name: Overview
       href: ../../resources/identityprotection-overview.md
+    - name: Agent risk detection
+      items:
+      - name: Agent risk detection
+        href: ../../resources/agentriskdetection.md
+      - name: List
+        href: ../../api/identityprotectionroot-list-agentriskdetections.md
+      - name: Get
+        href: ../../api/agentriskdetection-get.md
     - name: Risk detection
       items:
       - name: Risk detection
