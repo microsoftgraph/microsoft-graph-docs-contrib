@@ -1656,6 +1656,14 @@
               ]
             },
             {
+              "name": "Fraud protection provider",
+              "resources": [
+                "fraudProtectionProvider",
+                "arkoseFraudProtectionProvider",
+                "humanSecurityFraudProtectionProvider"
+              ]
+            },
+            {
               "name": "Web application firewall",
               "resources": [
                 "webApplicationFirewallProvider",
@@ -1841,11 +1849,8 @@
                 "riskyAgent",
                 "riskyUser",
                 "riskyUserHistoryItem",
-                "servicePrincipalRiskDetection",
                 "riskyServicePrincipal",
-                "fraudProtectionProvider",
-                "arkoseFraudProtectionProvider",
-                "humanSecurityFraudProtectionProvider"
+                "servicePrincipalRiskDetection"
               ]
             },
             {
