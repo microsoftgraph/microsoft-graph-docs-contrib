@@ -7,14 +7,14 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 This resource configures the Teams Upgrade settings.
 
 More information: https://docs.microsoft.com/en-us/MicrosoftTeams/migration-interop-guidance-for-teams-with-skype
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -23,9 +23,9 @@ More information: https://docs.microsoft.com/en-us/MicrosoftTeams/migration-inte
 | SfBMeetingJoinUx | Write | String | The SfBMeetingJoinUx property allows admins to specify which app is used to join Skype for Business meetings, even after the user has been upgraded to Teams. Allowed values are: 'SkypeMeetingsApp' and 'NativeLimitedClient'. 'NativeLimitedClient' means the existing Skype for Business rich client will be used, but since the user is upgraded, only meeting functionality is available. Calling and Messaging are done via Teams. 'SkypeMeetingsApp' means use the web-downloadable app. This setting can be useful for organizations that have upgraded to Teams and no longer want to install Skype for Business on their users' computers. | `SkypeMeetingsApp`, `NativeLimitedClient` |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Entra ID roles
+#### Microsoft Entra ID roles
 
 The following [roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) can be granted to the UTCM (Unified Tenant Configuration Management) service principal:
 
@@ -35,11 +35,11 @@ The following [roles](/entra/identity/role-based-access-control/permissions-refe
 | Update    | Teams Administrator |
 
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

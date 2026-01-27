@@ -7,12 +7,12 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 Intune Windows Update For Business Feature Update Profile for Windows10
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -26,9 +26,9 @@ Intune Windows Update For Business Feature Update Profile for Windows10
 | Assignments | Write | MSFT_DeviceManagementConfigurationPolicyAssignments[] | Represents the assignment to the Intune policy. | - |
 | Ensure | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
 
-### MSFT_DeviceManagementConfigurationPolicyAssignments
+#### MSFT_DeviceManagementConfigurationPolicyAssignments
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -39,9 +39,9 @@ Intune Windows Update For Business Feature Update Profile for Windows10
 | groupDisplayName | Write | String | The group Display Name that is the target of the assignment. | - |
 | collectionId | Write | String | The collection Id that is the target of the assignment.(ConfigMgr) | - |
 
-### MSFT_MicrosoftGraphWindowsUpdateRolloutSettings
+#### MSFT_MicrosoftGraphWindowsUpdateRolloutSettings
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -50,7 +50,7 @@ Intune Windows Update For Business Feature Update Profile for Windows10
 | OfferStartDateTimeInUTC | Write | String | The feature update's starting date and time to be set, update, and displayed for a feature Update profile for example: 2020-06-09T10:00:00Z. | - |
 
 
-## RolloutSettings
+### RolloutSettings
 
 The RolloutSettings for this resource have the following constraints and notes: 
 
@@ -71,13 +71,13 @@ The RolloutSettings for this resource have the following constraints and notes:
     * If the policy is missing and the start and end date are before the current date, it will return true.
     * If the start date is different but before the current start date or time, it will return true.
 
-## Permissions
+### Permissions
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

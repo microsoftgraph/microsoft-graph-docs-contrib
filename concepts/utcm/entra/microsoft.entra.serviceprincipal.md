@@ -7,12 +7,12 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 This resource configures an Microsoft Entra ServicePrincipal.
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -34,9 +34,9 @@ This resource configures an Microsoft Entra ServicePrincipal.
 | Tags | Write | StringArray[] | Tags linked to this service principal.Note that if you intend for this service principal to show up in the All Applications list in the admin portal, you need to set this value to {WindowsAzureActiveDirectoryIntegratedApp} | - |
 | Ensure | Write | String | Specify if the Microsoft Entra App should exist or not. | `Present`, `Absent` |
 
-### ServicePrincipalRoleAssignment
+#### ServicePrincipalRoleAssignment
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -44,9 +44,9 @@ This resource configures an Microsoft Entra ServicePrincipal.
 | Identity | Write | String | Unique identity representing the principal. | - |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Entra ID roles
+#### Microsoft Entra ID roles
 
 The following [roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) can be granted to the UTCM (Unified Tenant Configuration Management) service principal:
 
@@ -56,11 +56,11 @@ The following [roles](/entra/identity/role-based-access-control/permissions-refe
 | Update    | Application Administrator |
 
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

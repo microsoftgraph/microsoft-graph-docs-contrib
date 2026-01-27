@@ -7,12 +7,12 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 This resource configures a Retention Compliance Policy in Security and Compliance.
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -39,9 +39,9 @@ This resource configures a Retention Compliance Policy in Security and Complianc
 | TeamsChatLocationException | Write | StringArray[] | This parameter specifies the SharePoint Online sites to exclude when you use the value All for the TeamsChatLocation parameter. You identify the site by its URL value. | - |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Entra ID roles
+#### Microsoft Entra ID roles
 
 The following [roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) can be granted to the UTCM (Unified Tenant Configuration Management) service principal:
 
@@ -51,12 +51,12 @@ The following [roles](/entra/identity/role-based-access-control/permissions-refe
 | Update    | Compliance Administrator |
 
 
-### Office 365 Exchange Online
+#### Office 365 Exchange Online
 
 To authenticate with the Security and Compliance APIs, this resource requires the following application permissions. Delegated scenarios aren't supported.
 
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

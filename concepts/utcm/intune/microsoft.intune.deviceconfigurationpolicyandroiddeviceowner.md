@@ -7,12 +7,12 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 This resource configures an Intune Device Configuration Policy Android Device Owner.
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -156,9 +156,9 @@ This resource configures an Intune Device Configuration Policy Android Device Ow
 | Assignments | Write | MSFT_DeviceManagementConfigurationPolicyAssignments[] | Represents the assignment to the Intune policy. | - |
 | Ensure | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
 
-### MSFT_DeviceManagementConfigurationPolicyAssignments
+#### MSFT_DeviceManagementConfigurationPolicyAssignments
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -169,9 +169,9 @@ This resource configures an Intune Device Configuration Policy Android Device Ow
 | groupDisplayName | Write | String | The group Display Name that is the target of the assignment. | - |
 | collectionId | Write | String | The collection Id that is the target of the assignment.(ConfigMgr) | - |
 
-### MSFT_MicrosoftGraphapplistitem
+#### MSFT_MicrosoftGraphapplistitem
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -181,27 +181,27 @@ This resource configures an Intune Device Configuration Policy Android Device Ow
 | name | Write | String | Define the name of the app. | - |
 | publisher | Write | String | Define the publisher of the app. | - |
 
-### MSFT_MicrosoftGraphandroiddeviceowneruserfacingmessage
+#### MSFT_MicrosoftGraphandroiddeviceowneruserfacingmessage
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | defaultMessage | Write | String | The default message displayed if the user's locale doesn't match with any of the localized messages. | - |
 | localizedMessages | Write | MSFT_MicrosoftGraphkeyvaluepair[] | The list of &lt;locale, message&gt; pairs. This collection can contain a maximum of 500 elements. | - |
 
-### MSFT_MicrosoftGraphkeyvaluepair
+#### MSFT_MicrosoftGraphkeyvaluepair
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | Name | Write | String | Name of the message localizedMessages. | - |
 | Value | Write | String | Value of the message localizedMessages. | - |
 
-### MSFT_MicrosoftGraphandroiddeviceownerglobalproxy
+#### MSFT_MicrosoftGraphandroiddeviceownerglobalproxy
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -211,18 +211,18 @@ This resource configures an Intune Device Configuration Policy Android Device Ow
 | host | Write | String | The host name. | - |
 | port | Write | UInt32 | The port. | - |
 
-### MSFT_MicrosoftGraphandroiddeviceownerkioskmodeapppositionitem
+#### MSFT_MicrosoftGraphandroiddeviceownerkioskmodeapppositionitem
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | item | Write | MSFT_MicrosoftGraphandroiddeviceownerkioskmodehomescreenitem | Item to be arranged. | - |
 | position | Write | UInt32 | Position of the item on the grid. Valid values 0 to 9999999. | - |
 
-### MSFT_MicrosoftGraphandroiddeviceownerkioskmodehomescreenitem
+#### MSFT_MicrosoftGraphandroiddeviceownerkioskmodehomescreenitem
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -235,9 +235,9 @@ This resource configures an Intune Device Configuration Policy Android Device Ow
 | label | Write | String | The label of the item. | - |
 | link | Write | String | The link of the item. | - |
 
-### MSFT_MicrosoftGraphandroiddeviceownerkioskmodemanagedfolder
+#### MSFT_MicrosoftGraphandroiddeviceownerkioskmodemanagedfolder
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -245,9 +245,9 @@ This resource configures an Intune Device Configuration Policy Android Device Ow
 | folderName | Write | String | The folder name. | - |
 | items | Write | MSFT_MicrosoftGraphandroiddeviceownerkioskmodefolderitem[] | Item to be arranged. | - |
 
-### MSFT_MicrosoftGraphandroiddeviceownerkioskmodefolderitem
+#### MSFT_MicrosoftGraphandroiddeviceownerkioskmodefolderitem
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -257,9 +257,9 @@ This resource configures an Intune Device Configuration Policy Android Device Ow
 | label | Write | String | The label of the item. | - |
 | link | Write | String | The link of the item. | - |
 
-### MSFT_MicrosoftGraphandroiddeviceownersystemupdatefreezeperiod
+#### MSFT_MicrosoftGraphandroiddeviceownersystemupdatefreezeperiod
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -269,13 +269,13 @@ This resource configures an Intune Device Configuration Policy Android Device Ow
 | startMonth | Write | UInt32 | The month of the start date of the freeze period. Valid values 1 to 12. | - |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

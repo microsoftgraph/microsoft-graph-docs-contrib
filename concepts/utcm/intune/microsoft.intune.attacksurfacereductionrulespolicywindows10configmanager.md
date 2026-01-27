@@ -7,7 +7,7 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 This resource configures an Intune Endpoint Protection Attack Surface Reduction Rules policy for a Windows 10 Device for Configuration Manager.
 This policy setting enables setting the state (Block/Audit/Off/Warn) for each attack surface reduction (ASR) rule. Each ASR rule listed can be set to one of the following states (Block/Audit/Off/Warn). The ASR rule ID and state should be added under the Options for this setting. Each entry must be listed as a name value pair. The name defines a valid ASR rule ID, while the value contains the status ID indicating the status of the rule.
@@ -15,7 +15,7 @@ This policy setting enables setting the state (Block/Audit/Off/Warn) for each at
 For more information about ASR rule ID and status ID, see Enable Attack Surface Reduction: https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-exploit-guard/enable-attack-surface-reduction.
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -45,9 +45,9 @@ For more information about ASR rule ID and status ID, see Enable Attack Surface 
 | EnableControlledFolderAccess | Write | String | This rule enable Controlled folder access which protects your data by checking apps against a list of known, trusted apps.values 0:disable, 1:enable, 2:audit, 3: Block disk modification only, 4: Audit disk modification only | `0`, `1`, `2`, `3`, `4` |
 | Ensure | Write | String | Present ensures the policy exists, absent ensures it's removed | `Present`, `Absent` |
 
-### MSFT_DeviceManagementConfigurationPolicyAssignments
+#### MSFT_DeviceManagementConfigurationPolicyAssignments
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -59,13 +59,13 @@ For more information about ASR rule ID and status ID, see Enable Attack Surface 
 | collectionId | Write | String | The collection Id that is the target of the assignment.(ConfigMgr) | - |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

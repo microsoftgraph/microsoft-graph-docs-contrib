@@ -7,14 +7,14 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 This resource represents the properties of the Intune Assignment Filter.
 For more information: https://docs.microsoft.com/en-us/graph/api/resources/intune-policyset-deviceandappmanagementassignmentfilter?view=graph-rest-beta
 
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -26,13 +26,13 @@ For more information: https://docs.microsoft.com/en-us/graph/api/resources/intun
 | Ensure | Write | String | Present ensures the policy exists, absent ensures it's removed | `Present`, `Absent` |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

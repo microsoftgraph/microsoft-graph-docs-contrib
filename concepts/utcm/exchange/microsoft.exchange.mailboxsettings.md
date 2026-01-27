@@ -7,13 +7,13 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 This resource configures settings on Mailboxes
 such as the Regional settings and its timezone.
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -23,9 +23,9 @@ such as the Regional settings and its timezone.
 | Ensure | Write | String | Present ensures the Mailbox Settings are applied | `Present` |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Entra ID roles
+#### Microsoft Entra ID roles
 
 The following [roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) can be granted to the UTCM (Unified Tenant Configuration Management) service principal:
 
@@ -35,24 +35,24 @@ The following [roles](/entra/identity/role-based-access-control/permissions-refe
 | Update    | Exchange Administrator |
 
 
-### Exchange
+#### Exchange
 
 To authenticate with Microsoft Exchange, this resource requires the following application permissions. Delegated scenarios aren't supported.
 
-#### Roles
+##### Roles
 
 - User Options, View-Only Recipients, Mail Recipients
 
-#### Role Groups
+##### Role Groups
 
 - Organization Management
 
-### Office 365 Exchange Online
+#### Office 365 Exchange Online
 
 To authenticate with Exchange Online, this resource requires the following application permissions. Delegated scenarios aren't supported.
 
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

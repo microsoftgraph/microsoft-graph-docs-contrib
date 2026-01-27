@@ -7,12 +7,12 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+#### Description
 
 This resource configures an Microsoft Entra Administrative Unit.
 
 
-## Parameters
+#### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -27,18 +27,18 @@ This resource configures an Microsoft Entra Administrative Unit.
 | ScopedRoleMembers | Write | MSFT_MicrosoftGraphScopedRoleMembership[] | Specify Scoped Role Membership. Note: Any groups must be role-enabled | - |
 | Ensure | Write | String | Present ensures the Administrative Unit exists, absent ensures it's removed. | `Present`, `Absent` |
 
-### MSFT_MicrosoftGraphMember
+##### MSFT_MicrosoftGraphMember
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | Identity | Write | String | Identity of member. For users, specify a UserPrincipalName. For groups, devices and service principals, specify DisplayName | - |
 | Type | Write | String | Specify User, Group, or Device to interpret the identity for Members. Specify User, Group, or ServicePrincipal for ScopedRoleMembers. | `User`, `Group`, `Device`, `ServicePrincipal` |
 
-### MSFT_MicrosoftGraphScopedRoleMembership
+##### MSFT_MicrosoftGraphScopedRoleMembership
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -46,9 +46,9 @@ This resource configures an Microsoft Entra Administrative Unit.
 | RoleMemberInfo | Write | MSFT_MicrosoftGraphMember | Member that is assigned to the scoped role. Note: Any groups must be role-enabled | - |
 
 
-## Permissions
+#### Permissions
 
-### Microsoft Entra ID roles
+##### Microsoft Entra ID roles
 
 The following [roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) can be granted to the UTCM (Unified Tenant Configuration Management) service principal:
 
@@ -58,11 +58,11 @@ The following [roles](/entra/identity/role-based-access-control/permissions-refe
 | Update    | Privileged Role Administrator |
 
 
-### Microsoft Graph
+##### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

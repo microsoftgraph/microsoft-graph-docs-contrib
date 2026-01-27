@@ -7,12 +7,12 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 This resource configures a Microsoft Entra ID Governance entitlement management access package catalog resource.
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -30,9 +30,9 @@ This resource configures a Microsoft Entra ID Governance entitlement management 
 | Url | Write | String | A unique resource locator for the resource, such as the URL for signing a user into an application. | - |
 | Ensure | Write | String | Specifies whether the catalog resource should exist or not. `Present` ensures the resource exists; `Absent` ensures the resource is removed. | `Present`, `Absent` |
 
-### MSFT_MicrosoftGraphaccesspackageresourceattribute
+#### MSFT_MicrosoftGraphaccesspackageresourceattribute
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -43,26 +43,26 @@ This resource configures a Microsoft Entra ID Governance entitlement management 
 | IsEditable | Write | Boolean | Specifies whether or not an existing attribute value can be edited by the requester. | - |
 | IsPersistedOnAssignmentRemoval | Write | Boolean | Specifies whether the attribute will remain in the end system after an assignment ends. | - |
 
-### MSFT_MicrosoftGraphaccesspackageresourceattributedestination
+#### MSFT_MicrosoftGraphaccesspackageresourceattributedestination
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | odataType | Write | String | Type of the access package resource attribute destination. | `#microsoft.graph.accessPackageUserDirectoryAttributeStore` |
 
-### MSFT_MicrosoftGraphaccesspackageresourceattributesource
+#### MSFT_MicrosoftGraphaccesspackageresourceattributesource
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | odataType | Write | String | Type of the access package resource attribute source. | `#microsoft.graph.accessPackageResourceAttributeQuestion` |
 | Question | Write | MSFT_MicrosoftGraphaccessPackageResourceAttributeQuestion | The question asked to get the value of the attribute. | - |
 
-### MSFT_MicrosoftGraphaccessPackageResourceAttributeQuestion
+#### MSFT_MicrosoftGraphaccessPackageResourceAttributeQuestion
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -76,27 +76,27 @@ This resource configures a Microsoft Entra ID Governance entitlement management 
 | AllowsMultipleSelection | Write | Boolean | Indicates whether requestor can select multiple choices as their answer. | - |
 | Choices | Write | MSFT_MicrosoftGraphaccessPackageAnswerChoice[] | List of answer choices. | - |
 
-### MSFT_MicrosoftGraphaccessPackageLocalizedContent
+#### MSFT_MicrosoftGraphaccessPackageLocalizedContent
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | DefaultText | Write | String | The fallback string, which is used when a requested localization isn't available. Required. | - |
 | LocalizedTexts | Write | MSFT_MicrosoftGraphaccessPackageLocalizedText[] | Content represented in a format for a specific locale. | - |
 
-### MSFT_MicrosoftGraphaccessPackageLocalizedText
+#### MSFT_MicrosoftGraphaccessPackageLocalizedText
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | Text | Write | String | The text in the specific language. Required. | - |
 | LanguageCode | Write | String | The ISO code for the intended language. Required. | - |
 
-### MSFT_MicrosoftGraphaccessPackageAnswerChoice
+#### MSFT_MicrosoftGraphaccessPackageAnswerChoice
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -104,9 +104,9 @@ This resource configures a Microsoft Entra ID Governance entitlement management 
 | displayValue | Write | MSFT_MicrosoftGraphaccessPackageLocalizedContent | The localized display values shown to the requestor and approvers. Required. | - |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Entra ID roles
+#### Microsoft Entra ID roles
 
 The following [roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) can be granted to the UTCM (Unified Tenant Configuration Management) service principal:
 
@@ -116,11 +116,11 @@ The following [roles](/entra/identity/role-based-access-control/permissions-refe
 | Update    | Identity Governance Administrator |
 
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

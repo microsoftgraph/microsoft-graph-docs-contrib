@@ -7,14 +7,14 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 This resource allows users to create Microsoft Entra Users and assign them licenses, roles and/or groups.
 
 When using AADGroup with AADUser, avoid specifying both AADUser->MemberOf and AADGroup->Member for the same group, as mismatched values can cause conflicts. Choose one approach. See AADGroup
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -45,9 +45,9 @@ When using AADGroup with AADUser, avoid specifying both AADUser->MemberOf and AA
 | Ensure | Write | String | Present ensures the user exists, absent ensures it's removed | `Present`, `Absent` |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Entra ID roles
+#### Microsoft Entra ID roles
 
 The following [roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) can be granted to the UTCM (Unified Tenant Configuration Management) service principal:
 
@@ -57,11 +57,11 @@ The following [roles](/entra/identity/role-based-access-control/permissions-refe
 | Update    | User Administrator |
 
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

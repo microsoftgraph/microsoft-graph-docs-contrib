@@ -7,12 +7,12 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 Microsoft Entra Authentication Method Policy Authenticator
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -24,9 +24,9 @@ Microsoft Entra Authentication Method Policy Authenticator
 | Id | Key | String | The unique identifier for an entity. Read-only. | - |
 | Ensure | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
 
-### MSFT_MicrosoftGraphMicrosoftAuthenticatorFeatureSettings
+#### MSFT_MicrosoftGraphMicrosoftAuthenticatorFeatureSettings
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -35,9 +35,9 @@ Microsoft Entra Authentication Method Policy Authenticator
 | DisplayLocationInformationRequiredState | Write | MSFT_MicrosoftGraphAuthenticationMethodFeatureConfiguration | Determines whether the user's Authenticator app shows them the geographic location of where the authentication request originated from. | - |
 | NumberMatchingRequiredState | Write | MSFT_MicrosoftGraphAuthenticationMethodFeatureConfiguration | Specifies whether the user needs to enter a number in the Authenticator app from the login screen to complete their login. Value is ignored for phone sign-in notifications. | - |
 
-### MSFT_MicrosoftGraphAuthenticationMethodFeatureConfiguration
+#### MSFT_MicrosoftGraphAuthenticationMethodFeatureConfiguration
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -45,37 +45,37 @@ Microsoft Entra Authentication Method Policy Authenticator
 | IncludeTarget | Write | AuthenticationMethodPolicyAuthenticatorFeatureTarget | A single entity allowed to use this feature. | - |
 | State | Write | String | Enable or disable the feature. Possible values are: default, enabled, disabled, unknownFutureValue. The default value is used when the configuration isn't explicitly set and uses the default behavior of Microsoft Entra for the setting. The default value is disabled. | `default`, `enabled`, `disabled`, `unknownFutureValue` |
 
-### AuthenticationMethodPolicyAuthenticatorFeatureTarget
+#### AuthenticationMethodPolicyAuthenticatorFeatureTarget
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | Id | Write | String | The ID of the entity targeted in the include or exclude rule or all_users to target all users. | - |
 | TargetType | Write | String | The kind of entity targeted. The possible values are: group, administrativeUnit, role, unknownFutureValue. | `group`, `administrativeUnit`, `role`, `unknownFutureValue` |
 
-### AuthenticationMethodPolicyAuthenticatorExcludeTarget
+#### AuthenticationMethodPolicyAuthenticatorExcludeTarget
 
-#### Parameters
-
-| Parameter | Attribute | DataType | Description | Allowed Values |
-| --- | --- | --- | --- | --- |
-| Id | Write | String | The object identifier of an Microsoft Entra group. | - |
-| TargetType | Write | String | The type of the authentication method target. Possible values are: group and unknownFutureValue. | `user`, `group`, `unknownFutureValue` |
-
-### AuthenticationMethodPolicyAuthenticatorIncludeTarget
-
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | Id | Write | String | The object identifier of an Microsoft Entra group. | - |
 | TargetType | Write | String | The type of the authentication method target. Possible values are: group and unknownFutureValue. | `user`, `group`, `unknownFutureValue` |
 
+#### AuthenticationMethodPolicyAuthenticatorIncludeTarget
 
-## Permissions
+##### Parameters
 
-### Microsoft Entra ID roles
+| Parameter | Attribute | DataType | Description | Allowed Values |
+| --- | --- | --- | --- | --- |
+| Id | Write | String | The object identifier of an Microsoft Entra group. | - |
+| TargetType | Write | String | The type of the authentication method target. Possible values are: group and unknownFutureValue. | `user`, `group`, `unknownFutureValue` |
+
+
+### Permissions
+
+#### Microsoft Entra ID roles
 
 The following [roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) can be granted to the UTCM (Unified Tenant Configuration Management) service principal:
 
@@ -85,11 +85,11 @@ The following [roles](/entra/identity/role-based-access-control/permissions-refe
 | Update    | Authentication Policy Administrator |
 
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

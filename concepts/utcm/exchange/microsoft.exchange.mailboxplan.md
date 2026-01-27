@@ -7,12 +7,12 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 Use this resource to modify the settings of mailbox plans in the cloud-based service.
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -29,9 +29,9 @@ Use this resource to modify the settings of mailbox plans in the cloud-based ser
 | RoleAssignmentPolicy | Write | String | The RoleAssignmentPolicy parameter specifies the role assignment policy that's applied to the mailbox. | - |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Entra ID roles
+#### Microsoft Entra ID roles
 
 The following [roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) can be granted to the UTCM (Unified Tenant Configuration Management) service principal:
 
@@ -41,24 +41,24 @@ The following [roles](/entra/identity/role-based-access-control/permissions-refe
 | Update    | Exchange Administrator |
 
 
-### Exchange
+#### Exchange
 
 To authenticate with Microsoft Exchange, this resource requires the following application permissions. Delegated scenarios aren't supported.
 
-#### Roles
+##### Roles
 
 - Unified Messaging, View-Only Recipients, Mail Recipient Creation, Mail Recipients, UM Mailboxes
 
-#### Role Groups
+##### Role Groups
 
 - Organization Management
 
-### Office 365 Exchange Online
+#### Office 365 Exchange Online
 
 To authenticate with Exchange Online, this resource requires the following application permissions. Delegated scenarios aren't supported.
 
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

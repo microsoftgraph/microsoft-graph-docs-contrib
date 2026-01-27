@@ -7,13 +7,13 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 This resource configures a Intune Account Protection policy.
 
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -38,9 +38,9 @@ This resource configures a Intune Account Protection policy.
 | DeviceGuardLocalSystemAuthorityCredentialGuardSettings | Write | String | Setting this Disable will disable the use of Credential Guard, which is the Windows default. Setting this to Enable with UEFI lock will enable Credential Guard and not allow it to be disabled remotely, as the UEFI persisted configuration must be manually cleared. Setting this to Enable without UEFI lock will enable Credential Guard and allow it to be turned off without physical access to the machine. | `notConfigured`, `disable`, `enableWithUEFILock`, `enableWithoutUEFILock` |
 | Ensure | Write | String | Present ensures the site collection exists, absent ensures it's removed | `Present`, `Absent` |
 
-### AccountProtectionPolicyAssignments
+#### AccountProtectionPolicyAssignments
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -52,13 +52,13 @@ This resource configures a Intune Account Protection policy.
 | collectionId | Write | String | The collection Id that is the target of the assignment.(ConfigMgr) | - |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

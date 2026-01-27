@@ -7,13 +7,13 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 This resource configures an Anti-Phish Rule in Exchange Online.
 Reference: https://docs.microsoft.com/en-us/powershell/module/exchange/advanced-threat-protection/new-antiphishRule?view=exchange-ps
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -31,9 +31,9 @@ Reference: https://docs.microsoft.com/en-us/powershell/module/exchange/advanced-
 | SentToMemberOf | Write | StringArray[] | The SentToMemberOf parameter looks for messages sent to members of groups. You can use any value that uniquely identifies the group. | - |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Entra ID roles
+#### Microsoft Entra ID roles
 
 The following [roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) can be granted to the UTCM (Unified Tenant Configuration Management) service principal:
 
@@ -43,24 +43,24 @@ The following [roles](/entra/identity/role-based-access-control/permissions-refe
 | Update    | Security Administrator |
 
 
-### Exchange
+#### Exchange
 
 To authenticate with Microsoft Exchange, this resource requires the following application permissions. Delegated scenarios aren't supported.
 
-#### Roles
+##### Roles
 
 - Transport Hygiene, Security Admin, View-Only Configuration, Security Reader
 
-#### Role Groups
+##### Role Groups
 
 - Organization Management
 
-### Office 365 Exchange Online
+#### Office 365 Exchange Online
 
 To authenticate with Exchange Online, this resource requires the following application permissions. Delegated scenarios aren't supported.
 
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

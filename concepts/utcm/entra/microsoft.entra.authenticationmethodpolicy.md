@@ -7,12 +7,12 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 Microsoft Entra Authentication Method Policy
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -26,17 +26,17 @@ Microsoft Entra Authentication Method Policy
 | Id | Write | String | The unique identifier for an entity. Read-only. | - |
 | Ensure | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present` |
 
-### MSFT_MicrosoftGraphRegistrationEnforcement
+#### MSFT_MicrosoftGraphRegistrationEnforcement
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | AuthenticationMethodsRegistrationCampaign | Write | MSFT_MicrosoftGraphAuthenticationMethodsRegistrationCampaign | Run campaigns to remind users to set up targeted authentication methods. | - |
 
-### MSFT_MicrosoftGraphAuthenticationMethodsRegistrationCampaign
+#### MSFT_MicrosoftGraphAuthenticationMethodsRegistrationCampaign
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -45,36 +45,36 @@ Microsoft Entra Authentication Method Policy
 | SnoozeDurationInDays | Write | UInt32 | Specifies the number of days that the user sees a prompt again if they select 'Not now' and snoozes the prompt. Minimum 0 days. Maximum: 14 days. If the value is '0', the user is prompted during every MFA attempt. | - |
 | State | Write | String | Enable or disable the feature. Possible values are: default, enabled, disabled, unknownFutureValue. The default value is used when the configuration isn't explicitly set and uses the default behavior of Microsoft Entra for the setting. The default value is disabled. | `default`, `enabled`, `disabled`, `unknownFutureValue` |
 
-### AuthenticationMethodPolicyExcludeTarget
+#### AuthenticationMethodPolicyExcludeTarget
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | Id | Write | String | The object identifier of an Microsoft Entra group. | - |
 | TargetType | Write | String | The type of the authentication method target. Possible values are: group and unknownFutureValue. | `user`, `group`, `unknownFutureValue` |
 
-### AuthenticationMethodPolicyIncludeTarget
+#### AuthenticationMethodPolicyIncludeTarget
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | Id | Write | String | The ID of the entity targeted. | - |
 | TargetType | Write | String | The kind of entity targeted. Possible values are: user, group. | `user`, `group`, `unknownFutureValue` |
 
-### MSFT_MicrosoftGraphExcludeTarget
+#### MSFT_MicrosoftGraphExcludeTarget
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | Id | Write | String | The object identifier of an Microsoft Entra user or group. | - |
 | TargetType | Write | String | The type of the authentication method target. Possible values are: user, group, unknownFutureValue. | `user`, `group`, `unknownFutureValue` |
 
-### MSFT_MicrosoftGraphAuthenticationMethodsRegistrationCampaignIncludeTarget
+#### MSFT_MicrosoftGraphAuthenticationMethodsRegistrationCampaignIncludeTarget
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -82,9 +82,9 @@ Microsoft Entra Authentication Method Policy
 | TargetedAuthenticationMethod | Write | String | The authentication method that the user is prompted to register. The value must be microsoftAuthenticator. | - |
 | TargetType | Write | String | The type of the authentication method target. Possible values are: user, group, unknownFutureValue. | `user`, `group`, `unknownFutureValue` |
 
-### MSFT_MicrosoftGraphSystemCredentialPreferences
+#### MSFT_MicrosoftGraphSystemCredentialPreferences
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -93,9 +93,9 @@ Microsoft Entra Authentication Method Policy
 | State | Write | String | Indicates whether the feature is enabled or disabled. Possible values are: default, enabled, disabled, unknownFutureValue. The default value is used when the configuration isn't explicitly set, and uses the default behavior of Microsoft Entra for the setting. The default value is disabled. | `default`, `enabled`, `disabled`, `unknownFutureValue` |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Entra ID roles
+#### Microsoft Entra ID roles
 
 The following [roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) can be granted to the UTCM (Unified Tenant Configuration Management) service principal:
 
@@ -105,11 +105,11 @@ The following [roles](/entra/identity/role-based-access-control/permissions-refe
 | Update    | Authentication Policy Administrator |
 
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

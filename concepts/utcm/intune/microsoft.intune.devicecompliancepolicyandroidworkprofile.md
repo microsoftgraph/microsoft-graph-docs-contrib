@@ -7,13 +7,13 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 This resource configures the settings of Android Work Profile device compliance policies
 in your cloud-based organization.
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -47,9 +47,9 @@ in your cloud-based organization.
 | RoleScopeTagIds | Write | String | RoleScopeTagIds of the AndroidWorkProfile device compliance policy. | - |
 | Ensure | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
 
-### MSFT_DeviceManagementConfigurationPolicyAssignments
+#### MSFT_DeviceManagementConfigurationPolicyAssignments
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -61,9 +61,9 @@ in your cloud-based organization.
 | collectionId | Write | String | The collection Id that is the target of the assignment.(ConfigMgr) | - |
 
 
-## Parameters
+### Parameters
 
-### Microsoft Defender for Endpoint - _for Personally-Owned Work Profile_
+#### Microsoft Defender for Endpoint - _for Personally-Owned Work Profile_
 
 * **Require the device to be at or under the machine risk score**
   Select the maximum allowed machine risk score for devices evaluated by Microsoft Defender for Endpoint. Devices which exceed this score get marked as noncompliant.
@@ -73,7 +73,7 @@ in your cloud-based organization.
   * Medium
   * High
 
-### Device Health - _for Personally-Owned Work Profile_
+#### Device Health - _for Personally-Owned Work Profile_
 * **Rooted devices**
   * Not configured (_default_) - This setting isn't evaluated for compliance or non-compliance.
   * Block - Mark rooted (jailbroken) devices as not compliant.
@@ -86,7 +86,7 @@ in your cloud-based organization.
   * Medium - The device is evaluated as compliant if the threats that are present on the device are low or medium level. If the device is detected to have high-level threats, it's determined to be noncompliant.
   * High - This option is the least secure, as it allows all threat levels. It may be useful if you're using this solution only for reporting purposes.
 
-### Google Play Protect - _for Personally-Owned Work Profile_
+#### Google Play Protect - _for Personally-Owned Work Profile_
 
 * **Google Play Services is configured**
   * Not configured (_default_) - This setting isn't evaluated for compliance or non-compliance.
@@ -105,7 +105,7 @@ in your cloud-based organization.
   Note:
     * On Android Enterprise devices, Threat scan on apps is a device configuration policy. Using a configuration policy, administrators can enable the setting on a device. See Android Enterprise device restriction settings.
 
-### Device Properties - _for Personally-Owned Work Profile_
+#### Device Properties - _for Personally-Owned Work Profile_
 
 * **Operating System Version - *for Personally-Owned Work Profile***
   * Minimum OS version
@@ -118,7 +118,7 @@ in your cloud-based organization.
 
   _By default, no version is configured._
 
-### System security - for _Personally-Owned Work Profile_
+#### System security - for _Personally-Owned Work Profile_
 
 * **Require a password to unlock mobile devices**
   * Not configured (_default_) - This setting isn't evaluated for compliance or non-compliance.
@@ -146,14 +146,14 @@ in your cloud-based organization.
   * Number of previous passwords to prevent reuse
   Enter the number of recent passwords that can't be reused. Use this setting to restrict the user from creating previously used passwords.
 
-### Encryption - _for Personally-Owned Work Profile_
+#### Encryption - _for Personally-Owned Work Profile_
 * **Encryption of data storage on device**
   * Not configured (_default_) - This setting isn't evaluated for compliance or non-compliance.
   * Require - Encrypt data storage on your devices.
 
   You don't have to configure this setting because Android Enterprise devices enforce encryption.
 
-### Device Security - _for Personally-Owned Work Profile_
+#### Device Security - _for Personally-Owned Work Profile_
 
 * **Block apps from unknown sources**
   * Not configured (_default_) - This setting isn't evaluated for compliance or non-compliance.
@@ -180,13 +180,13 @@ Select the oldest security patch level a device can have. Devices that aren't at
 
 _By default, no date is configured._
 
-## Permissions
+### Permissions
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

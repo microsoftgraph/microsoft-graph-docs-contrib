@@ -7,13 +7,13 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 This resource configures the settings of Android device compliance policies
 in your cloud-based organization.
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -50,9 +50,9 @@ in your cloud-based organization.
 | RoleScopeTagIds | Write | String | RoleScopeTagIds of the Android device compliance policy. | - |
 | Ensure | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
 
-### MSFT_DeviceManagementConfigurationPolicyAssignments
+#### MSFT_DeviceManagementConfigurationPolicyAssignments
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -64,9 +64,9 @@ in your cloud-based organization.
 | collectionId | Write | String | The collection Id that is the target of the assignment.(ConfigMgr) | - |
 
 
-## Parameters
+### Parameters
 
-### Microsoft Defender for Endpoint
+#### Microsoft Defender for Endpoint
 
 * **Require the device to be at or under the machine risk score**
   Select the maximum allowed machine risk score for devices evaluated by Microsoft Defender for Endpoint. Devices that exceed this score get marked as noncompliant.
@@ -76,14 +76,14 @@ in your cloud-based organization.
     * Medium
     * High
 
-### Device Health
+#### Device Health
 
 * **Devices managed with device administrator**
   Device administrator capabilities are superseded by Android Enterprise.
     * Not configured (_default_)
     * Block - Blocking device administrator will guide users to move to Android Enterprise Personally-Owned and Corporate-Owned Work Profile management to regain access.
 
-### Rooted devices
+#### Rooted devices
 * **Prevent rooted devices from having corporate access. (This compliance check is supported for Android 4.0 and above.)**
     * Not configured (_default_) - This setting isn't evaluated for compliance or non-compliance.
     * Block - Mark rooted (jailbroken) devices as not compliant.
@@ -96,7 +96,7 @@ in your cloud-based organization.
     * Medium - The device is evaluated as compliant if existing threats on the device are low or medium level. If the device is detected to have high-level threats, it's determined to be noncompliant.
     * High - This option is the least secure, and allows all threat levels. It may be useful if you're using this solution only for reporting purposes.
 
-### Google Play Protect
+#### Google Play Protect
 * **Google Play Services is configured**
   Google Play services allows security updates, and is a base-level dependency for many security features on certified-Google devices.
     * Not configured (_default_) - This setting isn't evaluated for compliance or non-compliance.
@@ -116,7 +116,7 @@ in your cloud-based organization.
     * Check basic integrity
     * Check basic integrity & certified devices
 
-### Device Properties
+#### Device Properties
 * **Operating System Version**
     * Minimum OS version
   When a device doesn't meet the minimum OS version requirement, it's reported as noncompliant. A link with information about how to upgrade is shown. The end user can choose to upgrade their device, and then get access to company resources.
@@ -128,7 +128,7 @@ in your cloud-based organization.
 
   _By default, no version is configured._
 
-### System Security
+#### System Security
 * **Encryption**
   Encryption of data storage on a device
   Supported on Android 4.0 and later, or KNOX 4.0 and later.
@@ -166,18 +166,18 @@ in your cloud-based organization.
 * **Restricted apps**
   Enter the App name and App bundle ID for apps that should be restricted, and then select Add. A device with at least one restricted app installed is marked as non-compliant.
 
-### Password
+#### Password
 
 The available settings for passwords vary by the version of Android on the device.
 
-#### All Android devices
+##### All Android devices
 The following settings are supported on Android 4.0 or later, and Knox 4.0 and later.
 
 * **Maximum minutes of inactivity before password is required**
   This setting specifies the length of time without user input after which the mobile device screen is locked. Options range from 1 Minute to 8 Hours. The recommended value is 15 Minutes.
     * Not configured (_default_)
 
-#### Android 10 and later
+##### Android 10 and later
 The following settings are supported on Android 10 or later, but not on Knox.
 
 * **Password complexity**
@@ -197,7 +197,7 @@ The following settings are supported on Android 10 or later, but not on Knox.
         * Alphabetic, with a minimum length of 6.
         * Alphanumeric, with a minimum length of 6.
 
-#### Android 9 and earlier or Samsung Knox
+##### Android 9 and earlier or Samsung Knox
 _The following settings are supported on Android 9.0 and earlier, and any version of Samsung Knox._
 
 * **Require a password to unlock mobile devices**
@@ -227,13 +227,13 @@ When set to Require, the following setting can be configured:
     * Number of previous passwords to prevent reuse
     Enter the number of recent passwords that can't be reused. Use this setting to restrict the user from creating previously used passwords.
 
-## Permissions
+### Permissions
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

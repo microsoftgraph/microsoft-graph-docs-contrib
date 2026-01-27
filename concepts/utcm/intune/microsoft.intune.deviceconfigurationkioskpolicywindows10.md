@@ -7,12 +7,12 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 Intune Device Configuration Kiosk Policy for Windows10
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -32,9 +32,9 @@ Intune Device Configuration Kiosk Policy for Windows10
 | Assignments | Write | MSFT_DeviceManagementConfigurationPolicyAssignments[] | Represents the assignment to the Intune policy. | - |
 | Ensure | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
 
-### MSFT_DeviceManagementConfigurationPolicyAssignments
+#### MSFT_DeviceManagementConfigurationPolicyAssignments
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -45,9 +45,9 @@ Intune Device Configuration Kiosk Policy for Windows10
 | groupDisplayName | Write | String | The group Display Name that is the target of the assignment. | - |
 | collectionId | Write | String | The collection Id that is the target of the assignment.(ConfigMgr) | - |
 
-### MSFT_MicrosoftGraphWindowsKioskProfile
+#### MSFT_MicrosoftGraphWindowsKioskProfile
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -56,9 +56,9 @@ Intune Device Configuration Kiosk Policy for Windows10
 | ProfileName | Write | String | This is a friendly nameused to identify a group of applications, the layout of these apps on the start menu and the users to whom this kiosk configuration is assigned. | - |
 | UserAccountsConfiguration | Write | MSFT_MicrosoftGraphWindowsKioskUser[] | The user accounts that will be locked to this kiosk configuration. This collection can contain a maximum of 100 elements. | - |
 
-### MSFT_MicrosoftGraphWindowsKioskAppConfiguration
+#### MSFT_MicrosoftGraphWindowsKioskAppConfiguration
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -71,9 +71,9 @@ Intune Device Configuration Kiosk Policy for Windows10
 | Win32App | Write | MSFT_MicrosoftGraphWindowsKioskWin32App | This is the win32 app that will be available to launch use while in Kiosk Mode | - |
 | odataType | Write | String | The type of the entity. | `#microsoft.graph.windowsKioskMultipleApps`, `#microsoft.graph.windowsKioskSingleUWPApp`, `#microsoft.graph.windowsKioskSingleWin32App` |
 
-### MSFT_MicrosoftGraphWindowsKioskAppBase
+#### MSFT_MicrosoftGraphWindowsKioskAppBase
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -94,9 +94,9 @@ Intune Device Configuration Kiosk Policy for Windows10
 | EdgeNoFirstRun | Write | Boolean | Edge first run flag for Edge kiosk mode | - |
 | odataType | Write | String | The type of the entity. | `#microsoft.graph.windowsKioskDesktopApp`, `#microsoft.graph.windowsKioskUWPApp`, `#microsoft.graph.windowsKioskWin32App` |
 
-### MSFT_MicrosoftGraphWindowsKioskUWPApp
+#### MSFT_MicrosoftGraphWindowsKioskUWPApp
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -117,9 +117,9 @@ Intune Device Configuration Kiosk Policy for Windows10
 | EdgeNoFirstRun | Write | Boolean | Edge first run flag for Edge kiosk mode | - |
 | odataType | Write | String | The type of the entity. | `#microsoft.graph.windowsKioskDesktopApp`, `#microsoft.graph.windowsKioskUWPApp`, `#microsoft.graph.windowsKioskWin32App` |
 
-### MSFT_MicrosoftGraphWindowsKioskWin32App
+#### MSFT_MicrosoftGraphWindowsKioskWin32App
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -140,9 +140,9 @@ Intune Device Configuration Kiosk Policy for Windows10
 | ContainedAppId | Write | String | This references an contained App from an Intune App | - |
 | odataType | Write | String | The type of the entity. | `#microsoft.graph.windowsKioskDesktopApp`, `#microsoft.graph.windowsKioskUWPApp`, `#microsoft.graph.windowsKioskWin32App` |
 
-### MSFT_MicrosoftGraphWindowsKioskUser
+#### MSFT_MicrosoftGraphWindowsKioskUser
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -154,9 +154,9 @@ Intune Device Configuration Kiosk Policy for Windows10
 | UserName | Write | String | The local user that will be locked to this kiosk configuration | - |
 | odataType | Write | String | The type of the entity. | `#microsoft.graph.windowsKioskActiveDirectoryGroup`, `#microsoft.graph.windowsKioskAutologon`, `#microsoft.graph.windowsKioskAzureADGroup`, `#microsoft.graph.windowsKioskAzureADUser`, `#microsoft.graph.windowsKioskLocalGroup`, `#microsoft.graph.windowsKioskLocalUser`, `#microsoft.graph.windowsKioskVisitor` |
 
-### MSFT_MicrosoftGraphWindowsKioskForceUpdateSchedule
+#### MSFT_MicrosoftGraphWindowsKioskForceUpdateSchedule
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -167,13 +167,13 @@ Intune Device Configuration Kiosk Policy for Windows10
 | StartDateTime | Write | String | The start time for the force restart. | - |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

@@ -7,12 +7,12 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 This resource configures an Microsoft Entra Entitlement Management Access Package Assignment Policy.
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -30,9 +30,9 @@ This resource configures an Microsoft Entra Entitlement Management Access Packag
 | CustomExtensionHandlers | Write | MSFT_MicrosoftGraphcustomextensionhandler[] | The collection of stages when to execute one or more custom access package workflow extensions. | - |
 | Ensure | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
 
-### MSFT_MicrosoftGraphassignmentreviewsettings
+#### MSFT_MicrosoftGraphassignmentreviewsettings
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -46,9 +46,9 @@ This resource configures an Microsoft Entra Entitlement Management Access Packag
 | Reviewers | Write | MSFT_MicrosoftGraphuserset[] | If the reviewerType is Reviewers, this collection specifies the users who are reviewers, either by ID or as members of a group, using a collection of singleUser and groupMembers. | - |
 | StartDateTime | Write | String | When the first review should start. | - |
 
-### MSFT_MicrosoftGraphuserset
+#### MSFT_MicrosoftGraphuserset
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -57,9 +57,9 @@ This resource configures an Microsoft Entra Entitlement Management Access Packag
 | IsBackup | Write | Boolean | Indicates whether the resource is a backup fallback approver. | - |
 | ManagerLevel | Write | UInt32 | The hierarchical level of the manager with respect to the requestor. For example, the direct manager of a requestor would have a managerLevel of 1, while the manager of the requestor's manager would have a managerLevel of 2. Default value for managerLevel is 1. Possible values for this property range from 1 to 2. | - |
 
-### MSFT_MicrosoftGraphaccesspackagequestion
+#### MSFT_MicrosoftGraphaccesspackagequestion
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -74,36 +74,36 @@ This resource configures an Microsoft Entra Entitlement Management Access Packag
 | RegexPattern | Write | String | This is the regex pattern that the corresponding text answer must follow. | - |
 | IsSingleLineQuestion | Write | Boolean | Indicates whether the answer is in single or multiple line format. | - |
 
-### MSFT_MicrosoftGraphaccessPackageLocalizedContent
+#### MSFT_MicrosoftGraphaccessPackageLocalizedContent
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | DefaultText | Write | String | The fallback string, which is used when a requested localization isn't available. Required. | - |
 | LocalizedTexts | Write | MSFT_MicrosoftGraphaccessPackageLocalizedText[] | Content represented in a format for a specific locale. | - |
 
-### MSFT_MicrosoftGraphaccessPackageLocalizedText
+#### MSFT_MicrosoftGraphaccessPackageLocalizedText
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | Text | Write | String | The text in the specific language. Required. | - |
 | LanguageCode | Write | String | The ISO code for the intended language. Required. | - |
 
-### MSFT_MicrosoftGraphaccessPackageAnswerChoice
+#### MSFT_MicrosoftGraphaccessPackageAnswerChoice
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | ActualValue | Write | String | The actual value of the selected choice. This is typically a string value that is understandable by applications. Required. | - |
 | displayValue | Write | MSFT_MicrosoftGraphaccessPackageLocalizedContent | The localized display values shown to the requestor and approvers. Required. | - |
 
-### MSFT_MicrosoftGraphapprovalsettings
+#### MSFT_MicrosoftGraphapprovalsettings
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -113,9 +113,9 @@ This resource configures an Microsoft Entra Entitlement Management Access Packag
 | IsApprovalRequiredForExtension | Write | Boolean | Indicates whether approval is required for a user to extend their assignment. | - |
 | IsRequestorJustificationRequired | Write | Boolean | Indicates whether the requestor is required to supply a justification in their request. | - |
 
-### MSFT_MicrosoftGraphapprovalstage1
+#### MSFT_MicrosoftGraphapprovalstage1
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -126,9 +126,9 @@ This resource configures an Microsoft Entra Entitlement Management Access Packag
 | PrimaryApprovers | Write | MSFT_MicrosoftGraphuserset[] | The users who are asked to approve requests. A collection of singleUser, groupMembers, requestorManager, internalSponsors and externalSponsors. When creating or updating a policy, include at least one userSet in this collection. | - |
 | EscalationApprovers | Write | MSFT_MicrosoftGraphuserset[] | If escalation is enabled and the primary approvers do not respond before the escalation time, the escalationApprovers are the users who are asked to approve requests. This can be a collection of singleUser, groupMembers, requestorManager, internalSponsors and externalSponsors. When creating or updating a policy, if there are no escalation approvers, or escalation approvers are not required for the stage, the value of this property should be an empty collection. | - |
 
-### MSFT_MicrosoftGraphrequestorsettings
+#### MSFT_MicrosoftGraphrequestorsettings
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -136,9 +136,9 @@ This resource configures an Microsoft Entra Entitlement Management Access Packag
 | AllowedRequestors | Write | MSFT_MicrosoftGraphuserset[] | The users who are allowed to request on this policy, which can be singleUser, groupMembers, and connectedOrganizationMembers. | - |
 | ScopeType | Write | String | Who can request. | `NoSubjects`, `SpecificDirectorySubjects`, `SpecificConnectedOrganizationSubjects`, `AllConfiguredConnectedOrganizationSubjects`, `AllExistingConnectedOrganizationSubjects`, `AllExistingDirectoryMemberUsers`, `AllExistingDirectorySubjects`, `AllExternalSubjects` |
 
-### MSFT_MicrosoftGraphcustomextensionhandler
+#### MSFT_MicrosoftGraphcustomextensionhandler
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -147,9 +147,9 @@ This resource configures an Microsoft Entra Entitlement Management Access Packag
 | Id | Write | String | Identifier of the stage. | - |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Entra ID roles
+#### Microsoft Entra ID roles
 
 The following [roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) can be granted to the UTCM (Unified Tenant Configuration Management) service principal:
 
@@ -159,11 +159,11 @@ The following [roles](/entra/identity/role-based-access-control/permissions-refe
 | Update    | Identity Governance Administrator |
 
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

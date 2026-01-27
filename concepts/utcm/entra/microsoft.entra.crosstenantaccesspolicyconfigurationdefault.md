@@ -7,12 +7,12 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 This resource manages Microsoft Entra Cross Tenant Access Policies Configuration Default.
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -24,36 +24,36 @@ This resource manages Microsoft Entra Cross Tenant Access Policies Configuration
 | InboundTrust | Write | CrossTenantAccessPolicyInboundTrust | Determines the partner-specific configuration for trusting other Conditional Access claims from external Microsoft Entra organizations. | - |
 | Ensure | Write | String | Specify if the instance should exist or not. | `Present` |
 
-### CrossTenantAccessPolicyTarget
+#### CrossTenantAccessPolicyTarget
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | Target | Write | String | The unique identifier of the user, group, or application; one of the following keywords: AllUsers and AllApplications; or for targets that are applications, you may use reserved values. | - |
 | TargetType | Write | String | The type of resource that you want to target. The possible values are: user, group, application, unknownFutureValue. | `user`, `group`, `application`, `unknownFutureValue` |
 
-### CrossTenantAccessPolicyTargetConfiguration
+#### CrossTenantAccessPolicyTargetConfiguration
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | AccessType | Write | String | Defines whether access is allowed or blocked. The possible values are: allowed, blocked, unknownFutureValue. | `allowed`, `blocked`, `unknownFutureValue` |
 | Targets | Write | CrossTenantAccessPolicyTarget[] | Specifies whether to target users, groups, or applications with this rule. | - |
 
-### CrossTenantAccessPolicyB2BSetting
+#### CrossTenantAccessPolicyB2BSetting
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | Applications | Write | CrossTenantAccessPolicyTargetConfiguration | The list of applications targeted with your cross-tenant access policy. | - |
 | UsersAndGroups | Write | CrossTenantAccessPolicyTargetConfiguration | The list of users and groups targeted with your cross-tenant access policy. | - |
 
-### CrossTenantAccessPolicyInboundTrust
+#### CrossTenantAccessPolicyInboundTrust
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -62,9 +62,9 @@ This resource manages Microsoft Entra Cross Tenant Access Policies Configuration
 | IsMfaAccepted | Write | Boolean | Specifies whether MFA from external Microsoft Entra organizations is trusted. | - |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Entra ID roles
+#### Microsoft Entra ID roles
 
 The following [roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) can be granted to the UTCM (Unified Tenant Configuration Management) service principal:
 
@@ -74,11 +74,11 @@ The following [roles](/entra/identity/role-based-access-control/permissions-refe
 | Update    | Security Administrator |
 
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

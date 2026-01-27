@@ -7,13 +7,13 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 This resource configures the Advanced Threat Protection (ATP) policy
 in Office 365.  Tenant must be subscribed to ATP.
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -25,9 +25,9 @@ in Office 365.  Tenant must be subscribed to ATP.
 | EnableSafeDocs | Write | Boolean | The EnableSafeDocs parameter specifies whether to enable the Safe Documents feature in the organization. The default value is $false. | - |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Entra ID roles
+#### Microsoft Entra ID roles
 
 The following [roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) can be granted to the UTCM (Unified Tenant Configuration Management) service principal:
 
@@ -37,24 +37,24 @@ The following [roles](/entra/identity/role-based-access-control/permissions-refe
 | Update    | Security Administrator |
 
 
-### Exchange
+#### Exchange
 
 To authenticate with Microsoft Exchange, this resource requires the following application permissions. Delegated scenarios aren't supported.
 
-#### Roles
+##### Roles
 
 - Transport Hygiene, Security Admin, View-Only Configuration, Security Reader
 
-#### Role Groups
+##### Role Groups
 
 - Organization Management
 
-### Office 365 Exchange Online
+#### Office 365 Exchange Online
 
 To authenticate with Exchange Online, this resource requires the following application permissions. Delegated scenarios aren't supported.
 
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

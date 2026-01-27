@@ -7,12 +7,12 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 This resource allows to configure Mailtips behaviors in Exchange Online.
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -25,9 +25,9 @@ This resource allows to configure Mailtips behaviors in Exchange Online.
 | Ensure | Write | String | Specifies if this MailTip should exist. | `Present`, `Absent` |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Entra ID roles
+#### Microsoft Entra ID roles
 
 The following [roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) can be granted to the UTCM (Unified Tenant Configuration Management) service principal:
 
@@ -37,15 +37,15 @@ The following [roles](/entra/identity/role-based-access-control/permissions-refe
 | Update    | Exchange Administrator |
 
 
-### Exchange
+#### Exchange
 
 To authenticate with Microsoft Exchange, this resource requires the following application permissions. Delegated scenarios aren't supported.
 
-#### Roles
+##### Roles
 
 - Mail Tips, View-Only Configuration, Organization Configuration, Federated Sharing, Public Folders, Team Mailboxes, Compliance Admin, Recipient Policies, Remote and Accepted Domains, Distribution Groups, Mail Recipients
 
-#### Role Groups
+##### Role Groups
 
 - Organization Management
 

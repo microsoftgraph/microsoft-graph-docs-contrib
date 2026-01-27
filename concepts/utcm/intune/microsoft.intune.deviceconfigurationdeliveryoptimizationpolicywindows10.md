@@ -7,12 +7,12 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 Intune Device Configuration Delivery Optimization Policy for Windows10
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -40,9 +40,9 @@ Intune Device Configuration Delivery Optimization Policy for Windows10
 | Assignments | Write | MSFT_DeviceManagementConfigurationPolicyAssignments[] | Represents the assignment to the Intune policy. | - |
 | Ensure | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
 
-### MSFT_DeviceManagementConfigurationPolicyAssignments
+#### MSFT_DeviceManagementConfigurationPolicyAssignments
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -53,9 +53,9 @@ Intune Device Configuration Delivery Optimization Policy for Windows10
 | groupDisplayName | Write | String | The group Display Name that is the target of the assignment. | - |
 | collectionId | Write | String | The collection Id that is the target of the assignment.(ConfigMgr) | - |
 
-### MSFT_MicrosoftGraphDeliveryOptimizationBandwidth
+#### MSFT_MicrosoftGraphDeliveryOptimizationBandwidth
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -67,9 +67,9 @@ Intune Device Configuration Delivery Optimization Policy for Windows10
 | MaximumForegroundBandwidthPercentage | Write | UInt32 | Specifies the maximum foreground download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth (0-100). Valid values 0 to 100 The default value 0 (zero) means that Delivery Optimization dynamically adjusts to use the available bandwidth for foreground downloads. Valid values 0 to 100 | - |
 | odataType | Write | String | The type of the entity. | `#microsoft.graph.deliveryOptimizationBandwidthAbsolute`, `#microsoft.graph.deliveryOptimizationBandwidthHoursWithPercentage`, `#microsoft.graph.deliveryOptimizationBandwidthPercentage` |
 
-### MSFT_MicrosoftGraphDeliveryOptimizationBandwidthBusinessHoursLimit
+#### MSFT_MicrosoftGraphDeliveryOptimizationBandwidthBusinessHoursLimit
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -78,9 +78,9 @@ Intune Device Configuration Delivery Optimization Policy for Windows10
 | BandwidthPercentageDuringBusinessHours | Write | UInt32 | Specifies the percentage of bandwidth to limit during business hours (0-100). Valid values 0 to 100 | - |
 | BandwidthPercentageOutsideBusinessHours | Write | UInt32 | Specifies the percentage of bandwidth to limit outsidse business hours (0-100). Valid values 0 to 100 | - |
 
-### MSFT_MicrosoftGraphDeliveryOptimizationGroupIdSource
+#### MSFT_MicrosoftGraphDeliveryOptimizationGroupIdSource
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -88,9 +88,9 @@ Intune Device Configuration Delivery Optimization Policy for Windows10
 | GroupIdSourceOption | Write | String | Set this policy to restrict peer selection to a specific source. Possible values are: notConfigured, adSite, authenticatedDomainSid, dhcpUserOption, dnsSuffix. | `notConfigured`, `adSite`, `authenticatedDomainSid`, `dhcpUserOption`, `dnsSuffix` |
 | odataType | Write | String | The type of the entity. | `#microsoft.graph.deliveryOptimizationGroupIdCustom`, `#microsoft.graph.deliveryOptimizationGroupIdSourceOptions` |
 
-### MSFT_MicrosoftGraphDeliveryOptimizationMaxCacheSize
+#### MSFT_MicrosoftGraphDeliveryOptimizationMaxCacheSize
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -99,13 +99,13 @@ Intune Device Configuration Delivery Optimization Policy for Windows10
 | odataType | Write | String | The type of the entity. | `#microsoft.graph.deliveryOptimizationMaxCacheSizeAbsolute`, `#microsoft.graph.deliveryOptimizationMaxCacheSizePercentage` |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

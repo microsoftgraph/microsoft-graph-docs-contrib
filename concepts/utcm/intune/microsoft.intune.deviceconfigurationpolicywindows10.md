@@ -7,12 +7,12 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 Intune Device Configuration Policy for Windows10
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -305,9 +305,9 @@ Intune Device Configuration Policy for Windows10
 | Assignments | Write | MSFT_DeviceManagementConfigurationPolicyAssignments[] | Represents the assignment to the Intune policy. | - |
 | Ensure | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
 
-### MSFT_DeviceManagementConfigurationPolicyAssignments
+#### MSFT_DeviceManagementConfigurationPolicyAssignments
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -318,9 +318,9 @@ Intune Device Configuration Policy for Windows10
 | groupDisplayName | Write | String | The group Display Name that is the target of the assignment. | - |
 | collectionId | Write | String | The collection Id that is the target of the assignment.(ConfigMgr) | - |
 
-### MSFT_MicrosoftGraphDefenderDetectedMalwareActions1
+#### MSFT_MicrosoftGraphDefenderDetectedMalwareActions1
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -329,18 +329,18 @@ Intune Device Configuration Policy for Windows10
 | ModerateSeverity | Write | String | Indicates a Defender action to take for moderate severity Malware threat detected. Possible values are: deviceDefault, clean, quarantine, remove, allow, userDefined, block. | `deviceDefault`, `clean`, `quarantine`, `remove`, `allow`, `userDefined`, `block` |
 | SevereSeverity | Write | String | Indicates a Defender action to take for severe severity Malware threat detected. Possible values are: deviceDefault, clean, quarantine, remove, allow, userDefined, block. | `deviceDefault`, `clean`, `quarantine`, `remove`, `allow`, `userDefined`, `block` |
 
-### MSFT_MicrosoftGraphEdgeHomeButtonConfiguration
+#### MSFT_MicrosoftGraphEdgeHomeButtonConfiguration
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | HomeButtonCustomURL | Write | String | The specific URL to load. | - |
 | odataType | Write | String | The type of the entity. | `#microsoft.graph.edgeHomeButtonHidden`, `#microsoft.graph.edgeHomeButtonLoadsStartPage`, `#microsoft.graph.edgeHomeButtonOpensCustomURL`, `#microsoft.graph.edgeHomeButtonOpensNewTab` |
 
-### MSFT_MicrosoftGraphEdgeSearchEngineBase
+#### MSFT_MicrosoftGraphEdgeSearchEngineBase
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -348,9 +348,9 @@ Intune Device Configuration Policy for Windows10
 | EdgeSearchEngineOpenSearchXmlUrl | Write | String | Points to a https link containing the OpenSearch xml file that contains, at minimum, the short name and the URL to the search Engine. | - |
 | odataType | Write | String | The type of the entity. | `#microsoft.graph.edgeSearchEngine`, `#microsoft.graph.edgeSearchEngineCustom` |
 
-### MSFT_MicrosoftGraphWindows10NetworkProxyServer
+#### MSFT_MicrosoftGraphWindows10NetworkProxyServer
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -358,9 +358,9 @@ Intune Device Configuration Policy for Windows10
 | Exceptions | Write | StringArray[] | Addresses that should not use the proxy server. The system will not use the proxy server for addresses beginning with what is specified in this node. | - |
 | UseForLocalAddresses | Write | Boolean | Specifies whether the proxy server should be used for local (intranet) addresses. | - |
 
-### MSFT_MicrosoftGraphWindows10AppsForceUpdateSchedule
+#### MSFT_MicrosoftGraphWindows10AppsForceUpdateSchedule
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -369,13 +369,13 @@ Intune Device Configuration Policy for Windows10
 | StartDateTime | Write | String | The start time for the force restart. | - |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

@@ -7,12 +7,12 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 This resource configures a Retention Compliance Rule in Security and Compliance.
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -28,9 +28,9 @@ This resource configures a Retention Compliance Rule in Security and Compliance.
 | RetentionDurationDisplayHint | Write | String | The RetentionDurationDisplayHint parameter specifies the units that are used to display the retention duration in the Security and Compliance Center. Valid values are: Days, Months or Years. | `Days`, `Months`, `Years` |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Entra ID roles
+#### Microsoft Entra ID roles
 
 The following [roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) can be granted to the UTCM (Unified Tenant Configuration Management) service principal:
 
@@ -40,12 +40,12 @@ The following [roles](/entra/identity/role-based-access-control/permissions-refe
 | Update    | Compliance Administrator |
 
 
-### Office 365 Exchange Online
+#### Office 365 Exchange Online
 
 To authenticate with the Security and Compliance APIs, this resource requires the following application permissions. Delegated scenarios aren't supported.
 
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

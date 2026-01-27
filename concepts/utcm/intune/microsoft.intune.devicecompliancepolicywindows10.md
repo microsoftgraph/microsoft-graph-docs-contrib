@@ -7,13 +7,13 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 This resource configures the settings of Windows 10 compliance policies
 in your cloud-based organization.
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -54,9 +54,9 @@ in your cloud-based organization.
 | ValidOperatingSystemBuildRanges | Write | StringArray[] | ValidOperatingSystemBuildRanges of the Windows 10 device compliance policy. | - |
 | Ensure | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
 
-### MSFT_DeviceManagementConfigurationPolicyAssignments
+#### MSFT_DeviceManagementConfigurationPolicyAssignments
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -68,10 +68,10 @@ in your cloud-based organization.
 | collectionId | Write | String | The collection Id that is the target of the assignment.(ConfigMgr) | - |
 
 
-## Parameters
+### Parameters
 
-### Device Health
-#### Windows Health Attestation Service evaluation rules
+#### Device Health
+##### Windows Health Attestation Service evaluation rules
 * **Require BitLocker:**
   Windows BitLocker Drive Encryption encrypts all data stored on the Windows operating system volume. BitLocker uses the Trusted Platform Module (TPM) to help protect the Windows operating system and user data. It also helps confirm that a computer isn't tampered with, even if its left unattended, lost, or stolen. If the computer is equipped with a compatible TPM, BitLocker uses the TPM to lock the encryption keys that protect the data. As a result, the keys can't be accessed until the TPM verifies the state of the computer.
   * Not configured _(default)_ - This setting isn't evaluated for compliance or non-compliance.
@@ -83,8 +83,8 @@ in your cloud-based organization.
   * Not configured _(default)_ - This setting isn't evaluated for compliance or non-compliance.
   * Require - The system is forced to boot to a factory trusted state. The core components that are used to boot the machine must have correct cryptographic signatures that are trusted by the organization that manufactured the device. The UEFI firmware verifies the signature before it lets the machine start. If any files are tampered with, which breaks their signature, the system doesn't boot.
 
-### Device Properties
-#### Operating System Version
+#### Device Properties
+##### Operating System Version
 To discover build versions for all Windows 10 Feature Updates and Cumulative Updates (to be used in some of the fields below), see Windows 10 release information. Be sure to include the 10.0. prefix before the build numbers, as the following examples illustrate.
 
 * **Minimum OS version:**
@@ -123,15 +123,15 @@ To discover build versions for all Windows 10 Feature Updates and Cumulative Upd
   | Win 10 1909 (Jun-Sept 2020) | 10.0.18363.900     | 10.0.18363.1110    |
   | Win 10 1809 (Jun-Sept 2020) | 10.0.17763.1282    | 10.0.17763.1490    |
 
-### Configuration Manager Compliance
+#### Configuration Manager Compliance
 Applies only to co-managed devices running Windows 10 and later. Intune-only devices return a not available status.
 
 * **Require device compliance from Configuration Manager:**
   * Not configured _(default)_ - Intune doesn't check for any of the Configuration Manager settings for compliance.
   * Require - Require all settings (configuration items) in Configuration Manager to be compliant.
 
-### System Security
-#### Password
+#### System Security
+##### Password
 * **Require a password to unlock mobile devices:**
   * Not configured _(default)_ - This setting isn't evaluated for compliance or non-compliance.
   * Require - Users must enter a password before they can access their device.
@@ -172,7 +172,7 @@ Applies only to co-managed devices running Windows 10 and later. Intune-only dev
   **Important**
   When the password requirement is changed on a Windows desktop, users are impacted the next time they sign in, as that's when the device goes from idle to active. Users with passwords that meet the requirement are still prompted to change their passwords.
 
-### Encryption
+#### Encryption
 
 * **Encryption of data storage on a device:**
   This setting applies to all drives on a device.
@@ -182,7 +182,7 @@ Applies only to co-managed devices running Windows 10 and later. Intune-only dev
   **Note**
   The Encryption of data storage on a device setting generically checks for the presence of encryption on the device, more specifically at the OS drive level. Currently, Intune supports only the encryption check with BitLocker. For a more robust encryption setting, consider using Require BitLocker, which leverages Windows Device Health Attestation to validate Bitlocker status at the TPM level.
 
-### Device Security
+#### Device Security
 
 * **Firewall:**
   * Not configured _(default)_ - Intune doesn't control the Microsoft Defender Firewall, nor change existing settings.
@@ -203,7 +203,7 @@ Applies only to co-managed devices running Windows 10 and later. Intune-only dev
   * Not configured _(default)_ - Intune doesn't check for any antispyware solutions installed on the device.
   * Require - Check compliance using antispyware solutions that are registered with Windows Security Center, such as Symantec and Microsoft Defender.
 
-### Defender
+#### Defender
 The following compliance settings are supported with Windows 10 Desktop.
 
 * **Microsoft Defender Antimalware:**
@@ -224,8 +224,8 @@ The following compliance settings are supported with Windows 10 Desktop.
   * Not configured (_(default)_) - Intune doesn't control this feature, nor change existing settings.
   * Require - Turn on real-time protection, which scans for malware, spyware, and other unwanted software.
 
-### Microsoft Defender for Endpoint
-#### Microsoft Defender for Endpoint rules
+#### Microsoft Defender for Endpoint
+##### Microsoft Defender for Endpoint rules
 For additional information on Microsoft Defender for Endpoint integration in conditional access scenarios, see Configure Conditional Access in Microsoft Defender for Endpoint.
 
 * **Require the device to be at or under the machine risk score:**
@@ -236,13 +236,13 @@ For additional information on Microsoft Defender for Endpoint integration in con
   * Medium - The device is evaluated as compliant if existing threats on the device are low or medium level. If the device is detected to have high-level threats, it's determined to be non-compliant.
   * High - This option is the least secure, and allows all threat levels. It may be useful if you're using this solution only for reporting purposes.
 
-### Windows Holographic for Business
+#### Windows Holographic for Business
 Windows Holographic for Business uses the Windows 10 and later platform. Windows Holographic for Business supports the following setting:
 
 **System Security > Encryption > Encryption of data storage on device.**
 To verify device encryption on the Microsoft HoloLens, see Verify device encryption.
 
-### Surface Hub
+#### Surface Hub
 Surface Hub uses the Windows 10 and later platform. Surface Hubs are supported for both compliance and Conditional Access. To enable these features on Surface Hubs, we recommend you enable Windows 10 automatic enrollment in Intune (requires Azure Active Directory (Microsoft Entra)), and target the Surface Hub devices as device groups. Surface Hubs are required to be Microsoft Entra joined for compliance and Conditional Access to work.
 
 For guidance, see set up enrollment for Windows devices.
@@ -252,13 +252,13 @@ Surface Hubs that run Windows 10 Team OS do not support the Microsoft Defender f
 * In the category Password, set Require a password to unlock mobile devices to the _(default)_ of Not configured.
 * In the category Microsoft Defender for Endpoint, set Require the device to be at or under the machine risk score to the _(default)_ of Not configured.
 
-## Permissions
+### Permissions
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

@@ -7,12 +7,12 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 This resource configures a place in Exchange Online (e.g., room).
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -42,9 +42,9 @@ This resource configures a place in Exchange Online (e.g., room).
 | Ensure | Write | String | Specifies if this Outbound connector should exist. | `Present`, `Absent` |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Entra ID roles
+#### Microsoft Entra ID roles
 
 The following [roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) can be granted to the UTCM (Unified Tenant Configuration Management) service principal:
 
@@ -54,24 +54,24 @@ The following [roles](/entra/identity/role-based-access-control/permissions-refe
 | Update    | Exchange Administrator |
 
 
-### Exchange
+#### Exchange
 
 To authenticate with Microsoft Exchange, this resource requires the following application permissions. Delegated scenarios aren't supported.
 
-#### Roles
+##### Roles
 
 - Remote and Accepted Domains, View-Only Configuration
 
-#### Role Groups
+##### Role Groups
 
 - Organization Management
 
-### Office 365 Exchange Online
+#### Office 365 Exchange Online
 
 To authenticate with Exchange Online, this resource requires the following application permissions. Delegated scenarios aren't supported.
 
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

@@ -7,13 +7,13 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 This resource configures the settings of MacOS compliance policies
 in your cloud-based organization.
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -43,9 +43,9 @@ in your cloud-based organization.
 | FirewallEnableStealthMode | Write | Boolean | FirewallEnableStealthMode of the MacOS device compliance policy. | - |
 | Ensure | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
 
-### MSFT_DeviceManagementConfigurationPolicyAssignments
+#### MSFT_DeviceManagementConfigurationPolicyAssignments
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -57,14 +57,14 @@ in your cloud-based organization.
 | collectionId | Write | String | The collection Id that is the target of the assignment.(ConfigMgr) | - |
 
 
-## Parameters
+### Parameters
 
-### Device Health
+#### Device Health
 * **Require a system integrity protection**
   *  Not configured _(default)_ - This setting isn't evaluated for compliance or non-compliance.
   *  Require - Require macOS devices to have System Integrity Protection enabled.
 
-### Device Properties
+#### Device Properties
 * **Minimum OS required**
   When a device doesn't meet the minimum OS version requirement, it's reported as non-compliant. A link with information on how to upgrade is shown. The device user can choose to upgrade their device. After that, they can access organization resources.
 
@@ -77,8 +77,8 @@ in your cloud-based organization.
 * **Maximum OS build version**
   When Apple publishes security updates, the build number is typically updated, not the OS version. Use this feature to enter a maximum allowed build number on the device.
 
-## System security settings
-### Password
+### System security settings
+#### Password
 * **Require a password to unlock mobile devices**
   * Not configured _(default)_
   * Require Users must enter a password before they can access their device.
@@ -107,12 +107,12 @@ in your cloud-based organization.
 * **Number of previous passwords to prevent reuse**
   * Enter the number of previously used passwords that can't be used.
 
-### Encryption
+#### Encryption
 * **Encryption of data storage on device**
   * Not configured (_default_)
   * Require - Use _Require_ to encrypt data storage on your devices.
 
-### Device Security
+#### Device Security
 Firewall protects devices from unauthorized network access. You can use Firewall to control connections on a per-application basis.
 
 * **Firewall**
@@ -127,7 +127,7 @@ Firewall protects devices from unauthorized network access. You can use Firewall
   * Not configured _(default)_ - This setting leaves stealth mode turned off.
   * Enable - Turn on stealth mode to prevent devices from responding to probing requests, which can be made my malicious users. When enabled, the device continues to answer incoming requests for authorized apps.
 
-### Gatekeeper
+#### Gatekeeper
 For more information, see Gatekeeper on macOS.
 
 * **Allow apps downloaded from these locations**
@@ -137,13 +137,13 @@ For more information, see Gatekeeper on macOS.
   * Mac App Store and identified developers - Install apps for the Mac app store and from identified developers. macOS checks the identity of developers, and does some other checks to verify app integrity. If a user selects Gatekeeper to install apps outside these options, then the device is considered not compliant.
   * Anywhere - Apps can be installed from anywhere, and by any developer. This option is the least secure.
 
-## Permissions
+### Permissions
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

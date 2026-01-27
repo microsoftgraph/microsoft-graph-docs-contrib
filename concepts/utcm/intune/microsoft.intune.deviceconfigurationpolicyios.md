@@ -7,12 +7,12 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 This resource configures an Intune Device Configuration Policy for iOS.
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -209,9 +209,9 @@ This resource configures an Intune Device Configuration Policy for iOS.
 | Assignments | Write | MSFT_DeviceManagementConfigurationPolicyAssignments[] | Represents the assignment to the Intune policy. | - |
 | Ensure | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
 
-### MSFT_DeviceManagementConfigurationPolicyAssignments
+#### MSFT_DeviceManagementConfigurationPolicyAssignments
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -222,9 +222,9 @@ This resource configures an Intune Device Configuration Policy for iOS.
 | groupDisplayName | Write | String | The group Display Name that is the target of the assignment. | - |
 | collectionId | Write | String | The collection Id that is the target of the assignment.(ConfigMgr) | - |
 
-### MSFT_MicrosoftGraphapplistitem
+#### MSFT_MicrosoftGraphapplistitem
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -234,90 +234,90 @@ This resource configures an Intune Device Configuration Policy for iOS.
 | name | Write | String | Define the name of the app. | - |
 | publisher | Write | String | Define the publisher of the app. | - |
 
-### MSFT_MicrosoftGraphmediacontentratingaustralia
+#### MSFT_MicrosoftGraphmediacontentratingaustralia
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | movieRating | Write | String | Movies rating selected for Australia | `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `mature`, `agesAbove15`, `agesAbove18` |
 | tvRating | Write | String | TV rating selected for Australia | `allAllowed`, `allBlocked`, `preschoolers`, `children`, `general`, `parentalGuidance`, `mature`, `agesAbove15`, `agesAbove15AdultViolence` |
 
-### MSFT_MicrosoftGraphmediacontentratingcanada
+#### MSFT_MicrosoftGraphmediacontentratingcanada
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | movieRating | Write | String | Movies rating selected for Canada | `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove14`, `agesAbove18`, `restricted` |
 | tvRating | Write | String | TV rating selected for Canada | `allAllowed`, `allBlocked`, `children`, `childrenAbove8`, `general`, `parentalGuidance`, `agesAbove14`, `agesAbove18` |
 
-### MSFT_MicrosoftGraphmediacontentratingfrance
+#### MSFT_MicrosoftGraphmediacontentratingfrance
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | movieRating | Write | String | Movies rating selected for France | `allAllowed`, `allBlocked`, `agesAbove10`, `agesAbove12`, `agesAbove16`, `agesAbove18` |
 | tvRating | Write | String | TV rating selected for France | `allAllowed`, `allBlocked`, `agesAbove10`, `agesAbove12`, `agesAbove16`, `agesAbove18` |
 
-### MSFT_MicrosoftGraphmediacontentratinggermany
+#### MSFT_MicrosoftGraphmediacontentratinggermany
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | movieRating | Write | String | Movies rating selected for Germany | `allAllowed`, `allBlocked`, `general`, `agesAbove6`, `agesAbove12`, `agesAbove16`, `adults` |
 | tvRating | Write | String | TV rating selected for Germany | `allAllowed`, `allBlocked`, `general`, `agesAbove6`, `agesAbove12`, `agesAbove16`, `adults` |
 
-### MSFT_MicrosoftGraphmediacontentratingireland
+#### MSFT_MicrosoftGraphmediacontentratingireland
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | movieRating | Write | String | Movies rating selected for Ireland | `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove12`, `agesAbove15`, `agesAbove16`, `adults` |
 | tvRating | Write | String | TV rating selected for Ireland | `allAllowed`, `allBlocked`, `general`, `children`, `youngAdults`, `parentalSupervision`, `mature` |
 
-### MSFT_MicrosoftGraphmediacontentratingjapan
+#### MSFT_MicrosoftGraphmediacontentratingjapan
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | movieRating | Write | String | Movies rating selected for Japan | `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove15`, `agesAbove18` |
 | tvRating | Write | String | TV rating selected for Japan | `allAllowed`, `allBlocked`, `explicitAllowed` |
 
-### MSFT_MicrosoftGraphmediacontentratingnewzealand
+#### MSFT_MicrosoftGraphmediacontentratingnewzealand
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | movieRating | Write | String | Movies rating selected for New Zealand | `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `mature`, `agesAbove13`, `agesAbove15`, `agesAbove16`, `agesAbove18`, `restricted`, `agesAbove16Restricted` |
 | tvRating | Write | String | TV rating selected for New Zealand | `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `adults` |
 
-### MSFT_MicrosoftGraphmediacontentratingunitedkingdom
+#### MSFT_MicrosoftGraphmediacontentratingunitedkingdom
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | movieRating | Write | String | Movies rating selected for UK | `allAllowed`, `allBlocked`, `general`, `universalChildren`, `parentalGuidance`, `agesAbove12Video`, `agesAbove12Cinema`, `agesAbove15`, `adults` |
 | tvRating | Write | String | TV rating selected for UK | `allAllowed`, `allBlocked`, `caution` |
 
-### MSFT_MicrosoftGraphmediacontentratingunitedstates
+#### MSFT_MicrosoftGraphmediacontentratingunitedstates
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | movieRating | Write | String | Movies rating selected for USA | `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `parentalGuidance13`, `restricted`, `adults` |
 | tvRating | Write | String | TV rating selected for USA | `allAllowed`, `allBlocked`, `childrenAll`, `childrenAbove7`, `general`, `parentalGuidance`, `childrenAbove14`, `adults` |
 
-### MSFT_MicrosoftGraphiosnetworkusagerule
+#### MSFT_MicrosoftGraphiosnetworkusagerule
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -326,13 +326,13 @@ This resource configures an Intune Device Configuration Policy for iOS.
 | managedApps | Write | MSFT_MicrosoftGraphapplistitem[] | Information about the managed apps that this rule is going to apply to. | - |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

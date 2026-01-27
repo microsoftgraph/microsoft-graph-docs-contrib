@@ -7,12 +7,12 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 The TeamsCallParkPolicy controls whether or not users are able to leverage the call park feature in Microsoft Teams. Call park allows enterprise voice customers to place a call on hold and then perform a number of actions on that call: transfer to another department, retrieve via the same phone, or retrieve via a different Teams phone. The New-CsTeamsCallParkPolicy resource lets you create a new custom policy that can then be assigned to one or more specific users.
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -25,9 +25,9 @@ The TeamsCallParkPolicy controls whether or not users are able to leverage the c
 | Ensure | Write | String | Present ensures the instance exists, absent ensures it's removed. | `Present`, `Absent` |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Entra ID roles
+#### Microsoft Entra ID roles
 
 The following [roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) can be granted to the UTCM (Unified Tenant Configuration Management) service principal:
 
@@ -37,11 +37,11 @@ The following [roles](/entra/identity/role-based-access-control/permissions-refe
 | Update    | Teams Administrator |
 
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

@@ -7,12 +7,12 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 Intune Device Configuration Vpn Policy for Windows10
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -49,9 +49,9 @@ Intune Device Configuration Vpn Policy for Windows10
 | Assignments | Write | MSFT_DeviceManagementConfigurationPolicyAssignments[] | Represents the assignment to the Intune policy. | - |
 | Ensure | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
 
-### MSFT_DeviceManagementConfigurationPolicyAssignments
+#### MSFT_DeviceManagementConfigurationPolicyAssignments
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -62,18 +62,18 @@ Intune Device Configuration Vpn Policy for Windows10
 | groupDisplayName | Write | String | The group Display Name that is the target of the assignment. | - |
 | collectionId | Write | String | The collection Id that is the target of the assignment.(ConfigMgr) | - |
 
-### MSFT_MicrosoftGraphWindows10AssociatedApps
+#### MSFT_MicrosoftGraphWindows10AssociatedApps
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | AppType | Write | String | Application type. Possible values are: desktop, universal. | `desktop`, `universal` |
 | Identifier | Write | String | Identifier. | - |
 
-### MSFT_MicrosoftGraphCryptographySuite
+#### MSFT_MicrosoftGraphCryptographySuite
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -84,9 +84,9 @@ Intune Device Configuration Vpn Policy for Windows10
 | IntegrityCheckMethod | Write | String | Integrity Check Method. Possible values are: sha2_256, sha1_96, sha1_160, sha2_384, sha2_512, md5. | `sha2_256`, `sha1_96`, `sha1_160`, `sha2_384`, `sha2_512`, `md5` |
 | PfsGroup | Write | String | Perfect Forward Secrecy Group. Possible values are: pfs1, pfs2, pfs2048, ecp256, ecp384, pfsMM, pfs24. | `pfs1`, `pfs2`, `pfs2048`, `ecp256`, `ecp384`, `pfsMM`, `pfs24` |
 
-### MSFT_MicrosoftGraphVpnDnsRule
+#### MSFT_MicrosoftGraphVpnDnsRule
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -96,9 +96,9 @@ Intune Device Configuration Vpn Policy for Windows10
 | ProxyServerUri | Write | String | Proxy Server Uri. | - |
 | Servers | Write | StringArray[] | Servers. | - |
 
-### MSFT_MicrosoftGraphWindows10VpnProxyServer
+#### MSFT_MicrosoftGraphWindows10VpnProxyServer
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -109,27 +109,27 @@ Intune Device Configuration Vpn Policy for Windows10
 | AutomaticallyDetectProxySettings | Write | Boolean | Automatically detect proxy settings. | - |
 | odataType | Write | String | The type of the entity. | `#microsoft.graph.windows10VpnProxyServer`, `#microsoft.graph.windows81VpnProxyServer` |
 
-### MSFT_MicrosoftGraphVpnRoute
+#### MSFT_MicrosoftGraphVpnRoute
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | DestinationPrefix | Write | String | Destination prefix (IPv4/v6 address). | - |
 | PrefixSize | Write | UInt32 | Prefix size. (1-32). Valid values 1 to 32 | - |
 
-### MSFT_MicrosoftGraphExtendedKeyUsage
+#### MSFT_MicrosoftGraphExtendedKeyUsage
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | Name | Write | String | Extended Key Usage Name | - |
 | ObjectIdentifier | Write | String | Extended Key Usage Object Identifier | - |
 
-### MSFT_MicrosoftGraphVpnTrafficRule
+#### MSFT_MicrosoftGraphVpnTrafficRule
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -145,9 +145,9 @@ Intune Device Configuration Vpn Policy for Windows10
 | RoutingPolicyType | Write | String | When app triggered, indicates whether to enable split tunneling along this route. Possible values are: none, splitTunnel, forceTunnel. | `none`, `splitTunnel`, `forceTunnel` |
 | VpnTrafficDirection | Write | String | Specify whether the rule applies to inbound traffic or outbound traffic. Possible values are: outbound, inbound, unknownFutureValue. | `outbound`, `inbound`, `unknownFutureValue` |
 
-### MSFT_MicrosoftGraphIPv4Range
+#### MSFT_MicrosoftGraphIPv4Range
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -156,18 +156,18 @@ Intune Device Configuration Vpn Policy for Windows10
 | CidrAddress | Write | String | IPv4 address in CIDR notation. Not nullable. | - |
 | odataType | Write | String | The type of the entity. | `#microsoft.graph.iPv4CidrRange`, `#microsoft.graph.iPv6CidrRange`, `#microsoft.graph.iPv4Range`, `#microsoft.graph.iPv6Range` |
 
-### MSFT_MicrosoftGraphNumberRange
+#### MSFT_MicrosoftGraphNumberRange
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | LowerNumber | Write | UInt32 | Lower number. | - |
 | UpperNumber | Write | UInt32 | Upper number. | - |
 
-### MSFT_MicrosoftGraphVpnServer
+#### MSFT_MicrosoftGraphVpnServer
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -176,13 +176,13 @@ Intune Device Configuration Vpn Policy for Windows10
 | IsDefaultServer | Write | Boolean | Default server. | - |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

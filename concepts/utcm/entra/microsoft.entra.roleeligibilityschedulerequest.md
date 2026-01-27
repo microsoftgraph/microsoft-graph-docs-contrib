@@ -7,12 +7,12 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 Represents a request for a role eligibility for a principal through PIM. The role eligibility can be permanently eligible without an expiry date or temporarily eligible with an expiry date. Inherits from request.
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -29,9 +29,9 @@ Represents a request for a role eligibility for a principal through PIM. The rol
 | TicketInfo | Write | RoleEligibilityScheduleRequestTicketInfo | Ticket details linked to the role eligibility request including details of the ticket number and ticket system. | - |
 | Ensure | Write | String | Present ensures the instance exists, absent ensures it's removed. | `Present`, `Absent` |
 
-### RoleEligibilityScheduleRequestScheduleRecurrenceRange
+#### RoleEligibilityScheduleRequestScheduleRecurrenceRange
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -41,9 +41,9 @@ Represents a request for a role eligibility for a principal through PIM. The rol
 | startDate | Required | String | The date to start applying the recurrence pattern. The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. | - |
 | type | Required | String | The recurrence range. The possible values are: endDate, noEnd, numbered. | `endDate`, `noEnd`, `numbered` |
 
-### RoleEligibilityScheduleRequestScheduleRecurrencePattern
+#### RoleEligibilityScheduleRequestScheduleRecurrencePattern
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -55,18 +55,18 @@ Represents a request for a role eligibility for a principal through PIM. The rol
 | month | Write | UInt32 | The month in which the event occurs. This is a number from 1 to 12. | - |
 | type | Write | String | The recurrence pattern type: daily, weekly, absoluteMonthly, relativeMonthly, absoluteYearly, relativeYearly. | `daily`, `weekly`, `absoluteMonthly`, `relativeMonthly`, `absoluteYearly`, `relativeYearly` |
 
-### RoleEligibilityScheduleRequestScheduleRecurrence
+#### RoleEligibilityScheduleRequestScheduleRecurrence
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | pattern | Write | RoleEligibilityScheduleRequestScheduleRecurrencePattern | The frequency of an event. | - |
 | range | Write | RoleEligibilityScheduleRequestScheduleRecurrenceRange | The duration of an event. | - |
 
-### RoleEligibilityScheduleRequestScheduleExpiration
+#### RoleEligibilityScheduleRequestScheduleExpiration
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -74,9 +74,9 @@ Represents a request for a role eligibility for a principal through PIM. The rol
 | endDateTime | Write | String | Timestamp of date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. | - |
 | type | Write | String | The requestor's desired expiration pattern type. The possible values are: notSpecified, noExpiration, afterDateTime, afterDuration. | `notSpecified`, `noExpiration`, `afterDateTime`, `afterDuration` |
 
-### RoleEligibilityScheduleRequestSchedule
+#### RoleEligibilityScheduleRequestSchedule
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -84,9 +84,9 @@ Represents a request for a role eligibility for a principal through PIM. The rol
 | recurrence | Write | RoleEligibilityScheduleRequestScheduleRecurrence | The frequency of the eligible or active assignment. This property is currently unsupported in PIM. | - |
 | startDateTime | Write | String | When the eligible or active assignment becomes active. | - |
 
-### RoleEligibilityScheduleRequestTicketInfo
+#### RoleEligibilityScheduleRequestTicketInfo
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -94,9 +94,9 @@ Represents a request for a role eligibility for a principal through PIM. The rol
 | ticketSystem | Write | String | The description of the ticket system. | - |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Entra ID roles
+#### Microsoft Entra ID roles
 
 The following [roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) can be granted to the UTCM (Unified Tenant Configuration Management) service principal:
 
@@ -106,11 +106,11 @@ The following [roles](/entra/identity/role-based-access-control/permissions-refe
 | Update    | Privileged Role Administrator |
 
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

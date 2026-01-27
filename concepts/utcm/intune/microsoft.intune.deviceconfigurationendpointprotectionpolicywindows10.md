@@ -7,12 +7,12 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 Intune Device Configuration Endpoint Protection Policy for Windows10
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -249,9 +249,9 @@ Intune Device Configuration Endpoint Protection Policy for Windows10
 | Assignments | Write | MSFT_DeviceManagementConfigurationPolicyAssignments[] | Represents the assignment to the Intune policy. | - |
 | Ensure | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
 
-### MSFT_DeviceManagementConfigurationPolicyAssignments
+#### MSFT_DeviceManagementConfigurationPolicyAssignments
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -262,9 +262,9 @@ Intune Device Configuration Endpoint Protection Policy for Windows10
 | groupDisplayName | Write | String | The group Display Name that is the target of the assignment. | - |
 | collectionId | Write | String | The collection Id that is the target of the assignment.(ConfigMgr) | - |
 
-### MSFT_MicrosoftGraphBitLockerFixedDrivePolicy
+#### MSFT_MicrosoftGraphBitLockerFixedDrivePolicy
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -272,9 +272,9 @@ Intune Device Configuration Endpoint Protection Policy for Windows10
 | RecoveryOptions | Write | MSFT_MicrosoftGraphBitLockerRecoveryOptions | This policy setting allows you to control how BitLocker-protected fixed data drives are recovered in the absence of the required credentials. This policy setting is applied when you turn on BitLocker. | - |
 | RequireEncryptionForWriteAccess | Write | Boolean | This policy setting determines whether BitLocker protection is required for fixed data drives to be writable on a computer. | - |
 
-### MSFT_MicrosoftGraphBitLockerRecoveryOptions
+#### MSFT_MicrosoftGraphBitLockerRecoveryOptions
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -286,9 +286,9 @@ Intune Device Configuration Endpoint Protection Policy for Windows10
 | RecoveryKeyUsage | Write | String | Indicates whether users are allowed or required to generate a 256-bit recovery key for fixed or system disk. Possible values are: blocked, required, allowed, notConfigured. | `blocked`, `required`, `allowed`, `notConfigured` |
 | RecoveryPasswordUsage | Write | String | Indicates whether users are allowed or required to generate a 48-digit recovery password for fixed or system disk. Possible values are: blocked, required, allowed, notConfigured. | `blocked`, `required`, `allowed`, `notConfigured` |
 
-### MSFT_MicrosoftGraphBitLockerRemovableDrivePolicy
+#### MSFT_MicrosoftGraphBitLockerRemovableDrivePolicy
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -296,9 +296,9 @@ Intune Device Configuration Endpoint Protection Policy for Windows10
 | EncryptionMethod | Write | String | Select the encryption method for removable  drives. Possible values are: aesCbc128, aesCbc256, xtsAes128, xtsAes256. | `aesCbc128`, `aesCbc256`, `xtsAes128`, `xtsAes256` |
 | RequireEncryptionForWriteAccess | Write | Boolean | Indicates whether to block write access to devices configured in another organization.  If requireEncryptionForWriteAccess is false, this value does not affect. | - |
 
-### MSFT_MicrosoftGraphBitLockerSystemDrivePolicy
+#### MSFT_MicrosoftGraphBitLockerSystemDrivePolicy
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -315,9 +315,9 @@ Intune Device Configuration Endpoint Protection Policy for Windows10
 | StartupAuthenticationTpmPinUsage | Write | String | Indicates if TPM startup pin is allowed/required/disallowed. Possible values are: blocked, required, allowed, notConfigured. | `blocked`, `required`, `allowed`, `notConfigured` |
 | StartupAuthenticationTpmUsage | Write | String | Indicates if TPM startup is allowed/required/disallowed. Possible values are: blocked, required, allowed, notConfigured. | `blocked`, `required`, `allowed`, `notConfigured` |
 
-### MSFT_MicrosoftGraphDefenderDetectedMalwareActions
+#### MSFT_MicrosoftGraphDefenderDetectedMalwareActions
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -326,9 +326,9 @@ Intune Device Configuration Endpoint Protection Policy for Windows10
 | ModerateSeverity | Write | String | Indicates a Defender action to take for moderate severity Malware threat detected. Possible values are: deviceDefault, clean, quarantine, remove, allow, userDefined, block. | `deviceDefault`, `clean`, `quarantine`, `remove`, `allow`, `userDefined`, `block` |
 | SevereSeverity | Write | String | Indicates a Defender action to take for severe severity Malware threat detected. Possible values are: deviceDefault, clean, quarantine, remove, allow, userDefined, block. | `deviceDefault`, `clean`, `quarantine`, `remove`, `allow`, `userDefined`, `block` |
 
-### MSFT_MicrosoftGraphWindowsFirewallNetworkProfile
+#### MSFT_MicrosoftGraphWindowsFirewallNetworkProfile
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -356,9 +356,9 @@ Intune Device Configuration Endpoint Protection Policy for Windows10
 | UnicastResponsesToMulticastBroadcastsBlocked | Write | Boolean | Configures the firewall to block unicast responses to multicast broadcast traffic. When UnicastResponsesToMulticastBroadcastsRequired and UnicastResponsesToMulticastBroadcastsBlocked are both true, UnicastResponsesToMulticastBroadcastsBlocked takes priority. | - |
 | UnicastResponsesToMulticastBroadcastsRequired | Write | Boolean | Configures the firewall to allow unicast responses to multicast broadcast traffic. When UnicastResponsesToMulticastBroadcastsRequired and UnicastResponsesToMulticastBroadcastsBlocked are both true, UnicastResponsesToMulticastBroadcastsBlocked takes priority. | - |
 
-### MSFT_MicrosoftGraphWindowsFirewallRule
+#### MSFT_MicrosoftGraphWindowsFirewallRule
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -379,18 +379,18 @@ Intune Device Configuration Endpoint Protection Policy for Windows10
 | ServiceName | Write | String | The name used in cases when a service, not an application, is sending or receiving traffic. | - |
 | TrafficDirection | Write | String | The traffic direction that the rule is enabled for. If not specified, the default is Out. Possible values are: notConfigured, out, in. | `notConfigured`, `out`, `in` |
 
-### MSFT_MicrosoftGraphDeviceManagementUserRightsSetting
+#### MSFT_MicrosoftGraphDeviceManagementUserRightsSetting
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | LocalUsersOrGroups | Write | MSFT_MicrosoftGraphDeviceManagementUserRightsLocalUserOrGroup[] | Representing a collection of local users or groups which will be set on device if the state of this setting is Allowed. This collection can contain a maximum of 500 elements. | - |
 | State | Write | String | Representing the current state of this user rights setting. Possible values are: notConfigured, blocked, allowed. | `notConfigured`, `blocked`, `allowed` |
 
-### MSFT_MicrosoftGraphDeviceManagementUserRightsLocalUserOrGroup
+#### MSFT_MicrosoftGraphDeviceManagementUserRightsLocalUserOrGroup
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -399,13 +399,13 @@ Intune Device Configuration Endpoint Protection Policy for Windows10
 | SecurityIdentifier | Write | String | The security identifier of this local user or group (e.g. S-1-5-32-544). | - |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

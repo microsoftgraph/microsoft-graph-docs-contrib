@@ -7,12 +7,12 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 Intune Device Configuration Network Boundary Policy for Windows10
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -24,9 +24,9 @@ Intune Device Configuration Network Boundary Policy for Windows10
 | Assignments | Write | MSFT_DeviceManagementConfigurationPolicyAssignments[] | Represents the assignment to the Intune policy. | - |
 | Ensure | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
 
-### MSFT_DeviceManagementConfigurationPolicyAssignments
+#### MSFT_DeviceManagementConfigurationPolicyAssignments
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -37,9 +37,9 @@ Intune Device Configuration Network Boundary Policy for Windows10
 | groupDisplayName | Write | String | The group Display Name that is the target of the assignment. | - |
 | collectionId | Write | String | The collection Id that is the target of the assignment.(ConfigMgr) | - |
 
-### MSFT_MicrosoftGraphWindowsNetworkIsolationPolicy
+#### MSFT_MicrosoftGraphWindowsNetworkIsolationPolicy
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -52,18 +52,18 @@ Intune Device Configuration Network Boundary Policy for Windows10
 | EnterpriseProxyServersAreAuthoritative | Write | Boolean | Boolean value that tells the client to accept the configured list of proxies and not try to detect other work proxies. Default is false | - |
 | NeutralDomainResources | Write | StringArray[] | List of domain names that can used for work or personal resource. | - |
 
-### MSFT_MicrosoftGraphProxiedDomain1
+#### MSFT_MicrosoftGraphProxiedDomain1
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | IpAddressOrFQDN | Write | String | The IP address or FQDN | - |
 | Proxy | Write | String | Proxy IP or FQDN | - |
 
-### MSFT_MicrosoftGraphIpRange1
+#### MSFT_MicrosoftGraphIpRange1
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -73,13 +73,13 @@ Intune Device Configuration Network Boundary Policy for Windows10
 | odataType | Write | String | The type of the entity. | `#microsoft.graph.iPv4CidrRange`, `#microsoft.graph.iPv6CidrRange`, `#microsoft.graph.iPv4Range`, `#microsoft.graph.iPv6Range` |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

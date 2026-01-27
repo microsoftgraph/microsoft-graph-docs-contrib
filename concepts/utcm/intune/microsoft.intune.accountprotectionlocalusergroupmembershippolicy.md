@@ -7,13 +7,13 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 This resource configures a Intune Account Protection Local User Group Membership policy.
 
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -24,9 +24,9 @@ This resource configures a Intune Account Protection Local User Group Membership
 | LocalUserGroupCollection | Write | AccountProtectionLocalUserGroupCollection[] | Local User Group Collections of the Intune Policy. | - |
 | Ensure | Write | String | Present ensures the site collection exists, absent ensures it's removed | `Present`, `Absent` |
 
-### AccountProtectionLocalUserGroupMembershipPolicyAssignments
+#### AccountProtectionLocalUserGroupMembershipPolicyAssignments
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -37,9 +37,9 @@ This resource configures a Intune Account Protection Local User Group Membership
 | groupDisplayName | Write | String | The group Display Name that is the target of the assignment. | - |
 | collectionId | Write | String | The collection Id that is the target of the assignment.(ConfigMgr) | - |
 
-### AccountProtectionLocalUserGroupCollection
+#### AccountProtectionLocalUserGroupCollection
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -49,13 +49,13 @@ This resource configures a Intune Account Protection Local User Group Membership
 | UserSelectionType | Write | String | The type of the selection. Either users / groups from AzureAD, or by manual identifier. | `users`, `manual` |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

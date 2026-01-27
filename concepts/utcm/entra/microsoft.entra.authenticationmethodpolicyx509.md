@@ -7,12 +7,12 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 Microsoft Entra Authentication Method Policy X509
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -24,18 +24,18 @@ Microsoft Entra Authentication Method Policy X509
 | Id | Key | String | The unique identifier for an entity. Read-only. | - |
 | Ensure | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
 
-### MSFT_MicrosoftGraphX509CertificateAuthenticationModeConfiguration
+#### MSFT_MicrosoftGraphX509CertificateAuthenticationModeConfiguration
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | Rules | Write | MSFT_MicrosoftGraphX509CertificateRule[] | Rules are configured in addition to the authentication mode to bind a specific x509CertificateRuleType to an x509CertificateAuthenticationMode. For example, bind the policyOID with identifier 1.32.132.343 to x509CertificateMultiFactor authentication mode. | - |
 | X509CertificateAuthenticationDefaultMode | Write | String | The type of strong authentication mode. The possible values are: x509CertificateSingleFactor, x509CertificateMultiFactor, unknownFutureValue. | `x509CertificateSingleFactor`, `x509CertificateMultiFactor`, `unknownFutureValue` |
 
-### MSFT_MicrosoftGraphX509CertificateRule
+#### MSFT_MicrosoftGraphX509CertificateRule
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -43,9 +43,9 @@ Microsoft Entra Authentication Method Policy X509
 | X509CertificateAuthenticationMode | Write | String | The type of strong authentication mode. The possible values are: x509CertificateSingleFactor, x509CertificateMultiFactor, unknownFutureValue. Required. | `x509CertificateSingleFactor`, `x509CertificateMultiFactor`, `unknownFutureValue` |
 | X509CertificateRuleType | Write | String | The type of the X.509 certificate mode configuration rule. The possible values are: issuerSubject, policyOID, unknownFutureValue. Required. | `issuerSubject`, `policyOID`, `unknownFutureValue` |
 
-### MSFT_MicrosoftGraphX509CertificateUserBinding
+#### MSFT_MicrosoftGraphX509CertificateUserBinding
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -53,18 +53,18 @@ Microsoft Entra Authentication Method Policy X509
 | UserProperty | Write | String | Defines the Microsoft Entra user property of the user object to use for the binding. The possible values are: userPrincipalName, onPremisesUserPrincipalName, email. Required. | - |
 | X509CertificateField | Write | String | The field on the X.509 certificate to use for the binding. The possible values are: PrincipalName, RFC822Name. | - |
 
-### AuthenticationMethodPolicyX509ExcludeTarget
+#### AuthenticationMethodPolicyX509ExcludeTarget
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | Id | Write | String | The object identifier of an Microsoft Entra group. | - |
 | TargetType | Write | String | The type of the authentication method target. Possible values are: group and unknownFutureValue. | `group`, `unknownFutureValue` |
 
-### AuthenticationMethodPolicyX509IncludeTarget
+#### AuthenticationMethodPolicyX509IncludeTarget
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -73,9 +73,9 @@ Microsoft Entra Authentication Method Policy X509
 | TargetType | Write | String | The type of the authentication method target. Possible values are: group and unknownFutureValue. | `group`, `unknownFutureValue` |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Entra ID roles
+#### Microsoft Entra ID roles
 
 The following [roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) can be granted to the UTCM (Unified Tenant Configuration Management) service principal:
 
@@ -85,11 +85,11 @@ The following [roles](/entra/identity/role-based-access-control/permissions-refe
 | Update    | Authentication Policy Administrator |
 
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

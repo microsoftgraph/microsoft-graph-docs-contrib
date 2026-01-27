@@ -7,12 +7,12 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 Intune Setting Catalog Custom Policy for Windows10
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -26,9 +26,9 @@ Intune Setting Catalog Custom Policy for Windows10
 | Assignments | Write | MSFT_DeviceManagementConfigurationPolicyAssignments[] | Represents the assignment to the Intune policy. | - |
 | Ensure | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
 
-### MSFT_DeviceManagementConfigurationPolicyAssignments
+#### MSFT_DeviceManagementConfigurationPolicyAssignments
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -39,9 +39,9 @@ Intune Setting Catalog Custom Policy for Windows10
 | groupDisplayName | Write | String | The group Display Name that is the target of the assignment. | - |
 | collectionId | Write | String | The collection Id that is the target of the assignment.(ConfigMgr) | - |
 
-### MSFT_MicrosoftGraphDeviceManagementConfigurationPolicyTemplateReference
+#### MSFT_MicrosoftGraphDeviceManagementConfigurationPolicyTemplateReference
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -50,18 +50,18 @@ Intune Setting Catalog Custom Policy for Windows10
 | TemplateFamily | Write | String | Template Family of the referenced Template. This property is read-only. Possible values are: none, endpointSecurityAntivirus, endpointSecurityDiskEncryption, endpointSecurityFirewall, endpointSecurityEndpointDetectionAndResponse, endpointSecurityAttackSurfaceReduction, endpointSecurityAccountProtection, endpointSecurityApplicationControl, endpointSecurityEndpointPrivilegeManagement, enrollmentConfiguration, appQuietTime, baseline, unknownFutureValue, deviceConfigurationScripts. | `none`, `endpointSecurityAntivirus`, `endpointSecurityDiskEncryption`, `endpointSecurityFirewall`, `endpointSecurityEndpointDetectionAndResponse`, `endpointSecurityAttackSurfaceReduction`, `endpointSecurityAccountProtection`, `endpointSecurityApplicationControl`, `endpointSecurityEndpointPrivilegeManagement`, `enrollmentConfiguration`, `appQuietTime`, `baseline`, `unknownFutureValue`, `deviceConfigurationScripts` |
 | TemplateId | Write | String | Template id | - |
 
-### MSFT_MicrosoftGraphDeviceManagementConfigurationSetting
+#### MSFT_MicrosoftGraphDeviceManagementConfigurationSetting
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | SettingInstance | Write | MSFT_MicrosoftGraphDeviceManagementConfigurationSettingInstance | Setting Instance | - |
 | Id | Write | String | The unique identifier for an entity. Read-only. | - |
 
-### MSFT_MicrosoftGraphDeviceManagementConfigurationSettingInstance
+#### MSFT_MicrosoftGraphDeviceManagementConfigurationSettingInstance
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -75,17 +75,17 @@ Intune Setting Catalog Custom Policy for Windows10
 | SimpleSettingValue | Write | MSFT_MicrosoftGraphDeviceManagementConfigurationSimpleSettingValue | Simple setting instance value | - |
 | odataType | Write | String | The type of the entity. | `#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance`, `#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance`, `#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance`, `#microsoft.graph.deviceManagementConfigurationGroupSettingInstance`, `#microsoft.graph.deviceManagementConfigurationSettingGroupCollectionInstance`, `#microsoft.graph.deviceManagementConfigurationSettingGroupInstance`, `#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance`, `#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance` |
 
-### MSFT_MicrosoftGraphDeviceManagementConfigurationSettingInstanceTemplateReference
+#### MSFT_MicrosoftGraphDeviceManagementConfigurationSettingInstanceTemplateReference
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | SettingInstanceTemplateId | Write | String | Setting instance template id | - |
 
-### MSFT_MicrosoftGraphDeviceManagementConfigurationChoiceSettingValue
+#### MSFT_MicrosoftGraphDeviceManagementConfigurationChoiceSettingValue
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -94,18 +94,18 @@ Intune Setting Catalog Custom Policy for Windows10
 | SettingValueTemplateReference | Write | MSFT_MicrosoftGraphDeviceManagementConfigurationSettingValueTemplateReference | Setting value template reference | - |
 | odataType | Write | String | The type of the entity. | `#microsoft.graph.deviceManagementConfigurationChoiceSettingValue`, `#microsoft.graph.deviceManagementConfigurationGroupSettingValue`, `#microsoft.graph.deviceManagementConfigurationSimpleSettingValue` |
 
-### MSFT_MicrosoftGraphDeviceManagementConfigurationSettingValueTemplateReference
+#### MSFT_MicrosoftGraphDeviceManagementConfigurationSettingValueTemplateReference
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | settingValueTemplateId | Write | String | Setting value template id | - |
 | useTemplateDefault | Write | Boolean | Indicates whether to update policy setting value to match template setting default value | - |
 
-### MSFT_MicrosoftGraphDeviceManagementConfigurationGroupSettingValue
+#### MSFT_MicrosoftGraphDeviceManagementConfigurationGroupSettingValue
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -114,9 +114,9 @@ Intune Setting Catalog Custom Policy for Windows10
 | Value | Write | String | Choice setting value: an OptionDefinition ItemId. | - |
 | odataType | Write | String | The type of the entity. | `#microsoft.graph.deviceManagementConfigurationChoiceSettingValue`, `#microsoft.graph.deviceManagementConfigurationGroupSettingValue`, `#microsoft.graph.deviceManagementConfigurationSimpleSettingValue` |
 
-### MSFT_MicrosoftGraphDeviceManagementConfigurationSimpleSettingValue
+#### MSFT_MicrosoftGraphDeviceManagementConfigurationSimpleSettingValue
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -128,13 +128,13 @@ Intune Setting Catalog Custom Policy for Windows10
 | Children | Write | MSFT_MicrosoftGraphDeviceManagementConfigurationSettingInstance[] | Child settings. | - |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

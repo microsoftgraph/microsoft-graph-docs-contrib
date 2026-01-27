@@ -7,12 +7,12 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 Microsoft Entra Authentication Method Policy Fido2
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -25,9 +25,9 @@ Microsoft Entra Authentication Method Policy Fido2
 | Id | Key | String | The unique identifier for an entity. Read-only. | - |
 | Ensure | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
 
-### MSFT_MicrosoftGraphFido2KeyRestrictions
+#### MSFT_MicrosoftGraphFido2KeyRestrictions
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -35,28 +35,28 @@ Microsoft Entra Authentication Method Policy Fido2
 | EnforcementType | Write | String | Enforcement type. Possible values are: allow, block. | `allow`, `block`, `unknownFutureValue` |
 | IsEnforced | Write | Boolean | Determines if the configured key enforcement is enabled. | - |
 
-### AuthenticationMethodPolicyFido2ExcludeTarget
+#### AuthenticationMethodPolicyFido2ExcludeTarget
 
-#### Parameters
-
-| Parameter | Attribute | DataType | Description | Allowed Values |
-| --- | --- | --- | --- | --- |
-| Id | Write | String | The object identifier of an Microsoft Entra group. | - |
-| TargetType | Write | String | The type of the authentication method target. Possible values are: group and unknownFutureValue. | `user`, `group`, `unknownFutureValue` |
-
-### AuthenticationMethodPolicyFido2IncludeTarget
-
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | Id | Write | String | The object identifier of an Microsoft Entra group. | - |
 | TargetType | Write | String | The type of the authentication method target. Possible values are: group and unknownFutureValue. | `user`, `group`, `unknownFutureValue` |
 
+#### AuthenticationMethodPolicyFido2IncludeTarget
 
-## Permissions
+##### Parameters
 
-### Microsoft Entra ID roles
+| Parameter | Attribute | DataType | Description | Allowed Values |
+| --- | --- | --- | --- | --- |
+| Id | Write | String | The object identifier of an Microsoft Entra group. | - |
+| TargetType | Write | String | The type of the authentication method target. Possible values are: group and unknownFutureValue. | `user`, `group`, `unknownFutureValue` |
+
+
+### Permissions
+
+#### Microsoft Entra ID roles
 
 The following [roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) can be granted to the UTCM (Unified Tenant Configuration Management) service principal:
 
@@ -66,11 +66,11 @@ The following [roles](/entra/identity/role-based-access-control/permissions-refe
 | Update    | Authentication Policy Administrator |
 
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

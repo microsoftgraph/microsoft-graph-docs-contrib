@@ -7,14 +7,14 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 This resource configures an Microsoft Entra group. IMPORTANT: It does not support mail enabled security groups or mail enabled groups that are not unified or dynamic groups.
 
 If using with AADUser, be aware that if AADUser->MemberOf is being specified and the referenced group is configured with AADGroup->Member then a conflict may arise if the two don't match. It's usually best to choose only one of them. See AADUser
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -37,9 +37,9 @@ If using with AADUser, be aware that if AADUser->MemberOf is being specified and
 | AssignedLicenses | Write | GroupLicense[] | List of Licenses assigned to the group. | - |
 | Ensure | Write | String | Specify if the Microsoft Entra Group should exist or not. | `Present`, `Absent` |
 
-### GroupLicense
+#### GroupLicense
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -47,9 +47,9 @@ If using with AADUser, be aware that if AADUser->MemberOf is being specified and
 | SkuId | Write | String | The unique identifier for the SKU. | - |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Entra ID roles
+#### Microsoft Entra ID roles
 
 The following [roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) can be granted to the UTCM (Unified Tenant Configuration Management) service principal:
 
@@ -59,11 +59,11 @@ The following [roles](/entra/identity/role-based-access-control/permissions-refe
 | Update    | None |
 
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

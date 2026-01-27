@@ -7,12 +7,12 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 Intune Windows Information Protection Policy for Windows10 Mdm Enrolled
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -43,9 +43,9 @@ Intune Windows Information Protection Policy for Windows10 Mdm Enrolled
 | Assignments | Write | WindowsInformationProtectionPolicyWindows10MdmEnrolledPolicyAssignments[] | Represents the assignment to the Intune policy. | - |
 | Ensure | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
 
-### WindowsInformationProtectionPolicyWindows10MdmEnrolledPolicyAssignments
+#### WindowsInformationProtectionPolicyWindows10MdmEnrolledPolicyAssignments
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -56,9 +56,9 @@ Intune Windows Information Protection Policy for Windows10 Mdm Enrolled
 | groupDisplayName | Write | String | The group Display Name that is the target of the assignment. | - |
 | collectionId | Write | String | The collection Id that is the target of the assignment.(ConfigMgr) | - |
 
-### MSFT_MicrosoftGraphWindowsInformationProtectionDataRecoveryCertificate
+#### MSFT_MicrosoftGraphWindowsInformationProtectionDataRecoveryCertificate
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -67,27 +67,27 @@ Intune Windows Information Protection Policy for Windows10 Mdm Enrolled
 | ExpirationDateTime | Write | String | Data recovery Certificate expiration datetime | - |
 | SubjectName | Write | String | Data recovery Certificate subject name | - |
 
-### MSFT_MicrosoftGraphWindowsInformationProtectionResourceCollection
+#### MSFT_MicrosoftGraphWindowsInformationProtectionResourceCollection
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | DisplayName | Write | String | Display name | - |
 | Resources | Write | StringArray[] | Collection of resources | - |
 
-### MSFT_MicrosoftGraphWindowsInformationProtectionIPRangeCollection
+#### MSFT_MicrosoftGraphWindowsInformationProtectionIPRangeCollection
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | DisplayName | Write | String | Display name | - |
 | Ranges | Write | MSFT_MicrosoftGraphIpRange[] | Collection of ip ranges | - |
 
-### MSFT_MicrosoftGraphIpRange
+#### MSFT_MicrosoftGraphIpRange
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -96,27 +96,27 @@ Intune Windows Information Protection Policy for Windows10 Mdm Enrolled
 | UpperAddress | Write | String | Upper address. | - |
 | odataType | Write | String | The type of the entity. | `#microsoft.graph.iPv4CidrRange`, `#microsoft.graph.iPv6CidrRange`, `#microsoft.graph.iPv4Range`, `#microsoft.graph.iPv6Range` |
 
-### MSFT_MicrosoftGraphWindowsInformationProtectionProxiedDomainCollection
+#### MSFT_MicrosoftGraphWindowsInformationProtectionProxiedDomainCollection
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | DisplayName | Write | String | Display name | - |
 | ProxiedDomains | Write | MSFT_MicrosoftGraphProxiedDomain[] | Collection of proxied domains | - |
 
-### MSFT_MicrosoftGraphProxiedDomain
+#### MSFT_MicrosoftGraphProxiedDomain
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | IpAddressOrFQDN | Write | String | The IP address or FQDN | - |
 | Proxy | Write | String | Proxy IP or FQDN | - |
 
-### MSFT_MicrosoftGraphWindowsInformationProtectionApp
+#### MSFT_MicrosoftGraphWindowsInformationProtectionApp
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -131,13 +131,13 @@ Intune Windows Information Protection Policy for Windows10 Mdm Enrolled
 | odataType | Write | String | The type of the entity. | `#microsoft.graph.windowsInformationProtectionDesktopApp`, `#microsoft.graph.windowsInformationProtectionStoreApp` |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

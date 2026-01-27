@@ -7,14 +7,14 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 This resource is used to configure the tenant-wide dial plans for Microsoft Teams.
 
 More information: https://docs.microsoft.com/en-us/microsoftteams/create-and-manage-dial-plans
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -26,9 +26,9 @@ More information: https://docs.microsoft.com/en-us/microsoftteams/create-and-man
 | SimpleName | Write | String | The SimpleName parameter is a display name for the tenant dial plan. This name must be unique among all tenant dial plans within the Skype for Business Server deployment.This string can be up to 49 characters long. Valid characters are alphabetic or numeric characters, hyphen (-), dot (.) and parentheses (()). | - |
 | Ensure | Write | String | Specify if this dial plan should exist or not. | `Present`, `Absent` |
 
-### MSFT_TeamsVoiceNormalizationRule
+#### MSFT_TeamsVoiceNormalizationRule
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -40,9 +40,9 @@ More information: https://docs.microsoft.com/en-us/microsoftteams/create-and-man
 | IsInternalExtension | Write | Boolean | If True, the result of applying this rule will be a number internal to the organization. If False, applying the rule results in an external number. This value is ignored if the value of the OptimizeDeviceDialing property of the associated dial plan is set to False. | - |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Entra ID roles
+#### Microsoft Entra ID roles
 
 The following [roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) can be granted to the UTCM (Unified Tenant Configuration Management) service principal:
 
@@ -52,11 +52,11 @@ The following [roles](/entra/identity/role-based-access-control/permissions-refe
 | Update    | Teams Administrator |
 
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

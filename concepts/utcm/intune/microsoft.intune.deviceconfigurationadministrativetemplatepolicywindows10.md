@@ -7,12 +7,12 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 Intune Device Configuration Administrative Template Policy for Windows10
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -24,9 +24,9 @@ Intune Device Configuration Administrative Template Policy for Windows10
 | Assignments | Write | MSFT_DeviceManagementConfigurationPolicyAssignments[] | Represents the assignment to the Intune policy. | - |
 | Ensure | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
 
-### MSFT_DeviceManagementConfigurationPolicyAssignments
+#### MSFT_DeviceManagementConfigurationPolicyAssignments
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -37,9 +37,9 @@ Intune Device Configuration Administrative Template Policy for Windows10
 | groupDisplayName | Write | String | The group Display Name that is the target of the assignment. | - |
 | collectionId | Write | String | The collection Id that is the target of the assignment.(ConfigMgr) | - |
 
-### GroupPolicyDefinitionValueDefinition
+#### GroupPolicyDefinitionValueDefinition
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -55,9 +55,9 @@ Intune Device Configuration Administrative Template Policy for Windows10
 | SupportedOn | Write | String | Localized string used to specify what operating system or application version is affected by the policy. | - |
 | Id | Write | String | The unique identifier for an entity. Read-only. | - |
 
-### GroupPolicyDefinitionValue
+#### GroupPolicyDefinitionValue
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -67,9 +67,9 @@ Intune Device Configuration Administrative Template Policy for Windows10
 | Definition | Write | GroupPolicyDefinitionValueDefinition | The associated group policy definition with the value. Read-Only. | - |
 | PresentationValues | Write | GroupPolicyDefinitionValuePresentationValue[] | The associated group policy presentation values with the definition value. | - |
 
-### GroupPolicyDefinitionValuePresentationValue
+#### GroupPolicyDefinitionValuePresentationValue
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -83,9 +83,9 @@ Intune Device Configuration Administrative Template Policy for Windows10
 | PresentationDefinitionLabel | Write | String | The label of the presentation definition. Read-only. | - |
 | odataType | Write | String | A value for the associated presentation. | `#microsoft.graph.groupPolicyPresentationValueBoolean`, `#microsoft.graph.groupPolicyPresentationValueDecimal`, `#microsoft.graph.groupPolicyPresentationValueList`, `#microsoft.graph.groupPolicyPresentationValueLongDecimal`, `#microsoft.graph.groupPolicyPresentationValueMultiText`, `#microsoft.graph.groupPolicyPresentationValueText` |
 
-### GroupPolicyDefinitionValuePresentationValueKeyValuePair
+#### GroupPolicyDefinitionValuePresentationValueKeyValuePair
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -93,13 +93,13 @@ Intune Device Configuration Administrative Template Policy for Windows10
 | Name | Write | String | Name for this key-value pair. | - |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|

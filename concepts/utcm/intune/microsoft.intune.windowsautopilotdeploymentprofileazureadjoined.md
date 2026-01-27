@@ -7,12 +7,12 @@ ms.topic: include
 
 <!-- markdownlint-disable MD041-->
 
-## Description
+### Description
 
 Intune Windows Autopilot Deployment Profile Microsoft Entra Joined
 
 
-## Parameters
+### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -30,9 +30,9 @@ Intune Windows Autopilot Deployment Profile Microsoft Entra Joined
 | Assignments | Write | MSFT_DeviceManagementConfigurationPolicyAssignments[] | Represents the assignment to the Intune policy. | - |
 | Ensure | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
 
-### MSFT_DeviceManagementConfigurationPolicyAssignments
+#### MSFT_DeviceManagementConfigurationPolicyAssignments
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -43,9 +43,9 @@ Intune Windows Autopilot Deployment Profile Microsoft Entra Joined
 | groupDisplayName | Write | String | The group Display Name that is the target of the assignment. | - |
 | collectionId | Write | String | The collection Id that is the target of the assignment.(ConfigMgr) | - |
 
-### MSFT_MicrosoftGraphWindowsEnrollmentStatusScreenSettings1
+#### MSFT_MicrosoftGraphWindowsEnrollmentStatusScreenSettings1
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -57,9 +57,9 @@ Intune Windows Autopilot Deployment Profile Microsoft Entra Joined
 | HideInstallationProgress | Write | Boolean | Show or hide installation progress to user | - |
 | InstallProgressTimeoutInMinutes | Write | UInt32 | Set installation progress timeout in minutes | - |
 
-### MSFT_MicrosoftGraphOutOfBoxExperienceSettings1
+#### MSFT_MicrosoftGraphOutOfBoxExperienceSettings1
 
-#### Parameters
+##### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
@@ -71,13 +71,13 @@ Intune Windows Autopilot Deployment Profile Microsoft Entra Joined
 | UserType | Write | String | Type of user. Possible values are: administrator, standard. | `administrator`, `standard` |
 
 
-## Permissions
+### Permissions
 
-### Microsoft Graph
+#### Microsoft Graph
 
 To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
-#### Application permissions
+##### Application permissions
 
 | Operation | Supported permissions |
 |-----------|------------------------------|
