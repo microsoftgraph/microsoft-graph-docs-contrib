@@ -23,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "security_ediscoveryreviewset_delete_queries" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoveryreviewset-delete-queries-permissions.md)]
 
-[!INCLUDE [rbac-ediscovery-reviewset](../includes/rbac-for-apis/rbac-ediscovery-reviewset-apis.md)]
+[!INCLUDE [rbac-ediscovery-reviewset](../includes/rbac-for-apis/rbac-ediscovery-reviewset-tag-apis.md)]
 
 ## HTTP request
 

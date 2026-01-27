@@ -23,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "security_ediscoverycase_delete_tags" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoverycase-delete-tags-permissions.md)]
 
-[!INCLUDE [rbac-ediscovery-reviewset](../includes/rbac-for-apis/rbac-ediscovery-reviewset-apis.md)]
+[!INCLUDE [rbac-ediscovery-reviewset](../includes/rbac-for-apis/rbac-ediscovery-reviewset-tag-apis.md)]
 
 ## HTTP request
 

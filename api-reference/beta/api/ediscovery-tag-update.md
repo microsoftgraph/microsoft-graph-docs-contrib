@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "ediscovery_tag_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/ediscovery-tag-update-permissions.md)]
 
-[!INCLUDE [rbac-rbac-ediscovery-tag-apis](../includes/rbac-for-apis/rbac-ediscovery-tag-apis.md)]
+[!INCLUDE [rbac-ediscovery-reviewset-apis](../includes/rbac-for-apis/rbac-ediscovery-reviewset-tag-apis.md)]
 
 ## HTTP request
 

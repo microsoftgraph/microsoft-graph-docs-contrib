@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "ediscovery_reviewsetquery_post" } -->
 [!INCLUDE [permissions-table](../includes/permissions/ediscovery-reviewsetquery-post-permissions.md)]
 
-[!INCLUDE [rbac-rbac-ediscovery-export-apis](../includes/rbac-for-apis/rbac-ediscovery-export-apis.md)]
+[!INCLUDE [rbac-ediscovery-custodian-apis](../includes/rbac-for-apis/rbac-ediscovery-custodian-export-apis.md)]
 
 ## HTTP request
 
