@@ -570,11 +570,11 @@ items:
     - name: Cloud PC domain join configuration
       href: ../../resources/cloudpcdomainjoinconfiguration.md
     - name: Cloud PC external partner agent setting
-      href: ../../resource/cloudpcexternalpartneragentsetting.md
+      href: ../../resources/cloudpcexternalpartneragentsetting.md
     - name: Cloud PC external partner action result
-      href: ../../resource/cloudpcexternalpartneractionresult.md
+      href: ../../resources/cloudpcexternalpartneractionresult.md
     - name: Cloud PC external partner action report
-      href: ../../resource/cloudpcexternalpartneractionreport.md
+      href: ../../resources/cloudpcexternalpartneractionreport.md
     - name: Cloud PC forensic storage account
       href: ../../resources/cloudpcforensicstorageaccount.md
     - name: Cloud PC frontline shared device detail
