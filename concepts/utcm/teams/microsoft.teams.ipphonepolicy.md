@@ -16,15 +16,15 @@ New-CsTeamsIPPhonePolicy allows you to create a policy to manage features relate
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Identity** | Key | String | Specifies the policy instance name | |
-| **AllowBetterTogether** | Write | String | Determines whether Better Together mode is enabled, phones can lock and unlock in an integrated fashion when connected to their Windows PC running a 64-bit Teams desktop client. | `Enabled`, `Disabled` |
-| **AllowHomeScreen** | Write | String | Determines whether the Home Screen feature of the Teams IP Phones is enabled. | `Enabled`, `EnabledUserOverride`, `Disabled` |
-| **AllowHotDesking** | Write | Boolean | Determines whether hot desking mode is enabled. | |
-| **Description** | Write | String | Specifies the description of the policy | |
-| **HotDeskingIdleTimeoutInMinutes** | Write | UInt64 | Determines the idle timeout value in minutes for the signed in user account. When the timeout is reached, the account is logged out. | |
-| **SearchOnCommonAreaPhoneMode** | Write | String | Determines whether a user can search the Global Address List in Common Area Phone Mode. | `Enabled`, `Disabled` |
-| **SignInMode** | Write | String | Determines the sign in mode for the device when signing in to Teams. | `UserSignIn`, `CommonAreaPhoneSignIn`, `MeetingSignIn` |
-| **Ensure** | Write | String | Present ensures the instance exists, absent ensures it's removed. | `Present`, `Absent` |
+| Identity | Key | String | Specifies the policy instance name | - |
+| AllowBetterTogether | Write | String | Determines whether Better Together mode is enabled, phones can lock and unlock in an integrated fashion when connected to their Windows PC running a 64-bit Teams desktop client. | `Enabled`, `Disabled` |
+| AllowHomeScreen | Write | String | Determines whether the Home Screen feature of the Teams IP Phones is enabled. | `Enabled`, `EnabledUserOverride`, `Disabled` |
+| AllowHotDesking | Write | Boolean | Determines whether hot desking mode is enabled. | - |
+| Description | Write | String | Specifies the description of the policy | - |
+| HotDeskingIdleTimeoutInMinutes | Write | UInt64 | Determines the idle timeout value in minutes for the signed in user account. When the timeout is reached, the account is logged out. | - |
+| SearchOnCommonAreaPhoneMode | Write | String | Determines whether a user can search the Global Address List in Common Area Phone Mode. | `Enabled`, `Disabled` |
+| SignInMode | Write | String | Determines the sign in mode for the device when signing in to Teams. | `UserSignIn`, `CommonAreaPhoneSignIn`, `MeetingSignIn` |
+| Ensure | Write | String | Present ensures the instance exists, absent ensures it's removed. | `Present`, `Absent` |
 
 
 ## Permissions

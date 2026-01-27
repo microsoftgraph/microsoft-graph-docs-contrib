@@ -16,16 +16,16 @@ As an Admin, you can use the Windows PowerShell command, New-CsTenantNetworkSite
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Identity** | Key | String | Unique identifier for the network site to be created. | |
-| **Description** | Write | String | Provide a description of the network site to identify purpose of creating it. | |
-| **EmergencyCallingPolicy** | Write | String | This parameter is used to assign a custom emergency calling policy to a network site | |
-| **EmergencyCallRoutingPolicy** | Write | String | This parameter is used to assign a custom emergency call routing policy to a network site | |
-| **EnableLocationBasedRouting** | Write | Boolean | This parameter determines whether the current site is enabled for location based routing. | |
-| **LocationPolicy** | Write | String | LocationPolicy is the identifier for the location policy which the current network site is associating to. | |
-| **NetworkRegionID** | Write | String | NetworkRegionID is the identifier for the network region which the current network site is associating to. | |
-| **NetworkRoamingPolicy** | Write | String | NetworkRoamingPolicy is the identifier for the network roaming policy to which the network site will associate to. | |
-| **SiteAddress** | Write | String | The address of current network site. | |
-| **Ensure** | Write | String | Present ensures the instance exists, absent ensures it's removed. | `Present`, `Absent` |
+| Identity | Key | String | Unique identifier for the network site to be created. | - |
+| Description | Write | String | Provide a description of the network site to identify purpose of creating it. | - |
+| EmergencyCallingPolicy | Write | String | This parameter is used to assign a custom emergency calling policy to a network site | - |
+| EmergencyCallRoutingPolicy | Write | String | This parameter is used to assign a custom emergency call routing policy to a network site | - |
+| EnableLocationBasedRouting | Write | Boolean | This parameter determines whether the current site is enabled for location based routing. | - |
+| LocationPolicy | Write | String | LocationPolicy is the identifier for the location policy which the current network site is associating to. | - |
+| NetworkRegionID | Write | String | NetworkRegionID is the identifier for the network region which the current network site is associating to. | - |
+| NetworkRoamingPolicy | Write | String | NetworkRoamingPolicy is the identifier for the network roaming policy to which the network site will associate to. | - |
+| SiteAddress | Write | String | The address of current network site. | - |
+| Ensure | Write | String | Present ensures the instance exists, absent ensures it's removed. | `Present`, `Absent` |
 
 
 ## Permissions

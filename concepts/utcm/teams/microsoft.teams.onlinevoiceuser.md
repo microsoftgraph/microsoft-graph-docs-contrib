@@ -16,10 +16,10 @@ This resource configures the Teams Online Voice User.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Identity** | Key | String | Specifies the identity of the target user. | |
-| **LocationID** | Write | String | Specifies the unique identifier of the emergency location to assign to the user. Location identities can be discovered by using the Get-CsOnlineLisLocation cmdlet. | |
-| **TelephoneNumber** | Write | String | Specifies the telephone number to be assigned to the user. The value must be in E.164 format: +14255043920. Setting the value to $Null clears the user's telephone number. | |
-| **Ensure** | Write | String | Present ensures the online voice user exists, absent ensures it's removed. | `Present`, `Absent` |
+| Identity | Key | String | Specifies the identity of the target user. | - |
+| LocationID | Write | String | Specifies the unique identifier of the emergency location to assign to the user. Location identities can be discovered by using the Get-CsOnlineLisLocation cmdlet. | - |
+| TelephoneNumber | Write | String | Specifies the telephone number to be assigned to the user. The value must be in E.164 format: +14255043920. Setting the value to $Null clears the user's telephone number. | - |
+| Ensure | Write | String | Present ensures the online voice user exists, absent ensures it's removed. | `Present`, `Absent` |
 
 
 ## Permissions

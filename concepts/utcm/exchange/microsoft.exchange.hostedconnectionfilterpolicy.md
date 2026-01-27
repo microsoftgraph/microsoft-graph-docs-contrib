@@ -17,13 +17,13 @@ in your cloud-based organization.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Identity** | Key | String | The Identity parameter specifies the Hosted Connection Filter Policy that you want to modify. | |
-| **AdminDisplayName** | Write | String | The AdminDisplayName parameter specifies a description for the policy. | |
-| **EnableSafeList** | Write | Boolean | The EnableSafeList parameter enables or disables use of the safe list. The safe list is a dynamic allow list in the Microsoft datacenter that requires no customer configuration. Valid input for this parameter is $true or $false. The default value is $false. | |
-| **IPAllowList** | Write | StringArray[] | The IPAllowList parameter specifies IP addresses from which messages are always allowed. Messages from the IP addresses you specify won't be identified as spam, despite any other spam characteristics of the messages. Valid values for this parameter are: A single IP address, an IP address range, a CIDR IP. | |
-| **IPBlockList** | Write | StringArray[] | The IPBlockList parameter specifies IP addresses from which messages are never allowed. Messages from the IP addresses you specify are blocked without any further spam scanning. Valid values for this parameter are: A single IP address, an IP address range, a CIDR IP. | |
-| **MakeDefault** | Write | Boolean | The MakeDefault parameter makes the specified policy the default connection filter policy. Default is $false. | |
-| **Ensure** | Write | String | Specifies if this Hosted Connection Filter Policy should exist. | `Present`, `Absent` |
+| Identity | Key | String | The Identity parameter specifies the Hosted Connection Filter Policy that you want to modify. | - |
+| AdminDisplayName | Write | String | The AdminDisplayName parameter specifies a description for the policy. | - |
+| EnableSafeList | Write | Boolean | The EnableSafeList parameter enables or disables use of the safe list. The safe list is a dynamic allow list in the Microsoft datacenter that requires no customer configuration. Valid input for this parameter is $true or $false. The default value is $false. | - |
+| IPAllowList | Write | StringArray[] | The IPAllowList parameter specifies IP addresses from which messages are always allowed. Messages from the IP addresses you specify won't be identified as spam, despite any other spam characteristics of the messages. Valid values for this parameter are: A single IP address, an IP address range, a CIDR IP. | - |
+| IPBlockList | Write | StringArray[] | The IPBlockList parameter specifies IP addresses from which messages are never allowed. Messages from the IP addresses you specify are blocked without any further spam scanning. Valid values for this parameter are: A single IP address, an IP address range, a CIDR IP. | - |
+| MakeDefault | Write | Boolean | The MakeDefault parameter makes the specified policy the default connection filter policy. Default is $false. | - |
+| Ensure | Write | String | Specifies if this Hosted Connection Filter Policy should exist. | `Present`, `Absent` |
 
 
 ## Permissions

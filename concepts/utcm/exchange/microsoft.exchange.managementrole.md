@@ -16,10 +16,10 @@ This resource configures RBAC Management Roles in Exchange Online.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Name** | Key | String | The Name parameter specifies the name of the role. The maximum length of the name is 64 characters. | |
-| **Parent** | Key | String | The Parent parameter specifies the identity of the role to copy. Mandatory for management role creation/update or when Ensure=Present. Non-mandatory for Ensure=Absent | |
-| **Description** | Write | String | The Description parameter specifies the description that's displayed when the management role is viewed using the Get-ManagementRole cmdlet. | |
-| **Ensure** | Write | String | Specify if the Management Role should exist or not. | `Present`, `Absent` |
+| Name | Key | String | The Name parameter specifies the name of the role. The maximum length of the name is 64 characters. | - |
+| Parent | Key | String | The Parent parameter specifies the identity of the role to copy. Mandatory for management role creation/update or when Ensure=Present. Non-mandatory for Ensure=Absent | - |
+| Description | Write | String | The Description parameter specifies the description that's displayed when the management role is viewed using the Get-ManagementRole cmdlet. | - |
+| Ensure | Write | String | Specify if the Management Role should exist or not. | `Present`, `Absent` |
 
 
 ## Permissions

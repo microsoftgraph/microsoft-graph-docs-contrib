@@ -16,9 +16,9 @@ This resource configures Policy Tips in Exchange Online.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Name** | Key | String | The Name parameter specifies the custom Policy Tip you want to modify. | |
-| **Value** | Write | String | The Value parameter specifies the text that's displayed by the Policy Tip. | |
-| **Ensure** | Write | String | Specify if the Policy Tip Config should exist or not. | `Present`, `Absent` |
+| Name | Key | String | The Name parameter specifies the custom Policy Tip you want to modify. | - |
+| Value | Write | String | The Value parameter specifies the text that's displayed by the Policy Tip. | - |
+| Ensure | Write | String | Specify if the Policy Tip Config should exist or not. | `Present`, `Absent` |
 
 
 ## Permissions

@@ -16,11 +16,11 @@ Create or modify an EXOReportSubmissionRule in your cloud-based organization.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **IsSingleInstance** | Key | String | Specifies the resource is a single instance, the value must be 'Yes'. | `Yes` |
-| **Identity** | Write | String | The Identity parameter specifies the report submission rule that you want to modify. | |
-| **Comments** | Write | String | The Comments parameter specifies informative comments for the rule, such as what the rule is used for or how it has changed over time. | |
-| **SentTo** | Write | StringArray[] | The SentTo parameter specifies the email address of the reporting mailbox in Exchange Online where user reported messages are sent. | |
-| **Ensure** | Write | String | Specifies if this report submission rule should exist. | `Present`, `Absent` |
+| IsSingleInstance | Key | String | Specifies the resource is a single instance, the value must be 'Yes'. | `Yes` |
+| Identity | Write | String | The Identity parameter specifies the report submission rule that you want to modify. | - |
+| Comments | Write | String | The Comments parameter specifies informative comments for the rule, such as what the rule is used for or how it has changed over time. | - |
+| SentTo | Write | StringArray[] | The SentTo parameter specifies the email address of the reporting mailbox in Exchange Online where user reported messages are sent. | - |
+| Ensure | Write | String | Specifies if this report submission rule should exist. | `Present`, `Absent` |
 
 
 ## Permissions

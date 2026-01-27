@@ -16,9 +16,9 @@ This resource configures the Intune device categories.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **DisplayName** | Key | String | Display name of the device category. | |
-| **Description** | Write | String | Description of the device category. | |
-| **Ensure** | Write | String | Present ensures the category exists, absent ensures it's removed. | `Present`, `Absent` |
+| DisplayName | Key | String | Display name of the device category. | - |
+| Description | Write | String | Description of the device category. | - |
+| Ensure | Write | String | Present ensures the category exists, absent ensures it's removed. | `Present`, `Absent` |
 
 
 ## Permissions

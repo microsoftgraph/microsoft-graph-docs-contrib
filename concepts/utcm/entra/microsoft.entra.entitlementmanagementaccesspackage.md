@@ -16,17 +16,17 @@ This resource configures a Microsoft Entra ID Governance entitlement management 
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **DisplayName** | Key | String | The display name of the access package. | |
-| **Id** | Write | String | The Id of the access package. | |
-| **CatalogId** | Write | String | Identifier of the access package catalog referencing this access package. | |
-| **Description** | Write | String | The description of the access package. | |
-| **IsHidden** | Write | Boolean | Whether the access package is hidden from the requestor. | |
-| **IsRoleScopesVisible** | Write | Boolean | Indicates whether role scopes are visible. | |
-| **AccessPackageResourceRoleScopes** | Write | MSFT_AccessPackageResourceRoleScope[] | The resources and roles included in the access package. | |
-| **IncompatibleAccessPackages** | Write | StringArray[] | The access packages whose assigned users are ineligible to be assigned this access package. | |
-| **AccessPackagesIncompatibleWith** | Write | StringArray[] | The access packages that are incompatible with this package. | |
-| **IncompatibleGroups** | Write | StringArray[] | The groups whose members are ineligible to be assigned this access package. | |
-| **Ensure** | Write | String | Present ensures the policy exists, absent ensures the policy is removed. | `Present`, `Absent` |
+| DisplayName | Key | String | The display name of the access package. | - |
+| Id | Write | String | The Id of the access package. | - |
+| CatalogId | Write | String | Identifier of the access package catalog referencing this access package. | - |
+| Description | Write | String | The description of the access package. | - |
+| IsHidden | Write | Boolean | Whether the access package is hidden from the requestor. | - |
+| IsRoleScopesVisible | Write | Boolean | Indicates whether role scopes are visible. | - |
+| AccessPackageResourceRoleScopes | Write | MSFT_AccessPackageResourceRoleScope[] | The resources and roles included in the access package. | - |
+| IncompatibleAccessPackages | Write | StringArray[] | The access packages whose assigned users are ineligible to be assigned this access package. | - |
+| AccessPackagesIncompatibleWith | Write | StringArray[] | The access packages that are incompatible with this package. | - |
+| IncompatibleGroups | Write | StringArray[] | The groups whose members are ineligible to be assigned this access package. | - |
+| Ensure | Write | String | Present ensures the policy exists, absent ensures the policy is removed. | `Present`, `Absent` |
 
 ### MSFT_AccessPackageResourceRoleScope
 
@@ -34,9 +34,9 @@ This resource configures a Microsoft Entra ID Governance entitlement management 
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Id** | Write | String | The unique identifier of the resource role scope. | |
-| **AccessPackageResourceOriginId** | Write | String | The origin identifier of the resource. | |
-| **AccessPackageResourceRoleDisplayName** | Write | String | The display name of the resource role. | |
+| Id | Write | String | The unique identifier of the resource role scope. | - |
+| AccessPackageResourceOriginId | Write | String | The origin identifier of the resource. | - |
+| AccessPackageResourceRoleDisplayName | Write | String | The display name of the resource role. | - |
 
 
 ## Permissions

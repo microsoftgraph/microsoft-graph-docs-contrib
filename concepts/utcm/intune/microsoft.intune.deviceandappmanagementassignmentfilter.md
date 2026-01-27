@@ -18,12 +18,12 @@ For more information: https://docs.microsoft.com/en-us/graph/api/resources/intun
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **DisplayName** | Key | String | DisplayName of the Assignment Filter. | |
-| **Identity** | Write | String | Key of the Assignment Filter. | |
-| **Description** | Write | String | Description of the Assignment Filter. | |
-| **Platform** | Write | String | Platform type of the devices on which the Assignment Filter will be applicable. | `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`, `androidAOSP`, `androidMobileApplicationManagement`, `iOSMobileApplicationManagement`, `unknownFutureValue` |
-| **Rule** | Write | String | Rule definition of the Assignment Filter. | |
-| **Ensure** | Write | String | Present ensures the policy exists, absent ensures it's removed | `Present`, `Absent` |
+| DisplayName | Key | String | DisplayName of the Assignment Filter. | - |
+| Identity | Write | String | Key of the Assignment Filter. | - |
+| Description | Write | String | Description of the Assignment Filter. | - |
+| Platform | Write | String | Platform type of the devices on which the Assignment Filter will be applicable. | `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `unknown`, `androidAOSP`, `androidMobileApplicationManagement`, `iOSMobileApplicationManagement`, `unknownFutureValue` |
+| Rule | Write | String | Rule definition of the Assignment Filter. | - |
+| Ensure | Write | String | Present ensures the policy exists, absent ensures it's removed | `Present`, `Absent` |
 
 
 ## Permissions

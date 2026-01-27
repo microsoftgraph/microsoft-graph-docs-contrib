@@ -16,10 +16,10 @@ This resource configures the Intune device cleanup rule.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **IsSingleInstance** | Key | String | Only valid value is 'Yes'. | `Yes` |
-| **Enabled** | Key | Boolean | Indicates whether the cleanup rule is enabled. | |
-| **DeviceInactivityBeforeRetirementInDays** | Write | UInt32 | Number of days until Intune devices are deleted. Minimum: 30, Maximum: 270. | |
-| **Ensure** | Write | String | Present ensures the category exists, absent ensures it's removed. | `Present`, `Absent` |
+| IsSingleInstance | Key | String | Only valid value is 'Yes'. | `Yes` |
+| Enabled | Key | Boolean | Indicates whether the cleanup rule is enabled. | - |
+| DeviceInactivityBeforeRetirementInDays | Write | UInt32 | Number of days until Intune devices are deleted. Minimum: 30, Maximum: 270. | - |
+| Ensure | Write | String | Present ensures the category exists, absent ensures it's removed. | `Present`, `Absent` |
 
 
 ## Permissions

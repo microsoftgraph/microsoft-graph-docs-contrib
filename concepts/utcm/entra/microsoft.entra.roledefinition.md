@@ -19,15 +19,15 @@ The account used to configure role definitions based on this resource needs eith
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **DisplayName** | Key | String | Specifies a display name for the role definition. | |
-| **Id** | Write | String | Specifies Id for the role definition. | |
-| **Description** | Write | String | Specifies a description for the role definition. | |
-| **ResourceScopes** | Write | StringArray[] | Specifies the resource scopes for the role definition. | |
-| **IsEnabled** | Required | Boolean | Specifies whether the role definition is enabled. | |
-| **RolePermissions** | Required | StringArray[] | Specifies permissions for the role definition. | |
-| **TemplateId** | Write | String | Specifies template id for the role definition. | |
-| **Version** | Write | String | Specifies version for the role definition. | |
-| **Ensure** | Write | String | Specify if the Microsoft Entra Role definition should exist or not. | `Present`, `Absent` |
+| DisplayName | Key | String | Specifies a display name for the role definition. | - |
+| Id | Write | String | Specifies Id for the role definition. | - |
+| Description | Write | String | Specifies a description for the role definition. | - |
+| ResourceScopes | Write | StringArray[] | Specifies the resource scopes for the role definition. | - |
+| IsEnabled | Required | Boolean | Specifies whether the role definition is enabled. | - |
+| RolePermissions | Required | StringArray[] | Specifies permissions for the role definition. | - |
+| TemplateId | Write | String | Specifies template id for the role definition. | - |
+| Version | Write | String | Specifies version for the role definition. | - |
+| Ensure | Write | String | Specify if the Microsoft Entra Role definition should exist or not. | `Present`, `Absent` |
 
 
 ## Permissions

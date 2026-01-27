@@ -16,9 +16,9 @@ Modify the resource Configuration policy in your cloud-based organization.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **IsSingleInstance** | Key | String | Only valid value is 'Yes'. | `Yes` |
-| **ResourcePropertySchema** | Write | StringArray[] | The ResourcePropertySchema parameter specifies the custom resource property that you want to make available to room or equipment mailboxes. This parameter uses the syntax Room/&lt;Text&gt; or Equipment/&lt;Text&gt; where the &lt;Text&gt; value doesn't contain spaces. For example, Room/Whiteboard or Equipment/Van. | |
-| **Ensure** | Write | String | Specifies if this Outbound connector should exist. | `Present`, `Absent` |
+| IsSingleInstance | Key | String | Only valid value is 'Yes'. | `Yes` |
+| ResourcePropertySchema | Write | StringArray[] | The ResourcePropertySchema parameter specifies the custom resource property that you want to make available to room or equipment mailboxes. This parameter uses the syntax Room/&lt;Text&gt; or Equipment/&lt;Text&gt; where the &lt;Text&gt; value doesn't contain spaces. For example, Room/Whiteboard or Equipment/Van. | - |
+| Ensure | Write | String | Specifies if this Outbound connector should exist. | `Present`, `Absent` |
 
 
 ## Permissions

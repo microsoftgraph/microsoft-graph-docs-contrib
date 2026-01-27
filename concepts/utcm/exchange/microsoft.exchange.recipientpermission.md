@@ -16,10 +16,10 @@ This resource allows users to retrieve Office 365 Recipient Permissions.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Identity** | Key | String | The mailbox the permission should be given on. | |
-| **Trustee** | Key | String | The account to give the permission to. | |
-| **AccessRights** | Write | StringArray[] | The access rights granted to the account. Only 'SendAs' is supported. | |
-| **Ensure** | Write | String | Present ensures the group exists, absent ensures it's removed | `Present`, `Absent` |
+| Identity | Key | String | The mailbox the permission should be given on. | - |
+| Trustee | Key | String | The account to give the permission to. | - |
+| AccessRights | Write | StringArray[] | The access rights granted to the account. Only 'SendAs' is supported. | - |
+| Ensure | Write | String | Present ensures the group exists, absent ensures it's removed | `Present`, `Absent` |
 
 
 ## Permissions

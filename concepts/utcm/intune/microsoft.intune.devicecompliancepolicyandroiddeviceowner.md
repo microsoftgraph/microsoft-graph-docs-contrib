@@ -17,26 +17,26 @@ in your cloud-based organization.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **DisplayName** | Key | String | Display name of the Android Device Owner device compliance policy. | |
-| **Description** | Write | String | Description of the Android Device Owner device compliance policy. | |
-| **Assignments** | Write | MSFT_DeviceManagementConfigurationPolicyAssignments[] | Assignments of the Intune Policy. | |
-| **DeviceThreatProtectionEnabled** | Write | Boolean | DeviceThreatProtectionEnabled of the Android Device Owner device compliance policy. | |
-| **DeviceThreatProtectionRequiredSecurityLevel** | Write | String | DeviceThreatProtectionRequiredSecurityLevel of the Android Device Owner device compliance policy. | |
-| **AdvancedThreatProtectionRequiredSecurityLevel** | Write | String | AdvancedThreatProtectionRequiredSecurityLevel of the Android Device Owner device compliance policy. | |
-| **SecurityRequireSafetyNetAttestationBasicIntegrity** | Write | Boolean | SecurityRequireSafetyNetAttestationBasicIntegrity of the Android Device Owner device compliance policy. | |
-| **SecurityRequireSafetyNetAttestationCertifiedDevice** | Write | Boolean | SecurityRequireSafetyNetAttestationCertifiedDevice of the Android Device Owner device compliance policy. | |
-| **osMinimumVersion** | Write | String | osMinimumVersion of the Android Device Owner device compliance policy. | |
-| **osMaximumVersion** | Write | String | osMaximumVersion of the Android Device Owner device compliance policy. | |
-| **passwordRequired** | Write | Boolean | PasswordRequired of the Android Device Owner device compliance policy. | |
-| **passwordMinimumLength** | Write | UInt32 | PasswordMinimumLength of the Android Device Owner device compliance policy. | |
-| **PasswordRequiredType** | Write | String | PasswordRequiredType of the Android Device Owner device compliance policy. | `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`, `any` |
-| **PasswordMinutesOfInactivityBeforeLock** | Write | UInt32 | PasswordMinutesOfInactivityBeforeLock of the Android Device Owner device compliance policy. | |
-| **PasswordExpirationDays** | Write | UInt32 | PasswordExpirationDays of the Android Device Owner device compliance policy. | |
-| **PasswordPreviousPasswordCountToBlock** | Write | UInt32 | PasswordPreviousPasswordCountToBlock of the Android Device Owner device compliance policy. | |
-| **StorageRequireEncryption** | Write | Boolean | StorageRequireEncryption of the Android Device Owner device compliance policy. | |
-| **SecurityRequireIntuneAppIntegrity** | Write | Boolean | SecurityRequireIntuneAppIntegrity of the Android Device Owner device compliance policy. | |
-| **RoleScopeTagIds** | Write | StringArray[] | List of Scope Tags for this Entity instance. Inherited from deviceConfiguration | |
-| **Ensure** | Write | String | Present ensures the policy exists, absent ensures it's removed | `Present`, `Absent` |
+| DisplayName | Key | String | Display name of the Android Device Owner device compliance policy. | - |
+| Description | Write | String | Description of the Android Device Owner device compliance policy. | - |
+| Assignments | Write | MSFT_DeviceManagementConfigurationPolicyAssignments[] | Assignments of the Intune Policy. | - |
+| DeviceThreatProtectionEnabled | Write | Boolean | DeviceThreatProtectionEnabled of the Android Device Owner device compliance policy. | - |
+| DeviceThreatProtectionRequiredSecurityLevel | Write | String | DeviceThreatProtectionRequiredSecurityLevel of the Android Device Owner device compliance policy. | - |
+| AdvancedThreatProtectionRequiredSecurityLevel | Write | String | AdvancedThreatProtectionRequiredSecurityLevel of the Android Device Owner device compliance policy. | - |
+| SecurityRequireSafetyNetAttestationBasicIntegrity | Write | Boolean | SecurityRequireSafetyNetAttestationBasicIntegrity of the Android Device Owner device compliance policy. | - |
+| SecurityRequireSafetyNetAttestationCertifiedDevice | Write | Boolean | SecurityRequireSafetyNetAttestationCertifiedDevice of the Android Device Owner device compliance policy. | - |
+| osMinimumVersion | Write | String | osMinimumVersion of the Android Device Owner device compliance policy. | - |
+| osMaximumVersion | Write | String | osMaximumVersion of the Android Device Owner device compliance policy. | - |
+| passwordRequired | Write | Boolean | PasswordRequired of the Android Device Owner device compliance policy. | - |
+| passwordMinimumLength | Write | UInt32 | PasswordMinimumLength of the Android Device Owner device compliance policy. | - |
+| PasswordRequiredType | Write | String | PasswordRequiredType of the Android Device Owner device compliance policy. | `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`, `any` |
+| PasswordMinutesOfInactivityBeforeLock | Write | UInt32 | PasswordMinutesOfInactivityBeforeLock of the Android Device Owner device compliance policy. | - |
+| PasswordExpirationDays | Write | UInt32 | PasswordExpirationDays of the Android Device Owner device compliance policy. | - |
+| PasswordPreviousPasswordCountToBlock | Write | UInt32 | PasswordPreviousPasswordCountToBlock of the Android Device Owner device compliance policy. | - |
+| StorageRequireEncryption | Write | Boolean | StorageRequireEncryption of the Android Device Owner device compliance policy. | - |
+| SecurityRequireIntuneAppIntegrity | Write | Boolean | SecurityRequireIntuneAppIntegrity of the Android Device Owner device compliance policy. | - |
+| RoleScopeTagIds | Write | StringArray[] | List of Scope Tags for this Entity instance. Inherited from deviceConfiguration | - |
+| Ensure | Write | String | Present ensures the policy exists, absent ensures it's removed | `Present`, `Absent` |
 
 ### MSFT_DeviceManagementConfigurationPolicyAssignments
 
@@ -44,12 +44,12 @@ in your cloud-based organization.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **dataType** | Write | String | The type of the target assignment. | `#microsoft.graph.groupAssignmentTarget`, `#microsoft.graph.allLicensedUsersAssignmentTarget`, `#microsoft.graph.allDevicesAssignmentTarget`, `#microsoft.graph.exclusionGroupAssignmentTarget`, `#microsoft.graph.configurationManagerCollectionAssignmentTarget` |
-| **deviceAndAppManagementAssignmentFilterType** | Write | String | The type of filter of the target assignment i.e. Exclude or Include. Possible values are:none, include, exclude. | `none`, `include`, `exclude` |
-| **deviceAndAppManagementAssignmentFilterId** | Write | String | The Id of the filter for the target assignment. | |
-| **groupId** | Write | String | The group Id that is the target of the assignment. | |
-| **groupDisplayName** | Write | String | The group Display Name that is the target of the assignment. | |
-| **collectionId** | Write | String | The collection Id that is the target of the assignment.(ConfigMgr) | |
+| dataType | Write | String | The type of the target assignment. | `#microsoft.graph.groupAssignmentTarget`, `#microsoft.graph.allLicensedUsersAssignmentTarget`, `#microsoft.graph.allDevicesAssignmentTarget`, `#microsoft.graph.exclusionGroupAssignmentTarget`, `#microsoft.graph.configurationManagerCollectionAssignmentTarget` |
+| deviceAndAppManagementAssignmentFilterType | Write | String | The type of filter of the target assignment i.e. Exclude or Include. Possible values are:none, include, exclude. | `none`, `include`, `exclude` |
+| deviceAndAppManagementAssignmentFilterId | Write | String | The Id of the filter for the target assignment. | - |
+| groupId | Write | String | The group Id that is the target of the assignment. | - |
+| groupDisplayName | Write | String | The group Display Name that is the target of the assignment. | - |
+| collectionId | Write | String | The collection Id that is the target of the assignment.(ConfigMgr) | - |
 
 
 ## Parameters

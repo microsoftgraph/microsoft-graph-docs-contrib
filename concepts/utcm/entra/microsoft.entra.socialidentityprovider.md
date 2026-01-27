@@ -16,11 +16,11 @@ Represents identity providers with External Identities for both Microsoft Entra 
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **ClientId** | Key | String | The client identifier for the application obtained when registering the application with the identity provider. | |
-| **ClientSecret** | Write | String | The client secret for the application that is obtained when the application is registered with the identity provider. This is write-only. A read operation returns ****. | |
-| **DisplayName** | Write | String | The display name of the identity provider. | |
-| **IdentityProviderType** | Write | String | For a B2B scenario, possible values: Google, Facebook. For a B2C scenario, possible values: Microsoft, Google, Amazon, LinkedIn, Facebook, GitHub, Twitter, Weibo, QQ, WeChat. | `AADSignup`, `EmailOTP`, `Microsoft`, `MicrosoftAccount`, `Google`, `Amazon`, `LinkedIn`, `Facebook`, `GitHub`, `Twitter`, `Weibo`, `QQ`, `WeChat` |
-| **Ensure** | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
+| ClientId | Key | String | The client identifier for the application obtained when registering the application with the identity provider. | - |
+| ClientSecret | Write | String | The client secret for the application that is obtained when the application is registered with the identity provider. This is write-only. A read operation returns ****. | - |
+| DisplayName | Write | String | The display name of the identity provider. | - |
+| IdentityProviderType | Write | String | For a B2B scenario, possible values: Google, Facebook. For a B2C scenario, possible values: Microsoft, Google, Amazon, LinkedIn, Facebook, GitHub, Twitter, Weibo, QQ, WeChat. | `AADSignup`, `EmailOTP`, `Microsoft`, `MicrosoftAccount`, `Google`, `Amazon`, `LinkedIn`, `Facebook`, `GitHub`, `Twitter`, `Weibo`, `QQ`, `WeChat` |
+| Ensure | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
 
 
 ## Permissions

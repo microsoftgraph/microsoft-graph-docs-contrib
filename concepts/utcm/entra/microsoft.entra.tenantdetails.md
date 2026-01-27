@@ -16,11 +16,11 @@ This resource configures the Microsoft Entra Tenant Details
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **IsSingleInstance** | Key | String | Only valid value is 'Yes'. | `Yes` |
-| **MarketingNotificationEmails** | Write | StringArray[] | Email-addresses from the people who should receive Marketing Notifications | |
-| **SecurityComplianceNotificationMails** | Write | StringArray[] | Email-addresses from the people who should receive Security Compliance Notifications | |
-| **SecurityComplianceNotificationPhones** | Write | StringArray[] | Phone Numbers from the people who should receive Security Notifications | |
-| **TechnicalNotificationMails** | Write | StringArray[] | Email-addresses from the people who should receive Technical Notifications | |
+| IsSingleInstance | Key | String | Only valid value is 'Yes'. | `Yes` |
+| MarketingNotificationEmails | Write | StringArray[] | Email-addresses from the people who should receive Marketing Notifications | - |
+| SecurityComplianceNotificationMails | Write | StringArray[] | Email-addresses from the people who should receive Security Compliance Notifications | - |
+| SecurityComplianceNotificationPhones | Write | StringArray[] | Phone Numbers from the people who should receive Security Notifications | - |
+| TechnicalNotificationMails | Write | StringArray[] | Email-addresses from the people who should receive Technical Notifications | - |
 
 
 ## Permissions

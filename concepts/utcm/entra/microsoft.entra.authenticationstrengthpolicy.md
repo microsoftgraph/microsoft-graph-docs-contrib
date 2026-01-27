@@ -16,11 +16,11 @@ Microsoft Entra Authentication Strength Policy
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **DisplayName** | Key | String | The name of the policy. | |
-| **Description** | Write | String | A description of the policy. | |
-| **Id** | Write | String | The unique identifier of the policy. | |
-| **AllowedCombinations** | Write | StringArray[] | The authentication method combinations allowed by this authentication strength policy. | |
-| **Ensure** | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
+| DisplayName | Key | String | The name of the policy. | - |
+| Description | Write | String | A description of the policy. | - |
+| Id | Write | String | The unique identifier of the policy. | - |
+| AllowedCombinations | Write | StringArray[] | The authentication method combinations allowed by this authentication strength policy. | - |
+| Ensure | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
 
 
 ## Permissions

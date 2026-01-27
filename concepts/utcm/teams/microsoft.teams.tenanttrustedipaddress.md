@@ -16,10 +16,10 @@ As an Admin, you can use the Windows PowerShell command, New-CsTenantTrustedIPAd
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Identity** | Key | String | Unique identifier for the IP address to be created. | |
-| **Description** | Write | String | Provide a description of the trusted IP address to identify purpose of creating it. | |
-| **MaskBits** | Write | UInt32 | This parameter determines the length of bits to mask to the subnet. | |
-| **Ensure** | Write | String | Present ensures the instance exists, absent ensures it's removed. | `Present`, `Absent` |
+| Identity | Key | String | Unique identifier for the IP address to be created. | - |
+| Description | Write | String | Provide a description of the trusted IP address to identify purpose of creating it. | - |
+| MaskBits | Write | UInt32 | This parameter determines the length of bits to mask to the subnet. | - |
+| Ensure | Write | String | Present ensures the instance exists, absent ensures it's removed. | `Present`, `Absent` |
 
 
 ## Permissions

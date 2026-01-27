@@ -16,11 +16,11 @@ This resource configures the Security Defaults in Microsoft Entra.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **IsSingleInstance** | Key | String | Only valid value is 'Yes'. | `Yes` |
-| **DisplayName** | Write | String | Display name of the security defaults. | |
-| **Description** | Write | String | Description of the security defaults. | |
-| **IsEnabled** | Write | Boolean | Represents whether or not security defaults are enabled. | |
-| **Ensure** | Write | String | Specify if the Microsoft Entra App should exist or not. | `Present`, `Absent` |
+| IsSingleInstance | Key | String | Only valid value is 'Yes'. | `Yes` |
+| DisplayName | Write | String | Display name of the security defaults. | - |
+| Description | Write | String | Description of the security defaults. | - |
+| IsEnabled | Write | Boolean | Represents whether or not security defaults are enabled. | - |
+| Ensure | Write | String | Specify if the Microsoft Entra App should exist or not. | `Present`, `Absent` |
 
 
 ## Permissions

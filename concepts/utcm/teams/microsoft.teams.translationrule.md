@@ -16,11 +16,11 @@ Cmdlet to create a new telephone number manipulation rule.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Identity** | Key | String | The Identifier of the rule. This parameter is required and later used to assign the rule to the Inbound or Outbound Trunk Normalization policy. | |
-| **Description** | Write | String | A friendly description of the normalization rule. | |
-| **Pattern** | Write | String | A regular expression that caller or callee number must match in order for this rule to be applied. | |
-| **Translation** | Write | String | The regular expression pattern that will be applied to the number to convert it. | |
-| **Ensure** | Write | String | Present ensures the instance exists, absent ensures it's removed. | `Present`, `Absent` |
+| Identity | Key | String | The Identifier of the rule. This parameter is required and later used to assign the rule to the Inbound or Outbound Trunk Normalization policy. | - |
+| Description | Write | String | A friendly description of the normalization rule. | - |
+| Pattern | Write | String | A regular expression that caller or callee number must match in order for this rule to be applied. | - |
+| Translation | Write | String | The regular expression pattern that will be applied to the number to convert it. | - |
+| Ensure | Write | String | Present ensures the instance exists, absent ensures it's removed. | `Present`, `Absent` |
 
 
 ## Permissions

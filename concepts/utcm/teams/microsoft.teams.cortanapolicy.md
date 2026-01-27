@@ -16,10 +16,10 @@ The CsTeamsCortanaPolicy resources enable administrators to control settings for
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Identity** | Key | String | Unique identifier for Teams cortana policy you're creating. | |
-| **CortanaVoiceInvocationMode** | Write | String | The value of this field indicates if Cortana is enabled and mode of invocation. | `Disabled`, `PushToTalkUserOverride`, `WakeWordPushToTalkUserOverride` |
-| **Description** | Write | String | Provide a description of your policy to identify purpose of creating it. | |
-| **Ensure** | Write | String | Present ensures the instance exists, absent ensures it's removed. | `Present`, `Absent` |
+| Identity | Key | String | Unique identifier for Teams cortana policy you're creating. | - |
+| CortanaVoiceInvocationMode | Write | String | The value of this field indicates if Cortana is enabled and mode of invocation. | `Disabled`, `PushToTalkUserOverride`, `WakeWordPushToTalkUserOverride` |
+| Description | Write | String | Provide a description of your policy to identify purpose of creating it. | - |
+| Ensure | Write | String | Present ensures the instance exists, absent ensures it's removed. | `Present`, `Absent` |
 
 
 ## Permissions

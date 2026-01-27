@@ -16,15 +16,15 @@ Manages the Teams App Permission Policies.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Identity** | Key | String | Unique identifier to be assigned to the new Teams app permission policy. Use the 'Global' Identity if you wish to assign this policy to the entire tenant. | |
-| **Description** | Write | String | Enables administrators to provide explanatory text to accompany a Teams app permission policy. | |
-| **GlobalCatalogAppsType** | Write | String | The types of apps for the Global Catalog. | |
-| **PrivateCatalogAppsType** | Write | String | The types of apps for the Private Catalog. | |
-| **DefaultCatalogAppsType** | Write | String | The types of apps for the Default Catalog. | |
-| **GlobalCatalogApps** | Write | StringArray[] | The list of apps for the Global Catalog. | |
-| **PrivateCatalogApps** | Write | StringArray[] | The list of apps for the Private Catalog. | |
-| **DefaultCatalogApps** | Write | StringArray[] | The list of apps for the Default Catalog. | |
-| **Ensure** | Write | String | Present ensures the instance exists, absent ensures it's removed. | `Present`, `Absent` |
+| Identity | Key | String | Unique identifier to be assigned to the new Teams app permission policy. Use the 'Global' Identity if you wish to assign this policy to the entire tenant. | - |
+| Description | Write | String | Enables administrators to provide explanatory text to accompany a Teams app permission policy. | - |
+| GlobalCatalogAppsType | Write | String | The types of apps for the Global Catalog. | - |
+| PrivateCatalogAppsType | Write | String | The types of apps for the Private Catalog. | - |
+| DefaultCatalogAppsType | Write | String | The types of apps for the Default Catalog. | - |
+| GlobalCatalogApps | Write | StringArray[] | The list of apps for the Global Catalog. | - |
+| PrivateCatalogApps | Write | StringArray[] | The list of apps for the Private Catalog. | - |
+| DefaultCatalogApps | Write | StringArray[] | The list of apps for the Default Catalog. | - |
+| Ensure | Write | String | Present ensures the instance exists, absent ensures it's removed. | `Present`, `Absent` |
 
 
 ## Permissions

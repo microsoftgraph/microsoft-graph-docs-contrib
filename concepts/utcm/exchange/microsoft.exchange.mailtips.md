@@ -16,13 +16,13 @@ This resource allows to configure Mailtips behaviors in Exchange Online.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **IsSingleInstance** | Key | String | Only valid value is 'Yes'. | `Yes` |
-| **MailTipsAllTipsEnabled** | Write | Boolean | Specifies whether MailTips are enabled. | |
-| **MailTipsGroupMetricsEnabled** | Write | Boolean | Specifies whether MailTips that rely on group metrics data are enabled. | |
-| **MailTipsLargeAudienceThreshold** | Write | UInt32 | Specifies what a large audience is. | |
-| **MailTipsMailboxSourcedTipsEnabled** | Write | Boolean | Specifies whether MailTips that rely on mailbox data (out-of-office or full mailbox) are enabled. | |
-| **MailTipsExternalRecipientsTipsEnabled** | Write | Boolean | Specifies whether MailTips for external recipients are enabled. | |
-| **Ensure** | Write | String | Specifies if this MailTip should exist. | `Present`, `Absent` |
+| IsSingleInstance | Key | String | Only valid value is 'Yes'. | `Yes` |
+| MailTipsAllTipsEnabled | Write | Boolean | Specifies whether MailTips are enabled. | - |
+| MailTipsGroupMetricsEnabled | Write | Boolean | Specifies whether MailTips that rely on group metrics data are enabled. | - |
+| MailTipsLargeAudienceThreshold | Write | UInt32 | Specifies what a large audience is. | - |
+| MailTipsMailboxSourcedTipsEnabled | Write | Boolean | Specifies whether MailTips that rely on mailbox data (out-of-office or full mailbox) are enabled. | - |
+| MailTipsExternalRecipientsTipsEnabled | Write | Boolean | Specifies whether MailTips for external recipients are enabled. | - |
+| Ensure | Write | String | Specifies if this MailTip should exist. | `Present`, `Absent` |
 
 
 ## Permissions

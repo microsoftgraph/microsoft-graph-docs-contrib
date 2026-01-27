@@ -16,10 +16,10 @@ Creates a new Teams call hold policy in your tenant. The Teams call hold policy 
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Identity** | Key | String | Unique identifier to be assigned to the new Teams call hold policy. Use the 'Global' Identity if you wish to assign this policy to the entire tenant. | |
-| **AudioFileId** | Write | String | A string representing the ID referencing an audio file uploaded via the Import-CsOnlineAudioFile cmdlet. | |
-| **Description** | Write | String | Enables administrators to provide explanatory text to accompany a Teams call hold policy. | |
-| **Ensure** | Write | String | Present ensures the instance exists, absent ensures it's removed. | `Present`, `Absent` |
+| Identity | Key | String | Unique identifier to be assigned to the new Teams call hold policy. Use the 'Global' Identity if you wish to assign this policy to the entire tenant. | - |
+| AudioFileId | Write | String | A string representing the ID referencing an audio file uploaded via the Import-CsOnlineAudioFile cmdlet. | - |
+| Description | Write | String | Enables administrators to provide explanatory text to accompany a Teams call hold policy. | - |
+| Ensure | Write | String | Present ensures the instance exists, absent ensures it's removed. | `Present`, `Absent` |
 
 
 ## Permissions

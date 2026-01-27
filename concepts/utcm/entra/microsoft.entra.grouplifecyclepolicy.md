@@ -16,11 +16,11 @@ This resource configures an Microsoft Entra Group Lifecycle Policy (for example,
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **IsSingleInstance** | Key | String | Only valid value is 'Yes.' | `Yes` |
-| **GroupLifetimeInDays** | Required | UInt32 | The number of days a group can exist before it needs to be renewed. | |
-| **ManagedGroupTypes** | Required | String | This parameter allows the admin to select which office 365 groups the policy applies to. 'None' creates the policy in a disabled state. 'All' applies the policy to every Office 365 group in the tenant. 'Selected' allows the admin to choose specific Office 365 groups that the policy applies to. | `All`, `None`, `Selected` |
-| **AlternateNotificationEmails** | Required | StringArray[] | Notification emails for groups that have no owners are sent to these email addresses. | |
-| **Ensure** | Write | String | Specify if the Microsoft Entra Groups Lifecycle Policy should exist or not. | `Present`, `Absent` |
+| IsSingleInstance | Key | String | Only valid value is 'Yes.' | `Yes` |
+| GroupLifetimeInDays | Required | UInt32 | The number of days a group can exist before it needs to be renewed. | - |
+| ManagedGroupTypes | Required | String | This parameter allows the admin to select which office 365 groups the policy applies to. 'None' creates the policy in a disabled state. 'All' applies the policy to every Office 365 group in the tenant. 'Selected' allows the admin to choose specific Office 365 groups that the policy applies to. | `All`, `None`, `Selected` |
+| AlternateNotificationEmails | Required | StringArray[] | Notification emails for groups that have no owners are sent to these email addresses. | - |
+| Ensure | Write | String | Specify if the Microsoft Entra Groups Lifecycle Policy should exist or not. | `Present`, `Absent` |
 
 
 ## Permissions

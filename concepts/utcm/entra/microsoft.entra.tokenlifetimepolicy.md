@@ -16,12 +16,12 @@ This resource configures the Microsoft Entra Token Lifetime Policies
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **DisplayName** | Key | String | DisplayName of the Policy | |
-| **Id** | Write | String | ObjectID of the Policy. | |
-| **Description** | Write | String | Description of the Policy. | |
-| **Definition** | Write | StringArray[] | Definition of the Policy. | |
-| **IsOrganizationDefault** | Write | Boolean | IsOrganizationDefault of the Policy. | |
-| **Ensure** | Write | String | Specify if the Microsoft Entra Policy should exist or not. | `Present`, `Absent` |
+| DisplayName | Key | String | DisplayName of the Policy | - |
+| Id | Write | String | ObjectID of the Policy. | - |
+| Description | Write | String | Description of the Policy. | - |
+| Definition | Write | StringArray[] | Definition of the Policy. | - |
+| IsOrganizationDefault | Write | Boolean | IsOrganizationDefault of the Policy. | - |
+| Ensure | Write | String | Specify if the Microsoft Entra Policy should exist or not. | `Present`, `Absent` |
 
 
 ## Permissions

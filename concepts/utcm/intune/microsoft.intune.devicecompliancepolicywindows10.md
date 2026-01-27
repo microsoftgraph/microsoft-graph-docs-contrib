@@ -17,42 +17,42 @@ in your cloud-based organization.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **DisplayName** | Key | String | Display name of the Windows 10 device compliance policy. | |
-| **Description** | Write | String | Description of the Windows 10 device compliance policy. | |
-| **Assignments** | Write | MSFT_DeviceManagementConfigurationPolicyAssignments[] | Represents the assignment to the Intune policy. | |
-| **PasswordRequired** | Write | Boolean | PasswordRequired of the Windows 10 device compliance policy. | |
-| **PasswordBlockSimple** | Write | Boolean | PasswordBlockSimple of the Windows 10 device compliance policy. | |
-| **PasswordRequiredToUnlockFromIdle** | Write | Boolean | PasswordRequiredToUnlockFromIdle of the Windows 10 device compliance policy. | |
-| **PasswordMinutesOfInactivityBeforeLock** | Write | UInt32 | PasswordMinutesOfInactivityBeforeLock of the Windows 10 device compliance policy. | |
-| **PasswordExpirationDays** | Write | UInt32 | PasswordExpirationDays of the Windows 10 device compliance policy. | |
-| **PasswordMinimumLength** | Write | UInt32 | PasswordMinimumLength of the Windows 10 device compliance policy. | |
-| **PasswordMinimumCharacterSetCount** | Write | UInt32 | PasswordMinimumCharacterSetCount of the Windows 10 device compliance policy. | |
-| **PasswordRequiredType** | Write | String | PasswordRequiredType of the Windows 10 device compliance policy. | `DeviceDefault`, `Alphanumeric`, `Numeric` |
-| **PasswordPreviousPasswordBlockCount** | Write | UInt32 | PasswordPreviousPasswordBlockCount of the Windows 10 device compliance policy. | |
-| **RequireHealthyDeviceReport** | Write | Boolean | RequireHealthyDeviceReport of the Windows 10 device compliance policy. | |
-| **OsMinimumVersion** | Write | String | OsMinimumVersion of the Windows 10 device compliance policy. | |
-| **OsMaximumVersion** | Write | String | OsMaximumVersion of the Windows 10 device compliance policy. | |
-| **MobileOsMinimumVersion** | Write | String | MobileOsMinimumVersion of the Windows 10 device compliance policy. | |
-| **MobileOsMaximumVersion** | Write | String | MobileOsMaximumVersion of the Windows 10 device compliance policy. | |
-| **EarlyLaunchAntiMalwareDriverEnabled** | Write | Boolean | EarlyLaunchAntiMalwareDriverEnabled of the Windows 10 device compliance policy. | |
-| **BitLockerEnabled** | Write | Boolean | BitLockerEnabled of the Windows 10 device compliance policy. | |
-| **SecureBootEnabled** | Write | Boolean | SecureBootEnabled of the Windows 10 device compliance policy. | |
-| **CodeIntegrityEnabled** | Write | Boolean | CodeIntegrityEnabled of the Windows 10 device compliance policy. | |
-| **StorageRequireEncryption** | Write | Boolean | StorageRequireEncryption of the Windows 10 device compliance policy. | |
-| **ActiveFirewallRequired** | Write | Boolean | ActiveFirewallRequired of the Windows 10 device compliance policy. | |
-| **DefenderEnabled** | Write | Boolean | DefenderEnabled of the Windows 10 device compliance policy. | |
-| **DefenderVersion** | Write | String | DefenderVersion of the Windows 10 device compliance policy. | |
-| **SignatureOutOfDate** | Write | Boolean | SignatureOutOfDate of the Windows 10 device compliance policy. | |
-| **RTPEnabled** | Write | Boolean | RTPEnabled of the Windows 10 device compliance policy. | |
-| **AntivirusRequired** | Write | Boolean | AntivirusRequired of the Windows 10 device compliance policy. | |
-| **AntiSpywareRequired** | Write | Boolean | AntiSpywareRequired of the Windows 10 device compliance policy. | |
-| **DeviceThreatProtectionEnabled** | Write | Boolean | DeviceThreatProtectionEnabled of the Windows 10 device compliance policy. | |
-| **DeviceThreatProtectionRequiredSecurityLevel** | Write | String | DeviceThreatProtectionRequiredSecurityLevel of the Windows 10 device compliance policy. | `Unavailable`, `Secured`, `Low`, `Medium`, `High`, `NotSet` |
-| **ConfigurationManagerComplianceRequired** | Write | Boolean | ConfigurationManagerComplianceRequired of the Windows 10 device compliance policy. | |
-| **TpmRequired** | Write | Boolean | TpmRequired of the Windows 10 device compliance policy. | |
-| **DeviceCompliancePolicyScript** | Write | String | DeviceCompliancePolicyScript of the Windows 10 device compliance policy. | |
-| **ValidOperatingSystemBuildRanges** | Write | StringArray[] | ValidOperatingSystemBuildRanges of the Windows 10 device compliance policy. | |
-| **Ensure** | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
+| DisplayName | Key | String | Display name of the Windows 10 device compliance policy. | - |
+| Description | Write | String | Description of the Windows 10 device compliance policy. | - |
+| Assignments | Write | MSFT_DeviceManagementConfigurationPolicyAssignments[] | Represents the assignment to the Intune policy. | - |
+| PasswordRequired | Write | Boolean | PasswordRequired of the Windows 10 device compliance policy. | - |
+| PasswordBlockSimple | Write | Boolean | PasswordBlockSimple of the Windows 10 device compliance policy. | - |
+| PasswordRequiredToUnlockFromIdle | Write | Boolean | PasswordRequiredToUnlockFromIdle of the Windows 10 device compliance policy. | - |
+| PasswordMinutesOfInactivityBeforeLock | Write | UInt32 | PasswordMinutesOfInactivityBeforeLock of the Windows 10 device compliance policy. | - |
+| PasswordExpirationDays | Write | UInt32 | PasswordExpirationDays of the Windows 10 device compliance policy. | - |
+| PasswordMinimumLength | Write | UInt32 | PasswordMinimumLength of the Windows 10 device compliance policy. | - |
+| PasswordMinimumCharacterSetCount | Write | UInt32 | PasswordMinimumCharacterSetCount of the Windows 10 device compliance policy. | - |
+| PasswordRequiredType | Write | String | PasswordRequiredType of the Windows 10 device compliance policy. | `DeviceDefault`, `Alphanumeric`, `Numeric` |
+| PasswordPreviousPasswordBlockCount | Write | UInt32 | PasswordPreviousPasswordBlockCount of the Windows 10 device compliance policy. | - |
+| RequireHealthyDeviceReport | Write | Boolean | RequireHealthyDeviceReport of the Windows 10 device compliance policy. | - |
+| OsMinimumVersion | Write | String | OsMinimumVersion of the Windows 10 device compliance policy. | - |
+| OsMaximumVersion | Write | String | OsMaximumVersion of the Windows 10 device compliance policy. | - |
+| MobileOsMinimumVersion | Write | String | MobileOsMinimumVersion of the Windows 10 device compliance policy. | - |
+| MobileOsMaximumVersion | Write | String | MobileOsMaximumVersion of the Windows 10 device compliance policy. | - |
+| EarlyLaunchAntiMalwareDriverEnabled | Write | Boolean | EarlyLaunchAntiMalwareDriverEnabled of the Windows 10 device compliance policy. | - |
+| BitLockerEnabled | Write | Boolean | BitLockerEnabled of the Windows 10 device compliance policy. | - |
+| SecureBootEnabled | Write | Boolean | SecureBootEnabled of the Windows 10 device compliance policy. | - |
+| CodeIntegrityEnabled | Write | Boolean | CodeIntegrityEnabled of the Windows 10 device compliance policy. | - |
+| StorageRequireEncryption | Write | Boolean | StorageRequireEncryption of the Windows 10 device compliance policy. | - |
+| ActiveFirewallRequired | Write | Boolean | ActiveFirewallRequired of the Windows 10 device compliance policy. | - |
+| DefenderEnabled | Write | Boolean | DefenderEnabled of the Windows 10 device compliance policy. | - |
+| DefenderVersion | Write | String | DefenderVersion of the Windows 10 device compliance policy. | - |
+| SignatureOutOfDate | Write | Boolean | SignatureOutOfDate of the Windows 10 device compliance policy. | - |
+| RTPEnabled | Write | Boolean | RTPEnabled of the Windows 10 device compliance policy. | - |
+| AntivirusRequired | Write | Boolean | AntivirusRequired of the Windows 10 device compliance policy. | - |
+| AntiSpywareRequired | Write | Boolean | AntiSpywareRequired of the Windows 10 device compliance policy. | - |
+| DeviceThreatProtectionEnabled | Write | Boolean | DeviceThreatProtectionEnabled of the Windows 10 device compliance policy. | - |
+| DeviceThreatProtectionRequiredSecurityLevel | Write | String | DeviceThreatProtectionRequiredSecurityLevel of the Windows 10 device compliance policy. | `Unavailable`, `Secured`, `Low`, `Medium`, `High`, `NotSet` |
+| ConfigurationManagerComplianceRequired | Write | Boolean | ConfigurationManagerComplianceRequired of the Windows 10 device compliance policy. | - |
+| TpmRequired | Write | Boolean | TpmRequired of the Windows 10 device compliance policy. | - |
+| DeviceCompliancePolicyScript | Write | String | DeviceCompliancePolicyScript of the Windows 10 device compliance policy. | - |
+| ValidOperatingSystemBuildRanges | Write | StringArray[] | ValidOperatingSystemBuildRanges of the Windows 10 device compliance policy. | - |
+| Ensure | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
 
 ### MSFT_DeviceManagementConfigurationPolicyAssignments
 
@@ -60,12 +60,12 @@ in your cloud-based organization.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **dataType** | Write | String | The type of the target assignment. | `#microsoft.graph.groupAssignmentTarget`, `#microsoft.graph.allLicensedUsersAssignmentTarget`, `#microsoft.graph.allDevicesAssignmentTarget`, `#microsoft.graph.exclusionGroupAssignmentTarget`, `#microsoft.graph.configurationManagerCollectionAssignmentTarget` |
-| **deviceAndAppManagementAssignmentFilterType** | Write | String | The type of filter of the target assignment i.e. Exclude or Include. Possible values are:none, include, exclude. | `none`, `include`, `exclude` |
-| **deviceAndAppManagementAssignmentFilterId** | Write | String | The Id of the filter for the target assignment. | |
-| **groupId** | Write | String | The group Id that is the target of the assignment. | |
-| **groupDisplayName** | Write | String | The group Display Name that is the target of the assignment. | |
-| **collectionId** | Write | String | The collection Id that is the target of the assignment.(ConfigMgr) | |
+| dataType | Write | String | The type of the target assignment. | `#microsoft.graph.groupAssignmentTarget`, `#microsoft.graph.allLicensedUsersAssignmentTarget`, `#microsoft.graph.allDevicesAssignmentTarget`, `#microsoft.graph.exclusionGroupAssignmentTarget`, `#microsoft.graph.configurationManagerCollectionAssignmentTarget` |
+| deviceAndAppManagementAssignmentFilterType | Write | String | The type of filter of the target assignment i.e. Exclude or Include. Possible values are:none, include, exclude. | `none`, `include`, `exclude` |
+| deviceAndAppManagementAssignmentFilterId | Write | String | The Id of the filter for the target assignment. | - |
+| groupId | Write | String | The group Id that is the target of the assignment. | - |
+| groupDisplayName | Write | String | The group Display Name that is the target of the assignment. | - |
+| collectionId | Write | String | The collection Id that is the target of the assignment.(ConfigMgr) | - |
 
 
 ## Parameters

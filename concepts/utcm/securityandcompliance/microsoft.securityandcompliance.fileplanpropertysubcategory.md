@@ -17,9 +17,9 @@ Compliance File Plans.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Name** | Key | String | The Name parameter specifies the unique name of the sub-category. | |
-| **Category** | Required | String | The Category parameter specifies the name of the parent category associated with the sub-category. | |
-| **Ensure** | Write | String | Specify if this category should exist or not. | `Present`, `Absent` |
+| Name | Key | String | The Name parameter specifies the unique name of the sub-category. | - |
+| Category | Required | String | The Category parameter specifies the name of the parent category associated with the sub-category. | - |
+| Ensure | Write | String | Specify if this category should exist or not. | `Present`, `Absent` |
 
 
 ## Permissions

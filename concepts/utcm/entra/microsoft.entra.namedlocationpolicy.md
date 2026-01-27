@@ -16,15 +16,15 @@ This resource configures the Microsoft Entra Named Location Policies in Microsof
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **OdataType** | Write | String | Specifies the Odata Type of a Named Location object in Microsoft Entra | `#microsoft.graph.countryNamedLocation`, `#microsoft.graph.ipNamedLocation`, `#microsoft.graph.compliantNetworkNamedLocation` |
-| **Id** | Write | String | Specifies the ID of a Named Location in Microsoft Entra. | |
-| **DisplayName** | Key | String | Specifies the Display Name of a Named Location in Microsoft Entra | |
-| **IpRanges** | Write | StringArray[] | Specifies the IP ranges of the Named Location in Microsoft Entra | |
-| **IsTrusted** | Write | Boolean | Specifies the isTrusted value for the Named Location (IP ranges only) in Microsoft Entra | |
-| **CountriesAndRegions** | Write | StringArray[] | Specifies the countries and regions for the Named Location in Microsoft Entra | |
-| **CountryLookupMethod** | Write | String | Determines what method is used to decide which country/region the user is located in. Possible values are clientIpAddress(default) and authenticatorAppGps. | `clientIpAddress`, `authenticatorAppGps` |
-| **IncludeUnknownCountriesAndRegions** | Write | Boolean | Specifies the includeUnknownCountriesAndRegions value for the Named Location in Microsoft Entra | |
-| **Ensure** | Write | String | Specify if the Microsoft Entra Named Location should exist or not. | `Present`, `Absent` |
+| OdataType | Write | String | Specifies the Odata Type of a Named Location object in Microsoft Entra | `#microsoft.graph.countryNamedLocation`, `#microsoft.graph.ipNamedLocation`, `#microsoft.graph.compliantNetworkNamedLocation` |
+| Id | Write | String | Specifies the ID of a Named Location in Microsoft Entra. | - |
+| DisplayName | Key | String | Specifies the Display Name of a Named Location in Microsoft Entra | - |
+| IpRanges | Write | StringArray[] | Specifies the IP ranges of the Named Location in Microsoft Entra | - |
+| IsTrusted | Write | Boolean | Specifies the isTrusted value for the Named Location (IP ranges only) in Microsoft Entra | - |
+| CountriesAndRegions | Write | StringArray[] | Specifies the countries and regions for the Named Location in Microsoft Entra | - |
+| CountryLookupMethod | Write | String | Determines what method is used to decide which country/region the user is located in. Possible values are clientIpAddress(default) and authenticatorAppGps. | `clientIpAddress`, `authenticatorAppGps` |
+| IncludeUnknownCountriesAndRegions | Write | Boolean | Specifies the includeUnknownCountriesAndRegions value for the Named Location in Microsoft Entra | - |
+| Ensure | Write | String | Specify if the Microsoft Entra Named Location should exist or not. | `Present`, `Absent` |
 
 
 ## Permissions

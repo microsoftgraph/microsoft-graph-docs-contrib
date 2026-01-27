@@ -17,15 +17,15 @@ This resources implements a Teams workload policy.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Identity** | Key | String | Unique identity for the Teams workload policy | |
-| **AllowCalling** | Write | Boolean | Allows calling. | |
-| **AllowCallingPinned** | Write | Boolean | Allows pinning a call. | |
-| **AllowMeeting** | Write | Boolean | Allows meetins. | |
-| **AllowMeetingPinned** | Write | Boolean | Allows pinning meetings. | |
-| **AllowMessaging** | Write | Boolean | Allows messaging. | |
-| **AllowMessagingPinned** | Write | Boolean | Allows pinning a message. | |
-| **Description** | Write | String | Description of the policy. | |
-| **Ensure** | Write | String | Present ensures the instance exists, absent ensures it's removed. | `Present`, `Absent` |
+| Identity | Key | String | Unique identity for the Teams workload policy | - |
+| AllowCalling | Write | Boolean | Allows calling. | - |
+| AllowCallingPinned | Write | Boolean | Allows pinning a call. | - |
+| AllowMeeting | Write | Boolean | Allows meetins. | - |
+| AllowMeetingPinned | Write | Boolean | Allows pinning meetings. | - |
+| AllowMessaging | Write | Boolean | Allows messaging. | - |
+| AllowMessagingPinned | Write | Boolean | Allows pinning a message. | - |
+| Description | Write | String | Description of the policy. | - |
+| Ensure | Write | String | Present ensures the instance exists, absent ensures it's removed. | `Present`, `Absent` |
 
 
 ## Permissions

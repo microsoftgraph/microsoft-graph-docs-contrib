@@ -17,8 +17,8 @@ Compliance File Plans.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Name** | Key | String | The Name parameter specifies the unique name of the Authority. | |
-| **Ensure** | Write | String | Specify if this authority should exist or not. | `Present`, `Absent` |
+| Name | Key | String | The Name parameter specifies the unique name of the Authority. | - |
+| Ensure | Write | String | Specify if this authority should exist or not. | `Present`, `Absent` |
 
 
 ## Permissions

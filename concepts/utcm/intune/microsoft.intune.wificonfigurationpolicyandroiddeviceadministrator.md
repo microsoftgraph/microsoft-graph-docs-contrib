@@ -16,16 +16,16 @@ This resource configures an Intune Wifi Configuration Policy Android Device Admi
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Id** | Write | String | Id of the Intune Policy. | |
-| **DisplayName** | Key | String | Display name of the Intune Policy. | |
-| **Description** | Write | String | Description of the Intune Policy. | |
-| **ConnectAutomatically** | Write | Boolean | Connect automatically. | |
-| **ConnectWhenNetworkNameIsHidden** | Write | Boolean | Connect when network name is hidden. | |
-| **NetworkName** | Write | String | Network name. | |
-| **Ssid** | Write | String | SSID. | |
-| **WiFiSecurityType** | Write | String | Wi-Fi security type. | `open`, `wpaEnterprise`, `wpa2Enterprise` |
-| **Assignments** | Write | MSFT_DeviceManagementConfigurationPolicyAssignments[] | Represents the assignment to the Intune policy. | |
-| **Ensure** | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
+| Id | Write | String | Id of the Intune Policy. | - |
+| DisplayName | Key | String | Display name of the Intune Policy. | - |
+| Description | Write | String | Description of the Intune Policy. | - |
+| ConnectAutomatically | Write | Boolean | Connect automatically. | - |
+| ConnectWhenNetworkNameIsHidden | Write | Boolean | Connect when network name is hidden. | - |
+| NetworkName | Write | String | Network name. | - |
+| Ssid | Write | String | SSID. | - |
+| WiFiSecurityType | Write | String | Wi-Fi security type. | `open`, `wpaEnterprise`, `wpa2Enterprise` |
+| Assignments | Write | MSFT_DeviceManagementConfigurationPolicyAssignments[] | Represents the assignment to the Intune policy. | - |
+| Ensure | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
 
 ### MSFT_DeviceManagementConfigurationPolicyAssignments
 
@@ -33,12 +33,12 @@ This resource configures an Intune Wifi Configuration Policy Android Device Admi
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **dataType** | Write | String | The type of the target assignment. | `#microsoft.graph.groupAssignmentTarget`, `#microsoft.graph.allLicensedUsersAssignmentTarget`, `#microsoft.graph.allDevicesAssignmentTarget`, `#microsoft.graph.exclusionGroupAssignmentTarget`, `#microsoft.graph.configurationManagerCollectionAssignmentTarget` |
-| **deviceAndAppManagementAssignmentFilterType** | Write | String | The type of filter of the target assignment i.e. Exclude or Include. Possible values are:none, include, exclude. | `none`, `include`, `exclude` |
-| **deviceAndAppManagementAssignmentFilterId** | Write | String | The Id of the filter for the target assignment. | |
-| **groupId** | Write | String | The group Id that is the target of the assignment. | |
-| **groupDisplayName** | Write | String | The group Display Name that is the target of the assignment. | |
-| **collectionId** | Write | String | The collection Id that is the target of the assignment.(ConfigMgr) | |
+| dataType | Write | String | The type of the target assignment. | `#microsoft.graph.groupAssignmentTarget`, `#microsoft.graph.allLicensedUsersAssignmentTarget`, `#microsoft.graph.allDevicesAssignmentTarget`, `#microsoft.graph.exclusionGroupAssignmentTarget`, `#microsoft.graph.configurationManagerCollectionAssignmentTarget` |
+| deviceAndAppManagementAssignmentFilterType | Write | String | The type of filter of the target assignment i.e. Exclude or Include. Possible values are:none, include, exclude. | `none`, `include`, `exclude` |
+| deviceAndAppManagementAssignmentFilterId | Write | String | The Id of the filter for the target assignment. | - |
+| groupId | Write | String | The group Id that is the target of the assignment. | - |
+| groupDisplayName | Write | String | The group Display Name that is the target of the assignment. | - |
+| collectionId | Write | String | The collection Id that is the target of the assignment.(ConfigMgr) | - |
 
 
 ## Permissions

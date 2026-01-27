@@ -17,10 +17,10 @@ This resource implements Teams VDI Policies.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Identity** | Key | String | Unique identity of the VDI Policy. | |
-| **DisableAudioVideoInCallsAndMeetings** | Write | Boolean | Disables Audio and Video in Calls and Meeting. | |
-| **DisableCallsAndMeetings** | Write | Boolean | Disables Calls and Meetings. | |
-| **Ensure** | Write | String | Present ensures the instance exists, absent ensures it's removed. | `Present`, `Absent` |
+| Identity | Key | String | Unique identity of the VDI Policy. | - |
+| DisableAudioVideoInCallsAndMeetings | Write | Boolean | Disables Audio and Video in Calls and Meeting. | - |
+| DisableCallsAndMeetings | Write | Boolean | Disables Calls and Meetings. | - |
+| Ensure | Write | String | Present ensures the instance exists, absent ensures it's removed. | `Present`, `Absent` |
 
 
 ## Permissions

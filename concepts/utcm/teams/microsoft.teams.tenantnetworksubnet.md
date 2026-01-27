@@ -16,11 +16,11 @@ As an Admin, you can use the Windows PowerShell command, New-CsTenantNetworkSubn
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **MaskBits** | Key | UInt32 | This parameter determines the length of bits to mask to the subnet. IPv4 format subnet accepts maskbits from 0 to 32 inclusive. IPv6 format subnet accepts maskbits from 0 to 128 inclusive. | |
-| **Identity** | Key | String | Unique identifier for the network subnet to be created. | |
-| **Description** | Write | String | Provide a description of the network subnet to identify purpose of creating it. | |
-| **NetworkSiteID** | Write | String | NetworkSiteID is the identifier for the network site which the current network subnet is associating to. | |
-| **Ensure** | Write | String | Present ensures the instance exists, absent ensures it's removed. | `Present`, `Absent` |
+| MaskBits | Key | UInt32 | This parameter determines the length of bits to mask to the subnet. IPv4 format subnet accepts maskbits from 0 to 32 inclusive. IPv6 format subnet accepts maskbits from 0 to 128 inclusive. | - |
+| Identity | Key | String | Unique identifier for the network subnet to be created. | - |
+| Description | Write | String | Provide a description of the network subnet to identify purpose of creating it. | - |
+| NetworkSiteID | Write | String | NetworkSiteID is the identifier for the network site which the current network subnet is associating to. | - |
+| Ensure | Write | String | Present ensures the instance exists, absent ensures it's removed. | `Present`, `Absent` |
 
 
 ## Permissions

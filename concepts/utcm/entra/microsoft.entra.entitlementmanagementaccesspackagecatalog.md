@@ -16,13 +16,13 @@ This resource configures a Microsoft Entra ID Governance entitlement management 
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **DisplayName** | Key | String | The display name of the access package catalog. | |
-| **Id** | Write | String | The unique identifier of the access package catalog. | |
-| **CatalogStatus** | Write | String | Indicates whether the access packages are available for management. Has the value `Published` if available. | |
-| **CatalogType** | Write | String | The type of the catalog. Possible values are: `UserManaged` or `ServiceDefault`. | `UserManaged`, `ServiceDefault` |
-| **Description** | Write | String | The description of the access package catalog. | |
-| **IsExternallyVisible** | Write | Boolean | Indicates whether the access packages in this catalog can be requested by users outside of the tenant. | |
-| **Ensure** | Write | String | Specifies whether the catalog should exist or not. `Present` ensures the catalog exists; `Absent` ensures the catalog is removed. | `Present`, `Absent` |
+| DisplayName | Key | String | The display name of the access package catalog. | - |
+| Id | Write | String | The unique identifier of the access package catalog. | - |
+| CatalogStatus | Write | String | Indicates whether the access packages are available for management. Has the value `Published` if available. | - |
+| CatalogType | Write | String | The type of the catalog. Possible values are: `UserManaged` or `ServiceDefault`. | `UserManaged`, `ServiceDefault` |
+| Description | Write | String | The description of the access package catalog. | - |
+| IsExternallyVisible | Write | Boolean | Indicates whether the access packages in this catalog can be requested by users outside of the tenant. | - |
+| Ensure | Write | String | Specifies whether the catalog should exist or not. `Present` ensures the catalog exists; `Absent` ensures the catalog is removed. | `Present`, `Absent` |
 
 
 ## Permissions

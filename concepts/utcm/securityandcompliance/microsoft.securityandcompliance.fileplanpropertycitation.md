@@ -17,10 +17,10 @@ Compliance File Plans.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Name** | Key | String | The Name parameter specifies the unique name of the citation. | |
-| **CitationUrl** | Write | String | URL of the citation. | |
-| **CitationJurisdiction** | Write | String | Jurisdiction of the citation. | |
-| **Ensure** | Write | String | Specify if this citation should exist or not. | `Present`, `Absent` |
+| Name | Key | String | The Name parameter specifies the unique name of the citation. | - |
+| CitationUrl | Write | String | URL of the citation. | - |
+| CitationJurisdiction | Write | String | Jurisdiction of the citation. | - |
+| Ensure | Write | String | Specify if this citation should exist or not. | `Present`, `Absent` |
 
 
 ## Permissions

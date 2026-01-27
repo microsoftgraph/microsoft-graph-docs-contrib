@@ -16,13 +16,13 @@ Use this resource to modify the permissions of mailbox.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Identity** | Key | String | The Identity parameter specifies the mailbox where you want to assign permissions to the user. You can use any value that uniquely identifies the mailbox. | |
-| **AccessRights** | Required | StringArray[] | The AccessRights parameter specifies the permission that you want to add for the user on the mailbox. Valid values are: ChangeOwner, ChangePermission, DeleteItem, ExternalAccount, FullAccess and ReadPermission. | |
-| **User** | Key | String | The User parameter specifies who gets the permissions on the mailbox. | |
-| **InheritanceType** | Key | String | The InheritanceType parameter specifies how permissions are inherited by folders in the mailbox. Valid values are: None, All, Children, Descendents, SelfAndChildren. | `None`, `All`, `Children`, `Descendents`, `SelfAndChildren` |
-| **Owner** | Write | String | The Owner parameter specifies the owner of the mailbox object. | |
-| **Deny** | Write | Boolean | The Deny switch specifies that the permissions you're adding are Deny permissions. | |
-| **Ensure** | Write | String | Determines wheter or not the permission should exist on the mailbox. | `Present` |
+| Identity | Key | String | The Identity parameter specifies the mailbox where you want to assign permissions to the user. You can use any value that uniquely identifies the mailbox. | - |
+| AccessRights | Required | StringArray[] | The AccessRights parameter specifies the permission that you want to add for the user on the mailbox. Valid values are: ChangeOwner, ChangePermission, DeleteItem, ExternalAccount, FullAccess and ReadPermission. | - |
+| User | Key | String | The User parameter specifies who gets the permissions on the mailbox. | - |
+| InheritanceType | Key | String | The InheritanceType parameter specifies how permissions are inherited by folders in the mailbox. Valid values are: None, All, Children, Descendents, SelfAndChildren. | `None`, `All`, `Children`, `Descendents`, `SelfAndChildren` |
+| Owner | Write | String | The Owner parameter specifies the owner of the mailbox object. | - |
+| Deny | Write | Boolean | The Deny switch specifies that the permissions you're adding are Deny permissions. | - |
+| Ensure | Write | String | Determines wheter or not the permission should exist on the mailbox. | `Present` |
 
 
 ## Permissions

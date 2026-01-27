@@ -18,14 +18,14 @@ More information: https://docs.microsoft.com/en-us/microsoftteams/manage-emergen
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Identity** | Key | String | Identity of the Teams Emergency Calling Policy. | |
-| **Description** | Write | String | Description of the Teams Emergency Calling Policy. | |
-| **EnhancedEmergencyServiceDisclaimer** | Write | String | Allows the tenant administrator to configure a text string, which is shown at the top of the Calls app. | |
-| **ExternalLocationLookupMode** | Write | String | Enables ExternalLocationLookupMode. This mode allows users to set Emergency addresses for remote locations. | `Disabled`, `Enabled` |
-| **NotificationDialOutNumber** | Write | String | This parameter represents PSTN number which can be dialed out if NotificationMode is set to either of the two Conference values. | |
-| **NotificationGroup** | Write | String | NotificationGroup is a email list of users and groups to be notified of an emergency call. | |
-| **NotificationMode** | Write | String | The type of conference experience for security desk notification. | `NotificationOnly`, `ConferenceMuted`, `ConferenceUnMuted` |
-| **Ensure** | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
+| Identity | Key | String | Identity of the Teams Emergency Calling Policy. | - |
+| Description | Write | String | Description of the Teams Emergency Calling Policy. | - |
+| EnhancedEmergencyServiceDisclaimer | Write | String | Allows the tenant administrator to configure a text string, which is shown at the top of the Calls app. | - |
+| ExternalLocationLookupMode | Write | String | Enables ExternalLocationLookupMode. This mode allows users to set Emergency addresses for remote locations. | `Disabled`, `Enabled` |
+| NotificationDialOutNumber | Write | String | This parameter represents PSTN number which can be dialed out if NotificationMode is set to either of the two Conference values. | - |
+| NotificationGroup | Write | String | NotificationGroup is a email list of users and groups to be notified of an emergency call. | - |
+| NotificationMode | Write | String | The type of conference experience for security desk notification. | `NotificationOnly`, `ConferenceMuted`, `ConferenceUnMuted` |
+| Ensure | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
 
 
 ## Permissions

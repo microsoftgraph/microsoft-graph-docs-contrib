@@ -16,10 +16,10 @@ Configures a Teams Audio Conferencing Policy.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Identity** | Key | String | Specify the name of the policy that you are creating | |
-| **AllowTollFreeDialin** | Write | Boolean | Determines whether users of the Policy can have Toll free numbers | |
-| **MeetingInvitePhoneNumbers** | Write | String | Determines the list of audio-conferencing Toll- and Toll-free telephone numbers that will be included in meetings invites created by users of this policy. | |
-| **Ensure** | Write | String | Present ensures the instance exists, absent ensures it's removed. | `Present`, `Absent` |
+| Identity | Key | String | Specify the name of the policy that you are creating | - |
+| AllowTollFreeDialin | Write | Boolean | Determines whether users of the Policy can have Toll free numbers | - |
+| MeetingInvitePhoneNumbers | Write | String | Determines the list of audio-conferencing Toll- and Toll-free telephone numbers that will be included in meetings invites created by users of this policy. | - |
+| Ensure | Write | String | Present ensures the instance exists, absent ensures it's removed. | `Present`, `Absent` |
 
 
 ## Permissions

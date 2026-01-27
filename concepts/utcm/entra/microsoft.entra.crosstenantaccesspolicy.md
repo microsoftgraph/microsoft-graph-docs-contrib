@@ -16,10 +16,10 @@ This resource manages Microsoft Entra Cross Tenant Access Policies.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **IsSingleInstance** | Key | String | Only valid value is 'Yes'. | `Yes` |
-| **DisplayName** | Write | String | The name of the policy. | |
-| **AllowedCloudEndpoints** | Write | StringArray[] | Used to specify which Microsoft clouds an organization would like to collaborate with. By default, this value is empty. | `microsoftonline.com`, `microsoftonline.us`, `partner.microsoftonline.cn` |
-| **Ensure** | Write | String | Specify if the policy should exist or not. | `Present` |
+| IsSingleInstance | Key | String | Only valid value is 'Yes'. | `Yes` |
+| DisplayName | Write | String | The name of the policy. | - |
+| AllowedCloudEndpoints | Write | StringArray[] | Used to specify which Microsoft clouds an organization would like to collaborate with. By default, this value is empty. | `microsoftonline.com`, `microsoftonline.us`, `partner.microsoftonline.cn` |
+| Ensure | Write | String | Specify if the policy should exist or not. | `Present` |
 
 
 ## Permissions

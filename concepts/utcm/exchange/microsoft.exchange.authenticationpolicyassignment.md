@@ -16,9 +16,9 @@ This resource assigns Exchange Online Authentication Policies to users.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **UserName** | Key | String | Name of the user assigned to the authentication policy. | |
-| **AuthenticationPolicyName** | Write | String | Name of the authentication policy. | |
-| **Ensure** | Write | String | Specify if the authentication Policy should exist or not. | `Present`, `Absent` |
+| UserName | Key | String | Name of the user assigned to the authentication policy. | - |
+| AuthenticationPolicyName | Write | String | Name of the authentication policy. | - |
+| Ensure | Write | String | Specify if the authentication Policy should exist or not. | `Present`, `Absent` |
 
 
 ## Permissions

@@ -16,8 +16,8 @@ This resource configures the Availability Config in Exchange Online.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **OrgWideAccount** | Key | String | Specify the OrgWideAccount for the AvailabilityConfig. | |
-| **Ensure** | Write | String | Specify if the AvailabilityConfig should exist or not. | `Present`, `Absent` |
+| OrgWideAccount | Key | String | Specify the OrgWideAccount for the AvailabilityConfig. | - |
+| Ensure | Write | String | Specify if the AvailabilityConfig should exist or not. | `Present`, `Absent` |
 
 
 ## Permissions

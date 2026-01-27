@@ -17,10 +17,10 @@ such as the Regional settings and its timezone.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **DisplayName** | Key | String | The display name of the Shared Mailbox | |
-| **TimeZone** | Write | String | The name of the Time Zone to assign to the mailbox | |
-| **Locale** | Write | String | The code of the Locale to assign to the mailbox | |
-| **Ensure** | Write | String | Present ensures the Mailbox Settings are applied | `Present` |
+| DisplayName | Key | String | The display name of the Shared Mailbox | - |
+| TimeZone | Write | String | The name of the Time Zone to assign to the mailbox | - |
+| Locale | Write | String | The code of the Locale to assign to the mailbox | - |
+| Ensure | Write | String | Present ensures the Mailbox Settings are applied | `Present` |
 
 
 ## Permissions

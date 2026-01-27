@@ -16,9 +16,9 @@ This resource configures a Retention Event Type in Security and Compliance.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Name** | Key | String | The Name parameter specifies the unique name of the retention event type. | |
-| **Ensure** | Write | String | Specify if this rule should exist or not. | `Present`, `Absent` |
-| **Comment** | Write | String | The Comment parameter specifies an optional comment. | |
+| Name | Key | String | The Name parameter specifies the unique name of the retention event type. | - |
+| Ensure | Write | String | Specify if this rule should exist or not. | `Present`, `Absent` |
+| Comment | Write | String | The Comment parameter specifies an optional comment. | - |
 
 
 ## Permissions

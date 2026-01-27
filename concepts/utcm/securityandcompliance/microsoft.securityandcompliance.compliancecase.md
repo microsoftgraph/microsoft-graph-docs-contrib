@@ -16,10 +16,10 @@ This resource configures an eDiscovery Case in Security and Compliance.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Name** | Key | String | The Name parameter specifies the unique name of the compliance case. | |
-| **Description** | Write | String | The description of the case. | |
-| **Ensure** | Write | String | Specify if this case should exist or not. | `Present`, `Absent` |
-| **Status** | Write | String | Status for the case. Can either be 'Active' or 'Closed' | `Active`, `Closed` |
+| Name | Key | String | The Name parameter specifies the unique name of the compliance case. | - |
+| Description | Write | String | The description of the case. | - |
+| Ensure | Write | String | Specify if this case should exist or not. | `Present`, `Absent` |
+| Status | Write | String | Status for the case. Can either be 'Active' or 'Closed' | `Active`, `Closed` |
 
 
 ## Permissions

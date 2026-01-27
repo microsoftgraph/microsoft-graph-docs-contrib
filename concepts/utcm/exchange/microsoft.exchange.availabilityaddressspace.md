@@ -16,14 +16,14 @@ Create a new AvailabilityAddressSpace in your cloud-based organization.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Identity** | Key | String | The Identity parameter specifies the AvailabilityAddressSpace you want to modify. | |
-| **AccessMethod** | Write | String | The AccessMethod parameter specifies how the free/busy data is accessed. Valid values are:PerUserFB, OrgWideFB, OrgWideFBToken, OrgWideFBBasic,InternalProxy | `PerUserFB`, `OrgWideFB`, `OrgWideFBToken`, `OrgWideFBBasic`, `InternalProxy` |
-| **Credentials** | Write | String | The Credentials parameter specifies the username and password that's used to access the Availability services in the target forest. | |
-| **ForestName** | Write | String | The ForestName parameter specifies the SMTP domain name of the target forest for users whose free/busy data must be retrieved. If your users are distributed among multiple SMTP domains in the target forest, run the Add-AvailabilityAddressSpace command once for each SMTP domain. | |
-| **TargetAutodiscoverEpr** | Write | String | The TargetAutodiscoverEpr parameter specifies the Autodiscover URL of Exchange Web Services for the external organization. Exchange uses Autodiscover to automatically detect the correct server endpoint for external requests. | |
-| **TargetServiceEpr** | Write | String | The TargetServiceEpr parameter specifies the Exchange Online Calendar Service URL of the external Microsoft 365 organization that you're trying to read free/busy information from. | |
-| **TargetTenantId** | Write | String | The TargetTenantID parameter specifies the tenant ID of the external Microsoft 365 organization that you're trying to read free/busy information from. | |
-| **Ensure** | Write | String | Specifies if this AvailabilityAddressSpace should exist. | `Present`, `Absent` |
+| Identity | Key | String | The Identity parameter specifies the AvailabilityAddressSpace you want to modify. | - |
+| AccessMethod | Write | String | The AccessMethod parameter specifies how the free/busy data is accessed. Valid values are:PerUserFB, OrgWideFB, OrgWideFBToken, OrgWideFBBasic,InternalProxy | `PerUserFB`, `OrgWideFB`, `OrgWideFBToken`, `OrgWideFBBasic`, `InternalProxy` |
+| Credentials | Write | String | The Credentials parameter specifies the username and password that's used to access the Availability services in the target forest. | - |
+| ForestName | Write | String | The ForestName parameter specifies the SMTP domain name of the target forest for users whose free/busy data must be retrieved. If your users are distributed among multiple SMTP domains in the target forest, run the Add-AvailabilityAddressSpace command once for each SMTP domain. | - |
+| TargetAutodiscoverEpr | Write | String | The TargetAutodiscoverEpr parameter specifies the Autodiscover URL of Exchange Web Services for the external organization. Exchange uses Autodiscover to automatically detect the correct server endpoint for external requests. | - |
+| TargetServiceEpr | Write | String | The TargetServiceEpr parameter specifies the Exchange Online Calendar Service URL of the external Microsoft 365 organization that you're trying to read free/busy information from. | - |
+| TargetTenantId | Write | String | The TargetTenantID parameter specifies the tenant ID of the external Microsoft 365 organization that you're trying to read free/busy information from. | - |
+| Ensure | Write | String | Specifies if this AvailabilityAddressSpace should exist. | `Present`, `Absent` |
 
 
 ## Permissions

@@ -18,10 +18,10 @@ More information: https://learn.microsoft.com/en-us/microsoftteams/templates-pol
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Identity** | Key | String | Identity of the Teams Templates Policy. | |
-| **Description** | Write | String | Description of the Teams Templates Policy. | |
-| **HiddenTemplates** | Write | StringArray[] | The list of Teams templates to hide. | |
-| **Ensure** | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
+| Identity | Key | String | Identity of the Teams Templates Policy. | - |
+| Description | Write | String | Description of the Teams Templates Policy. | - |
+| HiddenTemplates | Write | StringArray[] | The list of Teams templates to hide. | - |
+| Ensure | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
 
 
 ## Permissions

@@ -17,8 +17,8 @@ Compliance File Plans.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Name** | Key | String | The Name parameter specifies the unique name of the department. | |
-| **Ensure** | Write | String | Specify if this department should exist or not. | `Present`, `Absent` |
+| Name | Key | String | The Name parameter specifies the unique name of the department. | - |
+| Ensure | Write | String | Specify if this department should exist or not. | `Present`, `Absent` |
 
 
 ## Permissions

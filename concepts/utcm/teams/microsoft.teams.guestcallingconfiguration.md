@@ -18,8 +18,8 @@ More information: https://docs.microsoft.com/en-us/microsoftteams/set-up-guests
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Identity** | Key | String | The only valid input is Global - the tenant wide configuration | `Global` |
-| **AllowPrivateCalling** | Required | Boolean | Designates whether guests who have been enabled for Teams can use calling functionality. If $false, guests can't call. | |
+| Identity | Key | String | The only valid input is Global - the tenant wide configuration | `Global` |
+| AllowPrivateCalling | Required | Boolean | Designates whether guests who have been enabled for Teams can use calling functionality. If $false, guests can't call. | - |
 
 
 ## Permissions

@@ -17,12 +17,12 @@ in Office 365.  Tenant must be subscribed to ATP.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **IsSingleInstance** | Key | String | Specifies that the resource is a single instance, the value must be 'Yes' | `Yes` |
-| **Identity** | Write | String | The Identity parameter specifies the Advanced Threat Protection (ATP) policy that you want to modify. There's only one policy named Default. | |
-| **Ensure** | Write | String | Since there's only one policy, the default policy, this value must be set to 'Present' | `Present` |
-| **AllowSafeDocsOpen** | Write | Boolean | The AllowSafeDocsOpen parameter specifies whether users can click through and bypass the Protected View container even when Safe Documents identify a file as malicious. | |
-| **EnableATPForSPOTeamsODB** | Write | Boolean | The EnableATPForSPOTeamsODB parameter specifies whether ATP is enabled for SharePoint Online, OneDrive for Business and Microsoft Teams. The default value is $false. | |
-| **EnableSafeDocs** | Write | Boolean | The EnableSafeDocs parameter specifies whether to enable the Safe Documents feature in the organization. The default value is $false. | |
+| IsSingleInstance | Key | String | Specifies that the resource is a single instance, the value must be 'Yes' | `Yes` |
+| Identity | Write | String | The Identity parameter specifies the Advanced Threat Protection (ATP) policy that you want to modify. There's only one policy named Default. | - |
+| Ensure | Write | String | Since there's only one policy, the default policy, this value must be set to 'Present' | `Present` |
+| AllowSafeDocsOpen | Write | Boolean | The AllowSafeDocsOpen parameter specifies whether users can click through and bypass the Protected View container even when Safe Documents identify a file as malicious. | - |
+| EnableATPForSPOTeamsODB | Write | Boolean | The EnableATPForSPOTeamsODB parameter specifies whether ATP is enabled for SharePoint Online, OneDrive for Business and Microsoft Teams. The default value is $false. | - |
+| EnableSafeDocs | Write | Boolean | The EnableSafeDocs parameter specifies whether to enable the Safe Documents feature in the organization. The default value is $false. | - |
 
 
 ## Permissions
