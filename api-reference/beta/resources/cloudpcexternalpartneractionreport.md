@@ -20,15 +20,15 @@ Represents the records of the Cloud PC external partner action. Such as the conf
 |Property|Type|Description|
 |:---|:---|:---|
 |actionType|[cloudPcExternalPartnerActionType](#cloudpcexternalpartneractiontype-values)|The type of external partner action. Read-only. The possible values are: `configureAgent`, `deployAgent`, `unknownFutureValue`.|
-|activityId|String|The id of external partner activity. Read-only.|
+|activityId|String|The ID of external partner activity. Read-only.|
 |activityMessage|String|The message of external partner activity. Read-only.|
 |agentName|String|The agent name of the external partner. Read-only.|
 |agentSetting|[cloudPcExternalPartnerAgentSetting](../resources/cloudpcexternalpartneragentsetting.md)|The agent setting of the external partner. Read-only.|
-|authenticatedAppId|String|Indicates the authenticated Microsoft Entra (Azure AD) app Id of the action request. Read-only.|
+|authenticatedAppId|String|Indicates the authenticated Microsoft Entra (Azure AD) app ID of the action request. Read-only.|
 |authenticatedAppName|String|Indicates the authenticated Microsoft Entra (Azure AD) app name of the action request. Read-only.|
 |authenticatedMethod|[cloudPcExternalPartnerAuthenticatedMethod](#cloudpcexternalpartnerauthenticatedmethod-values)|Indicates the authenticated method used by the Cloud PC external partner action. Read-only. The possible values are: `gDAP`, `dAP`, `appOnly`, `normalUser`, `guestUser`, `unknownFutureValue`.|
 |authenticatedUserPrincipalName|String|Indicates the authenticated Microsoft Entra (Azure AD) user principal name of the action request. Read-only.|
-|cloudPcId|String|The Cloud PC's id of the partner agent is deployed. Read-only.|
+|cloudPcId|String|The Cloud PC's ID of the partner agent is deployed. Read-only.|
 |cloudPcName|String|The Cloud PC's Name of the partner agent is deployed. Read-only.|
 |createdDateTime|DateTimeOffset|The create time of the action. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Read-only.|
 
