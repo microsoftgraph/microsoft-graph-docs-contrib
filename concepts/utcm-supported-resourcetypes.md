@@ -14,12 +14,12 @@ This article describes the supported workloads and resource types in the unified
 
 The following list shows the supported workloads:
 
-- Microsoft Defender
-- Microsoft Entra
-- Microsoft Exchange Online
-- Microsoft Intune
-- Microsoft Purview
-- Microsoft Teams
+- [Microsoft Defender](/graph/utcm-securityandcompliance-resources)
+- [Microsoft Entra](/graph/utcm-entra-resources)
+- [Microsoft Exchange Online](/graph/utcm-exchange-resources)
+- [Microsoft Intune](/graph/utcm-intune-resources)
+- [Microsoft Purview](/graph/utcm-securityandcompliance-resources)
+- [Microsoft Teams](/graph/utcm-teams-resources)
 
 ## Supported resource types
 

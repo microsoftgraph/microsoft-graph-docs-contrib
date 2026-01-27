@@ -1,0 +1,61 @@
+---
+author: "swatyario"
+ms.localizationpriority: medium
+ms.subservice: "tenant-administration"
+ms.topic: include
+---
+
+<!-- markdownlint-disable MD041-->
+
+## Description
+
+Modify the perimeter Configuration policy in your cloud-based organization.
+
+
+## Parameters
+
+| Parameter | Attribute | DataType | Description | Allowed Values |
+| --- | --- | --- | --- | --- |
+| **IsSingleInstance** | Key | String | Only valid value is 'Yes'. | `Yes` |
+| **GatewayIPAddresses** | Write | StringArray[] | Use the GatewayIPAddresses parameter to create or modify a list of gateway server IP addresses to add to IP safelists. | |
+| **Ensure** | Write | String | Specifies if this Outbound connector should exist. | `Present`, `Absent` |
+
+
+## Permissions
+
+### Microsoft Entra ID roles
+
+The following [roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) can be granted to the UTCM (Unified Tenant Configuration Management) service principal:
+
+| Operation | Least privileged role |
+|-----------|-----------------------|
+| Read      | Global Reader |
+| Update    | Exchange Administrator |
+
+
+### Exchange
+
+To authenticate with Microsoft Exchange, this resource requires the following application permissions. Delegated scenarios aren't supported.
+
+#### Roles
+
+- View-Only Configuration, Organization Configuration
+
+#### Role Groups
+
+- Organization Management
+
+### Office 365 Exchange Online
+
+To authenticate with Exchange Online, this resource requires the following application permissions. Delegated scenarios aren't supported.
+
+
+#### Application permissions
+
+| Operation | Least privileged permissions |
+|-----------|------------------------------|
+| Read      | Exchange.ManageAsApp |
+| Update    | None |
+
+
+
