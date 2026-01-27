@@ -27,8 +27,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "ediscovery_tag_ashierarchy" } -->
 [!INCLUDE [permissions-table](../includes/permissions/ediscovery-tag-ashierarchy-permissions.md)]
 
-[!INCLUDE [rbac-ediscovery-read](../includes/rbac-for-apis/rbac-ediscovery-apis-read.md)]
-
 ## HTTP request
 
 <!-- {

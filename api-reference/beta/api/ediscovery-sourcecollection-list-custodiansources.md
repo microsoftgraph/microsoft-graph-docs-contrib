@@ -27,8 +27,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "ediscovery_sourcecollection_list_custodiansources" } -->
 [!INCLUDE [permissions-table](../includes/permissions/ediscovery-sourcecollection-list-custodiansources-permissions.md)]
 
-[!INCLUDE [rbac-ediscovery-read](../includes/rbac-for-apis/rbac-ediscovery-apis-read.md)]
-
 ## HTTP request
 
 <!-- {

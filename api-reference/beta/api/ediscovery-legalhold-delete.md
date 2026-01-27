@@ -27,8 +27,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "ediscovery_legalhold_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/ediscovery-legalhold-delete-permissions.md)]
 
-[!INCLUDE [rbac-ediscovery-write](../includes/rbac-for-apis/rbac-ediscovery-apis-write.md)]
-
 ## HTTP request
 
 <!-- {
