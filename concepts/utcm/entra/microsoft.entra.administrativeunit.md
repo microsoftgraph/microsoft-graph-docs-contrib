@@ -64,7 +64,7 @@ To authenticate with the Microsoft Graph API, this resource requires the followi
 
 #### Application permissions
 
-| Operation | Least privileged permissions |
+| Operation | Supported permissions |
 |-----------|------------------------------|
 | Read      | AdministrativeUnit.Read.All, RoleManagement.Read.Directory |
 | Update    | AdministrativeUnit.ReadWrite.All, Application.Read.All, Device.Read.All, Group.Read.All, RoleManagement.Read.Directory, User.Read.All |

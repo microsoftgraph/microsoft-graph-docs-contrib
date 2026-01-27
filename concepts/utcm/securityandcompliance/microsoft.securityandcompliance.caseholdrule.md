@@ -44,7 +44,7 @@ To authenticate with the Security and Compliance APIs, this resource requires th
 
 #### Application permissions
 
-| Operation | Least privileged permissions |
+| Operation | Supported permissions |
 |-----------|------------------------------|
 | Read      | Exchange.ManageAsApp |
 | Update    | None |

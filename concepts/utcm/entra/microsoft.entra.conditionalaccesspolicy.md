@@ -82,7 +82,7 @@ To authenticate with the Microsoft Graph API, this resource requires the followi
 
 #### Application permissions
 
-| Operation | Least privileged permissions |
+| Operation | Supported permissions |
 |-----------|------------------------------|
 | Read      | Agreement.Read.All, Application.Read.All, Group.Read.All, Policy.Read.All, RoleManagement.Read.Directory, User.Read.All, CustomSecAttributeDefinition.Read.All |
 | Update    | Agreement.Read.All, Application.Read.All, Group.Read.All, Policy.Read.All, Policy.ReadWrite.ConditionalAccess, RoleManagement.Read.Directory, User.Read.All, CustomSecAttributeDefinition.Read.All |

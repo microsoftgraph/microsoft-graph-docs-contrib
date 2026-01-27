@@ -136,7 +136,7 @@ To authenticate with the Microsoft Graph API, this resource requires the followi
 
 #### Application permissions
 
-| Operation | Least privileged permissions |
+| Operation | Supported permissions |
 |-----------|------------------------------|
 | Read      | Group.Read.All, DeviceManagementConfiguration.Read.All |
 | Update    | Group.Read.All, DeviceManagementConfiguration.ReadWrite.All |

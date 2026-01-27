@@ -112,7 +112,7 @@ To authenticate with the Microsoft Graph API, this resource requires the followi
 
 #### Application permissions
 
-| Operation | Least privileged permissions |
+| Operation | Supported permissions |
 |-----------|------------------------------|
 | Read      | RoleEligibilitySchedule.Read.Directory, Directory.Read.All |
 | Update    | RoleEligibilitySchedule.ReadWrite.Directory, Directory.Read.All |

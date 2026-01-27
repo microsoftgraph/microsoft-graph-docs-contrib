@@ -157,7 +157,7 @@ To authenticate with Exchange Online, this resource requires the following appli
 
 #### Application permissions
 
-| Operation | Least privileged permissions |
+| Operation | Supported permissions |
 |-----------|------------------------------|
 | Read      | Exchange.ManageAsApp |
 | Update    | None |
