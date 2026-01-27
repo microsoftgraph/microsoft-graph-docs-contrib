@@ -9,7 +9,7 @@ ms.topic: include
 
 ## Description
 
-Azure AD Authentication Method Policy Software
+Microsoft Entra Authentication Method Policy Software
 
 
 ## Parameters
@@ -28,7 +28,7 @@ Azure AD Authentication Method Policy Software
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Id** | Write | String | The object identifier of an Azure AD group. | |
+| **Id** | Write | String | The object identifier of an Microsoft Entra group. | |
 | **TargetType** | Write | String | The type of the authentication method target. Possible values are: group and unknownFutureValue. | `user`, `group`, `unknownFutureValue` |
 
 ### AuthenticationMethodPolicySoftwareIncludeTarget
@@ -37,7 +37,7 @@ Azure AD Authentication Method Policy Software
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Id** | Write | String | The object identifier of an Azure AD group. | |
+| **Id** | Write | String | The object identifier of an Microsoft Entra group. | |
 | **TargetType** | Write | String | The type of the authentication method target. Possible values are: group and unknownFutureValue. | `user`, `group`, `unknownFutureValue` |
 
 

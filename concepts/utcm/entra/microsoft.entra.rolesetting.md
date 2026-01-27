@@ -61,7 +61,7 @@ This resource configure existing Azure roles. All UI parameters can be configure
 | **AuthenticationContextRequired** | Write | Boolean | Authorization context is required (True/False) | |
 | **AuthenticationContextName** | Write | String | Descriptive name of associated authorization context | |
 | **AuthenticationContextId** | Write | String | Authorization context id | |
-| **Ensure** | Write | String | Specify if the Azure AD role setting should exist or not. | `Present` |
+| **Ensure** | Write | String | Specify if the Microsoft Entra role setting should exist or not. | `Present` |
 
 
 ## Permissions

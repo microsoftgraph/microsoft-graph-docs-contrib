@@ -9,7 +9,7 @@ ms.topic: include
 
 ## Description
 
-Azure AD Authentication Method Policy Email
+Microsoft Entra Authentication Method Policy Email
 
 
 ## Parameters
@@ -29,7 +29,7 @@ Azure AD Authentication Method Policy Email
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Id** | Write | String | The object identifier of an Azure AD group. | |
+| **Id** | Write | String | The object identifier of an Microsoft Entra group. | |
 | **TargetType** | Write | String | The type of the authentication method target. Possible values are: group and unknownFutureValue. | `user`, `group`, `unknownFutureValue` |
 
 ### AuthenticationMethodPolicyEmailIncludeTarget
@@ -38,7 +38,7 @@ Azure AD Authentication Method Policy Email
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Id** | Write | String | The object identifier of an Azure AD group. | |
+| **Id** | Write | String | The object identifier of an Microsoft Entra group. | |
 | **TargetType** | Write | String | The type of the authentication method target. Possible values are: group and unknownFutureValue. | `user`, `group`, `unknownFutureValue` |
 
 

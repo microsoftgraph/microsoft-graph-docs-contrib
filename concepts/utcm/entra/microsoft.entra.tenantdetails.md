@@ -9,7 +9,7 @@ ms.topic: include
 
 ## Description
 
-This resource configures the Azure AD Tenant Details
+This resource configures the Microsoft Entra Tenant Details
 
 
 ## Parameters

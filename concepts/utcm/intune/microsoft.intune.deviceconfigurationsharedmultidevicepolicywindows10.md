@@ -24,7 +24,7 @@ Intune Device Configuration Shared Multi Device Policy for Windows10
 | **DisablePowerPolicies** | Write | Boolean | Specifies whether the default shared PC power policies should be disabled. | |
 | **DisableSignInOnResume** | Write | Boolean | Disables the requirement to sign in whenever the device wakes up from sleep mode. | |
 | **Enabled** | Write | Boolean | Enables shared PC mode and applies the shared pc policies. | |
-| **FastFirstSignIn** | Write | String | Specifies whether to auto connect new non-admin Azure AD accounts to pre-configured candidate local accounts. Possible values are: notConfigured, enabled, disabled. | `notConfigured`, `enabled`, `disabled` |
+| **FastFirstSignIn** | Write | String | Specifies whether to auto connect new non-admin Microsoft Entra accounts to pre-configured candidate local accounts. Possible values are: notConfigured, enabled, disabled. | `notConfigured`, `enabled`, `disabled` |
 | **IdleTimeBeforeSleepInSeconds** | Write | UInt32 | Specifies the time in seconds that a device must sit idle before the PC goes to sleep. Setting this value to 0 prevents the sleep timeout from occurring. | |
 | **KioskAppDisplayName** | Write | String | Specifies the display text for the account shown on the sign-in screen which launches the app specified by SetKioskAppUserModelId. Only applies when KioskAppUserModelId is set. | |
 | **KioskAppUserModelId** | Write | String | Specifies the application user model ID of the app to use with assigned access. | |

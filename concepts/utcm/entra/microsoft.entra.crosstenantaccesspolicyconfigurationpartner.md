@@ -9,20 +9,20 @@ ms.topic: include
 
 ## Description
 
-This resource manages Azure AD Cross Tenant Access Policies Configuration Partner.
+This resource manages Microsoft Entra Cross Tenant Access Policies Configuration Partner.
 
 
 ## Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **PartnerTenantId** | Key | String | The tenant identifier for the partner Azure Active Directory (Azure AD) organization. | |
-| **B2BCollaborationInbound** | Write | CrossTenantAccessPolicyB2BSetting | Defines your partner-specific configuration for users from other organizations accessing your resources via Azure AD B2B collaboration. | |
-| **B2BCollaborationOutbound** | Write | CrossTenantAccessPolicyB2BSetting | Defines your partner-specific configuration for users in your organization going outbound to access resources in another organization via Azure AD B2B collaboration. | |
-| **B2BDirectConnectInbound** | Write | CrossTenantAccessPolicyB2BSetting | Defines your partner-specific configuration for users from other organizations accessing your resources via Azure AD B2B direct connect. | |
-| **B2BDirectConnectOutbound** | Write | CrossTenantAccessPolicyB2BSetting | Defines your partner-specific configuration for users in your organization going outbound to access resources in another organization via Azure AD B2B direct connect. | |
+| **PartnerTenantId** | Key | String | The tenant identifier for the partner Azure Active Directory (Microsoft Entra) organization. | |
+| **B2BCollaborationInbound** | Write | CrossTenantAccessPolicyB2BSetting | Defines your partner-specific configuration for users from other organizations accessing your resources via Microsoft Entra B2B collaboration. | |
+| **B2BCollaborationOutbound** | Write | CrossTenantAccessPolicyB2BSetting | Defines your partner-specific configuration for users in your organization going outbound to access resources in another organization via Microsoft Entra B2B collaboration. | |
+| **B2BDirectConnectInbound** | Write | CrossTenantAccessPolicyB2BSetting | Defines your partner-specific configuration for users from other organizations accessing your resources via Microsoft Entra B2B direct connect. | |
+| **B2BDirectConnectOutbound** | Write | CrossTenantAccessPolicyB2BSetting | Defines your partner-specific configuration for users in your organization going outbound to access resources in another organization via Microsoft Entra B2B direct connect. | |
 | **AutomaticUserConsentSettings** | Write | CrossTenantAccessPolicyAutomaticUserConsentSettings | Determines the partner-specific configuration for accepting trust claims from other tenant invitations. | |
-| **InboundTrust** | Write | CrossTenantAccessPolicyInboundTrust | Determines the partner-specific configuration for trusting other Conditional Access claims from external Azure AD organizations. | |
+| **InboundTrust** | Write | CrossTenantAccessPolicyInboundTrust | Determines the partner-specific configuration for trusting other Conditional Access claims from external Microsoft Entra organizations. | |
 | **Ensure** | Write | String | Specify if the policy should exist or not. | `Present`, `Absent` |
 
 ### CrossTenantAccessPolicyTarget
@@ -67,9 +67,9 @@ This resource manages Azure AD Cross Tenant Access Policies Configuration Partne
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **IsCompliantDeviceAccepted** | Write | Boolean | Specifies whether compliant devices from external Azure AD organizations are trusted. | |
-| **IsHybridAzureADJoinedDeviceAccepted** | Write | Boolean | Specifies whether hybrid Azure AD joined devices from external Azure AD organizations are trusted. | |
-| **IsMfaAccepted** | Write | Boolean | Specifies whether MFA from external Azure AD organizations is trusted. | |
+| **IsCompliantDeviceAccepted** | Write | Boolean | Specifies whether compliant devices from external Microsoft Entra organizations are trusted. | |
+| **IsHybridAzureADJoinedDeviceAccepted** | Write | Boolean | Specifies whether hybrid Microsoft Entra joined devices from external Microsoft Entra organizations are trusted. | |
+| **IsMfaAccepted** | Write | Boolean | Specifies whether MFA from external Microsoft Entra organizations is trusted. | |
 
 
 ## Permissions

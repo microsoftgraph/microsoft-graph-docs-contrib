@@ -9,7 +9,7 @@ ms.topic: include
 
 ## Description
 
-This resource configures the Security Defaults in Azure Active Directory.
+This resource configures the Security Defaults in Microsoft Entra.
 
 
 ## Parameters
@@ -20,7 +20,7 @@ This resource configures the Security Defaults in Azure Active Directory.
 | **DisplayName** | Write | String | Display name of the security defaults. | |
 | **Description** | Write | String | Description of the security defaults. | |
 | **IsEnabled** | Write | Boolean | Represents whether or not security defaults are enabled. | |
-| **Ensure** | Write | String | Specify if the Azure AD App should exist or not. | `Present`, `Absent` |
+| **Ensure** | Write | String | Specify if the Microsoft Entra App should exist or not. | `Present`, `Absent` |
 
 
 ## Permissions

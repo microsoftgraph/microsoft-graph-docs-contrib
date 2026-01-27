@@ -9,7 +9,7 @@ ms.topic: include
 
 ## Description
 
-This resource configures an Azure Active Directory group. IMPORTANT: It does not support mail enabled security groups or mail enabled groups that are not unified or dynamic groups.
+This resource configures an Microsoft Entra group. IMPORTANT: It does not support mail enabled security groups or mail enabled groups that are not unified or dynamic groups.
 
 If using with AADUser, be aware that if AADUser->MemberOf is being specified and the referenced group is configured with AADGroup->Member then a conflict may arise if the two don't match. It's usually best to choose only one of them. See AADUser
 
@@ -18,7 +18,7 @@ If using with AADUser, be aware that if AADUser->MemberOf is being specified and
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **DisplayName** | Key | String | DisplayName of the Azure Active Directory Group | |
+| **DisplayName** | Key | String | DisplayName of the Microsoft Entra Group | |
 | **MailNickname** | Key | String | Specifies a mail nickname for the group. | |
 | **Description** | Write | String | Specifies a description for the group. | |
 | **Id** | Write | String | Specifies an ID for the group. | |
@@ -30,12 +30,12 @@ If using with AADUser, be aware that if AADUser->MemberOf is being specified and
 | **MembershipRule** | Write | String | Specifies the membership rule for a dynamic group. | |
 | **MembershipRuleProcessingState** | Write | String | Specifies the rule processing state. The acceptable values for this parameter are: On. Process the group rule or Paused. Stop processing the group rule. | `On`, `Paused` |
 | **SecurityEnabled** | Required | Boolean | Specifies whether the group is security enabled. For security groups, this value must be $True. | |
-| **MailEnabled** | Required | Boolean | Specifies whether this group is mail enabled. Currently, you can't create mail enabled groups in Azure AD. | |
+| **MailEnabled** | Required | Boolean | Specifies whether this group is mail enabled. Currently, you can't create mail enabled groups in Microsoft Entra. | |
 | **IsAssignableToRole** | Write | Boolean | Specifies whether this group can be assigned a role. Only available when creating a group and can't be modified after group is created. | |
 | **AssignedToRole** | Write | StringArray[] | DisplayName values for the roles that the group is assigned to. | |
 | **Visibility** | Write | String | This parameter determines the visibility of the group's content and members list. | `Public`, `Private`, `HiddenMembership` |
 | **AssignedLicenses** | Write | GroupLicense[] | List of Licenses assigned to the group. | |
-| **Ensure** | Write | String | Specify if the Azure AD Group should exist or not. | `Present`, `Absent` |
+| **Ensure** | Write | String | Specify if the Microsoft Entra Group should exist or not. | `Present`, `Absent` |
 
 ### GroupLicense
 

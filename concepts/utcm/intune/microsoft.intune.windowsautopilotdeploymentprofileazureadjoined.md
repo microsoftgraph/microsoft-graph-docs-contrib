@@ -9,7 +9,7 @@ ms.topic: include
 
 ## Description
 
-Intune Windows Autopilot Deployment Profile Azure AD Joined
+Intune Windows Autopilot Deployment Profile Microsoft Entra Joined
 
 
 ## Parameters

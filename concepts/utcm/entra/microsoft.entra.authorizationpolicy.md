@@ -9,7 +9,7 @@ ms.topic: include
 
 ## Description
 
-This resource configures the Azure Active Directory Authorization Policy.
+This resource configures the Microsoft Entra Authorization Policy.
 
 The policy is managed using the BETA API. Some properties are added in the API but not in the resource
 
@@ -25,7 +25,7 @@ The policy is managed using the BETA API. Some properties are added in the API b
 | **AllowedToUseSSPR** | Write | Boolean | Boolean Indicates whether the Self-Serve Password Reset feature can be used by users on the tenant. | |
 | **AllowEmailVerifiedUsersToJoinOrganization** | Write | Boolean | Boolean Indicates whether a user can join the tenant by email validation. | |
 | **AllowInvitesFrom** | Write | String | Indicates who can invite external users to the organization. Possible values are: None, AdminsAndGuestInviters, AdminsGuestInvitersAndAllMembers, Everyone. Everyone is the default setting for all cloud environments except US Government. | `None`, `AdminsAndGuestInviters`, `AdminsGuestInvitersAndAllMembers`, `Everyone` |
-| **BlockMsolPowershell** | Write | Boolean | Boolean To disable the use of MSOL PowerShell, set this property to true. This disables user-based access to the legacy service endpoint used by MSOL PowerShell. This doesn't affect Azure AD Connect or Microsoft Graph. | |
+| **BlockMsolPowershell** | Write | Boolean | Boolean To disable the use of MSOL PowerShell, set this property to true. This disables user-based access to the legacy service endpoint used by MSOL PowerShell. This doesn't affect Microsoft Entra Connect or Microsoft Graph. | |
 | **DefaultUserRoleAllowedToCreateApps** | Write | Boolean | Boolean Indicates whether the default user role can create applications. | |
 | **DefaultUserRoleAllowedToCreateSecurityGroups** | Write | Boolean | Boolean Indicates whether the default user role can create security groups. | |
 | **DefaultUserRoleAllowedToReadBitlockerKeysForOwnedDevice** | Write | Boolean | Indicates whether the registered owners of a device can read their own BitLocker recovery keys with default user role. | |
@@ -36,7 +36,7 @@ The policy is managed using the BETA API. Some properties are added in the API b
 | **Ensure** | Write | String | Specify that the Azure Authorization Policy should exist. | `Present` |
 
 
-## Azure AD Permissions
+## Microsoft Entra Permissions
 
 To authenticate via Microsoft Graph, this resource required the following Application permissions:
 

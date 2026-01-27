@@ -9,7 +9,7 @@ ms.topic: include
 
 ## Description
 
-This resource configures the Azure AD Token Lifetime Policies
+This resource configures the Microsoft Entra Token Lifetime Policies
 
 
 ## Parameters
@@ -21,7 +21,7 @@ This resource configures the Azure AD Token Lifetime Policies
 | **Description** | Write | String | Description of the Policy. | |
 | **Definition** | Write | StringArray[] | Definition of the Policy. | |
 | **IsOrganizationDefault** | Write | Boolean | IsOrganizationDefault of the Policy. | |
-| **Ensure** | Write | String | Specify if the Azure AD Policy should exist or not. | `Present`, `Absent` |
+| **Ensure** | Write | String | Specify if the Microsoft Entra Policy should exist or not. | `Present`, `Absent` |
 
 
 ## Permissions

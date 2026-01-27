@@ -9,7 +9,7 @@ ms.topic: include
 
 ## Description
 
-This resource allows users to create Azure AD Users and assign them licenses, roles and/or groups.
+This resource allows users to create Microsoft Entra Users and assign them licenses, roles and/or groups.
 
 When using AADGroup with AADUser, avoid specifying both AADUser->MemberOf and AADGroup->Member for the same group, as mismatched values can cause conflicts. Choose one approach. See AADGroup
 
@@ -22,7 +22,7 @@ When using AADGroup with AADUser, avoid specifying both AADUser->MemberOf and AA
 | **DisplayName** | Write | String | The display name for the user | |
 | **FirstName** | Write | String | The first name of the user | |
 | **LastName** | Write | String | The last name of the user | |
-| **Roles** | Write | StringArray[] | The list of Azure Active Directory roles assigned to the user. | |
+| **Roles** | Write | StringArray[] | The list of Microsoft Entra roles assigned to the user. | |
 | **UsageLocation** | Write | String | The country/region code the user is assigned to | |
 | **LicenseAssignment** | Write | StringArray[] | The account SKU Id for the license to be assigned to the user | |
 | **Password** | Write | PSCredential | The password for the account. The parameter is a PSCredential object, but only the Password component is used. When Password isn't supplied for a new resource a new random password is generated. Property is used when creating the user and not on subsequent updates. | |

@@ -9,7 +9,7 @@ ms.topic: include
 
 ## Description
 
-Azure AD Authentication Method Policy X509
+Microsoft Entra Authentication Method Policy X509
 
 
 ## Parameters
@@ -17,7 +17,7 @@ Azure AD Authentication Method Policy X509
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | **AuthenticationModeConfiguration** | Write | MSFT_MicrosoftGraphx509CertificateAuthenticationModeConfiguration | Defines strong authentication configurations. This configuration includes the default authentication mode and the different rules for strong authentication bindings. | |
-| **CertificateUserBindings** | Write | MSFT_MicrosoftGraphx509CertificateUserBinding[] | Defines fields in the X.509 certificate that map to attributes of the Azure AD user object in order to bind the certificate to the user. The priority of the object determines the order in which the binding is carried out. The first binding that matches will be used and the rest ignored. | |
+| **CertificateUserBindings** | Write | MSFT_MicrosoftGraphx509CertificateUserBinding[] | Defines fields in the X.509 certificate that map to attributes of the Microsoft Entra user object in order to bind the certificate to the user. The priority of the object determines the order in which the binding is carried out. The first binding that matches will be used and the rest ignored. | |
 | **ExcludeTargets** | Write | AuthenticationMethodPolicyX509ExcludeTarget[] | Displayname of the groups of users that are excluded from a policy. | |
 | **IncludeTargets** | Write | AuthenticationMethodPolicyX509IncludeTarget[] | Displayname of the groups of users that are included from a policy. | |
 | **State** | Write | String | The state of the policy. Possible values are: enabled, disabled. | `enabled`, `disabled` |
@@ -49,8 +49,8 @@ Azure AD Authentication Method Policy X509
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Priority** | Write | UInt32 | The priority of the binding. Azure AD uses the binding with the highest priority. This value must be a non-negative integer and unique in the collection of objects in the certificateUserBindings property of an x509CertificateAuthenticationMethodConfiguration object. Required | |
-| **UserProperty** | Write | String | Defines the Azure AD user property of the user object to use for the binding. The possible values are: userPrincipalName, onPremisesUserPrincipalName, email. Required. | |
+| **Priority** | Write | UInt32 | The priority of the binding. Microsoft Entra uses the binding with the highest priority. This value must be a non-negative integer and unique in the collection of objects in the certificateUserBindings property of an x509CertificateAuthenticationMethodConfiguration object. Required | |
+| **UserProperty** | Write | String | Defines the Microsoft Entra user property of the user object to use for the binding. The possible values are: userPrincipalName, onPremisesUserPrincipalName, email. Required. | |
 | **X509CertificateField** | Write | String | The field on the X.509 certificate to use for the binding. The possible values are: PrincipalName, RFC822Name. | |
 
 ### AuthenticationMethodPolicyX509ExcludeTarget
@@ -59,7 +59,7 @@ Azure AD Authentication Method Policy X509
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Id** | Write | String | The object identifier of an Azure AD group. | |
+| **Id** | Write | String | The object identifier of an Microsoft Entra group. | |
 | **TargetType** | Write | String | The type of the authentication method target. Possible values are: group and unknownFutureValue. | `group`, `unknownFutureValue` |
 
 ### AuthenticationMethodPolicyX509IncludeTarget
@@ -68,7 +68,7 @@ Azure AD Authentication Method Policy X509
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Id** | Write | String | The object identifier of an Azure AD group. | |
+| **Id** | Write | String | The object identifier of an Microsoft Entra group. | |
 | **isRegistrationRequired** | Write | Boolean | Determines if the user is enforced to register the authentication method. | |
 | **TargetType** | Write | String | The type of the authentication method target. Possible values are: group and unknownFutureValue. | `group`, `unknownFutureValue` |
 

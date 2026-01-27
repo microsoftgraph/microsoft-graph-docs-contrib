@@ -9,7 +9,7 @@ ms.topic: include
 
 ## Description
 
-This resource configures an Azure AD Entitlement Management Connected Organization.
+This resource configures an Microsoft Entra Entitlement Management Connected Organization.
 
 
 ## Parameters
@@ -32,8 +32,8 @@ This resource configures an Azure AD Entitlement Management Connected Organizati
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
 | **odataType** | Write | String | Type of the identity source. | `#microsoft.graph.azureActiveDirectoryTenant`, `#microsoft.graph.crossCloudAzureActiveDirectoryTenant`, `#microsoft.graph.domainIdentitySource`, `#microsoft.graph.externalDomainFederation` |
-| **DisplayName** | Write | String | The name of the Azure Active Directory tenant. | |
-| **ExternalTenantId** | Write | String | The ID of the Azure Active Directory tenant. | |
+| **DisplayName** | Write | String | The name of the Microsoft Entra tenant. | |
+| **ExternalTenantId** | Write | String | The ID of the Microsoft Entra tenant. | |
 | **CloudInstance** | Write | String | The ID of the cloud where the tenant is located, one of microsoftonline.com, microsoftonline.us, or partner.microsoftonline.cn. | |
 | **DomainName** | Write | String | The domain name. | |
 | **IssuerUri** | Write | String | The issuerURI of the incoming federation. | |

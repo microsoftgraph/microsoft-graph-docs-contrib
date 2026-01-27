@@ -31,7 +31,7 @@ This resource configures OWA Mailbox Policies in Exchange Online.
 | **BookingsMailboxCreationEnabled** | Write | Boolean | No description available. | |
 | **ChangeSettingsAccountEnabled** | Write | Boolean | No description available. | |
 | **ClassicAttachmentsEnabled** | Write | Boolean | The ClassicAttachmentsEnabled parameter specifies whether users can attach local files as regular email attachments in Outlook on the web. | |
-| **ConditionalAccessPolicy** | Write | String | The ConditionalAccessPolicy parameter specifies the Outlook on the Web Policy for limited access. For this feature to work properly, you also need to configure a Conditional Access policy in the Azure Active Directory Portal. | `Off`, `ReadOnly`, `ReadOnlyPlusAttachmentsBlocked` |
+| **ConditionalAccessPolicy** | Write | String | The ConditionalAccessPolicy parameter specifies the Outlook on the Web Policy for limited access. For this feature to work properly, you also need to configure a Conditional Access policy in the Microsoft Entra Portal. | `Off`, `ReadOnly`, `ReadOnlyPlusAttachmentsBlocked` |
 | **DefaultTheme** | Write | String | The DefaultTheme parameter specifies the default theme that's used in Outlook on the web when the user hasn't selected a theme. The default value is blank ($null). | |
 | **DirectFileAccessOnPrivateComputersEnabled** | Write | Boolean | The DirectFileAccessOnPrivateComputersEnabled parameter specifies the left-click options for attachments in Outlook on the web for private computer sessions.  | |
 | **DirectFileAccessOnPublicComputersEnabled** | Write | Boolean | The DirectFileAccessOnPrivateComputersEnabled parameter specifies the left-click options for attachments in Outlook on the web for public computer sessions. | |

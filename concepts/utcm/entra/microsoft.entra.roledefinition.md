@@ -9,8 +9,8 @@ ms.topic: include
 
 ## Description
 
-This resource configures an Azure Active Directory role definition.
-To configure custom roles, you require an Azure AD Premium P1 license.
+This resource configures an Microsoft Entra role definition.
+To configure custom roles, you require an Microsoft Entra Premium P1 license.
 The account used to configure role definitions based on this resource needs either to be a
 "Global Administrator" or a "Privileged role administrator".
 
@@ -27,7 +27,7 @@ The account used to configure role definitions based on this resource needs eith
 | **RolePermissions** | Required | StringArray[] | Specifies permissions for the role definition. | |
 | **TemplateId** | Write | String | Specifies template id for the role definition. | |
 | **Version** | Write | String | Specifies version for the role definition. | |
-| **Ensure** | Write | String | Specify if the Azure AD Role definition should exist or not. | `Present`, `Absent` |
+| **Ensure** | Write | String | Specify if the Microsoft Entra Role definition should exist or not. | `Present`, `Absent` |
 
 
 ## Permissions

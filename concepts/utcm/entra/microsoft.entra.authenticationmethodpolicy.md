@@ -9,7 +9,7 @@ ms.topic: include
 
 ## Description
 
-Azure AD Authentication Method Policy
+Microsoft Entra Authentication Method Policy
 
 
 ## Parameters
@@ -43,7 +43,7 @@ Azure AD Authentication Method Policy
 | **ExcludeTargets** | Write | MSFT_MicrosoftGraphExcludeTarget[] | Users and groups of users that are excluded from being prompted to set up the authentication method. | |
 | **IncludeTargets** | Write | MSFT_MicrosoftGraphAuthenticationMethodsRegistrationCampaignIncludeTarget[] | Users and groups of users that are prompted to set up the authentication method. | |
 | **SnoozeDurationInDays** | Write | UInt32 | Specifies the number of days that the user sees a prompt again if they select 'Not now' and snoozes the prompt. Minimum 0 days. Maximum: 14 days. If the value is '0', the user is prompted during every MFA attempt. | |
-| **State** | Write | String | Enable or disable the feature. Possible values are: default, enabled, disabled, unknownFutureValue. The default value is used when the configuration isn't explicitly set and uses the default behavior of Azure AD for the setting. The default value is disabled. | `default`, `enabled`, `disabled`, `unknownFutureValue` |
+| **State** | Write | String | Enable or disable the feature. Possible values are: default, enabled, disabled, unknownFutureValue. The default value is used when the configuration isn't explicitly set and uses the default behavior of Microsoft Entra for the setting. The default value is disabled. | `default`, `enabled`, `disabled`, `unknownFutureValue` |
 
 ### AuthenticationMethodPolicyExcludeTarget
 
@@ -51,7 +51,7 @@ Azure AD Authentication Method Policy
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Id** | Write | String | The object identifier of an Azure AD group. | |
+| **Id** | Write | String | The object identifier of an Microsoft Entra group. | |
 | **TargetType** | Write | String | The type of the authentication method target. Possible values are: group and unknownFutureValue. | `user`, `group`, `unknownFutureValue` |
 
 ### AuthenticationMethodPolicyIncludeTarget
@@ -69,7 +69,7 @@ Azure AD Authentication Method Policy
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Id** | Write | String | The object identifier of an Azure AD user or group. | |
+| **Id** | Write | String | The object identifier of an Microsoft Entra user or group. | |
 | **TargetType** | Write | String | The type of the authentication method target. Possible values are: user, group, unknownFutureValue. | `user`, `group`, `unknownFutureValue` |
 
 ### MSFT_MicrosoftGraphAuthenticationMethodsRegistrationCampaignIncludeTarget
@@ -78,7 +78,7 @@ Azure AD Authentication Method Policy
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Id** | Write | String | The object identifier of an Azure AD user or group. | |
+| **Id** | Write | String | The object identifier of an Microsoft Entra user or group. | |
 | **TargetedAuthenticationMethod** | Write | String | The authentication method that the user is prompted to register. The value must be microsoftAuthenticator. | |
 | **TargetType** | Write | String | The type of the authentication method target. Possible values are: user, group, unknownFutureValue. | `user`, `group`, `unknownFutureValue` |
 
@@ -90,7 +90,7 @@ Azure AD Authentication Method Policy
 | --- | --- | --- | --- | --- |
 | **ExcludeTargets** | Write | AuthenticationMethodPolicyExcludeTarget[] | Users and groups excluded from the preferred authentication method experience of the system. | |
 | **IncludeTargets** | Write | AuthenticationMethodPolicyIncludeTarget[] | Users and groups included in the preferred authentication method experience of the system. | |
-| **State** | Write | String | Indicates whether the feature is enabled or disabled. Possible values are: default, enabled, disabled, unknownFutureValue. The default value is used when the configuration isn't explicitly set, and uses the default behavior of Azure Active Directory for the setting. The default value is disabled. | `default`, `enabled`, `disabled`, `unknownFutureValue` |
+| **State** | Write | String | Indicates whether the feature is enabled or disabled. Possible values are: default, enabled, disabled, unknownFutureValue. The default value is used when the configuration isn't explicitly set, and uses the default behavior of Microsoft Entra for the setting. The default value is disabled. | `default`, `enabled`, `disabled`, `unknownFutureValue` |
 
 
 ## Permissions

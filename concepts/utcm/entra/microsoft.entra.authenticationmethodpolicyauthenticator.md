@@ -9,7 +9,7 @@ ms.topic: include
 
 ## Description
 
-Azure AD Authentication Method Policy Authenticator
+Microsoft Entra Authentication Method Policy Authenticator
 
 
 ## Parameters
@@ -43,7 +43,7 @@ Azure AD Authentication Method Policy Authenticator
 | --- | --- | --- | --- | --- |
 | **ExcludeTarget** | Write | AuthenticationMethodPolicyAuthenticatorFeatureTarget | A single entity excluded from using this feature. | |
 | **IncludeTarget** | Write | AuthenticationMethodPolicyAuthenticatorFeatureTarget | A single entity allowed to use this feature. | |
-| **State** | Write | String | Enable or disable the feature. Possible values are: default, enabled, disabled, unknownFutureValue. The default value is used when the configuration isn't explicitly set and uses the default behavior of Azure AD for the setting. The default value is disabled. | `default`, `enabled`, `disabled`, `unknownFutureValue` |
+| **State** | Write | String | Enable or disable the feature. Possible values are: default, enabled, disabled, unknownFutureValue. The default value is used when the configuration isn't explicitly set and uses the default behavior of Microsoft Entra for the setting. The default value is disabled. | `default`, `enabled`, `disabled`, `unknownFutureValue` |
 
 ### AuthenticationMethodPolicyAuthenticatorFeatureTarget
 
@@ -60,7 +60,7 @@ Azure AD Authentication Method Policy Authenticator
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Id** | Write | String | The object identifier of an Azure AD group. | |
+| **Id** | Write | String | The object identifier of an Microsoft Entra group. | |
 | **TargetType** | Write | String | The type of the authentication method target. Possible values are: group and unknownFutureValue. | `user`, `group`, `unknownFutureValue` |
 
 ### AuthenticationMethodPolicyAuthenticatorIncludeTarget
@@ -69,7 +69,7 @@ Azure AD Authentication Method Policy Authenticator
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| **Id** | Write | String | The object identifier of an Azure AD group. | |
+| **Id** | Write | String | The object identifier of an Microsoft Entra group. | |
 | **TargetType** | Write | String | The type of the authentication method target. Possible values are: group and unknownFutureValue. | `user`, `group`, `unknownFutureValue` |
 
 

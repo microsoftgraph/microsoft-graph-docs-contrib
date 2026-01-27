@@ -9,7 +9,7 @@ ms.topic: include
 
 ## Description
 
-This resource manages Azure AD Cross Tenant Access Policies.
+This resource manages Microsoft Entra Cross Tenant Access Policies.
 
 
 ## Parameters

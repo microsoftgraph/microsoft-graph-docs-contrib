@@ -9,7 +9,7 @@ ms.topic: include
 
 ## Description
 
-This resource configures an Azure Active Directory ServicePrincipal.
+This resource configures an Microsoft Entra ServicePrincipal.
 
 
 ## Parameters
@@ -32,7 +32,7 @@ This resource configures an Azure Active Directory ServicePrincipal.
 | **ServicePrincipalNames** | Write | StringArray[] | Specifies an array of service principal names. Based on the identifierURIs collection, plus the application's appId property, these URIs are used to reference an application's service principal. | |
 | **ServicePrincipalType** | Write | String | The type of the service principal. | |
 | **Tags** | Write | StringArray[] | Tags linked to this service principal.Note that if you intend for this service principal to show up in the All Applications list in the admin portal, you need to set this value to {WindowsAzureActiveDirectoryIntegratedApp} | |
-| **Ensure** | Write | String | Specify if the Azure AD App should exist or not. | `Present`, `Absent` |
+| **Ensure** | Write | String | Specify if the Microsoft Entra App should exist or not. | `Present`, `Absent` |
 
 ### ServicePrincipalRoleAssignment
 

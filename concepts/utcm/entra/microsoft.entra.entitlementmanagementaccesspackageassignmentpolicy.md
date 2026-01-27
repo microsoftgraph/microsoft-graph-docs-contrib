@@ -9,7 +9,7 @@ ms.topic: include
 
 ## Description
 
-This resource configures an Azure AD Entitlement Management Access Package Assignment Policy.
+This resource configures an Microsoft Entra Entitlement Management Access Package Assignment Policy.
 
 
 ## Parameters

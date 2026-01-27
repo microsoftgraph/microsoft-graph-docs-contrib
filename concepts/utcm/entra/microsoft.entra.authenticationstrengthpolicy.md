@@ -9,7 +9,7 @@ ms.topic: include
 
 ## Description
 
-Azure AD Authentication Strength Policy
+Microsoft Entra Authentication Strength Policy
 
 
 ## Parameters
