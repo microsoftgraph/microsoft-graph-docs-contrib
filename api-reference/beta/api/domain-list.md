@@ -120,6 +120,7 @@ Content-type: application/json
       "isDefault": true,
       "isInitial": true,
       "isRoot": true,
+      "isVerified": true,
       "name": "contoso.com",
       "supportedServices": [
         "Email",
