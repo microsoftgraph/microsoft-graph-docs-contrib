@@ -5,7 +5,7 @@ ms.topic: include
 
 <!-- Applies to eDiscovery write APIs -->
 
-> [!TIP]
+> [!IMPORTANT]
 > In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Purview role](/purview/edisc-permissions) through one of the following options:
 > 
 > - **eDiscovery Manager**. This role allows members to create and manage eDiscovery cases they create, including creating custodians, holds, searches, and other case management tasks. However, eDiscovery Managers can only create and manage the cases they create. **This is the least privileged option for managing their own cases**.

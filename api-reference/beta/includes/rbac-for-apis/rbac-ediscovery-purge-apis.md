@@ -5,7 +5,7 @@ ms.topic: include
 
 <!-- Applies to eDiscovery purge APIs -->
 
-> [!TIP]
+> [!IMPORTANT]
 > In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Purview role](/purview/edisc-permissions) through one of the following options:
 > 
 > - **Organization Management**. This role allows members to perform bulk removal of data matching the criteria of a search. **This is the least privileged option for purging data**.

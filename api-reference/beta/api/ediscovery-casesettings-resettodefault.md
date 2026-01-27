@@ -27,8 +27,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "ediscovery_casesettings_resettodefault" } -->
 [!INCLUDE [permissions-table](../includes/permissions/ediscovery-casesettings-resettodefault-permissions.md)]
 
-[!INCLUDE [rbac-ediscovery-write](../includes/rbac-for-apis/rbac-ediscovery-apis-write.md)]
-
 ## HTTP request
 
 <!-- {

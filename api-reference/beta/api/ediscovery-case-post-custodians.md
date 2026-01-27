@@ -27,8 +27,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "ediscovery_case_post_custodians" } -->
 [!INCLUDE [permissions-table](../includes/permissions/ediscovery-case-post-custodians-permissions.md)]
 
-[!INCLUDE [rbac-ediscovery-custodian](../includes/rbac-for-apis/rbac-ediscovery-custodian-export-apis.md)]
-
 ## HTTP request
 
 <!-- {

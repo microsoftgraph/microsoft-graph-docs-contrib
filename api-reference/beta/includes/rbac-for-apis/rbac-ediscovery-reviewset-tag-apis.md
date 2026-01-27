@@ -5,7 +5,7 @@ ms.topic: include
 
 <!-- Applies to eDiscovery review set APIs -->
 
-> [!TIP]
+> [!IMPORTANT]
 > In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Purview role](/purview/edisc-permissions) through one of the following options:
 > 
 > - **eDiscovery Manager**. This role allows members to access review sets in eDiscovery cases they create and are members of. **This is the least privileged option for accessing review sets in their own cases**.
