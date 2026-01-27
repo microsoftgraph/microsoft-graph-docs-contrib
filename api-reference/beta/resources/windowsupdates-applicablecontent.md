@@ -1,11 +1,11 @@
 ---
 title: "applicableContent resource type"
 description: "Represents content applicable for offering to the related collection of devices."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: resourcePageType
-ms.date: 09/16/2024
+ms.date: 01/20/2026
 ---
 
 # applicableContent resource type
@@ -15,6 +15,11 @@ Namespace: microsoft.graph.windowsUpdates
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents content applicable for offering to the related collection of devices.
+
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List applicable content](../api/windowsupdates-policy-list-applicablecontent.md)|[microsoft.graph.windowsUpdates.applicableContent](../resources/windowsupdates-applicablecontent.md) collection|List [applicable update content](../resources/windowsupdates-applicablecontent.md) to offer to Microsoft Entra groups, Windows Autopatch groups, or both. |
 
 ## Properties
 |Property|Type|Description|
