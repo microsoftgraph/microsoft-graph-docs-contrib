@@ -944,7 +944,7 @@ Namespace: microsoft.graph
 | remoteDesktopToken |
 | refreshToken       |
 
-### approverInformationVisibilityvalues
+### approverInformationVisibility values
 
 | Member |
 | ---- |
