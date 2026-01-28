@@ -9,9 +9,7 @@ ms.topic: include
 
 ### Description
 
-This resource configures the Teams Upgrade settings.
-
-More information: https://docs.microsoft.com/en-us/MicrosoftTeams/migration-interop-guidance-for-teams-with-skype
+This resource configures the [Teams Upgrade settings](/microsoftteams/migration-interop-guidance-for-teams-with-skype).
 
 
 ### Parameters

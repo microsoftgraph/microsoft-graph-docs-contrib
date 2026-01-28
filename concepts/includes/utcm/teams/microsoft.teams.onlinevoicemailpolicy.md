@@ -9,9 +9,7 @@ ms.topic: include
 
 ### Description
 
-This resource configures the Teams Online Voicemail Policies.
-
-More information: https://learn.microsoft.com/en-us/microsoftteams/manage-voicemail-policies
+This resource configures the [Teams Online Voicemail Policies](/microsoftteams/manage-voicemail-policies).
 
 
 ### Parameters

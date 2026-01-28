@@ -9,9 +9,7 @@ ms.topic: include
 
 ### Description
 
-This resource configures the Teams Upgrade policies.
-
-More information: https://docs.microsoft.com/en-us/microsoftteams/meetings-first#prepare-for-teams-meetings-in-meetings-first
+This resource configures the [Teams Upgrade policies](/microsoftteams/meetings-first#prepare-for-teams-meetings-in-meetings-first).
 
 
 ### Parameters

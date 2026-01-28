@@ -9,9 +9,7 @@ ms.topic: include
 
 ### Description
 
-This resource configures a Teams Channel Policy.
-
-More information: https://docs.microsoft.com/en-us/microsoftteams/teams-policies
+This resource configures a [Teams Channel Policy](/microsoftteams/teams-policies).
 
 
 ### Parameters

@@ -42,7 +42,7 @@ This resource configures an Microsoft Entra Administrative Unit.
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
 | --- | --- | --- | --- | --- |
-| RoleName | Write | String | Name of the Microsoft Entra Role that is assigned. See https://learn.microsoft.com/en-us/azure/active-directory/roles/admin-units-assign-roles#roles-that-can-be-assigned-with-administrative-unit-scope | - |
+| RoleName | Write | String | Name of the Microsoft Entra Role that is assigned. See [Roles that can be assigned with administrative unit scope](/entra/identity/role-based-access-control/manage-roles-portal?tabs=admin-center#roles-that-can-be-assigned-with-administrative-unit-scope) | - |
 | RoleMemberInfo | Write | MSFT_MicrosoftGraphMember | Member that is assigned to the scoped role. Note: Any groups must be role-enabled | - |
 
 

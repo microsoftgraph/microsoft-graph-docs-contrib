@@ -9,9 +9,7 @@ ms.topic: include
 
 ### Description
 
-This resource configures the Teams Emergency Calling Policies.
-
-More information: https://docs.microsoft.com/en-us/microsoftteams/manage-emergency-calling-policies
+This resource configures the [Teams Emergency Calling Policies](/microsoftteams/manage-emergency-calling-policies).
 
 
 ### Parameters

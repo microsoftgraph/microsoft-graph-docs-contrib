@@ -9,9 +9,7 @@ ms.topic: include
 
 ### Description
 
-This resource configures the Teams Emergency Call Routing Policies.
-
-More information: https://docs.microsoft.com/en-us/microsoftteams/manage-emergency-call-routing-policies
+This resource configures the [Teams Emergency Call Routing Policies](/microsoftteams/manage-emergency-call-routing-policies).
 
 
 ### Parameters

@@ -9,9 +9,7 @@ ms.topic: include
 
 ### Description
 
-This resource configures the Teams Meeting Policies.
-
-More information: https://docs.microsoft.com/en-us/microsoftteams/meeting-policies-overview
+This resource configures the [Teams Meeting Policies](/microsoftteams/meeting-policies-overview).
 
 
 ### Parameters

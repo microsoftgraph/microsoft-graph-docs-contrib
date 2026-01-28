@@ -9,9 +9,7 @@ ms.topic: include
 
 ### Description
 
-This resource is used to configure the Teams Meeting Configuration.
-
-More information: https://docs.microsoft.com/en-us/microsoftteams/meeting-settings-in-teams
+This resource is used to configure the [Teams Meeting Configuration](/microsoftteams/meeting-settings-in-teams).
 
 
 ### Parameters

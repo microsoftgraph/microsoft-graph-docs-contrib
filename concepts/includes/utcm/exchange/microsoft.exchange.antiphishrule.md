@@ -9,8 +9,7 @@ ms.topic: include
 
 ### Description
 
-This resource configures an Anti-Phish Rule in Exchange Online.
-Reference: https://docs.microsoft.com/en-us/powershell/module/exchange/advanced-threat-protection/new-antiphishRule?view=exchange-ps
+This resource configures an [Anti-Phish Rule in Exchange Online](/powershell/module/exchange/advanced-threat-protection/new-antiphishRule?view=exchange-ps).
 
 
 ### Parameters

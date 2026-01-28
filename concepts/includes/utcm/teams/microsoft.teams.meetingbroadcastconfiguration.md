@@ -19,17 +19,13 @@ ms.topic: include
 | SdnApiTemplateUrl | Write | String | Specifies the Software Defined Network (SDN) provider's HTTP API endpoint. This information is provided to you by the SDN provider. This parameter is only required if AllowSdnProviderForBroadcastMeeting is set to $true. | - |
 | SdnApiToken | Write | String | Specifies the Software Defined Network (SDN) provider's authentication token which is required to use their SDN license. This is required by some SDN providers who will give you the required token. This parameter is only required if AllowSdnProviderForBroadcastMeeting is set to $true. | - |
 
-# TeamsMeetingBroadcastConfiguration
+####  Description
 
-###  Description
+This resource is used to configure the [Teams Meeting Broadcast Settings](/microsoftteams/teams-live-events/configure-teams-live-events).
 
-This resource is used to configure the Teams Meeting Broadcast Settings.
+#### Permissions
 
-More information: https://docs.microsoft.com/en-us/microsoftteams/teams-live-events/configure-teams-live-events
-
-### Permissions
-
-#### Microsoft Entra ID roles
+##### Microsoft Entra ID roles
 
 The following [roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) can be granted to the UTCM (Unified Tenant Configuration Management) service principal:
 
