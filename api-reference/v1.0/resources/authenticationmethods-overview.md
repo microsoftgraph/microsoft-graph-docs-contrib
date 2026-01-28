@@ -59,6 +59,7 @@ We don't recommend using the authentication methods APIs for scenarios where you
 |Authentication method       | Description |Examples     |
 |:---------------------------|:------------|:------------|
 |[emailAuthenticationMethod](emailauthenticationmethod.md)|A user can use an email address as part of the Self-Service Password Reset (SSPR) process.|See a user's authentication email address. Add, update, or remove an email address to a user.|
+|[externalAuthenticationMethod](externalauthenticationmethod.md)|A user can use an external identity provider to sign-in to Microsoft Entra ID.|Delete a user's external authentication method.|
 |[fido2AuthenticationMethod](fido2authenticationmethod.md)|A user can use a FIDO2 security key to sign-in to Microsoft Entra ID.|Delete a lost FIDO2 security key.|
 |[microsoftAuthenticatorAuthenticationMethod](microsoftauthenticatorauthenticationmethod.md)|A user can use Microsoft Authenticator app to sign-in or perform multi-factor authentication to Microsoft Entra ID|Delete a Microsoft Authenticator authentication method.|
 |[passwordAuthenticationMethod](passwordauthenticationmethod.md)| A password is currently the default primary authentication method in Microsoft Entra ID.|Reset a user's password|
