@@ -6,7 +6,7 @@ author: "jpettere"
 ms.reviewer: intelligentaccesspm
 ms.subservice: "entra-sign-in"
 doc_type: "resourcePageType"
-ms.date: 07/22/2024
+ms.date: 01/06/2026
 ---
 
 # authenticationMethod resource type
@@ -18,6 +18,7 @@ An abstract type that represents an authentication method registered to a user. 
 The **authenticationMethod** resource type is an abstract type that's inherited by the following derived types:
 
 + [emailAuthenticationMethod](emailauthenticationmethod.md)
++ [externalAuthenticationMethod](externalauthenticationmethod.md)
 + [fido2AuthenticationMethod](fido2authenticationmethod.md)
 + [microsoftAuthenticatorAuthenticationMethod](microsoftauthenticatorauthenticationmethod.md)
 + [passwordAuthenticationMethod](passwordauthenticationmethod.md)
@@ -40,6 +41,7 @@ The **authenticationMethod** resource type is an abstract type that's inherited 
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|createdDateTime|DateTimeOffset|Represents the date and time when an entity was created. Read-only.|
 |id|String| The identifier of this instance of an authentication method registered to this user. Read-only. |
 
 ## Relationships
@@ -62,7 +64,8 @@ The following JSON representation shows the resource type.
 ```json
 {
   "@odata.type": "#microsoft.graph.authenticationMethod",
-  "id": "String (identifier)"
+  "id": "String (identifier)",
+  "createdDateTime": "String (timestamp)"
 }
 ```
 
