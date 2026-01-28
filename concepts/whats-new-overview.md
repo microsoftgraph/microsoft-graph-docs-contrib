@@ -3,7 +3,7 @@ title: "What's new in Microsoft Graph"
 description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, and other resources."
 author: "lauragra"
 ms.localizationpriority: high
-ms.date: 01/26/2026
+ms.date: 01/28/2026
 ms.topic: whats-new
 ---
 
@@ -84,6 +84,10 @@ The **allowedTenantIds** property on [allowedTenantsAudience](/graph/api/resourc
 ### Identity and access | Identity and sign-in
 
 Use the **groupSyncInbound** property on [crossTenantIdentitySyncPolicyPartner](/graph/api/resources/crosstenantidentitysyncpolicypartner?view=graph-rest-beta&preserve-view=true) to define whether groups can be synchronized from a partner tenant in cross-tenant access policy settings.
+
+### Groups
+
+Use the **welcomeMessageEnabled** property on the [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) resource to control whether a welcome message is sent to new members when they're added to a Microsoft 365 group. The default value is `true`.
 
 ### Message trace
 
