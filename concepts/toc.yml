@@ -974,19 +974,16 @@ items:
         href: unified-tenant-configuration-management-concept-overview.md
       - name: Set up authentication
         href: utcm-authentication-setup.md
-      - name: Supported workloads and resource types
-        href: utcm-supported-resourcetypes.md
-        items:
-        - name: Entra resources
-          href: utcm-entra-resources.md
-        - name: Exchange resources
-          href: utcm-exchange-resources.md
-        - name: Intune resources
-          href: utcm-intune-resources.md
-        - name: Security and Compliance resources
-          href: utcm-securityandcompliance-resources.md
-        - name: Teams resources
-          href: utcm-teams-resources.md
+      - name: Entra resources
+        href: utcm-entra-resources.md
+      - name: Exchange resources
+        href: utcm-exchange-resources.md
+      - name: Intune resources
+        href: utcm-intune-resources.md
+      - name: Security and Compliance resources
+        href: utcm-securityandcompliance-resources.md
+      - name: Teams resources
+        href: utcm-teams-resources.md
   - name: To-do tasks
     displayName: Microsoft To Do
     items:
