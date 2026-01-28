@@ -22,10 +22,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "security_ediscoverycase_list_tags" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoverycase-list-tags-permissions.md)]
+[!INCLUDE [rbac-rbac-ediscovery-apis-read](../includes/rbac-for-apis/rbac-ediscovery-apis-read.md)]
 
 ## HTTP request
 
-``` http
+```http
 GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags
 ```
 
@@ -52,7 +53,7 @@ The following example shows a request that lists tags.
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-cebe-478f-b1af-d3227f1fd645/tags
 ```
 
@@ -95,7 +96,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.ediscoveryReviewTag"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

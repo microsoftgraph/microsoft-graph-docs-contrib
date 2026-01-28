@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /servicePrincipals/{servicePrincipalsId}/synchronization/jobs/{synchronizationJobId}/provisionOnDemand
 ```
 
@@ -69,7 +69,7 @@ If successful, this method returns a `200 OK` response code and a stringKeyStrin
   "name": "synchronizationjob_provisionondemand_ADto3P"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals/c8c95753-f628-48e1-9fab-76c2d4cf624c/synchronization/jobs/3f7565a3-fde6-4e4d-bda8-1bb70aba3612/provisionOnDemand
 Content-Type: application/json
 
@@ -150,7 +150,7 @@ Content-Type: application/json
   "name": "synchronizationjob_provisionondemand_AD2AAD"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals/3e916d82-dd59-4944-824d-93092908fd8d/synchronization/jobs/264ea562-28cd-42b1-93e0-8de1f0560581/provisionOnDemand
 Content-Type: application/json
 
@@ -229,7 +229,7 @@ Content-Type: application/json
   "name": "synchronizationjob_provisionondemand_Group"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals/4e116d82-dd59-4944-824d-93091408fd8d/synchronization/jobs/664ea562-18cd-42bb-33e0-8de1f0560581/provisionOnDemand
 Content-Type: application/json
 

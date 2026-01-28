@@ -1,11 +1,11 @@
 ---
 title: "updatableAssetGroup: removeMembers"
 description: "Remove members from an updatableAssetGroup."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 08/31/2024
+ms.date: 01/27/2026
 ---
 
 # updatableAssetGroup: removeMembers
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /admin/windows/updates/updatableAssets/{updatableAssetGroupId}/removeMembers
 ```
 
@@ -66,7 +66,7 @@ If successful, this action returns a `202 Accepted` response code. It doesn't re
   "name": "updatableassetgroup_removemembers"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/5c55730b-730b-5c55-0b73-555c0b73555c/removeMembers
 Content-Type: application/json
 
@@ -117,6 +117,6 @@ Content-Type: application/json
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 ```

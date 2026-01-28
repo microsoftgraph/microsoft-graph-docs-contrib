@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /tenantRelationships/delegatedAdminCustomers
 ```
 
@@ -62,7 +62,7 @@ Each **delegatedAdminCustomer** object contains an **@odata.etag** property as p
   "name": "list_delegatedadmincustomer"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminCustomers
 ```
 
@@ -104,7 +104,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminCustomers
   "@odata.type": "Collection(microsoft.graph.delegatedAdminCustomer)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

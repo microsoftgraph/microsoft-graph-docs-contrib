@@ -1,11 +1,11 @@
 ---
 title: "Create updatePolicy"
 description: "Create a new updatePolicy object."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 09/16/2024
+ms.date: 01/27/2026
 ---
 
 # Create updatePolicy
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /admin/windows/updates/updatePolicies
 ```
 
@@ -67,7 +67,7 @@ The following example shows a request.
   "name": "create_updatepolicy_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies
 Content-Type: application/json
 Content-length: 835
@@ -143,7 +143,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.windowsUpdates.updatePolicy"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

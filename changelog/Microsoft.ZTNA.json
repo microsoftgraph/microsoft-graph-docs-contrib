@@ -1130,7 +1130,99 @@
     },
     {
       "ChangeList": [
-      {
+        {
+          "Id": "283089d1-5042-441b-bbf6-3c09e8a8322c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "blockPageConfigurationBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [blockPageConfigurationBase](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-blockPageConfigurationBase?view=graph-rest-beta) resource.",
+          "Target": "blockPageConfigurationBase"
+        },
+        {
+          "Id": "283089d1-5042-441b-bbf6-3c09e8a8322c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "markdownBlockMessageConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [markdownBlockMessageConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-markdownBlockMessageConfiguration?view=graph-rest-beta) resource.",
+          "Target": "markdownBlockMessageConfiguration"
+        },
+        {
+          "Id": "283089d1-5042-441b-bbf6-3c09e8a8322c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customBlockPage",
+          "ChangeType": "Addition",
+          "Description": "Added the [customBlockPage](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-customBlockPage?view=graph-rest-beta) resource.",
+          "Target": "customBlockPage"
+        },
+        {
+          "Id": "283089d1-5042-441b-bbf6-3c09e8a8322c",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "customBlockPage",
+          "ChangeType": "Addition",
+          "Description": "Added the **customBlockPage** relationship to the [settings](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-settings?view=graph-rest-beta) resource.",
+          "Target": "settings"
+        }
+      ],
+      "Id": "283089d1-5042-441b-bbf6-3c09e8a8322c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-12-22T08:52:45.5098998Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Network access"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ae2295eb-2e29-43b6-8de7-4219db8e9e4c",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "deploymentStage",
+          "ChangeType": "Addition",
+          "Description": "Added the **deploymentStage** enumeration type.",
+          "Target": "deploymentStage"
+        },
+        {
+          "Id": "ae2295eb-2e29-43b6-8de7-4219db8e9e4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deploymentConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [deploymentConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-deploymentConfiguration?view=graph-rest-beta) resource.",
+          "Target": "deploymentConfiguration"
+        },
+        {
+          "Id": "ae2295eb-2e29-43b6-8de7-4219db8e9e4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deploymentStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [deploymentStatus](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-deploymentStatus?view=graph-rest-beta) resource.",
+          "Target": "deploymentStatus"
+        },
+        {
+          "Id": "ae2295eb-2e29-43b6-8de7-4219db8e9e4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deployment",
+          "ChangeType": "Addition",
+          "Description": "Added the [deployment](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-deployment?view=graph-rest-beta) resource.",
+          "Target": "deployment"
+        },
+        {
+          "Id": "ae2295eb-2e29-43b6-8de7-4219db8e9e4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "baseEntity",
+          "ChangeType": "Addition",
+          "Description": "Added the [baseEntity](https://learn.microsoft.com/en-us/graph/api/resources/baseentity?view=graph-rest-beta) resource.",
+          "Target": "baseEntity"
+        }
+      ],
+      "Id": "ae2295eb-2e29-43b6-8de7-4219db8e9e4c",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2025-09-16T18:57:36.187954Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Network access"
+    },
+    {  
+      "ChangeList": [
+        {
         "Id": "6e4d580d-8ec9-4c61-aca3-9ba57418e6df",
         "ApiChange": "Member",
         "ChangedApiName": "enabled",
@@ -1153,6 +1245,24 @@
     "CreatedDateTime": "2025-10-14T18:12:45.537745Z",
     "WorkloadArea": "Identity and access",
     "SubArea": "Network access"
-  }
+  },
+  {
+    "ChangeList": [
+        {
+          "Id": "8f995a7e-d92f-42ad-a744-5de10b241fe3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "urlDestinationFilteringRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [urlDestinationFilteringRule](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-urlDestinationFilteringRule?view=graph-rest-beta) resource.",
+          "Target": "urlDestinationFilteringRule"
+        }
+      ],
+      "Id": "8f995a7e-d92f-42ad-a744-5de10b241fe3",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-03T15:22:46.6349195Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Network access"
+    }
   ]
 }

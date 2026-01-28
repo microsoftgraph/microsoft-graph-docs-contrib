@@ -21,7 +21,7 @@ Represents the users or groups of users that are excluded from a policy.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The object identifier of a Microsoft Entra group.|
-|targetType|authenticationMethodTargetType|The type of the authentication method target. Possible values are: `group` and `unknownFutureValue`.|
+|targetType|authenticationMethodTargetType|The type of the authentication method target. The possible values are: `group` and `unknownFutureValue`.|
 
 ## Relationships
 None.

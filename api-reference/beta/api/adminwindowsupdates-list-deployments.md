@@ -1,11 +1,11 @@
 ---
 title: "List deployments"
 description: "Get a list of deployment objects and their properties."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 09/16/2024
+ms.date: 01/27/2026
 ---
 
 # List deployments
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /admin/windows/updates/deployments
 ```
 
@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_deployment_e1"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/windows/updates/deployments
 ```
 
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deployments
   "@odata.type": "Collection(microsoft.graph.windowsUpdates.deployment)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

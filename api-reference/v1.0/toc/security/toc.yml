@@ -50,6 +50,8 @@ items:
       href: ../../api/security-incident-post-comments.md
   - name: Complex types
     items:
+    - name: AI agent evidence
+      href: ../../resources/security-aiagentevidence.md
     - name: Security group evidence
       href: ../../resources/security-securitygroupevidence.md
     - name: Teams message evidence
@@ -446,6 +448,8 @@ items:
         href: ../../api/security-ediscoveryholdpolicy-post-usersources.md
       - name: Delete
         href: ../../api/security-ediscoveryholdpolicy-delete-usersources.md
+      - name: Retry policy
+        href: ../../api/security-ediscoveryholdpolicy-retrypolicy.md
   - name: eDiscovery search
     items:
     - name: eDiscovery search
@@ -540,6 +544,16 @@ items:
       href: ../../api/security-ediscoverycase-delete-tags.md
     - name: List tags as hierarchy
       href: ../../api/security-ediscoveryreviewtag-ashierarchy.md
+  - name: eDiscovery case member
+    items:
+    - name: eDiscovery case member
+      href: ../../resources/security-ediscoverycasemember.md
+    - name: List
+      href: ../../api/security-ediscoverycasemember-list.md
+    - name: Add
+      href: ../../api/security-ediscoverycasemember-post.md
+    - name: Remove
+      href: ../../api/security-ediscoverycasemember-delete.md
   - name: Complex types
     items:
     - name: eDiscovery add to review set operation
@@ -578,12 +592,42 @@ items:
       href: ../../api/security-sensor-getdeploymentpackageuri.md
     - name: Regenerate deployment access key
       href: ../../api/security-sensor-regeneratedeploymentaccesskey.md
+  - name: Sensor candidate
+    items:
+    - name: Sensor candidate
+      href: ../../resources/security-sensorcandidate.md
+    - name: List
+      href: ../../api/security-identitycontainer-list-sensorcandidates.md
+    - name: Activate
+      href: ../../api/security-sensorcandidate-activate.md
+  - name: Sensor candidate activation configuration
+    items:
+    - name: Sensor candidate activation configuration
+      href: ../../resources/security-sensorcandidateactivationconfiguration.md
+    - name: Get
+      href: ../../api/security-sensorcandidateactivationconfiguration-get.md
+    - name: Update
+      href: ../../api/security-identitycontainer-post-sensorcandidateactivationconfiguration.md
+  - name: Identity accounts
+    items:
+    - name: Identity accounts
+      href: ../../resources/security-identityaccounts.md
+    - name: List
+      href: ../../api/security-identitycontainer-list-identityaccounts.md
+    - name: Get
+      href: ../../api/security-identityaccounts-get.md
+    - name: invokeAction
+      href: ../../api/security-identityaccounts-invokeaction.md
   - name: Complex types
     items:
+    - name: Account
+      href: ../../resources/security-account.md
     - name: Deployment access key type
       href: ../../resources/security-deploymentaccesskeytype.md
     - name: Identity container
       href: ../../resources/security-identitycontainer.md
+    - name: Invoke action result
+      href: ../../resources/security-invokeactionresult.md
     - name: Network adapter
       href: ../../resources/security-networkadapter.md
     - name: Sensor deployment package

@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /employeeExperience/goals/exportJobs/{goalsExportJobId}
 ```
 
@@ -72,7 +72,7 @@ The following example shows a request.
   "name": "get_goalsexportjob1"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/employeeExperience/goals/exportJobs/j!eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0
 ```
 
@@ -111,7 +111,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.goalsExportJob"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Retry-After: 60
 Content-Type: application/json
@@ -139,7 +139,7 @@ The following example shows a request.
   "name": "get_goalsexportjob2"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/employeeExperience/goals/exportJobs/j!eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0
 ```
 
@@ -178,7 +178,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.goalsExportJob"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -207,7 +207,7 @@ The following example shows a request.
   "name": "get_goalsexportjob3"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/employeeExperience/goals/exportJobs/j!eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0
 ```
 
@@ -246,7 +246,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.goalsExportJob"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -273,7 +273,7 @@ The following example shows a request.
   "name": "get_goalsexportjob4"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/employeeExperience/goals/exportJobs/j!eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In1
 ```
 
@@ -312,7 +312,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.publicError"
 }
 -->
-``` http
+```http
 HTTP/1.1 404 Not Found 
 Content-type: application/json
 
@@ -340,7 +340,7 @@ The following example shows a request.
   "name": "get_goalsexportjob"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/employeeExperience/goals/exportJobs/j!eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMj
 ```
 
@@ -379,7 +379,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.publicError"
 }
 -->
-``` http
+```http
 HTTP/1.1 400 Bad Request
 Content-type: application/json
 
@@ -407,7 +407,7 @@ The following example shows a request.
   "name": "get_goalsexportjob_content"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/employeeExperience/goals/exportJobs/j!eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0/content
 ```
 
@@ -444,7 +444,7 @@ The following example shows the response.
   "@odata.type": "Edm.Stream"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK 
 Content-type: text/csv
 

@@ -1,11 +1,11 @@
 ---
 title: "List deployment audience members"
 description: "List the updatableAsset resources that are members of a deploymentAudience."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 09/16/2024
+ms.date: 01/27/2026
 ---
 
 # List deployment audience members
@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /admin//windows/updates/deploymentAudiences/{deploymentAudienceId}/members
 ```
 **Note:** Only `$skipToken` is supported for paging. Client-driven paging isn't implemented.
@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_updatableasset_deploymentID"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/be0538f6-91d8-4b4a-8dbc-d6f9b70da20b/members
 ```
 
@@ -101,7 +101,7 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/b
   "@odata.type": "Collection(microsoft.graph.windowsUpdates.updatableAsset)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

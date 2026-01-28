@@ -95,7 +95,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "calculationMode": "calculationMode-value"
+  "calculationMode": "Automatic"
 }
 ```
 

@@ -1,6 +1,6 @@
 ---
 title: "message: delta"
-description: "Get a set of messages that have been added, deleted, or updated in a specified folder."
+description: "Get a set of messages added, deleted, or updated in a specified folder."
 ms.localizationpriority: high
 author: "SuryaLashmiS"
 ms.subservice: "outlook"
@@ -12,11 +12,11 @@ ms.date: 06/21/2024
 
 Namespace: microsoft.graph
 
-Get a set of messages that have been added, deleted, or updated in a specified folder.
+Get a set of messages added, deleted, or updated in a specified folder.
 
 A **delta** function call for messages in a folder is similar to a GET request, except that by appropriately
 applying [state tokens](/graph/delta-query-overview) in one or more of these calls, you can [query for incremental changes in the messages in
-that folder](/graph/delta-query-messages). This allows you to maintain and synchronize a local store of a user's messages without
+that folder](/graph/delta-query-messages). It allows you to maintain and synchronize a local store of a user's messages without
 having to fetch the entire set of messages from the server every time.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
@@ -35,7 +35,7 @@ GET /me/mailFolders/{id}/messages/delta
 GET /users/{id}/mailFolders/{id}/messages/delta
 ```
 
-To specifically get only created, updated or deleted messages in the specified mailFolder:
+To specifically get only created, updated, or deleted messages in the specified mailFolder:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/messages/delta?changeType=created
@@ -60,7 +60,7 @@ includes the encoded, desired parameters.
 |:---------------|:--------|:----------|
 | $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `@odata.deltaLink` URL of the previous **delta** function call for the same message collection, indicating the completion of that round of change tracking. Save and apply the entire `@odata.deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
 | $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `@odata.nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same message collection. |
-| changeType | string | A custom query option to filter the delta response based on the type of change. Supported values are `created`, `updated` or `deleted`.|
+| changeType | string | A custom query option to filter the delta response based on the type of change. Supported values are `created`, `updated`, or `deleted`.|
 
 ### OData query parameters
 
@@ -73,6 +73,18 @@ _id_ property is always returned.
   * The only supported `$orderby` expression is `$orderby=receivedDateTime+desc`. If you do not include
   an `$orderby` expression, the return order is not guaranteed.
 - There is no support for `$search`.
+
+> [!NOTE]
+> Delta queries for messages can return change events that don't match the filter conditions specified in the initial request.  
+> These include:
+>
+> - `@removed` entries with `"reason": "deleted"` when an item is deleted or moved from the folder.
+> - Read/unread state changes.
+>
+> These events do **not** originate from changes to the message itself. They are emitted as part of the folder‑level synchronization process that delta tokens rely on.  
+> Delta tracking operates at the **collection** level, not the message‑level, and therefore these events are **not filtered out**.  
+>
+> Clients should be prepared to handle such entries to maintain an accurate and fully synchronized local view of the message collection.
 
 ## Request headers
 | Name       | Type | Description |
@@ -142,7 +154,7 @@ If the request is successful, the response would include a state token, which is
 Respectively, they indicate whether you should continue with the round or you have completed
 getting all the changes for that round.
 
-The response below shows a _skipToken_ in an _@odata.nextLink_ response header.
+The response shows a _skipToken_ in an _@odata.nextLink_ response header.
 
 Note: The response object shown here might be shortened for readability.
 <!-- {

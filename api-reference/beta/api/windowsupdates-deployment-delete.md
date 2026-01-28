@@ -1,11 +1,11 @@
 ---
 title: "Delete deployment"
 description: "Delete a deployment object."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 08/31/2024
+ms.date: 01/27/2026
 ---
 
 # Delete deployment
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /admin/windows/updates/deployments/{deploymentId}
 ```
 
@@ -57,7 +57,7 @@ If successful, this method returns a `202 Accepted` response code. It doesn't re
   "name": "delete_deployment"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/admin/windows/updates/deployments/983f03cd-03cd-983f-cd03-3f98cd033f98
 ```
 
@@ -98,7 +98,7 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/deployments/983f03
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 ```
 

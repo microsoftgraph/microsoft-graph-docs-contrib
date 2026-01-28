@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/identities/sensors
 ```
 
@@ -62,7 +62,7 @@ The following example shows a request.
   "name": "list_sensor"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/identities/sensors
 ```
 
@@ -106,7 +106,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.security.sensor)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -130,7 +130,8 @@ Content-Type: application/json
             "DC1.domain1.test.local"
         ],
         "isDelayedDeploymentEnabled": true
-      }
+      },
+      "serviceStatus": "running"
     }
   ]
 }

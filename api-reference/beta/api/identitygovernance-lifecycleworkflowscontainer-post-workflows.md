@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /identityGovernance/lifecycleWorkflows/workflows
 ```
 
@@ -82,7 +82,7 @@ The following example shows a request that creates a workflow with the following
   "name": "lifecycleworkflows_create_workflow_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows
 Content-Type: application/json
 
@@ -165,7 +165,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.identityGovernance.workflow"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -212,7 +212,7 @@ The following example shows a request that creates a workflow with the following
   "name": "lifecycleworkflows_create_workflow_from_attribute"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows
 Content-Type: application/json
 Content-length: 631
@@ -292,7 +292,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.identityGovernance.workflow"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -345,7 +345,7 @@ The following example shows a request that creates a workflow with the following
   "name": "lifecycleworkflows_create_workflow_from_group"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows
 Content-Type: application/json
 
@@ -433,7 +433,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.identityGovernance.workflow"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -460,5 +460,95 @@ Content-Type: application/json
             "changeType": "remove"
         }
     }
+}
+```
+
+
+### Example 4: Create a mover workflow with a set target scope
+
+#### Request
+
+The following example shows a request that creates a workflow with the following configuration:
++ It's a "mover" workflow-enabled and set to run on-demand only.
++ It runs for users within the set target scope of the administrative units "4f9dc456-0574-4122-9e55-8b4cc494b27d" and "2c987843-e9b1-4b1a-b924-ff1d2a9b054d".
++ One task is carried out, which is to send an email to notify the user's manager of the move.
+
+<!-- {
+  "blockType": "request",
+  "name": "lifecycleworkflows_create_workflow_with_administrative_scope"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows
+
+{
+  "category": "mover",
+  "displayName": "On Demand workflow move",
+  "description": "Execute real-time tasks for employee job changes",
+  "tasks": [
+    {
+      "arguments": [],
+      "description": "Send email to notify user’s manager of user move",
+      "displayName": "Send email to notify manager of user move",
+      "isEnabled": true,
+      "continueOnError": false,
+      "taskDefinitionId": "aab41899-9972-422a-9d97-f626014578b7",
+      "category": "mover"
+    }
+  ],
+  "executionConditions": {
+    "@odata.type": "#microsoft.graph.identityGovernance.onDemandExecutionOnly"
+  },
+  "isEnabled": true,
+  "isSchedulingEnabled": false,
+  "administrationScopeTargets": [
+    {
+      "@odata.type": "#microsoft.graph.administrativeUnit",
+      "id": "4f9dc456-0574-4122-9e55-8b4cc494b27d"
+    },
+    {
+      "@odata.type": "#microsoft.graph.administrativeUnit",
+      "id": "2c987843-e9b1-4b1a-b924-ff1d2a9b054d"
+    }
+  ]
+}
+```
+
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.identityGovernance.workflow"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/workflows/$entity",
+  "category": "mover",
+  "description": "Execute real-time tasks for employee job changes",
+  "displayName": "On Demand workflow move",
+  "isEnabled": true,
+  "isSchedulingEnabled": false,
+  "lastModifiedDateTime": "2025-01-09T15:28:24.0565594Z",
+  "createdDateTime": "2025-01-09T15:28:24.0565526Z",
+  "id": "465d0d08-3099-483f-9d93-16aad77bcd22",
+  "version": 1,
+  "administrationScopeTargets": [
+    {
+      "@odata.type": "#microsoft.graph.administrativeUnit",
+      "id": "4f9dc456-0574-4122-9e55-8b4cc494b27d"
+    },
+    {
+      "@odata.type": "#microsoft.graph.administrativeUnit",
+      "id": "2c987843-e9b1-4b1a-b924-ff1d2a9b054d"
+    }
+  ]
 }
 ```

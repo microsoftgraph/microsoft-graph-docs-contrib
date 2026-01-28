@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.subservice: "planner"
 doc_type: resourcePageType
-ms.date: 08/08/2024
+ms.date: 10/23/2025
 ---
 
 # plannerPlan resource type
@@ -30,21 +30,23 @@ Represents a plan in Microsoft 365. Either a [group](group.md) or a [user](user.
 |[List plan buckets](../api/plannerplan-list-buckets.md) |[plannerBucket](plannerbucket.md) collection| Get a **plannerBucket** object collection.|
 |[List plan tasks](../api/plannerplan-list-tasks.md) |[plannerTask](plannertask.md) collection| Get a **plannerTask** object collection.|
 |[Get delta](../api/plannerplan-delta.md) | [plannerPlan](../resources/plannerplan.md) collection | Get newly created, updated, or deleted **plannerPlan** objects in either a **group** or a [plannerRoster](plannerroster.md) type container without having to perform a full read of the entire resource collection. |
+|[Get usage rights](../api/plannerplan-getusagerights.md)|[planUsageRight](../resources/planusageright.md)|Get the usage rights for a specific [plan](../resources/plannerplan.md) based on its sensitivity label assignment and the requesting user's permissions.|
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |archivalInfo|[plannerArchivalInfo](../resources/plannerarchivalinfo.md)|Read-only. Nullable. Contains information about who archived or unarchived the plan and why.|
 |container|[plannerPlanContainer](../resources/plannerplancontainer.md)|Identifies the container of the plan. Either specify all properties, or specify only the **url**, the **containerId**, and **type**. After it's set, this property can’t be updated. It changes when a plan is moved from one container to another, using [plan move to container](../api/plannerplan-movetocontainer.md). Required.|
+|contentSensitivityLabelAssignment|[contentSensitivityLabelAssignment](contentsensitivitylabelassignment.md)|The sensitivity label assignment for the plan. Used to classify and protect the plan content based on organizational policies. This property is `null` if no sensitivity label is assigned. Optional.|
 |contexts|[plannerPlanContextCollection](plannerplancontextcollection.md)| Read-only. Other user experiences in which this plan is used, represented as [plannerPlanContext](plannerplancontext.md) entries.|
 |createdBy|[identitySet](identityset.md)|Read-only. The user who created the plan.|
 |createdDateTime|DateTimeOffset|Read-only. Date and time at which the plan is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|creationSource|[plannerPlanCreation](plannerplancreation.md)|  Contains information about the origin of the plan.|
 |id|String| Read-only. ID of the plan. It's 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
 |isArchived|Boolean|Read-only. If set to `true`, the plan is archived. An archived plan is read-only.|
 |title|String|Required. Title of the plan.|
-|creationSource|[plannerPlanCreation](plannerplancreation.md)|  Contains information about the origin of the plan.|
-|owner (deprecated) |String| Use the **container** property instead. ID of the [group](group.md) that owns the plan. After it's set, this property can’t be updated. This property doesn't return a valid group ID if the container of the plan isn't a group.|
 |sharedWithContainers|[plannerSharedWithContainer](plannersharedwithcontainer.md) collection|List of containers the plan is shared with.|
+|owner (deprecated) |String| Use the **container** property instead. ID of the [group](group.md) that owns the plan. After it's set, this property can’t be updated. This property doesn't return a valid group ID if the container of the plan isn't a group.|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -69,33 +71,17 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "contexts": {
-    "48#19%3Ad128c63941b24733951ea7defd81e550%40thread%2Eskype19%3Ad128c63941b24733951ea7defd81e550%40thread%2Eskype": {
-        "@odata.type": "#microsoft.graph.plannerPlanContext",
-        "associationType": "Board",
-        "createdDateTime": "2015-10-14T00:57:28.4698344Z",
-        "displayNameSegments": [
-            "Finance Team",
-            "Budget Plans"
-        ],
-        "ownerAppId": "5e3ce6c0-2b1f-4285-8d4b-75ee78787346"
-    }
-  },
+  "archivalInfo": {"@odata.type": "microsoft.graph.plannerArchivalInfo"},
+  "container": {"@odata.type": "microsoft.graph.plannerPlanContainer"},
+  "contentSensitivityLabelAssignment": {"@odata.type": "microsoft.graph.contentSensitivityLabelAssignment"},
+  "contexts": {"@odata.type": "microsoft.graph.plannerPlanContextCollection"},
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "creationSource": {"@odata.type": "#microsoft.graph.plannerPlanCreation"},
   "createdDateTime": "String (timestamp)",
+  "creationSource": {"@odata.type": "#microsoft.graph.plannerPlanCreation"},
   "id": "String (identifier)",
-  "container": {
-    "@odata.type": "microsoft.graph.plannerPlanContainer",
-    "url": "String",
-    "containerId": "String",
-    "type": "String"
-  },
-  "sharedWithContainers": [
-    {
-      "@odata.type": "microsoft.graph.plannerSharedWithContainer"
-    }
-  ],
+  "isArchived": "Boolean",
+  "owner": "String",
+  "sharedWithContainers": [{"@odata.type": "microsoft.graph.plannerSharedWithContainer"}],
   "title": "String"
 }
 ```

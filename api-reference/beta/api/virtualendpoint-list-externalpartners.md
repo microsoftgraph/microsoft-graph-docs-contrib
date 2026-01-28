@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /deviceManagement/virtualEndpoint/externalPartners
 ```
 
@@ -62,7 +62,7 @@ The following example shows a request.
   "name": "list_cloudpcexternalpartner_properties"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/externalPartners
 ```
 
@@ -101,7 +101,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.cloudPcExternalPartner)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -141,7 +141,7 @@ The following example shows a request.
   "name": "list_cloudpcexternalpartner_usingselect"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/externalPartners?$select=id,partnerId,enableConnection
 ```
 
@@ -180,7 +180,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.cloudPcExternalPartner)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

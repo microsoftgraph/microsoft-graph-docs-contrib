@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /education/reports/readingAssignmentSubmissions
 ```
 
@@ -67,7 +67,7 @@ The following example shows a request.
   "name": "get_readingassignmentsubmissions_1"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/reports/readingAssignmentSubmissions
 ```
 
@@ -112,7 +112,7 @@ The following example shows the default response from the last 24 hours.
   "@odata.type": "Collection(microsoft.graph.readingAssignmentSubmission)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -213,7 +213,7 @@ The following example shows a request.
   "name": "get_ReadingAssignmentSubmissions_2"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/reports/readingAssignmentSubmissions?$filter=submissionDateTime gt 2025-06-10T00:00:00.000Z and submissionDateTime lt 2025-06-11T00:00:00Z
 ```
 
@@ -258,7 +258,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.readingAssignmentSubmission)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

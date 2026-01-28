@@ -1,11 +1,11 @@
 ---
 title: "Update deployment"
 description: "Update the properties of a deployment object."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 09/16/2024
+ms.date: 01/27/2026
 ---
 
 # Update deployment
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /admin/windows/updates/deployments/{deploymentId}
 ```
 
@@ -71,7 +71,7 @@ The following example shows a request.
   "@odata.type": "microsoft.graph.windowsUpdates.deployment"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/admin/windows/updates/deployments/b5171742-1742-b517-4217-17b5421717b5
 Content-Type: application/json
 
@@ -124,7 +124,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.windowsUpdates.deployment"
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 
@@ -169,7 +169,7 @@ The following example shows a request.
   "@odata.type": "microsoft.graph.windowsUpdates.deployment"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/admin/windows/updates/deployments/b5171742-1742-b517-4217-17b5421717b5
 Content-Type: application/json
 
@@ -230,7 +230,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.windowsUpdates.deployment"
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 

@@ -40,6 +40,8 @@ items:
     href: toc/groups/toc.yml
   - name: Applications
     href: toc/applications/toc.yml
+  - name: Agents (preview)
+    href: toc/agents-(preview)/toc.yml
   - name: Backup storage
     href: toc/backup-storage/toc.yml
     displayName: M365 Backup Storage, Microsoft 365 Backup Storage, Enhanced Restore
@@ -110,6 +112,8 @@ items:
   - name: Teamwork and communications
     href: toc/teamwork-and-communications/toc.yml
     displayName: Microsoft Teams
+  - name: Tenant administration (preview)
+    href: toc/tenant-administration-(preview)/toc.yml
   - name: To-do tasks
     href: toc/to-do-tasks/toc.yml
     displayName: Microsoft To Do

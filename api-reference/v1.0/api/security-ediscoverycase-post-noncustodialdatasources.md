@@ -21,13 +21,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "security_ediscoverycase_post_noncustodialdatasources" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoverycase-post-noncustodialdatasources-permissions.md)]
 
+[!INCLUDE [rbac-rbac-ediscovery-custodian-apis](../includes/rbac-for-apis/rbac-ediscovery-custodian-export-apis.md)]
+
 ## HTTP request
 
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/noncustodialDataSources
 ```
 
@@ -66,7 +68,7 @@ Here's an example  of a request.
   "name": "create_ediscoverynoncustodialdatasource_ID_from"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/noncustodialDataSources
 Content-Type: application/json
 
@@ -119,7 +121,7 @@ Here's an example  of the response.
   "@odata.type": "microsoft.graph.security.ediscoveryNoncustodialDataSource"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

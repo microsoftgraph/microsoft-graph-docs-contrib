@@ -30,8 +30,8 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 |:---|:---|:---|
 |aaGuid|String|Authenticator Attestation GUID, an identifier that indicates the type (e.g. make and model) of the authenticator.|
 |attestationCertificates|String collection|The attestation certificate(s) attached to this security key.|
-|attestationLevel|attestationLevel|The attestation level of this FIDO2 security key. Possible values are: `attested`, or `notAttested`.|
-|createdDateTime|DateTimeOffset|The timestamp when this key was registered to the user.|
+|attestationLevel|attestationLevel|The attestation level of this FIDO2 security key. The possible values are: `attested`, or `notAttested`.|
+|createdDateTime|DateTimeOffset|The timestamp when this key was registered to the user. Inherited from [authenticationMethod](../resources/authenticationmethod.md).|
 |displayName|String|The display name of the key as given by the user.|
 |id|String|The authentication method identifier.|
 |model|String|The manufacturer-assigned model of the FIDO2 security key.|

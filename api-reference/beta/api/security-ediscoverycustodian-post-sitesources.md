@@ -22,6 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "security_ediscoverycustodian_post_sitesources" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoverycustodian-post-sitesources-permissions.md)]
+[!INCLUDE [rbac-rbac-ediscovery-custodian-export-apis](../includes/rbac-for-apis/rbac-ediscovery-custodian-export-apis.md)]
 
 ## HTTP request
 
@@ -29,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/{custodianId}/siteSources
 ```
 
@@ -64,7 +65,7 @@ The following example shows a request.
   "name": "create_sitesource_for_custodian"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/custodians/0053a61a3b6c42738f7606791716a22a/siteSources
 Content-Type: application/json
 
@@ -114,7 +115,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.siteSource"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

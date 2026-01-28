@@ -19,7 +19,7 @@ Adding a phone number makes it available for use in both Azure multi-factor auth
 
 Additionally, if a user is enabled by policy to use SMS sign-in and a `mobile` number is added, the system attempts to register the number for use in that system.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -56,7 +56,7 @@ In the request body, supply a JSON representation of a [phoneAuthenticationMetho
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |phoneNumber|String|The phone number to text or call for authentication. Phone numbers use the format `+{country code} {number}x{extension}`, with extension optional. For example, `+1 5555551234` or `+1 5555551234x123` are valid. Numbers are rejected when creating or updating if they don't match the required format.|
-|phoneType|String|Possible values are: `mobile`, `alternateMobile`, and `office`.|
+|phoneType|String|The possible values are: `mobile`, `alternateMobile`, and `office`.|
 
 ## Response
 

@@ -23,13 +23,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "security_ediscoveryreviewset_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoveryreviewset-update-permissions.md)]
 
+[!INCLUDE [rbac-ediscovery-reviewset](../includes/rbac-for-apis/rbac-ediscovery-reviewset-tag-apis.md)]
+
 ## HTTP request
 
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /security/cases/ediscoveryCases/{ediscoverycaseId}/reviewSets/{reviewSetId}
 ```
 
@@ -64,7 +66,7 @@ The following example shows a request that updates the review set name to `revie
   "name": "update_ediscoveryreviewset"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/security/cases/ff8b82a4-071c-43c7-b0f4-a2708a8736c0/reviewSets/a5658335-7242-4550-ad22-e57b443f7442
 Content-Type: application/json
 
@@ -83,6 +85,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

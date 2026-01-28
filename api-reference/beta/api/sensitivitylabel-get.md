@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get a sensitivity label available for the entire tenant.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -126,6 +126,7 @@ Content-Type: application/json
       "toolTip": "Apply this label to general non-public data.",
       "isEnabled": true,
       "isEndpointProtectionEnabled": true,
+      "hasProtection": true,
       "autoTooltip": "",
       "actionSource": "manual",
       "applicableTo": "email,teamwork,file",

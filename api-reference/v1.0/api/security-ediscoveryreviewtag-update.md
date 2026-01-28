@@ -12,8 +12,6 @@ ms.date: 06/10/2024
 # Update ediscoveryReviewTag
 Namespace: microsoft.graph.security
 
-
-
 Update the properties of an [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
@@ -24,13 +22,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "security_ediscoveryreviewtag_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoveryreviewtag-update-permissions.md)]
 
+[!INCLUDE [rbac-ediscovery-reviewset-apis](../includes/rbac-for-apis/rbac-ediscovery-reviewset-tag-apis.md)]
+
 ## HTTP request
 
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags/{ediscoveryReviewTagId}
 ```
 
@@ -42,14 +42,13 @@ PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags/{ediscoveryReviewT
 
 ## Request body
 
-
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Display name of the tag. Required.|
 |description|String|Description of the tag. Optional.|
 |childSelectability|microsoft.graph.security.childSelectability|This value controls whether the UX presents the tags as checkboxes or a radio button group. The possible values are: `One`, `Many`. Required.|
-
 
 ## Response
 
@@ -66,7 +65,7 @@ The following example shows a request.
   "name": "update_ediscoveryreviewtag"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/58399dff-cebe-478f-b1af-d3227f1fd645/tags/062de822f17a4a2e9b833aa3f6c37108
 
 {
@@ -113,7 +112,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 
 ```

@@ -25,16 +25,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
@@ -80,6 +80,7 @@ The following table shows the properties that are required when you create the [
 |expirationDateTime|DateTimeOffset|The expiration time.|
 |versionNumber|String|The version number of iOS Line of Business (LoB) app.|
 |buildNumber|String|The build number of iOS Line of Business (LoB) app.|
+|appleDeviceAppDeliveryProtocolType|[appleDeviceDeliveryProtocol](../resources/intune-apps-appledevicedeliveryprotocol.md)|The protocol used to deliver the app to the apple device(s). When the property is set to Declarative Device Management (DDM) protocol ('declarativeDeviceManagement') then it can no longer be modified or updated to 'mobileDeviceManagement' or 'default'. Default value is: 'default' which indicates Apple MDM protocol. Possible values are: `default`, `mobileDeviceManagement`, `declarativeDeviceManagement`, `unknownFutureValue`.|
 
 
 
@@ -90,10 +91,10 @@ If successful, this method returns a `200 OK` response code and an updated [iosL
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1540
+Content-length: 1607
 
 {
   "@odata.type": "#microsoft.graph.iosLobApp",
@@ -146,16 +147,17 @@ Content-length: 1540
   },
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "versionNumber": "Version Number value",
-  "buildNumber": "Build Number value"
+  "buildNumber": "Build Number value",
+  "appleDeviceAppDeliveryProtocolType": "mobileDeviceManagement"
 }
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1712
+Content-Length: 1779
 
 {
   "@odata.type": "#microsoft.graph.iosLobApp",
@@ -211,6 +213,7 @@ Content-Length: 1712
   },
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "versionNumber": "Version Number value",
-  "buildNumber": "Build Number value"
+  "buildNumber": "Build Number value",
+  "appleDeviceAppDeliveryProtocolType": "mobileDeviceManagement"
 }
 ```

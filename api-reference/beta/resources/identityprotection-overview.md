@@ -28,25 +28,27 @@ Use the following Microsoft Graph APIs to query user and service principal risks
     >[!CAUTION]
     >The **identityRiskEvents*- API was deprecated and stopped returning data on January 10, 2020. It was replaced by the [riskDetection](riskdetection.md) API. For more information about the deprecation, see [Deprecation of the identityRiskEvents API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
-- [riskyUsers](riskyuser.md) - Query Microsoft Graph for information about users that Microsoft Entra ID Protection detected as risky. User risk represents the probability that a given identity or account is compromised. These risks are calculated offline using Microsoft's internal and external threat intelligence sources, including security researchers, law enforcement professionals, security teams at Microsoft, and other trusted sources.
+- [riskyUsers](riskyuser.md) - Query Microsoft Graph for information about users that Microsoft Entra ID Protection detected as risky. User risk represents the probability that a given identity or account is compromised. These risks are calculated offline using Microsoft's internal and external threat intelligence sources.
 
   - APIs for manual remediation of risks by confirming a user as compromised or dismissing a risky user are also available.
 
-- [signIn](signin.md) - Query Microsoft Graph for information about sign-ins with specific properties related to risk state, detail, and level. A sign-in risk represents the probability that an identity owner didn't authorize a given authentication request. These risks can be calculated in real-time or calculated offline using Microsoft's internal and external threat intelligence sources, including security researchers, law enforcement professionals, security teams at Microsoft, and other trusted sources.
+- [signIn](signin.md) - Query Microsoft Graph for information about sign-ins with specific properties related to risk state, detail, and level. A sign-in risk represents the probability that an identity owner didn't authorize a given authentication request. These risks can be calculated in real-time or calculated offline using Microsoft's internal and external threat intelligence sources.
 
 ## For service principals
 
 - [servicePrincipalRiskDetection](serviceprincipalriskdetection.md) - Query Microsoft Graph for a list of service principal risk detections and associated information about the detections. Risk detections in Microsoft Entra ID Protection include any identified suspicious actions related to service principal accounts in the directory.
 
-- [riskyServicePrincipals](riskyserviceprincipal.md) - Query Microsoft Graph for information about service principals that Microsoft Entra ID Protection detected as risky. Service principal risk represents the probability that a given identity or account is compromised. These risks are calculated asynchronously using data and patterns from Microsoft's internal and external threat intelligence sources, including security researchers, law enforcement professionals, security teams at Microsoft, and other trusted sources.
+- [riskyServicePrincipals](riskyserviceprincipal.md) - Query Microsoft Graph for information about service principals that Microsoft Entra ID Protection detected as risky. Service principal risk represents the probability that a given identity or account is compromised. These risks are calculated asynchronously using data and patterns from Microsoft's internal and external threat intelligence sources.
 
   - APIs for manual remediation of risks by confirming a service principal as compromised or dismissing a risky service principal are also available.
- 
-## Integration with fraud protection providers to prevent fake account signups
 
-Microsoft Entra External ID supports integration with third-party fraud protection providers, such as Arkose Labs and HUMAN Security, to help prevent fake account sign-ups and bot attacks. These providers offer comprehensive fraud protection solutions that enable organizations to detect and block automated attacks, such as bot-driven registrations, during the user sign-up process.
+## For agents
 
-Using the [fraudProtectionProvider](../resources/fraudProtectionProvider.md) resource type and its associated APIs to manage the integration to these providers, and the [onFraudProtectionLoadStartListener](../resources/onFraudProtectionLoadStartListener.md) to link the protection with your apps.
+- [agentRiskDetection](agentriskdetection.md) - Query Microsoft Graph for a list of agent risk detections and associated information about the detections. Risk detections in Microsoft Entra ID Protection include any identified suspicious actions related to agent accounts in the directory.
+
+- [riskyAgents](riskyagent.md) - Query Microsoft Graph for information about agents that Microsoft Entra ID Protection detected as risky. Agent risk represents the probability that a given identity or account is compromised. These risks are calculated asynchronously using data and patterns from Microsoft's internal and external threat intelligence sources.
+
+  - APIs for manual remediation of risks by confirming an agent as compromised or dismissing a risky agent are also available.
 
 ## Automatic remediation of risks
 

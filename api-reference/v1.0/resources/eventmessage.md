@@ -12,7 +12,7 @@ ms.date: 08/23/2024
 
 Namespace: microsoft.graph
 
-A message that represents a meeting request, cancellation, or response. Possible values are: `acceptance`, `tentative acceptance`, or `decline`.
+A message that represents a meeting request, cancellation, or response. The possible values are: `acceptance`, `tentative acceptance`, or `decline`.
 
 The **eventMessage** entity is derived from [message](message.md). **eventMessage** is the base type for [eventMessageRequest](eventmessagerequest.md) and [eventMessageResponse](eventmessageresponse.md). The **meetingMessageType** property identifies the type of the event message.
 

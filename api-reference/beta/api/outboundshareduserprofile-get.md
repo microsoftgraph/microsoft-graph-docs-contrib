@@ -37,7 +37,7 @@ A user can retrieve their own [outboundSharedUserProfile](../resources/outbounds
 }
 -->
 
-``` http
+```http
 GET /directory/outboundSharedUserProfiles/{userId}
 ```
 
@@ -66,7 +66,7 @@ If successful, this method returns a `200 OK` response code and a [outboundShare
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/directory/outboundSharedUserProfiles/c228b2ae-c4fb-4eda-9620-7e73dddd1cac
 ```
 
@@ -109,7 +109,7 @@ GET https://graph.microsoft.com/beta/directory/outboundSharedUserProfiles/c228b2
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

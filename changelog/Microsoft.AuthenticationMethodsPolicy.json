@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "a1b2c3d4-5e6f-7890-abcd-ef1234567890",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationMethod",
+          "ChangeType": "Change",
+          "Description": "Added multi-factor authentication (MFA) requirement for self-service operations for supported authentication methods. Starting January 26, 2026, users who manage their own authentication methods through self-service operations, such as adding, updating, or deleting phone numbers and email addresses, must complete multifactor authentication (MFA) if they last authenticated more than 10 minutes ago in the current session. For more guidance on handling this change in your application, see [Microsoft Entra authentication methods API overview](https://learn.microsoft.com/en-us/graph/api/resources/authenticationmethods-overview?view=graph-rest-1.0).",
+          "Target": "authenticationMethod"
+        }
+      ],
+      "Id": "a1b2c3d4-5e6f-7890-abcd-ef1234567890",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-01-26T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "799131f4-3b4c-4f47-a100-a173117b0f96",
           "ApiChange": "Resource",
           "ChangedApiName": "x509CertificateAuthorityScope",
@@ -915,6 +933,90 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-04-24T21:15:06.8370991Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "04a25de5-d4f1-4e01-994a-bc226a8302bd",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "attestationEnforcement",
+          "ChangeType": "Addition",
+          "Description": "Added the **attestationEnforcement** enumeration type.",
+          "Target": "attestationEnforcement"
+        },
+        {
+          "Id": "04a25de5-d4f1-4e01-994a-bc226a8302bd",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "passkeyTypes",
+          "ChangeType": "Addition",
+          "Description": "Added the **passkeyTypes** enumeration type.",
+          "Target": "passkeyTypes"
+        },
+        {
+          "Id": "04a25de5-d4f1-4e01-994a-bc226a8302bd",
+          "ApiChange": "Property",
+          "ChangedApiName": "defaultPasskeyProfile",
+          "ChangeType": "Addition",
+          "Description": "Added the **defaultPasskeyProfile** property to the [fido2AuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/fido2AuthenticationMethodConfiguration?view=graph-rest-beta) resource.",
+          "Target": "fido2AuthenticationMethodConfiguration"
+        },
+        {
+          "Id": "04a25de5-d4f1-4e01-994a-bc226a8302bd",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "passkeyProfiles",
+          "ChangeType": "Addition",
+          "Description": "Added the **passkeyProfiles** relationship to the [fido2AuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/fido2AuthenticationMethodConfiguration?view=graph-rest-beta) resource.",
+          "Target": "fido2AuthenticationMethodConfiguration"
+        },
+        {
+          "Id": "04a25de5-d4f1-4e01-994a-bc226a8302bd",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedPasskeyProfiles",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowedPasskeyProfiles** property to the [passkeyAuthenticationMethodTarget](https://learn.microsoft.com/en-us/graph/api/resources/passkeyAuthenticationMethodTarget?view=graph-rest-beta) resource.",
+          "Target": "passkeyAuthenticationMethodTarget"
+        },
+        {
+          "Id": "04a25de5-d4f1-4e01-994a-bc226a8302bd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "passkeyProfile",
+          "ChangeType": "Addition",
+          "Description": "Added the [passkeyProfile](https://learn.microsoft.com/en-us/graph/api/resources/passkeyProfile?view=graph-rest-beta) resource.",
+          "Target": "passkeyProfile"
+        }
+      ],
+      "Id": "04a25de5-d4f1-4e01-994a-bc226a8302bd",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-18T21:09:42.1591906Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+       "ChangeList": [
+         {
+          "Id": "6ce1df57-2f89-4556-b0f0-f99d3429cf83",
+          "ApiChange": "Resource",
+          "ChangedApiName": "verifiableCredentialAuthenticationMethodTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [verifiableCredentialAuthenticationMethodTarget](https://learn.microsoft.com/en-us/graph/api/resources/verifiableCredentialAuthenticationMethodTarget?view=graph-rest-beta) resource.",
+          "Target": "verifiableCredentialAuthenticationMethodTarget"
+        },
+        {
+          "Id": "6ce1df57-2f89-4556-b0f0-f99d3429cf83",
+          "ApiChange": "Resource",
+          "ChangedApiName": "verifiableCredentialsAuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [verifiableCredentialsAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/verifiableCredentialsAuthenticationMethodConfiguration?view=graph-rest-beta) resource.",
+          "Target": "verifiableCredentialsAuthenticationMethodConfiguration"
+        }
+      ],
+      "Id": "6ce1df57-2f89-4556-b0f0-f99d3429cf83",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-10T17:22:50.6059662Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     }

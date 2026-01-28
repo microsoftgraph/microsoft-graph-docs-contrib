@@ -1,11 +1,11 @@
 ---
 title: "resourceConnection resource type"
 description: "Represents connections to external resources from which more specialized connections are derived."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: resourcePageType
-ms.date: 09/16/2024
+ms.date: 01/27/2026
 ---
 
 # resourceConnection resource type

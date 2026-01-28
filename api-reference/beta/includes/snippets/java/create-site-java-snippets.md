@@ -11,15 +11,13 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 Site site = new Site();
 site.setName("Communication Site Test");
 site.setWebUrl("https://contoso.sharepoint.com/sites/commsite1");
+site.setLocale("en-US");
+site.setShareByEmailEnabled(false);
 site.setDescription("Test Site Description");
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
-additionalData.put("locale", "en-US");
-additionalData.put("shareByEmailEnabled", false);
-additionalData.put("template", "sitepagepublishing");
- ownerIdentityToResolve = new ();
+site.setTemplate(SiteTemplateType.Sitepagepublishing);
+IdentityInput ownerIdentityToResolve = new IdentityInput();
 ownerIdentityToResolve.setEmail("ryan@contoso.com");
-additionalData.put("ownerIdentityToResolve", ownerIdentityToResolve);
-site.setAdditionalData(additionalData);
+site.setOwnerIdentityToResolve(ownerIdentityToResolve);
 Site result = graphClient.sites().post(site);
 
 

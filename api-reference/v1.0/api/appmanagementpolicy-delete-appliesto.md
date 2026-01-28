@@ -122,7 +122,7 @@ The following example shows a request to remove an appManagementPolicy from a se
   "name": "remove_appliesTo_e2"
 }-->
 
-``` http
+```http
 DELETE https://graph.microsoft.com/v1.0/servicePrincipals/f284860e-368c-4a1f-8894-77f0a9676fb3/appManagementPolicies/15942288-d19b-458c-9be4-20377d0a2435/$ref
 ```
 

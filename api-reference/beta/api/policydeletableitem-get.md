@@ -61,7 +61,7 @@ Get a deleted **crossTenantAccessPolicyConfigurationPartner** object:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /policies/deletedItems/crossTenantPartners/{id}
 ```
 
@@ -70,7 +70,7 @@ Get a deleted **crossTenantIdentitySyncPolicyPartner** object:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /policies/deletedItems/crossTenantSyncPolicyPartners/{id}
 ```
 
@@ -79,7 +79,7 @@ Get a deleted **conditionalAccessPolicy** object:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identity/conditionalAccess/deletedItems/policies/{id}
 ```
 
@@ -88,7 +88,7 @@ Get a deleted **namedLocation** object:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identity/conditionalAccess/deletedItems/namedLocations/{id}
 ```
 

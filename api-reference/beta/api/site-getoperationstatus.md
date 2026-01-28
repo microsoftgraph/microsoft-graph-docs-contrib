@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get the status of a SharePoint [site](../resources/site.md) creation operation to monitor its progress.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -99,10 +99,6 @@ GET https://graph.microsoft.com/beta/sites/getOperationStatus(operationId='JXMna
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/sitethisgetoperationstatus-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/sitethisgetoperationstatus-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

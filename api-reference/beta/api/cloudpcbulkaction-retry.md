@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 POST /deviceManagement/virtualEndpoint/bulkAction/{id}/retry
 ```
 
@@ -68,7 +68,7 @@ The following example shows a request.
   "name": "cloudpcbulkaction_retry"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/bulkAction/0d76d02b-e0a0-4f58-baff-d1718cc2d144/retry
 Content-Type: application/json
 
@@ -90,6 +90,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 ```

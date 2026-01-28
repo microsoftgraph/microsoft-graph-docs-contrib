@@ -23,13 +23,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "security_ediscoverycase_delete_tags" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoverycase-delete-tags-permissions.md)]
 
+[!INCLUDE [rbac-ediscovery-reviewset](../includes/rbac-for-apis/rbac-ediscovery-reviewset-tag-apis.md)]
+
 ## HTTP request
 
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags/{tagId}
 ```
 
@@ -56,7 +58,7 @@ The following example shows a request.
   "name": "delete_parent_from_ediscoveryreviewtag"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/58399dff-cebe-478f-b1af-d3227f1fd645/tags/d05c2ef9369d49c293b5a6a6d18a5fd9
 ```
 
@@ -98,7 +100,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

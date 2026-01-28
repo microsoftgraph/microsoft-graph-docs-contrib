@@ -32,12 +32,13 @@ For the list of supported methods, see [place](./place.md).
 |label |String |User-defined description of the **floor**. Inherited from [place](./place.md).|
 |parentId|String|The ID of a parent [building](./building.md). Inherited from [place](./place.md).|
 |phone|String|The phone number of the **floor**. Inherited from [place](./place.md).|
-|placeId|String|An alternate immutable unique identifier of the **floor**. Read-only. Inherited from [place](./place.md).|
 |sortOrder|Int32|Specifies the sort order of the **floor**. For example, a floor might be named "Lobby" with a sort order of `0` to show this floor first in ordered lists. |
 |tags|String collection|Custom tags that are associated with the **floor** for categorization or filtering. Inherited from [place](./place.md).|
 
 ## Relationships
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|children|[place](../resources/place.md) collection|A collection of child places that is only used in the [Upsert places](../api/place-patch-places.md) API. The children of a floor can be of type [section](../resources/section.md) or [room](../resources/room.md). Inherited from [place](../resources/place.md).|
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -60,7 +61,6 @@ The following JSON representation shows the resource type.
   "label": "String",
   "parentId": "String",
   "phone": "String",
-  "placeId": "String",
   "sortOrder": "Int32",
   "tags": ["String"]
 }

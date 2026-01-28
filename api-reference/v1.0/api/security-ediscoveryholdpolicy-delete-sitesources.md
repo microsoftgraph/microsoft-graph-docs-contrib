@@ -23,13 +23,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "security_ediscoveryholdpolicy_delete_sitesources" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoveryholdpolicy-delete-sitesources-permissions.md)]
 
+[!INCLUDE [rbac-ediscovery-write](../includes/rbac-for-apis/rbac-ediscovery-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryHoldPolicyId}/siteSources/{siteSourceId}
 ```
 
@@ -57,7 +59,7 @@ The following example shows a request.
   "name": "delete_ediscoveryholdpolicy_sitesource"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/4c551bc5-f6f8-435c-8391-d1a08f1ffd5b/legalHolds/2114ada2-3958-4945-bb6e-66fe9fca4772/siteSources/08345ae2-bc5a-4d71-a18b-c490993959ee
 ```
 
@@ -70,6 +72,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

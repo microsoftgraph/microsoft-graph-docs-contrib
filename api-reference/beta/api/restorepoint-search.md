@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /solutions/backupRestore/restorePoints/search
 ```
 
@@ -86,7 +86,7 @@ The following example shows a request.
   "name": "restorepoint_search"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/restorePoints/search
 Content-Type: application/json
 
@@ -141,7 +141,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.restorePointSearchResponse"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -211,7 +211,7 @@ The following example shows a request.
   "name": "restorepoint_search_artifactquery"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/restorePoints/search
 Content-Type: application/json
 
@@ -268,7 +268,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.restorePointSearchResponse"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

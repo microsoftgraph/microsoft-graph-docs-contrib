@@ -16,7 +16,7 @@ Namespace: microsoft.graph.identityGovernance
 
 Run a [workflow](../resources/identitygovernance-workflow.md) object on-demand with a specific scope. You can run any workflow on-demand, including scheduled workflows. Workflows created from the "Real-time employee termination" template are run on-demand only. When you run a workflow on demand, the tasks are executed regardless of whether the user state matches the scope and trigger execution conditions.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/activatewithscope
 ```
 
@@ -70,7 +70,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_workflowthis.activatescope"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/14879e66-9ea9-48d0-804d-8fea672d0341/activatewithscope
 Content-Type: application/json
 
@@ -111,6 +111,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

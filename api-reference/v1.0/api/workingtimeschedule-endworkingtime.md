@@ -12,8 +12,6 @@ ms.date: 09/18/2024
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Trigger the policies associated with the end of working hours for a specific user.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -31,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /users/{userId}/solutions/workingTimeSchedule/endWorkingTime
 ```
 
@@ -66,8 +64,8 @@ The following example shows a request.
   "name": "workingtimeschedulethis.endworkingtime"
 }
 -->
-``` http
-POST https://graph.microsoft.com/beta/users/ccdf8279-8a3f-4c10-af1a-4a7f46b1489f/solutions/workingTimeSchedule/endWorkingTime
+```http
+POST https://graph.microsoft.com/v1.0/users/ccdf8279-8a3f-4c10-af1a-4a7f46b1489f/solutions/workingTimeSchedule/endWorkingTime
 ```
 
 # [C#](#tab/csharp)
@@ -105,6 +103,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 ```

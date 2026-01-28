@@ -12,16 +12,12 @@ ms.date: 03/22/2024
 
 Namespace: microsoft.graph
 
-Represents a room in a tenant. 
+Represents a room within a tenant. A room can be added to a [floor](./floor.md) or to a [section](./section.md).
 
-In Exchange Online, each room is associated with a room mailbox. Derived from [place](place.md).
+Inherits from [place](./place.md).
 
 ## Methods
-
-| Method                              | Return Type                  | Description |
-|:------------------------------------|:-----------------------------|:--------|
-| [List places](../api/place-list.md) | A collection of the requested, derived type of [place](place.md) | Get a collection of the specified type of **place** object defined in the tenant. For example, you can get all the rooms, all the room lists, or the rooms in a specific room list in the tenant. |
-| [Get place](../api/place-get.md)    | The requested, derived type of [place](place.md)            | Get the properties and relationships of the specified **place** object, such as a room. |
+For the list of supported methods, see [place](./place.md).
 
 ## Properties
 
@@ -29,7 +25,7 @@ In Exchange Online, each room is associated with a room mailbox. Derived from [p
 |:-----------------------|:--------------------------------------------------|:--|
 | address                | [physicalAddress](physicaladdress.md)             | The street address of the room. |
 | audioDeviceName        | String                                            | Specifies the name of the audio device in the room. |
-| bookingType            | [bookingType](#bookingtype-values)                | Type of room. Possible values are `standard`, and `reserved`. |
+| bookingType            | [bookingType](#bookingtype-values)                | Type of room. Possible values are: `unknown`, `standard`, `reserved`. |
 | building               | String                                            | Specifies the building name or building number that the room is in. |
 | capacity               | Int32                                             | Specifies the capacity of the room. |
 | displayDeviceName      | String                                            | Specifies the name of the display device in the room. |
@@ -38,18 +34,22 @@ In Exchange Online, each room is associated with a room mailbox. Derived from [p
 | floorLabel             | String                                            | Specifies a descriptive label for the floor, for example, P. |
 | floorNumber            | Int32                                             | Specifies the floor number that the room is on. |
 | geoCoordinates         | [outlookGeoCoordinates](outlookgeocoordinates.md) | Specifies the room location in latitude, longitude, and optionally, altitude coordinates. |
-| id                     | String                                            | Unique identifier for the room. Read-only. This identifier isn't immutable and can change if there are changes to the mailbox or the tenant configuration. The beta version of this API has a new property added called **placeId**, which provides an immutable ID. |
-| isWheelChairAccessible | Boolean                                           | Specifies whether the room is wheelchair accessible. |
-| label                  | String                                            | Specifies a descriptive label for the room, for example, a number or name. |
+|id |String |The unique identifier for the **room**. Read-only. This identifier isn't immutable and can change if the mailbox or tenant configuration changes. Inherited from [place](./place.md).|
+| isWheelChairAccessible | Boolean                                           | Specifies whether the room is wheelchair accessible. Inherited from [place](./place.md). |
+| label                  | String                                            | Specifies a descriptive label for the room, for example, a number or name. Inherited from [place](./place.md). |
 | nickname               | String                                            | Specifies a nickname for the room, for example, "conf room". |
+| parentId |String | The ID of a parent [floor](./floor.md) or [section](./section.md). Inherited from [place](./place.md). |
 | phone                  | String                                            | The phone number of the room. |
-| tags                   | String collection                                 | Specifies other features of the room, for example, details like the type of view or furniture type. |
+| placeId |String | An alternative immutable unique identifier of the **room**. Read-only. |
+| tags | String collection | Specifies other features of the room, for example, details like the type of view or furniture type. Inherited from [place](./place.md). |
+|teamsEnabledState |placeFeatureEnablement |A state that indicates whether the **room** is enabled for Microsoft Teams. The possible values are: `unknown`, `enabled`, `disabled`, `unknownFutureValue`.|
 | videoDeviceName        | String                                            | Specifies the name of the video device in the room. |
 
 ### bookingType values
 
 | Value    | Description                                               |
 |:---------|:----------------------------------------------------------|
+| unknown  | Unspecified booking behavior. We don't recommend that you use this value. |
 | reserved | The room is available only on a first-come, first-served basis. It can't be reserved.|
 | standard | The room is available and can be reserved. This value is the default. |
 
@@ -86,8 +86,11 @@ The following JSON representation shows the resource type.
   "isWheelChairAccessible": true,
   "label": "String",
   "nickname": "String",
+  "parentId": "String",
   "phone": "String",
+  "placeId": "String (alternative identifier)",
   "tags": ["String"],
+  "teamsEnabledState": "String",
   "videoDeviceName": "String"
 }
 ```

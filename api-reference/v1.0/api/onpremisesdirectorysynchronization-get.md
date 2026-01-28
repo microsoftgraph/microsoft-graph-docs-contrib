@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /directory/onPremisesSynchronization
 ```
 
@@ -68,8 +68,8 @@ The following example shows a request.
   "name": "get_onpremisesdirectorysynchronization"
 }
 -->
-``` http
-GET https://graph.microsoft.com/beta/directory/onPremisesSynchronization/{id}
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/directory/onPremisesSynchronization/{id}
 ```
 
 # [C#](#tab/csharp)
@@ -112,12 +112,12 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.onPremisesDirectorySynchronization"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/onPremisesSynchronization/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directory/onPremisesSynchronization/$entity",
   "id": "12cce4b4-4ab8-40b7-be4d-f5d7742ec185",
   "configuration": {
     "accidentalDeletionPrevention": {

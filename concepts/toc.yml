@@ -45,10 +45,6 @@ items:
       displayName: monetize, charge, cost, pricing
     - name: List of metered APIs
       href: metered-api-list.md
-  - name: Usage quotas
-    items:
-    - name: Usage quotas (preview)
-      href: usage-quotas.md
   - name: What's new
     href: whats-new-overview.md
     displayName: what's new, updates
@@ -245,6 +241,16 @@ items:
       href: toolkit/upgrade.md
   - name: Deploy in IaC with templates
     href: /graph/templates?toc=/graph/toc.json
+  - name: Use the MCP Server for Enterprise
+    items:
+    - name: Overview
+      href: mcp-server/overview.md
+    - name: Get started
+      href: mcp-server/get-started.md
+    - name: Sample prompts
+      href: mcp-server/mcp-server-sample-prompts.md
+    - name: Explore the repository
+      href: https://github.com/mcp/microsoft/EnterpriseMCP
 - name: Services and features
   expanded: true
   items:
@@ -342,6 +348,8 @@ items:
     items:
     - name: Overview
       href: backup-storage-concept-overview.md
+    - name: Managing information barriers for file storage containers
+      href: information-barrier-for-file-storage-containers.md
     - name: Error codes
       href: backup-storage-error-codes.md
   - name: Calendar
@@ -373,6 +381,8 @@ items:
       href: outlook-immutable-id.md
     - name: Subscribe to change notifications
       href: outlook-change-notifications-overview.md
+    - name: Upsert places
+      href: places-upsert-overview.md
   - name: Compliance
     href: compliance-concept-overview.md
   - name: Cross-device experiences
@@ -866,6 +876,10 @@ items:
     - name: Overview
       href: teams-concept-overview.md
       displayName: teams, team, teamwork, Microsoft Teams
+    - name: Channel
+      items:
+      - name: Managing channel memberships
+        href: manage-channel-memberships.md
     - name: Messaging APIs
       items:
       - name: Working with Microsoft Teams messaging
@@ -954,6 +968,26 @@ items:
       href: teams-licenses.md
     - name: Implementation differences in national clouds
       href: teamwork-national-cloud-differences.md
+  - name: Tenant administration (preview)
+    items:
+    - name: Configuration management
+      items:
+      - name: Overview
+        href: unified-tenant-configuration-management-concept-overview.md
+      - name: Set up authentication
+        href: utcm-authentication-setup.md
+      - name: Supported resources
+        items:
+        - name: Entra resources
+          href: utcm-entra-resources.md
+        - name: Exchange resources
+          href: utcm-exchange-resources.md
+        - name: Intune resources
+          href: utcm-intune-resources.md
+        - name: Security and Compliance resources
+          href: utcm-securityandcompliance-resources.md
+        - name: Teams resources
+          href: utcm-teams-resources.md
   - name: To-do tasks
     displayName: Microsoft To Do
     items:

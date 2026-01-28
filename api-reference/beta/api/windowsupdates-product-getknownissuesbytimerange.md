@@ -1,11 +1,11 @@
 ---
 title: "product: getKnownIssuesByTimeRange"
 description: "Get known issues related to a particular product based on a specified timeframe in the past."
-author: "skandula"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 10/30/2024
+ms.date: 01/27/2026
 ---
 
 # product: getKnownIssuesByTimeRange
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /admin/windows/updates/products/{id}/GetKnownIssuesByTimeRange(daysInPast={daysInPast},includeAllActive={includeAllActive})
 ```
 
@@ -71,7 +71,7 @@ The following example shows a request.
   "sampleKeys": ["1"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/windows/updates/products/1/GetKnownIssuesByTimeRange(daysInPast=70,includeAllActive=false)
 ```
 
@@ -117,7 +117,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.windowsUpdates.knownIssue)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

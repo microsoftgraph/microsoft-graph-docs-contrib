@@ -19,7 +19,7 @@ Contains additional properties about the participant identity
 | Property       | Type                          | Description                                                                                                                                                |
 |:---------------|:------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | countryCode    | String                        | The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call. Read-only.                             |
-| endpointType   | String                        | The type of endpoint the participant is using. Possible values are: `default`, `skypeForBusiness`, or `skypeForBusinessVoipPhone`. Read-only.              |
+| endpointType   | String                        | The type of endpoint the participant is using. The possible values are: `default`, `skypeForBusiness`, or `skypeForBusinessVoipPhone`. Read-only.              |
 | identity       | [identitySet](identityset.md) | The [identitySet](identityset.md) associated with this participant. Read-only.                                                                             |
 | languageId     | String                        | The language culture string. Read-only.                                                                                                                    |
 | participantId    | String                          | The participant ID of the participant. Read-only.    |

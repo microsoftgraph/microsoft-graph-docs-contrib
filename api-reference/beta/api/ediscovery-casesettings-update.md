@@ -14,6 +14,8 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [ediscovery-deprecation](../includes/ediscovery-subnamespace-deprecation.md)]
+
 Update the properties of a an eDiscovery [caseSettings](../resources/ediscovery-caseSettings.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -32,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 PATCH /compliance/ediscovery/cases/{caseId}/settings
 ```
 
@@ -62,7 +64,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/settings
 Content-Type: application/json
 
@@ -125,7 +127,7 @@ Content-Type: application/json
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 cache-control: no-cache
 client-request-id: e9fc7554-ca5e-0928-fc09-9c5825820c88

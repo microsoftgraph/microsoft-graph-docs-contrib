@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Computes the rights and inheritance for sensitivity labels based on the input content and labels.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/dataSecurityAndGovernance/sensitivityLabels/computeRightsAndInheritance
 ```
 
@@ -70,7 +70,7 @@ The following example shows a request.
   "name": "sensitivitylabelthis.computerightsandinheritance"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/dataSecurityAndGovernance/sensitivityLabels/computeRightsAndInheritance
 Content-Type: application/json
 
@@ -128,7 +128,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.computeRightsAndInheritanceResult"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -1,11 +1,11 @@
 ---
 title: "Delete operationalInsightsConnection"
 description: "Delete an operationalInsightsConnection object."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 08/31/2024
+ms.date: 01/27/2026
 ---
 
 # Delete operationalInsightsConnection
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /admin/windows/updates/resourceConnections/{operationalInsightsConnectionId}
 ```
 
@@ -58,7 +58,7 @@ The following example shows a request.
   "name": "delete_operationalinsightsconnection"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/admin/windows/updates/resourceConnections/fbb71b85-4173-0bf6-d2bc-ee7921b80cb0
 ```
 
@@ -99,7 +99,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
