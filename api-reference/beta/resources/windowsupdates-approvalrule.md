@@ -2,7 +2,7 @@
 title: "approvalRule resource type"
 description: "An abstract type that represents an entity that governs the overall Windows update approval deployment rules."
 author: "andredm7"
-ms.date: 01/20/2026
+ms.date: 01/27/2026
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: resourcePageType

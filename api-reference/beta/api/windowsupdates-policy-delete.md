@@ -2,7 +2,7 @@
 title: "Delete policy"
 description: "Delete a Windows update policy object."
 author: "andredm7"
-ms.date: 01/16/2026
+ms.date: 01/27/2026
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: apiPageType

@@ -2,7 +2,7 @@
 title: "Get policyApproval"
 description: "Read the properties and relationships of a policyApproval object."
 author: "andredm7"
-ms.date: 01/16/2026
+ms.date: 01/27/2026
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: apiPageType

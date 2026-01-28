@@ -1,11 +1,11 @@
 ---
 title: "qualityUpdateCveSeverityInformation resource type"
 description: "Represents the summary of severity information regarding the Common Vulnerabilities and Exposures (CVEs) addressed by a quality update."
-author: "angiechen22"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: resourcePageType
-ms.date: 09/16/2024
+ms.date: 01/27/2026
 ---
 
 # qualityUpdateCveSeverityInformation resource type

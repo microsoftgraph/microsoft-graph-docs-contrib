@@ -3,7 +3,7 @@ title: Manage Microsoft Entra identity and network access by using Microsoft Gra
 description: Manage Microsoft Entra identity and network access by using Microsoft Graph
 author: FaithOmbongi
 ms.author: ombongifaith
-ms.date: 12/01/2025
+ms.date: 01/26/2026
 ms.topic: include
 ms.subservice: entra-id
 ---
@@ -58,7 +58,7 @@ A core functionality of identity and access management is managing your tenant c
 > | Manage the profile objects for external users that you're invited to collaborate via Teams. These APIs aren't similar to the invitation APIs for Microsoft Entra External ID B2B collaboration :::image type="content" source="/graph/images/preview-label.png" alt-text="Available on beta only.":::| [externalUserProfile](/graph/api/resources/externaluserprofile) and [pendingExternalUserProfile](/graph/api/resources/externaluserprofile) and their associated APIs |
 > | Configure and manage staged rollout of specific Microsoft Entra ID features | [featureRolloutPolicy](/graph/api/resources/featurerolloutpolicy) and its associated APIs |
 > | Monitor licenses and subscriptions for the tenant | <ul><li> [companySubscription](/graph/api/resources/companysubscription) and its associated APIs   <li> [subscribedSku](/graph/api/resources/subscribedsku) and its associated APIs</ul> |
-> | Manage the policies for Mobile Device Management (MDM) and Mobile Application Management (MAM) autoenrollment for Microsoft Entra joined and registered devices :::image type="content" source="/graph/images/preview-label.png" alt-text="Available on beta only."::: | The following resources and their associated APIs: <ul><li>[mobileAppManagementPolicy](/graph/api/resources/mobileappmanagementpolicy) <li>>[mobileDeviceManagementPolicy](/graph/api/resources/mobiledevicemanagementpolicy)</ul>>  |
+> | Manage the policies for Mobile Device Management (MDM) and Mobile Application Management (MAM) autoenrollment for Microsoft Entra joined and registered devices :::image type="content" source="/graph/images/preview-label.png" alt-text="Available on beta only."::: | The following resources and their associated APIs: <ul><li>[mobileAppManagementPolicy](/graph/api/resources/mobileappmanagementpolicy) <li>[mobileDeviceManagementPolicy](/graph/api/resources/mobiledevicemanagementpolicy)</ul>  |
 > | Configure options that are available in Microsoft Entra Cloud Sync such as preventing accidental deletions and managing group writebacks. | [onPremisesDirectorySynchronization](/graph/api/resources/onpremisesdirectorysynchronization) and its associated APIs |
 > | Manage synchronization settings for directory objects such as users, groups, and organizational contacts between on-premises Active Directory and the cloud :::image type="content" source="/graph/images/preview-label.png" alt-text="Available on beta only."::: | [onPremisesSyncBehavior](/graph/api/resources/onpremisessyncbehavior) and its associated APIs |
 > | Manage the base settings for your Microsoft Entra tenant | [organization](/graph/api/resources/organization) and its associated APIs |
@@ -122,8 +122,8 @@ The following API use cases are supported to customize how users interact with y
 > | Sign in with an alias or username :::image type="content" source="/graph/images/preview-label.png" alt-text="Available on beta only.":::| [signInIdentifierBase](/graph/api/resources/signinidentifierbase) and its associated APIs |
 > | Manage user profiles in Microsoft Entra External ID for customers | For more information, see [Default user permissions in customer tenants](/graph/api/resources/users#default-user-permissions-in-customer-tenants) |
 > | Add your own business logic to the authentication experiences by integrating with systems that are external to Microsoft Entra ID| [authenticationEventListener](/graph/api/resources/authenticationeventlistener) and [customAuthenticationExtension](/graph/api/resources/customauthenticationextension) and their associated APIs |
-> | Integrate with fraud protection providers to prevent fake account sign-ups and bot attacks during the user sign-up process. Supported providers include Arkose Labs and HUMAN Security :::image type="content" source="/graph/images/preview-label.png" alt-text="Available on beta only."::: | [fraudProtectionProvider](/graph/api/resources/fraudprotectionprovider) and [onFraudProtectionLoadStartListener](/graph/api/resources/onfraudprotectionloadstartlistener) and their associated APIs |
-> | Integrate with Web Application Firewall providers such as Akamai and Cloudflare :::image type="content" source="/graph/images/preview-label.png" alt-text="Available on beta only."::: | [webApplicationFirewallProvider](/graph/api/resources/webapplicationfirewallprovider) and its associated APIs |
+> | Integrate with fraud protection providers to prevent fake account sign-ups and bot attacks during the user sign-up process. Supported providers include Arkose Labs and HUMAN Security | [fraudProtectionProvider](/graph/api/resources/fraudprotectionprovider) and [onFraudProtectionLoadStartListener](/graph/api/resources/onfraudprotectionloadstartlistener) and their associated APIs |
+> | Integrate with Web Application Firewall providers such as Akamai and Cloudflare | [webApplicationFirewallProvider](/graph/api/resources/webapplicationfirewallprovider) and its associated APIs |
 
 ## Multicloud permissions management (deprecated)
 

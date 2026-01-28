@@ -1,11 +1,11 @@
 ---
 title: "deploymentState resource type"
 description: "Describes and controls the current state of a deployment."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: resourcePageType
-ms.date: 09/16/2024
+ms.date: 01/27/2026
 ---
 
 # deploymentState resource type

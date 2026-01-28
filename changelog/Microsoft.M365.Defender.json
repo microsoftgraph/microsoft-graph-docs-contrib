@@ -3441,6 +3441,32 @@
       "CreatedDateTime": "2026-01-22T08:26:45.0756446Z",
       "WorkloadArea": "Security",
       "SubArea": "Alerts and incidents"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "763c9469-a7c4-49b0-b55a-30043ec35ede",
+          "ApiChange": "Resource",
+          "ChangedApiName": "autoAuditingConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [autoAuditingConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/security-autoAuditingConfiguration?view=graph-rest-beta) resource.",
+          "Target": "autoAuditingConfiguration"
+        },
+        {
+          "Id": "763c9469-a7c4-49b0-b55a-30043ec35ede",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "autoAuditingConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **autoAuditingConfiguration** relationship to the [settingsContainer](https://learn.microsoft.com/en-us/graph/api/resources/security-settingsContainer?view=graph-rest-beta) resource.",
+          "Target": "settingsContainer"
+        }
+      ],
+      "Id": "763c9469-a7c4-49b0-b55a-30043ec35ede",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-01-26T09:12:41.0410693Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
     }
   ]
 }

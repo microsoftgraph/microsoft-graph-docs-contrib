@@ -22,6 +22,11 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Identity and access | Identity and sign-in
 
+- Added `qrCode` as a new supported value for the **usageAuthMethod** enumeration which is the type for the **authMethod** property on [credentialUsageSummary](/graph/api/resources/credentialusagesummary?view=graph-rest-beta&preserve-view=true), [userCredentialUsageDetails](/graph/api/resources/usercredentialusagedetails?view=graph-rest-beta&preserve-view=true), [userEventsSummary](/graph/api/resources/usereventssummary?view=graph-rest-beta&preserve-view=true), and [userRegistrationActivitySummary](/graph/api/resources/userregistrationactivitysummary?view=graph-rest-beta&preserve-view=true) resources. This value represents the use of the [QR code](/graph/api/resources/qrcodepinauthenticationmethod?view=graph-rest-beta&preserve-view=true) as an authentication method.
+- Added the [externalAuthenticationMethod](/graph/api/resources/externalAuthenticationMethod) resource to represent external authentication methods registered to a user for authentication using an external identity provider.
+- Added the **externalAuthenticationMethods** relationship to the [authentication](/graph/api/resources/authentication) resource.
+- Added the **createdDateTime** property to the [authenticationMethod](/graph/api/resources/authenticationMethod) resource.
+- Changed the **createdDateTime** property to be inherited from [authenticationMethod](/graph/api/resources/authenticationMethod) in the following derived authentication method resources: [fido2AuthenticationMethod](/graph/api/resources/fido2AuthenticationMethod), [microsoftAuthenticatorAuthenticationMethod](/graph/api/resources/microsoftAuthenticatorAuthenticationMethod), [passwordAuthenticationMethod](/graph/api/resources/passwordAuthenticationMethod), [platformCredentialAuthenticationMethod](/graph/api/resources/platformCredentialAuthenticationMethod), [temporaryAccessPassAuthenticationMethod](/graph/api/resources/temporaryAccessPassAuthenticationMethod), and [windowsHelloForBusinessAuthenticationMethod](/graph/api/resources/windowsHelloForBusinessAuthenticationMethod).
 Starting January 26, 2026, users who manage their own [authentication methods](/graph/api/resources/authenticationmethods-overview) through self-service operations, such as adding, updating, or deleting phone numbers and email addresses, must complete multifactor authentication (MFA) if they last authenticated more than 10 minutes ago in the current session. For more guidance on handling this change in your application, see [Microsoft Entra authentication methods API overview](/graph/api/resources/authenticationmethods-overview).
 
 ### Reports | Microsoft 365 usage reports
@@ -49,6 +54,10 @@ Going forward, use the Microsoft 365 Copilot usage APIs under the `/copilot` URL
 ### Teamwork and communications | Apps
 
 The `TeamsAppInstallation.ManageSelectedForTeam.All` is the least privileged application permission required to install or upgrade a Teams app that requires consent to [resource-specific consent (RSC)](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions when using the [teamsAppInstallation in a team: upgrade](/graph/api/team-teamsappinstallation-upgrade) API.
+
+### Security | Identities
+
+The Defender for Identity sensor management APIs let you discover eligible servers, control automatic onboarding, activate or deactivate the unified agent, and manage required auditing settings during activation—all through a single management interface.
 
 ## January 2026: New in preview only
 

@@ -1656,6 +1656,14 @@
               ]
             },
             {
+              "name": "Fraud protection provider",
+              "resources": [
+                "fraudProtectionProvider",
+                "arkoseFraudProtectionProvider",
+                "humanSecurityFraudProtectionProvider"
+              ]
+            },
+            {
               "name": "Web application firewall",
               "resources": [
                 "webApplicationFirewallProvider",
@@ -1841,11 +1849,8 @@
                 "riskyAgent",
                 "riskyUser",
                 "riskyUserHistoryItem",
-                "servicePrincipalRiskDetection",
                 "riskyServicePrincipal",
-                "fraudProtectionProvider",
-                "arkoseFraudProtectionProvider",
-                "humanSecurityFraudProtectionProvider"
+                "servicePrincipalRiskDetection"
               ]
             },
             {
@@ -2977,7 +2982,8 @@
             "microsoft.graph.security.identityAccounts",
             "microsoft.graph.security.user",
             "microsoft.graph.security.sensorCandidate",
-            "microsoft.graph.security.sensorCandidateActivationConfiguration"
+            "microsoft.graph.security.sensorCandidateActivationConfiguration",
+            "microsoft.graph.security.autoAuditingConfiguration"
           ],
           "complexTypes": [
             "microsoft.graph.security.deploymentAccessKeyType",

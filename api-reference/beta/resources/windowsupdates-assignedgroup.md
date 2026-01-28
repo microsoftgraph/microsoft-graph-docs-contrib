@@ -2,7 +2,7 @@
 title: "assignedGroup resource type"
 description: "Represents an entity that governs the update deployment audience defined as a Microsoft Entra group."
 author: "andredm7"
-ms.date: 01/20/2026
+ms.date: 01/27/2026
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: resourcePageType
