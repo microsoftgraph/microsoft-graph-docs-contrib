@@ -218,7 +218,7 @@ items:
       href: ../../api/cloudpcdeviceimage-getsourceimages.md
     - name: Reupload
       href: ../../api/cloudpcdeviceimage-reupload.md
-  - name: Cloud PC external partner setting (deprecated)
+  - name: Cloud PC external partner setting
     items:
     - name: Cloud PC external partner setting
       href: ../../resources/cloudpcexternalpartnersetting.md
@@ -569,12 +569,6 @@ items:
       href: ../../resources/cloudpcdiscoveredapp.md
     - name: Cloud PC domain join configuration
       href: ../../resources/cloudpcdomainjoinconfiguration.md
-    - name: Cloud PC external partner agent setting
-      href: ../../resources/cloudpcexternalpartneragentsetting.md
-    - name: Cloud PC external partner action result
-      href: ../../resources/cloudpcexternalpartneractionresult.md
-    - name: Cloud PC external partner action report
-      href: ../../resources/cloudpcexternalpartneractionreport.md
     - name: Cloud PC forensic storage account
       href: ../../resources/cloudpcforensicstorageaccount.md
     - name: Cloud PC frontline shared device detail
