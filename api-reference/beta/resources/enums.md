@@ -5,7 +5,7 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
 author: "MSGraphDocsvTeam"
-ms.date: 12/02/2025
+ms.date: 01/28/2026
 ms.custom: sfi-ropc-nochange
 ---
 
@@ -944,7 +944,7 @@ Namespace: microsoft.graph
 | remoteDesktopToken |
 | refreshToken       |
 
-### approverInformationVisibilityvalues
+### approverInformationVisibility values
 
 | Member |
 | ---- |
@@ -3238,6 +3238,7 @@ Possible values for user account types (group membership), per Windows definitio
 | compliantApplication |
 | passwordChange |
 | unknownFutureValue |
+| riskRemediation |
 
 ### perUserMfaState values
 

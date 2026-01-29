@@ -1,11 +1,11 @@
 ---
 title: "Get contentApproval"
 description: "Read the properties and relationships of a contentApproval object."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 08/31/2024
+ms.date: 01/27/2026
 ---
 
 # Get contentApproval

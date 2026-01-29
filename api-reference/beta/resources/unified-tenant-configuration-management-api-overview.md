@@ -79,3 +79,5 @@ Use the Microsoft Graph UTCM APIs to control and manage configuration settings a
 [Overview of the unified tenant configuration management APIs in Microsoft Graph (preview)](/graph/unified-tenant-configuration-management-concept-overview)
 
 [Set up authentication for unified tenant configuration management APIs](/graph/utcm-authentication-setup)
+
+[Supported workloads and resource types](/graph/utcm-supported-resourcetypes)

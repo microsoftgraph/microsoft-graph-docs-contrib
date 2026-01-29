@@ -2,7 +2,7 @@
 title: "includedGroupAssignment resource type"
 description: "Represents an entity that governs the update deployment audience with included groups."
 author: "andredm7"
-ms.date: 01/16/2026
+ms.date: 01/27/2026
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: resourcePageType
