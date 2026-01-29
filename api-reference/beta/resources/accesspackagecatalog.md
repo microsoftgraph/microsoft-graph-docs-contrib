@@ -85,7 +85,8 @@ The following JSON representation shows the resource type.
     "createdDateTime":"2019-01-27T18:19:50.74Z",
     "modifiedDateTime":"2019-01-27T18:19:50.74Z",
     "createdBy":"TestGA@example.com",
-    "modifiedBy":"TestGA@example.com"
+    "modifiedBy":"TestGA@example.com",
+    "privilegeLevel": "privileged"
 }
 ```
 
