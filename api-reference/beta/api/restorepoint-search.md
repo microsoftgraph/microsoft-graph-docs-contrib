@@ -217,12 +217,13 @@ Content-Type: application/json
 
 {
   "artifactQuery": {
-    "queryExpression": "(Sender -like 'abc@contoso.com') -and (Subject -like '*Check email*' -or Subject -like ' Important') -and (HasAttachment -eq 'true') -and (PitrDumpsterActionTriggeredTime -gt '2024-09-21T08:20:00.0000000Z')",
+    "queryExpression": "(Sender -like 'abc@contoso.com') -and (Subject -like '*Check email*' -or Subject -like ' Important') -and (HasAttachment -eq 'true')",
     "artifactType": "message"
   },
   "protectionUnitIds": ["23014d8c-71fe-4d00-a01a-31850bc5b42a"],
   "protectionTimePeriod": {
-    "startDateTime": "2021-01-01T00:00:00Z"
+    "startDateTime": "2021-01-01T00:00:00Z",
+    "endDateTime": "2021-01-30T00:00:00Z"
   },
   "restorePointPreference": "oldest"
 }
@@ -295,3 +296,60 @@ Content-Type: application/json
   ]
 }
 ```
+## Exchange Granular Search Query Properties
+### Supported Properties
+
+The `queryExpression` property of the [artifactQuery](../resources/artifactquery.md) resource supports filtering restore points based on multiple criteria. You can combine multiple properties using logical operators to create complex search expressions.
+
+The following table describes all supported properties for granular search queries.
+
+| Property | Description | Value Type | Supported Operators | Wildcard Support |
+|----------|-------------|------------|---------------------|------------------|
+| **Subject** | The subject of the message or primary searchable string for other item types | String | `-like`, `-and` (up to 3) | `*` (after string) |
+| **Sender** | Messages from the specified sender | Display name, Alias, SMTP address, or LegacyDN | `-like` | `*` (after string) |
+| **Participants** | Messages with specified recipient in To, Bcc, or Cc fields | Display name, Alias, SMTP address, or LegacyDN | `-like`, `-and` (up to 3) | `*` (after string) |
+| **HasAttachment** | Whether the message has an attachment | Boolean (`true` or `false`) | `-eq` | No |
+| **MessageKind** | The mailbox item type for which to search | Enum: `Email`, `Note`, `Task`, `Contact`, `Calendar` | `-eq` | No |
+
+### Examples
+
+#### Example 1: Email search with multiple criteria
+
+Search for emails from a specific sender with attachments.
+
+```
+(Sender -like 'abc@contoso.com') -and (HasAttachment -eq 'true')
+```
+
+#### Example 2: Subject and participant search
+
+Search for emails with specific subject keywords and multiple participants.
+
+```
+(Subject -like 'Project Alpha*') -and (Participants -like 'john@contoso.com' -and Participants -like 'sarah@contoso.com')
+```
+
+#### Example 3: Calendar event search
+
+Search for calendar events organized by a specific user.
+
+```
+(MessageKind -eq 'Calendar') -and (Sender -like 'admin@contoso.com')
+```
+
+#### Example 4: Contact search by name
+
+Search for contacts by name pattern.
+
+```
+(MessageKind -eq 'Contact') -and (Subject -like 'Smith*')
+```
+
+#### Example 5: Comprehensive email search
+
+Search for emails combining multiple criteria including message type, subject, sender, and attachments.
+
+```
+(MessageKind -eq 'Email') -and (Subject -like 'Invoice*') -and (Sender -like 'vendor*') -and (HasAttachment -eq 'true')
+```
+
