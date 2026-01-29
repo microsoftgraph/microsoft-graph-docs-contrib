@@ -14,15 +14,14 @@ In traditional tenant configuration management, any administrator within an orga
 
 The unified tenant configuration management (UTCM) APIs allow administrators to control and manage configuration settings across a single workload or multiple workloads within the organization. The following list shows the supported workloads:
 
-- Microsoft Defender
-- Microsoft Entra
-- Microsoft Exchange Online
-- Microsoft Intune
-- Microsoft Purview
-- Microsoft Teams
+- [Microsoft Defender](/graph/utcm-securityandcompliance-resources)
+- [Microsoft Entra](/graph/utcm-entra-resources)
+- [Microsoft Exchange Online](/graph/utcm-exchange-resources)
+- [Microsoft Intune](/graph/utcm-intune-resources)
+- [Microsoft Purview](/graph/utcm-securityandcompliance-resources)
+- [Microsoft Teams](/graph/utcm-teams-resources)
 
-> [!IMPORTANT]
-> UTCM APIs give administrators the ability to manage tenant configuration through a declarative representation that helps maintain configuration settings in the desired state. This representation can define one or multiple resources, each with one or more associated properties. For the complete list of supported resource types and their properties, see [Supported workloads and resource types](/graph/utcm-supported-resourcetypes).
+Administrators have the ability to manage tenant configuration through a declarative representation that helps maintain configuration settings in the desired state. This representation can define one or multiple resources, each with one or more associated properties.
 
 ## Why integrate with the unified tenant configuration management APIs?
 
@@ -42,5 +41,4 @@ Looking for the API reference for this service, see [Unified tenant configuratio
 
 - To learn how to authenticate and set up the UTCM service principal, see [Set up authentication for unified tenant configuration management APIs](/graph/utcm-authentication-setup).
 - To learn more about the unified tenant configuration management APIs, see [Use the unified tenant configuration management APIs in Microsoft Graph (preview)](/graph/api/resources/unified-tenant-configuration-management-api-overview?view=graph-rest-beta&preserve-view=true).
-- To learn more about the supported workloads and resource types for UTCM, see [Supported workloads and resource types](/graph/utcm-supported-resourcetypes).
 - Try the unified tenant configuration management APIs in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).

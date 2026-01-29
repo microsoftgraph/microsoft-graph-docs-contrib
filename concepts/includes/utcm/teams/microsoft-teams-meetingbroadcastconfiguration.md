@@ -1,0 +1,50 @@
+---
+author: "swatyario"
+ms.localizationpriority: medium
+ms.subservice: "tenant-administration"
+ms.topic: include
+---
+
+<!-- markdownlint-disable MD041-->
+
+### Parameters
+
+| Parameter | Attribute | DataType | Description | Allowed Values |
+| --- | --- | --- | --- | --- |
+| Identity | Key | String | The only valid input is Global - the tenant wide configuration | `Global` |
+| SupportURL | Write | String | Specifies a URL where broadcast event attendees can find support information or FAQs specific to that event. The URL will be displayed to the attendees during the broadcast. | - |
+| AllowSdnProviderForBroadcastMeeting | Write | Boolean | If set to $true, Teams meeting broadcast streams are enabled to take advantage of the network and bandwidth management capabilities of your Software Defined Network (SDN) provider. | - |
+| SdnProviderName | Write | String | Specifies the Software Defined Network (SDN) provider's name. This parameter is only required if AllowSdnProviderForBroadcastMeeting is set to $true. | - |
+| SdnLicenseId | Write | String | Specifies the Software Defined Network (SDN) license identifier. This is required and provided by some SDN providers. This parameter is only required if AllowSdnProviderForBroadcastMeeting is set to $true. | - |
+| SdnApiTemplateUrl | Write | String | Specifies the Software Defined Network (SDN) provider's HTTP API endpoint. This information is provided to you by the SDN provider. This parameter is only required if AllowSdnProviderForBroadcastMeeting is set to $true. | - |
+| SdnApiToken | Write | String | Specifies the Software Defined Network (SDN) provider's authentication token which is required to use their SDN license. This is required by some SDN providers who will give you the required token. This parameter is only required if AllowSdnProviderForBroadcastMeeting is set to $true. | - |
+
+####  Description
+
+This resource is used to configure the [Teams Meeting Broadcast Settings](/microsoftteams/teams-live-events/configure-teams-live-events).
+
+#### Permissions
+
+##### Microsoft Entra ID roles
+
+The following [roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) can be granted to the UTCM (Unified Tenant Configuration Management) service principal:
+
+| Operation | Least privileged role |
+|-----------|-----------------------|
+| Read      | Global Reader |
+| Update    | Teams Administrator |
+
+
+#### Microsoft Graph
+
+To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
+
+##### Application permissions
+
+| Operation | Supported permissions |
+|-----------|------------------------------|
+| Read      | Organization.Read.All |
+| Update    | Organization.Read.All |
+
+
+

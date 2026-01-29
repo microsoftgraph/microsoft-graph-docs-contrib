@@ -2,7 +2,7 @@
 title: "qualityUpdatePolicy resource type"
 description: "Represents an entity that governs the quality update deployment settings content for an associated deployment audience."
 author: "andredm7"
-ms.date: 01/20/2026
+ms.date: 01/27/2026
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: resourcePageType

@@ -5,7 +5,7 @@ author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 10/22/2025
+ms.date: 01/27/2026
 ---
 
 # List updatable asset group members

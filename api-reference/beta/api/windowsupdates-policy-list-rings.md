@@ -2,7 +2,7 @@
 title: "List rings"
 description: "Get a list of the ring objects and their properties."
 author: "andredm7"
-ms.date: 01/16/2026
+ms.date: 01/27/2026
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: apiPageType
