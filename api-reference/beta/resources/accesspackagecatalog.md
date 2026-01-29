@@ -62,16 +62,19 @@ An access package catalog might also have linked resources that are used in thos
 |customAccessPackageWorkflowExtension |[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) collection|The attributes of a logic app, which can be called at various stages of an access package request and assignment cycle. |
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
+  "optionalProperties": [
+
+  ],
   "@odata.type": "microsoft.graph.accessPackageCatalog",
-  "baseType": "microsoft.graph.entity",
-  "openType": "id"
-}
--->
-``` json
+  "keyProperty": "id"
+}-->
+
+```json
 {
   "@odata.type": "#microsoft.graph.accessPackageCatalog",
   "id": "String (identifier)",
@@ -88,3 +91,14 @@ The following JSON representation shows the resource type.
   "uniqueName": "String"
 }
 ```
+
+<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
+2019-02-04 14:57:30 UTC -->
+<!-- {
+  "type": "#page.annotation",
+  "description": "accessPackageCatalog resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": ""
+}-->
+
