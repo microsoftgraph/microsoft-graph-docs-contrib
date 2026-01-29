@@ -62,40 +62,29 @@ An access package catalog might also have linked resources that are used in thos
 |customAccessPackageWorkflowExtension |[customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) collection|The attributes of a logic app, which can be called at various stages of an access package request and assignment cycle. |
 
 ## JSON representation
-
 The following JSON representation shows the resource type.
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.accessPackageCatalog",
-  "keyProperty": "id"
-}-->
-
-```json
+  "baseType": "microsoft.graph.entity",
+  "openType": "id"
+}
+-->
+``` json
 {
-    "id":"360fa7de-90be-48dc-a2ce-fc40094a93dd",
-    "description":"Sample access package catalog",
-    "displayName":"Access package catalog for testing",
-    "isExternallyVisible":false,
-    "catalogType":"UserManaged",
-    "catalogStatus":"Published",
-    "createdDateTime":"2019-01-27T18:19:50.74Z",
-    "modifiedDateTime":"2019-01-27T18:19:50.74Z",
-    "createdBy":"TestGA@example.com",
-    "modifiedBy":"TestGA@example.com",
-    "privilegeLevel": "privileged"
+  "@odata.type": "#microsoft.graph.accessPackageCatalog",
+  "id": "String (identifier)",
+  "displayName": "String",
+  "description": "String",
+  "catalogType": "String",
+  "catalogStatus": "String",
+  "isExternallyVisible": "Boolean",
+  "createdBy": "String",
+  "createdDateTime": "String (timestamp)",
+  "modifiedBy": "String",
+  "modifiedDateTime": "String (timestamp)",
+  "privilegeLevel": "String",
+  "uniqueName": "String"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "accessPackageCatalog resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
