@@ -9,6 +9,14 @@
           "ChangeType": "Addition",
           "Description": "Added the [replyWithQuote](https://learn.microsoft.com/en-us/graph/api/chatmessage-replywithquote?view=graph-rest-v1.0) method to the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-v1.0) resource.",
           "Target": "chatMessage"
+        },
+        {
+          "Id": "f8c2d4a1-9e7b-4f3c-a526-8d1e0b9f7c62",
+          "ApiChange": "Resource",
+          "ChangedApiName": "replyWithQuoteMessagePayload",
+          "ChangeType": "Addition",
+          "Description": "Added the [replyWithQuoteMessagePayload](https://learn.microsoft.com/en-us/graph/api/resources/replywithquotemessagepayload?view=graph-rest-v1.0) resource.",
+          "Target": "replyWithQuoteMessagePayload"
         }
       ],
       "Id": "f8c2d4a1-9e7b-4f3c-a526-8d1e0b9f7c62",

@@ -2116,6 +2116,9 @@
             "teamworkTag",
             "teamworkTagMember"
           ],
+          "complexTypes": [
+            "replyWithQuoteMessagePayload"
+          ],
           "childNodes": [
             {
               "name": "Activity feed",
