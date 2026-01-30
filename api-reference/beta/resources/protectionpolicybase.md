@@ -35,14 +35,14 @@ Base type for [sharePointProtectionPolicy](../resources/sharepointprotectionpoli
 
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the policy.|
+|createdBy|[identitySet](../resources/identityset.md)|The identity of the person who created the policy.|
 |createdDateTime|DateTimeOffset|The date and time when the policy was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|displayName|String|The name of the policy to be created.|
+|displayName|String|The name of the policy.|
 |id|String|The unique identifier of the protection rule associated with the policy.|
 |isEnabled|Boolean|Indicates whether the policy is enabled.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the person who last modified the policy.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the policy was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|offboardRequestedDateTime|DateTimeOffset|The date and time when offboarding was requested for the protection policy. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|offboardRequestedDateTime|DateTimeOffset|The date and time when removal was requested for the protection policy. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |protectionPolicyArtifactCount|[protectionPolicyArtifactCount](../resources/protectionpolicyartifactcount.md)|The count of artifacts in the protection policy by status. Returned only on `$select`.|
 |retentionSettings|[retentionSetting](../resources/retentionsetting.md) collection|Contains the retention setting details for the policy.|
 |status|[protectionPolicyStatus](../resources/protectionpolicybase.md#protectionpolicystatus-values)|The aggregated status of the protection units associated with the policy. The possible values are: `inactive`, `activeWithErrors`, `updating`, `active`, `offboardRequested`, `offboarded`, `unknownFutureValue`.|
@@ -55,8 +55,8 @@ Base type for [sharePointProtectionPolicy](../resources/sharepointprotectionpoli
 |activeWithErrors | Some units are protected and others are unprotected.|
 |inactive | All units are unprotected.|
 |updating | Some or all units are in a `protectRequested`, `unprotectRequested`, or `removeRequested` state.|
-|offboardRequested | Offboard has been requested for the protection policy.|
-|offboarded | The protection policy has been offboarded.|
+|offboardRequested | The protection policy is pending removal.|
+|offboarded | The protection policy was removed.|
 |unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
