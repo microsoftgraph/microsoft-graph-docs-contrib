@@ -53,6 +53,7 @@ GET /users
 This method supports [OData query parameters](/graph/query-parameters) to help customize the response:
 
 - `$count`, `$expand`, `$filter`, `$orderby`, `$search`, `$select`, `$top`. `$skip` is not supported.
+- To filter agent users from the result set, use the `isof` function: `$filter=isof('microsoft.graph.agentUser')` returns agent users only while `$filter=not isof('microsoft.graph.agentUser')` excludes agent users.
 - **Page size limits:** The default page size is 100 objects. The maximum page size is 999 objects, except when using `$select=signInActivity` or `$filter=signInActivity`, the maximum page size is 500.
 - Some queries require the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 - The `$count` and `$search` parameters are not available in Azure AD B2C tenants.
@@ -1332,6 +1333,55 @@ Content-type: application/json
             "id": "0012cd20-3890-409e-9db3-afc3055ebe22"
         }
     ]
+}
+```
+
+### Example 17: List all the non-agent users and only show the display name of the users
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_users"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/users?$count=true&$filter=not isof('microsoft.graph.agentUser')&$select=displayName
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(displayName)",
+    "@odata.count": 3,
+    "value": [
+        {
+            "displayName": "Adrian Smith",
+            "id": "04b9f5a2-ee41-4d0e-b500-8de414d178c9"
+        },
+        {
+            "displayName": "Lewis Richardson",
+            "id": "0d03514d-35b0-4ffd-9ed9-d8052757e1c4"
+        },
+        {
+            "displayName": "Fung Lu",
+            "id": "146f9fcb-64c9-4b6e-b92f-bd4892fabdcd"
+        }
+  ]
 }
 ```
 

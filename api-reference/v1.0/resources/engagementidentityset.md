@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a unique identity in Viva Engage. This resource is an open type.
+Represents a unique identity in Viva Engage. This resource is an open type that allows additional properties beyond those documented here.
 
 Inherits from [identitySet](../resources/identityset.md).
 

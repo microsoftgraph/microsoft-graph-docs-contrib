@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Delete a [sharePointGroupMember](../resources/sharepointgroupmember.md) object from a [sharePointGroup](../resources/sharepointgroup.md). The deleted member immediately loses the permissions they inherit from the **sharePointGroup**. It may take several minutes for substrate-related functionality, such as search and Copilot, to reflect the deletion of the **sharePointGroupMember**.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

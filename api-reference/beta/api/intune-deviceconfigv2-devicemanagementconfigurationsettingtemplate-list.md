@@ -64,7 +64,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 930
+Content-Length: 1508
 
 {
   "value": [
@@ -76,6 +76,19 @@ Content-Length: 930
         "settingInstanceTemplateId": "Setting Instance Template Id value",
         "settingDefinitionId": "Setting Definition Id value",
         "isRequired": true,
+        "auditRuleInformation": {
+          "@odata.type": "microsoft.graph.deviceManagementAuditPowerShellRuleDetail",
+          "auditType": "registry",
+          "auditRuleMetadata": {
+            "@odata.type": "microsoft.graph.deviceManagementAuditRuleMetadata",
+            "metadataType": "stig",
+            "ruleId": "Rule Id value",
+            "ruleName": "Rule Name value",
+            "ruleDescription": "Rule Description value",
+            "ruleVersion": "Rule Version value",
+            "ruleSeverity": "Rule Severity value"
+          }
+        },
         "simpleSettingValueTemplate": {
           "@odata.type": "microsoft.graph.deviceManagementConfigurationStringSettingValueTemplate",
           "settingValueTemplateId": "Setting Value Template Id value",

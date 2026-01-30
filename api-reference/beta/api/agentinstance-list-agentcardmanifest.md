@@ -16,15 +16,13 @@ Namespace: microsoft.graph
 
 List the [agent card manifest](../resources/agentcardmanifest.md) referenced by the [agent instance](../resources/agentinstance.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "agentinstance-list-agentcardmanifest-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "agentinstance_list_agentcardmanifest" } -->
 [!INCLUDE [permissions-table](../includes/permissions/agentinstance-list-agentcardmanifest-permissions.md)]
 
 [!INCLUDE [rbac-agentregistry-apis](../includes/rbac-for-apis/rbac-agentregistry-apis.md)]

@@ -56,12 +56,12 @@ The following table shows the properties that are required when you create the [
 |description|String|The description. Inherited from [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|
 |createdDateTime|DateTimeOffset|The created date. Inherited from [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|
 |dueDateTime|DateTimeOffset|The due date. Inherited from [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|
-|category|[deviceAppManagementTaskCategory](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|The category. Inherited from [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md). The possible values are: `unknown`, `advancedThreatProtection`.|
-|priority|[deviceAppManagementTaskPriority](../resources/intune-partnerintegration-deviceappmanagementtaskpriority.md)|The priority. Inherited from [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md). The possible values are: `none`, `high`, `low`.|
+|category|[deviceAppManagementTaskCategory](../resources/intune-partnerintegration-deviceappmanagementtaskcategory.md)|The category. Inherited from [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md). Possible values are: `unknown`, `advancedThreatProtection`.|
+|priority|[deviceAppManagementTaskPriority](../resources/intune-partnerintegration-deviceappmanagementtaskpriority.md)|The priority. Inherited from [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md). Possible values are: `none`, `high`, `low`.|
 |creator|String|The email address of the creator. Inherited from [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|
 |creatorNotes|String|Notes from the creator. Inherited from [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|
 |assignedTo|String|The name or email of the admin this task is assigned to. Inherited from [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md)|
-|status|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|The status. Inherited from [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md). The possible values are: `unknown`, `pending`, `active`, `completed`, `rejected`.|
+|status|[deviceAppManagementTaskStatus](../resources/intune-partnerintegration-deviceappmanagementtaskstatus.md)|The status. Inherited from [deviceAppManagementTask](../resources/intune-partnerintegration-deviceappmanagementtask.md). Possible values are: `unknown`, `pending`, `active`, `completed`, `rejected`.|
 |unmanagedDevices|[unmanagedDevice](../resources/intune-partnerintegration-unmanageddevice.md) collection|Unmanaged devices discovered in the network.|
 
 

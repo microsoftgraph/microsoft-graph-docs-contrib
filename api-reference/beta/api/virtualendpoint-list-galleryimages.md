@@ -136,8 +136,7 @@ Content-Type: application/json
       "startDate": "2023-10-31",
       "endDate": "2026-11-10",
       "expirationDate": "2027-05-10",
-      "osVersionNumber": "10.0.22631.0",
-      "osArchitecture": "x64"
+      "osVersionNumber": "10.0.22631.0"
     },
     {
       "id": "microsoftwindowsdesktop_windows-ent-cpc_win11-24H2-ent-cpc",
@@ -156,8 +155,7 @@ Content-Type: application/json
       "startDate": "2024-09-30",
       "endDate": "2027-10-11",
       "expirationDate": "2028-04-11",
-      "osVersionNumber": "10.0.26100.0",
-      "osArchitecture": "x64"
+      "osVersionNumber": "10.0.26100.0"
     }
   ]
 }

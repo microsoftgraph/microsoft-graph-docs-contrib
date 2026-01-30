@@ -52,7 +52,7 @@ The following table shows the parameters that can be used with this action.
 |Property|Type|Description|
 |:---|:---|:---|
 |justification|String|Indicates the justification for cancellation of a request that has already been approved. Maximum length of justification is 1024 characters. For example: 'Cancelled - Change 23423 no longer needed.'|
-|approvalSource|[operationApprovalSource](../resources/intune-rbac-operationapprovalsource.md)|Indicates the source of the action on the approval request. The possible values are: `unknown`, `adminConsole`, `email`. Default value is `unknown`.|
+|approvalSource|[operationApprovalSource](../resources/intune-rbac-operationapprovalsource.md)|Indicates the source of the action on the approval request. Possible values are: `unknown`, `adminConsole`, `email`. Default value is `unknown`.|
 
 
 

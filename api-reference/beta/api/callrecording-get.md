@@ -5,7 +5,7 @@ author: "v-sdhakshina"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
-ms.date: 09/04/2025
+ms.date: 12/02/2025
 ---
 
 # Get callRecording
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [callRecording](../resources/callrecording.md) object associated with a scheduled [online meeting](../resources/onlinemeeting.md) and an [ad hoc call](../resources/adhoccall.md). This API supports the retrieval of call recordings from private chat meetings, channel meetings, ad hoc calls, including PSTN, 1:1, and group calls. Private channel meetings are not supported.
+Get a [callRecording](../resources/callrecording.md) object associated with a scheduled [online meeting](../resources/onlinemeeting.md) and an [ad hoc call](../resources/adhoccall.md). This API supports the retrieval of call recordings from all meeting types except live events.
 
 For a recording, this API returns the metadata of the single recording associated with the online meeting or an ad hoc call. For the content of a recording, this API returns the stream of bytes associated with the recording.
 
@@ -25,7 +25,7 @@ For a recording, this API returns the metadata of the single recording associate
 > * This API might not return a call recording if multiple meetings are scheduled under a single channel post thread.
 > * This API works differently in one or more national clouds. For details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -210,27 +210,27 @@ GET https://graph.microsoft.com/beta/users/f2e8e111-3887-4936-87f8-639292c70d34/
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-callrecording-adhoc-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-calltranscript-adhoc-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-callrecording-adhoc-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/get-calltranscript-adhoc-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-callrecording-adhoc-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-calltranscript-adhoc-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-callrecording-adhoc-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-calltranscript-adhoc-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-callrecording-adhoc-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/get-calltranscript-adhoc-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-callrecording-adhoc-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/get-calltranscript-adhoc-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

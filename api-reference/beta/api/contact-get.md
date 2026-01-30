@@ -5,7 +5,7 @@ author: "kevinbellinger"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
-ms.date: 04/05/2024
+ms.date: 12/03/2025
 ---
 
 # Get contact
@@ -66,7 +66,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and [contact](../resources/contact.md) object in the response body.
 ## Example
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -109,8 +109,9 @@ GET https://graph.microsoft.com/beta/me/contacts/AAMkAGI2THk0AAA=
 
 ---
 
-##### Response
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following example shows the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -152,6 +153,15 @@ Content-type: application/json
       "type": "personal"
     }
   ],
+  "primaryEmailAddress": {
+    "name": "Garth",
+    "address": "garth@contoso.com"
+  },
+  "secondaryEmailAddress": {
+    "name": "Garth",
+    "address": "garth@contoso.com"
+  },
+  "tertiaryEmailAddress": null,
   "imAddresses": [
     "sip:garthf@contoso.com"
   ],
@@ -209,5 +219,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

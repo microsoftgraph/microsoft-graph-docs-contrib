@@ -14,6 +14,8 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [ediscovery-deprecation](../includes/ediscovery-subnamespace-deprecation.md)]
+
 Represents an eDiscovery tag, which is used to mark documents during review to separate responsive and non-responsive content.
 
 Inherits from [entity](../resources/entity.md).

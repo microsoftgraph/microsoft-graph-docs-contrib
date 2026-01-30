@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Get a list of [footprintMap](../resources/footprintmap.md) objects for [building](../resources/building.md) footprints and their properties.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -32,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ``` http
 GET /places/{buildingPlaceId}/microsoft.graph.building/map/footprints
 ```
-> **Note:** `{buildingPlaceId}` is the unique **placeId** of the [building](../resources/building.md) linked to this map in Places for which we want to retrieve the footprint.
+> **Note:** `{buildingPlaceId}` is the unique **placeId** of the [building](../resources/building.md) linked to this map in Places for which you want to retrieve the footprint.
 
 ## Optional query parameters
 

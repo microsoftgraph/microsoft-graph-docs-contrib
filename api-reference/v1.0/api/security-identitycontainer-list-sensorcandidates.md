@@ -14,6 +14,8 @@ Namespace: microsoft.graph.security
 
 Get a list of the [sensorCandidate](../resources/security-sensorcandidate.md) objects and their properties.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -87,7 +89,8 @@ Content-Type: application/json
       "id": "c0633ebb-8cfb-f17a-0b9e-83aa661f53a3",
       "computerDnsName": "win-11.def.defensor.local",
       "senseClientVersion": "10.8780.27711.1000",
-      "lastSeenDateTime": "2024-10-29T19:55:10.9452778Z"
+      "lastSeenDateTime": "2024-10-29T19:55:10.9452778Z",
+      "domainName": "def.defensor.local"
     }
   ]
 }

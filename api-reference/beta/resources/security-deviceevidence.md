@@ -22,7 +22,7 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |azureAdDeviceId|String|A unique identifier assigned to a device by Microsoft Entra ID when device is Microsoft Entra joined.|
-|defenderAvStatus|[microsoft.graph.security.defenderAvStatus](#defenderavstatus-values)|State of the Defender AntiMalware engine. The possible values are: `notReporting`, `disabled`, `notUpdated`, `updated`, `unknown`, `notSupported`, `unknownFutureValue`.|
+|defenderAvStatus|[microsoft.graph.security.defenderAvStatus](#defenderavstatus-values)|State of the Defender anti-malware engine. The possible values are: `notReporting`, `disabled`, `notUpdated`, `updated`, `unknown`, `notSupported`, `unknownFutureValue`.|
 |deviceDnsName|String|The fully qualified domain name (FQDN) for the device.|
 | dnsDomain | String | The DNS domain that this computer belongs to. A sequence of labels separated by dots. |
 |firstSeenDateTime|DateTimeOffset|The date and time when the device was first seen.|
@@ -38,6 +38,7 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |rbacGroupId|Int32|The ID of the role-based access control device group.|
 |rbacGroupName|String|The name of the role-based access control device group.|
 |riskScore|[microsoft.graph.security.deviceRiskScore](#deviceriskscore-values)|Risk score as evaluated by Microsoft Defender for Endpoint. The possible values are: `none`, `informational`, `low`, `medium`, `high`, `unknownFutureValue`.|
+|resourceAccessEvents|[microsoft.graph.security.resourceAccessEvent](../resources/security-resourceaccessevent.md) collection | Information on resource access attempts made by the user account. |
 |version|String|The version of the operating system platform.|
 |vmMetadata|[microsoft.graph.security.vmMetadata](../resources/security-vmmetadata.md)|Metadata of the virtual machine (VM) on which Microsoft Defender for Endpoint is running.|
 
@@ -45,12 +46,12 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 
 | Member                     | Description                                                   |
 | :--------------------------| :------------------------------------------------------------ |
-| notReporting               | Defender AntiMalware engine isn't reporting.                 |
-| disabled                   | Defender AntiMalware engine has been disabled.                |
-| notUpdated                 | Defender AntiMalware engine isn't up to date.                |
-| updated                    | Defender AntiMalware engine is up to date.                    |
-| unknown                    | State of Defender AntiMalware engine is unknown.              |
-| notSupported               | Defender AntiMalware engine isn't supported on this platform.|
+| notReporting               | Defender anti-malware engine isn't reporting.                 |
+| disabled                   | Defender anti-malware engine is disabled.                |
+| notUpdated                 | Defender anti-malware engine isn't up to date.                |
+| updated                    | Defender anti-malware engine is up to date.                    |
+| unknown                    | State of Defender anti-malware engine is unknown.              |
+| notSupported               | Defender anti-malware engine isn't supported on this platform.|
 | unknownFutureValue         | unknownFutureValue for evolvable enums pattern.               |
 
 
@@ -124,6 +125,11 @@ The following JSON representation shows the resource type.
   "rbacGroupName": "String",
   "remediationStatus": "String",
   "remediationStatusDetails": "String",
+  "resourceAccessEvents": [
+    {
+      "@odata.type": "microsoft.graph.security.resourceAccessEvent"
+    }
+  ],
   "riskScore": "String",
   "roles": ["String"],
   "tags": ["String"],

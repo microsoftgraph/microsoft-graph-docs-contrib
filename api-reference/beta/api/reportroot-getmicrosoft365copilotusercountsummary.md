@@ -5,7 +5,7 @@ author: "GGsmile"
 ms.localizationpriority: medium
 ms.subservice: "reports"
 doc_type: apiPageType
-ms.date: 10/01/2024
+ms.date: 01/08/2025
 ---
 
 # reportRoot: getMicrosoft365CopilotUserCountSummary
@@ -13,6 +13,9 @@ ms.date: 10/01/2024
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!NOTE]
+> Going forward, use the Microsoft 365 Copilot usage APIs under the `/copilot` URL path segment. For more information, see [Copilot report root](/microsoft-365-copilot/extensibility/api/admin-settings/reports/resources/copilotreportroot) and [Get Copilot user count summary](/microsoft-365-copilot/extensibility/api/admin-settings/reports/copilotreportroot-getmicrosoft365copilotusercountsummary).
 
 Get the aggregated number of active and enabled users of Microsoft 365 Copilot for a specified time period.
 

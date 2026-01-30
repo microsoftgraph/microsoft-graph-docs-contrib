@@ -44,7 +44,6 @@ Represents the gallery image resource of the current organization that can be us
 |recommendedSku (deprecated)|String|The recommended Cloud PC SKU for this gallery image. Read-only. The **recommendedSku** property is deprecated and will stop returning data on January 31, 2024.|
 |sku (deprecated)|String|The SKU name of this image that is passed to ARM to retrieve the image resource. Read-only. The **sku** property is deprecated and will stop returning data on January 31, 2024. Going forward, use the **skuName** property.|
 |skuDisplayName (deprecated)|String|The official display SKU name of this gallery image. For example, `2004`. Read-only. The **skuDisplayName** property is deprecated and will stop returning data on January 31, 2024.|
-|osArchitecture|[cloudPcImageOsArchitectureType](#cloudpcimageosarchitecturetype-values)|Indicates the OS architecture of the image. Possible values are x64, arm64. Default value is x64. Read-only.|
 
 ### cloudPcGalleryImageStatus values
 
@@ -54,14 +53,6 @@ Represents the gallery image resource of the current organization that can be us
 |supportedWithWarning|The gallery image has expired, but the Cloud PC will continue support for six months, after which it will be unsupported and can't be used.|
 |notSupported|The gallery image is out of support. |
 |unknownFutureValue|Evolvable enumeration sentinel value. Don't use. |
-
-### cloudPcImageOsArchitectureType values
-
-|Member|Description|
-|:---|:---|
-|x64|Default. Indicates the Cloud PC device image is associated with x64 operating system architecture.  |
-|arm64|Indicates the Cloud PC device image is associated with arm64 operating system architecture, where Arm64-based VMs provide up to 50% better price-performance than comparable x64 VMs.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 
@@ -98,7 +89,6 @@ The following JSON representation shows the resource type.
   "skuDisplayName": "String",
   "skuName": "String",
   "startDate": "String (Date)",
-  "status": "String",
-  "osArchitecture": "String"
+  "status": "String"
 }
 ```

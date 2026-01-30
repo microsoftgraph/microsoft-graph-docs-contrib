@@ -46,9 +46,11 @@ If successful, this method returns a `200 OK` response code.
 
 ## Examples
 
-### Request
+### Example 1
+
+#### Request
 The following example shows how to get a custom property named `clientUniquieId`.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "list_filestoragecontainer_customproperty_1"
@@ -57,14 +59,9 @@ The following example shows how to get a custom property named `clientUniquieId`
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/customProperties/clientUniqueId
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-filestoragecontainer-customproperty-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
-### Response
+#### Response
 The following example shows the response.
 <!-- {
   "blockType": "response",
@@ -82,9 +79,9 @@ Content-type: application/json
 }
 
 ```
-### Request
+### Example 2
+#### Request
 The following example shows how to get all the custom properties of a **fileStorageContainer**.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_filestoragecontainer_customproperty_2"
@@ -93,10 +90,6 @@ The following example shows how to get all the custom properties of a **fileStor
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/customProperties
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-filestoragecontainer-customproperty-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 

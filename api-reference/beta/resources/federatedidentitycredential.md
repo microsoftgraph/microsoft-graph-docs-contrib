@@ -15,19 +15,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-References an application's federated identity credentials. These federated identity credentials are used in [workload identity federation](/azure/active-directory/develop/workload-identity-federation) when exchanging a token from a trusted issuer for an access token linked to an application registered on Microsoft Entra ID.
+References the federated identity credentials for an [application](../resources/application.md) or [agentIdentityBlueprint](../resources/agentidentityblueprint.md). These federated identity credentials are used in [workload identity federation](/azure/active-directory/develop/workload-identity-federation) when exchanging a token from a trusted issuer for an access token linked to an application or an agent identity blueprint.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/application-list-federatedidentitycredentials.md)|[federatedIdentityCredential](../resources/federatedidentitycredential.md) collection|Get a list of the [federatedIdentityCredential](../resources/federatedidentitycredential.md) objects and their properties.|
-|[Create](../api/application-post-federatedidentitycredentials.md)|[federatedIdentityCredential](../resources/federatedidentitycredential.md)|Create a new [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.|
+|[List](../api/federatedidentitycredential-list.md)|[federatedIdentityCredential](../resources/federatedidentitycredential.md) collection|Get a list of the [federatedIdentityCredential](../resources/federatedidentitycredential.md) objects and their properties.|
+|[Create](../api/federatedidentitycredential-post.md)|[federatedIdentityCredential](../resources/federatedidentitycredential.md)|Create a new [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.|
 |[Get](../api/federatedidentitycredential-get.md)|[federatedIdentityCredential](../resources/federatedidentitycredential.md)|Read the properties and relationships of a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.|
 |[Update](../api/federatedidentitycredential-update.md)|None|Update the properties of a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.|
 |[Upsert](../api/federatedidentitycredential-upsert.md)|[federatedIdentityCredential](../resources/federatedidentitycredential.md)|Create a new [federatedIdentityCredential](../resources/federatedidentitycredential.md) if it doesn't exist, or update the properties of an existing [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.|
-|[Delete](../api/federatedidentitycredential-delete.md)|None|Deletes a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.|
+|[Delete](../api/federatedidentitycredential-delete.md)|None|Delete a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.|
 
 ## Properties
 |Property|Type|Description|
@@ -70,3 +70,21 @@ The following JSON representation shows the resource type.
   }
 }
 ```
+
+<!--
+{
+  "type": "#page.annotation",
+  "description": "federatedIdentityCredential resource type",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+      "Error: microsoft.graph.microsoft.graph/applications:
+      /applications(uniqueName={var})/microsoft.graph.agentIdentityBlueprint/federatedIdentityCredentials(name={var})
+      Uri path requires navigating into unknown object hierarchy: missing property 'applications(uniqueName={var})' on 'microsoft.graph'. Possible issues:
+       1) Doc bug where 'applications(uniqueName={var})' isn't defined on the resource.
+       2) Doc bug where 'applications(uniqueName={var})' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.
+       3) Doc bug where 'microsoft.graph' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation."
+  ]
+}
+-->

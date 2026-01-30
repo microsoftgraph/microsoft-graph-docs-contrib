@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Cancel a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md). All tasks within the job that were in a `Sync` state are canceled. If the job can't be canceled, a `409 Conflict` response is returned and the migrations continue. This response happens when a migration is already in progress or is in a terminal state.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

@@ -1,22 +1,24 @@
 ---
 title: "Get callRecording"
-description: "Get a callRecording object associated with a scheduled onlineMeeting."
+description: "Get a callRecording object associated with a scheduled online meeting and ad hoc calls"
 author: "v-sdhakshina"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
-ms.date: 08/21/2024
+ms.date: 12/02/2025
 ---
 
 # Get callRecording
 
 Namespace: microsoft.graph
 
-Get a [callRecording](../resources/callrecording.md) object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md). This API supports the retrieval of call recordings from private chat meetings and channel meetings. However, private channel meetings are not supported at this time.
+Get a [callRecording](../resources/callrecording.md) object associated with a scheduled [online meeting](../resources/onlinemeeting.md) and an [ad hoc call](../resources/adhoccall.md). This API supports the retrieval of call recordings from all meeting types except live events.
 
-For a recording, this API returns the metadata of the single recording associated with the online meeting. For the content of a recording, this API returns the stream of bytes associated with the recording.
+For a recording, this API returns the metadata of the single recording associated with the online meeting or an ad hoc call. For the content of a recording, this API returns the stream of bytes associated with the recording.
 
 > [!NOTE]
+>
+> For online meetings:
 >
 > * This is a metered API. For more information, see [payment models for meeting APIs](/graph/teams-licenses#payment-models-for-meeting-apis).
 > * This API doesn't support meetings created using the [create onlineMeeting API](/graph/api/application-post-onlinemeetings) that are not associated with an event on the user's calendar.
@@ -31,23 +33,26 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored", "name": "callrecording_get" } -->
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|OnlineMeetingRecording.Read.All|Not available.|
+|Delegated (work or school account)|OnlineMeetingRecording.Read.All (for online meetings) <br> CallRecording.Read.All (for ad hoc calls)|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|OnlineMeetingRecording.Read.All, OnlineMeetingRecording.Read.Chat|Not available.|
+|Application| OnlineMeetingRecording.Read.All, <br> OnlineMeetingRecording.Read.Chat (for online meetings) <br> CallRecordings.Read.All (for ad hoc calls) |Not available.|
 
-> **Notes:**
+> [!NOTE]
 >
-> * In delegated permission scenarios, [get callRecording content](#example-2-get-callrecording-content) is supported only for the meeting organizer. Meeting participants don't have permission to download meeting recordings. For more information, see [permissions or role-based access](/microsoftteams/tmr-meeting-recording-change). Tenant adminstrators can unblock meeting participants to download meeting recordings. For more information, see [block the download of Teams meeting recording files](/MicrosoftTeams/block-download-meeting-recording).
+> * In delegated permission scenarios, [getting callRecording content](#example-3-get-callrecording-content-for-an-online-meeting)  is supported only for the meeting organizer. Meeting participants don't have permission to download meeting recordings. For more information, see [permissions or role-based access](/microsoftteams/tmr-meeting-recording-change).  
+> * For online meetings, tenant admins can unblock meeting participants to download meeting recordings. For ad hoc calls, tenant admins can grant on behalf of permissions for user making the call. For more information, see [block the download of Teams meeting recording files](/MicrosoftTeams/block-download-meeting-recording).
 > * The application permission `OnlineMeetingRecording.Read.Chat` uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 To use application permissions for this API, tenant administrators must create an application access policy and grant it to a user. It authorizes the app configured in the policy to fetch online meetings or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more information, see [allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
 > [!NOTE]
-> This API works only for a meeting that hasn't expired. For more information, see [Limits and specifications for Microsoft Teams](/microsoftteams/limits-specifications-teams#meeting-expiration).
+>
+> * The online meeting API is available for a meeting that hasn't expired. For more information, see [Limits and specifications for Microsoft Teams](/microsoftteams/limits-specifications-teams#meeting-expiration).
+> * For an online meeting, the respective API is also available to users who are part of the meeting calendar invite, which applies to both private chat meetings and channel meetings.
 
 ## HTTP request
 
-Get a single recording of an online meeting.
+Get a single recording for an online meeting
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -55,12 +60,28 @@ GET /me/onlineMeetings/{meetingId}/recordings/{recordingId}
 GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}
 ```
 
-Get the content of a single recording of an online meeting.
+Get the content of a single recording for an online meeting
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}/recordings/{recordingId}/content
 GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content
+```
+
+To get a single recording for an ad hoc call
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/adhocCalls/{callId}/recordings/{recordingId}
+GET /users/{userId}/adhocCalls/{callId}/recordings/{recordingId}
+```
+
+Get the content of a single recording for an ad hoc call
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/adhocCalls/{callId}/recordings/{recordingId}/content
+GET /users/{userId}/adhocCalls/{callId}/recordings/{recordingId}/content
 ```
 
 ## Optional query parameters
@@ -83,7 +104,7 @@ If successful, this method returns a `200 OK` response code and a [callRecording
 
 ## Examples
 
-### Example 1: Get a callRecording
+### Example 1: Get a callRecording for an online meeting
 
 The following example shows how to get a single recording of an online meeting.
 
@@ -136,7 +157,8 @@ GET https://graph.microsoft.com/v1.0/users/b935e675-5e67-48b9-8d45-249d5f88e964/
 
 The following example shows the response.
 
-> **Note:** The response object shown here might be shortened for readability.
+> [!Note]
+> The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -171,7 +193,61 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get callRecording content
+### Example 2: Get a callRecording for an ad hoc call
+
+The following example shows how to get a single recording of an ad hoc call.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get_callRecording_adhoc",
+  "sampleKeys": ["f2e8e111-3887-4936-87f8-639292c70d34", "1c9ddbc9-82be-46b6-8edd-bf833fe33a03",  "MyMjMTk6NWFiOWQ2OGUxNDhlNDgyNThmYmMzOWYwOGUzOTkyN2NAdGhyZWFkLnYyIyM1ZjM2NDBlNy1hNTljLTRiZWMtODJjYS1lNjYyNTFmNzk1YjctMTc1NDg5MjIyMi1UcmFuc2NyaXB0VjIjIzA="]
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/users/f2e8e111-3887-4936-87f8-639292c70d34/adhocCalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/recordings/MyMjMTk6NWFiOWQ2OGUxNDhlNDgyNThmYmMzOWYwOGUzOTkyN2NAdGhyZWFkLnYyIyM1ZjM2NDBlNy1hNTljLTRiZWMtODJjYS1lNjYyNTFmNzk1YjctMTc1NDg5MjIyMi1UcmFuc2NyaXB0VjIjIzA=
+
+```
+
+#### Response
+
+> [!NOTE] 
+> The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.callRecording"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('f2e8e111-3887-4936-87f8-639292c70d34')/adhocCalls('1c9ddbc9-82be-46b6-8edd-bf833fe33a03')/recordings/$entity",
+    "id": "MyMjMTk6NWFiOWQ2OGUxNDhlNDgyNThmYmMzOWYwOGUzOTkyN2NAdGhyZWFkLnYyIyM1ZjM2NDBlNy1hNTljLTRiZWMtODJjYS1lNjYyNTFmNzk1YjctMTc1NDg5MjIyMi1UcmFuc2NyaXB0VjIjIzA=",
+    "callId": "1c9ddbc9-82be-46b6-8edd-bf833fe33a03",
+    "createdDateTime": "2025-08-11T06:57:17.4065904Z",
+    "endDateTime": "2025-08-11T06:57:28.2265904Z",
+    "contentCorrelationId": "58cfc66a-710f-4be7-adc0-1ca5a28f2c0c-0",
+    "recordingContentUrl": "https://graph.microsoft.com/v1.0/users/f2e8e111-3887-4936-87f8-639292c70d34/adhocCalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/recordings/MyMjMTk6NWFiOWQ2OGUxNDhlNDgyNThmYmMzOWYwOGUzOTkyN2NAdGhyZWFkLnYyIyM1ZjM2NDBlNy1hNTljLTRiZWMtODJjYS1lNjYyNTFmNzk1YjctMTc1NDg5MjIyMi1UcmFuc2NyaXB0VjIjIzA=/content",
+    "meetingOrganizer": {
+        "application": null,
+        "device": null,
+        "user": {
+            "@odata.type":"#microsoft.graph.teamworkUserIdentity",
+            "id":"f2e8e111-3887-4936-87f8-639292c70d34",
+            "displayName":null,
+            "userIdentityType":"aadUser",
+            "tenantId": "8393309d-9fb7-4cce-aafb-eedc8c5781e2"
+        }
+    }   
+}
+```
+
+### Example 3: Get callRecording content for an online meeting
 
 The following example shows how to get the content of a single recording of an online meeting.
 
@@ -238,7 +314,41 @@ Content-Type: video/mp4
 <bytes of a recording>
 ```
 
-### Example 3: Get a callRecording from a corresponding transcript using contentCorrelationId
+### Example 4: Get a callRecording content for an ad hoc call
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get_callRecording_content_adhoc",
+  "sampleKeys": ["f2e8e111-3887-4936-87f8-639292c70d34", "1c9ddbc9-82be-46b6-8edd-bf833fe33a03", "MyMjMTk6NWFiOWQ2OGUxNDhlNDgyNThmYmMzOWYwOGUzOTkyN2NAdGhyZWFkLnYyIyM1ZjM2NDBlNy1hNTljLTRiZWMtODJjYS1lNjYyNTFmNzk1YjctMTc1NDg5MjIyMi1UcmFuc2NyaXB0VjIjIzA="]
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/users/f2e8e111-3887-4936-87f8-639292c70d34/adhocCalls/1c9ddbc9-82be-46b6-8edd-bf833fe33a03/recordings/MyMjMTk6NWFiOWQ2OGUxNDhlNDgyNThmYmMzOWYwOGUzOTkyN2NAdGhyZWFkLnYyIyM1ZjM2NDBlNy1hNTljLTRiZWMtODJjYS1lNjYyNTFmNzk1YjctMTc1NDg5MjIyMi1UcmFuc2NyaXB0VjIjIzA=/content
+```
+
+#### Response
+
+The response contains bytes for the recording in the body. The `content-type` header specifies the type of the recording content. Negative offsets indicate that the recording began while the conversation was ongoing.
+
+> [!NOTE]
+> The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true, 
+  "@odata.type": "stream"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-Type: video/mp4
+
+<bytes of a recording>
+```
+
+### Example 5: Get a callRecording for an online meeting from a corresponding transcript using contentCorrelationId
 
 The following example shows how to get a single recording of an online meeting corresponding to a transcript using the **contentCorrelationId** property.
 
@@ -246,52 +356,23 @@ The following example shows how to get a single recording of an online meeting c
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_callRecording_using_contentCorrelationId",
   "sampleKeys": ["MSoxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWIqMCoqMTk6bWVldGluZ19OV1EwWm1GbFpEY3RORFJqTmkwMFlXRm1MV0U1WXpBdE9UZzJNMk0yTm1Nd1pERTNAdGhyZWFkLnYy"]
 }
 -->
+
 ``` http
-GET https://graph.microsoft.com/v1.0/me/onlineMeetings/MSoxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWIqMCoqMTk6bWVldGluZ19OV1EwWm1GbFpEY3RORFJqTmkwMFlXRm1MV0U1WXpBdE9UZzJNMk0yTm1Nd1pERTNAdGhyZWFkLnYy/recordings?$filter=contentCorrelationId+eq+'e87c8cf8-50f7-4252-8b9c-ad08ac0fa88d-0'
+GET https://graph.microsoft.com/v1.0/me/onlineMeetings/MSoxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWIqMCoqMTk6bWVldGluZ19OV1EwWm1GbFpEY3RORFJqTmkwMFlXRm1MV0U1WXpBdE9UZzJNMk0yTm1Nd1pERTNAdGhyZWFkLnYy/recordings?$filter=contentcorrelationId+eq+'e87c8cf8-50f7-4252-8b9c-ad08ac0fa88d-0'
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-callrecording-using-contentcorrelationid-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-callrecording-using-contentcorrelationid-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-callrecording-using-contentcorrelationid-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-callrecording-using-contentcorrelationid-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-callrecording-using-contentcorrelationid-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-callrecording-using-contentcorrelationid-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-callrecording-using-contentcorrelationid-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
 The following example shows the response.
 
-> **Note:** The response object shown here might be shortened for readability.
+> [!NOTE] 
+> The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

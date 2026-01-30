@@ -29,7 +29,7 @@ Namespace: microsoft.graph
 |:---|:---|:---|
 |id|String|The key of the entity. This property is read-only.|
 |content|Binary|The Windows Symantec Code-Signing Certificate in the raw data format.|
-|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|The Cert Status Provisioned or not Provisioned. The possible values are: `notProvisioned`, `provisioned`.|
+|status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|The Cert Status Provisioned or not Provisioned. Possible values are: `notProvisioned`, `provisioned`.|
 |password|String|The Password required for .pfx file.|
 |subjectName|String|The Subject Name for the cert.|
 |subject|String|The Subject value for the cert.|

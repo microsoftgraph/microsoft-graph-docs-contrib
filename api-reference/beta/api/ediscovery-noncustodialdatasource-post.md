@@ -14,6 +14,8 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [ediscovery-deprecation](../includes/ediscovery-subnamespace-deprecation.md)]
+
 Create a new [noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -52,7 +54,7 @@ The following table lists the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |applyHoldToSource|Boolean|Indicates if hold is applied to noncustodial data source (such as mailbox or site).|
-|datasource|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md)|Either a userSource or siteSource.  For userSource, use "dataSource" : { "@odata.type" : "microsoft.graph.ediscovery.userSource", "email" : "SMTP address"}.  For site source use "dataSource" : { "@odata.type" : "microsoft.graph.ediscovery.siteSource", "site@odata.bind" : "siteId" }, where siteId can be derived from the site URL, for example, `https://contoso.sharepoint.com/sites/HumanResources`, the Microsoft Graph request would be `https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/sites/HumanResources`. The ID is the first GUID listed in the ID field.
+|datasource|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md)|Either a userSource or siteSource.  For userSource, use "dataSource" : { "@odata.type": "microsoft.graph.ediscovery.userSource", "email": "SMTP address"}. For site source use "dataSource": { "@odata.type": "microsoft.graph.ediscovery.siteSource", "site@odata.bind" : "siteId" }, where siteId can be derived from the site URL, for example, `https://contoso.sharepoint.com/sites/HumanResources`, the Microsoft Graph request would be `https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com:/sites/HumanResources`. The ID is the first GUID listed in the ID field.
 
 ## Response
 

@@ -64,7 +64,7 @@ If successful, this method returns a `204 No Content` response code.
 -->
 
 ``` http
-DELETE https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_Partner/userAttributeAssignments/City
+DELETE https://graph.microsoft.com/v1.0/identity/b2xUserFlows/B2X_1_Partner/userAttributeAssignments/City
 ```
 
 # [C#](#tab/csharp)

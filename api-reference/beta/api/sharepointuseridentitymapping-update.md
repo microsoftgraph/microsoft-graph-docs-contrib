@@ -20,11 +20,7 @@ Perform delta patch operations on [user identity mappings](../resources/sharepoi
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "sharepointuseridentitymapping-update-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "sharepointuseridentitymapping_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/sharepointuseridentitymapping-update-permissions.md)]
 
 ## HTTP request
@@ -51,6 +47,7 @@ PATCH /solutions/sharePoint/migrations/crossOrganizationUserMappings
 
 |Property|Type|Description|
 |:---|:---|:---|
+|deleted|[deleted](../resources/deleted.md)|Indicates that an identity mapping was deleted successfully. Optional. Inherited from [sharePointIdentityMapping](../resources/sharepointidentitymapping.md).|
 |sourceUserIdentity|[userIdentity](../resources/useridentity.md)|The identity information of the source user.|
 |sourceOrganizationId|Guid|The unique identifier of the source organization in the migration. Inherited from [sharePointIdentityMapping](../resources/sharepointidentitymapping.md).|
 |targetUserIdentity|[userIdentity](../resources/useridentity.md)|The identity information of the target user.|
@@ -129,16 +126,19 @@ Content-Type: application/json
         "userPrincipalName": "user1@contoso.com"
       },
       "targetUserIdentity": {
-        "userPrincipalName": "admin@a830edad9050849ken005.onmicrosoft.com"
+        "userPrincipalName": "admin@fabrikam.onmicrosoft.com"
       },
       "targetUserMigrationData": {
-        "email": "admin@a830edad9050849ken005.onmicrosoft.com"
+        "email": "admin@fabrikam.onmicrosoft.com"
       }
     },
     {
       "id": "AQAAAAEAAAB1c2VyMUBjb250b3NvLmNvbQ",
       "sourceUserIdentity": {
         "userPrincipalName": "user1@contoso.com"
+      },
+      "deleted": {
+        "state": "deleted"
       }
     }
   ]

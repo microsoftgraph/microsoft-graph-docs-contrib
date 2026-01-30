@@ -69,7 +69,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/users/b4c80c57-5c59-4a3d-912a-a83985988b82/AAasdijs0acjdjlksca=/permanentDelete
+POST https://graph.microsoft.com/v1.0/users/b4c80c57-5c59-4a3d-912a-a83985988b82/events/AAasdijs0acjdjlksca=/permanentDelete
 ```
 
 # [JavaScript](#tab/javascript)

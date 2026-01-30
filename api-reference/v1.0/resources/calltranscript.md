@@ -1,18 +1,18 @@
 ---
 title: "callTranscript resource type"
-description: "Represents a transcript associated with an online meeting."
+description: "Represents a transcript associated with an online meeting and an ad hoc call."
 author: "v-sdhakshina"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: resourcePageType
-ms.date: 08/21/2024
+ms.date: 12/02/2025
 ---
 
 # callTranscript resource type
 
 Namespace: microsoft.graph
 
-Represents a transcript associated with an [online meeting](onlinemeeting.md).
+Represents a transcript associated with an [online meeting](onlinemeeting.md) and [ad hoc calls](adhoccall.md).
 
 ## Methods
 

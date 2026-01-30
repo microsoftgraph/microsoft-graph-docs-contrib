@@ -5,7 +5,7 @@ ms.localizationpriority: high
 author: "preetikr"
 ms.subservice: "security"
 doc_type: conceptualPageType
-ms.date: 09/18/2024
+ms.date: 01/21/2026
 ---
 
 # Use the Microsoft Graph security API
@@ -37,7 +37,32 @@ The following conditions relate to all queries.
 3. You can make up to at least 45 calls per minute per tenant. The number of calls varies per tenant based on its size.
 4. Each tenant is allocated CPU resources, based on the tenant size. Queries are blocked if the tenant reaches 100% of the allocated resources until after the next 15-minute cycle. To avoid blocked queries due to excess consumption, follow the guidance in [Optimize your queries to avoid hitting CPU quotas](/microsoft-365/security/defender/advanced-hunting-best-practices). 
 5. If a single request runs for more than three minutes, it times out and returns an error.
-6. A `429` HTTP response code indicates that you reached the allocated CPU resources, either by the number of requests sent or by allotted running time. Read the response body to understand the limit you reached. 
+6. A `429` HTTP response code indicates that you reached the allocated CPU resources, either by the number of requests sent or by allotted running time. Read the response body to understand the limit you reached.
+7. Query results have an overall size limit of 50 MB. This limit doesn't just refer to the number of records; factors such as the number of columns, data types, and field lengths also contribute to the query result size.
+
+### Migrate from the older APIs
+
+The advanced hunting APIs in Microsoft Graph replace the older version of the API that was available through the `https://api.security.microsoft.com/api/advancedhunting/run` and `https://api.security.microsoft.com/api/advancedqueries/run` endpoints. The older APIs are now retired and will stop returning data on February 1, 2027.
+
+To migrate to the advanced hunting APIs in Microsoft Graph, update the following parameters in your application:
+
+|Subject  |Older parameters  |Microsoft Graph  |
+|---------|---------|---------|
+|Endpoints     | [https://api.securitycenter.microsoft.com/api/advancedqueries/run](/defender-endpoint/api/run-advanced-query-api) <br/><br/> [https://api.security.microsoft.com/api/advancedhunting/run](/defender-xdr/api-advanced-hunting)        | [https://graph.microsoft.com/beta/security/runHuntingQuery](../api/security-security-runhuntingquery.md)       |
+|Resource URI|Microsoft Defender for Endpoint on `https://api.securitycenter.microsoft.com`|Microsoft Graph on `https://graph.microsoft.com`|
+|API permissions     | *AdvancedQuery.Read* (delegated) and *AdvancedQuery.Read.All* (application) under Microsoft Defender for Endpoint (formerly Windows Defender Advanced Threat Protection) <br/><br/> *AdvancedHunting.Read* (delegated) and *AdvancedHunting.Read.All* (application) under Microsoft Threat Protection       | [*ThreatHunting.Read.All*](/graph/permissions-reference#threathuntingreadall) (delegated and application)       |
+|Request body     | **Query** property. For example `{"Query":"DeviceProcessEvents \|where InitiatingProcessFileName =~ 'powershell.exe' \|where ProcessCommandLine contains 'appdata'\|project Timestamp, FileName, InitiatingProcessFileName, DeviceId\|limit 2"}`        |  **Query** and **Timespan** properties. For example, `{"Query": "DeviceProcessEvents", "Timespan": "P90D"}`      |
+|Response     | **QueryResponse** object consisting of **Stats**, **Schema**, and **Results**        |  [huntingQueryResults resource type](../resources/security-huntingqueryresults.md)", consisting of **schema** (instead of **Schema**) and **results** (instead of **Results**).       |
+
+For more information about how to authorize your app to call Microsoft Graph APIs, see [Get access on behalf of a user](/graph/auth-v2-user) and [Get access without a user](/graph/auth-v2-service).
+
+#### Power Platform flow migration (PowerApps / Power Automate / Logic Apps) 
+
+Microsoft Graph does't have a built-in Advanced Hunting action that was available in the Power Platform connector for Microsoft Defender ATP. To continue using Advanced Hunting in your Power Platform flows, create a custom connector. For more information, see [Create a Microsoft Graph JSON Batch Custom Connector for Power Automate](/graph/tutorials/power-automate) and use the Microsoft Graph parameters described in the preceding table.
+
+#### Power BI flow migration
+
+If you're using a custom Power BI report created with the older API, update your Power BI query to use the Microsoft Graph parameters described in the preceding table. For more information, see [Create custom Microsoft Defender XDR reports using Microsoft Graph security API and Power BI](/defender-xdr/defender-xdr-custom-reports).
 
 ## Alerts
 Alerts are detailed warnings about suspicious activities in a customer's tenant that Microsoft or partner security providers identified and flagged for action. Attacks typically employ various techniques against different types of entities, such as devices, users, and mailboxes. The result is alerts from multiple security providers for multiple entities in the tenant. Piecing the individual alerts together to gain insight into an attack can be challenging and time-consuming.
@@ -67,7 +92,7 @@ Alerts from the following security providers are available via these rich alerts
 
 The legacy [alert](alert.md) resources federate calling of supported Azure and Microsoft 365 Defender security providers. They aggregate common alert data among the different domains to allow applications to unify and streamline management of security issues across all integrated solutions. They enable applications to correlate alerts and context to improve threat protection and response.
 
-The legacy version of the security API offers the [alert](alert.md) resource that federates calling of supported Azure and Microsoft 365 Defender security providers. This **alert** resource aggregates alert data that’s common among the different domains to allow applications to unify and streamline management of security issues across all integrated solutions. This enables applications to correlate alerts and context to improve threat protection and response. 
+The legacy version of the security API offers the [alert](alert.md) resource that federates calling of supported Azure and Microsoft 365 Defender security providers. This **alert** resource aggregates alert data that's common among the different domains to allow applications to unify and streamline management of security issues across all integrated solutions. This enables applications to correlate alerts and context to improve threat protection and response. 
 
 With the alert update capability, you can sync the status of specific alerts across different security products and services that are integrated with the Microsoft Graph security API by updating your **alert** entity.
 
@@ -83,7 +108,7 @@ Alerts from the following providers are available via the **alert** resource. Su
 |[Microsoft Sentinel](/azure/sentinel/quickstart-get-visibility) (formerly Azure Sentinel)| <p align="center">&#x2713;</p> | <p align="center">Not supported in Microsoft Sentinel </p> | <p align="center">&#x2713;</p> |
 > **Note:** New providers are continuously onboarding to the Microsoft Graph security ecosystem. To request new providers or for extended support from existing providers, [file an issue in the Microsoft Graph security GitHub repo](https://github.com/microsoftgraph/security-api-solutions/issues/new).
 
-\* File issue: Alert status gets updated across Microsoft Graph security API integrated applications but not reflected in the provider’s management experience.
+\* File issue: Alert status gets updated across Microsoft Graph security API integrated applications but not reflected in the provider's management experience.
 
 \*\* Microsoft Defender for Endpoint requires additional [user roles](/windows/security/threat-protection/microsoft-defender-atp/user-roles) to those required by the Microsoft Graph security API. Only the users in both Microsoft Defender for Endpoint and Microsoft Graph security API roles can access the Microsoft Defender for Endpoint data. Because application-only authentication isn't limited by this, we recommend that you use an application-only authentication token.
 

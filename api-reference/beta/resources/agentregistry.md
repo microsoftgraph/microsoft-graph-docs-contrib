@@ -4,7 +4,7 @@ description: "Represents the Microsoft Entra Agent Registry, which serves as a c
 author: "jasondou"
 ms.date: 11/06/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-id"
+ms.subservice: "entra-agent-id"
 doc_type: resourcePageType
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the Microsoft Entra Agent Registry, which serves as a centralized repository for managing AI agents within an organization. The agent registry allows administrators to register, organize, and manage AI agents and their capabilities, including agent identities, agent users, and agent identity blueprints.
+Represents the [Microsoft Entra Agent Registry](/entra/agent-id/identity-platform/what-is-agent-registry), which serves as a centralized repository for managing AI agents within an organization. The agent registry allows administrators to register, organize, and manage AI agents and their capabilities, including agent identities, agent users, and agent identity blueprints.
 
 Inherits from [entity](../resources/entity.md)
 

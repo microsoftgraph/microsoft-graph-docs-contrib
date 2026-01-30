@@ -247,6 +247,8 @@ items:
       href: mcp-server/overview.md
     - name: Get started
       href: mcp-server/get-started.md
+    - name: Sample prompts
+      href: mcp-server/mcp-server-sample-prompts.md
     - name: Explore the repository
       href: https://github.com/mcp/microsoft/EnterpriseMCP
 - name: Services and features
@@ -379,6 +381,8 @@ items:
       href: outlook-immutable-id.md
     - name: Subscribe to change notifications
       href: outlook-change-notifications-overview.md
+    - name: Upsert places
+      href: places-upsert-overview.md
   - name: Compliance
     href: compliance-concept-overview.md
   - name: Cross-device experiences
@@ -964,6 +968,26 @@ items:
       href: teams-licenses.md
     - name: Implementation differences in national clouds
       href: teamwork-national-cloud-differences.md
+  - name: Tenant administration (preview)
+    items:
+    - name: Configuration management
+      items:
+      - name: Overview
+        href: unified-tenant-configuration-management-concept-overview.md
+      - name: Set up authentication
+        href: utcm-authentication-setup.md
+      - name: Supported resources
+        items:
+        - name: Entra resources
+          href: utcm-entra-resources.md
+        - name: Exchange resources
+          href: utcm-exchange-resources.md
+        - name: Intune resources
+          href: utcm-intune-resources.md
+        - name: Security and Compliance resources
+          href: utcm-securityandcompliance-resources.md
+        - name: Teams resources
+          href: utcm-teams-resources.md
   - name: To-do tasks
     displayName: Microsoft To Do
     items:

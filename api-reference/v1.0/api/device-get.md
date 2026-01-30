@@ -132,7 +132,7 @@ The following request retrieves the **id** and **extensionAttributes** property 
   "name": "get_device_select"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/devices/6a59ea83-02bd-468f-a40b-f2c3d1821983?$select=id,extensionAttributes
+GET https://graph.microsoft.com/v1.0/devices/6a59ea83-02bd-468f-a40b-f2c3d1821983?$select=id,extensionAttributes
 ```
 
 # [C#](#tab/csharp)

@@ -40,7 +40,7 @@ items:
           href: ../../resources/userregistrationmethodsummary.md
         - name: List
           href: ../../api/authenticationmethodsroot-usersregisteredbymethod.md
-  - name: Microsoft Entra audit logs
+  - name: Microsoft Entra logs
     items:
     - name: Overview
       href: ../../resources/azure-ad-auditlog-overview.md

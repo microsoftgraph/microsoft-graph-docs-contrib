@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 
 Add an [ediscoveryCaseMember](../resources/security-ediscoverycasemember.md) to an [ediscoveryCase](../resources/security-ediscoverycase.md). The [ediscoveryCaseMember](../resources/security-ediscoverycasemember.md) can be one of two types: a user or a role group.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

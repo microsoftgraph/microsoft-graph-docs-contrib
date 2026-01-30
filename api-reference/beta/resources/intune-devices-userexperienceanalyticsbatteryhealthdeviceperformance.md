@@ -45,7 +45,7 @@ The user experience analytics battery health device performance entity contains 
 |deviceBatteriesDetails|[userExperienceAnalyticsDeviceBatteryDetail](../resources/intune-devices-userexperienceanalyticsdevicebatterydetail.md) collection|Properties (maxCapacity and cycleCount) related to all batteries of the device.|
 |deviceBatteryTags|String collection|Tags for computed information on how battery on the device is behaving. E.g. newbattery, batterycapacityred, designcapacityzero, etc.|
 |deviceBatteryHealthScore|Int32|A weighted average of a device’s maximum capacity score and runtime estimate score. Values range from 0-100. Valid values 0 to 2147483647|
-|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The overall battery health status of the device. The possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`, `unknownFutureValue`.|
+|healthStatus|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The overall battery health status of the device. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`, `unknownFutureValue`.|
 
 ## Relationships
 None

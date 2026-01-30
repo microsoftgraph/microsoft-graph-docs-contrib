@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 An administrative unit provides a conceptual container for user, group, and device directory objects. With administrative units, a company administrator can now delegate administrative responsibilities to manage the users, groups, and devices contained within or scoped to an administrative unit to a regional or departmental administrator. For more information about administrative units, see [Administrative units in Microsoft Entra ID](/entra/identity/role-based-access-control/administrative-units).
 
-This resource is an open type that allows other properties to be passed in.
+This resource is an open type that allows additional properties beyond those documented here.
 
 This resource supports:
 

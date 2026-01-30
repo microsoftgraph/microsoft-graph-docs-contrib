@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Represents a Microsoft Entra [access review](accessreviewsv2-overview.md) decision on an instance of a review. This decision represents the determination of a user or service principal's access for a given [access review instance](accessreviewinstance.md). This resource is an open type that allows other properties to be passed in.
+Represents a Microsoft Entra [access review](accessreviewsv2-overview.md) decision on an instance of a review. This decision represents the determination of a user or service principal's access for a given [access review instance](accessreviewinstance.md). This resource is an open type that allows additional properties beyond those documented here.
 
 ## Methods
 

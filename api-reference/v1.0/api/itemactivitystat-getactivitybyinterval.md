@@ -17,7 +17,7 @@ Get a collection of [itemActivityStats][] resources for the activities that took
 
 Analytics aggregates might not be available for all action types.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

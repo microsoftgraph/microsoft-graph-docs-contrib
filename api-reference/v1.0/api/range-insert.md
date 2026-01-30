@@ -53,7 +53,7 @@ If successful, this method returns `200 OK` response code and [Range](../resourc
 ## Example
 Here is an example of how to call this API.
 ##### Request
-The following example shows a request.
+This example shows how to insert a cell into the worksheet and shift the other cells down.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -65,7 +65,7 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/
 Content-type: application/json
 
 {
-  "shift": "shift-value"
+  "shift": "Down"
 }
 ```
 

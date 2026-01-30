@@ -1,11 +1,11 @@
 ---
 title: "Schedule a deployment using Windows Autopatch"
 description: "When deploying an update, you can schedule the deployment so that devices receive the update later by using Windows Autopatch."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: conceptualPageType
-ms.date: 11/07/2024
+ms.date: 01/28/2026
 ms.topic: how-to
 ---
 
@@ -84,13 +84,15 @@ Content-Type: application/json
 
 ## Stage a deployment over a period of time
 
-You can also schedule a deployment so that assigned devices are offered the update in a gradual rollout that is staged over time. The update is offered to subsets of devices assigned to the deployment at regular intervals, with the total duration of the rollout determined by either an end date or offering rate. You can think of a gradual rollout as similar to a recurring calendar event series.
+You can schedule a phased rollout to gradually offer the update to assigned devices. The update is rolled out to device subsets at regular intervals, with the rollout duration set by an end date or offering rate. A gradual rollout works like a recurring calendar event.
 
 ### Example: Stage a deployment at regular intervals between start and end dates
 
-One way to stage a deployment over time is to set the **endDateTime** of the deployment. All devices assigned to the deployment will be offered the update within the window between the **startDateTime** and **endDateTime**. If the **startDateTime** is not specified, then the deployment will begin as soon as devices are assigned.
+To stage a deployment over time, set the **endDateTime**. Devices receive the update between **startDateTime** and **endDateTime**; if **startDateTime** is not set, the deployment starts when devices are assigned.
 
 In this example, you configure a new deployment so that a new set of devices is offered the update every week (**durationBetweenOffers** set to seven days), starting on July 1, 2021. All devices are offered the update before August 1, 2021.
+
+In this example, the deployment offers the update to a new set of devices weekly (**durationBetweenOffers = 7 days**), starting July 1, 2021, and completes before August 1, 2021.
 
 #### Request
 

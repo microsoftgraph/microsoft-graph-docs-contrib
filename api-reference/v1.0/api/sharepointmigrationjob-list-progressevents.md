@@ -14,17 +14,13 @@ Namespace: microsoft.graph
 
 Get a list of [migration events](../resources/sharepointmigrationevent.md) for a particular job in a [fileStorageContainer](../resources/filestoragecontainer.md). The migration events remain valid for four days and can be queried as frequently as needed within the validity period.
 
-[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "sharepointmigrationjob-list-progressevents-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "sharepointmigrationjob_list_progressevents" } -->
 [!INCLUDE [permissions-table](../includes/permissions/sharepointmigrationjob-list-progressevents-permissions.md)]
 
 ## HTTP request
@@ -67,7 +63,7 @@ The following example shows how to retrieve a list of **sharePointMigrationEvent
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/migrationJobs/7b04bfdd-5f8c-4bd9-97faa166a7922c61/progressEvents
+GET https://graph.microsoft.com/v1.0/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/migrationJobs/7b04bfdd-5f8c-4bd9-97faa166a7922c61/progressEvents
 ```
 
 ### Response

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Create a new [sharePointGroupMember](../resources/sharepointgroupmember.md) object within a [sharePointGroup](../resources/sharepointgroup.md). A **sharePointGroup** can have up to 5,000 users. For more information on service limits, see [SharePoint online limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#sharepoint-groups). Users and Microsoft 365 groups are supported as viable identities for **sharePointGroupMember**. The newly created **sharePointGroupMember** immediately inherits [driveItem](../resources/driveitem.md) permissions that have been granted to the **sharePointGroup**. It may take several minutes for substrate-related functionality, such as search and Copilot, to reflect the addition of the new **sharePointGroupMember**.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

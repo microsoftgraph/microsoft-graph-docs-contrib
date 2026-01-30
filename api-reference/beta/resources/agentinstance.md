@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a specific deployed instance of an AI agent in the Microsoft Entra Agent Registry. An agent instance is associated with an agent card manifest that defines its capabilities, skills, and metadata. Agent instances can be organized into collections and are managed through the Agent Registry.
+Represents a specific deployed instance of an AI agent in the Microsoft Entra Agent Registry. An agent instance is associated with an [agentCardManifest](../resources/agentcardmanifest.md) that defines its capabilities, skills, and metadata. Agent instances can be organized into collections and are managed through the [agentRegistry](../resources/agentregistry.md).
 
 Inherits from [entity](../resources/entity.md).
 

@@ -18,6 +18,8 @@ Delete a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) obje
 
 A [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) that is currently in progress can't be deleted. The [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) must reach a final state before deletion can be performed. If a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) isn't in a final state, a `409 Conflict` response is returned.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

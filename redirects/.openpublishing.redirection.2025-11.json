@@ -4,6 +4,56 @@
       "source_path_from_root": "/api-reference/beta/resources/offlineplacemode.md",
       "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/unavailableplacemode?view=graph-rest-beta",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/application-list-federatedidentitycredentials.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/federatedidentitycredential-list?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/application-post-federatedidentitycredentials.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/federatedidentitycredential-post?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/agentidentityblueprint-list-federatedidentitycredentials.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/federatedidentitycredential-list?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/agentidentityblueprint-post-federatedidentitycredentials.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/federatedidentitycredential-post?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/agentidentityblueprint-federatedidentitycredential-upsert.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/federatedidentitycredential-upsert?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/agentidentityblueprint-federatedidentitycredential-delete.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/federatedidentitycredential-delete?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/agentidentityblueprint-federatedidentitycredential-update.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/federatedidentitycredential-update?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/agentidentityblueprint-federatedidentitycredential-get.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/federatedidentitycredential-get?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/application-list-federatedidentitycredentials.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/federatedidentitycredential-list?view=graph-rest-1.0",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/v1.0/api/application-post-federatedidentitycredentials.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/federatedidentitycredential-post?view=graph-rest-1.0",
+      "redirect_document_id": false
+    },
   ]
 }

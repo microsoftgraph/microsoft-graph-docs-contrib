@@ -12,8 +12,6 @@ ms.date: 12/30/2024
 
 # Identity and access reports API overview
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 With Microsoft Graph, you can programmatically access identity and access reports to monitor and troubleshoot all activities in your tenant. In addition, you can analyze these logs with Azure Monitor logs and Log Analytics, or stream to third-party SIEM tools for further investigations.
 
 The availability of all Microsoft Entra identity and access reports is governed by the [Microsoft Entra data retention policies](/entra/identity/monitoring-health/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).

@@ -14,6 +14,8 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [ediscovery-deprecation](../includes/ediscovery-subnamespace-deprecation.md)]
+
 Get a list of additional [dataSource](../resources/ediscovery-datasource.md) objects associated with a source collection.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]

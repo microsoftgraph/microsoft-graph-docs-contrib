@@ -1,6 +1,6 @@
 ---
 title: "userExperienceAnalyticsAnomalyDeviceFeatureType enum type"
-description: "Indicates the device's feature type. The possible values are: manufacturer, model, osVersion, application or driver."
+description: "Indicates the device's feature type. Possible values are: manufacturer, model, osVersion, application or driver."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Indicates the device's feature type. The possible values are: manufacturer, model, osVersion, application or driver.
+Indicates the device's feature type. Possible values are: manufacturer, model, osVersion, application or driver.
 
 ## Members
 |Member|Value|Description|

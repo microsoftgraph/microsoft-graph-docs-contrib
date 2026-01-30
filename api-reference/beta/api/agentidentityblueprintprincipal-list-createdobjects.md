@@ -4,7 +4,7 @@ description: "Returns the list of directory objects that were created by this ag
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-applications"
+ms.subservice: "entra-agent-id"
 doc_type: apiPageType
 ---
 
@@ -16,15 +16,13 @@ Namespace: microsoft.graph
 
 Returns the list of directory objects that were created by this agent identity blueprint principal.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "agentidentityblueprintprincipal-list-createdobjects-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "agentidentityblueprintprincipal_list_createdobjects" } -->
 [!INCLUDE [permissions-table](../includes/permissions/agentidentityblueprintprincipal-list-createdobjects-permissions.md)]
 
 [!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Represents the reason behind a specific state of a risky user, sign-in, service principal, or agent. This enumeration is used by multiple resources.
 
-The following table lists the members of an `[evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations)`. Use the `Prefer: include-unknown-enum-members` request header to get the following members in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `adminConfirmedServicePrincipalCompromised`, `adminDismissedAllRiskForServicePrincipal`, `m365DAdminDismissedDetection`, `userChangedPasswordOnPremises`, `adminDismissedRiskForSignIn`, `adminConfirmedAccountSafe`, `adminConfirmedAgentSafe`, `adminConfirmedAgentCompromised`, `adminDismissedRiskForAgent`.
+This enumeration is used by multiple resources. The possible values are: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`, `adminConfirmedServicePrincipalCompromised`, `adminDismissedAllRiskForServicePrincipal`, `m365DAdminDismissedDetection`, `userChangedPasswordOnPremises`, `adminDismissedRiskForSignIn`, `adminConfirmedAccountSafe`, `adminConfirmedAgentSafe`, `adminConfirmedAgentCompromised`, `adminDismissedRiskForAgent`, `microsoftRevokedSessions`. Use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `adminConfirmedServicePrincipalCompromised`, `adminDismissedAllRiskForServicePrincipal`, `m365DAdminDismissedDetection`, `userChangedPasswordOnPremises`, `adminDismissedRiskForSignIn`, `adminConfirmedAccountSafe`, `adminConfirmedAgentSafe`, `adminConfirmedAgentCompromised`, `adminDismissedRiskForAgent`, `microsoftRevokedSessions`.
 
 ## Members
 
@@ -43,6 +43,7 @@ The following table lists the members of an `[evolvable enumeration](/graph/best
 | adminConfirmedAgentSafe | An admin confirmed the agent as safe.<br/><br/>Applies to:<ul><li>[agentRiskDetection](../resources/agentriskdetection.md)</li><li>[riskyAgent](../resources/riskyagent.md)</li></ul> |
 | adminConfirmedAgentCompromised | An admin confirmed the agent as compromised.<br/><br/>Applies to:<ul><li>[agentRiskDetection](../resources/agentriskdetection.md)</li><li>[riskyAgent](../resources/riskyagent.md)</li></ul> |
 | adminDismissedRiskForAgent | An admin dismissed the risk for the agent.<br/><br/>Applies to:<ul><li>[agentRiskDetection](../resources/agentriskdetection.md)</li><li>[riskyAgent](../resources/riskyagent.md)</li></ul> |
+| microsoftRevokedSessions | Microsoft revoked the user's sessions.<br/><br/>Applies to:<ul><li>[riskDetection](../resources/riskdetection.md)</li><li>[riskUserActivity](../resources/riskuseractivity.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li></ul> |
 
 ## JSON representation
 

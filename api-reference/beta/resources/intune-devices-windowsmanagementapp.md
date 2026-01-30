@@ -30,7 +30,7 @@ Windows management app entity.
 |:---|:---|:---|
 |id|String|Unique Identifier for the Windows management app|
 |availableVersion|String|Windows management app available version.|
-|managedInstaller|[managedInstallerStatus](../resources/intune-devices-managedinstallerstatus.md)|Managed Installer Status. The possible values are: `disabled`, `enabled`.|
+|managedInstaller|[managedInstallerStatus](../resources/intune-devices-managedinstallerstatus.md)|Managed Installer Status. Possible values are: `disabled`, `enabled`.|
 |managedInstallerConfiguredDateTime|String|Managed Installer Configured Date Time|
 
 ## Relationships

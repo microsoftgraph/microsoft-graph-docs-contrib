@@ -1,3 +1,4 @@
+# cSpell:ignore microsoftgraph
 name: On-demand reference TOC generation
 
 on:
@@ -51,6 +52,7 @@ jobs:
   update-pull-request:
     name: Update pull request
     runs-on: ubuntu-latest
+    if: ${{ always() }}
     needs: request-toc-gen
     steps:
     - uses: octokit/request-action@v2.x
