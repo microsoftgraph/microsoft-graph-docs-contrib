@@ -89,6 +89,38 @@
           "ChangeType": "Addition",
           "Description": "Added the **cloudPcExternalPartnerAuthenticatedMethod** enumeration type.",
           "Target": "cloudPcExternalPartnerAuthenticatedMethod"
+        },
+        {
+          "Id": "545056ad-2214-4951-992a-1c30faaf80dd",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "deviceNotFound",
+          "ChangeType": "Change",
+          "Description": "Renamed the `deviceNotExist` member to `deviceNotFound` in the **cloudPcExternalPartnerActionErrorCode** enumeration type.",
+          "Target": "cloudPcExternalPartnerActionErrorCode"
+        },
+        {
+          "Id": "545056ad-2214-4951-992a-1c30faaf80dd",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "agentNotFound",
+          "ChangeType": "Change",
+          "Description": "Renamed the `agentNotExist` member to `agentNotFound` in the **cloudPcExternalPartnerActionErrorCode** enumeration type.",
+          "Target": "cloudPcExternalPartnerActionErrorCode"
+        },
+        {
+          "Id": "545056ad-2214-4951-992a-1c30faaf80dd",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "invalidAgentFormat",
+          "ChangeType": "Change",
+          "Description": "Renamed the `agentFormatInvalid` member to `invalidAgentFormat` in the **cloudPcExternalPartnerActionErrorCode** enumeration type.",
+          "Target": "cloudPcExternalPartnerActionErrorCode"
+        },
+        {
+          "Id": "545056ad-2214-4951-992a-1c30faaf80dd",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "invalidAgentChecksum",
+          "ChangeType": "Change",
+          "Description": "Renamed the `agentChecksumInvalid` member to `invalidAgentChecksum` in the **cloudPcExternalPartnerActionErrorCode** enumeration type.",
+          "Target": "cloudPcExternalPartnerActionErrorCode"
         }
       ],
       "Id": "545056ad-2214-4951-992a-1c30faaf80dd",
