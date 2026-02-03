@@ -24,7 +24,7 @@ Contains an expression that specifies the criteria for search.
 
 ### queryExpression properties
 
-The `queryExpression` property of the [artifactQuery](../resources/artifactquery.md) supports filtering restore points based on multiple criteria. You can combine multiple properties using logical operators to create complex search expressions.
+The `queryExpression` property of the artifactQuery supports filtering restore points based on multiple criteria. You can combine multiple properties using logical operators to create complex search expressions.
 
 The following table describes all supported properties for granular search queries.
 
@@ -67,7 +67,6 @@ Search for emails combining multiple criteria including message type, subject, s
 ```
 (MessageKind -eq 'Email') -and (Subject -like 'Invoice*') -and (Sender -like 'vendor*') -and (HasAttachment -eq 'true')
 ```
-
 ### restorableArtifact values
 
 |Member | Description |
