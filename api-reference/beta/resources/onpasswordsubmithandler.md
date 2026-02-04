@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an abstract base type for handlers that can be invoked when an **onPasswordSubmit** authentication event occurs. This resource type defines the contract for all handlers that process password submission events in the authentication flow.
+Represents an abstract base type for handlers that can be invoked when an [onPasswordSubmit authentication event](../resources/onpasswordsubmitlistener.md) occurs. This resource type defines the contract for all handlers that process password submission events in the authentication flow.
 
 Concrete implementations of this handler type include:
 - [onPasswordMigrationCustomExtensionHandler](../resources/onpasswordmigrationcustomextensionhandler.md) - Invokes a custom extension API for password validation during Just-In-Time migration scenarios

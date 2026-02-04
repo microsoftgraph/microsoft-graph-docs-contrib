@@ -184,6 +184,7 @@ Namespace: microsoft.graph.externalConnectors
 | doubleCollection
 | dateTimeCollection
 | principal
+| principalCollection
 | unknownFutureValue
 
 ### ruleOperation values
