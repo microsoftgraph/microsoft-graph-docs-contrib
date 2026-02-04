@@ -40,6 +40,11 @@ POST /me/dataSecurityAndGovernance/protectionScopes/compute
 POST /users/{usersId}/dataSecurityAndGovernance/protectionScopes/compute
 ```
 
+>[!NOTE]
+> If you only have the user's UPN, use the following code to retrieve their Entra ID. Replace `{upn}` with the user's UPN.
+>
+> `GET https://graph.microsoft.com/v1.0/users/{upn}?$select=id`
+
 ## Request headers
 
 | Name          | Description   |
