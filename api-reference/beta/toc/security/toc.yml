@@ -748,6 +748,8 @@ items:
       href: ../../resources/security-ediscoveryaddtoreviewsetoperation.md
     - name: eDiscovery estimate operation
       href: ../../resources/security-ediscoveryestimateoperation.md
+    - name: eDiscovery purge data operation
+      href: ../../resources/security-ediscoverypurgedataoperation.md
     - name: Report file metadata
       href: ../../resources/security-ediscoveryreportfilemetadata.md
 - name: Email and collaboration protection

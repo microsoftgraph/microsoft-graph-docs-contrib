@@ -23,6 +23,7 @@ Create a new [authenticationEventListener](../resources/authenticationeventliste
 - [onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md)
 - [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md)
 - [onPhoneMethodLoadStartListener](../resources/onphonemethodloadstartlistener.md)
+- [onPasswordSubmitListener](../resources/onpasswordsubmitlistener.md)
 - [onFraudProtectionLoadStartListener](../resources/onFraudProtectionLoadStartListener.md) resource type
 
 > [!NOTE]

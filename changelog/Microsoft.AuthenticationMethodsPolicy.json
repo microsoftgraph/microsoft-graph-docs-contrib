@@ -21,6 +21,32 @@
     {
       "ChangeList": [
         {
+          "Id": "5fa5d83a-6e25-428b-8fea-62a864cc3817",
+          "ApiChange": "Resource",
+          "ChangedApiName": "openIdConnectSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [openIdConnectSetting](https://learn.microsoft.com/en-us/graph/api/resources/openIdConnectSetting?view=graph-rest-1.0) resource.",
+          "Target": "openIdConnectSetting"
+        },
+        {
+          "Id": "5fa5d83a-6e25-428b-8fea-62a864cc3817",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalAuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/externalAuthenticationMethodConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "externalAuthenticationMethodConfiguration"
+        }
+      ],
+      "Id": "5fa5d83a-6e25-428b-8fea-62a864cc3817",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-01-30T08:49:46.8267251Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "799131f4-3b4c-4f47-a100-a173117b0f96",
           "ApiChange": "Resource",
           "ChangedApiName": "x509CertificateAuthorityScope",

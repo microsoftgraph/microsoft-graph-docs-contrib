@@ -2186,6 +2186,8 @@ items:
       href: ../../resources/onfraudprotectionloadstartlistener.md
     - name: On interactive auth flow start listener
       href: ../../resources/oninteractiveauthflowstartlistener.md
+    - name: On password submit listener
+      href: ../../resources/onpasswordsubmitlistener.md
     - name: On phone method load start listener
       href: ../../resources/onphonemethodloadstartlistener.md
     - name: On token issuance start listener
@@ -2991,6 +2993,8 @@ items:
       href: ../../resources/onattributecollectionsubmitcustomextension.md
     - name: On OTP send custom extension
       href: ../../resources/onotpsendcustomextension.md
+    - name: On password submit custom extension
+      href: ../../resources/onpasswordsubmitcustomextension.md
     - name: On token issuance start custom extension
       href: ../../resources/ontokenissuancestartcustomextension.md
   - name: Data policy operation

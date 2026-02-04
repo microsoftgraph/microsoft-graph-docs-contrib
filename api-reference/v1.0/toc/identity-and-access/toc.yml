@@ -1646,6 +1646,16 @@ items:
         href: ../../api/emailauthenticationmethodconfiguration-update.md
       - name: Delete
         href: ../../api/emailauthenticationmethodconfiguration-delete.md
+    - name: External authentication method
+      items:
+      - name: External authentication method
+        href: ../../resources/externalauthenticationmethodconfiguration.md
+      - name: Get
+        href: ../../api/externalauthenticationmethodconfiguration-get.md
+      - name: Update
+        href: ../../api/externalauthenticationmethodconfiguration-update.md
+      - name: Delete
+        href: ../../api/externalauthenticationmethodconfiguration-delete.md
     - name: FIDO2
       items:
       - name: FIDO2

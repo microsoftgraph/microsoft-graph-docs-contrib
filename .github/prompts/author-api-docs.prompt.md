@@ -480,13 +480,17 @@ For each copied file, make the following updates:
 3. **Update the `ms.date` field** in the YAML front matter to today's date
 
 **For API method files:**
-1. **Remove SDK snippet links** from the Example Request section:
+1. **Delete the national cloud include statement** that appears immediately before the "## Permissions" header:
+   - Remove the entire include statement (e.g., `[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]`)
+   - This include should be deleted for v1.0 GA documentation
+
+2. **Remove SDK snippet links** from the Example Request section:
    - Remove the `# [HTTP](#tab/http)` tab
    - Remove the tab boundary marker (`---`)
    - Remove all language-specific SDK snippet include links (e.g., `[!INCLUDE [sample-code](../includes/snippets/csharp/...)]`)
    - Keep only the HTTP example in the Request section
    
-2. **Verify examples work with v1.0 endpoint:**
+3. **Verify examples work with v1.0 endpoint:**
    - Run each example using the v1.0 endpoint to ensure all properties are returned in v1.0
    - Remove any properties from examples that are not returned in v1.0
    - Ensure request URLs use `graph.microsoft.com/v1.0/` not `graph.microsoft.com/beta/`
@@ -604,6 +608,7 @@ Remove "(preview)" from TOC entries as applicable:
 **For API method files promoted to v1.0:**
 - [ ] File copied from beta\api to v1.0\api
 - [ ] Beta disclaimer removed
+- [ ] National cloud include statement deleted (immediately before ## Permissions header)
 - [ ] Version references updated from /beta to /v1.0 in all examples
 - [ ] ms.date updated in YAML front matter
 - [ ] SDK snippet links removed from Example Request section
