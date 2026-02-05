@@ -39,6 +39,22 @@ This method supports the `$filter`, `$top` and `$skipToken` OData query paramete
 
 The default page size for this API is 1000 **exchangeMessageTrace** objects. Use `$top` to customize the page size, within the range of 1 and 5000. To get the next page of message traces, simply apply the entire URL returned in `@odata.nextLink` to the next get-messagetraces request. This URL includes any query parameters you may have specified in the initial request. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
 
+The following table summarizes support for `$filter` operators by properties of **exchangeMessageTrace** objects.
+
+|Property|Supported operator|
+|:---|:---|
+|id|`eq`|
+|messageId|`eq`|
+|status|`eq`|
+|receivedDateTime| **range must be specified** using the `ge` and `le` operators |
+|recipientAddress|`eq`|
+|senderAddress|`eq`|
+|subject|`contains`, `startsWith`|
+|fromIP|`eq`|
+|toIP|`eq`|
+
+When filtering by the `receivedDateTime` property, the start date cannot be older than 90 days from today.
+
 ## Request headers
 
 |Name|Description|
@@ -55,7 +71,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: Get all message traces
+
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -67,8 +85,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/admin/exchange/tracing/messageTraces
 ```
 
-
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -101,3 +118,51 @@ Content-Type: application/json
 }
 ```
 
+### Example 2: Get message traces by filtering on the receivedDateTime property
+
+This example gets message traces by filtering on their receivedDateTime in specific range. Always specify the start and end date time by using the `ge` and `le` query operators.
+
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "list_exchangemessagetrace_2"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/admin/exchange/tracing/messageTraces?$filter=receivedDateTime ge 2025-06-13T00:00:00.000Z and receivedDateTime le 2025-06-14T00:00:00.000Z
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.exchangeMessageTrace"
+}
+-->
+``` http
+HTTP/1.1 200 OK        
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.exchangeMessageTrace",
+      "id": "4451a062-48cb-e80d-e8c0-196330437ae6",
+      "senderAddress": "sender@contoso.com",
+      "recipientAddress": "recipient@contoso.com",
+      "messageId": "<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@contoso.com>",
+      "receivedDateTime": "2025-06-13T10:30:00Z",
+      "subject": "Quarterly Report",
+      "size": 45678,
+      "fromIP": "192.168.1.100",
+      "toIP": "",
+      "status": "Delivered"
+    }
+  ]
+}
+```
