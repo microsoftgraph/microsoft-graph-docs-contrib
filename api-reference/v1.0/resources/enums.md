@@ -3704,6 +3704,19 @@ Possible values for user account types (group membership), per Windows definitio
 | bullseye         |
 | unknownFutureValue |
 
+### exchangeMessageTraceStatus values
+
+|Member|
+|:---|
+|gettingStatus|
+|pending|
+|failed|
+|delivered|
+|expanded|
+|quarantined|
+|filteredAsSpam|
+|unknownFutureValue|
+
 ### webApplicationFirewallDnsRecordType values 
 
 |Member|

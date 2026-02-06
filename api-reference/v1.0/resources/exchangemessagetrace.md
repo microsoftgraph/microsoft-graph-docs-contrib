@@ -3,7 +3,7 @@ title: "exchangeMessageTrace resource type"
 toc.title: "Message trace"
 description: "Represents the trace information for an email message as it passes through the Exchange Online organization"
 author: "Huajian-MSIT"
-ms.date: 12/04/2025
+ms.date: 01/27/2026
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: resourcePageType
@@ -12,8 +12,6 @@ doc_type: resourcePageType
 # exchangeMessageTrace resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the trace information for an email message as it passes through the Exchange Online organization. Message trace enables tenant administrators to track the lifecycle of an email, determine its delivery status—whether delivered, pending, failed, or quarantined—and understand the actions applied to it.
 
@@ -81,4 +79,3 @@ The following JSON representation shows the resource type.
   "toIP": "String"
 }
 ```
-

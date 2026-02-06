@@ -2,7 +2,7 @@
 title: "exchangeMessageTrace: getDetailsByRecipient"
 description: "Get a list of exchangeMessageTraceDetail objects filtered on the recipient."
 author: "Huajian-MSIT"    
-ms.date: 12/04/2025            
+ms.date: 01/27/2026          
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
@@ -12,15 +12,11 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get a list of [exchangeMessageTraceDetail](../resources/exchangemessagetracedetail.md) objects filtered on the recipient.
 
 > [!NOTE]
 > * Before you can use this API, ensure that the [Prerequisites](../resources/exchangemessagetrace.md#prerequisites) are met.
 > * This API has a throttling limit of 100 requests per 5 minutes. For more information, see [Microsoft Graph service-specific throttling limits](/graph/throttling-limits).
-
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -44,7 +40,7 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|recipientAddress|String|The SMTP email address of the user that the message was addressed to.|
+|recipientAddress|String|Required. The SMTP email address of the user that the message was addressed to.|
 
 
 ## Request headers
@@ -59,7 +55,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [exchangeMessageTraceDetail](../resources/exchangemessagetracedetail.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and an [exchangeMessageTraceDetail](../resources/exchangemessagetracedetail.md) collection in the response body.
 
 ## Examples
 
@@ -72,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/exchange/tracing/messageTraces/7e3b2b2e-1b5e-4b17-80cc-2af6c1d9a3b1/getDetailsByRecipient(recipientAddress='robert@contoso.com')
+GET https://graph.microsoft.com/v1.0/admin/exchange/tracing/messageTraces/7e3b2b2e-1b5e-4b17-80cc-2af6c1d9a3b1/getDetailsByRecipient(recipientAddress='robert@contoso.com')
 ```
 
 
@@ -91,7 +87,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.exchangeMessageTraceDetail)",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.exchangeMessageTraceDetail)",
   "value": [
     {
       "id": "7e3b2b2e-1b5e-4b17-80cc-2af6c1d9a3b1",

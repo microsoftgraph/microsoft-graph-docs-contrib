@@ -20,6 +20,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## February 2026: New and generally available
 
+### Message trace
+
+Use the message trace API to track the flow of email messages through your Exchange Online organization. For more information, see [exchangeMessageTrace](/graph/api/resources/exchangemessagetrace).
+
 ### Granular browse and restore for backup storage
 
 Users can now browse a `fastRestore` endpoint and selectively restore files and folders by creating a browse session.

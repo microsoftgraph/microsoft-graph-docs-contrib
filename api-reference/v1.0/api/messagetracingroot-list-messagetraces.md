@@ -2,7 +2,7 @@
 title: "List messageTraces"
 description: "Get a list of exchangeMessageTrace objects."
 author: "Huajian-MSIT"
-ms.date: 12/04/2025
+ms.date: 01/27/2026
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
@@ -12,15 +12,11 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Get a list of [exchangeMessageTrace](../resources/exchangeMessageTrace.md) objects.
+Get a list of [exchangeMessageTrace](../resources/exchangemessagetrace.md) objects.
 
 > [!NOTE]
 > * Before you can use this API, ensure that the [Prerequisites](../resources/exchangemessagetrace.md#prerequisites) are met.
 > * This API has a throttling limit of 100 requests per 5 minutes. For more information, see [Microsoft Graph service-specific throttling limits](/graph/throttling-limits).
-
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -39,7 +35,7 @@ GET /admin/exchange/tracing/messageTraces
 ```
 
 ## Optional query parameters
-This method supports the `$filter`, `$top` and `$skipToken` OData query parameters of the [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$filter`, `$top` and `$skiptoken` OData query parameters of the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 The default page size for this API is 1000 **exchangeMessageTrace** objects. Use `$top` to customize the page size, within the range of 1 and 5000. To get the next page of message traces, simply apply the entire URL returned in `@odata.nextLink` to the next get-messagetraces request. This URL includes any query parameters you may have specified in the initial request. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
 
@@ -74,7 +70,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/exchange/tracing/messageTraces
+GET https://graph.microsoft.com/v1.0/admin/exchange/tracing/messageTraces
 ```
 
 
@@ -93,10 +89,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/exchange/tracing/messageTraces",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#admin/exchange/tracing/messageTraces",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.exchangeMessageTrace",
       "id": "4451a062-48cb-e80d-e8c0-196330437ae6",
       "senderAddress": "sender@contoso.com",
       "recipientAddress": "recipient@contoso.com",
@@ -106,7 +101,7 @@ Content-Type: application/json
       "size": 45678,
       "fromIP": "192.168.1.100",
       "toIP": "",
-      "status": "Delivered"
+      "status": "delivered"
     }
   ]
 }
@@ -125,7 +120,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/exchange/tracing/messageTraces?$filter=id eq 'a3f6d2c1-5c3b-4f7a-9d1e-2c8f1b0a6e45'
+GET https://graph.microsoft.com/v1.0/admin/exchange/tracing/messageTraces?$filter=id eq 'a3f6d2c1-5c3b-4f7a-9d1e-2c8f1b0a6e45'
 ```
 
 
@@ -144,7 +139,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/exchange/tracing/messageTraces",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#admin/exchange/tracing/messageTraces",
   "value": [
     {
       "id": "a3f6d2c1-5c3b-4f7a-9d1e-2c8f1b0a6e45",
@@ -176,7 +171,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/exchange/tracing/messageTraces?$filter=receivedDateTime ge 2026-01-20T00:00:00Z and receivedDateTime le 2026-01-23T00:00:00Z
+GET https://graph.microsoft.com/v1.0/admin/exchange/tracing/messageTraces?$filter=receivedDateTime ge 2026-01-20T00:00:00Z and receivedDateTime le 2026-01-23T00:00:00Z
 ```
 
 
@@ -195,7 +190,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/exchange/tracing/messageTraces",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#admin/exchange/tracing/messageTraces",
   "value": [
     {
       "id": "b7c1f4d2-9a6e-4c3b-8f2d-1e0a6c5b4d3f",
@@ -227,7 +222,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/exchange/tracing/messageTraces?$filter=contains(subject, 'Weekly digest') and recipientAddress eq 'test@contoso.com'
+GET https://graph.microsoft.com/v1.0/admin/exchange/tracing/messageTraces?$filter=contains(subject, 'Weekly digest') and recipientAddress eq 'test@contoso.com'
 ```
 
 
@@ -246,7 +241,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/exchange/tracing/messageTraces",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#admin/exchange/tracing/messageTraces",
   "value": [
     {
       "id": "c1d2e3f4-5678-49ab-9cde-0123456789ab",
