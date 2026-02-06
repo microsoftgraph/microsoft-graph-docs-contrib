@@ -65,7 +65,6 @@ If successful, the method returns a `202 Accepted` response code with the URL in
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "numberassignmentthis.assignnumber"
@@ -82,8 +81,6 @@ Content-Type: application/json
   "assignmentCategory": "primary"
 }
 ```
-
----
 
 ### Response
 

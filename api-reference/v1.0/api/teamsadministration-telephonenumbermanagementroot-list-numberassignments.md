@@ -66,7 +66,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 #### Request 
 
 The following example shows a request to get a list of all telephone numbers, including assignment details.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_numberassignment1"
@@ -75,8 +74,6 @@ The following example shows a request to get a list of all telephone numbers, in
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments
 ```
-
----
 
 #### Response
 
@@ -156,8 +153,6 @@ Content-Type: application/json
 #### Request
 
 The following example shows a request to get a list of telephone numbers based on a filter.
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_numberAssignments2",
@@ -166,8 +161,6 @@ The following example shows a request to get a list of telephone numbers based o
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments?$filter=assignmentStatus eq 'unassigned' and capabilities/any(c:c eq 'userAssignment')
 ```
-
----
 
 #### Response
 
@@ -221,7 +214,6 @@ Content-Type: application/json
 
 
  The following example shows a request to get a list of telephone numbers using `$top` and `$skip` for pagination.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_numberAssignments3",
@@ -230,8 +222,6 @@ Content-Type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments?$top=100&$skip=200
 ```
-
----
 
 #### Response
 
@@ -312,7 +302,6 @@ Content-Type: application/json
 
 
  The following example shows a request to get assignment details for a single telephone number using a filter.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_numberAssignments4",
@@ -321,8 +310,6 @@ Content-Type: application/json
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments?$filter=telephoneNumber eq '+12052582895'
 ```
-
----
 
 #### Response
 

@@ -58,8 +58,6 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 ### Request
 
 The following request shows how to get assignment details for a single telephone number using the ID. 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_numberAssignments",
@@ -68,8 +66,6 @@ The following request shows how to get assignment details for a single telephone
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments/YmMyNjMyZTMtNzUwYy00N2Q3LWFlYWUtOWZlZTAzNWJjMGM3fCsxMjAyMzQ1Njc4OQ
 ```
-
----
 
 ### Response
 

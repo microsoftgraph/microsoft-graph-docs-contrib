@@ -62,7 +62,6 @@ If successful, the method returns a `202 Accepted` response code with location r
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "numberassignmentthis.unassignnumber"
@@ -77,8 +76,6 @@ Content-Type: application/json
   "numberType": "directRouting"
 }
 ```
-
----
 
 ### Response
 
