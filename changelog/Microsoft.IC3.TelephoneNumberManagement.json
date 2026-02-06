@@ -117,7 +117,7 @@
       ],
       "Id": "07e967a6-f053-4c19-be0e-0a8373f072c4",
       "Cloud": "Prod",
-      "Version": "beta",
+      "Version": "v1.0",
       "CreatedDateTime": "2025-10-01T18:27:31.5363831Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Administration"
@@ -143,7 +143,7 @@
       ],
       "Id": "cb8a08bb-d44a-4dfc-ad92-4d871a7f7769",
       "Cloud": "Prod",
-      "Version": "beta",
+      "Version": "v1.0",
       "CreatedDateTime": "2025-10-01T18:27:31.5363831Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Administration"

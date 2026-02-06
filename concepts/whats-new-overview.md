@@ -45,6 +45,12 @@ The granular restore process is designed to be simple and efficient and consists
 - [Get the policy ID](/graph/api/teamsadministration-teamspolicyassignment-getpolicyid) for a given policy name and policy type within Teams administration.
 - [Assign a Teams policy](/graph/api/teamsadministration-teamspolicyuserassignment-assign) to a user using the user ID, policy type, and policy ID.
 - [Unassign a Teams policy](/graph/api/teamsadministration-teamspolicyuserassignment-unassign) from a user using the user ID and policy type.
+- [Assign a Teams telephone number](/graph/api/teamsadministration-numberassignment-assignnumber) to a user account. 
+- [Unassigns a Teams telephone number](/graph/api/teamsadministration-numberassignment-unassignnumber) from a user account.
+- [Get the assignment details](/graph/api/teamsadministration-numberassignment-get) for a single telehone number.
+- [Update an existing Teams telephone number](/graph/api/teamsadministration-numberassignment-updatenumber) with optional attributes.
+- [Check the status of telephone number assign or unassign operation](/graph/api/teamsadministration-telephonenumberlongrunningoperation-get) for a user account.
+- [Get a list of Teams telephone numbers](/graph/api/teamsadministration-telephonenumbermanagementroot-list-numberassignments) assigned to a user account.
 
 ## February 2026: New in preview only
 
