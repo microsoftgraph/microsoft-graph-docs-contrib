@@ -44,7 +44,7 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|accessPackage|[accessPackage](../resources/accesspackage.md)|Access package containing this policy. Read-only.  Supports `$expand`.|
+|accessPackage|[accessPackage](../resources/accesspackage.md)|Access package containing this policy. Read-only. Supports `$expand`.|
 |catalog|[accessPackageCatalog](../resources/accesspackagecatalog.md)|Catalog of the access package containing this policy. Read-only.|
 |customExtensionStageSettings|[customExtensionStageSetting](../resources/customextensionstagesetting.md) collection|The collection of stages when to execute one or more custom access package workflow extensions. Supports `$expand`.|
 |questions|[accessPackageQuestion](../resources/accesspackagequestion.md) collection|Questions that are posed to the  requestor.|
