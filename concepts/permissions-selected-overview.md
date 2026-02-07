@@ -34,6 +34,9 @@ When an administrator consents to Selected scopes for an application, they're de
 
 Selected scopes require a series of steps to work, which provides several means of control for administrators. The following example uses the `Lists.SelectedOperations.Selected` scope, but the steps apply to all *.Selected scopes.
 
+> [!IMPORTANT]
+> The Selected scopes APIs, such as `/sites/{siteid}/lists/{listid}/permissions` are currently only available in the `beta` Graph API.
+
 1. The application must be consented in Entra ID to have either the application or delegated `Lists.SelectedOperations.Selected` scope.
 2. The application must be granted permissions to a list via a call to `POST /sites/{siteid}/lists/{listid}/permissions` with a specific role.
 3. The application must acquire a valid token that contains the `Lists.SelectedOperations.Selected` scope for calls to the permissioned list.
@@ -74,14 +77,15 @@ The following table lists the four roles that can be assigned to an application 
 }
 -->
 ```http
-POST https://graph.microsoft.com/v1.0/sites/{siteId}/permissions
+POST https://graph.microsoft.com/beta/sites/{siteId}/permissions
 Content-Type: application/json
 
 {
   "roles": ["write"],
   "grantedTo": {
     "application": {
-      "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e"
+      "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+      "displayName": "Contoso Time Manager App"
     }
   }
 }
