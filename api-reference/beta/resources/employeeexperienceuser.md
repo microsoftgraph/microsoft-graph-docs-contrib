@@ -1,10 +1,10 @@
 ---
 title: "employeeExperienceUser resource type"
-description: "Represents a container that exposes navigation properties for the employee experience resources of a user."
-author: "richafnu"
-ms.date: 04/29/2025
+description: "Represents a user's employee experience settings and features."
+author: "aditijha4"
+ms.date: 02/06/2026
 ms.localizationpriority: medium
-ms.subservice: "viva-engage"
+ms.subservice: "employee-engagement"
 doc_type: resourcePageType
 ---
 
@@ -14,24 +14,23 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a container that exposes navigation properties for the employee experience resources of a user.
+Represents a user's employee experience settings and features, including storyline functionality for following and engagement.
 
 Inherits from [entity](../resources/entity.md).
 
+
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List assigned roles](../api/employeeexperienceuser-list-assignedroles.md)|[engagementRole](../resources/engagementrole.md) collection|Get a list of all the [roles](../resources/engagementrole.md) assigned to a user in Viva Engage.|
+None.
 
 ## Properties
-
-None.
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|The unique identifier for the employee experience user. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|assignedRoles|[engagementRole](../resources/engagementrole.md) collection|Represents the collection of Viva Engage roles assigned to a user.|
-<!-- |learningCourseActivities|[learningCourseActivity](../resources/learningcourseactivity.md) collection|**TODO: Add Description**| -->
+|storyline|[storyline](../resources/storyline.md)|The user's storyline for following and engagement features.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -45,6 +44,8 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.employeeExperienceUser"
+  "@odata.type": "#microsoft.graph.employeeExperienceUser",
+  "id": "String (identifier)"
 }
 ```
+

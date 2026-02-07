@@ -27,12 +27,15 @@ The following table lists common use cases for the Viva Engage API.
 
 | Use case | API | Notes |
 |:-----------|:--------|:--------|
+|**Community management**|||
 | Create a community | [POST /employeeExperience/communities](../api/employeeexperience-post-communities.md) | If successful, this method returns a `202 Accepted` response code that contains a link to an [engagementAsyncOperation](../resources/engagementasyncoperation.md) object. |
-| Poll for community creation status | [GET /employeeExperience/engagementAsyncOperations/{engagementAsyncOperationId}](../api/engagementasyncoperation-get.md) | If successful, this method returns a `200 OK` response code and an [engagementAsyncOperation](../resources/engagementasyncoperation.md) object in the response body. Periodically check the status of the operation by making a GET request to this location; wait >30 seconds between checks. When the request completes successfully, the **status** indicates `succeeded` and the **resourceLocation** points to the created or modified resource. |
 | Get a community after creation | [GET /employeeExperience/communities/{communityId}](../api/community-get.md) | If successful, this method returns a `200 OK` response code and a [community](../resources/community.md) object in the response body. The community object references the associated [Microsoft 365 group](../resources/group.md) ID that you can use for community membership and ownership management. |
 | Get a list of communities | [GET /employeeExperience/communities](../api/employeeexperience-list-communities.md) | If successful, this method returns a `200 OK` response code and a collection of Viva Engage [community](../resources/community.md) objects in the response body.|
 | Update a community | [PATCH /employeeExperience/communities/{communityId}](../api/community-update.md) | If successful, this method updates an existing Viva Engage [community](../resources/community.md) and returns a `204 No Content` response code. |
 | Delete a community | [DELETE /employeeExperience/communities/{communityId}](../api/community-delete.md) | If successful, this method deletes a Viva Engage [community](../resources/community.md) along with all associated Microsoft 365 content, including the connected Microsoft 365 group, OneNote notebook, and Planner plans. For more information, see [What happens if I delete a Viva Engage community connected to Microsoft 365 groups](/viva/engage/engage-microsoft-365-groups#q-what-happens-if-i-delete-a-viva-engage-community-connected-to-microsoft-365-groups). |
+|**Async operations**|||
+| Poll for community creation status | [GET /employeeExperience/engagementAsyncOperations/{engagementAsyncOperationId}](../api/engagementasyncoperation-get.md) | If successful, this method returns a `200 OK` response code and an [engagementAsyncOperation](../resources/engagementasyncoperation.md) object in the response body. Periodically check the status of the operation by making a GET request to this location; wait >30 seconds between checks. When the request completes successfully, the **status** indicates `succeeded` and the **resourceLocation** points to the created or modified resource. |
+|**Community membership management**|||
 | Add members to a community | [POST /groups/{groupId}/members/$ref](../api/group-post-members.md)  | When new members are added to a group, the associated membership of the community is automatically updated. |
 | Remove a member from a community | [DELETE /groups/{groupId}/members/{userId}/$ref](../api/group-delete-members.md) | When a member is removed from a group, the associated membership of the community is automatically updated. |
 | Add a community admin | [POST /groups/{groupId}/owners/$ref](../api/group-post-owners.md) | When a user is added as a group owner, they automatically become an admin of the associated community. |
@@ -44,6 +47,11 @@ The following table lists common use cases for the Viva Engage API.
 | Get a list of Viva Engage roles assigned to a user  | [GET /users/{userId}/employeeExperience/assignedRoles](../api/employeeexperienceuser-list-assignedroles.md) | If successful, this method returns a `200 OK` response code and a list of roles in the response body. |
 | Assign a Viva Engage role to a user | [POST /employeeExperience/roles/{engagementRoleId}/members](../api/engagementrole-post-members.md) | If successful, this method assigns a Viva Engage role to a user.|
 | Delete a Viva Engage role from a user | [DELETE /employeeExperience/roles/{roleId}/members/{userId}](../api/engagementrole-delete-members.md) | If successful, this method revokes a Viva Engage role from a user.|
+|**User following**|||
+| Follow a user | [POST /users/{userId}/employeeExperience/storyline/follow](../api/storyline-follow.md) | If successful, this method allows a user to follow another user in Viva Engage, enabling them to see updates from the followed user. |
+| Unfollow a user | [POST /users/{userId}/employeeExperience/storyline/unfollow](../api/storyline-unfollow.md) | If successful, this method allows a user to stop following another user in Viva Engage. |
+| List a user's followers | [GET /users/{userId}/employeeExperience/storyline/followers](../api/storyline-list-followers.md) | If successful, this method returns a list of users who are following the specified user. |
+| List a user's followings | [GET /users/{userId}/employeeExperience/storyline/followings](../api/storyline-list-followings.md) | If successful, this method returns a list of users that the specified user is following. |
 
 ## Communities and groups
 
@@ -66,6 +74,23 @@ Viva Engage supports role-based access by enabling the assignment of predefined 
 These assignable roles are predefined and managed by Viva Engage. Custom roles can't be created or deleted. For more information, see [Manage administrator roles in Viva Engage](/viva/engage/eac-key-admin-roles-permissions).
 
 Microsoft Entra roles are managed through the Microsoft Entra admin center, whereas Viva Engage-specific roles can be assigned and managed using the Viva Engage platform and Microsoft Graph APIs. For more information, see [Microsoft 365 admin center guide](/microsoft-365/admin/add-users/assign-admin-roles).
+
+## User following
+
+Viva Engage supports user following functionality that enables employees to connect with colleagues and stay updated on their activities within the platform. Through the storyline follow APIs, users can:
+
+* **Follow colleagues**: Users can follow other users to see their posts and updates in their personalized feed
+* **Build professional networks**: Following helps employees discover and connect with subject matter experts and thought leaders in their organization
+* **Stay informed**: Following allows users to receive updates from colleagues they're interested in hearing from
+
+The follow relationship is unidirectional - when User A follows User B, User A will see User B's updates, but this doesn't automatically create a reciprocal relationship. Users have control over who they follow and can unfollow others at any time.
+
+The following operations are supported:
+
+* **Follow/Unfollow**: Users can establish or remove follow relationships with other users
+* **Discover connections**: Users can see who they're following and who's following them
+
+For more information about using the storyline follow APIs, see the individual API reference documentation.
 
 ## API limits
 
