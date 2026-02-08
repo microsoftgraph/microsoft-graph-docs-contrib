@@ -3,6 +3,112 @@
     {
       "ChangeList": [
         {
+          "Id": "f96a028e-2d2a-441a-a2c3-8801ca553fa4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "resourceAccessStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **resourceAccessStatus** enumeration type.",
+          "Target": "resourceAccessStatus"
+        },
+        {
+          "Id": "f96a028e-2d2a-441a-a2c3-8801ca553fa4",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "resourceAccessType",
+          "ChangeType": "Addition",
+          "Description": "Added the **resourceAccessType** enumeration type.",
+          "Target": "resourceAccessType"
+        },
+        {
+          "Id": "f96a028e-2d2a-441a-a2c3-8801ca553fa4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiAgentInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiAgentInfo](https://learn.microsoft.com/en-us/graph/api/resources/aiAgentInfo?view=graph-rest-1.0) resource.",
+          "Target": "aiAgentInfo"
+        },
+        {
+          "Id": "f96a028e-2d2a-441a-a2c3-8801ca553fa4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aiInteractionEntity",
+          "ChangeType": "Addition",
+          "Description": "Added the [aiInteractionEntity](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionEntity?view=graph-rest-1.0) resource.",
+          "Target": "aiInteractionEntity"
+        },
+        {
+          "Id": "f96a028e-2d2a-441a-a2c3-8801ca553fa4",
+          "ApiChange": "Property",
+          "ChangedApiName": "identifier",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **identifier** property from the [aiInteractionPlugin](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionPlugin?view=graph-rest-1.0) resource.",
+          "Target": "aiInteractionPlugin"
+        },
+        {
+          "Id": "f96a028e-2d2a-441a-a2c3-8801ca553fa4",
+          "ApiChange": "Property",
+          "ChangedApiName": "name",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **name** property from the [aiInteractionPlugin](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionPlugin?view=graph-rest-1.0) resource.",
+          "Target": "aiInteractionPlugin"
+        },
+        {
+          "Id": "f96a028e-2d2a-441a-a2c3-8801ca553fa4",
+          "ApiChange": "Property",
+          "ChangedApiName": "version",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **version** property from the [aiInteractionPlugin](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionPlugin?view=graph-rest-1.0) resource.",
+          "Target": "aiInteractionPlugin"
+        },
+        {
+          "Id": "f96a028e-2d2a-441a-a2c3-8801ca553fa4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "processConversationMetadata",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [processConversationMetadata](https://learn.microsoft.com/en-us/graph/api/resources/processConversationMetadata?view=graph-rest-1.0) resource.",
+          "Target": "processConversationMetadata"
+        },
+        {
+          "Id": "f96a028e-2d2a-441a-a2c3-8801ca553fa4",
+          "ApiChange": "Property",
+          "ChangedApiName": "accessedResources",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **accessedResources** property in the [processConversationMetadata](https://learn.microsoft.com/en-us/graph/api/resources/processConversationMetadata?view=graph-rest-1.0) resource. Use the **accessedResources_v2** property instead.",
+          "Target": "processConversationMetadata"
+        },
+        {
+          "Id": "f96a028e-2d2a-441a-a2c3-8801ca553fa4",
+          "ApiChange": "Property",
+          "ChangedApiName": "accessedResources_v2",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessedResources_v2** property to the [processConversationMetadata](https://learn.microsoft.com/en-us/graph/api/resources/processConversationMetadata?view=graph-rest-1.0) resource.",
+          "Target": "processConversationMetadata"
+        },
+        {
+          "Id": "f96a028e-2d2a-441a-a2c3-8801ca553fa4",
+          "ApiChange": "Property",
+          "ChangedApiName": "agents",
+          "ChangeType": "Addition",
+          "Description": "Added the **agents** property to the [processConversationMetadata](https://learn.microsoft.com/en-us/graph/api/resources/processConversationMetadata?view=graph-rest-1.0) resource.",
+          "Target": "processConversationMetadata"
+        },
+        {
+          "Id": "f96a028e-2d2a-441a-a2c3-8801ca553fa4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "resourceAccessDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [resourceAccessDetail](https://learn.microsoft.com/en-us/graph/api/resources/resourceAccessDetail?view=graph-rest-1.0) resource.",
+          "Target": "resourceAccessDetail"
+        }
+      ],
+      "Id": "f96a028e-2d2a-441a-a2c3-8801ca553fa4",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-02-06T23:35:19.875448Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
           "ApiChange": "Enumeration",
           "ChangedApiName": "resourceAccessStatus",

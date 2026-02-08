@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "windowsupdates_policy_list_applicablecontent" } -->
 [!INCLUDE [permissions-table](../includes/permissions/windowsupdates-policy-list-applicablecontent-permissions.md)]
 
+[!INCLUDE [rbac-windows-updates-apis](../includes/rbac-for-apis/rbac-windows-updates-apis.md)]
+
 ## HTTP request
 
 <!-- {

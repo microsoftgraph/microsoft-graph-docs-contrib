@@ -64,10 +64,62 @@ items:
     - name: Identity set
       href: ../../resources/identityset.md
 - name: Cloud licensing (preview)
-  displayName: Cloud licensing, Microsoft Cloud Licensing
+  displayName: Cloud licensing, Microsoft Cloud Licensing, licensing, license assignment, allotment
   items:
   - name: Overview
     href: ../../resources/cloud-licensing-api-overview.md
+  - name: Allotment
+    items:
+    - name: Allotment
+      href: ../../resources/cloudlicensing-allotment.md
+    - name: List
+      href: ../../api/cloudlicensing-admincloudlicensing-list-allotments.md
+    - name: Get
+      href: ../../api/cloudlicensing-allotment-get.md
+    - name: List assignments for allotment
+      href: ../../api/cloudlicensing-allotment-list-assignments.md
+    - name: Create assignment for allotment
+      href: ../../api/cloudlicensing-allotment-post-assignments.md
+    - name: List waiting members
+      href: ../../api/cloudlicensing-allotment-list-waitingmembers.md
+  - name: Assignment
+    items:
+    - name: Assignment
+      href: ../../resources/cloudlicensing-assignment.md
+    - name: List
+      href: ../../api/cloudlicensing-allotment-list-assignments.md
+    - name: Create
+      href: ../../api/cloudlicensing-admincloudlicensing-post-assignments.md
+    - name: Get
+      href: ../../api/cloudlicensing-assignment-get.md
+    - name: Update
+      href: ../../api/cloudlicensing-assignment-update.md
+    - name: Delete
+      href: ../../api/cloudlicensing-assignment-delete.md
+    - name: Create for allotment
+      href: ../../api/cloudlicensing-allotment-post-assignments.md
+    - name: Create for user
+      href: ../../api/cloudlicensing-usercloudlicensing-post-assignments.md
+    - name: Create for group
+      href: ../../api/cloudlicensing-groupcloudlicensing-post-assignments.md
+    - name: Reprocess assignments
+      href: ../../api/cloudlicensing-assignment-reprocessassignments.md
+    - name: Get assignedTo
+      href: ../../api/cloudlicensing-assignment-get-assignedto.md
+    - name: Get allotment for assignment
+      href: ../../api/cloudlicensing-assignment-get-allotment.md
+  - name: Assignment error
+    items:
+    - name: Assignment error
+      href: ../../resources/cloudlicensing-assignmenterror.md
+    - name: List
+      href: ../../api/cloudlicensing-admincloudlicensing-list-assignmenterrors.md
+    - name: Get
+      href: ../../api/cloudlicensing-assignmenterror-get.md
+    - name: Get assignedTo
+      href: ../../api/cloudlicensing-assignmenterror-get-assignedto.md
+    - name: Get usageRight
+      href: ../../api/cloudlicensing-assignmenterror-get-usageright.md
   - name: Usage right
     items:
     - name: Usage right
@@ -78,12 +130,26 @@ items:
       href: ../../api/cloudlicensing-usercloudlicensing-list-usagerights.md
     - name: Get
       href: ../../api/cloudlicensing-usageright-get.md
+    - name: List assignments
+      href: ../../api/cloudlicensing-usageright-list-assignments.md
+  - name: Waiting member
+    items:
+    - name: Waiting member
+      href: ../../resources/cloudlicensing-waitingmember.md
+    - name: List for allotment
+      href: ../../api/cloudlicensing-allotment-list-waitingmembers.md
+    - name: List for user
+      href: ../../api/cloudlicensing-usercloudlicensing-list-waitingmembers.md
+    - name: Get
+      href: ../../api/cloudlicensing-waitingmember-get.md
   - name: Complex types
     items:
     - name: Group cloud licensing
       href: ../../resources/cloudlicensing-groupcloudlicensing.md
     - name: Service
       href: ../../resources/cloudlicensing-service.md
+    - name: Subscription
+      href: ../../resources/cloudlicensing-subscription.md
     - name: User cloud licensing
       href: ../../resources/cloudlicensing-usercloudlicensing.md
 - name: Cloud PC

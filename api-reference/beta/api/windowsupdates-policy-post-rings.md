@@ -2,7 +2,7 @@
 title: "Create ring"
 description: "Create a new ring object."
 author: "andredm7"
-ms.date: 01/27/2026
+ms.date: 02/05/2026
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: apiPageType
@@ -24,6 +24,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "windowsupdates_policy_post_rings" } -->
 [!INCLUDE [permissions-table](../includes/permissions/windowsupdates-policy-post-rings-permissions.md)]
+
+[!INCLUDE [rbac-windows-updates-apis](../includes/rbac-for-apis/rbac-windows-updates-apis.md)]
 
 ## HTTP request
 

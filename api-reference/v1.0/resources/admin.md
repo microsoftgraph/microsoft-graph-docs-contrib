@@ -21,6 +21,7 @@ None.
 |Relationship|Type|Description|
 |:---|:---|:---|
 | edge | [edge](edge.md) | A container for Microsoft Edge resources. Read-only. |
+| exchange | [exchangeAdmin](../resources/exchangeadmin.md) |A container for the Exchange admin functionality. Read-only.|
 | microsoft365Apps |[adminMicrosoft365Apps](../resources/adminmicrosoft365apps.md)|A container for the Microsoft 365 apps admin functionality.|
 | people | [peopleAdminSettings](../resources/peopleadminsettings.md) | Represents a setting to control people-related admin settings in the tenant. |
 | reportSettings |[adminReportSettings](../resources/adminreportsettings.md)|A container for administrative resources to manage reports.|

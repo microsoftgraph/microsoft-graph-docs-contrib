@@ -1,5 +1,55 @@
 ﻿{
   "changelog": [
+        {
+      "ChangeList": [
+        {
+          "Id": "a592de1a-e574-46ce-8911-27c13af4c759",
+          "ApiChange": "Resource",
+          "ChangedApiName": "exchangeAdmin",
+          "ChangeType": "Addition",
+          "Description": "Added the [exchangeAdmin](https://learn.microsoft.com/en-us/graph/api/resources/exchangeAdmin?view=graph-rest-1.0) resource.",
+          "Target": "exchangeAdmin"
+        },
+        {
+          "Id": "a592de1a-e574-46ce-8911-27c13af4c759",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "exchangeMessageTraceStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **exchangeMessageTraceStatus** enumeration type.",
+          "Target": "exchangeMessageTraceStatus"
+        },
+        {
+          "Id": "a592de1a-e574-46ce-8911-27c13af4c759",
+          "ApiChange": "Resource",
+          "ChangedApiName": "exchangeMessageTrace",
+          "ChangeType": "Addition",
+          "Description": "Added the [exchangeMessageTrace](https://learn.microsoft.com/en-us/graph/api/resources/exchangeMessageTrace?view=graph-rest-1.0) resource.",
+          "Target": "exchangeMessageTrace"
+        },
+        {
+          "Id": "a592de1a-e574-46ce-8911-27c13af4c759",
+          "ApiChange": "Resource",
+          "ChangedApiName": "exchangeMessageTraceDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [exchangeMessageTraceDetail](https://learn.microsoft.com/en-us/graph/api/resources/exchangeMessageTraceDetail?view=graph-rest-1.0) resource.",
+          "Target": "exchangeMessageTraceDetail"
+        },
+        {
+          "Id": "a592de1a-e574-46ce-8911-27c13af4c759",
+          "ApiChange": "Resource",
+          "ChangedApiName": "messageTracingRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [messageTracingRoot](https://learn.microsoft.com/en-us/graph/api/resources/messageTracingRoot?view=graph-rest-1.0) resource.",
+          "Target": "messageTracingRoot"
+        }
+      ],
+      "Id": "a592de1a-e574-46ce-8911-27c13af4c759",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-02-06T04:03:10.3264935Z",
+      "WorkloadArea": "Mail",
+      "SubArea": "Message trace"
+    },
     {
       "ChangeList": [
         {

@@ -12,6 +12,48 @@ ms.date: 01/08/2026
 
 Namespace: microsoft.graph.security
 
+### antispamDirectionality values
+
+|Member|
+|:---|
+|unknown|
+|inbound|
+|outbound|
+|intraOrg|
+|unknownFutureValue|
+
+### threatType values
+
+|Member|
+|:---|
+|unknown|
+|spam|
+|malware|
+|phish|
+|none|
+|unknownFutureValue|
+
+### remediationSeverity values
+
+|Member|
+|:---|
+|low|
+|medium|
+|high|
+|unknownFutureValue|
+
+### remediationAction values
+
+|Member|
+|:---|
+|moveToJunk|
+|moveToInbox|
+|hardDelete|
+|softDelete|
+|moveToDeletedItems|
+|unknownFutureValue|
+|moveToQuarantine|
+
 ### appCategory values 
 
 |Member|

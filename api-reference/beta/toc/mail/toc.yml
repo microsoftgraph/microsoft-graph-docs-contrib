@@ -196,9 +196,9 @@ items:
     href: ../../api/messagerule-update.md
   - name: Delete rule
     href: ../../api/messagerule-delete.md
-- name: Message trace (preview)
+- name: Message trace
   items:
-  - name: Message trace (preview)
+  - name: Message trace
     href: ../../resources/exchangemessagetrace.md
   - name: List message traces
     href: ../../api/messagetracingroot-list-messagetraces.md

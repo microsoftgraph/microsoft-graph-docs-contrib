@@ -10,6 +10,44 @@ items:
     href: ../../api/backuprestoreroot-get.md
   - name: Enable
     href: ../../api/backuprestoreroot-enable.md
+- name: Browse Session
+  items:
+  - name: Browse Session
+    href: ../../resources/browsesessionbase.md
+  - name: List
+    href: ../../api/backuprestoreroot-list-browsesessions.md
+- name: Browse session
+  items:
+  - name: Browse Session
+    items:
+    - name: Browse Session
+      href: ../../resources/browsesessionbase.md
+    - name: List
+      href: ../../api/backuprestoreroot-list-browsesessions.md
+  - name: One drive for business browse session
+    items:
+    - name: One drive for business browse session
+      href: ../../resources/onedriveforbusinessbrowsesession.md
+    - name: Create
+      href: ../../api/backuprestoreroot-post-onedriveforbusinessbrowsesessions.md
+    - name: Get
+      href: ../../api/onedriveforbusinessbrowsesession-get.md
+    - name: List
+      href: ../../api/backuprestoreroot-list-onedriveforbusinessbrowsesessions.md
+    - name: browse
+      href: ../../api/onedriveforbusinessbrowsesession-browse.md
+  - name: Share point browse session
+    items:
+    - name: Share point browse session
+      href: ../../resources/sharepointbrowsesession.md
+    - name: Create
+      href: ../../api/backuprestoreroot-post-sharepointbrowsesessions.md
+    - name: Get
+      href: ../../api/sharepointbrowsesession-get.md
+    - name: List
+      href: ../../api/backuprestoreroot-list-sharepointbrowsesessions.md
+    - name: browse
+      href: ../../api/sharepointbrowsesession-browse.md
 - name: Email notifications setting
   items:
   - name: Email notifications setting
@@ -186,6 +224,12 @@ items:
       href: ../../resources/driverestoreartifact.md
     - name: List
       href: ../../api/onedriveforbusinessrestoresession-list-driverestoreartifacts.md
+  - name: Granular drive restore artifact
+    items:
+    - name: Granular drive restore artifact
+      href: ../../resources/granulardriverestoreartifact.md
+    - name: List
+      href: ../../api/onedriveforbusinessrestoresession-list-granulardriverestoreartifacts.md
   - name: Mailbox restore artifact
     items:
     - name: Mailbox restore artifact
@@ -198,6 +242,12 @@ items:
       href: ../../resources/siterestoreartifact.md
     - name: List
       href: ../../api/sharepointrestoresession-list-siterestoreartifacts.md
+  - name: Granular site restore artifact
+    items:
+    - name: Granular site restore artifact
+      href: ../../resources/granularsiterestoreartifact.md
+    - name: List
+      href: ../../api/sharepointrestoresession-list-granularsiterestoreartifacts.md
 - name: Restore artifacts bulk request
   href: ../../resources/restoreartifactsbulkrequestbase.md
   items:
@@ -307,6 +357,8 @@ items:
   items:
   - name: Artifact query
     href: ../../resources/artifactquery.md
+  - name: Browse query response item
+    href: ../../resources/browsequeryresponseitem.md
   - name: Notification recipients
     href: ../../resources/notificationrecipients.md
   - name: Protection policy artifact count

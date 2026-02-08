@@ -33,7 +33,7 @@ Contains metadata for email messages that are analyzed for security threats.
 |clientType|String|Shows the type of client that sent the message (for example, REST).|
 |contexts|String collection|Provides context of the email.  |
 |detectionMethods|String collection|The methods of detection used.|
-|directionality|[microsoft.graph.security.antispamDirectionality](#antispamdirectionality-values)|The direction of the emails. The possible values are: `unknown`, `inbound`, `outbound`, `intraOrg`, `unknownFutureValue`.|
+|directionality|microsoft.graph.security.antispamDirectionality|The direction of the emails. The possible values are: `unknown`, `inbound`, `outbound`, `intraOrg`, `unknownFutureValue`.|
 |distributionList|String|The distribution list details to which the email was sent.|
 |dlpRules|[microsoft.graph.security.analyzedEmailDlpRuleInfo](../resources/security-analyzedemaildlpruleinfo.md) collection|Data loss prevention rules configured in purview.|
 |emailClusterId|String|The identifier for the group of similar emails clustered based on heuristic analysis of their content.|
@@ -60,51 +60,10 @@ Contains metadata for email messages that are analyzed for security threats.
 |sizeInBytes|Int32| Size of the email in bytes.|
 |spamConfidenceLevel|String|Spam confidence of the email.|
 |subject|String|Subject of the email.|
-|threatTypes|[microsoft.graph.security.threatType](#threattype-values) collection|Indicates the threat types. The possible values are: `unknown`, `spam`, `malware`, `phish`, `none`, `unknownFutureValue`.|
+|threatTypes|microsoft.graph.security.threatType collection|Indicates the threat types. The possible values are: `unknown`, `spam`, `malware`, `phish`, `none`, `unknownFutureValue`.|
 |timelineEvents|[microsoft.graph.security.timelineEvent](../resources/security-timelineevent.md) collection|Delivery and post-delivery events that happened to the email.|
 |threatDetectionDetails|[microsoft.graph.security.threatDetectionDetail](../resources/security-threatdetectiondetail.md) collection|Information about threats detected in the email.|
 |urls|[microsoft.graph.security.analyzedEmailUrl](../resources/security-analyzedemailurl.md) collection|A collection of the URLs in the email.|
-
-### antispamDirectionality values
-
-|Member|
-|:---|
-|unknown|
-|inbound|
-|outbound|
-|intraOrg|
-|unknownFutureValue|
-
-### threatType values
-
-|Member|
-|:---|
-|unknown|
-|spam|
-|malware|
-|phish|
-|none|
-|unknownFutureValue|
-
-### remediationSeverity values
-
-|Member|
-|:---|
-|low|
-|medium|
-|high|
-|unknownFutureValue|
-
-### remediationAction values
-
-|Member|
-|:---|
-|moveToJunk|
-|moveToInbox|
-|hardDelete|
-|softDelete|
-|moveToDeletedItems|
-|unknownFutureValue|
 
 ## Relationships
 None.
