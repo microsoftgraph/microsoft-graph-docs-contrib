@@ -42,10 +42,10 @@ Base type for [sharePointProtectionPolicy](../resources/sharepointprotectionpoli
 |isEnabled|Boolean|Indicates whether the policy is enabled.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the person who last modified the policy.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the policy was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|offboardRequestedDateTime|DateTimeOffset|The date and time when removal was requested for the protection policy. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|offboardRequestedDateTime|DateTimeOffset|The date and time when offboarding was requested for the protection policy. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |protectionPolicyArtifactCount|[protectionPolicyArtifactCount](../resources/protectionpolicyartifactcount.md)|The count of artifacts in the protection policy by status. Returned only on `$select`.|
 |retentionSettings|[retentionSetting](../resources/retentionsetting.md) collection|Contains the retention setting details for the policy.|
-|status|[protectionPolicyStatus](../resources/protectionpolicybase.md#protectionpolicystatus-values)|The aggregated status of the protection units associated with the policy. The possible values are: `inactive`, `activeWithErrors`, `updating`, `active`, `offboardRequested`, `offboarded`, `unknownFutureValue`.|
+|status|[protectionPolicyStatus](../resources/protectionpolicybase.md#protectionpolicystatus-values)|The aggregated status of the protection units associated with the policy. The possible values are: `inactive`, `activeWithErrors`, `updating`, `active`, `unknownFutureValue`, `offboardRequested`, `offboarded`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `offboardRequested`, `offboarded`.|
 
 ### protectionPolicyStatus values
 
@@ -55,9 +55,9 @@ Base type for [sharePointProtectionPolicy](../resources/sharepointprotectionpoli
 |activeWithErrors | Some units are protected and others are unprotected.|
 |inactive | All units are unprotected.|
 |updating | Some or all units are in a `protectRequested`, `unprotectRequested`, or `removeRequested` state.|
-|offboardRequested | The protection policy is pending removal.|
-|offboarded | The protection policy was removed.|
 |unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
+|offboardRequested | Offboarding was requested for the protection policy. You must use the `Prefer: include-unknown-enum-members` request header to get this value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations).|
+|offboarded | The protection policy was successfully offboarded. You must use the `Prefer: include-unknown-enum-members` request header to get this value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations).|
 
 ## Relationships
 None.
