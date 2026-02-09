@@ -1497,6 +1497,42 @@
       "CreatedDateTime": "2025-04-21T21:35:10.508777Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    },
+      {
+      "ChangeList": [
+        {
+          "Id": "c27c982e-a5f0-4ce9-af0d-7ad5ee81f354",
+          "ApiChange": "Member",
+          "ChangedApiName": "restrictWebGrounding",
+          "ChangeType": "Addition",
+          "Description": "Added the `restrictWebGrounding` member to the **dlpAction** enumeration.",
+          "Target": "dlpAction"
+        }
+      ],
+      "Id": "c27c982e-a5f0-4ce9-af0d-7ad5ee81f354",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-02-08T18:25:24.4403625Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4e109c2b-c08e-49ff-9ab8-f65955a8d96b",
+          "ApiChange": "Member",
+          "ChangedApiName": "restrictWebGrounding",
+          "ChangeType": "Addition",
+          "Description": "Added the `restrictWebGrounding` member to the **dlpAction** enumeration.",
+          "Target": "dlpAction"
+        }
+      ],
+      "Id": "4e109c2b-c08e-49ff-9ab8-f65955a8d96b",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-02-08T18:25:24.4407265Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
     }
   ]
 }

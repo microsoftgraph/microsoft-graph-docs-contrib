@@ -171,7 +171,12 @@ Content-Type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.processContentResponse",
   "protectionScopeState": "notModified",
-  "policyActions": [],
+  "policyActions": [
+    {
+      "@odata.type": "#microsoft.graph.dlpAction",
+      "action" : "restrictWebGrounding"
+    }
+  ],
   "processingErrors": []
 }
 ```
