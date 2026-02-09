@@ -90,7 +90,6 @@ Content-Type: application/json
     {
       "id": "e7f439cd-2e84-4b15-a903-f6d82a7b9c21",
       "follower": {
-        "application": null,
         "user": {
           "@odata.type": "#microsoft.graph.userIdentity",
           "displayName": "Cameron",
