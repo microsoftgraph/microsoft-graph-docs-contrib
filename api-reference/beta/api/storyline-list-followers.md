@@ -90,9 +90,6 @@ Content-Type: application/json
     {
       "id": "e7f439cd-2e84-4b15-a903-f6d82a7b9c21",
       "follower": {
-        "group": null,
-        "audience": null,
-        "application": null,
         "user": {
           "@odata.type": "#microsoft.graph.userIdentity",
           "displayName": "Cameron",
@@ -104,9 +101,6 @@ Content-Type: application/json
     {
       "id": "a8c55d92-1374-4e68-bb9f-3c8d7e924156",
       "follower": {
-        "group": null,
-        "audience": null,
-        "application": null,
         "user": {
           "@odata.type": "#microsoft.graph.userIdentity",
           "displayName": "Jordan",
