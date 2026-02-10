@@ -104,9 +104,6 @@ Content-Type: application/json
     {
       "id": "d4b89c76-3f8e-4a15-9c72-8e5f6b3d91a2",
       "following": {
-        "group": null,
-        "audience": null,
-        "application": null,
         "user": {
           "@odata.type": "#microsoft.graph.userIdentity",
           "displayName": "Taylor",
