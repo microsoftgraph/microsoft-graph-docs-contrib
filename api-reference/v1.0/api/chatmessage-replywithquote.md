@@ -64,7 +64,6 @@ If successful, this method returns a `201 Created` response code and a new [chat
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "chatmessage.replyWithQuote",
