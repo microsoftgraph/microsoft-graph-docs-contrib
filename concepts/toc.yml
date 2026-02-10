@@ -350,6 +350,8 @@ items:
       href: backup-storage-concept-overview.md
     - name: Managing information barriers for file storage containers
       href: information-barrier-for-file-storage-containers.md
+    - name: Filtering mailbox artifacts with granular search queries
+      href: backup-restore-granular-search.md
     - name: Error codes
       href: backup-storage-error-codes.md
   - name: Calendar

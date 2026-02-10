@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Process [content](../resources/processcontentrequest.md) against data protection policies in the context of the current, or specified, user.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
