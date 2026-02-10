@@ -4,7 +4,7 @@ description: "Retrieve a list of users who are following a specified user."
 author: "aditijha4"
 ms.date: 02/06/2026
 ms.localizationpriority: medium
-ms.subservice: "employee-engagement"
+ms.subservice: "viva-engage"
 doc_type: apiPageType
 ---
 

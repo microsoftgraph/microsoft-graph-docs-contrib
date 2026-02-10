@@ -4,7 +4,7 @@ description: "Represents a user that the specified user is following."
 author: "aditijha4"
 ms.date: 02/06/2026
 ms.localizationpriority: medium
-ms.subservice: "employee-engagement"
+ms.subservice: "viva-engage"
 doc_type: resourcePageType
 ---
 
@@ -45,15 +45,7 @@ The following JSON representation shows the resource type.
   "openType": false
 }
 -->
-``` json
-{
-  "@odata.type": "#microsoft.graph.storylineFollowing",
-  "id": "String (identifier)",
-  "following": {
-    "@odata.type": "microsoft.graph.engagementIdentitySet"
-  }
-}
-```
+```json
 {
   "@odata.type": "#microsoft.graph.storylineFollowing",
   "id": "String (identifier)",

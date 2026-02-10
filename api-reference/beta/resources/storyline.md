@@ -4,7 +4,7 @@ description: "Represents a user's storyline for following and engagement feature
 author: "aditijha4"
 ms.date: 02/06/2026
 ms.localizationpriority: medium
-ms.subservice: "employee-engagement"
+ms.subservice: "viva-engage"
 doc_type: resourcePageType
 ---
 
