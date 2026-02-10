@@ -1,8 +1,8 @@
 ---
 title: "Set up authentication for unified tenant configuration management APIs"
 description: "Learn how to authenticate and configure the unified tenant configuration management service principal in Microsoft Graph."
-author: "swatyario"
-ms.date: 01/19/2026
+author: "nicharl"
+ms.date: 02/10/2026
 ms.localizationpriority: medium
 ms.subservice: "tenant-administration"
 ---
@@ -57,7 +57,7 @@ You can use the following options when you add the UTCM service principal to a t
 2. Connect to Microsoft Graph:
 
    ```powershell
-   Connect-MgGraph -Scopes 'Application.ReadWrite.All'
+   Connect-MgGraph -Scopes @('Application.ReadWrite.All', 'AppRoleAssignment.ReadWrite.All')
    ```
 
 3. Create the service principal:
