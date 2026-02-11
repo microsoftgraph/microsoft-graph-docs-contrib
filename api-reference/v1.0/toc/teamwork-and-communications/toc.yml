@@ -761,6 +761,8 @@ items:
         href: ../../api/chatmessage-setreaction.md
       - name: Unset reaction to a message in channel
         href: ../../api/chatmessage-unsetreaction.md
+      - name: Reply with quote
+        href: ../../api/chatmessage-replywithquote.md
     - name: Hosted content
       items:
       - name: List all hosted content
