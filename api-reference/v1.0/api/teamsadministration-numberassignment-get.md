@@ -12,8 +12,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.teamsAdministration
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Read the properties and relationships of [microsoft.graph.teamsAdministration.numberAssignment](../resources/teamsadministration-numberassignment.md) object. This action retrieves all Microsoft Teams telephone numbers currently available within your tenant.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -64,7 +62,7 @@ The following request shows how to get assignment details for a single telephone
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments/YmMyNjMyZTMtNzUwYy00N2Q3LWFlYWUtOWZlZTAzNWJjMGM3fCsxMjAyMzQ1Njc4OQ
+GET https://graph.microsoft.com/v1.0/admin/teams/telephoneNumberManagement/numberAssignments/YmMyNjMyZTMtNzUwYy00N2Q3LWFlYWUtOWZlZTAzNWJjMGM3fCsxMjAyMzQ1Njc4OQ
 ```
 
 ### Response

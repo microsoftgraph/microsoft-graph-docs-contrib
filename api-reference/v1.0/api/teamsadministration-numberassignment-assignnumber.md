@@ -12,8 +12,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.teamsAdministration
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Creates an asynchronous order to assign a telephone number to a user account.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -71,7 +69,7 @@ The following example shows a request.
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments/assignNumber
+POST https://graph.microsoft.com/v1.0/admin/teams/telephoneNumberManagement/numberAssignments/assignNumber
 Content-Type: application/json
 
 {
@@ -93,6 +91,6 @@ The following example shows the response.
 -->
 ```http
 HTTP/1.1 202 Accepted
-Location: https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/operations('QXNzaWdubWVudHw2Y2E4Yjc0Ni00YzgxLTRhY2EtOTUyNi1jZmNjNGRiYWYyMmI')
+Location: https://graph.microsoft.com/v1.0/admin/teams/telephoneNumberManagement/operations('QXNzaWdubWVudHw2Y2E4Yjc0Ni00YzgxLTRhY2EtOTUyNi1jZmNjNGRiYWYyMmI')
 ```
 

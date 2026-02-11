@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.teamsAdministration
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents a collection of available telephone number management operations.
 
 Inherits from [entity](../resources/entity.md).

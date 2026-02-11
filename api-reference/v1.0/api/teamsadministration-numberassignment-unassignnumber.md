@@ -12,8 +12,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.teamsAdministration
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Creates an asynchronous order to unassign a telephone number from a user account.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -68,7 +66,7 @@ The following example shows a request.
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments/unassignNumber
+POST https://graph.microsoft.com/v1.0/admin/teams/telephoneNumberManagement/numberAssignments/unassignNumber
 Content-Type: application/json
 
 {
@@ -88,6 +86,6 @@ The following example shows the response.
 -->
 ```http
 HTTP/1.1 202 Accepted
-Location: https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/operations('VW5hc3NpZ25tZW50fDNmNmJmMWZkLTlhMzgtNDJkNi04ZDY0LTg0ZmNmZjlmYzdmNA')
+Location: https://graph.microsoft.com/v1.0/admin/teams/telephoneNumberManagement/operations('VW5hc3NpZ25tZW50fDNmNmJmMWZkLTlhMzgtNDJkNi04ZDY0LTg0ZmNmZjlmYzdmNA')
 ```
 

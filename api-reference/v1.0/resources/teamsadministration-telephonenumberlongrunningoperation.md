@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.teamsAdministration
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents the operations available for getting telephone number asynchronous operation details.
 
 

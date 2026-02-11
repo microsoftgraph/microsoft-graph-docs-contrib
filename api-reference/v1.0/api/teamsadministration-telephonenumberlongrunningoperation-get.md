@@ -12,8 +12,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.teamsAdministration
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Read the properties and relationships of [microsoft.graph.teamsAdministration.telephoneNumberLongRunningOperation](../resources/teamsadministration-telephonenumberlongrunningoperation.md) object. This method is used to query the status of an assign or unassign number action using Graph API. This link is returned in the Location response header found in assign or unassign operation result.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -64,7 +62,7 @@ The following example shows a request.
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/operations{'QXNzaWdubWVudHw2Y2E4Yjc0Ni00YzgxLTRhY2EtOTUyNi1jZmNjNGRiYWYyMmI'}
+GET https://graph.microsoft.com/v1.0/admin/teams/telephoneNumberManagement/operations{'QXNzaWdubWVudHw2Y2E4Yjc0Ni00YzgxLTRhY2EtOTUyNi1jZmNjNGRiYWYyMmI'}
 ```
 
 ### Response
@@ -89,7 +87,7 @@ Content-Type: application/json
     "status": "succeeded",
     "numbers": [
       {
-        "resourceLocation": "https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments/N2EyMDUxOTctOGU1OS00ODdkLWI5ZmEtM2ZjMWIxMDhmMWU1fCsxMjA2MTIzNDU2Nw",
+        "resourceLocation": "https://graph.microsoft.com/v1.0/admin/teams/telephoneNumberManagement/numberAssignments/N2EyMDUxOTctOGU1OS00ODdkLWI5ZmEtM2ZjMWIxMDhmMWU1fCsxMjA2MTIzNDU2Nw",
         "status": "succeeded"
       }
     ]

@@ -12,8 +12,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.teamsAdministration
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 This method is used to update an existing number with optional attributes. Currently supported attributes are `locationId`, `networkSiteId`, and `reverseNumberLookupOptions`.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -72,7 +70,7 @@ The following example shows a request to update `locationId` of a telephone numb
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments/updateNumber
+POST https://graph.microsoft.com/v1.0/admin/teams/telephoneNumberManagement/numberAssignments/updateNumber
 Content-Type: application/json
 
 {
@@ -105,7 +103,7 @@ The following example shows a request to update `networkSiteId` of a telephone n
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments/updateNumber
+POST https://graph.microsoft.com/v1.0/admin/teams/telephoneNumberManagement/numberAssignments/updateNumber
 Content-Type: application/json
 
 {
@@ -139,7 +137,7 @@ The following example shows a request to update `reverseNumberLookupOptions` for
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments/updateNumber
+POST https://graph.microsoft.com/v1.0/admin/teams/telephoneNumberManagement/numberAssignments/updateNumber
 Content-Type: application/json
 
 {
@@ -173,7 +171,7 @@ The following example shows a request to update `locationId` of a telephone numb
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/admin/teams/telephoneNumberManagement/numberAssignments/updateNumber
+POST https://graph.microsoft.com/v1.0/admin/teams/telephoneNumberManagement/numberAssignments/updateNumber
 Content-Type: application/json
 
 {
