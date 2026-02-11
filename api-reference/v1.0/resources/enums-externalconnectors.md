@@ -93,6 +93,25 @@ Namespace: microsoft.graph.externalConnectors
 | fileExtension
 | iconUrl
 | unknownFutureValue
+| personEmails
+| personAddresses
+| personAnniversaries
+| personName
+| personNote
+| personPhones
+| personCurrentPosition
+| personWebAccounts
+| personWebSite
+| personSkills
+| personProjects
+| personAccount
+| personAwards
+| personCertifications
+| personAssistants
+| personColleagues
+| personManager
+| personAlternateContacts
+| personEmergencyContacts
 
 ### propertyType values
 
