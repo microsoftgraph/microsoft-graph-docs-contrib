@@ -12,7 +12,6 @@ ms.date: 02/10/2026
 
 Namespace: microsoft.graph.externalConnectors
 
-
 Represents a complex data type used to add people-related properties to items indexed by an [externalConnection](externalconnectors-externalconnection.md). You can also use the principalCollection data type when there's list of people.
 
 ## Properties
