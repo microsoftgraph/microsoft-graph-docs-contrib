@@ -78,6 +78,26 @@ Namespace: microsoft.graph.externalConnectors
 | externalGroup
 | unknownFutureValue
 
+### contentCategory values
+
+| Member
+|:----------
+| uncategorized
+| knowledgeBase
+| wikis
+| fileRepository
+| qna
+| crm
+| dashboard
+| people
+| media
+| email
+| messaging
+| meetingTranscripts
+| taskManagement
+| learningManagement
+| unknownFutureValue
+
 ### label values
 
 | Member
@@ -93,6 +113,24 @@ Namespace: microsoft.graph.externalConnectors
 | fileExtension
 | iconUrl
 | unknownFutureValue
+| containerName
+| containerUrl
+| assignedToPeople
+| dueDate
+| closedDate
+| closedBy
+| reportedBy
+| sprintName
+| severity
+| state
+| priority
+| secondaryId
+| itemParentId
+| parentUrl
+| tags
+| itemType
+| itemPath
+| numberOfReactions
 
 ### propertyType values
 
@@ -107,6 +145,7 @@ Namespace: microsoft.graph.externalConnectors
 | int64Collection
 | doubleCollection
 | dateTimeCollection
+| principal
 | unknownFutureValue
 
 ### ruleOperation values
