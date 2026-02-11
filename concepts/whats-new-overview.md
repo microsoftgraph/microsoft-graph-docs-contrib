@@ -23,8 +23,11 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 ### Search
 
 Added **Principal** and  **PrincipalCollection** data types to the [externalConnection](../api-reference/v1.0/resources/externalconnectors-principal.md) to specify as the data type people property related items in the external connection.
+
 Added **description** property to the [externalConnection](../api-reference/v1.0/resources/externalconnectors-property.md‎) to be add description to the schema properties in the external connection.
+
 Added more tags or semantic labels that can be added to **labels** property [externalConnection](../api-reference/v1.0/resources/externalconnectors-property.md‎) in the external connection schema. Labels help Microsoft 365 Copilot understand the semantics of the data in the connection and provide more relevant results. 
+
 Added **contentCategory** property to the [externalConnection](../api-reference/v1.0/resources/externalconnectors-externalconnection.md‎) to specify the domain category of the content associated with the external connection for improved relevance and ranking.
 
 
