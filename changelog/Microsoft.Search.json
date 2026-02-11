@@ -15,7 +15,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "contentCategory",
           "ChangeType": "Addition",
-          "Description": "Added the **contentCategory** property to the [externalConnection](https://learn.microsoft.com/en-us/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta) resource.",
+          "Description": "Added the **contentCategory** property to the [externalConnection](https://learn.microsoft.com/en-us/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-1.0) resource.",
           "Target": "externalConnection"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "description",
           "ChangeType": "Addition",
-          "Description": "Added the **description** property to the [property](https://learn.microsoft.com/en-us/graph/api/resources/externalconnectors-property?view=graph-rest-beta) resource type.",
+          "Description": "Added the **description** property to the [property](https://learn.microsoft.com/en-us/graph/api/resources/externalconnectors-property?view=graph-rest-1.0) resource type.",
           "Target": "property"
         },
         {
