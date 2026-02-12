@@ -1,5 +1,5 @@
 ---
-title: "Unfollow user"
+title: "Unfollow a user on Viva Engage"
 description: "Stop following a user."
 author: "aditijha4"
 ms.date: 02/06/2026
@@ -8,13 +8,14 @@ ms.subservice: "viva-engage"
 doc_type: apiPageType
 ---
 
-# Unfollow user
+# Unfollow a user on Viva Engage
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Stop following a user. Removes the specified user from the signed-in user's following list.
+Stop following a [user](../resources/user.md). 
+Removes the specified user from the signed-in user's following list.
 
 ## Permissions
 

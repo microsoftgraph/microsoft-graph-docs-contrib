@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of users who are following a specified user.
+Retrieve a list of [users](../resources/user.md) who are following a specified [user](../resources/user.md)r.
 
 ## Permissions
 

@@ -1,6 +1,6 @@
 ---
-title: "Follow user"
-description: "Follow a user in the organization."
+title: "Follow a user in the organization."
+description: "Follow a user on Viva Engage"
 author: "aditijha4"
 ms.date: 02/06/2026
 ms.localizationpriority: medium
@@ -8,13 +8,15 @@ ms.subservice: "viva-engage"
 doc_type: apiPageType
 ---
 
-# Follow user
+# Follow a user in the organization.
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Follow a user in the organization.
+Follow a [user](../resources/user.md) in the organization.
+
+In Viva Engage, users may follow other users within the platform. This feature helps users stay updated with the activities and posts of the people they follow. It is particularly useful for keeping track of influential or key individuals within the organization, such as leaders or ambassadors who can help spread news and awareness on specific topics.
 
 ## Permissions
 
