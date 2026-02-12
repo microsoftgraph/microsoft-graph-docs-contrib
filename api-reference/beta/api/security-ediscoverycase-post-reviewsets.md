@@ -22,6 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "security_ediscoverycase_post_reviewsets" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoverycase-post-reviewsets-permissions.md)]
+[!INCLUDE [rbac-rbac-ediscovery-reviewset-tag-apis](../includes/rbac-for-apis/rbac-ediscovery-reviewset-tag-apis.md)]
 
 ## HTTP request
 

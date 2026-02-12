@@ -1,7 +1,7 @@
 ---
 title: "List taskProcessingResults"
 description: "Get the taskProcessingResult resources from a run."
-author: "AlexFilipin"
+author: "KristinaSmith"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType

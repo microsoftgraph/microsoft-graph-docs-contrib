@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "security_ediscoverynoncustodialdatasource_release" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoverynoncustodialdatasource-release-permissions.md)]
 
+[!INCLUDE [rbac-rbac-ediscovery-custodian-apis](../includes/rbac-for-apis/rbac-ediscovery-custodian-export-apis.md)]
+
 ## HTTP request
 
 <!-- {

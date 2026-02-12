@@ -202,6 +202,7 @@ name. |
 | unseenCount | Int32 | Count of conversations that have received new posts since the signed-in user last visited the group. This property is the same as **unseenConversationsCount**.<br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`). |
 | unseenMessagesCount | Int32 | Count of new posts that have been delivered to the group's conversations since the signed-in user's last visit to the group. <br><br>Returned only on `$select`. |
 | visibility | String | Specifies the group join policy and group content visibility for groups. The possible values are: `Private`, `Public`, or `HiddenMembership`. `HiddenMembership` can be set only for Microsoft 365 groups when the groups are created. It can't be updated later. Other values of visibility can be updated after group creation.<br> If visibility value isn't specified during group creation on Microsoft Graph, a security group is created as `Private` by default, and Microsoft 365 group is `Public`. Groups assignable to roles are always `Private`. To learn more, see [group visibility options](#group-visibility-options). <br><br>Returned by default. Nullable. |
+| welcomeMessageEnabled | Boolean | Indicates whether a welcome message is sent to new members when they are added to the group. The default value is `true`. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`). |
 | writebackConfiguration | [groupWritebackConfiguration](groupwritebackconfiguration.md) | Specifies whether or not a group is configured to write back group object properties to on-premises Active Directory. These properties are used when group writeback is configured in the [Microsoft Entra Connect](/azure/active-directory/hybrid/how-to-connect-group-writeback-v2) sync client. |
 
 ### Group visibility options
@@ -308,6 +309,7 @@ The following JSON representation shows the resource type.
   "groupTypes": ["String"],
   "hideFromAddressLists": "Boolean",
   "hideFromOutlookClients": "Boolean",
+  "welcomeMessageEnabled": "Boolean",
   "id": "String (identifier)",
   "isFavorite": "Boolean",
   "isArchived": "Boolean",

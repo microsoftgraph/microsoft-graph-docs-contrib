@@ -1,7 +1,7 @@
 ---
 title: "taskReport: summary"
 description: "Get a summary of task processing results for a specified time period."
-author: "AlexFilipin"
+author: "KristinaSmith"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType

@@ -23,6 +23,7 @@ Create a new [authenticationEventListener](../resources/authenticationeventliste
 - [onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md)
 - [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md)
 - [onPhoneMethodLoadStartListener](../resources/onphonemethodloadstartlistener.md)
+- [onPasswordSubmitListener](../resources/onpasswordsubmitlistener.md)
 - [onFraudProtectionLoadStartListener](../resources/onFraudProtectionLoadStartListener.md) resource type
 
 > [!NOTE]
@@ -73,6 +74,7 @@ You can specify the following properties when creating an **authenticationEventL
 |handler|[onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onTokenIssuanceStartListener** listener type.|
 |handler|[onUserCreateStartHandler](../resources/ontokenissuancestarthandler.md)|The handler to invoke when conditions are met. Can be set for the **onUserCreateStartListener** listener type.|
 |handler|[onPhoneMethodLoadStartHandler](../resources/onphonemethodloadstarthandler.md) | The handler to invoke when conditions are met. Can be set for the **onPhoneMethodLoadStartListener** listener type. |
+|handler|[onPasswordSubmitHandler](../resources/onpasswordsubmithandler.md) | The handler to invoke when conditions are met. Can be set for the **onPasswordSubmitListener** listener type. |
 |handler|[onFraudProtectionLoadStartHandler](../resources/onFraudProtectionLoadStartHandler.md) | The handler to invoke when conditions are met. Can be updated for the **onFraudProtectionLoadStartListener** type. |
 |priority|Int32| The priority of this handler. Between 0 (lower priority) and 1000 (higher priority). Required.|
 

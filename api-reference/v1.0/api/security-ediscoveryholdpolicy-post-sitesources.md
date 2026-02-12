@@ -21,6 +21,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "security_ediscoveryholdpolicy_post_sitesources" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoveryholdpolicy-post-sitesources-permissions.md)]
 
+[!INCLUDE [rbac-ediscovery-write](../includes/rbac-for-apis/rbac-ediscovery-apis-write.md)]
+
 ## HTTP request
 
 <!-- {

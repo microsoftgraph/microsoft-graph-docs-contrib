@@ -17,7 +17,7 @@ Add an additional [driveItem][] from a drive to a [bundle][].
 [bundle]: ../resources/bundle.md
 [driveItem]: ../resources/driveItem.md
 
-[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

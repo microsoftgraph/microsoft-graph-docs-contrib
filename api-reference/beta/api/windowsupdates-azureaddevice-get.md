@@ -1,12 +1,12 @@
 ---
 title: "Get azureADDevice"
 description: "Read the properties of an azureADDevice object."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.custom: has-azure-ad-ps-ref
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 09/16/2024
+ms.date: 01/27/2026
 ---
 
 # Get azureADDevice

@@ -239,7 +239,7 @@ Most group resource data is stored in Microsoft Entra ID, but some properties, s
 Additionally, properties stored outside the main data store aren't supported for [change tracking](/graph/delta-query-overview). Changes to these properties don't appear in delta query responses.
 
 The following group properties are stored outside the main data store:  
-**accessType**, **allowExternalSenders**, **autoSubscribeNewMembers**, **cloudLicensing**, **hideFromAddressLists**, **hideFromOutlookClients**, **isFavorite**, **isSubscribedByMail**, **unseenConversationsCount**, **unseenCount**, **unseenMessagesCount**, **membershipRuleProcessingStatus**, **isArchived**.
+**accessType**, **allowExternalSenders**, **autoSubscribeNewMembers**, **cloudLicensing**, **hideFromAddressLists**, **hideFromOutlookClients**, **isArchived**, **isFavorite**, **isSubscribedByMail**, **membershipRuleProcessingStatus**, **unseenConversationsCount**, **unseenCount**, **unseenMessagesCount**, **welcomeMessageEnabled**.
 
 ## Common use cases for the groups API
 

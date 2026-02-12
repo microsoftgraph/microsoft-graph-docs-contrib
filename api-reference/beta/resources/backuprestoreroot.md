@@ -54,6 +54,9 @@ Represents the Microsoft 365 Backup Storage service in a tenant.
 |sharePointRestoreSessions|[sharePointRestoreSession](../resources/sharepointrestoresession.md) collection|The list of SharePoint restore sessions available in the tenant.|
 |siteInclusionRules|[siteProtectionRule](../resources/siteprotectionrule.md) collection|The list of site inclusion rules applied to the tenant.|
 |siteProtectionUnits|[siteProtectionUnit](../resources/siteprotectionunit.md) collection|The list of site protection units in the tenant.|
+|browseSessions|[browseSessionBase](../resources/browsesessionbase.md) collection| The list of browse sessions in the tenant.|
+|sharePointBrowseSessions|[sharePointBrowseSession](../resources/sharepointbrowsesession.md) collection| The list of sharepoint browse sessions in the tenant.|
+|oneDriveForBusinessBrowseSessions|[oneDriveForBusinessBrowseSession](../resources/onedriveforbusinessbrowsesession.md) collections| The list of onedriveforbusiness browse sessions in the tenant.|
 
 ## JSON representation
 

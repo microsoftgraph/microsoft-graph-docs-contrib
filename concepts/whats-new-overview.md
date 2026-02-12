@@ -119,6 +119,7 @@ Going forward, use the Microsoft 365 Copilot usage APIs under the `/copilot` URL
 
 Added migration guidance for Microsoft Defender for Endpoint (MDE) advanced hunting APIs to help organizations transition from the retired APIs that were available through the `https://api.securitycenter.microsoft.com` endpoint to the advanced hunting APIs available in Microsoft Graph. For more information, see [Migrate from the older APIs](/graph/api/resources/security-api-overview#migrate-from-older-apis).
 
+
 ### Security | Alerts and incidents
 
 - Added the **priorityScore** property to the [incident](/graph/api/resources/security-incident) resource to provide a priority score for the incident from 0 to 100, with > 85 being the top priority, 15 - 85 medium priority, and < 15 low priority. This score is generated using machine learning and is based on multiple factors, including severity, disruption impact, threat intelligence, alert types, asset criticality, threat analytics, incident rarity, and additional priority signals.

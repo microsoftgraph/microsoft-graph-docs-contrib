@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|MailboxItem.ImportExport|Not available.|
+|Delegated (work or school account)|MailboxItem.Export|MailboxItem.ImportExport|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|MailboxItem.ImportExport.All|Not available.|
+|Application|MailboxItem.Export.All|MailboxItem.ImportExport.All|
 

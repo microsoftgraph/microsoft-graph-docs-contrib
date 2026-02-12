@@ -22,6 +22,7 @@ Delete an [authenticationEventListener](../resources/authenticationeventlistener
 - [onUserCreateStartListener resource type](../resources/onusercreatestartlistener.md) resource type
 - [onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md) resource type
 - [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md) resource type
+- [onPasswordSubmitListener](../resources/onpasswordsubmitlistener.md) resource type
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -110,4 +111,3 @@ The following example shows the response.
 ```http
 HTTP/1.1 204 No Content
 ```
-
