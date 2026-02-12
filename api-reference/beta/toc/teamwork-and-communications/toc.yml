@@ -20,14 +20,6 @@ items:
       href: ../../api/teamsadministration-numberassignment-unassignnumber.md
     - name: updateNumber
       href: ../../api/teamsadministration-numberassignment-updatenumber.md
-  - name: Teams user configuration
-    items:
-    - name: Teams user configuration
-      href: ../../resources/teamsadministration-teamsuserconfiguration.md
-    - name: List
-      href: ../../api/teamsadministration-teamsadminroot-list-userconfigurations.md
-    - name: Get
-      href: ../../api/teamsadministration-teamsuserconfiguration-get.md
   - name: Telephone number long running operation
     items:
     - name: Telephone number long running operation

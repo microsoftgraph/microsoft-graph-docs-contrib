@@ -1,0 +1,73 @@
+---
+author: "swatyario"
+ms.localizationpriority: medium
+ms.subservice: "tenant-administration"
+ms.topic: include
+---
+
+<!-- markdownlint-disable MD041-->
+
+### Description
+
+Microsoft Entra Authentication Method Policy Temporary
+
+
+### Parameters
+
+| Parameter | Attribute | DataType | Description | Allowed Values |
+| --- | --- | --- | --- | --- |
+| DefaultLength | Write | UInt32 | Default length in characters of a Temporary Access Pass object. Must be between 8 and 48 characters. | - |
+| DefaultLifetimeInMinutes | Write | UInt32 | Default lifetime in minutes for a Temporary Access Pass. Value can be any integer between the minimumLifetimeInMinutes and maximumLifetimeInMinutes. | - |
+| IsUsableOnce | Write | Boolean | If true, all the passes in the tenant will be restricted to one-time use. If false, passes in the tenant can be created to be either one-time use or reusable. | - |
+| MaximumLifetimeInMinutes | Write | UInt32 | Maximum lifetime in minutes for any Temporary Access Pass created in the tenant. Value can be between 10 and 43200 minutes (equivalent to 30 days). | - |
+| MinimumLifetimeInMinutes | Write | UInt32 | Minimum lifetime in minutes for any Temporary Access Pass created in the tenant. Value can be between 10 and 43200 minutes (equivalent to 30 days). | - |
+| ExcludeTargets | Write | AuthenticationMethodPolicyTemporaryExcludeTarget[] | Displayname of the groups of users that are excluded from a policy. | - |
+| IncludeTargets | Write | AuthenticationMethodPolicyTemporaryIncludeTarget[] | Displayname of the groups of users that are included from a policy. | - |
+| State | Write | String | The state of the policy. Possible values are: enabled, disabled. | `enabled`, `disabled` |
+| Id | Key | String | The unique identifier for an entity. Read-only. | - |
+| Ensure | Write | String | Present ensures the policy exists, absent ensures it's removed. | `Present`, `Absent` |
+
+#### AuthenticationMethodPolicyTemporaryExcludeTarget
+
+##### Parameters
+
+| Parameter | Attribute | DataType | Description | Allowed Values |
+| --- | --- | --- | --- | --- |
+| Id | Write | String | The object identifier of an Microsoft Entra group. | - |
+| TargetType | Write | String | The type of the authentication method target. Possible values are: group and unknownFutureValue. | `user`, `group`, `unknownFutureValue` |
+
+#### AuthenticationMethodPolicyTemporaryIncludeTarget
+
+##### Parameters
+
+| Parameter | Attribute | DataType | Description | Allowed Values |
+| --- | --- | --- | --- | --- |
+| Id | Write | String | The object identifier of an Microsoft Entra group. | - |
+| TargetType | Write | String | The type of the authentication method target. Possible values are: group and unknownFutureValue. | `user`, `group`, `unknownFutureValue` |
+
+
+### Permissions
+
+#### Microsoft Entra ID roles
+
+The following [roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) can be granted to the UTCM (Unified Tenant Configuration Management) service principal:
+
+| Operation | Least privileged role |
+|-----------|-----------------------|
+| Read      | Security Reader |
+| Update    | Authentication Policy Administrator |
+
+
+#### Microsoft Graph
+
+To authenticate with the Microsoft Graph API, this resource requires the following application permissions. Delegated scenarios aren't supported. For more information about Microsoft Graph permissions, see [Microsoft Graph permissions reference](/graph/permissions-reference).
+
+##### Application permissions
+
+| Operation | Supported permissions |
+|-----------|------------------------------|
+| Read      | Policy.Read.AuthenticationMethod, Group.Read.All |
+| Update    | Policy.ReadWrite.AuthenticationMethod, Group.Read.All |
+
+
+

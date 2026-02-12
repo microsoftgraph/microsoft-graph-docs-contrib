@@ -1,7 +1,7 @@
 ---
 title: "Create workflow"
 description: "Create a new workflow object. You can create up to 100 workflows in a tenant."
-author: "AlexFilipin"
+author: "KristinaSmith"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType

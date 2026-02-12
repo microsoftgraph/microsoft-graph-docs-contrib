@@ -1,11 +1,11 @@
 ---
 title: "List azureADDevice resources"
 description: "Get a list of azureADDevice objects and their properties."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 09/16/2024
+ms.date: 01/27/2026
 ---
 
 # List azureADDevice resources

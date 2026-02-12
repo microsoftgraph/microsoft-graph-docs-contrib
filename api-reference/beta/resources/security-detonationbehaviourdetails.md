@@ -1,5 +1,5 @@
 ---
-title: "detonationBehaviourDetails resource type"
+title: "detonationBehaviourDetails resource type (deprecated)"
 description: "Shows the exact events that took place during detonation."
 author: akgraph
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: resourcePageType
 ms.date: 03/12/2024
 ---
 
-# detonationBehaviourDetails resource type
+# detonationBehaviourDetails resource type (deprecated)
 
 Namespace: microsoft.graph.security
 
