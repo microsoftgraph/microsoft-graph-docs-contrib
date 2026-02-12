@@ -13,7 +13,7 @@ ms.date: 04/04/2024
 
 Namespace: microsoft.graph
 
-Get groups that the group is a direct member of.
+Get groups that the user is a direct member of.
 
 This operation is not transitive. Unlike getting a user's Microsoft 365 groups, this returns all types of groups, not just Microsoft 365 groups.
 
