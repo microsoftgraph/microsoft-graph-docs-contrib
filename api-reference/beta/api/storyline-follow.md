@@ -1,5 +1,5 @@
 ---
-title: "Follow a user in the organization."
+title: "storyline: follow"
 description: "Follow a user on Viva Engage"
 author: "aditijha4"
 ms.date: 02/06/2026
@@ -8,7 +8,7 @@ ms.subservice: "viva-engage"
 doc_type: apiPageType
 ---
 
-# Follow a user in the organization.
+# storyline: follow
 
 Namespace: microsoft.graph
 

@@ -1,5 +1,5 @@
 ---
-title: "Unfollow a user on Viva Engage"
+title: "storyline: unfollow"
 description: "Stop following a user."
 author: "aditijha4"
 ms.date: 02/06/2026
@@ -8,7 +8,7 @@ ms.subservice: "viva-engage"
 doc_type: apiPageType
 ---
 
-# Unfollow a user on Viva Engage
+# storyline: unfollow
 
 Namespace: microsoft.graph
 
