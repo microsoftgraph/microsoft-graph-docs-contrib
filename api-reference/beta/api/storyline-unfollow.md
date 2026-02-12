@@ -14,8 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Stop following a [user](../resources/user.md). 
-Removes the specified user from the signed-in user's following list.
+Stop following a user's [storyline](../resources/storyline.md). Removes the specified user from the signed-in user's following list.
 
 ## Permissions
 
