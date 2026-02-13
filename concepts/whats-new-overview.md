@@ -3,7 +3,7 @@ title: "What's new in Microsoft Graph"
 description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, and other resources."
 author: "lauragra"
 ms.localizationpriority: high
-ms.date: 01/30/2026
+ms.date: 02/13/2026
 ms.topic: whats-new
 ---
 
@@ -23,31 +23,20 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 ### External data connections
 
 Added 19 people domain semantic labels to the [label](/graph/api/resources/externalconnectors-enums#label-values) enumeration for Microsoft 365 Copilot connectors. These labels enable developers to map people profile data from external systems to standardized Microsoft Graph properties. Use these labels in [schema](/graph/api/resources/externalconnectors-schema) definitions to improve discoverability and integration of people data in Microsoft 365 Copilot experiences. The new labels include: `personEmails`, `personAddresses`, `personAnniversaries`, `personName`, `personNote`, `personPhones`, `personCurrentPosition`, `personWebAccounts`, `personWebSite`, `personSkills`, `personProjects`, `personAccount`, `personAwards`, `personCertifications`, `personAssistants`, `personColleagues`, `personManager`, `personAlternateContacts`, and `personEmergencyContacts`.
+### Groups
+
+Added the **resourceBehaviorOptions** and **resourceProvisioningOptions** properties to the [group](/graph/api/resources/group) resource. These properties enable you to specify group behaviors and associated resources for a Microsoft 365 group.
+
+### Identity and access | Identity and sign-in
+
+- QR code authentication method in Microsoft Entra ID lets you manage the QR code authentication method for users, and how they can sign in with a QR code and PIN. The following key resources support this capability:
+   - The [qrCodePinAuthenticationMethod](/graph/api/resources/qrcodepinauthenticationmethod) resource and related APIs for managing QR code PIN authentication methods for users. This single-factor authentication method is designed for frontline workers and combines a QR code with a PIN. The following related resources were also added: [qrCode](/graph/api/resources/qrcode), [qrPin](/graph/api/resources/qrpin), and [qrCodeImageDetails](/graph/api/resources/qrcodeimagedetails).
+   - The [qrCodePinAuthenticationMethodConfiguration](/graph/api/resources/qrcodepinauthenticationmethodconfiguration) resource for managing the QR code authentication method policy for a tenant.
+   - Updated the [authenticationMethodModes](/graph/api/resources/authenticationmethodmodes) and [baseAuthenticationMethod](/graph/api/resources/baseauthenticationmethod) enumerations to add the `qrCodePin` member to support this new authentication method.
 
 ### Message trace
 
 Use the message trace API to track the flow of email messages through your Exchange Online organization. For more information, see [exchangeMessageTrace](/graph/api/resources/exchangemessagetrace).
-
-### Granular browse and restore for backup storage
-
-Users can now browse a `fastRestore` endpoint and selectively restore files and folders by creating a browse session.
-
-The granular restore process is designed to be simple and efficient and consists of three main steps:
-
-- **Create a browse session**  
-  Initiate a browse session for a specific restore point (backup snapshot).  
-  - You can create a [SharePoint browse session](../api-reference/beta/api/backuprestoreroot-post-sharepointbrowsesessions.md) or a [OneDrive for Business browse session](../api-reference/beta/api/backuprestoreroot-post-onedriveforbusinessrestoresessions.md).
-
-- **Browse items**  
-  Once the session is created, the user can query it to list all backed-up items available within the browse session.  
-  - Results are returned as a collection of [browseQueryResponseItem](../api-reference/beta/resources/browsequeryresponseitem.md) objects, each representing a file, folder, or other resource.  
-  - You can browse items within a [SharePoint browse session](../api-reference/beta/api/sharepointbrowsesession-browse.md) or a [OneDrive for Business browse session](../api-reference/beta/api/onedriveforbusinessbrowsesession-browse.md).
-
-- **Create a restore session**  
-  Select one or more items from the browse session and initiates a restore session.  
-  - Only the selected items are restored to their previous state, leaving the rest of the site or drive unchanged.  
-  - You can create a [SharePoint granular restore session](../api-reference/beta/api/backuprestoreroot-post-sharepointrestoresessions.md#example-2-create-a-granular-restore-session) or a [OneDrive for Business granular restore session](../api-reference/beta/api/backuprestoreroot-post-onedriveforbusinessrestoresessions.md#example-2-create-a-granular-restore-session).
-
 
 ### Teamwork and communications | Administration
 - [Get the policy ID](/graph/api/teamsadministration-teamspolicyassignment-getpolicyid) for a given policy name and policy type within Teams administration.
@@ -55,6 +44,26 @@ The granular restore process is designed to be simple and efficient and consists
 - [Unassign a Teams policy](/graph/api/teamsadministration-teamspolicyuserassignment-unassign) from a user using the user ID and policy type.
 
 ## February 2026: New in preview only
+
+### Backup storage
+
+Users can now browse a `fastRestore` endpoint and selectively restore files and folders by creating a browse session.
+
+The granular restore process is designed to be simple and efficient and consists of three main steps:
+
+- **Create a browse session**  
+  Initiate a browse session for a specific restore point (backup snapshot).  
+  - You can create a [SharePoint browse session](/graph/api/backuprestoreroot-post-sharepointbrowsesessions?view=graph-rest-beta&preserve-view=true) or a [OneDrive for Business browse session](/graph/api/backuprestoreroot-post-onedriveforbusinessrestoresessions?view=graph-rest-beta&preserve-view=true).
+
+- **Browse items**  
+  Once the session is created, the user can query it to list all backed-up items available within the browse session.  
+  - Results are returned as a collection of [browseQueryResponseItem](/graph/api/resources/browsequeryresponseitem?view=graph-rest-beta&preserve-view=true) objects, each representing a file, folder, or other resource.  
+  - You can browse items within a [SharePoint browse session](/graph/api/sharepointbrowsesession-browse?view=graph-rest-beta&preserve-view=true) or a [OneDrive for Business browse session](/graph/api/onedriveforbusinessbrowsesession-browse?view=graph-rest-beta&preserve-view=true).
+
+- **Create a restore session**  
+  Select one or more items from the browse session and initiates a restore session.  
+  - Only the selected items are restored to their previous state, leaving the rest of the site or drive unchanged.  
+  - You can create a [SharePoint granular restore session](/graph/api/backuprestoreroot-post-sharepointrestoresessions?view=graph-rest-beta&preserve-view=true#example-2-create-a-granular-restore-session) or a [OneDrive for Business granular restore session](/graph/api/backuprestoreroot-post-onedriveforbusinessrestoresessions?view=graph-rest-beta&preserve-view=true#example-2-create-a-granular-restore-session).
 
 ### Files
 

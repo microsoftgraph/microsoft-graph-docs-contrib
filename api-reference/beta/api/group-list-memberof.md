@@ -1,23 +1,23 @@
 ---
-title: "List group memberOf"
-description: "Get groups and administrative units that the group is a direct member of."
+title: "List group memberships"
+description: "Get security groups, administrative units, and admin roles that the security group is a direct member of, or administrative units and admin roles that the Microsoft 365 group is a direct member of."
 author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
-ms.localizationpriority: medium
 ms.subservice: "entra-groups"
 doc_type: apiPageType
-ms.date: 11/30/2024
+ms.localizationpriority: medium
+ms.date: 02/13/2026
 ---
 
-# List group memberOf
+# List group memberships
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get groups and administrative units that the [group](../resources/group.md) is a direct member of.
+Get security groups, [administrative units](../resources/administrativeunit.md), and [admin roles](../resources/directoryrole.md) that the security [group](../resources/group.md) is a direct member of, or administrative units and admin roles that the Microsoft 365 group is a direct member of.
 
-This operation is not transitive. Unlike getting a user's Microsoft 365 groups, this returns all types of groups, not just Microsoft 365 groups.
+This operation is not transitive.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

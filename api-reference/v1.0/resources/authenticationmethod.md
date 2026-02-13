@@ -24,6 +24,7 @@ The **authenticationMethod** resource type is an abstract type that's inherited 
 + [passwordAuthenticationMethod](passwordauthenticationmethod.md)
 + [phoneAuthenticationMethod](phoneauthenticationmethod.md)
 + [platformCredentialAuthenticationMethod](platformcredentialauthenticationmethod.md)
++ [qrCodePinAuthenticationMethod](qrcodepinauthenticationmethod.md)
 + [softwareOathAuthenticationMethod](softwareoathauthenticationmethod.md)
 + [temporaryAccessPassAuthenticationMethod](temporaryaccesspassauthenticationmethod.md)
 + [windowsHelloForBusinessAuthenticationMethod](windowshelloforbusinessauthenticationmethod.md)
