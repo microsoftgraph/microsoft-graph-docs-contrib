@@ -153,10 +153,26 @@
         {
           "Id": "3d6a6577-456a-46f6-982f-b87f5bfbc09d",
           "ApiChange": "Enumeration",
+          "ChangedApiName": "longRunningOperationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **longRunningOperationStatus** enumeration type.",
+          "Target": "longRunningOperationStatus"
+        },
+        {
+          "Id": "3d6a6577-456a-46f6-982f-b87f5bfbc09d",
+          "ApiChange": "Enumeration",
           "ChangedApiName": "activationState",
           "ChangeType": "Addition",
           "Description": "Added the **activationState** enumeration type.",
           "Target": "activationState"
+        },
+        {
+          "Id": "3d6a6577-456a-46f6-982f-b87f5bfbc09d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "assignmentCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the **assignmentCategory** enumeration type.",
+          "Target": "assignmentCategory"
         },
         {
           "Id": "3d6a6577-456a-46f6-982f-b87f5bfbc09d",
