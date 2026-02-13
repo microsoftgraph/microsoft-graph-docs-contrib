@@ -257,6 +257,14 @@
         {
           "Id": "3d6a6577-456a-46f6-982f-b87f5bfbc09d",
           "ApiChange": "Resource",
+          "ChangedApiName": "teamsAdminRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsAdminRoot](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-teamsAdminRoot?view=graph-rest-1.0) resource.",
+          "Target": "teamsAdminRoot"
+        },
+        {
+          "Id": "3d6a6577-456a-46f6-982f-b87f5bfbc09d",
+          "ApiChange": "Resource",
           "ChangedApiName": "telephoneNumberLongRunningOperation",
           "ChangeType": "Addition",
           "Description": "Added the [telephoneNumberLongRunningOperation](https://learn.microsoft.com/en-us/graph/api/resources/teamsAdministration-telephoneNumberLongRunningOperation?view=graph-rest-1.0) resource and its methods.",
