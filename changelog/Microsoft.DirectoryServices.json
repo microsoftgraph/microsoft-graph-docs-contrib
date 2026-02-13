@@ -6397,6 +6397,32 @@
     {
       "ChangeList": [
         {
+          "Id": "8c433d47-c686-4fad-998e-2d1decb8d300",
+          "ApiChange": "Property",
+          "ChangedApiName": "resourceBehaviorOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **resourceBehaviorOptions** property to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource.",
+          "Target": "group"
+        },
+        {
+          "Id": "8c433d47-c686-4fad-998e-2d1decb8d300",
+          "ApiChange": "Property",
+          "ChangedApiName": "resourceProvisioningOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **resourceProvisioningOptions** property to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource.",
+          "Target": "group"
+        }
+      ],
+      "Id": "8c433d47-c686-4fad-998e-2d1decb8d300",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-02-13T23:59:58.9294991Z",
+      "WorkloadArea": "Groups",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c5b74121-da02-49a4-8dbd-91b86e84b2c7",
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedRole",

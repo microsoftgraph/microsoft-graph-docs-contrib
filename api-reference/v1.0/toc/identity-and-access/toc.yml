@@ -1624,6 +1624,39 @@ items:
         href: ../../api/windowshelloforbusinessauthenticationmethod-get.md
       - name: Delete
         href: ../../api/windowshelloforbusinessauthenticationmethod-delete.md
+    - name: QR code authentication
+      items:
+      - name: QR code authentication
+        displayName: QRCodePin
+        items:
+        - name: QR code authentication
+          href: ../../resources/qrcodepinauthenticationmethod.md
+        - name: Get
+          href: ../../api/qrcodepinauthenticationmethod-get.md
+        - name: Create
+          href: ../../api/authentication-put-qrcodepinmethod.md
+        - name: Delete
+          href: ../../api/qrcodepinauthenticationmethod-delete.md
+      - name: QR Code
+        displayName: QRCodePin, QRCode
+        items:
+        - name: QR Code
+          href: ../../resources/qrcode.md
+        - name: Create or update
+          href: ../../api/qrcode-update.md
+        - name: Get
+          href: ../../api/qrcode-get.md
+        - name: Delete
+          href: ../../api/qrcode-delete.md
+      - name: PIN
+        displayName: QRCodePin, QRCode
+        items:
+        - name: PIN
+          href: ../../resources/qrpin.md
+        - name: Reset PIN
+          href: ../../api/qrpin-updatepin.md
+        - name: Update PIN
+          href: ../../api/qrpin-update.md
   - name: Authentication methods policies
     items:
     - name: Overview
@@ -1676,6 +1709,16 @@ items:
         href: ../../api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
       - name: Delete
         href: ../../api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
+    - name: Qr code pin authentication method configuration
+      items:
+      - name: Qr code pin authentication method configuration
+        href: ../../resources/qrcodepinauthenticationmethodconfiguration.md
+      - name: Get
+        href: ../../api/qrcodepinauthenticationmethodconfiguration-get.md
+      - name: Update
+        href: ../../api/qrcodepinauthenticationmethodconfiguration-update.md
+      - name: Delete
+        href: ../../api/qrcodepinauthenticationmethodconfiguration-delete.md
     - name: SMS
       items:
       - name: SMS

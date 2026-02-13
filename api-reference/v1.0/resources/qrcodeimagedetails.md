@@ -1,32 +1,28 @@
 ---
 title: "qrCodeImageDetails resource type"
-description: "Represents the raw image content of a QR code."
-author: "Aanjusingh"
+description: "Contains the QR code image representation data, including the binary image and error correction level."
+author: "jpettere"
+ms.reviewer: intelligentaccesspm
 ms.date: 01/30/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-toc.title: QR Code Image
-toc.keywords: [ QRCodePin, QRCode ]
 ---
 
 # qrCodeImageDetails resource type
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Represents the raw image content of a [QR code](../resources/qrcode.md).
-
+Contains the QR code image representation data. This complex type is returned as part of the [qrCode](qrcode.md) resource when a QR code is created. The image data is only returned at creation time because the private key embedded in the QR code isn't stored on the server.
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|binaryValue|Binary|The binary representation of the QR code.|
-|errorCorrectionLevel|[errorCorrectionLevel](#errorcorrectionlevel-values)|Specifies how much of the QR code can be corrupted while still maintaining its readable. The possible values are: `l`  (Low), `m` (Medium), `q` (Quartile), `h` ( High), `unknownFutureValue`.|
-|rawContent|Binary|Base64-encoded raw content of the QR code.|
-|version|Int32|Version to create QR code image.|
+|binaryValue|Binary|The binary representation of the QR code image.|
+|errorCorrectionLevel|[errorCorrectionLevel](#errorcorrectionlevel-values)|The error correction level of the QR code, which determines how much of the QR code can be damaged while still being readable. The possible values are: `l`, `m`, `q`, `h`, `unknownFutureValue`.|
+|rawContent|Binary|The raw encoded content embedded in the QR code.|
+|version|Int32|The version number of the QR code, which determines its size and data capacity.|
 
 ### errorCorrectionLevel values
 
@@ -41,10 +37,13 @@ QR code error correction levels, which determine how much of the QR code can be 
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.qrCodeImageDetails"
@@ -54,8 +53,12 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.qrCodeImageDetails",
   "binaryValue": "Binary",
-  "version": "Integer",
   "errorCorrectionLevel": "String",
-  "rawContent": "Binary"
+  "rawContent": "Binary",
+  "version": "Integer"
 }
 ```
+
+## Related content
+
+- [qrCode resource type](qrcode.md)

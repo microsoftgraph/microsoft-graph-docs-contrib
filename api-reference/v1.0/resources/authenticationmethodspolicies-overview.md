@@ -6,7 +6,7 @@ author: "jpettere"
 ms.reviewer: intelligentaccesspm
 ms.subservice: "entra-sign-in"
 doc_type: "conceptualPageType"
-ms.date: 02/20/2025
+ms.date: 01/30/2026
 ---
 
 # Microsoft Entra authentication methods policies API overview
@@ -32,6 +32,7 @@ The authentication method policies APIs are used to manage policy settings. For 
 |[externalauthenticationmethodconfiguration](externalauthenticationmethodconfiguration.md)|Define users who can use an external authentication method to satisfy the second factor of Microsoft Entra ID multifactor authentication requirements.|
 |[fido2authenticationmethodconfiguration](fido2authenticationmethodconfiguration.md)| Define FIDO2 security key restrictions and users who can use them to sign in to Microsoft Entra ID.|
 |[microsoftauthenticatorauthenticationmethodconfiguration](microsoftauthenticatorauthenticationmethodconfiguration.md)|Define users who can use Microsoft Authenticator on the Microsoft Entra tenant.|
+|[qrCodePinAuthenticationMethodConfiguration](qrCodePinAuthenticationMethodConfiguration.md)|Define users who can use QRCodePin to sign in to Microsoft Entra ID.|
 |[smsAuthenticationMethodConfiguration](smsAuthenticationMethodConfiguration.md)| Defines users who can use Text Message on the Microsoft Entra tenant.|
 |[softwareOathAuthenticationMethodConfiguration](softwareOathAuthenticationMethodConfiguration.md)|Defines users who can use a third-party software OATH authentication method.|
 |[temporaryaccesspassauthenticationmethodconfiguration](temporaryaccesspassauthenticationmethodconfiguration.md)|Defines users who can use Temporary Access Pass to sign in to Microsoft Entra ID.|
