@@ -1,3 +1,4 @@
+
 ---
 title: "List groups"
 description: "List all the groups available in an organization, excluding dynamic distribution groups."
