@@ -160,6 +160,14 @@
         },
         {
           "Id": "3d6a6577-456a-46f6-982f-b87f5bfbc09d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "entity",
+          "ChangeType": "Addition",
+          "Description": "Added the [entity](https://learn.microsoft.com/en-us/graph/api/resources/entity?view=graph-rest-1.0) resource.",
+          "Target": "entity"
+        },
+        {
+          "Id": "3d6a6577-456a-46f6-982f-b87f5bfbc09d",
           "ApiChange": "Enumeration",
           "ChangedApiName": "activationState",
           "ChangeType": "Addition",
