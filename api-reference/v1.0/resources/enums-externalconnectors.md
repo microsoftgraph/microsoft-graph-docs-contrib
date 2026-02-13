@@ -91,8 +91,8 @@ Namespace: microsoft.graph.externalConnectors
 | lastModifiedDateTime
 | fileName
 | fileExtension
-| iconUrl
 | unknownFutureValue
+| iconUrl
 | personEmails
 | personAddresses
 | personAnniversaries
