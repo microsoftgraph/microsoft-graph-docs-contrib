@@ -248,10 +248,14 @@ items:
       href: ../../resources/cloudpccloudapp.md
     - name: List
       href: ../../api/virtualendpoint-list-cloudapps.md
+    - name: Create
+      href: ../../api/virtualendpoint-post-cloudapps.md
     - name: Get
       href: ../../api/cloudpccloudapp-get.md
     - name: Update
       href: ../../api/cloudpccloudapp-update.md
+    - name: Delete
+      href: ../../api/cloudpccloudapp-delete.md
     - name: Publish
       href: ../../api/cloudpccloudapp-publish.md
     - name: Unpublish
@@ -609,6 +613,10 @@ items:
       href: ../../resources/cloudpcbulktroubleshoot.md
     - name: Cloud PC cloud app detail
       href: ../../resources/cloudpccloudappdetail.md
+    - name: Cloud PC automatic discovered app detail
+      href: ../../resources/cloudpcautomaticdiscoveredappdetail.md
+    - name: Cloud PC file path app detail
+      href: ../../resources/cloudpcfilepathappdetail.md
     - name: Cloud PC connection setting
       href: ../../resources/cloudpcconnectionsetting.md
     - name: Cloud PC connectivity event

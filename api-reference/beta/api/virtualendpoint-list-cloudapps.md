@@ -123,6 +123,7 @@ Content-Type: application/json
       "discoveredAppName": "Paint",
       "description": "",
       "appDetail": {
+        "@odata.type": "#microsoft.graph.cloudPcAutomaticDiscoveredAppDetail",
         "filePath": "C:\\Windows\\system32\\mspaint.exe",
         "commandLineArguments": "",
         "iconPath": "C:\\Windows\\system32\\mspaint.exe",
@@ -143,6 +144,7 @@ Content-Type: application/json
       "discoveredAppName": "Paint",
       "description": "",
       "appDetail": {
+        "@odata.type": "#microsoft.graph.cloudPcAutomaticDiscoveredAppDetail",
         "filePath": "C:\\Windows\\system32\\mspaint.exe",
         "commandLineArguments": "",
         "iconPath": "C:\\Windows\\system32\\mspaint.exe",
