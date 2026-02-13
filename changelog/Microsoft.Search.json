@@ -29,6 +29,22 @@
         {
           "Id": "fd3b880d-ea39-4b1e-8c19-35fb8fb0c26d",
           "ApiChange": "Member",
+          "ChangedApiName": "containerName",
+          "ChangeType": "Addition",
+          "Description": "Added the `containerName` member to the **label** enumeration.",
+          "Target": "label"
+        },
+        {
+          "Id": "fd3b880d-ea39-4b1e-8c19-35fb8fb0c26d",
+          "ApiChange": "Member",
+          "ChangedApiName": "containerUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the `containerUrl` member to the **label** enumeration.",
+          "Target": "label"
+        },
+        {
+          "Id": "fd3b880d-ea39-4b1e-8c19-35fb8fb0c26d",
+          "ApiChange": "Member",
           "ChangedApiName": "assignedToPeople",
           "ChangeType": "Addition",
           "Description": "Added the `assignedToPeople` member to the **label** enumeration.",
