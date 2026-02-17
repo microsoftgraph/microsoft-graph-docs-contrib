@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Process a batch of tenant-wide content entries asynchronously against data protection policies.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
