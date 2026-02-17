@@ -189,11 +189,6 @@ Content-Type: application/json
 }
 ```
 
-## Related content
-
-+ [Overview of rules for Microsoft Entra roles in PIM APIs in Microsoft Graph](/graph/identity-governance-pim-rules-overview)
-+ [Use PIM APIs in Microsoft Graph to update Microsoft Entra ID rules](/graph/how-to-pim-update-rules)
-
 ### Example 2: Update a rule defined for a policy in PIM for Groups
 
 #### Request
@@ -289,3 +284,8 @@ Content-Type: application/json
     }
 }
 ```
+
+## Related content
+
++ [Overview of rules for Microsoft Entra roles in PIM APIs in Microsoft Graph](/graph/identity-governance-pim-rules-overview)
++ [Use PIM APIs in Microsoft Graph to update Microsoft Entra ID rules](/graph/how-to-pim-update-rules)

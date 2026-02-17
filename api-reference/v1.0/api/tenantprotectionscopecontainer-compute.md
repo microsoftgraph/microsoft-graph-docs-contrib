@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Compute the tenant-wide data protection policies and actions, including user/group scoping.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
