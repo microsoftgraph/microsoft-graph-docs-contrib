@@ -80,7 +80,7 @@ If successful, this method returns a `200 OK` response code and [directoryRole](
 
 - If a `@odata.deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned. Save `@odata.deltaLink` URL and apply it in the next **delta** call to learn about changes to the resource in the future.
 
-## Example
+## Examples
 
 ### Request
 
