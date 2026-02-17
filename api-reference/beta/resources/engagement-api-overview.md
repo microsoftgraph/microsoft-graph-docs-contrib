@@ -84,7 +84,7 @@ The follow relationship is unidirectional - when User A follows User B, User A w
 
 The following operations are supported:
 
-* **Follow/Unfollow**: Users can establish or remove follow relationships with other users
+**Follow/Unfollow**: Users can establish or remove follow relationships with other users.
 **Discover connections**: Users can see who they're following and who's following them.
 
 For more information about using the storyline follow APIs, see the individual API reference documentation.
