@@ -78,7 +78,7 @@ Viva Engage supports user following functionality that enables employees to conn
 
 * **Follow colleagues**: Users can follow other users to see their posts and updates in their personalized feed
 * **Build professional networks**: Following helps employees discover and connect with subject matter experts and thought leaders in their organization
-* **Stay informed**: Following allows users to receive updates from colleagues they're interested in hearing from
+**Stay informed**: Following allows users to receive updates from colleagues they're interested in hearing from.
 
 The follow relationship is unidirectional - when User A follows User B, User A will see User B's updates, but this doesn't automatically create a reciprocal relationship. Users have control over who they follow and can unfollow others at any time.
 
