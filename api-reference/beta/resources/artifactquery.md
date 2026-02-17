@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains an expression that specifies the criteria for search. For more information, see [Filtering mailbox artifacts with granular search queries](/graph/concepts/backup-restore-granular-search.md).
+Contains an expression that specifies the criteria for search. For more information, see [Filtering mailbox artifacts with granular search queries](../../../concepts/backup-restore-granular-search.md).
 
 ## Properties
 |Property|Type|Description|
