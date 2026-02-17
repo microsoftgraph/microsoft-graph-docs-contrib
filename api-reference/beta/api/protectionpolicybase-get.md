@@ -145,6 +145,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/Prote
     }
   },
   "lastModifiedDateTime": "2015-06-19T12:01:03.45Z",
+  "offboardRequestedDateTime": "0001-01-01T00:00:00Z",
   "retentionSettings": [
     {
       "interval": "R/PT10M",
@@ -225,6 +226,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/Prote
   "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
   "displayName": "Exchange Protection",
   "status": "updating",
+  "offboardRequestedDateTime": "0001-01-01T00:00:00Z",
   "protectionPolicyArtifactCount": {
     "total": 3,
     "completed": 1,
