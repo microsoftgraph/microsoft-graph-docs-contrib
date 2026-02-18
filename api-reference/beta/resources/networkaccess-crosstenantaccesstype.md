@@ -22,7 +22,7 @@ Represents the type of cross-tenant access for a network [connection](networkacc
 |:-------|:------------|
 | none | No cross-tenant access. Indicates a single-tenant, non-B2B scenario. |
 | b2bCollaboration | The connection involves B2B collaboration across tenants. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
+| unknownFutureValue | Evolvable enumeration sentinel value. |
 
 <!--
 {

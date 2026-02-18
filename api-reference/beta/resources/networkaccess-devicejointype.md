@@ -23,7 +23,7 @@ Represents the Microsoft Entra device join type for a device participating in a 
 | none | No specific device join type. Indicates a regular, non-BYOD scenario. |
 | microsoftEntraJoined | The device is joined to Microsoft Entra ID. |
 | microsoftEntraRegistered | The device is registered with Microsoft Entra ID (typically BYOD). |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
+| unknownFutureValue | Evolvable enumeration sentinel value. |
 
 <!--
 {
