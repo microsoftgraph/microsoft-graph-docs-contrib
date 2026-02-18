@@ -15041,6 +15041,32 @@
       "CreatedDateTime": "2026-01-21T15:10:03.772112Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4d130104-38d7-42f5-8f3d-03e49f763dc0",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "trafficRoutingMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the **trafficRoutingMethod** enumeration type.",
+          "Target": "trafficRoutingMethod"
+        },
+        {
+          "Id": "4d130104-38d7-42f5-8f3d-03e49f763dc0",
+          "ApiChange": "Property",
+          "ChangedApiName": "trafficRoutingMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the **trafficRoutingMethod** property to the [onPremisesPublishing](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesPublishing?view=graph-rest-beta) resource.",
+          "Target": "onPremisesPublishing"
+        }
+      ],
+      "Id": "4d130104-38d7-42f5-8f3d-03e49f763dc0",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-02-13T23:43:59.6139755Z",
+      "WorkloadArea": "Application",
+      "SubArea": ""
     }
   ]
 }
