@@ -5935,3 +5935,12 @@ Possible values for user account types (group membership), per Windows definitio
 |failed|
 |unknownFutureValue|
 |partiallySuccessful|
+
+### trafficRoutingMethod values 
+
+|Member|
+|:---|
+|none|
+|random|
+|sessionPersistence|
+|unknownFutureValue|
