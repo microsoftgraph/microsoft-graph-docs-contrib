@@ -15041,6 +15041,24 @@
       "CreatedDateTime": "2026-01-21T15:10:03.772112Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "848a22dc-fe07-4c13-b5cd-11929ddad138",
+          "ApiChange": "Property",
+          "ChangedApiName": "requiredResourceAccess",
+          "ChangeType": "Addition",
+          "Description": "Added the **requiredResourceAccess** property to the [agentIdentityBlueprint](https://learn.microsoft.com/en-us/graph/api/resources/agentIdentityBlueprint?view=graph-rest-beta) resource.",
+          "Target": "agentIdentityBlueprint"
+        }
+      ],
+      "Id": "848a22dc-fe07-4c13-b5cd-11929ddad138",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-02-18T18:24:02.9935864Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     }
   ]
 }
