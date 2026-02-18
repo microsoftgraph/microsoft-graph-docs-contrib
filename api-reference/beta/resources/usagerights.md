@@ -43,7 +43,7 @@ Enumerates a user's usage rights when content is protected with a sensitivity la
 | encryptedProtectionTypeNotSupportedException | 131072 | Represents an exception indicating encrypted protection type is not supported. |
 | purviewClaimsChallengeNotSupportedException | 262144 | Represents an exception indicating Purview claims challenge is not supported. |
 | exception | 524288 | Represents a general exception condition. |
-| labelNotFoundException | 1048576 | Represents label not found exception condition. |
+| labelNotFoundException | 1048576 | Represents a label with no protection settings, so there are no usage rights to evaluate. |
 | unknownFutureValue | 2097152 | The action was set, to keep the enum evolvable, for future values in API response. |
 
 ### Note
