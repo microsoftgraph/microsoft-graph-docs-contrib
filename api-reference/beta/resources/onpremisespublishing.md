@@ -90,6 +90,7 @@ The following JSON representation shows the resource type.
   "onPremisesApplicationSegments":[{"@odata.type":"microsoft.graph.onPremisesApplicationSegment"}],
   "segmentsConfiguration":{"@odata.type":"microsoft.graph.segmentConfiguration"},
   "singleSignOnSettings": {"@odata.type": "microsoft.graph.onPremisesPublishingSingleSignOn"},
+  "trafficRoutingMethod": "String",
   "useAlternateUrlForTranslationAndRedirect": "Boolean",
   "verifiedCustomDomainCertificatesMetadata": {"@odata.type": "microsoft.graph.verifiedCustomDomainCertificatesMetadata"},
   "verifiedCustomDomainKeyCredential": {"@odata.type": "microsoft.graph.keyCredential"},
