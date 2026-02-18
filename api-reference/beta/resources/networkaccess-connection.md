@@ -28,14 +28,17 @@ In Global Secure Access (GSA) a connection represents multiple [networkAccessTra
 |agentVersion|String|The version of the client that initiated the connection.|
 |applicationSnapshot|[microsoft.graph.networkaccess.applicationSnapshot](networkaccess-applicationsnapshot.md)|**appId** (or client ID) of the destination Microsoft Entra application.|
 |createdDateTime|DateTimeOffset|The time the connection was created.|
+|crossTenantAccessType|microsoft.graph.networkaccess.crossTenantAccessType|Cross tenant access details, for B2B scenarios. The possible values are: `none`, `b2bCollaboration`, `unknownFutureValue`.|
 |destinationFqdn|String|The destination FQDN of the connection.|
 |destinationIp|String|The destination IP of the connection.|
 |destinationPort|Int32|The destination port of the connection.|
 |deviceCategory|microsoft.graph.networkaccess.deviceCategory|The category of the device. The possible values are: `client`, `branch`, `unknownFutureValue`, `remoteNetwork`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `remoteNetwork`.|
 |deviceId|String|The DeviceID.|
+|deviceJoinType|microsoft.graph.networkaccess.deviceJoinType|Device registration type, for BYOD scenarios. The possible values are: `none`, `microsoftEntraJoined`, `microsoftEntraRegistered`, `unknownFutureValue`.|
 |deviceOperatingSystem|String|The device operating system type.|
 |deviceOperatingSystemVersion|String|The device operating system version.|
 |endDateTime|DateTimeOffset|The time the connection was terminated.|
+|homeTenantId|String|The home tenant ID, for B2B scenarios.|
 |id|String|The unique identifier for the connection. Inherited from [microsoft.graph.entity](entity.md).|
 |initiatingProcessName|String|The process initiating the traffic connection.|
 |lastUpdateDateTime|DateTimeOffset|When the connection was last updated.|
@@ -54,9 +57,6 @@ In Global Secure Access (GSA) a connection represents multiple [networkAccessTra
 |transportProtocol|microsoft.graph.networkaccess.networkingProtocol|The transport protocol of the connection. The possible values are: `ip`, `icmp`, `igmp`, `ggp`, `ipv4`, `tcp`, `pup`, `udp`, `idp`, `ipv6`, `ipv6RoutingHeader`, `ipv6FragmentHeader`, `ipSecEncapsulatingSecurityPayload`, `ipSecAuthenticationHeader`, `icmpV6`, `ipv6NoNextHeader`, `ipv6DestinationOptions`, `nd`, `raw`, `ipx`, `spx`, `spxII`, `unknownFutureValue`.|
 |userId|String|The user ID.|
 |userPrincipalName|String|The principal name of the user.|
-|homeTenantId|String|The home tenant Id, for B2B scenarios.|
-|crossTenantAccessType|microsoft.graph.networkaccess.crossTenantAccessType|Cross tenant access details, for B2B scenarios|
-|deviceJoinType|microsoft.graph.networkaccess.deviceJoinType|Device registration type, for BYOD scenarios.|
 
 ## Relationships
 None.
@@ -107,8 +107,8 @@ The following JSON representation shows the resource type.
   "transportProtocol": "String",
   "networkProtocol": "String",
   "popProcessingRegion": "String",
-  "homeTenantId": "string",
-  "crossTenantAccessType": "microsoft.graph.networkaccess.crossTenantAccessType",
-  "deviceJoinType": "microsoft.graph.networkaccess.deviceJoinType"
+  "homeTenantId": "String",
+  "crossTenantAccessType": "String",
+  "deviceJoinType": "String"
 }
 ```
