@@ -80,6 +80,12 @@ Use the new cloud licensing APIs to manage tenant, user, and group licensing dat
   - Use the [onPasswordSubmitHandler](/graph/api/resources/onpasswordsubmithandler?view=graph-rest-beta&preserve-view=true) resource as the base type for handlers invoked during password submission events.
   - Use the [onPasswordMigrationCustomExtensionHandler](/graph/api/resources/onpasswordmigrationcustomextensionhandler?view=graph-rest-beta&preserve-view=true) resource to configure handlers that invoke custom extensions during JIT migration.
 
+### Identity and access | Network access
+
+- Added the **homeTenantId**, **crossTenantAccessType**, and **deviceJoinType** properties to the [connection](/graph/api/resources/networkaccess-connection?view=graph-rest-beta&preserve-view=true) resource to support Bring Your Own Device (BYOD) and Business-to-Business (B2B) collaboration scenarios in Global Secure Access traffic connection logs.
+- Added the [crossTenantAccessType](/graph/api/resources/networkaccess-crosstenantaccesstype?view=graph-rest-beta&preserve-view=true) enumeration type.
+- Added the [deviceJoinType](/graph/api/resources/networkaccess-devicejointype?view=graph-rest-beta&preserve-view=true) enumeration type.
+
 ### Security | Data security and compliance
 
 - Deprecated the **accessedResources** property on [processConversationMetadata](/graph/api/resources/processconversationmetadata?view=graph-rest-beta&preserve-view=true) in favor of the **accessedResources_v2** property.
