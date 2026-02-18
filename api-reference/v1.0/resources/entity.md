@@ -8,7 +8,7 @@ doc_type: resourcePageType
 ms.date: 04/03/2024
 ---
 
-# entity resource type
+# Entity resource type
 
 Namespace: microsoft.graph
 
