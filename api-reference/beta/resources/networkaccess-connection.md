@@ -54,6 +54,9 @@ In Global Secure Access (GSA) a connection represents multiple [networkAccessTra
 |transportProtocol|microsoft.graph.networkaccess.networkingProtocol|The transport protocol of the connection. The possible values are: `ip`, `icmp`, `igmp`, `ggp`, `ipv4`, `tcp`, `pup`, `udp`, `idp`, `ipv6`, `ipv6RoutingHeader`, `ipv6FragmentHeader`, `ipSecEncapsulatingSecurityPayload`, `ipSecAuthenticationHeader`, `icmpV6`, `ipv6NoNextHeader`, `ipv6DestinationOptions`, `nd`, `raw`, `ipx`, `spx`, `spxII`, `unknownFutureValue`.|
 |userId|String|The user ID.|
 |userPrincipalName|String|The principal name of the user.|
+|homeTenantId|String|The home tenant Id, for B2B scenarios.|
+|crossTenantAccessType|microsoft.graph.networkaccess.crossTenantAccessType|Cross tenant access details, for B2B scenarios|
+|deviceJoinType|microsoft.graph.networkaccess.deviceJoinType|Device registration type, for BYOD scenarios.|
 
 ## Relationships
 None.
@@ -103,6 +106,9 @@ The following JSON representation shows the resource type.
   "userPrincipalName": "String",
   "transportProtocol": "String",
   "networkProtocol": "String",
-  "popProcessingRegion": "String"
+  "popProcessingRegion": "String",
+  "homeTenantId": "string",
+  "crossTenantAccessType": "microsoft.graph.networkaccess.crossTenantAccessType",
+  "deviceJoinType": "microsoft.graph.networkaccess.deviceJoinType"
 }
 ```
