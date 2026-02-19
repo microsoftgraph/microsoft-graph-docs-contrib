@@ -38,7 +38,7 @@ In Global Secure Access (GSA) a connection represents multiple [networkAccessTra
 |deviceOperatingSystem|String|The device operating system type.|
 |deviceOperatingSystemVersion|String|The device operating system version.|
 |endDateTime|DateTimeOffset|The time the connection was terminated.|
-|homeTenantId|String|The home tenant ID, for B2B scenarios.|
+|homeTenantId|String|The identifier of the home, for Entra B2B scenarios.|
 |id|String|The unique identifier for the connection. Inherited from [microsoft.graph.entity](entity.md).|
 |initiatingProcessName|String|The process initiating the traffic connection.|
 |lastUpdateDateTime|DateTimeOffset|When the connection was last updated.|
