@@ -145,7 +145,8 @@ The `TeamsAppInstallation.ManageSelectedForTeam.All` is the least privileged app
 
 ### Applications
 
-The **allowedTenantIds** property on [allowedTenantsAudience](/graph/api/resources/allowedtenantsaudience?view=graph-rest-beta&preserve-view=true) must contain at least one value and can't include more than 20 values.
+- Added the **trafficRoutingMethod** property to the [onPremisesPublishing](/graph/api/resources/onpremisespublishing?view=graph-rest-beta&preserve-view=true) resource to control how traffic is distributed across multiple connectors in a connector group in Microsoft Entra app proxy.
+- The **allowedTenantIds** property on [allowedTenantsAudience](/graph/api/resources/allowedtenantsaudience?view=graph-rest-beta&preserve-view=true) must contain at least one value and can't include more than 20 values.
 
 ### Device and app management | Cloud PC
 
