@@ -9080,8 +9080,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | - | d1739827-146b-4f7f-b52c-1c509253aa57 |
-| DisplayText | - | Read the signed-in user's external authentication methods |
-| Description | - | Allows the app to read the signed-in user's external authentication methods. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| DisplayText | - | Read the signed-in user's External MFA |
+| Description | - | Allows the app to read the signed-in user's External MFA. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
 | AdminConsentRequired | - | Yes |
 
 ---
@@ -9091,8 +9091,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | d2c4289f-9f95-40da-ad43-eeb1506f0db7 | cbca9646-4c34-4cea-8e54-9a7088018820 |
-| DisplayText | Read all users' external authentication methods | Read all users' external authentication methods |
-| Description | Allows the app to read external authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read external authentication methods of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| DisplayText | Read all users' External MFA | Read all users' External MFA |
+| Description | Allows the app to read External MFA of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read External MFA of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -9102,8 +9102,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | - | 28c2e8f9-828a-4691-a090-f2f0b7fc07b3 |
-| DisplayText | - | Read and write the signed-in user's external authentication methods |
-| Description | - | Allows the app to read and write the signed-in user's external authentication methods. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| DisplayText | - | Read and write the signed-in user's External MFA |
+| Description | - | Allows the app to read and write the signed-in user's External MFA. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
 | AdminConsentRequired | - | Yes |
 
 ---
@@ -9113,8 +9113,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | c7a22c2e-5b01-4129-8159-6c8be2c78f16 | 9d91805d-0f53-43e3-a0f3-303ad4f3056f |
-| DisplayText | Read and write all users' external authentication methods | Read and write all users' external methods. |
-| Description | Allows the application to read and write external authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read and write external authentication methods of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| DisplayText | Read and write all users' External MFA | Read and write all users' External MFA |
+| Description | Allows the application to read and write External MFA of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read and write External MFA of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
