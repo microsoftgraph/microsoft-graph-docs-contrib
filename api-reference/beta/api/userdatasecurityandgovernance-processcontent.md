@@ -100,7 +100,8 @@ Content-Type: application/json
              "sequenceNumber": 0, 
              "isTruncated": false,
              "createdDateTime": "2025-05-27T17:23:20",
-             "modifiedDateTime": "2025-05-27T17:23:20"
+             "modifiedDateTime": "2025-05-27T17:23:20",
+             "contentCategory": "ai"
           }
        ],
        "activityMetadata": { 
@@ -328,6 +329,7 @@ Content-Type: application/json
 				"length": 17352,
 				"isTruncated": false,
 				"ownerId": "ffe1ca70-6e5b-4120-abf0-472034ba05d4",
+             	"contentCategory": "none",
 				"customProperties": {
 					"Department": "Finance",
 					"ReviewerName": "John Smith"

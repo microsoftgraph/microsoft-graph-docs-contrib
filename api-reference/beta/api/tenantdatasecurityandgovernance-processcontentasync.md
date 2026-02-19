@@ -81,7 +81,8 @@ Content-type: application/json
                "correlationId": "e76bcc34-07ea-43f4-ae64-d383df423b90",
                "sequenceNumber": 0,
                "createdDateTime": "2025-04-21T16:00:00Z",
-               "modifiedDateTime": "2025-04-21T16:00:00Z"
+               "modifiedDateTime": "2025-04-21T16:00:00Z",
+                "contentCategory": "ai"
             }
          ],
          "activityMetadata": {

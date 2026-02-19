@@ -37,7 +37,7 @@ Ask the reviewer which documentation changes need to be reviewed:
 While not required, providing these files significantly improves review quality and completeness:
 
 **Optional Context Files (provide if available):**
-- **Summary of API changes in documentation-plan.md:** A description of what documentation changes were expected based on the schema changes (identifies files changed, methods documented, resources added/updated, namespace information)
+- **Documentation Plan in documentation-plan.md:** A description of what documentation changes were expected based on the schema changes (identifies files changed, methods documented, resources added/updated, namespace information)
 - **API.md file:** The API specification file describing capabilities in detail
 
 **Why these files help:**
@@ -205,7 +205,7 @@ Verify compliance with formatting rules detailed in [author-api-docs.prompt.md -
 
 ## Optional Context-Enhanced Review
 
-If the reviewer provided context files (Summary of API changes in documentation-plan.md or API.md):
+If the reviewer provided context files (Documentation Plan in documentation-plan.md or API.md):
 
 ### Validate Against Summary of API Changes
 

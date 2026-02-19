@@ -43,6 +43,10 @@ Use the message trace API to track the flow of email messages through your Excha
 
 ## February 2026: New in preview only
 
+### Applications
+
+Use the **requiredResourceAccess** property on [agentIdentityBlueprint](/graph/api/resources/agentidentityblueprint?view=graph-rest-beta&preserve-view=true) to specify the Microsoft Graph permissions (delegated scopes and app roles) required by the agent.
+
 ### Backup storage
 
 Users can now browse a `fastRestore` endpoint and selectively restore files and folders by creating a browse session.
@@ -74,6 +78,10 @@ Introducing new [Follow user](/graph/api/storyline-follow?view=graph-rest-beta&p
 ### Device and app management | Cloud licensing
 
 Use the new cloud licensing APIs to manage tenant, user, and group licensing data for Microsoft 365 services. These APIs provide programmatic access to allotments, assignments, assignment errors, subscription lifecycles, and waiting members. For more information, see [Use the cloud licensing API in Microsoft Graph (preview)](/graph/api/resources/cloud-licensing-api-overview?view=graph-rest-beta&preserve-view=true).
+
+### Files
+
+- Added [driveItem: archive](/graph/api/driveitem-archive?view=graph-rest-beta&preserve-view=true) and [driveItem: unarchive](/graph/api/driveitem-unarchive?view=graph-rest-beta&preserve-view=true) to enable organizations to archive/unarchive driveItems.
 
 ### Identity and access | Identity and sign-in
 
@@ -108,6 +116,10 @@ Enhancements to the [detonationDetails](/graph/api/resources/security-detonation
 Added **Principal** and  **PrincipalCollection** data types to the [externalConnection](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true) to specify as the data type people property related items in the external connection.
 
 ## January 2026: New and generally available
+
+### Identity and access | Governance
+
+Use the **administrationScopeTargets** relationship on the [workflowBase](/graph/api/resources/identitygovernance-workflowbase), [workflow](/graph/api/resources/identitygovernance-workflow), and [workflowVersion](/graph/api/resources/identitygovernance-workflowversion) resources to specify the [administrative units](/graph/api/resources/administrativeunit) in the scope of a lifecycle workflow.
 
 ### Identity and access | Identity and sign-in
 
@@ -213,6 +225,7 @@ Added support for managing *zones* in Microsoft Defender for Cloud, enabling org
 - Deprecated the **accessedResources** property on [processConversationMetadata](/graph/api/resources/processconversationmetadata?view=graph-rest-beta&preserve-view=true) in favor of the **accessedResources_v2** property.
 - Use the **accessedResources_v2** property on [processConversationMetadata](/graph/api/resources/processconversationmetadata?view=graph-rest-beta&preserve-view=true) to get detailed information about resources accessed during the conversation, including identifiers, access type, and status.
 - Use the **agents** property on [processConversationMetadata](/graph/api/resources/processconversationmetadata?view=graph-rest-beta&preserve-view=true) to get information about AI agents that participated in the preparation of the message.
+- Added the **contentCategory** property on [processConversationMetadata](/graph/api/resources/processconversationmetadata?view=graph-rest-beta&preserve-view=true) and [processFileMetadata](/graph/api/resources/processfilemetadata?view=graph-rest-beta&preserve-view=true) to indicate whether content is AI generated or not.
 
 ### Teamwork and communications | Apps
 
