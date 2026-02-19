@@ -5936,6 +5936,14 @@ Possible values for user account types (group membership), per Windows definitio
 |unknownFutureValue|
 |partiallySuccessful|
 
+### contentCategory values 
+
+|Member|
+|:---|
+|none|
+|ai|
+|unknownFutureValue|
+
 ### trafficRoutingMethod values 
 
 |Member|

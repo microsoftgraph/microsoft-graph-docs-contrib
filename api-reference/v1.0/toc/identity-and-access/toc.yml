@@ -1591,39 +1591,6 @@ items:
         href: ../../api/platformcredentialauthenticationmethod-get.md
       - name: Delete
         href: ../../api/platformcredentialauthenticationmethod-delete.md
-    - name: Software OATH
-      items:
-      - name: Software OATH
-        href: ../../resources/softwareoathauthenticationmethod.md
-      - name: List
-        href: ../../api/authentication-list-softwareoathmethods.md
-      - name: Get
-        href: ../../api/softwareoathauthenticationmethod-get.md
-      - name: Delete
-        href: ../../api/softwareoathauthenticationmethod-delete.md
-    - name: Temporary Access Pass
-      displayName: TAP
-      items:
-      - name: Temporary Access Pass
-        href: ../../resources/temporaryaccesspassauthenticationmethod.md
-      - name: List
-        href: ../../api/authentication-list-temporaryaccesspassmethods.md
-      - name: Create
-        href: ../../api/authentication-post-temporaryaccesspassmethods.md
-      - name: Get
-        href: ../../api/temporaryaccesspassauthenticationmethod-get.md
-      - name: Delete
-        href: ../../api/temporaryaccesspassauthenticationmethod-delete.md
-    - name: Windows Hello for Business
-      items:
-      - name: Windows Hello for Business
-        href: ../../resources/windowshelloforbusinessauthenticationmethod.md
-      - name: List
-        href: ../../api/windowshelloforbusinessauthenticationmethod-list.md
-      - name: Get
-        href: ../../api/windowshelloforbusinessauthenticationmethod-get.md
-      - name: Delete
-        href: ../../api/windowshelloforbusinessauthenticationmethod-delete.md
     - name: QR code authentication
       items:
       - name: QR code authentication
@@ -1657,6 +1624,39 @@ items:
           href: ../../api/qrpin-updatepin.md
         - name: Update PIN
           href: ../../api/qrpin-update.md
+    - name: Software OATH
+      items:
+      - name: Software OATH
+        href: ../../resources/softwareoathauthenticationmethod.md
+      - name: List
+        href: ../../api/authentication-list-softwareoathmethods.md
+      - name: Get
+        href: ../../api/softwareoathauthenticationmethod-get.md
+      - name: Delete
+        href: ../../api/softwareoathauthenticationmethod-delete.md
+    - name: Temporary Access Pass
+      displayName: TAP
+      items:
+      - name: Temporary Access Pass
+        href: ../../resources/temporaryaccesspassauthenticationmethod.md
+      - name: List
+        href: ../../api/authentication-list-temporaryaccesspassmethods.md
+      - name: Create
+        href: ../../api/authentication-post-temporaryaccesspassmethods.md
+      - name: Get
+        href: ../../api/temporaryaccesspassauthenticationmethod-get.md
+      - name: Delete
+        href: ../../api/temporaryaccesspassauthenticationmethod-delete.md
+    - name: Windows Hello for Business
+      items:
+      - name: Windows Hello for Business
+        href: ../../resources/windowshelloforbusinessauthenticationmethod.md
+      - name: List
+        href: ../../api/windowshelloforbusinessauthenticationmethod-list.md
+      - name: Get
+        href: ../../api/windowshelloforbusinessauthenticationmethod-get.md
+      - name: Delete
+        href: ../../api/windowshelloforbusinessauthenticationmethod-delete.md
   - name: Authentication methods policies
     items:
     - name: Overview

@@ -1119,6 +1119,7 @@
             },
             {
               "name": "Authentication methods",
+              "shouldSort": true,              
               "overview": "../../resources/authenticationmethods-overview.md",
               "resources": [
                 "authenticationMethod",
