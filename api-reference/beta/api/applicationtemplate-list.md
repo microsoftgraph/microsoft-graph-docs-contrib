@@ -68,10 +68,10 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Example 1: List all application templates
 
-This example shows how to retrieve all application templates.
+The following example shows how to retrieve all application templates.
 
 #### Request
-
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -113,7 +113,7 @@ GET https://graph.microsoft.com/beta/applicationTemplates
 ---
 
 #### Response
-
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -196,10 +196,10 @@ Content-type: application/json
 
 ### Example 2: List all application templates with optional properties (with appropriate license)
 
-This example shows how to retrieve all application templates with optional properties
+The following example shows how to retrieve all application templates with optional properties, when the appropriate license is available.
 
 #### Request
-
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -207,7 +207,7 @@ This example shows how to retrieve all application templates with optional prope
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/applicationTemplates/?$select=id,displayName,riskScore,riskFactors
+GET https://graph.microsoft.com/beta/applicationTemplates?$select=id,displayName,riskScore,riskFactors
 ```
 
 # [C#](#tab/csharp)
@@ -241,7 +241,7 @@ GET https://graph.microsoft.com/beta/applicationTemplates/?$select=id,displayNam
 ---
 
 #### Response
-
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -292,52 +292,22 @@ Content-type: application/json
 
 ### Example 3: List all application templates with optional properties (without appropriate license)
 
-This example shows how to retrieve all application templates with optional properties when the tenant lacks Microsoft Entra Suite or Microsoft Entra Internet Access subscription
+The following example shows how to retrieve all application templates with optional properties when the tenant lacks Microsoft Entra Suite or Microsoft Entra Internet Access subscription.
 
 #### Request
+The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_applicationtemplates_with_optional_no_license"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/applicationTemplates/?$select=id,displayName,riskScore,riskFactors
+GET https://graph.microsoft.com/beta/applicationTemplates?$select=id,displayName,riskScore,riskFactors
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-applicationtemplates-with-optional-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-applicationtemplates-with-optional-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-applicationtemplates-with-optional-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-applicationtemplates-with-optional-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-applicationtemplates-with-optional-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-applicationtemplates-with-optional-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-applicationtemplates-with-optional-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 #### Response
-
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -365,10 +335,11 @@ Content-type: application/json
 ```
 
 ### Example 4: List application templates with filtering and ordering
-This example shows how to get top 2 application templates sorted by total risk score which are classified in "contentSharing" category
+
+The following example shows how to get the top two application templates sorted by total risk score which are classified in `contentSharing` **category**.
 
 #### Request
-
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -376,7 +347,7 @@ This example shows how to get top 2 application templates sorted by total risk s
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/applicationTemplates/?$select=id,displayName,riskScore,categories&$filter=categories/any(c: c eq 'contentSharing')&$top=2&$orderBy=riskScore/total desc
+GET https://graph.microsoft.com/beta/applicationTemplates?$select=id,displayName,riskScore,categories&$filter=categories/any(c: c eq 'contentSharing')&$top=2&$orderBy=riskScore/total desc
 ```
 
 # [C#](#tab/csharp)
@@ -410,7 +381,7 @@ GET https://graph.microsoft.com/beta/applicationTemplates/?$select=id,displayNam
 ---
 
 #### Response
-
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
