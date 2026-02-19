@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: "HildaK-pm"
 ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
-ms.date: 07/16/2024
+ms.date: 02/19/2026
 ---
 
 # applicationTemplate resource type
@@ -34,7 +34,8 @@ Represents an application in the [Microsoft Entra application gallery](/azure/ac
 |displayName|String|The name of the application. Supports `$filter` (`contains`).|
 |endpoints|String collection|A collection of string URLs representing various domains that are used by this application.|
 |homePageUrl|String|The home page URL of the application.|
-|id|String| Unique identifier for the application. Read-only.|
+|id|String|Unique identifier for the application. Read-only.|
+|isEntraIntegrated|Boolean|Indicates whether the application is integrated with Entra ID (e.g. by SSO or user provisioning).|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the data for the application was last updated, represented using ISO 8601 format and always in UTC time.|
 |logoUrl|String|The URL to get the logo for this application.|
 |publisher|String|The name of the publisher for this application.|
@@ -92,7 +93,8 @@ The following JSON representation shows the resource type.
   "endpoints": [
     "String"
   ],
-  "lastModifiedDateTime": "String (timestamp)"
+  "lastModifiedDateTime": "String (timestamp)",
+  "isEntraIntegrated": "Boolean"
 }
 ```
 

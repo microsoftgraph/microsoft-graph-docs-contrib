@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of [applicationTemplate](../resources/applicationtemplate.md) objects from the Microsoft Entra application gallery. Details about optional risk properties such as **riskScore** and **riskFactors** are available with either the Microsoft Entra Suite or Microsoft Entra Internet Access license.
 
+If a risk property is included in the request without appropriate license, a `@microsoft.graph.licenseRequired` OData annotation is returned in the response.
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
@@ -155,6 +157,7 @@ Content-type: application/json
                 "www.linkedin.com"
             ],
             "lastModifiedDateTime": "2025-08-01T21:05:17.943549Z",
+            "isEntraIntegrated": true,
             "informationalUrls": {
                 "singleSignOnDocumentationUrl": "https://go.microsoft.com/fwlink/?linkid=847714",
                 "appSignUpUrl": null
@@ -191,7 +194,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: List all application templates with optional properties
+### Example 2: List all application templates with optional properties (with appropriate license)
 
 This example shows how to retrieve all application templates with optional properties
 
@@ -287,7 +290,81 @@ Content-type: application/json
 }
 ```
 
-### Example 3: List application templates with filtering and ordering
+### Example 3: List all application templates with optional properties (without appropriate license)
+
+This example shows how to retrieve all application templates with optional properties when the tenant lacks Microsoft Entra Suite or Microsoft Entra Internet Access subscription
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_applicationtemplates_with_optional_no_license"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/applicationTemplates/?$select=id,displayName,riskScore,riskFactors
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-applicationtemplates-with-optional-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-applicationtemplates-with-optional-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-applicationtemplates-with-optional-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-applicationtemplates-with-optional-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-applicationtemplates-with-optional-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-applicationtemplates-with-optional-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-applicationtemplates-with-optional-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.applicationTemplate)"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#applicationTemplates",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET applicationTemplates?$select=categories,configurationUris",
+    "@microsoft.graph.licenseRequired": "An Entra Suite or Entra Internet Access license is required to show riskScore or riskFactors properties. For more info see aka.ms/applicationTemplateEndpointLicensing",
+    "value": [
+        {
+            "id": "de92ca39-7b85-4b4c-90d8-2885eff5100b",
+            "displayName": "LinkedIn Lookup",
+            "riskScore": null,
+            "riskFactors": null
+        }
+    ]
+}
+```
+
+### Example 4: List application templates with filtering and ordering
 This example shows how to get top 2 application templates sorted by total risk score which are classified in "contentSharing" category
 
 #### Request
