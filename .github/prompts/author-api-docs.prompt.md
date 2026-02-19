@@ -1377,7 +1377,12 @@ When a new relationship is added to an existing resource:
 
 **When to use:**
 - Member names are self-explanatory
-- No descriptions needed
+- No or minimal descriptions needed
+
+   Example where minimal descriptions are needed:
+  ```markdown
+  The possible values are: <br/><li>`none`: No cross-tenant access. Indicates a single-tenant, non-B2B scenario. </li> <li>`b2bCollaboration`: The connection involves B2B collaboration across tenants. </li> <li>`unknownFutureValue`: Evolvable enumeration sentinel value. Do not use.</li>
+  ```
 
 **Note:** enums.md and enums-{subnamespace}.md files are not customer-facing (they're for API Doctor validation only).
 
@@ -1474,7 +1479,7 @@ Create a dedicated topic for the enumeration. This option is rarely applicable.
 **When to use:**
 - Need descriptions for enum members and Option 2 isn't suitable
 - Multiple resources use the enum
-- Enum has many members requiring detailed descriptions
+- Enum has many members requiring detailed descriptions that might reduce scannability in Options 1 or 2
 
 **Important:** Use only when necessary. Prefer Option 1 or 2 whenever possible.
 
