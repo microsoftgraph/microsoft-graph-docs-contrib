@@ -196,7 +196,7 @@ Content-type: application/json
 
 ### Example 2: List all application templates with optional properties (with appropriate license)
 
-The following example shows how to retrieve all application templates with optional properties, when the appropriate license is available.
+The following example shows how to retrieve all application templates with optional properties.
 
 #### Request
 The following example shows a request.
@@ -336,7 +336,7 @@ Content-type: application/json
 
 ### Example 4: List application templates with filtering and ordering
 
-The following example shows how to get the top two application templates sorted by total risk score which are classified in `contentSharing` **category**.
+The following example shows how to get the top two application templates, sorted by total risk score, that are classified in the `contentSharing` **category**.
 
 #### Request
 The following example shows a request.
