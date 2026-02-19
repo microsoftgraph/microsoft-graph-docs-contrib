@@ -1,5 +1,5 @@
 ---
-title: "List storylineFollowing objects"
+title: "List following objects"
 description: "Retrieve a list of users that the specified user is currently following."
 author: "aditijha4"
 ms.date: 02/06/2026
@@ -8,7 +8,7 @@ ms.subservice: "viva-engage"
 doc_type: apiPageType
 ---
 
-# List storylineFollowing objects
+# List following objects
 
 Namespace: microsoft.graph
 
