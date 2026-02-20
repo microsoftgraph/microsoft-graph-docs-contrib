@@ -2,7 +2,7 @@
 title: "usageRights enum type"
 description: "Enumerates a user's usage rights when content is protected with a sensitivity label."
 author: "zhengnlu"
-ms.date: 01/05/2026
+ms.date: 02/20/2026
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: enumPageType
