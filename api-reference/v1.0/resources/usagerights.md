@@ -47,7 +47,7 @@ Enumerates a user's usage rights when content is protected with a sensitivity la
 ### Note
 This enum uses a bitmask operation, where each value represents a single permission. Each permission is assigned a power‑of‑two number (1, 2, 4, 8, and so on), so multiple permissions can be combined into one value. To combine usage rights, applications use bitwise operations rather than treating the numbers as simple totals. This allows a single result to represent several allowed actions at the same time.
 
-However, [Get Label Usage Rights](/graph/api/usagerightsincluded-get), returns an expanded list of individual rights. not the combined bitmask integer. The numeric values below are provided for reference/debugging only. For example, to interpret RMS (Azure Rights Management Services) responses or logs.
+However, [Get Label Usage Rights](/graph/api/usagerightsincluded-get), returns an expanded list of individual rights. not the combined bitmask integer. The numeric values below are provided for reference/debugging only. For example, to interpret Azure Rights Management Services (RMS) responses or logs.
 
 ```
 // Each enum value represents a single permission (flags)
