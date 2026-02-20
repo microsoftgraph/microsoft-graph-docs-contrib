@@ -69,9 +69,11 @@ PATCH /users/{id}/authentication/qrCodePinMethod/temporaryQRCode
 
 If successful, this method returns a `201 Created` response code and an updated [qrCode](../resources/qrcode.md) object in the response body. The QR code image is returned only when creating a QR code object. It's not returned when updating a standard QR code object.
 
-## Examples to create a standard QR code
+## Examples
 
-### Request
+### Example 1: Create a standard QR code
+
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -91,7 +93,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -122,9 +124,9 @@ Content-Type: application/json
 }
 ```
 
-## Examples to update a standard QR code
+### Example 2: Update a standard QR code
 
-### Request
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -143,7 +145,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
