@@ -80,14 +80,14 @@ Viva Engage supports user following functionality that enables employees to conn
 **Build professional networks**: Following helps employees discover and connect with subject matter experts and thought leaders in their organization.
 **Stay informed**: Following allows users to receive updates from colleagues they're interested in hearing from.
 
-The follow relationship is unidirectional - when User A follows User B, User A will see User B's updates, but this doesn't automatically create a reciprocal relationship. Users have control over who they follow and can unfollow others at any time.
+The follow relationship is unidirectional - when User A follows User B, User A sees User B's updates, but this doesn't automatically create a reciprocal relationship. Users have control over who they follow and can unfollow others at any time.
 
 The following operations are supported:
 
-**Follow/Unfollow**: Users can establish or remove follow relationships with other users.
+**Follow/unfollow**: Users can establish or remove follow relationships with other users.
 **Discover connections**: Users can see who they're following and who's following them.
 
-For more information about using the storyline follow APIs, see the individual API reference documentation.
+For more information, see [Storyline resource APIs](resources/storyline.md).
 
 ## API limits
 
