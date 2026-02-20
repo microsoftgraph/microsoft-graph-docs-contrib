@@ -87,7 +87,7 @@ The following operations are supported:
 **Follow/unfollow**: Users can establish or remove follow relationships with other users.
 **Discover connections**: Users can see who they're following and who's following them.
 
-For more information, see [Storyline resource APIs](resources/storyline.md).
+For more information, see [Storyline resource APIs](../resources/storyline.md).
 
 ## API limits
 
