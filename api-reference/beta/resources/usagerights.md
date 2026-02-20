@@ -66,7 +66,6 @@ bool canView = (rights & UsageRights.View) == UsageRights.View;
 ```
 
 In the example above, Unknown | DocEdit produces a single value that contains both permissions. Bitwise AND (&) is used to test whether a particular right is present in the combined value.
-```
 ## JSON representation
 
 The following JSON representation shows the enum type.
