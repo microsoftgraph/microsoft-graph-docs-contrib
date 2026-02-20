@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Follow a user's [storyline](../resources/storyline.md) in the organization.
 
-In Viva Engage, users may follow other users within the platform. This feature helps users stay updated with the activities and posts of the people they follow. It is particularly useful for keeping track of influential or key individuals within the organization, such as leaders or ambassadors who can help spread news and awareness on specific topics.
+In Viva Engage, users may follow other users within the platform. This feature helps users stay updated with the activities and posts of the people they follow. It's useful for keeping track of influential or key individuals within the organization, such as leaders or ambassadors who can help spread news and awareness on specific topics.
 
 ## Permissions
 
