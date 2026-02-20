@@ -44,7 +44,7 @@ Enumerates a user's usage rights when content is protected with a sensitivity la
 | purviewClaimsChallengeNotSupportedException | 262144 | Represents an exception indicating Purview claims challenge is not supported. |
 | exception | 524288 | Represents a general exception condition. |
 | labelNotFoundException | 1048576 | Represents a label with no protection settings, so there are no usage rights to evaluate. |
-| unknownFutureValue | 2097152 | The action was set, to keep the enum evolvable, for future values in API response. |
+| unknownFutureValue | 2097152 | This value is set to allow future additions to the enum. Do not use in your app. |
 
 ### Note
 This enum is defined as a bitmask (flags): each value represents a single usage right and is assigned a power-of-two value (1, 2, 4, 8, …). RMS may return a single integer that combines multiple rights by OR’ing these values together.
