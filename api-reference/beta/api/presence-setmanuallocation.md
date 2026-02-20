@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Set the manual work location signal for a [user](../resources/user.md). The explicit value chosen by a user (or an authorized client) overrides any automatically detected or scheduled working hours and location.
+Set the manual work location signal for a [user](../resources/user.md). The explicit value chosen by a user or an authorized client overrides any automatically detected or scheduled working hours and location.
 
 - Precedence: manual > automatic > scheduled
 - Precision (within the same layer): more precise wins (for example, office + building > office)
@@ -58,7 +58,7 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|placeId|String| Identifier of the place (when applicable). |
+|placeId|String| Identifier of the place, if applicable. |
 |workLocationType| workLocationType | Semantic type of the location. Supports a subset of the values for **workLocationType**. The possible values are: `office`, `remote`, `timeOff`. |
 
 ## Response

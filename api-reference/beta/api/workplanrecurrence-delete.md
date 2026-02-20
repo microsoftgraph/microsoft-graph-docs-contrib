@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Delete a [workPlanRecurrence](../resources/workplanrecurrence.md) object from your own work plan.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -25,6 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/settings/workHoursAndLocations/recurrences/{id}
 ```
@@ -33,6 +36,7 @@ DELETE /me/settings/workHoursAndLocations/recurrences/{id}
 
 When using the `/users/{id}` endpoint, the ID must be your own user ID.
 
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/{id | userPrincipalName}/settings/workHoursAndLocations/recurrences/{id}
 ```

@@ -3,6 +3,48 @@
     {
       "ChangeList": [
         {
+          "Id": "9726bad8-07d5-4de9-b139-c21b103e60fe",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPasswordSubmitListener",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPasswordSubmitListener](https://learn.microsoft.com/en-us/graph/api/resources/onpasswordsubmitlistener?view=graph-rest-beta&preserve-view=true) resource to manage authentication event listeners for password submission events during Just-In-Time (JIT) user migration.",
+          "Target": "onPasswordSubmitListener"
+        },
+        {
+          "Id": "9726bad8-07d5-4de9-b139-c21b103e60fe",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPasswordSubmitCustomExtension",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPasswordSubmitCustomExtension](https://learn.microsoft.com/en-us/graph/api/resources/onpasswordsubmitcustomextension?view=graph-rest-beta&preserve-view=true) resource to configure custom extensions for validating passwords against legacy authentication systems during JIT migration.",
+          "Target": "onPasswordSubmitCustomExtension"
+        },
+        {
+          "Id": "9726bad8-07d5-4de9-b139-c21b103e60fe",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPasswordSubmitHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPasswordSubmitHandler](https://learn.microsoft.com/en-us/graph/api/resources/onpasswordsubmithandler?view=graph-rest-beta&preserve-view=true) resource as an abstract base type for handlers invoked during password submission events.",
+          "Target": "onPasswordSubmitHandler"
+        },
+        {
+          "Id": "9726bad8-07d5-4de9-b139-c21b103e60fe",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPasswordMigrationCustomExtensionHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPasswordMigrationCustomExtensionHandler](https://learn.microsoft.com/en-us/graph/api/resources/onpasswordmigrationcustomextensionhandler?view=graph-rest-beta&preserve-view=true) resource to invoke custom extensions during password submission for JIT user migration scenarios.",
+          "Target": "onPasswordMigrationCustomExtensionHandler"
+        }
+      ],
+      "Id": "9726bad8-07d5-4de9-b139-c21b103e60fe",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-02-03T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "69d90e89-482e-4f11-89be-1f2aef8b293d",
           "ApiChange": "Resource",
           "ChangedApiName": "customExtensionBehaviorOnError",

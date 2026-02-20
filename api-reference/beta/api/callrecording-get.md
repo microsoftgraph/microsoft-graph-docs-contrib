@@ -25,7 +25,7 @@ For a recording, this API returns the metadata of the single recording associate
 > * This API might not return a call recording if multiple meetings are scheduled under a single channel post thread.
 > * This API works differently in one or more national clouds. For details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

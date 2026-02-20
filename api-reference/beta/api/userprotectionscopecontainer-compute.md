@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Compute the data protection policies and actions applicable to a specific user based on their context.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

@@ -24,7 +24,7 @@ Inherits from [deliveryOptimizationGroupIdSource](../resources/intune-deviceconf
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|groupIdSourceOption|[deliveryOptimizationGroupIdOptionsType](../resources/intune-deviceconfig-deliveryoptimizationgroupidoptionstype.md)|Set this policy to restrict peer selection to a specific source. The possible values are: `notConfigured`, `adSite`, `authenticatedDomainSid`, `dhcpUserOption`, `dnsSuffix`.|
+|groupIdSourceOption|[deliveryOptimizationGroupIdOptionsType](../resources/intune-deviceconfig-deliveryoptimizationgroupidoptionstype.md)|Set this policy to restrict peer selection to a specific source. Possible values are: `notConfigured`, `adSite`, `authenticatedDomainSid`, `dhcpUserOption`, `dnsSuffix`.|
 
 ## Relationships
 None

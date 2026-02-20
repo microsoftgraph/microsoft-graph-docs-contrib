@@ -71,7 +71,7 @@ Here's an example of a request.
 }
 -->
 ```http
-PATCH https://graph.microsoft.com/beta/security/labels/retentionLabels/9563a605-e827-4324-a5a9-09efddff1e50
+PATCH https://graph.microsoft.com/v1.0/security/labels/retentionLabels/9563a605-e827-4324-a5a9-09efddff1e50
 Content-Type: application/json
 Content-length: 555
 

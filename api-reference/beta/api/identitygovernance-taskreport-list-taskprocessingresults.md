@@ -1,7 +1,7 @@
 ---
 title: "List taskProcessingResult"
 description: "Get a list of taskProcessingResult objects and their properties for a taskReport."
-author: "AlexFilipin"
+author: "KristinaSmith"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType

@@ -5,7 +5,7 @@ author: "kevinbellinger"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
-ms.date: 04/05/2024
+ms.date: 12/03/2025
 ---
 
 # Create contact
@@ -46,7 +46,7 @@ In the request body, supply a JSON representation of [contact](../resources/cont
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [contact](../resources/contact.md) object in the response body.
+If successful, this method returns `201 Created` response code and a [contact](../resources/contact.md) object in the response body.
 
 ## Example
 ### Request
@@ -117,7 +117,8 @@ Content-type: application/json
 ---
 
 ### Response
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -181,6 +182,15 @@ Content-type: application/json
             "address":"pavelb@contoso.com"
         }
     ],
+    "primaryEmailAddress": {
+            "name":"Pavel Bansky",
+            "address":"pavelb@contoso.com"
+    },
+    "secondaryEmailAddress": {
+            "name":"Pavel Bansky",
+            "address":"pavelb@contoso.com"
+    },
+    "tertiaryEmailAddress": null,
     "websites":[
 
     ],

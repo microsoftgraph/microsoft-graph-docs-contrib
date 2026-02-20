@@ -23,7 +23,7 @@ Update the properties of a [oneDriveForBusinessRestoreSession](../resources/oned
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "onedriveforbusinessrestoresession_update" } -->
+<!-- { "blockType": "permissions", "name": "onedriveforbusinessrestoresession_update_permissions" } -->
 [!INCLUDE [permissions-table](../includes/permissions/onedriveforbusinessrestoresession-update-permissions.md)]
 
 
@@ -48,12 +48,15 @@ PATCH /solutions/backupRestore/oneDriveForBusinessRestoreSessions/{oneDriveForBu
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-
 |Property|Type|Description|
 |:---|:---|:---|
 |driveRestoreArtifacts|[driveRestoreArtifact](../resources/driverestoreartifact.md) collection|Collection of [driveRestoreArtifact](../resources/driverestoreartifact.md). Required|
+|granularDriveRestoreArtifacts|[granularDriveRestoreArtifact](../resources/granulardriverestoreartifact.md) collection|A collection of [granularDriveRestoreArtifact](../resources/granulardriverestoreartifact.md) objects. Required.|
 
-To remove a drive restore artifact, specify the `@removed` annotation in the request body together with the ID of the [driveRestoreArtifact](../resources/driverestoreartifact.md) object.
+To remove a **driveRestoreArtifact** from a standar restore session, specify the `@removed` annotation in the request body together with the ID of the [driveRestoreArtifact](../resources/driverestoreartifact.md) object.
+
+
+To remove a **granularDriveRestoreArtifact** from a granular restore session, specify the `@removed` annotation in the request body for the respective artifact ID of the [granularDriveRestoreArtifact](../resources/granulardriverestoreartifact.md).
 
 ## Response
 
@@ -201,3 +204,72 @@ HTTP/1.1 200 OK
 }
 ```
 
+### Example 2: Update a granular restore session
+
+#### Request
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "onedriveforbusiness_granular_update"
+}
+-->
+```http
+PATCH https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessRestoreSession/43e0638e-3ad7-4c7e-8749-72175d046e30
+Content-Type: application/json
+
+{
+  "granularDriveRestoreArtifacts@delta": [
+    {
+      "browseSessionId": "m_RtZ8BiiUXOK69cuN6gwubfm9_yeVlDg8s6hci01_cVOAE",
+      "itemKey": "a535851e-9fc6-4eb1-90ab-2955fd9117b5,2a8b7eaf-092a-4561-a25a-998ad2e5142e,38eec3f1-b879-44a6-8ae6-05bd46ed4b3d,ce66019f-cdf9-4575-aa81-de3aabe844a2"
+    },
+    {
+      "@removed": {
+        "reason": "changed"
+      },
+      "id": "a535851e-9fc6-4eb1-90ab-2955fd9117b5,2a8b7eaf-092a-4561-a25a-998ad2e5142e,38eec3f1-b879-44a6-8ae6-05bd46ed4b3d,ce66019f-cdf9-4575-aa81-de3aabe844a2"
+    }
+  ]
+}
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.oneDriveForBusinessRestoreSession"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@context": "#$delta",
+  "id": "43e0638e-3ad7-4c7e-8749-72175d046e30",
+  "granularDriveRestoreArtifacts@delta": [
+    {
+      "siteId": null,
+      "id": "a535851e-9fc6-4eb1-90ab-2955fd9117b5,2a8b7eaf-092a-4561-a25a-998ad2e5142e,38eec3f1-b879-44a6-8ae6-05bd46ed4b3d,ce66019f-cdf9-4575-aa81-de3aabe844a2",
+      "browseSessionId": "m_RtZ8BiiUXOK69cuN6gwubfm9_yeVlDg8s6hci01_cVOAE",
+      "restoredItemKey": "",
+      "webUrl": "",
+      "restoredItemPath": null,
+      "restoredItemWebUrl": "",
+      "status": "added",
+      "restorePointDateTime": "0001-01-01T00:00:00Z",
+      "startDateTime": "0001-01-01T00:00:00Z",
+      "completionDateTime": "0001-01-01T00:00:00Z"
+    },
+    {
+        "id": "a535851e-9fc6-4eb1-90ab-2955fd9117b5,2a8b7eaf-092a-4561-a25a-998ad2e5142e,38eec3f1-b879-44a6-8ae6-05bd46ed4b3d,ce66019f-cdf9-4575-aa81-de3aabe844a2",
+        "@removed": {
+            "reason": "changed"
+        }
+    }
+  ]
+}
+```

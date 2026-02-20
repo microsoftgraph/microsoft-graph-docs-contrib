@@ -4,7 +4,7 @@ description: "Represents an agent identity in a directory. An agent identity is 
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-applications"
+ms.subservice: "entra-agent-id"
 doc_type: resourcePageType
 ---
 

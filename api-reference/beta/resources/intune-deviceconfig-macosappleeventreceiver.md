@@ -23,7 +23,7 @@ Represents a process that can receive an Apple Event notification.
 |:---|:---|:---|
 |codeRequirement|String|Code requirement for the app or binary that receives the Apple Event.|
 |identifier|String|Bundle ID of the app or file path of the process or executable that receives the Apple Event.|
-|identifierType|[macOSProcessIdentifierType](../resources/intune-deviceconfig-macosprocessidentifiertype.md)|Use bundle ID for an app or path for a process or executable that receives the Apple Event. The possible values are: `bundleID`, `path`.|
+|identifierType|[macOSProcessIdentifierType](../resources/intune-deviceconfig-macosprocessidentifiertype.md)|Use bundle ID for an app or path for a process or executable that receives the Apple Event. Possible values are: `bundleID`, `path`.|
 |allowed|Boolean|Allow or block this app from receiving Apple events.|
 
 ## Relationships

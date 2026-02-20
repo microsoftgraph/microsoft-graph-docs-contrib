@@ -25,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -64,14 +64,14 @@ The following table shows the properties that are required when you create the [
 |owner|String|The owner of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |developer|String|The developer of the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |notes|String|Notes for the app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|uploadState|Int32|The upload state. The possible values are: 0 - `Not Ready`, 1 - `Ready`, 2 - `Processing`. This property is read-only. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. This property is read-only. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md). The possible values are: `notPublished`, `processing`, `published`.|
+|uploadState|Int32|The upload state. Possible values are: 0 - `Not Ready`, 1 - `Ready`, 2 - `Processing`. This property is read-only. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. This property is read-only. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md). Possible values are: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|The value indicating whether the app is assigned to at least one group. This property is read-only. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |roleScopeTagIds|String collection|List of scope tag ids for this mobile app. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |dependentAppCount|Int32|The total number of dependencies the child app has. This property is read-only. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersedingAppCount|Int32|The total number of apps this app directly or indirectly supersedes. This property is read-only. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
 |supersededAppCount|Int32|The total number of apps this app is directly or indirectly superseded by. This property is read-only. Inherited from [mobileApp](../resources/intune-shared-mobileapp.md)|
-|appAvailability|[managedAppAvailability](../resources/intune-apps-managedappavailability.md)|The Application's availability. This property is read-only. Inherited from [managedApp](../resources/intune-apps-managedapp.md). The possible values are: `global`, `lineOfBusiness`.|
+|appAvailability|[managedAppAvailability](../resources/intune-apps-managedappavailability.md)|The Application's availability. This property is read-only. Inherited from [managedApp](../resources/intune-apps-managedapp.md). Possible values are: `global`, `lineOfBusiness`.|
 |version|String|The Application's version. Inherited from [managedApp](../resources/intune-apps-managedapp.md)|
 |committedContentVersion|String|The internal committed content version. Inherited from [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md)|
 |fileName|String|The name of the main Lob application file. Inherited from [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md)|

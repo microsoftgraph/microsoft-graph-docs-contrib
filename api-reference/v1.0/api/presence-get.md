@@ -123,7 +123,12 @@ Content-Length: 1574
     "message": null,
     "isOutOfOffice": false
   },
-  "sequenceNumber": "A0129311063"
+  "sequenceNumber": "A0129311063",
+  "workLocation": {
+    "workLocationType": "office",
+    "source": "automatic",
+    "placeId": "eb706f15-137e-4722-b4d1-b601481d9251"
+  }
 }
 ```
 

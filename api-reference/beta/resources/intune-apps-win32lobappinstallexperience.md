@@ -21,9 +21,9 @@ Contains installation experience properties for a Win32 App
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indicates the type of execution context the app runs in. The possible values are: `system`, `user`.|
+|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indicates the type of execution context the app runs in. Possible values are: `system`, `user`.|
 |maxRunTimeInMinutes|Int32|The number of minutes the system will wait for install program to finish. Default value is 60 minutes.|
-|deviceRestartBehavior|[win32LobAppRestartBehavior](../resources/intune-apps-win32lobapprestartbehavior.md)|Device restart behavior. The possible values are: `basedOnReturnCode`, `allow`, `suppress`, `force`.|
+|deviceRestartBehavior|[win32LobAppRestartBehavior](../resources/intune-apps-win32lobapprestartbehavior.md)|Device restart behavior. Possible values are: `basedOnReturnCode`, `allow`, `suppress`, `force`.|
 
 ## Relationships
 None

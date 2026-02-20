@@ -99,10 +99,10 @@ Content-type: application/json
 {
   "value": [
     {
-      "id": "id-value",
-      "position": 99,
-      "name": "name-value",
-      "visibility": "visibility-value"
+      "id": "{FC034FA8-F8CC-4D24-9C0A-02A81B7792A0}",
+      "position": 0,
+      "name": "Sheet1",
+      "visibility": "Visible"
     }
   ]
 }

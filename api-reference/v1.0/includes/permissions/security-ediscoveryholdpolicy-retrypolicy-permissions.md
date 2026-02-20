@@ -9,3 +9,4 @@ ms.localizationpriority: medium
 |Delegated (work or school account)|eDiscovery.ReadWrite.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|eDiscovery.ReadWrite.All|Not available.|
+

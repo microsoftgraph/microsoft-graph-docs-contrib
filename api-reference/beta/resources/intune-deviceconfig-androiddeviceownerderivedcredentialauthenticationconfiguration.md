@@ -44,7 +44,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
-|certificateAccessType|[androidDeviceOwnerCertificateAccessType](../resources/intune-deviceconfig-androiddeviceownercertificateaccesstype.md)|Certificate access type. The possible values are: `userApproval`, `specificApps`, `unknownFutureValue`.|
+|certificateAccessType|[androidDeviceOwnerCertificateAccessType](../resources/intune-deviceconfig-androiddeviceownercertificateaccesstype.md)|Certificate access type. Possible values are: `userApproval`, `specificApps`, `unknownFutureValue`.|
 |silentCertificateAccessDetails|[androidDeviceOwnerSilentCertificateAccess](../resources/intune-deviceconfig-androiddeviceownersilentcertificateaccess.md) collection|Certificate access information. This collection can contain a maximum of 50 elements.|
 
 ## Relationships

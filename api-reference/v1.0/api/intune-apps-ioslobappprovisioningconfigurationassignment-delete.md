@@ -53,7 +53,7 @@ Here is an example of the request.
 
 <!-- { "blockType": "ignored" , "name" : "intune_apps_ioslobappprovisioningconfigurationassignment_delete_delete_ioslobappprovisioningconfigurationassignment" }-->
 ```http
-DELETE https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}/assignments/{iosLobAppProvisioningConfigurationAssignmentId}
+DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}/assignments/{iosLobAppProvisioningConfigurationAssignmentId}
 ```
 
 ### Response

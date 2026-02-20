@@ -33,7 +33,7 @@ A Domain Join Connector is a connector that is responsible to allocate (and dele
 |id|String|Unique identifier to represent a connector.|
 |displayName|String|The connector display name.|
 |lastConnectionDateTime|DateTimeOffset|Last time connector contacted Intune.|
-|state|[deviceManagementDomainJoinConnectorState](../resources/intune-odj-devicemanagementdomainjoinconnectorstate.md)|The connector state. The possible values are: `active`, `error`, `inactive`.|
+|state|[deviceManagementDomainJoinConnectorState](../resources/intune-odj-devicemanagementdomainjoinconnectorstate.md)|The connector state. Possible values are: `active`, `error`, `inactive`.|
 |version|String|The version of the connector.|
 
 ## Relationships

@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /orgContacts/{id}/retryServiceProvisioning
+POST /contacts/{id}/retryServiceProvisioning
 ```
 
 ## Request headers
@@ -58,7 +58,7 @@ The following example shows a request.
   "name": "orgcontact_retryserviceprovisioning"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/orgContacts/{id}/retryServiceProvisioning
+POST https://graph.microsoft.com/v1.0/contacts/{id}/retryServiceProvisioning
 ```
 
 ### Response

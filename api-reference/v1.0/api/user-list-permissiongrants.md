@@ -12,8 +12,6 @@ ms.date: 04/04/2024
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 List all [resource-specific permission grants](../resources/resourcespecificpermissiongrant.md) of a [user](../resources/user.md). This list specifies the Microsoft Entra apps that have access to the **user**, along with the corresponding resource-specific access that each app has.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]

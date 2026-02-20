@@ -26,12 +26,6 @@ vendorInformation.SetSubProvider(&subProvider)
 vendor := "Microsoft"
 vendorInformation.SetVendor(&vendor) 
 requestBody.SetVendorInformation(vendorInformation)
-additionalData := map[string]interface{}{
-	"assignedTo" : "", 
-	"comment" : "control is reviewed", 
-	"state" : "Reviewed", 
-}
-requestBody.SetAdditionalData(additionalData)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 secureScoreControlProfiles, err := graphClient.Security().SecureScoreControlProfiles().BySecureScoreControlProfileId("secureScoreControlProfile-id").Patch(context.Background(), requestBody, nil)

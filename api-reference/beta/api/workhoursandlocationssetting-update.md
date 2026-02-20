@@ -27,6 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+<!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/settings/workHoursAndLocations
 ```
@@ -35,6 +36,7 @@ PATCH /me/settings/workHoursAndLocations
 
 When using the `/users/{id}` endpoint, the ID must be your own user ID.
 
+<!-- { "blockType": "ignored" } -->
 ```http
 PATCH /users/{id | userPrincipalName}/settings/workHoursAndLocations
 ```
@@ -52,7 +54,7 @@ PATCH /users/{id | userPrincipalName}/settings/workHoursAndLocations
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| maxSharedWorkLocationDetails | [maxWorkLocationDetails](../resources/workhoursandlocationssetting.md#maxworklocationdetails-values) | Controls the level of work location details that can be shared with colleagues. The possible values are: `unknown`, `none`, `approximate`, `specific`, `unknownFutureValue`. |
+| maxSharedWorkLocationDetails | [maxWorkLocationDetails](../resources/workhoursandlocationssetting.md#maxworklocationdetails-values) | Controls the level of work location details that can be shared with colleagues. Supports a subset of the values of **maxSharedWorkLocationDetails**. The possible values are: `none`, `approximate`, `specific`. |
 
 ## Response
 

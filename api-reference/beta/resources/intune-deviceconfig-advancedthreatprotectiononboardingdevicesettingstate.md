@@ -31,7 +31,7 @@ ATP onboarding State for a given device.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity|
-|platformType|[deviceType](../resources/intune-deviceconfig-devicetype.md)|Device platform type. The possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `chromeOS`, `linux`, `visionOS`, `tvOS`, `blackberry`, `palm`, `unknown`, `cloudPC`.|
+|platformType|[deviceType](../resources/intune-deviceconfig-devicetype.md)|Device platform type. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `chromeOS`, `linux`, `visionOS`, `tvOS`, `blackberry`, `palm`, `unknown`, `cloudPC`.|
 |setting|String|The setting class name and property name.|
 |settingName|String|The Setting Name that is being reported|
 |deviceId|String|The Device Id that is being reported|
@@ -41,7 +41,7 @@ ATP onboarding State for a given device.
 |userName|String|The User Name that is being reported|
 |userPrincipalName|String|The User PrincipalName that is being reported|
 |deviceModel|String|The device model that is being reported|
-|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|The compliance state of the setting. The possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|The compliance state of the setting. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|The DateTime when device compliance grace period expires|
 
 ## Relationships
