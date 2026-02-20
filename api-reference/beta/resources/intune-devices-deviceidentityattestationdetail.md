@@ -21,7 +21,7 @@ Indicates the attestation status of the managed device
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deviceIdentityAttestationStatus|[deviceIdentityAttestationStatus](../resources/intune-devices-deviceidentityattestationstatus.md)|Indicates the attestation status of the managed device. And in which way. Default: Unknown. This property is read-only. The possible values are: `unknown`, `trusted`, `unTrusted`, `notSupported`, `incompleteData`, `unknownFutureValue`.|
+|deviceIdentityAttestationStatus|[deviceIdentityAttestationStatus](../resources/intune-devices-deviceidentityattestationstatus.md)|Indicates the attestation status of the managed device. And in which way. Default: Unknown. This property is read-only. Possible values are: `unknown`, `trusted`, `unTrusted`, `notSupported`, `incompleteData`, `unknownFutureValue`.|
 
 ## Relationships
 None

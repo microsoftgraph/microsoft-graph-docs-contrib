@@ -21,7 +21,7 @@ A base complex type to store the detection or requirement rule data for a Win32 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|The rule type indicating the purpose of the rule. The possible values are: `detection`, `requirement`.|
+|ruleType|[win32LobAppRuleType](../resources/intune-apps-win32lobappruletype.md)|The rule type indicating the purpose of the rule. Possible values are: `detection`, `requirement`.|
 
 ## Relationships
 None

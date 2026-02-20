@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Process [content](../resources/processcontentrequest.md) against data protection policies in the context of the current, or specified, user.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -171,7 +171,12 @@ Content-Type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.processContentResponse",
   "protectionScopeState": "notModified",
-  "policyActions": [],
+  "policyActions": [
+    {
+      "@odata.type": "#microsoft.graph.dlpAction",
+      "action" : "restrictWebGrounding"
+    }
+  ],
   "processingErrors": []
 }
 ```

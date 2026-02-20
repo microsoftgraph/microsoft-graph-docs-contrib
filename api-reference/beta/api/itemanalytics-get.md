@@ -22,7 +22,7 @@ For a custom time range or interval, use the [getActivitiesByInterval][] API.
 [itemAnalytics]: ../resources/itemanalytics.md
 [getActivitiesByInterval]: ../api/itemactivity-getbyinterval.md
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties and relationships of your own [workHoursAndLocationsSetting](../resources/workhoursandlocationssetting.md). The settings include the location sharing preferences and navigation properties to your work plan recurrences. To retrieve work plan occurrences, use the [occurrencesView](workhoursandlocationssetting-occurrencesview.md) API.
+Get the properties and relationships of your own [workHoursAndLocationsSetting](../resources/workhoursandlocationssetting.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -27,6 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/settings/workHoursAndLocations
 ```
@@ -35,6 +36,7 @@ GET /me/settings/workHoursAndLocations
 
 When using the `/users/{id}` endpoint, the ID must be your own user ID.
 
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}/settings/workHoursAndLocations
 ```

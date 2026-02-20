@@ -22,6 +22,7 @@ Get a list of the [authenticationEventListener](../resources/authenticationevent
 - [onUserCreateStartListener](../resources/onusercreatestartlistener.md)
 - [onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md)
 - [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md)
+- [onPasswordSubmitListener](../resources/onpasswordsubmitlistener.md)
 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]

@@ -16,7 +16,7 @@ Permanently delete an event and place it in the **purges** folder in the dumpste
 
 For more information about item retention, see [Configure deleted item retention and recoverable items quotas](/exchange/configure-deleted-item-retention-and-recoverable-items-quotas-exchange-2013-help).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 
@@ -69,7 +69,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/users/b4c80c57-5c59-4a3d-912a-a83985988b82/AAasdijs0acjdjlksca=/permanentDelete
+POST https://graph.microsoft.com/v1.0/users/b4c80c57-5c59-4a3d-912a-a83985988b82/events/AAasdijs0acjdjlksca=/permanentDelete
 ```
 
 # [JavaScript](#tab/javascript)

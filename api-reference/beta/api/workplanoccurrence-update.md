@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Update the properties of a [workPlanOccurrence](../resources/workplanoccurrence.md) object in your own work plan. Updates require the full occurrence object to be provided (PUT semantics). PATCH isn't supported.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -25,6 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+<!-- { "blockType": "ignored" } -->
 ```http
 PUT /me/settings/workHoursAndLocations/occurrences/{id}
 ```
@@ -33,6 +36,7 @@ PUT /me/settings/workHoursAndLocations/occurrences/{id}
 
 When using the `/users/{id}` endpoint, the ID must be your own user ID.
 
+<!-- { "blockType": "ignored" } -->
 ```http
 PUT /users/{id | userPrincipalName}/settings/workHoursAndLocations/occurrences/{id}
 ```
@@ -69,11 +73,11 @@ Content-type: application/json
 
 {
   "start": {
-    "dateTime": "2024-01-15T08:00:00.0000000",
+    "dateTime": "2025-12-15T08:00:00.0000000",
     "timeZone": "Pacific Standard Time"
   },
   "end": {
-    "dateTime": "2024-01-15T12:00:00.0000000",
+    "dateTime": "2025-12-15T12:00:00.0000000",
     "timeZone": "Pacific Standard Time"
   },
   "workLocationType": "timeOff",
@@ -104,11 +108,11 @@ Content-type: application/json
   "id": "AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1hMDZiLTU1OGY5OTZhYmY4OABGAAAAAAAiQ8W967B7TKBjgx9rVEURBwAiIsqMbYjsT5e-T7KzowPTAAAAAAENAAAiIsqMbYjsT5e-T7KzowPTAAABvv6cAAA=",
   "recurrenceId": null,
   "start": {
-    "dateTime": "2024-01-15T08:00:00.0000000",
+    "dateTime": "2025-12-15T08:00:00.0000000",
     "timeZone": "Pacific Standard Time"
   },
   "end": {
-    "dateTime": "2024-01-15T12:00:00.0000000",
+    "dateTime": "2025-12-15T12:00:00.0000000",
     "timeZone": "Pacific Standard Time"
   },
   "workLocationType": "timeOff",

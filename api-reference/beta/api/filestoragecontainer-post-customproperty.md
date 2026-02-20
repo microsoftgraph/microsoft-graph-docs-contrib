@@ -53,7 +53,7 @@ You can specify the following properties when you create a custom property.
 
 ## Response
 
-If successful, this method returns a `200 Created` response code.
+If successful, this method returns a `201 Created` response code.
 
 ## Examples
 
@@ -92,7 +92,7 @@ The following example shows the response. By default, the property isn't searcha
 }
 -->
 ```http
-HTTP/1.1 200 Created
+HTTP/1.1 201 Created
 ```
 ### Example 2: Create a custom searchable property
 
@@ -130,7 +130,7 @@ The following example shows the response.
 }
 -->
 ```http
-HTTP/1.1 200 Created
+HTTP/1.1 201 Created
 ```
 
 

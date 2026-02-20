@@ -5,7 +5,7 @@ author: "egreenberg14"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
-ms.date: 10/24/2024
+ms.date: 01/08/2025
 ---
 
 # reportRoot resource type
@@ -20,7 +20,11 @@ Represents a container for Microsoft Entra ID and Microsoft 365 reporting resour
 
 ### Microsoft 365 Copilot usage
 
-For details about report views and names, see [Microsoft 365 reports - Microsoft 365 Copilot usage](/microsoft-365/admin/activity-reports/microsoft-365-copilot-usage).
+For details about report views and names, see [Microsoft 365 reports - Microsoft 365 Copilot usage](/microsoft-365/admin/activity-reports/microsoft-365-copilot-usage). 
+
+> [!NOTE]
+> Going forward, use the Microsoft 365 Copilot usage APIs under the `/copilot` URL path segment. For more information, see [Copilot report root](/microsoft-365-copilot/extensibility/api/admin-settings/reports/resources/copilotreportroot). 
+
 
 | Method                                                                                 | Return type | Description                                                                                                    |
 | :------------------------------------------------------------------------------------- | :---------- | :------------------------------------------------------------------------------------------------------------- |

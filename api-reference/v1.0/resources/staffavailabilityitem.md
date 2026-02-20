@@ -12,8 +12,6 @@ ms.date: 08/08/2024
 
 Namespace: microsoft.graph
 
- [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents the available and busy time slots of a Microsoft Bookings [staff member](bookingstaffmember.md).
 
 ## Properties

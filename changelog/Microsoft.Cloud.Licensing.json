@@ -101,6 +101,64 @@
       "CreatedDateTime": "2024-10-17T15:55:45.1519734Z",
       "WorkloadArea": "Device and app management",
       "SubArea": "Cloud licensing"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e8027b8f-fa90-4d19-bc41-970a23eb326e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "adminCloudLicensing",
+          "ChangeType": "Addition",
+          "Description": "Added the [adminCloudLicensing](https://learn.microsoft.com/en-us/graph/api/resources/cloudLicensing-adminCloudLicensing?view=graph-rest-beta) resource.",
+          "Target": "adminCloudLicensing"
+        },
+        {
+          "Id": "e8027b8f-fa90-4d19-bc41-970a23eb326e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "allotment",
+          "ChangeType": "Addition",
+          "Description": "Added the [allotment](https://learn.microsoft.com/en-us/graph/api/resources/cloudLicensing-allotment?view=graph-rest-beta) resource.",
+          "Target": "allotment"
+        },
+        {
+          "Id": "e8027b8f-fa90-4d19-bc41-970a23eb326e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "assignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [assignment](https://learn.microsoft.com/en-us/graph/api/resources/cloudLicensing-assignment?view=graph-rest-beta) resource.",
+          "Target": "assignment"
+        },
+        {
+          "Id": "e8027b8f-fa90-4d19-bc41-970a23eb326e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "assignmentError",
+          "ChangeType": "Addition",
+          "Description": "Added the [assignmentError](https://learn.microsoft.com/en-us/graph/api/resources/cloudLicensing-assignmentError?view=graph-rest-beta) resource.",
+          "Target": "assignmentError"
+        },
+        {
+          "Id": "e8027b8f-fa90-4d19-bc41-970a23eb326e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subscription",
+          "ChangeType": "Addition",
+          "Description": "Added the [subscription](https://learn.microsoft.com/en-us/graph/api/resources/cloudLicensing-subscription?view=graph-rest-beta) resource.",
+          "Target": "subscription"
+        },
+        {
+          "Id": "e8027b8f-fa90-4d19-bc41-970a23eb326e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "waitingMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [waitingMember](https://learn.microsoft.com/en-us/graph/api/resources/cloudLicensing-waitingMember?view=graph-rest-beta) resource.",
+          "Target": "waitingMember"
+        }
+      ],
+      "Id": "e8027b8f-fa90-4d19-bc41-970a23eb326e",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-01-22T00:00:49.2701446Z",
+      "WorkloadArea": "Microsoft Cloud Licensing",
+      "SubArea": ""
     }
   ]
 }

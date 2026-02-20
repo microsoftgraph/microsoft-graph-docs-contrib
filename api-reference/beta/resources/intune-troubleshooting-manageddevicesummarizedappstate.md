@@ -21,7 +21,7 @@ The summarized information associated with managed device app installation statu
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|summarizedAppState|[deviceManagementScriptRunState](../resources/intune-troubleshooting-devicemanagementscriptrunstate.md)|The device management script run state for the device, which summarizes the overall status of apps installation on the devices. If any app installation encounters an error, the state will be marked as fail; otherwise, if any app is pending installation, the state will be marked as pending. All possible values include: unknown, fail, pending, notApplicable. The possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`, `unknownFutureValue`.|
+|summarizedAppState|[deviceManagementScriptRunState](../resources/intune-troubleshooting-devicemanagementscriptrunstate.md)|The device management script run state for the device, which summarizes the overall status of apps installation on the devices. If any app installation encounters an error, the state will be marked as fail; otherwise, if any app is pending installation, the state will be marked as pending. All possible values include: unknown, fail, pending, notApplicable. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`, `unknownFutureValue`.|
 |deviceId|String|The unique identifier (DeviceId) associated with the device.|
 
 ## Relationships

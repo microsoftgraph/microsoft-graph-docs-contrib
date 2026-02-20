@@ -23,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "riskyserviceprincipal_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/riskyserviceprincipal-get-permissions.md)]
 
-[!INCLUDE [rbac-identity-protection-apis-read](../../beta/includes/rbac-for-apis/rbac-identity-protection-apis-read.md)]
+[!INCLUDE [rbac-identity-protection-apis-read](../../v1.0/includes/rbac-for-apis/rbac-identity-protection-apis-read.md)]
 
 ## HTTP request
 

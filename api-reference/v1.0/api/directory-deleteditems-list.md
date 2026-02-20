@@ -55,6 +55,14 @@ GET /directory/deletedItems/microsoft.graph.group
 GET /directory/deletedItems/microsoft.graph.user
 ```
 
+> [!IMPORTANT]
+> For soft deleted security groups, the **securityEnabled** property returns `false` instead of `true` due to a known limitation.
+>
+> To identify the group type, use the **groupTypes** property:
+>
+> - `["Unified"]`indicates a Microsoft 365 group.
+> - An empty array (`[]`) indicates a security group.
+
 The OData cast type is a required part of the URI and calling `GET /directory/deleteditems` without a type is **not** supported.
 
 ## Optional query parameters
@@ -64,7 +72,7 @@ This method supports the query parameters that are supported by the resource tha
 Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For example:
 
 ```http
-GET https://graph.microsoft.com/beta/directory/deletedItems/microsoft.graph.group?&$count=true&$orderby=deletedDateTime desc&$select=id,displayName,deletedDateTime
+GET https://graph.microsoft.com/v1.0/directory/deletedItems/microsoft.graph.group?&$count=true&$orderby=deletedDateTime desc&$select=id,displayName,deletedDateTime
 ConsistencyLevel: eventual
 ```
 
@@ -246,8 +254,5 @@ Content-type: application/json
   "type": "#page.annotation",
   "description": "List deleteditems",
   "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
+  "suppressions": []
 }-->

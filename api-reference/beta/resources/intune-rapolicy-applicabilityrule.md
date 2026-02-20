@@ -21,7 +21,7 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|filterType|[filterAssociationType](../resources/intune-rapolicy-filterassociationtype.md)|. The possible values are: `unknown`, `include`, `exclude`.|
+|filterType|[filterAssociationType](../resources/intune-rapolicy-filterassociationtype.md)|. Possible values are: `unknown`, `include`, `exclude`.|
 
 ## Relationships
 None

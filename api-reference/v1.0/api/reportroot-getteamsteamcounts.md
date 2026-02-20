@@ -78,7 +78,7 @@ The following example shows a request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/reports/getTeamsTeamCounts(period='D7')?$format=text/csv
+GET https://graph.microsoft.com/v1.0/reports/getTeamsTeamCounts(period='D7')?$format=text/csv
 ```
 
 # [C#](#tab/csharp)

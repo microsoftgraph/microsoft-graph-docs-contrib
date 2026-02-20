@@ -34,8 +34,8 @@ The user experience analytics application performance entity contains app perfor
 |osVersion|String|The OS version of the application. Supports: $select, $OrderBy. Read-only.|
 |osBuildNumber|String|The OS build number of the application. Supports: $select, $OrderBy. Read-only.|
 |activeDeviceCount|Int32|The number of devices where the application has been active. Valid values 0 to 2147483647. Supports: $select, $OrderBy. Read-only. Valid values -2147483648 to 2147483647|
-|appName|String|The name of the application. The possible values are: outlook.exe, excel.exe. Supports: $select, $OrderBy. Read-only.|
-|appDisplayName|String|The friendly name of the application. The possible values are: Outlook, Excel. Supports: $select, $OrderBy. Read-only.|
+|appName|String|The name of the application. Possible values are: outlook.exe, excel.exe. Supports: $select, $OrderBy. Read-only.|
+|appDisplayName|String|The friendly name of the application. Possible values are: Outlook, Excel. Supports: $select, $OrderBy. Read-only.|
 |appPublisher|String|The publisher of the application. Supports: $select, $OrderBy. Read-only.|
 |appUsageDuration|Int32|The total usage time of the application in minutes. Valid values 0 to 2147483647. Supports: $select, $OrderBy. Read-only. Valid values -2147483648 to 2147483647|
 |appCrashCount|Int32|The number of crashes for the application. Valid values 0 to 2147483647. Supports: $select, $OrderBy. Read-only. Valid values -2147483648 to 2147483647|

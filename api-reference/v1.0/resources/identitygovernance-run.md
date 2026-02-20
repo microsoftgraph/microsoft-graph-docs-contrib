@@ -1,7 +1,7 @@
 ---
 title: "run resource type"
 description: "Represents the runs of a lifecycle workflow."
-author: "AlexFilipin"
+author: "KristinaSmith"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType

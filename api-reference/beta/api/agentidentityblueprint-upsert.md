@@ -4,7 +4,7 @@ description: "Create a new agentIdentityBlueprint object if it doesn't exist, or
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-applications"
+ms.subservice: "entra-agent-id"
 doc_type: apiPageType
 ---
 
@@ -108,6 +108,7 @@ Content-type: application/json
     "groupMembershipClaims": null,
     "optionalClaims": null,
     "publisherDomain": "contoso.onmicrosoft.com",
+    "requiredResourceAccess": [],
     "signInAudience": "AzureADandPersonalMicrosoftAccount",
     "tags": [],
     "tokenEncryptionKeyId": null,

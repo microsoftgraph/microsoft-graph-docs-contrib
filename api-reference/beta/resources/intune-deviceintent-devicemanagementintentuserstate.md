@@ -35,7 +35,7 @@ Entity that represents user state for an intent
 |userName|String|The user name that is being reported on a device|
 |deviceCount|Int32|Count of Devices that belongs to a user for an intent|
 |lastReportedDateTime|DateTimeOffset|Last modified date time of an intent report|
-|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|User state for an intent. The possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|User state for an intent. Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 
 ## Relationships
 None

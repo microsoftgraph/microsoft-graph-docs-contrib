@@ -12,8 +12,6 @@ ms.date: 05/17/2024
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Facilitates the structures of fileStorageContainers.
 
 

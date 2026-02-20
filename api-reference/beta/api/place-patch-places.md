@@ -22,7 +22,8 @@ For more information on how to use this API, including scenarios, best practices
 > - Operations are retained for 15 days from creation.
 > - This API has a throttling limit of three calls per second. For more information, see [Microsoft Graph service-specific throttling limits](/graph/throttling-limits).
 > - All requests require the `OData-Version: 4.01` header.
-> - Currently, you can't use assigned mode with this API.
+> - Currently, this API doesn’t support the assigned mode for desks or the `isTeamsEnabled` property for rooms.
+> - For now, the place operation can’t handle a large number of places at once—especially rooms, desks, and workspaces. The current limit is approximately 20–30 rooms, desks, or workspaces.
 
 ## Permissions
 
@@ -68,7 +69,7 @@ The following example shows a request that combines multiple operations, includi
 - Update an existing building to set the display name to `Demo Building A`, enable Wi-Fi, and create a new floor `Demo Floor 1` as a child of the updated building.
 - Create a new building `Demo Building B` with a child floor `Demo Floor 1` that contains a new section `Demo Section A` with an existing desk and a new room `Demo Room 1`.
 - Create a new workspace in reservable mode under an existing parent.
-- Update an existing section to add the tag `CVP`.
+- Update the display name of an existing section.
 
 <!-- {
   "blockType": "request",
@@ -132,9 +133,7 @@ OData-Version: 4.01
     {
       "@odata.type": "#microsoft.graph.section",
       "id": "2cb2701d-0896-4c69-91bb-582d82d7c68c",
-      "tags": [
-        "CVP"
-      ]
+      "displayName": "HR"
     }
   ]
 }

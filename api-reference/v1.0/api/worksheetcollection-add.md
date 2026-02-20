@@ -61,7 +61,7 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/ad
 Content-type: application/json
 
 {
-  "name": "name-value"
+  "name": "Sheet1"
 }
 ```
 
@@ -101,14 +101,14 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.workbookWorksheet"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-  "id": "id-value",
-  "position": 99,
-  "name": "name-value",
-  "visibility": "visibility-value"
+  "id": "{FC034FA8-F8CC-4D24-9C0A-02A81B7792A0}",
+  "position": 1,
+  "name": "Sheet1",
+  "visibility": "Visible"
 }
 ```
 

@@ -22,6 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "security_ediscoverycase_post_tags" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoverycase-post-tags-permissions.md)]
+[!INCLUDE [rbac-rbac-ediscovery-reviewset-tag-apis](../includes/rbac-for-apis/rbac-ediscovery-reviewset-tag-apis.md)]
 
 ## HTTP request
 
@@ -42,7 +43,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/tags
 ## Request body
 In the request body, supply a JSON representation of the [ediscoveryReviewTag](../resources/security-ediscoveryreviewtag.md) object.
 
-You can specify the following properties when you create an **ediscoveryReviewTag**.
+You can specify the following properties when you create an **ediscoveryReviewTag**. The **parent** relationship can also be specified.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -72,7 +73,9 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-ce
 {
     "displayName": "My tag API",
     "description": "Use Graph API to create tags",
-    "childSelectability": "Many"
+    "childSelectability": "Many",
+    "parent@odata.bind":
+	"https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/{ediscoveryCaseID}/tags/{parentTagID}"
 }
 ```
 

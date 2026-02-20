@@ -66,7 +66,7 @@ The following example shows a request.
 -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/directory/publicKeyInfrastructure/certificateBasedAuthConfigurations
+GET https://graph.microsoft.com/v1.0/directory/publicKeyInfrastructure/certificateBasedAuthConfigurations
 ```
 
 # [C#](#tab/csharp)

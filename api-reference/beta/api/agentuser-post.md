@@ -4,7 +4,7 @@ description: "Create a new agentUser."
 author: "yyuank"
 ms.reviewer: "iamut"
 ms.localizationpriority: medium
-ms.subservice: entra-id
+ms.subservice: "entra-agent-id"
 doc_type: apiPageType
 ms.date: 11/11/2025
 ---

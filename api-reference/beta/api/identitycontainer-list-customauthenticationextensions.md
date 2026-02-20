@@ -19,6 +19,7 @@ Get a list of the [customAuthenticationExtension](../resources/customauthenticat
 - [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) resource type.
 - [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) resource type.
 - [onOtpSendCustomExtension](../resources/onOtpSendCustomExtension.md) resource type.
+- [onPasswordSubmitCustomExtension](../resources/onpasswordsubmitcustomextension.md) resource type.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

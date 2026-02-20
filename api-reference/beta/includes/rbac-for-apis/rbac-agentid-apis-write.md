@@ -1,11 +1,11 @@
 ---
-author: Jackson-Woods
+author: zallison22
 ms.topic: include
 ---
 
 > [!IMPORTANT]
-> The AgentIdentity* permissions are currently unavailable for consent through the API permissions experience on the Microsoft Entra admin center. To use these permissions, you can consent to them through Microsoft Graph API calls as described in [Grant or revoke API permissions programmatically](/graph/permissions-grant-via-msgraph?tabs=http&pivots=grant-delegated-permissions). See [Permissions for managing agent identities](/graph/api/resources/agentid-platform-overview#permissions-for-managing-agent-identities) for more information about these permissions.
+> - **Known issue**: If the client is granted either the *Directory.AccessAsUser.All* or *Directory.ReadWrite.All* permission, the client's permissions to create, update, and delete Agent IDs are ignored, which can cause requests to fail with `403 Unauthorized` error. To resolve this issue, remove the `Directory.AccessAsUser.All` or `Directory.ReadWrite.All` permission from the client, request new access tokens, and retry the request.
 >
-> When using delegated permissions, the authenticated user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation.
-> - Agent ID Administrator.
-> - Agent ID Developer - Create agent identity blueprints. The principal with this role is assigned ownership of the blueprint they create and can perform write operations on that blueprint.
+> - When using delegated permissions, the authenticated user must be assigned one of the following supported [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+>   - Agent ID Administrator.
+>   - Agent ID Developer - Create agent identity blueprints. The principal with this role is assigned ownership of the blueprint they create and can perform write operations on that blueprint.

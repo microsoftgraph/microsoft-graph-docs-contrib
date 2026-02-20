@@ -4,7 +4,7 @@ description: "Get a list of inheritablePermission objects for an agent identity 
 author: "zallison22"
 ms.date: 11/13/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-applications"
+ms.subservice: "entra-agent-id"
 doc_type: apiPageType
 ---
 

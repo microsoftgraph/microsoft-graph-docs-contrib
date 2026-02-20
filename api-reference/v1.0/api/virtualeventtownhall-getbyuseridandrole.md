@@ -71,7 +71,7 @@ The following example shows a request.
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/getByUserIdAndRole(userId='b7ef013a-c73c-4ec7-8ccb-e56290f45f68', role='organizer')
+GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/townhalls/getByUserIdAndRole(userId='b7ef013a-c73c-4ec7-8ccb-e56290f45f68', role='organizer')
 ```
 
 # [C#](#tab/csharp)

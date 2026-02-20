@@ -5,7 +5,7 @@ author: "kevinbellinger"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
-ms.date: 04/05/2024
+ms.date: 12/03/2025
 ---
 
 # Update contact
@@ -79,9 +79,12 @@ In the request body, supply the values for relevant fields that should be update
 |personalNotes|String|The user's notes about the contact.|
 |phones |[phone](../resources/phone.md) collection |Phone numbers associated with the contact, for example, home phone, mobile phone, and business phone. |
 |postalAddresses |[physicalAddress](../resources/physicaladdress.md) collection |Addresses associated with the contact, for example, home address and business address. |
+|primaryEmailAddress|[emailAddress](../resources/emailaddress.md)|The primary email address of the contact. Optional.|
 |profession|String|The contact's profession.|
+|secondaryEmailAddress|[emailAddress](../resources/emailaddress.md)|The secondary email address of the contact. Optional.|
 |spouseName|String|The name of the contact's spouse/partner.|
 |surname|String|The contact's surname.|
+|tertiaryEmailAddress|[emailAddress](../resources/emailaddress.md)|The tertiary email address of the contact. Optional.|
 |title|String|The contact's title.|
 |websites |[website](../resources/website.md) collection|Web sites associated with the contact. |
 |weddingAnniversary |Date |The contact's wedding anniversary. |
@@ -96,7 +99,7 @@ add, update, or delete your own app-specific data in custom properties of an ext
 
 If successful, this method returns a `200 OK` response code and updated [contact](../resources/contact.md) object in the response body.
 ## Example
-##### Request
+### Request
 The following example updates the personal email address of the specified contact.
 
 # [HTTP](#tab/http)
@@ -156,8 +159,9 @@ Content-type: application/json
 
 ---
 
-##### Response
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -221,6 +225,15 @@ Content-type: application/json
             "address":"pavelb@contoso.com"
         }
     ],
+    "primaryEmailAddress": {
+        "name": "Pavel Bansky",
+        "address": "pavelb@contoso.com"
+    },
+    "secondaryEmailAddress": {
+        "name": "Pavel Bansky",
+        "address": "pavelb@contoso.com"
+    },
+    "tertiaryEmailAddress": null,
     "websites":[
 
     ],

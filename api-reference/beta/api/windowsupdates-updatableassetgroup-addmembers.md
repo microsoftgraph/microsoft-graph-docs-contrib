@@ -1,11 +1,11 @@
 ---
 title: "updatableAssetGroup: addMembers"
 description: "Add members to an updatableAssetGroup."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-update-business
 doc_type: apiPageType
-ms.date: 04/04/2024
+ms.date: 01/27/2026
 ---
 
 # updatableAssetGroup: addMembers

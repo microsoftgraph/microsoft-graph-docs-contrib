@@ -56,6 +56,10 @@ items:
     href: ../../api/driveitem-get-content-format.md
   - name: Delete item
     href: ../../api/driveitem-delete.md
+  - name: Archive
+    href: ../../api/driveitem-archive.md
+  - name: Unarchive
+    href: ../../api/driveitem-unarchive.md
   - name: Restore item
     href: ../../api/driveitem-restore.md
   - name: Permanently delete item

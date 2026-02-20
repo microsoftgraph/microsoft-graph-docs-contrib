@@ -73,9 +73,11 @@ The following properties are required when creating the [groupSetting](../resour
 
 If successful, this method returns `201 Created` response code and [groupSetting](../resources/groupsetting.md) object in the response body.
 
-## Example 1: Create a new setting for all Microsoft 365 groups in the tenant
+## Examples
 
-### Request
+### Example 1: Create a new setting for all Microsoft 365 groups in the tenant
+
+#### Request
 
 Only the [groupSettingTemplates](../resources/groupsettingtemplate.md) object named `Group.Unified` can be applied to all Microsoft 365 groups at the tenant-level.
 
@@ -143,7 +145,7 @@ Content-type: application/json
 
 ---
 
-### Response
+#### Response
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -185,9 +187,9 @@ Content-type: application/json
 
 The **displayName** property and other name-value pairs will be populated with the default values from the [groupSettingTemplates](../resources/groupsettingtemplate.md) object that matches the **templateId**.
 
-## Example 2: Create a setting to block guests for a specific Microsoft 365 group
+### Example 2: Create a setting to block guests for a specific Microsoft 365 group
 
-### Request
+#### Request
 
 Only the [groupSettingTemplates](../resources/groupsettingtemplate.md) object named `Group.Unified.Guest` can be applied to specific Microsoft 365 groups.
 
@@ -245,7 +247,7 @@ Content-type: application/json
 
 In the request body, supply a JSON representation of [groupSetting](../resources/groupsetting.md) object.
 
-### Response
+#### Response
 
 > **Note:** The response object shown here might be shortened for readability.
 

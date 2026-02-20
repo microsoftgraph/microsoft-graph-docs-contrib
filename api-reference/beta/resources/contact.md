@@ -5,7 +5,7 @@ author: "kevinbellinger"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: resourcePageType
-ms.date: 08/21/2024
+ms.date: 12/03/2025
 ---
 
 # contact resource type
@@ -72,9 +72,12 @@ by providing a [delta](../api/contact-delta.md) function.
 |personalNotes|String|The user's notes about the contact.|
 |phones |[phone](phone.md) collection |Phone numbers associated with the contact, for example, home phone, mobile phone, and business phone. |
 |postalAddresses |[physicalAddress](physicaladdress.md) collection |Addresses associated with the contact, for example, home address and business address. |
+|primaryEmailAddress|[emailAddress](../resources/emailaddress.md)|The primary email address of the contact.|
 |profession|String|The contact's profession.|
+|secondaryEmailAddress|[emailAddress](../resources/emailaddress.md)|The secondary email address of the contact.|
 |spouseName|String|The name of the contact's spouse/partner.|
 |surname|String|The contact's surname.|
+|tertiaryEmailAddress|[emailAddress](../resources/emailaddress.md)|The tertiary email address of the contact.|
 |title|String|The contact's title.|
 |websites |[website](website.md) collection|Web sites associated with the contact. |
 |weddingAnniversary |Date |The contact's wedding anniversary. |
@@ -137,9 +140,12 @@ The following JSON representation shows the resource type.
   "personalNotes": "string",
   "phones": [{"@odata.type": "microsoft.graph.phone"}],
   "postalAddresses": [{"@odata.type": "microsoft.graph.physicalAddress"}],
+  "primaryEmailAddress": {"@odata.type": "microsoft.graph.emailAddress"},
   "profession": "string",
+  "secondaryEmailAddress": {"@odata.type": "microsoft.graph.emailAddress"},
   "spouseName": "string",
   "surname": "string",
+  "tertiaryEmailAddress": {"@odata.type": "microsoft.graph.emailAddress"},
   "title": "string",
   "websites": [{"@odata.type": "microsoft.graph.website"}],
   "weddingAnniversary": "date",
