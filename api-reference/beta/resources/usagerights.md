@@ -47,7 +47,7 @@ Enumerates a user's usage rights when content is protected with a sensitivity la
 | unknownFutureValue | 2097152 | This value is set to allow future additions to the enum. Do not use in your app. |
 
 ### Note
-This enum is defined as a bitmask (flags): each value represents a single usage right and is assigned a power-of-two value (1, 2, 4, 8, …). RMS may return a single integer that combines multiple rights by OR’ing these values together.
+This enum uses a bitmask operation, where each value represents a single permission. Each permission is assigned a power‑of‑two number (1, 2, 4, 8, and so on), so multiple permissions can be combined into one value. To combine usage rights, applications use bitwise operations rather than treating the numbers as simple totals. This allows a single result to represent several allowed actions at the same time.
 
 However, in our PICS Tier 2 Get Label Rights API, we do not return the combined bitmask integer. Instead, we return the expanded list of individual rights. The numeric values below are provided for reference/debugging only (to help interpret RMS responses or logs).
 
