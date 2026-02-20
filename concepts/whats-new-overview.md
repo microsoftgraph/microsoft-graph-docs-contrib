@@ -3,7 +3,7 @@ title: "What's new in Microsoft Graph"
 description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, and other resources."
 author: "lauragra"
 ms.localizationpriority: high
-ms.date: 02/13/2026
+ms.date: 02/20/2026
 ms.topic: whats-new
 ---
 
@@ -35,6 +35,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 ### Message trace
 
 Use the message trace API to track the flow of email messages through your Exchange Online organization. For more information, see [exchangeMessageTrace](/graph/api/resources/exchangemessagetrace).
+
+### Security | Data security and compliance
+
+Added the `restrictWebGrounding` member to the [dlpAction](/graph/api/resources/enums-security#dlpaction-values) enumeration to support restricting web grounding actions in data loss prevention policies in Microsoft Purview.
 
 ### Teamwork and communications | Administration
 - [Get the policy ID](/graph/api/teamsadministration-teamspolicyassignment-getpolicyid) for a given policy name and policy type within Teams administration.
