@@ -56,7 +56,6 @@ If successful, this method returns a `204 No Content` response code.
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_cloudpccloudapp"
@@ -66,8 +65,6 @@ The following example shows a request.
 ``` http
 DELETE https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudApps/40d0e128-de93-41dc-89ec-33d84bb662a0
 ```
-
----
 
 ### Response
 
