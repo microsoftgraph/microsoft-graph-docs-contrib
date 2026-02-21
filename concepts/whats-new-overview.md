@@ -78,7 +78,7 @@ Use the new cloud licensing APIs to manage tenant, user, and group licensing dat
 
 ### Files
 
-- Added [driveItem: archive](/graph/api/driveitem-archive?view=graph-rest-beta&preserve-view=true) and [driveItem: unarchive](/graph/api/driveitem-unarchive?view=graph-rest-beta&preserve-view=true) to enable organizations to archive/unarchive driveItems.
+Added [driveItem: archive](/graph/api/driveitem-archive?view=graph-rest-beta&preserve-view=true) and [driveItem: unarchive](/graph/api/driveitem-unarchive?view=graph-rest-beta&preserve-view=true) to enable organizations to archive and unarchive [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta&preserve-view=true) objects.
 
 ### Identity and access | Identity and sign-in
 
@@ -184,7 +184,7 @@ Use the **welcomeMessageEnabled** property on the [group](/graph/api/resources/g
 
 ### Identity and access | Identity and sign-in
 
-Added the `microsoftRevokedSessions` value to the [riskDetail](/graph/api/resources/riskdetail) enumeration to indicate that Microsoft revoked sessions. This enumeration member applies to the following Microsoft Entra Identity Protection resources: [riskDetection](/graph/api/resources/riskdetection?view=graph-rest-beta&preserve-view=true), [riskUserActivity](/graph/api/resources/riskuseractivity), [riskyUser](/graph/api/resources/riskyuser?view=graph-rest-beta&preserve-view=true), and [signIn](/graph/api/resources/signin?view=graph-rest-beta&preserve-view=true).
+- Added the `microsoftRevokedSessions` value to the [riskDetail](/graph/api/resources/riskdetail) enumeration to indicate that Microsoft revoked sessions. This enumeration member applies to the following Microsoft Entra Identity Protection resources: [riskDetection](/graph/api/resources/riskdetection?view=graph-rest-beta&preserve-view=true), [riskUserActivity](/graph/api/resources/riskuseractivity), [riskyUser](/graph/api/resources/riskyuser?view=graph-rest-beta&preserve-view=true), and [signIn](/graph/api/resources/signin?view=graph-rest-beta&preserve-view=true).
 - Added `mexico` as a new supported value for the **cloudPcGeographicLocationType** enumeration type. This enum is the return type for the **geographicLocationType** property on [cloudPcDomainJoinConfiguration](/graph/api/resources/cloudpcdomainjoinconfiguration?view=graph-rest-beta&preserve-view=true) and [cloudPcSupportedRegion](/graph/api/resources/cloudpcsupportedregion?view=graph-rest-beta&preserve-view=true).
 - Added the `cloudPCInventoryReport` member to the **cloudPcReportName** enumeration type. This enum is the return type for the **reportName** property on [cloudPcExportJob](/graph/api/resources/cloudPcExportJob?view=graph-rest-beta&preserve-view=true),  [getFrontlineReport action](/graph/api/cloudpcreports-getfrontlinereport?view=graph-rest-beta&preserve-view=true), and [getCloudPcRecommendationReports action](/graph/api/cloudpcreports-getcloudpcrecommendationreports?view=graph-rest-beta&preserve-view=true).
 - Use the **category** property on [cloudPcSourceDeviceImage](/graph/api/resources/cloudpcsourcedeviceimage?view=graph-rest-beta&preserve-view=true) to get the category of the source image that is requested. For more information, see [Get cloudPcSourceDeviceImage objects with a specific category](/graph/api/cloudpcdeviceimage-getsourceimages?view=graph-rest-beta&preserve-view=true#example-2-get-cloudpcsourcedeviceimage-objects-with-a-specific-category).
@@ -219,8 +219,8 @@ Added support for managing *zones* in Microsoft Defender for Cloud, enabling org
 
 ### Teamwork and communications | Apps
 
-Use the **layoutType** property on the [channel](/graph/api/resources/channel) resource to create channels with different conversation experiences and switch between them at any time. The property supports two values: `post` for traditional post-reply format and `chat` for a chat-like threading experience. You can set the layout type when [creating a channel](/graph/api/channel-post) and [update it](/graph/api/channel-patch) later to switch between layouts.
-The `TeamsAppInstallation.ManageSelectedForTeam.All` is the least privileged application permission required to install or upgrade a Teams app that requires consent to [resource-specific consent (RSC)](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions when using the [teamsAppInstallation in a team: upgrade](/graph/api/team-teamsappinstallation-upgrade?view=graph-rest-beta&preserve-view=true) API.
+- Use the **layoutType** property on the [channel](/graph/api/resources/channel) resource to create channels with different conversation experiences and switch between them at any time. The property supports two values: `post` for traditional post-reply format and `chat` for a chat-like threading experience. You can set the layout type when [creating a channel](/graph/api/channel-post) and [update it](/graph/api/channel-patch) later to switch between layouts.
+- The `TeamsAppInstallation.ManageSelectedForTeam.All` is the least privileged application permission required to install or upgrade a Teams app that requires consent to [resource-specific consent (RSC)](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions when using the [teamsAppInstallation in a team: upgrade](/graph/api/team-teamsappinstallation-upgrade?view=graph-rest-beta&preserve-view=true) API.
 
 ### Tenant administration | Configuration management
 
