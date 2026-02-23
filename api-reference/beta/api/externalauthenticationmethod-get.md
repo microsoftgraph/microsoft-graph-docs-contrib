@@ -45,7 +45,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-To read details of your own External MFA:
+To read details of your own external MFA:
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
@@ -54,7 +54,7 @@ To read details of your own External MFA:
 GET /me/authentication/externalAuthenticationMethods/{externalAuthenticationMethodId}
 ```
 
-To read details of your own or another user's External MFA:
+To read details of your own or another user's external MFA:
 
 [!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
 
