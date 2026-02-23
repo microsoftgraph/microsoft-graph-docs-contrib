@@ -1425,6 +1425,8 @@
         "person",
         "peopleAdminSettings",
         "insightsSettings",
+        "profileCardProperty",
+        "profileSource",
         "pronounsSettings"
       ],
       "childNodes": [
