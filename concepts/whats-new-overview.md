@@ -20,6 +20,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## February 2026: New and generally available
 
+### Files
+
+Updated the admin consent requirement for the following delegated permissions related to SharePoint Embedded file storage container management:
+- The `FileStorageContainerType.Manage.All` delegated permission no longer requires admin consent.
+- The `FileStorageContainerTypeReg.Manage.All` delegated permission no longer requires admin consent.
+
 ### Groups
 
 - Added the **resourceBehaviorOptions** and **resourceProvisioningOptions** properties to the [group](/graph/api/resources/group) resource. These properties enable you to specify group behaviors and associated resources for a Microsoft 365 group.
@@ -39,6 +45,12 @@ Use the message trace API to track the flow of email messages through your Excha
 ### Security | Data security and compliance
 
 Added the `restrictWebGrounding` member to the [dlpAction](/graph/api/resources/enums-security#dlpaction-values) enumeration to support restricting web grounding actions in data loss prevention policies in Microsoft Purview.
+
+### Security | Threat protection
+
+Updated the admin consent requirement for the following delegated permissions related to threat submissions:
+- The `ThreatSubmission.Read` delegated permission now requires admin consent.
+- The `ThreatSubmission.ReadWrite` delegated permission now requires admin consent.
 
 ### Teamwork and communications | Administration
 - [Get the policy ID](/graph/api/teamsadministration-teamspolicyassignment-getpolicyid) for a given policy name and policy type within Teams administration.
