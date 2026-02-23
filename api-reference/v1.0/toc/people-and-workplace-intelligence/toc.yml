@@ -32,6 +32,34 @@ items:
     href: ../../api/peopleadminsettings-list-iteminsights.md
   - name: Update insightsSettings
     href: ../../api/insightssettings-update.md
+- name: Profile card property
+  items:
+  - name: Profile card property
+    href: ../../resources/profilecardproperty.md
+  - name: List
+    href: ../../api/peopleadminsettings-list-profilecardproperties.md
+  - name: Create
+    href: ../../api/peopleadminsettings-post-profilecardproperties.md
+  - name: Get
+    href: ../../api/profilecardproperty-get.md
+  - name: Update
+    href: ../../api/profilecardproperty-update.md
+  - name: Delete
+    href: ../../api/profilecardproperty-delete.md
+- name: Profile source
+  items:
+  - name: Profile source
+    href: ../../resources/profilesource.md
+  - name: List
+    href: ../../api/peopleadminsettings-list-profilesources.md
+  - name: Create
+    href: ../../api/peopleadminsettings-post-profilesources.md
+  - name: Get
+    href: ../../api/profilesource-get.md
+  - name: Update
+    href: ../../api/profilesource-update.md
+  - name: Delete
+    href: ../../api/profilesource-delete.md
 - name: Pronouns settings
   items:
   - name: Pronouns settings
