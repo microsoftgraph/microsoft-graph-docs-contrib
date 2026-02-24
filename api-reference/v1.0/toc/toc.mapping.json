@@ -1120,6 +1120,7 @@
             },
             {
               "name": "Authentication methods",
+              "shouldSort": true,              
               "overview": "../../resources/authenticationmethods-overview.md",
               "resources": [
                 "authenticationMethod",
@@ -1133,6 +1134,16 @@
                 "softwareOathAuthenticationMethod",
                 "temporaryAccessPassAuthenticationMethod",
                 "windowsHelloForBusinessAuthenticationMethod"
+              ],
+              "childNodes": [
+                {
+                  "name": "QR code authentication",
+                  "resources": [
+                    "qrCodePinAuthenticationMethod",
+                    "qrCode",
+                    "qrPin"
+                  ]
+                }
               ]
             },
             {
@@ -1144,6 +1155,7 @@
                 "externalAuthenticationMethodConfiguration",
                 "fido2AuthenticationMethodConfiguration",
                 "microsoftAuthenticatorAuthenticationMethodConfiguration",
+                "qrCodePinAuthenticationMethodConfiguration",
                 "smsAuthenticationMethodConfiguration",
                 "temporaryAccessPassAuthenticationMethodConfiguration",
                 "softwareOathAuthenticationMethodConfiguration",

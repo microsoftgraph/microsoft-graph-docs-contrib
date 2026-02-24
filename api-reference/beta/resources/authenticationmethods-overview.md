@@ -7,6 +7,7 @@ author: FaithOmbongi
 ms.reviewer: julija.pettere, intelligentaccesspm
 ms.subservice: "entra-sign-in"
 doc_type: "conceptualPageType"
+ms.topic: overview
 ms.date: 01/16/2026
 ---
 

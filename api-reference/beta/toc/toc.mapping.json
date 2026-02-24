@@ -174,9 +174,6 @@
       ],
       "resources": [
         "backupRestoreRoot",
-        "browseSessionBase",
-        "oneDriveForBusinessBrowseSession",
-        "sharePointBrowseSession",
         "emailNotificationsSetting",
         "protectionPolicyBase",
         "protectionRuleBase",
@@ -188,6 +185,14 @@
         "serviceApp"
       ],
       "childNodes": [
+        {
+          "name": "Browse session",
+          "overview": "../../resources/browsesessionbase.md",
+          "resources": [
+            "oneDriveForBusinessBrowseSession",
+            "sharePointBrowseSession"
+          ]
+        },
         {
           "name": "Protection policy",
           "resources": [
@@ -3766,3 +3771,5 @@
     }
   ]
 }
+
+

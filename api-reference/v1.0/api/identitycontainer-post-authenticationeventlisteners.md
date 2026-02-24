@@ -59,7 +59,9 @@ If successful, this method returns a `201 Created` response code and an [authent
 
 ## Examples
 
-### Request
+### Example 1: Create authenticationEventListener
+
+#### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -123,7 +125,7 @@ Content-length: 312
 
 ---
 
-### Response
+#### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -158,7 +160,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 5: Enable Fraud Protection during sign-up with Arkose Labs 
+### Example 2: Enable Fraud Protection during sign-up with Arkose Labs 
 
 #### Request
 The following example shows a request that enables fraud protection during sign-up using Arkose Labs.
@@ -267,7 +269,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 6: Enable Fraud Protection during sign-up with HUMAN Security 
+### Example 3: Enable Fraud Protection during sign-up with HUMAN Security 
 
 #### Request
 The following example shows a request that enables fraud protection during sign-up using HUMAN Security.

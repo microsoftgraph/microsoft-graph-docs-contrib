@@ -3,7 +3,7 @@ title: "userProtectionScopeContainer: compute"
 toc.title: "userProtectionScopeContainer: compute"
 description: "Compute the data protection policies and actions applicable to a specific user based on their context."
 author: "kylemar"
-ms.date: 06/19/2025
+ms.date: 02/06/2026
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
@@ -46,7 +46,8 @@ POST /users/{usersId}/dataSecurityAndGovernance/protectionScopes/compute
 | :------------ | :------------ |
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
-| If-None-Match | Optional. This value is used by the API to determine if the policy state has changed since the last call to the API. |
+| If-None-Match | Optional. This value is used by the API to determine if the policy state changed since the last call to the API. |
+| Client-Request-Id  | String (GUID recommended). Optional. Unique identifier for this request, which is used for tracing and debugging in logs and support interactions. If an ID isn't provided, one may be generated automatically. We recommend that you specify the ID to make tracing and debugging easier. The same ID that was sent in the request is returned in the response. |
 
 ## Request body
 
@@ -64,7 +65,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Name          | Description   |
 | :------------ | :------------ |
-| ETag          | An indicator whether the admin-configured policy state has changed. If the Etag matches the If-None-Match value and you have cached the results of parsing previous results from this API, there is no need to parse the response and cache the parsed results. Cache this value for calls to [process content](../api/userdatasecurityandgovernance-processcontent.md). |
+| ETag          | An indicator whether the admin-configured policy state changed. If the Etag matches the If-None-Match value and you cached the results of parsing previous results from this API, there's no need to parse the response and cache the parsed results. Cache this value for calls to [process content](../api/userdatasecurityandgovernance-processcontent.md). |
 
 ## Response
 
@@ -79,6 +80,7 @@ The following example computes the protection scope for a user performing text u
 ```http
 POST https://graph.microsoft.com/beta/users/7c1f8f10-cba8-4a8d-9449-db4b876d1ef70/dataSecurityAndGovernance/protectionScopes/compute
 Content-type: application/json
+Client-Request-Id: 50dc805c-3af4-42d9-ad16-a746235cc736
 
 {
    "activities": "uploadText,downloadText",
@@ -100,6 +102,7 @@ The following example shows the response. It indicates that for the `uploadText`
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Client-Request-Id: 50dc805c-3af4-42d9-ad16-a746235cc736
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.policyUserScope)",
