@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 ### OData context is returned incorrectly
 
 <!-- {
-  "ms.author": "",
+  "ms.author": "dkershaw",
   "ms.reviewer": ""
 } -->
 

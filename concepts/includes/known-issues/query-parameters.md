@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 ### $search for directory objects fails for encoded ampersand (&) character
 
 <!-- {
-  "ms.author": "",
+  "ms.author": "syprieur",
   "ms.reviewer": ""
 } -->
 
@@ -51,7 +51,7 @@ Prefer: legacySearch=true
 ### Some limitations apply to query parameters
 
 <!-- {
-  "ms.author": "",
+  "ms.author": "lucaspol",
   "ms.reviewer": ""
 } -->
 

@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 ### Creating an externalConnection with a broken adaptive card returns a 503 Service Unavailable response followed by a 409 Conflict error
 
 <!-- {
-  "ms.author": "",
+  "ms.author": "emzho",
   "ms.reviewer": ""
 } -->
 

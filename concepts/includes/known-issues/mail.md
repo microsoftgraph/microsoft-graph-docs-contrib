@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 ### Delta calls to the messages API using immutable Ids
 
 <!-- {
-  "ms.author": "",
+  "ms.author": "abhda",
   "ms.reviewer": ""
 } -->
 
@@ -19,7 +19,7 @@ When you make `/delta` calls to the messages API using immutable Ids in some cas
 ### The comment parameter for creating a draft does not become part of the message body
 
 <!-- {
-  "ms.author": "",
+  "ms.author": "abhda",
   "ms.reviewer": ""
 } -->
 

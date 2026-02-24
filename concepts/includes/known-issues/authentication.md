@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 ### Publisher message of "unverified" occurs during PowerShell and CLI app consent
 
 <!-- {
-  "ms.author": "",
+  "ms.author": "ckigoonya",
   "ms.reviewer": ""
 } -->
 
@@ -27,7 +27,7 @@ Connect-MgGraph -AppId "{your-own-app-id}" -Scopes "scope"
 ### Pre-consent for CSP apps doesn't work in some customer tenants
 
 <!-- {
-  "ms.author": "",
+  "ms.author": "sureshja",
   "ms.reviewer": ""
 } -->
 
@@ -63,7 +63,7 @@ To unblock development and testing, you can use the following workaround.
 ### Azure AD v2.0 endpoint is not supported for CSP apps
 
 <!-- {
-  "ms.author": "",
+  "ms.author": "sureshja",
   "ms.reviewer": ""
 } -->
 

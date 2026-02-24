@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 ### Accessing and updating deployment audiences is not supported
 
 <!-- {
-  "ms.author": "",
+  "ms.author": "altang",
   "ms.reviewer": ""
 } -->
 

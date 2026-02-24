@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 ### Follow/unfollow sites is not in sync with SharePoint following
 
 <!-- {
-  "ms.author": "",
+  "ms.author": "minc",
   "ms.reviewer": ""
 } -->
 

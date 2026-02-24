@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 ### APIs that export online meeting artifacts might return transcript URLs that don't contain any content
 
 <!-- {
-  "ms.author": "",
+  "ms.author": "sanjayra",
   "ms.reviewer": ""
 } -->
 
@@ -23,7 +23,7 @@ Verify that the meeting has been transcribed and if there's valid content. If th
 ### showInAddressList property is out of sync with Microsoft Exchange
 
 <!-- {
-  "ms.author": "",
+  "ms.author": "lucaspol",
   "ms.reviewer": ""
 } -->
 
@@ -34,7 +34,7 @@ When querying users through Microsoft Graph, the **showInAddressList** property 
 ### Access to a user's profile photo is limited
 
 <!-- {
-  "ms.author": "",
+  "ms.author": "kbelling",
   "ms.reviewer": ""
 } -->
 

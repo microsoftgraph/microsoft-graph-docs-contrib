@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 ### Use of specific query parameters on /subscribedSkus and /domains doesn't return the expected results
 
 <!-- {
-  "ms.author": "",
+  "ms.author": "tazkiaafra",
   "ms.reviewer": ""
 } -->
 
@@ -28,7 +28,7 @@ To prevent any disruption to your business processes, we recommend that you modi
 ### Configuring federated domains in delegated scenarios requires Directory.AccessAsUser.All permission
 
 <!-- {
-  "ms.author": "",
+  "ms.author": "rahulnagraj",
   "ms.reviewer": ""
 } -->
 
@@ -39,7 +39,7 @@ The [Create internalDomainFederation](/graph/api/domain-post-federationconfigura
 ### Claims mapping policy might require consent to additional permissions
 
 <!-- {
-  "ms.author": "",
+  "ms.author": "paulgarn",
   "ms.reviewer": ""
 } -->
 
@@ -55,7 +55,7 @@ In the future, either permission will be sufficient to call both methods.
 ### Conditional access policy requires consent to additional permission
 
 <!-- {
-  "ms.author": "",
+  "ms.author": "davidspo",
   "ms.reviewer": ""
 } -->
 

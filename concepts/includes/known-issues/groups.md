@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 ### Non-admin user can't add self as group owner during group creation or update
 
 <!-- {
-  "ms.author": "",
+  "ms.author": "yuhko",
   "ms.reviewer": ""
 } -->
 
@@ -25,7 +25,7 @@ By default, a non-admin user who is creating a security or Microsoft 365 group t
 ### GET /groups/{id}/members doesn't return service principals in v1.0
 
 <!-- {
-  "ms.author": "",
+  "ms.author": "mbhargav",
   "ms.reviewer": ""
 } -->
 

@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 ### Error when querying bookingBusinesses
 
 <!-- {
-  "ms.author": "",
+  "ms.author": "jhayes",
   "ms.reviewer": ""
 } -->
 
