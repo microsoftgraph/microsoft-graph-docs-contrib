@@ -16,9 +16,10 @@
     "b3d46ea406a66acd0fa8b1130ec9be5b501ad4a933d98ce70193c68771b6e7be": {
       "signature": "b3d46ea406a66acd0fa8b1130ec9be5b501ad4a933d98ce70193c68771b6e7be",
       "alternativeSignatures": [
-        "79e125fb7927450b0ebb02d6b3ddb03d7a6a971e21dfdc1c246ba8fd39f0969e"
+        "79e125fb7927450b0ebb02d6b3ddb03d7a6a971e21dfdc1c246ba8fd39f0969e",
+        "11e53a6e53ef601debd4d1a4dc1ca3d451cd0c96df1892e7f5685b8c6d01769b"
       ],
-      "target": "update-permissions-reference.ps1",
+      "target": "scripts/update-permissions-reference.ps1",
       "line": 170,
       "memberOf": [
         "default"
@@ -26,6 +27,18 @@
       "tool": "psscriptanalyzer",
       "ruleId": "PSAvoidUsingConvertToSecureStringWithPlainText",
       "createdDate": "2024-08-26 12:06:54Z"
+    },
+    "11e53a6e53ef601debd4d1a4dc1ca3d451cd0c96df1892e7f5685b8c6d01769b": {
+      "signature": "11e53a6e53ef601debd4d1a4dc1ca3d451cd0c96df1892e7f5685b8c6d01769b",
+      "alternativeSignatures": [],
+      "target": "scripts/update-permissions-reference.ps1",
+      "line": 177,
+      "memberOf": [
+        "default"
+      ],
+      "tool": "psscriptanalyzer",
+      "ruleId": "PSAvoidUsingConvertToSecureStringWithPlainText",
+      "createdDate": "2026-02-24 12:06:54Z"
     }
   }
 }
