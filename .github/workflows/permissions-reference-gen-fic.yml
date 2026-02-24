@@ -12,7 +12,7 @@ permissions:
   
 jobs:
   update-permissions-reference:
-    name: Update permissions reference
+    name: Update permissions reference (FIC)
     runs-on: windows-latest
     
     steps:
