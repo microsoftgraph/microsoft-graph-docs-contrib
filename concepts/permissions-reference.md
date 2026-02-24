@@ -33,7 +33,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | d07a8cc0-3d51-4b77-b3b0-32704d1f69fa | ebfcd32b-babb-40f4-a14b-42706e83bd28 |
 | DisplayText | Read all access reviews | Read all access reviews that user can access |
-| Description | Allows the app to read access reviews, reviewers, decisions and settings in the organization, without a signed-in user. | Allows the app to read access reviews, reviewers, decisions and settings that the signed-in user has access to in the organization. |
+| Description | Allows the app to read access reviews, reviewers, decisions, and settings in the organization, without a signed-in user. | Allows the app to read access reviews, reviewers, decisions, and settings that the signed-in user has access to in the organization. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -44,7 +44,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | ef5f7d5c-338f-44b0-86c3-351f46c8bb5f | e4aa47b9-9a69-4109-82ed-36ec70d85ff1 |
 | DisplayText | Manage all access reviews | Manage all access reviews that user can access |
-| Description | Allows the app to read, update, delete and perform actions on access reviews, reviewers, decisions and settings in the organization, without a signed-in user. | Allows the app to read, update, delete and perform actions on access reviews, reviewers, decisions and settings that the signed-in user has access to in the organization. |
+| Description | Allows the app to read, update, delete, and perform actions on access reviews, reviewers, decisions, and settings in the organization, without a signed-in user. | Allows the app to read, update, delete, and perform actions on access reviews, reviewers, decisions, and settings that the signed-in user has access to in the organization. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -55,7 +55,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 18228521-a591-40f1-b215-5fad4488c117 | 5af8c3f5-baca-439a-97b0-ea58a435e269 |
 | DisplayText | Manage access reviews for group and app memberships | Manage access reviews for group and app memberships |
-| Description | Allows the app to read, update, delete and perform actions on access reviews, reviewers, decisions and settings in the organization for group and app memberships, without a signed-in user. | Allows the app to read, update, delete and perform actions on access reviews, reviewers, decisions and settings for group and app memberships that the signed-in user has access to in the organization. |
+| Description | Allows the app to read, update, delete, and perform actions on access reviews, reviewers, decisions, and settings in the organization for group and app memberships, without a signed-in user. | Allows the app to read, update, delete, and perform actions on access reviews, reviewers, decisions, and settings for group and app memberships that the signed-in user has access to in the organization. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -638,7 +638,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | - | 4bae2ed4-473e-4841-a493-9829cfd51d48 |
 | DisplayText | - | Read and write the trusted certificate authority configuration for applications |
-| Description | - | Allows the app to create, read, update and delete the trusted certificate authority configuration, which can be used to restrict application certificates based on their issuing authority, on behalf of the signed-in user. |
+| Description | - | Allows the app to create, read, update, and delete the trusted certificate authority configuration, which can be used to restrict application certificates based on their issuing authority, on behalf of the signed-in user. |
 | AdminConsentRequired | - | Yes |
 
 ---
@@ -684,7 +684,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 1bfefb4e-e0b5-418b-a88f-73c46d2cc8e9 | bdfbf15f-ee85-4955-8675-146e8e5296b5 |
 | DisplayText | Read and write all applications | Read and write all applications |
-| Description | Allows the app to create, read, update and delete applications and service principals without a signed-in user.  Does not allow management of consent grants. | Allows the app to create, read, update and delete applications and service principals on behalf of the signed-in user. Does not allow management of consent grants. |
+| Description | Allows the app to create, read, update, and delete applications and service principals without a signed-in user.  Does not allow management of consent grants. | Allows the app to create, read, update, and delete applications and service principals on behalf of the signed-in user. Does not allow management of consent grants. |
 | AdminConsentRequired | Yes | Yes |
 
 ![personal Microsoft accounts][MSA] The *Application.ReadWrite.All* delegated permission is available for consent in personal Microsoft accounts.
@@ -1265,7 +1265,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | - | 12466101-c9b8-439a-8589-dd09ee67e8e9 |
 | DisplayText | - | Read and write user and shared calendars |
-| Description | - | Allows the app to create, read, update and delete events in all calendars in the organization user has permissions to access. This includes delegate and shared calendars. |
+| Description | - | Allows the app to create, read, update, and delete events in all calendars in the organization user has permissions to access. This includes delegate and shared calendars. |
 | AdminConsentRequired | - | No |
 
 ---
@@ -2686,7 +2686,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 9fadb66e-6421-4744-aede-4ab6fb98a884 | 2d372e98-f1ae-406c-a157-2ea83f6f5e4a |
 | DisplayText | Read and write all device templates | Read and write all device templates |
-| Description | Allows the app to create, read, update and delete any device template, without a signed-in user. It also allows the app to add or remove owners on any device template. | Allows the app to create, read, update and delete the device template, on behalf of the signed in user. It also allows the app to add or remove owners on any device template. |
+| Description | Allows the app to create, read, update, and delete any device template, without a signed-in user. It also allows the app to add or remove owners on any device template. | Allows the app to create, read, update, and delete the device template, on behalf of the signed in user. It also allows the app to add or remove owners on any device template. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -2768,8 +2768,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | 64d40371-8d58-4270-bc8a-b4a66de36b9a | 857bd3ea-490e-4284-88a7-a7de1893b6ee |
-| DisplayText | Create, read, update and delete internal federation configuration for a domain. | Create, read, update and delete internal federation configuration for a domain. |
-| Description | Allows the app to create, read, update and delete internal federation configuration for a domain. | Allows the app to create, read, update and delete internal federation configuration for a domain. |
+| DisplayText | Create, read, update, and delete internal federation configuration for a domain. | Create, read, update, and delete internal federation configuration for a domain. |
+| Description | Allows the app to create, read, update, and delete internal federation configuration for a domain. | Allows the app to create, read, update, and delete internal federation configuration for a domain. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -2933,8 +2933,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | 0d22204b-6cad-4dd0-8362-3e3f2ae699d9 | - |
-| DisplayText | Create, read, update and delete all class assignments with grades | - |
-| Description | Allows the app to create, read, update and delete all class assignments with grades for all users without a signed-in user. | - |
+| DisplayText | Create, read, update, and delete all class assignments with grades | - |
+| Description | Allows the app to create, read, update, and delete all class assignments with grades for all users without a signed-in user. | - |
 | AdminConsentRequired | Yes | - |
 
 ---
@@ -2955,8 +2955,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | f431cc63-a2de-48c4-8054-a34bc093af84 | - |
-| DisplayText | Create, read, update and delete all class assignments without grades | - |
-| Description | Allows the app to create, read, update and delete all class assignments without grades for all users without a signed-in user. | - |
+| DisplayText | Create, read, update, and delete all class assignments without grades | - |
+| Description | Allows the app to create, read, update, and delete all class assignments without grades for all users without a signed-in user. | - |
 | AdminConsentRequired | Yes | - |
 
 ---
@@ -3450,7 +3450,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | - | 5c28f0bf-8a70-41f1-8ab2-9032436ddb65 |
 | DisplayText | - | Have full access to user files |
-| Description | - | Allows the app to read, create, update and delete the signed-in user's files. |
+| Description | - | Allows the app to read, create, update, and delete the signed-in user's files. |
 | AdminConsentRequired | - | No |
 
 ![personal Microsoft accounts][MSA] The *Files.ReadWrite* delegated permission is available for consent in personal Microsoft accounts.
@@ -3465,7 +3465,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 75359482-378d-4052-8f01-80520e7db3cd | 863451e7-0667-486c-a5d6-d135439485f0 |
 | DisplayText | Read and write files in all site collections | Have full access to all files user can access |
-| Description | Allows the app to read, create, update and delete all files in all site collections without a signed in user. | Allows the app to read, create, update and delete all files the signed-in user can access. |
+| Description | Allows the app to read, create, update, and delete all files in all site collections without a signed in user. | Allows the app to read, create, update, and delete all files the signed-in user can access. |
 | AdminConsentRequired | Yes | No |
 
 ![personal Microsoft accounts][MSA] The *Files.ReadWrite.All* delegated permission is available for consent in personal Microsoft accounts.
@@ -3478,7 +3478,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | b47b160b-1054-4efd-9ca0-e2f614696086 | 8019c312-3263-48e6-825e-2b833497195b |
 | DisplayText | Have full access to the application's folder without a signed in user. | Have full access to the application's folder (preview) |
-| Description | Allows the app to read, create, update and delete files in the application's folder without a signed in user. | (Preview) Allows the app to read, create, update and delete files in the application's folder. |
+| Description | Allows the app to read, create, update, and delete files in the application's folder without a signed in user. | (Preview) Allows the app to read, create, update, and delete files in the application's folder. |
 | AdminConsentRequired | Yes | No |
 
 ![personal Microsoft accounts][MSA] The *Files.ReadWrite.AppFolder* delegated permission is available for consent in personal Microsoft accounts.
@@ -4575,7 +4575,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | aa6d92d4-b25a-4640-aefe-3e3231e5e736 | 7d461784-7715-4b09-9f90-91a6d8722652 |
 | DisplayText | Read and write all users' UserConfiguration objects | Read and write user's UserConfiguration objects |
-| Description | Allows the app to create, read, update and delete all users' UserConfiguration objects. | Allows the app to create, read, update and delete user's UserConfiguration objects, on behalf of the signed-in user. |
+| Description | Allows the app to create, read, update, and delete all users' UserConfiguration objects. | Allows the app to create, read, update, and delete user's UserConfiguration objects, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -5120,7 +5120,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 0b57845e-aa49-4e6f-8109-ce654fffa618 | 8c4d5184-71c2-4bf8-bb9d-bc3378c9ad42 |
 | DisplayText | Manage on-premises published resources | Manage on-premises published resources |
-| Description | Allows the app to create, view, update and delete on-premises published resources, on-premises agents and agent groups, as part of a hybrid identity configuration, without a signed in user. | Allows the app to manage hybrid identity service configuration by creating, viewing, updating and deleting on-premises published resources, on-premises agents and agent groups, on behalf of the signed-in user. |
+| Description | Allows the app to create, view, update, and delete on-premises published resources, on-premises agents and agent groups, as part of a hybrid identity configuration, without a signed in user. | Allows the app to manage hybrid identity service configuration by creating, viewing, updating and deleting on-premises published resources, on-premises agents and agent groups, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -6230,7 +6230,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 60a901ed-09f7-4aa5-a16e-7dd3d6f9de36 | 50fd364f-9d93-4ae1-b170-300e87cccf84 |
 | DisplayText | Manage all programs | Manage all programs that user can access |
-| Description | Allows the app to read, update, delete and perform actions on programs and program controls in the organization, without a signed-in user. | Allows the app to read, update, delete and perform actions on programs and program controls that the signed-in user has access to in the organization. |
+| Description | Allows the app to read, update, delete, and perform actions on programs and program controls in the organization, without a signed-in user. | Allows the app to read, update, delete, and perform actions on programs and program controls that the signed-in user has access to in the organization. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -6329,7 +6329,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | eb158f57-df43-4751-8b21-b8932adb3d34 | f2833d75-a4e6-40ab-86d4-6dfe73c97605 |
 | DisplayText | Read and write Records Management configuration, labels and policies | Read and write Records Management configuration, labels, and policies |
-| Description | Allow the application to create, update and delete any data from Records Management, such as configuration, labels, and policies without the signed in user. | Allow the application to create, update and delete any data from Records Management, such as configuration, labels, and policies on behalf of the signed-in user. |
+| Description | Allow the application to create, update, and delete any data from Records Management, such as configuration, labels, and policies without the signed in user. | Allow the application to create, update, and delete any data from Records Management, such as configuration, labels, and policies on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -7530,7 +7530,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 44e666d1-d276-445b-a5fc-8815eeb81d55 | - |
 | DisplayText | Read and write all users' tasks and tasklists | - |
-| Description | Allows the app to create, read, update and delete all users' tasks and task lists in your organization, without a signed-in user | - |
+| Description | Allows the app to create, read, update, and delete all users' tasks and task lists in your organization, without a signed-in user | - |
 | AdminConsentRequired | Yes | - |
 
 ---
@@ -8632,7 +8632,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 21792b6c-c986-4ffc-85de-df9da54b52fa | 91e7d36d-022a-490f-a748-f8e011357b42 |
 | DisplayText | Manage threat indicators this app creates or owns | Manage threat indicators this app creates or owns |
-| Description | Allows the app to create threat indicators, and fully manage those threat indicators (read, update and delete), without a signed-in user.  It cannot update any threat indicators it does not own. | Allows the app to create threat indicators, and fully manage those threat indicators (read, update and delete), on behalf of the signed-in user.  It cannot update any threat indicators it does not own. |
+| Description | Allows the app to create threat indicators, and fully manage those threat indicators (read, update, and delete), without a signed-in user.  It cannot update any threat indicators it does not own. | Allows the app to create threat indicators, and fully manage those threat indicators (read, update, and delete), on behalf of the signed-in user.  It cannot update any threat indicators it does not own. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -8874,7 +8874,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | c529cfca-c91b-489c-af2b-d92990b66ce6 | 637d7bec-b31e-4deb-acc9-24275642a2c9 |
 | DisplayText | Manage all users' identities | Manage  user identities |
-| Description | Allows the app to read, update and delete identities that are associated with a user's account, without a signed in user. This controls the identities users can sign-in with. | Allows the app to read, update and delete identities that are associated with a user's account that the signed-in user has access to. This controls the identities users can sign-in with. |
+| Description | Allows the app to read, update, and delete identities that are associated with a user's account, without a signed in user. This controls the identities users can sign-in with. | Allows the app to read, update, and delete identities that are associated with a user's account that the signed-in user has access to. This controls the identities users can sign-in with. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -9576,7 +9576,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 4e774092-a092-48d1-90bd-baad67c7eb47 | 26e2f3e8-b2a1-47fc-9620-89bb5b042024 |
 | DisplayText | Deliver and manage all user's notifications | Deliver and manage user's notifications |
-| Description | Allows the app to send, read, update and delete user's notifications, without a signed-in user. | Allows the app to send, read, update and delete user's notifications. |
+| Description | Allows the app to send, read, update, and delete user's notifications, without a signed-in user. | Allows the app to send, read, update, and delete user's notifications. |
 | AdminConsentRequired | Yes | No |
 
 ---
