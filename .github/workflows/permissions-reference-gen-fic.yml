@@ -1,4 +1,4 @@
-name: Update permissions reference file
+name: Update permissions reference file (FIC)
 
 on:
   schedule:
@@ -8,10 +8,11 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  id-token: write  # Required for federated identity credentials
   
 jobs:
   update-permissions-reference:
-    name: Update permissions reference
+    name: Update permissions reference (FIC)
     runs-on: windows-latest
     
     steps:
@@ -23,13 +24,19 @@ jobs:
       with:
         path: docs
 
+    - name: Azure Login using Federated Identity
+      uses: azure/login@v2
+      with:
+        client-id: ${{ secrets.GRAPHPERMISSIONSREFERENCE_AZURE_CLIENT_ID }}
+        tenant-id: ${{ secrets.GRAPHPERMISSIONSREFERENCE_AZURE_TENANT_ID }}
+        allow-no-subscriptions: true
+
     - name: Run PowerShell script to update permissions
       shell: pwsh
       run: | 
-        $ClientId = "${{ secrets.GRAPHPERMISSIONSREFERENCE_CLIENT_ID }}"
-        $TenantId = "${{ secrets.GRAPHPERMISSIONSREFERENCE_TENANT_ID }}"
-        $ClientSecret = "${{ secrets.GRAPHPERMISSIONSREFERENCE_CLIENT_SECRET }}"
-        ./docs/scripts/update-permissions-reference.ps1 -ClientId $ClientId -TenantId $TenantId -ClientSecret $ClientSecret
+        $ClientId = "${{ secrets.GRAPHPERMISSIONSREFERENCE_AZURE_CLIENT_ID }}"
+        $TenantId = "${{ secrets.GRAPHPERMISSIONSREFERENCE_AZURE_TENANT_ID }}"
+        ./docs/update-permissions-reference-fic.ps1 -ClientId $ClientId -TenantId $TenantId
         
     - name: Get token
       id: get_token
@@ -58,7 +65,7 @@ jobs:
     - name: Run PowerShell script to correct errors in permissions descriptions
       shell: pwsh
       run: | 
-        ./docs/scripts/correct-permissions-reference-errors.ps1
+        ./docs/correct-permissions-reference-errors.ps1
     
     - name: Commit errors correction and open a pull request
       working-directory: ./docs
@@ -72,12 +79,12 @@ jobs:
         } else { 
           $dateToday = Get-Date -Format 'yyyy-MM-dd'
           $branchName = "permissions-reference/$dateToday" 
-          $prTitle = "${dateToday}: Automated permissions reference update"
+          $prTitle = "${dateToday}: Automated permissions reference update (FIC)"
           
           git add .
           git commit -m "Correct errors in permissions reference"
           git checkout -b $branchName
           git push --set-upstream origin $branchName -f
           
-          gh pr create --base main --title $prTitle --body "Scheduled permissions reference update" --reviewer "FaithOmbongi,msewaweru" --label "ready for content review"
+          gh pr create --base main --title $prTitle --body "Scheduled permissions reference update using Federated Identity Credentials" --reviewer "FaithOmbongi,msewaweru" --label "ready for content review"
         }

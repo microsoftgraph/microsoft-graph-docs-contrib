@@ -77,6 +77,7 @@ Before beginning any documentation process, instruct the author to add all requi
 - Files should be deleted from temp-docstubs after documentation is complete
 - Always reference the temp-docstubs folder when asking for or reading input files
 - Never ask the author to provide absolute file paths outside the workspace
+- **Automated validation:** A validation script prevents temporary files from being accidentally committed (see [Common Process: Validation](#common-process-validation))
 
 ### Common Process: Updating the Changelog
 
@@ -211,10 +212,7 @@ Use the JSON template and examples from **templates/changelog-patterns.md**.
 
 **Step 7: Validate the entry**
 
-Follow the complete validation checklist in **templates/changelog-patterns.md** and run:
-```powershell
-.\validate-changelog-json.ps1
-```
+Follow the complete validation checklist in **templates/changelog-patterns.md** and see [Common Process: Validation](#common-process-validation) for running the validation script.
 
 ### Common Process: Updating What's New
 
@@ -302,6 +300,31 @@ Content-type: application/json
 ```
 
 **When promoting from beta to v1.0:** Remove SDK snippets and tab markers for files copied from beta; keep only HTTP examples (see [Scenario 2](#scenario-2-promote-apis-from-beta-to-v10)).
+
+### Common Process: Validation
+
+After making documentation changes, run these validation scripts to ensure compliance:
+
+**Validate changelog JSON files:**
+```powershell
+.\scripts\validate-changelog-json.ps1
+```
+- Validates all changelog files in the `changelog/` folder
+- Checks schema compliance, required properties, and formatting
+- Must pass before committing changelog updates
+
+**Validate temp-docstubs cleanup:**
+```powershell
+.\scripts\validate-temp-docstubs.ps1
+```
+- Verifies that only `temp-docstubs-instructions.md` remains in temp-docstubs folder
+- Prevents accidental commit of temporary input files
+- Run after completing Doc Stubs Cleanup
+
+**When validation fails:**
+- Review error messages to identify issues
+- Correct the problems in the affected files
+- Re-run validation until all checks pass
 
 ---
 
@@ -719,6 +742,7 @@ Remove "(preview)" from TOC entries as applicable:
 - [ ] All TOC entries updated
 - [ ] Changelog and What's new updated
 - [ ] No markdown lint errors remain
+- [ ] Validation completed (see [Common Process: Validation](#common-process-validation))
 - [ ] Provided summary of all files created/modified to author
 
 ---
@@ -960,6 +984,7 @@ When combining deprecation with new APIs/promotions:
 **Final:**
 - [ ] All Summary items addressed
 - [ ] No markdown lint errors
+- [ ] Validation completed (see [Common Process: Validation](#common-process-validation))
 - [ ] Summary provided to author
 
 ---
@@ -1809,6 +1834,7 @@ Before completing any authoring task, verify:
 - [ ] All TOC changes made if applicable
 - [ ] All properties referencing updated enumerations have been updated
 - [ ] All permissions files copied
+- [ ] Validation completed (see [Common Process: Validation](#common-process-validation))
 - [ ] Provided summary of all files created/modified to author
 
 ---
@@ -1928,6 +1954,7 @@ Before completing Scenario 4 tasks, verify:
 - [ ] Examples use pseudo-values, not data types
 - [ ] No markdown lint errors
 - [ ] Changelog, What's new, and TOC mapping updated only if appropriate
+- [ ] Validation completed (see [Common Process: Validation](#common-process-validation))
 - [ ] Summary of changes provided to author
 
 ---
@@ -1946,6 +1973,10 @@ After completing the documentation work and providing the final summary to the a
 3. **Execute cleanup:**
    - If the author confirms, delete all files from `temp-docstubs` folder except `temp-docstubs-instructions.md`
    - Confirm deletion: "Cleanup complete. All temporary files have been removed from the temp-docstubs folder."
+
+4. **Validate cleanup:**
+   - See [Common Process: Validation](#common-process-validation) for validation instructions
+   - If validation passes, confirm: "Validation passed: temp-docstubs folder is ready for commit."
 
 **Note:** The `temp-docstubs-instructions.md` file should never be deleted as it provides important guidance for future authoring sessions.
 
