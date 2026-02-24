@@ -37,5 +37,5 @@ The [List group members](/graph/api/group-list-members) API operation on the v1.
 
 As a workaround, use one of the following options:
 
-- Use the [List group members](/graph/api/group-list-members?view=graph-rest-beta) API operation on the beta endpoint.
+- Use the [List group members](/graph/api/group-list-members?view=graph-rest-beta&preserve-view=true) API operation on the beta endpoint.
 - Use the `/groups/{id}?$expand=members` API operation.

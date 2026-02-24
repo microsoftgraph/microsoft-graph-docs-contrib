@@ -48,7 +48,7 @@ In the **callRecord** participant resource, application/bot participants are cur
 
 #### Workaround
 
-Use the user agent **headerValue** on the [participantEndpoint](/graph/api/resources/participantendpoint) resource in a **callRecord** session to identify application participants and see additional details on the application identity.
+Use the user agent **headerValue** on the [participantEndpoint](/graph/api/resources/callrecords-participantendpoint) resource in a **callRecord** session to identify application participants and see additional details on the application identity.
 
 ### Communication Calling SDK: Support for multi-endpoint use case in delta roster notification mode is missing
 
