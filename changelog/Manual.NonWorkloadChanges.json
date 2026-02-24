@@ -3,6 +3,48 @@
     {
       "ChangeList": [
         {
+          "Id": "74c50b70-259d-4c6e-80fb-2c15dde1e827",
+          "ApiChange": "Permission",
+          "ChangedApiName": "FileStorageContainerType.Manage.All",
+          "ChangeType": "Change",
+          "Description": "Updated the `FileStorageContainerType.Manage.All` delegated permission to no longer require admin consent.",
+          "Target": "FileStorageContainerType.Manage.All"
+        },
+        {
+          "Id": "74c50b70-259d-4c6e-80fb-2c15dde1e827",
+          "ApiChange": "Permission",
+          "ChangedApiName": "FileStorageContainerTypeReg.Manage.All",
+          "ChangeType": "Change",
+          "Description": "Updated the `FileStorageContainerTypeReg.Manage.All` delegated permission to no longer require admin consent.",
+          "Target": "FileStorageContainerTypeReg.Manage.All"
+        },
+        {
+          "Id": "74c50b70-259d-4c6e-80fb-2c15dde1e827",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ThreatSubmission.Read",
+          "ChangeType": "Change",
+          "Description": "Updated the `ThreatSubmission.Read` delegated permission to now require admin consent.",
+          "Target": "ThreatSubmission.Read"
+        },
+        {
+          "Id": "74c50b70-259d-4c6e-80fb-2c15dde1e827",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ThreatSubmission.ReadWrite",
+          "ChangeType": "Change",
+          "Description": "Updated the `ThreatSubmission.ReadWrite` delegated permission to now require admin consent.",
+          "Target": "ThreatSubmission.ReadWrite"
+        }
+      ],
+      "Id": "74c50b70-259d-4c6e-80fb-2c15dde1e827",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-02-23T10:54:33.0608937Z",
+      "WorkloadArea": "Permissions",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "3fc40a97-d690-4253-ad11-7d00f9900bb1",
           "ApiChange": "Resource",
           "ChangedApiName": "user",
