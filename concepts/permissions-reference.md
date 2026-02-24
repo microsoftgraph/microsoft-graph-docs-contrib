@@ -627,7 +627,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | - | af281d3a-030d-4122-886e-146fb30a0413 |
 | DisplayText | - | Read the trusted certificate authority configuration for applications |
-| Description | - | Allows the app to read the trusted certificate authority configuration which can be used to restrict application certificates based on their issuing authority, on behalf of the signed-in user. |
+| Description | - | Allows the app to read the trusted certificate authority configuration, which can be used to restrict application certificates based on their issuing authority, on behalf of the signed-in user. |
 | AdminConsentRequired | - | Yes |
 
 ---
@@ -638,7 +638,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | - | 4bae2ed4-473e-4841-a493-9829cfd51d48 |
 | DisplayText | - | Read and write the trusted certificate authority configuration for applications |
-| Description | - | Allows the app to create, read, update and delete the trusted certificate authority configuration which can be used to restrict application certificates based on their issuing authority, on behalf of the signed-in user. |
+| Description | - | Allows the app to create, read, update and delete the trusted certificate authority configuration, which can be used to restrict application certificates based on their issuing authority, on behalf of the signed-in user. |
 | AdminConsentRequired | - | Yes |
 
 ---
