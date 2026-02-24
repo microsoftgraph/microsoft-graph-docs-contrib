@@ -3,7 +3,7 @@ title: "userProtectionScopeContainer: compute"
 toc.title: "userProtectionScopeContainer: compute"
 description: "Compute the data protection policies and actions applicable to a specific user based on their context."
 author: "kylemar"
-ms.date: 06/19/2025
+ms.date: 02/06/2026
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
@@ -44,6 +44,7 @@ POST /users/{usersId}/dataSecurityAndGovernance/protectionScopes/compute
 | :------------ | :------------ |
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
+| Client-Request-Id  | String (GUID recommended). Optional. Unique identifier for this request, which is used for tracing and debugging in logs and support interactions. If an ID isn't provided, one may be generated automatically. We recommend that you specify the ID to make tracing and debugging easier. The same ID that was sent in the request is returned in the response. |
 
 ## Request body
 
@@ -61,7 +62,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Name          | Description   |
 | :------------ | :------------ |
-| ETag          | An indicator whether the admin-configured policy state has changed. If you have cached Etag value and it matches ETag from previous results from this API, there is no need to parse the response and cache the parsed results. Cache this value for calls to [process content](../api/userdatasecurityandgovernance-processcontent.md). |
+| ETag          | An indicator whether the admin-configured policy state changed. If you cached Etag value and it matches ETag from previous results from this API, there's no need to parse the response and cache the parsed results. Cache this value for calls to [process content](../api/userdatasecurityandgovernance-processcontent.md). |
 
 ## Response
 
@@ -78,6 +79,7 @@ The following example computes the protection scope for a user performing text u
 ```http
 POST https://graph.microsoft.com/v1.0/users/7c1f8f10-cba8-4a8d-9449-db4b876d1ef70/dataSecurityAndGovernance/protectionScopes/compute
 Content-type: application/json
+Client-Request-Id: 50dc805c-3af4-42d9-ad16-a746235cc736
 
 {
    "activities": "uploadText,downloadText",
@@ -92,13 +94,14 @@ Content-type: application/json
 
 #### Response
 
-The following example shows the response. It indicates that for the `uploadText` activity for the integrated application with id 83ef208a-0396-4893-9d4f-d36efbffc8bd, policies require inline evaluation. For the `uploadFile` activity for the integrated application with id 83ef208a-0396-4893-9d4f-d36efbffc8bd, policies require offline evaluation and trigger a `restrictAccess` action (likely blocking uploads based on contextual information, e.g. blocking uploads for specific users or group).
+The following example shows the response. It indicates that for the `uploadText` activity for the integrated application with id 83ef208a-0396-4893-9d4f-d36efbffc8bd, policies require inline evaluation. For the `uploadFile` activity for the integrated application with id 83ef208a-0396-4893-9d4f-d36efbffc8bd, policies require offline evaluation and trigger a `restrictAccess` action (likely blocking uploads based on contextual information; for example, blocking uploads for specific users or group).
 
 > **Note:** The response object shown here might be shortened for readability.
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Client-Request-Id: 50dc805c-3af4-42d9-ad16-a746235cc736
 
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.policyUserScope)",
