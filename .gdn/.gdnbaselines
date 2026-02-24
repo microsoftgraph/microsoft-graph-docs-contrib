@@ -19,7 +19,7 @@
         "79e125fb7927450b0ebb02d6b3ddb03d7a6a971e21dfdc1c246ba8fd39f0969e"
       ],
       "target": "scripts/update-permissions-reference.ps1",
-      "line": 170,
+      "line": 177,
       "memberOf": [
         "default"
       ],
