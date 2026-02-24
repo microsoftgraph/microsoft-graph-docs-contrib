@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A representation of an external MFA registered to a user. external MFA is used to sign in to Microsoft Entra ID using an external identity provider.
+A representation of an external MFA registered to a user. External MFA is used to sign in to Microsoft Entra ID using an external identity provider.
 
 The **externalAuthenticationMethod** resource is a derived type of the [authenticationMethod](../resources/authenticationmethod.md) resource type.
 
