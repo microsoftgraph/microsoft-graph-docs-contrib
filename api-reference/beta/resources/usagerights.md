@@ -46,35 +46,11 @@ Enumerates a user's usage rights when content is protected with a sensitivity la
 | labelNotFoundException | 1048576 | Represents a label with no protection settings, so there are no usage rights to evaluate. |
 | unknownFutureValue | 2097152 | This value is set to allow future additions to the enum. Do not use in your app. |
 
-### Note
-This enum uses a bitmask operation, where each value represents a single permission. Each permission is assigned a power‑of‑two number (1, 2, 4, 8, and so on), so multiple permissions can be combined into one value. To combine usage rights, applications use bitwise operations rather than treating the numbers as simple totals. This allows a single result to represent several allowed actions at the same time.
-
-However, [Get Label Usage Rights](/graph/api/usagerightsincluded-get), returns an expanded list of individual rights. not the combined bitmask integer. The numeric values below are provided for reference/debugging only. For example, to interpret Azure Rights Management Services (RMS) responses or logs.
-
-```
-// Each enum value represents a single permission (flags)
-UsageRights.Unknown = 1;   // 0001
-UsageRights.DocEdit = 2;   // 0010
-UsageRights.View    = 4;   // 0100
-
-// RMS-style: combine multiple rights using bitwise OR (|)
-UsageRights rights = UsageRights.Unknown | UsageRights.DocEdit;
-
-// Check whether a specific right is included using bitwise AND (&)
-bool canEdit = (rights & UsageRights.DocEdit) == UsageRights.DocEdit;
-bool canView = (rights & UsageRights.View) == UsageRights.View;
-```
-
-In the example above, Unknown | DocEdit produces a single value that contains both permissions. Bitwise AND (&) is used to test whether a particular right is present in the combined value.
 ## JSON representation
 
 The following JSON representation shows the enum type.
-<!-- {
-  "blockType": "resource",
-  "@odata.type": "microsoft.graph.usageRights"
-} -->
 ```json
 {
-  "@odata.type": "#microsoft.graph.usageRights"
+  "@odata.type": "#microsoft.graph.usageRightsIncluded"
 }
 ```
