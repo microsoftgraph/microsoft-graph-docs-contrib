@@ -12,6 +12,4 @@ ms.localizationpriority: medium
   "ms.reviewer": ""
 } -->
 
-**Status**: Active
-
 OData context is sometimes returned incorrectly when tracking changes to relationships.

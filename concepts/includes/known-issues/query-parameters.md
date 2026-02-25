@@ -12,8 +12,6 @@ ms.localizationpriority: medium
   "ms.reviewer": ""
 } -->
 
-**Status**: Active
-
 As per RFC 3986 and as described in [Encoding query parameters](/graph/query-parameters#encoding-query-parameters), reserved characters in query strings must be percent-encoded. For example, the syntax for `$search` on a group name like "Hiking&Recreation" is as follows:
 
 ```http
@@ -54,8 +52,6 @@ Prefer: legacySearch=true
   "ms.author": "lucaspol",
   "ms.reviewer": ""
 } -->
-
-**Status**: Active
 
 The following limitations apply to query parameters:
 

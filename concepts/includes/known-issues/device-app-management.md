@@ -12,8 +12,6 @@ ms.localizationpriority: medium
   "ms.reviewer": ""
 } -->
 
-**Status**: Active
-
 Accessing and updating deployment audiences on deployment resources created via Intune is not currently supported.
 
 - Listing deployment audience members and listing deployment audience exclusions returns `404 Not Found`.

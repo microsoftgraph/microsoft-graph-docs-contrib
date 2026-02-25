@@ -12,8 +12,6 @@ ms.localizationpriority: medium
   "ms.reviewer": ""
 } -->
 
-**Status**: Active
-
 The consent page shows that the command-line app that caters to PowerShell and CLI is from an unverified publisher.
 
 #### Workaround
@@ -30,8 +28,6 @@ Connect-MgGraph -AppId "{your-own-app-id}" -Scopes "scope"
   "ms.author": "sureshja",
   "ms.reviewer": ""
 } -->
-
-**Status**: Active
 
 Under certain circumstances, pre-consent for cloud solution provider (CSP) apps may not work for some of your customer tenants.
 
@@ -66,7 +62,5 @@ To unblock development and testing, you can use the following workaround.
   "ms.author": "sureshja",
   "ms.reviewer": ""
 } -->
-
-**Status**: Active
 
 Cloud solution provider (CSP) apps must acquire tokens from the Azure AD (v1) endpoints to successfully call Microsoft Graph in their partner-managed customers. Currently, acquiring a token through the newer Azure AD v2.0 endpoint is not supported.

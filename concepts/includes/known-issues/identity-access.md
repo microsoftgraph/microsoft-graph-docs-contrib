@@ -12,8 +12,6 @@ ms.localizationpriority: medium
   "ms.reviewer": ""
 } -->
 
-**Status**: Active
-
 The following usage of query parameters that target **subscribedSkus** and **domain** entities might not return the expected results:
 
 - Use of `$search` on both **subscribedSkus** or **domain** entities
@@ -32,8 +30,6 @@ To prevent any disruption to your business processes, we recommend that you modi
   "ms.reviewer": ""
 } -->
 
-**Status**: Active
-
 The [Create internalDomainFederation](/graph/api/domain-post-federationconfiguration), [Update internalDomainFederation](/graph/api/internaldomainfederation-update), and [Delete internalDomainFederation](/graph/api/internaldomainfederation-delete) might require you to grant consent to the *Directory.AccessAsUser.All* permission. This requirement is a temporary workaround till we provide a more granular delegated permission for managing federated domains.
 
 ### Claims mapping policy might require consent to additional permissions
@@ -42,8 +38,6 @@ The [Create internalDomainFederation](/graph/api/domain-post-federationconfigura
   "ms.author": "paulgarn",
   "ms.reviewer": ""
 } -->
-
-**Status**: Active
 
 The [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy) API might require consent to both the *Policy.Read.All* and *Policy.ReadWrite.ConditionalAccess* permissions for the `LIST /policies/claimsMappingPolicies` and `GET /policies/claimsMappingPolicies/{id}` methods, as follows:
 
@@ -58,7 +52,5 @@ In the future, either permission will be sufficient to call both methods.
   "ms.author": "davidspo",
   "ms.reviewer": ""
 } -->
-
-**Status**: Active
 
 The [conditionalAccessPolicy](/graph/api/resources/conditionalaccesspolicy) API currently requires consent to the *Policy.Read.All* permission to call the POST and PATCH methods. In the future, the *Policy.ReadWrite.ConditionalAccess* permission will enable you to read policies from the directory.

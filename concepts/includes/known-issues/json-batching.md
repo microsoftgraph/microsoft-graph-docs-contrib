@@ -12,8 +12,6 @@ ms.localizationpriority: medium
   "ms.reviewer": ""
 } -->
 
-**Status**: Active
-
 Individual requests can depend on other individual requests. Currently, requests can only depend on a single other request, and must follow one of these three patterns:
 
 - **Parallel** - no individual request states a dependency in the **dependsOn** property.

@@ -12,8 +12,6 @@ ms.localizationpriority: medium
   "ms.reviewer": ""
 } -->
 
-**Status**: Active
-
 The [getAllTranscripts](/graph/api/onlinemeeting-getalltranscripts) API might return transcript content URLs for some meetings that don't have any transcribed words. Calls to the content URL for those meetings will return an error.
 
 #### Workaround
@@ -27,8 +25,6 @@ Verify that the meeting has been transcribed and if there's valid content. If th
   "ms.reviewer": ""
 } -->
 
-**Status**: Active
-
 When querying users through Microsoft Graph, the **showInAddressList** property may not indicate the same status shown in Microsoft Exchange. We recommend you manage this functionality directly with Microsoft Exchange through the Microsoft 365 admin center and not to use this property in Microsoft Graph.
 
 ### Access to a user's profile photo is limited
@@ -37,8 +33,6 @@ When querying users through Microsoft Graph, the **showInAddressList** property 
   "ms.author": "kbelling",
   "ms.reviewer": ""
 } -->
-
-**Status**: Active
 
 Reading and updating a user's profile photo is only possible if the user has a mailbox. Failure to read or update a photo, in this case, results in the following error:
 

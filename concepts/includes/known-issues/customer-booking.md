@@ -12,8 +12,6 @@ ms.localizationpriority: medium
   "ms.reviewer": ""
 } -->
 
-**Status**: Active
-
 Getting the list of **bookingBusinesses** fails with the following error code when an organization has several Bookings businesses and the account making the request is not an administrator:
 
 ```json

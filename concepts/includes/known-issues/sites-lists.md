@@ -12,8 +12,6 @@ ms.localizationpriority: medium
   "ms.reviewer": ""
 } -->
 
-**Status**: Active
-
 When querying followed sites through Microsoft Graph, the response might have incorrect results and those results might not match the results from following content in SharePoint.
 
 #### Workaround

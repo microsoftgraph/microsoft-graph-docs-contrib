@@ -12,8 +12,6 @@ ms.localizationpriority: medium
   "ms.reviewer": ""
 } -->
 
-**Status**: Active
-
 In some edge cases, a request to list **participants_v2** for a **callRecord** might return an incomplete list.
 
 #### Workaround
@@ -26,8 +24,6 @@ You can utilize the existing **participants** property of a **callRecord** for a
   "ms.author": "rahulva",
   "ms.reviewer": ""
 } -->
-
-**Status**: Active
 
 When recording bot applications enable Bot Grouping, the number of participants shown by the Teams client as being recorded isn't accurate. Because the participants are grouped, the displayed number of participants being recorded is lower than the actual number.
 
@@ -42,8 +38,6 @@ Disable bot grouping to show an accurate count.
   "ms.reviewer": ""
 } -->
 
-**Status**: Active
-
 In the **callRecord** participant resource, application/bot participants are currently represented by the [communicationsUserIdentity](/graph/api/resources/communicationsuseridentity) instead of [communicationsApplicationIdentity](/graph/api/resources/communicationsapplicationidentity).
 
 #### Workaround
@@ -57,8 +51,6 @@ Use the user agent **headerValue** on the [participantEndpoint](/graph/api/resou
   "ms.reviewer": ""
 } -->
 
-**Status**: Active
-
 When the same application or user is joining the same meeting using multiple endpoints, and the roster notification mode is delta roster, the participant roster updates provided by Communications SDK might not capture the additional endpoints added to the ongoing call.
 
 #### Workaround
@@ -71,8 +63,6 @@ Legacy mode for roster supports the multi-endpoint use case. Use the SDK version
   "ms.author": "rahulva",
   "ms.reviewer": ""
 } -->
-
-**Status**: Active
 
 The release of the KBs introduced an issue with applications developed with the Communication Calling SDKs.
 
@@ -94,8 +84,6 @@ Roll back the KBs pending an updated release of the SDK.
   "ms.reviewer": ""
 } -->
 
-**Status**: Active
-
 Change tracking (`/delta`) requests to [getAllTranscripts](/graph/api/callrecording-delta) or [getAllRecordings](/graph/api/calltranscript-delta) might return items that were already synced in earlier requests.
 
 This happens when the meeting had other non-related updates, such as adding participants, notes, or files.
@@ -111,8 +99,6 @@ For every item in the response, check the **createdDateTime** of the recording o
   "ms.reviewer": ""
 } -->
 
-**Status**: Active
-
 The [getAllRecordings](/graph/api/onlinemeeting-getallrecordings) API does not return recordings for meetings that don't have transcription enabled.
 
 ### APIs that export online meeting artifacts might not return nextLink when the request uses the $top query parameter
@@ -121,8 +107,6 @@ The [getAllRecordings](/graph/api/onlinemeeting-getallrecordings) API does not r
   "ms.author": "sanjayra",
   "ms.reviewer": ""
 } -->
-
-**Status**: Active
 
 When you call the [getAllRecordings](/graph/api/onlinemeeting-getallrecordings) or [getAllTranscripts](/graph/api/onlinemeeting-getalltranscripts) APIs, passing the `$top` filter might not return the `@odata.nextLink`, even when there are more items to export.
 
@@ -136,8 +120,6 @@ Do not pass `$top` query parameter until the issue is fixed.
   "ms.author": "pkantevari",
   "ms.reviewer": ""
 } -->
-
-**Status**: Active
 
 When a newly created tenant sends a [list members of team](/graph/api/team-list-members) request using advanced Azure AD query capabilities, an HTTP 401 error occurs.
 
@@ -153,8 +135,6 @@ When a newly created tenant sends a [list members of team](/graph/api/team-list-
   "ms.reviewer": ""
 } -->
 
-**Status**: Active
-
 When you call the [clone team](/graph/api/team-clone) method, if the source team contains more than one owner, only one owner is preserved in the cloned team. The other owners become members of the new cloned team. It is not possible to choose or configure which owner is retained as the owner of the new team.
 
 #### Workaround
@@ -168,8 +148,6 @@ Use the [Add members](/graph/api/team-post-members) method after you clone the t
   "ms.reviewer": ""
 } -->
 
-**Status**: Active
-
 When you create a channel, if you use special characters in your channel name, the [Get filesFolder](/graph/api/channel-get-filesfolder) API will return a `400 Bad Request` error response. When you create a channel, make sure that the **displayName** for the channel does not:
 
 - Include any of the following special characters: `~ # % & * { } + / \ : < > ? | ' "`.
@@ -181,8 +159,6 @@ When you create a channel, if you use special characters in your channel name, t
   "ms.author": "yaagraw",
   "ms.reviewer": ""
 } -->
-
-**Status**: Active
 
 The API calls for `teams/{team-id}/incomingChannels` and `teams/{team-id}/allChannels` return the `@odata.id` property which you can use to access the channel and run other operations on the channel object. If you call the URL returned from the `@odata.id` property, the request fails with the following error when it tries to access the cross-tenant shared channel:
 
@@ -215,8 +191,6 @@ Remove the `/tenants/{tenant-id}` part from the URL before you call the API to a
   "ms.reviewer": ""
 } -->
 
-**Status**: Active
-
 All the requests to filter team members by roles expect either a **skipToken** parameter or a **top** parameter in the request, but not both. If both the parameters are passed in the request, the **top** parameter will be ignored.
 
 ### Unable to filter team members by roles
@@ -225,8 +199,6 @@ All the requests to filter team members by roles expect either a **skipToken** p
   "ms.author": "chpalm",
   "ms.reviewer": ""
 } -->
-
-**Status**: Active
 
 Role query filters along with other filters `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner') and displayName eq 'dummy'` might not work. The server might respond with a `BAD REQUEST`.
 
@@ -237,8 +209,6 @@ Role query filters along with other filters `GET /teams/team-id/members?$filter=
   "ms.reviewer": ""
 } -->
 
-**Status**: Active
-
 The Microsoft Teams client does not show the **View Meeting details** menu for channel meetings created via the cloud communications API.
 
 ### Sensitivity label does not show up in the Teams UI
@@ -247,8 +217,6 @@ The Microsoft Teams client does not show the **View Meeting details** menu for c
   "ms.author": "anandjo",
   "ms.reviewer": ""
 } -->
-
-**Status**: Active
 
 Sensitivity Labels that are applied to Teams at times do not show up in the Teams UI, even though it can clearly be seen in both the underlying SharePoint site and in the Admin Center.
 
@@ -259,8 +227,6 @@ Sensitivity Labels that are applied to Teams at times do not show up in the Team
   "ms.reviewer": ""
 } -->
 
-**Status**: Active
-
 In certain instances, the **tenantId**/**email**/**displayName** property for the individual members of a chat might not be populated on a `GET /chats/chat-id/members` or `GET /chats/chat-id/members/membership-id` request.
 
 ### Get chats limit updated for expand members
@@ -270,8 +236,6 @@ In certain instances, the **tenantId**/**email**/**displayName** property for th
   "ms.reviewer": ""
 } -->
 
-**Status**: Active
-
 This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences). When `$expand=members` is included, this API returns a maximum of 25 items, even if a larger `$top` value is specified.
 
 ### layoutType property returns `null` when listing all channels
@@ -280,7 +244,5 @@ This API works differently in one or more national clouds. For details, see [Imp
   "ms.author": "jsinghmokha",
   "ms.reviewer": ""
 } -->
-
-**Status**: Active
 
 In the current beta release, the **layoutType** property returns `null` when listing all channels.

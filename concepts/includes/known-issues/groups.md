@@ -12,8 +12,6 @@ ms.localizationpriority: medium
   "ms.reviewer": ""
 } -->
 
-**Status**: Active
-
 When a non-admin user calls the [Create group](/graph/api/group-post-groups) API, [Update group](/graph/api/group-update) API, or [Upsert group](/graph/api/group-upsert) API and adds their user ID in the request body in the **owners@odata.bind** collection, the request fails with a `400 Bad Request` error code with the message "Request contains a property with duplicate values." A non-admin user can't explicitly add themselves as the group owner.
 
 #### Workaround
@@ -28,8 +26,6 @@ By default, a non-admin user who is creating a security or Microsoft 365 group t
   "ms.author": "mbhargav",
   "ms.reviewer": ""
 } -->
-
-**Status**: Active
 
 The [List group members](/graph/api/group-list-members) API operation on the v1.0 endpoint currently doesn't return any service principals that might be members of the queried group.
 

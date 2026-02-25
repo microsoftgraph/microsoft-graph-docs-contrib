@@ -12,8 +12,6 @@ ms.localizationpriority: medium
   "ms.reviewer": ""
 } -->
 
-**Status**: Active
-
 When a subscription for a Teams app installation change notification is created, if the scope is specific to or includes chats, upgrade events/notifications will not be delivered to the subscriber.
 
 For example: If a customer subscribes to `/appCatalogs/teamsApps/{teams-app-id}/installations?$filter=(scopeInfo/scope eq 'groupChat')`, they will not receive notifications for upgrade/update events. However, they will receive other notifications regarding installations and deletions.
