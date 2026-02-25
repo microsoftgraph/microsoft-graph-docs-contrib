@@ -10,20 +10,10 @@ items:
     href: ../../api/backuprestoreroot-get.md
   - name: Enable
     href: ../../api/backuprestoreroot-enable.md
-- name: Browse Session
-  items:
-  - name: Browse Session
-    href: ../../resources/browsesessionbase.md
-  - name: List
-    href: ../../api/backuprestoreroot-list-browsesessions.md
 - name: Browse session
   items:
-  - name: Browse Session
-    items:
-    - name: Browse Session
-      href: ../../resources/browsesessionbase.md
-    - name: List
-      href: ../../api/backuprestoreroot-list-browsesessions.md
+  - name: Overview
+    href: ../../resources/browsesessionbase.md
   - name: One drive for business browse session
     items:
     - name: One drive for business browse session

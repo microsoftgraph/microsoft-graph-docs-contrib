@@ -3,6 +3,56 @@
     {
       "ChangeList": [
         {
+          "Id": "9fff61b7-211a-47ac-9433-7bdecd3370c3",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "errorCorrectionLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **errorCorrectionLevel** enumeration type.",
+          "Target": "errorCorrectionLevel"
+        },
+        {
+          "Id": "9fff61b7-211a-47ac-9433-7bdecd3370c3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "qrCodeImageDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [qrCodeImageDetails](https://learn.microsoft.com/en-us/graph/api/resources/qrCodeImageDetails?view=graph-rest-1.0) resource.",
+          "Target": "qrCodeImageDetails"
+        },
+        {
+          "Id": "9fff61b7-211a-47ac-9433-7bdecd3370c3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "qrCode",
+          "ChangeType": "Addition",
+          "Description": "Added the [qrCode](https://learn.microsoft.com/en-us/graph/api/resources/qrCode?view=graph-rest-1.0) resource.",
+          "Target": "qrCode"
+        },
+        {
+          "Id": "9fff61b7-211a-47ac-9433-7bdecd3370c3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "qrCodePinAuthenticationMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the [qrCodePinAuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/qrCodePinAuthenticationMethod?view=graph-rest-1.0) resource.",
+          "Target": "qrCodePinAuthenticationMethod"
+        },
+        {
+          "Id": "9fff61b7-211a-47ac-9433-7bdecd3370c3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "qrPin",
+          "ChangeType": "Addition",
+          "Description": "Added the [qrPin](https://learn.microsoft.com/en-us/graph/api/resources/qrPin?view=graph-rest-1.0) resource.",
+          "Target": "qrPin"
+        }
+      ],
+      "Id": "9fff61b7-211a-47ac-9433-7bdecd3370c3",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-02-12T19:28:30.6199975Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "9c7e7018-c36e-42f2-9fd3-70ab85b8a22a",
           "ApiChange": "Relationship",
           "ChangedApiName": "externalAuthenticationMethods",

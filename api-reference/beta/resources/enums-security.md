@@ -1022,6 +1022,7 @@ Namespace: microsoft.graph.security
 |sPRuntimeAccessControl|
 |sPSharingNotifyUser|
 |sPSharingGenerateIncidentReport|
+|restrictWebGrounding|
 
 ### executionMode values
 

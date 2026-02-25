@@ -52,6 +52,7 @@ No request body is required.
 
 This example restores a version of a file identified by `{item-id}` and `{version-id}`.
 
+### Request
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "restore-item-version", "scopes": "files.readwrite", "target": "action" } -->
@@ -90,7 +91,7 @@ POST https://graph.microsoft.com/v1.0/drives/{drive-id}/items/{item-id}/versions
 
 ---
 
-## Response
+### Response
 
 If successful, the API call returns a `204 No Content`.
 
