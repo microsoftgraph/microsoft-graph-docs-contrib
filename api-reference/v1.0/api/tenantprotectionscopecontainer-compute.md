@@ -3,7 +3,7 @@ title: "tenantProtectionScopeContainer: compute"
 toc.title: "tenantProtectionScopeContainer: compute"
 description: "Compute the tenant-wide data protection policies and actions, including user or group scoping."
 author: "kylemar"
-ms.date: 06/19/2025
+ms.date: 02/06/2026
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
@@ -36,6 +36,7 @@ POST /security/dataSecurityAndGovernance/protectionScopes/compute
 | :------------ | :------------ |
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | Content-Type  | application/json. Required. |
+| Client-Request-Id  | String (GUID recommended). Optional. Unique identifier for this request, which is used for tracing and debugging in logs and support interactions. If an ID is not provided, one may be generated automatically. We recommend that you specify the ID to make tracing and debugging easier. The same ID that was sent in the request will be returned in the response. |
 
 ## Request body
 
