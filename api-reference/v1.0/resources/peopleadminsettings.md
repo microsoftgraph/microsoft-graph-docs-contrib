@@ -25,6 +25,8 @@ Inherits from [entity](../resources/entity.md).
 |[List pronounsSettings](../api/peopleadminsettings-list-pronouns.md)|[pronounsSettings](../resources/pronounssettings.md) collection|Get the properties of the [pronounsSettings](../resources/pronounssettings.md) resource for an organization.|
 |[List profileCardProperties](../api/peopleadminsettings-list-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) collection | Get a collection of [profileCardProperty](../resources/profilecardproperty.md) resources for an organization. |
 |[Create profileCardProperty](../api/peopleadminsettings-post-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | Create a new [profileCardProperty](../resources/profilecardproperty.md) for an organization. |
+|[List profileSources](../api/peopleadminsettings-list-profilesources.md)|[profileSource](../resources/profilesource.md) collection|Get a list of the [profileSource](../resources/profilesource.md) objects and their properties, which represent both external data sources and out-of-the-box Microsoft data sources configured for user profiles in an organization.|
+|[Create profileSource](../api/peopleadminsettings-post-profilesources.md)|[profileSource](../resources/profilesource.md)|Create a new profileSource object.|
 
 ## Properties
 
@@ -38,6 +40,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |itemInsights|[insightsSettings](../resources/insightssettings.md)|Represents administrator settings that manage the support for item insights in an organization.|
 |profileCardProperties|[profileCardProperty](profilecardproperty.md) collection| Contains a collection of the properties an administrator has defined as visible on the Microsoft 365 profile card.|
+|profileSources|[profileSource](../resources/profilesource.md) collection|A collection of profile source settings configured by an administrator in an organization.|
 |pronouns|[pronounsSettings](../resources/pronounssettings.md)|Represents administrator settings that manage the support of pronouns in an organization.|
 
 ## JSON representation
