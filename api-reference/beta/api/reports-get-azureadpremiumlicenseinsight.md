@@ -1,7 +1,7 @@
 ---
 title: "Get azureADPremiumLicenseInsight"
 description: "Get the premium license utilization insight for the tenant."
-author: "mhavelka-ms"
+author: "wukchung"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType

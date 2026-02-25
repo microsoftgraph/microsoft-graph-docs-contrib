@@ -1,7 +1,7 @@
 ---
 title: "azureADPremiumFeatureUtilization resource type"
 description: "Represents the utilization count for a single Microsoft Entra ID premium feature."
-author: "mhavelka-ms"
+author: "wukchung"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType

@@ -1,7 +1,7 @@
 ---
 title: "azureADPremiumLicenseInsight resource type"
 description: "Provides insight into the Microsoft Entra ID P1 and P2 premium license utilization for a tenant."
-author: "mhavelka-ms"
+author: "wukchung"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType

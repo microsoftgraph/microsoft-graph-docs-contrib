@@ -1,7 +1,7 @@
 ---
 title: "internetAccessFeatureUtilizations resource type"
 description: "Represents the aggregated utilization metrics for Microsoft Entra Internet Access features."
-author: "mhavelka-ms"
+author: "wukchung"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType

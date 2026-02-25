@@ -1,7 +1,7 @@
 ---
 title: "azureADPremiumP1FeatureUtilizations resource type"
 description: "Represents the utilization data for Microsoft Entra ID P1 premium features."
-author: "mhavelka-ms"
+author: "wukchung"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
