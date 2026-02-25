@@ -5,7 +5,7 @@ ms.date: 02/06/2026
 ms.localizationpriority: medium
 ---
 
-### Follow/unfollow sites is not in sync with SharePoint following
+### Follow/unfollow sites aren't in sync with SharePoint following
 
 <!-- {
   "ms.author": "minc",

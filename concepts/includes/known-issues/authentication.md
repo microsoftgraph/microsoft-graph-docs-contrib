@@ -16,7 +16,7 @@ The consent page shows that the command-line app that caters to PowerShell and C
 
 #### Workaround
 
-To remove the "unverified" message, you can do an app registration of your own, on which you can set yourself as the verified publisher. You will need to go through the publisher verification process, and use the app ID on the Microsoft Graph PowerShell SDK, as follows:
+To remove the "unverified" message, you can do an app registration of your own, on which you can set yourself as the verified publisher. You need to go through the publisher verification process, and use the app ID on the Microsoft Graph PowerShell SDK, as follows:
 
 ```powershell
 Connect-MgGraph -AppId "{your-own-app-id}" -Scopes "scope"
@@ -35,14 +35,14 @@ For apps using delegated permissions, when using the app for the first time with
 
 For apps using application permissions, your app can acquire a token, but unexpectedly gets an access denied message when calling Microsoft Graph.
 
-We are working to fix this issue, so that pre-consent will work for all your customer tenants.
+We're working to fix this issue, so that preconsent works for all CSP customer tenants.
 
 #### Workaround
 
 To unblock development and testing, you can use the following workaround.
 
 > [!NOTE]
-> This is not a permanent solution and is only intended to unblock development. This workaround will not be required once the issue is fixed. This workaround does not need to be undone after the fix is in place.
+> This isn't a permanent solution and is only intended to unblock development. This workaround won't be required once the issue is fixed. This workaround doesn't need to be undone after the fix is in place.
 
 1. Open an Azure AD v2 PowerShell session and connect to your customer tenant by entering your admin credentials into the sign-in window. You can download and install Azure AD PowerShell V2 from [here](https://www.powershellgallery.com/packages/AzureAD).
 
@@ -56,11 +56,11 @@ To unblock development and testing, you can use the following workaround.
     New-AzureADServicePrincipal -AppId 00000003-0000-0000-c000-000000000000
     ```
 
-### Azure AD v2.0 endpoint is not supported for CSP apps
+### Azure AD v2.0 endpoint isn't supported for CSP apps
 
 <!-- {
   "ms.author": "sureshja",
   "ms.reviewer": ""
 } -->
 
-Cloud solution provider (CSP) apps must acquire tokens from the Azure AD (v1) endpoints to successfully call Microsoft Graph in their partner-managed customers. Currently, acquiring a token through the newer Azure AD v2.0 endpoint is not supported.
+Cloud solution provider (CSP) apps must acquire tokens from the Azure AD (v1) endpoints to successfully call Microsoft Graph in their partner-managed customers. Currently, acquiring a token through the newer Azure AD v2.0 endpoint isn't supported.

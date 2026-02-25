@@ -1,7 +1,7 @@
 ---
 author: ombongifaith
 ms.topic: include
-ms.date: 02/06/2026
+ms.date: 02/25/2026
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +20,7 @@ GET https://graph.microsoft.com/v1.0/groups?$search="displayName:Hiking%26Recrea
 
 Microsoft Graph currently returns a `400 Bad Request` error code on the v1.0 endpoint on searches that include encoded ampersand (&) characters, with the following error message: `Unrecognized query argument specified: ''.`. The same request succeeds on the beta endpoint.
 
-Some apps have implemented double-percent encoding on the v1.0 endpoint as a workaround. For example, the double-percent encoded request becomes `/users?$search="displayName:Hiking%2526Recreation group"`. However, this is not the officially recommended workaround.
+Some apps have implemented double-percent encoding on the v1.0 endpoint as a workaround. For example, the double-percent encoded request becomes `/users?$search="displayName:Hiking%2526Recreation group"`. However, this isn't the officially recommended workaround.
 
 #### Workaround
 
@@ -34,11 +34,11 @@ ConsistencyLevel: eventual
 Prefer: legacySearch=false
 ```
 
-In the future, the behavior on the v1.0 endpoint will be corrected, and you will not need to include this header.
+In the future, the behavior on the v1.0 endpoint will be corrected, and you won't need to include this header.
 
 **Workaround 2:**
 
-When the behavior on the v1.0 endpoint is corrected, apps that will have a dependency on the double-percent encoding may experience breaking changes unless they are opted-in to maintain their implementation by including the `Prefer` request header set to `legacySearch=true`. For example:
+When the behavior on the v1.0 endpoint is corrected, apps with dependency on the double-percent encoding may experience breaking changes unless they're opted-in to maintain their implementation by including the `Prefer` request header set to `legacySearch=true`. For example:
 
 ```http
 GET https://graph.microsoft.com/v1.0/groups?$search="displayName:Hiking%2526Recreation group"
@@ -55,25 +55,25 @@ Prefer: legacySearch=true
 
 The following limitations apply to query parameters:
 
-- Multiple namespaces are not supported.
-- GET requests on `$ref` and casting are not supported on users, groups, devices, service principals and applications.
-- `@odata.bind` is not supported. This means that you can't properly set the **acceptedSenders** or **rejectedSenders** navigation property on a group.
-- `@odata.id` is not present on non-containment navigations (like messages) when using minimal metadata.
+- Multiple namespaces aren't supported.
+- GET requests on `$ref` and casting aren't supported on users, groups, devices, service principals, and applications.
+- `@odata.bind` isn't supported. This means that you can't properly set the **acceptedSenders** or **rejectedSenders** navigation property on a group.
+- `@odata.id` isn't present on noncontainment navigations (like messages) when using minimal metadata.
 - `$expand` on relationships of directory objects:
-  - Returns a maximum of 20 objects except for `/users?$expand=registeredDevices` which returns up to 100 objects.
+  - Returns a maximum of 20 objects except for `/users?$expand=registeredDevices`, which returns up to 100 objects.
   - No support for `@odata.nextLink`.
   - No support for more than one level of expand.
   - No support for nesting other query parameters such as `$filter` and `$select` inside an `$expand` query.
 - `$filter`:
-  - `/attachments` endpoint does not support filters. If present, the `$filter` parameter is ignored.
-  - Cross-workload filtering is not supported.
+  - `/attachments` endpoint doesn't support filters. If present, the `$filter` parameter is ignored.
+  - Cross-workload filtering isn't supported.
   - When using the `in` operator, the request is limited to 15 expressions in the filter clause by default OR a URL length of 2,048 characters when using advanced query capabilities.
   - When filtering using the `eq` operator, the maximum limit of the value to match is 120 characters. That is, `$filter=displayName eq 'value-to-match-max-120-char'`. This limitation applies even for properties like **displayName** on directory objects that can be up to 256 characters. When using advanced queries, the limit is applied on the URL length at 2,048 characters instead of the matched value.
 - `$search`:
   - Full-text search is only available for a subset of entities, such as messages.
-  - Cross-workload searching is not supported.
-  - Searching is not supported in Azure AD B2C tenants.
+  - Cross-workload searching isn't supported.
+  - Searching isn't supported in Azure AD B2C tenants.
 - `$count`:
   - Not supported in Azure AD B2C tenants.
-  - When using the `$count=true` query string when querying against directory resources, the `@odata.count` property will be present only on the first page of the paged data.
-- Query parameters specified in a request might fail silently. This can be true for unsupported query parameters as well as for unsupported combinations of query parameters.
+  - When using the `$count=true` query string when querying against directory resources, the `@odata.count` property is present only on the first page of the paged data.
+- Query parameters specified in a request might fail silently. This can be true for unsupported query parameters and for unsupported combinations of query parameters.

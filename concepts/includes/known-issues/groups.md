@@ -5,20 +5,20 @@ ms.date: 02/06/2026
 ms.localizationpriority: medium
 ---
 
-### Non-admin user can't add self as group owner during group creation or update
+### Nonadmin user can't add self as group owner during group creation or update
 
 <!-- {
   "ms.author": "yuhko",
   "ms.reviewer": ""
 } -->
 
-When a non-admin user calls the [Create group](/graph/api/group-post-groups) API, [Update group](/graph/api/group-update) API, or [Upsert group](/graph/api/group-upsert) API and adds their user ID in the request body in the **owners@odata.bind** collection, the request fails with a `400 Bad Request` error code with the message "Request contains a property with duplicate values." A non-admin user can't explicitly add themselves as the group owner.
+When a nonadmin user calls the [Create group](/graph/api/group-post-groups) API, [Update group](/graph/api/group-update) API, or [Upsert group](/graph/api/group-upsert) API and adds their user ID in the request body in the **owners@odata.bind** collection, the request fails with a `400 Bad Request` error code with the message "Request contains a property with duplicate values." A nonadmin user can't explicitly add themselves as the group owner.
 
 #### Workaround
 
-There is no workaround for this error.
+There's no workaround for this error.
 
-By default, a non-admin user who is creating a security or Microsoft 365 group through the [Create group](/graph/api/group-post-groups) API or [Upsert group](/graph/api/group-upsert) API is automatically added to the **owners** collection of the group, if they don't specify any group owners. If they specify others as group owners, the non-admin group creator is still automatically added to the **owners** collection of the security group, but not for the Microsoft 365 group. The user still can't add themselves to the **owners** collection during group update.
+By default, a nonadmin user who is creating a security or Microsoft 365 group through the [Create group](/graph/api/group-post-groups) API or [Upsert group](/graph/api/group-upsert) API is automatically added to the **owners** collection of the group, if they don't specify any group owners. If they specify others as group owners, the nonadmin group creator is still automatically added to the **owners** collection of the security group, but not for the Microsoft 365 group. The user still can't add themselves to the **owners** collection during group update.
 
 ### GET /groups/{id}/members doesn't return service principals in v1.0
 
