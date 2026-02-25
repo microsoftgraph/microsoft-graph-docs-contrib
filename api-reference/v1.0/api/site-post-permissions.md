@@ -23,9 +23,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored", "name": "site_post_permissions" } -->
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|Not supported.|Not supported.|
-|Delegated (work or school account)|Sites.FullControl.All|Not available.|
+|Delegated (work or school account)|Sites.FullControl.All|Not supported.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|Sites.FullControl.All|Not supported.|
 
 > **Note:** In delegated workflows, the user must have an administrator role, such as SharePoint Administrator or higher.
 
