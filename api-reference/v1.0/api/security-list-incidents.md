@@ -1,11 +1,11 @@
 ---
 title: "List incidents"
 description: "Get a list of the incident objects and their properties."
-author: "BenAlfasi"
+author: "LeonardoMele-MSFT"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
-ms.date: 09/23/2024
+ms.date: 25/2/2026
 ---
 
 # List incidents
