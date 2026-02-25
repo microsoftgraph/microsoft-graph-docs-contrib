@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: "security"
 doc_type: resourcePageType
-ms.date: 06/10/2024
+ms.date: 02/24/2026
 ---
 
 # tiIndicator resource type (deprecated)
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!NOTE]
-> The [tiIndicator](tiindicator.md) entity is deprecated and will be removed by April 2026.
+> The [tiIndicator](tiindicator.md) entity is deprecated and will be removed by June 2026.
 
 Represents data used to identify malicious activities. 
 
