@@ -24,6 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "security_ediscoverysearch_exportreport" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoverysearch-exportreport-permissions.md)]
+[!INCLUDE [rbac-rbac-ediscovery-custodian-export-apis](../includes/rbac-for-apis/rbac-ediscovery-custodian-export-apis.md)]
 
 ## HTTP request
 

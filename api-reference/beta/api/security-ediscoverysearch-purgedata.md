@@ -37,6 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "security_ediscoverysearch_purgedata" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoverysearch-purgedata-permissions.md)]
+[!INCLUDE [rbac-rbac-ediscovery-purge-apis](../includes/rbac-for-apis/rbac-ediscovery-purge-apis.md)]
 
 ## HTTP request
 
