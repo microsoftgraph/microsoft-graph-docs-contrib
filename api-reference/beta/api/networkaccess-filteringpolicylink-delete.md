@@ -1,5 +1,5 @@
 ---
-title: "Delete filtering Policy Link"
+title: "Delete filteringPolicyLink"
 description: "Delete a filteringPolicyLink object."
 author: Moti-ba
 ms.localizationpriority: medium
@@ -13,7 +13,9 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) object.
+Delete a [filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) object. The policy can be one of the following types:
+- [filteringPolicy](../resources/networkaccess-filteringpolicy.md)
+- [threatIntelligencePolicy](../resources/networkaccess-threatintelligencepolicy.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -62,7 +64,6 @@ DELETE https://graph.microsoft.com/beta/networkaccess/FilteringProfiles/c308a3af
 
 ### Response
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
