@@ -17,6 +17,9 @@ Retrieve a list of recently deleted directory objects. Currently, deleted items 
 Retrieve a list of recently deleted directory objects from [deleted items](../resources/directory.md). The following types are supported:
 - [administrativeUnit](../resources/administrativeunit.md)
 - [application](../resources/application.md)
+- [agentIdentityBlueprint](../resources/agentidentityblueprint.md)
+- [agentIdentity](../resources/agentidentity.md)
+- [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md)
 - [certificateBasedAuthPki](../resources/certificatebasedauthpki.md)
 - [certificateAuthorityDetail](../resources/certificateauthoritydetail.md)
 - [group](../resources/group.md)
@@ -33,6 +36,9 @@ The following table shows the least privileged permission or permissions require
 |:-|:-|:-|:-|
 | [administrativeUnit](../resources/administrativeunit.md) | AdministrativeUnit.Read.All | Not supported. | AdministrativeUnit.Read.All |
 | [application](../resources/application.md) | Application.Read.All | Not supported. | Application.Read.All |
+| [agentIdentity](../resources/agentidentity.md) | AgentIdentity.Read.All | Not supported. | AgentIdentity.Read.All |
+| [agentIdentityBlueprint](../resources/agentidentityblueprint.md) | AgentIdentityBlueprint.Read.All | Not supported. | AgentIdentityBlueprint.Read.All |
+| [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) | AgentIdentityBlueprintPrincipal.Read.All | Not supported. | AgentIdentityBlueprintPrincipal.Read.All |
 | [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
 | [certificateAuthorityDetail](../resources/certificateauthoritydetail.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
 | [group](../resources/group.md) | Group.Read.All | Not supported. | Group.Read.All |
