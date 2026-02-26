@@ -36,7 +36,7 @@ Inherits from [entity](../resources/entity.md).
 |kind|String|Type of the profile source.|
 |localizations|[profileSourceLocalization](../resources/profilesourcelocalization.md) collection|Alternative localized labels specified by an administrator.|
 |sourceId|String|Profile source identifier used as an [alternate key](https://github.com/microsoft/api-guidelines/blob/vNext/graph/patterns/alternate-key.md).|
-|webUrl|String|Web URL of the profile source that directs users to the page view of profile data.|
+|webUrl|String|Web URL of the profile source that directs users to the page view of the profile data.|
 
 ## Relationships
 None.
