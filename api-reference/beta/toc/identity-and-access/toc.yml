@@ -2226,9 +2226,9 @@ items:
         href: ../../api/emailauthenticationmethod-update.md
       - name: Delete
         href: ../../api/emailauthenticationmethod-delete.md
-    - name: External authentication method
+    - name: External MFA
       items:
-      - name: External authentication method
+      - name: External MFA
         href: ../../resources/externalauthenticationmethod.md
       - name: List
         href: ../../api/authentication-list-externalauthenticationmethods.md
@@ -2422,9 +2422,9 @@ items:
         href: ../../api/emailauthenticationmethodconfiguration-update.md
       - name: Delete
         href: ../../api/emailauthenticationmethodconfiguration-delete.md
-    - name: External authentication method
+    - name: External MFA
       items:
-      - name: External authentication method
+      - name: External MFA
         href: ../../resources/externalauthenticationmethodconfiguration.md
       - name: Get
         href: ../../api/externalauthenticationmethodconfiguration-get.md
