@@ -6,6 +6,7 @@ ms.date: 02/26/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-agent-id"
 doc_type: apiPageType
+---
 
 # List agentIdentityBlueprintPrincipal objects
 

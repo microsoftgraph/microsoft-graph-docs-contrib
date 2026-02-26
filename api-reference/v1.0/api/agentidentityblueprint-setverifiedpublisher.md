@@ -6,6 +6,7 @@ author: "xurobertMSFT"
 ms.subservice: "entra-agent-id"
 doc_type: "apiPageType"
 ms.date: 02/26/2026
+---
 
 # agentIdentityBlueprint: setVerifiedPublisher
 
