@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Represents the configuration data of a profile source created by an organization administrator. This configuration represents the source of profile data in a way that is understandable to end users.
 
-For more information about how to configure a profile source for an organization, see [Manage profile source settings for an organization using the Microsoft Graph API](/graph/profilesource-configure-settings).
+For more information, see [Manage profile source settings for an organization using the Microsoft Graph API](/graph/profilesource-configure-settings).
 
 Inherits from [entity](../resources/entity.md).
 
