@@ -24,6 +24,10 @@ items:
     href: ../../api/peopleadminsettings-list-profilecardproperties.md
   - name: Create profileCardProperty
     href: ../../api/peopleadminsettings-post-profilecardproperties.md
+  - name: List profileSources
+    href: ../../api/peopleadminsettings-list-profilesources.md
+  - name: Create profileSource
+    href: ../../api/peopleadminsettings-post-profilesources.md
 - name: Insights settings
   items:
   - name: Insights settings
