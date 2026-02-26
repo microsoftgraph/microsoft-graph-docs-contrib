@@ -118,7 +118,7 @@ Content-Type: application/json
 
 {
   "managerApplications": [
-    "b43716e4-8cd1-4e88-b4ef-94611f4c6c46"
+    "77504268-3426-435e-99c0-9bc8656bc20e"
   ]
 }
 ```
