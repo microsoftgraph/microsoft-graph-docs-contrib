@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "allAllowedScopes",
           "ChangeType": "Addition",
-          "Description": "Added the [allAllowedScopes](https://learn.microsoft.com/en-us/graph/api/resources/allAllowedScopes?view=graph-rest-1.0) resource.",
+          "Description": "Added the [allAllowedScopes](https://learn.microsoft.com/en-us/graph/api/resources/allallowedscopes?view=graph-rest-1.0) resource.",
           "Target": "allAllowedScopes"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "enumeratedScopes",
           "ChangeType": "Addition",
-          "Description": "Added the [enumeratedScopes](https://learn.microsoft.com/en-us/graph/api/resources/enumeratedScopes?view=graph-rest-1.0) resource.",
+          "Description": "Added the [enumeratedScopes](https://learn.microsoft.com/en-us/graph/api/resources/enumeratedscopes?view=graph-rest-1.0) resource.",
           "Target": "enumeratedScopes"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "inheritableScopes",
           "ChangeType": "Addition",
-          "Description": "Added the [inheritableScopes](https://learn.microsoft.com/en-us/graph/api/resources/inheritableScopes?view=graph-rest-1.0) resource.",
+          "Description": "Added the [inheritableScopes](https://learn.microsoft.com/en-us/graph/api/resources/inheritablescopes?view=graph-rest-1.0) resource.",
           "Target": "inheritableScopes"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "noScopes",
           "ChangeType": "Addition",
-          "Description": "Added the [noScopes](https://learn.microsoft.com/en-us/graph/api/resources/noScopes?view=graph-rest-1.0) resource.",
+          "Description": "Added the [noScopes](https://learn.microsoft.com/en-us/graph/api/resources/noscopes?view=graph-rest-1.0) resource.",
           "Target": "noScopes"
         },
         {
@@ -47,7 +47,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "agentIdentity",
           "ChangeType": "Addition",
-          "Description": "Added the [agentIdentity](https://learn.microsoft.com/en-us/graph/api/resources/agentIdentity?view=graph-rest-1.0) resource.",
+          "Description": "Added the [agentIdentity](https://learn.microsoft.com/en-us/graph/api/resources/agentidentity?view=graph-rest-1.0) resource.",
           "Target": "agentIdentity"
         },
         {
