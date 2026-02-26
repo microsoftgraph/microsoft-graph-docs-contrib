@@ -1,5 +1,111 @@
 {
   "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "572e6c37-4684-4596-b9a9-fc64ac255367",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "scopeCollectionKind",
+          "ChangeType": "Addition",
+          "Description": "Added the **scopeCollectionKind** enumeration type.",
+          "Target": "scopeCollectionKind"
+        },
+        {
+          "Id": "572e6c37-4684-4596-b9a9-fc64ac255367",
+          "ApiChange": "Resource",
+          "ChangedApiName": "allAllowedScopes",
+          "ChangeType": "Addition",
+          "Description": "Added the [allAllowedScopes](https://learn.microsoft.com/en-us/graph/api/resources/allAllowedScopes?view=graph-rest-1.0) resource.",
+          "Target": "allAllowedScopes"
+        },
+        {
+          "Id": "572e6c37-4684-4596-b9a9-fc64ac255367",
+          "ApiChange": "Resource",
+          "ChangedApiName": "enumeratedScopes",
+          "ChangeType": "Addition",
+          "Description": "Added the [enumeratedScopes](https://learn.microsoft.com/en-us/graph/api/resources/enumeratedScopes?view=graph-rest-1.0) resource.",
+          "Target": "enumeratedScopes"
+        },
+        {
+          "Id": "572e6c37-4684-4596-b9a9-fc64ac255367",
+          "ApiChange": "Resource",
+          "ChangedApiName": "inheritableScopes",
+          "ChangeType": "Addition",
+          "Description": "Added the [inheritableScopes](https://learn.microsoft.com/en-us/graph/api/resources/inheritableScopes?view=graph-rest-1.0) resource.",
+          "Target": "inheritableScopes"
+        },
+        {
+          "Id": "572e6c37-4684-4596-b9a9-fc64ac255367",
+          "ApiChange": "Resource",
+          "ChangedApiName": "noScopes",
+          "ChangeType": "Addition",
+          "Description": "Added the [noScopes](https://learn.microsoft.com/en-us/graph/api/resources/noScopes?view=graph-rest-1.0) resource.",
+          "Target": "noScopes"
+        },
+        {
+          "Id": "572e6c37-4684-4596-b9a9-fc64ac255367",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentIdentity](https://learn.microsoft.com/en-us/graph/api/resources/agentIdentity?view=graph-rest-1.0) resource.",
+          "Target": "agentIdentity"
+        },
+        {
+          "Id": "572e6c37-4684-4596-b9a9-fc64ac255367",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentIdentityBlueprint",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentIdentityBlueprint](https://learn.microsoft.com/en-us/graph/api/resources/agentIdentityBlueprint?view=graph-rest-1.0) resource.",
+          "Target": "agentIdentityBlueprint"
+        },
+        {
+          "Id": "572e6c37-4684-4596-b9a9-fc64ac255367",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentIdentityBlueprintPrincipal",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentIdentityBlueprintPrincipal](https://learn.microsoft.com/en-us/graph/api/resources/agentIdentityBlueprintPrincipal?view=graph-rest-1.0) resource.",
+          "Target": "agentIdentityBlueprintPrincipal"
+        },
+        {
+          "Id": "572e6c37-4684-4596-b9a9-fc64ac255367",
+          "ApiChange": "Resource",
+          "ChangedApiName": "inheritablePermission",
+          "ChangeType": "Addition",
+          "Description": "Added the [inheritablePermission](https://learn.microsoft.com/en-us/graph/api/resources/inheritablePermission?view=graph-rest-1.0) resource.",
+          "Target": "inheritablePermission"
+        },
+        {
+          "Id": "572e6c37-4684-4596-b9a9-fc64ac255367",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "Microsoft.DirectoryServices.agentIdentityBlueprint/sponsors",
+          "ChangeType": "Addition",
+          "Description": "Added the [Microsoft.DirectoryServices.agentIdentityBlueprint/sponsors](https://learn.microsoft.com/en-us/?view=graph-rest-1.0) resource.",
+          "Target": "applications"
+        },
+        {
+          "Id": "572e6c37-4684-4596-b9a9-fc64ac255367",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "Microsoft.DirectoryServices.agentIdentity/sponsors",
+          "ChangeType": "Addition",
+          "Description": "Added the [Microsoft.DirectoryServices.agentIdentity/sponsors](https://learn.microsoft.com/en-us/?view=graph-rest-1.0) resource.",
+          "Target": "servicePrincipals"
+        },
+        {
+          "Id": "572e6c37-4684-4596-b9a9-fc64ac255367",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "Microsoft.DirectoryServices.agentIdentityBlueprintPrincipal/sponsors",
+          "ChangeType": "Addition",
+          "Description": "Added the [Microsoft.DirectoryServices.agentIdentityBlueprintPrincipal/sponsors](https://learn.microsoft.com/en-us/?view=graph-rest-1.0) resource.",
+          "Target": "servicePrincipals"
+        }
+      ],
+      "Id": "572e6c37-4684-4596-b9a9-fc64ac255367",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-02-25T23:21:03.040448Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
 {
       "ChangeList": [
         {

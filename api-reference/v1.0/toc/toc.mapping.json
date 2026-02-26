@@ -20,6 +20,9 @@
       "name": "Applications",
       "overview": "../../resources/applications-api-overview.md",
       "resources": [
+        "agentIdentity",
+        "agentIdentityBlueprint",
+        "agentIdentityBlueprintPrincipal",
         "application",
         "applicationTemplate",
         "servicePrincipal"
