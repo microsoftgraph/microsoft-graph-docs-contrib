@@ -6,7 +6,6 @@ ms.date: 02/26/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-agent-id"
 doc_type: apiPageType
----
 
 # Update agentIdentityBlueprint
 
@@ -48,7 +47,6 @@ PATCH /applications/{id}/microsoft.graph.agentIdentityBlueprint
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintains their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
-
 ## Response
 
 If successful, this method returns a `204 No Content` response code.
@@ -60,7 +58,6 @@ For information about errors returned by agent identity APIs, see [Agent identit
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_agentidentityblueprint"
@@ -74,13 +71,6 @@ Content-Type: application/json
   "displayName": "My New Name"
 }
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-agentidentityblueprint-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### Response
 

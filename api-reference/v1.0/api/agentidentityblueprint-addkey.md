@@ -6,7 +6,6 @@ ms.date: 02/26/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-agent-id"
 doc_type: apiPageType
----
 
 # agentIdentityBlueprint: addKey
 
@@ -21,8 +20,6 @@ Add a key credential to an [agentIdentityBlueprint](../resources/agentidentitybl
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed. 
 
 Agent identity blueprints that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won't be able to use this service action. You can use the [Update agent identity blueprint](../api/agentidentityblueprint-update.md) operation to perform an update instead.
-
-
 
 ## Permissions
 
@@ -64,8 +61,6 @@ In the request body, supply a JSON representation of the parameters. The followi
 | passwordCredential | [passwordCredential](../resources/passwordcredential.md) | Only __secretText__ is required to be set which should contain the password for the key. This property is required only for keys of type `X509CertAndPassword`. Set it to `null` otherwise.|
 | proof | String | A self-signed JWT token used as a proof of possession of the existing keys. This JWT token must be signed using the private key of one of the application's existing valid certificates. The token should contain the following claims:<ul><li>**aud**: Audience needs to be `00000002-0000-0000-c000-000000000000`.</li><li>**iss**: Issuer needs to be the ID of the **application** that initiates the request.</li><li>**nbf**: Not before time.</li><li>**exp**: Expiration time should be the value of **nbf** + 10 minutes.</li></ul><br>For steps to generate this proof of possession token, see [Generating proof of possession tokens for rolling keys](/graph/application-rollkey-prooftoken). For more information about the claim types, see [Claims payload](/azure/active-directory/develop/active-directory-certificate-credentials).|
 
-
-
 ## Response
 
 If successful, this action returns a `200 OK` response code and a [keyCredential](../resources/keycredential.md) in the response body.
@@ -75,7 +70,6 @@ If successful, this action returns a `200 OK` response code and a [keyCredential
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "agentidentityblueprintthis.addkey"
@@ -95,13 +89,6 @@ Content-Type: application/json
   "proof": "String"
 }
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/agentidentityblueprintthisaddkey-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### Response
 

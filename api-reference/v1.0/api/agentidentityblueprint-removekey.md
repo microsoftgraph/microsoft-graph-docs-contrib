@@ -6,7 +6,6 @@ ms.date: 02/26/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-agent-id"
 doc_type: apiPageType
----
 
 # agentIdentityBlueprint: removeKey
 
@@ -49,7 +48,6 @@ In the request body, provide the following required properties.
 | keyId     | Guid | The unique identifier for the key.|
 | proof | String | A self-signed JWT token used as a proof of possession of the existing keys. This JWT token must be signed using the private key of one of the application's existing valid certificates. The token should contain the following claims:<ul><li>**aud**: Audience needs to be `00000002-0000-0000-c000-000000000000`.</li><li>**iss**: Issuer needs to be the ID of the **application** that initiates the request.</li><li>**nbf**: Not before time.</li><li>**exp**: Expiration time should be the value of **nbf** + 10 minutes.</li></ul><br>For steps to generate this proof of possession token, see [Generating proof of possession tokens for rolling keys](/graph/application-rollkey-prooftoken).|
 
-
 ## Response
 
 If successful, this action returns a `204 No Content` response code.
@@ -59,7 +57,6 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "agentidentityblueprintthis.removekey"
@@ -74,13 +71,6 @@ Content-Type: application/json
   "proof": "String"
 }
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/agentidentityblueprintthisremovekey-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### Response
 
