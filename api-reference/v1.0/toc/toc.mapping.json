@@ -20,9 +20,6 @@
       "name": "Applications",
       "overview": "../../resources/applications-api-overview.md",
       "resources": [
-        "agentIdentity",
-        "agentIdentityBlueprint",
-        "agentIdentityBlueprintPrincipal",
         "application",
         "applicationTemplate",
         "servicePrincipal"
@@ -107,6 +104,21 @@
             }
           ]
         }
+      ]
+    },
+    {
+      "name": "Agents",
+      "overview": "",
+      "resources": [],
+      "childNodes": [
+          {
+            "name": "Agent identities",
+            "resources": [
+              "agentIdentityBlueprint",
+              "agentIdentityBlueprintPrincipal",
+              "agentIdentity"
+            ]
+          }
       ]
     },
     {
