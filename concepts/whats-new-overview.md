@@ -20,20 +20,6 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## February 2026: New and generally available
 
-### People and workplace intelligence | People admin settings
-
-Use the new [profileSource](/graph/api/resources/profilesource) APIs to enable administrators to customize the display information of a profile source seen by users across an organization in Microsoft 365 experiences.
-
-### Search
-
-- Added the **Principal** and **principalCollection** data types to the [externalConnection](graph/api/resources/resources/externalconnectors-principal) to specify as the data type people property related items in the external connection.
-
-- Added the **description** property to the [externalConnection properties](graph/api/resources/externalconnectors-property) to be add description to the schema properties in the external connection.
-
-- Added more tags or semantic labels that can be added to **labels** [externalConnection property](graph/api/resources/externalconnectors-property) in the external connection schema. Labels help Microsoft 365 Copilot understand the semantics of the data in the connection and provide more relevant results. 
-
-- Added the **contentCategory** property to the [externalConnection](graph/api/resources/resources/externalconnectors-externalconnection) to specify the domain category of the content associated with the external connection for improved relevance and ranking.
-
 ### Files
 
 Updated the admin consent requirement for the following delegated permissions related to SharePoint Embedded file storage container management:
@@ -55,6 +41,17 @@ Updated the admin consent requirement for the following delegated permissions re
 ### Message trace
 
 Use the message trace API to track the flow of email messages through your Exchange Online organization. For more information, see [exchangeMessageTrace](/graph/api/resources/exchangemessagetrace).
+
+### People and workplace intelligence | People admin settings
+
+Use the new [profileSource](/graph/api/resources/profilesource) APIs to enable administrators to customize the display information of a profile source seen by users across an organization in Microsoft 365 experiences.
+
+### Search
+
+- Added the **principal** and **principalCollection** data types to the [externalConnection](/graph/api/resources/externalconnectors-principal) to specify the data type for people‑related property items in the external connection.
+- Added the **description** property to the [externalConnection properties](/graph/api/resources/externalconnectors-property) to allow the addition of a description to the schema properties in the external connection.
+- Added more tags or semantic labels that can be added to **labels** in the [externalConnection property](/graph/api/resources/externalconnectors-property) in the external connection schema. Labels help Microsoft 365 Copilot understand the semantics of the data in the connection and provide more relevant results. 
+- Added the **contentCategory** property to the [externalConnection](/graph/api/resources/externalconnectors-externalconnection) to specify the domain category of the content associated with the external connection for improved relevance and ranking.
 
 ### Security | Data security and compliance
 
