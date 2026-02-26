@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "33537a5f-f7d5-4f51-b0ef-0c0fe4b92709",
+          "ApiChange": "Member",
+          "ChangedApiName": "allDirectoryAgentIdentities",
+          "ChangeType": "Addition",
+          "Description": "Add the `allDirectoryAgentIdentities` member to the **allowedTargetScope** enumeration.",
+          "Target": "allowedTargetScope"
+        }
+      ],
+      "Id": "33537a5f-f7d5-4f51-b0ef-0c0fe4b92709",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-02-26T00:00:01Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ea679487-f221-4111-955b-f3b581261ada",
           "ApiChange": "Enumeration",
           "ChangedApiName": "accessPackageSuggestionFilterByCurrentUserOptions",

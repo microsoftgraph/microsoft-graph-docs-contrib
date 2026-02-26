@@ -28,7 +28,7 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 |Property|Type|Description|
 |:---|:---|:---|
 |accessPackageNotificationSettings|[accessPackageNotificationSettings](../resources/accesspackagenotificationsettings.md)|Represents the settings for email notifications for requests to an access package.|
-|allowedTargetScope|allowedTargetScope|Principals that can be assigned the access package through this policy. The possible values are: `notSpecified`, `specificDirectoryUsers`, `specificConnectedOrganizationUsers`, `specificDirectoryServicePrincipals`, `allMemberUsers`, `allDirectoryUsers`, `allDirectoryServicePrincipals`, `allConfiguredConnectedOrganizationUsers`, `allExternalUsers`, `unknownFutureValue`.|
+|allowedTargetScope|allowedTargetScope|Principals that can be assigned the access package through this policy. The possible values are: `notSpecified`, `specificDirectoryUsers`, `specificConnectedOrganizationUsers`, `specificDirectoryServicePrincipals`, `allMemberUsers`, `allDirectoryUsers`, `allDirectoryServicePrincipals`, `allConfiguredConnectedOrganizationUsers`, `allExternalUsers`, `allDirectoryAgentIdentities`, `unknownFutureValue`.|
 |automaticRequestSettings|[accessPackageAutomaticRequestSettings](../resources/accessPackageAutomaticRequestSettings.md)|This property is only present for an auto assignment policy; if absent, this is a request-based policy.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |description|String|The description of the policy.|
@@ -44,7 +44,7 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|accessPackage|[accessPackage](../resources/accesspackage.md)|Access package containing this policy. Read-only.  Supports `$expand`.|
+|accessPackage|[accessPackage](../resources/accesspackage.md)|Access package containing this policy. Read-only. Supports `$expand`.|
 |catalog|[accessPackageCatalog](../resources/accesspackagecatalog.md)|Catalog of the access package containing this policy. Read-only.|
 |customExtensionStageSettings|[customExtensionStageSetting](../resources/customextensionstagesetting.md) collection|The collection of stages when to execute one or more custom access package workflow extensions. Supports `$expand`.|
 |questions|[accessPackageQuestion](../resources/accesspackagequestion.md) collection|Questions that are posed to the  requestor.|
