@@ -107,6 +107,7 @@ Content-Type: application/json
     "disabledByMicrosoftStatus": null,
     "displayName": "My Agent Blueprint",
     "groupMembershipClaims": null,
+    "managerApplications": ["77504268-3426-435e-99c0-9bc8656bc20e"],
     "publisherDomain": "contoso.onmicrosoft.com",
     "signInAudience": "AzureADMyOrg",
     "tags": [],
