@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) objects and their properties. The associated policy can of the following types:
+Get a list of the [filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) objects and their properties. The associated policy can be of the following types:
 
 - [filteringPolicy](../resources/networkaccess-filteringpolicy.md)
 - [threatIntelligencePolicy](../resources/networkaccess-threatintelligencepolicy.md)
