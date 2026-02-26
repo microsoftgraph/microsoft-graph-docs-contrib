@@ -2517,6 +2517,9 @@
             "profilePropertySetting",
             "profileSource",
             "pronounsSettings"
+          ],
+          "complexTypes": [
+            "profileSourceLocalization"
           ]
         },
         {
