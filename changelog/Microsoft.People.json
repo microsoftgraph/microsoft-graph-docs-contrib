@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "profileSource",
           "ChangeType": "Addition",
-          "Description": "Added the [profileSource](https://learn.microsoft.com/en-us/graph/api/resources/profileSource?view=graph-rest-1.0) resource.",
+          "Description": "Added the [profileSource](https://learn.microsoft.com/en-us/graph/api/resources/profileSource?view=graph-rest-1.0) resource and associated methods.",
           "Target": "profileSource"
         }
       ],
@@ -32,7 +32,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2026-02-24T13:42:56.3585382Z",
       "WorkloadArea": "People and workplace intelligence",
-      "SubArea": "People"
+      "SubArea": "People admin settings"
     }, 
     {
       "ChangeList": [
