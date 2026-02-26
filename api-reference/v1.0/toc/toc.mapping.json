@@ -1430,6 +1430,9 @@
         "profileSource",
         "pronounsSettings"
       ],
+      "complexTypes": [
+        "profileSourceLocalization"
+      ],
       "childNodes": [
         {
           "name": "Insights",
@@ -1441,7 +1444,6 @@
           "complexTypes": [
             "insightIdentity",
             "officeGraphInsights",
-            "profileSourceLocalization",
             "resourceReference",
             "resourceVisualization",
             "sharingDetail",
