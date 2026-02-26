@@ -1,5 +1,5 @@
 ---
-title: "List profileSource objects"
+title: "List profileSources"
 description: "Get a list of profileSource objects and their properties, which represent both external data sources and out-of-the-box Microsoft data sources configured for user profiles in an organization."
 author: "rwaithera"
 ms.date: 02/10/2026
@@ -8,7 +8,7 @@ ms.subservice: "people"
 doc_type: apiPageType
 ---
 
-# List profileSource objects
+# List profileSources
 
 Namespace: microsoft.graph
 
