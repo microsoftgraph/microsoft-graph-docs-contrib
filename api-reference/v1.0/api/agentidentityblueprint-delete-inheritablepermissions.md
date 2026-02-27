@@ -12,7 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Delete an [inheritablePermission](../resources/inheritablepermission.md) object from an [agent identity blueprint](../resources/agentidentityblueprint.md). When a permission is deleted, agent identities created from the blueprint will no longer automatically inherit the delegated permission scopes defined in the deleted inheritablePermission object. If the agent identiy requires those scopes, they must request consent again.
+Delete an [inheritablePermission](../resources/inheritablepermission.md) object from an [agent identity blueprint](../resources/agentidentityblueprint.md). When a permission is deleted, agent identities created from the blueprint will no longer automatically inherit the delegated permission scopes defined in the deleted inheritablePermission object. If the agent identity requires those scopes, they must request consent again.
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /applications/{id}/microsoft.graph.agentIdentityBlueprint/inheritablePermissions/{resource_appId}
+DELETE /applications/{id}/microsoft.graph.agentIdentityBlueprint/inheritablePermissions/{resourceAppId}
 ```
 
 ## Request headers
