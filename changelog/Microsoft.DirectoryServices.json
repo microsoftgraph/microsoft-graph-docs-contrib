@@ -55,7 +55,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "agentIdentityBlueprint",
           "ChangeType": "Addition",
-          "Description": "Added the [agentIdentityBlueprint](https://learn.microsoft.com/en-us/graph/api/resources/agentIdentityBlueprint?view=graph-rest-1.0) resource.",
+          "Description": "Added the [agentIdentityBlueprint](https://learn.microsoft.com/en-us/graph/api/resources/agentidentityblueprint?view=graph-rest-1.0) resource.",
           "Target": "agentIdentityBlueprint"
         },
         {
@@ -63,7 +63,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "agentIdentityBlueprintPrincipal",
           "ChangeType": "Addition",
-          "Description": "Added the [agentIdentityBlueprintPrincipal](https://learn.microsoft.com/en-us/graph/api/resources/agentIdentityBlueprintPrincipal?view=graph-rest-1.0) resource.",
+          "Description": "Added the [agentIdentityBlueprintPrincipal](https://learn.microsoft.com/en-us/graph/api/resources/agentidentityblueprintprincipal?view=graph-rest-1.0) resource.",
           "Target": "agentIdentityBlueprintPrincipal"
         },
         {
@@ -71,7 +71,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "inheritablePermission",
           "ChangeType": "Addition",
-          "Description": "Added the [inheritablePermission](https://learn.microsoft.com/en-us/graph/api/resources/inheritablePermission?view=graph-rest-1.0) resource.",
+          "Description": "Added the [inheritablePermission](https://learn.microsoft.com/en-us/graph/api/resources/inheritablepermission?view=graph-rest-1.0) resource.",
           "Target": "inheritablePermission"
         },
         {
@@ -79,7 +79,7 @@
           "ApiChange": "NavigationPropertyBinding",
           "ChangedApiName": "Microsoft.DirectoryServices.agentIdentityBlueprint/sponsors",
           "ChangeType": "Addition",
-          "Description": "Added the [Microsoft.DirectoryServices.agentIdentityBlueprint/sponsors](https://learn.microsoft.com/en-us/?view=graph-rest-1.0) resource.",
+          "Description": "Added the [Microsoft.DirectoryServices.agentIdentityBlueprint/sponsors](https://learn.microsoft.com/en-us/graph/api/agentidentityblueprint-list-sponsors?view=graph-rest-1.0) resource.",
           "Target": "applications"
         },
         {
@@ -87,7 +87,7 @@
           "ApiChange": "NavigationPropertyBinding",
           "ChangedApiName": "Microsoft.DirectoryServices.agentIdentity/sponsors",
           "ChangeType": "Addition",
-          "Description": "Added the [Microsoft.DirectoryServices.agentIdentity/sponsors](https://learn.microsoft.com/en-us/?view=graph-rest-1.0) resource.",
+          "Description": "Added the [Microsoft.DirectoryServices.agentIdentity/sponsors](https://learn.microsoft.com/en-us/graph/api/agentidentity-list-sponsors?view=graph-rest-1.0) resource.",
           "Target": "servicePrincipals"
         },
         {
@@ -95,7 +95,7 @@
           "ApiChange": "NavigationPropertyBinding",
           "ChangedApiName": "Microsoft.DirectoryServices.agentIdentityBlueprintPrincipal/sponsors",
           "ChangeType": "Addition",
-          "Description": "Added the [Microsoft.DirectoryServices.agentIdentityBlueprintPrincipal/sponsors](https://learn.microsoft.com/en-us/?view=graph-rest-1.0) resource.",
+          "Description": "Added the [Microsoft.DirectoryServices.agentIdentityBlueprintPrincipal/sponsors](https://learn.microsoft.com/en-us/graph/api/agentidentityblueprintprincipal-list-sponsors?view=graph-rest-1.0) resource.",
           "Target": "servicePrincipals"
         }
       ],
