@@ -41,9 +41,9 @@ POST /users/{usersId}/dataSecurityAndGovernance/protectionScopes/compute
 ```
 
 >[!NOTE]
-> If you only have the user's UPN, use the following code to retrieve their Entra ID. Replace `{upn}` with the user's UPN.
+> If you only have the user's **userPrincipalName**, use the following URL to retrieve their object ID.
 >
-> `GET https://graph.microsoft.com/v1.0/users/{upn}?$select=id`
+> `GET https://graph.microsoft.com/v1.0/users/{userPrincipalName}?$select=id`
 
 ## Request headers
 
