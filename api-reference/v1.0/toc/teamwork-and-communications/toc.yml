@@ -6,32 +6,6 @@ items:
   href: ../../resources/teams-api-overview.md
 - name: Administration
   items:
-  - name: Number assignment
-    items:
-    - name: Number assignment
-      href: ../../resources/teamsadministration-numberassignment.md
-    - name: List
-      href: ../../api/teamsadministration-telephonenumbermanagementroot-list-numberassignments.md
-    - name: Get
-      href: ../../api/teamsadministration-numberassignment-get.md
-    - name: assignNumber
-      href: ../../api/teamsadministration-numberassignment-assignnumber.md
-    - name: unassignNumber
-      href: ../../api/teamsadministration-numberassignment-unassignnumber.md
-    - name: updateNumber
-      href: ../../api/teamsadministration-numberassignment-updatenumber.md
-  - name: Telephone number long running operation
-    items:
-    - name: Telephone number long running operation
-      href: ../../resources/teamsadministration-telephonenumberlongrunningoperation.md
-    - name: Get
-      href: ../../api/teamsadministration-telephonenumberlongrunningoperation-get.md
-  - name: Telephone number management root
-    items:
-    - name: Telephone number management root
-      href: ../../resources/teamsadministration-telephonenumbermanagementroot.md
-    - name: List number assignments
-      href: ../../api/teamsadministration-telephonenumbermanagementroot-list-numberassignments.md
   - name: Teams policy assignment
     items:
     - name: Teams policy assignment
@@ -54,6 +28,32 @@ items:
       href: ../../api/teamsadministration-teamsadminroot-list-userconfigurations.md
     - name: Get
       href: ../../api/teamsadministration-teamsuserconfiguration-get.md
+  - name: Number assignment
+    items:
+    - name: Number assignment
+      href: ../../resources/teamsadministration-numberassignment.md
+    - name: List assignment
+      href: ../../api/teamsadministration-telephonenumbermanagementroot-list-numberassignments.md
+    - name: Get assignment
+      href: ../../api/teamsadministration-numberassignment-get.md
+    - name: Assign number
+      href: ../../api/teamsadministration-numberassignment-assignnumber.md
+    - name: Unassign number
+      href: ../../api/teamsadministration-numberassignment-unassignnumber.md
+    - name: Update number
+      href: ../../api/teamsadministration-numberassignment-updatenumber.md
+  - name: Telephone number long running operation
+    items:
+    - name: Telephone number long running operation
+      href: ../../resources/teamsadministration-telephonenumberlongrunningoperation.md
+    - name: Get
+      href: ../../api/teamsadministration-telephonenumberlongrunningoperation-get.md
+  - name: Telephone number management root
+    items:
+    - name: Telephone number management root
+      href: ../../resources/teamsadministration-telephonenumbermanagementroot.md
+    - name: List number assignments
+      href: ../../api/teamsadministration-telephonenumbermanagementroot-list-numberassignments.md
   - name: Complex types
     items:
     - name: Assigned telephone number
