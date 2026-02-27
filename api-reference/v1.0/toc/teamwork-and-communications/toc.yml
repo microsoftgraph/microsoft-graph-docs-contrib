@@ -6,6 +6,32 @@ items:
   href: ../../resources/teams-api-overview.md
 - name: Administration
   items:
+  - name: Number assignment
+    items:
+    - name: Number assignment
+      href: ../../resources/teamsadministration-numberassignment.md
+    - name: List
+      href: ../../api/teamsadministration-telephonenumbermanagementroot-list-numberassignments.md
+    - name: Get
+      href: ../../api/teamsadministration-numberassignment-get.md
+    - name: assignNumber
+      href: ../../api/teamsadministration-numberassignment-assignnumber.md
+    - name: unassignNumber
+      href: ../../api/teamsadministration-numberassignment-unassignnumber.md
+    - name: updateNumber
+      href: ../../api/teamsadministration-numberassignment-updatenumber.md
+  - name: Telephone number long running operation
+    items:
+    - name: Telephone number long running operation
+      href: ../../resources/teamsadministration-telephonenumberlongrunningoperation.md
+    - name: Get
+      href: ../../api/teamsadministration-telephonenumberlongrunningoperation-get.md
+  - name: Telephone number management root
+    items:
+    - name: Telephone number management root
+      href: ../../resources/teamsadministration-telephonenumbermanagementroot.md
+    - name: List number assignments
+      href: ../../api/teamsadministration-telephonenumbermanagementroot-list-numberassignments.md
   - name: Teams policy assignment
     items:
     - name: Teams policy assignment
@@ -38,6 +64,8 @@ items:
       href: ../../resources/teamsadministration-policyassignment.md
     - name: Policy identifier detail
       href: ../../resources/teamsadministration-policyidentifierdetail.md
+    - name: Telephone number long running operation details
+      href: ../../resources/teamsadministration-telephonenumberlongrunningoperationdetails.md
 - name: Apps
   items:
   - name: Teams app
@@ -777,6 +805,8 @@ items:
         href: ../../api/chatmessage-setreaction.md
       - name: Unset reaction to a message in channel
         href: ../../api/chatmessage-unsetreaction.md
+      - name: Reply with quote
+        href: ../../api/chatmessage-replywithquote.md
     - name: Hosted content
       items:
       - name: List all hosted content
