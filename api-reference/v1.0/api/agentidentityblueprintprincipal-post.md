@@ -50,6 +50,11 @@ For information about errors returned by agent identity APIs, see [Agent identit
 ### Request
 The following example shows a request.
 
+<!-- {
+  "blockType": "request",
+  "name": "create_agent_identity_blueprint_principal"
+}
+-->
 ```http
 POST https://graph.microsoft.com/v1.0/servicePrincipals/microsoft.graph.agentIdentityBlueprintPrincipal
 Content-type: application/json
@@ -66,7 +71,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.servicePrincipal"
+  "@odata.type": "microsoft.graph.agentIdentityBlueprintPrincipal"
 } -->
 ```http
 HTTP/1.1 201 Created

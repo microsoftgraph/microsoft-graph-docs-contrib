@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 Update the properties of an [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object.
 
 > [!IMPORTANT]
-> - Agent identity blueprint principals inherit specific properties from their associated agent identity blueprint registrations. These properties are synchronized from the agent identity blueprint registration, but the synchronization isn't immediate or continuous. Sometimes, updating a agent identity blueprint principal may prompt the directory to refresh properties from the agent identity blueprint registration, causing updates that weren't part of the original request.
+> - Agent identity blueprint principals inherit specific properties from their associated agent identity blueprint registrations. These properties are synchronized from the agent identity blueprint registration, but the synchronization isn't immediate or continuous. Sometimes, updating an agent identity blueprint principal may prompt the directory to refresh properties from the agent identity blueprint registration, causing updates that weren't part of the original request.
 
 ## Permissions
 
@@ -74,7 +74,7 @@ The following example shows a request to update an agent identity blueprint prin
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1.0/servicePrincipals/{id}
+PATCH https://graph.microsoft.com/v1.0/servicePrincipals/{id}/microsoft.graph.agentIdentityBlueprintPrincipal
 Content-type: application/json
 
 {

@@ -12,7 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Add an owner for the [agentIdentityBlueprint](../resources/agentIdentityBlueprint.md).Application owners can be individual users, the associated service principal, or another service principal.
+Add an owner for the [agentIdentityBlueprint](../resources/agentidentityblueprint.md).Application owners can be individual users, the associated service principal, or another service principal.
 
 ## Permissions
 
@@ -48,7 +48,7 @@ In the request body, supply a JSON representation of the [directoryObject](../re
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and no response body.
 
 ## Examples
 
