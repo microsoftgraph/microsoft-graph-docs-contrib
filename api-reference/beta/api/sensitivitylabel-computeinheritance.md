@@ -104,6 +104,7 @@ Content-Type: application/json
   "toolTip": "Data that requires protection.",
   "isEnabled": true,
   "isEndpointProtectionEnabled": true,
+  "hasProtection": true,
   "autoTooltip": "",
   "actionSource": "manual",
   "applicableTo": "email,teamwork,file",

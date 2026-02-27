@@ -48,36 +48,6 @@ items:
         href: ../../api/directory-deleteditems-get.md
       - name: Restore
         href: ../../api/directory-deleteditems-restore.md
-  - name: App role assignment
-    items:
-    - name: App role assignment
-      href: ../../resources/approleassignment.md
-    - name: List app role assignments for a group
-      href: ../../api/group-list-approleassignments.md
-    - name: List app role assignments for a user
-      href: ../../api/user-list-approleassignments.md
-    - name: List app role assignments for a client service principal
-      href: ../../api/serviceprincipal-list-approleassignments.md
-    - name: List app role assignments for users, groups, and client service principals for a resource service principal
-      href: ../../api/serviceprincipal-list-approleassignedto.md
-    - name: Grant app role to a group
-      href: ../../api/group-post-approleassignments.md
-    - name: Grant app role to a user
-      href: ../../api/user-post-approleassignments.md
-    - name: Grant app role to a client service principal
-      href: ../../api/serviceprincipal-post-approleassignments.md
-    - name: Grant app role assignment to user, group, or client service principal for a resource service principal
-      href: ../../api/serviceprincipal-post-approleassignedto.md
-    - name: Get app role assignment
-      href: ../../api/approleassignment-get.md
-    - name: Delete app role assignment for a group
-      href: ../../api/group-delete-approleassignments.md
-    - name: Delete app role assignment for a user
-      href: ../../api/user-delete-approleassignments.md
-    - name: Delete app role assignment for a client service principal
-      href: ../../api/serviceprincipal-delete-approleassignments.md
-    - name: Delete app role assignment for user, group, or client service principal to a resource service principal
-      href: ../../api/serviceprincipal-delete-approleassignedto.md
   - name: BitLocker recovery key
     items:
     - name: BitLocker recovery key
@@ -576,9 +546,9 @@ items:
         href: ../../resources/serviceprincipalidentity.md
       - name: User identity
         href: ../../resources/useridentity.md
-      - name: User last sign in recommendation insight setting
+      - name: User last sign-in recommendation insight setting
         href: ../../resources/userlastsigninrecommendationinsightsetting.md
-      - name: User sign in insight
+      - name: User sign-in insight
         href: ../../resources/usersignininsight.md
   - name: Consent requests
     items:
@@ -979,6 +949,8 @@ items:
         href: ../../api/identitygovernance-workflow-delete.md
       - name: Activate
         href: ../../api/identitygovernance-workflow-activate.md
+      - name: Activate with scope
+        href: ../../api/identitygovernance-workflow-activatewithscope.md
       - name: List users in scope
         href: ../../api/workflow-list-executionscope.md
       - name: Deleted workflows
@@ -1005,6 +977,8 @@ items:
         items:
         - name: Workflow version
           href: ../../resources/identitygovernance-workflowversion.md
+        - name: Create
+          href: ../../api/identitygovernance-workflow-createnewversion.md
         - name: List
           href: ../../api/identitygovernance-workflow-list-versions.md
         - name: Get
@@ -1030,6 +1004,10 @@ items:
             href: ../../api/identitygovernance-userprocessingresult-summary.md
           - name: List task processing results
             href: ../../api/identitygovernance-userprocessingresult-list-taskprocessingresults.md
+          - name: List reprocessedRuns
+            href: ../../api/identitygovernance-userprocessingresult-list-reprocessedruns.md
+          - name: Remove reprocessedRuns
+            href: ../../api/identitygovernance-userprocessingresult-delete-reprocessedruns.md
         - name: Task report
           items:
           - name: Task report
@@ -1052,6 +1030,10 @@ items:
             href: ../../api/identitygovernance-run-summary.md
           - name: List task processing results
             href: ../../api/identitygovernance-run-list-taskprocessingresults.md
+          - name: List reprocessedRuns
+            href: ../../api/identitygovernance-run-list-reprocessedruns.md
+          - name: Remove reprocessedRuns
+            href: ../../api/identitygovernance-run-delete-reprocessedruns.md
         - name: Task processing result
           items:
           - name: Task processing result
@@ -1449,6 +1431,36 @@ items:
         href: ../../resources/termsexpiration.md
 - name: Identity and sign-in
   items:
+  - name: App role assignment
+    items:
+    - name: App role assignment
+      href: ../../resources/approleassignment.md
+    - name: List app role assignments for a group
+      href: ../../api/group-list-approleassignments.md
+    - name: List app role assignments for a user
+      href: ../../api/user-list-approleassignments.md
+    - name: List app role assignments for a client service principal
+      href: ../../api/serviceprincipal-list-approleassignments.md
+    - name: List app role assignments for users, groups, and client service principals for a resource service principal
+      href: ../../api/serviceprincipal-list-approleassignedto.md
+    - name: Grant app role to a group
+      href: ../../api/group-post-approleassignments.md
+    - name: Grant app role to a user
+      href: ../../api/user-post-approleassignments.md
+    - name: Grant app role to a client service principal
+      href: ../../api/serviceprincipal-post-approleassignments.md
+    - name: Grant app role assignment to user, group, or client service principal for a resource service principal
+      href: ../../api/serviceprincipal-post-approleassignedto.md
+    - name: Get app role assignment
+      href: ../../api/approleassignment-get.md
+    - name: Delete app role assignment for a group
+      href: ../../api/group-delete-approleassignments.md
+    - name: Delete app role assignment for a user
+      href: ../../api/user-delete-approleassignments.md
+    - name: Delete app role assignment for a client service principal
+      href: ../../api/serviceprincipal-delete-approleassignments.md
+    - name: Delete app role assignment for user, group, or client service principal to a resource service principal
+      href: ../../api/serviceprincipal-delete-approleassignedto.md
   - name: Authentication event listeners
     items:
     - name: Authentication event listener
@@ -1473,6 +1485,10 @@ items:
       href: ../../resources/onattributecollectionsubmitlistener.md
     - name: On authentication method load start listener
       href: ../../resources/onauthenticationmethodloadstartlistener.md
+    - name: On email OTP send listener
+      href: ../../resources/onemailotpsendlistener.md
+    - name: On fraud protection load start listener
+      href: ../../resources/onfraudprotectionloadstartlistener.md
     - name: On interactive auth flow start listener
       href: ../../resources/oninteractiveauthflowstartlistener.md
     - name: On token issuance start listener
@@ -1503,6 +1519,18 @@ items:
         href: ../../api/emailauthenticationmethod-update.md
       - name: Delete
         href: ../../api/emailauthenticationmethod-delete.md
+    - name: External authentication method
+      items:
+      - name: External authentication method
+        href: ../../resources/externalauthenticationmethod.md
+      - name: List
+        href: ../../api/authentication-list-externalauthenticationmethods.md
+      - name: Create
+        href: ../../api/authentication-post-externalauthenticationmethods.md
+      - name: Get
+        href: ../../api/externalauthenticationmethod-get.md
+      - name: Delete
+        href: ../../api/authentication-delete-externalauthenticationmethods.md
     - name: FIDO2
       items:
       - name: FIDO2
@@ -1563,6 +1591,39 @@ items:
         href: ../../api/platformcredentialauthenticationmethod-get.md
       - name: Delete
         href: ../../api/platformcredentialauthenticationmethod-delete.md
+    - name: QR code authentication
+      items:
+      - name: QR code authentication
+        displayName: QRCodePin
+        items:
+        - name: QR code authentication
+          href: ../../resources/qrcodepinauthenticationmethod.md
+        - name: Get
+          href: ../../api/qrcodepinauthenticationmethod-get.md
+        - name: Create
+          href: ../../api/authentication-put-qrcodepinmethod.md
+        - name: Delete
+          href: ../../api/qrcodepinauthenticationmethod-delete.md
+      - name: QR Code
+        displayName: QRCodePin, QRCode
+        items:
+        - name: QR Code
+          href: ../../resources/qrcode.md
+        - name: Create or update
+          href: ../../api/qrcode-update.md
+        - name: Get
+          href: ../../api/qrcode-get.md
+        - name: Delete
+          href: ../../api/qrcode-delete.md
+      - name: PIN
+        displayName: QRCodePin, QRCode
+        items:
+        - name: PIN
+          href: ../../resources/qrpin.md
+        - name: Reset PIN
+          href: ../../api/qrpin-updatepin.md
+        - name: Update PIN
+          href: ../../api/qrpin-update.md
     - name: Software OATH
       items:
       - name: Software OATH
@@ -1618,6 +1679,16 @@ items:
         href: ../../api/emailauthenticationmethodconfiguration-update.md
       - name: Delete
         href: ../../api/emailauthenticationmethodconfiguration-delete.md
+    - name: External authentication method
+      items:
+      - name: External authentication method
+        href: ../../resources/externalauthenticationmethodconfiguration.md
+      - name: Get
+        href: ../../api/externalauthenticationmethodconfiguration-get.md
+      - name: Update
+        href: ../../api/externalauthenticationmethodconfiguration-update.md
+      - name: Delete
+        href: ../../api/externalauthenticationmethodconfiguration-delete.md
     - name: FIDO2
       items:
       - name: FIDO2
@@ -1638,6 +1709,16 @@ items:
         href: ../../api/microsoftauthenticatorauthenticationmethodconfiguration-update.md
       - name: Delete
         href: ../../api/microsoftauthenticatorauthenticationmethodconfiguration-delete.md
+    - name: Qr code pin authentication method configuration
+      items:
+      - name: Qr code pin authentication method configuration
+        href: ../../resources/qrcodepinauthenticationmethodconfiguration.md
+      - name: Get
+        href: ../../api/qrcodepinauthenticationmethodconfiguration-get.md
+      - name: Update
+        href: ../../api/qrcodepinauthenticationmethodconfiguration-update.md
+      - name: Delete
+        href: ../../api/qrcodepinauthenticationmethodconfiguration-delete.md
     - name: SMS
       items:
       - name: SMS
@@ -1737,19 +1818,21 @@ items:
         href: ../../api/authenticationstrengthroot-list-authenticationmethodmodes.md
       - name: Get authentication method modes
         href: ../../api/authenticationmethodmodedetail-get.md
-  - name: Certificate-based auth configuration
-    displayName: CBA
+  - name: Certificate-based authentication (CBA)
     items:
     - name: Certificate-based auth configuration
-      href: ../../resources/certificatebasedauthconfiguration.md
-    - name: List
-      href: ../../api/certificatebasedauthconfiguration-list.md
-    - name: Create
-      href: ../../api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
-    - name: Get
-      href: ../../api/certificatebasedauthconfiguration-get.md
-    - name: Delete
-      href: ../../api/certificatebasedauthconfiguration-delete.md
+      displayName: CBA
+      items:
+      - name: Certificate-based auth configuration
+        href: ../../resources/certificatebasedauthconfiguration.md
+      - name: List
+        href: ../../api/certificatebasedauthconfiguration-list.md
+      - name: Create
+        href: ../../api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
+      - name: Get
+        href: ../../api/certificatebasedauthconfiguration-get.md
+      - name: Delete
+        href: ../../api/certificatebasedauthconfiguration-delete.md
   - name: Conditional access
     items:
     - name: Conditional access policy
@@ -1900,6 +1983,8 @@ items:
       href: ../../resources/onattributecollectionstartcustomextension.md
     - name: On attribute collection submit custom extension
       href: ../../resources/onattributecollectionsubmitcustomextension.md
+    - name: On OTP send custom extension
+      href: ../../resources/onotpsendcustomextension.md
     - name: On token issuance start custom extension
       href: ../../resources/ontokenissuancestartcustomextension.md
   - name: Data policy operation
@@ -1910,6 +1995,26 @@ items:
       href: ../../api/datapolicyoperation-get.md
     - name: Export personal data
       href: ../../api/user-exportpersonaldata.md
+  - name: Fraud protection provider
+    items:
+    - name: Fraud protection provider
+      items:
+      - name: Fraud protection provider
+        href: ../../resources/fraudprotectionprovider.md
+      - name: List
+        href: ../../api/riskpreventioncontainer-list-fraudprotectionproviders.md
+      - name: Create
+        href: ../../api/riskpreventioncontainer-post-fraudprotectionproviders.md
+      - name: Get
+        href: ../../api/fraudprotectionprovider-get.md
+      - name: Update
+        href: ../../api/fraudprotectionprovider-update.md
+      - name: Delete
+        href: ../../api/riskpreventioncontainer-delete-fraudprotectionproviders.md
+    - name: Arkose fraud protection provider
+      href: ../../resources/arkosefraudprotectionprovider.md
+    - name: Human security fraud protection provider
+      href: ../../resources/humansecurityfraudprotectionprovider.md
   - name: Identity protection
     items:
     - name: Overview
@@ -2438,6 +2543,38 @@ items:
         href: ../../api/identityapiconnector-delete.md
     - name: User flows in Azure AD B2C (deprecated)
       href: ../../resources/identityuserflow.md
+  - name: Web application firewall
+    items:
+    - name: Web application firewall provider
+      items:
+      - name: Web application firewall provider
+        href: ../../resources/webapplicationfirewallprovider.md
+      - name: List
+        href: ../../api/riskpreventioncontainer-list-webapplicationfirewallproviders.md
+      - name: Create
+        href: ../../api/riskpreventioncontainer-post-webapplicationfirewallproviders.md
+      - name: Get
+        href: ../../api/webapplicationfirewallprovider-get.md
+      - name: Update
+        href: ../../api/webapplicationfirewallprovider-update.md
+      - name: Delete
+        href: ../../api/riskpreventioncontainer-delete-webapplicationfirewallproviders.md
+      - name: Verify
+        href: ../../api/webapplicationfirewallprovider-verify.md
+    - name: Akamai web application firewall provider
+      href: ../../resources/akamaiwebapplicationfirewallprovider.md
+    - name: Cloud flare web application firewall provider
+      href: ../../resources/cloudflarewebapplicationfirewallprovider.md
+    - name: Web application firewall verification model
+      items:
+      - name: Web application firewall verification model
+        href: ../../resources/webapplicationfirewallverificationmodel.md
+      - name: List
+        href: ../../api/riskpreventioncontainer-list-webapplicationfirewallverifications.md
+      - name: Get
+        href: ../../api/webapplicationfirewallverificationmodel-get.md
+      - name: Delete
+        href: ../../api/riskpreventioncontainer-delete-webapplicationfirewallverifications.md
 - name: Granular delegated admin privileges
   displayName: GDAP, Partner Center, CSP, VAR
   items:

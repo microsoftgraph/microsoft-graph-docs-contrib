@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/appConsent/appConsentRequests/{appconsentrequest-id}/userConsentRequests/{userconsentrequest-id}
 ```
 
@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a [userConsentRe
   "name": "get_userconsentrequest"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/appConsent/appConsentRequests/ee245379-e3bb-4944-a997-24115f0b8b5e/userConsentRequests/acef2660-d194-4943-b927-4fe4fb5cb7e3
 ```
 
@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/appConsent/appConsentReq
   "@odata.type": "microsoft.graph.userConsentRequest"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -57,10 +57,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_policies"
@@ -70,18 +71,42 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/identity/conditionalAccess/policies?$filter=displayName eq 'SimplePolicy1' or displayName eq 'SimplePolicy2'
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-policies-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-policies-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-policies-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-policies-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-policies-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-policies-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 The following example shows the response.
-
-> **Note:** The response object shown here might be shortened for readability.
-
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.conditionalAccessPolicy",
-  "isCollection": true
-} -->
+  "truncated": true,
+  "@odata.type": "microsoft.graph.conditionalAccessPolicy"
+}
+-->
 
 ```http
 HTTP/1.1 200 OK
@@ -256,6 +281,90 @@ Content-type: application/json
                     "frequencyInterval": "everyTime",
                     "isEnabled": true
                 }
+            }
+        }
+    ]
+}
+```
+
+### Example 2
+
+The following example shows a request to list all enabled policies scoped to agents (where agents are the actors). The response will list all CA policies scoped to agent identities and agent users.
+
+```http
+GET https://graph.microsoft.com/beta/identity/conditionalAccess/policies?$count=true&$filter=state eq 'enabled' and (conditions/clientApplications/includeAgentIdServicePrincipals/any() or conditions/clientApplications/excludeAgentIdServicePrincipals/any() or conditions/clientApplications/agentIdServicePrincipalFilter ne null or conditions/users/includeUsers/any(includeUsers:includeUsers in ('AllAgentIdUsers')))
+```
+
+### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.conditionalAccessPolicy"
+}
+-->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "value": [
+        {
+            "id": "128c8c73-0a52-4f16-94ab-55f640d0fe1f",
+            "displayName": "Block all unapproved agents",
+            "state": "enabledForReportingButNotEnforced",
+            "createdDateTime": "2025-10-01T07:40:06Z",
+            "conditions": {
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [
+                        "Office365"
+                    ]
+                },
+                "clientApplications": {
+                    "agentIdServicePrincipalFilter": {
+                        "mode": "include",
+                        "rule": "CustomSecurityAttribute.ConditionalAccess_isApproved -contains \"False\""
+                    }
+                },
+                "users": {
+                    "includeUsers": [
+                        "None"
+                    ]
+                }
+            },
+            "grantControls": {
+                "builtInControls": [
+                    "block"
+                ]
+            }
+        },
+        {
+            "id": "1318e96f-b473-4e7f-91dd-bf0b0a8d18dd",
+            "displayName": "Block all agent users from accessing resources",
+            "state": "enabled",
+            "createdDateTime": "2025-10-31T06:10:04Z",
+            "conditions": {
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ]
+                },
+                "users": {
+                    "includeUsers": [
+                        "AllAgentIdUsers"
+                    ]
+                }
+            },
+            "grantControls": {
+                "builtInControls": [
+                    "block"
+                ]
             }
         }
     ]

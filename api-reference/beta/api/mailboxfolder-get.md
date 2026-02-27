@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}
 GET /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/childFolders/{mailboxFolderId}
 ```
@@ -66,7 +66,7 @@ The following example shows a request.
   "sampleKeys": ["MBX:e0643f21@a7809c93", "NJWt2LeVEAAAIBDAAAAA=="]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders/NJWt2LeVEAAAIBDAAAAA==
 ```
 
@@ -106,7 +106,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.mailboxFolder"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 232

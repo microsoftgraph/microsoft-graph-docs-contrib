@@ -63,11 +63,11 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_community",
-  "sampleKeys": ["eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0"]
+  "sampleKeys": ["eyXxdHlwZSI6Ikdyb3VwIiwiaABCDiI4MzIxMjc1In0"]
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/employeeExperience/communities/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0
+GET https://graph.microsoft.com/beta/employeeExperience/communities/eyXxdHlwZSI6Ikdyb3VwIiwiaABCDiI4MzIxMjc1In0
 ```
 
 # [C#](#tab/csharp)
@@ -114,7 +114,7 @@ Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#employeeExperience/communities/$entity",
-  "id": "eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0",
+  "id": "eyXxdHlwZSI6Ikdyb3VwIiwiaABCDiI4MzIxMjc1In0",
   "displayName": "Financial Advice for Software Engineers",
   "description": "A community where financial advisors who represent customers from software engineering profession can discuss advice and suggestions for there clients.",
   "privacy": "public",

@@ -65,7 +65,7 @@ The following example shows a request.
   "name": "list_devicetemplate"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/directory/templates/deviceTemplates
 ```
 
@@ -109,7 +109,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.deviceTemplate)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

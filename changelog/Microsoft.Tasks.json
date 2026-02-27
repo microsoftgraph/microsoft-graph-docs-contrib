@@ -1,5 +1,55 @@
 {
   "changelog": [
+     {
+      "ChangeList": [
+        {
+          "Id": "35a6c7f5-6a17-4a95-9acb-60fdd5cbcc21",
+          "ApiChange": "Resource",
+          "ChangedApiName": "contentSensitivityLabelAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [contentSensitivityLabelAssignment](https://learn.microsoft.com/en-us/graph/api/resources/contentSensitivityLabelAssignment?view=graph-rest-beta) resource type.",
+          "Target": "contentSensitivityLabelAssignment"
+        },
+        {
+          "Id": "35a6c7f5-6a17-4a95-9acb-60fdd5cbcc21",
+          "ApiChange": "Resource",
+          "ChangedApiName": "planUsageRight",
+          "ChangeType": "Addition",
+          "Description": "Added the [planUsageRight](https://learn.microsoft.com/en-us/graph/api/resources/planUsageRight?view=graph-rest-beta) resource type.",
+          "Target": "planUsageRight"
+        },
+        {
+          "Id": "35a6c7f5-6a17-4a95-9acb-60fdd5cbcc21",
+          "ApiChange": "Resource",
+          "ChangedApiName": "usageRightsInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [usageRightsInfo](https://learn.microsoft.com/en-us/graph/api/resources/usageRightsInfo?view=graph-rest-beta) resource type.",
+          "Target": "usageRightsInfo"
+        },
+        {
+          "Id": "35a6c7f5-6a17-4a95-9acb-60fdd5cbcc21",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentSensitivityLabelAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentSensitivityLabelAssignment** property to the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerPlan?view=graph-rest-beta) resource.",
+          "Target": "plannerPlan"
+        },
+        {
+          "Id": "35a6c7f5-6a17-4a95-9acb-60fdd5cbcc21",
+          "ApiChange": "Method",
+          "ChangedApiName": "getUsageRights",
+          "ChangeType": "Addition",
+          "Description": "Added the [getUsageRights](https://learn.microsoft.com/en-us/graph/api/plannerPlan-getUsageRights?view=graph-rest-beta) method to the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerPlan?view=graph-rest-beta) resource.",
+          "Target": "plannerPlan"
+        }
+      ],
+      "Id": "35a6c7f5-6a17-4a95-9acb-60fdd5cbcc21",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-12T06:39:38.1147793Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
     {
       "ChangeList": [
         {

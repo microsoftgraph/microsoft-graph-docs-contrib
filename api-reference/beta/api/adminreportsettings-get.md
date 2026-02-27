@@ -67,7 +67,7 @@ The following example shows a request.
   "name": "get_adminreportsettings"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/reportSettings
 ```
 
@@ -111,7 +111,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.adminReportSettings"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

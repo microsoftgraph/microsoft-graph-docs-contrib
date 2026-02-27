@@ -43,7 +43,7 @@ Take immediate action to defend against threats using the Microsoft Graph Securi
 |name|String| Action name.|
 |parameters|[keyValuePair](keyvaluepair.md) collection| Collection of parameters (key-value pairs) necessary to invoke the action, for example, URL or fileHash to block.). **Required**.|
 |states|[securityActionState](securityactionstate.md) collection|Collection of securityActionState to keep the history of an action.|
-|status|string| Status of the action. Possible values are: `NotStarted`, `Running`, `Completed`, `Failed`.|
+|status|string| Status of the action. The possible values are: `NotStarted`, `Running`, `Completed`, `Failed`.|
 |user|String| The user principal name of the signed-in user that submitted  (POST) the action. The user should be extracted from the auth token and not entered manually by the calling application.|
 |vendorInformation|[securityVendorInformation](securityvendorinformation.md)|Complex Type containing details about the Security product/service vendor, provider, and sub-provider (for example, vendor=Microsoft; provider=Windows Defender ATP; sub-provider=AppLocker).|
 

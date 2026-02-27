@@ -9,6 +9,7 @@ ms.subservice: "entra-applications"
 ms.date: 01/21/2025
 
 #Customer intent: As a developer, I want to understand how REST API endpoints differ between Azure AD Graph and Microsoft Graph, so that I can update my code accordingly as I migrate my app from Azure AD Graph to Microsoft Graph.
+ms.topic: how-to
 ---
 
 # Request differences between Azure AD Graph and Microsoft Graph

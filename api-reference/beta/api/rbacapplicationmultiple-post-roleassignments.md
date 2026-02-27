@@ -347,7 +347,7 @@ Content-type: application/json
 Use the following information for creating Intune role assignments:
 - To allow assignments over all and future workloads, use the `/` value in **appScopeIds**.
 - To allow assignments over workload, on all scopes, don't add any scope after the following workload IDs in **appScopeIds**: `Mdi`, `Mdc`, `Mda`, `Mde`, `Mdo`, `SecureScoreExternal`.
-- To allow assignments over all current and future workloads, on specific scope, use one of the following values in **directoryScopeIds**: `/`, `ScopeType`, `ScopeId` .
+- To allow assignments over specific scope, use `/<ScopeType>/<ScopeId>` in  **appScopeIds**.
 
 #### Request
 
@@ -398,7 +398,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-unifiedroleassignmentmultiple-defender-specific-powershell-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

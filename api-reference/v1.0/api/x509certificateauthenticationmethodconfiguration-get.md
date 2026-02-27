@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x509Certificate
 ```
 
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [x509Certifica
   "name": "get_x509certificateauthenticationmethodconfiguration"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x509Certificate
 ```
 
@@ -100,7 +100,7 @@ The following response object shows an x509CertificateAuthenticationMethodConfig
   "@odata.type": "microsoft.graph.x509CertificateAuthenticationMethodConfiguration"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

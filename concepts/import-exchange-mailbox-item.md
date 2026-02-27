@@ -5,6 +5,7 @@ author: "cparker-msft"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 ms.date: 12/06/2024
+ms.topic: how-to
 ---
 
 # Import an Exchange mailbox item using the mailbox import and export APIs
@@ -41,7 +42,7 @@ The following example shows a request.
   "sampleKeys": ["MBX:e0643f21@a7809c93"]
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93/createImportSession
 ```
 
@@ -55,7 +56,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.mailboxItemImportSession"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 232
@@ -108,7 +109,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 POST https://outlook.office365.com/api/gbeta/Mailboxes('MBX:e0643f21@a7809c93')/importItem?authtoken=eyJhbGciOiJSUzI1NiIsImtpZCI6IjFTeXQ1b
 
 {
@@ -128,7 +129,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.importMailboxItemResponse"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 232
@@ -154,7 +155,7 @@ The following example shows a request.
   "sampleKeys": ["MBX:e0643f21@a7809c93"]
 }
 -->
-``` http
+```http
 POST https://outlook.office365.com/api/gbeta/Mailboxes('MBX:e0643f21@a7809c93')/importItem?authtoken=eyJhbGciOiJSUzI1NiIsImtpZCI6IjFTeXQ1b
 
 {
@@ -176,7 +177,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.importMailboxItemResponse"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 232

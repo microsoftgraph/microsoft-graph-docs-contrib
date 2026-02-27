@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/aws/findings/{id}/microsoft.graph.secretInformationAccessAwsServerlessFunctionFinding
 ```
 
@@ -59,7 +59,7 @@ The following example shows a request.
   "name": "get_secretinformationaccessawsserverlessfunctionfinding"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/MSxTZWNyZXRJbmZvcm1hdGlvbkFjY2Vzc0F3c1NlcnZlcmxlc3NGdW5jdGlvbkZpbmRpbmcsNzQyNg/microsoft.graph.secretInformationAccessAwsServerlessFunctionFinding
 ```
 
@@ -78,7 +78,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.secretInformationAccessAwsResourceFinding"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

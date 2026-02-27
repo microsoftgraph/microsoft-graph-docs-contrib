@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /admin/exchange/mailboxes/{mailboxId}/folders
 POST /admin/exchange/mailboxes/{mailboxId}/folders/inbox/childFolders
 ```
@@ -68,7 +68,7 @@ The following example shows how to create a new mailbox folder.
   "sampleKeys": ["MBX:e0648f21@aab09c93"]
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab09c93/folders
 
 {
@@ -99,7 +99,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.mailboxFolder"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 179

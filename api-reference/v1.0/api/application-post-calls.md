@@ -102,7 +102,8 @@ Content-Type: application/json
   "callOptions": {
     "@odata.type": "#microsoft.graph.outgoingCallOptions",
     "isContentSharingNotificationEnabled": true,
-    "isDeltaRosterEnabled": true
+    "isDeltaRosterEnabled": true,
+    "isInteractiveRosterEnabled": true
   },
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.serviceHostedMediaConfig"
@@ -188,7 +189,7 @@ Content-Type: application/json
         }
       },
       "endpointType": null,
-      "replacesCallId": null,
+      "replacesCallId": null
     }
   ],
   "requestedModalities": [
@@ -197,15 +198,15 @@ Content-Type: application/json
   "mediaConfig": {
     "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
     "preFetchMedia": [
-     {
-       "uri": "https://cdn.contoso.com/beep.wav",
-       "resourceId": "f8971b04-b53e-418c-9222-c82ce681a582"
-     },
-     {
-       "uri": "https://cdn.contoso.com/cool.wav",
-       "resourceId": "86dc814b-c172-4428-9112-60f8ecae1edb"
-     }
-    ],
+      {
+        "uri": "https://cdn.contoso.com/beep.wav",
+        "resourceId": "f8971b04-b53e-418c-9222-c82ce681a582"
+      },
+      {
+        "uri": "https://cdn.contoso.com/cool.wav",
+        "resourceId": "86dc814b-c172-4428-9112-60f8ecae1edb"
+      }
+    ]
   },
   "myParticipantId": "499ff390-7a72-40e8-83a0-8fac6295ae7e",
   "id": "2e1a0b00-2db4-4022-9570-243709c565ab",
@@ -221,7 +222,8 @@ Content-Type: application/json
   "callOptions": {
     "@odata.type": "#microsoft.graph.outgoingCallOptions",
     "isContentSharingNotificationEnabled": true,
-    "isDeltaRosterEnabled": true
+    "isDeltaRosterEnabled": true,
+    "isInteractiveRosterEnabled": true
   },
   "toneInfo": null
 }

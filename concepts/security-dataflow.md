@@ -5,6 +5,7 @@ author: "preetikr"
 ms.localizationpriority: high
 ms.subservice: "security"
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Microsoft Graph Security API data flow

@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identity/authenticationEventsFlows/{authenticationEventsFlow-id}/conditions/applications/includeApplications/
 ```
 
@@ -63,7 +63,7 @@ The following example shows a request to retrieve the list of applications assoc
   "name": "get_includeApplications"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc37-d421-421d-857b-87804d61e33e/conditions/applications/includeApplications/
 ```
 
@@ -105,7 +105,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.authenticationConditionApplication"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

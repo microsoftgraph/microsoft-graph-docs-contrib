@@ -14,6 +14,8 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [ediscovery-deprecation](../includes/ediscovery-subnamespace-deprecation.md)]
+
 Reset a [caseSettings](../resources/ediscovery-caseSettings.md) object to the default values.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -32,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 POST /compliance/ediscovery/cases/{caseId}/settings/resetToDefault
 ```
 
@@ -62,7 +64,7 @@ If successful, this action returns a `200 OK` response code.
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/settings/resetToDefault
 ```
 
@@ -106,7 +108,7 @@ POST https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/setti
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

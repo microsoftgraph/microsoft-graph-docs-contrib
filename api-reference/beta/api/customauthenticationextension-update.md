@@ -19,6 +19,7 @@ Update the properties of a [customAuthenticationExtension](../resources/customau
 - [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) resource type.
 - [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) resource type.
 - [onOtpSendCustomExtension](../resources/onOtpSendCustomExtension.md) resource type.
+- [onPasswordSubmitCustomExtension](../resources/onpasswordsubmitcustomextension.md) resource type.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -59,6 +60,7 @@ You must specify the `@odata.type` property when updating a [customAuthenticatio
 |handler|[onAttributeCollectionStartCustomExtensionHandler](../resources/onattributecollectionstartcustomextensionhandler.md)|The handler to invoke when conditions are met. Can be updated for the **onAttributeCollectionStartCustomExtensionListener** listener type.|
 |handler|[onAttributeCollectionSubmitCustomExtensionHandler](../resources/onattributecollectionsubmitcustomextensionhandler.md)|The handler to invoke when conditions are met. Can be updated for the **onAttributeCollectionSubmitCustomExtensionListener** listener type.|
 |handler|[onOtpSendCustomExtensionHandler](../resources/onOtpSendCustomExtensionHandler.md)|The handler to invoke when conditions are met. Can be updated for the **onOtpSendCustomExtensionListener** listener type.|
+|handler|[onTokenIssuanceStartCustomExtensionHandler](../resources/onTokenIssuanceStartCustomExtensionHandler.md)|The handler to invoke when conditions are met. Can be updated for the **onTokenIssuanceStartCustomExtensionListener** listener type.|
 |endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|Configuration for the API endpoint that the custom extension will call. Inherited from [customCalloutExtension](../resources/customcalloutextension.md). Optional.|
 |behaviorOnError|[customExtensionBehaviorOnError](../resources/customextensionbehavioronerror.md)|Let to configure behavior if the call to custom authentication extension returns error. Optional.|
 

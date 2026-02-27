@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /tenantRelationships/managedTenants/cloudPcDevices
 ```
 
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_cloudpcdevice"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/cloudPcDevices
 ```
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/cloudPcD
   "@odata.type": "Collection(microsoft.graph.managedTenants.cloudPcDevice)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

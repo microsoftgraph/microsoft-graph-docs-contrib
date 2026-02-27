@@ -799,5 +799,5 @@ You learned how to review access to administrative roles and generate an auditab
 
 ## Related content
 
-+ [Access reviews API Reference](/graph/api/resources/accessreviewsv2-root)
++ [Access reviews API Reference](/graph/api/resources/accessreviewsv2-overview)
 + [Configure the scope of your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept)

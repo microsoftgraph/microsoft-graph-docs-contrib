@@ -22,12 +22,8 @@ Create a new [virtualEventTownhall](../resources/virtualeventtownhall.md) object
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "virtualeventsroot-post-virtualevents-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/virtualeventsroot-post-virtualevents-permissions.md)]
+<!-- { "blockType": "permissions", "name": "virtualeventsroot_post_townhalls" } -->
+[!INCLUDE [permissions-table](../includes/permissions/virtualeventsroot-post-townhalls-permissions.md)]
 
 ## HTTP request
 
@@ -35,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /solutions/virtualEvents/townhalls
 ```
 
@@ -45,6 +41,7 @@ POST /solutions/virtualEvents/townhalls
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
+|Accept-Language| [Acceptable human languages for the response](/concepts/search-concept-acceptlanguage-header.md). Required. |
 
 ## Request body
 
@@ -79,9 +76,10 @@ The following example shows a request.
   "name": "create_virtualeventtownhall"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls
 Content-Type: application/json
+Accept-Language: en-US
 
 {     
     "displayName": "The Impact of Tech on Our Lives",
@@ -126,9 +124,10 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.virtualEventTownhall"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
+Accept-Language: en-US
 
 { 
     "id": "bce9a3ca-a310-48fa-baf3-1cedcd04bb3f@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba",

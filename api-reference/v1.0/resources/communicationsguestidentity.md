@@ -21,6 +21,7 @@ Inherits from [identity](identity.md).
 | Property                       | Type                        | Description           |
 | :----------------------------- | :---------------------------| :---------------------|
 | displayName | String | The display name associated with the guest user. Inherited from **identity**. |
+| email | String | The email of the guest user. |
 | id | String | The unique identifier for the guest user. Inherited from **identity**. |
 
 ## JSON representation
@@ -37,6 +38,7 @@ The following JSON representation shows the resource type.
 ```json
 {
   "displayName": "String",
+  "email": "String",
   "id": "String (identifier)"
 }
 ```

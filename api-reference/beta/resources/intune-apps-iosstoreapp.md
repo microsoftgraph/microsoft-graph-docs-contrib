@@ -121,7 +121,8 @@ Here is a JSON representation of the resource.
     "v15_0": true,
     "v16_0": true,
     "v17_0": true,
-    "v18_0": true
+    "v18_0": true,
+    "v26_0": true
   }
 }
 ```

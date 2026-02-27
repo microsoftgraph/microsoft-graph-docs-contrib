@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/attackSimulation/simulationAutomations/{simulationAutomationId}
 ```
 
@@ -61,7 +61,7 @@ The following example shows a request.
   "name": "get_simulationautomation"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/attackSimulation/simulationAutomations/fbad62b0-b32d-b6ac-9f48-d84bbea08f96
 ```
 
@@ -106,7 +106,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.simulationAutomation"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

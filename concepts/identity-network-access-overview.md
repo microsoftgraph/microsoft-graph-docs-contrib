@@ -14,11 +14,11 @@ ms.date: 04/25/2025
 
 # Overview of Microsoft Entra identity and network access APIs in Microsoft Graph
 
-The Microsoft Entra family of identity and network access solutions helps you protect any identity and secure access to any resource. Use the Microsoft Graph APIs to automate identity and access management tasks and integrate with any application.
+The Microsoft Entra family of identity and network access solutions helps you protect identities and secure access to resources across your organization. This article introduces the Microsoft Graph APIs that enable you to automate identity and access management tasks and build custom applications that integrate with Microsoft Entra services.
 
 To skip directly to the API reference, see [Microsoft Graph APIs for Microsoft Entra features](/graph/api/resources/identity-network-access-overview).
 
-## Manage user identities and control access to apps, data, and resources
+## Manage identities and control access to apps, data, and resources
 
 Millions of customers and organizations use Microsoft cloud services like Microsoft 365, Microsoft Azure, and the Enterprise Mobile + Security suite of products. These services use Microsoft Entra ID as their identity and access management solution. You can also integrate Microsoft Entra ID into your custom applications.
 
@@ -27,6 +27,8 @@ Some Microsoft Entra ID capabilities that you can integrate to your apps using M
 - **User management** - Look up and manage user profiles, license assignment, memberships, and privileges in the tenant. Manage organizational relationships, track assignments, or create original solutions that incorporate existing organizational data. Manage authentication methods for users.
 - **Group management** - Create groups to manage users and control access to resources. Use administrative units to organize groups, users, and devices for easier management and delegated administration.
 - **Application management** - Register cloud applications, manage application permissions and privileges, and users who can sign in. Provide secure remote access to on-premises applications.
+- **Agent management** - Manage the complete lifecycle of agents in your organization, including creation, discovery, management, governance, security rule enforcement, risk detection, and activity auditing.
+- **Device management** - Register and manage devices in your organization.
 - Manage **administrative roles**, which grant permission to perform specific tasks.
 - Automatically provision and manage user identities and roles to other SaaS apps that users need to access.
 

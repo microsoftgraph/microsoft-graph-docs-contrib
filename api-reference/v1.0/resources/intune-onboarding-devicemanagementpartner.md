@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/13/2024
+ms.date: 08/01/2024
 ---
 
 # deviceManagementPartner resource type
@@ -24,15 +24,15 @@ Entity which represents a connection to device management partner.
 |[Create deviceManagementPartner](../api/intune-onboarding-devicemanagementpartner-create.md)|[deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md)|Create a new [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) object.|
 |[Delete deviceManagementPartner](../api/intune-onboarding-devicemanagementpartner-delete.md)|None|Deletes a [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md).|
 |[Update deviceManagementPartner](../api/intune-onboarding-devicemanagementpartner-update.md)|[deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md)|Update the properties of a [deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) object.|
-|[terminate action](../api/intune-onboarding-devicemanagementpartner-terminate.md)|None|Not yet documented|
+|[terminate action](../api/intune-onboarding-devicemanagementpartner-terminate.md)|None||
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Id of the entity|
 |lastHeartbeatDateTime|DateTimeOffset|Timestamp of last heartbeat after admin enabled option Connect to Device management Partner|
-|partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Partner state of this tenant. Possible values are: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
-|partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|Partner App type. Possible values are: `unknown`, `singleTenantApp`, `multiTenantApp`.|
+|partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Partner state of this tenant. The possible values are: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
+|partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|Partner App type. The possible values are: `unknown`, `singleTenantApp`, `multiTenantApp`.|
 |singleTenantAppId|String|Partner Single tenant App id|
 |displayName|String|Partner display name|
 |isConfigured|Boolean|Whether device management partner is configured or not|
@@ -67,8 +67,9 @@ Here is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.deviceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
-        "collectionId": "String"
+        "@odata.type": "microsoft.graph.scopeTagGroupAssignmentTarget",
+        "targetType": "String",
+        "entraObjectId": "String"
       }
     }
   ]

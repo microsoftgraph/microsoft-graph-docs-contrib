@@ -38,7 +38,7 @@ To get the current **whoisRecord** for the specified **host**:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/threatIntelligence/hosts/{hostId}/whois
 ```
 
@@ -85,7 +85,7 @@ The following example shows a request.
   "sampleKeys": ["contoso.com"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/contoso.com/whois
 ```
 
@@ -131,7 +131,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.whoisRecord"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -22,7 +22,7 @@ Represents information about who or what initiated the provisioning event. Inher
 |:-------------|:------------|:------------|
 |displayName|String|The name of the person or service that initiated the provisioning event. Inherited from [identity](../resources/identity.md).|
 |id|String|The unique identifier for the person or service that initiated the provisioning event. Inherited from [identity](../resources/identity.md).|
-|initiatorType|String| The type of the initiator. Possible values are: `user`, `application`, `system`, `unknownFutureValue`.|
+|initiatorType|String| The type of the initiator. The possible values are: `user`, `application`, `system`, `unknownFutureValue`.|
 
 ## JSON representation
 

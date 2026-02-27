@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /me/profile/certifications/{id}
 PATCH /users/{id | userPrincipalName}/profile/certifications/{id}
 ```
@@ -45,7 +45,7 @@ In the request body, supply the values for relevant fields that should be update
 
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). The possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |certificationId  |String      |The referenceable identifier for the certification. |
 |description      |String      |Description of the certification.                   |
 |displayName      |String      |Title of the certification.                         |
@@ -71,7 +71,7 @@ If successful, this method returns a `200 OK` response code and an updated [pers
   "name": "update_personcertification"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/users/{userId}/profile/certifications/{id}
 Content-Type: application/json
 
@@ -119,7 +119,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.personCertification"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

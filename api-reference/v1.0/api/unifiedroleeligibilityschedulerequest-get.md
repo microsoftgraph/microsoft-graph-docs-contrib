@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /roleManagement/directory/roleEligibilityScheduleRequests/{unifiedRoleEligibilityScheduleRequestId}
 ```
 
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleE
   "name": "get_unifiedroleeligibilityschedulerequest"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleEligibilityScheduleRequests/f341269e-c926-41fa-a905-cef3b01b2a67
 ```
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleEligibilitySch
   "@odata.type": "microsoft.graph.unifiedRoleEligibilityScheduleRequest"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

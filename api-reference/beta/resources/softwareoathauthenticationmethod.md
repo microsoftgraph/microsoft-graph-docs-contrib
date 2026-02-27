@@ -32,6 +32,7 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 |Property|Type|Description|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset| The date and time the authentication method was registered to the user. Read-only. Optional. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|lastUsedDateTime|DateTimeOffset|The date and time the authentication method was last used by the user. Read-only. Optional. This optional value is `null` if the authentication method doesn't populate it. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [authenticationMethod](../resources/authenticationmethod.md).|
 |id|String|The authentication method identifier.|
 |secretKey|String|The secret key of the method. Always returns `null`.|
 
@@ -52,6 +53,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.softwareOathAuthenticationMethod",
   "createdDateTime": "String (timestamp)",
+  "lastUsedDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "secretKey": "String"
 }

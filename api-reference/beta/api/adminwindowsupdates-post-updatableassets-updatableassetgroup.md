@@ -1,11 +1,11 @@
 ---
 title: "Create updatableAssetGroup"
 description: "Create a new updatableAssetGroup object."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 08/31/2024
+ms.date: 01/27/2026
 ---
 
 # Create updatableAssetGroup
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /admin/windows/updates/updatableAssets
 ```
 
@@ -63,7 +63,7 @@ If successful, this method returns a `201 Created` response code and an [updatab
   "name": "create_updatableassetgroup_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets
 Content-Type: application/json
 
@@ -110,7 +110,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.windowsUpdates.updatableAssetGroup"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

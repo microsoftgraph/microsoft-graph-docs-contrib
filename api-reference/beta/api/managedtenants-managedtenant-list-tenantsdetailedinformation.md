@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /tenantRelationships/managedTenants/tenantsDetailedInformation
 ```
 
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_tenantdetailedinformation"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantsDetailedInformation
 ```
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/tenantsD
   "@odata.type": "Collection(microsoft.graph.managedTenants.tenantDetailedInformation)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

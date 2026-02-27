@@ -1,6 +1,6 @@
 ---
 title: "Delete trustFrameworkPolicy"
-description: "This operation deletes an existing trustFrameworkPolicy object from an Azure AD B2C tenant."  
+description: "Delete an existing trustFrameworkPolicy object from an Microsoft Entra B2C tenant."  
 ms.localizationpriority: medium
 author: "gysingh"
 ms.subservice: "entra-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Delete an existing [trustFrameworkPolicy](../resources/trustframeworkpolicy.md).
+Delete an existing [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) object from an Microsoft Entra B2C tenant.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

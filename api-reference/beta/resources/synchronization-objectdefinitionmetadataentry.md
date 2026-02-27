@@ -19,7 +19,7 @@ Metadata for the given object.
 ## Properties
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|key|objectDefinitionMetadata|Possible values are: `PropertyNameAccountEnabled`, `PropertyNameSoftDeleted`, `IsSoftDeletionSupported`, `IsSynchronizeAllSupported`, `ConnectorDataStorageRequired`, `Extensions`, `LinkTypeName`. |
+|key|objectDefinitionMetadata|The possible values are: `PropertyNameAccountEnabled`, `PropertyNameSoftDeleted`, `IsSoftDeletionSupported`, `IsSynchronizeAllSupported`, `ConnectorDataStorageRequired`, `Extensions`, `LinkTypeName`. |
 |value|String|Value of the metadata property.|
 
 ### Supported key-value pairs

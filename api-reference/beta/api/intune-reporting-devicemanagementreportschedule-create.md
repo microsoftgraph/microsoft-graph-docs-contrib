@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceManagement/reports/reportSchedules
 ```
 
@@ -53,7 +53,7 @@ The following table shows the properties that are required when you create the d
 |reportScheduleName|String|Name of the schedule|
 |subject|String|Subject of the scheduled reports that are delivered|
 |emails|String collection|Emails to which the scheduled reports are delivered|
-|recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|Frequency of scheduled report delivery. Possible values are: `none`, `daily`, `weekly`, `monthly`.|
+|recurrence|[deviceManagementScheduledReportRecurrence](../resources/intune-reporting-devicemanagementscheduledreportrecurrence.md)|Frequency of scheduled report delivery. The possible values are: `none`, `daily`, `weekly`, `monthly`.|
 |startDateTime|DateTimeOffset|Time that the delivery of the scheduled reports starts|
 |endDateTime|DateTimeOffset|Time that the delivery of the scheduled reports ends|
 |userId|String|The Id of the User who created the report|
@@ -61,7 +61,7 @@ The following table shows the properties that are required when you create the d
 |filter|String|Filters applied on the report|
 |select|String collection|Columns selected from the report|
 |orderBy|String collection|Ordering of columns in the report|
-|format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Format of the scheduled report. Possible values are: `csv`, `pdf`.|
+|format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Format of the scheduled report. The possible values are: `csv`, `pdf`.|
 
 
 
@@ -72,7 +72,7 @@ If successful, this method returns a `201 Created` response code and a [deviceMa
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/reports/reportSchedules
 Content-type: application/json
 Content-length: 539
@@ -102,7 +102,7 @@ Content-length: 539
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 588

@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /me/settings/storage/quota
 GET /users/{user-id}/settings/storage/quota
 ```
@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "get_unifiedstoragequota"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/settings/storage/quota
 ```
 
@@ -103,7 +103,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.unifiedStorageQuota"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -129,7 +129,7 @@ The following example shows a request.
   "sampleKeys": ["1234BBS1121YY95"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/1234BBS1121YY95/settings/storage/quota
 ```
 
@@ -172,7 +172,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.unifiedStorageQuota"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -197,7 +197,7 @@ The following example shows a request.
   "name": "get_unifiedstoragequotaandservices"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/settings/storage/quota?$expand=services
 ```
 
@@ -240,7 +240,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.unifiedStorageQuota"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

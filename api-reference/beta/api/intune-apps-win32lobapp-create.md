@@ -25,16 +25,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceAppManagement/mobileApps
 ```
 
@@ -93,6 +93,8 @@ The following table shows the properties that are required when you create the w
 |minimumSupportedWindowsRelease|String|Indicates the value for the minimum supported windows release. Example: `Windows11_23H2`.|
 |displayVersion|String|Indicates the version displayed in the UX for this app. Used to set the version of the app. Example: `1.0.3.215`.|
 |allowAvailableUninstall|Boolean|Indicates whether the uninstall is supported from the company portal for the Win32 app with an available assignment. When TRUE, indicates that uninstall is supported from the company portal for the Windows app (Win32) with an available assignment. When FALSE, indicates that uninstall is not supported for the Windows app (Win32) with an Available assignment. Default value is FALSE.|
+|activeInstallScript|[mobileAppScriptReference](../resources/intune-apps-mobileappscriptreference.md)|Contains the unique identifier of the associated install script for this Win32 app to be used instead of the install command line by the managed device during app installation. When null, the install command line is used instead.|
+|activeUninstallScript|[mobileAppScriptReference](../resources/intune-apps-mobileappscriptreference.md)|Contains the unique identifier of the associated uninstall script for this Win32 app to be used instead of the uninstall command line by the managed device during app uninstallation. When null, the uninstall command line is used instead.|
 
 
 
@@ -103,10 +105,10 @@ If successful, this method returns a `201 Created` response code and a [win32Lob
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 3552
+Content-length: 3820
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -220,16 +222,24 @@ Content-length: 3552
   "setupFilePath": "Setup File Path value",
   "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value",
   "displayVersion": "Display Version value",
-  "allowAvailableUninstall": true
+  "allowAvailableUninstall": true,
+  "activeInstallScript": {
+    "@odata.type": "microsoft.graph.mobileAppScriptReference",
+    "targetId": "Target Id value"
+  },
+  "activeUninstallScript": {
+    "@odata.type": "microsoft.graph.mobileAppScriptReference",
+    "targetId": "Target Id value"
+  }
 }
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 3724
+Content-Length: 3992
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -346,6 +356,14 @@ Content-Length: 3724
   "setupFilePath": "Setup File Path value",
   "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value",
   "displayVersion": "Display Version value",
-  "allowAvailableUninstall": true
+  "allowAvailableUninstall": true,
+  "activeInstallScript": {
+    "@odata.type": "microsoft.graph.mobileAppScriptReference",
+    "targetId": "Target Id value"
+  },
+  "activeUninstallScript": {
+    "@odata.type": "microsoft.graph.mobileAppScriptReference",
+    "targetId": "Target Id value"
+  }
 }
 ```

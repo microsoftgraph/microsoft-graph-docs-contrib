@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /external/industryData/referenceDefinitions/{referenceDefinitionId}
 ```
 
@@ -67,7 +67,7 @@ The following example shows a request.
   "name": "update_referencedefinition"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/external/industryData/referenceDefinitions/RefGradeLevel-TestGrade
 Content-Type: application/json
 

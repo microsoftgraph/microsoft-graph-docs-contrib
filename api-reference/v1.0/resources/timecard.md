@@ -35,7 +35,7 @@ Represents a timecard entry in the schedule.
 |breaks|[timeCardBreak](../resources/timecardbreak.md) collection|The list of breaks associated with the **timeCard**.|
 |clockInEvent|[timeCardEvent](../resources/timecardevent.md)|The clock-in event of the **timeCard**.|
 |clockOutEvent|[timeCardEvent](../resources/timecardevent.md)|The clock-out event of the **timeCard**.|
-|confirmedBy|confirmedBy|Indicates whether this **timeCard** entry is confirmed. Possible values are: `none`, `user`, `manager`, `unknownFutureValue`.|
+|confirmedBy|confirmedBy|Indicates whether this **timeCard** entry is confirmed. The possible values are: `none`, `user`, `manager`, `unknownFutureValue`.|
 |createdBy|[IdentitySet](../resources/identityset.md)|Identity of the creator of this **timecard**.|
 |createdDateTime|DateTimeOffset|The date and time at which the **timeCard** was created.|
 |id|String|Unique identifier for the **timeCard**.|

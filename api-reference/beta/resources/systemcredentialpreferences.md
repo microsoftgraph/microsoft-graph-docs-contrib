@@ -22,7 +22,7 @@ Dynamically detects and prompts users with their preferred multifactor authentic
 |:---|:---|:---|
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Users and groups excluded from the preferred authentication method experience of the system.|
 |includeTargets|[includeTarget](../resources/includetarget.md) collection|Users and groups included in the preferred authentication method experience of the system.|
-|state|advancedConfigState|Indicates whether the feature is enabled or disabled. Possible values are: `default`, `enabled`, `disabled`, `unknownFutureValue`. The `default` value is used when the configuration hasn't been explicitly set, and uses the default behavior of Microsoft Entra ID for the setting. The default value is `disabled`.|
+|state|advancedConfigState|Indicates whether the feature is enabled or disabled. The possible values are: `default`, `enabled`, `disabled`, `unknownFutureValue`. The `default` value is used when the configuration hasn't been explicitly set, and uses the default behavior of Microsoft Entra ID for the setting. The default value is `disabled`.|
 
 ## Relationships
 

@@ -19,7 +19,7 @@ The following restrictions apply:
 - You can update the **autoExtendDuration** property when **status** is either `created` or `active`.
 - You can only remove the Microsoft Entra Global Administrator role when the **status** property is `active`, which indicates a long-running operation.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /deviceManagement/deviceConfigurations
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
@@ -55,16 +55,16 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 8140
+Content-Length: 6340
 
 {
   "value": [
@@ -219,68 +219,32 @@ Content-Length: 8140
         "value": "dmFsdWU="
       },
       "singleSignOnExtension": {
-        "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
-        "realm": "Realm value",
-        "domains": [
-          "Domains value"
+        "@odata.type": "microsoft.graph.iosRedirectSingleSignOnExtension",
+        "extensionIdentifier": "Extension Identifier value",
+        "teamIdentifier": "Team Identifier value",
+        "configurations": [
+          {
+            "@odata.type": "microsoft.graph.keyTypedValuePair",
+            "key": "Key value"
+          }
         ],
-        "blockAutomaticLogin": true,
-        "cacheName": "Cache Name value",
-        "credentialBundleIdAccessControlList": [
-          "Credential Bundle Id Access Control List value"
-        ],
-        "domainRealms": [
-          "Domain Realms value"
-        ],
-        "isDefaultRealm": true,
-        "passwordBlockModification": true,
-        "passwordExpirationDays": 6,
-        "passwordExpirationNotificationDays": 2,
-        "userPrincipalName": "User Principal Name value",
-        "passwordRequireActiveDirectoryComplexity": true,
-        "passwordPreviousPasswordBlockCount": 2,
-        "passwordMinimumLength": 5,
-        "passwordMinimumAgeDays": 6,
-        "passwordRequirementsDescription": "Password Requirements Description value",
-        "requireUserPresence": true,
-        "activeDirectorySiteCode": "Active Directory Site Code value",
-        "passwordEnableLocalSync": true,
-        "blockActiveDirectorySiteAutoDiscovery": true,
-        "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
-        "signInHelpText": "Sign In Help Text value",
-        "managedAppsInBundleIdACLIncluded": true
+        "urlPrefixes": [
+          "Url Prefixes value"
+        ]
       },
       "iosSingleSignOnExtension": {
-        "@odata.type": "microsoft.graph.iosKerberosSingleSignOnExtension",
-        "realm": "Realm value",
-        "domains": [
-          "Domains value"
+        "@odata.type": "microsoft.graph.iosRedirectSingleSignOnExtension",
+        "extensionIdentifier": "Extension Identifier value",
+        "teamIdentifier": "Team Identifier value",
+        "configurations": [
+          {
+            "@odata.type": "microsoft.graph.keyTypedValuePair",
+            "key": "Key value"
+          }
         ],
-        "blockAutomaticLogin": true,
-        "cacheName": "Cache Name value",
-        "credentialBundleIdAccessControlList": [
-          "Credential Bundle Id Access Control List value"
-        ],
-        "domainRealms": [
-          "Domain Realms value"
-        ],
-        "isDefaultRealm": true,
-        "passwordBlockModification": true,
-        "passwordExpirationDays": 6,
-        "passwordExpirationNotificationDays": 2,
-        "userPrincipalName": "User Principal Name value",
-        "passwordRequireActiveDirectoryComplexity": true,
-        "passwordPreviousPasswordBlockCount": 2,
-        "passwordMinimumLength": 5,
-        "passwordMinimumAgeDays": 6,
-        "passwordRequirementsDescription": "Password Requirements Description value",
-        "requireUserPresence": true,
-        "activeDirectorySiteCode": "Active Directory Site Code value",
-        "passwordEnableLocalSync": true,
-        "blockActiveDirectorySiteAutoDiscovery": true,
-        "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
-        "signInHelpText": "Sign In Help Text value",
-        "managedAppsInBundleIdACLIncluded": true
+        "urlPrefixes": [
+          "Url Prefixes value"
+        ]
       }
     }
   ]

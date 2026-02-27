@@ -11,6 +11,8 @@ ms.date: 04/04/2024
 # Get teamworkDevice
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-deprecation-disclaimer](../../includes/beta-deprecation-disclaimer.md)]
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the properties of a Microsoft Teams-enabled [device](../resources/teamworkdevice.md). For example, you can use this method to get the device type, hardware detail, activity state, and health status information for a device that's enabled for Teams.
@@ -31,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /teamwork/devices/{teamworkDeviceId}
 ```
 
@@ -60,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a [teamworkDevic
   "name": "get_teamworkdevice"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teamwork/devices/0f3ce432-e432-0f3c-32e4-3c0f32e43c0f
 ```
 
@@ -102,7 +104,7 @@ GET https://graph.microsoft.com/beta/teamwork/devices/0f3ce432-e432-0f3c-32e4-3c
   "@odata.type": "microsoft.graph.teamworkDevice"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

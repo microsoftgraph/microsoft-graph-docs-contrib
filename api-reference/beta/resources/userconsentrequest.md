@@ -35,7 +35,7 @@ The user can create a consent request when an app or a permission requires admin
 |customData|String|Free text field to define any custom data for the user consent request. Not used.|
 |id|String|Identifier of the request. |
 |reason|String|The user's justification for requiring access to the app. Supports `$filter` (`eq` only) and `$orderby`.  |
-|status|String|The status of the user's app consent request. Possible values are: `Initializing`, `InProgress`, `Expired`, and `Completed`. Supports `$filter` (`eq` only) and `$orderby`. |
+|status|String|The status of the user's app consent request. The possible values are: `Initializing`, `InProgress`, `Expired`, and `Completed`. Supports `$filter` (`eq` only) and `$orderby`. |
 
 ## Relationships
 |Relationship|Type|Description|

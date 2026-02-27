@@ -67,7 +67,7 @@ The following example shows a request.
   "name": "timecardthis.clockin"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/teams/fd15cad8-80f6-484f-9666-3caf695fbf32/schedule/timeCards/clockin
 Content-type: application/json
 
@@ -185,7 +185,7 @@ The following example shows a request.
   "name": "timecardthis.clockin2"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/teams/fd15cad8-80f6-484f-9666-3caf695fbf32/schedule/timeCards/clockin
 Content-type: application/json
 

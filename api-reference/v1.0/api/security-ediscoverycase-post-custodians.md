@@ -24,13 +24,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "security_ediscoverycase_post_custodians" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoverycase-post-custodians-permissions.md)]
 
+[!INCLUDE [rbac-ediscovery-custodian](../includes/rbac-for-apis/rbac-ediscovery-custodian-export-apis.md)]
+
 ## HTTP request
 
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians
 ```
 
@@ -64,7 +66,7 @@ The following example shows a request.
   "name": "create_ediscoverycustodian_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians
 Content-Type: application/json
 
@@ -112,7 +114,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.ediscoveryCustodian"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

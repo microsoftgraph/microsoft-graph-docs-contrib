@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Get the tenant-level [settings](../resources/sharepointsettings.md) for SharePoint and OneDrive.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -31,7 +31,7 @@ When calling on behalf of a user, the user needs to belong to one of the followi
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /admin/sharepoint/settings
 ```
 
@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "get_settings_at_tenant_level"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/admin/sharepoint/settings
 ```
 
@@ -108,7 +108,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.sharepointSettings"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

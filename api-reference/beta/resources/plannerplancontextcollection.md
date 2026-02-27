@@ -1,6 +1,6 @@
 ---
 title: "plannerPlanContextCollection resource type"
-description: "The **plannerPlanContextCollection** resource represents the collection of external contexts to which a plan is linked. This resource is an open type and is part of the plannerPlan object. The value in the property-value pair is the plannerPlanContext object."
+description: "The **plannerPlanContextCollection** resource represents the collection of external contexts to which a plan is linked. This resource is an open type that allows additional properties beyond those documented here and is part of the plannerPlan object. The value in the property-value pair is the plannerPlanContext object."
 ms.localizationpriority: medium
 author: "TarkanSevilmis"
 ms.subservice: "planner"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-The **plannerPlanContextCollection** resource represents the collection of external contexts to which a plan is linked. This resource is an open type and is part of the [plannerPlan](plannerplan.md) object. The value in the property-value pair is the [plannerPlanContext](plannerplancontext.md) object.
+The **plannerPlanContextCollection** resource represents the collection of external contexts to which a plan is linked. This resource is an open type that allows additional properties beyond those documented here and is part of the [plannerPlan](plannerplan.md) object. The value in the property-value pair is the [plannerPlanContext](plannerplancontext.md) object.
 
 
 ## Properties

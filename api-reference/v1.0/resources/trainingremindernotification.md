@@ -21,7 +21,7 @@ Inherits from [baseEndUserNotification](../resources/baseendusernotification.md)
 |Property|Type|Description|
 |:---|:---|:---|
 |defaultLanguage|String|Default language. Inherited from [baseEndUserNotification](../resources/baseendusernotification.md).|
-|deliveryFrequency|notificationDeliveryFrequency|Configurable frequency for the reminder email introduced during simulation creation. Possible values are: `unknown`, `weekly`, `biWeekly`, `unknownFutureValue`.|
+|deliveryFrequency|notificationDeliveryFrequency|Configurable frequency for the reminder email introduced during simulation creation. The possible values are: `unknown`, `weekly`, `biWeekly`, `unknownFutureValue`.|
 
 ## Relationships
 

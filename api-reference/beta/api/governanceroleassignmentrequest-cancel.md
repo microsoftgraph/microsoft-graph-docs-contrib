@@ -1,5 +1,5 @@
 ---
-title: "Cancel governanceRoleAssignmentRequest"
+title: "Cancel governanceRoleAssignmentRequest (deprecated)"
 description: "Cancel a governanceRoleAssignmentRequest."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -9,7 +9,7 @@ ROBOTS: NOINDEX
 ms.date: 03/13/2024
 ---
 
-# Cancel governanceRoleAssignmentRequest
+# Cancel governanceRoleAssignmentRequest (deprecated)
 
 Namespace: microsoft.graph
 

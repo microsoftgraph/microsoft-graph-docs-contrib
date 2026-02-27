@@ -74,7 +74,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/identity/b2xUserFlows
 Content-type: application/json
 
@@ -149,7 +149,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/identity/b2xUserFlows
 Content-type: application/json
 
@@ -231,7 +231,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/identity/b2xUserFlows
 Content-type: application/json
 

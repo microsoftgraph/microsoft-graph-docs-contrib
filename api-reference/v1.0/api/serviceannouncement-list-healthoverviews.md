@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /admin/serviceAnnouncement/healthOverviews
 ```
 
@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_healthoverviews"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/healthOverviews
 ```
 
@@ -104,7 +104,7 @@ GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/healthOverviews
   "isCollection": true
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -142,7 +142,7 @@ Content-Type: application/json
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/healthOverviews?$expand=issues
 ```
 
@@ -185,7 +185,7 @@ GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/healthOverviews?$
   "isCollection": true
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

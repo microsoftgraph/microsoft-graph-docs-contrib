@@ -69,7 +69,7 @@ If successful, this method returns a `204 No Content` response code and a [group
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/dc3d2ce5-7c5e-4dca-a0ef-2145bf6e53ef/includedGroups/$ref
 Content-Type: application/json
 
@@ -116,6 +116,6 @@ Content-Type: application/json
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

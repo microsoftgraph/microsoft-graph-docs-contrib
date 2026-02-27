@@ -1,6 +1,6 @@
 ---
 title: "userSettings resource type"
-description: "The current user settings for content discovery. "
+description: "Represents the current user settings for content discovery."
 author: "yyuank"
 ms.reviewer: "iamut"
 ms.localizationpriority: high
@@ -13,13 +13,19 @@ ms.date: 08/06/2024
 
 Namespace: microsoft.graph
 
-The current user settings for content discovery.
+Represents the current user settings for content discovery. The user's preferences apply to the following resources:
+- [Item insights](../resources/officegraphinsights.md)
+- [Work hours and locations](../resources/workhoursandlocationssetting.md)
 
-Export users' Windows settings and values stored in a cloud.
-  - Get a list of the user's [windowsSetting](../resources/windowssetting.md) objects
+Export users' Windows settings and values stored in a cloud:
+  - Get a list of the user's [windowsSetting](../resources/windowssetting.md) objects.
   - Get a filtered list of the user's [windowsSetting](../resources/windowssetting.md) objects by passing one of the following in the filter query:
-    - [windowssettingtype](../resources/enums.md#windowssettingtype-values)
+    - [windowsSettingType](../resources/enums.md#windowssettingtype-values)
     - [windowsDeviceId](../resources/windowssetting.md#properties)
+
+Manage work hours and location settings:
+  - Get and update a user's work hours and location preferences for scheduling and availability management.
+  - Access work plan recurrences and occurrences for flexible work arrangements.
 
 Inherits from [entity](entity.md). To learn how to get or update user settings, see [Get settings](../api/usersettings-get.md) and [Update settings](../api/usersettings-update.md).
 
@@ -36,7 +42,8 @@ This resource supports:
 |:---------------|:--------|:----------|
 |[Get settings](../api/usersettings-get.md) |[userSettings](../resources/usersettings.md)| Get the user and organization settings. |
 |[Update settings](../api/usersettings-update.md) |[userSettings](../resources/usersettings.md)| Update the user current settings. |
-|[List](../api/usersettings-list-windows.md)|[windowsSetting](../resources/windowssetting.md) collection|Get the **windowsSetting** objects and their properties for the signed in user.|
+|[List Windows settings](../api/usersettings-list-windows.md)|[windowsSetting](../resources/windowssetting.md) collection|Get the **windowsSetting** objects and their properties for the signed in user.|
+|[Get work hours and locations](../api/workhoursandlocationssetting-get.md)|[workHoursAndLocationsSetting](workhoursandlocationssetting.md)|Get the properties and relationships of your own [workHoursAndLocationsSetting](../resources/workhoursandlocationssetting.md).|
 
 ## Properties
 
@@ -52,6 +59,8 @@ This resource supports:
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
 |itemInsights|[userInsightsSettings](userinsightssettings.md)| The user's settings for the visibility of meeting hour insights, and insights derived between a user and other items in Microsoft 365, such as documents or sites. [Get userInsightsSettings](../api/userinsightssettings-get.md) through this navigation property. |
+|windows|[windowsSetting](../resources/windowssetting.md) collection|The Windows settings of the user stored in the cloud.|
+|workHoursAndLocations|[workHoursAndLocationsSetting](workhoursandlocationssetting.md)| The user's settings for work hours and location preferences for scheduling and availability management. |
 
 ## JSON representation
 
@@ -67,4 +76,3 @@ The following JSON representation shows the resource type.
 }
 
 ```
-

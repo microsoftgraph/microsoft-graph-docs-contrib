@@ -1,6 +1,6 @@
 ---
 title: "List deletedItems (directory objects)"
-ms.date: 11/14/2024
+ms.date: 11/17/2025
 description: "Retrieve a list of recently deleted items from deleted items."
 author: "keylimesoda"
 ms.localizationpriority: medium
@@ -17,6 +17,10 @@ Namespace: microsoft.graph
 Retrieve a list of recently deleted directory objects from [deleted items](../resources/directory.md). The following types are supported:
 - [administrativeUnit](../resources/administrativeunit.md)
 - [application](../resources/application.md)
+- [agentIdentityBlueprint](../resources/agentidentityblueprint.md)
+- [agentIdentity](../resources/agentidentity.md)
+- [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md)
+- [agentUser](../resources/agentuser.md)
 - [certificateBasedAuthPki](../resources/certificatebasedauthpki.md)
 - [certificateAuthorityDetail](../resources/certificateauthoritydetail.md)
 - [externalUserProfile](../resources/externaluserprofile.md)
@@ -24,8 +28,6 @@ Retrieve a list of recently deleted directory objects from [deleted items](../re
 - [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md)
 - [servicePrincipal](../resources/serviceprincipal.md)
 - [user](../resources/user.md)
-
->**Note:** Deleted security groups are deleted permanently and can't be retrieved through this API.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -37,6 +39,10 @@ The following table shows the least privileged permission or permissions require
 |:-|:-|:-|:-|
 | [administrativeUnit](../resources/administrativeunit.md) | AdministrativeUnit.Read.All | Not supported. | AdministrativeUnit.Read.All |
 | [application](../resources/application.md) | Application.Read.All | Not supported. | Application.Read.All |
+| [agentIdentity](../resources/agentidentity.md) | AgentIdentity.Read.All | Not supported. | AgentIdentity.Read.All |
+| [agentIdentityBlueprint](../resources/agentidentityblueprint.md) | AgentIdentityBlueprint.Read.All | Not supported. | AgentIdentityBlueprint.Read.All |
+| [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) | AgentIdentityBlueprintPrincipal.Read.All | Not supported. | AgentIdentityBlueprintPrincipal.Read.All |
+| [agentUser](../resources/agentuser.md) | User.ReadBasic.All | Not supported. | User.ReadBasic.All |
 | [externalUserProfile](../resources/externaluserprofile.md) | ExternalUserProfile.Read.All | Not supported | ExternalUserProfile.Read.All |
 | [group](../resources/group.md) | Group.Read.All | Not supported. | Group.Read.All |
 | [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md) | PendingExternalUserProfile.Read.All | Not supported | PendingExternalUserProfile.Read.All |
@@ -62,6 +68,14 @@ GET /directory/deletedItems/microsoft.graph.pendingExternalUserProfile
 GET /directory/deletedItems/microsoft.graph.certificateBasedAuthPki
 GET /directory/deletedItems/microsoft.graph.certificateAuthorityDetail
 ```
+
+> [!IMPORTANT]
+> For soft deleted security groups, the **securityEnabled** property returns `false` instead of `true` due to a known limitation.
+>
+> To identify the group type, use the **groupTypes** property:
+>
+> - `["Unified"]`indicates a Microsoft 365 group.
+> - An empty array (`[]`) indicates a security group.
 
 The OData cast type is a required part of the URI and calling `GET /directory/deleteditems` without a type is **not** supported.
 
@@ -258,10 +272,6 @@ Content-type: application/json
 {
   "type": "#page.annotation",
   "description": "List deleteditems",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
+  "suppressions": []
 }
 -->

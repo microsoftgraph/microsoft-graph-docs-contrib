@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/13/2024
+ms.date: 08/01/2024
 ---
 
 # deviceConfiguration resource type
@@ -21,8 +21,8 @@ Device Configuration.
 |:---|:---|:---|
 |[List deviceConfigurations](../api/intune-deviceconfig-deviceconfiguration-list.md)|[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) collection|List properties and relationships of the [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) objects.|
 |[Get deviceConfiguration](../api/intune-deviceconfig-deviceconfiguration-get.md)|[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|Read properties and relationships of the [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md) object.|
-|[assign action](../api/intune-deviceconfig-deviceconfiguration-assign.md)|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) collection|Not yet documented|
-|[getOmaSettingPlainTextValue function](../api/intune-deviceconfig-deviceconfiguration-getomasettingplaintextvalue.md)|String|Not yet documented|
+|[assign action](../api/intune-deviceconfig-deviceconfiguration-assign.md)|[deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md) collection||
+|[getOmaSettingPlainTextValue function](../api/intune-deviceconfig-deviceconfiguration-getomasettingplaintextvalue.md)|String||
 
 ## Properties
 |Property|Type|Description|

@@ -17,10 +17,10 @@ import (
 
 requestBody := graphmodels.NewActivityBasedTimeoutPolicy()
 definition := []string {
-	"definition-value",
+	"{\"ActivityBasedTimeoutPolicy\":{\"Version\":1,\"ApplicationPolicies\":[{\"ApplicationId\":\"default\",\"WebSessionIdleTimeout\":\"00:05:00\"}]}}",
 }
 requestBody.SetDefinition(definition)
-displayName := "displayName-value"
+displayName := "activityBasedTimeoutPolicies test"
 requestBody.SetDisplayName(&displayName) 
 isOrganizationDefault := true
 requestBody.SetIsOrganizationDefault(&isOrganizationDefault) 

@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /reports/healthMonitoring/alertConfigurations/{alertConfigurationId}
 ```
 
@@ -66,7 +66,7 @@ The following example shows a request.
   "name": "get_alertconfiguration"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/reports/healthMonitoring/alertConfigurations/{alertConfigurationId}
 ```
 
@@ -110,7 +110,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.healthMonitoring.alertConfiguration"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

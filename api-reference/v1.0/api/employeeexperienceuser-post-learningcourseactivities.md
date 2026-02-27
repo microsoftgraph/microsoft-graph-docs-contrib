@@ -56,7 +56,7 @@ In the request body, use @odata.type to specify the type of [learningCourseActiv
 |Property|Type|Description|
 |:---|:---|:---|
 |assignedDateTime|DateTimeOffset|Assigned date for the course activity. Optional. |
-|assignmentType|assignmentType|The assignment type for the course activity. Possible values are: `required`, `recommended`, `unknownFutureValue`. Required.|
+|assignmentType|assignmentType|The assignment type for the course activity. The possible values are: `required`, `recommended`, `unknownFutureValue`. Required.|
 |assignerUserId|String|The Microsoft Entra ID of the assigner. Optional. |
 |completedDateTime|DateTimeOffset|The date and time when the assignment was completed. Optional. |
 |completionPercentage|Int32|The percentage of the course the user completes. Optional. If a value is provided, it must be between `0` and `100` (inclusive).|
@@ -69,7 +69,7 @@ In the request body, use @odata.type to specify the type of [learningCourseActiv
 |notes|String|Notes for the course activity. Optional. |
 |registrationId|String|ID of the provider. The ID is generated when the provider registers on Viva Learning. Required.|
 |startedDateTime|DateTimeOffset|The date and time when the learner started a self-initiated course. Optional.|
-|status|courseStatus|The status of the course activity. Possible values are: `notStarted`, `inProgress`, `completed`. Required.|
+|status|courseStatus|The status of the course activity. The possible values are: `notStarted`, `inProgress`, `completed`. Required.|
 
 ## Response
 

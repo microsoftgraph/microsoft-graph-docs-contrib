@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /admin/people/profilePropertySettings/{profilePropertySettingId}
 ```
 
@@ -50,10 +50,9 @@ PATCH /admin/people/profilePropertySettings/{profilePropertySettingId}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedAudiences|organizationAllowedAudiences|A privacy setting that reflects the allowed audience for the configured property. The possible values are: `me`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|isUserOverrideForAudienceEnabled|Boolean|Defines whether a user is allowed to override the tenant admin privacy setting.|
-|name|String|Name of the property-level setting.|
+|name|String|Other name of the property-level setting. For backward compatibility.|
 |prioritizedSourceUrls|String collection|A collection of prioritized profile source URLs ordered by data precedence within an organization.|
+|displayName|String|Name of the property-level setting.|
 
 ## Response
 
@@ -64,13 +63,12 @@ If successful, this method returns a `200 OK` response code and an updated [prof
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_profilepropertysetting"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/admin/people/profilePropertySettings/00000000-0000-0000-0000-000000000001
 Content-Type: application/json
 
@@ -82,34 +80,6 @@ Content-Type: application/json
   ]
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-profilepropertysetting-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-profilepropertysetting-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-profilepropertysetting-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-profilepropertysetting-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-profilepropertysetting-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-profilepropertysetting-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/update-profilepropertysetting-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -123,7 +93,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.profilePropertySetting"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -131,12 +101,11 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.profilePropertySetting",
   "id": "00000000-0000-0000-0000-000000000001",
   "name": null,
-  "userOverridePrivacy": null,
-  "allowedAudiences": null,
   "prioritizedSourceUrls": [
     "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr1')",
     "https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr2')"
-  ]
+  ],
+  "displayName": "null"
 }
 ```
 

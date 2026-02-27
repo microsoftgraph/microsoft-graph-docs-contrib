@@ -16,6 +16,9 @@ Namespace: microsoft.graph
 
 Represents an external partner setting on Cloud PC.
 
+> [!CAUTION]
+> The external partner setting API is deprecated and will stop returning data on **March 31, 2026**. Please use the new [external partner APIs](../resources/cloudpcexternalpartner.md).
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|

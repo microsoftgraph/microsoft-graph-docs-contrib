@@ -34,7 +34,7 @@ Fetch tasks for a lifecycle workflow.
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/tasks/{taskId}
 ```
 
@@ -45,7 +45,7 @@ Fetch tasks for a lifecycle workflow version.
   "sampleKeys": ["156ce798-1eb6-4e0a-8515-e79f54d04390", "2", "4d9d41d7-a8e1-4f2f-8c8c-a883bc02e6ee"]
 }
 -->
-``` http
+```http
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/156ce798-1eb6-4e0a-8515-e79f54d04390/versions/2/tasks/4d9d41d7-a8e1-4f2f-8c8c-a883bc02e6ee
 ```
 
@@ -79,7 +79,7 @@ The following example shows a request to get a task from a workflow.
   "name": "lifecycleworkflows_get_workflow_task"
 }
 -->
-``` http
+```http
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflow/156ce798-1eb6-4e0a-8515-e79f54d04390/tasks/fafa2189-cd62-4643-a825-06cab8817086
 ```
 
@@ -93,7 +93,7 @@ The following is an example of the response of a request to get a task from a wo
   "@odata.type": "microsoft.graph.identityGovernance.task"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -124,7 +124,7 @@ The following example shows a request to get a task from a workflow version.
   "sampleKeys": ["156ce798-1eb6-4e0a-8515-e79f54d04390", "2", "4d9d41d7-a8e1-4f2f-8c8c-a883bc02e6ee"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/156ce798-1eb6-4e0a-8515-e79f54d04390/versions/2/tasks/4d9d41d7-a8e1-4f2f-8c8c-a883bc02e6ee
 ```
 
@@ -168,7 +168,7 @@ The following is an example of the response of a request to get a task from a wo
   "@odata.type": "microsoft.graph.identityGovernance.task"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -23,7 +23,7 @@ Represents URI and identifying information for a print service instance.
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|A human-readable display name for the endpoint.|
-|id|String|A unique name that identifies the service that the endpoint provides. Possible values are: `discovery` (Discovery Service), `notification` (Notification Service), `ipp` (IPP Service), and `registration` (Registration Service). Read-only.|
+|id|String|A unique name that identifies the service that the endpoint provides. The possible values are: `discovery` (Discovery Service), `notification` (Notification Service), `ipp` (IPP Service), and `registration` (Registration Service). Read-only.|
 |uri|String|The URI that can be used to access the service.|
 
 

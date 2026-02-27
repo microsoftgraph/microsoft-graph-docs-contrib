@@ -3,7 +3,7 @@ title: Manage Microsoft Entra Applications Using Microsoft Graph
 description: Learn how to register, update, and manage Microsoft Entra applications and service principals using Microsoft Graph APIs.
 author: FaithOmbongi
 ms.author: ombongifaith
-ms.reviewer: sureshja
+ms.reviewer: Jackson-Woods
 ms.date: 04/29/2025
 ms.topic: concept-article
 ms.localizationpriority: medium

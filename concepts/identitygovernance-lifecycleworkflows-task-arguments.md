@@ -48,7 +48,7 @@ This article explains how to configure the arguments property for built-in tasks
 | Request user access package assignment | c1ec1e76-f374-4375-aaa6-0bb6bd4c60be | **name**: `assignmentPolicyId`<br/>**value**: A valid assignment policy ID (String) for the access package you want to assign the user.<br/><br/>**name**: `accessPackageId`<br/>**value**: A valid access package ID for the access package you want to assign to the user. |
 | Remove access package assignment for user | 4a0b64f2-c7ec-46ba-b117-18f262946c50 | **name**: `accessPackageId`<br/>**value**: A valid access package ID for the access package you want to unassign from the user. |
 | Remove all access package assignments for user | 42ae2956-193d-4f39-be06-691b8ac4fa1d | None |
-| Cancel pending access package assignment requests for user | 498770d9-bab7-4e4c-b73d-5ded82a1d0b3 | None |
+| Cancel pending access package assignment requests for user | 498770d9-bab7-4e4c-b73d-5ded82a1d0b3 | **name**: `daysUntilExpiration`<br/>**value**: A valid string of the days until the access package assignment for the user expires. |
 
 ## Examples
 
@@ -456,12 +456,26 @@ This article explains how to configure the arguments property for built-in tasks
 ```json
 {
   "category": "leaver",
-  "continueOnError": false,
-  "description": "Remove all access packages assigned to the user",
-  "displayName": "Remove all access package assignments for user",
-  "isEnabled": true,
-  "taskDefinitionId": "42ae2956-193d-4f39-be06-691b8ac4fa1d",
-  "arguments": []
+    "continueOnError": false,
+    "description": "Remove all access packages assigned to the user",
+    "displayName": "Remove all access package assignments for user",
+    "isEnabled": true,
+    "taskDefinitionId": "42ae2956-193d-4f39-be06-691b8ac4fa1d",
+    "arguments": [
+        {
+             "description": "Remove all access packages assigned to the user",
+            "displayName": "Remove all access package assignments for user",
+            "id": "42ae2956-193d-4f39-be06-691b8ac4fa1d",
+            "version": 1,
+            "parameters": [
+                {
+                    "name": "daysUntilExpiration",
+                    "values": [],
+                    "valueType": "string"
+                }
+            ]
+        }
+    ]
 }
 ```
 

@@ -2,7 +2,7 @@
 title: "onPremisesDirectorySynchronizationFeature resource type"
 description: "Consists of directory synchronization features that can be enabled or disabled."
 author: dhanyahk
-ms.reviewer: sgupta, abhishek.badjatya, dhanyahk
+ms.reviewer: damaiya,vifernan,awsdev
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType

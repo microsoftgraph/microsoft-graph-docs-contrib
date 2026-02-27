@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /networkaccess/forwardingPolicies/{forwardingPolicyId}/policyRules/{ruleId}
 ```
 
@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "get_policyrule"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/networkaccess/forwardingPolicies/{forwardingPolicyId}/policyRules/{ruleId}
 ```
 
@@ -103,7 +103,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.networkaccess.policyRule"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

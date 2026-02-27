@@ -50,7 +50,7 @@ You can specify the following properties when creating an **identity** resource 
 | Property       | Type                    | Description                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
 | id             | String                  | The unique `id` of the member. It would be the **objectId** in case of Microsoft Entra users or groups and the **externalGroupId** in case of external groups. Required.                                    |
-| type           | microsoft.graph.externalConnectors.identityType | The type of member added to the external group. Possible values are: `user`,`group`, `externalGroup`. Required. |
+| type           | microsoft.graph.externalConnectors.identityType | The type of member added to the external group. The possible values are: `user`,`group`, `externalGroup`. Required. |
 
 
 ## Response

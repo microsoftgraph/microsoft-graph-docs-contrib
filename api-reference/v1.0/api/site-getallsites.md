@@ -50,7 +50,7 @@ GET /sites/getAllSites
   "name": "site_getallsites1"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/sites/getAllSites
 ```
 

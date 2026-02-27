@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
 ms.date: 07/22/2024
+toc.title: User last sign-in recommendation insight setting
 ---
 
 # userlastsignInrecommendationinsightsetting resource type

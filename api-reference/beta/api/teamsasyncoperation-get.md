@@ -33,7 +33,7 @@ The following permissions are for getting the operation on a chat:
     "blockType": "ignored" 
 } 
 -->
-``` http
+```http
 GET /chats/{chat-id}/operations/{operation-id}
 ```
 
@@ -71,7 +71,7 @@ The following example shows a request that gets the operation on a chat.
   "sampleKeys": ["19:c253a29b5f694b55a6baad8e83510af7@thread.v2", "2432b57b-0abd-43db-aa7b-16eadd115d34-e88ae9aa-887e-4972-ac3e-bd578e38232e-cf58835e-43f0-4fc1-825e-5de55630e7e4"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/19:c253a29b5f694b55a6baad8e83510af7@thread.v2/operations/2432b57b-0abd-43db-aa7b-16eadd115d34-e88ae9aa-887e-4972-ac3e-bd578e38232e-cf58835e-43f0-4fc1-825e-5de55630e7e4
 ```
 
@@ -114,8 +114,8 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.teamsAsyncOperation"
 }
 -->
-``` http
-HTTP/1.1 202 OK
+```http
+HTTP/1.1 200 OK
 Content-Type: application/json
 
 {

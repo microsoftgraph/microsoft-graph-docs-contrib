@@ -1,6 +1,6 @@
 ---
 title: "windowsDefenderUpdateSignatures action"
-description: "Not yet documented"
+description: "Intune Devices Manageddevice Windowsdefenderupdatesignatures Api ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceManagement/managedDevices/{managedDeviceId}/windowsDefenderUpdateSignatures
 POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/windowsDefenderUpdateSignatures
 POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/users/{userId}/managedDevices/{managedDeviceId}/windowsDefenderUpdateSignatures
@@ -54,43 +54,12 @@ If successful, this action returns a `204 No Content` response code.
 
 ### Request
 Here is an example of the request.
-
-# [HTTP](#tab/http)
-<!-- { "blockType": "request" , "name" : "intune_devices_manageddevice_windowsdefenderupdatesignatures_windowsdefenderupdatesignatures_action" }-->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/deviceManagement/managedDevices/{managedDeviceId}/windowsDefenderUpdateSignatures
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/intune-devices-manageddevice-windowsdefenderupdatesignatures-windowsdefenderupdatesignatures-action-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/intune-devices-manageddevice-windowsdefenderupdatesignatures-windowsdefenderupdatesignatures-action-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-devices-manageddevice-windowsdefenderupdatesignatures-windowsdefenderupdatesignatures-action-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-devices-manageddevice-windowsdefenderupdatesignatures-windowsdefenderupdatesignatures-action-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/intune-devices-manageddevice-windowsdefenderupdatesignatures-windowsdefenderupdatesignatures-action-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/intune-devices-manageddevice-windowsdefenderupdatesignatures-windowsdefenderupdatesignatures-action-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" }-->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

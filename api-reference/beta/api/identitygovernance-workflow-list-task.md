@@ -1,14 +1,14 @@
 ---
-title: "List tasks"
+title: "List tasks (in Lifecycle Workflows)"
 description: "Retrieve the details of the built-in tasks in Lifecycle Workflows."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
-ms.date: 04/05/2024
+ms.date: 08/01/2025
 ---
 
-# List tasks
+# List tasks (in Lifecycle Workflows)
 
 Namespace: microsoft.graph.identityGovernance
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/tasks
 ```
 
@@ -66,7 +66,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_list_task"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/156ce798-1eb6-4e0a-8515-e79f54d04390/tasks
 ```
 
@@ -110,7 +110,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.identityGovernance.task)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

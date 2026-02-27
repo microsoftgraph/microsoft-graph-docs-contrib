@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /reports/getGroupArchivedPrintJobs(groupId='{groupId}',startDateTime='{startDateTime}',endDateTime='{endDateTime}')
 ```
 
@@ -62,7 +62,7 @@ If successful, this function returns a `200 OK` response code and a [archivedPri
   "name": "reports_getgrouparchivedprintjobs"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/reports/getGroupArchivedPrintJobs(groupId='{id}',startDateTime=<timestamp>,endDateTime=<timestamp>)
 ```
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/v1.0/reports/getGroupArchivedPrintJobs(groupId='
   "@odata.type": "Collection(microsoft.graph.archivedPrintJob)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

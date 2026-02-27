@@ -27,7 +27,7 @@ None.
 | createdDateTime    | DateTimeOffset  | The start time of the operation.                                                |
 | id                 | String          | The operation ID. Read-only. Server generated.                                  |
 | lastActionDateTime | DateTimeOffset  | The time of the last action of the operation.                                   |
-| status             | String          | Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only. |
+| status             | String          | The possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only. |
 
 ## Relationships
 

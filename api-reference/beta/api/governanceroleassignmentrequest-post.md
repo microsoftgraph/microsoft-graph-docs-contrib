@@ -1,5 +1,5 @@
 ---
-title: "Create governanceRoleAssignmentRequest"
+title: "Create governanceRoleAssignmentRequest (deprecated)"
 description: "Create a role assignment request to represent the operation you want on a role assignment. The following table lists the operations."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -9,7 +9,7 @@ ROBOTS: NOINDEX
 ms.date: 08/13/2024
 ---
 
-# Create governanceRoleAssignmentRequest
+# Create governanceRoleAssignmentRequest (deprecated)
 
 Namespace: microsoft.graph
 

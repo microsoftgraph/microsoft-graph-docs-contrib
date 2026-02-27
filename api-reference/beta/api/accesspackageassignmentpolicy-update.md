@@ -80,7 +80,7 @@ In this policy update, one of the options for the multiple choice question was r
   "name": "update_accesspackageassignmentpolicy"
 }
 -->
-``` http
+```http
 PUT https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/b2eba9a1-b357-42ee-83a8-336522ed6cbf
 Content-Type: application/json
 
@@ -204,7 +204,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.accessPackageAssignmentPolicy"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

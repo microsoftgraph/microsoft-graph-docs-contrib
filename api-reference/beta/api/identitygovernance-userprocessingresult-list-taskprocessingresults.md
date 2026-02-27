@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/userProcessingResults/{userProcessingResultId}/taskProcessingResults
 GET /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/runs/{runId}/userProcessingResults/{userProcessingResultId}/taskProcessingResults
 ```
@@ -70,7 +70,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_list_workflow_userprocessingresult_taskprocessingresult"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/IdentityGovernance/lifecycleWorkflows/workflows/14879e66-9ea9-48d0-804d-8fea672d0341/userProcessingResults/78b83505-6967-4168-a7ea-4921c0543ce9/taskProcessingResults
 ```
 
@@ -114,7 +114,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.identityGovernance.taskProcessingResult)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -186,7 +186,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_list_workflow_userprocessingresult_taskprocessingresult_select"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/15239232-66ed-445b-8292-2f5bbb2eb833/userProcessingResults/40efc576-840f-47d0-ab95-5abca800f8a2/taskProcessingResults?$select=id,processingStatus,failureReason,subject,task
 ```
 
@@ -231,7 +231,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.identityGovernance.taskProcessingResult)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -307,7 +307,7 @@ Content-Type: application/json
   "name": "lifecycleworkflows_list_workflow_userprocessingresult_taskprocessingresults"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/14879e66-9ea9-48d0-804d-8fea672d0341/runs/72885f91-2cf0-44b1-b3ed-bd145af0192c/userProcessingResults/78b83505-6967-4168-a7ea-4921c0543ce9/taskProcessingResults
 ```
 
@@ -351,7 +351,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.identityGovernance.taskProcessingResult)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -423,7 +423,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_list_workflow_userprocessingresult_taskprocessingresults_select"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/15239232-66ed-445b-8292-2f5bbb2eb833/runs/e65e08a0-d68d-41dc-915b-8c4019af5cc2/userProcessingResults/40efc576-840f-47d0-ab95-5abca800f8a2/taskProcessingResults?$select=id,failureReason,processingStatus,subject,task
 ```
 
@@ -467,7 +467,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.identityGovernance.taskProcessingResult)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

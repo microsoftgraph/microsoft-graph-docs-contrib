@@ -55,9 +55,10 @@ The following table shows the properties that are required when you update the [
 |displayName|String|The setting name displayed in the user interface. |
 |lastModifiedDateTime|DateTimeOffset|The last date and time the setting was modified. The timestamp type represents the date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 |localAdminEnabled|Boolean|To turn on the local admin option, change this setting to `true`.|
+|provisioningSourceType|[cloudPcProvisioningSourceType](../resources/cloudpcusersetting.md#cloudpcprovisioningsourcetype-values)|Indicates the provisioning source of the Cloud PC prepared for an end user. The possible values are: `image`, `snapshot`, `unknownFutureValue`. The default value is `image`. If this property isn't set or set to `null`, its functionality is the same as setting it to `image`.|
 |resetEnabled|Boolean|Indicates whether an end user is allowed to reset their Cloud PC. When `true`, the user is allowed to reset their Cloud PC. When `false`, end-user initiated reset is not allowed. The default value is `false`. |
 |restorePointSetting|[cloudPcRestorePointSetting](../resources/cloudpcrestorepointsetting.md)|Defines how frequently a restore point is created (that is, a snapshot is taken) for users' provisioned Cloud PCs (default is 12 hours), and whether the user is allowed to restore their own Cloud PCs to a backup made at a specific point in time.|
-|selfServiceEnabled (deprecated)|Boolean|To turn on the self-service option, change this setting to `true`. The **selfServiceEnabled** property is deprecated and will stop returning data on December 1, 2023.|
+|selfServiceEnabled (deprecated)|Boolean|To turn on the self-service option, change this setting to `true`. The **selfServiceEnabled** property is deprecated and stopped returning data on December 1, 2023.|
 
 ## Response
 
@@ -98,6 +99,7 @@ Content-Type: application/json
     "disasterRecoveryType": "premium",
     "userInitiatedDisasterRecoveryAllowed": true
   },
+  "provisioningSourceType": "image",
   "localAdminEnabled": false,
   "resetEnabled": true
 }

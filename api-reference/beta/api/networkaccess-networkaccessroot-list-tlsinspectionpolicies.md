@@ -16,6 +16,8 @@ Namespace: microsoft.graph.networkaccess
 
 Get a list of the [tlsInspectionPolicy](../resources/networkaccess-tlsinspectionpolicy.md) objects and their properties.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -31,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /networkAccess/tlsInspectionPolicies
 ```
 
@@ -64,7 +66,7 @@ The following example shows a request.
   "name": "list_tlsinspectionpolicy"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/networkAccess/tlsInspectionPolicies
 ```
 
@@ -88,6 +90,10 @@ GET https://graph.microsoft.com/beta/networkAccess/tlsInspectionPolicies
 [!INCLUDE [sample-code](../includes/snippets/php/list-tlsinspectionpolicy-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-tlsinspectionpolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-tlsinspectionpolicy-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -104,7 +110,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.networkaccess.tlsInspectionPolicy"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/13/2024
+ms.date: 08/01/2024
 ---
 
 # deviceAndAppManagementData resource type
@@ -19,7 +19,7 @@ Exported Data
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|content|Stream|Not yet documented|
+|content|Stream||
 
 ## Relationships
 None

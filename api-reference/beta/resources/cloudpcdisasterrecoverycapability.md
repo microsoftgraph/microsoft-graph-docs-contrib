@@ -21,7 +21,7 @@ Represents the disaster recovery status of a Cloud PC, including the primary reg
  | Property | Type | Description |
  | :--- | :--- | :--- |
  | capabilityType | [cloudPcDisasterRecoveryCapabilityType](#cloudpcdisasterrecoverycapabilitytype-values) | The disaster recovery action that can be performed for the Cloud PC. The possible values are: `none`, `failover`, `failback`, `unknownFutureValue`. |
- | licenseType | [cloudPcDisasterRecoveryLicenseType](#cloudpcdisasterrecoverylicensetype-values) | The disaster recovery license type that provides the capability. The possible values are: `none`, `standard`, `unknownFutureValue`, `plus`. Use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `plus`. |
+ | licenseType | [cloudPcDisasterRecoveryLicenseType](#cloudpcdisasterrecoverylicensetype-values) | The disaster recovery license type that provides the capability. The possible values are: `none`, `standard`, `unknownFutureValue`, `plus`. Use the `Prefer: include-unknown-enum-members` request header to get the following members in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `plus`. |
  | primaryRegion | String | The primary and mainly used region where the Cloud PC is located. |
  | secondaryRegion | String | The secondary region to which the Cloud PC can be failed over during a regional outage. |
 

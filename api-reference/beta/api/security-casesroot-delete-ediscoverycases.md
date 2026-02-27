@@ -22,6 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "security_casesroot_delete_ediscoverycases" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-casesroot-delete-ediscoverycases-permissions.md)]
+[!INCLUDE [rbac-ediscovery-write](../includes/rbac-for-apis/rbac-ediscovery-apis-write.md)]
 
 ## HTTP request
 
@@ -29,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /security/cases/ediscoveryCases/{ediscoveryCaseId}
 ```
 
@@ -56,7 +57,7 @@ The following example shows a request.
   "name": "delete_ediscoverycase"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/security/cases/ediscoveryCases/22aa2acd-7554-4330-9ba9-ce20014aaae4
 ```
 
@@ -98,6 +99,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

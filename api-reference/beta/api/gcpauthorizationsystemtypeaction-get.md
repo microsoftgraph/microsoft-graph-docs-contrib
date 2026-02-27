@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /external/authorizationSystems/{id}/microsoft.graph.gcpAuthorizationSystem/actions/{gcpAuthorizationSystemTypeActionId}
 GET /external/authorizationSystems/{id}/microsoft.graph.gcpAuthorizationSystem/actions(externalId='{externalId}')
 ```
@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "get_gcpauthorizationsystemtypeaction"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/external/authorizationSystems/{id}/microsoft.graph.gcpAuthorizationSystem/actions/Y29tcHV0ZS5hZGRyZXNzZXMuY3JlYXRl
 ```
 
@@ -83,7 +83,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.gcpAuthorizationSystemTypeAction"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

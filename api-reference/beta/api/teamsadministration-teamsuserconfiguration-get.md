@@ -14,7 +14,7 @@ Namespace: microsoft.graph.teamsAdministration
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the Teams user configurations for a specific user using their ID (the user's identifier).
+Read the Teams [user configurations](../resources/teamsadministration-teamsuserconfiguration.md) for a specific user using their ID (the user's identifier).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /admin/teams/userConfigurations/{teamsUserConfigurationId}
 ```
 
@@ -65,7 +65,7 @@ The following example shows a request.
   "sampleKeys": ["5c802b19-3600-83f1-1767-7b9edc7f38ab"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/teams/userConfigurations/5c802b19-3600-83f1-1767-7b9edc7f38ab
 ```
 
@@ -105,7 +105,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.teamsAdministration.teamsUserConfiguration"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

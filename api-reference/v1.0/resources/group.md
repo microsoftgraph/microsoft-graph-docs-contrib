@@ -13,7 +13,7 @@ ms.date: 10/17/2024
 
 Namespace: microsoft.graph
 
-Represents a Microsoft Entra group, a Microsoft 365 group, or a security group. This resource is an open type that allows other properties to be passed in.
+Represents a Microsoft Entra group, a Microsoft 365 group, or a security group. This resource is an open type that allows additional properties beyond those documented here.
 
 Inherits from [directoryObject](directoryobject.md).
 
@@ -22,7 +22,7 @@ For performance reasons, the [create](../api/group-post-groups.md), [get](../api
 This resource supports:
 
 - Adding your data to custom properties as [extensions](/graph/extensibility-overview).
-- Subscribing to [change notifications](/graph/webhooks).
+- Subscribing to [change notifications](/graph/change-notifications-overview).
 - Using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/group-delta.md) function.
 
 ## Methods
@@ -43,9 +43,10 @@ This resource supports:
 | [List owners](../api/group-list-owners.md) | [directoryObject](directoryobject.md) collection | Get the owners of the group from the **owners** navigation property. |
 | [Add owners](../api/group-post-owners.md) | None | Add a new owner for the group by posting to the **owners** navigation property (supported for security groups and Microsoft 365 groups only). |
 | [Remove owner](../api/group-delete-owners.md) | None | Remove an owner from a Microsoft 365 group or a security group through the **owners** navigation property. |
-| [List group lifecycle policies](../api/group-list-grouplifecyclepolicies.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md) collection | List group lifecycle policies. |
+| [List memberships](../api/group-list-memberof.md) | [directoryObject](directoryobject.md) collection | Get the groups, admin roles, and and administrative units that this group is a direct member of from the memberOf navigation property. |
 | [List transitive members](../api/group-list-transitivemembers.md) | [directoryObject](directoryobject.md) collection | Get the users, groups, and devices that are members, including nested members of this group. |
-| [List transitive member of](../api/group-list-transitivememberof.md) | [directoryObject](directoryobject.md) collection | List the groups that this group is a member of. This operation is transitive and includes the groups that this group is a nested member of. |
+| [List transitive memberships](../api/group-list-transitivememberof.md) | [directoryObject](directoryobject.md) collection | List the groups that this group is a member of. This operation is transitive and includes the groups that this group is a nested member of. |
+| [List group lifecycle policies](../api/group-list-grouplifecyclepolicies.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md) collection | List group lifecycle policies. |
 | [Assign license](../api/group-assignlicense.md) | [group](group.md) | Add or remove subscriptions for the group. You can also enable and disable specific plans associated with a subscription. |
 | [Renew](../api/group-renew.md) | Boolean | Renews a group's expiration. Renewing extends the group expiration by the number of days defined in the policy. |
 | [Validate properties](../api/group-validateproperties.md) | JSON | Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies. |
@@ -168,13 +169,15 @@ This resource supports:
 | preferredLanguage | String | The preferred language for a Microsoft 365 group. Should follow ISO 639-1 Code; for example, `en-US`. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values). |
 | proxyAddresses | String collection | Email addresses for the group that direct to the same group mailbox. For example: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. The **any** operator is required to filter expressions on multi-valued properties. <br><br>Returned by default. Read-only. Not nullable. Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`, `endsWith`, `/$count eq 0`, `/$count ne 0`). |
 | renewedDateTime | DateTimeOffset | Timestamp of when the group was last renewed. This value can't be modified directly and is only updated via the [renew service action](../api/group-renew.md). The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on January 1, 2014 is `2014-01-01T00:00:00Z`. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`). Read-only. |
+| resourceBehaviorOptions | String collection | Specifies the group behaviors that can be set for a Microsoft 365 group during creation. This property can be set only as part of creation (POST). For the list of possible values, see [Microsoft 365 group behaviors and provisioning options](/graph/group-set-options). |
+| resourceProvisioningOptions | String collection | Specifies the group resources that are associated with the Microsoft 365 group. The possible value is `Team`. For more information, see [Microsoft 365 group behaviors and provisioning options](/graph/group-set-options). <br><br>Returned by default. Supports `$filter` (`eq`, `not`, `startsWith`). |
 | securityEnabled | Boolean | Specifies whether the group is a security group. Required. <br><br>Returned by default. Supports `$filter` (`eq`, `ne`, `not`, `in`). |
 | securityIdentifier | String | Security identifier of the group, used in Windows scenarios. Read-only. <br><br>Returned by default. |
 | serviceProvisioningErrors | [serviceProvisioningError](serviceprovisioningerror.md) collection | Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a group object. <br><br> Supports `$filter` (`eq`, `not`, for isResolved and serviceInstance). |
 | theme | string | Specifies a Microsoft 365 group's color theme. Possible values are `Teal`, `Purple`, `Green`, `Blue`, `Pink`, `Orange`, or `Red`. <br><br>Returned by default. |
 | uniqueName | String | The unique identifier that can be assigned to a group and used as an alternate key. Immutable. Read-only. |
 | unseenCount | Int32 | Count of conversations that received new posts since the signed-in user last visited the group. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`). |
-| visibility | String | Specifies the group join policy and group content visibility for groups. Possible values are: `Private`, `Public`, or `HiddenMembership`. `HiddenMembership` can be set only for Microsoft 365 groups when the groups are created. It can't be updated later. Other values of visibility can be updated after group creation.<br> If visibility value isn't specified during group creation on Microsoft Graph, a security group is created as `Private` by default, and the Microsoft 365 group is `Public`. Groups assignable to roles are always `Private`. To learn more, see [group visibility options](#group-visibility-options). <br><br>Returned by default. Nullable. |
+| visibility | String | Specifies the group join policy and group content visibility for groups. The possible values are: `Private`, `Public`, or `HiddenMembership`. `HiddenMembership` can be set only for Microsoft 365 groups when the groups are created. It can't be updated later. Other values of visibility can be updated after group creation.<br> If visibility value isn't specified during group creation on Microsoft Graph, a security group is created as `Private` by default, and the Microsoft 365 group is `Public`. Groups assignable to roles are always `Private`. To learn more, see [group visibility options](#group-visibility-options). <br><br>Returned by default. Nullable. |
 
 ### Group visibility options
 
@@ -244,6 +247,8 @@ The following JSON representation shows the resource type.
     "photos",
     "planner",
     "rejectedSenders",
+    "resourceBehaviorOptions",
+    "resourceProvisioningOptions",
     "settings",
     "sites",
     "threads",
@@ -400,6 +405,8 @@ The following JSON representation shows the resource type.
   "photos": [{ "@odata.type": "microsoft.graph.profilePhoto" }],
   "rejectedSenders": [{ "@odata.type": "microsoft.graph.directoryObject" }],
   "renewedDateTime": "String (timestamp)",
+  "resourceBehaviorOptions": ["String"],
+  "resourceProvisioningOptions": ["String"],
   "securityEnabled": "Boolean",
   "securityIdentifier": "String",
   "serviceProvisioningErrors": [

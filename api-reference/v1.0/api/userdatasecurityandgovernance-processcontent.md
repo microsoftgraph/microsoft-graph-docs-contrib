@@ -3,7 +3,7 @@ title: "userDataSecurityAndGovernance: processContent"
 toc.title: "userDataSecurityAndGovernance: processContent"
 description: "Process content against data protection policies in the context of the current, or specified, user."
 author: "kylemar"
-ms.date: 06/19/2025
+ms.date: 02/06/2026
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Process [content](../resources/processcontentrequest.md) against data protection policies in the context of the current, or specified, user.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -45,6 +45,7 @@ POST /users/{userId}/dataSecurityAndGovernance/processContent
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 | If-None-Match | Optional. This value is used by the API to determine if the policy state changed since the last call to the API. The value is from the Etag header returned from [protectionScopes compute](../api/userprotectionscopecontainer-compute.md). If newly computed Etag value does not match the value passsed in this header, protectionScopeState property returned will be "modified" and the app needs to refresh by calling [protectionScopes compute](../api/userprotectionscopecontainer-compute.md). |
+| Client-Request-Id  | String (GUID recommended). Optional. Unique identifier for this request, which is used for tracing and debugging in logs and support interactions. If an ID is not provided, one may be generated automatically. We recommend that you specify the ID to make tracing and debugging easier. The same ID that was sent in the request will be returned in the response. |
 
 ## Request body
 
@@ -79,9 +80,10 @@ The following example shows a request.
   "name": "userdatasecurityandgovernance.processcontent_1"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/me/dataSecurityAndGovernance/processContent
 Content-Type: application/json
+Client-Request-Id: 50dc805c-3af4-42d9-ad16-a746235cc736
 
 {
     "contentToProcess": {
@@ -164,14 +166,20 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.processContentResponse"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
+Client-Request-Id: 50dc805c-3af4-42d9-ad16-a746235cc736
 
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.processContentResponse",
   "protectionScopeState": "notModified",
-  "policyActions": [],
+  "policyActions": [
+    {
+      "@odata.type": "#microsoft.graph.dlpAction",
+      "action" : "restrictWebGrounding"
+    }
+  ],
   "processingErrors": []
 }
 ```
@@ -187,7 +195,7 @@ The following example shows a request.
   "name": "userdatasecurityandgovernance.processcontent_2"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/users/{5def8f26-aff8-4db6-a08c-0fcf8f1aa2ba}/dataSecurityAndGovernance/processContent
 Content-Type: application/json
 
@@ -270,7 +278,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.processContentResponse"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -299,7 +307,7 @@ The following example shows a request.
   "name": "userdatasecurityandgovernance.processcontent_3"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/users/{5def8f26-aff8-4db6-a08c-0fcf8f1aa2ba}/dataSecurityAndGovernance/processContent
 Content-Type: application/json
 
@@ -389,7 +397,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.processContentResponse"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

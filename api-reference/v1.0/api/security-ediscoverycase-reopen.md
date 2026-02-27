@@ -25,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "security_ediscoverycase_reopen" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoverycase-reopen-permissions.md)]
 
+[!INCLUDE [rbac-ediscovery-write](../includes/rbac-for-apis/rbac-ediscovery-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
@@ -32,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/reopen
 ```
 
@@ -61,7 +63,7 @@ If successful, this action returns a `204 No Content` response code.
   "name": "reopen_ediscoverycase"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/061b9a92-8926-4bd9-b41d-abf35edc7583/reopen
 ```
 
@@ -102,6 +104,6 @@ POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/061b9a92-89
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

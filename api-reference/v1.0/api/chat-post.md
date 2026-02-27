@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 Create a new [chat](../resources/chat.md) object.
 
-> **Note:** Only one one-on-one chat can exist between two members. If a one-on-one chat already exists, this operation will return the existing chat and not create a new one.
-> 
+> **Note:** Only one one-on-one chat can exist between two members. If a one-on-one chat already exists, this operation returns the existing chat and doesn't create a new one.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -48,7 +47,7 @@ The following table lists the properties that are required to create a chat obje
 |Property|Type|Description|
 |:---|:---|:---|
 |topic|(Optional) String|The title of the chat. The chat title can be provided only if the chat is of `group` type.|
-|chatType|[chatType](../resources/chat.md#chattype-values)| Specifies the type of chat. Possible values are: `group` and `oneOnOne`. |
+|chatType|[chatType](../resources/chat.md#chattype-values)| Specifies the type of chat. The possible values are: `group` and `oneOnOne`. |
 |members|[conversationMember](../resources/conversationmember.md) collection|List of conversation members that should be added. Every user who will participate in the chat, including the user who initiates the create request, must be specified in this list. Each member must be assigned a role of `owner` or `guest`. In-tenant guest users must be assigned the `guest` role. Out-of-tenant external users must be assigned with `owner` role.|
 
 ## Response
@@ -233,7 +232,10 @@ Content-Type: application/json
 
 ### Example 3: Create a one-on-one chat with installed apps
 
-The following example shows how to create a one-on-one chat with installed apps.
+The following example shows how to create a one-on-one [chat](../resources/chat.md) with installed apps.
+
+> [!NOTE]
+> This API supports both one-on-one and group chats; however, the documentation currently focuses on one-on-one scenarios. You can install apps during chat creation for either chat type.
 
 #### Request
 
@@ -317,7 +319,10 @@ Location: /chats('19:82fe7758-5bb3-4f0d-a43f-e555fd399c6f_bfb5bb25-3a8d-487d-982
 
 ### Example 4: Create a one-on-one chat with RSC-granted apps
 
-The following example shows how to create a one-on-one chat with installed apps that have resource-specific consent (RSC) permissions.
+The following example shows how to create a one-on-one [chat](../resources/chat.md) with installed apps that have resource-specific consent (RSC) permissions.
+
+> [!NOTE]
+> This API supports both one-on-one and group chats; however, the documentation currently focuses on one-on-one scenarios. You can install apps during chat creation for either chat type.
 
 #### Request
 

@@ -4,6 +4,7 @@ description: "After you register your app and onboard your cross-device experien
 ms.localizationpriority: high
 ms.subservice: "notifications"
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Integrate your Windows UWP app with the client-side SDK for user notifications (deprecated)

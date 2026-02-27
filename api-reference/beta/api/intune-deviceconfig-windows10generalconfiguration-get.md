@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
@@ -59,13 +59,13 @@ If successful, this method returns a `200 OK` response code and [windows10Genera
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 15912
@@ -104,73 +104,29 @@ Content-Length: 15912
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
-    "taskManagerBlockEndTask": true,
-    "energySaverOnBatteryThresholdPercentage": 7,
-    "energySaverPluggedInThresholdPercentage": 7,
-    "powerLidCloseActionOnBattery": "noAction",
-    "powerLidCloseActionPluggedIn": "noAction",
-    "powerButtonActionOnBattery": "noAction",
-    "powerButtonActionPluggedIn": "noAction",
-    "powerSleepButtonActionOnBattery": "noAction",
-    "powerSleepButtonActionPluggedIn": "noAction",
-    "powerHybridSleepOnBattery": "enabled",
-    "powerHybridSleepPluggedIn": "enabled",
+    "networkProxyApplySettingsDeviceWide": true,
+    "networkProxyDisableAutoDetect": true,
+    "networkProxyAutomaticConfigurationUrl": "https://example.com/networkProxyAutomaticConfigurationUrl/",
+    "networkProxyServer": {
+      "@odata.type": "microsoft.graph.windows10NetworkProxyServer",
+      "address": "Address value",
+      "exceptions": [
+        "Exceptions value"
+      ],
+      "useForLocalAddresses": true
+    },
+    "personalizationDesktopImageUrl": "https://example.com/personalizationDesktopImageUrl/",
+    "personalizationLockScreenImageUrl": "https://example.com/personalizationLockScreenImageUrl/",
+    "microsoftAccountSignInAssistantSettings": "disabled",
     "windows10AppsForceUpdateSchedule": {
       "@odata.type": "microsoft.graph.windows10AppsForceUpdateSchedule",
       "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
       "recurrence": "daily",
       "runImmediatelyIfAfterStartDateTime": true
     },
-    "enableAutomaticRedeployment": true,
-    "microsoftAccountSignInAssistantSettings": "disabled",
     "authenticationAllowSecondaryDevice": true,
     "authenticationWebSignIn": "enabled",
     "authenticationPreferredAzureADTenantDomainName": "Authentication Preferred Azure ADTenant Domain Name value",
-    "cryptographyAllowFipsAlgorithmPolicy": true,
-    "displayAppListWithGdiDPIScalingTurnedOn": [
-      "Display App List With Gdi DPIScaling Turned On value"
-    ],
-    "displayAppListWithGdiDPIScalingTurnedOff": [
-      "Display App List With Gdi DPIScaling Turned Off value"
-    ],
-    "enterpriseCloudPrintDiscoveryEndPoint": "Enterprise Cloud Print Discovery End Point value",
-    "enterpriseCloudPrintOAuthAuthority": "Enterprise Cloud Print OAuth Authority value",
-    "enterpriseCloudPrintOAuthClientIdentifier": "Enterprise Cloud Print OAuth Client Identifier value",
-    "enterpriseCloudPrintResourceIdentifier": "Enterprise Cloud Print Resource Identifier value",
-    "enterpriseCloudPrintDiscoveryMaxLimit": 5,
-    "enterpriseCloudPrintMopriaDiscoveryResourceIdentifier": "Enterprise Cloud Print Mopria Discovery Resource Identifier value",
-    "experienceDoNotSyncBrowserSettings": "blockedWithUserOverride",
-    "messagingBlockSync": true,
-    "messagingBlockMMS": true,
-    "messagingBlockRichCommunicationServices": true,
-    "printerNames": [
-      "Printer Names value"
-    ],
-    "printerDefaultName": "Printer Default Name value",
-    "printerBlockAddition": true,
-    "searchBlockDiacritics": true,
-    "searchDisableAutoLanguageDetection": true,
-    "searchDisableIndexingEncryptedItems": true,
-    "searchEnableRemoteQueries": true,
-    "searchDisableUseLocation": true,
-    "searchDisableLocation": true,
-    "searchDisableIndexerBackoff": true,
-    "searchDisableIndexingRemovableDrive": true,
-    "searchEnableAutomaticIndexSizeManangement": true,
-    "searchBlockWebResults": true,
-    "findMyFiles": "enabled",
-    "securityBlockAzureADJoinedDevicesAutoEncryption": true,
-    "diagnosticsDataSubmissionMode": "none",
-    "oneDriveDisableFileSync": true,
-    "systemTelemetryProxyServer": "System Telemetry Proxy Server value",
-    "edgeTelemetryForMicrosoft365Analytics": "intranet",
-    "inkWorkspaceAccess": "enabled",
-    "inkWorkspaceAccessState": "blocked",
-    "inkWorkspaceBlockSuggestedApps": true,
-    "smartScreenEnableAppInstallControl": true,
-    "smartScreenAppInstallControl": "anywhere",
-    "personalizationDesktopImageUrl": "https://example.com/personalizationDesktopImageUrl/",
-    "personalizationLockScreenImageUrl": "https://example.com/personalizationLockScreenImageUrl/",
     "bluetoothAllowedServices": [
       "Bluetooth Allowed Services value"
     ],
@@ -221,6 +177,8 @@ Content-Length: 15912
     "cellularBlockVpn": true,
     "cellularBlockVpnWhenRoaming": true,
     "cellularData": "required",
+    "enableAutomaticRedeployment": true,
+    "cryptographyAllowFipsAlgorithmPolicy": true,
     "defenderRequireRealTimeMonitoring": true,
     "defenderRequireBehaviorMonitoring": true,
     "defenderRequireNetworkInspectionSystem": true,
@@ -268,12 +226,28 @@ Content-Length: 15912
     "defenderProcessesToExclude": [
       "Defender Processes To Exclude value"
     ],
+    "displayAppListWithGdiDPIScalingTurnedOn": [
+      "Display App List With Gdi DPIScaling Turned On value"
+    ],
+    "displayAppListWithGdiDPIScalingTurnedOff": [
+      "Display App List With Gdi DPIScaling Turned Off value"
+    ],
+    "enterpriseCloudPrintDiscoveryEndPoint": "Enterprise Cloud Print Discovery End Point value",
+    "enterpriseCloudPrintOAuthAuthority": "Enterprise Cloud Print OAuth Authority value",
+    "enterpriseCloudPrintOAuthClientIdentifier": "Enterprise Cloud Print OAuth Client Identifier value",
+    "enterpriseCloudPrintResourceIdentifier": "Enterprise Cloud Print Resource Identifier value",
+    "enterpriseCloudPrintDiscoveryMaxLimit": 5,
+    "enterpriseCloudPrintMopriaDiscoveryResourceIdentifier": "Enterprise Cloud Print Mopria Discovery Resource Identifier value",
+    "experienceDoNotSyncBrowserSettings": "blockedWithUserOverride",
     "lockScreenAllowTimeoutConfiguration": true,
     "lockScreenBlockActionCenterNotifications": true,
     "lockScreenBlockCortana": true,
     "lockScreenBlockToastNotifications": true,
     "lockScreenTimeoutInSeconds": 10,
     "lockScreenActivateAppsWithVoice": "enabled",
+    "messagingBlockSync": true,
+    "messagingBlockMMS": true,
+    "messagingBlockRichCommunicationServices": true,
     "passwordBlockSimple": true,
     "passwordExpirationDays": 6,
     "passwordMinimumLength": 5,
@@ -285,6 +259,21 @@ Content-Length: 15912
     "passwordRequiredType": "alphanumeric",
     "passwordSignInFailureCountBeforeFactoryReset": 12,
     "passwordMinimumAgeInDays": 8,
+    "energySaverOnBatteryThresholdPercentage": 7,
+    "energySaverPluggedInThresholdPercentage": 7,
+    "powerLidCloseActionOnBattery": "noAction",
+    "powerLidCloseActionPluggedIn": "noAction",
+    "powerButtonActionOnBattery": "noAction",
+    "powerButtonActionPluggedIn": "noAction",
+    "powerSleepButtonActionOnBattery": "noAction",
+    "powerSleepButtonActionPluggedIn": "noAction",
+    "powerHybridSleepOnBattery": "enabled",
+    "powerHybridSleepPluggedIn": "enabled",
+    "printerNames": [
+      "Printer Names value"
+    ],
+    "printerDefaultName": "Printer Default Name value",
+    "printerBlockAddition": true,
     "privacyAdvertisingId": "blocked",
     "privacyAutoAcceptPairingAndConsentPrompts": true,
     "privacyDisableLaunchExperience": true,
@@ -292,6 +281,32 @@ Content-Length: 15912
     "privacyBlockPublishUserActivities": true,
     "privacyBlockActivityFeed": true,
     "activateAppsWithVoice": "enabled",
+    "searchBlockDiacritics": true,
+    "searchDisableAutoLanguageDetection": true,
+    "searchDisableIndexingEncryptedItems": true,
+    "searchEnableRemoteQueries": true,
+    "searchDisableUseLocation": true,
+    "searchDisableLocation": true,
+    "searchDisableIndexerBackoff": true,
+    "searchDisableIndexingRemovableDrive": true,
+    "searchEnableAutomaticIndexSizeManangement": true,
+    "searchBlockWebResults": true,
+    "findMyFiles": "enabled",
+    "securityBlockAzureADJoinedDevicesAutoEncryption": true,
+    "settingsBlockSettingsApp": true,
+    "settingsBlockSystemPage": true,
+    "settingsBlockDevicesPage": true,
+    "settingsBlockNetworkInternetPage": true,
+    "settingsBlockPersonalizationPage": true,
+    "settingsBlockAccountsPage": true,
+    "settingsBlockTimeLanguagePage": true,
+    "settingsBlockEaseOfAccessPage": true,
+    "settingsBlockPrivacyPage": true,
+    "settingsBlockUpdateSecurityPage": true,
+    "settingsBlockAppsPage": true,
+    "settingsBlockGamingPage": true,
+    "smartScreenEnableAppInstallControl": true,
+    "smartScreenAppInstallControl": "anywhere",
     "startBlockUnpinningAppsFromTaskbar": true,
     "startMenuAppListVisibility": "collapse",
     "startMenuHideChangeAccountSettings": true,
@@ -320,18 +335,14 @@ Content-Length: 15912
     "startMenuPinnedFolderPictures": "hide",
     "startMenuPinnedFolderSettings": "hide",
     "startMenuPinnedFolderVideos": "hide",
-    "settingsBlockSettingsApp": true,
-    "settingsBlockSystemPage": true,
-    "settingsBlockDevicesPage": true,
-    "settingsBlockNetworkInternetPage": true,
-    "settingsBlockPersonalizationPage": true,
-    "settingsBlockAccountsPage": true,
-    "settingsBlockTimeLanguagePage": true,
-    "settingsBlockEaseOfAccessPage": true,
-    "settingsBlockPrivacyPage": true,
-    "settingsBlockUpdateSecurityPage": true,
-    "settingsBlockAppsPage": true,
-    "settingsBlockGamingPage": true,
+    "diagnosticsDataSubmissionMode": "none",
+    "oneDriveDisableFileSync": true,
+    "systemTelemetryProxyServer": "System Telemetry Proxy Server value",
+    "edgeTelemetryForMicrosoft365Analytics": "intranet",
+    "taskManagerBlockEndTask": true,
+    "inkWorkspaceAccess": "enabled",
+    "inkWorkspaceAccessState": "blocked",
+    "inkWorkspaceBlockSuggestedApps": true,
     "windowsSpotlightBlockConsumerSpecificFeatures": true,
     "windowsSpotlightBlocked": true,
     "windowsSpotlightBlockOnActionCenter": true,
@@ -340,17 +351,6 @@ Content-Length: 15912
     "windowsSpotlightBlockWelcomeExperience": true,
     "windowsSpotlightBlockWindowsTips": true,
     "windowsSpotlightConfigureOnLockScreen": "disabled",
-    "networkProxyApplySettingsDeviceWide": true,
-    "networkProxyDisableAutoDetect": true,
-    "networkProxyAutomaticConfigurationUrl": "https://example.com/networkProxyAutomaticConfigurationUrl/",
-    "networkProxyServer": {
-      "@odata.type": "microsoft.graph.windows10NetworkProxyServer",
-      "address": "Address value",
-      "exceptions": [
-        "Exceptions value"
-      ],
-      "useForLocalAddresses": true
-    },
     "accountsBlockAddingNonMicrosoftAccountEmail": true,
     "antiTheftModeBlocked": true,
     "bluetoothBlocked": true,

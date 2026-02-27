@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Retrieve the list of [channels](../resources/channel.md) in this [team](../resources/team.md).
 
->**Note:** Guest users can't see private or shared channels that they aren't members of in the response for this API.
+>**Note:** Teams members can't see private or shared channels that they aren't members of in the response for this API.
 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -135,6 +135,7 @@ Content-type: application/json
       "displayName": "General",
       "description": "AutoTestTeam_20210311_150740.2550_fim3udfdjen9",
       "membershipType": "standard",
+      "layoutType": null,
       "email": "someperson@microsoft.com",
       "moderationSettings": null,
       "isArchived": false
@@ -142,6 +143,9 @@ Content-type: application/json
   ]
 }
 ```
+
+> [!NOTE]
+> This API has a [known issue](https://microsoftgraph.visualstudio.com/Known%20Issues/_workitems/edit/40502/) related to listing channels. The **layoutType** property returns `null` when listing channels. To get the layout type of a specific channel, use the [Get channel](../api/channel-get.md) API. Full support for **layoutType** in list operations is planned for a future release.
 
 ### Example 2: List all private channels
 
@@ -214,6 +218,7 @@ Content-type: application/json
       "displayName": "General",
       "description": "test private team",
       "membershipType": "private",
+      "layoutType": null,
       "isArchived": false,
     }
   ]
@@ -296,6 +301,7 @@ Content-length: 262
             "isFavoriteByDefault": null,
             "webUrl": "https://teams.microsoft.com/l/channel/19%3ALpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81%40thread.tacv2/shared%20channel-01?groupId=6a720ba5-7373-463b-bc9f-4cd04b5c6742&tenantId=df81db53-c7e2-418a-8803-0e68d4b88607",
             "membershipType": "shared",
+            "layoutType": null,
             "email": "someperson@microsoft.com",
             "isArchived": false,
             "moderationSettings": null

@@ -591,6 +591,66 @@ Content-type: application/json
 }
 ```
 
+### Example 6: Get a group chat in migration mode
+
+The following example shows how to get a group chat in migration mode.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_group_chat_migration_mode_e6",
+  "sampleKeys": ["19:b8577894a63548969c5c92bb9c80c5e1@thread.v2"]
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/chats/19:b8577894a63548969c5c92bb9c80c5e1@thread.v2
+```
+
+#### Response
+The following example shows the response when the chat is in migration mode.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chat"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats/$entity",
+  "id": "19:b8577894a63548969c5c92bb9c80c5e1@thread.v2",
+  "topic": "test group 1",
+  "createdDateTime": "2021-04-06T19:49:52.431Z",
+  "lastUpdatedDateTime": "2021-04-06T19:54:04.306Z",
+  "chatType": "group",
+  "webUrl": "https://teams.microsoft.com/l/chat/19%3Ab8577894a63548969c5c92bb9c80c5e1@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+  "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
+  "onlineMeetingInfo": null,
+  "createdBy": {
+    "application": null,
+    "device": null,
+    "user": {
+      "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+      "id": "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
+      "displayName": null,
+      "userIdentityType": "aadUser",
+      "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
+    }
+  },
+  "viewpoint": {
+    "isHidden": true,
+    "lastMessageReadDateTime": "2021-05-06T23:55:07.191Z"
+  },
+  "isHiddenForAllMembers": false,
+  "migrationMode": "InProgress",
+  "originalCreatedDateTime": "2022-05-28T10:00:00+00:00"
+}
+```
+
 ## Related content
 
 * [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

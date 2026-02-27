@@ -4,6 +4,7 @@ description: "Consider when to use the calendar API event resource or the cloud 
 author: "angelgolfer-ms"
 ms.localizationpriority: high
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Choose an API in Microsoft Graph to create and join online meetings

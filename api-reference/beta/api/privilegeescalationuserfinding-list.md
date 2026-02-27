@@ -31,7 +31,7 @@ List AWS users with privilege escalation:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.privilegeEscalationUserFinding
 ```
 
@@ -40,7 +40,7 @@ List GCP users with privilege escalation:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.privilegeEscalationUserFinding
 ```
 
@@ -70,7 +70,7 @@ The following example shows a request.
   "name": "list_privilegeescalationuserfinding"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.privilegeEscalationUserFinding
 ```
 
@@ -113,7 +113,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.privilegeEscalationUserFinding)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

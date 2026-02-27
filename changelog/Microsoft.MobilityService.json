@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "74822189-e8aa-4771-a4e0-47479b51dfe9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mobileAppManagementPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [mobileAppManagementPolicy](https://learn.microsoft.com/en-us/graph/api/resources/mobileAppManagementPolicy?view=graph-rest-beta) resource.",
+          "Target": "mobileAppManagementPolicy"
+        },
+        {
+          "Id": "74822189-e8aa-4771-a4e0-47479b51dfe9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mobileDeviceManagementPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [mobileDeviceManagementPolicy](https://learn.microsoft.com/en-us/graph/api/resources/mobileDeviceManagementPolicy?view=graph-rest-beta) resource.",
+          "Target": "mobileDeviceManagementPolicy"
+        }
+      ],
+      "Id": "74822189-e8aa-4771-a4e0-47479b51dfe9",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-18T22:31:35.6882835Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "9ebdf457-11ea-493d-8dfb-ce12f80664bb",
           "ApiChange": "Resource",
           "ChangedApiName": "mobilityManagementPolicy",
@@ -99,6 +125,24 @@
       "CreatedDateTime": "2020-05-12T00:00:00",
       "WorkloadArea": "Identity and access",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4f6e4485-b685-4232-abb6-00b468a9a7b0",
+          "ApiChange": "Property",
+          "ChangedApiName": "isMdmEnrollmentDuringRegistrationDisabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isMdmEnrollmentDuringRegistrationDisabled** property to the [mobileDeviceManagementPolicy](https://learn.microsoft.com/en-us/graph/api/resources/mobileDeviceManagementPolicy?view=graph-rest-beta) resource.",
+          "Target": "mobileDeviceManagementPolicy"
+        }
+      ],
+      "Id": "4f6e4485-b685-4232-abb6-00b468a9a7b0",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-18T20:34:29.7938921Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     }
   ]
 }

@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/identities/sensors/regenerateDeploymentAccessKey
 ```
 
@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "sensorthis.regeneratedeploymentaccesskey"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/identities/sensors/regenerateDeploymentAccessKey
 ```
 
@@ -104,7 +104,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.deploymentAccessKeyType"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 POST /identityGovernance/accessReviews/historyDefinitions
 ```
 
@@ -80,7 +80,7 @@ The following example shows how to create an access review history definition sc
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/historyDefinitions
 Content-Type: application/json
 
@@ -152,7 +152,7 @@ Content-Type: application/json
 }
 -->
 
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

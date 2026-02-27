@@ -51,7 +51,7 @@ To update the sign-in preferences (system-preferred MFA) for a user:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /users/{id | userPrincipalName}/authentication/signInPreferences
 ```
 
@@ -60,7 +60,7 @@ To update the per-user multifactor authentication state for the signed-in user:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /me/authentication/requirements
 ```
 
@@ -71,7 +71,7 @@ To update the per-user multifactor authentication state for a user:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /users/{id | userPrincipalName}/authentication/requirements
 ```
 
@@ -108,7 +108,7 @@ The following example shows a request.
   "name": "update_authentication_signInPreferences"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/users/071cc716-8147-4397-a5ba-b2105951cc0b/authentication/signInPreferences
 Content-Type: application/json
 
@@ -169,7 +169,7 @@ The following example shows a request.
   "name": "update_authentication_strongAuthenticationRequirements"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/users/071cc716-8147-4397-a5ba-b2105951cc0b/authentication/requirements
 Content-Type: application/json
 

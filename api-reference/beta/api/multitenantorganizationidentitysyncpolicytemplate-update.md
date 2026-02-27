@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /policies/crossTenantAccessPolicy/templates/multiTenantOrganizationIdentitySynchronization
 ```
 
@@ -67,7 +67,7 @@ The following example updates the user synchronization settings of the template.
   "name": "update_multitenantorganizationidentitysyncpolicytemplate"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/templates/multiTenantOrganizationIdentitySynchronization
 Content-Type: application/json
 
@@ -116,7 +116,7 @@ Content-Type: application/json
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

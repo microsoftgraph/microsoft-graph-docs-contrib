@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 03/14/2024
+ms.date: 08/01/2024
 ---
 
 # report resource type
@@ -19,7 +19,7 @@ Enrollment failure reports.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|content|Stream|Not yet documented|
+|content|Stream|The http content that has the data|
 
 ## Relationships
 None

@@ -118,18 +118,18 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#employeeExperience/communities",
     "value": [
         {
-            "id": "eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIxOTEzMjYyODk5MjAifQ",
+            "id": "eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIxOTAzMzYyMTIyMTAifQ",
             "displayName": "All Company",
             "description": "This is the default group for everyone in the network",
             "privacy": "public",
-            "groupId": "195d9ecd-f80e-4bab-af95-176eba253dfa"
+            "groupId": "195d9ecd-f80e-4bab-af95-176eba253dff"
         },
         {
-            "id": "eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIxOTE0NzY2Mzc2OTYifQ",
+            "id": "eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIxOTAzNDY2Mzc2OTYifQ",
             "displayName": "TestCommunity5",
             "description": "Test community created via API",
             "privacy": "public",
-            "groupId": "0bed8b86-5026-4a93-ac7d-56750cc099f1"
+            "groupId": "0bed8b86-5026-4a93-ac7d-56750cc099aa"
         }
     ]
 }
@@ -202,18 +202,18 @@ Content-Type: application/json
     "@odata.nextLink": "https://graph.microsoft.com/beta/employeeExperience/communities?$skiptoken=UVWlYzI7VjE7MTE2NDUzNDU3OTIwOzIwO0RlbW8tdGVzdC01OztEaXNwbGF5TmFtZTtmYWXYZTs",
     "value": [
         {
-            "id": "eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIxOTEzMjYyODk5MjAifQ",
+            "id": "eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIxOTAzMzYyMTIyMTAifQ",
             "displayName": "All Company",
             "description": "This is the default group for everyone in the network",
             "privacy": "public",
-            "groupId": "195d9ecd-f80e-4bab-af95-176eba253dfa"
+            "groupId": "195d9ecd-f80e-4bab-af95-176eba253dff"
         },
         {
-            "id": "eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIxOTE0NzY2Mzc2OTYifQ",
+            "id": "eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIxOTAzNDY2Mzc2OTYifQ",
             "displayName": "TestCommunity5",
             "description": "Test community created via API",
             "privacy": "public",
-            "groupId": "0bed8b86-5026-4a93-ac7d-56750cc099f1"
+            "groupId": "0bed8b86-5026-4a93-ac7d-56750cc099aa"
         }
     ]
 }

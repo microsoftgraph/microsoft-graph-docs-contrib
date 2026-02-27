@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 PATCH /employeeExperience/learningProviders/{registrationId}/learningCourseActivities/{learningCourseActivityId}
 ```
 
@@ -62,7 +62,7 @@ The following table lists the properties you can change for a self-initiated lea
 |:---|:---|:---|
 |completedDateTime|DateTimeOffset|Date and time when the assignment was completed. Optional.|
 |completionPercentage|Int32|The percentage of the course completed by the user. If a value is provided, it must be between `0` and `100` (inclusive). Optional.|
-|status|courseStatus|The status of the course activity. Possible values are: `inProgress`, `completed`. Required.|
+|status|courseStatus|The status of the course activity. The possible values are: `inProgress`, `completed`. Required.|
 |startedDateTime|DateTimeOffset|The date and time when the learner started the self-initiated course.|
 
 
@@ -103,7 +103,7 @@ The following example shows a request.
   "name": "update_assigned_learning_courseactivity"
 }-->
 
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/employeeExperience/learningProviders/01e8f81b-3060-4dec-acf0-0389665a0a38/learningCourseActivities/8ba2228a-e020-11ec-9d64-0242ac120003
 Content-Type: application/json
 
@@ -165,7 +165,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -181,7 +181,7 @@ The following example shows a request.
   "name": "update_selfinitiated_learning_courseactivity"
 }-->
 
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/employeeExperience/learningProviders/01e8f81b-3060-4dec-acf0-0389665a0a38/learningCourseActivities/8ba2228a-e020-11ec-9d64-0242ac120003
 Content-Type: application/json
 
@@ -232,6 +232,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

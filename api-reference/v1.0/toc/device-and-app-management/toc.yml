@@ -81,10 +81,18 @@ items:
       href: ../../api/cloudpc-reboot.md
     - name: Rename
       href: ../../api/cloudpc-rename.md
-    - name: Troubleshoot
-      href: ../../api/cloudpc-troubleshoot.md
+    - name: Reprovision
+      href: ../../api/cloudpc-reprovision.md
+    - name: Resize
+      href: ../../api/cloudpc-resize.md
     - name: Restore
       href: ../../api/cloudpc-restore.md
+    - name: Troubleshoot
+      href: ../../api/cloudpc-troubleshoot.md
+    - name: List for user
+      href: ../../api/user-list-cloudpcs.md
+    - name: Retrieve launch detail
+      href: ../../api/cloudpc-retrievecloudpclaunchdetail.md
   - name: Cloud PC audit event
     items:
     - name: Cloud PC audit event
@@ -149,6 +157,12 @@ items:
       href: ../../api/cloudpcprovisioningpolicy-delete.md
     - name: Assign
       href: ../../api/cloudpcprovisioningpolicy-assign.md
+  - name: Cloud PC report
+    items:
+    - name: Cloud PC report
+      href: ../../resources/cloudpcreport.md
+    - name: Retrieve Cloud PC recommendation reports
+      href: ../../api/cloudpcreport-retrievecloudpcrecommendationreports.md
   - name: Cloud PC user setting
     items:
     - name: Cloud PC user setting
@@ -963,6 +977,8 @@ items:
         href: ../../api/intune-apps-win32lobapp-delete.md
       - name: Update win32LobApp
         href: ../../api/intune-apps-win32lobapp-update.md
+      - name: enableApplicableArchitectures action
+        href: ../../api/intune-apps-win32lobapp-enableapplicablearchitectures.md
     - name: Windows AppX
       items:
       - name: Windows AppX
@@ -1227,6 +1243,8 @@ items:
         href: ../../api/intune-enrollment-windowsautopilotdeviceidentity-unassignuserfromdevice.md
       - name: updateDeviceProperties action
         href: ../../api/intune-enrollment-windowsautopilotdeviceidentity-updatedeviceproperties.md
+      - name: deleteDevices action
+        href: ../../api/intune-enrollment-windowsautopilotdeviceidentity-deletedevices.md
     - name: Complex types
       items:
       - name: Imported Windows Autopilot device identity state

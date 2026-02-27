@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /teams/{team-id}/incomingChannels
 ```
 
@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "list_channel"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/incomingChannels
 ```
 
@@ -108,7 +108,7 @@ The following example shows the response.
   "isCollection": true
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -121,9 +121,12 @@ Content-Type: application/json
       "displayName": "Contoso Sales channel",
       "description": "channel created in Contoso to be shared with other teams/tenants.",
       "membershipType": "shared",
+      "layoutType": null,
       "tenantId": "b3246f44-b4gb-4627-96c6-25b18fa2c910"
     }
   ]
 }
 ```
 
+> [!NOTE]
+> This API has a [known issue](https://microsoftgraph.visualstudio.com/Known%20Issues/_workitems/edit/40502/) related to listing channels. The **layoutType** property returns `null` when listing channels. To get the layout type of a specific channel, use the [Get channel](../api/channel-get.md) API. Full support for **layoutType** in list operations is planned for a future release.

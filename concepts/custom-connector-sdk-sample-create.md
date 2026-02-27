@@ -7,6 +7,7 @@ doc_type: conceptualPageType
 ms.subservice: search
 description: "Learn how to use the Copilot connectors SDK to build a custom connector in C#."
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Build a custom Copilot connector in C#

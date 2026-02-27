@@ -40,6 +40,7 @@ None.
 |tls|[microsoft.graph.networkaccess.tlsTermination](../resources/networkaccess-tlstermination.md)|A container for tenant-level TLS inspection settings for Global Secure Access. |
 |tlsInspectionPolicies|[microsoft.graph.networkaccess.tlsInspectionPolicy](../resources/networkaccess-tlsinspectionpolicy.md) collection|Allows you to configure TLS termination for your organization's network traffic through Global Secure Access. |
 
+
 ## JSON representation
 The following JSON representation shows the resource type.
 <!-- {

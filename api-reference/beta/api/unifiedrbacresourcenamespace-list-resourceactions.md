@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /roleManagement/directory/resourceNamespaces/{unifiedRbacResourceNamespaceId}/resourceActions
 ```
 
@@ -68,7 +68,7 @@ This method returns a maximum of 100 actions. If there are more actions, you can
   "sampleKeys": ["microsoft.directory"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces/microsoft.directory/resourceActions
 ```
 
@@ -110,7 +110,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces
   "@odata.type": "Collection(microsoft.graph.unifiedRbacResourceAction)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -159,7 +159,7 @@ The following example lists the actions for the resource namespace with the iden
   "sampleKeys": ["microsoft.insights"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces/microsoft.insights/resourceActions
 ```
 
@@ -200,7 +200,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces
   "@odata.type": "Collection(microsoft.graph.unifiedRbacResourceAction)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -268,7 +268,7 @@ The following example shows a request.
   "sampleKeys": ["microsoft.directory"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces/microsoft.directory/resourceActions?$filter=isPrivileged eq true
 ```
 
@@ -314,7 +314,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.unifiedRbacResourceAction)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

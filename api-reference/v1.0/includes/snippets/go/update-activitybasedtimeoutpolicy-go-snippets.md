@@ -16,14 +16,8 @@ import (
 )
 
 requestBody := graphmodels.NewActivityBasedTimeoutPolicy()
-definition := []string {
-	"definition-value",
-}
-requestBody.SetDefinition(definition)
-displayName := "displayName-value"
+displayName := "Idle timeout for all apps"
 requestBody.SetDisplayName(&displayName) 
-isOrganizationDefault := true
-requestBody.SetIsOrganizationDefault(&isOrganizationDefault) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 activityBasedTimeoutPolicies, err := graphClient.Policies().ActivityBasedTimeoutPolicies().ByActivityBasedTimeoutPolicyId("activityBasedTimeoutPolicy-id").Patch(context.Background(), requestBody, nil)

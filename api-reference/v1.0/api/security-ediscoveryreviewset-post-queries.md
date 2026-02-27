@@ -23,13 +23,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "security_ediscoveryreviewset_post_queries" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoveryreviewset-post-queries-permissions.md)]
 
+[!INCLUDE [rbac-ediscovery-reviewset](../includes/rbac-for-apis/rbac-ediscovery-reviewset-tag-apis.md)]
+
 ## HTTP request
 
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryReviewSetId}/queries
 ```
 
@@ -66,7 +68,7 @@ The following example shows a request.
   "name": "create_ediscoveryreviewsetquery_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/58399dff-cebe-478f-b1af-d3227f1fd645/reviewSets/273f11a1-17aa-419c-981d-ff10d33e420f/queries
 Content-Type: application/json
 
@@ -115,7 +117,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.ediscoveryReviewSetQuery"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

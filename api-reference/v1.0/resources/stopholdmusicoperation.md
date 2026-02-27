@@ -21,7 +21,7 @@ Represents the status of a [stopHoldMusic](../api/participant-stopholdmusic.md) 
 | clientContext                  | String                      | Inherited from **commsOperation**. Unique client context string. Can have a maximum of 256 characters.                                                                               |
 | id                             | String                      | Inherited from **commsOperation**. The server operation ID. Read-only.                                                                                            |
 | resultInfo                     | [resultInfo](resultinfo.md) | Inherited from **commsOperation**. The result information.  Read-only.                                                                                            |
-| status                         | String                      | Inherited from **commsOperation**. Possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.                                                 |
+| status                         | String                      | Inherited from **commsOperation**. The possible values are: `notStarted`, `running`, `completed`, `failed`. Read-only.                                                 |
 
 ## JSON representation
 

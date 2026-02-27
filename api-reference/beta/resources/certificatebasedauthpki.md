@@ -1,11 +1,12 @@
 ---
 title: "certificateBasedAuthPki resource type"
 description: "The collection of public key infrastructure instances for the certificate based authentication."
-author: "suawat"
+author: "vimrang"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
 ms.date: 11/15/2024
+toc.title: Certificate-based auth PKI
 ---
 
 # certificateBasedAuthPki resource type
@@ -14,11 +15,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The collection of public key infrastructure (PKI) instances for the [certificate-based authentication method](../resources/x509certificateauthenticationmethodconfiguration.md). The [certificate-based authentication method](../resources/x509certificateauthenticationmethodconfiguration.md) must be enabled in the tenant for you to manage these PKI instances.
-
+Represents a collection of public key infrastructure (PKI) instances for the [certificate-based authentication method](../resources/x509certificateauthenticationmethodconfiguration.md). You must enable the certificate-based authentication method in the tenant to manage these PKI instances.
 
 Inherits from [directoryObject](../resources/directoryobject.md).
 
+For more information, see [Set up Microsoft Entra certificate-based authentication](/entra/identity/authentication/how-to-certificate-based-authentication).
 
 ## Methods
 |Method|Return type|Description|

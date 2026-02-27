@@ -31,7 +31,7 @@ List AWS super serverless functions:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.superServerlessFunctionFinding
 ```
 
@@ -40,7 +40,7 @@ List AWS super serverless functions:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.superServerlessFunctionFinding
 ```
 
@@ -49,7 +49,7 @@ List GCP super serverless functions:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.superServerlessFunctionFinding
 ```
 
@@ -78,7 +78,7 @@ The following example shows a request.
   "name": "list_superserverlessfunctionfinding"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.superServerlessFunctionFinding
 ```
 
@@ -121,7 +121,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.superServerlessFunctionFinding)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -1,5 +1,5 @@
 ---
-title: "Update governanceRoleSetting"
+title: "Update governanceRoleSetting (deprecated)"
 description: "Update the properties of governanceRoleSetting."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -9,7 +9,7 @@ ROBOTS: NOINDEX
 ms.date: 03/08/2024
 ---
 
-# Update governanceRoleSetting
+# Update governanceRoleSetting (deprecated)
 
 Namespace: microsoft.graph
 

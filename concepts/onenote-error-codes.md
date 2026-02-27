@@ -5,6 +5,7 @@ author: "jewan-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "onenote"
 ms.date: 11/07/2024
+ms.topic: troubleshooting-error-codes
 ---
 
 # Error codes for the OneNote API in Microsoft Graph
@@ -334,6 +335,9 @@ For more information, see [Microsoft Graph service-specific throttling guidance]
 ### 20168
 The video source specified in the request isn't supported. See [Supported video sites](onenote-images-files.md#adding-videos) for the current list.
 
+### 20258
+Sync of the specified section in the request isn't supported. This might be related to labeled sections, which are not supported yet.
+
 ### 20266
 The number of maximum sections is exceeded for this request. To get pages for accounts with a high number of sections, we recommend getting pages for one section at a time (use the [List pages](/graph/api/section-list-pages) API).
 
@@ -353,7 +357,7 @@ Resource consumption is too high for the request. Either the target user account
 The user account was suspended.
 
 ### 30105
-The user's personal OneDrive for Business site isn't provisioned, which is required to access notebooks. The OneNote service will provision the site now. This process may take several minutes.
+The user's personal OneDrive for Business site isn't provisioned, which is required to access notebooks. The OneNote service will provision the site now. This process might take several minutes.
 
 ### 30106
 OneDrive for Business is being provisioned for the user.

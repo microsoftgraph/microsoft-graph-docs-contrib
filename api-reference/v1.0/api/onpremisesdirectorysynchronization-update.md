@@ -2,7 +2,7 @@
 title: "Update onPremisesDirectorySynchronization"
 description: "Update the properties of an onPremisesDirectorySynchronization object."
 author: dhanyahk
-ms.reviewer: sgupta, abhishek.badjatya, dhanyahk
+ms.reviewer: damaiya,vifernan,awsdev
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /directory/onPremisesSynchronization/{id}
 ```
 
@@ -70,7 +70,7 @@ The following example shows a request.
   "name": "update_onpremisesdirectorysynchronization"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/directory/onPremisesSynchronization/{id}
 Content-Type: application/json
 Content-length: 293
@@ -126,6 +126,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

@@ -31,7 +31,7 @@ List AWS inactive users:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.inactiveUserFinding
 ```
 
@@ -40,7 +40,7 @@ List Azure inactive groups:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveUserFinding
 ```
 
@@ -49,7 +49,7 @@ List GCP inactive groups:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inactiveUserFinding
 ```
 
@@ -79,7 +79,7 @@ The following example shows a request to retrieve AWS inactive users.
   "name": "list_inactiveuserfinding"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveUserFinding
 ```
 
@@ -123,7 +123,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

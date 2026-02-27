@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityProtection/riskyUsers/{riskyUserId}/history
 ```
 
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "get_riskyuserhistoryitem_2"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/{riskyUserId}/history
 ```
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskyUsers/{riskyUserId}
   "@odata.type": "collection(microsoft.graph.riskyUserHistoryItem)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

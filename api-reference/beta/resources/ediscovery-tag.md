@@ -14,6 +14,8 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [ediscovery-deprecation](../includes/ediscovery-subnamespace-deprecation.md)]
+
 Represents an eDiscovery tag, which is used to mark documents during review to separate responsive and non-responsive content.
 
 Inherits from [entity](../resources/entity.md).
@@ -34,7 +36,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|childSelectability|[microsoft.graph.ediscovery.childSelectability](../resources/ediscovery-tag.md#childselectability-values)|Indicates whether a single or multiple child tags can be associated with a document. Possible values are: `One`, `Many`.  This value controls whether the UX presents the tags as checkboxes or a radio button group.|
+|childSelectability|[microsoft.graph.ediscovery.childSelectability](../resources/ediscovery-tag.md#childselectability-values)|Indicates whether a single or multiple child tags can be associated with a document. The possible values are: `One`, `Many`.  This value controls whether the UX presents the tags as checkboxes or a radio button group.|
 |createdBy|[identitySet](../resources/identityset.md)|The user who created the tag.|
 |description|String|The description for the tag.|
 |displayName|String|Display name of the tag.|

@@ -32,6 +32,7 @@ Contains properties of the minimum operating system required for an iOS mobile a
 |v16_0|Boolean|Indicates the minimum iOS version support required for the managed device. When 'True', iOS with OS Version 16.0 or later is required to install the app. If 'False', iOS Version 16.0 is not the minimum version. Default value is False. Exactly one of the minimum operating system boolean values will be TRUE.|
 |v17_0|Boolean|Indicates the minimum iOS version support required for the managed device. When 'True', iOS with OS Version 17.0 or later is required to install the app. If 'False', iOS Version 17.0 is not the minimum version. Default value is False. Exactly one of the minimum operating system boolean values will be TRUE.|
 |v18_0|Boolean|Indicates the minimum iOS version support required for the managed device. When 'True', iOS with OS Version 18.0 or later is required to install the app. If 'False', iOS Version 18.0 is not the minimum version. Default value is False. Exactly one of the minimum operating system boolean values will be TRUE.|
+|v26_0|Boolean|Indicates the minimum iOS version support required for the managed device. When 'True', iOS with OS Version 26.0 or later is required to install the app. If 'False', iOS Version 26.0 is not the minimum version. Default value is False. Exactly one of the minimum operating system boolean values will be TRUE.|
 
 ## Relationships
 None
@@ -56,6 +57,7 @@ Here is a JSON representation of the resource.
   "v15_0": true,
   "v16_0": true,
   "v17_0": true,
-  "v18_0": true
+  "v18_0": true,
+  "v26_0": true
 }
 ```

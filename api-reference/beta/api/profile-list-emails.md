@@ -68,7 +68,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "get_emails"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile/emails
 ```
 
@@ -113,7 +113,7 @@ GET https://graph.microsoft.com/beta/me/profile/emails
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

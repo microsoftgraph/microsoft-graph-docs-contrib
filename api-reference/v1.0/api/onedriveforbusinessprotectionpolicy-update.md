@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/{oneDriveForBusinessProtectionPolicyId}
 ```
 
@@ -68,7 +68,7 @@ The following example shows a request.
   "name": "onedriveforbusinessprotectionpolicy_update"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e
 
 {
@@ -132,7 +132,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.oneDriveForBusinessProtectionPolicy"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 
 {

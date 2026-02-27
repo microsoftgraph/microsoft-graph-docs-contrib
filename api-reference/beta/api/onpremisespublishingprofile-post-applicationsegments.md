@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /applications/{applicationObjectId}/onPremisesPublishing/segmentsConfiguration/microsoft.graph.ipSegmentConfiguration/applicationSegments
 ```
 
@@ -70,7 +70,7 @@ The following example shows a request.
   "name": "create_ipapplicationsegment_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/applications/dcc40202-6223-488b-8e64-28aa1a803d6c/onPremisesPublishing/segmentsConfiguration/microsoft.graph.IpSegmentConfiguration/ApplicationSegments
 Content-Type: application/json
 
@@ -102,7 +102,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.ipApplicationSegment"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

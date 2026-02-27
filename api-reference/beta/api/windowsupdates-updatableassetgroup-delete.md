@@ -1,11 +1,11 @@
 ---
 title: "Delete updatableAssetGroup"
 description: "Delete an updatableAssetGroup object."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 08/31/2024
+ms.date: 01/27/2026
 ---
 
 # Delete updatableAssetGroup
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /admin/windows/updates/updatableAssets/{updatableAssetGroupId}
 ```
 
@@ -59,7 +59,7 @@ If successful, this method returns a `202 Accepted` response code. It doesn't re
   "name": "delete_updatableassetgroup"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/f5ba7065-7065-f5ba-6570-baf56570baf5
 ```
 
@@ -100,7 +100,7 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/f5
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 ```
 

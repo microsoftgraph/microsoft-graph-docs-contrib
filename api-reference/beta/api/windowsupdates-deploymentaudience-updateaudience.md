@@ -1,11 +1,11 @@
 ---
 title: "deploymentAudience: updateAudience"
 description: "Update the members and exclusions collections of a deploymentAudience."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 09/16/2024
+ms.date: 01/27/2026
 ---
 
 # deploymentAudience: updateAudience
@@ -41,7 +41,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /admin/windows/updates/deploymentAudiences/{deploymentAudienceId}/updateAudience
 ```
 
@@ -80,7 +80,7 @@ If successful, this action returns a `202 Accepted` response code. It doesn't re
   "name": "deploymentaudience_updateaudience"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/2d477566-6976-4c2d-97eb-d2acd1c2864e/updateAudience
 Content-Type: application/json
 
@@ -127,6 +127,6 @@ Content-Type: application/json
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 ```

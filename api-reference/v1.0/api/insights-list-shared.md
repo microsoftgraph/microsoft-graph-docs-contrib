@@ -1,5 +1,5 @@
 ---
-title: "List shared"
+title: "List shared (deprecated)"
 description: "Calculated insight that returns the list of files shared with a user."
 author: "simonhult"
 ms.localizationpriority: medium
@@ -8,9 +8,12 @@ doc_type: apiPageType
 ms.date: 04/04/2024
 ---
 
-# List shared
+# List shared (deprecated)
 
 Namespace: microsoft.graph
+
+> [!CAUTION]
+> The `/insights/shared` API is deprecated and will stop returning data after November 2026.
 
 Calculated insight that includes the list of documents shared with a user.
 

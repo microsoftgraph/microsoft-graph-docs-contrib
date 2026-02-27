@@ -41,7 +41,7 @@ GET /drives/{drive-id}/root/delta
 GET /groups/{groupId}/drive/root/delta
 GET /me/drive/root/delta
 GET /sites/{siteId}/drive/root/delta
-GET /users/{userId}/drive/root/delta
+GET /users/{userId | userPrincipalName}/drive/root/delta
 ```
 
 ## Function parameters

@@ -51,7 +51,7 @@ Inherits from [entity](../resources/entity.md).
 |lastModifiedBy|[identitySet](identityset.md)| The last user that modified the **module**. |
 |lastModifiedDateTime|DateTimeOffset|Date time the **module** was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is `2014-01-01T00:00:00Z`|
 |resourcesFolderUrl|string| Folder URL where all the file resources for this **module** are stored.|
-|status|string| Status of the **module**. You can't use a PATCH operation to update this value. Possible values are: `draft` and `published`.|
+|status|string| Status of the **module**. You can't use a PATCH operation to update this value. The possible values are: `draft` and `published`.|
 
 ## Relationships
 | Relationship | Type	|Description|

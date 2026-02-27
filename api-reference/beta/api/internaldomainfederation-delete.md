@@ -1,7 +1,7 @@
 ---
 title: "Delete internalDomainFederation"
 description: "Deletes an internalDomainFederation object."
-author: "rahul-nagraj"
+author: "vimrang"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -23,9 +23,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "internaldomainfederation_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/internaldomainfederation-delete-permissions.md)]
 
-> [!IMPORTANT]
-> This method has a [known permissions issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=21445) and might require consenting to the *Directory.AccessAsUser.All* permission for delegated scenarios.
-
 <!-- Domain Name Administrator and Hybrid Identity Administrator can't delete federated domains -->
 The calling user must be assigned one of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
@@ -38,7 +35,7 @@ The calling user must be assigned one of the following [Microsoft Entra roles](/
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /domains/{domainsId}/federationConfiguration/{internalDomainFederationId}
 ```
 
@@ -65,7 +62,7 @@ If successful, this method returns a `204 No Content` response code.
   "sampleKeys": ["contoso.com", "96db02e2-80c1-5555-bc3a-de92ffb8c5be"]
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/domains/contoso.com/federationConfiguration/96db02e2-80c1-5555-bc3a-de92ffb8c5be
 ```
 
@@ -105,6 +102,6 @@ DELETE https://graph.microsoft.com/beta/domains/contoso.com/federationConfigurat
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /education/reports/speakerAssignmentSubmissions
 ```
 
@@ -68,7 +68,7 @@ The following example shows a request.
   "name": "get_speakerAssignmentSubmissions_1"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/reports/speakerAssignmentSubmissions
 ```
 
@@ -112,7 +112,7 @@ The following example shows the default response from the last 24 hours.
   "@odata.type": "Collection(microsoft.graph.speakerAssignmentSubmission)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -201,7 +201,7 @@ The following example shows a request.
   "name": "get_speakerAssignmentSubmissions_2"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/reports/speakerAssignmentSubmissions?$filter=submissionDateTime gt 2025-05-28T00:00:00Z and submissionDateTime lt 2025-05-29T00:00:00Z
 ```
 
@@ -246,7 +246,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.speakerAssignmentSubmission)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

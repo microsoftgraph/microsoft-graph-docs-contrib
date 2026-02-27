@@ -20,7 +20,7 @@ Describes installation results for a partner agent on a Cloud PC.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|installStatus|[cloudPcPartnerAgentInstallStatus](#cloudpcpartneragentinstallstatus-values)|The status of a partner agent installation. Possible values are: installed, installFailed, installing, uninstalling, uninstallFailed and licensed. Read-Only.|
+|installStatus|[cloudPcPartnerAgentInstallStatus](#cloudpcpartneragentinstallstatus-values)|The status of a partner agent installation. The possible values are: installed, installFailed, installing, uninstalling, uninstallFailed and licensed. Read-Only.|
 |isThirdPartyPartner|Boolean|Indicates whether the partner agent is a third party. When `true`, the agent is a third-party (non-Microsoft) agent and when `false`, the agent is a Microsoft agent or isn't known.  The default value is `false`.|
 |partnerAgentName|[cloudPcPartnerAgentName](#cloudpcpartneragentname-values)|The name of the first-party or third-party partner agent. Possible values for third-party partners are `Citrix`, `VMware` and `HP`. Read-Only.|
 |retriable|Boolean|Indicates whether the partner agent installation should be retried. The default value is `false`.|

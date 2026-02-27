@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/stages/{accessReviewStageId}/decisions
 ```
 
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_stage_accessreviewinstancedecisionitem"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions/16d424f6-0100-4bf1-9ebc-fe009c5e5006/instances/bb14c722-51b8-4962-9bd2-1d96ba773d80/stages/8f0a8999-205b-4c29-a68c-2bee353fd4c5/decisions
 ```
 
@@ -101,7 +101,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
   "@odata.type": "Collection(microsoft.graph.accessReviewInstanceDecisionItem)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

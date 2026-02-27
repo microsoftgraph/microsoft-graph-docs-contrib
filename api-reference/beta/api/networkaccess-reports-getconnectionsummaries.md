@@ -37,7 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /networkAccess/reports/getConnectionSummaries(startDateTime='{startDateTime}',endDateTime='{endDateTime}')
 ```
 
@@ -73,7 +73,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "get_connection_summaries"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/networkAccess/reports/getConnectionSummaries(startDateTime='2025-04-19T00:00:00Z',endDateTime='2025-04-20T00:00:00Z')
 ```
 
@@ -110,7 +110,7 @@ GET https://graph.microsoft.com/beta/networkAccess/reports/getConnectionSummarie
   "@odata.type": "Collection(microsoft.graph.networkaccess.connectionSummary)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

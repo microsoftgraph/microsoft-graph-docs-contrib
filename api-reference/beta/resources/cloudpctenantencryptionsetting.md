@@ -22,7 +22,7 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|tenantDiskEncryptionType|[cloudPcDiskEncryptionType](#cloudpcdiskencryptiontype-values)|Indicates the Cloud PC disk encryption type for a tenant. It is a tenant-level setting that applies globally to all Cloud PCs in the tenant. Possible values are: `platformManagedKey`, `customerManagedKey`, `unknownFutureValue`. Read-only.|
+|tenantDiskEncryptionType|[cloudPcDiskEncryptionType](#cloudpcdiskencryptiontype-values)|Indicates the Cloud PC disk encryption type for a tenant. It is a tenant-level setting that applies globally to all Cloud PCs in the tenant. The possible values are: `platformManagedKey`, `customerManagedKey`, `unknownFutureValue`. Read-only.|
 |lastSyncDateTime|DateTimeOffset|Indicates the date and time when last sync tenant encryption setting.|
 
 ### cloudPcDiskEncryptionType values

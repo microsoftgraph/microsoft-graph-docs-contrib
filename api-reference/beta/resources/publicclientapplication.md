@@ -4,7 +4,7 @@ description: "Specifies settings for non Web App or Web Api. (for example, Mobil
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
-author: "sureshja"
+author: "Jackson-Woods"
 ms.date: 08/01/2024
 ---
 

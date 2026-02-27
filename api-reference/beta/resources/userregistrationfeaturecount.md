@@ -20,7 +20,7 @@ Represents the number of users registered or capable for multifactor authenticat
 
 |Property|Type|Description|
 |:---|:---|:---|
-|feature|authenticationMethodFeature|Number of users registered or capable for multifactor authentication, self-service password reset, and passwordless authentication. Possible values are: `ssprRegistered`, `ssprEnabled`, `ssprCapable`, `passwordlessCapable`, `mfaCapable`, `unknownFutureValue`.|
+|feature|authenticationMethodFeature|Number of users registered or capable for multifactor authentication, self-service password reset, and passwordless authentication. The possible values are: `ssprRegistered`, `ssprEnabled`, `ssprCapable`, `passwordlessCapable`, `mfaCapable`, `unknownFutureValue`.|
 |userCount|Int64|Number of users.|
 
 ## Relationships

@@ -28,7 +28,11 @@ The following tables show the least privileged permission or permissions require
 
 ### For entitlement management
 
-<!-- { "blockType": "permissions", "name": "approval_list_steps" } -->
+<!-- { 
+  "blockType": "permissions", 
+  "name": "approval_list_steps", 
+  "requestUrls": ["GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{id}/steps"]
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/approval-list-steps-permissions.md)]
 
 [!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
@@ -37,12 +41,12 @@ The following tables show the least privileged permission or permissions require
 
 ### For PIM for Microsoft Entra roles
 
-<!-- { "blockType": "permissions", "name": "approval_list_steps_2" } -->
+<!-- { "blockType": "permissions", "name": "approval_list_steps_2", "requestUrls": ["PATCH /identityGovernance/privilegedAccess/group/assignmentApprovals/{id}/steps/{id}"] } -->
 [!INCLUDE [permissions-table](../includes/permissions/approval-list-steps-2-permissions.md)]
 
 ### For PIM for Groups
 
-<!-- { "blockType": "permissions", "name": "approval_list_steps_3" } -->
+<!-- { "blockType": "permissions", "name": "approval_list_steps_3", "requestUrls": ["GET /identityGovernance/privilegedAccess/group/assignmentApprovals/{id}/steps"] } -->
 [!INCLUDE [permissions-table](../includes/permissions/approval-list-steps-3-permissions.md)]
 
 ## HTTP request

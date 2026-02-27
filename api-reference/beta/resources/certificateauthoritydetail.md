@@ -1,7 +1,7 @@
 ---
 title: "certificateAuthorityDetail resource type"
 description: "The properties of each certificate authority object contained in the public key infrastructure resource."
-author: "suawat"
+author: "vimrang"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
@@ -15,7 +15,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The properties of each certificate authority object contained in the [certificateBasedAuthPki](../resources/certificateBasedAuthPki.md) resource.
-
 
 Inherits from [directoryObject](../resources/directoryobject.md).
 

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Create a new [sharePointGroup](../resources/sharepointgroup.md) object. The **sharePointGroup** only exists within the scope of the [fileStorageContainer](../resources/filestoragecontainer.md) in which it was created. To add permissions for the **sharePointGroup** on [driveItem](../resources/driveitem.md) objects, you must use the [Create permission on a driveItem](./driveitem-post-permissions.md) API. Up to 10,000 **sharePointGroup** objects can be created per **fileStorageContainer**. For more information on service limits, see [SharePoint online limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#sharepoint-groups).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /storage/fileStorage/containers/{fileStorageContainerId}/sharePointGroups
 ```
 
@@ -72,7 +72,7 @@ The following example shows a request that creates a new **sharePointGroup** tha
   "name": "create_sharePointGroup",
   "@odata.type": "microsoft.graph.sharePointGroup"
 } -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups
 Content-Type: application/json
 
@@ -120,7 +120,7 @@ The following example shows the response. The group is successfully created with
   "truncated": true,
   "@odata.type": "microsoft.graph.sharePointGroup"
 } -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

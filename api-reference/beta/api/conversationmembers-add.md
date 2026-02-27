@@ -130,6 +130,7 @@ Content-Type: application/json
 The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -160,10 +161,14 @@ Content-Type: application/json
 
 ### Example 2: Add members in bulk to a team using user principal name
 
+The following example shows how to add multiple members to a team using the user principal name of the members.
+
+> [!NOTE]
+> You can't use the user principal name (UPN) to add a guest user to a team.
+
 #### Request
 
-The following example shows a request to add multiple members to a team using user principal name of the members.
-
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

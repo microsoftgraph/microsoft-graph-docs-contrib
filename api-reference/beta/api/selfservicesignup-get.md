@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /auditLogs/signUps/{id}
 ```
 
@@ -68,7 +68,7 @@ The following example shows a request.
   "name": "get_selfservicesignup"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/auditLogs/signUps/eff4eb53-712f-778d-8754-3b851876413a
 ```
 
@@ -112,7 +112,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.selfServiceSignUp"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

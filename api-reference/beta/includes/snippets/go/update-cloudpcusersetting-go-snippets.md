@@ -45,6 +45,8 @@ crossRegionDisasterRecoverySetting.SetDisasterRecoveryType(&disasterRecoveryType
 userInitiatedDisasterRecoveryAllowed := true
 crossRegionDisasterRecoverySetting.SetUserInitiatedDisasterRecoveryAllowed(&userInitiatedDisasterRecoveryAllowed) 
 requestBody.SetCrossRegionDisasterRecoverySetting(crossRegionDisasterRecoverySetting)
+provisioningSourceType := graphmodels.IMAGE_CLOUDPCPROVISIONINGSOURCETYPE 
+requestBody.SetProvisioningSourceType(&provisioningSourceType) 
 localAdminEnabled := false
 requestBody.SetLocalAdminEnabled(&localAdminEnabled) 
 resetEnabled := true

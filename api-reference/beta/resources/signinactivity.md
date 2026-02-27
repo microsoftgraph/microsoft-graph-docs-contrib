@@ -18,7 +18,7 @@ Provides the last interactive or non-interactive sign-in *attempt* time for a sp
 
 Effective December 1, 2023, the **lastSuccessfulSignInDateTime** property is available to provide the last *successful* sign-in time for a specific user, regardless of whether the sign-in was interactive or non-interactive. The data isn't backfilled for this property.
 
-See an example of [getting the **signInActivity** details](../api/user-list.md#example-4-list-the-last-sign-in-time-of-users-with-a-specific-display-name).
+See an example of [getting the **signInActivity** details](../api/user-list.md#example-5-list-the-last-sign-in-time-of-users-with-a-specific-display-name).
 
 ## Properties
 

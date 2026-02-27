@@ -15,9 +15,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete and unprotect all the artifacts protected by a dynamic rule. This action is only applicable to dynamic rules.
+Delete and unprotect all the artifacts protected by a dynamic [rule](../resources/protectionrulebase.md). This action is only applicable to dynamic rules.
 
-The following points apply when deleting a dynamic rule and unprotecting all artifacts it protects.
+The following points apply when you delete a dynamic rule and unprotect all artifacts it protects.
 - The rule moves to the `deleteRequested` status when this action is performed on a dynamic rule.
 - Unprotecting artifacts and deleting rules are asynchronous operations, and they might not complete immediately. 
 - This action resets the `dynamicRule` protection source. If the artifact is also protected by another protection source, it's only protected by that source afterward.
@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/{oneDriveForBusinessProtectionPolicyId}/driveInclusionRules/{driveProtectionRuleId}/deleteAndUnprotect
 POST /solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPolicyId}/mailboxInclusionRules/{mailboxProtectionRuleId}/deleteAndUnprotect
 ```
@@ -53,7 +53,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `202 Accepted` response code and a [protectionRuleBase](../resources/protectionrulebase.md) in the response body.
+If successful, this action returns a `202 Accepted` response code and a [protectionRuleBase](../resources/protectionrulebase.md) object in the response body.
 
 ## Examples
 
@@ -70,7 +70,7 @@ The following example shows a request.
   "name": "driveprotectionrulethis.deleteandunprotect"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessProtectionPolicies/71633878-8321-4950-bfaf-ed285bdd1461/driveInclusionRules/61633878-8321-4950-bfaf-ed285bdd1461/deleteAndUnprotect
 ```
 
@@ -90,7 +90,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.protectionRuleBase"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -126,7 +126,7 @@ The following example shows a request.
   "name": "mailboxprotectionrulethis.deleteandunprotect"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/exchangeProtectionPolicies/6b0991b9-e7d4-4794-86fa-2a3f2a4e3177/mailboxInclusionRules/52147fb9-2682-47bc-a8f6-6c38c1ff498d/deleteAndUnprotect
 ```
 
@@ -146,8 +146,8 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.protectionRuleBase"
 }
 -->
-``` http
-HTTP/1.1 200 OK
+```http
+HTTP/1.1 202 Accepted
 Content-Type: application/json
 
 {
@@ -158,7 +158,7 @@ Content-Type: application/json
     "createdDateTime": "2025-01-15T15:07:44.3043505Z",
     "lastModifiedDateTime": "2025-01-15T14:42:12.6779064Z",
     "isAutoApplyEnabled": true,
-    "driveExpression": "(memberOf -any (group.id -in ['4e8e9b15-bfc8-40a2-aed0-3f65a22e2bd4']))",
+    "mailboxExpression": "(memberOf -any (group.id -in ['4e8e9b15-bfc8-40a2-aed0-3f65a22e2bd4']))",
     "createdBy": {
         "user": {
             "identity": "8aaaaec3-5dcb-4b47-9ef9-0dda3e95b9f4"

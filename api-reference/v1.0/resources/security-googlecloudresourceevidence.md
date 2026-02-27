@@ -22,7 +22,7 @@ Inherits from [alertEvidence](../resources/security-alertevidence.md).
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|The date and time when the evidence was created and added to the alert. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [alertEvidence](../resources/security-alertevidence.md). |
 |location|String|The zone or region where the resource is located.|
-|locationType|[microsoft.graph.security.googleCloudLocationType](#googlecloudlocationtype-values)|The type of location. Possible values are: `unknown`, `regional`, `zonal`, `global`, `unknownFutureValue`.|
+|locationType|[microsoft.graph.security.googleCloudLocationType](#googlecloudlocationtype-values)|The type of location. The possible values are: `unknown`, `regional`, `zonal`, `global`, `unknownFutureValue`.|
 |projectId|String|The Google project ID as defined by the user.|
 |projectNumber|Int64|The project number assigned by Google.|
 |remediationStatus|[microsoft.graph.security.evidenceRemediationStatus](../resources/security-alertevidence.md#evidenceremediationstatus-values)|Status of the remediation action taken. The possible values are: `none`, `remediated`, `prevented`, `blocked`, `notFound`, `unknownFutureValue`. Inherited from [alertEvidence](../resources/security-alertevidence.md).|

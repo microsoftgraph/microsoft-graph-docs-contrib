@@ -1,11 +1,11 @@
 ---
 title: "Get updatableAssetGroup"
 description: "Read the properties and relationships of an updatableAssetGroup object."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 09/16/2024
+ms.date: 01/27/2026
 ---
 
 # Get updatableAssetGroup
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /admin/windows/updates/updatableAssets/{updatableAssetGroupId}
 ```
 
@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and an [updatableAss
   "name": "get_updatableassetgroup"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/5c55730b-730b-5c55-0b73-555c0b73555c
 ```
 
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/5c557
   "@odata.type": "microsoft.graph.windowsUpdates.updatableAssetGroup"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

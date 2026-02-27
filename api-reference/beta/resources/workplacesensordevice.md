@@ -1,11 +1,11 @@
 ---
 title: "workplaceSensorDevice resource type"
-description: "Represents hardware capable of hosting multiple sensors that collect and report data on physical or environmental conditions, including occupancy, headcount, inferred occupancy, temperature, and more."
-author: "ms-amakumar"
+description: "Represents hardware capable of hosting multiple sensors that collect and report data on physical or environmental conditions, including occupancy, people count, inferred occupancy, temperature, and more."
+author: "akwasiakosah101"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: resourcePageType
-ms.date: 06/10/2024
+ms.date: 10/21/2025
 ---
 
 # workplaceSensorDevice resource type
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents hardware capable of hosting multiple sensors that collect and report data on physical or environmental conditions, including occupancy, headcount, inferred occupancy, temperature, and more.
+Represents hardware capable of hosting multiple sensors that collect and report data on physical or environmental conditions, including occupancy, people count, inferred occupancy, temperature, and more.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -42,7 +42,7 @@ Inherits from [entity](../resources/entity.md).
 |macAddress|String| The MAC address of the device. |
 |manufacturer|String| The manufacturer of the device. |
 |placeId|String| The unique identifier of the place where the device is located. If the device is installed in a room equipped with a mailbox, this property should match the **ExternalDirectoryObjectId** or Microsoft Entra object ID of the room mailbox. |
-|sensors|[workplaceSensor](../resources/workplacesensor.md) collection| A list of sensors associated with the device that collect and report data about physical or environmental conditions, such as occupancy, people count, inferred occupancy, temperature, and more. |
+|sensors|[workplaceSensor](../resources/workplacesensor.md) collection| A list of sensors associated with the device that collect and report data about physical or environmental conditions, such as occupancy, people count, inferred occupancy, temperature, Wi-Fi, and more. |
 |tags|String collection| A list of custom tags associated with the device. |
 
 ## Relationships

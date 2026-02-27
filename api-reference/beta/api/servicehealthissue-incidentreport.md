@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /admin/serviceAnnouncement/issues/{serviceHealthIssueId}/incidentReport
 ```
 
@@ -58,7 +58,7 @@ If successful, this function returns a `200 OK` response code and a file stream 
   "name": "servicehealthissue_incidentreport"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/issues/MO248163/incidentReport
 ```
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/admin/serviceAnnouncement/issues/MO248163/i
   "@odata.type": "Edm.Stream"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

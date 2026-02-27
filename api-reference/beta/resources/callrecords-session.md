@@ -34,7 +34,7 @@ One session can be returned multiple times if the communication involves more th
 |failureInfo|[microsoft.graph.callRecords.failureInfo](callrecords-failureinfo.md)|Failure information associated with the session if the session failed.|
 |id|string|Unique identifier for the session. Read-only.|
 |isTest|Boolean|Specifies whether the session is a test.|
-|modalities|microsoft.graph.callRecords.modality collection|List of modalities present in the session. Possible values are: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`, `screenSharing`, `unknownFutureValue`.|
+|modalities|microsoft.graph.callRecords.modality collection|List of modalities present in the session. The possible values are: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`, `screenSharing`, `unknownFutureValue`.|
 |startDateTime|DateTimeOffset|UTC time when the first user joined the session. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 
 ## Relationships

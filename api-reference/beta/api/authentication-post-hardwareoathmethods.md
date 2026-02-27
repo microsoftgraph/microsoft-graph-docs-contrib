@@ -38,7 +38,7 @@ Assign a hardware OATH authentication method to yourself.
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /me/authentication/hardwareOathMethods
 ```
 
@@ -49,7 +49,7 @@ Assign a hardware OATH authentication method to another user.
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /users/{usersId}/authentication/hardwareOathMethods
 ```
 
@@ -85,7 +85,7 @@ The following example shows a request.
   "name": "create_hardwareoathauthenticationmethod_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/me/authentication/hardwareOathMethods
 Content-Type: application/json
 
@@ -136,7 +136,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.hardwareOathAuthenticationMethod"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

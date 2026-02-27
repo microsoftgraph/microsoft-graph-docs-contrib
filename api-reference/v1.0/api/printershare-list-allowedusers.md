@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /print/shares/{printerShareId}/allowedUsers
 ```
 
@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_user"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/print/shares/{printerShareId}/allowedUsers
 ```
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/v1.0/print/shares/{printerShareId}/allowedUsers
   "@odata.type": "Collection(microsoft.graph.user)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -43,7 +43,7 @@ Begin by creating a new .NET console project using the [.NET CLI](/dotnet/core/t
     dotnet new console -o GraphAppOnlyTutorial
     ```
 
-1. Once the project is created, verify that it works by changing the current directory to the **GraphTutorial** directory and running the following command in your CLI.
+1. Once the project is created, verify that it works by changing the current directory to the **GraphAppOnlyTutorial** directory and running the following command in your CLI.
 
     ```dotnetcli
     dotnet run

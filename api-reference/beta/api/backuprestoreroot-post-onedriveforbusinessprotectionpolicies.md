@@ -137,6 +137,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/Prote
   "id": "b218eb4a-ea72-42bd-8f0b-d0bbf794bec7",
   "displayName": "OneDrive Protection Policy",
   "status": "inactive",
+  "isEnabled": false,
   "createdBy": {
     "application": {
       "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",

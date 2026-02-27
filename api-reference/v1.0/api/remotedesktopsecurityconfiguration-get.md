@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /servicePrincipals/{servicePrincipalsId}/remoteDesktopSecurityConfiguration
 ```
 
@@ -58,7 +58,7 @@ The following example shows a request.
   "name": "get_remotedesktopsecurityconfiguration"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/servicePrincipals/00af5dfb-85da-4b41-a677-0c6b86dd34f8/remoteDesktopSecurityConfiguration
 ```
 
@@ -101,7 +101,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.remoteDesktopSecurityConfiguration"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

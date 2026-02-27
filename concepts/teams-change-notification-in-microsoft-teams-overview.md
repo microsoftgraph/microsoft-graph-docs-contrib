@@ -5,7 +5,8 @@ author: "anandab-msft"
 ms.localizationpriority: high
 ms.subservice: "teams"
 ms.custom: scenarios:getting-started
-ms.date: 11/07/2024
+ms.date: 09/18/2025
+ms.topic: how-to
 ---
 
 # Change notifications for Microsoft Teams resources
@@ -34,8 +35,8 @@ The following table lists the Microsoft Teams resources that support change noti
 
 | **Resource** | **Supported resource paths** | **Resource data can be included in notifications** |
 |:----------------|:------------|:-----------------------------------------|
-| Teams [callRecording](/graph/api/resources/callrecording) | All recordings in an organization: `communications/onlineMeetings/getAllRecordings`  <br>All recordings for a specific meeting: `communications/onlineMeetings/{onlineMeetingId}/recordings` <br>A call recording that becomes available in a meeting organized by a specific user: `users/{userId}/onlineMeetings/getAllRecordings` <br>A call recording that becomes available in a meeting where a particular Teams app is installed: `appCatalogs/teamsApps/{id}/installedToOnlineMeetings/getAllRecordings` * | Yes |
-| Teams [callTranscript](/graph/api/resources/calltranscript) | All transcripts in an organization: `communications/onlineMeetings/getAllTranscripts` <br> All transcripts for a specific meeting: `communications/onlineMeetings/{onlineMeetingId}/transcripts` <br>A call transcript that becomes available in a meeting organized by a specific user: `users/{userId}/onlineMeetings/getAllTranscripts` <br> A call transcript that becomes available in a meeting where a particular Teams app is installed: `appCatalogs/teamsApps/{id}/installedToOnlineMeetings/getAllTrancripts` * | Yes |
+| Teams [callRecording](/graph/api/resources/callrecording) | **Online meetings:**<br>All recordings in an organization: `communications/onlineMeetings/getAllRecordings`  <br>All recordings for a specific meeting: `communications/onlineMeetings/{onlineMeetingId}/recordings` <br>A call recording that becomes available in a meeting organized by a specific user: `users/{userId}/onlineMeetings/getAllRecordings` <br>A call recording that becomes available in a meeting where a particular Teams app is installed: `appCatalogs/teamsApps/{id}/installedToOnlineMeetings/getAllRecordings` <br><br>**Ad hoc calls, including PSTN, 1:1, and group calls:**<br>All recordings in an organization: `communications/adhocCalls/getAllRecordings`<br>All recordings for a specific ad hoc call: `communications/adhocCalls/{adhocCallId}/recordings` <br>A call recording that becomes available to a specific user that initiated call recording: `users/{userId}/adhocCalls/getAllRecordings` *| Yes |
+| Teams [callTranscript](/graph/api/resources/calltranscript) | **Online meetings:**<br>All transcripts in an organization: `communications/onlineMeetings/getAllTranscripts` <br> All transcripts for a specific meeting: `communications/onlineMeetings/{onlineMeetingId}/transcripts` <br>A call transcript that becomes available in a meeting organized by a specific user: `users/{userId}/onlineMeetings/getAllTranscripts` <br> A call transcript that becomes available in a meeting where a particular Teams app is installed: `appCatalogs/teamsApps/{id}/installedToOnlineMeetings/getAllTrancripts` <br><br>**Ad hoc calls, including PSTN, 1:1, and group calls:**<br>All transcripts in an organization: `communications/adhocCalls/getAllTranscripts` <br> All transcripts for a specific ad hoc call: `communications/adhocCalls/{adhocCallId}/transcripts` <br>A call transcript that becomes available to a specific user that initiated call transcription: `users/{userId}/adhocCalls/getAllTranscripts` * | Yes |
 | Teams [channel](/graph/api/resources/channel) | Changes to channels in all teams:<br>`/teams/getAllChannels` <br>Changes to channel in a specific team:<br>`/teams/{id}/channels` | Yes |
 | Teams [chat](/graph/api/resources/chat) | Changes to any chat in the tenant:<br>`/chats` <br>Changes to a specific chat:<br>`/chats/{id}`<br/>Changes to any chat in the tenant where a particular Teams app is installed:<br/>`/appCatalogs/teamsApps/{id}/installedToChats` | Yes |
 | Teams [chatMessage](/graph/api/resources/chatMessage) | Changes to chat messages in all channels in all teams:<br>`/teams/getAllMessages` <br>Changes to chat messages in a specific channel:<br>`/teams/{id}/channels/{id}/messages`<br>Changes to chat messages in all chats:<br>`/chats/getAllMessages` <br>Changes to chat messages in a specific chat:<br>`/chats/{id}/messages`<br>Changes to chat messages in all chats a particular user is part of:<br>`/users/{id}/chats/getAllMessages`<br>Changes to chat messages in all the chats in the tenant where a particular Teams app is installed:<br>`/appCatalogs/teamsApps/{id}/installedToChats/getAllMessages` | Yes |
@@ -151,9 +152,10 @@ The previous example shows a notification corresponding to a chat message resour
 
 * [Microsoft Graph change notifications](change-notifications-overview.md)
 * [Get change notifications for teams and channels using Microsoft Graph](teams-changenotifications-team-and-channel.md)
-* [Get change notifications for membership changes in teams and channels using Microsoft Graph](teams-changenotifications-teammembership.md)
 * [Get change notifications for messages in Teams channels and chats using Microsoft Graph](teams-changenotifications-chatmessage.md)
 * [Get change notifications for chats using Microsoft Graph](teams-changenotifications-chat.md)
 * [Get change notifications for chat membership using Microsoft Graph](teams-changenotifications-chatmembership.md)
 * [Microsoft Teams API overview](teams-concept-overview.md)
 * [Get change notification for meeting transcripts and recordings using Microsoft Graph](teams-changenotifications-callrecording-and-calltranscript.md)
+* [Get change notifications for membership changes in channels using Microsoft Graph](teams-changenotifications-channelmembership.md)
+* [Get change notifications for membership changes in teams using Microsoft Graph](teams-changenotifications-teammembership.md)

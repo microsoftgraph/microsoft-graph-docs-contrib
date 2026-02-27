@@ -2,7 +2,7 @@
 title: "servicePrincipal: addPassword"
 description: "Add a strong password to a servicePrincipal."
 ms.localizationpriority: medium
-author: "sureshja"
+author: "Jackson-Woods"
 ms.subservice: "entra-applications"
 doc_type: "apiPageType"
 ms.date: 04/05/2024

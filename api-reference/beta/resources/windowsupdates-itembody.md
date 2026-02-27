@@ -2,10 +2,10 @@
 title: "itemBody resource type"
 description: "Represents a container for holding content and its type."
 ms.localizationpriority: medium
-author: "skandula"
+author: "andredm7"
 ms.subservice: windows-autopatch
 doc_type: resourcePageType
-ms.date: 09/16/2024
+ms.date: 01/27/2026
 ---
 
 # itemBody resource type
@@ -21,7 +21,7 @@ Represents a container for holding content and its type.
 | Property    | Type                                    | Description                                                                                                                     |
 |:------------|:----------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------|
 | content     | String                                  | The content of the item.                                                                                                        |
-| contentType | microsoft.graph.windowsUpdates.bodyType | The type of the content indicated by the enum value of **bodyType**. Possible values are: `text`, `html`, `unknownFutureValue`. |
+| contentType | microsoft.graph.windowsUpdates.bodyType | The type of the content indicated by the enum value of **bodyType**. The possible values are: `text`, `html`, `unknownFutureValue`. |
 
 ## Relationships
 

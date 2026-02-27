@@ -27,8 +27,8 @@ Represents the summary of users capable of multi-factor authentication, self-ser
 |:---|:---|:---|
 |totalUserCount|Int64|Total number of users accounts, excluding those that are blocked.|
 |userRegistrationFeatureCounts|[userRegistrationFeatureCount](../resources/userregistrationfeaturecount.md) collection|Number of users registered or capable for multi-factor authentication, self-service password reset, and passwordless authentication.|
-|userRoles|includedUserRoles|The role type of the user. Possible values are: `all`, `privilegedAdmin`, `admin`, `user`, `unknownFutureValue`.|
-|userTypes|includedUserTypes|User type. Possible values are: `all`, `member`, `guest`, `unknownFutureValue`.|
+|userRoles|includedUserRoles|The role type of the user. The possible values are: `all`, `privilegedAdmin`, `admin`, `user`, `unknownFutureValue`.|
+|userTypes|includedUserTypes|User type. The possible values are: `all`, `member`, `guest`, `unknownFutureValue`.|
 
 The value `privilegedAdmin` consists of the following [Microsoft Entra roles](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).:
 

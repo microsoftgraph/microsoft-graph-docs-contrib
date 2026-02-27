@@ -7,12 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 # Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.identitygovernance.entitlementmanagement.accesspackageassignmentrequests.item.resume.resume_post_request_body import ResumePostRequestBody
-from msgraph_beta.generated.models.custom_extension_data import CustomExtensionData
+from msgraph_beta.generated.models.access_package_request_approval_stage_callback_configuration import AccessPackageRequestApprovalStageCallbackConfiguration
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ResumePostRequestBody(
 	source = "Contoso.AADProcess",
 	type = "microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestCreated",
-	data = CustomExtensionData(
+	data = AccessPackageRequestApprovalStageCallbackConfiguration(
 		odata_type = "microsoft.graph.accessPackageRequestApprovalStageCallbackConfiguration",
 		additional_data = {
 				"stage" : "assignmentRequestCreated",

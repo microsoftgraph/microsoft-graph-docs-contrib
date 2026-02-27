@@ -21,7 +21,7 @@ Contains properties used to perform the auto-update of an application.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|autoUpdateSupersededAppsState|[win32LobAutoUpdateSupersededAppsState](../resources/intune-apps-win32lobautoupdatesupersededappsstate.md)|The auto-update superseded apps state setting for the app assignment. Possible values are notConfigured and enabled. Default value is notConfigured. Possible values are: `notConfigured`, `enabled`, `unknownFutureValue`.|
+|autoUpdateSupersededAppsState|[win32LobAutoUpdateSupersededAppsState](../resources/intune-apps-win32lobautoupdatesupersededappsstate.md)|The auto-update superseded apps state setting for the app assignment. Possible values are notConfigured and enabled. Default value is notConfigured. The possible values are: `notConfigured`, `enabled`, `unknownFutureValue`.|
 
 ## Relationships
 None

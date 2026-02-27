@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /teams/{teamsId}/schedule/dayNotes
 ```
 
@@ -39,7 +39,7 @@ This method supports some of the OData query parameters to help customize the re
 
 The following example shows how to use the `$filter` parameter.
 
-``` http
+```http
 GET /teams/{teamsId}/schedule/dayNotes?$filter=dayNoteDate eq 2023-11-3
 ```
 
@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a list of [dayNo
 
 The following example shows a request.
 
-``` http
+```http
 GET /teams/d72f9b8e-4c76-4f50-bf93-51b17aab0cd9/schedule/dayNotes
 ```
 
@@ -73,7 +73,7 @@ GET /teams/d72f9b8e-4c76-4f50-bf93-51b17aab0cd9/schedule/dayNotes
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

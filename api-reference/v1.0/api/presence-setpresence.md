@@ -14,25 +14,9 @@ Namespace: microsoft.graph
 
 Set the state of a user's presence session as an application.
 
+For more information about presence sessions, states permutations, and timeouts, see [Manage presence state using the Microsoft Graph API](/graph/cloud-communications-manage-presence-state).
+
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
-
-### Presence sessions
-A user can have multiple presence sessions because the user can be on multiple Teams clients (desktop, mobile, and web). Each Teams client has an independent presence session and the user's presence is an aggregated state from all the sessions behind.
-
-Similarly, an application can have its own presence session for a user and be able to update the state.
-
-The following precedence is used for how session states are aggregated:
-* User-configured > app-configured (user-configured state overrides others)
-* Among app-configured: DoNotDisturb > Busy > Available > Away
-
-> **Note:** When a user presence changes in Microsoft Graph, because the Teams client uses poll mode, it will take a few minutes to update the presence status.
-
-### Timeout, expiration, and keep alive
-A presence session may **time out** and **expire**, so the application needs to call this API before the **timeout**, to maintain the state for the session; or before the **expiration**, to keep the session alive.
-
-A presence session can time out if the availability is `Available` and the timeout is 5 minutes. When it times out, the presence state fades in stages. For example, if an application sets the presence session as `Available/Available`, the state would change to `Available/AvailableInactive` in 5 minutes with the first timeout, then `Away/Away` in another 5 minutes with the second timeout.
-
-Use `expirationDuration` to configure the expiration of a presence session; otherwise, the default expiration is 5 minutes. Valid values range from 5 minutes to 4 hours, after which the session becomes `Offline`.
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

@@ -24,6 +24,7 @@ Inherits from [entity](../resources/entity.md).
 |[List for group](../api/cloudlicensing-groupcloudlicensing-list-usagerights.md)|[microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md) collection|Get a list of the [usageRight](../resources/cloudlicensing-usageright.md) objects granted to a group.|
 |[List for user](../api/cloudlicensing-usercloudlicensing-list-usagerights.md)|[microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md) collection|Get a list of the [usageRight](../resources/cloudlicensing-usageright.md) objects granted to a user.|
 |[Get](../api/cloudlicensing-usageright-get.md)|[microsoft.graph.cloudLicensing.usageRight](../resources/cloudlicensing-usageright.md)|Get the properties and relationships of a [usageRight](../resources/cloudlicensing-usageright.md) for a [user](../resources/user.md) or [group](../resources/group.md).|
+|[List assignments](../api/cloudlicensing-usageright-list-assignments.md)|[microsoft.graph.cloudLicensing.assignment](../resources/cloudlicensing-assignment.md) collection|Get a list of the [assignment](../resources/cloudlicensing-assignment.md) objects which combine to form this [usageRight](../resources/cloudlicensing-usageright.md).|
 
 ## Properties
 |Property|Type|Description|
@@ -34,7 +35,10 @@ Inherits from [entity](../resources/entity.md).
 |skuPartNumber|String| Unique SKU display name that is equal to the **skuPartNumber** on the related [subscribedSku](subscribedsku.md) object; for example, `AAD_Premium`. Read-only. |
 
 ## Relationships
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|allotments|[microsoft.graph.cloudLicensing.allotment](../resources/cloudlicensing-allotment.md) collection|The set of allotments associated with the assignments that combine to form this **usageRight**.|
+|assignments|[microsoft.graph.cloudLicensing.assignment](../resources/cloudlicensing-assignment.md) collection|The set of assignments that combine to form this **usageRight**, including both direct assignments and assignments inherited through group membership.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

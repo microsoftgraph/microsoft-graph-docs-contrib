@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/labels/categories
 ```
 
@@ -64,7 +64,7 @@ Here's an example of a request.
   "name": "create_categorytemplate_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/security/labels/categories
 Content-Type: application/json
 
@@ -113,7 +113,7 @@ Here's an example of the response.
   "@odata.type": "microsoft.graph.security.categoryTemplate"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

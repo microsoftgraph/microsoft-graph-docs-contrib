@@ -31,7 +31,7 @@ The following table lists scenarios for using PIM for Groups APIs to manage acti
 
 | **Scenarios** | **API** |
 | --- | --- |
-| An administrator: <li>Assigns a principal active membership or ownership to a group <li> Renews, updates, extends, or removes a principal from their active membership or ownership to a group <br/><br/> A principal: <li> Performs just-in-time and time-bound activation of their _eligible_ membership or ownership assignment for a group <li> Deactivates their eligible membership and ownership assignment it when they no longer need access <li> Deactivates, extends, or renews their own membership and ownership assignment| [Create assignmentScheduleRequest](../api/privilegedaccessgroup-post-assignmentschedulerequests.md) |
+| An administrator: <ul><li>Assigns a principal active membership or ownership to a group </li><li> Renews, updates, extends, or removes a principal from their active membership or ownership to a group <br/><br/> A principal: </li><li> Performs just-in-time and time-bound activation of their _eligible_ membership or ownership assignment for a group </li><li> Deactivates their eligible membership and ownership assignment it when they no longer need access </li><li> Deactivates, extends, or renews their own membership and ownership assignment| [Create assignmentScheduleRequest](../api/privilegedaccessgroup-post-assignmentschedulerequests.md)</li></ul> |
 | An administrator lists all requests for active membership and ownership assignments for a group |[List assignmentScheduleRequests](../api/privilegedaccessgroup-list-assignmentschedulerequests.md) |
 | An administrator lists all active assignments, and requests for assignments to be created in the future, for membership and ownership for a group | [List assignmentSchedules](../api/privilegedaccessgroup-list-assignmentschedules.md) |
 | An administrator lists all active membership and ownership assignments for a group | [List assignmentScheduleInstances](../api/privilegedaccessgroup-list-assignmentscheduleinstances.md) |
@@ -51,7 +51,7 @@ The following table lists scenarios for using PIM for Groups APIs to manage elig
 
 | **Scenarios** | **API** |
 |---|---|
-| An administrator: <li> Creates an eligible membership or ownership assignment for the group <li> Renews, updates, extends, or removes an eligible membership/ownership assignment for the group <li> Deactivates, extends, or renews their own membership/ownership eligibility| [Create eligibilityScheduleRequest](../api/privilegedaccessgroup-post-eligibilityschedulerequests.md) |
+| An administrator: <ul><li> Creates an eligible membership or ownership assignment for the group </li><li> Renews, updates, extends, or removes an eligible membership/ownership assignment for the group </li><li> Deactivates, extends, or renews their own membership/ownership eligibility| [Create eligibilityScheduleRequest](../api/privilegedaccessgroup-post-eligibilityschedulerequests.md)</li></ul> |
 | An administrator queries all eligible membership or ownership requests and their details | [List eligibilityScheduleRequests](../api/privilegedaccessgroup-list-eligibilityschedulerequests.md) |
 | An administrator queries an eligible membership or ownership request and its details | [Get eligibilityScheduleRequest](../api/privilegedaccessgroupeligibilityschedulerequest-get.md) |
 | An administrator cancels an eligible membership or ownership request they created | [privilegedAccessGroupEligibilityScheduleRequest:cancel](../api/privilegedaccessgroupeligibilityschedulerequest-cancel.md) |

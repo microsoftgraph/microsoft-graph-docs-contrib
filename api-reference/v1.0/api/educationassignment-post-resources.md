@@ -23,6 +23,7 @@ You can create the following types of assignment resources:
 - [educationPowerPointResource](../resources/educationpowerpointresource.md)
 - [educationMediaResource](../resources/educationmediaresource.md)
 - [educationTeamsAppResource](../resources/educationteamsappresource.md)
+- [educationSpeakerProgressResource](../resources/educationspeakerprogressresource.md)
 
 Every resource has an **@odata.type** property to indicate which type of resource is being created.
 
@@ -63,6 +64,18 @@ In the request body, supply a JSON representation of one of the following resour
 
 ## Response
 If successful, this method returns a `201 Created` response code and an [educationAssignmentResource](../resources/educationassignmentresource.md) object in the response body.
+
+This method also returns a `400 Bad Request` response code when an invalid request body is provided for the **educationSpeakerProgressResource** assignment resource in the following scenarios:
+
+- The distributable resource attach limit is exceeded.
+- No speaker coach setting or AI feedback is enabled.
+- AI feedback is enabled, but the AI feedback criteria are null.
+- AI feedback is enabled, but no settings are enabled in the AI feedback criteria.
+- AI feedback is enabled, but **aiFeedbackCriteria.speechType** has an invalid value.
+- AI feedback criteria have settings enabled, but AI feedback isn't enabled. 
+- **aiFeedbackCriteria.speechType** is set, but AI feedback isn't enabled.
+- **recordingTimeLimitInMinutes** isn't between 1 and 10 (inclusive).
+- **maxRecordingAttempts** isn't between 0 and 10 (inclusive).
 
 ## Examples
 ### Example 1: Create an educationLinkResource
@@ -769,6 +782,168 @@ Content-type: application/json
             }
         }
     }
+}
+```
+
+### Example 8: Create an educationSpeakerProgressResource
+
+The following example shows how to create an [educationSpeakerProgressResource](../resources/educationspeakerprogressresource.md) assignment resource.
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_educationSpeakerProgressResource"
+}
+-->
+``` http
+POST https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/fe9c8d6f-baad-4b5e-b9d5-e2bb33e4ed19/resources
+Content-Type: application/json
+
+{
+  "distributeForStudentWork": true,
+  "resource": {
+    "@odata.type": "microsoft.graph.educationSpeakerProgressResource",
+    "displayName": "speakerProgressTestResource",
+    "recordingTimeLimitInMinutes": 5,
+    "showRehearsalReportToStudentBeforeMediaUpload": true,
+    "maxRecordingAttempts": 1,
+    "isVideoRequired": true,
+    "isAiFeedbackEnabled": true,
+    "presentationTitle": "speakerProgressTestResource",
+    "spokenLanguageLocale": "en-US",
+    "speakerCoachSettings": {
+      "deliverySettings": {
+        "isPronunciationEnabled": true
+      }
+    },
+    "aiFeedbackCriteria": {
+      "speechType": "informative",
+      "aiFeedbackSettings": {
+        "deliverySettings": {
+          "isStyleEnabled": true
+        }
+      }
+    }
+  }
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-educationspeakerprogressresource-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-educationspeakerprogressresource-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-educationspeakerprogressresource-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-educationspeakerprogressresource-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-educationspeakerprogressresource-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-educationspeakerprogressresource-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-educationspeakerprogressresource-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationSpeakerProgressResource"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignments('fe9c8d6f-baad-4b5e-b9d5-e2bb33e4ed19')/resources/$entity",
+  "distributeForStudentWork": true,
+  "id": "af98a1e1-3393-4ee0-8bcc-8b5bb4598d1c",
+  "resource": {
+    "@odata.type": "#microsoft.graph.educationSpeakerProgressResource",
+    "displayName": "speakerProgressTestResource",
+    "createdDateTime": "2025-03-17T16:26:03.5530234Z",
+    "lastModifiedDateTime": "2025-03-17T16:26:03.5530384Z",
+    "recordingTimeLimitInMinutes": 5,
+    "showRehearsalReportToStudentBeforeMediaUpload": true,
+    "maxRecordingAttempts": 1,
+    "isVideoRequired": true,
+    "isAiFeedbackEnabled": true,
+    "presentationTitle": "speakerProgressTestResource",
+    "spokenLanguageLocale": "en-US",
+    "createdBy": {
+      "application": null,
+      "device": null,
+      "user": {
+        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+        "displayName": null
+      }
+    },
+    "lastModifiedBy": {
+      "application": null,
+      "device": null,
+      "user": {
+        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+        "displayName": null
+      }
+    },
+    "speakerCoachSettings": {
+      "deliverySettings": {
+        "isPaceEnabled": false,
+        "areFillerWordsEnabled": false,
+        "isPitchEnabled": false,
+        "isPronunciationEnabled": true
+      },
+      "contentSettings": {
+        "isInclusivenessEnabled": false,
+        "isRepetitiveLanguageEnabled": false
+      },
+      "audienceEngagementSettings": {
+        "isBodyLanguageEnabled": false
+      }
+    },
+    "aiFeedbackCriteria": {
+      "speechType": "informative",
+      "aiFeedbackSettings": {
+        "deliverySettings": {
+          "isLanguageUseEnabled": false,
+          "areRhetoricalTechniquesEnabled": false,
+          "isStyleEnabled": true
+        },
+        "contentSettings": {
+          "isSpeechOrganizationEnabled": false,
+          "isMessageClarityEnabled": false,
+          "isQualityOfInformationEnabled": false
+        },
+        "audienceEngagementSettings": {
+          "areEngagementStrategiesEnabled": false,
+          "isEmotionalAndIntellectualAppealEnabled": false,
+          "isCallToActionEnabled": false
+        }
+      }
+    }
+  }
 }
 ```
 

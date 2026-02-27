@@ -32,6 +32,7 @@ The **externalAuthenticationMethod** resource is a derived type of the [authenti
 |:---|:---|:---|
 |configurationId|String|A unique identifier used to manage the external auth method within Microsoft Entra ID.|
 |createdDateTime|DateTimeOffset|Represents the date and time when an entity was created. Inherited from [authenticationMethod](../resources/authenticationmethod.md).|
+|lastUsedDateTime|DateTimeOffset|The date and time the authentication method was last used by the user. Read-only. Optional. This optional value is `null` if the authentication method doesn't populate it. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [authenticationMethod](../resources/authenticationmethod.md).|
 |displayName|String|Custom name given to the registered external authentication method.|
 |id|String|The unique identifier for an the authentication method for the user. Inherited from [entity](../resources/entity.md).|
 
@@ -53,6 +54,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.externalAuthenticationMethod",
   "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
+  "lastUsedDateTime": "String (timestamp)",
   "configurationId": "String",
   "displayName": "String"
 }

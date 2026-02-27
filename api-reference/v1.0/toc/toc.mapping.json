@@ -223,10 +223,54 @@
         },
         {
           "name": "Places",
+          "overview": "../../resources/places-api-overview.md",
           "resources": [
             "place",
+            "building",
+            "floor",
+            "section",
             "room",
+            "desk",
+            "workspace",
+            "checkInClaim",
+            "placeOperation",
             "roomList"
+          ],
+          "complexTypes": [
+            "mailboxDetails",
+            "placeMode",
+            "assignedPlaceMode",
+            "dropInPlaceMode",
+            "reservablePlaceMode",
+            "resourceLink",
+            "unavailablePlaceMode"
+          ],
+          "childNodes": [
+            {
+              "name": "Maps",
+              "resources": [
+                "buildingMap",
+                "fixtureMap",
+                "footprintMap",
+                "levelMap",
+                "sectionMap",
+                "unitMap"
+              ],
+              "complexTypes": [
+                "importBuildingMapSetting"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Work hours and locations",
+          "resources": [
+            "workHoursAndLocationsSetting",
+            "workPlanOccurrence",
+            "workPlanRecurrence"
+          ],
+          "complexTypes": [
+            "timeOffDetails"
           ]
         }
       ]
@@ -380,6 +424,7 @@
             "cloudPcDeviceImage",
             "cloudPcGalleryImage",
             "cloudPcProvisioningPolicy",
+            "cloudPcReport",
             "cloudPcUserSetting"
           ],
           "complexTypes": [
@@ -511,6 +556,7 @@
         "educationFeedbackOutcome",
         "educationFeedbackResourceOutcome",
         "educationGradingCategory",
+        "educationGradingScheme",
         "educationModule",
         "educationModuleResource",
         "educationOutcome",
@@ -520,10 +566,17 @@
         "educationSubmission",
         "educationSubmissionResource",
         "readingAssignmentSubmission",
-        "reflectCheckInResponse"
+        "readingCoachPassage",
+        "reflectCheckInResponse",
+        "speakerAssignmentSubmission"
       ],
       "complexTypes": [
         "challengingWord",
+        "educationAiFeedbackAudienceEngagementSettings",
+        "educationAiFeedbackContentSettings",
+        "educationAiFeedbackCriteria",
+        "educationAiFeedbackDeliverySettings",
+        "educationAiFeedbackSettings",
         "educationAssignmentClassRecipient",
         "educationAssignmentGrade",
         "educationAssignmentGradeType",
@@ -536,11 +589,17 @@
         "educationExternalResource",
         "educationFeedback",
         "educationFileResource",
+        "educationGradingSchemeGrade",
         "educationLinkResource",
         "educationLinkedAssignmentResource",
         "educationMediaResource",
         "educationPowerPointResource",
         "educationResource",
+       "educationSpeakerCoachAudienceEngagementSettings",
+        "educationSpeakerCoachContentSettings",
+        "educationSpeakerCoachDeliverySettings",
+        "educationSpeakerCoachSettings",
+        "educationSpeakerProgressResource",
         "educationSubmissionIndividualRecipient",
         "educationSubmissionRecipient",
         "educationTeamsAppResource",
@@ -562,7 +621,13 @@
           "overview": "../../resources/engagement-api-overview.md",
           "resources": [
             "community",
-            "engagementAsyncOperation"
+            "employeeExperienceUser",
+            "engagementAsyncOperation",
+            "engagementRole",
+            "engagementRoleMember"
+          ],
+          "complexTypes": [
+            "engagementIdentitySet"
           ]
         }
       ]
@@ -606,6 +671,7 @@
         "microsoft.graph.externalConnectors.properties",
         "microsoft.graph.externalConnectors.property",
         "microsoft.graph.externalConnectors.propertyRule",
+        "microsoft.graph.externalConnectors.principal",
         "publicError",
         "publicErrorDetail",
         "publicInnerError",
@@ -622,17 +688,47 @@
         "OneDrive for Business",
         "OneDrive business",
         "OneDrive personal",
-        "SharePoint"
+        "SharePoint",
+        "SharePoint Embedded"
       ],
       "resources": [
         "drive",
         "driveItem",
+        "driveItemVersion",
         "bundle",
-        "permission",
         "fileStorageContainer",
-        "sharedDriveItem",
+        "fileStorageContainerType",
+        "fileStorageContainerTypeAppPermissionGrant",
+        "fileStorageContainerTypeRegistration",
+        "permission",
         "recycleBin",
-        "recycleBinItem"
+        "recycleBinItem",
+        "sharedDriveItem"
+      ],
+      "complexTypes": [
+        "fileStorageContainerTypeRegistrationSettings",
+        "fileStorageContainerTypeSettings"
+      ],
+      "childNodes": [
+        {
+          "name": "SharePoint migration",
+          "overview": "../../resources/sharepointmigration-api-overview.md",
+          "resources": [
+            "sharePointMigrationEvent",
+            "sharePointMigrationFinishManifestFileUploadEvent",
+            "sharePointMigrationJob",
+            "sharePointMigrationJobCancelledEvent",
+            "sharePointMigrationJobDeletedEvent",
+            "sharePointMigrationJobErrorEvent",
+            "sharePointMigrationJobPostponedEvent",
+            "sharePointMigrationJobProgressEvent",
+            "sharePointMigrationJobQueuedEvent",
+            "sharePointMigrationJobStartEvent"
+          ],
+          "complexTypes": [
+            "sharePointMigrationContainerInfo"
+          ]
+        }
       ]
     },
     {
@@ -650,7 +746,6 @@
           "shouldSort": true,
           "resources": [
             "administrativeUnit",
-            "appRoleAssignment",
             "contract",
             "directory",
             "device",
@@ -980,11 +1075,34 @@
           "name": "Identity and sign-in",
           "shouldSort": true,
           "resources": [
+            "appRoleAssignment",
             "dataPolicyOperation",
-            "oAuth2PermissionGrant",
-            "certificateBasedAuthConfiguration"
+            "oAuth2PermissionGrant"
           ],
           "childNodes": [
+            {
+              "name": "Certificate-based authentication (CBA)",
+              "resources": [
+                "certificateBasedAuthConfiguration"
+              ]
+            },
+            {
+              "name": "Fraud protection provider",
+              "resources": [
+                "fraudProtectionProvider",
+                "arkoseFraudProtectionProvider",
+                "humanSecurityFraudProtectionProvider"
+              ]
+            },
+            {
+              "name": "Web application firewall",
+              "resources": [
+                "webApplicationFirewallProvider",
+                "akamaiWebApplicationFirewallProvider",
+                "cloudFlareWebApplicationFirewallProvider",
+                "webApplicationFirewallVerificationModel"
+              ]
+            },
             {
               "name": "Authentication event listeners",
               "resources": [
@@ -993,6 +1111,8 @@
                 "onAttributeCollectionStartListener",
                 "onAttributeCollectionSubmitListener",
                 "onAuthenticationMethodLoadStartListener",
+                "onEmailOtpSendListener",
+                "onFraudProtectionLoadStartListener",
                 "onInteractiveAuthFlowStartListener",
                 "onTokenIssuanceStartListener",
                 "onUserCreateStartListener"
@@ -1000,10 +1120,12 @@
             },
             {
               "name": "Authentication methods",
+              "shouldSort": true,              
               "overview": "../../resources/authenticationmethods-overview.md",
               "resources": [
                 "authenticationMethod",
                 "emailAuthenticationMethod",
+                "externalAuthenticationMethod",
                 "fido2AuthenticationMethod",
                 "microsoftAuthenticatorAuthenticationMethod",
                 "passwordAuthenticationMethod",
@@ -1012,6 +1134,16 @@
                 "softwareOathAuthenticationMethod",
                 "temporaryAccessPassAuthenticationMethod",
                 "windowsHelloForBusinessAuthenticationMethod"
+              ],
+              "childNodes": [
+                {
+                  "name": "QR code authentication",
+                  "resources": [
+                    "qrCodePinAuthenticationMethod",
+                    "qrCode",
+                    "qrPin"
+                  ]
+                }
               ]
             },
             {
@@ -1020,8 +1152,10 @@
               "resources": [
                 "authenticationMethodsPolicy",
                 "emailAuthenticationMethodConfiguration",
+                "externalAuthenticationMethodConfiguration",
                 "fido2AuthenticationMethodConfiguration",
                 "microsoftAuthenticatorAuthenticationMethodConfiguration",
+                "qrCodePinAuthenticationMethodConfiguration",
                 "smsAuthenticationMethodConfiguration",
                 "temporaryAccessPassAuthenticationMethodConfiguration",
                 "softwareOathAuthenticationMethodConfiguration",
@@ -1075,6 +1209,7 @@
                 "customAuthenticationExtension",
                 "onAttributeCollectionStartCustomExtension",
                 "onAttributeCollectionSubmitCustomExtension",
+                "onOtpSendCustomExtension",
                 "onTokenIssuanceStartCustomExtension"
               ]
             },
@@ -1232,7 +1367,8 @@
         "outlookCategory",
         "mailFolder",
         "mailSearchFolder",
-        "messageRule"
+        "messageRule",
+        "exchangeMessageTrace"
       ],
       "childNodes": [
         {
@@ -1371,7 +1507,7 @@
               ]
             },
             {
-              "name": "Microsoft Entra audit logs",
+              "name": "Microsoft Entra logs",
               "overview": "../../resources/azure-ad-auditlog-overview.md",
               "resources": [
                 "directoryAudit",
@@ -1399,18 +1535,6 @@
           ]
         }
       ]
-        },
-        {
-          "name": "Audit log query",
-          "overview": "../../resources/security-auditlogquery.md",
-          "resources": [
-            "microsoft.graph.security.auditLogQuery",
-            "microsoft.graph.security.auditLogRecord"
-          ],
-          "complexTypes": [
-            "microsoft.graph.security.auditData",
-            "microsoft.graph.security.defaultAuditData"
-          ]
         },
         {
           "name": "Partner billing reports",
@@ -1493,7 +1617,10 @@
             "microsoft.graph.security.incident"
           ],
           "complexTypes": [
-            "microsoft.graph.security.teamsMessageEvidence"
+            "microsoft.graph.security.aiAgentEvidence",
+            "microsoft.graph.security.securityGroupEvidence",
+            "microsoft.graph.security.teamsMessageEvidence",
+            "microsoft.graph.security.userAccount"
           ]
         },
         {
@@ -1520,6 +1647,18 @@
                 "attackSimulationTrainingUserCoverage"
               ]
             }
+          ]
+        },
+        {
+          "name": "Audit log query",
+          "overview": "../../resources/security-auditlogquery.md",
+          "resources": [
+            "microsoft.graph.security.auditLogQuery",
+            "microsoft.graph.security.auditLogRecord"
+          ],
+          "complexTypes": [
+            "microsoft.graph.security.auditData",
+            "microsoft.graph.security.defaultAuditData"
           ]
         },
         {
@@ -1569,7 +1708,7 @@
               "scopeBase",
               "tenantScope",
               "textContent",
-              "userScope" 
+              "userScope"
             ]
         },
         {
@@ -1582,9 +1721,11 @@
             "microsoft.graph.security.ediscoveryCustodian",
             "microsoft.graph.security.ediscoveryNoncustodialDataSource",
             "microsoft.graph.security.ediscoveryHoldPolicy",
+            "microsoft.graph.security.ediscoveryPurgeDataOperation",
             "microsoft.graph.security.ediscoverySearch",
             "microsoft.graph.security.ediscoveryReviewSet",
-            "microsoft.graph.security.ediscoveryReviewTag"
+            "microsoft.graph.security.ediscoveryReviewTag",
+            "microsoft.graph.security.ediscoveryCaseMember"
           ],
           "childNodes": [
             {
@@ -1604,14 +1745,19 @@
           "name": "Identities",
           "resources": [
             "microsoft.graph.security.healthIssue",
-            "microsoft.graph.security.sensor"
+            "microsoft.graph.security.sensor",
+            "microsoft.graph.security.sensorCandidate",
+            "microsoft.graph.security.sensorCandidateActivationConfiguration",
+            "microsoft.graph.security.identityAccounts"
           ],
           "complexTypes": [
             "microsoft.graph.security.deploymentAccessKeyType",
             "microsoft.graph.security.identityContainer",
             "microsoft.graph.security.networkAdapter",
             "microsoft.graph.security.sensorDeploymentPackage",
-            "microsoft.graph.security.sensorSettings"
+            "microsoft.graph.security.sensorSettings",
+            "microsoft.graph.security.invokeActionResult",
+            "microsoft.graph.security.account"
           ]
         },
         {
@@ -1846,19 +1992,17 @@
       ],
       "childNodes": [
         {
-          "name": "AI interactions",
+          "name": "Administration",
           "resources": [
-            "aiInteractionHistory"
+            "microsoft.graph.teamsAdministration.teamsPolicyAssignment",
+            "microsoft.graph.teamsAdministration.teamsPolicyUserAssignment",
+            "microsoft.graph.teamsAdministration.teamsUserConfiguration"
           ],
           "complexTypes": [
-            "aiInteraction",
-            "aiInteractionAttachment",
-            "aiInteractionContext",
-            "aiInteractionLink",
-            "aiInteractionMention",
-            "aiInteractionMentionedIdentitySet",
-            "aiUser",
-            "copilotRoot"
+            "microsoft.graph.teamsAdministration.assignedTelephoneNumber",
+            "microsoft.graph.teamsAdministration.effectivePolicyAssignment",
+            "microsoft.graph.teamsAdministration.policyAssignment",
+            "microsoft.graph.teamsAdministration.policyIdentifierDetail"
           ]
         },
         {
@@ -1878,7 +2022,19 @@
           "resources": [
             "presence"
           ],
+          "complexTypes": [
+            "onlineMeetingSensitivityLabelAssignment",
+            "outOfOfficeSettings",
+            "outOfOfficeSettings",
+            "userWorkLocation"
+          ],
           "childNodes": [
+            {
+              "name": "Ad hoc call",
+              "resources": [
+                "adhocCall"
+              ]
+            },            
             {
               "name": "Calls",
               "resources": [
@@ -1887,6 +2043,16 @@
                 "contentSharingSession",
                 "participant",
                 "addLargeGalleryViewOperation"
+              ]
+            },            
+            {
+              "name": "Call events",
+              "resources": [
+                "callEvent",
+                "emergencyCallEvent"
+              ],
+              "complexTypes": [
+                "emergencyCallerInfo"
               ]
             },
             {
@@ -1904,22 +2070,12 @@
               ]
             },
             {
-              "name": "Copilot settings",
-              "resources": [
-                "copilotAdminLimitedMode"
-              ],
-              "complexTypes": [
-                "copilotAdmin",
-                "copilotAdminSetting",
-                "copilotRoot"
-              ]
-            },
-            {
               "name": "Online meetings",
               "resources": [
                 "meetingAttendanceReport",
                 "attendanceRecord",
                 "onlineMeeting",
+                "onlineMeetingEngagementConversation",
                 "callRecording",
                 "callTranscript"
               ],
@@ -2161,3 +2317,5 @@
     }
   ]
 }
+
+

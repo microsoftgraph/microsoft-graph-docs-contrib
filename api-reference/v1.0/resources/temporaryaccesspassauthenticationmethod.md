@@ -31,7 +31,7 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|The date and time when the Temporary Access Pass was created.|
+|createdDateTime|DateTimeOffset|The date and time when the Temporary Access Pass was created. Inherited from [authenticationMethod](../resources/authenticationmethod.md).|
 |id|String|The identifier of the Temporary Access Pass registered to this user. Inherited from [entity](../resources/entity.md).|
 |isUsable|Boolean|The state of the authentication method that indicates whether it's currently usable by the user.|
 |isUsableOnce|Boolean|Determines whether the pass is limited to a one-time use. If `true`, the pass can be used once; if `false`, the pass can be used multiple times within the Temporary Access Pass lifetime.|

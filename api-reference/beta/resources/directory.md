@@ -3,7 +3,7 @@ title: "directory resource type (deleted items)"
 description: "Deleted items remain available to restore for up to 30 days. After 30 days, the items are permanently deleted."
 ms.localizationpriority: medium
 author: "keylimesoda"
-ms.date: 12/31/2024
+ms.date: 11/17/2025
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 toc.title: Deleted item
@@ -19,6 +19,10 @@ Represents a deleted item in the directory. A deleted item is sent to the delete
 
 Currently, deleted items functionality is supported for the following resources:
 - [administrative unit](../resources/administrativeunit.md)
+- [agentIdentityBlueprint](../resources/agentidentityblueprint.md)
+- [agentIdentity](../resources/agentidentity.md)
+- [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md)
+- [agentUser](../resources/agentuser.md)
 - [application](application.md)
 - [certificateAuthorityDetail](../resources/certificateauthoritydetail.md)
 - [certificateBasedAuthPki](../resources/certificatebasedauthpki.md)

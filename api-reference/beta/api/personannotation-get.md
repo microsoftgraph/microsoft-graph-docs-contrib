@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /me/profile/notes/{id}
 GET /users/{id | userPrincipalName}/profile/notes/{id}
 ```
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a [personAnnotat
   "name": "get_personannotation"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile/notes/{id}
 ```
 
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/me/profile/notes/{id}
   "@odata.type": "microsoft.graph.personAnnotation"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

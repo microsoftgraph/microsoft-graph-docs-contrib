@@ -30,6 +30,7 @@ Represents a legal hold policy. Legal holds are holds that are tied to an eDisco
 |[List](../api/security-ediscoveryholdpolicy-list-usersources.md)|[microsoft.graph.security.userSource](../resources/security-usersource.md) collection|Get a list of the [userSource](../resources/security-usersource.md) objects associated with an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md).|
 |[Create](../api/security-ediscoveryholdpolicy-post-usersources.md)|[microsoft.graph.security.userSource](../resources/security-usersource.md)|Create a new [userSource](../resources/security-usersource.md) object.|
 |[Delete](../api/security-ediscoveryholdpolicy-delete-usersources.md)|None|Delete a [userSource](../resources/security-usersource.md) object associated with an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md).|
+|[Retry policy](../api/security-ediscoveryholdpolicy-retrypolicy.md)|None|Trigger the hold process to restamp all mailboxes and sites in the policy to enforce a hold.|
 
 ## Properties
 |Property|Type|Description|
@@ -44,7 +45,7 @@ Represents a legal hold policy. Legal holds are holds that are tied to an eDisco
 |isEnabled|Boolean|Indicates whether the hold is enabled and actively holding content. |
 |lastModifiedBy|[identitySet](../resources/identityset.md)|the user who last modified the legal hold.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the legal hold was last modified. |
-|status|microsoft.graph.security.policyStatus|The status of the legal hold. Possible values are: `Pending`, `Error`, `Success`.|
+|status|microsoft.graph.security.policyStatus|The status of the legal hold. The possible values are: `Pending`, `Error`, `Success`.|
 
 ### policyStatus values
 

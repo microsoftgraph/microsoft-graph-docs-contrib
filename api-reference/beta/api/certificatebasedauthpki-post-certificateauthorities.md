@@ -1,7 +1,7 @@
 ---
 title: "Create certificateAuthorityDetail"
 description: "Create a new certificateAuthorityDetail object."
-author: "suawat"
+author: "vimrang"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType

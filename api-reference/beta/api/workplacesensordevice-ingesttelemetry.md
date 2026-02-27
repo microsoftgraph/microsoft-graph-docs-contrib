@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /workplace/sensorDevices/ingestTelemetry
 ```
 
@@ -67,7 +67,7 @@ The following example shows a request.
   "name": "workplacesensordevicethis.ingesttelemetry.unique.sensor.type"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/workplace/sensorDevices/ingestTelemetry
 Content-Type: application/json
 
@@ -116,7 +116,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -132,7 +132,7 @@ The following example shows a request.
   "name": "workplacesensordevicethis.ingesttelemetry.same.sensor.type"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/workplace/sensorDevices/ingestTelemetry
 Content-Type: application/json
 
@@ -189,7 +189,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -205,7 +205,7 @@ The following example shows a request.
   "name": "workplacesensordevicethis.ingesttelemetry.multiple.devices"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/workplace/sensorDevices/ingestTelemetry
 Content-Type: application/json
 
@@ -260,6 +260,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

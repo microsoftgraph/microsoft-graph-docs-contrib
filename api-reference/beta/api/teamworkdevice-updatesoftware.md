@@ -11,6 +11,8 @@ ms.date: 04/04/2024
 # teamworkDevice: updateSoftware
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-deprecation-disclaimer](../../includes/beta-deprecation-disclaimer.md)]
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the software for a Microsoft Teams-enabled [device](../resources/teamworkdevice.md). This API triggers a long-running operation.
@@ -31,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /teamwork/devices/{teamworkDeviceId}/updateSoftware
 ```
 
@@ -69,7 +71,7 @@ This method also returns a `409 Conflict` response code if the operation is alre
   "name": "teamworkdevice_updatesoftware"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/teamwork/devices/0f3ce432-e432-0f3c-32e4-3c0f32e43c0f/updateSoftware
 Content-Type: application/json
 Content-length: 64
@@ -117,7 +119,7 @@ Content-length: 64
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 Location: /teamwork/devices/0f3ce432-e432-0f3c-32e4-3c0f32e43c0f/operations/119eb06d-0c4b-4fb3-a754-33dd0d6b618c
 Content-Type: text/plain

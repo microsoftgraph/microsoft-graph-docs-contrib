@@ -47,7 +47,7 @@ Inherits from [scheduleChangeRequest](../resources/schedulechangerequest.md).
 |senderDateTime|DateTimeOffset|The date and time when the sender sent the request. Inherited from [scheduleChangeRequest](../resources/schedulechangerequest.md).|
 |senderMessage|String|The message sent by the sender of the request. Inherited from [scheduleChangeRequest](../resources/schedulechangerequest.md).|
 |senderUserId|String|The user ID of the sender of the request. Inherited from [scheduleChangeRequest](../resources/schedulechangerequest.md).|
-|state|scheduleChangeState|The state of the **scheduleChangeRequest**. Possible values are: `pending`, `approved`, `declined`, `unknownFutureValue`.|
+|state|scheduleChangeState|The state of the **scheduleChangeRequest**. The possible values are: `pending`, `approved`, `declined`, `unknownFutureValue`.|
 
 ## Relationships
 

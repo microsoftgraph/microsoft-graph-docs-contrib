@@ -6,6 +6,7 @@ ms.localizationpriority: high
 ms.subservice: "cloud-communications"
 ms.custom: scenarios:getting-started
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Get change notifications for Microsoft Teams call records
@@ -42,7 +43,7 @@ Change notifications for call records support both `create` and `update` notific
 
 A subscription for `update` changes includes an initial notification when the record is first seen on a particular subscription and any subsequent notifications as that record is modified. Because specific call record attributes depend on client-side signals, which can be subject to delays or interruptions due to network issues, a call record might undergo updates with new or revised information after its initial creation. These changes trigger an `update` notification, and the record's `version` field is incremented to indicate the modification.
 
-The latency of change notifications and the maximum subscription expiration period are defined in the [change notifications overview](/graph/webhooks).
+The latency of change notifications and the maximum subscription expiration period are defined in the [change notifications overview](/graph/change-notifications-overview).
 
 ### Example 2: Subscription request filtered by participant Microsoft Entra Object ID
 
@@ -87,6 +88,6 @@ This filter supports `eq`, `or`, and `in` operators for the `id` attribute of th
 
 ## Related content
 
-- [Microsoft Graph change notifications](/graph/webhooks)
+- [Microsoft Graph change notifications](/graph/change-notifications-overview)
 - [Microsoft Teams API overview](/graph/teams-concept-overview)
 - [Call record resource](/graph/api/resources/callrecords-callrecord)

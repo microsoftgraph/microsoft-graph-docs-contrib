@@ -12,6 +12,8 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-deprecation-disclaimer](../../includes/beta-deprecation-disclaimer.md)]
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents activity details for a Microsoft Teams-enabled [device](../resources/teamworkdevice.md), including the active peripheral devices attached to the device.

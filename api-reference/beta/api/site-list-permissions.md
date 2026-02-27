@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /sites/{sitesId}/permissions
 ```
 
@@ -60,7 +60,7 @@ The following example shows a request.
   "name": "list_permission_site_nav_property"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites/f2d90359-865b-4b6c-8848-d2722dd630e5/permissions
 ```
 
@@ -105,7 +105,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.permission)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

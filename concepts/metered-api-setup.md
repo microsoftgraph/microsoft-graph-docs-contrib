@@ -5,6 +5,7 @@ author: "spgraph-docs-team"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Enable metered APIs and services in Microsoft Graph

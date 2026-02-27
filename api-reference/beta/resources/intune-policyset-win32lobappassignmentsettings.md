@@ -24,10 +24,10 @@ Inherits from [mobileAppAssignmentSettings](../resources/intune-shared-mobileapp
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|notifications|[win32LobAppNotification](../resources/intune-shared-win32lobappnotification.md)|The notification status for this app assignment. Possible values are: `showAll`, `showReboot`, `hideAll`.|
+|notifications|[win32LobAppNotification](../resources/intune-shared-win32lobappnotification.md)|The notification status for this app assignment. The possible values are: `showAll`, `showReboot`, `hideAll`.|
 |restartSettings|[win32LobAppRestartSettings](../resources/intune-shared-win32lobapprestartsettings.md)|The reboot settings to apply for this app assignment.|
 |installTimeSettings|[mobileAppInstallTimeSettings](../resources/intune-shared-mobileappinstalltimesettings.md)|The install time settings to apply for this app assignment.|
-|deliveryOptimizationPriority|[win32LobAppDeliveryOptimizationPriority](../resources/intune-shared-win32lobappdeliveryoptimizationpriority.md)|The delivery optimization priority for this app assignment. This setting is not supported in National Cloud environments. Possible values are: `notConfigured`, `foreground`.|
+|deliveryOptimizationPriority|[win32LobAppDeliveryOptimizationPriority](../resources/intune-shared-win32lobappdeliveryoptimizationpriority.md)|The delivery optimization priority for this app assignment. This setting is not supported in National Cloud environments. The possible values are: `notConfigured`, `foreground`.|
 |autoUpdateSettings|[win32LobAppAutoUpdateSettings](../resources/intune-policyset-win32lobappautoupdatesettings.md)|The auto-update settings to apply for this app assignment.|
 
 ## Relationships

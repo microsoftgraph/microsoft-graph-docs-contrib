@@ -228,7 +228,7 @@ POST https://graph.microsoft.com/beta/security/runHuntingQuery
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

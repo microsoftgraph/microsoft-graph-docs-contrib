@@ -20,31 +20,32 @@ Update the [qrPin](../resources/qrpin.md). Any user can update their own [qrPin]
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-### Permissions acting on self
-
-<!-- { "blockType": "ignored"  } -->
+<!-- { 
+  "blockType": "permissions", 
+  "name": "qrpin_updatepin", 
+  "requestUrls": ["PATCH /users/{usersId}/authentication/qrCodePinMethod/pin/updatepin"]
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/qrpin-updatepin-permissions.md)]
-
-### Permissions acting on other users
-
-<!-- { "blockType": "ignored"  } -->
-[!INCLUDE [permissions-table](../includes/permissions/qrpin-updatepin-2-permissions.md)]
 
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
 ## HTTP request
 
 Update your own QR Code PIN.
-<!-- { "blockType": "ignored" } -->
-``` http
-PATCH /me/authentication/qrCodePinMethod/pin/updatepin
-```
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
-Update another user's QR Code PIN.
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
+PATCH /me/authentication/qrCodePinMethod/pin/updatepin
+```
+
+Update another user's QR Code PIN.
+
+[!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
+
+<!-- { "blockType": "ignored" } -->
+```http
 PATCH /users/{usersId}/authentication/qrCodePinMethod/pin/updatepin
 ```
 
@@ -82,7 +83,7 @@ The following example shows a request.
   "name": "qrpinthis.updatepin"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/me/authentication/qrCodePinMethod/pin/updatePin
 Content-Type: application/json
 
@@ -107,7 +108,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

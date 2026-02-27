@@ -20,7 +20,7 @@ Defines how to target your cross-tenant access policy settings. Settings can be 
 
 |Property|Type|Description|
 |:---|:---|:---|
-| target | String | Defines the target for cross-tenant access policy settings and can have one of the following values: <li> The unique identifier of the user, group, or application <li> `AllUsers` <li> `AllApplications` - Refers to any [Microsoft cloud application](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#microsoft-cloud-applications). <li> `Office365` - Includes the applications mentioned as part of the [Office 365](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#office-365) suite. |
+| target | String | Defines the target for cross-tenant access policy settings and can have one of the following values: <ul><li> The unique identifier of the user, group, or application </li><li> `AllUsers` </li><li> `AllApplications` - Refers to any [Microsoft cloud application](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#microsoft-cloud-applications). </li><li> `Office365` - Includes the applications mentioned as part of the [Office 365](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#office-365) suite.</li></ul> |
 | targetType | crossTenantAccessPolicyTargetType | The type of resource that you want to target. The possible values are: `user`, `group`, `application`, `unknownFutureValue`. |
 
 ## Relationships

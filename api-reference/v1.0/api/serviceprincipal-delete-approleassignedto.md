@@ -4,7 +4,7 @@ description: "Delete an appRoleAssignment granted for a service principal."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "entra-applications"
-author: "sureshja"
+author: "eringreenlee"
 ms.date: 04/18/2024
 ---
 

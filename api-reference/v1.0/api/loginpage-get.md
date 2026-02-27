@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/attackSimulation/loginPages/{loginPageId}
 GET /security/attackSimulation/simulations/{simulationId}/loginPage
 ```
@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "get_loginpage"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/security/attackSimulation/loginPages/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc
 ```
 
@@ -109,7 +109,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.loginPage"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -42,6 +42,7 @@ The authentication method policies APIs are used to manage policy settings. For 
 |[voiceAuthenticationMethodConfiguration](voiceAuthenticationMethodConfiguration.md)|Define users or groups that are enabled to use the voice call authentication method.|
 |[x509CertificateAuthenticationMethodConfiguration](x509CertificateAuthenticationMethodConfiguration.md)|Define users who can use X.509 certificate to sign in to Microsoft Entra ID.|
 |[qrCodePinAuthenticationMethodConfiguration](qrCodePinAuthenticationMethodConfiguration.md)|Define users who can use QRCodePin to sign in to Microsoft Entra ID.|
+|[x509CertificateAuthenticationMethodConfiguration](x509CertificateAuthenticationMethodConfiguration.md)|Define users who can use X.509 certificates to sign in to Microsoft Entra ID.|
 
 ## Policies available to push users to set up authentication methods:
 |Policy       | Description |

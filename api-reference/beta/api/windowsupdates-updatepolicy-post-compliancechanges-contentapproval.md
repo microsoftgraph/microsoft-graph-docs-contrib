@@ -1,11 +1,11 @@
 ---
 title: "Create contentApproval"
 description: "Create a new contentApproval object."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 09/16/2024
+ms.date: 01/27/2026
 ---
 
 # Create contentApproval
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /admin/windows/updates/updatePolicies/{updatePolicyId}/complianceChanges
 ```
 
@@ -66,7 +66,7 @@ The following example shows a request.
   "@odata.type": "microsoft.graph.windowsUpdates.contentApproval"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/a7aa99c1-34a2-850c-5223-7816fde70713/complianceChanges
 Content-Type: application/json
 
@@ -129,7 +129,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.windowsUpdates.contentApproval"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

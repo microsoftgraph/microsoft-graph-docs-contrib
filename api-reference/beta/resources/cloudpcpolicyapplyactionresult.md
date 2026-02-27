@@ -20,7 +20,7 @@ Specifies the policy apply status, apply start time, and finish time. `Frontline
 
 |Property|Type|Description|
 |:---|:---|:---|
-|status|string|The status of the applied operation. Possible values are: `succeeded`, `pending`,`failed`, and `unknownFutureValue`.|
+|status|string|The status of the applied operation. The possible values are: `succeeded`, `pending`,`failed`, and `unknownFutureValue`.|
 |startDateTime|DateTime|The date and time when the operation was applied.|
 |finishDateTime|DateTime|The date and time when the operation finished.|
 

@@ -1269,6 +1269,120 @@
       "CreatedDateTime": "2023-07-25T20:53:38.0340041Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6db39c33-2a22-4a63-a8a3-4db58b2d457b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewAccessPackageAssignmentPolicyScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewAccessPackageAssignmentPolicyScope](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewAccessPackageAssignmentPolicyScope?view=graph-rest-beta) resource.",
+          "Target": "accessReviewAccessPackageAssignmentPolicyScope"
+        },
+        {
+          "Id": "6db39c33-2a22-4a63-a8a3-4db58b2d457b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewInstanceDecisionItemCustomDataProvidedResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewInstanceDecisionItemCustomDataProvidedResource](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemCustomDataProvidedResource?view=graph-rest-beta) resource.",
+          "Target": "accessReviewInstanceDecisionItemCustomDataProvidedResource"
+        },
+        {
+          "Id": "6db39c33-2a22-4a63-a8a3-4db58b2d457b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewInstanceDecisionItemPermission",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewInstanceDecisionItemPermission](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemPermission?view=graph-rest-beta) resource.",
+          "Target": "accessReviewInstanceDecisionItemPermission"
+        },
+        {
+          "Id": "6db39c33-2a22-4a63-a8a3-4db58b2d457b",
+          "ApiChange": "Property",
+          "ChangedApiName": "description",
+          "ChangeType": "Addition",
+          "Description": "Added the **description** property to the [accessReviewInstanceDecisionItemResource](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemResource?view=graph-rest-beta) resource.",
+          "Target": "accessReviewInstanceDecisionItemResource"
+        },
+        {
+          "Id": "6db39c33-2a22-4a63-a8a3-4db58b2d457b",
+          "ApiChange": "Property",
+          "ChangedApiName": "appRoleDisplayName",
+          "ChangeType": "Addition",
+          "Description": "Added the **appRoleDisplayName** property to the [accessReviewInstanceDecisionItemServicePrincipalResource](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemServicePrincipalResource?view=graph-rest-beta) resource.",
+          "Target": "accessReviewInstanceDecisionItemServicePrincipalResource"
+        },
+        {
+          "Id": "6db39c33-2a22-4a63-a8a3-4db58b2d457b",
+          "ApiChange": "Property",
+          "ChangedApiName": "appRoleId",
+          "ChangeType": "Addition",
+          "Description": "Added the **appRoleId** property to the [accessReviewInstanceDecisionItemServicePrincipalResource](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemServicePrincipalResource?view=graph-rest-beta) resource.",
+          "Target": "accessReviewInstanceDecisionItemServicePrincipalResource"
+        },
+        {
+          "Id": "6db39c33-2a22-4a63-a8a3-4db58b2d457b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewPrincipalScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewPrincipalScope](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewPrincipalScope?view=graph-rest-beta) resource.",
+          "Target": "accessReviewPrincipalScope"
+        },
+        {
+          "Id": "6db39c33-2a22-4a63-a8a3-4db58b2d457b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewResourceScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewResourceScope](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewResourceScope?view=graph-rest-beta) resource.",
+          "Target": "accessReviewResourceScope"
+        },
+        {
+          "Id": "6db39c33-2a22-4a63-a8a3-4db58b2d457b",
+          "ApiChange": "Property",
+          "ChangedApiName": "reviewerId",
+          "ChangeType": "Addition",
+          "Description": "Added the **reviewerId** property to the [accessReviewReviewerScope](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewReviewerScope?view=graph-rest-beta) resource.",
+          "Target": "accessReviewReviewerScope"
+        },
+        {
+          "Id": "6db39c33-2a22-4a63-a8a3-4db58b2d457b",
+          "ApiChange": "Property",
+          "ChangedApiName": "scopeType",
+          "ChangeType": "Addition",
+          "Description": "Added the **scopeType** property to the [accessReviewReviewerScope](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewReviewerScope?view=graph-rest-beta) resource.",
+          "Target": "accessReviewReviewerScope"
+        },
+        {
+          "Id": "6db39c33-2a22-4a63-a8a3-4db58b2d457b",
+          "ApiChange": "Property",
+          "ChangedApiName": "applyDescription",
+          "ChangeType": "Addition",
+          "Description": "Added the **applyDescription** property to the [accessReviewInstanceDecisionItem](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItem?view=graph-rest-beta) resource.",
+          "Target": "accessReviewInstanceDecisionItem"
+        },
+        {
+          "Id": "6db39c33-2a22-4a63-a8a3-4db58b2d457b",
+          "ApiChange": "Property",
+          "ChangedApiName": "permission",
+          "ChangeType": "Addition",
+          "Description": "Added the **permission** property to the [accessReviewInstanceDecisionItem](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItem?view=graph-rest-beta) resource.",
+          "Target": "accessReviewInstanceDecisionItem"
+        },
+        {
+          "Id": "6db39c33-2a22-4a63-a8a3-4db58b2d457b",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "instances",
+          "ChangeType": "Addition",
+          "Description": "Added the **instances** relationship to the [accessReviewSet](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewSet?view=graph-rest-beta) resource.",
+          "Target": "accessReviewSet"
+        }
+      ],
+      "Id": "6db39c33-2a22-4a63-a8a3-4db58b2d457b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-17T08:38:23.4725989Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
     }
   ]
 }

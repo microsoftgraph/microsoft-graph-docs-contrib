@@ -45,7 +45,7 @@ Existing properties that aren't included in the request body maintains their pre
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |addedStudentAction|String| Describes if the assignment should be distributed to students who are added after the assignment publication date.|
-|addToCalendarAction|educationAddToCalendarOptions|Optional field to control the **assignment** behavior  for adding **assignments** to students' and teachers' calendars when the **assignment** is published. The possible values are: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `unknownFutureValue`, `studentsOnly`. Use the `Prefer: include - unknown -enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `studentsOnly`. Optional.|
+|addToCalendarAction|educationAddToCalendarOptions|Optional field to control the **assignment** behavior  for adding **assignments** to students' and teachers' calendars when the **assignment** is published. The possible values are: `none`, `studentsAndPublisher`, `studentsAndTeamOwners`, `unknownFutureValue`, `studentsOnly`. Use the `Prefer: include - unknown -enum-members` request header to get the following members in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `studentsOnly`. Optional.|
 |allowLateSubmissions|Boolean| Whether students can send submission after the due date.|
 |allowStudentsToAddResourcesToSubmission|Boolean| Whether a student can add resources to a submission or not. Also, indicates whether all resources in the submission correspond to the assignment resource list. |
 |assignDateTime|DateTimeOffset| Indicates the date to publish the assignment to students. Can't be edited when the assignment is published.|
@@ -55,6 +55,7 @@ Existing properties that aren't included in the request body maintains their pre
 |dueDateTime|DateTimeOffset| Date assignment is due. |
 |grading|[educationAssignmentGradeType](../resources/educationassignmentgradetype.md)| How the assignment is graded.|
 |instructions|itemBody| Instructions to be given to the students along with the assignment. |
+|languageTag|String| Specifies the language in which UI notifications for the assignment are displayed. If **languageTag** isn't provided, the default language is `en-US`. Optional. |
 |notificationChannelUrl|String| The channel to communicate notifications related to the assignment. To change the URL, set the `assignTo` value to [educationAssignmentClassRecipient](../resources/educationassignmentclassrecipient.md). The channel URL can't change after the publication of the assignment.|
 
 ## Response
@@ -148,6 +149,7 @@ Content-type: application/json
     "notificationChannelUrl": null,
     "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2272a7baec-c3e9-4213-a850-f62de0adad5f%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%224679bc1b-90c5-45af-ae1a-d5357672ed39%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22%7D%22,%22channelId%22%3Anull%7D",
     "addedStudentAction": "none",
+    "languageTag": "pt-BR",
     "id": "4679bc1b-90c5-45af-ae1a-d5357672ed39",
     "instructions": {
         "content": "Read chapter 5 and write your review",

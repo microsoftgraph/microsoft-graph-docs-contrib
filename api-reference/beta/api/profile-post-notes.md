@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /me/profile/notes
 POST /users/{id | userPrincipalName}/profile/notes
 ```
@@ -46,7 +46,7 @@ The following table shows the properties that are possible to set within a new [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). The possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |detail|[itemBody](../resources/itembody.md)|Contains the detail of the note itself.|
 |displayName|String|Contains a friendly name for the note.|
 |inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
@@ -64,7 +64,7 @@ If successful, this method returns a `201 Created` response code and a [personAn
   "name": "create_personannotation_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/me/profile/notes
 Content-Type: application/json
 
@@ -115,7 +115,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.personAnnotation"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

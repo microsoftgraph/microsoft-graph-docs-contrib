@@ -20,6 +20,10 @@ Return all directory extension definitions that are registered in a directory, i
 + [device](../resources/device.md)
 + [organization](../resources/organization.md)
 
+> [!IMPORTANT]
+> 
+> This API has a known issue and only processes results for tenants with up to 1,000 service principals; otherwise, it returns an empty response. Use [List extensionProperties (directory extensions)](/graph/api/application-list-extensionproperty) instead.
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions

@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/lifecycleWorkflows/settings
 ```
 
@@ -66,7 +66,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_get_lifecyclemanagementsettings"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/settings
 ```
 
@@ -110,7 +110,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.identityGovernance.lifecycleManagementSettings"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get counts of the visits to the top destination aggregations.
+Get counts of the visits to the top destination aggregations as logged in [Global Secure Access](../resources/networkaccess-global-secure-access-api-overview.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /networkAccess/reports/getDestinationSummaries(startDateTime={startDateTime},endDateTime={endDateTime},aggregatedBy={aggregatedBy})
 ```
 
@@ -68,7 +68,7 @@ The following example shows a request.
   "name": "reportsthis.getdestinationsummaries"
 }
 -->
-``` http
+```http
 GET https://graph.microsoft.com/beta/networkAccess/reports/getDestinationSummaries (aggregatedBy='devices', startDateTime=2023-01-01T00:00:00Z,endDateTime=2023-01-31T00:00:00Z)
 ```
 
@@ -82,7 +82,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.networkaccess.destinationSummary)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

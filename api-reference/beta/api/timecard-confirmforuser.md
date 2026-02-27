@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /teams/{teamsId}/schedule/timeCards/{timeCardId}/confirmForUser
 ```
 
@@ -67,7 +67,7 @@ The following example shows a request.
   "name": "timecardthis.confirmforuser"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/teams/fd15cad8-80f6-484f-9666-3caf695fbf32/schedule/timeCards/TCK_95c44dff-bc12-4de2-8a9a-9772e4421eb4/confirmForUser
 Content-Type: application/json
 
@@ -114,7 +114,7 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.timeCard"
 } -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

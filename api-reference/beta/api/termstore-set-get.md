@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 GET /termStore/sets/{set-id}
 GET /sites/{site-id}/termStore/sets/{set-id}
 ```
@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a [set](../resou
   "sampleKeys": ["8ed8c9ea-7052-4c1d-a4d7-b9c10bffea6f"]
 }-->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/termStore/sets/8ed8c9ea-7052-4c1d-a4d7-b9c10bffea6f
 ```
 
@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/beta/termStore/sets/8ed8c9ea-7052-4c1d-a4d7-b9c1
   "@odata.type": "microsoft.graph.termStore.set"
 } -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -135,7 +135,7 @@ Content-Type: application/json
   "sampleKeys": ["microsoft.sharepoint.com,c6482504-4a85-4b21-858a-7e88dafc8232,d90ca07d-25c0-4ce7-864b-d68b607e697f", "8ed8c9ea-7052-4c1d-a4d7-b9c10bffea6f"]
 }-->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites/microsoft.sharepoint.com,c6482504-4a85-4b21-858a-7e88dafc8232,d90ca07d-25c0-4ce7-864b-d68b607e697f/termStore/sets/8ed8c9ea-7052-4c1d-a4d7-b9c10bffea6f
 ```
 
@@ -177,7 +177,7 @@ GET https://graph.microsoft.com/beta/sites/microsoft.sharepoint.com,c6482504-4a8
   "@odata.type": "microsoft.graph.termStore.set"
 } -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

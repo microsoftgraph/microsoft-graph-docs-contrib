@@ -20,6 +20,8 @@ Represents the details of the Microsoft Entra native Certificate-Based Authentic
 
 Inherits from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).
 
+To manage the PKI instances, use the [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) resource.
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|

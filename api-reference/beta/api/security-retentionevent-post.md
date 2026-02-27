@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/triggers/retentionEvents
 ```
 
@@ -67,7 +67,7 @@ Here's an example of a request.
   "name": "create_retentionevent_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/triggers/retentionEvents
 Content-Type: application/json
 Content-length: 616
@@ -136,7 +136,7 @@ Here's an example of the response.
   "@odata.type": "microsoft.graph.security.retentionEvent"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

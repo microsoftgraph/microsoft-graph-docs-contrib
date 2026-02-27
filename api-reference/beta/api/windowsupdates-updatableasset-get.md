@@ -1,11 +1,11 @@
 ---
 title: "Get updatableAsset"
 description: "Read the properties and relationships of an updatableAsset object."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 09/16/2024
+ms.date: 01/27/2026
 ---
 
 # Get updatableAsset
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /admin/windows/updates/updatableAssets/{updatableAssetId}
 ```
 
@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and an [updatableAss
   "name": "get_updatableasset"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/f5ba7065-7065-f5ba-6570-baf56570baf5
 ```
 
@@ -104,7 +104,7 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/f5ba7
   "@odata.type": "microsoft.graph.windowsUpdates.updatableAsset"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

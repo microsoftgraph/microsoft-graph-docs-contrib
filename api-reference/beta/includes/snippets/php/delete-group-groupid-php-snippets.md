@@ -11,6 +11,6 @@ use Microsoft\Graph\Beta\GraphServiceClient;
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$graphServiceClient->policies()->mobileAppManagementPolicies()->byMobilityManagementPolicyId('mobilityManagementPolicy-id')->includedGroups()->byGroupId('group-id')->ref()->delete()->wait();
+$graphServiceClient->policies()->mobileAppManagementPolicies()->byMobileAppManagementPolicyId('mobileAppManagementPolicy-id')->includedGroups()->byGroupId('group-id')->ref()->delete()->wait();
 
 ```

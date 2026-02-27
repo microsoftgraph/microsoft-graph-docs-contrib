@@ -22,6 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "security_ediscoverycase_post_reviewsets" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoverycase-post-reviewsets-permissions.md)]
+[!INCLUDE [rbac-rbac-ediscovery-reviewset-tag-apis](../includes/rbac-for-apis/rbac-ediscovery-reviewset-tag-apis.md)]
 
 ## HTTP request
 
@@ -29,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets
 ```
 
@@ -65,7 +66,7 @@ The following example shows a request.
   "name": "create_ediscoveryreviewset_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4184-41c6-9eb7-8c8cc3e2288b/reviewSets
 Content-Type: application/json
 
@@ -113,7 +114,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.ediscoveryReviewSet"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

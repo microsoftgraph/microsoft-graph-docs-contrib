@@ -32,7 +32,7 @@ To use the Universal Print service, the user or app's tenant must have an active
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /print/printers/{id}
 GET /print/shares/{id}/printer
 ```
@@ -69,7 +69,7 @@ By default, the response doesn't contain [printerCapabilities](../resources/prin
   "name": "get_printer"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/print/printers/{printerId}
 ```
 
@@ -111,7 +111,7 @@ GET https://graph.microsoft.com/v1.0/print/printers/{printerId}
   "@odata.type": "microsoft.graph.printer"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -193,7 +193,7 @@ Content-Type: application/json
   "name": "get_printer_capabilities"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/print/printers/{printerId}?$select=id,displayName,capabilities
 ```
 
@@ -236,7 +236,7 @@ GET https://graph.microsoft.com/v1.0/print/printers/{printerId}?$select=id,displ
   "@odata.type": "microsoft.graph.printer"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

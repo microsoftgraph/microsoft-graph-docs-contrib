@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /me/profile/addresses/{id}
 PATCH /users/{id | userPrincipalName}/profile/addresses/{id}
 ```
@@ -45,7 +45,7 @@ In the request body, supply the values for relevant fields that should be update
 
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). The possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |detail|[physicalAddress](../resources/physicaladdress.md)|Details about the address itself.|
 |displayName|String|Friendly name the user has assigned to this address. |
 |geoCoordinates|[geoCoordinates](../resources/geocoordinates.md)|The geocoordinates of the address.|
@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and an updated [item
   "name": "update_itemaddress"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/users/{userId}/profile/addresses/{id}
 Content-Type: application/json
 
@@ -113,7 +113,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.itemAddress"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

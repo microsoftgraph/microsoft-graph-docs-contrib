@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
 toc.title: Traffic logs
-ms.date: 08/01/2024
+ms.date: 12/01/2025
 ---
 
 # logs resource type
@@ -15,12 +15,10 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Global Secure Access network logs.
+Represents Global Secure Access traffic logs that provide insight into who is accessing what resources, where they're accessing them from, and what action took place.
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List traffic](../api/networkaccess-logs-list-traffic.md)|[microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) collection|Get the network access traffic events.|
+None.
 
 ## Properties
 None.

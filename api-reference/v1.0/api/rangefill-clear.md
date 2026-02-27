@@ -1,6 +1,6 @@
 ---
-title: "RangeFill: clear"
-description: "Resets the range background."
+title: "rangeFill: clear"
+description: "Reset the range background."
 author: "lumine2008"
 ms.localizationpriority: medium
 ms.subservice: "excel"
@@ -8,11 +8,11 @@ doc_type: apiPageType
 ms.date: 08/21/2024
 ---
 
-# RangeFill: clear
+# rangeFill: clear
 
 Namespace: microsoft.graph
 
-Resets the range background.
+Reset the range background.
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
@@ -42,9 +42,9 @@ POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/ra
 
 If successful, this method returns `200 OK` response code. It doesn't return anything in the response body.
 
-## Example
-Here's an example of how to call this API.
-##### Request
+## Examples
+
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -62,7 +62,7 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/
 
 ---
 
-##### Response
+### Response
 The following example shows the response. 
 <!-- {
   "blockType": "response",

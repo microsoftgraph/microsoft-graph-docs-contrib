@@ -46,7 +46,7 @@ To retrieve details of all role management policy assignments for Microsoft Entr
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /policies/roleManagementPolicyAssignments?$filter=scopeId eq '/' and scopeType eq 'DirectoryRole'
 ```
 
@@ -55,7 +55,7 @@ To retrieve details of all role management policy assignments for groups:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /policies/roleManagementPolicyAssignments?$filter=scopeId eq '{groupId}' and scopeType eq 'Group'
 ```
 
@@ -137,7 +137,7 @@ GET https://graph.microsoft.com/v1.0/policies/roleManagementPolicyAssignments?$f
   "@odata.type": "Collection(microsoft.graph.unifiedRoleManagementPolicyAssignment)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -217,7 +217,7 @@ GET https://graph.microsoft.com/v1.0/policies/roleManagementPolicyAssignments?$f
   "@odata.type": "Collection(microsoft.graph.unifiedRoleManagementPolicy)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -560,7 +560,7 @@ The following example retrieves details of all role management policy assignment
   "name": "list_unifiedrolemanagementpolicyassignment_azureADGroup"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/policies/roleManagementPolicyAssignments?$filter=scopeId eq '60bba733-f09d-49b7-8445-32369aa066b3' and scopeType eq 'Group'
 ```
 
@@ -605,7 +605,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.unifiedRoleManagementPolicyAssignment)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -685,7 +685,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.unifiedRoleManagementPolicyAssignment)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

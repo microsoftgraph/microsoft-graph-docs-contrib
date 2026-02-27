@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [sharePointGroup](../resources/sharepointgroup.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /storage/fileStorage/containers/{fileStorageContainerId}/sharePointGroups/{sharePointGroupId}
 ```
 
@@ -70,7 +70,7 @@ The following example shows a request.
   "name": "update_sharePointGroup",
   "@odata.type": "microsoft.graph.sharePointGroup"
 } -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/12
 Content-Type: application/json
 
@@ -117,7 +117,7 @@ The following example shows the response.
   "truncated": true,
   "@odata.type": "microsoft.graph.sharePointGroup"
 } -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

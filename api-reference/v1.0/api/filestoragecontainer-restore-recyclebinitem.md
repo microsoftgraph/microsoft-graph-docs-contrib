@@ -58,13 +58,13 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "restore_filestoragecontainer_recyclebinitem",
+  "name": "restore_filestoragecontainer_recyclebinitem1",
   "@odata.type": "Collection(microsoft.graph.recycleBinItem)"
 }
 -->
 
 ``` http
-POST  https://graph.microsoft.com/v1.0/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/recycleBin/items/restore
+POST https://graph.microsoft.com/v1.0/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/recycleBin/items/restore
 Content-Type: application/json
 
 {
@@ -73,7 +73,7 @@ Content-Type: application/json
 ```
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/restore-filestoragecontainer-recyclebinitem-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/restore-filestoragecontainer-recyclebinitem1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -106,4 +106,3 @@ Content-Type: application/json
   ]
 }
 ```
-

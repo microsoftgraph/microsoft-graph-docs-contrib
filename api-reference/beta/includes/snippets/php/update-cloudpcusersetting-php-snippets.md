@@ -12,6 +12,7 @@ use Microsoft\Graph\Beta\Generated\Models\CloudPcRestorePointFrequencyType;
 use Microsoft\Graph\Beta\Generated\Models\CloudPcCrossRegionDisasterRecoverySetting;
 use Microsoft\Graph\Beta\Generated\Models\CloudPcDisasterRecoveryNetworkSetting;
 use Microsoft\Graph\Beta\Generated\Models\CloudPcDisasterRecoveryType;
+use Microsoft\Graph\Beta\Generated\Models\CloudPcProvisioningSourceType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -38,6 +39,7 @@ $crossRegionDisasterRecoverySetting->setDisasterRecoveryNetworkSetting($crossReg
 $crossRegionDisasterRecoverySetting->setDisasterRecoveryType(new CloudPcDisasterRecoveryType('premium'));
 $crossRegionDisasterRecoverySetting->setUserInitiatedDisasterRecoveryAllowed(true);
 $requestBody->setCrossRegionDisasterRecoverySetting($crossRegionDisasterRecoverySetting);
+$requestBody->setProvisioningSourceType(new CloudPcProvisioningSourceType('image'));
 $requestBody->setLocalAdminEnabled(false);
 $requestBody->setResetEnabled(true);
 

@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /solutions/backupRestore/restorePoints/search
 ```
 
@@ -86,7 +86,7 @@ The following example shows a request.
   "name": "restorepoint_search"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/restorePoints/search
 Content-Type: application/json
 
@@ -141,7 +141,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.restorePointSearchResponse"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -211,18 +211,19 @@ The following example shows a request.
   "name": "restorepoint_search_artifactquery"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/solutions/backupRestore/restorePoints/search
 Content-Type: application/json
 
 {
   "artifactQuery": {
-    "queryExpression": "(Sender -eq 'abc@contoso.com') -and (Subject -like '*Check email*' -or Subject -like ' Important') -and (HasAttachment -eq 'true') -and (PitrDumpsterActionTriggeredTime -gt '{2024-09-21T08:20:00.0000000Z}')",
+    "queryExpression": "(Sender -like 'abc@contoso.com') -and (Subject -like '*Check email*' -or Subject -like ' Important') -and (HasAttachment -eq 'true')",
     "artifactType": "message"
   },
   "protectionUnitIds": ["23014d8c-71fe-4d00-a01a-31850bc5b42a"],
   "protectionTimePeriod": {
-    "startDateTime": "2021-01-01T00:00:00Z"
+    "startDateTime": "2021-01-01T00:00:00Z",
+    "endDateTime": "2021-01-30T00:00:00Z"
   },
   "restorePointPreference": "oldest"
 }
@@ -268,7 +269,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.restorePointSearchResponse"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

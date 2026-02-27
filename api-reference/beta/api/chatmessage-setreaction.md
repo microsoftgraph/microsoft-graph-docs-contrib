@@ -45,7 +45,7 @@ To set a reaction to a **chatMessage** in a **channel**:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /teams/{teamsId}/channels/{channelId}/messages/{chatMessageId}/setReaction
 POST /teams/{teamId}/channels/{channelId}/messages/{messageId}/replies/{replyId}/setReaction
 ```
@@ -55,7 +55,7 @@ To set a reaction to a **chatMessage** in a **chat**:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /chats/{chatId}/messages/{chatMessageId}/setReaction
 ```
 
@@ -92,7 +92,7 @@ POST https://graph.microsoft.com/beta/chats/chatId/messages/messageId/setReactio
   "blockType": "response"
 } -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -112,7 +112,7 @@ POST https://graph.microsoft.com/beta/teams/teamsid/channels/channelId/messages/
   "blockType": "response"
 } -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -133,6 +133,6 @@ POST https://graph.microsoft.com/beta/teams/teamsid/channels/channelId/messages/
   "blockType": "response"
 } -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

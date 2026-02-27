@@ -7,6 +7,7 @@ doc_type: conceptualPageType
 ms.subservice: search
 description: "Use the Microsoft 365 Copilot connectors SDK to create custom Copilot connectors."
 ms.date: 11/07/2024
+ms.topic: concept-article
 ---
 
 # Copilot connectors SDK overview

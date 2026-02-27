@@ -1,7 +1,7 @@
 ---
 title: "certificateBasedAuthPki: upload"
 description: "Append additional certificate authority details to a certificateBasedAuthPki resource."
-author: "suawat"
+author: "vimrang"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType

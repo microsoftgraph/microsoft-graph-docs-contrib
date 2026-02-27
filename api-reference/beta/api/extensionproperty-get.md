@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /applications/{application ObjectId}/extensionProperties/{extensionPropertyId}
 GET /applications(appId='{appId}')/extensionProperties/{extensionPropertyId}
 ```
@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and an [extensionPro
   "name": "get_extensionproperty"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/applications/fd918e4b-c821-4efb-b50a-5eddd23afc6f/extensionProperties/1f0f15e3-925d-40f0-8fc8-9d3ad135bce0
 ```
 
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/applications/fd918e4b-c821-4efb-b50a-5eddd2
   "@odata.type": "microsoft.graph.extensionProperty"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

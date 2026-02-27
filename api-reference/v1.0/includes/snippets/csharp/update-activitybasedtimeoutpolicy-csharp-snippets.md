@@ -11,12 +11,7 @@ using Microsoft.Graph.Models;
 
 var requestBody = new ActivityBasedTimeoutPolicy
 {
-	Definition = new List<string>
-	{
-		"definition-value",
-	},
-	DisplayName = "displayName-value",
-	IsOrganizationDefault = true,
+	DisplayName = "Idle timeout for all apps",
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

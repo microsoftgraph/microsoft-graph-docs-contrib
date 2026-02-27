@@ -52,7 +52,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 You can use the `$filter` query parameter to filter contacts based on their email addresses:
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET https://graph.microsoft.com/v1.0/me/contacts?$filter=emailAddresses/any(a:a/address eq 'garth@contoso.com')
 ```
 

@@ -19,6 +19,7 @@ Get a list of the [customAuthenticationExtension](../resources/customauthenticat
 - [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) resource type.
 - [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) resource type.
 - [onOtpSendCustomExtension](../resources/onOtpSendCustomExtension.md) resource type.
+- [onPasswordSubmitCustomExtension](../resources/onpasswordsubmitcustomextension.md) resource type.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -37,7 +38,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identity/customAuthenticationExtensions
 ```
 
@@ -66,7 +67,7 @@ The following example shows a request.
   "name": "list_customauthenticationextension"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identity/customAuthenticationExtensions
 ```
 
@@ -109,7 +110,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.customAuthenticationExtension)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

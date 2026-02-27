@@ -4,7 +4,7 @@ description: "Get newly created, updated, or deleted service principals without 
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.subservice: "entra-applications"
-author: "sureshja"
+author: "Jackson-Woods"
 ms.date: 10/22/2024
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get newly created, updated, or deleted service principals without having to perform a full read of the entire resource collection. For more information, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview) for details.
+Get newly created, updated, or deleted service principals, agent identities, and agent identity blueprints without having to perform a full read of the entire resource collection. For more information, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview) for details.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

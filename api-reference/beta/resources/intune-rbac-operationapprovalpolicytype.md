@@ -23,10 +23,10 @@ The set of available policy types that can be configured for approval. The polic
 |:---|:---|:---|
 |unknown|0|Default. Indicates that the configured policy type is unknown. Not a valid policy type in an OperationApprovalPolicy.|
 |deviceAction|1|Indicates that the configured policy type is for a Device Action. Not in use at this time.|
-|deviceWipe|2|Indicates that the configured policy type is for a Device Wipe Action. Not in use at this time.|
-|deviceRetire|3|Indicates that the configured policy type is for a Device Retire Action. Not in use at this time.|
+|deviceWipe|2|Indicates that the configured policy type is for a Device Wipe Action.|
+|deviceRetire|3|Indicates that the configured policy type is for a Device Retire Action|
 |deviceRetireNonCompliant|4|Indicates that the configured policy type is for a Retire Non-Compliant Devices Action. Not in use at this time.|
-|deviceDelete|5|Indicates that the configured policy type is for a Device Delete Action. Not in use at this time.|
+|deviceDelete|5|Indicates that the configured policy type is for a Device Delete Action.|
 |deviceLock|6|Indicates that the configured policy type is for a Device Lock Action. Not in use at this time.|
 |deviceErase|7|Indicates that the configured policy type is for a Device Erase Action. Not in use at this time.|
 |deviceDisableActivationLock|8|Indicates that the configured policy type is for a Device Disable Activation Lock Action. Not in use at this time.|
@@ -43,3 +43,12 @@ The set of available policy types that can be configured for approval. The polic
 |deviceResetPasscode|19|Indicates that the configured policy type is for a Device Reset Passcode Action. Not in use at this time.|
 |unknownFutureValue|21|Evolvable enumeration sentinel value. Do not use.|
 |operationApprovalPolicy|22|Indicates that the configured policy type is for an Operation Approval Policy.|
+|autopilot|23|Indicates that the configured policy type is for Autopilot operations. Not in use at this time.|
+|windows365|24|Indicates that the configured policy type is for Windows 365 operations. Not in use at this time.|
+|deviceEnrollment|25|Indicates that the configured policy type is for Device Enrollment operations. Not in use at this time.|
+|deviceUpdate|26|Indicates that the configured policy type is for Device Update operations. Not in use at this time.|
+|enrollmentRestriction|27|Indicates that the configured policy type is for Enrollment Restriction operations. Not in use at this time.|
+|tenantConfiguration|28|Indicates that the configured policy type is for Tenant Configuration operations.|
+|tunnel|29|Indicates that the configured policy type is for Tunnel operations. Not in use at this time.|
+|endpointPrivilegeManagement|30|Indicates that the configured policy type is for Endpoint Privilege Management. Not in use at this time.|
+|deviceSecurityAction|31|Indicates that the configured policy type is for Device Security Action. Not in use at this time.|

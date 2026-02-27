@@ -36,6 +36,7 @@ Contains content properties for a specific app version. Each mobileAppContent ca
 |Relationship|Type|Description|
 |:---|:---|:---|
 |files|[mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md) collection|The list of files for this app content version.|
+|scripts|[mobileAppContentScript](../resources/intune-apps-mobileappcontentscript.md) collection|The list of scripts for this app content version.|
 |containedApps|[mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md) collection|The collection of contained apps in a MobileLobApp acting as a package.|
 
 ## JSON Representation

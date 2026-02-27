@@ -15,7 +15,7 @@ Namespace: microsoft.graph.callRecords
 Retrieve the properties and relationships of a [callRecord](../resources/callrecords-callrecord.md) object.
 
 You can get the **id** of a **callRecord** in two ways:
-* Subscribe to [change notifications](/graph/api/resources/webhooks?view=graph-rest-1.0&preserve-view=true) to the `/communications/callRecords` endpoint.
+* Subscribe to [change notifications](/graph/api/resources/change-notifications-api-overview) to the `/communications/callRecords` endpoint.
 * Use the **callChainId** property of a [call](../resources/call.md). The call record is available only after the associated call is completed.
 
 > [!WARNING]

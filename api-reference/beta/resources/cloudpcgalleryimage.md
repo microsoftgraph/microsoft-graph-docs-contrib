@@ -37,9 +37,9 @@ Represents the gallery image resource of the current organization that can be us
 |sizeInGB|Int32|Indicates the size of this image in gigabytes. For example, `64`. Read-only.|
 |skuName|String|The SKU name of this image that is passed to ARM to retrieve the image resource. Read-only.|
 |startDate|Date| The date when the Cloud PC image is available for provisioning new Cloud PCs. For example, `2022-09-20`. Read-only.|
-|status|cloudPcGalleryImageStatus|The status of the gallery image on the Cloud PC. Possible values are: `supported`, `supportedWithWarning`, `notSupported`, `unknownFutureValue`. The default value is `supported`. Read-only.|
+|status|cloudPcGalleryImageStatus|The status of the gallery image on the Cloud PC. The possible values are: `supported`, `supportedWithWarning`, `notSupported`, `unknownFutureValue`. The default value is `supported`. Read-only.|
 |offer (deprecated)|String|The offer name of this gallery image that is passed to ARM to retrieve the image resource. Read-only. The **offer** property is deprecated and will stop returning data on January 31, 2024. Going forward, use the **offerName** property.|
-|offerDisplayName (deprecated)|String|The official display offer name of this gallery image. For example, `Windows 10 Enterprise + OS Optimizations`. The **offerDisplayName** property is deprecated and will stop returning data on January 31, 2024.|
+|offerDisplayName (deprecated)|String|The official display offer name of this gallery image. For example, `Windows 11 Enterprise`. The **offerDisplayName** property is deprecated and will stop returning data on January 31, 2024.|
 |publisher (deprecated)|String|The publisher name of this gallery image that is passed to ARM to retrieve the image resource. Read-only. The **publisher** property is deprecated and will stop returning data on January 31, 2024. Going forward, use the **publisherName** property.|
 |recommendedSku (deprecated)|String|The recommended Cloud PC SKU for this gallery image. Read-only. The **recommendedSku** property is deprecated and will stop returning data on January 31, 2024.|
 |sku (deprecated)|String|The SKU name of this image that is passed to ARM to retrieve the image resource. Read-only. The **sku** property is deprecated and will stop returning data on January 31, 2024. Going forward, use the **skuName** property.|

@@ -45,7 +45,7 @@ The following tables show the least privileged permission or permissions require
 
 List your own authentication methods.
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /me/authentication/methods
 ```
 
@@ -53,7 +53,7 @@ GET /me/authentication/methods
 
 List your own or another user's authentication methods.
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /users/{id | userPrincipalName}/authentication/methods
 ```
 

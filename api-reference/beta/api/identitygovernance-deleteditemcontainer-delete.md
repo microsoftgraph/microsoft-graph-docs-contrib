@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /identityGovernance/lifecycleWorkflows/deletedItems/workflows/{workflowId}/
 ```
 
@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "lifecycleworkflows_delete_deleteditems"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/deletedItems/workflows/{workflowId}
 ```
 
@@ -105,6 +105,6 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/de
   
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

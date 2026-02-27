@@ -9,11 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ActivityBasedTimeoutPolicy activityBasedTimeoutPolicy = new ActivityBasedTimeoutPolicy();
-LinkedList<String> definition = new LinkedList<String>();
-definition.add("definition-value");
-activityBasedTimeoutPolicy.setDefinition(definition);
-activityBasedTimeoutPolicy.setDisplayName("displayName-value");
-activityBasedTimeoutPolicy.setIsOrganizationDefault(true);
+activityBasedTimeoutPolicy.setDisplayName("Idle timeout for all apps");
 ActivityBasedTimeoutPolicy result = graphClient.policies().activityBasedTimeoutPolicies().byActivityBasedTimeoutPolicyId("{activityBasedTimeoutPolicy-id}").patch(activityBasedTimeoutPolicy);
 
 

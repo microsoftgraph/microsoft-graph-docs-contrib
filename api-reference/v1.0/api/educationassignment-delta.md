@@ -148,6 +148,7 @@ Content-length: 344
             "webUrl": null,
             "addToCalendarAction": "none",
             "addedStudentAction": "none",
+            "languageTag": "en-US",
             "grading": null,
             "id": "3b870c07-21fe-47fb-8562-cdd6f2c281d6",
             "instructions": {

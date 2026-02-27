@@ -17,7 +17,7 @@ Metadata for the given object.
 ## Properties
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|key|attributeDefinitionMetadata|Possible values are: `BaseAttributeName`, `ComplexObjectDefinition`, `IsContainer`, `IsCustomerDefined`, `IsDomainQualified`, `LinkPropertyNames`, `LinkTypeName`, `MaximumLength`, `ReferencedProperty`. |
+|key|attributeDefinitionMetadata|The possible values are: `BaseAttributeName`, `ComplexObjectDefinition`, `IsContainer`, `IsCustomerDefined`, `IsDomainQualified`, `LinkPropertyNames`, `LinkTypeName`, `MaximumLength`, `ReferencedProperty`. |
 |value|String|Value of the metadata property.|
 
 ### Supported key-value pairs

@@ -63,7 +63,7 @@ Inherits from [appleDeviceFeaturesConfigurationBase](../resources/intune-devicec
 |powerOffDisabledWhileLoggedIn|Boolean|Whether the Power Off menu item on the login window will be disabled while the user is logged in.|
 |logOutDisabledWhileLoggedIn|Boolean|Whether the Log Out menu item on the login window will be disabled while the user is logged in.|
 |screenLockDisableImmediate|Boolean|Whether to disable the immediate screen lock functions.|
-|associatedDomains|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|DEPRECATED: use appAssociatedDomains instead. Gets or sets a list that maps apps to their associated domains. The key should match the app's ID, and the value should be a string in the form of "service:domain" where domain is a fully qualified hostname (e.g. webcredentials:example.com). This collection can contain a maximum of 500 elements.|
+|associatedDomains|[keyValuePair](../resources/intune-deviceconfig-keyvaluepair.md) collection|DEPRECATED: use appAssociatedDomains instead. Gets or sets a list that maps apps to their associated domains. The key should match the app's ID, and the value should be a string in the form of "service:domain" where domain is a fully qualified hostname (e.g. webcredentials:example.com). This collection can contain a maximum of 500 elements.|
 |appAssociatedDomains|[macOSAssociatedDomainsItem](../resources/intune-deviceconfig-macosassociateddomainsitem.md) collection|Gets or sets a list that maps apps to their associated domains. Application identifiers must be unique. This collection can contain a maximum of 500 elements.|
 |singleSignOnExtension|[singleSignOnExtension](../resources/intune-deviceconfig-singlesignonextension.md)|Gets or sets a single sign-on extension profile. Deprecated: use MacOSSingleSignOnExtension instead.|
 |macOSSingleSignOnExtension|[macOSSingleSignOnExtension](../resources/intune-deviceconfig-macossinglesignonextension.md)|Gets or sets a single sign-on extension profile.|
@@ -192,61 +192,34 @@ Here is a JSON representation of the resource.
     }
   ],
   "singleSignOnExtension": {
-    "@odata.type": "microsoft.graph.credentialSingleSignOnExtension",
+    "@odata.type": "microsoft.graph.redirectSingleSignOnExtension",
     "extensionIdentifier": "String",
     "teamIdentifier": "String",
-    "domains": [
-      "String"
-    ],
-    "realm": "String",
     "configurations": [
       {
         "@odata.type": "microsoft.graph.keyStringValuePair",
         "key": "String",
         "value": "String"
       }
+    ],
+    "urlPrefixes": [
+      "String"
     ]
   },
   "macOSSingleSignOnExtension": {
-    "@odata.type": "microsoft.graph.macOSKerberosSingleSignOnExtension",
-    "realm": "String",
-    "domains": [
-      "String"
+    "@odata.type": "microsoft.graph.macOSRedirectSingleSignOnExtension",
+    "extensionIdentifier": "String",
+    "teamIdentifier": "String",
+    "configurations": [
+      {
+        "@odata.type": "microsoft.graph.keyStringValuePair",
+        "key": "String",
+        "value": "String"
+      }
     ],
-    "blockAutomaticLogin": true,
-    "cacheName": "String",
-    "credentialBundleIdAccessControlList": [
+    "urlPrefixes": [
       "String"
-    ],
-    "domainRealms": [
-      "String"
-    ],
-    "isDefaultRealm": true,
-    "passwordBlockModification": true,
-    "passwordExpirationDays": 1024,
-    "passwordExpirationNotificationDays": 1024,
-    "userPrincipalName": "String",
-    "passwordRequireActiveDirectoryComplexity": true,
-    "passwordPreviousPasswordBlockCount": 1024,
-    "passwordMinimumLength": 1024,
-    "passwordMinimumAgeDays": 1024,
-    "passwordRequirementsDescription": "String",
-    "requireUserPresence": true,
-    "activeDirectorySiteCode": "String",
-    "passwordEnableLocalSync": true,
-    "blockActiveDirectorySiteAutoDiscovery": true,
-    "passwordChangeUrl": "String",
-    "modeCredentialUsed": "String",
-    "usernameLabelCustom": "String",
-    "userSetupDelayed": true,
-    "signInHelpText": "String",
-    "kerberosAppsInBundleIdACLIncluded": true,
-    "managedAppsInBundleIdACLIncluded": true,
-    "credentialsCacheMonitored": true,
-    "preferredKDCs": [
-      "String"
-    ],
-    "tlsForLDAPRequired": true
+    ]
   },
   "contentCachingEnabled": true,
   "contentCachingType": "String",

@@ -1,18 +1,22 @@
 ---
 author: spgraph-docs-team
-ms.date: 09/10/2017
-title: Send an invite to access an item
+ms.date: 09/16/2025
+title: "driveItem: invite"
 ms.localizationpriority: medium
 ms.subservice: "sharepoint"
-description: "Sends a sharing invitation for a driveItem."
+description: "Send a sharing invitation for a driveItem."
 doc_type: apiPageType
 ---
-# Send a sharing invitation
+
+# driveItem: invite
 
 Namespace: microsoft.graph
 
-Sends a sharing invitation for a **driveItem**.
-A sharing invitation provides permissions to the recipients and optionally sends them an email with a [sharing link][].
+Send a sharing invitation for a [driveItem](../resources/driveitem.md). A sharing invitation provides permissions to the recipients and, optionally, sends them an email to notify them that the item was shared.
+
+> [!IMPORTANT]
+> * Permissions can’t be created or modified on the root **driveItem** of [drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive for home).
+> * _New_ guests can't be invited using app-only access. Existing guests can be invited using app-only requests.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -63,29 +67,53 @@ In the request body, provide a JSON object with the following parameters.
 }
 ```
 
-| Parameter        | Type                           | Description
-|:-----------------|:-------------------------------|:-------------------------
-| recipients       | [driveRecipient][] collection | A collection of recipients who receive access and the sharing invitation.
-| message          | String                         | A plain text formatted message that is included in the sharing invitation. Maximum length 2,000 characters.
-| requireSignIn    | Boolean                        | Specifies whether the recipient of the invitation is required to sign-in to view the shared item.
-| sendInvitation   | Boolean                        | If true, a [sharing link][] is sent to the recipient. Otherwise, a permission is granted directly without sending a notification.
-| roles            | String collection             | Specifies the roles that are to be granted to the recipients of the sharing invitation.
-| expirationDateTime | DateTimeOffset                       | Specifies the **dateTime** after which the permission expires. For OneDrive for Business and SharePoint, **xpirationDateTime** is only applicable for **sharingLink** permissions. Available on OneDrive for Business, SharePoint, and premium personal OneDrive accounts.
-| password           | String                         | The password set on the invite by the creator. Optional and OneDrive Personal only.
-| retainInheritedPermissions | Boolean                        | Optional. If `true` (default), any existing inherited permissions are retained on the shared item when sharing this item for the first time. If `false`, all existing permissions are removed when sharing for the first time.
+| Parameter        | Type                           | Description |
+|:-----------------|:-------------------------------|:-------------------------|
+| recipients       | [driveRecipient][] collection | A collection of recipients who receive access and the sharing invitation.|
+| message          | String                         | A plain text formatted message that is included in the sharing invitation. Maximum length 2,000 characters.|
+| requireSignIn    | Boolean                        | Specifies whether the recipient of the invitation is required to sign-in to view the shared item.|
+| sendInvitation   | Boolean                        | If true, a [sharing link][] is sent to the recipient. Otherwise, a permission is granted directly without sending a notification.|
+| roles            | String collection             | Specifies the roles that are to be granted to the recipients of the sharing invitation.|
+| expirationDateTime | DateTimeOffset                       | Specifies the **dateTime** after which the permission expires. For OneDrive for work or school and SharePoint, **expirationDateTime** is only applicable for **sharingLink** permissions. Available on OneDrive for work or school, SharePoint, and premium personal OneDrive accounts. |
+| password           | String                         | The password set on the invite by the creator. Optional and OneDrive for home only. |
+| retainInheritedPermissions | Boolean                        | Optional. If `true` (default), any existing inherited permissions are retained on the shared item when sharing this item for the first time. If `false`, all existing permissions are removed when sharing for the first time. |
 
-## Example
+## Response
 
-This example sends a sharing invitation to a user with email address "ryan@contoso.com" with a message about a file being collaborated on.
-The invitation grants Ryan read-write access to the file.
+If successful, this method returns a `200 OK` response code and a collection of [permission](../resources/permission.md) objects in the response body.
 
-### HTTP request
+For more information about how errors are returned, see [Error responses](/graph/errors).
 
-If successful, this method returns `200 OK` response code and [permission](../resources/permission.md) collection object in the response body.
+### Partial success response
 
+When inviting multiple recipients, it's possible for the notification to succeed for some and fail for others. In this case, the service returns a partial success response with a `207 Multi-Status` status code. When partial success is returned, the response for each failed recipient contains an **error** object with information about what went wrong and how to fix it. For more information, see [Example 2](#example-2-send-sharing-invitation-with-partial-success).
+
+### Send invitation notification errors
+
+The following table shows some other errors that your app might encounter within the nested **innererror** objects when sending notification fails. Apps aren't required to handle these errors.
+
+| Code                           | Description                                                                          |
+|:-------------------------------|:--------------------------------------------------------------------------------------
+| accountVerificationRequired    | Account verification is required to unblock sending notifications. |
+| hipCheckRequired               | Need to solve HIP (Host Intrusion Prevention) check to unblock sending notifications. |
+| exchangeInvalidUser            | Current user's mailbox wasn't found. |
+| exchangeOutOfMailboxQuota      | Out of quota. |
+| exchangeMaxRecipients          | Exceeded maximum number of recipients that can be sent notifications at the same time. |
+
+>**Note:** The service can add new error codes or stop returning old ones at any time.
+
+## Examples
+
+### Example 1: Send a sharing invitation
+
+The following example shows how to send a sharing invitation to a user with the email address `ryan@contoso.com`, including a message regarding a file under collaboration. The invitation grants Ryan read-write access to the file.
+
+#### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "send-sharing-invite", "scopes": "files.readwrite", "target": "action" } -->
+<!-- { "blockType": "request", "name": "send-sharing-invite", "@odata.type": "microsoft.graph.inviteParameters", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
 POST https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/invite
@@ -136,7 +164,7 @@ Content-type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -180,19 +208,126 @@ Content-type: application/json
 }
 ```
 
-## Remarks
+### Example 2: Send sharing invitation with partial success
 
-* [Drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive personal) cannot create or modify permissions on the root DriveItem.
-* For a list of available roles, see [roles property values](../resources/permission.md#roles-property-values).
+The following example shows a request that partially succeeds.
 
-## Error responses
+#### Request
+The following example shows a request.
+# [HTTP](#tab/http)
+<!-- { "blockType": "request", "name": "send-sharing-invite-with-partial-success", "@odata.type": "microsoft.graph.inviteParameters", "scopes": "files.readwrite", "target": "action" } -->
 
-Read the [Error Responses][error-response] topic for more information about
-how errors are returned.
+```http
+POST https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/invite
+Content-type: application/json
 
+{
+  "recipients": [
+    {
+      "email": "helga@contoso.com"
+    },
+    {
+      "email": "robin@contoso.com"
+    }
+  ],
+  "message": "Here's the file that we're collaborating on.",
+  "requireSignIn": true,
+  "sendInvitation": true,
+  "roles": [ "write" ],
+  "password": "password123",
+  "expirationDateTime": "2018-07-15T14:00:00.000Z"
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/send-sharing-invite-with-partial-success-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/send-sharing-invite-with-partial-success-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/send-sharing-invite-with-partial-success-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/send-sharing-invite-with-partial-success-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/send-sharing-invite-with-partial-success-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/send-sharing-invite-with-partial-success-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/send-sharing-invite-with-partial-success-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the partial response.
+
+<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
+
+```http
+HTTP/1.1 207 Multi-Status
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "grantedTo": {
+        "user": {
+          "displayName": "Helga Hammeren",
+          "id": "5D8CA5D0-FFF8-4A97-B0A6-8F5AEA339681"
+        }
+      },
+      "id": "1EFG7CA3-7A19-4D57-8CEF-149DB9DDFA62",
+      "invitation": {
+        "email": "helga@contoso.com",
+        "signInRequired": true
+      },
+      "roles": [ "write" ],
+      "error": {
+        "code":"notAllowed",
+        "message":"Account verification needed to unblock sending emails.",
+        "localizedMessage": "Kontobestätigung erforderlich, um das Senden von E-Mails zu entsperren.",
+        "fixItUrl":"http://g.live.com/8SESkydrive/VerifyAccount",
+        "innererror":{
+          "code":"accountVerificationRequired"
+        }
+      }
+    },
+    {
+      "grantedTo": {
+        "user": {
+          "displayName": "Robin Danielsen",
+          "id": "42F177F1-22C0-4BE3-900D-4507125C5C20"
+        }
+      },
+      "id": "CCFC7CA3-7A19-4D57-8CEF-149DB9DDFA62",
+      "invitation": {
+        "email": "robin@contoso.com",
+        "signInRequired": true
+      },
+      "roles": [ "write" ],
+      "expirationDateTime": "2018-07-15T14:00:00.000Z"
+    }
+  ]
+}
+```
+
+## Related content
+
+For a list of available roles, see [roles property values](../resources/permission.md#roles-property-values).
 
 [driveRecipient]: ../resources/driverecipient.md
-[error-response]: /graph/errors
 [sharing link]: ../resources/permission.md#sharing-links
 
 <!-- {

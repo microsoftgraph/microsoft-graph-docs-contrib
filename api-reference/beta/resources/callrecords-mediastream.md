@@ -20,7 +20,7 @@ Represents information about a media stream between two endpoints in a call.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|audioCodec|microsoft.graph.callRecords.audioCodec|Codec name used to encode audio for transmission on the network. Possible values are: `unknown`, `invalid`, `cn`, `pcma`, `pcmu`, `amrWide`, `g722`, `g7221`, `g7221c`, `g729`, `multiChannelAudio`, `muchv2`, `opus`, `satin`, `satinFullband`, `rtAudio8`, `rtAudio16`, `silk`, `silkNarrow`, `silkWide`, `siren`, `xmsRta`, `unknownFutureValue`.|
+|audioCodec|microsoft.graph.callRecords.audioCodec|Codec name used to encode audio for transmission on the network. The possible values are: `unknown`, `invalid`, `cn`, `pcma`, `pcmu`, `amrWide`, `g722`, `g7221`, `g7221c`, `g729`, `multiChannelAudio`, `muchv2`, `opus`, `satin`, `satinFullband`, `rtAudio8`, `rtAudio16`, `silk`, `silkNarrow`, `silkWide`, `siren`, `xmsRta`, `unknownFutureValue`.|
 |averageAudioDegradation|Double|Average Network Mean Opinion Score degradation for stream. Represents how much the network loss and jitter has impacted the quality of received audio.|
 |averageAudioNetworkJitter|Duration|Average jitter for the stream computed as specified in [RFC 3550][], denoted in [ISO 8601][] format. For example, 1 second is denoted as `'PT1S'`, where 'P' is the duration designator, 'T' is the time designator, and 'S' is the second designator.|
 |averageBandwidthEstimate|Int64|Average estimated bandwidth available between two endpoints in bits per second.|
@@ -46,9 +46,9 @@ Represents information about a media stream between two endpoints in a call.
 |postForwardErrorCorrectionPacketLossRate|Double|Packet loss rate after FEC has been applied aggregated across all video streams and codecs.|
 |rmsFreezeDuration|Duration|Root mean square of the received freeze duration related to the video stream.|
 |startDateTime|DateTimeOffset|UTC time when the stream started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. This field is only available for streams that use the SIP protocol. |
-|streamDirection|microsoft.graph.callRecords.mediaStreamDirection|Indicates the direction of the media stream. Possible values are: `callerToCallee`, `calleeToCaller`.|
+|streamDirection|microsoft.graph.callRecords.mediaStreamDirection|Indicates the direction of the media stream. The possible values are: `callerToCallee`, `calleeToCaller`.|
 |streamId|String|Unique identifier for the stream.|
-|videoCodec|microsoft.graph.callRecords.videoCodec|Codec name used to encode video for transmission on the network. Possible values are: `unknown`, `invalid`, `av1`, `h263`, `h264`, `h264s`, `h264uc`, `h265`, `rtvc1`, `rtVideo`, `xrtvc1`, `unknownFutureValue`.|
+|videoCodec|microsoft.graph.callRecords.videoCodec|Codec name used to encode video for transmission on the network. The possible values are: `unknown`, `invalid`, `av1`, `h263`, `h264`, `h264s`, `h264uc`, `h265`, `rtvc1`, `rtVideo`, `xrtvc1`, `unknownFutureValue`.|
 |wasMediaBypassed|Boolean|True if the media stream bypassed the Mediation Server and went straight between client and PSTN Gateway/PBX, false otherwise.|
 
 ## JSON representation

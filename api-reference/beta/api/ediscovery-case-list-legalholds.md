@@ -14,6 +14,8 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [ediscovery-deprecation](../includes/ediscovery-subnamespace-deprecation.md)]
+
 Get the [legalHolds](../resources/ediscovery-legalhold.md) that are applied to a case.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -35,7 +37,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 
-``` http
+```http
 GET /compliance/ediscovery/cases/{caseId}/legalHolds
 ```
 
@@ -69,7 +71,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/legalHolds
 ```
 
@@ -113,7 +115,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/legalH
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

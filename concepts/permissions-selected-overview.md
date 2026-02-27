@@ -73,17 +73,18 @@ The following table lists the four roles that can be assigned to an application 
   "name": "create_permission_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/sites/{siteId}/permissions
 Content-Type: application/json
 
 {
   "roles": ["write"],
-  "grantedTo": {
+  "grantedToIdentities": [{
     "application": {
-      "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e"
+      "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
+      "displayName": "Contoso Time Manager App"
     }
-  }
+  }]
 }
 ```
 
@@ -131,7 +132,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.permission"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

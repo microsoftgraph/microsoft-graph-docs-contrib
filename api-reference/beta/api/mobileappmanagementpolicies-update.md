@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 PATCH /policies/mobileAppManagementPolicies/{id}
 ```
 
@@ -53,7 +53,7 @@ In the request body, supply the values for fields listed below that should be up
 
 |Property|Type|Description|
 |:---|:---|:---|
-|appliesTo|policyScope|Determines the groups this policy setting applies to. Possible values are: `none`, `all`, `selected` **Important:** `selected` cannot be used when specifying this property. Use [includedGroups](../api/mobileappmanagementpolicies-post-includedgroups.md) to add specific groups.|
+|appliesTo|policyScope|Determines the groups this policy setting applies to. The possible values are: `none`, `all`, `selected` **Important:** `selected` cannot be used when specifying this property. Use [includedGroups](../api/mobileappmanagementpolicies-post-includedgroups.md) to add specific groups.|
 |complianceUrl|String|Compliance URL of the mobility management application|
 |discoveryUrl|String|Discovery URL of the mobility management application|
 |termsOfUseUrl|String|Terms of Use URL of the mobility management application|
@@ -74,7 +74,7 @@ If successful, this method returns a `200 OK` response code and an updated [mobi
 }
 -->
 
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/ab90bacf-55a3-4a3e-839a-aa4b74e4f020
 Content-Type: application/json
 
@@ -124,6 +124,6 @@ Content-Type: application/json
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

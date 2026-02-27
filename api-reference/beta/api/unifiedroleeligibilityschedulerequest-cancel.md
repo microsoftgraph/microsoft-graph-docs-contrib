@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /roleManagement/directory/roleEligibilityScheduleRequests/{unifiedRoleEligibilityScheduleRequestsId}/cancel
 ```
 
@@ -55,7 +55,7 @@ If successful, this action returns a `204 No Content` response code. Attempting 
   "name": "unifiedroleeligibilityschedulerequest_cancel"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilityScheduleRequests/532bef1f-c677-4564-aa6f-811444a4f018/cancel
 ```
 
@@ -95,7 +95,7 @@ POST https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySc
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

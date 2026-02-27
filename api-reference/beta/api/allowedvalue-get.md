@@ -39,7 +39,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /directory/customSecurityAttributeDefinitions/{customSecurityAttributeDefinitionId}/allowedValues/{allowedValueId}
 ```
 
@@ -78,7 +78,7 @@ The following example gets the properties of a predefined value for a custom sec
   "sampleKeys": ["Engineering_Project", "Alpine"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinitions/Engineering_Project/allowedValues/Alpine
 ```
 
@@ -122,7 +122,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.allowedValue"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

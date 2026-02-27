@@ -46,6 +46,7 @@ Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
+|administrationScopeTargets|[microsoft.graph.directoryObject](../resources/directoryobject.md) collection|The [administrative units](../resources/administrativeunit.md) in the scope of the workflow. Inherited from [microsoft.graph.identityGovernance.workflowBase](../resources/identitygovernance-workflowbase.md). Optional. <br><br>Supports `$expand`.|
 |createdBy|[user](../resources/user.md)|The user who created the workflow. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).<br><br>Supports `$filter`(`eq`, `ne`) and `$expand`.|
 |lastModifiedBy|[user](../resources/user.md)|The user who last modified the workflow.<br><br>Supports `$filter`(`eq`, `ne`) and `$expand`.|
 |tasks|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|The tasks in the workflow. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).|

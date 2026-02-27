@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /tenantRelationships/multiTenantOrganization/tenants
 ```
 
@@ -67,7 +67,7 @@ The following example adds the Fabrikam tenant to the multitenant organization.
   "name": "create_multitenantorganizationmember_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/tenantRelationships/multiTenantOrganization/tenants
 Content-Type: application/json
 
@@ -115,7 +115,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.multiTenantOrganizationMember"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

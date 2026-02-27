@@ -47,7 +47,7 @@ To retrieve the details of a policy in PIM that can be applied to Microsoft Entr
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}
 ```
 
@@ -82,7 +82,7 @@ The following example shows a request.
   "name": "get_unifiedrolemanagementpolicy_directory"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_13b24d89-6e5a-46d5-b0d7-531c0846570a
 ```
 
@@ -127,7 +127,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.unifiedRoleManagementPolicy"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -159,7 +159,7 @@ The following example shows a request.
   "name": "get_unifiedrolemanagementpolicy_azureADGroup"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369
 ```
 
@@ -204,7 +204,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.unifiedRoleManagementPolicy"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

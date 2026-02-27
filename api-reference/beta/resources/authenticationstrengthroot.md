@@ -26,7 +26,7 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authenticationCombinations|authenticationMethodModes collection|A collection of all valid authentication method combinations in the system.|
+|authenticationCombinations|[authenticationMethodModes](../resources/authenticationmethodmodes.md) collection|A collection of all valid authentication method combinations in the system.|
 |id|String|A system-generated identifier. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships

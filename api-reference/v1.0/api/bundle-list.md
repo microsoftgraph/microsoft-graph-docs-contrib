@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Get a list of all the [bundles][bundle] in a user's drive.
 
-[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -67,7 +67,7 @@ The following example shows a request.
 <!-- { "blockType": "request", "name": "list-all-bundles", "tags": "service.onedrive" } -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/drive/bundles
+GET https://graph.microsoft.com/v1.0/drive/bundles
 ```
 
 # [C#](#tab/csharp)

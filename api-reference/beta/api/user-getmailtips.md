@@ -47,7 +47,7 @@ In the request body, provide a JSON object with the following parameters.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |EmailAddresses|String collection|A collection of SMTP addresses of recipients to get MailTips for.|
-|MailTipsOptions|String|A enumeration of flags that represents the requested mailtips. Possible values are: `automaticReplies`, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, and `totalMemberCount`.|
+|MailTipsOptions|String|A enumeration of flags that represents the requested mailtips. The possible values are: `automaticReplies`, `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, and `totalMemberCount`.|
 
 ## Response
 

@@ -1,7 +1,7 @@
 ---
 title: "List fido2AuthenticationMethod"
 description: "Retrieve a list of the fido2AuthenticationMethod objects and their properties."
-author: "calvinlui"
+author: "hanki71"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -37,7 +37,7 @@ Retrieve the details of your own FIDO2 authentication methods.
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /me/authentication/fido2Methods
 ```
 
@@ -46,7 +46,7 @@ Retrieve the details of your own or another user's FIDO2 authentication methods.
 [!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /users/{id | userPrincipalName}/authentication/fido2Methods
 ```
 
@@ -75,7 +75,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "get_fido2authenticationmethod_2"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/authentication/fido2Methods
 ```
 
@@ -119,7 +119,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.fido2AuthenticationMethod)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -134,7 +134,8 @@ Content-type: application/json
       "attestationCertificates": [
           "dbe793efdf1945e2df25d93653a1e8a3268a9075"
       ],
-      "attestationLevel": "attested"
+      "attestationLevel": "attested",
+      "passkeyType": "deviceBound"
     },
     {
       "id": "_jpuR-TGZgk6aQCLF3BQjA2",
@@ -145,7 +146,8 @@ Content-type: application/json
       "attestationCertificates": [
           "b479e7652167f574296e76bfa76731b8ccd22ed7"
       ],
-      "attestationLevel": "attested"
+      "attestationLevel": "attested",
+      "passkeyType": "deviceBound"
     }
   ]
 }

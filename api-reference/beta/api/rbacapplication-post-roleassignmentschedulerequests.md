@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /roleManagement/directory/roleAssignmentScheduleRequests
 ```
 
@@ -80,7 +80,7 @@ In the following request, the admin creates a request to assign a role identifie
   "name": "create_unifiedroleassignmentschedulerequest_from_unifiedroleassignmentschedulerequests"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleRequests/
 Content-Type: application/json
 
@@ -139,7 +139,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.unifiedRoleAssignmentScheduleRequest"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -196,7 +196,7 @@ In the following request, a user identified by **principalId** `c6ad1942-4afa-47
   "name": "create_unifiedroleassignmentschedulerequest_from_unifiedroleassignmentschedulerequests_SelfActivate"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/roleManagement/directory/roleAssignmentScheduleRequests/
 Content-Type: application/json
 
@@ -260,7 +260,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.unifiedRoleAssignmentScheduleRequest"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

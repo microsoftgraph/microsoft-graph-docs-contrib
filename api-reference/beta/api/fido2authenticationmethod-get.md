@@ -1,7 +1,7 @@
 ---
 title: "Get fido2AuthenticationMethod"
 description: "Read the properties and relationships of a fido2AuthenticationMethod object."
-author: "calvinlui"
+author: "hanki71"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -36,7 +36,7 @@ Get details of your own FIDO2 authentication method.
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
-``` http
+```http
 GET /me/authentication/fido2Methods/{id}
 ```
 
@@ -44,7 +44,7 @@ Get details of your own or another user's FIDO2 authentication method.
 
 [!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
 
-``` http
+```http
 GET /users/{id | userPrincipalName}/authentication/fido2Methods/{id}
 ```
 
@@ -75,7 +75,7 @@ The following example shows a request.
   "sampleKeys": ["-2_GRUg2-HYz6_1YG4YRAQ2"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/authentication/fido2Methods/-2_GRUg2-HYz6_1YG4YRAQ2
 ```
 
@@ -120,7 +120,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.fido2AuthenticationMethod"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -129,12 +129,14 @@ Content-type: application/json
       "id": "-2_GRUg2-HYz6_1YG4YRAQ2",
       "displayName": "Red key",
       "createdDateTime": "2020-08-10T06:44:09Z",
+      "lastUsedDateTime": "2022-11-06T23:16:12Z",
       "aaGuid": "2fc0579f-8113-47ea-b116-555a8db9202a",
       "model": "NFC key",
       "attestationCertificates": [
           "dbe793efdf1945e2df25d93653a1e8a3268a9075"
       ],
-      "attestationLevel": "attested"
+      "attestationLevel": "attested",
+      "passkeyType": "deviceBound"
   }
 }
 ```

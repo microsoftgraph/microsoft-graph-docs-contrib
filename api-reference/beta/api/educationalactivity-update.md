@@ -74,7 +74,7 @@ In the request body, supply the values for relevant fields that should be update
 
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). The possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |completionMonthYear|Date|The month and year the user graduated or completed the activity. |
 |endMonthYear|Date|The month and year the user completed the educational activity referenced.|
 |inference|[inferenceData](../resources/inferencedata.md)|Contains inference details if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|

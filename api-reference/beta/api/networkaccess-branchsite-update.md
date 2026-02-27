@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /networkAccess/connectivity/branches/{branchSiteId}
 ```
 
@@ -70,7 +70,7 @@ The following example shows a request.
   "name": "update_branchsite"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/networkAccess/connectivity/branches/{branchSiteId}
 Content-Type: application/json
 
@@ -118,7 +118,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.networkaccess.branchSite"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

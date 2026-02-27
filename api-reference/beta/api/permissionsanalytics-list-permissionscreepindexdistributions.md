@@ -33,7 +33,7 @@ List the Permissions Creep Index distribution for identities and resources in AW
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/aws/permissionsCreepIndexDistributions
 ```
 
@@ -42,7 +42,7 @@ List the Permissions Creep Index distribution for identities and resources in Az
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/azure/permissionsCreepIndexDistributions
 ```
 
@@ -51,7 +51,7 @@ List the Permissions Creep Index distribution for identities and resources in GC
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/gcp/permissionsCreepIndexDistributions
 ```
 
@@ -80,7 +80,7 @@ The following example shows a request.
   "name": "list_permissionscreepindexdistribution"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/permissionsCreepIndexDistributions
 ```
 
@@ -123,7 +123,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.permissionsCreepIndexDistribution)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

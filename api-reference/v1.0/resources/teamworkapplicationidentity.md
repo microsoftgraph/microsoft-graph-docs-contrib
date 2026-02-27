@@ -20,7 +20,7 @@ Inherits from [identity](../resources/identity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|applicationIdentityType|teamworkApplicationIdentityType| Type of application that is referenced. Possible values are: `aadApplication`, `bot`, `tenantBot`, `office365Connector`, `outgoingWebhook`, and `unknownFutureValue`.|
+|applicationIdentityType|teamworkApplicationIdentityType| Type of application that is referenced. The possible values are: `aadApplication`, `bot`, `tenantBot`, `office365Connector`, `outgoingWebhook`, and `unknownFutureValue`.|
 |displayName|String|Inherited from [identity](../resources/identity.md). Display name of the application. Optional.|
 |id|String|Inherited from [identity](../resources/identity.md). ID of the application.|
 

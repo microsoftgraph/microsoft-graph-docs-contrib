@@ -32,7 +32,7 @@ An **accessReviewHistoryDefinition** contains a list of [accessReviewHistoryInst
 |:---|:---|:---|
 |createdBy|[userIdentity](useridentity.md)| User who created this review history definition. |
 |createdDateTime|DateTimeOffset|Timestamp when the access review definition was created.|
-|decisions|String collection|Determines which review decisions will be included in the fetched review history data if specified. Optional on create. All decisions are included by default if no decisions are provided on create. Possible values are: `approve`, `deny`, `dontKnow`, `notReviewed`, and `notNotified`.|
+|decisions|String collection|Determines which review decisions will be included in the fetched review history data if specified. Optional on create. All decisions are included by default if no decisions are provided on create. The possible values are: `approve`, `deny`, `dontKnow`, `notReviewed`, and `notNotified`.|
 |displayName|String|Name for the access review history data collection. Required.|
 |id|String|The assigned unique identifier of an access review history definition.|
 |reviewHistoryPeriodEndDateTime|DateTimeOffset| A timestamp. Reviews ending on or before this date will be included in the fetched history data. Only required if **scheduleSettings** is not defined. |

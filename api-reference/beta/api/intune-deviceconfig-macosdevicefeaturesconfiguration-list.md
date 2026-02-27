@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /deviceManagement/deviceConfigurations
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
@@ -55,16 +55,16 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7030
+Content-Length: 5776
 
 {
   "value": [
@@ -152,61 +152,34 @@ Content-Length: 7030
         }
       ],
       "singleSignOnExtension": {
-        "@odata.type": "microsoft.graph.credentialSingleSignOnExtension",
+        "@odata.type": "microsoft.graph.redirectSingleSignOnExtension",
         "extensionIdentifier": "Extension Identifier value",
         "teamIdentifier": "Team Identifier value",
-        "domains": [
-          "Domains value"
-        ],
-        "realm": "Realm value",
         "configurations": [
           {
             "@odata.type": "microsoft.graph.keyStringValuePair",
             "key": "Key value",
             "value": "Value value"
           }
+        ],
+        "urlPrefixes": [
+          "Url Prefixes value"
         ]
       },
       "macOSSingleSignOnExtension": {
-        "@odata.type": "microsoft.graph.macOSKerberosSingleSignOnExtension",
-        "realm": "Realm value",
-        "domains": [
-          "Domains value"
+        "@odata.type": "microsoft.graph.macOSRedirectSingleSignOnExtension",
+        "extensionIdentifier": "Extension Identifier value",
+        "teamIdentifier": "Team Identifier value",
+        "configurations": [
+          {
+            "@odata.type": "microsoft.graph.keyStringValuePair",
+            "key": "Key value",
+            "value": "Value value"
+          }
         ],
-        "blockAutomaticLogin": true,
-        "cacheName": "Cache Name value",
-        "credentialBundleIdAccessControlList": [
-          "Credential Bundle Id Access Control List value"
-        ],
-        "domainRealms": [
-          "Domain Realms value"
-        ],
-        "isDefaultRealm": true,
-        "passwordBlockModification": true,
-        "passwordExpirationDays": 6,
-        "passwordExpirationNotificationDays": 2,
-        "userPrincipalName": "User Principal Name value",
-        "passwordRequireActiveDirectoryComplexity": true,
-        "passwordPreviousPasswordBlockCount": 2,
-        "passwordMinimumLength": 5,
-        "passwordMinimumAgeDays": 6,
-        "passwordRequirementsDescription": "Password Requirements Description value",
-        "requireUserPresence": true,
-        "activeDirectorySiteCode": "Active Directory Site Code value",
-        "passwordEnableLocalSync": true,
-        "blockActiveDirectorySiteAutoDiscovery": true,
-        "passwordChangeUrl": "https://example.com/passwordChangeUrl/",
-        "modeCredentialUsed": "Mode Credential Used value",
-        "usernameLabelCustom": "Username Label Custom value",
-        "userSetupDelayed": true,
-        "signInHelpText": "Sign In Help Text value",
-        "kerberosAppsInBundleIdACLIncluded": true,
-        "managedAppsInBundleIdACLIncluded": true,
-        "credentialsCacheMonitored": true,
-        "preferredKDCs": [
-          "Preferred KDCs value"
-        ],
-        "tlsForLDAPRequired": true
+        "urlPrefixes": [
+          "Url Prefixes value"
+        ]
       },
       "contentCachingEnabled": true,
       "contentCachingType": "userContentOnly",

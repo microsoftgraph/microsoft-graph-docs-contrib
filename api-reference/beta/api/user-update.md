@@ -1,6 +1,6 @@
 ---
-title: "Update user"
-description: "Update the properties of a user object."
+title: "Update user or agentUser"
+description: "Update the properties of a user or agentUser object."
 author: "yyuank"
 ms.reviewer: "iamut"
 ms.localizationpriority: medium
@@ -9,13 +9,13 @@ doc_type: apiPageType
 ms.date: 01/10/2025
 ---
 
-# Update user
+# Update user or agentUser
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [user](../resources/user.md) object.
+Update the properties of a [user](../resources/user.md) or [agentUser](../resources/agentuser.md) object.
 
 - Not all properties can be updated by Member or Guest users with their default permissions without administrator roles. [Compare member and guest default permissions](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#compare-member-and-guest-default-permissions) to see properties they can manage.
 - Customers through Microsoft Entra External ID in external tenants can also use this API operation to update their details. See [Default user permissions in external tenants](../resources/users.md#default-user-permissions-in-external-tenants) for the list of properties they can update.
@@ -26,10 +26,12 @@ Update the properties of a [user](../resources/user.md) object.
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
+### Permissions to update users
+
 <!-- { "blockType": "ignored", "name": "user_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/user-update-permissions.md)]
 
-### Permissions for specific scenarios
+#### Permissions for specific scenarios
 - Your personal Microsoft account must be tied to a Microsoft Entra tenant to update your profile with the *User.ReadWrite* delegated permission on a personal Microsoft account.
 - To update the **employeeLeaveDateTime** property:
   - In delegated scenarios, the admin needs the *Global Administrator* role; the app must be granted the *User.Read.All* and *User-LifeCycleInfo.ReadWrite.All* delegated permissions.
@@ -42,6 +44,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 - *User-Phone.ReadWrite.All* is the least privileged permission to update the **businessPhones** and **mobilePhone** properties.
 - *User.EnableDisableAccount.All* + *User.Read.All* is the least privileged combination of permissions to update the **accountEnabled** property.
 - *User.ManageIdentities.All* is *required* to update the **identities** property.
+
+#### Permissions to update agent users
+
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|User.ReadWrite.All|Not available.|
+|Delegated (personal Microsoft account)|User.ReadWrite.All|Not supported.|
+|Application|User.ReadWrite.All|Not available.|
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -57,6 +68,8 @@ PATCH /users/{id | userPrincipalName}
 
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+
+To use this API to update an [agentUser](../resources/agentUser.md), you must specify the **@odata.type** as `#microsoft.graph.agentUser` in the request body.
 
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
@@ -123,6 +136,8 @@ Use this API to manage the directory, schema, and open extensions and their data
 
 If successful, this method returns a `204 No Content` response code.
 
+If the ID belongs to an [agentUser](../resources/agentUser.md) and you don't specify the **@odata.type** as `#microsoft.graph.agentUser` in the request body, this method returns a `400 Bad Request` error code.
+
 ## Example
 
 ### Example 1: Update properties of the signed-in user
@@ -188,11 +203,11 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Update properties of the specified user
+### Example 2: Update properties of a specified user by ID
 
 #### Request
 
-The following example shows a request.
+The following example shows a request. Because the request doesn't contain the **@odata.type** property, Microsoft Graph expects the {id} of a user object and not an **agentUser** object.
 
 
 # [HTTP](#tab/http)

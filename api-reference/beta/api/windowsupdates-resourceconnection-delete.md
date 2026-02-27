@@ -1,11 +1,11 @@
 ---
 title: "Delete resourceConnection"
 description: "Delete a resourceConnection object."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 08/31/2024
+ms.date: 01/27/2026
 ---
 
 # Delete resourceConnection
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /admin/windows/updates/resourceConnections/{resourceConnectionId}
 ```
 
@@ -58,7 +58,7 @@ The following example shows a request.
   "name": "delete_resourceConnection"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/admin/windows/updates/resourceConnections/85fbecb2-e407-34e9-9298-4d587857795d
 ```
 
@@ -99,7 +99,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

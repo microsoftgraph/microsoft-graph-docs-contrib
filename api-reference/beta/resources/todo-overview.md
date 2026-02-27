@@ -28,30 +28,34 @@ Before starting with the To Do API, take a look at the resources and how they re
 
 In this API set, a task list is represented by [todoTaskList](./todotasklist.md) which is a logical container of [todoTask](./todotask.md) resources. You can currently create tasks only in a task list. To [get all your task lists](../api/todotasklist-get.md), make the following HTTP request:
 
-``` http
+```http
 GET /me/todo/lists
 ```
 
 ## Task
 
 In this API set, a task is represented by a [todoTask](./todotask.md) resource which is a piece of work or personal item that can be tracked and completed. To get your tasks from a task list, make the following HTTP request:
-``` http
+```http
 GET /me/todo/lists/{todoTaskListId}/tasks
 ```
 
 ## Checklist item 
 
 A [checklistItem](checklistitem.md) represents a subtask in a bigger [todoTask](./todotask.md). **ChecklistItem** allows breaking down a complex task into more actionable, smaller tasks. To get a **checklistItem** from a task, make the following HTTP request:
-``` http
+```http
 GET /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/checklistItems/{checklistItems}
 ```
 
 ## Linked resource
 
 A [linkedResource](linkedresource.md) represents any item from a partner application related to the task, for example, an item like email from where a task was created. You can use it to store information and the link back to the related item in your app. To get a linked resource from a task, make the following HTTP request:
-``` http
+```http
 GET /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/linkedresources/{linkedResourceId}
 ```
+
+## Single-value extended property
+
+A [singleValueExtendedProperty](singlevalueextendedproperty.md) represents a custom data field that can be created on a [todoTask](../resources/todotask.md) entity. To get single-value extended properties, see [Get singleValueLegacyExtendedProperty](../api/singlevaluelegacyextendedproperty-get.md).
 
 ## Track changes using delta query
 

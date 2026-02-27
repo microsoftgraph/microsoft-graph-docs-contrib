@@ -127,6 +127,7 @@ Delta query is currently supported for the following resources. Some resources t
 |:--------------------------------------------------------------------|:--------------------------------------------------------------------------------|
 | [application](/graph/api/resources/application)                     | [application: delta](/graph/api/application-delta) function                     |
 | [administrativeUnit](/graph/api/resources/administrativeunit)       | [administrativeUnit: delta](/graph/api/administrativeunit-delta) function       |
+| [agentIdentityBlueprint](/graph/api/resources/agentidentityblueprint)                     | [application: delta](/graph/api/application-delta) function                     |
 | [callRecording](/graph/api/resources/callrecording)                 | [callRecording: delta](/graph/api/callrecording-delta) function                 |
 | [callTranscript](/graph/api/resources/calltranscript)               | [callTranscript: delta](/graph/api/calltranscript-delta) function               |
 | [chatMessage](/graph/api/resources/chatmessage)                     | [chatMessage: delta](/graph/api/chatmessage-delta) function                     |
@@ -180,7 +181,7 @@ For more information about properties stored outside of the main data store, see
 
 Expect varying delays between the time a resource instance changes, and the time the tracked change is reflected in a delta query response.
 
-Sometimes, due to replication delays, the changes to the object might not show up immediately when you select the `@odata.nextLink` or the `@odata.deltaLink`. Retry the `@odata.nextLink` or `@odata.deltaLink` after some time to retrieve the latest changes.
+Sometimes, due to replication delays, the changes to the object do not show up immediately when you select the `@odata.nextLink` or the `@odata.deltaLink`. Retry the `@odata.nextLink` or `@odata.deltaLink` after some time to retrieve the latest changes.
 
 ### Replays
 

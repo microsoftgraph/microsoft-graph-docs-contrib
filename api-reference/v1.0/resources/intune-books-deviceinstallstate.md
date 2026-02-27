@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/13/2024
+ms.date: 08/01/2024
 ---
 
 # deviceInstallState resource type
@@ -32,7 +32,7 @@ Contains properties for the installation state for a device.
 |deviceName|String|Device name.|
 |deviceId|String|Device Id.|
 |lastSyncDateTime|DateTimeOffset|Last sync date and time.|
-|installState|[installState](../resources/intune-books-installstate.md)|The install state of the eBook. Possible values are: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
+|installState|[installState](../resources/intune-books-installstate.md)|The install state of the eBook. The possible values are: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
 |errorCode|String|The error code for install failures.|
 |osVersion|String|OS Version.|
 |osDescription|String|OS Description.|

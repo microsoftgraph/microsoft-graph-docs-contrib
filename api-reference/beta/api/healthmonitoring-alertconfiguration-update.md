@@ -35,7 +35,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /reports/healthMonitoring/alertConfigurations/{alertConfigurationId}
 ```
 
@@ -72,7 +72,7 @@ The following example shows a request. It currently supports only 1 group to rec
   "name": "update_alertconfiguration"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/reports/healthMonitoring/alertConfigurations/{alertConfigurationId}
 Content-Type: application/json
 
@@ -126,7 +126,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.healthMonitoring.alertConfiguration"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

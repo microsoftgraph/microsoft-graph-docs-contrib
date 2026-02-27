@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /identityGovernance/entitlementManagement/accessPackages/{accessPackageId}/getApplicablePolicyRequirements
 ```
 
@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and an [accessPackag
   "name": "accesspackage_getapplicablepolicyrequirements"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackages/{accessPackageId}/getApplicablePolicyRequirements
 ```
 
@@ -99,7 +99,7 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/a
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 GET /directory/publicKeyInfrastructure/certificateBasedAuthConfigurations
 ```
 
@@ -65,8 +65,8 @@ The following example shows a request.
 }
 -->
 
-``` http
-GET https://graph.microsoft.com/beta/directory/publicKeyInfrastructure/certificateBasedAuthConfigurations
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/directory/publicKeyInfrastructure/certificateBasedAuthConfigurations
 ```
 
 # [C#](#tab/csharp)
@@ -109,7 +109,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.certificateBasedAuthPki)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

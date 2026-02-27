@@ -43,6 +43,7 @@ Singleton entity that acts as a container for all reports functionality.
 |[getAutopilotDeploymentDeviceInformation action](../api/intune-reporting-devicemanagementreports-getautopilotdeploymentdeviceinformation.md)|Stream||
 |[retrieveAutopilotDeploymentAppDetail action](../api/intune-reporting-devicemanagementreports-retrieveautopilotdeploymentappdetail.md)|Stream||
 |[retrieveAutopilotDeploymentScriptDetail action](../api/intune-reporting-devicemanagementreports-retrieveautopilotdeploymentscriptdetail.md)|Stream||
+|[retrieveEnrollmentTimeGroupingFailureReport action](../api/intune-reporting-devicemanagementreports-retrieveenrollmenttimegroupingfailurereport.md)|Stream||
 |[getConfigurationPolicyNonComplianceSummaryReport action](../api/intune-reporting-devicemanagementreports-getconfigurationpolicynoncompliancesummaryreport.md)|Stream||
 |[getConfigurationPolicyNonComplianceReport action](../api/intune-reporting-devicemanagementreports-getconfigurationpolicynoncompliancereport.md)|Stream||
 |[getConfigurationSettingNonComplianceReport action](../api/intune-reporting-devicemanagementreports-getconfigurationsettingnoncompliancereport.md)|Stream||

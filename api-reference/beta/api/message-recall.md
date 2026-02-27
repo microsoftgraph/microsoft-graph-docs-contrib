@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /me/mailFolders/sentitems/messages/{id}/recall
 POST /users/{id | userPrincipalName}/mailFolders/sentitems/messages/{id}/recall
 ```
@@ -69,7 +69,7 @@ POST https://graph.microsoft.com/beta/me/mailFolders/sentitems/messages/AAMkADhA
 
 The following example shows the response.
 
-``` http
+```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
 

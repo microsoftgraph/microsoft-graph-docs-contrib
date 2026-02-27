@@ -12,7 +12,7 @@ ms.date: 03/06/2024
 
 Namespace: microsoft.graph
 
-Retrieve the contents of a specific version of a [driveItem](../resources/driveitem.md).
+Retrieve the contents of a specific [version](../resources/driveitemversion.md) of a [driveItem](../resources/driveitem.md).
 
 >**Note:** Getting the content of the current version is not supported. To do that, use the [Download the contents of a driveItem](driveitem-get-content.md) method.
 

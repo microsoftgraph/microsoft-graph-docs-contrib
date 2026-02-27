@@ -1,6 +1,6 @@
 ---
 title: "getAuditActivityTypes function"
-description: "Not yet documented"
+description: "Intune Auditing Auditevent Getauditactivitytypes Api ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +48,7 @@ The following table shows the parameters that can be used with this function.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|category|String|Not yet documented|
+|category|String||
 
 
 
@@ -57,16 +59,12 @@ If successful, this function returns a `200 OK` response code and a String colle
 
 ### Request
 Here is an example of the request.
-
-<!-- { "blockType": "ignored" , "name" : "intune_auditing_auditevent_getauditactivitytypes_getauditactivitytypes_function" }-->
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/auditEvents/getAuditActivityTypes(category='parameterValue')
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

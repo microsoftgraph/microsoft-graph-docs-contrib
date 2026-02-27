@@ -6,6 +6,7 @@ ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.subservice: search
 ms.date: 05/19/2025
+ms.topic: article
 ---
 
 # Copilot connector experiences

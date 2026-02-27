@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/13/2024
+ms.date: 08/01/2024
 ---
 
 # iosNotificationSettings resource type
@@ -25,7 +25,7 @@ An item describing notification setting.
 |enabled|Boolean|Indicates whether notifications are allowed for this app.|
 |showInNotificationCenter|Boolean|Indicates whether notifications can be shown in notification center.|
 |showOnLockScreen|Boolean|Indicates whether notifications can be shown on the lock screen.|
-|alertType|[iosNotificationAlertType](../resources/intune-deviceconfig-iosnotificationalerttype.md)|Indicates the type of alert for notifications for this app. Possible values are: `deviceDefault`, `banner`, `modal`, `none`.|
+|alertType|[iosNotificationAlertType](../resources/intune-deviceconfig-iosnotificationalerttype.md)|Indicates the type of alert for notifications for this app. The possible values are: `deviceDefault`, `banner`, `modal`, `none`.|
 |badgesEnabled|Boolean|Indicates whether badges are allowed for this app.|
 |soundsEnabled|Boolean|Indicates whether sounds are allowed for this app.|
 

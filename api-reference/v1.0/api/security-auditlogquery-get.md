@@ -54,8 +54,8 @@ The following example shows a request.
   "name": "get_auditlogquery"
 }
 -->
-``` http
-GET https://graph.microsoft.com/beta/security/auditLog/queries/{auditLogQueryId}
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/security/auditLog/queries/{auditLogQueryId}
 ```
 
 # [C#](#tab/csharp)
@@ -99,7 +99,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.auditLogQuery"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

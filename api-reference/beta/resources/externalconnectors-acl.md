@@ -20,9 +20,9 @@ An access control entry for an item indexed by a Microsoft Search [externalConne
 
 | Property       | Type   | Description                                        |
 |:---------------|:-------|:---------------------------------------------------|
-| accessType     | String | The access granted to the identity. Possible values are: `grant`, `deny`. |
+| accessType     | String | The access granted to the identity. The possible values are: `grant`, `deny`. |
 | identitySource | String | The source of identity. Possible values are `azureActiveDirectory` or `external`.           |
-| type           | String | The type of identity. Possible values are: `user`, `group`, `everyone`, `everyoneExceptGuests` if the identitySource is `azureActiveDirectory` and just `group` if the identitySource is `external`. |
+| type           | String | The type of identity. The possible values are: `user`, `group`, `everyone`, `everyoneExceptGuests` if the identitySource is `azureActiveDirectory` and just `group` if the identitySource is `external`. |
 | value          | String | The unique identifer of the identity. For Microsoft Entra identities, `value` is set to the object identifier of the user, group or tenant for types user, group and everyone (and everyoneExceptGuests) respectively. For external groups, `value` is set to the ID of the [externalGroup](externalconnectors-externalgroup.md).|
 
 ## Relationships

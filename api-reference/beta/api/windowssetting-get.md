@@ -37,7 +37,7 @@ For a specific user:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /users/{user-id}@{tenant-id}/settings/windows/{windowsSettingId}
 ````
 
@@ -78,7 +78,7 @@ The following example shows a request.
   "name": "get_windowssetting"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/settings/windows/{windowsSettingId}
 ```
 
@@ -122,7 +122,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.windowsSetting"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

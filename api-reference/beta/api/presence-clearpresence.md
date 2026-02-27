@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Clear a [presence session](presence-setpresence.md#presence-sessions) of an application for a user. If it is the user's only presence session, a successful **clearPresence** changes the user's presence to `Offline/Offline`.
+Clear a [presence session](/graph/cloud-communications-manage-presence-state#presence-sessions) of an application for a user. If it is the user's only presence session, a successful **clearPresence** changes the user's presence to `Offline/Offline`.
 
-Read more about [presence sessions](presence-setpresence.md#presence-sessions) and their [time-out and expiration](presence-setpresence.md#timeout-expiration-and-keep-alive). 
+Read more about [presence sessions](/graph/cloud-communications-manage-presence-state#presence-sessions) and their [time-out and expiration](/graph/cloud-communications-manage-presence-state#timeout-expiration-and-keep-alive). 
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

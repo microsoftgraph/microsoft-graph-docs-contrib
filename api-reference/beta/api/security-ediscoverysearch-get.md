@@ -22,6 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "security_ediscoverysearch_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoverysearch-get-permissions.md)]
+[!INCLUDE [rbac-ediscovery-read](../includes/rbac-for-apis/rbac-ediscovery-apis-read.md)]
 
 ## HTTP request
 
@@ -29,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySearchId}
 ```
 
@@ -59,7 +60,7 @@ The following example shows a request.
   "name": "get_ediscoverysearch"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-cebe-478f-b1af-d3227f1fd645/searches/60150269-9758-4439-9bc4-453c864d082f
 ```
 
@@ -102,7 +103,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.security.ediscoverySearch"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

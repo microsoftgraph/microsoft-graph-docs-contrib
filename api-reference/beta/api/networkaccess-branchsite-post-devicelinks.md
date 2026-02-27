@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /networkAccess/connectivity/branches/{branchSiteId}/deviceLinks
 ```
 
@@ -73,7 +73,7 @@ The following example shows a request.
   "name": "create_devicelink_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/networkAccess/connectivity/branches/19a92090-c14e-4cea-a933-27d38f72c4d1/deviceLinks
 Content-Type: application/json
 
@@ -140,7 +140,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.networkaccess.deviceLink"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

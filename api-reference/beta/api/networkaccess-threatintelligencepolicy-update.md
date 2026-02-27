@@ -16,6 +16,8 @@ Namespace: microsoft.graph.networkaccess
 
 Update the properties of a [threatIntelligencePolicy](../resources/networkaccess-threatintelligencepolicy.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -31,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /networkAccess/threatIntelligencePolicies/{threatIntelligencePolicyId}
 ```
 
@@ -71,7 +73,7 @@ The following example shows a request.
   "name": "update_threatintelligencepolicy"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/networkAccess/threatIntelligencePolicies/{threatIntelligencePolicyId}
 Content-Type: application/json
 
@@ -126,7 +128,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

@@ -30,7 +30,7 @@ None.
 |id|String|Unique identifier of the dataSourceContainer. Inherited from [entity](../resources/entity.md)|
 |lastModifiedDateTime|DateTimeOffset|Last modified date and time of the dataSourceContainer.|
 |releasedDateTime|DateTimeOffset|Date and time that the dataSourceContainer was released from the case.|
-|status|microsoft.graph.security.dataSourceContainerStatus|Latest status of the dataSourceContainer. Possible values are: `Active`, `Released`.|
+|status|microsoft.graph.security.dataSourceContainerStatus|Latest status of the dataSourceContainer. The possible values are: `Active`, `Released`.|
 
 
 ### dataSourceContainerStatus values

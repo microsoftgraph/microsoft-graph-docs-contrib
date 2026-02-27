@@ -1,7 +1,7 @@
 ---
 title: "Update certificateAuthorityDetail"
 description: "Update the properties of a certificateAuthorityDetail object."
-author: "suawat"
+author: "vimrang"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
@@ -52,7 +52,7 @@ PATCH /directory/publicKeyInfrastructure/certificateBasedAuthConfigurations/{cer
 |Property|Type|Description|
 |:---|:---|:---|
 |certificateAuthorityType|certificateAuthorityType|The type of certificate authority. The possible values are: `root`, `intermediate`, `unknownFutureValue`. |
-|certificate|Binary|The type of certificate authority. Possible values are: `root`, `intermediate`.|
+|certificate|Binary|The type of certificate authority. The possible values are: `root`, `intermediate`.|
 |displayName|String|The name of the certificate authority. |
 |issuer|String|The issuer of the certificate authority. |
 |issuerSubjectKeyIdentifier|String|The subject key identifier of certificate authority. |

@@ -57,11 +57,11 @@ The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "delete_community",
-  "sampleKeys": ["eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0"]
+  "sampleKeys": ["eyXxdHlwZSI6Ikdyb3VwIiwiaABCDiI4MzIxMjc1In0"]
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/v1.0/employeeExperience/communities/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MzIxMjc1In0
+DELETE https://graph.microsoft.com/v1.0/employeeExperience/communities/eyXxdHlwZSI6Ikdyb3VwIiwiaABCDiI4MzIxMjc1In0
 ```
 
 # [C#](#tab/csharp)

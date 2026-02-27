@@ -11,7 +11,7 @@ ms.date: 08/06/2024
 # List sessions for a virtual event registration
 Namespace: microsoft.graph
 
-Get a list of [sessions](../resources/virtualeventsession.md) summaries that a registrant registered for in a [webinar](../resources/virtualeventwebinar.md). A session summary contains only the `endDateTime`, `id`, `joinWebUrl`, `startDateTime`, and `subject` of a virtual event session. The rest of session properties will be null.
+Get a list of [sessions](../resources/virtualeventsession.md) summaries that a registrant registered for in a [webinar](../resources/virtualeventwebinar.md). A session summary contains only the **endDateTime**, **id**, **joinWebUrl**, **startDateTime**, and **subject** of a virtual event session. The remaining session properties are `null`.
 
 To get all the properties of a **virtualEventSession**, use the [Get virtualEventSession](../api/virtualeventsession-get.md) method. 
 
@@ -28,13 +28,16 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "virtualeventregistration_list_sessions" } -->
 [!INCLUDE [permissions-table](../includes/permissions/virtualeventregistration-list-sessions-permissions.md)]
 
+> [!NOTE]
+> The `VirtualEvent.Read.Chat` permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+
 ## HTTP request
 
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}/sessions
 ```
 
@@ -71,7 +74,7 @@ The following example shows a request.
   "name": "list_virtualeventregistrationsessions"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21-a8a6-4a6b-97f8-ced53d30f143/registrations/127962bb-84e1-7b62-fd98-1c9d39def7b6/sessions
 ```
 
@@ -116,7 +119,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.virtualEventSession)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

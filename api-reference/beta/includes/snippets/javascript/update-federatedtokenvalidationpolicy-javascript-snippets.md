@@ -14,7 +14,7 @@ const federatedTokenValidationPolicy = {
   '@odata.type': '#microsoft.graph.federatedTokenValidationPolicy',
   deletedDateTime: 'String (timestamp)',
   validatingDomains: {
-    '@odata.type': 'microsoft.graph.validatingDomains',
+    '@odata.type': 'microsoft.graph.enumeratedDomains',
     rootDomains: 'enumerated',
     domainNames: ['contoso.com','fabrikam.com']
   }

@@ -2,7 +2,7 @@
 title: "onPremisesPublishingProfile resource type"
 description: "onPremisesPublishingProfile resource type."
 ms.localizationpriority: medium
-author: "dhruvinrshah"
+author: "shahzad-khalid"
 ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
 ms.date: 11/28/2024
@@ -31,7 +31,7 @@ Various Azure services (for example, Microsoft Entra Connect [Passthrough Authen
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |hybridAgentUpdaterConfiguration|[hybridAgentUpdaterConfiguration](hybridagentupdaterconfiguration.md)| Represents a **hybridAgentUpdaterConfiguration** object.|
-|id|String| Represents a publishing type. Possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`. Read-only.|
+|id|String| Represents a publishing type. The possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`. Read-only.|
 |isDefaultAccessEnabled|Boolean|Specifies whether default access for app proxy is enabled or disabled.|
 |isEnabled|Boolean| Represents if [Microsoft Entra application proxy](/entra/identity/app-proxy/) is enabled for the tenant. |
 
@@ -45,6 +45,7 @@ Various Azure services (for example, Microsoft Entra Connect [Passthrough Authen
 |connectorGroups|[connectorGroup](connectorgroup.md) collection| List of existing **connectorGroup** objects for applications published through Application Proxy. Read-only. Nullable.|
 |connectors|[connector](connector.md) collection| List of existing **connector** objects for applications published through Application Proxy. Read-only. Nullable.|
 |publishedResources|[publishedResource](publishedresource.md) collection| List of existing **publishedResource** objects. Read-only. Nullable.|
+|sensors|[privateAccessSensor](../resources/privateaccesssensor.md) collection|A lightweight agent installed on domain controllers that helps secure access and enforce MFA to on-premise resources.|
 
 ## JSON representation
 

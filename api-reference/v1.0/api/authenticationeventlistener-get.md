@@ -5,7 +5,7 @@ author: "soneff"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 10/17/2024
+ms.date: 10/23/2025
 ---
 
 # Get authenticationEventListener
@@ -18,6 +18,7 @@ Read the properties and relationships of an [authenticationEventListener](../res
 - [onAuthenticationMethodLoadStartListener resource type](../resources/onauthenticationmethodloadstartlistener.md) resource type
 - [onAttributeCollectionListener resource type](../resources/onattributecollectionlistener.md) resource type
 - [onUserCreateStartListener resource type](../resources/onusercreatestartlistener.md) resource type
+- [onFraudProtectionLoadStartListener](../resources/onfraudprotectionloadstartlistener.md) resource type
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -116,6 +117,7 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/authenticationEventListeners/$entity",
     "@odata.type": "#microsoft.graph.onTokenIssuanceStartListener",
     "id": "6fc5012e-7665-43d6-9708-4370863f4e6e",
+    "displayName": "Token Issuance listener policy",
     "conditions": {
         "applications": {
             "includeApplications@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/authenticationEventListeners('6fc5012e-7665-43d6-9708-4370863f4e6e')/microsoft.graph.onTokenIssuanceStartListener/conditions/applications/includeApplications",

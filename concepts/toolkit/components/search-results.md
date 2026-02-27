@@ -4,9 +4,13 @@ description: "A search results component allows you to make queries to the searc
 ms.localizationpriority: medium
 author: sebastienlevert
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Search results component in Microsoft Graph Toolkit
+
+> [!CAUTION]
+> The Microsoft Graph Toolkit is deprecated. The retirement period begins September 1, 2025, with full retirement planned for August 28, 2026. Developers should migrate to using the Microsoft Graph SDKs or other supported Microsoft Graph tools for building web experiences. For more information, see the [deprecation announcement](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-toolkit-retirement/).
 
 You can use `mgt-search-results` to make search queries to Microsoft Graph directly in your HTML. The component provides some default result type renderings but also offers full customization of the templates.
 
@@ -35,7 +39,7 @@ You can use several attributes to change the behavior of the component. The requ
 | Attribute                 | Property                | Description                                                                                                                                                                                                                               |
 | ------------------------- | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | query-string              | queryString             | The query to send to Microsoft Search.                                                                                                                                                                                                    |
-| entity-types              | entityTypes             | One or more types of resources expected in the response. Possible values are: list, site, listItem, message, event, drive, driveItem, person, externalItem, acronym, bookmark, chatMessage. Default is `driveItem`, `listItem`, `site`.   |
+| entity-types              | entityTypes             | One or more types of resources expected in the response. The possible values are: list, site, listItem, message, event, drive, driveItem, person, externalItem, acronym, bookmark, chatMessage. Default is `driveItem`, `listItem`, `site`.   |
 | content-sources           | contentSources          | Content sources to use with external items.                                                                                                                                                                                               |
 | paging-max                | pagingMax               | The maximum number of pages to be clickable in the paging control. Default is `7`.                                                                                                                                                        |
 | query-template            | queryTemplate           | Query template to use in complex search scenarios. Query templates are currently supported only on the beta endpoint.                                                                                                                     |

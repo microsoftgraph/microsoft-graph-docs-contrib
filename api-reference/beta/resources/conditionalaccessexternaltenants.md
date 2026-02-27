@@ -22,7 +22,7 @@ Base type of [conditionalAccessAllExternalTenants](../resources/conditionalacces
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| membershipKind |conditionalAccessExternalTenantsMembershipKind | The membership kind. Possible values are: `all`, `enumerated`, `unknownFutureValue`. The `enumerated` member references an [conditionalAccessEnumeratedExternalTenants](conditionalaccessenumeratedexternaltenants.md) object.|
+| membershipKind |conditionalAccessExternalTenantsMembershipKind | The membership kind. The possible values are: `all`, `enumerated`, `unknownFutureValue`. The `enumerated` member references an [conditionalAccessEnumeratedExternalTenants](conditionalaccessenumeratedexternaltenants.md) object.|
 
 ## Relationships
 

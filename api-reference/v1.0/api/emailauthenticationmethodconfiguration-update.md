@@ -49,9 +49,9 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/e
 
 |Property|Type|Description|
 |:---|:---|:---|
-|allowExternalIdToUseEmailOtp|externalEmailOtpState|Determines whether email OTP is usable by external users for authentication. Possible values are: `default`, `enabled`, `disabled`, `unknownFutureValue`.|
+|allowExternalIdToUseEmailOtp|externalEmailOtpState|Determines whether email OTP is usable by external users for authentication. The possible values are: `default`, `enabled`, `disabled`, `unknownFutureValue`.|
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from the policy.|
-|state|authenticationMethodState|Indicates whether this authentication method is enabled or not. Possible values are: `enabled`, `disabled`.|
+|state|authenticationMethodState|Indicates whether this authentication method is enabled or not. The possible values are: `enabled`, `disabled`.|
 
 >**Note:** You must include the `@odata.type` property with a value of `#microsoft.graph.emailAuthenticationMethodConfiguration` in the request body.
 

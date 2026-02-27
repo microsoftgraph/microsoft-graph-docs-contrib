@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /tenantRelationships/multiTenantOrganization
 ```
 
@@ -60,7 +60,7 @@ The following example gets properties of the multitenant organization.
   "name": "get_multitenantorganization"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/tenantRelationships/multiTenantOrganization
 ```
 
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/v1.0/tenantRelationships/multiTenantOrganization
   "@odata.type": "microsoft.graph.multiTenantOrganization"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -118,7 +118,7 @@ Content-Type: application/json
 
 The following response shows when the requesting tenant is not part of any multitenant organization.
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

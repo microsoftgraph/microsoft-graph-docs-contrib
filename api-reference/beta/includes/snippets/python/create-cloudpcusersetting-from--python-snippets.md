@@ -10,6 +10,7 @@ from msgraph_beta.generated.models.cloud_pc_user_setting import CloudPcUserSetti
 from msgraph_beta.generated.models.cloud_pc_cross_region_disaster_recovery_setting import CloudPcCrossRegionDisasterRecoverySetting
 from msgraph_beta.generated.models.cloud_pc_disaster_recovery_network_setting import CloudPcDisasterRecoveryNetworkSetting
 from msgraph_beta.generated.models.cloud_pc_disaster_recovery_type import CloudPcDisasterRecoveryType
+from msgraph_beta.generated.models.cloud_pc_provisioning_source_type import CloudPcProvisioningSourceType
 from msgraph_beta.generated.models.cloud_pc_restore_point_setting import CloudPcRestorePointSetting
 from msgraph_beta.generated.models.cloud_pc_restore_point_frequency_type import CloudPcRestorePointFrequencyType
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
@@ -30,6 +31,7 @@ request_body = CloudPcUserSetting(
 		disaster_recovery_type = CloudPcDisasterRecoveryType.Premium,
 		user_initiated_disaster_recovery_allowed = True,
 	),
+	provisioning_source_type = CloudPcProvisioningSourceType.Image,
 	restore_point_setting = CloudPcRestorePointSetting(
 		frequency_in_hours = 16,
 		frequency_type = CloudPcRestorePointFrequencyType.SixteenHours,

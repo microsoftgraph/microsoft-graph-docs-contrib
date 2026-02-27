@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Remove a [contentModel](../resources/contentmodel.md) from a SharePoint document library.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

@@ -22,7 +22,7 @@ Base type for assignment targets.
 |Property|Type|Description|
 |:---|:---|:---|
 |deviceAndAppManagementAssignmentFilterId|String|The ID of the filter for the target assignment.|
-|deviceAndAppManagementAssignmentFilterType|[deviceAndAppManagementAssignmentFilterType](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|The type of filter of the target assignment i.e. Exclude or Include. Possible values are: `none`, `include`, `exclude`.|
+|deviceAndAppManagementAssignmentFilterType|[deviceAndAppManagementAssignmentFilterType](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|The type of filter of the target assignment i.e. Exclude or Include. The possible values are: `none`, `include`, `exclude`.|
 
 ## Relationships
 None.

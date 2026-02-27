@@ -29,6 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { 
   "blockType": "permissions", 
+  "name": "longrunningoperation_get", 
   "requestUrls": ["GET /identityGovernance/roleManagementAlerts/operations/{longRunningOperationId}"]
  } -->
 [!INCLUDE [permissions-table](../includes/permissions/longrunningoperation-get-permissions.md)]
@@ -39,6 +40,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { 
   "blockType": "permissions", 
+  "name": "longrunningoperation_get_2", 
   "requestUrls": ["GET /users/{id | userPrincipalName}/authentication/operations/{id}"]
  } -->
 [!INCLUDE [permissions-table](../includes/permissions/longrunningoperation-get-2-permissions.md)]
@@ -52,7 +54,7 @@ To retrieve details of a long running operation of role management alert refresh
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/roleManagementAlerts/operations/{longRunningOperationId}
 ```
 
@@ -62,7 +64,7 @@ To retrieve the status of a long running operation of authentication method rese
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /users/{id | userPrincipalName}/authentication/operations/{id}
 ```
 
@@ -94,7 +96,7 @@ The following example shows a request.
   "name": "get_longrunningoperation_roleManagementalerts_running"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/operations/refresh:DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_StaleSignInAlert
 ```
 
@@ -137,7 +139,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.longRunningOperation"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -162,7 +164,7 @@ The following example shows a request.
   "name": "get_longrunningoperation_roleManagementalerts_succeeded"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/operations/refresh:DirectoryRole_19356be4-7e93-4ed6-a7c6-0ae28454d125_StaleSignInAlert
 ```
 
@@ -205,7 +207,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.longRunningOperation"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -277,7 +279,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.longRunningOperation"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

@@ -340,7 +340,7 @@ Content-Type: application/json
 }
 ```
 
-## Example 3: Create a policy that automatically creates assignments based on a membership rule
+### Example 3: Create a policy that automatically creates assignments based on a membership rule
 
 The following example shows a policy that automatically creates assignments for users in the sales department.
 
@@ -430,7 +430,7 @@ Content-Type: application/json
 ```
 
 
-## Example 4: Create a policy where requestors are asked to answer questions while requesting access to provide additional information to approvers.
+### Example 4: Create a policy where requestors are asked to answer questions while requesting access to provide additional information to approvers
 
 The following example shows a policy that automatically creates assignments for users in the sales department.
 
@@ -722,6 +722,123 @@ Content-type: application/json
             "customExtension": {
                 "@odata.type": "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",
                 "id": "bebe7873-1f0d-4db9-b6c3-01f7ebfe8476"
+            }
+        }
+    ]
+}
+```
+
+
+### Example 6: Create a policy used to determine approvers dynamically from a Logic App
+
+In the following example, the policy is created for an access package assignment that is determining the approver dynamically via a logic app called from a custom extension.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageassignmentpolicy_CustomWorkflowExtension_dynamic"
+}-->
+
+```msgraph-interactive
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentPolicies/
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/$entity",
+    "displayName": "Dynamic approver policy",
+    "description": "Dynamic approver policy",
+    "canExtend": false,
+    "durationInDays": 0,
+    "expirationDateTime": null,
+    "accessPackageId": "fc29cdca-57f6-47e3-b20c-3fa18e4826ac",
+    "accessReviewSettings": null,
+    "questions": [],
+    "accessPackageNotificationSettings": {
+        "isAssignmentNotificationDisabled": false
+    },
+    "verifiableCredentialSettings": {
+        "credentialTypes": []
+    },
+    "requestorSettings": {
+        "scopeType": "AllExistingDirectorySubjects",
+        "acceptRequests": true,
+        "allowedRequestors": []
+    },
+    "requestApprovalSettings": {
+        "isApprovalRequired": true,
+        "isApprovalRequiredForExtension": false,
+        "isRequestorJustificationRequired": true,
+        "approvalMode": "SingleStage",
+        "approvalStages": [
+            {
+                "@odata.type": "#microsoft.graph.accessPackageDynamicApprovalStage",
+                "customExtension": {
+                    "@odata.type": "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",
+                    "id": "52036a43-10b5-444d-a1a2-d4f240420239"
+                }
+            }
+        ]
+    },
+    "customExtensionStageSettings": [
+        {
+            "stage": "assignmentRequestDeterminingApprovalRequirements",
+            "customExtension": {
+            "@odata.type": "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",
+            "id": "52036a43-10b5-444d-a1a2-d4f240420239"
+            }
+        }
+    ]
+}
+
+```
+
+#### Response 
+
+The following example shows the response. The **customExtensionStageSettings** object isn't returned by default. To retrieve this object, use the [GET accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-get.md) method with `$expand`. For more information, see [Example 2: Retrieve the custom extension stage settings for a policy](../api/accesspackageassignmentpolicy-get.md#example-2-retrieve-the-custom-extension-stage-settings-for-a-policy).
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentPolicy"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "id": "d0324cbb-24a2-4edb-acca-fee5384c6a5e",
+  "displayName": "Dynamic approver policy",
+  "description": "Dynamic approver policy",
+  "canExtend": false,
+  "durationInDays": 0,
+  "expirationDateTime": null,
+  "accessPackageId": "fc29cdca-57f6-47e3-b20c-3fa18e4826ac",
+  "accessReviewSettings": null,
+  "questions": [],
+  "requestorSettings": {
+    "scopeType": "AllExistingDirectorySubjects",
+    "acceptRequests": true,
+    "allowedRequestors": []
+  },
+  "requestApprovalSettings": {
+    "isApprovalRequired": false,
+    "isApprovalRequiredForExtension": false,
+    "isRequestorJustificationRequired": false,
+    "approvalMode": "NoApproval",
+    "approvalStages": []
+  },
+  "customExtensionStageSettings": [
+        {
+            "stage": "assignmentRequestCreated",
+            "customExtension": {
+                "@odata.type": "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",
+                "id": "52036a43-10b5-444d-a1a2-d4f240420239"
             }
         }
     ]

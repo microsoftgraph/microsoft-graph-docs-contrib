@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /roleManagement/directory/roleEligibilityScheduleRequests
 ```
 
@@ -73,7 +73,7 @@ If successful, this method returns a `201 Created` response code and an [unified
   "name": "create_unifiedroleeligibilityschedulerequest_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/roleManagement/directory/roleEligibilityScheduleRequests
 Content-Type: application/json
 
@@ -131,7 +131,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.unifiedRoleEligibilityScheduleRequest"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 
@@ -187,7 +187,7 @@ In the following request, the admin creates a request to revoke the eligibility 
   "name": "create_unifiedroleeligibilityschedulerequest_from_unifiedroleeligibilityschedulerequests_adminRemove"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/roleManagement/directory/roleEligibilityScheduleRequests
 Content-Type: application/json
 
@@ -240,7 +240,7 @@ The following example shows the response. The response object shows a previous r
   "@odata.type": "microsoft.graph.unifiedRoleEligibilityScheduleRequest"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

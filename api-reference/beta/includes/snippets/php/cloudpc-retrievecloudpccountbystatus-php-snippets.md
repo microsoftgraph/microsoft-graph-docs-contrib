@@ -6,17 +6,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\DeviceManagement\VirtualEndpoint\CloudPCs\Item\CloudPCItemRequestBuilderGetRequestConfiguration;
+use Microsoft\Graph\Beta\Generated\DeviceManagement\VirtualEndpoint\CloudPCs\RetrieveCloudPcCountByStatus\RetrieveCloudPcCountByStatusRequestBuilderGetRequestConfiguration;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestConfiguration = new CloudPCItemRequestBuilderGetRequestConfiguration();
-$queryParameters = CloudPCItemRequestBuilderGetRequestConfiguration::createQueryParameters();
+$requestConfiguration = new RetrieveCloudPcCountByStatusRequestBuilderGetRequestConfiguration();
+$queryParameters = RetrieveCloudPcCountByStatusRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->customFilter = "contains(tolower(managedDeviceName), 'a') or contains(tolower(imageDisplayName), 'a') or contains(tolower(userPrincipalName), 'a')";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->cloudPCs()->byCloudPCId('cloudPC-id')->get($requestConfiguration)->wait();
+$result = $graphServiceClient->deviceManagement()->virtualEndpoint()->cloudPCs()->retrieveCloudPcCountByStatus()->get($requestConfiguration)->wait();
 
 ```

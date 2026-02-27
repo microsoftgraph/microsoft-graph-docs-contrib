@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET security/threatIntelligence/sslCertificates/{sslCertificateId}/relatedHosts
 ```
 
@@ -61,7 +61,7 @@ The following example shows a request.
   "sampleKeys": ["MDJjODMzNDIzYzYwOTIzNjM1YTA0OTRhMmI2NThjYWM5NDFmM2FmMA=="]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/threatIntelligence/sslCertificates/MDJjODMzNDIzYzYwOTIzNjM1YTA0OTRhMmI2NThjYWM5NDFmM2FmMA==/relatedHosts
 ```
 
@@ -104,7 +104,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.security.host)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

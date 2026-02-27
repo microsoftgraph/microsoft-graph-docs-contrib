@@ -16,6 +16,8 @@ Namespace: microsoft.graph.networkaccess
 
 Get a list of the [tlsInspectionRule](../resources/networkaccess-tlsinspectionrule.md) objects in a [tlsInspectionPolicy](../resources/networkaccess-tlsinspectionpolicy.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -31,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /networkAccess/tlsInspectionPolicies/{tlsInspectionPolicyId}/policyRules
 ```
 
@@ -65,7 +67,7 @@ The following example shows a request.
   "sampleKeys": ["b712c469-e7cd-e7cb-738f-94b199570b0d"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/networkAccess/tlsInspectionPolicies/b712c469-e7cd-e7cb-738f-94b199570b0d/policyRules
 ```
 
@@ -89,6 +91,10 @@ GET https://graph.microsoft.com/beta/networkAccess/tlsInspectionPolicies/b712c46
 [!INCLUDE [sample-code](../includes/snippets/php/list-tlsinspectionrule-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-tlsinspectionrule-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-tlsinspectionrule-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -105,7 +111,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.networkaccess.tlsInspectionRule"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

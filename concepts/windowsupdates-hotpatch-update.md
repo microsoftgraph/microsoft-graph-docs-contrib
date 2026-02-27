@@ -1,11 +1,12 @@
 ---
 title: "Deploy a hotpatch quality update using Windows Autopatch"
 description: "Follow these steps to deploy hotpatch Windows quality updates to devices in a Microsoft Entra tenant by using Windows Autopatch."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: conceptualPageType
-ms.date: 11/05/2024
+ms.date: 01/28/2026
+ms.topic: install-set-up-deploy
 ---
 
 # Deploy a hotpatch quality update using Windows Autopatch
@@ -351,4 +352,4 @@ HTTP/1.1 201 Created
 
 ## After a deployment
 
-After all devices assigned to a deployment audience have been initially offered the update, not all devices may have started or completed the update, due to factors like device connectivity. As long as the deployment still exists, it ensures that Windows Update offers the update to the assigned devices whenever they reconnect.
+After all devices assigned to a deployment audience have been initially offered the update, not all devices might have started or completed the update, due to factors like device connectivity. As long as the deployment still exists, it ensures that Windows Update offers the update to the assigned devices whenever they reconnect.

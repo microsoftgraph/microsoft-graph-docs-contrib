@@ -22,6 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "security_ediscoveryreviewsetquery_applytags" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoveryreviewsetquery-applytags-permissions.md)]
+[!INCLUDE [rbac-rbac-ediscovery-custodian-export-apis](../includes/rbac-for-apis/rbac-ediscovery-custodian-export-apis.md)]
 
 ## HTTP request
 
@@ -29,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/reviewSets/{ediscoveryReviewSetId}/queries/{queryId}/applyTags
 ```
 
@@ -66,7 +67,7 @@ The following example shows a request.
   "name": "ediscoveryreviewsetquerythis.applytags"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-cebe-478f-b1af-d3227f1fd645/reviewSets/63ef0fd7-0db2-45eb-a9d7-7d75c8239873/queries/5f426fdc-f027-40db-b7cc-453cf06dc996/applyTags
 Content-Type: application/json
 
@@ -114,6 +115,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 202 Accepted
 ```

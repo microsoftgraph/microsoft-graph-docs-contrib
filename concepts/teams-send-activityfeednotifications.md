@@ -5,6 +5,7 @@ author: "RamjotSingh"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 ms.date: 05/15/2025
+ms.topic: how-to
 ---
 
 # Send activity feed notifications to users in Microsoft Teams
@@ -318,7 +319,7 @@ The following example shows how you can send an activity feed notification for a
   "name": "chat_sendactivitynotification_for_task_created_in_chat"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/chats/{chatId}/sendActivityNotification
 Content-Type: application/json
 
@@ -380,7 +381,7 @@ Content-Type: application/json
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -396,7 +397,7 @@ The following example shows how you can send an activity feed notification for a
   "name": "team_sendactivitynotification_task_created_in_teams"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/teams/{teamId}/sendActivityNotification
 Content-Type: application/json
 
@@ -458,7 +459,7 @@ Content-Type: application/json
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -479,7 +480,7 @@ The Yammer notification example shown earlier uses a custom topic because Micros
   "name": "team_sendactivitynotification_customer_task"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/teams/{teamId}/sendActivityNotification
 Content-Type: application/json
 
@@ -542,7 +543,7 @@ Content-Type: application/json
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -558,7 +559,7 @@ The following example shows how you can send an activity feed notification to al
   "name": "team_sendactivitynotification_about_event"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/teams/7155e3c8-175e-4311-97ef-572edc3aa3db/sendActivityNotification
 Content-Type: application/json
 
@@ -615,7 +616,7 @@ Content-Type: application/json
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -631,7 +632,7 @@ The following example shows how you can send an activity feed notification to al
   "name": "team_sendactivitynotification_channelmember_about_event"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/teams/7155e3c8-175e-4311-97ef-572edc3aa3db/sendActivityNotification
 Content-Type: application/json
 
@@ -689,7 +690,7 @@ Content-Type: application/json
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -706,7 +707,7 @@ The following example shows how you can send an activity feed notification to al
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/chats/19:d65713bc498c4a428c71ef9353e6ce20@thread.v2/sendActivityNotification
 Content-Type: application/json
 
@@ -763,7 +764,7 @@ Content-Type: application/json
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
@@ -780,7 +781,7 @@ The following example shows how to send an activity feed notification to multipl
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/teamwork/sendActivityNotificationToRecipients
 Content-Type: application/json
 
@@ -854,7 +855,7 @@ Content-Type: application/json
 }
 -->
 
-``` http
+```http
 HTTP/1.1 202 Accepted
 ```
 
@@ -872,7 +873,7 @@ This example notifies the team owner to take a short break. Modify the `value` i
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/teams/{teamId}/sendActivityNotification
 Content-Type: application/json
 
@@ -934,7 +935,7 @@ Content-Type: application/json
   "truncated": false
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

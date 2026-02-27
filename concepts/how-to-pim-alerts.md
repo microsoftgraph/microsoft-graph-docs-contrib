@@ -7,15 +7,15 @@ ms.reviewer: rianakarim
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.subservice: entra-id-governance
-ms.date: 09/24/2024
+ms.date: 09/29/2025
 ms.custom: sfi-ga-nochange
 #Customer intent: As a developer, I want to learn how to programmatically manage security alerts relating to Microsoft Entra roles via Privileged Identity Management (PIM).
 ---
 
-# Manage security alerts for Microsoft Entra roles using PIM APIs
+# Manage security alerts for Microsoft Entra roles by using PIM APIs
 
 
-Privileged Identity Management (PIM) for Microsoft Entra roles generates alerts when it detects suspicious or unsafe settings for Microsoft Entra roles in your tenant. This article describes scenarios for managing PIM alerts using Microsoft Graph.
+Privileged Identity Management (PIM) for Microsoft Entra roles generates alerts when it detects suspicious or unsafe settings for Microsoft Entra roles in your tenant. This article describes scenarios for managing PIM alerts by using Microsoft Graph.
 
 For more information about API resources for managing PIM security alerts, see [Security alerts for Microsoft Entra roles](/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-beta&preserve-view=true#security-alerts-for-azure-ad-roles).
 
@@ -24,7 +24,7 @@ For more information about API resources for managing PIM security alerts, see [
 
 ## Prerequisites
 
-+ Have an understanding of [PIM for Microsoft Entra roles APIs](/graph/api/resources/privilegedidentitymanagementv3-overview).
++ Understand [PIM for Microsoft Entra roles APIs](/graph/api/resources/privilegedidentitymanagementv3-overview).
 + In this article, you call the APIs in a [delegated scenario](/graph/auth-v2-user).
   + Sign in to an API client such as [Graph Explorer](https://aka.ms/ge) with administrative privileges to manage PIM rules. The *Privileged Role Administrator* role is the least privileged role sufficient to manage PIM rules.
   + Grant yourself the *RoleManagementAlert.ReadWrite.Directory* delegated permission.
@@ -34,7 +34,7 @@ For more information about API resources for managing PIM security alerts, see [
 ### Request
 <!-- clarify this statement in the draft: All built-in roles are granted access to this operation.-->
 
-Only alerts relating to Microsoft Entra built-in roles and scoped to the tenant (`/`) are supported and can be retrieved using the following request. Not specifying the correct **scope** and **scopeType** returns a `400 Bad Request` error.
+Only alerts that relate to Microsoft Entra built-in roles and are scoped to the tenant (`/`) are supported. You can retrieve these alerts by using the following request. If you don't specify the correct **scope** and **scopeType**, the request returns a `400 Bad Request` error.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -84,7 +84,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.unifiedRoleManagementAlert)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -218,7 +218,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.unifiedRoleManagementAlert"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -240,7 +240,7 @@ Content-Type: application/json
 
 ### Request
 
-You can read a security alert and its definition, configuration, and related incidents in the tenant in a single query. Either expand all relationships using the wildcard character (*), or by expand the relationships individually using `$expand=alertDefinition,alertConfiguration,alertIncidents`. This request helps you avoid retrieving the alert definition, configuration, and incidents separately, and then correlating them to the alert.
+You can read a security alert and its definition, configuration, and related incidents in the tenant in a single query. Either expand all relationships by using the wildcard character (*), or expand the relationships individually by using `$expand=alertDefinition,alertConfiguration,alertIncidents`. This request helps you avoid retrieving the alert definition, configuration, and incidents separately, and then correlating them to the alert.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -291,7 +291,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.unifiedRoleManagementAlert"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -437,7 +437,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.unifiedRoleManagementAlertIncident)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -500,7 +500,7 @@ Content-Type: application/json
 
 ## Dismiss an alert
 
-You dismiss an alert by setting the **isActive** property to `true`. When you dismiss an alert, PIM no longer scans the alert in your tenant for incidents. Existing incidents can still be queried, but no new incidents are generated. You can re-enable the alert by setting the `isActive` property to `true` or by [refreshing the alert type](#refresh-alerts).
+You dismiss an alert by setting the **isActive** property to `false`. When you dismiss an alert, PIM no longer scans the alert in your tenant for incidents. Existing incidents can still be queried, but no new incidents are generated. You can re-enable the alert by setting the `isActive` property to `true` or by [refreshing the alert type](#refresh-alerts).
 
 The request returns a `204 No Content` response.
 
@@ -663,7 +663,7 @@ Location: https://graph.microsoft.com/beta/identityGovernance/roleManagementAler
 
 ## Update an alert configuration
 
-Updating an alert configuration means to change the tenant-specific settings that control how PIM scans the tenant for incidents that match the alert type. For example, whether to scan the alert in the tenant or you can change the threshold that when crossed triggers a known incident.
+Updating an alert configuration means changing the tenant-specific settings that control how PIM scans the tenant for incidents that match the alert type. For example, you can change whether to scan the alert in the tenant or you can change the threshold that when crossed triggers a known incident.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -717,7 +717,7 @@ The request returns a `204 No Content` response.
 
 ## Remediate an alert incident
 
-Remediating an alert incident means requesting Microsoft Entra ID to apply the mitigation steps that are defined in the alert definition. For example, if the alert definition recommends that you remove a user from a role, then remediating the incident means that Microsoft Entra ID removes the user from the role.
+Remediating an alert incident means requesting Microsoft Entra ID to apply the mitigation steps that are defined in the alert definition. For example, if the alert definition recommends that you remove a user from a role, remediating the incident means that Microsoft Entra ID removes the user from the role.
 
 ### Request
 # [HTTP](#tab/http)

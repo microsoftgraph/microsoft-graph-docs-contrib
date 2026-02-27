@@ -5,7 +5,8 @@ author: nanguil
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-ms.date: 07/22/2024
+ms.date: 12/01/2025
+toc.title: Language-specific tenant branding
 ---
 
 # organizationalBrandingLocalization resource type
@@ -17,6 +18,8 @@ Namespace: microsoft.graph
 Resource that supports managing language-specific branding. While you can't change your original configuration's language, this resource allows you to create a new configuration for a different language.
 
 Inherits from [organizationalBrandingProperties](organizationalbrandingproperties.md).
+
+For more information, see [Customize browser language for authentication experience](/entra/external-id/customers/how-to-customize-languages-customers).
 
 ## Methods
 |Method|Return type|Description|

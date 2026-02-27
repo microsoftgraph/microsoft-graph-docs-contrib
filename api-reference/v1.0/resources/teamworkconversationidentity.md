@@ -19,7 +19,7 @@ Inherits from [identity](../resources/identity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|conversationIdentityType|teamworkConversationIdentityType|Type of conversation. Possible values are: `team`, `channel`, `chat`, and `unknownFutureValue`.|
+|conversationIdentityType|teamworkConversationIdentityType|Type of conversation. The possible values are: `team`, `channel`, `chat`, and `unknownFutureValue`.|
 |displayName|String|Inherited from [identity](../resources/identity.md). Display name of the conversation. Optional.|
 |id|String|Inherited from [identity](../resources/identity.md). ID of the conversation.|
 

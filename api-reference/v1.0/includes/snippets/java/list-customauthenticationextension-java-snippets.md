@@ -8,9 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-CustomAuthenticationExtensionCollectionResponse result = graphClient.identity().customAuthenticationExtensions().get(requestConfiguration -> {
-	requestConfiguration.queryParameters.filter = "isOf('microsoft.graph.onTokenIssuanceStartCustomExtension')";
-});
+CustomAuthenticationExtensionCollectionResponse result = graphClient.identity().customAuthenticationExtensions().get();
 
 
 ```

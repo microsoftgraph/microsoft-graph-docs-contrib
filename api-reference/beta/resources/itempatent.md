@@ -1,6 +1,6 @@
 ---
 title: "itemPatent resource type"
-description: "itemPatent resource type"
+description: "Represents a granted or filed patent that has been added to a user's profile."
 ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.subservice: "people"
@@ -12,7 +12,7 @@ ms.date: 07/22/2024
  
 Namespace: microsoft.graph
 
-Represents a granted or filed patent which has been added to a user's [profile](../resources/profile.md).
+Represents a granted or filed patent that has been added to a user's [profile](../resources/profile.md).
 
 Inherits from [itemFacet](../resources/itemfacet.md).
 
@@ -23,12 +23,12 @@ Inherits from [itemFacet](../resources/itemfacet.md).
 |[Create](../api/profile-post-patents.md)|[itemPatent](../resources/itempatent.md)|Create a new itemPatent object.|
 |[Get](../api/itempatent-get.md)|[itemPatent](../resources/itempatent.md)|Read the properties and relationships of an [itemPatent](../resources/itempatent.md) object.|
 |[Update](../api/itempatent-update.md)|[itemPatent](../resources/itempatent.md)|Update the properties of an [itemPatent](../resources/itempatent.md) object.|
-|[Delete](../api/itempatent-delete.md)|None|Deletes an [itemPatent](../resources/itempatent.md) object.|
+|[Delete](../api/itempatent-delete.md)|None|Delete an [itemPatent](../resources/itempatent.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). The possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |createdBy|[identitySet](../resources/identityset.md)|Provides the identifier of the user and/or application that created the entity. Inherited from [itemFacet](../resources/itemfacet.md).|
 |createdDateTime|DateTimeOffset|Provides the dateTimeOffset for when the entity was created. Inherited from [itemFacet](../resources/itemfacet.md).|
 |description|String|Descpription of the patent or filing. |
@@ -37,7 +37,7 @@ Inherits from [itemFacet](../resources/itemfacet.md).
 |inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
 |isPending        |Boolean     |Indicates the patent is pending.        |
 |issuedDate       |Date        |The date that the patent was granted.   |
-|issuingAuthority |String      |Authority which granted the patent.     |
+|issuingAuthority |String      |Authority that granted the patent.     |
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Provides the identifier of the user and/or application that last modified the entity. Inherited from [itemFacet](../resources/itemfacet.md).|
 |lastModifiedDateTime|DateTimeOffset|Provides the dateTimeOffset for when the entity was created. Inherited from [itemFacet](../resources/itemfacet.md).|
 |number           |String      |The patent number.                      |

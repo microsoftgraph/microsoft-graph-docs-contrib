@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Mark an event in Microsoft Entra [sign-in](../resources/signin.md) logs as safe. Admins can either mark the events flagged as risky by Microsoft Entra ID Protection as safe, or they can mark unflagged events as safe. For details about investigating Identity Protection risks, see [How to investigate risk](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /auditLogs/signIns/confirmSafe
 ```
 
@@ -69,7 +69,7 @@ The following example shows a request.
   "name": "signinthis.confirmsafe"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/auditLogs/signIns/confirmSafe
 Content-Type: application/json
 
@@ -119,7 +119,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

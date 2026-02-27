@@ -33,7 +33,7 @@ List AWS overpermissioned users:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.overprovisionedUserFinding
 ```
 
@@ -42,7 +42,7 @@ List Azure overpermissioned users:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.overprovisionedUserFinding
 ```
 
@@ -51,7 +51,7 @@ List GCP overpermissioned users:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.overprovisionedUserFinding
 ```
 
@@ -83,7 +83,7 @@ The following example shows a request.
   "name": "list_overprovisioneduserfinding"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.overprovisionedUserFinding
 ```
 
@@ -127,7 +127,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.overprovisionedUserFinding)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

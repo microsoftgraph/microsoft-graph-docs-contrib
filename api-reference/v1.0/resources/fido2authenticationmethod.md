@@ -21,23 +21,25 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/fido2authenticationmethod-list.md)|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) collection|Retrieve a list of a user's fido2AuthenticationMethod objects and their properties.|
-|[Get](../api/fido2authenticationmethod-get.md)|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|Read the properties and relationships of a user's fido2AuthenticationMethod object.|
-|[Delete](../api/fido2authenticationmethod-delete.md)|None|Deletes a user's fido2AuthenticationMethod object.|
+|[List](../api/fido2authenticationmethod-list.md)|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) collection|Retrieve a list of a user's **fido2AuthenticationMethod** objects and their properties.|
+|[Get](../api/fido2authenticationmethod-get.md)|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|Read the properties and relationships of a user's **fido2AuthenticationMethod** object.|
+|[Delete](../api/fido2authenticationmethod-delete.md)|None|Delete a user's **fido2AuthenticationMethod** object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |aaGuid|String|Authenticator Attestation GUID, an identifier that indicates the type (e.g. make and model) of the authenticator.|
 |attestationCertificates|String collection|The attestation certificate(s) attached to this security key.|
-|attestationLevel|attestationLevel|The attestation level of this FIDO2 security key. Possible values are: `attested`, or `notAttested`.|
-|createdDateTime|DateTimeOffset|The timestamp when this key was registered to the user.|
+|attestationLevel|attestationLevel|The attestation level of this FIDO2 security key. The possible values are: `attested`, or `notAttested`.|
+|createdDateTime|DateTimeOffset|The timestamp when this key was registered to the user. Inherited from [authenticationMethod](../resources/authenticationmethod.md).|
 |displayName|String|The display name of the key as given by the user.|
 |id|String|The authentication method identifier.|
 |model|String|The manufacturer-assigned model of the FIDO2 security key.|
 
 ## Relationships
 None.
+
+## JSON representation
 
 The following JSON representation shows the resource type.
 

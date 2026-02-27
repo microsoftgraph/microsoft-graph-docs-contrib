@@ -27,7 +27,7 @@ Represents a remote action result specified by a Cloud PC.
 |Property|Type|Description|
 |:---|:---|:---|
 |actionName|String|The specified action. Supported values in the Microsoft Endpoint Manager portal are: `Reprovision`, `Resize`, `Restore`. Supported values in enterprise Cloud PC devices are: `Reboot`, `Rename`, `Reprovision`, `Troubleshoot`.|
-|actionState|[actionState](#actionstate-values)|State of the action. Possible values are: `None`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`. Read-only.|
+|actionState|[actionState](#actionstate-values)|State of the action. The possible values are: `None`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`. Read-only.|
 |cloudPcId|String|The ID of the Cloud PC device on which the remote action is performed. Read-only.|
 |managedDeviceId|String|The ID of the Intune managed device on which the remote action is performed. Read-only.|
 |startDateTime|DateTimeOffset|Time the action was initiated. The Timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.|

@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /sites/{siteId}/lists/{listId}/items/{itemId}/documentSetVersions
 ```
 
@@ -62,7 +62,7 @@ The following example shows a request.
   "sampleKeys": ["1", "root", "Documents"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/sites/root/lists/Documents/items/1/documentSetVersions
 ```
 
@@ -109,7 +109,7 @@ The following example shows the response.
   "isCollection": true
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

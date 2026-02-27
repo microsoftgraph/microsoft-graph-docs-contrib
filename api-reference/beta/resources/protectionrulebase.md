@@ -19,8 +19,8 @@ Namespace: microsoft.graph
 Represents a protection rule specified by the client as part of a protection plan applied to Microsoft 365 data in an organization. Currently, only inclusion rules, which are rules that indicate that a protection policy should match the specified criteria, can be defined.
 
 - Protection rules can be static or dynamic. If the **isAutoApplyEnabled** property is `true`, the protection rule is dynamic; otherwise, it's static.
-- Static rule changes are applied once when it's created with no automatic/dynamic updates.
-- Dynamic rule is reevaluated at regular intervals to fetch the latest scope of the rule, resulting in addition/removal of artifacts based on latest rule evaluation.
+- Static rule changes are applied once when it's created with no automatic or dynamic updates.
+- Dynamic rule is reevaluated at regular intervals to fetch the latest scope of the rule, which results in the addition or removal of artifacts based on the latest rule evaluation.
 - This property can only be set when a **protectionRuleBase** object is created. Therefore, a dynamic rule can't be changed to a static rule, nor vice versa.
 
 This abstract type is the base type for [siteProtectionRule](../resources/siteprotectionrule.md), [mailboxProtectionRule](../resources/mailboxprotectionrule.md), and [driveProtectionRule](../resources/driveprotectionrule.md).
@@ -42,10 +42,10 @@ The following limitations apply to this resource:
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the protection rule associated with the policy.|
 |createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the rule.|
 |createdDateTime|DateTimeOffset|The time of creation of the rule.|
 |error|[publicError](../resources/publicerror.md)|Contains error details if an operation on a rule fails.|
+|id|String|The unique identifier of the protection rule associated with the policy.|
 |isAutoApplyEnabled|Boolean| `true` indicates that the protection rule is dynamic; `false` that it's static.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the person who last modified the rule.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification made to the rule.|
@@ -81,19 +81,13 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.protectionRuleBase",
-  "id": "String (identifier)",
-  "status": "String",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
+  "error": {"@odata.type": "microsoft.graph.publicError"},
+  "id": "String (identifier)",
+  "isAutoApplyEnabled": "Boolean",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "error": {
-    "@odata.type": "microsoft.graph.publicError"
-  },
-  "isAutoApplyEnabled": "Boolean"
+  "status": "String"
 }
 ```

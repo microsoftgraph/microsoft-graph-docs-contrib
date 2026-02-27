@@ -14,6 +14,8 @@ Namespace: microsoft.graph.networkaccess
 
 Create a new [externalCertificateAuthorityCertificate](../resources/networkaccess-externalcertificateauthoritycertificate.md) object. This request generates the Certificate Signing Request (CSR) that you download to sign and generate a certificate that you upload to the service using the [Update externalCertificateAuthorityCertificate operation](../api/networkaccess-externalcertificateauthoritycertificate-update.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -29,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /networkAccess/tls/externalCertificateAuthorityCertificates
 ```
 
@@ -67,7 +69,7 @@ The following example shows a request.
   "name": "create_externalcertificateauthoritycertificate_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/networkAccess/tls/externalCertificateAuthorityCertificates
 Content-Type: application/json
 
@@ -99,6 +101,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-externalcertificateauthoritycertificate-from--php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-externalcertificateauthoritycertificate-from--powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/create-externalcertificateauthoritycertificate-from--python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -115,7 +121,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.networkaccess.externalCertificateAuthorityCertificate"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

@@ -45,7 +45,7 @@ To retrieve policies and their details for Microsoft Entra roles scoped to the t
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /policies/roleManagementPolicies?$filter=scopeId eq '/' and scopeType eq 'DirectoryRole'
 ```
 
@@ -54,7 +54,7 @@ To retrieve details of all role management policies scoped to a group:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /policies/roleManagementPolicies?$filter=scopeId eq '{groupId}' and scopeType eq 'Group'
 ```
 
@@ -134,7 +134,7 @@ GET https://graph.microsoft.com/v1.0/policies/roleManagementPolicies?$filter=sco
   "@odata.type": "Collection(microsoft.graph.unifiedRoleManagementPolicy)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -225,7 +225,7 @@ GET https://graph.microsoft.com/v1.0/policies/roleManagementPolicies?$filter=sco
   "@odata.type": "Collection(microsoft.graph.unifiedRoleManagementPolicy)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -561,7 +561,7 @@ The following example retrieves policies that are scoped to the group and apply 
   "name": "list_unifiedrolemanagementpolicy_azureADGroup"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/policies/roleManagementPolicies?$filter=scopeId eq '60bba733-f09d-49b7-8445-32369aa066b3' and scopeType eq 'Group'&$expand=rules($select=id)
 ```
 
@@ -606,7 +606,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.unifiedRoleManagementPolicy)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

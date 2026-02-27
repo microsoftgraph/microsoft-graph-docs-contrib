@@ -1,11 +1,11 @@
 ---
 title: "authenticationEventListener resource type"
-description: "Listener for taking action on events in the authentication process."
+description: "**Representation of listener for on events in the authentication process**"
 author: "soneff"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-ms.date: 05/20/2024
+ms.date: 06/25/2025
 ---
 
 # authenticationEventListener resource type
@@ -14,20 +14,24 @@ Namespace: microsoft.graph
 
 To customize the authentication process, listeners can be registered which specify that for some event, on some conditions, some custom logic can be invoked. This is an abstract type from which the following types are derived.
 
+- [onTokenIssuanceStartListener resource type](../resources/ontokenissuancestartlistener.md) resource type
 - [onInteractiveAuthFlowStartListener resource type](../resources/oninteractiveauthflowstartlistener.md) resource type
 - [onAuthenticationMethodLoadStartListener resource type](../resources/onauthenticationmethodloadstartlistener.md) resource type
 - [onAttributeCollectionListener resource type](../resources/onattributecollectionlistener.md) resource type
 - [onUserCreateStartListener resource type](../resources/onusercreatestartlistener.md) resource type
-- [onTokenIssuanceStartListener resource type](../resources/ontokenissuancestartlistener.md) resource type
-
-Inherits from [entity](../resources/entity.md).
+- [onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md) resource type
+- [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md) resource type
+- [onEmailOtpSendListener](../resources/onemailotpsendlistener.md) resource type
+- [onFraudProtectionLoadStartListener](../resources/onfraudprotectionloadstartlistener.md) resource type
 
 > [!NOTE]
 >
 > You can have a maximum of 250 event listeners.
 
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/identitycontainer-list-authenticationeventlisteners.md)|[authenticationEventListener](../resources/authenticationeventlistener.md) collection|Retrieve a list of the object types that are derived from **authenticationEventListener**.|
@@ -39,9 +43,10 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|authenticationEventsFlowId|String|The identifier of the [authenticationEventsFlow](../resources/authenticationeventsflow.md) object.|
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger.|
+|displayName|String|The display name of the listener.|
 |id|String|Identifier for this authenticationEventListener. Inherited from [entity](../resources/entity.md).|
-|authenticationEventsFlowId|String|Indicates the authenticationEventListener is associated with an [authenticationEventsFlow](../resources/authenticationeventsflow.md). Read-only.
 
 ## Relationships
 None.
@@ -60,6 +65,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.authenticationEventListener",
   "id": "String (identifier)",
+  "displayName": "String",
   "conditions": {
     "@odata.type": "microsoft.graph.authenticationConditions"
   },

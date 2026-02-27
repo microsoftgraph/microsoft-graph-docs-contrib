@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /admin/exchange/mailboxes/{mailboxId}/folders/delta
 GET /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/childFolders/delta
 ```
@@ -83,7 +83,7 @@ For a similar example that shows how to use the state tokens to track changes in
   "sampleKeys": ["MBX:e0643f21@a7809c93"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93/folders/delta
 Prefer: odata.maxpagesize=2
 ```
@@ -127,7 +127,7 @@ The following example shows a `$deltaToken` in an **@odata.deltaLink** response 
   "@odata.type": "Collection(microsoft.graph.mailboxFolder)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 254

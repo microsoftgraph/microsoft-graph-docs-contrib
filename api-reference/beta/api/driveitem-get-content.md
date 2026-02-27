@@ -98,12 +98,12 @@ GET /me/drive/items/{item-id}/content
 The following example shows the response.
 
 Returns a `302 Found` response redirecting to a preauthenticated download URL for the file.
-It's the same URL available through the `@microsoft.graph.downloadUrl` property on the DriveItem.
+It's the same URL available through the `@microsoft.graph.downloadUrl` property on the **driveItem**.
 
 To download the contents of the file your application needs to follow the `Location` header in the response.
 Many HTTP client libraries follow the 302 redirection and start downloading the file immediately.
 
-Preauthenticated download URLs are only valid for a short period of time (a few minutes) and don't require an `Authorization` header to download.
+Preauthenticated download URLs are valid for a limited time. Use them immediately, as they might expire within minutes. You don't need to include an `Authorization` header when you access the download URL.
 
 <!-- { "blockType": "response" } -->
 

@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /termStore/sets/{setId}/relations
 GET /termStore/sets/{setId}/terms/{termId}/relations
 ```
@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "get_relation"
 }-->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/termStore/sets/{setId}/relations
 ```
 
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/beta/termStore/sets/{setId}/relations
   "@odata.type": "collection(microsoft.graph.termStore.relation)"
 }-->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -31,7 +31,7 @@ List AWS inactive serverless functions:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveServerlessFunctionFinding
 ```
 
@@ -40,7 +40,7 @@ List Azure inactive serverless functions:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.inactiveServerlessFunctionFinding
 ```
 
@@ -49,7 +49,7 @@ List GCP inactive serverless functions:
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inactiveServerlessFunctionFinding
 ```
 
@@ -121,7 +121,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.inactiveServerlessFunctionFinding)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

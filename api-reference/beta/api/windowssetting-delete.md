@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /users/{user-id}@{tenant-id}/settings/windows
 ```
 
@@ -65,7 +65,7 @@ The following example shows a request.
   "sampleKeys": ["87d349ed-44d7-43e1-9a83-5f2406dee5bd@4562bcc8-c436-4f95-b7c0-4f8ce89dca5e"]
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd@4562bcc8-c436-4f95-b7c0-4f8ce89dca5e/settings/windows
 ```
 
@@ -84,7 +84,7 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 

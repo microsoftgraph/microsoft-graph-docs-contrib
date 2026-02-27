@@ -1,6 +1,6 @@
 ---
 title: "getOmaSettingPlainTextValue function"
-description: "Not yet documented"
+description: "Intune Deviceconfig Deviceconfiguration Getomasettingplaintextvalue Api ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
@@ -14,26 +14,25 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-> [!NOTE]
-> This API involves potential secret values; ReadWrite permission is required.
-
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)| DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application| DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/getOmaSettingPlainTextValue
 ```
 
@@ -49,7 +48,7 @@ The following table shows the parameters that can be used with this function.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|secretReferenceValueId|String|Not yet documented|
+|secretReferenceValueId|String||
 
 
 
@@ -60,17 +59,13 @@ If successful, this function returns a `200 OK` response code and a String in th
 
 ### Request
 Here is an example of the request.
-
-<!-- { "blockType": "ignored" , "name" : "intune_deviceconfig_deviceconfiguration_getomasettingplaintextvalue_getomasettingplaintextvalue_function" }-->
-``` http
+```http
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}/getOmaSettingPlainTextValue(secretReferenceValueId='parameterValue')
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-<!-- { "blockType": "response" }-->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 57

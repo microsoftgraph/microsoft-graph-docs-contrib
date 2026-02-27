@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /storage/fileStorage/deletedContainers?$filter=containerTypeId eq {containerTypeId}
 ```
 
@@ -63,7 +63,7 @@ The following example shows a request.
   "name": "list_deleted_filestoragecontainer"
 }
 -->
-``` http
+```msgraph-interactive
 GET  https://graph.microsoft.com/beta/storage/fileStorage/deletedContainers?$filter=containerTypeId eq e2756c4d-fa33-4452-9c36-2325686e1082
 ```
 
@@ -105,7 +105,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.fileStorageContainer)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

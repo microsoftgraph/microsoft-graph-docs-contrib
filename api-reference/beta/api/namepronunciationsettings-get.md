@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-``` http
+```http
 GET /admin/people/namePronunciation
 ```
 
@@ -64,7 +64,7 @@ The following example shows a request.
   "name": "get_namepronunciationsettings"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/admin/people/namePronunciation
 ```
 
@@ -108,7 +108,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.namePronunciationSettings"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /me/mailFolders/{mailFolderId}/operations/{mailFolderOperationId}
 GET /users/{usersId}/mailFolders/{mailFolderId}/operations/{mailFolderOperationId}
 ```
@@ -66,7 +66,7 @@ The following example shows a request.
   "sampleKeys": ["AAMkAGVmMDEzM", "a384ae19-4f06-3576-81fc-795707bb498b"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/operations/a384ae19-4f06-3576-81fc-795707bb498b
 ```
 
@@ -110,7 +110,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.mailFolderOperation"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -12,8 +12,6 @@ ms.date: 03/10/2025
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Determines whether certificate-based authentication should fail if the issuing Certificate Authority (CA) doesn't have a valid certificate revocation list (CRL) configured. Includes the subject key identifier (SKI) of the CAs that should be exempted from CRL validation.
 
 ## Properties

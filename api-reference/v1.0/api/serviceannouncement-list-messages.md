@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /admin/serviceAnnouncement/messages
 ```
 
@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "list_serviceupdatemessage"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/messages
 ```
 
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/messages
   "isCollection": true
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

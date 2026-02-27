@@ -21,7 +21,7 @@ Derived from [recipient](recipient.md).
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|type|String| The type of attendee. Possible values are: `required`, `optional`, `resource`. Currently if the attendee is a person, [findMeetingTimes](../api/user-findmeetingtimes.md) always considers the person is of the `Required` type.|
+|type|String| The type of attendee. The possible values are: `required`, `optional`, `resource`. Currently if the attendee is a person, [findMeetingTimes](../api/user-findmeetingtimes.md) always considers the person is of the `Required` type.|
 |emailAddress|[emailAddress](emailaddress.md)|Includes the name and SMTP address of the attendee.|
 
 ## Relationships

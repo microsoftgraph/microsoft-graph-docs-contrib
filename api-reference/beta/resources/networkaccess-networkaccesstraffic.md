@@ -28,6 +28,7 @@ Represents a network access traffic log entry. It contains comprehensive informa
 |action|microsoft.graph.networkaccess.filteringPolicyAction|Indicates the action taken based on filtering policies. The possible values are: `block`, `allow`, `unknownFutureValue`, `bypass`, `alert`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `bypass` , `alert`.|
 |agentVersion|String|Represents the version of the Global Secure Access (GSA) client agent software. Supports $filter (`eq`) and `$orderby`.|
 |applicationSnapshot|[microsoft.graph.networkaccess.applicationSnapshot](../resources/networkaccess-applicationsnapshot.md)|Destination Application ID accessed in Azure AD during the transaction. Supports $filter (`eq`) and `$orderby`.|
+|cloudApplicationMetadata|[microsoft.graph.networkaccess.cloudApplicationMetadata](../resources/networkaccess-cloudapplicationmetadata.md)|Contains metadata about the cloud application involved in the network transaction, such as application name, category, and risk level. Supports `$filter` (`eq`) and `$orderby`.|
 |connectionId|String|Represents a unique identifier assigned to a connection. Supports $filter (`eq`) and `$orderby`.|
 |createdDateTime|DateTimeOffset|Represents the date and time when a network access traffic log entry was created. Supports $filter (`eq`) and `$orderby`.|
 |description|String|Informational error message. For example: "Threat intelligence detected a transaction and triggered an alert." or "The Global Secure Access (GSA) policy blocked the destination and triggered an alert." Supports $filter (`eq`) and `$orderby`.|
@@ -139,7 +140,10 @@ The following JSON representation shows the resource type.
   "httpMethod": "String",
   "responseCode": "Integer",
   "operationStatus": "String",
-  "popProcessingRegion": "String"
+  "popProcessingRegion": "String",
+  "cloudApplicationMetadata": {
+    "@odata.type": "microsoft.graph.networkaccess.cloudApplicationMetadata"
+  }
 }
 ```
 

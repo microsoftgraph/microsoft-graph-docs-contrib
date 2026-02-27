@@ -36,7 +36,7 @@ Get details of your own Microsoft Authenticator authentication method.
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /me/authentication/microsoftAuthenticatorMethods/{microsoftAuthenticatorAuthenticationMethodId}
 ```
 
@@ -45,7 +45,7 @@ Get details of your own or another user's Microsoft Authenticator authentication
 [!INCLUDE [authentication-methods-apis-users-selfservice](../includes/authentication-methods-apis-users-selfservice.md)]
 
 <!-- { "blockType": "ignored" } -->
-``` http
+```http
 GET /users/{id | userPrincipalName}/authentication/microsoftAuthenticatorMethods/{microsoftAuthenticatorAuthenticationMethodId}
 ```
 
@@ -75,7 +75,7 @@ If successful, this method returns a `200 OK` response code and a [microsoftAuth
   "sampleKeys": ["anirban@contoso.com", "_jpuR-TGZtk6aQCLF3BQjA2"]
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/anirban@contoso.com/authentication/microsoftAuthenticatorMethods/_jpuR-TGZtk6aQCLF3BQjA2
 ```
 
@@ -117,7 +117,7 @@ GET https://graph.microsoft.com/v1.0/users/anirban@contoso.com/authentication/mi
   "@odata.type": "microsoft.graph.microsoftAuthenticatorAuthenticationMethod"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

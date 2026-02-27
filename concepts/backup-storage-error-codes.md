@@ -6,6 +6,7 @@ ms.localizationpriority: high
 ms.subservice: "m365-backup-storage"
 doc_type: conceptualPageType
 ms.date: 11/07/2024
+ms.topic: troubleshooting-error-codes
 ---
 
 # Backup Storage API error responses
@@ -368,9 +369,9 @@ The following table lists the possible error and response codes that can be retu
 
 The error codes in this section apply to the following APIs:
 
-- [Create driveRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/onedriveforbusinessrestoresession-post-driverestoreartifactsbulkadditionrequests.md)
-- [Create mailboxRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/exchangerestoresession-post-mailboxrestoreartifactsbulkadditionrequests.md)
-- [Create siteRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/sharepointrestoresession-post-siterestoreartifactsbulkadditionrequests.md)
+- [Create driveRestoreArtifactsBulkAdditionRequests](/graph/api/onedriveforbusinessrestoresession-post-driverestoreartifactsbulkadditionrequests?view=graph-rest-beta&preserve-view=true)
+- [Create mailboxRestoreArtifactsBulkAdditionRequests](/graph/api/exchangerestoresession-post-mailboxrestoreartifactsbulkadditionrequests?view=graph-rest-beta&preserve-view=true)
+- [Create siteRestoreArtifactsBulkAdditionRequests](/graph/api/sharepointrestoresession-post-siterestoreartifactsbulkadditionrequests?view=graph-rest-beta&preserve-view=true)
 
 The following table lists the possible error and response codes that can be returned.
 
@@ -386,9 +387,9 @@ The following table lists the possible error and response codes that can be retu
 
 The error code in this section applies to the following APIs:
 
-- [Get driveRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/driverestoreartifactsbulkadditionrequest-get.md)
-- [Get mailboxRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/mailboxrestoreartifactsbulkadditionrequest-get.md)
-- [Get siteRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/siterestoreartifactsbulkadditionrequest-get.md)
+- [Get driveRestoreArtifactsBulkAdditionRequests](/graph/api/driverestoreartifactsbulkadditionrequest-get?view=graph-rest-beta&preserve-view=true)
+- [Get mailboxRestoreArtifactsBulkAdditionRequests](/graph/api/mailboxrestoreartifactsbulkadditionrequest-get?view=graph-rest-beta&preserve-view=true)
+- [Get siteRestoreArtifactsBulkAdditionRequests](/graph/api/siterestoreartifactsbulkadditionrequest-get?view=graph-rest-beta&preserve-view=true)
 
 The following table lists the possible error and response code that can be returned.
 
@@ -400,12 +401,27 @@ The following table lists the possible error and response code that can be retur
 
 The error code in this section applies to the following APIs:
 
-- [Delete driveRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/driverestoreartifactsbulkadditionrequest-delete.md)
-- [Delete mailboxRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/mailboxrestoreartifactsbulkadditionrequest-delete.md)
-- [Delete siteRestoreArtifactsBulkAdditionRequests](/api-reference/beta/api/siterestoreartifactsbulkadditionrequest-delete.md)
+- [Delete driveRestoreArtifactsBulkAdditionRequests](/graph/api/driverestoreartifactsbulkadditionrequest-delete?view=graph-rest-beta&preserve-view=true)
+- [Delete mailboxRestoreArtifactsBulkAdditionRequests](/graph/api/mailboxrestoreartifactsbulkadditionrequest-delete?view=graph-rest-beta&preserve-view=true)
+- [Delete siteRestoreArtifactsBulkAdditionRequests](/graph/api/siterestoreartifactsbulkadditionrequest-delete?view=graph-rest-beta&preserve-view=true)
 
 The following table lists the possible error and response code that can be returned.
 
 | HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |403|InvalidStateForBulkRequestDeletion|Validation fails when the service type of the restore session and create request are different.|A bulk request can only be deleted when its status is `completed` or `completedWithErrors`.|
+
+## PowerShell errors
+
+The error codes in this section apply to the following APIs when they're called from Microsoft Graph PowerShell:
+
+- [Get backupRestoreRoot](/graph/api/backuprestoreroot-get)
+- [Enable backupRestoreRoot](/graph/api/backuprestoreroot-enable)
+- [Create serviceApp](/graph/api/backuprestoreroot-post-serviceapps)
+- [Delete serviceApp](/graph/api/backuprestoreroot-delete-serviceapps)
+
+The following table lists the possible error and response code that can be returned.
+
+| HTTP status code| Error code| Error message | Description|
+|:------------------|:--------------|:--------------|:--------------|
+|403|Forbidden|Method not allowed for known allowed listed internal apps.|The request is forbidden when called from Microsoft Graph PowerShell because these APIs are intended for use by registered Backup Controller applications. The Microsoft Graph PowerShell SDK isn't a supported client for these operations.|

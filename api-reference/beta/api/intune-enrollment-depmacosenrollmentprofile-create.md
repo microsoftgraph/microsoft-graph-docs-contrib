@@ -25,16 +25,16 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles
 ```
 
@@ -101,6 +101,7 @@ The following table shows the properties that are required when you create the d
 |hideAdminAccount|Boolean|Indicates whether the admin account should be hidded or not|
 |requestRequiresNetworkTether|Boolean|Indicates if the device is network-tethered to run the command|
 |autoAdvanceSetupEnabled|Boolean|Indicates if Setup Assistant will automatically advance through its screen|
+|depProfileAdminAccountPasswordRotationSetting|[depProfileAdminAccountPasswordRotationSetting](../resources/intune-enrollment-depprofileadminaccountpasswordrotationsetting.md)|Settings for local admin account password automatic rotation.|
 
 
 
@@ -111,10 +112,10 @@ If successful, this method returns a `201 Created` response code and a [depMacOS
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles
 Content-type: application/json
-Content-length: 2123
+Content-length: 2539
 
 {
   "@odata.type": "#microsoft.graph.depMacOSEnrollmentProfile",
@@ -170,16 +171,25 @@ Content-length: 2123
   "adminAccountPassword": "Admin Account Password value",
   "hideAdminAccount": true,
   "requestRequiresNetworkTether": true,
-  "autoAdvanceSetupEnabled": true
+  "autoAdvanceSetupEnabled": true,
+  "depProfileAdminAccountPasswordRotationSetting": {
+    "@odata.type": "microsoft.graph.depProfileAdminAccountPasswordRotationSetting",
+    "autoRotationPeriodInDays": 8,
+    "depProfileDelayAutoRotationSetting": {
+      "@odata.type": "microsoft.graph.depProfileDelayAutoRotationSetting",
+      "onRetrievalAutoRotatePasswordEnabled": true,
+      "onRetrievalDelayAutoRotatePasswordInHours": 9
+    }
+  }
 }
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2172
+Content-Length: 2588
 
 {
   "@odata.type": "#microsoft.graph.depMacOSEnrollmentProfile",
@@ -236,6 +246,15 @@ Content-Length: 2172
   "adminAccountPassword": "Admin Account Password value",
   "hideAdminAccount": true,
   "requestRequiresNetworkTether": true,
-  "autoAdvanceSetupEnabled": true
+  "autoAdvanceSetupEnabled": true,
+  "depProfileAdminAccountPasswordRotationSetting": {
+    "@odata.type": "microsoft.graph.depProfileAdminAccountPasswordRotationSetting",
+    "autoRotationPeriodInDays": 8,
+    "depProfileDelayAutoRotationSetting": {
+      "@odata.type": "microsoft.graph.depProfileDelayAutoRotationSetting",
+      "onRetrievalAutoRotatePasswordEnabled": true,
+      "onRetrievalDelayAutoRotatePasswordInHours": 9
+    }
+  }
 }
 ```

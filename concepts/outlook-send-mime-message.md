@@ -5,6 +5,7 @@ author: "isvargasmsft"
 ms.localizationpriority: high
 ms.subservice: "outlook"
 ms.date: 11/07/2024
+ms.topic: how-to
 ---
 
 # Send messages with MIME content

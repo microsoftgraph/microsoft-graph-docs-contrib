@@ -11,6 +11,8 @@ ms.date: 04/04/2024
 # Get teamworkDeviceActivity
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-deprecation-disclaimer](../../includes/beta-deprecation-disclaimer.md)]
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get the [activity status](../resources/teamworkdeviceactivity.md) of a Microsoft Teams-enabled [device](../resources/teamworkdevice.md). 
@@ -31,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /teamwork/devices/{teamworkDeviceId}/activity
 ```
 
@@ -60,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a [teamworkDevic
   "name": "get_teamworkdeviceactivity"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teamwork/devices/1ae3fe60-fe60-1ae3-60fe-e31a60fee31a/activity
 ```
 
@@ -102,7 +104,7 @@ GET https://graph.microsoft.com/beta/teamwork/devices/1ae3fe60-fe60-1ae3-60fe-e3
   "@odata.type": "microsoft.graph.teamworkDeviceActivity"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

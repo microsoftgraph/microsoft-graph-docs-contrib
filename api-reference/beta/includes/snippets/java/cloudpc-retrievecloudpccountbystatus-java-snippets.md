@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-CloudPC result = graphClient.deviceManagement().virtualEndpoint().cloudPCs().byCloudPCId("{cloudPC-id}").get(requestConfiguration -> {
+var result = graphClient.deviceManagement().virtualEndpoint().cloudPCs().retrieveCloudPcCountByStatus().get(requestConfiguration -> {
 	requestConfiguration.queryParameters.customFilter = "contains(tolower(managedDeviceName), 'a') or contains(tolower(imageDisplayName), 'a') or contains(tolower(userPrincipalName), 'a')";
 });
 

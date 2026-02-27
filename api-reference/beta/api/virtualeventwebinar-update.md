@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /solutions/virtualEvents/webinars/{id}
 ```
 
@@ -72,7 +72,7 @@ The following example shows a request.
   "name": "update_virtualeventwebinar"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/a57082a9-7629-4f74-8da0-8d621aab4d2d@4aa05bcc-1cac-4a83-a9ae-0db84b88f4ba
 Content-Type: application/json
 
@@ -128,7 +128,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.virtualEventWebinar"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Get a list of [reading assignments](../resources/readingassignmentsubmission.md) that were submitted by a student.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -29,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /education/reports/readingAssignmentSubmissions
 ```
 
@@ -67,7 +69,7 @@ The following example shows a request.
   "name": "get_readingassignmentsubmissions_1"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/reports/readingAssignmentSubmissions
 ```
 
@@ -112,7 +114,7 @@ The following example shows the default response from the last 24 hours.
   "@odata.type": "Collection(microsoft.graph.readingAssignmentSubmission)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -169,7 +171,7 @@ The following example shows a request.
   "name": "get_ReadingAssignmentSubmissions_2"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/reports/readingAssignmentSubmissions?$filter=submissionDateTime gt 2023-10-10T00:00:00.000Z and submissionDateTime lt 2023-10-11T00:00:00Z
 ```
 
@@ -214,7 +216,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.readingAssignmentSubmission)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

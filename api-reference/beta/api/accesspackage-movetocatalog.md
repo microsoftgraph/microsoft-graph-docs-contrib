@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /identityGovernance/entitlementManagement/accessPackages/{accessPackageId}/moveToCatalog
 ```
 
@@ -67,7 +67,7 @@ The following example shows a request.
   "name": "accesspackagethis.movetocatalog"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/3089f957-4bfe-405d-96c0-9a7ef30c01d6/moveToCatalog
 Content-Type: application/json
 
@@ -114,6 +114,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 ```

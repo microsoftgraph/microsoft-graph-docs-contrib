@@ -25,7 +25,7 @@ Represents a cloud PC device that belongs to a given managed tenant.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|cloudPcStatus|String|The status of the cloud PC. Possible values are: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `failed`. Required. Read-only.|
+|cloudPcStatus|String|The status of the cloud PC. The possible values are: `notProvisioned`, `provisioning`, `provisioned`, `upgrading`, `inGracePeriod`, `deprovisioning`, `failed`. Required. Read-only.|
 |deviceSpecification|String|The specification of the cloud PC device. Required. Read-only.|
 |displayName|String|The display name  of the cloud PC device. Required. Read-only.|
 |id|String|The unique identifier of the cloud PC device. Required. Read-only.|

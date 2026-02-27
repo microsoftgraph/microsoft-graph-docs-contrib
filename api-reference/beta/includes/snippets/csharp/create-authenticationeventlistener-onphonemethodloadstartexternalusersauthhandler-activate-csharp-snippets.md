@@ -7,10 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 // Code snippets are only available for the latest version. Current version is 5.x
 
 // Dependencies
-using Microsoft.Graph.Models;
-using Microsoft.Kiota.Abstractions.Serialization;
+using Microsoft.Graph.Beta.Models;
 
-var requestBody = new AuthenticationEventListener
+var requestBody = new OnPhoneMethodLoadStartListener
 {
 	OdataType = "#microsoft.graph.onPhoneMethodLoadStartListener",
 	Conditions = new AuthenticationConditions
@@ -23,35 +22,20 @@ var requestBody = new AuthenticationEventListener
 			},
 		},
 	},
-	AdditionalData = new Dictionary<string, object>
+	Priority = 500,
+	Handler = new OnPhoneMethodLoadStartExternalUsersAuthHandler
 	{
+		OdataType = "#microsoft.graph.onPhoneMethodLoadStartExternalUsersAuthHandler",
+		SmsOptions = new PhoneOptions
 		{
-			"priority" , 500
-		},
-		{
-			"handler" , new UntypedObject(new Dictionary<string, UntypedNode>
+			IncludeAdditionalRegions = new List<Number>
 			{
-				{
-					"@odata.type", new UntypedString("#microsoft.graph.onPhoneMethodLoadStartExternalUsersAuthHandler")
-				},
-				{
-					"smsOptions", new UntypedObject(new Dictionary<string, UntypedNode>
-					{
-						{
-							"includeAdditionalRegions", new UntypedArray(new List<UntypedNode>
-							{
-								new UntypedString("222"),
-								new UntypedString("998"),
-							})
-						},
-						{
-							"excludeRegions", new UntypedArray(new List<UntypedNode>
-							{
-							})
-						},
-					})
-				},
-			})
+				222,
+				998,
+			},
+			ExcludeRegions = new List<Number>
+			{
+			},
 		},
 	},
 };

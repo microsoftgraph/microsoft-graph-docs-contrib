@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/privilegedAccess/group/eligibilityScheduleInstances?$filter=groupId eq '{groupId}'
 GET /identityGovernance/privilegedAccess/group/eligibilityScheduleInstances?filter=principalId eq '{principalId}'
 ```
@@ -61,7 +61,7 @@ The following example shows a request.
   "name": "list_privilegedaccessgroupeligibilityscheduleinstance"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/identityGovernance/privilegedAccess/group/eligibilityScheduleInstances?$filter=groupId eq '2b5ed229-4072-478d-9504-a047ebd4b07d'
 ```
 
@@ -104,7 +104,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.privilegedAccessGroupEligibilityScheduleInstance)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

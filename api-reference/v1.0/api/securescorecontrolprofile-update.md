@@ -1,6 +1,6 @@
 ---
 title: "Update secureScoreControlProfile"
-description: "Update an editable secureScoreControlProfile object within any integrated solution to change various properties, such as assignedTo or tenantNote."
+description: "Update an editable secureScoreControlProfile object within any integrated solution to change various properties, such as tenantNote."
 author: "preetikr"
 ms.localizationpriority: medium
 ms.subservice: security
@@ -12,7 +12,7 @@ ms.date: 03/06/2024
 
 Namespace: microsoft.graph
 
-Update an editable **secureScoreControlProfile** object within any integrated solution to change various properties, such as **assignedTo** or **tenantNote**.
+Update an editable **secureScoreControlProfile** object within any integrated solution to change various properties, such as **tenantNote**.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -44,9 +44,6 @@ In the request body, supply a JSON representation of the values for relevant fie
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|assignedTo|String|Name of the analyst the control is assigned to for triage, implementation, or remediation.|
-|comment|String|Analyst comments on the control (for customer control management).|
-|state| String|Analyst driven setting on the control. Possible values are: `Default`, `Ignored`, `ThirdParty`, `Reviewed`.|
 | vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | Complex type containing details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=SecureScore;). **Provider and vendor fields are required.** |
 
 
@@ -54,7 +51,7 @@ In the request body, supply a JSON representation of the values for relevant fie
 
 If successful, this method returns a `204 No Content` response code.
 
-If the optional request header is used, the method returns a `200 OK` response code and the updated [secureScoreControlProfiles](../resources/securescorecontrolprofile.md) object in the response body.
+If the optional `Prefer: return=representation` request header is used, the method returns a `200 OK` response code and the updated [secureScoreControlProfiles](../resources/securescorecontrolprofile.md) object in the response body.
 
 ## Example
 
@@ -76,9 +73,6 @@ PATCH https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles/NonOw
 Content-type: application/json
 
 {
-  "assignedTo": "",
-  "comment": "control is reviewed",
-  "state": "Reviewed",
   "vendorInformation": {
 
     "provider": "SecureScore",
@@ -147,11 +141,9 @@ The following example shows a request that includes the `Prefer` request header.
 ```http
 PATCH https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles/NonOwnerAccess
 Content-type: application/json
+Prefer: return=representation
 
 {
-  "assignedTo": "",
-  "comment": "control is reviewed",
-  "state": "Reviewed",
   "vendorInformation": {
     "provider": "SecureScore",
     "providerVersion": null,
@@ -199,7 +191,7 @@ The following is an example of the response when the optional `Prefer: return=re
 
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.secureScoreControlProfile"
 } -->
 
@@ -232,9 +224,6 @@ Content-type: application/json
   "complianceInformation": null,
   "controlStateUpdates": [
     {
-      "assignedTo": "",
-      "comment": "control is reviewed",
-      "state": "Reviewed",
       "updatedBy": "user1@contoso.com",
       "updatedDateTime": "2019-03-19T22:37:14.628799Z"
     }

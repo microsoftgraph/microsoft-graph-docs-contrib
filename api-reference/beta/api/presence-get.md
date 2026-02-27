@@ -119,6 +119,11 @@ Content-Length: 1574
     "message": null,
     "isOutOfOffice": false
   },
+  "workLocation": {
+    "workLocationType": "office",
+    "source": "automatic",
+    "placeId": "eb706f15-137e-4722-b4d1-b601481d9251"
+  },
   "sequenceNumber": "A0129311063"
 }
 ```

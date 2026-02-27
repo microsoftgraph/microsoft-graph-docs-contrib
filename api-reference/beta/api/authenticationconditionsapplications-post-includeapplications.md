@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /identity/authenticationEventsFlows/{authenticationEventsFlow-id}/conditions/applications/includeApplications
 ```
 
@@ -59,7 +59,7 @@ The following example shows a request.
   "name": "post_includeapplications"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc37-d421-421d-857b-87804d61e33e/conditions/applications/includeApplications
 Content-Type: application/json
 
@@ -108,7 +108,7 @@ The following example shows the response.
   "truncated": true,
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

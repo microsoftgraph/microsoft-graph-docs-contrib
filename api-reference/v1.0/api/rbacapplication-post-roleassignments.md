@@ -162,7 +162,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2 : Create a role assignment with administrative unit scope
+### Example 2: Create a role assignment with administrative unit scope
 
 #### Request
 
@@ -243,7 +243,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3 : Create a role assignment with application scope
+### Example 3: Create a role assignment with application scope
 
 #### Request
 

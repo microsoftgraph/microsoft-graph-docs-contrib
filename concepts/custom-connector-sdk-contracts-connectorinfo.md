@@ -7,6 +7,7 @@ doc_type: conceptualPageType
 ms.subservice: search
 description: "Learn about the Copilot connectors SDK contracts ConnectorInfo API and models."
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Copilot connectors SDK ConnectorInfo API and models

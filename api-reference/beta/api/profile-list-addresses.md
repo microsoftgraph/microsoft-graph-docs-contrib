@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /me/profile/addresses
 GET /users/{id | userPrincipalName}/profile/addresses
 ```
@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "get_itemaddresses_from_profile"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile/addresses
 ```
 
@@ -107,7 +107,7 @@ GET https://graph.microsoft.com/beta/me/profile/addresses
   "@odata.type": "collection(microsoft.graph.itemAddress)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

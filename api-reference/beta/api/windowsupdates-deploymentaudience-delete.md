@@ -1,11 +1,11 @@
 ---
 title: "Delete deploymentAudience"
 description: "Delete a deploymentAudience object."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 08/31/2024
+ms.date: 01/27/2026
 ---
 
 # Delete deploymentAudience
@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /admin/windows/updates/deploymentAudiences/{deploymentAudienceId}
 ```
 
@@ -57,7 +57,7 @@ The following example shows a request.
   "name": "delete_deploymentaudience"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/7f960f66-b6ed-6d54-f24a-9b1021a1d17f
 ```
 
@@ -94,6 +94,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

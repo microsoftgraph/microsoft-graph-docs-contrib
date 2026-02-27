@@ -1,11 +1,11 @@
 ---
 title: "qualityUpdateCveSeverityInformation resource type"
 description: "Represents the summary of severity information regarding the Common Vulnerabilities and Exposures (CVEs) addressed by a quality update."
-author: "angiechen22"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: resourcePageType
-ms.date: 09/16/2024
+ms.date: 01/27/2026
 ---
 
 # qualityUpdateCveSeverityInformation resource type
@@ -22,7 +22,7 @@ Represents the summary of severity information regarding the Common Vulnerabilit
 |:---|:---|:---|
 |exploitedCves|[microsoft.graph.windowsUpdates.cveInformation](../resources/windowsupdates-cveinformation.md) collection| Collection of information about each publicly exploited vulnerability addressed in the quality update.|
 |maxBaseScore|Double|Highest base score that occurs of any CVE addressed by the quality update. Read-only.|
-|maxSeverityLevel|microsoft.graph.windowsUpdates.cveSeverityLevel| Highest severity level that occurs of any CVE addressed by the quality update. Possible values are: `critical`, `important`, `moderate`, `unknownFutureValue`. Read-only.|
+|maxSeverityLevel|microsoft.graph.windowsUpdates.cveSeverityLevel| Highest severity level that occurs of any CVE addressed by the quality update. The possible values are: `critical`, `important`, `moderate`, `unknownFutureValue`. Read-only.|
 
 ## Relationships
 

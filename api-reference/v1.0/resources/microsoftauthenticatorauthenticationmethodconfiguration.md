@@ -30,7 +30,7 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from the policy.|
 |id|String|The authentication method policy identifier.|
 |featureSettings|[microsoftAuthenticatorFeatureSettings](../resources/microsoftauthenticatorfeaturesettings.md)|A collection of Microsoft Authenticator settings such as application context and location context, and whether they are enabled for all users or specific users only.|
-|state|authenticationMethodState|Possible values are: `enabled`, `disabled`.|
+|state|authenticationMethodState|The possible values are: `enabled`, `disabled`.|
 
 ## Relationships
 |Relationship|Type|Description|

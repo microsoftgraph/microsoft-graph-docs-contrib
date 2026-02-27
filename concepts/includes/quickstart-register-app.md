@@ -19,8 +19,8 @@ For your app to use the identity and access management (IAM) capabilities of Mic
 
 ## Prerequisites
 
-- A Microsoft Entra ID tenant. If you don't have a tenant, create a [free Azure account to get free subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account).
-- An account that has at least the [Cloud Application Administrator](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json#cloud-application-administrator) role.
+- A Microsoft Entra ID tenant. If you don't have a tenant, create a [free Azure account to get free subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
+- [Cloud Application Administrator](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json#cloud-application-administrator) is the least privileged role supported to complete the steps in this article.
 
 ## Register an application
 

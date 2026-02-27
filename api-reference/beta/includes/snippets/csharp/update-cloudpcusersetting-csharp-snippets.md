@@ -39,6 +39,7 @@ var requestBody = new CloudPcUserSetting
 		DisasterRecoveryType = CloudPcDisasterRecoveryType.Premium,
 		UserInitiatedDisasterRecoveryAllowed = true,
 	},
+	ProvisioningSourceType = CloudPcProvisioningSourceType.Image,
 	LocalAdminEnabled = false,
 	ResetEnabled = true,
 };

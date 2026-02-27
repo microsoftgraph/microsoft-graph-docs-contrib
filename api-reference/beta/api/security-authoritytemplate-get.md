@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /security/labels/authorities/{authorityTemplateId}
 GET /security/labels/retentionLabels/{retentionLabelId}/descriptors/authorityTemplate
 ```
@@ -59,7 +59,7 @@ The following example shows a request.
   "name": "get_authoritytemplate"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/labels/authorities/6cf65e55-6baf-44ff-5dcc-08d8de97b1d5
 ```
 
@@ -102,7 +102,7 @@ Here's an example of the response.
   "@odata.type": "microsoft.graph.security.authorityTemplate"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

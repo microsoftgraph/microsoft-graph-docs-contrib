@@ -12,7 +12,7 @@ ms.date: 03/21/2024
 
 Namespace: microsoft.graph
 
-Contains various scores based on different scopes - such as average by industry vertical or company size - and control category (Identity, Data, Device, Apps, Infrastructure).
+Contains tenant-level scores for [Microsoft Secure Score](../resources/securescore.md) based on scopes such as average by industry vertical and average by company seat size, and on control categories like identity, data, device, apps, and infrastructure.
 
 ## Properties
 | Property      | Type      | Description |

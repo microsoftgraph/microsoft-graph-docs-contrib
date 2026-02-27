@@ -38,7 +38,7 @@ This resource supports
 |id|String| The identifier of the task list, unique in the user's mailbox. Read-only. Inherited from [entity](entity.md)|
 |isOwner|Boolean| True if the user is owner of the given task list.|
 |isShared|Boolean| True if the task list is shared with other users|
-|wellknownListName|wellknownListName| Property indicating the list name if the given list is a well-known list. Possible values are: `none`, `defaultList`, `flaggedEmails`, `unknownFutureValue`.|
+|wellknownListName|wellknownListName| Property indicating the list name if the given list is a well-known list. The possible values are: `none`, `defaultList`, `flaggedEmails`, `unknownFutureValue`.|
 
 ### wellknownListName values
 |Member|Description|

@@ -42,7 +42,7 @@ In general, subscription operations require read permission to the resource. For
 - [Change notifications Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-change-notification/nodejs)
 
 <!-- Links -->
-[aiInteraction]: ./aiinteraction.md
+[aiInteraction]: /microsoft-365-copilot/extensibility/api/ai-services/interaction-export/resources/aiinteraction
 [chat]: ./chat.md
 [chatMessage]: ./chatmessage.md
 [contact]: ./contact.md

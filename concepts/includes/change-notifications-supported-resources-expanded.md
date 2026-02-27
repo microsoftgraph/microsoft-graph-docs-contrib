@@ -10,10 +10,11 @@ ms.date: 11/07/2024
 
 <!-- markdownlint-disable MD041-->
 
-An app can subscribe to changes on the Microsoft Graph resources listed in the table.
+An app can subscribe to changes on the Microsoft Graph resources listed in the table. Subscriptions to resources marked with an asterisk (`*`) are only available on the `/beta` endpoint.
 
 > [!NOTE]
-> Subscriptions to resources marked with an asterisk (`*`) are only available on the `/beta` endpoint.
+> For Microsoft Teams resources, the **per-organization limit of 10,000 total subscriptions** is shared cumulatively across **all Teams change notification subscriptions** in the tenant. It includes subscriptions created for different Teams resources—such as chats, chat messages, call transcripts, call recordings, channels, teams, and conversation members—which **all count toward the same organizational quota**. When the combined number of active Teams subscriptions reaches this limit, **any additional subscription creation request for a Teams resource fails** with a `403 Forbidden` error.
+
 
 | Resource | Supported resource paths | Limitations |
 |---|---|---|
@@ -52,7 +53,7 @@ An app can subscribe to changes on the Microsoft Graph resources listed in the t
 > [!NOTE]
 > Many resources have limits or quotas on how many subscriptions can be made against that resource.  When exceeding that limit, attempts to create a subscription will result in a `403 Forbidden` error response. The **message** property of the error response will explain the limit that has been exceeded.
 
-Some of these resources support rich notifications (notifications with resource data). For more information about resources that support rich notifications, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data#supported-resources).
+Some of these resources support rich notifications (notifications with resource data). For their details, see [Set up change notifications that include resource data](/graph/change-notifications-with-resource-data#supported-resources).
 
 [aiInteraction]: /graph/api/resources/aiinteraction
 [channel]: /graph/api/resources/channel

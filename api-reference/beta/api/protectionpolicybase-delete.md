@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /solutions/backupRestore/protectionPolicies/{protectionPolicyBaseId}
 ```
 
@@ -62,7 +62,7 @@ The following example shows a request.
   "name": "delete_protectionpolicybase"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/solutions/backupRestore/protectionPolicies/61633878-8321-4950-bfaf-ed285bdd1461
 Authorization: Bearer <Access-Token>
 ```
@@ -104,6 +104,6 @@ The following example shows the response.
   "blockType": "response"
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

@@ -6,6 +6,7 @@ ms.localizationpriority: high
 ms.subservice: "teams"
 ms.custom: scenarios:getting-started
 ms.date: 11/07/2024
+ms.topic: concept-article
 ---
 
 # Overview for using Microsoft Teams, Shifts, and Viva Learning to foster teamwork
@@ -127,7 +128,7 @@ Let customers create new [teams](/graph/api/resources/team) and [channels](/grap
 
 ### Handle incoming calls
 
-It can be overwhelming at times when an organization receives a high volume of business calls and it isn't possible, or productive, to answer all of them. A bot can serve as a front-desk assistant, handling calls by rejecting what may seem like spam calls or redirecting (forwarding) specific calls to a different number. You can use the cloud communications API to:
+It can be overwhelming at times when an organization receives a high volume of business calls and it isn't possible, or productive, to answer all of them. A bot can serve as a front-desk assistant, handling calls by rejecting what might seem like spam calls or redirecting (forwarding) specific calls to a different number. You can use the cloud communications API to:
 
 - [Call a bot](/graph/api/application-post-calls) through VoIP.
 - [Redirect an incoming call](/graph/api/call-redirect) to the appropriate agent if necessary.
@@ -143,7 +144,7 @@ It can be overwhelming at times when an organization receives a high volume of b
 Integrating with a natural language processing service means that the customer's speech can be analyzed for its sentiment. The bot can then respond to the customer's request accordingly.
 
 > [!NOTE]
-> You may not record or otherwise persist media content from calls or meetings that your application accesses, or data derived from that media content. Make sure you are compliant with the laws and regulations of your area regarding data protection and confidentiality of communications. Please see the [Terms of Use](/legal/microsoft-apis/terms-of-use) and consult with your legal counsel for more information.
+> You might not record or otherwise persist media content from calls or meetings that your application accesses, or data derived from that media content. Make sure you are compliant with the laws and regulations of your area regarding data protection and confidentiality of communications. Please see the [Terms of Use](/legal/microsoft-apis/terms-of-use) and consult with your legal counsel for more information.
 
 
 ### Collaborate through group calls

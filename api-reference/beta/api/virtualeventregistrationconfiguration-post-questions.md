@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /solutions/virtualEvents/webinars/{webinarId}/registrationConfiguration/questions
 ```
 
@@ -76,7 +76,7 @@ The following example shows a request.
   "name": "post_custom_question_virtualeventregistration"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21-a8a6-4a6b-97f8-ced53d30f143/registrationConfiguration/questions
 Content-Type: application/json
 
@@ -161,7 +161,7 @@ The following example shows a request.
   "name": "post_predefined_question_virtualeventregistration"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21-a8a6-4a6b-97f8-ced53d30f143/registrationConfiguration/questions
 ```
 
@@ -195,7 +195,7 @@ POST https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/f4b39f1c-
 
 ---
 
-``` http
+```http
 Content-Type: application/json
 
 {

@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/temporaryAccessPass
 ```
 
@@ -99,6 +99,6 @@ DELETE https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/aut
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

@@ -4,6 +4,7 @@ description: "The Microsoft Graph Security API supports both application-level a
 ms.localizationpriority: high
 ms.subservice: "security"
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Authorization and the Microsoft Graph Security API

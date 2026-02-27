@@ -8,12 +8,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-MobilityManagementPolicy mobilityManagementPolicy = new MobilityManagementPolicy();
-mobilityManagementPolicy.setOdataType("#microsoft.graph.mobilityManagementPolicy");
-mobilityManagementPolicy.setComplianceUrl("https://portal.mg.contoso.com/?portalAction=Compliance");
-mobilityManagementPolicy.setDiscoveryUrl("https://enrollment.mg.contoso.com/enrollmentserver/discovery.svc");
-mobilityManagementPolicy.setTermsOfUseUrl("https://portal.mg.contoso.com/TermsofUse.aspx");
-MobilityManagementPolicy result = graphClient.policies().mobileAppManagementPolicies().byMobilityManagementPolicyId("{mobilityManagementPolicy-id}").patch(mobilityManagementPolicy);
+MobilityManagementPolicy mobileAppManagementPolicy = new MobilityManagementPolicy();
+mobileAppManagementPolicy.setOdataType("#microsoft.graph.mobilityManagementPolicy");
+mobileAppManagementPolicy.setComplianceUrl("https://portal.mg.contoso.com/?portalAction=Compliance");
+mobileAppManagementPolicy.setDiscoveryUrl("https://enrollment.mg.contoso.com/enrollmentserver/discovery.svc");
+mobileAppManagementPolicy.setTermsOfUseUrl("https://portal.mg.contoso.com/TermsofUse.aspx");
+MobileAppManagementPolicy result = graphClient.policies().mobileAppManagementPolicies().byMobileAppManagementPolicyId("{mobileAppManagementPolicy-id}").patch(mobileAppManagementPolicy);
 
 
 ```

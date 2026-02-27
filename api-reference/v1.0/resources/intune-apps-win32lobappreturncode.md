@@ -5,7 +5,7 @@ author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
 doc_type: resourcePageType
-ms.date: 09/13/2024
+ms.date: 08/01/2024
 ---
 
 # win32LobAppReturnCode resource type
@@ -20,7 +20,7 @@ Contains return code properties for a Win32 App
 |Property|Type|Description|
 |:---|:---|:---|
 |returnCode|Int32|Return code.|
-|type|[win32LobAppReturnCodeType](../resources/intune-apps-win32lobappreturncodetype.md)|The type of return code. Possible values are: `failed`, `success`, `softReboot`, `hardReboot`, `retry`.|
+|type|[win32LobAppReturnCodeType](../resources/intune-apps-win32lobappreturncodetype.md)|The type of return code. The possible values are: `failed`, `success`, `softReboot`, `hardReboot`, `retry`.|
 
 ## Relationships
 None

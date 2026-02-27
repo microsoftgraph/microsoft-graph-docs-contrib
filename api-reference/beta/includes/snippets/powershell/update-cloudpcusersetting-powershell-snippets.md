@@ -25,6 +25,7 @@ $params = @{
 		disasterRecoveryType = "premium"
 		userInitiatedDisasterRecoveryAllowed = $true
 	}
+	provisioningSourceType = "image"
 	localAdminEnabled = $false
 	resetEnabled = $true
 }

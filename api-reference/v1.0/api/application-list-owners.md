@@ -1,7 +1,7 @@
 ---
 title: "List owners of an application"
 description: "Retrieve a list of owners for an application."
-author: "sureshja"
+author: "Jackson-Woods"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType

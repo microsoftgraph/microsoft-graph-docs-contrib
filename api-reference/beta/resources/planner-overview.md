@@ -29,7 +29,7 @@ Group members are able to create, edit, resolve, and delete tasks in the plan. G
 
 To [get the plans owned by a group](../api/plannergroup-list-plans.md), make the following HTTP request.
 
-``` http
+```http
 GET /groups/{group-id}/planner/plans
 ```
 
@@ -121,7 +121,7 @@ To [create a task in a plan](../api/planner-post-tasks.md), set the **planId** p
 Tasks currently can't be created without plans.
 To [retrieve the tasks in a plan](../api/plannerplan-list-tasks.md), make the following HTTP request.
 
-``` http
+```http
 GET /planner/plans/{plan-id}/tasks
 ```
 
@@ -158,7 +158,7 @@ Users are subscribed to the following objects.
 
 | Planner resource type | Subscribed instances                                                                                                                                                                                    |
 | :-------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **tasks**                 | <ul><li>Created by the user</li><li>Assigned to the user</li><li>Belong to a plan that the user owns</li><li>Contained in a plan shared with the user through the plan's **sharedWith** collection</li> |
+| **tasks**                 | <ul><li>Created by the user</li><li>Assigned to the user</li><li>Belong to a plan that the user owns</li><li>Contained in a plan shared with the user through the plan's **sharedWith** collection</li></ul> |
 | **plans**                 | <ul><li>Shared with the user through the plan's **sharedWith** collection</li></ul>                                                                                                                     |
 | **buckets**               | <ul><li>Contained in a plan shared with the user through the plan's **sharedWith** collection</li></ul>                                                                                                 |
 

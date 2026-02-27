@@ -601,7 +601,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.inviteParticipantsOperation"
 }-->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -634,7 +634,7 @@ Content-Type: application/json
 
 #### Notification - operation completed
 
-``` http
+```http
 POST https://bot.contoso.com/api/calls
 Content-Type: application/json
 ```
@@ -1017,7 +1017,7 @@ The following example shows the response.
   "name": "participant-invite-move"
 }-->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -1051,7 +1051,7 @@ Content-Type: application/json
 
 #### Notification - operation completed
 
-``` http
+```http
 POST https://bot.contoso.com/api/calls
 Content-Type: application/json
 ```

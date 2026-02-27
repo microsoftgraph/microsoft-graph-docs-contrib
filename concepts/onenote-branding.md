@@ -5,6 +5,7 @@ author: "jewan-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "onenote"
 ms.date: 11/07/2024
+ms.topic: concept-article
 ---
 
 # Branding guidelines for OneNote API developers
@@ -31,7 +32,7 @@ The icon symbol is locked with the name. This is the preferred graphic represent
 
 ### Icon symbol 
 
-Certain environments, such as on small devices, don't provide enough room for the entire logo lockup. In those cases, the icon symbol alone may be used in an app or in digital marketing. When used in an app, use the icon symbol alone only when you need an icon or favicon to represent OneNote.
+Certain environments, such as on small devices, don't provide enough room for the entire logo lockup. In those cases, the icon symbol alone might be used in an app or in digital marketing. When used in an app, use the icon symbol alone only when you need an icon or favicon to represent OneNote.
 
 ![Logo that includes only the icon.  Versions with purple on white and reversed.](images/onenotelogoicon.png)
 
@@ -136,7 +137,7 @@ See the following table for details about how to refer to OneNote in various con
 | Context | Usage |
 |------|------|
 | App names | To avoid confusing consumers within the app stores, we prefer that *OneNote* not be included in the name of your app. If it’s determined that *OneNote* must be used in the app name, *OneNote* must be modified by a preposition (for example, *for OneNote* or *with OneNote*).<br/><br/>Example:&nbsp;&nbsp;*Proseware for OneNote*<br/><br/>Under no circumstances can the name of your app begin with *OneNote*.
-| Publisher names | The publisher’s name may not include a reference to *OneNote*. The publisher’s name may not infringe upon any Microsoft trademarks. |
+| Publisher names | The publisher’s name might not include a reference to *OneNote*. The publisher’s name might not infringe upon any Microsoft trademarks. |
 | Indicating interoperability with OneNote | **Recommended:**&nbsp;&nbsp;Send to OneNote<br/><br/>**Acceptable:**&nbsp;&nbsp;Share with OneNote<br/>Acceptable when used in reference to "sharing" with other applications—for example, *Share with OneNote, Facebook, or Twitter.*)<br/><br/>**Never:**&nbsp;&nbsp;Save to OneNote<br/>This is technically incorrect. |
 | General marketing (including app descriptions) | The first mention in a communication should use the full name: *Microsoft OneNote*.<br /><br />Subsequent references in the communication can use the short name: *OneNote*.
  

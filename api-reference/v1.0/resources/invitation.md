@@ -41,7 +41,7 @@ Creating an invitation returns a redemption URL in the response (*inviteRedeemUr
 |inviteRedeemUrl|String|The URL the user can use to redeem their invitation. Read-only.|
 |resetRedemption|Boolean|Reset the user's redemption status and reinvite a user while retaining their user identifier, group memberships, and app assignments. This property allows you to enable a user to sign-in using a different email address from the one in the previous invitation. When `true`, the **invitedUser**/**id** relationship is required. For more information about using this property, see [Reset redemption status for a guest user](/entra/external-id/reset-redemption-status).|
 |sendInvitationMessage|Boolean|Indicates whether an email should be sent to the user being invited. The default is `false`.|
-|status|String|The status of the invitation. Possible values are: `PendingAcceptance`, `Completed`, `InProgress`, and `Error`.|
+|status|String|The status of the invitation. The possible values are: `PendingAcceptance`, `Completed`, `InProgress`, and `Error`.|
 
 ## Relationships
 | Relationship | Type    |Description|

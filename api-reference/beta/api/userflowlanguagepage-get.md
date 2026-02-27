@@ -34,7 +34,7 @@ To reference the content within the object, you must use `$value`. This returns 
 }
 -->
 
-``` http
+```http
 GET /identity/b2cUserFlows/{id}/languages/{id}/defaultPages/{id}/$value
 GET /identity/b2cUserFlows/{id}/languages/{id}/overridesPages/{id}/$value
 GET /identity/b2xUserFlows/{id}/languages/{id}/defaultPages/{id}/$value
@@ -70,7 +70,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer/languages/en/defaultPages/idpselections/$value
 ```
 
@@ -116,7 +116,7 @@ The following example shows the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

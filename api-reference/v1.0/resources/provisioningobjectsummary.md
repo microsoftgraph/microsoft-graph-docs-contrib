@@ -34,7 +34,7 @@ Represents an action performed by the Microsoft Entra provisioning service and i
 |initiatedBy|[initiator](initiator.md)|Details of who initiated this provisioning. Supports `$filter` (`eq`, `contains`).|
 |jobId|String|The unique ID for the whole provisioning job. Supports `$filter` (`eq`, `contains`).|
 |modifiedProperties|[modifiedProperty](modifiedproperty.md) collection|Details of each property that was modified in this provisioning action on this object.|
-|provisioningAction|provisioningAction|Indicates the activity name or the operation name. Possible values are: `create`, `update`, `delete`, `stageddelete`, `disable`, `other` and `unknownFutureValue`. For a list of activities logged, refer to Microsoft Entra activity list. Supports `$filter` (`eq`, `contains`).|
+|provisioningAction|provisioningAction|Indicates the activity name or the operation name. The possible values are: `create`, `update`, `delete`, `stageddelete`, `disable`, `other` and `unknownFutureValue`. For a list of activities logged, refer to Microsoft Entra activity list. Supports `$filter` (`eq`, `contains`).|
 |provisioningStatusInfo|[provisioningStatusInfo](provisioningstatusinfo.md)|Details of provisioning status.|
 |provisioningSteps|[provisioningStep](provisioningstep.md) collection|Details of each step in provisioning.|
 |servicePrincipal|[servicePrincipal](provisioningserviceprincipal.md) collection|Represents the service principal used for provisioning. Supports `$filter` (`eq`) for **id** and **name**.|

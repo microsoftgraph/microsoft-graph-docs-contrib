@@ -47,7 +47,9 @@ DELETE /users/{userId}/drive/items/{itemId}
 
 ## Example
 
-Here's an example of how to call this API.
+### Request
+
+The following example shows how to call this API.
 
 
 # [HTTP](#tab/http)
@@ -87,7 +89,7 @@ DELETE https://graph.microsoft.com/v1.0/me/drive/items/{item-id}
 
 ---
 
-## Response
+### Response
 
 If successful, this call returns a `204 No Content` response to indicate that resource was deleted and there was nothing to return.
 

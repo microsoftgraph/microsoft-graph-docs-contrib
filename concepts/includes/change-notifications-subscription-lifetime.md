@@ -35,7 +35,7 @@ ms.date: 11/07/2024
 | Group [conversation][]                         | 4,230 minutes (under three days)  |
 | OneDrive [driveItem][]                         | 42,300 minutes (under 30 days)    |
 | SharePoint [list][]                            | 42,300 minutes (under 30 days)    |
-| Outlook [message][], [event][], [contact][]    | 10,080 minutes (under seven days)  |
+| Outlook [message][], [event][], [contact][]    | 10,080 minutes (under seven days) <br/><br/>For subscriptions with resource data (rich notification subscriptions), subscription lifetime is 1440 minutes (under one day).  |
 | [user][], [group][], other directory resources | 41,760 minutes (under 29 days)    |
 | [onlineMeeting][]                              | 4,230 minutes (under three days)  |
 | [presence][]                                   | 60 minutes (1 hour)               |

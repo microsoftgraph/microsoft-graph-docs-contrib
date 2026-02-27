@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/roleManagementAlerts/alerts?$filter=scopeId eq 'scopeId' and scopeType eq 'scopeType'
 ```
 
@@ -62,7 +62,7 @@ The following example shows a request.
   "name": "list_unifiedrolemanagementalert"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alerts?$filter=scopeId eq '/' and scopeType eq 'DirectoryRole'&$expand=alertDefinition,alertConfiguration,alertIncidents
 ```
 
@@ -105,7 +105,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.unifiedRoleManagementAlert)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

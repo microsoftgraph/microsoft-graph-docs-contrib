@@ -72,7 +72,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identity/identityProviders
 ```
 
@@ -119,7 +119,7 @@ The following example shows the response.
   "isCollection": true
 } -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -157,7 +157,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identity/identityProviders
 ```
 
@@ -246,7 +246,7 @@ The following example shows a request.
 }
 -->
 
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identity/identityProviders
 ```
 

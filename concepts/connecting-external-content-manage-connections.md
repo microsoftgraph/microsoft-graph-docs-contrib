@@ -6,6 +6,7 @@ author: mecampos
 doc_type: conceptualPageType
 ms.subservice: search
 ms.date: 07/22/2025
+ms.topic: article
 ---
 <!---<author of this doc: rsamai>--->
 
@@ -82,7 +83,7 @@ Update the activity settings by sending a patch request on the connection.
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/v1.0/external/connections/contosohr
 ```
 The following **activitySettings** payload is sent with the patch request.

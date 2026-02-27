@@ -2,7 +2,7 @@
 title: "Remove appliesTo"
 description: "Remove an appManagementPolicy from an application or service principal object."
 ms.localizationpriority: medium
-author: "madansr7"
+author: "aricrowe57"
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
 ms.date: 07/26/2024
@@ -127,7 +127,7 @@ The following example shows a request to remove an appManagementPolicy from a se
   "name": "remove_appliesTo_e2"
 }-->
 
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/servicePrincipals/f284860e-368c-4a1f-8894-77f0a9676fb3/appManagementPolicies/15942288-d19b-458c-9be4-20377d0a2435/$ref
 ```
 

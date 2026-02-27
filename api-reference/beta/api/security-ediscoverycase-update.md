@@ -22,6 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "security_ediscoverycase_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoverycase-update-permissions.md)]
+[!INCLUDE [rbac-rbac-ediscovery-apis-write](../includes/rbac-for-apis/rbac-ediscovery-apis-write.md)]
 
 ## HTTP request
 
@@ -29,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 PATCH /security/cases/ediscoveryCases/{ediscoveryCaseId}
 ```
 
@@ -65,7 +66,7 @@ The following example shows a request.
   "name": "update_ediscoverycase"
 }
 -->
-``` http
+```http
 PATCH https://graph.microsoft.com/beta/security/cases/ediscoveryCases/22aa2acd-7554-4330-9ba9-ce20014aaae4
 Content-Type: application/json
 

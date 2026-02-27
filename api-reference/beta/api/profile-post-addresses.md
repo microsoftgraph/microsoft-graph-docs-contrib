@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /me/profile/addresses
 POST /users/{id | userPrincipalName}/profile/addresses
 ```
@@ -45,7 +45,7 @@ The following table shows the properties that are possible to set when creating 
 
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|allowedAudiences|String|The audiences that are able to see the values contained within the entity. Inherited from [itemFacet](../resources/itemfacet.md). The possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
 |detail|[physicalAddress](../resources/physicaladdress.md)|Details about the address itself.|
 |displayName|String|Friendly name the user has assigned to this address. |
 |geoCoordinates|[geoCoordinates](../resources/geocoordinates.md)|The geocoordinates of the address.|
@@ -63,7 +63,7 @@ If successful, this method returns a `201 Created` response code and an [itemAdd
   "name": "create_itemaddress_from_"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/beta/me/profile/addresses
 Content-Type: application/json
 
@@ -119,7 +119,7 @@ Content-Type: application/json
   "@odata.type": "microsoft.graph.itemAddress"
 }
 -->
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

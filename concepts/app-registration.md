@@ -5,6 +5,7 @@ author: "michaelvenables"
 ms.localizationpriority: high
 ms.custom: scenarios:getting-started, sfi-image-nochange, sfi-ga-nochange
 ms.date: 11/07/2024
+ms.topic: article
 ---
 
 # Microsoft Graph Data Connect app registration

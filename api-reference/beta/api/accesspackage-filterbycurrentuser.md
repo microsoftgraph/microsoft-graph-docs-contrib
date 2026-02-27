@@ -13,10 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-> [!CAUTION]
-> The **filterByCurrentUser** function is on a deprecation path and exists only to support current customers. We don't recommend using this function.
-
-
 In [Microsoft Entra Entitlement Management](../resources/entitlementmanagement-overview.md), retrieve a list of [accessPackage](../resources/accesspackage.md) objects filtered on the signed-in user.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]

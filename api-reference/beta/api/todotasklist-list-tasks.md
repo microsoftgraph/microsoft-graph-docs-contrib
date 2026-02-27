@@ -28,7 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /me/todo/lists/{todoTaskListId}/tasks
 GET /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 ```
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
   "name": "get_todotask_2"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/todo/lists/35e2-35e2-721a-e235-1a72e2351a7/tasks
 ```
 
@@ -101,7 +101,7 @@ GET https://graph.microsoft.com/beta/me/todo/lists/35e2-35e2-721a-e235-1a72e2351
   "@odata.type": "collection(microsoft.graph.todoTask)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

@@ -1,5 +1,5 @@
 ---
-title: "cloudPcReports: retrieveCloudPcRecommendationReports"
+title: "cloudPcReports: retrieveCloudPcRecommendationReports (deprecated)"
 description: "Get the device recommendation reports for Cloud PCs, such as the usage category report."
 author: "Ward1994"
 ms.localizationpriority: medium
@@ -8,11 +8,14 @@ doc_type: apiPageType
 ms.date: 04/01/2025
 ---
 
-# cloudPcReports: retrieveCloudPcRecommendationReports
+# cloudPcReports: retrieveCloudPcRecommendationReports (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!CAUTION]
+> This API is deprecated and will stop returning data on December 31, 2025. Going forward, use the [cloudPcReport: retrieveCloudPcRecommendationReports](../api/cloudpcreport-retrievecloudpcrecommendationreports.md) API.
 
 Get the device recommendation reports for Cloud PCs, such as the usage category report. The usage category report categorizes a Cloud PC as `Undersized`, `Oversized`, `Rightsized`, or `Underutilized`, and also provides the recommended SKU when the Cloud PC isn't `Rightsized`.
 
@@ -53,7 +56,7 @@ The following table shows the parameters that can be used with this action.
 |filter|String|OData `$filter` syntax. Supported filters are: `and`, `or`, `lt`, `le`, `gt`, `ge`, and `eq`.|
 |groupBy|String collection|Specifies how to group the reports. If used, must have the same content as the **select** parameter.|
 |orderBy|String collection|Specifies how to sort the reports.|
-|reportName|[cloudPcRecommendationReportType](../resources/cloudpcreports.md#cloudpcrecommendationreporttype-values)|The report name. The possible values are: `cloudPcUsageCategoryReports`, `unknownFutureValue`. The default value is `cloudPcUsageCategoryReports`.|
+|reportName|[cloudPcRecommendationReportType](../resources/cloudpcreport.md#cloudpcrecommendationreporttype-values)|The report name. The possible values are: `cloudPcUsageCategoryReport`, `unknownFutureValue`, `cloudPcUsageCategoryReports`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `cloudPcUsageCategoryReports`. The `cloudPcUsageCategoryReports` member is deprecated and will stop returning on December 31, 2025. Going forward, use the `cloudPcUsageCategoryReport` member with the [cloudPcReport](../resources/cloudpcreport.md) resource instead.|
 |search|String|Specifies a String to search.|
 |select|String collection|OData `$select` syntax. The selected columns of the reports. |
 |skip|Int32|Number of records to skip.|

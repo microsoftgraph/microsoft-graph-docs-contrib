@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /identityProtection/riskyServicePrincipals/confirmCompromised
 ```
 
@@ -58,7 +58,7 @@ If successful, this action returns a `204 No Content` response code. It doesn't 
   "name": "riskyserviceprincipal_confirmcompromised"
 }
 -->
-``` http
+```http
 POST https://graph.microsoft.com/v1.0/identityProtection/riskyServicePrincipals/confirmCompromised
 Content-Type: application/json
 
@@ -106,6 +106,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

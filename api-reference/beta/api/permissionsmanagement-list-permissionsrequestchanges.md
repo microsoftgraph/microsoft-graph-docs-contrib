@@ -36,7 +36,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 GET /identityGovernance/permissionsManagement/permissionsRequestChanges
 ```
 
@@ -65,7 +65,7 @@ The following example shows a request to retrieve a changelog of a scheduled per
   "name": "list_permissionsrequestchange"
 }
 -->
-``` http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/permissionsRequestChanges?$filter=modificationDateTime gt {t}
 ```
 
@@ -104,7 +104,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.permissionsRequestChange)"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

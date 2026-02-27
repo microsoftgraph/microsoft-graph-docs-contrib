@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 
-``` http
+```http
 POST /policies/mobileAppManagementPolicies/{id}/includedGroups/$ref
 ```
 
@@ -68,7 +68,7 @@ If successful, this method returns a `204 No Content` response code and a [group
 }
 -->
 
-``` http
+```http
 POST https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/ab90bacf-55a3-4a3e-839a-aa4b74e4f020/includedGroups/$ref
 Content-Type: application/json
 
@@ -115,6 +115,6 @@ Content-Type: application/json
 }
 -->
 
-``` http
+```http
 HTTP/1.1 204 No Content
 ```

@@ -49,7 +49,7 @@ An abstract class containing the base properties for Intune mobile apps.
 |developer|String|The developer of the app.|
 |notes|String|Notes for the app.|
 |uploadState|Int32|The upload state.|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. Possible values are: `notPublished`, `processing`, `published`.|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|The publishing state for the app. The app cannot be assigned unless the app is published. The possible values are: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|The value indicating whether the app is assigned to at least one group.|
 |roleScopeTagIds|String collection|List of scope tag ids for this mobile app.|
 |dependentAppCount|Int32|The total number of dependencies the child app has.|

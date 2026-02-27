@@ -38,7 +38,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsUpdateForBusinessConfiguration/deviceUpdateStates
 ```
 
@@ -60,7 +60,7 @@ The following table shows the properties that are required when you create the w
 |userId|String|The id of the user.|
 |deviceDisplayName|String|Device display name.|
 |userPrincipalName|String|User principal name.|
-|status|[windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md)|Windows udpate status. Possible values are: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
+|status|[windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md)|Windows udpate status. The possible values are: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
 |qualityUpdateVersion|String|The Quality Update Version of the device.|
 |featureUpdateVersion|String|The current feature update version of the device.|
 |lastScanDateTime|DateTimeOffset|The date time that the Windows Update Agent did a successful scan.|
@@ -75,7 +75,7 @@ If successful, this method returns a `201 Created` response code and a [windowsU
 
 ### Request
 Here is an example of the request.
-``` http
+```http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsUpdateForBusinessConfiguration/deviceUpdateStates
 Content-type: application/json
 Content-length: 504
@@ -96,7 +96,7 @@ Content-length: 504
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-``` http
+```http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 553

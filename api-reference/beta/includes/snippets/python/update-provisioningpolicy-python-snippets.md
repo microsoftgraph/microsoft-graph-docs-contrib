@@ -14,6 +14,8 @@ from msgraph_beta.generated.models.microsoft_managed_desktop import MicrosoftMan
 from msgraph_beta.generated.models.microsoft_managed_desktop_type import MicrosoftManagedDesktopType
 from msgraph_beta.generated.models.cloud_pc_provisioning_policy_autopatch import CloudPcProvisioningPolicyAutopatch
 from msgraph_beta.generated.models.cloud_pc_autopilot_configuration import CloudPcAutopilotConfiguration
+from msgraph_beta.generated.models.cloud_pc_user_settings_persistence_configuration import CloudPcUserSettingsPersistenceConfiguration
+from msgraph_beta.generated.models.cloud_pc_user_settings_persistence_storage_size_category import CloudPcUserSettingsPersistenceStorageSizeCategory
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = CloudPcProvisioningPolicy(
 	odata_type = "#microsoft.graph.cloudPcProvisioningPolicy",
@@ -39,6 +41,10 @@ request_body = CloudPcProvisioningPolicy(
 		device_preparation_profile_id = "59e5d3d2-ec68-4bfe-9693-27975b318990",
 		application_timeout_in_minutes = 30,
 		on_failure_device_access_denied = False,
+	),
+	user_settings_persistence_configuration = CloudPcUserSettingsPersistenceConfiguration(
+		user_settings_persistence_enabled = False,
+		user_settings_persistence_storage_size_category = CloudPcUserSettingsPersistenceStorageSizeCategory.FourGB,
 	),
 	additional_data = {
 			"on_premises_connection_id" : "4e47d0f6-6f77-44f0-8893-c0fe1701ffff",

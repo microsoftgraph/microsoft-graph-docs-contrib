@@ -1,6 +1,6 @@
 ---
 title: "Delete personAward"
-description: "Deletes an personAward object."
+description: "Delete a personAward object from a user's profile."
 ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.subservice: "people"
@@ -12,7 +12,7 @@ ms.date: 06/11/2024
 
 Namespace: microsoft.graph
 
-Deletes a [personAward](../resources/personaward.md) object from a user's [profile](../resources/profile.md).
+Delete a [personAward](../resources/personaward.md) object from a user's [profile](../resources/profile.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -29,7 +29,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-``` http
+```http
 DELETE /me/profile/awards/{id}
 DELETE /users/{id | userPrincipalName}/profile/awards/{id}
 ```
@@ -55,7 +55,7 @@ If successful, this method returns a `204 No Content` response code.
   "name": "delete_personaward"
 }
 -->
-``` http
+```http
 DELETE https://graph.microsoft.com/beta/users/{userId}/profile/awards/{personAwardId}
 ```
 
@@ -96,7 +96,7 @@ DELETE https://graph.microsoft.com/beta/users/{userId}/profile/awards/{personAwa
   "truncated": true
 }
 -->
-``` http
+```http
 HTTP/1.1 204 No Content
 ```
 
