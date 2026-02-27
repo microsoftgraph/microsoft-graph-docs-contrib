@@ -40,6 +40,11 @@ POST /me/dataSecurityAndGovernance/protectionScopes/compute
 POST /users/{usersId}/dataSecurityAndGovernance/protectionScopes/compute
 ```
 
+>[!NOTE]
+> If you only have the user's **userPrincipalName**, use the following URL to retrieve their object ID.
+>
+> `GET https://graph.microsoft.com/v1.0/users/{userPrincipalName}?$select=id`
+
 ## Request headers
 
 | Name          | Description   |
