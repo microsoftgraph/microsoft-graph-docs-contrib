@@ -23,7 +23,7 @@ Represents the rights associated with a specific piece of content.
 |cid|String|The content identifier.|
 |format|String|The content format.|
 |id|String|The identifier.|
-|rights|Enum|The rights enum flag.|
+|rights|[usageRights](usagerights.md)|The rights enum flag.|
 
 ## Relationships
 

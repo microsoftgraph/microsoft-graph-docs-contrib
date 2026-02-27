@@ -49,8 +49,12 @@ Enumerates a user's usage rights when content is protected with a sensitivity la
 ## JSON representation
 
 The following JSON representation shows the enum type.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.usageRights"
+} -->
 ```json
 {
-  "@odata.type": "#microsoft.graph.usageRightsIncluded"
+  "@odata.type": "#microsoft.graph.usageRights"
 }
 ```
