@@ -29,7 +29,7 @@ Represents the rights associated with a specific piece of content.
 |:---|:---|:---|
 |label|[microsoft.graph.security.sensitivityLabel](../resources/security-sensitivitylabel.md)|The sensitivity label applied to the content.|
 
-# usageRights enum type
+## usageRights enum type
 
 Namespace: microsoft.graph
 
