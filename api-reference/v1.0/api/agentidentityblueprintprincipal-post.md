@@ -55,7 +55,7 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals/microsoft.graph.agentIde
 Content-type: application/json
 
 {
-  "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
+  "appId": "00001111-aaaa-2222-bbbb-3333cccc4444"
 }
 ```
 

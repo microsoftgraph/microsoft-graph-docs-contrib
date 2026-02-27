@@ -59,7 +59,7 @@ PATCH /applications/{id}/microsoft.graph.agentIdentityBlueprint/inheritablePermi
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [inheritablePermission](../resources/inheritablepermission.md) object in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
