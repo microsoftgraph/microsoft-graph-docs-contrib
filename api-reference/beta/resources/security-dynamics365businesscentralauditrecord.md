@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "Dynamics 365 Business Central audit record"
 ---
 # dynamics365BusinessCentralAuditRecord resource type
 

@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "Compliance DLP applications classification audit record"
 ---
 # complianceDlpApplicationsClassificationAuditRecord resource type
 

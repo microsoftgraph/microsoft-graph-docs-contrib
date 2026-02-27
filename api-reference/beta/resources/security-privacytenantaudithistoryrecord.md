@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "Privacy tenant audit history record"
 ---
 # privacyTenantAuditHistoryRecord resource type
 

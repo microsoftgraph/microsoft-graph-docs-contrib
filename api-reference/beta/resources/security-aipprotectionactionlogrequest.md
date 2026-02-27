@@ -5,6 +5,7 @@ author: "diksha27"
 ms.subservice: compliance
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "AIP protection action log request"
 ---
 # aipProtectionActionLogRequest resource type
 

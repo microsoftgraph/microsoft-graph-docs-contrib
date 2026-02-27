@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "Supervisory review day x insights audit record"
 ---
 # supervisoryReviewDayXInsightsAuditRecord resource type
 

@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "MIP auto label simulation SharePoint progress record"
 ---
 # mipAutoLabelSimulationSharePointProgressRecord resource type
 

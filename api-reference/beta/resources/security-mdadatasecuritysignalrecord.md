@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "MDA data security signal record"
 ---
 # mdaDataSecuritySignalRecord resource type
 

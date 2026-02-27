@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "MS365D suppression rule audit record"
 ---
 # mS365DSuppressionRuleAuditRecord resource type
 

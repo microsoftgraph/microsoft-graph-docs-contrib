@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "Compliance supervision Exchange audit record"
 ---
 # complianceSupervisionExchangeAuditRecord resource type
 

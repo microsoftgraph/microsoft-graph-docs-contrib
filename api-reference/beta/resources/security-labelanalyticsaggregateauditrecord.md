@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "Label analytics aggregate audit record"
 ---
 # labelAnalyticsAggregateAuditRecord resource type
 

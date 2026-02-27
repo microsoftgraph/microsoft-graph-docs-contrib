@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "Power Apps audit plan record"
 ---
 # powerAppsAuditPlanRecord resource type
 

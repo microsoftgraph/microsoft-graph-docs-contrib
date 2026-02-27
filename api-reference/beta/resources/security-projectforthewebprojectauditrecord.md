@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "Project for the web project audit record"
 ---
 # projectForTheWebProjectAuditRecord resource type
 

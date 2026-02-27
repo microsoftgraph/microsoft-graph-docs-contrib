@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "Project for the web assigned to me settings audit record"
 ---
 # projectForTheWebAssignedToMeSettingsAuditRecord resource type
 

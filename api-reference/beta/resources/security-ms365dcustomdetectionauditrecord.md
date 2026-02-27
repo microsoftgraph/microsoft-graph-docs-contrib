@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "MS365D custom detection audit record"
 ---
 # mS365DCustomDetectionAuditRecord resource type
 

@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "M365 DAAD audit record"
 ---
 # m365DAADAuditRecord resource type
 

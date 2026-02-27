@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "VFAM delete policy audit record"
 ---
 # vfamDeletePolicyAuditRecord resource type
 

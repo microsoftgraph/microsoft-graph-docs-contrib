@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "Information barrier policy application audit record"
 ---
 # informationBarrierPolicyApplicationAuditRecord resource type
 

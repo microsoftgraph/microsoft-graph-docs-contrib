@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "Microsoft Graph data connect operation"
 ---
 # microsoftGraphDataConnectOperation resource type
 

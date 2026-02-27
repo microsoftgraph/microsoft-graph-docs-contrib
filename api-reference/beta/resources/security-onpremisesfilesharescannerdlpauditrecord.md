@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "On premises file share scanner DLP audit record"
 ---
 # onPremisesFileShareScannerDlpAuditRecord resource type
 

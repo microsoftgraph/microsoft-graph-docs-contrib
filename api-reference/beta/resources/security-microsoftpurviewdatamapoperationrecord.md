@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "Microsoft Purview data map operation record"
 ---
 # microsoftPurviewDataMapOperationRecord resource type
 

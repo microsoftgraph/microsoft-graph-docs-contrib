@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "Windows 365 customer lockbox audit record"
 ---
 # windows365CustomerLockboxAuditRecord resource type
 

@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "Planner roster sensitivity label audit record"
 ---
 # plannerRosterSensitivityLabelAuditRecord resource type
 

@@ -5,6 +5,7 @@ author: "diksha27"
 ms.subservice: compliance
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "Azure active directory audit record"
 ---
 # azureActiveDirectoryAuditRecord resource type
 

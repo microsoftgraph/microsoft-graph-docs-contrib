@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "On premises SharePoint scanner DLP audit record"
 ---
 # onPremisesSharePointScannerDlpAuditRecord resource type
 

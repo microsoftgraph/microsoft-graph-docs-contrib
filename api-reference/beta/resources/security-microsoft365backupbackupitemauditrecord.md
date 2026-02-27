@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "Microsoft 365 backup backup item audit record"
 ---
 # microsoft365BackupBackupItemAuditRecord resource type
 

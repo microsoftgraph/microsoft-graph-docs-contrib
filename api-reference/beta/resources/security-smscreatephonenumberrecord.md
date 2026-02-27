@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "SMS create phone number record"
 ---
 # smsCreatePhoneNumberRecord resource type
 

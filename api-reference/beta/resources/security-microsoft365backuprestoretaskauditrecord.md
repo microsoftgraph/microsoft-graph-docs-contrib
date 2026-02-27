@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "Microsoft 365 backup restore task audit record"
 ---
 # microsoft365BackupRestoreTaskAuditRecord resource type
 

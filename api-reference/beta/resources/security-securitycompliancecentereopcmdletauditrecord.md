@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "Security compliance center EOP cmdlet audit record"
 ---
 # securityComplianceCenterEOPCmdletAuditRecord resource type
 

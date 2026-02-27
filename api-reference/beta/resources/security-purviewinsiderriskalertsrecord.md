@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "Purview insider risk alerts record"
 ---
 # purviewInsiderRiskAlertsRecord resource type
 

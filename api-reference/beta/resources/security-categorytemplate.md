@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
 ms.date: 04/20/2024
+toc.title: "Category template"
 ---
 
 # categoryTemplate resource type

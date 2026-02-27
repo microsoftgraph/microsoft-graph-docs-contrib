@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
 ms.date: 10/29/2024
+toc.title: "Case operation"
 ---
 
 # caseOperation resource type

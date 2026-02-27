@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "Managed tenants audit record"
 ---
 # managedTenantsAuditRecord resource type
 

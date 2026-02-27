@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "Cerner SMS settings update record"
 ---
 # cernerSMSSettingsUpdateRecord resource type
 

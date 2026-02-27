@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "Insider risk scoped user insights record"
 ---
 # insiderRiskScopedUserInsightsRecord resource type
 

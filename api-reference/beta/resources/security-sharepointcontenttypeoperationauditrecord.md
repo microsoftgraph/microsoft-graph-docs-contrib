@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "SharePoint content type operation audit record"
 ---
 # sharePointContentTypeOperationAuditRecord resource type
 

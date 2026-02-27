@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+toc.title: "FHIR base URL add record"
 ---
 # fhirBaseUrlAddRecord resource type
 
