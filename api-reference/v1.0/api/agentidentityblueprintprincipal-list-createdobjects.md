@@ -64,7 +64,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/microsoft.graph.agentIdentityBlueprint/createdObjects
+GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/microsoft.graph.agentIdentityBlueprintPrincipal/createdObjects
 ```
 
 
