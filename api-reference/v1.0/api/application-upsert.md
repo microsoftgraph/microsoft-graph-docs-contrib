@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Create a new [application](../resources/application.md) object if it doesn't exist, or update the properties of an existing [application](../resources/application.md) object.
 
-This API can also create an [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object from an [agentIdentityBlueprint](../resources/agentidentityblueprint.md) if it doesn't exist, or update properties of an existing [agentIdentityBlueprint](../resources/agentidentityblueprint.md), when the **@odata.type** property is set to `#microsoft.graph.agentIdentityBlueprint`.
+This API can also create an [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object if it doesn't exist, or update properties of an existing [agentIdentityBlueprint](../resources/agentidentityblueprint.md), when the **@odata.type** property is set to `#microsoft.graph.agentIdentityBlueprint`.
 
 > [!IMPORTANT]
 > Using PATCH to set [**passwordCredential**](../resources/passwordcredential.md) is not supported. Use the [addPassword](./application-addpassword.md) and [removePassword](./application-removepassword.md) methods to update the password or secret for an application.

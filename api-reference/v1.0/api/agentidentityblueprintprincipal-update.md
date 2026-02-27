@@ -42,7 +42,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /servicePrincipals/{id}/graph.agentIdentityBlueprintPrincipal
+PATCH /servicePrincipals/{id}/microsoft.graph.agentIdentityBlueprintPrincipal
 
 ```
 ## Request headers

@@ -84,67 +84,65 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.agentIdentityBlueprint",
-    "id": "08be1f79-37a1-49c0-b444-3075e74d1e8c",
-    "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
-    "identifierUris": [
-        "api://00001111-aaaa-2222-bbbb-3333cccc4444"
-    ],
-    "createdByAppId": "14d82eec-204b-4c2f-b7e8-296a70dab67e",
-    "createdDateTime": "2025-09-10T17:04:20Z",
-    "description": null,
-    "disabledByMicrosoftStatus": null,
-    "displayName": "My Agent Blueprint",
-    "groupMembershipClaims": null,
-    "publisherDomain": "contoso.onmicrosoft.com",
-    "signInAudience": "AzureADMyOrg",
-    "tags": [],
-    "tokenEncryptionKeyId": null,
-    "uniqueName": null,
-    "serviceManagementReference": null,
-    "optionalClaims": null,
-    "api": {
-        "requestedAccessTokenVersion": 2,
-        "acceptMappedClaims": null,
-        "knownClientApplications": [],
-        "oauth2PermissionScopes": [],
-        "preAuthorizedApplications": [],
-        "tokenEncryptionSetting": {
-            "scheme": null,
-            "audience": null,
-            "automatedTokenVersion": {
-                "current": null,
-                "available": []
-            }
-        }
-    },
-    "appRoles": [],
-    "info": {
-        "termsOfServiceUrl": null,
-        "supportUrl": null,
-        "privacyStatementUrl": null,
-        "marketingUrl": null,
-        "logoUrl": null
-    },
-    "keyCredentials": [],
-    "passwordCredentials": [],
-    "requiredResourceAccess": [],
-    "verifiedPublisher": {
-        "displayName": null,
-        "verifiedPublisherId": null,
-        "addedDateTime": null
-    },
-    "web": {
-        "redirectUris": [],
-        "homePageUrl": null,
-        "logoutUrl": null,
-        "redirectUriSettings": [],
-        "implicitGrantSettings": {
-            "enableIdTokenIssuance": false,
-            "enableAccessTokenIssuance": false
-        }
-    }
+  "@odata.type": "#microsoft.graph.agentIdentityBlueprint",
+  "id": "08be1f79-37a1-49c0-b444-3075e74d1e8c",
+  "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
+  "identifierUris": [
+      "api://00001111-aaaa-2222-bbbb-3333cccc4444"
+  ],
+  "createdByAppId": "14d82eec-204b-4c2f-b7e8-296a70dab67e",
+  "createdDateTime": "2025-09-10T17:04:20Z",
+  "description": null,
+  "disabledByMicrosoftStatus": null,
+  "displayName": "My Agent Blueprint",
+  "groupMembershipClaims": null,
+  "publisherDomain": "contoso.onmicrosoft.com",
+  "signInAudience": "AzureADMyOrg",
+  "tags": [],
+  "tokenEncryptionKeyId": null,
+  "uniqueName": null,
+  "serviceManagementReference": null,
+  "optionalClaims": null,
+  "api": {
+      "requestedAccessTokenVersion": 2,
+      "acceptMappedClaims": null,
+      "knownClientApplications": [],
+      "oauth2PermissionScopes": [],
+      "preAuthorizedApplications": [],
+      "tokenEncryptionSetting": {
+          "scheme": null,
+          "audience": null,
+          "automatedTokenVersion": {
+              "current": null,
+              "available": []
+          }
+      }
+  },
+  "appRoles": [],
+  "info": {
+      "termsOfServiceUrl": null,
+      "supportUrl": null,
+      "privacyStatementUrl": null,
+      "marketingUrl": null,
+      "logoUrl": null
+  },
+  "keyCredentials": [],
+  "passwordCredentials": [],
+  "requiredResourceAccess": [],
+  "verifiedPublisher": {
+      "displayName": null,
+      "verifiedPublisherId": null,
+      "addedDateTime": null
+  },
+  "web": {
+      "redirectUris": [],
+      "homePageUrl": null,
+      "logoutUrl": null,
+      "redirectUriSettings": [],
+      "implicitGrantSettings": {
+          "enableIdTokenIssuance": false,
+          "enableAccessTokenIssuance": false
+      }
   }
 }
 ```

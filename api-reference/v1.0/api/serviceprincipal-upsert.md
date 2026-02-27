@@ -49,9 +49,9 @@ In the request body, supply a JSON representation of a [servicePrincipal](../res
 
 ## Response
 
-If successful, if a servicePrincipal or agentIdentityBlueprintPrincipal with **appId** doesn't exist, this method returns a `201 Created` response code and a new [servicePrincipal](../resources/servicePrincipal.md) or [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object in the response body.
+If successful, if a servicePrincipal or agentIdentityBlueprintPrincipal with **appId** doesn't exist, this method returns a `201 Created` response code and a new [servicePrincipal](../resources/serviceprincipal.md) or [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object in the response body.
 
-If a servicePrincipal or agentIdentityBlueprintPrincipal with **appId** already exists, this method updates the [servicePrincipal](../resources/servicePrincipal.md) or [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object and returns a `204 No Content` response code.
+If a servicePrincipal or agentIdentityBlueprintPrincipal with **appId** already exists, this method updates the [servicePrincipal](../resources/serviceprincipal.md) or [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object and returns a `204 No Content` response code.
 
 ## Examples
 
