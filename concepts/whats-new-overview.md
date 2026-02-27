@@ -179,6 +179,10 @@ Use the **reportFileMetadata** property on [ediscoveryPurgeDataOperation](/graph
 
 The `TeamsAppInstallation.ManageSelectedForTeam.All` is the least privileged application permission required to install or upgrade a Teams app that requires consent to [resource-specific consent (RSC)](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) permissions when using the [teamsAppInstallation in a team: upgrade](/graph/api/team-teamsappinstallation-upgrade) API.
 
+### Teamwork and communications | Messaging
+
+Use the [replyWithQuote](/graph/api/chatmessage-replywithquote) method on the [chatMessage](/graph/api/resources/chatmessage) resource to reply with a quote to a single chat message or multiple chat messages in a chat.
+
 ## January 2026: New in preview only
 
 ### Applications
