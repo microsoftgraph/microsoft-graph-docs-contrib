@@ -1,6 +1,6 @@
 ---
 title: "cloudPcCloudAppDetail resource type"
-description: "Base type representing properties of a cloud app or a discovered app."
+description: "A base type entity that represents properties of a cloud app or a discovered app."
 author: "niniliu"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Base type representing properties of a cloud app or a discovered app. This type can be used directly or through its derived types: [cloudPcAutomaticDiscoveredAppDetail](../resources/cloudpcautomaticdiscoveredappdetail.md) for apps automatically discovered from the Start menu, and [cloudPcFilePathAppDetail](../resources/cloudpcfilepathappdetail.md) for apps manually created by admins by specifying a file path.
+A base type entity that represents properties of a cloud app or a discovered app. This type can be used directly or through its derived types: [cloudPcAutomaticDiscoveredAppDetail](../resources/cloudpcautomaticdiscoveredappdetail.md) for apps automatically discovered from the *start* menu, and [cloudPcFilePathAppDetail](../resources/cloudpcfilepathappdetail.md) for apps that an admin manually created using a file path.
 
 ## Properties
 
