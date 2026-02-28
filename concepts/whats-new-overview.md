@@ -38,7 +38,7 @@ Updated the admin consent requirement for the following delegated permissions re
    - The [qrCodePinAuthenticationMethodConfiguration](/graph/api/resources/qrcodepinauthenticationmethodconfiguration) resource for managing the QR code authentication method policy for a tenant.
    - Updated the [authenticationMethodModes](/graph/api/resources/authenticationmethodmodes) and [baseAuthenticationMethod](/graph/api/resources/baseauthenticationmethod) enumerations to add the `qrCodePin` member to support this new authentication method.
 
-### Message trace
+### Mail | Message trace
 
 Use the message trace API to track the flow of email messages through your Exchange Online organization. For more information, see [exchangeMessageTrace](/graph/api/resources/exchangemessagetrace).
 
