@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents properties of a [cloud app](../resources/cloudpccloudapp.md) that was automatically discovered from the start menu. 
+Represents properties of a [cloud app](../resources/cloudpccloudapp.md) that was automatically discovered from the *start* menu. 
 
 Inherits from [cloudPcCloudAppDetail](../resources/cloudpccloudappdetail.md).
 
