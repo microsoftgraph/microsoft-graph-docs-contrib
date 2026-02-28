@@ -51,7 +51,7 @@ The following table shows the properties that are required when you create a **c
 
 |Property|Type|Description|
 |:---|:---|:---|
-|appDetail|[cloudPcCloudAppDetail](../resources/cloudpccloudappdetail.md)|The details about the cloud app. This is a polymorphic type. Use `@odata.type` to specify the derived type: `#microsoft.graph.cloudPcFilePathAppDetail` for apps with a manually specified file path, or `#microsoft.graph.cloudPcAutomaticDiscoveredAppDetail` for automatically discovered apps. Required.|
+|appDetail|[cloudPcCloudAppDetail](../resources/cloudpccloudappdetail.md)|The details about the cloud app. This is a polymorphic type. Use **@odata.type** to specify the derived type: `#microsoft.graph.cloudPcFilePathAppDetail` for apps with a manually specified file path, or `#microsoft.graph.cloudPcAutomaticDiscoveredAppDetail` for automatically discovered apps. Required.|
 |description|String|The description associated with the cloud app. The maximum allowed length for this property is 512 characters. Optional.|
 |discoveredAppName|String|Name of the discovered app associated with the cloud app. Required.|
 |displayName|String|The display name for the cloud app. Must be unique within a single provisioning policy. The maximum allowed length for this property is 64 characters. Required.|
@@ -65,7 +65,7 @@ If successful, this method returns a `201 Created` response code and a [cloudPcC
 
 ### Request
 
-The following example shows a request.
+The following example shows how to create a cloud app using the **cloudPcFilePathAppDetail** type.
 
 <!-- {
   "blockType": "request",
