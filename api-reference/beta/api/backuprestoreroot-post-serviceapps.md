@@ -17,6 +17,9 @@ Namespace: microsoft.graph
 
 Create a new [serviceApp](../resources/serviceapp.md).
 
+> [!NOTE]
+> These APIs are intended for use by registered Backup Controller applications. If this API is called via Microsoft Graph PowerShell, it returns a `403 Forbidden` response code because the Microsoft Graph PowerShell SDK isn't a supported client for these operations.
+
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
@@ -89,10 +92,6 @@ Content-type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-serviceapp-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-serviceapp-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -21,7 +21,7 @@ Contains properties for the package information for a Windows line of business a
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|The Windows architecture for which this app can run on. The possible values are: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
+|applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|The Windows architecture for which this app can run on. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
 |displayName|String|The Display Name.|
 |identityName|String|The Identity Name.|
 |identityPublisher|String|The Identity Publisher.|

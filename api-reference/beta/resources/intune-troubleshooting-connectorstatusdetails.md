@@ -21,9 +21,9 @@ Represent connector status
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|connectorName|[connectorName](../resources/intune-troubleshooting-connectorname.md)|Connector name. The possible values are: `applePushNotificationServiceExpirationDateTime`, `vppTokenExpirationDateTime`, `vppTokenLastSyncDateTime`, `windowsAutopilotLastSyncDateTime`, `windowsStoreForBusinessLastSyncDateTime`, `jamfLastSyncDateTime`, `ndesConnectorLastConnectionDateTime`, `appleDepExpirationDateTime`, `appleDepLastSyncDateTime`, `onPremConnectorLastSyncDateTime`, `googlePlayAppLastSyncDateTime`, `googlePlayConnectorLastModifiedDateTime`, `windowsDefenderATPConnectorLastHeartbeatDateTime`, `mobileThreatDefenceConnectorLastHeartbeatDateTime`, `chromebookLastDirectorySyncDateTime`, `futureValue`.|
+|connectorName|[connectorName](../resources/intune-troubleshooting-connectorname.md)|Connector name. Possible values are: `applePushNotificationServiceExpirationDateTime`, `vppTokenExpirationDateTime`, `vppTokenLastSyncDateTime`, `windowsAutopilotLastSyncDateTime`, `windowsStoreForBusinessLastSyncDateTime`, `jamfLastSyncDateTime`, `ndesConnectorLastConnectionDateTime`, `appleDepExpirationDateTime`, `appleDepLastSyncDateTime`, `onPremConnectorLastSyncDateTime`, `googlePlayAppLastSyncDateTime`, `googlePlayConnectorLastModifiedDateTime`, `windowsDefenderATPConnectorLastHeartbeatDateTime`, `mobileThreatDefenceConnectorLastHeartbeatDateTime`, `chromebookLastDirectorySyncDateTime`, `futureValue`.|
 |connectorInstanceId|String|Connector Instance Id|
-|status|[connectorHealthState](../resources/intune-troubleshooting-connectorhealthstate.md)|Connector health state. The possible values are: `healthy`, `warning`, `unhealthy`, `unknown`.|
+|status|[connectorHealthState](../resources/intune-troubleshooting-connectorhealthstate.md)|Connector health state. Possible values are: `healthy`, `warning`, `unhealthy`, `unknown`.|
 |eventDateTime|DateTimeOffset|Event datetime|
 
 ## Relationships

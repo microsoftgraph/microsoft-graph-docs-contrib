@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 
 Remove an [ediscoveryCaseMember](../resources/security-ediscoverycasemember.md) from an [ediscoveryCase](../resources/security-ediscoverycase.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -28,6 +28,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoverycasemember-delete-permissions.md)]
+[!INCLUDE [rbac-ediscovery-write](../includes/rbac-for-apis/rbac-ediscovery-apis-write.md)]
 
 ## HTTP request
 

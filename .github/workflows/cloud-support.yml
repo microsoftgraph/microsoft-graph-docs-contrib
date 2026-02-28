@@ -1,3 +1,4 @@
+#cSpell:ignore microsoftgraph msgraph hidi CSDL Mooncake
 name: Update cloud support status
 
 on:
@@ -67,7 +68,7 @@ jobs:
         hidi transform --cs transformed_beta-Mooncake.csdl -o ../openapi/beta/Mooncake.yml --co -f Yaml --sp $Env:SETTINGS
     - name: Run cloud support tool
       env:
-        TOOL: ./tool/src/bin/Release/net9.0/CheckCloudSupport
+        TOOL: ./tool/src/bin/Release/net10.0/CheckCloudSupport
       run: |
         $TOOL --open-api ./openapi/v1.0 --api-docs ./docs/api-reference/v1.0/api --overrides ./docs/api-reference/cloud.api.overrides.json --excludes ./docs/api-reference/cloud.exclusions.json --remove-old-includes
         $TOOL --open-api ./openapi/beta --api-docs ./docs/api-reference/beta/api --overrides ./docs/api-reference/cloud.api.overrides.json --excludes ./docs/api-reference/cloud.exclusions.json --remove-old-includes

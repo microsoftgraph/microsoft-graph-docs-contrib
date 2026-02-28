@@ -14,6 +14,8 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [ediscovery-deprecation](../includes/ediscovery-subnamespace-deprecation.md)]
+
 The container for a site associated with a [custodian](ediscovery-custodian.md).
 
 ## Methods

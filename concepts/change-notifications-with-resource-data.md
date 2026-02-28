@@ -29,6 +29,14 @@ Rich notifications include resource data with these details:
 - All property values of the resource instance, encrypted as specified in the subscription, found in the **encryptedContent** property.
 - Specific properties of the resource, depending on the resource, or if requested using a `$select` parameter in the **resource** URL of the subscription.
 
+### Application configuration for notifications
+
+Before creating a subscription with resource data, configure application access for the service principal object representing the tenant-app pair by setting the **appRoleAssignmentRequired** property as follows::
+- [Recommended] Setting it to `false`. [Learn how to configure this property](./tutorial-applications-basics.md#restrict-sign-in-to-only-users-assigned-all-roles-on-the-app).
+- Alternatively, if the property must remain `true`, explicitly assign the *Microsoft Graph Change Tracking* service principal (**appId** is `0bf30f3b-4a52-48df-9a82-234910c4a086`) a resource app role supported by the Microsoft Graph resource. [Learn how to grant app roles to a service principal](./permissions-grant-via-msgraph.md?pivots=grant-application-permissions#step-2-grant-an-app-role-to-a-client-service-principal).
+
+If neither condition is met, the notification payload will contain a `null` [validation token](#validation-tokens-in-the-change-notification).
+
 ## Create a subscription
 
 To set up rich notifications, follow the same steps as [basic change notifications](/graph/api/subscription-post-subscriptions), but include these required properties:
@@ -104,6 +112,9 @@ Rich notifications include a **validationTokens** property, which contains an ar
 > Microsoft Graph doesn't send validation tokens for [change notifications delivered through Azure Event Hubs](change-notifications-delivery-event-hubs.md) because the subscription service doesn't need to validate the **notificationUrl** for Event Hubs.
 
 In the following example, the change notification contains two items for the same app, and for two different tenants, therefore the **validationTokens** array contains two tokens that need to be validated.
+
+> [!TIP]
+> A `null` value for **validationTokens** indicates Microsoft Graph couldn't encrypt the resource data due to incorrect app configuration. Review the [Application configuration for notifications](#application-configuration-for-notifications) section to fix this issue.
 
 ```json
 {

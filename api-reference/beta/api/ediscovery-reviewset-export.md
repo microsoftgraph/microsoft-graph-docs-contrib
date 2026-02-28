@@ -14,6 +14,8 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [ediscovery-deprecation](../includes/ediscovery-subnamespace-deprecation.md)]
+
 Initiate an export from a **reviewSet**.  For details, see [Export documents from a review set in Advanced eDiscovery](/microsoft-365/compliance/export-documents-from-review-set).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -60,7 +62,7 @@ The following table shows the parameters that can be used with this action.
 
 ## Response
 
-If the export is started successfully, this action returns a `202 Accepted` response code. The response will also contain a `Location` header, which contains the location of the [caseExportOperation](../resources/ediscovery-caseexportoperation.md) that was created to handle the export. Check the status of the export operation by making a GET request to the location, when successfully completed, the [status](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) will change to `succeeded`.
+If the export is started successfully, this action returns a `202 Accepted` response code. The response contains a `Location` header, which contains the location of the [caseExportOperation](../resources/ediscovery-caseexportoperation.md) that was created to handle the export. Check the status of the export operation by making a GET request to the location, when successfully completed, the [status](../resources/ediscovery-caseoperation.md#caseoperationstatus-values) changes to `succeeded`.
 
 ## Examples
 

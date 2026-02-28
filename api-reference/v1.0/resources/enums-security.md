@@ -5,7 +5,7 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.subservice: "security"
 author: "BenAlfasi"
-ms.date: 07/08/2024
+ms.date: 01/08/2026
 ---
 
 # Security enum values
@@ -184,6 +184,16 @@ Namespace: microsoft.graph.security
 |unknown|
 |unknownFutureValue|
 
+### mailboxConfigurationType values
+
+|Member|
+|:---|
+|mailForwardingRule|
+|owaSettings|
+|ewsSettings|
+|mailDelegation|
+|userInboxRule|
+|unknownFutureValue|
 ### logDataProvider values 
 
 |Member|
@@ -902,6 +912,14 @@ Namespace: microsoft.graph.security
 |  failed    |
 |  unknownFutureValue  |
 
+### recipientType values
+
+|Member|
+|:---|
+|user|
+|roleGroup|
+|unknownFutureValue|
+
 ### teamsMessageDeliveryAction values
 
 | Member |
@@ -957,6 +975,7 @@ Namespace: microsoft.graph.security
 |sPRuntimeAccessControl|
 |sPSharingNotifyUser|
 |sPSharingGenerateIncidentReport|
+|restrictWebGrounding|
 
 ### executionMode values
 
@@ -1061,6 +1080,15 @@ Namespace: microsoft.graph.security
 |markUserAsCompromised|
 |unknownFutureValue|
 
+### alertStatus values
+
+|Member|
+|:---|
+|unknown|
+|new|
+|inProgress|
+|resolved|
+|unknownFutureValue|
 
 ### identityProvider values
 
@@ -1069,6 +1097,36 @@ Namespace: microsoft.graph.security
 |entraID|
 |activeDirectory|
 |okta|
+|unknownFutureValue|
+
+### serviceSource values
+
+|Member|
+|:---|
+|unknown|
+|microsoftDefenderForEndpoint|
+|microsoftDefenderForIdentity|
+|microsoftDefenderForCloudApps|
+|microsoftDefenderForOffice365|
+|microsoft365Defender|
+|azureAdIdentityProtection|
+|microsoftAppGovernance|
+|dataLossPrevention|
+|unknownFutureValue|
+|microsoftDefenderForCloud|
+|microsoftSentinel|
+|microsoftThreatIntelligence|
+
+### serviceStatus values
+
+|Member|
+|:---|
+|stopped|
+|starting|
+|running|
+|disabled|
+|onboarding|
+|unknown|
 |unknownFutureValue|
 
 <!--

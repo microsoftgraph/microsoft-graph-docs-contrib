@@ -55,7 +55,7 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The ID of the setting definition|
-|valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|The data type of the value. The possible values are: `integer`, `boolean`, `string`, `complex`, `collection`, `abstractComplex`.|
+|valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|The data type of the value. Possible values are: `integer`, `boolean`, `string`, `complex`, `collection`, `abstractComplex`.|
 |displayName|String|The setting's display name|
 |isTopLevel|Boolean|If the setting is top level, it can be configured without the need to be wrapped in a collection or complex setting|
 |description|String|The setting's description|

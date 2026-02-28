@@ -186,6 +186,14 @@
       ],
       "childNodes": [
         {
+          "name": "Browse session",
+          "overview": "../../resources/browsesessionbase.md",
+          "resources": [
+            "oneDriveForBusinessBrowseSession",
+            "sharePointBrowseSession"
+          ]
+        },
+        {
           "name": "Protection policy",
           "resources": [
             "exchangeProtectionPolicy",
@@ -223,8 +231,10 @@
           "resources": [
             "granularMailBoxRestoreArtifact",
             "driveRestoreArtifact",
+            "granularDriveRestoreArtifact",
             "mailboxRestoreArtifact",
-            "siteRestoreArtifact"
+            "siteRestoreArtifact",
+            "granularSiteRestoreArtifact"
           ]
         },
         {
@@ -246,6 +256,7 @@
       ],
       "complexTypes": [
         "artifactQuery",
+        "browseQueryResponseItem",
         "notificationRecipients",
         "protectionPolicyArtifactCount",
         "restorePointSearchResponse",
@@ -261,6 +272,7 @@
         "Outlook",
         "Outlook calendar"
       ],
+      "overview": "../../resources/calendar-overview.md",
       "resources": [
         "calendar",
         "event",
@@ -288,22 +300,25 @@
           "resources": [
             "place",
             "building",
-            "desk",
             "floor",
-            "room",
-            "roomList",
             "section",
+            "room",
+            "desk",
             "workspace",
-            "checkInClaim"
+            "checkInClaim",
+            "placeOperation",
+            "roomList"
           ],
-          "complexTypes": [
-            "assignedPlaceMode",
-            "dropInPlaceMode",
+          "complexTypes": [            
             "mailboxDetails",
             "placeMode",
+            "assignedPlaceMode",
+            "dropInPlaceMode",
             "reservablePlaceMode",
+            "unavailablePlaceMode",
             "resourceLink",
-            "unavailablePlaceMode"
+            "placeExecutionResult",
+            "placeOperationProgress"
           ],
            "childNodes": [
             {
@@ -327,7 +342,18 @@
               ]
              }
            ]
-         }
+         },
+         {
+          "name": "Work hours and locations",
+          "resources": [
+            "workHoursAndLocationsSetting",
+            "workPlanOccurrence",
+            "workPlanRecurrence"
+          ],
+          "complexTypes": [
+            "timeOffDetails"
+          ]
+        }
       ]
     },
     {
@@ -374,7 +400,7 @@
       ],
       "childNodes": [
         {
-          "name": "eDiscovery (preview)",
+          "name": "eDiscovery (deprecated)",
           "overview": "../../resources/ediscovery-ediscoveryapioverview.md",
           "resources": [
             "microsoft.graph.ediscovery.case",
@@ -510,15 +536,23 @@
           "overview": "../../resources/cloud-licensing-api-overview.md",
           "keywords": [
             "Cloud licensing",
-            "Microsoft Cloud Licensing"
+            "Microsoft Cloud Licensing",
+            "licensing",
+            "license assignment",
+            "allotment"
           ],
           "resources": [
-            "microsoft.graph.cloudLicensing.usageRight"
+            "microsoft.graph.cloudLicensing.allotment",
+            "microsoft.graph.cloudLicensing.assignment",
+            "microsoft.graph.cloudLicensing.assignmentError",
+            "microsoft.graph.cloudLicensing.usageRight",          
+            "microsoft.graph.cloudLicensing.waitingMember"
           ],
           "complexTypes": [
             "microsoft.graph.cloudLicensing.groupCloudLicensing",
-            "microsoft.graph.cloudLicensing.userCloudLicensing",
-            "microsoft.graph.cloudLicensing.service"
+            "microsoft.graph.cloudLicensing.service",
+            "microsoft.graph.cloudLicensing.subscription",
+            "microsoft.graph.cloudLicensing.userCloudLicensing"
           ],
           "childNodes": []
         },
@@ -586,7 +620,7 @@
             "cloudPcForensicStorageAccount",
             "cloudPcFrontlineSharedDeviceDetail",
             "cloudPcHealthCheckItem",
-            "cloudPcLaunchDetail",            
+            "cloudPcLaunchDetail",
             "cloudPcLaunchInfo",
             "cloudPcLoginResult",
             "cloudPcManagementAssignmentTarget",
@@ -737,8 +771,13 @@
             "microsoft.graph.windowsUpdates.deployment",
             "microsoft.graph.windowsUpdates.deploymentAudience",
             "microsoft.graph.windowsUpdates.operationalInsightsConnection",
+            "microsoft.graph.windowsUpdates.policy",
+            "microsoft.graph.windowsUpdates.qualityUpdatePolicy",
+            "microsoft.graph.windowsUpdates.policyApproval",
             "microsoft.graph.windowsUpdates.product",
             "microsoft.graph.windowsUpdates.resourceConnection",
+            "microsoft.graph.windowsUpdates.ring",
+            "microsoft.graph.windowsUpdates.qualityUpdateRing",
             "microsoft.graph.windowsUpdates.updatableAsset",
             "microsoft.graph.windowsUpdates.updatableAssetGroup",
             "microsoft.graph.windowsUpdates.updatePolicy"
@@ -749,6 +788,8 @@
             "adminWindowsUpdates",
             "microsoft.graph.windowsUpdates.applicableContent",
             "microsoft.graph.windowsUpdates.applicableContentDeviceMatch",
+            "microsoft.graph.windowsUpdates.approvalRule",
+            "microsoft.graph.windowsUpdates.assignedGroup",
             "microsoft.graph.windowsUpdates.azureADDeviceRegistrationError",
             "microsoft.graph.windowsUpdates.buildVersionDetails",
             "microsoft.graph.windowsUpdates.catalogContent",
@@ -767,9 +808,12 @@
             "microsoft.graph.windowsUpdates.driverUpdateFilter",
             "microsoft.graph.windowsUpdates.durationDrivenRolloutSettings",
             "microsoft.graph.windowsUpdates.edition",
+            "microsoft.graph.windowsUpdates.excludedGroupAssignment",
             "microsoft.graph.windowsUpdates.expediteSettings",
             "microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
             "microsoft.graph.windowsUpdates.gradualRolloutSettings",
+            "microsoft.graph.windowsUpdates.groupAssignment",
+            "microsoft.graph.windowsUpdates.includedGroupAssignment",
             "microsoft.graph.windowsUpdates.itemBody",
             "microsoft.graph.windowsUpdates.knowledgeBaseArticle",
             "microsoft.graph.windowsUpdates.knownIssue",
@@ -777,10 +821,13 @@
             "microsoft.graph.windowsUpdates.monitoringRule",
             "microsoft.graph.windowsUpdates.monitoringSettings",
             "microsoft.graph.windowsUpdates.productRevision",
+            "microsoft.graph.windowsUpdates.qualityUpdateApprovalRule",
             "microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
             "microsoft.graph.windowsUpdates.qualityUpdateCveSeverityInformation",
             "microsoft.graph.windowsUpdates.qualityUpdateFilter",
             "microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
+            "microsoft.graph.windowsUpdates.recoveryApprovalRule",
+            "microsoft.graph.windowsUpdates.recoveryUpdateCatalogEntry",
             "microsoft.graph.windowsUpdates.remediationUpdateFilter",
             "microsoft.graph.windowsUpdates.safeguardProfile",
             "microsoft.graph.windowsUpdates.safeguardSettings",
@@ -1023,6 +1070,7 @@
         "microsoft.graph.externalConnectors.itemIdResolver",
         "microsoft.graph.externalConnectors.property",
         "microsoft.graph.externalConnectors.propertyRule",
+        "microsoft.graph.externalConnectors.principal",
         "publicError",
         "publicErrorDetail",
         "publicInnerError",
@@ -1355,7 +1403,7 @@
                 "customAccessPackageWorkflowExtension",
                 "controlConfiguration",
                 "insiderRiskyUserApproval",
-                "entraIdProtectionRiskyUserApproval"
+                "entraIdProtectionRiskyUserApproval",
                 "customDataProvidedResourceUploadSession"
               ],
               "complexTypes": [
@@ -1613,7 +1661,7 @@
           "name": "Identity and sign-in",
           "shouldSort": true,
           "resources": [
-            "appRoleAssignment",            
+            "appRoleAssignment",
             "dataPolicyOperation",
             "oAuth2PermissionGrant",
             "externalIdentitiesPolicy"
@@ -1625,6 +1673,14 @@
                 "certificateBasedAuthConfiguration",
                 "certificateBasedAuthPki",
                 "certificateAuthorityDetail"
+              ]
+            },
+            {
+              "name": "Fraud protection provider",
+              "resources": [
+                "fraudProtectionProvider",
+                "arkoseFraudProtectionProvider",
+                "humanSecurityFraudProtectionProvider"
               ]
             },
             {
@@ -1657,6 +1713,7 @@
                 "onEmailOtpSendListener",
                 "onFraudProtectionLoadStartListener",
                 "onInteractiveAuthFlowStartListener",
+                "onPasswordSubmitListener",
                 "onPhoneMethodLoadStartListener",
                 "onTokenIssuanceStartListener",
                 "onUserCreateStartListener"
@@ -1665,7 +1722,7 @@
             {
               "name": "Verified ID",
               "resources": [
-                "verifiedIdProfile"                
+                "verifiedIdProfile"
               ]
             },
             {
@@ -1787,6 +1844,7 @@
                 "onAttributeCollectionStartCustomExtension",
                 "onAttributeCollectionSubmitCustomExtension",
                 "onOtpSendCustomExtension",
+                "onPasswordSubmitCustomExtension",
                 "onTokenIssuanceStartCustomExtension"
               ]
             },
@@ -1808,14 +1866,13 @@
               "name": "Identity protection",
               "overview": "../../resources/identityprotection-overview.md",
               "resources": [
+                "agentRiskDetection",
                 "riskDetection",
+                "riskyAgent",
                 "riskyUser",
                 "riskyUserHistoryItem",
-                "servicePrincipalRiskDetection",
                 "riskyServicePrincipal",
-                "fraudProtectionProvider",
-                "arkoseFraudProtectionProvider",
-                "humanSecurityFraudProtectionProvider"
+                "servicePrincipalRiskDetection"
               ]
             },
             {
@@ -2138,7 +2195,8 @@
               "resources": [
                 "microsoft.graph.networkaccess.crossTenantAccessSettings",
                 "microsoft.graph.networkaccess.conditionalAccessSettings",
-                "microsoft.graph.networkaccess.forwardingOptions"
+                "microsoft.graph.networkaccess.forwardingOptions",
+                "microsoft.graph.networkaccess.customBlockPage"
               ]
             },
             {
@@ -2345,7 +2403,7 @@
         "mailFolderOperation",
         "mailSearchFolder",
         "messageRule",
-        "userConfiguration"
+        "exchangeMessageTrace"
       ],
       "childNodes": [
         {
@@ -2826,6 +2884,16 @@
           ]
         },
         {
+          "name": "Cloud zones or scopes (preview)",
+          "resources": [
+            "microsoft.graph.security.zone",
+            "microsoft.graph.security.environment"
+          ],
+          "complexTypes": [
+            "microsoft.graph.security.auditInfo"
+          ]
+        },
+        {
           "name": "Data security and compliance",
           "resources": [
             "contentActivity",
@@ -2908,6 +2976,7 @@
           "complexTypes": [
             "microsoft.graph.security.ediscoveryAddToReviewSetOperation",
             "microsoft.graph.security.ediscoveryEstimateOperation",
+            "microsoft.graph.security.ediscoveryPurgeDataOperation",
             "microsoft.graph.security.reportFileMetadata"
           ]
         },
@@ -3256,10 +3325,9 @@
       ],
       "childNodes": [
         {
-          "name": "Administration (preview)",
+          "name": "Administration",
           "resources": [
             "microsoft.graph.teamsAdministration.numberAssignment",
-            "microsoft.graph.teamsAdministration.teamsUserConfiguration",
             "microsoft.graph.teamsAdministration.telephoneNumberLongRunningOperation",
             "microsoft.graph.teamsAdministration.telephoneNumberManagementRoot",
             "microsoft.graph.teamsAdministration.teamsPolicyAssignment",
@@ -3555,6 +3623,31 @@
       ]
     },
     {
+      "name": "Tenant administration (preview)",
+      "childNodes": [
+        {
+          "name": "Configuration management",
+          "overview": "../../resources/unified-tenant-configuration-management-api-overview.md",
+          "shouldSort": true,
+          "resources": [
+            "configurationBaseline",
+            "configurationDrift",
+            "configurationMonitor",
+            "configurationMonitoringResult",
+            "configurationSnapshotJob"
+          ],
+          "complexTypes": [
+            "baselineParameter",
+            "baselineResource",
+            "clientCredentials",
+            "driftedProperty",
+            "errorDetail",
+            "openComplexDictionaryType"
+          ]
+        }
+      ]
+    },
+    {
       "name": "To-do tasks",
       "overview": "../../resources/todo-overview.md",
       "keywords": [
@@ -3678,4 +3771,5 @@
     }
   ]
 }
+
 

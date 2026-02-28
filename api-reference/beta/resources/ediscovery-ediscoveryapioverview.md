@@ -24,8 +24,7 @@ The Microsoft Graph APIs for eDiscovery enable organizations to automate repetit
 
 The eDiscovery API is defined in the OData subnamespace, microsoft.graph.ediscovery. The API includes the following key entities.
 
-> [!CAUTION]
-> The eDiscovery APIs in eDiscovery subnamespace are deprecated. Please use the new [eDiscovery APIs under security](security-api-overview.md#ediscovery).
+[!INCLUDE [ediscovery-deprecation](../includes/ediscovery-subnamespace-deprecation.md)]
 
 | Name | Type       | Use case |
 |:-|:-|:-|

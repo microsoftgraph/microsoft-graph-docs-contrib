@@ -37,8 +37,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ``` http
 POST /me/presence/clearLocation
-POST /users/{usersId}/presence/clearLocation
-POST /communications/presences/{presenceId}/clearLocation
 ```
 
 ## Request headers
@@ -53,7 +51,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code.
+If successful, this action returns a `200 OK` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -78,6 +76,6 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
 ```
 

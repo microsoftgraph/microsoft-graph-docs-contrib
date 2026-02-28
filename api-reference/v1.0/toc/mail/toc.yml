@@ -170,6 +170,14 @@ items:
     href: ../../api/messagerule-update.md
   - name: Delete rule
     href: ../../api/messagerule-delete.md
+- name: Message trace
+  items:
+  - name: Message trace
+    href: ../../resources/exchangemessagetrace.md
+  - name: List message traces
+    href: ../../api/messagetracingroot-list-messagetraces.md
+  - name: Get details by recipient
+    href: ../../api/exchangemessagetrace-getdetailsbyrecipient.md
 - name: Focused Inbox
   items:
   - name: Overview

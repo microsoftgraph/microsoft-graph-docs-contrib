@@ -12,8 +12,6 @@ ms.date: 09/13/2024
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents an identifier that relates a user to the working time schedule triggers.
 
 ## Properties

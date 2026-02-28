@@ -223,24 +223,54 @@
         },
         {
           "name": "Places",
+          "overview": "../../resources/places-api-overview.md",
           "resources": [
             "place",
             "building",
-            "desk",
             "floor",
-            "room",
-            "roomList",
             "section",
+            "room",
+            "desk",
             "workspace",
-            "checkInClaim"
+            "checkInClaim",
+            "placeOperation",
+            "roomList"
           ],
           "complexTypes": [
-            "assignedPlaceMode",
-            "dropInPlaceMode",
             "mailboxDetails",
             "placeMode",
+            "assignedPlaceMode",
+            "dropInPlaceMode",
             "reservablePlaceMode",
-            "resourceLink"
+            "resourceLink",
+            "unavailablePlaceMode"
+          ],
+          "childNodes": [
+            {
+              "name": "Maps",
+              "resources": [
+                "buildingMap",
+                "fixtureMap",
+                "footprintMap",
+                "levelMap",
+                "sectionMap",
+                "unitMap"
+              ],
+              "complexTypes": [
+                "importBuildingMapSetting"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Work hours and locations",
+          "resources": [
+            "workHoursAndLocationsSetting",
+            "workPlanOccurrence",
+            "workPlanRecurrence"
+          ],
+          "complexTypes": [
+            "timeOffDetails"
           ]
         }
       ]
@@ -394,6 +424,7 @@
             "cloudPcDeviceImage",
             "cloudPcGalleryImage",
             "cloudPcProvisioningPolicy",
+            "cloudPcReport",
             "cloudPcUserSetting"
           ],
           "complexTypes": [
@@ -640,6 +671,7 @@
         "microsoft.graph.externalConnectors.properties",
         "microsoft.graph.externalConnectors.property",
         "microsoft.graph.externalConnectors.propertyRule",
+        "microsoft.graph.externalConnectors.principal",
         "publicError",
         "publicErrorDetail",
         "publicInnerError",
@@ -665,10 +697,17 @@
         "driveItemVersion",
         "bundle",
         "fileStorageContainer",
+        "fileStorageContainerType",
+        "fileStorageContainerTypeAppPermissionGrant",
+        "fileStorageContainerTypeRegistration",
         "permission",
         "recycleBin",
         "recycleBinItem",
         "sharedDriveItem"
+      ],
+      "complexTypes": [
+        "fileStorageContainerTypeRegistrationSettings",
+        "fileStorageContainerTypeSettings"
       ],
       "childNodes": [
         {
@@ -1048,6 +1087,14 @@
               ]
             },
             {
+              "name": "Fraud protection provider",
+              "resources": [
+                "fraudProtectionProvider",
+                "arkoseFraudProtectionProvider",
+                "humanSecurityFraudProtectionProvider"
+              ]
+            },
+            {
               "name": "Web application firewall",
               "resources": [
                 "webApplicationFirewallProvider",
@@ -1073,10 +1120,12 @@
             },
             {
               "name": "Authentication methods",
+              "shouldSort": true,              
               "overview": "../../resources/authenticationmethods-overview.md",
               "resources": [
                 "authenticationMethod",
                 "emailAuthenticationMethod",
+                "externalAuthenticationMethod",
                 "fido2AuthenticationMethod",
                 "microsoftAuthenticatorAuthenticationMethod",
                 "passwordAuthenticationMethod",
@@ -1085,6 +1134,16 @@
                 "softwareOathAuthenticationMethod",
                 "temporaryAccessPassAuthenticationMethod",
                 "windowsHelloForBusinessAuthenticationMethod"
+              ],
+              "childNodes": [
+                {
+                  "name": "QR code authentication",
+                  "resources": [
+                    "qrCodePinAuthenticationMethod",
+                    "qrCode",
+                    "qrPin"
+                  ]
+                }
               ]
             },
             {
@@ -1093,8 +1152,10 @@
               "resources": [
                 "authenticationMethodsPolicy",
                 "emailAuthenticationMethodConfiguration",
+                "externalAuthenticationMethodConfiguration",
                 "fido2AuthenticationMethodConfiguration",
                 "microsoftAuthenticatorAuthenticationMethodConfiguration",
+                "qrCodePinAuthenticationMethodConfiguration",
                 "smsAuthenticationMethodConfiguration",
                 "temporaryAccessPassAuthenticationMethodConfiguration",
                 "softwareOathAuthenticationMethodConfiguration",
@@ -1160,10 +1221,7 @@
                 "riskyUser",
                 "riskyUserHistoryItem",
                 "servicePrincipalRiskDetection",
-                "riskyServicePrincipal",
-                "fraudProtectionProvider",
-                "arkoseFraudProtectionProvider",
-                "humanSecurityFraudProtectionProvider"
+                "riskyServicePrincipal"
               ]
             },
             {
@@ -1309,7 +1367,8 @@
         "outlookCategory",
         "mailFolder",
         "mailSearchFolder",
-        "messageRule"
+        "messageRule",
+        "exchangeMessageTrace"
       ],
       "childNodes": [
         {
@@ -1478,18 +1537,6 @@
       ]
         },
         {
-          "name": "Audit log query",
-          "overview": "../../resources/security-auditlogquery.md",
-          "resources": [
-            "microsoft.graph.security.auditLogQuery",
-            "microsoft.graph.security.auditLogRecord"
-          ],
-          "complexTypes": [
-            "microsoft.graph.security.auditData",
-            "microsoft.graph.security.defaultAuditData"
-          ]
-        },
-        {
           "name": "Partner billing reports",
           "overview": "../../resources/partners-billing-api-overview.md",
           "resources": [
@@ -1603,6 +1650,18 @@
           ]
         },
         {
+          "name": "Audit log query",
+          "overview": "../../resources/security-auditlogquery.md",
+          "resources": [
+            "microsoft.graph.security.auditLogQuery",
+            "microsoft.graph.security.auditLogRecord"
+          ],
+          "complexTypes": [
+            "microsoft.graph.security.auditData",
+            "microsoft.graph.security.defaultAuditData"
+          ]
+        },
+        {
           "name": "Data security and compliance",
           "resources": [
             "contentActivity",
@@ -1662,9 +1721,11 @@
             "microsoft.graph.security.ediscoveryCustodian",
             "microsoft.graph.security.ediscoveryNoncustodialDataSource",
             "microsoft.graph.security.ediscoveryHoldPolicy",
+            "microsoft.graph.security.ediscoveryPurgeDataOperation",
             "microsoft.graph.security.ediscoverySearch",
             "microsoft.graph.security.ediscoveryReviewSet",
-            "microsoft.graph.security.ediscoveryReviewTag"
+            "microsoft.graph.security.ediscoveryReviewTag",
+            "microsoft.graph.security.ediscoveryCaseMember"
           ],
           "childNodes": [
             {
@@ -1931,6 +1992,24 @@
       ],
       "childNodes": [
         {
+          "name": "Administration",
+          "resources": [
+            "microsoft.graph.teamsAdministration.teamsPolicyAssignment",
+            "microsoft.graph.teamsAdministration.teamsPolicyUserAssignment",
+            "microsoft.graph.teamsAdministration.teamsUserConfiguration",
+            "microsoft.graph.teamsAdministration.numberAssignment",
+            "microsoft.graph.teamsAdministration.telephoneNumberLongRunningOperation",
+            "microsoft.graph.teamsAdministration.telephoneNumberManagementRoot"
+          ],
+          "complexTypes": [
+            "microsoft.graph.teamsAdministration.assignedTelephoneNumber",
+            "microsoft.graph.teamsAdministration.effectivePolicyAssignment",
+            "microsoft.graph.teamsAdministration.policyAssignment",
+            "microsoft.graph.teamsAdministration.policyIdentifierDetail",
+            "microsoft.graph.teamsAdministration.telephoneNumberLongRunningOperationDetails"
+          ]
+        },
+        {
           "name": "Apps",
           "resources": [
             "teamsApp",
@@ -1948,9 +2027,18 @@
             "presence"
           ],
           "complexTypes": [
-            "outOfOfficeSettings"
+            "onlineMeetingSensitivityLabelAssignment",
+            "outOfOfficeSettings",
+            "outOfOfficeSettings",
+            "userWorkLocation"
           ],
           "childNodes": [
+            {
+              "name": "Ad hoc call",
+              "resources": [
+                "adhocCall"
+              ]
+            },            
             {
               "name": "Calls",
               "resources": [

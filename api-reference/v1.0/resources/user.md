@@ -14,7 +14,7 @@ ms.custom: sfi-ga-blocked
 
 Namespace: microsoft.graph
 
-Represents a Microsoft Entra user account. This resource is an open type that allows other properties to be passed in. Inherits from [directoryObject](directoryobject.md). Only [a subset of user properties are returned by default in v1.0](../resources/users.md#common-properties). To retrieve other properties, you must specify them in a `$select` query option.
+Represents a Microsoft Entra user account. This resource is an open type that allows additional properties beyond those documented here. Inherits from [directoryObject](directoryobject.md). Only [a subset of user properties are returned by default in v1.0](../resources/users.md#common-properties). To retrieve other properties, you must specify them in a `$select` query option.
 
 This resource supports:
 
@@ -85,11 +85,11 @@ This resource supports:
 | [List member of](../api/user-list-memberof.md) | [directoryObject](directoryobject.md) collection | Get the groups, directory roles, and administrative units that the user is a direct member of. This operation isn't transitive. |
 | [List transitive member of](../api/user-list-transitivememberof.md) | [directoryObject](directoryobject.md) collection | Get the groups, directory roles, and administrative units that the user is a member of through either direct or transitive membership. |
 | **Insights** |  |  |
-| [List shared](../api/insights-list-shared.md) | [sharedInsight](insights-shared.md) collection | Get a list of shared files. |
 | [List trending](../api/insights-list-trending.md) | [trending](insights-trending.md) collection | Get a list of trending files. |
-| [List used](../api/insights-list-used.md) | [usedInsight](insights-used.md) collection | Get a list of used files. |
 | [Get content discovery settings](../api/usersettings-get.md) | [userSettings](usersettings.md) | Get users's content discovery settings. |
 | [Update content discovery settings](../api/usersettings-update.md) | None | Update users's content discovery settings. |
+| [List shared (deprecated)](../api/insights-list-shared.md) | [sharedInsight](insights-shared.md) collection | Get a list of shared files. This API is deprecated and will stop returning data after November 2026. |
+| [List used (deprecated)](../api/insights-list-used.md) | [usedInsight](insights-used.md) collection | Get a list of used files. This API is deprecated and will stop returning data after November 2026. |
 | **License management** |||
 | [Assign license](../api/user-assignlicense.md) | [user](user.md) | Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription. |
 | [List license details](../api/user-list-licensedetails.md) | [licenseDetails](licensedetails.md) collection | Get a licenseDetails object collection. |
@@ -303,6 +303,7 @@ For example: Cameron is the administrator of a directory for an elementary schoo
 | Relationship | Type    |Description|
 |:---------------|:--------|:----------|
 |activities|[userActivity](projectrome-activity.md) collection|The user's activities across devices. Read-only. Nullable.|
+|adhocCalls|[adhocCall](../resources/adhoccall.md) collection|Ad hoc calls associated with the user. Read-only. Nullable.|
 |agreementAcceptances|[agreementAcceptance](agreementacceptance.md) collection| The user's terms of use acceptance statuses. Read-only. Nullable.|
 |appRoleAssignments|[appRoleAssignment](approleassignment.md) collection|Represents the app roles a user is granted for an application. Supports `$expand`. |
 |authentication|[authentication](../resources/authentication.md)| The authentication methods that are supported for the user.|

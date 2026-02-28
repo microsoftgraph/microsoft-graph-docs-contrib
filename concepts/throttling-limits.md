@@ -58,6 +58,10 @@ The rest of this article provides an overview of the service-specific throttling
 
 [!INCLUDE [Education rostering APIS throttling documentation](../includes/throttling-education-rostering-apis.md)]
 
+## Exchange message trace service limits
+  
+[!INCLUDE [Exchange message trace throttling documentation](../includes/throttling-exchange-messagetrace.md)]
+
 ## Files and lists service limits
 
 [!INCLUDE [Files and lists throttling documentation](../includes/throttling-files-and-lists.md)]
@@ -185,6 +189,10 @@ The rest of this article provides an overview of the service-specific throttling
 Outlook service limits apply to the public cloud and [national cloud deployments](./deployments.md).
 
 [!INCLUDE [Outlook throttling documentation](../includes/throttling-outlook.md)]
+
+## Places service limits
+
+[!INCLUDE [Places throttling documentation](../includes/throttling-places.md)]
 
 ## Project Rome service limits
 

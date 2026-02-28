@@ -55,7 +55,7 @@ The following table shows the properties that can be supplied when you update th
 
 ## Response
 
-If successful, this method returns a `204 Accepted` response code and a [connectedOrganization](../resources/connectedorganization.md) object in the response body.
+If successful, this method returns a `202 Accepted` response code and a [connectedOrganization](../resources/connectedorganization.md) object in the response body.
 
 ## Examples
 
@@ -117,7 +117,7 @@ Content-Type: application/json
 }
 -->
 ``` http
-HTTP/1.1 204 Accepted
+HTTP/1.1 202 Accepted
 Content-type: application/json
 
 {

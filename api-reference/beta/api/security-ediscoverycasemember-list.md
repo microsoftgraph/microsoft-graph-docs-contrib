@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 
 Get a list of [ediscoveryCaseMember](../resources/security-ediscoverycasemember.md) objects for an [ediscoveryCase](../resources/security-ediscoverycase.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -24,6 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "security_ediscoverycasemember_list" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoverycasemember-list-permissions.md)]
+[!INCLUDE [rbac-ediscovery-read](../includes/rbac-for-apis/rbac-ediscovery-apis-read.md)]
 
 ## HTTP request
 

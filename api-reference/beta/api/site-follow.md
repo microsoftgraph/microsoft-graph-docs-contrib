@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /users/{user-id | userPrincipalName}/followedSites/add
+POST /users/{id | userPrincipalName}/followedSites/add
 ```
 
 ## Request body
@@ -51,12 +51,10 @@ Here's and example that shows how to follow multiple sites.
 
 ### Request
 
-
-# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "follow-site", "scopes": "sites.readwrite.all" } -->
 
 ```http
-POST https://graph.microsoft.com/beta/users/{user-id}/followedSites/add
+POST https://graph.microsoft.com/beta/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/followedSites/add
 Content-Type: application/json
 
 {
@@ -71,36 +69,6 @@ Content-Type: application/json
     ] 
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/follow-site-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/follow-site-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/follow-site-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/follow-site-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/follow-site-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/follow-site-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/follow-site-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 

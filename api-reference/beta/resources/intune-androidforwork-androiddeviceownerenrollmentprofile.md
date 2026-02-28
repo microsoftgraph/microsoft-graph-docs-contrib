@@ -40,8 +40,8 @@ Enrollment Profile used to enroll Android Enterprise devices using Google's Clou
 |id|String|Unique GUID for the enrollment profile.|
 |displayName|String|Display name for the enrollment profile.|
 |description|String|Description for the enrollment profile.|
-|enrollmentMode|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|The enrollment mode of devices that use this enrollment profile. The possible values are: `corporateOwnedDedicatedDevice`, `corporateOwnedFullyManaged`, `corporateOwnedWorkProfile`, `corporateOwnedAOSPUserlessDevice`, `corporateOwnedAOSPUserAssociatedDevice`.|
-|enrollmentTokenType|[androidDeviceOwnerEnrollmentTokenType](../resources/intune-androidforwork-androiddeviceownerenrollmenttokentype.md)|The enrollment token type for an enrollment profile. The possible values are: `default`, `corporateOwnedDedicatedDeviceWithAzureADSharedMode`, `deviceStaging`.|
+|enrollmentMode|[androidDeviceOwnerEnrollmentMode](../resources/intune-androidforwork-androiddeviceownerenrollmentmode.md)|The enrollment mode of devices that use this enrollment profile. Possible values are: `corporateOwnedDedicatedDevice`, `corporateOwnedFullyManaged`, `corporateOwnedWorkProfile`, `corporateOwnedAOSPUserlessDevice`, `corporateOwnedAOSPUserAssociatedDevice`.|
+|enrollmentTokenType|[androidDeviceOwnerEnrollmentTokenType](../resources/intune-androidforwork-androiddeviceownerenrollmenttokentype.md)|The enrollment token type for an enrollment profile. Possible values are: `default`, `corporateOwnedDedicatedDeviceWithAzureADSharedMode`, `deviceStaging`.|
 |createdDateTime|DateTimeOffset|Date time the enrollment profile was created.|
 |lastModifiedDateTime|DateTimeOffset|Date time the enrollment profile was last modified.|
 |tokenValue|String|Value of the most recently created token for this enrollment profile.|
@@ -55,7 +55,7 @@ Enrollment Profile used to enroll Android Enterprise devices using Google's Clou
 |configureWifi|Boolean|Boolean that indicates that the Wi-Fi network should be configured during device provisioning. When set to TRUE, device provisioning will use Wi-Fi related properties to automatically connect to Wi-Fi networks. When set to FALSE or undefined, other Wi-Fi related properties will be ignored. Default value is TRUE. Returned by default.|
 |wifiSsid|String|String that contains the wi-fi login ssid|
 |wifiPassword|String|String that contains the wi-fi login password|
-|wifiSecurityType|[aospWifiSecurityType](../resources/intune-androidforwork-aospwifisecuritytype.md)|String that contains the wi-fi security type. The possible values are: `none`, `wpa`, `wep`.|
+|wifiSecurityType|[aospWifiSecurityType](../resources/intune-androidforwork-aospwifisecuritytype.md)|String that contains the wi-fi security type. Possible values are: `none`, `wpa`, `wep`.|
 |wifiHidden|Boolean|Boolean that indicates if hidden wifi networks are enabled|
 |isTeamsDeviceProfile|Boolean|Boolean indicating if this profile is an Android AOSP for Teams device profile.|
 |deviceNameTemplate|String|Indicates the device name template used for the enrolled Android devices. The maximum length allowed for this property is 63 characters. The template expression contains normal text and tokens, including the serial number of the device, user name, device type, upn prefix, or a randomly generated number. Supported Tokens for device name templates are: (for device naming template expression): {{SERIAL}}, {{SERIALLAST4DIGITS}}, {{ENROLLMENTDATETIME}}, {{USERNAME}}, {{DEVICETYPE}}, {{UPNPREFIX}}, {{rand:x}}. Supports: $select, $top, $skip. $Search, $orderBy and $filter are not supported.|

@@ -14,6 +14,8 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [ediscovery-deprecation](../includes/ediscovery-subnamespace-deprecation.md)]
+
 Represents an operation to add a [sourceCollection](../resources/ediscovery-sourcecollection.md) to a [reviewSet](../resources/ediscovery-reviewset.md).
 
 Inherits from [caseOperation](../resources/ediscovery-caseoperation.md).

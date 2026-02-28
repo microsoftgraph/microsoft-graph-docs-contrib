@@ -12,8 +12,6 @@ ms.date: 09/13/2024
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Read the properties and relationships of a [workingTimeSchedule](../resources/workingtimeschedule.md) object.
 
 ## Permissions
@@ -66,7 +64,7 @@ The following example shows a request.
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/users/ccdf8279-8a3f-4c10-af1a-4a7f46b1489f/solutions/schedule
+GET https://graph.microsoft.com/v1.0/users/ccdf8279-8a3f-4c10-af1a-4a7f46b1489f/solutions/schedule
 ```
 
 

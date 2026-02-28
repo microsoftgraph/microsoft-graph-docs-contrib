@@ -315,22 +315,48 @@
       "SubArea": ""
     },
     {
+     "ChangeList": [
+        {
+          "Id": "b23aaa12-924b-4793-b903-b74ce55fcd4c",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "serviceStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **serviceStatus** enumeration type.",
+          "Target": "serviceStatus"
+        },
+        {
+          "Id": "b23aaa12-924b-4793-b903-b74ce55fcd4c",
+          "ApiChange": "Property",
+          "ChangedApiName": "serviceStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **serviceStatus** property to the [sensor](https://learn.microsoft.com/en-us/graph/api/resources/security-sensor?view=graph-rest-1.0) resource.",
+          "Target": "sensor"
+        }
+      ],
+      "Id": "b23aaa12-924b-4793-b903-b74ce55fcd4c",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-01-13T14:31:31.3713863Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
       "ChangeList": [
         {
-          "Id": "fab1a85b-77e8-409f-96ad-6add671f6c61",
+          "Id": "b94d7abd-235d-4f28-b929-fb4e73102610",
           "ApiChange": "Property",
           "ChangedApiName": "domainName",
           "ChangeType": "Addition",
-          "Description": "Added the **domainName** property to the [sensorCandidate](https://learn.microsoft.com/en-us/graph/api/resources/security-sensorCandidate?view=graph-rest-beta) resource.",
+          "Description": "Added the **domainName** property to the [sensorCandidate](https://learn.microsoft.com/en-us/graph/api/resources/security-sensorCandidate?view=graph-rest-1.0) resource.",
           "Target": "sensorCandidate"
         }
       ],
-      "Id": "fab1a85b-77e8-409f-96ad-6add671f6c61",
+      "Id": "b94d7abd-235d-4f28-b929-fb4e73102610",
       "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2025-11-17T15:49:25.5275052Z",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-01-13T12:59:27.0649263Z",
       "WorkloadArea": "Security",
       "SubArea": ""
-    }    
+      }
   ]
 }

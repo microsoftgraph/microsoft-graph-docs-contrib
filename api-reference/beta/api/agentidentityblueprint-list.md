@@ -4,7 +4,7 @@ description: "Get a list of the agentIdentityBlueprint objects and their propert
 author: "zallison22"
 ms.date: 11/10/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-applications"
+ms.subservice: "entra-agent-id"
 doc_type: apiPageType
 ---
 
@@ -164,6 +164,7 @@ Content-Type: application/json
       },
       "keyCredentials": [],
       "passwordCredentials": [],
+      "requiredResourceAccess": [],
       "verifiedPublisher": {
           "displayName": null,
           "verifiedPublisherId": null,

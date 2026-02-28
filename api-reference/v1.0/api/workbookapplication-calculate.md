@@ -44,13 +44,13 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code. It doesn't return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 Here is an example of how to call this API.
-### Request
-The following example shows a request.
 
+### Request
+The following example forces a full calculation of the data and rebuilds the dependencies.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -62,7 +62,7 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/application/c
 Content-type: application/json
 
 {
-  "calculationType": "calculationType-value"
+  "calculationType": "FullRebuild"
 }
 ```
 
@@ -100,7 +100,7 @@ The following example shows the response.
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

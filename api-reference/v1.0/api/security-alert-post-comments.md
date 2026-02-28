@@ -116,7 +116,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/alerts_v2('da637865765418431569_-773071023')/comments",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#security/alerts_v2('da637865765418431569_-773071023')/comments",
     "value": [
         {
             "comment": "test",

@@ -40,6 +40,7 @@ None.
 |securityactions|[securityAction](../resources/securityaction.md) collection|Actions that respond to alerts to block malicious activities.|
 |tiindicators|[tiIndicator](../resources/tiindicator.md) collection|Threat indicators sent to Microsoft that identify malicious activities.|
 |threatSubmission|[security.threatSubmission](../resources/security-threatsubmission.md)|A threat submission sent to Microsoft; for example, a suspicious email threat, URL threat, or file threat.|
+|zones|[microsoft.graph.security.zone](../resources/security-zone.md) collection|A collection of cloud zones in Microsoft Defender for Cloud that group and manage cloud environments across multiple cloud providers.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

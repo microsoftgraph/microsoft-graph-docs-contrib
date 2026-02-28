@@ -22,10 +22,10 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from most to least privileged)|
 |:---|:---|
-|Delegated (work or school account)||
+|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
 | &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application||
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 | &nbsp; &nbsp; **Device management** | DeviceManagementManagedDevices.ReadWrite.All|
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]

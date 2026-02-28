@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the identity of a group-connected site. This resource is an open type.
+Represents the identity of a group-connected site. This resource is an open type that allows additional properties beyond those documented here.
 
 Inherits from [identity](../resources/identity.md).
 

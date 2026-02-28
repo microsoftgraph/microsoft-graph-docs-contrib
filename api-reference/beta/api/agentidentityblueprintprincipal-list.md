@@ -4,7 +4,7 @@ description: "Retrieve a list of agentIdentityBlueprintPrincipal objects."
 author: "zallison22"
 ms.date: 10/27/2025
 ms.localizationpriority: medium
-ms.subservice: "entra-applications"
+ms.subservice: "entra-agent-id"
 doc_type: apiPageType
 ---
 
@@ -119,10 +119,10 @@ Content-type: application/json
       "id": "f7c938db-8c3d-4d04-937b-456c3242ed95",
       "appId": "00001111-aaaa-2222-bbbb-3333cccc4444",
       "createdDateTime": "2019-09-17T19:10:35.2742618Z",
-      "createdByAppId": "1cc9739b-9dcd-4d1e-89ed-783005d571b8",
+      "createdByAppId": "00000003-0000-0000-c000-000000000000",
       "accountEnabled": true,
       "appDisplayName": "My Sample App",
-      "appOwnerOrganizationId": "65415bb1-9267-4313-bbf5-ae259732ee12",
+      "appOwnerOrganizationId": "aaaabbbb-0000-cccc-1111-dddd2222eeee",
       "appRoleAssignmentRequired": false,
       "appRoles": [],
       "disabledByMicrosoftStatus": null,

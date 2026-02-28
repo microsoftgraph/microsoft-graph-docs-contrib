@@ -239,7 +239,64 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Create a channel in migration mode
+### Example 3: Create a channel with chat layout type
+
+This example shows how to create a channel with the chat layout type, which provides a chat-like threading experience similar to group chats.
+
+#### Request
+
+The following example shows a request to create a channel with `layoutType` set to `chat`.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_channel_with_chat_layout",
+  "sampleKeys": ["57fb72d0-d811-46f4-8947-305e6072eaa5"]
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
+Content-type: application/json
+
+{
+  "displayName": "Project Collaboration",
+  "description": "Discussion space for project team collaboration",
+  "membershipType": "standard",
+  "layoutType": "chat"
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.channel"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels/$entity",
+  "id": "19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2",
+  "createdDateTime": "2024-12-08T12:30:45.123Z",
+  "displayName": "Project Collaboration",
+  "description": "Discussion space for project team collaboration",
+  "membershipType": "standard",
+  "layoutType": "chat",
+  "isFavoriteByDefault": false,
+  "email": "",
+  "webUrl": "https://teams.microsoft.com/l/channel/19%3A4b6bed8d24574f6a9e436813cb2617d8%40thread.tacv2/Project%20Collaboration?groupId=57fb72d0-d811-46f4-8947-305e6072eaa5&tenantId=0afeb5d5-a667-4716-8fc7-733024389e91",
+  "tenantId": "0afeb5d5-a667-4716-8fc7-733024389e91"
+}
+```
+
+### Example 4: Create a channel in migration mode
 
 #### Request
 
@@ -323,7 +380,7 @@ Location: /teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24
 }
 ```
 
-### Example 4: Create standard channel with moderation settings
+### Example 5: Create standard channel with moderation settings
 
 #### Request
 
@@ -408,7 +465,7 @@ Content-type: application/json
 }
 ```
 
-### Example 5: Create private channel on behalf of user using user principal name
+### Example 6: Create private channel on behalf of user using user principal name
 
 #### Request
 
@@ -501,7 +558,7 @@ Content-Length: 0
 ```
 
 
-### Example 6: Create a shared channel on behalf of a user
+### Example 7: Create a shared channel on behalf of a user
 
 #### Request
 
@@ -579,7 +636,7 @@ Content-Location: /teams/7640023f-fe43-4cc7-9bd3-84a9efe4acd6/operations/359d75f
 Content-Length: 0
 ```
 
-### Example 7: Create a shared channel shared with host team
+### Example 8: Create a shared channel shared with host team
 
 #### Request
 

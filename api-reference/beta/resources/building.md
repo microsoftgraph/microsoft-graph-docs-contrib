@@ -44,6 +44,7 @@ For more supported methods, see [place](./place.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+|children|[place](../resources/place.md) collection|A collection of children places that is only used in the [Upsert places](../api/place-patch-places.md) API. The children of a building should be of type [floor](../resources/floor.md). Inherited from [place](../resources/place.md).|
 |map|[buildingMap](../resources/buildingmap.md)|Map file associated with a building in Places. This object is the IMDF-format representation of building.geojson.|
 
 ## JSON representation

@@ -32,7 +32,7 @@ The definition value entity stores the value for a single group policy definitio
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|The date and time the object was created.|
 |enabled|Boolean|Enables or disables the associated group policy definition.|
-|configurationType|[groupPolicyConfigurationType](../resources/intune-grouppolicy-grouppolicyconfigurationtype.md)|Specifies how the value should be configured. This can be either as a Policy or as a Preference. The possible values are: `policy`, `preference`.|
+|configurationType|[groupPolicyConfigurationType](../resources/intune-grouppolicy-grouppolicyconfigurationtype.md)|Specifies how the value should be configured. This can be either as a Policy or as a Preference. Possible values are: `policy`, `preference`.|
 |id|String|Key of the entity.|
 |lastModifiedDateTime|DateTimeOffset|The date and time the entity was last modified.|
 

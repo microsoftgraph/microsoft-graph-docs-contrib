@@ -21,8 +21,8 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|movieRating|[ratingJapanMoviesType](../resources/intune-deviceconfig-ratingjapanmoviestype.md)|Movies rating selected for Japan. The possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove15`, `agesAbove18`.|
-|tvRating|[ratingJapanTelevisionType](../resources/intune-deviceconfig-ratingjapantelevisiontype.md)|TV rating selected for Japan. The possible values are: `allAllowed`, `allBlocked`, `explicitAllowed`.|
+|movieRating|[ratingJapanMoviesType](../resources/intune-deviceconfig-ratingjapanmoviestype.md)|Movies rating selected for Japan. Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `agesAbove15`, `agesAbove18`.|
+|tvRating|[ratingJapanTelevisionType](../resources/intune-deviceconfig-ratingjapantelevisiontype.md)|TV rating selected for Japan. Possible values are: `allAllowed`, `allBlocked`, `explicitAllowed`.|
 
 ## Relationships
 None

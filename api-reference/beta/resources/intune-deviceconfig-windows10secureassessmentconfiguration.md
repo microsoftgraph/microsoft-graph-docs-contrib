@@ -46,7 +46,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |launchUri|String|Url link to an assessment that's automatically loaded when the secure assessment browser is launched. It has to be a valid Url (http\[s\]://msdn.microsoft.com/).|
 |configurationAccount|String|The account used to configure the Windows device for taking the test. The user can be a domain account (domain\user), an AAD account (username@tenant.com) or a local account (username).|
-|configurationAccountType|[secureAssessmentAccountType](../resources/intune-deviceconfig-secureassessmentaccounttype.md)|The account type used to by ConfigurationAccount. The possible values are: `azureADAccount`, `domainAccount`, `localAccount`, `localGuestAccount`.|
+|configurationAccountType|[secureAssessmentAccountType](../resources/intune-deviceconfig-secureassessmentaccounttype.md)|The account type used to by ConfigurationAccount. Possible values are: `azureADAccount`, `domainAccount`, `localAccount`, `localGuestAccount`.|
 |allowPrinting|Boolean|Indicates whether or not to allow the app from printing during the test.|
 |allowScreenCapture|Boolean|Indicates whether or not to allow screen capture capability during a test.|
 |allowTextSuggestion|Boolean|Indicates whether or not to allow text suggestions during the test.|

@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Microsoft Entra group, which can be a Microsoft 365 group, a team in Microsoft Teams, or a security group. This resource is an open type that allows other properties to be passed in.
+Represents a Microsoft Entra group, which can be a Microsoft 365 group, a team in Microsoft Teams, or a security group. This resource is an open type that allows additional properties beyond those documented here.
 
 Inherits from [directoryObject](directoryobject.md).
 
@@ -47,12 +47,12 @@ This resource supports:
 | [List owners](../api/group-list-owners.md) | [directoryObject](directoryobject.md) collection | Get the owners of the group from the **owners** navigation property. |
 | [Add owner](../api/group-post-owners.md) | [directoryObject](directoryobject.md) | Add a new owner for the group by posting to the **owners** navigation property (supported for security groups and Microsoft 365 groups only). |
 | [Remove owner](../api/group-delete-owners.md) | None | Remove an owner from a Microsoft 365 group or a security group through the **owners** navigation property. |
+| [List memberships](../api/group-list-memberof.md) | [directoryObject](directoryobject.md) collection | Get the groups, admin roles, and and administrative units that this group is a direct member of from the memberOf navigation property. |
+| [List transitive members](../api/group-list-transitivemembers.md) | [directoryObject](directoryobject.md) collection | Get the users, groups, devices, and service principals that are members, including nested members of this group. |
+| [List transitive memberships](../api/group-list-transitivememberof.md) | [directoryObject](directoryobject.md) collection | List the groups and administrative units that this group is a member of. This operation is transitive and includes the groups that this group is a nested member of. |
+| [List lifecycle policies](../api/group-list-grouplifecyclepolicies.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md) collection | List group lifecycle policies. |
 | [List endpoints](../api/group-list-endpoints.md) | [endpoint](endpoint.md) collection | Get an endpoint object collection. |
 | [Get endpoint](../api/endpoint-get.md) | [endpoint](endpoint.md) | Read properties and relationships of an endpoint object. |
-| [List member of](../api/group-list-memberof.md) | [directoryObject](directoryobject.md) collection | Get the groups and administrative units that this group is a direct member of from the memberOf navigation property. |
-| [List group lifecycle policies](../api/group-list-grouplifecyclepolicies.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md) collection | List group lifecycle policies. |
-| [List transitive members](../api/group-list-transitivemembers.md) | [directoryObject](directoryobject.md) collection | Get the users, groups, devices, and service principals that are members, including nested members of this group. |
-| [List transitive member of](../api/group-list-transitivememberof.md) | [directoryObject](directoryobject.md) collection | List the groups and administrative units that this group is a member of. This operation is transitive and includes the groups that this group is a nested member of. |
 | [Assign license](../api/group-assignlicense.md) | [group](group.md) | Add or remove subscriptions for the group. You can also enable and disable specific plans associated with a subscription. |
 | [Evaluate dynamic membership](../api/group-evaluatedynamicmembership.md) | [evaluateDynamicMembershipResult](evaluatedynamicmembershipresult.md) | Evaluate whether a user or device is or would be a member of a dynamic group. |
 | [Renew](../api/group-renew.md) | Boolean | Renews a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy. |
@@ -202,6 +202,7 @@ name. |
 | unseenCount | Int32 | Count of conversations that have received new posts since the signed-in user last visited the group. This property is the same as **unseenConversationsCount**.<br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`). |
 | unseenMessagesCount | Int32 | Count of new posts that have been delivered to the group's conversations since the signed-in user's last visit to the group. <br><br>Returned only on `$select`. |
 | visibility | String | Specifies the group join policy and group content visibility for groups. The possible values are: `Private`, `Public`, or `HiddenMembership`. `HiddenMembership` can be set only for Microsoft 365 groups when the groups are created. It can't be updated later. Other values of visibility can be updated after group creation.<br> If visibility value isn't specified during group creation on Microsoft Graph, a security group is created as `Private` by default, and Microsoft 365 group is `Public`. Groups assignable to roles are always `Private`. To learn more, see [group visibility options](#group-visibility-options). <br><br>Returned by default. Nullable. |
+| welcomeMessageEnabled | Boolean | Indicates whether a welcome message is sent to new members when they are added to the group. The default value is `true`. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`). |
 | writebackConfiguration | [groupWritebackConfiguration](groupwritebackconfiguration.md) | Specifies whether or not a group is configured to write back group object properties to on-premises Active Directory. These properties are used when group writeback is configured in the [Microsoft Entra Connect](/azure/active-directory/hybrid/how-to-connect-group-writeback-v2) sync client. |
 
 ### Group visibility options
@@ -308,6 +309,7 @@ The following JSON representation shows the resource type.
   "groupTypes": ["String"],
   "hideFromAddressLists": "Boolean",
   "hideFromOutlookClients": "Boolean",
+  "welcomeMessageEnabled": "Boolean",
   "id": "String (identifier)",
   "isFavorite": "Boolean",
   "isArchived": "Boolean",

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Computes the rights and inheritance for sensitivity labels based on the input content and labels.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
