@@ -86,7 +86,7 @@ Use the **welcomeMessageEnabled** property on the [group](/graph/api/resources/g
 - Added `riskRemediation` as a new member to the [conditionalAccessGrantControl](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta&preserve-view=true#builtincontrols-property) enumeration. This value allows users to self-remediate their user risk through conditional access policies.
 - Use the **groupSyncInbound** property on [crossTenantIdentitySyncPolicyPartner](/graph/api/resources/crosstenantidentitysyncpolicypartner?view=graph-rest-beta&preserve-view=true) to define whether groups can be synchronized from a partner tenant in cross-tenant access policy settings.
 
-### Message trace
+### Mail | Message trace
 
 Use the [userConfiguration](/graph/api/resources/userconfiguration?view=graph-rest-beta&preserve-view=true) resource and its associated methods to manage user-specific settings, metadata, or application data tied to mailbox folders, using XML, binary, or dictionary formats.
 
