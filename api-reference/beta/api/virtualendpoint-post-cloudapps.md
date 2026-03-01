@@ -47,7 +47,7 @@ POST /deviceManagement/virtualEndpoint/cloudApps
 
 In the request body, supply a JSON representation of the [cloudPcCloudApp](../resources/cloudpccloudapp.md) object.
 
-The following table shows the properties that are required when you create a **cloudPcCloudApp**.
+The following table shows the properties available when you create a **cloudPcCloudApp**.
 
 |Property|Type|Description|
 |:---|:---|:---|
