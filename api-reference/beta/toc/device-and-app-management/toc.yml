@@ -581,6 +581,8 @@ items:
       href: ../../resources/cloudpcauditproperty.md
     - name: Cloud PC audit resource
       href: ../../resources/cloudpcauditresource.md
+    - name: Cloud PC automatic discovered app detail
+      href: ../../resources/cloudpcautomaticdiscoveredappdetail.md
     - name: Cloud PC bulk create snapshot
       href: ../../resources/cloudpcbulkcreatesnapshot.md
     - name: Cloud PC bulk disaster recovery
@@ -613,10 +615,6 @@ items:
       href: ../../resources/cloudpcbulktroubleshoot.md
     - name: Cloud PC cloud app detail
       href: ../../resources/cloudpccloudappdetail.md
-    - name: Cloud PC automatic discovered app detail
-      href: ../../resources/cloudpcautomaticdiscoveredappdetail.md
-    - name: Cloud PC file path app detail
-      href: ../../resources/cloudpcfilepathappdetail.md
     - name: Cloud PC connection setting
       href: ../../resources/cloudpcconnectionsetting.md
     - name: Cloud PC connectivity event
@@ -635,6 +633,8 @@ items:
       href: ../../resources/cloudpcdiscoveredapp.md
     - name: Cloud PC domain join configuration
       href: ../../resources/cloudpcdomainjoinconfiguration.md
+    - name: Cloud PC file path app detail
+      href: ../../resources/cloudpcfilepathappdetail.md
     - name: Cloud PC forensic storage account
       href: ../../resources/cloudpcforensicstorageaccount.md
     - name: Cloud PC frontline shared device detail
