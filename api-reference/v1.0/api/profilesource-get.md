@@ -93,6 +93,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.type": "#microsoft.graph.profileSource",
   "id": "27f1af7b-b166-4f5b-b994-ae135a581547",
   "sourceId": "bamboohr1",
   "kind": "BambooHR",
