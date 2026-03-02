@@ -139,7 +139,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2 Create a draft message in MIME format to forward an existing message
+### Example 2: Create a draft message in MIME format to forward an existing message
 ##### Request
 <!-- {
   "blockType": "response",
