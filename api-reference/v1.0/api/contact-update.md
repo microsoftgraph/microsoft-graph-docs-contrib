@@ -5,7 +5,7 @@ author: "kevinbellinger"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
-ms.date: 06/25/2024
+ms.date: 02/27/2026
 ---
 
 # Update contact
@@ -83,9 +83,12 @@ When you update structured properties such as **homeAddress**, you must pass the
 |otherAddress|[PhysicalAddress](../resources/physicaladdress.md)|Other addresses for the contact.|
 |parentFolderId|String|The ID of the contact's parent folder.|
 |personalNotes|String|The user's notes about the contact.|
+|primaryEmailAddress|[EmailAddress](../resources/emailaddress.md)|The contact's primary email address.|
 |profession|String|The contact's profession.|
+|secondaryEmailAddress|[EmailAddress](../resources/emailaddress.md)|The contact's secondary email address.|
 |spouseName|String|The name of the contact's spouse/partner.|
 |surname|String|The contact's surname.|
+|tertiaryEmailAddress|[EmailAddress](../resources/emailaddress.md)|The contact's tertiary email address.|
 |title|String|The contact's title.|
 |yomiCompanyName|String|The phonetic Japanese company name of the contact. This property is optional.|
 |yomiGivenName|String|The phonetic Japanese given name (first name) of the contact. This property is optional.|
@@ -188,6 +191,12 @@ Content-type: application/json
       "address": "garth@contoso.com"
     }
   ],
+  "primaryEmailAddress": {
+    "name": "Garth",
+    "address": "garth@contoso.com"
+  },
+  "secondaryEmailAddress": null,
+  "tertiaryEmailAddress": null,
   "imAddresses": [
     "sip:garthf@contoso.com"
   ],

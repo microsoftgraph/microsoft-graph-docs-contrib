@@ -5,7 +5,7 @@ author: "kevinbellinger"
 ms.localizationpriority: high
 ms.subservice: "outlook"
 doc_type: resourcePageType
-ms.date: 08/23/2024
+ms.date: 02/27/2026
 ---
 
 # contact resource type
@@ -75,9 +75,12 @@ by providing a [delta](../api/contact-delta.md) function.
 |otherAddress|[PhysicalAddress](physicaladdress.md)|Other addresses for the contact.|
 |parentFolderId|String|The ID of the contact's parent folder.|
 |personalNotes|String|The user's notes about the contact.|
+|primaryEmailAddress|[EmailAddress](emailaddress.md)|The contact's primary email address.|
 |profession|String|The contact's profession.|
+|secondaryEmailAddress|[EmailAddress](emailaddress.md)|The contact's secondary email address.|
 |spouseName|String|The name of the contact's spouse/partner.|
 |surname|String|The contact's surname.|
+|tertiaryEmailAddress|[EmailAddress](emailaddress.md)|The contact's tertiary email address.|
 |title|String|The contact's title.|
 |yomiCompanyName|String|The phonetic Japanese company name of the contact.|
 |yomiGivenName|String|The phonetic Japanese given name (first name) of the contact.|
@@ -143,6 +146,9 @@ The following JSON representation shows the resource type.
   "department": "string",
   "displayName": "string",
   "emailAddresses": [{"@odata.type": "microsoft.graph.emailAddress"}],
+  "primaryEmailAddress": {"@odata.type": "microsoft.graph.emailAddress"},
+  "secondaryEmailAddress": {"@odata.type": "microsoft.graph.emailAddress"},
+  "tertiaryEmailAddress": {"@odata.type": "microsoft.graph.emailAddress"},
   "fileAs": "string",
   "generation": "string",
   "givenName": "string",

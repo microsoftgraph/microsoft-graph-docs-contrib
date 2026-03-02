@@ -5,7 +5,7 @@ author: "kevinbellinger"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
-ms.date: 04/04/2024
+ms.date: 02/27/2026
 ---
 
 # Get contact
@@ -140,8 +140,31 @@ Content-type: application/json
     "yomiSurname": null,
     "yomiCompanyName": null,
     "generation": null,
-    "imAddresses": [],
-    "jobTitle": null,
+    "emailAddresses": [
+      {
+        "name": "Alex Wilber",
+        "address": "alexw@contoso.com",
+        "type": "unknown"
+      },
+      {
+        "name": "Alex Wilber",
+        "address": "alex.wilber@outlook.com",
+        "type": "personal"
+      }
+    ],
+    "primaryEmailAddress": {
+      "name": "Alex Wilber",
+      "address": "alexw@contoso.com"
+    },
+    "secondaryEmailAddress": {
+      "name": "Alex Wilber",
+      "address": "alex.wilber@outlook.com"
+    },
+    "tertiaryEmailAddress": null,
+    "imAddresses": [
+      "sip:alexw@contoso.com"
+    ],
+    "jobTitle": "Web Marketing Manager",
     "companyName": null,
     "department": null,
     "officeLocation": null,
@@ -155,12 +178,6 @@ Content-type: application/json
     "spouseName": null,
     "personalNotes": "",
     "children": [],
-    "emailAddresses": [
-        {
-            "name": "Alex@FineArtSchool.net",
-            "address": "Alex@FineArtSchool.net"
-        }
-    ],
     "homeAddress": {},
     "businessAddress": {},
     "otherAddress": {}
