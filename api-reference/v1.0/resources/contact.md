@@ -46,7 +46,7 @@ by providing a [delta](../api/contact-delta.md) function.
 |:---------------|:--------|:----------|
 |assistantName|String|The name of the contact's assistant.|
 |birthday|DateTimeOffset|The contact's birthday. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-|businessAddress|[PhysicalAddress](physicaladdress.md)|The contact's business address.|
+|businessAddress|[physicalAddress](physicaladdress.md)|The contact's business address.|
 |businessHomePage|String|The business home page of the contact.|
 |businessPhones|String collection|The contact's business phone numbers.|
 |categories|String collection|The categories associated with the contact.|
@@ -56,11 +56,11 @@ by providing a [delta](../api/contact-delta.md) function.
 |createdDateTime|DateTimeOffset|The time the contact was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |department|String|The contact's department.|
 |displayName|String|The contact's display name. You can specify the display name in a [create](../api/user-post-contacts.md) or [update](../api/contact-update.md) operation. Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified. To preserve a pre-existing value, always include it as displayName in an [update](../api/contact-update.md) operation.|
-|emailAddresses|[EmailAddress](emailaddress.md) collection|The contact's email addresses.|
+|emailAddresses|[emailAddress](emailaddress.md) collection|The contact's email addresses.|
 |fileAs|String|The name the contact is filed under.|
 |generation|String|The contact's suffix.|
 |givenName|String|The contact's given name.|
-|homeAddress|[PhysicalAddress](physicaladdress.md)|The contact's home address.|
+|homeAddress|[physicalAddress](physicaladdress.md)|The contact's home address.|
 |homePhones|String collection|The contact's home phone numbers.|
 |id|String|The contact's unique identifier. [!INCLUDE [outlook-beta-id](../../includes/outlook-immutable-id.md)] Read-only.|
 |imAddresses|String collection|The contact's instant messaging (IM) addresses.|
@@ -72,15 +72,15 @@ by providing a [delta](../api/contact-delta.md) function.
 |mobilePhone|String|The contact's mobile phone number.|
 |nickName|String|The contact's nickname.|
 |officeLocation|String|The location of the contact's office.|
-|otherAddress|[PhysicalAddress](physicaladdress.md)|Other addresses for the contact.|
+|otherAddress|[physicalAddress](physicaladdress.md)|Other addresses for the contact.|
 |parentFolderId|String|The ID of the contact's parent folder.|
 |personalNotes|String|The user's notes about the contact.|
-|primaryEmailAddress|[EmailAddress](emailaddress.md)|The contact's primary email address.|
+|primaryEmailAddress|[emailAddress](emailaddress.md)|The contact's primary email address.|
 |profession|String|The contact's profession.|
-|secondaryEmailAddress|[EmailAddress](emailaddress.md)|The contact's secondary email address.|
+|secondaryEmailAddress|[emailAddress](emailaddress.md)|The contact's secondary email address.|
 |spouseName|String|The name of the contact's spouse/partner.|
 |surname|String|The contact's surname.|
-|tertiaryEmailAddress|[EmailAddress](emailaddress.md)|The contact's tertiary email address.|
+|tertiaryEmailAddress|[emailAddress](emailaddress.md)|The contact's tertiary email address.|
 |title|String|The contact's title.|
 |yomiCompanyName|String|The phonetic Japanese company name of the contact.|
 |yomiGivenName|String|The phonetic Japanese given name (first name) of the contact.|
@@ -146,9 +146,6 @@ The following JSON representation shows the resource type.
   "department": "string",
   "displayName": "string",
   "emailAddresses": [{"@odata.type": "microsoft.graph.emailAddress"}],
-  "primaryEmailAddress": {"@odata.type": "microsoft.graph.emailAddress"},
-  "secondaryEmailAddress": {"@odata.type": "microsoft.graph.emailAddress"},
-  "tertiaryEmailAddress": {"@odata.type": "microsoft.graph.emailAddress"},
   "fileAs": "string",
   "generation": "string",
   "givenName": "string",
@@ -168,9 +165,12 @@ The following JSON representation shows the resource type.
   "parentFolderId": "string",
   "personalNotes": "string",
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
+  "primaryEmailAddress": {"@odata.type": "microsoft.graph.emailAddress"},
   "profession": "string",
+  "secondaryEmailAddress": {"@odata.type": "microsoft.graph.emailAddress"},
   "spouseName": "string",
   "surname": "string",
+  "tertiaryEmailAddress": {"@odata.type": "microsoft.graph.emailAddress"},
   "title": "string",
   "yomiCompanyName": "string",
   "yomiGivenName": "string",
