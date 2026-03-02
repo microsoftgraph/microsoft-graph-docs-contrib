@@ -1741,7 +1741,7 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2026-02-26T15:25:36.8590438Z",
-      "WorkloadArea": "Calendar, mail, personal contacts",
+      "WorkloadArea": "Personal contacts",
       "SubArea": ""
     }
   ]
