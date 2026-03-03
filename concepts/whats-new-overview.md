@@ -3,7 +3,7 @@ title: "What's new in Microsoft Graph"
 description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, and other resources."
 author: "lauragra"
 ms.localizationpriority: high
-ms.date: 03/03/2026
+ms.date: 03/04/2026
 ms.topic: whats-new
 ---
 
@@ -115,6 +115,11 @@ The granular restore process is designed to be simple and efficient and consists
   Select one or more items from the browse session and initiates a restore session.  
   - Only the selected items are restored to their previous state, leaving the rest of the site or drive unchanged.  
   - You can create a [SharePoint granular restore session](/graph/api/backuprestoreroot-post-sharepointrestoresessions?view=graph-rest-beta&preserve-view=true#example-2-create-a-granular-restore-session) or a [OneDrive for Business granular restore session](/graph/api/backuprestoreroot-post-onedriveforbusinessrestoresessions?view=graph-rest-beta&preserve-view=true#example-2-create-a-granular-restore-session).
+
+Added support for protection policy offboarding status and timestamp tracking in backup storage:
+
+- Added the **offboardRequestedDateTime** property to the [protectionPolicyBase](/graph/api/resources/protectionpolicybase?view=graph-rest-beta&preserve-view=true) resource.
+- Added `offboardRequested` and `offboarded` members to the [protectionPolicyStatus](/graph/api/resources/protectionpolicybase?view=graph-rest-beta&preserve-view=true#protectionpolicystatus-values) enumeration.
 
 ### Device and app management | Cloud licensing
 
