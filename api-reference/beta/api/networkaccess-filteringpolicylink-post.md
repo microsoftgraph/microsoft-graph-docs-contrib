@@ -18,6 +18,7 @@ Add a Global Secure Access network policy to a [filteringProfile](../resources/n
 
 - [filteringPolicy](../resources/networkaccess-filteringpolicy.md)
 - [threatIntelligencePolicy](../resources/networkaccess-threatintelligencepolicy.md)
+- [tlsInspectionPolicy](../resources/networkaccess-tlsinspectionpolicy.md)
 
 ## Permissions
 
@@ -69,7 +70,9 @@ If successful, this method returns a `204 No Content` response code and a [micro
 
 ## Examples
 
-### Request
+### Example 1: Add a filteringPolicy to a filteringProfile
+
+#### Request
 
 The following example shows a request.
 <!-- {
@@ -93,7 +96,7 @@ Content-Type: application/json
 ```
 
 
-### Response
+#### Response
 
 The following example shows the response.
 <!-- {
@@ -115,6 +118,64 @@ Content-Type: application/json
   "lastModifiedDateTime": "2025-06-18T17:34:25.8207682Z",
   "settings": {
     "defaultAction": "allow"
+  }
+}
+```
+
+### Example 2: Add a tlsInspectionPolicy to a filteringProfile
+
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "create_tlsinspectionpolicylink",
+  "sampleKeys": ["d734d2de-f2df-4b4a-8c4c-5111f8878275"]
+}
+-->
+```http
+POST https://graph.microsoft.com/beta/networkAccess/filteringProfiles/d734d2de-f2df-4b4a-8c4c-5111f8878275/policies
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.networkaccess.tlsInspectionPolicyLink",
+  "state": "enabled",
+  "policy": {
+    "@odata.type": "#microsoft.graph.networkaccess.tlsInspectionPolicy",
+    "id": "b712c469-e7cd-e7cb-738f-94b199570b0d"
+  }
+}
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.networkaccess.tlsInspectionPolicyLink"
+}
+-->
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.networkaccess.tlsInspectionPolicyLink",
+  "id": "70405a6c-b823-c521-c981-de9d08a21f8f",
+  "state": "enabled",
+  "version": "1.0",
+  "policy": {
+    "@odata.type": "#microsoft.graph.networkaccess.tlsInspectionPolicy",
+    "id": "b712c469-e7cd-e7cb-738f-94b199570b0d",
+    "name": "Default TLS Inspection Policy",
+    "description": "Policy for inspecting TLS traffic",
+    "version": "1.0.0",
+    "lastModifiedDateTime": "2025-06-02T20:54:19.146638Z",
+    "settings": {
+      "defaultAction": "bypass"
+    }
   }
 }
 ```

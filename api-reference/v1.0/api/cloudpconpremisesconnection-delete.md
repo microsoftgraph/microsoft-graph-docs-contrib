@@ -21,7 +21,7 @@ When you delete an Azure network connection, permissions to the service are remo
 
 You cannot delete an Azure network connection when it's in use, as indicated by the **inUse** property.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
