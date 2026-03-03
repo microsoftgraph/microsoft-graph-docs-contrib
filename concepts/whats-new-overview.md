@@ -119,7 +119,7 @@ The granular restore process is designed to be simple and efficient and consists
 Added support for protection policy offboarding status and timestamp tracking in backup storage:
 
 - Added the **offboardRequestedDateTime** property to the [protectionPolicyBase](/graph/api/resources/protectionpolicybase?view=graph-rest-beta&preserve-view=true) resource.
-- Added `offboardRequested` and `offboarded` members to the [protectionPolicyStatus](/graph/api/resources/protectionpolicybase?view=graph-rest-beta&preserve-view=true#protectionpolicystatus-values) enumeration.
+- Added the `offboardRequested` and `offboarded` values to the [protectionPolicyStatus](/graph/api/resources/protectionpolicybase?view=graph-rest-beta&preserve-view=true#protectionpolicystatus-values) enumeration.
 
 ### Device and app management | Cloud licensing
 
