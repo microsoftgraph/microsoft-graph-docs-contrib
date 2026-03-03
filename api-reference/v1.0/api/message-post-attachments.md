@@ -71,7 +71,7 @@ If successful, this method returns `201 Created` response code and [Attachment](
 
 ### Example 1: File attachment
 
-##### Request
+#### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -122,7 +122,8 @@ Content-type: application/json
 ---
 
 In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
-##### Response
+
+#### Response
 The following example shows the response.
 <!-- {
   "blockType": "response",
@@ -150,7 +151,7 @@ Content-type: application/json
 
 ### Example 2: Item attachment
 
-##### Request
+#### Request
 The following example shows a request.
 
 <!-- {
@@ -185,7 +186,7 @@ Content-type: application/json
 ```
 
 
-##### Response
+#### Response
 The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
