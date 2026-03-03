@@ -1,7 +1,25 @@
 {
   "changelog": [
       {
-        "ChangeList": [
+          "ChangeList": [
+            {
+              "Id": "0272a9b7-e106-4262-a0d1-90932ddd92a6",
+              "ApiChange": "Member",
+              "ChangedApiName": "includeNewerItems",
+              "ChangeType": "Addition",
+              "Description": "Added the `includeNewerItems` member to the **restorePointTags** enumeration.",
+              "Target": "restorePointTags"
+            }
+          ],
+          "Id": "0272a9b7-e106-4262-a0d1-90932ddd92a6",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2026-02-25T08:07:36.2586417Z",
+          "WorkloadArea": "EnhancedRestore",
+          "SubArea": "Backup and Restore"
+        },
+        {
+          "ChangeList": [
           {
             "Id": "51bec7fb-1c22-4485-bef5-4ac72a4b8258",
             "ApiChange": "Member",
