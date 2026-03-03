@@ -18,7 +18,18 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## March 2026: New and generally available
+
+### Identity and access | Governance
+
+- Added the `allDirectoryAgentIdentities` member to the [allowedTargetScope](/graph/api/resources/enums#allowedtargetscope-values) enumeration to allow access packages to target all directory agent identities.
+- Added the [targetAgentIdentitySponsorsOrOwners](/graph/api/resources/targetagentidentitysponsorsorowners) resource type that defines the sponsors or owners of a specific agent identity.
+
 ## March 2026: New in preview only
+
+### Identity and access | Governance
+
+Added the [targetAgentIdentitySponsorsOrOwners](/graph/api/resources/targetagentidentitysponsorsorowners?view=graph-rest-beta&preserve-view=true) resource type that defines the sponsors or owners of a specific agent identity.
 
 ### Identity and access | Network access
 
