@@ -2,7 +2,7 @@
 title: "keyValue resource type"
 description: "Standard key-value pair resource type."
 ms.localizationpriority: medium
-author: "dougeby"
+author: "egreenberg14"
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
 ms.date: 04/03/2024

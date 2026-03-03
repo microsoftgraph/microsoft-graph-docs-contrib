@@ -79,6 +79,7 @@ Content-type: application/json
     "createdDateTime": "2019-09-17T19:10:35.2742618Z",
     "displayName": "Display name",
     "publisherDomain": "contoso.com",
+    "requiredResourceAccess": [],
     "signInAudience": "AzureADMyOrg"
 }
 ```
