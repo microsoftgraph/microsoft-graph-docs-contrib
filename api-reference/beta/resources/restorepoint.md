@@ -44,7 +44,7 @@ The following limitations apply to this API:
 |:------|:------------|
 |none   | No tag.      |
 |fastRestore | Get a fast restore point.|
-|includeNewerItems | Get a restorepoint in a given timePeriod and include newer items which were created in a selected timePeriod.|
+|includeNewerItems | Get a restore point within a given time period that includes newer items created during that period.|
 |unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
