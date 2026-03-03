@@ -38,7 +38,8 @@ Use the message trace API to track the flow of email messages through your Excha
 
 ### Security | Data security and compliance
 
-Added the `restrictWebGrounding` member to the [dlpAction](/graph/api/resources/enums-security#dlpaction-values) enumeration to support restricting web grounding actions in data loss prevention policies in Microsoft Purview.
+- Added the `labelNotFoundException` member to the [usageRights](/graph/api/resources/usagerights) enumeration type. This member represents a label with no protection settings, so there are no usage rights to evaluate in Microsoft Purview.
+- Added the `restrictWebGrounding` member to the [dlpAction](/graph/api/resources/enums-security#dlpaction-values) enumeration to support restricting web grounding actions in data loss prevention policies in Microsoft Purview.
 
 ### Teamwork and communications | Administration
 - [Get the policy ID](/graph/api/teamsadministration-teamspolicyassignment-getpolicyid) for a given policy name and policy type within Teams administration.
@@ -90,6 +91,7 @@ Use the new cloud licensing APIs to manage tenant, user, and group licensing dat
 
 ### Security | Data security and compliance
 
+- Added the `labelNotFoundException` member to the [usageRights](/graph/api/resources/usagerights?view=graph-rest-beta&preserve-view=true) enumeration type. This member represents a label with no protection settings, so there are no usage rights to evaluate in Microsoft Purview.
 - Deprecated the **accessedResources** property on [processConversationMetadata](/graph/api/resources/processconversationmetadata?view=graph-rest-beta&preserve-view=true) in favor of the **accessedResources_v2** property.
 - Use the **accessedResources_v2** property on [processConversationMetadata](/graph/api/resources/processconversationmetadata?view=graph-rest-beta&preserve-view=true) to get detailed information about resources accessed during the conversation, including identifiers, access type, and status.
 - Use the **agents** property on [processConversationMetadata](/graph/api/resources/processconversationmetadata?view=graph-rest-beta&preserve-view=true) to get information about AI agents that participated in the preparation of the message.
