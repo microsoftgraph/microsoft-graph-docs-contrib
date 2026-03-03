@@ -59,7 +59,9 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 
 ## Examples
 
-### Request
+### Example 1: Update a filteringPolicyLink
+
+#### Request
 The following example shows a request.
 <!-- {
   "blockType": "request",
@@ -76,11 +78,40 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
+}
+-->
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 2: Update a tlsInspectionPolicyLink
+
+#### Request
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "update_tlsinspectionpolicylink",
+  "sampleKeys": ["d734d2de-f2df-4b4a-8c4c-5111f8878275", "70405a6c-b823-c521-c981-de9d08a21f8f"]
+}
+-->
+```http
+PATCH https://graph.microsoft.com/beta/networkAccess/filteringProfiles/d734d2de-f2df-4b4a-8c4c-5111f8878275/policies/70405a6c-b823-c521-c981-de9d08a21f8f
+Content-Type: application/json
+
+{
+  "state": "disabled"
+}
+```
+
+#### Response
+The following example shows the response.
+<!-- {
+  "blockType": "response"
 }
 -->
 ```http
