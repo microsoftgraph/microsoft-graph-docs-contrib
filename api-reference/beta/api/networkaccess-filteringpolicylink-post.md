@@ -18,6 +18,7 @@ Add a Global Secure Access network policy to a [filteringProfile](../resources/n
 
 - [filteringPolicy](../resources/networkaccess-filteringpolicy.md)
 - [threatIntelligencePolicy](../resources/networkaccess-threatintelligencepolicy.md)
+- [tlsInspectionPolicy](../resources/networkaccess-tlsinspectionpolicy.md)
 
 ## Permissions
 
