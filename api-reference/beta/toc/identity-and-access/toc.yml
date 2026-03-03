@@ -4771,19 +4771,7 @@ items:
       - name: Delete policy
         href: ../../api/networkaccess-tlsinspectionpolicy-delete.md
     - name: Policy link to filtering profile
-      items:
-      - name: Policy link to filtering profile
-        href: ../../resources/networkaccess-tlsinspectionpolicylink.md
-      - name: List
-        href: ../../api/networkaccess-tlsinspectionpolicylink-list.md
-      - name: Create
-        href: ../../api/networkaccess-tlsinspectionpolicylink-post.md
-      - name: Get
-        href: ../../api/networkaccess-tlsinspectionpolicylink-get.md
-      - name: Update
-        href: ../../api/networkaccess-tlsinspectionpolicylink-update.md
-      - name: Delete
-        href: ../../api/networkaccess-tlsinspectionpolicylink-delete.md
+      href: ../../resources/networkaccess-tlsinspectionpolicylink.md
     - name: Policy rule
       items:
       - name: Policy rule
