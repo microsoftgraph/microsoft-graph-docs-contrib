@@ -56,8 +56,8 @@ Base type for [sharePointProtectionPolicy](../resources/sharepointprotectionpoli
 |inactive | All units are unprotected.|
 |updating | Some or all units are in a `protectRequested`, `unprotectRequested`, or `removeRequested` state.|
 |unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
-|offboardRequested | Offboarding was requested for the protection policy. You must use the `Prefer: include-unknown-enum-members` request header to get this value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations).|
-|offboarded | The protection policy was successfully offboarded. You must use the `Prefer: include-unknown-enum-members` request header to get this value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations).|
+|offboardRequested | Offboarding was requested for the protection policy.|
+|offboarded | The protection policy was successfully offboarded.|
 
 ## Relationships
 None.
