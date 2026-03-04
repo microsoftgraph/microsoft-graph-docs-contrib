@@ -20,14 +20,14 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## March 2026: New and generally available
 
-### Personal contacts
-
-Use the **primaryEmailAddress**, **secondaryEmailAddress**, and **tertiaryEmailAddress** properties on [contact](/graph/api/resources/contact) to get or set the primary, secondary, or tertiary email address of a contact.
-
 ### Identity and access | Governance
 
 - Added the `allDirectoryAgentIdentities` member to the [allowedTargetScope](/graph/api/resources/enums#allowedtargetscope-values) enumeration to allow access packages to target all directory agent identities.
 - Added the [targetAgentIdentitySponsorsOrOwners](/graph/api/resources/targetagentidentitysponsorsorowners) resource type that defines the sponsors or owners of a specific agent identity.
+
+### Personal contacts
+
+Use the **primaryEmailAddress**, **secondaryEmailAddress**, and **tertiaryEmailAddress** properties on [contact](/graph/api/resources/contact) to get or set the primary, secondary, or tertiary email address of a contact.
 
 ## March 2026: New in preview only
 
