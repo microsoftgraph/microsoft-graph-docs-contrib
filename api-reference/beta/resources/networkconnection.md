@@ -6,7 +6,6 @@ doc_type: resourcePageType
 ms.subservice: cloud-pc
 author: "preetikr"
 ms.date: 07/22/2024
-toc.title: networkConnection resource type (deprecated)
 ROBOTS: NOINDEX
 ---
 

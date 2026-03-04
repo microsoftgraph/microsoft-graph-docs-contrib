@@ -7,7 +7,6 @@ ms.reviewer: "iamut"
 ms.subservice: entra-users
 doc_type: resourcePageType
 ms.date: 07/22/2024
-toc.title: userSecurityState resource type (deprecated)
 ROBOTS: NOINDEX
 ---
 

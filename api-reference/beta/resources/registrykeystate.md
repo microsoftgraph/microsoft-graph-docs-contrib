@@ -6,7 +6,6 @@ doc_type: resourcePageType
 ms.subservice: security
 author: "preetikr"
 ms.date: 07/22/2024
-toc.title: registryKeyState resource type (deprecated)
 ROBOTS: NOINDEX
 ---
 
