@@ -21,13 +21,8 @@ Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkacc
 
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List](../api/networkaccess-threatintelligencepolicylink-list.md)|[microsoft.graph.networkaccess.threatIntelligencePolicyLink](../resources/networkaccess-threatintelligencepolicylink.md) collection|Get a list of the threatIntelligencePolicyLink objects and their properties.|
-|[Create](../api/networkaccess-threatintelligencepolicylink-post-policy.md)|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|Add a policy by posting to the policy collection associated with this threat intelligence policy link.|
-|[Get](../api/networkaccess-threatintelligencepolicylink-get.md)|[microsoft.graph.networkaccess.threatIntelligencePolicyLink](../resources/networkaccess-threatintelligencepolicylink.md)|Read the properties and relationships of a threatIntelligencePolicyLink object.|
-|[Update](../api/networkaccess-threatintelligencepolicylink-update.md)|[microsoft.graph.networkaccess.threatIntelligencePolicyLink](../resources/networkaccess-threatintelligencepolicylink.md)|Update the properties of a threatIntelligencePolicyLink object.|
-|[Delete](../api/networkaccess-threatintelligencepolicylink-delete.md)|None|Delete a threatIntelligencePolicyLink object.|
+
+For supported API operations, see [filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md)
 
 ## Properties
 |Property|Type|Description|

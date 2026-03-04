@@ -1,5 +1,5 @@
 ---
-title: "admin resource type"
+title: "Admin resource type"
 description: "Represents an entity that acts as a container for administrator functionality."
 author: "angelgolfer-ms"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: resourcePageType
 ms.date: 10/30/2024
 ---
 
-# admin resource type
+# Admin resource type
 
 Namespace: microsoft.graph
 
@@ -27,7 +27,7 @@ None.
 | reportSettings |[adminReportSettings](../resources/adminreportsettings.md)|A container for administrative resources to manage reports.|
 | serviceAnnouncement | [serviceAnnouncement](serviceannouncement.md) | A container for service communications resources. Read-only. |
 | sharepointSettings | [sharepointSettings](../resources/sharepointSettings.md) | A container for administrative resources to manage tenant-level settings for SharePoint and OneDrive. |
-| teams|[microsoft.graph.teamsAdministration.teamsAdminRoot](../resources/teamsadministration-teamsadminroot.md)|A container for Teams administration functionalities, such as user configurations and policy assignments.|
+| teams|[microsoft.graph.teamsAdministration.teamsAdminRoot](../resources/teamsadministration-teamsadminroot.md)|A container for Teams administration functionalities, such as Teams telephone number management functionalities, user Teams configurations, and policy assignments.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

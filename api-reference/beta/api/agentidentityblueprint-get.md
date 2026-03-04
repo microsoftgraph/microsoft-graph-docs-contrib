@@ -139,6 +139,7 @@ Content-Type: application/json
     },
     "keyCredentials": [],
     "passwordCredentials": [],
+    "requiredResourceAccess": [],
     "verifiedPublisher": {
         "displayName": null,
         "verifiedPublisherId": null,

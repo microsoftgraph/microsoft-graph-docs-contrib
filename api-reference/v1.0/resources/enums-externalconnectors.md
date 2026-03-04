@@ -78,6 +78,26 @@ Namespace: microsoft.graph.externalConnectors
 | externalGroup
 | unknownFutureValue
 
+### contentCategory values
+
+| Member
+|:----------
+| uncategorized
+| knowledgeBase
+| wikis
+| fileRepository
+| qna
+| crm
+| dashboard
+| people
+| media
+| email
+| messaging
+| meetingTranscripts
+| taskManagement
+| learningManagement
+| unknownFutureValue
+
 ### label values
 
 | Member
@@ -113,6 +133,7 @@ Namespace: microsoft.graph.externalConnectors
 | personAlternateContacts
 | personEmergencyContacts
 
+
 ### propertyType values
 
 | Member
@@ -126,6 +147,8 @@ Namespace: microsoft.graph.externalConnectors
 | int64Collection
 | doubleCollection
 | dateTimeCollection
+| principal
+| principalCollection
 | unknownFutureValue
 
 ### ruleOperation values
