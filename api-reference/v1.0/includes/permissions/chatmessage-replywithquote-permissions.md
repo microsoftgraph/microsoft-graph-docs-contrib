@@ -6,7 +6,6 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|NetworkAccess.Read.All|NetworkAccess.ReadWrite.All|
+|Delegated (work or school account)|ChatMessage.Send|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|NetworkAccess.Read.All|NetworkAccess.ReadWrite.All|
-
+|Application|Not supported.|Not supported.|

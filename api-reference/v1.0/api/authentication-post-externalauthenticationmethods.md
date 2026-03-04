@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-Assign an external authentication method to another user. This API doesn't support self-service operations.
+Assign an external MFA to another user. This API doesn't support self-service operations.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /users/{usersId}/authentication/externalAuthenticationMethods
@@ -49,7 +49,7 @@ You can specify the following properties when creating an **externalAuthenticati
 |Property|Type|Description|
 |:---|:---|:---|
 |configurationId|String|A unique identifier used to manage and integrate external auth methods within Microsoft Entra ID. Required.|
-|displayName|String|Custom name given to the registered external authentication method. Required.|
+|displayName|String|Custom name given to the registered external MFA. Required.|
 
 
 
