@@ -150,6 +150,7 @@ The following example shows the response.
 -->
 ```json
 HTTP/1.1 406 NOT Acceptable
+
 {
   "error": {
     "code": "No valid users in activateUserScope supplied. 2 users were specified and none were valid.",
