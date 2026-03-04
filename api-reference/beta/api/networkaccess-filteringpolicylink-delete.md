@@ -1,5 +1,5 @@
 ---
-title: "Delete filtering Policy Link"
+title: "Delete filteringPolicyLink"
 description: "Delete a filteringPolicyLink object."
 author: Moti-ba
 ms.localizationpriority: medium
@@ -13,7 +13,10 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) object.
+Delete a [filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) object. The policy can be one of the following types:
+- [filteringPolicy](../resources/networkaccess-filteringpolicy.md)
+- [threatIntelligencePolicy](../resources/networkaccess-threatintelligencepolicy.md)
+- [tlsInspectionPolicy](../resources/networkaccess-tlsinspectionpolicy.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -49,7 +52,9 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Request
+### Example 1: Delete a filteringPolicyLink
+
+#### Request
 The following example shows a request.
 <!-- {
   "blockType": "request",
@@ -60,9 +65,33 @@ The following example shows a request.
 DELETE https://graph.microsoft.com/beta/networkaccess/FilteringProfiles/c308a3af-e3f4-4e7b-b8cf-d17fd7acb97c/policies/65973c4b-0239-47ec-9c22-aef144cd2fec
 ```
 
-### Response
+#### Response
 The following example shows the response.
->**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 2: Delete a tlsInspectionPolicyLink
+
+#### Request
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "delete_tlsinspectionpolicylink",
+  "sampleKeys": ["d734d2de-f2df-4b4a-8c4c-5111f8878275"]
+}
+-->
+```http
+DELETE https://graph.microsoft.com/beta/networkAccess/filteringProfiles/d734d2de-f2df-4b4a-8c4c-5111f8878275/policies/70405a6c-b823-c521-c981-de9d08a21f8f
+```
+
+#### Response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

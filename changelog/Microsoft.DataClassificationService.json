@@ -197,14 +197,56 @@
           "Target": "resourceAccessDetail"
         }
       ],
-      "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
-      "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2026-01-14T00:00:00.0000000Z",
-      "WorkloadArea": "Security",
-      "SubArea": "Data security and compliance"
-    },
-    {
+        "Id": "e72bfd48-4fdc-4e10-9d29-89785912a3be",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2026-01-14T00:00:00.0000000Z",
+        "WorkloadArea": "Security",
+        "SubArea": "Data security and compliance"
+      },
+      {
+      "ChangeList": [
+        {
+          "Id": "c39f9275-6638-4c3e-a3d2-c709fe4e89b9",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "contentCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentCategory** enumeration type.",
+          "Target": "contentCategory"
+        },
+        {
+          "Id": "c39f9275-6638-4c3e-a3d2-c709fe4e89b9",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentCategory** property to the [processContentMetadataBase](https://learn.microsoft.com/en-us/graph/api/resources/processContentMetadataBase?view=graph-rest-beta) resource.",
+          "Target": "processContentMetadataBase"
+        },
+        {
+          "Id": "c39f9275-6638-4c3e-a3d2-c709fe4e89b9",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentCategory** property to the [processConversationMetadata](https://learn.microsoft.com/en-us/graph/api/resources/processConversationMetadata?view=graph-rest-beta) resource.",
+          "Target": "processConversationMetadata"
+        },
+        {
+          "Id": "c39f9275-6638-4c3e-a3d2-c709fe4e89b9",
+          "ApiChange": "Property",
+          "ChangedApiName": "contentCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the **contentCategory** property to the [processFileMetadata](https://learn.microsoft.com/en-us/graph/api/resources/processFileMetadata?view=graph-rest-beta) resource.",
+          "Target": "processFileMetadata"
+        }
+      ],
+        "Id": "c39f9275-6638-4c3e-a3d2-c709fe4e89b9",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2026-02-18T00:00:00.0000000Z",
+        "WorkloadArea": "Security",
+        "SubArea": "Data security and compliance"
+      },
+      {
       "ChangeList": [
         {
           "Id": "1bcf0683-8da5-49e2-ad7b-939947ea200d",

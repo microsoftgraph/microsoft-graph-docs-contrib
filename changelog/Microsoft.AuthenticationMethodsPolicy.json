@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "2cefcfa0-eaae-4cee-bf9e-83c6e8c2385c",
+          "ApiChange": "Member",
+          "ChangedApiName": "qrCodePin",
+          "ChangeType": "Addition",
+          "Description": "Added the `qrCodePin` member to the **authenticationMethodModes** enumeration.",
+          "Target": "authenticationMethodModes"
+        },
+        {
+          "Id": "2cefcfa0-eaae-4cee-bf9e-83c6e8c2385c",
+          "ApiChange": "Member",
+          "ChangedApiName": "qrCodePin",
+          "ChangeType": "Addition",
+          "Description": "Added the `qrCodePin` member to the **baseAuthenticationMethod** enumeration.",
+          "Target": "baseAuthenticationMethod"
+        },
+        {
+          "Id": "2cefcfa0-eaae-4cee-bf9e-83c6e8c2385c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "qrCodePinAuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [qrCodePinAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/qrCodePinAuthenticationMethodConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "qrCodePinAuthenticationMethodConfiguration"
+        }
+      ],
+      "Id": "2cefcfa0-eaae-4cee-bf9e-83c6e8c2385c",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-02-12T19:28:30.6195724Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a1b2c3d4-5e6f-7890-abcd-ef1234567890",
           "ApiChange": "Resource",
           "ChangedApiName": "authenticationMethod",

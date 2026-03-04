@@ -2226,9 +2226,9 @@ items:
         href: ../../api/emailauthenticationmethod-update.md
       - name: Delete
         href: ../../api/emailauthenticationmethod-delete.md
-    - name: External authentication method
+    - name: External MFA
       items:
-      - name: External authentication method
+      - name: External MFA
         href: ../../resources/externalauthenticationmethod.md
       - name: List
         href: ../../api/authentication-list-externalauthenticationmethods.md
@@ -2422,9 +2422,9 @@ items:
         href: ../../api/emailauthenticationmethodconfiguration-update.md
       - name: Delete
         href: ../../api/emailauthenticationmethodconfiguration-delete.md
-    - name: External authentication method
+    - name: External MFA
       items:
-      - name: External authentication method
+      - name: External MFA
         href: ../../resources/externalauthenticationmethodconfiguration.md
       - name: Get
         href: ../../api/externalauthenticationmethodconfiguration-get.md
@@ -4676,6 +4676,8 @@ items:
         href: ../../resources/networkaccess-filteringpolicylink.md
       - name: List
         href: ../../api/networkaccess-filteringpolicylink-list.md
+      - name: Create
+        href: ../../api/networkaccess-filteringpolicylink-post.md
       - name: Get
         href: ../../api/networkaccess-filteringpolicylink-get.md
       - name: Update
@@ -4723,19 +4725,7 @@ items:
       - name: Create policyRule
         href: ../../api/networkaccess-threatintelligencepolicy-post-policyrules.md
     - name: Threat intelligence policy link
-      items:
-      - name: Threat intelligence policy link
-        href: ../../resources/networkaccess-threatintelligencepolicylink.md
-      - name: List
-        href: ../../api/networkaccess-threatintelligencepolicylink-list.md
-      - name: Create
-        href: ../../api/networkaccess-threatintelligencepolicylink-post-policy.md
-      - name: Get
-        href: ../../api/networkaccess-threatintelligencepolicylink-get.md
-      - name: Update
-        href: ../../api/networkaccess-threatintelligencepolicylink-update.md
-      - name: Delete
-        href: ../../api/networkaccess-threatintelligencepolicylink-delete.md
+      href: ../../resources/networkaccess-threatintelligencepolicylink.md
     - name: Threat intelligence rule
       items:
       - name: Threat intelligence rule
@@ -4781,19 +4771,7 @@ items:
       - name: Delete policy
         href: ../../api/networkaccess-tlsinspectionpolicy-delete.md
     - name: Policy link to filtering profile
-      items:
-      - name: Policy link to filtering profile
-        href: ../../resources/networkaccess-tlsinspectionpolicylink.md
-      - name: List
-        href: ../../api/networkaccess-tlsinspectionpolicylink-list.md
-      - name: Create
-        href: ../../api/networkaccess-tlsinspectionpolicylink-post.md
-      - name: Get
-        href: ../../api/networkaccess-tlsinspectionpolicylink-get.md
-      - name: Update
-        href: ../../api/networkaccess-tlsinspectionpolicylink-update.md
-      - name: Delete
-        href: ../../api/networkaccess-tlsinspectionpolicylink-delete.md
+      href: ../../resources/networkaccess-tlsinspectionpolicylink.md
     - name: Policy rule
       items:
       - name: Policy rule

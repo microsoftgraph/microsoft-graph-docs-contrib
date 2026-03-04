@@ -31,7 +31,7 @@ None.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |emailMethods|[emailAuthenticationMethod](../resources/emailauthenticationmethod.md) collection|The email address registered to a user for authentication. |
-|externalAuthenticationMethods|[externalAuthenticationMethod](../resources/externalauthenticationmethod.md) collection|Represents the external authentication methods registered to a user for authentication using an external identity provider.|
+|externalAuthenticationMethods|[externalAuthenticationMethod](../resources/externalauthenticationmethod.md) collection|Represents the external MFA registered to a user for authentication using an external identity provider.|
 |fido2Methods|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) collection|Represents the FIDO2 security keys registered to a user for authentication.|
 |methods|[authenticationMethod](../resources/authenticationmethod.md) collection| Represents all authentication methods registered to a user.|
 |microsoftAuthenticatorMethods|[microsoftAuthenticatorAuthenticationMethod](../resources/microsoftauthenticatorauthenticationmethod.md) collection| The details of the Microsoft Authenticator app registered to a user for authentication. |

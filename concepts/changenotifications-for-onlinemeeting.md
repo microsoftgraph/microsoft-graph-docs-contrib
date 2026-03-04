@@ -74,7 +74,7 @@ When you subscribe to rich notifications for change events in an active meeting 
 {
   "value": [{
     "subscriptionId": "{Subscription id}",
-    "clientState": "{secret client state}",
+    "clientState": "{secretClientState}",
     "changeType": "updated",
     "tenantId": "{Organization/Tenant id}",
     "resource": "communications/onlineMeetings(joinWebUrl='{joinWebUrl}')/meetingCallEvents",

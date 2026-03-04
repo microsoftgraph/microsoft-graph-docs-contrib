@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Assign a [cloudPcUserSetting](../resources/cloudpcusersetting.md) to user groups.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

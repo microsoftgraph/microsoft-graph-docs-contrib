@@ -84,9 +84,9 @@ items:
     href: ../../api/message-list-attachments.md
   - name: List attachments of a post
     href: ../../api/post-list-attachments.md
-- name: Outlook category (deprecated)
+- name: Outlook category
   items:
-  - name: Outlook category (deprecated)
+  - name: Outlook category
     href: ../../resources/outlookcategory.md
   - name: List
     href: ../../api/outlookuser-list-mastercategories.md

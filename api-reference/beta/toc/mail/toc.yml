@@ -204,6 +204,18 @@ items:
     href: ../../api/messagetracingroot-list-messagetraces.md
   - name: Get details by recipient
     href: ../../api/exchangemessagetrace-getdetailsbyrecipient.md
+- name: User configuration (preview)
+  items:
+  - name: User configuration (preview)
+    href: ../../resources/userconfiguration.md
+  - name: Create
+    href: ../../api/mailsearchfolder-post-userconfigurations.md
+  - name: Get
+    href: ../../api/userconfiguration-get.md
+  - name: Update
+    href: ../../api/userconfiguration-update.md
+  - name: Delete
+    href: ../../api/userconfiguration-delete.md
 - name: Focused inbox
   items:
   - name: Overview

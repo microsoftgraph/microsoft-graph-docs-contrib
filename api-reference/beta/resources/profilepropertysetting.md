@@ -33,10 +33,9 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedAudiences|organizationAllowedAudiences|A privacy setting that reflects the allowed audience for the configured property. The possible values are: `me`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
+|displayName|String|Name of the property-level setting.|
 |id|String|System generated GUID. Inherited from [entity](../resources/entity.md).|
-|isUserOverrideForAudienceEnabled|Boolean|Defines whether a user is allowed to override the tenant admin privacy setting.|
-|name|String|Name of the property-level setting.|
+|name|String|Other name of the property-level setting. For backward compatibility.|
 |prioritizedSourceUrls|String collection|A collection of prioritized profile source URLs ordered by data precedence within an organization.|
 
 ## Relationships
@@ -55,11 +54,10 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.profilePropertySetting",
-  "allowedAudiences": "String",
   "id": "String (identifier)",
-  "isUserOverrideForAudienceEnabled": "Boolean",
   "name": "String",
-  "prioritizedSourceUrls": ["String"]
+  "prioritizedSourceUrls": ["String"],
+  "displayName": "String"
 }
 ```
 

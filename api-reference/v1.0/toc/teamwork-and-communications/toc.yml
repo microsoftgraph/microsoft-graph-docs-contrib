@@ -28,6 +28,32 @@ items:
       href: ../../api/teamsadministration-teamsadminroot-list-userconfigurations.md
     - name: Get
       href: ../../api/teamsadministration-teamsuserconfiguration-get.md
+  - name: Number assignment
+    items:
+    - name: Number assignment
+      href: ../../resources/teamsadministration-numberassignment.md
+    - name: List assignment
+      href: ../../api/teamsadministration-telephonenumbermanagementroot-list-numberassignments.md
+    - name: Get assignment
+      href: ../../api/teamsadministration-numberassignment-get.md
+    - name: Assign number
+      href: ../../api/teamsadministration-numberassignment-assignnumber.md
+    - name: Unassign number
+      href: ../../api/teamsadministration-numberassignment-unassignnumber.md
+    - name: Update number
+      href: ../../api/teamsadministration-numberassignment-updatenumber.md
+  - name: Telephone number long running operation
+    items:
+    - name: Telephone number long running operation
+      href: ../../resources/teamsadministration-telephonenumberlongrunningoperation.md
+    - name: Get
+      href: ../../api/teamsadministration-telephonenumberlongrunningoperation-get.md
+  - name: Telephone number management root
+    items:
+    - name: Telephone number management root
+      href: ../../resources/teamsadministration-telephonenumbermanagementroot.md
+    - name: List number assignments
+      href: ../../api/teamsadministration-telephonenumbermanagementroot-list-numberassignments.md
   - name: Complex types
     items:
     - name: Assigned telephone number
@@ -38,6 +64,8 @@ items:
       href: ../../resources/teamsadministration-policyassignment.md
     - name: Policy identifier detail
       href: ../../resources/teamsadministration-policyidentifierdetail.md
+    - name: Telephone number long running operation details
+      href: ../../resources/teamsadministration-telephonenumberlongrunningoperationdetails.md
 - name: Apps
   items:
   - name: Teams app
@@ -777,6 +805,8 @@ items:
         href: ../../api/chatmessage-setreaction.md
       - name: Unset reaction to a message in channel
         href: ../../api/chatmessage-unsetreaction.md
+      - name: Reply with quote
+        href: ../../api/chatmessage-replywithquote.md
     - name: Hosted content
       items:
       - name: List all hosted content

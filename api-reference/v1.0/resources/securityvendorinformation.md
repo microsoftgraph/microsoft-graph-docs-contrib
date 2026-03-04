@@ -1,16 +1,19 @@
 ---
-title: "securityVendorInformation resource type"
+title: "securityVendorInformation resource type (deprecated)"
 description: " subProvider=AppLocker)."
 ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: "security"
 doc_type: resourcePageType
 ms.date: 04/03/2024
+ROBOTS: NOINDEX
 ---
 
-# securityVendorInformation resource type
+# securityVendorInformation resource type (deprecated)
 
 Namespace: microsoft.graph
+
+[!INCLUDE [security-alerts-v1-deprecation](../includes/security-alerts-v1-deprecation.md)]
 
 Contains details about the security product/service vendor, provider, and subprovider (for example, vendor=Microsoft; provider=Windows Defender ATP; subProvider=AppLocker).
 

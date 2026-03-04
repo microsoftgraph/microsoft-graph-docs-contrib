@@ -224,9 +224,9 @@ items:
     href: ../../api/calendarpermission-update.md
   - name: Delete
     href: ../../api/calendarpermission-delete.md
-- name: Outlook category (deprecated)
+- name: Outlook category
   items:
-  - name: Outlook category (deprecated)
+  - name: Outlook category
     href: ../../resources/outlookcategory.md
   - name: List
     href: ../../api/outlookuser-list-mastercategories.md

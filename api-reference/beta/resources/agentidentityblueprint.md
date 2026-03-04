@@ -72,9 +72,8 @@ This resource is an open type that allows additional properties beyond those doc
 |appId|String|The unique identifier for the agent identity blueprint that is assigned by Microsoft Entra ID. Not nullable. Read-only. Inherited from [application](../resources/application.md).|
 |appRoles|[appRole](../resources/approle.md) collection|The collection of roles defined for the agent identity blueprint. With app role assignments, these roles can be assigned to users, groups, or service principals associated with other applications. Not nullable. Inherited from [application](../resources/application.md).|
 |certification|[certification](../resources/certification.md)|Specifies the certification status of the agent identity blueprint. Inherited from [application](../resources/application.md).|
-|createdByAppId|String|The unique identifier of the application that created this agent identity blueprint. Set internally by Microsoft Entra ID. Read-only. Inherited from [application](../resources/application.md).|
+|createdByAppId|String|The **appId** of the application that created this agent identity blueprint. Set internally by Microsoft Entra ID. Read-only. Inherited from [application](../resources/application.md).|
 |createdDateTime|DateTimeOffset|The date and time the agent identity blueprint was registered. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. Read-only. Inherited from [application](../resources/application.md).|
-|createdByAppId|String|The **appId** (called **Application (client) ID** on the Microsoft Entra admin center) of the application that created this agent identity blueprint. Set internally by Microsoft Entra ID. Read-only. Inherited from [application](../resources/application.md).|
 |description|String|Free text field to provide a description of the agent identity blueprint to end users. The maximum allowed size is 1,024 characters. Inherited from [application](../resources/application.md).|
 |disabledByMicrosoftStatus|String|Specifies whether Microsoft has disabled the registered agent identity blueprint. The possible values are: `null` (default value), `NotDisabled`, and `DisabledDueToViolationOfServicesAgreement` (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement). Inherited from [application](../resources/application.md).|
 |displayName|String|The display name for the agent identity blueprint. Maximum length is 256 characters. Inherited from [application](../resources/application.md).|
@@ -86,6 +85,7 @@ This resource is an open type that allows additional properties beyond those doc
 |optionalClaims|[optionalClaims](../resources/optionalclaims.md)|Application developers can configure optional claims in their Microsoft Entra agent identity blueprints to specify the claims that are sent to their application by the Microsoft security token service. Inherited from [application](../resources/application.md).|
 |passwordCredentials|[passwordCredential](../resources/passwordcredential.md) collection|The collection of password credentials associated with the agent identity blueprint. Not nullable. Inherited from [application](../resources/application.md).<br/><br/>You can also add passwords after creating the agent identity blueprint by calling the [Add password](../api/agentidentityblueprint-addpassword.md) API.|
 |publisherDomain|String|The verified publisher domain for the agent identity blueprint. Read-only. Inherited from [application](../resources/application.md).|
+| requiredResourceAccess |[requiredResourceAccess](requiredresourceaccess.md) collection| Specifies the resources that the agentIdentityBlueprint needs to access. This property also specifies the set of delegated permissions and application roles that it needs for each of those resources. This configuration of access to the required resources drives the consent experience. <br/><br/>No more than 50 resource services (APIs) can be configured. The total number of required permissions must not exceed 400. For more information, see [Limits on requested permissions per app](#limits-on-requested-permissions-per-app). Not nullable.  Inherited from [application](../resources/application.md).<br><br>Supports `$filter` (`eq`, `not`, `ge`, `le`).|
 |serviceManagementReference|String|References application or service contact information from a Service or Asset Management database. Nullable. Inherited from [application](../resources/application.md).|
 |signInAudience|String|Specifies the Microsoft accounts that are supported for the current agent identity blueprint. The possible values are: `AzureADMyOrg` (default), `AzureADMultipleOrgs`, `AzureADandPersonalMicrosoftAccount`, and `PersonalMicrosoftAccount`. Inherited from [application](../resources/application.md).|
 |tags|String collection|Custom strings that can be used to categorize and identify the agent identity blueprint. Not nullable. Inherited from [application](../resources/application.md).|
@@ -93,6 +93,12 @@ This resource is an open type that allows additional properties beyond those doc
 |uniqueName|String|The unique identifier that can be assigned to an agent identity blueprint and used as an alternate key. Immutable. Read-only. Inherited from [application](../resources/application.md).|
 |verifiedPublisher|[verifiedPublisher](../resources/verifiedpublisher.md)|Specifies the verified publisher of the agent identity blueprint. Inherited from [application](../resources/application.md).|
 |web|[webApplication](../resources/webapplication.md)|Specifies settings for a web application. Inherited from [application](../resources/application.md).|
+
+
+### Limits on requested permissions per app
+
+[!INCLUDE [microsoft-graph-permissions-limits](../../../concepts/includes/msgraph-permissions-limits.md)]
+
 
 ## Relationships
 |Relationship|Type|Description|
@@ -126,6 +132,7 @@ The following JSON representation shows the resource type. Only a subset of all 
   "displayName": "String",
   "groupMembershipClaims": "String",
   "publisherDomain": "String",
+  "requiredResourceAccess": [{"@odata.type": "microsoft.graph.requiredResourceAccess"}],
   "signInAudience": "String",
   "tags": ["String"],
   "tokenEncryptionKeyId": "Guid",

@@ -47,9 +47,9 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md) object in the response body.
 
-### Example: Get a specific risk detection object
+## Example
 
-#### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/v1.0/identityProtection/servicePrincipalRiskDete
 
 ---
 
-#### Response
+### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

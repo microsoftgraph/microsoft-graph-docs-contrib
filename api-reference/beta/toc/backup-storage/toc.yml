@@ -10,12 +10,34 @@ items:
     href: ../../api/backuprestoreroot-get.md
   - name: Enable
     href: ../../api/backuprestoreroot-enable.md
-- name: Browse Session
+- name: Browse session
   items:
-  - name: Browse Session
+  - name: Overview
     href: ../../resources/browsesessionbase.md
-  - name: List
-    href: ../../api/backuprestoreroot-list-browsesessions.md
+  - name: One drive for business browse session
+    items:
+    - name: One drive for business browse session
+      href: ../../resources/onedriveforbusinessbrowsesession.md
+    - name: Create
+      href: ../../api/backuprestoreroot-post-onedriveforbusinessbrowsesessions.md
+    - name: Get
+      href: ../../api/onedriveforbusinessbrowsesession-get.md
+    - name: List
+      href: ../../api/backuprestoreroot-list-onedriveforbusinessbrowsesessions.md
+    - name: browse
+      href: ../../api/onedriveforbusinessbrowsesession-browse.md
+  - name: Share point browse session
+    items:
+    - name: Share point browse session
+      href: ../../resources/sharepointbrowsesession.md
+    - name: Create
+      href: ../../api/backuprestoreroot-post-sharepointbrowsesessions.md
+    - name: Get
+      href: ../../api/sharepointbrowsesession-get.md
+    - name: List
+      href: ../../api/backuprestoreroot-list-sharepointbrowsesessions.md
+    - name: browse
+      href: ../../api/sharepointbrowsesession-browse.md
 - name: Email notifications setting
   items:
   - name: Email notifications setting
@@ -24,18 +46,6 @@ items:
     href: ../../api/emailnotificationssetting-get.md
   - name: Update
     href: ../../api/emailnotificationssetting-update.md
-- name: One drive for business browse session
-  items:
-  - name: One drive for business browse session
-    href: ../../resources/onedriveforbusinessbrowsesession.md
-  - name: Create
-    href: ../../api/backuprestoreroot-post-onedriveforbusinessbrowsesessions.md
-  - name: Get
-    href: ../../api/onedriveforbusinessbrowsesession-get.md
-  - name: List
-    href: ../../api/backuprestoreroot-list-onedriveforbusinessbrowsesessions.md
-  - name: browse
-    href: ../../api/onedriveforbusinessbrowsesession-browse.md
 - name: Protection policy
   items:
   - name: Protection policy
@@ -333,18 +343,6 @@ items:
     href: ../../api/serviceapp-activate.md
   - name: Deactivate
     href: ../../api/serviceapp-deactivate.md
-- name: Share point browse session
-  items:
-  - name: Share point browse session
-    href: ../../resources/sharepointbrowsesession.md
-  - name: Create
-    href: ../../api/backuprestoreroot-post-sharepointbrowsesessions.md
-  - name: Get
-    href: ../../api/sharepointbrowsesession-get.md
-  - name: List
-    href: ../../api/backuprestoreroot-list-sharepointbrowsesessions.md
-  - name: browse
-    href: ../../api/sharepointbrowsesession-browse.md
 - name: Complex types
   items:
   - name: Artifact query

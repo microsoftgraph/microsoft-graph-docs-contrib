@@ -1,0 +1,54 @@
+{
+  "redirections": [
+    {
+      "source_path_from_root": "/api-reference/beta/api/networkaccess-threatintelligencepolicylink-delete.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/networkaccess-filteringpolicylink-delete?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/networkaccess-threatintelligencepolicylink-get.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/networkaccess-filteringpolicylink-get?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/networkaccess-threatintelligencepolicylink-list.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/networkaccess-filteringpolicylink-list?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/networkaccess-threatintelligencepolicylink-update.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/networkaccess-filteringpolicylink-update?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/networkaccess-threatintelligencepolicylink-post-policy.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/networkaccess-filteringpolicylink-post?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/networkaccess-tlsinspectionpolicylink-delete.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/networkaccess-filteringpolicylink-delete?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/networkaccess-tlsinspectionpolicylink-get.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/networkaccess-filteringpolicylink-get?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/networkaccess-tlsinspectionpolicylink-list.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/networkaccess-filteringpolicylink-list?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/networkaccess-tlsinspectionpolicylink-update.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/networkaccess-filteringpolicylink-update?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/networkaccess-tlsinspectionpolicylink-post.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/networkaccess-filteringpolicylink-post?view=graph-rest-beta",
+      "redirect_document_id": false
+    }
+  ]
+}

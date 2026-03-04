@@ -1,11 +1,11 @@
 ---
 title: "externalAuthenticationMethodConfiguration resource type"
-description: "Specifies the properties and connection information for an external authentication method."
+description: "Specifies the properties and connection information for an external MFA."
 author: "gregkmsft"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-toc.title: External authentication method
+toc.title: External MFA
 ms.date: 01/19/2026
 ---
 
@@ -13,7 +13,7 @@ ms.date: 01/19/2026
 
 Namespace: microsoft.graph
 
-Specifies the properties and connection information for an external authentication method.
+Specifies the properties and connection information for an external MFA.
 
 
 Inherits from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).
@@ -29,10 +29,10 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 |Property|Type|Description|
 |:---|:---|:---|
 |appId|String|**appId** for the app registration in Microsoft Entra ID representing the integration with the external provider.|
-|displayName|String|Display name for the external authentication method. This name is shown to users during sign-in.|
+|displayName|String|Display name for the external MFA. This name is shown to users during sign-in.|
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users excluded from the policy. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
 |id|String|The unique identifier for this object. Read-only. Inherited from [entity](../resources/entity.md).|
-|openIdConnectSetting|[openIdConnectSetting](../resources/openidconnectsetting.md)|Open ID Connection settings used by this external authentication method.|
+|openIdConnectSetting|[openIdConnectSetting](../resources/openidconnectsetting.md)|Open ID Connection settings used by this external MFA.|
 |state|authenticationMethodState|The state of the method in the policy. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md). The possible values are: `enabled`, `disabled`.|
 
 ## Relationships

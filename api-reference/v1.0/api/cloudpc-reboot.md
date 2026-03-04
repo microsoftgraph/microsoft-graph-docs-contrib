@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Reboot a specific [cloudPC](../resources/cloudpc.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
