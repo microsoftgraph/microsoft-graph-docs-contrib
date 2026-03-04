@@ -1,0 +1,174 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "38093077-4be7-4687-b812-1de93c82854e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "baselineParameterType",
+          "ChangeType": "Addition",
+          "Description": "Added the **baselineParameterType** enumeration type.",
+          "Target": "baselineParameterType"
+        },
+        {
+          "Id": "38093077-4be7-4687-b812-1de93c82854e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "driftStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **driftStatus** enumeration type.",
+          "Target": "driftStatus"
+        },
+        {
+          "Id": "38093077-4be7-4687-b812-1de93c82854e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "monitorMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **monitorMode** enumeration type.",
+          "Target": "monitorMode"
+        },
+        {
+          "Id": "38093077-4be7-4687-b812-1de93c82854e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "monitorRunStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **monitorRunStatus** enumeration type.",
+          "Target": "monitorRunStatus"
+        },
+        {
+          "Id": "38093077-4be7-4687-b812-1de93c82854e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "monitorStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **monitorStatus** enumeration type.",
+          "Target": "monitorStatus"
+        },
+        {
+          "Id": "38093077-4be7-4687-b812-1de93c82854e",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "snapshotJobStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **snapshotJobStatus** enumeration type.",
+          "Target": "snapshotJobStatus"
+        },
+        {
+          "Id": "38093077-4be7-4687-b812-1de93c82854e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "baselineParameter",
+          "ChangeType": "Addition",
+          "Description": "Added the [baselineParameter](https://learn.microsoft.com/en-us/graph/api/resources/baselineParameter?view=graph-rest-beta) resource type.",
+          "Target": "baselineParameter"
+        },
+        {
+          "Id": "38093077-4be7-4687-b812-1de93c82854e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "baselineResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [baselineResource](https://learn.microsoft.com/en-us/graph/api/resources/baselineResource?view=graph-rest-beta) resource type.",
+          "Target": "baselineResource"
+        },
+        {
+          "Id": "38093077-4be7-4687-b812-1de93c82854e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "clientCredentials",
+          "ChangeType": "Addition",
+          "Description": "Added the [clientCredentials](https://learn.microsoft.com/en-us/graph/api/resources/clientCredentials?view=graph-rest-beta) resource type.",
+          "Target": "clientCredentials"
+        },
+        {
+          "Id": "38093077-4be7-4687-b812-1de93c82854e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "driftedProperty",
+          "ChangeType": "Addition",
+          "Description": "Added the [driftedProperty](https://learn.microsoft.com/en-us/graph/api/resources/driftedProperty?view=graph-rest-beta) resource type.",
+          "Target": "driftedProperty"
+        },
+        {
+          "Id": "38093077-4be7-4687-b812-1de93c82854e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "errorDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [errorDetail](https://learn.microsoft.com/en-us/graph/api/resources/errorDetail?view=graph-rest-beta) resource type.",
+          "Target": "errorDetail"
+        },
+        {
+          "Id": "38093077-4be7-4687-b812-1de93c82854e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "openComplexDictionaryType",
+          "ChangeType": "Addition",
+          "Description": "Added the [openComplexDictionaryType](https://learn.microsoft.com/en-us/graph/api/resources/openComplexDictionaryType?view=graph-rest-beta) resource type.",
+          "Target": "openComplexDictionaryType"
+        },
+        {
+          "Id": "38093077-4be7-4687-b812-1de93c82854e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "configurationManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the **configurationManagement** relationship to the [admin](https://learn.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-beta) resource.",
+          "Target": "admin"
+        },
+        {
+          "Id": "38093077-4be7-4687-b812-1de93c82854e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "configurationBaseline",
+          "ChangeType": "Addition",
+          "Description": "Added the [configurationBaseline](https://learn.microsoft.com/en-us/graph/api/resources/configurationBaseline?view=graph-rest-beta) resource and an associated method.",
+          "Target": "configurationBaseline"
+        },
+        {
+          "Id": "38093077-4be7-4687-b812-1de93c82854e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "configurationDrift",
+          "ChangeType": "Addition",
+          "Description": "Added the [configurationDrift](https://learn.microsoft.com/en-us/graph/api/resources/configurationDrift?view=graph-rest-beta) resource and associated methods.",
+          "Target": "configurationDrift"
+        },
+        {
+          "Id": "38093077-4be7-4687-b812-1de93c82854e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "configurationManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the [configurationManagement](https://learn.microsoft.com/en-us/graph/api/resources/configurationManagement?view=graph-rest-beta) resource type.",
+          "Target": "configurationManagement"
+        },
+        {
+          "Id": "38093077-4be7-4687-b812-1de93c82854e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "configurationMonitor",
+          "ChangeType": "Addition",
+          "Description": "Added the [configurationMonitor](https://learn.microsoft.com/en-us/graph/api/resources/configurationMonitor?view=graph-rest-beta) resource and associated methods.",
+          "Target": "configurationMonitor"
+        },
+        {
+          "Id": "38093077-4be7-4687-b812-1de93c82854e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "configurationMonitoringResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [configurationMonitoringResult](https://learn.microsoft.com/en-us/graph/api/resources/configurationMonitoringResult?view=graph-rest-beta) resource and associated methods.",
+          "Target": "configurationMonitoringResult"
+        },
+        {
+          "Id": "38093077-4be7-4687-b812-1de93c82854e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "configurationSnapshotJob",
+          "ChangeType": "Addition",
+          "Description": "Added the [configurationSnapshotJob](https://learn.microsoft.com/en-us/graph/api/resources/configurationSnapshotJob?view=graph-rest-beta) resource and associated methods.",
+          "Target": "configurationSnapshotJob"
+        },
+        {
+          "Id": "38093077-4be7-4687-b812-1de93c82854e",
+          "ApiChange": "Method",
+          "ChangedApiName": "createSnapshot",
+          "ChangeType": "Addition",
+          "Description": "Added the [createSnapshot](https://learn.microsoft.com/en-us/graph/api/configurationBaseline-createSnapshot?view=graph-rest-beta) method to the [configurationBaseline](https://learn.microsoft.com/en-us/graph/api/resources/configurationBaseline?view=graph-rest-beta) resource.",
+          "Target": "configurationBaseline"
+        }
+      ],
+      "Id": "38093077-4be7-4687-b812-1de93c82854e",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-01-23T05:11:09.4766745Z",
+      "WorkloadArea": "tenant-administration",
+      "SubArea": "Configuration management"
+    }
+  ]
+}

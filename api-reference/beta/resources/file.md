@@ -20,10 +20,11 @@ In addition to other properties, files have a **content** relationship that cont
 
 ## Properties
 
-| Property | Type                    | Description                                                                                                                                      |
-|:---------|:------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| hashes   | [hashes](hashes.md) | Hashes of the file's binary content, if available. Read-only.                                                                                    |
-| mimeType | string                  | The MIME type for the file. This is determined by logic on the server and might not be the value provided when the file was uploaded. Read-only. |
+| Property      | Type                    | Description                                                                                                                                      |
+|:--------------|:------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
+| archiveStatus | fileArchiveStatus       | The archive status of the file. The possible values are: `notArchived`, `fullyArchived`, `reactivating`, `unknownFutureValue`.                   |
+| hashes        | [hashes](hashes.md)     | Hashes of the file's binary content, if available. Read-only.                                                                                    |
+| mimeType      | string                  | The MIME type for the file. This is determined by logic on the server and might not be the value provided when the file was uploaded. Read-only. |
 
 ## Relationships
 None.
@@ -40,8 +41,12 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "hashes": {"@odata.type": "microsoft.graph.hashes"},
-  "mimeType": "string"
+  "@odata.type": "#microsoft.graph.file",
+  "hashes": {
+    "@odata.type": "microsoft.graph.hashes"
+  },
+  "mimeType": "String",
+  "archiveStatus": "String"
 }
 ```
 

@@ -1,11 +1,11 @@
 ---
 title: "expediteSettings resource type"
 description: "Represents settings for expediting the deployment of content."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: resourcePageType
-ms.date: 09/09/2024
+ms.date: 01/27/2026
 ---
 
 # expediteSettings resource type

@@ -36,18 +36,18 @@ items:
       href: ../../api/group-post-owners.md
     - name: Remove owner
       href: ../../api/group-delete-owners.md
+    - name: List memberships
+      href: ../../api/group-list-memberof.md
+    - name: List transitive members
+      href: ../../api/group-list-transitivemembers.md
+    - name: List transitive memberships
+      href: ../../api/group-list-transitivememberof.md
+    - name: List lifecycle policies
+      href: ../../api/group-list-grouplifecyclepolicies.md
     - name: List endpoints
       href: ../../api/group-list-endpoints.md
     - name: Get endpoint
       href: ../../api/endpoint-get.md
-    - name: List member of
-      href: ../../api/group-list-memberof.md
-    - name: List group lifecycle policies
-      href: ../../api/group-list-grouplifecyclepolicies.md
-    - name: List transitive members
-      href: ../../api/group-list-transitivemembers.md
-    - name: List transitive member of
-      href: ../../api/group-list-transitivememberof.md
     - name: Assign license
       href: ../../api/group-assignlicense.md
     - name: Evaluate dynamic membership

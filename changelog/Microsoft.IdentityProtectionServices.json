@@ -1,5 +1,39 @@
 {
   "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "79e9c6ef-2398-41a6-a75a-d7a271f6e271",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "agentIdentityType",
+          "ChangeType": "Addition",
+          "Description": "Added the **agentIdentityType** enumeration type.",
+          "Target": "agentIdentityType"
+        },
+        {
+          "Id": "79e9c6ef-2398-41a6-a75a-d7a271f6e271",
+          "ApiChange": "Property",
+          "ChangedApiName": "identityType",
+          "ChangeType": "Addition",
+          "Description": "Added the **identityType** property to the [agentRiskDetection](https://learn.microsoft.com/en-us/graph/api/resources/agentRiskDetection?view=graph-rest-beta) resource.",
+          "Target": "agentRiskDetection"
+        },
+        {
+          "Id": "79e9c6ef-2398-41a6-a75a-d7a271f6e271",
+          "ApiChange": "Property",
+          "ChangedApiName": "identityType",
+          "ChangeType": "Addition",
+          "Description": "Added the **identityType** property to the [riskyAgent](https://learn.microsoft.com/en-us/graph/api/resources/riskyAgent?view=graph-rest-beta) resource.",
+          "Target": "riskyAgent"
+        }
+      ],
+      "Id": "79e9c6ef-2398-41a6-a75a-d7a271f6e271",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-02-06T01:56:10.4559191Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
         {
       "ChangeList": [
         {
@@ -57,6 +91,24 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-09-25T00:09:20.1862328Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "bcbc0c63-72de-4b55-8f5c-9e52a79c8c88",
+          "ApiChange": "Member",
+          "ChangedApiName": "riskRemediation",
+          "ChangeType": "Addition",
+          "Description": "Added the `riskRemediation` member to the **conditionalAccessGrantControl** enumeration.",
+          "Target": "conditionalAccessGrantControl"
+        }
+      ],
+      "Id": "bcbc0c63-72de-4b55-8f5c-9e52a79c8c88",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-01-29T22:06:48.3941652Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     },

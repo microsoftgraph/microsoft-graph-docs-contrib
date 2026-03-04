@@ -8,7 +8,7 @@ ms.topic: quickstart
 ms.localizationpriority: high
 ms.subservice: entra-applications
 ms.custom: graphiamtop20
-ms.date: 01/27/2025
+ms.date: 01/22/2026
 #customer intent: As a developer, I want to register an application with the Microsoft identity platform, so that I can use it to access data in the Microsoft cloud.
 ---
 
@@ -18,9 +18,9 @@ ms.date: 01/27/2025
 
 ## Other resources
 
-- Learn more about [permissions and consent](/azure/active-directory/develop/v2-permissions-and-consent) in the Microsoft identity platform or [how permissions work in Microsoft Graph](permissions-overview.md).
-- [Choose a quick start](/azure/active-directory/develop/#get-started) that walks you through adding core identity and access management (IAM) features to your applications and best practices for keeping your apps secure and available.
-- Learn more about the two Microsoft Entra objects that represent a registered application and the relationship between them: [Application objects and service principal objects](/azure/active-directory/develop/app-objects-and-service-principals).
+- Learn more about [permissions and consent](/entra/identity-platform/permissions-consent-overview) in the Microsoft identity platform or [how permissions work in Microsoft Graph](permissions-overview.md).
+- [Choose a quick start](/entra/identity-platform/#get-started) that walks you through adding core identity and access management (IAM) features to your applications and best practices for keeping your apps secure and available.
+- Learn more about the two Microsoft Entra objects that represent a registered application and the relationship between them: [Application objects and service principal objects](/entra/identity-platform/app-objects-and-service-principals).
 
 ## Next step
 

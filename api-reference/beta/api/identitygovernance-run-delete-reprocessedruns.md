@@ -1,7 +1,7 @@
 ---
 title: "Remove reprocessedRuns for a run"
 description: "Remove a reprocessed run object."
-author: "AlexFilipin"
+author: "KristinaSmith"
 ms.date: 09/04/2025
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"

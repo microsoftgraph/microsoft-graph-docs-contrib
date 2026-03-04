@@ -340,7 +340,7 @@ Content-Type: application/json
 }
 ```
 
-## Example 3: Create a policy that automatically creates assignments based on a membership rule
+### Example 3: Create a policy that automatically creates assignments based on a membership rule
 
 The following example shows a policy that automatically creates assignments for users in the sales department.
 
@@ -430,7 +430,7 @@ Content-Type: application/json
 ```
 
 
-## Example 4: Create a policy where requestors are asked to answer questions while requesting access to provide additional information to approvers.
+### Example 4: Create a policy where requestors are asked to answer questions while requesting access to provide additional information to approvers
 
 The following example shows a policy that automatically creates assignments for users in the sales department.
 

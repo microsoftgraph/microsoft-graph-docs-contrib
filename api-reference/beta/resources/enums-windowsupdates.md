@@ -135,6 +135,14 @@ Namespace: microsoft.graph.windowsUpdates
 | inPlaceUpgrade   |
 | unknownFutureValue |
 
+### approvalStatus values
+
+|Member|
+|:---|
+|approved|
+|suspended|
+|unknownFutureValue|
+
 <!--
 {
   "type": "#page.annotation",
