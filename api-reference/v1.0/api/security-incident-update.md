@@ -67,12 +67,12 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["2972395"],
+  "sampleKeys": ["29"],
   "name": "update_incident"
 }
 -->
 ```http
-PATCH https://graph.microsoft.com/v1.0/security/incidents/29/
+PATCH https://graph.microsoft.com/v1.0/security/incidents/29
 Content-Type: application/json
 
 {
