@@ -32,6 +32,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 [!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
 
+> [!NOTE]
+> Removing a retention label is not supported when using app‑only authentication for SPE containers.
+This operation requires a delegated user context and will fail if called with app‑only permissions.
+
 ## HTTP request
 
 <!-- {
@@ -101,8 +105,6 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Remove retention label from a driveItem failed (Insufficient permissions)
 
-The app+user caller does not have FullMask delegated container permissions.
-
 #### Request
 
 <!-- {
@@ -131,46 +133,6 @@ Content-Type: application/json
   "error": {
     "code": "accessDenied",
     "message": "Access Denied: Do not have enough permission.",
-    "innerError": {
-      "request-id": "12345678-1234-1234-1234-123456789012",
-      "date": "2025-02-03T10:30:00"
-    }
-  }
-}
-```
-
-### Example 3: Remove retention label from a driveItem failed (App-only not supported)
-
-App-only authentication is not supported for SPE containers.
-
-#### Request
-
-<!-- {
-  "blockType": "request",
-  "name": "driveItem_removeRetentionLabel_spe_apponly_error"
-}
--->
-
-```http
-DELETE https://graph.microsoft.com/beta/drives/b!t18F8ybsHUq1z3LTz8xvZqP8zaSWjkFNhsME-Fepo75dTf9vQKfeRblBZjoSQrd7/items/01NKDM7HMOJTVYMDOSXFDK2QJDXCDI3WUK/retentionLabel
-```
-
-#### Response
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.error"
-} -->
-
-```http
-HTTP/1.1 400 Bad Request
-Content-Type: application/json
-
-{
-  "error": {
-    "code": "notSupported",
-    "message": "App-only caller is not supported to call this API.",
     "innerError": {
       "request-id": "12345678-1234-1234-1234-123456789012",
       "date": "2025-02-03T10:30:00"
