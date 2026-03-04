@@ -99,74 +99,7 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: SharePoint Embedded - Success with permissions
-
-For items in SharePoint Embedded (SPE) containers, the caller must have FullMask delegated container permissions.
-
-#### Request
-
-<!-- {
-  "blockType": "request",
-  "name": "driveItem_removeRetentionLabel_spe"
-}
--->
-
-```http
-DELETE https://graph.microsoft.com/beta/drives/b!t18F8ybsHUq1z3LTz8xvZqP8zaSWjkFNhsME-Fepo75dTf9vQKfeRblBZjoSQrd7/items/01NKDM7HMOJTVYMDOSXFDK2QJDXCDI3WUK/retentionLabel
-```
-
-#### Response
-
-<!-- {
-  "blockType": "response",
-  "truncated": true
-} -->
-
-```http
-HTTP/1.1 204 No Content
-```
-
-### Example 3: SharePoint Embedded - App-only not supported
-
-App-only authentication is not supported for SPE containers.
-
-#### Request
-
-<!-- {
-  "blockType": "request",
-  "name": "driveItem_removeRetentionLabel_spe_apponly_error"
-}
--->
-
-```http
-DELETE https://graph.microsoft.com/beta/drives/b!t18F8ybsHUq1z3LTz8xvZqP8zaSWjkFNhsME-Fepo75dTf9vQKfeRblBZjoSQrd7/items/01NKDM7HMOJTVYMDOSXFDK2QJDXCDI3WUK/retentionLabel
-```
-
-#### Response
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.error"
-} -->
-
-```http
-HTTP/1.1 400 Bad Request
-Content-Type: application/json
-
-{
-  "error": {
-    "code": "notSupported",
-    "message": "App-only caller is not supported to call this API.",
-    "innerError": {
-      "request-id": "12345678-1234-1234-1234-123456789012",
-      "date": "2025-02-03T10:30:00"
-    }
-  }
-}
-```
-
-### Example 4: SharePoint Embedded - Insufficient permissions
+### Example 2: Remove retention label from a driveItem failed (Insufficient permissions)
 
 The app+user caller does not have FullMask delegated container permissions.
 
@@ -206,15 +139,15 @@ Content-Type: application/json
 }
 ```
 
-### Example 5: Item not found or inaccessible
+### Example 3: Remove retention label from a driveItem failed (App-only not supported)
 
-The specified item could not be found or is no longer accessible.
+App-only authentication is not supported for SPE containers.
 
 #### Request
 
 <!-- {
   "blockType": "request",
-  "name": "driveItem_removeRetentionLabel_notfound_error"
+  "name": "driveItem_removeRetentionLabel_spe_apponly_error"
 }
 -->
 
@@ -231,13 +164,13 @@ DELETE https://graph.microsoft.com/beta/drives/b!t18F8ybsHUq1z3LTz8xvZqP8zaSWjkF
 } -->
 
 ```http
-HTTP/1.1 404 Not Found
+HTTP/1.1 400 Bad Request
 Content-Type: application/json
 
 {
   "error": {
-    "code": "itemNotFound",
-    "message": "The item could not be found or is no longer accessible.",
+    "code": "notSupported",
+    "message": "App-only caller is not supported to call this API.",
     "innerError": {
       "request-id": "12345678-1234-1234-1234-123456789012",
       "date": "2025-02-03T10:30:00"
