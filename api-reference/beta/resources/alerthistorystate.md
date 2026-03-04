@@ -6,7 +6,6 @@ author: "preetikr"
 ms.subservice: "security"
 doc_type: resourcePageType
 ms.date: 07/22/2024
-toc.title: alertHistoryState resource type (deprecated)
 ROBOTS: NOINDEX
 ---
 

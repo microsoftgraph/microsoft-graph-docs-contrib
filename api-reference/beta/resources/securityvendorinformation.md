@@ -6,7 +6,6 @@ author: "preetikr"
 ms.subservice: "security"
 doc_type: resourcePageType
 ms.date: 03/21/2024
-toc.title: securityVendorInformation resource type (deprecated)
 ROBOTS: NOINDEX
 ---
 

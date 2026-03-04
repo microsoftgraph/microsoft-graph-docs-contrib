@@ -6,7 +6,6 @@ author: "chinguyen1"
 ms.subservice: "security"
 doc_type: resourcePageType
 ms.date: 07/22/2024
-toc.title: networkConnection resource type (deprecated)
 ROBOTS: NOINDEX
 ---
 

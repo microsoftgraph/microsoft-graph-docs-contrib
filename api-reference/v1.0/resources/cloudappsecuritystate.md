@@ -6,7 +6,6 @@ author: "preetikr"
 ms.subservice: cloud-pc
 doc_type: resourcePageType
 ms.date: 03/21/2024
-toc.title: cloudAppSecurityState resource type (deprecated)
 ROBOTS: NOINDEX
 ---
 
