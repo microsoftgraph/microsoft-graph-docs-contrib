@@ -17,6 +17,7 @@ Namespace: microsoft.graph.networkaccess
 The association between a policy and a [filtering profile](../resources/networkaccess-filteringprofile.md). You can associate the following policies with a filtering profile:
 - [filteringPolicy](../resources/networkaccess-filteringpolicy.md)
 - [threatIntelligencePolicy](../resources/networkaccess-threatintelligencepolicy.md)
+- [tlsInspectionPolicy](../resources/networkaccess-tlsinspectionpolicy.md)
 
 This resource is an abstract type.
 

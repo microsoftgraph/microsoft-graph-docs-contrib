@@ -5043,6 +5043,8 @@ Possible values for user account types (group membership), per Windows definitio
 | samAccountName |
 | unknownFutureValue |
 
+
+
 ### samlAttributeNameFormat values
 
 | Member |

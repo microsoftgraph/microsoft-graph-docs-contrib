@@ -38,9 +38,10 @@ Inherits from [protectionPolicyBase](../resources/protectionpolicybase.md).
 |isEnabled|Boolean|Indicates whether the policy is enabled. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the person who last modified the policy. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the policy was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
+|offboardRequestedDateTime|DateTimeOffset|The date and time when offboarding was requested for the protection policy. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
 |protectionPolicyArtifactCount|[protectionPolicyArtifactCount](../resources/protectionpolicyartifactcount.md)|The count of artifacts in the protection policy by status. Returned only on `$select`. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
 |retentionSettings|[retentionSetting](../resources/retentionsetting.md) collection|Contains the retention setting details for the policy. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
-|status|[protectionPolicyStatus](../resources/protectionpolicybase.md#protectionpolicystatus-values)|Status of the policy. The value is the aggregated status of the protection units. The possible values are: `inactive`, `activeWithErrors`, `updating`, `active`, `unknownFutureValue`. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
+|status|[protectionPolicyStatus](../resources/protectionpolicybase.md#protectionpolicystatus-values)|Status of the policy. The value is the aggregated status of the protection units. The possible values are: `inactive`, `activeWithErrors`, `updating`, `active`, `unknownFutureValue`, `offboardRequested`, `offboarded`. You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `offboardRequested`, `offboarded`. Inherited from [protectionPolicyBase](../resources/protectionpolicybase.md).|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -68,6 +69,7 @@ The following JSON representation shows the resource type.
   "isEnabled": "Boolean",
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
+  "offboardRequestedDateTime": "String (timestamp)",
   "protectionPolicyArtifactCount": {"@odata.type": "microsoft.graph.protectionPolicyArtifactCount"},
   "retentionSettings": [{"@odata.type": "microsoft.graph.retentionSetting"}],
   "status": "String"
