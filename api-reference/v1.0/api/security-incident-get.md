@@ -55,7 +55,6 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["2972395"],
   "name": "get_incident"
 }
 -->
