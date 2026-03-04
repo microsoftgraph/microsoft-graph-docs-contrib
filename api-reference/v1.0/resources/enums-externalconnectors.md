@@ -111,26 +111,28 @@ Namespace: microsoft.graph.externalConnectors
 | lastModifiedDateTime
 | fileName
 | fileExtension
-| iconUrl
 | unknownFutureValue
-| containerName
-| containerUrl
-| assignedToPeople
-| dueDate
-| closedDate
-| closedBy
-| reportedBy
-| sprintName
-| severity
-| state
-| priority
-| secondaryId
-| itemParentId
-| parentUrl
-| tags
-| itemType
-| itemPath
-| numberOfReactions
+| iconUrl
+| personEmails
+| personAddresses
+| personAnniversaries
+| personName
+| personNote
+| personPhones
+| personCurrentPosition
+| personWebAccounts
+| personWebSite
+| personSkills
+| personProjects
+| personAccount
+| personAwards
+| personCertifications
+| personAssistants
+| personColleagues
+| personManager
+| personAlternateContacts
+| personEmergencyContacts
+
 
 ### propertyType values
 
