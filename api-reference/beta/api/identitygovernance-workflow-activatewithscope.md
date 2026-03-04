@@ -154,6 +154,6 @@ HTTP/1.1 406 NOT Acceptable
 {
   "error": {
     "code": "No valid users in activateUserScope supplied. 2 users were specified and none were valid.",
-    "message": "1",
+    "message": "1"
   }
 ```
