@@ -83,12 +83,12 @@ When you update structured properties such as **homeAddress**, you must pass the
 |otherAddress|[physicalAddress](../resources/physicaladdress.md)|Other addresses for the contact.|
 |parentFolderId|String|The ID of the contact's parent folder.|
 |personalNotes|String|The user's notes about the contact.|
-|primaryEmailAddress|[emailAddress](../resources/emailaddress.md)|The contact's primary email address.|
+|primaryEmailAddress|[emailAddress](../resources/emailaddress.md)|The contact's primary email address. This property is optional.|
 |profession|String|The contact's profession.|
-|secondaryEmailAddress|[emailAddress](../resources/emailaddress.md)|The contact's secondary email address.|
+|secondaryEmailAddress|[emailAddress](../resources/emailaddress.md)|The contact's secondary email address. This property is optional.|
 |spouseName|String|The name of the contact's spouse/partner.|
 |surname|String|The contact's surname.|
-|tertiaryEmailAddress|[emailAddress](../resources/emailaddress.md)|The contact's tertiary email address.|
+|tertiaryEmailAddress|[emailAddress](../resources/emailaddress.md)|The contact's tertiary email address. This property is optional.|
 |title|String|The contact's title.|
 |yomiCompanyName|String|The phonetic Japanese company name of the contact. This property is optional.|
 |yomiGivenName|String|The phonetic Japanese given name (first name) of the contact. This property is optional.|
