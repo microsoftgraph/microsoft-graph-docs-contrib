@@ -39,6 +39,9 @@ Added the [targetAgentIdentitySponsorsOrOwners](/graph/api/resources/targetagent
 
 ## February 2026: New and generally available
 
+### External data connections
+
+Added 19 people domain semantic labels to the [label](/graph/api/resources/externalconnectors-enums#label-values) enumeration for Microsoft 365 Copilot connectors. These labels enable developers to map people profile data from external systems to standardized Microsoft Graph properties. Use these labels in [schema](/graph/api/resources/externalconnectors-schema) definitions to improve discoverability and integration of people data in Microsoft 365 Copilot experiences. The new labels include: `personEmails`, `personAddresses`, `personAnniversaries`, `personName`, `personNote`, `personPhones`, `personCurrentPosition`, `personWebAccounts`, `personWebSite`, `personSkills`, `personProjects`, `personAccount`, `personAwards`, `personCertifications`, `personAssistants`, `personColleagues`, `personManager`, `personAlternateContacts`, and `personEmergencyContacts`.
 ### Files
 
 Updated the admin consent requirement for the following delegated permissions related to SharePoint Embedded file storage container management:
