@@ -28,14 +28,17 @@ In Global Secure Access (GSA) a connection represents multiple [networkAccessTra
 |agentVersion|String|The version of the client that initiated the connection.|
 |applicationSnapshot|[microsoft.graph.networkaccess.applicationSnapshot](networkaccess-applicationsnapshot.md)|**appId** (or client ID) of the destination Microsoft Entra application.|
 |createdDateTime|DateTimeOffset|The time the connection was created.|
+|crossTenantAccessType|microsoft.graph.networkaccess.crossTenantAccessType|Cross tenant access details, for B2B scenarios. The possible values are: `none`, `b2bCollaboration`, `unknownFutureValue`.|
 |destinationFqdn|String|The destination FQDN of the connection.|
 |destinationIp|String|The destination IP of the connection.|
 |destinationPort|Int32|The destination port of the connection.|
 |deviceCategory|microsoft.graph.networkaccess.deviceCategory|The category of the device. The possible values are: `client`, `branch`, `unknownFutureValue`, `remoteNetwork`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `remoteNetwork`.|
 |deviceId|String|The DeviceID.|
+|deviceJoinType|microsoft.graph.networkaccess.deviceJoinType|Device registration type, for BYOD scenarios. The possible values are: `none`, `microsoftEntraJoined`, `microsoftEntraRegistered`, `unknownFutureValue`.|
 |deviceOperatingSystem|String|The device operating system type.|
 |deviceOperatingSystemVersion|String|The device operating system version.|
 |endDateTime|DateTimeOffset|The time the connection was terminated.|
+|homeTenantId|String|The identifier of the home tenant, for Entra B2B scenarios.|
 |id|String|The unique identifier for the connection. Inherited from [microsoft.graph.entity](entity.md).|
 |initiatingProcessName|String|The process initiating the traffic connection.|
 |lastUpdateDateTime|DateTimeOffset|When the connection was last updated.|
@@ -103,6 +106,9 @@ The following JSON representation shows the resource type.
   "userPrincipalName": "String",
   "transportProtocol": "String",
   "networkProtocol": "String",
-  "popProcessingRegion": "String"
+  "popProcessingRegion": "String",
+  "homeTenantId": "String",
+  "crossTenantAccessType": "String",
+  "deviceJoinType": "String"
 }
 ```
