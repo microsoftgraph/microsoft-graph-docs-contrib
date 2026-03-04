@@ -5,7 +5,7 @@ author: "LeonardoMele-MSFT"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
-ms.date: 25/2/2026
+ms.date: 03/03/2026
 ---
 
 # List incidents
