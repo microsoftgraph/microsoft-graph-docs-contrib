@@ -6,16 +6,17 @@ author: "preetikr"
 ms.subservice: "security"
 doc_type: resourcePageType
 ms.date: 07/16/2024
+toc.title: alert resource type (deprecated)
+ROBOTS: NOINDEX
 ---
 
 # alert resource type (deprecated)
 
 Namespace: microsoft.graph
 
-> [!NOTE]
-> The legacy alerts API is deprecated and will be removed by April 2026. We recommend that you migrate to the new [alerts and incidents](/graph/api/resources/security-alert) API.
+[!INCLUDE [security-alerts-v1-deprecation](../includes/security-alerts-v1-deprecation.md)]
 
-This resource corresponds to the first generation of alerts in the Microsoft Graph security API, representing potential security issues within a customer's tenant that Microsoft or a partner security solution identifies.
+This resource corresponds to the first generationof alerts in the Microsoft Graph security API, representing potential security issues within a customer's tenant that Microsoft or a partner security solution identifies.
 
 This type of alerts federates calling of supported Azure and Microsoft 365 Defender security providers listed in [Use the Microsoft Graph security API](security-api-overview.md#legacy-alerts). It aggregates common alert data among the different domains to allow applications to unify and streamline management of security issues across all integrated solutions.
 

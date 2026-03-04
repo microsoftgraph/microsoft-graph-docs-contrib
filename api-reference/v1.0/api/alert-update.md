@@ -1,18 +1,21 @@
 ---
-title: "Update alert"
+title: "Update alert (deprecated)"
 description: "Update an editable alert property within any integrated solution to keep alert status and assignments in sync across solutions."
 ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: "security"
 doc_type: apiPageType
 ms.date: 04/04/2024
+ROBOTS: NOINDEX
 ---
 
-# Update alert
+# Update alert (deprecated)
 
 Namespace: microsoft.graph
 
-Update an editable **alert** property within any integrated solution to keep alert status and assignments in sync across solutions. This method updates any solution that has a record of the referenced alert ID.
+[!INCLUDE [security-alerts-v1-deprecation](../includes/security-alerts-v1-deprecation.md)]
+
+Update an editable **alert** propertywithin any integrated solution to keep alert status and assignments in sync across solutions. This method updates any solution that has a record of the referenced alert ID.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
