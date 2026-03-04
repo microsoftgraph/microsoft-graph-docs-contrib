@@ -143,7 +143,16 @@ Reference the [copilot-instructions.md](.github/copilot-instructions.md) file fo
 - Changelog files validation
 - Version-specific guidelines (v1.0 vs beta)
 
----
+Reference the [author-api-docs.prompt.md](.github/prompts/author-api-docs.prompt.md) file for quality checklist items related to the different scenarios:
+- [Quality checklist](author-api-docs.prompt.md#author-api-docs.prompt.md#quality-checklist-1)
+- [Promotion from beta to v1.0](author-api-docs.prompt.md#quality-checklist-for-promotion-scenarios)
+- [Deprecation scenarios](author-api-docs.prompt.md#quality-checklist)
+- Documentation standards to follow for:
+  - [General guidelines](author-api-docs.prompt.md#general-guidelines)
+  - [API method reference files](author-api-docs.prompt.md#api-method-reference-files)
+  - [Resource reference files](author-api-docs.prompt.md#resource-reference-files)
+  - [Version-specific guidelines](author-api-docs.prompt.md#version-specific-guidelines)
+  - [General rules (applies to both resource and API files)](author-api-docs.prompt.md#general-rules-applies-to-both-resource-and-api-files)
 
 ## File Type-Specific Review Checklist
 
