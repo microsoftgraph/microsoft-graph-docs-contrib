@@ -22,12 +22,6 @@ items:
     href: ../../api/todotasklist-list-tasks.md
   - name: Create task
     href: ../../api/todotasklist-post-tasks.md
-  - name: Extended properties
-    items:
-    - name: Create single-value property
-      href: ../../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md
-    - name: Get single-value property
-      href: ../../api/singlevaluelegacyextendedproperty-get.md
 - name: To-do task
   items:
   - name: To-do task

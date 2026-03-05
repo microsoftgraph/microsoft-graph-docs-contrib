@@ -115,6 +115,10 @@ Added [driveItem: archive](/graph/api/driveitem-archive?view=graph-rest-beta&pre
 
 Added the **principal** and **principalCollection** data types to the [externalConnection](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true) resource to specify the data type for people‑related property items in the external connection.
 
+### Tasks and plans
+
+Use the extended properties API to store or get custom data in the [todoTaskList](/graph/api/resources/todotasklist?view=graph-rest-beta&preserve-view=true#methods) resource.
+
 ### Security | Data security and compliance
 
 - Deprecated the **accessedResources** property on [processConversationMetadata](/graph/api/resources/processconversationmetadata?view=graph-rest-beta&preserve-view=true) in favor of the **accessedResources_v2** property.
