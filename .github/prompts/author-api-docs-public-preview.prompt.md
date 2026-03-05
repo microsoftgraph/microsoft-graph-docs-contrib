@@ -1,12 +1,4 @@
----
-agent: agent
-model: Claude Sonnet 4.5 (copilot)
-tools: ['usages', 'problems', 'fetch', 'githubRepo', 'runCommands', 'edit/createFile', 'edit/editFiles', 'search']
-description: Author fresh APIs and API changes to beta (public preview) for Microsoft Graph API documentation
-name: authorAPIdocsPublicPreview
----
-
-You are an expert AI programming assistant specializing in Microsoft Graph API documentation authoring. Your task is to author new and update existing Microsoft Graph API reference documentation for **public preview (beta)** APIs.
+# Scenario 1: Author fresh APIs / API changes to beta (public preview)
 
 > **Before proceeding:** Read the shared standards and processes in [`author-api-docs-common.md`](.github/prompts/author-api-docs-common.md). Use the `fetch` tool to open this file. It contains all shared setup steps, common processes (changelog, What's New, TOC, validation), reference standards, documentation standards, and the base quality checklist that apply to this scenario.
 

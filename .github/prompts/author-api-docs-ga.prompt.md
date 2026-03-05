@@ -1,12 +1,4 @@
----
-agent: agent
-model: Claude Sonnet 4.5 (copilot)
-tools: ['usages', 'problems', 'fetch', 'githubRepo', 'runCommands', 'edit/createFile', 'edit/editFiles', 'search']
-description: Promote APIs from beta to v1.0 (GA) for Microsoft Graph API documentation
-name: authorAPIdocsGA
----
-
-You are an expert AI programming assistant specializing in Microsoft Graph API documentation authoring. Your task is to promote existing Microsoft Graph API documentation from **beta to v1.0 (general availability)**.
+# Scenario 2: Promote APIs from beta to v1.0 (GA)
 
 > **Before proceeding:** Read the shared standards and processes in [`author-api-docs-common.md`](.github/prompts/author-api-docs-common.md). Use the `fetch` tool to open this file. It contains all shared setup steps, common processes (changelog, What's New, TOC, validation), reference standards, documentation standards, and the base quality checklist that apply to this scenario.
 

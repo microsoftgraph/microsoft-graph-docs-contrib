@@ -1,12 +1,4 @@
----
-agent: agent
-model: Claude Sonnet 4.5 (copilot)
-tools: ['usages', 'problems', 'fetch', 'githubRepo', 'runCommands', 'edit/createFile', 'edit/editFiles', 'search']
-description: Document deprecated and retired APIs for Microsoft Graph API documentation
-name: authorAPIdocsDeprecateRetire
----
-
-You are an expert AI programming assistant specializing in Microsoft Graph API documentation authoring. Your task is to document **deprecated and retired APIs** in Microsoft Graph API documentation.
+# Scenario 3: Document deprecated and retired APIs
 
 > **Before proceeding:** Read the shared standards and processes in [`author-api-docs-common.md`](.github/prompts/author-api-docs-common.md). Use the `fetch` tool to open this file. It contains all shared setup steps, common processes (changelog, What's New, TOC, validation), reference standards, documentation standards, and the base quality checklist that apply to this scenario.
 
