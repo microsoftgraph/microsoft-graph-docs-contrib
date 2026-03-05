@@ -1,6 +1,6 @@
 # Scenario 4: General documentation tasks
 
-> **Before proceeding:** Read the shared standards and processes in [`author-api-docs-common.md`](.github/prompts/author-api-docs-common.md). Use the `fetch` tool to open this file. It contains all shared setup steps, common processes (changelog, What's New, TOC, validation), reference standards, documentation standards, and the base quality checklist that apply to this scenario.
+> **Before proceeding:** Read the shared standards and processes in [`common.md`](.github/prompts/author-api-docs/common.md). Use the `fetch` tool to open this file. It contains all shared setup steps, common processes (changelog, What's New, TOC, validation), reference standards, documentation standards, and the base quality checklist that apply to this scenario.
 
 ---
 
@@ -41,7 +41,7 @@ Since this scenario is flexible and task-driven, the typical inputs (doc stubs, 
 
 ## Guidelines and standards
 
-When working on general documentation tasks, you MUST adhere to all Microsoft Graph API documentation standards and guidelines defined in [`author-api-docs-common.md`](author-api-docs-common.md).
+When working on general documentation tasks, you MUST adhere to all Microsoft Graph API documentation standards and guidelines defined in [`common.md`](common.md).
 
 Additionally, reference these companion files for review standards:
 - **review-api-docs.prompt.md:** Microsoft Graph REST API Documentation Review Guidelines
@@ -50,7 +50,7 @@ Additionally, reference these companion files for review standards:
 **Key principles to remember:**
 - All filenames must be lowercase
 - Properties and relationships must be in alphabetical order
-- Follow [namespace qualification rules](author-api-docs-common.md#namespace-qualification) for types in subnamespaces
+- Follow [namespace qualification rules](common.md#namespace-qualification) for types in subnamespaces
 - Use appropriate deprecation patterns when updating deprecated content
 - Maintain consistent formatting (headings, tables, links)
 - Follow beta disclaimer requirements for beta documentation
@@ -67,7 +67,7 @@ Additionally, reference these companion files for review standards:
 2. **Gather context:**
    - Read relevant files mentioned in the task
    - Search for related documentation to understand patterns and existing implementations
-   - Review guidelines from author-api-docs-common.md, review-api-docs.prompt.md, and copilot-instructions.md that apply to the task
+   - Review guidelines from common.md, review-api-docs.prompt.md, and copilot-instructions.md that apply to the task
 
 3. **Plan the approach:**
    - Break down complex tasks into manageable steps
@@ -87,7 +87,7 @@ Additionally, reference these companion files for review standards:
 
 ## When to update changelog and What's new
 
-For details on the changelog and What's new processes, see [author-api-docs-common.md](author-api-docs-common.md).
+For details on the changelog and What's new processes, see [common.md](common.md).
 
 **Update changelog and What's new ONLY when:**
 - The task explicitly involves documenting API changes that should be announced
@@ -104,12 +104,12 @@ If unsure whether to update changelog/What's new, ask the author for clarificati
 
 ## Quality checklist
 
-In addition to the [base quality checklist](author-api-docs-common.md#base-quality-checklist), verify:
+In addition to the [base quality checklist](common.md#base-quality-checklist), verify:
 
 - [ ] Task requirements fully understood and addressed
-- [ ] All relevant guidelines from author-api-docs-common.md, review-api-docs.prompt.md, and copilot-instructions.md have been followed
+- [ ] All relevant guidelines from common.md, review-api-docs.prompt.md, and copilot-instructions.md have been followed
 - [ ] Examples use pseudo-values, not data types
-- [ ] [General Formatting Rules](author-api-docs-common.md#general-formatting-rules) followed consistently
-- [ ] [Namespace qualification rules](author-api-docs-common.md#namespace-qualification) applied correctly
-- [ ] [Validation](author-api-docs-common.md#validation) completed successfully
+- [ ] [General Formatting Rules](common.md#general-formatting-rules) followed consistently
+- [ ] [Namespace qualification rules](common.md#namespace-qualification) applied correctly
+- [ ] [Validation](common.md#validation) completed successfully
 - [ ] Changelog, What's new, and TOC mapping updated only if appropriate

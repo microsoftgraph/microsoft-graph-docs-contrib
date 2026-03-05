@@ -1,6 +1,6 @@
 # Scenario 3: Document deprecated and retired APIs
 
-> **Before proceeding:** Read the shared standards and processes in [`author-api-docs-common.md`](.github/prompts/author-api-docs-common.md). Use the `fetch` tool to open this file. It contains all shared setup steps, common processes (changelog, What's New, TOC, validation), reference standards, documentation standards, and the base quality checklist that apply to this scenario.
+> **Before proceeding:** Read the shared standards and processes in [`common.md`](.github/prompts/author-api-docs/common.md). Use the `fetch` tool to open this file. It contains all shared setup steps, common processes (changelog, What's New, TOC, validation), reference standards, documentation standards, and the base quality checklist that apply to this scenario.
 
 ---
 
@@ -22,7 +22,7 @@
 
 ## Prerequisites
 
-**See [temp-docstubs Folder](author-api-docs-common.md#temp-docstubs-folder)** for instructions on setting up the temp-docstubs folder.
+**See [temp-docstubs Folder](common.md#temp-docstubs-folder)** for instructions on setting up the temp-docstubs folder.
 
 For this scenario, the author should add these files to `temp-docstubs`:
 - Documentation Plan documenting what is being deprecated
@@ -184,9 +184,9 @@ The Documentation Plan may contain a mix of deprecation and new API documentatio
 
 ## Supporting updates
 
-**Changelog:** Change type: "Deprecation". Include API set/entities, link to topics and blog post. See [Updating the Changelog](author-api-docs-common.md#updating-the-changelog).
+**Changelog:** Change type: "Deprecation". Include API set/entities, link to topics and blog post. See [Updating the Changelog](common.md#updating-the-changelog).
 
-**What's New:** Describe deprecation, link to deprecated API and alternative, link to blog post. See [Updating What's New](author-api-docs-common.md#updating-whats-new).
+**What's New:** Describe deprecation, link to deprecated API and alternative, link to blog post. See [Updating What's New](common.md#updating-whats-new).
 
 ---
 
@@ -210,7 +210,7 @@ When combining deprecation with new APIs/promotions:
 
 ## Quality checklist
 
-In addition to the [base quality checklist](author-api-docs-common.md#base-quality-checklist), verify:
+In addition to the [base quality checklist](common.md#base-quality-checklist), verify:
 - [ ] "(deprecated)" added to H1 titles or table entries as appropriate
 - [ ] Deprecation banners added (resources, methods, enums with own topics): CAUTION alert after namespace, includes milestone/alternative/blog link
 - [ ] Include files used for banner text (best practice)

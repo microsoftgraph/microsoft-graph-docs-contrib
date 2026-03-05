@@ -1,6 +1,6 @@
 # Scenario 2: Promote APIs from beta to v1.0 (GA)
 
-> **Before proceeding:** Read the shared standards and processes in [`author-api-docs-common.md`](.github/prompts/author-api-docs-common.md). Use the `fetch` tool to open this file. It contains all shared setup steps, common processes (changelog, What's New, TOC, validation), reference standards, documentation standards, and the base quality checklist that apply to this scenario.
+> **Before proceeding:** Read the shared standards and processes in [`common.md`](.github/prompts/author-api-docs/common.md). Use the `fetch` tool to open this file. It contains all shared setup steps, common processes (changelog, What's New, TOC, validation), reference standards, documentation standards, and the base quality checklist that apply to this scenario.
 
 ---
 
@@ -26,7 +26,7 @@
 
 ## Prerequisites
 
-**See [temp-docstubs Folder](author-api-docs-common.md#temp-docstubs-folder)** for instructions on setting up the temp-docstubs folder.
+**See [temp-docstubs Folder](common.md#temp-docstubs-folder)** for instructions on setting up the temp-docstubs folder.
 
 For this scenario, the author should add these files to `temp-docstubs`:
 - Documentation Plan documenting what is being promoted
@@ -89,7 +89,7 @@ For each copied file, make the following updates:
    - This include should be deleted for v1.0 GA documentation
 
 2. **Remove SDK snippet links** from the Example Request section:
-   - See [Handling Code Snippets](author-api-docs-common.md#handling-code-snippets-in-examples) for complete guidance
+   - See [Handling Code Snippets](common.md#handling-code-snippets-in-examples) for complete guidance
    - Remove the `# [HTTP](#tab/http)` tab
    - Remove the tab boundary marker (`---`)
    - Remove all language-specific SDK snippet include links (e.g., `[!INCLUDE [sample-code](../includes/snippets/csharp/...)]`)
@@ -201,11 +201,11 @@ When only some properties, methods, or relationships of a resource are being pro
      - **Parallelism hint:** TOC updates, changelog, and What's New can be updated in parallel.
    - Track progress and mark items complete
 
-**See [Updating the Changelog](author-api-docs-common.md#updating-the-changelog)** for complete instructions. Note: For promotion scenarios, use Version="v1.0" in changelog entries.
+**See [Updating the Changelog](common.md#updating-the-changelog)** for complete instructions. Note: For promotion scenarios, use Version="v1.0" in changelog entries.
 
-**See [Updating What's New](author-api-docs-common.md#updating-whats-new)** for complete instructions. Important: Link to v1.0 documentation (no query strings) and note the API was promoted from beta to v1.0.
+**See [Updating What's New](common.md#updating-whats-new)** for complete instructions. Important: Link to v1.0 documentation (no query strings) and note the API was promoted from beta to v1.0.
 
-**See [Updating the TOC](author-api-docs-common.md#updating-the-table-of-contents-toc)** for complete instructions. Important: Add to `api-reference/v1.0/toc/toc.mapping.json` and mirror the beta TOC structure for consistency
+**See [Updating the TOC](common.md#updating-the-table-of-contents-toc)** for complete instructions. Important: Add to `api-reference/v1.0/toc/toc.mapping.json` and mirror the beta TOC structure for consistency
 
 4. **Validate all changes:**
    - Verify beta disclaimers are removed
@@ -214,11 +214,11 @@ When only some properties, methods, or relationships of a resource are being pro
    - Verify examples work with v1.0 endpoint
    - Check for markdown lint errors
    - Ensure compliance with documentation standards
-   - See [Validation](author-api-docs-common.md#validation) for complete validation instructions
+   - See [Validation](common.md#validation) for complete validation instructions
 
 ## Quality checklist
 
-In addition to the [base quality checklist](author-api-docs-common.md#base-quality-checklist), verify:
+In addition to the [base quality checklist](common.md#base-quality-checklist), verify:
 
 **For resource files promoted to v1.0:**
 - [ ] File copied from beta\resources to v1.0\resources

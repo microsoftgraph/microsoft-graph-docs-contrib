@@ -62,25 +62,25 @@ Once the author selects or confirms a scenario, follow the instructions below.
 
 ### Scenario 1: Public Preview
 
-Open and follow the instructions in **[`author-api-docs-public-preview.prompt.md`](.github/prompts/author-api-docs-public-preview.prompt.md)**.
+Open and follow the instructions in **[`public-preview.md`](.github/prompts/author-api-docs/public-preview.md)**.
 
 Use the `fetch` tool to read this file, then execute its workflow.
 
 ### Scenario 2: GA Promotion
 
-Open and follow the instructions in **[`author-api-docs-ga.prompt.md`](.github/prompts/author-api-docs-ga.prompt.md)**.
+Open and follow the instructions in **[`ga.md`](.github/prompts/author-api-docs/ga.md)**.
 
 Use the `fetch` tool to read this file, then execute its workflow.
 
 ### Scenario 3: Deprecation/Retirement
 
-Open and follow the instructions in **[`author-api-docs-deprecate-retire.prompt.md`](.github/prompts/author-api-docs-deprecate-retire.prompt.md)**.
+Open and follow the instructions in **[`deprecate-retire.md`](.github/prompts/author-api-docs/deprecate-retire.md)**.
 
 Use the `fetch` tool to read this file, then execute its workflow.
 
 ### Scenario 4: General
 
-Open and follow the instructions in **[`author-api-docs-general.prompt.md`](.github/prompts/author-api-docs-general.prompt.md)**.
+Open and follow the instructions in **[`general.md`](.github/prompts/author-api-docs/general.md)**.
 
 Use the `fetch` tool to read this file, then execute its workflow.
 
@@ -88,4 +88,4 @@ Use the `fetch` tool to read this file, then execute its workflow.
 
 ## Important: Shared standards
 
-All scenarios share common setup steps, processes, reference standards, and quality checklists defined in **[`author-api-docs-common.md`](.github/prompts/author-api-docs-common.md)**. Each scenario file will instruct you to read this file before proceeding.
+All scenarios share common setup steps, processes, reference standards, and quality checklists defined in **[`common.md`](.github/prompts/author-api-docs/common.md)**. Each scenario file will instruct you to read this file before proceeding.
