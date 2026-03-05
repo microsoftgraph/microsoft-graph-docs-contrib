@@ -62,6 +62,8 @@ If successful, this action returns a `204 No Content` response code.
 
 ## Examples
 
+### Example 1: Activate a workflow with a specific scope of 2 users
+
 ### Request
 
 The following example shows a request.
@@ -115,4 +117,39 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 204 No Content
+```
+
+
+### Example 2: Activate a workflow with a specific scope of 2 users who dont exist
+
+### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "lifecycleworkflows_workflowthis.activatescope_invalid"
+}
+-->
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows/2f0dcb02-65d9-4369-bad5-a3174538c5ff/activatewithscope
+Content-Type: application/json
+
+{
+    "subjects": [ 
+        { "id": "2ea4c363-4b85-4529-b2ec-53b64308f39f"},
+        { "id": "44fc5392-9485-4348-871e-2ea17cc0a1b8"}
+    ]
+}
+```
+
+### Response
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+```json
+HTTP/1.1 406 NOT Acceptable
 ```
