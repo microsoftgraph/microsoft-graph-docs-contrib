@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+ms.date: 03/05/2026
 toc.title: "MCAS alerts audit record"
 ---
 # mcasAlertsAuditRecord resource type

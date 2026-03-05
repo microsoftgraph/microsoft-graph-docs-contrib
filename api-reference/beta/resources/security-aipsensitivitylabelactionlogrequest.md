@@ -5,6 +5,7 @@ author: "diksha27"
 ms.subservice: compliance
 ms.localizationpriority: medium
 doc_type: resourcePageType
+ms.date: 03/05/2026
 toc.title: "AIP sensitivity label action log request"
 ---
 # aipSensitivityLabelActionLogRequest resource type

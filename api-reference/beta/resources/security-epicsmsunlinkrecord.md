@@ -5,6 +5,7 @@ author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
 doc_type: resourcePageType
+ms.date: 03/05/2026
 toc.title: "Epic SMS unlink record"
 ---
 # epicSMSUnlinkRecord resource type

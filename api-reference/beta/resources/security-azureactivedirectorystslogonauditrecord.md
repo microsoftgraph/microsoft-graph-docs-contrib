@@ -5,6 +5,7 @@ author: "diksha27"
 ms.subservice: compliance
 ms.localizationpriority: medium
 doc_type: resourcePageType
+ms.date: 03/05/2026
 toc.title: "Azure active directory STS logon audit record"
 ---
 # azureActiveDirectorySTSLogonAuditRecord resource type
