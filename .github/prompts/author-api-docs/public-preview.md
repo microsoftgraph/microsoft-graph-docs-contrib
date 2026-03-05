@@ -386,6 +386,13 @@ When a new relationship is added to an existing resource:
 | Single feature/related resources in same namespace | Option 2: Parent resource |
 | Enum with many members requiring descriptions or multiple resources use enum | Option 3: Separate topic |
 
+**Auto-selection heuristics** — use these to select an option automatically when the Documentation Plan doesn't specify:
+1. If the doc stub defines the enum in `enums.md` or `enums-{subnamespace}.md` → **Option 1**
+2. If the Documentation Plan says "with descriptions" and the enum has ≤10 members → **Option 2**
+3. If the Documentation Plan says "with descriptions" and the enum has >10 members → **Option 3**
+4. If multiple unrelated resources reference the same enum → **Option 3**
+5. When uncertain, default to **Option 1** (simplest) and flag for author review
+
 #### Option 1: Use global enum file (Preferred for simple enums)
 
 **For microsoft.graph namespace:**
@@ -606,10 +613,12 @@ Create a dedicated topic for the enumeration. This option is rarely applicable.
      - Update property descriptions that reference updated enumerations
      - Then add new relationships to existing resources
      - **Parallelism hint:** Independent resource files can be processed in parallel.
+     - **⏸ Phase gate:** Output a phase status summary. Confirm with the author before proceeding to Phase 2.
    - **Phase 2 - API files:**
      - Process new API files
      - Update existing CREATE/UPDATE API files if new properties were added
      - For evolvable enums with members after unknownFutureValue: Optionally update GET API Request headers sections
+     - **⏸ Phase gate:** Output a phase status summary. Confirm with the author before proceeding to Phase 3.
    - **Phase 3 - Supporting files:**
      - Copy permissions files as needed
      - Update changelog, What's New, and TOC as applicable

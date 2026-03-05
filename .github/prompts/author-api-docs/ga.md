@@ -185,6 +185,7 @@ When only some properties, methods, or relationships of a resource are being pro
      - Copy all API method files from beta to v1.0
      - Copy all permission include files from beta to v1.0
      - **Parallelism hint:** Independent file copy operations can be done in parallel.
+     - **⏸ Phase gate:** Output a phase status summary. Confirm with the author before proceeding to Phase 2.
    - **Phase 2 - Update copied files:**
      - Remove beta disclaimers from all files
      - Update version references from /beta to /v1.0
@@ -192,6 +193,7 @@ When only some properties, methods, or relationships of a resource are being pro
      - For API files: Remove SDK snippets, verify examples
      - For resource files: Update Methods and Properties tables if applicable
      - Do not update any descriptions unless explicitly guided
+     - **⏸ Phase gate:** Output a phase status summary. Confirm with the author before proceeding to Phase 3.
    - **Phase 3 - Supporting updates:**
      - Update toc.mappings.json
      - Update concept topics if applicable
