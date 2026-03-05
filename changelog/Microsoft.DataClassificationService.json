@@ -3,6 +3,94 @@
     {
       "ChangeList": [
         {
+          "Id": "a7b8c9d0-e1f2-4567-8901-234567890abc",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "usageRights",
+          "ChangeType": "Addition",
+          "Description": "Added the [usageRights](https://learn.microsoft.com/graph/api/resources/usagerights?view=graph-rest-beta) enumeration type to define user's usage rights when content is protected with a sensitivity label.",
+          "Target": "usageRights"
+        },
+        {
+          "Id": "a7b8c9d0-e1f2-4567-8901-234567890abc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "labelContentRight",
+          "ChangeType": "Addition",
+          "Description": "Added the [labelContentRight](https://learn.microsoft.com/graph/api/resources/labelcontentright?view=graph-rest-beta) resource type to represent rights associated with specific content.",
+          "Target": "labelContentRight"
+        }
+      ],
+      "Id": "a7b8c9d0-e1f2-4567-8901-234567890abc",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-04-21T00:00:00.0000000Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Information protection"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a7b8c9d0-e1f2-4567-8901-234567890abc",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "usageRights",
+          "ChangeType": "Addition",
+          "Description": "Added the [usageRights](https://learn.microsoft.com/graph/api/resources/usagerights?view=graph-rest-v1.0) enumeration type to define user's usage rights when content is protected with a sensitivity label.",
+          "Target": "usageRights"
+        },
+        {
+          "Id": "a7b8c9d0-e1f2-4567-8901-234567890abc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "labelContentRight",
+          "ChangeType": "Addition",
+          "Description": "Added the [labelContentRight](https://learn.microsoft.com/graph/api/resources/labelcontentright?view=graph-rest-v1.0) resource type to represent rights associated with specific content.",
+          "Target": "labelContentRight"
+        }
+      ],
+      "Id": "a7b8c9d0-e1f2-4567-8901-234567890abc",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2025-04-21T00:00:00.0000000Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Information protection"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "869d53b7-a12d-43d9-9168-e8d67d223deb",
+          "ApiChange": "Member",
+          "ChangedApiName": "labelNotFoundException",
+          "ChangeType": "Addition",
+          "Description": "Added the `labelNotFoundException` member to the **usageRights** enumeration.",
+          "Target": "usageRights"
+        }
+      ],
+      "Id": "869d53b7-a12d-43d9-9168-e8d67d223deb",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-02-20T21:44:02.3601866Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "869d53b7-a12d-43d9-9168-e8d67d223deb",
+          "ApiChange": "Member",
+          "ChangedApiName": "labelNotFoundException",
+          "ChangeType": "Addition",
+          "Description": "Added the `labelNotFoundException` member to the **usageRights** enumeration.",
+          "Target": "usageRights"
+        }
+      ],
+      "Id": "869d53b7-a12d-43d9-9168-e8d67d223deb",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-02-20T21:44:02.3601866Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "f96a028e-2d2a-441a-a2c3-8801ca553fa4",
           "ApiChange": "Enumeration",
           "ChangedApiName": "resourceAccessStatus",
