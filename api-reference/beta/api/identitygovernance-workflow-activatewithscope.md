@@ -134,10 +134,18 @@ POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/work
 Content-Type: application/json
 
 {
-    "subjects": [ 
-        { "id": "2ea4c363-4b85-4529-b2ec-53b64308f39f"},
-        { "id": "44fc5392-9485-4348-871e-2ea17cc0a1b8"}
-    ]
+ "scope": {
+  "@odata.type": "microsoft.graph.identityGovernance.activateProcessingResultScope",
+  "processingResults": [
+   {
+    "id": "abc12345-265a-4e8f-8d61-94a2dcd2d395_1_78799042-265a-4e8f-8d61-94a2dcd2d395_638927021459371237_0cdd8963-aaaa-4632-a1f2-aaaa7230aaaa"
+   },
+   {
+    "id": "abc12345-265a-4e8f-8d61-94a2dcd2d395_1_78799042-265a-4e8f-8d61-94a2dcd2d395_388131231459357126_aaaa8963-1c30-4632-aaaa-ac96723069cb"
+   }
+  ],
+  "taskScope": "allTasks"
+ }
 }
 ```
 
