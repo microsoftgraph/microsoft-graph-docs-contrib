@@ -1,6 +1,6 @@
 ---
 title: "caseInvestigation resource type"
-description: "Represents a record related to caseInvestigation recordType."
+description: "Represents an audit record for eDiscovery case investigation events."
 author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a record related to caseInvestigation recordType.
+Represents an audit record for eDiscovery case investigation events. This resource captures information about investigation activities within eDiscovery cases, including evidence collection, analysis, and review operations.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

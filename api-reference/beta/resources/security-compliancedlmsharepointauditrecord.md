@@ -1,6 +1,6 @@
 ---
 title: "complianceDLMSharePointAuditRecord resource type"
-description: "Represents a record related to complianceDLMSharePointAuditRecord recordType."
+description: "Represents an audit record for Compliance Data Lifecycle Management (DLM) SharePoint events."
 author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a record related to complianceDLMSharePointAuditRecord recordType.
+Represents an audit record for Compliance Data Lifecycle Management (DLM) SharePoint events. This resource captures information about data lifecycle management activities applied to SharePoint content, including retention and deletion actions.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

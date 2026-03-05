@@ -1,6 +1,6 @@
 ---
 title: "aipFileDeleted resource type"
-description: "Represents a record related to aipFileDeleted recordType."
+description: "Represents an audit record for Azure Information Protection (AIP) file deletion events."
 author: "diksha27"
 ms.subservice: compliance
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a record related to aipFileDeleted recordType.
+Represents an audit record for Azure Information Protection (AIP) file deletion events. This resource captures information about files that were deleted while under AIP protection policies.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

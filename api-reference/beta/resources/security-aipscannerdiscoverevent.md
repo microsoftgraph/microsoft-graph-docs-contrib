@@ -1,6 +1,6 @@
 ---
 title: "aipScannerDiscoverEvent resource type"
-description: "Audit data for security-aipscannerdiscoverevent.md"
+description: "Represents an audit record for Azure Information Protection (AIP) scanner discovery events."
 author: "diksha27"
 ms.subservice: compliance
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Audit data for security-aipscannerdiscoverevent.md
+Represents an audit record for Azure Information Protection (AIP) scanner discovery events. This resource captures information about files discovered by the AIP scanner during on-premises data classification and protection scans.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

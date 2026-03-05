@@ -1,6 +1,6 @@
 ---
 title: "complianceDlpExchangeAuditRecord resource type"
-description: "Represents a record related to complianceDlpExchangeAuditRecord recordType."
+description: "Represents an audit record for Compliance Data Loss Prevention (DLP) Exchange events."
 author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a record related to complianceDlpExchangeAuditRecord recordType.
+Represents an audit record for Compliance Data Loss Prevention (DLP) Exchange events. This resource captures information about DLP policy matches and actions applied to Exchange email content.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

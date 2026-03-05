@@ -1,6 +1,6 @@
 ---
 title: "airInvestigationData resource type"
-description: "Audit data for security-airinvestigationdata.md"
+description: "Represents an audit record for Automated Investigation and Response (AIR) investigation events."
 author: "diksha27"
 ms.subservice: compliance
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Audit data for security-airinvestigationdata.md
+Represents an audit record for Automated Investigation and Response (AIR) investigation events. This resource captures information about automated threat investigations initiated by Microsoft Defender, including investigation triggers, findings, and outcomes.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

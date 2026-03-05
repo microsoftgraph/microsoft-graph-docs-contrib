@@ -1,6 +1,6 @@
 ---
 title: "aadRiskDetectionAuditRecord resource type"
-description: "Represents a record related to aadRiskDetectionAuditRecord recordType."
+description: "Represents an audit record for Azure Active Directory (AAD) risk detection events."
 author: "diksha27"
 ms.subservice: compliance
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a record related to aadRiskDetectionAuditRecord recordType.
+Represents an audit record for Azure Active Directory (AAD) risk detection events. This resource captures information about identity risk detections, including suspicious sign-ins, compromised credentials, and other identity-related security risks identified by Azure AD Identity Protection.
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
 

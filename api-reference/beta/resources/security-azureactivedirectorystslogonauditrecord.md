@@ -1,6 +1,6 @@
 ---
 title: "azureActiveDirectoryStsLogonAuditRecord resource type"
-description: "Represents a record related to azureActiveDirectorySTSLogonAuditRecord recordType."
+description: "Represents an audit record for Azure Active Directory Security Token Service (STS) logon events."
 author: "diksha27"
 ms.subservice: compliance
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a record related to azureActiveDirectorySTSLogonAuditRecord recordType.
+Represents an audit record for Azure Active Directory Security Token Service (STS) logon events. This resource captures information about token issuance, authentication flows, and STS-related sign-in activities.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

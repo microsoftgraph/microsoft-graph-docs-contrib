@@ -1,6 +1,6 @@
 ---
 title: "complianceDlpApplicationsClassificationAuditRecord resource type"
-description: "Represents a record related to complianceDlpApplicationsClassificationAuditRecord recordType."
+description: "Represents an audit record for Compliance Data Loss Prevention (DLP) application classification events."
 author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a record related to complianceDlpApplicationsClassificationAuditRecord recordType.
+Represents an audit record for Compliance Data Loss Prevention (DLP) application classification events. This resource captures information about data classification results from DLP policy evaluations across Microsoft 365 applications.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

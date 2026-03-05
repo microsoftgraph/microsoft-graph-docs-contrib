@@ -1,6 +1,6 @@
 ---
 title: "complianceDlpSharePointAuditRecord resource type"
-description: "Represents a record related to complianceDlpSharePointAuditRecord recordType."
+description: "Represents an audit record for Compliance Data Loss Prevention (DLP) SharePoint events."
 author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a record related to complianceDlpSharePointAuditRecord recordType.
+Represents an audit record for Compliance Data Loss Prevention (DLP) SharePoint events. This resource captures information about DLP policy matches and actions applied to SharePoint content.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

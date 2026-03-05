@@ -1,6 +1,6 @@
 ---
 title: "aipSensitivityLabelActionLogRequest resource type"
-description: "Audit data for security-aipsensitivitylabelactionlogrequest.md"
+description: "Represents an audit record for Azure Information Protection (AIP) sensitivity label action log requests."
 author: "diksha27"
 ms.subservice: compliance
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Audit data for security-aipsensitivitylabelactionlogrequest.md
+Represents an audit record for Azure Information Protection (AIP) sensitivity label action log requests. This resource captures information about sensitivity label actions performed on documents, including label application, modification, and removal.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

@@ -1,6 +1,6 @@
 ---
 title: "cernerSMSLinkRecord resource type"
-description: "Represents a record related to cernerSMSLinkRecord recordType."
+description: "Represents an audit record for Cerner SMS link events."
 author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a record related to cernerSMSLinkRecord recordType.
+Represents an audit record for Cerner SMS link events. This resource captures information about SMS linking operations in healthcare connector integrations with Cerner systems.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

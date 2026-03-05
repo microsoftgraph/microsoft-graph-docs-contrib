@@ -1,6 +1,6 @@
 ---
 title: "cdpOcrBillingRecord resource type"
-description: "Represents a record related to cdpOcrBillingRecord recordType."
+description: "Represents an audit record for Compliance Data Platform (CDP) OCR billing events."
 author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a record related to cdpOcrBillingRecord recordType.
+Represents an audit record for Compliance Data Platform (CDP) OCR billing events. This resource captures information about optical character recognition (OCR) processing charges incurred during compliance data analysis.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

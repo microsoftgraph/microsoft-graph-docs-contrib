@@ -1,6 +1,6 @@
 ---
 title: "aedAuditRecord resource type"
-description: "Represents a record related to aedAuditRecord recordType."
+description: "Represents an audit record for Advanced eDiscovery (AeD) operations."
 author: "diksha27"
 ms.subservice: compliance
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a record related to aedAuditRecord recordType.
+Represents an audit record for Advanced eDiscovery (AeD) operations. This resource captures information about eDiscovery activities, including case management, content searches, review sets, and export operations within Microsoft Purview.
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
 

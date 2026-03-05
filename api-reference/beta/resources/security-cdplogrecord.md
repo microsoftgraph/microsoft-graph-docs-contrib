@@ -1,6 +1,6 @@
 ---
 title: "cdpLogRecord resource type"
-description: "Represents a record related to cdpLogRecord recordType."
+description: "Represents an audit record for Compliance Data Platform (CDP) log events."
 author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a record related to cdpLogRecord recordType.
+Represents an audit record for Compliance Data Platform (CDP) log events. This resource captures general logging information from the CDP, including processing activities and system events.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

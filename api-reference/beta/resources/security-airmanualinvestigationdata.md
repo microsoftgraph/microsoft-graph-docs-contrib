@@ -1,6 +1,6 @@
 ---
 title: "airManualInvestigationData resource type"
-description: "Represents a record related to airManualInvestigationData recordType."
+description: "Represents an audit record for Automated Investigation and Response (AIR) manual investigation events."
 author: "diksha27"
 ms.subservice: compliance
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a record related to airManualInvestigationData recordType.
+Represents an audit record for Automated Investigation and Response (AIR) manual investigation events. This resource captures information about manually triggered threat investigations in Microsoft Defender.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

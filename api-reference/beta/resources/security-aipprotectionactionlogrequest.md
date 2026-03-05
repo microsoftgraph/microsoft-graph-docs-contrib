@@ -1,6 +1,6 @@
 ---
 title: "aipProtectionActionLogRequest resource type"
-description: "Represents a record related to aipProtectionActionLogRequest recordType."
+description: "Represents an audit record for Azure Information Protection (AIP) protection action log requests."
 author: "diksha27"
 ms.subservice: compliance
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a record related to aipProtectionActionLogRequest recordType.
+Represents an audit record for Azure Information Protection (AIP) protection action log requests. This resource captures information about protection actions applied to documents, including encryption, rights management, and label application.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

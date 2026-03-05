@@ -1,6 +1,6 @@
 ---
 title: "attackSimAdminAuditRecord resource type"
-description: "Represents a record related to attackSimAdminAuditRecord recordType."
+description: "Represents an audit record for attack simulation administrator operations."
 author: "diksha27"
 ms.subservice: compliance
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a record related to attackSimAdminAuditRecord recordType.
+Represents an audit record for attack simulation administrator operations. This resource captures information about administrative activities related to attack simulation training, including campaign configuration, payload management, and simulation settings.
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
 

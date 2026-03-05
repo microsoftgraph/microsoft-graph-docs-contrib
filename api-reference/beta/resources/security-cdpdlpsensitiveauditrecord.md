@@ -1,6 +1,6 @@
 ---
 title: "cdpDlpSensitiveAuditRecord resource type"
-description: "Represents a record related to cdpDlpSensitiveAuditRecord recordType."
+description: "Represents an audit record for Compliance Data Platform (CDP) Data Loss Prevention (DLP) sensitive content events."
 author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a record related to cdpDlpSensitiveAuditRecord recordType.
+Represents an audit record for Compliance Data Platform (CDP) Data Loss Prevention (DLP) sensitive content events. This resource captures information about sensitive data detected by DLP policies across compliance workloads.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

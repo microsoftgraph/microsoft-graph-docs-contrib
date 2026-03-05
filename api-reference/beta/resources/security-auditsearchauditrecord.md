@@ -1,6 +1,6 @@
 ---
 title: "auditSearchAuditRecord resource type"
-description: "Represents a record related to auditSearchAuditRecord recordType."
+description: "Represents an audit record for audit log search operations."
 author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a record related to auditSearchAuditRecord recordType.
+Represents an audit record for audit log search operations. This resource captures information about searches performed against the unified audit log, including search queries, filters, and access patterns.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

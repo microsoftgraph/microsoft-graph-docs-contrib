@@ -1,6 +1,6 @@
 ---
 title: "complianceConnectorAuditRecord resource type"
-description: "Represents a record related to complianceConnectorAuditRecord recordType."
+description: "Represents an audit record for compliance connector events."
 author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a record related to complianceConnectorAuditRecord recordType.
+Represents an audit record for compliance connector events. This resource captures information about data connector activities used to import third-party data into Microsoft 365 for compliance purposes.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

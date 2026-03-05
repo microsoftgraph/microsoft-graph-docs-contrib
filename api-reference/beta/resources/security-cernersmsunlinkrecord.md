@@ -1,6 +1,6 @@
 ---
 title: "cernerSMSUnlinkRecord resource type"
-description: "Represents a record related to cernerSMSUnlinkRecord recordType."
+description: "Represents an audit record for Cerner SMS unlink events."
 author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a record related to cernerSMSUnlinkRecord recordType.
+Represents an audit record for Cerner SMS unlink events. This resource captures information about SMS unlinking operations in healthcare connector integrations with Cerner systems.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

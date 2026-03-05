@@ -1,6 +1,6 @@
 ---
 title: "complianceDlpClassificationBaseCdpRecord resource type"
-description: "Represents a record related to complianceDlpClassificationBaseCdpRecord recordType."
+description: "Represents a base audit record for Compliance Data Loss Prevention (DLP) classification events in the Compliance Data Platform (CDP)."
 author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a record related to complianceDlpClassificationBaseCdpRecord recordType.
+Represents a base audit record for Compliance Data Loss Prevention (DLP) classification events in the Compliance Data Platform (CDP). This resource provides common properties for CDP-specific data classification audit records.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

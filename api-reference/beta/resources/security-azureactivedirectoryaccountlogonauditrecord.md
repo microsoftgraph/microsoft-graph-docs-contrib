@@ -1,6 +1,6 @@
 ---
 title: "azureActiveDirectoryAccountLogonAuditRecord resource type"
-description: "Represents a record related to azureActiveDirectoryAccountLogonAuditRecord recordType."
+description: "Represents an audit record for Azure Active Directory account logon events."
 author: "diksha27"
 ms.subservice: compliance
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a record related to azureActiveDirectoryAccountLogonAuditRecord recordType.
+Represents an audit record for Azure Active Directory account logon events. This resource captures information about user authentication activities, including sign-in attempts, authentication methods used, and logon outcomes.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

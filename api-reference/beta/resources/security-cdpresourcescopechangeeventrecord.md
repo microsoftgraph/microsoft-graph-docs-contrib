@@ -1,6 +1,6 @@
 ---
 title: "cdpResourceScopeChangeEventRecord resource type"
-description: "Represents a record related to cdpResourceScopeChangeEventRecord recordType."
+description: "Represents an audit record for Compliance Data Platform (CDP) resource scope change events."
 author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a record related to cdpResourceScopeChangeEventRecord recordType.
+Represents an audit record for Compliance Data Platform (CDP) resource scope change events. This resource captures information about changes to resource scoping configurations in compliance policies.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

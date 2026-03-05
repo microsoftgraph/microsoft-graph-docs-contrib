@@ -1,6 +1,6 @@
 ---
 title: "aiAppInteractionAuditRecord resource type"
-description: "Represents a record related to aiAppInteractionAuditRecord recordType."
+description: "Represents an audit record for AI application interaction events."
 author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a record related to aiAppInteractionAuditRecord recordType.
+Represents an audit record for AI application interaction events. This resource captures information about user interactions with AI-powered applications in the Microsoft 365 ecosystem.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).

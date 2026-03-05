@@ -1,6 +1,6 @@
 ---
 title: "aipHeartBeat resource type"
-description: "Represents a record related to aipHeartBeat recordType."
+description: "Represents an audit record for Azure Information Protection (AIP) heartbeat events."
 author: "diksha27"
 ms.subservice: compliance
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a record related to aipHeartBeat recordType.
+Represents an audit record for Azure Information Protection (AIP) heartbeat events. This resource captures periodic status signals from AIP clients, indicating that the protection service is active and operational.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
