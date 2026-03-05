@@ -190,6 +190,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-```json
+```http
 HTTP/1.1 204 No Content
 ```
