@@ -18,8 +18,7 @@ Represents an audit record for common policy settings in the Customer Protection
 
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.

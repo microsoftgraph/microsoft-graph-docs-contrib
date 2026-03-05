@@ -18,8 +18,7 @@ Represents an audit record for Cortana Briefing activities and configuration cha
 
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.

@@ -18,8 +18,7 @@ Represents a base audit record for Customer Relationship Management (CRM) system
 
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.

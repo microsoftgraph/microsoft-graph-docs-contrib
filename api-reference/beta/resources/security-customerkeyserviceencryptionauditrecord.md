@@ -18,8 +18,7 @@ Represents an audit record for customer key service encryption operations in Mic
 
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.

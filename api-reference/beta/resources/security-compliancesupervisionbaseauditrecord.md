@@ -18,8 +18,7 @@ Represents a base audit record for compliance supervision operations. This serve
 
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.

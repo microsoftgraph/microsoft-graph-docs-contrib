@@ -18,8 +18,7 @@ Represents an audit record for resource consumption activities in security and c
 
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.

@@ -18,8 +18,7 @@ Represents an audit record for interactions with Microsoft Copilot in security a
 
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.

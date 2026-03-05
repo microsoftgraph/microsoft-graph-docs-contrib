@@ -18,8 +18,7 @@ Represents an audit record for changes to core reporting settings in security an
 
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.

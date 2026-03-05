@@ -18,8 +18,7 @@ Represents an audit record for policy configuration changes in the Customer Prot
 
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.

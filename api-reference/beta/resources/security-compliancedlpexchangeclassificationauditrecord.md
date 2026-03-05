@@ -18,8 +18,7 @@ Represents a record related to compliance DLP (Data Loss Prevention) Exchange cl
 
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.

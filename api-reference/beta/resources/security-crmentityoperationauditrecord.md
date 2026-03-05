@@ -18,8 +18,7 @@ Represents an audit record for operations performed on entities within a Custome
 
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.

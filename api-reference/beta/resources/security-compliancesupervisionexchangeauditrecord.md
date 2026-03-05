@@ -18,8 +18,7 @@ Represents an audit record for compliance supervision operations specific to Exc
 
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.
