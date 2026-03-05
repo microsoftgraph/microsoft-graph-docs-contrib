@@ -4,6 +4,22 @@
 
 ---
 
+## Example interaction
+
+> **Author:** We need to deprecate the `outlookTask` resource and its methods. Blog post: https://devblogs.microsoft.com/... Deadline: August 20, 2025. Alternative: To Do API.
+>
+> **AI:** _[Reads common file, verifies branch]_
+> I'll process these deprecation changes:
+>
+> 1. Update `outlookTask` resource: add "(deprecated)" to H1, add CAUTION banner, add `toc.title` and `ROBOTS: NOINDEX`
+> 2. Mark all child methods as deprecated (6 method files)
+> 3. Update references in parent resources
+> 4. Update changelog and What's New
+>
+> Proceeding now.
+
+---
+
 ## Prerequisites
 
 **See [temp-docstubs Folder](author-api-docs-common.md#temp-docstubs-folder)** for instructions on setting up the temp-docstubs folder.

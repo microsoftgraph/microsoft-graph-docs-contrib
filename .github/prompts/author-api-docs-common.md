@@ -28,16 +28,20 @@ If a conflict is significant, flag it to the author in the final summary but fol
 
 ### Determine author and ms.subservice values
 
-How to determine values to replace TODO placeholders in the following front matter of new files:
+Gather both values in a **single upfront step** to minimize round-trips with the author:
 
-**For author field:**
-- Use the GitHub login of the signed-in user by default
-- If unavailable, prompt the author to provide it
+1. **Attempt auto-detection first:**
+   - `author`: Use the GitHub login of the signed-in user
+   - `ms.subservice`: Inspect existing API/resource files being updated and use their `ms.subservice` value (exclude enum files)
 
-**For ms.subservice field:**
-- Inspect existing API/resource files being updated and use their `ms.subservice` value (exclude enum files)
-- If multiple distinct values exist, ask the author to confirm which to use
-- If only new files (no existing files being updated), prompt the author to provide the value
+2. **If either value cannot be inferred**, ask the author for both at once:
+   > "I need two values for the front matter of new files:
+   > 1. **author** — your GitHub username (e.g., `jsmith`)
+   > 2. **ms.subservice** — the subservice value (e.g., `entra-id`)
+   >
+   > Please provide both."
+
+3. If multiple distinct `ms.subservice` values exist across the files being updated, ask the author to confirm which to use
 
 ### temp-docstubs Folder
 
@@ -243,7 +247,7 @@ After updating What's new, update the appropriate TOC mapping file to make new d
 
 ### Handling Code Snippets in Examples
 
-**DO NOT manually add SDK snippets or related artifacts to the Example request section**, including:
+**Include only HTTP request examples in the Example request section.** SDK snippets and related artifacts are generated automatically by a separate pipeline. Specifically, do not add:
 - `# [HTTP](#tab/http)` tab declarations
 - Tab boundary markers (`---`)
 - Language-specific SDK snippet includes (e.g., `[!INCLUDE [sample-code](../includes/snippets/csharp/...)]`)
@@ -559,6 +563,72 @@ If a session is interrupted or a new session begins for an ongoing documentation
 2. Review temp-docstubs for remaining input files
 3. Check which files have already been created/modified in the working branch
 4. Ask the author: "It looks like we were working on [scenario]. Here's where we left off: [phase/step]. Shall I continue from here?"
+
+## Structured Output Format
+
+Use the following format when reporting file processing results, so output is consistent across sessions.
+
+**Per-file summary:**
+```
+- **File:** [path]
+- **Action:** Created | Updated | Copied
+- **Changes:** [bullet list of changes made]
+- **Issues:** [any unresolved items, or "None"]
+```
+
+**Phase status summary** (output after completing each execution phase):
+```
+📋 Progress: [X/Y files complete]
+✅ Completed: [list of files]
+⏳ Remaining: [list of files]
+⚠️ Blocked: [list with reasons, or "None"]
+```
+
+## State Tracking
+
+Maintain a running progress tracker throughout the session. After each file or batch of files, update and display:
+
+```
+📋 Documentation Progress
+━━━━━━━━━━━━━━━━━━━━━━━━
+Phase: [1 - Resources | 2 - API files | 3 - Supporting]
+Files: [X/Y complete]
+Current: [file being processed]
+━━━━━━━━━━━━━━━━━━━━━━━━
+```
+
+This helps the author track where you are, especially for large documentation plans.
+
+## Batch Processing Guidance
+
+For Documentation Plans with many files (10+):
+
+1. **Group by type:** resources, API methods, enumerations, permissions, supporting files
+2. **Process in batches of 5 files** — complete all steps for each file before moving to the next
+3. **After each batch**, output a phase status summary (see [Structured Output Format](#structured-output-format))
+4. **Present the execution plan upfront** and proceed unless the author objects — avoid blocking confirmations for each batch when the Documentation Plan is clear
+5. **If the plan exceeds 20 files**, create a numbered task list at the start, group into batches, and checkpoint progress after each batch
+
+## Decision Trees for Ambiguous Cases
+
+When encountering ambiguity, attempt self-resolution before asking the author:
+
+**API.md is ambiguous or incomplete:**
+1. Check CSDL metadata for type definitions and constraints
+2. Check existing documentation patterns for similar resources/APIs
+3. Check the Documentation Plan for additional context
+4. Only if all three fail → ask the author with a specific question and your best guess
+
+**Property description unclear:**
+1. Infer from the property name and type
+2. Check how similar properties are described in related resources
+3. Draft a description and flag it for author review in the summary
+
+**Unsure if an operation is supported:**
+1. Check the API.md operations section
+2. Check if doc stubs exist for the operation
+3. Check the Documentation Plan scope
+4. If still unclear → document only confirmed operations, flag uncertain ones in summary
 
 ## Base Quality Checklist
 

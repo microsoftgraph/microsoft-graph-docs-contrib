@@ -4,6 +4,26 @@
 
 ---
 
+## Example interaction
+
+> **Author:** We're promoting the security alert APIs from beta to v1.0.
+>
+> **AI:** _[Reads common file, verifies branch, scans temp-docstubs]_
+> I found a Documentation Plan and changelog in temp-docstubs. Based on the plan, I'll promote:
+>
+> **Phase 1 — Copy:** 2 resource files, 4 API files, 2 permissions files from beta → v1.0
+> **Phase 2 — Update:** Remove beta disclaimers, update endpoints to /v1.0, remove SDK snippets, update ms.date
+> **Phase 3 — Supporting:** toc.mapping.json, changelog, What's New
+>
+> Proceeding with Phase 1. _[Copies files]_
+>
+> 📋 Progress: 8/11 items complete
+> ✅ Completed: All files copied and updated
+> ⏳ Remaining: TOC, changelog, What's New
+> ⚠️ Blocked: None
+
+---
+
 ## Prerequisites
 
 **See [temp-docstubs Folder](author-api-docs-common.md#temp-docstubs-folder)** for instructions on setting up the temp-docstubs folder.

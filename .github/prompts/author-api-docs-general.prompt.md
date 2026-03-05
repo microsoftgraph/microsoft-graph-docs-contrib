@@ -4,6 +4,15 @@
 
 ---
 
+## Example interaction
+
+> **Author:** Review all files in api-reference/beta/resources/ that reference the 'user' resource and ensure the links are formatted correctly.
+>
+> **AI:** _[Reads common file, verifies branch]_
+> I'll search for files referencing the user resource, check link formatting against the standards (relative paths, correct prefixes), and fix any issues. I'll report each file updated with the specific changes made.
+
+---
+
 ## Overview
 
 Microsoft Graph documentation requires ongoing maintenance beyond documenting new APIs and changes. Authors may need assistance with:
