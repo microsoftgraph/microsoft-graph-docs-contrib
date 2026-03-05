@@ -147,6 +147,8 @@ After authoring documentation, update the appropriate changelog file in the `cha
 
 - **Result:** The changelog file should have the new record added at the beginning of the changelog array, with all subsequent records following it
 
+**Multi-workload changes:** If changes span multiple WorkloadAreas, create separate changelog records for each WorkloadArea in their respective changelog files. For example, if changes affect both `Microsoft.AAD.LCM` and `Microsoft.Security`, add records to both `changelog/Microsoft.AAD.LCM.json` and `changelog/Microsoft.Security.json`.
+
 ### Manually Authoring Changelog Entries
 
 In some cases, API changes don't trigger automatic changelog generation because they don't involve schema changes. These typically include:
@@ -309,9 +311,16 @@ After making documentation changes, run these validation scripts to ensure compl
 - Run after completing Doc Stubs Cleanup
 
 **When validation fails:**
-- Review error messages to identify issues
-- Correct the problems in the affected files
-- Re-run validation until all checks pass
+
+Categorize the error and respond accordingly:
+
+| Category | Examples | Action |
+|----------|----------|--------|
+| **Auto-fixable** | Formatting issues, alphabetical ordering, missing blank lines, trailing whitespace | Fix automatically and re-run validation |
+| **Needs clarification** | Missing descriptions, ambiguous property types, unclear deprecation dates | Ask the author with a specific question |
+| **Blocking** | Missing doc stubs, missing permissions files, schema validation errors in changelog | Stop, inform the author, and wait for resolution |
+
+Always attempt to fix auto-fixable issues before escalating. Only ask the author after 2 failed auto-fix attempts on the same issue.
 
 ## Reference Standards
 
@@ -502,6 +511,12 @@ Fully qualify any type (including enum types) that is defined in a subnamespace 
 **Beta endpoint files:**
 - Must include beta disclaimer immediately after the namespace declaration
 
+**When updating both versions:**
+- Apply only changes relevant to each version
+- Beta may have additional properties, methods, or relationships not yet in v1.0 — do not remove beta-only content when syncing
+- If a property exists in beta but not v1.0, leave the beta documentation unchanged when updating v1.0
+- When in doubt, check the Documentation Plan for which version(s) each change applies to
+
 ### Front matter rules
 
 Before working on any file, apply these front matter rules:
@@ -554,6 +569,16 @@ Before working on any file, apply these front matter rules:
 | API.md contradicts Documentation Plan | Follow Documentation Plan as primary source; flag the contradiction in the summary. |
 | Git operation fails | Check branch status with `git status`. If uncommitted changes conflict, stash and retry. |
 | Session interrupted mid-workflow | On resume: check git status, review temp-docstubs, ask where to continue. |
+
+### Rollback instructions
+
+If you make an error or need to undo changes:
+
+- **Single file:** `git checkout -- <file-path>` (restores to last committed state)
+- **All uncommitted changes:** `git checkout -- .` (restores entire working tree)
+- **Staged changes:** `git restore --staged <file-path>` then `git checkout -- <file-path>`
+
+**Important:** These only work for uncommitted changes. If changes were already committed, inform the author and let them decide whether to revert the commit.
 
 ## Session Resumption Protocol
 
@@ -629,6 +654,47 @@ When encountering ambiguity, attempt self-resolution before asking the author:
 2. Check if doc stubs exist for the operation
 3. Check the Documentation Plan scope
 4. If still unclear → document only confirmed operations, flag uncertain ones in summary
+
+## Diff Preview
+
+Before modifying **existing** files (as opposed to creating new ones), briefly show the author what you plan to change:
+
+> "For **[file-path]**, I'll make these changes:
+> - Add property `newProperty` to Properties table
+> - Add `newProperty` to JSON representation
+> - Update example response to include `newProperty`
+>
+> Proceeding unless you object."
+
+This is especially important for:
+- Adding properties/relationships to existing resources
+- Updating existing API method examples
+- Modifying existing changelog entries
+
+For **new files** copied from doc stubs, a diff preview is not necessary — the execution plan already covers what will be created.
+
+## Dry-Run Mode
+
+If the author requests a dry run (e.g., "show me what you'd do" or "plan only"):
+
+1. Parse the Documentation Plan and generate the full execution plan
+2. List all files that would be created, modified, or copied
+3. For each file, describe the specific changes that would be made
+4. Show sample content for key sections (e.g., a sample Properties table entry)
+5. **Make no file changes** — output the plan only
+6. Ask the author: "This is what I'd do. Shall I proceed, or would you like to adjust anything?"
+
+## Cross-File Consistency Validation
+
+After processing all files in a documentation session, verify cross-file consistency:
+
+1. **Methods table ↔ API files:** Every method listed in a resource's Methods table should have a corresponding API file in the `api/` folder
+2. **API file ↔ resource link:** Every API file's description should link back to its parent resource, and that resource file should exist
+3. **Enum references ↔ definitions:** Every enum type referenced in Properties tables should be defined in the appropriate enums file, parent resource, or separate topic
+4. **Permissions files:** Every permissions include reference in API files should have a corresponding file in the `includes/permissions/` folder
+5. **JSON representation ↔ Properties table:** Properties listed in the JSON representation section should match the Properties table
+
+Report any inconsistencies in the final summary to the author.
 
 ## Base Quality Checklist
 
