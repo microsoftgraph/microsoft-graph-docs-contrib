@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures custom user-defined detection rules in Information Rights Management (IRM). This record type documents when custom detection rules are created, modified, or triggered in IRM systems. User-defined detection rules allow organizations to implement custom security monitoring for protected content based on their specific requirements, and these audit records help track the configuration and effectiveness of these custom rules.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
 
 
 ## Properties

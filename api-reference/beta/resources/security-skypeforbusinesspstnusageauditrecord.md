@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures Public Switched Telephone Network (PSTN) usage in Skype for Business. This resource tracks telephone-related activities such as calls to and from PSTN numbers, including call durations, phone numbers, and connection types. These audit records help organizations monitor their telephony usage for billing, security analysis, and compliance purposes, providing visibility into voice communication patterns.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
 
 
 ## Properties

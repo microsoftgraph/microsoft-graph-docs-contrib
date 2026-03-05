@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures information about custom detection rules in Microsoft 365 Defender. This resource provides details about the creation, modification, deletion, and execution of custom detection rules that security teams create to identify specific threat patterns in their environment. These audit records help track changes to detection rules and understand their effectiveness in identifying security threats across the Microsoft 365 Defender platform.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
 
 
 ## Properties

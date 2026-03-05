@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 
 Represents an audit record that captures activities related to SharePoint policy location management for automatic sensitivity labeling. This record type documents events such as adding, removing, or modifying SharePoint sites and libraries as policy locations for auto-labeling policies, providing visibility into the scope and coverage of automated sensitivity labeling across the SharePoint environment.
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
 
 
 ## Properties

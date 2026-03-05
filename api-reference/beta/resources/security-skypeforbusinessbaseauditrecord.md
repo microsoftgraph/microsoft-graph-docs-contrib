@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents a base audit record type for Skype for Business activities. This resource serves as the parent type for more specific Skype for Business audit records, providing common properties and structures used across different types of Skype for Business audit events. Specific child types extend this base type to capture particular categories of Skype for Business activities.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
 
 
 ## Properties

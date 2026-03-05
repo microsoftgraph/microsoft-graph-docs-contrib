@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 
 Represents an audit record for Advanced eDiscovery (AeD) operations. This resource captures information about eDiscovery activities, including case management, content searches, review sets, and export operations within Microsoft Purview.
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
 
 ## Properties
 None.

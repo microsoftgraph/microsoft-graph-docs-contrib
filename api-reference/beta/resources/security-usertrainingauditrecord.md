@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record for security awareness training activities in Microsoft security services. This resource captures information about user participation in security training, including training assignments, completions, failures, and progress tracking. The audit data helps security administrators monitor the organization's security training program effectiveness, track compliance with required training policies, and identify users who may need additional security education to improve the organization's overall security posture.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
 
 
 ## Properties

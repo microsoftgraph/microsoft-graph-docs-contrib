@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures user and administrative activities in Microsoft Kaizala. This record type documents actions performed within the Kaizala messaging and productivity application, including group management, message delivery, policy application, and administrative changes. These audit records help organizations track usage patterns, monitor compliance with messaging policies, and investigate security incidents involving mobile communication.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
 
 
 ## Properties

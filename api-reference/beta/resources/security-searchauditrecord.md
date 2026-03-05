@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures search activities performed across Microsoft 365 services. This resource tracks search queries executed by users, including search terms, scope, results, and other relevant metadata. These audit records help organizations monitor search activities for security analysis, data access patterns, and compliance purposes, providing visibility into what information users are actively seeking within the environment.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
 
 
 ## Properties

@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures security and compliance insight activities in Microsoft 365. This resource tracks interactions with security and compliance analytics, reports, dashboards, and data visualizations within the Security & Compliance Center. These audit records help organizations monitor how security and compliance insights are being accessed and utilized, providing visibility into data-driven security management activities.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
 
 
 ## Properties

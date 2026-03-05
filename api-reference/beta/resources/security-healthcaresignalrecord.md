@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures healthcare-related security signals and alerts. This record type documents security events specific to healthcare environments, such as potential Protected Health Information (PHI) exposures, suspicious access to patient records, or unusual patterns of healthcare data access. These audit records help healthcare organizations detect and respond to security incidents while maintaining compliance with healthcare regulations like HIPAA and HITECH.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
 
 
 ## Properties

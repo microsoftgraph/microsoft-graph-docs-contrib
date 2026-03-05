@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures security events related to information worker protection. This record type documents activities and operations that affect the security of knowledge workers, including security policy application, threat detection, and protective actions. It helps organizations track how information workers are being protected from security threats such as phishing, malware, account compromise, and data exfiltration attempts.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
 
 
 ## Properties

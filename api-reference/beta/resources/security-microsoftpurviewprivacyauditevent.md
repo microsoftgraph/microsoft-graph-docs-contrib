@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 
 Represents an audit event that captures privacy-related activities in Microsoft Purview. This record type documents events such as data subject requests processing, privacy risk assessments, privacy impact analyses, and personal data management activities, providing visibility into how the organization manages privacy compliance and responds to privacy-related requests in accordance with data protection regulations.
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
 
 
 ## Properties

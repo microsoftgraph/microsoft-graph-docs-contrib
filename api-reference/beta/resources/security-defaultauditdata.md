@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the default audit log data in an [auditLogRecord](../resources/security-auditlogrecord.md). This is an open type that contains the raw JSON audit data for Microsoft 365 services that don't have a specific derived type defined. For more information about audit data types in an audit log record, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+Represents the default audit log data in an [auditLogRecord](../resources/security-auditlogrecord.md). This is an open type that contains the raw JSON audit data for Microsoft 365 services that don't have a specific derived type defined.
 
 Inherits from [auditData](../resources/security-auditdata.md).
 

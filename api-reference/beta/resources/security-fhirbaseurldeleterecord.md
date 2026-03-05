@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures FHIR base URL deletion operations in healthcare environments. This record type documents when an administrator or authorized user removes a Fast Healthcare Interoperability Resources (FHIR) base URL from the system. These audit records help healthcare organizations track changes to their FHIR endpoint configurations, ensuring proper management of healthcare data exchange channels and compliance with security requirements.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
 
 
 ## Properties

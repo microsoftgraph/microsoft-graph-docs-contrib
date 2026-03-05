@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures update activities in Microsoft Teams. This resource tracks changes and updates to Teams components, including client updates, service updates, and policy changes. These audit records help organizations monitor the evolution of their Teams environment, providing visibility into version changes, feature updates, and configuration modifications that may affect functionality, security, or compliance.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
 
 
 ## Properties

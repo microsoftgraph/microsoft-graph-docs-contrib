@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record for the deletion of Virtual Filtering Access Management (VFAM) policies. This resource captures detailed information about the removal of VFAM policies, including who deleted the policy, when it was deleted, and which policy was removed. The audit data helps security administrators track the removal of filtering and access control rules, which is critical for understanding changes to the security posture and ensuring that policy removals are authorized and properly documented.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
 
 
 ## Properties

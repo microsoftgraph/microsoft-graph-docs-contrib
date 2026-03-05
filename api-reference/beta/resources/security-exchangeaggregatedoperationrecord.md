@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an aggregated audit record that summarizes operational activities in Exchange Online. This record type consolidates multiple related Exchange operations into a single audit event, providing a comprehensive view of system activities and actions. The aggregation helps reduce audit log volume while still maintaining visibility into important operational events such as mail flow, configuration changes, and service activities.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
 
 
 ## Properties

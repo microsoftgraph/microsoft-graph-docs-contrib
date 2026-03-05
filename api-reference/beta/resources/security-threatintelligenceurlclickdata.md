@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents data about URL clicks monitored by Microsoft Defender for Office 365 for security threat assessment. This resource captures information when users click on URLs in emails and other content, tracking details such as the clicked URL, user information, verdict from Safe Links, timestamp, and device information. This data helps security teams monitor and investigate potential phishing or malicious link threats within their organization.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
 
 
 ## Properties

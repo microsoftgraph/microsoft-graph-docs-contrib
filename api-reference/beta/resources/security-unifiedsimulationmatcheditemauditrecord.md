@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record for matched items in security simulations, such as phishing simulation campaigns. This resource captures detailed information about specific items or events that matched criteria within a security simulation, including user interactions with simulated phishing messages, attachment openings, link clicks, and other security-relevant behaviors. The audit data helps security teams evaluate user responses to simulated threats and identify training opportunities to improve organizational security awareness.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
 
 
 ## Properties

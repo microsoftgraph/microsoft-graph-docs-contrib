@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record for operations performed on entities within a Customer Relationship Management (CRM) system. This resource captures detailed audit information about actions such as create, read, update, and delete operations on CRM entities, providing security and compliance visibility into CRM data interactions.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
 
 ## Properties
 None.

@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record for activities in Microsoft Yammer enterprise social networking service. This resource captures user and administrative actions within the Yammer platform, including message creation, community management, file sharing, policy changes, and network configuration modifications. The audit data helps organizations monitor Yammer usage, ensure compliance with communication policies, and track the handling of potentially sensitive information shared through enterprise social channels.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
 
 
 ## Properties

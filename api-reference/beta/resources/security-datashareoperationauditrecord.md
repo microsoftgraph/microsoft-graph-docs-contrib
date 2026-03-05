@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures data sharing operations between systems or organizations. This record type documents data sharing activities, including the parties involved in the share, the data that was shared, the methods used, and whether the sharing operation complied with organizational policies. It helps organizations track data movement and maintain compliance with data protection regulations.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
 
 
 ## Properties

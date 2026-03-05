@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures certificate download operations. This record type documents when a security certificate is downloaded from a system, including information about who downloaded the certificate, when it was downloaded, and details about the certificate itself. This helps organizations track certificate usage and distribution for security monitoring and compliance purposes.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
 
 
 ## Properties

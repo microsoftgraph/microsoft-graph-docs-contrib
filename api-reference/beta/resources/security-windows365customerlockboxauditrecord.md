@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record for Windows 365 Customer Lockbox activities, which control Microsoft engineer access to customer content. This resource captures events related to access requests, approvals, denials, and expirations for Microsoft support personnel needing access to customer Cloud PC environments to resolve service issues. The audit data provides a complete record of all access requests and their outcomes, helping organizations maintain control over their data and meet compliance requirements for cloud service provider access to customer content.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
 
 
 ## Properties

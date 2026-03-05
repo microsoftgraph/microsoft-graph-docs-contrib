@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record for administrative activities in Microsoft Viva Learning. This resource captures actions performed by administrators within the Viva Learning platform, including configuration changes, learning content management, learning path creation or modification, and changes to learning policies or permissions. The audit data helps organizations track how their learning programs are managed and ensure proper governance of learning content and access controls.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
 
 
 ## Properties

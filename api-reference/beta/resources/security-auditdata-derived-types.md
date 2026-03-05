@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The following resource types inherit from the [auditData](../resources/security-auditdata.md) abstract type. Each derived type represents audit log data for a specific Microsoft 365 service or feature, returned as the **auditData** property of an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit data types in an audit log record, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+The following resource types inherit from the [auditData](../resources/security-auditdata.md) abstract type. Each derived type represents audit log data for a specific Microsoft 365 service or feature, returned as the **auditData** property of an [auditLogRecord](../resources/security-auditlogrecord.md).
 
 - [aadRiskDetectionAuditRecord](../resources/security-aadriskdetectionauditrecord.md)
 - [aedAuditRecord](../resources/security-aedauditrecord.md)

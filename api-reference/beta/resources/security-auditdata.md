@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract type that represents audit log data in an [auditLogRecord](../resources/security-auditlogrecord.md). This base type is inherited by over 270 derived types, each representing audit data for a specific Microsoft 365 service or feature. For a complete list of all derived types, see [auditData derived types](../resources/security-auditdata-derived-types.md). For more information about audit data types in an audit log record, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+An abstract type that represents audit log data in an [auditLogRecord](../resources/security-auditlogrecord.md). This base type is inherited by over 270 derived types, each representing audit data for a specific Microsoft 365 service or feature. For a complete list of all derived types, see [auditData derived types](../resources/security-auditdata-derived-types.md).
 
 The [defaultAuditData](../resources/security-defaultauditdata.md) type is an open type that contains the raw JSON audit data for Microsoft 365 services that don't have a specific derived type.
 

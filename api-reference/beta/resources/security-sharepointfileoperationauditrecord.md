@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures file operations in SharePoint and OneDrive. This resource tracks activities related to files and documents, including uploads, downloads, views, edits, deletions, moves, and copies. These audit records help organizations monitor document lifecycle activities for security analysis, compliance, and data governance purposes, providing visibility into how content is being accessed and modified across the environment.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
 
 
 ## Properties

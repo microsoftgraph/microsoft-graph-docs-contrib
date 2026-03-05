@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures information about Data Loss Prevention (DLP) activities on on-premises SharePoint servers. This resource provides details about content scanning operations, policy matches, and remediation actions taken on sensitive information stored in on-premises SharePoint sites. These audit records help organizations track the discovery and protection of sensitive content in hybrid SharePoint environments that leverage Microsoft information protection capabilities.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
 
 
 ## Properties

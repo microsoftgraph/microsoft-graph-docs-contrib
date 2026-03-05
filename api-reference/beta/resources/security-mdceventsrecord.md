@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 
 Represents a record that captures Microsoft Defender for Cloud (MDC) security events and incidents. This record type documents cloud security posture management events, threat detection findings, and security incidents detected across cloud workloads, providing detailed information about security events across multi-cloud environments to help organizations identify and respond to threats.
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
 
 
 ## Properties

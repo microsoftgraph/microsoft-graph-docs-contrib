@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents threat intelligence data specifically related to email messages analyzed by Microsoft security services. This resource captures detailed information about potential email-based threats, including phishing attempts, spam, malicious attachments, and other email security indicators. The data helps security teams identify, investigate, and remediate email-based security threats within their organization.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
 
 
 ## Properties

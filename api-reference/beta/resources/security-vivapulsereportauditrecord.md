@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record for report-related activities in Microsoft Viva Pulse. This resource captures actions related to the generation, viewing, sharing, and exporting of reports from the Viva Pulse platform, which contains employee feedback and sentiment analysis data. The audit information helps organizations track who accesses potentially sensitive feedback data, how that data is distributed, and ensures compliance with privacy policies and regulations governing employee feedback information.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
 
 
 ## Properties

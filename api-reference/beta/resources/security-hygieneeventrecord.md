@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures email hygiene events in Exchange Online Protection or Microsoft Defender for Office 365. This record type documents email filtering activities, such as spam detection, malware identification, phishing attempts, and other email security events. The audit information includes details about the message, the sender, the recipient, the detected threat, and the action taken. These records help organizations track email security operations and troubleshoot email delivery issues.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
 
 
 ## Properties

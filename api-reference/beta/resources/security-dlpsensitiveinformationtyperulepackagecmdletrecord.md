@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures administrative cmdlet operations related to DLP sensitive information type rule packages. This record type documents actions taken by administrators when creating, importing, exporting, or managing Data Loss Prevention (DLP) rule packages through PowerShell cmdlets. Rule packages contain collections of sensitive information type definitions and are used to enforce consistent data protection policies across the organization.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
 
 
 ## Properties
