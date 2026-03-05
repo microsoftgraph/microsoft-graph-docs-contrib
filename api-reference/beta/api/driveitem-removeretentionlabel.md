@@ -33,8 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
 
 > [!NOTE]
-> Removing a retention label is not supported when using app‑only authentication for SPE containers.
-This operation requires a delegated user context and will fail if called with app‑only permissions.
+> Removal of a **Record** retention label is not supported when using app‑only authentication. This operation requires a delegated user context.
 
 ## HTTP request
 
