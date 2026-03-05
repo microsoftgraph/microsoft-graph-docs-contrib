@@ -35,6 +35,10 @@ Use the following new container columns APIs added to further support structured
 
 ## March 2026: New in preview only
 
+### Backup storage
+
+Added the `includeNewerItems` member as supported value for the **tags** property on [restorePoint](/graph/api/resources/restorepoint?view=graph-rest-beta&preserve-view=true) to get a restore point within a specified time period that includes any newer items created during that period.
+
 ### Identity and access | Governance
 
 Added the [targetAgentIdentitySponsorsOrOwners](/graph/api/resources/targetagentidentitysponsorsorowners?view=graph-rest-beta&preserve-view=true) resource type that defines the sponsors or owners of a specific agent identity.
