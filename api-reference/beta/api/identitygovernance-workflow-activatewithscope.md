@@ -118,7 +118,7 @@ HTTP/1.1 204 No Content
 ```
 
 
-### Example 2: Activate a workflow with a specific scope of 2 users who dont exist
+### Example 2: Activate a workflow with a specific scope of 2 users who don't exist
 
 #### Request
 
