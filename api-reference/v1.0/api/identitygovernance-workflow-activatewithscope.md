@@ -122,7 +122,7 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Activate a workflow with a specific scope of 2 users who dont exist
 
-### Request
+#### Request
 
 The following example shows a request.
 
@@ -143,7 +143,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 The following example shows the response.
 <!-- {
   "blockType": "response",
@@ -156,7 +156,7 @@ HTTP/1.1 406 NOT Acceptable
 
 ### Example 3: Activate a workflow with a specific processing result scope
 
-### Request
+#### Request
 
 The following example shows a request.
 
@@ -185,7 +185,7 @@ Content-Type: application/json
 }
 ```
 
-### Response
+#### Response
 The following example shows the response.
 <!-- {
   "blockType": "response",
