@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures records management activities in Microsoft 365. This resource tracks actions related to the lifecycle management of organizational records, including record creation, modification, disposition, and retention policy application. These audit records help organizations demonstrate compliance with regulatory requirements for records management and provide visibility into records handling across the organization.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

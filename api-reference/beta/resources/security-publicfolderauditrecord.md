@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures activities related to Exchange public folders. This resource tracks actions performed on public folders, such as folder creation, modification, deletion, permission changes, and content management. These audit records help organizations monitor public folder management activities for security, compliance, and operational oversight purposes.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

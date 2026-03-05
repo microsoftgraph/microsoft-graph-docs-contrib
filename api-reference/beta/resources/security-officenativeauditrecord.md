@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures information about activities within native Office applications like Word, Excel, PowerPoint, and Outlook. This resource provides details about user interactions with files and documents in desktop Office applications, including information about security and compliance-related activities such as label applications, content protection events, and policy enforcement actions.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures information about response actions performed in Microsoft Defender for Endpoint (MDE). This resource provides details about remediation and containment actions taken on devices, such as isolating machines, collecting investigation packages, running anti-virus scans, or removing files. These audit records help security teams track who initiated specific response actions, when they were performed, and the outcomes of those actions during security incident response.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

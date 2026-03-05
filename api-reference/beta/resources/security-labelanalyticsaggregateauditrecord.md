@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 
 Represents an audit record that captures aggregated analytics data related to sensitivity label usage and application across the organization. This record type provides insights into label distribution, trends, and usage patterns to help administrators evaluate the effectiveness of their information protection policies.
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

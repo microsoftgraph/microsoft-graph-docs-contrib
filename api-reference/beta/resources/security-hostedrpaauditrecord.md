@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures activities related to hosted Robotic Process Automation (RPA). This record type documents actions performed by RPA processes and automations, including bot executions, workflow runs, and data processing operations. These audit records help organizations track automated processes for security monitoring, operational oversight, and ensuring that automations are operating within defined parameters and permissions.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

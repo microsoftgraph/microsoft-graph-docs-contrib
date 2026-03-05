@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures information about security incidents in Microsoft 365 Defender. This resource provides details about incident creation, modification, assignment, status changes, and resolution activities across the Microsoft 365 Defender platform. These audit records help security teams track the lifecycle of security incidents, understand who took which actions, and maintain a comprehensive audit trail of incident investigation and remediation processes.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

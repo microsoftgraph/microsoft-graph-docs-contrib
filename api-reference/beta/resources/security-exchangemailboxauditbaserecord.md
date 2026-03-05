@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents a base type for Exchange mailbox audit records that capture mailbox access and operations. This resource serves as the foundation for more specific mailbox audit record types and provides common properties for tracking user activities within Exchange mailboxes. It helps organizations monitor mailbox access patterns, detect suspicious activities, and maintain compliance with data protection requirements.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

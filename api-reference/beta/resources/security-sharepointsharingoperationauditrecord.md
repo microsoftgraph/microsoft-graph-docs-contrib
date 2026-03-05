@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures sharing operations in SharePoint and OneDrive. This resource tracks activities related to content sharing, including creating and modifying sharing links, inviting external users, changing permissions, and access requests. These audit records help organizations monitor how content is being shared both internally and externally, providing visibility into potential data exposure risks and collaboration patterns.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

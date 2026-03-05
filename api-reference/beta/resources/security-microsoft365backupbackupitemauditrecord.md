@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 
 Represents an audit record that captures activities related to individual items being backed up in Microsoft 365 Backup. This record type documents events such as backup operations for specific files, emails, SharePoint documents, and other content items within Microsoft 365, including details about backup timing, content type, storage location, and success or failure status.
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

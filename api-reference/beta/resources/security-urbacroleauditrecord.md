@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record for Unified Role-Based Access Control (URBAC) role operations in Microsoft security services. This resource captures activities related to the creation, modification, and deletion of security roles, including changes to role definitions, permissions, and scopes. The audit data helps security administrators track changes to the role structure, which forms the foundation of the access control system and directly impacts what actions users can perform within the security environment.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

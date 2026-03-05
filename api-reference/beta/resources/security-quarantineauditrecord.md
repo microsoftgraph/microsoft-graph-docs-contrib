@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures quarantine-related activities in security services. This resource tracks actions performed on quarantined items, such as emails, files, or other content that has been isolated due to potential security threats. These audit records include information about quarantine decisions, releases, deletions, and policy applications, helping organizations monitor their security quarantine operations for compliance and security management purposes.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

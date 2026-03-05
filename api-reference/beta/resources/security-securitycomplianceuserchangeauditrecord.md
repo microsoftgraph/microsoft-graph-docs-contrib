@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures user-related changes in the Security & Compliance Center. This resource tracks modifications to user accounts, properties, and settings within the security and compliance management context. These audit records help organizations monitor user account management activities that may affect security and compliance operations, providing visibility into user-related changes that could impact security posture.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

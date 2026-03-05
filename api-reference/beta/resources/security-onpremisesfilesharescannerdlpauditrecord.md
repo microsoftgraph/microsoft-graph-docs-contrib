@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures information about Data Loss Prevention (DLP) activities on on-premises file shares. This resource provides details about DLP scanning operations, policy matches, and enforcement actions taken on sensitive content stored in on-premises file servers. These audit records help organizations track the discovery and protection of sensitive information in traditional file storage systems that have been integrated with Microsoft information protection solutions.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

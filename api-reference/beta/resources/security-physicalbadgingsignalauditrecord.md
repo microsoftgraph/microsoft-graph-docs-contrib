@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures information about physical access badge events in facilities. This resource provides details about physical building access activities, such as badge swipes, entry and exit events, and access control system interactions. These audit records enable security teams to correlate physical building access with digital resource access for comprehensive insider risk monitoring and security incident investigations.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

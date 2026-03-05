@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record for updates to Virtual Filtering Access Management (VFAM) policies. This resource captures detailed information about modifications made to existing VFAM policies, including who made the changes, when they were made, which policy was modified, and what specific settings were updated. The audit data helps security administrators track evolving policy configurations, understand how access control rules change over time, and ensure that all policy modifications align with organizational security requirements.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures human resources (HR) signals related to security events. This record type documents HR-related activities and changes that may have security implications, such as employee status changes, role transitions, performance reviews, or other personnel events that could affect security posture. These audit records help organizations correlate HR data with security monitoring to detect potential insider threats or security risks associated with personnel changes.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

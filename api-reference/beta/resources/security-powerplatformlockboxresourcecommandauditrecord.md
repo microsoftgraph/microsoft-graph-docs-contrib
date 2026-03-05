@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures information about commands executed during approved Customer Lockbox sessions in Power Platform. This resource provides detailed logging of the specific actions taken by Microsoft support engineers when they access customer data in Power Platform services through the Customer Lockbox process. These audit records enable organizations to review exactly what operations were performed during authorized access sessions, supporting security monitoring and compliance requirements.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

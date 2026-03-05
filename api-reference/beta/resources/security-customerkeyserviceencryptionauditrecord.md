@@ -17,6 +17,8 @@ Namespace: microsoft.graph.security
 Represents an audit record for customer key service encryption operations in Microsoft 365. This resource captures audit information related to customer-managed encryption key operations, including key creation, rotation, and usage in service encryption scenarios. It provides visibility into encryption key management activities for compliance and security monitoring.
 
 
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+
 ## Properties
 None.
 

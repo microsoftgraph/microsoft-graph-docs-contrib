@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 
 Represents an audit record that captures completion information for SharePoint auto-labeling simulation runs. This record type documents the final results and summary statistics of simulation mode runs for automatic sensitivity labeling in SharePoint, providing insights into what would happen if auto-labeling policies were applied in production without actually applying the labels, helping administrators evaluate policy effectiveness and potential impact.
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures project-level activities in Project for the Web. This resource tracks actions performed on projects such as project creation, deletion, modification, sharing, and permission changes. These audit records help organizations monitor project management activities for security, compliance, and operational insights specific to the Project for the Web service.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

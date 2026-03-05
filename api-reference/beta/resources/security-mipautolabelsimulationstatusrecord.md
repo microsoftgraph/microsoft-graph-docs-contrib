@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures status information for Microsoft Information Protection (MIP) auto-labeling simulation runs. This resource provides details about the current state, progress, and execution status of simulation runs used to evaluate auto-labeling policies without actually applying labels to content. Simulation status records help administrators track and monitor the execution of auto-labeling simulations across their organization.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

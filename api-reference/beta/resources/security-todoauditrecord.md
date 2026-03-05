@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record for Microsoft To Do activities that may be relevant for security and compliance monitoring. This resource captures user actions performed in the Microsoft To Do application, such as creating, modifying, or deleting tasks and task lists. The audit data helps organizations track user productivity activities and identify potential security concerns related to task management within their Microsoft 365 environment.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

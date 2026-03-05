@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 
 Represents an audit record that captures automatic sensitivity labeling activities for Exchange items. This record type documents events related to the automatic application of sensitivity labels to Exchange content such as emails and calendar items based on content scanning and classification rules, providing visibility into how sensitive information in Exchange is being identified and protected through automated mechanisms.
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

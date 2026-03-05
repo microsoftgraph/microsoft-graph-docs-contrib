@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures field operations in SharePoint lists and libraries. This resource tracks activities related to the creation, modification, and deletion of fields (columns) in SharePoint lists and document libraries. These audit records help organizations monitor changes to their information architecture and metadata structures, providing visibility into how data schemas evolve over time.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

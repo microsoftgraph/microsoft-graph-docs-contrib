@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures group-related mailbox operations in Exchange Online. This record type documents actions performed on distribution groups, mail-enabled security groups, and other group objects within Exchange. It tracks activities such as group membership changes, permission modifications, and group property updates. These audit records help organizations monitor group management activities for security and compliance purposes.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures tenant-level allow and block list management. This resource tracks activities related to the configuration and modification of organization-wide allow or block lists for entities such as URLs, domains, file hashes, or IP addresses. These audit records help organizations monitor changes to their security filtering configurations, providing visibility into who is modifying allow/block lists and what specific changes are being made.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures retention policy activities in Microsoft 365. This resource tracks actions related to the creation, modification, and application of retention policies that govern how content is preserved, deleted, or archived across the organization. These audit records help organizations monitor their retention policy management for compliance with regulatory requirements and internal governance policies.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

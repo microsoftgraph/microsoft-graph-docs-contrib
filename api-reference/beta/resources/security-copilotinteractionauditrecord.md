@@ -17,6 +17,8 @@ Namespace: microsoft.graph.security
 Represents an audit record for interactions with Microsoft Copilot in security and compliance contexts. This resource captures audit information related to user interactions with Copilot, including queries, responses, and actions taken in security and compliance workloads.
 
 
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+
 ## Properties
 None.
 

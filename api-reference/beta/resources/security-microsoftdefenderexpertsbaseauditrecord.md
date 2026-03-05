@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 
 Represents a base audit record type for Microsoft Defender Experts service activities. This abstract record type serves as the parent class for more specific audit records related to Microsoft Defender Experts services, providing common properties and functionality for tracking security monitoring and managed threat hunting activities performed by Microsoft security experts on behalf of an organization.
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

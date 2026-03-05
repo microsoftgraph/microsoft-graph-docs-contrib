@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record for threat finder operations in Microsoft Defender for Office 365. This resource captures activities related to the detection, analysis, and management of security threats identified by the threat finder capability, helping security administrators track and investigate potential security risks and malicious content within their environment.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

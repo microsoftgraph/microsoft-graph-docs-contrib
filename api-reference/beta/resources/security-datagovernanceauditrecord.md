@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures data governance-related operations and activities. Data governance audit records document actions taken to manage, protect, and control data according to organizational policies, regulatory requirements, and data handling practices throughout the data lifecycle.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

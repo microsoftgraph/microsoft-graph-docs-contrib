@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents threat intelligence data related to content analyzed by Microsoft Defender for Office 365 (formerly ATP). This resource contains detailed information about potential threats detected in content such as email attachments, files, and links, including malware detection results, file metadata, threat verdicts, and other security-related indicators that help organizations identify and mitigate security risks.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

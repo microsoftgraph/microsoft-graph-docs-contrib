@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 
 Represents data related to email submissions for security review, such as phishing or spam reports from users. This resource type captures information about emails that have been submitted for analysis, including submission details, sender information, recipient information, and analysis results, providing visibility into user-reported security concerns and their processing.
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

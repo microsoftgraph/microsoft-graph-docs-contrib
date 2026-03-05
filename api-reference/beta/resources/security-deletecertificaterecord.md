@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures certificate deletion operations. This record type documents when a security certificate is deleted from a system, including information about who deleted the certificate, when it was deleted, and details about the certificate itself. This helps organizations track certificate lifecycle management and ensure proper security credential handling.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures information about general on-premises scanner Data Loss Prevention (DLP) activities. This resource provides details about scanner operations, configuration changes, and system-level events related to the deployment and management of on-premises DLP scanning infrastructure. These audit records help organizations track the health, performance, and administration of their on-premises content scanning solutions integrated with Microsoft information protection services.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

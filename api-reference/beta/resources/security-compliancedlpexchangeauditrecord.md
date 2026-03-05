@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record for Compliance Data Loss Prevention (DLP) Exchange events. This resource captures information about DLP policy matches and actions applied to Exchange email content.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

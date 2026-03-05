@@ -17,6 +17,8 @@ Namespace: microsoft.graph.security
 Represents an audit record for policy configuration changes in the Customer Protection Service (CPS). This resource captures detailed audit information about modifications to policy configurations, including creation, updates, and deletions of policy settings related to customer protection.
 
 
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
+
 ## Properties
 None.
 

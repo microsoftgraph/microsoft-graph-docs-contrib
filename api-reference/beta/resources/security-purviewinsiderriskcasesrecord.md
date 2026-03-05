@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures cases created in Microsoft Purview Insider Risk Management. This resource tracks the lifecycle of insider risk cases, including case creation, updates, assignment, resolution, and other case management activities. These audit records help organizations maintain a record of how insider risk investigations are managed for compliance, governance, and operational purposes.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures information about changes to threat indicator settings in Microsoft Defender for Endpoint (MDE). This resource provides details about modifications to custom indicators, indicator configurations, and threat intelligence settings used to detect and respond to specific threats. These audit records help security administrators track the creation, modification, and deletion of threat indicators and understand how these changes affect the organization's security posture.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

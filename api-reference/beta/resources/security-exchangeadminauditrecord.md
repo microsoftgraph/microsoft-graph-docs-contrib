@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures administrative activities in Exchange Online. This record type documents actions performed by administrators in the Exchange Admin Center, Exchange Management Shell, or via Exchange Online PowerShell. The audit information includes details about mailbox configurations, transport rule modifications, permission changes, and other administrative operations that affect the Exchange environment. These records help organizations track administrative changes for security monitoring, compliance, and troubleshooting purposes.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

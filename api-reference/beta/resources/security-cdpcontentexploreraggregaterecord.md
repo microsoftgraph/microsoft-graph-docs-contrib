@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record for Compliance Data Platform (CDP) Content Explorer aggregate events. This resource captures aggregated information about content exploration activities for data classification and compliance monitoring.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

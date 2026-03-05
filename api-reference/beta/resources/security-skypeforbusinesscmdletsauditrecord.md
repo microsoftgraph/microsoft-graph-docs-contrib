@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures Skype for Business PowerShell cmdlet operations. This resource tracks administrative actions performed through PowerShell cmdlets to configure and manage Skype for Business Online services, including user management, policy configurations, and service settings. These audit records help organizations monitor administrative activities that affect Skype for Business services, providing accountability and traceability for configuration changes.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties

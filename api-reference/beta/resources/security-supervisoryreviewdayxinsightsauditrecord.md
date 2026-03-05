@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 Represents an audit record that captures supervisory review insights and analytics activities. This resource tracks interactions with compliance supervisory review analytics, reports, and insights dashboards that help organizations monitor communication review processes. These audit records help organizations track how supervisory review insights are being accessed and utilized, providing visibility into compliance management activities and review trends.
 
 
-Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md).
+Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md). For more information about audit activities, see [Office 365 Management Activity API schema](https://learn.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema).
 
 
 ## Properties
