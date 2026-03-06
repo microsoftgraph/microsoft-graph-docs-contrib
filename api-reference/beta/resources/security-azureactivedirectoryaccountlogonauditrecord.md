@@ -1,12 +1,12 @@
 ---
 title: "azureActiveDirectoryAccountLogonAuditRecord resource type"
-description: "Represents an audit record for Azure Active Directory account logon events."
+description: "Represents an audit record for Microsoft Entra ID account logon events."
 author: "diksha27"
 ms.subservice: compliance
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.date: 03/05/2026
-toc.title: "Azure active directory account logon audit record"
+toc.title: "Microsoft Entra ID account logon audit record"
 ---
 # azureActiveDirectoryAccountLogonAuditRecord resource type
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an audit record for Azure Active Directory account logon events. This resource captures information about user authentication activities, including sign-in attempts, authentication methods used, and logon outcomes.
+Represents an audit record for Microsoft Entra ID account logon events. This resource captures information about user authentication activities, including sign-in attempts, authentication methods used, and logon outcomes.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
