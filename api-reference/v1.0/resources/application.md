@@ -104,6 +104,9 @@ This resource supports:
 
 ### signInAudience values
 
+> [!IMPORTANT]
+> Using the `signInAudience` property to limit where the application can be used is **not** a replacement for proper tenant validation and authorization enforcement in your application code. If your application expects access only in specific tenants, you **must** enforce that validation in your application's code. To learn more, see [Secure applications and APIs by validating claims](/entra/identity-platform/claims-validation).
+
 | Value | Description |
 |:---------------|:--------|
 |AzureADMyOrg|Users with a Microsoft work or school account in my organization's Microsoft Entra tenant (single tenant). This is the default value for the **signInAudience** property. |
