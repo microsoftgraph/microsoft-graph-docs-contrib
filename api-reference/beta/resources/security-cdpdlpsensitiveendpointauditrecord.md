@@ -1,6 +1,6 @@
 ---
 title: "cdpDlpSensitiveEndpointAuditRecord resource type"
-description: "Represents an audit record for Compliance Data Platform (CDP) Data Loss Prevention (DLP) sensitive content events on endpoints."
+description: "Represents an audit record for Common Data Platform (CDP) Data Loss Prevention (DLP) sensitive content events on endpoints."
 author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an audit record for Compliance Data Platform (CDP) Data Loss Prevention (DLP) sensitive content events on endpoints. This resource captures information about sensitive data detected by DLP policies on managed devices.
+Represents an audit record for Common Data Platform (CDP) Data Loss Prevention (DLP) sensitive content events on endpoints. This resource captures information about sensitive data detected by DLP policies on managed devices.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).

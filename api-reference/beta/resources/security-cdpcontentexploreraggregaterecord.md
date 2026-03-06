@@ -1,6 +1,6 @@
 ---
 title: "cdpContentExplorerAggregateRecord resource type"
-description: "Represents an audit record for Compliance Data Platform (CDP) Content Explorer aggregate events."
+description: "Represents an audit record for Common Data Platform (CDP) Content Explorer aggregate events."
 author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an audit record for Compliance Data Platform (CDP) Content Explorer aggregate events. This resource captures aggregated information about content exploration activities for data classification and compliance monitoring.
+Represents an audit record for Common Data Platform (CDP) Content Explorer aggregate events. This resource captures aggregated information about content exploration activities for data classification and compliance monitoring.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
