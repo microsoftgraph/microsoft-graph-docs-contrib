@@ -1,6 +1,6 @@
 ---
 title: "complianceDlpClassificationBaseCdpRecord resource type"
-description: "Represents a base audit record for Microsoft Purview Data Loss Prevention (DLP) classification events in the Common Data Platform (CDP)."
+description: "Represents a base audit record for Microsoft Purview Data Loss Prevention (DLP) classification events in the common data platform in Microsoft Sentinel."
 author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a base audit record for Microsoft Purview Data Loss Prevention (DLP) classification events in the Common Data Platform (CDP). This resource provides common properties for CDP-specific data classification audit records.
+Represents a base audit record for Microsoft Purview Data Loss Prevention (DLP) classification events in the common data platform in Microsoft Sentinel. This resource provides common properties for specific data classification audit records.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
