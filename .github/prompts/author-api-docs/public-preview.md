@@ -609,12 +609,14 @@ Create a dedicated topic for the enumeration. This option is rarely applicable.
    - Maintain the order outlined in the Documentation Plan
    - Do not change the order of existing members unless specified
 
-2. **Update property descriptions:**
+2. **Update property descriptions in the consuming resources:**
+   - Search for all resource files that reference the enum type as a return type for a property
    - Find all properties that use this enumeration type
-   - Update the list of enum members in each property description
-   - Maintain the order outlined in the Documentation Plan
-   - **For evolvable enums:** If new members are added after `unknownFutureValue`, update the text to include the `Prefer: include-unknown-enum-members` header note
+   - Add the new member to the list of possible values in the property description, maintaining the order outlined in the Documentation Plan
+   - If values are listed, add the new member to the list
+   - If the property uses evolvable enum syntax with `Prefer: include-unknown-enum-members`, add the new member to both the main list AND the evolvable members list
    - Ensure consistency across all properties that reference the same enumeration
+   - Ensure consistent formatting with backticks around enum values
 
 3. **For evolvable enums with new members after unknownFutureValue:**
    - Update introductory text (for Options 2 & 3) to list the new members that require the header
