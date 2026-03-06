@@ -2875,7 +2875,6 @@
         {
           "name": "Audit log query",
           "resources": [
-            "microsoft.graph.security.auditCoreRoot",
             "microsoft.graph.security.auditLogQuery",
             "microsoft.graph.security.auditLogRecord"
           ]

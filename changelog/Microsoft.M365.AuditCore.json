@@ -4,7 +4,7 @@
       "ChangeList": [
         {
           "Id": "b7f4656a-a186-4fbf-ac94-a8348dac88b4",
-          "ApiChange": "Member",
+          "ApiChange": "Enumeration",
           "ChangedApiName": "auditLogRecordType",
           "ChangeType": "Addition",
           "Description": "Added multiple members to the **auditLogRecordType** enumeration to support audit log record types for various Microsoft 365 workloads.",
@@ -23,8 +23,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2024-08-13T07:17:14.2064036Z",
-      "WorkloadArea": "Compliance",
-      "SubArea": ""
+      "WorkloadArea": "Security",
+      "SubArea": "Compliance"
     }
   ]
 }
