@@ -16,10 +16,7 @@ Namespace: microsoft.graph.security
 Represents the entry point for Microsoft Purview audit log queries and operations. Use this resource to create and manage audit log queries that search across Microsoft 365 services, including Exchange, SharePoint, OneDrive, Microsoft Entra, and more.
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List auditLogQueries](../api/security-auditcoreroot-list-auditlogqueries.md)|[microsoft.graph.security.auditLogQuery](../resources/security-auditlogquery.md) collection|Get a list of the [auditLogQuery](../resources/security-auditlogquery.md) objects and their properties.|
-|[Create auditLogQuery](../api/security-auditcoreroot-post-auditlogqueries.md)|[microsoft.graph.security.auditLogQuery](../resources/security-auditlogquery.md)|Create a new [auditLogQuery](../resources/security-auditlogquery.md) object.|
+None.
 
 ## Properties
 None.
