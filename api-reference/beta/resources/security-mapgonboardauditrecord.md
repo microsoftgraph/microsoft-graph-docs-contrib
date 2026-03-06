@@ -1,6 +1,6 @@
 ---
 title: "mapgOnboardAuditRecord resource type"
-description: "Represents an audit record that captures activities related to onboarding processes for Microsoft Active Protection Gateway (MAPG)."
+description: "Represents an audit record for MAPG onboarding events."
 author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an audit record that captures activities related to onboarding processes for Microsoft Active Protection Gateway (MAPG). This record type documents events such as tenant enrollment, service provisioning, configuration setup, and deployment activities when an organization adopts and implements the Active Protection Gateway service, providing visibility into the service activation lifecycle.
+Represents an audit record for MAPG onboarding events.
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
 
