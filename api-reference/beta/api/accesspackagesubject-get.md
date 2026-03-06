@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties of an external directory users which are represented by an existing [accessPackageSubject](../resources/accesspackagesubject.md) object.
+Get the properties of an external directory user represented by an existing [accessPackageSubject](../resources/accesspackagesubject.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
