@@ -27,13 +27,16 @@ Use the following new container columns APIs added to further support structured
   - [Update column](/graph/api/filestoragecontainer-update-column)
   - [Delete column](/graph/api/filestoragecontainer-delete-column)
 
-### Reports | Identity and access reports
 ### Identity and access | Governance
 
 - Added the `allDirectoryAgentIdentities` member to the [allowedTargetScope](/graph/api/resources/enums#allowedtargetscope-values) enumeration to allow access packages to target all directory agent identities.
 - Added the [targetAgentIdentitySponsorsOrOwners](/graph/api/resources/targetagentidentitysponsorsorowners) resource type that defines the sponsors or owners of a specific agent identity.
 
 ## March 2026: New in preview only
+
+### Backup storage
+
+Added the `includeNewerItems` member as supported value for the **tags** property on [restorePoint](/graph/api/resources/restorepoint?view=graph-rest-beta&preserve-view=true) to get a restore point within a specified time period that includes any newer items created during that period.
 
 ### Identity and access | Governance
 
