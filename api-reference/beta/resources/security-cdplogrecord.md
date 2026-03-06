@@ -1,6 +1,6 @@
 ---
 title: "cdpLogRecord resource type"
-description: "Represents an audit record for Common Data Platform (CDP) log events."
+description: "Represents an audit record for common data platform log events in Microsoft Sentinel."
 author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an audit record for Common Data Platform (CDP) log events. This resource captures general logging information from the CDP, including processing activities and system events.
+Represents an audit record for common data platform log events in Microsoft Sentinel. This resource captures general logging information from the common data platform, including processing activities and system events.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).

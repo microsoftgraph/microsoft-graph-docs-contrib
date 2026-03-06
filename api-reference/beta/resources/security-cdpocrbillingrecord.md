@@ -1,6 +1,6 @@
 ---
 title: "cdpOcrBillingRecord resource type"
-description: "Represents an audit record for Common Data Platform (CDP) OCR billing events."
+description: "Represents an audit record for common data platform OCR billing events in Microsoft Sentinel."
 author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an audit record for Common Data Platform (CDP) OCR billing events. This resource captures information about optical character recognition (OCR) processing charges incurred during compliance data analysis.
+Represents an audit record for common data platform OCR billing events in Microsoft Sentinel. This resource captures information about optical character recognition (OCR) processing charges incurred during compliance data analysis.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).

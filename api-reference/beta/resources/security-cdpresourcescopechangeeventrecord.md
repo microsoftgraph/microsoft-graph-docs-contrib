@@ -1,6 +1,6 @@
 ---
 title: "cdpResourceScopeChangeEventRecord resource type"
-description: "Represents an audit record for Common Data Platform (CDP) resource scope change events."
+description: "Represents an audit record for common data platform resource scope change events in Microsoft Sentinel."
 author: "palakagrawaljk"
 ms.subservice: security
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an audit record for Common Data Platform (CDP) resource scope change events. This resource captures information about changes to resource scoping configurations in compliance policies.
+Represents an audit record for common data platform resource scope change events in Microsoft Sentinel. This resource captures information about changes to resource scoping configurations in compliance policies.
 
 
 Inherits from [microsoft.graph.security.auditData](../resources/security-auditdata.md). The audit data for this record type is returned as the **auditData** property in an [auditLogRecord](../resources/security-auditlogrecord.md).
