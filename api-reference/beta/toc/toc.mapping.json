@@ -2877,10 +2877,6 @@
           "resources": [
             "microsoft.graph.security.auditLogQuery",
             "microsoft.graph.security.auditLogRecord"
-          ],
-          "complexTypes": [
-            "microsoft.graph.security.auditData",
-            "microsoft.graph.security.defaultAuditData"
           ]
         },
         {
