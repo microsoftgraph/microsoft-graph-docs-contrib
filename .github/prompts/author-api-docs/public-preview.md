@@ -138,10 +138,10 @@ The tooling that generates doc stubs typically assumes **all EntityType resource
 
 ### Handling polymorphic entity types
 
-A **polymorphic collection** occurs when an EntityType (abstract or concrete) serves as the base for multiple derived types that all share the same API endpoints. The Documentation Plan flags these with a note containing the phrase "polymorphic collection" and recommends base-type file names.
+A **polymorphic collection** occurs when an EntityType (abstract or concrete) serves as the base for multiple derived types that all share the same API endpoints. The Documentation Plan flags these with a ⚠️ caveat block containing the phrase "polymorphic collection" and recommends base-type file names.
 
 **How to detect polymorphism:**
-1. Look for notes in the Documentation Plan that mention "polymorphic collection" or "base type"
+1. Look for ⚠️ caveat blocks in the Documentation Plan that mention "polymorphic collection" or "base type"
 2. Confirm: multiple derived type resource stubs exist, but the Documentation Plan lists operations only under the base type name
 3. Verify: the API endpoints in the Documentation Plan or API.md are identical for all derived types
 
@@ -150,7 +150,7 @@ A **polymorphic collection** occurs when an EntityType (abstract or concrete) se
 | Area | Rule |
 |------|------|
 | **File naming** | Use the base type name for all shared operation files, whether the base type is abstract or concrete. Never create operation files named after derived types. |
-| **Doc stubs** | Derived types will have overgenerated operation stubs (e.g., `derivedtype-get.md`). **Skip these** — only use the base type operation stubs. |
+| **Doc stubs** | Derived types will have overgenerated operation stubs (e.g., `derivedtype-get.md`) and their associated permissions include files. **Skip all of these** — only use the base type operation stubs and their permissions files. |
 | **Resource pages** | Create resource pages for both the base type and each derived type. The base type page lists the Methods table; derived type pages reference the base type for operations. |
 | **Base type resource** | Properties/Relationships: only base type's own + inherited. Methods table: links to shared operation files using base type name. For concrete base types, also include any operations exclusive to the base type (e.g., actions/functions bound only to it). |
 | **Derived type resources** | Properties: include derived-type-specific properties + inherited from base. Methods table: "None." or reference the base type operations — follow the Documentation Plan. |
@@ -631,7 +631,7 @@ Create a dedicated topic for the enumeration. This option is rarely applicable.
      - New relationship to existing resource
      - New enumeration
      - New enumeration members to existing enumeration
-     - Polymorphic entity type collection (base type — abstract or concrete — with shared-endpoint derived types)
+     - Polymorphic collection (base type — abstract or concrete — with shared-endpoint derived types)
      - Update to existing file
    - Note the namespace (microsoft.graph or subnamespace)
    - Note the version (v1.0 or beta)
@@ -822,7 +822,7 @@ In addition to the [base quality checklist](common.md#base-quality-checklist), v
 - [ ] Polymorphism detected from Documentation Plan notes
 - [ ] Operation files use base type name only (no derived-type operation files)
 - [ ] For concrete base types: any base-type-only operations (actions/functions) documented separately
-- [ ] Derived-type operation doc stubs skipped
+- [ ] Derived-type operation doc stubs skipped (including their permissions include files)
 - [ ] Base type resource page: Methods table present with base-type file links
 - [ ] Derived type resource pages: reference base type for operations
 - [ ] Base type resource page: Properties/Relationships list only own + inherited (not derived-type-specific)
