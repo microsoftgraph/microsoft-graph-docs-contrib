@@ -1,31 +1,27 @@
 ---
-title: "Delete threatIntelligencePolicyLink"
-description: "Delete a threatIntelligencePolicyLink object."
-author: "fgomulka"
-ms.date: 06/05/2025
+title: "Delete column"
+description: "Delete a columnDefinition from a fileStorageContainer."
+author: "tonchan-msft"
 ms.localizationpriority: medium
-ms.subservice: "entra-global-secure-access"
+ms.subservice: "onedrive"
 doc_type: apiPageType
+ms.date: 01/7/2026
 ---
 
-# Delete threatIntelligencePolicyLink
+# Delete column
 
-Namespace: microsoft.graph.networkaccess
+Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Delete a [threatIntelligencePolicyLink](../resources/networkaccess-threatintelligencepolicylink.md) object.
-
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+Delete a [columnDefinition](../resources/columndefinition.md) from a [fileStorageContainer](../resources/filestoragecontainer.md).  
 
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "networkaccess_threatintelligencepolicylink_delete" } -->
-[!INCLUDE [permissions-table](../includes/permissions/networkaccess-threatintelligencepolicylink-delete-permissions.md)]
+<!-- { "blockType": "permissions", "name": "filestoragecontainer_delete_column" } -->
+[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-delete-column-permissions.md)]
 
-[!INCLUDE [rbac-global-secure-access-apis-write](../includes/rbac-for-apis/rbac-global-secure-access-apis-write.md)]
+[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-permissions.md)]
 
 ## HTTP request
 
@@ -34,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ```http
-DELETE /networkAccess/filteringProfiles/{filteringProfileId}/policies/{policyLinkId}
+DELETE /storage/fileStorage/containers/{containerId}/columns/{columnId}
 ```
 
 ## Request headers
@@ -56,18 +52,21 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 
 The following example shows a request.
+
 <!-- {
   "blockType": "request",
-  "name": "delete_threatintelligencepolicylink"
+  "name": "delete_columndefinition_for_fileStorageContainer"
 }
 -->
 ```http
-DELETE https://graph.microsoft.com/beta/networkAccess/filteringProfiles/{filteringProfileId}/policies/{policyLinkId}
+DELETE https://graph.microsoft.com/v1.0/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103
 ```
+
 
 ### Response
 
 The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -76,4 +75,3 @@ The following example shows the response.
 ```http
 HTTP/1.1 204 No Content
 ```
-

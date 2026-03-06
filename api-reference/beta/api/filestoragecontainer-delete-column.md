@@ -20,13 +20,8 @@ Delete a [columnDefinition](../resources/columndefinition.md) from a [fileStorag
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "filestoragecontainer-delete-columns-permissions"
-}
--->
-
-[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-delete-columns-permissions.md)]
+<!-- { "blockType": "permissions", "name": "filestoragecontainer_delete_column" } -->
+[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-delete-column-permissions.md)]
 
 [!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-permissions.md)]
 
@@ -37,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ```http
-DELETE /storageContainers/{containerId}/columns/{columnId}
+DELETE /storage/fileStorage/containers/{containerId}/columns/{columnId}
 ```
 
 ## Request headers
@@ -66,30 +61,13 @@ The following example shows a request.
 }
 -->
 ```http
-DELETE https://graph.microsoft.com/bet/storageContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103
-Content-Type: application/json
-
-{
-  "description": "test",
-  "enforceUniqueValues": false,
-  "hidden": false,
-  "indexed": false,
-  "name": "Title",
-  "text": {
-    "allowMultipleLines": false,
-    "appendChangesToExistingText": false,
-    "linesForEditing": 0,
-    "maxLength": 255
-  }
-}
+DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103
 ```
 
 
 ### Response
 
 The following example shows the response.
-
->**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

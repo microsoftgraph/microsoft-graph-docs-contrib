@@ -1,18 +1,21 @@
 ---
-title: "List threat intelligence indicators"
+title: "List threat intelligence indicators (deprecated)"
 description: "Retrieve a list of threat intelligence indicator objects."
 ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: "security"
 doc_type: apiPageType
 ms.date: 08/13/2024
+ROBOTS: NOINDEX
 ---
 
-# List threat intelligence indicators
+# List threat intelligence indicators (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [security-tiindicator-deprecation](../includes/security-tiindicator-deprecation.md)]
 
 Retrieve a list of [tiIndicator](../resources/tiindicator.md) objects.
 

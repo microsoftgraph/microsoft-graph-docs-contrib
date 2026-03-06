@@ -1,7 +1,25 @@
 {
   "changelog": [
       {
-        "ChangeList": [
+          "ChangeList": [
+            {
+              "Id": "0272a9b7-e106-4262-a0d1-90932ddd92a6",
+              "ApiChange": "Member",
+              "ChangedApiName": "includeNewerItems",
+              "ChangeType": "Addition",
+              "Description": "Added the `includeNewerItems` member to the **restorePointTags** enumeration.",
+              "Target": "restorePointTags"
+            }
+          ],
+          "Id": "0272a9b7-e106-4262-a0d1-90932ddd92a6",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2026-03-05T08:07:36.2586417Z",
+          "WorkloadArea": "EnhancedRestore",
+          "SubArea": "Backup and Restore"
+        },
+        {
+          "ChangeList": [
           {
             "Id": "51bec7fb-1c22-4485-bef5-4ac72a4b8258",
             "ApiChange": "Member",
@@ -1979,6 +1997,40 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2026-02-06T12:03:04.3321855Z",
+      "WorkloadArea": "EnhancedRestore",
+      "SubArea": "Backup and Restore"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ef829240-81e5-4df6-b98d-2986c63febd3",
+          "ApiChange": "Member",
+          "ChangedApiName": "offboardRequested",
+          "ChangeType": "Addition",
+          "Description": "Added the `offboardRequested` member to the **protectionPolicyStatus** enumeration.",
+          "Target": "protectionPolicyStatus"
+        },
+        {
+          "Id": "ef829240-81e5-4df6-b98d-2986c63febd3",
+          "ApiChange": "Member",
+          "ChangedApiName": "offboarded",
+          "ChangeType": "Addition",
+          "Description": "Added the `offboarded` member to the **protectionPolicyStatus** enumeration.",
+          "Target": "protectionPolicyStatus"
+        },
+        {
+          "Id": "ef829240-81e5-4df6-b98d-2986c63febd3",
+          "ApiChange": "Property",
+          "ChangedApiName": "offboardRequestedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **offboardRequestedDateTime** property to the [protectionPolicyBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionPolicyBase?view=graph-rest-beta) resource.",
+          "Target": "protectionPolicyBase"
+        }
+      ],
+      "Id": "ef829240-81e5-4df6-b98d-2986c63febd3",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-03-03T21:51:07.3764487Z",
       "WorkloadArea": "EnhancedRestore",
       "SubArea": "Backup and Restore"
     }
