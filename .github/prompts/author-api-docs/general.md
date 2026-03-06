@@ -24,13 +24,15 @@ Microsoft Graph documentation requires ongoing maintenance beyond documenting ne
 
 ## How to use this scenario
 
-Since this scenario is flexible and task-driven, the typical inputs (doc stubs, API.md files, changelog) may not be applicable or provided. Instead:
+This scenario operates in **lightweight mode by default** — formal inputs (doc stubs, API.md, Documentation Plan) are not required. The author's prompt serves as the task description.
 
 **Provide a detailed task description:**
 - Clearly describe what you want to accomplish
 - Include specific files, resources, or APIs involved (if known)
 - Explain the desired outcome or acceptance criteria
 - Share any relevant context, constraints, or requirements
+
+If the task involves changes that should be announced (e.g., backfilling recently added APIs), ask the author whether they need a **changelog entry** and **What's New update**.
 
 **Example task prompts:**
 - "Review all files in api-reference/beta/resources/ that reference the 'user' resource and ensure the links are formatted correctly"
