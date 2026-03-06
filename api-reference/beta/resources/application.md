@@ -116,7 +116,7 @@ This resource supports:
 ### signInAudience values
 
 > [!IMPORTANT]
-> Using `signInAudience` and `signInAudienceRestrictions` properties to limit where the application can be used is **not** a replacement for proper tenant validation and authorization enforcement in your application code. If your application expects access only in specific tenants, you **must** enforce that validation in your application's code. To learn more, see [Secure applications and APIs by validating claims](https://learn.microsoft.com/entra/identity-platform/claims-validation).
+> Using the `signInAudience` and `signInAudienceRestrictions` properties to limit where the application can be used is **not** a replacement for proper tenant validation and authorization enforcement in your application code. If your application expects access only in specific tenants, you **must** enforce that validation in your application's code. To learn more, see [Secure applications and APIs by validating claims](https://learn.microsoft.com/entra/identity-platform/claims-validation).
 
 | Value | Description |
 |:---------------|:--------|
