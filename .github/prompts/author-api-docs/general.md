@@ -24,7 +24,7 @@ Microsoft Graph documentation requires ongoing maintenance beyond documenting ne
 
 ## How to use this scenario
 
-This scenario operates in **lightweight mode by default** — formal inputs (doc stubs, API.md, Documentation Plan) are not required. The author's prompt serves as the task description.
+This scenario is flexible and task-driven — formal inputs (doc stubs, API.md, Documentation Plan) are typically not required. The author's prompt serves as the task description.
 
 **Provide a detailed task description:**
 - Clearly describe what you want to accomplish

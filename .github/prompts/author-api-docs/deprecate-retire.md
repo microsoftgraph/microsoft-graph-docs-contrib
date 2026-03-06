@@ -56,7 +56,9 @@ The Documentation Plan may contain a mix of deprecation and new API documentatio
 
 ## Inputs
 
-### Full mode inputs
+### Required inputs
+
+Ask the author to provide these in the `temp-docstubs` folder:
 
 **Documentation Plan (required):**
 - Detailed description of what is being deprecated, which files to change, alternatives/workarounds, milestone dates, and blog post links
@@ -67,9 +69,9 @@ The Documentation Plan may contain a mix of deprecation and new API documentatio
 - JSON file if provided
 - **Location:** `temp-docstubs` folder
 
-### Lightweight mode inputs
+### When the author provides context directly in their prompt
 
-When the author describes a deprecation directly in their prompt without providing formal inputs, adapt as follows:
+If the author has already described the deprecation in sufficient detail (e.g., named specific resources, methods, or properties to deprecate, provided the alternative and deadline), you can work directly from their prompt instead of requesting formal inputs. In this case:
 
 | Instead of... | Use... |
 |---------------|--------|
@@ -83,8 +85,6 @@ When the author describes a deprecation directly in their prompt without providi
 - Blog post URL (if available)
 - Which version(s): beta, v1.0, or both
 - WorkloadArea and SubArea for the changelog (if one is needed)
-
-**Do not block** on missing formal inputs when the author's prompt provides enough context to proceed.
 
 ## Key principles
 

@@ -35,9 +35,9 @@ For this scenario, the author should add these files to `temp-docstubs`:
 
 ## Inputs
 
-### Full mode inputs
+### Required inputs
 
-When the author provides formal inputs via temp-docstubs, use these as the primary sources:
+Ask the author to provide these files in the `temp-docstubs` folder:
 
 #### Input 1: Documentation Plan
 - A detailed description of what needs to be promoted from beta to v1.0 in Markdown format
@@ -58,9 +58,9 @@ When the author provides formal inputs via temp-docstubs, use these as the prima
 - JSON file containing changelog entries for APIs being promoted to v1.0
 - **Location:** Add to the `temp-docstubs` folder
 
-### Lightweight mode inputs
+### When the author provides context directly in their prompt
 
-When the author describes a promotion directly in their prompt without providing formal inputs, adapt as follows:
+If the author has already described the promotion in sufficient detail (e.g., named specific resources, methods, or properties to promote), you can work directly from their prompt instead of requesting formal inputs. In this case:
 
 | Instead of... | Use... |
 |---------------|--------|
@@ -70,6 +70,8 @@ When the author describes a promotion directly in their prompt without providing
 
 **What you still need from the author** (ask if not provided or inferrable):
 - Which specific resources/methods/properties are being promoted
+- Whether this is a full or partial promotion
+- WorkloadArea and SubArea for the changelog (if one is needed)
 - Whether this is a full or partial promotion
 - WorkloadArea and SubArea for the changelog (if one is needed)
 
