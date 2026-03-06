@@ -138,10 +138,10 @@ The tooling that generates doc stubs typically assumes **all EntityType resource
 
 ### Handling polymorphic entity types
 
-A **polymorphic collection** occurs when an abstract EntityType serves as the base for multiple derived types that all share the same API endpoints. The Documentation Plan flags these with a note containing the phrase "polymorphic collection" and recommends base-type file names.
+A **polymorphic collection** occurs when an EntityType (abstract or concrete) serves as the base for multiple derived types that all share the same API endpoints. The Documentation Plan flags these with a note containing the phrase "polymorphic collection" and recommends base-type file names.
 
 **How to detect polymorphism:**
-1. Look for notes in the Documentation Plan that mention "polymorphic collection" or "abstract base type"
+1. Look for notes in the Documentation Plan that mention "polymorphic collection" or "base type"
 2. Confirm: multiple derived type resource stubs exist, but the Documentation Plan lists operations only under the base type name
 3. Verify: the API endpoints in the Documentation Plan or API.md are identical for all derived types
 
@@ -149,16 +149,17 @@ A **polymorphic collection** occurs when an abstract EntityType serves as the ba
 
 | Area | Rule |
 |------|------|
-| **File naming** | Use the abstract base type name for all operation files. Never create operation files named after derived types. |
+| **File naming** | Use the base type name for all shared operation files, whether the base type is abstract or concrete. Never create operation files named after derived types. |
 | **Doc stubs** | Derived types will have overgenerated operation stubs (e.g., `derivedtype-get.md`). **Skip these** — only use the base type operation stubs. |
 | **Resource pages** | Create resource pages for both the base type and each derived type. The base type page lists the Methods table; derived type pages reference the base type for operations. |
-| **Base type resource** | Properties/Relationships: only base type's own + inherited. Methods table: links to operation files using base type name. |
+| **Base type resource** | Properties/Relationships: only base type's own + inherited. Methods table: links to shared operation files using base type name. For concrete base types, also include any operations exclusive to the base type (e.g., actions/functions bound only to it). |
 | **Derived type resources** | Properties: include derived-type-specific properties + inherited from base. Methods table: "None." or reference the base type operations — follow the Documentation Plan. |
 | **@odata.type** | POST/PATCH/PUT request bodies: `@odata.type` is **required** — note before the property table and list sample valid value. GET/LIST responses: `@odata.type` is included automatically. |
 | **Request body tables** | Include properties from both the base type and all derived types. If the same property name has a different type per derived type, use separate rows. Append which derived type each property applies to. |
 | **Examples** | LIST: show a heterogeneous collection with 2–3 derived types, each with `@odata.type`. POST/PATCH: one derived type per example with `@odata.type` in the body. |
+| **Abstract vs. concrete descriptions** | Abstract base: state it cannot be instantiated directly. Concrete base: note the collection may contain both base type instances and derived type instances. |
 
-**Example:** If the Documentation Plan flags `customAuthenticationExtension` as an abstract base type with derived types `onTokenIssuanceStartCustomExtension`, `onAttributeCollectionStartCustomExtension`, etc., all sharing `GET|POST /identity/customAuthenticationExtensions`:
+**Example:** If the Documentation Plan flags `customAuthenticationExtension` as a base type with derived types `onTokenIssuanceStartCustomExtension`, `onAttributeCollectionStartCustomExtension`, etc., all sharing `GET|POST /identity/customAuthenticationExtensions`:
 - ✅ Create `customauthenticationextension-get.md`, `identitycontainer-list-customauthenticationextensions.md`
 - ❌ Do NOT create `ontokenissuancestartcustomextension-get.md`
 
@@ -630,7 +631,7 @@ Create a dedicated topic for the enumeration. This option is rarely applicable.
      - New relationship to existing resource
      - New enumeration
      - New enumeration members to existing enumeration
-     - Polymorphic entity type collection (abstract base type with shared-endpoint derived types)
+     - Polymorphic entity type collection (base type — abstract or concrete — with shared-endpoint derived types)
      - Update to existing file
    - Note the namespace (microsoft.graph or subnamespace)
    - Note the version (v1.0 or beta)
@@ -642,7 +643,7 @@ Create a dedicated topic for the enumeration. This option is rarely applicable.
    - List all new enumerations to add (determine which option: enum file, parent resource, or separate topic)
    - List all existing enumerations with new members (check if evolvable and if new members follow unknownFutureValue)
    - List all new API files to create
-   - For polymorphic entity type collections: list only base-type operation files; mark derived-type operation stubs as "skip"
+   - For polymorphic collections: list only base-type operation files; mark derived-type operation stubs as "skip". For concrete base types with their own actions/functions, include those as additional operation files.
    - List all existing API files to update
    - List all permissions files to copy
    - Identify dependencies between files
@@ -819,7 +820,8 @@ In addition to the [base quality checklist](common.md#base-quality-checklist), v
 
 **For polymorphic collections (if applicable):**
 - [ ] Polymorphism detected from Documentation Plan notes
-- [ ] Operation files use abstract base type name only (no derived-type operation files)
+- [ ] Operation files use base type name only (no derived-type operation files)
+- [ ] For concrete base types: any base-type-only operations (actions/functions) documented separately
 - [ ] Derived-type operation doc stubs skipped
 - [ ] Base type resource page: Methods table present with base-type file links
 - [ ] Derived type resource pages: reference base type for operations

@@ -472,7 +472,7 @@ Fully qualify any type (including enum types) that is defined in a subnamespace 
 - Reference and link to the base type in associated child resource topics
 - In base type topics, link to the child (derived) resource topics
 - In complex type topics, link to entity or complex types that use this complex type and reference the property/relationship whose return type is the complex type
-- **Polymorphic base types:** If the resource is an abstract base type with derived types sharing the same endpoints (flagged in the Documentation Plan), the description must state it's abstract, list all public derived types with links, and note that instances are differentiated by `@odata.type`. Properties and JSON representation show only base-type properties + inherited.
+- **Polymorphic base types:** If the resource is a base type (abstract or concrete) with derived types sharing the same endpoints (flagged in the Documentation Plan), the description must: for abstract bases, state it cannot be instantiated directly; for concrete bases, note the collection may contain both base and derived type instances. In both cases, list all public derived types with links and note that instances are differentiated by `@odata.type`. Properties and JSON representation show only base-type properties + inherited.
 - **Polymorphic derived types:** Each derived type's description must reference and link to the base type. Include derived-type-specific properties + inherited. Methods table should say "None." or reference the base type's operations per the Documentation Plan.
 
 **Methods table:**
@@ -658,7 +658,7 @@ When encountering ambiguity, attempt self-resolution before asking the author:
 4. If still unclear → document only confirmed operations, flag uncertain ones in summary
 
 **Documentation Plan flags a polymorphic collection:**
-1. Check the ⚠️ caveat block — it lists the abstract base type and recommended file names
+1. Check the note — it lists the base type and recommended file names
 2. Verify all derived types share the same endpoints in the API.md
 3. If confirmed → use base type name for all operation files; skip derived-type operation stubs
 4. If endpoints differ per derived type → not polymorphic; create separate operation files per type following standard naming
@@ -701,7 +701,7 @@ After processing all files in a documentation session, verify cross-file consist
 3. **Enum references ↔ definitions:** Every enum type referenced in Properties tables should be defined in the appropriate enums file, parent resource, or separate topic
 4. **Permissions files:** Every permissions include reference in API files should have a corresponding file in the `includes/permissions/` folder
 5. **JSON representation ↔ Properties table:** Properties listed in the JSON representation section should match the Properties table
-6. **Polymorphic collections:** If a Documentation Plan flagged polymorphic types, verify: (a) no operation files were created using derived type names, (b) all operation files use the base type name, (c) base type resource page has the Methods table, (d) derived type resource pages reference the base type for operations, (e) `@odata.type` guidance is included in POST/PATCH request body sections
+6. **Polymorphic collections:** If a Documentation Plan flagged polymorphic types, verify: (a) no operation files were created using derived type names, (b) all shared operation files use the base type name, (c) base type resource page has the Methods table (including base-type-only operations for concrete bases), (d) derived type resource pages reference the base type for operations, (e) `@odata.type` guidance is included in POST/PATCH request body sections
 
 Report any inconsistencies in the final summary to the author.
 
