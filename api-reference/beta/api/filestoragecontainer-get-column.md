@@ -1,6 +1,6 @@
 ---
 title: "Get column"
-description: "Get a column from a fileStorageContainer."
+description: "Get the properties of a column represented as a columnDefinition in a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -20,12 +20,8 @@ Get the properties of a column represented as a [columnDefinition](../resources/
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "filestoragecontainer-get-columns-permissions"
-}
--->
-[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-get-columns-permissions.md)]
+<!-- { "blockType": "permissions", "name": "filestoragecontainer_get_column" } -->
+[!INCLUDE [permissions-table](../includes/permissions/filestoragecontainer-get-column-permissions.md)]
 
 [!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-permissions.md)]
 
@@ -36,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ```http
-GET /storageContainers/{containerId}/columns/{column-id}
+GET /storage/fileStorage/containers/{containerId}/columns/{columnId}
 ```
 
 ## Request headers
@@ -65,7 +61,7 @@ The following example shows a request.
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/storageContainers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103
+GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103
 ```
 
 
@@ -99,4 +95,3 @@ Content-Type: application/json
   }
 }
 ```
-

@@ -1,11 +1,11 @@
 ---
 title: "Delete deploymentAudience"
 description: "Delete a deploymentAudience object."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 08/31/2024
+ms.date: 01/27/2026
 ---
 
 # Delete deploymentAudience

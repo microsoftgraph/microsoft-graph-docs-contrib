@@ -37,7 +37,7 @@ Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 |error|[publicError](../resources/publicerror.md)|Contains error details if the restore session fails or completes with an error.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity of the person who last modified this restore session.|
 |lastModifiedDateTime|DateTimeOffset|Timestamp of the last modification of this restore session.|
-|restoreJobType|[restoreJobType](../resources/enums.md#restorejobtype-values)|Indicates whether the restore session was created normally or by a bulk job.|
+|restoreJobType|[restoreJobType](../resources/enums.md#restorejobtype-values)|Indicates whether the restore is standard or bulk or granular restor. The possible values are `standard`,`bulk`,`unknownFutureValue`,`granular`. Use the `Prefer: include-unknown-enum-members` request header to get the following members in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `granular`.|
 |restoreSessionArtifactCount|[restoreSessionArtifactCount](../resources/restoresessionartifactcount.md)|The number of metadata artifacts that belong to this restore session.|
 |status|[restoreSessionStatus](../resources/onedriveforbusinessrestoresession.md#restoresessionstatus-values)|Status of the restore session. The value is an aggregated status of the restored artifacts. The possible values are: `draft`, `activating`, `active`, `completedWithError`, `completed`, `unknownFutureValue`, `failed`. Use the `Prefer: include-unknown-enum-members` request header to get the following members in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `failed`.|
 
@@ -58,6 +58,7 @@ Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 |:---|:---|:---|
 |driveRestoreArtifacts|[driveRestoreArtifact](../resources/driverestoreartifact.md) collection|A collection of restore points and destination details that can be used to restore a OneDrive for work or school drive.|
 |driveRestoreArtifactsBulkAdditionRequests|[driveRestoreArtifactsBulkAdditionRequest](../resources/driverestoreartifactsbulkadditionrequest.md) collection|A collection of user mailboxes and destination details that can be used to restore a OneDrive for work or school drive.|
+|granularDriveRestoreArtifacts|[granularDriveRestoreArtifact](../resources/granulardriverestoreartifact.md) collection|A collection of browse session id and item key details that can be used to restore OneDrive for work or school files and folders.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

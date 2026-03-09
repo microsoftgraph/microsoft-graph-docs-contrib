@@ -73,7 +73,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.cloudPcExternalPartner",
-  "partnerId": "198d7140-80bb-4843-8cc4-811377a49a92",
+  "partnerId": "198d71c0-80bb-4843-8cc4-811377a49a92",
   "enableConnection": true
 }
 ```
@@ -122,7 +122,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.cloudPcExternalPartner",
   "id": "b3548526-e615-3785-3118-be70b3968ec5",
-  "partnerId": "198d7140-80bb-4843-8cc4-811377a49a92",
+  "partnerId": "198d71c0-80bb-4843-8cc4-811377a49a92",
   "enableConnection": true,
   "lastSyncDateTime": "2020-11-03T12:43:14Z",
   "connectionStatus": "available",

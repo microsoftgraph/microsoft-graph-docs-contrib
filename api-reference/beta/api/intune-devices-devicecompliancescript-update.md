@@ -25,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementScripts.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementScripts.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -59,7 +59,7 @@ The following table shows the properties that are required when you create the [
 |detectionScriptContent|Binary|The entire content of the detection powershell script|
 |createdDateTime|DateTimeOffset|The timestamp of when the device compliance script was created. This property is read-only.|
 |lastModifiedDateTime|DateTimeOffset|The timestamp of when the device compliance script was modified. This property is read-only.|
-|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indicates the type of execution context. The possible values are: `system`, `user`.|
+|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indicates the type of execution context. Possible values are: `system`, `user`.|
 |enforceSignatureCheck|Boolean|Indicate whether the script signature needs be checked|
 |runAs32Bit|Boolean|Indicate whether PowerShell script(s) should run as 32-bit|
 |roleScopeTagIds|String collection|List of Scope Tag IDs for the device compliance script|

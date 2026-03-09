@@ -1,5 +1,39 @@
 {
-  "changelog": [  
+  "changelog": [ 
+    {
+      "ChangeList": [
+        {
+          "Id": "1184eb27-ecdb-488f-b59c-24a35ecd8688",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedAudiences",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **allowedAudiences** property from the [profilePropertySetting](https://learn.microsoft.com/en-us/graph/api/resources/profilePropertySetting?view=graph-rest-beta) resource.",
+          "Target": "profilePropertySetting"
+        },
+        {
+          "Id": "1184eb27-ecdb-488f-b59c-24a35ecd8688",
+          "ApiChange": "Property",
+          "ChangedApiName": "displayName",
+          "ChangeType": "Addition",
+          "Description": "Added the **displayName** property to the [profilePropertySetting](https://learn.microsoft.com/en-us/graph/api/resources/profilePropertySetting?view=graph-rest-beta) resource.",
+          "Target": "profilePropertySetting"
+        },
+        {
+          "Id": "1184eb27-ecdb-488f-b59c-24a35ecd8688",
+          "ApiChange": "Property",
+          "ChangedApiName": "isUserOverrideForAudienceEnabled",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **isUserOverrideForAudienceEnabled** property from the [profilePropertySetting](https://learn.microsoft.com/en-us/graph/api/resources/profilePropertySetting?view=graph-rest-beta) resource.",
+          "Target": "profilePropertySetting"
+        }
+      ],
+      "Id": "1184eb27-ecdb-488f-b59c-24a35ecd8688",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-02-20T13:49:03.6634061Z",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "People"
+    }, 
     {
       "ChangeList": [
         {

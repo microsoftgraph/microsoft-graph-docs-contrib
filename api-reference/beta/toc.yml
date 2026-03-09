@@ -112,6 +112,8 @@ items:
   - name: Teamwork and communications
     href: toc/teamwork-and-communications/toc.yml
     displayName: Microsoft Teams
+  - name: Tenant administration (preview)
+    href: toc/tenant-administration-(preview)/toc.yml
   - name: To-do tasks
     href: toc/to-do-tasks/toc.yml
     displayName: Microsoft To Do

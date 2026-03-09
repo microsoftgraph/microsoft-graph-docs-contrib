@@ -67,7 +67,11 @@ The contents of the request body should be the binary stream of the file to be u
 
 If successful, this method returns a [driveItem](../resources/driveitem.md) object in the response body for the newly created or updated file.
 
-## Example (upload a new file)
+## Examples
+
+### Example 1: Upload a new file
+
+#### Request
 
 This example uploads the string "The contents of the file goes here." to a file in the signed-in user's drive under FolderA named FileB.txt.
 
@@ -80,7 +84,7 @@ Content-Type: text/plain
 The contents of the file goes here.
 ```
 
-### Response
+#### Response
 
 If successful, this method returns an [driveItem][item-resource] resource in the response body for the newly created file.
 
@@ -98,7 +102,9 @@ Content-Type: application/json
 }
 ```
 
-## Example (updating an existing file)
+### Example 2: Updating an existing file
+
+#### Request
 
 This example replaces the contents of a file with a known ID.
 
@@ -123,7 +129,7 @@ The contents of the file goes here.
 
 ---
 
-### Response
+#### Response
 
 If successful, this method returns an [driveItem][item-resource] resource in the response body for the newly created file.
 

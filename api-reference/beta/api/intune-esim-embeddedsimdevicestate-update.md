@@ -58,7 +58,7 @@ The following table shows the properties that are required when you create the [
 |universalIntegratedCircuitCardIdentifier|String|The Universal Integrated Circuit Card Identifier (UICCID) identifying the hardware onto which a profile is to be deployed.|
 |deviceName|String|Device name to which the subscription was provisioned e.g. DESKTOP-JOE|
 |userName|String|Username which the subscription was provisioned to e.g. joe@contoso.com|
-|state|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|The state of the profile operation applied to the device. The possible values are: `notEvaluated`, `failed`, `installing`, `installed`, `deleting`, `error`, `deleted`, `removedByUser`.|
+|state|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|The state of the profile operation applied to the device. Possible values are: `notEvaluated`, `failed`, `installing`, `installed`, `deleting`, `error`, `deleted`, `removedByUser`.|
 |stateDetails|String|String description of the provisioning state.|
 
 

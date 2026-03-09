@@ -2,6 +2,7 @@
 > Required for API changes:
 > - [] Link to API.md file: *ADD LINK HERE*
 > - [] Link to **PR** for public-facing schema changes (schema-Prod-beta/v1.0.csdl):  *ADD LINK HERE*
+> - [] OPTIONAL: Attach the documentation plan generated for AI-assisted docs authoring and validation to help speed up content review.
 
 ---
 Add other supporting information, such as a description of the PR changes:

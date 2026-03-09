@@ -52,6 +52,9 @@ where files are shared, and where tabs are added.
 |[Get tab in channel](../api/channel-get-tabs.md) | [teamsTab](teamstab.md) | Get a specific tab pinned to a channel.|
 |[Update tab in channel](../api/channel-patch-tabs.md) | [teamsTab](teamstab.md) | Updates the properties of a tab in a channel.|
 |[Remove tab from channel](../api/channel-delete-tabs.md) | None | Remove (unpin) a tab from a channel.|
+|[List apps in channel](../api/channel-list-enabledapps.md) | [teamsApp](teamsapp.md) collection | Get a list of the [enabled apps](../resources/teamsapp.md) in the specified [channel](../resources/channel.md) within a [team](../resources/team.md). |
+|[Add app to channel](../api/channel-post-enabledapps.md) | None | Add a new [teamsApp](../resources/teamsapp.md) object that enables an [app](../resources/teamsapp.md) in the specified [channel](../resources/channel.md) within a [team](../resources/team.md). |
+|[Remove app from channel](../api/channel-delete-enabledapps.md) | None | Remove a [teamsApp](../resources/teamsapp.md) object that disables an [app](../resources/teamsapp.md) in the specified [channel](../resources/channel.md) within a [team](../resources/team.md). |
 |[Provision channel email address](../api/channel-provisionemail.md) |[provisionChannelEmailResult](../resources/provisionchannelemailresult.md)| Provision an email address for the channel.|
 |[Remove channel email address](../api/channel-removeemail.md) | None | Remove the email address of the channel.|
 |[Remove incoming channel](../api/team-delete-incomingchannels.md) | None| Remove an incoming [channel](../resources/channel.md) (a **channel** shared with a **team**) from a [team](../resources/team.md).|
@@ -117,6 +120,7 @@ For a POST request example, see [Request (create channel in migration state)](/m
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
 |allMembers|[conversationMember](conversationmember.md) collection |A collection of membership records associated with the channel. It includes both direct and indirect members of shared channels.|
+|enabledApps|[teamsApp](../resources/teamsapp.md) collection| A collection of enabled apps in the channel.|
 |[filesFolder](../api/channel-get-filesfolder.md)|[driveItem](driveitem.md)|Metadata for the location where the channel's files are stored.|
 |members|[conversationMember](conversationmember.md) collection|A collection of membership records associated with the channel.|
 |messages|[chatMessage](chatmessage.md) collection| A collection of all the messages in the channel. Nullable.|

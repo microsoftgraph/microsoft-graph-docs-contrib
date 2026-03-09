@@ -18,7 +18,7 @@ Unarchive an archived [fileStorageContainer](../resources/filestoragecontainer.m
 
 This action updates the [archivalDetails](../resources/sitearchivaldetails.md).
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

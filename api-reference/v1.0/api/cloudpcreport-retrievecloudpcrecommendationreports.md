@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Retrieve Cloud PC recommendation [reports](../resources/cloudpcreport.md) for usage optimization and cost savings. The usage category report categorizes a Cloud PC as `Undersized`, `Oversized`, `Rightsized`, or `Underutilized`, and also provides the recommended SKU when the Cloud PC isn't `Rightsized`.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -85,12 +85,12 @@ Content-Type: application/json
   "select": [
     "ServicePlanId",
     "ServicePlanName",
-    "UsageCategory"
+    "UsageInsight"
   ],
   "groupBy": [
     "ServicePlanId",
     "ServicePlanName",
-    "UsageCategory"
+    "UsageInsight"
   ]
 }
 ```
@@ -126,7 +126,7 @@ Content-Type: application/octet-stream
       "PropertyType": "String"
     },
     {
-      "Column": "UsageCategory",
+      "Column": "UsageInsight",
       "PropertyType": "String"
     }
   ],
@@ -185,7 +185,7 @@ Content-Type: application/json
     "UserPrincipalName",
     "ServicePlanId",
     "ServicePlanName",
-    "UsageCategory",
+    "UsageInsight",
     "RecommendedPlanId",
     "RecommendedPlanName"
   ],
@@ -234,7 +234,7 @@ Content-Type: application/octet-stream
       "PropertyType": "String"
     },
     {
-      "Column": "UsageCategory",
+      "Column": "UsageInsight",
       "PropertyType": "String"
     },
     {

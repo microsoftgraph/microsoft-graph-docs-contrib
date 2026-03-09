@@ -55,6 +55,14 @@ GET /directory/deletedItems/microsoft.graph.group
 GET /directory/deletedItems/microsoft.graph.user
 ```
 
+> [!IMPORTANT]
+> For soft deleted security groups, the **securityEnabled** property returns `false` instead of `true` due to a known limitation.
+>
+> To identify the group type, use the **groupTypes** property:
+>
+> - `["Unified"]`indicates a Microsoft 365 group.
+> - An empty array (`[]`) indicates a security group.
+
 The OData cast type is a required part of the URI and calling `GET /directory/deleteditems` without a type is **not** supported.
 
 ## Optional query parameters
@@ -246,8 +254,5 @@ Content-type: application/json
   "type": "#page.annotation",
   "description": "List deleteditems",
   "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
+  "suppressions": []
 }-->

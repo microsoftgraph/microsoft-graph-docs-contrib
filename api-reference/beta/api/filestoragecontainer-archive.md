@@ -18,7 +18,7 @@ Archive an active [fileStorageContainer](../resources/filestoragecontainer.md).
 
 This action updates the [archivalDetails](../resources/sitearchivaldetails.md).
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

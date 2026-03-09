@@ -85,11 +85,11 @@ This resource supports:
 | [List member of](../api/user-list-memberof.md) | [directoryObject](directoryobject.md) collection | Get the groups, directory roles, and administrative units that the user is a direct member of. This operation isn't transitive. |
 | [List transitive member of](../api/user-list-transitivememberof.md) | [directoryObject](directoryobject.md) collection | Get the groups, directory roles, and administrative units that the user is a member of through either direct or transitive membership. |
 | **Insights** |  |  |
-| [List shared](../api/insights-list-shared.md) | [sharedInsight](insights-shared.md) collection | Get a list of shared files. |
 | [List trending](../api/insights-list-trending.md) | [trending](insights-trending.md) collection | Get a list of trending files. |
-| [List used](../api/insights-list-used.md) | [usedInsight](insights-used.md) collection | Get a list of used files. |
 | [Get content discovery settings](../api/usersettings-get.md) | [userSettings](usersettings.md) | Get users's content discovery settings. |
 | [Update content discovery settings](../api/usersettings-update.md) | None | Update users's content discovery settings. |
+| [List shared (deprecated)](../api/insights-list-shared.md) | [sharedInsight](insights-shared.md) collection | Get a list of shared files. This API is deprecated and will stop returning data after November 2026. |
+| [List used (deprecated)](../api/insights-list-used.md) | [usedInsight](insights-used.md) collection | Get a list of used files. This API is deprecated and will stop returning data after November 2026. |
 | **License management** |||
 | [Assign license](../api/user-assignlicense.md) | [user](user.md) | Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription. |
 | [List license details](../api/user-list-licensedetails.md) | [licenseDetails](licensedetails.md) collection | Get a licenseDetails object collection. |
@@ -233,7 +233,7 @@ This resource supports:
 | serviceProvisioningErrors    | [serviceProvisioningError](serviceprovisioningerror.md) collection       | Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object. <br><br> Supports `$filter` (`eq`, `not`, for isResolved and serviceInstance).  |
 |schools|String collection|A list for the user to enumerate the schools they attended. <br><br>Returned only on `$select`.|
 |securityIdentifier| String | Security identifier (SID) of the user, used in Windows scenarios. <br><br>Read-only. Returned by default. <br>Supports `$select` and `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
-|showInAddressList|Boolean|**Do not use in Microsoft Graph. Manage this property through the Microsoft 365 admin center instead.** Represents whether the user should be included in the Outlook global address list. See [Known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=14972).|
+|showInAddressList|Boolean|**Do not use in Microsoft Graph. Manage this property through the Microsoft 365 admin center instead.** Represents whether the user should be included in the Outlook global address list. See [Known issue](/graph/known-issues#showinaddresslist-property-is-out-of-sync-with-microsoft-exchange).|
 |signInActivity | [signInActivity](signinactivity.md) | Get the last signed-in date and request ID of the sign-in for a given user. Read-only.<br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`) *but not with any other filterable properties*. <br><br>**Note:** <br/><li>Details for this property require a Microsoft Entra ID P1 or P2 license and the **AuditLog.Read.All** permission.<li>This property isn't returned for a user who never signed in or last signed in before April 2020.|
 |signInSessionsValidFromDateTime|DateTimeOffset| Any refresh tokens or session tokens (session cookies) issued before this time are invalid. Applications get an error when using an invalid refresh or session token to acquire a delegated access token (to access APIs such as Microsoft Graph). If this happens, the application needs to acquire a new refresh token by requesting the authorized endpoint. Read-only. Use [revokeSignInSessions](../api/user-revokesigninsessions.md) to reset. <br><br>Returned only on `$select`.|
 |skills|String collection|A list for the user to enumerate their skills. <br><br>Returned only on `$select`.|

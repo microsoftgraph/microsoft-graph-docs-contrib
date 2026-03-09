@@ -160,7 +160,10 @@ Content-Type: application/json
       "userPrincipalName": "johndoe@contoso.com",
       "transportProtocol": "tcp",
       "networkProtocol": "ipv4",
-      "popProcessingRegion": "westus2"
+      "popProcessingRegion": "westus2",
+      "homeTenantId": "253ba0d4-b3b0-4825-8cd8-0f5338fade6a",
+      "crossTenantAccessType": "b2bCollaboration",
+      "deviceJoinType": "microsoftEntraJoined"
     },
     {
       "@odata.type": "#microsoft.graph.networkaccess.connection",
@@ -186,7 +189,10 @@ Content-Type: application/json
       "userPrincipalName": "johndoe@contoso.com",
       "transportProtocol": "tcp",
       "networkProtocol": "ipv4",
-      "popProcessingRegion": "westus2"
+      "popProcessingRegion": "westus2",
+      "homeTenantId": null,
+      "crossTenantAccessType": "none",
+      "deviceJoinType": "none"
     }
   ]
 }

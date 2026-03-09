@@ -228,6 +228,38 @@ items:
       href: ../../resources/security-auditdata.md
     - name: Default audit data
       href: ../../resources/security-defaultauditdata.md
+- name: Cloud zones or scopes (preview)
+  items:
+  - name: Zone
+    items:
+    - name: Zone
+      href: ../../resources/security-zone.md
+    - name: List
+      href: ../../api/security-security-list-zones.md
+    - name: Create
+      href: ../../api/security-security-post-zones.md
+    - name: Get
+      href: ../../api/security-zone-get.md
+    - name: Update
+      href: ../../api/security-zone-update.md
+    - name: Delete
+      href: ../../api/security-zone-delete.md
+  - name: Environment
+    items:
+    - name: Environment
+      href: ../../resources/security-environment.md
+    - name: List
+      href: ../../api/security-zone-list-environments.md
+    - name: Create
+      href: ../../api/security-zone-post-environments.md
+    - name: Get
+      href: ../../api/security-environment-get.md
+    - name: Delete
+      href: ../../api/security-environment-delete.md
+  - name: Complex types
+    items:
+    - name: Audit info
+      href: ../../resources/security-auditinfo.md
 - name: Data security and compliance
   items:
   - name: Content activity
@@ -716,6 +748,8 @@ items:
       href: ../../resources/security-ediscoveryaddtoreviewsetoperation.md
     - name: eDiscovery estimate operation
       href: ../../resources/security-ediscoveryestimateoperation.md
+    - name: eDiscovery purge data operation
+      href: ../../resources/security-ediscoverypurgedataoperation.md
     - name: Report file metadata
       href: ../../resources/security-ediscoveryreportfilemetadata.md
 - name: Email and collaboration protection
@@ -808,6 +842,14 @@ items:
       href: ../../api/security-sensorcandidateactivationconfiguration-get.md
     - name: Update
       href: ../../api/security-identitycontainer-post-sensorcandidateactivationconfiguration.md
+  - name: Auto-auditing configuration
+    items:
+    - name: Auto-auditing configuration
+      href: ../../resources/security-autoauditingconfiguration.md
+    - name: Get
+      href: ../../api/security-autoauditingconfiguration-get.md
+    - name: Update
+      href: ../../api/security-autoauditingconfiguration-update.md
   - name: Complex types
     items:
     - name: Account
@@ -1308,42 +1350,6 @@ items:
       href: ../../resources/security-whoiscontact.md
     - name: WHOIS nameserver
       href: ../../resources/security-whoisnameserver.md
-- name: Threat intelligence indicator
-  items:
-  - name: Threat intelligence indicator
-    href: ../../resources/tiindicator.md
-  - name: Get
-    href: ../../api/tiindicator-get.md
-  - name: Create
-    href: ../../api/tiindicators-post.md
-  - name: List
-    href: ../../api/tiindicators-list.md
-  - name: Update
-    href: ../../api/tiindicator-update.md
-  - name: Delete
-    href: ../../api/tiindicator-delete.md
-  - name: Delete multiple
-    href: ../../api/tiindicator-deletetiindicators.md
-  - name: Delete multiple by external ID
-    href: ../../api/tiindicator-deletetiindicatorsbyexternalid.md
-  - name: Submit multiple
-    href: ../../api/tiindicator-submittiindicators.md
-  - name: Update multiple
-    href: ../../api/tiindicator-updatetiindicators.md
-  - name: Methods supported by each target product
-    items:
-    - name: Create tiIndicator
-      href: ../../api/tiindicators-post.md
-    - name: Submit tiIndicators
-      href: ../../api/tiindicator-submittiindicators.md
-    - name: Update tiIndicator
-      href: ../../api/tiindicator-update.md
-    - name: Update tiIndicators
-      href: ../../api/tiindicator-updatetiindicators.md
-    - name: Delete tiIndicator
-      href: ../../api/tiindicator-delete.md
-    - name: Delete tiIndicators
-      href: ../../api/tiindicator-deletetiindicators.md
 - name: Threat submission (preview)
   items:
   - name: Threat submission
@@ -1394,3 +1400,39 @@ items:
       href: ../../api/security-urlthreatsubmission-post-urlthreats.md
     - name: Get
       href: ../../api/security-urlthreatsubmission-get.md
+- name: tiIndicator resource type (deprecated)
+  items:
+  - name: tiIndicator resource type (deprecated)
+    href: ../../resources/tiindicator.md
+  - name: Get
+    href: ../../api/tiindicator-get.md
+  - name: Create
+    href: ../../api/tiindicators-post.md
+  - name: List
+    href: ../../api/tiindicators-list.md
+  - name: Update
+    href: ../../api/tiindicator-update.md
+  - name: Delete
+    href: ../../api/tiindicator-delete.md
+  - name: Delete multiple
+    href: ../../api/tiindicator-deletetiindicators.md
+  - name: Delete multiple by external ID
+    href: ../../api/tiindicator-deletetiindicatorsbyexternalid.md
+  - name: Submit multiple
+    href: ../../api/tiindicator-submittiindicators.md
+  - name: Update multiple
+    href: ../../api/tiindicator-updatetiindicators.md
+  - name: Methods supported by each target product
+    items:
+    - name: Create tiIndicator
+      href: ../../api/tiindicators-post.md
+    - name: Submit tiIndicators
+      href: ../../api/tiindicator-submittiindicators.md
+    - name: Update tiIndicator
+      href: ../../api/tiindicator-update.md
+    - name: Update tiIndicators
+      href: ../../api/tiindicator-updatetiindicators.md
+    - name: Delete tiIndicator
+      href: ../../api/tiindicator-delete.md
+    - name: Delete tiIndicators
+      href: ../../api/tiindicator-deletetiindicators.md

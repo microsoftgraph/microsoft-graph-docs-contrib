@@ -1,11 +1,11 @@
 ---
 title: "List deployment audience members"
 description: "List the updatableAsset resources that are members of a deploymentAudience."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 09/16/2024
+ms.date: 01/27/2026
 ---
 
 # List deployment audience members
@@ -17,7 +17,7 @@ Namespace: microsoft.graph.windowsUpdates
 List the [updatableAsset](../resources/windowsupdates-updatableasset.md) resources that are members of a [deploymentAudience](../resources/windowsupdates-deploymentaudience.md).
 
 > [!NOTE]
-> This API has a [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=13634) related to deployments created via Intune.
+> This API has a [known issue](/graph/known-issues#accessing-and-updating-deployment-audiences-is-not-supported) related to deployments created via Intune.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
