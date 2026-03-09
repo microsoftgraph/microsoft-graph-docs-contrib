@@ -184,22 +184,7 @@ If the author has already described the deprecation in sufficient detail (e.g., 
 
 ### To deprecate an enumeration
 
-1. **Update enumeration definition:**
-   - **In enums.md or parent resource:** Add "(deprecated)" to section title: `### emailType values (deprecated)`
-   - **In own topic (rare):** Add "(deprecated)" to H1 title and add deprecation banner
-
-2. **Update properties using the enum:**
-   - Update type, description, possible values with alternative/workaround
-
----
-
-### To deprecate enumeration members
-
-1. **Update member table:**
-   - Add "(deprecated)" to member name, specify alternative, move to end (see common pattern)
-
-2. **Update property descriptions:**
-   - Note which values are deprecated and provide guidance
+See [Deprecating enumerations](.github/prompts/author-api-docs/enumerations.md#deprecating-enumerations) in `enumerations.md` for detailed instructions on deprecating entire enumerations and individual enum members.
 
 ---
 
@@ -258,8 +243,7 @@ In addition to the [base quality checklist](common.md#base-quality-checklist), v
 - [ ] Description accuracy reviewed (e.g., "required" removed)
 
 **Enumerations:**
-- [ ] Section title or H1 title updated
-- [ ] Properties using enum updated with alternatives
+- [ ] See the [Quality checklist for enumerations](.github/prompts/author-api-docs/enumerations.md#for-deprecating-enumerations) in `enumerations.md`
 
 **Supporting updates:**
 - [ ] Changelog: Change type "Deprecation", links to topics/blog

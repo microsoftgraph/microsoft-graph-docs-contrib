@@ -151,9 +151,9 @@ A **polymorphic collection** occurs when an EntityType (abstract or concrete) se
 |------|------|
 | **File naming** | Use the base type name for all shared operation files, whether the base type is abstract or concrete. Never create operation files named after derived types. |
 | **Doc stubs** | Derived types will have overgenerated operation stubs (e.g., `derivedtype-get.md`) and their associated permissions include files. **Skip all of these** — only use the base type operation stubs and their permissions files. |
-| **Resource pages** | Create resource pages for both the base type and each derived type. The base type page lists the Methods table; derived type pages reference the base type for operations. |
+| **Resource pages** | Create resource pages for both the base type and each derived type. The base type page lists the Methods table; derived type pages do NOT include a Methods table — they include only a polymorphic note directing readers to the base type (see Derived type resources below). |
 | **Base type resource** | Properties/Relationships: only base type's own + inherited. Methods table: links to shared operation files using base type name. For concrete base types, also include any operations exclusive to the base type (e.g., actions/functions bound only to it). |
-| **Derived type resources** | Properties: include derived-type-specific properties + inherited from base. Methods table: "None." or reference the base type operations — follow the Documentation Plan. |
+| **Derived type resources** | Properties: include derived-type-specific properties + inherited from base. Methods section: do **NOT** include a Methods table. Instead, include only the following note under the `## Methods` heading: `This resource is part of a polymorphic collection managed by the [baseTypeName resource](../resources/basetype.md) base type. Operations are performed through the base type endpoints.` — replace `baseTypeName` and the link with the actual base type name and resource file path. Do not list individual methods. |
 | **@odata.type** | POST/PATCH/PUT request bodies: `@odata.type` is **required** — note before the property table and list sample valid value. GET/LIST responses: `@odata.type` is included automatically. |
 | **Request body tables** | Include properties from both the base type and all derived types. If the same property name has a different type per derived type, use separate rows. Append which derived type each property applies to. |
 | **Examples** | LIST: show a heterogeneous collection with 2–3 derived types, each with `@odata.type`. POST/PATCH: one derived type per example with `@odata.type` in the body. |
@@ -422,205 +422,7 @@ When a new relationship is added to an existing resource:
 
 ### To document enumerations
 
-**Important:** There are three options for documenting enumerations depending on the complexity and use case. Choose the appropriate option based on the decision guide below.
-
-#### Quick decision guide for enumeration documentation
-
-| Criteria | Recommended Option |
-|----------|-------------------|
-| Self-explanatory member names | Option 1: Enum file |
-| Need member descriptions | Option 2: Parent resource OR Option 3: Separate topic |
-| Single feature/related resources in same namespace | Option 2: Parent resource |
-| Enum with many members requiring descriptions or multiple resources use enum | Option 3: Separate topic |
-
-**Auto-selection heuristics** — use these to select an option automatically when the Documentation Plan doesn't specify:
-1. If the doc stub defines the enum in `enums.md` or `enums-{subnamespace}.md` → **Option 1**
-2. If the Documentation Plan says "with descriptions" and the enum has ≤10 members → **Option 2**
-3. If the Documentation Plan says "with descriptions" and the enum has >10 members → **Option 3**
-4. If multiple unrelated resources reference the same enum → **Option 3**
-5. When uncertain, default to **Option 1** (simplest) and flag for author review
-
-#### Option 1: Use global enum file (Preferred for simple enums)
-
-**For microsoft.graph namespace:**
-- Use existing `api-reference/beta/resources/enums.md` or `api-reference/v1.0/resources/enums.md`
-
-**For subnamespaces:**
-- Create `enums-{subnamespace-name}.md` (e.g., `enums-security.md` for `microsoft.graph.security` namespace)
-
-**Steps:**
-
-1. **Add to enums file:**
-   - Add an H3 section titled "{enum-type} values" (e.g., "eventType values")
-   - Include a table with column header **Member** only
-   - List members without numeric values or descriptions
-   - For evolvable enums: Include `unknownFutureValue` in member list
-
-2. **Update parent resource Properties table:**
-   - Specify the enum as the property's return type
-   - For subnamespaces: Use fully qualified name (e.g., `microsoft.graph.security.alertStatus`)
-
-3. **Update property description:**
-   - List all possible values in the description
-   - **For flagged enums:** Add "This flagged enumeration allows multiple members to be selected simultaneously." before listing the possible values
-   - **For evolvable enums (if unknownFutureValue is last member):**
-     - Format: "The possible values are: `value1`, `value2`, `unknownFutureValue`."
-   - **For evolvable enums (if members follow unknownFutureValue):**
-     - Format: "The possible values are: `value1`, `value2`, `unknownFutureValue`, `value3`. Use the `Prefer: include-unknown-enum-members` request header to get the following value or values in this evolvable enum: `value3`."
-
-4. **JSON representation:**
-   - Define the property as type **String**, not the enum type
-
-**When to use:**
-- Member names are self-explanatory
-- No or minimal descriptions needed
-
-   Example where minimal descriptions are needed:
-  ```markdown
-  The possible values are: <br/><li>`none`: No cross-tenant access. Indicates a single-tenant, non-B2B scenario. </li> <li>`b2bCollaboration`: The connection involves B2B collaboration across tenants. </li> <li>`unknownFutureValue`: Evolvable enumeration sentinel value. Do not use.</li>
-  ```
-
-**Note:** enums.md and enums-{subnamespace}.md files are not customer-facing (they're for API Doctor validation only).
-
-#### Option 2: Document in parent resource topic
-
-Document within the **Properties** section of the resource that uses the enum. This option is customer-facing.
-
-**Steps:**
-
-1. **Create H3 section after Properties table:**
-   - Title: "{enum-type} values"
-
-   - **For evolvable enums (if members follow unknownFutureValue):**
-     - Add introductory text before the table:
-       ```markdown
-       The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations).
-       Use the `Prefer: include-unknown-enum-members` request header to get the following members in this evolvable enum: `value3`.
-       ```
-   - **For flagged enums:**
-     - Append the following boilerplate text to the introductory text before the table:
-      ```markdown
-       The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations).
-       Use the `Prefer: include-unknown-enum-members` request header to get the following members in this evolvable enum: `value3`. This flagged enumeration allows multiple members to be selected simultaneously.
-       ```
-
-2. **Create table:**
-   - Columns: **Member** and **Description**
-   - List members in ascending order by numeric value (without exposing numeric values)
-   - **For evolvable enums:**
-     - Include `unknownFutureValue` member
-     - Description for `unknownFutureValue`: "Evolvable enumeration sentinel value. Do not use." or "Evolvable enumeration sentinel value. Don't use."
-
-3. **Update Properties table:**
-   - Specify enum as property's return type and link to the H3 section
-   - For subnamespaces: Use fully qualified name
-   - Optionally list values inline in description (can omit to avoid duplication)
-
-4. **JSON representation:**
-   - Define property as type **String**, not the enum type
-
-5. **If multiple related resources use this enum:**
-   - Define the table once and link from other topics
-
-**When to use:**
-- Need descriptions for enum members
-- Enum and resources are in the same namespace
-- Resources are part of the same feature
-- Enum is only used by one resource or a few related resources
-
-**Important:** More content increases page scroll length. If the enum has many members, consider Option 3.
-
-#### Option 3: Create separate enum topic
-
-Create a dedicated topic for the enumeration. This option is rarely applicable.
-
-**File naming:**
-- microsoft.graph namespace: `{enum-name}.md`
-- Subnamespaces: `{subnamespace-name}-{enum-name}.md` (e.g., `callrecords-servicerole.md`)
-
-**Steps:**
-
-1. **Create enum topic:**
-   - Title: "{enum-type} enum type"
-   - Single sentence describing the enum's purpose
-   - **For flagged enums:** Append "This flagged enumeration allows multiple members to be selected simultaneously." to the introductory text.
-   - **For evolvable enums:** Mention it's an evolvable enumeration
-
-2. **Add Members H2 section:**
-   - **For evolvable enums (if members follow unknownFutureValue):**
-     - Add introductory text before the table (same as Option 2)
-   - Table with columns: **Member** and **Description**
-   - List members in ascending order by numeric value (without exposing values)
-   - **For evolvable enums:**
-     - Include `unknownFutureValue` member
-     - Description: "Evolvable enumeration sentinel value. Do not use." or "Evolvable enumeration sentinel value. Don't use."
-
-3. **Update parent resource Properties table:**
-   - Specify enum as property's return type and link to the enum topic
-   - For subnamespaces: Use fully qualified name
-   - Avoid listing values inline to prevent duplication
-
-4. **JSON representation:**
-   - Define property as type **String**, not the enum type
-
-5. **For subnamespaces:**
-   - Add namespace attribute in page annotation at bottom of topic:
-     ```json
-     {
-       "type": "#page.annotation",
-       "namespace": "microsoft.graph.{subnamespace}"
-     }
-     ```
-
-**When to use:**
-- Need descriptions for enum members and Option 2 isn't suitable
-- Multiple resources use the enum
-- Enum has many members requiring detailed descriptions that might reduce scannability in Options 1 or 2
-
-**Important:** Use only when necessary. Prefer Option 1 or 2 whenever possible.
-
-#### Evolvable enumerations - Special handling
-
-**All evolvable enumerations:**
-- Include `unknownFutureValue` sentinel member
-- This member demarcates known members (defined initially) from unknown members (added later or to be defined in future)
-- Must always be documented to allow developers to handle future enum updates
-
-**Two scenarios:**
-
-**Scenario 1: unknownFutureValue is the last defined member**
-- List all values with `unknownFutureValue` last
-- No special header required
-- Example inline format: "The possible values are: `success`, `failure`, `timeout`, `unknownFutureValue`."
-
-**Scenario 2: Members follow unknownFutureValue**
-- Must include note about `Prefer: include-unknown-enum-members` request header
-- Example inline format: "The possible values are: `none`, `b2bCollaboration`, `unknownFutureValue`, `passthrough`. Use the `Prefer: include-unknown-enum-members` request header to get the following value or values in this evolvable enum: `passthrough`."
-- For Options 2 & 3: Add introductory text before the table explaining the header requirement
-- Optionally in GET API topics: Add note about optional request header in **Request headers** section
-
-#### For updating existing enumerations
-
-**When adding new members to existing enumerations:**
-
-1. **Update the enumeration table:**
-   - Locate the enumeration in the appropriate file (enums.md, parent resource, or separate topic)
-   - Add the new members to the table
-   - Maintain the order outlined in the Documentation Plan
-   - Do not change the order of existing members unless specified
-
-2. **Update property descriptions in the consuming resources:**
-   - Search for all resource files that reference the enum type as a return type for a property
-   - Find all properties that use this enumeration type
-   - Add the new member to the list of possible values in the property description, maintaining the order outlined in the Documentation Plan
-   - If values are listed, add the new member to the list
-   - If the property uses evolvable enum syntax with `Prefer: include-unknown-enum-members`, add the new member to both the main list AND the evolvable members list
-   - Ensure consistency across all properties that reference the same enumeration
-   - Ensure consistent formatting with backticks around enum values
-
-3. **For evolvable enums with new members after unknownFutureValue:**
-   - Update introductory text (for Options 2 & 3) to list the new members that require the header
-   - Update inline descriptions to include the new members in the header note
+For all enumeration documentation tasks (creating new enums, updating existing enums, evolvable enum handling), read and follow the instructions in **[`enumerations.md`](.github/prompts/author-api-docs/enumerations.md)**. Use the `fetch` tool to open this file.
 
 ## Execution approach
 
@@ -642,8 +444,8 @@ Create a dedicated topic for the enumeration. This option is rarely applicable.
    - List all new resource files to create
    - List all existing resources with new properties
    - List all existing resources with new relationships
-   - List all new enumerations to add (determine which option: enum file, parent resource, or separate topic)
-   - List all existing enumerations with new members (check if evolvable and if new members follow unknownFutureValue)
+   - List all new enumerations to add (see [`enumerations.md`](.github/prompts/author-api-docs/enumerations.md) for decision guide and options)
+   - List all existing enumerations with new members (see [`enumerations.md`](.github/prompts/author-api-docs/enumerations.md#updating-existing-enumerations) for search strategy)
    - List all new API files to create
    - For polymorphic collections: list only base-type operation files; mark derived-type operation stubs as "skip". For concrete base types with their own actions/functions, include those as additional operation files.
    - List all existing API files to update
@@ -751,37 +553,7 @@ In addition to the [base quality checklist](common.md#base-quality-checklist), v
 - [ ] If return type is new entity: New entity resource file created and documented
 
 **For enumerations:**
-- [ ] Documentation option selected based on decision guide (Option 1, 2, or 3)
-- [ ] **Option 1 (Enum file):**
-  - [ ] New enumerations added to appropriate enums.md or enums-{subnamespace}.md file
-  - [ ] Only Member column documented (no Description or Value columns)
-  - [ ] Members listed in order from Documentation Plan
-  - [ ] For evolvable enums: unknownFutureValue included in member list
-  - [ ] Property descriptions include all enum values with correct format
-  - [ ] For evolvable enums with members after unknownFutureValue: Prefer header note included in property description
-- [ ] **Option 2 (Parent resource):**
-  - [ ] H3 section "{enum-type} values" added after Properties table
-  - [ ] Table has Member and Description columns
-  - [ ] Members listed in ascending order by numeric value (values not exposed)
-  - [ ] For evolvable enums: unknownFutureValue description is "Evolvable enumeration sentinel value. Do not use."
-  - [ ] For evolvable enums with members after unknownFutureValue: Introductory text about Prefer header included
-  - [ ] Properties table links to H3 section
-  - [ ] For subnamespaces: Fully qualified enum name used
-- [ ] **Option 3 (Separate topic):**
-  - [ ] File created with correct naming convention
-  - [ ] Title is "{enum-type} enum type"
-  - [ ] Description mentions evolvable enumeration if applicable
-  - [ ] Members H2 section with Member and Description columns
-  - [ ] For evolvable enums: unknownFutureValue description is "Evolvable enumeration sentinel value. Don't use."
-  - [ ] For evolvable enums with members after unknownFutureValue: Introductory text about Prefer header included
-  - [ ] For subnamespaces: Namespace attribute added in page annotation
-  - [ ] Parent resource Properties table links to enum topic
-- [ ] New enumeration members added to existing enumeration tables/files
-- [ ] Order from Documentation Plan maintained
-- [ ] All properties that consume updated enumerations have been updated
-- [ ] Enum member lists in property descriptions match enumeration definition
-- [ ] For evolvable enums: unknownFutureValue always documented
-- [ ] For evolvable enums with new members after unknownFutureValue: Property descriptions and introductory text updated with Prefer header note
+- [ ] See the [Quality checklist for enumerations](.github/prompts/author-api-docs/enumerations.md#quality-checklist-for-enumerations) in `enumerations.md`
 
 **For API files:**
 - [ ] File copied from doc stubs folder to correct target directory
@@ -826,7 +598,7 @@ In addition to the [base quality checklist](common.md#base-quality-checklist), v
 - [ ] For concrete base types: any base-type-only operations (actions/functions) documented separately
 - [ ] Derived-type operation doc stubs skipped (including their permissions include files)
 - [ ] Base type resource page: Methods table present with base-type file links
-- [ ] Derived type resource pages: reference base type for operations
+- [ ] Derived type resource pages: Methods section contains only a polymorphic note (no Methods table)
 - [ ] Base type resource page: Properties/Relationships list only own + inherited (not derived-type-specific)
 - [ ] POST/PATCH/PUT request body tables: include properties from base type and all derived types
 - [ ] POST/PATCH/PUT: `@odata.type` requirement noted before property table with all valid values

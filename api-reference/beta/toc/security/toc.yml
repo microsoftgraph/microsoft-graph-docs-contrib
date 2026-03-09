@@ -222,12 +222,6 @@ items:
       href: ../../resources/security-auditlogrecord.md
     - name: List
       href: ../../api/security-auditlogquery-list-records.md
-  - name: Complex types
-    items:
-    - name: Audit data
-      href: ../../resources/security-auditdata.md
-    - name: Default audit data
-      href: ../../resources/security-defaultauditdata.md
 - name: Cloud zones or scopes (preview)
   items:
   - name: Zone
@@ -742,16 +736,6 @@ items:
       href: ../../api/security-ediscoverycasemember-post.md
     - name: Remove
       href: ../../api/security-ediscoverycasemember-delete.md
-  - name: Complex types
-    items:
-    - name: eDiscovery add to review set operation
-      href: ../../resources/security-ediscoveryaddtoreviewsetoperation.md
-    - name: eDiscovery estimate operation
-      href: ../../resources/security-ediscoveryestimateoperation.md
-    - name: eDiscovery purge data operation
-      href: ../../resources/security-ediscoverypurgedataoperation.md
-    - name: Report file metadata
-      href: ../../resources/security-ediscoveryreportfilemetadata.md
 - name: Email and collaboration protection
   items:
   - name: Analyzed email

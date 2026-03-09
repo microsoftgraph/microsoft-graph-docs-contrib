@@ -22,8 +22,10 @@ Read the properties and relationships of an [authenticationEventListener](../res
 - [onUserCreateStartListener resource type](../resources/onusercreatestartlistener.md) resource type
 - [onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md) resource type
 - [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md) resource type
+- [onPhoneMethodLoadStartListener](../resources/onphonemethodloadstartlistener.md) resource type
+- [onEmailOtpSendListener](../resources/onemailotpsendlistener.md) resource type
 - [onPasswordSubmitListener](../resources/onpasswordsubmitlistener.md) resource type
-- [onFraudProtectionLoadStartListener](../resources/onFraudProtectionLoadStartListener.md) resource type
+- [onFraudProtectionLoadStartListener](../resources/onfraudprotectionloadstartlistener.md) resource type
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -71,7 +73,7 @@ The following example shows a request.
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identity/customAuthenticationExtensions/6fc5012e-7665-43d6-9708-4370863f4e6e
+GET https://graph.microsoft.com/beta/identity/authenticationEventListeners/6fc5012e-7665-43d6-9708-4370863f4e6e
 ```
 
 # [C#](#tab/csharp)

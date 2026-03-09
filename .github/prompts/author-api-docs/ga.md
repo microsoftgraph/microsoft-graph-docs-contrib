@@ -135,6 +135,11 @@ For each copied file, make the following updates:
    - Update the JSON representation section to include new properties
    - Update existing examples in the v1.0 API docs to include the new properties, where applicable
 
+**For enumeration files:**
+- If enumerations are being promoted, copy the enum definition files (enums.md entries, H3 sections in parent resources, or separate enum topic files) from beta to v1.0
+- Follow the same update rules as other promoted files (remove beta disclaimer, update version references)
+- For detailed enum documentation guidance, see **[`enumerations.md`](.github/prompts/author-api-docs/enumerations.md)**
+
 **For toc.mappings.json:**
 1. **Update the v1.0 toc.mappings.json file** to include newly promoted resources
 2. This ensures the table of contents is generated correctly
