@@ -18,6 +18,7 @@ Create a new [customAuthenticationExtension](../resources/customauthenticationex
 - [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) resource type.
 - [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) resource type.
 - [onOtpSendCustomExtension](../resources/onOtpSendCustomExtension.md) resource type.
+- [onVerifiedIdClaimValidationCustomExtension](../resources/onverifiedidclaimvalidationcustomextension.md) resource type.
 
 > [!NOTE]
 >

@@ -3,6 +3,90 @@
     {
       "ChangeList": [
         {
+          "Id": "05a609c8-1523-4558-8265-a440d2d9101f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onVerifiedIdClaimValidationCustomExtensionHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onVerifiedIdClaimValidationCustomExtensionHandler](https://learn.microsoft.com/en-us/graph/api/resources/onVerifiedIdClaimValidationCustomExtensionHandler?view=graph-rest-beta) resource.",
+          "Target": "onVerifiedIdClaimValidationCustomExtensionHandler"
+        },
+        {
+          "Id": "05a609c8-1523-4558-8265-a440d2d9101f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onVerifiedIdClaimValidationHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onVerifiedIdClaimValidationHandler](https://learn.microsoft.com/en-us/graph/api/resources/onVerifiedIdClaimValidationHandler?view=graph-rest-beta) resource.",
+          "Target": "onVerifiedIdClaimValidationHandler"
+        },
+        {
+          "Id": "05a609c8-1523-4558-8265-a440d2d9101f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onVerifiedIdClaimValidationCustomExtension",
+          "ChangeType": "Addition",
+          "Description": "Added the [onVerifiedIdClaimValidationCustomExtension](https://learn.microsoft.com/en-us/graph/api/resources/onVerifiedIdClaimValidationCustomExtension?view=graph-rest-beta) resource.",
+          "Target": "onVerifiedIdClaimValidationCustomExtension"
+        },
+        {
+          "Id": "05a609c8-1523-4558-8265-a440d2d9101f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onVerifiedIdClaimValidationListener",
+          "ChangeType": "Addition",
+          "Description": "Added the [onVerifiedIdClaimValidationListener](https://learn.microsoft.com/en-us/graph/api/resources/onVerifiedIdClaimValidationListener?view=graph-rest-beta) resource.",
+          "Target": "onVerifiedIdClaimValidationListener"
+        }
+      ],
+      "Id": "05a609c8-1523-4558-8265-a440d2d9101f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-03-05T23:21:31.7921234Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "99966818-2014-442d-a5a6-39666eedb566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onVerifiedIdClaimValidationCustomExtensionHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onVerifiedIdClaimValidationCustomExtensionHandler](https://learn.microsoft.com/en-us/graph/api/resources/onVerifiedIdClaimValidationCustomExtensionHandler?view=graph-rest-1.0) resource.",
+          "Target": "onVerifiedIdClaimValidationCustomExtensionHandler"
+        },
+        {
+          "Id": "99966818-2014-442d-a5a6-39666eedb566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onVerifiedIdClaimValidationHandler",
+          "ChangeType": "Addition",
+          "Description": "Added the [onVerifiedIdClaimValidationHandler](https://learn.microsoft.com/en-us/graph/api/resources/onVerifiedIdClaimValidationHandler?view=graph-rest-1.0) resource.",
+          "Target": "onVerifiedIdClaimValidationHandler"
+        },
+        {
+          "Id": "99966818-2014-442d-a5a6-39666eedb566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onVerifiedIdClaimValidationCustomExtension",
+          "ChangeType": "Addition",
+          "Description": "Added the [onVerifiedIdClaimValidationCustomExtension](https://learn.microsoft.com/en-us/graph/api/resources/onVerifiedIdClaimValidationCustomExtension?view=graph-rest-1.0) resource.",
+          "Target": "onVerifiedIdClaimValidationCustomExtension"
+        },
+        {
+          "Id": "99966818-2014-442d-a5a6-39666eedb566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onVerifiedIdClaimValidationListener",
+          "ChangeType": "Addition",
+          "Description": "Added the [onVerifiedIdClaimValidationListener](https://learn.microsoft.com/en-us/graph/api/resources/onVerifiedIdClaimValidationListener?view=graph-rest-1.0) resource.",
+          "Target": "onVerifiedIdClaimValidationListener"
+        }
+      ],
+      "Id": "99966818-2014-442d-a5a6-39666eedb566",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-03-05T23:21:31.7925247Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "9726bad8-07d5-4de9-b139-c21b103e60fe",
           "ApiChange": "Resource",
           "ChangedApiName": "onPasswordSubmitListener",

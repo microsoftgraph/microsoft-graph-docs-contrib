@@ -25,6 +25,7 @@ Create a new [authenticationEventListener](../resources/authenticationeventliste
 - [onPhoneMethodLoadStartListener](../resources/onphonemethodloadstartlistener.md)
 - [onPasswordSubmitListener](../resources/onpasswordsubmitlistener.md)
 - [onFraudProtectionLoadStartListener](../resources/onFraudProtectionLoadStartListener.md) resource type
+- [onVerifiedIdClaimValidationListener resource type](../resources/onverifiedidclaimvalidationlistener.md)
 
 > [!NOTE]
 >
