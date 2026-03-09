@@ -190,6 +190,16 @@
     "cloud": "China"
   },
   {
+    "apiPath": "/devices/{device-id}/extensions/{extension-id}",
+    "operation": "GET",
+    "cloud": "China"
+  },
+  {
+    "apiPath": "/devices/{device-id}/extensions",
+    "operation": "POST",
+    "cloud": "China"
+  },
+  {
     "apiPath": "/teams/{team-id}/channels/{channel-id}/provisionEmail",
     "operation": "POST",
     "cloud": "UsGov"
