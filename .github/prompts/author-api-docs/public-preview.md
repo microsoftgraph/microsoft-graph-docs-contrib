@@ -151,9 +151,9 @@ A **polymorphic collection** occurs when an EntityType (abstract or concrete) se
 |------|------|
 | **File naming** | Use the base type name for all shared operation files, whether the base type is abstract or concrete. Never create operation files named after derived types. |
 | **Doc stubs** | Derived types will have overgenerated operation stubs (e.g., `derivedtype-get.md`) and their associated permissions include files. **Skip all of these** — only use the base type operation stubs and their permissions files. |
-| **Resource pages** | Create resource pages for both the base type and each derived type. The base type page lists the Methods table; derived type pages reference the base type for operations. |
+| **Resource pages** | Create resource pages for both the base type and each derived type. The base type page lists the Methods table; derived type pages do NOT include a Methods table — they include only a polymorphic note directing readers to the base type (see Derived type resources below). |
 | **Base type resource** | Properties/Relationships: only base type's own + inherited. Methods table: links to shared operation files using base type name. For concrete base types, also include any operations exclusive to the base type (e.g., actions/functions bound only to it). |
-| **Derived type resources** | Properties: include derived-type-specific properties + inherited from base. Methods table: "None." or reference the base type operations — follow the Documentation Plan. |
+| **Derived type resources** | Properties: include derived-type-specific properties + inherited from base. Methods section: do **NOT** include a Methods table. Instead, include only the following note under the `## Methods` heading: `This resource is part of a polymorphic collection managed by the [baseTypeName resource](../resources/basetype.md) base type. Operations are performed through the base type endpoints.` — replace `baseTypeName` and the link with the actual base type name and resource file path. Do not list individual methods. |
 | **@odata.type** | POST/PATCH/PUT request bodies: `@odata.type` is **required** — note before the property table and list sample valid value. GET/LIST responses: `@odata.type` is included automatically. |
 | **Request body tables** | Include properties from both the base type and all derived types. If the same property name has a different type per derived type, use separate rows. Append which derived type each property applies to. |
 | **Examples** | LIST: show a heterogeneous collection with 2–3 derived types, each with `@odata.type`. POST/PATCH: one derived type per example with `@odata.type` in the body. |
@@ -826,7 +826,7 @@ In addition to the [base quality checklist](common.md#base-quality-checklist), v
 - [ ] For concrete base types: any base-type-only operations (actions/functions) documented separately
 - [ ] Derived-type operation doc stubs skipped (including their permissions include files)
 - [ ] Base type resource page: Methods table present with base-type file links
-- [ ] Derived type resource pages: reference base type for operations
+- [ ] Derived type resource pages: Methods section contains only a polymorphic note (no Methods table)
 - [ ] Base type resource page: Properties/Relationships list only own + inherited (not derived-type-specific)
 - [ ] POST/PATCH/PUT request body tables: include properties from base type and all derived types
 - [ ] POST/PATCH/PUT: `@odata.type` requirement noted before property table with all valid values
