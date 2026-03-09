@@ -127,32 +127,39 @@ All content must align with the [Microsoft Style Guide](https://docs.microsoft.c
 
 ### 2. API Docs Authoring Guidelines
 
-Reference [author-api-docs.prompt.md](.github/prompts/author-api-docs.prompt.md) for:
-- **Reference Standards: Namespace Qualification** - Namespace qualification rules for subnamespace types
-- **Reference Standards: General Formatting Rules** - Alphabetical ordering, file naming conventions, beta disclaimer
-- **Common Process: Updating the Changelog** - Changelog format and structure
-- **Common Process: Updating What's New** - What's new formatting and link rules
-- **Common Process: Updating the Table of Contents (TOC)** - TOC structure requirements
+The authoring guidelines are modular — reference the specific file for each topic:
+
+**Shared standards** — [`common.md`](.github/prompts/author-api-docs/common.md):
+- [Namespace Qualification](.github/prompts/author-api-docs/common.md#namespace-qualification) — namespace qualification rules for subnamespace types
+- [General Formatting Rules](.github/prompts/author-api-docs/common.md#general-formatting-rules) — alphabetical ordering, file naming conventions, beta disclaimer
+- [API method reference files](.github/prompts/author-api-docs/common.md#api-method-reference-files) — required elements and structure for API topics
+- [Resource reference files](.github/prompts/author-api-docs/common.md#resource-reference-files) — required elements and structure for resource topics
+- [Version-specific guidelines](.github/prompts/author-api-docs/common.md#version-specific-guidelines) — v1.0 vs beta rules
+- [Front matter rules](.github/prompts/author-api-docs/common.md#front-matter-rules) and [File body rules](.github/prompts/author-api-docs/common.md#file-body-rules) — general rules for all file types
+- [Updating the Changelog](.github/prompts/author-api-docs/common.md#updating-the-changelog) — changelog format and structure
+- [Updating What's New](.github/prompts/author-api-docs/common.md#updating-whats-new) — What's New formatting and link rules
+- [Updating the Table of Contents (TOC)](.github/prompts/author-api-docs/common.md#updating-the-table-of-contents-toc) — TOC structure requirements
+- [Cross-File Consistency Validation](.github/prompts/author-api-docs/common.md#cross-file-consistency-validation) — polymorphic types, enum references, Methods↔API file consistency
+
+**Quality checklists** — per-scenario:
+- [Public preview checklist](.github/prompts/author-api-docs/public-preview.md#quality-checklist)
+- [GA promotion checklist](.github/prompts/author-api-docs/ga.md#quality-checklist)
+- [Deprecation checklist](.github/prompts/author-api-docs/deprecate-retire.md#quality-checklist)
+- [Enumeration checklist](.github/prompts/author-api-docs/enumerations.md#quality-checklist-for-enumerations)
+- [Base quality checklist](.github/prompts/author-api-docs/common.md#base-quality-checklist) (applies to all scenarios)
+
+**Specialized topics:**
+- [Polymorphic entity types](.github/prompts/author-api-docs/public-preview.md#handling-polymorphic-entity-types) — derived type handling rules
+- [Enumerations](.github/prompts/author-api-docs/enumerations.md) — creating, updating, deprecating enums; evolvable enum handling
 
 ### 3. API Docs Review Guidelines
 
-Reference the [copilot-instructions.md](.github/copilot-instructions.md) file for:
+Reference the [copilot-instructions.md](.github/copilot-instructions.md) file (also loaded as system prompt) for:
 - File type classifications
 - API reference topics required elements and common issues
 - Resource topics required elements and common issues
 - Changelog files validation
 - Version-specific guidelines (v1.0 vs beta)
-
-Reference the [author-api-docs.prompt.md](.github/prompts/author-api-docs.prompt.md) file for quality checklist items related to the different scenarios:
-- [Quality checklist](author-api-docs.prompt.md#author-api-docs.prompt.md#quality-checklist-1)
-- [Promotion from beta to v1.0](author-api-docs.prompt.md#quality-checklist-for-promotion-scenarios)
-- [Deprecation scenarios](author-api-docs.prompt.md#quality-checklist)
-- Documentation standards to follow for:
-  - [General guidelines](author-api-docs.prompt.md#general-guidelines)
-  - [API method reference files](author-api-docs.prompt.md#api-method-reference-files)
-  - [Resource reference files](author-api-docs.prompt.md#resource-reference-files)
-  - [Version-specific guidelines](author-api-docs.prompt.md#version-specific-guidelines)
-  - [General rules (applies to both resource and API files)](author-api-docs.prompt.md#general-rules-applies-to-both-resource-and-api-files)
 
 ## File Type-Specific Review Checklist
 
@@ -245,7 +252,7 @@ For files in `changelog/`, verify structure matches [templates/changelog-pattern
 
 ## Namespace Qualification Review
 
-Verify proper namespace qualification following the rules detailed in [author-api-docs.prompt.md - Reference Standards: Namespace Qualification](.github/prompts/author-api-docs.prompt.md#reference-standards-namespace-qualification).
+Verify proper namespace qualification following the rules detailed in [common.md — Namespace Qualification](.github/prompts/author-api-docs/common.md#namespace-qualification).
 
 **Quick checklist:**
 - [ ] Files for subnamespace resources prepend subnamespace name (e.g., `callrecords-callrecord.md`, `security-alert.md`)
@@ -257,7 +264,7 @@ Verify proper namespace qualification following the rules detailed in [author-ap
 
 ## Formatting and Style Review
 
-Verify compliance with formatting rules detailed in [author-api-docs.prompt.md - Reference Standards: General Formatting Rules](.github/prompts/author-api-docs.prompt.md#reference-standards-general-formatting-rules).
+Verify compliance with formatting rules detailed in [common.md — General Formatting Rules](.github/prompts/author-api-docs/common.md#general-formatting-rules).
 
 **Quick checklist:**
 - [ ] All filenames are lowercase with hyphens separating words
@@ -457,9 +464,9 @@ If requested, provide specific edits to fix identified issues.
 ## Getting Help
 
 If you encounter any of these situations during review:
-- **Unclear namespace qualification:** Refer to the Namespace Qualification section in author-api-docs.prompt.md
-- **Uncertain about required elements:** Check both the authoring guidelines and copilot-instructions.md
-- **Complex changelog structure:** Review the Common Process: Updating the Changelog section in author-api-docs.prompt.md
-- **Ambiguous formatting:** Default to Microsoft Graph CDK standards documented in copilot-instructions.md
+- **Unclear namespace qualification:** Refer to [common.md — Namespace Qualification](.github/prompts/author-api-docs/common.md#namespace-qualification)
+- **Uncertain about required elements:** Check both [common.md — Documentation Standards](.github/prompts/author-api-docs/common.md#documentation-standards) and copilot-instructions.md (system prompt)
+- **Complex changelog structure:** Refer to [common.md — Updating the Changelog](.github/prompts/author-api-docs/common.md#updating-the-changelog)
+- **Ambiguous formatting:** Default to [common.md — General Formatting Rules](.github/prompts/author-api-docs/common.md#general-formatting-rules)
 
 **Remember:** A comprehensive review is possible only with the optional context files (Summary of API changes in a documentation-plan.md file and API.md). Without them, the review is limited to guidelines compliance only.
