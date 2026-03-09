@@ -71,7 +71,7 @@ The following example shows a request.
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/identity/customAuthenticationExtensions/6fc5012e-7665-43d6-9708-4370863f4e6e
+GET https://graph.microsoft.com/beta/identity/authenticationEventListeners/6fc5012e-7665-43d6-9708-4370863f4e6e
 ```
 
 # [C#](#tab/csharp)
