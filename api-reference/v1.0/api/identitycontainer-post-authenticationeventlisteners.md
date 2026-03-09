@@ -15,7 +15,6 @@ Create a new [authenticationEventListener](../resources/authenticationeventliste
 
 - [onTokenIssuanceStartListener resource type](../resources/ontokenissuancestartlistener.md)
 - [onFraudProtectionLoadStartListener](../resources/onfraudprotectionloadstartlistener.md) resource type
-- [onVerifiedIdClaimValidationListener resource type](../resources/onverifiedidclaimvalidationlistener.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

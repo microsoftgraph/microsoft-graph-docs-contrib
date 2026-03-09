@@ -1719,8 +1719,7 @@
                 "onPasswordSubmitListener",
                 "onPhoneMethodLoadStartListener",
                 "onTokenIssuanceStartListener",
-                "onUserCreateStartListener",
-                "onVerifiedIdClaimValidationListener"
+                "onUserCreateStartListener"
               ]
             },
             {
@@ -1849,8 +1848,7 @@
                 "onAttributeCollectionSubmitCustomExtension",
                 "onOtpSendCustomExtension",
                 "onPasswordSubmitCustomExtension",
-                "onTokenIssuanceStartCustomExtension",
-                "onVerifiedIdClaimValidationCustomExtension"
+                "onTokenIssuanceStartCustomExtension"
               ]
             },
             {

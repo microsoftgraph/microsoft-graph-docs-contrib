@@ -1115,8 +1115,7 @@
                 "onFraudProtectionLoadStartListener",
                 "onInteractiveAuthFlowStartListener",
                 "onTokenIssuanceStartListener",
-                "onUserCreateStartListener",
-                "onVerifiedIdClaimValidationListener"
+                "onUserCreateStartListener"
               ]
             },
             {
@@ -1211,8 +1210,7 @@
                 "onAttributeCollectionStartCustomExtension",
                 "onAttributeCollectionSubmitCustomExtension",
                 "onOtpSendCustomExtension",
-                "onTokenIssuanceStartCustomExtension",
-                "onVerifiedIdClaimValidationCustomExtension"
+                "onTokenIssuanceStartCustomExtension"
               ]
             },
             {

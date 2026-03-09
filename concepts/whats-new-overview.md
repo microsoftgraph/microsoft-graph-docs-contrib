@@ -32,14 +32,6 @@ Use the following new container columns APIs added to further support structured
 - Added the `allDirectoryAgentIdentities` member to the [allowedTargetScope](/graph/api/resources/enums#allowedtargetscope-values) enumeration to allow access packages to target all directory agent identities.
 - Added the [targetAgentIdentitySponsorsOrOwners](/graph/api/resources/targetagentidentitysponsorsorowners) resource type that defines the sponsors or owners of a specific agent identity.
 
-### Identity and access | Identity and sign-in
-
-Added the following resources to support validating claims from Verified ID credential presentations during authentication flows:
-- [onVerifiedIdClaimValidationCustomExtension](/graph/api/resources/onverifiedidclaimvalidationcustomextension) resource to configure custom extensions for Verified ID claims validation.
-- [onVerifiedIdClaimValidationListener](/graph/api/resources/onverifiedidclaimvalidationlistener) resource to configure event listeners for Verified ID claims validation.
-- [onVerifiedIdClaimValidationHandler](/graph/api/resources/onverifiedidclaimvalidationhandler) resource as an abstract handler base type.
-- [onVerifiedIdClaimValidationCustomExtensionHandler](/graph/api/resources/onverifiedidclaimvalidationcustomextensionhandler) resource to invoke custom extensions for Verified ID claims validation.
-
 ## March 2026: New in preview only
 
 ### Backup storage
@@ -49,14 +41,6 @@ Added the `includeNewerItems` member as supported value for the **tags** propert
 ### Identity and access | Governance
 
 Added the [targetAgentIdentitySponsorsOrOwners](/graph/api/resources/targetagentidentitysponsorsorowners?view=graph-rest-beta&preserve-view=true) resource type that defines the sponsors or owners of a specific agent identity.
-
-### Identity and access | Identity and sign-in
-
-Added the following resources to support validating claims from Verified ID credential presentations during authentication flows:
-- [onVerifiedIdClaimValidationCustomExtension](/graph/api/resources/onverifiedidclaimvalidationcustomextension?view=graph-rest-beta&preserve-view=true) resource to configure custom extensions for Verified ID claims validation.
-- [onVerifiedIdClaimValidationListener](/graph/api/resources/onverifiedidclaimvalidationlistener?view=graph-rest-beta&preserve-view=true) resource to configure event listeners for Verified ID claims validation.
-- [onVerifiedIdClaimValidationHandler](/graph/api/resources/onverifiedidclaimvalidationhandler?view=graph-rest-beta&preserve-view=true) resource as an abstract handler base type.
-- [onVerifiedIdClaimValidationCustomExtensionHandler](/graph/api/resources/onverifiedidclaimvalidationcustomextensionhandler?view=graph-rest-beta&preserve-view=true) resource to invoke custom extensions for Verified ID claims validation.
 
 ### Identity and access | Network access
 
