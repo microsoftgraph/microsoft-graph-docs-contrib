@@ -603,22 +603,32 @@ Create a dedicated topic for the enumeration. This option is rarely applicable.
 
 **When adding new members to existing enumerations:**
 
-1. **Update the enumeration table:**
-   - Locate the enumeration in the appropriate file (enums.md, parent resource, or separate topic)
+1. **Locate all places where the enum is documented:**
+
+   The enum has a **definition** in exactly one of three locations, and may also have an **inline listing** in property descriptions. Search the version-appropriate `resources/` folder for the enum type name to identify which locations apply.
+
+   | Location type | Where to look | How to identify |
+   |---------------|---------------|-----------------|
+   | **Global enums file** (Option 1) | `enums.md` or `enums-{subnamespace}.md` | H3 section titled "{enumType} values" with a Member-only table |
+   | **H3 in parent resource** (Option 2) | Resource file that uses the enum | H3 section titled "{enumType} values" with a Member + Description table |
+   | **Separate enum topic** (Option 3) | `{enum-name}.md` or `{subnamespace}-{enum-name}.md` | Dedicated file with Members H2 section |
+   | **Inline in property description** (any option) | Resource files where a property declares the enum as its return type | Property description that lists values (e.g., "The possible values are: `value1`, `value2`…") |
+
+   > **Important:** The inline property description is independent of the enum definition. When the enum definition uses Option 2 or 3, the property's Type column in the Properties table links to the H3 table or separate topic instead of listing values inline in the description — in that case, no inline update is needed. When Option 1 is used, the property description lists values inline (because the global enums file is not customer-facing) and must be updated.
+
+2. **Update the enum definition** (whichever location from step 1 applies):
    - Add the new members to the table
-   - Maintain the order outlined in the Documentation Plan
+   - Maintain the order from the Documentation Plan or the author's prompt
    - Do not change the order of existing members unless specified
 
-2. **Update property descriptions in the consuming resources:**
-   - Search for all resource files that reference the enum type as a return type for a property
-   - Find all properties that use this enumeration type
-   - Add the new member to the list of possible values in the property description, maintaining the order outlined in the Documentation Plan
-   - If values are listed, add the new member to the list
+3. **Update inline property descriptions** (only if values are listed inline — see step 1):
+   - Search for all resource files that reference the enum type as a property return type
+   - Add the new member to the list of possible values, maintaining the order from the Documentation Plan or the author's prompt
    - If the property uses evolvable enum syntax with `Prefer: include-unknown-enum-members`, add the new member to both the main list AND the evolvable members list
    - Ensure consistency across all properties that reference the same enumeration
    - Ensure consistent formatting with backticks around enum values
 
-3. **For evolvable enums with new members after unknownFutureValue:**
+4. **For evolvable enums with new members after unknownFutureValue:**
    - Update introductory text (for Options 2 & 3) to list the new members that require the header
    - Update inline descriptions to include the new members in the header note
 
