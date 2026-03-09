@@ -23,8 +23,9 @@ Create a new [authenticationEventListener](../resources/authenticationeventliste
 - [onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md)
 - [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md)
 - [onPhoneMethodLoadStartListener](../resources/onphonemethodloadstartlistener.md)
+- [onEmailOtpSendListener](../resources/onemailotpsendlistener.md)
 - [onPasswordSubmitListener](../resources/onpasswordsubmitlistener.md)
-- [onFraudProtectionLoadStartListener](../resources/onFraudProtectionLoadStartListener.md) resource type
+- [onFraudProtectionLoadStartListener](../resources/onfraudprotectionloadstartlistener.md) resource type
 
 > [!NOTE]
 >
