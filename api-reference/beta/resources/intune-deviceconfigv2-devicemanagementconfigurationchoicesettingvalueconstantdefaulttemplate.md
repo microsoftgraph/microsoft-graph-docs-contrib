@@ -47,6 +47,19 @@ Here is a JSON representation of the resource.
       "settingInstanceTemplateId": "String",
       "settingDefinitionId": "String",
       "isRequired": true,
+      "auditRuleInformation": {
+        "@odata.type": "microsoft.graph.deviceManagementAuditPowerShellRuleDetail",
+        "auditType": "String",
+        "auditRuleMetadata": {
+          "@odata.type": "microsoft.graph.deviceManagementAuditRuleMetadata",
+          "metadataType": "String",
+          "ruleId": "String",
+          "ruleName": "String",
+          "ruleDescription": "String",
+          "ruleVersion": "String",
+          "ruleSeverity": "String"
+        }
+      },
       "simpleSettingValueTemplate": {
         "@odata.type": "microsoft.graph.deviceManagementConfigurationStringSettingValueTemplate",
         "settingValueTemplateId": "String",

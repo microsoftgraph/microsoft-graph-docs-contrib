@@ -19,13 +19,14 @@ Namespace: microsoft.graph
 Simple setting instance
 
 
-Inherits from [deviceManagementConfigurationSettingInstance](../resources/intune-shared-devicemanagementconfigurationsettinginstance.md)
+Inherits from [deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|settingDefinitionId|String|Setting Definition Id Inherited from [deviceManagementConfigurationSettingInstance](../resources/intune-shared-devicemanagementconfigurationsettinginstance.md)|
-|settingInstanceTemplateReference|[deviceManagementConfigurationSettingInstanceTemplateReference](../resources/intune-shared-devicemanagementconfigurationsettinginstancetemplatereference.md)|Setting Instance Template Reference Inherited from [deviceManagementConfigurationSettingInstance](../resources/intune-shared-devicemanagementconfigurationsettinginstance.md)|
+|settingDefinitionId|String|Setting Definition Id Inherited from [deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|
+|settingInstanceTemplateReference|[deviceManagementConfigurationSettingInstanceTemplateReference](../resources/intune-shared-devicemanagementconfigurationsettinginstancetemplatereference.md)|Setting Instance Template Reference Inherited from [deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|
+|auditRuleInformation|[deviceManagementConfigurationAuditRuleDetail](../resources/intune-deviceconfigv2-devicemanagementconfigurationauditruledetail.md)|Setting Instance Template Reference Inherited from [deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|
 |simpleSettingValue|[deviceManagementConfigurationSimpleSettingValue](../resources/intune-deviceconfigv2-devicemanagementconfigurationsimplesettingvalue.md)|Simple setting instance value|
 
 ## Relationships
@@ -45,6 +46,19 @@ Here is a JSON representation of the resource.
   "settingInstanceTemplateReference": {
     "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
     "settingInstanceTemplateId": "String"
+  },
+  "auditRuleInformation": {
+    "@odata.type": "microsoft.graph.deviceManagementAuditPowerShellRuleDetail",
+    "auditType": "String",
+    "auditRuleMetadata": {
+      "@odata.type": "microsoft.graph.deviceManagementAuditRuleMetadata",
+      "metadataType": "String",
+      "ruleId": "String",
+      "ruleName": "String",
+      "ruleDescription": "String",
+      "ruleVersion": "String",
+      "ruleSeverity": "String"
+    }
   },
   "simpleSettingValue": {
     "@odata.type": "microsoft.graph.deviceManagementConfigurationStringSettingValue",

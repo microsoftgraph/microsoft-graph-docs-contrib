@@ -19,13 +19,14 @@ Namespace: microsoft.graph
 Instance of a GroupSetting
 
 
-Inherits from [deviceManagementConfigurationSettingInstance](../resources/intune-shared-devicemanagementconfigurationsettinginstance.md)
+Inherits from [deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|settingDefinitionId|String|Setting Definition Id Inherited from [deviceManagementConfigurationSettingInstance](../resources/intune-shared-devicemanagementconfigurationsettinginstance.md)|
-|settingInstanceTemplateReference|[deviceManagementConfigurationSettingInstanceTemplateReference](../resources/intune-shared-devicemanagementconfigurationsettinginstancetemplatereference.md)|Setting Instance Template Reference Inherited from [deviceManagementConfigurationSettingInstance](../resources/intune-shared-devicemanagementconfigurationsettinginstance.md)|
+|settingDefinitionId|String|Setting Definition Id Inherited from [deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|
+|settingInstanceTemplateReference|[deviceManagementConfigurationSettingInstanceTemplateReference](../resources/intune-shared-devicemanagementconfigurationsettinginstancetemplatereference.md)|Setting Instance Template Reference Inherited from [deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|
+|auditRuleInformation|[deviceManagementConfigurationAuditRuleDetail](../resources/intune-deviceconfigv2-devicemanagementconfigurationauditruledetail.md)|Setting Instance Template Reference Inherited from [deviceManagementConfigurationSettingInstance](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettinginstance.md)|
 |groupSettingValue|[deviceManagementConfigurationGroupSettingValue](../resources/intune-deviceconfigv2-devicemanagementconfigurationgroupsettingvalue.md)|GroupSetting value|
 
 ## Relationships
@@ -46,6 +47,19 @@ Here is a JSON representation of the resource.
     "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
     "settingInstanceTemplateId": "String"
   },
+  "auditRuleInformation": {
+    "@odata.type": "microsoft.graph.deviceManagementAuditPowerShellRuleDetail",
+    "auditType": "String",
+    "auditRuleMetadata": {
+      "@odata.type": "microsoft.graph.deviceManagementAuditRuleMetadata",
+      "metadataType": "String",
+      "ruleId": "String",
+      "ruleName": "String",
+      "ruleDescription": "String",
+      "ruleVersion": "String",
+      "ruleSeverity": "String"
+    }
+  },
   "groupSettingValue": {
     "@odata.type": "microsoft.graph.deviceManagementConfigurationGroupSettingValue",
     "settingValueTemplateReference": {
@@ -60,6 +74,19 @@ Here is a JSON representation of the resource.
         "settingInstanceTemplateReference": {
           "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
           "settingInstanceTemplateId": "String"
+        },
+        "auditRuleInformation": {
+          "@odata.type": "microsoft.graph.deviceManagementAuditPowerShellRuleDetail",
+          "auditType": "String",
+          "auditRuleMetadata": {
+            "@odata.type": "microsoft.graph.deviceManagementAuditRuleMetadata",
+            "metadataType": "String",
+            "ruleId": "String",
+            "ruleName": "String",
+            "ruleDescription": "String",
+            "ruleVersion": "String",
+            "ruleSeverity": "String"
+          }
         },
         "choiceSettingValue": {
           "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
@@ -77,6 +104,19 @@ Here is a JSON representation of the resource.
                 "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
                 "settingInstanceTemplateId": "String"
               },
+              "auditRuleInformation": {
+                "@odata.type": "microsoft.graph.deviceManagementAuditPowerShellRuleDetail",
+                "auditType": "String",
+                "auditRuleMetadata": {
+                  "@odata.type": "microsoft.graph.deviceManagementAuditRuleMetadata",
+                  "metadataType": "String",
+                  "ruleId": "String",
+                  "ruleName": "String",
+                  "ruleDescription": "String",
+                  "ruleVersion": "String",
+                  "ruleSeverity": "String"
+                }
+              },
               "choiceSettingValue": {
                 "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
                 "settingValueTemplateReference": {
@@ -92,6 +132,19 @@ Here is a JSON representation of the resource.
                     "settingInstanceTemplateReference": {
                       "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
                       "settingInstanceTemplateId": "String"
+                    },
+                    "auditRuleInformation": {
+                      "@odata.type": "microsoft.graph.deviceManagementAuditPowerShellRuleDetail",
+                      "auditType": "String",
+                      "auditRuleMetadata": {
+                        "@odata.type": "microsoft.graph.deviceManagementAuditRuleMetadata",
+                        "metadataType": "String",
+                        "ruleId": "String",
+                        "ruleName": "String",
+                        "ruleDescription": "String",
+                        "ruleVersion": "String",
+                        "ruleSeverity": "String"
+                      }
                     },
                     "choiceSettingValue": {
                       "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
@@ -109,6 +162,19 @@ Here is a JSON representation of the resource.
                             "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
                             "settingInstanceTemplateId": "String"
                           },
+                          "auditRuleInformation": {
+                            "@odata.type": "microsoft.graph.deviceManagementAuditPowerShellRuleDetail",
+                            "auditType": "String",
+                            "auditRuleMetadata": {
+                              "@odata.type": "microsoft.graph.deviceManagementAuditRuleMetadata",
+                              "metadataType": "String",
+                              "ruleId": "String",
+                              "ruleName": "String",
+                              "ruleDescription": "String",
+                              "ruleVersion": "String",
+                              "ruleSeverity": "String"
+                            }
+                          },
                           "choiceSettingValue": {
                             "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
                             "settingValueTemplateReference": {
@@ -124,6 +190,19 @@ Here is a JSON representation of the resource.
                                 "settingInstanceTemplateReference": {
                                   "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
                                   "settingInstanceTemplateId": "String"
+                                },
+                                "auditRuleInformation": {
+                                  "@odata.type": "microsoft.graph.deviceManagementAuditPowerShellRuleDetail",
+                                  "auditType": "String",
+                                  "auditRuleMetadata": {
+                                    "@odata.type": "microsoft.graph.deviceManagementAuditRuleMetadata",
+                                    "metadataType": "String",
+                                    "ruleId": "String",
+                                    "ruleName": "String",
+                                    "ruleDescription": "String",
+                                    "ruleVersion": "String",
+                                    "ruleSeverity": "String"
+                                  }
                                 },
                                 "choiceSettingValue": {
                                   "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
@@ -141,6 +220,19 @@ Here is a JSON representation of the resource.
                                         "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
                                         "settingInstanceTemplateId": "String"
                                       },
+                                      "auditRuleInformation": {
+                                        "@odata.type": "microsoft.graph.deviceManagementAuditPowerShellRuleDetail",
+                                        "auditType": "String",
+                                        "auditRuleMetadata": {
+                                          "@odata.type": "microsoft.graph.deviceManagementAuditRuleMetadata",
+                                          "metadataType": "String",
+                                          "ruleId": "String",
+                                          "ruleName": "String",
+                                          "ruleDescription": "String",
+                                          "ruleVersion": "String",
+                                          "ruleSeverity": "String"
+                                        }
+                                      },
                                       "choiceSettingValue": {
                                         "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
                                         "settingValueTemplateReference": {
@@ -156,6 +248,19 @@ Here is a JSON representation of the resource.
                                             "settingInstanceTemplateReference": {
                                               "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
                                               "settingInstanceTemplateId": "String"
+                                            },
+                                            "auditRuleInformation": {
+                                              "@odata.type": "microsoft.graph.deviceManagementAuditPowerShellRuleDetail",
+                                              "auditType": "String",
+                                              "auditRuleMetadata": {
+                                                "@odata.type": "microsoft.graph.deviceManagementAuditRuleMetadata",
+                                                "metadataType": "String",
+                                                "ruleId": "String",
+                                                "ruleName": "String",
+                                                "ruleDescription": "String",
+                                                "ruleVersion": "String",
+                                                "ruleSeverity": "String"
+                                              }
                                             },
                                             "choiceSettingValue": {
                                               "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
@@ -173,6 +278,19 @@ Here is a JSON representation of the resource.
                                                     "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
                                                     "settingInstanceTemplateId": "String"
                                                   },
+                                                  "auditRuleInformation": {
+                                                    "@odata.type": "microsoft.graph.deviceManagementAuditPowerShellRuleDetail",
+                                                    "auditType": "String",
+                                                    "auditRuleMetadata": {
+                                                      "@odata.type": "microsoft.graph.deviceManagementAuditRuleMetadata",
+                                                      "metadataType": "String",
+                                                      "ruleId": "String",
+                                                      "ruleName": "String",
+                                                      "ruleDescription": "String",
+                                                      "ruleVersion": "String",
+                                                      "ruleSeverity": "String"
+                                                    }
+                                                  },
                                                   "choiceSettingValue": {
                                                     "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
                                                     "settingValueTemplateReference": {
@@ -188,6 +306,19 @@ Here is a JSON representation of the resource.
                                                         "settingInstanceTemplateReference": {
                                                           "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
                                                           "settingInstanceTemplateId": "String"
+                                                        },
+                                                        "auditRuleInformation": {
+                                                          "@odata.type": "microsoft.graph.deviceManagementAuditPowerShellRuleDetail",
+                                                          "auditType": "String",
+                                                          "auditRuleMetadata": {
+                                                            "@odata.type": "microsoft.graph.deviceManagementAuditRuleMetadata",
+                                                            "metadataType": "String",
+                                                            "ruleId": "String",
+                                                            "ruleName": "String",
+                                                            "ruleDescription": "String",
+                                                            "ruleVersion": "String",
+                                                            "ruleSeverity": "String"
+                                                          }
                                                         },
                                                         "choiceSettingValue": {
                                                           "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
@@ -205,6 +336,19 @@ Here is a JSON representation of the resource.
                                                                 "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
                                                                 "settingInstanceTemplateId": "String"
                                                               },
+                                                              "auditRuleInformation": {
+                                                                "@odata.type": "microsoft.graph.deviceManagementAuditPowerShellRuleDetail",
+                                                                "auditType": "String",
+                                                                "auditRuleMetadata": {
+                                                                  "@odata.type": "microsoft.graph.deviceManagementAuditRuleMetadata",
+                                                                  "metadataType": "String",
+                                                                  "ruleId": "String",
+                                                                  "ruleName": "String",
+                                                                  "ruleDescription": "String",
+                                                                  "ruleVersion": "String",
+                                                                  "ruleSeverity": "String"
+                                                                }
+                                                              },
                                                               "choiceSettingValue": {
                                                                 "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
                                                                 "settingValueTemplateReference": {
@@ -220,6 +364,19 @@ Here is a JSON representation of the resource.
                                                                     "settingInstanceTemplateReference": {
                                                                       "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
                                                                       "settingInstanceTemplateId": "String"
+                                                                    },
+                                                                    "auditRuleInformation": {
+                                                                      "@odata.type": "microsoft.graph.deviceManagementAuditPowerShellRuleDetail",
+                                                                      "auditType": "String",
+                                                                      "auditRuleMetadata": {
+                                                                        "@odata.type": "microsoft.graph.deviceManagementAuditRuleMetadata",
+                                                                        "metadataType": "String",
+                                                                        "ruleId": "String",
+                                                                        "ruleName": "String",
+                                                                        "ruleDescription": "String",
+                                                                        "ruleVersion": "String",
+                                                                        "ruleSeverity": "String"
+                                                                      }
                                                                     },
                                                                     "choiceSettingValue": {
                                                                       "@odata.type": "microsoft.graph.deviceManagementConfigurationChoiceSettingValue",

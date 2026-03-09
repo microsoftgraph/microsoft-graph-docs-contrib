@@ -24,6 +24,7 @@ Setting Instance Template
 |settingInstanceTemplateId|String|Setting Instance Template Id|
 |settingDefinitionId|String|Setting Definition Id|
 |isRequired|Boolean|Indicates if a policy must specify this setting.|
+|auditRuleInformation|[deviceManagementConfigurationAuditRuleDetail](../resources/intune-deviceconfigv2-devicemanagementconfigurationauditruledetail.md)|Adding Audit Rule information in SettingInstanceTemplate|
 
 ## Relationships
 None
@@ -40,6 +41,19 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSettingInstanceTemplate",
   "settingInstanceTemplateId": "String",
   "settingDefinitionId": "String",
-  "isRequired": true
+  "isRequired": true,
+  "auditRuleInformation": {
+    "@odata.type": "microsoft.graph.deviceManagementAuditPowerShellRuleDetail",
+    "auditType": "String",
+    "auditRuleMetadata": {
+      "@odata.type": "microsoft.graph.deviceManagementAuditRuleMetadata",
+      "metadataType": "String",
+      "ruleId": "String",
+      "ruleName": "String",
+      "ruleDescription": "String",
+      "ruleVersion": "String",
+      "ruleSeverity": "String"
+    }
+  }
 }
 ```
