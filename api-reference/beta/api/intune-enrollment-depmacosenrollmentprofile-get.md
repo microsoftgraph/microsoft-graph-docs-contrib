@@ -66,7 +66,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2735
+Content-Length: 2784
 
 {
   "value": {
@@ -133,7 +133,8 @@ Content-Length: 2735
         "onRetrievalAutoRotatePasswordEnabled": true,
         "onRetrievalDelayAutoRotatePasswordInHours": 9
       }
-    }
+    },
+    "usePlatformSSODuringSetupAssistant": true
   }
 }
 ```
