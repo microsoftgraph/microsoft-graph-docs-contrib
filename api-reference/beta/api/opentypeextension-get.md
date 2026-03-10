@@ -28,7 +28,7 @@ The following table lists the three scenarios where you can get an open extensio
 |Get a known resource instance expanded with a specific extension.|Administrative unit, base task, base task list, device, drive item, event, group, group event, group post, message, organization, personal contact, to-do task, to-do task list, user. |A resource instance expanded with the open extension.|
 |Find and expand resource instances with a specific extension. | Base task, base task list, event, group event, group post, message, personal contact, to-do task, to-do task list |Resource instances expanded with the open extension.|
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
