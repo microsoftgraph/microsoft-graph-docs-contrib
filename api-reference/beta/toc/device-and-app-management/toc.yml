@@ -2477,6 +2477,8 @@ items:
         href: ../../api/intune-enrollment-deponboardingsetting-unshareforschooldatasyncservice.md
       - name: getExpiringVppTokenCount function
         href: ../../api/intune-enrollment-deponboardingsetting-getexpiringvpptokencount.md
+      - name: releaseAppleDevices action
+        href: ../../api/intune-enrollment-deponboardingsetting-releaseappledevices.md
     - name: Enrollment profile
       items:
       - name: Enrollment profile
@@ -4897,8 +4899,6 @@ items:
         href: ../../api/intune-raimportcerts-userpfxcertificate-create.md
       - name: Delete userPFXCertificate
         href: ../../api/intune-raimportcerts-userpfxcertificate-delete.md
-      - name: Update userPFXCertificate
-        href: ../../api/intune-raimportcerts-userpfxcertificate-update.md
     - name: VPN configuration
       items:
       - name: VPN configuration
