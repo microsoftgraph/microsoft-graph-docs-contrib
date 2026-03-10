@@ -86,7 +86,7 @@ After authoring documentation, update the appropriate changelog file in the `cha
           // Records will go here
         ],
         "Id": "{unique-guid}",
-        "Cloud": "prd",
+        "Cloud": "Prod",
         "Version": "beta",
         "CreatedDateTime": "{YYYY-MM-DDTHH:mm:ss.fffffffZ}",
         "WorkloadArea": "{WorkloadArea}",
@@ -100,7 +100,7 @@ After authoring documentation, update the appropriate changelog file in the `cha
 - **IMPORTANT:** A changelog record is NOT just the ChangeList array. A complete changelog record consists of:
   - `ChangeList` array (containing individual change items)
   - `Id` (unique GUID for this set of changes)
-  - `Cloud` (always "prd")
+  - `Cloud` (use "Prod" for new entries; older changelogs may have "prd")
   - `Version` (e.g., "beta" or "v1.0")
   - `CreatedDateTime` (ISO 8601/RFC 3339 DateTime with fractional seconds and Z suffix)
   - `WorkloadArea` (e.g., "Security")
@@ -132,7 +132,7 @@ After authoring documentation, update the appropriate changelog file in the `cha
       }
     ],
     "Id": "1e2218aa-5dbc-4c74-a0fe-1d06e90b451c",
-    "Cloud": "prd",
+    "Cloud": "Prod",
     "Version": "beta",
     "CreatedDateTime": "2025-11-17T17:38:10.4694969Z",
     "WorkloadArea": "Security",
@@ -179,7 +179,7 @@ Collect the following details for each API change (refer to **templates/changelo
 
 **Required record-level properties:** Version, WorkloadArea, SubArea
 
-**Note:** Cloud is always "prd" - no need to ask the author.
+**Note:** Cloud is "Prod" for new entries - no need to ask the author. Older changelogs may use "prd", which is also valid.
 
 **Step 3: Generate GUID and timestamp**
 
