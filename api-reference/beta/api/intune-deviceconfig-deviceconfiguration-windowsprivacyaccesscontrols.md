@@ -1,6 +1,6 @@
 ---
 title: "windowsPrivacyAccessControls action"
-description: "Intune Deviceconfig Deviceconfiguration Windowsprivacyaccesscontrols Source_Api ."
+description: "Intune Deviceconfig Deviceconfiguration Windowsprivacyaccesscontrols Api ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"

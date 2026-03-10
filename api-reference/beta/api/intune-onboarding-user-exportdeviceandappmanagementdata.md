@@ -1,6 +1,6 @@
 ---
 title: "exportDeviceAndAppManagementData function"
-description: "Intune Onboarding User Exportdeviceandappmanagementdata Source_Api ."
+description: "Intune Onboarding User Exportdeviceandappmanagementdata Api ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
