@@ -38,4 +38,3 @@ Describes the TemplateFamily for the Template entity
 |deviceConfigurationPolicies|23|Template Family for device configuration policies|
 |windowsOsRecoveryPolicies|24|Template Family for windowsOsRecovery that can be applied during a Windows operating system recovery|
 |companyPortal|25|Template Family for Company Portal settings|
-|windowsRecoveryAndRemediationConfiguration|26|Windows Recovery and Remediation Configuration Policy|
