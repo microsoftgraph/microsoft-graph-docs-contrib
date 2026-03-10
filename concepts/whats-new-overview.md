@@ -180,6 +180,10 @@ Added [driveItem: archive](/graph/api/driveitem-archive?view=graph-rest-beta&pre
 
 Added the **principal** and **principalCollection** data types to the [externalConnection](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true) resource to specify the data type for people‑related property items in the external connection.
 
+### Tasks and plans
+
+Use the extended properties API to store or get custom data in the [todoTaskList](/graph/api/resources/todotasklist?view=graph-rest-beta&preserve-view=true#methods) resource.
+
 ### Security | Data security and compliance
 
 - Added the `labelNotFoundException` member to the [usageRights](/graph/api/resources/usagerights?view=graph-rest-beta&preserve-view=true) enumeration type. This member represents a label with no protection settings, so there are no usage rights to evaluate in Microsoft Purview.
