@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Retrieve action reports of external partner.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
