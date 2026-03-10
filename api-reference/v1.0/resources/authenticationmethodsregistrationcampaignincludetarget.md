@@ -13,7 +13,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Represents the users and groups that are targeted for [authentication method registration campaigns](authenticationmethodsregistrationcampaign.md).
+Represents the users and groups that are targeted for [authentication method registration campaigns](../resources/authenticationmethodsregistrationcampaign.md).
 
 ## Properties
 |Property|Type|Description|
