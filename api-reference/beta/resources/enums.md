@@ -5043,6 +5043,8 @@ Possible values for user account types (group membership), per Windows definitio
 | samAccountName |
 | unknownFutureValue |
 
+
+
 ### samlAttributeNameFormat values
 
 | Member |
@@ -5378,16 +5380,6 @@ Possible values for user account types (group membership), per Windows definitio
 |none|
 |manual|
 |dynamicRule|
-|unknownFutureValue|
-
-### organizationAllowedAudiences values
-
-|Member|
-|:---|
-|me|
-|organization|
-|federatedOrganizations|
-|everyone|
 |unknownFutureValue|
 
 ### educationSpeechType values

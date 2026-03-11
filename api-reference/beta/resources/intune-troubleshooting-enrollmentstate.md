@@ -1,6 +1,6 @@
 ---
 title: "enrollmentState enum type"
-description: "Intune Troubleshooting Enrollmentstate Source_Resources ."
+description: "Intune Troubleshooting Enrollmentstate Resources ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"

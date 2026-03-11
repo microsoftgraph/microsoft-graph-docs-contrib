@@ -671,6 +671,7 @@
         "microsoft.graph.externalConnectors.properties",
         "microsoft.graph.externalConnectors.property",
         "microsoft.graph.externalConnectors.propertyRule",
+        "microsoft.graph.externalConnectors.principal",
         "publicError",
         "publicErrorDetail",
         "publicInnerError",
@@ -1720,7 +1721,6 @@
             "microsoft.graph.security.ediscoveryCustodian",
             "microsoft.graph.security.ediscoveryNoncustodialDataSource",
             "microsoft.graph.security.ediscoveryHoldPolicy",
-            "microsoft.graph.security.ediscoveryPurgeDataOperation",
             "microsoft.graph.security.ediscoverySearch",
             "microsoft.graph.security.ediscoveryReviewSet",
             "microsoft.graph.security.ediscoveryReviewTag",
@@ -1733,11 +1733,6 @@
                 "microsoft.graph.security.ediscoveryReviewSetQuery"
               ]
             }
-          ],
-          "complexTypes": [
-            "microsoft.graph.security.ediscoveryAddToReviewSetOperation",
-            "microsoft.graph.security.ediscoveryEstimateOperation",
-            "microsoft.graph.security.reportFileMetadata"
           ]
         },
         {
@@ -1995,13 +1990,17 @@
           "resources": [
             "microsoft.graph.teamsAdministration.teamsPolicyAssignment",
             "microsoft.graph.teamsAdministration.teamsPolicyUserAssignment",
-            "microsoft.graph.teamsAdministration.teamsUserConfiguration"
+            "microsoft.graph.teamsAdministration.teamsUserConfiguration",
+            "microsoft.graph.teamsAdministration.numberAssignment",
+            "microsoft.graph.teamsAdministration.telephoneNumberLongRunningOperation",
+            "microsoft.graph.teamsAdministration.telephoneNumberManagementRoot"
           ],
           "complexTypes": [
             "microsoft.graph.teamsAdministration.assignedTelephoneNumber",
             "microsoft.graph.teamsAdministration.effectivePolicyAssignment",
             "microsoft.graph.teamsAdministration.policyAssignment",
-            "microsoft.graph.teamsAdministration.policyIdentifierDetail"
+            "microsoft.graph.teamsAdministration.policyIdentifierDetail",
+            "microsoft.graph.teamsAdministration.telephoneNumberLongRunningOperationDetails"
           ]
         },
         {

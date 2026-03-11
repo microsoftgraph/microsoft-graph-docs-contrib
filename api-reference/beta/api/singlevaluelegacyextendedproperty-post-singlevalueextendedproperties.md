@@ -29,6 +29,7 @@ The following user resources are supported:
 - [Outlook task](../resources/outlooktask.md)
 - [Outlook task folder](../resources/outlooktaskfolder.md)
 - [todoTask](../resources/todotask.md)
+- [todoTaskList](../resources/todotasklist.md)
 
 The following group resources are supported:
 
@@ -57,6 +58,7 @@ Depending on the resource you're creating the extended property in and the permi
 | [Outlook task](../resources/outlooktask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
 | [Outlook task folder](../resources/outlooktaskfolder.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported. |
 | [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Not supported. | Not supported. |
+| [todoTaskList](../resources/todotasklist.md) | Tasks.ReadWrite | Not supported. | Not supported. |
 
 ## HTTP request
 You can create extended properties in a new or existing resource instance.
@@ -107,6 +109,8 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 
 POST /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}?$expand=singleValueExtendedProperties($filter=id eq '{singleValueExtendedPropertyId}')
 POST /me/todo/lists/{todoTaskListId}/tasks?$expand=singleValueExtendedProperties($filter=id eq '{singleValueExtendedPropertyId}')
+
+POST /me/todo/lists?$expand=singleValueExtendedProperties($filter=id eq '{singleValueExtendedPropertyId}')
 
 POST /groups/{id}/events
 
@@ -160,6 +164,8 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 
 PATCH /me/todo/lists/{todoTaskListId}/tasks?$expand=singleValueExtendedProperties($filter=id eq '{singleValueExtendedPropertyId}')
 PATCH /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}?$expand=singleValueExtendedProperties($filter=id eq '{singleValueExtendedPropertyId}')
+
+PATCH /me/todo/lists/{todoTaskListId}?$expand=singleValueExtendedProperties($filter=id eq '{singleValueExtendedPropertyId}')
 
 PATCH /groups/{id}/events/{id}
 ```

@@ -14,6 +14,13 @@ Namespace: microsoft.graph
 Create a new [authenticationEventListener](../resources/authenticationeventlistener.md) object. You can create one of the following subtypes that are derived from **authenticationEventListener**.
 
 - [onTokenIssuanceStartListener resource type](../resources/ontokenissuancestartlistener.md)
+- [onInteractiveAuthFlowStartListener resource type](../resources/oninteractiveauthflowstartlistener.md)
+- [onAuthenticationMethodLoadStartListener resource type](../resources/onauthenticationmethodloadstartlistener.md)
+- [onAttributeCollectionListener resource type](../resources/onattributecollectionlistener.md)
+- [onUserCreateStartListener resource type](../resources/onusercreatestartlistener.md)
+- [onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md)
+- [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md)
+- [onEmailOtpSendListener](../resources/onemailotpsendlistener.md)
 - [onFraudProtectionLoadStartListener](../resources/onfraudprotectionloadstartlistener.md) resource type
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]

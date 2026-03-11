@@ -27,7 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
-To delete another user's external authentication method:
+To delete another user's external MFA:
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/{usersId}/authentication/externalAuthenticationMethods/{externalAuthenticationMethodId}/$ref

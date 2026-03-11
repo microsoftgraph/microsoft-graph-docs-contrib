@@ -64,7 +64,7 @@ The following example changes the role of a tenant in a multitenant organization
 }
 -->
 ```http
-PATCH https://graph.microsoft.com/v1.0/tenantRelationships/multiTenantOrganization/tenant/5036a0a0-a7a4-4933-9086-5dd54535dd6e
+PATCH https://graph.microsoft.com/v1.0/tenantRelationships/multiTenantOrganization/tenants/5036a0a0-a7a4-4933-9086-5dd54535dd6e
 Content-Type: application/json
 
 {
