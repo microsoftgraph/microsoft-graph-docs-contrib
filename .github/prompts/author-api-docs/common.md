@@ -31,7 +31,7 @@ If a conflict is significant, flag it to the author in the final summary but fol
 Gather both values in a **single upfront step** to minimize round-trips with the author:
 
 1. **Attempt auto-detection first:**
-   - `author`: Use the GitHub login of the signed-in user
+   - `author`: Use the `get_me` tool to get the GitHub Login of the signed-in user
    - `ms.subservice`: Inspect existing API/resource files being updated and use their `ms.subservice` value (exclude enum files)
 
 2. **If either value cannot be inferred**, ask the author for both at once:
