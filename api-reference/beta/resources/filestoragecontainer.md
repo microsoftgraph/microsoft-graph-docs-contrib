@@ -50,10 +50,13 @@ Represents a location where multiple users or a group of users can store files a
 |[Unlock](../api/filestoragecontainer-unlock.md)|None|Unlock a [fileStorageContainer](../resources/filestoragecontainer.md) for users and application-only identities to allow the addition, updating, and deletion of content.|
 |[Create migration job](../api/filestoragecontainer-post-migrationjobs.md)|[sharePointMigrationJob](../resources/sharepointmigrationjob.md)|Create a new [sharePointMigrationJob](../resources/sharepointmigrationjob.md) object that is scheduled to run at a later time to migrate content from an intermediary storage to the target [fileStorageContainer](../resources/filestoragecontainer.md).|
 |[Provision migration containers](../api/filestoragecontainer-provisionmigrationcontainers.md)|[sharePointMigrationContainerInfo](../resources/sharepointmigrationcontainerinfo.md)|Provision SharePoint-managed Azure blob containers as temporary storage for migration content and metadata.|
+|[Archive](../api/filestoragecontainer-archive.md)|None|Archive an active [fileStorageContainer](../resources/filestoragecontainer.md).|
+|[Unarchive](../api/filestoragecontainer-unarchive.md)|None|Unarchive an archived [fileStorageContainer](../resources/filestoragecontainer.md).|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|archivalDetails|[siteArchivalDetails](../resources/sitearchivaldetails.md)|Archival details of the **fileStorageContainer**. Read-write.|
 |assignedSensitivityLabel|[assignedLabel](../resources/assignedlabel.md)|Sensitivity label assigned to the **fileStorageContainer**. Read-write.|
 |containerTypeId|GUID|Container type ID of the **fileStorageContainer**. Each container must have only one container type. Read-only.|
 |createdDateTime|DateTimeOffset|Date and time of the **fileStorageContainer** creation. Read-only.|
@@ -121,7 +124,8 @@ The following JSON representation shows the resource type.
   "expiryDateTime": "string (timestamp)",
   "lockState": {"@odata.type": "microsoft.graph.siteLockState"},
   "settings": { "@odata.type": "microsoft.graph.fileStorageContainerSettings" },
-  "informationBarrier": { "@odata.type": "microsoft.graph.informationBarrier" }
+  "informationBarrier": { "@odata.type": "microsoft.graph.informationBarrier" },
+  "archivalDetails": { "@odata.type": "microsoft.graph.siteArchivalDetails" }
 }
 ```
 

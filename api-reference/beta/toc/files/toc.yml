@@ -218,6 +218,10 @@ items:
     href: ../../api/filestoragecontainer-post-migrationjobs.md
   - name: Provision migration containers
     href: ../../api/filestoragecontainer-provisionmigrationcontainers.md
+  - name: Archive
+    href: ../../api/filestoragecontainer-archive.md
+  - name: Unarchive
+    href: ../../api/filestoragecontainer-unarchive.md
 - name: File storage container type
   items:
   - name: File storage container type
