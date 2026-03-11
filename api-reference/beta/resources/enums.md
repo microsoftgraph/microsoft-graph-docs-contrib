@@ -4452,47 +4452,6 @@ Possible values for user account types (group membership), per Windows definitio
 | cannotSatisfy |
 | unknownFutureValue |
 
-### authenticationMethodModes values
-
-| Member |
-| --------------------------- |
-| password |
-| voice |
-| hardwareOath |
-| softwareOath |
-| sms |
-| fido2 |
-| windowsHelloForBusiness |
-| microsoftAuthenticatorPush |
-| deviceBasedPush |
-| temporaryAccessPassOneTime |
-| temporaryAccessPassMultiUse |
-| email |
-| x509CertificateSingleFactor |
-| x509CertificateMultiFactor |
-| federatedSingleFactor |
-| federatedMultiFactor |
-| unknownFutureValue |
-| qrCodePin |
-
-### baseAuthenticationMethod values
-
-| Member |
-| ----------------------- |
-| password |
-| voice |
-| hardwareOath |
-| softwareOath |
-| sms |
-| fido |
-| microsoftAuthenticator |
-| windowsHelloForBusiness |
-| temporaryAccessPass |
-| email |
-| x509Certificate |
-| federation |
-| unknownFutureValue |
-
 ### searchContent values
 
 | Member |
@@ -5084,6 +5043,8 @@ Possible values for user account types (group membership), per Windows definitio
 | samAccountName |
 | unknownFutureValue |
 
+
+
 ### samlAttributeNameFormat values
 
 | Member |
@@ -5361,6 +5322,7 @@ Possible values for user account types (group membership), per Windows definitio
 |standard|
 |bulk|
 |unknownFutureValue|
+|granular|
 
 ### cloudPcPolicyApplyActionStatus values
 
@@ -5411,16 +5373,6 @@ Possible values for user account types (group membership), per Windows definitio
 |phish|
 |unknownFutureValue|
 
-### errorCorrectionLevel values
-
-|Member|
-|:---|
-|l|
-|m|
-|q|
-|h|
-|unknownFutureValue|
-
 ### protectionSource values
 
 |Member|
@@ -5428,16 +5380,6 @@ Possible values for user account types (group membership), per Windows definitio
 |none|
 |manual|
 |dynamicRule|
-|unknownFutureValue|
-
-### organizationAllowedAudiences values
-
-|Member|
-|:---|
-|me|
-|organization|
-|federatedOrganizations|
-|everyone|
 |unknownFutureValue|
 
 ### educationSpeechType values
@@ -5732,7 +5674,6 @@ Possible values for user account types (group membership), per Windows definitio
 |Member|
 |:---|
 |sitepagepublishing|
-|group|
 |sts|
 |unknownFutureValue|
 
@@ -5886,6 +5827,55 @@ Possible values for user account types (group membership), per Windows definitio
 |allowedTenants|
 |unknownFutureValue|
 
+### browsableResourceType values 
+
+|Member|
+|:---|
+|none|
+|site|
+|documentLibrary|
+|folder|
+|unknownFutureValue|
+
+### browseQueryOrder values 
+
+|Member|
+|:---|
+|pathAsc|
+|pathDsc|
+|nameAsc|
+|nameDsc|
+|unknownFutureValue|
+
+### browseQueryResponseItemType values 
+
+|Member|
+|:---|
+|none|
+|site|
+|documentLibrary|
+|folder|
+|file|
+|unknownFutureValue|
+
+### browseSessionStatus values 
+
+|Member|
+|:---|
+|creating|
+|created|
+|failed|
+|unknownFutureValue|
+
+### fileArchiveStatus values 
+
+|Member|
+|:---|
+|notArchived|
+|fullyArchived|
+|reactivating|
+|unknownFutureValue|
+
 ### baselineParameterType values 
 
 |Member|
@@ -5937,3 +5927,11 @@ Possible values for user account types (group membership), per Windows definitio
 |failed|
 |unknownFutureValue|
 |partiallySuccessful|
+
+### contentCategory values 
+
+|Member|
+|:---|
+|none|
+|ai|
+|unknownFutureValue|

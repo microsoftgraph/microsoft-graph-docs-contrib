@@ -2,7 +2,7 @@
 title: "List policies"
 description: "Get a list of the policy objects and their properties."
 author: "andredm7"
-ms.date: 01/27/2026
+ms.date: 02/05/2026
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: apiPageType
@@ -18,12 +18,16 @@ Get a list of the [policy](../resources/windowsupdates-policy.md) objects and th
 
 You can use this method with the following child object type: [qualityUpdatePolicy](../resources/windowsupdates-qualityupdatepolicy.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 <!-- { "blockType": "permissions", "name": "windowsupdates_adminwindowsupdates_list_policies" } -->
 [!INCLUDE [permissions-table](../includes/permissions/windowsupdates-adminwindowsupdates-list-policies-permissions.md)]
+
+[!INCLUDE [rbac-windows-updates-apis](../includes/rbac-for-apis/rbac-windows-updates-apis.md)]
 
 ## HTTP request
 

@@ -8,7 +8,7 @@ ms.localizationpriority: high
 ms.subservice: entra-groups
 doc_type: conceptualPageType
 ms.topic: overview
-ms.date: 04/29/2025
+ms.date: 02/19/2026
 #customer intent: As a developer, I want to understand how to create and manage groups using Microsoft Graph so that I can simplify access management for my organization.  
 ---
 
@@ -56,10 +56,8 @@ Microsoft 365 Groups are designed for collaboration and provide access to shared
 - Intune device management.
 
 Here's an example of a Microsoft 365 group in JSON format:
-```http
-HTTP/1.1 201 Created
-Content-type: application/json
 
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -98,6 +96,10 @@ Content-type: application/json
     "securityEnabled": true
 }
 ```
+
+## Group ownership
+
+Groups can have one or more owners who manage the group. Owners can be users or service principals. We recommend assigning at least two owners to a group to ensure continuity.
 
 ## Group membership
 
@@ -255,7 +257,7 @@ The Microsoft Graph groups API supports these common operations:
 
 ## Microsoft Entra roles for managing groups
 
-To manage groups, the signed-in user must have the appropriate Microsoft Graph permissions and be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+To manage groups, the signed-in user must have the appropriate Microsoft Graph permissions and be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with supported permissions. *Groups Administrator* is the main role for managing groups, but other roles such as *User Administrator*, *Exchange Administrator*, and *Directory Writers* can also manage groups with varying levels of permissions.
 
 The least privileged roles for managing groups are:
 
@@ -269,3 +271,7 @@ For more information, see [Least privileged roles to manage groups](/entra/ident
 
 > [!div class="nextstepaction"]
 > [Start working with groups](../resources/group.md)
+
+## See also
+
+- [Best practices for managing groups in the cloud](/entra/fundamentals/concept-learn-about-groups#best-practices-for-managing-groups-in-the-cloud)

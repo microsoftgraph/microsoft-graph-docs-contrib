@@ -1,18 +1,21 @@
 ---
-title: "alertHistoryState resource type"
+title: "alertHistoryState resource type (deprecated)"
 description: "Stores changes made to alerts."
 ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: "security"
 doc_type: resourcePageType
 ms.date: 07/22/2024
+ROBOTS: NOINDEX
 ---
 
-# alertHistoryState resource type
+# alertHistoryState resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [security-alerts-v1-deprecation](../includes/security-alerts-v1-deprecation.md)]
 
 Stores changes made to alerts.
 

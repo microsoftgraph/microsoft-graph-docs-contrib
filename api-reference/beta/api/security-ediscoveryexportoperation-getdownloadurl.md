@@ -27,6 +27,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "security_ediscoveryexportoperation_getdownloadurl" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoveryexportoperation-getdownloadurl-permissions.md)]
+[!INCLUDE [rbac-ediscovery-read](../includes/rbac-for-apis/rbac-ediscovery-apis-read.md)]
 
 ## HTTP request
 

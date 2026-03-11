@@ -1,5 +1,5 @@
 ---
-author: "AlexFilipin"
+author: "KristinaSmith"
 ms.localizationpriority: high
 ms.subservice: "entra-id-governance"
 ms.topic: include

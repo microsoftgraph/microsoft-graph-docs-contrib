@@ -57,7 +57,7 @@ Permissions are required to receive notifications, and the permissions required 
 | Application                            |  Not supported.                              |TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All, TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All, TeamsAppInstallation.ReadWriteAndConsentForChat.All, TeamsAppInstallation.Read.All|
 
 > [!NOTE]
-> Notifications for update events that occur in the chat scope might not be delivered. This is a [known issue](https://developer.microsoft.com/graph/known-issues/?search=26483).
+> Notifications for update events that occur in the chat scope might not be delivered. This is a [known issue](/graph/known-issues#upgrade-events-for-teams-app-installation-change-notifications-in-chat-scope-are-not-delivered).
 
 #### All scopes
 

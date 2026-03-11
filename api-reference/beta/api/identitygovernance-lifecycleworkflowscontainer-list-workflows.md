@@ -1,7 +1,7 @@
 ---
 title: "List workflows"
 description: "Get a list of the workflow objects and their properties."
-author: "AlexFilipin"
+author: "KristinaSmith"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType

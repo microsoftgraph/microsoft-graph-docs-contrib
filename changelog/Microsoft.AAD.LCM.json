@@ -1417,6 +1417,24 @@
     {
       "ChangeList": [
         {
+          "Id": "0cd51000-c5bc-4a2e-8278-7d75cd72921d",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "administrationScopeTargets",
+          "ChangeType": "Addition",
+          "Description": "Added the **administrationScopeTargets** relationship to the [workflowBase](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflowBase?view=graph-rest-1.0) resource. This relationship is also inherited by the [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflow?view=graph-rest-1.0) and [workflowVersion](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-workflowVersion?view=graph-rest-1.0) derived types.",
+          "Target": "workflowBase"
+        }
+      ],
+      "Id": "0cd51000-c5bc-4a2e-8278-7d75cd72921d",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-02-19T20:19:15.1249826Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c072ab02-1b08-431a-8d73-649b335dc867",
           "ApiChange": "Resource",
           "ChangedApiName": "emailSettings",

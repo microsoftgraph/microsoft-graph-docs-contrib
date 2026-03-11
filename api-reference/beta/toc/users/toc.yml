@@ -160,11 +160,11 @@ items:
       href: ../../api/user-list-transitivememberof.md
   - name: Insights
     items:
-    - name: List shared
-      href: ../../api/insights-list-shared.md
     - name: List trending
       href: ../../api/insights-list-trending.md
-    - name: List used
+    - name: List shared (deprecated)
+      href: ../../api/insights-list-shared.md
+    - name: List used (deprecated)
       href: ../../api/insights-list-used.md
   - name: License management
     items:

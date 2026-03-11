@@ -1,7 +1,7 @@
 ---
 title: "List taskReports"
 description: "Get a list of the taskReport objects and their properties for a lifecycle workflow."
-author: "AlexFilipin"
+author: "KristinaSmith"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType

@@ -193,7 +193,7 @@ Microsoft Entra ID resources and their relationships that derive from [directory
 
 > [!NOTE]
 > - The `$search` query parameter is currently not available in Azure AD B2C tenants.
-> - There's a [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=18185) with `$search` on directory objects for values that contain an ampersand (&) symbol.
+> - There's a [known issue](/graph/known-issues#search-for-directory-objects-fails-for-encoded-ampersand-character) with `$search` on directory objects for values that contain an ampersand (&) symbol.
 
 The search implementation doesn't support "contains" logic. Instead, it uses a tokenization approach that extracts words from property values and search strings using spaces, numbers, different casing, and symbols as shown in these examples:
 
