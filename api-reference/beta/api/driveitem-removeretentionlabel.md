@@ -1,6 +1,6 @@
 ---
 title: "driveItem: removeRetentionLabel"
-description: "Remove a retention label from a driveItem."
+description: "Remove the retention label from a driveItem."
 author: "kyracatwork"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -28,12 +28,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-removeretentionlabel-permissions.md)]
 
 > [!NOTE]
-> `Sites.FullControl.All` is the least privileged permission required to remove retention labels that classify the content as records.
+> * `Sites.FullControl.All` is the least privileged permission required to remove retention labels that classify the content as records.
+> * The removal of a *Record* retention label isn't supported when using app-only authentication. This operation requires a delegated user context.
 
 [!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
-
-> [!NOTE]
-> Removal of a **Record** retention label is not supported when using app‑only authentication. This operation requires a delegated user context.
 
 ## HTTP request
 
@@ -62,18 +60,18 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
-## Error responses
+### Error responses
 
 | Error code       | HTTP status | Description                                                        |
 |:-----------------|:------------|:-------------------------------------------------------------------|
-| itemNotFound     | 404         | The item could not be found or is no longer accessible             |
-| accessDenied     | 403         | The caller does not have permission to remove the retention label  |
-| notSupported     | 400         | App-only callers are not supported for SPE containers              |
+| notSupported     | 400         | App-only callers aren't supported for SharePoint Embedded containers. |
+| accessDenied     | 403         | The caller doesn't have permission to remove the retention label.  |
+| itemNotFound     | 404         | The item can't be found or is no longer accessible.             |
 
 ## Examples
 
-### Example 1: Remove retention label from a driveItem
-
+### Example 1: Remove the retention label from a driveItem
+The following example shows how to remove the retential label from a **driveItem** object.
 #### Request
 
 The following example shows a request.
@@ -102,13 +100,14 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Remove retention label from a driveItem failed (Insufficient permissions)
-
+### Example 2: Remove the retention label from a driveItem that fails due to insufficient permissions
+The following example shows how to remove the retention label from a **driveItem** object that fails due to insufficient permissions.
 #### Request
-
+The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "driveItem_removeRetentionLabel_spe_permissions_error"
+  "name": "driveItem_removeRetentionLabel_spe_permissions_error",
+  "sampleKeys": ["b!t18F8ybsHUq1z3LTz8xvZqP8zaSWjkFNhsME-Fepo75dTf9vQKfeRblBZjoSQrd7", "01NKDM7HMOJTVYMDOSXFDK2QJDXCDI3WUK"]
 }
 -->
 
@@ -117,7 +116,7 @@ DELETE https://graph.microsoft.com/beta/drives/b!t18F8ybsHUq1z3LTz8xvZqP8zaSWjkF
 ```
 
 #### Response
-
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
