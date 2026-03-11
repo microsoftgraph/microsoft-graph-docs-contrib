@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "7b48d671-3f04-4f2d-90f0-d0026a4818d8",
+          "ApiChange": "Method",
+          "ChangedApiName": "removeRetentionLabel",
+          "ChangeType": "Change",
+          "Description": "Added support for the `DELETE /groups/{group-id}/drive/items/{item-id}/retentionLabel`, `DELETE /me/drive/items/{item-id}/retentionLabel`, and `DELETE /users/{user-id}/drive/items/{item-id}/retentionLabel` in the [removeRetentionLabel](https://learn.microsoft.com/en-us/graph/api/driveitem-removeretentionlabel?view=graph-rest-beta) of the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
+          "Target": "driveItem"
+        }
+      ],
+      "Id": "7b48d671-3f04-4f2d-90f0-d0026a4818d8",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-03-11T20:51:08.101659Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "e6d0db29-6c02-4778-a0e1-87dd002f1e8e",
           "ApiChange": "Property",
           "ChangedApiName": "deleted",
