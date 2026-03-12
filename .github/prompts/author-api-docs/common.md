@@ -249,7 +249,7 @@ After updating What's new, update the appropriate TOC mapping file to make new d
 
 **For new files:** Include only HTTP request examples using `msgraph-interactive` (for URLs without an ID placeholder, e.g., `https://graph.microsoft.com/v1.0/users`) or `http` language identifier. No tabs or SDK includes.
 
-**For existing files:** Follow the established pattern. If the file has no SDK snippets, add only HTTP examples. Do not introduce SDK snippets to files lacking them.
+**For existing files:** Follow the established pattern. If the file has no SDK snippets, add only HTTP examples. Do not introduce SDK snippets to files or examples lacking them.
 
 **Example HTTP-only format:**
 
