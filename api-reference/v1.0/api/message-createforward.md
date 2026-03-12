@@ -80,7 +80,23 @@ The following example shows a request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/me/messages/{id}/createForward
+POST https://graph.microsoft.com/v1.0/me/messages/AAMkADA1MTAAAH5JaLAAA=/createForward
+Content-Type: application/json
+
+{
+  "message":{
+    "isDeliveryReceiptRequested": true,
+    "toRecipients":[
+      {
+        "emailAddress": {
+          "address":"danas@contoso.com",
+          "name":"Dana Swope"
+        }
+      }
+     ]
+  },
+  "comment": "Dana, just want to make sure you get this; you'll need this if the project gets approved."
+}
 ```
 
 # [C#](#tab/csharp)
