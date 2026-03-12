@@ -1,6 +1,6 @@
 ---
-title: "Use the unified Tenant Configuration Management APIs in Microsoft Graph (preview)"
-description: "Learn how to use the unified Tenant Configuration Management APIs in Microsoft Graph to control and manage configuration settings for an entire organization."
+title: "Use the Tenant Configuration Management APIs in Microsoft Graph (preview)"
+description: "Learn how to use the Tenant Configuration Management APIs in Microsoft Graph to control and manage configuration settings for an entire organization."
 ms.localizationpriority: high
 author: "swatyario"
 ms.subservice: "tenant-administration"
