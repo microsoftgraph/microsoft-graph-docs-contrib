@@ -208,7 +208,7 @@ When only some properties, methods, or relationships of a resource are being pro
    - Add promoted relationships to the existing v1.0 Relationships table
    - Update JSON representation to include promoted properties
 3. **Do NOT overwrite** existing v1.0 content — only add the newly promoted items
-4. **Update examples** in existing v1.0 API docs to include the newly promoted properties where applicable. The same code snippet rules apply to any new or updated examples — no SDK snippet links, no HTTP tabs, HTTP-only examples (see Step 2 "For API method files" items 2–3)
+4. **Update examples** in existing v1.0 API docs to include the newly promoted properties where applicable. The same code snippet rules apply to any new or updated examples — see [Handling Code Snippets](common.md#handling-code-snippets-in-examples) for guidance.
 5. **Follow the same update rules** as full promotions for the newly added items (remove beta disclaimer references, update version URLs, etc.)
 
 ## Execution approach
