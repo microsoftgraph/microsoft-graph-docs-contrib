@@ -150,6 +150,10 @@ For each copied file, make the following updates:
    - Update the JSON representation section to include new properties
    - Update existing examples in the v1.0 API docs to include the new properties, where applicable
 
+3. **Remove beta-only content:**
+   - If the Documentation Plan includes a "Beta-only content to remove" table, remove all listed properties from the Properties table, JSON representation, and example request/response payloads, and any listed relationships from the Relationships table
+   - **Always:** Cross-reference inherited properties against the existing v1.0 base type resource file in `api-reference/v1.0/resources/` — remove any property in the copied file that doesn't appear in the v1.0 base type's Properties table
+
 **For enumeration files:**
 - If enumerations are being promoted, copy the enum definition files (enums.md entries, H3 sections in parent resources, or separate enum topic files) from beta to v1.0
 - Follow the same update rules as other promoted files (remove beta disclaimer, update version references)
@@ -204,7 +208,7 @@ When only some properties, methods, or relationships of a resource are being pro
    - Add promoted relationships to the existing v1.0 Relationships table
    - Update JSON representation to include promoted properties
 3. **Do NOT overwrite** existing v1.0 content — only add the newly promoted items
-4. **Update examples** in existing v1.0 API docs to include the newly promoted properties where applicable
+4. **Update examples** in existing v1.0 API docs to include the newly promoted properties where applicable. The same code snippet rules apply to any new or updated examples — no SDK snippet links, no HTTP tabs, HTTP-only examples (see Step 2 "For API method files" items 2–3)
 5. **Follow the same update rules** as full promotions for the newly added items (remove beta disclaimer references, update version URLs, etc.)
 
 ## Execution approach
@@ -230,9 +234,13 @@ When only some properties, methods, or relationships of a resource are being pro
      - **Deviations:** Author from scratch using doc stubs, documentation plan, and API.md — follow the Scenario 1 workflow
      - **Parallelism hint:** Independent file operations can be done in parallel.
      - **⏸ Phase gate:** Output a phase status summary. Confirm with the author before proceeding to Phase 2.
-   - **Phase 2 — File updates:**
-     - **No deviations:** Remove beta disclaimers, update version references, update ms.date, remove SDK snippets, verify examples
-     - **Deviations:** Verify authored files use v1.0 endpoints, correct ms.date, and have no beta disclaimers
+   - **Phase 2 - Update copied files:**
+     - Remove beta disclaimers from all files
+     - Update version references from /beta to /v1.0
+     - Update ms.date in YAML front matter
+     - For API files: Remove SDK snippets, verify examples
+     - For resource files: Update Methods and Properties tables if applicable
+     - **Remove beta-only content** — check Documentation Plan's "Beta-only content to remove" table and cross-reference inherited properties against v1.0 base type resource files (see "Remove beta-only content" under Step 2 "For resource files")
      - Do not update any descriptions unless explicitly guided
      - **⏸ Phase gate:** Output a phase status summary. Confirm with the author before proceeding to Phase 3.
    - **Phase 3 — Supporting updates:**
@@ -272,11 +280,13 @@ In addition to the [base quality checklist](common.md#base-quality-checklist), v
 - [ ] Properties table updated if new properties promoted
 - [ ] JSON representation updated if new properties promoted
 - [ ] Examples updated to include new properties if applicable
+- [ ] Beta-only content removed per Documentation Plan's "Beta-only content to remove" table
+- [ ] Inherited properties cross-referenced against v1.0 base type resource file (no beta-only inherited properties remain)
 
-**For API method files promoted to v1.0:**
-- [ ] File copied from beta\api to v1.0\api
-- [ ] Beta disclaimer removed
-- [ ] National cloud include statement deleted (immediately before ## Permissions header)
+**For API method files (new or updated) in v1.0:**
+- [ ] File copied from beta\api to v1.0\api (new files only)
+- [ ] Beta disclaimer removed (new files only)
+- [ ] National cloud include statement deleted (new files only)
 - [ ] Version references updated from /beta to /v1.0 in all examples
 - [ ] ms.date updated in YAML front matter
 - [ ] SDK snippet links removed from Example Request section
