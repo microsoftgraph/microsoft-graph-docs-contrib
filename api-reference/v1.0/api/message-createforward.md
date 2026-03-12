@@ -69,7 +69,7 @@ If the request body includes malformed MIME content, this method returns `400 Ba
 ### Example 1: Create a draft message in JSON format to forward an existing message
 Here's an example of how to call this API.
 
-##### Request
+#### Request
 
 The following example shows a request.
 
@@ -113,7 +113,7 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/createForward
 
 ---
 
-##### Response
+#### Response
 
 The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
@@ -139,8 +139,8 @@ Content-type: application/json
 }
 ```
 
-### Example 2 Create a draft message in MIME format to forward an existing message
-##### Request
+### Example 2: Create a draft message in MIME format to forward an existing message
+#### Request
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.message",
@@ -160,7 +160,7 @@ ZTogU3VuLCAyOCBGZWIgMjAyMSAwNzoxNTowMCArMDAwMApNZXNzYWdlLUlEOgoJPE1XSFBSMTMw
 MU1CMjAwMDAwMDAwRDc2RDlDMjgyMjAwMDA5QUQ5QTlASF
 ```
 
-##### Response
+#### Response
 The following example shows the response.
 <!-- {
   "blockType": "response",
@@ -256,4 +256,6 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+
 

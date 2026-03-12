@@ -22,6 +22,7 @@ Used in the request, approval, and assignment review settings of an [access pack
 + [internalSponsors](internalsponsors.md)
 + [externalSponsors](externalsponsors.md)
 + [targetUserSponsors](targetusersponsors.md)
++ [targetAgentIdentitySponsorsOrOwners](targetagentidentitysponsorsorowners.md)
 
 ## Properties
 

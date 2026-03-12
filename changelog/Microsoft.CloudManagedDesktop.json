@@ -3,6 +3,112 @@
     {
       "ChangeList": [
         {
+          "Id": "831c4b73-6002-4d78-b864-807c21b14f39",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcExternalPartnerActionErrorCode",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcExternalPartnerActionErrorCode** enumeration type.",
+          "Target": "cloudPcExternalPartnerActionErrorCode"
+        },
+        {
+          "Id": "831c4b73-6002-4d78-b864-807c21b14f39",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcExternalPartnerActionStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcExternalPartnerActionStatus** enumeration type.",
+          "Target": "cloudPcExternalPartnerActionStatus"
+        },
+        {
+          "Id": "831c4b73-6002-4d78-b864-807c21b14f39",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcExternalPartnerActionType",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcExternalPartnerActionType** enumeration type.",
+          "Target": "cloudPcExternalPartnerActionType"
+        },
+        {
+          "Id": "831c4b73-6002-4d78-b864-807c21b14f39",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcExternalPartnerAuthenticatedMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcExternalPartnerAuthenticatedMethod** enumeration type.",
+          "Target": "cloudPcExternalPartnerAuthenticatedMethod"
+        },
+        {
+          "Id": "831c4b73-6002-4d78-b864-807c21b14f39",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcExternalPartnerActionReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcExternalPartnerActionReport](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcExternalPartnerActionReport?view=graph-rest-beta) resource.",
+          "Target": "cloudPcExternalPartnerActionReport"
+        },
+        {
+          "Id": "831c4b73-6002-4d78-b864-807c21b14f39",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcExternalPartnerActionResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcExternalPartnerActionResult](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcExternalPartnerActionResult?view=graph-rest-beta) resource.",
+          "Target": "cloudPcExternalPartnerActionResult"
+        },
+        {
+          "Id": "831c4b73-6002-4d78-b864-807c21b14f39",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcExternalPartnerAgentSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcExternalPartnerAgentSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcExternalPartnerAgentSetting?view=graph-rest-beta) resource.",
+          "Target": "cloudPcExternalPartnerAgentSetting"
+        },
+        {
+          "Id": "831c4b73-6002-4d78-b864-807c21b14f39",
+          "ApiChange": "Property",
+          "ChangedApiName": "agentSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the **agentSetting** property to the [cloudPcExternalPartner](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcExternalPartner?view=graph-rest-beta) resource.",
+          "Target": "cloudPcExternalPartner"
+        },
+        {
+          "Id": "831c4b73-6002-4d78-b864-807c21b14f39",
+          "ApiChange": "Method",
+          "ChangedApiName": "configureAgent",
+          "ChangeType": "Addition",
+          "Description": "Added the [configureAgent](https://learn.microsoft.com/en-us/graph/api/cloudPcExternalPartner-configureAgent?view=graph-rest-beta) method to the [cloudPcExternalPartner](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcExternalPartner?view=graph-rest-beta) resource.",
+          "Target": "cloudPcExternalPartner"
+        },
+        {
+          "Id": "831c4b73-6002-4d78-b864-807c21b14f39",
+          "ApiChange": "Method",
+          "ChangedApiName": "deployAgent",
+          "ChangeType": "Addition",
+          "Description": "Added the [deployAgent](https://learn.microsoft.com/en-us/graph/api/cloudPcExternalPartner-deployAgent?view=graph-rest-beta) method to the [cloudPcExternalPartner](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcExternalPartner?view=graph-rest-beta) resource.",
+          "Target": "cloudPcExternalPartner"
+        },
+        {
+          "Id": "831c4b73-6002-4d78-b864-807c21b14f39",
+          "ApiChange": "Method",
+          "ChangedApiName": "retrieveActionReports",
+          "ChangeType": "Addition",
+          "Description": "Added the [retrieveActionReports](https://learn.microsoft.com/en-us/graph/api/cloudPcExternalPartner-retrieveActionReports?view=graph-rest-beta) method to the [cloudPcExternalPartner](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcExternalPartner?view=graph-rest-beta) resource.",
+          "Target": "cloudPcExternalPartner"
+        },
+        {
+          "Id": "831c4b73-6002-4d78-b864-807c21b14f39",
+          "ApiChange": "Method",
+          "ChangedApiName": "retrieveDeployAgentActionResults",
+          "ChangeType": "Addition",
+          "Description": "Added the [retrieveDeployAgentActionResults](https://learn.microsoft.com/en-us/graph/api/cloudPcExternalPartner-retrieveDeployAgentActionResults?view=graph-rest-beta) method to the [cloudPcExternalPartner](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcExternalPartner?view=graph-rest-beta) resource.",
+          "Target": "cloudPcExternalPartner"
+        }
+      ],
+      "Id": "831c4b73-6002-4d78-b864-807c21b14f39",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-03-04T11:12:18.3884622Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "71dd0205-a512-4e0b-98df-3ddae9454863",
           "ApiChange": "Member",
           "ChangedApiName": "refreshPolicyConfiguration",

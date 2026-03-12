@@ -20,7 +20,7 @@ Delete an open extension ([openTypeExtension](../resources/opentypeextension.md)
 
 For the list of resources that support open extensions, see the table in the [Permissions](#permissions) section.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

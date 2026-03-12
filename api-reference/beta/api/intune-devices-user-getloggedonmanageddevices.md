@@ -1,6 +1,6 @@
 ---
 title: "getLoggedOnManagedDevices function"
-description: "Intune Devices User Getloggedonmanageddevices Source_Api ."
+description: "Intune Devices User Getloggedonmanageddevices Api ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
