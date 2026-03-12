@@ -1,8 +1,8 @@
 ---
 title: "Get profileSource"
-description: "Read the properties and relationships of a profileSource object."
+description: "Read the properties and relationships of profileSource object."
 author: "rwaithera"
-ms.date: 04/30/2025
+ms.date: 02/10/2026
 ms.localizationpriority: medium
 ms.subservice: "people"
 doc_type: apiPageType
@@ -11,8 +11,6 @@ doc_type: apiPageType
 # Get profileSource
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Read the properties and relationships of a [profileSource](../resources/profilesource.md) object.
 
@@ -35,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
-```http
+``` http
 GET /admin/people/profileSources(sourceId='{sourceId}')
 ```
 
@@ -75,9 +73,10 @@ The following example shows a request.
   "name": "get_profilesource"
 }
 -->
-```http
-GET https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='bamboohr1')
+``` http
+GET https://graph.microsoft.com/v1.0/admin/people/profileSources(sourceId='bamboohr1')
 ```
+
 
 ### Response
 
@@ -89,7 +88,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.profileSource"
 }
 -->
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

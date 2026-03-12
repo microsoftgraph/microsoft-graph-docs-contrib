@@ -1,5 +1,39 @@
 {
-  "changelog": [ 
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "7c3c1b29-3564-4b0e-8c68-2030ff97bb37",
+          "ApiChange": "Resource",
+          "ChangedApiName": "profileSourceLocalization",
+          "ChangeType": "Addition",
+          "Description": "Added the [profileSourceLocalization](https://learn.microsoft.com/en-us/graph/api/resources/profileSourceLocalization?view=graph-rest-1.0) resource.",
+          "Target": "profileSourceLocalization"
+        },
+        {
+          "Id": "7c3c1b29-3564-4b0e-8c68-2030ff97bb37",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "profileSources",
+          "ChangeType": "Addition",
+          "Description": "Added the **profileSources** relationship to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleAdminSettings?view=graph-rest-1.0) resource.",
+          "Target": "peopleAdminSettings"
+        },
+        {
+          "Id": "7c3c1b29-3564-4b0e-8c68-2030ff97bb37",
+          "ApiChange": "Resource",
+          "ChangedApiName": "profileSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [profileSource](https://learn.microsoft.com/en-us/graph/api/resources/profileSource?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "profileSource"
+        }
+      ],
+      "Id": "7c3c1b29-3564-4b0e-8c68-2030ff97bb37",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-03-12T13:42:56.3585382Z",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "People admin settings"
+    }, 
     {
       "ChangeList": [
         {

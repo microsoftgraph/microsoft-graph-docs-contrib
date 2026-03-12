@@ -2,24 +2,22 @@
 title: "profileSource resource type"
 description: "Represents the configuration data of a profile source created by an organization administrator."
 author: "rwaithera"
-ms.date: 04/30/2025
+ms.date: 02/10/2026
 ms.localizationpriority: medium
 ms.subservice: "people"
 doc_type: resourcePageType
-toc.keywords: [ source attribution, connector source ]
 ---
 
 # profileSource resource type
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents the configuration data of a profile source created by an organization administrator. This configuration represents the source of profile data in a way that is understandable to end users.
 
 For more information, see [Manage profile source settings for an organization using the Microsoft Graph API](/graph/profilesource-configure-settings).
 
 Inherits from [entity](../resources/entity.md).
+
 
 ## Methods
 |Method|Return type|Description|
@@ -31,7 +29,6 @@ Inherits from [entity](../resources/entity.md).
 |[Delete](../api/profilesource-delete.md)|None|Delete a [profileSource](../resources/profilesource.md) object.|
 
 ## Properties
-
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Name of the profile source intended to inform users about the profile source name.|
