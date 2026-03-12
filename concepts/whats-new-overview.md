@@ -20,6 +20,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## March 2026: New and generally available
 
+### People and workplace intelligence | People admin settings
+
+Use the new [profileSource](/graph/api/resources/profilesource) APIs to enable administrators to customize the display information of a profile source seen by users across an organization in Microsoft 365 experiences.
+
 ### Applications
 
 Using the **signInAudience** property to limit where an [application](/graph/api/resources/application) can be used **isn't** a replacement for proper tenant validation and authorization enforcement in your application code. If your application expects access only in specific tenants, you *must* enforce that validation in your application code. To learn more, see [Secure applications and APIs by validating claims](/entra/identity-platform/claims-validation).
@@ -35,6 +39,10 @@ Use the following new container columns APIs added to further support structured
 
 - Added the `allDirectoryAgentIdentities` member to the [allowedTargetScope](/graph/api/resources/enums#allowedtargetscope-values) enumeration to allow access packages to target all directory agent identities.
 - Added the [targetAgentIdentitySponsorsOrOwners](/graph/api/resources/targetagentidentitysponsorsorowners) resource type that defines the sponsors or owners of a specific agent identity.
+
+### Personal contacts
+
+Use the **primaryEmailAddress**, **secondaryEmailAddress**, and **tertiaryEmailAddress** properties on [contact](/graph/api/resources/contact) to get or set the primary, secondary, or tertiary email address of a contact.
 
 ## March 2026: New in preview only
 
@@ -342,7 +350,7 @@ The `TeamsAppInstallation.ManageSelectedForTeam.All` is the least privileged app
 
 ### Tenant administration | Configuration management
 
-The new unified tenant configuration management APIs in Microsoft Graph allow administrators to control and manage configuration settings across a single workload or multiple workloads within an organization. To learn more about supported use cases, see [Use the unified tenant configuration management APIs in Microsoft Graph (preview)](/graph/api/resources/unified-tenant-configuration-management-api-overview?view=graph-rest-beta&preserve-view=true).
+The new Tenant Configuration Management APIs in Microsoft Graph allow administrators to control and manage configuration settings across a single workload or multiple workloads within an organization. To learn more about supported use cases, see [Use the Tenant Configuration Management APIs in Microsoft Graph (preview)](/graph/api/resources/unified-tenant-configuration-management-api-overview?view=graph-rest-beta&preserve-view=true).
 
 ## December 2025: New and generally available
 

@@ -223,6 +223,15 @@ If documentation-plan.md file is provided, check that:
 - [ ] Namespace information matches the summary
 - [ ] No extra files or methods documented beyond the summary
 
+### Validate beta-only content removal (v1.0 GA promotions)
+
+If the Documentation Plan contains a "Beta-only content to remove" table (Section 2b), verify:
+- [ ] All properties listed as beta-only are **absent** from the v1.0 resource files
+- [ ] All beta-only inherited properties are removed from Properties tables, JSON representation, and example request/response payloads
+- [ ] No beta-only relationships remain in Relationships tables
+
+**Safety net (with or without Documentation Plan):** For v1.0 resource files that inherit from a base type, cross-reference inherited properties against the existing v1.0 base type resource file in `api-reference/v1.0/resources/`. Flag any inherited property that appears in the derived type's v1.0 doc but **does not** appear in the v1.0 base type's Properties table — these are likely beta-only properties that were incorrectly carried over during copy from beta.
+
 ### Validate Against API.md Specification
 
 If provided, check that:

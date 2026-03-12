@@ -2508,6 +2508,9 @@
         "profilePropertySetting",
         "userAnalytics"
       ],
+      "complexTypes": [
+        "profileSourceLocalization"
+      ],
       "childNodes": [
         {
           "name": "Person",
