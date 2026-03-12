@@ -64,7 +64,7 @@ When specifying the body in MIME format, provide the MIME content with the appli
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [message](../resources/message.md) object in the response body.
+If successful, this method returns `201 Created` response code and a [message](../resources/message.md) object in the response body.
 
 If the request body includes malformed MIME content, this method returns `400 Bad request` and the following error message: "Invalid base64 string for MIME content".
 
