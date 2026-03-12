@@ -1018,7 +1018,10 @@
             "employeeExperienceUser",
             "engagementAsyncOperation",
             "engagementRole",
-            "engagementRoleMember"
+            "engagementRoleMember",
+            "storyline",
+            "storylineFollower",
+            "storylineFollowing"
           ],
           "complexTypes": [
             "engagementConversationMessageAttachment",

@@ -282,7 +282,7 @@ The [agentUser](../resources/agentuser.md) resource inherits from this resource.
 | streetAddress | String | The street address of the user's place of business. Maximum length is 1024 characters. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 | surname | String | The user's surname (family name or last name). Maximum length is 64 characters. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values). |
 | usageLocation | String | A two-letter country code (ISO standard 3166). Required for users that are assigned licenses due to legal requirements to check for availability of services in countries.  Examples include: `US`, `JP`, and `GB`. Not nullable. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
-| userPrincipalName | String | The user principal name (UPN) of the user. The UPN is an Internet-style sign-in name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where the domain must be present in the tenant's verified domain collection. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md).<br>NOTE: This property can't contain accent characters. Only the following characters are allowed `A - Z`, `a - z`, `0 - 9`, `' . - _ ! # ^ ~`. For the complete list of allowed characters, see [username policies](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts). <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, `endsWith`) and `$orderby`.
+| userPrincipalName | String | The user principal name (UPN) of the user. The UPN is an Internet-style sign-in name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where the domain must be present in the tenant's verified domain collection. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md).<br>NOTE: This property can't contain accent characters. Only the following characters are allowed `A - Z`, `a - z`, `0 - 9`, `' . - _ ! # ^ ~`. For the complete list of allowed characters, see [username policies](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts). <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, `endsWith`) and `$orderby`.|
 | userType | String | A String value that can be used to classify user types in your directory. The possible values are `Member` and `Guest`. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `in`, and `eq` on `null` values). **NOTE:** For more information about the permissions for member and guest users, see [What are the default user permissions in Microsoft Entra ID?](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#member-and-guest-users) |
 
 > [!TIP]
@@ -369,6 +369,7 @@ For example, Cameron is an administrator of a directory for an elementary school
 |directReports|[directoryObject](directoryobject.md) collection|The users and contacts that report to the user. (The users and contacts with their manager property set to this user.) Read-only. Nullable. Supports `$expand`. |
 |drive|[drive](drive.md)|The user's OneDrive. Read-only.|
 |drives|[drive](drive.md) collection| A collection of drives available for this user. Read-only. |
+|employeeExperience|[employeeExperienceUser](employeeexperienceuser.md)| The employee experience resources for the user. Read-only. Nullable.|
 |events|[event](event.md) collection|The user's events. The default is to show events under the Default Calendar. Read-only. Nullable.|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the user. Supports `$expand`. Nullable.|
 |inferenceClassification|[inferenceClassification](inferenceclassification.md)| Relevance classification of the user's messages based on explicit designations that override inferred relevance or importance. |
@@ -423,6 +424,7 @@ The following JSON representation shows the resource type.
     "directReports",
     "drive",
     "drives",
+    "employeeExperience",
     "events",
     "extensions",
     "joinedGroups",
@@ -548,6 +550,7 @@ The following JSON representation shows the resource type.
   "directReports": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "drive": {"@odata.type": "microsoft.graph.drive"},
   "drives": [{"@odata.type": "microsoft.graph.drive"}],
+  "employeeExperience": {"@odata.type": "microsoft.graph.employeeExperienceUser"},
   "insights": {"@odata.type": "microsoft.graph.itemInsights"},
   "settings": {"@odata.type": "microsoft.graph.userSettings"},
   "events": [{"@odata.type": "microsoft.graph.event"}],
