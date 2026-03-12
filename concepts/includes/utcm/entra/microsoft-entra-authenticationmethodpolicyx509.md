@@ -77,7 +77,7 @@ Microsoft Entra Authentication Method Policy X509
 
 #### Microsoft Entra ID roles
 
-The following [roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) can be granted to the UTCM (Unified Tenant Configuration Management) service principal:
+The following [roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) can be granted to the TCM (Tenant Configuration Management) service principal:
 
 | Operation | Least privileged role |
 |-----------|-----------------------|
