@@ -46,6 +46,10 @@ Using the **signInAudience** and **signInAudienceRestrictions** properties to li
 
 Added the `includeNewerItems` member as supported value for the **tags** property on [restorePoint](/graph/api/resources/restorepoint?view=graph-rest-beta&preserve-view=true) to get a restore point within a specified time period that includes any newer items created during that period.
 
+### Files
+
+Added support for the `DELETE /groups/{group-id}/drive/items/{item-id}/retentionLabel`, `DELETE /me/drive/items/{item-id}/retentionLabel`, and `DELETE /users/{user-id}/drive/items/{item-id}/retentionLabel` endpoints to the [driveItem: removeRetentionLabel](/graph/api/driveitem-removeretentionlabel?view=graph-rest-beta&preserve-view=true) API.
+
 ### Files | File storage container
 
 [Archive](/graph/api/filestoragecontainer-archive?view=graph-rest-beta&preserve-view=true) or [unarchive](/graph/api/filestoragecontainer-unarchive?view=graph-rest-beta&preserve-view=true) a SharePoint Embedded storage container.
