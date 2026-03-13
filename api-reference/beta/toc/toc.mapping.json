@@ -1019,7 +1019,9 @@
             "engagementAsyncOperation",
             "engagementRole",
             "engagementRoleMember",
-            "storyline"
+            "storyline",
+            "storylineFollower",
+            "storylineFollowing"
           ],
           "complexTypes": [
             "engagementConversationMessageAttachment",
