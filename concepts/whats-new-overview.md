@@ -160,6 +160,10 @@ Updated the admin consent requirement for the following delegated permissions re
 
 Use the **requiredResourceAccess** property on [agentIdentityBlueprint](/graph/api/resources/agentidentityblueprint?view=graph-rest-beta&preserve-view=true) to specify the Microsoft Graph permissions (delegated scopes and app roles) required by the agent.
 
+### Applications | Application template
+
+Use the **isEntraIntegrated** property on [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta&preserve-view=true) to indicate whether the application is integrated with Microsfot Entra ID (for example, through single sign-on or user provisioning).
+
 ### Backup storage
 
 Users can now browse a `fastRestore` endpoint and selectively restore files and folders by creating a browse session.
