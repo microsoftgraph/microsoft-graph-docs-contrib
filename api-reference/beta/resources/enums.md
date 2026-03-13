@@ -5943,3 +5943,13 @@ Possible values for user account types (group membership), per Windows definitio
 |none|
 |ai|
 |unknownFutureValue|
+
+### trafficRoutingMethod values 
+
+|Member|
+|:---|
+|none|
+|random|
+|sessionPersistence|
+|performance|
+|unknownFutureValue|

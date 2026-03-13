@@ -20,13 +20,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## March 2026: New and generally available
 
-### People and workplace intelligence | People admin settings
-
-Use the new [profileSource](/graph/api/resources/profilesource) APIs to enable administrators to customize the display information of a profile source seen by users across an organization in Microsoft 365 experiences.
-
 ### Applications
 
-Using the **signInAudience** property to limit where an [application](/graph/api/resources/application) can be used **isn't** a replacement for proper tenant validation and authorization enforcement in your application code. If your application expects access only in specific tenants, you *must* enforce that validation in your application code. To learn more, see [Secure applications and APIs by validating claims](/entra/identity-platform/claims-validation).
+- Using the **signInAudience** property to limit where an [application](/graph/api/resources/application) can be used **isn't** a replacement for proper tenant validation and authorization enforcement in your application code. If your application expects access only in specific tenants, you *must* enforce that validation in your application code. To learn more, see [Secure applications and APIs by validating claims](/entra/identity-platform/claims-validation).
+- Added the **trafficRoutingMethod** property to the [onPremisesPublishing](/graph/api/resources/onpremisespublishing?view=graph-rest-beta&preserve-view=true) resource to control how traffic is distributed across multiple connectors in a connector group in Microsoft Entra app proxy.
 
 ### Files
 
@@ -39,6 +36,10 @@ Use the following new container columns APIs added to further support structured
 
 - Added the `allDirectoryAgentIdentities` member to the [allowedTargetScope](/graph/api/resources/enums#allowedtargetscope-values) enumeration to allow access packages to target all directory agent identities.
 - Added the [targetAgentIdentitySponsorsOrOwners](/graph/api/resources/targetagentidentitysponsorsorowners) resource type that defines the sponsors or owners of a specific agent identity.
+
+### People and workplace intelligence | People admin settings
+
+Use the new [profileSource](/graph/api/resources/profilesource) APIs to enable administrators to customize the display information of a profile source seen by users across an organization in Microsoft 365 experiences.
 
 ### Personal contacts
 
@@ -81,6 +82,7 @@ Added the [targetAgentIdentitySponsorsOrOwners](/graph/api/resources/targetagent
 ### External data connections
 
 Added 19 people domain semantic labels to the [label](/graph/api/resources/externalconnectors-enums#label-values) enumeration for Microsoft 365 Copilot connectors. These labels enable developers to map people profile data from external systems to standardized Microsoft Graph properties. Use these labels in [schema](/graph/api/resources/externalconnectors-schema) definitions to improve discoverability and integration of people data in Microsoft 365 Copilot experiences. The new labels include: `personEmails`, `personAddresses`, `personAnniversaries`, `personName`, `personNote`, `personPhones`, `personCurrentPosition`, `personWebAccounts`, `personWebSite`, `personSkills`, `personProjects`, `personAccount`, `personAwards`, `personCertifications`, `personAssistants`, `personColleagues`, `personManager`, `personAlternateContacts`, and `personEmergencyContacts`.
+
 ### Files
 
 Updated the admin consent requirement for the following delegated permissions related to SharePoint Embedded file storage container management:
