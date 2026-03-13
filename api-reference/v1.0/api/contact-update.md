@@ -5,7 +5,7 @@ author: "kevinbellinger"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
-ms.date: 06/25/2024
+ms.date: 02/27/2026
 ---
 
 # Update contact
@@ -58,7 +58,7 @@ When you update structured properties such as **homeAddress**, you must pass the
 |:---------------|:--------|:----------|
 |assistantName|String|The name of the contact's assistant.|
 |birthday|DateTimeOffset|The contact's birthday.|
-|businessAddress|[PhysicalAddress](../resources/physicaladdress.md)|The contact's business address.|
+|businessAddress|[physicalAddress](../resources/physicaladdress.md)|The contact's business address.|
 |businessHomePage|String|The business home page of the contact.|
 |businessPhones|String|The contact's business phone numbers.|
 |categories|String|The categories associated with the contact.|
@@ -66,11 +66,11 @@ When you update structured properties such as **homeAddress**, you must pass the
 |companyName|String|The name of the contact's company.|
 |department|String|The contact's department.|
 |displayName|String|The contact's display name. Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified. To preserve a pre-existing value, always include it as displayName in an update operation.|
-|emailAddresses|[EmailAddress](../resources/emailaddress.md) collection|The contact's email addresses.|
+|emailAddresses|[emailAddress](../resources/emailaddress.md) collection|The contact's email addresses.|
 |fileAs|String|The name the contact is filed under.|
 |generation|String|The contact's generation.|
 |givenName|String|The contact's given name.|
-|homeAddress|[PhysicalAddress](../resources/physicaladdress.md)|The contact's home address.|
+|homeAddress|[physicalAddress](../resources/physicaladdress.md)|The contact's home address.|
 |homePhones|String collection|The contact's home phone numbers.|
 |imAddresses|String|The contact's instant messaging (IM) addresses.|
 |initials|String|The contact's initials.|
@@ -80,16 +80,19 @@ When you update structured properties such as **homeAddress**, you must pass the
 |mobilePhone|String|The contact's mobile phone number.|
 |nickName|String|The contact's nickname.|
 |officeLocation|String|The location of the contact's office.|
-|otherAddress|[PhysicalAddress](../resources/physicaladdress.md)|Other addresses for the contact.|
+|otherAddress|[physicalAddress](../resources/physicaladdress.md)|Other addresses for the contact.|
 |parentFolderId|String|The ID of the contact's parent folder.|
 |personalNotes|String|The user's notes about the contact.|
+|primaryEmailAddress|[emailAddress](../resources/emailaddress.md)|The contact's primary email address. Optional.|
 |profession|String|The contact's profession.|
+|secondaryEmailAddress|[emailAddress](../resources/emailaddress.md)|The contact's secondary email address. Optional.|
 |spouseName|String|The name of the contact's spouse/partner.|
 |surname|String|The contact's surname.|
+|tertiaryEmailAddress|[emailAddress](../resources/emailaddress.md)|The contact's tertiary email address. Optional.|
 |title|String|The contact's title.|
-|yomiCompanyName|String|The phonetic Japanese company name of the contact. This property is optional.|
-|yomiGivenName|String|The phonetic Japanese given name (first name) of the contact. This property is optional.|
-|yomiSurname|String|The phonetic Japanese surname (last name)  of the contact. This property is optional.|
+|yomiCompanyName|String|The phonetic Japanese company name of the contact. Optional.|
+|yomiGivenName|String|The phonetic Japanese given name (first name) of the contact. Optional.|
+|yomiSurname|String|The phonetic Japanese surname (last name)  of the contact. Optional.|
 
 ## Response
 
@@ -188,6 +191,12 @@ Content-type: application/json
       "address": "garth@contoso.com"
     }
   ],
+  "primaryEmailAddress": {
+    "name": "Garth",
+    "address": "garth@contoso.com"
+  },
+  "secondaryEmailAddress": null,
+  "tertiaryEmailAddress": null,
   "imAddresses": [
     "sip:garthf@contoso.com"
   ],

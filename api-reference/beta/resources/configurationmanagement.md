@@ -1,6 +1,6 @@
 ---
 title: "configurationManagement resource type"
-description: "Represents an entity that acts as a container for unified tenant configuration management functionality."
+description: "Represents an entity that acts as a container for Tenant Configuration Management functionality."
 author: "swatyario"
 ms.localizationpriority: medium
 ms.subservice: "tenant-administration"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an entity that acts as a container for unified tenant configuration management functionality.
+Represents an entity that acts as a container for Tenant Configuration Management functionality.
 
 ## Properties
 None.

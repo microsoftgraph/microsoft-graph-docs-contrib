@@ -47,6 +47,7 @@ An access package catalog might also have linked resources that are used in thos
 |isExternallyVisible|Boolean|Whether the access packages in this catalog can be requested by users outside of the tenant.|
 |modifiedBy|String|The UPN of the user who last modified this resource. Read-only.|
 |modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
+|privilegeLevel|privilegeLevel|The privilege level of the access package catalog. The possible values are: `standard`, `privileged`, `unknownFutureValue`.|
 
 
 ## Relationships
@@ -75,16 +76,19 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-    "id":"360fa7de-90be-48dc-a2ce-fc40094a93dd",
-    "description":"Sample access package catalog",
-    "displayName":"Access package catalog for testing",
-    "isExternallyVisible":false,
-    "catalogType":"UserManaged",
-    "catalogStatus":"Published",
-    "createdDateTime":"2019-01-27T18:19:50.74Z",
-    "modifiedDateTime":"2019-01-27T18:19:50.74Z",
-    "createdBy":"TestGA@example.com",
-    "modifiedBy":"TestGA@example.com"
+  "@odata.type": "#microsoft.graph.accessPackageCatalog",
+  "id": "String (identifier)",
+  "displayName": "String",
+  "description": "String",
+  "catalogType": "String",
+  "catalogStatus": "String",
+  "isExternallyVisible": "Boolean",
+  "createdBy": "String",
+  "createdDateTime": "String (timestamp)",
+  "modifiedBy": "String",
+  "modifiedDateTime": "String (timestamp)",
+  "privilegeLevel": "String",
+  "uniqueName": "String"
 }
 ```
 
@@ -97,3 +101,4 @@ The following JSON representation shows the resource type.
   "section": "documentation",
   "tocPath": ""
 }-->
+

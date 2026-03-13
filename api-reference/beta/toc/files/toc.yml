@@ -194,14 +194,14 @@ items:
     href: ../../api/filestoragecontainer-delete-customproperty.md
   - name: List columns
     href: ../../api/filestoragecontainer-list-columns.md
-  - name: Add column
+  - name: Create column
     href: ../../api/filestoragecontainer-post-columns.md
-  - name: Update column
-    href: ../../api/filestoragecontainer-update-column.md
-  - name: Delete file storage container column
-    href: ../../api/filestoragecontainer-delete-column.md
   - name: Get column
     href: ../../api/filestoragecontainer-get-column.md
+  - name: Update column
+    href: ../../api/filestoragecontainer-update-column.md
+  - name: Delete column
+    href: ../../api/filestoragecontainer-delete-column.md
   - name: Update recycle bin settings
     href: ../../api/filestoragecontainer-update-recyclebinsettings.md
   - name: Restore recycle bin items
@@ -218,6 +218,10 @@ items:
     href: ../../api/filestoragecontainer-post-migrationjobs.md
   - name: Provision migration containers
     href: ../../api/filestoragecontainer-provisionmigrationcontainers.md
+  - name: Archive
+    href: ../../api/filestoragecontainer-archive.md
+  - name: Unarchive
+    href: ../../api/filestoragecontainer-unarchive.md
 - name: File storage container type
   items:
   - name: File storage container type

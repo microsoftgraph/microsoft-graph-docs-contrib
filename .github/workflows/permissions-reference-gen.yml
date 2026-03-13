@@ -29,7 +29,7 @@ jobs:
         $ClientId = "${{ secrets.GRAPHPERMISSIONSREFERENCE_CLIENT_ID }}"
         $TenantId = "${{ secrets.GRAPHPERMISSIONSREFERENCE_TENANT_ID }}"
         $ClientSecret = "${{ secrets.GRAPHPERMISSIONSREFERENCE_CLIENT_SECRET }}"
-        ./docs/update-permissions-reference.ps1 -ClientId $ClientId -TenantId $TenantId -ClientSecret $ClientSecret
+        ./docs/scripts/update-permissions-reference.ps1 -ClientId $ClientId -TenantId $TenantId -ClientSecret $ClientSecret
         
     - name: Get token
       id: get_token
@@ -58,7 +58,7 @@ jobs:
     - name: Run PowerShell script to correct errors in permissions descriptions
       shell: pwsh
       run: | 
-        ./docs/correct-permissions-reference-errors.ps1
+        ./docs/scripts/correct-permissions-reference-errors.ps1
     
     - name: Commit errors correction and open a pull request
       working-directory: ./docs

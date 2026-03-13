@@ -22,7 +22,8 @@ Represents the rights associated with a specific piece of content.
 |:---|:---|:---|
 |cid|String|The content identifier.|
 |format|String|The content format.|
-|id|String|The identifier|
+|id|String|The identifier.|
+|rights|[usageRights](../resources/usagerights.md)|A flags enum that enumerates a user's usage rights when content is protected with a sensitivity label.|
 
 ## Relationships
 
@@ -46,6 +47,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.labelContentRight",
   "id": "String (identifier)",
   "cid": "String",
-  "format": "String"
+  "format": "String",
+  "rights": "String"
 }
 ```

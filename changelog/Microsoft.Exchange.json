@@ -1709,6 +1709,40 @@
       "CreatedDateTime": "2025-01-20T00:00:00.000Z",
       "WorkloadArea": "Groups",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7ff460b8-77e3-49ee-9390-6b0e6b5d62eb",
+          "ApiChange": "Property",
+          "ChangedApiName": "primaryEmailAddress",
+          "ChangeType": "Addition",
+          "Description": "Added the **primaryEmailAddress** property to the [contact](https://learn.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-1.0) resource.",
+          "Target": "contact"
+        },
+        {
+          "Id": "7ff460b8-77e3-49ee-9390-6b0e6b5d62eb",
+          "ApiChange": "Property",
+          "ChangedApiName": "secondaryEmailAddress",
+          "ChangeType": "Addition",
+          "Description": "Added the **secondaryEmailAddress** property to the [contact](https://learn.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-1.0) resource.",
+          "Target": "contact"
+        },
+        {
+          "Id": "7ff460b8-77e3-49ee-9390-6b0e6b5d62eb",
+          "ApiChange": "Property",
+          "ChangedApiName": "tertiaryEmailAddress",
+          "ChangeType": "Addition",
+          "Description": "Added the **tertiaryEmailAddress** property to the [contact](https://learn.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-1.0) resource.",
+          "Target": "contact"
+        }
+      ],
+      "Id": "7ff460b8-77e3-49ee-9390-6b0e6b5d62eb",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-03-12T15:25:36.8590438Z",
+      "WorkloadArea": "Personal contacts",
+      "SubArea": ""
     }
   ]
 }

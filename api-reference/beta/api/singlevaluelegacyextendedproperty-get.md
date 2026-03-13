@@ -40,6 +40,7 @@ The following user resources are supported:
 - [Outlook task](../resources/outlooktask.md)
 - [Outlook task folder](../resources/outlooktaskfolder.md)
 - [todoTask](../resources/todotask.md)
+- [todoTaskList](../resources/todotasklist.md)
 
 As well as the following group resources:
 
@@ -68,6 +69,7 @@ Depending on the resource you're getting the extended property from and the perm
 | [Outlook task](../resources/outlooktask.md) | Tasks.Read | Tasks.Read | Not supported. |
 | [Outlook task folder](../resources/outlooktaskfolder.md) | Tasks.Read | Tasks.Read | Not supported. |
 | [todoTask](../resources/todotask.md) | Tasks.Read | Not supported. | Tasks.Read.All |
+| [todoTaskList](../resources/todotasklist.md) | Tasks.Read | Not supported. | Tasks.Read.All |
 
 ## HTTP request
 
@@ -158,6 +160,15 @@ Get a **todoTask** instance:
 ```http
 GET /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}?$expand=singleValueExtendedProperties($filter=id eq '{propertyId}')
 GET /me/todo/lists/{todoTaskListId}/tasks?$expand=singleValueExtendedProperties($filter=id eq '{propertyId}')
+```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+Get a **todoTaskList** instance:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/todo/lists/{todoTaskListId}?$expand=singleValueExtendedProperties($filter=id eq '{propertyId}')
+GET /me/todo/lists?$expand=singleValueExtendedProperties($filter=id eq '{propertyId}')
 ```
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]

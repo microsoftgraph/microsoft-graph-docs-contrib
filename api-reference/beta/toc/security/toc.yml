@@ -222,12 +222,6 @@ items:
       href: ../../resources/security-auditlogrecord.md
     - name: List
       href: ../../api/security-auditlogquery-list-records.md
-  - name: Complex types
-    items:
-    - name: Audit data
-      href: ../../resources/security-auditdata.md
-    - name: Default audit data
-      href: ../../resources/security-defaultauditdata.md
 - name: Cloud zones or scopes (preview)
   items:
   - name: Zone
@@ -742,16 +736,6 @@ items:
       href: ../../api/security-ediscoverycasemember-post.md
     - name: Remove
       href: ../../api/security-ediscoverycasemember-delete.md
-  - name: Complex types
-    items:
-    - name: eDiscovery add to review set operation
-      href: ../../resources/security-ediscoveryaddtoreviewsetoperation.md
-    - name: eDiscovery estimate operation
-      href: ../../resources/security-ediscoveryestimateoperation.md
-    - name: eDiscovery purge data operation
-      href: ../../resources/security-ediscoverypurgedataoperation.md
-    - name: Report file metadata
-      href: ../../resources/security-ediscoveryreportfilemetadata.md
 - name: Email and collaboration protection
   items:
   - name: Analyzed email
@@ -1350,42 +1334,6 @@ items:
       href: ../../resources/security-whoiscontact.md
     - name: WHOIS nameserver
       href: ../../resources/security-whoisnameserver.md
-- name: Threat intelligence indicator
-  items:
-  - name: Threat intelligence indicator
-    href: ../../resources/tiindicator.md
-  - name: Get
-    href: ../../api/tiindicator-get.md
-  - name: Create
-    href: ../../api/tiindicators-post.md
-  - name: List
-    href: ../../api/tiindicators-list.md
-  - name: Update
-    href: ../../api/tiindicator-update.md
-  - name: Delete
-    href: ../../api/tiindicator-delete.md
-  - name: Delete multiple
-    href: ../../api/tiindicator-deletetiindicators.md
-  - name: Delete multiple by external ID
-    href: ../../api/tiindicator-deletetiindicatorsbyexternalid.md
-  - name: Submit multiple
-    href: ../../api/tiindicator-submittiindicators.md
-  - name: Update multiple
-    href: ../../api/tiindicator-updatetiindicators.md
-  - name: Methods supported by each target product
-    items:
-    - name: Create tiIndicator
-      href: ../../api/tiindicators-post.md
-    - name: Submit tiIndicators
-      href: ../../api/tiindicator-submittiindicators.md
-    - name: Update tiIndicator
-      href: ../../api/tiindicator-update.md
-    - name: Update tiIndicators
-      href: ../../api/tiindicator-updatetiindicators.md
-    - name: Delete tiIndicator
-      href: ../../api/tiindicator-delete.md
-    - name: Delete tiIndicators
-      href: ../../api/tiindicator-deletetiindicators.md
 - name: Threat submission (preview)
   items:
   - name: Threat submission
@@ -1436,3 +1384,39 @@ items:
       href: ../../api/security-urlthreatsubmission-post-urlthreats.md
     - name: Get
       href: ../../api/security-urlthreatsubmission-get.md
+- name: tiIndicator resource type (deprecated)
+  items:
+  - name: tiIndicator resource type (deprecated)
+    href: ../../resources/tiindicator.md
+  - name: Get
+    href: ../../api/tiindicator-get.md
+  - name: Create
+    href: ../../api/tiindicators-post.md
+  - name: List
+    href: ../../api/tiindicators-list.md
+  - name: Update
+    href: ../../api/tiindicator-update.md
+  - name: Delete
+    href: ../../api/tiindicator-delete.md
+  - name: Delete multiple
+    href: ../../api/tiindicator-deletetiindicators.md
+  - name: Delete multiple by external ID
+    href: ../../api/tiindicator-deletetiindicatorsbyexternalid.md
+  - name: Submit multiple
+    href: ../../api/tiindicator-submittiindicators.md
+  - name: Update multiple
+    href: ../../api/tiindicator-updatetiindicators.md
+  - name: Methods supported by each target product
+    items:
+    - name: Create tiIndicator
+      href: ../../api/tiindicators-post.md
+    - name: Submit tiIndicators
+      href: ../../api/tiindicator-submittiindicators.md
+    - name: Update tiIndicator
+      href: ../../api/tiindicator-update.md
+    - name: Update tiIndicators
+      href: ../../api/tiindicator-updatetiindicators.md
+    - name: Delete tiIndicator
+      href: ../../api/tiindicator-delete.md
+    - name: Delete tiIndicators
+      href: ../../api/tiindicator-deletetiindicators.md
