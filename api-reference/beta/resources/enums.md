@@ -2707,6 +2707,14 @@ Namespace: microsoft.graph
 | declined |
 | notResponded |
 
+### privilegeLevel values
+
+|Member|
+|:---|
+|standard|
+|privileged|
+|unknownFutureValue|
+
 ### activityDomain values
 
 | Member |

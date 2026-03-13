@@ -107,6 +107,10 @@ Updated the admin consent requirement for the following delegated permissions re
 
 - Added [cloudPcExternalPartnerActionReport](/graph/api/resources/cloudpcexternalpartneractionreport?view=graph-rest-beta&preserve-view=true) as a new complex type for [cloudpcexternalpartner](/graph/api/resources/cloudpcexternalpartner?view=graph-rest-beta&preserve-view=true).
 
+### Identity and access | Governance
+
+- Added `privilegeLevel` as a property on [accessPackageCatalog](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta&preserve-view=true). This value represents the privilege level of the access package catalogs.
+
 ### Identity and access | Identity and sign-in
 
 - QR code authentication method in Microsoft Entra ID lets you manage the QR code authentication method for users, and how they can sign in with a QR code and PIN. The following key resources support this capability:

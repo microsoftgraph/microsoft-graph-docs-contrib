@@ -1455,6 +1455,32 @@
     {
       "ChangeList": [
         {
+          "Id": "291e0eac-1074-43ac-be61-69fe8a019a43",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "privilegeLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **privilegeLevel** enumeration type.",
+          "Target": "privilegeLevel"
+        },
+        {
+          "Id": "291e0eac-1074-43ac-be61-69fe8a019a43",
+          "ApiChange": "Property",
+          "ChangedApiName": "privilegeLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **privilegeLevel** property to the [accessPackageCatalog](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageCatalog?view=graph-rest-beta) resource.",
+          "Target": "accessPackageCatalog"
+        }
+      ],
+      "Id": "291e0eac-1074-43ac-be61-69fe8a019a43",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-03-13T21:26:47.1702338Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "5b969eff-9805-406b-afc9-19d7106ce14a",
           "ApiChange": "Property",
           "ChangedApiName": "verifiableCredentialRequirementStatus",
