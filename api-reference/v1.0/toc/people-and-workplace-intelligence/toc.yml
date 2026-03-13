@@ -14,7 +14,7 @@ items:
   items:
   - name: People admin settings
     href: ../../resources/peopleadminsettings.md
-  - name: Get people admin settings
+  - name: Get
     href: ../../api/peopleadminsettings-get.md
   - name: List item insights
     href: ../../api/peopleadminsettings-list-iteminsights.md
