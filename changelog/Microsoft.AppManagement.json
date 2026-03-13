@@ -9,14 +9,6 @@
           "ChangeType": "Addition",
           "Description": "Added the **isEntraIntegrated** property to the [applicationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/applicationTemplate?view=graph-rest-beta) resource.",
           "Target": "applicationTemplate"
-        },
-        {
-          "Id": "35b725b2-d2c0-47ad-bcb0-8f07d8b0f303",
-          "ApiChange": "Term",
-          "ChangedApiName": "licenseRequired",
-          "ChangeType": "Addition",
-          "Description": "Added the [licenseRequired](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
-          "Target": "Microsoft.AAD.AppManagement"
         }
       ],
       "Id": "35b725b2-d2c0-47ad-bcb0-8f07d8b0f303",
