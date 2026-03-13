@@ -116,6 +116,7 @@ Content-Type: application/json
     "id": "1e384c2b0799b01834c0f886560a9a64e433135fe5b8607c535ebbfb03d2ee67",
     "agentId": "229da549-7a91-4365-900f-d4ef49a759a0",
     "agentDisplayName": "Ask HR Agent Identity",
+    "identityType": "agentIdentity",
     "activityDateTime": "2025-07-30T15:38:56.9594972Z",
     "detectedDateTime": "2025-07-30T15:38:56.9594972Z",
     "detectionTimingType": "offline",

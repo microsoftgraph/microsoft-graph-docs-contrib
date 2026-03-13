@@ -30,8 +30,8 @@ To learn more about using the Microsoft Teams export APIs to export content, see
 
 The following known issues are associated with this API:
 
-- [Using the `$top` query parameter might not return the **@odata.nextLink**](https://developer.microsoft.com/en-us/graph/known-issues/?search=22931).
-- [Recordings aren't exported for meetings that don't have transcription turned on](https://developer.microsoft.com/en-us/graph/known-issues/?search=22933).
+- [Using the `$top` query parameter might not return the **@odata.nextLink**](/graph/known-issues#apis-that-export-online-meeting-artifacts-might-not-return-nextlink-when-the-request-uses-the-top-query-parameter).
+- [Recordings aren't exported for meetings that don't have transcription turned on](/graph/known-issues#apis-that-export-online-meeting-artifacts-dont-return-recordings-for-meetings-without-transcriptions-enabled).
 
 ## Permissions
 

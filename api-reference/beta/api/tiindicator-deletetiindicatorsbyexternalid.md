@@ -1,18 +1,21 @@
 ---
-title: "tiIndicator: deleteTiIndicatorsByExternalId"
+title: "tiIndicator: deleteTiIndicatorsByExternalId (deprecated)"
 description: "Delete multiple threat intelligence (TI) indicators in one request instead of multiple requests, and the request contains external IDs instead of IDs."
 ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: "security"
 doc_type: apiPageType
 ms.date: 08/13/2024
+ROBOTS: NOINDEX
 ---
 
-# tiIndicator: deleteTiIndicatorsByExternalId
+# tiIndicator: deleteTiIndicatorsByExternalId (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [security-tiindicator-deprecation](../includes/security-tiindicator-deprecation.md)]
 
 Delete multiple threat intelligence (TI) indicators in one request instead of multiple requests, when the request contains external IDs instead of IDs.
 

@@ -1,8 +1,8 @@
 ---
 title: "usageRights enum type"
-description: "Represents the specific usage rights granted by Azure Information Protection templates or sensitivity labels."
-author: "kylemar"
-ms.date: 04/21/2025
+description: "Enumerates a user's usage rights when content is protected with a sensitivity label."
+author: "zhengnlu"
+ms.date: 02/20/2026
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: enumPageType
@@ -12,46 +12,47 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
-Represents the specific usage rights granted by Azure Information Protection templates or sensitivity labels. These rights define what actions a user can perform on protected content.
-
-For more information, see [Configure usage rights for Azure Information Protection](/azure/information-protection/configure-usage-rights).
+Enumerates a user's usage rights when content is protected with a sensitivity label. These rights define the actions a user is permitted to perform on labeled content. This object is a flags enum that allows multiple values to be returned. For example, `viewRightsData,editRightsData`. 
 
 ## Members
 
-| Member      | Value | Description                                                                                   | Common roles mapping |
-| :---------- | :---- | :-------------------------------------------------------------------------------------------- | :------------------- |
-| VIEW        | 0     | Allows the user to open and read the protected content. Required for almost all other rights. | All                  |
-| EDIT        | 1     | Allows the user to modify the content.                                           | Reviewer, Co-Author, Co-Owner, Owner |
-| DOCEDIT     | 2     | Allows the user to modify the content (often synonymous with EDIT).              | Reviewer, Co-Author, Co-Owner, Owner |
-| PRINT       | 3     | Allows the user to print the content.                                            | Reviewer, Co-Author, Co-Owner, Owner |
-| EXTRACT     | 4     | Allows the user to copy content from the protected document.                     | Co-Author, Co-Owner, Owner |
-| EXPORT      | 5     | Allows the user to save the content in an unprotected format or remove protection.  | Co-Owner, Owner    |
-| FORWARD     | 6     | Allows the user to forward protected email.                       | Co-Author, Co-Owner, Owner |
-| REPLY       | 7     | Allows the user to reply to protected email.                                                  | Reviewer, Co-Author, Co-Owner, Owner |
-| REPLYALL    | 8     | Allows the user to reply-all to protected email.                                | Reviewer, Co-Author, Co-Owner, Owner |
-| COMMENT     | 9     | Allows the user to add comments to the content (specific to certain applications).            | Reviewer, Co-Author, Co-Owner, Owner |
-| VIEWRIGHTSDATA | 10   | Allows the user to view the permissions applied to the content.                  | All                  |
-| EDITRIGHTSDATA | 11   | Allows the user to change the permissions applied to the content.     | Co-Owner, Owner    |
-| OWNER       | 12    | Grants the user all rights, including the ability to change permissions.                      | Owner                |
-| OBJMODEL    | 13    | Allows programmatic access to the content (for example, via application add-ins).       | All                  |
-| UNKNOWN     | 14    | An unknown or unsupported right.                                                              | N/A                  |
-| ACCESSDENIED| 15    | Indicates the user was explicitly denied access (typically returned as an error, not a right).| N/A                  |
-| EXCEPTION   | 16    | Indicates an error occurred while retrieving rights.                                          | N/A                  |
-| USERDEFINEDPROTECTIONTYPENOTSUPPORTEDEXCEPTION | 17 | Error: Rights check failed because the label uses user-defined permissions (UDP). | N/A                  |
-| ENCRYPTEDPROTECTIONTYPENOTSUPPORTEDEXCEPTION   | 18 | Error: Rights check failed because the label uses unsupported encryption (for example, DKE). | N/A                  |
-| PURVIEWCLAIMSCHALLENGENOTSUPPORTEDEXCEPTION    | 19 | Error: Rights check requires Conditional Access claims challenge, not supported by the caller. | N/A                  |
+> Note: The numeric values shown here reflect the service's internal **flags enum** (bit flags / powers of two) and are included for completeness.  
+> In API responses, callers typically see **a list of right names (strings)** (for example, `["view","print"]`) rather than a single combined numeric value.
 
-**Note:** The numeric values are provided for reference but applications should rely on the string representation of the enum members. Exception values (`ACCESSDENIED`, `EXCEPTION`, etc.) are typically returned in error scenarios, not as part of a successful rights collection.
+| Member                                         | Description                                                                                 |
+| :--------------------------------------------- | :------------------------------------------------------------------------------------------ |
+| unknown                                        | Represents an unknown or undefined usage right. For example, when there's a service outage. |
+| docEdit                                        | Represents the right to edit the document (Full Edit Rights).                               |
+| edit                                           | Represents the right to edit the content.                                                   |
+| comment                                        | Represents the right to add comments to the content.                                        |
+| export                                         | Represents the right to export the content.                                                 |
+| forward                                        | Represents the right to forward the content.                                                |
+| owner                                          | Represents the owner right, typically implying full control.                                |
+| print                                          | Represents the right to print the content.                                                  |
+| reply                                          | Represents the right to reply to the content (for example, email reply).                    |
+| replyAll                                       | Represents the right to reply-all to the content (for example, email reply all).            |
+| view                                           | Represents the right to view or read the content.                                           |
+| extract                                        | Represents the right to extract content (for example, copy/paste, summarize).               |
+| viewRightsData                                 | Represents the right to view rights management data associated with the content.            |
+| editRightsData                                 | Represents the right to edit rights management data associated with the content.            |
+| objModel                                       | Represents the right to access the object model of the content.                             |
+| accessDenied                                   | Represents an explicit denial of access.                                                    |
+| userDefinedProtectionTypeNotSupportedException | Represents an exception indicating user-defined protection type is not supported.           |
+| encryptedProtectionTypeNotSupportedException   | Represents an exception indicating encrypted protection type is not supported.              |
+| purviewClaimsChallengeNotSupportedException    | Represents an exception indicating Purview claims challenge is not supported.               |
+| exception                                      | Represents a general exception condition.                                                   |
+| labelNotFoundException                         | Represents a label with no protection settings, so there are no usage rights to evaluate.   |
+| unknownFutureValue                             | This value is set to allow future additions to the enum. Do not use in your app.            |
 
 ## JSON representation
 
 The following JSON representation shows the enum type.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.usageRight"
+  "@odata.type": "microsoft.graph.usageRights"
 } -->
 ```json
 {
-  "@odata.type": "#microsoft.graph.usageRight"
+  "@odata.type": "#microsoft.graph.usageRights"
 }
 ```

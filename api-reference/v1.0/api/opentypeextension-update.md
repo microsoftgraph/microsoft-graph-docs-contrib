@@ -20,7 +20,7 @@ The data in an extension can be primitive types or arrays of primitive types.
 
 See the table in the [Permissions](#permissions) section for the list of resources that support open extensions.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

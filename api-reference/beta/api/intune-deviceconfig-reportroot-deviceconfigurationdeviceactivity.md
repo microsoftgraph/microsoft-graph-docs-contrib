@@ -25,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -48,7 +48,7 @@ GET /reports/deviceConfigurationDeviceActivity
 Do not supply a request body for this method.
 
 ## Response
-If successful, this function returns a `200 OK` response code and a [report](../resources/intune-deviceconfig-report.md) in the response body.
+If successful, this function returns a `200 OK` response code and a [report](../resources/intune-shared-report.md) in the response body.
 
 ## Example
 

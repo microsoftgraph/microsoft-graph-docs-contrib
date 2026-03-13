@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "security_casesroot_delete_ediscoverycases" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-casesroot-delete-ediscoverycases-permissions.md)]
 
+[!INCLUDE [rbac-ediscovery-write](../includes/rbac-for-apis/rbac-ediscovery-apis-write.md)]
+
 ## HTTP request
 
 <!-- {

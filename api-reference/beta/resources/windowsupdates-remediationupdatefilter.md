@@ -1,11 +1,11 @@
 ---
 title: "remediationUpdateFilter resource type"
 description: "Represents a filter to determine which remediation update content matches the rule continuously."
-author: "angiechen22"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: "windows-autopatch"
 doc_type: resourcePageType
-ms.date: 03/30/2025
+ms.date: 01/27/2026
 ---
 
 # remediationUpdateFilter resource type

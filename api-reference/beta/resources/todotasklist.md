@@ -54,6 +54,7 @@ This resource supports
 |Relationship|Type|Description|
 |:---|:---|:---|
 |extensions|[extension](extension.md) collection| The collection of open extensions defined for the task list. Nullable.|
+|singleValueExtendedProperties|[singleValueExtendedProperty](singlevalueextendedproperty.md) collection|The collection of single-value extended properties defined for the task list. Read-only. Nullable.|
 |tasks|[todoTask](todotask.md) collection|The tasks in this task list. Read-only. Nullable.|
 
 ## JSON representation

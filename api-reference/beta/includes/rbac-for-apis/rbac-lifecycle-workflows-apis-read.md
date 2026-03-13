@@ -1,5 +1,5 @@
 ---
-author: AlexFilipin
+author: KristinaSmith
 ms.topic: include
 ms.author: alexander.filipin
 ---

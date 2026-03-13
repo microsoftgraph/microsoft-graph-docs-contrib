@@ -68,7 +68,11 @@ This is currently only supported on OneDrive Personal.
 
 If successful, this method returns a `200 OK` response code and collection of [ThumbnailSet](../resources/thumbnailset.md) objects in the response body.
 
-## Example
+## Examples
+
+### Example 1: Retrieve available thumbnails for an item in the current user's OneDrive
+
+#### Request
 
 The following example shows a request which retrieves available thumbnails for an item in the current user's OneDrive.
 
@@ -117,7 +121,7 @@ Any item in a drive can have zero or more thumbnails.
 For example, `/thumbnails?select=medium` retrieves only the medium sized thumbnails.
 
 
-### Response
+#### Response
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.thumbnailSet)" } -->
 
@@ -137,11 +141,11 @@ Content-type: application/json
 }
 ```
 
-## Get a single thumbnail
+### Example 2: Get a single thumbnail
 
 Retrieve the metadata for a single thumbnail and size by addressing it directly in a request.
 
-### HTTP request
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -181,7 +185,7 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 
 ---
 
-### Path parameters
+##### Path parameters
 
 | Name         | Type   | Description                                                                              |
 |:-------------|:-------|:-----------------------------------------------------------------------------------------|
@@ -189,6 +193,7 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 | **thumb-id** | number | The index of the thumbnail, usually 0-4. If there is a custom thumbnail, its index is 0. |
 | **size**     | string | The size of the thumbnail requested. This can be one of the standard sizes listed below or a custom size. |
 
+#### Response#
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.thumbnail" } -->
 
 ```http
@@ -202,11 +207,11 @@ Content-Type: application/json
 }
 ```
 
-## Retrieve thumbnail binary content
+### Example 3: Retrieve thumbnail binary content
 
 You can directly retrieve the content of the thumbnail by requesting the **content** property of the thumbnail.
 
-### HTTP request
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -246,7 +251,7 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}/content
 
 ---
 
-### Response
+#### Response
 
 The service responds with a redirect to the thumbnail URL.
 
@@ -260,12 +265,12 @@ Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 Thumbnail URLs are cache-safe. The URL will change, if the item changes in a way that requires a new thumbnail to be generated.
 
 
-## Getting thumbnails while listing DriveItems
+### Example 4: Getting thumbnails while listing DriveItems
 
 If you are retrieving a list of DriveItem resources to display, you can use the _$expand_ query string parameter to also include the thumbnails for those resources.
 This enables your app to retrieve thumbnails and items in a single request, instead of issuing many requests.
 
-### HTTP request
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -305,7 +310,7 @@ GET /me/drive/items/{item-id}/children?$expand=thumbnails
 
 ---
 
-### Response
+#### Response
 
 The service responses with the list of DriveItems and their thumbnails.
 
@@ -345,8 +350,6 @@ Content-type: application/json
 }
 ```
 
-## Size options
-
 This table defines the possible thumbnail sizes.
 While you can request any arbitrary thumbnail size, the defined values are likely to exist and return a value quickly:
 
@@ -359,11 +362,12 @@ While you can request any arbitrary thumbnail size, the defined values are likel
 | `mediumSquare` | 176x176     | Square Crop  | Small square thumbnail                                               |
 | `largeSquare`  | 800x800     | Square Crop  | Large square thumbnail                                               |
 
-## Requesting custom thumbnail sizes
+### Example 5: Requesting custom thumbnail sizes
 
 In addition to the defined sizes, your app can request a custom thumbnail size by specifying the dimensions of the thumbnail prefixed with `c`.
 For example if your app needs thumbnails that are 300x400, it can request that size like this:
 
+#### Request
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-thumbnail-custom-size", "scopes": "files.read", "tags": "service.graph" } -->
@@ -401,6 +405,8 @@ GET /me/drive/items/{item-id}/thumbnails?select=c300x400_crop
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
+#### Response
 
 Which responds with just the custom thumbnail size selected:
 
@@ -445,8 +451,7 @@ Thumbnails are not supported on SharePoint Server 2016.
 
 ### Error responses
 
-See [Error Responses][error-response] for more info about
-how errors are returned.
+See [Error Responses][error-response] for more info about how errors are returned.
 
 [error-response]: /graph/errors
 

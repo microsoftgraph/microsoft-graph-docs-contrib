@@ -53,6 +53,8 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | [Download file content](../api/driveitem-get-contentstream.md) | Stream |Download the contents of the primary stream (file) of a **driveItem**. |
 | [Download specific file format][download-format]                             | download URL | Download content of a **driveItem** with a specific format.|
 | [Delete item](../api/driveitem-delete.md)                                    | None | Delete a **driveItem**.|
+| [Archive](../api/driveitem-archive.md)                                       | None         | Archive a **driveItem** |
+| [Unarchive](../api/driveitem-unarchive.md)                                   | None         | Unarchive a **driveItem** |
 | [Restore item](../api/driveitem-restore.md)                                    | [driveItem](../resources/driveitem.md) | Restore a deleted [driveItem](../resources/driveitem.md) that is currently in the [recycle bin](../resources/recyclebin.md).|
 | [Permanently delete item](../api/driveitem-permanentdelete.md)                  | None | Permanently delete a **driveItem** by using its ID. |
 | [Move item](../api/driveitem-move.md)                                        | [driveItem](../resources/driveitem.md) | Move a **driveItem** to a new parent item.|

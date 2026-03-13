@@ -1,7 +1,7 @@
 ---
 title: "Create Custom Task Extension"
 description: "Create a new customTaskExtension object."
-author: "AlexFilipin"
+author: "KristinaSmith"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType

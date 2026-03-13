@@ -1,6 +1,6 @@
 ---
 title: "assign action"
-description: "Intune Mam Targetedmanagedappconfiguration Assign Source_Api ."
+description: "Intune Mam Targetedmanagedappconfiguration Assign Api ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"

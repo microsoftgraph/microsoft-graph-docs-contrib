@@ -1,11 +1,11 @@
 ---
 title: "updatePolicy resource type"
 description: "Represents an entity that governs the deployment of content to an associated deploymentAudience."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: resourcePageType
-ms.date: 09/16/2024
+ms.date: 01/27/2026
 ---
 
 # updatePolicy resource type

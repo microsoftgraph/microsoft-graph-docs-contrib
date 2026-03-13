@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [sharePointRestoreSession](../resources/sharepointrestoresession.md) object.
+Create a new [sharePointRestoreSession](../resources/sharepointrestoresession.md) object. To create a granular restore session, granular site restore artifacts must be present in the payload. A request can't include both [granularSiteRestoreArtifact](../resources/granularsiterestoreartifact.md) and [siteRestoreArtifact](../resources/siterestoreartifact.md) in the same **create** or **update** request.
+
+If no payload is provided when you create the restore session, the request creates an empty `standard` restore session by default.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -45,14 +47,14 @@ POST /solutions/backupRestore/sharePointRestoreSessions
 
 ## Request body
 
-In the request body, supply a JSON representation of the [sharePointRestoreSession](../resources/sharepointrestoresession.md).
+In the request body, supply a JSON representation of the [sharePointRestoreSession](../resources/sharepointrestoresession.md) object.
 
 You can specify the following properties when you create a **sharePointRestoreSession** object.
 
 |Property|Type|Description|
- |:---|:---|:---|
- |siteRestoreArtifacts|[siteRestoreArtifact](../resources/siterestoreartifact.md) collection|Collection of [siteRestoreArtifact](../resources/siterestoreartifact.md) objects. Required.|
-
+|:---|:---|:---|
+|siteRestoreArtifacts|[siteRestoreArtifact](../resources/siterestoreartifact.md) collection|A collection of [siteRestoreArtifact](../resources/siterestoreartifact.md) objects. Required.|
+|granularSiteRestoreArtifacts|[granularSiteRestoreArtifact](../resources/granularsiterestoreartifact.md) collection|A collection of [granularSiteRestoreArtifact](../resources/granularsiterestoreartifact.md) objects. Required.|
 
 ## Response
 
@@ -62,13 +64,16 @@ For a list of possible error responses, see [Backup Storage API error responses]
 
 ## Examples
 
-### Request
+### Example 1: Create a standard restore session
 
+The following example shows how to create a standard restore session.
+
+#### Request
 The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "sharepointrestoresession_create"
+  "name": "create_sharepointrestoresession"
 }
 -->
 ``` http
@@ -119,7 +124,7 @@ Content-Type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -138,7 +143,7 @@ Content-Type: application/json
   "@odata.id": "/solutions/backupRestore/sharepointRestoreSessions(61633878-8321-4950-bfaf-ed285bdd1461)",
   "@odata.type": "#microsoft.graph.sharepointRestoreSession",
   "id": "61633878-8321-4950-bfaf-ed285bdd1461",
-  "status": "activating",
+  "status": "draft",
   "restoreJobType": "standard",
   "restoreSessionArtifactCount": {
     "total": 2,
@@ -171,3 +176,82 @@ Content-Type: application/json
 }
 ```
 
+### Example 2: Create a granular restore session
+
+The following example shows how to create a granular restore session.
+
+#### Request
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "sharepointrestoresession_granular_create"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/solutions/backupRestore/sharePointRestoreSessions
+Content-Type: application/json
+
+{
+  "granularSiteRestoreArtifacts": [
+    {
+      "browseSessionId": "eJxVjEEKwjAQRfc80xeIleluFd2HRkZCgAIEu9CO3aUv78W4H_q_NgQY2gSJHT8IoOhrl5AzosZGBk6",
+      "id": "a535851e-9fc6-4eb1-90ab-2955fd9117b5,2a8b7eaf-092a-4561-a25a-998ad2e5142e,38eec3f1-b879-44a6-8ae6-05bd46ed4b3d,ce66019f-cdf9-4575-aa81-de3aabe844a2"
+    },
+    {
+      "browseSessionId": "eJxVjEEKwjAQRfc80xeIleluFd2HRkZCgAIEu9CO3aUv78W4H_q_NgQY2gSJHT8IoOhrl5AzosZGBk6",
+      "id": "b535851e-9fc6-4eb1-90ab-2955fd9117b5,2a8b7eaf-092a-4561-a25a-998ad2e5142e,38eec3f1-b879-44a6-8ae6-05bd46ed4b3d,ce66019f-cdf9-4575-aa81-de3aabe844a2"
+    }
+  ]
+}
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.sharePointRestoreSession"
+}
+-->
+
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.context": "/solutions/backupRestore/$metadata#sharePointRestoreSessions/$entity",
+  "id": "23e0638e-3ad7-4c7e-8749-72175d046e30",
+  "status": "draft",
+  "restoreJobType": "granular",
+  "createdDateTime": "2025-06-28T15:05:54.1352557Z",
+  "lastModifiedDateTime": "2025-06-28T15:05:54.4852234Z",
+  "createdBy": {
+    "application": {
+      "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
+      "displayName": "Microsoft Enhanced Restore"
+    },
+    "user": {
+      "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
+      "displayName": "User1"
+    }
+  },
+  "lastModifiedBy": {
+    "application": {
+      "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
+      "displayName": "Microsoft Enhanced Restore"
+    },
+    "user": {
+      "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
+      "displayName": "User2"
+    }
+  },
+  "restoreSessionArtifactCount": {
+      "total": 2,
+      "inProgress": 0,
+      "completed": 0,
+      "failed": 0
+  }
+}
+```

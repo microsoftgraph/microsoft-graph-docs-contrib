@@ -17,11 +17,15 @@ Get a list of the [authenticationEventListener](../resources/authenticationevent
 
 - [onTokenIssuanceStartListener](../resources/ontokenissuancestartlistener.md)
 - [onInteractiveAuthFlowStartListener](../resources/oninteractiveauthflowstartlistener.md)
-- [onAuthenticationMethodStartListener](../resources/onauthenticationmethodloadstartlistener.md)
+- [onAuthenticationMethodLoadStartListener](../resources/onauthenticationmethodloadstartlistener.md)
 - [onAttributeCollectionListener](../resources/onattributecollectionlistener.md)
 - [onUserCreateStartListener](../resources/onusercreatestartlistener.md)
 - [onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md)
 - [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md)
+- [onPhoneMethodLoadStartListener](../resources/onphonemethodloadstartlistener.md)
+- [onEmailOtpSendListener](../resources/onemailotpsendlistener.md)
+- [onPasswordSubmitListener](../resources/onpasswordsubmitlistener.md)
+- [onFraudProtectionLoadStartListener](../resources/onfraudprotectionloadstartlistener.md)
 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]

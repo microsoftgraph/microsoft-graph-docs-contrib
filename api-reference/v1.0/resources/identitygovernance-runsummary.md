@@ -1,7 +1,7 @@
 ---
 title: "runSummary resource type"
 description: "A summary of runs for a specified time period. This summary allows the administrator to get a quick overview based on counts."
-author: "AlexFilipin"
+author: "KristinaSmith"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType

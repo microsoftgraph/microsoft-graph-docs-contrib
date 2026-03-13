@@ -152,6 +152,7 @@ Content-type: application/json
         "www.linkedin.com"
     ],
     "lastModifiedDateTime": "2025-08-01T21:05:17.943549Z",
+    "isEntraIntegrated": true,
     "informationalUrls": {
         "singleSignOnDocumentationUrl": "https://go.microsoft.com/fwlink/?linkid=847714",
         "appSignUpUrl": null

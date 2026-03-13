@@ -46,7 +46,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [usageRight](../resources/usagerights.md) enum values in the response body, representing the rights granted to the user for the specified label.
+If successful, this method returns a `200 OK` response code and a collection of [usageRights](../resources/usagerights.md) enum values in the response body, representing the rights granted to the user for the specified label.
 
 If the label is not found, doesn't have admin-defined protection, or the user doesn't have the `VIEW` right, the API might return an error response (for example, `403 Forbidden` or `404 Not Found`) with details in an [error object](/graph/errors).
 
@@ -105,14 +105,14 @@ The following example shows the response containing the usage rights granted to 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.usageRight)"
+  "@odata.type": "Collection(microsoft.graph.usageRights)"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.usageRight)",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.usageRights)",
   "id": "f306e677-4c14-4136-b2c3-d9c7dd448cc1",
   "ownerEmail": "bob@contoso.com",
   "value": "docEdit, edit, forward, print, reply, replyAll, view, extract, viewRightsData, objModel"

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Delete a [cloudPcUserSetting](../resources/cloudpcusersetting.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

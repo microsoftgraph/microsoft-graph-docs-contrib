@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "f8c2d4a1-9e7b-4f3c-a526-8d1e0b9f7c62",
+          "ApiChange": "Method",
+          "ChangedApiName": "replyWithQuote",
+          "ChangeType": "Addition",
+          "Description": "Added the [replyWithQuote](https://learn.microsoft.com/en-us/graph/api/chatmessage-replywithquote?view=graph-rest-v1.0) method to the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-v1.0) resource.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "f8c2d4a1-9e7b-4f3c-a526-8d1e0b9f7c62",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-02-26T19:30:25.6008288Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ce1c767e-c906-4117-bb0f-80a11b8949f0",
           "ApiChange": "Resource",
           "ChangedApiName": "adhocCall",

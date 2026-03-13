@@ -51,7 +51,7 @@ To get a usage right for the signed-in user using delegated (`/me`) permissions:
 GET /me/cloudLicensing/usageRights/{usageRightId}
 ```
 
-To get a usage right for a specific user or a group using either delegated or application permissions:
+To get a usage right for a specific user or group using either delegated or application permissions:
 
 <!-- { "blockType": "ignored" }
 -->
@@ -62,7 +62,7 @@ GET /groups/{groupId}/cloudLicensing/usageRights/{usageRightId}
 
 ## Optional query parameters
 
-This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -183,6 +183,126 @@ Content-Type: application/json
       "assignableTo": "user,group",
       "planId": "fe6c28b3-d468-44ea-bbd0-a10a5167435c",
       "planName": "COPILOT_STUDIO_IN_COPILOT_FOR_M365"
+    }
+  ]
+}
+```
+
+### Example 3: Get a usageRight with assignments for a user
+
+The following example shows how to get a usage right and its assignments for a user.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "cloudlicensing_get_usageright_with_assignments_for_user",
+  "sampleKeys": ["48fbdf70-9e09-40df-9dbe-17af483ab113", "i6sq63x2vd3esbkifv7m42xdaugc6lfpqf3ozgvdlvk3ttnamby3"]
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/users/48fbdf70-9e09-40df-9dbe-17af483ab113/cloudLicensing/usageRights/i6sq63x2vd3esbkifv7m42xdaugc6lfpqf3ozgvdlvk3ttnamby3?$expand=assignments($select=id)
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.cloudLicensing.usageRight"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.cloudLicensing.usageRight",
+  "id": "i6sq63x2vd3esbkifv7m42xdaugc6lfpqf3ozgvdlvk3ttnamby3",
+  "skuId": "639dec6b-bb19-468b-871c-c5c441c4b0cb",
+  "skuPartNumber": "Microsoft_365_Copilot",
+  "services": [
+    {
+      "@odata.type": "microsoft.graph.cloudLicensing.service",
+      "assignableTo": "user,group",
+      "planId": "fe6c28b3-d468-44ea-bbd0-a10a5167435c",
+      "planName": "COPILOT_STUDIO_IN_COPILOT_FOR_M365"
+    }
+  ],
+  "assignments": [
+    {
+      "@odata.type": "#microsoft.graph.cloudLicensing.assignment",
+      "id": "405ee855-dd74-f695-8d7e-be35a6788fe8"
+    }
+  ]
+}
+```
+
+### Example 4: Get a usageRight with allotments for a user
+
+The following example shows how to get a usage right and its allotments for a user.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "cloudlicensing_get_usageright_with_allotments_for_user",
+  "sampleKeys": ["48fbdf70-9e09-40df-9dbe-17af483ab113", "i6sq63x2vd3esbkifv7m42xdaugc6lfpqf3ozgvdlvk3ttnamby3"]
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/users/48fbdf70-9e09-40df-9dbe-17af483ab113/cloudLicensing/usageRights/i6sq63x2vd3esbkifv7m42xdaugc6lfpqf3ozgvdlvk3ttnamby3?$expand=allotments($select=id,allottedUnits,consumedUnits,subscriptions)
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.cloudLicensing.usageRight"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.cloudLicensing.usageRight",
+  "id": "i6sq63x2vd3esbkifv7m42xdaugc6lfpqf3ozgvdlvk3ttnamby3",
+  "skuId": "639dec6b-bb19-468b-871c-c5c441c4b0cb",
+  "skuPartNumber": "Microsoft_365_Copilot",
+  "services": [
+    {
+      "@odata.type": "microsoft.graph.cloudLicensing.service",
+      "assignableTo": "user,group",
+      "planId": "fe6c28b3-d468-44ea-bbd0-a10a5167435c",
+      "planName": "COPILOT_STUDIO_IN_COPILOT_FOR_M365"
+    }
+  ],
+  "allotments": [
+    {
+      "@odata.type": "#microsoft.graph.cloudLicensing.allotment",
+      "id": "405ee855-dd74-f695-8d7e-be35a6788fe8",
+      "allottedUnits": 100,
+      "consumedUnits": 50,
+      "subscriptions": [
+        {
+          "@odata.type": "#microsoft.graph.cloudLicensing.subscription",
+          "subscriptionId": "f196adf8-75fa-8e4f-c61d-42d8114de4f4",
+          "nextLifecycleDate": "2025-09-30T00:00:00.000Z",
+          "startDate": "2025-07-18T00:00:00.000Z",
+          "state": "active",
+          "tags": "none"
+        }
+      ]
     }
   ]
 }

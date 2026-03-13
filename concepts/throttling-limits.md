@@ -58,6 +58,10 @@ The rest of this article provides an overview of the service-specific throttling
 
 [!INCLUDE [Education rostering APIS throttling documentation](../includes/throttling-education-rostering-apis.md)]
 
+## Exchange message trace service limits
+  
+[!INCLUDE [Exchange message trace throttling documentation](../includes/throttling-exchange-messagetrace.md)]
+
 ## Files and lists service limits
 
 [!INCLUDE [Files and lists throttling documentation](../includes/throttling-files-and-lists.md)]

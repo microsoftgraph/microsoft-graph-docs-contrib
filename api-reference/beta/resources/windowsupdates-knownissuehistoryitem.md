@@ -1,11 +1,11 @@
 ---
 title: "knownIssueHistoryItem resource type"
 description: "Represents the description text for the known issue, used to maintain historical records."
-author: "skandula"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: resourcePageType
-ms.date: 09/16/2024
+ms.date: 01/27/2026
 ---
 
 # knownIssueHistoryItem resource type

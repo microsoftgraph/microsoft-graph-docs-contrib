@@ -1,6 +1,6 @@
 ---
 title: "getRoleScopeTagsByIds function"
-description: "Intune Rbac Devicemanagement Getrolescopetagsbyids Source_Api ."
+description: "Intune Rbac Devicemanagement Getrolescopetagsbyids Api ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"

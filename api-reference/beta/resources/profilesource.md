@@ -15,9 +15,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the configuration data of a profile source created by an organization administrator. This configuration represents the source of profile data in a way that is understandable to end-users.
+Represents the configuration data of a profile source created by an organization administrator. This configuration represents the source of profile data in a way that is understandable to end users.
 
-For more information about how to configure a profile source for an organization, see [Manage profile source settings for an organization using the Microsoft Graph API](/graph/profilesource-configure-settings).
+For more information, see [Manage profile source settings for an organization using the Microsoft Graph API](/graph/profilesource-configure-settings).
 
 Inherits from [entity](../resources/entity.md).
 
@@ -39,7 +39,7 @@ Inherits from [entity](../resources/entity.md).
 |kind|String|Type of the profile source.|
 |localizations|[profileSourceLocalization](../resources/profilesourcelocalization.md) collection|Alternative localized labels specified by an administrator.|
 |sourceId|String|Profile source identifier used as an [alternate key](https://github.com/microsoft/api-guidelines/blob/vNext/graph/patterns/alternate-key.md).|
-|webUrl|String|Web URL of the profile source that directs users to the page view of profile data.|
+|webUrl|String|Web URL of the profile source that directs users to the page view of the profile data.|
 
 ## Relationships
 None.

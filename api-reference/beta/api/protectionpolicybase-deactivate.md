@@ -148,6 +148,7 @@ Content-Location: https://graph.microsoft.com/beta/solutions/backupRestore/prote
       }
    },
    "lastModifiedDateTime":"2015-06-19T12:01:03.45Z",
+   "offboardRequestedDateTime": "2024-08-26T12:00:00Z",
    "retentionSettings" : [
       {
           "interval": "R/PT10M",

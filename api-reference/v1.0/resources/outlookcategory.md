@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: "SuryaLashmiS"
 ms.subservice: "outlook"
 doc_type: resourcePageType
-toc.title: Outlook category (deprecated)
+toc.title: Outlook category
 ms.date: 08/08/2024
 ---
 

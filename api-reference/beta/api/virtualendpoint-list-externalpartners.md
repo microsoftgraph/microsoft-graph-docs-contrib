@@ -110,19 +110,48 @@ Content-Type: application/json
   "value": [
     {
       "id": "b3548526-e615-3785-3118-be70b3968ec5",
-      "partnerId": "198d7140-80bb-4843-8cc4-811377a49a92",
+      "partnerId": "198d71c0-80bb-4843-8cc4-811377a49a92",
       "enableConnection": true,
       "lastSyncDateTime": "2020-11-03T12:43:14Z",
       "connectionStatus": "available",
-      "statusDetails": "The external partner is available"
+      "statusDetails": "The external partner is available",
+      "agentSetting": null
     },
     {
-      "id": "dc6422cb-3001-45a7-9dcd-21207eea6b0e",
-      "partnerId": "459a0e56-da26-4ba1-a729-8eeef733425b",
+      "id": "635d9af4-8866-4ff4-b4ab-1bdfe17384cb",
+      "partnerId": "88488ce9-b468-485a-9e2c-8fc3e477badf",
       "enableConnection": true,
       "lastSyncDateTime": "2020-11-03T12:43:14Z",
       "connectionStatus": "available",
-      "statusDetails": "The external partner is available"
+      "statusDetails": "The external partner is available",
+      "agentSetting": null
+    },
+    {
+      "id": "987ccc45-2282-4955-b453-a6803d3eedee",
+      "partnerId": "33391b76-c73e-481e-942a-dc97e887cb0b",
+      "enableConnection": true,
+      "lastSyncDateTime": "2020-11-03T12:43:14Z",
+      "connectionStatus": "available",
+      "statusDetails": "The external partner is available",
+      "agentSetting": null
+    },
+    {
+      "id": "ad0956f6-0caa-48b9-85c8-740e423b17fd",
+      "partnerId": "777b7e2f-7b8f-7d3a-9a0c-07e5e87c7701",
+      "enableConnection": true,
+      "lastSyncDateTime": "2020-11-03T12:43:14Z",
+      "connectionStatus": "available",
+      "statusDetails": "The external partner is available",
+      "agentSetting": {
+        "agentUrl": "https://rmmExample.microsoft.com/agent/rmmExampleAgent.msi",
+        "agentSha256": "EC6AF1EA0367D16DDE6639A89A080A524CEBC4D4BEDFE00ED0CAC4B865A918D8",
+        "installParameters": [
+            "/quiet",
+            "/norestart",
+            "TOKENID=e69c1577-d465-4e57-af33-0ddea43feeb1"
+        ],
+        "autoDeploymentEnabled": false
+      }
     }
   ]
 }

@@ -43,7 +43,7 @@ GET /users/{userId}/cloudLicensing/usageRights
 
 ## Optional query parameters
 
-This method supports the `$select` and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$top`, `$expand`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 The following examples show how to get usage rights information for users based on specific filters:
 

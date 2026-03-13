@@ -27,14 +27,38 @@ The following table lists common use cases for the cloud licensing API.
 | Use case                    | REST resources                                           |
 | :-------------------------- | :------------------------------------------------------- |
 | List and get usage rights   | [usageRight](../resources/cloudlicensing-usageright.md)  |
+| List and get allotments     | [allotment](../resources/cloudlicensing-allotment.md) |
+| Create and manage assignments | [assignment](../resources/cloudlicensing-assignment.md) |
+| Troubleshoot assignment synchronization errors | [assignmentError](../resources/cloudlicensing-assignmenterror.md) |
+| List and inspect waiting members | [waitingMember](../resources/cloudlicensing-waitingmember.md) |
 
 ## API design details
 
 The following sections describe design details for the cloud licensing API.
 
+### Allotments
+
+The [allotment](../resources/cloudlicensing-allotment.md) entity represents a manageable pool of licenses associated with a subscription. Use allotments to track capacity, supported services, and the subscriptions behind those licenses.
+
+### Assignments
+
+The [assignment](../resources/cloudlicensing-assignment.md) entity represents a license assignment that grants a license for an allotment to a user, device, or group. Use the assignments APIs to create, update, list, and remove assignments that consume allotment capacity.
+
+### Assignment errors
+
+The [assignmentError](../resources/cloudlicensing-assignmenterror.md) entity surfaces asynchronous synchronization failures that affect assignment processing. Use these APIs to detect, inspect, and troubleshoot assignments that are failed or stuck.
+
+### Subscriptions
+
+The [subscription](../resources/cloudlicensing-subscription.md) entity contains basic information about a subscription that supports an allotment, including lifecycle dates and state.
+
 ### Usage rights
 
 The [usageRight](../resources/cloudlicensing-usageright.md) entity is designed for client and workload license checks, with relationships structured to flow from the user or group to the **usageRight**.
+
+### Waiting members
+
+The [waitingMember](../resources/cloudlicensing-waitingmember.md) entity represents a user or device that was added to the waiting room for an allotment due to license capacity limits; it includes how long each member is waiting.
 
 ## Next steps
 

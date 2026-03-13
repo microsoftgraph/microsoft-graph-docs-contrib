@@ -1,5 +1,5 @@
 ---
-title: "entity resource type"
+title: "Entity resource type"
 description: "Represents an entity."
 ms.localizationpriority: medium
 author: "keylimesoda"
@@ -8,7 +8,7 @@ doc_type: resourcePageType
 ms.date: 04/03/2024
 ---
 
-# entity resource type
+# Entity resource type
 
 Namespace: microsoft.graph
 
@@ -51,4 +51,3 @@ The following JSON representation shows the resource type.
   "section": "documentation",
   "tocPath": ""
 }-->
-

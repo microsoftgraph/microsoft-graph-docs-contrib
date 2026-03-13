@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) object.
+Create a new [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) object. To create a granular restore session, granular drive restore artifacts must be present in the payload. A request can't include both [granularDriveRestoreArtifact](../resources/granulardriverestoreartifact.md) and [driveRestoreArtifact](../resources/driverestoreartifact.md) in the same **create** or **update** request.
+
+If no payload is provided when you create the restore session, the request creates an empty `standard` restore session by default.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -50,11 +52,12 @@ POST /solutions/backupRestore/oneDriveForBusinessRestoreSessions
 
 In the request body, supply a JSON representation of the [oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) object.
 
-You can specify the following properties when you create a **oneDriveForBusinessRestoreSession**.
+You can specify the following properties when you create a **oneDriveForBusinessRestoreSession** object.
 
 |Property|Type|Description|
 |:---|:---|:---|
 |driveRestoreArtifacts|[driveRestoreArtifact](../resources/driverestoreartifact.md) collection|A collection of [driveRestoreArtifact](../resources/driverestoreartifact.md) objects. Required.|
+|granularDriveRestoreArtifacts|[granularDriveRestoreArtifact](../resources/granulardriverestoreartifact.md) collection| A collection of [granularDriveRestoreArtifact](../resources/granulardriverestoreartifact.md) objects. Required.|
 
 ## Response
 
@@ -64,8 +67,11 @@ For a list of possible error responses, see [Backup Storage API error responses]
 
 ## Examples
 
-### Request
+### Example 1: Create a standard restore session
 
+The following example shows how to create a standard restore session.
+
+#### Request
 The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
@@ -121,7 +127,7 @@ Content-Type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -171,3 +177,82 @@ Content-Type: application/json
 }
 ```
 
+### Example 2: Create a granular restore session
+
+The following example shows how to create a granular restore session.
+
+#### Request
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "onedriveforbusinessrestoresession_granular_create"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessRestoreSessions
+Content-Type: application/json
+
+{
+  "granularDriveRestoreArtifacts": [
+    {
+      "browseSessionId": "eJxVjEEKwjAQRfc80xeIleluFd2HRkZCgAIEu9CO3aUv78W4H_q_NgQY2gSJHT8IoOhrl5AzosZGBk6",
+      "id": "a535851e-9fc6-4eb1-90ab-2955fd9117b5,2a8b7eaf-092a-4561-a25a-998ad2e5142e,38eec3f1-b879-44a6-8ae6-05bd46ed4b3d,ce66019f-cdf9-4575-aa81-de3aabe844a2"
+    },
+    {
+      "browseSessionId": "eJxVjEEKwjAQRfc80xeIleluFd2HRkZCgAIEu9CO3aUv78W4H_q_NgQY2gSJHT8IoOhrl5AzosZGBk6",
+      "id": "b535851e-9fc6-4eb1-90ab-2955fd9117b5,2a8b7eaf-092a-4561-a25a-998ad2e5142e,38eec3f1-b879-44a6-8ae6-05bd46ed4b3d,ce66019f-cdf9-4575-aa81-de3aabe844a2"
+    }
+  ]
+}
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.oneDriveForBusinessRestoreSession"
+}
+-->
+
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.context": "/solutions/backupRestore/$metadata#OneDriveForBusinessRestoreSessions/$entity",
+  "id": "23e0638e-3ad7-4c7e-8749-72175d046e30",
+  "status": "draft",
+  "restoreJobType": "granular",
+  "createdDateTime": "2025-06-28T15:05:54.1352557Z",
+  "lastModifiedDateTime": "2025-06-28T15:05:54.4852234Z",
+  "createdBy": {
+    "application": {
+      "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
+      "displayName": "Microsoft Enhanced Restore"
+    },
+    "user": {
+      "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
+      "displayName": "User1"
+    }
+  },
+  "lastModifiedBy": {
+    "application": {
+      "id": "1fec8e78-bce4-4aaf-ab1b-5451cc387264",
+      "displayName": "Microsoft Enhanced Restore"
+    },
+    "user": {
+      "id": "845457dc-4bb2-4815-bef3-8628ebd1952e",
+      "displayName": "User2"
+    }
+  },
+  "restoreSessionArtifactCount": {
+      "total": 2,
+      "inProgress": 0,
+      "completed": 0,
+      "failed": 0
+  }
+}
+```

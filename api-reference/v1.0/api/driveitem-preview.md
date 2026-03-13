@@ -19,6 +19,9 @@ If you want to obtain long-lived embeddable links, use the [createLink][] API in
 > [!NOTE]
 > The **preview** action is currently only available on SharePoint and OneDrive for Business.
 
+> [!CAUTION]
+> The preview URL is intended for the caller's own use and shouldn't be shared with other users. The preview renders on behalf of the calling identity, and anyone who accesses the URL acts as the caller with the caller's permissions. This is particularly important in application permission scenarios where your app has `read-write access` to the file but you intend to provide end users with `read-only` access. In such cases, take precautions such as restricting DOM access to page internals and obtaining the preview URL using an application identity with read-only access.
+
 [createLink]: driveitem-createlink.md
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]

@@ -33,7 +33,8 @@ Inherits from [entity](../resources/entity.md).
 |agentId|String|The unique identifier for the agent. This is equivalent to 'id' to the specific agent type. See [riskyAgentIdentity](../resources/riskyagentidentity.md), [riskyAgentIdentityBlueprintPrincipal](../resources/riskyagentidentityblueprintprincipal.md), and [riskyAgentUser](../resources/riskyagentuser.md). <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |detectedDateTime|DateTimeOffset|Date and time that the risk was detected. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. <br/><br/> Supports `$filter` (`eq`, `le`, and `ge`).|
 |detectionTimingType|riskDetectionTimingType|Timing of the detected risk (real-time/offline). The possible values are: `notDefined`, `realtime`, `nearRealtime`, `offline`, `unknownFutureValue`.|
-|id|String| Unique ID of the risk detection. Inherited from [entity](../resources/entity.md).|
+|id|String| Unique ID of the risk detection. Inherited from [entity](../resources/entity.md).
+|identityType|[agentIdentityType](agentidentitytype.md)|The type of agent identity associated with this risk detection. The possible values are: `agentIdentity`, `agentUser`, `unknownFutureValue`, `agentIdentityBlueprintPrincipal`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value in this evolvable enum: `agentIdentityBlueprintPrincipal`. Required. <br/><br/> Supports `$filter` (`eq`).|
 |lastModifiedDateTime|DateTimeOffset|Date and time that the risk detection was last updated. <br/><br/> Supports `$filter` (`eq`, `le`, and `ge`).|
 |riskDetail|[riskDetail](../resources/riskdetail.md)|Details of the detected risk. <br/><br/> Supports `$filter` (`eq`).|
 |riskEventType|String|The type of risk event detected. <br/><br/> Supports `$filter` (`eq`).|
@@ -60,6 +61,7 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "agentId": "String",
   "agentDisplayName": "String",
+  "identityType": "String",
   "activityDateTime": "String (timestamp)",
   "detectedDateTime": "String (timestamp)",
   "detectionTimingType": "String",

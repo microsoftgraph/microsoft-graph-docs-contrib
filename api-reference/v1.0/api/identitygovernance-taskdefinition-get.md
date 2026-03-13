@@ -1,7 +1,7 @@
 ---
 title: "Get taskDefinition"
 description: "Read the details of a built-in workflow task in Lifecycle Workflows."
-author: "AlexFilipin"
+author: "KristinaSmith"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType

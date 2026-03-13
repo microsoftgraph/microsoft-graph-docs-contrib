@@ -1,11 +1,11 @@
 ---
 title: "safeguardProfile resource type"
 description: "Describes one or more issues against which Windows Autopatch safeguards devices."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: resourcePageType
-ms.date: 09/09/2024
+ms.date: 01/27/2026
 ---
 
 # safeguardProfile resource type

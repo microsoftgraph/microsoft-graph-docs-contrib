@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Get a list of all the [bundles][bundle] in a user's drive.
 
-[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

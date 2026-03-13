@@ -3,6 +3,58 @@
     {
       "ChangeList": [
         {
+          "Id": "ea058a7b-020c-4e4a-b87d-2376b1818c16",
+          "ApiChange": "Method",
+          "ChangedApiName": "sharedInsight",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [List shared](https://learn.microsoft.com/en-us/graph/api/insights-list-shared?view=graph-rest-beta) method of the [sharedInsight](https://learn.microsoft.com/en-us/graph/api/resources/sharedInsight?view=graph-rest-beta) resource. This API is deprecated and will stop returning data after November, 2026.",
+          "Target": "sharedInsight"
+        },
+        {
+          "Id": "ea058a7b-020c-4e4a-b87d-2376b1818c16",
+          "ApiChange": "Method",
+          "ChangedApiName": "usedInsight",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [List used](https://learn.microsoft.com/en-us/graph/api/insights-list-used?view=graph-rest-beta) method of the [usedInsight](https://learn.microsoft.com/en-us/graph/api/resources/usedInsight?view=graph-rest-beta) resource. This API is deprecated and will stop returning data after November, 2026.",
+          "Target": "usedInsight"
+        }
+      ],
+      "Id": "ea058a7b-020c-4e4a-b87d-2376b1818c16",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-01-14T00:00:00.0000000Z",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "Insights"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "0572614f-7d68-45c7-8dd1-15b9082e21f2",
+          "ApiChange": "Method",
+          "ChangedApiName": "sharedInsight",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [List shared](https://learn.microsoft.com/en-us/graph/api/insights-list-shared?view=graph-rest-1.0) method of the [sharedInsight](https://learn.microsoft.com/en-us/graph/api/resources/sharedInsight?view=graph-rest-1.0) resource. This API is deprecated and will stop returning data after November, 2026.",
+          "Target": "sharedInsight"
+        },
+        {
+          "Id": "0572614f-7d68-45c7-8dd1-15b9082e21f2",
+          "ApiChange": "Method",
+          "ChangedApiName": "usedInsight",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [List used](https://learn.microsoft.com/en-us/graph/api/insights-list-used?view=graph-rest-1.0) method of the [usedInsight](https://learn.microsoft.com/en-us/graph/api/resources/usedInsight?view=graph-rest-1.0) resource. This API is deprecated and will stop returning data after November, 2026.",
+          "Target": "usedInsight"
+        }
+      ],
+      "Id": "0572614f-7d68-45c7-8dd1-15b9082e21f2",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-01-14T00:00:00.0000000Z",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "Insights"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "f51d79bb-819e-4d34-94f8-0eb4ff860d79",
           "ApiChange": "Resource",
           "ChangedApiName": "itemInsightsSettings",

@@ -108,9 +108,9 @@ The [agentUser](../resources/agentuser.md) resource inherits from this resource.
 | [List member of](../api/user-list-memberof.md) | [directoryObject](directoryobject.md) collection | Get the groups, directory roles, and administrative units that the user is a direct member of. This operation is not transitive. |
 | [List transitive member of](../api/user-list-transitivememberof.md) | [directoryObject](directoryobject.md) collection | Get the groups, directory roles, and administrative units that the user is a member of through either direct or transitive membership. |
 | **Insights** |||
-| [List shared](../api/insights-list-shared.md) | [sharedInsight](insights-shared.md) collection | Calculated insight that returns the list of files shared with a user. |
 | [List trending](../api/insights-list-trending.md) | [trending](insights-trending.md) collection | Calculated insight that returns the list of items trending around the user. |
-| [List used](../api/insights-list-used.md) | [usedInsight](insights-used.md) collection | Calculated insight that returns the list of files used with a user. |
+| [List shared (deprecated)](../api/insights-list-shared.md) | [sharedInsight](insights-shared.md) collection | Calculated insight that returns the list of files shared with a user. This API is deprecated and will stop returning data after November 2026. |
+| [List used (deprecated)](../api/insights-list-used.md) | [usedInsight](insights-used.md) collection | Calculated insight that returns the list of files used with a user. This API is deprecated and will stop returning data after November 2026. |
 | **License management** |||
 | [Assign license](../api/user-assignlicense.md) | [user](user.md) | Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription. |
 | [List license details](../api/user-list-licensedetails.md) | [licenseDetails](licensedetails.md) collection | Get a licenseDetails object collection. |
@@ -274,7 +274,7 @@ The [agentUser](../resources/agentuser.md) resource inherits from this resource.
 | schools | String collection | A list for the user to enumerate the schools they have attended. <br><br>Returned only on `$select`. |
 |securityIdentifier| String | Security identifier (SID) of the user, used in Windows scenarios. <br><br>Read-only. Returned by default. <br>Supports `$select` and `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
 | serviceProvisioningErrors | [serviceProvisioningError](serviceprovisioningerror.md) collection | Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a user object.|
-| showInAddressList | Boolean | **Do not use in Microsoft Graph. Manage this property through the Microsoft 365 admin center instead.** Represents whether the user should be included in the Outlook global address list. See [Known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=14972).|
+| showInAddressList | Boolean | **Do not use in Microsoft Graph. Manage this property through the Microsoft 365 admin center instead.** Represents whether the user should be included in the Outlook global address list. See [Known issue](/graph/known-issues#showinaddresslist-property-is-out-of-sync-with-microsoft-exchange).|
 | signInSessionsValidFromDateTime | DateTimeOffset | Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application must acquire a new refresh token by requesting the authorized endpoint. Read-only. Use [revokeSignInSessions](../api/user-revokesigninsessions.md) to reset.|
 | skills | String collection | A list for the user to enumerate their skills. <br><br>Returned only on `$select`. |
 | signInActivity | [signInActivity](signinactivity.md) | Get the last signed-in date and request ID of the sign-in for a given user. Read-only.<br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`) *but* not with any other filterable properties. <br><br>**Note:** <br/><ul><li> Details for this property require a Microsoft Entra ID P1 or P2 license and the **AuditLog.Read.All** permission.</li><li>This property is not returned for a user who has never signed in or last signed in before April 2020.|</li></ul>
@@ -282,7 +282,7 @@ The [agentUser](../resources/agentuser.md) resource inherits from this resource.
 | streetAddress | String | The street address of the user's place of business. Maximum length is 1024 characters. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 | surname | String | The user's surname (family name or last name). Maximum length is 64 characters. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values). |
 | usageLocation | String | A two-letter country code (ISO standard 3166). Required for users that are assigned licenses due to legal requirements to check for availability of services in countries.  Examples include: `US`, `JP`, and `GB`. Not nullable. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
-| userPrincipalName | String | The user principal name (UPN) of the user. The UPN is an Internet-style sign-in name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where the domain must be present in the tenant's verified domain collection. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md).<br>NOTE: This property can't contain accent characters. Only the following characters are allowed `A - Z`, `a - z`, `0 - 9`, `' . - _ ! # ^ ~`. For the complete list of allowed characters, see [username policies](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts). <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, `endsWith`) and `$orderby`.
+| userPrincipalName | String | The user principal name (UPN) of the user. The UPN is an Internet-style sign-in name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where the domain must be present in the tenant's verified domain collection. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md).<br>NOTE: This property can't contain accent characters. Only the following characters are allowed `A - Z`, `a - z`, `0 - 9`, `' . - _ ! # ^ ~`. For the complete list of allowed characters, see [username policies](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts). <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, `endsWith`) and `$orderby`.|
 | userType | String | A String value that can be used to classify user types in your directory. The possible values are `Member` and `Guest`. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `in`, and `eq` on `null` values). **NOTE:** For more information about the permissions for member and guest users, see [What are the default user permissions in Microsoft Entra ID?](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#member-and-guest-users) |
 
 > [!TIP]
@@ -369,6 +369,7 @@ For example, Cameron is an administrator of a directory for an elementary school
 |directReports|[directoryObject](directoryobject.md) collection|The users and contacts that report to the user. (The users and contacts with their manager property set to this user.) Read-only. Nullable. Supports `$expand`. |
 |drive|[drive](drive.md)|The user's OneDrive. Read-only.|
 |drives|[drive](drive.md) collection| A collection of drives available for this user. Read-only. |
+|employeeExperience|[employeeExperienceUser](employeeexperienceuser.md)| The employee experience resources for the user. Read-only. Nullable.|
 |events|[event](event.md) collection|The user's events. The default is to show events under the Default Calendar. Read-only. Nullable.|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the user. Supports `$expand`. Nullable.|
 |inferenceClassification|[inferenceClassification](inferenceclassification.md)| Relevance classification of the user's messages based on explicit designations that override inferred relevance or importance. |
@@ -423,6 +424,7 @@ The following JSON representation shows the resource type.
     "directReports",
     "drive",
     "drives",
+    "employeeExperience",
     "events",
     "extensions",
     "joinedGroups",
@@ -548,6 +550,7 @@ The following JSON representation shows the resource type.
   "directReports": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "drive": {"@odata.type": "microsoft.graph.drive"},
   "drives": [{"@odata.type": "microsoft.graph.drive"}],
+  "employeeExperience": {"@odata.type": "microsoft.graph.employeeExperienceUser"},
   "insights": {"@odata.type": "microsoft.graph.itemInsights"},
   "settings": {"@odata.type": "microsoft.graph.userSettings"},
   "events": [{"@odata.type": "microsoft.graph.event"}],

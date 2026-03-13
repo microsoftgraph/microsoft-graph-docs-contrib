@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Delete a [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) object. You can’t delete a policy that’s in use.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

@@ -630,3 +630,7 @@ items:
       href: ../../api/organizationsettings-list-peopleinsights.md
     - name: Update insightsSettings
       href: ../../api/insightssettings-update.md
+- name: Complex types
+  items:
+  - name: Profile source localization
+    href: ../../resources/profilesourcelocalization.md

@@ -1,11 +1,11 @@
 ---
 title: "List deployment audience exclusions"
 description: "List the updatableAsset resources that are excluded from a deploymentAudience."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 09/08/2024
+ms.date: 01/27/2026
 ---
 
 # List deployment audience exclusions
@@ -17,7 +17,7 @@ Namespace: microsoft.graph.windowsUpdates
 List the [updatableAsset](../resources/windowsupdates-updatableasset.md) resources that are excluded from a [deploymentAudience](../resources/windowsupdates-deploymentaudience.md).
 
 > [!NOTE]
-> This API has a [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=13634) related to deployments created via Intune.
+> This API has a [known issue](/graph/known-issues#accessing-and-updating-deployment-audiences-is-not-supported) related to deployments created via Intune.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

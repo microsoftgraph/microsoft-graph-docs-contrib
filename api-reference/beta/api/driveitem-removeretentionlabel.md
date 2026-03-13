@@ -1,11 +1,11 @@
 ---
 title: "driveItem: removeRetentionLabel"
-description: "Remove a retention label from a driveItem."
+description: "Remove the retention label from a driveItem."
 author: "kyracatwork"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
-ms.date: 11/06/2025
+ms.date: 02/03/2026
 ---
 
 # driveItem: removeRetentionLabel
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a retention label from a [driveItem](../resources/driveitem.md).
+Remove the retention label from a [driveItem](../resources/driveitem.md). This operation clears the retention label and all associated retention settings enforced on the item.
 
 For information about retention labels from an administrator's perspective, see [Use retention labels to manage the lifecycle of documents stored in SharePoint](/microsoft-365/compliance/auto-apply-retention-labels-scenario).
 
@@ -28,7 +28,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-removeretentionlabel-permissions.md)]
 
 > [!NOTE]
-> `Sites.FullControl.All` is the least privileged permission required to remove retention labels that classify the content as records.
+> * `Sites.FullControl.All` is the least privileged permission required to remove retention labels that classify the content as records.
+> * The removal of a *Record* retention label isn't supported when using app-only authentication. This operation requires a delegated user context.
 
 [!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
 
@@ -40,6 +41,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ```http
 DELETE /drives/{drive-id}/items/{item-id}/retentionLabel
+DELETE /groups/{group-id}/drive/items/{item-id}/retentionLabel
+DELETE /me/drive/items/{item-id}/retentionLabel
+DELETE /users/{user-id}/drive/items/{item-id}/retentionLabel
 ```
 
 ## Request headers
@@ -56,9 +60,19 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
+### Error responses
+
+| Error code       | HTTP status | Description                                                        |
+|:-----------------|:------------|:-------------------------------------------------------------------|
+| notSupported     | 400         | App-only callers aren't supported for SharePoint Embedded containers. |
+| accessDenied     | 403         | The caller doesn't have permission to remove the retention label.  |
+| itemNotFound     | 404         | The item can't be found or is no longer accessible.             |
+
 ## Examples
 
-### Request
+### Example 1: Remove the retention label from a driveItem
+The following example shows how to remove the retential label from a **driveItem** object.
+#### Request
 
 The following example shows a request.
 
@@ -73,7 +87,7 @@ The following example shows a request.
 DELETE https://graph.microsoft.com/beta/drives/b!t18F8ybsHUq1z3LTz8xvZqP8zaSWjkFNhsME-Fepo75dTf9vQKfeRblBZjoSQrd7/items/01NKDM7HMOJTVYMDOSXFDK2QJDXCDI3WUK/retentionLabel
 ```
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -84,4 +98,43 @@ The following example shows the response.
 
 ```http
 HTTP/1.1 204 No Content
+```
+
+### Example 2: Remove the retention label from a driveItem that fails due to insufficient permissions
+The following example shows how to remove the retention label from a **driveItem** object that fails due to insufficient permissions.
+#### Request
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "driveItem_removeRetentionLabel_spe_permissions_error",
+  "sampleKeys": ["b!t18F8ybsHUq1z3LTz8xvZqP8zaSWjkFNhsME-Fepo75dTf9vQKfeRblBZjoSQrd7", "01NKDM7HMOJTVYMDOSXFDK2QJDXCDI3WUK"]
+}
+-->
+
+```http
+DELETE https://graph.microsoft.com/beta/drives/b!t18F8ybsHUq1z3LTz8xvZqP8zaSWjkFNhsME-Fepo75dTf9vQKfeRblBZjoSQrd7/items/01NKDM7HMOJTVYMDOSXFDK2QJDXCDI3WUK/retentionLabel
+```
+
+#### Response
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.error"
+} -->
+
+```http
+HTTP/1.1 403 Forbidden
+Content-Type: application/json
+
+{
+  "error": {
+    "code": "accessDenied",
+    "message": "Access Denied: Do not have enough permission.",
+    "innerError": {
+      "request-id": "12345678-1234-1234-1234-123456789012",
+      "date": "2025-02-03T10:30:00"
+    }
+  }
+}
 ```

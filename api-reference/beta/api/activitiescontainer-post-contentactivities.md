@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Create a [content activity](../resources/contentactivity.md) for the signed-in user.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

@@ -57,7 +57,7 @@ You can specify the following properties when you create a **site**.
 |name|String|The name of the site. Inherited from [baseItem](../resources/baseitem.md). Optional.|
 |ownerIdentityToResolve|[identityInput](../resources/identityinput.md)|The site owner to be provided at the time of site creation only. Optional.|
 |shareByEmailEnabled|Boolean|Determines whether the site and its content can be shared via email. Optional.|
-|template|siteTemplateType|Specifies the template applied to the site. The possible values are: `sitepagepublishing`, `group`, `sts`, `unknownFutureValue`. Optional.|
+|template|siteTemplateType|Specifies the template applied to the site. The possible values are: `sitepagepublishing`, `sts`, `unknownFutureValue`. Optional.|
 |webUrl|String|The URL for the site that can only be provided at the time of site creation. Inherited from [baseItem](../resources/baseitem.md). Optional.|
 
 ## Response

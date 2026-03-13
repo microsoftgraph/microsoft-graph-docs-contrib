@@ -6,6 +6,7 @@ ms.author: ombongifaith
 ms.reviewer: ddeeps2610
 ms.localizationpriority: medium
 doc_type: conceptualPageType
+ms.topic: overview
 ms.subservice: "entra-monitoring-health"
 ms.date: 06/12/2024
 ---

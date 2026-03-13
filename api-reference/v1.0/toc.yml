@@ -87,8 +87,6 @@ items:
     displayName: Outlook, Outlook contacts, Outlook contact, People
   - name: Reports
     href: toc/reports/toc.yml
-  - name: Audit log query
-    href: toc/audit-log-query/toc.yml
   - name: Partner billing reports
     href: toc/partner-billing-reports/toc.yml
   - name: Search

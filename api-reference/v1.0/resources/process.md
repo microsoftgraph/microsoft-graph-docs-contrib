@@ -1,16 +1,19 @@
 ---
-title: "process resource type"
+title: "process resource type (deprecated)"
 description: "Contains stateful information about the process related to the alert."
 ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: security
 doc_type: resourcePageType
 ms.date: 07/22/2024
+ROBOTS: NOINDEX
 ---
 
-# process resource type
+# process resource type (deprecated)
 
 Namespace: microsoft.graph
+
+[!INCLUDE [security-alerts-v1-deprecation](../includes/security-alerts-v1-deprecation.md)]
 
 Contains stateful information about the process related to the alert.
 

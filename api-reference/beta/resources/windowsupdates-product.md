@@ -1,11 +1,11 @@
 ---
 title: "product resource type"
 description: "Represents a Windows product."
-author: "skandula"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: resourcePageType
-ms.date: 09/16/2024
+ms.date: 01/27/2026
 ---
 
 # product resource type

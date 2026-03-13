@@ -14,6 +14,13 @@ Namespace: microsoft.graph
 Create a new [authenticationEventListener](../resources/authenticationeventlistener.md) object. You can create one of the following subtypes that are derived from **authenticationEventListener**.
 
 - [onTokenIssuanceStartListener resource type](../resources/ontokenissuancestartlistener.md)
+- [onInteractiveAuthFlowStartListener resource type](../resources/oninteractiveauthflowstartlistener.md)
+- [onAuthenticationMethodLoadStartListener resource type](../resources/onauthenticationmethodloadstartlistener.md)
+- [onAttributeCollectionListener resource type](../resources/onattributecollectionlistener.md)
+- [onUserCreateStartListener resource type](../resources/onusercreatestartlistener.md)
+- [onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md)
+- [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md)
+- [onEmailOtpSendListener](../resources/onemailotpsendlistener.md)
 - [onFraudProtectionLoadStartListener](../resources/onfraudprotectionloadstartlistener.md) resource type
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
@@ -59,7 +66,9 @@ If successful, this method returns a `201 Created` response code and an [authent
 
 ## Examples
 
-### Request
+### Example 1: Create authenticationEventListener
+
+#### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -123,7 +132,7 @@ Content-length: 312
 
 ---
 
-### Response
+#### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -158,7 +167,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 5: Enable Fraud Protection during sign-up with Arkose Labs 
+### Example 2: Enable Fraud Protection during sign-up with Arkose Labs 
 
 #### Request
 The following example shows a request that enables fraud protection during sign-up using Arkose Labs.
@@ -267,7 +276,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 6: Enable Fraud Protection during sign-up with HUMAN Security 
+### Example 3: Enable Fraud Protection during sign-up with HUMAN Security 
 
 #### Request
 The following example shows a request that enables fraud protection during sign-up using HUMAN Security.

@@ -23,7 +23,7 @@ An insight representing files shared with or by a specific user. The following s
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List shared](../api/insights-list-shared.md) |[sharedInsight](insights-shared.md) collection| Get a list of shared files.|
+|[List shared (deprecated)](../api/insights-list-shared.md) | [sharedInsight](insights-shared.md) collection| Get a list of shared files. This API is deprecated and will stop returning data after November 2026.|
 
 ## Properties
 

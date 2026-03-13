@@ -1,16 +1,19 @@
 ---
-title: "fileSecurityState resource type"
+title: "fileSecurityState resource type (deprecated)"
 description: "Contains information about the file (not process) related to the alert."
 ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: security
 doc_type: resourcePageType
 ms.date: 07/22/2024
+ROBOTS: NOINDEX
 ---
 
-# fileSecurityState resource type
+# fileSecurityState resource type (deprecated)
 
 Namespace: microsoft.graph
+
+[!INCLUDE [security-alerts-v1-deprecation](../includes/security-alerts-v1-deprecation.md)]
 
 Contains information about the file (not process) related to the alert.
 

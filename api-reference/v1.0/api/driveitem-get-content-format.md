@@ -60,6 +60,10 @@ The following values are valid for the **format** parameter:
 
 ## Example
 
+### Request
+
+The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "convert-item-content", "scopes": "files.read" } -->
 
@@ -97,9 +101,9 @@ GET /me/drive/items/{item-id}/content?format={format}
 
 ---
 
-## Response
+### Response
 
-Returns a `302 Found` response redirecting to a preauthenticated download URL for the converted file.
+The following example shows the response. It returns a `302 Found` response redirecting to a preauthenticated download URL for the converted file.
 
 To download the converted file, your app must follow the `Location` header in the response.
 
@@ -114,7 +118,7 @@ Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 
 ### Error responses
 
-For more information about how errors are returned, see [Error Responses][error-response].
+For more information about how errors are returned, see [Error responses][error-response].
 
 [error-response]: /graph/errors
 [file-facet]: ../resources/file.md

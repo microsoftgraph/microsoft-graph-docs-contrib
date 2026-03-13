@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Retry the [orgContact](../resources/orgContact.md) service provisioning.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -30,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /orgContacts/{id}/retryServiceProvisioning
+POST /contacts/{id}/retryServiceProvisioning
 ```
 
 ## Request headers
@@ -58,7 +60,7 @@ The following example shows a request.
   "name": "orgcontact_retryserviceprovisioning"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/orgContacts/{id}/retryServiceProvisioning
+POST https://graph.microsoft.com/v1.0/contacts/{id}/retryServiceProvisioning
 ```
 
 ### Response

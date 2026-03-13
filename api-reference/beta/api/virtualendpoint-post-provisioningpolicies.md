@@ -116,6 +116,7 @@ Content-Type: application/json
         "locale": "en-US"
     },
     "provisioningType": "dedicated",
+    "userExperienceType": "cloudPc",
     "userSettingsPersistenceConfiguration": {
         "userSettingsPersistenceEnabled": true,
         "userSettingsPersistenceStorageSizeCategory": "fourGB"

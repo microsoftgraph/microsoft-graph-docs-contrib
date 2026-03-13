@@ -1,16 +1,19 @@
 ---
-title: "Get alert"
+title: "Get alert (deprecated)"
 description: " Retrieve the properties and relationships of an alert object."
 author: "preetikr"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
 ms.date: 04/04/2024
+ROBOTS: NOINDEX
 ---
 
-# Get alert
+# Get alert (deprecated)
 
 Namespace: microsoft.graph
+
+[!INCLUDE [security-alerts-v1-deprecation](../includes/security-alerts-v1-deprecation.md)]
 
  Retrieve the properties and relationships of an [alert](../resources/alert.md) object.
 

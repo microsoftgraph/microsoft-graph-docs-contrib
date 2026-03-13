@@ -1,11 +1,11 @@
 ---
 title: "gradualRolloutSettings resource type"
 description: "Represents settings for governing how to rollout content to devices."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: resourcePageType
-ms.date: 09/16/2024
+ms.date: 01/27/2026
 ---
 
 # gradualRolloutSettings resource type

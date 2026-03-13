@@ -1,11 +1,11 @@
 ---
 title: "deploymentAudience: updateAudienceById"
 description: "Update the members and exclusions collections of a deploymentAudience with updatableAsset resources of the same type."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: apiPageType
-ms.date: 08/31/2024
+ms.date: 01/27/2026
 ---
 
 # deploymentAudience: updateAudienceById
@@ -23,7 +23,7 @@ If the same [updatableAsset](../resources/windowsupdates-updatableasset.md) gets
 You can also use the method [updateAudience](windowsupdates-deploymentaudience-updateaudience.md) to update the **deploymentAudience**.
 
 > [!NOTE]
-> This API has a [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=13634) related to deployments created via Intune.
+> This API has a [known issue](/graph/known-issues#accessing-and-updating-deployment-audiences-is-not-supported) related to deployments created via Intune.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

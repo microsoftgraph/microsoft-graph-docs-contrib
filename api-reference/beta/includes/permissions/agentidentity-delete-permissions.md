@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permission|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)| AgentIdentity.DeleteRestore.All | Directory.ReadWrite.All |
+|Delegated (work or school account)| AgentIdentity.DeleteRestore.All | Not available |
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application| AgentIdentity.DeleteRestore.All, AgentIdentity.CreateAsManager | Directory.ReadWrite.All |
+|Application| AgentIdentity.DeleteRestore.All, AgentIdentity.CreateAsManager | Not available |
 

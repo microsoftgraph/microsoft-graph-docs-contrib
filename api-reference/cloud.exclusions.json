@@ -190,6 +190,22 @@
     "cloud": "China"
   },
   {
+    "fileName": "opentypeextension-post-opentypeextension.md",
+    "cloud": "China"
+  },
+  {
+    "fileName": "opentypeextension-get.md",
+    "cloud": "China"
+  },
+  {
+    "fileName": "opentypeextension-update.md",
+    "cloud": "China"
+  },
+  {
+    "fileName": "opentypeextension-delete.md",
+    "cloud": "China"
+  },
+  {
     "apiPath": "/teams/{team-id}/channels/{channel-id}/provisionEmail",
     "operation": "POST",
     "cloud": "UsGov"

@@ -1,7 +1,7 @@
 ---
 title: "List taskDefinitions"
 description: "Get a list of built-in tasks in Lifecycle Workflows."
-author: "AlexFilipin"
+author: "KristinaSmith"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType

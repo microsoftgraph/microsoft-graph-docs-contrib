@@ -4,7 +4,7 @@ description: In this tutorial, you'll build your first Microsoft Graph Data Conn
 author: rimisra2
 ms.author: rimisra
 ms.topic: how-to
-ms.date: 06/09/2025
+ms.date: 01/22/2026
 ms.localizationpriority: medium
 ---
 
@@ -60,7 +60,7 @@ To complete this tutorial, you need the following subscriptions or licenses.
 
 1. **Microsoft Azure subscription**
 
-   - If you don't have a Microsoft Azure subscription, visit the following link to get one (for free): [Create your Azure Free Account](https://azure.microsoft.com/free/).
+   - If you don't have a Microsoft Azure subscription, visit the following link to get one (for free): [Create your Azure Free Account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
    - Your Azure subscription must be in the same tenant as your Microsoft 365 tenant and both must be in the same Microsoft Entra tenancy.
    - If your Azure subscription isn't in the same tenant as your Microsoft 365 tenant, you can associate your subscription with Microsoft Entra ID in your Microsoft 365 tenant by following the steps listed in [Associate or add an Azure subscription to your Microsoft Entra tenant](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
 

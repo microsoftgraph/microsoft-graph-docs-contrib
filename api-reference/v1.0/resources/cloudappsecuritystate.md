@@ -1,16 +1,19 @@
 ---
-title: "cloudAppSecurityState resource type"
+title: "cloudAppSecurityState resource type (deprecated)"
 description: "Contains stateful information about the cloud application (destinationServiceName, destinationServiceIp)."
 ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: cloud-pc
 doc_type: resourcePageType
 ms.date: 03/21/2024
+ROBOTS: NOINDEX
 ---
 
-# cloudAppSecurityState resource type
+# cloudAppSecurityState resource type (deprecated)
 
 Namespace: microsoft.graph
+
+[!INCLUDE [security-alerts-v1-deprecation](../includes/security-alerts-v1-deprecation.md)]
 
 Contains stateful information about the cloud application (destinationServiceName, destinationServiceIp).
 

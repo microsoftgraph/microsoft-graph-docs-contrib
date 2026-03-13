@@ -1,6 +1,6 @@
 ---
 title: "teamsPolicyUserAssignment resource type"
-description: "Represents a Teams policy assignment object used to assign or unassign a policy for a specific user."
+description: "Represents a teamsPolicyAssignment object used to assign or unassign a policy for a specific user."
 author: "praspatil05"
 ms.date: 08/14/2025
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.teamsAdministration
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Teams policy assignment object used to assign or unassign a policy for a specific user. It includes the user's ID, the type of policy (for example, `TeamsMeetingBroadcastPolicy`), and the targeted policy ID.
+Represents a [teamsPolicyAssignment](../resources/teamsadministration-teamspolicyassignment.md) object used to assign or unassign a policy for a specific user. It includes the user's ID, the type of policy (for example, `teamsMeetingBroadcastPolicy`), and the targeted policy ID.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -28,7 +28,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |policyId|String|The unique identifier (GUID) of the policy within the specified policy type.|
-|policyType|String|The type of Teams policy assigned or unassigned, such as `TeamsMeetingBroadcastPolicy`.|
+|policyType|String|The type of Teams policy assigned or unassigned, such as `teamsMeetingBroadcastPolicy`.|
 |userId|String|The unique identifier (GUID) of the user.|
 
 ## Relationships

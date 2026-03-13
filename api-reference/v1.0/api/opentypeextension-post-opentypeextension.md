@@ -18,7 +18,7 @@ The table in the [Permissions](#permissions) section lists the resources that su
 
 > **Note:** If you're creating open extensions on Outlook resources, see **Outlook-specific considerations** in [openTypeExtension resource type](../resources/opentypeextension.md#outlook-specific-considerations).
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -552,7 +552,7 @@ Content-Length: 0
 
 ### Example 5: Create an extension in a new group post using POST operation
 
-#### Request 5
+#### Request
 
 The following example creates an extension in a new group post using the same POST operation to create a conversation. The POST operation
 creates a new conversation, thread and post, and a new extension embedded in the post. The request body includes the

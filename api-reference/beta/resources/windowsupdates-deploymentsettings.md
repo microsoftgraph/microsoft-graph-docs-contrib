@@ -1,11 +1,11 @@
 ---
 title: "deploymentSettings resource type"
 description: "Represents settings that determine when and how Windows Autopatch deploys an update."
-author: "ryan-k-williams"
+author: "andredm7"
 ms.localizationpriority: medium
 ms.subservice: windows-autopatch
 doc_type: resourcePageType
-ms.date: 09/16/2024
+ms.date: 01/27/2026
 ---
 
 # deploymentSettings resource type

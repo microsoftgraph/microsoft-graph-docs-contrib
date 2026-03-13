@@ -59,7 +59,7 @@ The following table shows the properties that are required when you create the [
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceCompliancePolicy](../resources/intune-shared-devicecompliancepolicy.md)|
 |passcodeBlockSimple|Boolean|Indicates whether or not to block simple passcodes.|
-|passcodeExpirationDays|Int32|Number of days before the passcode expires. Valid values 1 to 65535|
+|passcodeExpirationDays|Int32|Number of days before the passcode expires. Starting January 2026 (Intune release version: 2601), the maximum expiration days will be limited to 730 days. Any setting above 730 days will be default to 730 days. Valid values 1 to 65535|
 |passcodeMinimumLength|Int32|Minimum length of passcode. Valid values 4 to 14|
 |passcodeMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a passcode is required.|
 |passcodeMinutesOfInactivityBeforeScreenTimeout|Int32|Minutes of inactivity before the screen times out.|

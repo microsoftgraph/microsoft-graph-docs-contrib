@@ -52,6 +52,8 @@ This method returns a [DriveItem](../resources/driveitem.md) for the item being 
 
 ## Example
 
+### Request
+
 This example follows an item identified by `{item-id}`.
 
 
@@ -103,6 +105,8 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{item-id}/follow
   ]
 }
 -->
+
+### Response
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Remove an item from a [bundle][].
 
-[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

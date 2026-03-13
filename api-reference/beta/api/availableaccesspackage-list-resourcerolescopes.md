@@ -25,6 +25,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "availableaccesspackage_list_resourcerolescopes" } -->
 [!INCLUDE [permissions-table](../includes/permissions/availableaccesspackage-list-resourcerolescopes-permissions.md)]
 
+> [!NOTE]
+> This API call follows Entitlement Management scope rules. It only returns resource role scopes that the signed‑in user is allowed to see or request. Being an admin doesn’t override these checks—admins also need to be in scope for the access package to retrieve its resource role scopes.
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->

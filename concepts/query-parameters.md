@@ -73,7 +73,7 @@ The following OData 4.0 capabilities are URL segments, not query parameters.
 Percent-encode query parameter values according to [RFC 3986](https://www.rfc-editor.org/rfc/rfc3986#section-2.2). All reserved characters in query strings must be percent-encoded. Many HTTP clients, browsers, and tools (such as the [Graph Explorer][graph-explorer]) handle this encoding automatically. If a query fails, a possible cause is failure to encode the query parameter values appropriately. Sometimes, you need to double-encode values.
 
 > [!NOTE]
-> There's a known issue with encoding ampersand (&) symbols in `$search` expressions on the *v1.0* endpoint. For more information about the issue and the recommended workaround, see [Known issue: $search for directory objects fails for encoded ampersand (&) character](https://developer.microsoft.com/en-us/graph/known-issues/?search=18185).
+> There's a known issue with encoding ampersand (&) symbols in `$search` expressions on the *v1.0* endpoint. For more information about the issue and the recommended workaround, see [Known issue: $search for directory objects fails for encoded ampersand (&) character](/graph/known-issues#search-for-directory-objects-fails-for-encoded-ampersand-character).
 
 For example, an unencoded URL looks like this:
 
@@ -394,7 +394,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 > [!NOTE]
 > + Not all relationships and resources support the `$expand` query parameter. For example, you can expand the **directReports**, **manager**, and **memberOf** relationships on a user, but you can't expand its **events**, **messages**, or **photo** relationships. Not all resources or relationships support using `$select` on expanded items. 
 > 
-> + With Microsoft Entra resources that derive from [directoryObject](/graph/api/resources/directoryobject), like [user](/graph/api/resources/user) and [group](/graph/api/resources/group), `$expand` typically returns a maximum of 20 items for the expanded relationship and has no [@odata.nextLink](./paging.md). For details, see [query parameter limitations](https://developer.microsoft.com/en-us/graph/known-issues/?search=13635).
+> + With Microsoft Entra resources that derive from [directoryObject](/graph/api/resources/directoryobject), like [user](/graph/api/resources/user) and [group](/graph/api/resources/group), `$expand` typically returns a maximum of 20 items for the expanded relationship and has no [@odata.nextLink](./paging.md). For details, see [query parameter limitations](/graph/known-issues#some-limitations-apply-to-query-parameters).
 >
 > + `$expand` isn't currently supported with [advanced queries](/graph/aad-advanced-queries).
 

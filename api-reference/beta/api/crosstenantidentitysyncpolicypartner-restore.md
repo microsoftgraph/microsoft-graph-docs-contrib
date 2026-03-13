@@ -118,6 +118,7 @@ Content-Type: application/json
   "displayName": null,
   "deletedDateTime": "2025-06-18T23:14:25Z",
   "externalCloudAuthorizedApplicationId": null,
+  "groupSyncInbound": null,
   "userSyncInbound": null
 }
 ```

@@ -22,6 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "security_ediscoverycase_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-ediscoverycase-update-permissions.md)]
+[!INCLUDE [rbac-rbac-ediscovery-apis-write](../includes/rbac-for-apis/rbac-ediscovery-apis-write.md)]
 
 ## HTTP request
 

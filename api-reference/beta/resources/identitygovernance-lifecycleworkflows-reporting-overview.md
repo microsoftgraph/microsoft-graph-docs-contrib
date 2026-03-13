@@ -2,7 +2,7 @@
 title: "Lifecycle Workflow reporting API Overview"
 description: "You can use Lifecycle Workflows reporting features to gain insight into how lifecycle workflows were processed for users in your organization. Auditable logs are also available to track all events relating to Lifecycle Workflows in your tenant."
 ms.localizationpriority: medium
-author: "AlexFilipin"
+author: "KristinaSmith"
 ms.subservice: "entra-id-governance"
 doc_type: conceptualPageType
 ms.date: 11/17/2022
@@ -35,7 +35,7 @@ These auditable logs are represented by the [directoryAudit resource type](/grap
 
 ## License checks
 
-Using this feature requires Microsoft Entra ID Governance licenses. To find the right license for your requirements, see [Compare generally available features of Micorosft Microsoft Entra ID](https://www.microsoft.com/security/business/identity-access-management/azure-ad-pricing).
+Using this feature requires Microsoft Entra ID Governance licenses. To find the right license for your requirements, see [Compare generally available features of Microsoft Entra ID](https://www.microsoft.com/security/business/identity-access-management/azure-ad-pricing).
 
 ## Role and application permission authorization checks
 

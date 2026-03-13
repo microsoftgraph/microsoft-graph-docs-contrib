@@ -47,6 +47,14 @@ The following table shows the least privileged permission or permissions require
 GET /directory/deletedItems/{object-id}
 ```
 
+> [!IMPORTANT]
+> For soft deleted security groups, the **securityEnabled** property returns `false` instead of `true` due to a known limitation.
+>
+> To identify the group type, use the **groupTypes** property:
+>
+> - `["Unified"]`indicates a Microsoft 365 group.
+> - An empty array (`[]`) indicates a security group.
+
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
@@ -138,8 +146,5 @@ Content-type: application/json
   "type": "#page.annotation",
   "description": "Get directory",
   "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
+  "suppressions": []
 }-->

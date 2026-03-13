@@ -1,6 +1,6 @@
 ---
 title: "assign action"
-description: "Intune Onboarding Deviceenrollmentconfiguration Assign Source_Api ."
+description: "Intune Onboarding Deviceenrollmentconfiguration Assign Api ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"

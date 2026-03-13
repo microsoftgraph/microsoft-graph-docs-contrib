@@ -55,7 +55,7 @@ The following table lists the parameters that are required when you call this ac
 |displayName|String| The name of the remediation that is used as a reference in the action center. |
 |description|String| The description of the remediation. |
 |severity|microsoft.graph.security.remediationSeverity| The severity of the remediation. The possible values are: `low`, `medium`, `high`, `unknownFutureValue`.|
-|action|microsoft.graph.security.remediationAction|The types of move and delete actions that are supported. The possible values are: `moveToJunk`, `moveToInbox`, `hardDelete`, `softDelete`, `moveToDeletedItems`, `unknownFutureValue`.|
+|action|microsoft.graph.security.remediationAction|The types of move and delete actions that are supported. The possible values are: `moveToJunk`, `moveToInbox`, `hardDelete`, `softDelete`, `moveToDeletedItems`, `unknownFutureValue`, `moveToQuarantine`. Use the `Prefer: include-unknown-enum-members` request header to get the following members from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `moveToQuarantine`. |
 |remediateSendersCopy|Boolean| For internal or outbound email, indicates whether to remediate the sender's copy of an email. |
 |analyzedEmails|[microsoft.graph.security.analyzedEmail](../resources/security-analyzedemail.md) collection| Contains the **networkMessageId** and **recipientEmailAddress** values of the analyzed emails. |
 

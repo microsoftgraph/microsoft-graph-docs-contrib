@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "63571f7b-e1cf-4ebc-8002-4fd80c16828b",
+          "ApiChange": "Member",
+          "ChangedApiName": "group",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `group` member from the **siteTemplateType** enumeration.",
+          "Target": "siteTemplateType"
+        }
+      ],
+      "Id": "63571f7b-e1cf-4ebc-8002-4fd80c16828b",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-02-06T15:52:02.6103372Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "9691c063-a19a-4ceb-a004-c00663d25264",
           "ApiChange": "Parameter",
           "ChangedApiName": "listItem",

@@ -23,7 +23,7 @@ An insight representing documents used by a specific user. The insights return t
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List used](../api/insights-list-used.md) |[usedInsight](insights-used.md) collection| Get a list of used files.|
+|[List used (deprecated)](../api/insights-list-used.md) |[usedInsight](insights-used.md) collection| Get a list of used files. This API is deprecated and will stop returning data after November 2026.|
 
 ## Properties
 

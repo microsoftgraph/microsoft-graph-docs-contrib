@@ -1,6 +1,6 @@
 ---
 title: "scheduleActionsForRules action"
-description: "Intune Deviceconfig Devicecompliancepolicy Scheduleactionsforrules Source_Api ."
+description: "Intune Deviceconfig Devicecompliancepolicy Scheduleactionsforrules Api ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"

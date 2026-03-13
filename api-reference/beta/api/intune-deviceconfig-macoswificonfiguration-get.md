@@ -68,7 +68,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1766
+Content-Length: 1817
 
 {
   "value": {
@@ -114,6 +114,7 @@ Content-Length: 1766
     "proxyManualPort": 15,
     "proxyAutomaticConfigurationUrl": "https://example.com/proxyAutomaticConfigurationUrl/",
     "deploymentChannel": "userChannel",
+    "wifiRequirePhysicalMacAddressEnabled": true,
     "preSharedKey": "Pre Shared Key value"
   }
 }

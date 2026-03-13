@@ -22,7 +22,7 @@ To monitor future changes, call the **delta** API by using the **@odata.deltaLin
 
 Any resources marked as deleted should be removed from your local state.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

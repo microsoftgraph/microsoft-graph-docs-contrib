@@ -62,6 +62,8 @@ If successful, this action returns a `204 No Content` response code.
 
 ## Examples
 
+### Example 1: Activate a workflow with a specific scope of 2 users
+
 ### Request
 
 The following example shows a request.
@@ -116,3 +118,81 @@ The following example shows the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+
+### Example 2: Activate a workflow with a specific scope of 2 users who don't exist
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "lifecycleworkflows_workflowthis.activatescope_invalid"
+}
+-->
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows/2f0dcb02-65d9-4369-bad5-a3174538c5ff/activatewithscope
+Content-Type: application/json
+
+{
+    "subjects": [ 
+        { "id": "2ea4c363-4b85-4529-b2ec-53b64308f39f"},
+        { "id": "44fc5392-9485-4348-871e-2ea17cc0a1b8"}
+    ]
+}
+```
+
+#### Response
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+```http
+HTTP/1.1 406 NOT Acceptable
+```
+
+### Example 3: Activate a workflow with a specific processing result scope
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "lifecycleworkflows_workflowthis.activatescope_processingresultscope"
+}
+-->
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workflows/2f0dcb02-65d9-4369-bad5-a3174538c5ff/activatewithscope
+Content-Type: application/json
+
+{
+ "scope": {
+  "@odata.type": "microsoft.graph.identityGovernance.activateProcessingResultScope",
+  "processingResults": [
+   {
+    "id": "abc12345-265a-4e8f-8d61-94a2dcd2d395_1_78799042-265a-4e8f-8d61-94a2dcd2d395_638927021459371237_0cdd8963-aaaa-4632-a1f2-aaaa7230aaaa"
+   },
+   {
+    "id": "abc12345-265a-4e8f-8d61-94a2dcd2d395_1_78799042-265a-4e8f-8d61-94a2dcd2d395_388131231459357126_aaaa8963-1c30-4632-aaaa-ac96723069cb"
+   }
+  ],
+  "taskScope": "allTasks"
+ }
+}
+```
+
+#### Response
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+```http
+HTTP/1.1 204 No Content
+```
+

@@ -33,10 +33,10 @@ The following limitations apply to this API:
 
 |Property|Type|Description|
 |:---|:---|:---|
+|expirationDateTime|DateTimeOffset|Expiration date time of the restore point.|
 |id|String|ID of the restore point.|
 |protectionDateTime|DateTimeOffset|Date time when the restore point was created.|
-|expirationDateTime|DateTimeOffset|Expiration date time of the restore point.|
-|tags|[restorePointTags](../resources/restorepoint.md#restorepointtags-values)|The type of the restore point. The possible values are: `none`, `fastRestore`, `unknownFutureValue`.|
+|tags|[restorePointTags](../resources/restorepoint.md#restorepointtags-values)|The type of the restore point. The possible values are: `none`, `fastRestore`, `unknownFutureValue`, `includeNewerItems`. Use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `includeNewerItems`.|
 
 ### restorePointTags values
 
@@ -44,7 +44,8 @@ The following limitations apply to this API:
 |:------|:------------|
 |none   | No tag.      |
 |fastRestore | Get a fast restore point.|
-|unknownFutureValue | Evolvable enumeration sentinel value. Do not use.|
+|unknownFutureValue | Evolvable enumeration sentinel value. Don't use.|
+|includeNewerItems | Get a restore point within a given time period that includes newer items created during that period.|
 
 ## Relationships
 

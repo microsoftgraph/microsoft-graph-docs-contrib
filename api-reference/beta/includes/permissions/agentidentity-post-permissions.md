@@ -8,5 +8,5 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)| Not supported. | Not supported. |
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|AgentIdentity.CreateAsManager, AgentIdentity.Create.All | Directory.ReadWrite.All |
+|Application|AgentIdentity.CreateAsManager, AgentIdentity.Create.All | Not available |
 
