@@ -60,10 +60,6 @@ items:
       href: ../../api/storyline-follow.md
     - name: Unfollow user
       href: ../../api/storyline-unfollow.md
-    - name: List followers
-      href: ../../api/storyline-list-followers.md
-    - name: List followings
-      href: ../../api/storyline-list-followings.md
   - name: Storyline follower
     items:
     - name: Storyline follower
