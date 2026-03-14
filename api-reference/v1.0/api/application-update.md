@@ -13,7 +13,7 @@ ms.custom: sfi-ropc-nochange
 
 Namespace: microsoft.graph
 
-Update the properties of an [application](../resources/application.md) object.
+Update the properties of an [application](../resources/application.md) object. This API can also update an [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object when the **@odata.type** property is set to `#microsoft.graph.agentIdentityBlueprint`.
 
 > [!IMPORTANT]
 > Using PATCH to set [**passwordCredential**](../resources/passwordcredential.md) is not supported. Use the [addPassword](./application-addpassword.md) and [removePassword](./application-removepassword.md) methods to update the password or secret for an application.

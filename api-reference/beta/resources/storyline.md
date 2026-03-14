@@ -24,8 +24,6 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |[Follow user](../api/storyline-follow.md)|None|Follow a user in the organization.|
 |[Unfollow user](../api/storyline-unfollow.md)|None|Remove the specified user from the signed-in user's following list.|
-|[List followers](../api/storyline-list-followers.md)|[storylineFollower](../resources/storylinefollower.md) collection|Get a list of users who are following a specified user.|
-|[List followings](../api/storyline-list-followings.md)|[storylineFollowing](../resources/storylinefollowing.md) collection|Get a list of users that the specified user is following.|
 
 ## Properties
 |Property|Type|Description|
@@ -54,4 +52,3 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)"
 }
 ```
-

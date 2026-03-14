@@ -46,6 +46,7 @@ For a tutorial about configuring Application Proxy, see [Automate the configurat
 |onPremisesApplicationSegments (deprecated)| [onPremisesApplicationSegment](onpremisesapplicationsegment.md) collection| Represents the application segment collection for an on-premises wildcard application. This property is deprecated and will stop returning data on June 1, 2023. Use **segmentsConfiguration** instead. |
 |segmentsConfiguration|[segmentConfiguration](segmentconfiguration.md)| Represents the collection of application segments for an on-premises wildcard application that's published through Microsoft Entra application proxy.|
 |singleSignOnSettings|[onPremisesPublishingSingleSignOn](onpremisespublishingsinglesignon.md)| Represents the single sign-on configuration for the on-premises application. |
+|trafficRoutingMethod|trafficRoutingMethod| Indicates how traffic is distributed across multiple connectors in a connector group. The possible values are: `none`, `random`, `sessionPersistence`, `performance` (Not implemented), `unknownFutureValue`. |
 |useAlternateUrlForTranslationAndRedirect|Boolean|Indicates whether the application should use **alternateUrl** instead of **externalUrl**.|
 |verifiedCustomDomainCertificatesMetadata|[verifiedCustomDomainCertificatesMetadata](verifiedcustomdomaincertificatesmetadata.md)| Details of the certificate associated with the application when a custom domain is in use. `null` when using the default domain. Read-only.|
 |verifiedCustomDomainKeyCredential|[keyCredential](keycredential.md)| The associated key credential for the custom domain used. |
@@ -89,6 +90,7 @@ The following JSON representation shows the resource type.
   "onPremisesApplicationSegments":[{"@odata.type":"microsoft.graph.onPremisesApplicationSegment"}],
   "segmentsConfiguration":{"@odata.type":"microsoft.graph.segmentConfiguration"},
   "singleSignOnSettings": {"@odata.type": "microsoft.graph.onPremisesPublishingSingleSignOn"},
+  "trafficRoutingMethod": "String",
   "useAlternateUrlForTranslationAndRedirect": "Boolean",
   "verifiedCustomDomainCertificatesMetadata": {"@odata.type": "microsoft.graph.verifiedCustomDomainCertificatesMetadata"},
   "verifiedCustomDomainKeyCredential": {"@odata.type": "microsoft.graph.keyCredential"},

@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "35b725b2-d2c0-47ad-bcb0-8f07d8b0f303",
+          "ApiChange": "Property",
+          "ChangedApiName": "isEntraIntegrated",
+          "ChangeType": "Addition",
+          "Description": "Added the **isEntraIntegrated** property to the [applicationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/applicationTemplate?view=graph-rest-beta) resource.",
+          "Target": "applicationTemplate"
+        }
+      ],
+      "Id": "35b725b2-d2c0-47ad-bcb0-8f07d8b0f303",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-03-13T10:19:20.4137727Z",
+      "WorkloadArea": "Applications",
+      "SubArea": "Application template"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "669c182d-5661-4365-bcd6-9b201ac1fbbe",
           "ApiChange": "Property",
           "ChangedApiName": "allowedTenantIds",
