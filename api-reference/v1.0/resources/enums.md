@@ -3239,6 +3239,16 @@ Possible values for user account types (group membership), per Windows definitio
 | Disabled |
 | Paused |
 
+### scopeCollectionKind values 
+
+|Member|
+|:---|
+|allAllowed|
+|enumerated|
+|none|
+|scopeKindNotSet|
+|unknownFutureValue|
+
 ### scopeOperatorMultiValuedComparisonType values
 
 | Member |

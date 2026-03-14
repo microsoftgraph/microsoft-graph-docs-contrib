@@ -94,6 +94,17 @@ Updated the admin consent requirement for the following delegated permissions re
 - Added the **resourceBehaviorOptions** and **resourceProvisioningOptions** properties to the [group](/graph/api/resources/group) resource. These properties enable you to specify group behaviors and associated resources for a Microsoft 365 group.
 - Added a known issue: For soft deleted security groups, the **securityEnabled** property returns `false` instead of `true`. To identify the group type, use the **groupTypes** property where `["Unified"]` indicates a Microsoft 365 group and an empty array (`[]`) indicates a security group. For more information, see [Get deleted item](/graph/api/directory-deleteditems-get) and [List deleted items](/graph/api/directory-deleteditems-list).
 
+### Identity and access | Directory management
+
+- Introduced the Agent Identity API to support registration and management of AI agents in Microsoft Entra ID. This API enables agent builders and tenant admins to:
+  - Create [agent identity blueprints](/graph/api/resources/agentidentityblueprint) as base definitions for agents
+  - Configure [inheritable permissions](/graph/api/resources/inheritablepermission) that control which scopes can be inherited by agent instances
+  - Create [agent identity blueprint principals](/graph/api/resources/agentidentityblueprintprincipal) as tenant-specific representations
+  - Create multiple [agent identity](/graph/api/resources/agentidentity) instances from a single blueprint for multi-instancing scenarios
+  - Manage sponsors who can authorize and manage agent lifecycles
+
+  The API also introduces supporting types including [inheritableScopes](/graph/api/resources/inheritablescopes), [allAllowedScopes](/graph/api/resources/allallowedscopes), [enumeratedScopes](/graph/api/resources/enumeratedscopes), [noScopes](/graph/api/resources/noscopes), and the **scopeCollectionKind** enumeration.
+
 ### Device and app management | Cloud PC
 
 - Added [configureAgent](/graph/api/cloudpcexternalpartner-configureagent?view=graph-rest-beta&preserve-view=true) as a new action for [cloudpcexternalpartner](/graph/api/resources/cloudpcexternalpartner?view=graph-rest-beta&preserve-view=true).
