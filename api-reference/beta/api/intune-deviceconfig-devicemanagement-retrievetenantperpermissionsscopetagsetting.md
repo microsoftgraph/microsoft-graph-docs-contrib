@@ -1,4 +1,4 @@
----
+﻿---
 title: "retrieveTenantPerPermissionsScopeTagSetting function"
 description: "This function will return True if the tenant has per permission scope tags enabled or false if the tenant does not have per permission scope tags enabled."
 author: "jaiprakashmb"
@@ -25,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## HTTP Request
 <!-- {

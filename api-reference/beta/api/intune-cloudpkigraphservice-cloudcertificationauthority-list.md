@@ -1,4 +1,4 @@
----
+﻿---
 title: "List cloudCertificationAuthorities"
 description: "List properties and relationships of the cloudCertificationAuthority objects."
 author: "jaiprakashmb"
@@ -25,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementCloudCA.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementCloudCA.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
