@@ -53,7 +53,7 @@ The following table lists the parameters that you can use with this action.
 |filter|String|OData `$filter` syntax. Supported filters are: `and`, `or`, `gt` ,`ge`, and `eq`. Optional.|
 |groupBy|String collection|A list of columns that describe how to group the data in the report. Optional.|
 |orderBy|String collection|Specifies the order by column name. Optional.|
-|reportName|[cloudPCTroubleshootReportType](../resources/cloudpcreports.md#cloudpctroubleshootreporttype-values)|The report name. The possible values are: `troubleshootDetailsReport`, `troubleshootTrendCountReport`, `troubleshootRegionalReport`, `unknownFutureValue`, `troubleshootIssueCountReport`. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `troubleshootIssueCountReport`. The default value is `troubleshootDetailsReport`.|
+|reportName|[cloudPCTroubleshootReportType](../resources/cloudpcreports.md#cloudpctroubleshootreporttype-values)|The report name. The possible values are: `troubleshootGetLatestDeviceReport`, `troubleshootGetProvisionCountReport`, `troubleshootGetRegionFilterQueryReport`, `troubleshootGetCloudPCTypeFilterQueryReport`, `troubleshootTenantGlobalFilterReport`, `troubleshootTenantNetworkTrendReport`, `troubleshootTenantNetworkAggregatedReport`, `troubleshootTenantConnectionFailureRateTrendReport`, `troubleshootTenantConnectionFailureRateAggregatedReport`, `troubleshootTenantConnectionCountTrendReport`, `troubleshootTenantConnectionCountAggregatedReport`, `troubleshootTenantCloudPCHealthTrendReport`, `troubleshootTenantCloudPCHealthAggregatedReport`, `troubleshootTenantActiveConnectionCountTrendReport`, `troubleshootTenantActiveConnectionCountAggregatedReport`, `troubleshootTenantMTTFTrendReport`, `troubleshootTenantMTTFAggregatedReport`, `troubleshootTenantMTTRTrendReport`, `troubleshootTenantMTTRAggregatedReport`, `troubleshootTenantRemoteSignInTimeTrendReport`, `troubleshootTenantRemoteSignInTimeAggregatedReport`, `troubleshootConfigurationConnectionCountTrendReport`, `troubleshootConfigurationTotalConnectionCountBarReport`, `troubleshootConfigurationGlobalFilterReport`, `troubleshootConnectionConfigurationOfViewDataTableReport`, `troubleshootEventsOfViewDataTableReport`, `troubleshootTenantMetricsOfViewDataTableReport`, `troubleshootCloudPCMetricsOfViewDataTableReport`, `troubleshootTenantEnvironmentMetricsOfViewDataTableReport`, `troubleshootCloudPCEnvironmentMetricsOfViewDataTableReport`, `troubleshootConfigurationConnectionCountTrendV1Report`, `troubleshootConfigurationTotalConnectionCountBarV1Report`, `troubleshootConfigurationGlobalFilterV1Report`, `troubleshootConnectionConfigurationOfViewDataTableV1Report`, `troubleshootEnvironmentOverviewOfViewDataTableReport`, `troubleshootTenantConnectedDevicesOfViewDataTableReport`, `troubleshootCloudPCNetworkTrendReport`, `troubleshootCloudPCNetworkAggregatedReport`, `troubleshootCloudPCErrorTrendReport`, `troubleshootCloudPCErrorAggregatedReport`, `troubleshootCloudPCDurationTrendReport`, `troubleshootCloudPCDurationAggregatedReport`, `troubleshootCloudPCListReport`, `troubleshootCloudPCHealthTrendReport`, `troubleshootMatchedUserReport`, `troubleshootMatchedCloudPCReport`, `troubleshootUserListReport`, `unknownFutureValue`. The default value is `troubleshootGetLatestDeviceReport`.|
 |search|String|The search string. Optional.|
 |select|String collection|OData `$select` syntax. The selected columns of the reports. Optional.|
 |skip|Int32|Number of records to skip. Optional.|
@@ -63,76 +63,198 @@ The following table lists the parameters that you can use with this action.
 
 If successful, this action returns a `200 OK` response code and a Stream in the response body.
 
-The following table describes the columns in the returned report when you specify `troubleshootRegionalReport` for the **reportName** property in your API call.
+### Tenant Reports
 
-| Member                       | Description                                                                           |
-|:-----------------------------|:--------------------------------------------------------------------------------------|
-| AvgBandwidthInMbps           | The average available bandwidth in Mbps of certain `HostRegion`-`GatewayRegion` pair.     |
-| AvgRoundTripTimeInMs         | The average round trip time in milliseconds of certain `HostRegion`-`GatewayRegion` pair. |
-| BandwidthIssueCount          | The number of Cloud PC instances with available bandwidth issues.                     |
-| BandwidthStabilityIssueCount | The number of Cloud PC instances with bandwidth stability issues.                     |
-| ConnectErrorIssueCount       | The number of Cloud PC instances with connection error issues.                        |
-| ConnectionErrorCount         | The number of connection errors in certain `HostRegion`-`GatewayRegion` pair.             |
-| ConnectionQualityIssueCount  | The number of Cloud PC instances with connection quality issues.                      |
-| GatewayRegion                | The region where the gateway is located.                                              |
-| HostRegion                   | The region where the Cloud PC provision is located.                                   |
-| RTTIssueCount                | The number of Cloud PC instances with round-trip time issues.                         |
-| RTTStabilityIssueCount       | The number of Cloud PC instances with round-trip time stability issues.               |
-| StabilityIssueCount          | The number of Cloud PC instances with stability issues.                               |
-
-The following table describes the columns in the returned report when you specify `troubleshootDetailsReport` for the **reportName** property in your API call.
+The following table describes the columns in the returned report when you specify `troubleshootTenantGlobalFilterReport` for the **reportName** property in your API call.
 
 | Member                      | Description                                    |
 |:----------------------------|:-----------------------------------------------|
-| AvailableBandwidthInMbpsAvg | The average available bandwidth in Mbps.       |
-| ConnectionErrorCount        | The number of connection errors.               |
-| CurrentCPU                  | The current CPU usage of the resource.         |
-| CurrentDiskInGB             | The current disk usage in GB.                  |
-| CurrentRamInGB              | The current RAM usage in GB.                   |
-| CurrentSize                 | The current size of the resource.              |
-| HasNetworkIssue             | Indicates a network issue.                     |
-| HasPerformanceIssue         | Indicates a performance issue.                 |
-| HasReliabilityIssue         | Indicates a reliability issue.                 |
-| ProvisionPolicyName         | The name of the provision policy.              |
-| RecommendedRamInGB          | The recommended RAM usage in GB.               |
-| RecommendedCPU              | The recommended CPU usage for the resource.    |
-| RecommendedDiskInGB         | The recommended disk usage in GB.              |
-| RecommendedSize             | The recommended size for the resource.         |
-| RoundTripTimeInMsAvg        | The average round-trip time in milliseconds.   |
-| UsageInsight                | Insights on the current usage of the resource. |
+| TenantId                    | The unique identifier of the tenant.          |
+| PolicyName                  | The name of the policy applied.               |
+| Region                      | The region where the Cloud PC is located.     |
+| UserSettingName             | The name of the user setting configuration.   |
+| ServicePlanType             | The Cloud PC service plan type (FrontlineShared, FrontlineDedicated, Enterprise, or Reserve). |
+| ServicePlanName             | The name of the service plan.                 |
+| OSBuildVersion              | The operating system build version.           |
+| AADJoinType                 | The Azure Active Directory join type.         |
+| ImageName                   | The name of the OS image used.                |
+| GatewayRegion               | The region where the gateway is located.      |
+| ClientOS                    | The client operating system.                  |
+| ClientType                  | The type of client device.                    |
+| TransportType               | The transport protocol type used.             |
 
-The following table describes the columns in the returned report when you specify `troubleshootTrendCountReport` for the **reportName** property in your API call.
+The following table describes the columns in the returned report when you specify `troubleshootTenantNetworkTrendReport` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| AvgRoundTripTimeInMs        | The average round trip time in milliseconds.  |
+| TenantId                    | The unique identifier of the tenant.          |
+| EventDateTime               | The date and time when the event occurred.    |
+| GroupColumn                 | The metric used for grouping data (PolicyName, Region, UserSettingName, ServicePlanType, ServicePlanName, OSBuildVersion, AADJoinType, ImageName, GatewayRegion, ClientOS, ClientType, TransportType, CloudPCEndpointCountryRegion, CloudPCEndpointState, or CloudPCEndpointCity). |
+
+The following table describes the columns in the returned report when you specify `troubleshootTenantNetworkAggregatedReport` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| AvgRoundTripTimeInMs        | The average round trip time in milliseconds.  |
+| TenantId                    | The unique identifier of the tenant.          |
+| GroupColumn                 | The metric used for grouping data (PolicyName, Region, UserSettingName, ServicePlanType, ServicePlanName, OSBuildVersion, AADJoinType, ImageName, GatewayRegion, ClientOS, ClientType, TransportType, CloudPCEndpointCountryRegion, CloudPCEndpointState, or CloudPCEndpointCity). |
+
+The following table describes the columns in the returned report when you specify `troubleshootTenantConnectionFailureRateTrendReport` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| SuccessCount                | The number of successful connections.          |
+| FailCount                   | The number of failed connections.              |
+| CompletedConnectionCount    | The total number of completed connection attempts. |
+| ConnectionFailureRate       | The rate of connection failures as a percentage. |
+| TenantId                    | The unique identifier of the tenant.          |
+| EventDateTime               | The date and time when the event occurred.    |
+| GroupColumn                 | The metric used for grouping data (PolicyName, Region, UserSettingName, ServicePlanType, ServicePlanName, OSBuildVersion, AADJoinType, ImageName, GatewayRegion, ClientOS, ClientType, TransportType, CloudPCEndpointCountryRegion, CloudPCEndpointState, or CloudPCEndpointCity). |
+
+The following table describes the columns in the returned report when you specify `troubleshootTenantConnectionFailureRateAggregatedReport` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| SuccessCount                | The number of successful connections.          |
+| FailCount                   | The number of failed connections.              |
+| CompletedConnectionCount    | The total number of completed connection attempts. |
+| ConnectionFailureRate       | The rate of connection failures as a percentage. |
+| TenantId                    | The unique identifier of the tenant.          |
+| GroupColumn                 | The metric used for grouping data (PolicyName, Region, UserSettingName, ServicePlanType, ServicePlanName, OSBuildVersion, AADJoinType, ImageName, GatewayRegion, ClientOS, ClientType, TransportType, CloudPCEndpointCountryRegion, CloudPCEndpointState, or CloudPCEndpointCity). |
+
+The following table describes the columns in the returned report when you specify `troubleshootTenantCloudPCHealthTrendReport` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| HealthPercentage            | The health percentage of Cloud PC systems.    |
+| TenantId                    | The unique identifier of the tenant.          |
+| EventDateTime               | The date and time when the event occurred.    |
+| GroupColumn                 | The metric used for grouping data (PolicyName, Region, UserSettingName, ServicePlanType, ServicePlanName, OSBuildVersion, AADJoinType, ImageName, GatewayRegion, ClientOS, ClientType, TransportType, CloudPCEndpointCountryRegion, CloudPCEndpointState, or CloudPCEndpointCity). |
+
+The following table describes the columns in the returned report when you specify `troubleshootTenantCloudPCHealthAggregatedReport` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| HealthPercentage            | The health percentage of Cloud PC systems.    |
+| TenantId                    | The unique identifier of the tenant.          |
+| GroupColumn                 | The metric used for grouping data (PolicyName, Region, UserSettingName, ServicePlanType, ServicePlanName, OSBuildVersion, AADJoinType, ImageName, GatewayRegion, ClientOS, ClientType, TransportType, CloudPCEndpointCountryRegion, CloudPCEndpointState, or CloudPCEndpointCity). |
+
+The following table describes the columns in the returned report when you specify `troubleshootTenantActiveConnectionCountTrendReport` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| TotalActiveConnectionCountAvg | The average count of total active connections. |
+| TenantId                    | The unique identifier of the tenant.          |
+| EventDateTime               | The date and time when the event occurred.    |
+| GroupColumn                 | The metric used for grouping data (PolicyName, Region, UserSettingName, ServicePlanType, ServicePlanName, OSBuildVersion, AADJoinType, ImageName, GatewayRegion, ClientOS, ClientType, TransportType, CloudPCEndpointCountryRegion, CloudPCEndpointState, or CloudPCEndpointCity). |
+
+The following table describes the columns in the returned report when you specify `troubleshootTenantActiveConnectionCountAggregatedReport` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| TotalActiveConnectionCountAvg | The average count of total active connections. |
+| TenantId                    | The unique identifier of the tenant.          |
+| GroupColumn                 | The metric used for grouping data (PolicyName, Region, UserSettingName, ServicePlanType, ServicePlanName, OSBuildVersion, AADJoinType, ImageName, GatewayRegion, ClientOS, ClientType, TransportType, CloudPCEndpointCountryRegion, CloudPCEndpointState, or CloudPCEndpointCity). |
+
+The following table describes the columns in the returned report when you specify `troubleshootTenantMTTFTrendReport` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| MeanTimeToFailInHour        | The mean time to failure in hours.            |
+| TenantId                    | The unique identifier of the tenant.          |
+| EventDateTime               | The date and time when the event occurred.    |
+| GroupColumn                 | The metric used for grouping data (PolicyName, Region, UserSettingName, ServicePlanType, ServicePlanName, OSBuildVersion, AADJoinType, ImageName, GatewayRegion, ClientOS, ClientType, TransportType, CloudPCEndpointCountryRegion, CloudPCEndpointState, or CloudPCEndpointCity). |
+
+The following table describes the columns in the returned report when you specify `troubleshootTenantMTTFAggregatedReport` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| MeanTimeToFailInHour        | The mean time to failure in hours.            |
+| TenantId                    | The unique identifier of the tenant.          |
+| GroupColumn                 | The metric used for grouping data (PolicyName, Region, UserSettingName, ServicePlanType, ServicePlanName, OSBuildVersion, AADJoinType, ImageName, GatewayRegion, ClientOS, ClientType, TransportType, CloudPCEndpointCountryRegion, CloudPCEndpointState, or CloudPCEndpointCity). |
+
+The following table describes the columns in the returned report when you specify `troubleshootTenantMTTRTrendReport` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| MeanTimeToRepairInSecond    | The mean time to repair in seconds.           |
+| TenantId                    | The unique identifier of the tenant.          |
+| EventDateTime               | The date and time when the event occurred.    |
+| GroupColumn                 | The metric used for grouping data (PolicyName, Region, UserSettingName, ServicePlanType, ServicePlanName, OSBuildVersion, AADJoinType, ImageName, GatewayRegion, ClientOS, ClientType, TransportType, CloudPCEndpointCountryRegion, CloudPCEndpointState, or CloudPCEndpointCity). |
+
+The following table describes the columns in the returned report when you specify `troubleshootTenantMTTRAggregatedReport` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| MeanTimeToRepairInSecond    | The mean time to repair in seconds.           |
+| TenantId                    | The unique identifier of the tenant.          |
+| GroupColumn                 | The metric used for grouping data (PolicyName, Region, UserSettingName, ServicePlanType, ServicePlanName, OSBuildVersion, AADJoinType, ImageName, GatewayRegion, ClientOS, ClientType, TransportType, CloudPCEndpointCountryRegion, CloudPCEndpointState, or CloudPCEndpointCity). |
+
+The following table describes the columns in the returned report when you specify `troubleshootTenantRemoteSignInTimeTrendReport` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| RemoteSignInTimeInSecondAvg | The average remote sign-in time in seconds.   |
+| TenantId                    | The unique identifier of the tenant.          |
+| EventDateTime               | The date and time when the event occurred.    |
+| GroupColumn                 | The metric used for grouping data (PolicyName, Region, UserSettingName, ServicePlanType, ServicePlanName, OSBuildVersion, AADJoinType, ImageName, GatewayRegion, ClientOS, ClientType, TransportType, CloudPCEndpointCountryRegion, CloudPCEndpointState, or CloudPCEndpointCity). |
+
+The following table describes the columns in the returned report when you specify `troubleshootTenantRemoteSignInTimeAggregatedReport` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| RemoteSignInTimeInSecondAvg | The average remote sign-in time in seconds.   |
+| TenantId                    | The unique identifier of the tenant.          |
+| GroupColumn                 | The metric used for grouping data (PolicyName, Region, UserSettingName, ServicePlanType, ServicePlanName, OSBuildVersion, AADJoinType, ImageName, GatewayRegion, ClientOS, ClientType, TransportType, CloudPCEndpointCountryRegion, CloudPCEndpointState, or CloudPCEndpointCity). |
+
+### Configuration Reports
+
+The following table describes the columns in the returned report when you specify `troubleshootConfigurationGlobalFilterReport` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| MockColumn1                 | MockDescription for configuration report.     |
+| MockColumn2                 | MockDescription for configuration report.     |
+| MockColumn3                 | MockDescription for configuration report.     |
+
+The following table describes the columns in the returned report when you specify `troubleshootTenantConnectionCountTrendReport` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| MockConnectionCount         | MockDescription for connection count trend.   |
+| MockPeakConnections         | MockDescription for peak connections.         |
+| MockConnectionTrend         | MockDescription for connection trend data.    |
+
+The following table describes the columns in the returned report when you specify `troubleshootTenantConnectionCountAggregatedReport` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| MockTotalCount              | MockDescription for total connection count.   |
+| MockAverageCount            | MockDescription for average count.            |
+| MockCountSummary            | MockDescription for count summary.            |
+
+
+### CloudPC Reports
+
+The following table describes the columns in the returned report when you specify `troubleshootCloudPCNetworkTrendReport` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| MockColumn1                 | MockDescription for CloudPC report.           |
+| MockColumn2                 | MockDescription for CloudPC report.           |
+| MockColumn3                 | MockDescription for CloudPC report.           |
+
+### User/Device Reports
+
+The following table describes the columns in the returned report when you specify `troubleshootMatchedUserReport` for the **reportName** property in your API call.
 
 | Member                             | Description                                                                          |
 |:-----------------------------------|:-------------------------------------------------------------------------------------|
-| CpuIssueCloudPcCount               | The number of Cloud PC instances with CPU issues.                                    |
-| CpuIssueTrend                      | The trend in the weekly number of Cloud PC instances with CPU issues.                |
-| ConnectionQualityIssueCloudPcCount | The number of Cloud PC instances with connection quality issues.                     |
-| ConnectionQualityIssueTrend        | The trend in the weekly number of Cloud PC instances with connection quality issues. |
-| MemoryIssueCloudPcCount            | The number of Cloud PC instances with memory issues.                                 |
-| MemoryIssueTrend                   | The trend in the weekly number of Cloud PC instances with memory issues.             |
-| NetworkIssueCount                  | The number of network issues.                                                        |
-| PerformanceIssueCount              | The number of performance issues.                                                    |
-| ReliabilityIssueCount              | The number of reliability issues.                                                    |
-| RTTIssueCloudPcCount               | The number of Cloud PC instances with round-trip time issues.                        |
-| RTTIssueTrend                      | The trend in the weekly number of Cloud PC instances with round-trip time issues.    |
-| StabilityIssueCloudPcCount         | The number of Cloud PC instances with stability issues.                              |
-| StabilityIssueTrend                | The trend in the weekly number of Cloud PC instances with stability issues.          |
-| TotalImpactedCloudPcCount          | The total count of impacted Cloud PCs.                                               |
-
-The following table describes the columns in the returned report when you specify `troubleshootIssueCountReport` for the **reportName** property in your API call.
-
-| Member                      | Description                                      |
-|:----------------------------|:-------------------------------------------------|
-| AsofDate                    | The date and time of when the data was recorded. |
-| ConnectionQualityIssueCount | The number of connection quality issues.         |
-| CpuIssueCount               | The number of CPU issues.                        |
-| MemoryIssueCount            | The number of memory issues.                     |
-| NetworkIssueCount           | The number of network issues.                    |
-| PerformanceIssueCount       | The number of performance issues.                |
-| ReliabilityIssueCount       | The number of reliability issues.                |
-| RTTIssueCount               | The number of round-trip time issues.            |
-| StabilityIssueCount         | The number of stability issues.                  |
+| CpuIssueCloudPcCount               | The number of Cloud PC instances with CPU issues. |
+| MockColumn1                 | MockDescription for user/identity report.       |
+| MockColumn2                 | MockDescription for user/identity report.       |
+| MockColumn3                 | MockDescription for user/identity report.       |
 
 ## Examples
 
