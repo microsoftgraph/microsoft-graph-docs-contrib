@@ -98,8 +98,7 @@ Content-Type: application/json
     "imageId": "microsoftwindowsdesktop_windows-ent-cpc_win11-23h2-ent-cpc-m365",
     "imageType": "gallery",
     "osLocale": "en-US",
-    "imageDisplayName": "Windows 11 Enterprise + Microsoft 365 Apps 23H2",
-    "deviceMembershipGroupIds": ["e1f2a3b4-c5d6-7890-abcd-ef1234567890"]
+    "imageDisplayName": "Windows 11 Enterprise + Microsoft 365 Apps 23H2"
   },
   "networkConfiguration": {
     "@odata.type": "#microsoft.graph.cloudPcMicrosoftHostedNetworkConfiguration",
@@ -120,7 +119,10 @@ Content-Type: application/json
     "maximumCount": 10
   },
   "capabilities": {
-    "enableSingleSignOn": true
+    "enableSingleSignOn": true,
+    "deviceGroupingConfiguration": {
+      "membershipGroupIds": ["e1f2a3b4-c5d6-7890-abcd-ef1234567890"]
+    }
   },
   "sessionUsage": {
     "activeSessionsCount": 3,

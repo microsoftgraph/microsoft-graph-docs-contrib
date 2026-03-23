@@ -648,6 +648,7 @@
             "cloudPcPartnerAgentInstallResult",
             "cloudPcPoolAutopilotConfiguration",
             "cloudPcPoolCapabilityConfiguration",
+            "cloudPcPoolDeviceGroupingConfiguration",
             "cloudPcProvisioningPolicyAssignment",
             "cloudPcProvisioningPolicyAutopatch",
             "cloudPcRegionGroupConfiguration",

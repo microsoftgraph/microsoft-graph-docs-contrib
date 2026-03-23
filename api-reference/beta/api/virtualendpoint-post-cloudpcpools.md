@@ -84,8 +84,7 @@ Content-Type: application/json
   "cloudPcConfiguration": {
     "imageId": "microsoftwindowsdesktop_windows-ent-cpc_win11-23h2-ent-cpc-m365",
     "imageType": "gallery",
-    "osLocale": "en-US",
-    "deviceMembershipGroupIds": ["e1f2a3b4-c5d6-7890-abcd-ef1234567890"]
+    "osLocale": "en-US"
   },
   "networkConfiguration": {
     "@odata.type": "#microsoft.graph.cloudPcMicrosoftHostedNetworkConfiguration",
@@ -107,7 +106,10 @@ Content-Type: application/json
   },
   "capabilities": {
     "@odata.type": "#microsoft.graph.cloudPcAgentPoolCapabilityConfiguration",
-    "enableSingleSignOn": true
+    "enableSingleSignOn": true,
+    "deviceGroupingConfiguration": {
+      "membershipGroupIds": ["e1f2a3b4-c5d6-7890-abcd-ef1234567890"]
+    }
   },
   "scopeIds": ["0"]
 }
