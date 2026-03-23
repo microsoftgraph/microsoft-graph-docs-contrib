@@ -3866,6 +3866,13 @@ Possible values for user account types (group membership), per Windows definitio
 | principal |
 | unknownFutureValue |
 
+### cloudPcAgentPoolBillingType values
+
+| Member | Description |
+|:---|:---|
+| payAsYouGo | Indicates billing type is associated with Pay as you go model. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
+
 ### cloudPcAuditActivityOperationType values
 
 | Member |
@@ -3900,6 +3907,26 @@ Possible values for user account types (group membership), per Windows definitio
 | ------- |
 | cloudPC |
 | other |
+
+### cloudPcGeographicLocationType values
+
+| Member | Description |
+|:---|:---|
+| asia | The geographic location is Asia. |
+| australasia | The geographic location is Australasia. |
+| canada | The geographic location is Canada. |
+| europe | The geographic location is Europe. |
+| india | The geographic location is India. |
+| africa | The geographic location is Africa. |
+| usCentral | The geographic location is US Central. |
+| usEast | The geographic location is US East. |
+| usWest | The geographic location is US West. |
+| southAmerica | The geographic location is South America. |
+| middleEast | The geographic location is Middle East. |
+| centralAmerica | The geographic location is Central America. |
+| usGovernment | The geographic location is US Government. |
+| mexico | The geographic location is Mexico. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
 ### postType values
 
@@ -5331,6 +5358,14 @@ Possible values for user account types (group membership), per Windows definitio
 | unknownFutureValue             |
 | regionalInaccessibleCloudPcTrendReport |
 
+### cloudPcManagementServiceType values
+
+| Member | Description |
+|:---|:---|
+| windows365 | Indicates the pool is managed by Windows 365. |
+| microsoft365BizChat | Indicates the pool is managed by Microsoft 365 BizChat. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
+
 ### nonAdminSetting values
 
 |Member|
@@ -5519,6 +5554,38 @@ Possible values for user account types (group membership), per Windows definitio
 | tot                | 29    | Indicates the time zone is associated with Tonga Time(UTC+13:00).                                             |
 | lint               | 30    | Indicates the time zone is associated with Line Islands Time(UTC+14:00).                                      |
 | unknownFutureValue | 31    | Evolvable enumeration sentinel value. Do not use.                                                             |
+
+### cloudPcPoolOperationErrorCode values
+
+| Member | Description |
+|:---|:---|
+| none | Indicates no error. |
+| internalServerError | Indicates an internal server error occurred. |
+| operationTimeout | Indicates the operation timed out. |
+| operationConflict | Indicates a conflicting operation is already in progress. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
+
+### cloudPcPoolOperationStatus values
+
+| Member | Description |
+|:---|:---|
+| pending | Indicates the operation is pending. |
+| inProgress | Indicates the operation is in progress. |
+| succeeded | Indicates the operation succeeded. |
+| failed | Indicates the operation failed. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
+
+### cloudPcPoolStatus values
+
+| Member | Description |
+|:---|:---|
+| created | Indicates the pool has been created. |
+| provisioning | Indicates the pool is currently being provisioned. |
+| active | Indicates the pool is active and ready for use. |
+| deleting | Indicates the pool is being deleted. |
+| failed | Indicates the pool provisioning has failed and can not recover. |
+| provisioningPaused | Indicates the pool provisioning is paused due to customer error. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
 ### resourceLinkType values
 

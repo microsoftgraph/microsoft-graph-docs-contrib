@@ -1,0 +1,93 @@
+---
+title: "cloudPcPool resource type"
+description: "Represents a pool for Cloud PC provisioning with common configurations and capabilities."
+author: "yityu"
+ms.localizationpriority: medium
+ms.subservice: "cloud-pc"
+doc_type: resourcePageType
+ms.date: 03/23/2026
+---
+
+# cloudPcPool resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents a pool for Cloud PC provisioning with common configurations and capabilities.
+
+This is an abstract type. Inherits from [entity](../resources/entity.md).
+
+## Methods
+
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List](../api/virtualendpoint-list-cloudpcpools.md)|[cloudPcPool](../resources/cloudpcpool.md) collection|List the properties and relationships of the [cloudPcPool](../resources/cloudpcpool.md) objects.|
+|[Get](../api/cloudpcpool-get.md)|[cloudPcPool](../resources/cloudpcpool.md)|Read the properties and relationships of a [cloudPcPool](../resources/cloudpcpool.md) object.|
+|[Create](../api/virtualendpoint-post-cloudpcpools.md)|[cloudPcPool](../resources/cloudpcpool.md)|Create a new [cloudPcPool](../resources/cloudpcpool.md) object.|
+|[Update](../api/cloudpcpool-update.md)|[cloudPcPool](../resources/cloudpcpool.md)|Update the properties of a [cloudPcPool](../resources/cloudpcpool.md) object.|
+|[Delete](../api/cloudpcpool-delete.md)|None|Delete a [cloudPcPool](../resources/cloudpcpool.md) object.|
+|[Assign](../api/cloudpcpool-assign.md)|None|Batch assign and unassign principals to a Cloud PC pool.|
+|[List assignments](../api/cloudpcpool-list-assignments.md)|[cloudPcPoolAssignment](../resources/cloudpcpoolassignment.md) collection|List the assignments of a [cloudPcPool](../resources/cloudpcpool.md).|
+|[Create assignment](../api/cloudpcpool-post-assignments.md)|[cloudPcPoolAssignment](../resources/cloudpcpoolassignment.md)|Create a new assignment for a [cloudPcPool](../resources/cloudpcpool.md).|
+|[List operations](../api/cloudpcpool-list-operations.md)|[cloudPcPoolOperation](../resources/cloudpcpooloperation.md) collection|List the operations of a [cloudPcPool](../resources/cloudpcpool.md).|
+|[Create operation](../api/cloudpcpool-post-operations.md)|[cloudPcPoolOperation](../resources/cloudpcpooloperation.md)|Create a new operation for a [cloudPcPool](../resources/cloudpcpool.md).|
+
+## Properties
+
+|Property|Type|Description|
+|:---|:---|:---|
+|capabilities|[cloudPcPoolCapabilityConfiguration](../resources/cloudpcpoolcapabilityconfiguration.md)|The capabilities configuration including SSO settings.|
+|cloudPcConfiguration|[cloudPcConfiguration](../resources/cloudpcconfiguration.md)|The Cloud PC specification including image and OS locale settings.|
+|createdDateTime|DateTimeOffset|The date and time when the pool was created. For example, midnight UTC on Jan 1, 2026 is `2026-01-01T00:00:00Z`. Read-only.|
+|description|String|The description of the pool. Maximum length is 512.|
+|displayName|String|The display name of the pool. The name is unique across Cloud PC Pools in an organization. Maximum length is 60.|
+|id|String|The unique identifier for the pool. Read-only. Inherited from [entity](../resources/entity.md).|
+|lastModifiedByPrincipalId|String|The principal ID of the user or service that last modified the pool. Read-only.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the pool was last modified. For example, midnight UTC on Jan 1, 2026 is `2026-01-01T00:00:00Z`. Read-only.|
+|managedByService|[cloudPcManagementServiceType](../resources/enums.md#cloudpcmanagementservicetypevalues)|The identifier of Windows 365 or partner that manages the pool. The possible values are: `windows365`, `microsoft365BizChat`, `unknownFutureValue`. Read-only.|
+|networkConfiguration|[cloudPcNetworkConfiguration](../resources/cloudpcnetworkconfiguration.md)|The network configuration for the pool.|
+|poolStatus|[cloudPcPoolStatus](../resources/enums.md#cloudpcpoolstatusvalues)|The current status of the pool. The possible values are: `created`, `provisioning`, `active`, `failed`, `deleting`, `provisioningPaused`, `unknownFutureValue`. The default value is `created`. Read-only.|
+|scopeIds|String collection|The scope tag IDs associated with the pool.|
+
+## Relationships
+
+|Relationship|Type|Description|
+|:---|:---|:---|
+|assignments|[cloudPcPoolAssignment](../resources/cloudpcpoolassignment.md) collection|The assignments that grant identities access to the pool.|
+|operations|[cloudPcPoolOperation](../resources/cloudpcpooloperation.md) collection|The long-running operations on the pool, such as reprovision. Read-only.|
+
+## JSON representation
+
+The following JSON representation shows the resource type.
+
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.cloudPcPool",
+  "baseType": "microsoft.graph.entity",
+  "openType": false
+} -->
+```json
+{
+  "@odata.type": "#microsoft.graph.cloudPcPool",
+  "capabilities": {
+    "@odata.type": "microsoft.graph.cloudPcPoolCapabilityConfiguration"
+  },
+  "cloudPcConfiguration": {
+    "@odata.type": "microsoft.graph.cloudPcConfiguration"
+  },
+  "createdDateTime": "String (timestamp)",
+  "description": "String",
+  "displayName": "String",
+  "id": "String (identifier)",
+  "lastModifiedByPrincipalId": "String",
+  "lastModifiedDateTime": "String (timestamp)",
+  "managedByService": "String",
+  "networkConfiguration": {
+    "@odata.type": "microsoft.graph.cloudPcNetworkConfiguration"
+  },
+  "poolStatus": "String",
+  "scopeIds": ["String"]
+}
+```
