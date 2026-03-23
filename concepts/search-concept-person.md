@@ -45,6 +45,9 @@ The people API returns the following set of properties.
 | surname                  | String  |
 | userPrincipalName        | String  |
 
+> [!NOTE]
+> The emailAddress property is only returned with the beta `/search` endpoint as of now.
+
 ## Person types
 The following table shows people types and subtypes supported in the people API.
 
