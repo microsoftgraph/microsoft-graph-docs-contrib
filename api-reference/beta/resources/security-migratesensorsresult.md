@@ -39,6 +39,10 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.migrateSensorsResult",
-  "successfulMigrationSensorIds": ["String"],
-  "failedMigrationSensorIds": ["String"]
+  "successfulMigrationSensorIds": [
+    "String"
+  ],
+  "failedMigrationSensorIds": [
+    "String"
+  ]
 }

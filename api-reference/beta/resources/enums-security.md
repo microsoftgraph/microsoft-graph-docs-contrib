@@ -1207,6 +1207,27 @@ Namespace: microsoft.graph.security
 |migrating|
 |unknownFutureValue|
 
+### sensorHealthStatus values
+
+|Member|
+|:---|
+|healthy|
+|notHealthyLow|
+|notHealthyMedium|
+|notHealthyHigh|
+|unknownFutureValue|
+
+### sensorType values
+
+|Member|
+|:---|
+|adConnectIntegrated|
+|adcsIntegrated|
+|adfsIntegrated|
+|domainControllerIntegrated|
+|domainControllerStandalone|
+|unknownFutureValue|
+
 ### serviceStatus values
 
 |Member|
