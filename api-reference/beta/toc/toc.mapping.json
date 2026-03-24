@@ -3025,7 +3025,8 @@
             "microsoft.graph.security.user",
             "microsoft.graph.security.sensorCandidate",
             "microsoft.graph.security.sensorCandidateActivationConfiguration",
-            "microsoft.graph.security.autoAuditingConfiguration"
+            "microsoft.graph.security.autoAuditingConfiguration",
+            "microsoft.graph.security.sensorMigration"
           ],
           "complexTypes": [
             "microsoft.graph.security.deploymentAccessKeyType",
@@ -3034,7 +3035,8 @@
             "microsoft.graph.security.sensorDeploymentPackage",
             "microsoft.graph.security.sensorSettings",
             "microsoft.graph.security.invokeActionResult",
-            "microsoft.graph.security.account"
+            "microsoft.graph.security.account",
+            "microsoft.graph.security.migrateSensorsResult"
           ]
         },
         {

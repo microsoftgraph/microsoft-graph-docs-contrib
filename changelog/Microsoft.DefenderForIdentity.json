@@ -358,5 +358,63 @@
       "WorkloadArea": "Security",
       "SubArea": ""
       }
+    ,{
+      "ChangeList": [
+        {
+          "Id": "a4c9c154-4a8c-48ae-acf7-aac90b42cefc",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "migrationState",
+          "ChangeType": "Addition",
+          "Description": "Added the **migrationState** enumeration type.",
+          "Target": "migrationState"
+        },
+        {
+          "Id": "a4c9c154-4a8c-48ae-acf7-aac90b42cefc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "migrateSensorsResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [migrateSensorsResult](https://learn.microsoft.com/en-us/graph/api/resources/security-migrateSensorsResult?view=graph-rest-beta) resource.",
+          "Target": "migrateSensorsResult"
+        },
+        {
+          "Id": "a4c9c154-4a8c-48ae-acf7-aac90b42cefc",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "sensorMigration",
+          "ChangeType": "Addition",
+          "Description": "Added the **sensorMigration** relationship to the [identityContainer](https://learn.microsoft.com/en-us/graph/api/resources/security-identityContainer?view=graph-rest-beta) resource.",
+          "Target": "identityContainer"
+        },
+        {
+          "Id": "a4c9c154-4a8c-48ae-acf7-aac90b42cefc",
+          "ApiChange": "Property",
+          "ChangedApiName": "migrationState",
+          "ChangeType": "Addition",
+          "Description": "Added the **migrationState** property to the [sensor](https://learn.microsoft.com/en-us/graph/api/resources/security-sensor?view=graph-rest-beta) resource.",
+          "Target": "sensor"
+        },
+        {
+          "Id": "a4c9c154-4a8c-48ae-acf7-aac90b42cefc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sensorMigration",
+          "ChangeType": "Addition",
+          "Description": "Added the [sensorMigration](https://learn.microsoft.com/en-us/graph/api/resources/security-sensorMigration?view=graph-rest-beta) resource.",
+          "Target": "sensorMigration"
+        },
+        {
+          "Id": "a4c9c154-4a8c-48ae-acf7-aac90b42cefc",
+          "ApiChange": "Method",
+          "ChangedApiName": "migrate",
+          "ChangeType": "Addition",
+          "Description": "Added the [migrate](https://learn.microsoft.com/en-us/graph/api/security-sensorMigration-migrate?view=graph-rest-beta) method to the [sensorMigration](https://learn.microsoft.com/en-us/graph/api/resources/security-sensorMigration?view=graph-rest-beta) resource.",
+          "Target": "sensorMigration"
+        }
+      ],
+      "Id": "a4c9c154-4a8c-48ae-acf7-aac90b42cefc",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-03-23T17:32:20.2618662Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    }
   ]
 }

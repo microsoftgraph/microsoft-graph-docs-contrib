@@ -1196,6 +1196,17 @@ Namespace: microsoft.graph.security
 |automated|
 |unknownFutureValue|
 
+### migrationState values
+
+|Member|
+|:---|
+|readyForMigration|
+|notReadyForMigration|
+|upToDate|
+|migrationFailed|
+|migrating|
+|unknownFutureValue|
+
 ### serviceStatus values
 
 |Member|
