@@ -297,6 +297,8 @@ Group files by type:
 
 For each file, apply the appropriate review checklist from above.
 
+**For PRs with 15+ changed files:** Review in batches of 10 files. After each batch, output findings so far before continuing to the next batch. This keeps context focused and prevents quality degradation on later files.
+
 ### Step 4: Run Validation Scripts
 
 Run automated validation scripts to ensure compliance (see [Common Process: Validation](#common-process-validation)):
@@ -317,6 +319,8 @@ Use these criteria consistently when categorizing findings:
 | **Info (Consider)** | Best practices; style improvements, optional enhancements | More descriptive changelog entries, additional examples, style guide alignment, missing conceptual API Overview or Feature Overview updates |
 
 ### Step 6: Report Findings
+
+> **IMPORTANT:** Before finalizing the report, re-read each reviewed file to confirm your findings. Do not report issues or approvals from memory alone.
 
 Provide a structured review report:
 
