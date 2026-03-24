@@ -100,7 +100,6 @@ GET https://graph.microsoft.com/beta/networkAccess/settings/customBlockPage
 
 ---
 
-
 ### Response
 
 The following example shows the response.

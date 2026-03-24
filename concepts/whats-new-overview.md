@@ -78,6 +78,10 @@ For more information, see [Get change notifications for transcripts and recordin
 
 The new Tenant Configuration Management APIs in Microsoft Graph allow administrators to control and manage configuration settings across a single workload or multiple workloads within an organization. To learn more about supported use cases, see [Use the Tenant Configuration Management APIs in Microsoft Graph](/graph/api/resources/unified-tenant-configuration-management-api-overview).
 
+### Calendars | Places
+
+Added a known issue of RBAC in [Places update API](/graph/api/place-update): update requests may still succeed without *Exchange Administrator* role but result in unexpected behaviors.
+
 ### Microsoft Defender for identities
 
 Enabling migrating sensors who are eligible to migration
@@ -152,6 +156,10 @@ Introduced the tenant governance API set to enable organizations to manage and g
 - Configure relationship policies
 
 For more information, see [Overview of Tenant Governance APIs](/graph/api/resources/tenantgovernanceservices-tenantgovernance-overview).
+
+### Calendars | Places
+
+Added a known issue of RBAC in [Places update API](/graph/api/place-update?view=graph-rest-beta&preserve-view=true): update requests may still succeed without *Exchange Administrator* role but result in unexpected behaviors.
 
 ## February 2026: New and generally available
 

@@ -70,7 +70,6 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/microsoft.graph.a
 
 ---
 
-
 ### Response
 
 <!-- {

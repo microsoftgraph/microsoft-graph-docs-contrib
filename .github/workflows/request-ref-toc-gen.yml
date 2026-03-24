@@ -64,4 +64,4 @@ jobs:
         INPUT_OWNER: ${{ github.repository_owner }}
         INPUT_REPO: ${{ github.event.repository.name }}
         INPUT_PULL: ${{ github.event.issue.number }}
-        INPUT_BODY: ${{ needs.request-toc-gen.outputs.result }}
+        INPUT_BODY: ${{ needs.request-toc-gen.outputs.result || 'TOC generation did not produce a result. Please check the workflow logs.' }}

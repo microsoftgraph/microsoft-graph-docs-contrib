@@ -73,7 +73,6 @@ DELETE https://graph.microsoft.com/v1.0/applications/{id}/microsoft.graph.agentI
 
 ---
 
-
 ### Response
 
 The following example shows the response.

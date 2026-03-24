@@ -100,7 +100,6 @@ GET https://graph.microsoft.com/beta/policies/onPremAuthenticationPolicies/2e68a
 
 ---
 
-
 ### Response
 
 The following example shows the response.

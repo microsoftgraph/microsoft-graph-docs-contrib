@@ -100,7 +100,6 @@ GET https://graph.microsoft.com/beta/policies/b2bManagementPolicies
 
 ---
 
-
 ### Response
 
 The following example shows the response.

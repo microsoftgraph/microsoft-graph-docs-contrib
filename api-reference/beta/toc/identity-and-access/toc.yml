@@ -1516,6 +1516,10 @@ items:
         href: ../../api/identitygovernance-workflow-activatewithscope.md
       - name: List users in scope
         href: ../../api/workflow-list-executionscope.md
+      - name: preview task failures
+        href: ../../api/identitygovernance-workflow-previewtaskfailures.md
+      - name: preview workflow
+        href: ../../api/identitygovernance-workflow-previewworkflow.md
       - name: Deleted workflows
         items:
         - name: List

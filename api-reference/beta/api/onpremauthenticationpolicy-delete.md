@@ -97,7 +97,6 @@ DELETE https://graph.microsoft.com/beta/policies/onPremAuthenticationPolicies/2e
 
 ---
 
-
 ### Response
 
 The following example shows the response.

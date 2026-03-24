@@ -64,6 +64,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 
 The following example shows a request to remove a permission from a container type.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_permission_filestoragecontainertype"
@@ -72,6 +73,12 @@ The following example shows a request to remove a permission from a container ty
 ``` http
 DELETE https://graph.microsoft.com/beta/storage/fileStorage/containerTypes/de988700-d700-020e-0a00-0831f3042f00/permissions/b3duZXJfMTExMTExMTEtMTExMS0xMTExLTExMTEtMTExMTExMTExMTEx
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-permission-filestoragecontainertype-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response

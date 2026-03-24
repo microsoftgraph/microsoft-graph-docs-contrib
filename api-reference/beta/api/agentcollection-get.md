@@ -101,7 +101,6 @@ GET https://graph.microsoft.com/beta/agentRegistry/agentCollections/{agentCollec
 
 ---
 
-
 ### Response
 
 The following example shows the response.

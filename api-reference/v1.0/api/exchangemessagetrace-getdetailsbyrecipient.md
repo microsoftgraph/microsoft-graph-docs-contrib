@@ -80,7 +80,6 @@ GET https://graph.microsoft.com/v1.0/admin/exchange/tracing/messageTraces/7e3b2b
 
 ---
 
-
 ### Response
 
 The following example shows the response.

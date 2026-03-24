@@ -250,9 +250,3 @@ items:
     href: ../../api/ownerlessgrouppolicy-get.md
   - name: Upsert
     href: ../../api/ownerlessgrouppolicy-upsert.md
-- name: Complex types
-  items:
-  - name: Email details
-    href: ../../resources/emaildetails.md
-  - name: Target owners
-    href: ../../resources/targetowners.md

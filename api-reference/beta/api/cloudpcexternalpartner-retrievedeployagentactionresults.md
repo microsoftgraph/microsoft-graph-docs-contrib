@@ -83,7 +83,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/externalPa
 
 ---
 
-
 ### Response
 
 The following example shows the response.

@@ -105,7 +105,6 @@ GET https://graph.microsoft.com/beta/solutions/migrations/crossTenantMigrationJo
 
 ---
 
-
 ### Response
 
 The following example shows the response.

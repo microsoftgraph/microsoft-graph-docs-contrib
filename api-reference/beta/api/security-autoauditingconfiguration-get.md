@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/beta/security/identities/settings/autoAuditingCo
 
 ---
 
-
 ### Response
 
 The following example shows the response.

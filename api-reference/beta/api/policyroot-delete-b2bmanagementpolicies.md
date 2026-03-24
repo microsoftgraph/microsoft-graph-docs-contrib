@@ -96,7 +96,6 @@ DELETE https://graph.microsoft.com/beta/policies/b2bManagementPolicies/f596ef0d-
 
 ---
 
-
 ### Response
 
 The following example shows the response.

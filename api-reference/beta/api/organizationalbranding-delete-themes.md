@@ -96,7 +96,6 @@ DELETE https://graph.microsoft.com/beta/organization/aaaabbbb-0000-cccc-1111-ddd
 
 ---
 
-
 ### Response
 
 The following example shows the response.

@@ -24,11 +24,7 @@ To disable the policy, set **isEnabled** to `false`. Setting **isEnabled** to `f
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "ownerlessgrouppolicy-upsert-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "ownerlessgrouppolicy_upsert" } -->
 [!INCLUDE [permissions-table](../includes/permissions/ownerlessgrouppolicy-upsert-permissions.md)]
 
 > [!IMPORTANT]
@@ -83,6 +79,7 @@ If successful, this method returns a `200 OK` response code and an updated [owne
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_ownerlessgrouppolicy"
@@ -115,6 +112,12 @@ Content-Type: application/json
   }
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-ownerlessgrouppolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -162,6 +165,7 @@ Content-Type: application/json
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "disable_ownerlessgrouppolicy"
@@ -175,6 +179,12 @@ Content-Type: application/json
   "isEnabled": false
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/disable-ownerlessgrouppolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

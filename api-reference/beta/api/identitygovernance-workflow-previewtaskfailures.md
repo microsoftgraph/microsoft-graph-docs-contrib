@@ -63,6 +63,7 @@ The following example shows a request that validates a workflow and returns task
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "lifecycleworkflows_workflow_previewtaskfailures_failures"
@@ -71,6 +72,12 @@ The following example shows a request.
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/14879e66-9ea9-48d0-804d-8fea672d0341/previewTaskFailures
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/lifecycleworkflows-workflow-previewtaskfailures-failures-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -106,6 +113,7 @@ The following example shows a request that validates a workflow with no configur
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "lifecycleworkflows_workflow_previewtaskfailures_nofailures"
@@ -114,6 +122,12 @@ The following example shows a request.
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/a1b2c3d4-e5f6-7890-abcd-ef1234567890/previewTaskFailures
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/lifecycleworkflows-workflow-previewtaskfailures-nofailures-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

@@ -78,6 +78,7 @@ If the request exceeds the limit of three permissions per container type, this m
 ### Request
 
 The following example shows a request to add an owner permission to a container type.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_permission_from_filestoragecontainertype"
@@ -96,6 +97,12 @@ Content-Type: application/json
   }
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-permission-from-filestoragecontainertype-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response

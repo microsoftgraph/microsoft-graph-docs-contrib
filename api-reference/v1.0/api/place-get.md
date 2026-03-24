@@ -357,7 +357,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/places/bldg1@contoso.com
+GET https://graph.microsoft.com/v1.0/places/dc404124-302a-92aa-f98d-7b4deb0c1705/microsoft.graph.roomList
 ```
 
 # [JavaScript](#tab/javascript)
@@ -365,7 +365,6 @@ GET https://graph.microsoft.com/v1.0/places/bldg1@contoso.com
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 The following example shows the response.
@@ -381,7 +380,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.roomList",
   "id": "dc404124-302a-92aa-f98d-7b4deb0c1705",
   "displayName": "Building 1",
   "address": {

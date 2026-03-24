@@ -74,7 +74,6 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/microsoft.graph.a
 
 ---
 
-
 ### Response
 
 The following example shows the response.

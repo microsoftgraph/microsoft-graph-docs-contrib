@@ -100,7 +100,6 @@ GET https://graph.microsoft.com/beta/organization/aaaabbbb-0000-cccc-1111-dddd22
 
 ---
 
-
 ### Response
 
 The following example shows the response.

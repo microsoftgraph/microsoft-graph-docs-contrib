@@ -1491,12 +1491,12 @@ items:
       href: ../../resources/onfraudprotectionloadstartlistener.md
     - name: On interactive auth flow start listener
       href: ../../resources/oninteractiveauthflowstartlistener.md
-    - name: On password submit listener
-      href: ../../resources/onpasswordsubmitlistener.md
     - name: On token issuance start listener
       href: ../../resources/ontokenissuancestartlistener.md
     - name: On user create start listener
       href: ../../resources/onusercreatestartlistener.md
+    - name: On password submit listener
+      href: ../../resources/onpasswordsubmitlistener.md
   - name: Authentication methods
     items:
     - name: Overview
@@ -1987,10 +1987,10 @@ items:
       href: ../../resources/onattributecollectionsubmitcustomextension.md
     - name: On OTP send custom extension
       href: ../../resources/onotpsendcustomextension.md
-    - name: On password submit custom extension
-      href: ../../resources/onpasswordsubmitcustomextension.md
     - name: On token issuance start custom extension
       href: ../../resources/ontokenissuancestartcustomextension.md
+    - name: On password submit custom extension
+      href: ../../resources/onpasswordsubmitcustomextension.md
   - name: Data policy operation
     items:
     - name: Data policy operation
@@ -2461,10 +2461,6 @@ items:
       href: ../../resources/onattributecollectionsubmithandler.md
     - name: On attribute collection submit custom extension handler
       href: ../../resources/onattributecollectionsubmitcustomextensionhandler.md
-    - name: On password migration custom extension handler
-      href: ../../resources/onpasswordmigrationcustomextensionhandler.md
-    - name: On password submit handler
-      href: ../../resources/onpasswordsubmithandler.md
   - name: User flows in workforce tenants
     items:
     - name: B2X identity user flow

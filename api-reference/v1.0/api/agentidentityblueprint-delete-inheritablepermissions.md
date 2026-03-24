@@ -72,7 +72,6 @@ DELETE https://graph.microsoft.com/v1.0/applications/bc057821-f236-49d6-9f2c-1eb
 
 ---
 
-
 ### Response
 
 The following example shows the response.

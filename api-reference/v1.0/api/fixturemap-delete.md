@@ -99,7 +99,6 @@ DELETE https://graph.microsoft.com/v1.0/places/151e85a7-c0b8-4519-997e-1a0858255
 
 ---
 
-
 ### Response
 
 The following example shows the response.

@@ -67,6 +67,7 @@ If successful, this method returns a `200 OK` response code and a [permission](.
 ### Request
 
 The following example shows a request to get a specific permission from a container type.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_permission_filestoragecontainertype"
@@ -75,6 +76,12 @@ The following example shows a request to get a specific permission from a contai
 ``` http
 GET https://graph.microsoft.com/beta/storage/fileStorage/containerTypes/de988700-d700-020e-0a00-0831f3042f00/permissions/b3duZXJfMTExMTExMTEtMTExMS0xMTExLTExMTEtMTExMTExMTExMTEx
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-permission-filestoragecontainertype-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response

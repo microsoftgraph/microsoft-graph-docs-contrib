@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/v1.0/admin/teams/userConfigurations
 
 ---
 
-
 ### Response
 
 The following example shows the response.

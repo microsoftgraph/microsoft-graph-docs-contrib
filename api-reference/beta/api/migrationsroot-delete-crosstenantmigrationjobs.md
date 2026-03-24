@@ -104,7 +104,6 @@ DELETE https://graph.microsoft.com/beta/solutions/migrations/crosstenantmigratio
 
 ---
 
-
 ### Response
 
 The following example shows the response.

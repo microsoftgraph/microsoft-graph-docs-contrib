@@ -72,7 +72,6 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/microsoft.graph.a
 
 ---
 
-
 ### Response
 
 <!-- {
