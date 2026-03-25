@@ -3035,8 +3035,7 @@
             "microsoft.graph.security.sensorDeploymentPackage",
             "microsoft.graph.security.sensorSettings",
             "microsoft.graph.security.invokeActionResult",
-            "microsoft.graph.security.account",
-            "microsoft.graph.security.migrateSensorsResult"
+            "microsoft.graph.security.account"
           ]
         },
         {

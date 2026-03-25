@@ -82,9 +82,9 @@ The new Tenant Configuration Management APIs in Microsoft Graph allow administra
 
 Added a known issue of RBAC in [Places update API](/graph/api/place-update): update requests may still succeed without *Exchange Administrator* role but result in unexpected behaviors.
 
-### Microsoft Defender for identities
+### Microsoft Defender for Identity
 
-Enabling migrating sensors who are eligible to migration
+Enable migration for eligible sensors. See [microsoft.graph.security.sensorMigration](../api-reference/beta/resources/security-sensormigration.md)
 
 ## March 2026: New in preview only
 
