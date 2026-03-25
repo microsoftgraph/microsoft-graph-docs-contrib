@@ -106,10 +106,7 @@ Content-Type: application/json
   },
   "capabilities": {
     "@odata.type": "#microsoft.graph.cloudPcAgentPoolCapabilityConfiguration",
-    "enableSingleSignOn": true,
-    "deviceGroupingConfiguration": {
-      "membershipGroupIds": ["e1f2a3b4-c5d6-7890-abcd-ef1234567890"]
-    }
+    "enableSingleSignOn": true
   },
   "scopeIds": ["0"]
 }

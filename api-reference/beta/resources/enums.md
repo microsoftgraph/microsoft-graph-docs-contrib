@@ -5555,26 +5555,6 @@ Possible values for user account types (group membership), per Windows definitio
 | lint               | 30    | Indicates the time zone is associated with Line Islands Time(UTC+14:00).                                      |
 | unknownFutureValue | 31    | Evolvable enumeration sentinel value. Do not use.                                                             |
 
-### cloudPcPoolOperationErrorCode values
-
-| Member | Description |
-|:---|:---|
-| none | Indicates no error. |
-| internalServerError | Indicates an internal server error occurred. |
-| operationTimeout | Indicates the operation timed out. |
-| operationConflict | Indicates a conflicting operation is already in progress. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
-
-### cloudPcPoolOperationStatus values
-
-| Member | Description |
-|:---|:---|
-| pending | Indicates the operation is pending. |
-| inProgress | Indicates the operation is in progress. |
-| succeeded | Indicates the operation succeeded. |
-| failed | Indicates the operation failed. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
-
 ### cloudPcPoolStatus values
 
 | Member | Description |

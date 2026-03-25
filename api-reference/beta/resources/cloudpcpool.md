@@ -27,11 +27,8 @@ This is an abstract type. Inherits from [entity](../resources/entity.md).
 |[Create](../api/virtualendpoint-post-cloudpcpools.md)|[cloudPcPool](../resources/cloudpcpool.md)|Create a new [cloudPcPool](../resources/cloudpcpool.md) object.|
 |[Update](../api/cloudpcpool-update.md)|[cloudPcPool](../resources/cloudpcpool.md)|Update the properties of a [cloudPcPool](../resources/cloudpcpool.md) object.|
 |[Delete](../api/cloudpcpool-delete.md)|None|Delete a [cloudPcPool](../resources/cloudpcpool.md) object.|
-|[Assign](../api/cloudpcpool-assign.md)|None|Batch assign and unassign principals to a Cloud PC pool.|
 |[List assignments](../api/cloudpcpool-list-assignments.md)|[cloudPcPoolAssignment](../resources/cloudpcpoolassignment.md) collection|List the assignments of a [cloudPcPool](../resources/cloudpcpool.md).|
 |[Create assignment](../api/cloudpcpool-post-assignments.md)|[cloudPcPoolAssignment](../resources/cloudpcpoolassignment.md)|Create a new assignment for a [cloudPcPool](../resources/cloudpcpool.md).|
-|[List operations](../api/cloudpcpool-list-operations.md)|[cloudPcPoolOperation](../resources/cloudpcpooloperation.md) collection|List the operations of a [cloudPcPool](../resources/cloudpcpool.md).|
-|[Create operation](../api/cloudpcpool-post-operations.md)|[cloudPcPoolOperation](../resources/cloudpcpooloperation.md)|Create a new operation for a [cloudPcPool](../resources/cloudpcpool.md).|
 
 ## Properties
 
@@ -55,7 +52,6 @@ This is an abstract type. Inherits from [entity](../resources/entity.md).
 |Relationship|Type|Description|
 |:---|:---|:---|
 |assignments|[cloudPcPoolAssignment](../resources/cloudpcpoolassignment.md) collection|The assignments that grant identities access to the pool.|
-|operations|[cloudPcPoolOperation](../resources/cloudpcpooloperation.md) collection|The long-running operations on the pool, such as reprovision. Read-only.|
 
 ## JSON representation
 

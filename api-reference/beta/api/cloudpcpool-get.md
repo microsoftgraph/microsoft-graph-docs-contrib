@@ -114,10 +114,7 @@ Content-Type: application/json
     "maximumCount": 10
   },
   "capabilities": {
-    "enableSingleSignOn": true,
-    "deviceGroupingConfiguration": {
-      "membershipGroupIds": ["e1f2a3b4-c5d6-7890-abcd-ef1234567890"]
-    }
+    "enableSingleSignOn": true
   },
   "sessionUsage": {
     "activeSessionsCount": 3,

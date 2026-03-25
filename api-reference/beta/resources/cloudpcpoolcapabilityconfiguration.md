@@ -20,8 +20,8 @@ Represents the base capabilities configuration for a Cloud PC pool.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|autopilotConfiguration|[cloudPcPoolAutopilotConfiguration](../resources/cloudpcpoolautopilotconfiguration.md)|The autopilot configuration for the pool. When `null`, autopilot isn't applied.|
-|deviceGroupingConfiguration|[cloudPcPoolDeviceGroupingConfiguration](../resources/cloudpcpooldevicegroupingconfiguration.md)|The device grouping configuration for the pool.|
+
+None.
 
 ## Relationships
 
@@ -37,12 +37,6 @@ The following JSON representation shows the resource type.
 } -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.cloudPcPoolCapabilityConfiguration",
-  "autopilotConfiguration": {
-    "@odata.type": "microsoft.graph.cloudPcPoolAutopilotConfiguration"
-  },
-  "deviceGroupingConfiguration": {
-    "@odata.type": "microsoft.graph.cloudPcPoolDeviceGroupingConfiguration"
-  }
+  "@odata.type": "#microsoft.graph.cloudPcPoolCapabilityConfiguration"
 }
 ```
