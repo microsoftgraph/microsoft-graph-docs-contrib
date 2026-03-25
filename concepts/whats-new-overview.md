@@ -24,6 +24,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Using the **signInAudience** property to limit where an [application](/graph/api/resources/application) can be used **isn't** a replacement for proper tenant validation and authorization enforcement in your application code. If your application expects access only in specific tenants, you *must* enforce that validation in your application code. To learn more, see [Secure applications and APIs by validating claims](/entra/identity-platform/claims-validation).
 
+### Calendars | Places
+
+Added a known issue of RBAC in [Places update API](/graph/api/place-update): update requests may still succeed without *Exchange Administrator* role but result in unexpected behaviors.
+
 ### Device and app management | Cloud PC
 
 - Use the **osVersionNumber** property on [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage) and [cloudPcGalleryImage](/graph/api/resources/cloudpcgalleryimage) resources to get the operating system version of an image.
@@ -78,10 +82,6 @@ For more information, see [Get change notifications for transcripts and recordin
 
 The new Tenant Configuration Management APIs in Microsoft Graph allow administrators to control and manage configuration settings across a single workload or multiple workloads within an organization. To learn more about supported use cases, see [Use the Tenant Configuration Management APIs in Microsoft Graph](/graph/api/resources/unified-tenant-configuration-management-api-overview).
 
-### Calendars | Places
-
-Added a known issue of RBAC in [Places update API](/graph/api/place-update): update requests may still succeed without *Exchange Administrator* role but result in unexpected behaviors.
-
 ## March 2026: New in preview only
 
 ### Applications
@@ -93,6 +93,10 @@ Added a known issue of RBAC in [Places update API](/graph/api/place-update): upd
 
 - Use the **backupRetentionPeriodInDays** property on [driveProtectionUnit](/graph/api/resources/driveprotectionunit?view=graph-rest-beta&preserve-view=true), [mailboxProtectionUnit](/graph/api/resources/mailboxprotectionunit?view=graph-rest-beta&preserve-view=true), and [siteProtectionUnit](/graph/api/resources/siteprotectionunit?view=graph-rest-beta&preserve-view=true) to get the retention period of the backup, in days.
 - Added the `includeNewerItems` member as supported value for the **tags** property on [restorePoint](/graph/api/resources/restorepoint?view=graph-rest-beta&preserve-view=true) to get a restore point within a specified time period that includes any newer items created during that period.
+
+### Calendars | Places
+
+Added a known issue of RBAC in [Places update API](/graph/api/place-update?view=graph-rest-beta&preserve-view=true): update requests may still succeed without *Exchange Administrator* role but result in unexpected behaviors.
 
 ### Device and app management | Cloud PC
 
@@ -152,10 +156,6 @@ Introduced the tenant governance API set to enable organizations to manage and g
 - Configure relationship policies
 
 For more information, see [Overview of Tenant Governance APIs](/graph/api/resources/tenantgovernanceservices-tenantgovernance-overview).
-
-### Calendars | Places
-
-Added a known issue of RBAC in [Places update API](/graph/api/place-update?view=graph-rest-beta&preserve-view=true): update requests may still succeed without *Exchange Administrator* role but result in unexpected behaviors.
 
 ## February 2026: New and generally available
 
