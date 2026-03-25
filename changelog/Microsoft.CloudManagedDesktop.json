@@ -3,6 +3,176 @@
     {
       "ChangeList": [
         {
+          "Id": "497fa859-169a-47f4-b46b-85e0d74975b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcPool",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcPool](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcPool?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcPool"
+        },
+        {
+          "Id": "497fa859-169a-47f4-b46b-85e0d74975b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcAgentPool",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcAgentPool](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcAgentPool?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcAgentPool"
+        },
+        {
+          "Id": "497fa859-169a-47f4-b46b-85e0d74975b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcPoolAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcPoolAssignment](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcPoolAssignment?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcPoolAssignment"
+        },
+        {
+          "Id": "497fa859-169a-47f4-b46b-85e0d74975b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcAgentPoolUserAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcAgentPoolUserAssignment](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcAgentPoolUserAssignment?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcAgentPoolUserAssignment"
+        },
+        {
+          "Id": "497fa859-169a-47f4-b46b-85e0d74975b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcConfiguration"
+        },
+        {
+          "Id": "497fa859-169a-47f4-b46b-85e0d74975b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcNetworkConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcNetworkConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcNetworkConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcNetworkConfiguration"
+        },
+        {
+          "Id": "497fa859-169a-47f4-b46b-85e0d74975b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcMicrosoftHostedNetworkConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcMicrosoftHostedNetworkConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcMicrosoftHostedNetworkConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcMicrosoftHostedNetworkConfiguration"
+        },
+        {
+          "Id": "497fa859-169a-47f4-b46b-85e0d74975b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcRegionGroupConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcRegionGroupConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcRegionGroupConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcRegionGroupConfiguration"
+        },
+        {
+          "Id": "497fa859-169a-47f4-b46b-85e0d74975b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcAgentPoolBillingConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcAgentPoolBillingConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcAgentPoolBillingConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcAgentPoolBillingConfiguration"
+        },
+        {
+          "Id": "497fa859-169a-47f4-b46b-85e0d74975b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcAgentPoolScalingPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcAgentPoolScalingPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcAgentPoolScalingPolicy?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcAgentPoolScalingPolicy"
+        },
+        {
+          "Id": "497fa859-169a-47f4-b46b-85e0d74975b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcAgentPoolSessionUsage",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcAgentPoolSessionUsage](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcAgentPoolSessionUsage?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcAgentPoolSessionUsage"
+        },
+        {
+          "Id": "497fa859-169a-47f4-b46b-85e0d74975b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcPoolCapabilityConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcPoolCapabilityConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcPoolCapabilityConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcPoolCapabilityConfiguration"
+        },
+        {
+          "Id": "497fa859-169a-47f4-b46b-85e0d74975b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcAgentPoolCapabilityConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcAgentPoolCapabilityConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcAgentPoolCapabilityConfiguration?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcAgentPoolCapabilityConfiguration"
+        },
+        {
+          "Id": "497fa859-169a-47f4-b46b-85e0d74975b8",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcAgentPoolBillingType",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcAgentPoolBillingType** enumeration type.",
+          "Target": "cloudPcAgentPoolBillingType"
+        },
+        {
+          "Id": "497fa859-169a-47f4-b46b-85e0d74975b8",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcGeographicLocationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcGeographicLocationType** enumeration type.",
+          "Target": "cloudPcGeographicLocationType"
+        },
+        {
+          "Id": "497fa859-169a-47f4-b46b-85e0d74975b8",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcManagementServiceType",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcManagementServiceType** enumeration type.",
+          "Target": "cloudPcManagementServiceType"
+        },
+        {
+          "Id": "497fa859-169a-47f4-b46b-85e0d74975b8",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcPoolStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcPoolStatus** enumeration type.",
+          "Target": "cloudPcPoolStatus"
+        },
+        {
+          "Id": "497fa859-169a-47f4-b46b-85e0d74975b8",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcRegionGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcRegionGroup** enumeration type.",
+          "Target": "cloudPcRegionGroup"
+        },
+        {
+          "Id": "497fa859-169a-47f4-b46b-85e0d74975b8",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "cloudPcPools",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcPools** navigation property to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-beta) resource.",
+          "Target": "virtualEndpoint"
+        },
+        {
+          "Id": "497fa859-169a-47f4-b46b-85e0d74975b8",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "cloudPcPools",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPcPools** navigation property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "497fa859-169a-47f4-b46b-85e0d74975b8",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-03-25T00:00:00.0000000Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
           "ApiChange": "Member",
           "ChangedApiName": "underServiceMaintenance",

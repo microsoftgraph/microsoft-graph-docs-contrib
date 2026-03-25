@@ -38,7 +38,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcAgentPoolScalingPolicy",
-  "maximumCount": "Int32",
-  "minimumCount": "Int32"
+  "maximumCount": 10,
+  "minimumCount": 2
 }
 ```

@@ -18,9 +18,6 @@ Represents the base capabilities configuration for a Cloud PC pool.
 
 ## Properties
 
-|Property|Type|Description|
-|:---|:---|:---|
-
 None.
 
 ## Relationships

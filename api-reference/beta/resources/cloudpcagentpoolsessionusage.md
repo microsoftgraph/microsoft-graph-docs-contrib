@@ -38,7 +38,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcAgentPoolSessionUsage",
-  "activeSessionsCount": "Int32",
-  "availableSessionsCount": "Int32"
+  "activeSessionsCount": 3,
+  "availableSessionsCount": 5
 }
 ```

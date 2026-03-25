@@ -5567,6 +5567,34 @@ Possible values for user account types (group membership), per Windows definitio
 | provisioningPaused | Indicates the pool provisioning is paused due to customer error. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
+### cloudPcRegionGroup values
+
+| Member | Description |
+|:---|:---|
+| automatic | Indicates the region group is automatically selected. |
+| australia | Indicates the region group is Australia. |
+| canada | Indicates the region group is Canada. |
+| usCentral | Indicates the region group is US Central. |
+| usEast | Indicates the region group is US East. |
+| usWest | Indicates the region group is US West. |
+| france | Indicates the region group is France. |
+| germany | Indicates the region group is Germany. |
+| europeUnion | Indicates the region group is European Union. |
+| unitedKingdom | Indicates the region group is United Kingdom. |
+| japan | Indicates the region group is Japan. |
+| asia | Indicates the region group is Asia. |
+| india | Indicates the region group is India. |
+| southAmerica | Indicates the region group is South America. |
+| euap | Indicates the region group is EUAP. |
+| usGovernment | Indicates the region group is US Government. |
+| usGovernmentDOD | Indicates the region group is US Government DOD. |
+| norway | Indicates the region group is Norway. |
+| switzerland | Indicates the region group is Switzerland. |
+| southKorea | Indicates the region group is South Korea. |
+| middleEast | Indicates the region group is Middle East. |
+| mexico | Indicates the region group is Mexico. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
+
 ### resourceLinkType values
 
 |Member|
