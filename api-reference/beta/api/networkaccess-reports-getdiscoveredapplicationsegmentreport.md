@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns a collection of discoveredApplicationSegmentReport based on aggregated traffic logs for a given period.
+Returns a collection of [discovered application segments](../resources/networkaccess-discoveredapplicationsegmentreport.md) based on aggregated traffic logs for a given period.
 
 ## Permissions
 
@@ -46,7 +46,7 @@ In the request URL, provide the following query parameters with values.
 |:---|:---|:---|
 |startDateTime|DateTimeOffset|Start of the period for aggregating traffic logs. Required.|
 |endDateTime|DateTimeOffset|End of the period for aggregating traffic logs. Required.|
-|userId|String|The Azure Active Directory (AAD) user ID of the user in GUID format. Optional. When used, it will return only the discovered application segments accessed by the user.|
+|userId|String|The Microsoft Entra ID user ID of the user in GUID format. Optional. When used, it will return only the discovered application segments accessed by the user.|
 
 
 ## Request headers

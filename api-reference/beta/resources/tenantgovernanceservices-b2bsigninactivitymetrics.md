@@ -4,7 +4,7 @@ description: "Represents B2B sign-in activity metrics showing guest user authent
 author: "akhil-potturi"
 ms.date: 03/10/2026
 ms.localizationpriority: medium
-ms.subservice: "entra-id"
+ms.subservice: "entra-tenant-governance"
 doc_type: resourcePageType
 ---
 

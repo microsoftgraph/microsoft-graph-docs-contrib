@@ -4,7 +4,7 @@ description: "Represents a multi-tenant application to be provisioned in a gover
 author: "hafowler"
 ms.date: 03/10/2026
 ms.localizationpriority: medium
-ms.subservice: "entra-id"
+ms.subservice: "entra-tenant-governance"
 doc_type: resourcePageType
 ---
 

@@ -5,7 +5,7 @@ author: "swatyario"
 ms.date: 01/19/2026
 ms.localizationpriority: medium
 doc_type: conceptual
-ms.subservice: "tenant-administration"
+ms.subservice: "tenant-configuration-management"
 ---
 
 # Overview of the Tenant Configuration Management APIs in Microsoft Graph

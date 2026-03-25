@@ -4872,24 +4872,38 @@ items:
       items:
       - name: Traffic reports
         href: ../../resources/networkaccess-reports.md
-      - name: Get transaction summaries
-        href: ../../api/networkaccess-reports-transactionsummaries.md
-      - name: Get entities summary
-        href: ../../api/networkaccess-reports-entitiessummaries.md
-      - name: Get cross-tenant access summary
-        href: ../../api/networkaccess-reports-getcrosstenantsummary.md
+      - name: Get application usage analytics
+        href: ../../api/networkaccess-reports-getapplicationusageanalytics.md
+      - name: Get cloud application reports
+        href: ../../api/networkaccess-reports-getcloudapplicationreport.md
+      - name: Get connection summaries
+        href: ../../api/networkaccess-reports-getconnectionsummaries.md
       - name: Get cross-tenant access report
         href: ../../api/networkaccess-reports-crosstenantaccessreport.md
-      - name: Get device usage summary
-        href: ../../api/networkaccess-reports-getdeviceusagesummary.md
-      - name: Get device usage report
-        href: ../../api/networkaccess-reports-devicereport.md
-      - name: Get destination summary
-        href: ../../api/networkaccess-reports-getdestinationsummaries.md
+      - name: Get cross-tenant access summary
+        href: ../../api/networkaccess-reports-getcrosstenantsummary.md
       - name: Get destination report
         href: ../../api/networkaccess-reports-destinationreport.md
+      - name: Get destination summary
+        href: ../../api/networkaccess-reports-getdestinationsummaries.md
+      - name: Get device usage report
+        href: ../../api/networkaccess-reports-devicereport.md
+      - name: Get device usage summary
+        href: ../../api/networkaccess-reports-getdeviceusagesummary.md
+      - name: Get discovered application segment report
+        href: ../../api/networkaccess-reports-getdiscoveredapplicationsegmentreport.md
+      - name: Get enterprise application report
+        href: ../../api/networkaccess-reports-getenterpriseapplicationreport.md
+      - name: Get entities summary
+        href: ../../api/networkaccess-reports-entitiessummaries.md
+      - name: Get transaction summaries
+        href: ../../api/networkaccess-reports-transactionsummaries.md
+      - name: Get usage profiling
+        href: ../../api/networkaccess-reports-usageprofiling.md
       - name: Get user usage report
         href: ../../api/networkaccess-reports-userreport.md
+      - name: Get web category report
+        href: ../../api/networkaccess-reports-webcategoryreport.md
     - name: Alert
       items:
       - name: Alert

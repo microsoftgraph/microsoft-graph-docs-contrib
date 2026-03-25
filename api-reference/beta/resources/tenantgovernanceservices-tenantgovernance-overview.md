@@ -5,7 +5,7 @@ author: "FaithOmbongi"
 ms.author: "ombongifaith"
 ms.reviewer: "hafowler,akhil.potturi,jeffsta"
 ms.localizationpriority: medium
-ms.subservice: "entra-id-governance"
+ms.subservice: "entra-tenant-governance"
 doc_type: conceptualPageType
 ms.date: 03/19/2026
 ms.topic: overview

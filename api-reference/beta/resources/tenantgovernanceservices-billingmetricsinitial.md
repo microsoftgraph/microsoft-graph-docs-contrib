@@ -4,7 +4,7 @@ description: "Represents the initial snapshot of billing metrics when the relati
 author: "akhil-potturi"
 ms.date: 03/10/2026
 ms.localizationpriority: medium
-ms.subservice: "entra-id"
+ms.subservice: "entra-tenant-governance"
 doc_type: resourcePageType
 ---
 

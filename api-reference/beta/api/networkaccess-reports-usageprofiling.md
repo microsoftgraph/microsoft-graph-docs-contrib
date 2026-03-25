@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns an object containing count tables for the traffic types in Global Secure Access, aggregated by the time period specified.
+Returns an object containing [count tables for the traffic types](../resources/networkaccess-usageprofilingpoint.md) in Global Secure Access, aggregated by the time period specified.
 
 ## Permissions
 

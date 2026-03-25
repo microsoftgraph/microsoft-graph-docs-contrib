@@ -4,7 +4,7 @@ description: "Container for Microsoft Entra Tenant Governance capabilities."
 author: "hafowler"
 ms.date: 03/19/2026
 ms.localizationpriority: medium
-ms.subservice: "entra-id"
+ms.subservice: "entra-tenant-governance"
 doc_type: resourcePageType
 ---
 

@@ -4,7 +4,7 @@ description: "Learn about the supported resource types and properties for Micros
 author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
-ms.subservice: "tenant-administration"
+ms.subservice: "tenant-configuration-management"
 ---
 
 # Supported Microsoft Security and Compliance resources for Tenant Configuration Management

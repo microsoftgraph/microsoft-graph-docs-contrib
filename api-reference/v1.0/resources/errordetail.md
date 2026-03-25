@@ -4,7 +4,7 @@ description: "Represents the information and properties of an errorDetail object
 author: "swatyario"
 ms.date: 03/18/2026
 ms.localizationpriority: medium
-ms.subservice: "tenant-administration"
+ms.subservice: "tenant-configuration-management"
 doc_type: resourcePageType
 ---
 

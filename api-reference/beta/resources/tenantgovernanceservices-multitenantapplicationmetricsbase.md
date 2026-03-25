@@ -4,7 +4,7 @@ description: "Abstract base type for multi-tenant application metrics."
 author: "akhil-potturi"
 ms.date: 03/19/2026
 ms.localizationpriority: medium
-ms.subservice: "entra-id"
+ms.subservice: "entra-tenant-governance"
 doc_type: resourcePageType
 ---
 

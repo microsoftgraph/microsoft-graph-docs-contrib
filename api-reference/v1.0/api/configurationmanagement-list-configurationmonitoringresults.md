@@ -4,7 +4,7 @@ description: "Get a list of the configurationMonitoringResult objects and their 
 author: "swatyario"
 ms.date: 03/18/2026
 ms.localizationpriority: medium
-ms.subservice: "tenant-administration"
+ms.subservice: "tenant-configuration-management"
 doc_type: apiPageType
 ---
 

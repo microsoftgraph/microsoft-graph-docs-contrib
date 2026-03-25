@@ -4,7 +4,7 @@ description: "Read the properties and relationships of a configurationMonitoring
 author: "swatyario"
 ms.date: 01/19/2026
 ms.localizationpriority: medium
-ms.subservice: "tenant-administration"
+ms.subservice: "tenant-configuration-management"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "configurationManagement resource type"
 description: "Represents an entity that acts as a container for Tenant Configuration Management functionality."
 author: "swatyario"
 ms.localizationpriority: medium
-ms.subservice: "tenant-administration"
+ms.subservice: "tenant-configuration-management"
 doc_type: resourcePageType
 ms.date: 03/23/2026
 ---

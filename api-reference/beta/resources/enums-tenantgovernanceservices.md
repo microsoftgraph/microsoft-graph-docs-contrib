@@ -4,7 +4,7 @@ description: "Microsoft Graph tenant governance enumeration values"
 author: "hafowler"
 ms.date: 03/10/2026
 ms.localizationpriority: medium
-ms.subservice: "entra-id"
+ms.subservice: "entra-tenant-governance"
 doc_type: enumTypes
 ---
 

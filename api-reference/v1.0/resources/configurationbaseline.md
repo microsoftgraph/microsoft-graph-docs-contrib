@@ -4,7 +4,7 @@ description: "Represents a baseline that contains details of at least one resour
 author: "swatyario"
 ms.date: 03/23/2026
 ms.localizationpriority: medium
-ms.subservice: "tenant-administration"
+ms.subservice: "tenant-configuration-management"
 doc_type: resourcePageType
 ---
 
