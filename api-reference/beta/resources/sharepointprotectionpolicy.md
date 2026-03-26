@@ -26,6 +26,11 @@ Inherits from [protectionPolicyBase](../resources/protectionpolicybase.md).
 |:---|:---|:---|
 |[Create](../api/backuprestoreroot-post-sharepointprotectionpolicies.md)|[sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md)|Create a new [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).|
 |[Update](../api/sharepointprotectionpolicy-update.md)|[sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md)|Update the properties of a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).|
+|[List siteExclusionUnits](../api/sharepointprotectionpolicy-list-siteexclusionunits.md)|[siteExclusionUnit](../resources/siteexclusionunit.md) collection|Get a list of [siteExclusionUnit](../resources/siteexclusionunit.md) objects for a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).|
+|[Get siteExclusionUnit](../api/sharepointprotectionpolicy-get-siteexclusionunit.md)|[siteExclusionUnit](../resources/siteexclusionunit.md)|Get a [siteExclusionUnit](../resources/siteexclusionunit.md) for a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).|
+|[Create siteExclusionUnitsBulkAdditionJob](../api/sharepointprotectionpolicy-post-siteexclusionunitsbulkadditionjobs.md)|[siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md)|Create a new [siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md) for a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).|
+|[Get siteExclusionUnitsBulkAdditionJob](../api/sharepointprotectionpolicy-get-siteexclusionunitsbulkadditionjob.md)|[siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md)|Get a [siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md) for a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).|
+|[List siteExclusionUnitsBulkAdditionJobs](../api/sharepointprotectionpolicy-list-siteexclusionunitsbulkadditionjobs.md)|[siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md) collection|Get a list of [siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md) objects for a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).|
 
 ## Properties
 
@@ -47,6 +52,8 @@ Inherits from [protectionPolicyBase](../resources/protectionpolicybase.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
+|siteExclusionUnits|[siteExclusionUnit](../resources/siteexclusionunit.md) collection|The site exclusion units associated with the SharePoint protection policy.|
+|siteExclusionUnitsBulkAdditionJobs|[siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md) collection|The site exclusion units bulk addition jobs associated with the SharePoint protection policy.|
 |siteInclusionRules|[siteProtectionRule](../resources/siteprotectionrule.md) collection|The rules associated with the SharePoint Protection policy.|
 |siteProtectionUnits|[siteProtectionUnit](../resources/siteprotectionunit.md) collection| The protection units (sites) that are protected under the site protection policy.|
 

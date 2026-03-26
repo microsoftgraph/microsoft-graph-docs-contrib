@@ -55,8 +55,15 @@ Represents the Microsoft 365 Backup Storage service in a tenant.
 |siteInclusionRules|[siteProtectionRule](../resources/siteprotectionrule.md) collection|The list of site inclusion rules applied to the tenant.|
 |siteProtectionUnits|[siteProtectionUnit](../resources/siteprotectionunit.md) collection|The list of site protection units in the tenant.|
 |browseSessions|[browseSessionBase](../resources/browsesessionbase.md) collection| The list of browse sessions in the tenant.|
-|sharePointBrowseSessions|[sharePointBrowseSession](../resources/sharepointbrowsesession.md) collection| The list of sharepoint browse sessions in the tenant.|
+|driveExclusionUnits|[driveExclusionUnit](../resources/driveexclusionunit.md) collection|The list of drive exclusion units in the tenant.|
+|driveExclusionUnitsBulkAdditionJobs|[driveExclusionUnitsBulkAdditionJob](../resources/driveexclusionunitsbulkadditionjob.md) collection|The list of drive exclusion units bulk addition jobs in the tenant.|
+|exclusionUnits|[exclusionUnitBase](../resources/exclusionunitbase.md) collection|The list of exclusion units in the tenant.|
+|mailboxExclusionUnits|[mailboxExclusionUnit](../resources/mailboxexclusionunit.md) collection|The list of mailbox exclusion units in the tenant.|
+|mailboxExclusionUnitsBulkAdditionJobs|[mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md) collection|The list of mailbox exclusion units bulk addition jobs in the tenant.|
 |oneDriveForBusinessBrowseSessions|[oneDriveForBusinessBrowseSession](../resources/onedriveforbusinessbrowsesession.md) collections| The list of onedriveforbusiness browse sessions in the tenant.|
+|sharePointBrowseSessions|[sharePointBrowseSession](../resources/sharepointbrowsesession.md) collection| The list of sharepoint browse sessions in the tenant.|
+|siteExclusionUnits|[siteExclusionUnit](../resources/siteexclusionunit.md) collection|The list of site exclusion units in the tenant.|
+|siteExclusionUnitsBulkAdditionJobs|[siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md) collection|The list of site exclusion units bulk addition jobs in the tenant.|
 
 ## JSON representation
 

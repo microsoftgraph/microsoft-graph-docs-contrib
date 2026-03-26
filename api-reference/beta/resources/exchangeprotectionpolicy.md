@@ -25,6 +25,11 @@ Inherits from [protectionPolicyBase](../resources/protectionpolicybase.md).
 |:---|:---|:---|
 |[Create](../api/backuprestoreroot-post-exchangeprotectionpolicies.md)|[exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md)|Create a new [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).|
 |[Update](../api/exchangeprotectionpolicy-update.md)|[exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md)|Update the properties of an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).|
+|[List mailboxExclusionUnits](../api/exchangeprotectionpolicy-list-mailboxexclusionunits.md)|[mailboxExclusionUnit](../resources/mailboxexclusionunit.md) collection|Get a list of [mailboxExclusionUnit](../resources/mailboxexclusionunit.md) objects for an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).|
+|[Get mailboxExclusionUnit](../api/exchangeprotectionpolicy-get-mailboxexclusionunit.md)|[mailboxExclusionUnit](../resources/mailboxexclusionunit.md)|Get a [mailboxExclusionUnit](../resources/mailboxexclusionunit.md) for an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).|
+|[Create mailboxExclusionUnitsBulkAdditionJob](../api/exchangeprotectionpolicy-post-mailboxexclusionunitsbulkadditionjobs.md)|[mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md)|Create a new [mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md) for an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).|
+|[Get mailboxExclusionUnitsBulkAdditionJob](../api/exchangeprotectionpolicy-get-mailboxexclusionunitsbulkadditionjob.md)|[mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md)|Get a [mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md) for an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).|
+|[List mailboxExclusionUnitsBulkAdditionJobs](../api/exchangeprotectionpolicy-list-mailboxexclusionunitsbulkadditionjobs.md)|[mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md) collection|Get a list of [mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md) objects for an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).|
 
 ## Properties
 |Property|Type|Description|
@@ -44,6 +49,8 @@ Inherits from [protectionPolicyBase](../resources/protectionpolicybase.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+|mailboxExclusionUnits|[mailboxExclusionUnit](../resources/mailboxexclusionunit.md) collection|The mailbox exclusion units associated with the Exchange protection policy.|
+|mailboxExclusionUnitsBulkAdditionJobs|[mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md) collection|The mailbox exclusion units bulk addition jobs associated with the Exchange protection policy.|
 |mailboxInclusionRules|[mailboxProtectionRule](../resources/mailboxprotectionrule.md) collection|The rules associated with the Exchange protection policy.|
 |mailboxProtectionUnits|[mailboxProtectionUnit](../resources/mailboxprotectionunit.md) collection|The protection units (mailboxes) that are  protected under the Exchange protection policy.|
 
