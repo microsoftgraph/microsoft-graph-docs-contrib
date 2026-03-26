@@ -1918,7 +1918,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | - | f2143d35-9b4b-480d-951c-d083e69eeb2c |
 | DisplayText | - | Create consent requests |
-| Description | - | Allows the app to read create consent requests on behalf of the signed-in user. |
+| Description | - | Allows the app to create consent requests on behalf of the signed-in user. |
 | AdminConsentRequired | - | Yes |
 
 ---
