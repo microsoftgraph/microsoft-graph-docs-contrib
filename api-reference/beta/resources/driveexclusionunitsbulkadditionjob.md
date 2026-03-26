@@ -41,7 +41,7 @@ Inherits from [exclusionUnitBulkAdditionJob](../resources/exclusionunitbulkaddit
 |id|String|The unique identifier of the bulk addition job. Inherited from [exclusionUnitBulkAdditionJob](../resources/exclusionunitbulkadditionjob.md).|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|The identity of the person who last modified the bulk addition job. Inherited from [exclusionUnitBulkAdditionJob](../resources/exclusionunitbulkadditionjob.md).|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the bulk addition job was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [exclusionUnitBulkAdditionJob](../resources/exclusionunitbulkadditionjob.md).|
-|status|exclusionUnitBulkJobStatus|The status of the bulk addition job. The possible values are: `created`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`. Inherited from [exclusionUnitBulkAdditionJob](../resources/exclusionunitbulkadditionjob.md).|
+|status|[exclusionUnitBulkJobStatus](../resources/enums.md#exclusionunitbulkjobstatus-values)|The status of the bulk addition job. The possible values are: `created`, `active`, `completed`, `completedWithErrors`, `unknownFutureValue`. Inherited from [exclusionUnitBulkAdditionJob](../resources/exclusionunitbulkadditionjob.md).|
 
 ## Relationships
 

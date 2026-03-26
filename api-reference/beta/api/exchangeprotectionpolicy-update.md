@@ -49,7 +49,7 @@ In the request body, provide a JSON representation of the following properties t
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Display Name of the [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md). Optional.|
-|mailboxExclusionUnits@delta|Collection([mailboxExclusionUnit](../resources/mailboxexclusionunit.md))|Collection of [mailboxExclusionUnit](../resources/mailboxexclusionunit.md) objects to be added to or removed from the [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md). Use this property for policies configured with `protectionMode` set to `fullServiceBackup`. Required for full workload backup policies.|
+|mailboxExclusionUnits@delta|Collection([mailboxExclusionUnit](../resources/mailboxexclusionunit.md))|Collection of [mailboxExclusionUnit](../resources/mailboxexclusionunit.md) objects to be added to or removed from the [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md). Use this property for policies configured with [`protectionMode`](../resources/enums.md#protectionmode-values) set to `fullServiceBackup`. Required for full workload backup policies.|
 |mailboxProtectionUnits@delta|Collection([mailboxProtectionUnit](../resources/mailboxprotectionunit.md))|Collection of **mailboxProtectionUnit** objects to be added to or removed from the Exchange protection policy. Required.|
 
 To remove a **mailboxProtectionUnit** from the policy, specify the `@removed` annotation in the request body for the protection unit together with the ID of the [mailboxProtectionUnit](../resources/mailboxprotectionunit.md).
