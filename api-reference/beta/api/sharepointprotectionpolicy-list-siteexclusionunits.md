@@ -55,7 +55,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "sharepointprotectionpolicy_list_siteexclusionunits"
@@ -64,8 +63,6 @@ The following example shows a request.
 ```http
 GET https://graph.microsoft.com/beta/solutions/backupRestore/sharePointProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e/siteExclusionUnits
 ```
-
----
 
 ### Response
 

@@ -63,7 +63,6 @@ If successful, this method returns a `201 Created` response code and a [siteExcl
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "sharepointprotectionpolicy_post_siteexclusionunitsbulkadditionjobs"
@@ -82,8 +81,6 @@ Content-Type: application/json
   ]
 }
 ```
-
----
 
 ### Response
 

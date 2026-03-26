@@ -55,7 +55,6 @@ If successful, this method returns a `200 OK` response code and a [mailboxExclus
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "exchangeprotectionpolicy_get_mailboxexclusionunitsbulkadditionjob"
@@ -64,8 +63,6 @@ The following example shows a request.
 ```http
 GET https://graph.microsoft.com/beta/solutions/backupRestore/exchangeProtectionPolicies/845457dc-4bb2-4815-bef3-8628ebd1952e/mailboxExclusionUnitsBulkAdditionJobs/4b014d8c-71fe-4d00-a01a-31850bc5b32c
 ```
-
----
 
 ### Response
 
