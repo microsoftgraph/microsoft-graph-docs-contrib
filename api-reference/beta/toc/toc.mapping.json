@@ -219,6 +219,24 @@
           ]
         },
         {
+          "name": "Exclusion unit",
+          "resources": [
+            "exclusionUnitBase",
+            "driveExclusionUnit",
+            "mailboxExclusionUnit",
+            "siteExclusionUnit"
+          ]
+        },
+        {
+          "name": "Exclusion units bulk job",
+          "resources": [
+            "exclusionUnitBulkAdditionJob",
+            "driveExclusionUnitsBulkAdditionJob",
+            "mailboxExclusionUnitsBulkAdditionJob",
+            "siteExclusionUnitsBulkAdditionJob"
+          ]
+        },
+        {
           "name": "Protection units bulk job",
           "resources": [
             "protectionUnitsBulkJobBase",

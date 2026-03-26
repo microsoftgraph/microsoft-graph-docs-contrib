@@ -1,5 +1,367 @@
 {
   "changelog": [
+     {
+      "ChangeList": [
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "exclusionUnitBulkJobStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **exclusionUnitBulkJobStatus** enumeration type.",
+          "Target": "exclusionUnitBulkJobStatus"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "fullServiceBackupDisableMode",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **fullServiceBackupDisableMode** enumeration type.",
+          "Target": "fullServiceBackupDisableMode"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "fullServiceBackupStatus",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **fullServiceBackupStatus** enumeration type.",
+          "Target": "fullServiceBackupStatus"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Member",
+          "ChangedApiName": "dormant",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `dormant` member from the **protectionPolicyStatus** enumeration.",
+          "Target": "protectionPolicyStatus"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "allDrivesBackup",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **allDrivesBackup** resource.",
+          "Target": "allDrivesBackup"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "allMailboxesBackup",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **allMailboxesBackup** resource.",
+          "Target": "allMailboxesBackup"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "allSitesBackup",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **allSitesBackup** resource.",
+          "Target": "allSitesBackup"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "allDrivesBackup",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **allDrivesBackup** relationship from the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-beta) resource.",
+          "Target": "backupRestoreRoot"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "allMailboxesBackup",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **allMailboxesBackup** relationship from the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-beta) resource.",
+          "Target": "backupRestoreRoot"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "allSitesBackup",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **allSitesBackup** relationship from the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-beta) resource.",
+          "Target": "backupRestoreRoot"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "driveExclusionUnits",
+          "ChangeType": "Addition",
+          "Description": "Added the **driveExclusionUnits** relationship to the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-beta) resource.",
+          "Target": "backupRestoreRoot"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "driveExclusionUnitsBulkAdditionJobs",
+          "ChangeType": "Addition",
+          "Description": "Added the **driveExclusionUnitsBulkAdditionJobs** relationship to the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-beta) resource.",
+          "Target": "backupRestoreRoot"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "exclusionUnits",
+          "ChangeType": "Addition",
+          "Description": "Added the **exclusionUnits** relationship to the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-beta) resource.",
+          "Target": "backupRestoreRoot"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "mailboxExclusionUnits",
+          "ChangeType": "Addition",
+          "Description": "Added the **mailboxExclusionUnits** relationship to the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-beta) resource.",
+          "Target": "backupRestoreRoot"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "mailboxExclusionUnitsBulkAdditionJobs",
+          "ChangeType": "Addition",
+          "Description": "Added the **mailboxExclusionUnitsBulkAdditionJobs** relationship to the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-beta) resource.",
+          "Target": "backupRestoreRoot"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "siteExclusionUnits",
+          "ChangeType": "Addition",
+          "Description": "Added the **siteExclusionUnits** relationship to the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-beta) resource.",
+          "Target": "backupRestoreRoot"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "siteExclusionUnitsBulkAdditionJobs",
+          "ChangeType": "Addition",
+          "Description": "Added the **siteExclusionUnitsBulkAdditionJobs** relationship to the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-beta) resource.",
+          "Target": "backupRestoreRoot"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "driveExclusionUnit",
+          "ChangeType": "Addition",
+          "Description": "Added the [driveExclusionUnit](https://learn.microsoft.com/en-us/graph/api/resources/driveExclusionUnit?view=graph-rest-beta) resource.",
+          "Target": "driveExclusionUnit"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "driveExclusionUnitsBulkAdditionJob",
+          "ChangeType": "Addition",
+          "Description": "Added the [driveExclusionUnitsBulkAdditionJob](https://learn.microsoft.com/en-us/graph/api/resources/driveExclusionUnitsBulkAdditionJob?view=graph-rest-beta) resource.",
+          "Target": "driveExclusionUnitsBulkAdditionJob"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "mailboxExclusionUnits",
+          "ChangeType": "Addition",
+          "Description": "Added the **mailboxExclusionUnits** relationship to the [exchangeProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/exchangeProtectionPolicy?view=graph-rest-beta) resource.",
+          "Target": "exchangeProtectionPolicy"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "mailboxExclusionUnitsBulkAdditionJobs",
+          "ChangeType": "Addition",
+          "Description": "Added the **mailboxExclusionUnitsBulkAdditionJobs** relationship to the [exchangeProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/exchangeProtectionPolicy?view=graph-rest-beta) resource.",
+          "Target": "exchangeProtectionPolicy"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "exclusionUnitBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [exclusionUnitBase](https://learn.microsoft.com/en-us/graph/api/resources/exclusionUnitBase?view=graph-rest-beta) resource.",
+          "Target": "exclusionUnitBase"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "exclusionUnitBulkAdditionJob",
+          "ChangeType": "Addition",
+          "Description": "Added the [exclusionUnitBulkAdditionJob](https://learn.microsoft.com/en-us/graph/api/resources/exclusionUnitBulkAdditionJob?view=graph-rest-beta) resource.",
+          "Target": "exclusionUnitBulkAdditionJob"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fullServiceBackupBase",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **fullServiceBackupBase** resource.",
+          "Target": "fullServiceBackupBase"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mailboxExclusionUnit",
+          "ChangeType": "Addition",
+          "Description": "Added the [mailboxExclusionUnit](https://learn.microsoft.com/en-us/graph/api/resources/mailboxExclusionUnit?view=graph-rest-beta) resource.",
+          "Target": "mailboxExclusionUnit"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mailboxExclusionUnitsBulkAdditionJob",
+          "ChangeType": "Addition",
+          "Description": "Added the [mailboxExclusionUnitsBulkAdditionJob](https://learn.microsoft.com/en-us/graph/api/resources/mailboxExclusionUnitsBulkAdditionJob?view=graph-rest-beta) resource.",
+          "Target": "mailboxExclusionUnitsBulkAdditionJob"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "driveExclusionUnits",
+          "ChangeType": "Addition",
+          "Description": "Added the **driveExclusionUnits** relationship to the [oneDriveForBusinessProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/oneDriveForBusinessProtectionPolicy?view=graph-rest-beta) resource.",
+          "Target": "oneDriveForBusinessProtectionPolicy"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "driveExclusionUnitsBulkAdditionJobs",
+          "ChangeType": "Addition",
+          "Description": "Added the **driveExclusionUnitsBulkAdditionJobs** relationship to the [oneDriveForBusinessProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/oneDriveForBusinessProtectionPolicy?view=graph-rest-beta) resource.",
+          "Target": "oneDriveForBusinessProtectionPolicy"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "siteExclusionUnits",
+          "ChangeType": "Addition",
+          "Description": "Added the **siteExclusionUnits** relationship to the [sharePointProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/sharePointProtectionPolicy?view=graph-rest-beta) resource.",
+          "Target": "sharePointProtectionPolicy"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "siteExclusionUnitsBulkAdditionJobs",
+          "ChangeType": "Addition",
+          "Description": "Added the **siteExclusionUnitsBulkAdditionJobs** relationship to the [sharePointProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/sharePointProtectionPolicy?view=graph-rest-beta) resource.",
+          "Target": "sharePointProtectionPolicy"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "siteExclusionUnit",
+          "ChangeType": "Addition",
+          "Description": "Added the [siteExclusionUnit](https://learn.microsoft.com/en-us/graph/api/resources/siteExclusionUnit?view=graph-rest-beta) resource.",
+          "Target": "siteExclusionUnit"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Resource",
+          "ChangedApiName": "siteExclusionUnitsBulkAdditionJob",
+          "ChangeType": "Addition",
+          "Description": "Added the [siteExclusionUnitsBulkAdditionJob](https://learn.microsoft.com/en-us/graph/api/resources/siteExclusionUnitsBulkAdditionJob?view=graph-rest-beta) resource.",
+          "Target": "siteExclusionUnitsBulkAdditionJob"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Method",
+          "ChangedApiName": "disable",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **disable** method from the [allDrivesBackup](https://learn.microsoft.com/en-us/graph/api/resources/allDrivesBackup?view=graph-rest-beta) resource.",
+          "Target": "allDrivesBackup"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Method",
+          "ChangedApiName": "disable",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **disable** method from the [allMailboxesBackup](https://learn.microsoft.com/en-us/graph/api/resources/allMailboxesBackup?view=graph-rest-beta) resource.",
+          "Target": "allMailboxesBackup"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Method",
+          "ChangedApiName": "disable",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **disable** method from the [allSitesBackup](https://learn.microsoft.com/en-us/graph/api/resources/allSitesBackup?view=graph-rest-beta) resource.",
+          "Target": "allSitesBackup"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Method",
+          "ChangedApiName": "enable",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **enable** method from the [allDrivesBackup](https://learn.microsoft.com/en-us/graph/api/resources/allDrivesBackup?view=graph-rest-beta) resource.",
+          "Target": "allDrivesBackup"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Method",
+          "ChangedApiName": "enable",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **enable** method from the [allMailboxesBackup](https://learn.microsoft.com/en-us/graph/api/resources/allMailboxesBackup?view=graph-rest-beta) resource.",
+          "Target": "allMailboxesBackup"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Method",
+          "ChangedApiName": "enable",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **enable** method from the [allSitesBackup](https://learn.microsoft.com/en-us/graph/api/resources/allSitesBackup?view=graph-rest-beta) resource.",
+          "Target": "allSitesBackup"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "backupRestore/exchangeProtectionPolicies/mailboxExclusionUnits",
+          "ChangeType": "Addition",
+          "Description": "Added the [backupRestore/exchangeProtectionPolicies/mailboxExclusionUnits](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Target": "solutions"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "backupRestore/exchangeProtectionPolicies/mailboxExclusionUnitsBulkAdditionJobs",
+          "ChangeType": "Addition",
+          "Description": "Added the [backupRestore/exchangeProtectionPolicies/mailboxExclusionUnitsBulkAdditionJobs](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Target": "solutions"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "backupRestore/oneDriveForBusinessProtectionPolicies/driveExclusionUnits",
+          "ChangeType": "Addition",
+          "Description": "Added the [backupRestore/oneDriveForBusinessProtectionPolicies/driveExclusionUnits](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Target": "solutions"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "backupRestore/oneDriveForBusinessProtectionPolicies/driveExclusionUnitsBulkAdditionJobs",
+          "ChangeType": "Addition",
+          "Description": "Added the [backupRestore/oneDriveForBusinessProtectionPolicies/driveExclusionUnitsBulkAdditionJobs](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Target": "solutions"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "backupRestore/sharePointProtectionPolicies/siteExclusionUnits",
+          "ChangeType": "Addition",
+          "Description": "Added the [backupRestore/sharePointProtectionPolicies/siteExclusionUnits](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Target": "solutions"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "backupRestore/sharePointProtectionPolicies/siteExclusionUnitsBulkAdditionJobs",
+          "ChangeType": "Addition",
+          "Description": "Added the [backupRestore/sharePointProtectionPolicies/siteExclusionUnitsBulkAdditionJobs](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Target": "solutions"
+        }
+      ],
+      "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2026-03-13T08:23:53.2634353Z",
+      "WorkloadArea": "EnhancedRestore",
+      "SubArea": "Backup and Restore"
+    },
       {
           "ChangeList": [
             {

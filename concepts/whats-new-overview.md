@@ -18,6 +18,25 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## May 2026: New in preview only
+
+### Backup storage
+
+Use the new Full Workload Backup (FWB) APIs to protect entire Microsoft 365 workloads—SharePoint Online, OneDrive for Business, and Exchange Online—with minimal administrative overhead. Instead of manually selecting each item to protect, you can create a protection policy that backs up all data in a workload and then specify only the items to exclude from backup.
+
+FWB policies use an exclusion unit pattern. After creating a protection policy with `protectionMode` set to `fullServiceBackup`, you can manage the exclusion list using a delta pattern on the policy update endpoint (`siteExclusionUnits@delta`, `driveExclusionUnits@delta`, or `mailboxExclusionUnits@delta`). For bulk operations, use the dedicated bulk addition job APIs.
+
+The following new resources are supported:
+
+- [exclusionUnitBase](/graph/api/resources/exclusionunitbase?view=graph-rest-beta&preserve-view=true) — Abstract base type for exclusion units.
+- [siteExclusionUnit](/graph/api/resources/siteexclusionunit?view=graph-rest-beta&preserve-view=true) — Represents a SharePoint site excluded from a full workload SharePoint protection policy.
+- [driveExclusionUnit](/graph/api/resources/driveexclusionunit?view=graph-rest-beta&preserve-view=true) — Represents a OneDrive drive excluded from a full workload OneDrive for Business protection policy.
+- [mailboxExclusionUnit](/graph/api/resources/mailboxexclusionunit?view=graph-rest-beta&preserve-view=true) — Represents an Exchange mailbox excluded from a full workload Exchange protection policy.
+- [exclusionUnitBulkAdditionJob](/graph/api/resources/exclusionunitbulkadditionjob?view=graph-rest-beta&preserve-view=true) — Abstract base type for bulk addition jobs.
+- [siteExclusionUnitsBulkAdditionJob](/graph/api/resources/siteexclusionunitsbulkadditionjob?view=graph-rest-beta&preserve-view=true) — Represents an async job for bulk-adding site exclusion units to a SharePoint protection policy.
+- [driveExclusionUnitsBulkAdditionJob](/graph/api/resources/driveexclusionunitsbulkadditionjob?view=graph-rest-beta&preserve-view=true) — Represents an async job for bulk-adding drive exclusion units to an OneDrive for Business protection policy.
+- [mailboxExclusionUnitsBulkAdditionJob](/graph/api/resources/mailboxexclusionunitsbulkadditionjob?view=graph-rest-beta&preserve-view=true) — Represents an async job for bulk-adding mailbox exclusion units to an Exchange protection policy.
+
 ## March 2026: New and generally available
 
 ### Applications
