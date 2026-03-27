@@ -1,5 +1,5 @@
 ---
-title: "List assignments"
+title: "List cloudPcPool assignments"
 description: "List the assignments of a cloudPcPool."
 author: "yityu"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 03/23/2026
 ---
 
-# List assignments
+# List cloudPcPool assignments
 
 Namespace: microsoft.graph
 

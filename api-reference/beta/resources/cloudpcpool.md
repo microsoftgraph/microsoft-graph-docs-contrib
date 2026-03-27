@@ -42,9 +42,9 @@ This is an abstract type. Inherits from [entity](../resources/entity.md).
 |id|String|The unique identifier for the pool. Read-only. Inherited from [entity](../resources/entity.md).|
 |lastModifiedByPrincipalId|String|The principal ID of the user or service that last modified the pool. Read-only.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the pool was last modified. For example, midnight UTC on Jan 1, 2026 is `2026-01-01T00:00:00Z`. Read-only.|
-|managedByService|[cloudPcManagementServiceType](../resources/enums.md#cloudpcmanagementservicetypevalues)|The identifier of Windows 365 or partner that manages the pool. The possible values are: `windows365`, `microsoft365BizChat`, `unknownFutureValue`. Read-only.|
+|managedByService|[cloudPcManagementServiceType](../resources/enums.md#cloudpcmanagementservicetype-values)|The identifier of Windows 365 or partner that manages the pool. The possible values are: `windows365`, `microsoft365BizChat`, `unknownFutureValue`. Read-only.|
 |networkConfiguration|[cloudPcNetworkConfiguration](../resources/cloudpcnetworkconfiguration.md)|The network configuration for the pool.|
-|poolStatus|[cloudPcPoolStatus](../resources/enums.md#cloudpcpoolstatusvalues)|The current status of the pool. The possible values are: `created`, `provisioning`, `active`, `failed`, `deleting`, `provisioningPaused`, `unknownFutureValue`. The default value is `created`. Read-only.|
+|poolStatus|[cloudPcPoolStatus](../resources/enums.md#cloudpcpoolstatus-values)|The current status of the pool. The possible values are: `created`, `provisioning`, `active`, `failed`, `deleting`, `provisioningPaused`, `unknownFutureValue`. The default value is `created`. Read-only.|
 |scopeIds|String collection|The scope tag IDs associated with the pool.|
 
 ## Relationships
