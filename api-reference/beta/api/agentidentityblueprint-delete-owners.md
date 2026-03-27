@@ -72,7 +72,6 @@ DELETE https://graph.microsoft.com/beta/applications/{id}/microsoft.graph.agentI
 
 ---
 
-
 ### Response
 
 <!-- {

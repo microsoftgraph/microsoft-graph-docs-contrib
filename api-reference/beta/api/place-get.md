@@ -362,7 +362,7 @@ The following example shows a request.
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/places/bldg1@contoso.com
+GET https://graph.microsoft.com/beta/places/dc404124-302a-92aa-f98d-7b4deb0c1705/microsoft.graph.roomList
 ```
 
 # [JavaScript](#tab/javascript)
@@ -385,7 +385,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.type": "#microsoft.graph.roomList",
   "id": "dc404124-302a-92aa-f98d-7b4deb0c1705",
   "displayName": "Building 1",
   "address": {

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [plannerTaskChatMessage](../resources/plannertaskchatmessage.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

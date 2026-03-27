@@ -61,7 +61,7 @@ The following table shows the least privileged permission or permissions require
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /directory/deleteditems/{id}/restore
+POST /directory/deletedItems/{id}/restore
 ```
 
 ## Request headers
@@ -96,7 +96,7 @@ If successful, this method returns a `200 OK` response code and a [directoryObje
   "name": "restore_directory_deleteditem"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb/restore
+POST https://graph.microsoft.com/beta/directory/deletedItems/46cc6179-19d0-473e-97ad-6ff84347bbbb/restore
 ```
 
 # [C#](#tab/csharp)
@@ -164,7 +164,7 @@ Content-type: application/json
   "name": "restore_directory_deleteditem_autoreconcileproxyconflict"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/directory/deleteditems/78bf875b-9343-4edc-9130-0d3958113563/restore
+POST https://graph.microsoft.com/beta/directory/deletedItems/78bf875b-9343-4edc-9130-0d3958113563/restore
 Content-Type: application/json
 
 {
@@ -240,7 +240,7 @@ Content-type: application/json
   "name": "restore_directory_deleteditem_newUserPrincipalName"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/directory/deleteditems/78bf875b-9343-4edc-9130-0d3958113563/restore
+POST https://graph.microsoft.com/beta/directory/deletedItems/78bf875b-9343-4edc-9130-0d3958113563/restore
 Content-Type: application/json
 
 {

@@ -72,7 +72,6 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/graph.agentIdenti
 
 ---
 
-
 ### Response
 
 The following example shows the response.

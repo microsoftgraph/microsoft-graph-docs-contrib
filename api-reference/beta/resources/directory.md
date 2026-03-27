@@ -70,8 +70,10 @@ Inherits from [entity](entity.md).
 | pendingExternalUserProfiles | [pendingExternalUserProfile](pendingexternaluserprofile.md) collection | Collection of pending external user profiles representing collaborators in the directory that are unredeemed. |
 |publicKeyInfrastructure|[publicKeyInfrastructureRoot](../resources/publickeyinfrastructureroot.md)|The collection of public key infrastructure instances for the certificate-based authentication feature for users in a Microsoft Entra tenant.|
 | recommendations | [recommendation](../resources/recommendation.md) collection | List of recommended improvements to improve tenant posture. |
+| recovery | [microsoft.graph.entraRecoveryServices.recovery](entrarecoveryservices-recovery.md) | Represents the Entra backup and recovery service for the tenant. |
 | subscriptions | [companySubscription](companysubscription.md) collection | List of commercial subscriptions that an organization has. |
 |templates|[template](../resources/template.md) |A container for templates, such as device templates used for onboarding devices in Microsoft Entra ID. |
+|tenantGovernance|[microsoft.graph.tenantGovernanceServices.tenantGovernance](../resources/tenantgovernanceservices-tenantgovernance.md)|Container for Microsoft Entra Tenant Governance capabilities.|
 
 ## JSON representation
 

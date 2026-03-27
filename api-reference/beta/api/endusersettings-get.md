@@ -98,7 +98,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/co
 
 ---
 
-
 ### Response
 
 The following example shows the response.

@@ -1,18 +1,18 @@
 ---
 title: "Get fido2AuthenticationMethodConfiguration"
 description: "Read the properties and relationships of a fido2AuthenticationMethodConfiguration object."
-author: "calvinlui"
+author: "hanki71"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
-ms.date: 04/04/2024
+ms.date: 03/04/2026
 ---
 
 # Get fido2AuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of the [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) object, which represents the FIDO2 Security Keys [authentication method policy](../resources/authenticationmethodspolicies-overview.md) for the Microsoft Entra tenant.
+Retrieve the properties and relationships of the [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) object, which represents the passkey (FIDO2) [authentication method policy](../resources/authenticationmethodspolicies-overview.md) for the Microsoft Entra tenant.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -121,9 +121,26 @@ Content-type: application/json
         {
             "targetType": "group",
             "id": "all_users",
-            "isRegistrationRequired": false
+            "isRegistrationRequired": false,
+            "allowedPasskeyProfiles": [
+                "00000000-0000-0000-0000-000000000001"
+            ]
         }
     ],
-    "excludeTargets": []
+    "excludeTargets": [],
+    "passkeyProfiles": [
+        {
+            "id": "00000000-0000-0000-0000-000000000001",
+            "name": "Default passkey profile",
+            "passkeyTypes": "deviceBound,synced",
+            "attestationEnforcement": "disabled",
+            "keyRestrictions": {
+                "isEnforced": false,
+                "enforcementType": "allow",
+                "aaGuids": [
+                ]
+            }
+        }
+    ]
 }
 ```

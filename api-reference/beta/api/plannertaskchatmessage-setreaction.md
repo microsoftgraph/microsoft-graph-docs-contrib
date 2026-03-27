@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Set a reaction to a [plannerTaskChatMessage](../resources/plannertaskchatmessage.md) for the current user.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

@@ -104,7 +104,6 @@ POST https://graph.microsoft.com/beta/solutions/migrations/crossTenantMigrationJ
 
 ---
 
-
 ### Response
 
 The following example shows the response.

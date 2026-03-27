@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/beta/agentRegistry/agentInstances
 
 ---
 
-
 ### Response
 
 The following example shows the response.

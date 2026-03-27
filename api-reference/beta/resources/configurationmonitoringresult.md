@@ -4,7 +4,7 @@ description: "Represents the information and properties of a configurationMonito
 author: "swatyario"
 ms.date: 01/19/2026
 ms.localizationpriority: medium
-ms.subservice: "tenant-administration"
+ms.subservice: "tenant-configuration-management"
 doc_type: resourcePageType
 ---
 
@@ -27,14 +27,14 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|driftsCount|Int32|Number of drifts observed during a monitor run.|
-|errorDetails|[errorDetail](../resources/errordetail.md) collection|All the error details that prevent the monitor from running successfully. The error details are a contained entity.|
-|id|String|Globally unique identifier (GUID) of the monitor run. System-generated. Inherited from [entity](../resources/entity.md).|
-|monitorId|String|Globally unique identifier (GUID) of the monitor. System-generated.|
-|runCompletionDateTime|DateTimeOffset|Date and time at which the monitor run completed. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|runInitiationDateTime|DateTimeOffset|Date and time at which the monitor run initiated. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|runStatus|monitorRunStatus|Status of the monitor run. The possible values are: `successful`, `partiallySuccessful`, `failed`, `unknownFutureValue`.|
-|tenantId|String|Globally unique identifier (GUID) of the tenant for which the monitor runs. Fetched automatically by the system.|
+|driftsCount|Int32|Number of drifts observed during a monitor run. <br><br>Supports `$filter` (`eq`, `ne`, `ge`, `le`) and `$orderby`.|
+|errorDetails|[errorDetail](../resources/errordetail.md) collection|All the error details that prevent the monitor from running successfully. The error details are a contained entity. <br><br>Returned only on `$select`.|
+|id|String|Globally unique identifier (GUID) of the monitor run. System-generated. Inherited from [entity](../resources/entity.md). <br><br>Supports `$filter` (`eq`, `ne`) and `$orderby`.|
+|monitorId|String|Globally unique identifier (GUID) of the monitor. System-generated. <br><br>Supports `$filter` (`eq`, `ne`).|
+|runCompletionDateTime|DateTimeOffset|Date and time at which the monitor run completed. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br>Supports `$filter` (`eq`, `ne`, `ge`, `le`) and `$orderby`.|
+|runInitiationDateTime|DateTimeOffset|Date and time at which the monitor run initiated. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br>Supports `$filter` (`eq`, `ne`, `ge`, `le`) and `$orderby`.|
+|runStatus|monitorRunStatus|Status of the monitor run. The possible values are: `successful`, `partiallySuccessful`, `failed`, `unknownFutureValue`. <br><br>Supports `$filter` (`eq`, `ne`) and `$orderby`.|
+|tenantId|String|Globally unique identifier (GUID) of the tenant for which the monitor runs. Fetched automatically by the system. <br><br>Supports `$filter` (`eq`, `ne`).|
 
 ## Relationships
 None.

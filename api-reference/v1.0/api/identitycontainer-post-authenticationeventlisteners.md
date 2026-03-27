@@ -22,6 +22,7 @@ Create a new [authenticationEventListener](../resources/authenticationeventliste
 - [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md)
 - [onEmailOtpSendListener](../resources/onemailotpsendlistener.md)
 - [onFraudProtectionLoadStartListener](../resources/onfraudprotectionloadstartlistener.md) resource type
+- [onPasswordSubmitListener](../resources/onpasswordsubmitlistener.md) resource type
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -59,6 +60,7 @@ You can specify the following properties when creating an **authenticationEventL
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|The conditions on which this authenticationEventListener should trigger. Optional.|
 |displayName|String|The display name of the authentication event listener policy. Optional.|
 |handler|[onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md) or [onFraudProtectionLoadStartHandler](../resources/onfraudprotectionloadstarthandler.md)|The handler to invoke when conditions are met. For **onTokenIssuanceStartListener**, set to [onTokenIssuanceStartHandler](../resources/ontokenissuancestarthandler.md). For **onFraudProtectionLoadStartListener**, set to [onFraudProtectionLoadStartHandler](../resources/onfraudprotectionloadstarthandler.md).|
+|handler|[onPasswordSubmitHandler](../resources/onpasswordsubmithandler.md)|The handler to invoke when conditions are met. Can be set for the **onPasswordSubmitListener** listener type.|
 
 ## Response
 
@@ -382,6 +384,113 @@ Content-Type: application/json
         "id": "fabe5100-cc02-46c1-bd0e-ce885fe367fd"
       }
     }
+  }
+}
+```
+
+### Example 4: Create an onPasswordSubmitListener object
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_authenticationeventlistener_onpasswordsubmitlistener"
+}
+-->
+```msgraph-interactive
+POST https://graph.microsoft.com/v1.0/identity/authenticationEventListeners
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.onPasswordSubmitListener",
+  "displayName": "JIT migration listener",
+  "conditions": {
+    "applications": {
+      "includeAllApplications": false,
+      "includeApplications": [
+        {
+          "appId": "00011111-aaaa-2222-bbbb-3333cccc4444"
+        }
+      ]
+    }
+  },
+  "handler": {
+    "@odata.type": "#microsoft.graph.onPasswordMigrationCustomExtensionHandler",
+    "migrationPropertyId": "extension_b7b1c57b532f40b8b5ed4b7a7ba67401_requiresMigration",
+    "customExtension": {
+      "id": "6fc5012e-7665-43d6-9708-4370863f4e6e"
+    }
+  }
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-authenticationeventlistener-onpasswordsubmitlistener-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-authenticationeventlistener-onpasswordsubmitlistener-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-authenticationeventlistener-onpasswordsubmitlistener-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-authenticationeventlistener-onpasswordsubmitlistener-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-authenticationeventlistener-onpasswordsubmitlistener-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-authenticationeventlistener-onpasswordsubmitlistener-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-authenticationeventlistener-onpasswordsubmitlistener-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authenticationEventListener"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/authenticationEventListeners/$entity",
+  "@odata.type": "#microsoft.graph.onPasswordSubmitListener",
+  "id": "4a6cb5f0-1234-5678-abcd-ef9012345678",
+  "displayName": "JIT migration listener",
+  "authenticationEventsFlowId": null,
+  "conditions": {
+    "applications": {
+      "includeAllApplications": false,
+      "includeApplications": [
+        {
+          "appId": "00011111-aaaa-2222-bbbb-3333cccc4444"
+        }
+      ]
+    }
+  },
+  "handler": {
+    "@odata.type": "#microsoft.graph.onPasswordMigrationCustomExtensionHandler",
+    "migrationPropertyId": "extension_b7b1c57b532f40b8b5ed4b7a7ba67401_requiresMigration",
+    "configuration": null
   }
 }
 ```

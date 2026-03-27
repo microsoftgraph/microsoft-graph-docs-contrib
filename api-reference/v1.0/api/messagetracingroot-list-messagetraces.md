@@ -102,7 +102,6 @@ GET https://graph.microsoft.com/v1.0/admin/exchange/tracing/messageTraces
 
 ---
 
-
 #### Response
 
 The following example shows the response.
@@ -178,7 +177,6 @@ GET https://graph.microsoft.com/v1.0/admin/exchange/tracing/messageTraces?$filte
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
@@ -257,7 +255,6 @@ GET https://graph.microsoft.com/v1.0/admin/exchange/tracing/messageTraces?$filte
 
 ---
 
-
 #### Response
 
 The following example shows the response.
@@ -334,7 +331,6 @@ GET https://graph.microsoft.com/v1.0/admin/exchange/tracing/messageTraces?$filte
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

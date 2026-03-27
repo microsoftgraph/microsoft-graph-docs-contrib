@@ -160,7 +160,10 @@ The following steps represent the flow of an authorization challenge for an acti
 1. Acknowledge receipt of the lifecycle notification by responding to the POST call with `202 - Accepted` response code.
 2. Validate the authenticity of the lifecycle notification.
 3. Ensure that the app has a valid access token to take the next step.
-4. Call either of the following two APIs. If the API call succeeds, the change notification flow resumes.
+4. Call *either* of the following two APIs. If the API call succeeds, the change notification flow resumes.
+
+    > [!IMPORTANT]
+    > Don't issue a reauthorize request (`POST /subscriptions/{id}/reauthorize`) and an update request (`PATCH /subscriptions/{id}`) for the same subscription within a 10-minute window. Sending these requests concurrently or in rapid succession can result in subscription state inconsistencies. To reauthorize and renew a subscription in the same request, use a single `PATCH /subscriptions/{id}` request with an updated **expirationDateTime**, which performs both actions in one operation.
 
     - Call the `/reauthorize` action to reauthorize the subscription without extending its expiration date.
         

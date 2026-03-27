@@ -82,7 +82,6 @@ GET https://graph.microsoft.com/beta/admin/exchange/tracing/messageTraces/7e3b2b
 
 ---
 
-
 ### Response
 
 The following example shows the response.

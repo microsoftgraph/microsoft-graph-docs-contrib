@@ -32,6 +32,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "place_patch_places" } -->
 [!INCLUDE [permissions-table](../includes/permissions/place-patch-places-permissions.md)]
 
+[!INCLUDE [rbac-places-apis-write](../includes/rbac-for-apis/rbac-places-apis-write.md)]
+
 ## HTTP request
 
 <!-- {

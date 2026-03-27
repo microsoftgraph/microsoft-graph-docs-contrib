@@ -141,6 +141,8 @@ Content-Type: application/json
   "status": "pending",
   "errorCode": null,
   "osStatus": null,
-  "expirationDate": null
+  "expirationDate": null,
+  "osVersionNumber": null,
+  "sizeInGB": 64
 }
 ```

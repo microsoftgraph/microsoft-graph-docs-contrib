@@ -13,7 +13,8 @@
       "overview": "../../resources/groups-overview.md",
       "resources": [
         "group",
-        "groupLifecyclePolicy"
+        "groupLifecyclePolicy",
+        "ownerlessGroupPolicy"
       ]
     },
     {
@@ -1308,6 +1309,16 @@
                   ]
                 }
               ]
+            },
+            {
+              "name": "Entra Backup and Recovery",
+              "overview": "../../resources/entrarecoveryservices-backup-recovery-overview.md",
+              "resources": [
+                "microsoft.graph.entraRecoveryServices.recoveryJob",
+                "microsoft.graph.entraRecoveryServices.recoveryJobBase",
+                "microsoft.graph.entraRecoveryServices.recoveryPreviewJob",
+                "microsoft.graph.entraRecoveryServices.snapshot"
+              ]
             }
           ]
         },
@@ -2251,7 +2262,7 @@
               "resources": [
                 "microsoft.graph.networkaccess.cloudFirewallPolicy",
                 "microsoft.graph.networkaccess.cloudFirewallRule",
-                "microsoft.graph.networkaccess.cloudFirewallPolicyLink",
+                "microsoft.graph.networkaccess.cloudFirewallPolicyLink"
               ]
             },
             {
@@ -3648,26 +3659,29 @@
       ]
     },
     {
-      "name": "Tenant administration (preview)",
+      "name": "Tenant management",
+      "shouldSort": true,
       "childNodes": [
         {
           "name": "Configuration management",
           "overview": "../../resources/unified-tenant-configuration-management-api-overview.md",
-          "shouldSort": true,
           "resources": [
             "configurationBaseline",
             "configurationDrift",
             "configurationMonitor",
             "configurationMonitoringResult",
             "configurationSnapshotJob"
-          ],
-          "complexTypes": [
-            "baselineParameter",
-            "baselineResource",
-            "clientCredentials",
-            "driftedProperty",
-            "errorDetail",
-            "openComplexDictionaryType"
+          ]
+        },
+        {
+          "name": "Governance (preview)",
+          "overview": "../../resources/tenantgovernanceservices-tenantgovernance-overview.md",
+          "resources": [
+            "microsoft.graph.tenantGovernanceServices.tenantGovernanceSetting",
+            "microsoft.graph.tenantGovernanceServices.relatedTenant",
+            "microsoft.graph.tenantGovernanceServices.governancePolicyTemplate",
+            "microsoft.graph.tenantGovernanceServices.governanceInvitation",
+            "microsoft.graph.tenantGovernanceServices.governanceRequest"
           ]
         }
       ]

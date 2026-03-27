@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Remove a reaction from a [plannerTaskChatMessage](../resources/plannertaskchatmessage.md) for the current user.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

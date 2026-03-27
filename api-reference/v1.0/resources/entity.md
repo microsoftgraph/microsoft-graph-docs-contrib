@@ -1,5 +1,5 @@
 ---
-title: "Entity resource type"
+title: "entity resource type"
 description: "Represents an entity."
 ms.localizationpriority: medium
 author: "keylimesoda"
@@ -8,7 +8,7 @@ doc_type: resourcePageType
 ms.date: 04/03/2024
 ---
 
-# Entity resource type
+# entity resource type
 
 Namespace: microsoft.graph
 

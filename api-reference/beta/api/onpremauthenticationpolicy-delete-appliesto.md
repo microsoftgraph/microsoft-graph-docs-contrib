@@ -74,7 +74,6 @@ DELETE https://graph.microsoft.com/beta/policies/onPremAuthenticationPolicies/{o
 
 ---
 
-
 ### Response
 
 The following example shows the response.

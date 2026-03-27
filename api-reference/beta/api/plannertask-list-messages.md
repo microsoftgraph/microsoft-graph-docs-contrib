@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of [plannerTaskChatMessage](../resources/plannertaskchatmessage.md) objects associated with a [plannerTask](../resources/plannertask.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

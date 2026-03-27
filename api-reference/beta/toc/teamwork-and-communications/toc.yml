@@ -278,13 +278,13 @@ items:
       href: ../../api/presence-clearlocation.md
   - name: Ad hoc call
     items:
-    - name: Ad hoc call (preview)
+    - name: Ad hoc call
       items:
-      - name: Ad hoc call (preview)
+      - name: Ad hoc call
         href: ../../resources/adhoccall.md
-      - name: getAllRecordings
+      - name: Get all recordings
         href: ../../api/adhoccall-getallrecordings.md
-      - name: getAllTranscripts
+      - name: Get all transcripts
         href: ../../api/adhoccall-getalltranscripts.md
   - name: Calls
     items:

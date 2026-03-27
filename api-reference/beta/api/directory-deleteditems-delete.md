@@ -58,7 +58,7 @@ The following table shows the least privileged permission or permissions require
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /directory/deleteditems/{id}
+DELETE /directory/deletedItems/{id}
 ```
 
 ## Request headers
@@ -84,7 +84,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
   "name": "delete_directory_deleteditem"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb
+DELETE https://graph.microsoft.com/beta/directory/deletedItems/46cc6179-19d0-473e-97ad-6ff84347bbbb
 ```
 
 # [C#](#tab/csharp)

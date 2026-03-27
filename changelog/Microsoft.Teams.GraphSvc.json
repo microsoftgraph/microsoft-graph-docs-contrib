@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "4fbecd5b-cada-4fc2-9c1d-20e4f47a980b",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllRecordings",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllRecordings](https://learn.microsoft.com/en-us/graph/api/adhocCall-getAllRecordings?view=graph-rest-1.0) method to the [adhocCall](https://learn.microsoft.com/en-us/graph/api/resources/adhocCall?view=graph-rest-1.0) resource.",
+          "Target": "adhocCall"
+        },
+        {
+          "Id": "4fbecd5b-cada-4fc2-9c1d-20e4f47a980b",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllTranscripts",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllTranscripts](https://learn.microsoft.com/en-us/graph/api/adhocCall-getAllTranscripts?view=graph-rest-1.0) method to the [adhocCall](https://learn.microsoft.com/en-us/graph/api/resources/adhocCall?view=graph-rest-1.0) resource.",
+          "Target": "adhocCall"
+        }
+      ],
+      "Id": "4fbecd5b-cada-4fc2-9c1d-20e4f47a980b",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-03-05T19:12:46.1783607Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "f8c2d4a1-9e7b-4f3c-a526-8d1e0b9f7c62",
           "ApiChange": "Method",
           "ChangedApiName": "replyWithQuote",

@@ -1,20 +1,20 @@
 ---
-title: "Use the Tenant Configuration Management APIs in Microsoft Graph (preview)"
+title: "Use the Tenant Configuration Management APIs in Microsoft Graph"
 description: "Learn how to use the Tenant Configuration Management APIs in Microsoft Graph to control and manage configuration settings for an entire organization."
 ms.localizationpriority: high
 author: "swatyario"
-ms.subservice: "tenant-administration"
+ms.subservice: "tenant-configuration-management"
 doc_type: conceptualPageType
 ms.date: 01/19/2026
 ---
 
-# Use the Tenant Configuration Management APIs in Microsoft Graph (preview)
+# Use the Tenant Configuration Management APIs in Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The Tenant Configuration Management (TCM) APIs allow administrators to control and manage configuration settings across a single workload or multiple workloads within the organization.
 
-The tenant configuration APIs need admins to first add TCM service principal to their tenant and then grant permissions to it. This is a pre-requisite step. Read more here: [Set up authentication for Tenant Configuration Management APIs](/graph/TCM-authentication-setup)
+The tenant configuration APIs need admins to first add TCM service principal to their tenant and then grant permissions to it. This is a pre-requisite step. Read more here: [Set up authentication for Tenant Configuration Management APIs](/graph/utcm-authentication-setup)
 
 ## Authorization
 
@@ -76,8 +76,6 @@ Use the Microsoft Graph TCM APIs to control and manage configuration settings ac
 
 ## Related content
 
-[Overview of the Tenant Configuration Management APIs in Microsoft Graph (preview)](/graph/unified-tenant-configuration-management-concept-overview)
+[Overview of the Tenant Configuration Management APIs in Microsoft Graph](/graph/unified-tenant-configuration-management-concept-overview)
 
 [Set up authentication for Tenant Configuration Management APIs](/graph/utcm-authentication-setup)
-
-[Supported workloads and resource types](/graph/utcm-supported-resourcetypes)

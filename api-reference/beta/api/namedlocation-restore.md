@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Restore a deleted [namedLocation](../resources/namedlocation.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

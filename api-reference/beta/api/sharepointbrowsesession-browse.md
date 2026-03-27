@@ -85,7 +85,6 @@ POST https://graph.microsoft.com/beta/solutions/backupRestore/sharePointBrowseSe
 
 ---
 
-
 #### Response
 
 The following example shows the response.

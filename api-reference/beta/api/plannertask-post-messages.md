@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Create a new [plannerTaskChatMessage](../resources/plannertaskchatmessage.md) on a [plannerTask](../resources/plannertask.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

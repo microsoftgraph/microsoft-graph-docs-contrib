@@ -1495,6 +1495,8 @@ items:
       href: ../../resources/ontokenissuancestartlistener.md
     - name: On user create start listener
       href: ../../resources/onusercreatestartlistener.md
+    - name: On password submit listener
+      href: ../../resources/onpasswordsubmitlistener.md
   - name: Authentication methods
     items:
     - name: Overview
@@ -1987,6 +1989,8 @@ items:
       href: ../../resources/onotpsendcustomextension.md
     - name: On token issuance start custom extension
       href: ../../resources/ontokenissuancestartcustomextension.md
+    - name: On password submit custom extension
+      href: ../../resources/onpasswordsubmitcustomextension.md
   - name: Data policy operation
     items:
     - name: Data policy operation

@@ -105,7 +105,6 @@ POST https://graph.microsoft.com/beta/me/presence/clearAutomaticLocation
 
 ---
 
-
 ### Response
 
 The following example shows the response.

@@ -156,8 +156,14 @@ items:
     href: ../../resources/communications-api-overview.md
   - name: Ad hoc call
     items:
-    - name: Ad hoc call (preview)
-      href: ../../resources/adhoccall.md
+    - name: Ad hoc call
+      items:
+      - name: Ad hoc call
+        href: ../../resources/adhoccall.md
+      - name: Get all recordings
+        href: ../../api/adhoccall-getallrecordings.md
+      - name: Get all transcripts
+        href: ../../api/adhoccall-getalltranscripts.md
   - name: Call events
     items:
     - name: Call event
@@ -378,6 +384,8 @@ items:
         href: ../../api/callrecording-delta.md
       - name: List recordings by organizer
         href: ../../api/onlinemeeting-getallrecordings.md
+      - name: Get recordings initiated by a specified user
+        href: ../../api/adhoccall-getallrecordings.md
     - name: Call transcript
       items:
       - name: Call transcript
@@ -390,6 +398,8 @@ items:
         href: ../../api/calltranscript-delta.md
       - name: List transcripts by organizer
         href: ../../api/onlinemeeting-getalltranscripts.md
+      - name: Get transcripts initiated by a specified user
+        href: ../../api/adhoccall-getalltranscripts.md
     - name: Virtual appointment
       items:
       - name: Get virtual appointment join link

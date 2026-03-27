@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 03/16/2026
+ms.date: 03/23/2026
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -2070,6 +2070,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | 2932e07a-3c29-44e4-bb36-6d0fc176387f | 948caae6-152a-48cd-a746-4844af30e8e9 |
 | DisplayText | Upload content activity audit logs to the audit store. | Upload contents activity audit logs to the audit store. |
 | Description | Allows the application to upload bulk contents activity audit logs to the audit store. | Allows the application to upload bulk contents activity audit logs to the audit store. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### Contracts.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | f9af4646-98b0-4e9d-a53e-40d4f6452fc4 | 9df4d5b0-7921-4437-9ea8-adf0c9e276dc |
+| DisplayText | Read contracts | Read contracts |
+| Description | Allows the app to read available properties on contracts, without a signed-in user. | Allows the app to read available properties of contracts, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -6099,6 +6110,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### PrivilegedAccess-CustomExt.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | e7ebe2d9-6e26-487a-8286-191d623a6904 | bc04fe80-7e6a-4154-8b8f-d1e3465613bf |
+| DisplayText | Read Privileged Access (PIM) custom extensions | Read Privileged Access (PIM) custom extensions |
+| Description | Allows the app to read Privileged Access (PIM) custom extensions for your organization, without a signed-in user. | Allows the app to read Privileged Access (PIM) custom extensions for your organization, without a signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### PrivilegedAccess-CustomExt.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 124325f3-0c46-4c57-a050-d6d1a82510f6 | 157efa76-20fd-4db4-876e-90c049322467 |
+| DisplayText | Read and write Privileged Access (PIM) custom extensions | Read and write Privileged Access (PIM) custom extensions |
+| Description | Allows the app to read and write Privileged Access (PIM) custom extensions for your organization, without a signed-in user. | Allows the app to read and write Privileged Access (PIM) custom extensions for your organization, without a signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
 ### PrivilegedAccess.Read.AzureAD
 
 | Category | Application | Delegated |
@@ -8633,6 +8666,138 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | - | b4d26916-07e0-4daf-9096-9f6d9174aa96 |
 | DisplayText | - | Read all of the possible Teams interactions between the user and other users |
 | Description | - | Allows the app to read all of the possible Teams interactions between the signed-in user and other users |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### TenantGovernance-Invitation.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 3f4f98e9-6faf-4e5f-814b-ed2ed8a4ec9e | fda068e8-0524-485e-8d7f-b5bc29b0dae9 |
+| DisplayText | Read Tenant Governance invitations | Read Tenant Governance invitations |
+| Description | Allows the application to list and read all Tenant Governance invitations without a signed-in user. | Allows the application to list and read all Tenant Governance invitations on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### TenantGovernance-Invitation.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 42b91635-3803-4af2-a2d5-e91127f9c488 |
+| DisplayText | - | Read and write Tenant Governance invitations |
+| Description | - | Allows the application to list, read, create, and delete Tenant Governance invitations on behalf of the signed-in user. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### TenantGovernance-PolicyTemplate.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | eb9465d8-e7c0-4301-8e51-927f34ee3134 | ad222a15-813d-46b8-8f8d-1976a69a74f3 |
+| DisplayText | Read Tenant Governance policy templates | Read Tenant Governance policy templates |
+| Description | Allows the application to list and read all Tenant Governance policy templates without a signed-in user. | Allows the application to list and read all Tenant Governance policy templates on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### TenantGovernance-PolicyTemplate.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 7cd0bd21-45fe-4c8e-a549-3c95bd27d185 |
+| DisplayText | - | Read and write Tenant Governance policy templates |
+| Description | - | Allows the application to list, read, create, update, and delete Tenant Governance policy templates on behalf of the signed-in user. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### TenantGovernance-RelatedTenant.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 7ced9a83-8e7c-46df-b3e0-6b45a6ecedcd | 9caaca93-f090-4b9a-b4bb-17de251354d4 |
+| DisplayText | Read related tenants | Read related tenants |
+| Description | Allows the application to list and read related tenants information without a signed-in user. | Allows the application to list and read related tenants information on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### TenantGovernance-RelatedTenant.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | e61db2de-de55-461e-942d-52a028ed1076 |
+| DisplayText | - | Read and write related tenants |
+| Description | - | Allows the application to list, read, and refresh related tenants information on behalf of the signed-in user. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### TenantGovernance-Relationship.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 41c250d0-8793-44e1-a130-5fdbd5bccd0a | 0b1c2458-4845-477b-a704-3cce8b06bf28 |
+| DisplayText | Read Tenant Governance relationships | Read Tenant Governance relationships |
+| Description | Allows the application to list and read all Tenant Governance relationships without a signed-in user. | Allows the application to list and read all Tenant Governance relationships on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### TenantGovernance-Relationship.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 3fbcd6a3-a9a5-4d69-8a78-acc7d7195180 |
+| DisplayText | - | Read and write Tenant Governance relationships |
+| Description | - | Allows the application to list, read, and update Tenant Governance relationships on behalf of the signed-in user. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### TenantGovernance-Request.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 294294d5-2b81-4cf1-837c-28fc22bc3290 | a924b9f1-7af0-4982-aecf-b6e0e10b2830 |
+| DisplayText | Read Tenant Governance requests | Read Tenant Governance requests |
+| Description | Allows the application to list and read all Tenant Governance requests without a signed-in user. | Allows the application to list and read all Tenant Governance requests on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### TenantGovernance-Request.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 3c7a434e-4e5d-413f-be82-b77ea4ba5a4d |
+| DisplayText | - | Read and write Tenant Governance requests |
+| Description | - | Allows the application to list, read, create, and update Tenant Governance requests on behalf of the signed-in user. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### TenantGovernance-Setting.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | e2d1cac5-0317-4ae3-aca9-59737eb75317 | 4ad3e05f-2467-49d9-baa2-8e4de7bcee9b |
+| DisplayText | Read Tenant Governance settings | Read Tenant Governance settings |
+| Description | Allows the application to read Tenant Governance settings without a signed-in user. | Allows the application to read Tenant Governance settings on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### TenantGovernance-Setting.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 135f3533-12fc-4608-97ac-5c5cea64baf0 |
+| DisplayText | - | Read and write Tenant Governance settings |
+| Description | - | Allows the application to read Tenant Governance settings and update them on behalf of the signed-in user. |
 | AdminConsentRequired | - | Yes |
 
 ---

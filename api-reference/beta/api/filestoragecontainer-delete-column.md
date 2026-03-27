@@ -93,7 +93,6 @@ DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WR
 
 ---
 
-
 ### Response
 
 The following example shows the response.

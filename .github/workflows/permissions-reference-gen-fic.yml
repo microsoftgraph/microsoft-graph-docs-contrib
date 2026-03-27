@@ -27,16 +27,16 @@ jobs:
     - name: Azure Login using Federated Identity
       uses: azure/login@v2
       with:
-        client-id: ${{ secrets.GRAPHPERMISSIONSREFERENCE_AZURE_CLIENT_ID }}
-        tenant-id: ${{ secrets.GRAPHPERMISSIONSREFERENCE_AZURE_TENANT_ID }}
+        client-id: ${{ secrets.GRAPHPERMISSIONSREFERENCE_CLIENT_ID }}
+        tenant-id: ${{ secrets.GRAPHPERMISSIONSREFERENCE_TENANT_ID }}
         allow-no-subscriptions: true
 
     - name: Run PowerShell script to update permissions
       shell: pwsh
       run: | 
-        $ClientId = "${{ secrets.GRAPHPERMISSIONSREFERENCE_AZURE_CLIENT_ID }}"
-        $TenantId = "${{ secrets.GRAPHPERMISSIONSREFERENCE_AZURE_TENANT_ID }}"
-        ./docs/update-permissions-reference-fic.ps1 -ClientId $ClientId -TenantId $TenantId
+        $ClientId = "${{ secrets.GRAPHPERMISSIONSREFERENCE_CLIENT_ID }}"
+        $TenantId = "${{ secrets.GRAPHPERMISSIONSREFERENCE_TENANT_ID }}"
+        ./docs/scripts/update-permissions-reference-fic.ps1 -ClientId $ClientId -TenantId $TenantId
         
     - name: Get token
       id: get_token
@@ -65,7 +65,7 @@ jobs:
     - name: Run PowerShell script to correct errors in permissions descriptions
       shell: pwsh
       run: | 
-        ./docs/correct-permissions-reference-errors.ps1
+        ./docs/scripts/correct-permissions-reference-errors.ps1
     
     - name: Commit errors correction and open a pull request
       working-directory: ./docs

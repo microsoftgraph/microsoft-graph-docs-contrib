@@ -305,6 +305,32 @@
     {
       "ChangeList": [
         {
+          "Id": "f2bf3e59-6634-4ed4-8b0d-5dcd3f9a9fe9",
+          "ApiChange": "Method",
+          "ChangedApiName": "retryUpload",
+          "ChangeType": "Addition",
+          "Description": "Added the [retryUpload](https://learn.microsoft.com/en-us/graph/api/cloudpcdeviceimage-retryupload?view=graph-rest-beta) method to the [cloudPcDeviceImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta) resource.",
+          "Target": "cloudPcDeviceImage"
+        },
+        {
+          "Id": "f2bf3e59-6634-4ed4-8b0d-5dcd3f9a9fe9",
+          "ApiChange": "Method",
+          "ChangedApiName": "reupload",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [reupload](https://learn.microsoft.com/en-us/graph/api/cloudpcdeviceimage-reupload?view=graph-rest-beta) method on the [cloudPcDeviceImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta) resource. Going forward, use the [retryUpload](https://learn.microsoft.com/en-us/graph/api/cloudpcdeviceimage-retryupload?view=graph-rest-beta) API instead.",
+          "Target": "cloudPcDeviceImage"
+        }
+      ],
+      "Id": "f2bf3e59-6634-4ed4-8b0d-5dcd3f9a9fe9",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-02-25T00:00:00Z",
+      "WorkloadArea": "Devices and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "71dd0205-a512-4e0b-98df-3ddae9454863",
           "ApiChange": "Member",
           "ChangedApiName": "refreshPolicyConfiguration",
@@ -317,6 +343,40 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2026-01-21T02:56:39.1048878Z",
+      "WorkloadArea": "Devices and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8fd3fd60-1c7c-4874-930c-9e62eb206c2f",
+          "ApiChange": "Property",
+          "ChangedApiName": "osVersionNumber",
+          "ChangeType": "Addition",
+          "Description": "Added the **osVersionNumber** property to the [cloudPcDeviceImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcdeviceimage?view=graph-rest-1.0) resource.",
+          "Target": "cloudPcDeviceImage"
+        },
+        {
+          "Id": "8fd3fd60-1c7c-4874-930c-9e62eb206c2f",
+          "ApiChange": "Property",
+          "ChangedApiName": "sizeInGB",
+          "ChangeType": "Addition",
+          "Description": "Added the **sizeInGB** property to the [cloudPcDeviceImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcdeviceimage?view=graph-rest-1.0) resource.",
+          "Target": "cloudPcDeviceImage"
+        },
+        {
+          "Id": "8fd3fd60-1c7c-4874-930c-9e62eb206c2f",
+          "ApiChange": "Property",
+          "ChangedApiName": "osVersionNumber",
+          "ChangeType": "Addition",
+          "Description": "Added the **osVersionNumber** property to the [cloudPcGalleryImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcgalleryimage?view=graph-rest-1.0) resource.",
+          "Target": "cloudPcGalleryImage"
+        }
+      ],
+      "Id": "8fd3fd60-1c7c-4874-930c-9e62eb206c2f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-03-24T00:00:00Z",
       "WorkloadArea": "Devices and app management",
       "SubArea": "Cloud PC"
     },

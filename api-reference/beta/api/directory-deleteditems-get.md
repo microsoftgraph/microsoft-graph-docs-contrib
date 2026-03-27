@@ -56,7 +56,7 @@ The following table shows the least privileged permission or permissions require
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directory/deleteditems/{object-id}
+GET /directory/deletedItems/{object-id}
 ```
 
 > [!IMPORTANT]
@@ -95,7 +95,7 @@ The following example shows a request.
   "name": "get_directory_deleteditem"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb
+GET https://graph.microsoft.com/beta/directory/deletedItems/46cc6179-19d0-473e-97ad-6ff84347bbbb
 ```
 
 # [C#](#tab/csharp)
