@@ -22,9 +22,9 @@ Inherits from [cloudPcPool](../resources/cloudpcpool.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/virtualendpoint-list-cloudpcpools.md)|[cloudPcPool](../resources/cloudpcpool.md) collection|List the properties and relationships of the [cloudPcPool](../resources/cloudpcpool.md) objects.|
+|[List](../api/cloudpcpool-list.md)|[cloudPcPool](../resources/cloudpcpool.md) collection|List the properties and relationships of the [cloudPcPool](../resources/cloudpcpool.md) objects.|
 |[Get](../api/cloudpcpool-get.md)|[cloudPcPool](../resources/cloudpcpool.md)|Read the properties and relationships of a [cloudPcPool](../resources/cloudpcpool.md) object.|
-|[Create](../api/virtualendpoint-post-cloudpcpools.md)|[cloudPcPool](../resources/cloudpcpool.md)|Create a new [cloudPcPool](../resources/cloudpcpool.md) object.|
+|[Create](../api/cloudpcpool-create.md)|[cloudPcPool](../resources/cloudpcpool.md)|Create a new [cloudPcPool](../resources/cloudpcpool.md) object.|
 |[Update](../api/cloudpcpool-update.md)|None|Update the properties of a [cloudPcPool](../resources/cloudpcpool.md) object.|
 |[Delete](../api/cloudpcpool-delete.md)|None|Delete a [cloudPcPool](../resources/cloudpcpool.md) object.|
 
@@ -46,7 +46,6 @@ Inherits from [cloudPcPool](../resources/cloudpcpool.md).
 |poolStatus|[cloudPcPoolStatus](../resources/enums.md#cloudpcpoolstatus-values)|The current status of the pool. The possible values are: `created`, `provisioning`, `active`, `failed`, `deleting`, `provisioningPaused`, `unknownFutureValue`. The default value is `created`. Read-only. Inherited from [cloudPcPool](../resources/cloudpcpool.md).|
 |poolUrl|String|The URL of the agent pool to check out/in. It's ready when the pool is provisioned. Read-only.|
 |scalingPolicy|[cloudPcAgentPoolScalingPolicy](../resources/cloudpcagentpoolscalingpolicy.md)|The scaling policy defining minimum and maximum counts.|
-|scopeIds|String collection|The scope tag IDs associated with the pool. Inherited from [cloudPcPool](../resources/cloudpcpool.md).|
 |sessionUsage|[cloudPcAgentPoolSessionUsage](../resources/cloudpcagentpoolsessionusage.md)|The current session usage of the agent pool. Read-only.|
 
 ## Relationships
@@ -91,7 +90,6 @@ The following JSON representation shows the resource type.
   "scalingPolicy": {
     "@odata.type": "microsoft.graph.cloudPcAgentPoolScalingPolicy"
   },
-  "scopeIds": ["String"],
   "sessionUsage": {
     "@odata.type": "microsoft.graph.cloudPcAgentPoolSessionUsage"
   }

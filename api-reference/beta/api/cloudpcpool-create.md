@@ -20,8 +20,8 @@ Create a new [cloudPcPool](../resources/cloudpcpool.md) object.
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "virtualendpoint_post_cloudpcpools" } -->
-[!INCLUDE [permissions-table](../includes/permissions/virtualendpoint-post-cloudpcpools-permissions.md)]
+<!-- { "blockType": "permissions", "name": "cloudpcpool_create" } -->
+[!INCLUDE [permissions-table](../includes/permissions/cloudpcpool-create-permissions.md)]
 
 ## HTTP request
 
@@ -56,11 +56,10 @@ The following table lists the properties that are required when you create a [cl
 |capabilities|[cloudPcPoolCapabilityConfiguration](../resources/cloudpcpoolcapabilityconfiguration.md)|Required. The capabilities configuration.|
 |billingConfiguration|[cloudPcAgentPoolBillingConfiguration](../resources/cloudpcagentpoolbillingconfiguration.md)|Required. The billing configuration (for agent pools).|
 |scalingPolicy|[cloudPcAgentPoolScalingPolicy](../resources/cloudpcagentpoolscalingpolicy.md)|Required. The scaling policy (for agent pools).|
-|scopeIds|String collection|Optional. The scope tag IDs.|
 
 ## Response
 
-If successful, this method returns a `201 Created` response code.
+If successful, this method returns a `201 Created`response code.
 
 ## Examples
 
@@ -107,8 +106,7 @@ Content-Type: application/json
   "capabilities": {
     "@odata.type": "#microsoft.graph.cloudPcAgentPoolCapabilityConfiguration",
     "enableSingleSignOn": true
-  },
-  "scopeIds": ["0"]
+  }
 }
 ```
 

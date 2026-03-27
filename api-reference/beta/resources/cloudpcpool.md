@@ -22,9 +22,9 @@ This is an abstract type. Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/virtualendpoint-list-cloudpcpools.md)|[cloudPcPool](../resources/cloudpcpool.md) collection|List the properties and relationships of the [cloudPcPool](../resources/cloudpcpool.md) objects.|
+|[List](../api/cloudpcpool-list.md)|[cloudPcPool](../resources/cloudpcpool.md) collection|List the properties and relationships of the [cloudPcPool](../resources/cloudpcpool.md) objects.|
 |[Get](../api/cloudpcpool-get.md)|[cloudPcPool](../resources/cloudpcpool.md)|Read the properties and relationships of a [cloudPcPool](../resources/cloudpcpool.md) object.|
-|[Create](../api/virtualendpoint-post-cloudpcpools.md)|[cloudPcPool](../resources/cloudpcpool.md)|Create a new [cloudPcPool](../resources/cloudpcpool.md) object.|
+|[Create](../api/cloudpcpool-create.md)|[cloudPcPool](../resources/cloudpcpool.md)|Create a new [cloudPcPool](../resources/cloudpcpool.md) object.|
 |[Update](../api/cloudpcpool-update.md)|None|Update the properties of a [cloudPcPool](../resources/cloudpcpool.md) object.|
 |[Delete](../api/cloudpcpool-delete.md)|None|Delete a [cloudPcPool](../resources/cloudpcpool.md) object.|
 |[List assignments](../api/cloudpcpool-list-assignments.md)|[cloudPcPoolAssignment](../resources/cloudpcpoolassignment.md) collection|List the assignments of a [cloudPcPool](../resources/cloudpcpool.md).|
@@ -45,7 +45,7 @@ This is an abstract type. Inherits from [entity](../resources/entity.md).
 |managedByService|[cloudPcManagementServiceType](../resources/enums.md#cloudpcmanagementservicetype-values)|The identifier of Windows 365 or partner that manages the pool. The possible values are: `windows365`, `microsoft365BizChat`, `unknownFutureValue`. Read-only.|
 |networkConfiguration|[cloudPcNetworkConfiguration](../resources/cloudpcnetworkconfiguration.md)|The network configuration for the pool.|
 |poolStatus|[cloudPcPoolStatus](../resources/enums.md#cloudpcpoolstatus-values)|The current status of the pool. The possible values are: `created`, `provisioning`, `active`, `failed`, `deleting`, `provisioningPaused`, `unknownFutureValue`. The default value is `created`. Read-only.|
-|scopeIds|String collection|The scope tag IDs associated with the pool.|
+
 
 ## Relationships
 
@@ -83,7 +83,6 @@ The following JSON representation shows the resource type.
   "networkConfiguration": {
     "@odata.type": "microsoft.graph.cloudPcNetworkConfiguration"
   },
-  "poolStatus": "String",
-  "scopeIds": ["String"]
+  "poolStatus": "String"
 }
 ```

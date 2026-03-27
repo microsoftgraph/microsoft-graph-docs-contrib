@@ -56,11 +56,10 @@ The following table lists the properties that can be updated for a [cloudPcPool]
 |capabilities|[cloudPcPoolCapabilityConfiguration](../resources/cloudpcpoolcapabilityconfiguration.md)|The capabilities configuration.|
 |billingConfiguration|[cloudPcAgentPoolBillingConfiguration](../resources/cloudpcagentpoolbillingconfiguration.md)|The billing configuration.|
 |scalingPolicy|[cloudPcAgentPoolScalingPolicy](../resources/cloudpcagentpoolscalingpolicy.md)|The scaling policy.|
-|scopeIds|String collection|The scope tag IDs.|
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `204 No Content`response code.
 
 ## Examples
 
