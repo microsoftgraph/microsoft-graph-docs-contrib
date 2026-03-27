@@ -49,13 +49,13 @@ The following table lists the properties that are required when you create a [cl
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Required. The display name of the pool.|
-|description|String|Optional. The description of the pool.|
-|cloudPcConfiguration|[cloudPcConfiguration](../resources/cloudpcconfiguration.md)|Required. The Cloud PC specification.|
-|networkConfiguration|[cloudPcNetworkConfiguration](../resources/cloudpcnetworkconfiguration.md)|Required. The network configuration.|
-|capabilities|[cloudPcPoolCapabilityConfiguration](../resources/cloudpcpoolcapabilityconfiguration.md)|Required. The capabilities configuration.|
-|billingConfiguration|[cloudPcAgentPoolBillingConfiguration](../resources/cloudpcagentpoolbillingconfiguration.md)|Required. The billing configuration (for agent pools).|
-|scalingPolicy|[cloudPcAgentPoolScalingPolicy](../resources/cloudpcagentpoolscalingpolicy.md)|Required. The scaling policy (for agent pools).|
+|billingConfiguration|[cloudPcAgentPoolBillingConfiguration](../resources/cloudpcagentpoolbillingconfiguration.md)|Required. The billing configuration for the agent pool, including billing type and billing plan identifier.|
+|capabilities|[cloudPcPoolCapabilityConfiguration](../resources/cloudpcpoolcapabilityconfiguration.md)|Required. The capabilities configuration including SSO settings.|
+|cloudPcConfiguration|[cloudPcConfiguration](../resources/cloudpcconfiguration.md)|Required. The Cloud PC specification including image and OS locale settings for provisioning.|
+|description|String|Optional. The description of the pool. Maximum length is 512.|
+|displayName|String|Required. The display name of the pool. The name is unique across Cloud PC pools in an organization. Maximum length is 60.|
+|networkConfiguration|[cloudPcNetworkConfiguration](../resources/cloudpcnetworkconfiguration.md)|Required. The network configuration for the pool.|
+|scalingPolicy|[cloudPcAgentPoolScalingPolicy](../resources/cloudpcagentpoolscalingpolicy.md)|Required. The scaling policy defining minimum and maximum Cloud PC counts for the pool.|
 
 ## Response
 
