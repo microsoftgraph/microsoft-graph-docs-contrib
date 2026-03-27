@@ -43,15 +43,14 @@ POST /deviceManagement/virtualEndpoint/cloudPcPools/{cloudPcPool-id}/assignments
 
 ## Request body
 
-In the request body, supply a JSON representation of a [cloudPcPoolAssignment](../resources/cloudpcpoolassignment.md) object. The assignment is polymorphic; use `#microsoft.graph.cloudPcAgentPoolUserAssignment` or `#microsoft.graph.cloudPcAgentPoolServiceAssignment` as the `@odata.type`.
+In the request body, supply a JSON representation of a [cloudPcPoolAssignment](../resources/cloudpcpoolassignment.md) object. Use `#microsoft.graph.cloudPcAgentPoolUserAssignment` as the `@odata.type`.
 
 The following table lists the properties that are required when you create a [cloudPcPoolAssignment](../resources/cloudpcpoolassignment.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|@odata.type|String|Required. The type of assignment. Use `#microsoft.graph.cloudPcAgentPoolUserAssignment` or `#microsoft.graph.cloudPcAgentPoolServiceAssignment`.|
-|userPrincipalId|String|Required for user assignments. The unique identifier of the user principal.|
-|servicePrincipalId|String|Required for service assignments. The unique identifier of the service principal.|
+|@odata.type|String|Required. The type of assignment. Use `#microsoft.graph.cloudPcAgentPoolUserAssignment`.|
+|userPrincipalId|String|Required. The unique identifier of the user principal.|
 
 ## Response
 

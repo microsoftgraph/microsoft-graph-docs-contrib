@@ -86,11 +86,6 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.cloudPcAgentPoolUserAssignment",
       "id": "b2c3d4e5-f6a7-8901-bcde-f23456789012",
       "userPrincipalId": "c3d4e5f6-a7b8-9012-cdef-345678901234"
-    },
-    {
-      "@odata.type": "#microsoft.graph.cloudPcAgentPoolServiceAssignment",
-      "id": "c3d4e5f6-a7b8-9012-cdef-345678901234",
-      "servicePrincipalId": "d4e5f6a7-b8c9-0123-def4-567890123456"
     }
   ]
 }
