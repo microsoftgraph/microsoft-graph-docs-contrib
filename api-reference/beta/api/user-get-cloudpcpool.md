@@ -60,7 +60,6 @@ If successful, this method returns a `200 OK` response code and a [cloudPcPool](
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_get_cloudpcpool"
@@ -70,8 +69,6 @@ The following example shows a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/cloudPcPools/a1b2c3d4-e5f6-7890-abcd-ef1234567890
 ```
-
----
 
 ### Response
 
