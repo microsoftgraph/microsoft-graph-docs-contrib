@@ -28,6 +28,10 @@ items:
     href: ../../api/peopleadminsettings-list-profilesources.md
   - name: Create profile source
     href: ../../api/peopleadminsettings-post-profilesources.md
+  - name: List profile property settings
+    href: ../../api/peopleadminsettings-list-profilepropertysettings.md
+  - name: Create profile property setting
+    href: ../../api/peopleadminsettings-post-profilepropertysettings.md
 - name: Insights settings
   items:
   - name: Insights settings
@@ -50,6 +54,20 @@ items:
     href: ../../api/profilecardproperty-update.md
   - name: Delete
     href: ../../api/profilecardproperty-delete.md
+- name: Profile property setting
+  items:
+  - name: Profile property setting
+    href: ../../resources/profilepropertysetting.md
+  - name: List
+    href: ../../api/peopleadminsettings-list-profilepropertysettings.md
+  - name: Create
+    href: ../../api/peopleadminsettings-post-profilepropertysettings.md
+  - name: Get
+    href: ../../api/profilepropertysetting-get.md
+  - name: Update
+    href: ../../api/profilepropertysetting-update.md
+  - name: Delete
+    href: ../../api/profilepropertysetting-delete.md
 - name: Profile source
   items:
   - name: Profile source

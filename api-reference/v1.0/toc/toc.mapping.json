@@ -1444,6 +1444,7 @@
         "peopleAdminSettings",
         "insightsSettings",
         "profileCardProperty",
+        "profilePropertySetting",
         "profileSource",
         "pronounsSettings"
       ],
