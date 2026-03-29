@@ -58,7 +58,7 @@ The following table lists the properties that can be updated for a [cloudPcPool]
 
 ## Response
 
-If successful, this method returns a `204 No Content`response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 

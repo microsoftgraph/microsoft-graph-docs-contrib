@@ -54,7 +54,7 @@ The following table lists the properties that are required when you create a [cl
 
 ## Response
 
-If successful, this method returns a `201 Created` response code.
+If successful, this method returns a `201 Created` response code and a [cloudPcPoolAssignment](../resources/cloudpcpoolassignment.md) object in the response body.
 
 ## Examples
 
@@ -82,13 +82,22 @@ Content-Type: application/json
 
 The following example shows the response.
 
+>**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.cloudPcPoolAssignment"
 }
 -->
 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.cloudPcAgentPoolUserAssignment",
+  "id": "cloudPcPoolAssignmentId",
+  "userPrincipalId": "f6a7b8c9-d0e1-2345-f678-901234567890"
+}
 ```

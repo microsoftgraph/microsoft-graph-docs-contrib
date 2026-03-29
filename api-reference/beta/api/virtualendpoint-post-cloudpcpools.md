@@ -45,21 +45,23 @@ POST /deviceManagement/virtualEndpoint/cloudPcPools
 
 In the request body, supply a JSON representation of a [cloudPcPool](../resources/cloudpcpool.md) object.
 
+The `@odata.type` property is required in the request body to specify the derived type. The supported value is `#microsoft.graph.cloudPcAgentPool`.
+
 The following table lists the properties that are required when you create a [cloudPcPool](../resources/cloudpcpool.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|billingConfiguration|[cloudPcAgentPoolBillingConfiguration](../resources/cloudpcagentpoolbillingconfiguration.md)|Required. The billing configuration for the agent pool, including billing type and billing plan identifier.|
+|billingConfiguration|[cloudPcAgentPoolBillingConfiguration](../resources/cloudpcagentpoolbillingconfiguration.md)|Required. The billing configuration for the agent pool, including billing type and billing plan identifier. Applies to the [cloudPcAgentPool](../resources/cloudpcagentpool.md) derived type.|
 |capabilities|[cloudPcPoolCapabilityConfiguration](../resources/cloudpcpoolcapabilityconfiguration.md)|Required. The capabilities configuration including SSO settings.|
 |cloudPcConfiguration|[cloudPcConfiguration](../resources/cloudpcconfiguration.md)|Required. The Cloud PC specification including image and OS locale settings for provisioning.|
 |description|String|Optional. The description of the pool. Maximum length is 512.|
 |displayName|String|Required. The display name of the pool. The name is unique across Cloud PC pools in an organization. Maximum length is 60.|
 |networkConfiguration|[cloudPcNetworkConfiguration](../resources/cloudpcnetworkconfiguration.md)|Required. The network configuration for the pool.|
-|scalingPolicy|[cloudPcAgentPoolScalingPolicy](../resources/cloudpcagentpoolscalingpolicy.md)|Required. The scaling policy defining minimum and maximum Cloud PC counts for the pool.|
+|scalingPolicy|[cloudPcAgentPoolScalingPolicy](../resources/cloudpcagentpoolscalingpolicy.md)|Required. The scaling policy defining minimum and maximum Cloud PC counts for the pool. Applies to the [cloudPcAgentPool](../resources/cloudpcagentpool.md) derived type.|
 
 ## Response
 
-If successful, this method returns a `201 Created`response code.
+If successful, this method returns a `201 Created` response code and a [cloudPcPool](../resources/cloudpcpool.md) object in the response body.
 
 ## Examples
 
@@ -114,13 +116,51 @@ Content-Type: application/json
 
 The following example shows the response.
 
+>**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.cloudPcPool"
 }
 -->
 
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
+{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "displayName": "Contoso Development Pool",
+  "cloudPcConfiguration": {
+    "imageId": "microsoftwindowsdesktop_windows-ent-cpc_win11-23h2-ent-cpc-m365",
+    "imageType": "gallery",
+    "osLocale": "en-US"
+  },
+  "networkConfiguration": {
+    "@odata.type": "#microsoft.graph.cloudPcMicrosoftHostedNetworkConfiguration",
+    "geographicLocationType": "usWest",
+    "regionGroups": [
+      {
+        "regionGroup": "usWest",
+        "regions": [
+          "westus2",
+          "westus3"
+        ]
+      }
+    ]
+  },
+  "billingConfiguration": {
+    "billingType": "payAsYouGo",
+    "billingPlanId": "00000000-0000-0000-0000-000000000001"
+  },
+  "scalingPolicy": {
+    "minimumCount": 2,
+    "maximumCount": 10
+  },
+  "capabilities": {
+    "@odata.type": "#microsoft.graph.cloudPcAgentPoolCapabilityConfiguration",
+    "enableSingleSignOn": true
+  }
+}
 ```

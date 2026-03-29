@@ -5572,7 +5572,7 @@ Possible values for user account types (group membership), per Windows definitio
 | provisioning | Indicates the pool is currently being provisioned. |
 | active | Indicates the pool is active and ready for use. |
 | deleting | Indicates the pool is being deleted. |
-| failed | Indicates the pool provisioning has failed and can not recover. |
+| failed | Indicates the pool provisioning has failed and cannot recover. |
 | provisioningPaused | Indicates the pool provisioning is paused due to customer error. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
