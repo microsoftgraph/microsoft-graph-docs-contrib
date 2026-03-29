@@ -22,7 +22,7 @@ Represents the Cloud PC specification including image and OS locale settings for
 |:---|:---|:---|
 |imageDisplayName|String|The display name of the image. Read-only.|
 |imageId|String|The unique identifier of the operating system image used for provisioning new Cloud PCs. The format for a gallery type image is: `{publisherName_offerName_skuName}`.|
-|imageType|[cloudPcProvisioningPolicyImageType](../resources/enums.md#cloudpcprovisioningpolicyimagetypevalues)|The type of operating system image (custom or gallery) used for provisioning on Cloud PCs. The possible values are: `gallery`, `custom`, `unknownFutureValue`. The default value is `gallery`.|
+|imageType|[cloudPcProvisioningPolicyImageType](../resources/enums.md#cloudpcprovisioningpolicyimagetype-values)|The type of operating system image (custom or gallery) used for provisioning on Cloud PCs. The possible values are: `gallery`, `custom`, `unknownFutureValue`. The default value is `gallery`.|
 |osLocale|String|The operating system locale for the Cloud PC.|
 
 ## Relationships
