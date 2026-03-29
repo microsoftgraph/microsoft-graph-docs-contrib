@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "e8083562-3402-4ba6-8a2f-58fee02a363b",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "profilePropertySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **profilePropertySettings** relationship to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleAdminSettings?view=graph-rest-1.0) resource.",
+          "Target": "peopleAdminSettings"
+        },
+        {
+          "Id": "e8083562-3402-4ba6-8a2f-58fee02a363b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "profilePropertySetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [profilePropertySetting](https://learn.microsoft.com/en-us/graph/api/resources/profilePropertySetting?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "profilePropertySetting"
+        }
+      ],
+      "Id": "e8083562-3402-4ba6-8a2f-58fee02a363b",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-03-26T12:36:55.4568918Z",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "People"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "7c3c1b29-3564-4b0e-8c68-2030ff97bb37",
           "ApiChange": "Resource",
           "ChangedApiName": "profileSourceLocalization",
