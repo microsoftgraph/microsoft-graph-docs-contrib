@@ -1,7 +1,7 @@
 ---
 title: "List driveExclusionUnits"
-description: "Get a list of drive exclusion units associated with an OneDrive for Business protection policy."
-author: "vidulaverma"
+description: "Get a list of drive exclusion units associated with a OneDrive for work or school protection policy."
+author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [driveExclusionUnit](../resources/driveexclusionunit.md) objects associated with an [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).
+Get a list of [drive exclusion units](../resources/driveexclusionunit.md) associated with a [OneDrive for work or school protection policy](../resources/onedriveforbusinessprotectionpolicy.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

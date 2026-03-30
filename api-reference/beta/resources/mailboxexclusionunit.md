@@ -1,7 +1,7 @@
 ---
 title: "mailboxExclusionUnit resource type"
-description: "Represents an Exchange mailbox excluded from a full workload Exchange protection policy."
-author: "vidulaverma"
+description: "Represents an Exchange mailbox that is excluded from an Exchange protection policy configured for full workload backup."
+author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
@@ -24,7 +24,7 @@ Inherits from [exclusionUnitBase](../resources/exclusionunitbase.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/exchangeprotectionpolicy-list-mailboxexclusionunits.md)|[mailboxExclusionUnit](../resources/mailboxexclusionunit.md) collection|Get a list of [mailboxExclusionUnit](../resources/mailboxexclusionunit.md) objects associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).|
-|[Get](../api/exchangeprotectionpolicy-get-mailboxexclusionunit.md)|[mailboxExclusionUnit](../resources/mailboxexclusionunit.md)|Get a [mailboxExclusionUnit](../resources/mailboxexclusionunit.md) object associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).|
+|[Get](../api/mailboxexclusionunit-get.md)|[mailboxExclusionUnit](../resources/mailboxexclusionunit.md)|Get a [mailboxExclusionUnit](../resources/mailboxexclusionunit.md) object associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).|
 
 ## Properties
 

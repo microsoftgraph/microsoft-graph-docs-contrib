@@ -1,7 +1,7 @@
 ---
 title: "exclusionUnitBase resource type"
 description: "Represents the abstract base entity for an exclusion unit that specifies artifacts to be excluded from full workload backup."
-author: "vidulaverma"
+author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the abstract base entity for an exclusion unit that specifies artifacts to be excluded from full workload backup. This resource is the base type for [siteExclusionUnit](../resources/siteexclusionunit.md), [driveExclusionUnit](../resources/driveexclusionunit.md), and [mailboxExclusionUnit](../resources/mailboxexclusionunit.md).
+Represents the abstract base entity for an exclusion unit that specifies artifacts to be excluded from full workload backup.
+
+This resource is the base type for [siteExclusionUnit](../resources/siteexclusionunit.md), [driveExclusionUnit](../resources/driveexclusionunit.md), and [mailboxExclusionUnit](../resources/mailboxexclusionunit.md).
 
 Inherits from [entity](../resources/entity.md).
 

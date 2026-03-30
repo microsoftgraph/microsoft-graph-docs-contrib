@@ -22,20 +22,14 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Backup storage
 
-Use the new Full Workload Backup (FWB) APIs to protect entire Microsoft 365 workloads—SharePoint Online, OneDrive for Business, and Exchange Online—with minimal administrative overhead. Instead of manually selecting each item to protect, you can create a protection policy that backs up all data in a workload and then specify only the items to exclude from backup.
+Use the new Full Workload Backup (FWB) APIs to protect entire Microsoft 365 workloads—SharePoint Online, OneDrive for work or school, and Exchange Online—with minimal administrative overhead. Instead of manually selecting each item to protect, you can create a protection policy that backs up all data in a workload and then specify only the items to exclude from backup.
 
 FWB policies use an exclusion unit pattern. After creating a protection policy with `protectionMode` set to `fullServiceBackup`, you can manage the exclusion list using a delta pattern on the policy update endpoint (`siteExclusionUnits@delta`, `driveExclusionUnits@delta`, or `mailboxExclusionUnits@delta`). For bulk operations, use the dedicated bulk addition job APIs.
 
 The following new resources are supported:
 
 - [exclusionUnitBase](/graph/api/resources/exclusionunitbase?view=graph-rest-beta&preserve-view=true) — Abstract base type for exclusion units.
-- [siteExclusionUnit](/graph/api/resources/siteexclusionunit?view=graph-rest-beta&preserve-view=true) — Represents a SharePoint site excluded from a full workload SharePoint protection policy.
-- [driveExclusionUnit](/graph/api/resources/driveexclusionunit?view=graph-rest-beta&preserve-view=true) — Represents a OneDrive drive excluded from a full workload OneDrive for Business protection policy.
-- [mailboxExclusionUnit](/graph/api/resources/mailboxexclusionunit?view=graph-rest-beta&preserve-view=true) — Represents an Exchange mailbox excluded from a full workload Exchange protection policy.
 - [exclusionUnitBulkAdditionJob](/graph/api/resources/exclusionunitbulkadditionjob?view=graph-rest-beta&preserve-view=true) — Abstract base type for bulk addition jobs.
-- [siteExclusionUnitsBulkAdditionJob](/graph/api/resources/siteexclusionunitsbulkadditionjob?view=graph-rest-beta&preserve-view=true) — Represents an async job for bulk-adding site exclusion units to a SharePoint protection policy.
-- [driveExclusionUnitsBulkAdditionJob](/graph/api/resources/driveexclusionunitsbulkadditionjob?view=graph-rest-beta&preserve-view=true) — Represents an async job for bulk-adding drive exclusion units to an OneDrive for Business protection policy.
-- [mailboxExclusionUnitsBulkAdditionJob](/graph/api/resources/mailboxexclusionunitsbulkadditionjob?view=graph-rest-beta&preserve-view=true) — Represents an async job for bulk-adding mailbox exclusion units to an Exchange protection policy.
 
 ## March 2026: New and generally available
 
@@ -271,17 +265,17 @@ The granular restore process is designed to be simple and efficient and consists
 
 - **Create a browse session**  
   Initiate a browse session for a specific restore point (backup snapshot).  
-  - You can create a [SharePoint browse session](/graph/api/backuprestoreroot-post-sharepointbrowsesessions?view=graph-rest-beta&preserve-view=true) or a [OneDrive for Business browse session](/graph/api/backuprestoreroot-post-onedriveforbusinessrestoresessions?view=graph-rest-beta&preserve-view=true).
+  - You can create a [SharePoint browse session](/graph/api/backuprestoreroot-post-sharepointbrowsesessions?view=graph-rest-beta&preserve-view=true) or a [OneDrive for work or school browse session](/graph/api/backuprestoreroot-post-onedriveforbusinessrestoresessions?view=graph-rest-beta&preserve-view=true).
 
 - **Browse items**  
   Once the session is created, the user can query it to list all backed-up items available within the browse session.  
   - Results are returned as a collection of [browseQueryResponseItem](/graph/api/resources/browsequeryresponseitem?view=graph-rest-beta&preserve-view=true) objects, each representing a file, folder, or other resource.  
-  - You can browse items within a [SharePoint browse session](/graph/api/sharepointbrowsesession-browse?view=graph-rest-beta&preserve-view=true) or a [OneDrive for Business browse session](/graph/api/onedriveforbusinessbrowsesession-browse?view=graph-rest-beta&preserve-view=true).
+  - You can browse items within a [SharePoint browse session](/graph/api/sharepointbrowsesession-browse?view=graph-rest-beta&preserve-view=true) or a [OneDrive for work or school browse session](/graph/api/onedriveforbusinessbrowsesession-browse?view=graph-rest-beta&preserve-view=true).
 
 - **Create a restore session**  
   Select one or more items from the browse session and initiates a restore session.  
   - Only the selected items are restored to their previous state, leaving the rest of the site or drive unchanged.  
-  - You can create a [SharePoint granular restore session](/graph/api/backuprestoreroot-post-sharepointrestoresessions?view=graph-rest-beta&preserve-view=true#example-2-create-a-granular-restore-session) or a [OneDrive for Business granular restore session](/graph/api/backuprestoreroot-post-onedriveforbusinessrestoresessions?view=graph-rest-beta&preserve-view=true#example-2-create-a-granular-restore-session).
+  - You can create a [SharePoint granular restore session](/graph/api/backuprestoreroot-post-sharepointrestoresessions?view=graph-rest-beta&preserve-view=true#example-2-create-a-granular-restore-session) or a [OneDrive for work or school granular restore session](/graph/api/backuprestoreroot-post-onedriveforbusinessrestoresessions?view=graph-rest-beta&preserve-view=true#example-2-create-a-granular-restore-session).
 
 ### Device and app management | Cloud licensing
 

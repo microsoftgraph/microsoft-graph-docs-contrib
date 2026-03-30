@@ -1,7 +1,7 @@
 ---
 title: "List siteExclusionUnitsBulkAdditionJobs"
 description: "Get a list of site exclusion units bulk addition jobs associated with a SharePoint protection policy."
-author: "vidulaverma"
+author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md) objects associated with a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).
+Get a list of [site exclusion units bulk addition jobs](../resources/siteexclusionunitsbulkadditionjob.md) associated with a [SharePoint protection policy](../resources/sharepointprotectionpolicy.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

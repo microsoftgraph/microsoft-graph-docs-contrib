@@ -1,7 +1,7 @@
 ---
 title: "driveExclusionUnit resource type"
-description: "Represents a OneDrive drive excluded from a full workload OneDrive for Business protection policy."
-author: "vidulaverma"
+description: "Represents a OneDrive drive that is excluded from a OneDrive for work or school protection policy configured for full workload backup."
+author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a OneDrive drive that is excluded from an [OneDrive for Business protection policy](../resources/onedriveforbusinessprotectionpolicy.md) configured for full workload backup.
+Represents a OneDrive drive that is excluded from a [OneDrive for work or school protection policy](../resources/onedriveforbusinessprotectionpolicy.md) configured for full workload backup.
 
 Inherits from [exclusionUnitBase](../resources/exclusionunitbase.md).
 
@@ -24,7 +24,7 @@ Inherits from [exclusionUnitBase](../resources/exclusionunitbase.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/onedriveforbusinessprotectionpolicy-list-driveexclusionunits.md)|[driveExclusionUnit](../resources/driveexclusionunit.md) collection|Get a list of [driveExclusionUnit](../resources/driveexclusionunit.md) objects associated with an [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).|
-|[Get](../api/onedriveforbusinessprotectionpolicy-get-driveexclusionunit.md)|[driveExclusionUnit](../resources/driveexclusionunit.md)|Get a [driveExclusionUnit](../resources/driveexclusionunit.md) object associated with an [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).|
+|[Get](../api/driveexclusionunit-get.md)|[driveExclusionUnit](../resources/driveexclusionunit.md)|Get a [driveExclusionUnit](../resources/driveexclusionunit.md) object associated with an [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).|
 
 ## Properties
 

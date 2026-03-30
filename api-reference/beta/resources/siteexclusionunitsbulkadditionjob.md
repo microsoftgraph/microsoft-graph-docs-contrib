@@ -1,7 +1,7 @@
 ---
 title: "siteExclusionUnitsBulkAdditionJob resource type"
-description: "Represents an async job for bulk adding site exclusion units to a SharePoint protection policy."
-author: "vidulaverma"
+description: "Represents an async job for bulk-adding site exclusion units to a SharePoint protection policy configured for full workload backup."
+author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
@@ -25,9 +25,9 @@ Inherits from [exclusionUnitBulkAdditionJob](../resources/exclusionunitbulkaddit
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create](../api/sharepointprotectionpolicy-post-siteexclusionunitsbulkadditionjobs.md)|[siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md)|Create a new [siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md) for a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).|
-|[Get](../api/sharepointprotectionpolicy-get-siteexclusionunitsbulkadditionjob.md)|[siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md)|Get a [siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md) associated with a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).|
 |[List](../api/sharepointprotectionpolicy-list-siteexclusionunitsbulkadditionjobs.md)|[siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md) collection|Get a list of [siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md) objects associated with a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).|
+|[Create](../api/sharepointprotectionpolicy-post-siteexclusionunitsbulkadditionjobs.md)|[siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md)|Create a new [siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md) for a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).|
+|[Get](../api/siteexclusionunitsbulkadditionjob-get.md)|[siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md)|Get a [siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md) associated with a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).|
 
 ## Properties
 

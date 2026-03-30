@@ -1,7 +1,7 @@
 ---
 title: "siteExclusionUnit resource type"
-description: "Represents a SharePoint site excluded from a full workload SharePoint protection policy."
-author: "vidulaverma"
+description: "Represents a SharePoint site that is excluded from a SharePoint protection policy configured for full workload backup."
+author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
@@ -24,7 +24,7 @@ Inherits from [exclusionUnitBase](../resources/exclusionunitbase.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/sharepointprotectionpolicy-list-siteexclusionunits.md)|[siteExclusionUnit](../resources/siteexclusionunit.md) collection|Get a list of [siteExclusionUnit](../resources/siteexclusionunit.md) objects associated with a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).|
-|[Get](../api/sharepointprotectionpolicy-get-siteexclusionunit.md)|[siteExclusionUnit](../resources/siteexclusionunit.md)|Get a [siteExclusionUnit](../resources/siteexclusionunit.md) object associated with a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).|
+|[Get](../api/siteexclusionunit-get.md)|[siteExclusionUnit](../resources/siteexclusionunit.md)|Get a [siteExclusionUnit](../resources/siteexclusionunit.md) object associated with a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).|
 
 ## Properties
 

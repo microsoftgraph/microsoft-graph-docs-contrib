@@ -1,7 +1,7 @@
 ---
 title: "mailboxExclusionUnitsBulkAdditionJob resource type"
-description: "Represents an async job for bulk adding mailbox exclusion units to an Exchange protection policy."
-author: "vidulaverma"
+description: "Represents an async job for bulk-adding mailbox exclusion units to an Exchange protection policy configured for full workload backup."
+author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
@@ -25,9 +25,9 @@ Inherits from [exclusionUnitBulkAdditionJob](../resources/exclusionunitbulkaddit
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Create](../api/exchangeprotectionpolicy-post-mailboxexclusionunitsbulkadditionjobs.md)|[mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md)|Create a new [mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md) for an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).|
-|[Get](../api/exchangeprotectionpolicy-get-mailboxexclusionunitsbulkadditionjob.md)|[mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md)|Get a [mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md) associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).|
 |[List](../api/exchangeprotectionpolicy-list-mailboxexclusionunitsbulkadditionjobs.md)|[mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md) collection|Get a list of [mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md) objects associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).|
+|[Create](../api/exchangeprotectionpolicy-post-mailboxexclusionunitsbulkadditionjobs.md)|[mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md)|Create a new [mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md) for an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).|
+|[Get](../api/mailboxexclusionunitsbulkadditionjob-get.md)|[mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md)|Get a [mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md) associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).|
 
 ## Properties
 

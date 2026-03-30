@@ -1992,13 +1992,13 @@ Namespace: microsoft.graph
 
 ### exclusionUnitBulkJobStatus values
 
-|Member|Description|
-|:---|:---|
-|created|The bulk addition job was created but hasn't started processing yet.|
-|active|The bulk addition job is currently being processed.|
-|completed|All items in the bulk addition job were successfully added as exclusion units.|
-|completedWithErrors|The bulk addition job completed but some items failed to be added as exclusion units.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
+|Member|
+|:---|
+|created|
+|active|
+|completed|
+|completedWithErrors|
+|unknownFutureValue|
 
 ### externalEmailOtpState values
 
@@ -5418,11 +5418,11 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### protectionMode values
 
-|Member|Description|
-|:---|:---|
-|standard|Only items explicitly added as protection units are backed up. This is the default mode.|
-|fullServiceBackup|The entire workload is backed up. Specific items can be excluded using exclusion units.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
+|Member|
+|:---|
+|standard|
+|fullServiceBackup|
+|unknownFutureValue|
 
 ### protectionSource values
 

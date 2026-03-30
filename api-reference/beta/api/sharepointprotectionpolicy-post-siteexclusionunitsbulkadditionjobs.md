@@ -1,7 +1,7 @@
 ---
 title: "Create siteExclusionUnitsBulkAdditionJob"
 description: "Create a site exclusion units bulk addition job for a SharePoint protection policy."
-author: "vidulaverma"
+author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a [siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md) object associated with a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).
+Create a [site exclusion units bulk addition job](../resources/siteexclusionunitsbulkadditionjob.md) for a [SharePoint protection policy](../resources/sharepointprotectionpolicy.md).
 
-The initial status upon creation of the job is `active`. When all the `siteWebUrls` are added to the corresponding SharePoint protection policy as exclusion units, the status of the job is `completed`. If any failures occur, the status of the job is `completedWithErrors`.
+The initial status upon creation of the job is `active`. When all the sites specified in `siteWebUrls` are added to the corresponding SharePoint protection policy as exclusion units, the status of the job is `completed`. If any failures occur, the status of the job is `completedWithErrors`.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

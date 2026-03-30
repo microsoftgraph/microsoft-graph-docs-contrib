@@ -1,7 +1,7 @@
 ---
 title: "Create mailboxExclusionUnitsBulkAdditionJob"
 description: "Create a mailbox exclusion units bulk addition job for an Exchange protection policy."
-author: "vidulaverma"
+author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a [mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md) object associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
+Create a [mailbox exclusion units bulk addition job](../resources/mailboxexclusionunitsbulkadditionjob.md) for an [Exchange protection policy](../resources/exchangeprotectionpolicy.md).
 
 The initial status upon creation of the job is `active`. When all the mailboxes are added to the corresponding Exchange protection policy as exclusion units, the status of the job is `completed`. If any failures occur, the status of the job is `completedWithErrors`.
 

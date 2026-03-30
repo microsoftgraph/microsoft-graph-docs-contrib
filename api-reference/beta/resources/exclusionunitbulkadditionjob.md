@@ -1,7 +1,7 @@
 ---
 title: "exclusionUnitBulkAdditionJob resource type"
-description: "Represents the abstract base entity for an async job for bulk adding exclusion units to a protection policy."
-author: "vidulaverma"
+description: "Represents the abstract base entity for an async job that bulk-adds exclusion units to a protection policy."
+author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the abstract base entity for an async job that bulk-adds exclusion units to a protection policy. This resource is the base type for [siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md), [driveExclusionUnitsBulkAdditionJob](../resources/driveexclusionunitsbulkadditionjob.md), and [mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md).
+Represents the abstract base entity for an async job that bulk-adds exclusion units to a protection policy.
+
+This resource is the base type for [siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md), [driveExclusionUnitsBulkAdditionJob](../resources/driveexclusionunitsbulkadditionjob.md), and [mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md).
 
 Inherits from [entity](../resources/entity.md).
 

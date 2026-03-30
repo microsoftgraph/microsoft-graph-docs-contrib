@@ -1,7 +1,7 @@
 ---
 title: "List mailboxExclusionUnitsBulkAdditionJobs"
 description: "Get a list of mailbox exclusion units bulk addition jobs associated with an Exchange protection policy."
-author: "vidulaverma"
+author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md) objects associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
+Get a list of [mailbox exclusion units bulk addition jobs](../resources/mailboxexclusionunitsbulkadditionjob.md) associated with an [Exchange protection policy](../resources/exchangeprotectionpolicy.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

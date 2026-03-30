@@ -1,7 +1,7 @@
 ---
 title: "Get mailboxExclusionUnitsBulkAdditionJob"
 description: "Get a mailbox exclusion units bulk addition job associated with an Exchange protection policy."
-author: "vidulaverma"
+author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: apiPageType
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md) object associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).
+Get a [mailbox exclusion units bulk addition job](../resources/mailboxexclusionunitsbulkadditionjob.md) associated with an [Exchange protection policy](../resources/exchangeprotectionpolicy.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -22,8 +22,8 @@ Get a [mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsb
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "exchangeprotectionpolicy_get_mailboxexclusionunitsbulkadditionjob" } -->
-[!INCLUDE [permissions-table](../includes/permissions/exchangeprotectionpolicy-get-mailboxexclusionunitsbulkadditionjob-permissions.md)]
+<!-- { "blockType": "permissions", "name": "mailboxexclusionunitsbulkadditionjob_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/mailboxexclusionunitsbulkadditionjob-get-permissions.md)]
 
 ## HTTP request
 
@@ -57,7 +57,7 @@ The following example shows a request.
 
 <!-- {
   "blockType": "request",
-  "name": "exchangeprotectionpolicy_get_mailboxexclusionunitsbulkadditionjob"
+  "name": "mailboxexclusionunitsbulkadditionjob_get"
 }
 -->
 ```http
