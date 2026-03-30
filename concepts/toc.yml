@@ -972,7 +972,7 @@ items:
       href: teams-licenses.md
     - name: Implementation differences in national clouds
       href: teamwork-national-cloud-differences.md
-  - name: Tenant administration (preview)
+  - name: Tenant management (preview)
     items:
     - name: Configuration management
       items:
