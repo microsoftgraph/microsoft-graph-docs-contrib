@@ -53,7 +53,7 @@ Inherits from [protectionPolicyBase](../resources/protectionpolicybase.md).
 |Relationship|Type|Description|
 |:---|:---|:---|
 |siteExclusionUnits|[siteExclusionUnit](../resources/siteexclusionunit.md) collection|The site exclusion units associated with the SharePoint protection policy.|
-|siteExclusionUnitsBulkAdditionJobs|[siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md) collection|The site exclusion units bulk addition jobs associated with the SharePoint protection policy.|
+|siteExclusionUnitsBulkAdditionJobs|[siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md) collection|The list of bulk addition jobs for site exclusion units associated with the SharePoint protection policy.|
 |siteInclusionRules|[siteProtectionRule](../resources/siteprotectionrule.md) collection|The rules associated with the SharePoint Protection policy.|
 |siteProtectionUnits|[siteProtectionUnit](../resources/siteprotectionunit.md) collection| The protection units (sites) that are protected under the site protection policy.|
 

@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a OneDrive drive that is excluded from an [OneDrive for Business protection policy](../resources/onedriveforbusinessprotectionpolicy.md) configured for full workload backup.
+Represents a OneDrive drive that is excluded from a [OneDrive for Business protection policy](../resources/onedriveforbusinessprotectionpolicy.md) configured for full workload backup.
 
 Inherits from [exclusionUnitBase](../resources/exclusionunitbase.md).
 

@@ -52,7 +52,7 @@ Inherits from [protectionPolicyBase](../resources/protectionpolicybase.md).
 |Relationship|Type|Description|
 |:---|:---|:---|
 |driveExclusionUnits|[driveExclusionUnit](../resources/driveexclusionunit.md) collection|The drive exclusion units associated with the OneDrive for Business protection policy.|
-|driveExclusionUnitsBulkAdditionJobs|[driveExclusionUnitsBulkAdditionJob](../resources/driveexclusionunitsbulkadditionjob.md) collection|The drive exclusion units bulk addition jobs associated with the OneDrive for Business protection policy.|
+|driveExclusionUnitsBulkAdditionJobs|[driveExclusionUnitsBulkAdditionJob](../resources/driveexclusionunitsbulkadditionjob.md) collection|The list of bulk addition jobs for drive exclusion units associated with the OneDrive for Business protection policy.|
 |driveInclusionRules|[driveProtectionRule](../resources/driveprotectionrule.md) collection|Contains the details of the OneDrive for Work or School protection rule.|
 |driveProtectionUnits|[driveProtectionUnit](../resources/driveprotectionunit.md) collection|Contains the protection units associated with a  OneDrive for Work or School protection policy.|
 
