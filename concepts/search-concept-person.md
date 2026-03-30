@@ -26,27 +26,27 @@ You can use the following APIs to search for people inside an organization.
 ## Returned people properties
 The people API returns the following set of properties.
 
-| Property                 | Type    |
-|:-------------------------|:--------|
-| additionalOfficeLocation | String  |
-| companyName              | String  |
-| department               | String  |
-| displayName              | String  |
-| emailAddress             | String  |
-| givenName                | String  |
-| hitId                    | String  |
-| imAddress                | String  |
-| jobTitle                 | String  |
-| officeLocation           | String  |
-| personType               | String  |
-| phones                   | String  |
-| rank                     | Integer |
-| summary                  | String  |
-| surname                  | String  |
-| userPrincipalName        | String  |
-
 > [!NOTE]
-> The emailAddress property is only returned with the beta `/search` endpoint as of now.
+> Properties maked with an asterisk (*) are only returned with the beta `/search` endpoint as of now.
+
+| Property                  | Type    |
+|:--------------------------|:--------|
+| additionalOfficeLocation* | String  |
+| companyName               | String  |
+| department                | String  |
+| displayName               | String  |
+| emailAddress*             | String  |
+| givenName                 | String  |
+| hitId                     | String  |
+| imAddress                 | String  |
+| jobTitle                  | String  |
+| officeLocation            | String  |
+| personType                | String  |
+| phones                    | String  |
+| rank                      | Integer |
+| summary                   | String  |
+| surname                   | String  |
+| userPrincipalName         | String  |
 
 ## Person types
 The following table shows people types and subtypes supported in the people API.
