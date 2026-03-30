@@ -5,7 +5,7 @@ author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
-ms.date: 07/22/2024
+ms.date: 03/30/2026
 ---
 
 # userAccount resource type
@@ -18,6 +18,7 @@ Represents common properties for a user account.
 
 | Property                  | Type   | Description                                                              |
 |:--------------------------|:-------|:-------------------------------------------------------------------------|
+| aadTenantId               | String | The Microsoft Entra tenant ID.                                           |
 | accountName               | String | The displayed name of the user account.                                  |
 | activeDirectoryObjectGuid | Guid   | The unique user identifier assigned by the on-premises Active Directory. |
 | azureAdUserId             | String | The user object identifier in Microsoft Entra ID.                        |
@@ -42,6 +43,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.userAccount",
+  "aadTenantId": "String",
   "accountName": "String",
   "activeDirectoryObjectGuid": "Guid",
   "azureAdUserId": "String",
