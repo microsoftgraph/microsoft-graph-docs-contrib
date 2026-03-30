@@ -209,52 +209,200 @@ The following table describes the columns in the returned report when you specif
 | GroupColumn                 | The metric used for grouping data (PolicyName, Region, UserSettingName, ServicePlanType, ServicePlanName, OSBuildVersion, AADJoinType, ImageName, GatewayRegion, ClientOS, ClientType, TransportType, CloudPCEndpointCountryRegion, CloudPCEndpointState, or CloudPCEndpointCity). |
 
 ### Configuration Reports
-
-The following table describes the columns in the returned report when you specify `troubleshootConfigurationGlobalFilterReport` for the **reportName** property in your API call.
-
-| Member                      | Description                                    |
-|:----------------------------|:-----------------------------------------------|
-| MockColumn1                 | MockDescription for configuration report.     |
-| MockColumn2                 | MockDescription for configuration report.     |
-| MockColumn3                 | MockDescription for configuration report.     |
-
-The following table describes the columns in the returned report when you specify `troubleshootTenantConnectionCountTrendReport` for the **reportName** property in your API call.
+The following table describes the columns in the returned report when you specify `troubleshootConfigurationGlobalFilterV1Report` for the **reportName** property in your API call.
 
 | Member                      | Description                                    |
 |:----------------------------|:-----------------------------------------------|
-| MockConnectionCount         | MockDescription for connection count trend.   |
-| MockPeakConnections         | MockDescription for peak connections.         |
-| MockConnectionTrend         | MockDescription for connection trend data.    |
+| TenantId                    | The unique identifier of the tenant.          |
+| CloudPCStatus               | The status of the Cloud PC.                   |
+| Region                      | The region where the Cloud PC is located.     |
+| PolicyName                  | The name of the policy applied.               |
+| UserSettingName             | The name of the user setting configuration.   |
+| ImageName                   | The name of the OS image used.                |
+| ServicePlanName             | The name of the service plan.                 |
+| ServicePlanType             | The Cloud PC service plan type.               |
+| OSVersion                   | The operating system version.                 |
+| OSBuildVersion              | The operating system build version.           |
+| ClientOS                    | The client operating system.                  |
+| ClientType                  | The type of client device.                    |
+| ClientVersion               | The version of the client software.           |
+| TeamsAppV2Version           | The version of the Teams App V2.              |
+| MMRVersion                  | The version of the MMR component.             |
 
-The following table describes the columns in the returned report when you specify `troubleshootTenantConnectionCountAggregatedReport` for the **reportName** property in your API call.
+The following table describes the columns in the returned report when you specify `troubleshootConfigurationTotalConnectionCountBarV1Report` for the **reportName** property in your API call.
 
 | Member                      | Description                                    |
 |:----------------------------|:-----------------------------------------------|
-| MockTotalCount              | MockDescription for total connection count.   |
-| MockAverageCount            | MockDescription for average count.            |
-| MockCountSummary            | MockDescription for count summary.            |
+| TotalActivityCount          | The total count of activities.                |
+| TenantId                    | The unique identifier of the tenant.          |
+| GroupColumn                 | The metric used for grouping data (CloudPCStatus, Region, PolicyName, UserSettingName, ImageName, ServicePlanName, ServicePlanType, OSVersion, OSBuildVersion, ClientOS, ClientType, ClientVersion, TeamsAppV2Version, or MMRVersion). |
 
+The following table describes the columns in the returned report when you specify `troubleshootConfigurationConnectionCountTrendV1Report` for the **reportName** property in your API call.
 
-### CloudPC Reports
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| TotalActivityCount          | The total count of activities.                |
+| TenantId                    | The unique identifier of the tenant.          |
+| EventDateTime               | The date and time when the event occurred.    |
+| GroupColumn                 | The metric used for grouping data (CloudPCStatus, Region, PolicyName, UserSettingName, ImageName, ServicePlanName, ServicePlanType, OSVersion, OSBuildVersion, ClientOS, ClientType, ClientVersion, TeamsAppV2Version, or MMRVersion). |
+
+### User & CloudPC Reports
+
+The following table describes the columns in the returned report when you specify `troubleshootMatchedUserReport` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| CloudPCId                   | The unique identifier of the Cloud PC.        |
+| UPN                         | The User Principal Name of the user.          |
+| UserId                      | The unique identifier of the user.            |
+
+The following table describes the columns in the returned report when you specify `troubleshootMatchedCloudPCReport` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| TenantId                    | The unique identifier of the tenant.          |
+| CloudPCId                   | The unique identifier of the Cloud PC.        |
+| ManagedDeviceName           | The name of the managed device.               |
+
+The following table describes the columns in the returned report when you specify `troubleshootCloudPCListReport` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| CloudPCId                   | The unique identifier of the Cloud PC.        |
+| ManagedDeviceName           | The name of the managed device.               |
+| UserDisplayName             | The display name of the user.                 |
+| UPN                         | The User Principal Name of the user.          |
+| UserId                      | The unique identifier of the user.            |
+| ServicePlanType             | The Cloud PC service plan type (FrontlineShared, FrontlineDedicated, Enterprise, or Reserve). |
+| ProductType                 | The product type of the Cloud PC.             |
+| ProvisioningType            | The provisioning type of the Cloud PC.        |
+| SKUName                     | The SKU name of the Cloud PC.                 |
+| LastActiveTime              | The last active time of the Cloud PC.         |
+| ConnectionState             | The connection state of the Cloud PC.         |
+| DeviceHealthTime            | The device health check time.                 |
+| CloudDeviceHealthState      | The health state of the Cloud PC device.      |
+| ProvisioningPolicyId        | The unique identifier of the provisioning policy. |
+| PolicyName                  | The name of the policy applied.               |
+
+The following table describes the columns in the returned report when you specify `troubleshootUserListReport` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| CloudPCId                   | The unique identifier of the Cloud PC.        |
+| ManagedDeviceName           | The name of the managed device.               |
+| UserDisplayName             | The display name of the user.                 |
+| UPN                         | The User Principal Name of the user.          |
+| UserId                      | The unique identifier of the user.            |
+| ServicePlanType             | The Cloud PC service plan type (FrontlineShared, FrontlineDedicated, Enterprise, or Reserve). |
+| ProductType                 | The product type of the Cloud PC.             |
+| ProvisioningType            | The provisioning type of the Cloud PC.        |
+| SKUName                     | The SKU name of the Cloud PC.                 |
+| LastActiveTime              | The last active time of the Cloud PC.         |
+| LastGatewayRegion           | The region of the last used gateway.          |
+| LastClientType              | The type of the last used client device.      |
+| LastClientOS                | The operating system of the last used client. |
+| ConnectionState             | The connection state of the Cloud PC.         |
+| DeviceHealthTime            | The device health check time.                 |
+| CloudDeviceHealthState      | The health state of the Cloud PC device.      |
+| ProvisioningPolicyId        | The unique identifier of the provisioning policy. |
+| PolicyName                  | The name of the policy applied.               |
+
+The following table describes the columns in the returned report when you specify `troubleshootCloudPCDurationTrendReport` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| TenantId                    | The unique identifier of the tenant.          |
+| CloudPCId                   | The unique identifier of the Cloud PC.        |
+| ManagedDeviceName           | The name of the managed device.               |
+| UPN                         | The User Principal Name of the user.          |
+| EventDateTime               | The date and time when the event occurred.    |
+| DurationInHour              | The duration time in hours.                   |
+| AvgDurationInHour           | The average duration time in hours.           |
+
+The following table describes the columns in the returned report when you specify `troubleshootCloudPCDurationAggregatedReport` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| TenantId                    | The unique identifier of the tenant.          |
+| CloudPCId                   | The unique identifier of the Cloud PC.        |
+| ManagedDeviceName           | The name of the managed device.               |
+| UPN                         | The User Principal Name of the user.          |
+| DurationInHour              | The duration time in hours.                   |
+| AvgDurationInHour           | The average duration time in hours.           |
+
+The following table describes the columns in the returned report when you specify `troubleshootCloudPCErrorTrendReport` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| TenantId                    | The unique identifier of the tenant.          |
+| CodeSymbolic                | The symbolic error code identifier.           |
+| EventDateTime               | The date and time when the event occurred.    |
+| ErrorCount                  | The count of errors reported.                 |
+
+The following table describes the columns in the returned report when you specify `troubleshootCloudPCErrorAggregatedReport` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| TenantId                    | The unique identifier of the tenant.          |
+| CodeSymbolic                | The symbolic error code identifier.           |
+| ErrorCount                  | The count of errors reported.                 |
+| ErrorPercentage             | The percentage of errors reported.            |
 
 The following table describes the columns in the returned report when you specify `troubleshootCloudPCNetworkTrendReport` for the **reportName** property in your API call.
 
 | Member                      | Description                                    |
 |:----------------------------|:-----------------------------------------------|
-| MockColumn1                 | MockDescription for CloudPC report.           |
-| MockColumn2                 | MockDescription for CloudPC report.           |
-| MockColumn3                 | MockDescription for CloudPC report.           |
+| TenantId                    | The unique identifier of the tenant.          |
+| CloudPCId                   | The unique identifier of the Cloud PC.        |
+| ManagedDeviceName           | The name of the managed device.               |
+| UPN                         | The User Principal Name of the user.          |
+| EventDateTime               | The date and time when the event occurred.    |
+| RoundTripTimeInMsP50        | The 50th percentile round trip time in milliseconds. |
+| BandwidthInMbpsP50          | The 50th percentile bandwidth in megabits per second. |
 
-### User/Device Reports
+The following table describes the columns in the returned report when you specify `troubleshootCloudPCNetworkAggregatedReport` for the **reportName** property in your API call.
 
-The following table describes the columns in the returned report when you specify `troubleshootMatchedUserReport` for the **reportName** property in your API call.
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| TenantId                    | The unique identifier of the tenant.          |
+| CloudPCId                   | The unique identifier of the Cloud PC.        |
+| ManagedDeviceName           | The name of the managed device.               |
+| UPN                         | The User Principal Name of the user.          |
+| RoundTripTimeInMsP50        | The 50th percentile round trip time in milliseconds. |
+| BandwidthInMbpsP50          | The 50th percentile bandwidth in megabits per second. |
 
-| Member                             | Description                                                                          |
-|:-----------------------------------|:-------------------------------------------------------------------------------------|
-| CpuIssueCloudPcCount               | The number of Cloud PC instances with CPU issues. |
-| MockColumn1                 | MockDescription for user/identity report.       |
-| MockColumn2                 | MockDescription for user/identity report.       |
-| MockColumn3                 | MockDescription for user/identity report.       |
+The following table describes the columns in the returned report when you specify `troubleshootCloudPCRemoteSignInTimeTrendReport` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| TenantId                    | The unique identifier of the tenant.          |
+| CloudPCId                   | The unique identifier of the Cloud PC.        |
+| ManagedDeviceName           | The name of the managed device.               |
+| UPN                         | The User Principal Name of the user.          |
+| EventDateTime               | The date and time when the event occurred.    |
+| RemoteSignInTimeInSecondAvg | The average remote sign-in time in seconds.   |
+
+The following table describes the columns in the returned report when you specify `troubleshootCloudPCRemoteSignInTimeAggregatedReport` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| TenantId                    | The unique identifier of the tenant.          |
+| CloudPCId                   | The unique identifier of the Cloud PC.        |
+| ManagedDeviceName           | The name of the managed device.               |
+| UPN                         | The User Principal Name of the user.          |
+| RemoteSignInTimeInSecondAvg | The average remote sign-in time in seconds.   |
+
+The following table describes the columns in the returned report when you specify `troubleshootCloudPCHealthTrendReport` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| TenantId                    | The unique identifier of the tenant.          |
+| CloudPCId                   | The unique identifier of the Cloud PC.        |
+| ManagedDeviceName           | The name of the managed device.               |
+| UPN                         | The User Principal Name of the user.          |
+| UserId                      | The unique identifier of the user.            |
+| EventDateTime               | The date and time when the event occurred.    |
+| HealthPercentage            | The health percentage of Cloud PC systems.    |
 
 ## Examples
 
