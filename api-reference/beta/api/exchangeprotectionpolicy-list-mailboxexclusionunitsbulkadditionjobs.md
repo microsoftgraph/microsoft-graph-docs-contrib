@@ -47,7 +47,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a list of [mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md) objects in the response body. The `mailboxes` values are omitted from the response body to limit the response size.
+If successful, this method returns a `200 OK` response code and a collection of [mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md) objects in the response body.
 
 ## Examples
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/solutions/backupRestore/exchangeProtectionP
 
 ### Response
 
-The following example shows the response.
+The following example shows the response. The **mailboxes** values are omitted from the response body to limit the response size.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

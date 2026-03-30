@@ -51,7 +51,7 @@ Inherits from [protectionPolicyBase](../resources/protectionpolicybase.md).
 |Relationship|Type|Description|
 |:---|:---|:---|
 |mailboxExclusionUnits|[mailboxExclusionUnit](../resources/mailboxexclusionunit.md) collection|The mailbox exclusion units associated with the Exchange protection policy.|
-|mailboxExclusionUnitsBulkAdditionJobs|[mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md) collection|The mailbox exclusion units bulk addition jobs associated with the Exchange protection policy.|
+|mailboxExclusionUnitsBulkAdditionJobs|[mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md) collection|The list of bulk addition jobs for mailbox exclusion units associated with the Exchange protection policy.|
 |mailboxInclusionRules|[mailboxProtectionRule](../resources/mailboxprotectionrule.md) collection|The rules associated with the Exchange protection policy.|
 |mailboxProtectionUnits|[mailboxProtectionUnit](../resources/mailboxprotectionunit.md) collection|The protection units (mailboxes) that are  protected under the Exchange protection policy.|
 

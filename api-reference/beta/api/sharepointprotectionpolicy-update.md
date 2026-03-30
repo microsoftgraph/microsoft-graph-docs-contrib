@@ -50,7 +50,7 @@ In the request body, provide a JSON representation of following properties to up
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Display Name of the [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md). Optional|
-|siteExclusionUnits@delta|Collection([siteExclusionUnit](../resources/siteexclusionunit.md))|Collection of [siteExclusionUnit](../resources/siteexclusionunit.md) objects to be added to or removed from the [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md). Use this property for policies configured with [`protectionMode`](../resources/enums.md#protectionmode-values) set to `fullServiceBackup`. Required for full workload backup policies.|
+|siteExclusionUnits@delta|[siteExclusionUnit](../resources/siteexclusionunit.md) collection|Collection of [siteExclusionUnit](../resources/siteexclusionunit.md) objects to be added to or removed from the [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md). Use this property for policies configured with [protectionMode](../resources/enums.md#protectionmode-values) set to `fullServiceBackup`. Required for full workload backup policies.|
 |siteProtectionUnits@delta|Collection([siteProtectionUnit](../resources/siteprotectionunit.md))|Collection of siteProtectionUnit objects to be added to or removed from the [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md). Required.|
 
 To remove a **siteProtectionUnit** from the policy, specify the `@removed` annotation in the request body for the protection unit together with the ID of the [siteProtectionUnit](../resources/siteprotectionunit.md).
