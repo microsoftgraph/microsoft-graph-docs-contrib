@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Represents an async job for bulk-adding drive exclusion units to a [OneDrive for work or school protection policy](../resources/onedriveforbusinessprotectionpolicy.md) configured for full workload backup.
 
-The initial status upon creation of the job is `active`. When all the drives are added to the corresponding OneDrive for work or school protection policy as exclusion units, the status of the job is `completed`. If any failures occur, the status of the job is `completedWithErrors`.
+The initial status upon creation of the job is `active`. When all the **drives** are added to the corresponding OneDrive for work or school protection policy as exclusion units, the status of the job is `completed`. If any failures occur, the status of the job is `completedWithErrors`.
 
 Inherits from [exclusionUnitBulkAdditionJob](../resources/exclusionunitbulkadditionjob.md).
 
@@ -25,9 +25,9 @@ Inherits from [exclusionUnitBulkAdditionJob](../resources/exclusionunitbulkaddit
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/onedriveforbusinessprotectionpolicy-list-driveexclusionunitsbulkadditionjobs.md)|[driveExclusionUnitsBulkAdditionJob](../resources/driveexclusionunitsbulkadditionjob.md) collection|Get a list of [driveExclusionUnitsBulkAdditionJob](../resources/driveexclusionunitsbulkadditionjob.md) objects associated with an [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).|
-|[Create](../api/onedriveforbusinessprotectionpolicy-post-driveexclusionunitsbulkadditionjobs.md)|[driveExclusionUnitsBulkAdditionJob](../resources/driveexclusionunitsbulkadditionjob.md)|Create a new [driveExclusionUnitsBulkAdditionJob](../resources/driveexclusionunitsbulkadditionjob.md) for an [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).|
-|[Get](../api/driveexclusionunitsbulkadditionjob-get.md)|[driveExclusionUnitsBulkAdditionJob](../resources/driveexclusionunitsbulkadditionjob.md)|Get a [driveExclusionUnitsBulkAdditionJob](../resources/driveexclusionunitsbulkadditionjob.md) associated with an [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).|
+|[List](../api/onedriveforbusinessprotectionpolicy-list-driveexclusionunitsbulkadditionjobs.md)|[driveExclusionUnitsBulkAdditionJob](../resources/driveexclusionunitsbulkadditionjob.md) collection|Get a list of [drive exclusion units bulk addition jobs](../resources/driveexclusionunitsbulkadditionjob.md) associated with a [OneDrive for work or school protection policy](../resources/onedriveforbusinessprotectionpolicy.md).|
+|[Create](../api/onedriveforbusinessprotectionpolicy-post-driveexclusionunitsbulkadditionjobs.md)|[driveExclusionUnitsBulkAdditionJob](../resources/driveexclusionunitsbulkadditionjob.md)|Create a [drive exclusion units bulk addition job](../resources/driveexclusionunitsbulkadditionjob.md) for a [OneDrive for work or school protection policy](../resources/onedriveforbusinessprotectionpolicy.md).|
+|[Get](../api/driveexclusionunitsbulkadditionjob-get.md)|[driveExclusionUnitsBulkAdditionJob](../resources/driveexclusionunitsbulkadditionjob.md)|Get a [drive exclusion units bulk addition job](../resources/driveexclusionunitsbulkadditionjob.md) associated with a [OneDrive for work or school protection policy](../resources/onedriveforbusinessprotectionpolicy.md).|
 
 ## Properties
 

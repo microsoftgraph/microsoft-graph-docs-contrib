@@ -29,9 +29,9 @@ Inherits from [protectionPolicyBase](../resources/protectionpolicybase.md).
 |[Update](../api/onedriveforbusinessprotectionpolicy-update.md)|[oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md)|Update the properties of a [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).|
 |[List driveExclusionUnits](../api/onedriveforbusinessprotectionpolicy-list-driveexclusionunits.md)|[driveExclusionUnit](../resources/driveexclusionunit.md) collection|Get a list of [driveExclusionUnit](../resources/driveexclusionunit.md) objects for an [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).|
 |[Get driveExclusionUnit](../api/driveexclusionunit-get.md)|[driveExclusionUnit](../resources/driveexclusionunit.md)|Get a [driveExclusionUnit](../resources/driveexclusionunit.md) for an [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).|
+|[List driveExclusionUnitsBulkAdditionJobs](../api/onedriveforbusinessprotectionpolicy-list-driveexclusionunitsbulkadditionjobs.md)|[driveExclusionUnitsBulkAdditionJob](../resources/driveexclusionunitsbulkadditionjob.md) collection|Get a list of [driveExclusionUnitsBulkAdditionJob](../resources/driveexclusionunitsbulkadditionjob.md) objects for an [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).|
 |[Create driveExclusionUnitsBulkAdditionJob](../api/onedriveforbusinessprotectionpolicy-post-driveexclusionunitsbulkadditionjobs.md)|[driveExclusionUnitsBulkAdditionJob](../resources/driveexclusionunitsbulkadditionjob.md)|Create a new [driveExclusionUnitsBulkAdditionJob](../resources/driveexclusionunitsbulkadditionjob.md) for an [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).|
 |[Get driveExclusionUnitsBulkAdditionJob](../api/driveexclusionunitsbulkadditionjob-get.md)|[driveExclusionUnitsBulkAdditionJob](../resources/driveexclusionunitsbulkadditionjob.md)|Get a [driveExclusionUnitsBulkAdditionJob](../resources/driveexclusionunitsbulkadditionjob.md) for an [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).|
-|[List driveExclusionUnitsBulkAdditionJobs](../api/onedriveforbusinessprotectionpolicy-list-driveexclusionunitsbulkadditionjobs.md)|[driveExclusionUnitsBulkAdditionJob](../resources/driveexclusionunitsbulkadditionjob.md) collection|Get a list of [driveExclusionUnitsBulkAdditionJob](../resources/driveexclusionunitsbulkadditionjob.md) objects for an [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).|
 
 ## Properties
 |Property|Type|Description|
@@ -52,7 +52,7 @@ Inherits from [protectionPolicyBase](../resources/protectionpolicybase.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|driveExclusionUnits|[driveExclusionUnit](../resources/driveexclusionunit.md) collection|The drive exclusion units associated with the OneDrive for Business protection policy.|
+|driveExclusionUnits|[driveExclusionUnit](../resources/driveexclusionunit.md) collection|The drive exclusion units associated with the OneDrive for work or school protection policy.|
 |driveExclusionUnitsBulkAdditionJobs|[driveExclusionUnitsBulkAdditionJob](../resources/driveexclusionunitsbulkadditionjob.md) collection|The list of bulk addition jobs for drive exclusion units associated with the OneDrive for work or school protection policy.|
 |driveInclusionRules|[driveProtectionRule](../resources/driveprotectionrule.md) collection|Contains the details of the OneDrive for Work or School protection rule.|
 |driveProtectionUnits|[driveProtectionUnit](../resources/driveprotectionunit.md) collection|Contains the protection units associated with a  OneDrive for Work or School protection policy.|

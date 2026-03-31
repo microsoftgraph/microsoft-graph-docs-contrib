@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Create a [drive exclusion units bulk addition job](../resources/driveexclusionunitsbulkadditionjob.md) for a [OneDrive for work or school protection policy](../resources/onedriveforbusinessprotectionpolicy.md).
 
-The initial status upon creation of the job is `active`. When all the **drives** are added to the corresponding OneDrive for Business protection policy as exclusion units, the status of the job is `completed`. If any failures occur, the status of the job is `completedWithErrors`.
+The initial status upon creation of the job is `active`. When all the **drives** are added to the corresponding OneDrive for work or school protection policy as exclusion units, the status of the job is `completed`. If any failures occur, the status of the job is `completedWithErrors`.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

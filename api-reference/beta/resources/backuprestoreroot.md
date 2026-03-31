@@ -38,7 +38,7 @@ Represents the Microsoft 365 Backup Storage service in a tenant.
 |:---|:---|:---|
 |browseSessions|[browseSessionBase](../resources/browsesessionbase.md) collection|The list of browse sessions in the tenant.|
 |driveExclusionUnits|[driveExclusionUnit](../resources/driveexclusionunit.md) collection|The list of drive exclusion units in the tenant.|
-|driveExclusionUnitsBulkAdditionJobs|[driveExclusionUnitsBulkAdditionJob](../resources/driveexclusionunitsbulkadditionjob.md) collection|The list of drive exclusion units bulk addition jobs in the tenant.|
+|driveExclusionUnitsBulkAdditionJobs|[driveExclusionUnitsBulkAdditionJob](../resources/driveexclusionunitsbulkadditionjob.md) collection|The list of bulk addition jobs for drive exclusion units in the tenant.|
 |driveInclusionRules|[driveProtectionRule](../resources/driveprotectionrule.md) collection|The list of drive inclusion rules applied to the tenant.|
 |driveProtectionUnits|[driveProtectionUnit](../resources/driveprotectionunit.md) collection|The list of drive protection units in the tenant.|
 |emailNotificationsSetting|[emailNotificationsSetting](../resources/emailnotificationssetting.md)|The email notification settings in the tenant.|
@@ -46,7 +46,7 @@ Represents the Microsoft 365 Backup Storage service in a tenant.
 |exchangeRestoreSessions|[exchangeRestoreSession](../resources/exchangerestoresession.md) collection|The list of Exchange restore sessions available in the tenant.|
 |exclusionUnits|[exclusionUnitBase](../resources/exclusionunitbase.md) collection|The list of exclusion units in the tenant.|
 |mailboxExclusionUnits|[mailboxExclusionUnit](../resources/mailboxexclusionunit.md) collection|The list of mailbox exclusion units in the tenant.|
-|mailboxExclusionUnitsBulkAdditionJobs|[mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md) collection|The list of mailbox exclusion units bulk addition jobs in the tenant.|
+|mailboxExclusionUnitsBulkAdditionJobs|[mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md) collection|The list of bulk addition jobs for mailbox exclusion units in the tenant.|
 |mailboxInclusionRules|[mailboxProtectionRule](../resources/mailboxprotectionrule.md) collection|The list of mailbox inclusion rules applied to the tenant.|
 |mailboxProtectionUnits|[mailboxProtectionUnit](../resources/mailboxprotectionunit.md) collection|The list of mailbox protection units in the tenant.|
 |oneDriveForBusinessBrowseSessions|[oneDriveForBusinessBrowseSession](../resources/onedriveforbusinessbrowsesession.md) collection|The list of OneDrive for work or school browse sessions in the tenant.|
@@ -61,7 +61,7 @@ Represents the Microsoft 365 Backup Storage service in a tenant.
 |sharePointProtectionPolicies|[sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md) collection|The list of SharePoint protection policies in the tenant.|
 |sharePointRestoreSessions|[sharePointRestoreSession](../resources/sharepointrestoresession.md) collection|The list of SharePoint restore sessions available in the tenant.|
 |siteExclusionUnits|[siteExclusionUnit](../resources/siteexclusionunit.md) collection|The list of site exclusion units in the tenant.|
-|siteExclusionUnitsBulkAdditionJobs|[siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md) collection|The list of site exclusion units bulk addition jobs in the tenant.|
+|siteExclusionUnitsBulkAdditionJobs|[siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md) collection|The list of bulk addition jobs for site exclusion units in the tenant.|
 |siteInclusionRules|[siteProtectionRule](../resources/siteprotectionrule.md) collection|The list of site inclusion rules applied to the tenant.|
 |siteProtectionUnits|[siteProtectionUnit](../resources/siteprotectionunit.md) collection|The list of site protection units in the tenant.|
 
