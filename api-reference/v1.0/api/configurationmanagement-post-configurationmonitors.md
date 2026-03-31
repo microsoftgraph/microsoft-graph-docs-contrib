@@ -16,6 +16,8 @@ Create a new [configurationMonitor](../resources/configurationmonitor.md) object
 
 You can create up to 30 **configurationMonitor** objects per tenant. Each monitor runs at a fixed interval of 6 hours and cannot be configured to run at any other frequency. An administrator can monitor up to 800 configuration resources per day per tenant across all monitors.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

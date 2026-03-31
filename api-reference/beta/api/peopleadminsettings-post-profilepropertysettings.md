@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Create a new [profilePropertySetting](../resources/profilepropertysetting.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

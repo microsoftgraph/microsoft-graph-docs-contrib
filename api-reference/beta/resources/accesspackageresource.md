@@ -35,7 +35,7 @@ In [Microsoft Entra Entitlement Management](entitlementmanagement-overview.md), 
 |id|String| Read-only. |
 |isPendingOnboarding|Boolean| `True` if the resource is not yet available for assignment. Read-only.|
 |originId|String| The unique identifier of the resource in the origin system. In the case of a Microsoft Entra group, originId is the identifier of the group. Supports `$filter` (`eq`).|
-|originSystem|String| The type of the resource in the origin system, such as `SharePointOnline`, `AadApplication`, `AadGroup` or `CustomDataProvidedResource`. Supports `$filter` (`eq`).|
+|originSystem|String| The type of the resource in the origin system, such as `SharePointOnline`, `AadApplication`, `AadGroup` or `CustomDataProvidedResource`. Supports `$filter` and `$expand` (`eq`).|
 |resourceType|String| The type of the resource, such as `Application` if it is a Microsoft Entra connected application, or `SharePoint Online Site` for a SharePoint Online site.|
 |url|String| A unique resource locator for the resource, such as the URL for signing a user into an application. |
 
@@ -46,6 +46,7 @@ In [Microsoft Entra Entitlement Management](entitlementmanagement-overview.md), 
 |accessPackageResourceEnvironment|[accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md)|Contains the environment information for the resource. This environment can be set using either the `@odata.bind` annotation or the environment's *originId*. Supports `$expand`.|
 |accessPackageResourceRoles|[accessPackageResourceRole](accesspackageresourcerole.md) collection| Read-only. Nullable. Supports `$expand`.|
 |accessPackageResourceScopes|[accessPackageResourceScope](accesspackageresourcescope.md) collection| Read-only. Nullable. Supports `$expand`.|
+|externalOriginResourceConnector|[externalOriginResourceConnector](../resources/externaloriginresourceconnector.md)|The connector that integrates with external origin systems to provision access to resources from those systems. Read-only. Nullable.|
 
 ## JSON representation
 

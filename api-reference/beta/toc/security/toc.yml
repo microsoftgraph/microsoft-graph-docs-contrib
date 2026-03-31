@@ -32,6 +32,8 @@ items:
       href: ../../api/security-alert-get.md
     - name: Update
       href: ../../api/security-alert-update.md
+    - name: Move alerts
+      href: ../../api/security-alert-movealerts.md
     - name: Create comment
       href: ../../api/security-alert-post-comments.md
   - name: Alert evidence
@@ -46,6 +48,8 @@ items:
       href: ../../api/security-incident-get.md
     - name: Update incident
       href: ../../api/security-incident-update.md
+    - name: Merge incidents
+      href: ../../api/security-incident-mergeincidents.md
     - name: Create comment for incident
       href: ../../api/security-incident-post-comments.md
   - name: Incident task

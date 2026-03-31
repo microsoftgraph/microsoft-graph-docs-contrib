@@ -1436,6 +1436,8 @@
                 "endUserSettings",
                 "entitlementManagementSettings",
                 "customAccessPackageWorkflowExtension",
+                "customDataProvidedResourceUploadSession",
+                "externalOriginResourceConnector",
                 "controlConfiguration",
                 "insiderRiskyUserApproval",
                 "entraIdProtectionRiskyUserApproval",

@@ -972,7 +972,7 @@ items:
       href: teams-licenses.md
     - name: Implementation differences in national clouds
       href: teamwork-national-cloud-differences.md
-  - name: Tenant administration (preview)
+  - name: Tenant management
     items:
     - name: Configuration management
       items:
@@ -1182,7 +1182,7 @@ items:
     href: best-practices-concept.md
     displayName: Microsoft Graph, Best practices for working with Microsoft Graph
   - name: Known issues
-    href: https://developer.microsoft.com/graph/known-issues
+    href: known-issues.md
     displayName: Microsoft Graph, Known issues with Microsoft Graph
   - name: Errors
     href: errors.md

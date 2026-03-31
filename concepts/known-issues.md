@@ -1,6 +1,6 @@
 ---
-title: "Known issues in Microsoft Graph"
-description: "Learn about known issues and limitations in Microsoft Graph APIs."
+title: "Known issues with Microsoft Graph APIs"
+description: "Learn about known issues with and limitations of Microsoft Graph APIs."
 author: ombongifaith
 ms.author: ombongifaith
 ms.topic: concept-article
@@ -9,6 +9,8 @@ ms.date: 02/06/2026
 ---
 
 # Known issues in Microsoft Graph
+
+This article provides information about known issues related to Microsoft Graph APIs.
 
 ## Authentication
 
@@ -69,3 +71,8 @@ ms.date: 02/06/2026
 ## Users
 
 [!INCLUDE [users](includes/known-issues/users.md)]
+
+## Related content
+
+- [Microsoft Graph changelog](https://developer.microsoft.com/graph/changelog)
+- [Microsoft Graph errors](errors.md)
