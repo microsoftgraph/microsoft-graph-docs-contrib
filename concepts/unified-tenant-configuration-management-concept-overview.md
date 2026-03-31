@@ -27,18 +27,18 @@ Administrators have the ability to manage tenant configuration through a declara
 
 ### Maintain a secure and consistent tenant configuration
 
-As the Microsoft 365 ecosystem grows, keeping tenant settings aligned with the desired configuration of an organization becomes increasingly complex. Currently, IT administrators often have to manually detect and resolve configuration drift, a process that is time-consuming and prone to error. The TCM APIs address this challenge by enabling automated monitoring of tenant settings. With the [monitoring](/graph/api/resources/configurationmonitor?view=graph-rest-beta&preserve-view=true) APIs in TCM, you can ensure your configurations remain secure and consistent, and quickly identify any deviations from the desired state.
+As the Microsoft 365 ecosystem grows, keeping tenant settings aligned with the desired configuration of an organization becomes increasingly complex. Currently, IT administrators often have to manually detect and resolve configuration drift, a process that is time-consuming and prone to error. The TCM APIs address this challenge by enabling automated monitoring of tenant settings. With the [monitoring](/graph/api/resources/configurationmonitor) APIs in TCM, you can ensure your configurations remain secure and consistent, and quickly identify any deviations from the desired state.
 
 ### Easily extract and understand current configuration states
 
-The [snapshot](/graph/api/resources/configurationsnapshotjob?view=graph-rest-beta&preserve-view=true) APIs in TCM simplify the process of retrieving the current configuration across multiple workloads within a tenant. Administrators can use these snapshots to get a clear, declarative view of how settings are currently applied, which makes audits, reviews, and troubleshooting much easier.
+The [snapshot](/graph/api/resources/configurationsnapshotjob) APIs in TCM simplify the process of retrieving the current configuration across multiple workloads within a tenant. Administrators can use these snapshots to get a clear, declarative view of how settings are currently applied, which makes audits, reviews, and troubleshooting much easier.
 
 ## API reference
 
-Looking for the API reference for this service, see [Tenant Configuration Management APIs in Microsoft Graph beta](/graph/api/resources/unified-tenant-configuration-management-api-overview?view=graph-rest-beta&preserve-view=true).
+Looking for the API reference for this service, see [Tenant Configuration Management APIs in Microsoft Graph](/graph/api/resources/unified-tenant-configuration-management-api-overview).
 
 ## Next steps
 
 - To learn how to authenticate and set up the TCM service principal, see [Set up authentication for Tenant Configuration Management APIs](/graph/utcm-authentication-setup).
-- To learn more about the Tenant Configuration Management APIs, see [Tenant Configuration Management APIs in Microsoft Graph](/graph/api/resources/unified-tenant-configuration-management-api-overview?view=graph-rest-beta&preserve-view=true).
+- To learn more about the Tenant Configuration Management APIs, see [Tenant Configuration Management APIs in Microsoft Graph](/graph/api/resources/unified-tenant-configuration-management-api-overview).
 - Try the Tenant Configuration Management APIs in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).

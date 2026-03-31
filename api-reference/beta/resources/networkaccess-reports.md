@@ -15,7 +15,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A summary of access activity for a Global Secure Access service.
+A summary of access activity for a Global Secure Access service. For more information, see [What is application usage analytics](/entra/global-secure-access/overview-application-usage-analytics).
 
 ## Methods
 |Method|Return type|Description|

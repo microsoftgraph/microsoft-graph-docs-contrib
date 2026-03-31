@@ -4,6 +4,8 @@
 items:
 - name: Configuration management
   items:
+  - name: Overview
+    href: ../../resources/unified-tenant-configuration-management-api-overview.md
   - name: Configuration monitor
     items:
     - name: Configuration monitor

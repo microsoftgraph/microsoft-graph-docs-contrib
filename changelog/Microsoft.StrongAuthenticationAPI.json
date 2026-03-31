@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "02aed374-de85-437f-a6fb-9b62b4495f3b",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "passkeyType",
+          "ChangeType": "Addition",
+          "Description": "Added the **passkeyType** enumeration type.",
+          "Target": "passkeyType"
+        },
+        {
+          "Id": "02aed374-de85-437f-a6fb-9b62b4495f3b",
+          "ApiChange": "Property",
+          "ChangedApiName": "passkeyType",
+          "ChangeType": "Addition",
+          "Description": "Added the **passkeyType** property to the [fido2AuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/fido2AuthenticationMethod?view=graph-rest-1.0) resource.",
+          "Target": "fido2AuthenticationMethod"
+        }
+      ],
+      "Id": "02aed374-de85-437f-a6fb-9b62b4495f3b",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-03-25T20:52:24.5844666Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "9fff61b7-211a-47ac-9433-7bdecd3370c3",
           "ApiChange": "Enumeration",
           "ChangedApiName": "errorCorrectionLevel",

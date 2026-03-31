@@ -122,3 +122,13 @@ items:
       href: ../../api/tenantgovernanceservices-governancerequest-get.md
     - name: Update
       href: ../../api/tenantgovernanceservices-governancerequest-update.md
+  - name: Governance relationship
+    items:
+    - name: Governance relationship
+      href: ../../resources/tenantgovernanceservices-governancerelationship.md
+    - name: List
+      href: ../../api/tenantgovernanceservices-list-governancerelationships.md
+    - name: Get
+      href: ../../api/tenantgovernanceservices-governancerelationship-get.md
+    - name: Update
+      href: ../../api/tenantgovernanceservices-governancerelationship-update.md

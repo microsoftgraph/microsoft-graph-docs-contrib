@@ -5048,6 +5048,14 @@ Possible values for user account types (group membership), per Windows definitio
 | authenticationTransfer |
 | unknownFutureValue |
 
+### connectorType values
+
+|Member|
+|:---|
+|sapIag|
+|sapAc|
+|unknownFutureValue|
+
 ### claimConditionUserType values
 
 | Member |

@@ -1444,6 +1444,7 @@
         "peopleAdminSettings",
         "insightsSettings",
         "profileCardProperty",
+        "profilePropertySetting",
         "profileSource",
         "pronounsSettings"
       ],
@@ -2253,6 +2254,7 @@
       "childNodes": [
         {
           "name": "Configuration management",
+          "overview": "../../resources/unified-tenant-configuration-management-api-overview.md",
           "resources": [
             "configurationMonitor",
             "configurationMonitoringResult",

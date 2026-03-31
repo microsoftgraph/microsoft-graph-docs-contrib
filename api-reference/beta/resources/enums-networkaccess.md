@@ -46,6 +46,15 @@ Namespace: microsoft.graph.networkaccess
 |sap|
 |unknownFutureValue|
 
+### applicationActivity values
+
+|Member|
+|:---|
+|none|
+|prompt|
+|mcp|
+|unknownFutureValue|
+
 ### bandwidthCapacityInMbps values 
 
 |Member|

@@ -141,9 +141,8 @@
       ]
     },
     {
-      "name": "Agents (preview)",
+      "name": "Agents",
       "overview": "../../resources/agentid-platform-overview.md",
-      "resources": ["agentUser"],
       "shouldSort": true,
       "childNodes": [
           {
@@ -155,7 +154,13 @@
             ]
           },
           {
-            "name": "Agent registry",
+            "name": "Agent user (preview)",
+            "resources": [
+              "agentUser"
+            ]
+          },
+          {
+            "name": "Agent registry (preview)",
             "resources": [
               "agentRegistry",
               "agentInstance",
@@ -1418,6 +1423,8 @@
                 "endUserSettings",
                 "entitlementManagementSettings",
                 "customAccessPackageWorkflowExtension",
+                "customDataProvidedResourceUploadSession",
+                "externalOriginResourceConnector",
                 "controlConfiguration",
                 "insiderRiskyUserApproval",
                 "entraIdProtectionRiskyUserApproval",
@@ -3669,7 +3676,8 @@
             "microsoft.graph.tenantGovernanceServices.relatedTenant",
             "microsoft.graph.tenantGovernanceServices.governancePolicyTemplate",
             "microsoft.graph.tenantGovernanceServices.governanceInvitation",
-            "microsoft.graph.tenantGovernanceServices.governanceRequest"
+            "microsoft.graph.tenantGovernanceServices.governanceRequest",
+            "microsoft.graph.tenantGovernanceServices.governanceRelationship"
           ]
         }
       ]
