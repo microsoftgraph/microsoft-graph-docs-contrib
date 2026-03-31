@@ -84,7 +84,7 @@ Added a known issue of RBAC in [Places update API](/graph/api/place-update): upd
 
 ### Microsoft Defender for Identity
 
-Enable migration for eligible sensors. See [microsoft.graph.security.sensorMigration](../api-reference/beta/resources/security-sensormigration.md)
+Introduced [sensor migration] (../api-reference/beta/resources/security-sensormigration.md) capabilities to migrate eligible Microsoft Defender for Identity sensors.
 
 ## March 2026: New in preview only
 

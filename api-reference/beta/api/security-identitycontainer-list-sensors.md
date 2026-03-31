@@ -133,7 +133,8 @@ Content-Type: application/json
         ],
         "isDelayedDeploymentEnabled": true
       },
-      "serviceStatus": "running"
+      "serviceStatus": "running",
+      "migrationState": "readyForMigration"
     }
   ]
 }
