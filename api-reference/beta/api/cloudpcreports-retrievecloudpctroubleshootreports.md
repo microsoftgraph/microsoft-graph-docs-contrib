@@ -50,10 +50,10 @@ The following table lists the parameters that you can use with this action.
 
 |Parameter|Type|Description|
 |:--------|:---|:----------|
-|filter|String|OData `$filter` syntax. Supported filters are: `and`, `or`, `gt` ,`ge`, and `eq`. Optional.|
+|filter|String|OData `$filter` syntax. Supported filters are: `and`, `or`, `gt`, `ge`, and `eq`. **Report-specific requirements**: <br/>• **For tenant network/connection/MTTF/MTTR/sign-in reports** (`troubleshootTenant*NetworkTrendReport`, `troubleshootTenant*NetworkAggregatedReport`, `troubleshootTenant*ConnectionFailureRateReport`, `troubleshootTenant*ActiveConnectionCountReport`, `troubleshootTenant*MTTFReport`, `troubleshootTenant*MTTRReport`, `troubleshootTenant*RemoteSignInTimeReport`): **ALL 16 parameters required** in filter: `(TimeRange eq 'Last X days') and (PolicyNameParam eq '[value]') and (RegionParam eq '[value]') and (UserSettingNameParam eq '[value]') and (ServicePlanTypeParam eq '[value]') and (ServicePlanNameParam eq '[value]') and (OSBuildVersionParam eq '[value]') and (AADJoinTypeParam eq '[value]') and (ImageNameParam eq '[value]') and (GatewayRegionParam eq '[value]') and (ClientOSParam eq '[value]') and (ClientTypeParam eq '[value]') and (TransportTypeParam eq '[value]') and (CloudPCEndpointCountryRegionParam eq '[value]') and (CloudPCEndpointStateParam eq '[value]') and (CloudPCEndpointCityParam eq '[value]')`. Parameter values can be empty strings ('') if not filtering on that dimension.<br/>• **For tenant health reports** (`troubleshootTenantCloudPCHealthTrendReport`, `troubleshootTenantCloudPCHealthAggregatedReport`): **7 parameters required** in filter: `(TimeRange eq 'Last X days') and (PolicyNameParam eq '[value]') and (RegionParam eq '[value]') and (ServicePlanTypeParam eq '[value]') and (ServicePlanNameParam eq '[value]') and (AADJoinTypeParam eq '[value]') and (ImageNameParam eq '[value]')`. Parameter values can be empty strings ('') if not filtering on that dimension.<br/>• **For tenant global filter report** (`troubleshootTenantGlobalFilterReport`): **Only TimeRange required** in filter: `(TimeRange eq 'Last X days')`<br/>• **For configuration connection reports** (`troubleshootConfigurationTotalConnectionCountBarV1Report`, `troubleshootConfigurationConnectionCountTrendV1Report`): **15 parameters required** in filter: `(TimeRange eq 'Last X days') and (CloudPCStatusParam eq '[value]') and (RegionParam eq '[value]') and (PolicyNameParam eq '[value]') and (UserSettingNameParam eq '[value]') and (ImageNameParam eq '[value]') and (ServicePlanNameParam eq '[value]') and (ServicePlanTypeParam eq '[value]') and (OSVersionParam eq '[value]') and (OSBuildVersionParam eq '[value]') and (ClientOSParam eq '[value]') and (ClientTypeParam eq '[value]') and (ClientVersionParam eq '[value]') and (TeamsAppV2VersionParam eq '[value]') and (MMRVersionParam eq '[value]')`. Parameter values can be empty strings ('') if not filtering on that dimension.<br/>• **For other configuration reports** (`troubleshootConfigurationGlobalFilterV1Report`): **Only TimeRange required** in filter: `(TimeRange eq 'Last X days')`<br/>• **For user/device matched reports** (`troubleshootMatchedUserReport`, `troubleshootMatchedCloudPCReport`): **SearchParam required** in filter: `(SearchParam eq '[search_value]')`<br/>• **For user/device list reports**: **Single parameter required** in filter: `(UPNParam eq '[value]')` for `troubleshootCloudPCListReport`, or `(CloudPCIdParam eq '[value]')` for `troubleshootUserListReport`<br/>• **For CloudPC trend/aggregated reports** (`troubleshootCloudPCDurationTrendReport`, `troubleshootCloudPCDurationAggregatedReport`, `troubleshootCloudPCErrorTrendReport`, `troubleshootCloudPCErrorAggregatedReport`, `troubleshootCloudPCNetworkTrendReport`, `troubleshootCloudPCNetworkAggregatedReport`, `troubleshootCloudPCRemoteSignInTimeTrendReport`, `troubleshootCloudPCRemoteSignInTimeAggregatedReport`): **3 parameters required** in filter: `(UPNParam eq '[value]') and (TimeRange eq 'Last X hours/days') and (CloudPCIdParam eq '[value]')`. **At least one of UPNParam or CloudPCIdParam must have a non-empty value.** Parameter values can be empty strings ('') if not filtering on that dimension.<br/>• **For view data table reports with 16 parameters** (`troubleshootTenantConnectedDevicesOfViewDataTableReport`, `troubleshootTenantMetricsOfViewDataTableReport`): **16 parameters required** in filter: `(TimeRange eq 'Last X days') and (PolicyNameParam eq '[value]') and (RegionParam eq '[value]') and (UserSettingNameParam eq '[value]') and (ServicePlanTypeParam eq '[value]') and (ServicePlanNameParam eq '[value]') and (OSBuildVersionParam eq '[value]') and (AADJoinTypeParam eq '[value]') and (ImageNameParam eq '[value]') and (GatewayRegionParam eq '[value]') and (ClientOSParam eq '[value]') and (ClientTypeParam eq '[value]') and (TransportTypeParam eq '[value]') and (CloudPCEndpointCountryRegionParam eq '[value]') and (CloudPCEndpointStateParam eq '[value]') and (CloudPCEndpointCityParam eq '[value]')`. Parameter values can be empty strings ('') if not filtering on that dimension.<br/>• **For connection configuration view data table report** (`troubleshootConnectionConfigurationOfViewDataTableV1Report`): **23 parameters required** in filter: `(TimeRange eq 'Last X days') and (CloudPCStatusParam eq '[value]') and (RegionParam eq '[value]') and (PolicyNameParam eq '[value]') and (UserSettingNameParam eq '[value]') and (ImageNameParam eq '[value]') and (ServicePlanNameParam eq '[value]') and (ServicePlanTypeParam eq '[value]') and (OSVersionParam eq '[value]') and (OSBuildVersionParam eq '[value]') and (ClientOSParam eq '[value]') and (ClientTypeParam eq '[value]') and (ClientVersionParam eq '[value]') and (TeamsAppV2VersionParam eq '[value]') and (MMRVersionParam eq '[value]') and (CloudPCIdParam eq '[value]') and (UPNParam eq '[value]') and (AADJoinTypeParam eq '[value]') and (GatewayRegionParam eq '[value]') and (TransportTypeParam eq '[value]') and (CloudPCEndpointCountryRegionParam eq '[value]') and (CloudPCEndpointStateParam eq '[value]') and (CloudPCEndpointCityParam eq '[value]')`. Parameter values can be empty strings ('') if not filtering on that dimension.<br/>• **For events view data table report** (`troubleshootEventsOfViewDataTableReport`): **18 parameters required** in filter: `(TimeRange eq 'Last X days') and (PolicyNameParam eq '[value]') and (RegionParam eq '[value]') and (UserSettingNameParam eq '[value]') and (ServicePlanTypeParam eq '[value]') and (ServicePlanNameParam eq '[value]') and (OSBuildVersionParam eq '[value]') and (AADJoinTypeParam eq '[value]') and (ImageNameParam eq '[value]') and (GatewayRegionParam eq '[value]') and (ClientOSParam eq '[value]') and (ClientTypeParam eq '[value]') and (TransportTypeParam eq '[value]') and (UPNParam eq '[value]') and (CloudPCIdParam eq '[value]') and (CloudPCEndpointCountryRegionParam eq '[value]') and (CloudPCEndpointStateParam eq '[value]') and (CloudPCEndpointCityParam eq '[value]')`. Parameter values can be empty strings ('') if not filtering on that dimension.<br/>• **For CloudPC metrics view data table report** (`troubleshootCloudPCMetricsOfViewDataTableReport`): **3 parameters required** in filter: `(TimeRange eq 'Last X days') and (CloudPCIdParam eq '[value]') and (UPNParam eq '[value]')`. **At least one of UPNParam or CloudPCIdParam must have a non-empty value.** Parameter values can be empty strings ('') if not filtering on that dimension.<br/>• **For CloudPC health trend report** (`troubleshootCloudPCHealthTrendReport`): **2 parameters required** in filter: `(TimeRange eq 'Last X hours/days') and (CloudPCIdParam eq '[value]')`. Parameter values can be empty strings ('') if not filtering on that dimension.<br/>• **Optional** for other report types<br/>• Maximum date range: 28 days for Tenant report and User & Device Report, 180 days for configuration Report.|
 |groupBy|String collection|A list of columns that describe how to group the data in the report. Optional.|
 |orderBy|String collection|Specifies the order by column name. Optional.|
-|reportName|[cloudPCTroubleshootReportType](../resources/cloudpcreports.md#cloudpctroubleshootreporttype-values)|The report name. The possible values are: `troubleshootGetLatestDeviceReport`, `troubleshootGetProvisionCountReport`, `troubleshootGetRegionFilterQueryReport`, `troubleshootGetCloudPCTypeFilterQueryReport`, `troubleshootTenantGlobalFilterReport`, `troubleshootTenantNetworkTrendReport`, `troubleshootTenantNetworkAggregatedReport`, `troubleshootTenantConnectionFailureRateTrendReport`, `troubleshootTenantConnectionFailureRateAggregatedReport`, `troubleshootTenantConnectionCountTrendReport`, `troubleshootTenantConnectionCountAggregatedReport`, `troubleshootTenantCloudPCHealthTrendReport`, `troubleshootTenantCloudPCHealthAggregatedReport`, `troubleshootTenantActiveConnectionCountTrendReport`, `troubleshootTenantActiveConnectionCountAggregatedReport`, `troubleshootTenantMTTFTrendReport`, `troubleshootTenantMTTFAggregatedReport`, `troubleshootTenantMTTRTrendReport`, `troubleshootTenantMTTRAggregatedReport`, `troubleshootTenantRemoteSignInTimeTrendReport`, `troubleshootTenantRemoteSignInTimeAggregatedReport`, `troubleshootConfigurationConnectionCountTrendReport`, `troubleshootConfigurationTotalConnectionCountBarReport`, `troubleshootConfigurationGlobalFilterReport`, `troubleshootConnectionConfigurationOfViewDataTableReport`, `troubleshootEventsOfViewDataTableReport`, `troubleshootTenantMetricsOfViewDataTableReport`, `troubleshootCloudPCMetricsOfViewDataTableReport`, `troubleshootTenantEnvironmentMetricsOfViewDataTableReport`, `troubleshootCloudPCEnvironmentMetricsOfViewDataTableReport`, `troubleshootConfigurationConnectionCountTrendV1Report`, `troubleshootConfigurationTotalConnectionCountBarV1Report`, `troubleshootConfigurationGlobalFilterV1Report`, `troubleshootConnectionConfigurationOfViewDataTableV1Report`, `troubleshootEnvironmentOverviewOfViewDataTableReport`, `troubleshootTenantConnectedDevicesOfViewDataTableReport`, `troubleshootCloudPCNetworkTrendReport`, `troubleshootCloudPCNetworkAggregatedReport`, `troubleshootCloudPCErrorTrendReport`, `troubleshootCloudPCErrorAggregatedReport`, `troubleshootCloudPCDurationTrendReport`, `troubleshootCloudPCDurationAggregatedReport`, `troubleshootCloudPCListReport`, `troubleshootCloudPCHealthTrendReport`, `troubleshootMatchedUserReport`, `troubleshootMatchedCloudPCReport`, `troubleshootUserListReport`, `unknownFutureValue`. The default value is `troubleshootGetLatestDeviceReport`.|
+|reportName|[cloudPCTroubleshootReportType](../resources/cloudpcreports.md#cloudpctroubleshootreporttype-values)|The report name. The possible values are: `troubleshootTenantGlobalFilterReport`, `troubleshootTenantNetworkTrendReport`, `troubleshootTenantNetworkAggregatedReport`, `troubleshootTenantConnectionFailureRateTrendReport`, `troubleshootTenantConnectionFailureRateAggregatedReport`, `troubleshootTenantCloudPCHealthTrendReport`, `troubleshootTenantCloudPCHealthAggregatedReport`, `troubleshootTenantActiveConnectionCountTrendReport`, `troubleshootTenantActiveConnectionCountAggregatedReport`, `troubleshootTenantMTTFTrendReport`, `troubleshootTenantMTTFAggregatedReport`, `troubleshootTenantMTTRTrendReport`, `troubleshootTenantMTTRAggregatedReport`, `troubleshootTenantRemoteSignInTimeTrendReport`, `troubleshootTenantRemoteSignInTimeAggregatedReport`, `troubleshootEventsOfViewDataTableReport`, `troubleshootTenantMetricsOfViewDataTableReport`, `troubleshootCloudPCMetricsOfViewDataTableReport`, `troubleshootConfigurationConnectionCountTrendV1Report`, `troubleshootConfigurationTotalConnectionCountBarV1Report`, `troubleshootConfigurationGlobalFilterV1Report`, `troubleshootConnectionConfigurationOfViewDataTableV1Report`, `troubleshootTenantConnectedDevicesOfViewDataTableReport`, `troubleshootCloudPCNetworkTrendReport`, `troubleshootCloudPCNetworkAggregatedReport`, `troubleshootCloudPCErrorTrendReport`, `troubleshootCloudPCErrorAggregatedReport`, `troubleshootCloudPCDurationTrendReport`, `troubleshootCloudPCDurationAggregatedReport`, `troubleshootCloudPCListReport`, `troubleshootCloudPCHealthTrendReport`, `troubleshootMatchedUserReport`, `troubleshootMatchedCloudPCReport`, `troubleshootUserListReport`, `unknownFutureValue`. The default value is `troubleshootTenantGlobalFilterReport`.|
 |search|String|The search string. Optional.|
 |select|String collection|OData `$select` syntax. The selected columns of the reports. Optional.|
 |skip|Int32|Number of records to skip. Optional.|
@@ -403,6 +403,121 @@ The following table describes the columns in the returned report when you specif
 | UserId                      | The unique identifier of the user.            |
 | EventDateTime               | The date and time when the event occurred.    |
 | HealthPercentage            | The health percentage of Cloud PC systems.    |
+
+### View Data Table Reports
+
+The following table describes the columns in the returned report when you specify `troubleshootTenantConnectedDevicesOfViewDataTableReport` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| TenantId                    | The unique identifier of the tenant.          |
+| Timestamp                   | The timestamp when the data was recorded.     |
+| ManagedDeviceName           | The name of the managed device.               |
+| CloudPCId                   | The unique identifier of the Cloud PC.        |
+| ConnectionState             | The connection state of the Cloud PC.         |
+| LastActiveTime              | The last active time of the Cloud PC.         |
+| UPN                         | The User Principal Name of the user.          |
+| ProvisioningPolicyName      | The name of the provisioning policy.          |
+| UserSettingName             | The name of the user setting configuration.   |
+| CloudPCHostGeography        | The geographical location of the Cloud PC host. |
+| Region                      | The region where the Cloud PC is located.     |
+| ServicePlanType             | The Cloud PC service plan type (FrontlineShared, FrontlineDedicated, Enterprise, or Reserve). |
+| ServicePlanName             | The name of the service plan.                 |
+| ImageName                   | The name of the OS image used.                |
+
+The following table describes the columns in the returned report when you specify `troubleshootConnectionConfigurationOfViewDataTableV1Report` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| TenantId                    | The unique identifier of the tenant.          |
+| ActivityId                  | The unique identifier of the activity session. |
+| SessionBeginTime            | The start time of the session.                |
+| SessionEndTime              | The end time of the session.                  |
+| UPN                         | The User Principal Name of the user.          |
+| UserId                      | The unique identifier of the user.            |
+| ManagedDeviceName           | The name of the managed device.               |
+| CloudPCId                   | The unique identifier of the Cloud PC.        |
+| CloudPCHostGeography        | The geographical location of the Cloud PC host. |
+| Region                      | The region where the Cloud PC is located.     |
+| SessionHostAgentVersion     | The version of the session host agent.        |
+| SessionHostSxSStackVersion  | The version of the session host SxS stack.    |
+| GatewayRegion               | The region where the gateway is located.      |
+| PolicyName                  | The name of the policy applied.               |
+| UserSettingName             | The name of the user setting configuration.   |
+| ServicePlanType             | The Cloud PC service plan type (FrontlineShared, FrontlineDedicated, Enterprise, or Reserve). |
+| ServicePlanName             | The name of the service plan.                 |
+| AADJoinType                 | The Azure Active Directory join type.         |
+| ImageName                   | The name of the OS image used.                |
+| TransportType               | The transport protocol type used.             |
+| PlatformName                | The name of the platform.                     |
+| ClientOS                    | The client operating system.                  |
+| ClientType                  | The type of client device.                    |
+| ClientVersion               | The version of the client software.           |
+| TeamsAppV2Version           | The version of the Teams App V2.              |
+| MMRVersion                  | The version of the MMR component.             |
+| SessionHostIPAddress        | The IP address of the session host.           |
+| CloudPCEndpointCountry      | The country of the Cloud PC endpoint.         |
+| CloudPCEndpointCountryRegion| The country region of the Cloud PC endpoint.  |
+| CloudPCEndpointState        | The state of the Cloud PC endpoint.           |
+| CloudPCEndpointCity         | The city of the Cloud PC endpoint.            |
+
+The following table describes the columns in the returned report when you specify `troubleshootEventsOfViewDataTableReport` for the **reportName** property in your API call.
+
+| Member                       | Description                                    |
+|:-----------------------------|:-----------------------------------------------|
+| TenantId                     | The unique identifier of the tenant.          |
+| ActivityId                   | The unique identifier of the activity session. |
+| Timestamp                    | The timestamp when the event occurred.        |
+| UPN                          | The User Principal Name of the user.          |
+| UserId                       | The unique identifier of the user.            |
+| ManagedDeviceName            | The name of the managed device.               |
+| CloudPCId                    | The unique identifier of the Cloud PC.        |
+| EventCategory                | The category of the event.                    |
+| EventName                    | The name of the event.                        |
+| EventSource                  | The source system that generated the event.   |
+| CheckpointParameters         | Additional parameters related to the checkpoint. |
+| ErrorCode                    | The numeric error code if applicable.         |
+| ErrorCodeSymbolic            | The symbolic representation of the error code. |
+| ErrorMessage                 | The descriptive error message if applicable.  |
+| ResultType                   | The type of result for the event.             |
+| EventLevel                   | The severity level of the event.              |
+| CloudDeviceHealthState       | The health state of the Cloud PC device.      |
+
+The following table describes the columns in the returned report when you specify `troubleshootCloudPCMetricsOfViewDataTableReport` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| TenantId                    | The unique identifier of the tenant.          |
+| EventDateTime               | The date and time when the event occurred.    |
+| TotalActiveConnectionCountAvg | The average count of total active connections. |
+| AvgRoundTripTimeInMs        | The average round trip time in milliseconds.  |
+| AvgBandwidthInMbps          | The average bandwidth in megabits per second. |
+| ConnectionSuccessCount      | The number of successful connections.          |
+| ConnectionFailCount         | The number of failed connections.              |
+| ConnectionFailurePercentage | The percentage of connection failures.         |
+| HealthyCount                | The number of healthy Cloud PCs.              |
+| UnhealthyCount              | The number of unhealthy Cloud PCs.            |
+| UnknownCount                | The number of Cloud PCs with unknown health status. |
+| HealthPercentage            | The health percentage of Cloud PC systems.    |
+| TotalDurationInHour         | The total duration time in hours.             |
+| AvgDurationInHour           | The average duration time in hours.           |
+| RemoteSignInTimeInSecondAvg | The average remote sign-in time in seconds.   |
+
+The following table describes the columns in the returned report when you specify `troubleshootTenantMetricsOfViewDataTableReport` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| EventDateTime               | The date and time when the event occurred.    |
+| TotalActiveConnectionCountAvg | The average count of total active connections. |
+| AvgRoundTripTimeInMs        | The average round trip time in milliseconds.  |
+| AvgBandwidthInMbps          | The average bandwidth in megabits per second. |
+| ConnectionFailurePercentage | The percentage of connection failures.         |
+| HealthPercentage            | The health percentage of Cloud PC systems.    |
+| TotalDurationInHour         | The total duration time in hours.             |
+| AvgDurationInHour           | The average duration time in hours.           |
+| MeanTimeToFailInHour        | The mean time to failure in hours.            |
+| MeanTimeToRepairInSecond    | The mean time to repair in seconds.           |
+| RemoteSignInTimeInSecondAvg | The average remote sign-in time in seconds.   |
 
 ## Examples
 
