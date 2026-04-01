@@ -2147,7 +2147,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "driveExclusionUnit",
           "ChangeType": "Addition",
-          "Description": "Added the [driveExclusionUnit](https://learn.microsoft.com/en-us/graph/api/resources/driveExclusionUnit?view=graph-rest-beta) resource.",
+          "Description": "Added the [driveExclusionUnit](https://learn.microsoft.com/en-us/graph/api/resources/driveExclusionUnit?view=graph-rest-beta) resource and associated methods.",
           "Target": "driveExclusionUnit"
         },
         {
@@ -2155,7 +2155,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "driveExclusionUnitsBulkAdditionJob",
           "ChangeType": "Addition",
-          "Description": "Added the [driveExclusionUnitsBulkAdditionJob](https://learn.microsoft.com/en-us/graph/api/resources/driveExclusionUnitsBulkAdditionJob?view=graph-rest-beta) resource.",
+          "Description": "Added the [driveExclusionUnitsBulkAdditionJob](https://learn.microsoft.com/en-us/graph/api/resources/driveExclusionUnitsBulkAdditionJob?view=graph-rest-beta) resource and associated methods.",
           "Target": "driveExclusionUnitsBulkAdditionJob"
         },
         {
@@ -2195,7 +2195,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mailboxExclusionUnit",
           "ChangeType": "Addition",
-          "Description": "Added the [mailboxExclusionUnit](https://learn.microsoft.com/en-us/graph/api/resources/mailboxExclusionUnit?view=graph-rest-beta) resource.",
+          "Description": "Added the [mailboxExclusionUnit](https://learn.microsoft.com/en-us/graph/api/resources/mailboxExclusionUnit?view=graph-rest-beta) resource and associated methods.",
           "Target": "mailboxExclusionUnit"
         },
         {
@@ -2203,7 +2203,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mailboxExclusionUnitsBulkAdditionJob",
           "ChangeType": "Addition",
-          "Description": "Added the [mailboxExclusionUnitsBulkAdditionJob](https://learn.microsoft.com/en-us/graph/api/resources/mailboxExclusionUnitsBulkAdditionJob?view=graph-rest-beta) resource.",
+          "Description": "Added the [mailboxExclusionUnitsBulkAdditionJob](https://learn.microsoft.com/en-us/graph/api/resources/mailboxExclusionUnitsBulkAdditionJob?view=graph-rest-beta) resource and associated methods.",
           "Target": "mailboxExclusionUnitsBulkAdditionJob"
         },
         {
@@ -2243,7 +2243,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "siteExclusionUnit",
           "ChangeType": "Addition",
-          "Description": "Added the [siteExclusionUnit](https://learn.microsoft.com/en-us/graph/api/resources/siteExclusionUnit?view=graph-rest-beta) resource.",
+          "Description": "Added the [siteExclusionUnit](https://learn.microsoft.com/en-us/graph/api/resources/siteExclusionUnit?view=graph-rest-beta) resource and associated methods.",
           "Target": "siteExclusionUnit"
         },
         {
@@ -2251,7 +2251,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "siteExclusionUnitsBulkAdditionJob",
           "ChangeType": "Addition",
-          "Description": "Added the [siteExclusionUnitsBulkAdditionJob](https://learn.microsoft.com/en-us/graph/api/resources/siteExclusionUnitsBulkAdditionJob?view=graph-rest-beta) resource.",
+          "Description": "Added the [siteExclusionUnitsBulkAdditionJob](https://learn.microsoft.com/en-us/graph/api/resources/siteExclusionUnitsBulkAdditionJob?view=graph-rest-beta) resource and associated methods.",
           "Target": "siteExclusionUnitsBulkAdditionJob"
         },
         {
@@ -2259,7 +2259,7 @@
           "ApiChange": "NavigationPropertyBinding",
           "ChangedApiName": "backupRestore/exchangeProtectionPolicies/mailboxExclusionUnits",
           "ChangeType": "Addition",
-          "Description": "Added the [backupRestore/exchangeProtectionPolicies/mailboxExclusionUnits](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Description": "Added **backupRestore/exchangeProtectionPolicies/mailboxExclusionUnits** as a navigation binding property of **solutions**.",
           "Target": "solutions"
         },
         {
@@ -2267,7 +2267,7 @@
           "ApiChange": "NavigationPropertyBinding",
           "ChangedApiName": "backupRestore/exchangeProtectionPolicies/mailboxExclusionUnitsBulkAdditionJobs",
           "ChangeType": "Addition",
-          "Description": "Added the [backupRestore/exchangeProtectionPolicies/mailboxExclusionUnitsBulkAdditionJobs](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Description": "Added **backupRestore/exchangeProtectionPolicies/mailboxExclusionUnitsBulkAdditionJobs** as a navigation binding property of **solutions**.",
           "Target": "solutions"
         },
         {
@@ -2275,7 +2275,7 @@
           "ApiChange": "NavigationPropertyBinding",
           "ChangedApiName": "backupRestore/oneDriveForBusinessProtectionPolicies/driveExclusionUnits",
           "ChangeType": "Addition",
-          "Description": "Added the [backupRestore/oneDriveForBusinessProtectionPolicies/driveExclusionUnits](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Description": "Added **backupRestore/oneDriveForBusinessProtectionPolicies/driveExclusionUnits** as a navigation binding property of **solutions**.",
           "Target": "solutions"
         },
         {
@@ -2283,7 +2283,7 @@
           "ApiChange": "NavigationPropertyBinding",
           "ChangedApiName": "backupRestore/oneDriveForBusinessProtectionPolicies/driveExclusionUnitsBulkAdditionJobs",
           "ChangeType": "Addition",
-          "Description": "Added the [backupRestore/oneDriveForBusinessProtectionPolicies/driveExclusionUnitsBulkAdditionJobs](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Description": "Added **backupRestore/oneDriveForBusinessProtectionPolicies/driveExclusionUnitsBulkAdditionJobs** as a navigation binding property of **solutions**.",
           "Target": "solutions"
         },
         {
@@ -2291,7 +2291,7 @@
           "ApiChange": "NavigationPropertyBinding",
           "ChangedApiName": "backupRestore/sharePointProtectionPolicies/siteExclusionUnits",
           "ChangeType": "Addition",
-          "Description": "Added the [backupRestore/sharePointProtectionPolicies/siteExclusionUnits](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Description": "Added **backupRestore/sharePointProtectionPolicies/siteExclusionUnits** as a navigation binding property of **solutions**.",
           "Target": "solutions"
         },
         {
@@ -2299,7 +2299,7 @@
           "ApiChange": "NavigationPropertyBinding",
           "ChangedApiName": "backupRestore/sharePointProtectionPolicies/siteExclusionUnitsBulkAdditionJobs",
           "ChangeType": "Addition",
-          "Description": "Added the [backupRestore/sharePointProtectionPolicies/siteExclusionUnitsBulkAdditionJobs](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Description": "Added **backupRestore/sharePointProtectionPolicies/siteExclusionUnitsBulkAdditionJobs** as a navigation binding property of **solutions**.",
           "Target": "solutions"
         }
       ],
