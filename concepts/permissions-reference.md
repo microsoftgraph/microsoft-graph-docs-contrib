@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 03/23/2026
+ms.date: 03/31/2026
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -3172,6 +3172,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### EngagementExport.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | eda8c187-a7d5-42cb-b2e1-c9142f63899f | - |
+| DisplayText | Export Viva Engage data | - |
+| Description | Allows the app to export Viva Engage data for compliance, GDPR, and admin scenarios without a signed-in user. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
 ### EngagementMeetingConversation.Read.All
 
 | Category | Application | Delegated |
@@ -5463,10 +5474,10 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 | Category | Application | Delegated |
 |--|--|--|
-| Identifier | - | 4c06a06a-098a-4063-868e-5dfee3827264 |
-| DisplayText | - | Read and write organization places |
-| Description | - | Allows the app to manage organization places (conference rooms and room lists) for calendar events and other applications, on behalf of the signed-in user. |
-| AdminConsentRequired | - | Yes |
+| Identifier | f1f5e9aa-ad18-4b97-883e-6aa7e95b7a5f | 4c06a06a-098a-4063-868e-5dfee3827264 |
+| DisplayText | Read and write organization places | Read and write organization places |
+| Description | Allows the app to manage organization places (conference rooms and room lists) for calendar events and other applications, on behalf of the signed-in user. | Allows the app to manage organization places (conference rooms and room lists) for calendar events and other applications, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 
@@ -8593,6 +8604,50 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### TeamworkSection.Read
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 87a3258d-8c34-49e2-ab91-9b8bdbd79177 |
+| DisplayText | - | Read your sections |
+| Description | - | Allows the app to read the signed-in user's sections (folders) for organizing chats and channels in Teams. |
+| AdminConsentRequired | - | No |
+
+---
+
+### TeamworkSection.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | e9e1b87a-726e-4628-8fab-d1fc58d4d9ad | - |
+| DisplayText | Read all users' sections | - |
+| Description | Allows the app to read all users' sections (folders) for organizing chats and channels in Teams, without a signed-in user. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
+### TeamworkSection.ReadWrite
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 70dbe5e8-39b9-40f3-8c65-3ec7b00ad804 |
+| DisplayText | - | Read and write your sections |
+| Description | - | Allows the app to read and write the signed-in user's sections (folders) for organizing chats and channels in Teams. |
+| AdminConsentRequired | - | No |
+
+---
+
+### TeamworkSection.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | fd99f9da-42d6-4d00-8a41-4161bea42309 | - |
+| DisplayText | Read and write all users' sections | - |
+| Description | Allows the app to read and write all users' sections (folders) for organizing chats and channels in Teams, without a signed-in user. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
 ### TeamworkTag.Read
 
 | Category | Application | Delegated |
@@ -10018,6 +10073,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Read and write anonymous users' virtual event registrations | - |
 | Description | Allows the app to read and write anonymous users' virtual event registrations, without a signed-in user | - |
 | AdminConsentRequired | Yes | - |
+
+---
+
+### WindowsUpdates.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 50a8bf5f-b06a-4ac7-881f-3ca0c4be7550 | e09fef2d-bf5e-4439-affa-7c48d23bb1c2 |
+| DisplayText | Read all Windows update deployment settings | Read all Windows update deployment settings |
+| Description | Allows the app to read all Windows update deployment settings for the organization without a signed-in user. | Allows the app to read all Windows update deployment settings for the organization on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 

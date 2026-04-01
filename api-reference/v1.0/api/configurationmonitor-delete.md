@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Delete a [configurationMonitor](../resources/configurationmonitor.md) object permanently. A deleted **configurationMonitor** can't be restored.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -50,6 +52,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_configurationmonitor"
@@ -58,6 +61,12 @@ The following example shows a request.
 ``` http
 DELETE https://graph.microsoft.com/v1.0/admin/configurationManagement/configurationMonitors/1bc248ae-a088-434d-a466-9930e533f7dd
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-configurationmonitor-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

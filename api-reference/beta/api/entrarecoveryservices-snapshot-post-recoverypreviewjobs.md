@@ -65,6 +65,7 @@ If successful, this method returns a `202 Accepted` response code with a `Locati
 The following example creates a preview job for all changes.
 
 #### Request
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_recoverypreviewjob_nofilter"
@@ -73,6 +74,12 @@ The following example creates a preview job for all changes.
 ``` http
 POST https://graph.microsoft.com/beta/directory/recovery/snapshots/MjAyNC0wOC0yNlQwMjozMDowMFo=/recoveryPreviewJobs
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-recoverypreviewjob-nofilter-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 <!-- {
@@ -90,6 +97,7 @@ Location: https://graph.microsoft.com/beta/directory/recovery/snapshots/MjAyNC0w
 The following example creates a preview job for only user entity changes.
 
 #### Request
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_recoverypreviewjob_entitytypes"
@@ -109,6 +117,12 @@ Content-Type: application/json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-recoverypreviewjob-entitytypes-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 <!-- {
   "blockType": "response",
@@ -125,6 +139,7 @@ Location: https://graph.microsoft.com/beta/directory/recovery/snapshots/MjAyNC0w
 The following example creates a preview job for specific users and groups.
 
 #### Request
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_recoverypreviewjob_entityids"
@@ -156,6 +171,12 @@ Content-Type: application/json
   }
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-recoverypreviewjob-entityids-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 <!-- {

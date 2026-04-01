@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an agent identity in an Entra ID directory. An agent identity is an account used by AI agents to authenticate within the Microsoft Entra ID ecosystem.
+Represents an agent identity in Microsoft Entra ID. An agent identity is an account used by AI agents to authenticate within the Microsoft Entra ID ecosystem.
 
 Inherits from [servicePrincipal](../resources/serviceprincipal.md).
 
@@ -27,6 +27,7 @@ This resource is an open type that allows additional properties beyond those doc
 |[Create](../api/agentidentity-post.md)|[agentidentity](../resources/agentidentity.md)|Create a new agentidentity object.|
 |[Get](../api/agentidentity-get.md)|[agentIdentity](../resources/agentidentity.md)|Read the properties and relationships of [agentIdentity](../resources/agentidentity.md) object.|
 |[Update](../api/agentidentity-update.md)|[agentIdentity](../resources/agentidentity.md)|Update the properties of an agentIdentity object.|
+|[Delete](../api/agentidentity-delete.md)|None|Delete an agentIdentity object.|
 |**App role assignments**|||
 |[List appRoleAssignedTo](../api/serviceprincipal-list-approleassignedto.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get the users, groups, and agent identities assigned app roles for this agent identity.|
 |[List appRoleAssignments](../api/serviceprincipal-list-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get the app roles that this agent identity is assigned.|

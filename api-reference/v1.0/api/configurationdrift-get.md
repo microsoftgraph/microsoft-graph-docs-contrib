@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Get the properties and relationships of a [configurationDrift](../resources/configurationdrift.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -54,6 +56,7 @@ If successful, this method returns a `200 OK` response code and a [configuration
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_configurationdrift"
@@ -62,6 +65,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/v1.0/admin/configurationManagement/configurationDrifts/4e808e99-7f60-4194-8294-02ede71effd8
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-configurationdrift-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

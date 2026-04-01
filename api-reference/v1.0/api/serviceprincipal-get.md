@@ -136,6 +136,7 @@ Content-type: application/json
   "appOwnerOrganizationId": "65415bb1-9267-4313-bbf5-ae259732ee12",
   "appRoleAssignmentRequired":true,
   "appRoles": [],
+  "createdByAppId": "748fe028-bb3d-4f2c-a015-4789781fe0f1",
   "disabledByMicrosoftStatus": null,
   "displayName": "My app instance in tenant",
   "endpoints": [],

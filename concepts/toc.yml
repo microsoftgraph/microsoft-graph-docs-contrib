@@ -247,6 +247,8 @@ items:
       href: mcp-server/overview.md
     - name: Get started
       href: mcp-server/get-started.md
+    - name: Use from Copilot Studio
+      href: mcp-server/use-enterprise-mcp-server-copilot-studio.md
     - name: Sample prompts
       href: mcp-server/mcp-server-sample-prompts.md
     - name: Explore the repository
@@ -745,7 +747,7 @@ items:
       href: social-intel-concept-overview.md
     - name: Microsoft 365 Copilot connectors for people data
       href: peopleconnectors.md
-    - name: Configure profile source precedence (preview)
+    - name: Configure profile source precedence
       href: profilepriority-configure-profilepropertysetting.md
     - name: Customize item insights privacy
       href: insights-customize-item-insights-privacy.md
@@ -970,7 +972,7 @@ items:
       href: teams-licenses.md
     - name: Implementation differences in national clouds
       href: teamwork-national-cloud-differences.md
-  - name: Tenant administration (preview)
+  - name: Tenant management
     items:
     - name: Configuration management
       items:
@@ -1180,7 +1182,7 @@ items:
     href: best-practices-concept.md
     displayName: Microsoft Graph, Best practices for working with Microsoft Graph
   - name: Known issues
-    href: https://developer.microsoft.com/graph/known-issues
+    href: known-issues.md
     displayName: Microsoft Graph, Known issues with Microsoft Graph
   - name: Errors
     href: errors.md

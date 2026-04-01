@@ -1321,6 +1321,32 @@ items:
         href: ../../api/customaccesspackageworkflowextension-update.md
       - name: Delete
         href: ../../api/customaccesspackageworkflowextension-delete.md
+    - name: Custom data provided resource upload session
+      items:
+      - name: Custom data provided resource upload session
+        href: ../../resources/customdataprovidedresourceuploadsession.md
+      - name: Create
+        href: ../../api/customdataprovidedresource-post-uploadsessions.md
+      - name: Get
+        href: ../../api/customdataprovidedresourceuploadsession-get.md
+      - name: Update
+        href: ../../api/customdataprovidedresourceuploadsession-update.md
+      - name: uploadFile
+        href: ../../api/customdataprovidedresourceuploadsession-uploadfile.md
+    - name: External origin resource connector
+      items:
+      - name: External origin resource connector
+        href: ../../resources/externaloriginresourceconnector.md
+      - name: List
+        href: ../../api/entitlementmanagement-list-externaloriginresourceconnectors.md
+      - name: Create
+        href: ../../api/entitlementmanagement-post-externaloriginresourceconnectors.md
+      - name: Get
+        href: ../../api/externaloriginresourceconnector-get.md
+      - name: Update
+        href: ../../api/externaloriginresourceconnector-update.md
+      - name: Delete
+        href: ../../api/externaloriginresourceconnector-delete.md
     - name: Control configuration
       href: ../../resources/controlconfiguration.md
     - name: Insider risky user approval

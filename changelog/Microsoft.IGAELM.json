@@ -1371,6 +1371,74 @@
     {
       "ChangeList": [
         {
+          "Id": "6061da50-e6a4-4914-8aaf-903c261922e0",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "connectorType",
+          "ChangeType": "Addition",
+          "Description": "Added the **connectorType** enumeration type.",
+          "Target": "connectorType"
+        },
+        {
+          "Id": "6061da50-e6a4-4914-8aaf-903c261922e0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalTokenBasedSapIagConnectionInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalTokenBasedSapIagConnectionInfo](https://learn.microsoft.com/en-us/graph/api/resources/externalTokenBasedSapIagConnectionInfo?view=graph-rest-beta) resource.",
+          "Target": "externalTokenBasedSapIagConnectionInfo"
+        },
+        {
+          "Id": "6061da50-e6a4-4914-8aaf-903c261922e0",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "externalOriginResourceConnector",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalOriginResourceConnector** relationship to the [accessPackageResource](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageResource?view=graph-rest-beta) resource.",
+          "Target": "accessPackageResource"
+        },
+        {
+          "Id": "6061da50-e6a4-4914-8aaf-903c261922e0",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "externalOriginResourceConnectors",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalOriginResourceConnectors** relationship to the [entitlementManagement](https://learn.microsoft.com/en-us/graph/api/resources/entitlementManagement?view=graph-rest-beta) resource.",
+          "Target": "entitlementManagement"
+        },
+        {
+          "Id": "6061da50-e6a4-4914-8aaf-903c261922e0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalOriginResourceConnector",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalOriginResourceConnector](https://learn.microsoft.com/en-us/graph/api/resources/externalOriginResourceConnector?view=graph-rest-beta) resource.",
+          "Target": "externalOriginResourceConnector"
+        }
+      ],
+      "Id": "6061da50-e6a4-4914-8aaf-903c261922e0",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2025-11-11T17:07:25.8925282Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3d853169-0dac-4410-a42b-bd84b3680f4f",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "externalOriginResourceConnectors",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalOriginResourceConnectors** relationship to the [entitlementManagement](https://learn.microsoft.com/en-us/graph/api/resources/entitlementManagement?view=graph-rest-beta) resource.",
+          "Target": "entitlementManagement"
+        }
+      ],
+      "Id": "3d853169-0dac-4410-a42b-bd84b3680f4f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-01-24T17:32:20.4123673Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "05d0e308-d306-44ae-a27f-0bc0ee1aa90b",
           "ApiChange": "Resource",
           "ChangedApiName": "accessPackageApprovalStage",
@@ -1581,6 +1649,24 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-04-20T23:07:49.0396653Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+     {
+      "ChangeList": [
+        {
+          "Id": "8c6bfd24-a94d-4fb2-b1df-9f1539efadc7",
+          "ApiChange": "Property",
+          "ChangedApiName": "domain",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **domain** property from the [externalTokenBasedSapIagConnectionInfo](https://learn.microsoft.com/en-us/graph/api/resources/externalTokenBasedSapIagConnectionInfo?view=graph-rest-beta) resource.",
+          "Target": "externalTokenBasedSapIagConnectionInfo"
+        }
+      ],
+      "Id": "8c6bfd24-a94d-4fb2-b1df-9f1539efadc7",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-03-02T17:16:43.9332257Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     },

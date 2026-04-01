@@ -111,14 +111,22 @@
       "overview": "",
       "resources": [],
       "childNodes": [
-          {
-            "name": "Agent identities",
-            "resources": [
-              "agentIdentityBlueprint",
-              "agentIdentityBlueprintPrincipal",
-              "agentIdentity"
-            ]
-          }
+        {
+          "name": "Agent identities",
+          "resources": [
+            "agentIdentityBlueprint",
+            "agentIdentityBlueprintPrincipal",
+            "agentIdentity"
+          ],
+          "childNodes": [
+            {
+              "name": "Agent identity blueprint",
+              "resources": [
+                "inheritablePermission"
+              ]
+            }
+          ]
+        }
       ]
     },
     {
@@ -1444,6 +1452,7 @@
         "peopleAdminSettings",
         "insightsSettings",
         "profileCardProperty",
+        "profilePropertySetting",
         "profileSource",
         "pronounsSettings"
       ],
@@ -2253,6 +2262,7 @@
       "childNodes": [
         {
           "name": "Configuration management",
+          "overview": "../../resources/unified-tenant-configuration-management-api-overview.md",
           "resources": [
             "configurationMonitor",
             "configurationMonitoringResult",
