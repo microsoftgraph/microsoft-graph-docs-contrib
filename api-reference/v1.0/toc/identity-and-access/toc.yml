@@ -922,6 +922,8 @@ items:
         href: ../../resources/socialidentitysource.md
       - name: Subject set
         href: ../../resources/subjectset.md
+      - name: Target agent identity sponsors or owners
+        href: ../../resources/targetagentidentitysponsorsorowners.md
       - name: Target application owners
         href: ../../resources/targetapplicationowners.md
       - name: Target manager
