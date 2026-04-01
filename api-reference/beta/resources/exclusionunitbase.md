@@ -5,7 +5,7 @@ author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
-toc.title: Exclusion unit base
+toc.title: Exclusion unit
 ms.date: 03/26/2026
 ---
 
