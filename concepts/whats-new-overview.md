@@ -22,14 +22,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Backup storage
 
-Use the new Full Workload Backup (FWB) APIs to protect entire Microsoft 365 workloads—SharePoint Online, OneDrive for work or school, and Exchange Online—with minimal administrative overhead. Instead of manually selecting each item to protect, you can create a protection policy that backs up all data in a workload and then specify only the items to exclude from backup.
-
-FWB policies use an exclusion unit pattern. After creating a protection policy with `protectionMode` set to `fullServiceBackup`, you can manage the exclusion list using a delta pattern on the policy update endpoint (`siteExclusionUnits@delta`, `driveExclusionUnits@delta`, or `mailboxExclusionUnits@delta`). For bulk operations, use the dedicated bulk addition job APIs.
-
-The following new resources are supported:
-
-- [exclusionUnitBase](/graph/api/resources/exclusionunitbase?view=graph-rest-beta&preserve-view=true) — Abstract base type for exclusion units.
-- [exclusionUnitBulkAdditionJob](/graph/api/resources/exclusionunitbulkadditionjob?view=graph-rest-beta&preserve-view=true) — Abstract base type for bulk addition jobs.
+Use the new full workload backup APIs to protect entire Microsoft 365 workloads (SharePoint Online, OneDrive for work or school, and Exchange Online) with minimal administrative overhead. Instead of manually selecting each item to protect, you can create a protection policy that backs up all data in a workload and then specify only the items to exclude from backup. For more information, see [exclusionUnitBase](/graph/api/resources/exclusionunitbase?view=graph-rest-beta&preserve-view=true) and [exclusionUnitBulkAdditionJob](/graph/api/resources/exclusionunitbulkadditionjob?view=graph-rest-beta&preserve-view=true).
 
 ## March 2026: New and generally available
 
