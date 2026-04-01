@@ -25,9 +25,9 @@ Inherits from [exclusionUnitBulkAdditionJob](../resources/exclusionunitbulkaddit
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/sharepointprotectionpolicy-list-siteexclusionunitsbulkadditionjobs.md)|[siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md) collection|Get a list of [siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md) objects associated with a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).|
-|[Create](../api/sharepointprotectionpolicy-post-siteexclusionunitsbulkadditionjobs.md)|[siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md)|Create a new [siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md) for a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).|
-|[Get](../api/siteexclusionunitsbulkadditionjob-get.md)|[siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md)|Get a [siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md) associated with a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).|
+|[List](../api/sharepointprotectionpolicy-list-siteexclusionunitsbulkadditionjobs.md)|[siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md) collection|Get a list of [site exclusion units bulk addition jobs](../resources/siteexclusionunitsbulkadditionjob.md) associated with a [SharePoint protection policy](../resources/sharepointprotectionpolicy.md).|
+|[Create](../api/sharepointprotectionpolicy-post-siteexclusionunitsbulkadditionjobs.md)|[siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md)|Create a [site exclusion units bulk addition job](../resources/siteexclusionunitsbulkadditionjob.md) for a [SharePoint protection policy](../resources/sharepointprotectionpolicy.md).|
+|[Get](../api/siteexclusionunitsbulkadditionjob-get.md)|[siteExclusionUnitsBulkAdditionJob](../resources/siteexclusionunitsbulkadditionjob.md)|Get a [site exclusion units bulk addition job](../resources/siteexclusionunitsbulkadditionjob.md) associated with a [SharePoint protection policy](../resources/sharepointprotectionpolicy.md).|
 
 ## Properties
 

@@ -23,8 +23,8 @@ Inherits from [exclusionUnitBase](../resources/exclusionunitbase.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/sharepointprotectionpolicy-list-siteexclusionunits.md)|[siteExclusionUnit](../resources/siteexclusionunit.md) collection|Get a list of [siteExclusionUnit](../resources/siteexclusionunit.md) objects associated with a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).|
-|[Get](../api/siteexclusionunit-get.md)|[siteExclusionUnit](../resources/siteexclusionunit.md)|Get a [siteExclusionUnit](../resources/siteexclusionunit.md) object associated with a [sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md).|
+|[List](../api/sharepointprotectionpolicy-list-siteexclusionunits.md)|[siteExclusionUnit](../resources/siteexclusionunit.md) collection|Get a list of [site exclusion units](../resources/siteexclusionunit.md) associated with a [SharePoint protection policy](../resources/sharepointprotectionpolicy.md).|
+|[Get](../api/siteexclusionunit-get.md)|[siteExclusionUnit](../resources/siteexclusionunit.md)|Get a [site exclusion unit](../resources/siteexclusionunit.md) associated with a [SharePoint protection policy](../resources/sharepointprotectionpolicy.md).|
 
 ## Properties
 

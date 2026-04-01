@@ -23,8 +23,8 @@ Inherits from [exclusionUnitBase](../resources/exclusionunitbase.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/onedriveforbusinessprotectionpolicy-list-driveexclusionunits.md)|[driveExclusionUnit](../resources/driveexclusionunit.md) collection|Get a list of [driveExclusionUnit](../resources/driveexclusionunit.md) objects associated with an [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).|
-|[Get](../api/driveexclusionunit-get.md)|[driveExclusionUnit](../resources/driveexclusionunit.md)|Get a [driveExclusionUnit](../resources/driveexclusionunit.md) object associated with an [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md).|
+|[List](../api/onedriveforbusinessprotectionpolicy-list-driveexclusionunits.md)|[driveExclusionUnit](../resources/driveexclusionunit.md) collection|Get a list of [drive exclusion units](../resources/driveexclusionunit.md) associated with a [OneDrive for work or school protection policy](../resources/onedriveforbusinessprotectionpolicy.md).|
+|[Get](../api/driveexclusionunit-get.md)|[driveExclusionUnit](../resources/driveexclusionunit.md)|Get a [drive exclusion unit](../resources/driveexclusionunit.md) associated with a [OneDrive for work or school protection policy](../resources/onedriveforbusinessprotectionpolicy.md).|
 
 ## Properties
 
