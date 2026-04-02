@@ -424,7 +424,7 @@ The following table lists the possible error and response codes that can be retu
 | HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
 |400|BulkExclusionInvalidCreateRequest|BulkExclusionCreateRequest is null.|The create request is null or invalid.|
-|400|BulkExclusionInputLimitExceeded|Bulk exclusion input limit exceeded.|Input size is too large.|
+|400|BulkExclusionInputLimitExceeded|Bulk exclusion input limit exceeded.|The input size is too large.|
 
 ## List exclusion units API errors
 
@@ -438,7 +438,7 @@ The following table lists the possible error and response codes that can be retu
 
 | HTTP status code| Error code| Error message | Description|
 |:------------------|:--------------|:--------------|:--------------|
-|404|PolicyNotFoundForExclusionUnitsBulkAdditionJob|Policy doesn't exist or can't be found.|Unable to get the Protection Policy.|
+|404|PolicyNotFoundForExclusionUnitsBulkAdditionJob|Policy doesn't exist or can't be found.|Unable to get the protection policy.|
 
 ## PowerShell errors
 
