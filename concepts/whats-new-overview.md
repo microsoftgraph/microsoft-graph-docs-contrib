@@ -22,14 +22,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Backup storage
 
-Use the new Full Workload Backup (FWB) APIs to protect entire Microsoft 365 workloads—SharePoint Online, OneDrive for work or school, and Exchange Online—with minimal administrative overhead. Instead of manually selecting each item to protect, you can create a protection policy that backs up all data in a workload and then specify only the items to exclude from backup.
-
-FWB policies use an exclusion unit pattern. After creating a protection policy with `protectionMode` set to `fullServiceBackup`, you can manage the exclusion list using a delta pattern on the policy update endpoint (`siteExclusionUnits@delta`, `driveExclusionUnits@delta`, or `mailboxExclusionUnits@delta`). For bulk operations, use the dedicated bulk addition job APIs.
-
-The following new resources are supported:
-
-- [exclusionUnitBase](/graph/api/resources/exclusionunitbase?view=graph-rest-beta&preserve-view=true) — Abstract base type for exclusion units.
-- [exclusionUnitBulkAdditionJob](/graph/api/resources/exclusionunitbulkadditionjob?view=graph-rest-beta&preserve-view=true) — Abstract base type for bulk addition jobs.
+Use the new full workload backup APIs to protect entire Microsoft 365 workloads (SharePoint Online, OneDrive for work or school, and Exchange Online) with minimal administrative overhead. Instead of manually selecting each item to protect, you can create a protection policy that backs up all data in a workload and then specify only the items to exclude from backup. For more information, see [exclusionUnitBase](/graph/api/resources/exclusionunitbase?view=graph-rest-beta&preserve-view=true) and [exclusionUnitBulkAdditionJob](/graph/api/resources/exclusionunitbulkadditionjob?view=graph-rest-beta&preserve-view=true).
 
 ## March 2026: New and generally available
 
@@ -158,6 +151,12 @@ Added the [ownerlessGroupPolicy](/graph/api/resources/ownerlessgrouppolicy?view=
 ### Identity and access | Directory management
 
 Introduced the Entra Backup and Recovery APIs to enable IT administrators to back up and restore Microsoft Entra ID tenant data. You can view snapshots and start preview jobs for analysis before running the recovery jobs. You can also monitor the status of recovery processes including successes and failures. For more information, see [Overview of Microsoft Entra Backup and Recovery APIs](/graph/api/resources/entrarecoveryservices-backup-recovery-overview).
+
+### Identity and access | Directory management
+
+- Use **keyCredentials** as a property on [appManagementConfiguration](/graph/api/resources/appmanagementconfiguration?view=graph-rest-beta&preserve-view=true) to get a collection of certificate restrictions settings to be applied to an application or service principal.
+- Use **passwordCredentials** as a property on [appManagementConfiguration](/graph/api/resources/appmanagementconfiguration?view=graph-rest-beta&preserve-view=true) to get a collection of password restrictions settings to be applied to an application or service principal.
+- Use **customSecurityAttributes** as a property on [appManagementPolicyActorExemptions](/graph/api/resources/appmanagementpolicyactorexemptions?view=graph-rest-beta&preserve-view=true) to get a collection of [customSecurityAttributeExemption](/graph/api/resources/customsecurityattributeexemption?view=graph-rest-beta&preserve-view=true) objects to exempt from the policy enforcement.
 
 ### Identity and access | Governance
 

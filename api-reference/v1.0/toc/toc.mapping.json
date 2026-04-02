@@ -958,6 +958,7 @@
                 "singleUser",
                 "socialIdentitySource",
                 "subjectSet",
+                "targetAgentIdentitySponsorsOrOwners",
                 "targetApplicationOwners",
                 "targetManager",
                 "targetUserSponsors"

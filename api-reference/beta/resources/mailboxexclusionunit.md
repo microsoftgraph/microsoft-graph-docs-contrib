@@ -23,8 +23,8 @@ Inherits from [exclusionUnitBase](../resources/exclusionunitbase.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/exchangeprotectionpolicy-list-mailboxexclusionunits.md)|[mailboxExclusionUnit](../resources/mailboxexclusionunit.md) collection|Get a list of [mailboxExclusionUnit](../resources/mailboxexclusionunit.md) objects associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).|
-|[Get](../api/mailboxexclusionunit-get.md)|[mailboxExclusionUnit](../resources/mailboxexclusionunit.md)|Get a [mailboxExclusionUnit](../resources/mailboxexclusionunit.md) object associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).|
+|[List](../api/exchangeprotectionpolicy-list-mailboxexclusionunits.md)|[mailboxExclusionUnit](../resources/mailboxexclusionunit.md) collection|Get a list of [mailbox exclusion units](../resources/mailboxexclusionunit.md) associated with an [Exchange protection policy](../resources/exchangeprotectionpolicy.md).|
+|[Get](../api/mailboxexclusionunit-get.md)|[mailboxExclusionUnit](../resources/mailboxexclusionunit.md)|Get a [mailbox exclusion unit](../resources/mailboxexclusionunit.md) associated with an [Exchange protection policy](../resources/exchangeprotectionpolicy.md).|
 
 ## Properties
 

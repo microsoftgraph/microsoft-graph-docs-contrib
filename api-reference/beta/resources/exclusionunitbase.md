@@ -5,7 +5,7 @@ author: "vidula-verma"
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
-toc.title: Exclusion unit base
+toc.title: Exclusion unit
 ms.date: 03/26/2026
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the abstract base entity for an exclusion unit that specifies artifacts to be excluded from full workload backup.
+
+Full workload backup policies use an exclusion unit pattern. After creating a protection policy with [protectionMode](../resources/enums.md#protectionmode-values) set to `fullServiceBackup`, you can manage the exclusion list using a delta pattern on the policy update endpoint (**siteExclusionUnits@delta**, **driveExclusionUnits@delta**, or **mailboxExclusionUnits@delta**). For bulk operations, use the dedicated [bulk addition job](../resources/exclusionunitbulkadditionjob.md) APIs.
 
 This resource is the base type for [siteExclusionUnit](../resources/siteexclusionunit.md), [driveExclusionUnit](../resources/driveexclusionunit.md), and [mailboxExclusionUnit](../resources/mailboxexclusionunit.md).
 

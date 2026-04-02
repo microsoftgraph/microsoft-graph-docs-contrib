@@ -25,9 +25,9 @@ Inherits from [exclusionUnitBulkAdditionJob](../resources/exclusionunitbulkaddit
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/exchangeprotectionpolicy-list-mailboxexclusionunitsbulkadditionjobs.md)|[mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md) collection|Get a list of [mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md) objects associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).|
-|[Create](../api/exchangeprotectionpolicy-post-mailboxexclusionunitsbulkadditionjobs.md)|[mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md)|Create a new [mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md) for an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).|
-|[Get](../api/mailboxexclusionunitsbulkadditionjob-get.md)|[mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md)|Get a [mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md) associated with an [exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md).|
+|[List](../api/exchangeprotectionpolicy-list-mailboxexclusionunitsbulkadditionjobs.md)|[mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md) collection|Get a list of [mailbox exclusion units bulk addition jobs](../resources/mailboxexclusionunitsbulkadditionjob.md) associated with an [Exchange protection policy](../resources/exchangeprotectionpolicy.md).|
+|[Create](../api/exchangeprotectionpolicy-post-mailboxexclusionunitsbulkadditionjobs.md)|[mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md)|Create a [mailbox exclusion units bulk addition job](../resources/mailboxexclusionunitsbulkadditionjob.md) for an [Exchange protection policy](../resources/exchangeprotectionpolicy.md).|
+|[Get](../api/mailboxexclusionunitsbulkadditionjob-get.md)|[mailboxExclusionUnitsBulkAdditionJob](../resources/mailboxexclusionunitsbulkadditionjob.md)|Get a [mailbox exclusion units bulk addition job](../resources/mailboxexclusionunitsbulkadditionjob.md) associated with an [Exchange protection policy](../resources/exchangeprotectionpolicy.md).|
 
 ## Properties
 
