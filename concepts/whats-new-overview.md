@@ -24,11 +24,52 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 Use the new full workload backup APIs to protect entire Microsoft 365 workloads (SharePoint Online, OneDrive for work or school, and Exchange Online) with minimal administrative overhead. Instead of manually selecting each item to protect, you can create a protection policy that backs up all data in a workload and then specify only the items to exclude from backup. For more information, see [exclusionUnitBase](/graph/api/resources/exclusionunitbase?view=graph-rest-beta&preserve-view=true) and [exclusionUnitBulkAdditionJob](/graph/api/resources/exclusionunitbulkadditionjob?view=graph-rest-beta&preserve-view=true).
 
+## April 2026: New and generally available
+
+### Teamwork and communications | Messaging
+
+Removed the `model` parameters and payment-model guidance from Microsoft Teams export APIs and related change-notification documentation. The `model` query parameter is no longer required and is ignored if supplied. For more information, see [Payment models and licensing requirements for Microsoft Teams APIs](/graph/teams-licenses).
+
 ## March 2026: New and generally available
 
 ### Applications
 
-Using the **signInAudience** property to limit where an [application](/graph/api/resources/application) can be used **isn't** a replacement for proper tenant validation and authorization enforcement in your application code. If your application expects access only in specific tenants, you *must* enforce that validation in your application code. To learn more, see [Secure applications and APIs by validating claims](/entra/identity-platform/claims-validation).
+- Using the **signInAudience** property to limit where an [application](/graph/api/resources/application) can be used **isn't** a replacement for proper tenant validation and authorization enforcement in your application code. If your application expects access only in specific tenants, you *must* enforce that validation in your application code. To learn more, see [Secure applications and APIs by validating claims](/entra/identity-platform/claims-validation).
+- Added the **trafficRoutingMethod** property to the [onPremisesPublishing](/graph/api/resources/onpremisespublishing?view=graph-rest-beta&preserve-view=true) resource to control how traffic is distributed across multiple connectors in a connector group in Microsoft Entra app proxy.
+
+### Files
+
+Use the following new container columns APIs added to further support structured file storage in SharePoint Embedded applications:
+  - [Get column](/graph/api/filestoragecontainer-get-column)
+  - [Update column](/graph/api/filestoragecontainer-update-column)
+  - [Delete column](/graph/api/filestoragecontainer-delete-column)
+
+### Identity and access | Governance
+
+- Added the `allDirectoryAgentIdentities` member to the [allowedTargetScope](/graph/api/resources/enums#allowedtargetscope-values) enumeration to allow access packages to target all directory agent identities.
+- Added the [targetAgentIdentitySponsorsOrOwners](/graph/api/resources/targetagentidentitysponsorsorowners) resource type that defines the sponsors or owners of a specific agent identity.
+
+### People and workplace intelligence | People admin settings
+
+Use the new [profileSource](/graph/api/resources/profilesource) APIs to enable administrators to customize the display information of a profile source seen by users across an organization in Microsoft 365 experiences.
+
+### Personal contacts
+
+Use the **primaryEmailAddress**, **secondaryEmailAddress**, and **tertiaryEmailAddress** properties on [contact](/graph/api/resources/contact) to get or set the primary, secondary, or tertiary email address of a contact.
+
+### Teamwork and communications | Apps
+
+Manage Teams apps at the channel level within a team using the following APIs:
+- [List apps](/graph/api/channel-list-enabledapps) in a channel.
+- [Get an app](/graph/api/teamsapp-get) in a channel.
+- [Enable a new Teams app](/graph/api/channel-post-enabledapps) in a channel.
+- [Disable an app](/graph/api/channel-delete-enabledapps) in a channel.
+
+## March 2026: New in preview only
+
+### Employee experience | Employee engagement
+
+Introducing new [Follow user](/graph/api/storyline-follow?view=graph-rest-beta&preserve-view=true), [Unfollow user](/graph/api/storyline-unfollow?view=graph-rest-beta&preserve-view=true), [List Followers](/graph/api/storyline-list-followers?view=graph-rest-beta&preserve-view=true), [List Following](/graph/api/storyline-list-followings?view=graph-rest-beta&preserve-view=true) APIs for Viva Engage to manage storyline following relationships.
 
 ### Calendars | Places
 

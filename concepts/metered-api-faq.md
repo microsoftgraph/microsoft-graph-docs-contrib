@@ -31,31 +31,13 @@ For information about how to verify billing setup, see [Enable metered APIs and 
 > [!IMPORTANT]
 > Starting August 25, 2025, the Microsoft Teams export APIs are no longer metered, and no billing configuration is required to use these APIs. If your application is configured for billing, no action is required. This FAQ section about the billing policy is provided for reference as the final billing cycle for metered Microsoft Teams APIs concludes.
 
-### Are there more requirements beyond setting up billing to call Microsoft Teams export APIs?
-Yes, Microsoft Teams export APIs require a `model` parameter to be passed as part of the API call. Depending on the value of the `model` parameter, a user license might also be required for certain data. For more information, see [Teams API payment models and licensing requirements](teams-licenses.md).
-
-### How do I know which model parameter is being used in API calls?
-The best way to determine which `model` parameter is in use is to inspect the code of the calling application.
-
-### How is seeded capacity calculated?
-Seeded capacity for Teams export APIs being called with the `model=a` parameter is calculated based on the number of eligible users in the target tenant. Seeded capacity is then applied to each application running against that tenant.
-
-### How is seeded capacity applied?
-Seeded capacity is evaluated at the beginning of the month, and any eligible license counts to the tenant-level calculation of seeded capacity. Each application then consumes the seeded capacity allocated to it until it's depleted. Further consumption by the application is then metered and appears on the monthly bill.
-
-### What happens when an app that is registered but not set up for billing initiates a metered Teams export API call?
-The API call fails with a 402 payment required error. This failure occurs even when targeting a user with a valid user license and passing the `model=a` parameter.
-
-### What happens when the model parameter is excluded from a call to a Microsoft Teams export API that requires it?
-When calling an API without a required `model` parameter, the API defaults to evaluation-mode behavior. The evaluation mode provides a limited number of API calls per month before returning the 402 payment required error. The evaluation mode is provided for evaluation and development only and isn't intended for production use.  
-
 ## Application consumer FAQ
 
 ### Why is my application provider asking me to set up billing?
 The owner of the application registration handles billing for metered APIs and services in Microsoft Graph. If you acquired an application that requires you to be the owner of the application registration, you're responsible for any metered APIs and services used by the application.
 
 ### Do I need licenses for every user in my tenant?
-A license is required for each user subject to security and compliance policies. Other scenarios might not require a license. For more information, see [Teams API payment models and licensing requirements](teams-licenses.md).
+A license is required for each user subject to security and compliance policies. Other scenarios might not require a license.
 
 ## Cost management and billing FAQ
 
@@ -92,4 +74,3 @@ Some endpoints might share a meter, and billing data can't be broken down by end
 - [Overview of metered APIs and services in Microsoft Graph](/graph/metered-api-overview)
 - [Metered APIs and services in Microsoft Graph](/graph/metered-api-list)
 - [Enable metered APIs and services in Microsoft Graph](/graph/metered-api-setup)
-- [Payment models and licensing requirements for Microsoft Teams APIs](teams-licenses.md)

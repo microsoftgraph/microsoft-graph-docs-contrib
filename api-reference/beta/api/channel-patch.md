@@ -16,8 +16,6 @@ Namespace: microsoft.graph
 
 Update the properties of the specified [channel](../resources/channel.md).
 
-[!INCLUDE [teams-model-A-only-disclaimer](../../includes/teams-model-A-only-disclaimer.md)]
-
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
