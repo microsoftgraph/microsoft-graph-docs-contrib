@@ -5424,7 +5424,7 @@ Possible values for user account types (group membership), per Windows definitio
 |phish|
 |unknownFutureValue|
 
-### protectionMode values
+### BackupPolicyProtectionMode values
 
 |Member|
 |:---|

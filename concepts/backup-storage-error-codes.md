@@ -411,6 +411,35 @@ The following table lists the possible error and response code that can be retur
 |:------------------|:--------------|:--------------|:--------------|
 |403|InvalidStateForBulkRequestDeletion|Validation fails when the service type of the restore session and create request are different.|A bulk request can only be deleted when its status is `completed` or `completedWithErrors`.|
 
+## Create exclusion units bulk addition job API errors
+
+The error codes in this section apply to the following APIs:
+
+- [Create driveExclusionUnitsBulkAdditionJob](/graph/api/onedriveforbusinessprotectionpolicy-post-driveexclusionunitsbulkadditionjobs?view=graph-rest-beta&preserve-view=true)
+- [Create mailboxExclusionUnitsBulkAdditionJob](/graph/api/exchangeprotectionpolicy-post-mailboxexclusionunitsbulkadditionjobs?view=graph-rest-beta&preserve-view=true)
+- [Create siteExclusionUnitsBulkAdditionJob](/graph/api/sharepointprotectionpolicy-post-siteexclusionunitsbulkadditionjobs?view=graph-rest-beta&preserve-view=true)
+
+The following table lists the possible error and response codes that can be returned.
+
+| HTTP status code| Error code| Error message | Description|
+|:------------------|:--------------|:--------------|:--------------|
+|400|BulkExclusionInvalidCreateRequest|BulkExclusionCreateRequest is null.|The create request is null or invalid.|
+|400|BulkExclusionInputLimitExceeded|Bulk exclusion input limit exceeded.|Input size is too large.|
+
+## List exclusion units API errors
+
+The error codes in this section apply to the following APIs:
+
+- [List driveExclusionUnits](/graph/api/onedriveforbusinessprotectionpolicy-list-driveexclusionunits?view=graph-rest-beta&preserve-view=true)
+- [List mailboxExclusionUnits](/graph/api/exchangeprotectionpolicy-list-mailboxexclusionunits?view=graph-rest-beta&preserve-view=true)
+- [List siteExclusionUnits](/graph/api/sharepointprotectionpolicy-list-siteexclusionunits?view=graph-rest-beta&preserve-view=true)
+
+The following table lists the possible error and response codes that can be returned.
+
+| HTTP status code| Error code| Error message | Description|
+|:------------------|:--------------|:--------------|:--------------|
+|404|PolicyNotFoundForExclusionUnitsBulkAdditionJob|Policy doesn't exist or can't be found.|Unable to get the Protection Policy.|
+
 ## PowerShell errors
 
 The error codes in this section apply to the following APIs when they're called from Microsoft Graph PowerShell:
