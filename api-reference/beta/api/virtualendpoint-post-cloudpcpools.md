@@ -45,7 +45,7 @@ POST /deviceManagement/virtualEndpoint/cloudPcPools
 
 In the request body, supply a JSON representation of a [cloudPcPool](../resources/cloudpcpool.md) object.
 
-The `@odata.type` property is required in the request body to specify the derived type. The supported value is `#microsoft.graph.cloudPcAgentPool`.
+The **@odata.type** property is required in the request body to specify the derived type. The supported value is `#microsoft.graph.cloudPcAgentPool`.
 
 The following table lists the properties that are required when you create a [cloudPcPool](../resources/cloudpcpool.md).
 
