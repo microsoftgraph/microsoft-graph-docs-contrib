@@ -1,6 +1,6 @@
 ---
 title: "Get cloudPcPool for user"
-description: "Read the properties and relationships of a cloudPcPool object that the signed-in user has access to."
+description: "Read the properties and relationships of a cloudPcPool object that the signed-in user can access."
 author: "yityu"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [cloudPcPool](../resources/cloudpcpool.md) object that the signed-in user has access to.
+Read the properties and relationships of a [cloudPcPool](../resources/cloudpcpool.md) object that the signed-in user can access.
 
 ## Permissions
 
