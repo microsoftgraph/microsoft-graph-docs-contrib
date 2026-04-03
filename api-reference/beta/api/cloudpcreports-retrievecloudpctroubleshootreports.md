@@ -1,13 +1,3 @@
----
-title: "cloudPcReports: retrieveCloudPcTroubleshootReports"
-description: "Get troubleshooting reports for Cloud PCs."
-author: "abbyzhccc"
-ms.date: 12/10/2024
-ms.localizationpriority: medium
-ms.subservice: "cloud-pc"
-doc_type: apiPageType
----
-
 # cloudPcReports: retrieveCloudPcTroubleshootReports
 
 Namespace: microsoft.graph
@@ -50,14 +40,14 @@ The following table lists the parameters that you can use with this action.
 
 |Parameter|Type|Description|
 |:--------|:---|:----------|
-|filter|String|OData `$filter` syntax. Supported filters are: `and`, `or`, `gt`, `ge`, and `eq`. **Report-specific requirements**: <br/>• **For tenant network/connection/MTTF/MTTR/sign-in reports** (`troubleshootTenant*NetworkTrendReport`, `troubleshootTenant*NetworkAggregatedReport`, `troubleshootTenant*ConnectionFailureRateReport`, `troubleshootTenant*ActiveConnectionCountReport`, `troubleshootTenant*MTTFReport`, `troubleshootTenant*MTTRReport`, `troubleshootTenant*RemoteSignInTimeReport`): **ALL 16 parameters required** in filter: `(TimeRange eq 'Last X days') and (PolicyNameParam eq '[value]') and (RegionParam eq '[value]') and (UserSettingNameParam eq '[value]') and (ServicePlanTypeParam eq '[value]') and (ServicePlanNameParam eq '[value]') and (OSBuildVersionParam eq '[value]') and (AADJoinTypeParam eq '[value]') and (ImageNameParam eq '[value]') and (GatewayRegionParam eq '[value]') and (ClientOSParam eq '[value]') and (ClientTypeParam eq '[value]') and (TransportTypeParam eq '[value]') and (CloudPCEndpointCountryRegionParam eq '[value]') and (CloudPCEndpointStateParam eq '[value]') and (CloudPCEndpointCityParam eq '[value]')`. Parameter values can be empty strings ('') if not filtering on that dimension.<br/>• **For tenant health reports** (`troubleshootTenantCloudPCHealthTrendReport`, `troubleshootTenantCloudPCHealthAggregatedReport`): **7 parameters required** in filter: `(TimeRange eq 'Last X days') and (PolicyNameParam eq '[value]') and (RegionParam eq '[value]') and (ServicePlanTypeParam eq '[value]') and (ServicePlanNameParam eq '[value]') and (AADJoinTypeParam eq '[value]') and (ImageNameParam eq '[value]')`. Parameter values can be empty strings ('') if not filtering on that dimension.<br/>• **For tenant global filter report** (`troubleshootTenantGlobalFilterReport`): **Only TimeRange required** in filter: `(TimeRange eq 'Last X days')`<br/>• **For configuration connection reports** (`troubleshootConfigurationTotalConnectionCountBarV1Report`, `troubleshootConfigurationConnectionCountTrendV1Report`): **15 parameters required** in filter: `(TimeRange eq 'Last X days') and (CloudPCStatusParam eq '[value]') and (RegionParam eq '[value]') and (PolicyNameParam eq '[value]') and (UserSettingNameParam eq '[value]') and (ImageNameParam eq '[value]') and (ServicePlanNameParam eq '[value]') and (ServicePlanTypeParam eq '[value]') and (OSVersionParam eq '[value]') and (OSBuildVersionParam eq '[value]') and (ClientOSParam eq '[value]') and (ClientTypeParam eq '[value]') and (ClientVersionParam eq '[value]') and (TeamsAppV2VersionParam eq '[value]') and (MMRVersionParam eq '[value]')`. Parameter values can be empty strings ('') if not filtering on that dimension.<br/>• **For other configuration reports** (`troubleshootConfigurationGlobalFilterV1Report`): **Only TimeRange required** in filter: `(TimeRange eq 'Last X days')`<br/>• **For user/device matched reports** (`troubleshootMatchedUserReport`, `troubleshootMatchedCloudPCReport`): **SearchParam required** in filter: `(SearchParam eq '[search_value]')`<br/>• **For user/device list reports**: **Single parameter required** in filter: `(UPNParam eq '[value]')` for `troubleshootCloudPCListReport`, or `(CloudPCIdParam eq '[value]')` for `troubleshootUserListReport`<br/>• **For CloudPC trend/aggregated reports** (`troubleshootCloudPCDurationTrendReport`, `troubleshootCloudPCDurationAggregatedReport`, `troubleshootCloudPCErrorTrendReport`, `troubleshootCloudPCErrorAggregatedReport`, `troubleshootCloudPCNetworkTrendReport`, `troubleshootCloudPCNetworkAggregatedReport`, `troubleshootCloudPCRemoteSignInTimeTrendReport`, `troubleshootCloudPCRemoteSignInTimeAggregatedReport`): **3 parameters required** in filter: `(UPNParam eq '[value]') and (TimeRange eq 'Last X hours/days') and (CloudPCIdParam eq '[value]')`. **At least one of UPNParam or CloudPCIdParam must have a non-empty value.** Parameter values can be empty strings ('') if not filtering on that dimension.<br/>• **For view data table reports with 16 parameters** (`troubleshootTenantConnectedDevicesOfViewDataTableReport`, `troubleshootTenantMetricsOfViewDataTableReport`): **16 parameters required** in filter: `(TimeRange eq 'Last X days') and (PolicyNameParam eq '[value]') and (RegionParam eq '[value]') and (UserSettingNameParam eq '[value]') and (ServicePlanTypeParam eq '[value]') and (ServicePlanNameParam eq '[value]') and (OSBuildVersionParam eq '[value]') and (AADJoinTypeParam eq '[value]') and (ImageNameParam eq '[value]') and (GatewayRegionParam eq '[value]') and (ClientOSParam eq '[value]') and (ClientTypeParam eq '[value]') and (TransportTypeParam eq '[value]') and (CloudPCEndpointCountryRegionParam eq '[value]') and (CloudPCEndpointStateParam eq '[value]') and (CloudPCEndpointCityParam eq '[value]')`. Parameter values can be empty strings ('') if not filtering on that dimension.<br/>• **For connection configuration view data table report** (`troubleshootConnectionConfigurationOfViewDataTableV1Report`): **23 parameters required** in filter: `(TimeRange eq 'Last X days') and (CloudPCStatusParam eq '[value]') and (RegionParam eq '[value]') and (PolicyNameParam eq '[value]') and (UserSettingNameParam eq '[value]') and (ImageNameParam eq '[value]') and (ServicePlanNameParam eq '[value]') and (ServicePlanTypeParam eq '[value]') and (OSVersionParam eq '[value]') and (OSBuildVersionParam eq '[value]') and (ClientOSParam eq '[value]') and (ClientTypeParam eq '[value]') and (ClientVersionParam eq '[value]') and (TeamsAppV2VersionParam eq '[value]') and (MMRVersionParam eq '[value]') and (CloudPCIdParam eq '[value]') and (UPNParam eq '[value]') and (AADJoinTypeParam eq '[value]') and (GatewayRegionParam eq '[value]') and (TransportTypeParam eq '[value]') and (CloudPCEndpointCountryRegionParam eq '[value]') and (CloudPCEndpointStateParam eq '[value]') and (CloudPCEndpointCityParam eq '[value]')`. Parameter values can be empty strings ('') if not filtering on that dimension.<br/>• **For events view data table report** (`troubleshootEventsOfViewDataTableReport`): **18 parameters required** in filter: `(TimeRange eq 'Last X days') and (PolicyNameParam eq '[value]') and (RegionParam eq '[value]') and (UserSettingNameParam eq '[value]') and (ServicePlanTypeParam eq '[value]') and (ServicePlanNameParam eq '[value]') and (OSBuildVersionParam eq '[value]') and (AADJoinTypeParam eq '[value]') and (ImageNameParam eq '[value]') and (GatewayRegionParam eq '[value]') and (ClientOSParam eq '[value]') and (ClientTypeParam eq '[value]') and (TransportTypeParam eq '[value]') and (UPNParam eq '[value]') and (CloudPCIdParam eq '[value]') and (CloudPCEndpointCountryRegionParam eq '[value]') and (CloudPCEndpointStateParam eq '[value]') and (CloudPCEndpointCityParam eq '[value]')`. Parameter values can be empty strings ('') if not filtering on that dimension.<br/>• **For CloudPC metrics view data table report** (`troubleshootCloudPCMetricsOfViewDataTableReport`): **3 parameters required** in filter: `(TimeRange eq 'Last X days') and (CloudPCIdParam eq '[value]') and (UPNParam eq '[value]')`. **At least one of UPNParam or CloudPCIdParam must have a non-empty value.** Parameter values can be empty strings ('') if not filtering on that dimension.<br/>• **For CloudPC health trend report** (`troubleshootCloudPCHealthTrendReport`): **2 parameters required** in filter: `(TimeRange eq 'Last X hours/days') and (CloudPCIdParam eq '[value]')`. Parameter values can be empty strings ('') if not filtering on that dimension.<br/>• **Optional** for other report types<br/>• Maximum date range: 28 days for Tenant report and User & Device Report, 180 days for configuration Report.|
+|filter|String|OData `$filter` syntax. Supported filters are: `and`, `or`, `gt`, `ge`, and `eq`. **Report-specific requirements**: <br/>• **For tenant network/connection/MTTF/MTTR/sign-in reports** (`troubleshootTenant*NetworkTrendReport`, `troubleshootTenant*NetworkAggregatedReport`, `troubleshootTenant*ConnectionFailureRateReport`, `troubleshootTenant*ActiveConnectionCountReport`, `troubleshootTenant*MTTFReport`, `troubleshootTenant*MTTRReport`, `troubleshootTenant*RemoteSignInTimeReport`): **ALL 16 parameters required** in filter: `(TimeRange eq 'Last X days') and (PolicyNameParam eq '[value]') and (RegionParam eq '[value]') and (UserSettingNameParam eq '[value]') and (ServicePlanTypeParam eq '[value]') and (ServicePlanNameParam eq '[value]') and (OSBuildVersionParam eq '[value]') and (AADJoinTypeParam eq '[value]') and (ImageNameParam eq '[value]') and (GatewayRegionParam eq '[value]') and (ClientOSParam eq '[value]') and (ClientTypeParam eq '[value]') and (TransportTypeParam eq '[value]') and (CloudPCEndpointCountryRegionParam eq '[value]') and (CloudPCEndpointStateParam eq '[value]') and (CloudPCEndpointCityParam eq '[value]')`. Parameter values can be empty strings ('') if not filtering on that dimension.<br/>• **For tenant health reports** (`troubleshootTenantCloudPCHealthTrendReport`, `troubleshootTenantCloudPCHealthAggregatedReport`): **7 parameters required** in filter: `(TimeRange eq 'Last X days') and (PolicyNameParam eq '[value]') and (RegionParam eq '[value]') and (ServicePlanTypeParam eq '[value]') and (ServicePlanNameParam eq '[value]') and (AADJoinTypeParam eq '[value]') and (ImageNameParam eq '[value]')`. Parameter values can be empty strings ('') if not filtering on that dimension.<br/>• **For tenant global filter report** (`troubleshootTenantGlobalFilterReport`): **Only TimeRange required** in filter: `(TimeRange eq 'Last X days')`<br/>• **For configuration connection reports** (`troubleshootConfigurationTotalConnectionCountBarV1Report`, `troubleshootConfigurationConnectionCountTrendV1Report`): **15 parameters required** in filter: `(TimeRange eq 'Last X days') and (CloudPCStatusParam eq '[value]') and (RegionParam eq '[value]') and (PolicyNameParam eq '[value]') and (UserSettingNameParam eq '[value]') and (ImageNameParam eq '[value]') and (ServicePlanNameParam eq '[value]') and (ServicePlanTypeParam eq '[value]') and (OSVersionParam eq '[value]') and (OSBuildVersionParam eq '[value]') and (ClientOSParam eq '[value]') and (ClientTypeParam eq '[value]') and (ClientVersionParam eq '[value]') and (TeamsAppV2VersionParam eq '[value]') and (MMRVersionParam eq '[value]')`. Parameter values can be empty strings ('') if not filtering on that dimension.<br/>• **For other configuration reports** (`troubleshootConfigurationGlobalFilterV1Report`): **Only TimeRange required** in filter: `(TimeRange eq 'Last X days')`<br/>• **For user/device matched reports** (`troubleshootMatchedUserReport`, `troubleshootMatchedCloudPCReport`): **SearchParam required** in filter: `(SearchParam eq '[search_value]')`<br/>• **For user/device list reports**: **Single parameter required** in filter: `(UPNParam eq '[value]')` for `troubleshootCloudPCListReport`, or `(CloudPCIdParam eq '[value]')` for `troubleshootUserListReport`<br/>• **For CloudPC trend/aggregated reports** (`troubleshootCloudPCDurationTrendReport`, `troubleshootCloudPCDurationAggregatedReport`, `troubleshootCloudPCErrorTrendReport`, `troubleshootCloudPCErrorAggregatedReport`, `troubleshootCloudPCNetworkTrendReport`, `troubleshootCloudPCNetworkAggregatedReport`, `troubleshootCloudPCRemoteSignInTimeTrendReport`, `troubleshootCloudPCRemoteSignInTimeAggregatedReport`): **3 parameters required** in filter: `(UPNParam eq '[value]') and (TimeRange eq 'Last X hours/days') and (CloudPCIdParam eq '[value]')`. **At least one of UPNParam or CloudPCIdParam must have a non-empty value.** Parameter values can be empty strings ('') if not filtering on that dimension.<br/>• **For view data table reports with 16 parameters** (`troubleshootTenantConnectedDevicesOfViewDataTableReport`, `troubleshootTenantMetricsOfViewDataTableReport`): **16 parameters required** in filter: `(TimeRange eq 'Last X days') and (PolicyNameParam eq '[value]') and (RegionParam eq '[value]') and (UserSettingNameParam eq '[value]') and (ServicePlanTypeParam eq '[value]') and (ServicePlanNameParam eq '[value]') and (OSBuildVersionParam eq '[value]') and (AADJoinTypeParam eq '[value]') and (ImageNameParam eq '[value]') and (GatewayRegionParam eq '[value]') and (ClientOSParam eq '[value]') and (ClientTypeParam eq '[value]') and (TransportTypeParam eq '[value]') and (CloudPCEndpointCountryRegionParam eq '[value]') and (CloudPCEndpointStateParam eq '[value]') and (CloudPCEndpointCityParam eq '[value]')`. Parameter values can be empty strings ('') if not filtering on that dimension.<br/>• **For connection configuration view data table report** (`troubleshootConnectionConfigurationOfViewDataTableV1Report`): **23 parameters required** in filter: `(TimeRange eq 'Last X days') and (CloudPCStatusParam eq '[value]') and (RegionParam eq '[value]') and (PolicyNameParam eq '[value]') and (UserSettingNameParam eq '[value]') and (ImageNameParam eq '[value]') and (ServicePlanNameParam eq '[value]') and (ServicePlanTypeParam eq '[value]') and (OSVersionParam eq '[value]') and (OSBuildVersionParam eq '[value]') and (ClientOSParam eq '[value]') and (ClientTypeParam eq '[value]') and (ClientVersionParam eq '[value]') and (TeamsAppV2VersionParam eq '[value]') and (MMRVersionParam eq '[value]') and (CloudPCIdParam eq '[value]') and (UPNParam eq '[value]') and (AADJoinTypeParam eq '[value]') and (GatewayRegionParam eq '[value]') and (TransportTypeParam eq '[value]') and (CloudPCEndpointCountryRegionParam eq '[value]') and (CloudPCEndpointStateParam eq '[value]') and (CloudPCEndpointCityParam eq '[value]')`. Parameter values can be empty strings ('') if not filtering on that dimension.<br/>• **For events view data table report** (`troubleshootEventsOfViewDataTableReport`): **18 parameters required** in filter: `(TimeRange eq 'Last X days') and (PolicyNameParam eq '[value]') and (RegionParam eq '[value]') and (UserSettingNameParam eq '[value]') and (ServicePlanTypeParam eq '[value]') and (ServicePlanNameParam eq '[value]') and (OSBuildVersionParam eq '[value]') and (AADJoinTypeParam eq '[value]') and (ImageNameParam eq '[value]') and (GatewayRegionParam eq '[value]') and (ClientOSParam eq '[value]') and (ClientTypeParam eq '[value]') and (TransportTypeParam eq '[value]') and (UPNParam eq '[value]') and (CloudPCIdParam eq '[value]') and (CloudPCEndpointCountryRegionParam eq '[value]') and (CloudPCEndpointStateParam eq '[value]') and (CloudPCEndpointCityParam eq '[value]')`. Parameter values can be empty strings ('') if not filtering on that dimension.<br/>• **For CloudPC metrics view data table report** (`troubleshootCloudPCMetricsOfViewDataTableReport`): **3 parameters required** in filter: `(TimeRange eq 'Last X days') and (CloudPCIdParam eq '[value]') and (UPNParam eq '[value]')`. **At least one of UPNParam or CloudPCIdParam must have a non-empty value.** Parameter values can be empty strings ('') if not filtering on that dimension.<br/>• **For CloudPC health trend report** (`troubleshootCloudPCHealthTrendReport`): **2 parameters required** in filter: `(TimeRange eq 'Last X hours/days') and (CloudPCIdParam eq '[value]')`. Parameter values can be empty strings ('') if not filtering on that dimension.<br/>• **For environment overview view data table report** (`troubleshootEnvironmentOverviewOfViewDataTableReport`): **No mandatory filter parameters**. Filter is optional.<br/>• **Optional** for other report types<br/>• Maximum date range: 28 days for Tenant report and User & Device Report, 180 days for configuration Report.|
 |groupBy|String collection|A list of columns that describe how to group the data in the report. Optional.|
 |orderBy|String collection|Specifies the order by column name. Optional.|
-|reportName|[cloudPCTroubleshootReportType](../resources/cloudpcreports.md#cloudpctroubleshootreporttype-values)|The report name. The possible values are: `troubleshootTenantGlobalFilterReport`, `troubleshootTenantNetworkTrendReport`, `troubleshootTenantNetworkAggregatedReport`, `troubleshootTenantConnectionFailureRateTrendReport`, `troubleshootTenantConnectionFailureRateAggregatedReport`, `troubleshootTenantCloudPCHealthTrendReport`, `troubleshootTenantCloudPCHealthAggregatedReport`, `troubleshootTenantActiveConnectionCountTrendReport`, `troubleshootTenantActiveConnectionCountAggregatedReport`, `troubleshootTenantMTTFTrendReport`, `troubleshootTenantMTTFAggregatedReport`, `troubleshootTenantMTTRTrendReport`, `troubleshootTenantMTTRAggregatedReport`, `troubleshootTenantRemoteSignInTimeTrendReport`, `troubleshootTenantRemoteSignInTimeAggregatedReport`, `troubleshootEventsOfViewDataTableReport`, `troubleshootTenantMetricsOfViewDataTableReport`, `troubleshootCloudPCMetricsOfViewDataTableReport`, `troubleshootConfigurationConnectionCountTrendV1Report`, `troubleshootConfigurationTotalConnectionCountBarV1Report`, `troubleshootConfigurationGlobalFilterV1Report`, `troubleshootConnectionConfigurationOfViewDataTableV1Report`, `troubleshootTenantConnectedDevicesOfViewDataTableReport`, `troubleshootCloudPCNetworkTrendReport`, `troubleshootCloudPCNetworkAggregatedReport`, `troubleshootCloudPCErrorTrendReport`, `troubleshootCloudPCErrorAggregatedReport`, `troubleshootCloudPCDurationTrendReport`, `troubleshootCloudPCDurationAggregatedReport`, `troubleshootCloudPCListReport`, `troubleshootCloudPCHealthTrendReport`, `troubleshootMatchedUserReport`, `troubleshootMatchedCloudPCReport`, `troubleshootUserListReport`, `unknownFutureValue`. The default value is `troubleshootTenantGlobalFilterReport`.|
+|reportName|[cloudPCTroubleshootReportType](../resources/cloudpcreports.md#cloudpctroubleshootreporttype-values)|The report name. The possible values are: `troubleshootTenantGlobalFilterReport`, `troubleshootTenantNetworkTrendReport`, `troubleshootTenantNetworkAggregatedReport`, `troubleshootTenantConnectionFailureRateTrendReport`, `troubleshootTenantConnectionFailureRateAggregatedReport`, `troubleshootTenantCloudPCHealthTrendReport`, `troubleshootTenantCloudPCHealthAggregatedReport`, `troubleshootTenantActiveConnectionCountTrendReport`, `troubleshootTenantActiveConnectionCountAggregatedReport`, `troubleshootTenantMTTFTrendReport`, `troubleshootTenantMTTFAggregatedReport`, `troubleshootTenantMTTRTrendReport`, `troubleshootTenantMTTRAggregatedReport`, `troubleshootTenantRemoteSignInTimeTrendReport`, `troubleshootTenantRemoteSignInTimeAggregatedReport`, `troubleshootEventsOfViewDataTableReport`, `troubleshootTenantMetricsOfViewDataTableReport`, `troubleshootCloudPCMetricsOfViewDataTableReport`, `troubleshootConfigurationConnectionCountTrendV1Report`, `troubleshootConfigurationTotalConnectionCountBarV1Report`, `troubleshootConfigurationGlobalFilterV1Report`, `troubleshootConnectionConfigurationOfViewDataTableV1Report`, `troubleshootTenantConnectedDevicesOfViewDataTableReport`, `troubleshootEnvironmentOverviewOfViewDataTableReport`, `troubleshootCloudPCNetworkTrendReport`, `troubleshootCloudPCNetworkAggregatedReport`, `troubleshootCloudPCErrorTrendReport`, `troubleshootCloudPCErrorAggregatedReport`, `troubleshootCloudPCDurationTrendReport`, `troubleshootCloudPCDurationAggregatedReport`, `troubleshootCloudPCListReport`, `troubleshootCloudPCHealthTrendReport`, `troubleshootMatchedUserReport`, `troubleshootMatchedCloudPCReport`, `troubleshootUserListReport`, `unknownFutureValue`. The default value is `troubleshootTenantGlobalFilterReport`.|
 |search|String|The search string. Optional.|
 |select|String collection|OData `$select` syntax. The selected columns of the reports. Optional.|
 |skip|Int32|Number of records to skip. Optional.|
-|top|Int32|The number of top records to return. If not specified, the default limit is 25, with a maximum of 100. Optional.|
+|top|Int32|The number of top records to return. If not specified, the default limit is 25. Optional.|
 
 ## Response
 
@@ -519,6 +509,22 @@ The following table describes the columns in the returned report when you specif
 | MeanTimeToRepairInSecond    | The mean time to repair in seconds.           |
 | RemoteSignInTimeInSecondAvg | The average remote sign-in time in seconds.   |
 
+The following table describes the columns in the returned report when you specify `troubleshootEnvironmentOverviewOfViewDataTableReport` for the **reportName** property in your API call.
+
+| Member                      | Description                                    |
+|:----------------------------|:-----------------------------------------------|
+| TenantId                    | The unique identifier of the tenant.          |
+| DimensionName               | The name of the dimension used for grouping (for example, Region, PolicyName, or ServicePlanType). |
+| DimensionValue              | The raw value of the dimension.               |
+| DimensionValueDisplayName   | The display name of the dimension value.      |
+| HasAnomaly                  | Indicates whether an anomaly was detected for this dimension value. |
+| HasTrendAnomaly             | Indicates whether a trend anomaly was detected for this dimension value. |
+| P50RTT                      | The 50th percentile round trip time in milliseconds. |
+| P95RTT                      | The 95th percentile round trip time in milliseconds. |
+| ConnectionFailureRate       | The rate of connection failures as a percentage. |
+| ActiveConnectionCount       | The count of active connections.              |
+| HealthPercentage            | The health percentage of Cloud PC systems.    |
+
 ## Examples
 
 ### Request
@@ -536,27 +542,18 @@ POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/r
 Content-Type: application/json
 
 {
-  "reportName": "troubleshootDetailsReport",
+  "reportName": "troubleshootTenantActiveConnectionCountTrendReport",
   "select": [
-    "CloudPcId",
-    "ManagedDeviceName",
-    "UserPrincipalName",
-    "UsageInsight",
-    "CurrentSize",
-    "CurrentCPU",
-    "CurrentRamInGB",
-    "CurrentDiskInGB",
-    "RecommendedSize",
-    "RecommendedCPU",
-    "RecommendedRamInGB",
-    "RecommendedDiskInGB",
-    "ProvisionPolicyName",
-    "RoundTripTimeInMsAvg",
-    "AvailableBandwidthInMbpsAvg"
+    "EventDateTime",
+    "TotalActiveConnectionCountAvg",
+    "GroupColumn"
   ],
-  "search": "",
+  "filter": "(TimeRange eq 'Last 7 days') and (PolicyNameParam eq '') and (RegionParam eq '') and (UserSettingNameParam eq '') and (ServicePlanTypeParam eq 'Enterprise') and (ServicePlanNameParam eq '') and (OSBuildVersionParam eq '') and (AADJoinTypeParam eq '') and (ImageNameParam eq '') and (GatewayRegionParam eq '') and (ClientOSParam eq '') and (ClientTypeParam eq '') and (TransportTypeParam eq '') and (CloudPCEndpointCountryRegionParam eq '') and (CloudPCEndpointStateParam eq '') and (CloudPCEndpointCityParam eq '')",
+  "top": 1000,
   "skip": 0,
-  "top": 50
+  "groupby": [
+    "GatewayRegion"
+  ]
 }
 ```
 
@@ -601,86 +598,31 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "TotalRowCount": 1,
+  "TotalRowCount": 840,
   "Schema": [
     {
-      "Column": "CloudPcId",
-      "PropertyType": "String"
+      "Column": "EventDateTime",
+      "PropertyType": "DateTime"
     },
     {
-      "Column": "ManagedDeviceName",
-      "PropertyType": "String"
-    },
-    {
-      "Column": "UserPrincipalName",
-      "PropertyType": "String"
-    },
-    {
-      "Column": "UsageInsight",
-      "PropertyType": "String"
-    },
-    {
-      "Column": "CurrentSize",
-      "PropertyType": "Int"
-    },
-    {
-      "Column": "CurrentCPU",
-      "PropertyType": "Int"
-    },
-    {
-      "Column": "CurrentRamInGB",
-      "PropertyType": "Int"
-    },
-    {
-      "Column": "CurrentDiskInGB",
-      "PropertyType": "Int"
-    },
-    {
-      "Column": "RecommendedSize",
-      "PropertyType": "String"
-    },
-    {
-      "Column": "RecommendedCPU",
-      "PropertyType": "Int"
-    },
-    {
-      "Column": "RecommendedRamInGB",
-      "PropertyType": "Int"
-    },
-    {
-      "Column": "RecommendedDiskInGB",
-      "PropertyType": "Int"
-    },
-    {
-      "Column": "ProvisionPolicyName",
-      "PropertyType": "String"
-    },
-    {
-      "Column": "RoundTripTimeInMsAvg",
+      "Column": "TotalActiveConnectionCountAvg",
       "PropertyType": "Double"
     },
     {
-      "Column": "AvailableBandwidthInMbpsAvg",
-      "PropertyType": "Double"
+      "Column": "GroupColumn",
+      "PropertyType": "String"
     }
   ],
   "Values": [
-    [
-      "f5ff445f-7488-40f8-8ab9-ee784a9c1f33",
-      "Cloud PC-Ana Bowman",
-      "ana@contoso.com",
-      "Performance",
-      "2",
-      "4",
-      "64",
-      "Undersized",
-      "4",
-      "8",
-      "128",
-      "policy1",
-      "200.1",
-      "50.65"
-    ]
+    ["2026-03-25T04:00:00", 0.63, "australiaeast"],
+    ["2026-03-25T04:00:00", 2.88, "japaneast"],
+    ["2026-03-25T04:00:00", 3.63, "japanwest"],
+    ["2026-03-25T04:00:00", 7.88, "southeastasia"],
+    ["2026-03-25T04:00:00", 10.0, "westus2"],
+    ["2026-03-25T08:00:00", 0.75, "israelcentral"],
+    ["2026-03-25T08:00:00", 1.75, "japaneast"],
+    ["2026-03-25T08:00:00", 8.13, "southeastasia"],
+    ...
   ]
 }
 ```
