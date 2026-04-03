@@ -20,7 +20,7 @@ Represents a region group configuration for the Microsoft-hosted network.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|regionGroup|[cloudPcRegionGroup](../resources/enums.md#cloudpcregiongroup-values)|The logical geographic group this region belongs to. The possible values are: `automatic`, `australia`, `canada`, `usCentral`, `usEast`, `usWest`, `france`, `germany`, `europeUnion`, `unitedKingdom`, `japan`, `asia`, `india`, `southAmerica`, `euap`, `usGovernment`, `usGovernmentDOD`, `norway`, `switzerland`, `southKorea`, `middleEast`, `mexico`, `unknownFutureValue`. The default value is `automatic`.|
+|regionGroup|[cloudPcRegionGroup](../resources/cloudpcregiongroup.md)|The logical geographic group this region belongs to. The possible values are: `automatic`, `australia`, `canada`, `usCentral`, `usEast`, `usWest`, `france`, `germany`, `europeUnion`, `unitedKingdom`, `japan`, `asia`, `india`, `southAmerica`, `euap`, `usGovernment`, `usGovernmentDOD`, `norway`, `switzerland`, `southKorea`, `middleEast`, `mexico`, `unknownFutureValue`. The default value is `automatic`.|
 |regions|String collection|The list of region names within the region group. The default value is `automatic`.|
 
 ## Relationships

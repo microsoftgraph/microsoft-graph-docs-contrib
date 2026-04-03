@@ -20,7 +20,7 @@ Represents the Microsoft-hosted network configuration settings for Cloud PC prov
 
 |Property|Type|Description|
 |:---|:---|:---|
-|geographicLocationType|[cloudPcGeographicLocationType](../resources/enums.md#cloudpcgeographiclocationtype-values)|The geographic location type for the network. The possible values are: `asia`, `australasia`, `canada`, `europe`, `india`, `africa`, `usCentral`, `usEast`, `usWest`, `southAmerica`, `middleEast`, `centralAmerica`, `usGovernment`, `mexico`, `unknownFutureValue`.|
+|geographicLocationType|[cloudPcGeographicLocationType](../resources/cloudpcgeographiclocationtype.md)|The geographic location type for the network. The possible values are: `asia`, `australasia`, `canada`, `europe`, `india`, `africa`, `usCentral`, `usEast`, `usWest`, `southAmerica`, `middleEast`, `centralAmerica`, `usGovernment`, `mexico`, `unknownFutureValue`.|
 |regionGroups|[cloudPcRegionGroupConfiguration](../resources/cloudpcregiongroupconfiguration.md) collection|The region group configurations for the network.|
 
 ## Relationships

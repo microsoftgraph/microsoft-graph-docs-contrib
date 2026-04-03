@@ -3917,26 +3917,6 @@ Possible values for user account types (group membership), per Windows definitio
 | cloudPC |
 | other |
 
-### cloudPcGeographicLocationType values
-
-| Member | Description |
-|:---|:---|
-| asia | The geographic location is Asia. |
-| australasia | The geographic location is Australasia. |
-| canada | The geographic location is Canada. |
-| europe | The geographic location is Europe. |
-| india | The geographic location is India. |
-| africa | The geographic location is Africa. |
-| usCentral | The geographic location is US Central. |
-| usEast | The geographic location is US East. |
-| usWest | The geographic location is US West. |
-| southAmerica | The geographic location is South America. |
-| middleEast | The geographic location is Middle East. |
-| centralAmerica | The geographic location is Central America. |
-| usGovernment | The geographic location is US Government. |
-| mexico | The geographic location is Mexico. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
-
 ### postType values
 
 | Member |
@@ -5563,34 +5543,6 @@ Possible values for user account types (group membership), per Windows definitio
 | tot                | 29    | Indicates the time zone is associated with Tonga Time(UTC+13:00).                                             |
 | lint               | 30    | Indicates the time zone is associated with Line Islands Time(UTC+14:00).                                      |
 | unknownFutureValue | 31    | Evolvable enumeration sentinel value. Do not use.                                                             |
-
-### cloudPcRegionGroup values
-
-| Member | Description |
-|:---|:---|
-| automatic | Indicates the region group is automatically selected. |
-| australia | Indicates the region group is Australia. |
-| canada | Indicates the region group is Canada. |
-| usCentral | Indicates the region group is US Central. |
-| usEast | Indicates the region group is US East. |
-| usWest | Indicates the region group is US West. |
-| france | Indicates the region group is France. |
-| germany | Indicates the region group is Germany. |
-| europeUnion | Indicates the region group is European Union. |
-| unitedKingdom | Indicates the region group is United Kingdom. |
-| japan | Indicates the region group is Japan. |
-| asia | Indicates the region group is Asia. |
-| india | Indicates the region group is India. |
-| southAmerica | Indicates the region group is South America. |
-| euap | Indicates the region group is EUAP. |
-| usGovernment | Indicates the region group is US Government. |
-| usGovernmentDOD | Indicates the region group is US Government DOD. |
-| norway | Indicates the region group is Norway. |
-| switzerland | Indicates the region group is Switzerland. |
-| southKorea | Indicates the region group is South Korea. |
-| middleEast | Indicates the region group is Middle East. |
-| mexico | Indicates the region group is Mexico. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
 ### resourceLinkType values
 
