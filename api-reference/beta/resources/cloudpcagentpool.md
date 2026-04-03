@@ -33,18 +33,15 @@ Inherits from [cloudPcPool](../resources/cloudpcpool.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |billingConfiguration|[cloudPcAgentPoolBillingConfiguration](../resources/cloudpcagentpoolbillingconfiguration.md)|The billing configuration for the agent pool.|
-|capabilities|[cloudPcPoolCapabilityConfiguration](../resources/cloudpcpoolcapabilityconfiguration.md)|The capabilities configuration including SSO settings. Inherited from [cloudPcPool](../resources/cloudpcpool.md).|
+|capabilities|[cloudPcPoolCapabilityConfiguration](../resources/cloudpcpoolcapabilityconfiguration.md)|The capabilities configuration for the pool, including single sign-on settings. Inherited from [cloudPcPool](../resources/cloudpcpool.md).|
 |cloudPcConfiguration|[cloudPcConfiguration](../resources/cloudpcconfiguration.md)|The Cloud PC specification including image and OS locale settings. Inherited from [cloudPcPool](../resources/cloudpcpool.md).|
 |createdDateTime|DateTimeOffset|The date and time when the pool was created. For example, midnight UTC on Jan 1, 2026 is `2026-01-01T00:00:00Z`. Read-only. Inherited from [cloudPcPool](../resources/cloudpcpool.md).|
 |description|String|The description of the pool. Maximum length is 512. Inherited from [cloudPcPool](../resources/cloudpcpool.md).|
 |displayName|String|The display name of the pool. The name is unique across Cloud PC Pools in an organization. Maximum length is 60. Inherited from [cloudPcPool](../resources/cloudpcpool.md).|
 |id|String|The unique identifier for the pool. Read-only. Inherited from [entity](../resources/entity.md).|
-|lastModifiedByPrincipalId|String|The principal ID of the user or service that last modified the pool. Read-only. Inherited from [cloudPcPool](../resources/cloudpcpool.md).|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the pool was last modified. For example, midnight UTC on Jan 1, 2026 is `2026-01-01T00:00:00Z`. Read-only. Inherited from [cloudPcPool](../resources/cloudpcpool.md).|
-|managedByService|[cloudPcManagementServiceType](../resources/enums.md#cloudpcmanagementservicetype-values)|The identifier of Windows 365 or partner that manages the pool. The possible values are: `windows365`, `microsoft365BizChat`, `unknownFutureValue`. Read-only. Inherited from [cloudPcPool](../resources/cloudpcpool.md).|
 |networkConfiguration|[cloudPcNetworkConfiguration](../resources/cloudpcnetworkconfiguration.md)|The network configuration for the pool. Inherited from [cloudPcPool](../resources/cloudpcpool.md).|
-|poolStatus|[cloudPcPoolStatus](../resources/enums.md#cloudpcpoolstatus-values)|The current status of the pool. The possible values are: `created`, `provisioning`, `active`, `failed`, `deleting`, `provisioningPaused`, `unknownFutureValue`. The default value is `created`. Read-only. Inherited from [cloudPcPool](../resources/cloudpcpool.md).|
-|poolUrl|String|The URL of the agent pool to check out/in. It's ready when the pool is provisioned. Read-only.|
+|poolUrl|String|The endpoint URL used to check out and check in agent sessions. This value becomes available after the pool reaches the active status. Read-only.|
 |scalingPolicy|[cloudPcAgentPoolScalingPolicy](../resources/cloudpcagentpoolscalingpolicy.md)|The scaling policy defining minimum and maximum counts.|
 |sessionUsage|[cloudPcAgentPoolSessionUsage](../resources/cloudpcagentpoolsessionusage.md)|The current session usage of the agent pool. Read-only.|
 
@@ -79,13 +76,10 @@ The following JSON representation shows the resource type.
   "description": "String",
   "displayName": "String",
   "id": "String (identifier)",
-  "lastModifiedByPrincipalId": "String",
   "lastModifiedDateTime": "String (timestamp)",
-  "managedByService": "String",
   "networkConfiguration": {
     "@odata.type": "microsoft.graph.cloudPcNetworkConfiguration"
   },
-  "poolStatus": "String",
   "poolUrl": "String",
   "scalingPolicy": {
     "@odata.type": "microsoft.graph.cloudPcAgentPoolScalingPolicy"

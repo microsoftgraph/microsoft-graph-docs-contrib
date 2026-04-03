@@ -34,24 +34,21 @@ This is an abstract type. Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|capabilities|[cloudPcPoolCapabilityConfiguration](../resources/cloudpcpoolcapabilityconfiguration.md)|The capabilities configuration including SSO settings.|
+|capabilities|[cloudPcPoolCapabilityConfiguration](../resources/cloudpcpoolcapabilityconfiguration.md)|The capabilities configuration for the pool, including single sign-on settings.|
 |cloudPcConfiguration|[cloudPcConfiguration](../resources/cloudpcconfiguration.md)|The Cloud PC specification including image and OS locale settings.|
 |createdDateTime|DateTimeOffset|The date and time when the pool was created. For example, midnight UTC on Jan 1, 2026 is `2026-01-01T00:00:00Z`. Read-only.|
 |description|String|The description of the pool. Maximum length is 512.|
 |displayName|String|The display name of the pool. The name is unique across Cloud PC Pools in an organization. Maximum length is 60.|
 |id|String|The unique identifier for the pool. Read-only. Inherited from [entity](../resources/entity.md).|
-|lastModifiedByPrincipalId|String|The principal ID of the user or service that last modified the pool. Read-only.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the pool was last modified. For example, midnight UTC on Jan 1, 2026 is `2026-01-01T00:00:00Z`. Read-only.|
-|managedByService|[cloudPcManagementServiceType](../resources/enums.md#cloudpcmanagementservicetype-values)|The identifier of Windows 365 or partner that manages the pool. The possible values are: `windows365`, `microsoft365BizChat`, `unknownFutureValue`. Read-only.|
 |networkConfiguration|[cloudPcNetworkConfiguration](../resources/cloudpcnetworkconfiguration.md)|The network configuration for the pool.|
-|poolStatus|[cloudPcPoolStatus](../resources/enums.md#cloudpcpoolstatus-values)|The current status of the pool. The possible values are: `created`, `provisioning`, `active`, `failed`, `deleting`, `provisioningPaused`, `unknownFutureValue`. The default value is `created`. Read-only.|
 
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|assignments|[cloudPcPoolAssignment](../resources/cloudpcpoolassignment.md) collection|The assignments that grant identities access to the pool.|
+|assignments|[cloudPcPoolAssignment](../resources/cloudpcpoolassignment.md) collection|The collection of assignments that grant user or service principal identities access to this pool.|
 
 ## JSON representation
 
@@ -77,12 +74,9 @@ The following JSON representation shows the resource type.
   "description": "String",
   "displayName": "String",
   "id": "String (identifier)",
-  "lastModifiedByPrincipalId": "String",
   "lastModifiedDateTime": "String (timestamp)",
-  "managedByService": "String",
   "networkConfiguration": {
     "@odata.type": "microsoft.graph.cloudPcNetworkConfiguration"
-  },
-  "poolStatus": "String"
+  }
 }
 ```

@@ -5375,14 +5375,6 @@ Possible values for user account types (group membership), per Windows definitio
 | unknownFutureValue             |
 | regionalInaccessibleCloudPcTrendReport |
 
-### cloudPcManagementServiceType values
-
-| Member | Description |
-|:---|:---|
-| windows365 | Indicates the pool is managed by Windows 365. |
-| microsoft365BizChat | Indicates the pool is managed by Microsoft 365 BizChat. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
-
 ### nonAdminSetting values
 
 |Member|
@@ -5571,18 +5563,6 @@ Possible values for user account types (group membership), per Windows definitio
 | tot                | 29    | Indicates the time zone is associated with Tonga Time(UTC+13:00).                                             |
 | lint               | 30    | Indicates the time zone is associated with Line Islands Time(UTC+14:00).                                      |
 | unknownFutureValue | 31    | Evolvable enumeration sentinel value. Do not use.                                                             |
-
-### cloudPcPoolStatus values
-
-| Member | Description |
-|:---|:---|
-| created | Indicates the pool has been created. |
-| provisioning | Indicates the pool is currently being provisioned. |
-| active | Indicates the pool is active and ready for use. |
-| deleting | Indicates the pool is being deleted. |
-| failed | Indicates the pool provisioning has failed and cannot recover. |
-| provisioningPaused | Indicates the pool provisioning is paused due to customer error. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
 ### cloudPcRegionGroup values
 

@@ -52,7 +52,7 @@ The following table lists the properties that are required when you create a [cl
 |Property|Type|Description|
 |:---|:---|:---|
 |billingConfiguration|[cloudPcAgentPoolBillingConfiguration](../resources/cloudpcagentpoolbillingconfiguration.md)|Required. The billing configuration for the agent pool, including billing type and billing plan identifier. Applies to the [cloudPcAgentPool](../resources/cloudpcagentpool.md) derived type.|
-|capabilities|[cloudPcPoolCapabilityConfiguration](../resources/cloudpcpoolcapabilityconfiguration.md)|Required. The capabilities configuration including SSO settings.|
+|capabilities|[cloudPcPoolCapabilityConfiguration](../resources/cloudpcpoolcapabilityconfiguration.md)|Required. The capabilities configuration for the pool, including single sign-on settings.|
 |cloudPcConfiguration|[cloudPcConfiguration](../resources/cloudpcconfiguration.md)|Required. The Cloud PC specification including image and OS locale settings for provisioning.|
 |description|String|Optional. The description of the pool. Maximum length is 512.|
 |displayName|String|Required. The display name of the pool. The name is unique across Cloud PC pools in an organization. Maximum length is 60.|

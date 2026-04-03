@@ -122,10 +122,7 @@ Content-Type: application/json
     "activeSessionsCount": 3,
     "availableSessionsCount": 5
   },
-  "poolStatus": "active",
   "poolUrl": "https://westus2.sessionmanagement.regional.cloudinferenceplatform.azure.com/sessions",
-  "managedByService": "windows365",
-  "lastModifiedByPrincipalId": "5ccb8d35-dd04-473e-a287-69bb4473208b",
   "createdDateTime": "2026-01-15T10:00:00Z",
   "lastModifiedDateTime": "2026-01-20T14:30:00Z"
 }

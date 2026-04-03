@@ -20,7 +20,7 @@ Represents the capabilities configuration for a Cloud PC agent pool. Inherits fr
 
 |Property|Type|Description|
 |:---|:---|:---|
-|enableSingleSignOn|Boolean|When `true`, the provisioned Cloud PC can be accessed by single sign-on. When `false`, the provisioned Cloud PC doesn't support this feature. The default value is `false`.|
+|enableSingleSignOn|Boolean|When `true`, provisioned Cloud PCs support single sign-on, allowing users to authenticate with password-less options (such as FIDO2 keys) via Microsoft Entra ID. Default value is `false`.|
 
 ## Relationships
 
