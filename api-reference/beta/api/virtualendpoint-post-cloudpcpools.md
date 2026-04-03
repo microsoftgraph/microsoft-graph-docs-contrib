@@ -56,7 +56,7 @@ The following table lists the properties that are required when you create a [cl
 |cloudPcConfiguration|[cloudPcConfiguration](../resources/cloudpcconfiguration.md)|Required. The Cloud PC specification including image and OS locale settings for provisioning.|
 |description|String|Optional. The description of the pool. Maximum length is 512.|
 |displayName|String|Required. The display name of the pool. The name is unique across Cloud PC pools in an organization. Maximum length is 60.|
-|networkConfiguration|[cloudPcNetworkConfiguration](../resources/cloudpcnetworkconfiguration.md)|Required. The network configuration for the pool.|
+|networkConfiguration|[cloudPcNetworkConfiguration](../resources/cloudpcnetworkconfiguration.md)|Required. The network configuration for the pool. Supported derived types: [cloudPcMicrosoftHostedNetworkConfiguration](../resources/cloudpcmicrosofthostednetworkconfiguration.md).|
 |scalingPolicy|[cloudPcAgentPoolScalingPolicy](../resources/cloudpcagentpoolscalingpolicy.md)|Required. The scaling policy defining minimum and maximum Cloud PC counts for the pool. Applies to the [cloudPcAgentPool](../resources/cloudpcagentpool.md) derived type.|
 
 ## Response
