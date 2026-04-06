@@ -43,7 +43,7 @@ POST /deviceManagement/virtualEndpoint/cloudPcPools/{cloudPcPool-id}/assignments
 
 ## Request body
 
-In the request body, supply a JSON representation of a [cloudPcPoolAssignment](../resources/cloudpcpoolassignment.md) object. Use `#microsoft.graph.cloudPcAgentPoolUserAssignment` as the `@odata.type`.
+In the request body, supply a JSON representation of a [cloudPcPoolAssignment](../resources/cloudpcpoolassignment.md) object. Use `#microsoft.graph.cloudPcAgentPoolUserAssignment` as the **@odata.type**.
 
 The following table lists the properties that are required when you create a [cloudPcPoolAssignment](../resources/cloudpcpoolassignment.md).
 

@@ -24,14 +24,14 @@ Inherits from [cloudPcPoolAssignment](../resources/cloudpcpoolassignment.md).
 |:---|:---|:---|
 |[List](../api/cloudpcpool-list-assignments.md)|[cloudPcPoolAssignment](../resources/cloudpcpoolassignment.md) collection|List the assignments of a [cloudPcPool](../resources/cloudpcpool.md).|
 |[Get](../api/cloudpcpoolassignment-get.md)|[cloudPcPoolAssignment](../resources/cloudpcpoolassignment.md)|Read the properties of a [cloudPcPoolAssignment](../resources/cloudpcpoolassignment.md) object.|
-|[Create](../api/cloudpcpool-post-assignments.md)|[cloudPcPoolAssignment](../resources/cloudpcpoolassignment.md)|Create a new [cloudPcPoolAssignment](../resources/cloudpcpoolassignment.md) object.|
+|[Create](../api/cloudpcpool-post-assignments.md)|[cloudPcPoolAssignment](../resources/cloudpcpoolassignment.md)|Create a new [cloudPcPoolAssignment](../resources/cloudpcpoolassignment.md) for a [cloudPcPool](../resources/cloudpcpool.md).|
 |[Delete](../api/cloudpcpoolassignment-delete.md)|None|Delete a [cloudPcPoolAssignment](../resources/cloudpcpoolassignment.md) object.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier for the assignment. Read-only. Inherited from [entity](../resources/entity.md).|
+|id|String|The unique identifier for the assignment. Read-only. Inherited from [cloudPcPoolAssignment](../resources/cloudpcpoolassignment.md).|
 |userPrincipalId|String|The unique identifier of the user principal.|
 
 ## Relationships

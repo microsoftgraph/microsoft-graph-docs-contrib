@@ -51,9 +51,9 @@ The following table lists the properties that can be updated for a [cloudPcPool]
 |:---|:---|:---|
 |billingConfiguration|[cloudPcAgentPoolBillingConfiguration](../resources/cloudpcagentpoolbillingconfiguration.md)|The billing configuration for the agent pool, including billing type and billing plan identifier.|
 |capabilities|[cloudPcPoolCapabilityConfiguration](../resources/cloudpcpoolcapabilityconfiguration.md)|The capabilities configuration for the pool, including single sign-on settings.|
-|cloudPcConfiguration|[cloudPcConfiguration](../resources/cloudpcconfiguration.md)|The Cloud PC specification including image and OS locale settings for provisioning.|
-|description|String|The description of the pool. Maximum length is 512.|
-|displayName|String|The display name of the pool. The name is unique across Cloud PC pools in an organization. Maximum length is 60.|
+|cloudPcConfiguration|[cloudPcConfiguration](../resources/cloudpcconfiguration.md)|The Cloud PC specification, including image and operating system locale settings for provisioning.|
+|description|String|The description of the pool. The maximum length is 512 characters.|
+|displayName|String|The display name of the pool. The name is unique across Cloud PC pools in an organization. The maximum length is 60 characters.|
 |scalingPolicy|[cloudPcAgentPoolScalingPolicy](../resources/cloudpcagentpoolscalingpolicy.md)|The scaling policy defining minimum and maximum Cloud PC counts for the pool.|
 
 ## Response

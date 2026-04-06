@@ -20,8 +20,8 @@ Represents the scaling policy for a Cloud PC agent pool.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|maximumCount|Int32|The maximum number of Cloud PCs in the pool. Valid values are 1 to 900, and must be greater than or equal to **minimumCount**.|
-|minimumCount|Int32|The minimum number of Cloud PCs in the pool. Valid values are 0 to 900, and must be less than or equal to **maximumCount**.|
+|maximumCount|Int32|The maximum number of Cloud PCs in the pool. The valid values are `1` to `900`, and must be greater than or equal to **minimumCount**.|
+|minimumCount|Int32|The minimum number of Cloud PCs in the pool. The valid values are `0` to `900`, and must be less than or equal to **maximumCount**.|
 
 ## Relationships
 
@@ -38,7 +38,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcAgentPoolScalingPolicy",
-  "maximumCount": 10,
-  "minimumCount": 2
+  "maximumCount": "Int32",
+  "minimumCount": "Int32"
 }
 ```

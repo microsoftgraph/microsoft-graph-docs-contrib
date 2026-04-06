@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the capabilities configuration for a Cloud PC agent pool. Inherits from [cloudPcPoolCapabilityConfiguration](../resources/cloudpcpoolcapabilityconfiguration.md).
+Represents the capabilities configuration for a Cloud PC agent pool. 
+
+Inherits from [cloudPcPoolCapabilityConfiguration](../resources/cloudpcpoolcapabilityconfiguration.md).
 
 ## Properties
 

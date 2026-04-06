@@ -1,6 +1,6 @@
 ---
 title: "List cloudPcPools for user"
-description: "List the cloudPcPool objects that the signed-in user has access to."
+description: "List the cloudPcPool objects that the signed-in user can access."
 author: "yityu"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the [cloudPcPool](../resources/cloudpcpool.md) objects that the signed-in user has access to.
+List the [cloudPcPool](../resources/cloudpcpool.md) objects that the signed-in user can access.
 
 ## Permissions
 
