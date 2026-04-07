@@ -37,6 +37,8 @@ For example, you can get messages in the Outlook **Sent Items** folder of the si
 GET /me/mailFolders('SentItems')/messages?$select=sender,subject
 ```
 
+If a message is updated while it is opened in an Outlook client, the app will not update the view of that message. Users will have to reopen the message to see the update. 
+
 ## Common use cases
 
 The **message** resource exposes properties such as **categories**, **conversationId**, **flag**, and **importance** that correspond to features
