@@ -74,8 +74,8 @@ The [agentUser](../resources/agentuser.md) resource inherits from this resource.
 |[List Cloud PCs](../api/user-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List the [cloudPC](../resources/cloudpc.md) devices that are attributed to the signed-in user.|
 |[Get launch info](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md)|Get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for the signed-in user.|
 | **Cloud PC pool**|||
-|[List Cloud PC pools](../api/user-list-cloudpcpools.md)|[cloudPcPool](../resources/cloudpcpool.md) collection|List the [cloudPcPool](../resources/cloudpcpool.md) objects that are attributed to the signed-in user.|
-|[Get Cloud PC pool](../api/user-get-cloudpcpool.md)|[cloudPcPool](../resources/cloudpcpool.md)|Get the [cloudPcPool](../resources/cloudpcpool.md) that is attributed to the signed-in user.|
+|[List Cloud PC pools](../api/user-list-cloudpcpools.md)|[cloudPcPool](../resources/cloudpcpool.md) collection|List the [cloudPcPool](../resources/cloudpcpool.md) objects that the signed-in user can access.|
+|[Get Cloud PC pool](../api/user-get-cloudpcpool.md)|[cloudPcPool](../resources/cloudpcpool.md)|Read the properties and relationships of a [cloudPcPool](../resources/cloudpcpool.md) object that the signed-in user can access.|
 | **Data security and governance** | | |
 |[Compute protection scopes](../api/userprotectionscopecontainer-compute.md)|[policyUserScope](../resources/policyuserscope.md) collection|Compute the protection scopes for the signed-in user. |
 |[Create content activity](../api/activitiescontainer-post-contentactivities.md)|[contentActivity](../resources/contentactivity.md)|Create a content activity for the signed-in user. |

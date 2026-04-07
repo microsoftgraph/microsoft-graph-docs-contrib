@@ -46,10 +46,10 @@ Inherits from [entity](../resources/entity.md).
 |[Retrieve tenant encryption setting](../api/virtualendpoint-retrievetenantencryptionsetting.md)|[cloudPcTenantEncryptionSetting](../resources/cloudpctenantencryptionsetting.md)|Retrieve the [cloudPcTenantEncryptionSetting](../resources/cloudpctenantencryptionsetting.md) associated with the current authenticated user.|
 |[List cloud apps](../api/virtualendpoint-list-cloudapps.md)|[cloudPcCloudApp](../resources/cloudpccloudapp.md) collection|List all the [cloudPcCloudApp](../resources/cloudpccloudapp.md) objects filtered by a provision policy ID.|
 |[List managed licenses](../api/virtualendpoint-list-managedlicenses.md)|[cloudPcManagedLicense](../resources/cloudpcmanagedlicense.md) collection|Get information about [cloudPcManagedLicense](../resources/cloudpcmanagedlicense.md) objects that the Cloud PC service manages directly.|
-|[List external partner settings (deprecated)](../api/virtualendpoint-list-externalpartnersettings.md)|[cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) collection|Get a list of the [cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) objects and their properties.|
-|[Create external partner setting (deprecated)](../api/virtualendpoint-post-externalpartnersettings.md)|[cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md)|Create a new [cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) object.|
 |[List Cloud PC pools](../api/virtualendpoint-list-cloudpcpools.md)|[cloudPcPool](../resources/cloudpcpool.md) collection|List the properties and relationships of the [cloudPcPool](../resources/cloudpcpool.md) objects.|
 |[Create Cloud PC pool](../api/virtualendpoint-post-cloudpcpools.md)|[cloudPcPool](../resources/cloudpcpool.md)|Create a new [cloudPcPool](../resources/cloudpcpool.md) object.|
+|[List external partner settings (deprecated)](../api/virtualendpoint-list-externalpartnersettings.md)|[cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) collection|Get a list of the [cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) objects and their properties.|
+|[Create external partner setting (deprecated)](../api/virtualendpoint-post-externalpartnersettings.md)|[cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md)|Create a new [cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) object.|
 
 ## Properties
 

@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the Microsoft-hosted network configuration settings for Cloud PC provisioning. Inherits from [cloudPcNetworkConfiguration](../resources/cloudpcnetworkconfiguration.md).
+Represents the Microsoft-hosted network configuration settings for Cloud PC provisioning.
+
+Inherits from [cloudPcNetworkConfiguration](../resources/cloudpcnetworkconfiguration.md).
 
 ## Properties
 
