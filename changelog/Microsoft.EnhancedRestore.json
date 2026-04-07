@@ -2266,6 +2266,14 @@
         },
         {
           "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
+          "ApiChange": "Member",
+          "ChangedApiName": "fullServiceBackup",
+          "ChangeType": "Addition",
+          "Description": "Added the `fullServiceBackup` member to the **backupPolicyProtectionMode** enumeration.",
+          "Target": "backupPolicyProtectionMode"
+        },
+        {
+          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
           "ApiChange": "Enumeration",
           "ChangedApiName": "fullServiceBackupDisableMode",
           "ChangeType": "Deletion",
