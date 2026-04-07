@@ -72,7 +72,6 @@ DELETE https://graph.microsoft.com/beta/directory/tenantGovernance/governanceInv
 
 ---
 
-
 ### Response
 
 The following example shows the response.

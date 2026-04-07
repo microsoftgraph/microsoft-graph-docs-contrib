@@ -2,7 +2,7 @@
 title: "changeNotificationCollection resource type"
 description: "Represents a collection of subscription notifications sent to the subscriber."
 ms.localizationpriority: medium
-author: "keylimesoda"
+author: "jessieli-ad"
 doc_type: resourcePageType
 ms.subservice: change-notifications
 ms.date: 07/22/2024

@@ -76,7 +76,6 @@ GET https://graph.microsoft.com/v1.0/admin/configurationManagement/configuration
 
 ---
 
-
 ### Response
 
 The following example shows the response.

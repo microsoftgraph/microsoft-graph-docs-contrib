@@ -79,7 +79,6 @@ GET https://graph.microsoft.com/beta/directory/tenantGovernance/governancePolicy
 
 ---
 
-
 #### Response
 
 The following example shows the response.
@@ -162,7 +161,6 @@ GET https://graph.microsoft.com/beta/directory/tenantGovernance/governancePolicy
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 
