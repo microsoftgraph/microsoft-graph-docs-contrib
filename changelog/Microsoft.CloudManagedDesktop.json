@@ -116,38 +116,6 @@
         },
         {
           "Id": "497fa859-169a-47f4-b46b-85e0d74975b8",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "cloudPcGeographicLocationType",
-          "ChangeType": "Addition",
-          "Description": "Added the **cloudPcGeographicLocationType** enumeration type.",
-          "Target": "cloudPcGeographicLocationType"
-        },
-        {
-          "Id": "497fa859-169a-47f4-b46b-85e0d74975b8",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "cloudPcManagementServiceType",
-          "ChangeType": "Addition",
-          "Description": "Added the **cloudPcManagementServiceType** enumeration type.",
-          "Target": "cloudPcManagementServiceType"
-        },
-        {
-          "Id": "497fa859-169a-47f4-b46b-85e0d74975b8",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "cloudPcPoolStatus",
-          "ChangeType": "Addition",
-          "Description": "Added the **cloudPcPoolStatus** enumeration type.",
-          "Target": "cloudPcPoolStatus"
-        },
-        {
-          "Id": "497fa859-169a-47f4-b46b-85e0d74975b8",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "cloudPcRegionGroup",
-          "ChangeType": "Addition",
-          "Description": "Added the **cloudPcRegionGroup** enumeration type.",
-          "Target": "cloudPcRegionGroup"
-        },
-        {
-          "Id": "497fa859-169a-47f4-b46b-85e0d74975b8",
           "ApiChange": "Relationship",
           "ChangedApiName": "cloudPcPools",
           "ChangeType": "Addition",
