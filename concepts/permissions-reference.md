@@ -684,7 +684,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 1bfefb4e-e0b5-418b-a88f-73c46d2cc8e9 | bdfbf15f-ee85-4955-8675-146e8e5296b5 |
 | DisplayText | Read and write all applications | Read and write all applications |
-| Description | Allows the app to create, read, update and delete applications and service principals without a signed-in user.  Does not allow management of consent grants. | Allows the app to create, read, update and delete applications and service principals on behalf of the signed-in user. Does not allow management of consent grants. |
+| Description | Allows the app to create, read, update and delete applications and service principals without a signed-in user.  Allows management of app-only consent grants (app roles), except those exposed by Microsoft Graph. | Allows the app to create, read, update and delete applications and service principals on behalf of the signed-in user. Allows management of app-only consent grants (app roles), except those exposed by Microsoft Graph. |
 | AdminConsentRequired | Yes | Yes |
 
 ![personal Microsoft accounts][MSA] The *Application.ReadWrite.All* delegated permission is available for consent in personal Microsoft accounts.
