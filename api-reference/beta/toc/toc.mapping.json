@@ -3599,6 +3599,7 @@
             "chatMessage",
             "pinnedChatMessageInfo",
             "deletedChat",
+            "targetedChatMessage",
             "team",
             "teamworkTag",
             "teamworkTagMember"

@@ -3,6 +3,56 @@
     {
       "ChangeList": [
         {
+          "Id": "4e6379bf-f90c-46c4-a4f8-f5336fcd31f6",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "targetedMessages",
+          "ChangeType": "Addition",
+          "Description": "Added the **targetedMessages** relationship to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "4e6379bf-f90c-46c4-a4f8-f5336fcd31f6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "targetedChatMessage",
+          "ChangeType": "Addition",
+          "Description": "Added the [targetedChatMessage](https://learn.microsoft.com/en-us/graph/api/resources/targetedChatMessage?view=graph-rest-beta) resource and an associated method.",
+          "Target": "targetedChatMessage"
+        },
+        {
+          "Id": "4e6379bf-f90c-46c4-a4f8-f5336fcd31f6",
+          "ApiChange": "Method",
+          "ChangedApiName": "deleteTargetedMessage",
+          "ChangeType": "Addition",
+          "Description": "Added the [deleteTargetedMessage](https://learn.microsoft.com/en-us/graph/api/userTeamwork-deleteTargetedMessage?view=graph-rest-beta) method to the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userTeamwork?view=graph-rest-beta) resource.",
+          "Target": "userTeamwork"
+        },
+        {
+          "Id": "4e6379bf-f90c-46c4-a4f8-f5336fcd31f6",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllRetainedTargetedMessages",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllRetainedTargetedMessages](https://learn.microsoft.com/en-us/graph/api/userTeamwork-getAllRetainedTargetedMessages?view=graph-rest-beta) method to the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userTeamwork?view=graph-rest-beta) resource.",
+          "Target": "userTeamwork"
+        },
+        {
+          "Id": "4e6379bf-f90c-46c4-a4f8-f5336fcd31f6",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllTargetedMessages",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllTargetedMessages](https://learn.microsoft.com/en-us/graph/api/userTeamwork-getAllTargetedMessages?view=graph-rest-beta) method to the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userTeamwork?view=graph-rest-beta) resource.",
+          "Target": "userTeamwork"
+        }
+      ],
+      "Id": "4e6379bf-f90c-46c4-a4f8-f5336fcd31f6",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-04-03T09:27:32.1402903Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "4fbecd5b-cada-4fc2-9c1d-20e4f47a980b",
           "ApiChange": "Method",
           "ChangedApiName": "getAllRecordings",
@@ -157,7 +207,7 @@
       "CreatedDateTime": "2026-04-01T19:30:25.6008288Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Messaging"
-    },    
+    },
     {
       "ChangeList": [
         {

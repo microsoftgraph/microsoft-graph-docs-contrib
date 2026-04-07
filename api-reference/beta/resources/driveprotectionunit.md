@@ -23,11 +23,13 @@ Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/backuprestoreroot-list-driveprotectionunits.md)|[driveProtectionUnit](../resources/driveprotectionunit.md) collection|Get a list of the [driveProtectionUnit](../resources/driveprotectionunit.md) objects and their properties.|
+|[Update](../api/driveprotectionunit-update.md)|[driveProtectionUnit](../resources/driveprotectionunit.md)|Update the properties of a [driveProtectionUnit](../resources/driveprotectionunit.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |backupRetentionPeriodInDays|Int32|The retention period of the backup, in days. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
+|billingPolicyId|String|The unique identifier of the billing policy assigned to the protection unit for cost allocation. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |createdDateTime|DateTimeOffset|The time of creation of the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |directoryObjectId|String|ID of the directory object.|
@@ -59,6 +61,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.driveProtectionUnit",
   "backupRetentionPeriodInDays": "Int32",
+  "billingPolicyId": "String",
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "directoryObjectId": "String",
