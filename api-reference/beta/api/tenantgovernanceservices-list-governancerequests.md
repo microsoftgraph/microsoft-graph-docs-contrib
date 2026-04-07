@@ -76,7 +76,6 @@ GET https://graph.microsoft.com/beta/directory/tenantGovernance/governanceReques
 
 ---
 
-
 ### Response
 
 The following example shows the response.

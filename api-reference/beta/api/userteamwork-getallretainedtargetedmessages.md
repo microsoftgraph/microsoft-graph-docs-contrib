@@ -77,6 +77,7 @@ The response includes the **@odata.nextLink** property for pagination, when appl
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "userteamwork_getallretainedtargetedmessages",
@@ -86,6 +87,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/users/f47b5f54-6968-4706-a522-31e842b12345/teamwork/getAllRetainedTargetedMessages
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/userteamwork-getallretainedtargetedmessages-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

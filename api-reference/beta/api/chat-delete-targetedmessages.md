@@ -61,6 +61,7 @@ If successful, this method returns a `204 No Content` response code.
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_targetedchatmessage",
@@ -70,6 +71,12 @@ The following example shows a request.
 ``` http
 DELETE https://graph.microsoft.com/beta/users/f47b5f54-6968-4706-a522-31e842b12345/chats/19:eeaa4e946d674c4f8d4dded613780f45@thread.v2/targetedMessages/1580849738240
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-targetedchatmessage-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

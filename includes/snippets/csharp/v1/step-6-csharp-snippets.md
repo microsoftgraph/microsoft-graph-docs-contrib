@@ -13,7 +13,7 @@ var requestBody = new Subscription
 {
 	ChangeType = "created,updated,deleted",
 	NotificationUrl = "https://webhook.azurewebsites.net/api/send/myNotifyClient",
-	Resource = "/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/chats/getAllMessages?model=B",
+	Resource = "/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/chats/getAllMessages",
 	ExpirationDateTime = DateTimeOffset.Parse("2023-01-10T18:56:49.112603+00:00"),
 	ClientState = "ClientSecret",
 	IncludeResourceData = true,

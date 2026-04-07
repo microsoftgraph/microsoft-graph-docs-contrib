@@ -2,7 +2,7 @@
 title: "entity resource type"
 description: "Represents an entity."
 ms.localizationpriority: medium
-author: "keylimesoda"
+author: "FaithOmbongi"
 ms.subservice: "entra-applications"
 doc_type: resourcePageType
 ms.date: 04/03/2024
