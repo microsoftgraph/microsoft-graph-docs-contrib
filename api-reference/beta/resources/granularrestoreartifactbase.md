@@ -25,6 +25,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |browseSessionId|String|The unique identifier of the [browseSession](../resources/browsesessionbase.md)|
 |completionDateTime|DateTimeOffset|Date time when the artifact's restoration completes.|
+|destinationType|[destinationType](../resources/driverestoreartifact.md#destinationtype-values)|The restoration destination. The possible values are: `new`, `inPlace`, `unknownFutureValue`.|
 |id|String|The unique identifier for the artifact. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
 |restoredItemKey|String|The unique identifier for the restored artifact.|
 |restoredItemPath|String|The path of the restored artifact. It's the path of the folder where all the artifacts are restored within a granular restore session.|
@@ -59,7 +60,8 @@ The following JSON representation shows the resource type.
   "restoredItemWebUrl": "String",
   "restorePointDateTime": "String (timestamp)",
   "startDateTime": "String (timestamp)",
-  "completionDateTime": "String (timestamp)"
+  "completionDateTime": "String (timestamp)",
+  "destinationType": "String"
 }
 ```
 
