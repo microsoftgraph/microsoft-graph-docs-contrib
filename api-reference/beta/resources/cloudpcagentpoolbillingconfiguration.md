@@ -21,7 +21,14 @@ Represents the billing configuration for a Cloud PC agent pool.
 |Property|Type|Description|
 |:---|:---|:---|
 |billingPlanId|String|The identifier of the billing plan.|
-|billingType|[cloudPcAgentPoolBillingType](../resources/enums.md#cloudpcagentpoolbillingtype-values)|The type of billing for the agent pool. The possible values are: `payAsYouGo`, `unknownFutureValue`. The default value is `payAsYouGo`.|
+|billingType|[cloudPcAgentPoolBillingType](#cloudpcagentpoolbillingtype-values)|The type of billing for the agent pool. The default value is `payAsYouGo`.|
+
+### cloudPcAgentPoolBillingType values
+
+| Member | Description |
+|:---|:---|
+| payAsYouGo | Indicates billing type is associated with Pay as you go model. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
 
 ## Relationships
 

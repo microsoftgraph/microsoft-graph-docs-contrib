@@ -3875,13 +3875,6 @@ Possible values for user account types (group membership), per Windows definitio
 | principal |
 | unknownFutureValue |
 
-### cloudPcAgentPoolBillingType values
-
-| Member | Description |
-|:---|:---|
-| payAsYouGo | Indicates billing type is associated with Pay as you go model. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
-
 ### cloudPcAuditActivityOperationType values
 
 | Member |
