@@ -27,8 +27,8 @@ Represents the billing configuration for a Cloud PC agent pool.
 
 | Member | Description |
 |:---|:---|
-| payAsYouGo | Indicates billing type is associated with Pay as you go model. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
+| payAsYouGo | Indicates billing type is associated with pay-as-you-go model. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 
