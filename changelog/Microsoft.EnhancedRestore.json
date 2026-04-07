@@ -2437,6 +2437,24 @@
       "CreatedDateTime": "2026-03-13T08:23:53.2634353Z",
       "WorkloadArea": "EnhancedRestore",
       "SubArea": "Backup and Restore"
+    },
+    {
+      "ChangeList": [
+          {
+            "Id": "0e09184b-05cc-4833-9306-1d6c82c33826",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "backupPolicyProtectionMode",
+            "ChangeType": "Addition",
+            "Description": "Added the **backupPolicyProtectionMode** enumeration type.",
+            "Target": "backupPolicyProtectionMode"
+          }
+        ],
+         "Id": "0e09184b-05cc-4833-9306-1d6c82c33826",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2025-10-28T09:04:09.9482742Z",
+        "WorkloadArea": "Backup restore",
+        "SubArea": ""
     }
   ]
 }
