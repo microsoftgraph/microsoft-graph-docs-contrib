@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "64db359a-9279-46f0-8afe-b37bb1f7ea3c",
+          "ApiChange": "Property",
+          "ChangedApiName": "blueprintId",
+          "ChangeType": "Addition",
+          "Description": "Added the **blueprintId** property to the [agentRiskDetection](https://learn.microsoft.com/en-us/graph/api/resources/agentriskdetection?view=graph-rest-beta) resource.",
+          "Target": "agentRiskDetection"
+        },
+        {
+          "Id": "64db359a-9279-46f0-8afe-b37bb1f7ea3c",
+          "ApiChange": "Property",
+          "ChangedApiName": "source",
+          "ChangeType": "Addition",
+          "Description": "Added the **source** property to the [agentRiskDetection](https://learn.microsoft.com/en-us/graph/api/resources/agentriskdetection?view=graph-rest-beta) resource.",
+          "Target": "agentRiskDetection"
+        },
+        {
+          "Id": "64db359a-9279-46f0-8afe-b37bb1f7ea3c",
+          "ApiChange": "Property",
+          "ChangedApiName": "blueprintId",
+          "ChangeType": "Addition",
+          "Description": "Added the **blueprintId** property to the [riskyAgent](https://learn.microsoft.com/en-us/graph/api/resources/riskyagent?view=graph-rest-beta) resource.",
+          "Target": "riskyAgent"
+        }
+      ],
+      "Id": "64db359a-9279-46f0-8afe-b37bb1f7ea3c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-03-18T23:32:20.7694567Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "79e9c6ef-2398-41a6-a75a-d7a271f6e271",
           "ApiChange": "Enumeration",
           "ChangedApiName": "agentIdentityType",
@@ -34,7 +68,7 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     },
-        {
+    {
       "ChangeList": [
         {
           "Id": "06d86e7b-9fb6-48a1-aeb3-dfaadb79d9f9",
@@ -2023,6 +2057,6 @@
       "CreatedDateTime": "2025-11-18T21:09:42.1591906Z",
       "WorkloadArea": "Agents",
       "SubArea": ""
-    }    
+    }
   ]
 }
