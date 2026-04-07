@@ -89,7 +89,7 @@ Document within the **Properties** section of the resource that uses the enum. T
        ```
 
 2. **Create table:**
-   - Columns: **Member** and **Description**
+   - Columns: **Member** (required) and **Description** (optional)
    - List members in ascending order by numeric value (without exposing numeric values)
    - **For evolvable enums:**
      - Include `unknownFutureValue` member
@@ -133,7 +133,7 @@ Create a dedicated topic for the enumeration. This option is rarely applicable.
 2. **Add Members H2 section:**
    - **For evolvable enums (if members follow unknownFutureValue):**
      - Add introductory text before the table (same as Option 2)
-   - Table with columns: **Member** and **Description**
+   - Table with columns: **Member** (required) and **Description** (optional)
    - List members in ascending order by numeric value (without exposing values)
    - **For evolvable enums:**
      - Include `unknownFutureValue` member
@@ -257,21 +257,23 @@ Create a dedicated topic for the enumeration. This option is rarely applicable.
   - [ ] For evolvable enums with members after unknownFutureValue: Prefer header note included in property description
 - [ ] **Option 2 (Parent resource):**
   - [ ] H3 section "{enum-type} values" added after Properties table
-  - [ ] Table has Member and Description columns
+  - [ ] Table has Member column (required) and Description column (optional)
   - [ ] Members listed in ascending order by numeric value (values not exposed)
   - [ ] For evolvable enums: unknownFutureValue description is "Evolvable enumeration sentinel value. Do not use."
   - [ ] For evolvable enums with members after unknownFutureValue: Introductory text about Prefer header included
   - [ ] Properties table links to H3 section
+  - [ ] Parent resource property description excludes inline value listing (values are accessible via linked H3 section)
   - [ ] For subnamespaces: Fully qualified enum name used
 - [ ] **Option 3 (Separate topic):**
   - [ ] File created with correct naming convention
   - [ ] Title is "{enum-type} enum type"
   - [ ] Description mentions evolvable enumeration if applicable
-  - [ ] Members H2 section with Member and Description columns
+  - [ ] Members H2 section with Member column (required) and Description column (optional)
   - [ ] For evolvable enums: unknownFutureValue description is "Evolvable enumeration sentinel value. Don't use."
   - [ ] For evolvable enums with members after unknownFutureValue: Introductory text about Prefer header included
   - [ ] For subnamespaces: Namespace attribute added in page annotation
   - [ ] Parent resource Properties table links to enum topic
+  - [ ] Parent resource property description excludes inline value listing (values are accessible via linked enum topic)
 
 ### For updating existing enumerations
 

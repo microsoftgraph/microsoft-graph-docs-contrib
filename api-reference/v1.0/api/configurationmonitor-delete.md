@@ -52,6 +52,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_configurationmonitor"
@@ -60,6 +61,12 @@ The following example shows a request.
 ``` http
 DELETE https://graph.microsoft.com/v1.0/admin/configurationManagement/configurationMonitors/1bc248ae-a088-434d-a466-9930e533f7dd
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-configurationmonitor-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

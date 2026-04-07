@@ -22,11 +22,7 @@ This method can only be called on a recovery job that has completed and has a **
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "entrarecoveryservices-recoveryjob-getfailedchanges-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "entrarecoveryservices_recoveryjob_getfailedchanges" } -->
 [!INCLUDE [permissions-table](../includes/permissions/entrarecoveryservices-recoveryjob-getfailedchanges-permissions.md)]
 
 [!INCLUDE [rbac-entrarecoveryservices-apis-read](../includes/rbac-for-apis/rbac-entrarecoveryservices-apis-read.md)]
@@ -72,6 +68,7 @@ The following example shows a request to retrieve changes that failed to apply d
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "recoveryjobthis.getfailedchanges.example1"
@@ -80,6 +77,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/directory/recovery/snapshots/MjAyNC0wOC0yNlQwMjozMDowMFo=/recoveryJobs/3f4a6b60-7c1e-4e7c-9c7b-13f8d44b20c4/getFailedChanges
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/recoveryjobthisgetfailedchangesexample1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -154,6 +157,7 @@ The following example shows a request using the `$top` query parameter to limit 
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "recoveryjobthis.getfailedchanges.example2"
@@ -162,6 +166,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/directory/recovery/snapshots/MjAyNC0wOC0yNlQwMjozMDowMFo=/recoveryJobs/3f4a6b60-7c1e-4e7c-9c7b-13f8d44b20c4/getFailedChanges?$top=1
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/recoveryjobthisgetfailedchangesexample2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

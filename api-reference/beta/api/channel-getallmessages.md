@@ -18,7 +18,6 @@ Retrieve [messages](../resources/chatmessage.md) across all [channels](../resour
 
 To learn more about using the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
 
-[!INCLUDE [teams-metered-apis](../../includes/teams-metered-apis.md)]
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -37,16 +36,6 @@ GET /teams/{team-id}/channels/getAllMessages
 ```
 
 ## Optional query parameters
-
-You can use `model` query parameter, which supports the values `A` and `B`, based on the preferred [licensing and payment model](/graph/teams-licenses),
-as shown in the following examples.  
-If no `model` is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) is used.
-
-```http
-GET /teams/{team-id}/channels/getAllMessages?model=A
-GET /teams/{team-id}/channels/getAllMessages?model=B
-```
-If no `model` parameter is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) is used. 
 
 You can use the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response.
 Additionally, [$filter](/graph/query-parameters#filter-parameter) is supported with **dateTime** range query on **lastModifiedDateTime**. The other [OData query parameters](/graph/query-parameters) aren't currently supported.

@@ -38,7 +38,7 @@ None.
 | Property                  | Type                                           | Description                 |
 | :-------------------------| :--------------------------------------------- | :-------------------------- |
 | id                        | String                                         | Unique identifier with combination of the custom security attribute set name and attribute name. For example, `AttributeSetName_AttributeName`. Inherited from [entity](../resources/entity.md). |
-| operator                  | customSecurityAttributeComparisonOperator      | The possible values are: `equals`, `unknownFutureValue`. If `equals`, the customSecurityAttributeExemption value is compared to match the custom security attribute value for the exemption to be applied. The comparison is case sensitive. |
+| operator                  | customSecurityAttributeComparisonOperator      | The possible values are: `equals`, `unknownFutureValue`. If `equals`, the customSecurityAttributeExemption value is compared to match the custom security attribute value for the exemption to be applied. The comparison is case sensitive. Not nullable.|
 
 ## Relationships
 None.
@@ -47,16 +47,14 @@ None.
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.customSecurityAttributeExemption",
   "baseType": "microsoft.graph.entity",
-  "openType": false
 }
 -->
 ``` json
 {
   "@odata.type": "#microsoft.graph.customSecurityAttributeExemption",
-  "id": "String (identifier)",
+  "id": "String",
   "operator": "String"
 }
 ```

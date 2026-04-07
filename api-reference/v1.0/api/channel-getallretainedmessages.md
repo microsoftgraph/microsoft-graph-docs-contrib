@@ -16,7 +16,6 @@ Get all retained [messages](../resources/chatmessage.md) across all [channels](.
 
 To learn more about how to use the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
 
-[!INCLUDE [teams-metered-apis](../../includes/teams-metered-apis.md)]
 
 > [!NOTE]  
 > This API requires [Teams retention policies](/purview/create-retention-policies?tabs=teams-retention) to be configured. For more information, see [Learn about retention for Microsoft Teams](/purview/retention-policies-teams).
@@ -44,13 +43,6 @@ GET /teams/{teamsId}/channels/getAllRetainedMessages
 ```
 
 ## Optional query parameters
-
-The following example shows how to use the `model` query parameter with values `A` or `B` to select the preferred [licensing and payment model](/graph/teams-licenses). If you don't specify a `model`, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) is used by default.
-
-```http
-GET /teams/{team-id}/channels/getAllRetainedMessages?model=A
-GET /teams/{team-id}/channels/getAllRetainedMessages?model=B
-```
 
 This method supports the following OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 

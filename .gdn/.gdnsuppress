@@ -39,18 +39,6 @@
       "tool": "psscriptanalyzer",
       "ruleId": "PSAvoidUsingConvertToSecureStringWithPlainText",
       "createdDate": "2026-02-24 12:06:54Z"
-    },
-    "3a37bf64f23749ac738b5da94bdc0511f105855aee640971733d155dad1f9915": {
-      "signature": "3a37bf64f23749ac738b5da94bdc0511f105855aee640971733d155dad1f9915",
-      "alternativeSignatures": [],
-      "target": "scripts/update-permissions-reference-fic.ps1",
-      "line": 179,
-      "memberOf": [
-        "default"
-      ],
-      "tool": "psscriptanalyzer",
-      "ruleId": "PSAvoidUsingConvertToSecureStringWithPlainText",
-      "createdDate": "2026-03-24 12:06:54Z"
     }
   }
 }

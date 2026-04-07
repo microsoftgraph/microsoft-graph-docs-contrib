@@ -20,11 +20,7 @@ Create a new [recoveryJob](../resources/entrarecoveryservices-recoveryjob.md) ob
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "entrarecoveryservices-snapshot-post-recoveryjobs-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "entrarecoveryservices_snapshot_post_recoveryjobs" } -->
 [!INCLUDE [permissions-table](../includes/permissions/entrarecoveryservices-snapshot-post-recoveryjobs-permissions.md)]
 
 [!INCLUDE [rbac-entrarecoveryservices-apis-write](../includes/rbac-for-apis/rbac-entrarecoveryservices-apis-write.md)]
@@ -65,6 +61,7 @@ If successful, this method returns a `202 Accepted` response code with a `Locati
 The following example creates a recovery job for all changes.
 
 #### Request
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_recoveryjob_nofilter"
@@ -73,6 +70,12 @@ The following example creates a recovery job for all changes.
 ``` http
 POST https://graph.microsoft.com/beta/directory/recovery/snapshots/MjAyNC0wOC0yNlQwMjozMDowMFo=/recoveryJobs
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-recoveryjob-nofilter-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 <!-- {
@@ -90,6 +93,7 @@ Location: https://graph.microsoft.com/beta/directory/recovery/snapshots/MjAyNC0w
 The following example creates a recovery job for only user entity changes.
 
 #### Request
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_recoveryjob_entitytypes"
@@ -109,6 +113,12 @@ Content-Type: application/json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-recoveryjob-entitytypes-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 <!-- {
   "blockType": "response",
@@ -125,6 +135,7 @@ Location: https://graph.microsoft.com/beta/directory/recovery/snapshots/MjAyNC0w
 The following example creates a recovery job for specific users and groups.
 
 #### Request
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_recoveryjob_entityids"
@@ -156,6 +167,12 @@ Content-Type: application/json
   }
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-recoveryjob-entityids-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 <!-- {

@@ -83,7 +83,6 @@ GET https://graph.microsoft.com/beta/storage/fileStorage/containerTypes/de988700
 
 ---
 
-
 ### Response
 
 The following example shows the response.

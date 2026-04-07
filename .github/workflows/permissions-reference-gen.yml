@@ -8,6 +8,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  id-token: write  # Required for federated identity credentials
   
 jobs:
   update-permissions-reference:
@@ -23,13 +24,19 @@ jobs:
       with:
         path: docs
 
+    - name: Azure Login using Federated Identity
+      uses: azure/login@v2
+      with:
+        client-id: ${{ secrets.GRAPHPERMISSIONSREFERENCE_CLIENT_ID }}
+        tenant-id: ${{ secrets.GRAPHPERMISSIONSREFERENCE_TENANT_ID }}
+        allow-no-subscriptions: true
+
     - name: Run PowerShell script to update permissions
       shell: pwsh
       run: | 
         $ClientId = "${{ secrets.GRAPHPERMISSIONSREFERENCE_CLIENT_ID }}"
         $TenantId = "${{ secrets.GRAPHPERMISSIONSREFERENCE_TENANT_ID }}"
-        $ClientSecret = "${{ secrets.GRAPHPERMISSIONSREFERENCE_CLIENT_SECRET }}"
-        ./docs/scripts/update-permissions-reference.ps1 -ClientId $ClientId -TenantId $TenantId -ClientSecret $ClientSecret
+        ./docs/scripts/update-permissions-reference.ps1 -ClientId $ClientId -TenantId $TenantId
         
     - name: Get token
       id: get_token

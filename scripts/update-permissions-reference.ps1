@@ -1,7 +1,6 @@
 param (
     [string]$ClientId,
-    [string]$TenantId,
-    [string]$ClientSecret
+    [string]$TenantId
 )
 
 # Function to create custom permission objects
@@ -163,17 +162,21 @@ function Update-FileContent {
 
 $docsRepoPath = Join-Path (Get-Location).Path -ChildPath "docs"
 
-# Get access token
-$graphScopes = "https://graph.microsoft.com/.default"
-$headers = @{
-    "Content-Type" = "application/x-www-form-urlencoded"
+# Get access token using Azure CLI (which is authenticated via Federated Identity Credentials)
+Write-Host "Getting access token using Federated Identity Credentials..."
+try {
+    $tokenResponse = az account get-access-token --resource https://graph.microsoft.com --query accessToken --output tsv
+    if ($LASTEXITCODE -ne 0) {
+        throw "Failed to get access token from Azure CLI"
+    }
+    $accessToken = $tokenResponse
+    Write-Host "Access token obtained successfully."
 }
-$body = "grant_type=client_credentials&client_id=$ClientId&client_secret=$ClientSecret&scope=$graphScopes"
-$authUri = "https://login.microsoftonline.com/$TenantId/oauth2/v2.0/token"
+catch {
+    Write-Error "Failed to get access token: $_"
+    exit
+}
 
-$response = Invoke-RestMethod $authUri  -Method 'POST' -Headers $headers -Body $body
-$response | ConvertTo-Json
-$accessToken = $response.access_token
 $secureAccessToken = ConvertTo-SecureString $accessToken -AsPlainText -Force
 
 # Install the Microsoft Graph PowerShell module if not already installed
@@ -184,7 +187,7 @@ if (-not (Get-Module -Name Microsoft.Graph -ListAvailable)) {
 # Connect to Microsoft Graph
 try {
     Connect-MgGraph -AccessToken $secureAccessToken -NoWelcome
-    Write-Host "Connected successfully."
+    Write-Host "Connected successfully to Microsoft Graph."
 }
 catch {
     Write-Error "Failed to connect to Microsoft Graph: $_"
@@ -194,6 +197,7 @@ catch {
 # Get the Microsoft Graph service principal object
 try {
     $servicePrincipal = Get-MgServicePrincipal -Filter "appId eq '00000003-0000-0000-c000-000000000000'" -ErrorAction Stop
+    Write-Host "Retrieved Microsoft Graph service principal successfully."
 }
 catch {
     Write-Error "Failed to retrieve service principal: $_"

@@ -123,6 +123,7 @@ Content-type: application/json
     "appId": "631a96bc-a705-4eda-9f99-fdaf9f54f6a2",
     "applicationTemplateId": null,
     "identifierUris": [],
+    "createdByAppId": "748fe028-bb3d-4f2c-a015-4789781fe0f1",
     "createdDateTime": "2019-09-17T19:10:35.2742618Z",
     "disabledByMicrosoftStatus": null,
     "displayName": "Display name",

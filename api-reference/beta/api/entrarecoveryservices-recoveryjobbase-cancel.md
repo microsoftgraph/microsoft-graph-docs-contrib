@@ -60,6 +60,7 @@ If successful, this method returns a `202 Accepted` response code with a `Locati
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "recoveryjobbase_cancel"
@@ -68,6 +69,12 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/beta/directory/recovery/jobs/3f4a6b60-7c1e-4e7c-9c7b-13f8d44b20c4/cancel
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/recoveryjobbase-cancel-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

@@ -24,3 +24,13 @@ The Microsoft Graph REST API can deliver change notifications to clients through
 - [Lifecycle notifications](/graph/change-notifications-lifecycle-events)
 - [Change notification C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-change-notification/csharp)
 - [Change notification Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-change-notification/nodejs)
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "",
+  "keywords": "",
+  "section": "documentation",
+  "suppressions": [
+    "Error: /resources/change-notifications-api-overview.md:\n      Exception processing links.\n      Link Definition was null. Link text: !div class='mx-tableFixed' (Parameter 'Definition')"
+  ]
+} -->

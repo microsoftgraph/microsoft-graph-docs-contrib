@@ -61,6 +61,7 @@ If successful, this action returns a `200 OK` response code and a [microsoft.gra
 #### Request
 
 The following example merges two incidents.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "security_incident_mergeincidents"
@@ -79,6 +80,12 @@ Content-Type: application/json
   "mergeReasons": "sameCampaign, sameActor"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/security-incident-mergeincidents-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

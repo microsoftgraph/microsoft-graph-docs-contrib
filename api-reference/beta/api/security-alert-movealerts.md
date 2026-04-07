@@ -62,6 +62,7 @@ If successful, this action returns a `200 OK` response code and a [microsoft.gra
 #### Request
 
 The following example moves two alerts to an existing incident.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "security_alert_movealerts"
@@ -81,6 +82,12 @@ Content-Type: application/json
   "newCorrelationReasons": "sameAsset, temporalProximity"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/security-alert-movealerts-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

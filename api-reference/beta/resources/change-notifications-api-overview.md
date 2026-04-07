@@ -72,3 +72,13 @@ In general, subscription operations require read permission to the resource. For
 [callTranscript]: ./calltranscript.md
 [callRecording]: ./callrecording.md
 [approvals]: ./approvalitem.md
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "",
+  "keywords": "",
+  "section": "documentation",
+  "suppressions": [
+    "Error: /resources/change-notifications-api-overview.md:\n      Exception processing links.\n      Link Definition was null. Link text: !div class='mx-tableFixed' (Parameter 'Definition')"
+  ]
+} -->

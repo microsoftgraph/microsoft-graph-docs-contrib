@@ -3,6 +3,58 @@
     {
       "ChangeList": [
         {
+          "Id": "e010d96a-7a4e-4b7c-aa22-05bd067da980",
+          "ApiChange": "Property",
+          "ChangedApiName": "itemCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **itemCount** property to the [list](https://learn.microsoft.com/en-us/graph/api/resources/list?view=graph-rest-beta) resource.",
+          "Target": "list"
+        }
+      ],
+      "Id": "e010d96a-7a4e-4b7c-aa22-05bd067da980",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-03-29T23:41:39.1409717Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "555e6775-6e2e-4c2e-9077-45141b8bf490",
+          "ApiChange": "Property",
+          "ChangedApiName": "principalId",
+          "ChangeType": "Addition",
+          "Description": "Added the **principalId** property to the [sharePointGroup](https://learn.microsoft.com/en-us/graph/api/resources/sharePointGroup?view=graph-rest-beta) resource.",
+          "Target": "sharePointGroup"
+        },
+        {
+          "Id": "555e6775-6e2e-4c2e-9077-45141b8bf490",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointGroupIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointGroupIdentity](https://learn.microsoft.com/en-us/graph/api/resources/sharePointGroupIdentity?view=graph-rest-beta) resource type.",
+          "Target": "sharePointGroupIdentity"
+        },
+        {
+          "Id": "555e6775-6e2e-4c2e-9077-45141b8bf490",
+          "ApiChange": "Property",
+          "ChangedApiName": "sharePointGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharePointGroup** property to the [sharePointIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/sharePointIdentitySet?view=graph-rest-beta) resource.",
+          "Target": "sharePointIdentitySet"
+        }
+      ],
+      "Id": "555e6775-6e2e-4c2e-9077-45141b8bf490",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-03-29T01:57:33.226047Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "7b48d671-3f04-4f2d-90f0-d0026a4818d8",
           "ApiChange": "Method",
           "ChangedApiName": "removeRetentionLabel",

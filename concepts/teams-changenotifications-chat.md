@@ -179,8 +179,6 @@ Content-Type: application/json
 
 To get change notifications for all changes related to any chat in a tenant where a specific Teams app is installed, subscribe to `/appCatalogs/teamsApps/{teams-app-id}/installedToChats`. This resource supports [including resource data](change-notifications-with-resource-data.md) in the notification.
 
-[!INCLUDE [teams-model-B-disclaimer](../includes/teams-model-B-disclaimer.md)]
-
 ### Permissions
 
 | Permission type                        | Permissions (from least to most privileged)                  |

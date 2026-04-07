@@ -144,30 +144,38 @@
       "name": "Agents",
       "overview": "../../resources/agentid-platform-overview.md",
       "shouldSort": true,
-      "childNodes": [
-          {
-            "name": "Agent identities",
-            "resources": [
-              "agentIdentityBlueprint",
-              "agentIdentityBlueprintPrincipal",
-              "agentIdentity"
-            ]
-          },
-          {
-            "name": "Agent user (preview)",
-            "resources": [
-              "agentUser"
-            ]
-          },
-          {
-            "name": "Agent registry (preview)",
-            "resources": [
-              "agentRegistry",
-              "agentInstance",
-              "agentCardManifest",
-              "agentCollection"
-            ]
-          }
+      "childNodes": [ 
+        {
+          "name": "Agent identities",
+          "resources": [
+            "agentIdentityBlueprint",
+            "agentIdentityBlueprintPrincipal",
+            "agentIdentity"
+          ],
+          "childNodes": [
+            {
+              "name": "Agent identity blueprint",
+              "resources": [
+                "inheritablePermission"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Agent user (preview)",
+          "resources": [
+            "agentUser"
+          ]
+        },
+        {
+          "name": "Agent registry (preview)",
+          "resources": [
+            "agentRegistry",
+            "agentInstance",
+            "agentCardManifest",
+            "agentCollection"
+          ]
+        }
       ]
     },
     {
@@ -1135,7 +1143,8 @@
       "complexTypes": [
         "fileStorageContainerTypeRegistrationSettings",
         "fileStorageContainerTypeAgentSettings",
-        "fileStorageContainerTypeSettings"
+        "fileStorageContainerTypeSettings",
+        "sharePointGroupIdentity"
       ],
       "childNodes": [
         {
@@ -3585,6 +3594,7 @@
             "chatMessage",
             "pinnedChatMessageInfo",
             "deletedChat",
+            "targetedChatMessage",
             "team",
             "teamworkTag",
             "teamworkTagMember"

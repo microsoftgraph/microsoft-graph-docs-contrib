@@ -31,8 +31,6 @@ The architecture includes three components:
 
 - A **cache** that persists messages. To improve the response time for your application and to potentially lower the costs for you, minimize reading the same message multiple times by storing messages in this cache. You do not want to be surprised by the API consumption charges later. To learn how to set up a cache, see [Add caching to improve performance in Azure API Management](/azure/api-management/api-management-howto-cache).
 
-    Some Teams APIs have licensing and payment requirements. For details, see [Payment models and licensing requirements](/graph/teams-licenses) for details.
-
 After you set up these components, you can start using Teams APIs. 
 
 ## Step 2: Create a new chat
@@ -476,8 +474,6 @@ If you want to track only specific chats, `/messages` is an option, but you shou
 
 All four options are called by your backend server component. Because they all support [application](/graph/auth/auth-concepts) permissions, pay attention to the access control logic to show and hide chats accordingly as users join or leave. The per-user option, which also supports [delegated](/graph/auth/auth-concepts) permissions, might be easier to implement, because the change notifications are already user specific; however, this it might be more expensive in the long run because the same message would trigger multiple change notifications, one for each subscribed user, and you might need a bigger cache to store the duplicated messages. For more details about permissions and licensing requirements for the different subscribed resources, see [Create subscription](/graph/api/subscription-post-subscriptions).
 
-Change notification subscriptions have consumption charges. Specify the `model` parameter on the **resource** property, as shown in the following example.
-
 When creating the subscription, make sure that the **includeResourceData** property is set to `true`, and that you have specified the **encryptionCertificate** and **encryptionCertificateId** properties. Otherwise, the encrypted content won't be returned in the change notifications. For details, see [Set up change notifications that include resource data](/graph/change-notifications-overview#notification-endpoint-validation).
 
 The following example shows how to get all messages per user. Before you use this example, the subscription notification endpoint specified in the **notificationUrl** property must be able to respond to a validation request, as described in [Set up notifications for changes in user data](/graph/change-notifications-overview#notification-endpoint-validation). If the validation fails, the request to create the subscription returns a `400 Bad Request` error.
@@ -498,7 +494,7 @@ Content-type: application/json
 {
   "changeType": "created,updated,deleted",
   "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
-  "resource": "/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/chats/getAllMessages?model=B",
+  "resource": "/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/chats/getAllMessages",
   "expirationDateTime": "2023-01-10T18:56:49.112603+00:00",
   "clientState": "ClientSecret",
   "includeResourceData": true,
@@ -551,7 +547,7 @@ Content-type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#subscriptions/$entity",
   "id": "88aa8a88-88a8-88a8-8888-88a8aa88a88a",
-  "resource": "/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/chats/getAllMessages?model=B",
+  "resource": "/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/chats/getAllMessages",
   "applicationId": "aa8aaaa8-8aa8-88a8-888a-aaaa8a8aa88a",
   "changeType": "created,updated,deleted",
   "clientState": "ClientSecret",

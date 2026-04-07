@@ -3,6 +3,96 @@
     {
       "ChangeList": [
         {
+          "Id": "f2b5b750-90b4-4c8a-a9a6-cd06636331c0",
+          "ApiChange": "Property",
+          "ChangedApiName": "keyCredentials",
+          "ChangeType": "Addition",
+          "Description": "Added the **keyCredentials** property to the [appManagementConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/appManagementConfiguration?view=graph-rest-beta) resource.",
+          "Target": "appManagementConfiguration"
+        },
+        {
+          "Id": "f2b5b750-90b4-4c8a-a9a6-cd06636331c0",
+          "ApiChange": "Property",
+          "ChangedApiName": "passwordCredentials",
+          "ChangeType": "Addition",
+          "Description": "Added the **passwordCredentials** property to the [appManagementConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/appManagementConfiguration?view=graph-rest-beta) resource.",
+          "Target": "appManagementConfiguration"
+        },
+        {
+          "Id": "f2b5b750-90b4-4c8a-a9a6-cd06636331c0",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "keyCredentials",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **keyCredentials** relationship from the [appManagementConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/appManagementConfiguration?view=graph-rest-beta) resource.",
+          "Target": "appManagementConfiguration"
+        },
+        {
+          "Id": "f2b5b750-90b4-4c8a-a9a6-cd06636331c0",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "passwordCredentials",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **passwordCredentials** relationship from the [appManagementConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/appManagementConfiguration?view=graph-rest-beta) resource.",
+          "Target": "appManagementConfiguration"
+        },
+        {
+          "Id": "f2b5b750-90b4-4c8a-a9a6-cd06636331c0",
+          "ApiChange": "Property",
+          "ChangedApiName": "customSecurityAttributes",
+          "ChangeType": "Addition",
+          "Description": "Added the **customSecurityAttributes** property to the [appManagementPolicyActorExemptions](https://learn.microsoft.com/en-us/graph/api/resources/appManagementPolicyActorExemptions?view=graph-rest-beta) resource.",
+          "Target": "appManagementPolicyActorExemptions"
+        },
+        {
+          "Id": "f2b5b750-90b4-4c8a-a9a6-cd06636331c0",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "customSecurityAttributes",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **customSecurityAttributes** relationship from the [appManagementPolicyActorExemptions](https://learn.microsoft.com/en-us/graph/api/resources/appManagementPolicyActorExemptions?view=graph-rest-beta) resource.",
+          "Target": "appManagementPolicyActorExemptions"
+        },
+        {
+          "Id": "f2b5b750-90b4-4c8a-a9a6-cd06636331c0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customSecurityAttributeExemption",
+          "ChangeType": "Change",
+          "Description": "Changed the [customSecurityAttributeExemption](https://learn.microsoft.com/en-us/graph/api/resources/customSecurityAttributeExemption?view=graph-rest-beta) resource from an entity type to a complex type.",
+          "Target": "customSecurityAttributeExemption"
+        },
+        {
+          "Id": "f2b5b750-90b4-4c8a-a9a6-cd06636331c0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customSecurityAttributeStringValueExemption",
+          "ChangeType": "Change",
+          "Description": "Changed the [customSecurityAttributeStringValueExemption](https://learn.microsoft.com/en-us/graph/api/resources/customSecurityAttributeStringValueExemption?view=graph-rest-beta) resource from an entity type to a complex type.",
+          "Target": "customSecurityAttributeStringValueExemption"
+        },
+        {
+          "Id": "f2b5b750-90b4-4c8a-a9a6-cd06636331c0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "keyCredentialConfiguration",
+          "ChangeType": "Change",
+          "Description": "Changed the [keyCredentialConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/keyCredentialConfiguration?view=graph-rest-beta) resource from an entity type to a complex type.",
+          "Target": "keyCredentialConfiguration"
+        },
+        {
+          "Id": "f2b5b750-90b4-4c8a-a9a6-cd06636331c0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "passwordCredentialConfiguration",
+          "ChangeType": "Change",
+          "Description": "Changed the [passwordCredentialConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/passwordCredentialConfiguration?view=graph-rest-beta) resource from an entity type to a complex type.",
+          "Target": "passwordCredentialConfiguration"
+        }
+      ],
+      "Id": "f2b5b750-90b4-4c8a-a9a6-cd06636331c0",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-04-01T14:40:09.1577648Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "d49c36a7-def1-4f33-a54c-590b30bac35c",
           "ApiChange": "Resource",
           "ChangedApiName": "crossTenantAccessPolicyAppServiceConnectSetting",
@@ -15381,6 +15471,32 @@
       "CreatedDateTime": "2026-03-13T23:43:59.6139755Z",
       "WorkloadArea": "Applications",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8a034d71-45f2-4a04-a9db-90572afe81fc",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdByAppId",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdByAppId** property to the [application](https://learn.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-1.0) resource.",
+          "Target": "application"
+        },
+        {
+          "Id": "8a034d71-45f2-4a04-a9db-90572afe81fc",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdByAppId",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdByAppId** property to the [servicePrincipal](https://learn.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-1.0) resource.",
+          "Target": "servicePrincipal"
+        }
+      ],
+      "Id": "8a034d71-45f2-4a04-a9db-90572afe81fc",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-03-31T15:28:36.2770719Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     }
   ]
 }

@@ -59,6 +59,7 @@ If successful, this action returns a `204 No Content` response code.
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "tenantgovernancesettingthis.enablerelatedtenants"
@@ -67,6 +68,12 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/beta/directory/tenantGovernance/settings/enableRelatedTenants
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/tenantgovernancesettingthisenablerelatedtenants-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response

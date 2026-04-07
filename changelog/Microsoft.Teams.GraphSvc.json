@@ -3,6 +3,56 @@
     {
       "ChangeList": [
         {
+          "Id": "4e6379bf-f90c-46c4-a4f8-f5336fcd31f6",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "targetedMessages",
+          "ChangeType": "Addition",
+          "Description": "Added the **targetedMessages** relationship to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "4e6379bf-f90c-46c4-a4f8-f5336fcd31f6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "targetedChatMessage",
+          "ChangeType": "Addition",
+          "Description": "Added the [targetedChatMessage](https://learn.microsoft.com/en-us/graph/api/resources/targetedChatMessage?view=graph-rest-beta) resource and an associated method.",
+          "Target": "targetedChatMessage"
+        },
+        {
+          "Id": "4e6379bf-f90c-46c4-a4f8-f5336fcd31f6",
+          "ApiChange": "Method",
+          "ChangedApiName": "deleteTargetedMessage",
+          "ChangeType": "Addition",
+          "Description": "Added the [deleteTargetedMessage](https://learn.microsoft.com/en-us/graph/api/userTeamwork-deleteTargetedMessage?view=graph-rest-beta) method to the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userTeamwork?view=graph-rest-beta) resource.",
+          "Target": "userTeamwork"
+        },
+        {
+          "Id": "4e6379bf-f90c-46c4-a4f8-f5336fcd31f6",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllRetainedTargetedMessages",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllRetainedTargetedMessages](https://learn.microsoft.com/en-us/graph/api/userTeamwork-getAllRetainedTargetedMessages?view=graph-rest-beta) method to the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userTeamwork?view=graph-rest-beta) resource.",
+          "Target": "userTeamwork"
+        },
+        {
+          "Id": "4e6379bf-f90c-46c4-a4f8-f5336fcd31f6",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllTargetedMessages",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllTargetedMessages](https://learn.microsoft.com/en-us/graph/api/userTeamwork-getAllTargetedMessages?view=graph-rest-beta) method to the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userTeamwork?view=graph-rest-beta) resource.",
+          "Target": "userTeamwork"
+        }
+      ],
+      "Id": "4e6379bf-f90c-46c4-a4f8-f5336fcd31f6",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-04-03T09:27:32.1402903Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "4fbecd5b-cada-4fc2-9c1d-20e4f47a980b",
           "ApiChange": "Method",
           "ChangedApiName": "getAllRecordings",
@@ -25,6 +75,138 @@
       "CreatedDateTime": "2026-03-05T19:12:46.1783607Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "cf252805-cd5c-47e9-b6d7-b946f98d8bca",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "model",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the [model](https://learn.microsoft.com/en-us/graph/teams-licenses#payment-models) query parameter from the [update](https://learn.microsoft.com/en-us/graph/api/chatmessage-update?view=graph-rest-1.0) operation of the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-1.0) resource.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "cf252805-cd5c-47e9-b6d7-b946f98d8bca",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "model",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the [model](https://learn.microsoft.com/en-us/graph/teams-licenses#payment-models) query parameter from the [chats: getAllMessages](https://learn.microsoft.com/en-us/graph/api/chats-getallmessages?view=graph-rest-1.0) method.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "cf252805-cd5c-47e9-b6d7-b946f98d8bca",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "model",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the [model](https://learn.microsoft.com/en-us/graph/teams-licenses#payment-models) query parameter from the [chat: getAllRetainedMessages](https://learn.microsoft.com/en-us/graph/api/chat-getallretainedmessages?view=graph-rest-1.0) method.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "cf252805-cd5c-47e9-b6d7-b946f98d8bca",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "model",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the [model](https://learn.microsoft.com/en-us/graph/teams-licenses#payment-models) query parameter from the [channel: getAllMessages](https://learn.microsoft.com/en-us/graph/api/channel-getallmessages?view=graph-rest-1.0) method.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "cf252805-cd5c-47e9-b6d7-b946f98d8bca",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "model",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the [model](https://learn.microsoft.com/en-us/graph/teams-licenses#payment-models) query parameter from the [channel: getAllRetainedMessages](https://learn.microsoft.com/en-us/graph/api/channel-getallretainedmessages?view=graph-rest-1.0) method.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "cf252805-cd5c-47e9-b6d7-b946f98d8bca",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "model",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the [model](https://learn.microsoft.com/en-us/graph/teams-licenses#payment-models) query parameter from the [deletedTeam: getAllMessages](https://learn.microsoft.com/en-us/graph/api/deletedteam-getallmessages?view=graph-rest-1.0) method.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "cf252805-cd5c-47e9-b6d7-b946f98d8bca",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "model",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the [model](https://learn.microsoft.com/en-us/graph/teams-licenses#payment-models) query parameter from the [create](https://learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-1.0) operation of the [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-1.0) resource.",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "cf252805-cd5c-47e9-b6d7-b946f98d8bca",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-04-01T19:30:25.6008288Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "673000ad-a1e9-4103-9313-4f9e9ea9bda5",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "model",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the [model](https://learn.microsoft.com/en-us/graph/teams-licenses#payment-models) query parameter from the [update](https://learn.microsoft.com/en-us/graph/api/chatmessage-update?view=graph-rest-beta) operation of the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) resource.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "673000ad-a1e9-4103-9313-4f9e9ea9bda5",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "model",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the [model](https://learn.microsoft.com/en-us/graph/teams-licenses#payment-models) query parameter from the [chats: getAllMessages](https://learn.microsoft.com/en-us/graph/api/chats-getallmessages?view=graph-rest-beta) method.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "673000ad-a1e9-4103-9313-4f9e9ea9bda5",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "model",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the [model](https://learn.microsoft.com/en-us/graph/teams-licenses#payment-models) query parameter from the [chat: getAllRetainedMessages](https://learn.microsoft.com/en-us/graph/api/chat-getallretainedmessages?view=graph-rest-beta) method.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "673000ad-a1e9-4103-9313-4f9e9ea9bda5",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "model",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the [model](https://learn.microsoft.com/en-us/graph/teams-licenses#payment-models) query parameter from the [channel: getAllMessages](https://learn.microsoft.com/en-us/graph/api/channel-getallmessages?view=graph-rest-beta) method.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "673000ad-a1e9-4103-9313-4f9e9ea9bda5",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "model",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the [model](https://learn.microsoft.com/en-us/graph/teams-licenses#payment-models) query parameter from the [channel: getAllRetainedMessages](https://learn.microsoft.com/en-us/graph/api/channel-getallretainedmessages?view=graph-rest-beta) method.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "673000ad-a1e9-4103-9313-4f9e9ea9bda5",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "model",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the [model](https://learn.microsoft.com/en-us/graph/teams-licenses#payment-models) query parameter from the [deletedTeam: getAllMessages](https://learn.microsoft.com/en-us/graph/api/deletedteam-getallmessages?view=graph-rest-beta) method.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "673000ad-a1e9-4103-9313-4f9e9ea9bda5",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "model",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the [model](https://learn.microsoft.com/en-us/graph/teams-licenses#payment-models) query parameter from the [create](https://learn.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta) operation of the [subscription](https://learn.microsoft.com/en-us/graph/api/resources/subscription?view=graph-rest-beta) resource.",
+          "Target": "subscription"
+        }
+      ],
+      "Id": "673000ad-a1e9-4103-9313-4f9e9ea9bda5",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-04-01T19:30:25.6008288Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
     },
     {
       "ChangeList": [
@@ -3412,7 +3594,57 @@
       "Id": "f48a71c8-6c27-4b6a-9191-21b3c33674ad",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2026-01-12T07:11:16.9385409Z",      
+      "CreatedDateTime": "2026-01-12T07:11:16.9385409Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Apps"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "05b0d20b-89ad-4898-8683-92fbe7891827",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "enabledApps",
+          "ChangeType": "Addition",
+          "Description": "Added the **enabledApps** relationship to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "05b0d20b-89ad-4898-8683-92fbe7891827",
+          "ApiChange": "Method",
+          "ChangedApiName": "teamsApp",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get teamsApp](https://learn.microsoft.com/en-us/graph/api/teamsapp-get?view=graph-rest-1.0) operation to the [teamsApp](https://learn.microsoft.com/en-us/graph/api/resources/teamsapp?view=graph-rest-1.0) resource.",
+          "Target": "teamsApp"
+        },
+        {
+          "Id": "05b0d20b-89ad-4898-8683-92fbe7891827",
+          "ApiChange": "Method",
+          "ChangedApiName": "teamsApp",
+          "ChangeType": "Addition",
+          "Description": "Added the [Remove teamsApp](https://learn.microsoft.com/en-us/graph/api/channel-delete-enabledapps?view=graph-rest-1.0) operation to the [teamsApp](https://learn.microsoft.com/en-us/graph/api/resources/teamsapp?view=graph-rest-1.0) resource.",
+          "Target": "teamsApp"
+        },
+        {
+          "Id": "05b0d20b-89ad-4898-8683-92fbe7891827",
+          "ApiChange": "Method",
+          "ChangedApiName": "teamsApp",
+          "ChangeType": "Addition",
+          "Description": "Added the [List enabledApps](https://learn.microsoft.com/en-us/graph/api/channel-list-enabledapps?view=graph-rest-1.0) operation to the [teamsApp](https://learn.microsoft.com/en-us/graph/api/resources/teamsapp?view=graph-rest-1.0) resource.",
+          "Target": "teamsApp"
+        },
+        {
+          "Id": "05b0d20b-89ad-4898-8683-92fbe7891827",
+          "ApiChange": "Method",
+          "ChangedApiName": "teamsApp",
+          "ChangeType": "Addition",
+          "Description": "Added the [Create teamsApp](https://learn.microsoft.com/en-us/graph/api/channel-post-enabledapps?view=graph-rest-1.0) operation to the [teamsApp](https://learn.microsoft.com/en-us/graph/api/resources/teamsapp?view=graph-rest-1.0) resource.",
+          "Target": "teamsApp"
+        }
+      ],
+      "Id": "05b0d20b-89ad-4898-8683-92fbe7891827",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-04-01T05:32:18.4592149Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Apps"
     }
