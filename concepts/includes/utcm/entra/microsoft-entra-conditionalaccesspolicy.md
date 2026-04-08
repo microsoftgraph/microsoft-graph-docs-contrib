@@ -11,7 +11,6 @@ ms.topic: include
 
 This resource configures a Microsoft Entra conditional access policy.
 
-
 ### Parameters
 
 | Parameter | Attribute | DataType | Description | Allowed Values |
