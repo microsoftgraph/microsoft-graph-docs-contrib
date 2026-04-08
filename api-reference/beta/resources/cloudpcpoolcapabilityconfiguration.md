@@ -1,6 +1,6 @@
 ---
 title: "cloudPcPoolCapabilityConfiguration resource type"
-description: "Represents the base capabilities configuration for a Cloud PC pool."
+description: "An abstract type that represents the base capabilities configuration for a Cloud PC pool."
 author: "yityu"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the base capabilities configuration for a Cloud PC pool.
+An abstract type that represents the base capabilities configuration for a Cloud PC pool.
 
 Base type of [cloudPcAgentPoolCapabilityConfiguration](../resources/cloudpcagentpoolcapabilityconfiguration.md).
 
