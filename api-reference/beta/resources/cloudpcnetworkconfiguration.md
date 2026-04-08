@@ -1,6 +1,6 @@
 ---
 title: "cloudPcNetworkConfiguration resource type"
-description: "Represents the base network configuration settings for Cloud PC provisioning."
+description: "An abstract type that represents the base network configuration settings for Cloud PC provisioning."
 author: "yityu"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the base network configuration settings for Cloud PC provisioning.
+An abstract type that represents the base network configuration settings for Cloud PC provisioning.
+
+Base type of [cloudPcMicrosoftHostedNetworkConfiguration](../resources/cloudpcmicrosofthostednetworkconfiguration.md).
 
 ## Properties
 
