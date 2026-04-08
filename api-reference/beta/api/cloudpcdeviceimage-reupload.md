@@ -1,20 +1,23 @@
 ---
-title: "cloudPcDeviceImage: reupload"
+title: "cloudPcDeviceImage: reupload (deprecated)"
 description: "Reupload a cloudPcDeviceImage object."
 author: "RuiHou105"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
-ms.date: 04/04/2024
+ms.date: 02/25/2026
 ---
 
-# cloudPcDeviceImage: reupload
+# cloudPcDeviceImage: reupload (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Reupload a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object that failed to upload.
+
+> [!CAUTION]
+> This API is deprecated and will stop returning data on June 25, 2026. Going forward, use the [cloudPcDeviceImage: retryUpload](cloudpcdeviceimage-retryupload.md) API instead.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

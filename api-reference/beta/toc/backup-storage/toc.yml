@@ -153,18 +153,24 @@ items:
       href: ../../resources/driveprotectionunit.md
     - name: List
       href: ../../api/backuprestoreroot-list-driveprotectionunits.md
+    - name: Update
+      href: ../../api/driveprotectionunit-update.md
   - name: Mailbox protection unit
     items:
     - name: Mailbox protection unit
       href: ../../resources/mailboxprotectionunit.md
     - name: List
       href: ../../api/backuprestoreroot-list-mailboxprotectionunits.md
+    - name: Update
+      href: ../../api/mailboxprotectionunit-update.md
   - name: Site protection unit
     items:
     - name: Site protection unit
       href: ../../resources/siteprotectionunit.md
     - name: List
       href: ../../api/backuprestoreroot-list-siteprotectionunits.md
+    - name: Update
+      href: ../../api/siteprotectionunit-update.md
 - name: Protection units bulk job
   items:
   - name: Protection units bulk addition job

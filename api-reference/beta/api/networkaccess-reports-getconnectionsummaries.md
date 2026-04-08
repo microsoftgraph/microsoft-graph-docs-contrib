@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An API part of Global Secure Access (GSA) product, reports of connections count per traffic type: Private/Internet/Microsoft.
+Returns [connections count](../resources/networkaccess-connectionsummary.md) per traffic type: Private/Internet/Microsoft.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

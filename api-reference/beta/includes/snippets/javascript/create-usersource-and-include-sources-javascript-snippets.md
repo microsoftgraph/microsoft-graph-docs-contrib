@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 const userSource = {
     email: 'admin@contoso.com',
-    includedSources: 'mailbox, site'
+    includedSources: 'mailbox'
 };
 
 await client.api('/security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryHoldPolicyId}/userSources')

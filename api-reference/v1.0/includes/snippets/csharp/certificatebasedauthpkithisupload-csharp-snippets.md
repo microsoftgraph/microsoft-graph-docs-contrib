@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // Code snippets are only available for the latest version. Current version is 5.x
 
 // Dependencies
-using Microsoft.Graph.Beta.DirectoryNamespace.PublicKeyInfrastructure.CertificateBasedAuthConfigurations.Item.Upload;
+using Microsoft.Graph.DirectoryNamespace.PublicKeyInfrastructure.CertificateBasedAuthConfigurations.Item.Upload;
 
 var requestBody = new UploadPostRequestBody
 {

@@ -11,7 +11,7 @@ ms.topic: article
 # Metered APIs and services in Microsoft Graph
 
 > [!IMPORTANT]
-> Starting August 25, 2025, the Teams APIs listed in this article are no longer metered, and no billing configuration is required to use these APIs. If your application is configured for billing, no action is required. The SharePoint and OneDrive for work or school [assignSensitivityLabel](/graph/api/driveitem-assignsensitivitylabel) API remains metered.
+> Starting August 25, 2025, the Teams APIs are no longer metered, and no billing configuration is required to use these APIs. If your application is configured for billing, no action is required. The SharePoint and OneDrive for work or school [assignSensitivityLabel](/graph/api/driveitem-assignsensitivitylabel) API remains metered.
 
 This article provides a list of metered APIs and services in Microsoft Graph. To call these APIs and services, you must associate an active Azure subscription with the calling application. For details, see [Overview of metered APIs and services in Microsoft Graph](metered-api-overview.md).
 
@@ -21,16 +21,6 @@ The following table lists the metered APIs and services.
 
 | API | Billing and license information |
 |:--------------------------|:--------------------------|
-| Teams [chat](/graph/api/chats-getallmessages) export | [Teams API payment models and licensing requirements](teams-licenses.md) |
-| Teams [chat retained](/graph/api/chat-getallretainedmessages) export | [Teams API payment models and licensing requirements](teams-licenses.md) |
-| Teams [channel](/graph/api/channel-getallmessages) export | [Teams API payment models and licensing requirements](teams-licenses.md) |
-| Teams [channel retained](/graph/api/channel-getallretainedmessages) export | [Teams API payment models and licensing requirements](teams-licenses.md) |
-| Teams chat / channel [change notifications](/graph/api/subscription-post-subscriptions) | [Teams API payment models and licensing requirements](/graph/teams-licenses) |
-| Teams conversationMember [change notifications](/graph/api/subscription-post-subscriptions) | [Teams API payment models and licensing requirements](/graph/teams-licenses) |
-| Teams chat / channel message [PATCH operations](/graph/api/chatmessage-update) | [Teams API payment models and licensing requirements](teams-licenses.md) |
-| Teams meeting [transcript](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content) | [Teams API payment models and licensing requirements](teams-licenses.md) |
-| Teams meeting [transcript metadata](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent) | [Teams API payment models and licensing requirements](teams-licenses.md) |
-| Teams meeting [recording](/graph/api/callrecording-get#example-2-get-callrecording-content) | [Teams API payment models and licensing requirements](teams-licenses.md) |
 | SharePoint and OneDrive for Business [assignSensitivityLabel](/graph/api/driveitem-assignsensitivitylabel) | $0.00185 (USD) per API call<br/>[Enable metered APIs and services in Microsoft Graph](/graph/metered-api-setup) |
 
 

@@ -282,7 +282,9 @@ items:
       href: ../../api/cloudpcdeviceimage-delete.md
     - name: Get source images
       href: ../../api/cloudpcdeviceimage-getsourceimages.md
-    - name: Reupload
+    - name: Retry upload
+      href: ../../api/cloudpcdeviceimage-retryupload.md
+    - name: Reupload (deprecated)
       href: ../../api/cloudpcdeviceimage-reupload.md
   - name: Cloud PC external partner setting (deprecated)
     items:

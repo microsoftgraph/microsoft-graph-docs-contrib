@@ -15,12 +15,7 @@ var requestBody = new VirtualEventPresenter
 	{
 		OdataType = "#microsoft.graph.communicationsGuestIdentity",
 		DisplayName = "Guest Speaker",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"email" , "guest.speaker@fabrikam.com"
-			},
-		},
+		Email = "guest.speaker@fabrikam.com",
 	},
 };
 

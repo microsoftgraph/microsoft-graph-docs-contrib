@@ -46,6 +46,72 @@ var requestBody = new ContentActivity
 							{
 								"modifiedDateTime", new UntypedString("2025-05-27T17:23:20")
 							},
+							{
+								"agents", new UntypedArray(new List<UntypedNode>
+								{
+									new UntypedObject(new Dictionary<string, UntypedNode>
+									{
+										{
+											"identifier", new UntypedString("b262a092-6a2b-4682-9c7f-00baf80dbd84")
+										},
+										{
+											"name", new UntypedString("Copilot Agent")
+										},
+										{
+											"version", new UntypedString("1.2")
+										},
+										{
+											"blueprintId", new UntypedString("c262a092-6a2b-4682-9c7f-00baf80dbd94")
+										},
+									}),
+								})
+							},
+							{
+								"plugins", new UntypedArray(new List<UntypedNode>
+								{
+									new UntypedObject(new Dictionary<string, UntypedNode>
+									{
+										{
+											"identifier", new UntypedString("f1a2b3c4-d5e6-7890-abcd-ef1234567890")
+										},
+										{
+											"name", new UntypedString("Microsoft Purview Data Scanner")
+										},
+										{
+											"version", new UntypedString("1.1")
+										},
+									}),
+								})
+							},
+							{
+								"accessedResources_v2", new UntypedArray(new List<UntypedNode>
+								{
+									new UntypedObject(new Dictionary<string, UntypedNode>
+									{
+										{
+											"identifier", new UntypedString("3f2d6e5b-98d4-4f2a-9a61-45c0a8b7d123")
+										},
+										{
+											"name", new UntypedString("Report.xlsx")
+										},
+										{
+											"url", new UntypedString("https://contoso.sharepoint.com/sites/finance")
+										},
+										{
+											"labelId", new UntypedString("a7b4f8c9-1e2d-4f45-89b1-23456789abcd")
+										},
+										{
+											"accessType", new UntypedString("read")
+										},
+										{
+											"status", new UntypedString("success")
+										},
+										{
+											"isCrossPromptInjectionDetected", new UntypedBoolean(false)
+										},
+									}),
+								})
+							},
 						}),
 					})
 				},

@@ -90,12 +90,15 @@ GET https://graph.microsoft.com/beta/identityProtection/riskyAgents/{riskyAgentI
 [!INCLUDE [sample-code](../includes/snippets/php/get-riskyagent-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-riskyagent-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-riskyagent-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -116,6 +119,7 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.riskyAgentUser",
     "id": "229da549-7a91-4365-900f-d4ef49a759a0",
     "agentDisplayName": "RiskyUserFirstPartyApp2",
+    "blueprintId": "b3390471-68c5-466a-9ac2-b93e2a454532",
     "identityType": "agentUser",
     "isDeleted": false,
     "isEnabled": true,

@@ -11,7 +11,7 @@ using Microsoft.Graph.Drives.Item.Items.Item.Workbook.Application.Calculate;
 
 var requestBody = new CalculatePostRequestBody
 {
-	CalculationType = "calculationType-value",
+	CalculationType = "FullRebuild",
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

@@ -16,6 +16,12 @@ Namespace: microsoft.graph
 
 Defines the target of a cross-tenant access policy setting configuration.
 
+This resource is used by the following properties:
+
+- **users** property of [crossTenantAccessPolicyM365CollaborationInboundSetting](../resources/crosstenantaccesspolicym365collaborationinboundsetting.md)
+- **usersAndGroups** property of [crossTenantAccessPolicyM365CollaborationOutboundSetting](../resources/crosstenantaccesspolicym365collaborationoutboundsetting.md)
+- **applications** property of [crossTenantAccessPolicyAppServiceConnectSetting](../resources/crosstenantaccesspolicyappserviceconnectsetting.md)
+
 ## Properties
 
 |Property|Type|Description|

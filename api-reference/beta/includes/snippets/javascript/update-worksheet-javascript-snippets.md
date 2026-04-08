@@ -11,9 +11,9 @@ const options = {
 const client = Client.init(options);
 
 const workbookWorksheet = {
-  position: 99,
-  name: 'name-value',
-  visibility: 'visibility-value'
+  position: 0,
+  name: 'Sheet2',
+  visibility: 'Hidden'
 };
 
 await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}')

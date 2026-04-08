@@ -3,6 +3,56 @@
     {
       "ChangeList": [
         {
+          "Id": "56106a0b-9fb9-47c7-b22f-1eba28e5ec43",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "notifyMembers",
+          "ChangeType": "Addition",
+          "Description": "Added the **notifyMembers** enumeration type.",
+          "Target": "notifyMembers"
+        },
+        {
+          "Id": "56106a0b-9fb9-47c7-b22f-1eba28e5ec43",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [emailDetails](https://learn.microsoft.com/en-us/graph/api/resources/emaildetails?view=graph-rest-beta) resource.",
+          "Target": "emailDetails"
+        },
+        {
+          "Id": "56106a0b-9fb9-47c7-b22f-1eba28e5ec43",
+          "ApiChange": "Resource",
+          "ChangedApiName": "targetOwners",
+          "ChangeType": "Addition",
+          "Description": "Added the [targetOwners](https://learn.microsoft.com/en-us/graph/api/resources/targetowners?view=graph-rest-beta) resource.",
+          "Target": "targetOwners"
+        },
+        {
+          "Id": "56106a0b-9fb9-47c7-b22f-1eba28e5ec43",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ownerlessGroupPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [ownerlessGroupPolicy](https://learn.microsoft.com/en-us/graph/api/resources/ownerlessgrouppolicy?view=graph-rest-beta) resource.",
+          "Target": "ownerlessGroupPolicy"
+        },
+        {
+          "Id": "56106a0b-9fb9-47c7-b22f-1eba28e5ec43",
+          "ApiChange": "Resource",
+          "ChangedApiName": "policyRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [policyRoot](https://learn.microsoft.com/en-us/graph/api/resources/policyroot?view=graph-rest-beta) resource.",
+          "Target": "policyRoot"
+        }
+      ],
+      "Id": "56106a0b-9fb9-47c7-b22f-1eba28e5ec43",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-03-23T06:24:19.3333718Z",
+      "WorkloadArea": "Groups",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "8f70e7ce-d948-4dfc-a6d2-a3a9d56e2930",
           "ApiChange": "Enumeration",
           "ChangedApiName": "structuredDataEntryValueType",

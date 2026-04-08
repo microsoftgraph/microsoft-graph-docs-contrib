@@ -12,7 +12,7 @@ use Microsoft\Graph\Beta\Generated\Drives\Item\Items\Item\Workbook\Names\Item\Ra
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new InsertPostRequestBody();
-$requestBody->setShift('shift-value');
+$requestBody->setShift('Down');
 
 $result = $graphServiceClient->drives()->byDriveId('drive-id')->items()->byDriveItemId('driveItem-id')->workbook()->names()->byWorkbookNamedItemId('workbookNamedItem-id')->range()->insert()->post($requestBody)->wait();
 

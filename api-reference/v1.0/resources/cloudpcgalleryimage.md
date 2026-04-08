@@ -32,6 +32,7 @@ Inherits from [entity](../resources/entity.md).
 |expirationDate|Date|The date when the image is no longer available. Users are unable to provision new Cloud PCs if the current time is later than **expirationDate**. The value is usually **endDate** plus six months. For example, if the **startDate** is `2025-10-14`, the **expirationDate** is usually `2026-04-14`. Read-only.|
 |id|String|The unique identifier (ID) of the gallery image resource on Cloud PC. The ID format is {publisherName_offerName_skuName}. For example, `MicrosoftWindowsDesktop_windows-ent-cpc_win11-22h2-ent-cpc-m365`. You can find the **publisherName**, **offerName**, and **skuName** in the Azure Marketplace. Inherited from [entity](../resources/entity.md). Read-only.|
 |offerName|String|The offer name of this gallery image that is passed to Azure Resource Manager (ARM) to retrieve the image resource. Read-only.|
+|osVersionNumber|String|The operating system version of this gallery image. For example, `10.0.22000.296`. Read-only.|
 |publisherName|String|The publisher name of this gallery image that is passed to Azure Resource Manager (ARM) to retrieve the image resource. Read-only.|
 |sizeInGB|Int32|Indicates the size of this image in gigabytes. For example, `64`. Read-only.|
 |skuName|String|The SKU name of this image that is passed to Azure Resource Manager (ARM) to retrieve the image resource. Read-only.|
@@ -71,6 +72,7 @@ The following JSON representation shows the resource type.
   "expirationDate": "String (Date)",
   "id": "String (identifier)",
   "offerName": "String",
+  "osVersionNumber": "String",
   "publisherName": "String",
   "sizeInGB": "Int32",
   "skuName": "String",

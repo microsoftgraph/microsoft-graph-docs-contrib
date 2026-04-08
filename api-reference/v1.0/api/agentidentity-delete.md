@@ -44,6 +44,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 ### Request
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_agentIdentity"
@@ -52,6 +53,12 @@ The following example shows a request.
 ```http
 DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/microsoft.graph.agentIdentity
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-agentidentity-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 The following example shows the response. 

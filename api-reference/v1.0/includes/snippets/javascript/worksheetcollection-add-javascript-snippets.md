@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const workbookWorksheet = {
-  name: 'name-value'
+  name: 'Sheet1'
 };
 
 await client.api('/me/drive/items/{id}/workbook/worksheets/add')

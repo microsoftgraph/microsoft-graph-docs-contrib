@@ -1,18 +1,18 @@
 ---
 title: "Update fido2AuthenticationMethodConfiguration"
 description: "Update the properties of a fido2AuthenticationMethodConfiguration object."
-author: "calvinlui"
+author: "hanki71"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: "apiPageType"
-ms.date: 04/04/2024
+ms.date: 03/04/2026
 ---
 
 # Update fido2AuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
-Update the properties of a [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) object, which represents the FIDO2 Security Keys authentication method policy for the Microsoft Entra tenant.
+Update the properties of a [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) object, which represents the passkey (FIDO2) authentication method policy for the Microsoft Entra tenant.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -69,17 +69,45 @@ Content-Type: application/json
 
 {
     "@odata.type": "#microsoft.graph.fido2AuthenticationMethodConfiguration",
-    "state": "enabled",
-    "isAttestationEnforced": "true"
+    "id": "Fido2",
+    "state": "disabled",
+    "isSelfServiceRegistrationAllowed": true,
+    "isAttestationEnforced": true,
+    "keyRestrictions": {
+        "isEnforced": false,
+        "enforcementType": "block",
+        "aaGuids": []
+    },
+    "includeTargets": [
+        {
+            "targetType": "group",
+            "id": "all_users",
+            "isRegistrationRequired": false,
+            "allowedPasskeyProfiles": [
+                "00000000-0000-0000-0000-000000000001"
+            ]
+        }
+    ],
+    "excludeTargets": [],
+    "passkeyProfiles": [
+        {
+            "id": "00000000-0000-0000-0000-000000000001",
+            "name": "Default passkey profile",
+            "passkeyTypes": "deviceBound,synced",
+            "attestationEnforcement": "disabled",
+            "keyRestrictions": {
+                "isEnforced": false,
+                "enforcementType": "allow",
+                "aaGuids": [
+                ]
+            }
+        }
+    ]
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-fido2authenticationmethodconfiguration-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-fido2authenticationmethodconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)

@@ -45,6 +45,12 @@ var requestBody = new ProcessContentPostRequestBody
 						},
 					},
 				},
+				AdditionalData = new Dictionary<string, object>
+				{
+					{
+						"contentCategory" , "none"
+					},
+				},
 			},
 		},
 		ActivityMetadata = new ActivityMetadata

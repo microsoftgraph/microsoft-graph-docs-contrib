@@ -59,6 +59,7 @@ For information about errors returned by agent identity APIs, see [Agent identit
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_agentidentityblueprint"
@@ -72,6 +73,12 @@ Content-Type: application/json
   "displayName": "My New Name"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-agentidentityblueprint-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

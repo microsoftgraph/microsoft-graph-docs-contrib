@@ -86,7 +86,6 @@ GET https://graph.microsoft.com/beta/users/microsoft.graph.agentUser/929393ae-1e
 
 ---
 
-
 ### Response
 
 The following example shows the response.

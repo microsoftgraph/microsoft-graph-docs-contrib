@@ -26,6 +26,9 @@ OffsetDateTime createdDateTime = OffsetDateTime.parse("2025-05-27T17:23:20");
 processContentMetadataBase.setCreatedDateTime(createdDateTime);
 OffsetDateTime modifiedDateTime = OffsetDateTime.parse("2025-05-27T17:23:20");
 processContentMetadataBase.setModifiedDateTime(modifiedDateTime);
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("contentCategory", "ai");
+processContentMetadataBase.setAdditionalData(additionalData);
 contentEntries.add(processContentMetadataBase);
 contentToProcess.setContentEntries(contentEntries);
 ActivityMetadata activityMetadata = new ActivityMetadata();
@@ -52,7 +55,9 @@ integratedAppMetadata.setName("PC Purview API Explorer");
 integratedAppMetadata.setVersion("0.2");
 contentToProcess.setIntegratedAppMetadata(integratedAppMetadata);
 processContentPostRequestBody.setContentToProcess(contentToProcess);
-var result = graphClient.me().dataSecurityAndGovernance().processContent().post(processContentPostRequestBody);
+var result = graphClient.me().dataSecurityAndGovernance().processContent().post(processContentPostRequestBody, requestConfiguration -> {
+	requestConfiguration.headers.add("Client-Request-Id", "50dc805c-3af4-42d9-ad16-a746235cc736");
+});
 
 
 ```

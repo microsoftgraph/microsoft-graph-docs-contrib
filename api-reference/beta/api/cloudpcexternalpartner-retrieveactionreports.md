@@ -58,6 +58,7 @@ If successful, this function returns a `200 OK` response code and a [cloudPcExte
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "cloudpcexternalpartnerthis.retrieveactionreports"
@@ -67,6 +68,11 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/externalPartners/b3548526-e615-3785-3118-be70b3968ec5/retrieveActionReports
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/cloudpcexternalpartnerthisretrieveactionreports-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

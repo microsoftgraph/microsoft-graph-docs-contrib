@@ -3,7 +3,7 @@ title: "Set up Microsoft Graph change notifications with resource data"
 description: "Learn how to set up Microsoft Graph change notifications with resource data to receive updated resources directly in the notification payload."
 author: FaithOmbongi
 ms.author: ombongifaith
-ms.reviewer: keylimesoda
+ms.reviewer: jessieli-ad
 ms.topic: concept-article
 ms.subservice: "change-notifications"
 ms.localizationpriority: high

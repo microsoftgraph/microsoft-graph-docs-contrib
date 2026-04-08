@@ -12,6 +12,170 @@ ms.topic: whats-new
 
 Find information about previous additions and updates to Microsoft Graph APIs, documentation, SDKs, and other resources.
 
+## February 2026: New and generally available
+
+### External data connections
+
+Added 19 people domain semantic labels to the [label](/graph/api/resources/enums-externalconnectors#label-values) enumeration for Microsoft 365 Copilot connectors. These labels enable developers to map people profile data from external systems to standardized Microsoft Graph properties. Use these labels in [schema](/graph/api/resources/externalconnectors-schema) definitions to improve discoverability and integration of people data in Microsoft 365 Copilot experiences. The new labels include: `personEmails`, `personAddresses`, `personAnniversaries`, `personName`, `personNote`, `personPhones`, `personCurrentPosition`, `personWebAccounts`, `personWebSite`, `personSkills`, `personProjects`, `personAccount`, `personAwards`, `personCertifications`, `personAssistants`, `personColleagues`, `personManager`, `personAlternateContacts`, and `personEmergencyContacts`.
+
+### Files
+
+Updated the admin consent requirement for the following delegated permissions related to SharePoint Embedded file storage container management:
+- The `FileStorageContainerType.Manage.All` delegated permission no longer requires admin consent.
+- The `FileStorageContainerTypeReg.Manage.All` delegated permission no longer requires admin consent.
+
+### Groups
+
+- Added the **resourceBehaviorOptions** and **resourceProvisioningOptions** properties to the [group](/graph/api/resources/group) resource. These properties enable you to specify group behaviors and associated resources for a Microsoft 365 group.
+- Added a known issue: For soft deleted security groups, the **securityEnabled** property returns `false` instead of `true`. To identify the group type, use the **groupTypes** property where `["Unified"]` indicates a Microsoft 365 group and an empty array (`[]`) indicates a security group. For more information, see [Get deleted item](/graph/api/directory-deleteditems-get) and [List deleted items](/graph/api/directory-deleteditems-list).
+
+### Identity and access | Governance
+
+- Added the `allDirectoryAgentIdentities` member to the [allowedTargetScope](/graph/api/resources/enums#allowedtargetscope-values) enumeration to allow access packages to target all directory agent identities.
+- Added the [targetAgentIdentitySponsorsOrOwners](/graph/api/resources/targetagentidentitysponsorsorowners) resource type that defines the sponsors or owners of a specific agent identity.
+
+### Identity and access | Identity and sign-in
+
+- QR code authentication method in Microsoft Entra ID lets you manage the QR code authentication method for users, and how they can sign in with a QR code and PIN. The following key resources support this capability:
+   - The [qrCodePinAuthenticationMethod](/graph/api/resources/qrcodepinauthenticationmethod) resource and related APIs for managing QR code PIN authentication methods for users. This single-factor authentication method is designed for frontline workers and combines a QR code with a PIN. The following related resources were also added: [qrCode](/graph/api/resources/qrcode), [qrPin](/graph/api/resources/qrpin), and [qrCodeImageDetails](/graph/api/resources/qrcodeimagedetails).
+   - The [qrCodePinAuthenticationMethodConfiguration](/graph/api/resources/qrcodepinauthenticationmethodconfiguration) resource for managing the QR code authentication method policy for a tenant.
+   - Updated the [authenticationMethodModes](/graph/api/resources/authenticationmethodmodes) and [baseAuthenticationMethod](/graph/api/resources/baseauthenticationmethod) enumerations to add the `qrCodePin` member to support this new authentication method.
+
+### Mail | Message trace
+
+Use the message trace API to track the flow of email messages through your Exchange Online organization. For more information, see [exchangeMessageTrace](/graph/api/resources/exchangemessagetrace).
+
+### Search
+
+- Added the **principal** and **principalCollection** data types to the [externalConnection](/graph/api/resources/externalconnectors-principal) to specify the data type for people‑related property items in the external connection.
+- Added the **description** property to the [externalConnection properties](/graph/api/resources/externalconnectors-property) to allow the addition of a description to the schema properties in the external connection.
+- Added more tags or semantic labels that can be added to **labels** in the [externalConnection property](/graph/api/resources/externalconnectors-property) in the external connection schema. Labels help Microsoft 365 Copilot understand the semantics of the data in the connection and provide more relevant results. 
+- Added the **contentCategory** property to the [externalConnection](/graph/api/resources/externalconnectors-externalconnection) to specify the domain category of the content associated with the external connection for improved relevance and ranking.
+
+### Security | Data security and compliance
+
+- Added the `labelNotFoundException` member to the [usageRights](/graph/api/resources/usagerights) enumeration type. This member represents a label with no protection settings, so there are no usage rights to evaluate in Microsoft Purview.
+- Added the `restrictWebGrounding` member to the [dlpAction](/graph/api/resources/enums-security#dlpaction-values) enumeration to support restricting web grounding actions in data loss prevention policies in Microsoft Purview.
+
+### Security | Threat protection
+
+Updated the admin consent requirement for the following delegated permissions related to threat submissions:
+- The `ThreatSubmission.Read` delegated permission now requires admin consent.
+- The `ThreatSubmission.ReadWrite` delegated permission now requires admin consent.
+
+### Tasks and plans
+
+Added support for chat messaging on Planner tasks, enabling users to create, update, delete, and react to messages directly on tasks. Use the following new resources and APIs:
+- [plannerTaskChatMessage](/graph/api/resources/plannertaskchatmessage?view=graph-rest-beta&preserve-view=true)
+- [plannerTaskChatMention](/graph/api/resources/plannertaskchatmention?view=graph-rest-beta&preserve-view=true)
+- [plannerTaskChatReaction](/graph/api/resources/plannertaskchatreaction?view=graph-rest-beta&preserve-view=true)
+- [plannerTaskChatReactionEvent](/graph/api/resources/plannertaskchatreactionevent?view=graph-rest-beta&preserve-view=true)
+- [List messages](/graph/api/plannertask-list-messages?view=graph-rest-beta&preserve-view=true)
+- [Create message](/graph/api/plannertask-post-messages?view=graph-rest-beta&preserve-view=true)
+- [Update message](/graph/api/plannertaskchatmessage-update?view=graph-rest-beta&preserve-view=true)
+- [Delete message](/graph/api/plannertaskchatmessage-delete?view=graph-rest-beta&preserve-view=true)
+- [setReaction](/graph/api/plannertaskchatmessage-setreaction?view=graph-rest-beta&preserve-view=true)
+- [unsetReaction](/graph/api/plannertaskchatmessage-unsetreaction?view=graph-rest-beta&preserve-view=true)
+
+### Teamwork and communications | Administration
+
+- [Get the policy ID](/graph/api/teamsadministration-teamspolicyassignment-getpolicyid) for a given policy name and policy type within Teams administration.
+- [Assign a Teams policy](/graph/api/teamsadministration-teamspolicyuserassignment-assign) to a user using the user ID, policy type, and policy ID.
+- [Unassign a Teams policy](/graph/api/teamsadministration-teamspolicyuserassignment-unassign) from a user using the user ID and policy type.
+- [Assign a Teams telephone number](/graph/api/teamsadministration-numberassignment-assignnumber) to a user account. 
+- [Unassigns a Teams telephone number](/graph/api/teamsadministration-numberassignment-unassignnumber) from a user account.
+- [Get the assignment details](/graph/api/teamsadministration-numberassignment-get) for a single telehone number.
+- [Update an existing Teams telephone number](/graph/api/teamsadministration-numberassignment-updatenumber) with optional attributes.
+- [Check the status of telephone number assign or unassign operation](/graph/api/teamsadministration-telephonenumberlongrunningoperation-get) for a user account.
+- [Get a list of Teams telephone numbers](/graph/api/teamsadministration-telephonenumbermanagementroot-list-numberassignments) assigned to a user account.
+
+## February 2026: New in preview only
+
+### Applications
+
+Use the **requiredResourceAccess** property on [agentIdentityBlueprint](/graph/api/resources/agentidentityblueprint?view=graph-rest-beta&preserve-view=true) to specify the Microsoft Graph permissions (delegated scopes and app roles) required by the agent.
+
+### Applications | Application template
+
+Use the **isEntraIntegrated** property on [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta&preserve-view=true) to indicate whether the application is integrated with Microsfot Entra ID (for example, through single sign-on or user provisioning).
+
+### Backup storage
+
+Users can now browse a `fastRestore` endpoint and selectively restore files and folders by creating a browse session.
+
+The granular restore process is designed to be simple and efficient and consists of three main steps:
+
+- **Create a browse session**  
+  Initiate a browse session for a specific restore point (backup snapshot).  
+  - You can create a [SharePoint browse session](/graph/api/backuprestoreroot-post-sharepointbrowsesessions?view=graph-rest-beta&preserve-view=true) or a [OneDrive for Business browse session](/graph/api/backuprestoreroot-post-onedriveforbusinessrestoresessions?view=graph-rest-beta&preserve-view=true).
+
+- **Browse items**  
+  Once the session is created, the user can query it to list all backed-up items available within the browse session.  
+  - Results are returned as a collection of [browseQueryResponseItem](/graph/api/resources/browsequeryresponseitem?view=graph-rest-beta&preserve-view=true) objects, each representing a file, folder, or other resource.  
+  - You can browse items within a [SharePoint browse session](/graph/api/sharepointbrowsesession-browse?view=graph-rest-beta&preserve-view=true) or a [OneDrive for Business browse session](/graph/api/onedriveforbusinessbrowsesession-browse?view=graph-rest-beta&preserve-view=true).
+
+- **Create a restore session**  
+  Select one or more items from the browse session and initiates a restore session.  
+  - Only the selected items are restored to their previous state, leaving the rest of the site or drive unchanged.  
+  - You can create a [SharePoint granular restore session](/graph/api/backuprestoreroot-post-sharepointrestoresessions?view=graph-rest-beta&preserve-view=true#example-2-create-a-granular-restore-session) or a [OneDrive for Business granular restore session](/graph/api/backuprestoreroot-post-onedriveforbusinessrestoresessions?view=graph-rest-beta&preserve-view=true#example-2-create-a-granular-restore-session).
+
+### Device and app management | Cloud licensing
+
+Use the new cloud licensing APIs to manage tenant, user, and group licensing data for Microsoft 365 services. These APIs provide programmatic access to allotments, assignments, assignment errors, subscription lifecycles, and waiting members. For more information, see [Use the cloud licensing API in Microsoft Graph (preview)](/graph/api/resources/cloud-licensing-api-overview?view=graph-rest-beta&preserve-view=true).
+
+### Files
+
+- Added [driveItem: archive](/graph/api/driveitem-archive?view=graph-rest-beta&preserve-view=true) and [driveItem: unarchive](/graph/api/driveitem-unarchive?view=graph-rest-beta&preserve-view=true) to enable organizations to archive/unarchive driveItems.
+Added support for protection policy offboarding status and timestamp tracking in backup storage:
+
+- Added the **offboardRequestedDateTime** property to the [protectionPolicyBase](/graph/api/resources/protectionpolicybase?view=graph-rest-beta&preserve-view=true) resource.
+- Added the `offboardRequested` and `offboarded` values to the [protectionPolicyStatus](/graph/api/resources/protectionpolicybase?view=graph-rest-beta&preserve-view=true#protectionpolicystatus-values) enumeration.
+
+### Identity and access | Directory management
+
+Added the **managerApplications** property to the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) and [agentIdentityBlueprint](/graph/api/resources/agentidentityblueprint?view=graph-rest-beta&preserve-view=true) resources to specify applications designated as managers of an application. On the base **application** resource, this property is read-only for third-party (3P) callers. On the **agentIdentityBlueprint** resource, manager applications can create agent blueprint principals, agent identities, and agent users for their managed agent blueprints without requiring high-privileged permissions such as `AgentIdentityBlueprintPrincipal.ReadWrite.All`.
+
+### Identity and access | Governance
+
+Added the [previewScope](/graph/api/resources/identityGovernance-workflow?view=graph-rest-beta&preserve-view=true) relationship, [previewTaskFailures](/graph/api/identityGovernance-workflow-previewtaskfailures?view=graph-rest-beta&preserve-view=true) method, and [previewWorkflow](/graph/api/identityGovernance-workflow-previewworkflow?view=graph-rest-beta&preserve-view=true) method to the [workflow](/graph/api/resources/identitygovernance-workflow?view=graph-rest-beta&preserve-view=true) resource to support previewing Lifecycle Workflows before running them in production.
+
+### Identity and access | Identity and sign-in
+
+- Added the [agentIdentityType](/graph/api/resources/agentidentitytype?view=graph-rest-beta&preserve-view=true) enumeration to represent the type of Microsoft Entra agent identity for risk detection and management. Use the **identityType** property on the [riskyAgent](/graph/api/resources/riskyagent?view=graph-rest-beta&preserve-view=true) and [agentRiskDetection](/graph/api/resources/agentriskdetection?view=graph-rest-beta&preserve-view=true) resources to classify different types of agent identities.
+- Added new authentication event resources to support Just-In-Time (JIT) user migration scenarios from legacy authentication systems:
+  - Use the [onPasswordSubmitListener](/graph/api/resources/onpasswordsubmitlistener?view=graph-rest-beta&preserve-view=true) resource to configure authentication event listeners that trigger during password submission.
+  - Use the [onPasswordSubmitCustomExtension](/graph/api/resources/onpasswordsubmitcustomextension?view=graph-rest-beta&preserve-view=true) resource to configure custom extensions that validate passwords against external legacy authentication systems.
+  - Use the [onPasswordSubmitHandler](/graph/api/resources/onpasswordsubmithandler?view=graph-rest-beta&preserve-view=true) resource as the base type for handlers invoked during password submission events.
+  - Use the [onPasswordMigrationCustomExtensionHandler](/graph/api/resources/onpasswordmigrationcustomextensionhandler?view=graph-rest-beta&preserve-view=true) resource to configure handlers that invoke custom extensions during JIT migration.
+
+### Search
+
+Added the **principal** and **principalCollection** data types to the [externalConnection](/graph/api/resources/externalconnectors-externalconnection?view=graph-rest-beta&preserve-view=true) resource to specify the data type for people‑related property items in the external connection.
+
+### Security | Data security and compliance
+
+- Added the `labelNotFoundException` member to the [usageRights](/graph/api/resources/usagerights?view=graph-rest-beta&preserve-view=true) enumeration type. This member represents a label with no protection settings, so there are no usage rights to evaluate in Microsoft Purview.
+- Deprecated the **accessedResources** property on [processConversationMetadata](/graph/api/resources/processconversationmetadata?view=graph-rest-beta&preserve-view=true) in favor of the **accessedResources_v2** property.
+- Use the **accessedResources_v2** property on [processConversationMetadata](/graph/api/resources/processconversationmetadata?view=graph-rest-beta&preserve-view=true) to get detailed information about resources accessed during the conversation, including identifiers, access type, and status.
+- Use the **agents** property on [processConversationMetadata](/graph/api/resources/processconversationmetadata?view=graph-rest-beta&preserve-view=true) to get information about AI agents that participated in the preparation of the message.
+
+### Security | Email and collaboration protection
+
+Enhancements to the [detonationDetails](/graph/api/resources/security-detonationdetails?view=graph-rest-beta&preserve-view=true) resource that represents details from analysis of suspicious files and URLs in emails in Microsoft Defender for Office 365:
+
+- Added the following properties to provide more detailed threat analysis:
+  - **detonationBehaviourDetailsV2** - Shows events that took place during detonation in JSON format
+  - **entityMetadata** - More metadata about the entity in JSON format
+  - **mitreTechniques** - Attack techniques aligned with the MITRE ATT&CK framework
+  - **staticAnalysis** - Results of static analysis performed on the file or URL
+  - **submissionSource** - The source of the submission
+- The **detonationBehaviourDetails** property is deprecated and will stop returning data in March 2026. Use the **detonationBehaviourDetailsV2** property instead.
+- Added the `moveToQuarantine` member to the **remediationAction** enumeration. Use the `Prefer: include-unknown-enum-members` request header to access this evolvable enum member.
+
+### Tasks and plans
+
+Use the extended properties API to store or get custom data in the [todoTaskList](/graph/api/resources/todotasklist?view=graph-rest-beta&preserve-view=true#methods) resource.
+
 ## January 2026: New and generally available
 
 ### Identity and access | Governance
@@ -1860,7 +2024,7 @@ Use the **configurationUris** property on [applicationTemplate](/graph/api/resou
 ### Education
 
 - Deprecated the **synchronizationProfiles** relationship on the [educationRoot](/graph/api/resources/educationroot?view=graph-rest-beta&preserve-view=true), including all types serviced under this endpoint.
-- Introduced the Reflect API in Microsoft Graph to [get Reflect check-in responses](/graph/api/reflectcheckinresponse-get?view=graph-rest-beta&preserve-view=true) and [get reading assignment submissions](/graph/api/readingassignmentsubmission-get?view=graph-rest-beta&preserve-view=true). [Microsoft Reflect](https://reflect.microsoft.com/) helps you create impactful check-ins to gain insights into your learners' well-being and build a happier and healthier learning community, all within a single, user-friendly app.
+- Introduced the Reflect API in Microsoft Graph to get Reflect check-in responses and get reading assignment submissions. [Microsoft Reflect](https://reflect.microsoft.com/) helps you create impactful check-ins to gain insights into your learners' well-being and build a happier and healthier learning community, all within a single, user-friendly app.
 
 ### Identity and access | Directory management
 

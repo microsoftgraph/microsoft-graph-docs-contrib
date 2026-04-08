@@ -6,6 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
+from msgraph_beta.generated.users.item.data_security_and_governance.process_content.process_content_request_builder import ProcessContentRequestBuilder
+from kiota_abstractions.base_request_configuration import RequestConfiguration
 from msgraph_beta.generated.users.item.datasecurityandgovernance.process_content.process_content_post_request_body import ProcessContentPostRequestBody
 from msgraph_beta.generated.models.process_content_request import ProcessContentRequest
 from msgraph_beta.generated.models.process_content_metadata_base import ProcessContentMetadataBase
@@ -35,6 +37,9 @@ request_body = ProcessContentPostRequestBody(
 				is_truncated = False,
 				created_date_time = "2025-05-27T17:23:20",
 				modified_date_time = "2025-05-27T17:23:20",
+				additional_data = {
+						"content_category" : "ai",
+				}
 			),
 		],
 		activity_metadata = ActivityMetadata(
@@ -63,7 +68,11 @@ request_body = ProcessContentPostRequestBody(
 	),
 )
 
-result = await graph_client.me.data_security_and_governance.process_content.post(request_body)
+request_configuration = RequestConfiguration()
+request_configuration.headers.add("Client-Request-Id", "50dc805c-3af4-42d9-ad16-a746235cc736")
+
+
+result = await graph_client.me.data_security_and_governance.process_content.post(request_body, request_configuration = request_configuration)
 
 
 ```

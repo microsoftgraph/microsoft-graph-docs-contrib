@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const user = {
+const agentUser = {
   accountEnabled: true,
   displayName: 'Sales Agent',
   mailNickname: 'SalesAgent',
@@ -20,6 +20,6 @@ const user = {
 
 await client.api('/users/microsoft.graph.agentUser')
 	.version('beta')
-	.post(user);
+	.post(agentUser);
 
 ```

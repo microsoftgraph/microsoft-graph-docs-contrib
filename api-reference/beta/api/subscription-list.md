@@ -2,7 +2,7 @@
 title: "List subscriptions"
 description: "Retrieve a list of webhook subscriptions."
 ms.localizationpriority: medium
-author: "keylimesoda"
+author: "jessieli-ad"
 doc_type: apiPageType
 ms.subservice: change-notifications
 ms.date: 07/26/2024

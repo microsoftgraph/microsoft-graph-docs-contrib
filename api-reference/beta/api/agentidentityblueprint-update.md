@@ -89,7 +89,6 @@ Content-Type: application/json
 
 ---
 
-
 #### Response
 
 The following example shows the response.
@@ -108,6 +107,7 @@ The `managerApplications` property is fully writable by both first-party (1P) an
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_agentidentityblueprint_managerapplications"
@@ -122,6 +122,12 @@ Content-Type: application/json
   ]
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-agentidentityblueprint-managerapplications-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -142,6 +148,7 @@ Only Microsoft first-party application IDs can currently be set as values in the
 
 The following example shows a request attempting to add a non-first-party application.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_agentidentityblueprint_managerapplications_non_first_party_error"
@@ -156,6 +163,12 @@ Content-Type: application/json
   ]
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-agentidentityblueprint-managerapplications-non-first-party-error-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -191,6 +204,7 @@ Applications are limited to a maximum of 10 manager applications.
 
 The following example shows a request attempting to set 11 manager applications.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_agentidentityblueprint_managerapplications_exceed_limit_error"
@@ -215,6 +229,12 @@ Content-Type: application/json
   ]
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-agentidentityblueprint-managerapplications-exceed-limit-error-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

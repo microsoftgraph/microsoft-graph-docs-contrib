@@ -37,7 +37,8 @@ const userActivity = {
         }
       ]
     }
-  }
+  },
+  activationUrl: 'https://www.contoso.com/article?id=12345'
 };
 
 await client.api('/me/activities/3F12345')

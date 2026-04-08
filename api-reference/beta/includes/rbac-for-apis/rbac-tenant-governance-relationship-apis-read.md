@@ -1,0 +1,12 @@
+---
+author: hafowler
+ms.topic: include
+---
+
+> [!IMPORTANT]
+> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json). The following least privileged roles are supported for this operation.
+> - Tenant Governance Administrator
+> - Tenant Governance Relationship Administrator
+> - Global Reader
+> - Tenant Governance Reader
+> - Tenant Governance Relationship Reader

@@ -58,6 +58,7 @@ If successful, this method returns a `202 Accepted` response code. The response 
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "unarchive_fileStorageContainer",
@@ -67,6 +68,12 @@ The following example shows a request.
 ```http
 POST https://graph.microsoft.com/beta/storage/fileStorage/containers/b!d2XNj_LW80yZbxDjj4Uj4E1ZFa6_76xEroXu_lX_DFE59ZD-2EcGRZlA0R8Vm3f0/unarchive
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/unarchive-filestoragecontainer-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

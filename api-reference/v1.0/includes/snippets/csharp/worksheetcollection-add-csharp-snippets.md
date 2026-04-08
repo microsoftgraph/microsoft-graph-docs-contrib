@@ -11,7 +11,7 @@ using Microsoft.Graph.Drives.Item.Items.Item.Workbook.Worksheets.Add;
 
 var requestBody = new AddPostRequestBody
 {
-	Name = "name-value",
+	Name = "Sheet1",
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

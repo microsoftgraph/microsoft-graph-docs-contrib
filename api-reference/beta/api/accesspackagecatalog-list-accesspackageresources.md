@@ -37,7 +37,7 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}/accessP
 
 ## Optional query parameters
 
-This method supports OData query parameters to help customize the response. For example, to retrieve the access package resource scopes and environments for each resource, include `$expand=accessPackageResourceScopes,accessPackageResourceEnvironment` in the query. To retrieve the available roles of a resource, include `$expand=accessPackageResourceRoles`. To retrieve only resources for applications and not groups or sites, include `$filter=resourceType eq 'Application'` in the query. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports OData query parameters to help customize the response. For example, to retrieve the access package resource scopes and environments for each resource, include `$expand=accessPackageResourceScopes,accessPackageResourceEnvironment,externalOriginResourceConnector` in the query. To retrieve the available roles of a resource, include `$expand=accessPackageResourceRoles`. To retrieve only resources for applications and not groups or sites, include `$filter=resourceType eq 'Application'` in the query. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

@@ -196,6 +196,7 @@ The following example shows how to get a usage right and its assignments for a u
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "cloudlicensing_get_usageright_with_assignments_for_user",
@@ -205,6 +206,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/users/48fbdf70-9e09-40df-9dbe-17af483ab113/cloudLicensing/usageRights/i6sq63x2vd3esbkifv7m42xdaugc6lfpqf3ozgvdlvk3ttnamby3?$expand=assignments($select=id)
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/cloudlicensing-get-usageright-with-assignments-for-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -250,6 +257,7 @@ The following example shows how to get a usage right and its allotments for a us
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "cloudlicensing_get_usageright_with_allotments_for_user",
@@ -259,6 +267,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/users/48fbdf70-9e09-40df-9dbe-17af483ab113/cloudLicensing/usageRights/i6sq63x2vd3esbkifv7m42xdaugc6lfpqf3ozgvdlvk3ttnamby3?$expand=allotments($select=id,allottedUnits,consumedUnits,subscriptions)
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/cloudlicensing-get-usageright-with-allotments-for-user-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

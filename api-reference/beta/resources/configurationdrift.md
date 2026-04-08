@@ -4,7 +4,7 @@ description: "Represents the information and properties of a configurationDrift 
 author: "swatyario"
 ms.date: 01/19/2026
 ms.localizationpriority: medium
-ms.subservice: "tenant-administration"
+ms.subservice: "tenant-configuration-management"
 doc_type: resourcePageType
 ---
 
@@ -27,15 +27,15 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|baselineResourceDisplayName|String|Resource instance for which the drift is detected.|
-|driftedProperties|[driftedProperty](../resources/driftedproperty.md) collection|Properties within one or more resource instances in which drift is detected.|
-|firstReportedDateTime|DateTimeOffset|The date and time at which drift is first detected. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|id|String|Globally unique identifier (GUID) of the drift. System-generated. Inherited from [entity](../resources/entity.md).|
-|monitorId|String|Globally unique identifier (GUID) of the monitor. System-generated.|
-|resourceInstanceIdentifier|[openComplexDictionaryType](../resources/opencomplexdictionarytype.md)|An identifier that allows users to understand exactly where the drift is.|
-|resourceType|String|Resource for which the drift is detected.|
-|status|driftStatus|Status of the drift. The possible values are: `active`, `fixed`, `unknownFutureValue`.|
-|tenantId|String|Globally unique identifier (GUID) of the tenant for which the monitor runs. Fetched automatically by the system.|
+|baselineResourceDisplayName|String|Resource instance for which the drift is detected. <br><br>Supports `$filter` (`eq`, `ne`, `startsWith`) and `$orderby`.|
+|driftedProperties|[driftedProperty](../resources/driftedproperty.md) collection|Properties within one or more resource instances in which drift is detected. <br><br>Returned only on `$select`.|
+|firstReportedDateTime|DateTimeOffset|The date and time at which drift is first detected. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br>Supports `$filter` (`eq`, `ne`, `ge`, `le`) and `$orderby`.|
+|id|String|Globally unique identifier (GUID) of the drift. System-generated. Inherited from [entity](../resources/entity.md). <br><br>Supports `$filter` (`eq`, `ne`) and `$orderby`.|
+|monitorId|String|Globally unique identifier (GUID) of the monitor. System-generated. <br><br>Supports `$filter` (`eq`, `ne`).|
+|resourceInstanceIdentifier|[openComplexDictionaryType](../resources/opencomplexdictionarytype.md)|An identifier that allows users to understand exactly where the drift is. <br><br>Returned only on `$select`.|
+|resourceType|String|Resource for which the drift is detected. <br><br>Supports `$filter` (`eq`, `ne`, `startsWith`).|
+|status|driftStatus|Status of the drift. The possible values are: `active`, `fixed`, `unknownFutureValue`. <br><br>Supports `$filter` (`eq`, `ne`) and `$orderby`.|
+|tenantId|String|Globally unique identifier (GUID) of the tenant for which the monitor runs. Fetched automatically by the system. <br><br>Supports `$filter` (`eq`, `ne`).|
 
 ## Relationships
 None.

@@ -6,6 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Users\Item\DataSecurityAndGovernance\ProcessContent\ProcessContentRequestBuilderPostRequestConfiguration;
 use Microsoft\Graph\Generated\Users\Item\DataSecurityAndGovernance\ProcessContent\ProcessContentPostRequestBody;
 use Microsoft\Graph\Generated\Models\ProcessContentRequest;
 use Microsoft\Graph\Generated\Models\ProcessContentMetadataBase;
@@ -64,7 +65,13 @@ $contentToProcessIntegratedAppMetadata->setName('PC Purview API Explorer');
 $contentToProcessIntegratedAppMetadata->setVersion('0.2');
 $contentToProcess->setIntegratedAppMetadata($contentToProcessIntegratedAppMetadata);
 $requestBody->setContentToProcess($contentToProcess);
+$requestConfiguration = new ProcessContentRequestBuilderPostRequestConfiguration();
+$headers = [
+	'Client-Request-Id' => '50dc805c-3af4-42d9-ad16-a746235cc736',
+];
+$requestConfiguration->headers = $headers;
 
-$result = $graphServiceClient->me()->dataSecurityAndGovernance()->processContent()->post($requestBody)->wait();
+
+$result = $graphServiceClient->me()->dataSecurityAndGovernance()->processContent()->post($requestBody, $requestConfiguration)->wait();
 
 ```

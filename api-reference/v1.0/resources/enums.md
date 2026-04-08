@@ -822,6 +822,30 @@ Namespace: microsoft.graph
 | allow |
 | block |
 
+### attestationEnforcement values
+
+| Member |
+|:---|
+| disabled |
+| registrationOnly |
+| unknownFutureValue |
+
+### passkeyType values
+
+| Member |
+|:---|
+| deviceBound |
+| synced |
+| unknownFutureValue |
+
+### passkeyTypes values
+
+| Member |
+|:---|
+| deviceBound |
+| synced |
+| unknownFutureValue |
+
 ### x509CertificateAuthenticationMode values
 
 | Member |
@@ -1068,6 +1092,15 @@ Namespace: microsoft.graph
 | inactive |
 | unknownFutureValue |
 
+### baselineParameterType values 
+
+|Member|
+|:---|
+|string|
+|integer|
+|boolean|
+|unknownFutureValue|
+
 ### basicStatus values
 
 | Member |
@@ -1136,6 +1169,30 @@ Namespace: microsoft.graph
 | videoBasedScreenSharing |
 | data |
 | screenSharing |
+| unknownFutureValue |
+
+### monitorMode values
+
+| Member |
+| :--- |
+| monitorOnly |
+| unknownFutureValue |
+
+### monitorRunStatus values
+
+| Member |
+| :--- |
+| successful |
+| partiallySuccessful |
+| failed |
+| unknownFutureValue |
+
+### monitorStatus values
+
+| Member |
+| :--- |
+| active |
+| inactive |
 | unknownFutureValue |
 
 ### endpointType values
@@ -2506,6 +2563,17 @@ Possible values for user account types (group membership), per Windows definitio
 | reported |
 | unknownFutureValue |
 
+### snapshotJobStatus values
+
+| Member |
+| :--- |
+| notStarted |
+| running |
+| succeeded |
+| failed |
+| partiallySuccessful |
+| unknownFutureValue |
+
 ### serviceUpdateCategory values
 
 | Member |
@@ -3058,6 +3126,14 @@ Possible values for user account types (group membership), per Windows definitio
 | AttributeReadOnly |
 | ReferenceAttributes |
 | UnknownFutureValue |
+
+### driftStatus values
+
+| Member |
+| :--- |
+| active |
+| fixed |
+| unknownFutureValue |
 
 ### attributeType values
 

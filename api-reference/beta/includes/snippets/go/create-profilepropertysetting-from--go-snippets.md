@@ -16,10 +16,16 @@ import (
 )
 
 requestBody := graphmodels.NewProfilePropertySetting()
+name := "Profile priority config"
+requestBody.SetName(&name) 
 prioritizedSourceUrls := []string {
 	"https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr1')",
 }
 requestBody.SetPrioritizedSourceUrls(prioritizedSourceUrls)
+additionalData := map[string]interface{}{
+	"displayName" : "Profile priority config", 
+}
+requestBody.SetAdditionalData(additionalData)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 profilePropertySettings, err := graphClient.Admin().People().ProfilePropertySettings().Post(context.Background(), requestBody, nil)

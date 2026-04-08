@@ -228,6 +228,7 @@ HTTP/1.1 204 No Content
 
 The following request shows an example updating an application's **signInAudience** from single-tenant (`AzureADMyOrg`) to multitenant (`AzureADMultipleOrgs`) and at the same time setting **signInAudienceRestrictions** so that the app can only be used in two allowed tenants (and the tenant where the app is registered).
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_application_signinaudiencerestrictions"
@@ -250,6 +251,36 @@ Content-type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-application-signinaudiencerestrictions-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-application-signinaudiencerestrictions-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-application-signinaudiencerestrictions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-application-signinaudiencerestrictions-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-application-signinaudiencerestrictions-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-application-signinaudiencerestrictions-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-application-signinaudiencerestrictions-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
 <!-- {
@@ -265,6 +296,7 @@ HTTP/1.1 204 No Content
 
 The following request shows an example updating an application's **signInAudience** to single-tenant (`AzureADMyOrg`) and at the same time removing  **signInAudienceRestrictions**. It's recommended to do this at the same time to avoid any period of time where the application is multitenant and is *not* limited, which the organization's policies may require.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_application_signinaudiencerestrictions_singletenant_unrestricted"
@@ -281,6 +313,36 @@ Content-type: application/json
   }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-application-signinaudiencerestrictions-singletenant-unrestricted-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-application-signinaudiencerestrictions-singletenant-unrestricted-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-application-signinaudiencerestrictions-singletenant-unrestricted-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-application-signinaudiencerestrictions-singletenant-unrestricted-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-application-signinaudiencerestrictions-singletenant-unrestricted-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-application-signinaudiencerestrictions-singletenant-unrestricted-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-application-signinaudiencerestrictions-singletenant-unrestricted-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

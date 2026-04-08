@@ -77,7 +77,6 @@ DELETE https://graph.microsoft.com/beta/users/{usersId}/sponsors/{id}/$ref
 
 ---
 
-
 ### Response
 
 The following example shows the response.

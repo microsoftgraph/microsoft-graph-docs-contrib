@@ -6,22 +6,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Models\User;
-use Microsoft\Graph\Beta\Generated\Models\PasswordProfile;
+use Microsoft\Graph\Beta\Generated\Models\AgentUser;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestBody = new User();
+$requestBody = new AgentUser();
 $requestBody->setOdataType('#microsoft.graph.agentUser');
 $requestBody->setAccountEnabled(true);
 $requestBody->setDisplayName('Adele Vance');
 $requestBody->setMailNickname('AdeleV');
 $requestBody->setUserPrincipalName('AdeleV@contoso.com');
-$passwordProfile = new PasswordProfile();
-$passwordProfile->setForceChangePasswordNextSignIn(true);
-$passwordProfile->setPassword('xWwvJ]6NMw+bWH-d');
-$requestBody->setPasswordProfile($passwordProfile);
+$requestBody->setIdentityParentId('');
 
 $result = $graphServiceClient->users()->post($requestBody)->wait();
 

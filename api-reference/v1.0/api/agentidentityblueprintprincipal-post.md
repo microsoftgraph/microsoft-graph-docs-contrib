@@ -50,6 +50,7 @@ For information about errors returned by agent identity APIs, see [Agent identit
 ### Request
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_agent_identity_blueprint_principal"
@@ -63,6 +64,12 @@ Content-type: application/json
   "appId": "00001111-aaaa-2222-bbbb-3333cccc4444"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-agent-identity-blueprint-principal-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 The following example shows the response.

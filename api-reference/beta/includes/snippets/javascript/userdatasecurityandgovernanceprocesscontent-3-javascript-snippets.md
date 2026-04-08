@@ -28,6 +28,7 @@ const processContentResponse = {
 				length: 17352,
 				isTruncated: false,
 				ownerId: 'ffe1ca70-6e5b-4120-abf0-472034ba05d4',
+             	contentCategory: 'none',
 				customProperties: {
 					Department: 'Finance',
 					ReviewerName: 'John Smith'

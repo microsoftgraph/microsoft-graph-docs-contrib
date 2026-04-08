@@ -58,6 +58,7 @@ For information about errors returned by agent identity APIs, see [Agent identit
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_agentidentityblueprint"
@@ -66,6 +67,12 @@ The following example shows a request.
 ``` http
 DELETE https://graph.microsoft.com/v1.0/applications/{id}/microsoft.graph.agentIdentityBlueprint
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-agentidentityblueprint-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

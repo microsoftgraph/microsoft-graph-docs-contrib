@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [plannerTaskChatMessage](../resources/plannertaskchatmessage.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -60,6 +60,7 @@ This method can return any of the [HTTP status codes](/graph/errors). The most c
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_plannertaskchatmessage",
@@ -80,6 +81,12 @@ Content-type: application/json
   ]
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-plannertaskchatmessage-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

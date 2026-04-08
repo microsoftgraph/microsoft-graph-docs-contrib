@@ -61,6 +61,7 @@ If successful, this method returns a `200 OK` response code and an updated [user
 
 The following example shows a request.
 >**Note:** The entire **structuredData** object is updated.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_userconfiguration",
@@ -92,6 +93,12 @@ Content-Type: application/json
   ]
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-userconfiguration-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

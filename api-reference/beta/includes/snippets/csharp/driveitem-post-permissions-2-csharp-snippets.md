@@ -11,7 +11,7 @@ using Microsoft.Graph.Beta.Models;
 
 var requestBody = new Permission
 {
-	GrantedToIdentitiesV2 = new SharePointIdentitySet
+	GrantedToV2 = new SharePointIdentitySet
 	{
 		SiteGroup = new SharePointIdentity
 		{

@@ -3,7 +3,7 @@ title: Manage Microsoft Entra identity and network access by using Microsoft Gra
 description: Manage Microsoft Entra identity and network access by using Microsoft Graph
 author: FaithOmbongi
 ms.author: ombongifaith
-ms.date: 01/26/2026
+ms.date: 03/26/2026
 ms.topic: include
 ms.subservice: entra-id
 ---
@@ -30,11 +30,9 @@ Groups are the containers that allow you to efficiently manage the entitlements 
 
 You can use Microsoft Graph APIs to register and manage your applications programmatically, enabling you to use Microsoft's IAM capabilities. For more information, see [Manage Microsoft Entra applications and service principals by using Microsoft Graph](/graph/api/resources/applications-api-overview).
 
-## Manage agents (preview)
+## Manage agents
 
-:::image type="content" source="/graph/images/preview-label.png" alt-text="Available on beta only.":::
-
-AI agents require the same identity, access, security, and governance frameworks that are applied to users, applications, and devices in your organization. For more information about using Microsoft Graph APIs to achieve these capabilities for agents, see [Microsoft Entra Agent ID APIs in Microsoft Graph overview (preview)](/graph/api/resources/agentid-platform-overview).
+AI agents require the same identity, access, security, and governance frameworks that are applied to users, applications, and devices in your organization. For more information about using Microsoft Graph APIs to achieve these capabilities for agents, see [Microsoft Entra Agent ID APIs in Microsoft Graph overview](/graph/api/resources/agentid-platform-overview).
 
 ---
 

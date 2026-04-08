@@ -44,6 +44,9 @@ request_body = ProcessContentPostRequestBody(
 							"reviewer_name" : "John Smith",
 					}
 				),
+				additional_data = {
+						"content_category" : "none",
+				}
 			),
 		],
 		activity_metadata = ActivityMetadata(

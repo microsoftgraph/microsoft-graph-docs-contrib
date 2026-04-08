@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Create a new [plannerTaskChatMessage](../resources/plannertaskchatmessage.md) on a [plannerTask](../resources/plannertask.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -64,6 +64,7 @@ This method can return any of the [HTTP status codes](/graph/errors). The most c
 
 The following example shows a request to create a chat message.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "plannertask_post_messages",
@@ -77,6 +78,12 @@ Content-type: application/json
   "content": "This is a new chat message"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/plannertask-post-messages-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -116,6 +123,7 @@ Content-type: application/json
 
 The following example shows a request to create a chat message with a user mention.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "plannertask_post_messages_with_mentions",
@@ -136,6 +144,12 @@ Content-type: application/json
   ]
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/plannertask-post-messages-with-mentions-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

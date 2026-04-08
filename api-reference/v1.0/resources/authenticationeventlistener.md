@@ -23,6 +23,7 @@ To customize the authentication process, listeners can be registered which speci
 - [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md) resource type
 - [onEmailOtpSendListener](../resources/onemailotpsendlistener.md) resource type
 - [onFraudProtectionLoadStartListener](../resources/onfraudprotectionloadstartlistener.md) resource type
+- [onPasswordSubmitListener](../resources/onpasswordsubmitlistener.md) resource type
 
 > [!NOTE]
 >
