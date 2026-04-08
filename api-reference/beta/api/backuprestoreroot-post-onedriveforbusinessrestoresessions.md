@@ -298,7 +298,6 @@ The following example shows how to create a granular restore session that restor
 #### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "onedriveforbusinessrestoresession_granular_inplace_create"
