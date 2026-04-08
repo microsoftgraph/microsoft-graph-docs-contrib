@@ -75,7 +75,6 @@ POST https://graph.microsoft.com/beta/directory/tenantGovernance/settings/enable
 
 ---
 
-
 ### Response
 
 The following example shows the response.

@@ -62,6 +62,7 @@ If successful, this action returns a `204 No Content` response code.
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "userteamwork_deletetargetedmessage",
@@ -78,6 +79,12 @@ Content-Type: application/json
   "messageId": "1580849738240"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/userteamwork-deletetargetedmessage-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

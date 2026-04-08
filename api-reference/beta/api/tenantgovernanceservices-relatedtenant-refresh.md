@@ -72,7 +72,6 @@ POST https://graph.microsoft.com/beta/directory/tenantGovernance/relatedTenants/
 
 ---
 
-
 ### Response
 
 The following example shows the response.
