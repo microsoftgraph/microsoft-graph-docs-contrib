@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 An abstract type that represents a base assignment of a principal to a Cloud PC pool.
 
+Base type of [cloudPcAgentPoolUserAssignment](../resources/cloudpcagentpooluserassignment.md).
+
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
