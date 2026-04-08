@@ -22,7 +22,7 @@ Inherits from [cloudPcNetworkConfiguration](../resources/cloudpcnetworkconfigura
 
 |Property|Type|Description|
 |:---|:---|:---|
-|geographicLocationType|[cloudPcGeographicLocationType](../resources/cloudpcgeographiclocationtype.md)|The geographic location type for the network. The possible values are: `asia`, `australasia`, `canada`, `europe`, `india`, `africa`, `usCentral`, `usEast`, `usWest`, `southAmerica`, `middleEast`, `centralAmerica`, `usGovernment`, `mexico`, `unknownFutureValue`.|
+|geographicLocationType|[cloudPcGeographicLocationType](../resources/cloudpcgeographiclocationtype.md)|The geographic location type for the network. The possible values are: `default`, `asia`, `australasia`, `canada`, `europe`, `india`, `africa`, `usCentral`, `usEast`, `usWest`, `southAmerica`, `middleEast`, `centralAmerica`, `usGovernment`, `unknownFutureValue`. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `mexico`.|
 |regionGroups|[cloudPcRegionGroupConfiguration](../resources/cloudpcregiongroupconfiguration.md) collection|The region group configurations for the network.|
 
 ## Relationships
