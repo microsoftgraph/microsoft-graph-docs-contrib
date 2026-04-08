@@ -2,7 +2,7 @@
 title: "directoryObject: checkMemberGroups"
 description: "Check for membership in a specified list of groups, and return from that list those groups of which the specified user, group, service principal, organizational contact, device, or directory object is a member."
 ms.localizationpriority: medium
-author: "keylimesoda"
+author: "FaithOmbongi"
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
 ms.date: 10/24/2024
