@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 An abstract type that represents a pool for Cloud PC provisioning with common configurations and capabilities.
 
+Base type of [cloudPcAgentPool](../resources/cloudpcagentpool.md).
+
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
