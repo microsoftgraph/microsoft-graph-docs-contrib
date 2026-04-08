@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Represents the base capabilities configuration for a Cloud PC pool.
 
+Base type of [cloudPcAgentPoolCapabilityConfiguration](../resources/cloudpcagentpoolcapabilityconfiguration.md).
+
 ## Properties
 
 None.
