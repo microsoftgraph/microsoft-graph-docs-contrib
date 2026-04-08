@@ -108,6 +108,14 @@
         },
         {
           "Id": "497fa859-169a-47f4-b46b-85e0d74975b8",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcAgentPoolBillingType",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcAgentPoolBillingType](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcAgentPoolBillingConfiguration?view=graph-rest-beta#cloudpcagentpoolbillingtype-values) enumeration type.",
+          "Target": "cloudPcAgentPoolBillingType"
+        },
+        {
+          "Id": "497fa859-169a-47f4-b46b-85e0d74975b8",
           "ApiChange": "Relationship",
           "ChangedApiName": "cloudPcPools",
           "ChangeType": "Addition",

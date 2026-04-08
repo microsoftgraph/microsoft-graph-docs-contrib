@@ -41,7 +41,9 @@ For the list of supported methods, see [cloudPcPool](./cloudpcpool.md).
 
 ## Relationships
 
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|assignments|[cloudPcPoolAssignment](../resources/cloudpcpoolassignment.md) collection|The collection of assignments that grant user or service principal identities access to this pool. Inherited from [cloudPcPool](../resources/cloudpcpool.md).|
 
 ## JSON representation
 
