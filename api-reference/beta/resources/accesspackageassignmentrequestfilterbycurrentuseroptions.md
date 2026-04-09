@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The list of current user options that can be used to filter on the [access package assignment requests](../api/accesspackageassignmentrequest-accesspackageassignmentrequestfilterbycurrentuseroptions.md) list.
+The list of current user options that can be used to filter on the [access package assignment requests](../api/accesspackageassignmentrequest-filterbycurrentuser.md) list.
 
 ## Members
 |Member|Description|
