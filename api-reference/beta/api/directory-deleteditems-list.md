@@ -2,7 +2,7 @@
 title: "List deletedItems (directory objects)"
 ms.date: 11/17/2025
 description: "Retrieve a list of recently deleted items from deleted items."
-author: "keylimesoda"
+author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType

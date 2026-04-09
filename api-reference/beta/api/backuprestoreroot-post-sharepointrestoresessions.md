@@ -53,7 +53,7 @@ You can specify the following properties when you create a **sharePointRestoreSe
 
 |Property|Type|Description|
 |:---|:---|:---|
-|@microsoft.graph.conflictBehavior|String|The conflict resolution behavior when restoring each granular restore artifact in a session. The possible values are: `fail` (default), `replace`, `rename`. Only supported for granular restore sessions. Optional.|
+|conflictBehavior|String|The conflict resolution behavior when restoring each granular restore artifact in a session. The possible values are: `fail` (default), `replace`, `rename`. Only supported for granular restore sessions. Optional.|
 |granularSiteRestoreArtifacts|[granularSiteRestoreArtifact](../resources/granularsiterestoreartifact.md) collection|A collection of [granularSiteRestoreArtifact](../resources/granularsiterestoreartifact.md) objects. Required.|
 |siteRestoreArtifacts|[siteRestoreArtifact](../resources/siterestoreartifact.md) collection|A collection of [siteRestoreArtifact](../resources/siterestoreartifact.md) objects. Required.|
 
@@ -323,6 +323,7 @@ Content-Type: application/json
 }
 ```
 
+---
 #### Response
 
 The following example shows the response.

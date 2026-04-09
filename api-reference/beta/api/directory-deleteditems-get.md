@@ -2,7 +2,7 @@
 title: "Get deleted item (directory object)"
 ms.date: 11/17/2025
 description: "Retrieve the properties of a recently deleted application, group, service principal, or user from deleted items."
-author: "keylimesoda"
+author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType

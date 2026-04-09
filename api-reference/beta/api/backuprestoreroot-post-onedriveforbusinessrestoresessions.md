@@ -56,7 +56,7 @@ You can specify the following properties when you create a **oneDriveForBusiness
 
 |Property|Type|Description|
 |:---|:---|:---|
-|@microsoft.graph.conflictBehavior|String|The conflict resolution behavior when restoring each granular restore artifact in a session. The possible values are: `fail` (default), `replace`, `rename`. Only supported for granular restore sessions. Optional.|
+|conflictBehavior|String|The conflict resolution behavior when restoring each granular restore artifact in a session. The possible values are: `fail` (default), `replace`, `rename`. Only supported for granular restore sessions. Optional.|
 |driveRestoreArtifacts|[driveRestoreArtifact](../resources/driverestoreartifact.md) collection|A collection of [driveRestoreArtifact](../resources/driverestoreartifact.md) objects. Required.|
 |granularDriveRestoreArtifacts|[granularDriveRestoreArtifact](../resources/granulardriverestoreartifact.md) collection| A collection of [granularDriveRestoreArtifact](../resources/granulardriverestoreartifact.md) objects. Required.|
 

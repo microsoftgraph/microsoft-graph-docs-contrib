@@ -319,8 +319,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2026-03-12T18:25:50.8142806Z",
-      "WorkloadArea": "Microsoft.TenantGovernance",
-      "SubArea": ""
+      "WorkloadArea": "Tenant management",
+      "SubArea": "Governance"
     },
     {
       "ChangeList": [
