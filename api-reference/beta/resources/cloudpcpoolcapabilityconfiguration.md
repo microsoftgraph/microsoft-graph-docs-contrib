@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract type that represents the base capabilities configuration for a Cloud PC pool.
+An abstract type that represents the base capabilities configuration for a [Cloud PC pool](../resources/cloudpcpool.md).
 
 Base type of [cloudPcAgentPoolCapabilityConfiguration](../resources/cloudpcagentpoolcapabilityconfiguration.md).
 

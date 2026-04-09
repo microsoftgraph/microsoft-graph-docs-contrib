@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcPool",
           "ChangeType": "Addition",
-          "Description": "Added the [cloudPcPool](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcPool?view=graph-rest-beta) resource type.",
+          "Description": "Added the [cloudPcPool](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcPool?view=graph-rest-beta) resource and associated methods.",
           "Target": "cloudPcPool"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcPoolAssignment",
           "ChangeType": "Addition",
-          "Description": "Added the [cloudPcPoolAssignment](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcPoolAssignment?view=graph-rest-beta) resource type.",
+          "Description": "Added the [cloudPcPoolAssignment](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcPoolAssignment?view=graph-rest-beta) resource and associated methods.",
           "Target": "cloudPcPoolAssignment"
         },
         {

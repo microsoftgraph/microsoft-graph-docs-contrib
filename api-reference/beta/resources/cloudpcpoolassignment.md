@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract type that represents a base assignment of a principal to a Cloud PC pool.
+An abstract type that represents a base assignment of a principal to a [Cloud PC pool](../resources/cloudpcpool.md).
 
 Base type of [cloudPcAgentPoolUserAssignment](../resources/cloudpcagentpooluserassignment.md).
 
