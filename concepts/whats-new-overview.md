@@ -52,6 +52,11 @@ Added the **deprecationDate** property to the [applicationTemplate](/graph/api/r
 - [Update](/graph/api/mailboxprotectionunit-update?view=graph-rest-beta&preserve-view=true) the **billingPolicyId** property on a [mailboxProtectionUnit](/graph/api/resources/mailboxprotectionunit?view=graph-rest-beta&preserve-view=true) object.
 - [Update](/graph/api/siteprotectionunit-update?view=graph-rest-beta&preserve-view=true) the **billingPolicyId** property on a [siteProtectionUnit](/graph/api/resources/siteprotectionunit?view=graph-rest-beta&preserve-view=true) object.
 
+### Device and app management | Cloud PC
+
+- Added the [cloudPcPool](/graph/api/resources/cloudpcpool?view=graph-rest-beta&preserve-view=true) resource and its derived type [cloudPcAgentPool](/graph/api/resources/cloudpcagentpool?view=graph-rest-beta&preserve-view=true) to enable management of Cloud PC pools for agentic workloads.
+- Added the [cloudPcPoolAssignment](/graph/api/resources/cloudpcpoolassignment?view=graph-rest-beta&preserve-view=true) resource and its derived type [cloudPcAgentPoolUserAssignment](/graph/api/resources/cloudpcagentpooluserassignment?view=graph-rest-beta&preserve-view=true) to manage pool assignments.
+
 ### Identity and access | Identity and sign-in
 
 Added the **blueprintId** and **source** agent-descriptive properties to [agentRiskDetection](/graph/api/resources/agentriskdetection?view=graph-rest-beta&preserve-view=true) and [riskyAgent](/graph/api/resources/riskyagent?view=graph-rest-beta&preserve-view=true) resources.
@@ -171,9 +176,6 @@ The new Tenant Configuration Management APIs in Microsoft Graph allow administra
 - Added [cloudPcExternalPartnerActionReport](/graph/api/resources/cloudpcexternalpartneractionreport?view=graph-rest-beta&preserve-view=true) as a new complex type for [cloudpcexternalpartner](/graph/api/resources/cloudpcexternalpartner?view=graph-rest-beta&preserve-view=true).
 - [Retry the upload](/graph/api/cloudpcdeviceimage-retryupload?view=graph-rest-beta&preserve-view=true) of a [cloudPcDeviceImage](/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta&preserve-view=true) object that previously failed.
 - Deprecated the [reupload](/graph/api/cloudpcdeviceimage-reupload?view=graph-rest-beta&preserve-view=true) method in favor of [retryUpload](/graph/api/cloudpcdeviceimage-retryupload?view=graph-rest-beta&preserve-view=true).
-- Added the [cloudPcPool](/graph/api/resources/cloudpcpool?view=graph-rest-beta&preserve-view=true) resource and its derived type [cloudPcAgentPool](/graph/api/resources/cloudpcagentpool?view=graph-rest-beta&preserve-view=true) to enable management of Cloud PC pools for agentic workloads.
-- Added the [cloudPcPoolAssignment](/graph/api/resources/cloudpcpoolassignment?view=graph-rest-beta&preserve-view=true) resource and its derived type [cloudPcAgentPoolUserAssignment](/graph/api/resources/cloudpcagentpooluserassignment?view=graph-rest-beta&preserve-view=true) to manage pool assignments.
-- Added the **cloudPcPools** relationship to the [virtualEndpoint](/graph/api/resources/virtualendpoint?view=graph-rest-beta&preserve-view=true) and [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resources.
 
 ### Employee experience | Employee engagement
 
