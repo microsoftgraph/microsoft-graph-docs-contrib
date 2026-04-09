@@ -43,12 +43,13 @@ PATCH /deviceManagement/virtualEndpoint/cloudPcPools/{cloudPcPool-id}
 
 ## Request body
 
-In the request body, supply a JSON representation of the properties of the [cloudPcPool](../resources/cloudpcpool.md) object to update.
+You must specify the **@odata.type** property and the value of the [cloudPcPool](../resources/cloudpcpool.md) object type to update. For example, `"@odata.type": "#microsoft.graph.cloudPcAgentPool"`.
 
 The following table lists the properties that can be updated for a [cloudPcPool](../resources/cloudpcpool.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
+|@odata.type|String|The type of the cloud PC pool to update. Required.|
 |billingConfiguration|[cloudPcAgentPoolBillingConfiguration](../resources/cloudpcagentpoolbillingconfiguration.md)|The billing configuration for the agent pool, including billing type and billing plan identifier.|
 |capabilities|[cloudPcPoolCapabilityConfiguration](../resources/cloudpcpoolcapabilityconfiguration.md)|The capabilities configuration for the pool, including single sign-on settings.|
 |cloudPcConfiguration|[cloudPcConfiguration](../resources/cloudpcconfiguration.md)|The Cloud PC specification, including image and operating system locale settings for provisioning.|
@@ -77,6 +78,7 @@ PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPcP
 Content-Type: application/json
 
 {
+  "@odata.type": "#microsoft.graph.cloudPcAgentPool",
   "displayName": "Contoso Development Pool Updated",
   "description": "Contoso Development Pool Description Updated"
 }
