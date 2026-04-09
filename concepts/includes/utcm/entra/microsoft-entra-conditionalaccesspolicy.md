@@ -53,11 +53,11 @@ This resource configures a Microsoft Entra conditional access policy.
 | SignInFrequencyValue | Write | UInt32 | The sign-in frequency time in the specified unit enforced by the policy. | - |
 | TermsOfUse | Write | String | The display name of the terms of use to assign. | - |
 | CustomAuthenticationFactors | Write | StringArray[] | The custom controls assigned to the grant property of this policy. | - |
-| SignInFrequencyType | Write | String | The sign-in frequency unit (days or hours) used by the policy. | `Days`, `Hours`, `` |
+| SignInFrequencyType | Write | String | The sign-in frequency unit (days or hours) used by the policy. | `Days`, `Hours` |
 | SignInFrequencyIsEnabled | Write | Boolean | Specifies whether sign-in frequency is enforced by the policy. | - |
 | SignInFrequencyInterval | Write | String | The sign-in frequency interval. Possible values are: `timeBased`, `everyTime`, and `unknownFutureValue`. | `timeBased`, `everyTime`, `unknownFutureValue` |
 | PersistentBrowserIsEnabled | Write | Boolean | Specifies whether browser persistence is controlled by the policy. | - |
-| PersistentBrowserMode | Write | String | Specifies the browser persistence control enforced by the policy. | `Always`, `Never`, `` |
+| PersistentBrowserMode | Write | String | Specifies the browser persistence control enforced by the policy. | `Always`, `Never` |
 | AuthenticationStrength | Write | String | The name of the associated authentication strength policy. | - |
 | TransferMethods | Write | String | The names of the associated authentication flow transfer methods. Possible values are: `deviceCodeFlow`, `authenticationTransfer`, or `deviceCodeFlow, authenticationTransfer`. | - |
 | AuthenticationContexts | Write | StringArray[] | The authentication context class references. | - |
