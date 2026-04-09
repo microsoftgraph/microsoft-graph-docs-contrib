@@ -1041,15 +1041,6 @@ configuration:
       then:
       - removeLabel:
           label: 'resolved: awaiting prod deployment'
-    - description: Add schema live label when pull request is labeled resolved awaiting prod deployment
-      if:
-      - payloadType: Pull_Request
-      - labelAdded:
-          label: 'resolved: awaiting prod deployment'
-      - isOpen
-      then:
-      - addLabel:
-          label: schema live
     - description: Add do not merge label to new pull requests opened by contributors
       if:
       - payloadType: Pull_Request

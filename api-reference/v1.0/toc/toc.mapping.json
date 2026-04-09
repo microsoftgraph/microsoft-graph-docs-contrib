@@ -2259,7 +2259,7 @@
       ]
     },
     {
-      "name": "Tenant management",
+      "name": "Tenants",
       "childNodes": [
         {
           "name": "Configuration management",
