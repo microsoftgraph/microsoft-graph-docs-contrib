@@ -47,7 +47,8 @@ Removed the `model` parameters and payment-model guidance from Microsoft Teams e
 - [Update](/graph/api/driveprotectionunit-update?view=graph-rest-beta&preserve-view=true) the **billingPolicyId** property on a [driveProtectionUnit](/graph/api/resources/driveprotectionunit?view=graph-rest-beta&preserve-view=true) object.
 - [Update](/graph/api/mailboxprotectionunit-update?view=graph-rest-beta&preserve-view=true) the **billingPolicyId** property on a [mailboxProtectionUnit](/graph/api/resources/mailboxprotectionunit?view=graph-rest-beta&preserve-view=true) object.
 - [Update](/graph/api/siteprotectionunit-update?view=graph-rest-beta&preserve-view=true) the **billingPolicyId** property on a [siteProtectionUnit](/graph/api/resources/siteprotectionunit?view=graph-rest-beta&preserve-view=true) object.
-
+- Use the **destinationType** property on [granularRestoreArtifactBase](/graph/api/resources/granularrestoreartifactbase?view=graph-rest-beta&preserve-view=true), [granularDriveRestoreArtifact](/graph/api/resources/granulardriverestoreartifact?view=graph-rest-beta&preserve-view=true), and [granularSiteRestoreArtifact](/graph/api/resources/granularsiterestoreartifact?view=graph-rest-beta&preserve-view=true) to specify the restoration destination, such as in-place restore.
+- Use the **@microsoft.graph.conflictBehavior** annotation when [creating a OneDrive restore session](/graph/api/backuprestoreroot-post-onedriveforbusinessrestoresessions?view=graph-rest-beta&preserve-view=true) or [creating a SharePoint restore session](/graph/api/backuprestoreroot-post-sharepointrestoresessions?view=graph-rest-beta&preserve-view=true) to control conflict resolution during granular restore operations.
 
 ### Teamwork and communications | Messaging
 
