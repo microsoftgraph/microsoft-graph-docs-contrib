@@ -12,7 +12,7 @@ ms.date: 03/06/2024
 
 Namespace: microsoft.graph
 
-The list of current user options that can be used to filter on the [access package assignment requests](../api/accesspackageassignmentrequest-accesspackageassignmentrequestfilterbycurrentuseroptions.md) list.
+The list of current user options that can be used to filter on the [access package assignment requests](../api/accesspackageassignmentrequest-filterbycurrentuser.md) list.
 
 ## Members
 |Member|Description|
