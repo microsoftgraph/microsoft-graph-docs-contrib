@@ -707,7 +707,7 @@ items:
       href: ../../resources/cloudpcmanagementassignmenttarget.md
     - name: Cloud PC management group assignment target
       href: ../../resources/cloudpcmanagementgroupassignmenttarget.md
-    - name: Cloud PC Microsoft hosted network configuration
+    - name: Cloud PC Microsoft-hosted network configuration
       href: ../../resources/cloudpcmicrosofthostednetworkconfiguration.md
     - name: Cloud PC network configuration
       href: ../../resources/cloudpcnetworkconfiguration.md
