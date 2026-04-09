@@ -14,11 +14,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The list of current user options that can be used to filter on the access package assignment requests list.
+The list of current user options that can be used to filter on the [access package assignment requests](../resources/accesspackageassignmentrequest-accesspackageassignmentrequestfilterbycurrentuseroptions.md) list.
 
 ## Members
-|Member|Value|Description|
-|:---|:---|:---|
-|target|1|The user the assignment request is targeted for.|
-|createdBy|2|The user that created the assignment request.|
-|approver|3|The approver of the assignment request.|
+|Member|Description|
+|:---|:---|
+|target|The user the assignment request is targeted for.|
+|createdBy|The user that created the assignment request.|
+|approver|The approver of the assignment request.|
