@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 ms.date: 03/23/2026
+toc.title: Cloud PC Microsoft-hosted network configuration
 ---
 
 # cloudPcMicrosoftHostedNetworkConfiguration resource type
