@@ -43,9 +43,6 @@ In the request body, supply a JSON representation of a [agentIdentityBlueprintPr
 
 If successful, this method returns a `201 Created` response code and a [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object in the response body.
 
-> [!NOTE]
-> When a user with the **Agent ID Developer** role creates an agent identity blueprint principal, they are automatically added as an owner of that blueprint principal. This allows them to perform subsequent write operations on the blueprint principal without requiring an **Agent ID Administrator**.
-
 For information about errors returned by agent identity APIs, see [Agent identity error codes](/entra/agent-id/identity-platform/error-codes).
 
 ## Example
