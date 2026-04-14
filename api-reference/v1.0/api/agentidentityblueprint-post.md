@@ -43,6 +43,9 @@ In the request body, supply a JSON representation of [agent identity blueprint](
 
 If successful, this method returns `201 Created` response code and an [agent identity blueprint](../resources/agentidentityblueprint.md) object in the response body.
 
+> [!NOTE]
+> When a user with the **Agent ID Developer** role creates an agent identity blueprint, they are automatically added as an owner of that blueprint. This allows them to perform subsequent write operations on the blueprint without requiring an **Agent ID Administrator**.
+
 ## Examples
 
 #### Request
