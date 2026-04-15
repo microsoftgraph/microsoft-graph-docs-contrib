@@ -22,8 +22,10 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/fido2authenticationmethod-list.md)|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) collection|Retrieve a list of a user's **fido2AuthenticationMethod** objects and their properties.|
+|[Create](../api/authentication-post-fido2methods.md)|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|Create a new [fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) object based on [WebAuthn W3C standards](https://www.w3.org/TR/webauthn-2/#iface-pkcredential).|
 |[Get](../api/fido2authenticationmethod-get.md)|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|Read the properties and relationships of a user's **fido2AuthenticationMethod** object.|
 |[Delete](../api/fido2authenticationmethod-delete.md)|None|Delete a user's **fido2AuthenticationMethod** object.|
+|[Creation options](../api/fido2authenticationmethod-creationoptions.md)|[webauthnCredentialCreationOptions](../resources/webauthncredentialcreationoptions.md)|Retrieve creation options required to generate and register an Entra ID compatible passkey.|
 
 
 ## Properties
@@ -37,6 +39,7 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 |id|String|The authentication method identifier.|
 |model|String|The manufacturer-assigned model of the FIDO2 passkey.|
 |passkeyType|passkeyType|The type of passkey. The possible values are: `deviceBound`, `synced`, `unknownFutureValue`.|
+|publicKeyCredential|[webauthnPublicKeyCredential](../resources/webauthnpublickeycredential.md)|Contains the WebAuthn public key credential information being registered. Only used for write requests. This property isn't returned on read operations.|
 
 ## Relationships
 None.
@@ -65,7 +68,10 @@ The following JSON representation shows the resource type.
   "displayName": "String",
   "id": "String (identifier)",
   "model": "String",
-  "passkeyType": "String"
+  "passkeyType": "String",
+  "publicKeyCredential": {
+    "@odata.type": "microsoft.graph.webauthnPublicKeyCredential"
+  }
   }
 ```
 
