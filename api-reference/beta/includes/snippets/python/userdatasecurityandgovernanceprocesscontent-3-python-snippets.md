@@ -11,6 +11,7 @@ from msgraph_beta.generated.models.process_content_request import ProcessContent
 from msgraph_beta.generated.models.process_content_metadata_base import ProcessContentMetadataBase
 from msgraph_beta.generated.models.process_file_metadata import ProcessFileMetadata
 from msgraph_beta.generated.models.text_content import TextContent
+from msgraph_beta.generated.models.content_category import ContentCategory
 from msgraph_beta.generated.models.custom_metadata_dictionary import CustomMetadataDictionary
 from msgraph_beta.generated.models.activity_metadata import ActivityMetadata
 from msgraph_beta.generated.models.user_activity_type import UserActivityType
@@ -38,15 +39,13 @@ request_body = ProcessContentPostRequestBody(
 				length = 17352,
 				is_truncated = False,
 				owner_id = "ffe1ca70-6e5b-4120-abf0-472034ba05d4",
+				content_category = ContentCategory.None,
 				custom_properties = CustomMetadataDictionary(
 					additional_data = {
 							"department" : "Finance",
 							"reviewer_name" : "John Smith",
 					}
 				),
-				additional_data = {
-						"content_category" : "none",
-				}
 			),
 		],
 		activity_metadata = ActivityMetadata(

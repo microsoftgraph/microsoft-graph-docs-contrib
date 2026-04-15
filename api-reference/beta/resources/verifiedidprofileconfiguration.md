@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Verified ID profile configuration defining set of properties of a specific Verified ID credential. 
+Verified ID profile configuration defining set of properties of a specific [Verified ID credential](../resources/verifiedidprofile.md). 
 
 ## Properties
 |Property|Type|Description|

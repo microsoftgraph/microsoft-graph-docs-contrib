@@ -31,12 +31,7 @@ var requestBody = new ProcessContentPostRequestBody
 				IsTruncated = false,
 				CreatedDateTime = DateTimeOffset.Parse("2025-05-27T17:23:20"),
 				ModifiedDateTime = DateTimeOffset.Parse("2025-05-27T17:23:20"),
-				AdditionalData = new Dictionary<string, object>
-				{
-					{
-						"contentCategory" , "ai"
-					},
-				},
+				ContentCategory = ContentCategory.Ai,
 			},
 		},
 		ActivityMetadata = new ActivityMetadata

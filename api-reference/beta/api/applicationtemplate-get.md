@@ -142,6 +142,7 @@ Content-type: application/json
         "social"
     ],
     "publisher": "LinkedIn",
+    "deprecationDate": "2027-12-31",
     "description": "LinkedIn Lookup is the easiest way to find coworkers and teams at your company. Lookup is a new people search tool that combines employees' LinkedIn profile information and Active Directory information, allowing you to quickly find and contact your coworkers, on desktop or mobile. Requires an existing Lookup company subscription.",
     "endpoints": [
         "linkedin.com",

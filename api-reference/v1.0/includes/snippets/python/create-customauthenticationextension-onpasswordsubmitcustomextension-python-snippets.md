@@ -6,12 +6,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # Code snippets are only available for the latest version. Current version is 1.x
 from msgraph import GraphServiceClient
-from msgraph.generated.models.custom_authentication_extension import CustomAuthenticationExtension
+from msgraph.generated.models.on_password_submit_custom_extension import OnPasswordSubmitCustomExtension
 from msgraph.generated.models.http_request_endpoint import HttpRequestEndpoint
 from msgraph.generated.models.azure_ad_token_authentication import AzureAdTokenAuthentication
 from msgraph.generated.models.custom_extension_client_configuration import CustomExtensionClientConfiguration
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
-request_body = CustomAuthenticationExtension(
+request_body = OnPasswordSubmitCustomExtension(
 	odata_type = "#microsoft.graph.onPasswordSubmitCustomExtension",
 	display_name = "Legacy password validator",
 	description = "Validates passwords against a legacy authentication system for JIT migration",

@@ -10,7 +10,7 @@ from msgraph_beta.generated.employee_experience.goals.export_jobs.export_jobs_re
 from kiota_abstractions.base_request_configuration import RequestConfiguration
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 query_params = ExportJobsRequestBuilder.ExportJobsRequestBuilderGetQueryParameters(
-		filter = " explorerViewId eq ‘9ab0fcab-c1d4-4b26-963b-a3c33155f853’",
+		filter = "explorerViewId eq '9ab0fcab-c1d4-4b26-963b-a3c33155f853'",
 )
 
 request_configuration = RequestConfiguration(

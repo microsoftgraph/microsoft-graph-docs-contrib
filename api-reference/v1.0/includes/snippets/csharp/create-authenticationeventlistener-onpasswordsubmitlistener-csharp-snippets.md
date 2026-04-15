@@ -8,9 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Models;
-using Microsoft.Kiota.Abstractions.Serialization;
 
-var requestBody = new AuthenticationEventListener
+var requestBody = new OnPasswordSubmitListener
 {
 	OdataType = "#microsoft.graph.onPasswordSubmitListener",
 	DisplayName = "JIT migration listener",
@@ -33,26 +32,13 @@ var requestBody = new AuthenticationEventListener
 			},
 		},
 	},
-	AdditionalData = new Dictionary<string, object>
+	Handler = new OnPasswordMigrationCustomExtensionHandler
 	{
+		OdataType = "#microsoft.graph.onPasswordMigrationCustomExtensionHandler",
+		MigrationPropertyId = "extension_b7b1c57b532f40b8b5ed4b7a7ba67401_requiresMigration",
+		CustomExtension = new OnPasswordSubmitCustomExtension
 		{
-			"handler" , new UntypedObject(new Dictionary<string, UntypedNode>
-			{
-				{
-					"@odata.type", new UntypedString("#microsoft.graph.onPasswordMigrationCustomExtensionHandler")
-				},
-				{
-					"migrationPropertyId", new UntypedString("extension_b7b1c57b532f40b8b5ed4b7a7ba67401_requiresMigration")
-				},
-				{
-					"customExtension", new UntypedObject(new Dictionary<string, UntypedNode>
-					{
-						{
-							"id", new UntypedString("6fc5012e-7665-43d6-9708-4370863f4e6e")
-						},
-					})
-				},
-			})
+			Id = "6fc5012e-7665-43d6-9708-4370863f4e6e",
 		},
 	},
 };

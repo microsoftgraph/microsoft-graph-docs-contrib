@@ -1774,7 +1774,8 @@
             "microsoft.graph.security.sensor",
             "microsoft.graph.security.sensorCandidate",
             "microsoft.graph.security.sensorCandidateActivationConfiguration",
-            "microsoft.graph.security.identityAccounts"
+            "microsoft.graph.security.identityAccounts",
+            "microsoft.graph.security.autoAuditingConfiguration"
           ],
           "complexTypes": [
             "microsoft.graph.security.deploymentAccessKeyType",
@@ -2259,7 +2260,7 @@
       ]
     },
     {
-      "name": "Tenant management",
+      "name": "Tenants",
       "childNodes": [
         {
           "name": "Configuration management",

@@ -3509,6 +3509,48 @@
       "CreatedDateTime": "2026-01-26T09:12:41.0410693Z",
       "WorkloadArea": "Security",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "763c9469-a7c4-49b0-b55a-30043ec35ede",
+          "ApiChange": "Resource",
+          "ChangedApiName": "autoAuditingConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [autoAuditingConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/security-autoAuditingConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "autoAuditingConfiguration"
+        },
+        {
+          "Id": "763c9469-a7c4-49b0-b55a-30043ec35ede",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "autoAuditingConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **autoAuditingConfiguration** relationship to the [settingsContainer](https://learn.microsoft.com/en-us/graph/api/resources/security-settingsContainer?view=graph-rest-1.0) resource.",
+          "Target": "settingsContainer"
+        },
+        {
+          "Id": "763c9469-a7c4-49b0-b55a-30043ec35ede",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "settings",
+          "ChangeType": "Addition",
+          "Description": "Added the **settings** relationship to the [identityContainer](https://learn.microsoft.com/en-us/graph/api/resources/security-identityContainer?view=graph-rest-1.0) resource.",
+          "Target": "identityContainer"
+        },
+        {
+          "Id": "763c9469-a7c4-49b0-b55a-30043ec35ede",
+          "ApiChange": "Resource",
+          "ChangedApiName": "settingsContainer",
+          "ChangeType": "Addition",
+          "Description": "Added the [settingsContainer](https://learn.microsoft.com/en-us/graph/api/resources/security-settingsContainer?view=graph-rest-1.0) resource.",
+          "Target": "settingsContainer"
+        }
+      ],
+      "Id": "763c9469-a7c4-49b0-b55a-30043ec35ede",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-04-09T12:00:00.0000000Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
     }
   ]
 }

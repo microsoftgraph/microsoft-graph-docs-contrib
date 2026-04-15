@@ -25,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "sharepointrestoresession_list_granularsiterestoreartifacts" } -->
 [!INCLUDE [permissions-table](../includes/permissions/sharepointrestoresession-list-granularsiterestoreartifacts-permissions.md)]
 
+[!INCLUDE [rbac-backuprestore-browse-granular-apis](../includes/rbac-for-apis/rbac-backuprestore-browse-granular-apis.md)]
+
 ## HTTP request
 
 <!-- {

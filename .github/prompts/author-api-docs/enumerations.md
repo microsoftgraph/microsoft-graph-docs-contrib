@@ -126,7 +126,8 @@ Create a dedicated topic for the enumeration. This option is rarely applicable.
 
 1. **Create enum topic:**
    - Title: "{enum-type} enum type"
-   - Single sentence describing the enum's purpose
+   - doc_type: "enumPageType"
+   - Single sentence describing the enum's purpose, linking to consuming resource(s)
    - **For flagged enums:** Append "This flagged enumeration allows multiple members to be selected simultaneously." to the introductory text.
    - **For evolvable enums:** Mention it's an evolvable enumeration
 

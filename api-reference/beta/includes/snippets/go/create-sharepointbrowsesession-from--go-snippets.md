@@ -16,10 +16,8 @@ import (
 )
 
 requestBody := graphmodels.NewSharePointBrowseSession()
-additionalData := map[string]interface{}{
-	"restorePointId" : "TXpSbE5HUXpNR1l0TldZMFlpMDBNMk16TFdFeFl6WXRZall3TTJFeFl6Sm1OV000WHpFPV8xNzQ5NTY3MDAwXzE0XzE=", 
-}
-requestBody.SetAdditionalData(additionalData)
+restorePointId := "TXpSbE5HUXpNR1l0TldZMFlpMDBNMk16TFdFeFl6WXRZall3TTJFeFl6Sm1OV000WHpFPV8xNzQ5NTY3MDAwXzE0XzE="
+requestBody.SetRestorePointId(&restorePointId) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 sharePointBrowseSessions, err := graphClient.Solutions().BackupRestore().SharePointBrowseSessions().Post(context.Background(), requestBody, nil)
