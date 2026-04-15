@@ -664,6 +664,7 @@ Namespace: microsoft.graph
 | systemRemove |
 | onBehalfAdd |
 | unknownFutureValue |
+| approverRemove |
 
 ### accessPackageSubjectType values
 

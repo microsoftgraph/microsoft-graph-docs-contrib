@@ -5,7 +5,7 @@ author: ombongifaith
 ms.author: ombongifaith
 ms.topic: concept-article
 ms.localizationpriority: high
-ms.date: 02/06/2026
+ms.date: 04/10/2026
 ---
 
 # Known issues in Microsoft Graph
@@ -18,7 +18,7 @@ This article provides information about known issues related to Microsoft Graph 
 
 ## Calendar
 
-[!INCLUDE [calendar](includes/known-issues/calendar.md)]
+[!INCLUDE [calendars](includes/known-issues/calendars.md)]
 
 ## Change notifications
 

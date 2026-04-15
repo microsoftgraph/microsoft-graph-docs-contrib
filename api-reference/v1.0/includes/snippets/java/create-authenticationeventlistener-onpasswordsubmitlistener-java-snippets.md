@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-AuthenticationEventListener authenticationEventListener = new AuthenticationEventListener();
+OnPasswordSubmitListener authenticationEventListener = new OnPasswordSubmitListener();
 authenticationEventListener.setOdataType("#microsoft.graph.onPasswordSubmitListener");
 authenticationEventListener.setDisplayName("JIT migration listener");
 AuthenticationConditions conditions = new AuthenticationConditions();
@@ -23,15 +23,13 @@ additionalData.put("includeAllApplications", false);
 applications.setAdditionalData(additionalData);
 conditions.setApplications(applications);
 authenticationEventListener.setConditions(conditions);
-HashMap<String, Object> additionalData1 = new HashMap<String, Object>();
- handler = new ();
+OnPasswordMigrationCustomExtensionHandler handler = new OnPasswordMigrationCustomExtensionHandler();
 handler.setOdataType("#microsoft.graph.onPasswordMigrationCustomExtensionHandler");
 handler.setMigrationPropertyId("extension_b7b1c57b532f40b8b5ed4b7a7ba67401_requiresMigration");
- customExtension = new ();
+OnPasswordSubmitCustomExtension customExtension = new OnPasswordSubmitCustomExtension();
 customExtension.setId("6fc5012e-7665-43d6-9708-4370863f4e6e");
 handler.setCustomExtension(customExtension);
-additionalData1.put("handler", handler);
-authenticationEventListener.setAdditionalData(additionalData1);
+authenticationEventListener.setHandler(handler);
 AuthenticationEventListener result = graphClient.identity().authenticationEventListeners().post(authenticationEventListener);
 
 

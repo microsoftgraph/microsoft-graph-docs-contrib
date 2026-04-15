@@ -9,19 +9,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 CrossTenantAccessPolicyConfigurationDefault crossTenantAccessPolicyConfigurationDefault = new CrossTenantAccessPolicyConfigurationDefault();
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
- m365CollaborationInbound = new ();
- users = new ();
-users.setAccessType("allowed");
-LinkedList<Object> targets = new LinkedList<Object>();
- property = new ();
-property.setTarget("AllUsers");
-property.setTargetType("user");
-targets.add(property);
+CrossTenantAccessPolicyM365CollaborationInboundSetting m365CollaborationInbound = new CrossTenantAccessPolicyM365CollaborationInboundSetting();
+CrossTenantAccessPolicyTargetConfiguration users = new CrossTenantAccessPolicyTargetConfiguration();
+users.setAccessType(CrossTenantAccessPolicyTargetConfigurationAccessType.Allowed);
+LinkedList<CrossTenantAccessPolicyTarget> targets = new LinkedList<CrossTenantAccessPolicyTarget>();
+CrossTenantAccessPolicyTarget crossTenantAccessPolicyTarget = new CrossTenantAccessPolicyTarget();
+crossTenantAccessPolicyTarget.setTarget("AllUsers");
+crossTenantAccessPolicyTarget.setTargetType(CrossTenantAccessPolicyTargetType.User);
+targets.add(crossTenantAccessPolicyTarget);
 users.setTargets(targets);
 m365CollaborationInbound.setUsers(users);
-additionalData.put("m365CollaborationInbound", m365CollaborationInbound);
-crossTenantAccessPolicyConfigurationDefault.setAdditionalData(additionalData);
+crossTenantAccessPolicyConfigurationDefault.setM365CollaborationInbound(m365CollaborationInbound);
 CrossTenantAccessPolicyConfigurationDefault result = graphClient.policies().crossTenantAccessPolicy().defaultEscaped().patch(crossTenantAccessPolicyConfigurationDefault);
 
 

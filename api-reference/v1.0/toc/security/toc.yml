@@ -640,6 +640,14 @@ items:
       href: ../../api/security-identityaccounts-get.md
     - name: invokeAction
       href: ../../api/security-identityaccounts-invokeaction.md
+  - name: Auto auditing configuration
+    items:
+    - name: Auto auditing configuration
+      href: ../../resources/security-autoauditingconfiguration.md
+    - name: Get
+      href: ../../api/security-autoauditingconfiguration-get.md
+    - name: Update
+      href: ../../api/security-autoauditingconfiguration-update.md
   - name: Complex types
     items:
     - name: Account

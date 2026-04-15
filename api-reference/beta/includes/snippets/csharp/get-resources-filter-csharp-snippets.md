@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
 var result = await graphClient.Education.Classes["{educationClass-id}"].Assignments["{educationAssignment-id}"].Submissions["{educationSubmission-id}"].Resources.GetAsync((requestConfiguration) =>
 {
-	requestConfiguration.QueryParameters.Filter = " id eq 'c4682401-6866-4962-94d9-7499782a13e9'";
+	requestConfiguration.QueryParameters.Filter = "id eq 'c4682401-6866-4962-94d9-7499782a13e9'";
 });
 
 

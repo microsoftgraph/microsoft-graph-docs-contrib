@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "680f5e12-ea90-4e5d-b489-7f2440d6ee8a",
+          "ApiChange": "Member",
+          "ChangedApiName": "approverRemove",
+          "ChangeType": "Addition",
+          "Description": "Added the `approverRemove` member to the **accessPackageRequestType** enumeration.",
+          "Target": "accessPackageRequestType"
+        }
+      ],
+      "Id": "680f5e12-ea90-4e5d-b489-7f2440d6ee8a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-04-08T18:19:41.5003577Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "33537a5f-f7d5-4f51-b0ef-0c0fe4b92709",
           "ApiChange": "Member",
           "ChangedApiName": "allDirectoryAgentIdentities",

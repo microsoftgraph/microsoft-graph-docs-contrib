@@ -28,15 +28,13 @@ processContentMetadataBase.setCorrelationId("9d84223c-521c-42f4-8f35-3cdeabe515d
 processContentMetadataBase.setLength(17352L);
 processContentMetadataBase.setIsTruncated(false);
 processContentMetadataBase.setOwnerId("ffe1ca70-6e5b-4120-abf0-472034ba05d4");
+processContentMetadataBase.setContentCategory(ContentCategory.None);
 CustomMetadataDictionary customProperties = new CustomMetadataDictionary();
 HashMap<String, Object> additionalData = new HashMap<String, Object>();
 additionalData.put("Department", "Finance");
 additionalData.put("ReviewerName", "John Smith");
 customProperties.setAdditionalData(additionalData);
 processContentMetadataBase.setCustomProperties(customProperties);
-HashMap<String, Object> additionalData1 = new HashMap<String, Object>();
-additionalData1.put("contentCategory", "none");
-processContentMetadataBase.setAdditionalData(additionalData1);
 contentEntries.add(processContentMetadataBase);
 contentToProcess.setContentEntries(contentEntries);
 ActivityMetadata activityMetadata = new ActivityMetadata();

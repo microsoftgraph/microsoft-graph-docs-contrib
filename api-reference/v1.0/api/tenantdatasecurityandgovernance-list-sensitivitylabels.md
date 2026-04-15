@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 List the sensitivity labels available for the entire tenant.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

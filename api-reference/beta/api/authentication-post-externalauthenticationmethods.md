@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Create a new [externalAuthenticationMethod](../resources/externalauthenticationmethod.md) object. This API doesn't support self-service operations.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

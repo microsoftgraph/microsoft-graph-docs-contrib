@@ -8,7 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Models;
-using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new Fido2AuthenticationMethodConfiguration
 {
@@ -25,64 +24,38 @@ var requestBody = new Fido2AuthenticationMethodConfiguration
 		{
 		},
 	},
-	IncludeTargets = new List<AuthenticationMethodTarget>
+	IncludeTargets = new List<PasskeyAuthenticationMethodTarget>
 	{
-		new AuthenticationMethodTarget
+		new PasskeyAuthenticationMethodTarget
 		{
 			TargetType = AuthenticationMethodTargetType.Group,
 			Id = "all_users",
 			IsRegistrationRequired = false,
-			AdditionalData = new Dictionary<string, object>
+			AllowedPasskeyProfiles = new List<Guid?>
 			{
-				{
-					"allowedPasskeyProfiles" , new List<string>
-					{
-						"00000000-0000-0000-0000-000000000001",
-					}
-				},
+				Guid.Parse("00000000-0000-0000-0000-000000000001"),
 			},
 		},
 	},
 	ExcludeTargets = new List<ExcludeTarget>
 	{
 	},
-	AdditionalData = new Dictionary<string, object>
+	PasskeyProfiles = new List<PasskeyProfile>
 	{
+		new PasskeyProfile
 		{
-			"passkeyProfiles" , new List<object>
+			Id = "00000000-0000-0000-0000-000000000001",
+			Name = "Default passkey profile",
+			PasskeyTypes = PasskeyTypes.DeviceBound | PasskeyTypes.Synced,
+			AttestationEnforcement = AttestationEnforcement.Disabled,
+			KeyRestrictions = new Fido2KeyRestrictions
 			{
-				new UntypedObject(new Dictionary<string, UntypedNode>
+				IsEnforced = false,
+				EnforcementType = Fido2RestrictionEnforcementType.Allow,
+				AaGuids = new List<string>
 				{
-					{
-						"id", new UntypedString("00000000-0000-0000-0000-000000000001")
-					},
-					{
-						"name", new UntypedString("Default passkey profile")
-					},
-					{
-						"passkeyTypes", new UntypedString("deviceBound,synced")
-					},
-					{
-						"attestationEnforcement", new UntypedString("disabled")
-					},
-					{
-						"keyRestrictions", new UntypedObject(new Dictionary<string, UntypedNode>
-						{
-							{
-								"isEnforced", new UntypedBoolean(false)
-							},
-							{
-								"enforcementType", new UntypedString("allow")
-							},
-							{
-								"aaGuids", new UntypedArray(new List<UntypedNode>
-								{
-								})
-							},
-						})
-					},
-				}),
-			}
+				},
+			},
 		},
 	},
 };

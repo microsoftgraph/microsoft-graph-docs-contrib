@@ -1191,6 +1191,16 @@ Namespace: microsoft.graph.security
 |jFrogArtifactory|
 |unknownFutureValue|
 
+### deviceType values
+
+| Member                     |
+| :--------------------------|
+| domainController |
+| adfs |
+| adcs |
+| entraConnect |
+| unknownFutureValue |
+
 <!--
 {
   "type": "#page.annotation",

@@ -5,8 +5,8 @@ ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: "security"
 doc_type: resourcePageType
-ms.date: 06/10/2024
-toc.title: tiIndicator resource type (deprecated)
+ms.date: 04/15/2026
+toc.title: Threat intelligence indicator (deprecated)
 ROBOTS: NOINDEX
 ---
 
