@@ -113,6 +113,7 @@ The last column indicates whether updating this property takes effect for an in-
 | startDateTime               | DateTime                                                   | The meeting start time in UTC.                                                      | No                                  |
 | subject                     | String                                                     | The subject of the online meeting.                                                  | No                                  |
 | watermarkProtection         | [watermarkProtectionValues](../resources/watermarkprotectionvalues.md)  | Specifies whether the client application should apply a watermark to a content type. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |No                                  |
+| broadcastSettings (deprecated) | [broadcastMeetingSettings](../resources/broadcastmeetingsettings.md)| Settings related to a live event.                                    | No                                  |
 
 > [!NOTE]
 >
@@ -200,6 +201,7 @@ Content-Type: application/json
    "endDateTime":"2020-09-09T22:03:30.8566356Z",
    "joinWebUrl":"url",
    "subject":"Patch Meeting Subject",
+   "isBroadcast":false,
    "autoAdmittedUsers":"EveryoneInCompany",
    "participants":{
       "organizer":{
