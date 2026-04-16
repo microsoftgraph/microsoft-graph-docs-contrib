@@ -2735,6 +2735,19 @@
                     "userRegistrationActivitySummary",
                     "userSignInUsageByAuthMethodActivity"
                   ]
+                },
+                {
+                  "name": "Premium license utilization",
+                  "resources": [
+                    "azureADPremiumLicenseInsight"
+                  ],
+                  "complexTypes": [
+                    "azureADPremiumFeatureUtilization",
+                    "azureADPremiumP1FeatureUtilizations",
+                    "azureADPremiumP2FeatureUtilizations",
+                    "internetAccessFeatureUtilizations",
+                    "privateAccessFeatureUtilizations"
+                  ]
                 }
               ]
             },

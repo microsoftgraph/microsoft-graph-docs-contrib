@@ -3,6 +3,80 @@
     {
       "ChangeList": [
         {
+          "Id": "b3c7e1a4-5f92-4d8b-a6e3-9c1d2f4b7a80",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureADPremiumLicenseInsight",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureADPremiumLicenseInsight](https://learn.microsoft.com/en-us/graph/api/resources/azureadpremiumlicenseinsight?view=graph-rest-beta) resource.",
+          "Target": "azureADPremiumLicenseInsight"
+        },
+        {
+          "Id": "b3c7e1a4-5f92-4d8b-a6e3-9c1d2f4b7a80",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureADPremiumP1FeatureUtilizations",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureADPremiumP1FeatureUtilizations](https://learn.microsoft.com/en-us/graph/api/resources/azureadpremiump1featureutilizations?view=graph-rest-beta) resource.",
+          "Target": "azureADPremiumP1FeatureUtilizations"
+        },
+        {
+          "Id": "b3c7e1a4-5f92-4d8b-a6e3-9c1d2f4b7a80",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureADPremiumP2FeatureUtilizations",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureADPremiumP2FeatureUtilizations](https://learn.microsoft.com/en-us/graph/api/resources/azureadpremiump2featureutilizations?view=graph-rest-beta) resource.",
+          "Target": "azureADPremiumP2FeatureUtilizations"
+        },
+        {
+          "Id": "b3c7e1a4-5f92-4d8b-a6e3-9c1d2f4b7a80",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureADPremiumFeatureUtilization",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureADPremiumFeatureUtilization](https://learn.microsoft.com/en-us/graph/api/resources/azureadpremiumfeatureutilization?view=graph-rest-beta) resource.",
+          "Target": "azureADPremiumFeatureUtilization"
+        },
+        {
+          "Id": "b3c7e1a4-5f92-4d8b-a6e3-9c1d2f4b7a80",
+          "ApiChange": "Resource",
+          "ChangedApiName": "internetAccessFeatureUtilizations",
+          "ChangeType": "Addition",
+          "Description": "Added the [internetAccessFeatureUtilizations](https://learn.microsoft.com/en-us/graph/api/resources/internetaccessfeatureutilizations?view=graph-rest-beta) resource.",
+          "Target": "internetAccessFeatureUtilizations"
+        },
+        {
+          "Id": "b3c7e1a4-5f92-4d8b-a6e3-9c1d2f4b7a80",
+          "ApiChange": "Resource",
+          "ChangedApiName": "privateAccessFeatureUtilizations",
+          "ChangeType": "Addition",
+          "Description": "Added the [privateAccessFeatureUtilizations](https://learn.microsoft.com/en-us/graph/api/resources/privateaccessfeatureutilizations?view=graph-rest-beta) resource.",
+          "Target": "privateAccessFeatureUtilizations"
+        },
+        {
+          "Id": "b3c7e1a4-5f92-4d8b-a6e3-9c1d2f4b7a80",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "azureADPremiumLicenseInsight",
+          "ChangeType": "Addition",
+          "Description": "Added the **azureADPremiumLicenseInsight** relationship to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportroot?view=graph-rest-beta) resource.",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "b3c7e1a4-5f92-4d8b-a6e3-9c1d2f4b7a80",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get azureADPremiumLicenseInsight",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get azureADPremiumLicenseInsight](https://learn.microsoft.com/en-us/graph/api/azureadpremiumlicenseinsight-get?view=graph-rest-beta) method to the [azureADPremiumLicenseInsight](https://learn.microsoft.com/en-us/graph/api/resources/azureadpremiumlicenseinsight?view=graph-rest-beta) resource.",
+          "Target": "azureADPremiumLicenseInsight"
+        }
+      ],
+      "Id": "b3c7e1a4-5f92-4d8b-a6e3-9c1d2f4b7a80",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-04-16T00:00:00.0000000Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "31811aaf-eeca-4d83-ba6f-b32000e3c573",
           "ApiChange": "Resource",
           "ChangedApiName": "conditionalAccessAudience",
