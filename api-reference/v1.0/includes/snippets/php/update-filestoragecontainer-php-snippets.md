@@ -5,9 +5,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```php
 
 <?php
-use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Models\FileStorageContainer;
-use Microsoft\Graph\Beta\Generated\Models\FileStorageContainerSettings;
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\FileStorageContainer;
+use Microsoft\Graph\Generated\Models\FileStorageContainerSettings;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);

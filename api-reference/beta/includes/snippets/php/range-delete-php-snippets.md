@@ -12,7 +12,7 @@ use Microsoft\Graph\Beta\Generated\Drives\Item\Items\Item\Workbook\Names\Item\Ra
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new DeletePostRequestBody();
-$requestBody->setShift('shift-value');
+$requestBody->setShift('Up');
 
 $graphServiceClient->drives()->byDriveId('drive-id')->items()->byDriveItemId('driveItem-id')->workbook()->names()->byWorkbookNamedItemId('workbookNamedItem-id')->range()->delete()->post($requestBody)->wait();
 

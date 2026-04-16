@@ -16,6 +16,10 @@ import (
 )
 
 requestBody := graphmodels.NewProfilePropertySetting()
+displayName := "Profile priority config"
+requestBody.SetDisplayName(&displayName) 
+name := "Profile priority config"
+requestBody.SetName(&name) 
 prioritizedSourceUrls := []string {
 	"https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr1')",
 }

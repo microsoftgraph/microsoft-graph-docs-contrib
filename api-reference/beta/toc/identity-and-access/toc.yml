@@ -296,6 +296,50 @@ items:
       href: ../../api/domain-list-serviceconfigurationrecords.md
     - name: List verification DNS records
       href: ../../api/domain-list-verificationdnsrecords.md
+  - name: Entra Backup and Recovery
+    items:
+    - name: Overview
+      href: ../../resources/entrarecoveryservices-backup-recovery-overview.md
+    - name: Recovery job
+      items:
+      - name: Recovery job
+        href: ../../resources/entrarecoveryservices-recoveryjob.md
+      - name: List
+        href: ../../api/entrarecoveryservices-snapshot-list-recoveryjobs.md
+      - name: Create
+        href: ../../api/entrarecoveryservices-snapshot-post-recoveryjobs.md
+      - name: Get
+        href: ../../api/entrarecoveryservices-recoveryjob-get.md
+      - name: Get failed changes
+        href: ../../api/entrarecoveryservices-recoveryjob-getfailedchanges.md
+    - name: Recovery job base
+      items:
+      - name: Recovery job base
+        href: ../../resources/entrarecoveryservices-recoveryjobbase.md
+      - name: List
+        href: ../../api/entrarecoveryservices-recovery-list-jobs.md
+      - name: Cancel
+        href: ../../api/entrarecoveryservices-recoveryjobbase-cancel.md
+    - name: Recovery preview job
+      items:
+      - name: Recovery preview job
+        href: ../../resources/entrarecoveryservices-recoverypreviewjob.md
+      - name: List
+        href: ../../api/entrarecoveryservices-snapshot-list-recoverypreviewjobs.md
+      - name: Create
+        href: ../../api/entrarecoveryservices-snapshot-post-recoverypreviewjobs.md
+      - name: Get
+        href: ../../api/entrarecoveryservices-recoverypreviewjob-get.md
+      - name: Get changes
+        href: ../../api/entrarecoveryservices-recoverypreviewjob-getchanges.md
+    - name: Snapshot
+      items:
+      - name: Snapshot
+        href: ../../resources/entrarecoveryservices-snapshot.md
+      - name: List snapshots
+        href: ../../api/entrarecoveryservices-recovery-list-snapshots.md
+      - name: Get snapshot
+        href: ../../api/entrarecoveryservices-snapshot-get.md
   - name: External user profiles
     items:
     - name: External user profile
@@ -1277,6 +1321,32 @@ items:
         href: ../../api/customaccesspackageworkflowextension-update.md
       - name: Delete
         href: ../../api/customaccesspackageworkflowextension-delete.md
+    - name: Custom data provided resource upload session
+      items:
+      - name: Custom data provided resource upload session
+        href: ../../resources/customdataprovidedresourceuploadsession.md
+      - name: Create
+        href: ../../api/customdataprovidedresource-post-uploadsessions.md
+      - name: Get
+        href: ../../api/customdataprovidedresourceuploadsession-get.md
+      - name: Update
+        href: ../../api/customdataprovidedresourceuploadsession-update.md
+      - name: uploadFile
+        href: ../../api/customdataprovidedresourceuploadsession-uploadfile.md
+    - name: External origin resource connector
+      items:
+      - name: External origin resource connector
+        href: ../../resources/externaloriginresourceconnector.md
+      - name: List
+        href: ../../api/entitlementmanagement-list-externaloriginresourceconnectors.md
+      - name: Create
+        href: ../../api/entitlementmanagement-post-externaloriginresourceconnectors.md
+      - name: Get
+        href: ../../api/externaloriginresourceconnector-get.md
+      - name: Update
+        href: ../../api/externaloriginresourceconnector-update.md
+      - name: Delete
+        href: ../../api/externaloriginresourceconnector-delete.md
     - name: Control configuration
       href: ../../resources/controlconfiguration.md
     - name: Insider risky user approval
@@ -1472,6 +1542,10 @@ items:
         href: ../../api/identitygovernance-workflow-activatewithscope.md
       - name: List users in scope
         href: ../../api/workflow-list-executionscope.md
+      - name: preview task failures
+        href: ../../api/identitygovernance-workflow-previewtaskfailures.md
+      - name: preview workflow
+        href: ../../api/identitygovernance-workflow-previewworkflow.md
       - name: Deleted workflows
         items:
         - name: List
@@ -2873,9 +2947,9 @@ items:
         href: ../../api/policydeletableitem-delete.md
       - name: Restore deleted policy
         href: ../../api/crosstenantaccesspolicyconfigurationpartner-restore.md
-    - name: Partner user sync settings
+    - name: Partner user and group sync settings
       items:
-      - name: Partner user sync settings
+      - name: Partner user and group sync settings
         href: ../../resources/crosstenantidentitysyncpolicypartner.md
       - name: Create
         href: ../../api/crosstenantaccesspolicyconfigurationpartner-put-identitysynchronization.md
@@ -4740,6 +4814,38 @@ items:
         href: ../../api/networkaccess-threatintelligencerule-update.md
       - name: Delete
         href: ../../api/networkaccess-threatintelligencerule-delete.md
+  - name: Cloud firewall
+    items:
+    - name: Cloud firewall policy
+      items:
+      - name: Cloud firewall policy
+        href: ../../resources/networkaccess-cloudfirewallpolicy.md
+      - name: List
+        href: ../../api/networkaccess-networkaccessroot-list-cloudfirewallpolicies.md
+      - name: Create
+        href: ../../api/networkaccess-networkaccessroot-post-cloudfirewallpolicies.md
+      - name: Get
+        href: ../../api/networkaccess-cloudfirewallpolicy-get.md
+      - name: Update
+        href: ../../api/networkaccess-cloudfirewallpolicy-update.md
+      - name: Delete
+        href: ../../api/networkaccess-cloudfirewallpolicy-delete.md
+    - name: Cloud firewall rule
+      items:
+      - name: Cloud firewall rule
+        href: ../../resources/networkaccess-cloudfirewallrule.md
+      - name: List
+        href: ../../api/networkaccess-cloudfirewallpolicy-list-policyrules.md
+      - name: Create
+        href: ../../api/networkaccess-cloudfirewallpolicy-post-policyrules.md
+      - name: Get
+        href: ../../api/networkaccess-cloudfirewallrule-get.md
+      - name: Update
+        href: ../../api/networkaccess-cloudfirewallrule-update.md
+      - name: Delete
+        href: ../../api/networkaccess-cloudfirewallrule-delete.md
+    - name: Cloud firewall policy link
+      href: ../../resources/networkaccess-cloudfirewallpolicylink.md
   - name: TLS inspection
     items:
     - name: External certificate authority certificate
@@ -4792,24 +4898,38 @@ items:
       items:
       - name: Traffic reports
         href: ../../resources/networkaccess-reports.md
-      - name: Get transaction summaries
-        href: ../../api/networkaccess-reports-transactionsummaries.md
-      - name: Get entities summary
-        href: ../../api/networkaccess-reports-entitiessummaries.md
-      - name: Get cross-tenant access summary
-        href: ../../api/networkaccess-reports-getcrosstenantsummary.md
+      - name: Get application usage analytics
+        href: ../../api/networkaccess-reports-getapplicationusageanalytics.md
+      - name: Get cloud application reports
+        href: ../../api/networkaccess-reports-getcloudapplicationreport.md
+      - name: Get connection summaries
+        href: ../../api/networkaccess-reports-getconnectionsummaries.md
       - name: Get cross-tenant access report
         href: ../../api/networkaccess-reports-crosstenantaccessreport.md
-      - name: Get device usage summary
-        href: ../../api/networkaccess-reports-getdeviceusagesummary.md
-      - name: Get device usage report
-        href: ../../api/networkaccess-reports-devicereport.md
-      - name: Get destination summary
-        href: ../../api/networkaccess-reports-getdestinationsummaries.md
+      - name: Get cross-tenant access summary
+        href: ../../api/networkaccess-reports-getcrosstenantsummary.md
       - name: Get destination report
         href: ../../api/networkaccess-reports-destinationreport.md
+      - name: Get destination summary
+        href: ../../api/networkaccess-reports-getdestinationsummaries.md
+      - name: Get device usage report
+        href: ../../api/networkaccess-reports-devicereport.md
+      - name: Get device usage summary
+        href: ../../api/networkaccess-reports-getdeviceusagesummary.md
+      - name: Get discovered application segment report
+        href: ../../api/networkaccess-reports-getdiscoveredapplicationsegmentreport.md
+      - name: Get enterprise application report
+        href: ../../api/networkaccess-reports-getenterpriseapplicationreport.md
+      - name: Get entities summary
+        href: ../../api/networkaccess-reports-entitiessummaries.md
+      - name: Get transaction summaries
+        href: ../../api/networkaccess-reports-transactionsummaries.md
+      - name: Get usage profiling
+        href: ../../api/networkaccess-reports-usageprofiling.md
       - name: Get user usage report
         href: ../../api/networkaccess-reports-userreport.md
+      - name: Get web category report
+        href: ../../api/networkaccess-reports-webcategoryreport.md
     - name: Alert
       items:
       - name: Alert

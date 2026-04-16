@@ -18,7 +18,7 @@ import (
 
 requestBody := graphsolutions.NewSearchPostRequestBody()
 artifactQuery := graphmodels.NewArtifactQuery()
-queryExpression := "(Sender -like 'abc@contoso.com') -and (Subject -like '*Check email*' -or Subject -like ' Important') -and (HasAttachment -eq 'true') -and (PitrDumpsterActionTriggeredTime -gt '2024-09-21T08:20:00.0000000Z')"
+queryExpression := "(Sender -like 'abc@contoso.com') -and (Subject -like '*Check email*' -or Subject -like ' Important') -and (HasAttachment -eq 'true')"
 artifactQuery.SetQueryExpression(&queryExpression) 
 artifactType := graphmodels.MESSAGE_RESTORABLEARTIFACT 
 artifactQuery.SetArtifactType(&artifactType) 
@@ -30,6 +30,8 @@ requestBody.SetProtectionUnitIds(protectionUnitIds)
 protectionTimePeriod := graphmodels.NewTimePeriod()
 startDateTime , err := time.Parse(time.RFC3339, "2021-01-01T00:00:00Z")
 protectionTimePeriod.SetStartDateTime(&startDateTime) 
+endDateTime , err := time.Parse(time.RFC3339, "2021-01-30T00:00:00Z")
+protectionTimePeriod.SetEndDateTime(&endDateTime) 
 requestBody.SetProtectionTimePeriod(protectionTimePeriod)
 restorePointPreference := graphmodels.OLDEST_RESTOREPOINTPREFERENCE 
 requestBody.SetRestorePointPreference(&restorePointPreference) 

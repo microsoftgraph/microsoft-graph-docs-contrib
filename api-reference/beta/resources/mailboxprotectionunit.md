@@ -23,10 +23,13 @@ Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/backuprestoreroot-list-mailboxprotectionunits.md)|[mailboxProtectionUnit](../resources/mailboxprotectionunit.md) collection|Get a list of the [mailboxProtectionUnit](../resources/mailboxprotectionunit.md) objects and their properties.|
+|[Update](../api/mailboxprotectionunit-update.md)|[mailboxProtectionUnit](../resources/mailboxprotectionunit.md)|Update the properties of a [mailboxProtectionUnit](../resources/mailboxprotectionunit.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|backupRetentionPeriodInDays|Int32|The retention period of the backup, in days. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
+|billingPolicyId|String|The unique identifier of the billing policy assigned to the protection unit for cost allocation. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |createdDateTime|DateTimeOffset|The time of creation of the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |directoryObjectId|String|The ID of the directory object.|
@@ -39,7 +42,7 @@ Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 |mailboxType|[mailboxType](../resources/enums.md#mailboxtype-values)|The type of mailbox which is assigned to the user with id: `directoryObjectId`.The possible values are: `unknown`, `user`, `shared`, `unknownFutureValue`.|
 |policyId|String|Unique identifier of the protection policy associated with this protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |protectionSources|protectionSource|Indicates the sources by which a protection unit is currently protected. A protection unit protected by multiple sources is indicated by comma-separated values. The possible values are: `none`, `manual`, `dynamicRule`, `unknownFutureValue`. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
-|status|[protectionUnitStatus](../resources/protectionunitbase.md#protectionunitstatus-values)|The individual enablement/disablement/removal status of the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md). The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `offboardRequested`, `offboarded`, `cancelOffboardRequested`, `unknownFutureValue`.
+|status|[protectionUnitStatus](../resources/protectionunitbase.md#protectionunitstatus-values)|The individual enablement/disablement/removal status of the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md). The possible values are: `protectRequested`, `protected`, `unprotectRequested`, `unprotected`, `removeRequested`, `offboardRequested`, `offboarded`, `cancelOffboardRequested`, `unknownFutureValue`.|
 |offboardRequestedDateTime|DateTimeOffset|The time when protection unit offboard was requested. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 
 ## Relationships
@@ -58,6 +61,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.mailboxProtectionUnit",
+  "backupRetentionPeriodInDays": "Int32",
+  "billingPolicyId": "String",
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "directoryObjectId": "String",
@@ -68,10 +73,10 @@ The following JSON representation shows the resource type.
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
   "mailboxType": "String",
+  "offboardRequestedDateTime": "String (timestamp)",
   "policyId": "String",
   "protectionSources": "String",
-  "status": "String",
-  "offboardRequestedDateTime": "String (timestamp)",
+  "status": "String"
 }
 ```
 

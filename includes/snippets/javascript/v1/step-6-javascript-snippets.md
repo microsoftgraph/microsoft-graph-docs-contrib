@@ -13,7 +13,7 @@ const client = Client.init(options);
 const subscription = {
   changeType: 'created,updated,deleted',
   notificationUrl: 'https://webhook.azurewebsites.net/api/send/myNotifyClient',
-  resource: '/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/chats/getAllMessages?model=B',
+  resource: '/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/chats/getAllMessages',
   expirationDateTime: '2023-01-10T18:56:49.112603+00:00',
   clientState: 'ClientSecret',
   includeResourceData: true,

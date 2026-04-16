@@ -1,4 +1,4 @@
----
+﻿---
 title: "List windowsManagementAppHealthStates"
 description: "List properties and relationships of the windowsManagementAppHealthState objects."
 author: "jaiprakashmb"
@@ -25,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {

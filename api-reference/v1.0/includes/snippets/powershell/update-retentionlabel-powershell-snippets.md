@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Security
+Import-Module Microsoft.Graph.Security
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.security.retentionLabel"
@@ -14,6 +14,6 @@ $params = @{
 	}
 }
 
-Update-MgBetaSecurityLabelRetentionLabel -RetentionLabelId $retentionLabelId -BodyParameter $params
+Update-MgSecurityLabelRetentionLabel -RetentionLabelId $retentionLabelId -BodyParameter $params
 
 ```

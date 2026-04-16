@@ -107,7 +107,6 @@ GET https://graph.microsoft.com/beta/users/{usersId}/memberOf
 
 ---
 
-
 ### Response
 
 The following example shows the response.

@@ -30,6 +30,7 @@ Represents an application in the [Microsoft Entra application gallery](/azure/ac
 |:-------------|:------------|:------------|
 |categories|String collection|The list of categories for the application. Supported values can be: `Collaboration`, `Business Management`, `Consumer`, `Content management`, `CRM`, `Data services`, `Developer services`, `E-commerce`, `Education`, `ERP`, `Finance`, `Health`, `Human resources`, `IT infrastructure`, `Mail`, `Management`, `Marketing`, `Media`, `Productivity`, `Project management`, `Telecommunications`, `Tools`, `Travel`, and `Web design & hosting`. <br/><br/> Supports `$filter` (`contains`).|
 |configurationUris|[configurationUri](../resources/configurationuri.md) collection|The URIs required for the single sign-on configuration of a preintegrated application.|
+|deprecationDate|Date|Deprecation date for this application. If specified, the application will be removed from the Microsoft Entra application gallery on this date.|
 |description|String|A description of the application.|
 |displayName|String|The name of the application. Supports `$filter` (`contains`).|
 |endpoints|String collection|A collection of string URLs representing various domains that are used by this application.|
@@ -66,6 +67,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.applicationTemplate",
   "categories": ["String"],
   "configurationUris": [{"@odata.type": "microsoft.graph.configurationUri"}],
+  "deprecationDate": "String (Date)",
   "description": "String",  
   "displayName": "String",
   "endpoints": ["String"],

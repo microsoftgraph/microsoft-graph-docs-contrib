@@ -13,7 +13,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new ExportJobsRequestBuilderGetRequestConfiguration();
 $queryParameters = ExportJobsRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->filter = " explorerViewId eq ‘9ab0fcab-c1d4-4b26-963b-a3c33155f853’";
+$queryParameters->filter = "explorerViewId eq '9ab0fcab-c1d4-4b26-963b-a3c33155f853'";
 $requestConfiguration->queryParameters = $queryParameters;
 
 

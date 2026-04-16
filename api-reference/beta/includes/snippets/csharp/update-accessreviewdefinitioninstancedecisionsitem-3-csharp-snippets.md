@@ -12,12 +12,7 @@ using Microsoft.Graph.Beta.Models;
 var requestBody = new AccessReviewInstanceDecisionItem
 {
 	ApplyResult = "AppliedSuccessfully",
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"applyDescription" , "Completed by John Doe"
-		},
-	},
+	ApplyDescription = "Completed by John Doe",
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

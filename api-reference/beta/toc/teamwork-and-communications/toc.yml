@@ -278,13 +278,13 @@ items:
       href: ../../api/presence-clearlocation.md
   - name: Ad hoc call
     items:
-    - name: Ad hoc call (preview)
+    - name: Ad hoc call
       items:
-      - name: Ad hoc call (preview)
+      - name: Ad hoc call
         href: ../../resources/adhoccall.md
-      - name: getAllRecordings
+      - name: Get all recordings
         href: ../../api/adhoccall-getallrecordings.md
-      - name: getAllTranscripts
+      - name: Get all transcripts
         href: ../../api/adhoccall-getalltranscripts.md
   - name: Calls
     items:
@@ -800,6 +800,12 @@ items:
         href: ../../api/userteamwork-list-installedapps.md
       - name: Get
         href: ../../api/userteamwork-get.md
+      - name: Get all targeted messages
+        href: ../../api/userteamwork-getalltargetedmessages.md
+      - name: Get all retained targeted messages
+        href: ../../api/userteamwork-getallretainedtargetedmessages.md
+      - name: Delete targeted message
+        href: ../../api/userteamwork-deletetargetedmessage.md
 - name: Employee learning
   displayName: Viva Learning
   items:
@@ -1133,6 +1139,18 @@ items:
       href: ../../api/deletedchat-get.md
     - name: Undo delete
       href: ../../api/deletedchat-undodelete.md
+  - name: Targeted chat message
+    items:
+    - name: Targeted chat message
+      href: ../../resources/targetedchatmessage.md
+    - name: Get all targeted messages
+      href: ../../api/userteamwork-getalltargetedmessages.md
+    - name: Get all retained targeted messages
+      href: ../../api/userteamwork-getallretainedtargetedmessages.md
+    - name: Delete targeted message for channel
+      href: ../../api/userteamwork-deletetargetedmessage.md
+    - name: Delete targeted message for chat
+      href: ../../api/chat-delete-targetedmessages.md
   - name: Team
     items:
     - name: Team

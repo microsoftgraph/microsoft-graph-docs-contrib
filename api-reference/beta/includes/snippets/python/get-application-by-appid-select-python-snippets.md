@@ -10,7 +10,7 @@ from msgraph_beta.generated.applications_with_app_id.applications_with_app_id_re
 from kiota_abstractions.base_request_configuration import RequestConfiguration
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 query_params = ApplicationsWithAppIdRequestBuilder.ApplicationsWithAppIdRequestBuilderGetQueryParameters(
-		select = ["id","appId","displayName","requiredResourceAccess"],
+		select = ["id","appId","displayName","signInAudience","signInAudienceRestrictions"],
 )
 
 request_configuration = RequestConfiguration(

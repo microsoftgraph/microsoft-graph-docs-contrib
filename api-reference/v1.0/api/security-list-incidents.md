@@ -25,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "security_list_incidents" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-list-incidents-permissions.md)]
 
+[!INCLUDE [rbac-security-alerts-apis-read](../includes/rbac-for-apis/rbac-security-alerts-apis-read.md)]
+
 ## HTTP request
 
 <!-- {

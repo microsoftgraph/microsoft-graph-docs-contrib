@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/places/c8aaf4d8-6c73-46c4-bf28-b2adadafb5be
 [!INCLUDE [sample-code](../includes/snippets/php/get-checkinclaim-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-checkinclaim-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-checkinclaim-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

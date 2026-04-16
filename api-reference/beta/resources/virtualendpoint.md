@@ -72,6 +72,7 @@ Inherits from [entity](../resources/entity.md).
 |onPremisesConnections|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) collection|A defined collection of Azure resource information that can be used to establish on-premises network connectivity for Cloud PCs.|
 |organizationSettings|[cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) |The Cloud PC organization settings for a tenant. |
 |provisioningPolicies|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) collection|Cloud PC provisioning policy.|
+|reports|[cloudPcReports](../resources/cloudpcreports.md)|Cloud PC-related reports. Read-only.|
 |report|[cloudPcReport](../resources/cloudpcreport.md)|Cloud PC-related reports. Read-only.|
 |servicePlans|[cloudPcServicePlan](../resources/cloudpcserviceplan.md) collection|Cloud PC service plans.|
 |snapshots|[cloudPcSnapshot](../resources/cloudpcsnapshot.md) collection|Cloud PC snapshots.|
@@ -79,8 +80,6 @@ Inherits from [entity](../resources/entity.md).
 |userSettings|[cloudPcUserSetting](../resources/cloudpcusersetting.md) collection|Cloud PC user settings. |
 |tenantEncryptionSetting|[cloudPcTenantEncryptionSetting](../resources/cloudPcTenantEncryptionSetting.md) collection|Cloud PC encryption setting for a tenant. |
 |externalPartnerSettings (deprecated)|[cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) collection|The external partner settings on a Cloud PC.|
-|reports (deprecated)|[cloudPcReports](../resources/cloudpcreports.md)|Cloud PC-related reports.|
-
 ## JSON representation
 
 The following JSON representation shows the resource type.

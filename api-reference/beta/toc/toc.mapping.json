@@ -13,7 +13,8 @@
       "overview": "../../resources/groups-overview.md",
       "resources": [
         "group",
-        "groupLifecyclePolicy"
+        "groupLifecyclePolicy",
+        "ownerlessGroupPolicy"
       ]
     },
     {
@@ -74,6 +75,7 @@
                   "name": "Remote desktop security policy",
                   "resources": [
                     "remoteDesktopSecurityConfiguration",
+                    "approvedClientApp",
                     "targetDeviceGroup"
                   ]
                 }
@@ -140,28 +142,41 @@
       ]
     },
     {
-      "name": "Agents (preview)",
+      "name": "Agents",
       "overview": "../../resources/agentid-platform-overview.md",
-      "resources": ["agentUser"],
       "shouldSort": true,
-      "childNodes": [
-          {
-            "name": "Agent identities",
-            "resources": [
-              "agentIdentityBlueprint",
-              "agentIdentityBlueprintPrincipal",
-              "agentIdentity"
-            ]
-          },
-          {
-            "name": "Agent registry",
-            "resources": [
-              "agentRegistry",
-              "agentInstance",
-              "agentCardManifest",
-              "agentCollection"
-            ]
-          }
+      "childNodes": [ 
+        {
+          "name": "Agent identities",
+          "resources": [
+            "agentIdentityBlueprint",
+            "agentIdentityBlueprintPrincipal",
+            "agentIdentity"
+          ],
+          "childNodes": [
+            {
+              "name": "Agent identity blueprint",
+              "resources": [
+                "inheritablePermission"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Agent user (preview)",
+          "resources": [
+            "agentUser"
+          ]
+        },
+        {
+          "name": "Agent registry (preview)",
+          "resources": [
+            "agentRegistry",
+            "agentInstance",
+            "agentCardManifest",
+            "agentCollection"
+          ]
+        }
       ]
     },
     {
@@ -1116,7 +1131,8 @@
       "complexTypes": [
         "fileStorageContainerTypeRegistrationSettings",
         "fileStorageContainerTypeAgentSettings",
-        "fileStorageContainerTypeSettings"
+        "fileStorageContainerTypeSettings",
+        "sharePointGroupIdentity"
       ],
       "childNodes": [
         {
@@ -1295,6 +1311,16 @@
                   ]
                 }
               ]
+            },
+            {
+              "name": "Entra Backup and Recovery",
+              "overview": "../../resources/entrarecoveryservices-backup-recovery-overview.md",
+              "resources": [
+                "microsoft.graph.entraRecoveryServices.recoveryJob",
+                "microsoft.graph.entraRecoveryServices.recoveryJobBase",
+                "microsoft.graph.entraRecoveryServices.recoveryPreviewJob",
+                "microsoft.graph.entraRecoveryServices.snapshot"
+              ]
             }
           ]
         },
@@ -1407,6 +1433,8 @@
                 "endUserSettings",
                 "entitlementManagementSettings",
                 "customAccessPackageWorkflowExtension",
+                "customDataProvidedResourceUploadSession",
+                "externalOriginResourceConnector",
                 "controlConfiguration",
                 "insiderRiskyUserApproval",
                 "entraIdProtectionRiskyUserApproval",
@@ -2234,6 +2262,14 @@
               ]
             },
             {
+              "name": "Cloud firewall",
+              "resources": [
+                "microsoft.graph.networkaccess.cloudFirewallPolicy",
+                "microsoft.graph.networkaccess.cloudFirewallRule",
+                "microsoft.graph.networkaccess.cloudFirewallPolicyLink"
+              ]
+            },
+            {
               "name": "Remote network",
               "resources": [
                 "microsoft.graph.networkaccess.deviceLink",
@@ -2698,6 +2734,19 @@
                     "userPasswordResetsAndChangesSummary",
                     "userRegistrationActivitySummary",
                     "userSignInUsageByAuthMethodActivity"
+                  ]
+                },
+                {
+                  "name": "Premium license utilization",
+                  "resources": [
+                    "azureADPremiumLicenseInsight"
+                  ],
+                  "complexTypes": [
+                    "azureADPremiumFeatureUtilization",
+                    "azureADPremiumP1FeatureUtilizations",
+                    "azureADPremiumP2FeatureUtilizations",
+                    "internetAccessFeatureUtilizations",
+                    "privateAccessFeatureUtilizations"
                   ]
                 }
               ]
@@ -3276,6 +3325,10 @@
         "plannerRuleOverride",
         "plannerSharedWithContainer",
         "plannerTaskCompletionRequirementDetails",
+        "plannerTaskChatMention",
+        "plannerTaskChatMessage",
+        "plannerTaskChatReaction",
+        "plannerTaskChatReactionEvent",
         "plannerTaskCreation",
         "plannerTaskPropertyRule",
         "plannerTaskRecurrence",
@@ -3542,6 +3595,7 @@
             "chatMessage",
             "pinnedChatMessageInfo",
             "deletedChat",
+            "targetedChatMessage",
             "team",
             "teamworkTag",
             "teamworkTagMember"
@@ -3623,26 +3677,30 @@
       ]
     },
     {
-      "name": "Tenant administration (preview)",
+      "name": "Tenants",
+      "shouldSort": true,
       "childNodes": [
         {
           "name": "Configuration management",
           "overview": "../../resources/unified-tenant-configuration-management-api-overview.md",
-          "shouldSort": true,
           "resources": [
             "configurationBaseline",
             "configurationDrift",
             "configurationMonitor",
             "configurationMonitoringResult",
             "configurationSnapshotJob"
-          ],
-          "complexTypes": [
-            "baselineParameter",
-            "baselineResource",
-            "clientCredentials",
-            "driftedProperty",
-            "errorDetail",
-            "openComplexDictionaryType"
+          ]
+        },
+        {
+          "name": "Governance (preview)",
+          "overview": "../../resources/tenantgovernanceservices-tenantgovernance-overview.md",
+          "resources": [
+            "microsoft.graph.tenantGovernanceServices.tenantGovernanceSetting",
+            "microsoft.graph.tenantGovernanceServices.relatedTenant",
+            "microsoft.graph.tenantGovernanceServices.governancePolicyTemplate",
+            "microsoft.graph.tenantGovernanceServices.governanceInvitation",
+            "microsoft.graph.tenantGovernanceServices.governanceRequest",
+            "microsoft.graph.tenantGovernanceServices.governanceRelationship"
           ]
         }
       ]

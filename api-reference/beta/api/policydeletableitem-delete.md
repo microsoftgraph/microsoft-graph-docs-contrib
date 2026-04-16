@@ -21,7 +21,7 @@ Permanently delete a [policyDeletableItem](../resources/policydeletableitem.md) 
 - [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md)
 - [namedLocation](../resources/namedlocation.md)
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -143,6 +143,10 @@ DELETE https://graph.microsoft.com/beta/policies/deletedItems/crossTenantPartner
 [!INCLUDE [sample-code](../includes/snippets/php/delete-policydeletableitem-crosstenantaccesspolicyconfigurationpartner-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-policydeletableitem-crosstenantaccesspolicyconfigurationpartner-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/delete-policydeletableitem-crosstenantaccesspolicyconfigurationpartner-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -194,6 +198,10 @@ DELETE https://graph.microsoft.com/beta/policies/deletedItems/crossTenantSyncPol
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-policydeletableitem-crosstenantidentitysyncpolicypartner-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-policydeletableitem-crosstenantidentitysyncpolicypartner-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -249,6 +257,10 @@ DELETE https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/
 [!INCLUDE [sample-code](../includes/snippets/php/delete-policydeletableitem-conditionalaccesspolicy-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-policydeletableitem-conditionalaccesspolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/delete-policydeletableitem-conditionalaccesspolicy-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -300,6 +312,10 @@ DELETE https://graph.microsoft.com/beta/identity/conditionalAccess/deletedItems/
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-policydeletableitem-namedlocation-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-policydeletableitem-namedlocation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

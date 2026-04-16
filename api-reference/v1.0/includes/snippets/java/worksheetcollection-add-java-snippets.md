@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 com.microsoft.graph.drives.item.items.item.workbook.worksheets.add.AddPostRequestBody addPostRequestBody = new com.microsoft.graph.drives.item.items.item.workbook.worksheets.add.AddPostRequestBody();
-addPostRequestBody.setName("name-value");
+addPostRequestBody.setName("Sheet1");
 var result = graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().worksheets().add().post(addPostRequestBody);
 
 

@@ -14,6 +14,12 @@ var requestBody = new EdiscoveryReviewTag
 	DisplayName = "My tag API",
 	Description = "Use Graph API to create tags",
 	ChildSelectability = ChildSelectability.Many,
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"parent@odata.bind" , "https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/{ediscoveryCaseID}/tags/{parentTagID}"
+		},
+	},
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

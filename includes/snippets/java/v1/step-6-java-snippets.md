@@ -11,7 +11,7 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 Subscription subscription = new Subscription();
 subscription.setChangeType("created,updated,deleted");
 subscription.setNotificationUrl("https://webhook.azurewebsites.net/api/send/myNotifyClient");
-subscription.setResource("/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/chats/getAllMessages?model=B");
+subscription.setResource("/users/87d349ed-44d7-43e1-9a83-5f2406dee5bd/chats/getAllMessages");
 OffsetDateTime expirationDateTime = OffsetDateTime.parse("2023-01-10T18:56:49.112603+00:00");
 subscription.setExpirationDateTime(expirationDateTime);
 subscription.setClientState("ClientSecret");

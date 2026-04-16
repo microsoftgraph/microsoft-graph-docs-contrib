@@ -26,6 +26,8 @@ Represents a planner task in Microsoft 365. A planner task is contained in a [pl
 |[Update](../api/plannertask-update.md) | [plannerTask](plannertask.md)	|Update a **plannerTask** object. |
 |[Delete](../api/plannertask-delete.md) | None |Delete a **plannerTask** object. |
 |[Get delta](../api/plannertask-delta.md)|[plannerTask](../resources/plannertask.md) collection| Get newly created, updated, or deleted **plannerTask** objects in either a **plannerPlan** or assigned to the signed-in user without having to perform a full read of the entire resource collection. |
+|[List messages](../api/plannertask-list-messages.md)|[plannerTaskChatMessage](../resources/plannertaskchatmessage.md) collection| Get the chat messages associated with a plannerTask. |
+|[Create message](../api/plannertask-post-messages.md)|[plannerTaskChatMessage](../resources/plannertaskchatmessage.md)| Create a new chat message on a Planner task. |
 
 ## Properties
 | Property	   | Type	|Description|
@@ -44,12 +46,13 @@ Represents a planner task in Microsoft 365. A planner task is contained in a [pl
 |createdDateTime|DateTimeOffset|Read-only. The date and time at which the task is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |creationSource|[plannerTaskCreation](../resources/plannertaskcreation.md)|Information about the origin of the task.|
 |dueDateTime|DateTimeOffset|The date and time at which the task is due. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
-|hasDescription|Boolean|Read-only. This value is `true` if the details object of the task has a nonempty description. Otherwise,`false`.|
+|hasChat|Boolean|Read-only. This value is `true` if the task has chat messages associated with it. Otherwise, `false`.|
+|hasDescription|Boolean|Read-only. This value is `true` if the details object of the task has a nonempty description. Otherwise, `false`.|
 |id|String|Read-only. The unique identifier of the task. The value of this property is 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
 |isArchived|Boolean|Read-only. If set to `true`, the task is archived. An archived task is read-only.|
 |isOnMyDay|Boolean|Indicates whether to show this task in the MyDay view. If `true`, it shows the task.|
 |isOnMyDayLastModifiedDate|Date|Read-only. The date on which task is added to or removed from MyDay.|
-|orderHint|String|The hint used to order items of this type in a list view. For more information, see [Using order hints in planner](planner-order-hint-format.md)n.|
+|orderHint|String|The hint used to order items of this type in a list view. For more information, see [Using order hints in planner](planner-order-hint-format.md).|
 |percentComplete|Int32|The percentage of task completion. When set to `100`, the task is completed. |
 |priority|Int32|The priority of the task. Valid values are between `0` and `10`, inclusive. Larger values indicate lower priority. For example, `0` has the highest priority and `10` has the lowest priority. Currently, planner interprets values `0` and `1` as "urgent", `2` and `3` and `4` as "important", `5`, `6`, and `7` as "medium", and `8`, `9`, and `10` as "low". Currently, planner sets the value `1` for "urgent", `3` for "important", `5` for "medium", and `9` for "low".|
 |planId|String|Plan ID to which the task belongs.|
@@ -77,6 +80,7 @@ Represents a planner task in Microsoft 365. A planner task is contained in a [pl
 |assignedToTaskBoardFormat|[plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)| Read-only. Nullable. Used to render the task correctly in the task board view when grouped by assignedTo.|
 |bucketTaskBoardFormat|[plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)| Read-only. Nullable. Used to render the task correctly in the task board view when grouped by bucket.|
 |details|[plannerTaskDetails](plannertaskdetails.md)| Read-only. Nullable. More details about the task.|
+|messages|[plannerTaskChatMessage](plannertaskchatmessage.md) collection| Read-only. Nullable. Chat messages associated with the task.|
 |progressTaskBoardFormat|[plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)| Read-only. Nullable. Used to render the task correctly in the task board view when grouped by progress.|
 
 ## JSON representation
@@ -107,6 +111,7 @@ The following JSON representation shows the resource type.
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "dueDateTime": "String (timestamp)",
+  "hasChat": "Boolean",
   "hasDescription": "Boolean",
   "id": "String (identifier)",
   "isOnMyDay": "Boolean",

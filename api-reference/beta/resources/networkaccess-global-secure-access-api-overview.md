@@ -82,6 +82,26 @@ Use the [compliantNetworkNamedLocation resource type](../resources/compliantnetw
 
 Forwarding options allows administrators to enable or disable the ability to skip DNS lookup at the edge and forward Microsoft 365 traffic directly to Front Door using the client-resolved destination IP. Use the [forwardingOptions resource type](../resources/networkaccess-forwardingoptions.md) and its associated APIs to manage forwarding options.
 
+## Cloud firewall
+
+Cloud firewall in Global Secure Access provides Layer 3 (Network) protection by monitoring and controlling all network traffic. Use the cloud firewall APIs to:
+
+- Secure branch traffic acquired using remote networks connectivity for Internet traffic.
+- Define firewall policies with granular and prioritized firewall filtering rules to govern outbound traffic, where you can define the source and destination traffic matching conditions and an action in case the traffic matches.
+- Create cloud firewall policies with default **allow** action. The default action is applied to all traffic that doesn't match any of the rules in the policy.
+- Define a 5-tuple firewall rule with source IP, source port, destination IP, destination port, destination protocol (TCP and/or UDP) matching conditions. IP ranges/CIDRs are supported in IP matching conditions.
+- Define an action between **allow** and **block**.
+- Link a firewall policy for remote networks for Internet traffic to the baseline security profile for policy enforcement.
+- Access traffic logs from Entra/GSA portal for cloud firewall.
+
+The following table lists the core entities for managing cloud firewall resources.
+
+| Entities | Description |
+|--|--|
+| [cloudFirewallPolicy](../resources/networkaccess-cloudfirewallpolicy.md) | Represents a cloud firewall policy that provides Layer 3 (Network) protection. A cloud firewall policy takes effect once linked to a filtering profile. |
+| [cloudFirewallRule](../resources/networkaccess-cloudfirewallrule.md) | Defines conditions and actions for network traffic filtering within a cloud firewall policy. Each rule specifies matching conditions for source and destination addresses, ports, and protocols. |
+| [cloudFirewallPolicyLink](../resources/networkaccess-cloudfirewallpolicylink.md) | Links a cloud firewall policy to a filtering profile. Use the [filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) operations to manage cloud firewall policy links. |
+
 ## Logs and monitoring
 
 Monitoring and auditing of events within your environment is crucial for maintaining security, compliance, and operational efficiency. The Global Secure Access events can be accessed through the following resources:

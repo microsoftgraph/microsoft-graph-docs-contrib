@@ -13,11 +13,10 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) objects and their properties. The associated policy can be of the following types:
-
-- [filteringPolicy](../resources/networkaccess-filteringpolicy.md)
-- [threatIntelligencePolicy](../resources/networkaccess-threatintelligencepolicy.md)
-- [tlsInspectionPolicy](../resources/networkaccess-tlsinspectionpolicy.md)
+Get a list of the [filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) objects and their properties. The response can include one or more of the following objects:
+- [cloudFirewallPolicyLink](../resources/networkaccess-cloudfirewallpolicylink.md)
+- [threatIntelligencePolicyLink](../resources/networkaccess-threatintelligencepolicylink.md)
+- [tlsInspectionPolicyLink](../resources/networkaccess-tlsinspectionpolicylink.md) objects
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -58,14 +57,45 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_filteringpolicylink"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/networkaccess/filteringProfiles/519085fd-efb2-437c-af22-04bff0c2b571/policies
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-filteringpolicylink-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-filteringpolicylink-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-filteringpolicylink-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-filteringpolicylink-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-filteringpolicylink-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-filteringpolicylink-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-filteringpolicylink-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example shows the response.
@@ -111,15 +141,46 @@ Content-Type: application/json
 
 #### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_tlsinspectionpolicylink",
   "sampleKeys": ["d734d2de-f2df-4b4a-8c4c-5111f8878275"]
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/networkAccess/filteringProfiles/d734d2de-f2df-4b4a-8c4c-5111f8878275/policies?$filter=isof('microsoft.graph.networkaccess.tlsInspectionPolicyLink')
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-tlsinspectionpolicylink-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-tlsinspectionpolicylink-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-tlsinspectionpolicylink-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-tlsinspectionpolicylink-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-tlsinspectionpolicylink-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-tlsinspectionpolicylink-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-tlsinspectionpolicylink-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example shows the response.

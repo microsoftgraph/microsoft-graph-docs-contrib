@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [photoUpdateSettings](../resources/photoupdatesettings.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 

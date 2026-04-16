@@ -15,7 +15,7 @@ var requestBody = new AccessReviewScheduleDefinition
 	DisplayName = "Review of catalog",
 	DescriptionForAdmins = "Review of all resources in a catalog",
 	DescriptionForReviewers = "If you have any questions, contact jerry@contoso.com",
-	Scope = new AccessReviewScope
+	Scope = new AccessReviewResourceScope
 	{
 		OdataType = "#microsoft.graph.accessReviewResourceScope",
 		AdditionalData = new Dictionary<string, object>
@@ -58,12 +58,7 @@ var requestBody = new AccessReviewScheduleDefinition
 		new AccessReviewReviewerScope
 		{
 			OdataType = "#microsoft.graph.accessReviewReviewerScope",
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"scopeType" , "resourceOwner"
-				},
-			},
+			ScopeType = AccessReviewReviewerScopeType.ResourceOwner,
 		},
 	},
 	Settings = new AccessReviewScheduleSettings

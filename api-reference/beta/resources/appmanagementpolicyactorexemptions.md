@@ -17,12 +17,12 @@ Namespace: microsoft.graph
 Represents a collection of exemptions from the enforcement of [identifierUri restrictions](../resources/identifierurirestriction.md) on an app management policy.
 
 ## Properties
-None.
-
-## Relationships
-|Relationship|Type|Description|
+|Property|Type|Description|
 |:---|:---|:---|
 |customSecurityAttributes|[customSecurityAttributeExemption](../resources/customsecurityattributeexemption.md) collection| The collection of [customSecurityAttributeExemption](../resources/customsecurityattributeexemption.md) to exempt from the policy enforcement. Limit of 5. |
+
+## Relationships
+None.
 
 ## JSON representation
 The following JSON representation shows the resource type.
@@ -33,6 +33,11 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.appManagementPolicyActorExemptions"
+  "@odata.type": "#microsoft.graph.appManagementPolicyActorExemptions",
+  "customSecurityAttributes": [
+    {
+      "@odata.type": "#microsoft.graph.customSecurityAttributeExemption"
+    }
+  ]
 }
 ```

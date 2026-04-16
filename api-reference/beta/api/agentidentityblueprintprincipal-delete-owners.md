@@ -56,6 +56,7 @@ If successful, this method returns a `204 No Content` response code.
 
 The following example shows the request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "agentIdentityblueprintprincipal_delete_owners"
@@ -65,6 +66,11 @@ The following example shows the request.
 DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/microsoft.graph.agentIdentityBlueprintPrincipal/owners/{id}/$ref
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/agentidentityblueprintprincipal-delete-owners-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

@@ -1,6 +1,6 @@
 ---
-title: "List traffic"
-description: "Get a list of the networkAccessTraffic objects and their properties."
+title: "List networkAccessTraffic objects"
+description: "Get a list of log events for traffic routed through the Global Secure Access services."
 author: "miritsadon"
 ms.date: 04/08/2025
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ ms.subservice: "entra-global-secure-access"
 doc_type: apiPageType
 ---
 
-# List networkAccessTraffic
+# List networkAccessTraffic objects
 Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -40,11 +40,11 @@ This method supports the `$select`, `$expand`, `$filter`, `$sort`, and `$top` OD
 
 |Name|Syntax|Notes|
 |:---|:---|:---|
-|Server-side pagination|@odata.nextLink=https://graph.microsoft.com/beta/networkAccess/logs/traffic?$skiptoken="generatedtoken"|The page size defaults to and is limited to 1000.|
-|Filter|/logs/traffic?$filter=connectionId eq 'a812bcdc-aa36-4c51-b70d-20a84f0ce556'|All properties are filterable.|
-|Sort|/logs/traffic?$orderby=createdDateTime desc|You can order by all properties.|
-|Top|/logs/traffic?$top=50|The maximum value is 1000.|
-|Select|/logs/traffic?$select=transactionId,connectionId,createdDateTime|Select specific properties.|
+|Filter|`/logs/traffic?$filter=connectionId eq 'a812bcdc-aa36-4c51-b70d-20a84f0ce556'`|All properties are filterable.|
+|Select|`/logs/traffic?$select=transactionId,connectionId,createdDateTime`|Select specific properties.|
+|Server-side pagination|`@odata.nextLink=https://graph.microsoft.com/beta/networkAccess/logs/traffic?$skiptoken="generatedtoken"`|The page size defaults to 1,000 and can't exceed it.|
+|Sort|`/logs/traffic?$orderby=createdDateTime desc`|You can order by all properties.|
+|Top|`/logs/traffic?$top=50`|The maximum value is 1,000.|
 
 ## Request headers
 |Name|Description|

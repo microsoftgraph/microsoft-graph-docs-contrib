@@ -22,6 +22,10 @@ description := "Use Graph API to create tags"
 requestBody.SetDescription(&description) 
 childSelectability := graphmodels.MANY_CHILDSELECTABILITY 
 requestBody.SetChildSelectability(&childSelectability) 
+additionalData := map[string]interface{}{
+	"parent@odata.bind" : "https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/{ediscoveryCaseID}/tags/{parentTagID}", 
+}
+requestBody.SetAdditionalData(additionalData)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 tags, err := graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").Tags().Post(context.Background(), requestBody, nil)

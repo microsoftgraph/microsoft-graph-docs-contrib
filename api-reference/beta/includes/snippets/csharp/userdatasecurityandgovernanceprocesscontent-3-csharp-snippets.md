@@ -33,6 +33,7 @@ var requestBody = new ProcessContentPostRequestBody
 				Length = 17352L,
 				IsTruncated = false,
 				OwnerId = "ffe1ca70-6e5b-4120-abf0-472034ba05d4",
+				ContentCategory = ContentCategory.None,
 				CustomProperties = new CustomMetadataDictionary
 				{
 					AdditionalData = new Dictionary<string, object>

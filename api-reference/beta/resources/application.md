@@ -89,6 +89,7 @@ This resource supports:
 | isFallbackPublicClient | Boolean | Specifies the fallback application type as public client, such as an installed application running on a mobile device. The default value is `false`, which means the fallback application type is confidential client such as a web app. There are certain scenarios where Microsoft Entra ID can't determine the client application type. For example, the [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) flow where the application is configured without specifying a redirect URI. In those cases Microsoft Entra ID interprets the application type based on the value of this property.|
 | keyCredentials | [keyCredential](keycredential.md) collection | The collection of key credentials associated with the application. Not nullable. Supports `$filter` (`eq`, `not`, `ge`, `le`).|
 | logo | Stream | The main logo for the application. Not nullable. |
+| managerApplications | Guid collection | A collection of application IDs for applications designated as managers of this application. Manager applications can create service principals for the applications they manage. Currently, only Microsoft first-party application IDs can be set as values. Maximum of 10 values. Not nullable. Read-only for third-party (3P) callers; writes by 3P callers are rejected with a `400 Bad Request` error. Returned only on `$select`. |
 | nativeAuthenticationApisEnabled | nativeAuthenticationApisEnabled | Specifies whether the Native Authentication APIs are enabled for the application. The possible values are: `none`and `all`. Default is `none`. For more information, see [Native Authentication](/entra/external-id/customers/concept-native-authentication). |
 | notes | String | Notes relevant for the management of the application. |
 | oauth2RequiredPostResponse | Boolean | Specifies whether, as part of OAuth 2.0 token requests, Microsoft Entra ID allows POST requests, as opposed to GET requests. The default is `false`, which specifies that only GET requests are allowed. |
@@ -184,6 +185,7 @@ The following JSON representation shows the resource type.
   "isFallbackPublicClient": false,
   "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
   "logo": "Stream",
+  "managerApplications": ["Guid"],
   "nativeAuthenticationApisEnabled": "String",
   "notes": "String",
   "oauth2RequiredPostResponse": false,

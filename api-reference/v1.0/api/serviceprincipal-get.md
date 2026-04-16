@@ -12,7 +12,7 @@ ms.date: 10/01/2024
 
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of a [servicePrincipal](../resources/serviceprincipal.md) object.
+Retrieve the properties and relationships of a [servicePrincipal](../resources/serviceprincipal.md) object. This API can be used to get [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) objects as well by their ID.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -62,7 +62,7 @@ Providing the **Accept-Language** header with a supported language code, such as
 Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns a `200 OK` response code and a [servicePrincipal](../resources/serviceprincipal.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [servicePrincipal](../resources/serviceprincipal.md) or [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object in the response body.
 
 ## Examples
 
@@ -136,6 +136,7 @@ Content-type: application/json
   "appOwnerOrganizationId": "65415bb1-9267-4313-bbf5-ae259732ee12",
   "appRoleAssignmentRequired":true,
   "appRoles": [],
+  "createdByAppId": "748fe028-bb3d-4f2c-a015-4789781fe0f1",
   "disabledByMicrosoftStatus": null,
   "displayName": "My app instance in tenant",
   "endpoints": [],

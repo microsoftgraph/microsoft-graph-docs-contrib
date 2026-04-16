@@ -3,6 +3,48 @@
     {
       "ChangeList": [
         {
+          "Id": "724993ad-638e-4e15-a537-621ca6862b7f",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "correlationReason",
+          "ChangeType": "Addition",
+          "Description": "Added the **correlationReason** enumeration type.",
+          "Target": "correlationReason"
+        },
+        {
+          "Id": "724993ad-638e-4e15-a537-621ca6862b7f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mergeResponse",
+          "ChangeType": "Addition",
+          "Description": "Added the [mergeResponse](https://learn.microsoft.com/en-us/graph/api/resources/security-mergeresponse?view=graph-rest-beta) resource.",
+          "Target": "mergeResponse"
+        },
+        {
+          "Id": "724993ad-638e-4e15-a537-621ca6862b7f",
+          "ApiChange": "Method",
+          "ChangedApiName": "mergeIncidents",
+          "ChangeType": "Addition",
+          "Description": "Added the [mergeIncidents](https://learn.microsoft.com/en-us/graph/api/security-incident-mergeincidents?view=graph-rest-beta) method to the [incident](https://learn.microsoft.com/en-us/graph/api/resources/security-incident?view=graph-rest-beta) resource.",
+          "Target": "incident"
+        },
+        {
+          "Id": "724993ad-638e-4e15-a537-621ca6862b7f",
+          "ApiChange": "Method",
+          "ChangedApiName": "moveAlerts",
+          "ChangeType": "Addition",
+          "Description": "Added the [moveAlerts](https://learn.microsoft.com/en-us/graph/api/security-alert-movealerts?view=graph-rest-beta) method to the [alert](https://learn.microsoft.com/en-us/graph/api/resources/security-alert?view=graph-rest-beta) resource.",
+          "Target": "alert"
+        }
+      ],
+      "Id": "724993ad-638e-4e15-a537-621ca6862b7f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-03-30T08:26:31.1646983Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Alerts and incidents"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "439479a0-083f-497c-a248-be7c89e7f773",
           "ApiChange": "Property",
           "ChangedApiName": "activeDirectoryObjectGuid",
@@ -3465,6 +3507,48 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2026-01-26T09:12:41.0410693Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "763c9469-a7c4-49b0-b55a-30043ec35ede",
+          "ApiChange": "Resource",
+          "ChangedApiName": "autoAuditingConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [autoAuditingConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/security-autoAuditingConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "autoAuditingConfiguration"
+        },
+        {
+          "Id": "763c9469-a7c4-49b0-b55a-30043ec35ede",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "autoAuditingConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **autoAuditingConfiguration** relationship to the [settingsContainer](https://learn.microsoft.com/en-us/graph/api/resources/security-settingsContainer?view=graph-rest-1.0) resource.",
+          "Target": "settingsContainer"
+        },
+        {
+          "Id": "763c9469-a7c4-49b0-b55a-30043ec35ede",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "settings",
+          "ChangeType": "Addition",
+          "Description": "Added the **settings** relationship to the [identityContainer](https://learn.microsoft.com/en-us/graph/api/resources/security-identityContainer?view=graph-rest-1.0) resource.",
+          "Target": "identityContainer"
+        },
+        {
+          "Id": "763c9469-a7c4-49b0-b55a-30043ec35ede",
+          "ApiChange": "Resource",
+          "ChangedApiName": "settingsContainer",
+          "ChangeType": "Addition",
+          "Description": "Added the [settingsContainer](https://learn.microsoft.com/en-us/graph/api/resources/security-settingsContainer?view=graph-rest-1.0) resource.",
+          "Target": "settingsContainer"
+        }
+      ],
+      "Id": "763c9469-a7c4-49b0-b55a-30043ec35ede",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-04-09T12:00:00.0000000Z",
       "WorkloadArea": "Security",
       "SubArea": ""
     }

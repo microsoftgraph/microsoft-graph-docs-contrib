@@ -4,7 +4,7 @@ description: "Represents an asynchronous job that is created when an admin creat
 author: "swatyario"
 ms.date: 01/19/2026
 ms.localizationpriority: medium
-ms.subservice: "tenant-administration"
+ms.subservice: "tenant-configuration-management"
 doc_type: resourcePageType
 ---
 
@@ -28,17 +28,17 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|completedDateTime|DateTimeOffset|The date and time when the snapshot job was completed. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|createdBy|[identitySet](../resources/identityset.md)|The user who triggered the snapshot.|
-|createdDateTime|DateTimeOffset|The date and time when the snapshot job was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|description|String|User-friendly description of the snapshot given by the user.|
-|displayName|String|User-friendly name provided by the user during snapshot creation.|
-|errorDetails|String collection|Details of errors related to the reasons why the snapshot can't complete.|
-|id|String|Globally unique identifier (GUID) of the snapshot job. Inherited from [entity](../resources/entity.md).|
-|resourceLocation|String|The URL at which the snapshot file resides.|
-|resources|String collection|The names of all resources included in the request body by the user who created the snapshot. Fetched by the system.|
-|status|snapshotJobStatus|Status of the snapshot. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`, `partiallySuccessful`. Use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `partiallySuccessful`.|
-|tenantId|String|Globally unique identifier (GUID) of the tenant for which the snapshot is created.|
+|completedDateTime|DateTimeOffset|The date and time when the snapshot job was completed. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br>Supports `$filter` (`eq`, `ne`, `ge`, `le`) and `$orderby`.|
+|createdBy|[identitySet](../resources/identityset.md)|The user who triggered the snapshot. <br><br>Returned only on `$select`. Supports `$filter` (`eq`).|
+|createdDateTime|DateTimeOffset|The date and time when the snapshot job was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br>Supports `$filter` (`eq`, `ne`, `ge`, `le`) and `$orderby`.|
+|description|String|User-friendly description of the snapshot given by the user. <br><br>Supports `$filter` (`eq`, `ne`, `startsWith`) and `$orderby`.|
+|displayName|String|User-friendly name provided by the user during snapshot creation. <br><br>Supports `$filter` (`eq`, `ne`, `startsWith`) and `$orderby`.|
+|errorDetails|String collection|Details of errors related to the reasons why the snapshot can't complete. <br><br>Returned only on `$select`.|
+|id|String|Globally unique identifier (GUID) of the snapshot job. Inherited from [entity](../resources/entity.md). <br><br>Supports `$filter` (`eq`, `ne`) and `$orderby`.|
+|resourceLocation|String|The URL at which the snapshot file resides. <br><br>Returned only on `$select`.|
+|resources|String collection|The names of all resources included in the request body by the user who created the snapshot. Fetched by the system. <br><br>Returned only on `$select`.|
+|status|snapshotJobStatus|Status of the snapshot. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`, `partiallySuccessful`. Use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `partiallySuccessful`. <br><br>Supports `$filter` (`eq`, `ne`) and `$orderby`.|
+|tenantId|String|Globally unique identifier (GUID) of the tenant for which the snapshot is created. <br><br>Supports `$filter` (`eq`, `ne`).|
 
 ## Relationships
 None.

@@ -41,16 +41,14 @@ The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
-  "keyProperty": "restrictionType",
   "@odata.type": "microsoft.graph.keyCredentialConfiguration",
-  "openType": false
 }
 -->
 
 ```json
 {
   "@odata.type": "#microsoft.graph.keyCredentialConfiguration",
-  "restrictionType": "String (identifier)",
+  "restrictionType": "String",
   "state": "String",
   "restrictForAppsCreatedAfterDateTime": "String (DateTime)",
   "maxLifetime": "String (duration)",

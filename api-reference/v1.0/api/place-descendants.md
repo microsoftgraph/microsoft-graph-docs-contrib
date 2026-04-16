@@ -61,6 +61,7 @@ If successful, this function returns a `200 OK` response code and a [place](../r
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "placethis.descendants"
@@ -69,6 +70,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/v1.0/places/ca163ae1-14a3-4e2a-8a97-5f82d672186f/descendants/microsoft.graph.desk
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/placethisdescendants-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

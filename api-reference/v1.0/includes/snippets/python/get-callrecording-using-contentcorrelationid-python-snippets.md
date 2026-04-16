@@ -10,7 +10,7 @@ from msgraph.generated.users.item.online_meetings.item.recordings.recordings_req
 from kiota_abstractions.base_request_configuration import RequestConfiguration
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 query_params = RecordingsRequestBuilder.RecordingsRequestBuilderGetQueryParameters(
-		filter = "contentCorrelationId eq 'e87c8cf8-50f7-4252-8b9c-ad08ac0fa88d-0'",
+		filter = "contentcorrelationId eq 'e87c8cf8-50f7-4252-8b9c-ad08ac0fa88d-0'",
 )
 
 request_configuration = RequestConfiguration(

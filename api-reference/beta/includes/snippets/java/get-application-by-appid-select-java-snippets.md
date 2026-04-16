@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Application result = graphClient.applicationsWithAppId("{appId}").get(requestConfiguration -> {
-	requestConfiguration.queryParameters.select = new String []{"id", "appId", "displayName", "requiredResourceAccess"};
+	requestConfiguration.queryParameters.select = new String []{"id", "appId", "displayName", "signInAudience", "signInAudienceRestrictions"};
 });
 
 

@@ -14,6 +14,7 @@ onlineMeeting.setStartDateTime(startDateTime);
 OffsetDateTime endDateTime = OffsetDateTime.parse("2020-09-09T15:03:30.8566356-07:00");
 onlineMeeting.setEndDateTime(endDateTime);
 onlineMeeting.setSubject("Patch Meeting Subject");
+onlineMeeting.setMeetingSpokenLanguageTag("en-US");
 OnlineMeeting result = graphClient.me().onlineMeetings().byOnlineMeetingId("{onlineMeeting-id}").patch(onlineMeeting);
 
 

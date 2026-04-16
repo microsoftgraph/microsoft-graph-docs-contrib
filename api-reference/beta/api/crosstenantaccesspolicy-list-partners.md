@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of all partner configurations within a cross-tenant access policy. You can also use the `$expand` parameter to list the user synchronization policy for all partner configurations.
+Get a list of all partner configurations within a cross-tenant access policy. You can also use the `$expand` parameter to list the user and group synchronization policy for all partner configurations.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -184,9 +184,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: List the user synchronization policy for all partner configurations
+### Example 2: List the user and group synchronization policy for all partner configurations
 
-The following example uses the `$expand` parameter to list the user synchronization policy for all partner configurations.
+The following example uses the `$expand` parameter to list the user and group synchronization policy for all partner configurations.
 
 #### Request
 
@@ -254,6 +254,9 @@ Content-Type: application/json
       "identitySynchronization": {
         "tenantId": "9c5d131d-b1c3-4fc4-9e3f-c6557947d551",
         "displayName": "Fabrikam",
+        "groupSyncInbound": {
+          "isSyncAllowed": true
+        },
         "userSyncInbound": {
           "isSyncAllowed": true
         }

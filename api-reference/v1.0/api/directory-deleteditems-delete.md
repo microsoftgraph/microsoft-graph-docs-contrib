@@ -31,6 +31,9 @@ The following table shows the least privileged permission or permissions require
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-|:-|:-|:-|
 | [application](../resources/application.md) | Application.ReadWrite.All | Not supported. | Application.ReadWrite.OwnedBy |
+| [agentIdentity](../resources/agentidentity.md) | AgentIdentity.ReadWrite.All | Not supported. | AgentIdentity.ReadWrite.All |
+| [agentIdentityBlueprint](../resources/agentidentityblueprint.md) | AgentIdentityBlueprint.ReadWrite.All | Not supported. | AgentIdentityBlueprint.ReadWrite.All |
+| [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) | AgentIdentityBlueprintPrincipal.ReadWrite.All | Not supported. | AgentIdentityBlueprintPrincipal.ReadWrite.All |
 | [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
 | [certificateAuthorityDetail](../resources/certificateauthoritydetail.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
 | [group](../resources/group.md) | Group.ReadWrite.All | Not supported. | Not supported. |

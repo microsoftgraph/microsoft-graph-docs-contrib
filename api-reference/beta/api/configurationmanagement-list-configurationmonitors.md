@@ -4,7 +4,7 @@ description: "Get a list of the configurationMonitor objects and their propertie
 author: "swatyario"
 ms.date: 01/19/2026
 ms.localizationpriority: medium
-ms.subservice: "tenant-administration"
+ms.subservice: "tenant-configuration-management"
 doc_type: apiPageType
 ---
 
@@ -58,6 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_configurationmonitor"
@@ -66,6 +67,36 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationMonitors
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-configurationmonitor-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-configurationmonitor-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-configurationmonitor-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-configurationmonitor-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-configurationmonitor-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-configurationmonitor-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-configurationmonitor-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -144,6 +175,101 @@ Content-Type: application/json
     {
       "id": "a1cbec62-453e-421f-94b5-7a4288bc122a",
       "inactivationReason": null,
+      "displayName": "Sample Monitor",
+      "description": "Sample EXO Monitor with SharedMailbox AcceptedDomain and MailContact",
+      "tenantId": "96bf81b4-2694-42bb-9204-70081135ca61",
+      "status": "active",
+      "monitorRunFrequencyInHours": 6,
+      "mode": "monitorOnly",
+      "createdDateTime": "2024-12-11T05:50:42.6436339Z",
+      "lastModifiedBy": {
+        "user": {
+          "id": "823da47e-fc25-48d8-8b5a-6186c760f0df",
+          "displayName": "System Administrator"
+        }
+      },
+      "lastModifiedDateTime": "2024-12-11T05:50:42.6974645Z",
+      "createdBy": {
+        "user": {
+          "id": "823da47e-fc25-48d8-8b5a-6186c760f0df",
+          "displayName": "System Administrator"
+        }
+      },
+      "parameters": {
+        "FQDN": "contoso.onmicrosoft.com",
+        "TenantId": "2fcf1c68-b412-4c85-bfb2-cb20152a6843"
+      }
+    }
+  ]
+}
+```
+
+### Example 2: Error response when the service is unavailable
+
+The following example shows an error response when the monitor encounters issues during execution.
+
+#### Request
+
+The following example shows a request.
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "list_configurationmonitor_error"
+}-->
+``` http
+GET https://graph.microsoft.com/beta/admin/configurationManagement/configurationMonitors
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-configurationmonitor-error-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-configurationmonitor-error-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-configurationmonitor-error-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-configurationmonitor-error-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-configurationmonitor-error-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-configurationmonitor-error-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-configurationmonitor-error-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "Collection(microsoft.graph.configurationMonitor)"
+}-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/configurationManagement/configurationMonitors",
+  "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET admin/configurationManagement/configurationMonitors?$select=createdBy,createdDateTime",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.configurationMonitor",
+      "id": "a1cbec62-453e-421f-94b5-7a4288bc122a",
+      "inactivationReason": "Service unavailable - unable to process monitor",
       "displayName": "Sample Monitor",
       "description": "Sample EXO Monitor with SharedMailbox AcceptedDomain and MailContact",
       "tenantId": "96bf81b4-2694-42bb-9204-70081135ca61",

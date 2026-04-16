@@ -1,4 +1,4 @@
----
+﻿---
 title: "setAsManagedInstaller action"
 description: "Set the Managed Installer status for the caller tenant"
 author: "jaiprakashmb"
@@ -25,9 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All|
+|Delegated (work or school account)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.Read.All, DeviceManagementManagedDevices.Read.All|
+|Application|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {

@@ -18,6 +18,10 @@ import (
 requestBody := graphmodels.NewCrossTenantIdentitySyncPolicyPartner()
 displayName := "Fabrikam"
 requestBody.SetDisplayName(&displayName) 
+groupSyncInbound := graphmodels.NewCrossTenantGroupSyncInbound()
+isSyncAllowed := true
+groupSyncInbound.SetIsSyncAllowed(&isSyncAllowed) 
+requestBody.SetGroupSyncInbound(groupSyncInbound)
 userSyncInbound := graphmodels.NewCrossTenantUserSyncInbound()
 isSyncAllowed := true
 userSyncInbound.SetIsSyncAllowed(&isSyncAllowed) 

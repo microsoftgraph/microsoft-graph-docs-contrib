@@ -43,6 +43,8 @@ isTruncated := false
 processContentMetadataBase.SetIsTruncated(&isTruncated) 
 ownerId := "ffe1ca70-6e5b-4120-abf0-472034ba05d4"
 processContentMetadataBase.SetOwnerId(&ownerId) 
+contentCategory := graphmodels.NONE_CONTENTCATEGORY 
+processContentMetadataBase.SetContentCategory(&contentCategory) 
 customProperties := graphmodels.NewCustomMetadataDictionary()
 additionalData := map[string]interface{}{
 	"Department" : "Finance", 

@@ -29,6 +29,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/security-incidenttask-update-permissions.md)]
 
+[!INCLUDE [rbac-security-alerts-apis-write](../includes/rbac-for-apis/rbac-security-alerts-apis-write.md)]
+
 ## HTTP request
 
 <!-- {

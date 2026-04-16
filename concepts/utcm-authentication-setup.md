@@ -1,8 +1,8 @@
 ---
 title: "Set up authentication for Tenant Configuration Management APIs"
-description: "Learn how to authenticate and configure the Tenant Configuration Management service principal in Microsoft Graph."
+description: "Learn how to authenticate to the Tenant Configuration Management (TCM) APIs and configure the TCM service principal."
 author: "NikCharlebois"
-ms.date: 02/10/2026
+ms.date: 03/23/2026
 ms.localizationpriority: medium
 ms.subservice: "tenant-administration"
 ---
@@ -36,6 +36,9 @@ When a monitor executes, it impersonates the TCM-specified principal. The TCM so
 ```
 03b07b79-c5bc-4b5e-9bfa-13acf4a99998
 ```
+
+> [!NOTE]
+> Customers should ensure that the **M365 Admin Services** service principal with **appId** `6b91db1b-f05b-405a-a0b2-e3f60b28d645` is also provisioned in their tenant. If it doesn't exist, you can [provision it manually](/graph/api/serviceprincipal-post-serviceprincipals).
 
 ## Set up the TCM service principal
 

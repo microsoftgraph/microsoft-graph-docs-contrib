@@ -129,7 +129,9 @@ Content-Type: application/json
       "sourceImageResourceId": "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/images/exampleImageForDev",
       "lastModifiedDateTime": "2024-11-03T07:03:44.97Z",
       "status": "ready",
-      "errorCode": null
+      "errorCode": null,
+      "osVersionNumber": "10.0.22631.3593",
+      "sizeInGB": 64
     }
   ]
 }

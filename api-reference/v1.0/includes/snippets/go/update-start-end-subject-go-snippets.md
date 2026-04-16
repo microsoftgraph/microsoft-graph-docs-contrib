@@ -23,6 +23,8 @@ endDateTime , err := time.Parse(time.RFC3339, "2020-09-09T15:03:30.8566356-07:00
 requestBody.SetEndDateTime(&endDateTime) 
 subject := "Patch Meeting Subject"
 requestBody.SetSubject(&subject) 
+meetingSpokenLanguageTag := "en-US"
+requestBody.SetMeetingSpokenLanguageTag(&meetingSpokenLanguageTag) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 onlineMeetings, err := graphClient.Me().OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").Patch(context.Background(), requestBody, nil)

@@ -407,6 +407,7 @@ Fully qualify any type (including enum types) that is defined in a subnamespace 
 **Permissions:**
 - Must start with the standard boilerplate text
 - Must include link to a permissions table
+- **(Optional) RBAC include:** If the documentation plan or author specifies required Entra admin roles, add an RBAC include statement immediately after the permissions table include. See [RBAC for APIs include file templates](../../../templates/rbac-for-apis-include.md) for file conventions, naming, and content templates.
 
 **HTTP request:**
 - Use relative URLs (e.g., `/users` not `https://graph.microsoft.com/beta/users`)
@@ -602,6 +603,19 @@ Use the following format when reporting file processing results, so output is co
 ⚠️ Blocked: [list with reasons, or "None"]
 ```
 
+**Mid-phase validation** (required at every ⏸ phase gate, before moving to the next phase):
+
+Re-read each file completed in the current phase and verify it meets expectations for its file type. Output a validation checklist:
+
+```
+✅ Phase [N] Validation
+- [file1.md]: H1 ✓ | Namespace ✓ | Properties table ✓ | JSON representation ✓
+- [file2.md]: H1 ✓ | Namespace ✓ | Permissions ✓ | HTTP request ✓ | Examples ✓
+- [file3.md]: H1 ✓ | Namespace ✓ | Properties table ✗ (missing "newProperty") — FIXING
+```
+
+Fix any failures before proceeding to the next phase. Do not defer fixes to end-of-session.
+
 ## State Tracking
 
 Maintain a running progress tracker throughout the session. After each file or batch of files, update and display:
@@ -624,8 +638,9 @@ For Documentation Plans with many files (10+):
 1. **Group by type:** resources, API methods, enumerations, permissions, supporting files
 2. **Process in batches of 5 files** — complete all steps for each file before moving to the next
 3. **After each batch**, output a phase status summary (see [Structured Output Format](#structured-output-format))
-4. **Present the execution plan upfront** and proceed unless the author objects — avoid blocking confirmations for each batch when the Documentation Plan is clear
-5. **If the plan exceeds 20 files**, create a numbered task list at the start, group into batches, and checkpoint progress after each batch
+4. **Verify each batch before proceeding:** Re-read every file in the completed batch and confirm it contains the expected sections (e.g., H1, namespace, Permissions, HTTP request, Examples for API files; H1, namespace, Properties table, JSON representation for resource files). Fix any issues before starting the next batch.
+5. **Present the execution plan upfront** and proceed unless the author objects — avoid blocking confirmations for each batch when the Documentation Plan is clear
+6. **If the plan exceeds 20 files**, after the first batch completes and is verified, **stop and ask the author to confirm quality** before continuing. This catches systematic errors early.
 
 ## Decision Trees for Ambiguous Cases
 
@@ -691,6 +706,7 @@ After processing all files in a documentation session, verify cross-file consist
 2. **API file ↔ resource link:** Every API file's description should link back to its parent resource, and that resource file should exist
 3. **Enum references ↔ definitions:** Every enum type referenced in Properties tables should be defined in the appropriate enums file, parent resource, or separate topic
 4. **Permissions files:** Every permissions include reference in API files should have a corresponding file in the `includes/permissions/` folder
+5. **RBAC files:** If any API file has an RBAC include reference, verify the corresponding file exists in `includes/rbac-for-apis/`
 5. **JSON representation ↔ Properties table:** Properties listed in the JSON representation section should match the Properties table
 6. **Polymorphic collections:** If a Documentation Plan flagged polymorphic types, verify: (a) no operation files were created using derived type names, (b) all shared operation files use the base type name, (c) base type resource page has the Methods table (including base-type-only operations for concrete bases), (d) derived type resource pages have a `## Methods` section with only a polymorphic note (no Methods table — the table lives only on the base type page), (e) `@odata.type` guidance is included in POST/PATCH request body sections
 
@@ -699,6 +715,8 @@ Report any inconsistencies in the final summary to the author.
 ## Base Quality Checklist
 
 The following checks apply to every documentation scenario. Scenario-specific checklists add additional items on top of these.
+
+> **IMPORTANT:** For each checklist item, re-read the actual file content to confirm — do not check items from memory.
 
 **For all files (new and updated):**
 - [ ] All required sections are present and in correct order

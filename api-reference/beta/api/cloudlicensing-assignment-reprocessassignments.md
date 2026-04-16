@@ -56,6 +56,7 @@ If successful, this action returns a `200 OK` response code.
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "assignmentthis.reprocessassignments"
@@ -64,6 +65,12 @@ The following example shows a request.
 ``` http
 POST https://graph.microsoft.com/beta/users/43fe5b38-7328-40b9-a2f6-85d86ae8c34d/cloudLicensing/assignments/reprocessAssignments
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/assignmentthisreprocessassignments-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

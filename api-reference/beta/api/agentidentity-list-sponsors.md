@@ -78,7 +78,6 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/microsoft.graph.agen
 
 ---
 
-
 ### Response
 
 The following example shows the response.

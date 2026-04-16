@@ -71,6 +71,7 @@ This example creates an inheritablePermission that allows all delegated permissi
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_inheritablepermission_allallowedscopes"
@@ -88,6 +89,11 @@ Content-Type: application/json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-inheritablepermission-allallowedscopes-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -120,6 +126,7 @@ This example creates an inheritablePermission that allows only the specified del
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_inheritablepermission_enumeratedscopes"
@@ -141,6 +148,11 @@ Content-Type: application/json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-inheritablepermission-enumeratedscopes-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -177,6 +189,7 @@ This example creates an inheritablePermission that blocks all delegated permissi
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_inheritablepermission_noscopes"
@@ -194,6 +207,11 @@ Content-Type: application/json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-inheritablepermission-noscopes-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

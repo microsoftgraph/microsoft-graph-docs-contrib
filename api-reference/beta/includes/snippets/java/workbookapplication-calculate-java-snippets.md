@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 com.microsoft.graph.beta.drives.item.items.item.workbook.application.calculate.CalculatePostRequestBody calculatePostRequestBody = new com.microsoft.graph.beta.drives.item.items.item.workbook.application.calculate.CalculatePostRequestBody();
-calculatePostRequestBody.setCalculationType("calculationType-value");
+calculatePostRequestBody.setCalculationType("FullRebuild");
 graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().application().calculate().post(calculatePostRequestBody);
 
 

@@ -3,7 +3,7 @@ title: "Set up notifications for changes in resource data"
 description: "Change notifications enable applications to receive alerts when a Microsoft Graph resource they're interested changes."
 author: FaithOmbongi
 ms.author: ombongifaith
-ms.reviewer: keylimesoda
+ms.reviewer: jessieli-ad
 ms.topic: concept-article
 ms.subservice: change-notifications
 ms.localizationpriority: high

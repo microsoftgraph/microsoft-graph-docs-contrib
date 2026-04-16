@@ -10,7 +10,7 @@ from msgraph.generated.service_principals.service_principals_request_builder imp
 from kiota_abstractions.base_request_configuration import RequestConfiguration
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 query_params = ServicePrincipalsRequestBuilder.ServicePrincipalsRequestBuilderGetQueryParameters(
-		filter = "displayName eq 'Microsoft Graph'",
+		filter = "appId eq '00000003-0000-0000-c000-000000000000'",
 		select = ["id","displayName","appId","appRoles"],
 )
 

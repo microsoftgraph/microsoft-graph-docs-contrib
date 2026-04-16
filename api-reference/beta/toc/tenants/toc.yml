@@ -1,0 +1,134 @@
+#
+# GENERATED FILE - DO NOT EDIT
+#
+items:
+- name: Configuration management
+  items:
+  - name: Overview
+    href: ../../resources/unified-tenant-configuration-management-api-overview.md
+  - name: Configuration baseline
+    items:
+    - name: Configuration baseline
+      href: ../../resources/configurationbaseline.md
+    - name: List
+      href: ../../api/configurationmanagement-list-configurationsnapshots.md
+    - name: Get
+      href: ../../api/configurationbaseline-get.md
+    - name: Create snapshot
+      href: ../../api/configurationbaseline-createsnapshot.md
+  - name: Configuration drift
+    items:
+    - name: Configuration drift
+      href: ../../resources/configurationdrift.md
+    - name: List
+      href: ../../api/configurationmanagement-list-configurationdrifts.md
+    - name: Get
+      href: ../../api/configurationdrift-get.md
+  - name: Configuration monitor
+    items:
+    - name: Configuration monitor
+      href: ../../resources/configurationmonitor.md
+    - name: List
+      href: ../../api/configurationmanagement-list-configurationmonitors.md
+    - name: Create
+      href: ../../api/configurationmanagement-post-configurationmonitors.md
+    - name: Get
+      href: ../../api/configurationmonitor-get.md
+    - name: Update
+      href: ../../api/configurationmonitor-update.md
+    - name: Delete
+      href: ../../api/configurationmonitor-delete.md
+    - name: Get configuration baseline
+      href: ../../api/configurationbaseline-get.md
+  - name: Configuration monitoring result
+    items:
+    - name: Configuration monitoring result
+      href: ../../resources/configurationmonitoringresult.md
+    - name: List
+      href: ../../api/configurationmanagement-list-configurationmonitoringresults.md
+    - name: Get
+      href: ../../api/configurationmonitoringresult-get.md
+  - name: Configuration snapshot job
+    items:
+    - name: Configuration snapshot job
+      href: ../../resources/configurationsnapshotjob.md
+    - name: List
+      href: ../../api/configurationmanagement-list-configurationsnapshotjobs.md
+    - name: Get
+      href: ../../api/configurationsnapshotjob-get.md
+    - name: Delete
+      href: ../../api/configurationsnapshotjob-delete.md
+- name: Governance (preview)
+  items:
+  - name: Overview
+    href: ../../resources/tenantgovernanceservices-tenantgovernance-overview.md
+  - name: Tenant governance setting
+    items:
+    - name: Tenant governance setting
+      href: ../../resources/tenantgovernanceservices-tenantgovernancesetting.md
+    - name: Get
+      href: ../../api/tenantgovernanceservices-tenantgovernancesetting-get.md
+    - name: Update
+      href: ../../api/tenantgovernanceservices-tenantgovernancesetting-update.md
+    - name: Enable related tenants
+      href: ../../api/tenantgovernanceservices-tenantgovernancesetting-enablerelatedtenants.md
+  - name: Related tenant
+    items:
+    - name: Related tenant
+      href: ../../resources/tenantgovernanceservices-relatedtenant.md
+    - name: List
+      href: ../../api/tenantgovernanceservices-list-relatedtenants.md
+    - name: Get
+      href: ../../api/tenantgovernanceservices-relatedtenant-get.md
+    - name: Refresh
+      href: ../../api/tenantgovernanceservices-relatedtenant-refresh.md
+    - name: Refresh status
+      href: ../../api/tenantgovernanceservices-relatedtenant-refreshstatus.md
+  - name: Governance policy template
+    items:
+    - name: Governance policy template
+      href: ../../resources/tenantgovernanceservices-governancepolicytemplate.md
+    - name: List
+      href: ../../api/tenantgovernanceservices-list-governancepolicytemplates.md
+    - name: Create
+      href: ../../api/tenantgovernanceservices-post-governancepolicytemplates.md
+    - name: Get
+      href: ../../api/tenantgovernanceservices-governancepolicytemplate-get.md
+    - name: Update
+      href: ../../api/tenantgovernanceservices-governancepolicytemplate-update.md
+    - name: Delete
+      href: ../../api/tenantgovernanceservices-delete-governancepolicytemplates.md
+  - name: Governance invitation
+    items:
+    - name: Governance invitation
+      href: ../../resources/tenantgovernanceservices-governanceinvitation.md
+    - name: List
+      href: ../../api/tenantgovernanceservices-list-governanceinvitations.md
+    - name: Create
+      href: ../../api/tenantgovernanceservices-post-governanceinvitations.md
+    - name: Get
+      href: ../../api/tenantgovernanceservices-governanceinvitation-get.md
+    - name: Delete
+      href: ../../api/tenantgovernanceservices-governanceinvitation-delete.md
+  - name: Governance request
+    items:
+    - name: Governance request
+      href: ../../resources/tenantgovernanceservices-governancerequest.md
+    - name: List
+      href: ../../api/tenantgovernanceservices-list-governancerequests.md
+    - name: Create
+      href: ../../api/tenantgovernanceservices-post-governancerequests.md
+    - name: Get
+      href: ../../api/tenantgovernanceservices-governancerequest-get.md
+    - name: Update
+      href: ../../api/tenantgovernanceservices-governancerequest-update.md
+  - name: Governance relationship
+    items:
+    - name: Governance relationship
+      href: ../../resources/tenantgovernanceservices-governancerelationship.md
+    - name: List
+      href: ../../api/tenantgovernanceservices-list-governancerelationships.md
+    - name: Get
+      href: ../../api/tenantgovernanceservices-governancerelationship-get.md
+    - name: Update
+      href: ../../api/tenantgovernanceservices-governancerelationship-update.md

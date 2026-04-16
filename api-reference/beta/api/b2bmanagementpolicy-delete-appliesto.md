@@ -58,6 +58,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_appliesto_from_b2bmanagementpolicy"
@@ -67,6 +68,11 @@ The following example shows a request.
 DELETE https://graph.microsoft.com/beta/policies/b2bManagementPolicies/f596ef0d-42f9-0359-1aaa-12d02b38802a/appliesTo/a6c034b8-621b-dee3-6abb-52cbce801fe9/$ref
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-appliesto-from-b2bmanagementpolicy-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

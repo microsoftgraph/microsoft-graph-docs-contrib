@@ -66,6 +66,8 @@ items:
       href: ../../resources/simulation.md
     - name: List simulations
       href: ../../api/attacksimulationroot-list-simulations.md
+    - name: List simulation users
+      href: ../../api/usersimulationdetails-list.md
     - name: Create simulation
       href: ../../api/attacksimulationroot-post-simulation.md
     - name: Get simulation
@@ -638,6 +640,14 @@ items:
       href: ../../api/security-identityaccounts-get.md
     - name: invokeAction
       href: ../../api/security-identityaccounts-invokeaction.md
+  - name: Auto auditing configuration
+    items:
+    - name: Auto auditing configuration
+      href: ../../resources/security-autoauditingconfiguration.md
+    - name: Get
+      href: ../../api/security-autoauditingconfiguration-get.md
+    - name: Update
+      href: ../../api/security-autoauditingconfiguration-update.md
   - name: Complex types
     items:
     - name: Account

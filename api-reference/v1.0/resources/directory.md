@@ -17,6 +17,9 @@ Represents a deleted item in the directory. When an item is deleted, it moves to
 
 Currently, deleted items functionality is supported for the the following resources:
 - [application](application.md)
+- [agentIdentityBlueprint](../resources/agentidentityblueprint.md)
+- [agentIdentity](../resources/agentidentity.md)
+- [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md)
 - [group](group.md)
 - [servicePrincipal](../resources/serviceprincipal.md)
 - [user](user.md)

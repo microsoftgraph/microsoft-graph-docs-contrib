@@ -12,7 +12,7 @@ use Microsoft\Graph\Beta\Generated\Drives\Item\Items\Item\Workbook\Application\C
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new CalculatePostRequestBody();
-$requestBody->setCalculationType('calculationType-value');
+$requestBody->setCalculationType('FullRebuild');
 
 $graphServiceClient->drives()->byDriveId('drive-id')->items()->byDriveItemId('driveItem-id')->workbook()->application()->calculate()->post($requestBody)->wait();
 

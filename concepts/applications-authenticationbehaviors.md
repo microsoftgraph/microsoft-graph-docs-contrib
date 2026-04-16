@@ -131,8 +131,6 @@ As described in the Microsoft security advisory [Potential Risk of Privilege Esc
 - When the **mail** attribute of the [user](/graph/api/resources/user) object contains an email address with an unverified domain owner
 - For multitenant apps where a user from one tenant could escalate their privileges to access resources from another tenant through modification of their **mail** attribute
 
-For more information about identifying these cases in your tenant, see [Migrate away from using email claims for user identification or authorization](/azure/active-directory/develop/migrate-off-email-claim-authorization).
-
 Today, the default behavior is to remove email addresses with unverified domain owners in claims, except for single-tenant apps and for multitenant apps with previous sign-in activity with unverified emails. If your app falls into either of these exceptions and you want to remove unverified email addresses, set the **removeUnverifiedEmailClaim** property of [authenticationBehaviors](/graph/api/resources/authenticationbehaviors) to `true` as shown in the following examples. The request returns a `204 No Content` response code.
 
 ### Remove email addresses with unverified domain owners from claims

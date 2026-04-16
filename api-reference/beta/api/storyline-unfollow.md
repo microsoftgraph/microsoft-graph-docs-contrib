@@ -72,6 +72,7 @@ If successful, this action returns a `204 No Content` response code.
 The following example shows how to unfollow a user using delegated permissions.
 
 #### Request
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "storyline_unfollow_delegated"
@@ -83,6 +84,12 @@ Content-Type: application/json
 
 {}
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/storyline-unfollow-delegated-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 <!-- {
@@ -99,6 +106,7 @@ HTTP/1.1 204 No Content
 The following example shows how to unfollow a user using application permissions.
 
 #### Request
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "storyline_unfollow_app_only"
@@ -116,6 +124,12 @@ Content-Type: application/json
   }
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/storyline-unfollow-app-only-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 <!-- {

@@ -1,0 +1,24 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```java
+
+// Code snippets are only available for the latest version. Current version is 6.x
+
+GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
+
+Permission permission = new Permission();
+SharePointIdentitySet grantedToV2 = new SharePointIdentitySet();
+Identity application = new Identity();
+application.setId("89ea5c94-7736-4e25-95ad-3fa95f62b66e");
+application.setDisplayName("Contoso Time Manager App");
+grantedToV2.setApplication(application);
+permission.setGrantedToV2(grantedToV2);
+LinkedList<String> roles = new LinkedList<String>();
+roles.add("write");
+permission.setRoles(roles);
+Permission result = graphClient.sites().bySiteId("{site-id}").lists().byListId("{list-id}").permissions().post(permission);
+
+
+```

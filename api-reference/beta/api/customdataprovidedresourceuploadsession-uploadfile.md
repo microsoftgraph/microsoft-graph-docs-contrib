@@ -62,6 +62,7 @@ If successful, this action returns a `200 OK` response code and a [customDataPro
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_customdataprovidedresourcefile_from_"
@@ -80,6 +81,12 @@ john.doe@contoso.com,550e8400-e29b-41d4-a716-446655440000,Building A,Main office
 jane.doe@contoso.com,550e8400-e29b-41d4-a716-446655440001,Room 101,Conference room,Room,6ba7b810-9dad-11d1-80b4-00c04fd430c9,Reserve,Book conference room,Administrative,["admin@contoso.com","manager@contoso.com"]
 --MyPartBoundary198374
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-customdataprovidedresourcefile-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

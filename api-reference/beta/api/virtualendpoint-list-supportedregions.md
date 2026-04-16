@@ -129,7 +129,8 @@ Content-Type: application/json
       "regionRestrictionDetail": {
         "cPURestricted": true,
         "gPURestricted": true,
-        "nestedVirtualizationRestricted": true
+        "nestedVirtualizationRestricted": true,
+        "availabilityZoneRestricted": true
       }
     }
   ]

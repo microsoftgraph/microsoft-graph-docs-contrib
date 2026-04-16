@@ -29,6 +29,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+|cloudFirewallPolicies|[microsoft.graph.networkaccess.cloudFirewallPolicy](../resources/networkaccess-cloudfirewallpolicy.md) collection|A collection of cloud firewall policies that define rules for managing network traffic through the Global Secure Access services.|
 |connectivity|[microsoft.graph.networkaccess.connectivity](../resources/networkaccess-connectivity.md)|Connectivity represents all the connectivity components in Global Secure Access.|
 |filteringPolicies|[microsoft.graph.networkaccess.filteringPolicy](../resources/networkaccess-filteringpolicy.md) collection|A filtering policy defines the specific traffic that is allowed or blocked through the Global Secure Access services for a filtering profile.|
 |filteringProfiles|[microsoft.graph.networkaccess.filteringProfile](../resources/networkaccess-filteringprofile.md) collection|A filtering profile associates network access policies with Microsoft Entra ID Conditional Access policies, so that access policies can be applied to users and groups.|

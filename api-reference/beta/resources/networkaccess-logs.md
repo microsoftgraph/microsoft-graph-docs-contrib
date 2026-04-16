@@ -26,10 +26,10 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+|connections|[microsoft.graph.networkaccess.connection](../resources/networkaccess-connection.md) collection|An aggregated log entry that contains comprehensive information about network traffic events.|
+|generativeAiInsights|[microsoft.graph.networkaccess.generativeAIInsight](../resources/networkaccess-generativeaiinsight.md) collection|A collection of generative AI insights extracted from traffic events, including prompt and MCP activity metadata.|
 |remoteNetworks|[microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md) collection|A collection of remote network health events.|
 |traffic|[microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) collection|A network access traffic log entry that contains comprehensive information about network traffic events.|
-|connections|[microsoft.graph.networkaccess.connection](../resources/networkaccess-connection.md) collection|An aggregated log entry that contains comprehensive information about network traffic events.|
-
 
 ## JSON representation
 The following JSON representation shows the resource type.

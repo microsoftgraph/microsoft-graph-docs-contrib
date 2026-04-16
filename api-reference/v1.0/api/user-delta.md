@@ -56,7 +56,7 @@ This method supports optional OData Query Parameters to help customize the respo
 
 - You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The *id* property is always returned.
 - There's limited support for `$filter`:
-  - The only supported `$filter` expression is for tracking changes on a specific object: `$filter=id+eq+{value}`. You can filter multiple objects. For example, `https://graph.microsoft.com/v1.0/users/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`. There's a limit of 50 filtered objects.
+  - The only supported `$filter` expression is for tracking changes on a specific object: `$filter=id+eq+{value}`. You can filter multiple objects. For example, `https://graph.microsoft.com/v1.0/users/delta/?$filter=id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ffff' or id eq '004d6a07-fe70-4b92-add5-e6e37b8affff'`. There's a limit of 50 filtered objects.
 
 ## Request headers
 | Name       | Description|

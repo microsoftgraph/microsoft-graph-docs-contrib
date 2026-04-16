@@ -11,8 +11,8 @@ const options = {
 const client = Client.init(options);
 
 const updateAllMessagesReadState = {
-  isRead: 'true',
-  suppressReadReceipts: 'true'
+  isRead: true,
+  suppressReadReceipts: true
 };
 
 await client.api('/me/mailFolders/AAMkAGVmMDEzM/updateAllMessagesReadState')

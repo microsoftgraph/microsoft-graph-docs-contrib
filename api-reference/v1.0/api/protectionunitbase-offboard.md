@@ -88,6 +88,10 @@ POST https://graph.microsoft.com/v1.0/solutions/backupRestore/protectionUnits/89
 [!INCLUDE [sample-code](../includes/snippets/php/protectionunitbase-offboard-example1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/protectionunitbase-offboard-example1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/protectionunitbase-offboard-example1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -175,6 +179,10 @@ POST https://graph.microsoft.com/v1.0/solutions/backupRestore/protectionUnits/89
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/protectionunitbase-offboard-example2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/protectionunitbase-offboard-example2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

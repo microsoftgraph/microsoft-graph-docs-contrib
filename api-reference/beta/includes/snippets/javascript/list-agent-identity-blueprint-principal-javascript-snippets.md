@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let servicePrincipal = await client.api('/servicePrincipals/microsoft.graph.agentIdentityBlueprintPrincipal')
+let agentIdentityBlueprintPrincipal = await client.api('/servicePrincipals/microsoft.graph.agentIdentityBlueprintPrincipal')
 	.version('beta')
 	.get();
 

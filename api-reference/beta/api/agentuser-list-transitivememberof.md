@@ -109,7 +109,6 @@ GET https://graph.microsoft.com/beta/users/{usersId}/transitiveMemberOf
 
 ---
 
-
 ### Response
 
 The following example shows the response.

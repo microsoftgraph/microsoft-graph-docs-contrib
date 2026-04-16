@@ -1797,6 +1797,128 @@ Content-Type: application/json
 }
 ```
 
+### Example 14: Send a message with a code block
+
+The following example shows how to send a message with a code block.
+
+> [!NOTE]
+> - To specify a language for syntax highlighting in a code block, use the `class` attribute in the `<codeblock>` HTML element.
+> - If no language is specified, the code block defaults to plaintext formatting.
+> - Supported languages include: `bash`, `c`, `cpp`, `csharp`, `css`, `dart`, `dockerfile`, `dos`, `go`, `graphql`, `html`, `http`, `java`, `javascript`, `json`, `jsp`, `jsx`, `kotlin`, `markdown`, `objectivec`, `octave`, `perl`, `php`, `powershell`, `python`, `r`, `ruby`, `rust`, `scala`, `scss`, `shell`, `sql`, `swift`, `typescript`, `vbnet`, `vbscript`, `verilog`, `vhdl`, `xml`, `yaml`, and `plaintext`.
+
+
+#### Request
+
+The following example shows a request.
+
+> [!NOTE]
+> - Highlighted code isn't supported when sending chat messages with code blocks
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "post_chatmessage_14",
+  "sampleKeys": ["19:7fb82b685f9c457296a0ab6a1d98b4c1@thread.v2"]
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/chats/19:7fb82b685f9c457296a0ab6a1d98b4c1@thread.v2/messages
+Content-type: application/json
+
+{
+  "body": {
+    "contentType": "html",
+    "content": "<codeblock class=\"plaintext\"><code>Hello world</code></codeblock>"
+  }
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-14-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-14-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-14-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-chatmessage-14-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/post-chatmessage-14-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-14-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/post-chatmessage-14-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chatMessage/$entity",
+  "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET chats('<key>')/messages('<key>')?$select=attachments,body",
+  "id": "1741124357685",
+  "replyToId": null,
+  "etag": "1741124357685",
+  "messageType": "message",
+  "createdDateTime": "2025-03-04T21:39:17.685Z",
+  "lastModifiedDateTime": "2025-03-04T21:39:17.685Z",
+  "lastEditedDateTime": null,
+  "deletedDateTime": null,
+  "subject": null,
+  "summary": null,
+  "chatId": "19:e2ed97baac8e4bffbb91299a38996790@thread.v2",
+  "importance": "normal",
+  "locale": "en-us",
+  "webUrl": null,
+  "channelIdentity": null,
+  "onBehalfOf": null,
+  "policyViolation": null,
+  "eventDetail": null,
+  "from": {
+    "application": null,
+    "device": null,
+    "user": {
+      "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+      "id": "28c10244-4bad-4fda-993c-f332faef94f0",
+      "displayName": "Adele Vance",
+      "userIdentityType": "aadUser",
+      "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
+    }
+  },
+  "body": {
+    "contentType": "html",
+    "content": "\n<codeblock class=\"plaintext\"><code>Hello world</code></codeblock>"
+  },
+  "attachments": [],
+  "mentions": [],
+  "reactions": []
+}
+```
+
 ## Related content
 
 [Cards reference](/microsoftteams/platform/concepts/cards/cards-reference)

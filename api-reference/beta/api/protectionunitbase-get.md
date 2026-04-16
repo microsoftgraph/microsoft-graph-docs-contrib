@@ -112,6 +112,7 @@ HTTP/1.1 200 OK
   "id": "89014d8c-71fe-4d00-a01a-31850bc5b32c",
   "siteId": "contoso-jpn.sharepoint.com,da60e844-ba1d-49bc-b4d4-d5e36bae9019,0271110f-634f-4300-a841-3a8a2e900900",
   "policyId": "845457dc-4bb2-4815-bef3-8628ebd1952e",
+  "backupRetentionPeriodInDays": 180,
   "status": "protectRequested",
   "protectionSources": "manual",
   "createdBy": {

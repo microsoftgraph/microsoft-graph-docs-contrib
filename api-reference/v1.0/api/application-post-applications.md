@@ -12,7 +12,7 @@ ms.date: 05/14/2024
 
 Namespace: microsoft.graph
 
-Create a new [application](../resources/application.md) object.
+Create a new [application](../resources/application.md) object. This API can also create an [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object when the **@odata.type** property is set to `#microsoft.graph.agentIdentityBlueprint`.
 
 > [!IMPORTANT]
 >
@@ -42,11 +42,13 @@ POST /applications
 | Content-Type   | application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of [application](../resources/application.md) object. The request body must contain  **displayName**, which is a required property.
+In the request body, supply a JSON representation of [application](../resources/application.md) object. The request body must contain  **displayName**, which is a required property. To create an [agentIdentityBlueprint](../resources/agentidentityblueprint.md), also set the **@odata.type** property to `#microsoft.graph.agentIdentityBlueprint`.
+
+You can optionally set the **managerApplications** property when creating an [agentIdentityBlueprint](../resources/agentidentityblueprint.md). This property is only supported on agent identity blueprint objects. Setting **managerApplications** on non-agent-blueprint applications returns a `400 Bad Request` error. Only Microsoft first-party application IDs can be added as managers; adding a third-party application returns a `400 Bad Request` error. The maximum allowed is 10 manager applications; exceeding this limit returns a `400 Bad Request` error.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and an [application](../resources/application.md) object in the response body.
+If successful, this method returns `201 Created` response code and an [application](../resources/application.md) or [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object in the response body.
 
 ## Examples
 

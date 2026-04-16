@@ -17,8 +17,6 @@ Retrieve all [messages](../resources/chatmessage.md) across all [channels](../re
 
 To learn more about using the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams Export APIs](/microsoftteams/export-teams-content).
 
-[!INCLUDE [teams-model-A-and-B-disclaimer](../../includes/teams-model-A-and-B-disclaimer.md)]
-
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
@@ -43,16 +41,6 @@ GET /teamwork/deletedTeams/{deletedTeamId}/channels/getAllMessages
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Optional query parameters
-
-You can use the `model` query parameter, which supports the values `A` and `B`, based on the preferred [licensing and payment model](/graph/teams-licenses),
-as shown in the following examples.  
-
-```http
-GET /teamwork/deletedTeams/{deletedTeamId}/channels/getAllMessages?model=A
-GET /teamwork/deletedTeams/{deletedTeamId}/channels/getAllMessages?model=B
-```
-
-If the `model` parameter is not specified, the [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
 
 This method supports the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response and the [$filter](/graph/query-parameters#filter-parameter) query parameter with the **dateTime** range query on **lastModifiedDateTime**. Other [OData query parameters](/graph/query-parameters) are currently not supported.
 

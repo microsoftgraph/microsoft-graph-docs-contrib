@@ -19,16 +19,18 @@ For usage information, see [driveItem][].
 
 ## Properties
 
-| Property    | Type                   | Description |
-|:------------|:-----------------------|:----------------------------------------------------------- |
-| application | [identity][]           | The application associated with this action. Optional. |
-| device      | [identity][]           | The device associated with this action. Optional. |
-| group       | [identity][]           | The group associated with this action. Optional. |
-| user        | [identity][]           | The user associated with this action. Optional. |
-| siteUser    | [sharePointIdentity][] | The SharePoint user associated with this action. Optional. |
-| siteGroup   | [sharePointIdentity][] | The SharePoint group associated with this action. Optional. |
+| Property | Type | Description |
+|:---|:---|:---|
+| application | [identity][] | The application associated with this action. Optional. |
+| device | [identity][] | The device associated with this action. Optional. |
+| group | [identity][] | The group associated with this action. Optional. |
+| sharePointGroup | [sharePointGroupIdentity][] | The SharePoint group associated with this action. Optional. |
+| siteGroup | [sharePointIdentity][] | The SharePoint group associated with this action. Optional. |
+| siteUser | [sharePointIdentity][] | The SharePoint user associated with this action. Optional. |
+| user | [identity][] | The user associated with this action. Optional. |
 
 ## Relationships
+
 None.
 
 ## JSON representation
@@ -47,6 +49,7 @@ The following JSON representation shows the resource type.
   "user": {"@odata.type": "microsoft.graph.identity"},
   
   "group": {"@odata.type": "microsoft.graph.identity"},
+  "sharePointGroup": {"@odata.type": "microsoft.graph.sharePointGroupIdentity"},
   "siteUser": {"@odata.type": "microsoft.graph.sharePointIdentity"},
   "siteGroup":{"@odata.type": "microsoft.graph.sharePointIdentity"}
 }
@@ -54,6 +57,7 @@ The following JSON representation shows the resource type.
 
 [driveItem]: driveitem.md
 [identity]: identity.md
+[sharePointGroupIdentity]: sharepointgroupidentity.md
 [sharePointIdentity]: sharePointidentity.md
 
 <!-- {

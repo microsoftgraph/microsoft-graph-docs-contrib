@@ -46,6 +46,15 @@ Namespace: microsoft.graph.networkaccess
 |sap|
 |unknownFutureValue|
 
+### applicationActivity values
+
+|Member|
+|:---|
+|none|
+|prompt|
+|mcp|
+|unknownFutureValue|
+
 ### bandwidthCapacityInMbps values 
 
 |Member|
@@ -634,6 +643,23 @@ Namespace: microsoft.graph.networkaccess
 |vendorManagementSystem|
 |personalInstantMessaging|
 |codeHosting|
+|unknownFutureValue|
+
+### cloudFirewallAction values
+
+|Member|
+|:---|
+|allow|
+|block|
+|unknownFutureValue|
+
+### cloudFirewallProtocol values
+
+
+|Member|
+|:---|
+|tcp|
+|udp|
 |unknownFutureValue|
 
 <!--

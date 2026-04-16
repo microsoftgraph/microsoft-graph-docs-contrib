@@ -236,6 +236,14 @@ items:
     href: ../../api/filestoragecontainertype-update.md
   - name: Delete
     href: ../../api/filestorage-delete-containertypes.md
+  - name: List permissions
+    href: ../../api/filestoragecontainertype-list-permissions.md
+  - name: Create permission
+    href: ../../api/filestoragecontainertype-post-permissions.md
+  - name: Get permission
+    href: ../../api/filestoragecontainertype-get-permission.md
+  - name: Delete permission
+    href: ../../api/filestoragecontainertype-delete-permissions.md
 - name: File storage container type app permission grant
   items:
   - name: File storage container type app permission grant
@@ -440,3 +448,5 @@ items:
     href: ../../resources/filestoragecontainertyperegistrationsettings.md
   - name: File storage container type settings
     href: ../../resources/filestoragecontainertypesettings.md
+  - name: SharePoint group identity
+    href: ../../resources/sharepointgroupidentity.md

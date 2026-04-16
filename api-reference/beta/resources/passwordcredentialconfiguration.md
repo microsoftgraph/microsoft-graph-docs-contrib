@@ -40,16 +40,14 @@ The following JSON representation shows the resource.
 
 <!-- {
   "blockType": "resource",
-  "keyProperty": "restrictionType",
   "@odata.type": "microsoft.graph.passwordCredentialConfiguration",
-  "openType": false
 }
 -->
 
 ```json
 {
   "@odata.type": "#microsoft.graph.passwordCredentialConfiguration",
-  "restrictionType": "String (identifier)",
+  "restrictionType": "String",
   "state": "String",
   "restrictForAppsCreatedAfterDateTime": "String (DateTime)",
   "maxLifetime": "String (duration)",

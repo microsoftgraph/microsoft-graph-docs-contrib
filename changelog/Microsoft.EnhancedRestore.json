@@ -21,6 +21,48 @@
         {
           "ChangeList": [
           {
+            "Id": "0a120c03-b068-434a-8b17-eb97875cb01a",
+            "ApiChange": "Property",
+            "ChangedApiName": "backupRetentionPeriodInDays",
+            "ChangeType": "Addition",
+            "Description": "Added the **backupRetentionPeriodInDays** property to the [protectionUnitBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionUnitBase?view=graph-rest-beta) resource.",
+            "Target": "protectionUnitBase"
+          },
+          {
+            "Id": "0a120c03-b068-434a-8b17-eb97875cb01a",
+            "ApiChange": "Property",
+            "ChangedApiName": "backupRetentionPeriodInDays",
+            "ChangeType": "Addition",
+            "Description": "Added the **backupRetentionPeriodInDays** property to the [driveProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/driveProtectionUnit?view=graph-rest-beta) resource.",
+            "Target": "driveProtectionUnit"
+          },
+          {
+            "Id": "0a120c03-b068-434a-8b17-eb97875cb01a",
+            "ApiChange": "Property",
+            "ChangedApiName": "backupRetentionPeriodInDays",
+            "ChangeType": "Addition",
+            "Description": "Added the **backupRetentionPeriodInDays** property to the [mailboxProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/mailboxProtectionUnit?view=graph-rest-beta) resource.",
+            "Target": "mailboxProtectionUnit"
+          },
+          {
+            "Id": "0a120c03-b068-434a-8b17-eb97875cb01a",
+            "ApiChange": "Property",
+            "ChangedApiName": "backupRetentionPeriodInDays",
+            "ChangeType": "Addition",
+            "Description": "Added the **backupRetentionPeriodInDays** property to the [siteProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/siteProtectionUnit?view=graph-rest-beta) resource.",
+            "Target": "siteProtectionUnit"
+          }
+        ],
+        "Id": "0a120c03-b068-434a-8b17-eb97875cb01a",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2026-03-18T10:06:27Z",
+        "WorkloadArea": "Backup storage",
+        "SubArea": ""
+      },
+      {
+        "ChangeList": [
+          {
             "Id": "51bec7fb-1c22-4485-bef5-4ac72a4b8258",
             "ApiChange": "Member",
             "ChangedApiName": "updateRequested",
@@ -2033,6 +2075,72 @@
       "CreatedDateTime": "2026-03-03T21:51:07.3764487Z",
       "WorkloadArea": "EnhancedRestore",
       "SubArea": "Backup and Restore"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2f6f6625-a925-4757-bf90-93b8a8ce9d40",
+          "ApiChange": "Property",
+          "ChangedApiName": "billingPolicyId",
+          "ChangeType": "Addition",
+          "Description": "Added the **billingPolicyId** property to the [protectionUnitBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionUnitBase?view=graph-rest-beta) resource.",
+          "Target": "protectionUnitBase"
+        },
+        {
+          "Id": "2f6f6625-a925-4757-bf90-93b8a8ce9d40",
+          "ApiChange": "Property",
+          "ChangedApiName": "billingPolicyId",
+          "ChangeType": "Addition",
+          "Description": "Added the **billingPolicyId** property to the [driveProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/driveProtectionUnit?view=graph-rest-beta) resource.",
+          "Target": "driveProtectionUnit"
+        },
+        {
+          "Id": "2f6f6625-a925-4757-bf90-93b8a8ce9d40",
+          "ApiChange": "Property",
+          "ChangedApiName": "billingPolicyId",
+          "ChangeType": "Addition",
+          "Description": "Added the **billingPolicyId** property to the [mailboxProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/mailboxProtectionUnit?view=graph-rest-beta) resource.",
+          "Target": "mailboxProtectionUnit"
+        },
+        {
+          "Id": "2f6f6625-a925-4757-bf90-93b8a8ce9d40",
+          "ApiChange": "Property",
+          "ChangedApiName": "billingPolicyId",
+          "ChangeType": "Addition",
+          "Description": "Added the **billingPolicyId** property to the [siteProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/siteProtectionUnit?view=graph-rest-beta) resource.",
+          "Target": "siteProtectionUnit"
+        },
+        {
+          "Id": "2f6f6625-a925-4757-bf90-93b8a8ce9d40",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Added the [update](https://learn.microsoft.com/en-us/graph/api/driveprotectionunit-update?view=graph-rest-beta) method to the [driveProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/driveProtectionUnit?view=graph-rest-beta) resource.",
+          "Target": "driveProtectionUnit"
+        },
+        {
+          "Id": "2f6f6625-a925-4757-bf90-93b8a8ce9d40",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Added the [update](https://learn.microsoft.com/en-us/graph/api/mailboxProtectionUnit-update?view=graph-rest-beta) method to the [mailboxProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/mailboxProtectionUnit?view=graph-rest-beta) resource.",
+          "Target": "mailboxProtectionUnit"
+        },
+        {
+          "Id": "2f6f6625-a925-4757-bf90-93b8a8ce9d40",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Addition",
+          "Description": "Added the [update](https://learn.microsoft.com/en-us/graph/api/siteProtectionUnit-update?view=graph-rest-beta) method to the [siteProtectionUnit](https://learn.microsoft.com/en-us/graph/api/resources/siteProtectionUnit?view=graph-rest-beta) resource.",
+          "Target": "siteProtectionUnit"
+        }
+      ],
+      "Id": "2f6f6625-a925-4757-bf90-93b8a8ce9d40",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-04-06T00:00:00Z",
+      "WorkloadArea": "Backup storage",
+      "SubArea": ""
     }
   ]
 }

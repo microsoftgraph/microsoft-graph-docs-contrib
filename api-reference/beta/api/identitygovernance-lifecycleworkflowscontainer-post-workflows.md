@@ -473,6 +473,7 @@ The following example shows a request that creates a workflow with the following
 + It runs for users within the set target scope of the administrative units "4f9dc456-0574-4122-9e55-8b4cc494b27d" and "2c987843-e9b1-4b1a-b924-ff1d2a9b054d".
 + One task is carried out, which is to send an email to notify the user's manager of the move.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "lifecycleworkflows_create_workflow_with_administrative_scope"
@@ -514,6 +515,35 @@ POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/work
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-create-workflow-with-administrative-scope-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-create-workflow-with-administrative-scope-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/lifecycleworkflows-create-workflow-with-administrative-scope-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/lifecycleworkflows-create-workflow-with-administrative-scope-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-create-workflow-with-administrative-scope-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-create-workflow-with-administrative-scope-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/lifecycleworkflows-create-workflow-with-administrative-scope-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
