@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
 author: "Jackson-Woods"
-ms.date: 07/22/2024
+ms.date: 04/16/2026
 ---
 
 # spaApplication resource type
@@ -20,6 +20,7 @@ Specifies settings for a single-page application.
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
+| enabledResponseModes | [enabledResponseModes](enabledresponsemodes.md) | Specifies the HTTP response modes that are supported for token acquisition. The default value is `all`. |
 | redirectUris | String collection | Specifies the URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent. |
 
 ## Relationships
@@ -37,6 +38,7 @@ The following JSON representation shows the resource type.
 
 ```json
 {
+  "enabledResponseModes": "String",
   "redirectUris": ["String"]
 }
 ```

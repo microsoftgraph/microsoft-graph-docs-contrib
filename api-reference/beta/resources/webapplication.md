@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-applications"
 author: "Jackson-Woods"
-ms.date: 03/21/2024
+ms.date: 04/16/2026
 ms.custom: sfi-ropc-nochange
 ---
 
@@ -21,6 +21,7 @@ Specifies settings for a web application.
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
+| enabledResponseModes | [enabledResponseModes](enabledresponsemodes.md) | Specifies the HTTP response modes that are supported for token acquisition. The default value is `all`. |
 | homePageUrl | String | Home page or landing page of the application. |
 | implicitGrantSettings | [implicitGrantSettings](implicitgrantsettings.md)| Specifies whether this web application can request tokens using the OAuth 2.0 implicit flow. |
 | logoutUrl | String | Specifies the URL that will be used by Microsoft's authorization service to logout a user using [front-channel](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html) or SAML logout protocols. |
@@ -43,6 +44,7 @@ The following JSON representation shows the resource type.
 
 ```json
 {
+  "enabledResponseModes": "String",
   "homePageUrl": "String",
   "implicitGrantSettings": {"@odata.type": "microsoft.graph.implicitGrantSettings"},
   "logoutUrl": "String",
