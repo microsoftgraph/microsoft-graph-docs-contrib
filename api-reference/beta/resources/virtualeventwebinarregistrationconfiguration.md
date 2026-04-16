@@ -28,9 +28,9 @@ Inherits from [virtualEventRegistrationConfiguration](../resources/virtualeventr
 | Property           | Type   | Description                                                                                                                  |
 |:-------------------|:-------|:-----------------------------------------------------------------------------------------------------------------------------|
 | capacity           | Int32  | Total capacity of the virtual event. Inherited from [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md). |
-| id                 | String | Unique identifier for the **virtualEventRegistrationConfiguration** object. Inherited from [entity](../resources/entity.md).  Inherited from [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md). |
-| isManualApprovalEnabled | Boolean | Indicates whether registrations require organizer approval before a participant is confirmed.  Inherited from [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md). |
-| isWaitlistEnabled | Boolean | Indicates whether additional registrants are automatically placed on a waitlist when capacity is reached.  Inherited from [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md). |
+| id                 | String | Unique identifier for the **virtualEventRegistrationConfiguration** object. Inherited from [entity](../resources/entity.md). |
+| isManualApprovalEnabled | Boolean | Indicates whether registrations require organizer approval before a participant is confirmed. Inherited from [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md). |
+| isWaitlistEnabled | Boolean | Indicates whether more registrants are automatically placed on a waitlist when capacity is reached. Inherited from [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md). |
 
 ## Relationships
 

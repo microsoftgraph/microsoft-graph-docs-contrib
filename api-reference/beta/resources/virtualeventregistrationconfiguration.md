@@ -25,7 +25,7 @@ Inherits from [entity](../resources/entity.md).
 | capacity           | Int32  | Total capacity of the virtual event.                                                                                         |
 | id                 | String | Unique identifier for the **virtualEventRegistrationConfiguration** object. Inherited from [entity](../resources/entity.md). |
 | isManualApprovalEnabled | Boolean | Indicates whether registrations require organizer approval before a participant is confirmed. |
-| isWaitlistEnabled | Boolean | Indicates whether additional registrants are automatically placed on a waitlist when capacity is reached. |
+| isWaitlistEnabled | Boolean | Indicates whether more registrants are automatically placed on a waitlist when capacity is reached. |
 | registrationWebUrl | String | Registration URL of the virtual event.                                                                                       |
 
 ## Relationships
