@@ -498,9 +498,9 @@ items:
       href: ../../api/virtualendpoint-list-externalpartnersettings.md
     - name: Create external partner setting (deprecated)
       href: ../../api/virtualendpoint-post-externalpartnersettings.md
-  - name: Cloud PC reports (deprecated)
+  - name: Cloud PC reports
     items:
-    - name: Cloud PC reports (deprecated)
+    - name: Cloud PC reports
       href: ../../resources/cloudpcreports.md
     - name: Get action status reports
       href: ../../api/cloudpcreports-getactionstatusreports.md
@@ -540,6 +540,14 @@ items:
       href: ../../api/cloudpcreports-getshareduselicenseusagereport.md
     - name: Retrieve Cloud PC recommendation reports (deprecated)
       href: ../../api/cloudpcreports-retrievecloudpcrecommendationreports.md
+    - name: Cloud PC export job
+      items:
+      - name: Cloud PC export job
+        href: ../../resources/cloudpcexportjob.md
+      - name: Create export job
+        href: ../../api/cloudpcreports-post-exportjobs.md
+      - name: Get export job
+        href: ../../api/cloudpcexportjob-get.md
   - name: Alert monitoring
     items:
     - name: Monitoring
@@ -559,16 +567,6 @@ items:
         href: ../../api/devicemanagement-alertrecord-setportalnotificationassent.md
     - name: Alert rule
       href: ../../resources/devicemanagement-alertrule.md
-  - name: Cloud PC reports
-    items:
-    - name: Cloud PC export job
-      items:
-      - name: Cloud PC export job
-        href: ../../resources/cloudpcexportjob.md
-      - name: Create export job
-        href: ../../api/cloudpcreports-post-exportjobs.md
-      - name: Get export job
-        href: ../../api/cloudpcexportjob-get.md
   - name: Complex types
     items:
     - name: App scope

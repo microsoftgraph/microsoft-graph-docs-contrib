@@ -1,11 +1,11 @@
 ---
 title: "List targetDeviceGroups"
 description: "Get a list of the targetDeviceGroup objects and their properties on the remoteDesktopSecurityConfiguration resource on the servicePrincipal."
-author: "SanDeo-MSFT"
+author: "mjsantani"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
-ms.date: 05/15/2024
+ms.date: 01/02/2026
 ---
 
 # List targetDeviceGroups
@@ -27,12 +27,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
-GET /servicePrincipals/{servicePrincipalsId}/remoteDesktopSecurityConfiguration/targetDeviceGroups
+``` http
+GET /servicePrincipals/{id}/remoteDesktopSecurityConfiguration/targetDeviceGroups
+GET /servicePrincipals(appId='{appId}')/remoteDesktopSecurityConfiguration/targetDeviceGroups
 ```
 
 ## Optional query parameters
@@ -60,10 +63,9 @@ The following example shows a request.
   "name": "list_targetdevicegroup"
 }
 -->
-```msgraph-interactive
+``` http
 GET https://graph.microsoft.com/beta/servicePrincipals/00af5dfb-85da-4b41-a677-0c6b86dd34f8/remoteDesktopSecurityConfiguration/targetDeviceGroups
 ```
-
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-targetdevicegroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -103,7 +105,7 @@ The following example shows the response.
   "@odata.type": "Collection(microsoft.graph.targetDeviceGroup)"
 }
 -->
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
