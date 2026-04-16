@@ -1,11 +1,11 @@
 ---
 title: "virtualEventTownhallRegistrationConfiguration resource type"
 description: "Contains information about a town hall registration configuration."
-author: "frankpeng7"
+author: "garchiro7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
 doc_type: resourcePageType
-ms.date: 06/20/2024
+ms.date: 04/16/2026
 ---
 
 # virtualEventTownhallRegistrationConfiguration resource type

@@ -49,6 +49,7 @@ The following JSON representation shows the resource type.
   "openType": "id"
 }
 -->
+
 ``` json
 {
   "@odata.type": "#microsoft.graph.virtualEventWebinarRegistrationConfiguration",
@@ -59,4 +60,4 @@ The following JSON representation shows the resource type.
   "isManualApprovalEnabled": "Boolean"
 }
 ```
-```
+
