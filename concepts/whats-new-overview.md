@@ -48,6 +48,10 @@ Removed the `model` parameters and payment-model guidance from Microsoft Teams e
 
 ## April 2026: New in preview only
 
+### Teamwork and communications | Calls and online meetings
+
+- Added the **[registration configuration](/graph/api/resources/virtualeventtownhallregistrationconfiguration?view=graph-rest-beta&preserve-view=true)**  to the [virtualEventTownhall](/graph/api/resources/virtualeventtownhall?view=graph-rest-beta&preserve-view=true). Organizers can manage attendee access using registration settings on the virtualEventRegistration resource. This update enables more controlled and scalable audience management for large‑scale town hall experiences.
+
 ### Applications
 
 Added the **deprecationDate** property to the [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta&preserve-view=true) resource to indicate when an application will be removed from the Microsoft Entra application gallery.

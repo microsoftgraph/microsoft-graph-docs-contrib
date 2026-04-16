@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a [registration record](../resources/virtualeventregistration.md) for a registrant of a [webinar](../resources/virtualeventwebinar.md). This method registers the person for the webinar. 
+Create a [registration record](../resources/virtualeventregistration.md) for a registrant of a [webinar](../resources/virtualeventwebinar.md) or [town hall](../resources/virtualeventtownhall.md). This method registers the person for the webinar or town hall. 
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -32,6 +32,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ```http
 POST /solutions/virtualEvents/webinars/{webinarId}/registrations
+
+POST /solutions/virtualEvents/townhalls/{townhallId}/registrations
 ```
 
 ## Request headers
@@ -73,7 +75,7 @@ If successful, this method returns one of the following results:
 
 ### Example 1: Creating registration record with delegated permission
 
-Use delegated permission to create a registration record for a person who has a [Microsoft Entra ID](/entra/fundamentals/whatis) as a way to register a Microsoft Entra user to a webinar.
+Use delegated permission to create a registration record for a person who has a [Microsoft Entra ID](/entra/fundamentals/whatis) as a way to register a Microsoft Entra user to a virtual event (webinar or town hall).
 
 #### Request
 The following example shows a request.

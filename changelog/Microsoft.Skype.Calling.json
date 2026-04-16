@@ -1,5 +1,71 @@
 {
   "changelog": [    
+        {
+      "ChangeList": [
+        {
+          "Id": "b1e145ad-965e-474e-afa6-28a008f989a4",
+          "ApiChange": "Property",
+          "ChangedApiName": "isManualApprovalEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isManualApprovalEnabled** property to the [virtualEventRegistrationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistrationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistrationConfiguration"
+        },
+        {
+          "Id": "b1e145ad-965e-474e-afa6-28a008f989a4",
+          "ApiChange": "Property",
+          "ChangedApiName": "isWaitlistEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isWaitlistEnabled** property to the [virtualEventRegistrationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistrationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistrationConfiguration"
+        },
+        {
+          "Id": "b1e145ad-965e-474e-afa6-28a008f989a4",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "registrationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **registrationConfiguration** relationship to the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventTownhall?view=graph-rest-beta) resource.",
+          "Target": "virtualEventTownhall"
+        },
+        {
+          "Id": "b1e145ad-965e-474e-afa6-28a008f989a4",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "registrations",
+          "ChangeType": "Addition",
+          "Description": "Added the **registrations** relationship to the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventTownhall?view=graph-rest-beta) resource.",
+          "Target": "virtualEventTownhall"
+        },
+        {
+          "Id": "b1e145ad-965e-474e-afa6-28a008f989a4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventTownhallRegistrationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualEventTownhallRegistrationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventTownhallRegistrationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "virtualEventTownhallRegistrationConfiguration"
+        },
+        {
+          "Id": "b1e145ad-965e-474e-afa6-28a008f989a4",
+          "ApiChange": "Property",
+          "ChangedApiName": "isManualApprovalEnabled",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **isManualApprovalEnabled** property from the [virtualEventWebinarRegistrationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventWebinarRegistrationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "virtualEventWebinarRegistrationConfiguration"
+        },
+        {
+          "Id": "b1e145ad-965e-474e-afa6-28a008f989a4",
+          "ApiChange": "Property",
+          "ChangedApiName": "isWaitlistEnabled",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **isWaitlistEnabled** property from the [virtualEventWebinarRegistrationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventWebinarRegistrationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "virtualEventWebinarRegistrationConfiguration"
+        }
+      ],
+      "Id": "b1e145ad-965e-474e-afa6-28a008f989a4",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-04-16T15:53:01.6352074Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
     {
       "ChangeList": [
         {

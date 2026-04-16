@@ -14,11 +14,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [sessions](../resources/virtualeventsession.md) that a registrant registered for in a [webinar](../resources/virtualeventwebinar.md).
+Get a list of [sessions](../resources/virtualeventsession.md) that a registrant registered for in a [webinar](../resources/virtualeventwebinar.md) or [town hall](../resources/virtualeventtownhall.md).
 
 > [!NOTE]
 > 
-> Currently, this API only supports single session webinars and returns a single session. 
+> Currently, this API only supports single session webinars or town halls and returns a single session. 
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -37,6 +37,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ```http
 GET /solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}/sessions
+
+GET /solutions/virtualEvents/townhall/{townhallId}/registrations/{registrationId}/sessions
 ```
 
 ## Request headers

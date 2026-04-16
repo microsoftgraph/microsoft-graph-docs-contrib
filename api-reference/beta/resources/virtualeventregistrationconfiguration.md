@@ -24,6 +24,8 @@ Inherits from [entity](../resources/entity.md).
 |:-------------------|:-------|:-----------------------------------------------------------------------------------------------------------------------------|
 | capacity           | Int32  | Total capacity of the virtual event.                                                                                         |
 | id                 | String | Unique identifier for the **virtualEventRegistrationConfiguration** object. Inherited from [entity](../resources/entity.md). |
+| isManualApprovalEnabled | Boolean | Indicates whether registrations require organizer approval before a participant is confirmed. |
+| isWaitlistEnabled | Boolean | Indicates whether additional registrants are automatically placed on a waitlist when capacity is reached. |
 | registrationWebUrl | String | Registration URL of the virtual event.                                                                                       |
 
 ## Relationships
@@ -35,20 +37,21 @@ Inherits from [entity](../resources/entity.md).
 ## JSON representation
 
 The following JSON representation shows the resource type.
-
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.virtualEventRegistrationConfiguration",
-  "baseType": "microsoft.graph.entity",
-  "openType": false
+  "@odata.type": "microsoft.graph.virtualEventTownhallRegistrationConfiguration",
+  "baseType": "microsoft.graph.virtualEventRegistrationConfiguration",
+  "openType": "id"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.virtualEventRegistrationConfiguration",
-  "capacity": "Int32",  
+  "@odata.type": "#microsoft.graph.virtualEventTownhallRegistrationConfiguration",
   "id": "String (identifier)",
-  "registrationWebUrl": "String"
+  "registrationWebUrl": "String",
+  "capacity": "Integer",
+  "isWaitlistEnabled": "Boolean",
+  "isManualApprovalEnabled": "Boolean"
 }
 ```

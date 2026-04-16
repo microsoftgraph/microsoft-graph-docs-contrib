@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancel a registrant's [registration record](../resources/virtualeventregistration.md) for a [webinar](../resources/virtualeventwebinar.md). 
+Cancel a registrant's [registration record](../resources/virtualeventregistration.md) for a [webinar](../resources/virtualeventwebinar.md) or [town hall](../resources/virtualeventtownhall.md). 
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -36,6 +36,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ```http
 POST /solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}/cancel
+
+POST /solutions/virtualEvents/townhalls/{townhallId}/registrations/{registrationId}/cancel
 ```
 
 ## Request headers
