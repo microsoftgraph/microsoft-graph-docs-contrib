@@ -84,7 +84,7 @@ The following JSON representation shows the resource type.
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.virtualEventTownhall",
   "baseType": "microsoft.graph.virtualEvent",
-  "openType": "id"
+   "openType": false
 }
 -->
 ``` json

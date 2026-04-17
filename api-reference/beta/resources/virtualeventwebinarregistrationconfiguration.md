@@ -46,7 +46,7 @@ The following JSON representation shows the resource type.
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.virtualEventWebinarRegistrationConfiguration",
   "baseType": "microsoft.graph.virtualEventRegistrationConfiguration",
-  "openType": "id"
+  "openType": false
 }
 -->
 
