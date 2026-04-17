@@ -31,7 +31,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|capacity|Integer|Represents the expected number of attendees for virtual events. |
+|capacity|Integer|Represents the expected number of attendees for town halls. |
 |createdBy|[communicationsIdentitySet](communicationsidentityset.md)|The identity information for the creator of the virtual event. Inherited from [virtualEvent](../resources/virtualevent.md).|
 |description|[itemBody](../resources/itembody.md)|A description of the virtual event.|
 |displayName|String|The display name of the virtual event. |

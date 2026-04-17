@@ -7,8 +7,16 @@
           "ApiChange": "Property",
           "ChangedApiName": "capacity",
           "ChangeType": "Addition",
-          "Description": "Added the **capacity** property to the [virtualEvent](https://learn.microsoft.com/en-us/graph/api/resources/virtualEvent?view=graph-rest-beta) resource.",
-          "Target": "virtualEvent"
+          "Description": "Added the **capacity** property to the [town hall](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventtownhall?view=graph-rest-beta) resource.",
+          "Target": "townHall"
+        },
+        {
+          "Id": "721aca61-943c-4876-ad1f-063720d75265",
+          "ApiChange": "Property",
+          "ChangedApiName": "capacity",
+          "ChangeType": "Addition",
+          "Description": "Added the **capacity** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
+          "Target": "virtualEventSession"
         }
       ],
       "Id": "721aca61-943c-4876-ad1f-063720d75265",

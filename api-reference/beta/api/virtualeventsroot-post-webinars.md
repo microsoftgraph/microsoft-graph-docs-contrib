@@ -56,7 +56,6 @@ You can specify the following properties when you create a [virtualEventWebinar]
 |Property|Type|Description|
 |:---|:---|:---|
 | audience | [meetingAudience](../resources/virtualeventwebinar.md#meetingaudience-values) | The audience to whom the webinar is visible. |
-| capacity | Integer | Represents the expected number of attendees for virtual events. |
 | coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | The identity information of coorganizers of the webinar. |
 | description | [itemBody](../resources/itembody.md) | A description of the webinar. |
 | displayName | String | The display name of the webinar. |
@@ -108,8 +107,7 @@ Accept-Language: en-US
     ],
     "settings": {
       "isAttendeeEmailNotificationEnabled": false
-    },
-    "capacity": 5000
+    }
 }
 ```
 
@@ -151,7 +149,6 @@ Accept-Language: en-US
       "timeZone": "Pacific Standard Time" 
     },
     "audience": "organization",
-    "capacity": 5000,
     "createdBy": {
       "application": null,
       "device": null,

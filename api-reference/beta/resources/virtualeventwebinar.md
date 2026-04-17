@@ -37,7 +37,6 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | Property | Type | Description |
 | -------- | ---- | ----------- |
 | audience | [meetingAudience](#meetingaudience-values) | To whom the webinar is visible. |
-| capacity | Integer | Represents the expected number of attendees for virtual events. |
 | coOrganizers  | [communicationsUserIdentity](communicationsuseridentity.md) collection | Identity information of coorganizers of the webinar. |
 | createdBy | [communicationsIdentitySet](communicationsidentityset.md) | Identity information for the creator of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | description | [itemBody](../resources/itembody.md) | Description of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
@@ -89,7 +88,6 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.virtualEventWebinar",
   "audience": "String",
-  "capacity": "Integer",
   "coOrganizers": [{"@odata.type": "microsoft.graph.communicationsUserIdentity"}],
   "createdBy": {"@odata.type": "microsoft.graph.communicationsIdentitySet"},
   "description": {"@odata.type": "microsoft.graph.itemBody"},

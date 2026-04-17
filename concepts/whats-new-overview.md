@@ -50,7 +50,7 @@ Removed the `model` parameters and payment-model guidance from Microsoft Teams e
 
 ### Teamwork and communications | Calls and online meetings
 
-Introduce the`capacity` property to virtual event objects: [virtualEventTownhall](/graph/api/resources/virtualeventtownhall) or [virtualEventWebinar](/graph/api/resources/virtualeventwebinar. This property allows customers to specify the expected attendee size when creating or updating events and retrieve it later. Validation ensures compliance with SKU and licensing limits, returning actionable errors when capacity exceeds entitlement.  
+Introduce the`capacity` property to  [virtual event town hall](/graph/api/resources/virtualeventtownhall) and [virtual event session](/graph/api/resources/virtualeventsession). This property allows customers to specify the expected attendee size when creating or updating town hall and retrieve it later. Validation ensures compliance with SKU and licensing limits, returning actionable errors when capacity exceeds entitlement.  
 
 ### Applications
 
