@@ -249,6 +249,8 @@ items:
       href: mcp-server/get-started.md
     - name: Use from Copilot Studio
       href: mcp-server/use-enterprise-mcp-server-copilot-studio.md
+    - name: Use from Microsoft Foundry
+      href: mcp-server/use-enterprise-mcp-server-microsoft-foundry.md
     - name: Sample prompts
       href: mcp-server/mcp-server-sample-prompts.md
     - name: Explore the repository
@@ -523,7 +525,7 @@ items:
   - name: External data connections
     items:
     - name: Connectors overview
-      href: /microsoft-365-copilot/extensibility/overview-copilot-connector?toc=/graph/toc.json
+      href: /microsoft-365/copilot/extensibility/overview-copilot-connector?toc=/graph/toc.json
       displayName: Microsoft Graph connectors, Microsoft 365 Copilot connectors, Copilot connectors, connect external content
     - name: Connectors experiences
       href: connecting-external-content-experiences.md
@@ -535,7 +537,7 @@ items:
     - name: Build your first connector
       items:
       - name: Build with Agents Toolkit
-        href: /microsoft-365-copilot/extensibility/build-your-first-connector?context=graph/context
+        href: /microsoft-365/copilot/extensibility/build-your-first-connector?context=graph/context
       - name: Build with SDK
         items:
         - name: Overview
