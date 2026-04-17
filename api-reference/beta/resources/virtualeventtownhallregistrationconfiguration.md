@@ -22,7 +22,7 @@ Currently, the **virtualEventTownhallRegistrationConfiguration** resource inheri
 
 |Method|Return type|Description|
 |:---|:---|:---|
-| [Get](../api/virtualEventTownhallRegistrationConfiguration-get.md) | [virtualEventTownhallRegistrationConfiguration](../resources/virtualEventTownhallRegistrationConfiguration.md) | Read the properties and relationships of a [virtualEventTownhallRegistrationConfiguration](../resources/virtualEventTownhallRegistrationConfiguration.md) object. |
+| [Get](../api/virtualeventtownhallregistrationconfiguration-get.md) | [virtualEventTownhallRegistrationConfiguration](../resources/virtualeventtownhallregistrationconfiguration.md) | Read the properties and relationships of a [virtualEventTownhallRegistrationConfiguration](../resources/virtualeventtownhallregistrationconfiguration.md) object. |
 
 ## Properties
 
