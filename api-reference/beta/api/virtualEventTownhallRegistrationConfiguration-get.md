@@ -70,7 +70,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/88b245ac-b0b2-f1aa-e34a-c81c27abdac2@f9448ec4-804b-46af-b810-62085248da33/registrationConfiguration
 ```
 
----
 
 ### Response
 

@@ -40,9 +40,10 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.virtualEventTownhallRegistrationConfiguration",
-  "baseType": "microsoft.graph.virtualEventRegistrationConfiguration",
-  "openType": "id"
+  "@odata.type": "microsoft.graph.virtualEventRegistrationConfiguration",
+  "baseType": "microsoft.graph.  "baseType": "microsoft.graph.entity",
+",
+  "openType": false
 }
 -->
 ``` json
