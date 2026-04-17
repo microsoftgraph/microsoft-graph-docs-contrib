@@ -50,7 +50,7 @@ Removed the `model` parameters and payment-model guidance from Microsoft Teams e
 
 ### Teamwork and communications | Calls and online meetings
 
-- Added the **[registration configuration](/graph/api/resources/virtualeventtownhallregistrationconfiguration?view=graph-rest-beta&preserve-view=true)**  to the [virtualEventTownhall](/graph/api/resources/virtualeventtownhall?view=graph-rest-beta&preserve-view=true). Organizers can manage attendee access using registration settings on the virtualEventRegistration resource. This update enables more controlled and scalable audience management for large‑scale town hall experiences.
+- Added the **[registration configuration](/graph/api/resources/virtualeventtownhallregistrationconfiguration?view=graph-rest-beta&preserve-view=true)** to the [virtualEventTownhall](/graph/api/resources/virtualeventtownhall?view=graph-rest-beta&preserve-view=true). Organizers can manage attendee access using registration settings on the virtualEventTownhallRegistrationConfiguration resource. This update enables more controlled and scalable audience management for large‑scale town hall experiences. 
 
 ### Applications
 

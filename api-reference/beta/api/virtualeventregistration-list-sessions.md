@@ -38,7 +38,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 GET /solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}/sessions
 
-GET /solutions/virtualEvents/townhall/{townhallId}/registrations/{registrationId}/sessions
+GET /solutions/virtualEvents/townhallS/{townhallId}/registrations/{registrationId}/sessions
 ```
 
 ## Request headers

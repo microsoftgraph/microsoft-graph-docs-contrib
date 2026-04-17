@@ -37,18 +37,18 @@ Inherits from [entity](../resources/entity.md).
 ## JSON representation
 
 The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.virtualEventRegistrationConfiguration",
-  "baseType": "microsoft.graph.  "baseType": "microsoft.graph.entity",
-",
+  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.virtualEventTownhallRegistrationConfiguration",
+  "@odata.type": "#microsoft.graph.virtualEventRegistrationConfiguration",
   "id": "String (identifier)",
   "registrationWebUrl": "String",
   "capacity": "Integer",

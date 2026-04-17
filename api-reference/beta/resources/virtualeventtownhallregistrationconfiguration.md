@@ -32,6 +32,7 @@ Currently, the **virtualEventTownhallRegistrationConfiguration** resource inheri
 | id                 | String | Unique identifier for the **virtualEventRegistrationConfiguration** object. Inherited from [entity](../resources/entity.md).  Inherited from [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md). |
 | isManualApprovalEnabled | Boolean | Indicates whether registrations require organizer approval before a participant is confirmed.  Inherited from [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md). |
 | isWaitlistEnabled | Boolean |Indicates whether more registrants are automatically placed on a waitlist when capacity is reached.  Inherited from [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md). |
+| registrationWebUrl | String | Registration portal URL of the webinar. Inherited from [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md). |
 
 
 ## Relationships
@@ -55,6 +56,10 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.virtualEventTownhallRegistrationConfiguration",
-  "registrationWebUrl": "String"
+  "id": "String (identifier)",
+  "registrationWebUrl": "String",
+  "capacity": "Integer",
+  "isWaitlistEnabled": "Boolean",
+  "isManualApprovalEnabled": "Boolean"
 }
 ```

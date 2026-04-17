@@ -31,6 +31,7 @@ Inherits from [virtualEventRegistrationConfiguration](../resources/virtualeventr
 | id                 | String | Unique identifier for the **virtualEventRegistrationConfiguration** object. Inherited from [entity](../resources/entity.md). |
 | isManualApprovalEnabled | Boolean | Indicates whether registrations require organizer approval before a participant is confirmed. Inherited from [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md). |
 | isWaitlistEnabled | Boolean | Indicates whether more registrants are automatically placed on a waitlist when capacity is reached. Inherited from [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md). |
+| registrationWebUrl | String | Registration portal URL of the webinar. Inherited from [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md). |
 
 ## Relationships
 
