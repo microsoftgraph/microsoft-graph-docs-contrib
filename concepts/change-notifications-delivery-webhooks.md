@@ -36,6 +36,8 @@ Once the Microsoft Graph change notifications service receives a 2xx class code 
  - Otherwise, we recommend to validate and persist the notification in a queue on your endpoint and return 202 - Accepted status code within the 3-second window.
  - If the notification isn't processed or queued, return a 5xx class code to indicate an error so that Microsoft Graph can retry the notification.
 
+Notifications that fail to deliver are retried at exponential backoff intervals. Missed notifications might take up to 4 hours to resend once your endpoint comes online.
+
 ### Throttling
 For security and performance reasons, Microsoft Graph throttles notifications sent to endpoints that become slow or unresponsive. It might include dropping notifications in a way that they can't be recovered.
 
@@ -45,7 +47,7 @@ For security and performance reasons, Microsoft Graph throttles notifications se
 
 2. An endpoint is marked "drop" once more than 15% of responses take longer than the 10s retry timeout allowance in a 10-minute window.
       - Once an endpoint is marked "drop", notifications are dropped, for a 10 minute window.
-      - After the initial 10 minute window, the processes try to send a small number of notifications periodically and the endpoint exits the "drop" state if < 15% respond within the timeout window.
+      - After the 10 minute drop message window, the process will try to send a small number of notifications periodically and the endpoint exits the "drop" state if < 15% respond within the 10s timeout window.
 
 If your endpoint is unable to meet these performance characteristics, consider using [Event Hubs](/graph/change-notifications-delivery-event-hubs) or [Event Grid](/azure/event-grid/subscribe-to-graph-api-events?context=graph/context) as a target for receiving notifications.
 
