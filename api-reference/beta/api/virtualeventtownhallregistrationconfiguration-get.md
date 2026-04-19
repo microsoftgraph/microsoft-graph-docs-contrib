@@ -64,7 +64,6 @@ The following example shows a request.
   "sampleKeys": ["88b245ac-b0b2-f1aa-e34a-c81c27abdac2@f9448ec4-804b-46af-b810-62085248da33"]
 }
 -->
-``` http
 GET https://graph.microsoft.com/beta/solutions/virtualEvents/townhalls/88b245ac-b0b2-f1aa-e34a-c81c27abdac2@f9448ec4-804b-46af-b810-62085248da33/registrationConfiguration
 ```
 
@@ -78,7 +77,6 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.virtualEventTownhallRegistrationConfiguration"
 }
 -->
-``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

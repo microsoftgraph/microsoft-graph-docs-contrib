@@ -1,6 +1,6 @@
 ---
 title: "List virtualEventRegistrations"
-description: "Get a list of all registration records of a webinar."
+description: "Get a list of all registration records of a webinar or town hall."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"

@@ -1,6 +1,6 @@
 ---
 title: "List sessions for a virtual event registration"
-description: "Get a list of sessions that a registrant registered for in a webinar."
+description: "Get a list of sessions that a registrant registered for in a webinar or town hall."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"

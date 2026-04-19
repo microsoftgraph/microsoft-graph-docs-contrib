@@ -1,6 +1,6 @@
 ---
 title: "List questions"
-description: "Get a list of all registration questions for a webinar."
+description: "Get a list of all registration questions for a webinar or town hall."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
