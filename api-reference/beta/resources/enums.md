@@ -969,15 +969,6 @@ Namespace: microsoft.graph
 | remoteDesktopToken |
 | refreshToken       |
 
-### approverInformationVisibility values
-
-| Member |
-| ---- |
-| no |
-| yes |
-| default |
-| unknownFutureValue |
-
 ### protocolType values
 
 | Member |

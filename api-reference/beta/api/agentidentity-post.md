@@ -38,7 +38,7 @@ POST /servicePrincipals/microsoft.graph.agentIdentity
 | Content-Type | application/json. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of a [agentIdentity](../resources/agentidentity.md) object. The request body must contain  **displayName**, **agentIdentityBlueprintAppId**, and a valid **sponsor** reference.
+In the request body, supply a JSON representation of a [agentIdentity](../resources/agentidentity.md) object. The request body must contain  **displayName**, **agentIdentityBlueprintId**, and a valid **sponsor** reference.
 
 ## Response
 
@@ -82,7 +82,7 @@ Content-type: application/json
     "@odata.type": "#microsoft.graph.agentIdentity",
     "id": "59e617e5-e447-4adc-8b88-00af644d7c92",
     "createdByAppId": "f98c895e-6ce2-4f5b-a31b-da7e48f25daa",
-    "displayName": "My Agent Identit",
+    "displayName": "My Agent Identity",
     "servicePrincipalType": "ServiceIdentity",
     "tags": [],
     "agentIdentityBlueprintId": "65415bb1-9267-4313-bbf5-ae259732ee12"

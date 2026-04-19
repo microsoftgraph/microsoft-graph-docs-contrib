@@ -6,6 +6,7 @@ ms.date: 03/13/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
 doc_type: resourcePageType
+toc.title: Entra ID P1/P2 license utilization
 ---
 
 # azureADPremiumLicenseInsight resource type
