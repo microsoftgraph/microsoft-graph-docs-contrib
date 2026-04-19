@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the registration configuration of a [virtualEventWebinar](../resources/virtualeventwebinar.md).
-
+Base type of [virtualEventWebinarRegistrationConfiguration](../resources/virtualeventwebinarregistrationconfiguration.md) and [virtualEventTownhallRegistrationConfiguration](../resources/virtualeventtownhallregistrationconfiguration.md)
 Inherits from [entity](../resources/entity.md).
 
 ## Properties
@@ -51,7 +51,7 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.virtualEventRegistrationConfiguration",
   "id": "String (identifier)",
   "registrationWebUrl": "String",
-  "capacity": "Integer",
+  "capacity": "Int32",
   "isWaitlistEnabled": "Boolean",
   "isManualApprovalEnabled": "Boolean"
 }

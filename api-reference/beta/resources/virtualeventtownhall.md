@@ -79,12 +79,13 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 ## JSON representation
 
 The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.virtualEventTownhall",
   "baseType": "microsoft.graph.virtualEvent",
-   "openType": false
+  "openType": false
 }
 -->
 ``` json

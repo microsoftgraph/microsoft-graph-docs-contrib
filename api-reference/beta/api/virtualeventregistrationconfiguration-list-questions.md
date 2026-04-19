@@ -11,6 +11,8 @@ ms.date: 08/13/2024
 # List questions
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Get a list of all [registration](../resources/virtualeventregistration.md) questions for a [webinar](../resources/virtualeventwebinar.md) or [town hall](../resources/virtualeventtownhall.md).
 
 The list can include either [predefined registration questions](../resources/virtualeventregistrationpredefinedquestion.md) or [custom registration questions](../resources/virtualeventregistrationcustomquestion.md).
