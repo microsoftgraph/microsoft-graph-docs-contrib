@@ -112,8 +112,9 @@ items:
   - name: Teamwork and communications
     href: toc/teamwork-and-communications/toc.yml
     displayName: Microsoft Teams
-  - name: Tenant management
-    href: toc/tenant-management/toc.yml
+  - name: Tenants
+    href: toc/tenants/toc.yml
+    displayName: tenant management, tenant configuration, tenant governance, Lighhouse, cross-tenant access, multitenant, backup
   - name: To-do tasks
     href: toc/to-do-tasks/toc.yml
     displayName: Microsoft To Do

@@ -3,7 +3,7 @@ title: "What's new in Microsoft Graph"
 description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, and other resources."
 author: "lauragra"
 ms.localizationpriority: high
-ms.date: 03/18/2026
+ms.date: 04/17/2026
 ms.topic: whats-new
 ---
 
@@ -20,10 +20,24 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## April 2026: New and generally available
 
+### Applications
+
+- Added the [approvedClientApp](/graph/api/resources/approvedclientapp) resource type for managing approved client applications for [remote desktop access](/graph/api/resources/remotedesktopsecurityconfiguration).
+- Added the **managerApplications** property to the [application](/graph/api/resources/application) and [agentIdentityBlueprint](/graph/api/resources/agentidentityblueprint) resources to enable Microsoft first-party applications to be designated as managers of agent blueprints.
+
 ### Backup storage
 
 - When a [protection policy is deactivated](/graph/api/protectionpolicybase-deactivate), backup activity stops immediately, no new backups are taken, and the protected resources are no longer covered by the policy. Any backups taken before deactivation are retained according to the retention policy, after which they're offboarded. You can restore data using previous restore points even after deactivation.
 - A [protection policy can be deleted](/graph/api/protectionpolicybase-delete) only after it was [deactivated](/graph/api/protectionpolicybase-deactivate). When you delete a policy, all associated protection units are removed, and backup protection stops for the resources previously covered by the policy. Existing backup data is retained according to the retention policy before it's offboarded. You can restore data using previous restore points even after deletion.
+
+### Files
+
+- Use the **height** and **width** parameters to [download a file in another format](/graph/api/driveitem-get-content-format) when `format=jpg`.
+- Use the [List activities](/graph/api/itemactivity-list) API to retrieve recent activities that took place on a [drive](/graph/api/resources/drive), [list](/graph/api/resources/list), item, or within an item hierarchy.
+
+### Identity and access | Governance
+
+Use `approverRemove` as a new supported value for the **requestType** property of the [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest) resource. For more information, see [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest).
 
 ### Teamwork and communications | Apps
 
@@ -39,6 +53,10 @@ Removed the `model` parameters and payment-model guidance from Microsoft Teams e
 
 ## April 2026: New in preview only
 
+### Applications
+
+Added the **deprecationDate** property to the [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta&preserve-view=true) resource to indicate when an application will be removed from the Microsoft Entra application gallery.
+
 ### Backup storage
 
 - When a [protection policy is deactivated](/graph/api/protectionpolicybase-deactivate?view=graph-rest-beta&preserve-view=true), backup activity stops immediately, no new backups are taken, and the protected resources are no longer covered by the policy. Any backups taken before deactivation are retained according to the retention policy, after which they're offboarded. You can restore data using previous restore points even after deactivation.
@@ -48,9 +66,35 @@ Removed the `model` parameters and payment-model guidance from Microsoft Teams e
 - [Update](/graph/api/mailboxprotectionunit-update?view=graph-rest-beta&preserve-view=true) the **billingPolicyId** property on a [mailboxProtectionUnit](/graph/api/resources/mailboxprotectionunit?view=graph-rest-beta&preserve-view=true) object.
 - [Update](/graph/api/siteprotectionunit-update?view=graph-rest-beta&preserve-view=true) the **billingPolicyId** property on a [siteProtectionUnit](/graph/api/resources/siteprotectionunit?view=graph-rest-beta&preserve-view=true) object.
 
+### Identity and access | Governance
+
+- Use `default`, `notVisible`, and `visible` as supported values for the **approverInformationVisibility** property of the [accessPackageApprovalStage](/graph/api/resources/accesspackageapprovalstage?view=graph-rest-beta&preserve-view=true) and [approvalStage](/graph/api/resources/approvalstage?view=graph-rest-beta&preserve-view=true) resources to indicate whether approver information is visible to the requestor.
+
+### Files
+
+- Use the **height** and **width** query parameters on the [driveItem content conversion API](/graph/api/driveitem-get-content-format?view=graph-rest-beta&preserve-view=true) to download a file in another format when `format=jpg`.
+
 ### Identity and access | Identity and sign-in
 
 Added the **blueprintId** and **source** agent-descriptive properties to [agentRiskDetection](/graph/api/resources/agentriskdetection?view=graph-rest-beta&preserve-view=true) and [riskyAgent](/graph/api/resources/riskyagent?view=graph-rest-beta&preserve-view=true) resources.
+
+### People and workplace intelligence | Profile
+
+Use the **activities**, **awards**, and **fieldsOfStudy** properties on [educationalActivityDetail](/graph/api/resources/educationalactivitydetail?view=graph-rest-beta&preserve-view=true) to get or set collections of activities, awards, or fields of study.
+
+### Reports | Identity and access reports
+
+Added the [azureADPremiumLicenseInsight](/graph/api/resources/azureadpremiumlicenseinsight?view=graph-rest-beta&preserve-view=true) resource and its associated APIs for getting insights into the Microsoft Entra ID P1 and P2 premium license utilization for the tenant, including feature utilization breakdowns for P1, P2, Internet Access, and Private Access features.
+
+### Security | Compliance
+
+Updated the capabilities of the [auditLogQuery resource type](/graph/api/resources/security-auditlogquery?view=graph-rest-beta&preserve-view=true) and its associated methods as follows:
+- Updated the [auditLogRecordType](/graph/api/resources/security-auditlogrecordtype?view=graph-rest-beta&preserve-view=true) enumeration to represent over 400 types of audit log operations across Microsoft cloud services.
+- Added 135 new derived types of the [auditData](/graph/api/resources/security-auditdata?view=graph-rest-beta&preserve-view=true) resource to represent audit log data for specific services and features, including AI and Copilot interactions, agent management, compliance and data lifecycle management (Microsoft Purview, eDiscovery, DLP), cloud services (Azure Firewall, Microsoft Defender, Sentinel), and collaboration services (Teams, Planner, SharePoint, Viva). For a complete list of audit data types, see [auditData derived types](/graph/api/resources/security-auditdata-derived-types?view=graph-rest-beta&preserve-view=true).
+
+### Security | Microsoft Defender for Identity
+
+Use the **sensorTypes** property on [sensorCandidate](/graph/api/resources/security-sensorcandidate?view=graph-rest-beta&preserve-view=true) to get the list of device types for the sensor.
 
 ### Teamwork and communications | Messaging
 
@@ -70,7 +114,7 @@ Using the **signInAudience** property to limit where an [application](/graph/api
 ### Calendars | Places
 
 - Added a known issue of RBAC in [Places update API](/graph/api/place-update): update requests may still succeed without *Exchange Administrator* role but result in unexpected behaviors.
-- When using *application permissions* with the [Create place](/graph/api/place-post), [Upsert places](/graph/api/place-patch-places), [Update place](/graph/api/place-update), and [Delete place](/graph/api/place-delete) APIs, you must configure the required `TenantPlacesManagement` role (to manage Places) and the `MailRecipient` role (to manage users and mailboxes). For more information on how to configure these roles, see [Role Based Access Control for Applications in Exchange Online](/exchange/permissions-exo/application-rbac).
+- When using *application permissions* with the [Create place](/graph/api/place-post), [Update place](/graph/api/place-update), and [Delete place](/graph/api/place-delete) APIs, you must configure the required `TenantPlacesManagement` role (to manage Places) and the `MailRecipient` role (to manage users and mailboxes). For more information on how to configure these roles, see [Role Based Access Control for Applications in Exchange Online](/exchange/permissions-exo/application-rbac).
 
 ### Device and app management | Cloud PC
 
@@ -223,6 +267,11 @@ Introduced the tenant governance API set to enable organizations to manage and g
 - Establishing governance relationships between a governing tenant and a governed tenant
 - Tracking established relationships 
 - Configure relationship policies
+
+### Security | Microsoft Defender for Identities
+
+- Added migration guidance for Microsoft Defender for Endpoint (MDE) advanced hunting APIs to help organizations transition from the retired APIs that were available through the `https://api.securitycenter.microsoft.com` endpoint to the advanced hunting APIs available in Microsoft Graph. For more information, see [Migrate from the older APIs](/graph/api/resources/security-api-overview#migrate-from-older-apis).
+- The Defender for Identity sensor management APIs let you discover eligible servers, control automatic onboarding, activate or deactivate the unified agent, and manage required auditing settings during activation—all through a single management interface.
 
 For more information, see [Overview of Tenant Governance APIs](/graph/api/resources/tenantgovernanceservices-tenantgovernance-overview).
 

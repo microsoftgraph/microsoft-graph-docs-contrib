@@ -16,7 +16,7 @@ import (
 )
 
 
-requestFilter := " id eq 'c4682401-6866-4962-94d9-7499782a13e9'"
+requestFilter := "id eq 'c4682401-6866-4962-94d9-7499782a13e9'"
 
 requestParameters := &grapheducation.ClassesItemAssignmentsItemSubmissionsItemResourcesRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,

@@ -199,7 +199,7 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2026-03-23T20:55:07.1059858Z",
-      "WorkloadArea": "Tenant management",
+      "WorkloadArea": "Tenants",
       "SubArea": "Configuration management"
     },
     {
@@ -369,7 +369,7 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2026-01-23T05:11:09.4766745Z",
-      "WorkloadArea": "Tenant management",
+      "WorkloadArea": "Tenants",
       "SubArea": "Configuration management"
     }
   ]

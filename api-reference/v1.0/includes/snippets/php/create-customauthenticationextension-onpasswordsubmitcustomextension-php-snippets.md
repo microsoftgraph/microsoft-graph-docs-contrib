@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\CustomAuthenticationExtension;
+use Microsoft\Graph\Generated\Models\OnPasswordSubmitCustomExtension;
 use Microsoft\Graph\Generated\Models\HttpRequestEndpoint;
 use Microsoft\Graph\Generated\Models\AzureAdTokenAuthentication;
 use Microsoft\Graph\Generated\Models\CustomExtensionClientConfiguration;
@@ -14,7 +14,7 @@ use Microsoft\Graph\Generated\Models\CustomExtensionClientConfiguration;
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestBody = new CustomAuthenticationExtension();
+$requestBody = new OnPasswordSubmitCustomExtension();
 $requestBody->setOdataType('#microsoft.graph.onPasswordSubmitCustomExtension');
 $requestBody->setDisplayName('Legacy password validator');
 $requestBody->setDescription('Validates passwords against a legacy authentication system for JIT migration');

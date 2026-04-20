@@ -13,6 +13,7 @@ from msgraph_beta.generated.models.process_content_request import ProcessContent
 from msgraph_beta.generated.models.process_content_metadata_base import ProcessContentMetadataBase
 from msgraph_beta.generated.models.process_conversation_metadata import ProcessConversationMetadata
 from msgraph_beta.generated.models.text_content import TextContent
+from msgraph_beta.generated.models.content_category import ContentCategory
 from msgraph_beta.generated.models.activity_metadata import ActivityMetadata
 from msgraph_beta.generated.models.user_activity_type import UserActivityType
 from msgraph_beta.generated.models.device_metadata import DeviceMetadata
@@ -37,9 +38,7 @@ request_body = ProcessContentPostRequestBody(
 				is_truncated = False,
 				created_date_time = "2025-05-27T17:23:20",
 				modified_date_time = "2025-05-27T17:23:20",
-				additional_data = {
-						"content_category" : "ai",
-				}
+				content_category = ContentCategory.Ai,
 			),
 		],
 		activity_metadata = ActivityMetadata(

@@ -25,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "onedriveforbusinessrestoresession_list_granulardriverestoreartifacts" } -->
 [!INCLUDE [permissions-table](../includes/permissions/onedriveforbusinessrestoresession-list-granulardriverestoreartifacts-permissions.md)]
 
+[!INCLUDE [rbac-backuprestore-browse-granular-apis](../includes/rbac-for-apis/rbac-backuprestore-browse-granular-apis.md)]
+
 ## HTTP request
 
 <!-- {

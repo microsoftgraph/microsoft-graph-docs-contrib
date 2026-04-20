@@ -589,15 +589,6 @@ Namespace: microsoft.graph
 | createdBy |
 | unknownFutureValue |
 
-### accessPackageAssignmentRequestFilterByCurrentUserOptions values
-
-| Member |
-| ------------------ |
-| target |
-| createdBy |
-| approver |
-| unknownFutureValue |
-
 ### accessPackageAssignmentState values
 
 | Member |
@@ -673,6 +664,7 @@ Namespace: microsoft.graph
 | systemRemove |
 | onBehalfAdd |
 | unknownFutureValue |
+| approverRemove |
 
 ### accessPackageSubjectType values
 

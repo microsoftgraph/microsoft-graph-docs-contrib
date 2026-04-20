@@ -8,38 +8,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models;
-using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new CrossTenantAccessPolicyConfigurationDefault
 {
-	AdditionalData = new Dictionary<string, object>
+	M365CollaborationInbound = new CrossTenantAccessPolicyM365CollaborationInboundSetting
 	{
+		Users = new CrossTenantAccessPolicyTargetConfiguration
 		{
-			"m365CollaborationInbound" , new UntypedObject(new Dictionary<string, UntypedNode>
+			AccessType = CrossTenantAccessPolicyTargetConfigurationAccessType.Allowed,
+			Targets = new List<CrossTenantAccessPolicyTarget>
 			{
+				new CrossTenantAccessPolicyTarget
 				{
-					"users", new UntypedObject(new Dictionary<string, UntypedNode>
-					{
-						{
-							"accessType", new UntypedString("allowed")
-						},
-						{
-							"targets", new UntypedArray(new List<UntypedNode>
-							{
-								new UntypedObject(new Dictionary<string, UntypedNode>
-								{
-									{
-										"target", new UntypedString("AllUsers")
-									},
-									{
-										"targetType", new UntypedString("user")
-									},
-								}),
-							})
-						},
-					})
+					Target = "AllUsers",
+					TargetType = CrossTenantAccessPolicyTargetType.User,
 				},
-			})
+			},
 		},
 	},
 };

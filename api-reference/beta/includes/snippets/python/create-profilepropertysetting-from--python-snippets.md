@@ -10,13 +10,11 @@ from msgraph_beta.generated.models.profile_property_setting import ProfileProper
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ProfilePropertySetting(
 	odata_type = "#microsoft.graph.profilePropertySetting",
+	display_name = "Profile priority config",
 	name = "Profile priority config",
 	prioritized_source_urls = [
 		"https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr1')",
 	],
-	additional_data = {
-			"display_name" : "Profile priority config",
-	}
 )
 
 result = await graph_client.admin.people.profile_property_settings.post(request_body)

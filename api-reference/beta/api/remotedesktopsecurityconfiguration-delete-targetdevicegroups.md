@@ -1,11 +1,11 @@
 ---
 title: "Delete targetDeviceGroup"
 description: "Delete a targetDeviceGroup object for the remoteDesktopSecurityConfiguration object on the servicePrincipal."
-author: "SanDeo-MSFT"
+author: "mjsantani"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
-ms.date: 04/05/2024
+ms.date: 01/02/2026
 ---
 
 # Delete targetDeviceGroup
@@ -27,12 +27,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
-DELETE /servicePrincipals/{servicePrincipalsId}/remoteDesktopSecurityConfiguration/targetDeviceGroups/{targetDeviceGroupId}/$ref
+``` http
+DELETE /servicePrincipals/{id}/remoteDesktopSecurityConfiguration/targetDeviceGroups/{targetDeviceGroupId}/$ref
+DELETE /servicePrincipals(appId='{appId}')/remoteDesktopSecurityConfiguration/targetDeviceGroups/{targetDeviceGroupId}/$ref
 ```
 
 ## Request headers
@@ -51,21 +54,15 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_targetdevicegroup"
 }
 -->
-```http
+``` http
 DELETE https://graph.microsoft.com/beta/servicePrincipals/00af5dfb-85da-4b41-a677-0c6b86dd34f8/remoteDesktopSecurityConfiguration/targetDeviceGroups/1a9db3ab-0acf-4808-99ae-e8ed581cb2e0/$ref
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-targetdevicegroup-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 The following example shows the response.
@@ -74,6 +71,6 @@ The following example shows the response.
   "truncated": true
 }
 -->
-```http
+``` http
 HTTP/1.1 204 No Content
 ```

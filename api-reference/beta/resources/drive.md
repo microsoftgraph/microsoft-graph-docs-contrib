@@ -25,7 +25,7 @@ Users without a OneDrive license may not have a default drive available.
 | [List drive][drive-list]                                   | drive collection        |Retrieve the list of drive resources available for a target user, group, or site.|
 | [Get drive][drive-get]                                     | drive                       | Get metadata about a drive.|
 | [Get drive root][item-get]                                 | [driveItem][]               | Get root folder of a drive.|
-| [List activities][drive-activities]                        | [itemActivity][] collection | List activities that occurred under the drive.|
+| [List activities][drive-activities]                        | [itemActivity][] collection | List the recent [activities](../resources/itemactivity.md) that took place on a [drive](../resources/drive.md), [list](../resources/list.md), item, or within an item hierarchy. |
 | [List followed items][drive-following]                     | [driveItem][] collection    | List the user's followed driveItems.|
 | [List children][item-children]                             | [driveItem][] collection    | List children of the root folder of a drive.|
 | [List changes][item-changes]                               | [driveItem][] collection    | List changes for all driveItems in the drive.|
@@ -129,7 +129,7 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
 [list]: list.md
 [quota-facet]: quota.md
 [drive-resource]: drive.md
-[drive-activities]: ../api/activities-list.md
+[drive-activities]: ../api/itemactivity-list.md
 [drive-following]: ../api/drive-list-following.md
 [drive-get]: ../api/drive-get.md
 [drive-list]: ../api/drive-list.md

@@ -1,11 +1,11 @@
 ---
 title: "Delete remoteDesktopSecurityConfiguration"
 description: "Delete a remoteDesktopSecurityConfiguration object on a servicePrincipal."
-author: "SanDeo-MSFT"
+author: "mjsantani"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
-ms.date: 04/04/2024
+ms.date: 01/02/2026
 ---
 
 # Delete remoteDesktopSecurityConfiguration
@@ -54,7 +54,7 @@ The following example shows a request.
 }
 -->
 ```http
-DELETE https://graph.microsoft.com/v1.0/servicePrincipals/00af5dfb-85da-4b41-a677-0c6b86dd34f8/remoteDesktopSecurityConfiguration
+DELETE https://graph.microsoft.com/v1.0/servicePrincipals/00af5dfb-85da-4b41-a677-0c6b86dd34f8/remoteDesktopSecurityConfiguration/$ref
 ```
 
 # [C#](#tab/csharp)

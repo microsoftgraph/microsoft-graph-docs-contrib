@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-CustomAuthenticationExtension customAuthenticationExtension = new CustomAuthenticationExtension();
+OnPasswordSubmitCustomExtension customAuthenticationExtension = new OnPasswordSubmitCustomExtension();
 customAuthenticationExtension.setOdataType("#microsoft.graph.onPasswordSubmitCustomExtension");
 customAuthenticationExtension.setDisplayName("Legacy password validator");
 customAuthenticationExtension.setDescription("Validates passwords against a legacy authentication system for JIT migration");

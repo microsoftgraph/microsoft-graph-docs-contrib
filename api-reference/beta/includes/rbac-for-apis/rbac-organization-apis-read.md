@@ -6,7 +6,7 @@ ms.topic: include
 > [!IMPORTANT]
 > Applications granted the *User.Read* permission are able to read only the **id**, **displayName**, and **verifiedDomains** properties of the organization. All other properties return with `null` values. To read all properties, use at least *Organization.Read.All*.
 >
-> In delegated scenarios with work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role with a supported role permission. The following least privileged roles are supported for this operation.
+> For delegated access using work or school accounts, the signed-in user must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role that grants the permissions required for this operation. This operation supports the following built-in roles, which provide only the least privilege necessary:
 > - AdHoc License Administrator
 > - Application Administrator
 > - Authentication Administrator

@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // Dependencies
 using Microsoft.Graph.Models;
 
-var requestBody = new CustomAuthenticationExtension
+var requestBody = new OnPasswordSubmitCustomExtension
 {
 	OdataType = "#microsoft.graph.onPasswordSubmitCustomExtension",
 	DisplayName = "Legacy password validator",

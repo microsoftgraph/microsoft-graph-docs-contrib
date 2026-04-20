@@ -76,6 +76,7 @@ This resource is an open type that allows additional properties beyond those doc
 |identifierUris|String collection| Also known as App ID URI, this value is set when an agent identity blueprint is used as a resource app. The identifierUris acts as the prefix for the scopes you reference in your API's code, and it must be globally unique across Microsoft Entra ID. Not nullable. Inherited from [application](../resources/application.md).|
 |info|[informationalUrl](../resources/informationalurl.md)|Basic profile information of the agent identity blueprint, such as it's marketing, support, terms of service, and privacy statement URLs. The terms of service and privacy statement are surfaced to users through the user consent experience. Inherited from [application](../resources/application.md).|
 |keyCredentials|[keyCredential](../resources/keycredential.md) collection|The collection of key credentials associated with the agent identity blueprint. Not nullable. Inherited from [application](../resources/application.md).|
+|managerApplications|Guid collection|A collection of application IDs for Microsoft first-party applications designated as managers of this agent blueprint. Manager applications can create agent blueprint principals, agent identities, and agent users for managed agent blueprints without requiring highly privileged permissions such as `AgentIdentityBlueprintPrincipal.ReadWrite.All`. Limited to a maximum of 10 entries. Not nullable. Only Microsoft first-party applications can be designated as managers. Not returned by default. Supports `$select`.|
 |optionalClaims|[optionalClaims](../resources/optionalclaims.md)|Application developers can configure optional claims in their Microsoft Entra agent identity blueprints to specify the claims that are sent to their application by the Microsoft security token service. Inherited from [application](../resources/application.md).|
 |passwordCredentials|[passwordCredential](../resources/passwordcredential.md) collection|The collection of password credentials associated with the agent identity blueprint. Not nullable. Inherited from [application](../resources/application.md).<br/><br/>You can also add passwords after creating the agent identity blueprint by calling the [Add password](../api/agentidentityblueprint-addpassword.md) API.|
 |publisherDomain|String|The verified publisher domain for the agent identity blueprint. Read-only. Inherited from [application](../resources/application.md).|
@@ -154,6 +155,7 @@ The following JSON representation shows the resource type.
       "@odata.type": "microsoft.graph.keyCredential"
     }
   ],
+  "managerApplications": ["Guid"],
   "passwordCredentials": [
     {
       "@odata.type": "microsoft.graph.passwordCredential"

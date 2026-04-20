@@ -44,7 +44,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/custodians/{custodianId}
 ## Request body
 In the request body, supply a JSON representation of the [userSource](../resources/security-usersource.md) object.
 
-You can specify the following properties when you create a **userSource**.
+You can specify the following properties when you create a **userSource**. For more information, see [Data sources in eDiscovery](/purview/edisc-data-sources#other-considerations).
 
 |Property|Type|Description|
 |:---|:---|:---|

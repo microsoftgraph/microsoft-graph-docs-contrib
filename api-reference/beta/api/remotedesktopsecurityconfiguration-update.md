@@ -1,11 +1,11 @@
 ---
 title: "Update remoteDesktopSecurityConfiguration"
-description: "Update the properties of a remoteDesktopSecurityConfiguration object on the servicePincipal."
-author: "SanDeo-MSFT"
+description: "Update the properties of a remoteDesktopSecurityConfiguration object on the servicePrincipal."
+author: "mjsantani"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
-ms.date: 04/19/2024
+ms.date: 01/02/2026
 ---
 
 # Update remoteDesktopSecurityConfiguration
@@ -27,12 +27,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
-PATCH /servicePrincipals/{servicePrincipalsId}/remoteDesktopSecurityConfiguration
+``` http
+PATCH /servicePrincipals/{id}/remoteDesktopSecurityConfiguration
+PATCH /servicePrincipals(appId='{appId}')/remoteDesktopSecurityConfiguration
 ```
 
 ## Request headers
@@ -65,7 +68,7 @@ The following example shows a request.
   "name": "update_remotedesktopsecurityconfiguration"
 }
 -->
-```http
+``` http
 PATCH https://graph.microsoft.com/beta/servicePrincipals/00af5dfb-85da-4b41-a677-0c6b86dd34f8/remoteDesktopSecurityConfiguration
 Content-Type: application/json
 
@@ -74,7 +77,6 @@ Content-Type: application/json
   "isRemoteDesktopProtocolEnabled": true
 }
 ```
-
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-remotedesktopsecurityconfiguration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -114,7 +116,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.remoteDesktopSecurityConfiguration"
 }
 -->
-```http
+``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
 

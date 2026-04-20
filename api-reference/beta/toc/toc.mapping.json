@@ -75,6 +75,7 @@
                   "name": "Remote desktop security policy",
                   "resources": [
                     "remoteDesktopSecurityConfiguration",
+                    "approvedClientApp",
                     "targetDeviceGroup"
                   ]
                 }
@@ -2734,11 +2735,17 @@
                     "userRegistrationActivitySummary",
                     "userSignInUsageByAuthMethodActivity"
                   ]
+                },
+                {
+                  "name": "Premium license utilization (preview)",
+                  "resources": [
+                    "azureADPremiumLicenseInsight"
+                  ]
                 }
               ]
             },
             {
-              "name": "Microsoft Entra logs",
+              "name": "Microsoft Entra logs and reports",
               "overview": "../../resources/azure-ad-auditlog-overview.md",
               "shouldSort": true,
               "resources": [
@@ -3663,8 +3670,18 @@
       ]
     },
     {
-      "name": "Tenant management",
+      "name": "Tenants",
       "shouldSort": true,
+      "overview": "../../resources/tenants-overview.md",
+      "keywords": [
+        "tenant management",
+        "tenant configuration",
+        "tenant governance",
+        "Lighhouse",
+        "cross-tenant access",
+        "multitenant",
+        "backup"
+      ],
       "childNodes": [
         {
           "name": "Configuration management",
