@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Contains information about a town hall registration configuration.
 
-Currently, the **virtualEventTownhallRegistrationConfiguration** resource inherits a subset of the properties and relationships from [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md).
+Inherits from [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md).  
 
 ## Methods
 
@@ -28,7 +28,7 @@ Currently, the **virtualEventTownhallRegistrationConfiguration** resource inheri
 
 | Property           | Type   | Description                                                                                                                  |
 |:-------------------|:-------|:-----------------------------------------------------------------------------------------------------------------------------|
-| capacity           | Int32  | Total capacity of the virtual event. Inherited from [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md). |
+| capacity           | Int32  | Total capacity of the town hall. Inherited from [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md). |  
 | id                 | String | Unique identifier for the **virtualEventRegistrationConfiguration** object. Inherited from [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md). |
 | isManualApprovalEnabled | Boolean | Indicates whether registrations require organizer approval before a participant is confirmed. Inherited from [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md). |
 | isWaitlistEnabled | Boolean | Indicates whether more registrants are automatically placed on a waitlist when capacity is reached. Inherited from [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md). |
