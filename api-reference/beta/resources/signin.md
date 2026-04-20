@@ -5,7 +5,7 @@ description: "Provides details about user or application sign-in activity in you
 author: "egreenberg14"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
-ms.date: 11/27/2025
+ms.date: 04/20/2026
 ms.custom: sfi-ropc-nochange
 toc.title: Sign-in
 ---
@@ -56,6 +56,7 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 |azureResourceId|String|Contains a fully qualified Azure Resource Manager ID of an Azure resource accessed during the sign-in.|
 |clientAppUsed|String|The legacy client used for sign-in activity. For example: `Browser`, `Exchange ActiveSync`, `Modern clients`, `IMAP`, `MAPI`, `SMTP`, or `POP`. <br/><br/> Supports `$filter` (`eq`). |
 |clientCredentialType|clientCredentialType|Describes the credential type that a user client or service principal provided to Microsoft Entra ID to authenticate itself. You can review this property to track and eliminate less secure credential types or to watch for clients and service principals using anomalous credential types. The possible values are: `none`, `clientSecret`, `clientAssertion`, `federatedIdentityCredential`, `managedIdentity`, `certificate`, `unknownFutureValue`.|
+|clientSessionId|String|The unique identifier of the client session associated with the sign-in.|
 |conditionalAccessAudiences|String|A list that indicates the audience that Conditional Access evaluated during a sign-in event. <br/><br/> Supports `$filter` (`eq`).|
 |conditionalAccessStatus|conditionalAccessStatus| The status of the conditional access policy triggered. Possible values: `success`, `failure`, `notApplied`, or `unknownFutureValue`. <br/><br/> Supports `$filter` (`eq`).|
 |correlationId|String|The identifier the client sends when sign-in is initiated. This property is used for troubleshooting the corresponding sign-in activity when calling for support. <br/><br/> Supports `$filter` (`eq`).|
@@ -180,6 +181,7 @@ The following JSON representation shows the resource type.
   "autonomousSystemNumber": "Integer",
   "azureResourceId": "String",
   "clientAppUsed": "String",
+  "clientSessionId": "String",
   "conditionalAccessStatus": "String",
   "correlationId": "String",
   "createdDateTime": "String (timestamp)",

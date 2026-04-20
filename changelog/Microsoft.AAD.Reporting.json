@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "d55b5469-bf44-4bf6-a54c-e16ee92a7d0c",
+          "ApiChange": "Property",
+          "ChangedApiName": "clientSessionId",
+          "ChangeType": "Addition",
+          "Description": "Added the **clientSessionId** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Target": "signIn"
+        }
+      ],
+      "Id": "d55b5469-bf44-4bf6-a54c-e16ee92a7d0c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-04-20T18:48:19.1346083Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b3c7e1a4-5f92-4d8b-a6e3-9c1d2f4b7a80",
           "ApiChange": "Resource",
           "ChangedApiName": "azureADPremiumLicenseInsight",
