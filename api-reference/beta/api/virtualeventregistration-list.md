@@ -35,15 +35,23 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
+
+To list the registrations of a webinar:
+
 ```http
 GET /solutions/virtualEvents/webinars/{webinarId}/registrations
 GET /solutions/virtualEvents/webinars/{webinarId}/registrations?$filter=userId eq '{userId}'
 GET /solutions/virtualEvents/webinars/{webinarId}/registrations?$filter=email eq '{email}'
+```
 
+To list the registrations of a town hall:
+
+```http
 GET /solutions/virtualEvents/townhalls/{townhallId}/registrations
 GET /solutions/virtualEvents/townhalls/{townhallId}/registrations?$filter=userId eq '{userId}'
 GET /solutions/virtualEvents/townhalls/{townhallId}/registrations?$filter=email eq '{email}'
 ```
+
 ## Optional query parameters
 
 This method supports a filter from the [OData query parameters](/graph/query-parameters) to help customize the response.

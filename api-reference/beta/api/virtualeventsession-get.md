@@ -146,6 +146,8 @@ Content-Type: application/json
     "participants": {
       "@odata.type": "microsoft.graph.meetingParticipants"
     },
+    "isBroadcast": null,
+    "broadcastSettings": null,
     "capabilities": [],
     "audioConferencing": null,
     "chatInfo": {

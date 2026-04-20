@@ -30,9 +30,16 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
+
+To create a registration of a webinar:
+
 ```http
 POST /solutions/virtualEvents/webinars/{webinarId}/registrations
+```
 
+To create a registration of a town hall:
+
+```http
 POST /solutions/virtualEvents/townhalls/{townhallId}/registrations
 ```
 

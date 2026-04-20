@@ -36,9 +36,16 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
+
+To list the questions from the registration configuration of a webinar:
+
 ```http
 GET /solutions/virtualEvents/webinars/{webinarId}/registrationConfiguration/questions
+```
 
+To list the questions from the registration configuration of a town hall:
+
+```http
 GET /solutions/virtualEvents/townhalls/{townhallId}/registrationConfiguration/questions
 ```
 

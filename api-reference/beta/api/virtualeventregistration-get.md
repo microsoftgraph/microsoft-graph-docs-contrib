@@ -35,9 +35,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
+
+To get registration of a webinar:
+
 ```http
 GET /solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}
+```
 
+To get registration of a town hall:
+```http
 GET /solutions/virtualEvents/townhalls/{townhallId}/registrations/{registrationId}
 ```
 
