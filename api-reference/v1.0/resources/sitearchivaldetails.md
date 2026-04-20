@@ -10,13 +10,13 @@ ms.date: 07/31/2024
 
 # siteArchivalDetails resource type
 
-Represents the archival details of a [siteCollection](/graph/sitecollection).
+Represents the archival details of a [siteCollection](../resources/sitecollection.md).
 
 ## Properties
 
 | Property      | Type   | Description                                    |
 |:------------- |:------ |:-----------------------------------------------|
-| archiveStatus | siteArchiveStatus | Represents the current archive status of the site collection. Returned only on `$select`. The possible values are: `recentlyArchived`, `fullyArchived`, `reactivating`, `unknownFutureValue`.|
+| archiveStatus | siteArchiveStatus | Represents the current archive status of the site collection. Requires `$select` to retrieve. The possible values are: `recentlyArchived`, `fullyArchived`, `reactivating`, `unknownFutureValue`.|
 
 ## siteArchiveStatus values
 

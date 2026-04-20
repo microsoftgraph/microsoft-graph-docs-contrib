@@ -28,14 +28,14 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |completedDateTime|DateTimeOffset|The date and time when the snapshot job was completed. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br>Supports `$filter` (`eq`, `ne`, `ge`, `le`) and `$orderby`.|
-|createdBy|[identitySet](../resources/identityset.md)|The user, app, or device that triggered the snapshot. <br><br>Returned only on `$select`. Supports `$filter` (`eq`).|
+|createdBy|[identitySet](../resources/identityset.md)|The user, app, or device that triggered the snapshot. <br><br>Requires `$select` to retrieve. Supports `$filter` (`eq`).|
 |createdDateTime|DateTimeOffset|The date and time when the snapshot job was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br>Supports `$filter` (`eq`, `ne`, `ge`, `le`) and `$orderby`.|
 |description|String|User-friendly description of the snapshot given by the user. <br><br>Supports `$filter` (`eq`, `ne`, `startsWith`) and `$orderby`.|
 |displayName|String|User-friendly name provided by the user during snapshot creation. <br><br>Supports `$filter` (`eq`, `ne`, `startsWith`) and `$orderby`.|
-|errorDetails|String collection|Details of errors related to the reasons why the snapshot can't complete. <br><br>Returned only on `$select`.|
+|errorDetails|String collection|Details of errors related to the reasons why the snapshot can't complete. <br><br>Requires `$select` to retrieve.|
 |id|String|Globally unique identifier (GUID) of the snapshot job. Inherited from [entity](../resources/entity.md). <br><br>Supports `$filter` (`eq`, `ne`) and `$orderby`.|
-|resourceLocation|String|The URL at which the snapshot file resides. <br><br>Returned only on `$select`.|
-|resources|String collection|The names of all resources included in the request body by the user who created the snapshot. Fetched by the system. <br><br>Returned only on `$select`.|
+|resourceLocation|String|The URL at which the snapshot file resides. <br><br>Requires `$select` to retrieve.|
+|resources|String collection|The names of all resources included in the request body by the user who created the snapshot. Fetched by the system. <br><br>Requires `$select` to retrieve.|
 |status|snapshotJobStatus|Status of the snapshot. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`, `partiallySuccessful`. Use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `partiallySuccessful`. <br><br>Supports `$filter` (`eq`, `ne`) and `$orderby`.|
 |tenantId|String|Globally unique identifier (GUID) of the tenant for which the snapshot is created. <br><br>Supports `$filter` (`eq`, `ne`).|
 

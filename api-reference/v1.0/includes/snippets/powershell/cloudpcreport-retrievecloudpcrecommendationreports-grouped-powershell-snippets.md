@@ -20,6 +20,6 @@ groupBy = @(
 )
 }
 
-Get-MgDeviceManagementVirtualEndpointReportCloudPcRecommendationReport -BodyParameter $params
+Get-MgDeviceManagementVirtualEndpointReportCloudPcRecommendationReport -Body $params
 
 ```
