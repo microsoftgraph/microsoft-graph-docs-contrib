@@ -1,5 +1,5 @@
 ---
-title: "List taskProcessingResults"
+title: "List taskProcessingResults (from a run)"
 description: "Get the taskProcessingResult resources from a run."
 author: "KristinaSmith"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 04/05/2024
 ---
 
-# List taskProcessingResults
+# List taskProcessingResults (from a run)
 
 Namespace: microsoft.graph.identityGovernance
 
