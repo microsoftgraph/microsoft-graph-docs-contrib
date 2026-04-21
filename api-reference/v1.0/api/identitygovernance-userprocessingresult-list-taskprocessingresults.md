@@ -126,6 +126,7 @@ Content-Type: application/json
             "processingStatus": "completed",
             "startedDateTime": "2022-08-24T23:28:05.1234966Z",
             "failureReason": null,
+            "processingInfo": null,
             "subject": {
                 "id": "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
             },
@@ -148,6 +149,7 @@ Content-Type: application/json
             "processingStatus": "completed",
             "startedDateTime": "2022-08-24T23:28:06.3926865Z",
             "failureReason": null,
+            "processingInfo": "User was already a member of all requested groups",
             "subject": {
                 "id": "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
             },
@@ -240,6 +242,7 @@ Content-Type: application/json
             "id": "78650318-7238-4e7e-852f-2c36cbeff340",
             "processingStatus": "completed",
             "failureReason": null,
+            "processingInfo": null,
             "subject": {
                 "id": "df744d9e-2148-4922-88a8-633896c1e929"
             },
@@ -259,6 +262,7 @@ Content-Type: application/json
             "id": "3d2e459d-5614-42e4-952b-0e917b5f6646",
             "processingStatus": "completed",
             "failureReason": null,
+            "processingInfo": null,
             "subject": {
                 "id": "df744d9e-2148-4922-88a8-633896c1e929"
             },
@@ -278,6 +282,7 @@ Content-Type: application/json
             "id": "03359fa6-c63c-4573-92c2-4c9518ca98aa",
             "processingStatus": "completed",
             "failureReason": null,
+            "processingInfo": null,
             "subject": {
                 "id": "df744d9e-2148-4922-88a8-633896c1e929"
             },
@@ -363,6 +368,7 @@ Content-Type: application/json
             "processingStatus": "completed",
             "startedDateTime": "2022-08-24T23:28:05.1234966Z",
             "failureReason": null,
+            "processingInfo": null,
             "subject": {
                 "id": "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
             },
@@ -385,6 +391,7 @@ Content-Type: application/json
             "processingStatus": "completed",
             "startedDateTime": "2022-08-24T23:28:06.3926865Z",
             "failureReason": null,
+            "processingInfo": null,
             "subject": {
                 "id": "ea09ac2e-77e3-4134-85f2-25ccf3c33387"
             },
@@ -476,6 +483,7 @@ Content-Type: application/json
             "id": "78650318-7238-4e7e-852f-2c36cbeff340",
             "processingStatus": "completed",
             "failureReason": null,
+            "processingInfo": null,
             "subject": {
                 "id": "df744d9e-2148-4922-88a8-633896c1e929"
             },
@@ -495,6 +503,7 @@ Content-Type: application/json
             "id": "3d2e459d-5614-42e4-952b-0e917b5f6646",
             "processingStatus": "completed",
             "failureReason": null,
+            "processingInfo": null,
             "subject": {
                 "id": "df744d9e-2148-4922-88a8-633896c1e929"
             },
@@ -514,6 +523,7 @@ Content-Type: application/json
             "id": "03359fa6-c63c-4573-92c2-4c9518ca98aa",
             "processingStatus": "completed",
             "failureReason": null,
+            "processingInfo": null,
             "subject": {
                 "id": "df744d9e-2148-4922-88a8-633896c1e929"
             },

@@ -127,6 +127,7 @@ Content-Type: application/json
             "processingStatus": "completed",
             "startedDateTime": "2023-01-20T17:16:02.8025169Z",
             "failureReason": null,
+            "processingInfo": "User was already a member of all requested groups",
             "subject": {
                 "id": "1baa57fa-3c4e-4526-ba5a-db47a9df95f0"
             },
@@ -218,6 +219,7 @@ Content-Type: application/json
             "id": "7a21089f-ec13-4e9c-997e-b31f4e59d41e",
             "processingStatus": "completed",
             "failureReason": null,
+            "processingInfo": "User was already a member of all requested groups",
             "subject": {
                 "id": "1baa57fa-3c4e-4526-ba5a-db47a9df95f0"
             },

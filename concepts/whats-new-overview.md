@@ -37,7 +37,8 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ### Identity and access | Governance
 
-Use `approverRemove` as a new supported value for the **requestType** property of the [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest) resource. For more information, see [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest).
+- Added the **processingInfo** property to the [taskProcessingResult](/graph/api/resources/identitygovernance-taskprocessingresult) resource type.
+- Use `approverRemove` as a new supported value for the **requestType** property of the [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest) resource. For more information, see [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest).
 
 ### Teamwork and communications | Apps
 
@@ -72,7 +73,8 @@ Added the **deprecationDate** property to the [applicationTemplate](/graph/api/r
 
 ### Identity and access | Governance
 
-Use `default`, `notVisible`, and `visible` as supported values for the **approverInformationVisibility** property of the [accessPackageApprovalStage](/graph/api/resources/accesspackageapprovalstage?view=graph-rest-beta&preserve-view=true) and [approvalStage](/graph/api/resources/approvalstage?view=graph-rest-beta&preserve-view=true) resources to indicate whether approver information is visible to the requestor.
+- Added the **processingInfo** property to the [taskProcessingResult](/graph/api/resources/identitygovernance-taskprocessingresult?view=graph-rest-beta&preserve-view=true) resource type.
+- Use `default`, `notVisible`, and `visible` as supported values for the **approverInformationVisibility** property of the [accessPackageApprovalStage](/graph/api/resources/accesspackageapprovalstage?view=graph-rest-beta&preserve-view=true) and [approvalStage](/graph/api/resources/approvalstage?view=graph-rest-beta&preserve-view=true) resources to indicate whether approver information is visible to the requestor.
 
 ### Identity and access | Identity and sign-in
 
