@@ -3614,6 +3614,16 @@
                   "href": "../../api/teamwork-sendactivitynotificationtorecipients.md"
                 }
               ]
+            },
+            {
+              "name": "Sections (preview)",
+              "resources": [
+                "teamworkSection",
+                "teamworkSectionItem"
+              ],
+              "complexTypes": [
+                "sectionDisplayIcon"
+              ]
             }
           ],
           "complexTypes": [

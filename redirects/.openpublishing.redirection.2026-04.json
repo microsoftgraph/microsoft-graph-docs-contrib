@@ -1,6 +1,8 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/api-reference/beta/api/resources/channellayouttype.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-beta#channellayouttype-values",
       "source_path_from_root": "/api-reference/beta/resources/approverinformationvisibility.md",
       "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/accesspackageapprovalstage?view=graph-rest-beta#approverinformationvisibility-values",
       "redirect_document_id": false

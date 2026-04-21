@@ -52,9 +52,11 @@ In the request body, supply a JSON representation of [channel](../resources/chan
 
 If successful, this method returns a `204 No Content` response code.
 
-## Example
+## Examples
 
-### Request
+### Example 1: Update a channel
+The following example shows how to update a channel.
+#### Request
 
 The following example shows a request.
 
@@ -95,12 +97,78 @@ PATCH https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e2026
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 2: Update the layout type of a channel
+
+The following example shows how to update the existing layout type of a channel from post to chat.
+
+#### Request
+
+The following example shows a request to change the layout of a channel from the traditional post-reply format to a chat-like threading experience.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_channel_layouttype",
+  "sampleKeys": ["893075dd-2487-4122-925f-022c42e20265", "19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2"]
+}-->
+
+```http
+PATCH https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2
+Content-type: application/json
+
+{
+  "layoutType": "chat"
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 3: Switch a channel back to post layout type
+
+The following example shows how to convert a chat-layout channel back to the traditional post-reply format.
+
+#### Request
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "update_channel_layouttype_to_post",
+  "sampleKeys": ["893075dd-2487-4122-925f-022c42e20265", "19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2"]
+}-->
+
+```http
+PATCH https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2
+Content-type: application/json
+
+{
+  "layoutType": "post"
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content
