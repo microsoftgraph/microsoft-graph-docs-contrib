@@ -14,6 +14,8 @@ items:
     href: ../../api/drive-get.md
   - name: Get drive root
     href: ../../api/driveitem-get.md
+  - name: List activities
+    href: ../../api/itemactivity-list.md
   - name: List followed items
     href: ../../api/drive-list-following.md
   - name: List children
@@ -38,6 +40,8 @@ items:
     href: ../../api/itemanalytics-get.md
   - name: Get activities by interval
     href: ../../api/itemactivitystat-getactivitybyinterval.md
+  - name: Get recent activities
+    href: ../../api/itemactivity-list.md
   - name: List children
     href: ../../api/driveitem-list-children.md
   - name: List versions

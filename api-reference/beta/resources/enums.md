@@ -969,15 +969,6 @@ Namespace: microsoft.graph
 | remoteDesktopToken |
 | refreshToken       |
 
-### approverInformationVisibility values
-
-| Member |
-| ---- |
-| no |
-| yes |
-| default |
-| unknownFutureValue |
-
 ### protocolType values
 
 | Member |
@@ -3917,6 +3908,17 @@ Possible values for user account types (group membership), per Windows definitio
 | regular |
 | quick |
 | strategic |
+| unknownFutureValue |
+
+### sectionIconSkinTone values
+
+| Member |
+| ------------------ |
+| light |
+| mediumLight |
+| medium |
+| mediumDark |
+| dark |
 | unknownFutureValue |
 
 ### serviceHealthClassificationType values

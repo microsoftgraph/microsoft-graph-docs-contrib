@@ -348,6 +348,14 @@ items:
             href: ../../api/healthmonitoring-alertconfiguration-get.md
           - name: Update
             href: ../../api/healthmonitoring-alertconfiguration-update.md
+    - name: Premium license utilization (preview)
+      items:
+      - name: Entra ID P1/P2 license utilization
+        items:
+        - name: Entra ID P1/P2 license utilization
+          href: ../../resources/azureadpremiumlicenseinsight.md
+        - name: Get
+          href: ../../api/azureadpremiumlicenseinsight-get.md
     - name: Service principal sign-in activity (preview)
       items:
       - name: Service principal sign-in activity (preview)
@@ -356,7 +364,7 @@ items:
         href: ../../api/reportroot-list-serviceprincipalsigninactivities.md
       - name: Get
         href: ../../api/serviceprincipalsigninactivity-get.md
-  - name: Microsoft Entra logs
+  - name: Microsoft Entra logs and reports
     items:
     - name: Overview
       href: ../../resources/azure-ad-auditlog-overview.md

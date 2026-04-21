@@ -3,6 +3,76 @@
     {
       "ChangeList": [
         {
+          "Id": "e7a4527a-30ea-4877-9cea-e7340b1f7877",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "height",
+          "ChangeType": "Addition",
+          "Description": "Added the **height** query parameter to the [API to download a file in another format](https://learn.microsoft.com/en-us/graph/api/driveitem-get-content-format?view=graph-rest-beta).",
+          "Target": "driveItem-get-content-format"
+        },
+        {
+          "Id": "e7a4527a-30ea-4877-9cea-e7340b1f7877",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "width",
+          "ChangeType": "Addition",
+          "Description": "Added the **width** query parameter to the [API to download a file in another format](https://learn.microsoft.com/en-us/graph/api/driveitem-get-content-format?view=graph-rest-beta).",
+          "Target": "driveItem-get-content-format"
+        }
+      ],
+      "Id": "e7a4527a-30ea-4877-9cea-e7340b1f7877",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-04-17T23:41:39.1409717Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8d880708-d68a-4a9a-b72f-954b6b86e20b",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "height",
+          "ChangeType": "Addition",
+          "Description": "Added the **height** query parameter to the [API to download a file in another format](https://learn.microsoft.com/en-us/graph/api/driveitem-get-content-format?view=graph-rest-1.0).",
+          "Target": "driveItem-get-content-format"
+        },
+        {
+          "Id": "8d880708-d68a-4a9a-b72f-954b6b86e20b",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "width",
+          "ChangeType": "Addition",
+          "Description": "Added the **width** query parameter to the [API to download a file in another format](https://learn.microsoft.com/en-us/graph/api/driveitem-get-content-format?view=graph-rest-1.0).",
+          "Target": "driveItem-get-content-format"
+        }
+      ],
+      "Id": "8d880708-d68a-4a9a-b72f-954b6b86e20b",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-04-17T23:41:39.1409717Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "63d99556-8815-47b2-8c0c-27bedb7ecc73",
+          "ApiChange": "Method",
+          "ChangedApiName": "itemActivity: list",
+          "ChangeType": "Addition",
+          "Description": "Added the [List](https://learn.microsoft.com/en-us/graph/api/itemactivity-list?view=graph-rest-1.0) operation to the [itemActivity](https://learn.microsoft.com/en-us/graph/api/resources/itemActivity?view=graph-rest-1.0) resource.",
+          "Target": "itemActivity"
+        }
+      ],
+      "Id": "63d99556-8815-47b2-8c0c-27bedb7ecc73",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-04-17T00:00:00.000Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "e010d96a-7a4e-4b7c-aa22-05bd067da980",
           "ApiChange": "Property",
           "ChangedApiName": "itemCount",
@@ -157,7 +227,7 @@
           "Target": "drive"
         },
         {
-          "Id": "cfd328aa-a83a-49ed-982e-f25c37a312d2",
+          "Id": "3f2504e0-4f89-11d3-9a0c-0305e82c3301",
           "ApiChange": "Annotation",
           "ChangedApiName": "Org.OData.Core.V1.Revisions",
           "ChangeType": "Deprecation",
@@ -165,7 +235,7 @@
           "Target": "recent"
         },
         {
-          "Id": "cfd328aa-a83a-49ed-982e-f25c37a312d2",
+          "Id": "3f2504e0-4f89-11d3-9a0c-0305e82c3301",
           "ApiChange": "Annotation",
           "ChangedApiName": "Org.OData.Core.V1.Revisions",
           "ChangeType": "Deprecation",
@@ -199,7 +269,7 @@
           "Target": "drive"
         },
         {
-          "Id": "f3a53290-debd-4e11-a89e-fa38a7063991",
+          "Id": "e3a7f8c1-9d42-4b6a-8f3e-7c2d1a9b5f84",
           "ApiChange": "Annotation",
           "ChangedApiName": "Org.OData.Core.V1.Revisions",
           "ChangeType": "Deprecation",
@@ -207,7 +277,7 @@
           "Target": "recent"
         },
         {
-          "Id": "f3a53290-debd-4e11-a89e-fa38a7063991",
+          "Id": "e3a7f8c1-9d42-4b6a-8f3e-7c2d1a9b5f84",
           "ApiChange": "Annotation",
           "ChangedApiName": "Org.OData.Core.V1.Revisions",
           "ChangeType": "Deprecation",

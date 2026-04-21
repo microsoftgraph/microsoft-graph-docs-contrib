@@ -14,15 +14,13 @@ Namespace: microsoft.graph
 
 Update the properties of an [approvedClientApp](../resources/approvedclientapp.md) object for a [remotedesktopsecurityconfiguration](../resources/remotedesktopsecurityconfiguration.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "approvedclientapp-update-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "approvedclientapp_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/approvedclientapp-update-permissions.md)]
 
 [!INCLUDE [rbac-remote-desktop-security-config-apis](../includes/rbac-for-apis/rbac-remote-desktop-security-config-apis.md)]

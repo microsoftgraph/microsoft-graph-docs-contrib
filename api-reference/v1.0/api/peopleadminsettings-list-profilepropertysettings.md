@@ -91,7 +91,6 @@ GET https://graph.microsoft.com/v1.0/admin/people/profilePropertySettings
 
 ---
 
-
 ### Response
 
 The following example shows the response.

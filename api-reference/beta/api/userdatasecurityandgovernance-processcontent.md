@@ -59,15 +59,15 @@ The following table lists the parameters that are required when you call this ac
 |:---|:---|:---|
 |contentToProcess|[processContentRequest](../resources/processcontentrequest.md)|Required. The object containing the content entries and metadata (activity, device, application) to be evaluated for the specified user.|
 
-## Response headers
+## Response
+
+If successful, this action returns a `200 OK`  response code and a [processContentResponse](../resources/processcontentresponse.md) in the response body or `202 Accepted`, `204 No Content` with no response body.
+
+### Response headers
 
 | Name          | Description   |
 | :------------ | :------------ |
 | ETag          | An indicator that can be used to detect if configured policy state changed. If the policy state changed, the ETag value will change and protectionScopeState property returned will be "modified" and the app needs to refresh by calling [protectionScopes compute](../api/userprotectionscopecontainer-compute.md). |
-
-## Response
-
-If successful, this action returns a `200 OK`  response code and a [processContentResponse](../resources/processcontentresponse.md) in the response body or `202 Accepted`, `204 No Content` with no response body.
 
 ## Examples
 

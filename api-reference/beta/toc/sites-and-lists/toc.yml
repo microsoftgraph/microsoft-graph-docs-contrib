@@ -94,8 +94,8 @@ items:
     href: ../../api/listitem-list.md
   - name: Get lists in a site
     href: ../../api/list-list.md
-  - name: Get recent activities
-    href: ../../api/activities-list.md
+  - name: List activities
+    href: ../../api/itemactivity-list.md
   - name: Create item
     href: ../../api/listitem-create.md
   - name: Update item
@@ -178,6 +178,8 @@ items:
     href: ../../api/listitem-delete.md
   - name: Get analytics
     href: ../../api/itemanalytics-get.md
+  - name: Get recent activities
+    href: ../../api/itemactivity-list.md
   - name: Get column values
     href: ../../api/listitem-get.md
   - name: Update column values
