@@ -1,7 +1,7 @@
 ---
 title: "summarizedSignIn resource type"
 description: "Represents the summary of sign in events for a given category."
-ms.date: 08/18/2025
+ms.date: 04/17/2026
 author: "cumansfi"
 ms.localizationpriority: medium
 ms.subservice: "entra-monitoring-health"
@@ -45,6 +45,7 @@ Inherits from [entity](../resources/entity.md).
 |signInCount|Int64|The total number of sign-in events included in the summary.|
 |status|[signInStatus](../resources/signinstatus.md)|The sign-in status. Includes the error code and description of the error (for a sign-in failure). Supports `$filter` (`eq`) for **errorCode**.|
 |tenantId|String|The tenant identifier of the user initiating the sign-in. Supports `$filter` (`eq`).|
+|tokenIssuerType|tokenIssuerType|The type of identity provider. The possible values are: `AzureAD`, `ADFederationServices`, `UnknownFutureValue`, `AzureADBackupAuth`, `ADFederationServicesMFAAdapter`, `NPSExtension`. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `AzureADBackupAuth`, `ADFederationServicesMFAAdapter`, `NPSExtension`.|
 |userPrincipalName|String|User principal name of the user that initiated the sign-in. This value is always in lowercase. For guest users whose values in the user object typically contain `#EXT#` before the domain part, this property stores the value in both lowercase and the "true" format. For example, while the user object stores `AdeleVance_fabrikam.com#EXT#@contoso.com`, the sign-in logs store `adelevance@fabrikam.com`. Supports `$filter` (`eq`).|
 
 ## Relationships
@@ -85,7 +86,8 @@ The following JSON representation shows the resource type.
   },
   "agent": {
     "@odata.type": "microsoft.graph.agentic.agentSignIn"
-  }
+  },
+  "tokenIssuerType": "String"
 }
 ```
 

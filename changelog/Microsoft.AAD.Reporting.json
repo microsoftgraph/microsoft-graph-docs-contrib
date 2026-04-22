@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "fff5a183-f430-4d4d-ae8c-f9c753149c55",
+          "ApiChange": "Property",
+          "ChangedApiName": "tokenIssuerType",
+          "ChangeType": "Addition",
+          "Description": "Added the **tokenIssuerType** property to the [summarizedSignIn](https://learn.microsoft.com/en-us/graph/api/resources/summarizedSignIn?view=graph-rest-beta) resource.",
+          "Target": "summarizedSignIn"
+        }
+      ],
+      "Id": "fff5a183-f430-4d4d-ae8c-f9c753149c55",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-04-17T17:37:10.597908Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b3c7e1a4-5f92-4d8b-a6e3-9c1d2f4b7a80",
           "ApiChange": "Resource",
           "ChangedApiName": "azureADPremiumLicenseInsight",
