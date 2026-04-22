@@ -4,14 +4,6 @@
       "ChangeList": [
         {
           "Id": "3c6e3081-1ae2-4f9d-bd88-242f194293de",
-          "ApiChange": "Resource",
-          "ChangedApiName": "cancelRunsScope,cancelScope",
-          "ChangeType": "Addition",
-          "Description": "Added the [cancelRunsScope](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-cancelRunsScope?view=graph-rest-beta) and [cancelScope](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-cancelScope?view=graph-rest-beta) resources.",
-          "Target": "cancelRunsScope,cancelScope"
-        },
-        {
-          "Id": "3c6e3081-1ae2-4f9d-bd88-242f194293de",
           "ApiChange": "Member",
           "ChangedApiName": "canceling",
           "ChangeType": "Addition",
