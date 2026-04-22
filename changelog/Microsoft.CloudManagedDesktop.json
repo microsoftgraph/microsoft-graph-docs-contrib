@@ -7,312 +7,312 @@
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootDetailsReport",
           "ChangeType": "Deletion",
-          "Description": "Removed the `troubleshootDetailsReport` member from the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Removed the `troubleshootDetailsReport` member from the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootTrendCountReport",
           "ChangeType": "Deletion",
-          "Description": "Removed the `troubleshootTrendCountReport` member from the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Removed the `troubleshootTrendCountReport` member from the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootRegionalReport",
           "ChangeType": "Deletion",
-          "Description": "Removed the `troubleshootRegionalReport` member from the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Removed the `troubleshootRegionalReport` member from the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootIssueCountReport",
           "ChangeType": "Deletion",
-          "Description": "Removed the `troubleshootIssueCountReport` member from the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Removed the `troubleshootIssueCountReport` member from the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootTenantGlobalFilterReport",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootTenantGlobalFilterReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootTenantGlobalFilterReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootTenantNetworkTrendReport",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootTenantNetworkTrendReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootTenantNetworkTrendReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootTenantNetworkAggregatedReport",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootTenantNetworkAggregatedReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootTenantNetworkAggregatedReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootTenantConnectionFailureRateTrendReport",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootTenantConnectionFailureRateTrendReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootTenantConnectionFailureRateTrendReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootTenantConnectionFailureRateAggregatedReport",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootTenantConnectionFailureRateAggregatedReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootTenantConnectionFailureRateAggregatedReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootTenantCloudPCHealthTrendReport",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootTenantCloudPCHealthTrendReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootTenantCloudPCHealthTrendReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootTenantCloudPCHealthAggregatedReport",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootTenantCloudPCHealthAggregatedReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootTenantCloudPCHealthAggregatedReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootTenantActiveConnectionCountTrendReport",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootTenantActiveConnectionCountTrendReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootTenantActiveConnectionCountTrendReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootTenantActiveConnectionCountAggregatedReport",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootTenantActiveConnectionCountAggregatedReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootTenantActiveConnectionCountAggregatedReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootTenantMTTFTrendReport",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootTenantMTTFTrendReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootTenantMTTFTrendReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootTenantMTTFAggregatedReport",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootTenantMTTFAggregatedReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootTenantMTTFAggregatedReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootTenantMTTRTrendReport",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootTenantMTTRTrendReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootTenantMTTRTrendReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootTenantMTTRAggregatedReport",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootTenantMTTRAggregatedReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootTenantMTTRAggregatedReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootTenantRemoteSignInTimeTrendReport",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootTenantRemoteSignInTimeTrendReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootTenantRemoteSignInTimeTrendReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootTenantRemoteSignInTimeAggregatedReport",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootTenantRemoteSignInTimeAggregatedReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootTenantRemoteSignInTimeAggregatedReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootEventsOfViewDataTableReport",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootEventsOfViewDataTableReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootEventsOfViewDataTableReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootTenantMetricsOfViewDataTableReport",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootTenantMetricsOfViewDataTableReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootTenantMetricsOfViewDataTableReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootCloudPCMetricsOfViewDataTableReport",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootCloudPCMetricsOfViewDataTableReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootCloudPCMetricsOfViewDataTableReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootConfigurationConnectionCountTrendV1Report",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootConfigurationConnectionCountTrendV1Report` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootConfigurationConnectionCountTrendV1Report` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootConfigurationTotalConnectionCountBarV1Report",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootConfigurationTotalConnectionCountBarV1Report` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootConfigurationTotalConnectionCountBarV1Report` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootConfigurationGlobalFilterV1Report",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootConfigurationGlobalFilterV1Report` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootConfigurationGlobalFilterV1Report` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootConnectionConfigurationOfViewDataTableV1Report",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootConnectionConfigurationOfViewDataTableV1Report` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootConnectionConfigurationOfViewDataTableV1Report` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootTenantConnectedDevicesOfViewDataTableReport",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootTenantConnectedDevicesOfViewDataTableReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootTenantConnectedDevicesOfViewDataTableReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootEnvironmentOverviewOfViewDataTableReport",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootEnvironmentOverviewOfViewDataTableReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootEnvironmentOverviewOfViewDataTableReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootCloudPCNetworkTrendReport",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootCloudPCNetworkTrendReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootCloudPCNetworkTrendReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootCloudPCNetworkAggregatedReport",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootCloudPCNetworkAggregatedReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootCloudPCNetworkAggregatedReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootCloudPCErrorTrendReport",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootCloudPCErrorTrendReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootCloudPCErrorTrendReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootCloudPCErrorAggregatedReport",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootCloudPCErrorAggregatedReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootCloudPCErrorAggregatedReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootCloudPCDurationTrendReport",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootCloudPCDurationTrendReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootCloudPCDurationTrendReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootCloudPCDurationAggregatedReport",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootCloudPCDurationAggregatedReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootCloudPCDurationAggregatedReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootCloudPCListReport",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootCloudPCListReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootCloudPCListReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootCloudPCHealthTrendReport",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootCloudPCHealthTrendReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootCloudPCHealthTrendReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootMatchedUserReport",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootMatchedUserReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootMatchedUserReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootMatchedCloudPCReport",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootMatchedCloudPCReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootMatchedCloudPCReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
           "ApiChange": "Member",
           "ChangedApiName": "troubleshootUserListReport",
           "ChangeType": "Addition",
-          "Description": "Added the `troubleshootUserListReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `troubleshootUserListReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         }
       ],
       "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
@@ -583,8 +583,8 @@
           "ApiChange": "Member",
           "ChangedApiName": "cloudPCInventoryReport",
           "ChangeType": "Addition",
-          "Description": "Added the `cloudPCInventoryReport` member to the **cloudPcReportName** enumeration type.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `cloudPCInventoryReport` member to the **cloudPCTroubleshootReportType** enumeration type.",
+          "Target": "cloudPCTroubleshootReportType"
         }
       ],
       "Id":"30294cf3-5880-4607-b248-63dab5496aaa",
@@ -1987,8 +1987,8 @@
           "ApiChange": "Member",
           "ChangedApiName": "regionalInaccessibleCloudPcTrendReport",
           "ChangeType": "Addition",
-          "Description": "Added the `regionalInaccessibleCloudPcTrendReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `regionalInaccessibleCloudPcTrendReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         }
       ],
       "Id": "2e32a5b5-133e-45f4-9978-53c81843ca6d",
@@ -2091,32 +2091,32 @@
             "ApiChange": "Member",
             "ChangedApiName": "troubleshootDetailsReport",
             "ChangeType": "Addition",
-            "Description": "Added the `troubleshootDetailsReport` member to the **cloudPcReportName** enumeration.",
-            "Target": "cloudPcReportName"
+            "Description": "Added the `troubleshootDetailsReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+            "Target": "cloudPCTroubleshootReportType"
           },
           {
             "Id": "0ca46f87-c890-4f86-aae8-d1ba036e4ff8",
             "ApiChange": "Member",
             "ChangedApiName": "troubleshootTrendCountReport",
             "ChangeType": "Addition",
-            "Description": "Added the `troubleshootTrendCountReport` member to the **cloudPcReportName** enumeration.",
-            "Target": "cloudPcReportName"
+            "Description": "Added the `troubleshootTrendCountReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+            "Target": "cloudPCTroubleshootReportType"
           },
           {
             "Id": "0ca46f87-c890-4f86-aae8-d1ba036e4ff8",
             "ApiChange": "Member",
             "ChangedApiName": "troubleshootRegionalReport",
             "ChangeType": "Addition",
-            "Description": "Added the `troubleshootRegionalReport` member to the **cloudPcReportName** enumeration.",
-            "Target": "cloudPcReportName"
+            "Description": "Added the `troubleshootRegionalReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+            "Target": "cloudPCTroubleshootReportType"
           },
           {
             "Id": "0ca46f87-c890-4f86-aae8-d1ba036e4ff8",
             "ApiChange": "Member",
             "ChangedApiName": "troubleshootIssueCountReport",
             "ChangeType": "Addition",
-            "Description": "Added the `troubleshootIssueCountReport` member to the **cloudPcReportName** enumeration.",
-            "Target": "cloudPcReportName"
+            "Description": "Added the `troubleshootIssueCountReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+            "Target": "cloudPCTroubleshootReportType"
           },
           {
             "Id": "0ca46f87-c890-4f86-aae8-d1ba036e4ff8",
@@ -2343,8 +2343,8 @@
           "ApiChange": "Member",
           "ChangedApiName": "bulkActionStatusReport",
           "ChangeType": "Addition",
-          "Description": "Added the **bulkActionStatusReport** member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the **bulkActionStatusReport** member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "88f029ef-58a7-4c7c-8b43-b7dfd5ef13e0",
@@ -2635,32 +2635,32 @@
             "ApiChange": "Member",
             "ChangedApiName": "regionalConnectionQualityTrendReport",
             "ChangeType": "Addition",
-            "Description": "Added the `regionalConnectionQualityTrendReport` member to the **cloudPcReportName** enumeration.",
-            "Target": "cloudPcReportName"
+            "Description": "Added the `regionalConnectionQualityTrendReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+            "Target": "cloudPCTroubleshootReportType"
           },
           {
             "Id": "64307ccd-9ed9-4f41-8a30-1da76683fccf",
             "ApiChange": "Member",
             "ChangedApiName": "regionalConnectionQualityInsightsReport",
             "ChangeType": "Addition",
-            "Description": "Added the `regionalConnectionQualityInsightsReport` member to the **cloudPcReportName** enumeration.",
-            "Target": "cloudPcReportName"
+            "Description": "Added the `regionalConnectionQualityInsightsReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+            "Target": "cloudPCTroubleshootReportType"
           },
           {
             "Id": "64307ccd-9ed9-4f41-8a30-1da76683fccf",
             "ApiChange": "Member",
             "ChangedApiName": "remoteConnectionQualityReport",
             "ChangeType": "Addition",
-            "Description": "Added the `remoteConnectionQualityReport` member to the **cloudPcReportName** enumeration.",
-            "Target": "cloudPcReportName"
+            "Description": "Added the `remoteConnectionQualityReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+            "Target": "cloudPCTroubleshootReportType"
           },
           {
             "Id": "64307ccd-9ed9-4f41-8a30-1da76683fccf",
             "ApiChange": "Member",
             "ChangedApiName": "remoteConnectionQualityReports",
             "ChangeType": "Deprecation",
-            "Description": "Deprecated the `remoteConnectionQualityReports` member in the **cloudPcReportName** enumeration.",
-            "Target": "cloudPcReportName"
+            "Description": "Deprecated the `remoteConnectionQualityReports` member in the **cloudPCTroubleshootReportType** enumeration.",
+            "Target": "cloudPCTroubleshootReportType"
           },
           {
             "Id": "64307ccd-9ed9-4f41-8a30-1da76683fccf",
@@ -2668,7 +2668,7 @@
             "ChangedApiName": "getConnectionQualityReports",
             "ChangeType": "Deprecation",
             "Description": "Deprecated the [getConnectionQualityReports](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-getconnectionqualityreports?view=graph-rest-beta) method. Going forward, use the `retrieveConnectionQualityReports` API.",
-            "Target": "cloudPcReportName"
+            "Target": "cloudPCTroubleshootReportType"
           },
           {
             "Id": "64307ccd-9ed9-4f41-8a30-1da76683fccf",
@@ -3075,16 +3075,16 @@
           "ApiChange": "Member",
           "ChangedApiName": "inaccessibleCloudPcTrendReport",
           "ChangeType": "Addition",
-          "Description": "Added the `inaccessibleCloudPcTrendReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `inaccessibleCloudPcTrendReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "b4801e7a-ece2-424d-9e77-4cd2ef7ae036",
           "ApiChange": "Member",
           "ChangedApiName": "performanceTrendReport",
           "ChangeType": "Addition",
-          "Description": "Added the `performanceTrendReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `performanceTrendReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "b4801e7a-ece2-424d-9e77-4cd2ef7ae036",
@@ -3669,8 +3669,8 @@
           "ApiChange": "Member",
           "ChangedApiName": "cloudPcUsageCategoryReports",
           "ChangeType": "Addition",
-          "Description": "Added the `cloudPcUsageCategoryReports` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `cloudPcUsageCategoryReports` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "f387eff5-f855-44a2-a60c-1f0e8e8acf6a",
@@ -3989,8 +3989,8 @@
           "ApiChange": "Member",
           "ChangedApiName": "rawRemoteConnectionReports",
           "ChangeType": "Addition",
-          "Description": "Added the `rawRemoteConnectionReports` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `rawRemoteConnectionReports` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "12f93700-b666-4c5c-b569-7db20691c5b3",
@@ -4031,18 +4031,18 @@
         {
           "Id": "4d35dcf2-2f6c-413d-a4c4-c7770152a77b",
           "ApiChange": "Enum type",
-          "ChangedApiName": "cloudPcReportName",
+          "ChangedApiName": "cloudPCTroubleshootReportType",
           "ChangeType": "Change",
-          "Description": "Added the `frontlineLicenseUsageReport` member to the **cloudPcReportName** enumeration type.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `frontlineLicenseUsageReport` member to the **cloudPCTroubleshootReportType** enumeration type.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "4d35dcf2-2f6c-413d-a4c4-c7770152a77b",
           "ApiChange": "Enum type",
-          "ChangedApiName": "cloudPcReportName",
+          "ChangedApiName": "cloudPCTroubleshootReportType",
           "ChangeType": "Change",
-          "Description": "Added the `frontlineLicenseUsageRealTimeReport` member to the **cloudPcReportName** enumeration type.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `frontlineLicenseUsageRealTimeReport` member to the **cloudPCTroubleshootReportType** enumeration type.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "4d35dcf2-2f6c-413d-a4c4-c7770152a77b",
@@ -4277,8 +4277,8 @@
           "ApiChange": "Member",
           "ChangedApiName": "remoteConnectionQualityReports",
           "ChangeType": "Addition",
-          "Description": "Added the Â´remoteConnectionQualityReportsÂ´ member to the **cloudPcReportName** enumeration type.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the Â´remoteConnectionQualityReportsÂ´ member to the **cloudPCTroubleshootReportType** enumeration type.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "be5ebbef-56ec-465d-afbe-aef899ab7e40",
@@ -4319,10 +4319,10 @@
         {
           "Id": "f03cfd52-fea8-41c5-9ac4-1825b4fcec0d",
           "ApiChange": "Enum type",
-          "ChangedApiName": "cloudPcReportName",
+          "ChangedApiName": "cloudPCTroubleshootReportType",
           "ChangeType": "Change",
-          "Description": "Added the Â´noLicenseAvailableConnectivityFailureReportÂ´ member to the **cloudPcReportName** enumeration type.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the Â´noLicenseAvailableConnectivityFailureReportÂ´ member to the **cloudPCTroubleshootReportType** enumeration type.",
+          "Target": "cloudPCTroubleshootReportType"
         }
       ],
       "Id": "f03cfd52-fea8-41c5-9ac4-1825b4fcec0d",
@@ -4799,10 +4799,10 @@
         {
           "Id": "7a3d023d-8aa8-438c-afa7-f7f488623deb",
           "ApiChange": "Enum type",
-          "ChangedApiName": "cloudPcReportName",
+          "ChangedApiName": "cloudPCTroubleshootReportType",
           "ChangeType": "Change",
-          "Description": "Added the Â´sharedUseLicenseUsageReportÂ´ and Â´sharedUseLicenseUsageRealTimeReportÂ´ members to the **cloudPcReportName** enumeration type.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the Â´sharedUseLicenseUsageReportÂ´ and Â´sharedUseLicenseUsageRealTimeReportÂ´ members to the **cloudPCTroubleshootReportType** enumeration type.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "7a3d023d-8aa8-438c-afa7-f7f488623deb",
@@ -4903,10 +4903,10 @@
         {
           "Id": "a74bf4db-93a3-4a4c-98b0-400bac1e2131",
           "ApiChange": "Enumeration",
-          "ChangedApiName": "cloudPcReportName",
+          "ChangedApiName": "cloudPCTroubleshootReportType",
           "ChangeType": "Addition",
-          "Description": "Added the **cloudPcReportName** enumeration type.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the **cloudPCTroubleshootReportType** enumeration type.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "a74bf4db-93a3-4a4c-98b0-400bac1e2131",
@@ -7845,8 +7845,8 @@
           "ApiChange": "Member",
           "ChangedApiName": "inaccessibleCloudPcReports",
           "ChangeType": "Addition",
-          "Description": "Added the `inaccessibleCloudPcReports` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `inaccessibleCloudPcReports` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         }
       ],
       "Id": "3cc32469-33d9-46be-a085-7fa1273af503",
@@ -8273,8 +8273,8 @@
           "ApiChange": "Member",
           "ChangedApiName": "crossRegionDisasterRecoveryReport",
           "ChangeType": "Addition",
-          "Description": "Added the `crossRegionDisasterRecoveryReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `crossRegionDisasterRecoveryReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "0349a906-b84c-4244-9196-8d431f737e2b",
@@ -8413,8 +8413,8 @@
           "ApiChange": "Member",
           "ChangedApiName": "cloudPcInsightReport",
           "ChangeType": "Addition",
-          "Description": "Added the `cloudPcInsightReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `cloudPcInsightReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "b3d5f5e8-4a6b-4c8a-9f3e-2d5e4a6b4c8a",
@@ -8713,16 +8713,16 @@
           "ApiChange": "Member",
           "ChangedApiName": "cloudPcUsageCategoryReport",
           "ChangeType": "Addition",
-          "Description": "Added the `cloudPcUsageCategoryReport` member to the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Added the `cloudPcUsageCategoryReport` member to the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "caa2abc9-8f8c-48b3-9173-b8f06204302b",
           "ApiChange": "Member",
           "ChangedApiName": "cloudPcUsageCategoryReports",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the `cloudPcUsageCategoryReports` member from the **cloudPcReportName** enumeration.",
-          "Target": "cloudPcReportName"
+          "Description": "Deprecated the `cloudPcUsageCategoryReports` member from the **cloudPCTroubleshootReportType** enumeration.",
+          "Target": "cloudPCTroubleshootReportType"
         },
         {
           "Id": "caa2abc9-8f8c-48b3-9173-b8f06204302b",
