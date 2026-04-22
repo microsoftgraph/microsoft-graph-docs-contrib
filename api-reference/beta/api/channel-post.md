@@ -241,11 +241,11 @@ Content-type: application/json
 
 ### Example 3: Create a channel with chat layout type
 
-This example shows how to create a channel with the chat layout type, which provides a chat-like threading experience similar to group chats.
+The following example shows how to create a channel with the chat layout type that provides a chat-like threading experience similar to group chats.
 
 #### Request
 
-The following example shows a request to create a channel with `layoutType` set to `chat`.
+The following example shows a request to create a channel with **layoutType** set to `chat`.
 
 # [HTTP](#tab/http)
 <!-- {

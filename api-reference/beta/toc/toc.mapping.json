@@ -2763,7 +2763,7 @@
           ]
         },
         {
-          "name": "Microsoft 365 monitoring reports (preview)",
+          "name": "Monitoring reports (preview)",
           "overview": "../../resources/m365-monitoring-api-overview.md",
           "resources": [
             "serviceActivity"
@@ -3614,6 +3614,16 @@
                   "name": "Send notification to multiple users in bulk",
                   "href": "../../api/teamwork-sendactivitynotificationtorecipients.md"
                 }
+              ]
+            },
+            {
+              "name": "Sections (preview)",
+              "resources": [
+                "teamworkSection",
+                "teamworkSectionItem"
+              ],
+              "complexTypes": [
+                "sectionDisplayIcon"
               ]
             }
           ],
