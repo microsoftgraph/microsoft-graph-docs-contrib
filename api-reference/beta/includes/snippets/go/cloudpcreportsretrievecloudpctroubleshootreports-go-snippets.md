@@ -17,24 +17,32 @@ import (
 )
 
 requestBody := graphdevicemanagement.NewRetrieveCloudPcTroubleshootReportsPostRequestBody()
-reportName := graphmodels.TROUBLESHOOTTENANTACTIVECONNECTIONCOUNTTRENDREPORT_CLOUDPCTROUBLESHOOTREPORTTYPE 
+reportName := graphmodels.TROUBLESHOOTDETAILSREPORT_CLOUDPCTROUBLESHOOTREPORTTYPE 
 requestBody.SetReportName(&reportName) 
 select := []string {
-	"EventDateTime",
-	"TotalActiveConnectionCountAvg",
-	"GroupColumn",
+	"CloudPcId",
+	"ManagedDeviceName",
+	"UserPrincipalName",
+	"UsageInsight",
+	"CurrentSize",
+	"CurrentCPU",
+	"CurrentRamInGB",
+	"CurrentDiskInGB",
+	"RecommendedSize",
+	"RecommendedCPU",
+	"RecommendedRamInGB",
+	"RecommendedDiskInGB",
+	"ProvisionPolicyName",
+	"RoundTripTimeInMsAvg",
+	"AvailableBandwidthInMbpsAvg",
 }
 requestBody.SetSelect(select)
-filter := "(TimeRange eq 'Last 7 days') and (PolicyNameParam eq '') and (RegionParam eq '') and (UserSettingNameParam eq '') and (ServicePlanTypeParam eq 'Enterprise') and (ServicePlanNameParam eq '') and (OSBuildVersionParam eq '') and (AADJoinTypeParam eq '') and (ImageNameParam eq '') and (GatewayRegionParam eq '') and (ClientOSParam eq '') and (ClientTypeParam eq '') and (TransportTypeParam eq '') and (CloudPCEndpointCountryRegionParam eq '') and (CloudPCEndpointStateParam eq '') and (CloudPCEndpointCityParam eq '')"
-requestBody.SetFilter(&filter) 
-top := int32(1000)
-requestBody.SetTop(&top) 
+search := ""
+requestBody.SetSearch(&search) 
 skip := int32(0)
 requestBody.SetSkip(&skip) 
-groupBy := []string {
-	"GatewayRegion",
-}
-requestBody.SetGroupBy(groupBy)
+top := int32(50)
+requestBody.SetTop(&top) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 graphClient.DeviceManagement().VirtualEndpoint().Reports().RetrieveCloudPcTroubleshootReports().Post(context.Background(), requestBody, nil)
