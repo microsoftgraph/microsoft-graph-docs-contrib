@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "ca53518b-160e-49e4-b0c8-edcda5b76bc3",
+          "ApiChange": "Member",
+          "ChangedApiName": "australiaNewZealand",
+          "ChangeType": "Addition",
+          "Description": "Added the `australiaNewZealand` member to the **cloudPcGeographicLocationType** enumeration.",
+          "Target": "cloudPcGeographicLocationType"
+        }
+      ],
+      "Id": "ca53518b-160e-49e4-b0c8-edcda5b76bc3",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-05-10T02:34:08.9033155Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c2c26a46-94e4-4747-a731-042b7a546a7d",
           "ApiChange": "Property",
           "ChangedApiName": "availabilityZoneRestricted",
