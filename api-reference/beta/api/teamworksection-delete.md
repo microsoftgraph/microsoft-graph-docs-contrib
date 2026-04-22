@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Delete a user-defined [section](../resources/teamworksection.md) from a user's [teamwork](../resources/userteamwork.md). System-defined sections can't be deleted.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

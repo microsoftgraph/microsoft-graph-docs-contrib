@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get the list of [items](../resources/teamworksectionitem.md) in a [section](../resources/teamworksection.md) of a user's [teamwork](../resources/userteamwork.md).
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
