@@ -100,7 +100,6 @@ GET https://graph.microsoft.com/v1.0/admin/people/profileSources(sourceId='bambo
 
 ---
 
-
 ### Response
 
 The following example shows the response.

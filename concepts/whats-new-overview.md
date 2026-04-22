@@ -247,9 +247,10 @@ Added the [ownerlessGroupPolicy](/graph/api/resources/ownerlessgrouppolicy?view=
 
 ### Identity and access | Governance
 
-Use the **administrationScopeTargets** relationship on the [workflowBase](/graph/api/resources/identitygovernance-workflowbase), [workflow](/graph/api/resources/identitygovernance-workflow), and [workflowVersion](/graph/api/resources/identitygovernance-workflowversion) resources to specify the [administrative units](/graph/api/resources/administrativeunit) in the scope of a lifecycle workflow.
+Use the **administrationScopeTargets** relationship on the [workflowBase](/graph/api/resources/identitygovernance-workflowbase?view=graph-rest-beta&preserve-view=true), [workflow](/graph/api/resources/identitygovernance-workflow?view=graph-rest-beta&preserve-view=true), and [workflowVersion](/graph/api/resources/identitygovernance-workflowversion?view=graph-rest-beta&preserve-view=true) resources to specify the [administrative units](/graph/api/resources/administrativeunit?view=graph-rest-beta&preserve-view=true) in the scope of a lifecycle workflow.
 - Added **privilegeLevel** as a property on [accessPackageCatalog](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta&preserve-view=true). This value represents the privilege level of the access package catalogs.
 - Added the [targetAgentIdentitySponsorsOrOwners](/graph/api/resources/targetagentidentitysponsorsorowners?view=graph-rest-beta&preserve-view=true) resource type that defines the sponsors or owners of a specific agent identity.
+- Added the [cancelProcessing](/graph/api/identitygovernance-workflow-cancelprocessing?view=graph-rest-beta&preserve-view=true) method to the [workflow](/graph/api/resources/identitygovernance-workflow?view=graph-rest-beta&preserve-view=true) resource to cancel workflow runs that are currently in progress or queued.
 
 ### Identity and access | Network access
 

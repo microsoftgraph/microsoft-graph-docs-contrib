@@ -57,11 +57,18 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-itemactivity-v1" } -->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/drives/b!kjtJnMGCeEeNkZsY18PtOiNjCV0Z9s9Fqyly8jKvPEB2kal9T5pOT5y7TXClirlE/items/01BYE5RZZ3CIHERNM6RZELODVGWI5T4B76/activities
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-itemactivity-v1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

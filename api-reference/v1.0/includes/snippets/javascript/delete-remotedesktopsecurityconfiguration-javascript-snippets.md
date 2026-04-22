@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-await client.api('/servicePrincipals/00af5dfb-85da-4b41-a677-0c6b86dd34f8/remoteDesktopSecurityConfiguration')
+await client.api('/servicePrincipals/00af5dfb-85da-4b41-a677-0c6b86dd34f8/remoteDesktopSecurityConfiguration/$ref')
 	.delete();
 
 ```
