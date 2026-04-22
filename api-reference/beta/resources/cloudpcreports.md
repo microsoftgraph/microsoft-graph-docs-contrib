@@ -60,11 +60,44 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 
 | Member                        | Description       |
 | :---------------------------- | :---------------- |
-| troubleshootDetailsReport     | The daily Cloud PC troubleshooting details, including performance issues, network issues, and reliability issues.|
-| troubleshootTrendCountReport  | The aggregated report that shows the number and trend of issues per tenant.|
-| troubleshootRegionalReport    | The daily regional aggregated report that shows network quality issues by region, including round-trip time issues, connection quality issues, and reliability issues.|
-| unknownFutureValue            | Evolvable enumeration sentinel value. Don't use.|
-| troubleshootIssueCountReport  | The aggregated report over 28 days that shows the number of performance issues, network issues, and reliability issues.|
+| troubleshootTenantGlobalFilterReport | The tenant-level global filter report for troubleshooting. |
+| troubleshootTenantNetworkTrendReport | The tenant-level network round-trip time trend report. |
+| troubleshootTenantNetworkAggregatedReport | The tenant-level aggregated network round-trip time report. |
+| troubleshootTenantConnectionFailureRateTrendReport | The tenant-level connection failure rate trend report. |
+| troubleshootTenantConnectionFailureRateAggregatedReport | The tenant-level aggregated connection failure rate report. |
+| troubleshootTenantCloudPCHealthTrendReport | The tenant-level Cloud PC health trend report. |
+| troubleshootTenantCloudPCHealthAggregatedReport | The tenant-level aggregated Cloud PC health report. |
+| troubleshootTenantActiveConnectionCountTrendReport | The tenant-level active connection count trend report. |
+| troubleshootTenantActiveConnectionCountAggregatedReport | The tenant-level aggregated active connection count report. |
+| troubleshootTenantMTTFTrendReport | The tenant-level mean time to failure (MTTF) trend report. |
+| troubleshootTenantMTTFAggregatedReport | The tenant-level aggregated mean time to failure (MTTF) report. |
+| troubleshootTenantMTTRTrendReport | The tenant-level mean time to repair (MTTR) trend report. |
+| troubleshootTenantMTTRAggregatedReport | The tenant-level aggregated mean time to repair (MTTR) report. |
+| troubleshootTenantRemoteSignInTimeTrendReport | The tenant-level remote sign-in time trend report. |
+| troubleshootTenantRemoteSignInTimeAggregatedReport | The tenant-level aggregated remote sign-in time report. |
+| troubleshootEventsOfViewDataTableReport | The events view data table report for troubleshooting. |
+| troubleshootTenantEnvironmentMetricsOfViewDataTableReport | The tenant-level environment metrics view data table report. |
+| troubleshootCloudPCMetricsOfViewDataTableReport | The Cloud PC-level metrics view data table report. |
+| troubleshootConfigurationConnectionCountTrendV1Report | The configuration-level connection count trend report (v1). |
+| troubleshootConfigurationTotalConnectionCountBarV1Report | The configuration-level total connection count bar report (v1). |
+| troubleshootConfigurationGlobalFilterV1Report | The configuration-level global filter report (v1). |
+| troubleshootConnectionConfigurationOfViewDataTableV1Report | The connection configuration view data table report (v1). |
+| troubleshootTenantConnectedDevicesOfViewDataTableReport | The tenant-level connected devices view data table report. |
+| troubleshootEnvironmentOverviewOfViewDataTableReport | The environment overview view data table report. |
+| troubleshootCloudPCNetworkTrendReport | The Cloud PC-level network trend report. |
+| troubleshootCloudPCNetworkAggregatedReport | The Cloud PC-level aggregated network report. |
+| troubleshootCloudPCErrorTrendReport | The Cloud PC-level error trend report. |
+| troubleshootCloudPCErrorAggregatedReport | The Cloud PC-level aggregated error report. |
+| troubleshootCloudPCDurationTrendReport | The Cloud PC-level session duration trend report. |
+| troubleshootCloudPCDurationAggregatedReport | The Cloud PC-level aggregated session duration report. |
+| troubleshootCloudPCRemoteSignInTimeTrendReport | The Cloud PC-level remote sign-in time trend report. |
+| troubleshootCloudPCRemoteSignInTimeAggregatedReport | The Cloud PC-level aggregated remote sign-in time report. |
+| troubleshootCloudPCListReport | The Cloud PC list report for troubleshooting. |
+| troubleshootCloudPCHealthTrendReport | The Cloud PC-level health trend report. |
+| troubleshootMatchedUserReport | The report of users matched to a Cloud PC for troubleshooting. |
+| troubleshootMatchedCloudPCReport | The report of Cloud PCs matched to a user for troubleshooting. |
+| troubleshootUserListReport | The user list report for troubleshooting. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 
