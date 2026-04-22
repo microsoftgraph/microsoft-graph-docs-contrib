@@ -97,7 +97,6 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 | troubleshootMatchedUserReport | The report of users matched to a Cloud PC for troubleshooting. |
 | troubleshootMatchedCloudPCReport | The report of Cloud PCs matched to a user for troubleshooting. |
 | troubleshootUserListReport | The user list report for troubleshooting. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 
