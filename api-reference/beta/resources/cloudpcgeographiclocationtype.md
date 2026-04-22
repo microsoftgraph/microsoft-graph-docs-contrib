@@ -38,4 +38,4 @@ This is an evolvable enumeration. Use the `Prefer: include-unknown-enum-members`
 | usGovernment       | The region belongs to the geographic location: US government.                    |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use.                                 |
 | mexico             | The region belongs to the geographic location: Mexico.                           |
-| australiaNewZealand | The region belongs to the geographic location: Australia & New Zealand (ANZ)    |
+| australiaNewZealand | The region belongs to the geographic location: Australia & New Zealand (ANZ).   |
