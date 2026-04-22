@@ -180,7 +180,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Retrieve the count of deleted user objects and order the results by the deletedDateTime property
+### Example 2: Retrieve the count of deleted group objects and order the results by the deletedDateTime property
 
 #### Request
 # [HTTP](#tab/http)
