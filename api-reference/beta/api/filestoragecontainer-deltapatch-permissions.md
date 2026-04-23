@@ -1,14 +1,14 @@
 ---
-title: "Create permissions in bulk"
-description: "Add multiple permissions to an existing fileStorageContainer using delta patch."
-author: "rkoppolu"
+title: "Delta patch permissions"
+description: "Use delta patch to bulk manage permissions on a fileStorageContainer."
+author: "RushwantKoppolu"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
 ms.date: 04/22/2026
 ---
 
-# Create permissions in bulk
+# Delta patch permissions
 
 Namespace: microsoft.graph
 
@@ -56,7 +56,7 @@ In the request body, supply a JSON object with the following properties.
 |Name|Type|Description|
 |:---|:---|:---|
 |@context|String|Must be set to `#$delta` to signal a delta patch operation. Required.|
-|value|[permission](../resources/permission.md) collection|A collection of up to 10 permission objects to create. Required.|
+|value|[permission](../resources/permission.md) collection|A collection of up to 10 permission objects to process. Required.|
 
 Each [permission](../resources/permission.md) object in the **value** collection supports the following properties.
 
@@ -67,7 +67,7 @@ Each [permission](../resources/permission.md) object in the **value** collection
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [permission](../resources/permission.md) objects in the response body. Successfully created permissions include the permission object. Failed items include a `@Core.DataModificationException` annotation with error details.
+If successful, this method returns a `200 OK` response code and a collection of [permission](../resources/permission.md) objects in the response body. Successfully processed permissions include the permission object. Failed items include a `@Core.DataModificationException` annotation with error details.
 
 ## Examples
 
@@ -77,7 +77,7 @@ The following example shows how to add three permissions to a container in a sin
 
 <!-- {
   "blockType": "request",
-  "name": "create_permissions_bulk"
+  "name": "deltapatch_permissions"
 }
 -->
 ```http
