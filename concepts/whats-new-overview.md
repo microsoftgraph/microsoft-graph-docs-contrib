@@ -86,6 +86,19 @@ Added the **blueprintId** and **source** agent-descriptive properties to [agentR
 
 Use the **height** and **width** query parameters on the [driveItem content conversion API](/graph/api/driveitem-get-content-format?view=graph-rest-beta&preserve-view=true) to download a file in another format when `format=jpg`.
 
+### Mail
+
+Introduced the new notes API that enables users to create and manage simple notes in their *Notes* folder. Notes support text content with optional inline image attachments, and are suitable for quick capture scenarios. Use the [note](/graph/api/resources/note?view=graph-rest-beta&preserve-view=true) resource and the following APIs:
+- [List notes](/graph/api/user-list-notes?view=graph-rest-beta&preserve-view=true) in the user's *Notes* folder.
+- [Create a note](/graph/api/user-post-notes?view=graph-rest-beta&preserve-view=true) in the user's *Notes* folder.
+- [Get a note](/graph/api/note-get?view=graph-rest-beta&preserve-view=true).
+- [Update a note](/graph/api/note-update?view=graph-rest-beta&preserve-view=true).
+- [Delete a note](/graph/api/note-delete?view=graph-rest-beta&preserve-view=true).
+- [Get delta](/graph/api/note-delta?view=graph-rest-beta&preserve-view=true) to track changes to notes.
+- [List attachments](/graph/api/note-list-attachments?view=graph-rest-beta&preserve-view=true) for a note.
+- [Create an attachment](/graph/api/note-post-attachments?view=graph-rest-beta&preserve-view=true) on a note.
+- [Delete an attachment](/graph/api/attachment-delete?view=graph-rest-beta&preserve-view=true) from a note.
+
 ### People and workplace intelligence | Profile
 
 Use the **activities**, **awards**, and **fieldsOfStudy** properties on [educationalActivityDetail](/graph/api/resources/educationalactivitydetail?view=graph-rest-beta&preserve-view=true) to get or set collections of activities, awards, or fields of study.
@@ -249,9 +262,10 @@ Added the [ownerlessGroupPolicy](/graph/api/resources/ownerlessgrouppolicy?view=
 
 ### Identity and access | Governance
 
-Use the **administrationScopeTargets** relationship on the [workflowBase](/graph/api/resources/identitygovernance-workflowbase), [workflow](/graph/api/resources/identitygovernance-workflow), and [workflowVersion](/graph/api/resources/identitygovernance-workflowversion) resources to specify the [administrative units](/graph/api/resources/administrativeunit) in the scope of a lifecycle workflow.
+Use the **administrationScopeTargets** relationship on the [workflowBase](/graph/api/resources/identitygovernance-workflowbase?view=graph-rest-beta&preserve-view=true), [workflow](/graph/api/resources/identitygovernance-workflow?view=graph-rest-beta&preserve-view=true), and [workflowVersion](/graph/api/resources/identitygovernance-workflowversion?view=graph-rest-beta&preserve-view=true) resources to specify the [administrative units](/graph/api/resources/administrativeunit?view=graph-rest-beta&preserve-view=true) in the scope of a lifecycle workflow.
 - Added **privilegeLevel** as a property on [accessPackageCatalog](/graph/api/resources/accesspackagecatalog?view=graph-rest-beta&preserve-view=true). This value represents the privilege level of the access package catalogs.
 - Added the [targetAgentIdentitySponsorsOrOwners](/graph/api/resources/targetagentidentitysponsorsorowners?view=graph-rest-beta&preserve-view=true) resource type that defines the sponsors or owners of a specific agent identity.
+- Added the [cancelProcessing](/graph/api/identitygovernance-workflow-cancelprocessing?view=graph-rest-beta&preserve-view=true) method to the [workflow](/graph/api/resources/identitygovernance-workflow?view=graph-rest-beta&preserve-view=true) resource to cancel workflow runs that are currently in progress or queued.
 
 ### Identity and access | Network access
 

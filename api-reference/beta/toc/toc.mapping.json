@@ -2445,6 +2445,7 @@
         "mailFolderOperation",
         "mailSearchFolder",
         "messageRule",
+        "note",
         "exchangeMessageTrace",
         "userConfiguration"
       ],
@@ -2763,7 +2764,7 @@
           ]
         },
         {
-          "name": "Microsoft 365 monitoring reports (preview)",
+          "name": "Monitoring reports (preview)",
           "overview": "../../resources/m365-monitoring-api-overview.md",
           "resources": [
             "serviceActivity"

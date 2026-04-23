@@ -404,18 +404,6 @@ items:
         href: ../../api/auditlogroot-list-signups.md
       - name: Get
         href: ../../api/selfservicesignup-get.md
-    - name: Sign in events activity
-      items:
-      - name: Sign in events activity
-        href: ../../resources/signineventsactivity.md
-      - name: List
-        href: ../../api/auditlogroot-list-signineventssummary.md
-    - name: Sign in events app activity
-      items:
-      - name: Sign in events app activity
-        href: ../../resources/signineventsappactivity.md
-      - name: List
-        href: ../../api/auditlogroot-list-signineventsappsummary.md
     - name: Sign-in
       items:
       - name: Sign-in
@@ -430,9 +418,21 @@ items:
         href: ../../api/signin-confirmsafe.md
       - name: Dismiss
         href: ../../api/signin-dismiss.md
-    - name: Summarized sign in
+    - name: Sign-in events activity
       items:
-      - name: Summarized sign in
+      - name: Sign-in events activity
+        href: ../../resources/signineventsactivity.md
+      - name: List
+        href: ../../api/auditlogroot-list-signineventssummary.md
+    - name: Sign-in events app activity
+      items:
+      - name: Sign-in events app activity
+        href: ../../resources/signineventsappactivity.md
+      - name: List
+        href: ../../api/auditlogroot-list-signineventsappsummary.md
+    - name: Summarized sign-in
+      items:
+      - name: Summarized sign-in
         href: ../../resources/summarizedsignin.md
       - name: Get summarized MSI sign-ins
         href: ../../api/auditlogroot-getsummarizedmsisignins.md
@@ -440,7 +440,7 @@ items:
         href: ../../api/auditlogroot-getsummarizednoninteractivesignins.md
       - name: Get summarized service principal sign-ins
         href: ../../api/auditlogroot-getsummarizedserviceprincipalsignins.md
-- name: Microsoft 365 monitoring reports (preview)
+- name: Monitoring reports (preview)
   items:
   - name: Overview
     href: ../../resources/m365-monitoring-api-overview.md

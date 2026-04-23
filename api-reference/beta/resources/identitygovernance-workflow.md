@@ -32,6 +32,7 @@ Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 |[Activate](../api/identitygovernance-workflow-activate.md)|None|Run a workflow on-demand.|
 |[Activate with scope](../api/identitygovernance-workflow-activatewithscope.md)|None|Run a workflow on-demand with a specific scope.|
 |[List users in scope](../api/workflow-list-executionscope.md)|[microsoft.graph.user](../resources/user.md) collection|Get a list of users who are in the scope of the execution conditions of a [workflow](../resources/identitygovernance-workflow.md) object.|
+|[Cancel workflow processing](../api/identitygovernance-workflow-cancelprocessing.md)|None|Cancel workflow runs that are currently in progress or queued.|
 |[preview task failures](../api/identitygovernance-workflow-previewtaskfailures.md)|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|Returns a list of the [tasks](../resources/identitygovernance-task.md) configured in a workflow to check for configuration errors.|
 |[preview workflow](../api/identitygovernance-workflow-previewworkflow.md)|None|Run a workflow in preview mode for selected directory objects without affecting production users.|
 |**Deleted workflows**|:---|:---|

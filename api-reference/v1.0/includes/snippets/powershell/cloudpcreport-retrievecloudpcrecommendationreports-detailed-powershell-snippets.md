@@ -24,6 +24,6 @@ skip = 0
 top = 15
 }
 
-Get-MgDeviceManagementVirtualEndpointReportCloudPcRecommendationReport -Body $params
+Get-MgDeviceManagementVirtualEndpointReportCloudPcRecommendationReport -BodyParameter $params
 
 ```

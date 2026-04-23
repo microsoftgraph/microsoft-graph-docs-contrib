@@ -39,6 +39,7 @@ Depending on the resource that the extension was created in and the permission t
 | [group event](../resources/event.md) | Group.ReadWrite.All | Not supported. | Not supported. |
 | [group post](../resources/post.md) | Group.ReadWrite.All | Not supported. | Group.ReadWrite.All |
 | [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
+| [note](../resources/note.md) | ShortNotes.ReadWrite | ShortNotes.ReadWrite | ShortNotes.ReadWrite.All |
 | [organization](../resources/organization.md) | Organization.ReadWrite.All | Not supported. | Organization.ReadWrite.All |
 | [personal contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [site](../resources/site.md) | Sites.ReadWrite.All | Not supported. | Not supported. |
@@ -62,6 +63,7 @@ PATCH /groups/{groupId}/extensions/{extensionId}
 PATCH /groups/{groupId}/events/{eventId}/extensions/{extensionId}
 PATCH /groups/{groupId}/threads/{threadId}/posts/{postId}/extensions/{extensionId}
 PATCH /users/{userId|userPrincipalName}/messages/{messageId}/extensions/{extensionId}
+PATCH /users/{userId|userPrincipalName}/notes/{noteId}/extensions/{extensionId}
 PATCH /organization/{organizationId}/extensions/{extensionId}
 PATCH /users/{userId|userPrincipalName}/contacts/{contactId}/extensions/{extensionId}
 PATCH /users/{userId|userPrincipalName}/extensions/{extensionId}

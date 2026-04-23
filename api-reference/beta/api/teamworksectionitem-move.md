@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Move an [item](../resources/teamworksectionitem.md) from one user-defined [section](../resources/teamworksection.md) to another user-defined section in a user's [teamwork](../resources/userteamwork.md). Each item can belong to only one section at a time. This action removes the item from its current section and adds it to the target section. Use this action instead of [add](teamworksection-post-items.md) when the item is already in a user-defined section.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -74,6 +74,7 @@ The following errors are possible.
 
 The following example shows a request to move a chat from the "Favorites" section to the "Project Alpha" section.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "teamworksectionitem_move",
@@ -88,6 +89,32 @@ If-Match: "1742515200"
   "targetSectionId": "c3d4e5f6-a7b8-9012-cdef-123456789012"
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/teamworksectionitem-move-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/teamworksectionitem-move-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/teamworksectionitem-move-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/teamworksectionitem-move-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/teamworksectionitem-move-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/teamworksectionitem-move-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

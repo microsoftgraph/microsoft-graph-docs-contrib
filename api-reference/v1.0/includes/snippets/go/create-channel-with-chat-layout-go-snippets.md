@@ -1,0 +1,34 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```go
+
+
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+requestBody := graphmodels.NewChannel()
+displayName := "Project Collaboration"
+requestBody.SetDisplayName(&displayName) 
+description := "Discussion space for project team collaboration"
+requestBody.SetDescription(&description) 
+membershipType := graphmodels.STANDARD_CHANNELMEMBERSHIPTYPE 
+requestBody.SetMembershipType(&membershipType) 
+additionalData := map[string]interface{}{
+	"layoutType" : "chat", 
+}
+requestBody.SetAdditionalData(additionalData)
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+channels, err := graphClient.Teams().ByTeamId("team-id").Channels().Post(context.Background(), requestBody, nil)
+
+
+```
