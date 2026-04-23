@@ -2,7 +2,7 @@
 title: "cloudPcReports: retrieveCloudPcTroubleshootReports"
 description: "Get troubleshooting reports for Cloud PCs."
 author: "zzkkcc"
-ms.date: 04/03/2026
+ms.date: 04/23/2026
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
