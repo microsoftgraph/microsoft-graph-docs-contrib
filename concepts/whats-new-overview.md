@@ -72,7 +72,7 @@ Added the **deprecationDate** property to the [applicationTemplate](/graph/api/r
 
 ### Device and app management | Cloud PC
 
-Replaced the `reportName` values for the [cloudPcReports: retrieveCloudPcTroubleshootReports](/graph/api/cloudpcreports-retrievecloudpctroubleshootreports?view=graph-rest-beta&preserve-view=true) action. The previous values (`troubleshootDetailsReport`, `troubleshootTrendCountReport`, `troubleshootRegionalReport`) are removed and replaced with a new set of values, including `troubleshootTenant*`, `troubleshootConfiguration*`, `troubleshootCloudPC*`, and related report types for troubleshooting Cloud PC issues.
+Added the [cloudPcReports: retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpcmonitoringreports?view=graph-rest-beta&preserve-view=true) action to get monitoring reports for Cloud PCs, including tenant-level, configuration, user and device, and view data table reports. Use the **cloudPCMonitoringReportType** enumeration to specify the report type.
 
 ### Identity and access | Governance
 
