@@ -26,6 +26,7 @@ The following user resources are supported:
 - [event](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md)
+- [note](../resources/note.md)
 - [Outlook task](../resources/outlooktask.md)
 - [Outlook task folder](../resources/outlooktaskfolder.md)
 
@@ -54,6 +55,7 @@ Depending on the resource you're creating the extended property in and the permi
 | group [post](../resources/post.md) | Group.ReadWrite.All | Not supported | Not supported |
 | [mailFolder](../resources/mailfolder.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
 | [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
+| [note](../resources/note.md) | ShortNotes.ReadWrite | ShortNotes.ReadWrite | ShortNotes.ReadWrite |
 | [Outlook task](../resources/outlooktask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 | [Outlook task folder](../resources/outlooktaskfolder.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
 
@@ -91,6 +93,9 @@ POST /users/{id|userPrincipalName}/contacts
 
 POST /me/contactFolders
 POST /users/{id|userPrincipalName}/contactFolders
+
+POST /me/notes
+POST /users/{id|userPrincipalName}/notes
 
 POST /me/outlook/tasks
 POST /users/{id|userPrincipalName}/outlook/tasks
@@ -141,6 +146,9 @@ PATCH /users/{id|userPrincipalName}/contacts/{id}
 
 PATCH /me/contactFolders/{id}
 PATCH /users/{id|userPrincipalName}/contactFolders/{id}
+
+PATCH /me/notes/{id}
+PATCH /users/{id|userPrincipalName}/notes/{id}
 
 PATCH /me/outlook/tasks/{id}
 PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}

@@ -22,8 +22,8 @@ Inherits from [aiInteractionEntity](../resources/aiinteractionentity.md).
 
 | Property    | Type   | Description                                                                                                       |
 | :---------- | :----- | :---------------------------------------------------------------------------------------------------------------- |
-| blueprintId | String | Identifier of the parent [agent blueprint](../resources/agentIdentityBlueprint.md) that defines the identity and configuration of the agent. |
-| identifier  | String | The unique identifier of the AI agent. Inherited from [aiInteractionEntity](../resources/aiinteractionentity.md). |
+| blueprintId | String | Identifier of the parent [agent blueprint](../resources/agentidentityblueprint.md) that defines the identity and configuration of the agent. This identifier is provided by Microsoft Entra. |
+| identifier  | String | The unique identifier of the AI agent. Inherited from [aiInteractionEntity](../resources/aiinteractionentity.md). This identifier is provided by the developer. If building on Microsoft Entra Agent ID, use the [agentIdentity](../resources/agentidentity.md) ID. |
 | name        | String | The display name of the AI agent. Inherited from [aiInteractionEntity](../resources/aiinteractionentity.md).      |
 | version     | String | The version of the AI agent used. Inherited from [aiInteractionEntity](../resources/aiinteractionentity.md).      |
 

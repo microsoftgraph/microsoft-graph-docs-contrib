@@ -126,6 +126,8 @@ The [agentUser](../resources/agentuser.md) resource inherits from this resource.
 | [Create rule](../api/mailfolder-post-messagerules.md) | [messageRule](messagerule.md) | Create a messageRule object by specifying a set of conditions and actions. |
 | [Send mail](../api/user-sendmail.md) | None | Send the message specified in the request body. |
 | [Get mail tips](../api/user-getmailtips.md) | [mailTips](mailtips.md) collection | Return the MailTips of one or more recipients as available to the signed-in user. |
+|[List notes](../api/user-list-notes.md)|[note](../resources/note.md) collection|Get a list of the [note](../resources/note.md) objects in the user's *Notes* folder.|
+|[Create note](../api/user-post-notes.md)|[note](../resources/note.md)|Create a new [note](../resources/note.md) in the user's *Notes* folder.|
 | **Notes** |||
 | [List notebooks](../api/onenote-list-notebooks.md) | [notebook](notebook.md) collection | Retrieve a list of notebook objects. |
 | [Create notebook](../api/onenote-post-notebooks.md) | [notebook](notebook.md) | Create a new OneNote notebook. |
@@ -223,7 +225,7 @@ The [agentUser](../resources/agentuser.md) resource inherits from this resource.
 | employeeId | String | The employee identifier assigned to the user by the organization. The maximum length is 16 characters.<br><br>Supports `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 |employeeOrgData|[employeeOrgData](employeeorgdata.md) |Represents organization data (for example, division and costCenter) associated with a user. <br><br>Supports `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`).|
 | employeeType | String | Captures enterprise worker type. For example, `Employee`, `Contractor`, `Consultant`, or `Vendor`. Supports `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`, `startsWith`).|
-| externalUserConvertedOn | DateTimeOffset | The date and time when the user was converted from external to internal.
+| externalUserConvertedOn | DateTimeOffset | The date and time when the user was converted from external to internal. |
 | externalUserState | String | For an external user invited to the tenant using the [invitation API](../api/invitation-post.md), this property represents the invited user's invitation status. For invited users, the state can be `PendingAcceptance` or `Accepted`, or `null` for all other users. <br><br>Supports `$filter` (`eq`, `ne`, `not` , `in`). |
 | externalUserStateChangeDateTime | String | Shows the timestamp for the latest change to the externalUserState property. <br><br>Supports `$filter` (`eq`, `ne`, `not` , `in`). |
 | faxNumber | String | The fax number of the user. <br><br>Supports `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values). |
@@ -381,6 +383,7 @@ For example, Cameron is an administrator of a directory for an elementary school
 |memberOf|[directoryObject](directoryobject.md) collection|The groups, directory roles, and administrative units that the user is a member of. Read-only. Nullable. Supports `$expand`. |
 |joinedTeams|[team](team.md) collection|The Microsoft Teams teams the user is a member of. Read-only. Nullable.|
 |messages|[message](message.md) collection|The messages in a mailbox or folder. Read-only. Nullable.|
+|notes|[note](note.md) collection|The notes in the user's *Notes* folder. Read-only. Nullable.|
 |onenote|[onenote](onenote.md)| Read-only.|
 |onlineMeetings|[onlineMeeting](onlinemeeting.md) collection| Information about a meeting, including the URL used to join a meeting, the attendees list, and the description. |
 | onPremisesSyncBehavior | [onPremisesSyncBehavior](../resources/onpremisessyncbehavior.md)  | Indicates the state of synchronization for a user between the cloud and on-premises Active Directory. Supports `$filter` only with advanced query capabilities, for example, `$filter=onPremisesSyncBehavior/isCloudManaged eq true&$count=true`.|

@@ -30,6 +30,7 @@ The following user resources are supported:
 - [event](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md)
+- [note](../resources/note.md)
 - [Outlook task](../resources/outlooktask.md)
 - [Outlook task folder](../resources/outlooktaskfolder.md)
 
@@ -58,6 +59,7 @@ Depending on the resource you're getting the extended property from and the perm
 | group [post](../resources/post.md) | Group.Read.All | Not supported | Group.Read.All |
 | [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+| [note](../resources/note.md) | ShortNotes.Read | ShortNotes.Read | ShortNotes.Read |
 | [Outlook task](../resources/outlooktask.md) | Tasks.Read | Tasks.Read | Not supported |
 | [Outlook task folder](../resources/outlooktaskfolder.md) | Tasks.Read | Tasks.Read | Not supported |
 
@@ -116,6 +118,15 @@ Get a **contactFolder** instance:
 ```http
 GET /me/contactfolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+Get a **note** instance:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/notes/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/notes/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]

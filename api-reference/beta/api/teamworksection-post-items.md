@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Add an [item](../resources/teamworksectionitem.md), such as a chat, channel, meeting, or community, to a user-defined [section](../resources/teamworksection.md) in a user's [teamwork](../resources/userteamwork.md). Each item can belong to only one section at a time. You can only add items that are currently in a system-defined section. If the item is already in another user-defined section, use the [move](teamworksectionitem-move.md) action to relocate it.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

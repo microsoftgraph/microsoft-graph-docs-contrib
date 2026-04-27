@@ -2,8 +2,8 @@
 title: "userDataSecurityAndGovernance: processContent"
 toc.title: "userDataSecurityAndGovernance: processContent"
 description: "Process content against data protection policies in the context of the current, or specified, user."
-author: "kylemar"
-ms.date: 02/06/2026
+author: "reezaali149"
+ms.date: 04/22/2026
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: apiPageType
@@ -71,12 +71,12 @@ If successful, this action returns a `200 OK`  response code and a [processConte
 
 ## Examples
 
-### Example 1: Enterprise AI app
+### Example 1: Enterprise app
 
 #### Request
 
-The following example shows a request.
-# [HTTP](#tab/http)
+The following example shows a request from an enterprise app, which might be a non-AI and AI app. The text that you send using `data` can be any text from your app. If your app is an AI app, you would send the user's prompt.
+
 <!-- {
   "blockType": "request",
   "name": "userdatasecurityandgovernance.processcontent_1"
@@ -133,30 +133,6 @@ Client-Request-Id: 50dc805c-3af4-42d9-ad16-a746235cc736
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/userdatasecurityandgovernanceprocesscontent-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/userdatasecurityandgovernanceprocesscontent-1-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/userdatasecurityandgovernanceprocesscontent-1-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/userdatasecurityandgovernanceprocesscontent-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/userdatasecurityandgovernanceprocesscontent-1-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/userdatasecurityandgovernanceprocesscontent-1-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 #### Response
@@ -177,29 +153,123 @@ Client-Request-Id: 50dc805c-3af4-42d9-ad16-a746235cc736
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.processContentResponse",
   "protectionScopeState": "notModified",
-   "policyActions": [
+   "policyActions": [],
+  "processingErrors": []
+}
+```
+
+### Example 2: AI Agent
+
+#### Request
+
+The following example shows a request sent from an AI agent. In the request, notice that there's an `agents` array which is of type `aiAgentInfo`. In this example, `data` is used to send the user's prompt.
+
+<!-- {
+  "blockType": "request",
+  "name": "userdatasecurityandgovernance.processcontent_4"
+}
+-->
+```http
+POST https://graph.microsoft.com/beta/users/{5def8f26-aff8-4db6-a08c-0fcf8f1aa2ba}/dataSecurityAndGovernance/processContent
+Content-Type: application/json
+
+{
+    "contentToProcess": {
+      "contentEntries": [
+        {
+          "@odata.type": "microsoft.graph.processConversationMetadata",
+          "identifier": "42837765-85c9-4a28-a165-27b6aaa5f635",
+          "content": {
+            "@odata.type": "microsoft.graph.textContent",
+            "data": "For application 123456789, Write an acceptance letter for Alex Wilber with Credit card number 0000111122223333, ssn: 000-11-2222 at One Microsoft Way, Redmond, WA 98052"
+          },
+          "agents": [
+            {
+              "@odata.type": "microsoft.graph.aiAgentInfo",
+              "blueprintId": "c84571c6-5ef3-4af7-aed2-0491cfd362a0",
+              "identifier": "89515a70-a236-43be-b977-3ff0b454f853",
+              "name": "Demo Agent",
+              "version": "1.0"
+            }
+          ],
+          "name":"PC Purview API Explorer message",
+          "correlationId": "1cd5e33a-c78f-46e4-a242-74b0ef910486",
+          "sequenceNumber": 0,
+             "isTruncated": false,
+             "createdDateTime": "2026-04-08T20:52:08",
+             "modifiedDateTime": "2026-04-08T20:52:08"
+          }
+       ],
+       "activityMetadata": { 
+          "activity": "uploadText"
+       },
+       "deviceMetadata": {
+          "operatingSystemSpecifications": {
+             "operatingSystemPlatform": "Windows 11",
+             "operatingSystemVersion": "10.0.26200.0" 
+          },
+          "ipAddress": "127.0.0.1"
+       },
+       "protectedAppMetadata": {
+          "name": "PC Purview API Explorer",
+          "version": "0.2",
+          "applicationLocation":{
+             "@odata.type": "microsoft.graph.policyLocationApplication",
+             "value": "83ef198a-0396-4893-9d4f-d36efbffc8bd"
+          }
+       },
+       "integratedAppMetadata": {
+          "name": "PC Purview API Explorer",
+          "version": "0.1" 
+       }
+    }
+}
+
+```
+
+---
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.processContentResponse"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.processContentResponse",
+  "protectionScopeState": "modified",
+  "policyActions": [
     {
-      "@odata.type": "#microsoft.graph.dlpAction",
-      "action" : "restrictWebGrounding"
+      "@odata.type": "#microsoft.graph.restrictAccessAction",
+      "action": "restrictAccess",
+      "restrictionAction": "block"
     }
   ],
   "processingErrors": []
 }
 ```
 
-### Example 2: Network provider app 
+### Example 3: Network provider app
 
 #### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "userdatasecurityandgovernance.processcontent_2"
 }
 -->
 ```http
-POST https://graph.microsoft.com/v1.0/users/{5def8f26-aff8-4db6-a08c-0fcf8f1aa2ba}/dataSecurityAndGovernance/processContent
+POST https://graph.microsoft.com/beta/users/{5def8f26-aff8-4db6-a08c-0fcf8f1aa2ba}/dataSecurityAndGovernance/processContent
 Content-Type: application/json
 
 {
@@ -245,30 +315,6 @@ Content-Type: application/json
 
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/userdatasecurityandgovernanceprocesscontent-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/userdatasecurityandgovernanceprocesscontent-2-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/userdatasecurityandgovernanceprocesscontent-2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/userdatasecurityandgovernanceprocesscontent-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/userdatasecurityandgovernanceprocesscontent-2-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/userdatasecurityandgovernanceprocesscontent-2-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 #### Response
@@ -299,12 +345,12 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: Network provider app with file content
+### Example 4: Network provider app with file content
 
 #### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "userdatasecurityandgovernance.processcontent_3"
@@ -364,30 +410,6 @@ Content-Type: application/json
 	}
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/userdatasecurityandgovernanceprocesscontent-3-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/userdatasecurityandgovernanceprocesscontent-3-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/userdatasecurityandgovernanceprocesscontent-3-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/userdatasecurityandgovernanceprocesscontent-3-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/userdatasecurityandgovernanceprocesscontent-3-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/userdatasecurityandgovernanceprocesscontent-3-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [section](../resources/teamworksection.md) in a user's [teamwork](../resources/userteamwork.md). For system-defined sections, only the **sortType** property can be updated.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

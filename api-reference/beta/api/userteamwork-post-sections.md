@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Create a new [section](../resources/teamworksection.md) in a user's [teamwork](../resources/userteamwork.md).
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

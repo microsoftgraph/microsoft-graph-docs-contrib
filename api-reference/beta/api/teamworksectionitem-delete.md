@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Remove an [item](../resources/teamworksectionitem.md) from a user-defined [section](../resources/teamworksection.md) in a user's [teamwork](../resources/userteamwork.md). This API doesn't delete the underlying chat, channel, meeting, or community; it only removes the item from the user-defined section. The item is automatically moved back to its default system-defined section.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

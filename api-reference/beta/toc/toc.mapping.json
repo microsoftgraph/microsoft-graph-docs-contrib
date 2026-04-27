@@ -2445,6 +2445,7 @@
         "mailFolderOperation",
         "mailSearchFolder",
         "messageRule",
+        "note",
         "exchangeMessageTrace",
         "userConfiguration"
       ],
