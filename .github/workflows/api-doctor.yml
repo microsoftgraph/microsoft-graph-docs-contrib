@@ -26,7 +26,7 @@ jobs:
     # Also required by Windows
     - run: git config --global core.longpaths true
     - name: Checkout docs repo
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
     - name: Setup .NET
       uses: actions/setup-dotnet@v5
       with:
