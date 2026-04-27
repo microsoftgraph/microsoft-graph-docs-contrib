@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Represents the geographic location where a region is located for Microsoft-hosted network for backup Cloud PCs.
 
-This is an evolvable enumeration. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `mexico`.
+The **cloudPcGeographicLocationType** type is an evolvable enumeration. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `mexico`, `australiaNewZealand`.
 
 ## Members
 
