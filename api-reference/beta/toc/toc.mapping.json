@@ -163,7 +163,7 @@
           ]
         },
         {
-          "name": "Agent user (preview)",
+          "name": "Agent user",
           "resources": [
             "agentUser"
           ]

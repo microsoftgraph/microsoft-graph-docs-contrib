@@ -5,14 +5,12 @@ author: "vimranga"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
-ms.date: 06/23/2025
+ms.date: 4/27/2026
 ---
 
 # Get deleted item (directory object)
 
 Namespace: microsoft.graph
-
-Retrieve the properties of a recently deleted [application](../resources/application.md), [group](../resources/group.md), [servicePrincipal](../resources/serviceprincipal.md), [administrative unit](../resources/administrativeunit.md), or [user](../resources/user.md) object from [deleted items](../resources/directory.md).
 
 Retrieve the properties of a recently deleted directory object from [deleted items](../resources/directory.md). The following types are supported:
 - [administrativeUnit](../resources/administrativeunit.md)
@@ -20,9 +18,12 @@ Retrieve the properties of a recently deleted directory object from [deleted ite
 - [agentIdentityBlueprint](../resources/agentidentityblueprint.md)
 - [agentIdentity](../resources/agentidentity.md)
 - [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md)
+- [agentUser](../resources/agentuser.md)
 - [certificateBasedAuthPki](../resources/certificatebasedauthpki.md)
 - [certificateAuthorityDetail](../resources/certificateauthoritydetail.md)
+- [externalUserProfile](../resources/externaluserprofile.md)
 - [group](../resources/group.md)
+- [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md)
 - [servicePrincipal](../resources/serviceprincipal.md)
 - [user](../resources/user.md)
 
@@ -39,9 +40,12 @@ The following table shows the least privileged permission or permissions require
 | [agentIdentity](../resources/agentidentity.md) | AgentIdentity.Read.All | Not supported. | AgentIdentity.Read.All |
 | [agentIdentityBlueprint](../resources/agentidentityblueprint.md) | AgentIdentityBlueprint.Read.All | Not supported. | AgentIdentityBlueprint.Read.All |
 | [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) | AgentIdentityBlueprintPrincipal.Read.All | Not supported. | AgentIdentityBlueprintPrincipal.Read.All |
+| [agentUser](../resources/agentuser.md) | User.ReadBasic.All | Not supported. | User.ReadBasic.All |
 | [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
 | [certificateAuthorityDetail](../resources/certificateauthoritydetail.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
+| [externalUserProfile](../resources/externaluserprofile.md) | ExternalUserProfile.Read.All | Not supported | ExternalUserProfile.Read.All |
 | [group](../resources/group.md) | Group.Read.All | Not supported. | Group.Read.All |
+| [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md) | PendingExternalUserProfile.Read.All | Not supported | PendingExternalUserProfile.Read.All |
 | [servicePrincipal](../resources/serviceprincipal.md) | Application.Read.All | Not supported. | Application.Read.All |
 | [user](../resources/user.md) | User.Read.All | Not supported. | User.Read.All |
 
@@ -82,7 +86,6 @@ If successful, this method returns a `200 OK` response code and a [directoryObje
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_directory_deleteditem"
@@ -90,36 +93,6 @@ The following example shows a request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-directory-deleteditem-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-directory-deleteditem-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-directory-deleteditem-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-directory-deleteditem-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-directory-deleteditem-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-directory-deleteditem-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-directory-deleteditem-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 The following example shows the response.

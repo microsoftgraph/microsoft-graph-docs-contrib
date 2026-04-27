@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "8191baf6-ffb1-411c-ad42-c2f78a425475",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentUser](https://learn.microsoft.com/en-us/graph/api/resources/agentUser?view=graph-rest-1.0) resource to the v1.0 endpoint.",
+          "Target": "agentUser"
+        },
+        {
+          "Id": "8191baf6-ffb1-411c-ad42-c2f78a425475",
+          "ApiChange": "Method",
+          "ChangedApiName": "agentUser methods",
+          "ChangeType": "Addition",
+          "Description": "Added create, list, get, update, delete, and app role assignment methods for [agentUser](https://learn.microsoft.com/en-us/graph/api/resources/agentUser?view=graph-rest-1.0) in v1.0.",
+          "Target": "agentUser"
+        }
+      ],
+      "Id": "8191baf6-ffb1-411c-ad42-c2f78a425475",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-04-27T21:42:13.5895785Z",
+      "WorkloadArea": "Agents",
+      "SubArea": "Agent users"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "2a3f2ac6-08b8-4963-b976-509ed72ca031",
           "ApiChange": "Property",
           "ChangedApiName": "managerApplications",

@@ -127,6 +127,12 @@
               ]
             }
           ]
+        },
+        {
+          "name": "Agent user",
+          "resources": [
+            "agentUser"
+          ]
         }
       ]
     },

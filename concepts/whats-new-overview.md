@@ -35,6 +35,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 - Use the **height** and **width** parameters to [download a file in another format](/graph/api/driveitem-get-content-format) when `format=jpg`.
 - Use the [List activities](/graph/api/itemactivity-list) API to retrieve recent activities that took place on a [drive](/graph/api/resources/drive), [list](/graph/api/resources/list), item, or within an item hierarchy.
 
+### Identity and access | Directory management
+
+- Added the [agentUser](/graph/api/resources/agentuser) resource type and related methods in v1.0 for managing agent user identities, including create, list, get, update, delete, and app role assignments.
+
 ### Identity and access | Governance
 
 Use `approverRemove` as a new supported value for the **requestType** property of the [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest) resource. For more information, see [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest).

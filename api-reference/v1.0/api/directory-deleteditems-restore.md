@@ -5,14 +5,12 @@ author: "vimranga"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
-ms.date: 06/23/2025
+ms.date: 4/27/2026
 ---
 
 # Restore deleted item (directory object)
 
 Namespace: microsoft.graph
-
-Restore a recently deleted [application](../resources/application.md), [group](../resources/group.md), [servicePrincipal](../resources/serviceprincipal.md), [administrative unit](../resources/administrativeunit.md), or [user](../resources/user.md) object from [deleted items](../resources/directory.md). 
 
 Restore a recently deleted directory object from [deleted items](../resources/directory.md). The following types are supported:
 - [administrativeUnit](../resources/administrativeunit.md)
@@ -20,9 +18,12 @@ Restore a recently deleted directory object from [deleted items](../resources/di
 - [agentIdentityBlueprint](../resources/agentidentityblueprint.md)
 - [agentIdentity](../resources/agentidentity.md)
 - [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md)
+- [agentUser](../resources/agentuser.md)
 - [certificateBasedAuthPki](../resources/certificatebasedauthpki.md)
 - [certificateAuthorityDetail](../resources/certificateauthoritydetail.md)
+- [externalUserProfile](../resources/externaluserprofile.md)
 - [group](../resources/group.md)
+- [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md)
 - [servicePrincipal](../resources/serviceprincipal.md)
 - [user](../resources/user.md)
 
@@ -43,9 +44,12 @@ The following table shows the least privileged permission or permissions require
 | [agentIdentity](../resources/agentidentity.md) | AgentIdentity.DeleteRestore.All | Not supported. | AgentIdentity.DeleteRestore.All |
 | [agentIdentityBlueprint](../resources/agentidentityblueprint.md) | AgentIdentityBlueprint.DeleteRestore.All | Not supported. | AgentIdentityBlueprint.DeleteRestore.All |
 | [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) | AgentIdentityBlueprintPrincipal.DeleteRestore.All | Not supported. | AgentIdentityBlueprintPrincipal.DeleteRestore.All |
+| [agentUser](../resources/agentuser.md) | AgentIdUser.ReadWrite.IdentityParentedBy | Not supported. | AgentIdUser.ReadWrite.IdentityParentedBy |
 | [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
 | [certificateAuthorityDetail](../resources/certificateauthoritydetail.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
+| [externalUserProfile](../resources/externaluserprofile.md) | ExternalUserProfile.ReadWrite.All | Not supported | ExternalUserProfile.ReadWrite.All |
 | [group](../resources/group.md) | Group.ReadWrite.All | Not supported. | Group.ReadWrite.All |
+| [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md) | PendingExternalUserProfile.ReadWrite.All | Not supported | PendingExternalUserProfile.ReadWrite.All |
 | [servicePrincipal](../resources/serviceprincipal.md) | Application.ReadWrite.All | Not supported. | Application.ReadWrite.OwnedBy |
 | [user](../resources/user.md) | User.DeleteRestore.All | Not supported. | User.DeleteRestore.All |
 
@@ -82,7 +86,6 @@ If successful, this method returns a `200 OK` response code and a [directoryObje
 ### Example 1: Restore a deleted item
 
 #### Request
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "restore_directory_deleteditem"
@@ -90,36 +93,6 @@ If successful, this method returns a `200 OK` response code and a [directoryObje
 ```http
 POST https://graph.microsoft.com/v1.0/directory/deletedItems/78bf875b-9343-4edc-9130-0d3958113563/restore
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/restore-directory-deleteditem-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/restore-directory-deleteditem-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/restore-directory-deleteditem-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/restore-directory-deleteditem-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/restore-directory-deleteditem-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/restore-directory-deleteditem-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/restore-directory-deleteditem-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -161,7 +134,6 @@ Content-type: application/json
 ### Example 2: Restore a deleted item and remove any conflicting proxy addresses
 
 #### Request
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "restore_directory_deleteditem_autoreconcileproxyconflict"
@@ -174,36 +146,6 @@ Content-Type: application/json
   "autoReconcileProxyConflict": true
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/restore-directory-deleteditem-autoreconcileproxyconflict-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/restore-directory-deleteditem-autoreconcileproxyconflict-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/restore-directory-deleteditem-autoreconcileproxyconflict-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/restore-directory-deleteditem-autoreconcileproxyconflict-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/restore-directory-deleteditem-autoreconcileproxyconflict-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/restore-directory-deleteditem-autoreconcileproxyconflict-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/restore-directory-deleteditem-autoreconcileproxyconflict-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 > **Note:** The response object shown here might be shortened for readability.
@@ -236,7 +178,6 @@ Content-type: application/json
 ### Example 3: Restore a deleted user and assign them a new userPrincipalName
 
 #### Request
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "restore_directory_deleteditem_newUserPrincipalName"
@@ -249,36 +190,6 @@ Content-Type: application/json
   "newUserPrincipalName": "johndoe@contoso.com"
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/restore-directory-deleteditem-newuserprincipalname-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/restore-directory-deleteditem-newuserprincipalname-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/restore-directory-deleteditem-newuserprincipalname-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/restore-directory-deleteditem-newuserprincipalname-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/restore-directory-deleteditem-newuserprincipalname-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/restore-directory-deleteditem-newuserprincipalname-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/restore-directory-deleteditem-newuserprincipalname-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 > **Note:** The response object shown here might be shortened for readability.

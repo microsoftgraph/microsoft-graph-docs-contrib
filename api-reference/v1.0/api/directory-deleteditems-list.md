@@ -5,14 +5,12 @@ author: "vimranga"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
-ms.date: 06/23/2025
+ms.date: 4/27/2026
 ---
 
 # List deletedItems (directory objects)
 
 Namespace: microsoft.graph
-
-Retrieve a list of recently deleted directory objects. Currently, deleted items functionality is only supported for the [application](../resources/application.md), [servicePrincipal](../resources/serviceprincipal.md), [group](../resources/group.md), [administrative unit](../resources/administrativeunit.md), and [user](../resources/user.md) resources.
 
 Retrieve a list of recently deleted directory objects from [deleted items](../resources/directory.md). The following types are supported:
 - [administrativeUnit](../resources/administrativeunit.md)
@@ -20,9 +18,12 @@ Retrieve a list of recently deleted directory objects from [deleted items](../re
 - [agentIdentityBlueprint](../resources/agentidentityblueprint.md)
 - [agentIdentity](../resources/agentidentity.md)
 - [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md)
+- [agentUser](../resources/agentuser.md)
 - [certificateBasedAuthPki](../resources/certificatebasedauthpki.md)
 - [certificateAuthorityDetail](../resources/certificateauthoritydetail.md)
+- [externalUserProfile](../resources/externaluserprofile.md)
 - [group](../resources/group.md)
+- [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md)
 - [servicePrincipal](../resources/serviceprincipal.md)
 - [user](../resources/user.md)
 
@@ -39,9 +40,12 @@ The following table shows the least privileged permission or permissions require
 | [agentIdentity](../resources/agentidentity.md) | AgentIdentity.Read.All | Not supported. | AgentIdentity.Read.All |
 | [agentIdentityBlueprint](../resources/agentidentityblueprint.md) | AgentIdentityBlueprint.Read.All | Not supported. | AgentIdentityBlueprint.Read.All |
 | [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) | AgentIdentityBlueprintPrincipal.Read.All | Not supported. | AgentIdentityBlueprintPrincipal.Read.All |
+| [agentUser](../resources/agentuser.md) | User.ReadBasic.All | Not supported. | User.ReadBasic.All |
 | [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
 | [certificateAuthorityDetail](../resources/certificateauthoritydetail.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
+| [externalUserProfile](../resources/externaluserprofile.md) | ExternalUserProfile.Read.All | Not supported | ExternalUserProfile.Read.All |
 | [group](../resources/group.md) | Group.Read.All | Not supported. | Group.Read.All |
+| [pendingExternalUserProfile](../resources/pendingexternaluserprofile.md) | PendingExternalUserProfile.Read.All | Not supported | PendingExternalUserProfile.Read.All |
 | [servicePrincipal](../resources/serviceprincipal.md) | Application.Read.All | Not supported. | Application.Read.All |
 | [user](../resources/user.md) | User.Read.All | Not supported. | User.Read.All |
 
@@ -53,11 +57,17 @@ The following table shows the least privileged permission or permissions require
 <!-- { "blockType": "ignored" } -->
 ```http 
 GET /directory/deletedItems/microsoft.graph.administrativeUnit
+GET /directory/deletedItems/microsoft.graph.agentIdentity
+GET /directory/deletedItems/microsoft.graph.agentIdentityBlueprint
+GET /directory/deletedItems/microsoft.graph.agentIdentityBlueprintPrincipal
+GET /directory/deletedItems/microsoft.graph.agentUser
 GET /directory/deletedItems/microsoft.graph.application
 GET /directory/deletedItems/microsoft.graph.certificateBasedAuthPki
 GET /directory/deletedItems/microsoft.graph.certificateAuthorityDetail
-GET /directory/deletedItems/microsoft.graph.servicePrincipal
+GET /directory/deletedItems/microsoft.graph.externalUserProfile
 GET /directory/deletedItems/microsoft.graph.group
+GET /directory/deletedItems/microsoft.graph.pendingExternalUserProfile
+GET /directory/deletedItems/microsoft.graph.servicePrincipal
 GET /directory/deletedItems/microsoft.graph.user
 ```
 
@@ -112,7 +122,6 @@ If successful, this method returns a `200 OK` response code and collection of [d
 ### Example 1: Retrieve deleted groups
 
 #### Request
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_directory_deleteditems"
@@ -120,36 +129,6 @@ If successful, this method returns a `200 OK` response code and collection of [d
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/directory/deletedItems/microsoft.graph.group
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-directory-deleteditems-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-directory-deleteditems-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-directory-deleteditems-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-directory-deleteditems-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-directory-deleteditems-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-directory-deleteditems-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/list-directory-deleteditems-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 > **Note:** The response object shown here might be shortened for readability.
@@ -183,7 +162,6 @@ Content-type: application/json
 ### Example 2: Retrieve the count of deleted group objects and order the results by the deletedDateTime property
 
 #### Request
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_directory_deleteditems_count"
@@ -192,12 +170,6 @@ Content-type: application/json
 GET https://graph.microsoft.com/v1.0/directory/deletedItems/microsoft.graph.group?$count=true&$orderby=deletedDateTime asc&$select=id,DisplayName,deletedDateTime
 ConsistencyLevel: eventual
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-directory-deleteditems-count-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-directory-deleteditems-count-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
