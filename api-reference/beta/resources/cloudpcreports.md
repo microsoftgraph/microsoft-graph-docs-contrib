@@ -80,10 +80,8 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 | troubleshootTenantCloudPCHealthAggregatedReport | The tenant-level aggregated Cloud PC health report. |
 | troubleshootTenantActiveConnectionCountTrendReport | The tenant-level active connection count trend report. |
 | troubleshootTenantActiveConnectionCountAggregatedReport | The tenant-level aggregated active connection count report. |
-| troubleshootTenantMTTFTrendReport | The tenant-level mean time to failure (MTTF) trend report. |
-| troubleshootTenantMTTFAggregatedReport | The tenant-level aggregated mean time to failure (MTTF) report. |
-| troubleshootTenantMTTRTrendReport | The tenant-level mean time to repair (MTTR) trend report. |
-| troubleshootTenantMTTRAggregatedReport | The tenant-level aggregated mean time to repair (MTTR) report. |
+| troubleshootTenantMeanTimeToFailureTrendReport | The tenant-level mean time to failure trend report. |
+| troubleshootTenantMeanTimeToFailureAggregatedReport | The tenant-level aggregated mean time to failure report. |
 | troubleshootTenantRemoteSignInTimeTrendReport | The tenant-level remote sign-in time trend report. |
 | troubleshootTenantRemoteSignInTimeAggregatedReport | The tenant-level aggregated remote sign-in time report. |
 | troubleshootEventsOfViewDataTableReport | The events view data table report. |
@@ -108,6 +106,9 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 | troubleshootMatchedUserReport | The report of users matched to a Cloud PC. |
 | troubleshootMatchedCloudPCReport | The report of Cloud PCs matched to a user. |
 | troubleshootUserListReport | The user list report. |
+| troubleshootVMPerformanceReport | The virtual machine performance report for Cloud PCs. |
+| getAIEnabledStateCPCReport | The report of AI-enabled state for Cloud PCs. |
+| reserveLicenseReport | The reserve license report for Cloud PCs. |
 
 ## Relationships
 

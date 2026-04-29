@@ -106,7 +106,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | TenantId | The unique identifier of the tenant. |
 | GroupColumn | The metric used for grouping data (PolicyName, Region, UserSettingName, ServicePlanType, ServicePlanName, OSBuildVersion, AADJoinType, ImageName, GatewayRegion, ClientOS, ClientType, TransportType, CloudPCEndpointCountryRegion, CloudPCEndpointState, or CloudPCEndpointCity). |
 
-### troubleshootTenantMTTFTrendReport
+### troubleshootTenantMeanTimeToFailureTrendReport
 
 | Column | Description |
 |:-------|:------------|
@@ -115,28 +115,11 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | EventDateTime | The date and time when the event occurred. |
 | GroupColumn | The metric used for grouping data (PolicyName, Region, UserSettingName, ServicePlanType, ServicePlanName, OSBuildVersion, AADJoinType, ImageName, GatewayRegion, ClientOS, ClientType, TransportType, CloudPCEndpointCountryRegion, CloudPCEndpointState, or CloudPCEndpointCity). |
 
-### troubleshootTenantMTTFAggregatedReport
+### troubleshootTenantMeanTimeToFailureAggregatedReport
 
 | Column | Description |
 |:-------|:------------|
 | MeanTimeToFailInHour | The mean time to failure in hours. |
-| TenantId | The unique identifier of the tenant. |
-| GroupColumn | The metric used for grouping data (PolicyName, Region, UserSettingName, ServicePlanType, ServicePlanName, OSBuildVersion, AADJoinType, ImageName, GatewayRegion, ClientOS, ClientType, TransportType, CloudPCEndpointCountryRegion, CloudPCEndpointState, or CloudPCEndpointCity). |
-
-### troubleshootTenantMTTRTrendReport
-
-| Column | Description |
-|:-------|:------------|
-| MeanTimeToRepairInSecond | The mean time to repair in seconds. |
-| TenantId | The unique identifier of the tenant. |
-| EventDateTime | The date and time when the event occurred. |
-| GroupColumn | The metric used for grouping data (PolicyName, Region, UserSettingName, ServicePlanType, ServicePlanName, OSBuildVersion, AADJoinType, ImageName, GatewayRegion, ClientOS, ClientType, TransportType, CloudPCEndpointCountryRegion, CloudPCEndpointState, or CloudPCEndpointCity). |
-
-### troubleshootTenantMTTRAggregatedReport
-
-| Column | Description |
-|:-------|:------------|
-| MeanTimeToRepairInSecond | The mean time to repair in seconds. |
 | TenantId | The unique identifier of the tenant. |
 | GroupColumn | The metric used for grouping data (PolicyName, Region, UserSettingName, ServicePlanType, ServicePlanName, OSBuildVersion, AADJoinType, ImageName, GatewayRegion, ClientOS, ClientType, TransportType, CloudPCEndpointCountryRegion, CloudPCEndpointState, or CloudPCEndpointCity). |
 
@@ -484,6 +467,54 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | ConnectionFailureRate | The rate of connection failures as a percentage. |
 | ActiveConnectionCount | The count of active connections. |
 | HealthPercentage | The health percentage of Cloud PC systems. |
+
+## Additional reports
+
+### troubleshootVMPerformanceReport
+
+| Column | Description |
+|:-------|:------------|
+| MetricName | Azure Monitor metric name. |
+| TimeStamp | Data point timestamp (UTC). |
+| Average | Average aggregation value. |
+| Minimum | Minimum aggregation value. |
+| Maximum | Maximum aggregation value. |
+| Total | Total or sum aggregation value. |
+| Count | Count aggregation value. |
+
+### getAIEnabledStateCPCReport
+
+| Column | Description |
+|:-------|:------------|
+| CloudPCId | The unique identifier of the Cloud PC. |
+| UserId | The unique identifier of the user. |
+| ManagedDeviceName | The name of the managed device. |
+| ProvisioningPolicyName | The name of the provisioning policy. |
+| ServicePlanName | The name of the service plan. |
+| State | The AI-enabled state of the Cloud PC. |
+| UserDisplayName | The display name of the user. |
+| ProvisionedDateTime | The date and time when the Cloud PC was provisioned. |
+| ProvisioningPolicyId | The unique identifier of the provisioning policy. |
+| CopilotPlusEnabledDateTime | The date and time when Copilot+ was enabled. |
+| CopilotPlusErrorCode | The error code for Copilot+ enablement failures. |
+| ErrorMessage | The descriptive error message if applicable. |
+| EngineeringAction | The engineering action taken for AI enablement. |
+
+### reserveLicenseReport
+
+| Column | Description |
+|:-------|:------------|
+| UserDisplayName | The display name of the user. |
+| UserPrincipalName | The User Principal Name of the user. |
+| UserId | The unique identifier of the user. |
+| TenantId | The unique identifier of the tenant. |
+| ProvisioningPolicyId | The unique identifier of the provisioning policy. |
+| PolicyName | The name of the policy applied. |
+| ProvisioningStatus | The provisioning status of the Cloud PC. |
+| Licensed | Indicates whether the user has a license assigned. |
+| LastMeteredRemainingSeconds | The remaining seconds in the last metered period. |
+| TotalAllocatedTimeInSeconds | The total allocated time in seconds. |
+| SubscriptionAnnualPassExpirationDate | The expiration date of the annual pass subscription. |
 
 ## Related content
 
