@@ -11,13 +11,17 @@ ms.date: 11/18/2025
 #customer intent: As a developer or IT administrator, I want to understand the Microsoft MCP Server for Enterprise so that I can effectively use natural language to query and manage my organization's identity and device data.
 ---
 
-# Overview of Microsoft MCP Server for Enterprise
+# Overview of Microsoft MCP Server for Enterprise (preview)
 
 The Microsoft MCP Server for Enterprise `https://mcp.svc.cloud.microsoft/enterprise` is a programmatic interface for AI agents to query enterprise data in your Microsoft Entra tenant by using natural language. Built on the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/), an open standard that specifies how AI models interact with external tools and services, it translates natural language requests into Microsoft Graph API calls.
 
 This overview explains how Microsoft MCP Server for Enterprise works and how you can integrate it into your AI-powered workflows.
 
-Microsoft MCP Server for Enterprise is offered under the [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use).
+> [!IMPORTANT]
+> Microsoft MCP Server for Enterprise is currently in public PREVIEW.
+> This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
+>
+> Microsoft MCP Server for Enterprise is offered under the [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use).
 
 ## How it works
 
@@ -49,7 +53,7 @@ The Microsoft MCP Server for Enterprise enables several key scenarios:
 
 ## Current scope and capabilities
 
-Microsoft MCP Server for Enterprise focuses on Microsoft Entra identity and directory **read-only** scenarios such as user, group, application, and device insights, plus administrative reporting. All operations respect existing Microsoft Graph permissions, user privileges, and tenant security policies.
+Microsoft MCP Server for Enterprise is currently in public preview. It focuses on Microsoft Entra identity and directory **read-only** scenarios such as user, group, application, and device insights, plus administrative reporting. All operations respect existing Microsoft Graph permissions, user privileges, and tenant security policies.
 
 ## Licensing and costs
 
