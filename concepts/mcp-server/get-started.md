@@ -215,6 +215,8 @@ The naming of MCP scopes follows the pattern `MCP.{microsoft-graph-scope-name}`.
 - MCP.RoleAssignmentSchedule.Read.Directory
 - MCP.RoleEligibilitySchedule.Read.Directory
 - MCP.RoleManagement.Read.Directory
+- MCP.ServiceHealth.Read.All
+- MCP.ServiceMessage.Read.All
 - MCP.Synchronization.Read.All
 - MCP.User.Read.All
 - MCP.UserAuthenticationMethod.Read.All
