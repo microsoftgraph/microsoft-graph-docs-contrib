@@ -1,7 +1,7 @@
 ---
 title: "Get sharePointGroupMember"
 description: "Read the properties and relationships of a sharePointGroupMember object."
-author: "tmarwendo-microsoft"
+author: "humbertorMSFT"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
@@ -12,11 +12,7 @@ ms.date: 1/31/2025
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Read the properties and relationships of a [sharePointGroupMember](../resources/sharepointgroup.md) object.
-
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+Read the properties and relationships of a [sharePointGroupMember](../resources/sharepointgroupmember.md) object.
 
 ## Permissions
 
@@ -62,38 +58,13 @@ If successful, this method returns a `200 OK` response code and a [sharePointGro
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_sharepointgroupmember"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/ZGYwZTEzYTgtOTExOS00MjdmLWEzNjktOTdjOWM3YjNlYjcyXzE0/members/aTowIy5mfG1lbWJlcnNoaXB8YWRtaW5AYTgzMGVkYWQ5MDUwODQ5c3Bncm91cHRlc3QyLm9ubWljcm9zb2Z0LmNvbQ
+GET https://graph.microsoft.com/v1.0/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/ZGYwZTEzYTgtOTExOS00MjdmLWEzNjktOTdjOWM3YjNlYjcyXzE0/members/aTowIy5mfG1lbWJlcnNoaXB8YWRtaW5AYTgzMGVkYWQ5MDUwODQ5c3Bncm91cHRlc3QyLm9ubWljcm9zb2Z0LmNvbQ
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-sharepointgroupmember-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-sharepointgroupmember-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-sharepointgroupmember-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-sharepointgroupmember-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-sharepointgroupmember-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-sharepointgroupmember-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -111,15 +82,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.sharePointGroupMember",
-    "id": "aTowIy5mfG1lbWJlcnNoaXB8YWRtaW5AYTgzMGVkYWQ5MDUwODQ5c3Bncm91cHRlc3QyLm9ubWljcm9zb2Z0LmNvbQ7",
-    "identity": {
-      "@odata.type": "microsoft.graph.sharePointIdentitySet",
-      "user": {
-        "displayName": "John Smith",
-        "email": "john.smith@contoso.onmicrosoft.com"
-      }
+  "@odata.type": "#microsoft.graph.sharePointGroupMember",
+  "id": "aTowIy5mfG1lbWJlcnNoaXB8YWRtaW5AYTgzMGVkYWQ5MDUwODQ5c3Bncm91cHRlc3QyLm9ubWljcm9zb2Z0LmNvbQ",
+  "identity": {
+    "@odata.type": "microsoft.graph.sharePointIdentitySet",
+    "user": {
+      "displayName": "John Smith",
+      "email": "john.smith@contoso.onmicrosoft.com"
     }
   }
 }

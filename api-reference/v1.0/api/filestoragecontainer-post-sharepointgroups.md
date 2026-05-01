@@ -1,7 +1,7 @@
 ---
 title: "Create sharePointGroup"
 description: "Create a new sharePointGroup object."
-author: "tmarwendo-microsoft"
+author: "humbertorMSFT"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
@@ -12,11 +12,7 @@ ms.date: 1/31/2025
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Create a new [sharePointGroup](../resources/sharepointgroup.md) object. The **sharePointGroup** only exists within the scope of the [fileStorageContainer](../resources/filestoragecontainer.md) in which it was created. To add permissions for the **sharePointGroup** on [driveItem](../resources/driveitem.md) objects, you must use the [Create permission on a driveItem](./driveitem-post-permissions.md) API. Up to 10,000 **sharePointGroup** objects can be created per **fileStorageContainer**. For more information on service limits, see [SharePoint online limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits#sharepoint-groups).
-
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -64,16 +60,15 @@ If successful, this method returns a `201 Created` response code and a [sharePoi
 
 ### Request
 
-The following example shows a request that creates a new **sharePointGroup** that is local to a **fileStoragContainer**. The title and description of the **sharePointGroup** are shown in the request body.
+The following example shows a request that creates a new **sharePointGroup** that is local to a **fileStorageContainer**. The title and description of the **sharePointGroup** are shown in the request body.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_sharePointGroup",
   "@odata.type": "microsoft.graph.sharePointGroup"
 } -->
 ```http
-POST https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups
+POST https://graph.microsoft.com/v1.0/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups
 Content-Type: application/json
 
 {
@@ -82,30 +77,6 @@ Content-Type: application/json
   "description": "This is a sample description"
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-sharepointgroup-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-sharepointgroup-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-sharepointgroup-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-sharepointgroup-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-sharepointgroup-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-sharepointgroup-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
