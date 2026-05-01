@@ -4,10 +4,10 @@
       "ChangeList": [
         {
           "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
-          "ApiChange": "Action",
+          "ApiChange": "Method",
           "ChangedApiName": "retrieveCloudPcMonitoringReports",
           "ChangeType": "Addition",
-          "Description": "Added the `retrieveCloudPcMonitoringReports` action to the **cloudPcReports** entity.",
+          "Description": "Added the [retrieveCloudPcMonitoringReports](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-retrievecloudpcmonitoringreports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource.",
           "Target": "cloudPcReports"
         },
         {
