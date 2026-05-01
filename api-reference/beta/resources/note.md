@@ -6,7 +6,7 @@ ms.date: 04/07/2026
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: resourcePageType
-toc.title: "note (preview)"
+toc.title: "Note (preview)"
 ---
 
 # note resource type

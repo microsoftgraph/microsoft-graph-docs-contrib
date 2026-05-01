@@ -5,7 +5,7 @@ author: "soneff"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 06/25/2025
+ms.date: 04/15/2026
 ---
 
 # Create customAuthenticationExtension
@@ -602,5 +602,80 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.httpRequestEndpoint",
     "targetUrl": "https://api.contoso.com/passwordvalidation"
   }
+}
+```
+
+### Example 6: Create an onVerifiedIdClaimValidationCustomExtension object
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_customauthenticationextension_onVerifiedIdClaimValidationCustomExtension"
+}
+-->
+``` http
+POST https://graph.microsoft.com/v1.0/identity/customAuthenticationExtensions
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.onVerifiedIdClaimValidationCustomExtension",
+  "displayName": "Verified ID Claim Validation",
+  "description": "Validate claims from a Verified ID presentation",
+  "endpointConfiguration": {
+    "@odata.type": "#microsoft.graph.httpRequestEndpoint",
+    "targetUrl": "https://contoso.azurewebsites.net/api/verifiedIdClaimValidation"
+  },
+  "authenticationConfiguration": {
+    "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
+    "resourceId": "api://contoso.azurewebsites.net/verifiedIdClaimValidation"
+  },
+  "clientConfiguration": {
+    "timeoutInMilliseconds": 2000,
+    "maximumRetries": 1
+  },
+  "behaviorOnError": {
+    "@odata.type": "#microsoft.graph.customExtensionBehaviorOnError"
+  }
+}
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.customAuthenticationExtension"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/customAuthenticationExtensions/$entity",
+    "@odata.type": "#microsoft.graph.onVerifiedIdClaimValidationCustomExtension",
+    "id": "6a0a3429-be77-0aed-951e-1c8aed62bf8a",
+    "displayName": "Verified ID Claim Validation",
+    "description": "Validate claims from a Verified ID presentation",
+    "authenticationConfiguration": {
+        "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
+        "resourceId": "api://contoso.azurewebsites.net/verifiedIdClaimValidation"
+    },
+    "endpointConfiguration": {
+        "@odata.type": "#microsoft.graph.httpRequestEndpoint",
+        "targetUrl": "https://contoso.azurewebsites.net/api/verifiedIdClaimValidation"
+    },
+    "clientConfiguration": {
+        "timeoutInMilliseconds": 2000,
+        "maximumRetries": 1
+    },
+    "behaviorOnError": {
+        "@odata.type": "#microsoft.graph.customExtensionBehaviorOnError"
+    }
 }
 ```

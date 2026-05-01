@@ -20,11 +20,7 @@ Create a [fileAttachment](../resources/fileattachment.md) object, which adds an 
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "note-post-attachments-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "note_post_attachments" } -->
 [!INCLUDE [permissions-table](../includes/permissions/note-post-attachments-permissions.md)]
 
 ## HTTP request
@@ -69,6 +65,7 @@ If successful, this method returns a `201 Created` response code and an [attachm
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_note_attachment"
@@ -87,6 +84,12 @@ Content-Type: application/json
   "isInline": true
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-note-attachment-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

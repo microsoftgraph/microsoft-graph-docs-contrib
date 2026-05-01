@@ -20,11 +20,7 @@ Update the properties of a [note](../resources/note.md) object. Supports optimis
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "note-update-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "note_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/note-update-permissions.md)]
 
 ## HTTP request
@@ -67,6 +63,7 @@ If the `If-Match` header doesn't match the current **changeKey**, this method re
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_note"
@@ -85,6 +82,12 @@ If-Match: "CQAAABYAAABE"
   }
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-note-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

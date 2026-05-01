@@ -1,5 +1,5 @@
 ---
-description: Automatically generated file. DO NOT MODIFY
+description: "Automatically generated file. DO NOT MODIFY"
 ms.topic: include
 ms.localizationpriority: medium
 ---
@@ -8,5 +8,5 @@ ms.localizationpriority: medium
 |:---|:---|:---|
 |Delegated (work or school account)|ShortNotes.ReadWrite|Not available.|
 |Delegated (personal Microsoft account)|ShortNotes.ReadWrite|Not available.|
-|Application|ShortNotes.ReadWrite.All|Not available.|
+|Application|Not supported.|Not supported.|
 

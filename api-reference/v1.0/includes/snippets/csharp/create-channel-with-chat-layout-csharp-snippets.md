@@ -14,12 +14,7 @@ var requestBody = new Channel
 	DisplayName = "Project Collaboration",
 	Description = "Discussion space for project team collaboration",
 	MembershipType = ChannelMembershipType.Standard,
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"layoutType" , "chat"
-		},
-	},
+	LayoutType = ChannelLayoutType.Chat,
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

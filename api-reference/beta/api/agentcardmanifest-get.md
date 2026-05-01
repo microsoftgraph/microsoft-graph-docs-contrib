@@ -2,7 +2,7 @@
 title: "Get agentCardManifest"
 description: "Read the properties and relationships of agentCardManifest object."
 author: "jasondou"
-ms.date: 11/06/2025
+ms.date: 04/28/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-id"
 doc_type: apiPageType
@@ -13,6 +13,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [agentregistry-deprecation-note](../includes/agentregistry-deprecation-note.md)]
 
 Read the properties and relationships of [agentCardManifest](../resources/agentcardmanifest.md) object.
 

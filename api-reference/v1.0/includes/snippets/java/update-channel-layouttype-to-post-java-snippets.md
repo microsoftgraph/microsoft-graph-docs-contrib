@@ -9,9 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 Channel channel = new Channel();
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
-additionalData.put("layoutType", "post");
-channel.setAdditionalData(additionalData);
+channel.setLayoutType(ChannelLayoutType.Post);
 Channel result = graphClient.teams().byTeamId("{team-id}").channels().byChannelId("{channel-id}").patch(channel);
 
 

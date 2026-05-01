@@ -1,8 +1,8 @@
 ---
 title: "customDataProvidedResourceUploadSession: uploadFile"
 description: "Upload a file in a customDataProvidedResourceUploadSession"
-author: "pratima-cloudknox"
-ms.date: 10/29/2025
+author: "jaylenemartinez0"
+ms.date: 04/01/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
@@ -46,7 +46,7 @@ POST /identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPack
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Content-Type| multipart/form-data; boundary={your-boundary}. Required.    
+|Content-Type| multipart/form-data; boundary={your-boundary}. Required.
 
 ## Request body
 
@@ -65,11 +65,11 @@ The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_customdataprovidedresourcefile_from_"
+  "name": "customdataprovidedresourceuploadsessionthis.uploadfile"
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/73eb2497-3b88-4c0a-8bb3-68ba8162beff/accessPackageResources/99ab2454-3b88-4c0a-8bb3-68ba8162beff/uploadSessions/23f27c15-72f9-45fe-9e9c-e3d8f75bdc44/uploadFile
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPackageCatalogId}/accessPackageResources/{accessPackageResourceId}/uploadSessions/{customDataProvidedResourceUploadSessionId}/uploadFile
 Content-Type: multipart/form-data; boundary=MyPartBoundary198374
 
 --MyPartBoundary198374
@@ -103,22 +103,31 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "id": "23f27c15-72f9-45fe-9e9c-e3d8f75bdc44",
-    "status": "Active",
-    "isUploadDone": false,
-    "stats": {
-        "filesUploaded": 1,
-        "totalBytesUploaded": 2000000,
-    },
-    "files": [
-        {
-            "name": "building-a-access.csv",
-            "size": 2000000,
-            "uploadedDateTime": "2024-03-06T01:35:12.123Z"
-        }
-    ],
-    "createdDateTime": "2024-03-06T01:35:12.123Z",
-    "expirationDateTime": "2024-03-07T01:35:12.123Z"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.customDataProvidedResourceUploadSession",
+  "id": "0b64df22-1a83-472c-9556-6c3dc41742b9",
+  "referenceId": "ca24f9b9-5917-4971-9b5b-07aae0aa74e8",
+  "status": "active",
+  "isUploadDone": false,
+  "createdDateTime": "2026-04-01T18:24:07.1484627Z",
+  "source": "BuildingAccessDataTIP",
+  "type": "#microsoft.graph.accessReviewDataUploadTriggerCallbackData",
+  "stats": {
+    "filesUploaded": 1,
+    "totalBytesUploaded": 198374
+  },
+  "data": {
+    "@odata.type": "#microsoft.graph.accessReviewResourceDataUploadSessionContextData",
+    "accessReviewId": "f5744a40-bca0-4506-a286-a8afac513d1c",
+    "accessReviewInstanceId": "ca24f9b9-5917-4971-9b5b-07aae0aa74e8"
+  },
+  "files": [
+    {
+      "id": "22125c79-b0fe-4553-8229-6556d85b2561",
+      "name": "valid.csv",
+      "size": 198374,
+      "uploadedDateTime": "2026-04-01T18:42:07.7890258Z"
+    }
+  ]
 }
 ```
 

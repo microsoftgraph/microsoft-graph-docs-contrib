@@ -20,11 +20,7 @@ Get a set of [note](../resources/note.md) objects that were added, updated, or d
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "note-delta-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "note_delta" } -->
 [!INCLUDE [permissions-table](../includes/permissions/note-delta-permissions.md)]
 
 ## HTTP request
@@ -74,6 +70,7 @@ The following example shows the initial sync request to get all notes.
 
 #### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "note_delta_initial"
@@ -82,6 +79,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/me/notes/delta
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/note-delta-initial-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example shows the response.
@@ -124,6 +127,7 @@ The following example shows a subsequent sync request using the delta token from
 
 #### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "note_delta_subsequent"
@@ -132,6 +136,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/me/notes/delta?$deltatoken=abc123def456
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/note-delta-subsequent-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example shows the response.

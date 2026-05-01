@@ -20,11 +20,7 @@ Delete a [note](../resources/note.md) object. Supports optimistic concurrency co
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "note-delete-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "note_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/note-delete-permissions.md)]
 
 ## HTTP request
@@ -60,6 +56,7 @@ If the `If-Match` header doesn't match the current **changeKey**, this method re
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_note"
@@ -69,6 +66,12 @@ The following example shows a request.
 DELETE https://graph.microsoft.com/beta/me/notes/AAMkAGI2THVSAAA=
 If-Match: "CQAAABYAAABG"
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-note-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

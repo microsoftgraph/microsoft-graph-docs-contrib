@@ -268,7 +268,7 @@ items:
       href: ../../api/agentcollection-post-members.md
     - name: Remove from collection
       href: ../../api/agentcollection-delete-members.md
-- name: Agent user (preview)
+- name: Agent user
   items:
   - name: Agent user
     items:

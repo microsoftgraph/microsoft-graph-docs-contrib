@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "8191baf6-ffb1-411c-ad42-c2f78a425475",
+          "ApiChange": "Resource",
+          "ChangedApiName": "agentUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [agentUser](https://learn.microsoft.com/en-us/graph/api/resources/agentUser?view=graph-rest-1.0) resource and its associated methods for managing the lifecycle of an agent's user.",
+          "Target": "agentUser"
+        }
+      ],
+      "Id": "8191baf6-ffb1-411c-ad42-c2f78a425475",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-05-01T21:42:13.5895785Z",
+      "WorkloadArea": "Agents",
+      "SubArea": "Agent users"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "2a3f2ac6-08b8-4963-b976-509ed72ca031",
           "ApiChange": "Property",
           "ChangedApiName": "managerApplications",
@@ -25,6 +43,48 @@
       "CreatedDateTime": "2026-04-16T19:41:51.6805516Z",
       "WorkloadArea": "Applications",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fd5db786-0593-424e-bee7-2efff51f1426",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "inheritedAppRoleAssignments",
+          "ChangeType": "Addition",
+          "Description": "Added the **inheritedAppRoleAssignments** relationship to the [agentIdentity](https://learn.microsoft.com/en-us/graph/api/resources/agentIdentity?view=graph-rest-beta) resource.",
+          "Target": "agentIdentity"
+        },
+        {
+          "Id": "fd5db786-0593-424e-bee7-2efff51f1426",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "inheritedOauth2PermissionGrants",
+          "ChangeType": "Addition",
+          "Description": "Added the **inheritedOauth2PermissionGrants** relationship to the [agentIdentity](https://learn.microsoft.com/en-us/graph/api/resources/agentIdentity?view=graph-rest-beta) resource.",
+          "Target": "agentIdentity"
+        },
+        {
+          "Id": "fd5db786-0593-424e-bee7-2efff51f1426",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "Microsoft.DirectoryServices.agentIdentity/inheritedAppRoleAssignments",
+          "ChangeType": "Addition",
+          "Description": "Added the [Microsoft.DirectoryServices.agentIdentity/inheritedAppRoleAssignments](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Target": "servicePrincipals"
+        },
+        {
+          "Id": "fd5db786-0593-424e-bee7-2efff51f1426",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "Microsoft.DirectoryServices.agentIdentity/inheritedOauth2PermissionGrants",
+          "ChangeType": "Addition",
+          "Description": "Added the [Microsoft.DirectoryServices.agentIdentity/inheritedOauth2PermissionGrants](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Target": "servicePrincipals"
+        }
+      ],
+      "Id": "fd5db786-0593-424e-bee7-2efff51f1426",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-04-30T20:59:03.2101677Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
@@ -411,6 +471,24 @@
       "CreatedDateTime": "2026-03-13T23:21:03.040448Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5c629249-b31e-47e6-a6b4-7fb04b3d86b0",
+          "ApiChange": "Property",
+          "ChangedApiName": "onPremisesExtensionAttributes",
+          "ChangeType": "Addition",
+          "Description": "Added the **onPremisesExtensionAttributes** property to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
+          "Target": "group"
+        }
+      ],
+      "Id": "5c629249-b31e-47e6-a6b4-7fb04b3d86b0",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-04-30T18:43:01.6931455Z",
+      "WorkloadArea": "Groups",
+      "SubArea": ""
     },
     {
       "ChangeList": [

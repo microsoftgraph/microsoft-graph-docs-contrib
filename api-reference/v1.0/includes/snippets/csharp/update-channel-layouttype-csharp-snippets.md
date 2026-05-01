@@ -11,12 +11,7 @@ using Microsoft.Graph.Models;
 
 var requestBody = new Channel
 {
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"layoutType" , "chat"
-		},
-	},
+	LayoutType = ChannelLayoutType.Chat,
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

@@ -1,18 +1,16 @@
 ---
-title: "List deleted items (directory objects)"
+title: "List deletedItems (directory objects)"
+ms.date: 11/17/2025
 description: "Retrieve a list of recently deleted items from deleted items."
-author: "vimranga"
+author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
-ms.date: 06/23/2025
 ---
 
 # List deletedItems (directory objects)
 
 Namespace: microsoft.graph
-
-Retrieve a list of recently deleted directory objects. Currently, deleted items functionality is only supported for the [application](../resources/application.md), [servicePrincipal](../resources/serviceprincipal.md), [group](../resources/group.md), [administrative unit](../resources/administrativeunit.md), and [user](../resources/user.md) resources.
 
 Retrieve a list of recently deleted directory objects from [deleted items](../resources/directory.md). The following types are supported:
 - [administrativeUnit](../resources/administrativeunit.md)
@@ -20,6 +18,7 @@ Retrieve a list of recently deleted directory objects from [deleted items](../re
 - [agentIdentityBlueprint](../resources/agentidentityblueprint.md)
 - [agentIdentity](../resources/agentidentity.md)
 - [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md)
+- [agentUser](../resources/agentuser.md)
 - [certificateBasedAuthPki](../resources/certificatebasedauthpki.md)
 - [certificateAuthorityDetail](../resources/certificateauthoritydetail.md)
 - [group](../resources/group.md)
@@ -39,11 +38,12 @@ The following table shows the least privileged permission or permissions require
 | [agentIdentity](../resources/agentidentity.md) | AgentIdentity.Read.All | Not supported. | AgentIdentity.Read.All |
 | [agentIdentityBlueprint](../resources/agentidentityblueprint.md) | AgentIdentityBlueprint.Read.All | Not supported. | AgentIdentityBlueprint.Read.All |
 | [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) | AgentIdentityBlueprintPrincipal.Read.All | Not supported. | AgentIdentityBlueprintPrincipal.Read.All |
-| [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
-| [certificateAuthorityDetail](../resources/certificateauthoritydetail.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
+| [agentUser](../resources/agentuser.md) | User.ReadBasic.All | Not supported. | User.ReadBasic.All |
 | [group](../resources/group.md) | Group.Read.All | Not supported. | Group.Read.All |
 | [servicePrincipal](../resources/serviceprincipal.md) | Application.Read.All | Not supported. | Application.Read.All |
 | [user](../resources/user.md) | User.Read.All | Not supported. | User.Read.All |
+| [certificateBasedAuthPki](../resources/certificatebasedauthpki.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
+| [certificateAuthorityDetail](../resources/certificateauthoritydetail.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
@@ -52,13 +52,13 @@ The following table shows the least privileged permission or permissions require
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http 
-GET /directory/deletedItems/microsoft.graph.administrativeUnit
 GET /directory/deletedItems/microsoft.graph.application
-GET /directory/deletedItems/microsoft.graph.certificateBasedAuthPki
-GET /directory/deletedItems/microsoft.graph.certificateAuthorityDetail
 GET /directory/deletedItems/microsoft.graph.servicePrincipal
 GET /directory/deletedItems/microsoft.graph.group
 GET /directory/deletedItems/microsoft.graph.user
+GET /directory/deletedItems/microsoft.graph.administrativeUnit
+GET /directory/deletedItems/microsoft.graph.certificateBasedAuthPki
+GET /directory/deletedItems/microsoft.graph.certificateAuthorityDetail
 ```
 
 > [!IMPORTANT]
@@ -69,7 +69,7 @@ GET /directory/deletedItems/microsoft.graph.user
 > - `["Unified"]`indicates a Microsoft 365 group.
 > - An empty array (`[]`) indicates a security group.
 
-The OData cast type is a required part of the URI and calling `GET /directory/deleteditems` without a type is **not** supported.
+The OData cast type is a required part of the URI and calling `GET /directory/deletedItems` without a type is **not** supported.
 
 ## Optional query parameters
 
@@ -77,8 +77,8 @@ This method supports the query parameters that are supported by the resource tha
 
 Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For example:
 
-```http
-GET https://graph.microsoft.com/v1.0/directory/deletedItems/microsoft.graph.group?&$count=true&$orderby=deletedDateTime desc&$select=id,displayName,deletedDateTime
+```msgraph-interactive
+https://graph.microsoft.com/v1.0/directory/deletedItems/microsoft.graph.group?&$count=true&$orderby=deletedDateTime desc&$select=id,displayName,deletedDateTime
 ConsistencyLevel: eventual
 ```
 
@@ -112,6 +112,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
 ### Example 1: Retrieve deleted groups
 
 #### Request
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -183,13 +184,15 @@ Content-type: application/json
 ### Example 2: Retrieve the count of deleted user objects and order the results by the deletedDateTime property
 
 #### Request
+
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_directory_deleteditems_count"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/directory/deletedItems/microsoft.graph.group?$count=true&$orderby=deletedDateTime asc&$select=id,DisplayName,deletedDateTime
+GET https://graph.microsoft.com/v1.0/directory/deletedItems/microsoft.graph.group?$count=true&$orderby=deletedDateTime asc&$select=id,displayName,deletedDateTime
 ConsistencyLevel: eventual
 ```
 
@@ -254,11 +257,13 @@ Content-type: application/json
 }
 ```
 
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List deleteditems",
-  "keywords": "",
   "suppressions": []
-}-->
+}
+-->

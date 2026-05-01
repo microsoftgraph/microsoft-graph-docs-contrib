@@ -20,11 +20,7 @@ Create a new [note](../resources/note.md) in the user's *Notes* folder.
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "user-post-notes-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "user_post_notes" } -->
 [!INCLUDE [permissions-table](../includes/permissions/user-post-notes-permissions.md)]
 
 ## HTTP request
@@ -66,6 +62,7 @@ If successful, this method returns a `201 Created` response code and a [note](..
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_note"
@@ -83,6 +80,12 @@ Content-Type: application/json
   }
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-note-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

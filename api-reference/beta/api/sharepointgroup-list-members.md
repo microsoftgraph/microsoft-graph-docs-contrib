@@ -1,5 +1,5 @@
 ---
-title: "List members"
+title: "List members for sharePointGroup"
 description: "Get a list of the sharePointGroupMember objects and their properties."
 author: "tmarwendo-microsoft"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: apiPageType
 ms.date: 1/31/2025
 ---
 
-# List members
+# List members for sharePointGroup
 
 Namespace: microsoft.graph
 
@@ -71,7 +71,7 @@ The following example shows a request.
   "name": "list_sharepointgroup_members"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/10/members
+GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/ZGYwZTEzYTgtOTExOS00MjdmLWEzNjktOTdjOWM3YjNlYjcyXzE0/members
 ```
 
 # [C#](#tab/csharp)
