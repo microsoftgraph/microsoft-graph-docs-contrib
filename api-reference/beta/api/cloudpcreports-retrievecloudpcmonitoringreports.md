@@ -171,8 +171,7 @@ Content-Type: application/json
     ["2026-03-25T04:00:00", 10.0, "westus2"],
     ["2026-03-25T08:00:00", 0.75, "israelcentral"],
     ["2026-03-25T08:00:00", 1.75, "japaneast"],
-    ["2026-03-25T08:00:00", 8.13, "southeastasia"],
-    ...
+    ["2026-03-25T08:00:00", 8.13, "southeastasia"]
   ]
 }
 ```
