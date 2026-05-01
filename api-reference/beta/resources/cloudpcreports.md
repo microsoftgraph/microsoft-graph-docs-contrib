@@ -71,44 +71,44 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 
 | Member                        | Description       |
 | :---------------------------- | :---------------- |
-| troubleshootTenantGlobalFilterReport | The tenant-level global filter report for monitoring. |
-| troubleshootTenantNetworkTrendReport | The tenant-level network round-trip time trend report. |
-| troubleshootTenantNetworkAggregatedReport | The tenant-level aggregated network round-trip time report. |
-| troubleshootTenantConnectionFailureRateTrendReport | The tenant-level connection failure rate trend report. |
-| troubleshootTenantConnectionFailureRateAggregatedReport | The tenant-level aggregated connection failure rate report. |
-| troubleshootTenantCloudPCHealthTrendReport | The tenant-level Cloud PC health trend report. |
-| troubleshootTenantCloudPCHealthAggregatedReport | The tenant-level aggregated Cloud PC health report. |
-| troubleshootTenantActiveConnectionCountTrendReport | The tenant-level active connection count trend report. |
-| troubleshootTenantActiveConnectionCountAggregatedReport | The tenant-level aggregated active connection count report. |
-| troubleshootTenantMeanTimeToFailureTrendReport | The tenant-level mean time to failure trend report. |
-| troubleshootTenantMeanTimeToFailureAggregatedReport | The tenant-level aggregated mean time to failure report. |
-| troubleshootTenantRemoteSignInTimeTrendReport | The tenant-level remote sign-in time trend report. |
-| troubleshootTenantRemoteSignInTimeAggregatedReport | The tenant-level aggregated remote sign-in time report. |
-| troubleshootEventsOfViewDataTableReport | The events view data table report. |
-| troubleshootTenantEnvironmentMetricsOfViewDataTableReport | The tenant-level environment metrics view data table report. |
-| troubleshootCloudPCMetricsOfViewDataTableReport | The Cloud PC-level metrics view data table report. |
-| troubleshootConfigurationConnectionCountTrendV1Report | The configuration-level connection count trend report (v1). |
-| troubleshootConfigurationTotalConnectionCountBarV1Report | The configuration-level total connection count bar report (v1). |
-| troubleshootConfigurationGlobalFilterV1Report | The configuration-level global filter report (v1). |
-| troubleshootConnectionConfigurationOfViewDataTableV1Report | The connection configuration view data table report (v1). |
-| troubleshootTenantConnectedDevicesOfViewDataTableReport | The tenant-level connected devices view data table report. |
-| troubleshootEnvironmentOverviewOfViewDataTableReport | The environment overview view data table report. |
-| troubleshootCloudPCNetworkTrendReport | The Cloud PC-level network trend report. |
-| troubleshootCloudPCNetworkAggregatedReport | The Cloud PC-level aggregated network report. |
-| troubleshootCloudPCErrorTrendReport | The Cloud PC-level error trend report. |
-| troubleshootCloudPCErrorAggregatedReport | The Cloud PC-level aggregated error report. |
-| troubleshootCloudPCDurationTrendReport | The Cloud PC-level session duration trend report. |
-| troubleshootCloudPCDurationAggregatedReport | The Cloud PC-level aggregated session duration report. |
-| troubleshootCloudPCRemoteSignInTimeTrendReport | The Cloud PC-level remote sign-in time trend report. |
-| troubleshootCloudPCRemoteSignInTimeAggregatedReport | The Cloud PC-level aggregated remote sign-in time report. |
-| troubleshootCloudPCListReport | The Cloud PC list report. |
-| troubleshootCloudPCHealthTrendReport | The Cloud PC-level health trend report. |
-| troubleshootMatchedUserReport | The report of users matched to a Cloud PC. |
-| troubleshootMatchedCloudPCReport | The report of Cloud PCs matched to a user. |
-| troubleshootUserListReport | The user list report. |
-| troubleshootVMPerformanceReport | The virtual machine performance report for Cloud PCs. |
-| getAIEnabledStateCPCReport | The report of AI-enabled state for Cloud PCs. |
-| reserveLicenseReport | The reserve license report for Cloud PCs. |
+| troubleshootTenantGlobalFilterReport | Indicates the global filter parameters for tenant-level troubleshoot reports. |
+| troubleshootTenantNetworkTrendReport | Indicates time-series trend of network metrics at tenant level. |
+| troubleshootTenantNetworkAggregatedReport | Indicates aggregated network metrics at tenant level. |
+| troubleshootTenantConnectionFailureRateTrendReport | Indicates time-series trend of connection failure rate at tenant level. |
+| troubleshootTenantConnectionFailureRateAggregatedReport | Indicates aggregated connection failure rate at tenant level. |
+| troubleshootTenantCloudPCHealthTrendReport | Indicates time-series trend of Cloud PC health metrics at tenant level. |
+| troubleshootTenantCloudPCHealthAggregatedReport | Indicates aggregated Cloud PC health metrics at tenant level. |
+| troubleshootTenantActiveConnectionCountTrendReport | Indicates time-series trend of active connection count at tenant level. |
+| troubleshootTenantActiveConnectionCountAggregatedReport | Indicates aggregated active connection count at tenant level. |
+| troubleshootTenantMeanTimeToFailureTrendReport | Indicates time-series trend of Mean Time To Failure at tenant level. |
+| troubleshootTenantMeanTimeToFailureAggregatedReport | Indicates aggregated Mean Time To Failure at tenant level. |
+| troubleshootTenantRemoteSignInTimeTrendReport | Indicates time-series trend of remote sign-in time at tenant level. |
+| troubleshootTenantRemoteSignInTimeAggregatedReport | Indicates aggregated remote sign-in time at tenant level. |
+| troubleshootEventsOfViewDataTableReport | Indicates tabular view of troubleshoot events. |
+| troubleshootTenantEnvironmentMetricsOfViewDataTableReport | Indicates tabular view of tenant-level environment metrics. |
+| troubleshootCloudPCMetricsOfViewDataTableReport | Indicates tabular view of Cloud PC-level troubleshoot metrics. |
+| troubleshootConfigurationConnectionCountTrendV1Report | Indicates time-series trend of connection count grouped by configuration. |
+| troubleshootConfigurationTotalConnectionCountBarV1Report | Indicates total connection count distribution by configuration. |
+| troubleshootConfigurationGlobalFilterV1Report | Indicates the global filter parameters for configuration-level troubleshoot reports. |
+| troubleshootConnectionConfigurationOfViewDataTableV1Report | Indicates tabular view of connection configuration data. |
+| troubleshootTenantConnectedDevicesOfViewDataTableReport | Indicates tabular view of connected devices at tenant level. |
+| troubleshootEnvironmentOverviewOfViewDataTableReport | Indicates tabular view of environment overview metrics. |
+| troubleshootCloudPCNetworkTrendReport | Indicates time-series trend of network metrics at Cloud PC level. |
+| troubleshootCloudPCNetworkAggregatedReport | Indicates aggregated network metrics at Cloud PC level. |
+| troubleshootCloudPCErrorTrendReport | Indicates time-series trend of connection errors at Cloud PC level. |
+| troubleshootCloudPCErrorAggregatedReport | Indicates aggregated connection error metrics at Cloud PC level. |
+| troubleshootCloudPCDurationTrendReport | Indicates time-series trend of connection duration at Cloud PC level. |
+| troubleshootCloudPCDurationAggregatedReport | Indicates aggregated connection duration at Cloud PC level. |
+| troubleshootCloudPCRemoteSignInTimeTrendReport | Indicates time-series trend of remote sign-in time at Cloud PC level. |
+| troubleshootCloudPCRemoteSignInTimeAggregatedReport | Indicates aggregated remote sign-in time at Cloud PC level. |
+| troubleshootCloudPCListReport | Indicates list report of Cloud PCs with troubleshoot details. |
+| troubleshootCloudPCHealthTrendReport | Indicates time-series trend of health metrics at Cloud PC level. |
+| troubleshootMatchedUserReport | Indicates report of users matched to specified troubleshoot criteria. |
+| troubleshootMatchedCloudPCReport | Indicates report of Cloud PCs matched to specified troubleshoot criteria. |
+| troubleshootUserListReport | Indicates list report of users with troubleshoot details. |
+| troubleshootVMPerformanceReport | Indicates VM performance troubleshoot report for Cloud PCs. |
+| getAIEnabledStateCPCReport | Indicates the AI-enabled state report for Cloud PCs. |
+| reserveLicenseReport | Indicates the reserve license report for Cloud PCs. |
 
 ## Relationships
 
