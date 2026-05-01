@@ -35,7 +35,7 @@ When an administrator consents to Selected scopes for an application, they're de
 Selected scopes require a series of steps to work, which provides several means of control for administrators. The following example uses the `Lists.SelectedOperations.Selected` scope, but the steps apply to all *.Selected scopes.
 
 > [!IMPORTANT]
-> The Selected scopes APIs, such as `/sites/{siteid}/lists/{listid}/permissions` are currently only available in the `beta` Graph API.
+> The selected scopes APIs, such as `/sites/{siteid}/lists/{listid}/permissions`, are currently only available in the beta endpoint.
 
 1. The application must be consented in Entra ID to have either the application or delegated `Lists.SelectedOperations.Selected` scope.
 2. The application must be granted permissions to a list via a call to `POST /sites/{siteid}/lists/{listid}/permissions` with a specific role.
