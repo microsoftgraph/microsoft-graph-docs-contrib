@@ -106,7 +106,7 @@ The beta version of the security API offers two types of alerts that aggregate o
 - [Legacy alerts](#legacy-alerts) - the first generation of alerts in the Microsoft Graph security API. They're represented by the [alert](alert.md) resource defined in the `microsoft.graph` namespace.
 
 > [!IMPORTANT]
-> To see Sentinel alerts and incidents you must onboard Sentinel to the Defender Portal. For more information see [Connect Microsoft Sentinel to the Microsoft Defender portal](/unified-secops/microsoft-sentinel-onboard).
+> To view Sentinel alerts and incidents you must onboard Sentinel to the Defender Portal. For more information see [Connect Microsoft Sentinel to the Microsoft Defender portal](/unified-secops/microsoft-sentinel-onboard).
 
 ### Alerts and incidents
 

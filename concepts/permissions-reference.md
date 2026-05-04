@@ -417,7 +417,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | 9361dea9-4524-493d-941d-f1b65aaf6c7c | 88c856a2-de61-4632-b2d4-ac503cbc8dd2 |
-| DisplayText | Read agent identity blueprint principals. | Read agent identity blueprints principals. |
+| DisplayText | Read agent identity blueprint principals. | Read agent identity blueprint principals. |
 | Description | Allows reading agent identity blueprint principals without a signed-in user. | Allows reading agent identity blueprint principals with a signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 

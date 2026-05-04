@@ -63,10 +63,10 @@ DELETE /users/{userId|userPrincipalName}/notes/{noteId}/extensions/{extensionId}
 DELETE /organization/{organizationId}/extensions/{extensionId}
 DELETE /users/{userId|userPrincipalName}/contacts/{contactId}/extensions/{extensionId}
 DELETE /users/{userId|userPrincipalName}/extensions/{extensionId}
-DELETE /users/me/todo/lists/{listId}/extensions/{extensionId}
-DELETE /users/me/todo/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
-DELETE /users/me/tasks/lists/{listId}/extensions/{extensionId}
-DELETE /users/me/tasks/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
+DELETE /users/{userId|userPrincipalName}/todo/lists/{listId}/extensions/{extensionId}
+DELETE /users/{userId|userPrincipalName}/todo/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
+DELETE /users/{userId|userPrincipalName}/tasks/lists/{listId}/extensions/{extensionId}
+DELETE /users/{userId|userPrincipalName}/tasks/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
 DELETE /drive/items/{itemId}/extensions/{extensionId}
 DELETE /sites/{site-id}/extensions/{extensionId}
 ```

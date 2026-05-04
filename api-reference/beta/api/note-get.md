@@ -61,6 +61,7 @@ The following example shows how to get a [note](../resources/note.md) object.
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_note"
@@ -69,6 +70,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/me/notes/AAMkAGI2THVSAAA=
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-note-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -107,6 +114,7 @@ The following example shows how to get a [note](../resources/note.md) object usi
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_note_with_attachments"
@@ -115,6 +123,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/me/notes/AAMkAGI2THVSAAA=?$expand=attachments
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-note-with-attachments-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

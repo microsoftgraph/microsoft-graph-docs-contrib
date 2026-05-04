@@ -1,8 +1,8 @@
 ---
 title: "Create customDataProvidedResourceUploadSession"
 description: "Create a new customDataProvidedResourceUploadSession object."
-author: "pratima-cloudknox"
-ms.date: 10/09/2025
+author: "jaylenemartinez0"
+ms.date: 04/01/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [customDataProvidedResourceUploadSession](../resources/customdataprovidedresourceuploadsession.md) object.
+Create a [customDataProvidedResourceUploadSession](../resources/customdataprovidedresourceuploadsession.md) object. Only one upload session is allowed per reference instance (for example, access review instance) and [customDataProvidedResource](../resources/customdataprovidedresource.md) pair. Once you create an upload session, upload files, and complete the session, the data is processed and you cannot create another upload session for that same pair. If you encounter errors with files uploaded or need to start fresh, you can [delete the active upload session](accesspackageresource-delete-uploadsessions.md) to create a new one.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -38,19 +38,19 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPackageCatalogId}/accessPackageResources/{accessPackageResourceId}/uploadSessions
+POST /identityGovernance/catalogs/{catalogId}/accessPackageResources/{accessPackageResourceId}/uploadSessions
 ```
 
 ## Request headers
 
-|Header|Value|
+|Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Content-Type|application/json. Required.|
 
 ## Request body
 
-In the request body, supply a JSON representation of the [customDataProvidedResourceUploadSessionRequest](../resources/customdataprovidedresourceuploadsessionrequest.md)  object.
+In the request body, supply a JSON representation of the [customDataProvidedResourceUploadSessionRequest](../resources/customdataprovidedresourceuploadsessionrequest.md) object.
 
 You can specify the following properties when creating a **customDataProvidedResourceUploadSession**.
 
@@ -76,16 +76,16 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/6f4b1c6f-2a3d-4f8e-9b7a-5c1e2d3f4a6b/accessPackageResources/7b8a1c6f-2a3d-4f8e-9b7a-5c1e2d3f4a6b/uploadSessions
+POST https://graph.microsoft.com/beta/identityGovernance/catalogs/{catalogId}/accessPackageResources/{accessPackageResourceId}/uploadSessions
 Content-Type: application/json
 
 {
-"source": "BuildingAccessData",
-"type":  "#microsoft.graph.accessReviewDataUploadTriggerCallbackData",
-"data": {
-    "accessReviewId": "9e4b1c6f-2a3d-4f8e-9b7a-5c1e2d3f4a6b",
-    "accessReviewInstanceId": "6a9b1c6f-2a3d-4f8e-9b7a-5c1e2d3f4a6b"
-}
+  "source": "BuildingAccessData",
+  "type":  "#microsoft.graph.accessReviewDataUploadTriggerCallbackData",
+  "data": {
+      "accessReviewId": "9e4b1c6f-2a3d-4f8e-9b7a-5c1e2d3f4a6b",
+      "accessReviewInstanceId": "6a9b1c6f-2a3d-4f8e-9b7a-5c1e2d3f4a6b"
+  }
 }
 ```
 
@@ -130,16 +130,24 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "id": "23f27c15-72f9-45fe-9e9c-e3d8f75bdc44",
-    "status": "Active",
-    "isUploadDone": false,
-    "stats": {
-        "filesUploaded": 0,
-        "totalBytesUploaded": 0,
-    },
-    "files": [],
-    "createdDateTime": "2024-03-06T01:35:12.123Z",
-    "expirationDateTime": "2024-03-07T01:35:12.123Z"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/catalogs('3c9f2b1e-8a4d-4e7f-9d2a-6b3e1c7f5a9d')/accessPackageResources('15eeb4df-bd15-4d8b-9679-e75791dbc1d9')/uploadSessions/$entity",
+  "id": "0b64df22-1a83-472c-9556-6c3dc41742b9",
+  "referenceId": "ca24f9b9-5917-4971-9b5b-07aae0aa74e8",
+  "status": "active",
+  "isUploadDone": false,
+  "createdDateTime": "2026-04-01T18:24:07.148406Z",
+  "source": "BuildingAccessDataTIP",
+  "type": "#microsoft.graph.accessReviewDataUploadTriggerCallbackData",
+  "stats": {
+    "filesUploaded": 0,
+    "totalBytesUploaded": 0
+  },
+  "data": {
+    "@odata.type": "#microsoft.graph.accessReviewResourceDataUploadSessionContextData",
+    "accessReviewId": "f5744a40-bca0-4506-a286-a8afac513d1c",
+    "accessReviewInstanceId": "ca24f9b9-5917-4971-9b5b-07aae0aa74e8"
+  },
+  "files": []
 }
 ```
 

@@ -3,7 +3,7 @@ title: "agentUser resource type"
 description: "Represents a specialized subtype of user identity in Microsoft Entra ID designed for AI-powered applications (agents) that need to function as digital workers."
 author: "yyuank"
 ms.reviewer: "iamut"
-ms.date: 11/17/2025
+ms.date: 04/28/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-agent-id"
 doc_type: resourcePageType

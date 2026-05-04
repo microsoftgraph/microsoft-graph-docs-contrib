@@ -21,12 +21,8 @@ Read the properties and relationships of [agentUser](../resources/agentuser.md) 
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-|Permission type      | Least privileged permission | Higher privileged permissions |
-|:--------------------|:---------------------------|:-----------------------------|
-|Delegated (work or school account) | User.ReadBasic.All | User.Read.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All, User.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported. | Not supported.|
-|Application | User.ReadBasic.All | User.Read.All, AgentIdUser.ReadWrite.IdentityParentedBy, AgentIdUser.ReadWrite.All, User.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "agentuser_get" } -->
+[!INCLUDE [permissions-table](../includes/permissions/agentuser-get-permissions.md)]
 
 #### Permissions for specific scenarios
 - To read the **employeeLeaveDateTime** property:
@@ -35,7 +31,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 - To read the **customSecurityAttributes** property:
   - In delegated scenarios, the signed-in user must be assigned the *Attribute Assignment Administrator* role and the app granted the *CustomSecAttributeAssignment.Read.All* permission.
   - In app-only scenarios with Microsoft Graph permissions, the app must be granted the *CustomSecAttributeAssignment.Read.All* permission.
-
 ## HTTP request
 
 <!-- {

@@ -16,9 +16,9 @@ Namespace: microsoft.graph
 
 In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), an access package resource scope is a reference to a scope within a resource, for those resources that have multiple scopes.
 
-You can determine the access package resource scope, for a resource which has roles already added to an access package, by using [list accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) to return a collection of [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) objects.
+You can determine the access package resource scope, for a resource that has roles already added to an access package, by using [list accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) to return a collection of [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) objects.
 
-If the resource is in an access package catalog but has not yet had its roles added to an access package, you can determine the access package resource scope by using [list accessPackageResources](../api/accesspackagecatalog-list-accesspackageresources.md) and including `$expand=accessPackageResourceScopes,accessPackageResourceEnvironment` in the query.
+If the resource is in an access package catalog but hasn't yet had its roles added to an access package, you can determine the access package resource scope by using [list accessPackageResources](../api/accesspackagecatalog-list-accesspackageresources.md) and including `$expand=accessPackageResourceScopes,accessPackageResourceEnvironment` in the query.
 
 ## Properties
 
@@ -28,8 +28,8 @@ If the resource is in an access package catalog but has not yet had its roles ad
 |displayName|String|The display name of the scope.|
 |id|String| Read-only.|
 |isRootScope|Boolean|True if the scopes are arranged in a hierarchy and this is the top or root scope of the resource.|
-|originId|String|The unique identifier for the scope in the resource as defined in the origin system.|
-|originSystem|String|The origin system for the scope.|
+|originId|String| The unique identifier of the resource in the origin system. If a Microsoft Entra group, originId is the identifier of the group. Supports `$filter` (`eq`).|
+|originSystem|String| The type of the resource in the origin system, such as `SharePointOnline`, `AadApplication`, `AadGroup`, `AzureResources`, or `CustomDataProvidedResource`. Supports `$filter` (`eq`).|
 |roleOriginId|String|The origin system for the role, if different.|
 |url|String|A resource locator for the scope.|
 

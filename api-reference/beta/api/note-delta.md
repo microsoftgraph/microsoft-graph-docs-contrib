@@ -70,6 +70,7 @@ The following example shows the initial sync request to get all notes.
 
 #### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "note_delta_initial"
@@ -78,6 +79,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/me/notes/delta
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/note-delta-initial-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example shows the response.
@@ -120,6 +127,7 @@ The following example shows a subsequent sync request using the delta token from
 
 #### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "note_delta_subsequent"
@@ -128,6 +136,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/me/notes/delta?$deltatoken=abc123def456
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/note-delta-subsequent-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example shows the response.

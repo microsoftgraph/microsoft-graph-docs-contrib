@@ -663,6 +663,8 @@ items:
       href: ../../resources/cloudpconpremisesconnectionstatusdetail.md
     - name: Cloud PC on-premises connection status details
       href: ../../resources/cloudpconpremisesconnectionstatusdetails.md
+    - name: Cloud PC on-premises connection subnet IP detail
+      href: ../../resources/cloudpconpremisesconnectionsubnetIpdetail.md
     - name: Cloud PC partner agent install result
       href: ../../resources/cloudpcpartneragentinstallresult.md
     - name: Cloud PC provisioning policy assignment

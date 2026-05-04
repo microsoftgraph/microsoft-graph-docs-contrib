@@ -49,6 +49,9 @@ Don't supply a request body for this method.
 
 If successful, this action returns a `200 OK` response code and a [mailboxItemImportSession](../resources/mailboxitemimportsession.md) in the response body.
 
+> [!NOTE]
+> *Archive mailboxes with autoexpanded folders:* When you attempt to import an item into a folder that physically resides in an auxiliary (autoexpanded) archive mailbox, you might receive an `HTTP 409 Conflict` response that indicates the correct target mailbox. For details, see [Handle archive mailbox redirects](/graph/handle-archive-mailbox-redirects).
+
 ## Examples
 
 ### Request

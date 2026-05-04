@@ -19,7 +19,7 @@ Create a new [permission](../resources/permission.md) object on a [driveItem](..
 > [!IMPORTANT]
 > This API has the following restrictions:
 >
-> - For OneDrive for work or school and SharePoint Online, you can only use this method to create a new application permission. If you want to create a new user permission in a **driveItem**, see [invite](./driveitem-invite.md). For more information on application permissions, see [Overview of Selected permissions in OneDrive and SharePoint](/graph/permissions-selected-overview).
+> - For OneDrive for work or school and SharePoint Online, you can only use this method to create a new application permission. If you want to create a new user permission in a **driveItem**, see [invite](./driveitem-invite.md). For more information on application permissions, see [Overview of selected permissions in OneDrive and SharePoint](/graph/permissions-selected-overview).
 > - For SharePoint Embedded, you can only use this method to create a new [sharePointGroup](../resources/sharepointgroup.md) permission with app-only access. You can't create a permission on the root item of a container.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -57,8 +57,8 @@ In the request body, supply a JSON representation of the [permission](../resourc
 
 > [!IMPORTANT]
 >
-> - This API only accepts `grantedToV2` as input for the **permission** object. Other properties such as `grantedToIdentitiesV2` or the deprecated `grantedTo` and `grantedToIdentities` are not accepted.
-> - For SharePoint Embedded, when creating a new [sharePointGroup](../resources/sharepointgroup.md) permission, the request body must include both the `id` and `displayName` of the **sharePointGroup** referenced in the `grantedToV2.siteGroup` property. See [Example 2](#example-2-add-a-sharepoint-group-permission-to-a-driveitem-in-a-sharepoint-embedded-container).
+> - This API only accepts **grantedToV2** as input for the **permission** object. Other properties such as **grantedToIdentitiesV2** or the deprecated **grantedTo** and **grantedToIdentities** aren't accepted.
+> - For SharePoint Embedded, when you create a new [sharePointGroup](../resources/sharepointgroup.md) permission, we recommend that you reference the **sharePointGroup** using the **grantedToV2.sharePointGroup.id** property in the request body. This **id** should map to the **id** of the **sharePointGroup** property. For more information, see [Example 2](#example-2-add-a-sharepoint-group-permission-to-a-driveitem-in-a-sharepoint-embedded-container-using-its-id). We don't recommend that you reference a **sharePointGroup** using its **principalId** because the **principalId** is only unique within the site, unlike the **id** of the **sharePointGroup**, which is globally unique. In that case, the request body must include both **id** and **displayName** in the **grantedToV2.siteGroup** property. The **id** must point to the **principalId** of the **sharePointGroup** and the **displayName** must point to the **title** of the **sharePointGroup**. For more information, see [Example 3](#example-3-add-a-sharepoint-group-permission-to-a-driveitem-in-a-sharepoint-embedded-container-using-the-principalid).
 
 ## Response
 
@@ -159,9 +159,78 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Add a SharePoint group permission to a driveItem in a SharePoint Embedded container
+### Example 2: Add a SharePoint group permission to a driveItem in a SharePoint Embedded container using its ID
 
-The following example shows how to add a `write` [permission](../resources/permission.md) for the `Internal Collaborators` [sharePointGroup](../resources/sharepointgroup.md) on a [driveItem](../resources/driveitem.md) identified by `01V4EPHZNV2OJQJNBPWNCKDTXCQ5TSVBJU` in a SharePoint Embedded [fileStorageContainer](../resources/filestoragecontainer.md) identified by `b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop`.
+The following example shows how to add a `write` [permission](../resources/permission.md) for the `internal collaborators` [sharePointGroup](../resources/sharepointgroup.md) on a [driveItem](../resources/driveitem.md) identified by `01V4EPHZNV2OJQJNBPWNCKDTXCQ5TSVBJU` in a SharePoint Embedded [fileStorageContainer](../resources/filestoragecontainer.md) identified by `b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop`.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "driveitem-post-permissions-3",
+  "scopes": "filestoragecontainer.selected",
+  "target": "action"
+} -->
+```http
+POST https://graph.microsoft.com/beta/drives/b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop/items/01V4EPHZNV2OJQJNBPWNCKDTXCQ5TSVBJU/permissions
+Content-Type: application/json
+
+{
+  "grantedToV2": {
+    "sharePointGroup": {
+      "id": "ZGYwZTEzYTgtOTExOS00MjdmLWEzNjktOTdjOWM3YjNlYjcyXzE0"
+    }
+  },
+  "roles": ["write"]
+}
+```
+
+---
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.permission"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "id": "aTowaS50fG1zLnNwLmV4dHwxMEBkOWNlMGZjMS02MWQ4LTRhMmUtYjVkMy0xODc3MGRmMDY3MmM=",
+  "roles": [
+    "write"
+  ],
+  "grantedToV2": {
+    "sharePointGroup": {
+      "id": "ZGYwZTEzYTgtOTExOS00MjdmLWEzNjktOTdjOWM3YjNlYjcyXzE0",
+      "principalId": "10",
+      "title": "Internal Collaborators"
+    },
+    "siteGroup": {
+      "id": "10",
+      "displayName": "Internal Collaborators"
+    }
+  },
+  "grantedTo": {
+    "siteGroup": {
+      "id": "10",
+      "displayName": "Internal Collaborators"
+    }
+  }
+}
+```
+
+### Example 3: Add a SharePoint group permission to a driveItem in a SharePoint Embedded container using the principalId
+
+The following example shows how to add a `write` [permission](../resources/permission.md) for the `internal collaborators` [sharePointGroup](../resources/sharepointgroup.md) on a [driveItem](../resources/driveitem.md) identified by `01V4EPHZNV2OJQJNBPWNCKDTXCQ5TSVBJU` in a SharePoint Embedded [fileStorageContainer](../resources/filestoragecontainer.md) identified by `b!s8RqPCGh0ESQS2EYnKM0IKS3lM7GxjdAviiob7oc5pXv_0LiL-62Qq3IXyrXnEop`.
 
 #### Request
 

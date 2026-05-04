@@ -53,7 +53,7 @@ To evaluate as the signed-in user (delegated permission) or a specified user (ap
 
 ```http
 POST /users/{usersId}/security/informationProtection/sensitivityLabels/evaluateClassificationResults
-POST /users/me/security/informationProtection/sensitivityLabels/evaluateClassificationResults
+POST /me/security/informationProtection/sensitivityLabels/evaluateClassificationResults
 ```
 
 To evaluate as a service principal (application permission):

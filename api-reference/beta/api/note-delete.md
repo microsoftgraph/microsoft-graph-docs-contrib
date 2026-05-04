@@ -56,6 +56,7 @@ If the `If-Match` header doesn't match the current **changeKey**, this method re
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_note"
@@ -65,6 +66,12 @@ The following example shows a request.
 DELETE https://graph.microsoft.com/beta/me/notes/AAMkAGI2THVSAAA=
 If-Match: "CQAAABYAAABG"
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-note-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

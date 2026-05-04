@@ -22,10 +22,8 @@ description := "Discussion space for project team collaboration"
 requestBody.SetDescription(&description) 
 membershipType := graphmodels.STANDARD_CHANNELMEMBERSHIPTYPE 
 requestBody.SetMembershipType(&membershipType) 
-additionalData := map[string]interface{}{
-	"layoutType" : "chat", 
-}
-requestBody.SetAdditionalData(additionalData)
+layoutType := graphmodels.CHAT_CHANNELLAYOUTTYPE 
+requestBody.SetLayoutType(&layoutType) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 channels, err := graphClient.Teams().ByTeamId("team-id").Channels().Post(context.Background(), requestBody, nil)
