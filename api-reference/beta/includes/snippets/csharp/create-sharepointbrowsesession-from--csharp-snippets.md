@@ -11,12 +11,7 @@ using Microsoft.Graph.Beta.Models;
 
 var requestBody = new SharePointBrowseSession
 {
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"restorePointId" , "TXpSbE5HUXpNR1l0TldZMFlpMDBNMk16TFdFeFl6WXRZall3TTJFeFl6Sm1OV000WHpFPV8xNzQ5NTY3MDAwXzE0XzE="
-		},
-	},
+	RestorePointId = "TXpSbE5HUXpNR1l0TldZMFlpMDBNMk16TFdFeFl6WXRZall3TTJFeFl6Sm1OV000WHpFPV8xNzQ5NTY3MDAwXzE0XzE=",
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

@@ -227,11 +227,101 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Create a channel in migration mode
+### Example 3: Create a channel with chat layout type
+
+The following example shows how to create a channel with the chat layout type that provides a chat-like threading experience similar to group chats.
 
 #### Request
 
-The following example shows how to create a channel that will be used for importing messages.
+The following example shows a request to create a channel with **layoutType** set to `chat`.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_channel_with_chat_layout",
+  "sampleKeys": ["57fb72d0-d811-46f4-8947-305e6072eaa5"]
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels
+Content-type: application/json
+
+{
+  "displayName": "Project Collaboration",
+  "description": "Discussion space for project team collaboration",
+  "membershipType": "standard",
+  "layoutType": "chat"
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-channel-with-chat-layout-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-channel-with-chat-layout-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-channel-with-chat-layout-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-channel-with-chat-layout-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-channel-with-chat-layout-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-channel-with-chat-layout-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-channel-with-chat-layout-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.channel"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels/$entity",
+  "id": "19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2",
+  "createdDateTime": "2024-12-08T12:30:45.123Z",
+  "displayName": "Project Collaboration",
+  "description": "Discussion space for project team collaboration",
+  "membershipType": "standard",
+  "layoutType": "chat",
+  "isFavoriteByDefault": false,
+  "email": "",
+  "webUrl": "https://teams.microsoft.com/l/channel/19%3A4b6bed8d24574f6a9e436813cb2617d8%40thread.tacv2/Project%20Collaboration?groupId=57fb72d0-d811-46f4-8947-305e6072eaa5&tenantId=0afeb5d5-a667-4716-8fc7-733024389e91",
+  "tenantId": "0afeb5d5-a667-4716-8fc7-733024389e91"
+}
+```
+
+### Example 4: Create a channel in migration mode
+
+The following example shows how to create a channel that is used for importing messages.
+
+#### Request
+
+The following example shows a request.
 
 
 
@@ -312,11 +402,13 @@ Location: /teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19:4b6bed8d24
 }
 ```
 
-### Example 4: Create private channel on behalf of user using user principal name
+### Example 5: Create a private channel on behalf of a user using the user principal name
+
+The following example shows how to create a private channel and add a user as a team owner.
 
 #### Request
 
-The following example shows a request to create a private channel and add a user as a team owner.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -404,11 +496,13 @@ Content-type: application/json
 }
 ```
 
-### Example 5: Create a shared channel on behalf of a user
+### Example 6: Create a shared channel on behalf of a user
+
+The following example shows how to create a shared channel.
 
 #### Request
 
-The following example shows how to create a shared channel.
+The following example shows a request.
 
 
 

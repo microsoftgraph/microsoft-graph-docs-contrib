@@ -1,6 +1,6 @@
 ---
 title: "Delete sharePointGroup"
-description: "Delete a sharePointGroup object."
+description: "Delete a sharePointGroup object that is local to a fileStorageContainer."
 author: "tmarwendo-microsoft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -56,7 +56,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Example 1: Delete a SharePoint group
 
-The following example deletes a **sharePointGroup** identified by the ID `10` from the **fileStorageContainer** identified by the container ID `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`.
+The following example deletes a **sharePointGroup** identified by the ID `ZGYwZTEzYTgtOTExOS00MjdmLWEzNjktOTdjOWM3YjNlYjcyXzE0` from the **fileStorageContainer** identified by the container ID `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`.
 
 #### Request
 
@@ -68,7 +68,7 @@ The following example shows a request.
   "name": "delete_sharepointgroup"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/10
+DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/ZGYwZTEzYTgtOTExOS00MjdmLWEzNjktOTdjOWM3YjNlYjcyXzE0
 ```
 
 # [C#](#tab/csharp)
@@ -112,7 +112,7 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Attempt to delete a SharePoint group that doesn't exist
 
-The following example attempts to delete a **sharePointGroup** identified by the ID `11` from the **fileStorageContainer** identified by the container ID `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`; however, the group doesn't exist in the container.
+The following example attempts to delete a **sharePointGroup** identified by the ID `ZGYwZTEzYTgtOTExOS00MjdmLWEzNjktOTdjOWM3YjNlYjcyXzE1` from the **fileStorageContainer** identified by the container ID `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`; however, the group doesn't exist in the container.
 
 #### Request
 
@@ -122,7 +122,7 @@ The following example attempts to delete a **sharePointGroup** identified by the
   "name": "delete_nonexisting_sharepointgroup"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/11
+DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/ZGYwZTEzYTgtOTExOS00MjdmLWEzNjktOTdjOWM3YjNlYjcyXzE1
 ```
 
 # [C#](#tab/csharp)

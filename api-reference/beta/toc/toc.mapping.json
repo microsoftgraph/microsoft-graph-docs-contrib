@@ -75,6 +75,7 @@
                   "name": "Remote desktop security policy",
                   "resources": [
                     "remoteDesktopSecurityConfiguration",
+                    "approvedClientApp",
                     "targetDeviceGroup"
                   ]
                 }
@@ -162,7 +163,7 @@
           ]
         },
         {
-          "name": "Agent user (preview)",
+          "name": "Agent user",
           "resources": [
             "agentUser"
           ]
@@ -179,132 +180,148 @@
       ]
     },
     {
-      "name": "Backup storage",
-      "shouldSort": true,
-      "keywords": [
-        "M365 Backup Storage",
-        "Microsoft 365 Backup Storage",
-        "Enhanced Restore"
-      ],
-      "resources": [
-        "backupRestoreRoot",
-        "emailNotificationsSetting",
-        "exclusionUnitBase",
-        "exclusionUnitBulkAdditionJob",
-        "fullServiceBackupBase",
-        "protectionPolicyBase",
-        "protectionRuleBase",
-        "protectionUnitBase",
-        "restoreArtifactBase",
-        "restoreArtifactsBulkRequestBase",
-        "restorePoint",
-        "restoreSessionBase",
-        "serviceApp"
-      ],
+      "name": "Backup and recovery",
+      "overview": "../../resources/tenants-backup-recovery-overview.md",
       "childNodes": [
         {
-          "name": "Browse session",
-          "overview": "../../resources/browsesessionbase.md",
+          "name": "Entra backup and recovery",
+          "overview": "../../resources/entrarecoveryservices-backup-recovery-overview.md",
           "resources": [
-            "oneDriveForBusinessBrowseSession",
-            "sharePointBrowseSession"
+            "microsoft.graph.entraRecoveryServices.recoveryJob",
+            "microsoft.graph.entraRecoveryServices.recoveryJobBase",
+            "microsoft.graph.entraRecoveryServices.recoveryPreviewJob",
+            "microsoft.graph.entraRecoveryServices.snapshot"
           ]
         },
         {
-          "name": "Exclusion unit",
+          "name": "Microsoft 365 backup and storage",
+          "shouldSort": true,
+          "keywords": [
+            "M365 Backup Storage",
+            "Microsoft 365 Backup Storage",
+            "Enhanced Restore"
+          ],
           "resources": [
-            "driveExclusionUnit",
-            "mailboxExclusionUnit",
-            "siteExclusionUnit"
-          ]
-        },
-        {
-          "name": "Exclusion unit bulk addition job",
-          "resources": [
-            "driveExclusionUnitsBulkAdditionJob",
-            "mailboxExclusionUnitsBulkAdditionJob",
-            "siteExclusionUnitsBulkAdditionJob"
-          ]
-        },
-        {
-          "name": "Full-service backup",
-          "resources": [
-            "allDrivesBackup",
-            "allMailboxesBackup",
-            "allSitesBackup"
-          ]
-        },
-        {
-          "name": "Protection policy",
-          "resources": [
-            "exchangeProtectionPolicy",
-            "oneDriveForBusinessProtectionPolicy",
-            "sharePointProtectionPolicy"
-          ]
-        },
-        {
-          "name": "Protection rule",
-          "resources": [
-            "driveProtectionRule",
-            "mailboxProtectionRule",
-            "siteProtectionRule"
-          ]
-        },
-        {
-          "name": "Protection unit",
-          "resources": [
-            "driveProtectionUnit",
-            "mailboxProtectionUnit",
-            "siteProtectionUnit"
-          ]
-        },
-        {
-          "name": "Protection units bulk job",
-          "resources": [
-            "protectionUnitsBulkJobBase",
-            "driveProtectionUnitsBulkAdditionJob",
-            "mailboxProtectionUnitsBulkAdditionJob",
-            "siteProtectionUnitsBulkAdditionJob"
-          ]
-        },
-        {
-          "name": "Restore artifact",
-          "resources": [
-            "granularMailBoxRestoreArtifact",
-            "driveRestoreArtifact",
-            "granularDriveRestoreArtifact",
-            "mailboxRestoreArtifact",
-            "siteRestoreArtifact",
-            "granularSiteRestoreArtifact"
-          ]
-        },
-        {
-          "name": "Restore artifacts bulk request",
-          "resources": [
-            "driveRestoreArtifactsBulkAdditionRequest",
-            "mailboxRestoreArtifactsBulkAdditionRequest",
-            "siteRestoreArtifactsBulkAdditionRequest"
-          ]
-        },
-        {
-          "name": "Restore session",
-          "resources": [
-            "oneDriveForBusinessRestoreSession",
-            "exchangeRestoreSession",
-            "sharePointRestoreSession"
+            "backupRestoreRoot",
+            "emailNotificationsSetting",
+            "exclusionUnitBase",
+            "exclusionUnitBulkAdditionJob",
+            "fullServiceBackupBase",
+            "protectionPolicyBase",
+            "protectionRuleBase",
+            "protectionUnitBase",
+            "restoreArtifactBase",
+            "restoreArtifactsBulkRequestBase",
+            "restorePoint",
+            "restoreSessionBase",
+            "serviceApp"
+          ],
+          "childNodes": [
+            {
+              "name": "Browse session",
+              "overview": "../../resources/browsesessionbase.md",
+              "resources": [
+                "oneDriveForBusinessBrowseSession",
+                "sharePointBrowseSession"
+              ]
+            },
+            {
+              "name": "Exclusion unit",
+              "resources": [
+                "driveExclusionUnit",
+                "mailboxExclusionUnit",
+                "siteExclusionUnit"
+              ]
+            },
+            {
+              "name": "Exclusion unit bulk addition job",
+              "resources": [
+                "driveExclusionUnitsBulkAdditionJob",
+                "mailboxExclusionUnitsBulkAdditionJob",
+                "siteExclusionUnitsBulkAdditionJob"
+              ]
+            },
+            {
+              "name": "Full-service backup",
+              "resources": [
+                "allDrivesBackup",
+                "allMailboxesBackup",
+                "allSitesBackup"
+              ]
+            },
+            {
+              "name": "Protection policy",
+              "resources": [
+                "exchangeProtectionPolicy",
+                "oneDriveForBusinessProtectionPolicy",
+                "sharePointProtectionPolicy"
+              ]
+            },
+            {
+              "name": "Protection rule",
+              "resources": [
+                "driveProtectionRule",
+                "mailboxProtectionRule",
+                "siteProtectionRule"
+              ]
+            },
+            {
+              "name": "Protection unit",
+              "resources": [
+                "driveProtectionUnit",
+                "mailboxProtectionUnit",
+                "siteProtectionUnit"
+              ]
+            },
+            {
+              "name": "Protection units bulk job",
+              "resources": [
+                "protectionUnitsBulkJobBase",
+                "driveProtectionUnitsBulkAdditionJob",
+                "mailboxProtectionUnitsBulkAdditionJob",
+                "siteProtectionUnitsBulkAdditionJob"
+              ]
+            },
+            {
+              "name": "Restore artifact",
+              "resources": [
+                "granularMailBoxRestoreArtifact",
+                "driveRestoreArtifact",
+                "granularDriveRestoreArtifact",
+                "mailboxRestoreArtifact",
+                "siteRestoreArtifact",
+                "granularSiteRestoreArtifact"
+              ]
+            },
+            {
+              "name": "Restore artifacts bulk request",
+              "resources": [
+                "driveRestoreArtifactsBulkAdditionRequest",
+                "mailboxRestoreArtifactsBulkAdditionRequest",
+                "siteRestoreArtifactsBulkAdditionRequest"
+              ]
+            },
+            {
+              "name": "Restore session",
+              "resources": [
+                "oneDriveForBusinessRestoreSession",
+                "exchangeRestoreSession",
+                "sharePointRestoreSession"
+              ]
+            }
+          ],
+          "complexTypes": [
+            "artifactQuery",
+            "browseQueryResponseItem",
+            "notificationRecipients",
+            "protectionPolicyArtifactCount",
+            "restorePointSearchResponse",
+            "restorePointSearchResult",
+            "retentionSetting",
+            "serviceStatus",
+            "timePeriod"
           ]
         }
-      ],
-      "complexTypes": [
-        "artifactQuery",
-        "browseQueryResponseItem",
-        "notificationRecipients",
-        "protectionPolicyArtifactCount",
-        "restorePointSearchResponse",
-        "restorePointSearchResult",
-        "retentionSetting",
-        "serviceStatus",
-        "timePeriod"
       ]
     },
     {
@@ -672,6 +689,7 @@
             "cloudPcNotificationSetting",
             "cloudPcOnPremisesConnectionStatusDetail",
             "cloudPcOnPremisesConnectionStatusDetails",
+            "cloudPcOnPremisesConnectionSubnetIpDetail",
             "cloudPcPartnerAgentInstallResult",
             "cloudPcProvisioningPolicyAssignment",
             "cloudPcProvisioningPolicyAutopatch",
@@ -1337,16 +1355,6 @@
                   ]
                 }
               ]
-            },
-            {
-              "name": "Entra Backup and Recovery",
-              "overview": "../../resources/entrarecoveryservices-backup-recovery-overview.md",
-              "resources": [
-                "microsoft.graph.entraRecoveryServices.recoveryJob",
-                "microsoft.graph.entraRecoveryServices.recoveryJobBase",
-                "microsoft.graph.entraRecoveryServices.recoveryPreviewJob",
-                "microsoft.graph.entraRecoveryServices.snapshot"
-              ]
             }
           ]
         },
@@ -1774,6 +1782,7 @@
                 "onFraudProtectionLoadStartListener",
                 "onInteractiveAuthFlowStartListener",
                 "onPasswordSubmitListener",
+                "onVerifiedIdClaimValidationListener",
                 "onPhoneMethodLoadStartListener",
                 "onTokenIssuanceStartListener",
                 "onUserCreateStartListener"
@@ -1905,6 +1914,7 @@
                 "onAttributeCollectionSubmitCustomExtension",
                 "onOtpSendCustomExtension",
                 "onPasswordSubmitCustomExtension",
+                "onVerifiedIdClaimValidationCustomExtension",
                 "onTokenIssuanceStartCustomExtension"
               ]
             },
@@ -2471,6 +2481,7 @@
         "mailFolderOperation",
         "mailSearchFolder",
         "messageRule",
+        "note",
         "exchangeMessageTrace",
         "userConfiguration"
       ],
@@ -2761,11 +2772,17 @@
                     "userRegistrationActivitySummary",
                     "userSignInUsageByAuthMethodActivity"
                   ]
+                },
+                {
+                  "name": "Premium license utilization (preview)",
+                  "resources": [
+                    "azureADPremiumLicenseInsight"
+                  ]
                 }
               ]
             },
             {
-              "name": "Microsoft Entra logs",
+              "name": "Microsoft Entra logs and reports",
               "overview": "../../resources/azure-ad-auditlog-overview.md",
               "shouldSort": true,
               "resources": [
@@ -2783,7 +2800,7 @@
           ]
         },
         {
-          "name": "Microsoft 365 monitoring reports (preview)",
+          "name": "Monitoring reports (preview)",
           "overview": "../../resources/m365-monitoring-api-overview.md",
           "resources": [
             "serviceActivity"
@@ -3634,6 +3651,16 @@
                   "href": "../../api/teamwork-sendactivitynotificationtorecipients.md"
                 }
               ]
+            },
+            {
+              "name": "Sections (preview)",
+              "resources": [
+                "teamworkSection",
+                "teamworkSectionItem"
+              ],
+              "complexTypes": [
+                "sectionDisplayIcon"
+              ]
             }
           ],
           "complexTypes": [
@@ -3690,8 +3717,19 @@
       ]
     },
     {
-      "name": "Tenant management",
+      "name": "Tenants",
       "shouldSort": true,
+      "overview": "../../resources/tenants-overview.md",
+      "keywords": [
+        "tenant management",
+        "tenant configuration",
+        "tenant governance",
+        "Lighhouse",
+        "cross-tenant access",
+        "multitenant",
+        "backup",
+        "recovery"
+      ],
       "childNodes": [
         {
           "name": "Configuration management",

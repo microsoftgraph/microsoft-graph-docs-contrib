@@ -25,7 +25,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |:---|:---|:---|
 |[Get](../api/tenantgovernanceservices-tenantgovernancesetting-get.md)|[microsoft.graph.tenantGovernanceServices.tenantGovernanceSetting](../resources/tenantgovernanceservices-tenantgovernancesetting.md)|Read the properties of the [tenantGovernanceSetting](../resources/tenantgovernanceservices-tenantgovernancesetting.md) singleton.|
 |[Update](../api/tenantgovernanceservices-tenantgovernancesetting-update.md)|[microsoft.graph.tenantGovernanceServices.tenantGovernanceSetting](../resources/tenantgovernanceservices-tenantgovernancesetting.md)|Update the **canReceiveInvitations** property of the tenant governance settings.|
-|[enableRelatedTenants](../api/tenantgovernanceservices-tenantgovernancesetting-enablerelatedtenants.md)|None|Enable the related tenants feature for tenant discovery.|
+|[Enable related tenants](../api/tenantgovernanceservices-tenantgovernancesetting-enablerelatedtenants.md)|None|Enable the related tenants feature for tenant discovery.|
 
 ## Properties
 |Property|Type|Description|

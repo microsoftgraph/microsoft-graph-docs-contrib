@@ -3,7 +3,7 @@ title: "Use delta query to track changes in Microsoft Graph data"
 description: "Use delta query to discover newly created, updated, or deleted entities without performing a full read of the target resource with every request."
 author: FaithOmbongi
 ms.author: ombongifaith
-ms.reviewer: keylimesoda
+ms.reviewer: jessieli-ad
 ms.topic: concept-article
 ms.subservice: change-notifications
 ms.localizationpriority: high

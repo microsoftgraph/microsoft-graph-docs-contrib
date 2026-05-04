@@ -25,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "backuprestoreroot_list_sharepointbrowsesessions" } -->
 [!INCLUDE [permissions-table](../includes/permissions/backuprestoreroot-list-sharepointbrowsesessions-permissions.md)]
 
+[!INCLUDE [rbac-backuprestore-browse-granular-apis](../includes/rbac-for-apis/rbac-backuprestore-browse-granular-apis.md)]
+
 ## HTTP request
 
 <!-- {

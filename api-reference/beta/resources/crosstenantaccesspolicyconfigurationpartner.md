@@ -45,6 +45,7 @@ Inherits from [policyDeletableItem](../resources/policydeletableitem.md).
 | b2bCollaborationOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your partner-specific configuration for users in your organization going outbound to access resources in another organization via Microsoft Entra B2B collaboration. |
 | b2bDirectConnectInbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your partner-specific configuration for users from other organizations accessing your resources via Azure B2B direct connect. |
 | b2bDirectConnectOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your partner-specific configuration for users in your organization going outbound to access resources in another organization via Microsoft Entra B2B direct connect. |
+| blockServiceProviderOutboundAccess | Boolean | Specifies whether users can use granular delegated admin privileges (GDAP) to sign-in and access resources in other organizations. Default value is `false`. |
 |deletedDateTime|DateTimeOffset|Shows the last date and time the policy was deleted.|
 | inboundTrust | [crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md) | Determines the partner-specific configuration for trusting other Conditional Access claims from external Microsoft Entra organizations. |
 | isInMultiTenantOrganization | Boolean | Identifies whether a tenant is a member of a multitenant organization. |
@@ -80,6 +81,7 @@ The following JSON representation shows the resource type.
   "b2bCollaborationOutbound": {"@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"},
   "b2bDirectConnectInbound": {"@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"},
   "b2bDirectConnectOutbound": {"@odata.type": "microsoft.graph.crossTenantAccessPolicyB2BSetting"},
+  "blockServiceProviderOutboundAccess": "Boolean",
   "deletedDateTime": "String (timestamp)",
   "inboundTrust": {"@odata.type": "microsoft.graph.crossTenantAccessPolicyInboundTrust"},
   "isInMultiTenantOrganization": "Boolean",

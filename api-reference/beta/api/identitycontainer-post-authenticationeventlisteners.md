@@ -26,6 +26,7 @@ Create a new [authenticationEventListener](../resources/authenticationeventliste
 - [onEmailOtpSendListener](../resources/onemailotpsendlistener.md)
 - [onPasswordSubmitListener](../resources/onpasswordsubmitlistener.md)
 - [onFraudProtectionLoadStartListener](../resources/onfraudprotectionloadstartlistener.md) resource type
+- [onVerifiedIdClaimValidationListener](../resources/onverifiedidclaimvalidationlistener.md) resource type
 
 > [!NOTE]
 >
@@ -77,6 +78,7 @@ You can specify the following properties when creating an **authenticationEventL
 |handler|[onPhoneMethodLoadStartHandler](../resources/onphonemethodloadstarthandler.md) | The handler to invoke when conditions are met. Can be set for the **onPhoneMethodLoadStartListener** listener type. |
 |handler|[onPasswordSubmitHandler](../resources/onpasswordsubmithandler.md) | The handler to invoke when conditions are met. Can be set for the **onPasswordSubmitListener** listener type. |
 |handler|[onFraudProtectionLoadStartHandler](../resources/onFraudProtectionLoadStartHandler.md) | The handler to invoke when conditions are met. Can be updated for the **onFraudProtectionLoadStartListener** type. |
+|handler|[onVerifiedIdClaimValidationCustomExtensionHandler](../resources/onverifiedidclaimvalidationcustomextensionhandler.md) | The handler to invoke when conditions are met. Can be set for the **onVerifiedIdClaimValidationListener** listener type. |
 |priority|Int32| The priority of this handler. Between 0 (lower priority) and 1000 (higher priority). Required.|
 
 
@@ -808,5 +810,105 @@ Content-Type: application/json
       }
     }
   }
+}
+```
+
+### Example 7: Create an onVerifiedIdClaimValidationListener object
+
+#### Request
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_authenticationeventlistener_onVerifiedIdClaimValidationListener"
+}
+-->
+```http
+POST https://graph.microsoft.com/beta/identity/authenticationEventListeners
+Content-Type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.onVerifiedIdClaimValidationListener",
+    "displayName": "Verified ID Claim Validation Listener",
+    "priority": 500,
+    "conditions": {
+        "applications": {
+            "includeAllApplications": false,
+            "includeApplications": [
+                {
+                    "appId": "63856651-13d9-4784-9abf-20758d509e19"
+                }
+            ]
+        }
+    },
+    "authenticationEventsFlowId": "5a8e8f57-82b2-4cbf-b145-3e6e0c154897",
+    "handler": {
+        "@odata.type": "#microsoft.graph.onVerifiedIdClaimValidationCustomExtensionHandler",
+        "configuration": {
+            "@odata.type": "#microsoft.graph.customExtensionOverwriteConfiguration",
+            "clientConfiguration": {
+                "@odata.type": "#microsoft.graph.customExtensionClientConfiguration",
+                "maximumRetries": 1,
+                "timeoutInMilliseconds": 2000
+            },
+            "behaviorOnError": {
+                "@odata.type": "#microsoft.graph.customExtensionBehaviorOnError"
+            }
+        },
+        "customExtension": {
+            "id": "6a0a3429-be77-0aed-951e-1c8aed62bf8a"
+        }
+    }
+}
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authenticationEventListener"
+}
+-->
+```http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventListeners/$entity",
+    "@odata.type": "#microsoft.graph.onVerifiedIdClaimValidationListener",
+    "id": "6a7455ef-0906-bbc3-f902-0f9ab8903082",
+    "displayName": "Verified ID Claim Validation Listener",
+    "priority": 500,
+    "conditions": {
+        "applications": {
+            "includeAllApplications": false,
+            "includeApplications": [
+                {
+                    "appId": "63856651-13d9-4784-9abf-20758d509e19"
+                }
+            ]
+        }
+    },
+    "authenticationEventsFlowId": "5a8e8f57-82b2-4cbf-b145-3e6e0c154897",
+    "handler": {
+        "@odata.type": "#microsoft.graph.onVerifiedIdClaimValidationCustomExtensionHandler",
+        "configuration": {
+            "@odata.type": "#microsoft.graph.customExtensionOverwriteConfiguration",
+            "clientConfiguration": {
+                "@odata.type": "#microsoft.graph.customExtensionClientConfiguration",
+                "maximumRetries": 1,
+                "timeoutInMilliseconds": 2000
+            },
+            "behaviorOnError": {
+                "@odata.type": "#microsoft.graph.customExtensionBehaviorOnError"
+            }
+        },
+        "customExtension": {
+            "id": "6a0a3429-be77-0aed-951e-1c8aed62bf8a"
+        }
+    }
 }
 ```

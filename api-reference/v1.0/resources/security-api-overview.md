@@ -69,7 +69,10 @@ Alerts are detailed warnings about suspicious activities in a customer's tenant 
 
 The security API offers two types of alerts that aggregate other alerts from security providers and make analyzing attacks and determining responses easier: 
 - [Alerts and incidents](#alerts-and-incidents) - these are the latest generation of alerts in the Microsoft Graph security API. They're represented by the [alert](security-alert.md) resource and its collection, [incident](security-incident.md) resource, defined in the `microsoft.graph.security` namespace.
-- [Legacy alerts](#legacy-alerts) - these are the first generation of alerts in the Microsoft Graph security API. They're represented by the [alert](alert.md) resource defined in the `microsoft.graph` namespace.
+- [Legacy alerts](#legacy-alerts) - these are the first generation of alerts in the Microsoft Graph security AI. They're represented by the [alert](alert.md) resource defined in the `microsoft.graph` namespace.
+
+> [!IMPORTANT]
+> To view Sentinel alerts and incidents you must onboard Sentinel to the Defender Portal. For more information see [Connect Microsoft Sentinel to the Microsoft Defender portal](/unified-secops/microsoft-sentinel-onboard).
 
 ### Alerts and incidents
 
@@ -141,6 +144,11 @@ The Defender for Identity sensors management APIs allows you to:
 - Manage sensor settings, such as adding descriptions, enabling or disabling delayed updates, and specifying the domain controller that the sensor connects to for querying Entra ID.
 - Identify sensors that are ready to be activated.
 - Define whether the sensors in your infrastructure are to be activated automatically or manually.
+- Identify servers that are ready to be activated with the unified agent.
+- Enable or disable the automatic activation of eligible servers for the unified agent.
+- Activate or deactivate the unified agent on eligible servers.
+- Enable or disable the automatic enabling of the required events auditing configuration during the sensor’s activation.
+
 
 ### identityAccounts
 The [identityAccounts resource and related APIs](../resources/security-identityaccounts.md) allows you to retrieve details of users that are flagged by Microsoft Defender for Identity alerts, and apply actions such as disabling accounts and resetting the user password for the compromised user.

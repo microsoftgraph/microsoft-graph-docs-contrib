@@ -18,6 +18,9 @@ When a security provider detects a threat, it creates an alert in the system. Mi
 
 [!INCLUDE [alerts-callout-two-types](../includes/alerts-callout-two-types.md)]
 
+> [!IMPORTANT]
+> To view Sentinel alerts and incidents you must onboard Sentinel to the Defender Portal. For more information see [Connect Microsoft Sentinel to the Microsoft Defender portal](/unified-secops/microsoft-sentinel-onboard).
+
 ## Methods
 
 |Method|Return type|Description|

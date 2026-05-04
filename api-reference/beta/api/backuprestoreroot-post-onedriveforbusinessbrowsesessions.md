@@ -25,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "backuprestoreroot_post_onedriveforbusinessbrowsesessions" } -->
 [!INCLUDE [permissions-table](../includes/permissions/backuprestoreroot-post-onedriveforbusinessbrowsesessions-permissions.md)]
 
+[!INCLUDE [rbac-backuprestore-browse-granular-apis](../includes/rbac-for-apis/rbac-backuprestore-browse-granular-apis.md)]
+
 ## HTTP request
 
 <!-- {

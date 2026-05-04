@@ -72,9 +72,10 @@ Represents a location where multiple users or a group of users can store files a
 |:---|:---|:---|
 |columns|[columnDefinition](../resources/columndefinition.md) collection|The set of custom structured metadata supported by the **fileStorageContainer**. Read-write.|
 |drive|[drive](../resources/drive.md)|The drive of the resource **fileStorageContainer**. Read-only.|
+|migrationJobs|[sharePointMigrationJob](../resources/sharepointmigrationjob.md) collection|The collection of **sharePointMigrationJob** objects local to the container. Read-write.|
 |permissions|[permission](../resources/permission.md) collection|The set of permissions for users in the **fileStorageContainer**. Permission for each user is set by the **roles** property. The possible values are: `reader`, `writer`, `manager`, and `owner`. Read-write.|
 |recycleBin|[recycleBin](../resources/recyclebin.md)|Recycle bin of the **fileStorageContainer**. Read-only.|
-|migrationJobs|[sharePointMigrationJob](../resources/sharepointmigrationjob.md) collection|The collection of **sharePointMigrationJob** objects local to the container. Read-write.|
+|sharePointGroups|[sharePointGroup](../resources/sharepointgroup.md) collection|The collection of **sharePointGroup** objects local to the container. Read-write.|
 
 ### roles property values
 

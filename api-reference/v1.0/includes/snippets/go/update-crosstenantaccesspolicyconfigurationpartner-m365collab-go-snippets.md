@@ -1,0 +1,42 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```go
+
+
+// Code snippets are only available for the latest major version. Current major version is $v1.*
+
+// Dependencies
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
+requestBody := graphmodels.NewCrossTenantAccessPolicyConfigurationPartner()
+m365CollaborationInbound := graphmodels.NewCrossTenantAccessPolicyM365CollaborationInboundSetting()
+users := graphmodels.NewCrossTenantAccessPolicyTargetConfiguration()
+accessType := graphmodels.ALLOWED_CROSSTENANTACCESSPOLICYTARGETCONFIGURATIONACCESSTYPE 
+users.SetAccessType(&accessType) 
+
+
+crossTenantAccessPolicyTarget := graphmodels.NewCrossTenantAccessPolicyTarget()
+target := "AllUsers"
+crossTenantAccessPolicyTarget.SetTarget(&target) 
+targetType := graphmodels.USER_CROSSTENANTACCESSPOLICYTARGETTYPE 
+crossTenantAccessPolicyTarget.SetTargetType(&targetType) 
+
+targets := []graphmodels.CrossTenantAccessPolicyTargetable {
+	crossTenantAccessPolicyTarget,
+}
+users.SetTargets(targets)
+m365CollaborationInbound.SetUsers(users)
+requestBody.SetM365CollaborationInbound(m365CollaborationInbound)
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
+partners, err := graphClient.Policies().CrossTenantAccessPolicy().Partners().ByCrossTenantAccessPolicyConfigurationPartnerTenantId("crossTenantAccessPolicyConfigurationPartner-tenantId").Patch(context.Background(), requestBody, nil)
+
+
+```

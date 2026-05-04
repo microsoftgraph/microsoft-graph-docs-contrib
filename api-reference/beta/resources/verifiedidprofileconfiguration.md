@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Verified ID profile configuration defining set of properties of a specific Verified ID credential. 
+Verified ID profile configuration defining set of properties of a specific [Verified ID credential](../resources/verifiedidprofile.md). 
 
 ## Properties
 |Property|Type|Description|
@@ -22,6 +22,7 @@ Verified ID profile configuration defining set of properties of a specific Verif
 |acceptedIssuer|String|Trusted Verified ID issuer.|
 |claimBindings|[claimBinding](../resources/claimbinding.md) collection| Claim bindings from Verified ID to source attributes.|
 |claimBindingSource|claimBindingSource| Source to validate against Verified ID claims. The possible values are: `directory`, `unknownFutureValue`.|
+|claimValidation|[claimValidation](../resources/claimvalidation.md)|Validation settings for claim processing.|
 |type|String|Verified ID type.|
 
 ## Relationships
@@ -44,7 +45,10 @@ The following JSON representation shows the resource type.
     {
       "@odata.type": "microsoft.graph.claimBinding"
     }
-  ]
+  ],
+  "claimValidation": {
+    "@odata.type": "microsoft.graph.claimValidation"
+  }
 }
 ```
 

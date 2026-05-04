@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the Active Directory domain password for a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object. This API is supported when the type of the **cloudPcOnPremisesConnection** object is `hybridAzureADJoin`.
+Update the Active Directory domain password for a successful [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md). This API is supported when the type of the **cloudPcOnPremisesConnection** object is `hybridAzureADJoin`.
 
 [!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomainPassword
+POST /deviceManagement/virtualEndpoint/onPremisesConnections/{id}/updateAdDomainPassword
 ```
 
 ## Request headers
@@ -49,7 +49,7 @@ The following table shows the parameter that you can use with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|adDomainPassword|String|The password associated with **adDomainUsername**.|
+|adDomainPassword|String|The password associated with the **adDomainUsername**.|
 
 
 
@@ -63,47 +63,21 @@ If successful, this action returns a `204 No Content` response code.
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "cloudpconpremisesconnection_updateaddomainpassword"
+  "name": "cloudpconpremisesconnection_updateaddomainpassword",
+  "sampleKeys": ["07f12770-a225-4957-9127-0d247cf4ffff"]
 }
 -->
 
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomainPassword
+POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/onPremisesConnections/07f12770-a225-4957-9127-0d247cf4ffff/updateAdDomainPassword
 Content-Type: application/json
 
 {
-  "adDomainPassword": "AdDomainPassword value"
+  "adDomainPassword": "AdDomainPassword_XXXX"
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/cloudpconpremisesconnection-updateaddomainpassword-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/cloudpconpremisesconnection-updateaddomainpassword-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/cloudpconpremisesconnection-updateaddomainpassword-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/cloudpconpremisesconnection-updateaddomainpassword-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/cloudpconpremisesconnection-updateaddomainpassword-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/cloudpconpremisesconnection-updateaddomainpassword-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 

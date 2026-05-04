@@ -3,6 +3,104 @@
     {
       "ChangeList": [
         {
+          "Id": "5775ca5d-09fc-4f68-bd66-de8b96668897",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "sectionIconSkinTone",
+          "ChangeType": "Addition",
+          "Description": "Added the **sectionIconSkinTone** enumeration type.",
+          "Target": "sectionIconSkinTone"
+        },
+        {
+          "Id": "5775ca5d-09fc-4f68-bd66-de8b96668897",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "sectionItemType",
+          "ChangeType": "Addition",
+          "Description": "Added the **sectionItemType** enumeration type.",
+          "Target": "sectionItemType"
+        },
+        {
+          "Id": "5775ca5d-09fc-4f68-bd66-de8b96668897",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "sectionSortType",
+          "ChangeType": "Addition",
+          "Description": "Added the **sectionSortType** enumeration type.",
+          "Target": "sectionSortType"
+        },
+        {
+          "Id": "5775ca5d-09fc-4f68-bd66-de8b96668897",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "sectionType",
+          "ChangeType": "Addition",
+          "Description": "Added the **sectionType** enumeration type.",
+          "Target": "sectionType"
+        },
+        {
+          "Id": "5775ca5d-09fc-4f68-bd66-de8b96668897",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sectionDisplayIcon",
+          "ChangeType": "Addition",
+          "Description": "Added the [sectionDisplayIcon](https://learn.microsoft.com/en-us/graph/api/resources/sectionDisplayIcon?view=graph-rest-beta) resource.",
+          "Target": "sectionDisplayIcon"
+        },
+        {
+          "Id": "5775ca5d-09fc-4f68-bd66-de8b96668897",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamworkSection",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamworkSection](https://learn.microsoft.com/en-us/graph/api/resources/teamworkSection?view=graph-rest-beta) resource and associated methods.",
+          "Target": "teamworkSection"
+        },
+        {
+          "Id": "5775ca5d-09fc-4f68-bd66-de8b96668897",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamworkSectionItem",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamworkSectionItem](https://learn.microsoft.com/en-us/graph/api/resources/teamworkSectionItem?view=graph-rest-beta) resource and associated methods.",
+          "Target": "teamworkSectionItem"
+        },
+        {
+          "Id": "5775ca5d-09fc-4f68-bd66-de8b96668897",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "sections",
+          "ChangeType": "Addition",
+          "Description": "Added the **sections** relationship to the [userTeamwork](https://learn.microsoft.com/en-us/graph/api/resources/userTeamwork?view=graph-rest-beta) resource.",
+          "Target": "userTeamwork"
+        },
+        {
+          "Id": "5775ca5d-09fc-4f68-bd66-de8b96668897",
+          "ApiChange": "Method",
+          "ChangedApiName": "move",
+          "ChangeType": "Addition",
+          "Description": "Added the [move](https://learn.microsoft.com/en-us/graph/api/teamworkSectionItem-move?view=graph-rest-beta) method to the [teamworkSectionItem](https://learn.microsoft.com/en-us/graph/api/resources/teamworkSectionItem?view=graph-rest-beta) resource.",
+          "Target": "teamworkSectionItem"
+        },
+        {
+          "Id": "5775ca5d-09fc-4f68-bd66-de8b96668897",
+          "ApiChange": "Term",
+          "ChangedApiName": "sectionsOrder",
+          "ChangeType": "Addition",
+          "Description": "Added **sectionsOrder** as an instance attribute that you can use with the [teamworkSection](https://learn.microsoft.com/en-us/graph/api/resources/teamworkSection?view=graph-rest-beta) resource.",
+          "Target": "sectionsOrder"
+        },
+        {
+          "Id": "5775ca5d-09fc-4f68-bd66-de8b96668897",
+          "ApiChange": "Term",
+          "ChangedApiName": "sectionsVersion",
+          "ChangeType": "Addition",
+          "Description": "Added **sectionsVersion** as an instance attribute that you can use with the [teamworkSection](https://learn.microsoft.com/en-us/graph/api/resources/teamworkSection?view=graph-rest-beta) resource.",
+          "Target": "sectionsVersion"
+        }
+      ],
+      "Id": "5775ca5d-09fc-4f68-bd66-de8b96668897",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-04-20T02:51:14.1306785Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "4e6379bf-f90c-46c4-a4f8-f5336fcd31f6",
           "ApiChange": "Relationship",
           "ChangedApiName": "targetedMessages",
@@ -3479,6 +3577,32 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-12-11T00:00:00.0000000Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e1f2a3b4-5c6d-7e8f-9a0b-c1d2e3f4a5b6",
+          "ApiChange": "Property",
+          "ChangedApiName": "layoutType",
+          "ChangeType": "Addition",
+          "Description": "Added the **layoutType** property to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "e1f2a3b4-5c6d-7e8f-9a0b-c1d2e3f4a5b6",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "channelLayoutType",
+          "ChangeType": "Addition",
+          "Description": "Added the **channelLayoutType** enumeration type.",
+          "Target": "channelLayoutType"
+        }
+      ],
+      "Id": "e1f2a3b4-5c6d-7e8f-9a0b-c1d2e3f4a5b6",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-04-01T00:00:00.0000000Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Messaging"
     },

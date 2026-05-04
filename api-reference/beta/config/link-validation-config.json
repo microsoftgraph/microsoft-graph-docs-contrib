@@ -41,6 +41,7 @@
         "/viva",
         "/windows",
         "/windows-hardware",
+        "/unified-secops",
         "/universal-print"
     ]
 }

@@ -36,7 +36,7 @@ AI agents require the same identity, access, security, and governance frameworks
 
 ---
 
-## Tenant administration or directory management
+## Tenant administration and directory management
 
 A core functionality of identity and access management is managing your tenant configuration, administrative roles, and settings. Microsoft Graph provides APIs to manage your Microsoft Entra tenant for the following scenarios:
 
@@ -46,6 +46,7 @@ A core functionality of identity and access management is managing your tenant c
 > | Manage administrative units including the following operations: <ul><li>Create administrative units <li> Create and manage members and membership rules of administrative units <li> Assign administrator roles that are scoped to administrative units</ul> | [administrativeUnit](/graph/api/resources/administrativeunit) and its associated APIs |
 > | Retrieve BitLocker recovery keys | [bitlockerRecoveryKey](/graph/api/resources/bitlockerrecoverykey) and its associated APIs |
 > | Manage custom security attributes | See [Overview of custom security attributes using the Microsoft Graph API](/graph/api/resources/custom-security-attributes-overview) |
+> | Back up and restore critical directory objects to a previously known good state, including users, groups, applications, service principals, and conditional access policies, helping you recover from accidental changes or security compromises :::image type="content" source="/graph/images/preview-label.png" alt-text="Available on beta only."::: | See [Overview of Microsoft Entra Backup and Recovery APIs](/graph/api/resources/entrarecoveryservices-backup-recovery-overview) |
 > | Manage deleted directory objects. The functionality to store deleted objects in a "recycle bin" is supported for the following objects: <ul><li> Administrative units <li> Applications <li> External user profiles :::image type="content" source="/graph/images/preview-label.png" alt-text="Available on beta only."::: <li> Groups <li> Pending external user profiles :::image type="content" source="/graph/images/preview-label.png" alt-text="Available on beta only."::: <li> Service principals <li> Users</ul> | <ul><li> [Get](/graph/api/directory-deleteditems-get) or [List](/graph/api/directory-deleteditems-list) deleted objects <li> [Permanently delete](/graph/api/directory-deleteditems-delete) a deleted object   <li> [Restore a deleted item](/graph/api/directory-deleteditems-restore) <li> [List deleted items owned by user](/graph/api/directory-deleteditems-getuserownedobjects)</ul> |
 > | Manage devices in the cloud |<ul><li> [device](/graph/api/resources/device) and its associated APIs <li> :::image type="content" source="/graph/images/preview-label.png" alt-text="Available on beta only."::: [deviceTemplate](/graph/api/resources/devicetemplate) and its associated APIs</ul>|
 > | View local administrator credential information for all device objects in Microsoft Entra ID that are enabled with Local Admin Password Solution (LAPS). This feature is the cloud-based LAPS solution | [deviceLocalCredentialInfo](/graph/api/resources/devicelocalcredentialinfo) and its associated APIs |

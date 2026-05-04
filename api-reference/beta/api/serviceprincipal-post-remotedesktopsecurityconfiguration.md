@@ -1,11 +1,11 @@
 ---
 title: "Create remoteDesktopSecurityConfiguration"
 description: "Create a new remoteDesktopSecurityConfiguration object on the servicePrincipal."
-author: "SanDeo-MSFT"
+author: "mjsantani"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
-ms.date: 04/05/2024
+ms.date: 01/02/2026
 ---
 
 # Create remoteDesktopSecurityConfiguration
@@ -25,12 +25,15 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
+
 <!-- {
   "blockType": "ignored"
 }
 -->
-```http
-POST /servicePrincipals/{servicePrincipalsId}/remoteDesktopSecurityConfiguration
+``` http
+POST /servicePrincipals/{id}/remoteDesktopSecurityConfiguration
+POST /servicePrincipals(appId='{appId}')/remoteDesktopSecurityConfiguration
 ```
 
 ## Request headers
@@ -46,7 +49,7 @@ You can specify the following properties when creating a **remoteDesktopSecurity
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isRemoteDesktopProtocolEnabled|Boolean|Whether new Microsoft Entra ID [Remote Desktop Services (RDS) authentication protocol](/openspecs/windows_protocols/ms-rdpbcgr/dc43f040-d75d-49a9-90c6-0c9999281136) to authenticate a user to [Microsoft Entra joined](/azure/active-directory/devices/concept-directory-join) or [Microsoft Entra hybrid joined](/azure/active-directory/devices/concept-hybrid-join) devices.over RDP is enabled or not. Required.|
+|isRemoteDesktopProtocolEnabled|Boolean|Whether new Microsoft Entra ID [Remote Desktop Services (RDS) authentication protocol](/openspecs/windows_protocols/ms-rdpbcgr/dc43f040-d75d-49a9-90c6-0c9999281136) to authenticate a user to [Microsoft Entra joined](/azure/active-directory/devices/concept-directory-join) or [Microsoft Entra hybrid joined](/azure/active-directory/devices/concept-hybrid-join) devices over RDP is enabled or not. Required.|
 
 
 
@@ -64,7 +67,7 @@ The following example shows a request.
   "name": "create_remotedesktopsecurityconfiguration_from_"
 }
 -->
-```http
+``` http
 POST https://graph.microsoft.com/beta/servicePrincipals/00af5dfb-85da-4b41-a677-0c6b86dd34f8/remoteDesktopSecurityConfiguration
 Content-Type: application/json
 
@@ -88,7 +91,7 @@ The following example shows the response.
   "@odata.type": "microsoft.graph.remoteDesktopSecurityConfiguration"
 }
 -->
-```http
+``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
 

@@ -1499,6 +1499,8 @@ items:
       href: ../../resources/onusercreatestartlistener.md
     - name: On password submit listener
       href: ../../resources/onpasswordsubmitlistener.md
+    - name: On verified id claim validation listener
+      href: ../../resources/onverifiedidclaimvalidationlistener.md
   - name: Authentication methods
     items:
     - name: Overview
@@ -1993,6 +1995,8 @@ items:
       href: ../../resources/ontokenissuancestartcustomextension.md
     - name: On password submit custom extension
       href: ../../resources/onpasswordsubmitcustomextension.md
+    - name: On verified id claim validation custom extension
+      href: ../../resources/onverifiedidclaimvalidationcustomextension.md
   - name: Data policy operation
     items:
     - name: Data policy operation
@@ -2325,6 +2329,14 @@ items:
         href: ../../api/authenticationstrengthroot-delete-policies.md
       - name: List usage
         href: ../../api/authenticationstrengthpolicy-usage.md
+    - name: Device registration policy
+      items:
+      - name: Device registration policy
+        href: ../../resources/deviceregistrationpolicy.md
+      - name: Get
+        href: ../../api/deviceregistrationpolicy-get.md
+      - name: Update
+        href: ../../api/deviceregistrationpolicy-update.md
     - name: Feature rollout policy
       items:
       - name: Feature rollout policy
@@ -2549,6 +2561,22 @@ items:
         href: ../../api/identityapiconnector-delete.md
     - name: User flows in Azure AD B2C (deprecated)
       href: ../../resources/identityuserflow.md
+  - name: Verified ID
+    items:
+    - name: Verified ID profile
+      items:
+      - name: Verified ID profile
+        href: ../../resources/verifiedidprofile.md
+      - name: List
+        href: ../../api/identityverifiedidroot-list-profiles.md
+      - name: Create
+        href: ../../api/identityverifiedidroot-post-profiles.md
+      - name: Get
+        href: ../../api/verifiedidprofile-get.md
+      - name: Update
+        href: ../../api/verifiedidprofile-update.md
+      - name: Delete
+        href: ../../api/identityverifiedidroot-delete-profiles.md
   - name: Web application firewall
     items:
     - name: Web application firewall provider

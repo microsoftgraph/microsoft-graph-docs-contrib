@@ -41,9 +41,8 @@ items:
     href: toc/applications/toc.yml
   - name: Agents
     href: toc/agents/toc.yml
-  - name: Backup storage
-    href: toc/backup-storage/toc.yml
-    displayName: M365 Backup Storage, Microsoft 365 Backup Storage, Enhanced Restore
+  - name: Backup and recovery
+    href: toc/backup-and-recovery/toc.yml
   - name: Calendars
     href: toc/calendars/toc.yml
     displayName: Outlook, Outlook calendar
@@ -104,8 +103,9 @@ items:
   - name: Teamwork and communications
     href: toc/teamwork-and-communications/toc.yml
     displayName: Microsoft Teams
-  - name: Tenant management
-    href: toc/tenant-management/toc.yml
+  - name: Tenants
+    href: toc/tenants/toc.yml
+    displayName: tenant management, tenant configuration, tenant governance, Lighhouse, cross-tenant access, multitenant, backup, recovery
   - name: To-do tasks
     href: toc/to-do-tasks/toc.yml
     displayName: Microsoft To Do

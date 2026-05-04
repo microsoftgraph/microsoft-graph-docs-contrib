@@ -9,7 +9,9 @@ ms.date: 07/22/2024
 ---
 # sharePointIdentitySet resource type
 
-Represents a keyed collection of [sharePointIdentity](sharePointIdentity.md) resources. This resource extends from the **identitySet** resource to provide the ability to expose SharePoint-specific information to the user.
+Namespace: microsoft.graph
+
+Represents a keyed collection of [sharePointIdentity][] and [identity][] resources. This resource extends from the **identitySet** resource to provide the ability to expose SharePoint-specific information to the user.
 
 This resource is used to represent a set of identities associated with various events for an item, such as _created by_ or _last modified by_.
 
@@ -17,21 +19,22 @@ For usage information, see [driveItem][].
 
 ## Properties
 
-| Property    | Type                   | Description |
-|:------------|:-----------------------|:----------------------------------------------------------- |
-| application | [identity][]           | The application associated with this action. Optional. |
-| device      | [identity][]           | The device associated with this action. Optional. |
-| group       | [identity][]           | The group associated with this action. Optional. |
-| user        | [identity][]           | The user associated with this action. Optional. |
-| siteGroup   | [sharePointIdentity][] | The SharePoint group associated with this action. Optional. |
-| siteUser    | [sharePointIdentity][] | The SharePoint user associated with this action. Optional. |
+| Property | Type | Description |
+|:---|:---|:---|
+| application | [identity][] | The application associated with this action. Optional. |
+| device | [identity][] | The device associated with this action. Optional. |
+| group | [identity][] | The group associated with this action. Optional. |
+| sharePointGroup | [sharePointGroupIdentity][] | The SharePoint group associated with this action, identified by a globally unique ID. Use this property instead of **siteGroup** when available. Optional. |
+| siteGroup | [sharePointIdentity][] | The SharePoint group associated with this action, identified by a principal ID that is unique only within the site. Optional. |
+| siteUser | [sharePointIdentity][] | The SharePoint user associated with this action. Optional. |
+| user | [identity][] | The user associated with this action. Optional. |
 
 ## JSON representation
 
 The following JSON representation shows the resource type.
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.sharePointIdentitySet",
-       "optionalProperties": ["user", "application", "group", "device", "siteUser", "siteGroup"],
+       "optionalProperties": ["user", "application", "group", "device", "siteUser", "siteGroup", "sharePointGroup"],
        "openType": true } -->
 
 ```json
@@ -43,13 +46,15 @@ The following JSON representation shows the resource type.
   
   "group": {"@odata.type": "microsoft.graph.identity"},
   "siteUser": {"@odata.type": "microsoft.graph.sharePointIdentity"},
-  "siteGroup":{"@odata.type": "microsoft.graph.sharePointIdentity"}
+  "siteGroup":{"@odata.type": "microsoft.graph.sharePointIdentity"},
+  "sharePointGroup": {"@odata.type": "microsoft.graph.sharePointGroupIdentity"}
 }
 ```
 
-[driveItem]: driveItem.md
+[driveItem]: driveitem.md
 [identity]: identity.md
-[sharePointIdentity]: sharePointIdentity.md
+[sharePointIdentity]: sharepointidentity.md
+[sharePointGroupIdentity]: sharepointgroupidentity.md
 
 <!-- {
   "type": "#page.annotation",

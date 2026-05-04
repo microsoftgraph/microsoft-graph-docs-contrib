@@ -16,7 +16,7 @@ Namespace: microsoft.graph.security
 
 Represents a Microsoft Defender for Identity sensor that's ready to be activated.
 
-Inherits from [microsoft.graph.entity](../resources/entity.md).
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method| Return type                                                                                      |Description|
@@ -25,13 +25,15 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |[Activate](../api/security-sensorcandidate-activate.md)| None                                                                                             |Activate Microsoft Defender for Identity sensors.|
 
 ## Properties
-|Property|Type| Description                                                                                                                                                     |
-|:---|:---|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|computerDnsName|String| The DNS name of the computer associated with the sensor.                                                                                                        |
-|domainName|String| The domain name of the sensor.                                                                                                                                  |
-|id|String| The unique identifier for the sensor candidate. Inherited from [microsoft.graph.entity](../resources/entity.md). Inherits from [entity](../resources/entity.md) |
-|lastSeenDateTime|DateTimeOffset| The date and time when the sensor was last seen.                                                                                                                |
-|senseClientVersion|String| The version of the Defender for Identity sensor client.  Supports `$filter` (`eq`).                                                                                                       |
+|Property| Type                                                                | Description                                                                                                                                                     |
+|:---|:--------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|computerDnsName| String                                                              | The DNS name of the computer associated with the sensor.                                                                                                        |
+|domainName| String                                                              | The domain name of the sensor.                                                                                                                                  |
+|id| String                                                              | The unique identifier for the sensor candidate. Inherited from [microsoft.graph.entity](../resources/entity.md). Inherits from [entity](../resources/entity.md) |
+|lastSeenDateTime| DateTimeOffset                                                      | The date and time when the sensor was last seen.                                                                                                                |
+|senseClientVersion| String                                                              | The version of the Defender for Identity sensor client.  Supports `$filter` (`eq`).                                                                             |
+|sensorTypes| microsoft.graph.security.deviceType | The list of device types for the sensor. The possible values are: `domainController`, `adfs`, `adcs`, `entraConnect` `unknownFutureValue`. This flagged enumeration allows multiple members to be returned simultaneously.                       |
+
 
 ## Relationships
 None.
@@ -53,6 +55,7 @@ The following JSON representation shows the resource type.
   "computerDnsName": "String",
   "senseClientVersion": "String",
   "lastSeenDateTime": "String (timestamp)",
-  "domainName": "String"
+  "domainName": "String",
+  "sensorTypes": "String"
 }
 ```

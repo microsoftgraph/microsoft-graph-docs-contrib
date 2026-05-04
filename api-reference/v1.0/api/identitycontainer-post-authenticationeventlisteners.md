@@ -5,7 +5,7 @@ author: "soneff"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 10/17/2024
+ms.date: 04/15/2026
 ---
 
 # Create authenticationEventListener
@@ -492,5 +492,106 @@ Content-Type: application/json
     "migrationPropertyId": "extension_b7b1c57b532f40b8b5ed4b7a7ba67401_requiresMigration",
     "configuration": null
   }
+}
+```
+
+### Example 5: Create an onVerifiedIdClaimValidationListener object
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_authenticationeventlistener_onVerifiedIdClaimValidationListener"
+}
+-->
+``` http
+POST https://graph.microsoft.com/v1.0/identity/authenticationEventListeners
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.onVerifiedIdClaimValidationListener",
+  "displayName": "Verified ID Claim Validation Listener",
+  "priority": 500,
+  "conditions": {
+    "applications": {
+      "includeAllApplications": false,
+      "includeApplications": [
+        {
+          "appId": "63856651-13d9-4784-9abf-20758d509e19"
+        }
+      ]
+    }
+  },
+  "authenticationEventsFlowId": "5a8e8f57-82b2-4cbf-b145-3e6e0c154897",
+  "handler": {
+    "@odata.type": "#microsoft.graph.onVerifiedIdClaimValidationCustomExtensionHandler",
+    "configuration": {
+      "@odata.type": "#microsoft.graph.customExtensionOverwriteConfiguration",
+      "clientConfiguration": {
+        "@odata.type": "#microsoft.graph.customExtensionClientConfiguration",
+        "maximumRetries": 1,
+        "timeoutInMilliseconds": 2000
+      },
+      "behaviorOnError": {
+        "@odata.type": "#microsoft.graph.customExtensionBehaviorOnError"
+      }
+    },
+    "customExtension": {
+      "id": "6a0a3429-be77-0aed-951e-1c8aed62bf8a"
+    }
+  }
+}
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.authenticationEventListener"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/authenticationEventListeners/$entity",
+    "@odata.type": "#microsoft.graph.onVerifiedIdClaimValidationListener",
+    "id": "6a7455ef-0906-bbc3-f902-0f9ab8903082",
+    "displayName": "Verified ID Claim Validation Listener",
+    "priority": 500,
+    "conditions": {
+        "applications": {
+            "includeAllApplications": false,
+            "includeApplications": [
+                {
+                    "appId": "63856651-13d9-4784-9abf-20758d509e19"
+                }
+            ]
+        }
+    },
+    "authenticationEventsFlowId": "5a8e8f57-82b2-4cbf-b145-3e6e0c154897",
+    "handler": {
+        "@odata.type": "#microsoft.graph.onVerifiedIdClaimValidationCustomExtensionHandler",
+        "configuration": {
+            "@odata.type": "#microsoft.graph.customExtensionOverwriteConfiguration",
+            "clientConfiguration": {
+                "@odata.type": "#microsoft.graph.customExtensionClientConfiguration",
+                "maximumRetries": 1,
+                "timeoutInMilliseconds": 2000
+            },
+            "behaviorOnError": {
+                "@odata.type": "#microsoft.graph.customExtensionBehaviorOnError"
+            }
+        },
+        "customExtension": {
+            "id": "6a0a3429-be77-0aed-951e-1c8aed62bf8a"
+        }
+    }
 }
 ```

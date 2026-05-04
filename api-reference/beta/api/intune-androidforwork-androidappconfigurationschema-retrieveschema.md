@@ -1,4 +1,4 @@
-﻿---
+---
 title: "retrieveSchema action"
 description: "Retrieves the managed application configurations schema for the specified Android app."
 author: "jaiprakashmb"

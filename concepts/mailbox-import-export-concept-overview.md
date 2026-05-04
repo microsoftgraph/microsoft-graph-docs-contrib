@@ -14,10 +14,10 @@ ms.topic: concept-article
 
 The mailbox import and export APIs in Microsoft Graph let your application import and export contents from Exchange Online mailboxes. Contents within a mailbox can be accessed as a set of [folders](/graph/api/resources/mailboxfolder) and [items](/graph/api/resources/mailboxitem) in a uniform format without having to understand the metadata and structure of each item type separately. These items can be [exported](/graph/api/mailbox-exportitems) as an opaque stream in full fidelity (you can't change the export stream). Full-fidelity exports ensure that when you [import](/graph/api/mailbox-createimportsession) an item back into a mailbox, Exchange recreates the item without any loss of information.
 
-These APIs support access to data in users' primary mailboxes and shared mailboxes on Exchange Online. Items can be imported to the same mailbox or a different one.
+These APIs support access to data in users' primary, shared, and archive mailboxes on Exchange Online. Items can be imported to the same mailbox or a different one.
 
 > [!Important]
-> The mailbox import and export APIs in Microsoft Graph are not designed for mailbox backup and restore. For mailbox backup and restore in Microsoft 365, see [Microsoft 365 Backup](/graph/backup-storage-concept-overview).
+> The mailbox import and export APIs in Microsoft Graph are not designed for mailbox backup and restore. For mailbox backup and restore in Microsoft 365, see [Microsoft 365 Backup](/microsoft-365/backup/backup-overview) and [Microsoft 365 Backup storage in Microsoft Graph](/graph/backup-storage-concept-overview).
 
 ## Why integrate with the mailbox import and export APIs?
 

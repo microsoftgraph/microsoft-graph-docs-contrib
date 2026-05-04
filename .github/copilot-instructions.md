@@ -1,269 +1,146 @@
-# Microsoft Graph REST API Documentation Review Guidelines
+# Microsoft Graph docs workflow guide
 
-You are a content reviewer for Microsoft Graph REST API reference documentation. Use these guidelines to review pull requests (PRs) against the Microsoft Graph documentation standards outlined in the Microsoft Graph Content Development Kit (CDK).
+This file is the top-level routing and standards guide for Microsoft Graph docs work in this repo. Before editing or reviewing files, use the workflow and path routing below to load the correct detailed instructions.
 
-## Additional Documentation Resources
+## Required workflow
 
-For comprehensive authoring and review guidance, reference these files located in the `.github/prompts/` folder:
+Before doing any docs work, determine the task type and read the matching prompt file first.
 
-- **[author-api-docs.prompt.md](.github/prompts/author-api-docs.prompt.md)**: Complete authoring guidelines for creating and updating Microsoft Graph API reference documentation, including workflows for fresh APIs, promotions, and deprecations.
-- **[review-api-docs.prompt.md](.github/prompts/review-api-docs.prompt.md)**: Detailed review process guidelines that combine authoring best practices with the content standards outlined below.
+- **Authoring or updating docs:** read `.github/prompts/author-api-docs.prompt.md`
+- **Reviewing docs changes:** read `.github/prompts/review-api-docs.prompt.md`
 
-These files provide in-depth guidance on:
-- Documentation authoring workflows and scenarios
-- Content structure and organization requirements
-- Quality standards and validation processes
-- Common patterns and best practices specific to Microsoft Graph API documentation
+Then read the scenario-specific files that those prompt files direct you to use.
 
-## File Type Classifications
+## Scenario routing
 
-This repository contains several types of files with different review requirements:
+Use this table when deciding which detailed guidance to load.
 
-### 1. API Reference Topics (api-reference/v1.0/api/ and api-reference/beta/api/)
-- **Metadata attribute**: `doc_type: apiPageType`
-- **Purpose**: Document individual API operations (GET, POST, PATCH, DELETE, etc.)
+| If the task is... | Read first | Then read |
+| --- | --- | --- |
+| New beta API docs or schema additions | `.github/prompts/author-api-docs.prompt.md` | `.github/prompts/author-api-docs/common.md`, `.github/prompts/author-api-docs/public-preview.md` |
+| GA promotion to v1.0 | `.github/prompts/author-api-docs.prompt.md` | `.github/prompts/author-api-docs/common.md`, `.github/prompts/author-api-docs/ga.md` |
+| Deprecation or retirement | `.github/prompts/author-api-docs.prompt.md` | `.github/prompts/author-api-docs/common.md`, `.github/prompts/author-api-docs/deprecate-retire.md` |
+| Cleanup, maintenance, backfill, or one-off docs tasks | `.github/prompts/author-api-docs.prompt.md` | `.github/prompts/author-api-docs/common.md`, `.github/prompts/author-api-docs/general.md` |
+| Reviewing a PR, branch, or changed files | `.github/prompts/review-api-docs.prompt.md` | `.github/prompts/author-api-docs/common.md` plus the scenario-specific checklist files it references |
 
-### 2. Resource Topics (api-reference/v1.0/resources/ and api-reference/beta/resources/)
-- **Metadata attribute**: `doc_type: resourcePageType`
-- **Purpose**: Document resource types (entities and complex types)
+### Additive guidance
 
-### 3. Changelog Files (changelog/)
-- **Purpose**: JSON files documenting schema changes and API updates
-- **Naming convention**: `{WorkloadArea}.json` (e.g., `Microsoft.AAD.LCM.json`)
+Read these additional files whenever they apply:
 
-### 4. Conceptual Content (concepts/)
-- These guidelines DO NOT apply to files in the `concepts/` folder
+- **Enumeration work:** `.github/prompts/author-api-docs/enumerations.md`
+- **Manual changelog authoring:** `templates/changelog-patterns.md`
+- **RBAC include files:** `templates/rbac-for-apis-include.md`
 
-## General Review Guidelines
-- All files must be in lowercase; otherwise, the PR will be blocked from review and approval.
-- Include `Namespace: microsoft.graph*` immediately after the H1 title.
+## Path-based routing
 
-## API Reference Topics Review Guidelines
+Use this table when the changed file paths are already known.
 
-### ✅ Required elements
+| Path or file type | Required detailed guidance |
+| --- | --- |
+| `api-reference/*/api/*.md` | `.github/prompts/author-api-docs/common.md#api-method-reference-files` |
+| `api-reference/*/resources/*.md` | `.github/prompts/author-api-docs/common.md#resource-reference-files` |
+| Enum additions, promotions, updates, or deprecations | `.github/prompts/author-api-docs/enumerations.md` |
+| `changelog/*.json` | `.github/prompts/author-api-docs/common.md#updating-the-changelog` |
+| `concepts/whats-new-overview.md` | `.github/prompts/author-api-docs/common.md#updating-whats-new` |
+| `api-reference/*/toc/toc.mapping.json` | `.github/prompts/author-api-docs/common.md#updating-the-table-of-contents-toc` |
+| `api-reference/*/includes/rbac-for-apis/*.md` | `.github/prompts/author-api-docs/common.md#permissions` and `templates/rbac-for-apis-include.md` |
+| `temp-docstubs/` inputs and cleanup | `.github/prompts/author-api-docs/common.md#temp-docstubs-folder` and `.github/prompts/review-api-docs.prompt.md` if reviewing |
 
-**Titles:**
-- Begin with imperative verbs (e.g., "Get", "Create", "Update")
+## File classes
 
-**Descriptions:**
-- Begin with imperative verbs (e.g., "Get", "Create", "Update")
-- Use active voice where possible
-- Link to referenced resource types
+This repo contains several docs surfaces with different expectations:
 
-**Permissions:**
-- Must start with the standard boilerplate text
-- Must have include link to a permissions table
+1. **API reference topics** — `api-reference/v1.0/api/` and `api-reference/beta/api/`
+   - `doc_type: apiPageType`
+   - Individual operations such as GET, POST, PATCH, PUT, DELETE, actions, and functions
+2. **Resource topics** — `api-reference/v1.0/resources/` and `api-reference/beta/resources/`
+   - Usually `doc_type: resourcePageType`, except for enum definition topics which are `doc_type: enumPageType`
+   - Entity types, complex types, and enum topics
+3. **Changelog files** — `changelog/`
+   - JSON records for API changes
+4. **What's New** — `concepts/whats-new-overview.md`
+   - Monthly customer-facing release summary
+5. **TOC mapping files** — `api-reference/*/toc/toc.mapping.json`
+   - Discovery and navigation for API reference content
+6. **RBAC include files** — `api-reference/*/includes/rbac-for-apis/`
+   - Delegated-role guidance used by API topics
 
-**HTTP request:**
-- Relative URL instead of absolute URL. For example `/users` instead of `https://graph.microsoft.com/beta/users`
-- Preceded by the HTML comment `<!-- { "blockType": "ignored" } -->`
-- Use format `{type-id}` for placeholders where there are more than 1 ID in the URL
+These instructions primarily govern API reference documentation. General conceptual docs in `concepts/` usually follow other workflows, but **`concepts/whats-new-overview.md` is explicitly in scope** for API change announcements.
 
-**Optional query parameters**
-- References to OData query parameters and supported operators should be formatted in Markdown code font, for example, `$filter`, `$filter` (`eq`), `$select`, `$expand`, `$top`, `$orderby`, `$search`
+## Non-negotiable repo-wide rules
 
-**Function parameters**
-- Description of the parameter must include whether the parameter is optional or required.
+These rules apply across authoring and review scenarios:
 
-**Request Headers:**
-- Include Authorization header by default
-- Add Content-Type header for request body operations
+1. **All filenames must be lowercase.**
+2. **Namespace declaration is required** immediately after the H1 title: `Namespace: microsoft.graph*`.
+3. **Beta disclaimer is required for beta files** immediately after the namespace declaration and **must be absent in v1.0 files**.
+4. **Work on a branch, not `main`.**
+5. **Examples must use full `graph.microsoft.com` URLs** and **pseudo-values**, not data type names.
+6. **Only `v1.0` and `beta` are valid API versions in doc URLs and examples.** Do not use test or internal environment versions such as `ppe`, `ppe-beta`, `ppe-v1.0`, `staging`, `stagingbeta`, or similar variants.
+7. **HTTP request sections must use relative URLs** such as `GET /users`.
+8. **API and resource topics must keep the standard section order** for their file type.
+9. **Tables must preserve required ordering rules**, including alphabetical ordering where the detailed guidance requires it.
+10. **Enum changes must be checked across all exposed documentation surfaces**, not only the enum definition itself.
+11. **Customer-visible API changes require changelog review and may require What's New updates.**
 
-**Response:**
-- Link to returned resource types
-- Include optional H3 errors section
+## Core standards
 
-**Examples:**
-- Example URLs must be full URLs, for example, `https://graph.microsoft.com/v1.0/users`
-- Domain must be `graph.microsoft.com`
-- Use pseudo-values instead of data types in examples
-- Each example must contain "Request" and "Response" block
-- Use H3 structure for multiple examples: "Example 1: <Description>"
-- Must contain HTML comment block immediately preceding JSON block with at least blockType and name attributes
-- "name" attribute value must be unique in the file
-- Remove "shortened for readability" note if no response body (i.e. `204 No Content`)
+Use the linked prompt files for the full standards. The rules below are the most commonly missed and should be checked first.
 
-Sample valid example - response object contains pseudo-values
+### API topics
 
-### Request
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "list_application"
-}-->
-
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/applications
-```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-application-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-application-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-application-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-application-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-application-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-application-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/list-application-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-### Response
-
-The following example shows the response.
-
-> **Note:** The response object shown here might be shortened for readability.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.application)"
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications",
-  "value": [
-    {
-      "appId": "00000000-0000-0000-0000-000000000000",
-      "identifierUris": [ "http://contoso/" ],
-      "displayName": "My app",
-      "publisherDomain": "contoso.com",
-      "signInAudience": "AzureADMyOrg"
-    }
-  ]
-}
-```
-
-Sample invalid example - response object contains data types instead of pseudo-values
-
-### Request
-<!-- {
-  "blockType": "request"
-}-->
-
-```http
-GET https://graph.microsoft.com/v1.0/applications
-```
-
-### Response
+- Titles and descriptions should begin with imperative verbs.
+- Include the standard permissions boilerplate and permissions include.
+- Include the `<!-- { "blockType": "ignored" } -->` comment before the HTTP request syntax.
+- Function parameter descriptions must say whether the parameter is required or optional.
+- Examples must include Request and Response blocks, with unique `name` values in block metadata.
+- Do not use custom H2 headings; keep the predefined API topic order.
 
-The following example shows the response.
+### Resource topics
 
-> **Note:** The response object shown here might be shortened for readability.
+- Descriptions should begin with present-tense verbs.
+- Properties and relationships must follow the ordering rules from the detailed guidance.
+- JSON representation must match the Properties section.
+- Keep resource naming consistent across YAML title, H1, and `@odata.type` references.
+- Use `author-api-docs/enumerations.md` whenever enum documentation is created, updated, promoted, or deprecated.
 
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
+### Changelog
 
-{
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications",
-  "value": [
-    {
-      "appId": "String(identifier)",
-      "identifierUris": [ String],
-      "displayName": "String",
-      "publisherDomain": "String",
-      "signInAudience": "String"
-    }
-  ]
-}
-```
+- Use the same `Id` value across related `ChangeList` items and the record-level `Id`.
+- Use valid `Cloud`, `Version`, and `CreatedDateTime` values.
+- Use full Learn URLs in descriptions.
+- For manual changelog authoring, use `templates/changelog-patterns.md`.
 
-### ❌ Common Issues to Flag
+## Common change patterns
 
-- TODO placeholders in descriptions
-- Missing permissions include statements
-- Missing HTTP request syntax
-- Custom H2 sections - only the following predefined H2 headings allowed, in order: Permissions, HTTP request, Function parameters, Optional query parameters, Request headers, Request body, Response, Examples, Related content
+- **New schema in beta:** update affected API/resource docs, enum docs, changelog, TOC, and What's New if the change is customer-visible.
+- **Promotion to v1.0:** use the GA workflow, keep beta and v1.0 aligned where intended, remove beta-only content, update changelog, and add a What's New entry.
+- **Enum member additions:** update the enum definition, any inline value listings, and every API/resource page that enumerates supported values.
+- **Deprecation or retirement:** update banners and table entries, related references, changelog, What's New, redirects, and TOC as applicable.
+- **Cleanup-only changes:** usually do not require changelog or What's New updates.
 
-## Resource Topics Review Guidelines
+## Validation summary
 
-### ✅ Required Elements
+Use the detailed prompt files for the complete validation workflow. At minimum:
 
-**Descriptions:**
-- Begin with present-tense verbs ("represents", "contains")
-- Use active voice where possible
-- Don't use resource name to describe purpose
-- Single sentence with additional context in separate paragraphs
+- Validate changelog JSON when `changelog/*.json` changes.
+- Validate `temp-docstubs` cleanup when `temp-docstubs/` was used.
+- Apply the scenario-specific quality checklist from the prompt files you loaded.
+- Re-check enum consistency, beta vs v1.0 differences, and cross-file references when those surfaces changed.
 
-**Methods Table:**
-- Use succinct method names (avoid repeating resource name)
-- CRUD operations: List, Create, Get, Update, Delete
-- Actions/functions: Use name without binding parameter
+## When multiple guides apply
 
-**Properties:**
-- List in alphabetical order
-- Use noun phrases with periods
-- If the table is empty but still shows the table header, replace the table with the text "None." to indicate no properties are defined at this level.
-- Style property references with **bold**
-- Style resource references with **bold** or link to resource
-- Style enum values with inline code (backticks)
-- Document filterable properties with `$filter` support
+- `.github/prompts/author-api-docs/common.md` applies to all authoring scenarios once you begin the workflow.
+- `.github/prompts/author-api-docs/enumerations.md` is additive whenever enums are created, changed, promoted, or deprecated.
+- `templates/changelog-patterns.md` is only needed for manual changelog authoring.
+- `templates/rbac-for-apis-include.md` is only needed when creating or updating RBAC include files.
+- `review-api-docs.prompt.md` should be treated as the review workflow authority when the task is review-focused.
 
-**Relationships:**
-- List in alphabetical order
+## Use directive wording, not optional wording
 
-**JSON representation:**
-- List of properties and return types must match the properties section
+Treat linked guidance as required when its trigger condition is met.
 
-### ❌ Common Issues to Flag
-
-- Resource names not in lower camel case
-- Properties not in alphabetical order
-- Custom H2 sections - only the following predefined H2 headings allowed, in order: Methods, Properties, Relationships, Related content
-- Resource name inconsistency: If a resource is named `resourceXyz`, the resource name must be an exact match (including casing) in all 4 locations: metadata page title, H1 page title, HTML comment block `@odata.type` in JSON representation section, and JSON `@odata.type` in JSON representation section. If these don't match, question whether the file was autogenerated by Graph Studio and advise the author to only use autogenerated doc stubs.
-
-## Changelog Files Review Guidelines
-
-### ✅ Required Elements
-
-**ChangeList Record Properties:**
-- Same Id value across related changes
-
-**Additional Properties:**
-- Allowed **Cloud** values: `Prod`
-- Allowed **Version** values: `v1.0` or `beta`
-- Proper UTC DateTime format for **CreatedDateTime** properties
-
-**Link Format:**
-- Use full HTTP URLs with en-us locale
-- Include version parameter without preserve-view=true
-- Example: `https://learn.microsoft.com/en-us/graph/api/resources/call?view=graph-rest-beta`
-
-### ❌ Common Issues to Flag
-
-- Multiple API elements in single record
-- Missing or incorrect descriptions
-- Malformed links
-
-## Version-Specific Guidelines
-
-### v1.0 Endpoint Files
-- Remove beta disclaimer
-- URLs in API files should reference the `/v1.0` endpoint, not `/beta` endpoint
-
-### Beta Endpoint Files  
-- Must include beta disclaimer immediately after the namespace declaration
-
-
+- **Before editing API reference docs, read the authoring prompt file first.**
+- **Before reviewing docs changes, read the review prompt file first.**
+- **If enum documentation is affected, also read the enum guidance file.**
+- **If changelog or What's New is in scope, follow the shared process rules in `common.md`.**

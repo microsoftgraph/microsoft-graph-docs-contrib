@@ -3,7 +3,7 @@ title: "Get incremental changes for users"
 description: "Learn how to use delta query in Microsoft Graph to discover changes without fetching the entire set of users to compare changes."
 author: FaithOmbongi
 ms.author: ombongifaith
-ms.reviewer: keylimesoda
+ms.reviewer: jessieli-ad
 ms.topic: tutorial
 ms.subservice: change-notifications
 ms.localizationpriority: high

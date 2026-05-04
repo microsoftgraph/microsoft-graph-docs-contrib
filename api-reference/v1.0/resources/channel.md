@@ -72,6 +72,7 @@ where files are shared, and where tabs are added.
 |id|String|The channel's unique identifier. Read-only.|
 |isArchived| Boolean | Indicates whether the channel is archived. Read-only. |
 |isFavoriteByDefault|Boolean|Indicates whether the channel should be marked as recommended for all members of the team to show in their channel list. **Note:** All recommended channels automatically show in the channels list for education and frontline worker users. The property can only be set programmatically via the [Create team](../api/team-post.md) method. The default value is `false`.|
+|layoutType|[channelLayoutType](../resources/channel.md#channellayouttype-values)|The layout type of the channel. It can be set during creation and updated later. The possible values are: `post`, `chat`, `unknownFutureValue`. The default value is `post`. Channels with the `post` layout use a traditional post‑reply conversation format, and channels with the chat layout provide a chat‑like threading experience similar to group chats.|
 |membershipType|[channelMembershipType](../resources/channel.md#channelmembershiptype-values)|The type of the channel. Can be set during creation and can't be changed. The possible values are: `standard`, `private`, `unknownFutureValue`, `shared`. The default value is `standard`. Use the `Prefer: include-unknown-enum-members` request header to get the following members in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `shared`.|
 |tenantId |string | The ID of the Microsoft Entra tenant. |
 |webUrl|String|A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.|
@@ -86,6 +87,14 @@ where files are shared, and where tabs are added.
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use.                                 |
 | shared             | Members can be directly added to the channel without adding them to the team.     |
 
+
+### channelLayoutType values
+
+| Member             | Description                                                                                                          |
+|:-------------------|:---------------------------------------------------------------------------------------------------------------------|
+| post               | Traditional post-reply conversation format. Posts are displayed in a structured format with replies nested under the original post. Represents the default layout type.                   |
+| chat               | Chat-like threading experience similar to group chats. Messages are displayed in a continuous flow with support for threaded conversations on specific topics.|
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ### Instance attributes
 
@@ -134,6 +143,7 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "isArchived": "Boolean",
   "isFavoriteByDefault": "Boolean",
+  "layoutType": "String",
   "membershipType": "String",
   "webUrl": "String"
 }

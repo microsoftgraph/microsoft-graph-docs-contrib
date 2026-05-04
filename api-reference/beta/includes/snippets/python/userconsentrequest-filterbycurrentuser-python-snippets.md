@@ -10,7 +10,7 @@ from msgraph_beta.generated.identity_governance.app_consent.app_consent_requests
 from kiota_abstractions.base_request_configuration import RequestConfiguration
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 query_params = FilterByCurrentUserWithOnRequestBuilder.FilterByCurrentUserWithOnRequestBuilderGetQueryParameters(
-		filter = " (status eq 'Completed')",
+		filter = "(status eq 'Completed')",
 )
 
 request_configuration = RequestConfiguration(

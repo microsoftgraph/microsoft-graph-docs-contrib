@@ -1,5 +1,59 @@
 {
   "changelog": [
+       {
+      "ChangeList": [
+        {
+          "Id": "3a5aeca2-a3c0-4dcb-99da-6b4ccb935d96",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftRevokedSessions",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftRevokedSessions` member to the **riskDetail** enumeration.",
+          "Target": "riskDetail"
+        }
+      ],
+      "Id": "3a5aeca2-a3c0-4dcb-99da-6b4ccb935d96",
+      "Cloud": "Review",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-04-28T22:06:37.1120378Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ffc4ded5-4b0b-44a2-ae33-15174b0675a6",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftRevokedSessions",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftRevokedSessions` member to the **riskDetail** enumeration.",
+          "Target": "riskDetail"
+        }
+      ],
+      "Id": "ffc4ded5-4b0b-44a2-ae33-15174b0675a6",
+      "Cloud": "Review",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-04-28T22:06:37.1113753Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+ {
+      "ChangeList": [
+        {
+          "Id": "611eae48-2960-4bd7-b02d-e2375d13635c",
+          "ApiChange": "Member",
+          "ChangedApiName": "riskRemediation",
+          "ChangeType": "Addition",
+          "Description": "Added the `riskRemediation` member to the **conditionalAccessGrantControl** enumeration.",
+          "Target": "conditionalAccessGrantControl"
+        }
+      ],
+      "Id": "611eae48-2960-4bd7-b02d-e2375d13635c",
+      "Cloud": "Review",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-04-28T16:19:01.4729397Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
     {
       "ChangeList": [
         {
@@ -30,7 +84,7 @@
       "Id": "64db359a-9279-46f0-8afe-b37bb1f7ea3c",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2026-03-18T23:32:20.7694567Z",
+      "CreatedDateTime": "2026-04-07T23:32:20.7694567Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     },

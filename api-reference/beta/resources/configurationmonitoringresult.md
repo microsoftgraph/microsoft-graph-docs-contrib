@@ -28,7 +28,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |driftsCount|Int32|Number of drifts observed during a monitor run. <br><br>Supports `$filter` (`eq`, `ne`, `ge`, `le`) and `$orderby`.|
-|errorDetails|[errorDetail](../resources/errordetail.md) collection|All the error details that prevent the monitor from running successfully. The error details are a contained entity. <br><br>Returned only on `$select`.|
+|errorDetails|[errorDetail](../resources/errordetail.md) collection|All the error details that prevent the monitor from running successfully. The error details are a contained entity. <br><br>Requires `$select` to retrieve.|
 |id|String|Globally unique identifier (GUID) of the monitor run. System-generated. Inherited from [entity](../resources/entity.md). <br><br>Supports `$filter` (`eq`, `ne`) and `$orderby`.|
 |monitorId|String|Globally unique identifier (GUID) of the monitor. System-generated. <br><br>Supports `$filter` (`eq`, `ne`).|
 |runCompletionDateTime|DateTimeOffset|Date and time at which the monitor run completed. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br>Supports `$filter` (`eq`, `ne`, `ge`, `le`) and `$orderby`.|
