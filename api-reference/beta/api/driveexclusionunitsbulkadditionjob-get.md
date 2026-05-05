@@ -37,7 +37,7 @@ GET /solutions/backupRestore/oneDriveForBusinessProtectionPolicies/{oneDriveForB
 
 ## Optional query parameters
 
-This method supports the `$select`, `$filter`, `$count`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

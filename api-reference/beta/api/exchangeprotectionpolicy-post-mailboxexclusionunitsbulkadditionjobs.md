@@ -39,7 +39,7 @@ POST /solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPoli
 
 ## Optional query parameters
 
-This method supports the `$select`, `$filter`, `$count`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This operation doesn't support query parameters.
 
 ## Request headers
 

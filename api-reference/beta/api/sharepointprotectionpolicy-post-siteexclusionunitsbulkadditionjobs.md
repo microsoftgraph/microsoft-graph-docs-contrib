@@ -39,7 +39,7 @@ POST /solutions/backupRestore/sharePointProtectionPolicies/{sharePointProtection
 
 ## Optional query parameters
 
-This method supports the `$select`, `$filter`, `$count`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method doesn't support optional query parameters.
 
 ## Request headers
 
@@ -104,7 +104,10 @@ Content-Type: application/json
   "id": "4b014d8c-71fe-4d00-a01a-31850bc5b32c",
   "displayName": "Bulk exclude archived sites",
   "status": "active",
-  "siteWebUrls": [],
+  "siteWebUrls": [
+    "https://contoso.sharepoint.com/sites/archived-site-01",
+    "https://contoso.sharepoint.com/sites/archived-site-02"
+  ],
   "createdDateTime": "2026-02-16T14:00:00Z",
   "lastModifiedDateTime": "2026-02-16T14:00:00Z",
   "createdBy": {
