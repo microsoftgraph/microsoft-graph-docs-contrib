@@ -448,8 +448,8 @@ The error codes in this section apply to the following APIs when they're called 
 - [Enable backupRestoreRoot](/graph/api/backuprestoreroot-enable)
 - [Create serviceApp](/graph/api/backuprestoreroot-post-serviceapps)
 - [Delete serviceApp](/graph/api/backuprestoreroot-delete-serviceapps)
-- [Activate serviceApp](/graph/api/serviceapp-activate.md)
-- [Deactivate serviceApp](/graph/api/serviceapp-deactivate.md)
+- [Activate serviceApp](/graph/api/serviceapp-activate)
+- [Deactivate serviceApp](/graph/api/serviceapp-deactivate)
 
 The following table lists the possible error and response code that can be returned.
 
