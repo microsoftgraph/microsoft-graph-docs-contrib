@@ -2299,7 +2299,7 @@
           "ApiChange": "NavigationPropertyBinding",
           "ChangedApiName": "backupRestore/sharePointProtectionPolicies/siteExclusionUnits",
           "ChangeType": "Addition",
-          "Description": "Added the [backupRestore/sharePointProtectionPolicies/siteExclusionUnits](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+          "Description": "Added **backupRestore/sharePointProtectionPolicies/siteExclusionUnits** as a navigation binding property of **solutions**.",
           "Target": "solutions"
         },
         {
@@ -2315,8 +2315,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2026-03-13T08:23:53.2634353Z",
-"WorkloadArea": "Backup storage",
-"SubArea": ""
+      "WorkloadArea": "Backup storage",
+      "SubArea": ""
     },
     {
       "ChangeList": [
