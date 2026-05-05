@@ -206,7 +206,6 @@
             "emailNotificationsSetting",
             "exclusionUnitBase",
             "exclusionUnitBulkAdditionJob",
-            "fullServiceBackupBase",
             "protectionPolicyBase",
             "protectionRuleBase",
             "protectionUnitBase",
@@ -239,14 +238,6 @@
                 "driveExclusionUnitsBulkAdditionJob",
                 "mailboxExclusionUnitsBulkAdditionJob",
                 "siteExclusionUnitsBulkAdditionJob"
-              ]
-            },
-            {
-              "name": "Full-service backup",
-              "resources": [
-                "allDrivesBackup",
-                "allMailboxesBackup",
-                "allSitesBackup"
               ]
             },
             {
