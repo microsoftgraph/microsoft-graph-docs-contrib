@@ -37,10 +37,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 POST /solutions/backupRestore/exchangeProtectionPolicies/{exchangeProtectionPolicyId}/mailboxExclusionUnitsBulkAdditionJobs
 ```
 
-## Optional query parameters
-
-This operation doesn't support query parameters.
-
 ## Request headers
 
 |Name|Description|
