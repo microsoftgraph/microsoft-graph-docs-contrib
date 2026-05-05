@@ -104,7 +104,7 @@ Content-Type: application/json
   "id": "4b014d8c-71fe-4d00-a01a-31850bc5b32c",
   "displayName": "Bulk exclude contractor drives",
   "status": "active",
-  "drives": [ "contractor1@contoso.com",
+  "drives": ["contractor1@contoso.com",
     "contractor2@contoso.com",
     "contractor3@contoso.com"],
   "createdDateTime": "2026-02-16T14:00:00Z",
