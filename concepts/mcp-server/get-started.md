@@ -6,7 +6,7 @@ ms.author: ombongifaith
 ms.reviewer: Licantrop0
 ms.subservice: ent-mcp-server
 ms.topic: get-started
-ms.date: 11/18/2025
+ms.date: 05/05/2026
 
 #customer intent: As a developer, I want to configure my AI client to connect to the Microsoft MCP Server so that I can integrate enterprise data into my applications.
 ---
