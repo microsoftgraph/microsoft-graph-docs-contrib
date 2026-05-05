@@ -48,7 +48,7 @@ In the request body, supply a JSON representation of the **oneDriveForBusinessPr
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Display Name of the [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md). Optional|
-|driveExclusionUnits@delta|[driveExclusionUnit](../resources/driveexclusionunit.md) collection|Collection of [driveExclusionUnit](../resources/driveexclusionunit.md) objects to be added to or removed from the [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md). Use this property for policies configured with [BackupPolicyProtectionMode](../resources/enums.md#backuppolicyprotectionmode-values) set to `fullServiceBackup`. Required for full workload backup policies.|
+|driveExclusionUnits@delta|[driveExclusionUnit](../resources/driveexclusionunit.md) collection|Collection of [driveExclusionUnit](../resources/driveexclusionunit.md) objects to be added to or removed from the [oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md). Use this property for policies configured with [backupPolicyProtectionMode](../resources/enums.md#backuppolicyprotectionmode-values) set to `fullServiceBackup`. Required for full workload backup policies.|
 |driveProtectionUnits@delta|Collection([driveProtectionUnit](../resources/driveprotectionunit.md))|Collection of the driveProtectionUnit to be added/removed to the oneDriveForBusinessProtectionPolicy. Required|
 
 To remove a **driveProtectionUnit** from the policy, specify the `@removed` annotation in the request body for the protection unit together with the ID of the [driveProtectionUnit](../resources/driveprotectionunit.md).

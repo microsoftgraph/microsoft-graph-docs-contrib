@@ -37,10 +37,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 POST /solutions/backupRestore/sharePointProtectionPolicies/{sharePointProtectionPolicyId}/siteExclusionUnitsBulkAdditionJobs
 ```
 
-## Optional query parameters
-
-This method doesn't support optional query parameters.
-
 ## Request headers
 
 |Name|Description|
@@ -105,8 +101,9 @@ Content-Type: application/json
   "displayName": "Bulk exclude archived sites",
   "status": "active",
   "siteWebUrls": [
-    "https://contoso.sharepoint.com/sites/archived-site-01",
-    "https://contoso.sharepoint.com/sites/archived-site-02"
+    "https://contoso.sharepoint.com/sites/Marketing",
+    "https://contoso.sharepoint.com/sites/Sales",
+    "https://contoso.sharepoint.com/sites/Archives"
   ],
   "createdDateTime": "2026-02-16T14:00:00Z",
   "lastModifiedDateTime": "2026-02-16T14:00:00Z",
