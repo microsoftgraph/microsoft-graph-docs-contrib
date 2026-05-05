@@ -18,7 +18,7 @@ The Microsoft MCP Server for Enterprise `https://mcp.svc.cloud.microsoft/enterpr
 This overview explains how Microsoft MCP Server for Enterprise works and how you can integrate it into your AI-powered workflows.
 
 > [!IMPORTANT]
-> Microsoft MCP Server for Enterprise is currently in public PREVIEW.
+> Microsoft MCP Server for Enterprise is currently in PREVIEW.
 > This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 >
 > Microsoft MCP Server for Enterprise is offered under the [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use).
