@@ -63,184 +63,6 @@
       {
         "ChangeList": [
           {
-            "Id": "0e09184b-05cc-4833-9306-1d6c82c33826",
-            "ApiChange": "Enumeration",
-            "ChangedApiName": "backupPolicyProtectionMode",
-            "ChangeType": "Addition",
-            "Description": "Added the **backupPolicyProtectionMode** enumeration type.",
-            "Target": "backupPolicyProtectionMode"
-          },
-          {
-            "Id": "0e09184b-05cc-4833-9306-1d6c82c33826",
-            "ApiChange": "Enumeration",
-            "ChangedApiName": "fullServiceBackupDisableMode",
-            "ChangeType": "Addition",
-            "Description": "Added the **fullServiceBackupDisableMode** enumeration type.",
-            "Target": "fullServiceBackupDisableMode"
-          },
-          {
-            "Id": "0e09184b-05cc-4833-9306-1d6c82c33826",
-            "ApiChange": "Enumeration",
-            "ChangedApiName": "fullServiceBackupStatus",
-            "ChangeType": "Addition",
-            "Description": "Added the **fullServiceBackupStatus** enumeration type.",
-            "Target": "fullServiceBackupStatus"
-          },
-          {
-            "Id": "0e09184b-05cc-4833-9306-1d6c82c33826",
-            "ApiChange": "Member",
-            "ChangedApiName": "dormant",
-            "ChangeType": "Addition",
-            "Description": "Added the `dormant` member to the **protectionPolicyStatus** enumeration.",
-            "Target": "protectionPolicyStatus"
-          },
-          {
-            "Id": "0e09184b-05cc-4833-9306-1d6c82c33826",
-            "ApiChange": "Resource",
-            "ChangedApiName": "allDrivesBackup",
-            "ChangeType": "Addition",
-            "Description": "Added the [allDrivesBackup](https://learn.microsoft.com/en-us/graph/api/resources/allDrivesBackup?view=graph-rest-beta) resource and a supported method.",
-            "Target": "allDrivesBackup"
-          },
-          {
-            "Id": "0e09184b-05cc-4833-9306-1d6c82c33826",
-            "ApiChange": "Resource",
-            "ChangedApiName": "allMailboxesBackup",
-            "ChangeType": "Addition",
-            "Description": "Added the [allMailboxesBackup](https://learn.microsoft.com/en-us/graph/api/resources/allMailboxesBackup?view=graph-rest-beta) resource and a supported method.",
-            "Target": "allMailboxesBackup"
-          },
-          {
-            "Id": "0e09184b-05cc-4833-9306-1d6c82c33826",
-            "ApiChange": "Resource",
-            "ChangedApiName": "allSitesBackup",
-            "ChangeType": "Addition",
-            "Description": "Added the [allSitesBackup](https://learn.microsoft.com/en-us/graph/api/resources/allSitesBackup?view=graph-rest-beta) resource and a supported method.",
-            "Target": "allSitesBackup"
-          },
-          {
-            "Id": "0e09184b-05cc-4833-9306-1d6c82c33826",
-            "ApiChange": "Relationship",
-            "ChangedApiName": "allDrivesBackup",
-            "ChangeType": "Addition",
-            "Description": "Added the **allDrivesBackup** relationship to the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-beta) resource.",
-            "Target": "backupRestoreRoot"
-          },
-          {
-            "Id": "0e09184b-05cc-4833-9306-1d6c82c33826",
-            "ApiChange": "Relationship",
-            "ChangedApiName": "allMailboxesBackup",
-            "ChangeType": "Addition",
-            "Description": "Added the **allMailboxesBackup** relationship to the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-beta) resource.",
-            "Target": "backupRestoreRoot"
-          },
-          {
-            "Id": "0e09184b-05cc-4833-9306-1d6c82c33826",
-            "ApiChange": "Relationship",
-            "ChangedApiName": "allSitesBackup",
-            "ChangeType": "Addition",
-            "Description": "Added the **allSitesBackup** relationship to the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-beta) resource.",
-            "Target": "backupRestoreRoot"
-          },
-          {
-            "Id": "0e09184b-05cc-4833-9306-1d6c82c33826",
-            "ApiChange": "Resource",
-            "ChangedApiName": "fullServiceBackupBase",
-            "ChangeType": "Addition",
-            "Description": "Added the [fullServiceBackupBase](https://learn.microsoft.com/en-us/graph/api/resources/fullServiceBackupBase?view=graph-rest-beta) resource.",
-            "Target": "fullServiceBackupBase"
-          },
-          {
-            "Id": "0e09184b-05cc-4833-9306-1d6c82c33826",
-            "ApiChange": "Property",
-            "ChangedApiName": "protectionMode",
-            "ChangeType": "Addition",
-            "Description": "Added the **protectionMode** property to the [protectionPolicyBase](https://learn.microsoft.com/en-us/graph/api/resources/protectionPolicyBase?view=graph-rest-beta) resource.",
-            "Target": "protectionPolicyBase"
-          },
-          {
-            "Id": "0e09184b-05cc-4833-9306-1d6c82c33826",
-            "ApiChange": "Property",
-            "ChangedApiName": "protectionMode",
-            "ChangeType": "Addition",
-            "Description": "Added the **protectionMode** property to the [exchangeProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/exchangeProtectionPolicy?view=graph-rest-beta) resource.",
-            "Target": "exchangeProtectionPolicy"
-          },
-          {
-            "Id": "0e09184b-05cc-4833-9306-1d6c82c33826",
-            "ApiChange": "Property",
-            "ChangedApiName": "protectionMode",
-            "ChangeType": "Addition",
-            "Description": "Added the **protectionMode** property to the [oneDriveForBusinessProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/oneDriveForBusinessProtectionPolicy?view=graph-rest-beta) resource.",
-            "Target": "oneDriveForBusinessProtectionPolicy"
-          },
-          {
-            "Id": "0e09184b-05cc-4833-9306-1d6c82c33826",
-            "ApiChange": "Property",
-            "ChangedApiName": "protectionMode",
-            "ChangeType": "Addition",
-            "Description": "Added the **protectionMode** property to the [sharePointProtectionPolicy](https://learn.microsoft.com/en-us/graph/api/resources/sharePointProtectionPolicy?view=graph-rest-beta) resource.",
-            "Target": "sharePointProtectionPolicy"
-          },
-          {
-            "Id": "0e09184b-05cc-4833-9306-1d6c82c33826",
-            "ApiChange": "Method",
-            "ChangedApiName": "disable",
-            "ChangeType": "Addition",
-            "Description": "Added the [disable](https://learn.microsoft.com/en-us/graph/api/allDrivesBackup-disable?view=graph-rest-beta) method to the [allDrivesBackup](https://learn.microsoft.com/en-us/graph/api/resources/allDrivesBackup?view=graph-rest-beta) resource.",
-            "Target": "allDrivesBackup"
-          },
-          {
-            "Id": "0e09184b-05cc-4833-9306-1d6c82c33826",
-            "ApiChange": "Method",
-            "ChangedApiName": "disable",
-            "ChangeType": "Addition",
-            "Description": "Added the [disable](https://learn.microsoft.com/en-us/graph/api/allMailboxesBackup-disable?view=graph-rest-beta) method to the [allMailboxesBackup](https://learn.microsoft.com/en-us/graph/api/resources/allMailboxesBackup?view=graph-rest-beta) resource.",
-            "Target": "allMailboxesBackup"
-          },
-          {
-            "Id": "0e09184b-05cc-4833-9306-1d6c82c33826",
-            "ApiChange": "Method",
-            "ChangedApiName": "disable",
-            "ChangeType": "Addition",
-            "Description": "Added the [disable](https://learn.microsoft.com/en-us/graph/api/allSitesBackup-disable?view=graph-rest-beta) method to the [allSitesBackup](https://learn.microsoft.com/en-us/graph/api/resources/allSitesBackup?view=graph-rest-beta) resource.",
-            "Target": "allSitesBackup"
-          },
-          {
-            "Id": "0e09184b-05cc-4833-9306-1d6c82c33826",
-            "ApiChange": "Method",
-            "ChangedApiName": "enable",
-            "ChangeType": "Addition",
-            "Description": "Added the [enable](https://learn.microsoft.com/en-us/graph/api/allDrivesBackup-enable?view=graph-rest-beta) method to the [allDrivesBackup](https://learn.microsoft.com/en-us/graph/api/resources/allDrivesBackup?view=graph-rest-beta) resource.",
-            "Target": "allDrivesBackup"
-          },
-          {
-            "Id": "0e09184b-05cc-4833-9306-1d6c82c33826",
-            "ApiChange": "Method",
-            "ChangedApiName": "enable",
-            "ChangeType": "Addition",
-            "Description": "Added the [enable](https://learn.microsoft.com/en-us/graph/api/allMailboxesBackup-enable?view=graph-rest-beta) method to the [allMailboxesBackup](https://learn.microsoft.com/en-us/graph/api/resources/allMailboxesBackup?view=graph-rest-beta) resource.",
-            "Target": "allMailboxesBackup"
-          },
-          {
-            "Id": "0e09184b-05cc-4833-9306-1d6c82c33826",
-            "ApiChange": "Method",
-            "ChangedApiName": "enable",
-            "ChangeType": "Addition",
-            "Description": "Added the [enable](https://learn.microsoft.com/en-us/graph/api/allSitesBackup-enable?view=graph-rest-beta) method to the [allSitesBackup](https://learn.microsoft.com/en-us/graph/api/resources/allSitesBackup?view=graph-rest-beta) resource.",
-            "Target": "allSitesBackup"
-          }
-        ],
-        "Id": "0e09184b-05cc-4833-9306-1d6c82c33826",
-        "Cloud": "Prod",
-        "Version": "beta",
-        "CreatedDateTime": "2025-10-28T09:04:09.9482742Z",
-        "WorkloadArea": "Backup restore",
-        "SubArea": ""
-      },
-      {
-        "ChangeList": [
-          {
             "Id": "51bec7fb-1c22-4485-bef5-4ac72a4b8258",
             "ApiChange": "Member",
             "ChangedApiName": "updateRequested",
@@ -2264,85 +2086,13 @@
           "Description": "Added the **exclusionUnitBulkJobStatus** enumeration type.",
           "Target": "exclusionUnitBulkJobStatus"
         },
-        {
+         {
           "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
           "ApiChange": "Member",
           "ChangedApiName": "fullServiceBackup",
           "ChangeType": "Addition",
           "Description": "Added the `fullServiceBackup` member to the **backupPolicyProtectionMode** enumeration.",
           "Target": "backupPolicyProtectionMode"
-        },
-        {
-          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "fullServiceBackupDisableMode",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **fullServiceBackupDisableMode** enumeration type.",
-          "Target": "fullServiceBackupDisableMode"
-        },
-        {
-          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "fullServiceBackupStatus",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **fullServiceBackupStatus** enumeration type.",
-          "Target": "fullServiceBackupStatus"
-        },
-        {
-          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
-          "ApiChange": "Member",
-          "ChangedApiName": "dormant",
-          "ChangeType": "Deletion",
-          "Description": "Removed the `dormant` member from the **protectionPolicyStatus** enumeration.",
-          "Target": "protectionPolicyStatus"
-        },
-        {
-          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
-          "ApiChange": "Resource",
-          "ChangedApiName": "allDrivesBackup",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **allDrivesBackup** resource.",
-          "Target": "allDrivesBackup"
-        },
-        {
-          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
-          "ApiChange": "Resource",
-          "ChangedApiName": "allMailboxesBackup",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **allMailboxesBackup** resource.",
-          "Target": "allMailboxesBackup"
-        },
-        {
-          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
-          "ApiChange": "Resource",
-          "ChangedApiName": "allSitesBackup",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **allSitesBackup** resource.",
-          "Target": "allSitesBackup"
-        },
-        {
-          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "allDrivesBackup",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **allDrivesBackup** relationship from the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-beta) resource.",
-          "Target": "backupRestoreRoot"
-        },
-        {
-          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "allMailboxesBackup",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **allMailboxesBackup** relationship from the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-beta) resource.",
-          "Target": "backupRestoreRoot"
-        },
-        {
-          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "allSitesBackup",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **allSitesBackup** relationship from the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-beta) resource.",
-          "Target": "backupRestoreRoot"
         },
         {
           "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
@@ -2451,14 +2201,6 @@
         {
           "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
           "ApiChange": "Resource",
-          "ChangedApiName": "fullServiceBackupBase",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **fullServiceBackupBase** resource.",
-          "Target": "fullServiceBackupBase"
-        },
-        {
-          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
-          "ApiChange": "Resource",
           "ChangedApiName": "mailboxExclusionUnit",
           "ChangeType": "Addition",
           "Description": "Added the [mailboxExclusionUnit](https://learn.microsoft.com/en-us/graph/api/resources/mailboxExclusionUnit?view=graph-rest-beta) resource.",
@@ -2519,54 +2261,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [siteExclusionUnitsBulkAdditionJob](https://learn.microsoft.com/en-us/graph/api/resources/siteExclusionUnitsBulkAdditionJob?view=graph-rest-beta) resource.",
           "Target": "siteExclusionUnitsBulkAdditionJob"
-        },
-        {
-          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
-          "ApiChange": "Method",
-          "ChangedApiName": "disable",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **disable** method from the [allDrivesBackup](https://learn.microsoft.com/en-us/graph/api/resources/allDrivesBackup?view=graph-rest-beta) resource.",
-          "Target": "allDrivesBackup"
-        },
-        {
-          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
-          "ApiChange": "Method",
-          "ChangedApiName": "disable",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **disable** method from the [allMailboxesBackup](https://learn.microsoft.com/en-us/graph/api/resources/allMailboxesBackup?view=graph-rest-beta) resource.",
-          "Target": "allMailboxesBackup"
-        },
-        {
-          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
-          "ApiChange": "Method",
-          "ChangedApiName": "disable",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **disable** method from the [allSitesBackup](https://learn.microsoft.com/en-us/graph/api/resources/allSitesBackup?view=graph-rest-beta) resource.",
-          "Target": "allSitesBackup"
-        },
-        {
-          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
-          "ApiChange": "Method",
-          "ChangedApiName": "enable",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **enable** method from the [allDrivesBackup](https://learn.microsoft.com/en-us/graph/api/resources/allDrivesBackup?view=graph-rest-beta) resource.",
-          "Target": "allDrivesBackup"
-        },
-        {
-          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
-          "ApiChange": "Method",
-          "ChangedApiName": "enable",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **enable** method from the [allMailboxesBackup](https://learn.microsoft.com/en-us/graph/api/resources/allMailboxesBackup?view=graph-rest-beta) resource.",
-          "Target": "allMailboxesBackup"
-        },
-        {
-          "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
-          "ApiChange": "Method",
-          "ChangedApiName": "enable",
-          "ChangeType": "Deletion",
-          "Description": "Removed the **enable** method from the [allSitesBackup](https://learn.microsoft.com/en-us/graph/api/resources/allSitesBackup?view=graph-rest-beta) resource.",
-          "Target": "allSitesBackup"
         },
         {
           "Id": "168a7415-8688-4b5e-98ae-c99d786a4bed",
@@ -2708,5 +2402,5 @@
         "WorkloadArea": "Backup restore",
         "SubArea": ""
     }
-  ]  
+  ]
 }
