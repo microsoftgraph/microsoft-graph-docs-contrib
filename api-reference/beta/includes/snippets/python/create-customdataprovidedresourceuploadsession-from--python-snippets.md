@@ -20,7 +20,7 @@ request_body = CustomDataProvidedResourceUploadSession(
 	),
 )
 
-result = await graph_client.identity_governance.entitlement_management.access_package_catalogs.by_access_package_catalog_id('accessPackageCatalog-id').access_package_resources.by_access_package_resource_id('accessPackageResource-id').upload_sessions.post(request_body)
+result = await graph_client.identity_governance.catalogs.by_access_package_catalog_id('accessPackageCatalog-id').access_package_resources.by_access_package_resource_id('accessPackageResource-id').upload_sessions.post(request_body)
 
 
 ```

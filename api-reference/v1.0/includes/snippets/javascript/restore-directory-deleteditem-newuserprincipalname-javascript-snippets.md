@@ -14,7 +14,7 @@ const directoryObject = {
   newUserPrincipalName: 'johndoe@contoso.com'
 };
 
-await client.api('/directory/deleteditems/78bf875b-9343-4edc-9130-0d3958113563/restore')
+await client.api('/directory/deletedItems/78bf875b-9343-4edc-9130-0d3958113563/restore')
 	.post(directoryObject);
 
 ```

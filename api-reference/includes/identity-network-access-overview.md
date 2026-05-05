@@ -32,7 +32,14 @@ You can use Microsoft Graph APIs to register and manage your applications progra
 
 ## Manage agents
 
-AI agents require the same identity, access, security, and governance frameworks that are applied to users, applications, and devices in your organization. For more information about using Microsoft Graph APIs to achieve these capabilities for agents, see [Microsoft Entra Agent ID APIs in Microsoft Graph overview](/graph/api/resources/agentid-platform-overview).
+AI agents require the same identity, access, security, and governance frameworks that are applied to users, applications, and devices in your organization. Microsoft Graph APIs support the full agent identity lifecycle, including:
+
+- **Creating and managing agent identities** - Programmatically create and manage agent identity blueprints, agent identities, and their associated metadata such as owners and sponsors.
+- **Security and access control** - Apply Conditional Access policies to enforce access controls on agents, and use entitlement management access packages to assign agents access to security groups, application permissions, and Microsoft Entra roles.
+- **Governance** - Assign sponsors to agent identities to maintain human accountability over the agent lifecycle. Use access reviews to periodically validate that agent identities still need their assigned access.
+- **Risk detection and monitoring** - Monitor agent sign-in activities through audit logs for compliance and security purposes.
+
+For more information about using Microsoft Graph APIs to achieve these capabilities for agents, see [Microsoft Entra Agent ID APIs in Microsoft Graph overview](/graph/api/resources/agentid-platform-overview).
 
 ---
 

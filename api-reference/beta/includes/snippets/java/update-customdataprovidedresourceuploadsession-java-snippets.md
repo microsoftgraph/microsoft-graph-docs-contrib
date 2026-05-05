@@ -10,7 +10,7 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 CustomDataProvidedResourceUploadSession customDataProvidedResourceUploadSession = new CustomDataProvidedResourceUploadSession();
 customDataProvidedResourceUploadSession.setIsUploadDone(true);
-CustomDataProvidedResourceUploadSession result = graphClient.identityGovernance().entitlementManagement().accessPackageCatalogs().byAccessPackageCatalogId("{accessPackageCatalog-id}").accessPackageResources().byAccessPackageResourceId("{accessPackageResource-id}").uploadSessions().byCustomDataProvidedResourceUploadSessionId("{customDataProvidedResourceUploadSession-id}").patch(customDataProvidedResourceUploadSession);
+CustomDataProvidedResourceUploadSession result = graphClient.identityGovernance().catalogs().byAccessPackageCatalogId("{accessPackageCatalog-id}").accessPackageResources().byAccessPackageResourceId("{accessPackageResource-id}").uploadSessions().byCustomDataProvidedResourceUploadSessionId("{customDataProvidedResourceUploadSession-id}").patch(customDataProvidedResourceUploadSession);
 
 
 ```

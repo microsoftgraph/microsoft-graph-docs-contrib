@@ -83,7 +83,7 @@ jane.doe@contoso.com,550e8400-e29b-41d4-a716-446655440001,Room 101,Conference ro
 ```
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-customdataprovidedresourcefile-from--javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/customdataprovidedresourceuploadsessionthisuploadfile-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

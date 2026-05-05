@@ -64,7 +64,7 @@ agentCardManifest.setDescription("Manages organizational conditional access poli
 agentCardManifest.setIconUrl("https://example.com/icon.png");
 AgentProvider provider = new AgentProvider();
 provider.setOrganization("Test Organization");
-provider.setUrl("https://test.com");
+provider.setUrl("https://contoso.com");
 agentCardManifest.setProvider(provider);
 agentCardManifest.setProtocolVersion("1.0");
 agentCardManifest.setVersion("1.0.0");

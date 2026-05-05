@@ -109,7 +109,7 @@
     },
     {
       "name": "Agents",
-      "overview": "",
+      "overview": "../../resources/agentid-platform-overview.md",
       "resources": [],
       "childNodes": [
         {
