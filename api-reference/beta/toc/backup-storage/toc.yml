@@ -106,39 +106,6 @@ items:
       href: ../../api/sharepointprotectionpolicy-post-siteexclusionunitsbulkadditionjobs.md
     - name: Get
       href: ../../api/siteexclusionunitsbulkadditionjob-get.md
-- name: Full-service backup
-  href: ../../resources/fullservicebackupbase.md
-  items:
-  - name: All drives backup
-    items:
-    - name: All drives backup
-      href: ../../resources/alldrivesbackup.md
-    - name: Get
-      href: ../../api/alldrivesbackup-get.md
-    - name: Enable
-      href: ../../api/alldrivesbackup-enable.md
-    - name: Disable
-      href: ../../api/alldrivesbackup-disable.md
-  - name: All mailboxes backup
-    items:
-    - name: All mailboxes backup
-      href: ../../resources/allmailboxesbackup.md
-    - name: Get
-      href: ../../api/allmailboxesbackup-get.md
-    - name: Enable
-      href: ../../api/allmailboxesbackup-enable.md
-    - name: Disable
-      href: ../../api/allmailboxesbackup-disable.md
-  - name: All sites backup
-    items:
-    - name: All sites backup
-      href: ../../resources/allsitesbackup.md
-    - name: Get
-      href: ../../api/allsitesbackup-get.md
-    - name: Enable
-      href: ../../api/allsitesbackup-enable.md
-    - name: Disable
-      href: ../../api/allsitesbackup-disable.md
 - name: Protection policy
   items:
   - name: Protection policy
