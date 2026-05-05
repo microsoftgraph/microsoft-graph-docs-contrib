@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Represents the abstract base entity for an exclusion unit that specifies artifacts to be excluded from full workload backup.
 
-Full workload backup policies use an exclusion unit pattern. After creating a protection policy with [BackupPolicyProtectionMode](../resources/enums.md#backuppolicyprotectionmode-values) set to `fullServiceBackup`, you can manage the exclusion list using a delta pattern on the policy update endpoint (**siteExclusionUnits@delta**, **driveExclusionUnits@delta**, or **mailboxExclusionUnits@delta**). For bulk operations, use the dedicated [bulk addition job](../resources/exclusionunitbulkadditionjob.md) APIs.
+Full workload backup policies use an exclusion unit pattern. After creating a protection policy with [backupPolicyProtectionMode](../resources/enums.md#backuppolicyprotectionmode-values) set to `fullServiceBackup`, you can manage the exclusion list using a delta pattern on the policy update endpoint (**siteExclusionUnits@delta**, **driveExclusionUnits@delta**, or **mailboxExclusionUnits@delta**). For bulk operations, use the dedicated [bulk addition job](../resources/exclusionunitbulkadditionjob.md) APIs.
 
 This resource is the base type for [siteExclusionUnit](../resources/siteexclusionunit.md), [driveExclusionUnit](../resources/driveexclusionunit.md), and [mailboxExclusionUnit](../resources/mailboxexclusionunit.md).
 
