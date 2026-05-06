@@ -13,6 +13,16 @@ ms.custom: sfi-ropc-nochange
 
 Namespace: microsoft.graph
 
+### meetingEngagementType values
+
+|Member|
+|:---|
+|reaction|
+|hand|
+|camera|
+|microphone|
+|unknownFutureValue|
+
 ### notifyMembers values
 
 |Member|
@@ -968,15 +978,6 @@ Namespace: microsoft.graph
 | unknownFutureValue |
 | remoteDesktopToken |
 | refreshToken       |
-
-### approverInformationVisibility values
-
-| Member |
-| ---- |
-| no |
-| yes |
-| default |
-| unknownFutureValue |
 
 ### protocolType values
 
@@ -3875,6 +3876,16 @@ Possible values for user account types (group membership), per Windows definitio
 | principal |
 | unknownFutureValue |
 
+### roleType values
+
+| Member |
+| ------ |
+| active |
+| eligible |
+| application |
+| delegated |
+| unknownFutureValue |
+
 ### cloudPcAuditActivityOperationType values
 
 | Member |
@@ -3917,6 +3928,17 @@ Possible values for user account types (group membership), per Windows definitio
 | regular |
 | quick |
 | strategic |
+| unknownFutureValue |
+
+### sectionIconSkinTone values
+
+| Member |
+| ------------------ |
+| light |
+| mediumLight |
+| medium |
+| mediumDark |
+| dark |
 | unknownFutureValue |
 
 ### serviceHealthClassificationType values
@@ -5076,6 +5098,14 @@ Possible values for user account types (group membership), per Windows definitio
 | contains |
 | unknownFutureValue |
 
+### matchConfidenceLevel values 
+
+|Member|
+|:---|
+|exact|
+|relaxed|
+|unknownFutureValue|
+
 ### matchOn values
 
 | Member |
@@ -5985,4 +6015,15 @@ Possible values for user account types (group membership), per Windows definitio
 |random|
 |sessionPersistence|
 |performance|
+|unknownFutureValue|
+
+### accessReviewInstanceDecisionItemApplyResult values
+
+|Member|
+|:---|
+|new|
+|appliedSuccessfully|
+|appliedWithUnknownFailure|
+|appliedSuccessfullyButObjectNotFound|
+|applyNotSupported|
 |unknownFutureValue|

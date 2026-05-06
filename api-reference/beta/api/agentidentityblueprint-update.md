@@ -29,6 +29,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 [!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]
 
+### Permissions for specific scenarios
+- The least privileged permission to update credential-related properties such as **keyCredentials** and **passwordCredentials** is *AgentIdentityBlueprint.AddRemoveCreds.All*.
+- The least privileged permission to update branding properties such as **displayName** and **description** is *AgentIdentityBlueprint.UpdateBranding.All*.
+- To update properties covered by both permission scopes, use the higher-privileged *AgentIdentityBlueprint.ReadWrite.All* permission.
+
 ## HTTP request
 
 <!-- {
@@ -52,7 +57,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| displayName | String | The display name for the agent identity blueprint. |
+| displayName | String | The display name for the agent identity blueprint. The least privileged permission to update this property is *AgentIdentityBlueprint.UpdateBranding.All*. |
 | managerApplications | Guid collection | A collection of application IDs for applications designated as managers of this agent identity blueprint. Manager applications can create agent blueprint principals, agent identities, and agent users for their managed blueprints without requiring high-privileged permissions such as `AgentIdentityBlueprintPrincipal.ReadWrite.All`. Currently, only Microsoft first-party application IDs can be set as values. Maximum of 10 values. Not nullable. |
 
 ## Response

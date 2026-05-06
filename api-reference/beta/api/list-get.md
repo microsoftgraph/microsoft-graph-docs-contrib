@@ -36,12 +36,14 @@ GET /sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
 
 ## Request body
 
-Do not supply a request body with this method.
+Don't supply a request body with this method.
 
-## Example
+## Examples
 
+### Example 1: Get list metadata by ID
+The following example shows how to get the metadata for a SharePoint list.
 #### Request
-
+The following examples shows a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-list-1" } -->
@@ -81,7 +83,7 @@ GET /sites/{site-id}/lists/{list-id}
 ---
 
 #### Response
-
+The following examples shows the response.
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
 
 ```http
@@ -93,6 +95,7 @@ Content-type: application/json
   "name": "MicroFeed",
   "createdDateTime": "2016-08-30T08:32:00Z",
   "lastModifiedDateTime": "2016-08-30T08:32:00Z",
+  "itemCount": 127,
   "list": {
     "hidden": false,
     "template": "genericList"
@@ -100,10 +103,10 @@ Content-type: application/json
 }
 ```
 
-With `select` and `expand` statements, you can retrieve list metadata, column definitions, and list items in a single request.
-
-#### Request
+### Example 2: Get list metadata by title
 The following example shows how to get a list from a SharePoint Online list title.
+#### Request
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-list-2" } -->
@@ -143,7 +146,7 @@ GET /sites/{site-id}/lists/{list-title}
 ---
 
 #### Response
-
+The following example shows the response.
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
 
 ```http
@@ -155,6 +158,7 @@ Content-type: application/json
   "name": "MicroFeed",
   "createdDateTime": "2016-08-30T08:32:00Z",
   "lastModifiedDateTime": "2016-08-30T08:32:00Z",
+  "itemCount": 45,
   "list": {
     "hidden": false,
     "template": "genericList"
@@ -162,16 +166,17 @@ Content-type: application/json
 }
 ```
 
-With `select` and `expand` statements, you can retrieve list metadata, column definitions, and list items in a single request.
+### Example 3: Get list metadata and items with $select and $expand
+The following example shows how to use the `$select` and `$expand` OData query parameters to retrieve list metadata, column definitions, and list items in a single request.
 
 #### Request
-
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-list-multi-expand" } -->
 
 ```msgraph-interactive
-GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Color,Quantity))
+GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime,itemCount&expand=columns(select=name,description),items(expand=fields(select=Name,Color,Quantity))
 ```
 
 # [C#](#tab/csharp)
@@ -205,7 +210,7 @@ GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=col
 ---
 
 #### Response
-
+The following example shows the response.
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
 
 ```http
@@ -254,21 +259,55 @@ Content-type: application/json
         "Quantity": 92
        }
     }
-  ]
+  ],
+  "itemCount": 45
 }
 ```
+
+### Example 4: Get list metadata and items with multiple $expand parameters
+The following example shows how to get metadata and items for a list that contains three columns: *Name*, *Quantity*, and *Category*. [Managed metadata](/sharepoint/managed-metadata) columns like *Category* return values as term ID and term name pair.
+
 #### Request
+The following example shows a request.
+# [HTTP](#tab/http)
+<!-- { "blockType": "request", "name": "get-list-multi-expand_4" } -->
 
-<!-- { "blockType": "request", "name": "get-list-multi-expand" } -->
-
-The following example shows how to get metadata for a list that contains three columns: Name, Quantity, and Category.
-[Managed Metadata](/sharepoint/managed-metadata) columns like ```Category``` return values as term ID and term name pair.
-```http
+```msgraph-interactive
 GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Quantity,Category))
 ```
 
-#### Response
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-list-multi-expand-4-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-list-multi-expand-4-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-list-multi-expand-4-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-list-multi-expand-4-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-list-multi-expand-4-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-list-multi-expand-4-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-list-multi-expand-4-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+The following example shows the response.
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
 
 ```http

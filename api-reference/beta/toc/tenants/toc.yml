@@ -2,6 +2,8 @@
 # GENERATED FILE - DO NOT EDIT
 #
 items:
+- name: Overview
+  href: ../../resources/tenants-overview.md
 - name: Configuration management
   items:
   - name: Overview

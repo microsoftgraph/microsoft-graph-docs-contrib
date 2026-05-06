@@ -11,7 +11,7 @@ ms.date: 07/22/2024
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a keyed collection of [sharePointIdentity](sharePointidentity.md) resources. This resource extends from the **identitySet** resource to provide the ability to expose SharePoint-specific information to the user.
+Represents a keyed collection of [sharePointIdentity](sharePointidentity.md) and [identity][] resources. This resource extends from the **identitySet** resource to provide the ability to expose SharePoint-specific information to the user.
 
 This resource is used to represent a set of identities associated with various events for an item, such as _created by_ or _last modified by_.
 
@@ -24,8 +24,8 @@ For usage information, see [driveItem][].
 | application | [identity][] | The application associated with this action. Optional. |
 | device | [identity][] | The device associated with this action. Optional. |
 | group | [identity][] | The group associated with this action. Optional. |
-| sharePointGroup | [sharePointGroupIdentity][] | The SharePoint group associated with this action. Optional. |
-| siteGroup | [sharePointIdentity][] | The SharePoint group associated with this action. Optional. |
+| sharePointGroup | [sharePointGroupIdentity][] | The SharePoint group associated with this action, identified by a globally unique ID. Use this property instead of **siteGroup** when available. Optional. |
+| siteGroup | [sharePointIdentity][] | The SharePoint group associated with this action, identified by a principal ID that is unique only within the site. Optional. |
 | siteUser | [sharePointIdentity][] | The SharePoint user associated with this action. Optional. |
 | user | [identity][] | The user associated with this action. Optional. |
 
@@ -38,7 +38,7 @@ None.
 The following JSON representation shows the resource type.
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.sharePointIdentitySet",
-       "optionalProperties": ["user", "application", "group", "device", "siteUser", "siteGroup"],
+        "optionalProperties": ["user", "application", "group", "device", "siteUser", "siteGroup", "sharePointGroup"],
        "openType": true } -->
 
 ```json
@@ -58,7 +58,7 @@ The following JSON representation shows the resource type.
 [driveItem]: driveitem.md
 [identity]: identity.md
 [sharePointGroupIdentity]: sharepointgroupidentity.md
-[sharePointIdentity]: sharePointidentity.md
+[sharePointIdentity]: sharepointidentity.md
 
 <!-- {
   "type": "#page.annotation",

@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [agentregistry-deprecation-note](../includes/agentregistry-deprecation-note.md)]
+
 Update the properties of an [agentCollection](../resources/agentcollection.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]

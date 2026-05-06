@@ -75,7 +75,7 @@ If successful, this action returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Compute protection scope for an Enterprise AI app
+### Example 1: Compute protection scope for an Enterprise app
 
 #### Request
 

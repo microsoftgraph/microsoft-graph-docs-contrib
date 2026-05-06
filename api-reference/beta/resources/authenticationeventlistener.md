@@ -27,6 +27,7 @@ To customize the authentication process, listeners can be registered which speci
 - [onEmailOtpSendListener](../resources/onemailotpsendlistener.md) resource type
 - [onPasswordSubmitListener](../resources/onpasswordsubmitlistener.md) resource type
 - [onFraudProtectionLoadStartListener](../resources/onFraudProtectionLoadStartListener.md) resource type
+- [onVerifiedIdClaimValidationListener](../resources/onverifiedidclaimvalidationlistener.md) resource type
 
 > [!NOTE]
 >

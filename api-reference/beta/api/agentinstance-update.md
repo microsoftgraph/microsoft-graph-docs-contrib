@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [agentregistry-deprecation-note](../includes/agentregistry-deprecation-note.md)]
+
 Update the properties of an [agentInstance](../resources/agentinstance.md) object. You can also update the [agentCardManifest](../resources/agentcardmanifest.md) associated with the agent instance by including the manifest in the request body.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -102,7 +104,7 @@ Content-Type: application/json
     "iconUrl": "https://example.com/icon.png",
     "provider": {
       "organization": "Test Organization",
-      "url": "https://test.com"
+      "url": "https://contoso.com"
     },
     "protocolVersion": "1.0",
     "version": "1.0.0",

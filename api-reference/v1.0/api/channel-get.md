@@ -133,6 +133,7 @@ Content-type: application/json
     "displayName": "General",
     "description": "AutoTestTeam_20210311_150740.2550_fim3udfdjen9",
     "membershipType": "standard",
+    "layoutType": "post",
     "isArchived": false
 }
 ```

@@ -52,6 +52,7 @@ The Microsoft Graph API also provides methods and actions that support common us
 |:----------|:---------------|:---------|
 | **User-centric actions** | | |
 | Draft, read, reply, forward, send, update, or delete messages | [message](../resources/message.md) | [Methods of message](../resources/message.md#methods) |
+| Create, read, update, or delete notes with optional inline image attachments | [note](../resources/note.md) | [Methods of note](../resources/note.md#methods) |
 | Delegate another user to send messages on behalf of the mailbox owner | [message](../resources/message.md) | Set the **from** and **sender** properties in a [message](../resources/message.md) |
 | Let user view more important messages first | [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) | [Focused Inbox](../resources/manage-focused-inbox.md) |
 | Query for messages and get them in a search folder  | [mailSearchFolder](../resources/mailsearchfolder.md) | [Methods of mailSearchFolder](../resources/mailsearchfolder.md#methods) |

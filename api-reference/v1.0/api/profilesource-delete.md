@@ -98,7 +98,6 @@ DELETE https://graph.microsoft.com/v1.0/admin/people/profileSources(sourceId='ba
 
 ---
 
-
 ### Response
 
 The following example shows the response.

@@ -348,26 +348,14 @@ items:
             href: ../../api/healthmonitoring-alertconfiguration-get.md
           - name: Update
             href: ../../api/healthmonitoring-alertconfiguration-update.md
-    - name: Premium license utilization
+    - name: Premium license utilization (preview)
       items:
-      - name: Microsoft Entra premium license insight
+      - name: Entra ID P1/P2 license utilization
         items:
-        - name: Microsoft Entra premium license insight
+        - name: Entra ID P1/P2 license utilization
           href: ../../resources/azureadpremiumlicenseinsight.md
         - name: Get
           href: ../../api/azureadpremiumlicenseinsight-get.md
-      - name: Complex types
-        items:
-        - name: Internet access feature utilizations
-          href: ../../resources/internetaccessfeatureutilizations.md
-        - name: Microsoft Entra premium feature utilization
-          href: ../../resources/azureadpremiumfeatureutilization.md
-        - name: Microsoft Entra premium p 1 feature utilizations
-          href: ../../resources/azureadpremiump1featureutilizations.md
-        - name: Microsoft Entra premium p 2 feature utilizations
-          href: ../../resources/azureadpremiump2featureutilizations.md
-        - name: Private access feature utilizations
-          href: ../../resources/privateaccessfeatureutilizations.md
     - name: Service principal sign-in activity (preview)
       items:
       - name: Service principal sign-in activity (preview)
@@ -376,7 +364,7 @@ items:
         href: ../../api/reportroot-list-serviceprincipalsigninactivities.md
       - name: Get
         href: ../../api/serviceprincipalsigninactivity-get.md
-  - name: Microsoft Entra logs
+  - name: Microsoft Entra logs and reports
     items:
     - name: Overview
       href: ../../resources/azure-ad-auditlog-overview.md
@@ -416,18 +404,6 @@ items:
         href: ../../api/auditlogroot-list-signups.md
       - name: Get
         href: ../../api/selfservicesignup-get.md
-    - name: Sign in events activity
-      items:
-      - name: Sign in events activity
-        href: ../../resources/signineventsactivity.md
-      - name: List
-        href: ../../api/auditlogroot-list-signineventssummary.md
-    - name: Sign in events app activity
-      items:
-      - name: Sign in events app activity
-        href: ../../resources/signineventsappactivity.md
-      - name: List
-        href: ../../api/auditlogroot-list-signineventsappsummary.md
     - name: Sign-in
       items:
       - name: Sign-in
@@ -442,9 +418,21 @@ items:
         href: ../../api/signin-confirmsafe.md
       - name: Dismiss
         href: ../../api/signin-dismiss.md
-    - name: Summarized sign in
+    - name: Sign-in events activity
       items:
-      - name: Summarized sign in
+      - name: Sign-in events activity
+        href: ../../resources/signineventsactivity.md
+      - name: List
+        href: ../../api/auditlogroot-list-signineventssummary.md
+    - name: Sign-in events app activity
+      items:
+      - name: Sign-in events app activity
+        href: ../../resources/signineventsappactivity.md
+      - name: List
+        href: ../../api/auditlogroot-list-signineventsappsummary.md
+    - name: Summarized sign-in
+      items:
+      - name: Summarized sign-in
         href: ../../resources/summarizedsignin.md
       - name: Get summarized MSI sign-ins
         href: ../../api/auditlogroot-getsummarizedmsisignins.md
@@ -452,7 +440,7 @@ items:
         href: ../../api/auditlogroot-getsummarizednoninteractivesignins.md
       - name: Get summarized service principal sign-ins
         href: ../../api/auditlogroot-getsummarizedserviceprincipalsignins.md
-- name: Microsoft 365 monitoring reports (preview)
+- name: Monitoring reports (preview)
   items:
   - name: Overview
     href: ../../resources/m365-monitoring-api-overview.md

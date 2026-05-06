@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [agentregistry-deprecation-note](../includes/agentregistry-deprecation-note.md)]
+
 List the [agent card manifest](../resources/agentcardmanifest.md) referenced by the [agent instance](../resources/agentinstance.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]

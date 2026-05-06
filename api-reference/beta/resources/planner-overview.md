@@ -107,7 +107,7 @@ Alternatively, you can specify the URL for a user.
 ```json
 {
     "container": {
-        "url": "https://graph.microsoft.com/beta/users/me"
+        "url": "https://graph.microsoft.com/beta/users/{id}"
     }
 }
 ```

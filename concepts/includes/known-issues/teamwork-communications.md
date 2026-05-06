@@ -245,4 +245,4 @@ This API works differently in one or more national clouds. For details, see [Imp
   "ms.reviewer": ""
 } -->
 
-In the current beta release, the **layoutType** property returns `null` when listing all channels.
+The **layoutType** property returns `null` when listing all channels. To get the layout type of a specific channel, use the [Get channel](/graph/api/channel-get) API.

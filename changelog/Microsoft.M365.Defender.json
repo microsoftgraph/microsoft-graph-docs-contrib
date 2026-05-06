@@ -3,6 +3,58 @@
     {
       "ChangeList": [
         {
+          "Id": "8379ddd0-e101-4994-994f-36d29a65811d",
+          "ApiChange": "Property",
+          "ChangedApiName": "categories",
+          "ChangeType": "Addition",
+          "Description": "Added the **categories** property to the [alert](https://learn.microsoft.com/en-us/graph/api/resources/security-alert?view=graph-rest-beta) resource.",
+          "Target": "alert"
+        },
+        {
+          "Id": "8379ddd0-e101-4994-994f-36d29a65811d",
+          "ApiChange": "Property",
+          "ChangedApiName": "category",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **category** property on the [alert](https://learn.microsoft.com/en-us/graph/api/resources/security-alert?view=graph-rest-beta) resource. Use the **categories** property instead.",
+          "Target": "alert"
+        }
+      ],
+      "Id": "8379ddd0-e101-4994-994f-36d29a65811d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-05-06T09:53:42.0329384Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Alerts and incidents"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fecc7d38-924a-4137-a934-8d0d83035f20",
+          "ApiChange": "Property",
+          "ChangedApiName": "categories",
+          "ChangeType": "Addition",
+          "Description": "Added the **categories** property to the [alert](https://learn.microsoft.com/en-us/graph/api/resources/security-alert?view=graph-rest-1.0) resource.",
+          "Target": "alert"
+        },
+        {
+          "Id": "fecc7d38-924a-4137-a934-8d0d83035f20",
+          "ApiChange": "Property",
+          "ChangedApiName": "category",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **category** property on the [alert](https://learn.microsoft.com/en-us/graph/api/resources/security-alert?view=graph-rest-1.0) resource. Use the **categories** property instead.",
+          "Target": "alert"
+        }
+      ],
+      "Id": "fecc7d38-924a-4137-a934-8d0d83035f20",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-05-06T09:53:42.0336216Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Alerts and incidents"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "724993ad-638e-4e15-a537-621ca6862b7f",
           "ApiChange": "EnumType",
           "ChangedApiName": "correlationReason",

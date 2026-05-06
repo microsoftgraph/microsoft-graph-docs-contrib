@@ -44,7 +44,7 @@ To evaluate removal as the signed-in user (delegated permission) or a specified 
 
 ```http
 POST /users/{usersId}/security/informationProtection/sensitivityLabels/evaluateRemoval
-POST /users/me/security/informationProtection/sensitivityLabels/evaluateRemoval
+POST /me/security/informationProtection/sensitivityLabels/evaluateRemoval
 ```
 
 To evaluate removal as a service principal (application permission):

@@ -26,7 +26,7 @@ $agentCardManifest->setDescription('Manages organizational conditional access po
 $agentCardManifest->setIconUrl('https://example.com/icon.png');
 $agentCardManifestProvider = new AgentProvider();
 $agentCardManifestProvider->setOrganization('Test Organization');
-$agentCardManifestProvider->setUrl('https://test.com');
+$agentCardManifestProvider->setUrl('https://contoso.com');
 $agentCardManifest->setProvider($agentCardManifestProvider);
 $agentCardManifest->setProtocolVersion('1.0');
 $agentCardManifest->setVersion('1.0.0');

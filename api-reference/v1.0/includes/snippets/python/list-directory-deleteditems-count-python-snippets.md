@@ -12,7 +12,7 @@ from kiota_abstractions.base_request_configuration import RequestConfiguration
 query_params = GroupRequestBuilder.GroupRequestBuilderGetQueryParameters(
 		count = True,
 		orderby = ["deletedDateTime asc"],
-		select = ["id","DisplayName","deletedDateTime"],
+		select = ["id","displayName","deletedDateTime"],
 )
 
 request_configuration = RequestConfiguration(
