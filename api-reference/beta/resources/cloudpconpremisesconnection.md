@@ -1,12 +1,12 @@
 ---
 title: "cloudPcOnPremisesConnection resource type"
 description: "Represents a defined collection of Azure resource information that can be used to establish Azure network connectivity for Cloud PCs."
-author: "AshleyYangSZ"
+author: "danipocket"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
 toc.title: Cloud PC Azure network connection
-ms.date: 10/21/2024
+ms.date: 05/05/2026
 ---
 
 # cloudPcOnPremisesConnection resource type
@@ -50,7 +50,6 @@ Represents a defined collection of Azure resource information that can be used t
 |inUseByCloudPc|Boolean| Indicates whether a Cloud PC is using this on-premises network connection. `true` if at least one Cloud PC is using it. Otherwise, `false`. Read-only. Default is `false`. |
 |managedBy|[cloudPcManagementService](#cloudpcmanagementservice-values)|Specifies which services manage the Azure network connection. The possible values are: `windows365`, `devBox`, `unknownFutureValue`, `rpaBox`, `microsoft365Opal`, `microsoft365BizChat`. Use the `Prefer: include-unknown-enum-members` request header to get the following members in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `rpaBox`, `microsoft365Opal`, `microsoft365BizChat`. Read-only.|
 |organizationalUnit|String|The organizational unit (OU) in which the computer account is created. If left null, the OU configured as the default (a well-known computer object container) in your Active Directory domain (OU) is used. Optional.|
-|organizationalUnit|String|The organizational unit (OU) in which the computer account is created. If left null, the OU configured as the default (a well-known computer object container) in your Active Directory domain (OU) is used. Optional.|
 |resourceGroupId|String|The ID of the target resource group. Required format: `/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}`.|
 |scopeIds|String collection|The scope IDs of the corresponding permission. Currently, it's the Intune scope tag ID.|
 |subnetId|String|The ID of the target subnet. Required format: `/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}`.|
@@ -72,7 +71,6 @@ Represents a defined collection of Azure resource information that can be used t
 | rpaBox             | The Azure network connection was successfully created through the Power Automate project.         |
 | microsoft365Opal   | Indicates that the Cloud PC Azure network connection was successfully created through the Project Opal.    |
 | microsoft365BizChat| Indicates that the Cloud PC Azure network connection was successfully created through the Project Biz Chat.|
-
 
 ### cloudPcOnPremisesConnectionType values
 

@@ -162,6 +162,13 @@ Content-type: application/json
     "comments": [],
     "evidence": [],
     "systemTags" : [],
-    "customDetails": {"newKey":"newValue"}
+    "customDetails": {
+      "threatIntelligenceVerdict": "KnownMalicious",
+      "matchedThreatActor": "DEV-0537",
+      "automationPlaybookName": "BlockIPAndIsolateHost",
+      "automationExecutionStatus": "Succeeded",
+      "iocTypeMatched": "IPAddress",
+      "firstSeenInOrg": "2026-04-14T08:12:00Z"
+    }
 }
 ```

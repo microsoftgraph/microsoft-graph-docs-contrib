@@ -186,6 +186,12 @@ items:
       items:
       - name: List oauth2PermissionGrants
         href: ../../api/serviceprincipal-list-oauth2permissiongrants.md
+    - name: Inherited permissions
+      items:
+      - name: List inherited app role assignments
+        href: ../../api/agentidentity-list-inheritedapproleassignments.md
+      - name: List inherited OAuth2 permission grants
+        href: ../../api/agentidentity-list-inheritedoauth2permissiongrants.md
     - name: Deleted items
       items:
       - name: List

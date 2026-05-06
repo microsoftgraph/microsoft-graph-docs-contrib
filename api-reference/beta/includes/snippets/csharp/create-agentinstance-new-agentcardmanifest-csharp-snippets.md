@@ -80,7 +80,7 @@ var requestBody = new AgentInstance
 		Provider = new AgentProvider
 		{
 			Organization = "Test Organization",
-			Url = "https://test.com",
+			Url = "https://contoso.com",
 		},
 		ProtocolVersion = "1.0",
 		Version = "1.0.0",

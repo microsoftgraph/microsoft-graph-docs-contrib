@@ -61,6 +61,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_agentuser"
@@ -69,6 +70,12 @@ The following example shows a request.
 ``` http
 DELETE https://graph.microsoft.com/v1.0/users/microsoft.graph.agentUser/ba9a3254-9f18-4209-aeb3-9e42a35b5be4 
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-agentuser-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

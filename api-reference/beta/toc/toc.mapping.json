@@ -1869,7 +1869,31 @@
                 "crossTenantAccessPolicy",
                 "crossTenantAccessPolicyConfigurationDefault",
                 "crossTenantAccessPolicyConfigurationPartner",
-                "crossTenantIdentitySyncPolicyPartner"
+                "crossTenantIdentitySyncPolicyPartner",
+                "m365CapabilityBase"
+              ],
+              "childNodes": [
+                {
+                  "name": "Microsoft 365 capabilities",
+                  "resources": [
+                    "crossTenantCalendarAvailabilityBasic",
+                    "crossTenantCalendarAvailabilityLimitedDetails",
+                    "crossTenantCalendarSharingFreeBusyDetail",
+                    "crossTenantCalendarSharingFreeBusyReviewer",
+                    "crossTenantCalendarSharingFreeBusySimple",
+                    "crossTenantMailTipsAll",
+                    "crossTenantMailTipsLimited",
+                    "crossTenantMigration",
+                    "crossTenantOpenProfileCard",
+                    "crossTenantPlacesDeskBooking",
+                    "crossTenantPlacesRoomBooking"
+                  ],
+                  "complexTypes": [
+                    "m365CapabilityInboundAccess",
+                    "m365CapabilityResourceScope",
+                    "m365CapabilityResourceScopes"
+                  ]
+                }
               ]
             },
             {

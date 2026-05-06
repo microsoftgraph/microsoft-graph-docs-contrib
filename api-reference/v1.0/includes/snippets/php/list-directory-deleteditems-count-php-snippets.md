@@ -20,7 +20,7 @@ $requestConfiguration->headers = $headers;
 $queryParameters = GraphGroupRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->count = true;
 $queryParameters->orderby = ["deletedDateTime asc"];
-$queryParameters->select = ["id","DisplayName","deletedDateTime"];
+$queryParameters->select = ["id","displayName","deletedDateTime"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
