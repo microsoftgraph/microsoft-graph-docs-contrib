@@ -15,7 +15,7 @@
               "ApiChange": "Term",
               "ChangedApiName": "conflictBehavior",
               "ChangeType": "Addition",
-              "Description": "Added the [conflictBehavior](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource.",
+              "Description": "Added support for the `@microsoft.graph.conflictBehavior` instance annotation in the [Create oneDriveForBusinessRestoreSession](https://learn.microsoft.com/en-us/graph/api/backuprestoreroot-post-onedriveforbusinessrestoresessions?view=graph-rest-beta) and [Create sharePointRestoreSession](https://learn.microsoft.com/en-us/graph/api/backuprestoreroot-post-sharepointrestoresessions?view=graph-rest-beta) APIs.",
               "Target": "microsoft.graph"
             }
           ],
