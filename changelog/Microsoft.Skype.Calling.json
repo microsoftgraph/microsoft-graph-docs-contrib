@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "bd16e1cf-95de-4af4-b71c-0be1d682b4ef",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "meetingEngagementType",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingEngagementType** enumeration type.",
+          "Target": "meetingEngagementType"
+        },
+        {
+          "Id": "bd16e1cf-95de-4af4-b71c-0be1d682b4ef",
+          "ApiChange": "Resource",
+          "ChangedApiName": "meetingEngagement",
+          "ChangeType": "Addition",
+          "Description": "Added the [meetingEngagement](https://learn.microsoft.com/en-us/graph/api/resources/meetingEngagement?view=graph-rest-beta) resource.",
+          "Target": "meetingEngagement"
+        },
+        {
+          "Id": "bd16e1cf-95de-4af4-b71c-0be1d682b4ef",
+          "ApiChange": "Property",
+          "ChangedApiName": "engagements",
+          "ChangeType": "Addition",
+          "Description": "Added the **engagements** property to the [attendanceRecord](https://learn.microsoft.com/en-us/graph/api/resources/attendanceRecord?view=graph-rest-beta) resource.",
+          "Target": "attendanceRecord"
+        }
+      ],
+      "Id": "bd16e1cf-95de-4af4-b71c-0be1d682b4ef",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-05-05T20:46:26.7145941Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "94772378-a35f-46e1-a514-13e6a88982a0",
           "ApiChange": "Property",
           "ChangedApiName": "meetingSpokenLanguageTag",
