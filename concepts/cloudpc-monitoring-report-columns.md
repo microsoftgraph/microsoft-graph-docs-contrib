@@ -1,4 +1,4 @@
----
+﻿---
 title: "Cloud PC monitoring report column definitions"
 description: "Learn about the columns returned by each Cloud PC monitoring report type in the retrieveCloudPcMonitoringReports API."
 author: "zzkkcc"
@@ -14,7 +14,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 
 ## Tenant reports
 
-### troubleshootTenantGlobalFilterReport
+### Tenant global filter report
 
 | Column | Description |
 |:-------|:------------|
@@ -32,7 +32,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | ClientType | The type of client device. |
 | TransportType | The transport protocol type used. |
 
-### troubleshootTenantNetworkTrendReport
+### Tenant network trend report
 
 | Column | Description |
 |:-------|:------------|
@@ -41,7 +41,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | EventDateTime | The date and time when the event occurred. |
 | GroupColumn | The metric used for grouping data (PolicyName, Region, UserSettingName, ServicePlanType, ServicePlanName, OSBuildVersion, AADJoinType, ImageName, GatewayRegion, ClientOS, ClientType, TransportType, CloudPCEndpointCountryRegion, CloudPCEndpointState, or CloudPCEndpointCity). |
 
-### troubleshootTenantNetworkAggregatedReport
+### Tenant network aggregated report
 
 | Column | Description |
 |:-------|:------------|
@@ -49,7 +49,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | TenantId | The unique identifier of the tenant. |
 | GroupColumn | The metric used for grouping data (PolicyName, Region, UserSettingName, ServicePlanType, ServicePlanName, OSBuildVersion, AADJoinType, ImageName, GatewayRegion, ClientOS, ClientType, TransportType, CloudPCEndpointCountryRegion, CloudPCEndpointState, or CloudPCEndpointCity). |
 
-### troubleshootTenantConnectionFailureRateTrendReport
+### Tenant connection failure rate trend report
 
 | Column | Description |
 |:-------|:------------|
@@ -61,7 +61,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | EventDateTime | The date and time when the event occurred. |
 | GroupColumn | The metric used for grouping data (PolicyName, Region, UserSettingName, ServicePlanType, ServicePlanName, OSBuildVersion, AADJoinType, ImageName, GatewayRegion, ClientOS, ClientType, TransportType, CloudPCEndpointCountryRegion, CloudPCEndpointState, or CloudPCEndpointCity). |
 
-### troubleshootTenantConnectionFailureRateAggregatedReport
+### Tenant connection failure rate aggregated report
 
 | Column | Description |
 |:-------|:------------|
@@ -72,7 +72,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | TenantId | The unique identifier of the tenant. |
 | GroupColumn | The metric used for grouping data (PolicyName, Region, UserSettingName, ServicePlanType, ServicePlanName, OSBuildVersion, AADJoinType, ImageName, GatewayRegion, ClientOS, ClientType, TransportType, CloudPCEndpointCountryRegion, CloudPCEndpointState, or CloudPCEndpointCity). |
 
-### troubleshootTenantCloudPCHealthTrendReport
+### Tenant Cloud PC health trend report
 
 | Column | Description |
 |:-------|:------------|
@@ -81,7 +81,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | EventDateTime | The date and time when the event occurred. |
 | GroupColumn | The metric used for grouping data (PolicyName, Region, UserSettingName, ServicePlanType, ServicePlanName, OSBuildVersion, AADJoinType, ImageName, GatewayRegion, ClientOS, ClientType, TransportType, CloudPCEndpointCountryRegion, CloudPCEndpointState, or CloudPCEndpointCity). |
 
-### troubleshootTenantCloudPCHealthAggregatedReport
+### Tenant Cloud PC health aggregated report
 
 | Column | Description |
 |:-------|:------------|
@@ -89,7 +89,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | TenantId | The unique identifier of the tenant. |
 | GroupColumn | The metric used for grouping data (PolicyName, Region, UserSettingName, ServicePlanType, ServicePlanName, OSBuildVersion, AADJoinType, ImageName, GatewayRegion, ClientOS, ClientType, TransportType, CloudPCEndpointCountryRegion, CloudPCEndpointState, or CloudPCEndpointCity). |
 
-### troubleshootTenantActiveConnectionCountTrendReport
+### Tenant active connection count trend report
 
 | Column | Description |
 |:-------|:------------|
@@ -98,7 +98,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | EventDateTime | The date and time when the event occurred. |
 | GroupColumn | The metric used for grouping data (PolicyName, Region, UserSettingName, ServicePlanType, ServicePlanName, OSBuildVersion, AADJoinType, ImageName, GatewayRegion, ClientOS, ClientType, TransportType, CloudPCEndpointCountryRegion, CloudPCEndpointState, or CloudPCEndpointCity). |
 
-### troubleshootTenantActiveConnectionCountAggregatedReport
+### Tenant active connection count aggregated report
 
 | Column | Description |
 |:-------|:------------|
@@ -106,7 +106,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | TenantId | The unique identifier of the tenant. |
 | GroupColumn | The metric used for grouping data (PolicyName, Region, UserSettingName, ServicePlanType, ServicePlanName, OSBuildVersion, AADJoinType, ImageName, GatewayRegion, ClientOS, ClientType, TransportType, CloudPCEndpointCountryRegion, CloudPCEndpointState, or CloudPCEndpointCity). |
 
-### troubleshootTenantMeanTimeToFailureTrendReport
+### Tenant mean time to failure trend report
 
 | Column | Description |
 |:-------|:------------|
@@ -115,7 +115,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | EventDateTime | The date and time when the event occurred. |
 | GroupColumn | The metric used for grouping data (PolicyName, Region, UserSettingName, ServicePlanType, ServicePlanName, OSBuildVersion, AADJoinType, ImageName, GatewayRegion, ClientOS, ClientType, TransportType, CloudPCEndpointCountryRegion, CloudPCEndpointState, or CloudPCEndpointCity). |
 
-### troubleshootTenantMeanTimeToFailureAggregatedReport
+### Tenant mean time to failure aggregated report
 
 | Column | Description |
 |:-------|:------------|
@@ -123,7 +123,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | TenantId | The unique identifier of the tenant. |
 | GroupColumn | The metric used for grouping data (PolicyName, Region, UserSettingName, ServicePlanType, ServicePlanName, OSBuildVersion, AADJoinType, ImageName, GatewayRegion, ClientOS, ClientType, TransportType, CloudPCEndpointCountryRegion, CloudPCEndpointState, or CloudPCEndpointCity). |
 
-### troubleshootTenantRemoteSignInTimeTrendReport
+### Tenant remote sign-in time trend report
 
 | Column | Description |
 |:-------|:------------|
@@ -132,7 +132,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | EventDateTime | The date and time when the event occurred. |
 | GroupColumn | The metric used for grouping data (PolicyName, Region, UserSettingName, ServicePlanType, ServicePlanName, OSBuildVersion, AADJoinType, ImageName, GatewayRegion, ClientOS, ClientType, TransportType, CloudPCEndpointCountryRegion, CloudPCEndpointState, or CloudPCEndpointCity). |
 
-### troubleshootTenantRemoteSignInTimeAggregatedReport
+### Tenant remote sign-in time aggregated report
 
 | Column | Description |
 |:-------|:------------|
@@ -142,7 +142,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 
 ## Configuration reports
 
-### troubleshootConfigurationGlobalFilterV1Report
+### Configuration global filter report
 
 | Column | Description |
 |:-------|:------------|
@@ -162,7 +162,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | TeamsAppV2Version | The version of the Teams App V2. |
 | MMRVersion | The version of the MMR component. |
 
-### troubleshootConfigurationTotalConnectionCountBarV1Report
+### Configuration total connection count bar report
 
 | Column | Description |
 |:-------|:------------|
@@ -170,7 +170,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | TenantId | The unique identifier of the tenant. |
 | GroupColumn | The metric used for grouping data (CloudPCStatus, Region, PolicyName, UserSettingName, ImageName, ServicePlanName, ServicePlanType, OSVersion, OSBuildVersion, ClientOS, ClientType, ClientVersion, TeamsAppV2Version, or MMRVersion). |
 
-### troubleshootConfigurationConnectionCountTrendV1Report
+### Configuration connection count trend report
 
 | Column | Description |
 |:-------|:------------|
@@ -181,7 +181,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 
 ## User and Cloud PC reports
 
-### troubleshootMatchedUserReport
+### Matched user report
 
 | Column | Description |
 |:-------|:------------|
@@ -189,7 +189,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | UPN | The User Principal Name of the user. |
 | UserId | The unique identifier of the user. |
 
-### troubleshootMatchedCloudPCReport
+### Matched Cloud PC report
 
 | Column | Description |
 |:-------|:------------|
@@ -197,7 +197,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | CloudPCId | The unique identifier of the Cloud PC. |
 | ManagedDeviceName | The name of the managed device. |
 
-### troubleshootCloudPCListReport
+### Cloud PC list report
 
 | Column | Description |
 |:-------|:------------|
@@ -217,7 +217,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | ProvisioningPolicyId | The unique identifier of the provisioning policy. |
 | PolicyName | The name of the policy applied. |
 
-### troubleshootUserListReport
+### User list report
 
 | Column | Description |
 |:-------|:------------|
@@ -240,7 +240,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | ProvisioningPolicyId | The unique identifier of the provisioning policy. |
 | PolicyName | The name of the policy applied. |
 
-### troubleshootCloudPCDurationTrendReport
+### Cloud PC duration trend report
 
 | Column | Description |
 |:-------|:------------|
@@ -252,7 +252,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | DurationInHour | The duration time in hours. |
 | AvgDurationInHour | The average duration time in hours. |
 
-### troubleshootCloudPCDurationAggregatedReport
+### Cloud PC duration aggregated report
 
 | Column | Description |
 |:-------|:------------|
@@ -263,7 +263,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | DurationInHour | The duration time in hours. |
 | AvgDurationInHour | The average duration time in hours. |
 
-### troubleshootCloudPCErrorTrendReport
+### Cloud PC error trend report
 
 | Column | Description |
 |:-------|:------------|
@@ -272,7 +272,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | EventDateTime | The date and time when the event occurred. |
 | ErrorCount | The count of errors reported. |
 
-### troubleshootCloudPCErrorAggregatedReport
+### Cloud PC error aggregated report
 
 | Column | Description |
 |:-------|:------------|
@@ -281,7 +281,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | ErrorCount | The count of errors reported. |
 | ErrorPercentage | The percentage of errors reported. |
 
-### troubleshootCloudPCNetworkTrendReport
+### Cloud PC network trend report
 
 | Column | Description |
 |:-------|:------------|
@@ -293,7 +293,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | RoundTripTimeInMsP50 | The 50th percentile round trip time in milliseconds. |
 | BandwidthInMbpsP50 | The 50th percentile bandwidth in megabits per second. |
 
-### troubleshootCloudPCNetworkAggregatedReport
+### Cloud PC network aggregated report
 
 | Column | Description |
 |:-------|:------------|
@@ -304,7 +304,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | RoundTripTimeInMsP50 | The 50th percentile round trip time in milliseconds. |
 | BandwidthInMbpsP50 | The 50th percentile bandwidth in megabits per second. |
 
-### troubleshootCloudPCRemoteSignInTimeTrendReport
+### Cloud PC remote sign-in time trend report
 
 | Column | Description |
 |:-------|:------------|
@@ -315,7 +315,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | EventDateTime | The date and time when the event occurred. |
 | RemoteSignInTimeInSecondAvg | The average remote sign-in time in seconds. |
 
-### troubleshootCloudPCRemoteSignInTimeAggregatedReport
+### Cloud PC remote sign-in time aggregated report
 
 | Column | Description |
 |:-------|:------------|
@@ -325,7 +325,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | UPN | The User Principal Name of the user. |
 | RemoteSignInTimeInSecondAvg | The average remote sign-in time in seconds. |
 
-### troubleshootCloudPCHealthTrendReport
+### Cloud PC health trend report
 
 | Column | Description |
 |:-------|:------------|
@@ -339,7 +339,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 
 ## View data table reports
 
-### troubleshootTenantConnectedDevicesOfViewDataTableReport
+### Tenant connected devices data table report
 
 | Column | Description |
 |:-------|:------------|
@@ -358,7 +358,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | ServicePlanName | The name of the service plan. |
 | ImageName | The name of the OS image used. |
 
-### troubleshootConnectionConfigurationOfViewDataTableV1Report
+### Connection configuration data table report
 
 | Column | Description |
 |:-------|:------------|
@@ -394,7 +394,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | CloudPCEndpointState | The state of the Cloud PC endpoint. |
 | CloudPCEndpointCity | The city of the Cloud PC endpoint. |
 
-### troubleshootEventsOfViewDataTableReport
+### Events data table report
 
 | Column | Description |
 |:-------|:------------|
@@ -416,7 +416,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | EventLevel | The severity level of the event. |
 | CloudDeviceHealthState | The health state of the Cloud PC device. |
 
-### troubleshootCloudPCMetricsOfViewDataTableReport
+### Cloud PC metrics data table report
 
 | Column | Description |
 |:-------|:------------|
@@ -436,7 +436,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | AvgDurationInHour | The average duration time in hours. |
 | RemoteSignInTimeInSecondAvg | The average remote sign-in time in seconds. |
 
-### troubleshootTenantEnvironmentMetricsOfViewDataTableReport
+### Tenant environment metrics data table report
 
 | Column | Description |
 |:-------|:------------|
@@ -452,7 +452,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | MeanTimeToRepairInSecond | The mean time to repair in seconds. |
 | RemoteSignInTimeInSecondAvg | The average remote sign-in time in seconds. |
 
-### troubleshootEnvironmentOverviewOfViewDataTableReport
+### Environment overview data table report
 
 | Column | Description |
 |:-------|:------------|
@@ -470,7 +470,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 
 ## Additional reports
 
-### troubleshootVMPerformanceReport
+### VM performance report
 
 | Column | Description |
 |:-------|:------------|
@@ -482,7 +482,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | Total | Total or sum aggregation value. |
 | Count | Count aggregation value. |
 
-### getAIEnabledStateCPCReport
+### AI-enabled state report
 
 | Column | Description |
 |:-------|:------------|
@@ -500,7 +500,7 @@ The [retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpc
 | ErrorMessage | The descriptive error message if applicable. |
 | EngineeringAction | The engineering action taken for AI enablement. |
 
-### reserveLicenseReport
+### Reserve license report
 
 | Column | Description |
 |:-------|:------------|
