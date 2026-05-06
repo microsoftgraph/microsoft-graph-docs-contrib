@@ -12,15 +12,16 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)] 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 An abstract type that represents granular restore artifacts associated with a restore session.
 
-Base type for [grnularDriveRestoreArtifact](../resources/granulardriverestoreartifact.md) and [granularSiteRaestoreArtifact](../resources/granularsiterestoreartifact.md)
+Base type for [granularDriveRestoreArtifact](../resources/granulardriverestoreartifact.md) and [granularSiteRestoreArtifact](../resources/granularsiterestoreartifact.md)
 
 Inherits from [entity](../resources/entity.md).
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |browseSessionId|String|The unique identifier of the [browseSession](../resources/browsesessionbase.md)|
@@ -29,16 +30,18 @@ Inherits from [entity](../resources/entity.md).
 |id|String|The unique identifier for the artifact. Inherited from [entity](../resources/entity.md). Inherits from [entity](../resources/entity.md)|
 |restoredItemKey|String|The unique identifier for the restored artifact.|
 |restoredItemPath|String|The path of the restored artifact. It's the path of the folder where all the artifacts are restored within a granular restore session.|
-|restoredItemWebUrl|String|The web url of the restord artifact.|
+|restoredItemWebUrl|String|The web url of the restored artifact.|
 |restorePointDateTime|DateTimeOffset|The restore point date time to which the artifact is restored.|
 |startDateTime|DateTimeOffset|The start time of the restoration.|
 |status|artifactRestoreStatus|Status of the artifact restoration. The possible values are: `added`, `scheduling`, `scheduled`, `inProgress`, `succeeded`, `failed`, `unknownFutureValue`.|
 |webUrl|String|The original web url of the artifact being restored.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -64,4 +67,3 @@ The following JSON representation shows the resource type.
   "destinationType": "String"
 }
 ```
-
