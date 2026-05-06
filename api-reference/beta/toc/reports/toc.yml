@@ -348,6 +348,26 @@ items:
             href: ../../api/healthmonitoring-alertconfiguration-get.md
           - name: Update
             href: ../../api/healthmonitoring-alertconfiguration-update.md
+    - name: Premium license utilization
+      items:
+      - name: Microsoft Entra premium license insight
+        items:
+        - name: Microsoft Entra premium license insight
+          href: ../../resources/azureadpremiumlicenseinsight.md
+        - name: Get
+          href: ../../api/azureadpremiumlicenseinsight-get.md
+      - name: Complex types
+        items:
+        - name: Internet access feature utilizations
+          href: ../../resources/internetaccessfeatureutilizations.md
+        - name: Microsoft Entra premium feature utilization
+          href: ../../resources/azureadpremiumfeatureutilization.md
+        - name: Microsoft Entra premium p 1 feature utilizations
+          href: ../../resources/azureadpremiump1featureutilizations.md
+        - name: Microsoft Entra premium p 2 feature utilizations
+          href: ../../resources/azureadpremiump2featureutilizations.md
+        - name: Private access feature utilizations
+          href: ../../resources/privateaccessfeatureutilizations.md
     - name: Service principal sign-in activity (preview)
       items:
       - name: Service principal sign-in activity (preview)
