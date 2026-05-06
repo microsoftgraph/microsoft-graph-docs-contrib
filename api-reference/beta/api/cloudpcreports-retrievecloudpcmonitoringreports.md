@@ -59,15 +59,9 @@ The following table lists the parameters that you can use with this action.
 |skip|Int32|Number of records to skip. Optional.|
 |top|Int32|The number of top records to return. If not specified, the default limit is 25, with a maximum of 1000. Optional.|
 
-## Response
+The **filter** parameter is required for most **reportName** values. Parameter values can be empty strings (`''`) if you're not filtering on that dimension. The maximum supported date range is 28 days for tenant-level and user and device reports, and 180 days for configuration reports.
 
-If successful, this action returns a `200 OK` response code and a Stream in the response body. For the columns returned for each **reportName** value, see [Cloud PC monitoring report column definitions](/graph/cloudpc-monitoring-report-columns).
-
-## Remarks
-
-The **filter** parameter is required for most **reportName** values. The following tables list the mandatory filter parameters by report category. Parameter values can be empty strings (`''`) if you're not filtering on that dimension. The maximum supported date range is 28 days for tenant-level and user and device reports, and 180 days for configuration reports.
-
-### Tenant-level reports
+The following table lists the mandatory filter parameters for tenant-level reports.
 
 | reportName | Mandatory filter parameters |
 |:---|:---|
@@ -75,13 +69,13 @@ The **filter** parameter is required for most **reportName** values. The followi
 | `troubleshootTenantNetworkTrendReport`, `troubleshootTenantNetworkAggregatedReport`, `troubleshootTenantConnectionFailureRateTrendReport`, `troubleshootTenantConnectionFailureRateAggregatedReport`, `troubleshootTenantActiveConnectionCountTrendReport`, `troubleshootTenantActiveConnectionCountAggregatedReport`, `troubleshootTenantMeanTimeToFailureTrendReport`, `troubleshootTenantMeanTimeToFailureAggregatedReport`, `troubleshootTenantRemoteSignInTimeTrendReport`, `troubleshootTenantRemoteSignInTimeAggregatedReport` | `TimeRange`, `PolicyNameParam`, `RegionParam`, `UserSettingNameParam`, `ServicePlanTypeParam`, `ServicePlanNameParam`, `OSBuildVersionParam`, `AADJoinTypeParam`, `ImageNameParam`, `GatewayRegionParam`, `ClientOSParam`, `ClientTypeParam`, `TransportTypeParam`, `CloudPCEndpointCountryRegionParam`, `CloudPCEndpointStateParam`, `CloudPCEndpointCityParam` |
 | `troubleshootTenantCloudPCHealthTrendReport`, `troubleshootTenantCloudPCHealthAggregatedReport` | `TimeRange`, `PolicyNameParam`, `RegionParam`, `ServicePlanTypeParam`, `ServicePlanNameParam`, `AADJoinTypeParam`, `ImageNameParam` |
 
-### Configuration-level reports
+The following table lists the mandatory filter parameters for configuration-level reports.
 
 | reportName | Mandatory filter parameters |
 |:---|:---|
 | `troubleshootConfigurationConnectionCountTrendV1Report`, `troubleshootConfigurationTotalConnectionCountBarV1Report` | `TimeRange`, `CloudPCStatusParam`, `RegionParam`, `PolicyNameParam`, `UserSettingNameParam`, `ImageNameParam`, `ServicePlanNameParam`, `ServicePlanTypeParam`, `OSVersionParam`, `OSBuildVersionParam`, `ClientOSParam`, `ClientTypeParam`, `ClientVersionParam`, `TeamsAppV2VersionParam`, `MMRVersionParam` |
 
-### User and device reports
+The following table lists the mandatory filter parameters for user and device reports.
 
 | reportName | Mandatory filter parameters | Notes |
 |:---|:---|:---|
@@ -91,7 +85,7 @@ The **filter** parameter is required for most **reportName** values. The followi
 | `troubleshootCloudPCNetworkTrendReport`, `troubleshootCloudPCNetworkAggregatedReport`, `troubleshootCloudPCErrorTrendReport`, `troubleshootCloudPCErrorAggregatedReport`, `troubleshootCloudPCDurationTrendReport`, `troubleshootCloudPCDurationAggregatedReport`, `troubleshootCloudPCRemoteSignInTimeTrendReport`, `troubleshootCloudPCRemoteSignInTimeAggregatedReport`, `troubleshootCloudPCMetricsOfViewDataTableReport` | `UPNParam`, `TimeRange`, `CloudPCIdParam` | At least one of **UPNParam** or **CloudPCIdParam** must have a non-empty value. |
 | `troubleshootCloudPCHealthTrendReport` | `TimeRange`, `CloudPCIdParam` | |
 
-### View data table reports
+The following table lists the mandatory filter parameters for view data table reports.
 
 | reportName | Mandatory filter parameters |
 |:---|:---|
@@ -101,6 +95,10 @@ The **filter** parameter is required for most **reportName** values. The followi
 | `troubleshootConnectionConfigurationOfViewDataTableV1Report` | `TimeRange`, `CloudPCStatusParam`, `RegionParam`, `PolicyNameParam`, `UserSettingNameParam`, `ImageNameParam`, `ServicePlanNameParam`, `ServicePlanTypeParam`, `OSVersionParam`, `OSBuildVersionParam`, `ClientOSParam`, `ClientTypeParam`, `ClientVersionParam`, `TeamsAppV2VersionParam`, `MMRVersionParam`, `CloudPCIdParam`, `UPNParam`, `AADJoinTypeParam`, `GatewayRegionParam`, `TransportTypeParam`, `CloudPCEndpointCountryRegionParam`, `CloudPCEndpointStateParam`, `CloudPCEndpointCityParam` |
 
 For `troubleshootVMPerformanceReport`, `getAIEnabledStateCPCReport`, and `reserveLicenseReport`, the **filter** parameter is optional.
+
+## Response
+
+If successful, this action returns a `200 OK` response code and a Stream in the response body. For the columns returned for each **reportName** value, see [Cloud PC monitoring report column definitions](/graph/cloudpc-monitoring-report-columns).
 
 ## Examples
 
