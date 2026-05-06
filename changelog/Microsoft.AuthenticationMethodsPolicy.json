@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "a38378c7-f9c4-4995-9869-d664e67c082c",
+          "ApiChange": "Property",
+          "ChangedApiName": "targetedAuthenticationMethod",
+          "ChangeType": "Change",
+          "Description": "Updated the **targetedAuthenticationMethod** property of the [authenticationMethodsRegistrationCampaignIncludeTarget](https://learn.microsoft.com/en-us/graph/api/resources/authenticationmethodsregistrationcampaignincludetarget?view=graph-rest-beta) resource to support `Fido2` in addition to `microsoftAuthenticator`.",
+          "Target": "authenticationMethodsRegistrationCampaignIncludeTarget"
+        }
+      ],
+      "Id": "a38378c7-f9c4-4995-9869-d664e67c082c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-05-06T09:35:24.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "d7bfd87d-b5a0-42e9-9707-6eec3ecd7d39",
           "ApiChange": "Enumeration",
           "ChangedApiName": "attestationEnforcement",
