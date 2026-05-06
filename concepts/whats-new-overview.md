@@ -109,7 +109,7 @@ Added the **deprecationDate** property to the [applicationTemplate](/graph/api/r
 
 ### Device and app management | Cloud PC
 
-- Added the [cloudPcReports: retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpcmonitoringreports?view=graph-rest-beta&preserve-view=true) action to get monitoring reports for Cloud PCs, including tenant-level, configuration, user and device, and view data table reports. Use the **cloudPCMonitoringReportType** enumeration to specify the report type.
+- Added the [cloudPcReports: retrieveCloudPcMonitoringReports](/graph/api/cloudpcreports-retrievecloudpcmonitoringreports?view=graph-rest-beta&preserve-view=true) action to retrieve monitoring reports for Cloud PCs.
 - The `/me/cloudPCs/{cloudPCId}/getCloudPcLaunchInfo` and `/users/{userId}/cloudPCs/{cloudPCId}/getCloudPcLaunchInfo` endpoints are deprecated and will stop returning data on October 30, 2026. Going forward, use the [retrieveCloudPcLaunchDetail](/graph/api/cloudpc-retrievecloudpclaunchdetail?view=graph-rest-beta&preserve-view=true) API.
 - Added the [cloudPcOnPremisesConnectionSubnetIpDetail](/graph/api/resources/cloudpconpremisesconnectionsubnetipdetail?view=graph-rest-beta&preserve-view=true) resource type to represent the subnet IP details of a Cloud PC on-premises connection.
 - Use the **subnetPrivateIpDetail** property on [cloudPcOnPremisesConnection](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true) to get detailed information about the subnet's private IP addresses associated with the subnet.
