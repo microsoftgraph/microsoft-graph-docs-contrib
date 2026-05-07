@@ -108,7 +108,7 @@ Added deprecation notices to the [agentRegistry](/graph/api/resources/agentregis
 
 Added the **deprecationDate** property to the [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta&preserve-view=true) resource to indicate when an application will be removed from the Microsoft Entra application gallery.
 
-### Backup storage
+### Backup and recovery
 
 - When a [protection policy is deactivated](/graph/api/protectionpolicybase-deactivate?view=graph-rest-beta&preserve-view=true), backup activity stops immediately, no new backups are taken, and the protected resources are no longer covered by the policy. Any backups taken before deactivation are retained according to the retention policy, after which they're offboarded. You can restore data using previous restore points even after deactivation.
 - A [protection policy can be deleted](/graph/api/protectionpolicybase-delete?view=graph-rest-beta&preserve-view=true) only after it was [deactivated](/graph/api/protectionpolicybase-deactivate?view=graph-rest-beta&preserve-view=true). When you delete a policy, all associated protection units are removed, and backup protection stops for the resources previously covered by the policy. Existing backup data is retained according to the retention policy before it's offboarded. You can restore data using previous restore points even after deletion.
