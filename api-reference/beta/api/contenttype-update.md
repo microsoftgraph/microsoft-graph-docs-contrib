@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and an updated [cont
 ## Example
 
 ### Request
-
+The following example is a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
