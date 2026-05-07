@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "fecf9991-74c3-47ac-9cb0-8e587d5b440f",
+          "ApiChange": "Property",
+          "ChangedApiName": "subjectLifecycle",
+          "ChangeType": "Addition",
+          "Description": "Added the `subjectLifecycle` property to the **accessPackageSubject** resource type.",
+          "Target": "accessPackageSubject"
+        },
+        {
+          "Id": "7d7c4a48-81d9-4d4a-bfed-d1b885b60cb0",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "accessPackageSubjectLifecycle",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageSubjectLifecycle** enumeration with members `notDefined`, `notGoverned`, `governed`, and `unknownFutureValue`.",
+          "Target": "accessPackageSubjectLifecycle"
+        }
+      ],
+      "Id": "fecf9991-74c3-47ac-9cb0-8e587d5b440f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-05-07T04:20:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "680f5e12-ea90-4e5d-b489-7f2440d6ee8a",
           "ApiChange": "Member",
           "ChangedApiName": "approverRemove",
