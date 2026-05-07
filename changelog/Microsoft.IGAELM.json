@@ -11,7 +11,7 @@
           "Target": "accessPackageSubject"
         },
         {
-          "Id": "7d7c4a48-81d9-4d4a-bfed-d1b885b60cb0",
+          "Id": "fecf9991-74c3-47ac-9cb0-8e587d5b440f",
           "ApiChange": "Enumeration",
           "ChangedApiName": "accessPackageSubjectLifecycle",
           "ChangeType": "Addition",
