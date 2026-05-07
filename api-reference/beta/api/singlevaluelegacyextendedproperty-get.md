@@ -35,6 +35,8 @@ The following user resources are supported:
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md)
 - [event](../resources/event.md)
+- [mailboxFolder](../resources/mailboxfolder.md)
+- [mailboxItem](../resources/mailboxitem.md)
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md)
 - [note](../resources/note.md)
@@ -66,6 +68,8 @@ Depending on the resource you're getting the extended property from and the perm
 | group [event](../resources/event.md) | Group.Read.All | Not supported. | Not supported. |
 | group [post](../resources/post.md) | Group.Read.All | Not supported. | Group.Read.All |
 | [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
+| [mailboxFolder](../resources/mailboxfolder.md) | MailboxFolder.Read | Not supported. | MailboxFolder.Read.All |
+| [mailboxItem](../resources/mailboxitem.md) | MailboxItem.Read | Not supported. | MailboxItem.Read.All |
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
 | [note](../resources/note.md) | ShortNotes.Read | ShortNotes.Read | ShortNotes.Read.All |
 | [Outlook task](../resources/outlooktask.md) | Tasks.Read | Tasks.Read | Not supported. |
@@ -130,6 +134,24 @@ Get a **contactFolder** instance:
 ```http
 GET /me/contactfolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+Get a **mailboxItem** instance:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/items?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/items/{mailboxItemId}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+Get a **mailboxFolder** instance:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /admin/exchange/mailboxes/{mailboxId}/folders?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
+GET /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}?$expand=singleValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
@@ -261,6 +283,20 @@ GET /users/{id|userPrincipalName}/contactFolders?$filter=singleValueExtendedProp
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
+Get a **mailboxItem** instance:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/items?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/items/{mailboxItemId}?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+Get a **mailboxFolder** instance:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /admin/exchange/mailboxes/{mailboxId}/folders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+GET /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 Get **note** instances:
 <!-- { "blockType": "ignored" } -->
 ```http

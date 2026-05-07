@@ -26,7 +26,7 @@ This resource supports [delta query](/graph/delta-query-overview) to track incre
 |[Get](../api/mailboxfolder-get.md)|[mailboxFolder](../resources/mailboxfolder.md)|Read the properties and relationships of a [mailboxFolder](../resources/mailboxfolder.md) object.|
 |[Update](../api/mailboxfolder-update.md)|[mailboxFolder](../resources/mailboxfolder.md)|Update [mailboxFolder](../resources/mailboxfolder.md) properties such as the **displayName** within a mailbox.|
 |[Delete](../api/mailbox-delete-folders.md)|None|Delete a [mailboxFolder](../resources/mailboxfolder.md) or a child **mailboxFolder** within a mailbox.|
-|[Get delta](../api/mailboxfolder-delta.md)|[mailboxFolder](../resources/mailboxfolder.md) collection|Get a set of [mailboxFolder](../resources/mailboxfolder.md) objects that have been added, deleted, or removed from the user's mailbox.|
+|[Get delta](../api/mailboxfolder-delta.md)|[mailboxFolder](../resources/mailboxfolder.md) collection|Get a set of [mailboxFolder](../resources/mailboxfolder.md) objects that were added, deleted, or removed from the user's mailbox.|
 |[List child mailbox folders](../api/mailboxfolder-list-childfolders.md)|[mailboxFolder](../resources/mailboxfolder.md) collection|Get the [mailboxFolder](../resources/mailboxfolder.md) collection under the specified **mailboxFolder** in a mailbox.|
 |[List items in folder](../api/mailboxfolder-list-items.md)|[mailboxItem](../resources/mailboxitem.md) collection|Get the [mailboxItem](../resources/mailboxitem.md) collection within a specified [mailboxFolder](../resources/mailboxfolder.md) in a mailbox.|
 |**Extended properties**| | |

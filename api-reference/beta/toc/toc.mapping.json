@@ -2524,7 +2524,7 @@
       ]
     },
     {
-      "name": "Mailbox import and export (preview)",
+      "name": "Mailbox import and export",
       "overview": "../../resources/mailbox-import-export-api-overview.md",
       "keywords": [
         "Exchange",
@@ -3463,7 +3463,11 @@
             "resourceSpecificPermissionGrant"
           ],
           "complexTypes": [
-            "customAppSettings"
+            "customAppSettings",
+            "groupChatTeamsAppInstallationScopeInfo",
+            "personalTeamsAppInstallationScopeInfo",
+            "teamsAppInstallationScopeInfo",
+            "teamTeamsAppInstallationScopeInfo"
           ]
         },
         {

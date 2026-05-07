@@ -1,5 +1,5 @@
 ---
-title: "Use the mailbox import and export APIs in Microsoft Graph (preview)"
+title: "Use the mailbox import and export APIs in Microsoft Graph"
 description: "Learn how to use the mailbox import and export APIs in Microsoft Graph to import and export contents from Exchange Online mailboxes."
 ms.localizationpriority: high
 author: "cparker-msft"
@@ -8,7 +8,7 @@ doc_type: conceptualPageType
 ms.date: 12/06/2024
 ---
 
-# Use the mailbox import and export APIs in Microsoft Graph (preview)
+# Use the mailbox import and export APIs in Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,7 +37,7 @@ The following steps allow your app to systematically export and import contents 
 | Get one or more mailbox items                        | [mailboxItem](../resources/mailboxitem.md) | [mailboxItem methods](../resources/mailboxitem.md#methods) |
 | Get delta for folders                                | [mailboxFolder](../resources/mailboxfolder.md)  [mailboxFolder: delta](../api/mailboxfolder-delta.md) |
 | Get delta for items                                  | [mailboxItem](../resources/mailboxitem.md) | [mailboxItem: delta](../api/mailboxitem-delta.md) |
-| Import or export mailboxes                           | [mailbox](../resources/mailbox.md) | [mailbox methods](../resources/mailboxitem.md#methods) |
+| Import or export mailboxes                           | [mailbox](../resources/mailbox.md) | [mailbox methods](../resources/mailbox.md#methods) |
 | Get a list of mailboxes that belong to a user        | [exchangeSettings](../resources/exchangesettings.md) | [List Exchange settings](../api/usersettings-list-exchange.md) |
 
 ## Next steps
@@ -49,5 +49,6 @@ Use the mailbox import and export APIs in Microsoft Graph to import and export c
 
 ## Related content
 
+[Import an Exchange mailbox item using the mailbox import and export APIs](/graph/import-exchange-mailbox-item)
 - [Import an Exchange mailbox item using the mailbox import and export APIs](/graph/import-exchange-mailbox-item)
 - [Handle archive mailbox redirects](/graph/handle-archive-mailbox-redirects)

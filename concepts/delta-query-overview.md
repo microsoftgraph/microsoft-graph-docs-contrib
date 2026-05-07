@@ -145,8 +145,8 @@ Delta query is currently supported for the following resources. Some resources t
 | [event](/graph/api/resources/event)                                 | [event: delta](/graph/api/event-delta) function                                 |
 | [group](/graph/api/resources/group)                                 | [group: delta](/graph/api/group-delta) function                                 |
 | [listItem](/graph/api/resources/listitem) <sup>1</sup>              | [listItem: delta](/graph/api/listitem-delta) function                           |
-| [mailboxFolder](/graph/api/resources/mailboxfolder) *               | [mailboxFolder: delta](/graph/api/mailboxfolder-delta) function                 |
-| [mailboxItem](/graph/api/resources/mailboxitem) *                   | [mailboxItem: delta](/graph/api/mailboxitem-delta) function                     |
+| [mailboxFolder](/graph/api/resources/mailboxfolder)                 | [mailboxFolder: delta](/graph/api/mailboxfolder-delta) function                 |
+| [mailboxItem](/graph/api/resources/mailboxitem)                     | [mailboxItem: delta](/graph/api/mailboxitem-delta) function                     |
 | [mailFolder](/graph/api/resources/mailfolder)                       | [mailFolder: delta](/graph/api/mailfolder-delta) function                       |
 | [message](/graph/api/resources/message)                             | [message: delta](/graph/api/message-delta) function                             |
 | [orgContact](/graph/api/resources/orgcontact)                       | [orgContact: delta](/graph/api/orgcontact-delta) function                       |
