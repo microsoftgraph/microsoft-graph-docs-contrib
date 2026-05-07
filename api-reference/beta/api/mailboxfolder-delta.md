@@ -1,6 +1,6 @@
 ---
 title: "mailboxFolder: delta"
-description: "Get a set of mailboxFolder objects that have been added, deleted, or removed from the user's mailbox."
+description: "Get a set of mailboxFolder objects that were added, deleted, or removed from the user's mailbox."
 author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a set of [mailboxFolder](../resources/mailboxfolder.md) objects that have been added, deleted, or removed from the user's mailbox.
+Get a set of [mailboxFolder](../resources/mailboxfolder.md) objects that were added, deleted, or removed from the user's mailbox.
 
 A **delta** function call for folders in a mailbox is similar to a GET request, except that by appropriately applying [state tokens](/graph/delta-query-overview) in one or more of these calls, you can query for incremental changes in the folders. This approach allows you to maintain and synchronize a local store of a user's mail folders without having to fetch all the folders of that mailbox from the server every time.
 
@@ -56,7 +56,7 @@ You can use the `$select` query parameter to specify only the properties you nee
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Prefer|odata.maxpagesize={x}. Optional.|
+|Prefer|odata.maxpagesize={x}. Optional. Controls page size.|
 
 ## Request body
 

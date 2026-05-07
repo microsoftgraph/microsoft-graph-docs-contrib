@@ -1,6 +1,6 @@
 ---
 title: "mailbox: createImportSession"
-description: "Create a session to import an Exchange mailbox item using its FastTransfer stream (FTS) format."
+description: "Create a session to import an Exchange mailbox item that was exported using the exportItems API."
 author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
@@ -56,7 +56,7 @@ If successful, this action returns a `200 OK` response code and a [mailboxItemIm
 
 ### Request
 
-The following example shows how to create an import session. The opaque URL, returned in the **importUrl** property of the response, is preauthenticated and contains the appropriate authorization token for subsequent POST queries in the https://outlook.office365.com domain. That token expires by **expirationDateTime**. Don't customize this URL for subsequent POST operations.
+The following example shows how to create an import session. The opaque URL, returned in the **importUrl** property of the response, is preauthenticated and contains the appropriate authorization token for subsequent POST queries in the `https://outlook.office365.com` domain. This token expires at the time specified in **expirationDateTime**. Don't customize this URL for subsequent POST operations.
 
 # [HTTP](#tab/http)
 <!-- {

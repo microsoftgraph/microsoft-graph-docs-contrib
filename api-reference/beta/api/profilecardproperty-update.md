@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: "rwaithera"
 ms.subservice: "people"
 doc_type: "apiPageType"
-ms.date: 09/19/2024
+ms.date: 02/25/2026
 ---
 
 # Update profileCardProperty
@@ -52,8 +52,9 @@ PATCH /admin/people/profileCardProperties/{id}
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|annotations|profileCardAnnotation collection| Any alternative or localized labels an administrator chose to specify.|
-|directoryPropertyName|String|The name of the directory property that is intended to surface on the profile card. |
+|annotations|[profileCardAnnotation](../resources/profilecardannotation.md) collection| Any alternative or localized labels an administrator chose to specify. Optional.|
+|directoryPropertyName|String|The name of the directory property that is intended to surface on the profile card. Optional. |
+|isVisible|Boolean|Indicates whether the given directory property should be shown on a user’s profile card. Optional.|
 
 ## Response
 
@@ -65,7 +66,6 @@ If successful, this method returns a `200 OK` response code and an updated [prof
 
 The following example adds a localized label `Kostnadssenter` for the locale `no`.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_profilecardproperty",
@@ -91,36 +91,6 @@ Content-type: application/json; charset=utf-8
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-profilecardproperty-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-profilecardproperty-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-profilecardproperty-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-profilecardproperty-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-profilecardproperty-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-profilecardproperty-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/update-profilecardproperty-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
 
 The following example shows the response.
@@ -139,6 +109,7 @@ Content-type: application/json; charset=utf-8
 
 {
   "directoryPropertyName": "CustomAttribute1",
+  "isVisible": true,
   "annotations": [
     {
       "displayName": "Cost Center",

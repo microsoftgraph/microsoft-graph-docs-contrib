@@ -27,7 +27,7 @@ Inherits from [directoryObject](../resources/directoryobject.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deletedDateTime|DateTimeOffset|Date and time when this object was deleted. Always `null` when the object isn't deleted. Inherited from [directoryObject](../resources/directoryobject.md).|
+|deletedDateTime|DateTimeOffset|Date and time when this object was deleted. Always `null` when the object isn't deleted. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2024, is `2024-01-01T00:00:00Z`. Inherited from [directoryObject](../resources/directoryobject.md).|
 |id|String|The unique identifier for the **mailbox**. Inherited from [directoryObject](../resources/directoryobject.md).|
 
 ## Relationships
