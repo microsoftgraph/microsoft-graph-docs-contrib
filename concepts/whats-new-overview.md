@@ -46,6 +46,10 @@ Use the [deviceRegistrationPolicy](/graph/api/resources/deviceregistrationpolicy
 - Added the [onVerifiedIdClaimValidationCustomExtension](/graph/api/resources/onverifiedidclaimvalidationcustomextension?view=graph-rest-beta&preserve-view=true) and [onVerifiedIdClaimValidationListener](/graph/api/resources/onverifiedidclaimvalidationlistener?view=graph-rest-beta&preserve-view=true) resource types and associated methods to support custom logic for claim validation from Verified ID credential presentations during authentication flows through Microsoft Entra custom authentication extensions in External ID.
 - Added support for Microsoft 365 cross-tenant access policy capabilities that allow administrators to control access to Microsoft 365 resources and data when collaborating with external organizations. Use the [crossTenantAccessPolicyConfigurationDefault](/graph/api/resources/crosstenantaccesspolicyconfigurationdefault?view=graph-rest-beta&preserve-view=true) and [crossTenantAccessPolicyConfigurationPartner](/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-beta&preserve-view=true) resources with the new **m365Capabilities** relationship to manage capabilities including profile sharing, calendar sharing, migration, mail tips, and Places booking across organizational boundaries.
 
+
+### Reports | Identity and access reports
+
+Added the **clientSessionId** property to the [signIn](/graph/api/resources/signin?view=graph-rest-beta&preserve-view=true) resource. This property returns the unique identifier of the client session associated with the sign-in.
 ### People and workplace intelligence | People admin settings
 
 Use the **isVisible** property on [profileCardProperty](/graph/api/resources/profilecardproperty?view=graph-rest-beta&preserve-view=true) to indicate whether the given directory property should be shown on a user’s profile card.
@@ -206,3 +210,4 @@ Are there scenarios you'd like Microsoft Graph to support?
 - [Microsoft Graph developer blog](https://devblogs.microsoft.com/microsoft365dev/category/microsoft-graph/).
 - [Microsoft Graph API changelog](https://developer.microsoft.com/graph/changelog/).
 - [Microsoft Graph what's new history](whats-new-earlier.md).
+
