@@ -20,7 +20,7 @@ Contains a list of [restorePoint](../resources/restorepoint.md) objects associat
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|artifactHitCount|Int32| Total number of mailbox items that can be restored for a granular restore session.|
+|artifactHitCount|Int32| The number of artifacts that match the specified search criteria and were changed within the given time range.
 
 ## Relationships
 
