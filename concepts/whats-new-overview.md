@@ -3,7 +3,7 @@ title: "What's new in Microsoft Graph"
 description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, and other resources."
 author: "lauragra"
 ms.localizationpriority: high
-ms.date: 04/28/2026
+ms.date: 05/08/2026
 ms.topic: whats-new
 ---
 
@@ -25,11 +25,6 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 - Added the [agentUser](/graph/api/resources/agentuser) resource type and related methods for managing the lifecycle of agent user identities.
 - Added [verifiedIdProfile](/graph/api/resources/verifiedidprofile) resources and related profile configuration for configuring Microsoft Entra Verified ID.
 
-### Mailbox import and export
-
-Use the mailbox import and export APIs in Microsoft Graph to build solutions that integrate with mailbox resources for data import and export scenarios. For more information, see [Overview of the mailbox import and export APIs in Microsoft Graph](/graph/mailbox-import-export-concept-overview).
-
-## March 2026: New in preview only
 ### Identity and access | Directory management
 
 Use the [deviceRegistrationPolicy](/graph/api/resources/deviceregistrationpolicy) resource type and its related methods to manage the policy that controls device registration quota restrictions, additional authentication, and authorization policies for your Microsoft Entra tenant.
@@ -38,6 +33,17 @@ Use the [deviceRegistrationPolicy](/graph/api/resources/deviceregistrationpolicy
 
 - Added the [onVerifiedIdClaimValidationCustomExtension](/graph/api/resources/onverifiedidclaimvalidationcustomextension) and [onVerifiedIdClaimValidationListener](/graph/api/resources/onverifiedidclaimvalidationlistener) resource types and associated methods to support custom logic for claim validation from Verified ID credential presentations during authentication flows through Microsoft Entra custom authentication extensions in External ID.
 - Added claim validation and match-confidence capabilities to [Verified ID profiles](/graph/api/resources/verifiedidprofile), enabling stronger claim verification and more flexible matching.
+- Enhanced the [x509CertificateAuthenticationMethodConfiguration](/graph/api/resources/x509certificateauthenticationmethodconfiguration) resource type with the following capabilities for certificate-based authentication (CBA):
+    - Scoping CBA to specific certificate authorities and restrict which groups of users can authenticate using certificates from those CAs.
+    - Controlling whether issuer hints are sent to the client to filter the certificates shown in the certificate picker.
+
+### Mailbox import and export
+
+Use the mailbox import and export APIs in Microsoft Graph to build solutions that integrate with mailbox resources for data import and export scenarios. For more information, see [Overview of the mailbox import and export APIs in Microsoft Graph](/graph/mailbox-import-export-concept-overview).
+
+### Teamwork and communications | Shifts
+
+- Supports additional theme colors in the [scheduleEntityTheme](/graph/api/resources/enums) enumeration for the **theme** property on [openShiftItem](/graph/api/resources/openshiftitem), [shiftItem](/graph/api/resources/shiftitem), [shiftActivity](/graph/api/resources/shiftactivity), and [timeOffItem](/graph/api/resources/timeoffitem).
 
 ## May 2026: New in preview only
 
@@ -48,7 +54,11 @@ Use the [deviceRegistrationPolicy](/graph/api/resources/deviceregistrationpolicy
 
 ### People and workplace intelligence | People admin settings
 
-Use the **isVisible** property on [profileCardProperty](/graph/api/resources/profilecardproperty?view=graph-rest-beta&preserve-view=true) to indicate whether the given directory property should be shown on a user’s profile card.
+Use the **isVisible** property on [profileCardProperty](/graph/api/resources/profilecardproperty?view=graph-rest-beta&preserve-view=true) to indicate whether the given directory property should be shown on a user's profile card.
+
+### Teamwork and communications | Apps
+
+Use the **scopeInfo** property on [teamsAppInstallation](/graph/api/resources/teamsappinstallation?view=graph-rest-beta&preserve-view=true) to get the details of the scope in which the app is installed.
 
 ## April 2026: New and generally available
 
@@ -61,6 +71,8 @@ Use the **isVisible** property on [profileCardProperty](/graph/api/resources/pro
 
 - When a [protection policy is deactivated](/graph/api/protectionpolicybase-deactivate), backup activity stops immediately, no new backups are taken, and the protected resources are no longer covered by the policy. Any backups taken before deactivation are retained according to the retention policy, after which they're offboarded. You can restore data using previous restore points even after deactivation.
 - A [protection policy can be deleted](/graph/api/protectionpolicybase-delete) only after it was [deactivated](/graph/api/protectionpolicybase-deactivate). When you delete a policy, all associated protection units are removed, and backup protection stops for the resources previously covered by the policy. Existing backup data is retained according to the retention policy before it's offboarded. You can restore data using previous restore points even after deletion.
+- Use browse sessions to browse backed up OneDriveForBusiness and SharePoint data at a specific point in time. Create a [oneDriveForBusinessBrowseSession](/graph/api/resources/onedriveforbusinessbrowsesession) or [sharePointBrowseSession](/graph/api/resources/sharepointbrowsesession), and then call the [browse](/graph/api/onedriveforbusinessbrowsesession-browse) method to explore the backed up content.
+- Use granular restore artifacts for fine-grained restores of individual items. List [granularDriveRestoreArtifact](/graph/api/resources/granulardriverestoreartifact) objects from a [oneDriveForBusinessRestoreSession](/graph/api/onedriveforbusinessrestoresession-list-granulardriverestoreartifacts), or list [granularSiteRestoreArtifact](/graph/api/resources/granularsiterestoreartifact) objects from a [sharePointRestoreSession](/graph/api/sharepointrestoresession-list-granularsiterestoreartifacts).
 
 ### Files
 
@@ -97,6 +109,7 @@ Manage Teams apps at the channel level within a team using the following APIs:
   - [List channels](/graph/api/channel-list)
   - [List incomingChannels](/graph/api/team-list-incomingchannels)
   - [List allChannels](/graph/api/team-list-allchannels)
+
 
 ## April 2026: New in preview only
 

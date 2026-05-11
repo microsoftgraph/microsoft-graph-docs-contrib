@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 Represents a [teamsApp](teamsapp.md) installed in a [team](team.md), a [chat](chat.md), or the personal scope of a [user](user.md). Any bots that are part of the app become part of any team, chat, or user's personal scope that the app is added to.
 
 > [!NOTE]
-> The `id` of a **teamsAppInstallation** resource is not the same value as the `id` of the associated **teamsApp** resource.
+> The **id** of a **teamsAppInstallation** resource isn't the same value as the **id** of the associated **teamsApp** resource.
 
 ## Methods
 
@@ -45,6 +45,7 @@ Represents a [teamsApp](teamsapp.md) installed in a [team](team.md), a [chat](ch
 |:------------------- |:-------- |:----------- |
 |consentedPermissionSet|[teamsAppPermissionSet](../resources/teamsapppermissionset.md)|The set of resource-specific permissions consented to while installing or upgrading the teamsApp.|
 | id                  | string   | A unique ID (not the team's app ID). |
+|scopeInfo|[teamsAppInstallationScopeInfo](../resources/teamsappinstallationscopeinfo.md)|The details of the scope in which the app is installed.|
 
 ## Relationships
 
@@ -65,8 +66,9 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "consentedPermissionSet": "#microsoft.graph.teamsAppPermissionSet",
-  "id": "string"
+  "consentedPermissionSet": {"@odata.type": "#microsoft.graph.teamsAppPermissionSet"},
+  "id": "string (identifier)",
+  "scopeInfo": {"@odata.type": "#microsoft.graph.teamsAppInstallationScopeInfo"}
 }
 ```
 

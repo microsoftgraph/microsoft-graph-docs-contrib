@@ -3445,7 +3445,11 @@
             "resourceSpecificPermissionGrant"
           ],
           "complexTypes": [
-            "customAppSettings"
+            "customAppSettings",
+            "groupChatTeamsAppInstallationScopeInfo",
+            "personalTeamsAppInstallationScopeInfo",
+            "teamsAppInstallationScopeInfo",
+            "teamTeamsAppInstallationScopeInfo"
           ]
         },
         {

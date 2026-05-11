@@ -3,6 +3,394 @@
     {
       "ChangeList": [
         {
+          "Id": "237a93dd-d93c-469a-8642-2e273da3a26a",
+          "ApiChange": "Member",
+          "ChangedApiName": "darkRed",
+          "ChangeType": "Addition",
+          "Description": "Added the `darkRed` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "237a93dd-d93c-469a-8642-2e273da3a26a",
+          "ApiChange": "Member",
+          "ChangedApiName": "cranberry",
+          "ChangeType": "Addition",
+          "Description": "Added the `cranberry` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "237a93dd-d93c-469a-8642-2e273da3a26a",
+          "ApiChange": "Member",
+          "ChangedApiName": "darkOrange",
+          "ChangeType": "Addition",
+          "Description": "Added the `darkOrange` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "237a93dd-d93c-469a-8642-2e273da3a26a",
+          "ApiChange": "Member",
+          "ChangedApiName": "bronze",
+          "ChangeType": "Addition",
+          "Description": "Added the `bronze` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "237a93dd-d93c-469a-8642-2e273da3a26a",
+          "ApiChange": "Member",
+          "ChangedApiName": "peach",
+          "ChangeType": "Addition",
+          "Description": "Added the `peach` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "237a93dd-d93c-469a-8642-2e273da3a26a",
+          "ApiChange": "Member",
+          "ChangedApiName": "gold",
+          "ChangeType": "Addition",
+          "Description": "Added the `gold` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "237a93dd-d93c-469a-8642-2e273da3a26a",
+          "ApiChange": "Member",
+          "ChangedApiName": "lime",
+          "ChangeType": "Addition",
+          "Description": "Added the `lime` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "237a93dd-d93c-469a-8642-2e273da3a26a",
+          "ApiChange": "Member",
+          "ChangedApiName": "forest",
+          "ChangeType": "Addition",
+          "Description": "Added the `forest` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "237a93dd-d93c-469a-8642-2e273da3a26a",
+          "ApiChange": "Member",
+          "ChangedApiName": "lightGreen",
+          "ChangeType": "Addition",
+          "Description": "Added the `lightGreen` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "237a93dd-d93c-469a-8642-2e273da3a26a",
+          "ApiChange": "Member",
+          "ChangedApiName": "jade",
+          "ChangeType": "Addition",
+          "Description": "Added the `jade` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "237a93dd-d93c-469a-8642-2e273da3a26a",
+          "ApiChange": "Member",
+          "ChangedApiName": "lightTeal",
+          "ChangeType": "Addition",
+          "Description": "Added the `lightTeal` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "237a93dd-d93c-469a-8642-2e273da3a26a",
+          "ApiChange": "Member",
+          "ChangedApiName": "darkTeal",
+          "ChangeType": "Addition",
+          "Description": "Added the `darkTeal` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "237a93dd-d93c-469a-8642-2e273da3a26a",
+          "ApiChange": "Member",
+          "ChangedApiName": "steel",
+          "ChangeType": "Addition",
+          "Description": "Added the `steel` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "237a93dd-d93c-469a-8642-2e273da3a26a",
+          "ApiChange": "Member",
+          "ChangedApiName": "skyBlue",
+          "ChangeType": "Addition",
+          "Description": "Added the `skyBlue` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "237a93dd-d93c-469a-8642-2e273da3a26a",
+          "ApiChange": "Member",
+          "ChangedApiName": "blueGray",
+          "ChangeType": "Addition",
+          "Description": "Added the `blueGray` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "237a93dd-d93c-469a-8642-2e273da3a26a",
+          "ApiChange": "Member",
+          "ChangedApiName": "lavender",
+          "ChangeType": "Addition",
+          "Description": "Added the `lavender` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "237a93dd-d93c-469a-8642-2e273da3a26a",
+          "ApiChange": "Member",
+          "ChangedApiName": "lilac",
+          "ChangeType": "Addition",
+          "Description": "Added the `lilac` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "237a93dd-d93c-469a-8642-2e273da3a26a",
+          "ApiChange": "Member",
+          "ChangedApiName": "plum",
+          "ChangeType": "Addition",
+          "Description": "Added the `plum` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "237a93dd-d93c-469a-8642-2e273da3a26a",
+          "ApiChange": "Member",
+          "ChangedApiName": "magenta",
+          "ChangeType": "Addition",
+          "Description": "Added the `magenta` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "237a93dd-d93c-469a-8642-2e273da3a26a",
+          "ApiChange": "Member",
+          "ChangedApiName": "darkBrown",
+          "ChangeType": "Addition",
+          "Description": "Added the `darkBrown` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "237a93dd-d93c-469a-8642-2e273da3a26a",
+          "ApiChange": "Member",
+          "ChangedApiName": "beige",
+          "ChangeType": "Addition",
+          "Description": "Added the `beige` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "237a93dd-d93c-469a-8642-2e273da3a26a",
+          "ApiChange": "Member",
+          "ChangedApiName": "charcoal",
+          "ChangeType": "Addition",
+          "Description": "Added the `charcoal` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "237a93dd-d93c-469a-8642-2e273da3a26a",
+          "ApiChange": "Member",
+          "ChangedApiName": "silver",
+          "ChangeType": "Addition",
+          "Description": "Added the `silver` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        }
+      ],
+      "Id": "237a93dd-d93c-469a-8642-2e273da3a26a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-05-08T18:57:16.6237919Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "617721d3-c8b8-41d4-aa71-25101a6d5620",
+          "ApiChange": "Member",
+          "ChangedApiName": "darkRed",
+          "ChangeType": "Addition",
+          "Description": "Added the `darkRed` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "617721d3-c8b8-41d4-aa71-25101a6d5620",
+          "ApiChange": "Member",
+          "ChangedApiName": "cranberry",
+          "ChangeType": "Addition",
+          "Description": "Added the `cranberry` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "617721d3-c8b8-41d4-aa71-25101a6d5620",
+          "ApiChange": "Member",
+          "ChangedApiName": "darkOrange",
+          "ChangeType": "Addition",
+          "Description": "Added the `darkOrange` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "617721d3-c8b8-41d4-aa71-25101a6d5620",
+          "ApiChange": "Member",
+          "ChangedApiName": "bronze",
+          "ChangeType": "Addition",
+          "Description": "Added the `bronze` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "617721d3-c8b8-41d4-aa71-25101a6d5620",
+          "ApiChange": "Member",
+          "ChangedApiName": "peach",
+          "ChangeType": "Addition",
+          "Description": "Added the `peach` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "617721d3-c8b8-41d4-aa71-25101a6d5620",
+          "ApiChange": "Member",
+          "ChangedApiName": "gold",
+          "ChangeType": "Addition",
+          "Description": "Added the `gold` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "617721d3-c8b8-41d4-aa71-25101a6d5620",
+          "ApiChange": "Member",
+          "ChangedApiName": "lime",
+          "ChangeType": "Addition",
+          "Description": "Added the `lime` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "617721d3-c8b8-41d4-aa71-25101a6d5620",
+          "ApiChange": "Member",
+          "ChangedApiName": "forest",
+          "ChangeType": "Addition",
+          "Description": "Added the `forest` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "617721d3-c8b8-41d4-aa71-25101a6d5620",
+          "ApiChange": "Member",
+          "ChangedApiName": "lightGreen",
+          "ChangeType": "Addition",
+          "Description": "Added the `lightGreen` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "617721d3-c8b8-41d4-aa71-25101a6d5620",
+          "ApiChange": "Member",
+          "ChangedApiName": "jade",
+          "ChangeType": "Addition",
+          "Description": "Added the `jade` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "617721d3-c8b8-41d4-aa71-25101a6d5620",
+          "ApiChange": "Member",
+          "ChangedApiName": "lightTeal",
+          "ChangeType": "Addition",
+          "Description": "Added the `lightTeal` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "617721d3-c8b8-41d4-aa71-25101a6d5620",
+          "ApiChange": "Member",
+          "ChangedApiName": "darkTeal",
+          "ChangeType": "Addition",
+          "Description": "Added the `darkTeal` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "617721d3-c8b8-41d4-aa71-25101a6d5620",
+          "ApiChange": "Member",
+          "ChangedApiName": "steel",
+          "ChangeType": "Addition",
+          "Description": "Added the `steel` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "617721d3-c8b8-41d4-aa71-25101a6d5620",
+          "ApiChange": "Member",
+          "ChangedApiName": "skyBlue",
+          "ChangeType": "Addition",
+          "Description": "Added the `skyBlue` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "617721d3-c8b8-41d4-aa71-25101a6d5620",
+          "ApiChange": "Member",
+          "ChangedApiName": "blueGray",
+          "ChangeType": "Addition",
+          "Description": "Added the `blueGray` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "617721d3-c8b8-41d4-aa71-25101a6d5620",
+          "ApiChange": "Member",
+          "ChangedApiName": "lavender",
+          "ChangeType": "Addition",
+          "Description": "Added the `lavender` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "617721d3-c8b8-41d4-aa71-25101a6d5620",
+          "ApiChange": "Member",
+          "ChangedApiName": "lilac",
+          "ChangeType": "Addition",
+          "Description": "Added the `lilac` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "617721d3-c8b8-41d4-aa71-25101a6d5620",
+          "ApiChange": "Member",
+          "ChangedApiName": "plum",
+          "ChangeType": "Addition",
+          "Description": "Added the `plum` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "617721d3-c8b8-41d4-aa71-25101a6d5620",
+          "ApiChange": "Member",
+          "ChangedApiName": "magenta",
+          "ChangeType": "Addition",
+          "Description": "Added the `magenta` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "617721d3-c8b8-41d4-aa71-25101a6d5620",
+          "ApiChange": "Member",
+          "ChangedApiName": "darkBrown",
+          "ChangeType": "Addition",
+          "Description": "Added the `darkBrown` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "617721d3-c8b8-41d4-aa71-25101a6d5620",
+          "ApiChange": "Member",
+          "ChangedApiName": "beige",
+          "ChangeType": "Addition",
+          "Description": "Added the `beige` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "617721d3-c8b8-41d4-aa71-25101a6d5620",
+          "ApiChange": "Member",
+          "ChangedApiName": "charcoal",
+          "ChangeType": "Addition",
+          "Description": "Added the `charcoal` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        },
+        {
+          "Id": "617721d3-c8b8-41d4-aa71-25101a6d5620",
+          "ApiChange": "Member",
+          "ChangedApiName": "silver",
+          "ChangeType": "Addition",
+          "Description": "Added the `silver` member to the **scheduleEntityTheme** enumeration.",
+          "Target": "scheduleEntityTheme"
+        }
+      ],
+      "Id": "617721d3-c8b8-41d4-aa71-25101a6d5620",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-05-08T18:57:16.6242146Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "5e605695-52a5-406e-8832-2e59b74f8c75",
           "ApiChange": "Resource",
           "ChangedApiName": "shiftsRolePermission",

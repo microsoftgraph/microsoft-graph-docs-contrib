@@ -161,6 +161,14 @@
           ],
           "childNodes": [
             {
+              "name": "Browse session",
+              "overview": "../../resources/browsesessionbase.md",
+              "resources": [
+                "oneDriveForBusinessBrowseSession",
+                "sharePointBrowseSession"
+              ]
+            },
+            {
               "name": "Protection policy",
               "resources": [
                 "exchangeProtectionPolicy",
@@ -197,8 +205,10 @@
               "resources": [
                 "granularMailBoxRestoreArtifact",
                 "driveRestoreArtifact",
+                "granularDriveRestoreArtifact",
                 "mailboxRestoreArtifact",
-                "siteRestoreArtifact"
+                "siteRestoreArtifact",
+                "granularSiteRestoreArtifact"
               ]
             },
             {
@@ -220,6 +230,7 @@
           ],
           "complexTypes": [
             "artifactQuery",
+            "browseQueryResponseItem",
             "restorePointSearchResponse",
             "restorePointSearchResult",
             "retentionSetting",

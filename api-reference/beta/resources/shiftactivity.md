@@ -24,6 +24,7 @@ Represents an activity in a [shift](shift.md).
 | endDateTime               | `DateTimeOffset`                  | The end date and time for the `shiftActivity`. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Required.    |
 | code               | `string`                  | Customer defined code for the `shiftActivity`. Required.    |
 | displayName               | `string`                  | The name of the `shiftActivity`. Required.    |
+| theme               | `scheduleEntityTheme`                  | The color of the activity. The possible values are: `white`, `blue`, `green`, `purple`, `pink`, `yellow`, `gray`, `darkBlue`, `darkGreen`, `darkPurple`, `darkPink`, `darkYellow`, `unknownFutureValue`, `darkRed`, `cranberry`, `darkOrange`, `bronze`, `peach`, `gold`, `lime`, `forest`, `lightGreen`, `jade`, `lightTeal`, `darkTeal`, `steel`, `skyBlue`, `blueGray`, `lavender`, `lilac`, `plum`, `magenta`, `darkBrown`, `beige`, `charcoal`, `silver`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `darkRed`, `cranberry`, `darkOrange`, `bronze`, `peach`, `gold`, `lime`, `forest`, `lightGreen`, `jade`, `lightTeal`, `darkTeal`, `steel`, `skyBlue`, `blueGray`, `lavender`, `lilac`, `plum`, `magenta`, `darkBrown`, `beige`, `charcoal`, `silver`.    |
 
 ## Relationships
 
@@ -44,7 +45,8 @@ The following JSON representation shows the resource type.
   "startDateTime": "2019-03-11T15:00:00Z",
   "endDateTime": "2019-03-11T15:15:00Z",
   "code": "",
-  "displayName": "Lunch"
+  "displayName": "Lunch",
+  "theme": "white"
 }
 ```
 

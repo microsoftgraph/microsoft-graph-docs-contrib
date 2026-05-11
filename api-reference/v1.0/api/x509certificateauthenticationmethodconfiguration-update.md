@@ -43,13 +43,14 @@ The following properties can be updated.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|state|authenticationMethodState|The possible values are: `enabled`, `disabled`. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
+|certificateAuthorityScopes|[x509CertificateAuthorityScope](../resources/x509certificateauthorityscope.md) collection|Defines configuration to allow a group of users to use certificates from specific issuing certificate authorities to successfully authenticate. |
 |certificateUserBindings|[x509CertificateUserBinding](../resources/x509certificateuserbinding.md) collection|Defines fields in the X.509 certificate that map to attributes of the Microsoft Entra user object in order to bind the certificate to the user. The **priority** of the object determines the order in which the binding is carried out. The first binding that matches will be used and the rest ignored. |
 |authenticationModeConfiguration|[x509CertificateAuthenticationModeConfiguration](../resources/x509certificateauthenticationmodeconfiguration.md)|Defines strong authentication configurations. This configuration includes the default authentication mode and the different rules for strong authentication bindings. |
 |crlValidationConfiguration|[x509CertificateCRLValidationConfiguration](../resources/x509certificatecrlvalidationconfiguration.md)|Determines whether certificate based authentication should fail if the issuing CA doesn't have a valid certificate revocation list configured. |
+|issuerHintsConfiguration|[x509CertificateIssuerHintsConfiguration](../resources/x509certificateissuerhintsconfiguration.md)|Determines whether issuer(CA) hints are sent back to the client side to filter the certificates shown in certificate picker. |
+|state|authenticationMethodState|The possible values are: `enabled`, `disabled`. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
 
 >**Note:** The `@odata.type` property with a value of `#microsoft.graph.x509CertificateAuthenticationMethodConfiguration` must be included in the body.
-
 
 ## Response
 If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
@@ -64,13 +65,12 @@ The following is an example of an update request with the following settings:
 + Defines multi-factor authentication as requirement.
 + Configures the binding rules for the strong authentication method against the rule type.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_x509certificateauthenticationmethodconfiguration"
 }
 -->
+
 ```http
 PATCH https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x509Certificate
 Content-Type: application/json
@@ -101,6 +101,21 @@ Content-Type: application/json
             }
         ]
     },
+    "certificateAuthorityScopes": [
+        {
+            "subjectKeyIdentifier": "aaaaaaaabbbbcccc111122222222222222333333",
+            "publicKeyInfrastructureIdentifier": "Contoso PKI",
+            "includeTargets": [
+            {
+                "id": "aaaaaaaa-bbbb-cccc-1111-222222222222",
+                "targetType": "group"
+            }
+            ]
+        }
+    ],
+    "issuerHintsConfiguration": {
+        "state": "enabled"
+    },
     "crlValidationConfiguration": {
         "state": "disabled",
         "exemptedCertificateAuthoritiesSubjectKeyIdentifiers": []
@@ -114,36 +129,6 @@ Content-Type: application/json
     ]
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-x509certificateauthenticationmethodconfiguration-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-x509certificateauthenticationmethodconfiguration-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-x509certificateauthenticationmethodconfiguration-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-x509certificateauthenticationmethodconfiguration-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-x509certificateauthenticationmethodconfiguration-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-x509certificateauthenticationmethodconfiguration-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/update-x509certificateauthenticationmethodconfiguration-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 <!-- {

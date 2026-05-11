@@ -48,6 +48,11 @@ PATCH /solutions/backupRestore/sharePointRestoreSessions/{sharePointRestoreSessi
 |Property|Type|Description|
 |:---|:---|:---|
 |siteRestoreArtifacts|[siteRestoreArtifact](../resources/siterestoreartifact.md) collection|A collection of [siteRestoreArtifact](../resources/siterestoreartifact.md) objects. Required.|
+|granularSiteRestoreArtifacts|[granularSiteRestoreArtifact](../resources/granularsiterestoreartifact.md) collection|A collection of [granularSiteRestoreArtifact](../resources/granularsiterestoreartifact.md) objects. Required.|
+
+To remove a **siteRestoreArtifact** from a site restore session, specify the `@removed` annotation in the request body for the respective restore point artifact together with the ID of the [siteRestoreArtifact](../resources/siterestoreartifact.md).
+
+To remove a **granularSiteRestoreArtifact** from a granular restore session, specify the `@removed` annotation in the request body for the respective artifact ID of the [granularSiteRestoreArtifact](../resources/granularsiterestoreartifact.md).
 
 ## Response
 
@@ -57,11 +62,11 @@ For a list of possible error responses, see [Backup Storage API error responses]
 
 ## Examples
 
-### Request
+### Example 1: Update a standard restore session
+
+#### Request
 
 The following example shows a request.
-
-To remove a **siteRestoreArtifact** from a site restore session, specify the @removed annotation in the request body for the respective restore point artifact together with the ID of the [siteRestoreArtifact](../resources/siterestoreartifact.md).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -139,7 +144,7 @@ Content-Type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 <!-- {
@@ -201,6 +206,77 @@ HTTP/1.1 200 OK
         "responseCode": 409
       },
       "id": "4267e382-71a9-4c07-bef7-bda97e09c0d2"
+    }
+  ]
+}
+```
+
+### Example 2: Update a granular restore session
+
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "sharepointrestoresession_granular_update"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/v1.0/solutions/backupRestore/sharePointRestoreSessions/01b9d504-a6a4-464b-b2e1-0085d9fab651
+Content-Type: application/json
+
+{
+  "granularSiteRestoreArtifacts@delta": [
+    {
+      "browseSessionId": "m_RtZ8BiiUXOK69cuN6gwubfm9_yeVlDg8s6hci01_cVOAE",
+      "id": "f3846f8d-80a6-4480-ae20-5966ebdf2009,26380145-c085-4772-b5ef-94de6bc9447e,3be2f282-276a-4a1a-8db0-8bf0849df84d,8d1ba53f-986a-409f-bf90-3bf55dbd7526"
+    },
+    {
+      "@removed": {
+        "reason": "changed"
+      },
+      "id": "a535851e-9fc6-4eb1-90ab-2955fd9117b5,2a8b7eaf-092a-4561-a25a-998ad2e5142e,38eec3f1-b879-44a6-8ae6-05bd46ed4b3d,ce66019f-cdf9-4575-aa81-de3aabe844a2"
+    }
+  ]
+}
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.sharePointRestoreSession"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@context": "https://graph.microsoft.com/v1.0/$metadata#solutions/backupRestore/sharePointRestoreSessions/$entity",
+  "id": "01b9d504-a6a4-464b-b2e1-0085d9fab651",
+  "granularSiteRestoreArtifacts@delta": [
+    {
+      "siteId": null,
+      "id": "f3846f8d-80a6-4480-ae20-5966ebdf2009,26380145-c085-4772-b5ef-94de6bc9447e,3be2f282-276a-4a1a-8db0-8bf0849df84d,8d1ba53f-986a-409f-bf90-3bf55dbd7526",
+      "browseSessionId": "m_RtZ8BiiUXOK69cuN6gwubfm9_yeVlDg8s6hci01_cVOAE",
+      "restoredItemKey": "",
+      "webUrl": "",
+      "restoredItemPath": null,
+      "restoredItemWebUrl": "",
+      "status": "added",
+      "restorePointDateTime": "0001-01-01T00:00:00Z",
+      "startDateTime": "0001-01-01T00:00:00Z",
+      "completionDateTime": "0001-01-01T00:00:00Z"
+    },
+    {
+      "id": "a535851e-9fc6-4eb1-90ab-2955fd9117b5,2a8b7eaf-092a-4561-a25a-998ad2e5142e,38eec3f1-b879-44a6-8ae6-05bd46ed4b3d,ce66019f-cdf9-4575-aa81-de3aabe844a2",
+      "@removed": {
+        "reason": "changed"
+      }
     }
   ]
 }
