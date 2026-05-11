@@ -1,6 +1,6 @@
 ---
 title: "mailbox: exportItems"
-description: "Export Exchange mailboxItem objects in full-fidelity FastTransfer format for backup purposes."
+description: "Export Exchange mailboxItem objects in full fidelity."
 author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Export Exchange [mailboxItem](../resources/mailboxitem.md) objects in full fidelity. This API exports each item as an opaque stream. The data stream isn't intended for parsing, but can be used to import an item back into an Exchange mailbox. For more information, see: [Overview of the mailbox import and export APIs in Microsoft Graph (preview)](/graph/mailbox-import-export-concept-overview)
+Export Exchange [mailboxItem](../resources/mailboxitem.md) objects in full fidelity. This API exports each item as an opaque stream. The data stream isn't intended for parsing, but can be used to import an item back into an Exchange mailbox. For more information, see [Overview of the mailbox import and export APIs in Microsoft Graph](/graph/mailbox-import-export-concept-overview).
 
 You can export up to 20 items in a single export request.
 
@@ -52,7 +52,7 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|itemIds|String collection|A collection of identifiers of [mailboxItem](../resources/mailboxitem.md) objects to export. All identifiers in the collection _must_ be for items in the same mailbox. Maximum size of this collection is 20 strings.|
+|itemIds|String collection|A collection of identifiers of [mailboxItem](../resources/mailboxitem.md) objects to export. All identifiers in the collection _must_ be for items in the same mailbox. The maximum size of this collection is 20 strings.|
 
 ## Response
 

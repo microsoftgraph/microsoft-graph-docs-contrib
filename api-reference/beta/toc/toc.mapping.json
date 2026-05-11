@@ -1869,7 +1869,31 @@
                 "crossTenantAccessPolicy",
                 "crossTenantAccessPolicyConfigurationDefault",
                 "crossTenantAccessPolicyConfigurationPartner",
-                "crossTenantIdentitySyncPolicyPartner"
+                "crossTenantIdentitySyncPolicyPartner",
+                "m365CapabilityBase"
+              ],
+              "childNodes": [
+                {
+                  "name": "Microsoft 365 capabilities",
+                  "resources": [
+                    "crossTenantCalendarAvailabilityBasic",
+                    "crossTenantCalendarAvailabilityLimitedDetails",
+                    "crossTenantCalendarSharingFreeBusyDetail",
+                    "crossTenantCalendarSharingFreeBusyReviewer",
+                    "crossTenantCalendarSharingFreeBusySimple",
+                    "crossTenantMailTipsAll",
+                    "crossTenantMailTipsLimited",
+                    "crossTenantMigration",
+                    "crossTenantOpenProfileCard",
+                    "crossTenantPlacesDeskBooking",
+                    "crossTenantPlacesRoomBooking"
+                  ],
+                  "complexTypes": [
+                    "m365CapabilityInboundAccess",
+                    "m365CapabilityResourceScope",
+                    "m365CapabilityResourceScopes"
+                  ]
+                }
               ]
             },
             {
@@ -2482,7 +2506,7 @@
       ]
     },
     {
-      "name": "Mailbox import and export (preview)",
+      "name": "Mailbox import and export",
       "overview": "../../resources/mailbox-import-export-api-overview.md",
       "keywords": [
         "Exchange",
@@ -3421,7 +3445,11 @@
             "resourceSpecificPermissionGrant"
           ],
           "complexTypes": [
-            "customAppSettings"
+            "customAppSettings",
+            "groupChatTeamsAppInstallationScopeInfo",
+            "personalTeamsAppInstallationScopeInfo",
+            "teamsAppInstallationScopeInfo",
+            "teamTeamsAppInstallationScopeInfo"
           ]
         },
         {

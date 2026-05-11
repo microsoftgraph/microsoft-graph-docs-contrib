@@ -684,7 +684,7 @@ items:
       href: outlook-immutable-id.md
     - name: Subscribe to change notifications
       href: outlook-change-notifications-overview.md
-  - name: Mailbox import and export (preview)
+  - name: Mailbox import and export
     items:
     - name: Overview
       href: mailbox-import-export-concept-overview.md

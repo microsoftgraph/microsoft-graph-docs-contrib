@@ -4,10 +4,9 @@ ms.topic: include
 ms.localizationpriority: medium
 ---
 
-<!-- markdownlint-disable MD041-->
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|User.ReadWrite.All|AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Directory.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|Not supported.|
+|Application|User.ReadWrite.All|AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, Directory.ReadWrite.All|
 
-|Permission type      | Least privileged permission | Higher privileged permissions |
-|:--------------------|:---------------------------|:-----------------------------|
-|Delegated (work or school account) | AgentIdUser.ReadWrite.IdentityParentedBy | AgentIdUser.ReadWrite.All, User.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported. | Not supported.|
-|Application | AgentIdUser.ReadWrite.IdentityParentedBy | AgentIdUser.ReadWrite.All, User.ReadWrite.All |

@@ -12,12 +12,17 @@ doc_type: conceptualPageType
 
 The Microsoft Purview APIs for eDiscovery enable organizations to automate repetitive tasks and integrate with their existing eDiscovery tools to build repeatable workflows that industry regulations might require. You can use the eDiscovery APIs to help with your legal needs.
 
-> [!IMPORTANT]
-> - The Microsoft Purview APIs for eDiscovery are intended for the use of eDiscovery operations for litigation, investigation, and regulatory requests. These APIs shouldn't be used as a substitute for journaling data out of the Microsoft 365 system or any other mass download.
->
-> - For information about setting up app-only access, see [Set up application authentication](/graph/security-ediscovery-appauthsetup).
-> 
-> - Usage of eDiscovery APIs in Microsoft Graph is subject to the same licensing and subscriptions for your organization that grant you access to standard or premium eDiscovery features in the Microsoft Purview portal. For more information, see [Learn about eDiscovery: Features and capabilities](/purview/edisc#features-and-capabilities).
+- The Microsoft Purview APIs for eDiscovery are intended for the use of eDiscovery operations for litigation, investigation, and regulatory requests. These APIs shouldn't be used as a substitute for journaling data out of the Microsoft 365 system or any other mass download.
+
+- For information about setting up app-only access, see [Set up application authentication](/graph/security-ediscovery-appauthsetup).
+
+- The eDiscovery APIs in Microsoft Graph are available to organizations with E3 and E5 subscriptions. The authentication method and available operations depend on your subscription tier. Organizations with an E3 subscription can use delegated (user) authentication to automate standard eDiscovery operations. App-only authentication and premium operations require E5 or an equivalent add-on subscription.  For more information, see [Learn about eDiscovery: Features and capabilities](/purview/edisc#features-and-capabilities).
+
+| Feature|E3/Standard with delegated auth|E5/Premium with delegated auth|E5/Premium with app-only auth|
+| -------- | -------- | -------- | -------- |
+|Cases, Searches, Holds|Yes   |Yes|Yes|
+|Export|Requires pay-as-you-go billing|Yes|Yes|
+|Premium features incl: Review sets, tagging, analytics|No|Yes|Yes|
 
 | Name | Type | Use case |
 |:---|:---|:---|

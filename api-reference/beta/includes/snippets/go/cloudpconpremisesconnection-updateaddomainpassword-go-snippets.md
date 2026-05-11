@@ -16,7 +16,7 @@ import (
 )
 
 requestBody := graphdevicemanagement.NewUpdateAdDomainPasswordPostRequestBody()
-adDomainPassword := "AdDomainPassword value"
+adDomainPassword := "AdDomainPassword_XXXX"
 requestBody.SetAdDomainPassword(&adDomainPassword) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go

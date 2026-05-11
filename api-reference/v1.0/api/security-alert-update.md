@@ -158,6 +158,14 @@ Content-type: application/json
     "lastActivityDateTime": "2021-05-02T07:56:58.222Z",
     "comments": [],
     "evidence": [],
-    "systemTags" : []
+    "systemTags" : [],
+    "customDetails": {
+      "threatIntelligenceVerdict": "KnownMalicious",
+      "matchedThreatActor": "DEV-0537",
+      "automationPlaybookName": "BlockIPAndIsolateHost",
+      "automationExecutionStatus": "Succeeded",
+      "iocTypeMatched": "IPAddress",
+      "firstSeenInOrg": "2026-04-14T08:12:00Z"
+    }
 }
 ```

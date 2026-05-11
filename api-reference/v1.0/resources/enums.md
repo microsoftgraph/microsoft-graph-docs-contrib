@@ -3,7 +3,7 @@ title: "Enum values"
 description: "Microsoft Graph enumeration values."
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
-ms.date: 12/02/2025
+ms.date: 01/20/2026
 author: "MSGraphDocsvTeam"
 doc_type: enumPageType
 ms.custom: sfi-ropc-nochange
@@ -877,6 +877,14 @@ Namespace: microsoft.graph
 | policyOID |
 | unknownFutureValue |
 
+### x509CertificateIssuerHintsState values
+
+| Member |
+| ---- |
+| disabled |
+| enabled |
+| unknownFutureValue |
+
 ### x509CertificateCRLValidationConfigurationState values
 
 | Member |
@@ -1311,6 +1319,29 @@ Namespace: microsoft.graph
 | darkPink |
 | darkYellow |
 | unknownFutureValue |
+| darkRed |
+| cranberry |
+| darkOrange |
+| bronze |
+| peach |
+| gold |
+| lime |
+| forest |
+| lightGreen |
+| jade |
+| lightTeal |
+| darkTeal |
+| steel |
+| skyBlue |
+| blueGray |
+| lavender |
+| lilac |
+| plum |
+| magenta |
+| darkBrown |
+| beige |
+| charcoal |
+| silver |
 
 ### timeOffReasonIconType values
 
