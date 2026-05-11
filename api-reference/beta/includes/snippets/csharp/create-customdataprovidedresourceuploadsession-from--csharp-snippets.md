@@ -28,7 +28,7 @@ var requestBody = new CustomDataProvidedResourceUploadSession
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-var result = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageCatalogs["{accessPackageCatalog-id}"].AccessPackageResources["{accessPackageResource-id}"].UploadSessions.PostAsync(requestBody);
+var result = await graphClient.IdentityGovernance.Catalogs["{accessPackageCatalog-id}"].AccessPackageResources["{accessPackageResource-id}"].UploadSessions.PostAsync(requestBody);
 
 
 ```

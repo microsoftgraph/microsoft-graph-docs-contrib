@@ -11,7 +11,7 @@ using Microsoft.Graph.Beta.DeviceManagement.VirtualEndpoint.OnPremisesConnection
 
 var requestBody = new UpdateAdDomainPasswordPostRequestBody
 {
-	AdDomainPassword = "AdDomainPassword value",
+	AdDomainPassword = "AdDomainPassword_XXXX",
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

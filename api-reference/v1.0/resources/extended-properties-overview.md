@@ -16,12 +16,14 @@ Extended properties allow storing custom data and specifically serve as a fallba
 custom data for Outlook MAPI properties when these properties aren't already exposed in the Microsoft Graph API metadata_.
 You can use extended properties REST API to store or get such custom data in the following user resources:
 
-- [message](../resources/message.md)
-- [mailFolder](../resources/mailfolder.md)
-- [event](../resources/event.md)
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md)
+- [event](../resources/event.md)
+- [mailboxFolder](../resources/mailboxfolder.md)
+- [mailboxItem](../resources/mailboxitem.md)
+- [mailFolder](../resources/mailfolder.md)
+- [message](../resources/message.md)
 
 Or, in the following Microsoft 365 group resources:
 

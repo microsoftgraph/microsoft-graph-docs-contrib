@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Move one or more [alert](../resources/security-alert.md) resources to an existing [incident](../resources/security-incident.md).
+Move one or more [alert](../resources/security-alert.md) resources to a new or existing [incident](../resources/security-incident.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

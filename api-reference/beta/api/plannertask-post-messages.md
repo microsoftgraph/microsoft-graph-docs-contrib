@@ -16,9 +16,6 @@ Namespace: microsoft.graph
 
 Create a new [plannerTaskChatMessage](../resources/plannertaskchatmessage.md) on a [plannerTask](../resources/plannertask.md).
 
-> [!IMPORTANT]
-> This method only supports creating a new chat message on a [plannerTask](../resources/plannertask.md) that already has at least one existing message.
-
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions

@@ -2,6 +2,8 @@
 # GENERATED FILE - DO NOT EDIT
 #
 items:
+- name: Overview
+  href: ../../resources/agentid-platform-overview.md
 - name: Agent identities
   items:
   - name: Agent identity blueprint

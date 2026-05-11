@@ -25,7 +25,7 @@ request_body = AgentInstance(
 		icon_url = "https://example.com/icon.png",
 		provider = AgentProvider(
 			organization = "Test Organization",
-			url = "https://test.com",
+			url = "https://contoso.com",
 		),
 		protocol_version = "1.0",
 		version = "1.0.0",
