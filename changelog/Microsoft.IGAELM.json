@@ -1,6 +1,24 @@
 {
   "changelog": [
     {
+      "Id": "a7e3b21c-5f0d-4a82-b6c9-1e8d4f7a3b5c",
+      "Cloud": "Prod",
+      "CreatedDateTime": "2026-05-12T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "ChangeList": [
+        {
+          "Id": "a7e3b21c-5f0d-4a82-b6c9-1e8d4f7a3b5c",
+          "ApiChange": "Relationship",
+          "Description": "Added the **subjects** navigation property to the **entitlementManagement** resource type.",
+          "Target": "entitlementManagement",
+          "ChangeType": "Addition",
+          "ChangedApiName": "subjects"
+        }
+      ],
+      "Version": "v1.0",
+      "SubArea": "Governance"
+    },
+    {
       "ChangeList": [
         {
           "Id": "fecf9991-74c3-47ac-9cb0-8e587d5b440f",
@@ -1030,7 +1048,7 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     },
-     {
+    {
       "ChangeList": [
         {
           "Id": "78c826f9-c657-4977-b855-0b5f2ea3e7b3",
@@ -1412,7 +1430,7 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     },
-     {
+    {
       "ChangeList": [
         {
           "Id": "db219d29-ed6a-41ad-9bd5-fc34428c931d",
@@ -1722,7 +1740,7 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     },
-     {
+    {
       "ChangeList": [
         {
           "Id": "8c6bfd24-a94d-4fb2-b1df-9f1539efadc7",
