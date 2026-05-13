@@ -62,6 +62,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | [Create sharing link](../api/driveitem-createlink.md)                        | sharing link | Create a link to share the **driveItem**.|
 | [Add permissions](../api/driveitem-invite.md)                                | [permission][] collection | Send a sharing invite to a user.|
 | [List permissions](../api/driveitem-list-permissions.md)                     | [permission][] collection | Retrieve the collection of permissions on an **driveItem**.|
+| [Create permission](../api/driveitem-post-permissions.md)                    | [permission][] | Create a new [permission](../resources/permission.md) object on a [driveItem](../resources/driveitem.md).|
 | [Delete permission](../api/permission-delete.md)                             | None | Remove the permission from the **driveItem**.|
 | [Get WebSocket channel][getWebSocket]                                        | [subscription][] | Receive near-real-time change notifications for a drive using socket.io.|
 | [Preview item][item-preview]                                                 | json object | Obtain short-lived embeddable URLs for an item in order to render a temporary preview.|

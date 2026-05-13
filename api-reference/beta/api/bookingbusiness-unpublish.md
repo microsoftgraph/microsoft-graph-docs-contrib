@@ -44,7 +44,7 @@ If successful, this method returns `204 No content` response code. It doesn't re
 
 ## Example
 The following is an example of how to call this API.
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -83,7 +83,7 @@ POST https://graph.microsoft.com/beta/solutions/bookingbusinesses/contosolunchde
 
 ---
 
-##### Response
+### Response
 The following example shows the response.
 <!-- {
   "blockType": "response"

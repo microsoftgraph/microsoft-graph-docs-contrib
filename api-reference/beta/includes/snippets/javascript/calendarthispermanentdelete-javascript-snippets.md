@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-await client.api('/users/{usersId}/calendar/permanentDelete')
+await client.api('/users/{usersId}/calendars/permanentDelete')
 	.version('beta')
 	.post();
 

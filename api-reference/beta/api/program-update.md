@@ -53,7 +53,7 @@ The following table shows the properties that can be supplied when you update a 
 If successful, this method returns a `204, Accepted` response code and [program](../resources/program.md) object in the response body.
 
 ## Example
-##### Request
+### Request
 In the request body, supply a JSON representation of the [program](../resources/program.md) object parameters to change.
 
 
@@ -101,7 +101,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

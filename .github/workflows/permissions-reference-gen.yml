@@ -20,12 +20,12 @@ jobs:
       run: git config --system core.longpaths true
 
     - name: Checkout microsoft-graph-docs
-      uses: actions/checkout@v4.1.3
+      uses: actions/checkout@v6
       with:
         path: docs
 
     - name: Azure Login using Federated Identity
-      uses: azure/login@v2
+      uses: azure/login@v3
       with:
         client-id: ${{ secrets.GRAPHPERMISSIONSREFERENCE_CLIENT_ID }}
         tenant-id: ${{ secrets.GRAPHPERMISSIONSREFERENCE_TENANT_ID }}

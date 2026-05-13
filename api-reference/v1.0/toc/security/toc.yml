@@ -52,8 +52,30 @@ items:
     items:
     - name: AI agent evidence
       href: ../../resources/security-aiagentevidence.md
+    - name: DNS evidence
+      href: ../../resources/security-dnsevidence.md
+    - name: File hash evidence
+      href: ../../resources/security-filehashevidence.md
+    - name: Git hub organization evidence
+      href: ../../resources/security-githuborganizationevidence.md
+    - name: Git hub repo evidence
+      href: ../../resources/security-githubrepoevidence.md
+    - name: Git hub user evidence
+      href: ../../resources/security-githubuserevidence.md
+    - name: Host logon session evidence
+      href: ../../resources/security-hostlogonsessionevidence.md
+    - name: Malware evidence
+      href: ../../resources/security-malwareevidence.md
+    - name: Network connection evidence
+      href: ../../resources/security-networkconnectionevidence.md
+    - name: Sas token evidence
+      href: ../../resources/security-sastokenevidence.md
     - name: Security group evidence
       href: ../../resources/security-securitygroupevidence.md
+    - name: Service principal evidence
+      href: ../../resources/security-serviceprincipalevidence.md
+    - name: Submission mail evidence
+      href: ../../resources/security-submissionmailevidence.md
     - name: Teams message evidence
       href: ../../resources/security-teamsmessageevidence.md
     - name: User account

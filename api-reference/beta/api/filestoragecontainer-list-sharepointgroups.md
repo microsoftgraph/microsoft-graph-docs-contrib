@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Example 1: Retrieve all the existing sharePointGroup objects that are local to a fileStorageContainer
 
-The following example retrieves all the **sharePointGroup** objects that are local to a **fileStoragecontainer** identified by the container ID `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`.
+The following example retrieves all the **sharePointGroup** objects that are local to a **fileStorageContainer** identified by the container ID `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`.
 
 #### Request
 
@@ -121,15 +121,17 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.sharePointGroup",
-      "id": "7",
+      "id": "ZGYwZTEzYTgtOTExOS00MjdmLWEzNjktOTdjOWM3YjNlYjcyXzE0",
       "title": "sampleTitle1",
-      "description": "sampleDescription1"
+      "description": "sampleDescription1",
+      "principalId": "7"
     },
     {
       "@odata.type": "#microsoft.graph.sharePointGroup",
-      "id": "9",
+      "id": "ZGYwZTEzYTgtOTExOS00PdjfPUHzNjktOTdjOWM3YjNlYjcyOpo8",
       "title": "sampleTitle2",
-      "description": "sampleDescription2"
+      "description": "sampleDescription2",
+      "principalId": "9"
     }
   ]
 }
@@ -137,7 +139,7 @@ Content-Type: application/json
 
 ### Example 2: Attempt to retrieve all the existing sharePointGroup objects that are local to a fileStorageContainer
 
-The following example attempts to retrieve all the **sharePointGroup** objects that are local to a **fileStorageContainer** identified by the container ID `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`; however, the **fileStorageContainer** contains no **sharePointGroup** objects.
+The following example attempts to retrieve all the **sharePointGroup** objects that are local to a **fileStorageContainer** identified by the container ID `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_6A`; however, the **fileStorageContainer** contains no **sharePointGroup** objects.
 
 #### Request
 
@@ -149,7 +151,7 @@ The following example shows a request.
   "name": "list_sharepointgroups_2"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups
+GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_6A/sharePointGroups
 ```
 
 # [C#](#tab/csharp)
@@ -180,7 +182,7 @@ GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0
 
 #### Response
 
-The following example shows the response. Because no **sharePointGroup** objects exist in the **fileStorageContainer**, the response has an empty list.
+The following example shows the response. The response has an empty list, because no **sharePointGroup** objects exist in the **fileStorageContainer**. 
 
 <!-- {
   "blockType": "response",

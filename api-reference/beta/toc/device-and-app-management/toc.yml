@@ -388,6 +388,12 @@ items:
       href: ../../api/cloudpcprovisioningpolicy-applyconfig.md
     - name: Retry
       href: ../../api/cloudpcprovisioningpolicy-retry.md
+    - name: Schedule policy apply task
+      href: ../../api/cloudpcprovisioningpolicy-schedulepolicyapplytask.md
+    - name: Retrieve policy apply action result
+      href: ../../api/cloudpcprovisioningpolicy-retrievepolicyapplyactionresult.md
+    - name: Retrieve policy apply schedule
+      href: ../../api/cloudpcprovisioningpolicy-retrievepolicyapplyschedule.md
   - name: Cloud PC report
     items:
     - name: Cloud PC report
@@ -663,6 +669,8 @@ items:
       href: ../../resources/cloudpconpremisesconnectionstatusdetail.md
     - name: Cloud PC on-premises connection status details
       href: ../../resources/cloudpconpremisesconnectionstatusdetails.md
+    - name: Cloud PC on-premises connection subnet IP detail
+      href: ../../resources/cloudpconpremisesconnectionsubnetIpdetail.md
     - name: Cloud PC partner agent install result
       href: ../../resources/cloudpcpartneragentinstallresult.md
     - name: Cloud PC provisioning policy assignment

@@ -101,7 +101,6 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/00af5dfb-85da-4b41-a677-0
 
 ---
 
-
 ### Response
 
 The following example shows the response.

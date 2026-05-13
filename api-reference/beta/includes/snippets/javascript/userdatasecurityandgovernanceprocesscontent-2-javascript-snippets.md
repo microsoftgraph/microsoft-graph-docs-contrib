@@ -52,6 +52,7 @@ const processContentResponse = {
 };
 
 await client.api('/users/{5def8f26-aff8-4db6-a08c-0fcf8f1aa2ba}/dataSecurityAndGovernance/processContent')
+	.version('beta')
 	.post(processContentResponse);
 
 ```

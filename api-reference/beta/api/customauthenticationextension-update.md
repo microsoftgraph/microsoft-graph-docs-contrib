@@ -20,6 +20,7 @@ Update the properties of a [customAuthenticationExtension](../resources/customau
 - [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) resource type.
 - [onOtpSendCustomExtension](../resources/onOtpSendCustomExtension.md) resource type.
 - [onPasswordSubmitCustomExtension](../resources/onpasswordsubmitcustomextension.md) resource type.
+- [onVerifiedIdClaimValidationCustomExtension](../resources/onverifiedidclaimvalidationcustomextension.md) resource type.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -72,7 +73,9 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Request
+### Example 1: Update an onTokenIssuanceStartCustomExtension object
+
+#### Request
 The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
@@ -138,7 +141,71 @@ Content-length: 468
 
 ---
 
-### Response
+#### Response
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 2: Update an onVerifiedIdClaimValidationCustomExtension object
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_customauthenticationextension_onVerifiedIdClaimValidationCustomExtension"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/identity/customAuthenticationExtensions/6a0a3429-be77-0aed-951e-1c8aed62bf8a
+Content-Type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.onVerifiedIdClaimValidationCustomExtension",
+    "displayName": "Verified ID Claim Validation (updated)",
+    "description": "Updated description for Verified ID claim validation"
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-customauthenticationextension-onverifiedidclaimvalidationcustomextension-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-customauthenticationextension-onverifiedidclaimvalidationcustomextension-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-customauthenticationextension-onverifiedidclaimvalidationcustomextension-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-customauthenticationextension-onverifiedidclaimvalidationcustomextension-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-customauthenticationextension-onverifiedidclaimvalidationcustomextension-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-customauthenticationextension-onverifiedidclaimvalidationcustomextension-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-customauthenticationextension-onverifiedidclaimvalidationcustomextension-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
 The following example shows the response.
 <!-- {
   "blockType": "response",

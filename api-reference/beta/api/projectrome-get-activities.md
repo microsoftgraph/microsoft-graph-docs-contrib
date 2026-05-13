@@ -67,7 +67,7 @@ If successful, this method returns the `200 OK` response code with the user's ac
 
 ## Example
 
-##### Request
+### Request
 
 The following example shows a request.
 
@@ -80,7 +80,7 @@ The following example shows a request.
 GET https://graph.microsoft.com/beta/me/activities
 ```
 
-##### Response
+### Response
 
 The following example shows the response.
 

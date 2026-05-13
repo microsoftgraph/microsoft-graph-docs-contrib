@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let sharePointGroups = await client.api('/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups')
+let sharePointGroups = await client.api('/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_6A/sharePointGroups')
 	.version('beta')
 	.get();
 

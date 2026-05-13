@@ -23,6 +23,7 @@ Get a list of the [authenticationEventListener](../resources/authenticationevent
 - [onEmailOtpSendListener](../resources/onemailotpsendlistener.md)
 - [onFraudProtectionLoadStartListener](../resources/onfraudprotectionloadstartlistener.md)
 - [onPasswordSubmitListener](../resources/onpasswordsubmitlistener.md)
+- [onVerifiedIdClaimValidationListener](../resources/onverifiedidclaimvalidationlistener.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

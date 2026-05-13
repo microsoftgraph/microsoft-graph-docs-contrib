@@ -31,17 +31,17 @@ jobs:
       result: ${{ steps.commit-if-needed.outputs.result }}
     steps:
     - name: Checkout docs repo
-      uses: actions/checkout@v4.1.3
+      uses: actions/checkout@v6
       with:
         ref: ${{ inputs.target }}
         path: docs
     - name: Checkout tool repo
-      uses: actions/checkout@v4.1.3
+      uses: actions/checkout@v6
       with:
         repository: microsoftgraph/msgraph-toc-gen
         path: tool
     - name: Setup .NET
-      uses: actions/setup-dotnet@v4
+      uses: actions/setup-dotnet@v5
       with:
         dotnet-version: 10.x
     - name: Build TOC generation tool

@@ -3,6 +3,130 @@
     {
       "ChangeList": [
         {
+          "Id": "e154a71c-db0a-4be0-9d53-309db6156d01",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "claimBindingSource",
+          "ChangeType": "Addition",
+          "Description": "Added the **claimBindingSource** enumeration type.",
+          "Target": "claimBindingSource"
+        },
+        {
+          "Id": "e154a71c-db0a-4be0-9d53-309db6156d01",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "matchConfidenceLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **matchConfidenceLevel** enumeration type.",
+          "Target": "matchConfidenceLevel"
+        },
+        {
+          "Id": "e154a71c-db0a-4be0-9d53-309db6156d01",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "verifiedIdProfileState",
+          "ChangeType": "Addition",
+          "Description": "Added the **verifiedIdProfileState** enumeration type.",
+          "Target": "verifiedIdProfileState"
+        },
+        {
+          "Id": "e154a71c-db0a-4be0-9d53-309db6156d01",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "verifiedIdUsageConfigurationPurpose",
+          "ChangeType": "Addition",
+          "Description": "Added the **verifiedIdUsageConfigurationPurpose** enumeration type.",
+          "Target": "verifiedIdUsageConfigurationPurpose"
+        },
+        {
+          "Id": "e154a71c-db0a-4be0-9d53-309db6156d01",
+          "ApiChange": "Resource",
+          "ChangedApiName": "claimBinding",
+          "ChangeType": "Addition",
+          "Description": "Added the [claimBinding](https://learn.microsoft.com/en-us/graph/api/resources/claimBinding?view=graph-rest-1.0) resource.",
+          "Target": "claimBinding"
+        },
+        {
+          "Id": "e154a71c-db0a-4be0-9d53-309db6156d01",
+          "ApiChange": "Resource",
+          "ChangedApiName": "claimValidation",
+          "ChangeType": "Addition",
+          "Description": "Added the [claimValidation](https://learn.microsoft.com/en-us/graph/api/resources/claimValidation?view=graph-rest-1.0) resource.",
+          "Target": "claimValidation"
+        },
+        {
+          "Id": "e154a71c-db0a-4be0-9d53-309db6156d01",
+          "ApiChange": "Resource",
+          "ChangedApiName": "faceCheckConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [faceCheckConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/faceCheckConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "faceCheckConfiguration"
+        },
+        {
+          "Id": "e154a71c-db0a-4be0-9d53-309db6156d01",
+          "ApiChange": "Resource",
+          "ChangedApiName": "verifiedIdProfileConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [verifiedIdProfileConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/verifiedIdProfileConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "verifiedIdProfileConfiguration"
+        },
+        {
+          "Id": "e154a71c-db0a-4be0-9d53-309db6156d01",
+          "ApiChange": "Resource",
+          "ChangedApiName": "verifiedIdUsageConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [verifiedIdUsageConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/verifiedIdUsageConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "verifiedIdUsageConfiguration"
+        },
+        {
+          "Id": "e154a71c-db0a-4be0-9d53-309db6156d01",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityContainer",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityContainer](https://learn.microsoft.com/en-us/graph/api/resources/identityContainer?view=graph-rest-1.0) resource.",
+          "Target": "identityContainer"
+        },
+        {
+          "Id": "e154a71c-db0a-4be0-9d53-309db6156d01",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityVerifiedIdRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityVerifiedIdRoot](https://learn.microsoft.com/en-us/graph/api/resources/identityVerifiedIdRoot?view=graph-rest-1.0) resource.",
+          "Target": "identityVerifiedIdRoot"
+        },
+        {
+          "Id": "e154a71c-db0a-4be0-9d53-309db6156d01",
+          "ApiChange": "Resource",
+          "ChangedApiName": "verifiedIdProfile",
+          "ChangeType": "Addition",
+          "Description": "Added the [verifiedIdProfile](https://learn.microsoft.com/en-us/graph/api/resources/verifiedIdProfile?view=graph-rest-1.0) resource.",
+          "Target": "verifiedIdProfile"
+        }
+      ],
+      "Id": "e154a71c-db0a-4be0-9d53-309db6156d01",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-05-01T19:37:26.2758758Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f4eba935-8a8c-4d89-80b0-2e7af6e49cd6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "verifiedIdProfile",
+          "ChangeType": "Addition",
+          "Description": "Added the [verifiedIdProfile](https://learn.microsoft.com/en-us/graph/api/resources/verifiedidprofile?view=graph-rest-1.0) resource.",
+          "Target": "verifiedIdProfile"
+        }
+      ],
+      "Id": "f4eba935-8a8c-4d89-80b0-2e7af6e49cd6",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-05-01T22:11:37.0686651Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ea433aa8-04b5-4f99-8057-3d001ff49927",
           "ApiChange": "Enumeration",
           "ChangedApiName": "claimBindingSource",
@@ -31,7 +155,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "claimBinding",
           "ChangeType": "Addition",
-          "Description": "Added the [claimBinding](https://learn.microsoft.com/en-us/graph/api/resources/claimBinding?view=graph-rest-beta) resource.",
+          "Description": "Added the [claimBinding](https://learn.microsoft.com/en-us/graph/api/resources/claimbinding?view=graph-rest-beta) resource.",
           "Target": "claimBinding"
         },
         {
@@ -39,7 +163,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "faceCheckConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [faceCheckConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/faceCheckConfiguration?view=graph-rest-beta) resource.",
+          "Description": "Added the [faceCheckConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/facecheckconfiguration?view=graph-rest-beta) resource.",
           "Target": "faceCheckConfiguration"
         },
         {
@@ -47,7 +171,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "verifiedIdProfileConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [verifiedIdProfileConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/verifiedIdProfileConfiguration?view=graph-rest-beta) resource.",
+          "Description": "Added the [verifiedIdProfileConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/verifiedidprofileconfiguration?view=graph-rest-beta) resource.",
           "Target": "verifiedIdProfileConfiguration"
         },
         {
@@ -55,7 +179,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "verifiedIdUsageConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [verifiedIdUsageConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/verifiedIdUsageConfiguration?view=graph-rest-beta) resource.",
+          "Description": "Added the [verifiedIdUsageConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/verifiedidusageconfiguration?view=graph-rest-beta) resource.",
           "Target": "verifiedIdUsageConfiguration"
         },
         {
@@ -63,7 +187,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "identityVerifiedIdRoot",
           "ChangeType": "Addition",
-          "Description": "Added the [identityVerifiedIdRoot](https://learn.microsoft.com/en-us/graph/api/resources/identityVerifiedIdRoot?view=graph-rest-beta) resource.",
+          "Description": "Added the [identityVerifiedIdRoot](https://learn.microsoft.com/en-us/graph/api/resources/identityverifiedidroot?view=graph-rest-beta) resource.",
           "Target": "identityVerifiedIdRoot"
         },
         {
@@ -71,7 +195,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "verifiedIdProfile",
           "ChangeType": "Addition",
-          "Description": "Added the [verifiedIdProfile](https://learn.microsoft.com/en-us/graph/api/resources/verifiedIdProfile?view=graph-rest-beta) resource.",
+          "Description": "Added the [verifiedIdProfile](https://learn.microsoft.com/en-us/graph/api/resources/verifiedidprofile?view=graph-rest-beta) resource.",
           "Target": "verifiedIdProfile"
         }
       ],
@@ -79,6 +203,48 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-11-10T19:06:39.3153588Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "13632476-3033-4560-9a1e-991eed51eb2a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "claimValidation",
+          "ChangeType": "Addition",
+          "Description": "Added the [claimValidation](https://learn.microsoft.com/en-us/graph/api/resources/claimvalidation?view=graph-rest-beta&preserve-view=true) resource type.",
+          "Target": "claimValidation"
+        },
+        {
+          "Id": "13632476-3033-4560-9a1e-991eed51eb2a",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "matchConfidenceLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **matchConfidenceLevel** enumeration type.",
+          "Target": "matchConfidenceLevel"
+        },
+        {
+          "Id": "13632476-3033-4560-9a1e-991eed51eb2a",
+          "ApiChange": "Property",
+          "ChangedApiName": "matchConfidenceLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **matchConfidenceLevel** property to the [claimBinding](https://learn.microsoft.com/en-us/graph/api/resources/claimbinding?view=graph-rest-beta&preserve-view=true) resource type.",
+          "Target": "claimBinding"
+        },
+        {
+          "Id": "13632476-3033-4560-9a1e-991eed51eb2a",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "verifiedId",
+          "ChangeType": "Addition",
+          "Description": "Added the **verifiedId** relationship to the [identityContainer](https://learn.microsoft.com/en-us/graph/api/resources/identitycontainer?view=graph-rest-beta&preserve-view=true) resource type.",
+          "Target": "identityContainer"
+        }
+      ],
+      "Id": "13632476-3033-4560-9a1e-991eed51eb2a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-04-03T19:58:39.1665194Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     }

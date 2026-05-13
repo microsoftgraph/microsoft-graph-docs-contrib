@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [agentregistry-deprecation-note](../includes/agentregistry-deprecation-note.md)]
+
 Return the list of [agent instances](../resources/agentinstance.md) that are members for the specified [agentCollection](../resources/agentcollection.md). This API returns only the **agentCollection** and doesn't support using $select to return other properties. Attempting to select more properties returns a `400 Bad Request` error code.
 
 ## Permissions
