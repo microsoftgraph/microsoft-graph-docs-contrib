@@ -90,6 +90,10 @@ Use the following new resources that extend the [alertEvidence](/graph/api/resou
 
 Use the **scopeInfo** property on [teamsAppInstallation](/graph/api/resources/teamsappinstallation?view=graph-rest-beta&preserve-view=true) to get the details of the scope in which the app is installed.
 
+### Teamwork and communications | Messaging
+
+Added support for `$expand` on the **items** relationship of [teamworkSection](/graph/api/resources/teamworksection?view=graph-rest-beta&preserve-view=true) so that you can retrieve a section together with its chats, channels, meetings, and communities in a single request when calling [List sections](/graph/api/userteamwork-list-sections?view=graph-rest-beta&preserve-view=true) or [Get teamworkSection](/graph/api/teamworksection-get?view=graph-rest-beta&preserve-view=true).
+
 ## April 2026: New and generally available
 
 ### Applications
