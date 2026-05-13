@@ -155,8 +155,8 @@ Content-Type: application/json
       },
       "status": "failToCorrelate",
       "error": {
-        "errorCode": "AzureActiveDirectoryInvalidUserPrinicipalNameFormat",
-        "errorMessage": "The format of this user principal name is unexpected"
+        "code": "AzureActiveDirectoryInvalidUserPrinicipalNameFormat",
+        "message": "The format of this user principal name is unexpected"
       }
     },
     {

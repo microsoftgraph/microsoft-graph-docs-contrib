@@ -101,8 +101,8 @@ Content-Type: application/json
       "startDateTime": "2026-04-28T08:15:00Z",
       "endDateTime": "2026-04-28T08:20:30Z",
       "error": {
-        "errorCode": "MissingJoiningProperty",
-        "errorMessage": "Direct joining property mapping not found"
+        "code": "MissingJoiningProperty",
+        "message": "Direct joining property mapping not found"
       },
       "servicePrincipal": {
         "id": "e7c9a4b2-6d18-4f35-a0c7-8b5e3f1d9a42"

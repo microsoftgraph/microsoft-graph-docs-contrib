@@ -2797,8 +2797,8 @@
             {
               "name": "Identity correlation reports (preview)",
               "resources": [
-                "identityCorrelation",
-                "correlatedIdentity"
+                "correlatedIdentity",
+                "identityCorrelation"
               ],
               "complexTypes": [
                 "attributeInfo",
