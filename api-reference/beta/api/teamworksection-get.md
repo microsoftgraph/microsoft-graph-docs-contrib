@@ -230,17 +230,14 @@ The following example uses `$expand=items` on a system-defined section. The **it
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_teamworksection_system_expand_items",
   "sampleKeys": ["10f8c3a6-3e2a-4e8b-9c7d-5a4b6c8d9e0f", "b2c3d4e5-f6a7-8901-bcde-f12345678901"]
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/users/10f8c3a6-3e2a-4e8b-9c7d-5a4b6c8d9e0f/teamwork/sections/b2c3d4e5-f6a7-8901-bcde-f12345678901?$expand=items
 ```
-
----
 
 #### Response
 
