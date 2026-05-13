@@ -22,9 +22,7 @@ accessPackageResource.setOriginId("/subscriptions/828b526f-c769-4b19-9797-734b48
 accessPackageResource.setOriginSystem("AzureResources");
 accessPackageResourceRole.setAccessPackageResource(accessPackageResource);
 accessPackageResourceRole.setOriginSystem("AzureResources");
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
-additionalData.put("type", "active");
-accessPackageResourceRole.setAdditionalData(additionalData);
+accessPackageResourceRole.setType(RoleType.Active);
 accessPackageResourceRoleScope.setAccessPackageResourceRole(accessPackageResourceRole);
 AccessPackageResourceScope accessPackageResourceScope = new AccessPackageResourceScope();
 accessPackageResourceScope.setId("c66c1e22-1093-46fb-a8a8-c0e334113ca4");

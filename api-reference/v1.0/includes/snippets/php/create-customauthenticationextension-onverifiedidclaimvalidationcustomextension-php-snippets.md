@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\GraphServiceClient;
-use Microsoft\Graph\Generated\Models\CustomAuthenticationExtension;
+use Microsoft\Graph\Generated\Models\OnVerifiedIdClaimValidationCustomExtension;
 use Microsoft\Graph\Generated\Models\HttpRequestEndpoint;
 use Microsoft\Graph\Generated\Models\AzureAdTokenAuthentication;
 use Microsoft\Graph\Generated\Models\CustomExtensionClientConfiguration;
@@ -15,7 +15,7 @@ use Microsoft\Graph\Generated\Models\CustomExtensionBehaviorOnError;
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestBody = new CustomAuthenticationExtension();
+$requestBody = new OnVerifiedIdClaimValidationCustomExtension();
 $requestBody->setOdataType('#microsoft.graph.onVerifiedIdClaimValidationCustomExtension');
 $requestBody->setDisplayName('Verified ID Claim Validation');
 $requestBody->setDescription('Validate claims from a Verified ID presentation');

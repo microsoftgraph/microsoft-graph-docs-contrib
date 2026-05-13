@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Reprovision a specific Cloud PC.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 

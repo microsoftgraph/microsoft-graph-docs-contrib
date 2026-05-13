@@ -54,7 +54,7 @@ maintain their previous values or be recalculated based on changes to other prop
 ## Response
 If successful, this method returns a `200 OK` response code and updated [messageRule](../resources/messagerule.md) object in the response body.
 ## Example
-##### Request
+### Request
 The following example changes the name of the rule, and the actions to be taken for that rule in the
 [example](messagerule-get.md#example) in [Get rule](messagerule-get.md), from forwarding to an address to marking its importance as high.
 
@@ -106,7 +106,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

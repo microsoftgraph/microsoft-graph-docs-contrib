@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get the scheduled apply rule set on the policy. `Frontline shared` only. Administrators only.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 

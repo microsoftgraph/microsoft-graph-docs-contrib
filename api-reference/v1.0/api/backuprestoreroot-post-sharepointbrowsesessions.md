@@ -1,0 +1,132 @@
+---
+title: "Create sharePointBrowseSession"
+description: "Create a new sharePointBrowseSession object."
+author: "rahulprasad-ms"
+ms.date: 04/15/2026
+ms.localizationpriority: medium
+ms.subservice: "m365-backup-storage"
+doc_type: apiPageType
+---
+
+# Create sharePointBrowseSession
+
+Namespace: microsoft.graph
+
+Create a new [sharePointBrowseSession](../resources/sharepointbrowsesession.md) object.
+
+## Permissions
+
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "backuprestoreroot_post_sharepointbrowsesessions" } -->
+[!INCLUDE [permissions-table](../includes/permissions/backuprestoreroot-post-sharepointbrowsesessions-permissions.md)]
+
+[!INCLUDE [rbac-backuprestore-browse-granular-apis](../includes/rbac-for-apis/rbac-backuprestore-browse-granular-apis.md)]
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /solutions/backupRestore/sharePointBrowseSessions
+```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
+
+## Request body
+
+In the request body, supply a JSON representation of the [sharePointBrowseSession](../resources/sharepointbrowsesession.md) object.
+
+You can specify the following properties when you create a **sharePointBrowseSession**.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|restorePointId|String|The ID of the [restorePoint](../resources/restorepoint.md) on which the user wants to create a browse session. Required.|
+
+## Response
+
+If successful, this method returns a `201 Created` response code and a [sharePointBrowseSession](../resources/sharepointbrowsesession.md) object in the response body.
+
+## Examples
+
+### Request
+
+The following example shows a request.
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_sharepointbrowsesession_from_"
+}
+-->
+``` http
+POST https://graph.microsoft.com/v1.0/solutions/backupRestore/sharePointBrowseSessions
+Content-Type: application/json
+
+{
+  "restorePointId": "TXpSbE5HUXpNR1l0TldZMFlpMDBNMk16TFdFeFl6WXRZall3TTJFeFl6Sm1OV000WHpFPV8xNzQ5NTY3MDAwXzE0XzE="
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-sharepointbrowsesession-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-sharepointbrowsesession-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-sharepointbrowsesession-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-sharepointbrowsesession-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-sharepointbrowsesession-from--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-sharepointbrowsesession-from--powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-sharepointbrowsesession-from--python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.sharePointBrowseSession"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#solutions/backupRestore/sharePointBrowseSessions/$entity",
+    "id": "m_RtZ8BiiUXOK69cuN6gwubfm9_yeVlDg8s6hci01_cVOAE",
+    "restorePointDateTime": "2026-01-18T03:00:15Z",
+    "status": "created",
+    "createdDateTime": "2026-01-20T10:42:27Z",
+    "expirationDateTime": "2026-01-23T10:42:24Z",
+    "backupSizeInBytes": "584316",
+    "siteId": "f3846f8d-80a6-4480-ae20-5966ebdf2009"
+}
+```
+

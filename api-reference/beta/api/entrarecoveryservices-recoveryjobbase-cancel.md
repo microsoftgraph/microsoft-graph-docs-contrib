@@ -90,6 +90,10 @@ POST https://graph.microsoft.com/beta/directory/recovery/jobs/3f4a6b60-7c1e-4e7c
 [!INCLUDE [sample-code](../includes/snippets/php/recoveryjobbase-cancel-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/recoveryjobbase-cancel-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/recoveryjobbase-cancel-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

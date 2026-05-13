@@ -26,12 +26,7 @@ var requestBody = new AccessPackageResourceRoleScope
 			OriginSystem = "AzureResources",
 		},
 		OriginSystem = "AzureResources",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"type" , "active"
-			},
-		},
+		Type = RoleType.Active,
 	},
 	AccessPackageResourceScope = new AccessPackageResourceScope
 	{

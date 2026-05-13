@@ -720,8 +720,6 @@ items:
         href: onenote-input-output-html.md
       - name: Best practices
         href: onenote-best-practices.md
-      - name: Branding guidelines
-        href: onenote-branding.md
       - name: Error codes
         href: onenote-error-codes.md
   - name: Notifications (deprecated)

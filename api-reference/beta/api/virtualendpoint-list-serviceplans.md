@@ -18,7 +18,7 @@ List the currently available service plans that an organization can purchase for
 
 For examples of currently available service plans, see [Windows 365 compare plans and pricing](https://www.microsoft.com/windows-365/business/compare-plans-pricing). Currently, Microsoft Graph API is available for Windows 365 Enterprise.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 
