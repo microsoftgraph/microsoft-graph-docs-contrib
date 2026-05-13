@@ -440,6 +440,10 @@ items:
         href: ../../api/auditlogroot-getsummarizednoninteractivesignins.md
       - name: Get summarized service principal sign-ins
         href: ../../api/auditlogroot-getsummarizedserviceprincipalsignins.md
+    - name: Complex types
+      items:
+      - name: Token protection status details
+        href: ../../resources/tokenprotectionstatusdetails.md
 - name: Monitoring reports (preview)
   items:
   - name: Overview

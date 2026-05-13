@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 com.microsoft.graph.models.identitygovernance.TaskProcessingResultCollectionResponse result = graphClient.identityGovernance().lifecycleWorkflows().workflows().byWorkflowId("{workflow-id}").runs().byRunId("{run-id}").taskProcessingResults().get(requestConfiguration -> {
-	requestConfiguration.queryParameters.select = new String []{"id", "failureReason", "processingStatus", "subject"};
+	requestConfiguration.queryParameters.select = new String []{"id", "failureReason", "processingStatus", "subject", "task"};
 });
 
 

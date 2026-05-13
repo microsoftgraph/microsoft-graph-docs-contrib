@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 List the properties and relationships of the [cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) objects.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 

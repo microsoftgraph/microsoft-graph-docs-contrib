@@ -49,14 +49,14 @@ If successful, this method returns a `201 No Content` response code. It does not
 
 ## Example
 
-##### Request
+### Request
 The following example shows a request.
 
 ```http
 DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
 ```
 
-##### Response
+### Response
 The following example shows the response.
 <!-- {
   "blockType": "response",

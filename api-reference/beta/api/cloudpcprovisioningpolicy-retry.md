@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Retry the provisioning operation for Cloud PCs that used the current frontline shared policy and failed to apply the [provisioning policy](../resources/cloudpcprovisioningpolicy.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 

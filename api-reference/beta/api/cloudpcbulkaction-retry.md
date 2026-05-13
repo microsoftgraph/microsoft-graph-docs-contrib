@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retry a [cloudPcBulkAction](../resources/cloudpcbulkaction.md) object with selected Cloud PCs. 
+Retry a [cloudPcBulkAction](../resources/cloudpcbulkaction.md) object with selected Cloud PCs.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 
 ```http
-POST /deviceManagement/virtualEndpoint/bulkAction/{id}/retry
+POST /deviceManagement/virtualEndpoint/bulkActions/{id}/retry
 ```
 
 ## Request headers
@@ -69,7 +69,7 @@ The following example shows a request.
 }
 -->
 ```http
-POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/bulkAction/0d76d02b-e0a0-4f58-baff-d1718cc2d144/retry
+POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/bulkActions/0d76d02b-e0a0-4f58-baff-d1718cc2d144/retry
 Content-Type: application/json
 
 {

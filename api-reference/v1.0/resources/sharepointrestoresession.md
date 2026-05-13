@@ -24,6 +24,7 @@ Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 |:---|:---|:---|
 |[Create](../api/backuprestoreroot-post-sharepointrestoresessions.md)|[sharePointRestoreSession](../resources/sharepointrestoresession.md)|Create a new [sharePointRestoreSession](../resources/sharepointrestoresession.md).|
 |[List](../api/sharepointrestoresession-list-siterestoreartifacts.md)|[siteRestoreArtifact](../resources/siterestoreartifact.md) collection|List the [siteRestoreArtifact](../resources/siterestoreartifact.md) objects for a [sharePointRestoreSession](../resources/sharepointrestoresession.md) for the tenant.|
+|[List granularSiteRestoreArtifacts](../api/sharepointrestoresession-list-granularsiterestoreartifacts.md)|[granularSiteRestoreArtifact](../resources/granularsiterestoreartifact.md) collection|Get a list of the [granularSiteRestoreArtifact](../resources/granularsiterestoreartifact.md) objects and their properties.|
 |[Update](../api/sharepointrestoresession-update.md)|[sharePointRestoreSession](../resources/sharepointrestoresession.md)|Update the properties of a [sharePointRestoreSession](../resources/sharepointrestoresession.md) object.|
 
 ## Properties
@@ -57,6 +58,7 @@ Inherits from [restoreSessionBase](../resources/restoresessionbase.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
+|granularSiteRestoreArtifacts|[granularSiteRestoreArtifact](../resources/granularsiterestoreartifact.md) collection|A collection of browse session ID and item key details that can be used to restore SharePoint files and folders.|
 |siteRestoreArtifacts|[siteRestoreArtifact](../resources/siterestoreartifact.md) collection|A collection of restore points and destination details that can be used to restore SharePoint sites.|
 |siteRestoreArtifactsBulkAdditionRequests|[siteRestoreArtifactsBulkAdditionRequest](../resources/siterestoreartifactsbulkadditionrequest.md) collection|A collection of SharePoint site URLs and destination details that can be used to restore SharePoint sites.|
 

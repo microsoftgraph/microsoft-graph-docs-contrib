@@ -53,7 +53,7 @@ Do not supply a request body.
 If successful, this method returns a `200 OK` response code and an array of [accessReview](../resources/accessreview.md) objects in the response body.
 
 ## Examples
-##### Request
+### Request
 The following example shows a request to retrieve all the one-time and recurring access reviews for a business flow template '6e4f3d20-c5c3-407f-9695-8460952bcc68'.
 
 # [HTTP](#tab/http)
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/beta/accessReviews?$filter=businessFlowTemplateI
 
 ---
 
-##### Response
+### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

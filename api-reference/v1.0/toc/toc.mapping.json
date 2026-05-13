@@ -13,7 +13,8 @@
       "overview": "../../resources/groups-overview.md",
       "resources": [
         "group",
-        "groupLifecyclePolicy"
+        "groupLifecyclePolicy",
+        "ownerlessGroupPolicy"
       ]
     },
     {
@@ -161,6 +162,14 @@
           ],
           "childNodes": [
             {
+              "name": "Browse session",
+              "overview": "../../resources/browsesessionbase.md",
+              "resources": [
+                "oneDriveForBusinessBrowseSession",
+                "sharePointBrowseSession"
+              ]
+            },
+            {
               "name": "Protection policy",
               "resources": [
                 "exchangeProtectionPolicy",
@@ -197,8 +206,10 @@
               "resources": [
                 "granularMailBoxRestoreArtifact",
                 "driveRestoreArtifact",
+                "granularDriveRestoreArtifact",
                 "mailboxRestoreArtifact",
-                "siteRestoreArtifact"
+                "siteRestoreArtifact",
+                "granularSiteRestoreArtifact"
               ]
             },
             {
@@ -220,6 +231,7 @@
           ],
           "complexTypes": [
             "artifactQuery",
+            "browseQueryResponseItem",
             "restorePointSearchResponse",
             "restorePointSearchResult",
             "retentionSetting",
@@ -1695,7 +1707,18 @@
           ],
           "complexTypes": [
             "microsoft.graph.security.aiAgentEvidence",
+            "microsoft.graph.security.dnsEvidence",
+            "microsoft.graph.security.fileHashEvidence",
+            "microsoft.graph.security.gitHubOrganizationEvidence",
+            "microsoft.graph.security.gitHubRepoEvidence",
+            "microsoft.graph.security.gitHubUserEvidence",
+            "microsoft.graph.security.hostLogonSessionEvidence",
+            "microsoft.graph.security.malwareEvidence",
+            "microsoft.graph.security.networkConnectionEvidence",
+            "microsoft.graph.security.sasTokenEvidence",
             "microsoft.graph.security.securityGroupEvidence",
+            "microsoft.graph.security.servicePrincipalEvidence",
+            "microsoft.graph.security.submissionMailEvidence",
             "microsoft.graph.security.teamsMessageEvidence",
             "microsoft.graph.security.userAccount"
           ]

@@ -6,13 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
-from msgraph_beta.generated.models.custom_authentication_extension import CustomAuthenticationExtension
+from msgraph_beta.generated.models.on_verified_id_claim_validation_custom_extension import OnVerifiedIdClaimValidationCustomExtension
 from msgraph_beta.generated.models.http_request_endpoint import HttpRequestEndpoint
 from msgraph_beta.generated.models.azure_ad_token_authentication import AzureAdTokenAuthentication
 from msgraph_beta.generated.models.custom_extension_client_configuration import CustomExtensionClientConfiguration
 from msgraph_beta.generated.models.custom_extension_behavior_on_error import CustomExtensionBehaviorOnError
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
-request_body = CustomAuthenticationExtension(
+request_body = OnVerifiedIdClaimValidationCustomExtension(
 	odata_type = "#microsoft.graph.onVerifiedIdClaimValidationCustomExtension",
 	display_name = "Verified ID Claim Validation",
 	description = "Validate claims from a Verified ID presentation",
