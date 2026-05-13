@@ -3,6 +3,112 @@
     {
       "ChangeList": [
         {
+          "Id": "24fc1539-9c94-46ea-b2c9-2dff1e63d133",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityCorrelation",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityCorrelation](https://learn.microsoft.com/en-us/graph/api/resources/identitycorrelation?view=graph-rest-beta) resource.",
+          "Target": "identityCorrelation"
+        },
+        {
+          "Id": "24fc1539-9c94-46ea-b2c9-2dff1e63d133",
+          "ApiChange": "Resource",
+          "ChangedApiName": "correlatedIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [correlatedIdentity](https://learn.microsoft.com/en-us/graph/api/resources/correlatedidentity?view=graph-rest-beta) resource.",
+          "Target": "correlatedIdentity"
+        },
+        {
+          "Id": "24fc1539-9c94-46ea-b2c9-2dff1e63d133",
+          "ApiChange": "Resource",
+          "ChangedApiName": "correlationError",
+          "ChangeType": "Addition",
+          "Description": "Added the [correlationError](https://learn.microsoft.com/en-us/graph/api/resources/correlationerror?view=graph-rest-beta) resource.",
+          "Target": "correlationError"
+        },
+        {
+          "Id": "24fc1539-9c94-46ea-b2c9-2dff1e63d133",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityInfo](https://learn.microsoft.com/en-us/graph/api/resources/identityinfo?view=graph-rest-beta) resource.",
+          "Target": "identityInfo"
+        },
+        {
+          "Id": "24fc1539-9c94-46ea-b2c9-2dff1e63d133",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attributeInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [attributeInfo](https://learn.microsoft.com/en-us/graph/api/resources/attributeinfo?view=graph-rest-beta) resource.",
+          "Target": "attributeInfo"
+        },
+        {
+          "Id": "24fc1539-9c94-46ea-b2c9-2dff1e63d133",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "correlations",
+          "ChangeType": "Addition",
+          "Description": "Added the **correlations** relationship to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportroot?view=graph-rest-beta) resource.",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "24fc1539-9c94-46ea-b2c9-2dff1e63d133",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "identities",
+          "ChangeType": "Addition",
+          "Description": "Added the **identities** relationship to the [identityCorrelation](https://learn.microsoft.com/en-us/graph/api/resources/identitycorrelation?view=graph-rest-beta) resource.",
+          "Target": "identityCorrelation"
+        },
+        {
+          "Id": "24fc1539-9c94-46ea-b2c9-2dff1e63d133",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "servicePrincipal",
+          "ChangeType": "Addition",
+          "Description": "Added the **servicePrincipal** relationship to the [identityCorrelation](https://learn.microsoft.com/en-us/graph/api/resources/identitycorrelation?view=graph-rest-beta) resource.",
+          "Target": "identityCorrelation"
+        },
+        {
+          "Id": "24fc1539-9c94-46ea-b2c9-2dff1e63d133",
+          "ApiChange": "Method",
+          "ChangedApiName": "List identityCorrelation objects",
+          "ChangeType": "Addition",
+          "Description": "Added the [List identityCorrelation objects](https://learn.microsoft.com/en-us/graph/api/reportroot-list-correlations?view=graph-rest-beta) method to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportroot?view=graph-rest-beta) resource.",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "24fc1539-9c94-46ea-b2c9-2dff1e63d133",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get identityCorrelation",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get identityCorrelation](https://learn.microsoft.com/en-us/graph/api/identitycorrelation-get?view=graph-rest-beta) method to the [identityCorrelation](https://learn.microsoft.com/en-us/graph/api/resources/identitycorrelation?view=graph-rest-beta) resource.",
+          "Target": "identityCorrelation"
+        },
+        {
+          "Id": "24fc1539-9c94-46ea-b2c9-2dff1e63d133",
+          "ApiChange": "Method",
+          "ChangedApiName": "List correlatedIdentity objects",
+          "ChangeType": "Addition",
+          "Description": "Added the [List correlatedIdentity objects](https://learn.microsoft.com/en-us/graph/api/identitycorrelation-list-identities?view=graph-rest-beta) method to the [identityCorrelation](https://learn.microsoft.com/en-us/graph/api/resources/identitycorrelation?view=graph-rest-beta) resource.",
+          "Target": "identityCorrelation"
+        },
+        {
+          "Id": "24fc1539-9c94-46ea-b2c9-2dff1e63d133",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get correlatedIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get correlatedIdentity](https://learn.microsoft.com/en-us/graph/api/correlatedidentity-get?view=graph-rest-beta) method to the [correlatedIdentity](https://learn.microsoft.com/en-us/graph/api/resources/correlatedidentity?view=graph-rest-beta) resource.",
+          "Target": "correlatedIdentity"
+        }
+      ],
+      "Id": "24fc1539-9c94-46ea-b2c9-2dff1e63d133",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-05-13T17:21:58.6220841Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b3c7e1a4-5f92-4d8b-a6e3-9c1d2f4b7a80",
           "ApiChange": "Resource",
           "ChangedApiName": "azureADPremiumLicenseInsight",

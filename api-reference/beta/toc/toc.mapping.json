@@ -2793,6 +2793,18 @@
                 "signInEventsAppActivity",
                 "summarizedSignIn"
               ]
+            },
+            {
+              "name": "Identity correlation reports (preview)",
+              "resources": [
+                "identityCorrelation",
+                "correlatedIdentity"
+              ],
+              "complexTypes": [
+                "attributeInfo",
+                "correlationError",
+                "identityInfo"
+              ]
             }
           ]
         },
