@@ -14,8 +14,11 @@ ms.date: 08/06/2024
 Namespace: microsoft.graph
 
 Represents the current user settings for content discovery. The user's preferences apply to the following resources:
+- [Exchange settings](../resources/exchangesettings.md)
 - [Item insights](../resources/officegraphinsights.md)
 - [Work hours and locations](../resources/workhoursandlocationssetting.md)
+
+Access the user's [Exchange settings](../resources/exchangesettings.md). Get a list of Exchange settings, including mailboxes that belong to a user.
 
 Export users' Windows settings and values stored in a cloud:
   - Get a list of the user's [windowsSetting](../resources/windowssetting.md) objects.
@@ -42,6 +45,7 @@ This resource supports:
 |:---------------|:--------|:----------|
 |[Get settings](../api/usersettings-get.md) |[userSettings](../resources/usersettings.md)| Get the user and organization settings. |
 |[Update settings](../api/usersettings-update.md) |[userSettings](../resources/usersettings.md)| Update the user current settings. |
+|[List Exchange settings](../api/usersettings-list-exchange.md)|[exchangeSettings](../resources/exchangesettings.md) collection|Get a list of Exchange mailboxes that belong to a user.|
 |[List Windows settings](../api/usersettings-list-windows.md)|[windowsSetting](../resources/windowssetting.md) collection|Get the **windowsSetting** objects and their properties for the signed in user.|
 |[Get work hours and locations](../api/workhoursandlocationssetting-get.md)|[workHoursAndLocationsSetting](workhoursandlocationssetting.md)|Get the properties and relationships of your own [workHoursAndLocationsSetting](../resources/workhoursandlocationssetting.md).|
 
@@ -58,6 +62,7 @@ This resource supports:
 
 | Relationship | Type | Description |
 |:---------------|:--------|:----------|
+|exchange|[exchangeSettings](../resources/exchangesettings.md)|The Exchange settings for mailbox discovery.|
 |itemInsights|[userInsightsSettings](userinsightssettings.md)| The user's settings for the visibility of meeting hour insights, and insights derived between a user and other items in Microsoft 365, such as documents or sites. [Get userInsightsSettings](../api/userinsightssettings-get.md) through this navigation property. |
 |windows|[windowsSetting](../resources/windowssetting.md) collection|The Windows settings of the user stored in the cloud.|
 |workHoursAndLocations|[workHoursAndLocationsSetting](workhoursandlocationssetting.md)| The user's settings for work hours and location preferences for scheduling and availability management. |

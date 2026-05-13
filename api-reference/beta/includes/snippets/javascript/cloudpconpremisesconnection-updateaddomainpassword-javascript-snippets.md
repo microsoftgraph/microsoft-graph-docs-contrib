@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const updateAdDomainPassword = {
-  adDomainPassword: 'AdDomainPassword value'
+  adDomainPassword: 'AdDomainPassword_XXXX'
 };
 
-await client.api('/deviceManagement/virtualEndpoint/onPremisesConnections/{Id}/UpdateAdDomainPassword')
+await client.api('/deviceManagement/virtualEndpoint/onPremisesConnections/07f12770-a225-4957-9127-0d247cf4ffff/updateAdDomainPassword')
 	.version('beta')
 	.post(updateAdDomainPassword);
 

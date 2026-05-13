@@ -47,7 +47,7 @@ If a user's OneDrive isn't provisioned but the user has a license to use OneDriv
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET https://graph.microsoft.com/v1.0/users/{idOrUserPrincipalName}/drive
+GET /users/{idOrUserPrincipalName}/drive
 ```
 
 #### Path parameters

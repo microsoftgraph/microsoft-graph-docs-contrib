@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a [sharePointGro
 
 ### Example 1: Get a sharePointGroup by ID 
 
-The following example shows how to get a **sharePointGroup** identified by `10` that is local to a **fileStorageContainer** identified by `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`.
+The following example shows how to get a **sharePointGroup** identified by `ZGYwZTEzYTgtOTExOS00MjdmLWEzNjktOTdjOWM3YjNlYjcyXzE0` that is local to a **fileStorageContainer** identified by `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`.
 
 #### Request
 
@@ -72,7 +72,7 @@ The following example shows a request.
   "name": "get_sharepointgroup_1"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/10
+GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/ZGYwZTEzYTgtOTExOS00MjdmLWEzNjktOTdjOWM3YjNlYjcyXzE0
 ```
 
 # [C#](#tab/csharp)
@@ -116,15 +116,16 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.sharePointGroup",
-  "id" : "10",
+  "id" : "ZGYwZTEzYTgtOTExOS00MjdmLWEzNjktOTdjOWM3YjNlYjcyXzE0",
   "title": "Sample Group",
-  "description": "This is sample description"
+  "description": "This is sample description",
+  "principalId": "10"
 }
 ```
 
 ### Example 2: Attempt to get a sharePointGroup by ID 
 
-The following example attempts to get a **sharePointGroup** identified by `12` that is local to a **fileStorageContainer** identified by `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`; however, the group doesn't exist in the container.
+The following example attempts to get a **sharePointGroup** identified by `ZGYwZTEzYTgtOTExOS00MjdmLWEzNjktOTdjOWM3YjNlYjcyXzE1` that is local to a **fileStorageContainer** identified by `b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z`; however, the group doesn't exist in the container.
 
 #### Request
 
@@ -136,7 +137,7 @@ The following example shows a request.
   "name": "get_sharepointgroup_2"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/12
+GET https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/sharePointGroups/ZGYwZTEzYTgtOTExOS00MjdmLWEzNjktOTdjOWM3YjNlYjcyXzE1
 ```
 
 # [C#](#tab/csharp)

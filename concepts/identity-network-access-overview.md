@@ -27,7 +27,7 @@ Some Microsoft Entra ID capabilities that you can integrate to your apps using M
 - **User management** - Look up and manage user profiles, license assignment, memberships, and privileges in the tenant. Manage organizational relationships, track assignments, or create original solutions that incorporate existing organizational data. Manage authentication methods for users.
 - **Group management** - Create groups to manage users and control access to resources. Use administrative units to organize groups, users, and devices for easier management and delegated administration.
 - **Application management** - Register cloud applications, manage application permissions and privileges, and users who can sign in. Provide secure remote access to on-premises applications.
-- **Agent management** - Manage the complete lifecycle of agents in your organization, including creation, discovery, management, governance, security rule enforcement, risk detection, and activity auditing.
+- **Agent management** - Manage the complete lifecycle of agents in your organization, including creation, discovery, management, governance, security rule enforcement, risk detection, and activity auditing. For more information, see [Microsoft Entra Agent ID APIs in Microsoft Graph overview](/graph/api/resources/agentid-platform-overview).
 - **Device management** - Register and manage devices in your organization.
 - Manage **administrative roles**, which grant permission to perform specific tasks.
 - Automatically provision and manage user identities and roles to other SaaS apps that users need to access.

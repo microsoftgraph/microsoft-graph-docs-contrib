@@ -59,7 +59,7 @@ If successful, this method returns `201 Created` response code and a [message](.
 
 Here is an example of how to call this API.
 
-##### Request
+### Request
 
 The following example shows a request.
 
@@ -108,7 +108,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 
 The following example shows the response.
 

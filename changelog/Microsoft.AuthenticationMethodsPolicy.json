@@ -3,6 +3,64 @@
     {
       "ChangeList": [
         {
+          "Id": "a1291988-4148-44c0-81e7-a5ec3c74c7c0",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "x509CertificateIssuerHintsState",
+          "ChangeType": "Addition",
+          "Description": "Added the **x509CertificateIssuerHintsState** enumeration type.",
+          "Target": "x509CertificateIssuerHintsState"
+        },
+        {
+          "Id": "a1291988-4148-44c0-81e7-a5ec3c74c7c0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "includeTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [includeTarget](https://learn.microsoft.com/en-us/graph/api/resources/includeTarget?view=graph-rest-1.0) resource.",
+          "Target": "includeTarget"
+        },
+        {
+          "Id": "a1291988-4148-44c0-81e7-a5ec3c74c7c0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "x509CertificateAuthorityScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [x509CertificateAuthorityScope](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateAuthorityScope?view=graph-rest-1.0) resource.",
+          "Target": "x509CertificateAuthorityScope"
+        },
+        {
+          "Id": "a1291988-4148-44c0-81e7-a5ec3c74c7c0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "x509CertificateIssuerHintsConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [x509CertificateIssuerHintsConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateIssuerHintsConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "x509CertificateIssuerHintsConfiguration"
+        },
+        {
+          "Id": "a1291988-4148-44c0-81e7-a5ec3c74c7c0",
+          "ApiChange": "Property",
+          "ChangedApiName": "certificateAuthorityScopes",
+          "ChangeType": "Addition",
+          "Description": "Added the **certificateAuthorityScopes** property to the [x509CertificateAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateAuthenticationMethodConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "x509CertificateAuthenticationMethodConfiguration"
+        },
+        {
+          "Id": "a1291988-4148-44c0-81e7-a5ec3c74c7c0",
+          "ApiChange": "Property",
+          "ChangedApiName": "issuerHintsConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **issuerHintsConfiguration** property to the [x509CertificateAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateAuthenticationMethodConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "x509CertificateAuthenticationMethodConfiguration"
+        }
+      ],
+      "Id": "a1291988-4148-44c0-81e7-a5ec3c74c7c0",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-05-07T19:11:23.3967948Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "d7bfd87d-b5a0-42e9-9707-6eec3ecd7d39",
           "ApiChange": "Enumeration",
           "ChangedApiName": "attestationEnforcement",

@@ -20,7 +20,7 @@ isUploadDone := true
 requestBody.SetIsUploadDone(&isUploadDone) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
-uploadSessions, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogs().ByAccessPackageCatalogId("accessPackageCatalog-id").AccessPackageResources().ByAccessPackageResourceId("accessPackageResource-id").UploadSessions().ByCustomDataProvidedResourceUploadSessionId("customDataProvidedResourceUploadSession-id").Patch(context.Background(), requestBody, nil)
+uploadSessions, err := graphClient.IdentityGovernance().Catalogs().ByAccessPackageCatalogId("accessPackageCatalog-id").AccessPackageResources().ByAccessPackageResourceId("accessPackageResource-id").UploadSessions().ByCustomDataProvidedResourceUploadSessionId("customDataProvidedResourceUploadSession-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

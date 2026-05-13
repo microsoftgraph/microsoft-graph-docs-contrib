@@ -82,6 +82,8 @@ items:
     href: ../../api/driveitem-invite.md
   - name: List permissions
     href: ../../api/driveitem-list-permissions.md
+  - name: Create permission
+    href: ../../api/driveitem-post-permissions.md
   - name: Delete permission
     href: ../../api/permission-delete.md
   - name: Get WebSocket channel
@@ -288,6 +290,36 @@ items:
     href: ../../resources/shareddriveitem.md
   - name: Use sharing links
     href: ../../api/shares-get.md
+- name: SharePoint group
+  items:
+  - name: SharePoint group
+    href: ../../resources/sharepointgroup.md
+  - name: List
+    href: ../../api/filestoragecontainer-list-sharepointgroups.md
+  - name: Create
+    href: ../../api/filestoragecontainer-post-sharepointgroups.md
+  - name: Get
+    href: ../../api/sharepointgroup-get.md
+  - name: Update
+    href: ../../api/sharepointgroup-update.md
+  - name: Delete
+    href: ../../api/filestoragecontainer-delete-sharepointgroups.md
+  - name: List SharePoint group members
+    href: ../../api/sharepointgroup-list-members.md
+  - name: Create SharePoint group member
+    href: ../../api/sharepointgroup-post-members.md
+- name: SharePoint group member
+  items:
+  - name: SharePoint group member
+    href: ../../resources/sharepointgroupmember.md
+  - name: List
+    href: ../../api/sharepointgroup-list-members.md
+  - name: Create
+    href: ../../api/sharepointgroup-post-members.md
+  - name: Get
+    href: ../../api/sharepointgroupmember-get.md
+  - name: Delete
+    href: ../../api/sharepointgroup-delete-members.md
 - name: SharePoint migration
   items:
   - name: Overview
@@ -336,3 +368,5 @@ items:
     href: ../../resources/filestoragecontainertyperegistrationsettings.md
   - name: File storage container type settings
     href: ../../resources/filestoragecontainertypesettings.md
+  - name: SharePoint group identity
+    href: ../../resources/sharepointgroupidentity.md

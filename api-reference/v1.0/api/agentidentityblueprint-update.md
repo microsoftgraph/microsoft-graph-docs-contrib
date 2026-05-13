@@ -27,6 +27,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 [!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]
 
+### Permissions for specific scenarios
+- The least privileged permission to update credential-related properties such as **keyCredentials** and **passwordCredentials** is *AgentIdentityBlueprint.AddRemoveCreds.All*.
+- The least privileged permission to update branding properties such as **displayName** and **description** is *AgentIdentityBlueprint.UpdateBranding.All*.
+- To update properties covered by both permission scopes, use the higher-privileged *AgentIdentityBlueprint.ReadWrite.All* permission.
+
 ## HTTP request
 
 <!-- {

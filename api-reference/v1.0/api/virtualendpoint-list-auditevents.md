@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 List all the [cloudPcAuditEvent](../resources/cloudpcauditevent.md) objects for the tenant.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 

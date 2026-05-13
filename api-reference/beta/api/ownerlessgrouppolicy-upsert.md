@@ -49,17 +49,17 @@ PATCH /policies/ownerlessGroupPolicy
 
 ## Request body
 
-In the request body, supply a JSON representation of the [ownerlessGroupPolicy](../resources/ownerlessgrouppolicy.md) object. All required properties must be provided for both create and update operations. The API performs a full replacement of the policy configuration. Unlike the admin portal, the API doesn't apply default values for any properties.
+In the request body, supply a JSON representation of the [ownerlessGroupPolicy](../resources/ownerlessgrouppolicy.md) object. For create operations and for update operations that enable the policy or change its configuration, all required properties must be provided because the API performs a full replacement of the policy configuration. To disable the policy, you can send only **isEnabled** set to `false`; when you do so, the service clears the values of all other policy parameters. Unlike the admin portal, the API doesn't apply default values for most properties, except for **targetOwners**, which defaults to allowing all members to become owners.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|emailInfo|[emailDetails](../resources/emaildetails.md)|The email notification details for the ownerless group policy. Required.|
-|enabledGroupIds|String collection|The collection of IDs for Microsoft 365 groups for which the policy is enabled. Required.|
-|isEnabled|Boolean|Indicates whether the ownerless group policy is enabled. Setting this property to `false` clears the values of all other policy parameters. Required.|
-|maxMembersToNotify|Int64|The maximum number of members to notify. Value range is 0-90. Required.|
-|notificationDurationInWeeks|Int64|The number of weeks for the notification duration. Value range is 1-7. Required.|
+|emailInfo|[emailDetails](../resources/emaildetails.md)|The email notification details for the ownerless group policy. Required when creating the policy or when enabling or updating the policy configuration.|
+|enabledGroupIds|String collection|The collection of IDs for Microsoft 365 groups for which the policy is enabled. If empty, the policy is enabled for all groups in the tenant. Required when creating the policy or when enabling or updating the policy configuration.|
+|isEnabled|Boolean|Indicates whether the ownerless group policy is enabled. Required. Setting this property to `false` clears the values of all other policy parameters; to disable the policy, you can send only this property with the value `false`.|
+|maxMembersToNotify|Int64|The maximum number of members to notify. Value range is 0-90. Required when creating the policy or when enabling or updating the policy configuration.|
+|notificationDurationInWeeks|Int64|The number of weeks for the notification duration. Value range is 1-7. Required when creating the policy or when enabling or updating the policy configuration.|
 |policyWebUrl|String|The URL to the policy documentation. Optional.|
-|targetOwners|[targetOwners](../resources/targetowners.md)|The criteria for selecting target owners. Required.|
+|targetOwners|[targetOwners](../resources/targetowners.md)|Specifies which members are eligible to become owners. If not specified, all members are eligible. Optional.|
 
 ## Response
 
@@ -130,6 +130,10 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
 [!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -218,6 +222,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/disable-ownerlessgrouppolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/disable-ownerlessgrouppolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

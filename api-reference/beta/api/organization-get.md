@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Example
 
-##### Request
+### Request
 
 The following example shows a request.
 
@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276be6
 
 ---
 
-##### Response
+### Response
 
 The following example shows the response. 
 >**Note:** The response object shown here might be shortened for readability.

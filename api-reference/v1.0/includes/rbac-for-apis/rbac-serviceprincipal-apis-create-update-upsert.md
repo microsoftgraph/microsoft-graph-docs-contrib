@@ -9,4 +9,9 @@ ms.topic: include
 > - For multitenant apps:
 >   - Application Administrator
 >   - Cloud Application Administrator
-> - For single-tenant apps where the calling user is a nonadmin user but is the owner of the backing application, the user must have the *Application Developer* role.
+> - For single-tenant apps where the calling user is a non-admin user but is the owner of the backing application, the user must have the *Application Developer* role.
+>
+>
+> In delegated scenarios using work or school accounts, the following privileges are supported for managing agent identities and agent identity blueprint principals:
+>  - The signed-in user is the owner, or
+>  - The signed-in user is assigned the *Agent ID Administrator* role.

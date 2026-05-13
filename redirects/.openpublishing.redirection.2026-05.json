@@ -1,0 +1,9 @@
+{
+  "redirections": [
+    {
+      "source_path_from_root": "/concepts/onenote-branding.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/integrate-with-onenote",
+      "redirect_document_id": false
+    }
+  ]
+}

@@ -50,7 +50,7 @@ Represents a list in a [site](site.md). This resource contains the top level pro
 | displayName          | String                            | The displayable title of the list.                                                                    |
 | eTag                 | String                            | ETag for the item. Inherited from [baseItem](baseitem.md).                                            |
 | id                   | String                            | The unique identifier of the item. Read-only. Inherited from [baseItem](baseitem.md).                 |
-| itemCount            | Int32                             | The number of items in the list. Read-only.                                                           |
+| itemCount            | Int32                             | The total count of items in the list. Read-only.                                                           |
 | lastModifiedBy       | [identitySet](identityset.md)     | Identity of the last modifier of this item. Read-only. Inherited from [baseItem](baseitem.md).        |
 | lastModifiedDateTime | DateTimeOffset                    | The date and time when the item was last modified. Read-only. Inherited from [baseItem](baseitem.md). |
 | list                 | [listInfo](listinfo.md)           | Contains more details about the list.                                                                 |
@@ -90,6 +90,7 @@ The following JSON representation shows the resource type.
   "displayName": "String",
   "eTag": "String",
   "id": "String (identifier)",
+  "itemCount": "Int32",
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "String (timestamp)",
   "list": { "@odata.type": "microsoft.graph.listInfo" },

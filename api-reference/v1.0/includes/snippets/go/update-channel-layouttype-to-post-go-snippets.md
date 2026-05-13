@@ -16,10 +16,8 @@ import (
 )
 
 requestBody := graphmodels.NewChannel()
-additionalData := map[string]interface{}{
-	"layoutType" : "post", 
-}
-requestBody.SetAdditionalData(additionalData)
+layoutType := graphmodels.POST_CHANNELLAYOUTTYPE 
+requestBody.SetLayoutType(&layoutType) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 channels, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").Patch(context.Background(), requestBody, nil)

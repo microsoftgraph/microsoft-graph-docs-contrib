@@ -1,11 +1,11 @@
 ---
 title: "cloudPcProvisioningPolicy resource type"
 description: "Represents a Cloud PC provisioning policy."
-author: "AshleyYangSZ"
+author: "danipocket"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
-ms.date: 09/25/2024
+ms.date: 05/05/2026
 ---
 
 # cloudPcProvisioningPolicy resource type
@@ -29,6 +29,9 @@ Represents a Cloud PC provisioning policy.
 |[Apply](../api/cloudpcprovisioningpolicy-apply.md)|None|Apply the current [provisioning policy](../resources/cloudpcprovisioningpolicy.md) configuration to all Cloud PC devices under a specified policy. Currently, you can only change the region.|
 |[Apply configuration](../api/cloudpcprovisioningpolicy-applyconfig.md)|None|Update the [provisioning policy](../resources/cloudpcprovisioningpolicy.md) configuration for a set of Cloud PC devices by their IDs.|
 |[Retry](../api/cloudpcprovisioningpolicy-retry.md)|None| Retry the provisioning operation for Cloud PCs that used the current frontline shared policy and failed to apply the [provisioning policy](../resources/cloudpcprovisioningpolicy.md).|
+|[Schedule policy apply task](../api/cloudpcprovisioningpolicy-schedulepolicyapplytask.md)|None|Schedule a policy apply task for a [provisioning policy](../resources/cloudpcprovisioningpolicy.md).|
+|[Retrieve policy apply action result](../api/cloudpcprovisioningpolicy-retrievepolicyapplyactionresult.md)|[cloudPcPolicyApplyActionResult](../resources/cloudpcpolicyapplyactionresult.md)|Retrieve the result of a policy apply action for a [provisioning policy](../resources/cloudpcprovisioningpolicy.md).|
+|[Retrieve policy apply schedule](../api/cloudpcprovisioningpolicy-retrievepolicyapplyschedule.md)|[cloudPcPolicyScheduledApplyActionDetail](../resources/cloudpcpolicyscheduledapplyactiondetail.md)|Retrieve the schedule for a policy apply action for a [provisioning policy](../resources/cloudpcprovisioningpolicy.md).|
 
 ## Properties
 
@@ -56,9 +59,10 @@ Represents a Cloud PC provisioning policy.
 |managedBy|[cloudPcManagementService](../resources/cloudpconpremisesconnection.md#cloudpcmanagementservice-values)|Indicates the service that manages the provisioning policy. The possible values are: `windows365`, `devBox`, `unknownFutureValue`, `rpaBox`, `microsoft365Opal`, `microsoft365BizChat`. The default value is `windows365`. Use the `Prefer: include-unknown-enum-members` request header to get the following members in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `rpaBox`. Supports `$filter`, `$select`, and `$orderBy`.|
 |microsoftManagedDesktop|[microsoftManagedDesktop](../resources/microsoftmanageddesktop.md)|The specific settings to **microsoftManagedDesktop** that enables Microsoft Managed Desktop customers to get device managed experience for Cloud PC. To enable **microsoftManagedDesktop** to provide more value, an admin needs to specify certain settings in it. Supports `$filter`, `$select`, and `$orderBy`.|
 |provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|Specifies the type of licenses to be used when provisioning Cloud PCs using this policy. The possible values are `dedicated`, `shared`, `unknownFutureValue`, `sharedByUser`, `sharedByEntraGroup`, `reserve`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `sharedByUser`, `sharedByEntraGroup`, `reserve`. The `shared` member is deprecated and will stop returning on April 30, 2027; going forward, use the `sharedByUser` member. For example, a `dedicated` service plan can be assigned to only one user and provision only one Cloud PC. The `shared` and `sharedByUser` plans require customers to purchase a shared service plan. Each shared license purchased can enable up to three Cloud PCs, with only one user signed in at a time. The `sharedByEntraGroup` plan also requires the purchase of a shared service plan. Each shared license under this plan can enable one Cloud PC, which is shared for the group according to the assignments of this policy. By default, the license type is `dedicated` if the **provisioningType** isn't specified when you create the **cloudPcProvisioningPolicy**. You can't change this property after the **cloudPcProvisioningPolicy** is created.|
+|scopeIds|String collection|The list of scope tag IDs for this resource. Read-only.|
 |userExperienceType|[cloudPcUserExperienceType](../resources/cloudpcprovisioningpolicy.md#cloudpcuserexperiencetype-values)|Specifies the type of cloud object the end user can access. The possible values are: `cloudPc`, `cloudApp`, `unknownFutureValue`. `cloudPc` indicates that the end user can access the entire desktop. `cloudApp` indicates that the end user can only access apps published under this provisioning policy. The type can't be changed once the provisioning policy is created. If not specified during creation, the default value is `cloudPc`. When `cloudApp` is selected, the **provisioningType** must be `sharedByEntraGroup`. Supports `$filter`, `$select`, `$orderBy`.|
-|windowsSetting|[cloudPcWindowsSettings](../resources/cloudpcwindowssetting.md)|Indicates a specific Windows setting to configure during the creation of Cloud PCs for this provisioning policy. Supports `$select`. |
 |userSettingsPersistenceConfiguration|[cloudPcUserSettingsPersistenceConfiguration](../resources/cloudpcusersettingspersistenceconfiguration.md)|Indicates specific settings that enable the persistence of user application settings between Cloud PC sessions. The default value is `null`. This feature is only available for Cloud PC provisioning policies of type `sharedByEntraGroup`. Supports `$select`. |
+|windowsSetting|[cloudPcWindowsSettings](../resources/cloudpcwindowssetting.md)|Indicates a specific Windows setting to configure during the creation of Cloud PCs for this provisioning policy. Supports `$select`. |
 |domainJoinConfiguration (deprecated)|[cloudPcDomainJoinConfiguration](../resources/cloudpcdomainjoinconfiguration.md)|Specifies how Cloud PCs join Microsoft Entra ID. The **domainJoinConfiguration** property is deprecated and will stop returning data on May 31, 2024. Going forward, use the **domainJoinConfigurations** property.|
 |onPremisesConnectionId (deprecated)|String|The ID of the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md). To ensure that Cloud PCs have network connectivity and that they domain join, choose a connection with a virtual network that the Cloud PC service validated it. The **onPremisesConnectionId** property is deprecated and will stop returning data on May 31, 2024. Going forward, use the **domainJoinConfigurations** property.|
 |windowsSettings (deprecated)|[cloudPcWindowsSettings](../resources/cloudpcwindowssettings.md)|Specific Windows settings to configure during the creation of Cloud PCs for this provisioning policy. Supports `$select`. The **windowsSettings** property is deprecated and will stop returning data on January 31, 2024. Going forward, use the **windowsSetting** property.|
@@ -129,6 +133,7 @@ The following JSON representation shows the resource type.
   "microsoftManagedDesktop": {"@odata.type": "microsoft.graph.microsoftManagedDesktop"},
   "onPremisesConnectionId": "String",
   "provisioningType": "String",
+  "scopeIds": ["String"],
   "userExperienceType": "String",
   "userSettingsPersistenceConfiguration": {"@odata.type": "microsoft.graph.cloudPcUserSettingsPersistenceConfiguration"},
   "windowsSetting": {"@odata.type": "microsoft.graph.cloudPcWindowsSetting"},

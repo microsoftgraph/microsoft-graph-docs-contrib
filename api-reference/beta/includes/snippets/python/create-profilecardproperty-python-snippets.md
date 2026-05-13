@@ -12,6 +12,7 @@ from msgraph_beta.generated.models.display_name_localization import DisplayNameL
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ProfileCardProperty(
 	directory_property_name = "CustomAttribute1",
+	is_visible = True,
 	annotations = [
 		ProfileCardAnnotation(
 			display_name = "Cost Center",

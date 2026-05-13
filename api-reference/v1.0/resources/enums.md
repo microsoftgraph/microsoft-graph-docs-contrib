@@ -3,7 +3,7 @@ title: "Enum values"
 description: "Microsoft Graph enumeration values."
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
-ms.date: 12/02/2025
+ms.date: 01/20/2026
 author: "MSGraphDocsvTeam"
 doc_type: enumPageType
 ms.custom: sfi-ropc-nochange
@@ -12,6 +12,15 @@ ms.custom: sfi-ropc-nochange
 # Enum values
 
 Namespace: microsoft.graph
+
+### notifyMembers values
+
+|Member|
+|:---|
+|all|
+|allowSelected|
+|blockSelected|
+|unknownFutureValue|
 
 ### readingCoachStoryType values
 
@@ -193,6 +202,14 @@ Namespace: microsoft.graph
 | additionalStepsRequired |
 | unknownFutureValue |
 
+### matchConfidenceLevel values
+
+|Member|
+|:---|
+|exact|
+|relaxed|
+|unknownFutureValue|
+
 ### appManagementRestrictionState values
 
 | Member |
@@ -233,6 +250,13 @@ Namespace: microsoft.graph
 |:---|
 |root|
 |intermediate|
+|unknownFutureValue|
+
+### claimBindingSource values
+
+|Member|
+|:---|
+|directory|
 |unknownFutureValue|
 
 ### courseStatus values
@@ -296,6 +320,14 @@ Namespace: microsoft.graph
 | group |
 | application |
 | unknownFutureValue |
+
+### multiFactorAuthConfiguration values
+
+| Member             | 
+| ------------------ | 
+| notRequired        | 
+| required           | 
+| unknownFutureValue | 
 
 ### multiTenantOrganizationMemberProcessingStatus values
 
@@ -854,6 +886,14 @@ Namespace: microsoft.graph
 | policyOID |
 | unknownFutureValue |
 
+### x509CertificateIssuerHintsState values
+
+| Member |
+| ---- |
+| disabled |
+| enabled |
+| unknownFutureValue |
+
 ### x509CertificateCRLValidationConfigurationState values
 
 | Member |
@@ -974,6 +1014,7 @@ Namespace: microsoft.graph
 | compliantApplication |
 | passwordChange |
 | unknownFutureValue |
+| riskRemediation |
 
 ### conditionalAccessClientApp values
 
@@ -1287,6 +1328,29 @@ Namespace: microsoft.graph
 | darkPink |
 | darkYellow |
 | unknownFutureValue |
+| darkRed |
+| cranberry |
+| darkOrange |
+| bronze |
+| peach |
+| gold |
+| lime |
+| forest |
+| lightGreen |
+| jade |
+| lightTeal |
+| darkTeal |
+| steel |
+| skyBlue |
+| blueGray |
+| lavender |
+| lilac |
+| plum |
+| magenta |
+| darkBrown |
+| beige |
+| charcoal |
+| silver |
 
 ### timeOffReasonIconType values
 
@@ -1917,29 +1981,6 @@ Possible values for user account types (group membership), per Windows definitio
 | standard      | 0      | Member of Standard Users group. |
 | power         | 1      | Member of Power Users group.    |
 | administrator | 2      | Member of Administrators group. |
-
-### riskDetail values
-
-| Member |
-| ----------------------------------------- |
-| none |
-| adminGeneratedTemporaryPassword |
-| userPerformedSecuredPasswordChange |
-| userPerformedSecuredPasswordReset |
-| adminConfirmedSigninSafe |
-| aiConfirmedSigninSafe |
-| userPassedMFADrivenByRiskBasedPolicy |
-| adminDismissedAllRiskForUser |
-| adminConfirmedSigninCompromised |
-| hidden |
-| adminConfirmedUserCompromised |
-| unknownFutureValue |
-| adminConfirmedServicePrincipalCompromised |
-| adminDismissedAllRiskForServicePrincipal |
-| m365DAdminDismissedDetection |
-| userChangedPasswordOnPremises |
-| adminDismissedRiskForSignIn |
-| adminConfirmedAccountSafe |
 
 ### riskEventTypes values
 
@@ -2988,6 +3029,46 @@ Possible values for user account types (group membership), per Windows definitio
 | mfa |
 | unknownFutureValue |
 
+### browsableResourceType values
+
+|Member|
+|:---|
+|none|
+|site|
+|documentLibrary|
+|folder|
+|unknownFutureValue|
+
+### browseQueryOrder values
+
+|Member|
+|:---|
+|pathAsc|
+|pathDsc|
+|nameAsc|
+|nameDsc|
+|unknownFutureValue|
+
+### browseQueryResponseItemType values
+
+|Member|
+|:---|
+|none|
+|site|
+|documentLibrary|
+|folder|
+|file|
+|unknownFutureValue|
+
+### browseSessionStatus values
+
+|Member|
+|:---|
+|creating|
+|created|
+|failed|
+|unknownFutureValue|
+
 ### browserSharedCookieSourceEnvironment values
 
 | Member |
@@ -3473,6 +3554,23 @@ Possible values for user account types (group membership), per Windows definitio
 | published |
 | canceled |
 
+### verifiedIdProfileState values
+
+|Member|
+|:---|
+|enabled|
+|disabled|
+|unknownFutureValue|
+
+### verifiedIdUsageConfigurationPurpose values
+
+|Member|
+|:---|
+|recovery|
+|onboarding|
+|all|
+|unknownFutureValue|
+
 ### socialIdentitySourceType values
 
 | Member |
@@ -3672,6 +3770,7 @@ Possible values for user account types (group membership), per Windows definitio
 |standard|
 |bulk|
 |unknownFutureValue|
+|granular|
 
 ### sharePointMigrationJobErrorLevel values
 
