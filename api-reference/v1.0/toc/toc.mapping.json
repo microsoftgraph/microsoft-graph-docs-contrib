@@ -13,7 +13,8 @@
       "overview": "../../resources/groups-overview.md",
       "resources": [
         "group",
-        "groupLifecyclePolicy"
+        "groupLifecyclePolicy",
+        "ownerlessGroupPolicy"
       ]
     },
     {

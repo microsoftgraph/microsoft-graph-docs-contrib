@@ -25,6 +25,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 - Added the [agentUser](/graph/api/resources/agentuser) resource type and related methods for managing the lifecycle of agent user identities.
 - Added [verifiedIdProfile](/graph/api/resources/verifiedidprofile) resources and related profile configuration for configuring Microsoft Entra Verified ID.
 
+### Groups
+
+Added the [ownerlessGroupPolicy](/graph/api/resources/ownerlessgrouppolicy) resource type and related methods to the v1.0 endpoint. Use this policy to configure actionable email notifications that prompt active members of ownerless Microsoft 365 groups to accept ownership when the sole owner leaves the organization or their account is disabled.
+
 ### Identity and access | Directory management
 
 Use the [deviceRegistrationPolicy](/graph/api/resources/deviceregistrationpolicy) resource type and its related methods to manage the policy that controls device registration quota restrictions, additional authentication, and authorization policies for your Microsoft Entra tenant.
@@ -113,7 +117,6 @@ Added support for `$expand` on the **items** relationship of [teamworkSection](/
 - Use the **height** and **width** parameters to [download a file in another format](/graph/api/driveitem-get-content-format) when `format=jpg`.
 - Use the [List activities](/graph/api/itemactivity-list) API to retrieve recent activities that took place on a [drive](/graph/api/resources/drive), [list](/graph/api/resources/list), item, or within an item hierarchy.
 - Added support for [sharePointGroup](/graph/api/resources/sharepointgroup) and its [members](/graph/api/resources/sharepointgroupmember) in a SharePoint Embedded container, enabling apps to work with SharePoint permission groups and manage their members.
-
 
 ### Identity and access | Governance
 

@@ -13,6 +13,15 @@ ms.custom: sfi-ropc-nochange
 
 Namespace: microsoft.graph
 
+### notifyMembers values
+
+|Member|
+|:---|
+|all|
+|allowSelected|
+|blockSelected|
+|unknownFutureValue|
+
 ### readingCoachStoryType values
 
 |Member|
