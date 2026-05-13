@@ -12,7 +12,6 @@ using Microsoft.Graph.Beta.Models;
 var requestBody = new ProfileCardProperty
 {
 	DirectoryPropertyName = "CustomAttribute1",
-	IsVisible = true,
 	Annotations = new List<ProfileCardAnnotation>
 	{
 		new ProfileCardAnnotation

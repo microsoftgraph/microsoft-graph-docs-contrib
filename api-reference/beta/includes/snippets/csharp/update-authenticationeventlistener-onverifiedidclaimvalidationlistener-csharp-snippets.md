@@ -8,27 +8,51 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
-var requestBody = new OnVerifiedIdClaimValidationListener
+var requestBody = new AuthenticationEventListener
 {
 	OdataType = "#microsoft.graph.onVerifiedIdClaimValidationListener",
 	DisplayName = "Verified ID Claim Validation Listener (updated)",
-	Handler = new OnVerifiedIdClaimValidationCustomExtensionHandler
+	AdditionalData = new Dictionary<string, object>
 	{
-		OdataType = "#microsoft.graph.onVerifiedIdClaimValidationCustomExtensionHandler",
-		Configuration = new CustomExtensionOverwriteConfiguration
 		{
-			OdataType = "#microsoft.graph.customExtensionOverwriteConfiguration",
-			ClientConfiguration = new CustomExtensionClientConfiguration
+			"handler" , new UntypedObject(new Dictionary<string, UntypedNode>
 			{
-				OdataType = "#microsoft.graph.customExtensionClientConfiguration",
-				MaximumRetries = 1,
-				TimeoutInMilliseconds = 2000,
-			},
-			BehaviorOnError = new CustomExtensionBehaviorOnError
-			{
-				OdataType = "#microsoft.graph.customExtensionBehaviorOnError",
-			},
+				{
+					"@odata.type", new UntypedString("#microsoft.graph.onVerifiedIdClaimValidationCustomExtensionHandler")
+				},
+				{
+					"configuration", new UntypedObject(new Dictionary<string, UntypedNode>
+					{
+						{
+							"@odata.type", new UntypedString("#microsoft.graph.customExtensionOverwriteConfiguration")
+						},
+						{
+							"clientConfiguration", new UntypedObject(new Dictionary<string, UntypedNode>
+							{
+								{
+									"@odata.type", new UntypedString("#microsoft.graph.customExtensionClientConfiguration")
+								},
+								{
+									"maximumRetries", new UntypedString("1")
+								},
+								{
+									"timeoutInMilliseconds", new UntypedString("2000")
+								},
+							})
+						},
+						{
+							"behaviorOnError", new UntypedObject(new Dictionary<string, UntypedNode>
+							{
+								{
+									"@odata.type", new UntypedString("#microsoft.graph.customExtensionBehaviorOnError")
+								},
+							})
+						},
+					})
+				},
+			})
 		},
 	},
 };

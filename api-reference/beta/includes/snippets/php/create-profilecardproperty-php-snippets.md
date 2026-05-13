@@ -15,7 +15,6 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ProfileCardProperty();
 $requestBody->setDirectoryPropertyName('CustomAttribute1');
-$requestBody->setIsVisible(true);
 $annotationsProfileCardAnnotation1 = new ProfileCardAnnotation();
 $annotationsProfileCardAnnotation1->setDisplayName('Cost Center');
 $localizationsDisplayNameLocalization1 = new DisplayNameLocalization();

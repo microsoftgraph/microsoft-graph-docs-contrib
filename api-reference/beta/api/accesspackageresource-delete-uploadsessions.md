@@ -100,6 +100,7 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/catalogs/{catalogId}/
 
 ---
 
+
 ### Response
 
 The following example shows the response.

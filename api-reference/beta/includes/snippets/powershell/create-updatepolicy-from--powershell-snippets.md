@@ -37,6 +37,6 @@ $params = @{
 	}
 }
 
-New-MgBetaWindowsUpdatesUpdatePolicy -BodyParameter $params
+New-MgBetaWindowsUpdatesPolicy -BodyParameter $params
 
 ```

@@ -9,7 +9,6 @@ from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.access_package_resource_role_scope import AccessPackageResourceRoleScope
 from msgraph_beta.generated.models.access_package_resource_role import AccessPackageResourceRole
 from msgraph_beta.generated.models.access_package_resource import AccessPackageResource
-from msgraph_beta.generated.models.role_type import RoleType
 from msgraph_beta.generated.models.access_package_resource_scope import AccessPackageResourceScope
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = AccessPackageResourceRoleScope(
@@ -27,7 +26,9 @@ request_body = AccessPackageResourceRoleScope(
 			origin_system = "AzureResources",
 		),
 		origin_system = "AzureResources",
-		type = RoleType.Eligible,
+		additional_data = {
+				"type" : "eligible",
+		}
 	),
 	access_package_resource_scope = AccessPackageResourceScope(
 		id = "338613b3-b410-4c6d-b5e9-45590bc8a357",

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [cloudPcUserSetting](../resources/cloudpcusersetting.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

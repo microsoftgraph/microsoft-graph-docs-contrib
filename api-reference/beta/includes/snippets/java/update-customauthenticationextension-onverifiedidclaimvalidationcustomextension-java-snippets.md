@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-OnVerifiedIdClaimValidationCustomExtension customAuthenticationExtension = new OnVerifiedIdClaimValidationCustomExtension();
+CustomAuthenticationExtension customAuthenticationExtension = new CustomAuthenticationExtension();
 customAuthenticationExtension.setOdataType("#microsoft.graph.onVerifiedIdClaimValidationCustomExtension");
 customAuthenticationExtension.setDisplayName("Verified ID Claim Validation (updated)");
 customAuthenticationExtension.setDescription("Updated description for Verified ID claim validation");

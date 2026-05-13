@@ -9,7 +9,6 @@ use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\AccessPackageResourceRoleScope;
 use Microsoft\Graph\Beta\Generated\Models\AccessPackageResourceRole;
 use Microsoft\Graph\Beta\Generated\Models\AccessPackageResource;
-use Microsoft\Graph\Beta\Generated\Models\RoleType;
 use Microsoft\Graph\Beta\Generated\Models\AccessPackageResourceScope;
 
 
@@ -30,7 +29,10 @@ $accessPackageResourceRoleAccessPackageResource->setOriginId('/providers/Microso
 $accessPackageResourceRoleAccessPackageResource->setOriginSystem('AzureResources');
 $accessPackageResourceRole->setAccessPackageResource($accessPackageResourceRoleAccessPackageResource);
 $accessPackageResourceRole->setOriginSystem('AzureResources');
-$accessPackageResourceRole->setType(new RoleType('eligible'));
+$additionalData = [
+	'type' => 'eligible',
+];
+$accessPackageResourceRole->setAdditionalData($additionalData);
 $requestBody->setAccessPackageResourceRole($accessPackageResourceRole);
 $accessPackageResourceScope = new AccessPackageResourceScope();
 $accessPackageResourceScope->setId('338613b3-b410-4c6d-b5e9-45590bc8a357');

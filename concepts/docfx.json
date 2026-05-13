@@ -80,7 +80,7 @@
         "**/*.yml": "microsoft-graph"
       },
       "ms.topic": {
-        "**/*.md": "article"
+        "**/*.md": "conceptual"
       },
       "titleSuffix": {
         "**/*.md": "Microsoft Graph"

@@ -8,7 +8,6 @@ Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 $params = @{
 	directoryPropertyName = "CustomAttribute1"
-	isVisible = $true
 	annotations = @(
 		@{
 			displayName = "Cost Center"

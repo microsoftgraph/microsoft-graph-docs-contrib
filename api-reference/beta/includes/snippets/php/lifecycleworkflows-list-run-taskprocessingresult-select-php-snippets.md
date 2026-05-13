@@ -13,7 +13,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new TaskProcessingResultsRequestBuilderGetRequestConfiguration();
 $queryParameters = TaskProcessingResultsRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->select = ["id","failureReason","processingStatus","subject","task"];
+$queryParameters->select = ["id","failureReason","processingStatus","subject"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 

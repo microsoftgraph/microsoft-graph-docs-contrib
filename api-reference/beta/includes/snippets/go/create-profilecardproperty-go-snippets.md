@@ -18,8 +18,6 @@ import (
 requestBody := graphmodels.NewProfileCardProperty()
 directoryPropertyName := "CustomAttribute1"
 requestBody.SetDirectoryPropertyName(&directoryPropertyName) 
-isVisible := true
-requestBody.SetIsVisible(&isVisible) 
 
 
 profileCardAnnotation := graphmodels.NewProfileCardAnnotation()

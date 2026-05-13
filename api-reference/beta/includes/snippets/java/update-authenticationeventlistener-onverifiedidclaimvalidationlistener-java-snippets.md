@@ -8,23 +8,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-OnVerifiedIdClaimValidationListener authenticationEventListener = new OnVerifiedIdClaimValidationListener();
+AuthenticationEventListener authenticationEventListener = new AuthenticationEventListener();
 authenticationEventListener.setOdataType("#microsoft.graph.onVerifiedIdClaimValidationListener");
 authenticationEventListener.setDisplayName("Verified ID Claim Validation Listener (updated)");
-OnVerifiedIdClaimValidationCustomExtensionHandler handler = new OnVerifiedIdClaimValidationCustomExtensionHandler();
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+ handler = new ();
 handler.setOdataType("#microsoft.graph.onVerifiedIdClaimValidationCustomExtensionHandler");
-CustomExtensionOverwriteConfiguration configuration = new CustomExtensionOverwriteConfiguration();
+ configuration = new ();
 configuration.setOdataType("#microsoft.graph.customExtensionOverwriteConfiguration");
-CustomExtensionClientConfiguration clientConfiguration = new CustomExtensionClientConfiguration();
+ clientConfiguration = new ();
 clientConfiguration.setOdataType("#microsoft.graph.customExtensionClientConfiguration");
 clientConfiguration.setMaximumRetries(1);
 clientConfiguration.setTimeoutInMilliseconds(2000);
 configuration.setClientConfiguration(clientConfiguration);
-CustomExtensionBehaviorOnError behaviorOnError = new CustomExtensionBehaviorOnError();
+ behaviorOnError = new ();
 behaviorOnError.setOdataType("#microsoft.graph.customExtensionBehaviorOnError");
 configuration.setBehaviorOnError(behaviorOnError);
 handler.setConfiguration(configuration);
-authenticationEventListener.setHandler(handler);
+additionalData.put("handler", handler);
+authenticationEventListener.setAdditionalData(additionalData);
 AuthenticationEventListener result = graphClient.identity().authenticationEventListeners().byAuthenticationEventListenerId("{authenticationEventListener-id}").patch(authenticationEventListener);
 
 

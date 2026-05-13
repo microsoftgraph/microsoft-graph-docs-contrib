@@ -12,7 +12,6 @@ const client = Client.init(options);
 
 const profileCardProperty = {
   directoryPropertyName: 'CustomAttribute1',
-  isVisible: true,
   annotations: [
     {
       displayName: 'Cost Center',

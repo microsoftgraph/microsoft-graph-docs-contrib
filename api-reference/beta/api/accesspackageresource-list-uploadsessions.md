@@ -131,6 +131,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/catalogs/{catalogId}/acc
 
 ---
 
+
 ### Response
 
 The following example shows the response.

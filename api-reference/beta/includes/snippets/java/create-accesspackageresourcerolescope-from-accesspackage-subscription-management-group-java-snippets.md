@@ -23,7 +23,9 @@ accessPackageResource.setOriginId("/providers/Microsoft.Management/managementGro
 accessPackageResource.setOriginSystem("AzureResources");
 accessPackageResourceRole.setAccessPackageResource(accessPackageResource);
 accessPackageResourceRole.setOriginSystem("AzureResources");
-accessPackageResourceRole.setType(RoleType.Eligible);
+HashMap<String, Object> additionalData = new HashMap<String, Object>();
+additionalData.put("type", "eligible");
+accessPackageResourceRole.setAdditionalData(additionalData);
 accessPackageResourceRoleScope.setAccessPackageResourceRole(accessPackageResourceRole);
 AccessPackageResourceScope accessPackageResourceScope = new AccessPackageResourceScope();
 accessPackageResourceScope.setId("338613b3-b410-4c6d-b5e9-45590bc8a357");

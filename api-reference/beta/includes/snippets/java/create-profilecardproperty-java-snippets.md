@@ -10,7 +10,6 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ProfileCardProperty profileCardProperty = new ProfileCardProperty();
 profileCardProperty.setDirectoryPropertyName("CustomAttribute1");
-profileCardProperty.setIsVisible(true);
 LinkedList<ProfileCardAnnotation> annotations = new LinkedList<ProfileCardAnnotation>();
 ProfileCardAnnotation profileCardAnnotation = new ProfileCardAnnotation();
 profileCardAnnotation.setDisplayName("Cost Center");
