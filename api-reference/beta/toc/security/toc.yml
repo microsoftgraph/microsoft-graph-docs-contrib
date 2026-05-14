@@ -354,6 +354,8 @@ items:
       href: ../../resources/classificationinnererror.md
     - name: Compute rights and inheritance result
       href: ../../resources/computerightsandinheritanceresult.md
+    - name: Content activity metadata
+      href: ../../resources/contentactivitymetadata.md
     - name: Content base
       href: ../../resources/contentbase.md
     - name: Custom metadata dictionary
