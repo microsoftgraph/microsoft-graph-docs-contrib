@@ -5,7 +5,7 @@ author: "rolyon"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 06/21/2024
+ms.date: 05/14/2026
 ---
 
 # List multiTenantOrganizationMembers
@@ -21,7 +21,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "multitenantorganization_list_tenants" } -->
 [!INCLUDE [permissions-table](../includes/permissions/multitenantorganization-list-tenants-permissions.md)]
 
-If called with MultiTenantOrganization.Read.All or MultiTenantOrganization.ReadWrite.All permissions, this API returns both active and pending tenants. If called with MultiTenantOrganization.ReadBasic.All permission, the caller can only read the **displayName** and **tenantId** properties.
+The properties returned depend on the permission granted:
+
+- **MultiTenantOrganization.ReadBasic.All** (delegated): Returns only the **displayName** and **tenantId** properties. Only active tenants are returned.
+- **MultiTenantOrganization.Read.All** or **Directory.Read.All** (delegated or application): Returns all properties, including **addedDateTime**, **joinedDateTime**, **addedByTenantId**, **role**, **state**, and **transitionDetails**. Both active and pending tenants are returned.
+- **MultiTenantOrganization.ReadWrite.All** (delegated or application): Same access as MultiTenantOrganization.Read.All.
 
 [!INCLUDE [rbac-multitenantorganization-apis-read](../includes/rbac-for-apis/rbac-multitenantorganization-apis-read.md)]
 
