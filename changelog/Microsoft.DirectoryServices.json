@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "3c36af46-909a-4c94-a101-6c77c48c9d66",
+          "ApiChange": "Property",
+          "ChangedApiName": "onPremisesExtensionAttributes",
+          "ChangeType": "Addition",
+          "Description": "Added the **onPremisesExtensionAttributes** property to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource.",
+          "Target": "group"
+        }
+      ],
+      "Id": "3c36af46-909a-4c94-a101-6c77c48c9d66",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-05-14T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b18a7db8-92de-4d28-b025-71d5d3fc511a",
           "ApiChange": "Enumeration",
           "ChangedApiName": "customSecurityAttributeComparisonOperator",
