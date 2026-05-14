@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /admin/people/profilePropertySettings/{profilePropertySettingId}/$ref
+DELETE /admin/people/profilePropertySettings/{profilePropertySettingId}
 ```
 
 ## Request headers
