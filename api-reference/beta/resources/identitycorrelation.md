@@ -29,8 +29,8 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |endDateTime|DateTimeOffset|The date and time when the correlation process completed.|
-|error|[correlationError](../resources/correlationerror.md)|Error information if the correlation process failed. Null if successful.|
-|id|String|The unique identifier for the identity correlation report. Inherited from [entity](../resources/entity.md).|
+|error|[correlationError](../resources/correlationerror.md)|Error information if the correlation process failed. `null` if successful. <br/><br/> Supports `$filter` (`eq`).|
+|id|String|The unique identifier for the identity correlation report. Inherited from [entity](../resources/entity.md). <br/><br/> Supports `$filter` (`eq`).|
 |startDateTime|DateTimeOffset|The date and time when the correlation process started.|
 
 ## Relationships

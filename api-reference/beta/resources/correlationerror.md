@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents error details when a correlation report fails to be created or an individual identity fails to be correlated.
+Represents error details when a correlation report fails to be created or an individual identity fails to be correlated. Returned in the **error** property of [identityCorrelation](../resources/identitycorrelation.md) and [correlatedIdentity](../resources/correlatedidentity.md).
 
 ## Properties
 |Property|Type|Description|

@@ -27,6 +27,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 [!INCLUDE [permissions-table](../includes/permissions/identitycorrelation-list-identities-permissions.md)]
 
+[!INCLUDE [rbac-identity-correlation-apis-read](../includes/rbac-for-apis/rbac-identity-correlation-apis-read.md)]
+
 ## HTTP request
 
 <!-- {
@@ -39,7 +41,7 @@ GET /reports/correlations/{identityCorrelationId}/identities
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` (`eq` on **id**, **error**, **status**, **sourceIdentity**, and **targetIdentity**), `$orderby` (**correlatedDateTime**), `$top`, and `$count` OData query parameters to help customize the response. The `$count` query parameter is only supported when filtering on the **status** property. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -96,7 +98,7 @@ Content-Type: application/json
         },
         "matchingProperty": {
           "name": "userPrincipalName",
-          "value": "jamie@company.com"
+          "value": "jamie@contoso.com"
         },
         "identityType": "user",
         "details": {}
@@ -108,7 +110,7 @@ Content-Type: application/json
         },
         "matchingProperty": {
           "name": "upn",
-          "value": "jamie@company.com"
+          "value": "jamie@contoso.com"
         },
         "identityType": "user",
         "details": {}
@@ -128,7 +130,7 @@ Content-Type: application/json
         },
         "matchingProperty": {
           "name": "upn",
-          "value": "alex@company.com"
+          "value": "alex@contoso.com"
         },
         "identityType": "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User",
         "details": {}
@@ -170,7 +172,7 @@ Content-Type: application/json
         },
         "matchingProperty": {
           "name": "userPrincipalName",
-          "value": "taylor@company.com"
+          "value": "taylor@contoso.com"
         },
         "identityType": "user",
         "details": {}
@@ -182,7 +184,7 @@ Content-Type: application/json
         },
         "matchingProperty": {
           "name": "upn",
-          "value": "taylor@company.com"
+          "value": "taylor@contoso.com"
         },
         "identityType": "urn:ietf:params:scim:schemas:extension:enterprise:2.0:User",
         "details": {}

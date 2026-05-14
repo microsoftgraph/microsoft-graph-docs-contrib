@@ -27,12 +27,12 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|correlatedDateTime|DateTimeOffset|The date and time when the identity was correlated.|
-|error|[correlationError](../resources/correlationerror.md)|Error information if the correlation for this identity failed. Null if successful.|
-|id|String|The unique identifier for the correlated identity. Inherited from [entity](../resources/entity.md).|
-|sourceIdentity|[identityInfo](../resources/identityinfo.md)|The source identity information from the on-premises directory.|
-|status|String|The correlation and assignment status. Possible values include: `uncorrelated`, `correlatedNotAssigned`, `correlatedAssigned` and `failToCorrelate`.|
-|targetIdentity|[identityInfo](../resources/identityinfo.md)|The target identity information from Microsoft Entra ID.|
+|correlatedDateTime|DateTimeOffset|The date and time when the identity was correlated. <br/><br/> Supports `$orderby`.|
+|error|[correlationError](../resources/correlationerror.md)|Error information if the correlation for this identity failed. `null` if successful. <br/><br/> Supports `$filter` (`eq`).|
+|id|String|The unique identifier for the correlated identity. Inherited from [entity](../resources/entity.md). <br/><br/> Supports `$filter` (`eq`).|
+|sourceIdentity|[identityInfo](../resources/identityinfo.md)|The source identity information from the on-premises directory. <br/><br/> Supports `$filter` (`eq`).|
+|status|String|The correlation and assignment status. Possible values include: `uncorrelated`, `correlatedNotAssigned`, `correlatedAssigned` and `failToCorrelate`. <br/><br/> Supports `$filter` (`eq`), `$count`.|
+|targetIdentity|[identityInfo](../resources/identityinfo.md)|The target identity information from Microsoft Entra ID. <br/><br/> Supports `$filter` (`eq`).|
 
 ## Relationships
 None.

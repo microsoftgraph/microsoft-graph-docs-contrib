@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an identity's information used in identity correlation reports. Contains the anchor property, matching property, identity type, and additional details for a source or target identity.
+Represents an [identity's information](../resources/correlatedidentity.md) used in [identity correlation reports](../resources/identitycorrelation.md). Contains the anchor property, matching property, identity type, and additional details for a source or target identity.
 
 ## Properties
 |Property|Type|Description|
