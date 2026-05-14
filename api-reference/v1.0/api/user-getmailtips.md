@@ -51,7 +51,7 @@ In the request body, provide a JSON object with the following parameters.
 
 If successful, this method returns a `200 OK` response code and a collection of [mailTips](../resources/mailtips.md) objects in the response body.
 ## Example
-##### Request
+### Request
 The following example gets MailTips for the specified recipients, for any automatic reply settings and the mailbox full status.
 
 
@@ -103,7 +103,7 @@ Content-Type: application/json
 
 ---
 
-##### Response
+### Response
 The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

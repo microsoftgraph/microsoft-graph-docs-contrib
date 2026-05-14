@@ -51,7 +51,7 @@ In the request body, supply a JSON representation of [Attachment](../resources/a
 If successful, this method returns `201 Created` response code and [Attachment](../resources/attachment.md) object in the response body.
 
 ## Example (File attachment)
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -105,7 +105,7 @@ Content-type: application/json
 
 In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
 
-##### Response
+### Response
 The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response"
@@ -116,7 +116,7 @@ HTTP/1.1 201 Created
 
 ## Example (item attachment)
 
-##### Request
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -166,7 +166,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 The following example shows the response. Note: The response object shown here may be
 truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {

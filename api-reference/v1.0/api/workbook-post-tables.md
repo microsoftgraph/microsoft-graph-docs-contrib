@@ -48,7 +48,7 @@ In the request body, provide a JSON object with the following parameters.
 If successful, this method returns `201 Created` response code and [workbookTable](../resources/workbooktable.md) object in the response body.
 
 ## Example
-##### Request
+### Request
 The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
@@ -91,7 +91,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

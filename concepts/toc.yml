@@ -859,6 +859,11 @@ items:
       items:
       - name: Set up application authentication
         href: security-ediscovery-appauthsetup.md
+    - name: Security alerts
+      items:
+      - name: Migrate alerts v1 to v2
+        href: alertsv1-alertsv2-migration.md
+        displayName: Migration, security alerts, alerts v1, alerts v2, migrate
   - name: Sites and lists
     items:
     - name: Overview
@@ -1243,6 +1248,11 @@ items:
       href: migrate-exchange-web-services-authentication.md
     - name: API mapping
       href: migrate-exchange-web-services-api-mapping.md
+  - name: Security alerts
+    items:
+    - name: Migrate alerts v1 to v2
+      href: alertsv1-alertsv2-migration.md
+      displayName: Migration, security alerts, alerts v1, alerts v2, migrate
 - name: API v1.0 reference
   href: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
   displayName: Microsoft Graph REST API v1.0 reference
