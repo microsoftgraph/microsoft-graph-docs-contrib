@@ -3009,6 +3009,7 @@
               "classificationError",
               "classificationInnerError",
               "computeRightsAndInheritanceResult",
+              "contentActivityMetadata",
               "contentBase",
               "customMetadataDictionary",
               "deviceMetadata",

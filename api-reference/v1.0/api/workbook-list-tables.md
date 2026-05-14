@@ -47,7 +47,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and collection of [workbookTable](../resources/workbooktable.md) objects in the response body.
 ## Example
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables
 
 ---
 
-##### Response
+### Response
 The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

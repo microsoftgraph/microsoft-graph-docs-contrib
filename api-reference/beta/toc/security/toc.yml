@@ -74,11 +74,11 @@ items:
       href: ../../resources/security-dnsevidence.md
     - name: File hash evidence
       href: ../../resources/security-filehashevidence.md
-    - name: Git hub organization evidence
+    - name: GitHub organization evidence
       href: ../../resources/security-githuborganizationevidence.md
-    - name: Git hub repo evidence
+    - name: GitHub repo evidence
       href: ../../resources/security-githubrepoevidence.md
-    - name: Git hub user evidence
+    - name: GitHub user evidence
       href: ../../resources/security-githubuserevidence.md
     - name: Host logon session evidence
       href: ../../resources/security-hostlogonsessionevidence.md
@@ -86,7 +86,7 @@ items:
       href: ../../resources/security-malwareevidence.md
     - name: Network connection evidence
       href: ../../resources/security-networkconnectionevidence.md
-    - name: Sas token evidence
+    - name: SAS token evidence
       href: ../../resources/security-sastokenevidence.md
     - name: Security group evidence
       href: ../../resources/security-securitygroupevidence.md

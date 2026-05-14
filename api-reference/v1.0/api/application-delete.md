@@ -49,7 +49,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
-##### Request
+### Request
 The following example shows a request.
 
 
@@ -92,7 +92,7 @@ DELETE https://graph.microsoft.com/v1.0/applications/{id}
 
 ---
 
-##### Response
+### Response
 The following example shows the response. 
 <!-- {
   "blockType": "response",
