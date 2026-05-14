@@ -45,7 +45,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and collection of [scopedRoleMembership](../resources/scopedrolemembership.md) objects in the response body.
 ## Example
-##### Request
+### Request
 The following example shows a request.
 
 
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/8a07f5a8-edc9
 
 ---
 
-##### Response
+### Response
 The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

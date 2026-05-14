@@ -126,6 +126,19 @@ Namespace: microsoft.graph
 |deletedWithinMoreThan3Months|
 |unknownFutureValue|
 
+### enforcementResultStatus values
+
+|Member|
+|:---|
+|success|
+|missingOrInvalidConfiguration|
+|userOverride|
+|agentFailure|
+|enforcementTimeout|
+|oSOverride|
+|processNonExistent|
+|other|
+
 ### fedRampLevel values
 
 |Member|

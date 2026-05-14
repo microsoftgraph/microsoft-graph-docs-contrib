@@ -48,7 +48,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ## Example
 
-##### Request
+### Request
 
 The following example shows a request.
 
@@ -93,7 +93,7 @@ DELETE https://graph.microsoft.com/v1.0/me/calendarGroups/{id}
 
 ---
 
-##### Response
+### Response
 
 The following example shows the response. Note: The response object shown here might be shortened for readability.
 

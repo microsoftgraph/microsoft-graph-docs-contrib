@@ -233,13 +233,14 @@ The [agentUser](../resources/agentuser.md) resource inherits from this resource.
 | hireDate | DateTimeOffset | The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br> Requires `$select` to retrieve. <br> **Note:** This property is specific to SharePoint Online. We recommend using the native **employeeHireDate** property to set and update hire date values using Microsoft Graph APIs. |
 | id | String | The unique identifier for the user. It should be treated as an opaque identifier. Inherited from [directoryObject](directoryobject.md). Not nullable. Read-only. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `in`). |
 | identities | [objectIdentity](objectIdentity.md) collection | Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft and tied to a user account. It may contain multiple items with the same **signInType** value. <br><br> Supports `$filter` (`eq`) with limitations. <!--Supports `$filter` (`eq`) including on `null` values, only where the **signInType** is not `userPrincipalName`.--> |
+| identityGovernance | [identityGovernanceUserSettings](identitygovernanceusersettings.md) | The identity governance settings for the user, including the approver delegate configuration. Nullable. <br><br>Returned only on `$select`. Supports `$expand`.|
 | identityParentId | String | The object ID of the parent identity for agent users. Always `null` for regular user accounts. For [agentUser](../resources/agentuser.md) resources, this property references the object ID of the associated agent identity. |
 | imAddresses | String collection | The instant message voice-over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only. Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
 | infoCatalogs | String collection | Identifies the info segments assigned to the user.  Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
 | interests | String collection | A list for users to describe their interests. <br><br>Requires `$select` to retrieve. |
 | isLicenseReconciliationNeeded | Boolean | Indicates whether the user is pending an exchange mailbox license assignment. <br><br> Read-only. <br><br> Supports `$filter` (`eq` where `true` only).  |
 | isManagementRestricted| Boolean | `true` if the user is a member of a restricted management administrative unit. If not set, the default value is `null` and the default behavior is false. Read-only. <br/><br/> To manage a user who is a member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit.|
-| isResourceAccount | Boolean | Do not use – reserved for future use. |
+| isResourceAccount | Boolean | Do not use. Reserved for future use. |
 | jobTitle | String | The user's job title. Maximum length is 128 characters. <br><br>Supports `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 | lastPasswordChangeDateTime | DateTimeOffset | When this Microsoft Entra user last changed their password or when their password was created, whichever date the latest action was performed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. <br><br>Requires `$select` to retrieve.  |
 | legalAgeGroupClassification | [legalAgeGroupClassification](#legalagegroupclassification-values) | Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on **ageGroup** and **consentProvidedForMinor** properties. Allowed values: `null`, `Undefined`, `MinorWithOutParentalConsent`, `MinorWithParentalConsent`, `MinorNoParentalConsentRequired`, `NotAdult`, and `Adult`. For more information, see [legal age group property definitions](#legal-age-group-property-definitions). <br><br>Requires `$select` to retrieve. |
@@ -492,6 +493,7 @@ The following JSON representation shows the resource type.
   "hireDate": "String (timestamp)",
   "id": "String (identifier)",
   "identities": [{"@odata.type": "microsoft.graph.objectIdentity"}],
+  "identityGovernance": {"@odata.type": "microsoft.graph.identityGovernanceUserSettings"},
   "identityParentId": "String",
   "interests": ["String"],
   "isLicenseReconciliationNeeded": "Boolean",
