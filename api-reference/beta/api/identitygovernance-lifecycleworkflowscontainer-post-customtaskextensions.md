@@ -103,7 +103,7 @@ Content-length: 588
     },
     "callbackConfiguration": {
         "@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
-        "timeoutDuration": "PT5M"
+        "timeoutDuration": "PT30M"
     }
 }
 ```
