@@ -12,7 +12,7 @@ ms.topic: upgrade-and-migration-article
 
 # Migrate from legacy alerts to the alerts and incidents API
 
-The legacy Microsoft Graph security alerts API available through the `/security/alerts` endpoint is deprecated and will be retired on **August 31, 2026**. If your app currently uses the legacy alerts API to retrieve, monitor, or manage security alerts, you should migrate to the new [alerts and incidents API](/graph/api/resources/security-alert) in Microsoft 365 Defender.
+The legacy Microsoft Graph security alerts API available through the `/security/alerts` endpoint is deprecated and will be retired on **August 31, 2026**. If your app currently uses the legacy alerts API to retrieve, monitor, or manage security alerts, you should migrate to the new [alerts and incidents API](/graph/api/resources/security-alert) in Microsoft 365 Defender, available through the `/security/alerts_v2` endpoint.
 
 This article describes the key differences between the two APIs, provides a field mapping reference, and outlines the steps to migrate your app.
 
