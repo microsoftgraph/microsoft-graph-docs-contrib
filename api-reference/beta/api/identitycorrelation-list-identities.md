@@ -41,7 +41,7 @@ GET /reports/correlations/{identityCorrelationId}/identities
 
 ## Optional query parameters
 
-This method supports the `$filter` (`eq` on **id**, **error**, **status**, **sourceIdentity**, and **targetIdentity**), `$orderby` (**correlatedDateTime**), `$top`, and `$count` OData query parameters to help customize the response. The `$count` query parameter is only supported when filtering on the **status** property. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` (`eq` on **id**, **error**, **status**, **sourceIdentity**, and **targetIdentity**), `$orderby` (**correlatedDateTime**), `$top`, and `$count` OData query parameters to help customize the response. The `$count` query parameter is only supported when filtering on the **status** property. The default and maximum page sizes are 1,000 entries. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
