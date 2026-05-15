@@ -533,7 +533,7 @@ items:
     - name: Connectors samples
       href: /samples/browse/?terms=graph%20connectors
     - name: Community connectors samples
-      href: https://adoption.microsoft.com/sample-solution-gallery/?product=Microsoft+Graph+connectors
+      href: https://adoption.microsoft.com/sample-solution-gallery/?product=Copilot+connectors
     - name: Build your first connector
       items:
       - name: Build with Agents Toolkit
@@ -684,7 +684,7 @@ items:
       href: outlook-immutable-id.md
     - name: Subscribe to change notifications
       href: outlook-change-notifications-overview.md
-  - name: Mailbox import and export (preview)
+  - name: Mailbox import and export
     items:
     - name: Overview
       href: mailbox-import-export-concept-overview.md
@@ -720,8 +720,6 @@ items:
         href: onenote-input-output-html.md
       - name: Best practices
         href: onenote-best-practices.md
-      - name: Branding guidelines
-        href: onenote-branding.md
       - name: Error codes
         href: onenote-error-codes.md
   - name: Notifications (deprecated)
@@ -861,6 +859,11 @@ items:
       items:
       - name: Set up application authentication
         href: security-ediscovery-appauthsetup.md
+    - name: Security alerts
+      items:
+      - name: Migrate alerts v1 to v2
+        href: alertsv1-alertsv2-migration.md
+        displayName: Migration, security alerts, alerts v1, alerts v2, migrate
   - name: Sites and lists
     items:
     - name: Overview
@@ -1245,6 +1248,11 @@ items:
       href: migrate-exchange-web-services-authentication.md
     - name: API mapping
       href: migrate-exchange-web-services-api-mapping.md
+  - name: Security alerts
+    items:
+    - name: Migrate alerts v1 to v2
+      href: alertsv1-alertsv2-migration.md
+      displayName: Migration, security alerts, alerts v1, alerts v2, migrate
 - name: API v1.0 reference
   href: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
   displayName: Microsoft Graph REST API v1.0 reference

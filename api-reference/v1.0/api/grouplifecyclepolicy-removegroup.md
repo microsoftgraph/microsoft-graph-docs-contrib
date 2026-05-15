@@ -53,7 +53,7 @@ If successful, this method returns `200 OK` response code. If the group is remov
 
 ## Example
 
-##### Request
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -100,7 +100,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 
 <!-- { "blockType": "response" } -->
 

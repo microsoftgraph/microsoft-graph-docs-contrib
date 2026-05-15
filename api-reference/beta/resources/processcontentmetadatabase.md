@@ -14,13 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract base type that represents metadata for a content entry being processed, including identifiers, content details, and timestamps. Use [processConversationMetadata](./processconversationmetadata.md) for conversation content and [processFileMetadata](./processfilemetadata.md) for file content.
+An abstract base type that represents metadata for a content entry being processed in a [processContentRequest](../resources/processcontentrequest.md), including identifiers, content details, and timestamps. Use the following derived types: [processConversationMetadata](../resources/processconversationmetadata.md) for conversation content, [processFileMetadata](../resources/processfilemetadata.md) for file content, and [contentActivityMetadata](../resources/contentactivitymetadata.md) for content activity.
 
-This is an abstract type from which the following resources derive:
-- [processConversationMetadata](../resources/processconversationmetadata.md)
-- [processFileMetadata](../resources/processfilemetadata.md)
-
-Base type of [processConversationMetadata](./processconversationmetadata.md) and [processFileMetadata](./processfilemetadata.md).
 
 ## Properties
 

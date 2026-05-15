@@ -53,7 +53,7 @@ In the request body, supply the values for relevant fields that should be update
 ## Response
 If successful, this method returns a `204, No Content` response code. It doesn't return anything in the response body.
 ## Example
-##### Request
+### Request
 The following example updates the business email address and scheduling policy, to change the business default booking time slot to an hour, and advance booking up to 30 days.
 
 # [HTTP](#tab/http)
@@ -104,7 +104,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

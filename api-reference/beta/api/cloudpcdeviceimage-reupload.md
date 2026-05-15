@@ -19,7 +19,7 @@ Reupload a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object that 
 > [!CAUTION]
 > This API is deprecated and will stop returning data on June 25, 2026. Going forward, use the [cloudPcDeviceImage: retryUpload](cloudpcdeviceimage-retryupload.md) API instead.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 

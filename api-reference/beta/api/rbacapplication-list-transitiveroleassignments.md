@@ -20,7 +20,7 @@ Get the list of direct and transitive [unifiedRoleAssignment](../resources/unifi
 For more information, see [Use Microsoft Entra groups to manage role assignments](/azure/active-directory/roles/groups-concept).
 
 > [!NOTE]
-> This request might have replication delays for role assignments that were recently created, updated, or deleted.
+> This request might have replication delays for role assignments that were recently created, updated, or deleted. Learn more in [Designing for eventual consistency for Microsoft Entra](https://devblogs.microsoft.com/identity/designing-for-eventual-consistency-for-microsoft-entra/).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

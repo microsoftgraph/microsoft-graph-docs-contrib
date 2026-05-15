@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-DELETE /admin/people/profilePropertySettings/{profilePropertySettingId}/$ref
+DELETE /admin/people/profilePropertySettings/{profilePropertySettingId}
 ```
 
 ## Request headers
@@ -80,6 +80,10 @@ DELETE https://graph.microsoft.com/v1.0/admin/people/profilePropertySettings/000
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-profilepropertysetting-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-profilepropertysetting-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

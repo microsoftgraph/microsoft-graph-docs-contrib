@@ -51,7 +51,7 @@ In the request body, supply a JSON representation of [Contact](../resources/cont
 If successful, this method returns `201 Created` response code and [Contact](../resources/contact.md) object in the response body.
 
 ## Example
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -104,7 +104,7 @@ Content-type: application/json
 ---
 
 In the request body, supply a JSON representation of [contact](../resources/contact.md) object.
-##### Response
+### Response
 The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

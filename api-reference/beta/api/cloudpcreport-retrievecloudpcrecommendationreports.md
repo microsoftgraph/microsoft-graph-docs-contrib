@@ -19,7 +19,7 @@ Retrieve Cloud PC recommendation [reports](../resources/cloudpcreport.md) for us
 >[!NOTE]
 > This API replaces the deprecated [cloudPcReports: retrieveCloudPcRecommendationReports](../api/cloudpcreports-retrievecloudpcrecommendationreports.md) API that will stop returning data on December 31, 2025.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 

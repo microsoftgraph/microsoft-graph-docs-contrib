@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 05/04/2026
+ms.date: 05/11/2026
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -297,7 +297,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | dcf7150a-88d4-4fe6-9be1-c2744c455397 | 4a4facd5-0ee1-49b7-a5b2-fdcc2491685e |
 | DisplayText | Read and write all agent identities | Read and write all agent identities |
-| Description | Allows the app read, update, and delete agent identities without a signed-in user. | Allows the client to read, update, and delete agent identities on behalf of the signed-in user. |
+| Description | Allows the app to read, update, and delete agent identities without a signed-in user. | Allows the client to read, update, and delete agent identities on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -352,7 +352,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 7fddd33b-d884-4ec0-8696-72cff90ff825 | 4fd490fc-1467-48eb-8a4c-421597ab0402 |
 | DisplayText | Read and write all agent identity blueprints. | Read and write all agent identity blueprints. |
-| Description | Allows the app to read, update, and delete agent identity blueprints without a signed-in user. | Allows the app to read, update, and delete agent identity blueprints on behalf of the signed-in user. |
+| Description | Allows the app to read, update, create, and delete agent identity blueprints without a signed-in user. | Allows the app to read, update, create, and delete agent identity blueprints on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -384,7 +384,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | 8959696d-d07e-4916-9b1e-3ba9ce459161 | 00dcd896-6b23-42ce-b5de-c58493c05e22 |
-| DisplayText | Create agent identity blueprint service principals. | Create agent identity blueprint service principals. |
+| DisplayText | Create agent identity blueprint principals. | Create agent identity blueprint principals. |
 | Description | Allows creating new agent identity blueprint principals without a signed-in user. | Allows creating new agent identity blueprint principals with a signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
@@ -395,8 +395,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | f86a2dd8-9298-4675-bd78-f5a3572da2d7 | 2c70023e-a482-4af2-9ff1-51ded53e6bad |
-| DisplayText | Delete and restore agent identity blueprints. | Delete and restore agent identity blueprints. |
-| Description | Allows deleting or restoring agent identity blueprints without a signed-in user. | Allows deleting or restoring agent identity blueprints with a signed-in user. |
+| DisplayText | Delete and restore agent identity blueprint principals. | Delete and restore agent identity blueprint principals. |
+| Description | Allows deleting or restoring agent identity blueprint principals without a signed-in user. | Allows deleting or restoring agent identity blueprint principals with a signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -417,7 +417,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | 9361dea9-4524-493d-941d-f1b65aaf6c7c | 88c856a2-de61-4632-b2d4-ac503cbc8dd2 |
-| DisplayText | Read agent identity blueprint principals. | Read agent identity blueprints principals. |
+| DisplayText | Read agent identity blueprint principals. | Read agent identity blueprint principals. |
 | Description | Allows reading agent identity blueprint principals without a signed-in user. | Allows reading agent identity blueprint principals with a signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
@@ -429,7 +429,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 3bc933bc-8b4d-4cb6-ac49-b73774299250 | bf2cad6a-9082-438a-9a63-95fa2687af65 |
 | DisplayText | Read and write all agent identity blueprint principals. | Read and write all agent identity blueprint principals. |
-| Description | Allows the app to read, update, and delete agent identity blueprint principals without a signed-in user. | Allows the app to read, update, and delete agent identity blueprint principals on behalf of the signed-in user. |
+| Description | Allows the app to read, update, create, and delete agent identity blueprint principals without a signed-in user. | Allows the app to read, update, create, and delete agent identity blueprint principals on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
