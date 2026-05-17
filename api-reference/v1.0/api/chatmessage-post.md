@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 Send a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md) or a [chat](../resources/chat.md).
 
 > **Notes:**
-> - We don't recommend using this API for data migration. Its throughput is limited to 10 messages every 10 seconds, which isn't sufficient for typical migration scenarios.
+> - We don't recommend that you use this API for data migration via the standard create message flow. For data migration scenarios, use the [import messages](/graph/teams-import-messages) flow instead.
 > - It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -1794,6 +1794,313 @@ Content-Type: application/json
   ],
   "mentions": [],
   "reactions": []
+}
+```
+
+### Example 14: Send a message with a code block
+
+The following example shows how to send a message with a code block.
+
+> [!NOTE]
+> - To specify a language for syntax highlighting in a code block, use the `class` attribute in the `<codeblock>` HTML element.
+> - If no language is specified, the code block defaults to plaintext formatting.
+> - Supported languages include: `bash`, `c`, `cpp`, `csharp`, `css`, `dart`, `dockerfile`, `dos`, `go`, `graphql`, `html`, `http`, `java`, `javascript`, `json`, `jsp`, `jsx`, `kotlin`, `markdown`, `objectivec`, `octave`, `perl`, `php`, `powershell`, `python`, `r`, `ruby`, `rust`, `scala`, `scss`, `shell`, `sql`, `swift`, `typescript`, `vbnet`, `vbscript`, `verilog`, `vhdl`, `xml`, `yaml`, and `plaintext`.
+
+
+#### Request
+
+The following example shows a request.
+
+> [!NOTE]
+> - Highlighted code isn't supported when sending chat messages with code blocks
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "post_chatmessage_14",
+  "sampleKeys": ["19:7fb82b685f9c457296a0ab6a1d98b4c1@thread.v2"]
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/chats/19:7fb82b685f9c457296a0ab6a1d98b4c1@thread.v2/messages
+Content-type: application/json
+
+{
+  "body": {
+    "contentType": "html",
+    "content": "<codeblock class=\"plaintext\"><code>Hello world</code></codeblock>"
+  }
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/post-chatmessage-14-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/post-chatmessage-14-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-14-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-chatmessage-14-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/post-chatmessage-14-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-chatmessage-14-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/post-chatmessage-14-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chatMessage/$entity",
+  "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET chats('<key>')/messages('<key>')?$select=attachments,body",
+  "id": "1741124357685",
+  "replyToId": null,
+  "etag": "1741124357685",
+  "messageType": "message",
+  "createdDateTime": "2025-03-04T21:39:17.685Z",
+  "lastModifiedDateTime": "2025-03-04T21:39:17.685Z",
+  "lastEditedDateTime": null,
+  "deletedDateTime": null,
+  "subject": null,
+  "summary": null,
+  "chatId": "19:e2ed97baac8e4bffbb91299a38996790@thread.v2",
+  "importance": "normal",
+  "locale": "en-us",
+  "webUrl": null,
+  "channelIdentity": null,
+  "onBehalfOf": null,
+  "policyViolation": null,
+  "eventDetail": null,
+  "from": {
+    "application": null,
+    "device": null,
+    "user": {
+      "@odata.type": "#microsoft.graph.teamworkUserIdentity",
+      "id": "28c10244-4bad-4fda-993c-f332faef94f0",
+      "displayName": "Adele Vance",
+      "userIdentityType": "aadUser",
+      "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
+    }
+  },
+  "body": {
+    "contentType": "html",
+    "content": "\n<codeblock class=\"plaintext\"><code>Hello world</code></codeblock>"
+  },
+  "attachments": [],
+  "mentions": [],
+  "reactions": []
+}
+```
+
+### Example 15: Import a message into a chat
+
+The following example shows how to import a message into a chat on behalf of a user during a migration session. The target chat must be in migration mode. For more information, see [Import messages into Microsoft Teams chats and channels using Microsoft Graph](/graph/teams-import-messages).
+
+> [!NOTE]
+> The permission scope `Teamwork.Migrate.All` is required for this scenario.
+
+> [!IMPORTANT]
+> The **createdDateTime** must be unique down to the millisecond within the target chat. If a message with the same **createdDateTime** exists, the request fails with `409 Conflict`. Adjust the **createdDateTime** and retry.
+
+#### Request
+
+The following example shows a request. The **createdDateTime** and **from** properties are used to attribute the message to a specific user at a specific time in the past.
+
+<!-- {
+  "blockType": "request",
+  "name": "post_chatmessage_import_chat",
+  "sampleKeys": ["19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2"]
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/chats/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages
+
+{
+   "createdDateTime": "2019-02-04T19:58:15.511Z",
+   "from": {
+      "user": {
+         "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+         "displayName": "Robin Kline",
+         "userIdentityType": "aadUser"
+      }
+   },
+   "body": {
+      "contentType": "html",
+      "content": "Hello World"
+   }
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats('19%3A4b6bed8d24574f6a9e436813cb2617d8%40thread.tacv2')/messages/$entity",
+    "id": "1616991463150",
+    "replyToId": null,
+    "etag": "1616991463150",
+    "messageType": "message",
+    "createdDateTime": "2019-02-04T19:58:15.511Z",
+    "lastModifiedDateTime": null,
+    "deletedDateTime": null,
+    "subject": null,
+    "summary": null,
+    "chatId": "19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2",
+    "importance": "normal",
+    "locale": "en-us",
+    "webUrl": null,
+    "channelIdentity": null,
+    "policyViolation": null,
+    "eventDetail": null,
+    "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+            "displayName": "Robin Kline",
+            "userIdentityType": "aadUser"
+        }
+    },
+    "body": {
+        "contentType": "html",
+        "content": "Hello World"
+    },
+    "attachments": [],
+    "mentions": [],
+    "reactions": []
+}
+```
+
+### Example 16: Import a message into a channel
+
+The following example shows how to import a message into a channel on behalf of a user during a migration session. The target channel must be in migration mode. For more information, see [Import messages into Microsoft Teams chats and channels using Microsoft Graph](/graph/teams-import-messages).
+
+> [!NOTE]
+> The permission scope `Teamwork.Migrate.All` is required for this scenario.
+
+> [!IMPORTANT]
+> The **createdDateTime** must be unique down to the millisecond within the target channel. If a message with the same **createdDateTime** exists, the request fails with `409 Conflict`. Adjust the **createdDateTime** and retry.
+
+#### Request
+
+The following example shows a request. The **createdDateTime** and **from** properties are used to attribute the message to a specific user at a specific time in the past.
+
+<!-- {
+  "blockType": "request",
+  "name": "post_chatmessage_import_channel",
+  "sampleKeys": ["57fb72d0-d811-46f4-8947-305e6072eaa5", "19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2"]
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages
+
+{
+   "createdDateTime": "2019-02-04T19:58:15.511Z",
+   "from": {
+      "user": {
+         "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+         "displayName": "Robin Kline",
+         "userIdentityType": "aadUser"
+      }
+   },
+   "body": {
+      "contentType": "html",
+      "content": "Hello World"
+   }
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('57fb72d0-d811-46f4-8947-305e6072eaa5')/channels('19%3A4b6bed8d24574f6a9e436813cb2617d8%40thread.tacv2')/messages/$entity",
+    "id": "1616991463150",
+    "replyToId": null,
+    "etag": "1616991463150",
+    "messageType": "message",
+    "createdDateTime": "2019-02-04T19:58:15.511Z",
+    "lastModifiedDateTime": null,
+    "deletedDateTime": null,
+    "subject": null,
+    "summary": null,
+    "chatId": null,
+    "importance": "normal",
+    "locale": "en-us",
+    "webUrl": null,
+    "policyViolation": null,
+    "eventDetail": null,
+    "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+            "displayName": "Robin Kline",
+            "userIdentityType": "aadUser"
+        }
+    },
+    "body": {
+        "contentType": "html",
+        "content": "Hello World"
+    },
+    "channelIdentity": {
+        "teamId": "57fb72d0-d811-46f4-8947-305e6072eaa5",
+        "channelId": "19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2"
+    },
+    "attachments": [],
+    "mentions": [],
+    "reactions": []
 }
 ```
 

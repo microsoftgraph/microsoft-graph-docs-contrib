@@ -1,6 +1,6 @@
 ---
 title: "Create identitySynchronization"
-description: "Create a cross-tenant user synchronization policy for a partner-specific configuration."
+description: "Create a cross-tenant user and optionally group synchronization policy for a partner-specific configuration."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a cross-tenant user synchronization policy for a partner-specific configuration.
+Create a cross-tenant user and optionally group synchronization policy for a partner-specific configuration.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -52,7 +52,8 @@ You can specify the following properties when you create a **crossTenantIdentity
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Display name for the cross-tenant user synchronization policy. Use the name of the partner Microsoft Entra tenant to easily identify the policy. Optional.|
+|displayName|String|Display name for the cross-tenant user and group synchronization policy. Use the name of the partner Microsoft Entra tenant to easily identify the policy. Optional.|
+|groupSyncInbound|[crossTenantGroupSyncInbound](../resources/crosstenantgroupsyncinbound.md)|Determines whether groups are synchronized from the partner tenant.|
 |userSyncInbound|[crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|Determines whether users are synchronized from the partner tenant.|
 
 ## Response
@@ -77,6 +78,9 @@ Content-Type: application/json
 
 {
   "displayName": "Fabrikam",
+  "groupSyncInbound": {
+    "isSyncAllowed": true
+  },
   "userSyncInbound": {
     "isSyncAllowed": true
   }

@@ -5,7 +5,7 @@ author: "kevinbellinger"
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
-ms.date: 04/04/2024
+ms.date: 02/27/2026
 ---
 
 # Get contact
@@ -62,9 +62,9 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [contact](../resources/contact.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [contact](../resources/contact.md) object in the response body.
 ## Example
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -107,8 +107,9 @@ GET https://graph.microsoft.com/v1.0/me/contacts/AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1
 
 ---
 
-##### Response
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following example shows the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -140,8 +141,31 @@ Content-type: application/json
     "yomiSurname": null,
     "yomiCompanyName": null,
     "generation": null,
-    "imAddresses": [],
-    "jobTitle": null,
+    "emailAddresses": [
+      {
+        "name": "Alex Wilber",
+        "address": "alexw@contoso.com",
+        "type": "unknown"
+      },
+      {
+        "name": "Alex Wilber",
+        "address": "alex.wilber@outlook.com",
+        "type": "personal"
+      }
+    ],
+    "primaryEmailAddress": {
+      "name": "Alex Wilber",
+      "address": "alexw@contoso.com"
+    },
+    "secondaryEmailAddress": {
+      "name": "Alex Wilber",
+      "address": "alex.wilber@outlook.com"
+    },
+    "tertiaryEmailAddress": null,
+    "imAddresses": [
+      "sip:alexw@contoso.com"
+    ],
+    "jobTitle": "Web Marketing Manager",
     "companyName": null,
     "department": null,
     "officeLocation": null,
@@ -155,12 +179,6 @@ Content-type: application/json
     "spouseName": null,
     "personalNotes": "",
     "children": [],
-    "emailAddresses": [
-        {
-            "name": "Alex@FineArtSchool.net",
-            "address": "Alex@FineArtSchool.net"
-        }
-    ],
     "homeAddress": {},
     "businessAddress": {},
     "otherAddress": {}

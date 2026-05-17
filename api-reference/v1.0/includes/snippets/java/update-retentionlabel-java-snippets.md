@@ -8,9 +8,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-com.microsoft.graph.beta.models.security.RetentionLabel retentionLabel = new com.microsoft.graph.beta.models.security.RetentionLabel();
+com.microsoft.graph.models.security.RetentionLabel retentionLabel = new com.microsoft.graph.models.security.RetentionLabel();
 retentionLabel.setOdataType("#microsoft.graph.security.retentionLabel");
-com.microsoft.graph.beta.models.security.RetentionDurationInDays retentionDuration = new com.microsoft.graph.beta.models.security.RetentionDurationInDays();
+com.microsoft.graph.models.security.RetentionDurationInDays retentionDuration = new com.microsoft.graph.models.security.RetentionDurationInDays();
 retentionDuration.setOdataType("microsoft.graph.security.retentionDurationInDays");
 retentionDuration.setDays(2555);
 retentionLabel.setRetentionDuration(retentionDuration);

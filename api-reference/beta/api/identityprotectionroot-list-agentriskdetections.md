@@ -90,12 +90,15 @@ GET https://graph.microsoft.com/beta/identityProtection/agentRiskDetections
 [!INCLUDE [sample-code](../includes/snippets/php/list-agentriskdetection-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-agentriskdetection-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-agentriskdetection-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 
@@ -118,6 +121,7 @@ Content-Type: application/json
 			"id": "1e384c2b0799b01834c0f886560a9a64e433135fe5b8607c535ebbfb03d2ee67",
 			"agentId": "229da549-7a91-4365-900f-d4ef49a759a0",
 			"agentDisplayName": "Copilot Application",
+			"blueprintId": "b3390471-68c5-466a-9ac2-b93e2a454532",
 			"identityType": "agentIdentity",
 			"activityDateTime": "2025-07-30T15:38:56.9594972Z",
 			"detectedDateTime": "2025-07-30T15:38:56.9594972Z",
@@ -128,7 +132,8 @@ Content-Type: application/json
 			"riskState": "atRisk",
 			"riskEventType": "unfamiliarResourceAccess",
 			"riskEvidence": "Agent targeted resources that it does not usually access.",
-			"additionalInfo": ""
+			"additionalInfo": "",
+			"source": "activeDirectory"
     }
   ]
 }

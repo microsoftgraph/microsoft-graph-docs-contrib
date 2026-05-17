@@ -20,7 +20,7 @@ Delete an open extension ([openTypeExtension](../resources/opentypeextension.md)
 
 For the list of resources that support open extensions, see the table in the [Permissions](#permissions) section.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -35,6 +35,7 @@ Depending on the resource you're deleting the extension from and the permission 
 | [group event](../resources/event.md) | Group.ReadWrite.All | Not supported. | Not supported |
 | [group post](../resources/post.md) | Group.ReadWrite.All | Not supported. | Group.ReadWrite.All |
 | [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
+| [note](../resources/note.md) | ShortNotes.ReadWrite | ShortNotes.ReadWrite | ShortNotes.ReadWrite.All |
 | [organization](../resources/organization.md) | Organization.ReadWrite.All | Not supported. | Organization.ReadWrite.All |
 | [personal contact](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
 | [site](../resources/site.md) | Sites.ReadWrite.All | Not supported. | Not supported. |
@@ -58,13 +59,14 @@ DELETE /groups/{groupId}/extensions/{extensionId}
 DELETE /groups/{groupId}/events/{eventId}/extensions/{extensionId}
 DELETE /groups/{groupId}/threads/{threadIid}/posts/{postId}/extensions/{extensionId}
 DELETE /users/{userIid|userPrincipalName}/messages/{messageId}/extensions/{extensionId}
+DELETE /users/{userId|userPrincipalName}/notes/{noteId}/extensions/{extensionId}
 DELETE /organization/{organizationId}/extensions/{extensionId}
 DELETE /users/{userId|userPrincipalName}/contacts/{contactId}/extensions/{extensionId}
 DELETE /users/{userId|userPrincipalName}/extensions/{extensionId}
-DELETE /users/me/todo/lists/{listId}/extensions/{extensionId}
-DELETE /users/me/todo/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
-DELETE /users/me/tasks/lists/{listId}/extensions/{extensionId}
-DELETE /users/me/tasks/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
+DELETE /users/{userId|userPrincipalName}/todo/lists/{listId}/extensions/{extensionId}
+DELETE /users/{userId|userPrincipalName}/todo/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
+DELETE /users/{userId|userPrincipalName}/tasks/lists/{listId}/extensions/{extensionId}
+DELETE /users/{userId|userPrincipalName}/tasks/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
 DELETE /drive/items/{itemId}/extensions/{extensionId}
 DELETE /sites/{site-id}/extensions/{extensionId}
 ```

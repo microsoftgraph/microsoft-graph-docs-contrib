@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "onedriveforbusinessbrowsesession_browse" } -->
 [!INCLUDE [permissions-table](../includes/permissions/onedriveforbusinessbrowsesession-browse-permissions.md)]
 
+[!INCLUDE [rbac-backuprestore-browse-granular-apis](../includes/rbac-for-apis/rbac-backuprestore-browse-granular-apis.md)]
+
 ## HTTP request
 
 <!-- {
@@ -71,6 +73,7 @@ The following example shows how to get the top browsable locations.
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "onedriveforbusinessbrowsesessionthis.browse.empty"
@@ -82,6 +85,12 @@ POST https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusines
 {}
 
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/onedriveforbusinessbrowsesessionthisbrowseempty-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -117,6 +126,7 @@ Content-Type: application/json
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "onedriveforbusinessbrowsesessionthis.browse.body"
@@ -130,6 +140,12 @@ POST https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusines
     "browseResourceType": "site"
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/onedriveforbusinessbrowsesessionthisbrowsebody-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -241,6 +257,7 @@ We get the nextLink in the response of first POST api call as shown above and su
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "onedriveforbusinessbrowsesessionthis.browse.nextlink"
@@ -249,6 +266,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/solutions/backupRestore/oneDriveForBusinessBrowseSessions/m_RtZ8BiiUXOK69cuN6gwubfm9_yeVlDg8s6hci01_cVOAE/browse?$skiptoken=nextFetchToken
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/onedriveforbusinessbrowsesessionthisbrowsenextlink-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

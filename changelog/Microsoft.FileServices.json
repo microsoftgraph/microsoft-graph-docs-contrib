@@ -3,6 +3,300 @@
     {
       "ChangeList": [
         {
+          "Id": "12338e2d-f18e-4c08-a135-5a434b15526c",
+          "ApiChange": "Method",
+          "ChangedApiName": "fileStorageContainer",
+          "ChangeType": "Addition",
+          "Description": "Added the [Upsert permissions](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-patch-permissions?view=graph-rest-beta) operation to the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource. Use delta patch to create or update up to 10 [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-beta) objects on a **fileStorageContainer** in a single request.",
+          "Target": "fileStorageContainer"
+        }
+      ],
+      "Id": "12338e2d-f18e-4c08-a135-5a434b15526c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-05-13T00:00:00Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3313a309-b653-4f92-8062-f0bbc0c34c70",
+          "ApiChange": "Method",
+          "ChangedApiName": "fileStorageContainer",
+          "ChangeType": "Addition",
+          "Description": "Added the [Upsert permissions](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-patch-permissions?view=graph-rest-1.0) operation to the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource. Use delta patch to create or update up to 10 [permission](https://learn.microsoft.com/en-us/graph/api/resources/permission?view=graph-rest-1.0) objects on a **fileStorageContainer** in a single request.",
+          "Target": "fileStorageContainer"
+        }
+      ],
+      "Id": "3313a309-b653-4f92-8062-f0bbc0c34c70",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-05-13T00:00:00Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5d6e9a5b-3c66-40c9-b3dd-a6fa374f1240",
+          "ApiChange": "Property",
+          "ChangedApiName": "itemCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **itemCount** property to the [list](https://learn.microsoft.com/en-us/graph/api/resources/list?view=graph-rest-beta) resource.",
+          "Target": "list"
+        }
+      ],
+      "Id": "5d6e9a5b-3c66-40c9-b3dd-a6fa374f1240",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-04-24T23:41:39.1409717Z",
+      "WorkloadArea": "Files",
+      "SubArea": "" 
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e7a4527a-30ea-4877-9cea-e7340b1f7877",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "height",
+          "ChangeType": "Addition",
+          "Description": "Added the **height** query parameter to the [API to download a file in another format](https://learn.microsoft.com/en-us/graph/api/driveitem-get-content-format?view=graph-rest-beta).",
+          "Target": "driveItem-get-content-format"
+        },
+        {
+          "Id": "e7a4527a-30ea-4877-9cea-e7340b1f7877",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "width",
+          "ChangeType": "Addition",
+          "Description": "Added the **width** query parameter to the [API to download a file in another format](https://learn.microsoft.com/en-us/graph/api/driveitem-get-content-format?view=graph-rest-beta).",
+          "Target": "driveItem-get-content-format"
+        }
+      ],
+      "Id": "e7a4527a-30ea-4877-9cea-e7340b1f7877",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-04-17T23:41:39.1409717Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8d880708-d68a-4a9a-b72f-954b6b86e20b",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "height",
+          "ChangeType": "Addition",
+          "Description": "Added the **height** query parameter to the [API to download a file in another format](https://learn.microsoft.com/en-us/graph/api/driveitem-get-content-format?view=graph-rest-1.0).",
+          "Target": "driveItem-get-content-format"
+        },
+        {
+          "Id": "8d880708-d68a-4a9a-b72f-954b6b86e20b",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "width",
+          "ChangeType": "Addition",
+          "Description": "Added the **width** query parameter to the [API to download a file in another format](https://learn.microsoft.com/en-us/graph/api/driveitem-get-content-format?view=graph-rest-1.0).",
+          "Target": "driveItem-get-content-format"
+        }
+      ],
+      "Id": "8d880708-d68a-4a9a-b72f-954b6b86e20b",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-04-17T23:41:39.1409717Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "63d99556-8815-47b2-8c0c-27bedb7ecc73",
+          "ApiChange": "Method",
+          "ChangedApiName": "itemActivity: list",
+          "ChangeType": "Addition",
+          "Description": "Added the [List](https://learn.microsoft.com/en-us/graph/api/itemactivity-list?view=graph-rest-1.0) operation to the [itemActivity](https://learn.microsoft.com/en-us/graph/api/resources/itemActivity?view=graph-rest-1.0) resource.",
+          "Target": "itemActivity"
+        }
+      ],
+      "Id": "63d99556-8815-47b2-8c0c-27bedb7ecc73",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-04-17T00:00:00.000Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e010d96a-7a4e-4b7c-aa22-05bd067da980",
+          "ApiChange": "Property",
+          "ChangedApiName": "itemCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **itemCount** property to the [list](https://learn.microsoft.com/en-us/graph/api/resources/list?view=graph-rest-beta) resource.",
+          "Target": "list"
+        }
+      ],
+      "Id": "e010d96a-7a4e-4b7c-aa22-05bd067da980",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-03-29T23:41:39.1409717Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "555e6775-6e2e-4c2e-9077-45141b8bf490",
+          "ApiChange": "Property",
+          "ChangedApiName": "principalId",
+          "ChangeType": "Addition",
+          "Description": "Added the **principalId** property to the [sharePointGroup](https://learn.microsoft.com/en-us/graph/api/resources/sharepointgroup?view=graph-rest-beta) resource.",
+          "Target": "sharePointGroup"
+        },
+        {
+          "Id": "555e6775-6e2e-4c2e-9077-45141b8bf490",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointGroupIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointGroupIdentity](https://learn.microsoft.com/en-us/graph/api/resources/sharepointgroupidentity?view=graph-rest-beta) resource type.",
+          "Target": "sharePointGroupIdentity"
+        },
+        {
+          "Id": "555e6775-6e2e-4c2e-9077-45141b8bf490",
+          "ApiChange": "Property",
+          "ChangedApiName": "sharePointGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharePointGroup** property to the [sharePointIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/sharepointidentityset?view=graph-rest-beta) resource.",
+          "Target": "sharePointIdentitySet"
+        }
+      ],
+      "Id": "555e6775-6e2e-4c2e-9077-45141b8bf490",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-03-29T01:57:33.226047Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7b48d671-3f04-4f2d-90f0-d0026a4818d8",
+          "ApiChange": "Method",
+          "ChangedApiName": "removeRetentionLabel",
+          "ChangeType": "Change",
+          "Description": "Added support for the `DELETE /groups/{group-id}/drive/items/{item-id}/retentionLabel`, `DELETE /me/drive/items/{item-id}/retentionLabel`, and `DELETE /users/{user-id}/drive/items/{item-id}/retentionLabel` in the [removeRetentionLabel](https://learn.microsoft.com/en-us/graph/api/driveitem-removeretentionlabel?view=graph-rest-beta) of the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
+          "Target": "driveItem"
+        }
+      ],
+      "Id": "7b48d671-3f04-4f2d-90f0-d0026a4818d8",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-03-11T20:51:08.101659Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8ac5619f-4267-4d2d-b466-205c42c4ab6e",
+          "ApiChange": "Property",
+          "ChangedApiName": "archivalDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the **archivalDetails** property to the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainer?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainer"
+        },
+        {
+          "Id": "8ac5619f-4267-4d2d-b466-205c42c4ab6e",
+          "ApiChange": "Method",
+          "ChangedApiName": "archive",
+          "ChangeType": "Addition",
+          "Description": "Added the [archive](https://learn.microsoft.com/en-us/graph/api/fileStorageContainer-archive?view=graph-rest-beta) method to the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainer?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainer"
+        },
+        {
+          "Id": "8ac5619f-4267-4d2d-b466-205c42c4ab6e",
+          "ApiChange": "Method",
+          "ChangedApiName": "unarchive",
+          "ChangeType": "Addition",
+          "Description": "Added the [unarchive](https://learn.microsoft.com/en-us/graph/api/fileStorageContainer-unarchive?view=graph-rest-beta) method to the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainer?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainer"
+        },
+        {
+          "Id": "8ac5619f-4267-4d2d-b466-205c42c4ab6e",
+          "ApiChange": "Property",
+          "ChangedApiName": "archivedBy",
+          "ChangeType": "Addition",
+          "Description": "Added the **archivedBy** property to the [siteArchivalDetails](https://learn.microsoft.com/en-us/graph/api/resources/siteArchivalDetails?view=graph-rest-beta) resource.",
+          "Target": "siteArchivalDetails"
+        },
+        {
+          "Id": "8ac5619f-4267-4d2d-b466-205c42c4ab6e",
+          "ApiChange": "Property",
+          "ChangedApiName": "archivedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **archivedDateTime** property to the [siteArchivalDetails](https://learn.microsoft.com/en-us/graph/api/resources/siteArchivalDetails?view=graph-rest-beta) resource.",
+          "Target": "siteArchivalDetails"
+        }
+      ],
+      "Id": "8ac5619f-4267-4d2d-b466-205c42c4ab6e",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-03-11T08:51:41.6874556Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "71fdf3e6-ddee-443e-9221-b9965f11e3da",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "sharePointGroups",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharePointGroups** relationship to the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
+          "Target": "fileStorageContainer"
+        },
+        {
+          "Id": "71fdf3e6-ddee-443e-9221-b9965f11e3da",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointGroup](https://learn.microsoft.com/en-us/graph/api/resources/sharepointgroup?view=graph-rest-1.0) resource.",
+          "Target": "sharePointGroup"
+        },
+        {
+          "Id": "71fdf3e6-ddee-443e-9221-b9965f11e3da",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointGroupIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointGroupIdentity](https://learn.microsoft.com/en-us/graph/api/resources/sharepointgroupidentity?view=graph-rest-1.0) resource.",
+          "Target": "sharePointGroupIdentity"
+        },
+        {
+          "Id": "71fdf3e6-ddee-443e-9221-b9965f11e3da",
+          "ApiChange": "Property",
+          "ChangedApiName": "sharePointGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the **sharePointGroup** property to the [sharePointIdentitySet](https://learn.microsoft.com/en-us/graph/api/resources/sharepointidentityset?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "sharePointIdentitySet"
+        },
+        {
+          "Id": "71fdf3e6-ddee-443e-9221-b9965f11e3da",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sharePointGroupMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [sharePointGroupMember](https://learn.microsoft.com/en-us/graph/api/resources/sharepointgroupmember?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "sharePointGroupMember"
+        }
+      ],
+      "Id": "71fdf3e6-ddee-443e-9221-b9965f11e3da",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-04-30T01:57:33.2263995Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "e6d0db29-6c02-4778-a0e1-87dd002f1e8e",
           "ApiChange": "Property",
           "ChangedApiName": "deleted",
@@ -37,7 +331,7 @@
           "Target": "drive"
         },
         {
-          "Id": "cfd328aa-a83a-49ed-982e-f25c37a312d2",
+          "Id": "3f2504e0-4f89-11d3-9a0c-0305e82c3301",
           "ApiChange": "Annotation",
           "ChangedApiName": "Org.OData.Core.V1.Revisions",
           "ChangeType": "Deprecation",
@@ -45,7 +339,7 @@
           "Target": "recent"
         },
         {
-          "Id": "cfd328aa-a83a-49ed-982e-f25c37a312d2",
+          "Id": "3f2504e0-4f89-11d3-9a0c-0305e82c3301",
           "ApiChange": "Annotation",
           "ChangedApiName": "Org.OData.Core.V1.Revisions",
           "ChangeType": "Deprecation",
@@ -79,7 +373,7 @@
           "Target": "drive"
         },
         {
-          "Id": "f3a53290-debd-4e11-a89e-fa38a7063991",
+          "Id": "e3a7f8c1-9d42-4b6a-8f3e-7c2d1a9b5f84",
           "ApiChange": "Annotation",
           "ChangedApiName": "Org.OData.Core.V1.Revisions",
           "ChangeType": "Deprecation",
@@ -87,7 +381,7 @@
           "Target": "recent"
         },
         {
-          "Id": "f3a53290-debd-4e11-a89e-fa38a7063991",
+          "Id": "e3a7f8c1-9d42-4b6a-8f3e-7c2d1a9b5f84",
           "ApiChange": "Annotation",
           "ChangedApiName": "Org.OData.Core.V1.Revisions",
           "ChangeType": "Deprecation",
@@ -885,7 +1179,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "permissions",
           "ChangeType": "Addition",
-          "Description": "Added the **permissions** navigation property to [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource.",
+          "Description": "Added the **permissions** relationship to [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource.",
           "Target": "fileStorageContainer"
         },
         {
@@ -943,7 +1237,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "permissions",
           "ChangeType": "Addition",
-          "Description": "Added the **permissions** navigation property to [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
+          "Description": "Added the **permissions** relationship to [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
           "Target": "fileStorageContainer"
         },
         {
@@ -4435,7 +4729,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "sharePointGroups",
           "ChangeType": "Addition",
-          "Description": "Added the **sharePointGroups** relationship to the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainer?view=graph-rest-beta) resource.",
+          "Description": "Added the **sharePointGroups** relationship to the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource.",
           "Target": "fileStorageContainer"
         },
         {
@@ -4443,7 +4737,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharePointGroup",
           "ChangeType": "Addition",
-          "Description": "Added the [sharePointGroup](https://learn.microsoft.com/en-us/graph/api/resources/sharePointGroup?view=graph-rest-beta) resource and associated methods.",
+          "Description": "Added the [sharePointGroup](https://learn.microsoft.com/en-us/graph/api/resources/sharepointgroup?view=graph-rest-beta) resource and associated methods.",
           "Target": "sharePointGroup"
         },
         {
@@ -4451,7 +4745,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharePointGroupMember",
           "ChangeType": "Addition",
-          "Description": "Added the [sharePointGroupMember](https://learn.microsoft.com/en-us/graph/api/resources/sharePointGroupMember?view=graph-rest-beta) resource and associated methods.",
+          "Description": "Added the [sharePointGroupMember](https://learn.microsoft.com/en-us/graph/api/resources/sharepointgroupmember?view=graph-rest-beta) resource and associated methods.",
           "Target": "sharePointGroupMember"
         }
       ],
@@ -5389,6 +5683,74 @@
     {
       "ChangeList": [
         {
+          "Id": "c7c1fe73-14e6-45dd-abbc-c857e3ced486",
+          "ApiChange": "Method",
+          "ChangedApiName": "delete",
+          "ChangeType": "Addition",
+          "Description": "Added the [Delete column](https://learn.microsoft.com/graph/api/filestoragecontainer-delete-column?view=graph-rest-1.0) method to the [fileStorageContainer](https://learn.microsoft.com/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
+          "Target": "fileStorageContainer"
+        },
+        {
+          "Id": "c7c1fe73-14e6-45dd-abbc-c857e3ced486",
+          "ApiChange": "Method",
+          "ChangedApiName": "get",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get column](https://learn.microsoft.com/graph/api/filestoragecontainer-get-column?view=graph-rest-1.0) method to the [fileStorageContainer](https://learn.microsoft.com/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
+          "Target": "fileStorageContainer"
+        },
+        {
+          "Id": "c7c1fe73-14e6-45dd-abbc-c857e3ced486",
+          "ApiChange": "Method",
+          "ChangedApiName": "update",
+          "ChangeType": "Addition",
+          "Description": "Added the [Update column](https://learn.microsoft.com/graph/api/filestoragecontainer-update-column?view=graph-rest-1.0) method to the [fileStorageContainer](https://learn.microsoft.com/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
+          "Target": "fileStorageContainer"
+        },
+        {
+          "Id": "c7c1fe73-14e6-45dd-abbc-c857e3ced486",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "columns",
+          "ChangeType": "Addition",
+          "Description": "Added the **columns** relationship to the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/fileStorageContainer?view=graph-rest-1.0) resource.",
+          "Target": "fileStorageContainer"
+        }
+      ],
+      "Id": "c7c1fe73-14e6-45dd-abbc-c857e3ced486",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-03-04T05:31:00.804975Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2da9e53b-3b1a-4842-9063-2a2713fa2f6f",
+          "ApiChange": "Method",
+          "ChangedApiName": "fileStorageContainer",
+          "ChangeType": "Change",
+          "Description": "Updated the endpoint for the [Delete column](https://learn.microsoft.com/graph/api/filestoragecontainer-delete-column?view=graph-rest-beta) method of the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource to use `DELETE /storage/fileStorage/containers/{containerId}/columns/{columnId}` instead of `DELETE /storageContainers/{containerId}/columns/{columnId}` in the request URL.",
+          "Target": "fileStorageContainer"
+        },
+        {
+          "Id": "2da9e53b-3b1a-4842-9063-2a2713fa2f6f",
+          "ApiChange": "Method",
+          "ChangedApiName": "fileStorageContainer",
+          "ChangeType": "Change",
+          "Description": "Updated the endpoint for the [Get column](https://learn.microsoft.com/graph/api/filestoragecontainer-get-column?view=graph-rest-beta) method of the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource to use `GET /storage/fileStorage/containers/{containerId}/columns/{columnId}` instead of `GET /storageContainers/{containerId}/columns/{columnId}` in the request URL.",
+          "Target": "fileStorageContainer"
+        }
+      ],
+      "Id": "2da9e53b-3b1a-4842-9063-2a2713fa2f6f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-03-04T05:31:00.804975Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "387c18f1-d16e-4eed-a432-9990c07d71a9",
           "ApiChange": "Enumeration",
           "ChangedApiName": "fileArchiveStatus",
@@ -5425,6 +5787,56 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2026-02-05T23:09:29.5797462Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f6534d01-a982-4f90-a206-382e54dc0829",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "permissions",
+          "ChangeType": "Addition",
+          "Description": "Added the **permissions** relationship to the [fileStorageContainerType](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainertype?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainerType"
+        },
+        {
+          "Id": "f6534d01-a982-4f90-a206-382e54dc0829",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added the [create permission](https://learn.microsoft.com/en-us/graph/api/filestoragecontainertype-post-permissions?view=graph-rest-beta) operation to the [fileStorageContainerType](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainertype?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainerType"
+        },
+        {
+          "Id": "f6534d01-a982-4f90-a206-382e54dc0829",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [list permissions](https://learn.microsoft.com/en-us/graph/api/filestoragecontainertype-list-permissions?view=graph-rest-beta) operation to the [fileStorageContainerType](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainertype?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainerType"
+        },
+        {
+          "Id": "f6534d01-a982-4f90-a206-382e54dc0829",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [get permission](https://learn.microsoft.com/en-us/graph/api/filestoragecontainertype-get-permission?view=graph-rest-beta) operation to the [fileStorageContainerType](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainertype?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainerType"
+        },
+        {
+          "Id": "f6534d01-a982-4f90-a206-382e54dc0829",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Added the [delete permission](https://learn.microsoft.com/en-us/graph/api/filestoragecontainertype-delete-permissions?view=graph-rest-beta) operation to the [fileStorageContainerType](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainertype?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainerType"
+        }
+      ],
+      "Id": "f6534d01-a982-4f90-a206-382e54dc0829",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-03-23T00:00:00.000Z",
       "WorkloadArea": "Files",
       "SubArea": ""
     }

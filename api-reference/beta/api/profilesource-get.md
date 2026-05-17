@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [profileSource](../resources/profilesource.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -121,20 +121,18 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.profileSource",
-    "id": "27f1af7b-b166-4f5b-b994-ae135a581547",
-    "sourceId": "bamboohr1",
-    "kind": "BambooHR",
-    "displayName": "HR Platform",
-    "webUrl": "https://bamboohr.contoso.com/login",
-    "localizations": [
-      {
-        "displayName": "HR-Plattform",
-        "webUrl": "http://bamboohr.contoso.com/de/login",
-        "languageTag": "de"
-      }
-    ]
-  }
+  "@odata.type": "#microsoft.graph.profileSource",
+  "id": "27f1af7b-b166-4f5b-b994-ae135a581547",
+  "sourceId": "bamboohr1",
+  "kind": "BambooHR",
+  "displayName": "HR Platform",
+  "webUrl": "https://bamboohr.contoso.com/login",
+  "localizations": [
+    {
+      "displayName": "HR-Plattform",
+      "webUrl": "http://bamboohr.contoso.com/de/login",
+      "languageTag": "de"
+    }
+  ]
 }
 ```

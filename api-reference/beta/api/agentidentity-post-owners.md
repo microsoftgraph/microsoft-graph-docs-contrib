@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add an owner for the [agentIdentity](../resources/agentIdentity.md). Agent identity owners can be users, the agent identity itself, or other service principals.
+Add an owner for the [agentIdentity](../resources/agentidentity.md). Agent identity owners can be users, the agent identity itself, or other service principals.
 
 ## Permissions
 
@@ -49,7 +49,7 @@ In the request body, supply a reference to the [directoryObject](../resources/di
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and a [directoryObject](../resources/directoryobject.md) object in the response body.
+If successful, this method returns a `204 No Content` response code. No response body is returned.
 
 ## Examples
 
@@ -76,7 +76,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 The following example shows the response.

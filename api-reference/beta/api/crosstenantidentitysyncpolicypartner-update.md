@@ -1,6 +1,6 @@
 ---
 title: "Update crossTenantIdentitySyncPolicyPartner"
-description: "Update the user synchronization policy of a partner-specific configuration."
+description: "Update the user and group synchronization policy of a partner-specific configuration."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the user synchronization policy of a partner-specific configuration.
+Update the user and group synchronization policy of a partner-specific configuration.
 
 ## Permissions
 
@@ -48,7 +48,8 @@ PATCH /policies/crossTenantAccessPolicy/partners/{id}/identitySynchronization
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Display name for the cross-tenant user synchronization policy. Generally, this should be the tenant name of the partner Microsoft Entra organization. Optional.|
+|displayName|String|Display name for the cross-tenant user and group synchronization policy. Generally, this should be the tenant name of the partner Microsoft Entra organization. Optional.|
+|groupSyncInbound|[crossTenantGroupSyncInbound](../resources/crosstenantgroupsyncinbound.md)|Determines whether groups can be synchronized from the partner tenant. `false` causes any current group synchronization from the source tenant to the target tenant to stop. This property has no impact on existing groups that have already been synchronized.|
 |userSyncInbound|[crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|Determines whether users can be synchronized from the partner tenant. `false` causes any current user synchronization from the source tenant to the target tenant to stop. This property has no impact on existing users who have already been synchronized.|
 
 ## Response
@@ -72,6 +73,9 @@ PATCH https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners
 Content-Type: application/json
 
 {
+  "groupSyncInbound": {
+    "isSyncAllowed": true
+  },
   "userSyncInbound": {
     "isSyncAllowed": true
   }

@@ -32,6 +32,8 @@ Inherits from [entity](entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|backupRetentionPeriodInDays|Int32|The retention period of the backup, in days.|
+|billingPolicyId|String|The unique identifier of the billing policy assigned to the protection unit for cost allocation.|
 |createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the protection unit.|
 |createdDateTime|DateTimeOffset|The time of creation of the protection unit.|
 |error|[publicError](../resources/publicerror.md)|Contains error details if an error occurred while creating a protection unit.|
@@ -72,15 +74,17 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.protectionUnitBase",
+  "backupRetentionPeriodInDays": "Int32",
+  "billingPolicyId": "String",
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "error": {"@odata.type": "microsoft.graph.publicError"},
   "id": "String (identifier)",
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
+  "offboardRequestedDateTime": "String (timestamp)",
   "policyId": "String",
   "protectionSources": "String",
-  "status": "String",
-  "offboardRequestedDateTime": "String (timestamp)",
+  "status": "String"
 }
 ```

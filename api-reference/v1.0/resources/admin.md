@@ -1,5 +1,5 @@
 ---
-title: "Admin resource type"
+title: "admin resource type"
 description: "Represents an entity that acts as a container for administrator functionality."
 author: "angelgolfer-ms"
 ms.localizationpriority: medium
@@ -8,7 +8,7 @@ doc_type: resourcePageType
 ms.date: 10/30/2024
 ---
 
-# Admin resource type
+# admin resource type
 
 Namespace: microsoft.graph
 
@@ -20,6 +20,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+| configurationManagement | [configurationManagement](../resources/configurationmanagement.md) | A container for Tenant Configuration Management (TCM) resources. Read-only. |
 | edge | [edge](edge.md) | A container for Microsoft Edge resources. Read-only. |
 | exchange | [exchangeAdmin](../resources/exchangeadmin.md) |A container for the Exchange admin functionality. Read-only.|
 | microsoft365Apps |[adminMicrosoft365Apps](../resources/adminmicrosoft365apps.md)|A container for the Microsoft 365 apps admin functionality.|

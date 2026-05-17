@@ -19,7 +19,7 @@ const place = {
     city: 'Buffalo',
     state: 'NY',
     postalCode: '98052',
-    countryOrRegion: 'USA'
+    countryOrRegion: 'US'
   },
   geoCoordinates: {
     altitude: null,
@@ -27,7 +27,7 @@ const place = {
     longitude: -122.0,
     accuracy: null,
     altitudeAccuracy: null
- }
+  }
 };
 
 await client.api('/places/Building1RroomList@contoso.com')

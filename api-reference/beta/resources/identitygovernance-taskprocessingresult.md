@@ -30,10 +30,11 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |completedDateTime|DateTimeOffset|The date time when taskProcessingResult execution ended. Value is `null` if task execution is still in progress.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
 |createdDateTime|DateTimeOffset|The date time when the taskProcessingResult was created.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
-|failureReason|String|Describes why the taskProcessingResult has failed.|
+|failureReason|String|Describes why the taskProcessingResult failed.|
 |id|String|Identifier used for individually addressing a specific task processing result. Inherited from [entity](../resources/entity.md).<br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
-|processingStatus|[microsoft.graph.identityGovernance.lifecycleWorkflowProcessingStatus](../resources/identitygovernance-taskprocessingresult.md)|Describes the execution status of the `taskProcessingResult`. The possible values are: `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, `unknownFutureValue`.<br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
-|startedDateTime|DateTimeOffset|The date time when taskProcessingResult execution started. Value is `null` if task execution has not yet started.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
+|processingInfo|String|Additional human-readable context about the task processing outcome. This property contains information about edge cases where the task completed successfully but the expected action wasn't performed because the target was already in the desired state, such as when the user was already a member of the specified group. Returns `null` when no additional context is needed. Nullable.|
+|processingStatus|[microsoft.graph.identityGovernance.lifecycleWorkflowProcessingStatus](../resources/enums-identitygovernance-lifecycleworkflowprocessingstatus.md)|Describes the execution status of the `taskProcessingResult`. <br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
+|startedDateTime|DateTimeOffset|The date time when taskProcessingResult execution started. Value is `null` if task execution hasn't started yet.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
 
 ## Relationships
 
@@ -60,6 +61,7 @@ The following JSON representation shows the resource type.
   "completedDateTime": "String (timestamp)",
   "createdDateTime": "String (timestamp)",
   "failureReason": "String",
+  "processingInfo": "String",
   "processingStatus": "String",
   "startedDateTime": "String (timestamp)"
 }

@@ -1,18 +1,21 @@
 ---
-title: "Update tiIndicator"
+title: "Update tiIndicator (deprecated)"
 description: "Update the properties of a tiIndicator object."
 ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: "security"
 doc_type: apiPageType
 ms.date: 04/04/2024
+ROBOTS: NOINDEX
 ---
 
-# Update tiIndicator
+# Update tiIndicator (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [security-tiindicator-deprecation](../includes/security-tiindicator-deprecation.md)]
 
 Update the properties of a [tiIndicator](../resources/tiindicator.md) object.
 

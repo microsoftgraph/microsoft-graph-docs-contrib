@@ -16,7 +16,7 @@ ms.date: 04/25/2025
 
 Microsoft Graph Lifecycle Workflows APIs let you automate user lifecycle processes at the joiner, leaver, and mover levels. 
 
-Core to the workflows are [tasks](/graph/api/resources/identitygovernance-task) that represent specific actions that run automatically when a workflow is triggered. [24 built-in tasks](/graph/api/resources/identitygovernance-task) are available to support creating custom workflows. These tasks are configured on the **arguments** propertyof a task definition.
+Core to the workflows are [tasks](/graph/api/resources/identitygovernance-task) that represent specific actions that run automatically when a workflow is triggered. [30 built-in tasks](/graph/api/resources/identitygovernance-task) are available to support creating custom workflows. These tasks are configured on the **arguments** property of a task definition.
 
 This article explains how to configure the arguments property for built-in tasks to streamline automation.
 
@@ -29,11 +29,15 @@ This article explains how to configure the arguments property for built-in tasks
 | Generate Temporary Access Pass and send via email to user's manager | 1b555e50-7f65-41d5-b514-5894a026d10d | **name**: `tapLifetimeMinutes`<br/>**value**: `10` up to `43000`<br/><br/>**name**: `tapIsUsableOnce`<br/>**value**: `true` or `false`<br/><br/>**name**: `to`<br/>**value**: `User`, `Managers`, `Sponsors`, or the string of a specific `userID`. If `Sponsors` is selected, you're not able to add another user in the `cc` argument.<br/><br/>**Prerequisites**:<br/><ol><li>The user must be assigned a manager.</li><li>The user's manager must have their mail enabled.</li><li>The temporary access pass (TAP) policy must be enabled in the tenant and the user enabled to use the TAP authentication method. For more information, see [temporaryAccessPassAuthenticationMethodConfiguration resource type](/graph/api/resources/temporaryaccesspassauthenticationmethodconfiguration).</li></ol> |
 | Add user to groups | 22085229-5809-45e8-97fd-270d28d66910 | **name**: `groupID`<br/>**value**: A valid group ID or a comma-separated list of groups to which the user is added as a member. For example, `"06269010-2d8e-48e4-8f0e-33580720c9e1, 06bba22c-775e-42d8-b451-4221af061af0, 182f68db-6513-4e79-9ec2-a7e89a460e7f"`. |
 | Add user to teams | e440ed8d-25a1-4618-84ce-091ed5be5594 | **name**: `teamID`<br/>**value**: A valid group ID or a comma-separated list of teams to which the user is added as a member. For example, `"06269010-2d8e-48e4-8f0e-33580720c9e1, 06bba22c-775e-42d8-b451-4221af061af0, 182f68db-6513-4e79-9ec2-a7e89a460e7f"`. |
-| Enable user account | 6fc52c9d-398b-4305-9763-15f42c1676fc | **name**: `enableOnPremisesAccount`<br/>**value**: A Boolean value that indicates whether the task enables synced on-premises user accounts. |
+| Update user attributes (Preview) | 2c8f4a1b-7d3e-4f9c-8a5b-6e1d2c3f4a5b | **name**: `attributeUpdates`<br/>**value**: A JSON string specifying up to 10 user attributes to update or clear. The attributes can include built-in, on-premises extensions, directory extensions, and employee org data. |
+| Enable user account | 6fc52c9d-398b-4305-9763-15f42c1676fc| **name**: `enableOnPremisesAccount`<br/>**value**: A Boolean value that indicates whether the task enables synced on-premises user accounts. |
 | Run a custom task extension | 4262b724-8dba-4fad-afc3-43fcbb497a0e | **name**: `CustomTaskExtensionID`<br/>**value**: The ID of the custom task extension. |
 | Assign licenses to users (Preview) | 683c87a4-2ad4-420b-97d4-220d90afcd24 | **name**: `licenses`<br/>**value**: The ID of the license you want to assign. |
 | Remove selected license assignments from user (Preview) | 5fc402a8-daaf-4b7b-9203-da868b05fc5f | **name**: `licenses`<br/>**value**: The ID of the license you want to assign. |
 | Revoke all refresh tokens for user | 509589a4-0466-4471-829e-49c5e502bdee | None. |
+| Send email to manager about sponsorship changes | b8c4e1f9-3a7d-4b2e-9c5f-8d6a9b1c2e3f | **name**: `cc`<br/>**value**: A valid user ID (String) for the user you want to cc in the email.<br/><br/>**name**: `customSubject`<br/>**value**: A custom subject header for the email being sent.<br/><br/>**name**: `customBody`<br/>**value**: The body of the customized email.<br/><br/>**name**: `locale`<br/>**value**: Language value that overrides the email recipient's language settings. This argument doesn't customize the custom text of the email, and should be set in the same language as the custom text.<br/><br/>**name**: `to`<br/>**value**: `User`, `Managers`, `Sponsors`, or the string of a specific `userID`. If `Sponsors` is selected, you're not able to add another user in the `cc` argument. |
+| Send email to co-sponsors about sponsor changes | ad3b85cd-75b1-43e7-b4b9-0e52faba3944 | **name**: `cc`<br/>**value**: A valid user ID (String) for the user you want to cc in the email.<br/><br/>**name**: `customSubject`<br/>**value**: A custom subject header for the email being sent.<br/><br/>**name**: `customBody`<br/>**value**: The body of the customized email.<br/><br/>**name**: `locale`<br/>**value**: Language value that overrides the email recipient's language settings. This argument doesn't customize the custom text of the email, and should be set in the same language as the custom text.<br/><br/>**name**: `to`<br/>**value**: `User`, `Managers`, `Sponsors`, or the string of a specific `userID`. If `Sponsors` is selected, you're not able to add another user in the `cc` argument. |
+| Transfer agent identity sponsorships to manager | b8f4c3d5-9e7a-4b1c-8f2d-6a5e8b9c7f4a | None.<br/><br/>**Prerequisites**:<br/><ol><li>The user must be assigned a manager.</li></ol> |
 | Disable user account | 1dfdfcc7-52fa-4c2e-bf3a-e3919cc12950 | **name**: `disableOnPremisesAccount`<br/>**value**: A Boolean value that indicates whether the task disables synced on-premises user accounts. |
 | Remove user from selected group | 1953a66c-751c-45e5-8bfe-01462c70da3c | **name**: `groupID`<br/>**value**: A valid group ID or a comma-separated list of groups that the user is a member of. For example, `"06269010-2d8e-48e4-8f0e-33580720c9e1, 06bba22c-775e-42d8-b451-4221af061af0, 182f68db-6513-4e79-9ec2-a7e89a460e7f"`. |
 | Remove users from all groups | b3a31406-2a15-4c9a-b25b-a658fa5f07fc | None |
@@ -45,6 +49,7 @@ This article explains how to configure the arguments property for built-in tasks
 | Send email to manager before user last day | 52853a3e-f4e5-4eb8-bb24-1ac09a1da935 | **name**: `cc`<br/>**value**: A valid user ID (String) for the user you want to cc in the email.<br/><br/>**name**: `customSubject`<br/>**value**: A custom subject header for the email being sent.<br/><br/>**name**: `customBody`<br/>**value**: The body of the customized email.<br/><br/>**name**: `locale`<br/>**value**: Language value that overrides the email recipient's language settings. Doesn't customize the custom text of the email, and should be set in the same language as the custom text.<br/><br/>**name**: `to`<br/>**value**: `User`, `Managers`, `Sponsors`, or the string of a specific `userID`. If `Sponsors` is selected, you're not able to add another user in the `cc` argument. |
 | Send email on user's last day | 9c0a1eaf-5bda-4392-9d9e-6e155bb57411 | **name**: `cc`<br/>**value**: A valid user ID (String) for the user you want to cc in the email.<br/><br/>**name**: `customSubject`<br/>**value**: A custom subject for the email being sent.<br/><br/>**name**: `customBody`<br/>**value**: The body of the customized email.<br/><br/>**name**: `locale`<br/>**value**: Language value that overrides the email recipient's language settings. Doesn't customize the custom text of the email, and should be set in the same language as the custom text.<br/><br/>**name**: `to`<br/>**value**: `User`, `Managers`, `Sponsors`, or the string of a specific `userID`. If `Sponsors` is selected, you're not able to add another user in the `cc` argument. |
 | Send offboarding email to user's manager after their last day | 6f22ddd4-b3a5-47a4-a846-0d7c201a49ce | **name**: `cc`<br/>**value**: A valid user ID (String) for the user you want to cc in the email.<br/><br/>**name**: `customSubject`<br/>**value**: A custom subject header for the email being sent.<br/><br/>**name**: `customBody`<br/>**value**: The body of the customized email.<br/><br/>**name**: `locale`<br/>**value**: Language value that overrides the email recipient's language settings. Doesn't customize the custom text of the email, and should be set in the same language as the custom text.<br/><br/>**name**: `to`<br/>**value**: `User`, `Managers`, `Sponsors`, or the string of a specific `userID`. If `Sponsors` is selected, you're not able to add another user in the `cc` argument. |
+| Send email about user inactivity | 92f74cb4-f1b6-4ec0-b766-96210f56edc2 | **name**: `cc`<br/>**value**: A valid user ID (String) for the user you want to cc in the email.<br/><br/>**name**: `customSubject`<br/>**value**: A custom subject header for the email being sent.<br/><br/>**name**: `customBody`<br/>**value**: The body of the customized email.<br/><br/>**name**: `locale`<br/>**value**: Language value that overrides the email recipient's language settings. This argument doesn't customize the custom text of the email, and should be set in the same language as the custom text.<br/><br/>**name**: `to`<br/>**value**: `User`, `Managers`, `Sponsors`, or the string of a specific `userID`. If `Sponsors` is selected, you're not able to add another user in the `cc` argument. |
 | Request user access package assignment | c1ec1e76-f374-4375-aaa6-0bb6bd4c60be | **name**: `assignmentPolicyId`<br/>**value**: A valid assignment policy ID (String) for the access package you want to assign the user.<br/><br/>**name**: `accessPackageId`<br/>**value**: A valid access package ID for the access package you want to assign to the user. |
 | Remove access package assignment for user | 4a0b64f2-c7ec-46ba-b117-18f262946c50 | **name**: `accessPackageId`<br/>**value**: A valid access package ID for the access package you want to unassign from the user. |
 | Remove all access package assignments for user | 42ae2956-193d-4f39-be06-691b8ac4fa1d | None |
@@ -160,7 +165,26 @@ This article explains how to configure the arguments property for built-in tasks
 }
 ```
 
-### Example 5: Enable a user account
+### Example 5: Update user attributes (Preview)
+
+```json
+{
+  "category": "joiner",
+  "continueOnError": false,
+  "description": "Update or clear user attribute values including custom attributes",
+  "displayName": "Update user attributes",
+  "isEnabled": true,
+  "taskDefinitionId": "2c8f4a1b-7d3e-4f9c-8a5b-6e1d2c3f4a5b",
+  "arguments": [
+    {
+      "name": "attributeUpdates",
+      "value": "[{\"attribute\":\"department\",\"value\":\"Sales\"},{\"attribute\":\"jobTitle\",\"value\":\"Account Executive\"}]"
+    }
+  ]
+}
+```
+
+### Example 6: Enable a user account
 
 ```json
 {
@@ -174,7 +198,7 @@ This article explains how to configure the arguments property for built-in tasks
 }
 ```
 
-### Example 6: Run a custom task extension
+### Example 7: Run a custom task extension
 
 ```json
 {
@@ -193,7 +217,7 @@ This article explains how to configure the arguments property for built-in tasks
 }
 ```
 
-### Example 7: Disable a user account
+### Example 8: Disable a user account
 
 ```json
 {
@@ -207,7 +231,7 @@ This article explains how to configure the arguments property for built-in tasks
 }
 ```
 
-### Example 8: Remove a user from selected groups
+### Example 9: Remove a user from selected groups
 
 ```json
 {
@@ -226,7 +250,7 @@ This article explains how to configure the arguments property for built-in tasks
 }
 ```
 
-### Example 9: Remove a user from all groups
+### Example 10: Remove a user from all groups
 
 ```json
 {
@@ -240,7 +264,7 @@ This article explains how to configure the arguments property for built-in tasks
 }
 ```
 
-### Example 10: Remove a user from selected teams
+### Example 11: Remove a user from selected teams
 
 ```json
 {
@@ -259,7 +283,7 @@ This article explains how to configure the arguments property for built-in tasks
 }
 ```
 
-### Example 11: Remove a user from all teams
+### Example 12: Remove a user from all teams
 
 ```json
 {
@@ -273,7 +297,7 @@ This article explains how to configure the arguments property for built-in tasks
 }
 ```
 
-### Example 12: Remove all license assignments from a user
+### Example 13: Remove all license assignments from a user
 
 ```json
 {
@@ -287,7 +311,7 @@ This article explains how to configure the arguments property for built-in tasks
 }
 ```
 
-### Example 13: Delete a user
+### Example 14: Delete a user
 
 ```json
 {
@@ -301,7 +325,7 @@ This article explains how to configure the arguments property for built-in tasks
 }
 ```
 
-### Example 14: Send an email to notify a manager of a user move
+### Example 15: Send an email to notify a manager of a user move
 
 ```json
 {
@@ -332,7 +356,7 @@ This article explains how to configure the arguments property for built-in tasks
 }
 ```
 
-### Example 15: Send an email to a manager before a user's last day
+### Example 16: Send an email to a manager before a user's last day
 
 ```json
 {
@@ -363,7 +387,7 @@ This article explains how to configure the arguments property for built-in tasks
 }
 ```
 
-### Example 16: Send an email on a user's last day
+### Example 17: Send an email on a user's last day
 
 ```json
 {
@@ -394,7 +418,7 @@ This article explains how to configure the arguments property for built-in tasks
 }
 ```
 
-### Example 17: Send the offboarding email to a user's manager after the user's last day of work
+### Example 18: Send the offboarding email to a user's manager after the user's last day of work
 
 ```json
 {
@@ -409,7 +433,7 @@ This article explains how to configure the arguments property for built-in tasks
 }
 ```
 
-### Example 18: Request user access package assignment
+### Example 19: Request user access package assignment
 
 ```json
 {
@@ -432,7 +456,7 @@ This article explains how to configure the arguments property for built-in tasks
 }
 ```
 
-### Example 19: Remove access package assignment for a user
+### Example 20: Remove access package assignment for a user
 
 ```json
 {
@@ -451,7 +475,7 @@ This article explains how to configure the arguments property for built-in tasks
 }
 ```
 
-### Example 20: Remove all access package assignments for a user
+### Example 21: Remove all access package assignments for a user
 
 ```json
 {
@@ -479,7 +503,7 @@ This article explains how to configure the arguments property for built-in tasks
 }
 ```
 
-### Example 21: Cancel pending access package assignment requests for a user
+### Example 22: Cancel pending access package assignment requests for a user
 
 ```json
 {
@@ -493,7 +517,7 @@ This article explains how to configure the arguments property for built-in tasks
 }
 ```
 
-### Example 22: Send onboarding reminder email
+### Example 23: Send onboarding reminder email
 
 ```json
 {
@@ -524,7 +548,7 @@ This article explains how to configure the arguments property for built-in tasks
 }
 ```
 
-### Example 23: Revoke all refresh tokens for user
+### Example 24: Revoke all refresh tokens for user
 
 ```json
 {
@@ -535,6 +559,113 @@ This article explains how to configure the arguments property for built-in tasks
   "isEnabled": true,
   "taskDefinitionId": "509589a4-0466-4471-829e-49c5e502bdee",
   "arguments": []
+}
+```
+
+### Example 25: Send email to manager about sponsorship changes
+
+```json
+{
+  "category": "mover",
+  "continueOnError": false,
+  "description": "Notify sponsor's manager about agent identity sponsorship transfer.",
+  "displayName": "Send email to manager about sponsorship transfer",
+  "isEnabled": true,
+  "taskDefinitionId": "b8c4e1f9-3a7d-4b2e-9c5f-8d6a9b1c2e3f",
+  "arguments": [
+    {
+      "name": "cc",
+      "value": "ac17d108-60cd-4eb2-a4b4-084cacda33f2,7d3ee937-edcc-46b0-9e2c-f832e01231ea"
+    },
+    {
+      "name": "customSubject",
+      "value": "{{userDisplayName}} has moved"
+    },
+    {
+      "name": "customBody",
+      "value": "Hello {{managerDisplayName}}\n\nwe are reaching out to let you know {{userDisplayName}} has moved in the organization and you have taken over their agent ID sponsorships.\n\nRegards\nYour IT department"
+    },
+    {
+      "name": "locale",
+      "value": "en-us"
+    }
+  ]
+}
+```
+
+### Example 26: Send email to co-sponsors about sponsor changes
+
+```json
+{
+  "category": "mover",
+  "continueOnError": false,
+  "description": "Notify co-sponsors about agent identity sponsorship changes.",
+  "displayName": "Send email to co-sponsors about sponsor changes",
+  "isEnabled": true,
+  "taskDefinitionId": "ad3b85cd-75b1-43e7-b4b9-0e52faba3944",
+  "arguments": [
+    {
+      "name": "cc",
+      "value": "ac17d108-60cd-4eb2-a4b4-084cacda33f2,7d3ee937-edcc-46b0-9e2c-f832e01231ea"
+    },
+    {
+      "name": "customSubject",
+      "value": "{{userDisplayName}} has moved"
+    },
+    {
+      "name": "customBody",
+      "value": "We are reaching out to let you know {{userDisplayName}} has moved in the organization and will no longer have sponsorship authority over agent IDs they previously sponsored with you.\n\nRegards\nYour IT department"
+    },
+    {
+      "name": "locale",
+      "value": "en-us"
+    }
+  ]
+}
+```
+
+### Example 27: Transfer agent identity sponsorships to manager
+
+```json
+{
+  "category": "mover",
+  "continueOnError": false,
+  "description": "Transfer all agent identities sponsored by user to manager.",
+  "displayName": "Transfer agent identity sponsorships to manager",
+  "isEnabled": true,
+  "taskDefinitionId": "b8f4c3d5-9e7a-4b1c-8f2d-6a5e8b9c7f4a",
+  "arguments": []
+}
+```
+
+### Example 28: Send email about user inactivity
+
+```json
+{
+  "category": "leaver",
+  "continueOnError": false,
+  "description": "Notify manager that user has been inactive",
+  "displayName": "Send email about user inactivity",
+  "isEnabled": true,
+  "taskDefinitionId": "92f74cb4-f1b6-4ec0-b766-96210f56edc2",
+  "arguments": [
+    {
+      "name": "cc",
+      "value": "1bda0458-cb4b-473d-baf5-61125c86a6d3,7f552c25-e0f6-40b6-b4e0-36bb40ba7fb6"
+    },
+    {
+      "name": "customSubject",
+      "value": "{{UserDisplayName}}'s account has been inactive for {{NumberofDays}} days."
+    },
+    {
+      "name": "customBody",
+      "value": "We're notifying you that a recent sign-in for {{UserDisplayName}}'s user account has not been detected, and the account is considered inactive. The last sign in was {{LastSigninDate}}. To maintain a secure environment, your organization may have already started the process to disable or delete this user account.\n\nPlease check your organization's policies and take appropriate action if this user account is still needed.\n\nRegards\nYour IT department"
+    },
+    {
+      "name": "locale",
+      "value": "en-us"
+    }
+  ]
 }
 ```
 

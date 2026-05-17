@@ -1,4 +1,4 @@
----
+﻿---
 title: "Get roleScopeTagAutoAssignment"
 description: "Read properties and relationships of the roleScopeTagAutoAssignment object."
 author: "jaiprakashmb"

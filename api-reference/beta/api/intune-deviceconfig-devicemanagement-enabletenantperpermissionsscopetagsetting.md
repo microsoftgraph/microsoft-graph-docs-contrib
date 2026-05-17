@@ -1,4 +1,4 @@
----
+﻿---
 title: "enableTenantPerPermissionsScopeTagSetting action"
 description: "This action will enable per permissions scope tag on the tenant."
 author: "jaiprakashmb"

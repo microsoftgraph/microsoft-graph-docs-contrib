@@ -20,6 +20,9 @@ Security providers create an alert in the system when they detect a threat. Micr
 
 [!INCLUDE [alerts-callout-two-types](../includes/alerts-callout-two-types.md)]
 
+> [!IMPORTANT]
+> To view Sentinel alerts and incidents you must onboard Sentinel to the Defender Portal. For more information see [Connect Microsoft Sentinel to the Microsoft Defender portal](/unified-secops/microsoft-sentinel-onboard).
+
 ## Methods
 
 |Method|Return type|Description|
@@ -27,6 +30,7 @@ Security providers create an alert in the system when they detect a threat. Micr
 |[List](../api/security-list-alerts_v2.md)|[microsoft.graph.security.alert](security-alert.md) collection|Get a list of [alert](../resources/security-alert.md) resources that track suspicious activities in an organization.|
 |[Get](../api/security-alert-get.md)|[microsoft.graph.security.alert](security-alert.md)|Get the properties of an [alert](../resources/security-alert.md) object in an organization based on the specified alert **ID** property.|
 |[Update](../api/security-alert-update.md)|[microsoft.graph.security.alert](../resources/security-alert.md)|Update the properties of an [alert](../resources/security-alert.md) object in an organization based on the specified alert **ID** property.|
+|[Move alerts](../api/security-alert-movealerts.md)|[microsoft.graph.security.mergeResponse](security-mergeresponse.md)|Move one or more [alert](../resources/security-alert.md) resources to an existing or a new [incident](../resources/security-incident.md).|
 |[Create comment](../api/security-alert-post-comments.md)| [alertComment](../resources/security-alertcomment.md) | Create a comment for an existing [alert](../resources/security-alert.md) based on the specified alert **ID** property.|
 
 ## Properties
@@ -38,7 +42,7 @@ Security providers create an alert in the system when they detect a threat. Micr
 |alertPolicyId|String| The ID of the policy that generated the alert, and populated when there is a specific policy that generated the alert, whether configured by a customer or a built-in policy.|
 |alertWebUrl|String| URL for the Microsoft 365 Defender portal alert page.|
 |assignedTo|String| Owner of the **alert**, or null if no owner is assigned.|
-|category|String| The attack kill-chain category that the alert belongs to. Aligned with the MITRE ATT&CK framework.|
+|categories|String collection| The attack kill-chain categories that the alert belongs to. Aligned with the MITRE ATT&CK framework.|
 |classification|[microsoft.graph.security.alertClassification](#alertclassification-values)| Specifies whether the alert represents a true threat. The possible values are: `unknown`, `falsePositive`, `truePositive`, `informationalExpectedActivity`, `unknownFutureValue`.|
 |comments|[microsoft.graph.security.alertComment](security-alertComment.md) collection| Array of comments created by the Security Operations (SecOps) team during the alert management process.|
 |createdDateTime|DateTimeOffset| Time when Microsoft 365 Defender created the alert.|
@@ -68,6 +72,7 @@ Security providers create an alert in the system when they detect a threat. Micr
 |threatFamilyName|String| Threat family associated with this alert.|
 |title|String| Brief identifying string value describing the alert.|
 |systemTags|String collection| The system tags associated with the alert.|
+|category (deprecated)|String| The attack kill-chain category that the alert belongs to. Aligned with the MITRE ATT&CK framework. This property is in the process of being deprecated. Use the **categories** property instead.|
 
 ### alertClassification values
 
@@ -159,6 +164,7 @@ The following JSON representation shows the resource type.
   "alertWebUrl": "String",
   "assignedTo": "String",
   "category": "String",
+  "categories": ["String"],
   "classification": "String",
   "comments": [{"@odata.type": "microsoft.graph.security.alertComment"}],
   "createdDateTime": "String (timestamp)",

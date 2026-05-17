@@ -6,7 +6,7 @@ ms.author: ombongifaith
 ms.reviewer: Licantrop0
 ms.subservice: ent-mcp-server
 ms.topic: get-started
-ms.date: 11/18/2025
+ms.date: 05/05/2026
 
 #customer intent: As a developer, I want to configure my AI client to connect to the Microsoft MCP Server so that I can integrate enterprise data into my applications.
 ---
@@ -59,20 +59,33 @@ Verify that both applications exist by using Microsoft Graph, Microsoft Entra Po
 GET https://graph.microsoft.com/v1.0/servicePrincipals?$select=id,appId,displayName&$filter=appId in('e8c77dc2-69b3-43f4-bc51-3213c9d915b4','aebc6443-996d-45c2-90f0-388ff96faa56')
 ```
 
-# [Microsoft Entra PowerShell - verify registration](#tab/powershell)
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/provision-mcp-verify-provisioning-appid-filter-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-```powershell
-$mcpClientSp = Get-EntraBetaServicePrincipal -Select id,appId,displayName -Filter "appId eq 'aebc6443-996d-45c2-90f0-388ff96faa56'"
-$mcpServerSp = Get-EntraBetaServicePrincipal -Select id,appId,displayName -Filter "appId eq 'e8c77dc2-69b3-43f4-bc51-3213c9d915b4'"
-$mcpClientSp, $mcpServerSp | Format-Table id, appId, displayName -AutoSize
-```
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/provision-mcp-verify-provisioning-appid-filter-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Admin portal - verify registration](#tab/portal)
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/provision-mcp-verify-provisioning-appid-filter-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-1. Sign in to the [Microsoft Entra portal](https://entra.microsoft.com/).
-1. Expand **Entra ID** > **Enterprise apps**.
-1. Under the **Manage** group, select **All applications**.
-1. Search for each application by name or client ID.
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/provision-mcp-verify-provisioning-appid-filter-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/v1/provision-mcp-verify-provisioning-appid-filter-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/provision-mcp-verify-provisioning-appid-filter-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/provision-mcp-verify-provisioning-appid-filter-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -90,20 +103,33 @@ Validate the Microsoft MCP Server permissions that were granted to each MCP clie
 GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants?$select=id,clientId,resourceId,scope&$filter=clientId eq '{mcp-client-servicePrincipal}' and resourceId eq '{mcp-server-servicePrincipal}'
 ```
 
-# [Microsoft Entra PowerShell - verify permissions](#tab/powershell)
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/provision-mcp-verify-provisioning-clients-oauth2permissiongrants-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-```powershell
-$grant = Get-EntraBetaServicePrincipalOAuth2PermissionGrant -ServicePrincipalId $mcpClientSp.Id
-$grant.Scope -split ' '
-```
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/v1/provision-mcp-verify-provisioning-clients-oauth2permissiongrants-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Admin portal - verify permissions](#tab/portal)
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/provision-mcp-verify-provisioning-clients-oauth2permissiongrants-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-1. Sign in to the [Microsoft Entra portal](https://entra.microsoft.com/).
-1. Expand **Entra ID** > **Enterprise apps**.
-1. Under the **Manage** group, select **All applications**.
-1. Search for the service principal by name or client ID and open it.
-1. Select **Permissions** to review the Microsoft MCP Server permissions that are granted to the MCP client.
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/provision-mcp-verify-provisioning-clients-oauth2permissiongrants-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/v1/provision-mcp-verify-provisioning-clients-oauth2permissiongrants-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/provision-mcp-verify-provisioning-clients-oauth2permissiongrants-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/v1/provision-mcp-verify-provisioning-clients-oauth2permissiongrants-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -155,25 +181,6 @@ The MCP Server supports only delegated permissions for user-interactive scenario
 GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='e8c77dc2-69b3-43f4-bc51-3213c9d915b4')/oauth2PermissionScopes
 ```
 
-# [Microsoft Entra PowerShell - list MCP scopes](#tab/powershell)
-
-```powershell
-(Get-EntraBetaServicePrincipal -Property "PublishedPermissionScopes" -Filter "AppId eq 'e8c77dc2-69b3-43f4-bc51-3213c9d915b4'").PublishedPermissionScopes |
-  Where-Object { $_.IsEnabled -eq $true -and $_.AdditionalProperties["isPrivate"] -ne $true } |
-  Select-Object Value, AdminConsentDisplayName |
-  Sort-Object
-```
-
-# [Admin center - list MCP scopes](#tab/portal)
-
-1. Sign in to the [Microsoft Entra portal](https://entra.microsoft.com/).
-1. Expand **Entra ID** > **Enterprise apps**.
-1. Under the **Manage** group, select **All applications**.
-1. Search for `Microsoft MCP Server for Enterprise` (or the appId `e8c77dc2-69b3-43f4-bc51-3213c9d915b4`) and open the application.
-1. From the **Security** group, select **Permissions** to review the delegated scopes that the MCP Server exposes.
-
----
-
 ## List of MCP Server scopes
 
 The naming of MCP scopes follows the pattern `MCP.{microsoft-graph-scope-name}`. For example, the [User.Read.All](../permissions-reference.md#userreadall) Microsoft Graph scope is exposed as `MCP.User.Read.All` on the MCP Server. To understand what each scope allows, refer back to the [Microsoft Graph permissions reference](../permissions-reference.md).
@@ -208,6 +215,8 @@ The naming of MCP scopes follows the pattern `MCP.{microsoft-graph-scope-name}`.
 - MCP.RoleAssignmentSchedule.Read.Directory
 - MCP.RoleEligibilitySchedule.Read.Directory
 - MCP.RoleManagement.Read.Directory
+- MCP.ServiceHealth.Read.All
+- MCP.ServiceMessage.Read.All
 - MCP.Synchronization.Read.All
 - MCP.User.Read.All
 - MCP.UserAuthenticationMethod.Read.All
@@ -231,20 +240,3 @@ PATCH https://graph.microsoft.com/v1.0/servicePrincipals(appId='e8c77dc2-69b3-43
   "accountEnabled": false
 }
 ```
-
-# [Microsoft Entra PowerShell - disable MCP server](#tab/powershell)
-
-```powershell
-$mcpServerSp = Get-EntraBetaServicePrincipal -Select id,appId,displayName -Filter "appId eq 'e8c77dc2-69b3-43f4-bc51-3213c9d915b4'"
-Set-EntraBetaServicePrincipal -ServicePrincipalId $mcpServerSp.Id -AccountEnabled $false
-```
-
-# [Admin center - disable MCP server](#tab/portal)
-
-1. Sign in to the [Microsoft Entra portal](https://entra.microsoft.com/).
-1. Expand **Entra ID** > **Enterprise apps**.
-1. Under the **Manage** group, select **All applications**.
-1. Search for the MCP Server and Visual Studio Code applications by name or client ID and open each one.
-1. Under the **Manage** group, toggle **Enabled for users to sign-in?** to **No**.
-
----

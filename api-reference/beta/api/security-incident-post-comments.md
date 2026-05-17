@@ -21,6 +21,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "security_incident_post_comments" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-incident-post-comments-permissions.md)]
 
+[!INCLUDE [rbac-security-alerts-apis-write](../includes/rbac-for-apis/rbac-security-alerts-apis-write.md)]
+
 ## HTTP request
 
 <!-- {

@@ -13,7 +13,7 @@ const client = Client.init(options);
 const chatMessage = {
   body: {
     contentType: 'html',
-    content: '<codeblock><code>Hello world</code></codeblock>'
+    content: '<codeblock class=\"plaintext\"><code>Hello world</code></codeblock>'
   }
 };
 

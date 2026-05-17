@@ -17,7 +17,7 @@ Retrieve the list of [chats](../resources/chat.md) that the user is part of.
 This method supports federation. When a user ID is provided, the calling application must belong to the same tenant that the user belongs to.
 
 > [!NOTE]
-> This API has a [known issue](https://microsoftgraph.visualstudio.com/Known%20Issues/_workitems/edit/40947). When this API is called with the `$expand=members` query parameter, the response returns a maximum of **25 member items**, even if a larger `$top` value is specified. This behavior differs from the expected behavior where the `$top` parameter controls the maximum number of items returned. As a result, applications that rely on `$expand=members` might not retrieve the full list of members in a single request.
+> This API currently has the following limitation: when the API is called with the `$expand=members` query parameter, the response returns a maximum of **25 member items**, even if a larger `$top` value is specified. This behavior differs from the expected behavior where the `$top` parameter controls the maximum number of items returned. As a result, applications that rely on `$expand=members` might not retrieve the full list of members in a single request.
 > The API also behaves differently in one or more national clouds. For more information, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -156,7 +156,7 @@ Content-type: application/json
             "createdDateTime": "2020-12-08T23:53:05.801Z",
             "lastUpdatedDateTime": "2020-12-08T23:58:32.511Z",
             "chatType": "meeting",
-            "chatViewpoint": {
+            "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-06-03T08:05:49.521Z"
             },
@@ -169,7 +169,7 @@ Content-type: application/json
             "createdDateTime": "2020-12-03T19:41:07.054Z",
             "lastUpdatedDateTime": "2020-12-08T23:53:11.012Z",
             "chatType": "group",
-            "chatViewpoint": {
+            "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-05-27T22:13:01.577Z"
             },
@@ -182,7 +182,7 @@ Content-type: application/json
             "createdDateTime": "2020-12-04T23:10:28.51Z",
             "lastUpdatedDateTime": "2020-12-04T23:10:36.925Z",
             "chatType": "oneOnOne",
-            "chatViewpoint": {
+            "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "0001-01-01T00:00:00Z"
             },
@@ -267,7 +267,7 @@ Content-type: application/json
             "createdDateTime": "2020-12-08T23:53:05.801Z",
             "lastUpdatedDateTime": "2020-12-08T23:58:32.511Z",
             "chatType": "meeting",
-            "chatViewpoint": {
+            "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-04-02T08:15:02.091Z"
             },
@@ -306,7 +306,7 @@ Content-type: application/json
             "createdDateTime": "2020-12-03T19:41:07.054Z",
             "lastUpdatedDateTime": "2020-12-08T23:53:11.012Z",
             "chatType": "group",
-            "chatViewpoint": {
+            "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "0001-01-01T00:00:00Z"
             },
@@ -361,7 +361,7 @@ Content-type: application/json
             "createdDateTime": "2020-12-04T23:10:28.51Z",
             "lastUpdatedDateTime": "2020-12-04T23:10:36.925Z",
             "chatType": "oneOnOne",
-            "chatViewpoint": {
+            "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-06-05T00:31:30.047Z"
             },
@@ -577,7 +577,7 @@ Content-type: application/json
             "createdDateTime": "2021-06-05T00:31:30.767Z",
             "lastUpdatedDateTime": "2021-06-05T00:31:32.806Z",
             "chatType": "oneOnOne",
-            "chatViewpoint": {
+            "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-06-05T00:31:30.047Z"
             },
@@ -609,7 +609,7 @@ Content-type: application/json
             "createdDateTime": "2020-07-17T22:46:28.077Z",
             "lastUpdatedDateTime": "2021-06-03T08:05:49.788Z",
             "chatType": "oneOnOne",
-            "chatViewpoint": {
+            "viewpoint": {
                 "isHidden": false,
                 "lastMessageReadDateTime": "2021-06-03T08:05:49.521Z"
             },

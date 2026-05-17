@@ -1,17 +1,17 @@
 ---
-title: "Supported Microsoft Entra resources for Unified Tenant Configuration Management"
-description: "Learn about the supported resource types and properties for Microsoft Entra in the unified tenant configuration management API."
+title: "Supported Microsoft Entra resources for Tenant Configuration Management"
+description: "Learn about the supported resource types and properties for Microsoft Entra in the Tenant Configuration Management API."
 author: "swatyario"
 ms.date: 04/10/2025
 ms.localizationpriority: medium
-ms.subservice: "tenant-administration"
+ms.subservice: "tenant-configuration-management"
 ---
 
-# Supported Microsoft Entra resources for Unified Tenant Configuration Management
+# Supported Microsoft Entra resources for Tenant Configuration Management
 
-This article lists the supported resource types for Microsoft Entra in the unified tenant configuration management (UTCM) APIs in Microsoft Graph. Use these resource types to monitor and manage your Microsoft Entra configuration settings.
+This article lists the supported resource types for Microsoft Entra in the Tenant Configuration Management (TCM) APIs in Microsoft Graph. Use these resource types to monitor and manage your Microsoft Entra configuration settings.
 
-For the complete schema, required permissions, and examples for each resource type, see the [UTCM schema store](https://json.schemastore.org/utcm-monitor.json).
+For the complete schema, required permissions, and examples for each resource type, see the [TCM schema store](https://json.schemastore.org/utcm-monitor.json).
 
 ## administrativeUnit resource type
 
@@ -159,5 +159,5 @@ For the complete schema, required permissions, and examples for each resource ty
 
 ## Related content
 
-- [Overview of the unified tenant configuration management APIs](/graph/unified-tenant-configuration-management-concept-overview)
-- [Set up authentication for UTCM](/graph/utcm-authentication-setup)
+- [Overview of the Tenant Configuration Management APIs](/graph/unified-tenant-configuration-management-concept-overview)
+- [Set up authentication for TCM](/graph/utcm-authentication-setup)

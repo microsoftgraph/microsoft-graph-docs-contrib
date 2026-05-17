@@ -1,18 +1,21 @@
 ---
-title: "Delete threat intelligence indicator"
+title: "Delete threat intelligence indicator (deprecated)"
 description: "Delete a tiIndicator object."
 ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: "security"
 doc_type: apiPageType
 ms.date: 08/13/2024
+ROBOTS: NOINDEX
 ---
 
-# Delete threat intelligence indicator
+# Delete threat intelligence indicator (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [security-tiindicator-deprecation](../includes/security-tiindicator-deprecation.md)]
 
 Delete a [tiIndicator](../resources/tiindicator.md) object.
 

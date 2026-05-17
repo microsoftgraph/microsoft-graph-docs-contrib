@@ -55,7 +55,7 @@ GET /me/todo/lists/{todoTaskListId}/tasks/{todoTaskId}/linkedresources/{linkedRe
 
 ## Single-value extended property
 
-A [singleValueExtendedProperty](singlevalueextendedproperty.md) represents a custom data field that can be created on a [todoTask](../resources/todotask.md) entity. To get single-value extended properties, see [Get singleValueLegacyExtendedProperty](../api/singlevaluelegacyextendedproperty-get.md).
+A [singleValueExtendedProperty](singlevalueextendedproperty.md) represents a custom data field that can be created on a [todoTask](../resources/todotask.md) or [todoTaskList](../resources/todotasklist.md) entity. To get single-value extended properties, see [Get singleValueLegacyExtendedProperty](../api/singlevaluelegacyextendedproperty-get.md).
 
 ## Track changes using delta query
 

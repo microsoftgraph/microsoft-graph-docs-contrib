@@ -3,7 +3,7 @@ title: "Update agentUser"
 description: "Update the properties of an agentUser object."
 author: "yyuank"
 ms.reviewer: "iamut"
-ms.date: 11/12/2025
+ms.date: 04/28/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-agent-id"
 doc_type: apiPageType
@@ -21,12 +21,8 @@ Update the properties of an [agentUser](../resources/agentuser.md) object.
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
-|Permission type      | Least privileged permission | Higher privileged permissions |
-|:--------------------|:---------------------------|:-----------------------------|
-|Delegated (work or school account) | AgentIdUser.ReadWrite.IdentityParentedBy | AgentIdUser.ReadWrite.All, User.ReadWrite.All |
-|Delegated (personal Microsoft account) | Not supported. | Not supported.|
-|Application | AgentIdUser.ReadWrite.IdentityParentedBy | AgentIdUser.ReadWrite.All, User.ReadWrite.All |
+<!-- { "blockType": "permissions", "name": "agentuser_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/agentuser-update-permissions.md)]
 
 #### Permissions for specific scenarios
 - Your personal Microsoft account must be tied to a Microsoft Entra tenant to update your profile with the *User.ReadWrite* delegated permission on a personal Microsoft account.
@@ -179,7 +175,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

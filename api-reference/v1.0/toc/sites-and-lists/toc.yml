@@ -60,6 +60,8 @@ items:
     href: ../../api/list-create.md
   - name: Get items
     href: ../../api/listitem-list.md
+  - name: List activities
+    href: ../../api/itemactivity-list.md
   - name: Update
     href: ../../api/listitem-update.md
   - name: Delete
@@ -158,6 +160,8 @@ items:
     href: ../../api/documentsetversion-restore.md
   - name: Get delta
     href: ../../api/listitem-delta.md
+  - name: Get recent activities
+    href: ../../api/itemactivity-list.md
 - name: Document set version
   items:
   - name: Document set version

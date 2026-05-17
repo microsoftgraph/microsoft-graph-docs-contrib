@@ -52,8 +52,30 @@ items:
     items:
     - name: AI agent evidence
       href: ../../resources/security-aiagentevidence.md
+    - name: DNS evidence
+      href: ../../resources/security-dnsevidence.md
+    - name: File hash evidence
+      href: ../../resources/security-filehashevidence.md
+    - name: GitHub organization evidence
+      href: ../../resources/security-githuborganizationevidence.md
+    - name: GitHub repo evidence
+      href: ../../resources/security-githubrepoevidence.md
+    - name: GitHub user evidence
+      href: ../../resources/security-githubuserevidence.md
+    - name: Host logon session evidence
+      href: ../../resources/security-hostlogonsessionevidence.md
+    - name: Malware evidence
+      href: ../../resources/security-malwareevidence.md
+    - name: Network connection evidence
+      href: ../../resources/security-networkconnectionevidence.md
+    - name: SAS token evidence
+      href: ../../resources/security-sastokenevidence.md
     - name: Security group evidence
       href: ../../resources/security-securitygroupevidence.md
+    - name: Service principal evidence
+      href: ../../resources/security-serviceprincipalevidence.md
+    - name: Submission mail evidence
+      href: ../../resources/security-submissionmailevidence.md
     - name: Teams message evidence
       href: ../../resources/security-teamsmessageevidence.md
     - name: User account
@@ -66,6 +88,8 @@ items:
       href: ../../resources/simulation.md
     - name: List simulations
       href: ../../api/attacksimulationroot-list-simulations.md
+    - name: List simulation users
+      href: ../../api/usersimulationdetails-list.md
     - name: Create simulation
       href: ../../api/attacksimulationroot-post-simulation.md
     - name: Get simulation
@@ -460,6 +484,8 @@ items:
       href: ../../api/security-ediscoveryholdpolicy-update.md
     - name: Delete
       href: ../../api/security-ediscoverycase-delete-legalholds.md
+    - name: Retry policy
+      href: ../../api/security-ediscoveryholdpolicy-retrypolicy.md
     - name: Site sources
       items:
       - name: List
@@ -476,10 +502,6 @@ items:
         href: ../../api/security-ediscoveryholdpolicy-post-usersources.md
       - name: Delete
         href: ../../api/security-ediscoveryholdpolicy-delete-usersources.md
-      - name: Retry policy
-        href: ../../api/security-ediscoveryholdpolicy-retrypolicy.md
-  - name: eDiscovery purge data operation
-    href: ../../resources/security-ediscoverypurgedataoperation.md
   - name: eDiscovery search
     items:
     - name: eDiscovery search
@@ -584,14 +606,6 @@ items:
       href: ../../api/security-ediscoverycasemember-post.md
     - name: Remove
       href: ../../api/security-ediscoverycasemember-delete.md
-  - name: Complex types
-    items:
-    - name: eDiscovery add to review set operation
-      href: ../../resources/security-ediscoveryaddtoreviewsetoperation.md
-    - name: eDiscovery estimate operation
-      href: ../../resources/security-ediscoveryestimateoperation.md
-    - name: Report file metadata
-      href: ../../resources/security-ediscoveryreportfilemetadata.md
 - name: Identities
   items:
   - name: Health issue
@@ -648,6 +662,14 @@ items:
       href: ../../api/security-identityaccounts-get.md
     - name: invokeAction
       href: ../../api/security-identityaccounts-invokeaction.md
+  - name: Auto auditing configuration
+    items:
+    - name: Auto auditing configuration
+      href: ../../resources/security-autoauditingconfiguration.md
+    - name: Get
+      href: ../../api/security-autoauditingconfiguration-get.md
+    - name: Update
+      href: ../../api/security-autoauditingconfiguration-update.md
   - name: Complex types
     items:
     - name: Account

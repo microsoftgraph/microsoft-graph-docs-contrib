@@ -123,7 +123,7 @@ By setting the **returnSuggestionReasons** parameter, you also get an explanatio
 
 Notice that the request specifies time in the PST time zone. By default, the response returns meeting time suggestions in UTC. You can use the `Prefer: outlook.timezone` request header to specify PST as well for the time values in the response.
 
-##### Request
+### Request
 Here is the example request.
 
 # [HTTP](#tab/http)
@@ -198,13 +198,17 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/user-findmeetingtimes-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-findmeetingtimes-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/user-findmeetingtimes-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### Response
+### Response
 Here is an example response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

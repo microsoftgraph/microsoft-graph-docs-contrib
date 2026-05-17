@@ -52,7 +52,7 @@ If successful, this method returns a `202 Accepted` response code, and all parti
 
 ## Example
 
-##### Request
+### Request
 The following example shows a request.
 
 
@@ -91,13 +91,17 @@ Content-Length: 24
 [!INCLUDE [sample-code](../includes/snippets/php/call-changescreensharingrole-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-changescreensharingrole-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/call-changescreensharingrole-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### Response
+### Response
 The following example shows the response. 
 
 <!-- {

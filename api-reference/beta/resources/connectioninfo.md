@@ -16,6 +16,10 @@ Namespace: microsoft.graph
 
 The connectionInfo object defines the resource locator that is used to communicate with a resource in Microsoft Entra Entitlement Management.
 
+The following types are derived from connectionInfo:
+
+- [externalTokenBasedSapIagConnectionInfo](../resources/externaltokenbasedsapiagconnectioninfo.md)
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

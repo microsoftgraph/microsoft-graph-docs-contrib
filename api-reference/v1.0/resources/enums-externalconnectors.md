@@ -112,7 +112,23 @@ Namespace: microsoft.graph.externalConnectors
 | fileName
 | fileExtension
 | unknownFutureValue
+| containerName
+| containerUrl
 | iconUrl
+| closedBy
+| closedDate
+| priority
+| sprintName
+| tags
+| severity
+| state
+| dueDate
+| itemParentId
+| itemPath
+|itemType
+|numberOfReactions
+| parentUrl
+| secondaryId
 | personEmails
 | personAddresses
 | personAnniversaries

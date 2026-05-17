@@ -15,7 +15,7 @@ items:
   - name: Get drive root
     href: ../../api/driveitem-get.md
   - name: List activities
-    href: ../../api/activities-list.md
+    href: ../../api/itemactivity-list.md
   - name: List followed items
     href: ../../api/drive-list-following.md
   - name: List children
@@ -40,6 +40,8 @@ items:
     href: ../../api/itemanalytics-get.md
   - name: Get activities by interval
     href: ../../api/itemactivity-getbyinterval.md
+  - name: Get recent activities
+    href: ../../api/itemactivity-list.md
   - name: List children
     href: ../../api/driveitem-list-children.md
   - name: List versions
@@ -184,6 +186,8 @@ items:
     href: ../../api/filestoragecontainer-update-permissions.md
   - name: Delete permissions
     href: ../../api/filestoragecontainer-delete-permissions.md
+  - name: Upsert permissions
+    href: ../../api/filestoragecontainer-patch-permissions.md
   - name: List custom property
     href: ../../api/filestoragecontainer-list-customproperty.md
   - name: Add custom property
@@ -194,14 +198,14 @@ items:
     href: ../../api/filestoragecontainer-delete-customproperty.md
   - name: List columns
     href: ../../api/filestoragecontainer-list-columns.md
-  - name: Add column
+  - name: Create column
     href: ../../api/filestoragecontainer-post-columns.md
-  - name: Update column
-    href: ../../api/filestoragecontainer-update-column.md
-  - name: Delete file storage container column
-    href: ../../api/filestoragecontainer-delete-column.md
   - name: Get column
     href: ../../api/filestoragecontainer-get-column.md
+  - name: Update column
+    href: ../../api/filestoragecontainer-update-column.md
+  - name: Delete column
+    href: ../../api/filestoragecontainer-delete-column.md
   - name: Update recycle bin settings
     href: ../../api/filestoragecontainer-update-recyclebinsettings.md
   - name: Restore recycle bin items
@@ -218,6 +222,10 @@ items:
     href: ../../api/filestoragecontainer-post-migrationjobs.md
   - name: Provision migration containers
     href: ../../api/filestoragecontainer-provisionmigrationcontainers.md
+  - name: Archive
+    href: ../../api/filestoragecontainer-archive.md
+  - name: Unarchive
+    href: ../../api/filestoragecontainer-unarchive.md
 - name: File storage container type
   items:
   - name: File storage container type
@@ -232,6 +240,14 @@ items:
     href: ../../api/filestoragecontainertype-update.md
   - name: Delete
     href: ../../api/filestorage-delete-containertypes.md
+  - name: List permissions
+    href: ../../api/filestoragecontainertype-list-permissions.md
+  - name: Create permission
+    href: ../../api/filestoragecontainertype-post-permissions.md
+  - name: Get permission
+    href: ../../api/filestoragecontainertype-get-permission.md
+  - name: Delete permission
+    href: ../../api/filestoragecontainertype-delete-permissions.md
 - name: File storage container type app permission grant
   items:
   - name: File storage container type app permission grant
@@ -436,3 +452,5 @@ items:
     href: ../../resources/filestoragecontainertyperegistrationsettings.md
   - name: File storage container type settings
     href: ../../resources/filestoragecontainertypesettings.md
+  - name: SharePoint group identity
+    href: ../../resources/sharepointgroupidentity.md

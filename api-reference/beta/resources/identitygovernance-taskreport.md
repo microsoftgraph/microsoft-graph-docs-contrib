@@ -34,7 +34,7 @@ Inherits from [entity](../resources/entity.md).
 |failedUsersCount|Int32|The number of users in the run execution for which the associated task failed.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
 |id|String|The unique identifier of the task report. Inherited from [entity](../resources/entity.md).<br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
 |lastUpdatedDateTime|DateTimeOffset|The date and time that the task report was last updated.|
-|processingStatus|[microsoft.graph.identityGovernance.lifecycleWorkflowProcessingStatus](../resources/identitygovernance-taskprocessingresult.md)|The processing status of the associated task based on the taskProcessingResults. The possible values are based on the number of `queued`, `inProgress`, `completed`, `completedWithErrors`, `canceled`, `failed`, and `unknownFutureValue`.<br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
+|processingStatus|[microsoft.graph.identityGovernance.lifecycleWorkflowProcessingStatus](../resources/enums-identitygovernance-lifecycleworkflowprocessingstatus.md)|The processing status of the associated task based on the taskProcessingResults. <br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
 |runId|String|The unique identifier of the associated [run](../resources/identitygovernance-run.md).|
 |startedDateTime|DateTimeOffset|The date time that the associated run started. Value is `null` if the run has not started.|
 |successfulUsersCount|Int32|The number of users in the run execution for which the associated task succeeded.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|

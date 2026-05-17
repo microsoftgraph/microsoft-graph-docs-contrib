@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const addKey = {
+const keyCredential = {
   keyCredential: {
     '@odata.type': 'microsoft.graph.keyCredential'
   },
@@ -22,6 +22,6 @@ const addKey = {
 
 await client.api('/applications/{id}/microsoft.graph.agentIdentityBlueprint/addKey')
 	.version('beta')
-	.post(addKey);
+	.post(keyCredential);
 
 ```

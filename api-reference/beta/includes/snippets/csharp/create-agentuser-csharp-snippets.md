@@ -9,18 +9,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 // Dependencies
 using Microsoft.Graph.Beta.Models;
 
-var requestBody = new User
+var requestBody = new AgentUser
 {
 	OdataType = "#microsoft.graph.agentUser",
 	AccountEnabled = true,
 	DisplayName = "Adele Vance",
 	MailNickname = "AdeleV",
 	UserPrincipalName = "AdeleV@contoso.com",
-	PasswordProfile = new PasswordProfile
-	{
-		ForceChangePasswordNextSignIn = true,
-		Password = "xWwvJ]6NMw+bWH-d",
-	},
+	IdentityParentId = "",
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

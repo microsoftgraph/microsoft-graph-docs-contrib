@@ -1,6 +1,6 @@
 ---
 title: "Create column"
-description: "Create a columnDefinition in a fileStorageContainer."
+description: "Create a column for a fileStorageContainer that specifies a columnDefinition."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"

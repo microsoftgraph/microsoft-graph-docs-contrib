@@ -24,11 +24,11 @@ The following table lists the three scenarios where you can get an open extensio
 
 |**GET scenario**|**Supported resources**|**Response body**|
 |:-----|:-----|:-----|
-|Get a specific extension from a known resource instance.| [Administrative unit](../resources/administrativeunit.md) <br/> [baseTask](../resources/basetask.md) (deprecated) <br/> [baseTaskList](../resources/basetasklist.md) (deprecated) <br/> [device](../resources/device.md) <br/> [driveItem](../resources/driveitem.md) <br/> [event](../resources/event.md) <br/> [group](../resources/group.md) <br/> [group event](../resources/event.md) <br/> [group post](../resources/post.md) <br/> [message](../resources/message.md) <br/> [organization](../resources/organization.md) <br/> [personal contact](../resources/contact.md) <br/> [site](../resources/site.md) <br/> [todoTask](../resources/todotask.md) <br/> [todoTaskList](../resources/todotasklist.md) <br/> [user](../resources/user.md)| Open extension only.|
-|Get a known resource instance expanded with a specific extension.|Administrative unit, base task, base task list, device, drive item, event, group, group event, group post, message, organization, personal contact, to-do task, to-do task list, user. |A resource instance expanded with the open extension.|
-|Find and expand resource instances with a specific extension. | Base task, base task list, event, group event, group post, message, personal contact, to-do task, to-do task list |Resource instances expanded with the open extension.|
+|Get a specific extension from a known resource instance.| [Administrative unit](../resources/administrativeunit.md) <br/> [baseTask](../resources/basetask.md) (deprecated) <br/> [baseTaskList](../resources/basetasklist.md) (deprecated) <br/> [device](../resources/device.md) <br/> [driveItem](../resources/driveitem.md) <br/> [event](../resources/event.md) <br/> [group](../resources/group.md) <br/> [group event](../resources/event.md) <br/> [group post](../resources/post.md) <br/> [message](../resources/message.md) <br/> [note](../resources/note.md) <br/> [organization](../resources/organization.md) <br/> [personal contact](../resources/contact.md) <br/> [site](../resources/site.md) <br/> [todoTask](../resources/todotask.md) <br/> [todoTaskList](../resources/todotasklist.md) <br/> [user](../resources/user.md)| Open extension only.|
+|Get a known resource instance expanded with a specific extension.|Administrative unit, base task, base task list, device, drive item, event, group, group event, group post, message, note, organization, personal contact, to-do task, to-do task list, user. |A resource instance expanded with the open extension.|
+|Find and expand resource instances with a specific extension. | Base task, base task list, event, group event, group post, message, note, personal contact, to-do task, to-do task list |Resource instances expanded with the open extension.|
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -43,6 +43,7 @@ Depending on the resource that contains the extension and the permission type (d
 | [group event](../resources/event.md) | Group.Read.All | Not supported. | Not supported. |
 | [group post](../resources/post.md) | Group.Read.All | Not supported. | Group.Read.All |
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
+| [note](../resources/note.md) | ShortNotes.Read | ShortNotes.Read | ShortNotes.Read.All |
 | [organization](../resources/organization.md) | User.Read | Not supported. | Organization.Read.All |
 | [personal contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [site](../resources/site.md) | Sites.Read.All | Not supported. | Not supported. |
@@ -70,6 +71,7 @@ GET /groups/{groupId}/extensions/{extensionId}
 GET /groups/{groupId}/events/{eventId}/extensions/{extensionId}
 GET /groups/{groupId}/threads/{threadId}/posts/{postId}/extensions/{extensionId}
 GET /users/{userId|userPrincipalName}/messages/{messageId}/extensions/{extensionId}
+GET /users/{userId|userPrincipalName}/notes/{noteId}/extensions/{extensionId}
 GET /organization/{organizationId}/extensions/{extensionId}
 GET /users/{userId|userPrincipalName}/contacts/{contactId}/extensions/{extensionId}
 GET /users/{userId|userPrincipalName}/extensions/{extensionId}
@@ -93,6 +95,7 @@ GET /users/{userId|userPrincipalName}/events/{eventId}?$expand=extensions($filte
 GET /groups/{groupId}/events/{eventId}?$expand=extensions($filter=id eq '{extensionId}')
 GET /groups/{groupId}/threads/{threadId}/posts/{postId}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{userId|userPrincipalName}/messages/{messageId}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/notes/{noteId}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{userId|userPrincipalName}/contacts/{contactId}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{userId|userPrincipalName}/todo/lists/{listId}/tasks/{taskId}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{userId|userPrincipalName}/todo/lists/{listId}?$expand=extensions($filter=id eq '{extensionId}')
@@ -126,6 +129,7 @@ GET /users/{userId|userPrincipalName}/events?$filter=Extensions/any(f:f/id eq '{
 GET /groups/{groupId}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 GET /groups/{groupId}/threads/{threadId}/posts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 GET /users/{userId|userPrincipalName}/messages?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/notes?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 GET /users/{userId|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 ```
 

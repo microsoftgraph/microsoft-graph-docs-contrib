@@ -1,6 +1,6 @@
 ---
 title: "assignedAccessMultiModeProfiles action"
-description: "Intune Deviceconfig Deviceconfiguration Assignedaccessmultimodeprofiles Source_Api ."
+description: "Intune Deviceconfig Deviceconfiguration Assignedaccessmultimodeprofiles Api ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"

@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Delete an [application](../resources/application.md) object. When deleted, apps are moved to a temporary container and can be restored within 30 days. After that time, they are permanently deleted.
 
+This API can also delete an [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object by its ID.
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
@@ -47,7 +49,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
-##### Request
+### Request
 The following example shows a request.
 
 
@@ -90,7 +92,7 @@ DELETE https://graph.microsoft.com/v1.0/applications/{id}
 
 ---
 
-##### Response
+### Response
 The following example shows the response. 
 <!-- {
   "blockType": "response",

@@ -10,6 +10,8 @@ items:
     items:
     - name: Configuration baseline
       href: ../../resources/configurationbaseline.md
+    - name: List
+      href: ../../api/configurationmanagement-list-configurationsnapshots.md
     - name: Get
       href: ../../api/configurationbaseline-get.md
     - name: Create snapshot

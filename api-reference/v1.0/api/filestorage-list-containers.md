@@ -5,7 +5,7 @@ author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
-ms.date: 07/21/2025
+ms.date: 03/18/2026
 ---
 
 # List containers
@@ -15,7 +15,8 @@ Namespace: microsoft.graph
 Get a list of [fileStorageContainer](../resources/filestoragecontainer.md) objects that are accessible to a caller. The **containerTypeId** filter parameter is required.
 
 > [!IMPORTANT]
-> Requests made on behalf of a user fail if the user doesn't have a OneDrive. This requirement doesn't apply when you call the endpoint without a user context (app-only authentication). The endpoint also only returns containers that the user is a direct member of. Containers that the user is a member of via a group aren't returned.
+> - Requests made on behalf of a user fail if the user doesn't have a OneDrive. This requirement doesn't apply when you call the endpoint without a user context (app-only authentication). The endpoint also only returns containers that the user is a direct member of. Containers that the user is a member of via a group aren't returned.
+> - Requests made without a user context (app-only authentication) aren't currently supported for multi-geo tenants.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

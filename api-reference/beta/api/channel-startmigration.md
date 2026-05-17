@@ -18,6 +18,10 @@ Start the migration of external messages by enabling migration mode in an existi
 
 Users are also allowed to define a minimum timestamp for content to be migrated, allowing them to import messages from the past. The provided timestamp must be older than the current **createdDateTime** for a [channel](../resources/channel.md). The provided timestamp is used to replace the existing **createdDateTime** of the [channel](../resources/channel.md).
 
+> [!NOTE]
+> - The application that calls **startMigration** owns the migration session end to end. The same application must call [import message](channel-post-messages.md#example-2-import-a-message) and [completeMigration](channel-completemigration.md) for the same thread. No other application can invoke these APIs on the thread until the owning application completes the migration.
+> - Once a channel enters migration mode, a banner is displayed in the Teams client that indicates the conversation is in import mode. This banner remains visible until migration is completed by [completeMigration](channel-completemigration.md).
+
 [!INCLUDE [channel-support](../../includes/supported-channels-for-import.md)]
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -63,6 +67,7 @@ The following example shows how to start the migration on an existing channel wi
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "startMigration_channel",
@@ -72,6 +77,36 @@ The following example shows a request.
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/startMigration
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/startmigration-channel-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/startmigration-channel-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/startmigration-channel-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/startmigration-channel-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/startmigration-channel-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/startmigration-channel-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/startmigration-channel-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -91,6 +126,7 @@ The following example shows how to start the migration when a channel is already
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "startMigration_channel_fail",
@@ -100,6 +136,36 @@ The following example shows a request.
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/startMigration
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/startmigration-channel-fail-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/startmigration-channel-fail-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/startmigration-channel-fail-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/startmigration-channel-fail-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/startmigration-channel-fail-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/startmigration-channel-fail-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/startmigration-channel-fail-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example shows the response.
@@ -129,7 +195,7 @@ HTTP/1.1 400 Bad Request
 ## Related content
 
 - [channel: completeMigration](channel-completemigration.md)
-- [Import message with older timestamp](channel-post-messages.md#example-2-import-messages).
+- [Import a message](channel-post-messages.md#example-2-import-a-message).
 - [Get channel migration status](channel-get.md#example-1-get-a-channel).
 - [chat: completeMigration](chat-completemigration.md)
 - [chat: startMigration](chat-startmigration.md)

@@ -1,6 +1,6 @@
 ---
 title: "assign action"
-description: "Intune Apps Ioslobappprovisioningconfiguration Assign Source_Api ."
+description: "Intune Apps Ioslobappprovisioningconfiguration Assign Api ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"

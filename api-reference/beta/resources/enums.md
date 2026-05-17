@@ -13,6 +13,25 @@ ms.custom: sfi-ropc-nochange
 
 Namespace: microsoft.graph
 
+### meetingEngagementType values
+
+|Member|
+|:---|
+|reaction|
+|hand|
+|camera|
+|microphone|
+|unknownFutureValue|
+
+### notifyMembers values
+
+|Member|
+|:---|
+|all|
+|allowSelected|
+|blockSelected|
+|unknownFutureValue|
+
 ### structuredDataEntryValueType values
 
 |Member|
@@ -106,6 +125,19 @@ Namespace: microsoft.graph
 |deletedWithin3Months|
 |deletedWithinMoreThan3Months|
 |unknownFutureValue|
+
+### enforcementResultStatus values
+
+|Member|
+|:---|
+|success|
+|missingOrInvalidConfiguration|
+|userOverride|
+|agentFailure|
+|enforcementTimeout|
+|oSOverride|
+|processNonExistent|
+|other|
 
 ### fedRampLevel values
 
@@ -488,6 +520,22 @@ Namespace: microsoft.graph
 | approved |
 | rejected |
 | cancelled |
+| unknownFutureValue |
+
+### plannerTaskChatMentionType values
+
+| Member |
+| -------------------- |
+| user |
+| application |
+| unknownFutureValue |
+
+### plannerTaskChatMessageType values
+
+| Member |
+| -------------------- |
+| richTextHtml |
+| plainText |
 | unknownFutureValue |
 
 ### applicationKeyOrigin values
@@ -943,15 +991,6 @@ Namespace: microsoft.graph
 | unknownFutureValue |
 | remoteDesktopToken |
 | refreshToken       |
-
-### approverInformationVisibility values
-
-| Member |
-| ---- |
-| no |
-| yes |
-| default |
-| unknownFutureValue |
 
 ### protocolType values
 
@@ -2261,6 +2300,29 @@ Namespace: microsoft.graph
 | darkPink |
 | darkYellow |
 | unknownFutureValue |
+| darkRed |
+| cranberry |
+| darkOrange |
+| bronze |
+| peach |
+| gold |
+| lime |
+| forest |
+| lightGreen |
+| jade |
+| lightTeal |
+| darkTeal |
+| steel |
+| skyBlue |
+| blueGray |
+| lavender |
+| lilac |
+| plum |
+| magenta |
+| darkBrown |
+| beige |
+| charcoal |
+| silver |
 
 ### timeOffReasonIconType values
 
@@ -2706,6 +2768,14 @@ Namespace: microsoft.graph
 | accepted |
 | declined |
 | notResponded |
+
+### privilegeLevel values
+
+|Member|
+|:---|
+|standard|
+|privileged|
+|unknownFutureValue|
 
 ### activityDomain values
 
@@ -3703,14 +3773,6 @@ Possible values for user account types (group membership), per Windows definitio
 | publication |
 | unknownFutureValue |
 
-### teamsAppInstallationScope values
-
-| Member    | Value | Description                                                                                                                 |
-| --------- | ----- | --------------------------------------------------------------------------------------------------------------------------- |
-| team      | 0     | Indicates that the Teams app can be installed within a team and is authorized to access that team's data.                   |
-| groupChat | 1     | Indicates that the Teams app can be installed within a group chat and is authorized to access that group chat's data.       |
-| personal  | 2     | Indicates that the Teams app can be installed in the personal scope of a user and is authorized to access that user's data. |
-
 ### assignmentScheduleFilterByCurrentUserOptions values
 
 | Member |
@@ -3842,6 +3904,16 @@ Possible values for user account types (group membership), per Windows definitio
 | principal |
 | unknownFutureValue |
 
+### roleType values
+
+| Member |
+| ------ |
+| active |
+| eligible |
+| application |
+| delegated |
+| unknownFutureValue |
+
 ### cloudPcAuditActivityOperationType values
 
 | Member |
@@ -3884,6 +3956,17 @@ Possible values for user account types (group membership), per Windows definitio
 | regular |
 | quick |
 | strategic |
+| unknownFutureValue |
+
+### sectionIconSkinTone values
+
+| Member |
+| ------------------ |
+| light |
+| mediumLight |
+| medium |
+| mediumDark |
+| dark |
 | unknownFutureValue |
 
 ### serviceHealthClassificationType values
@@ -5015,6 +5098,14 @@ Possible values for user account types (group membership), per Windows definitio
 | authenticationTransfer |
 | unknownFutureValue |
 
+### connectorType values
+
+|Member|
+|:---|
+|sapIag|
+|sapAc|
+|unknownFutureValue|
+
 ### claimConditionUserType values
 
 | Member |
@@ -5034,6 +5125,14 @@ Possible values for user account types (group membership), per Windows definitio
 | suffix |
 | contains |
 | unknownFutureValue |
+
+### matchConfidenceLevel values 
+
+|Member|
+|:---|
+|exact|
+|relaxed|
+|unknownFutureValue|
 
 ### matchOn values
 
@@ -5934,4 +6033,25 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |none|
 |ai|
+|unknownFutureValue|
+
+### trafficRoutingMethod values 
+
+|Member|
+|:---|
+|none|
+|random|
+|sessionPersistence|
+|performance|
+|unknownFutureValue|
+
+### accessReviewInstanceDecisionItemApplyResult values
+
+|Member|
+|:---|
+|new|
+|appliedSuccessfully|
+|appliedWithUnknownFailure|
+|appliedSuccessfullyButObjectNotFound|
+|applyNotSupported|
 |unknownFutureValue|

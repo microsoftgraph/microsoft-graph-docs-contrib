@@ -66,7 +66,10 @@ var requestBody = new ProcessContentPostRequestBody
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-var result = await graphClient.Me.DataSecurityAndGovernance.ProcessContent.PostAsync(requestBody);
+var result = await graphClient.Me.DataSecurityAndGovernance.ProcessContent.PostAsync(requestBody, (requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("Client-Request-Id", "50dc805c-3af4-42d9-ad16-a746235cc736");
+});
 
 
 ```

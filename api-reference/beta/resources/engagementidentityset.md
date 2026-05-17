@@ -1,7 +1,7 @@
 ---
 title: "engagementIdentitySet resource type"
 description: "Represents a unique identity in Viva Engage."
-author: "aditijha"
+author: "aditijha4"
 ms.date: 05/21/2025
 ms.localizationpriority: medium
 ms.subservice: "viva-engage"

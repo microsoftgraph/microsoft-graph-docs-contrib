@@ -2,10 +2,10 @@
 title: "Create subscription"
 description: "Subscribes a listener application to receive change notifications when data on a Microsoft Graph resource changes."
 ms.localizationpriority: medium
-author: "keylimesoda"
+author: "jessieli-ad"
 doc_type: apiPageType
 ms.subservice: change-notifications
-ms.date: 07/26/2024
+ms.date: 05/05/2026
 ---
 
 # Create subscription
@@ -34,6 +34,8 @@ Depending on the resource and the permission type (delegated or application) req
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
+|[aiInsights](/microsoft-365/copilot/extensibility/api/ai-services/meeting-insights/resources/callaiinsight) <br /> `/copilot/users/{userId}/onlineMeetings/getAllAiInsights` <br /> Copilot AI insights from meetings that a particular user is part of. | OnlineMeetingAiInsight.Read.All    | Not supported.  | OnlineMeetingAiInsight.Read.All |
+|[aiInsights](/microsoft-365/copilot/extensibility/api/ai-services/meeting-insights/resources/callaiinsight) <br/> `/copilot/users/{userId}/onlineMeetings/{onlineMeetingId}/aiInsights` <br/> Copilot AI insights for a particular meeting. | OnlineMeetingAiInsight.Read.All    | Not supported.  | OnlineMeetingAiInsight.Read.All |
 |[aiInteraction](/microsoft-365-copilot/extensibility/api/ai-services/interaction-export/resources/aiinteraction)  <br /> `copilot/users/{userId}/interactionHistory/getAllEnterpriseInteractions`  <br /> Copilot AI interactions that a particular user is part of. | AiEnterpriseInteraction.Read  | Not supported.  | AiEnterpriseInteraction.Read.All, AiEnterpriseInteraction.Read.User  |
 |[aiInteraction](/microsoft-365-copilot/extensibility/api/ai-services/interaction-export/resources/aiinteraction)  <br /> `copilot/interactionHistory/getAllEnterpriseInteractions`  <br /> Copilot AI interactions in an organization. | Not supported.  | Not supported.  | AiEnterpriseInteraction.Read.All  |
 |[approvalItems](../resources/approvalItem.md) | Not supported.  | Not supported.  | ApprovalSolution.ReadWrite.All  |
@@ -86,7 +88,7 @@ Depending on the resource and the permission type (delegated or application) req
 |[team](../resources/team.md) <br />`/teams` <br />All teams in an organization. | Not supported.  | Not supported.  | Team.ReadBasic.All, TeamSettings.Read.All |
 |[team](../resources/team.md) <br />`/teams/{id}` <br />A particular team. | Team.ReadBasic.All, TeamSettings.Read.All | Not supported.  | Team.ReadBasic.All, TeamSettings.Read.All |
 |[timeOffRequest](../resources/timeoffrequest.md) <br />`/teams/{id}/schedule/timeOffRequests` <br />Changes to any time off request in a team. | Schedule.Read.All, Schedule.ReadWrite.All| Not supported. | Schedule.Read.All, Schedule.ReadWrite.All |
-|[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported.  |
+|[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All  |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 |[virtualEventWebinar](../resources/virtualeventwebinar.md) | VirtualEvent.Read | Not supported. | VirtualEvent.Read.All |
 |[virtualEventTownhall](../resources/virtualeventtownhall.md) | VirtualEvent.Read | Not supported. | VirtualEvent.Read.All |
@@ -104,6 +106,9 @@ Depending on the resource and the permission type (delegated or application) req
 > - AiEnterpriseInteraction.Read.User
 
 [!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
+
+<!-- ### aiInsights -->
+[!INCLUDE [copilot-aiinsights-subscription-notes.md](../../includes/copilot-aiinsights-subscription-notes.md)]
 
 <!-- ### aiInteraction -->
 [!INCLUDE [copilot-aiinteraction-subscription-notes.md](../../includes/copilot-aiinteraction-subscription-notes.md)]

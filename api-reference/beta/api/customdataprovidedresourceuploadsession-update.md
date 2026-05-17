@@ -1,8 +1,8 @@
 ---
 title: "Update customDataProvidedResourceUploadSession"
 description: "Update the properties of a customDataProvidedResourceUploadSession object."
-author: "pratima-cloudknox"
-ms.date: 10/09/2025
+author: "jaylenemartinez0"
+ms.date: 04/01/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
@@ -38,7 +38,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-PATCH /identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPackageCatalogId}/accessPackageResources/{accessPackageResourceId}/uploadSessions/{customDataProvidedResourceUploadSessionId}
+PATCH /identityGovernance/catalogs/{catalogId}/accessPackageResources/{accessPackageResourceId}/uploadSessions/{customDataProvidedResourceUploadSessionId}
 ```
 
 ## Request headers
@@ -67,13 +67,14 @@ If successful, this method returns a `200 OK` response code and an updated [cust
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_customdataprovidedresourceuploadsession"
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageCatalogs/73eb2497-3b88-4c0a-8bb3-68ba8162beff/accessPackageResources/99ab2454-3b88-4c0a-8bb3-68ba8162beff/uploadSessions/23f27c15-72f9-45fe-9e9c-e3d8f75bdc44
+PATCH https://graph.microsoft.com/beta/identityGovernance/catalogs/{catalogId}/accessPackageResources/{accessPackageResourceId}/uploadSessions/{customDataProvidedResourceUploadSessionId}
 Content-Type: application/json
 
 {
@@ -81,6 +82,35 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-customdataprovidedresourceuploadsession-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-customdataprovidedresourceuploadsession-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-customdataprovidedresourceuploadsession-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-customdataprovidedresourceuploadsession-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-customdataprovidedresourceuploadsession-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-customdataprovidedresourceuploadsession-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-customdataprovidedresourceuploadsession-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -97,22 +127,31 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "id": "23f27c15-72f9-45fe-9e9c-e3d8f75bdc44",
-    "status": "Complete",
-    "isUploadDone": true,
-    "stats": {
-        "filesUploaded": 1,
-        "totalBytesUploaded": 2000000,
-    },
-    "files": [
-      {
-          "name": "building-a-access.csv",
-          "size": 2000000,
-          "uploadedDateTime": "2024-03-06T01:35:12.123Z"
-      }
-    ],
-    "createdDateTime": "2024-03-06T01:35:12.123Z",
-    "expirationDateTime": "2024-03-07T01:35:12.123Z"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/catalogs('3c9f2b1e-8a4d-4e7f-9d2a-6b3e1c7f5a9d')/accessPackageResources('15eeb4df-bd15-4d8b-9679-e75791dbc1d9')/uploadSessions/$entity",
+  "id": "0b64df22-1a83-472c-9556-6c3dc41742b9",
+  "referenceId": "ca24f9b9-5917-4971-9b5b-07aae0aa74e8",
+  "status": "complete",
+  "isUploadDone": true,
+  "createdDateTime": "2026-04-01T18:24:07.1484627Z",
+  "source": "BuildingAccessDataTIP",
+  "type": "#microsoft.graph.accessReviewDataUploadTriggerCallbackData",
+  "stats": {
+    "filesUploaded": 1,
+    "totalBytesUploaded": 2394
+  },
+  "data": {
+    "@odata.type": "#microsoft.graph.accessReviewResourceDataUploadSessionContextData",
+    "accessReviewId": "f5744a40-bca0-4506-a286-a8afac513d1c",
+    "accessReviewInstanceId": "ca24f9b9-5917-4971-9b5b-07aae0aa74e8"
+  },
+  "files": [
+    {
+      "id": "22125c79-b0fe-4553-8229-6556d85b2561",
+      "name": "generated_test_data_20.csv",
+      "size": 2394,
+      "uploadedDateTime": "2026-04-01T18:42:07.7890258Z"
+    }
+  ]
 }
 ```
 

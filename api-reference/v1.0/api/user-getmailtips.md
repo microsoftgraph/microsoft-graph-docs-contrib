@@ -17,7 +17,7 @@ Get the MailTips of one or more recipients as available to the signed-in [user](
 Note that by making a `POST` call to the `getMailTips` action, you can request specific types of MailTips to
 be returned for more than one recipient at one time. The requested MailTips are returned in a [mailTips](../resources/mailtips.md) collection.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -51,7 +51,7 @@ In the request body, provide a JSON object with the following parameters.
 
 If successful, this method returns a `200 OK` response code and a collection of [mailTips](../resources/mailtips.md) objects in the response body.
 ## Example
-##### Request
+### Request
 The following example gets MailTips for the specified recipients, for any automatic reply settings and the mailbox full status.
 
 
@@ -103,7 +103,7 @@ Content-Type: application/json
 
 ---
 
-##### Response
+### Response
 The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

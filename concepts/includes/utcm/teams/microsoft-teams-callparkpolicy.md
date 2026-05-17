@@ -1,7 +1,7 @@
 ---
 author: "swatyario"
 ms.localizationpriority: medium
-ms.subservice: "tenant-administration"
+ms.subservice: "tenant-configuration-management"
 ms.topic: include
 ---
 
@@ -29,7 +29,7 @@ The TeamsCallParkPolicy controls whether or not users are able to leverage the c
 
 #### Microsoft Entra ID roles
 
-The following [roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) can be granted to the UTCM (Unified Tenant Configuration Management) service principal:
+The following [roles](/entra/identity/role-based-access-control/permissions-reference?toc=/graph/toc.json) can be granted to the TCM (Tenant Configuration Management) service principal:
 
 | Operation | Least privileged role |
 |-----------|-----------------------|

@@ -246,6 +246,14 @@ items:
     items:
     - name: Custom app settings
       href: ../../resources/customappsettings.md
+    - name: Group chat teams app installation scope info
+      href: ../../resources/groupchatteamsappinstallationscopeinfo.md
+    - name: Personal teams app installation scope info
+      href: ../../resources/personalteamsappinstallationscopeinfo.md
+    - name: Team teams app installation scope info
+      href: ../../resources/teamteamsappinstallationscopeinfo.md
+    - name: Teams app installation scope info
+      href: ../../resources/teamsappinstallationscopeinfo.md
 - name: Calls and online meetings
   items:
   - name: Overview
@@ -278,13 +286,13 @@ items:
       href: ../../api/presence-clearlocation.md
   - name: Ad hoc call
     items:
-    - name: Ad hoc call (preview)
+    - name: Ad hoc call
       items:
-      - name: Ad hoc call (preview)
+      - name: Ad hoc call
         href: ../../resources/adhoccall.md
-      - name: getAllRecordings
+      - name: Get all recordings
         href: ../../api/adhoccall-getallrecordings.md
-      - name: getAllTranscripts
+      - name: Get all transcripts
         href: ../../api/adhoccall-getalltranscripts.md
   - name: Calls
     items:
@@ -800,6 +808,14 @@ items:
         href: ../../api/userteamwork-list-installedapps.md
       - name: Get
         href: ../../api/userteamwork-get.md
+      - name: List sections
+        href: ../../api/userteamwork-list-sections.md
+      - name: Get all targeted messages
+        href: ../../api/userteamwork-getalltargetedmessages.md
+      - name: Get all retained targeted messages
+        href: ../../api/userteamwork-getallretainedtargetedmessages.md
+      - name: Delete targeted message
+        href: ../../api/userteamwork-deletetargetedmessage.md
 - name: Employee learning
   displayName: Viva Learning
   items:
@@ -1133,6 +1149,18 @@ items:
       href: ../../api/deletedchat-get.md
     - name: Undo delete
       href: ../../api/deletedchat-undodelete.md
+  - name: Targeted chat message
+    items:
+    - name: Targeted chat message
+      href: ../../resources/targetedchatmessage.md
+    - name: Get all targeted messages
+      href: ../../api/userteamwork-getalltargetedmessages.md
+    - name: Get all retained targeted messages
+      href: ../../api/userteamwork-getallretainedtargetedmessages.md
+    - name: Delete targeted message for channel
+      href: ../../api/userteamwork-deletetargetedmessage.md
+    - name: Delete targeted message for chat
+      href: ../../api/chat-delete-targetedmessages.md
   - name: Team
     items:
     - name: Team
@@ -1241,6 +1269,40 @@ items:
       href: ../../api/userteamwork-sendactivitynotification.md
     - name: Send notification to multiple users in bulk
       href: ../../api/teamwork-sendactivitynotificationtorecipients.md
+  - name: Sections (preview)
+    items:
+    - name: Teamwork section
+      items:
+      - name: Teamwork section
+        href: ../../resources/teamworksection.md
+      - name: List
+        href: ../../api/userteamwork-list-sections.md
+      - name: Create
+        href: ../../api/userteamwork-post-sections.md
+      - name: Get
+        href: ../../api/teamworksection-get.md
+      - name: Update
+        href: ../../api/teamworksection-update.md
+      - name: Delete
+        href: ../../api/teamworksection-delete.md
+      - name: List items
+        href: ../../api/teamworksection-list-items.md
+    - name: Teamwork section item
+      items:
+      - name: Teamwork section item
+        href: ../../resources/teamworksectionitem.md
+      - name: List
+        href: ../../api/teamworksection-list-items.md
+      - name: Add
+        href: ../../api/teamworksection-post-items.md
+      - name: Remove
+        href: ../../api/teamworksectionitem-delete.md
+      - name: Move
+        href: ../../api/teamworksectionitem-move.md
+    - name: Complex types
+      items:
+      - name: Section display icon
+        href: ../../resources/sectiondisplayicon.md
   - name: Complex types
     items:
     - name: Forward to chat result

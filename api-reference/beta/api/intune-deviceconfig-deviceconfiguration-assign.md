@@ -1,6 +1,6 @@
 ---
 title: "assign action"
-description: "Intune Deviceconfig Deviceconfiguration Assign Source_Api ."
+description: "Intune Deviceconfig Deviceconfiguration Assign Api ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"

@@ -14,12 +14,10 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The association between a policy and a [filtering profile](../resources/networkaccess-filteringprofile.md). You can associate the following policies with a filtering profile:
-- [filteringPolicy](../resources/networkaccess-filteringpolicy.md)
-- [threatIntelligencePolicy](../resources/networkaccess-threatintelligencepolicy.md)
-- [tlsInspectionPolicy](../resources/networkaccess-tlsinspectionpolicy.md)
-
-This resource is an abstract type.
+The association between a policy and a [filtering profile](../resources/networkaccess-filteringprofile.md). This resource is an abstract type for associating the following derived policies with a filtering profile:
+- [microsoft.graph.networkaccess.cloudFirewallPolicyLink](../resources/networkaccess-cloudfirewallpolicylink.md)
+- [microsoft.graph.networkaccess.threatIntelligencePolicyLink](../resources/networkaccess-threatintelligencepolicylink.md)
+- [microsoft.graph.networkaccess.tlsInspectionPolicyLink](../resources/networkaccess-tlsinspectionpolicylink.md)
 
 Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).
 

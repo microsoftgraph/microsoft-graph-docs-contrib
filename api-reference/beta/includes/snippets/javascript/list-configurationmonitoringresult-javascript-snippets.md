@@ -1,0 +1,17 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```javascript
+
+const options = {
+	authProvider,
+};
+
+const client = Client.init(options);
+
+let configurationMonitoringResults = await client.api('/admin/configurationManagement/configurationMonitoringResults')
+	.version('beta')
+	.get();
+
+```

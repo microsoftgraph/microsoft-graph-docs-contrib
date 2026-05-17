@@ -12,7 +12,7 @@ ms.date: 05/20/2024
 
 Namespace: microsoft.graph
 
-Create a new [servicePrincipal](../resources/serviceprincipal.md) object.
+Create a new [servicePrincipal](../resources/serviceprincipal.md) object. This API can also create an [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object from an [agentIdentityBlueprint](../resources/agentidentityblueprint.md) when the **@odata.type** property is set to `#microsoft.graph.agentIdentityBlueprintPrincipal`.
 
 > [!IMPORTANT]
 > Adding [**passwordCredential**](../resources/passwordcredential.md) when creating servicePrincipals is not supported. Use the [addPassword](serviceprincipal-addpassword.md) method to add passwords or secrets for a servicePrincipal.
@@ -41,11 +41,11 @@ POST /servicePrincipals
 | Content-Type | application/json. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of a [servicePrincipal](../resources/serviceprincipal.md) object. The request body must contain **appId**.
+In the request body, supply a JSON representation of a [servicePrincipal](../resources/serviceprincipal.md) object. The request body must contain **appId**. To create an [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) from an [agentIdentityBlueprint](../resources/agentidentityblueprint.md), also set the **@odata.type** property to `#microsoft.graph.agentIdentityBlueprintPrincipal`.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [servicePrincipal](../resources/serviceprincipal.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [servicePrincipal](../resources/serviceprincipal.md) or [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object in the response body.
 
 ## Examples
 ### Request

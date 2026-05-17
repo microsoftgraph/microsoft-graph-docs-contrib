@@ -14,6 +14,7 @@ var requestBody = new OnlineMeeting
 	StartDateTime = DateTimeOffset.Parse("2020-09-09T14:33:30.8546353-07:00"),
 	EndDateTime = DateTimeOffset.Parse("2020-09-09T15:03:30.8566356-07:00"),
 	Subject = "Patch Meeting Subject",
+	MeetingSpokenLanguageTag = "en-US",
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

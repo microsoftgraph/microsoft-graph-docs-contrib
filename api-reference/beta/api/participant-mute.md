@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a [muteParticipa
 ## Example - Mute specific participant
 The following example shows how to call this API.
 
-##### Request
+### Request
 The following example shows the request.
 
 # [HTTP](#tab/http)
@@ -96,13 +96,17 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/participant-mute-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/participant-mute-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/participant-mute-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### Response
+### Response
 
 > **Note:** The response object shown here might be shortened for readability. 
 

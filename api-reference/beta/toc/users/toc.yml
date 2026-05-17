@@ -196,6 +196,10 @@ items:
       href: ../../api/user-sendmail.md
     - name: Get mail tips
       href: ../../api/user-getmailtips.md
+    - name: List notes
+      href: ../../api/user-list-notes.md
+    - name: Create note
+      href: ../../api/user-post-notes.md
   - name: Notes
     items:
     - name: List notebooks

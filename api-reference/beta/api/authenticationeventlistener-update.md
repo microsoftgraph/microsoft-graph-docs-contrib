@@ -23,8 +23,10 @@ Update the properties of an [authenticationEventListener](../resources/authentic
 - [onAttributeCollectionStartListener](../resources/onattributecollectionstartlistener.md) resource type
 - [onAttributeCollectionSubmitListener](../resources/onattributecollectionsubmitlistener.md) resource type
 - [onPhoneMethodLoadStartListener](../resources/onphonemethodloadstartlistener.md) resource type
+- [onEmailOtpSendListener](../resources/onemailotpsendlistener.md) resource type
 - [onPasswordSubmitListener](../resources/onpasswordsubmitlistener.md) resource type
-- [onFraudProtectionLoadStartListener](../resources/onFraudProtectionLoadStartListener.md) resource type
+- [onFraudProtectionLoadStartListener](../resources/onfraudprotectionloadstartlistener.md) resource type
+- [onVerifiedIdClaimValidationListener](../resources/onverifiedidclaimvalidationlistener.md) resource type
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -72,6 +74,7 @@ You must specify the **@odata.type** property and the value of the [authenticati
 |handler|[onPhoneMethodLoadStartHandler](../resources/onphonemethodloadstarthandler.md) | The handler to invoke when conditions are met. Can be updated for the **onPhoneMethodStartListener** type. |
 |handler|[onPasswordSubmitHandler](../resources/onpasswordsubmithandler.md) | The handler to invoke when conditions are met. Can be updated for the **onPasswordSubmitListener** type. |
 |handler|[onFraudProtectionLoadStartHandler](../resources/onFraudProtectionLoadStartHandler.md) | The handler to invoke when conditions are met. Can be updated for the **onFraudProtectionLoadStartListener** type. |
+|handler|[onVerifiedIdClaimValidationCustomExtensionHandler](../resources/onverifiedidclaimvalidationcustomextensionhandler.md) | The handler to invoke when conditions are met. Can be updated for the **onVerifiedIdClaimValidationListener** type. |
 |priority|Int32|The priority of this handler. Between 0 (lower priority) and 1000 (higher priority). Required.|
 
 ## Response
@@ -215,4 +218,79 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/authenticationEventListeners('0313cc37-d421-421d-857b-87804d61e33e')/conditions/applications/includeApplications/$entity",
     "appId": "63856651-13d9-4784-9abf-20758d509e19"
 }
+```
+
+### Example 3: Update an onVerifiedIdClaimValidationListener object
+
+#### Request
+The following example shows a request to update an onVerifiedIdClaimValidationListener object.
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_authenticationeventlistener_onVerifiedIdClaimValidationListener"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/identity/authenticationEventListeners/6a7455ef-0906-bbc3-f902-0f9ab8903082
+Content-Type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.onVerifiedIdClaimValidationListener",
+    "displayName": "Verified ID Claim Validation Listener (updated)",
+    "handler": {
+        "@odata.type": "#microsoft.graph.onVerifiedIdClaimValidationCustomExtensionHandler",
+        "configuration": {
+            "@odata.type": "#microsoft.graph.customExtensionOverwriteConfiguration",
+            "clientConfiguration": {
+                "@odata.type": "#microsoft.graph.customExtensionClientConfiguration",
+                "maximumRetries": 1,
+                "timeoutInMilliseconds": 2000
+            },
+            "behaviorOnError": {
+                "@odata.type": "#microsoft.graph.customExtensionBehaviorOnError"
+            }
+        }
+    }
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-authenticationeventlistener-onverifiedidclaimvalidationlistener-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-authenticationeventlistener-onverifiedidclaimvalidationlistener-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-authenticationeventlistener-onverifiedidclaimvalidationlistener-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-authenticationeventlistener-onverifiedidclaimvalidationlistener-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-authenticationeventlistener-onverifiedidclaimvalidationlistener-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-authenticationeventlistener-onverifiedidclaimvalidationlistener-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-authenticationeventlistener-onverifiedidclaimvalidationlistener-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
 ```

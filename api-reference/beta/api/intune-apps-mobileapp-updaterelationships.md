@@ -1,6 +1,6 @@
 ---
 title: "updateRelationships action"
-description: "Intune Apps Mobileapp Updaterelationships Source_Api ."
+description: "Intune Apps Mobileapp Updaterelationships Api ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"

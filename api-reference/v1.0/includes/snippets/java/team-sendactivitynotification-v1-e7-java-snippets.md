@@ -11,7 +11,7 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 com.microsoft.graph.teams.item.sendactivitynotification.SendActivityNotificationPostRequestBody sendActivityNotificationPostRequestBody = new com.microsoft.graph.teams.item.sendactivitynotification.SendActivityNotificationPostRequestBody();
 TeamworkActivityTopic topic = new TeamworkActivityTopic();
 topic.setSource(TeamworkActivityTopicSource.EntityUrl);
-topic.setValue("https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages/{messageId}/replies/{replyId}");
+topic.setValue("https://graph.microsoft.com/v1.0/teams/{teamId}/channels/{channelId}/messages/{messageId}/replies/{replyId}");
 sendActivityNotificationPostRequestBody.setTopic(topic);
 sendActivityNotificationPostRequestBody.setActivityType("reservationStatusUpdated");
 ItemBody previewText = new ItemBody();

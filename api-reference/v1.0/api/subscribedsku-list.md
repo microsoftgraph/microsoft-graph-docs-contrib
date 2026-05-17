@@ -38,7 +38,7 @@ GET /subscribedSkus
 This method supports only the `$select` [OData query parameter](/graph//query-parameters) to help customize the response. It does not support `$filter`.
 
 > [!NOTE]
-> This API has a [known issue](https://developer.microsoft.com/graph/known-issues/?search=20454) related to the `$search` parameter.
+> This API has a [known issue](/graph/known-issues#use-of-specific-query-parameters-on-subscribedskus-and-domains-doesnt-return-the-expected-results) related to the `$search` parameter.
 
 ## Request headers
 

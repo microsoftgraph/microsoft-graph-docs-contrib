@@ -39,6 +39,7 @@ None.
 |assignmentRequests|[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) collection|Represents access package assignment requests created by or on behalf of a user.|
 |connectedOrganizations|[connectedOrganization](../resources/connectedorganization.md) collection|Represents references to a directory or domain of another organization whose users can request access.|
 |controlConfigurations|[controlConfiguration](../resources/controlconfiguration.md) collection|Represents the policies that control lifecycle and access to access packages across the organization.|
+|externalOriginResourceConnectors|[externalOriginResourceConnector](../resources/externaloriginresourceconnector.md) collection|Represents the connectors used to communicate with external resource systems.|
 |settings|[entitlementManagementSettings](../resources/entitlementmanagementsettings.md)|Represents the settings that control the behavior of Microsoft Entra entitlement management.|
 |subjects|[accessPackageSubject](../resources/accesspackagesubject.md)|Represents the subjects within entitlement management.|
 

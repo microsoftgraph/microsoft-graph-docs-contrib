@@ -16,10 +16,7 @@ $requestBody = new VirtualEventPresenter();
 $identity = new CommunicationsGuestIdentity();
 $identity->setOdataType('#microsoft.graph.communicationsGuestIdentity');
 $identity->setDisplayName('Guest Speaker');
-$additionalData = [
-	'email' => 'guest.speaker@fabrikam.com',
-];
-$identity->setAdditionalData($additionalData);
+$identity->setEmail('guest.speaker@fabrikam.com');
 $requestBody->setIdentity($identity);
 
 $result = $graphServiceClient->solutions()->virtualEvents()->webinars()->byVirtualEventWebinarId('virtualEventWebinar-id')->presenters()->post($requestBody)->wait();

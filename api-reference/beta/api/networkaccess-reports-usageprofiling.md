@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns an object containing count tables for the traffic types in Global Secure Access, aggregated by the time period specified.
+Returns an object containing [count tables for the traffic types](../resources/networkaccess-usageprofilingpoint.md) in Global Secure Access, aggregated by the time period specified.
 
 ## Permissions
 
@@ -46,7 +46,7 @@ In the request URL, provide the following query parameters with values.
 |:---|:---|:---|
 |startDateTime|DateTimeOffset|Start of the period for aggregating traffic logs. Required.|
 |endDateTime|DateTimeOffset|End of the period for aggregating traffic logs. Required.|
-|aggregatedBy|microsoft.graph.networkaccess.aggregationFilter|The aggregation type for the returned data. Options include: `transactions`, `users`, `devices`, `bytesSent`, `bytesReceived`, `totalBytes`. Required.|
+|aggregatedBy|microsoft.graph.networkaccess.aggregationFilter|The aggregation type for the returned data. Options include: `transactions`, `users`, `devices`, `bytesSent`, `bytesReceived`, `totalBytes`, `connections`. Required.|
 |discoveredApplicationSegmentId|String|The unique identifier of the discovered application segment. Optional.|
 |applicationId|String|The unique identifier of the application for which the traffic data is being queried. Optional.|
 

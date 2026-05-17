@@ -1,4 +1,4 @@
----
+﻿---
 title: "setAsManagedInstaller action"
 description: "Set the Managed Installer status for the caller tenant"
 author: "jaiprakashmb"

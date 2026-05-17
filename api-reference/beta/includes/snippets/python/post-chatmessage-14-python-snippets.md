@@ -13,7 +13,7 @@ from msgraph_beta.generated.models.body_type import BodyType
 request_body = ChatMessage(
 	body = ItemBody(
 		content_type = BodyType.Html,
-		content = "<codeblock><code>Hello world</code></codeblock>",
+		content = "<codeblock class=\"plaintext\"><code>Hello world</code></codeblock>",
 	),
 )
 

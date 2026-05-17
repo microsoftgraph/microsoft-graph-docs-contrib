@@ -52,6 +52,26 @@ items:
       href: ../../api/engagementrole-post-members.md
     - name: Delete
       href: ../../api/engagementrole-delete-members.md
+  - name: Storyline
+    items:
+    - name: Storyline
+      href: ../../resources/storyline.md
+    - name: Follow user
+      href: ../../api/storyline-follow.md
+    - name: Unfollow user
+      href: ../../api/storyline-unfollow.md
+  - name: Storyline follower
+    items:
+    - name: Storyline follower
+      href: ../../resources/storylinefollower.md
+    - name: List followers
+      href: ../../api/storyline-list-followers.md
+  - name: Storyline following
+    items:
+    - name: Storyline following
+      href: ../../resources/storylinefollowing.md
+    - name: List followings
+      href: ../../api/storyline-list-followings.md
   - name: Complex types
     items:
     - name: Engagement identity set

@@ -13,9 +13,7 @@ request_body = VirtualEventPresenter(
 	identity = CommunicationsGuestIdentity(
 		odata_type = "#microsoft.graph.communicationsGuestIdentity",
 		display_name = "Guest Speaker",
-		additional_data = {
-				"email" : "guest.speaker@fabrikam.com",
-		}
+		email = "guest.speaker@fabrikam.com",
 	),
 )
 

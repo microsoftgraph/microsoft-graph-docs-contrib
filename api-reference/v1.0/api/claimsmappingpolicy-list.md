@@ -24,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/claimsmappingpolicy-list-permissions.md)]
 
 > [!IMPORTANT]
-> This method has a [known permissions issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=13678) and may require consent to both permissions.
+> This method has a [known permissions issue](/graph/known-issues#claims-mapping-policy-might-require-consent-to-additional-permissions) and may require consent to both permissions.
 
 ## HTTP request
 

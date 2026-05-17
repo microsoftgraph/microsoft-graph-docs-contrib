@@ -1,6 +1,6 @@
 ---
 title: "Get crossTenantIdentitySyncPolicyPartner"
-description: "Get the user synchronization policy of a partner-specific configuration."
+description: "Get the user and group synchronization policy of a partner-specific configuration."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the user synchronization policy of a partner-specific configuration.
+Get the user and group synchronization policy of a partner-specific configuration.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -119,6 +119,9 @@ Content-Type: application/json
 {
   "tenantId": "9c5d131d-b1c3-4fc4-9e3f-c6557947d551",
   "displayName": "Fabrikam",
+  "groupSyncInbound": {
+    "isSyncAllowed": true
+  },
   "userSyncInbound": {
     "isSyncAllowed": true
   }

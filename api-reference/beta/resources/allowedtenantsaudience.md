@@ -18,6 +18,9 @@ The **allowedTenantsAudience** type is used as the **signInAudienceRestrictions*
 
 This type may only be used when the application's **signInAudience** property is `AzureADMultipleOrgs`.
 
+> [!IMPORTANT]
+> Using the **signInAudience** and **signInAudienceRestrictions** properties to limit where an application can be used **isn't** a replacement for proper tenant validation and authorization enforcement in your application code. If your application expects access only in specific tenants, you *must* enforce that validation in your application code. To learn more, see [Secure applications and APIs by validating claims](/entra/identity-platform/claims-validation).
+
 Inherits from [signInAudienceRestrictionsBase](../resources/signinaudiencerestrictionsbase.md).
 
 ## Properties

@@ -8,8 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
-com.microsoft.graph.beta.models.ReferenceCreate referenceCreate = new com.microsoft.graph.beta.models.ReferenceCreate();
-referenceCreate.setOdataId("https://graph.microsoft.com/beta/identityProviders/Google-OAUTH");
+com.microsoft.graph.models.ReferenceCreate referenceCreate = new com.microsoft.graph.models.ReferenceCreate();
+referenceCreate.setOdataId("https://graph.microsoft.com/v1.0/identityProviders/Google-OAUTH");
 graphClient.identity().authenticationEventsFlows().byAuthenticationEventsFlowId("{authenticationEventsFlow-id}").graphExternalUsersSelfServiceSignUpEventsFlow().onAuthenticationMethodLoadStart().graphOnAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp().identityProviders().ref().post(referenceCreate);
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Update column"
-description: "Update a columnDefinition in a fileStorageContainer."
+description: "Update an existing column represented as a columnDefinition in a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ```http
-PATCH /storage/fileStorage/containers/{containerId}/columns/{column-id}
+PATCH /storage/fileStorage/containers/{containerId}/columns/{columnId}
 ```
 
 ## Request headers
@@ -46,7 +46,7 @@ PATCH /storage/fileStorage/containers/{containerId}/columns/{column-id}
 
 ## Request body
 
-In the request body, supply a JSON representation of the [columnDefinition](../resources/columndefinition.md) object with the properties to update. The `id` property can't be changed. Existing properties not included in the request body maintain their previous values. To optimize performance, don't include existing values that didn't change.
+In the request body, supply a JSON representation of the [columnDefinition](../resources/columndefinition.md) object with the properties to update. The **id** property can't be changed. Existing properties not included in the request body maintain their previous values. To optimize performance, don't include existing values that didn't change.
 
 ## Response
 

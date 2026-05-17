@@ -39,7 +39,7 @@ To extract the content label as the signed-in user (delegated permission) or a s
 
 ```http
 POST /users/{usersId}/security/informationProtection/sensitivityLabels/extractContentLabel
-POST /users/me/security/informationProtection/sensitivityLabels/extractContentLabel
+POST /me/security/informationProtection/sensitivityLabels/extractContentLabel
 ```
 
 To extract the content label as a service principal (application permission):

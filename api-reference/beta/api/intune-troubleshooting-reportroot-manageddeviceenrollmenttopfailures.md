@@ -1,6 +1,6 @@
 ---
 title: "managedDeviceEnrollmentTopFailures function"
-description: "Intune Troubleshooting Reportroot Manageddeviceenrollmenttopfailures Source_Api ."
+description: "Intune Troubleshooting Reportroot Manageddeviceenrollmenttopfailures Api ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"
@@ -55,7 +55,7 @@ The following table shows the parameters that can be used with this function.
 
 
 ## Response
-If successful, this function returns a `200 OK` response code and a [report](../resources/intune-troubleshooting-report.md) in the response body.
+If successful, this function returns a `200 OK` response code and a [report](../resources/intune-shared-report.md) in the response body.
 
 ## Example
 

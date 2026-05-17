@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update an existing [accessPackageSubject](../resources/accesspackagesubject.md) object to change the subject lifecycle.
+Update an external directory user represented by an existing [accessPackageSubject](../resources/accesspackagesubject.md) object to change the subject lifecycle.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ```http
-PATCH /identityGovernance/entitlementManagement/subjects(objectId='{objectIdOfUser}')
+PATCH /identityGovernance/entitlementManagement/subjects(objectId='{objectIdOfExternalDirectoryUser}')
 ```
 
 ## Request headers
@@ -63,7 +63,7 @@ If successful, this method returns a `204 No Content` response code.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/subjects(objectId='{objectIdOfUser}')
+PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/subjects(objectId='{objectIdOfExternalDirectoryUser}')
 Content-Type: application/json
 
 {

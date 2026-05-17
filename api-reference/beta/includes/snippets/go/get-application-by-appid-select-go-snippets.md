@@ -16,7 +16,7 @@ import (
 )
 
 requestParameters := &graphapplicationswithappid.ApplicationsWithAppIdRequestBuilderGetQueryParameters{
-	Select: [] string {"id","appId","displayName","requiredResourceAccess"},
+	Select: [] string {"id","appId","displayName","signInAudience","signInAudienceRestrictions"},
 }
 configuration := &graphapplicationswithappid.ApplicationsWithAppIdRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,

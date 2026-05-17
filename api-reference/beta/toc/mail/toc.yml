@@ -196,6 +196,28 @@ items:
     href: ../../api/messagerule-update.md
   - name: Delete rule
     href: ../../api/messagerule-delete.md
+- name: Note (preview)
+  items:
+  - name: Note (preview)
+    href: ../../resources/note.md
+  - name: List
+    href: ../../api/user-list-notes.md
+  - name: Create
+    href: ../../api/user-post-notes.md
+  - name: Get
+    href: ../../api/note-get.md
+  - name: Update
+    href: ../../api/note-update.md
+  - name: Delete
+    href: ../../api/note-delete.md
+  - name: Get delta
+    href: ../../api/note-delta.md
+  - name: List attachments
+    href: ../../api/note-list-attachments.md
+  - name: Create attachment
+    href: ../../api/note-post-attachments.md
+  - name: Delete attachment
+    href: ../../api/attachment-delete.md
 - name: Message trace
   items:
   - name: Message trace

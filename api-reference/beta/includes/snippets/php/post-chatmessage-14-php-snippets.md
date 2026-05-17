@@ -16,7 +16,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 $requestBody = new ChatMessage();
 $body = new ItemBody();
 $body->setContentType(new BodyType('html'));
-$body->setContent('<codeblock><code>Hello world</code></codeblock>');
+$body->setContent('<codeblock class=\"plaintext\"><code>Hello world</code></codeblock>');
 $requestBody->setBody($body);
 
 $result = $graphServiceClient->chats()->byChatId('chat-id')->messages()->post($requestBody)->wait();

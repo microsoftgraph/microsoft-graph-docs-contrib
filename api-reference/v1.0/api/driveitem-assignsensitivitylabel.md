@@ -5,7 +5,7 @@ author: "abhishek-microsoft-2021"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
-ms.date: 04/04/2024
+ms.date: 04/09/2026
 ---
 
 # driveItem: assignSensitivityLabel
@@ -13,12 +13,14 @@ Namespace: microsoft.graph
 
 Asynchronously assign a sensitivity label to a [driveItem][item-resource].
 
-This API is part of Microsoft SharePoint and OneDrive APIs that perform advanced premium administrative functions and is considered a protected API. Protected APIs require you to have additional validation, beyond permission and consent, before you can use them. Before you call this API, you must [Enable metered APIs and services in Microsoft Graph](/graph/metered-api-setup).
+This API is part of the Microsoft SharePoint and OneDrive APIs that perform advanced premium administrative functions, and is considered as protected. Protected APIs require you to have more validations, beyond permission and consent, before you can use them.
 
 For more information about sensitivity labels from an administrator's perspective, see [Enable sensitivity labels for Office files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files?view=o365-worldwide&preserve-view=true).
 
 > [!NOTE]
-> This is a metered API and some charges for use may apply. For details, see [Overview of metered Microsoft 365 APIs in Microsoft Graph](/graph/metered-api-overview).
+> This is a metered API and some charges for use may apply. For details, see [Overview of metered Microsoft 365 APIs in Microsoft Graph](/graph/metered-api-overview). Before you call this API, you must [Enable metered APIs and services in Microsoft Graph](/graph/metered-api-setup?tabs=azurecloudshell).
+
+This API applies sensitivity labels to files at rest. Office clients don't apply watermarks, headers, or footers to files that contain the label information. For more information about sensitivity labels from an administrator's perspective, see [Enable sensitivity labels for Office files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files?view=o365-worldwide&preserve-view=true).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -28,7 +30,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "driveitem_assignsensitivitylabel" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-assignsensitivitylabel-permissions.md)]
 
-[!INCLUDE [app-permissions](../includes/sharepoint-embedded-app-driveitem-permissions.md)]
+> [!NOTE]
+> This API isn't supported for Microsoft SharePoint Embedded containers.
 
 ## HTTP request
 
@@ -66,10 +69,10 @@ In the request body, provide the ID for the sensitivity label that is to be assi
 ## Response
 
 If successful, the API returns a `202 Accepted` HTTP response code with an empty response body. The `Location` header provides the URL to get operation details.
-For more information about how to monitor the progress of an assign sensitivity label operation, see [monitoring long-running operations](/graph/long-running-actions-overview).
+For more information about how to monitor the progress of an assignSensitivityLabel operation, see [monitoring long-running operations](/graph/long-running-actions-overview).
 
 In addition to general errors that apply to Microsoft Graph, this API returns the `423 Locked` response code, which indicates that the file being accessed is locked. In such cases, the **code** property of the response object indicates the error type that blocks the operation.
-Also, Few Irm Protected sensitivity labels can't be updated by Application and need delegated user access to validate if the user has proper rights, and for these scenarios the API returns a `Not Supported` response code.
+Also, some IRM Protected sensitivity labels can't be updated in app-only mode and need delegated user access to validate if the user has proper rights, and for these scenarios the API returns a `Not Supported` response code.
 
 The following table lists the possible values for the error types.
 
@@ -108,17 +111,19 @@ Content-Type: application/json
 
 ### Response
 
-Here's is an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response" } -->
 ```http
 HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/QXNzaWduU2Vuc2l0aXZpdHlMYWJlbCxiMzc3ODY3OS04OWQ3LTRkYmYtYjg0MC1jYWM1NzRhY2FlNmE?tempAuth=eyJ0eXAiOiJKV1QiLCJhb....
 ```
-The value of the `Location` header provides a URL for a service that returns the current state of the assign sensitivity label operation.
-You can use this information to [determine when the assign sensitivity label operation has finished](/graph/long-running-actions-overview).
+
+The value of the `Location` header provides a URL for a service that returns the current state of the assignSensitivityLabel operation.
+You can use this information to [determine when the assignSensitivityLabel operation finishes](/graph/long-running-actions-overview).
 
 ### Remarks
-The response from the API only indicates that the assign sensitivity label operation was accepted or rejected. The operation might be rejected, for example, if the file type isn't supported, or the file is double encrypted. Audit events for both success and failure cases are logged. For more information, see [Audit log activities](/purview/audit-log-activities#sensitivity-label-activities).
+
+The response from the API only indicates that the assignSensitivityLabel operation was accepted or rejected. The operation might be rejected, for example, if the file type isn't supported, or the file is double encrypted. Audit events for both success and failure cases are logged. For more information, see [Audit log activities](/purview/audit-log-activities#sensitivity-label-activities).
 
 [item-resource]: ../resources/driveitem.md

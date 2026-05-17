@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 com.microsoft.graph.beta.drives.item.items.item.workbook.names.item.range.delete.DeletePostRequestBody deletePostRequestBody = new com.microsoft.graph.beta.drives.item.items.item.workbook.names.item.range.delete.DeletePostRequestBody();
-deletePostRequestBody.setShift("shift-value");
+deletePostRequestBody.setShift("Up");
 graphClient.drives().byDriveId("{drive-id}").items().byDriveItemId("{driveItem-id}").workbook().names().byWorkbookNamedItemId("{workbookNamedItem-id}").range().delete().post(deletePostRequestBody);
 
 

@@ -231,6 +231,40 @@
       "CreatedDateTime": "2026-02-17T20:49:23.1678494Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Network access"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "add1f1dc-04ab-4779-80fa-fba5aff38265",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "applicationActivity",
+          "ChangeType": "Addition",
+          "Description": "Added the **applicationActivity** enumeration type.",
+          "Target": "applicationActivity"
+        },
+        {
+          "Id": "add1f1dc-04ab-4779-80fa-fba5aff38265",
+          "ApiChange": "Resource",
+          "ChangedApiName": "generativeAIInsight",
+          "ChangeType": "Addition",
+          "Description": "Added the [generativeAIInsight](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-generativeAIInsight?view=graph-rest-beta) resource.",
+          "Target": "generativeAIInsight"
+        },
+        {
+          "Id": "add1f1dc-04ab-4779-80fa-fba5aff38265",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "generativeAIInsights",
+          "ChangeType": "Addition",
+          "Description": "Added the **generativeAIInsights** relationship to the [logs](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-logs?view=graph-rest-beta) resource.",
+          "Target": "logs"
+        }
+      ],
+      "Id": "add1f1dc-04ab-4779-80fa-fba5aff38265",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2026-03-30T10:09:00.4006729Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Network access"
     }
   ]
 }

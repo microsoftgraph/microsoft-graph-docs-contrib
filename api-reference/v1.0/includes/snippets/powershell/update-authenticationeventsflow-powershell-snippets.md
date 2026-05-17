@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
-	"@odata.id" = "https://graph.microsoft.com/beta/identityProviders/Google-OAUTH"
+	"@odata.id" = "https://graph.microsoft.com/v1.0/identityProviders/Google-OAUTH"
 }
 
-New-MgBetaIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderByRef -AuthenticationEventsFlowId $authenticationEventsFlowId -BodyParameter $params
+New-MgIdentityAuthenticationEventFlowAsOnAuthenticationMethodLoadStartExternalUserSelfServiceSignUpIdentityProviderByRef -AuthenticationEventsFlowId $authenticationEventsFlowId -BodyParameter $params
 
 ```

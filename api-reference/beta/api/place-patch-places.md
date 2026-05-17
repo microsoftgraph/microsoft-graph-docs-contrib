@@ -32,6 +32,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "place_patch_places" } -->
 [!INCLUDE [permissions-table](../includes/permissions/place-patch-places-permissions.md)]
 
+[!INCLUDE [rbac-places-apis-write](../includes/rbac-for-apis/rbac-places-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
@@ -71,6 +73,7 @@ The following example shows a request that combines multiple operations, includi
 - Create a new workspace in reservable mode under an existing parent.
 - Update the display name of an existing section.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "mixed_create_update"
@@ -138,6 +141,12 @@ OData-Version: 4.01
   ]
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/mixed-create-update-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 The following example shows the response.

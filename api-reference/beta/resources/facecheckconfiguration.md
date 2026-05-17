@@ -20,7 +20,7 @@ Configuration for Face Check requirements in a Verified ID Profile
 |Property|Type|Description|
 |:---|:---|:---|
 |isEnabled|Boolean|Defines if Face Check is required. Currently must always be true.|
-|sourcePhotoClaimName|Source of photo to validate Face Check against. Currently must always be `portrait`|
+|sourcePhotoClaimName|String|Source of photo to validate Face Check against. Currently must always be `portrait`|
 
 ## Relationships
 None.

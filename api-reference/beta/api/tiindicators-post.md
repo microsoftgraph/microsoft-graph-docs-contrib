@@ -1,18 +1,21 @@
 ---
-title: "Create threat intelligence indicator"
+title: "Create threat intelligence indicator (deprecated)"
 description: "Create a new tiIndicator."
 ms.localizationpriority: medium
 author: "preetikr"
 ms.subservice: "security"
 doc_type: apiPageType
 ms.date: 08/13/2024
+ROBOTS: NOINDEX
 ---
 
-# Create threat intelligence indicator
+# Create threat intelligence indicator (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [security-tiindicator-deprecation](../includes/security-tiindicator-deprecation.md)]
 
 Create a new [tiIndicator](../resources/tiindicator.md) object.
 

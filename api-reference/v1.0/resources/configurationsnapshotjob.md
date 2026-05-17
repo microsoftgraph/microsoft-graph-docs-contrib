@@ -1,0 +1,69 @@
+---
+title: "configurationSnapshotJob resource type"
+description: "Represents an asynchronous job that is created when an admin creates a snapshot."
+author: "swatyario"
+ms.date: 03/18/2026
+ms.localizationpriority: medium
+ms.subservice: "tenant-configuration-management"
+doc_type: resourcePageType
+---
+
+# configurationSnapshotJob resource type
+
+Namespace: microsoft.graph
+
+Represents an asynchronous job that is created when an admin creates a snapshot. When an admin calls the [configurationBaseline: createSnapshot](../api/configurationbaseline-createsnapshot.md) API, a [configurationSnapshotJob](../resources/configurationsnapshotjob.md) is created and runs asynchronously. Once the job completes successfully, the admin can download the extraction.
+
+Inherits from [entity](../resources/entity.md).
+
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[Create snapshot](../api/configurationbaseline-createsnapshot.md)|[configurationSnapshotJob](../resources/configurationsnapshotjob.md)|Create a [configurationSnapshotJob](../resources/configurationsnapshotjob.md) asynchronously.|
+|[List snapshot jobs](../api/configurationmanagement-list-configurationsnapshotjobs.md)|[configurationSnapshotJob](../resources/configurationsnapshotjob.md) collection|Get a list of the [configurationSnapshotJob](../resources/configurationsnapshotjob.md) objects and their properties.|
+|[Get snapshot job](../api/configurationsnapshotjob-get.md)|[configurationSnapshotJob](../resources/configurationsnapshotjob.md)|Read the properties and relationships of a [configurationSnapshotJob](../resources/configurationsnapshotjob.md) object.|
+|[Delete snapshot job](../api/configurationsnapshotjob-delete.md)|None|Delete a [configurationSnapshotJob](../resources/configurationsnapshotjob.md) object.|
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|completedDateTime|DateTimeOffset|The date and time when the snapshot job was completed. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br>Supports `$filter` (`eq`, `ne`, `ge`, `le`) and `$orderby`.|
+|createdBy|[identitySet](../resources/identityset.md)|The user, app, or device that triggered the snapshot. <br><br>Requires `$select` to retrieve. Supports `$filter` (`eq`).|
+|createdDateTime|DateTimeOffset|The date and time when the snapshot job was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br>Supports `$filter` (`eq`, `ne`, `ge`, `le`) and `$orderby`.|
+|description|String|User-friendly description of the snapshot given by the user. <br><br>Supports `$filter` (`eq`, `ne`, `startsWith`) and `$orderby`.|
+|displayName|String|User-friendly name provided by the user during snapshot creation. <br><br>Supports `$filter` (`eq`, `ne`, `startsWith`) and `$orderby`.|
+|errorDetails|String collection|Details of errors related to the reasons why the snapshot can't complete. <br><br>Requires `$select` to retrieve.|
+|id|String|Globally unique identifier (GUID) of the snapshot job. Inherited from [entity](../resources/entity.md). <br><br>Supports `$filter` (`eq`, `ne`) and `$orderby`.|
+|resourceLocation|String|The URL at which the snapshot file resides. <br><br>Requires `$select` to retrieve.|
+|resources|String collection|The names of all resources included in the request body by the user who created the snapshot. Fetched by the system. <br><br>Requires `$select` to retrieve.|
+|status|snapshotJobStatus|Status of the snapshot. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue`, `partiallySuccessful`. Use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `partiallySuccessful`. <br><br>Supports `$filter` (`eq`, `ne`) and `$orderby`.|
+|tenantId|String|Globally unique identifier (GUID) of the tenant for which the snapshot is created. <br><br>Supports `$filter` (`eq`, `ne`).|
+
+## Relationships
+None.
+
+## JSON representation
+The following JSON representation shows the resource type.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.configurationSnapshotJob",
+  "openType": false
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.configurationSnapshotJob",
+  "completedDateTime": "String (timestamp)",
+  "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
+  "createdDateTime": "String (timestamp)",
+  "description": "String",
+  "displayName": "String",
+  "errorDetails": ["String"],
+  "id": "String (identifier)",
+  "resourceLocation": "String",
+  "resources": ["String"],
+  "status": "String",
+  "tenantId": "String"
+}
+```

@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create a new [cloudPcExternalPartner](../resources/cloudpcexternalpartner.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -73,7 +73,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.cloudPcExternalPartner",
-  "partnerId": "198d7140-80bb-4843-8cc4-811377a49a92",
+  "partnerId": "198d71c0-80bb-4843-8cc4-811377a49a92",
   "enableConnection": true
 }
 ```
@@ -122,7 +122,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.cloudPcExternalPartner",
   "id": "b3548526-e615-3785-3118-be70b3968ec5",
-  "partnerId": "198d7140-80bb-4843-8cc4-811377a49a92",
+  "partnerId": "198d71c0-80bb-4843-8cc4-811377a49a92",
   "enableConnection": true,
   "lastSyncDateTime": "2020-11-03T12:43:14Z",
   "connectionStatus": "available",

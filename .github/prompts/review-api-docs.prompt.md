@@ -45,7 +45,7 @@ While not required, providing these files significantly improves review quality 
 - **Beyond guidelines:** Without these files, the review is limited to Microsoft content guidelines and Microsoft Graph content guidelines only
 - **Comprehensive validation:** With these files, the review can verify implementation completeness, accuracy of descriptions, and correct interpretation of API specifications
 
-**How to provide:** If you have these files, please attach them to this conversation using the attachment feature.
+**How to provide:** If you have these files, please attach them to the **temp-docstubs** folder.
 
 ---
 
@@ -127,146 +127,98 @@ All content must align with the [Microsoft Style Guide](https://docs.microsoft.c
 
 ### 2. API Docs Authoring Guidelines
 
-Reference [author-api-docs.prompt.md](.github/prompts/author-api-docs.prompt.md) for:
-- **Reference Standards: Namespace Qualification** - Namespace qualification rules for subnamespace types
-- **Reference Standards: General Formatting Rules** - Alphabetical ordering, file naming conventions, beta disclaimer
-- **Common Process: Updating the Changelog** - Changelog format and structure
-- **Common Process: Updating What's New** - What's new formatting and link rules
-- **Common Process: Updating the Table of Contents (TOC)** - TOC structure requirements
+The authoring guidelines are modular — reference the specific file for each topic:
+
+**Shared standards** — [`common.md`](./author-api-docs/common.md):
+- [Namespace Qualification](./author-api-docs/common.md#namespace-qualification) — namespace qualification rules for subnamespace types
+- [General Formatting Rules](./author-api-docs/common.md#general-formatting-rules) — alphabetical ordering, file naming conventions, beta disclaimer
+- [API method reference files](./author-api-docs/common.md#api-method-reference-files) — required elements and structure for API topics
+- [Resource reference files](./author-api-docs/common.md#resource-reference-files) — required elements and structure for resource topics
+- [Version-specific guidelines](./author-api-docs/common.md#version-specific-guidelines) — v1.0 vs beta rules
+- [Front matter rules](./author-api-docs/common.md#front-matter-rules) and [File body rules](./author-api-docs/common.md#file-body-rules) — general rules for all file types
+- [Updating the Changelog](./author-api-docs/common.md#updating-the-changelog) — changelog format and structure
+- [Updating What's New](./author-api-docs/common.md#updating-whats-new) — What's New formatting and link rules
+- [Updating the Table of Contents (TOC)](./author-api-docs/common.md#updating-the-table-of-contents-toc) — TOC structure requirements
+- [Cross-File Consistency Validation](./author-api-docs/common.md#cross-file-consistency-validation) — polymorphic types, enum references, Methods↔API file consistency
+
+**Quality checklists** — per-scenario:
+- [Public preview checklist](./author-api-docs/public-preview.md#quality-checklist)
+- [GA promotion checklist](./author-api-docs/ga.md#quality-checklist)
+- [Deprecation checklist](./author-api-docs/deprecate-retire.md#quality-checklist)
+- [Enumeration checklist](./author-api-docs/enumerations.md#quality-checklist-for-enumerations)
+- [Base quality checklist](./author-api-docs/common.md#base-quality-checklist) (applies to all scenarios)
+
+**Specialized topics:**
+- [Polymorphic entity types](./author-api-docs/public-preview.md#handling-polymorphic-entity-types) — derived type handling rules
+- [Enumerations](./author-api-docs/enumerations.md) — creating, updating, deprecating enums; evolvable enum handling
 
 ### 3. API Docs Review Guidelines
 
-Reference the [copilot-instructions.md](.github/copilot-instructions.md) file for:
-- File type classifications
-- API reference topics required elements and common issues
-- Resource topics required elements and common issues
-- Changelog files validation
-- Version-specific guidelines (v1.0 vs beta)
+The `copilot-instructions.md` file is always loaded as the system prompt — its rules (file type classifications, required elements, common issues, version-specific guidelines) are automatically available to you. Do not re-fetch this file; apply its rules directly.
 
-Reference the [author-api-docs.prompt.md](.github/prompts/author-api-docs.prompt.md) file for quality checklist items related to the different scenarios:
-- [Quality checklist](author-api-docs.prompt.md#author-api-docs.prompt.md#quality-checklist-1)
-- [Promotion from beta to v1.0](author-api-docs.prompt.md#quality-checklist-for-promotion-scenarios)
-- [Deprecation scenarios](author-api-docs.prompt.md#quality-checklist)
-- Documentation standards to follow for:
-  - [General guidelines](author-api-docs.prompt.md#general-guidelines)
-  - [API method reference files](author-api-docs.prompt.md#api-method-reference-files)
-  - [Resource reference files](author-api-docs.prompt.md#resource-reference-files)
-  - [Version-specific guidelines](author-api-docs.prompt.md#version-specific-guidelines)
-  - [General rules (applies to both resource and API files)](author-api-docs.prompt.md#general-rules-applies-to-both-resource-and-api-files)
+## Top Review Rules (Quick Reference)
 
-## File Type-Specific Review Checklist
+These are the most commonly violated rules. Check these first for every file:
 
-### API Reference Topics Review
+1. **All filenames must be lowercase** — PR will be blocked otherwise
+2. **Namespace declaration** — `Namespace: microsoft.graph*` immediately after H1 title
+3. **Properties and Relationships tables must be in alphabetical order**
+4. **Beta disclaimer** — required after namespace in beta files; must be absent in v1.0 files
+5. **No TODO placeholders** — search all changed files
+6. **No custom H2 sections** — only predefined headings allowed (see system prompt)
+7. **Examples use pseudo-values** — never data type names like "String"
+8. **Examples use full URLs** — `https://graph.microsoft.com/v1.0/...` or `.../beta/...`
+9. **HTTP request uses relative URLs with method** — `GET /users` not `https://graph.microsoft.com/beta/users`
+10. **Resource name consistency** — must match exactly in: YAML title, H1, HTML comment `@odata.type`, JSON `@odata.type`
+11. **JSON representation matches Properties table** — same properties, same types
+12. **Validation scripts must pass** — run changelog and temp-docstubs validators (see [Common Process: Validation](#common-process-validation))
+13. **Examples use only production versions** — URLs must contain only `v1.0` or `beta`. Flag any non-prod versions like `ppeprod`, `stagingbeta`, `stagingv1.0`, or other test environment versions — authors may accidentally copy these from test environments
 
-For files in `api-reference/v1.0/api/` and `api-reference/beta/api/`:
+### Complete file-type-specific rules
 
-**Required Elements:**
-- [ ] Title begins with imperative verb (Get, Create, Update, Delete, List)
-- [ ] Description begins with imperative verb and uses active voice
-- [ ] Namespace declaration immediately after H1 title (`Namespace: microsoft.graph*`)
-- [ ] Permissions section includes standard boilerplate and link to permissions table
-- [ ] HTTP request uses relative URLs and proper placeholder format (`{type-id}`)
-- [ ] HTTP request has preceding HTML comment `<!-- { "blockType": "ignored" } -->`
-- [ ] Request headers include Authorization (and Content-Type when appropriate)
-- [ ] Response section links to returned resource types
-- [ ] Examples use full URLs with `graph.microsoft.com` domain
-- [ ] Examples use pseudo-values (not data types) in response objects
-- [ ] Each example has HTML comment block with unique `name` attribute
-- [ ] Query parameters formatted in Markdown code font (e.g., `$filter`, `$select`)
-- [ ] Function parameters indicate if optional or required
+For detailed required elements and common issues per file type, apply the rules from the system prompt (copilot-instructions.md) **plus** these authoring references:
 
-**Common Issues to Flag:**
-- [ ] TODO placeholders in descriptions
-- [ ] Missing permissions include statements
-- [ ] Missing HTTP request syntax
-- [ ] Custom H2 sections (only predefined H2 headings allowed)
-- [ ] "Shortened for readability" note in examples with no response body (204 No Content)
-- [ ] Data types instead of pseudo-values in example responses
-- [ ] Malformed or incomplete example blocks
+| File type | Authoring reference |
+|---|---|
+| API topics (`api-reference/*/api/`) | [common.md — API method reference files](./author-api-docs/common.md#api-method-reference-files) |
+| Resource topics (`api-reference/*/resources/`) | [common.md — Resource reference files](./author-api-docs/common.md#resource-reference-files) |
+| Changelog (`changelog/`) | [common.md — Updating the Changelog](./author-api-docs/common.md#updating-the-changelog) |
+| What's New (`concepts/whats-new-overview.md`) | [common.md — Updating What's New](./author-api-docs/common.md#updating-whats-new) |
+| TOC files | [common.md — Updating the TOC](./author-api-docs/common.md#updating-the-table-of-contents-toc) |
+| Enumerations | [enumerations.md — Quality checklist](./author-api-docs/enumerations.md#quality-checklist-for-enumerations) |
+| Polymorphic types | [common.md — Cross-file consistency](./author-api-docs/common.md#cross-file-consistency-validation), [public-preview.md — Polymorphic entity types](./author-api-docs/public-preview.md#handling-polymorphic-entity-types) |
+| Version-specific (v1.0 vs beta) | [common.md — Version-specific guidelines](./author-api-docs/common.md#version-specific-guidelines) |
+| Namespace qualification | [common.md — Namespace Qualification](./author-api-docs/common.md#namespace-qualification) |
+| General formatting | [common.md — General Formatting Rules](./author-api-docs/common.md#general-formatting-rules) |
 
-### Resource Topics Review
+### Enumeration review
 
-For files in `api-reference/v1.0/resources/` and `api-reference/beta/resources/`:
+When reviewing changes that add, update, or deprecate enumerations, validate against:
+- [enumerations.md — Quality checklist](./author-api-docs/enumerations.md#quality-checklist-for-enumerations) — covers all enum scenarios
+- [enumerations.md — For new enumerations](./author-api-docs/enumerations.md#for-new-enumerations) — correct option selection (Option 1/2/3), evolvable enum handling (`unknownFutureValue`, `Prefer` header notes)
+- [enumerations.md — Updating existing enumerations](./author-api-docs/enumerations.md#updating-existing-enumerations) — search strategy to find all places an enum is documented, inline property description consistency
+- [enumerations.md — Deprecating enumerations](./author-api-docs/enumerations.md#deprecating-enumerations) — deprecation markers, member-level vs full-type deprecation
 
-**Required Elements:**
-- [ ] Title is in lower camel case (e.g. `user`, `deviceManagementScript`)
-- [ ] Description begins with present-tense verb (represents, contains)
-- [ ] Namespace declaration immediately after H1 title
-- [ ] Methods table uses succinct method names (avoids repeating resource name)
-- [ ] Properties table in alphabetical order
-- [ ] Properties use noun phrases with periods
-- [ ] Filterable properties documented with `$filter` support
-- [ ] Relationships table in alphabetical order
-- [ ] JSON representation matches properties section
-- [ ] Resource name consistency across all locations (page title, H1, HTML comment `@odata.type`, JSON `@odata.type`)
+### Polymorphic type review
 
-**Common Issues to Flag:**
-- [ ] Resource names not in lower camel case
-- [ ] Properties not in alphabetical order
-- [ ] Custom H2 sections (only predefined headings allowed)
-- [ ] Empty properties table showing header (should show "None." instead)
-- [ ] Resource name inconsistency (may indicate file wasn't autogenerated properly)
-- [ ] Using resource name to describe purpose in description
+When reviewing resources that are part of a polymorphic hierarchy (base types with derived types), validate:
+- **Derived type resources must NOT duplicate the base type's Methods table** — they include only a polymorphic note under `## Methods`
+- **Operation files use base type names** — not derived type names
+- **POST/PATCH/PUT request bodies** include `@odata.type` guidance when the request targets a polymorphic collection
 
-### Changelog Files Review
+Full rules: [common.md — Cross-file consistency validation](./author-api-docs/common.md#cross-file-consistency-validation) (point d) and [public-preview.md — Handling polymorphic entity types](./author-api-docs/public-preview.md#handling-polymorphic-entity-types)
 
-For files in `changelog/`, verify structure matches [templates/changelog-patterns.md](templates/changelog-patterns.md) and run validation (see [Common Process: Validation](#common-process-validation)).
+### Retirement (file deletion) review
 
-**Required Elements:**
-- [ ] Complete changelog record structure (ChangeList array + Id, Cloud, Version, CreatedDateTime, WorkloadArea, SubArea)
-- [ ] Same GUID in all ChangeList items and record-level Id
-- [ ] Cloud value is "prd" (or "Prod")
-- [ ] Version value is "v1.0" or "beta"
-- [ ] CreatedDateTime in ISO 8601/RFC 3339 format with fractional seconds and Z suffix (e.g., "2025-11-17T17:38:10.4694969Z")
-- [ ] Description links use full URLs with en-us locale
-- [ ] WorkloadArea and SubArea match CDK taxonomy (https://aka.ms/msgraphcdk)
-- [ ] Validation script passes (see [Common Process: Validation](#common-process-validation))
+When a PR deletes API documentation files, validate:
+- **Completeness:** All API operation files, permission includes, and RBAC includes tied to a deleted entity type resource are also deleted
+- **Retained types:** Complex types and entity types referenced by the deleted resource are NOT deleted unless explicitly called out — they may be in use by other APIs
+- **Reference cleanup:** Deleted resources are removed from Methods tables, Relationships tables, and Properties tables in parent/related resource files
+- **Redirects:** Each deleted entity type resource file and API operation file has a redirect entry in the latest `.openpublishing.redirection.yyyy-mm.json` file in `redirects/`
+- **TOC:** Entries for deleted files removed from `toc.mapping.json`
+- **Changelog and What's New:** Entries with Change type "Deletion" are present
 
-**Common Issues:**
-- [ ] Multiple unrelated API elements in single ChangeList item
-- [ ] Missing or vague descriptions
-- [ ] Malformed links or missing en-us locale
-- [ ] Incomplete record structure (missing metadata)
-- [ ] Validation script failures
-
-### Version-Specific Validation
-
-**For v1.0 endpoint files:**
-- [ ] Beta disclaimer removed
-- [ ] URLs reference `/v1.0` endpoint, not `/beta`
-- [ ] Links in documentation don't include `?view=graph-rest-beta`
-
-**For beta endpoint files:**
-- [ ] Beta disclaimer included immediately after namespace declaration
-- [ ] URLs reference `/beta` endpoint
-- [ ] Links in What's new include `?view=graph-rest-beta&preserve-view=true`
-
----
-
-## Namespace Qualification Review
-
-Verify proper namespace qualification following the rules detailed in [author-api-docs.prompt.md - Reference Standards: Namespace Qualification](.github/prompts/author-api-docs.prompt.md#reference-standards-namespace-qualification).
-
-**Quick checklist:**
-- [ ] Files for subnamespace resources prepend subnamespace name (e.g., `callrecords-callrecord.md`, `security-alert.md`)
-- [ ] Lowercase with `microsoft.graph.` prefix removed
-- [ ] Namespace of binding parameter type specified in HTTP request for actions/functions
-- [ ] Types in subnamespaces are fully qualified in table Type columns and Response sections
-
----
-
-## Formatting and Style Review
-
-Verify compliance with formatting rules detailed in [author-api-docs.prompt.md - Reference Standards: General Formatting Rules](.github/prompts/author-api-docs.prompt.md#reference-standards-general-formatting-rules).
-
-**Quick checklist:**
-- [ ] All filenames are lowercase with hyphens separating words
-- [ ] Properties and Relationships tables in alphabetical order
-- [ ] H3 sections in What's new in alphabetical order (within each month)
-- [ ] Symbol names wrapped in backticks: `MyClass`, `handleClick()`
-- [ ] File references formatted as links: [path/file.ts](path/file.ts)
-- [ ] Enum values styled with inline code (backticks)
-- [ ] Resource/property references styled with **bold** or links
+Full rules: [deprecate-retire.md — Retirement workflow](./author-api-docs/deprecate-retire.md#retirement-api-removal) and [Retirement quality checklist](./author-api-docs/deprecate-retire.md#quality-checklist)
 
 ---
 
@@ -282,6 +234,15 @@ If documentation-plan.md file is provided, check that:
 - [ ] All resources listed in the summary are documented
 - [ ] Namespace information matches the summary
 - [ ] No extra files or methods documented beyond the summary
+
+### Validate beta-only content removal (v1.0 GA promotions)
+
+If the Documentation Plan contains a "Beta-only content to remove" table (Section 2b), verify:
+- [ ] All properties listed as beta-only are **absent** from the v1.0 resource files
+- [ ] All beta-only inherited properties are removed from Properties tables, JSON representation, and example request/response payloads
+- [ ] No beta-only relationships remain in Relationships tables
+
+**Safety net (with or without Documentation Plan):** For v1.0 resource files that inherit from a base type, cross-reference inherited properties against the existing v1.0 base type resource file in `api-reference/v1.0/resources/`. Flag any inherited property that appears in the derived type's v1.0 doc but **does not** appear in the v1.0 base type's Properties table — these are likely beta-only properties that were incorrectly carried over during copy from beta.
 
 ### Validate Against API.md Specification
 
@@ -306,7 +267,13 @@ Based on the reviewer's input (PR, branch, or workspace changes):
 3. Check for changes to `concepts/whats-new-overview.md`
 4. Check for changes to TOC files (`api-reference/*/toc/toc.mapping.json`)
 
-### Step 2: Classify Files
+**When reviewing a PR**, use the `github/*` tools to gather context efficiently:
+- **List changed files:** Use `get_files` on the PR to identify all modified files and their paths
+- **Read diffs:** Use `get_diff` to see exactly what changed — focus review on added/modified lines
+- **Check PR metadata:** Use `get` on the PR to read the description, labels, and linked work items for context
+- **Post review comments:** After review, use `create_pull_request_thread` or `reply_to_comment` to post findings directly on the PR
+
+### Step 2: Classify Files and Determine Review Scope
 
 Group files by type:
 - API reference topics (`api-reference/*/api/*.md`)
@@ -315,9 +282,22 @@ Group files by type:
 - What's new (`concepts/whats-new-overview.md`)
 - TOC files (`api-reference/*/toc/*.json`)
 
+**Skip conditions** — optimize review by skipping irrelevant checklists:
+
+| If only these file types changed… | Skip these checks |
+|---|---|
+| Changelog files only | API topic, resource topic, What's New, and TOC checks |
+| Resource topics only | Changelog validation, API topic checks |
+| API topics only | Changelog validation, resource topic checks |
+| What's New only | API topic, resource topic, changelog, and TOC checks |
+
+> **Note:** When multiple file types are changed (the common case), apply all relevant checklists. Skip conditions apply only when the PR is narrowly scoped to a single file type.
+
 ### Step 3: Apply Type-Specific Review
 
 For each file, apply the appropriate review checklist from above.
+
+**For PRs with 15+ changed files:** Review in batches of 10 files. After each batch, output findings so far before continuing to the next batch. This keeps context focused and prevents quality degradation on later files.
 
 ### Step 4: Run Validation Scripts
 
@@ -328,7 +308,19 @@ Run automated validation scripts to ensure compliance (see [Common Process: Vali
 
 Include validation results in your review report. Flag any validation failures as critical issues.
 
-### Step 5: Report Findings
+### Step 5: Classify Issue Severity
+
+Use these criteria consistently when categorizing findings:
+
+| Severity | Criteria | Examples |
+|----------|----------|----------|
+| **Critical (Must Fix)** | Blocks merge; broken functionality, missing required elements, validation failures, formatting/ordering/inconsistency issues | Missing namespace, broken links, validation script failures, TODO placeholders, properties not alphabetical, missing beta disclaimer, data types instead of pseudo-values |
+| **Warning (Should Fix)** | Incomplete coverage; missing optional sections, partial documentation | Missing optional query parameter docs, incomplete changelog descriptions, missing error response section |
+| **Info (Consider)** | Best practices; style improvements, optional enhancements | More descriptive changelog entries, additional examples, style guide alignment, missing conceptual API Overview or Feature Overview updates |
+
+### Step 6: Report Findings
+
+> **IMPORTANT:** Before finalizing the report, re-read each reviewed file to confirm your findings. Do not report issues or approvals from memory alone.
 
 Provide a structured review report:
 
@@ -337,11 +329,10 @@ Provide a structured review report:
 - Files with issues
 - Files approved
 
-**Issues by Category:**
-- Critical issues (blocking issues that must be fixed)
-- Required elements missing
-- Formatting issues
-- Best practice recommendations
+**Issues by Severity:**
+- Critical (Must Fix)
+- Warning (Should Fix)
+- Info (Consider)
 
 **File-by-File Breakdown:**
 For each file with issues, list:
@@ -351,7 +342,7 @@ For each file with issues, list:
 - Suggested fix (when applicable)
 - Line numbers or section references
 
-### Step 6: Optional - Suggest Fixes
+### Step 7: Optional - Suggest Fixes
 
 If requested, provide specific edits to fix identified issues.
 
@@ -360,12 +351,13 @@ If requested, provide specific edits to fix identified issues.
 ## Exclusions and Special Cases
 
 **Do NOT review:**
-- Files in `concepts/` folder (these guidelines don't apply to conceptual content)
+- Files in `concepts/` folder except the what's new (these guidelines don't apply to conceptual content)
 - Files in `includes/` folder (unless specifically requested)
 - Template files in `templates/` folder
 
 **Special handling:**
 - Mixed scenarios: If both deprecation and other changes exist, flag this for the reviewer
+- Retirement (file deletions): Validate redirect entries, reference cleanup, and dependency safety — see [Retirement review](#retirement-file-deletion-review)
 - Autogenerated content: If file appears autogenerated (check metadata), validate that manual edits are appropriate
 - Permission files: These are typically autogenerated; validate format but don't require extensive review unless issues are evident
 
@@ -386,7 +378,7 @@ If requested, provide specific edits to fix identified issues.
 
 ---
 
-## Critical Issues (Must Fix)
+## Critical (Must Fix)
 
 ### api-reference/beta/api/user-get.md
 - **Missing namespace declaration** (Line 3)
@@ -398,18 +390,10 @@ If requested, provide specific edits to fix identified issues.
   - Issue: Properties table not in alphabetical order
   - Fix: Reorder properties alphabetically
 
----
-
-## Required Elements Missing
-
 ### api-reference/v1.0/api/group-list.md
-- **Missing beta disclaimer removal** (Line 5)
+- **Beta disclaimer still present** (Line 5)
   - Issue: Beta disclaimer still present in v1.0 documentation
   - Fix: Remove beta disclaimer
-
----
-
-## Formatting Issues
 
 ### api-reference/beta/api/serviceprincipal-post.md
 - **Example uses data types instead of pseudo-values** (Lines 120-135)
@@ -418,7 +402,7 @@ If requested, provide specific edits to fix identified issues.
 
 ---
 
-## Best Practice Recommendations
+## Info (Consider)
 
 ### changelog/Microsoft.AAD.LCM.json
 - **Consider adding more detailed description** (Line 15)
@@ -457,9 +441,9 @@ If requested, provide specific edits to fix identified issues.
 ## Getting Help
 
 If you encounter any of these situations during review:
-- **Unclear namespace qualification:** Refer to the Namespace Qualification section in author-api-docs.prompt.md
-- **Uncertain about required elements:** Check both the authoring guidelines and copilot-instructions.md
-- **Complex changelog structure:** Review the Common Process: Updating the Changelog section in author-api-docs.prompt.md
-- **Ambiguous formatting:** Default to Microsoft Graph CDK standards documented in copilot-instructions.md
+- **Unclear namespace qualification:** Refer to [common.md — Namespace Qualification](./author-api-docs/common.md#namespace-qualification)
+- **Uncertain about required elements:** Check both [common.md — Documentation Standards](./author-api-docs/common.md#documentation-standards) and copilot-instructions.md (system prompt)
+- **Complex changelog structure:** Refer to [common.md — Updating the Changelog](./author-api-docs/common.md#updating-the-changelog)
+- **Ambiguous formatting:** Default to [common.md — General Formatting Rules](./author-api-docs/common.md#general-formatting-rules)
 
 **Remember:** A comprehensive review is possible only with the optional context files (Summary of API changes in a documentation-plan.md file and API.md). Without them, the review is limited to guidelines compliance only.

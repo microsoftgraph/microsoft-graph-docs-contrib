@@ -1,24 +1,29 @@
 ---
 title: "channel: completeMigration"
-description: "Complete the migration of external messages by removing migration mode from a channel."
+description: "Complete migration on existing channels or new channels."
 ms.localizationpriority: medium
 author: "RamjotSingh"
 ms.subservice: "teams"
 doc_type: apiPageType
-ms.date: 10/01/2024
+ms.date: 03/18/2026
 ---
 
 # channel: completeMigration
 
 Namespace: microsoft.graph
 
-Complete the message migration process by removing `migration mode` from a [channel](../resources/channel.md) in a team. `Migration mode` is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
+Complete migration on existing [channels](../resources/channel.md) or new channels. Complete migration operations were initially restricted to newly created standard channels using migration templates specifically designed for the initial migration process. For more information, see [Import third-party platform messages to Teams using Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
-After a **completeMigration** request is made, you can't import additional messages into the team. You can add members to the team after the request returns a successful response.
+Consider the following points when completing migration for new and existing channels:
 
-> [!NOTE]
-> Completing the migration of the channel `General` before completing the migration of other channels leads to a situation in
-> which the team is marked as migrated, prohibiting you from creating further channels to be migrated.
+- When a channel is created in migration mode for the initial import flow, the property **migrationMode** for a [channel](../resources/channel.md) in a team is updated to `completed` instead of being dropped, and the state is permanently marked for chats or channels. Migration mode is a special state that prevented certain operations, such as sending messages and adding members, during the data migration process. The parent team isn't marked with migration mode, as teams can't enter migration mode; only their child channels (general, standard, private, and shared) can.
+- For *existing* channels that are already in migration mode, the API completes the message migration process by updating **migrationMode** to `completed` for a [channel](../resources/channel.md) in a team.
+- The application that calls **completeMigration** must be the same application that initiated the migration session by calling [startMigration](channel-startmigration.md) on the target channel. This is the same application that is allowed to call [import message](channel-post-messages.md#example-2-import-a-message) during the migration session.
+- Calling **completeMigration** removes the import mode banner visible to Teams client users, making the channel fully available again.
+
+After a **completeMigration** request is made for existing or new channels, you can still import more messages into the team by calling [channel: startMigration](channel-startmigration.md).
+
+[!INCLUDE [channel-support](../../includes/supported-channels-for-import.md)]
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -49,62 +54,29 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
-## Example
+## Examples
 
-### Request
+### Example 1: Complete the migration when a channel is in migration mode
 
-Here's an example  of the request.
-<!-- markdownlint-disable MD025 -->
-<!-- markdownlint-disable MD022 -->
+The following example shows how to complete the migration when a channel is in migration mode.
 
+#### Request
 
+The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "completeMigration_channel",
   "sampleKeys": ["57fb72d0-d811-46f4-8947-305e6072eaa5", "19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2"]
 }-->
 
-```http
+```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/completeMigration
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/completemigration-channel-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### Response
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/completemigration-channel-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/completemigration-channel-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/completemigration-channel-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/completemigration-channel-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/completemigration-channel-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/completemigration-channel-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-<!-- markdownlint-disable MD001 -->
-<!-- markdownlint-disable MD024 -->
-### Response
-
-Here's an example  of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -114,16 +86,52 @@ Here's an example  of the response.
 HTTP/1.1 204 No Content
 ```
 
+### Example 2: Complete the migration when a channel isn't in migration mode
+
+The following example shows how to complete the migration when a channel isn't in migration mode. This request fails with a `400 Bad Request` response.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "completeMigration_channel_fail",
+  "sampleKeys": ["57fb72d0-d811-46f4-8947-305e6072eaa5", "19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2"]
+}-->
+
+```msgraph-interactive
+POST https://graph.microsoft.com/v1.0/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/completeMigration
+```
+
+#### Response
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 400 Bad Request
+```
+
+## Related content
+
+- [channel: startMigration](channel-startmigration.md)
+- [importMessage](channel-post-messages.md#example-2-import-a-message)
+- [Get channel migration status](channel-get.md#example-1-get-a-channel).
+- [chat: completeMigration](chat-completemigration.md)
+- [chat: startMigration](chat-startmigration.md)
+
 <!-- uuid: 5793eec6-0e5a-11eb-adc1-0242ac120002
 2020-10-14 20:22:11 UTC -->
 <!--
 {
-  "type": "#page.annotation",
-  "description": "completeMigration_ channel",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
+ "type": "#page.annotation",
+ "description": "completeMigration_ channel",
+ "keywords": "",
+ "section": "documentation",
+ "tocPath": "",
+ "suppressions": [
+ ]
 }
 -->

@@ -34,6 +34,7 @@ CloudPcWindowsSetting windowsSetting = new CloudPcWindowsSetting();
 windowsSetting.setLocale("en-US");
 cloudPcProvisioningPolicy.setWindowsSetting(windowsSetting);
 cloudPcProvisioningPolicy.setProvisioningType(CloudPcProvisioningType.Dedicated);
+cloudPcProvisioningPolicy.setUserExperienceType(CloudPcUserExperienceType.CloudPc);
 CloudPcUserSettingsPersistenceConfiguration userSettingsPersistenceConfiguration = new CloudPcUserSettingsPersistenceConfiguration();
 userSettingsPersistenceConfiguration.setUserSettingsPersistenceEnabled(true);
 userSettingsPersistenceConfiguration.setUserSettingsPersistenceStorageSizeCategory(CloudPcUserSettingsPersistenceStorageSizeCategory.FourGB);

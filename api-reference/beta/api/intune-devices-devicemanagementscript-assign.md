@@ -1,6 +1,6 @@
 ---
 title: "assign action"
-description: "Intune Devices Devicemanagementscript Assign Source_Api ."
+description: "Intune Devices Devicemanagementscript Assign Api ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"

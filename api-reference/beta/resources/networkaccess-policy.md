@@ -18,8 +18,9 @@ A traffic forwarding policy consists of a policy and its associated rules. It de
 
 It's an abstract type from which the following resources are derived:
 
-- [microsoft.graph.networkaccess.forwardingPolicy](networkaccess-forwardingpolicy.md)
+- [microsoft.graph.networkaccess.cloudFirewallPolicy](networkaccess-cloudfirewallpolicy.md)
 - [microsoft.graph.networkaccess.filteringPolicy](networkaccess-filteringpolicy.md)
+- [microsoft.graph.networkaccess.forwardingPolicy](networkaccess-forwardingpolicy.md)
 - [microsoft.graph.networkaccess.threatIntelligencePolicy](networkaccess-threatintelligencepolicy.md)
 
 

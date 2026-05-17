@@ -1,18 +1,18 @@
 ---
 title: "List fido2AuthenticationMethod"
 description: "Retrieve a list of the fido2AuthenticationMethod objects and their properties."
-author: "calvinlui"
+author: "hanki71"
 ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 07/28/2025
+ms.date: 03/04/2026
 ---
 
 # List fido2AuthenticationMethod
 Namespace: microsoft.graph
 
-Retrieve a list of a user's [FIDO2 security key authentication method](../resources/fido2authenticationmethod.md) objects and their properties.
+Retrieve a list of a user's [passkey (FIDO2) authentication method](../resources/fido2authenticationmethod.md) objects and their properties.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -129,24 +129,26 @@ Content-type: application/json
     {
       "id": "-2_GRUg2-HYz6_1YG4YRAQ2",
       "displayName": "Red key",
-      "creationDateTime": "2020-08-10T06:44:09Z",
+      "createdDateTime": "2020-08-10T06:44:09Z",
       "aaGuid": "2fc0579f-8113-47ea-b116-555a8db9202a",
       "model": "NFC key",
       "attestationCertificates": [
           "dbe793efdf1945e2df25d93653a1e8a3268a9075"
       ],
-      "attestationLevel": "attested"
+      "attestationLevel": "attested",
+      "passkeyType": "deviceBound"
     },
     {
       "id": "_jpuR-TGZgk6aQCLF3BQjA2",
       "displayName": "Blue key",
-      "creationDateTime": "2020-08-10T06:25:38Z",
+      "createdDateTime": "2020-08-10T06:25:38Z",
       "aaGuid": "c5ef55ff-ad9a-4b9f-b580-ababafe026d0",
       "model": "USB key",
       "attestationCertificates": [
           "b479e7652167f574296e76bfa76731b8ccd22ed7"
       ],
-      "attestationLevel": "attested"
+      "attestationLevel": "attested",
+      "passkeyType": "deviceBound"
     }
   ]
 }

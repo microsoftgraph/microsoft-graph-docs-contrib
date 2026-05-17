@@ -24,11 +24,14 @@ Inherits from [protectionUnitBase](../resources/protectionunitbase.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/backuprestoreroot-list-siteprotectionunits.md)|[siteProtectionUnit](../resources/siteprotectionunit.md) collection|Get a list of [siteProtectionUnit](../resources/siteprotectionunit.md) objects and their properties.|
+|[Update](../api/siteprotectionunit-update.md)|[siteProtectionUnit](../resources/siteprotectionunit.md)|Update the properties of a [siteProtectionUnit](../resources/siteprotectionunit.md) object.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
+|backupRetentionPeriodInDays|Int32|The retention period of the backup, in days. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
+|billingPolicyId|String|The unique identifier of the billing policy assigned to the protection unit for cost allocation. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |createdBy|[identitySet](../resources/identityset.md)|The identity of person who created the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |createdDateTime|DateTimeOffset|The time of creation of the protection unit. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
 |error|[publicError](../resources/publicerror.md)|Contains error details if enabling or disabling the protection unit fails. Inherited from [protectionUnitBase](../resources/protectionunitbase.md).|
@@ -61,19 +64,21 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.siteProtectionUnit",
+  "backupRetentionPeriodInDays": "Int32",
+  "billingPolicyId": "String",
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
   "error": {"@odata.type": "microsoft.graph.publicError"},
   "id": "String (identifier)",
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
+  "offboardRequestedDateTime": "String (timestamp)",
   "policyId": "String",
   "protectionSources": "String",
   "siteId": "String",
   "siteName": "String",
   "siteWebUrl": "String",
-  "status": "String",
-  "offboardRequestedDateTime": "String (timestamp)",
+  "status": "String"
 }
 ```
 

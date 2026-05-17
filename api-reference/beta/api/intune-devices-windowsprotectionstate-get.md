@@ -66,7 +66,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1083
+Content-Length: 1128
 
 {
   "value": {
@@ -91,7 +91,8 @@ Content-Length: 1083
     "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
     "productStatus": "serviceNotRunning",
     "isVirtualMachine": true,
-    "tamperProtectionEnabled": true
+    "tamperProtectionEnabled": true,
+    "controlledConfigurationEnabled": true
   }
 }
 ```

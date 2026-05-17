@@ -29,10 +29,10 @@ For more information, see the [delta query](/graph/delta-query-overview) documen
 
 The following known issues are associated with this API:
 
-- [Using the `$top` query parameter might not return the **@odata.nextLink**](https://developer.microsoft.com/en-us/graph/known-issues/?search=22931).
-- [Transcript URLs might not include any content](https://developer.microsoft.com/en-us/graph/known-issues/?search=22932).
-- [Recordings aren't exported for meetings that don't have transcription turned on](https://developer.microsoft.com/en-us/graph/known-issues/?search=22933).
-- [Delta queries might return older artifacts when meetings have unrelated changes](https://developer.microsoft.com/en-us/graph/known-issues/?search=22934).
+- [Using the `$top` query parameter might not return the **@odata.nextLink**](/graph/known-issues#apis-that-export-online-meeting-artifacts-might-not-return-nextlink-when-the-request-uses-the-top-query-parameter).
+- [Transcript URLs might not include any content](/graph/known-issues#apis-that-export-online-meeting-artifacts-might-return-transcript-urls-that-dont-contain-any-content).
+- [Recordings aren't exported for meetings that don't have transcription turned on](/graph/known-issues#apis-that-export-online-meeting-artifacts-dont-return-recordings-for-meetings-without-transcriptions-enabled).
+- [Delta queries might return older artifacts when meetings have unrelated changes](/graph/known-issues#change-tracking-requests-for-apis-that-export-online-meeting-artifacts-return-items-that-are-already-synced).
 
 ## Permissions
 

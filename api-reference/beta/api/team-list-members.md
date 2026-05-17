@@ -20,7 +20,7 @@ The membership IDs returned by the server must be treated as opaque strings. The
 In the future, membership results can include users from various tenants, as indicated in the response. Clients should avoid assuming that all members exclusively belong to the current tenant.
 
 > [!NOTE]
-> This API results in a 401 error when a newly created tenant calls this method. For more information, see [Known issues](https://developer.microsoft.com/en-us/graph/known-issues/?search=19164).
+> This API results in a 401 error when a newly created tenant calls this method. For more information, see [Known issues](/graph/known-issues#list-team-members-api-fails-with-401-errors-in-newly-created-tenants).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -322,7 +322,7 @@ Content-Type: application/json
 The following example shows how to list the members by their role in the team. This example lists all the members that have an owner role.
 
 > [!NOTE]
-> There are some known issues with this functionality. For details, see [known issues](https://developer.microsoft.com/en-us/graph/known-issues/?search=13639).
+> There are some known issues with this functionality. For details, see [known issues](/graph/known-issues#unable-to-filter-team-members-by-roles).
 
 #### Request
 

@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add sponsors to an [agent identity blueprint principal](../resources/agentidentityblueprintprincipal.md) by posting to the sponsors collection.
+Add sponsors to an [agent identity blueprint principal](../resources/agentidentityblueprintprincipal.md). Sponsors can include users, groups, or service principals. Sponsors may not include agent users.
+
+A single blueprint principal may have up to 100 sponsors. No more than 5 sponsors may be groups. Only groups with dynamic membership or Microsoft 365 groups are supported as sponsors. Role-assignable groups can't be set as sponsors.
 
 ## Permissions
 
@@ -59,6 +61,7 @@ If successful, this method returns a `204 No Content` response code and a [direc
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_agent_identity_blueprint_principal_sponsor"
@@ -73,6 +76,11 @@ Content-Type: application/json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-agent-identity-blueprint-principal-sponsor-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

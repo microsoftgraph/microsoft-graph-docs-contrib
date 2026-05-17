@@ -13,10 +13,10 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) object. The policy can be one of the following types:
-- [filteringPolicy](../resources/networkaccess-filteringpolicy.md)
-- [threatIntelligencePolicy](../resources/networkaccess-threatintelligencepolicy.md)
-- [tlsInspectionPolicy](../resources/networkaccess-tlsinspectionpolicy.md)
+Get a [filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) object. The returned object can be a:
+- [cloudFirewallPolicyLink](../resources/networkaccess-cloudfirewallpolicylink.md)
+- [threatIntelligencePolicyLink](../resources/networkaccess-threatintelligencepolicylink.md)
+- [tlsInspectionPolicyLink](../resources/networkaccess-tlsinspectionpolicylink.md)
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -143,15 +143,46 @@ Content-Type: application/json
 
 #### Request
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_tlsinspectionpolicylink",
   "sampleKeys": ["d734d2de-f2df-4b4a-8c4c-5111f8878275"]
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/networkAccess/filteringProfiles/d734d2de-f2df-4b4a-8c4c-5111f8878275/policies/70405a6c-b823-c521-c981-de9d08a21f8f
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-tlsinspectionpolicylink-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-tlsinspectionpolicylink-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-tlsinspectionpolicylink-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-tlsinspectionpolicylink-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-tlsinspectionpolicylink-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-tlsinspectionpolicylink-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-tlsinspectionpolicylink-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following example shows the response.

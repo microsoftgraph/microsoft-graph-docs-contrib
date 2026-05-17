@@ -16,7 +16,7 @@ import (
 )
 
 
-requestFilter := "displayName eq 'Microsoft Graph'"
+requestFilter := "appId eq '00000003-0000-0000-c000-000000000000'"
 
 requestParameters := &graphserviceprincipals.ServicePrincipalsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,

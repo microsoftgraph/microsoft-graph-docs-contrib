@@ -110,6 +110,7 @@ The following table shows the properties that are required when you create the [
 |kioskModeApps|[appListItem](../resources/intune-deviceconfig-applistitem.md) collection|A list of managed apps that will be shown when the device is in Kiosk Mode. This collection can contain a maximum of 500 elements.|
 |kioskModeWallpaperUrl|String|URL to a publicly accessible image to use for the wallpaper when the device is in Kiosk Mode.|
 |kioskModeExitCode|String|Exit code to allow a user to escape from Kiosk Mode when the device is in Kiosk Mode.|
+|isKioskModeExitCodeSet|Boolean|Exit code to allow a user to escape from Kiosk Mode when the device is in Kiosk Mode.|
 |kioskModeVirtualHomeButtonEnabled|Boolean|Whether or not to display a virtual home button when the device is in Kiosk Mode.|
 |kioskModeVirtualHomeButtonType|[androidDeviceOwnerVirtualHomeButtonType](../resources/intune-deviceconfig-androiddeviceownervirtualhomebuttontype.md)|Indicates whether the virtual home button is a swipe up home button or a floating home button. Possible values are: `notConfigured`, `swipeUp`, `floating`.|
 |kioskModeBluetoothConfigurationEnabled|Boolean|Whether or not to allow a user to configure Bluetooth settings in Kiosk Mode.|
@@ -217,7 +218,7 @@ Here is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 11054
+Content-length: 11089
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -340,6 +341,7 @@ Content-length: 11054
   ],
   "kioskModeWallpaperUrl": "https://example.com/kioskModeWallpaperUrl/",
   "kioskModeExitCode": "Kiosk Mode Exit Code value",
+  "isKioskModeExitCodeSet": true,
   "kioskModeVirtualHomeButtonEnabled": true,
   "kioskModeVirtualHomeButtonType": "swipeUp",
   "kioskModeBluetoothConfigurationEnabled": true,
@@ -519,7 +521,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 11226
+Content-Length: 11261
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -645,6 +647,7 @@ Content-Length: 11226
   ],
   "kioskModeWallpaperUrl": "https://example.com/kioskModeWallpaperUrl/",
   "kioskModeExitCode": "Kiosk Mode Exit Code value",
+  "isKioskModeExitCodeSet": true,
   "kioskModeVirtualHomeButtonEnabled": true,
   "kioskModeVirtualHomeButtonType": "swipeUp",
   "kioskModeBluetoothConfigurationEnabled": true,

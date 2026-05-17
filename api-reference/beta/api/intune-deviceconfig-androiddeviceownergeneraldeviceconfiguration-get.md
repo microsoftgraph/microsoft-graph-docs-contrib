@@ -68,7 +68,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 11833
+Content-Length: 11870
 
 {
   "value": {
@@ -195,6 +195,7 @@ Content-Length: 11833
     ],
     "kioskModeWallpaperUrl": "https://example.com/kioskModeWallpaperUrl/",
     "kioskModeExitCode": "Kiosk Mode Exit Code value",
+    "isKioskModeExitCodeSet": true,
     "kioskModeVirtualHomeButtonEnabled": true,
     "kioskModeVirtualHomeButtonType": "swipeUp",
     "kioskModeBluetoothConfigurationEnabled": true,

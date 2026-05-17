@@ -386,6 +386,8 @@ items:
       href: ../../api/uxsetting-update.md
   - name: Mobility management policy
     items:
+    - name: Mobility management policy
+      href: ../../resources/mobilitymanagementpolicy.md
     - name: Mobile app management policy
       items:
       - name: Mobile app management policy
@@ -720,6 +722,8 @@ items:
         href: ../../api/accessreviewinstance-get.md
       - name: Update
         href: ../../api/accessreviewinstance-update.md
+      - name: Apply custom data provided resource decisions
+        href: ../../api/accessreviewinstance-batchapplycustomdataprovidedresourcedecisions.md
       - name: Filter by current user
         href: ../../api/accessreviewinstance-filterbycurrentuser.md
       - name: List contacted reviewers
@@ -1277,6 +1281,36 @@ items:
         href: ../../api/customaccesspackageworkflowextension-update.md
       - name: Delete
         href: ../../api/customaccesspackageworkflowextension-delete.md
+    - name: Custom data provided resource upload session
+      items:
+      - name: Custom data provided resource upload session
+        href: ../../resources/customdataprovidedresourceuploadsession.md
+      - name: Create
+        href: ../../api/customdataprovidedresource-post-uploadsessions.md
+      - name: List
+        href: ../../api/accesspackageresource-list-uploadsessions.md
+      - name: Get
+        href: ../../api/customdataprovidedresourceuploadsession-get.md
+      - name: Upload file
+        href: ../../api/customdataprovidedresourceuploadsession-uploadfile.md
+      - name: Update
+        href: ../../api/customdataprovidedresourceuploadsession-update.md
+      - name: Delete
+        href: ../../api/accesspackageresource-delete-uploadsessions.md
+    - name: External origin resource connector
+      items:
+      - name: External origin resource connector
+        href: ../../resources/externaloriginresourceconnector.md
+      - name: List
+        href: ../../api/entitlementmanagement-list-externaloriginresourceconnectors.md
+      - name: Create
+        href: ../../api/entitlementmanagement-post-externaloriginresourceconnectors.md
+      - name: Get
+        href: ../../api/externaloriginresourceconnector-get.md
+      - name: Update
+        href: ../../api/externaloriginresourceconnector-update.md
+      - name: Delete
+        href: ../../api/externaloriginresourceconnector-delete.md
     - name: Control configuration
       href: ../../resources/controlconfiguration.md
     - name: Insider risky user approval
@@ -1301,12 +1335,16 @@ items:
         href: ../../resources/customdataprovidedresourceuploadsession.md
       - name: Create
         href: ../../api/customdataprovidedresource-post-uploadsessions.md
+      - name: List
+        href: ../../api/accesspackageresource-list-uploadsessions.md
       - name: Get
         href: ../../api/customdataprovidedresourceuploadsession-get.md
+      - name: Upload file
+        href: ../../api/customdataprovidedresourceuploadsession-uploadfile.md
       - name: Update
         href: ../../api/customdataprovidedresourceuploadsession-update.md
-      - name: uploadFile
-        href: ../../api/customdataprovidedresourceuploadsession-uploadfile.md
+      - name: Delete
+        href: ../../api/accesspackageresource-delete-uploadsessions.md
     - name: Complex types
       items:
       - name: Access package answer
@@ -1472,6 +1510,12 @@ items:
         href: ../../api/identitygovernance-workflow-activatewithscope.md
       - name: List users in scope
         href: ../../api/workflow-list-executionscope.md
+      - name: Cancel workflow processing
+        href: ../../api/identitygovernance-workflow-cancelprocessing.md
+      - name: preview task failures
+        href: ../../api/identitygovernance-workflow-previewtaskfailures.md
+      - name: preview workflow
+        href: ../../api/identitygovernance-workflow-previewworkflow.md
       - name: Deleted workflows
         items:
         - name: List
@@ -2188,6 +2232,8 @@ items:
       href: ../../resources/oninteractiveauthflowstartlistener.md
     - name: On password submit listener
       href: ../../resources/onpasswordsubmitlistener.md
+    - name: On verified id claim validation listener
+      href: ../../resources/onverifiedidclaimvalidationlistener.md
     - name: On phone method load start listener
       href: ../../resources/onphonemethodloadstartlistener.md
     - name: On token issuance start listener
@@ -2828,121 +2874,6 @@ items:
         href: ../../api/continuousaccessevaluationpolicy-get.md
       - name: Update
         href: ../../api/continuousaccessevaluationpolicy-update.md
-  - name: Cross-tenant access
-    displayName: Cross-tenant access settings, XTAP
-    items:
-    - name: Overview
-      href: ../../resources/crosstenantaccesspolicy-overview.md
-    - name: Policy
-      items:
-      - name: Policy
-        href: ../../resources/crosstenantaccesspolicy.md
-      - name: Get
-        href: ../../api/crosstenantaccesspolicy-get.md
-      - name: Update
-        href: ../../api/crosstenantaccesspolicy-update.md
-    - name: Default settings
-      items:
-      - name: Default settings
-        href: ../../resources/crosstenantaccesspolicyconfigurationdefault.md
-      - name: Get
-        href: ../../api/crosstenantaccesspolicyconfigurationdefault-get.md
-      - name: Update
-        href: ../../api/crosstenantaccesspolicyconfigurationdefault-update.md
-      - name: Reset to system default
-        href: ../../api/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault.md
-    - name: Partner settings
-      items:
-      - name: Partner settings
-        href: ../../resources/crosstenantaccesspolicyconfigurationpartner.md
-      - name: List
-        href: ../../api/crosstenantaccesspolicy-list-partners.md
-      - name: Create
-        href: ../../api/crosstenantaccesspolicy-post-partners.md
-      - name: Get
-        href: ../../api/crosstenantaccesspolicyconfigurationpartner-get.md
-      - name: Update
-        href: ../../api/crosstenantaccesspolicyconfigurationpartner-update.md
-      - name: Delete
-        href: ../../api/crosstenantaccesspolicyconfigurationpartner-delete.md
-      - name: List deleted policies
-        href: ../../api/policydeletableitem-list.md
-      - name: Get deleted policy
-        href: ../../api/policydeletableitem-get.md
-      - name: Permanently delete deleted policy
-        href: ../../api/policydeletableitem-delete.md
-      - name: Restore deleted policy
-        href: ../../api/crosstenantaccesspolicyconfigurationpartner-restore.md
-    - name: Partner user sync settings
-      items:
-      - name: Partner user sync settings
-        href: ../../resources/crosstenantidentitysyncpolicypartner.md
-      - name: Create
-        href: ../../api/crosstenantaccesspolicyconfigurationpartner-put-identitysynchronization.md
-      - name: Get
-        href: ../../api/crosstenantidentitysyncpolicypartner-get.md
-      - name: Update
-        href: ../../api/crosstenantidentitysyncpolicypartner-update.md
-      - name: Delete
-        href: ../../api/crosstenantidentitysyncpolicypartner-delete.md
-      - name: List deleted policies
-        href: ../../api/policydeletableitem-list.md
-      - name: Get deleted policy
-        href: ../../api/policydeletableitem-get.md
-      - name: Permanently delete deleted policy
-        href: ../../api/policydeletableitem-delete.md
-      - name: Restore deleted policy
-        href: ../../api/crosstenantidentitysyncpolicypartner-restore.md
-  - name: Cross-tenant migration
-    items:
-    - name: Overview
-      href: ../../resources/crosstenant-migration-overview.md
-    - name: Cross-tenant migration job
-      items:
-      - name: Cross-tenant migration job
-        href: ../../resources/crosstenantmigrationjob.md
-      - name: List
-        href: ../../api/migrationsroot-list-crosstenantmigrationjobs.md
-      - name: Create
-        href: ../../api/migrationsroot-post-crosstenantmigrationjobs.md
-      - name: Get
-        href: ../../api/crosstenantmigrationjob-get.md
-      - name: Update
-        href: ../../api/crosstenantmigrationjob-update.md
-      - name: Delete
-        href: ../../api/migrationsroot-delete-crosstenantmigrationjobs.md
-      - name: cancel
-        href: ../../api/crosstenantmigrationjob-cancel.md
-      - name: validate
-        href: ../../api/crosstenantmigrationjob-validate.md
-      - name: List users
-        href: ../../api/crosstenantmigrationjob-list-users.md
-    - name: Cross-tenant migration task
-      items:
-      - name: Cross-tenant migration task
-        href: ../../resources/crosstenantmigrationtask.md
-      - name: List
-        href: ../../api/crosstenantmigrationjob-list-users.md
-      - name: Get
-        href: ../../api/crosstenantmigrationtask-get.md
-      - name: cancel
-        href: ../../api/crosstenantmigrationtask-cancel.md
-    - name: Migrations root
-      items:
-      - name: Migrations root
-        href: ../../resources/migrationsroot.md
-      - name: List crossTenantMigrationJobs
-        href: ../../api/migrationsroot-list-crosstenantmigrationjobs.md
-      - name: Create crossTenantMigrationJob
-        href: ../../api/migrationsroot-post-crosstenantmigrationjobs.md
-    - name: Complex types
-      items:
-      - name: Cross-tenant migration service status details
-        href: ../../resources/crosstenantmigrationservicestatusdetails.md
-      - name: Error
-        href: ../../resources/error.md
-      - name: Exchange online Cross-tenant migration settings
-        href: ../../resources/exchangeonlinecrosstenantmigrationsettings.md
   - name: Cross-tenant shared user profiles
     items:
     - name: Inbound shared user profile
@@ -2995,6 +2926,8 @@ items:
       href: ../../resources/onotpsendcustomextension.md
     - name: On password submit custom extension
       href: ../../resources/onpasswordsubmitcustomextension.md
+    - name: On verified id claim validation custom extension
+      href: ../../resources/onverifiedidclaimvalidationcustomextension.md
     - name: On token issuance start custom extension
       href: ../../resources/ontokenissuancestartcustomextension.md
   - name: Data policy operation
@@ -3207,63 +3140,6 @@ items:
         href: ../../api/identityprovider-list-availableprovidertypes.md
     - name: OpenID Connect identity provider (deprecated)
       href: ../../resources/openidconnectprovider.md
-  - name: Multitenant organization
-    displayName: MTO
-    items:
-    - name: Overview
-      href: ../../resources/multitenantorganization-overview.md
-    - name: Multitenant organization
-      items:
-      - name: Multitenant organization
-        href: ../../resources/multitenantorganization.md
-      - name: Create
-        href: ../../api/tenantrelationship-put-multitenantorganization.md
-      - name: Get
-        href: ../../api/multitenantorganization-get.md
-      - name: Update
-        href: ../../api/multitenantorganization-update.md
-    - name: Member
-      items:
-      - name: Member
-        href: ../../resources/multitenantorganizationmember.md
-      - name: List
-        href: ../../api/multitenantorganization-list-tenants.md
-      - name: Add
-        href: ../../api/multitenantorganization-post-tenants.md
-      - name: Get
-        href: ../../api/multitenantorganizationmember-get.md
-      - name: Update
-        href: ../../api/multitenantorganizationmember-update.md
-      - name: Remove
-        href: ../../api/multitenantorganization-delete-tenants.md
-    - name: Join request
-      items:
-      - name: Join request
-        href: ../../resources/multitenantorganizationjoinrequestrecord.md
-      - name: Get
-        href: ../../api/multitenantorganizationjoinrequestrecord-get.md
-      - name: Update
-        href: ../../api/multitenantorganizationjoinrequestrecord-update.md
-    - name: Partner configuration template
-      items:
-      - name: Partner configuration template
-        href: ../../resources/multitenantorganizationpartnerconfigurationtemplate.md
-      - name: Get
-        href: ../../api/multitenantorganizationpartnerconfigurationtemplate-get.md
-      - name: Update
-        href: ../../api/multitenantorganizationpartnerconfigurationtemplate-update.md
-      - name: Reset
-        href: ../../api/multitenantorganizationpartnerconfigurationtemplate-resettodefaultsettings.md
-    - name: Identity sync policy template
-      items:
-      - name: Identity sync policy template
-        href: ../../resources/multitenantorganizationidentitysyncpolicytemplate.md
-      - name: Get
-        href: ../../api/multitenantorganizationidentitysyncpolicytemplate-get.md
-      - name: Update
-        href: ../../api/multitenantorganizationidentitysyncpolicytemplate-update.md
-      - name: Reset
-        href: ../../api/multitenantorganizationidentitysyncpolicytemplate-resettodefaultsettings.md
   - name: OAuth 2 permission grant
     items:
     - name: OAuth 2 permission grant
@@ -4740,6 +4616,38 @@ items:
         href: ../../api/networkaccess-threatintelligencerule-update.md
       - name: Delete
         href: ../../api/networkaccess-threatintelligencerule-delete.md
+  - name: Cloud firewall
+    items:
+    - name: Cloud firewall policy
+      items:
+      - name: Cloud firewall policy
+        href: ../../resources/networkaccess-cloudfirewallpolicy.md
+      - name: List
+        href: ../../api/networkaccess-networkaccessroot-list-cloudfirewallpolicies.md
+      - name: Create
+        href: ../../api/networkaccess-networkaccessroot-post-cloudfirewallpolicies.md
+      - name: Get
+        href: ../../api/networkaccess-cloudfirewallpolicy-get.md
+      - name: Update
+        href: ../../api/networkaccess-cloudfirewallpolicy-update.md
+      - name: Delete
+        href: ../../api/networkaccess-cloudfirewallpolicy-delete.md
+    - name: Cloud firewall rule
+      items:
+      - name: Cloud firewall rule
+        href: ../../resources/networkaccess-cloudfirewallrule.md
+      - name: List
+        href: ../../api/networkaccess-cloudfirewallpolicy-list-policyrules.md
+      - name: Create
+        href: ../../api/networkaccess-cloudfirewallpolicy-post-policyrules.md
+      - name: Get
+        href: ../../api/networkaccess-cloudfirewallrule-get.md
+      - name: Update
+        href: ../../api/networkaccess-cloudfirewallrule-update.md
+      - name: Delete
+        href: ../../api/networkaccess-cloudfirewallrule-delete.md
+    - name: Cloud firewall policy link
+      href: ../../resources/networkaccess-cloudfirewallpolicylink.md
   - name: TLS inspection
     items:
     - name: External certificate authority certificate
@@ -4792,24 +4700,38 @@ items:
       items:
       - name: Traffic reports
         href: ../../resources/networkaccess-reports.md
-      - name: Get transaction summaries
-        href: ../../api/networkaccess-reports-transactionsummaries.md
-      - name: Get entities summary
-        href: ../../api/networkaccess-reports-entitiessummaries.md
-      - name: Get cross-tenant access summary
-        href: ../../api/networkaccess-reports-getcrosstenantsummary.md
+      - name: Get application usage analytics
+        href: ../../api/networkaccess-reports-getapplicationusageanalytics.md
+      - name: Get cloud application reports
+        href: ../../api/networkaccess-reports-getcloudapplicationreport.md
+      - name: Get connection summaries
+        href: ../../api/networkaccess-reports-getconnectionsummaries.md
       - name: Get cross-tenant access report
         href: ../../api/networkaccess-reports-crosstenantaccessreport.md
-      - name: Get device usage summary
-        href: ../../api/networkaccess-reports-getdeviceusagesummary.md
-      - name: Get device usage report
-        href: ../../api/networkaccess-reports-devicereport.md
-      - name: Get destination summary
-        href: ../../api/networkaccess-reports-getdestinationsummaries.md
+      - name: Get cross-tenant access summary
+        href: ../../api/networkaccess-reports-getcrosstenantsummary.md
       - name: Get destination report
         href: ../../api/networkaccess-reports-destinationreport.md
+      - name: Get destination summary
+        href: ../../api/networkaccess-reports-getdestinationsummaries.md
+      - name: Get device usage report
+        href: ../../api/networkaccess-reports-devicereport.md
+      - name: Get device usage summary
+        href: ../../api/networkaccess-reports-getdeviceusagesummary.md
+      - name: Get discovered application segment report
+        href: ../../api/networkaccess-reports-getdiscoveredapplicationsegmentreport.md
+      - name: Get enterprise application report
+        href: ../../api/networkaccess-reports-getenterpriseapplicationreport.md
+      - name: Get entities summary
+        href: ../../api/networkaccess-reports-entitiessummaries.md
+      - name: Get transaction summaries
+        href: ../../api/networkaccess-reports-transactionsummaries.md
+      - name: Get usage profiling
+        href: ../../api/networkaccess-reports-usageprofiling.md
       - name: Get user usage report
         href: ../../api/networkaccess-reports-userreport.md
+      - name: Get web category report
+        href: ../../api/networkaccess-reports-webcategoryreport.md
     - name: Alert
       items:
       - name: Alert

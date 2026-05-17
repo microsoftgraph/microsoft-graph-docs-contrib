@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: "HildaK-pm"
 ms.subservice: "entra-applications"
 doc_type: "resourcePageType"
-ms.date: 07/16/2024
+ms.date: 02/19/2026
 ---
 
 # applicationTemplate resource type
@@ -22,7 +22,7 @@ Represents an application in the [Microsoft Entra application gallery](/azure/ac
 |:-------------|:------------|:------------|
 |[List](../api/applicationtemplate-list.md)|[applicationTemplate](applicationtemplate.md)|Retrieve a list of applicationTemplate objects.|
 | [Get](../api/applicationtemplate-get.md) | [applicationTemplate](applicationtemplate.md) | Read properties and relationships of applicationTemplate object. |
-|[Instantiate](../api/applicationtemplate-instantiate.md)|[applicationServicePrincipal](applicationserviceprincipal.md)| Add an instance of an application from the Microsoft Entra application gallery into your directory. The application template with ID `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` can be used to add a non-gallery app that you can configure different single-sign on (SSO) modes like SAML SSO and password-based SSO.|
+|[Instantiate](../api/applicationtemplate-instantiate.md)|[applicationServicePrincipal](applicationserviceprincipal.md)| Add an instance of an application from the Microsoft Entra application gallery into your directory. The application template with ID `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` can be used to add a non-gallery app that you can configure different single sign-on (SSO) modes like SAML SSO and password-based SSO.|
 
 ## Properties
 
@@ -30,11 +30,13 @@ Represents an application in the [Microsoft Entra application gallery](/azure/ac
 |:-------------|:------------|:------------|
 |categories|String collection|The list of categories for the application. Supported values can be: `Collaboration`, `Business Management`, `Consumer`, `Content management`, `CRM`, `Data services`, `Developer services`, `E-commerce`, `Education`, `ERP`, `Finance`, `Health`, `Human resources`, `IT infrastructure`, `Mail`, `Management`, `Marketing`, `Media`, `Productivity`, `Project management`, `Telecommunications`, `Tools`, `Travel`, and `Web design & hosting`. <br/><br/> Supports `$filter` (`contains`).|
 |configurationUris|[configurationUri](../resources/configurationuri.md) collection|The URIs required for the single sign-on configuration of a preintegrated application.|
+|deprecationDate|Date|Deprecation date for this application. If specified, the application will be removed from the Microsoft Entra application gallery on this date.|
 |description|String|A description of the application.|
 |displayName|String|The name of the application. Supports `$filter` (`contains`).|
 |endpoints|String collection|A collection of string URLs representing various domains that are used by this application.|
 |homePageUrl|String|The home page URL of the application.|
-|id|String| Unique identifier for the application. Read-only.|
+|id|String|Unique identifier for the application. Read-only.|
+|isEntraIntegrated|Boolean|Indicates whether the application is integrated with Entra ID (for example, through single sign-on or user provisioning).|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the data for the application was last updated, represented using ISO 8601 format and always in UTC time.|
 |logoUrl|String|The URL to get the logo for this application.|
 |publisher|String|The name of the publisher for this application.|
@@ -63,36 +65,22 @@ The following JSON representation shows the resource type.
 ```json
 {
   "@odata.type": "#microsoft.graph.applicationTemplate",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "homePageUrl": "String",
-  "supportedSingleSignOnModes": [
-    "String"
-  ],
-  "supportedProvisioningTypes": [
-    "String"
-  ],
-  "logoUrl": "String",
-  "categories": [
-    "String"
-  ],
-  "publisher": "String",
+  "categories": ["String"],
+  "configurationUris": [{"@odata.type": "microsoft.graph.configurationUri"}],
+  "deprecationDate": "String (Date)",
   "description": "String",  
-  "configurationUris": [
-    {
-      "@odata.type": "microsoft.graph.configurationUri"
-    }
-  ],
-  "riskScore": {
-    "@odata.type": "microsoft.graph.applicationRiskScore"
-  },
-  "riskFactors": {
-    "@odata.type": "microsoft.graph.applicationRiskFactors"
-  },
-  "endpoints": [
-    "String"
-  ],
-  "lastModifiedDateTime": "String (timestamp)"
+  "displayName": "String",
+  "endpoints": ["String"],
+  "homePageUrl": "String",
+  "id": "String (identifier)",
+  "isEntraIntegrated": "Boolean",
+  "lastModifiedDateTime": "String (timestamp)",
+  "logoUrl": "String",
+  "publisher": "String",
+  "riskFactors": {"@odata.type": "microsoft.graph.applicationRiskFactors"},
+  "riskScore": {"@odata.type": "microsoft.graph.applicationRiskScore"},
+  "supportedProvisioningTypes": ["String"],
+  "supportedSingleSignOnModes": ["String"]
 }
 ```
 

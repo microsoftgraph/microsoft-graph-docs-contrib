@@ -16,7 +16,7 @@ from msgraph.generated.models.key_value_pair import KeyValuePair
 request_body = SendActivityNotificationPostRequestBody(
 	topic = TeamworkActivityTopic(
 		source = TeamworkActivityTopicSource.EntityUrl,
-		value = "https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages/{messageId}/replies/{replyId}",
+		value = "https://graph.microsoft.com/v1.0/teams/{teamId}/channels/{channelId}/messages/{messageId}/replies/{replyId}",
 	),
 	activity_type = "reservationStatusUpdated",
 	preview_text = ItemBody(

@@ -16,7 +16,7 @@ import (
 )
 
 
-requestFilter := " (status eq 'Completed')"
+requestFilter := "(status eq 'Completed')"
 
 requestParameters := &graphidentitygovernance.AppConsentAppConsentRequestsItemUserConsentRequestsFilterByCurrentUserWithOnRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,

@@ -2,7 +2,7 @@
 title: "claimBinding resource type"
 description: "Defines the mapping between a source attribute and a Verifiable ID claim."
 author: "tilarso"
-ms.date: 10/14/2025
+ms.date: 04/03/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
@@ -20,6 +20,7 @@ Defines the mapping between a source attribute and a Verifiable ID claim.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|matchConfidenceLevel|matchConfidenceLevel|The confidence level for matching the claim to the source attribute. The possible values are: `exact`, `relaxed`, `unknownFutureValue`.|
 |sourceAttribute|String|Source attribute value|
 |verifiedIdClaim|String|Entra ID attribute value|
 
@@ -36,6 +37,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.claimBinding",
+  "matchConfidenceLevel": "String",
   "sourceAttribute": "String",
   "verifiedIdClaim": "String"
 }

@@ -118,7 +118,7 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}/attendanceRep
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-attendancerecord-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -159,6 +159,33 @@ Content-Type: application/json
           "leaveDateTime": "2021-10-05T04:43:49.7702391Z",
           "durationInSeconds": 322
         }
+      ],
+      "engagements": [
+        {
+          "engagementType": "reaction",
+          "engagementSubType": "like",
+          "dateTime": "2026-04-02T22:10:30Z"
+        },
+        {
+          "engagementType": "reaction",
+          "engagementSubType": "applause",
+          "dateTime": "2026-04-02T22:15:00Z"
+        },
+        {
+          "engagementType": "hand",
+          "engagementSubType": "raiseHand",
+          "dateTime": "2026-04-02T22:20:00Z"
+        },
+        {
+          "engagementType": "camera",
+          "engagementSubType": "cameraOn",
+          "dateTime": "2026-04-02T22:25:00Z"
+        },
+        {
+          "engagementType": "microphone",
+          "engagementSubType": "unmute",
+          "dateTime": "2026-04-02T22:30:00Z"
+        }
       ]
     },
     {
@@ -176,6 +203,23 @@ Content-Type: application/json
           "joinDateTime": "2021-10-04T23:13:43.3776519Z",
           "leaveDateTime": "2021-10-04T23:18:57.5639338Z",
           "durationInSeconds": 314
+        }
+      ],
+      "engagements": [
+        {
+          "engagementType": "reaction",
+          "engagementSubType": "like",
+          "dateTime": "2026-04-02T22:10:30Z"
+        },
+        {
+          "engagementType": "reaction",
+          "engagementSubType": "applause",
+          "dateTime": "2026-04-02T22:15:00Z"
+        },
+        {
+          "engagementType": "microphone",
+          "engagementSubType": "unmute",
+          "dateTime": "2026-04-02T22:30:00Z"
         }
       ]
     }
@@ -219,7 +263,7 @@ GET https://graph.microsoft.com/beta/me/onlineMeetings/{meetingId}/attendanceRep
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-attendancerecord-acsuser-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -281,6 +325,33 @@ Content-Type: application/json
                   "joinDateTime": "2022-06-29T22:55:49.1084865Z",
                   "leaveDateTime": "2022-06-29T22:59:18.5180137Z",
                   "durationInSeconds": 209
+              }
+          ],
+          "engagements": [
+              {
+                  "engagementType": "reaction",
+                  "engagementSubType": "like",
+                  "dateTime": "2026-04-02T22:10:30Z"
+              },
+              {
+                  "engagementType": "reaction",
+                  "engagementSubType": "applause",
+                  "dateTime": "2026-04-02T22:15:00Z"
+              },
+              {
+                  "engagementType": "hand",
+                  "engagementSubType": "raiseHand",
+                  "dateTime": "2026-04-02T22:20:00Z"
+              },
+              {
+                  "engagementType": "camera",
+                  "engagementSubType": "cameraOn",
+                  "dateTime": "2026-04-02T22:25:00Z"
+              },
+              {
+                  "engagementType": "microphone",
+                  "engagementSubType": "unmute",
+                  "dateTime": "2026-04-02T22:30:00Z"
               }
           ]
       }

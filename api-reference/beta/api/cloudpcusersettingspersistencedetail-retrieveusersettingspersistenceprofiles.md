@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Retrieve the user storage list for Cloud PC [user settings persistence](../resources/cloudpcusersettingspersistencedetail.md) under the selected Cloud PC policy assignment.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

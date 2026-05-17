@@ -1,6 +1,6 @@
 ---
 title: "assign action"
-description: "Intune Apps Mobileapp Assign Source_Api ."
+description: "Intune Apps Mobileapp Assign Api ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"

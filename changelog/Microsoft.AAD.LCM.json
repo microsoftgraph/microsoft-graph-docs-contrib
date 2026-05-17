@@ -3,6 +3,102 @@
     {
       "ChangeList": [
         {
+          "Id": "14e09aad-a686-4b3d-88ab-a1076e2d052b",
+          "ApiChange": "Property",
+          "ChangedApiName": "processingInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **processingInfo** property to the [taskProcessingResult](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-taskProcessingResult?view=graph-rest-beta) resource.",
+          "Target": "taskProcessingResult"
+        }
+      ],
+      "Id": "14e09aad-a686-4b3d-88ab-a1076e2d052b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-05-06T17:17:32.7978124Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "19398a2e-7e68-4d1b-b786-a0b73775007d",
+          "ApiChange": "Property",
+          "ChangedApiName": "processingInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **processingInfo** property to the [taskProcessingResult](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-taskProcessingResult?view=graph-rest-1.0) resource.",
+          "Target": "taskProcessingResult"
+        }
+      ],
+      "Id": "19398a2e-7e68-4d1b-b786-a0b73775007d",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-05-06T17:17:32.7986703Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3c6e3081-1ae2-4f9d-bd88-242f194293de",
+          "ApiChange": "Member",
+          "ChangedApiName": "canceling",
+          "ChangeType": "Addition",
+          "Description": "Added the `canceling` member to the **lifecycleWorkflowProcessingStatus** enumeration.",
+          "Target": "lifecycleWorkflowProcessingStatus"
+        },
+        {
+          "Id": "3c6e3081-1ae2-4f9d-bd88-242f194293de",
+          "ApiChange": "Method",
+          "ChangedApiName": "cancelProcessing",
+          "ChangeType": "Addition",
+          "Description": "Added the [cancelProcessing](https://learn.microsoft.com/en-us/graph/api/identityGovernance-workflow-cancelProcessing?view=graph-rest-beta) method to the [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflow?view=graph-rest-beta) resource.",
+          "Target": "workflow"
+        }
+      ],
+      "Id": "3c6e3081-1ae2-4f9d-bd88-242f194293de",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-04-21T20:07:39.0883626Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6602f266-8d62-4913-a8b3-40d5862e3ef2",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "previewScope",
+          "ChangeType": "Addition",
+          "Description": "Added the **previewScope** relationship to the [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflow?view=graph-rest-beta) resource.",
+          "Target": "workflow"
+        },
+        {
+          "Id": "6602f266-8d62-4913-a8b3-40d5862e3ef2",
+          "ApiChange": "Method",
+          "ChangedApiName": "previewTaskFailures",
+          "ChangeType": "Addition",
+          "Description": "Added the [previewTaskFailures](https://learn.microsoft.com/en-us/graph/api/identityGovernance-workflow-previewTaskFailures?view=graph-rest-beta) method to the [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflow?view=graph-rest-beta) resource.",
+          "Target": "workflow"
+        },
+        {
+          "Id": "6602f266-8d62-4913-a8b3-40d5862e3ef2",
+          "ApiChange": "Method",
+          "ChangedApiName": "previewWorkflow",
+          "ChangeType": "Addition",
+          "Description": "Added the [previewWorkflow](https://learn.microsoft.com/en-us/graph/api/identityGovernance-workflow-previewWorkflow?view=graph-rest-beta) method to the [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflow?view=graph-rest-beta) resource.",
+          "Target": "workflow"
+        }
+      ],
+      "Id": "6602f266-8d62-4913-a8b3-40d5862e3ef2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-03-24T20:29:37.6698166Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "2452248e-8074-411b-be6a-516c9cf679dc",
           "ApiChange": "Method",
           "ChangedApiName": "POST",

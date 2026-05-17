@@ -72,7 +72,7 @@ The following example shows the schema for an adaptive card attachment when the 
 
 > **Note:** Microsoft Graph only supports cards that have the **OpenUrl** action set. Other actions like **ShowCard** aren't supported. Microsoft Graph does allow messages posted by bots that have other actions in them to be read.
 
-The following example shows the schema for a Loop component as two attachments.
+The following example shows the schema for a Loop component attachment.
 
 ```json
     "attachments": [
@@ -84,15 +84,6 @@ The following example shows the schema for a Loop component as two attachments.
             "name": null,
             "thumbnailUrl": null,
             "teamsAppId": "FluidEmbedCard"
-        },
-        {
-            "id": "placeholderCard",
-            "contentType": "application/vnd.microsoft.card.codesnippet",
-            "contentUrl": null,
-            "content": "{}",
-            "name": null,
-            "thumbnailUrl": null,
-            "teamsAppId": "FLUID_PLACEHOLDER_CARD"
         }
     ],
 ```

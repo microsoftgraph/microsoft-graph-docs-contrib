@@ -5,7 +5,7 @@ author: "soneff"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 06/25/2025
+ms.date: 04/15/2026
 ---
 
 # Create customAuthenticationExtension
@@ -18,6 +18,7 @@ Create a new [customAuthenticationExtension](../resources/customauthenticationex
 - [onAttributeCollectionStartCustomExtension](../resources/onattributecollectionstartcustomextension.md) resource type.
 - [onAttributeCollectionSubmitCustomExtension](../resources/onattributecollectionsubmitcustomextension.md) resource type.
 - [onOtpSendCustomExtension](../resources/onOtpSendCustomExtension.md) resource type.
+- [onPasswordSubmitCustomExtension](../resources/onpasswordsubmitcustomextension.md) resource type.
 
 > [!NOTE]
 >
@@ -501,3 +502,211 @@ Content-Type: application/json
 }
 ```
 
+
+
+### Example 5: Create an onPasswordSubmitCustomExtension object
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_customauthenticationextension_onpasswordsubmitcustomextension"
+}
+-->
+```msgraph-interactive
+POST https://graph.microsoft.com/v1.0/identity/customAuthenticationExtensions
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.onPasswordSubmitCustomExtension",
+  "displayName": "Legacy password validator",
+  "description": "Validates passwords against a legacy authentication system for JIT migration",
+  "endpointConfiguration": {
+    "@odata.type": "#microsoft.graph.httpRequestEndpoint",
+    "targetUrl": "https://api.contoso.com/passwordvalidation"
+  },
+  "authenticationConfiguration": {
+    "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
+    "resourceId": "api://api.contoso.com/passwordvalidation"
+  },
+  "clientConfiguration": {
+    "timeoutInMilliseconds": 2000,
+    "maximumRetries": 1
+  }
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-customauthenticationextension-onpasswordsubmitcustomextension-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-customauthenticationextension-onpasswordsubmitcustomextension-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-customauthenticationextension-onpasswordsubmitcustomextension-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-customauthenticationextension-onpasswordsubmitcustomextension-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-customauthenticationextension-onpasswordsubmitcustomextension-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-customauthenticationextension-onpasswordsubmitcustomextension-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-customauthenticationextension-onpasswordsubmitcustomextension-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.customAuthenticationExtension"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/customAuthenticationExtensions/$entity",
+  "@odata.type": "#microsoft.graph.onPasswordSubmitCustomExtension",
+  "id": "6fc5012e-7665-43d6-9708-4370863f4e6e",
+  "displayName": "Legacy password validator",
+  "description": "Validates passwords against a legacy authentication system for JIT migration",
+  "behaviorOnError": null,
+  "authenticationConfiguration": {
+    "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
+    "resourceId": "api://api.contoso.com/passwordvalidation"
+  },
+  "clientConfiguration": {
+    "timeoutInMilliseconds": 2000,
+    "maximumRetries": 1
+  },
+  "endpointConfiguration": {
+    "@odata.type": "#microsoft.graph.httpRequestEndpoint",
+    "targetUrl": "https://api.contoso.com/passwordvalidation"
+  }
+}
+```
+
+### Example 6: Create an onVerifiedIdClaimValidationCustomExtension object
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_customauthenticationextension_onVerifiedIdClaimValidationCustomExtension"
+}
+-->
+``` http
+POST https://graph.microsoft.com/v1.0/identity/customAuthenticationExtensions
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.onVerifiedIdClaimValidationCustomExtension",
+  "displayName": "Verified ID Claim Validation",
+  "description": "Validate claims from a Verified ID presentation",
+  "endpointConfiguration": {
+    "@odata.type": "#microsoft.graph.httpRequestEndpoint",
+    "targetUrl": "https://contoso.azurewebsites.net/api/verifiedIdClaimValidation"
+  },
+  "authenticationConfiguration": {
+    "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
+    "resourceId": "api://contoso.azurewebsites.net/verifiedIdClaimValidation"
+  },
+  "clientConfiguration": {
+    "timeoutInMilliseconds": 2000,
+    "maximumRetries": 1
+  },
+  "behaviorOnError": {
+    "@odata.type": "#microsoft.graph.customExtensionBehaviorOnError"
+  }
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-customauthenticationextension-onverifiedidclaimvalidationcustomextension-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-customauthenticationextension-onverifiedidclaimvalidationcustomextension-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-customauthenticationextension-onverifiedidclaimvalidationcustomextension-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-customauthenticationextension-onverifiedidclaimvalidationcustomextension-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-customauthenticationextension-onverifiedidclaimvalidationcustomextension-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-customauthenticationextension-onverifiedidclaimvalidationcustomextension-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-customauthenticationextension-onverifiedidclaimvalidationcustomextension-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.customAuthenticationExtension"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/customAuthenticationExtensions/$entity",
+    "@odata.type": "#microsoft.graph.onVerifiedIdClaimValidationCustomExtension",
+    "id": "6a0a3429-be77-0aed-951e-1c8aed62bf8a",
+    "displayName": "Verified ID Claim Validation",
+    "description": "Validate claims from a Verified ID presentation",
+    "authenticationConfiguration": {
+        "@odata.type": "#microsoft.graph.azureAdTokenAuthentication",
+        "resourceId": "api://contoso.azurewebsites.net/verifiedIdClaimValidation"
+    },
+    "endpointConfiguration": {
+        "@odata.type": "#microsoft.graph.httpRequestEndpoint",
+        "targetUrl": "https://contoso.azurewebsites.net/api/verifiedIdClaimValidation"
+    },
+    "clientConfiguration": {
+        "timeoutInMilliseconds": 2000,
+        "maximumRetries": 1
+    },
+    "behaviorOnError": {
+        "@odata.type": "#microsoft.graph.customExtensionBehaviorOnError"
+    }
+}
+```

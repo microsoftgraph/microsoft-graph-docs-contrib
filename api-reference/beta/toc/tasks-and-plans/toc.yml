@@ -44,6 +44,10 @@ items:
     href: ../../api/plannertask-delete.md
   - name: Get delta
     href: ../../api/plannertask-delta.md
+  - name: List messages
+    href: ../../api/plannertask-list-messages.md
+  - name: Create message
+    href: ../../api/plannertask-post-messages.md
 - name: Planner bucket
   items:
   - name: Planner bucket
@@ -304,6 +308,28 @@ items:
     href: ../../resources/plannerruleoverride.md
   - name: Planner shared with container
     href: ../../resources/plannersharedwithcontainer.md
+  - name: Planner task chat mention
+    href: ../../resources/plannertaskchatmention.md
+  - name: Planner task chat message
+    items:
+    - name: Planner task chat message
+      href: ../../resources/plannertaskchatmessage.md
+    - name: List messages
+      href: ../../api/plannertask-list-messages.md
+    - name: Create message
+      href: ../../api/plannertask-post-messages.md
+    - name: Update message
+      href: ../../api/plannertaskchatmessage-update.md
+    - name: Delete message
+      href: ../../api/plannertaskchatmessage-delete.md
+    - name: Set reaction
+      href: ../../api/plannertaskchatmessage-setreaction.md
+    - name: Unset reaction
+      href: ../../api/plannertaskchatmessage-unsetreaction.md
+  - name: Planner task chat reaction
+    href: ../../resources/plannertaskchatreaction.md
+  - name: Planner task chat reaction event
+    href: ../../resources/plannertaskchatreactionevent.md
   - name: Planner task completion requirement details
     href: ../../resources/plannertaskcompletionrequirementdetails.md
   - name: Planner task creation

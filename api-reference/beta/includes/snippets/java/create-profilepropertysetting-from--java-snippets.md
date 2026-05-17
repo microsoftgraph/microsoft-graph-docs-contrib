@@ -10,6 +10,8 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ProfilePropertySetting profilePropertySetting = new ProfilePropertySetting();
 profilePropertySetting.setOdataType("#microsoft.graph.profilePropertySetting");
+profilePropertySetting.setDisplayName("Profile priority config");
+profilePropertySetting.setName("Profile priority config");
 LinkedList<String> prioritizedSourceUrls = new LinkedList<String>();
 prioritizedSourceUrls.add("https://graph.microsoft.com/beta/admin/people/profileSources(sourceId='contosohr1')");
 profilePropertySetting.setPrioritizedSourceUrls(prioritizedSourceUrls);

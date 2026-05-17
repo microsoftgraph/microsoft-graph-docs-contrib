@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` HTTP response code and a Location 
 ## Example
 The following example shows how to call this API.
 
-##### Request
+### Request
 The following example shows the request.
 
 
@@ -94,13 +94,17 @@ Content-Length: 62
 [!INCLUDE [sample-code](../includes/snippets/php/call-cancelmediaprocessing-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-cancelmediaprocessing-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/call-cancelmediaprocessing-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-##### Response
+### Response
 
 > **Note:** The response object shown here might be shortened for readability.
 

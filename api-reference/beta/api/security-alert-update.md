@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "security_alert_update" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-alert-update-permissions.md)]
 
+[!INCLUDE [rbac-security-alerts-apis-write](../includes/rbac-for-apis/rbac-security-alerts-apis-write.md)]
+
 ## HTTP request
 
 <!-- {
@@ -160,6 +162,13 @@ Content-type: application/json
     "comments": [],
     "evidence": [],
     "systemTags" : [],
-    "customDetails": {"newKey":"newValue"}
+    "customDetails": {
+      "threatIntelligenceVerdict": "KnownMalicious",
+      "matchedThreatActor": "DEV-0537",
+      "automationPlaybookName": "BlockIPAndIsolateHost",
+      "automationExecutionStatus": "Succeeded",
+      "iocTypeMatched": "IPAddress",
+      "firstSeenInOrg": "2026-04-14T08:12:00Z"
+    }
 }
 ```

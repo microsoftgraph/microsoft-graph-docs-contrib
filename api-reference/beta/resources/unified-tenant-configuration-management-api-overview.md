@@ -1,36 +1,36 @@
 ---
-title: "Use the unified tenant configuration management APIs in Microsoft Graph (preview)"
-description: "Learn how to use the unified tenant configuration management APIs in Microsoft Graph to control and manage configuration settings for an entire organization."
+title: "Use the Tenant Configuration Management APIs in Microsoft Graph"
+description: "Learn how to use the Tenant Configuration Management APIs in Microsoft Graph to control and manage configuration settings for an entire organization."
 ms.localizationpriority: high
 author: "swatyario"
-ms.subservice: "tenant-administration"
+ms.subservice: "tenant-configuration-management"
 doc_type: conceptualPageType
 ms.date: 01/19/2026
 ---
 
-# Use the unified tenant configuration management APIs in Microsoft Graph (preview)
+# Use the Tenant Configuration Management APIs in Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The unified tenant configuration management (UTCM) APIs allow administrators to control and manage configuration settings across a single workload or multiple workloads within the organization.
+The Tenant Configuration Management (TCM) APIs allow administrators to control and manage configuration settings across a single workload or multiple workloads within the organization.
 
-The tenant configuration APIs need admins to first add UTCM service principal to their tenant and then grant permissions to it. This is a pre-requisite step. Read more here: [Set up authentication for unified tenant configuration management APIs](/graph/utcm-authentication-setup)
+The tenant configuration APIs need admins to first add TCM service principal to their tenant and then grant permissions to it. This is a pre-requisite step. Read more here: [Set up authentication for Tenant Configuration Management APIs](/graph/utcm-authentication-setup)
 
 ## Authorization
 
-To call the UTCM APIs in Microsoft Graph, your app needs to acquire an access token. For details about access tokens, see [Get access tokens to call Microsoft Graph](/graph/auth/). Your app also needs the appropriate permissions. For more information, see [Microsoft Graph permissions reference](/graph/permissions-reference).
+To call the TCM APIs in Microsoft Graph, your app needs to acquire an access token. For details about access tokens, see [Get access tokens to call Microsoft Graph](/graph/auth/). Your app also needs the appropriate permissions. For more information, see [Microsoft Graph permissions reference](/graph/permissions-reference).
 
 ## Tenant monitoring APIs
 
-The tenant [monitoring](../resources/configurationmonitor.md) APIs in UTCM allow administrators to create one or more monitors, review their monitoring results, and get information about all active drifts in a tenant. Administrators can then resolve these [drifts](../resources/configurationdrift.md) by using the relevant admin centers or other available methods.
+The tenant [monitoring](../resources/configurationmonitor.md) APIs in TCM allow administrators to create one or more monitors, review their monitoring results, and get information about all active drifts in a tenant. Administrators can then resolve these [drifts](../resources/configurationdrift.md) by using the relevant admin centers or other available methods.
 
 ## Snapshot APIs
 
-The [snapshot](../resources/configurationsnapshotjob.md) APIs in UTCM allow administrators to extract the current tenant configuration settings. This process allows administrators to get a baseline that represents the desired tenant configuration and serves as the foundation for periodic tenant monitoring.
+The [snapshot](../resources/configurationsnapshotjob.md) APIs in TCM allow administrators to extract the current tenant configuration settings. This process allows administrators to get a baseline that represents the desired tenant configuration and serves as the foundation for periodic tenant monitoring.
 
 ## Common use cases
 
-The following table lists common use cases for the UTCM APIs.
+The following table lists common use cases for the TCM APIs.
 
 | Use case                                                   | REST resource                                                                | See also                                                                                         |
 | :---------------------------------------------------------- | :---------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------- |
@@ -69,15 +69,13 @@ The following API limits apply to the [configurationSnapshotJob](../resources/co
 
 ## Next steps
 
-Use the Microsoft Graph UTCM APIs to control and manage configuration settings across one or more workloads within an organization. To learn more:
+Use the Microsoft Graph TCM APIs to control and manage configuration settings across one or more workloads within an organization. To learn more:
 
 - Explore the resources and methods that are most helpful to your scenario.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 ## Related content
 
-[Overview of the unified tenant configuration management APIs in Microsoft Graph (preview)](/graph/unified-tenant-configuration-management-concept-overview)
+[Overview of the Tenant Configuration Management APIs in Microsoft Graph](/graph/unified-tenant-configuration-management-concept-overview)
 
-[Set up authentication for unified tenant configuration management APIs](/graph/utcm-authentication-setup)
-
-[Supported workloads and resource types](/graph/utcm-supported-resourcetypes)
+[Set up authentication for Tenant Configuration Management APIs](/graph/utcm-authentication-setup)

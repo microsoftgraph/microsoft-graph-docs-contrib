@@ -38,6 +38,7 @@ All examples are relative to a **[list][]**: `https://graph.microsoft.com/v1.0/s
 | [Create](../api/listitem-post-documentsetversions.md) | [documentSetVersion][]             | Create a new version of a document set item in a list.                    |
 | [Restore](../api/documentsetversion-restore.md)       | No Content                         | Restore the document set item to a specific version.                      |
 | [Get delta](../api/listitem-delta.md) | [listItem](../resources/listitem.md) collection | Get newly created, updated, or deleted [list items](../resources/listitem.md) without having to perform a full read of the entire items collection. |
+| [Get recent activities](../api/itemactivity-list.md)       | [itemActivity](../resources/itemactivity.md) collection | List the recent [activities](../resources/itemactivity.md) that took place on a [drive](../resources/drive.md), [list](../resources/list.md), item, or within an item hierarchy. |
 
 [Get]: ../api/listitem-get.md
 [Get analytics]: ../api/itemanalytics-get.md

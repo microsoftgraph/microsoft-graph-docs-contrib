@@ -125,6 +125,7 @@ HTTP/1.1 200 OK
       "displayName": "Jefferson Lee", // Newly Added
       "email": "lee@contoso.com", // Newly Added
       "mailboxType": "user",
+      "backupRetentionPeriodInDays": 180,
       "status": "unprotectRequested",
       "protectionSources": "none",
       "createdBy": {
@@ -161,6 +162,7 @@ HTTP/1.1 200 OK
       "directoryObjectId": "781d9337-d8f0-456e-92cd-00a3abdd2093",
       "displayName": "Mastura Ibrahim", // Newly Added
       "email": "mastura@contoso.com", // Newly Added
+      "backupRetentionPeriodInDays": 180,
       "status": "unprotected",
       "protectionSources": "none",
       "mailboxType": "shared",
@@ -199,6 +201,7 @@ HTTP/1.1 200 OK
       "displayName": "Ahmad Hakiki", // Newly Added
       "email": "ahmad@contoso.com", // Newly Added
       "mailboxType": "user",
+      "backupRetentionPeriodInDays": 180,
       "status": "protectRequested",
       "protectionSources": "manual",
       "createdBy": {
@@ -236,6 +239,7 @@ HTTP/1.1 200 OK
       "displayName": "Jeffry Goh", // Newly Added
       "email": "jeffry@contoso.com", // Newly Added
       "mailboxType": "user",
+      "backupRetentionPeriodInDays": 180,
       "status": "protected",
       "protectionSources": "dynamicRule",
       "createdBy": {
@@ -271,6 +275,7 @@ HTTP/1.1 200 OK
       "directoryObjectId": "2w1d9337-d8f0-456e-92cd-00a3abdd2093",
       "displayName": "Suresh Pasupuleti", // Newly Added
       "email": "suresh@contoso.com", // Newly Added
+      "backupRetentionPeriodInDays": 180,
       "status": "unprotected",
       "protectionSources": "none",
       "mailboxType": "shared",
@@ -341,6 +346,7 @@ HTTP/1.1 200 OK
       "directoryObjectId": "384974e2-72cd-48de-a6e8-6985d7c5db90",
       "displayName": "Jefferson Lee", // Newly Added
       "email": "lee@contoso.com", // Newly Added
+      "backupRetentionPeriodInDays": 180,
       "status": "protected",
       "protectionSources": "manual, dynamicRule",
       "mailboxType": "user",
@@ -379,6 +385,7 @@ HTTP/1.1 200 OK
       "displayName": "Mastura Ibrahim", // Newly Added
       "email": "mastura@contoso.com", // Newly Added
       "mailboxType": "shared",
+      "backupRetentionPeriodInDays": 180,
       "status": "protectRequested",
       "protectionSources": "manual",
       "createdBy": {
@@ -415,6 +422,7 @@ HTTP/1.1 200 OK
       "directoryObjectId": "344d9337-d8f0-456e-92cd-00a3abdd2093",
       "displayName": "Esmira Musayeva", // Newly Added
       "email": "esmira@contoso.com", // Newly Added
+      "backupRetentionPeriodInDays": 180,
       "status": "protectRequested",
       "protectionSources": "manual",
       "mailboxType": "user",
@@ -452,6 +460,7 @@ HTTP/1.1 200 OK
       "directoryObjectId": "781d9337-d8f0-456e-92cd-00a3abdd2093",
       "displayName": "Ahmad Hakiki", // Newly Added
       "email": "ahmad@contoso.com", // Newly Added
+      "backupRetentionPeriodInDays": 180,
       "status": "removeRequested",
       "protectionSources": "none",
       "mailboxType": "user",
@@ -489,6 +498,7 @@ HTTP/1.1 200 OK
       "directoryObjectId": "2d1d9337-d8f0-456e-92cd-00a3abdd2093",
       "displayName": "Rashmi Mishra ", // Newly Added
       "email": "rashmi@contoso.com", // Newly Added
+      "backupRetentionPeriodInDays": 180,
       "status": "protectRequested",
       "protectionSources": "dynamicRule",
       "mailboxType": "shared",

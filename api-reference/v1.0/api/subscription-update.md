@@ -2,7 +2,7 @@
 title: "Update subscription"
 description: "Renew a subscription by extending its expiry time."
 ms.localizationpriority: medium
-author: "keylimesoda"
+author: "jessieli-ad"
 ms.subservice: change-notifications
 doc_type: apiPageType
 ms.date: 08/01/2024

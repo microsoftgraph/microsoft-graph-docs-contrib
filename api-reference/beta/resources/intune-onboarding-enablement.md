@@ -1,6 +1,6 @@
 ---
 title: "enablement enum type"
-description: "Intune Onboarding Enablement Source_Resources ."
+description: "Intune Onboarding Enablement Resources ."
 author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.subservice: "intune"

@@ -11,7 +11,6 @@ const options = {
 const client = Client.init(options);
 
 let unifiedRoleManagementPolicyAssignment = await client.api('/policies/roleManagementPolicyAssignments/Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369_member')
-	.version('beta')
 	.get();
 
 ```

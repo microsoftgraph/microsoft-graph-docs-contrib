@@ -11,7 +11,6 @@ const options = {
 const client = Client.init(options);
 
 let stream = await client.api('/reports/getTeamsTeamCounts(period='D7')')
-	.version('beta')
 	.get();
 
 ```

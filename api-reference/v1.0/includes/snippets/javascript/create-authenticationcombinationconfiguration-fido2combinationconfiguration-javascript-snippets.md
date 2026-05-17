@@ -20,7 +20,7 @@ const authenticationCombinationConfiguration = {
   appliesToCombinations: ['fido2']
 };
 
-await client.api('/identity/conditionalAccess/authenticationStrength/policies/{authenticationStrengthPolicyId}//combinationConfigurations')
+await client.api('/identity/conditionalAccess/authenticationStrength/policies/{authenticationStrengthPolicyId}/combinationConfigurations')
 	.post(authenticationCombinationConfiguration);
 
 ```

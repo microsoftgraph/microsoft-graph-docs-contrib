@@ -18,7 +18,6 @@ Get all messages from all [chats](../resources/chatmessage.md) in which a user i
 
 To learn more about how to use the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
 
-[!INCLUDE [teams-metered-apis](../../includes/teams-metered-apis.md)]
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -37,17 +36,6 @@ GET /users/{id | user-principal-name}/chats/getAllMessages
 ```
 
 ## Optional query parameters
-
-You can use the `model` query parameter, which supports the values `A` and `B`, based on the preferred [licensing and payment model](/graph/teams-licenses),
-as shown in the following examples.
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /users/{id | user-principal-name}/chats/getAllMessages?model=A
-GET /users/{id | user-principal-name}/chats/getAllMessages?model=B
-```
-
-If no `model` parameter is specified, [evaluation mode](/graph/teams-licenses#evaluation-mode-default-requirements) will be used.
 
 This method also supports [date range parameters](/graph/query-parameters) to customize the response, as shown in the following example.
 

@@ -45,7 +45,7 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and [post](../resources/post.md) object in the response body.
 ## Example
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315
 
 ---
 
-##### Response
+### Response
 The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
