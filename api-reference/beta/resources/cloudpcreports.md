@@ -109,6 +109,7 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 | troubleshootVMPerformanceReport | Indicates VM performance troubleshoot report for Cloud PCs. |
 | getAIEnabledStateCPCReport | Indicates the AI-enabled state report for Cloud PCs. |
 | reserveLicenseReport | Indicates the reserve license report for Cloud PCs. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 
