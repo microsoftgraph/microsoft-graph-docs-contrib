@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get the properties of a [photoUpdateSettings](../resources/photoupdatesettings.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
