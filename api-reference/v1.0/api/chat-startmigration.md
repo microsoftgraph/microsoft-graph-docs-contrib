@@ -5,14 +5,12 @@ ms.localizationpriority: medium
 author: "MehakAgarwal"
 ms.subservice: "teams"
 doc_type: apiPageType
-ms.date: 06/12/2025
+ms.date: 03/18/2026
 ---
 
 # chat: startMigration
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Start the migration of external messages by enabling migration mode in an existing [chat](../resources/chat.md). Import operations were limited to newly created standard channels that were in an empty state. For more information, see [Import third-party platform messages to Teams using Microsoft Graph](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
 
@@ -61,6 +59,7 @@ In the request body, supply a JSON representation of the following parameters.
 
 If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
+
 ## Examples
 
 ### Example 1: Start the migration in a chat
@@ -71,7 +70,6 @@ The following example shows how to start the migration in a chat.
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "startMigration_chat",
@@ -79,38 +77,8 @@ The following example shows a request.
 }-->
 
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/chats/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/startMigration
+POST https://graph.microsoft.com/v1.0/chats/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/startMigration
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/startmigration-chat-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/startmigration-chat-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/startmigration-chat-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/startmigration-chat-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/startmigration-chat-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/startmigration-chat-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/startmigration-chat-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -132,7 +100,6 @@ The following example shows how to start the migration when a chat is already in
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "startMigration_chat_fail",
@@ -140,38 +107,8 @@ The following example shows a request.
 }-->
 
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/chats/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/startMigration
+POST https://graph.microsoft.com/v1.0/chats/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/startMigration
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/startmigration-chat-fail-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/startmigration-chat-fail-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/startmigration-chat-fail-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/startmigration-chat-fail-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/startmigration-chat-fail-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/startmigration-chat-fail-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/startmigration-chat-fail-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 The following example shows the response.
@@ -189,7 +126,7 @@ HTTP/1.1 400 Bad Request
 <!--
 {
   "type": "#page.annotation",
-  "description": "startMigration_ chat",
+  "description": "startMigration chat",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
@@ -201,7 +138,7 @@ HTTP/1.1 400 Bad Request
 ## Related content
 
 - [chat: completeMigration](chat-completemigration.md)
-- [Import a message](chat-post-messages.md#example-2-import-a-message).
+- [Import a message](chat-post-messages.md)
 - [Get message import status](chatmessage-get.md)
 - [channel: completeMigration](channel-completemigration.md)
 - [channel: startMigration](channel-startmigration.md)

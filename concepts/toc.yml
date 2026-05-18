@@ -895,6 +895,8 @@ items:
       items:
       - name: Working with Microsoft Teams messaging
         href: teams-messaging-overview.md
+      - name: Import messages
+        href: teams-import-messages.md
     - name: Activity feed notifications
       items:
       - name: Send activity feed notifications
