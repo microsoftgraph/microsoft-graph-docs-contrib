@@ -68,7 +68,6 @@ The following example shows how to apply a policy setting such as `region` to al
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "apply_cloudpcprovisioningpolicy_policysettings"
@@ -83,8 +82,6 @@ Content-Type: application/json
   "policySettings": "region"
 }
 ```
-
----
 
 #### Response
 
@@ -108,7 +105,6 @@ The following example shows how to reprovision Frontline shared Cloud PCs under 
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "apply_cloudpcprovisioningpolicy_frontline"
@@ -123,8 +119,6 @@ Content-Type: application/json
   "reservePercentage": 80
 }
 ```
-
----
 
 #### Response
 
