@@ -94,7 +94,6 @@ DELETE https://graph.microsoft.com/v1.0/identity/verifiedId/profiles/ca15ec56-7a
 
 ---
 
-
 ### Response
 
 The following example shows the response.

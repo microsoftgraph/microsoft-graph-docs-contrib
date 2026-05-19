@@ -95,7 +95,6 @@ GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners/a
 
 ---
 
-
 ### Response
 
 The following example shows the response.

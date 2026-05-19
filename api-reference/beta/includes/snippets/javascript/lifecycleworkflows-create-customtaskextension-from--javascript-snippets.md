@@ -30,7 +30,7 @@ const customTaskExtension = {
     },
     callbackConfiguration: {
         '@odata.type': '#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration',
-        timeoutDuration: 'PT5M'
+        timeoutDuration: 'PT30M'
     }
 };
 

@@ -94,7 +94,6 @@ GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/default/m3
 
 ---
 
-
 ### Response
 
 The following example shows the response.
