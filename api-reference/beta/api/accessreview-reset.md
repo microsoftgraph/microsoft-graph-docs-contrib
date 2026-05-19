@@ -44,7 +44,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
-##### Request
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -85,7 +85,7 @@ POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F0
 
 ---
 
-##### Response
+### Response
 <!-- {
   "blockType": "response",
   "truncated": true

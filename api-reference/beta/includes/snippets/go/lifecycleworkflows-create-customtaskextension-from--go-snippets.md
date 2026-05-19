@@ -40,7 +40,7 @@ timeoutInMilliseconds := int32(1000)
 clientConfiguration.SetTimeoutInMilliseconds(&timeoutInMilliseconds) 
 requestBody.SetClientConfiguration(clientConfiguration)
 callbackConfiguration := graphmodelsidentitygovernance.NewCustomTaskExtensionCallbackConfiguration()
-timeoutDuration , err := abstractions.ParseISODuration("PT5M")
+timeoutDuration , err := abstractions.ParseISODuration("PT30M")
 callbackConfiguration.SetTimeoutDuration(&timeoutDuration) 
 requestBody.SetCallbackConfiguration(callbackConfiguration)
 

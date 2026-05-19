@@ -3,6 +3,168 @@
       {
           "ChangeList": [
             {
+              "Id": "950874d3-aa2c-4570-b137-bcb857576f38",
+              "ApiChange": "Enumeration",
+              "ChangedApiName": "browsableResourceType",
+              "ChangeType": "Addition",
+              "Description": "Added the **browsableResourceType** enumeration type.",
+              "Target": "browsableResourceType"
+            },
+            {
+              "Id": "950874d3-aa2c-4570-b137-bcb857576f38",
+              "ApiChange": "Enumeration",
+              "ChangedApiName": "browseQueryOrder",
+              "ChangeType": "Addition",
+              "Description": "Added the **browseQueryOrder** enumeration type.",
+              "Target": "browseQueryOrder"
+            },
+            {
+              "Id": "950874d3-aa2c-4570-b137-bcb857576f38",
+              "ApiChange": "Enumeration",
+              "ChangedApiName": "browseQueryResponseItemType",
+              "ChangeType": "Addition",
+              "Description": "Added the **browseQueryResponseItemType** enumeration type.",
+              "Target": "browseQueryResponseItemType"
+            },
+            {
+              "Id": "950874d3-aa2c-4570-b137-bcb857576f38",
+              "ApiChange": "Enumeration",
+              "ChangedApiName": "browseSessionStatus",
+              "ChangeType": "Addition",
+              "Description": "Added the **browseSessionStatus** enumeration type.",
+              "Target": "browseSessionStatus"
+            },
+            {
+              "Id": "950874d3-aa2c-4570-b137-bcb857576f38",
+              "ApiChange": "Member",
+              "ChangedApiName": "granular",
+              "ChangeType": "Addition",
+              "Description": "Added the `granular` member to the **restoreJobType** enumeration.",
+              "Target": "restoreJobType"
+            },
+            {
+              "Id": "950874d3-aa2c-4570-b137-bcb857576f38",
+              "ApiChange": "Resource",
+              "ChangedApiName": "browseQueryResponseItem",
+              "ChangeType": "Addition",
+              "Description": "Added the [browseQueryResponseItem](https://learn.microsoft.com/en-us/graph/api/resources/browseQueryResponseItem?view=graph-rest-1.0) resource.",
+              "Target": "browseQueryResponseItem"
+            },
+            {
+              "Id": "950874d3-aa2c-4570-b137-bcb857576f38",
+              "ApiChange": "Relationship",
+              "ChangedApiName": "browseSessions",
+              "ChangeType": "Addition",
+              "Description": "Added the **browseSessions** relationship to the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-1.0) resource.",
+              "Target": "backupRestoreRoot"
+            },
+            {
+              "Id": "950874d3-aa2c-4570-b137-bcb857576f38",
+              "ApiChange": "Relationship",
+              "ChangedApiName": "oneDriveForBusinessBrowseSessions",
+              "ChangeType": "Addition",
+              "Description": "Added the **oneDriveForBusinessBrowseSessions** relationship to the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-1.0) resource.",
+              "Target": "backupRestoreRoot"
+            },
+            {
+              "Id": "950874d3-aa2c-4570-b137-bcb857576f38",
+              "ApiChange": "Relationship",
+              "ChangedApiName": "sharePointBrowseSessions",
+              "ChangeType": "Addition",
+              "Description": "Added the **sharePointBrowseSessions** relationship to the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-1.0) resource.",
+              "Target": "backupRestoreRoot"
+            },
+            {
+              "Id": "950874d3-aa2c-4570-b137-bcb857576f38",
+              "ApiChange": "Resource",
+              "ChangedApiName": "browseSessionBase",
+              "ChangeType": "Addition",
+              "Description": "Added the [browseSessionBase](https://learn.microsoft.com/en-us/graph/api/resources/browseSessionBase?view=graph-rest-1.0) resource.",
+              "Target": "browseSessionBase"
+            },
+            {
+              "Id": "950874d3-aa2c-4570-b137-bcb857576f38",
+              "ApiChange": "Resource",
+              "ChangedApiName": "granularDriveRestoreArtifact",
+              "ChangeType": "Addition",
+              "Description": "Added the [granularDriveRestoreArtifact](https://learn.microsoft.com/en-us/graph/api/resources/granularDriveRestoreArtifact?view=graph-rest-1.0) resource.",
+              "Target": "granularDriveRestoreArtifact"
+            },
+            {
+              "Id": "950874d3-aa2c-4570-b137-bcb857576f38",
+              "ApiChange": "Resource",
+              "ChangedApiName": "granularRestoreArtifactBase",
+              "ChangeType": "Addition",
+              "Description": "Added the [granularRestoreArtifactBase](https://learn.microsoft.com/en-us/graph/api/resources/granularRestoreArtifactBase?view=graph-rest-1.0) resource.",
+              "Target": "granularRestoreArtifactBase"
+            },
+            {
+              "Id": "950874d3-aa2c-4570-b137-bcb857576f38",
+              "ApiChange": "Resource",
+              "ChangedApiName": "granularSiteRestoreArtifact",
+              "ChangeType": "Addition",
+              "Description": "Added the [granularSiteRestoreArtifact](https://learn.microsoft.com/en-us/graph/api/resources/granularSiteRestoreArtifact?view=graph-rest-1.0) resource.",
+              "Target": "granularSiteRestoreArtifact"
+            },
+            {
+              "Id": "950874d3-aa2c-4570-b137-bcb857576f38",
+              "ApiChange": "Resource",
+              "ChangedApiName": "oneDriveForBusinessBrowseSession",
+              "ChangeType": "Addition",
+              "Description": "Added the [oneDriveForBusinessBrowseSession](https://learn.microsoft.com/en-us/graph/api/resources/oneDriveForBusinessBrowseSession?view=graph-rest-1.0) resource.",
+              "Target": "oneDriveForBusinessBrowseSession"
+            },
+            {
+              "Id": "950874d3-aa2c-4570-b137-bcb857576f38",
+              "ApiChange": "Relationship",
+              "ChangedApiName": "granularDriveRestoreArtifacts",
+              "ChangeType": "Addition",
+              "Description": "Added the **granularDriveRestoreArtifacts** relationship to the [oneDriveForBusinessRestoreSession](https://learn.microsoft.com/en-us/graph/api/resources/oneDriveForBusinessRestoreSession?view=graph-rest-1.0) resource.",
+              "Target": "oneDriveForBusinessRestoreSession"
+            },
+            {
+              "Id": "950874d3-aa2c-4570-b137-bcb857576f38",
+              "ApiChange": "Resource",
+              "ChangedApiName": "sharePointBrowseSession",
+              "ChangeType": "Addition",
+              "Description": "Added the [sharePointBrowseSession](https://learn.microsoft.com/en-us/graph/api/resources/sharePointBrowseSession?view=graph-rest-1.0) resource.",
+              "Target": "sharePointBrowseSession"
+            },
+            {
+              "Id": "950874d3-aa2c-4570-b137-bcb857576f38",
+              "ApiChange": "Relationship",
+              "ChangedApiName": "granularSiteRestoreArtifacts",
+              "ChangeType": "Addition",
+              "Description": "Added the **granularSiteRestoreArtifacts** relationship to the [sharePointRestoreSession](https://learn.microsoft.com/en-us/graph/api/resources/sharePointRestoreSession?view=graph-rest-1.0) resource.",
+              "Target": "sharePointRestoreSession"
+            },
+            {
+              "Id": "950874d3-aa2c-4570-b137-bcb857576f38",
+              "ApiChange": "Method",
+              "ChangedApiName": "browse",
+              "ChangeType": "Addition",
+              "Description": "Added the [browse](https://learn.microsoft.com/en-us/graph/api/browseSessionBase-browse?view=graph-rest-1.0) method to the [browseSessionBase](https://learn.microsoft.com/en-us/graph/api/resources/browseSessionBase?view=graph-rest-1.0) resource.",
+              "Target": "browseSessionBase"
+            },
+            {
+              "Id": "950874d3-aa2c-4570-b137-bcb857576f38",
+              "ApiChange": "Method",
+              "ChangedApiName": "browse",
+              "ChangeType": "Addition",
+              "Description": "Added the [browse](https://learn.microsoft.com/en-us/graph/api/browseSessionBase-browse?view=graph-rest-1.0) method to the [browseSessionBase](https://learn.microsoft.com/en-us/graph/api/resources/browseSessionBase?view=graph-rest-1.0) resource.",
+              "Target": "browseSessionBase"
+            }
+          ],
+          "Id": "950874d3-aa2c-4570-b137-bcb857576f38",
+          "Cloud": "Prod",
+          "Version": "v1.0",
+          "CreatedDateTime": "2026-05-11T08:04:14.5024207Z",
+          "WorkloadArea": "EnhancedRestore",
+          "SubArea": "Backup and Restore"
+      },
+      {
+          "ChangeList": [
+            {
               "Id": "0272a9b7-e106-4262-a0d1-90932ddd92a6",
               "ApiChange": "Member",
               "ChangedApiName": "includeNewerItems",

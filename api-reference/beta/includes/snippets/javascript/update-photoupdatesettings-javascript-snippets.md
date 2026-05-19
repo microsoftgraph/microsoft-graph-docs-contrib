@@ -11,11 +11,8 @@ const options = {
 const client = Client.init(options);
 
 const photoUpdateSettings = {
-  '@odata.type': '#microsoft.graph.photoUpdateSettings',
-  source: 'String',
-  allowedRoles: [
-    'String'
-  ]
+    source: 'cloud',
+    allowedRoles: []
 };
 
 await client.api('/admin/people/photoUpdateSettings')

@@ -48,7 +48,7 @@ If successful, returns a `204 No Content` response. It doesn't return anything i
 
 ## Example
 
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -90,7 +90,7 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/j
 
 ---
 
-##### Response
+### Response
 The following example shows the response.
 
 <!-- {

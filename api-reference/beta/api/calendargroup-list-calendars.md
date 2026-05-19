@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and collection of [C
 
 ## Example
 
-##### Request
+### Request
 
 The following example shows a request.
 
@@ -108,7 +108,7 @@ GET https://graph.microsoft.com/beta/me/calendarGroups/{id}/calendars
 
 ---
 
-##### Response
+### Response
 
 The following example shows the response. Note: The response object shown here might be shortened for readability.
 

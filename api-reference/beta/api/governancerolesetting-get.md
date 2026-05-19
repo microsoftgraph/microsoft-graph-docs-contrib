@@ -52,7 +52,7 @@ Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a [governanceRoleSetting](../resources/governancerolesetting.md) object in the response body.
 ## Example
-##### Request
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleSetting
 
 ---
 
-##### Response
+### Response
 <!-- {
   "blockType": "response",
   "truncated": false,

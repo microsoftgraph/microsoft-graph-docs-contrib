@@ -1262,6 +1262,7 @@
             {
               "name": "Mobility management policy",
               "resources": [
+                "mobilityManagementPolicy",
                 "mobileAppManagementPolicy",
                 "mobileDeviceManagementPolicy"
               ]
@@ -1859,44 +1860,6 @@
               ]
             },
             {
-              "name": "Cross-tenant access",
-              "overview": "../../resources/crosstenantaccesspolicy-overview.md",
-              "keywords": [
-                "Cross-tenant access settings",
-                "XTAP"
-              ],
-              "resources": [
-                "crossTenantAccessPolicy",
-                "crossTenantAccessPolicyConfigurationDefault",
-                "crossTenantAccessPolicyConfigurationPartner",
-                "crossTenantIdentitySyncPolicyPartner",
-                "m365CapabilityBase"
-              ],
-              "childNodes": [
-                {
-                  "name": "Microsoft 365 capabilities",
-                  "resources": [
-                    "crossTenantCalendarAvailabilityBasic",
-                    "crossTenantCalendarAvailabilityLimitedDetails",
-                    "crossTenantCalendarSharingFreeBusyDetail",
-                    "crossTenantCalendarSharingFreeBusyReviewer",
-                    "crossTenantCalendarSharingFreeBusySimple",
-                    "crossTenantMailTipsAll",
-                    "crossTenantMailTipsLimited",
-                    "crossTenantMigration",
-                    "crossTenantOpenProfileCard",
-                    "crossTenantPlacesDeskBooking",
-                    "crossTenantPlacesRoomBooking"
-                  ],
-                  "complexTypes": [
-                    "m365CapabilityInboundAccess",
-                    "m365CapabilityResourceScope",
-                    "m365CapabilityResourceScopes"
-                  ]
-                }
-              ]
-            },
-            {
               "name": "Cross-tenant shared user profiles",
               "resources": [
                 "inboundSharedUserProfile",
@@ -1913,20 +1876,6 @@
                 "onPasswordSubmitCustomExtension",
                 "onVerifiedIdClaimValidationCustomExtension",
                 "onTokenIssuanceStartCustomExtension"
-              ]
-            },
-            {
-              "name": "Cross-tenant migration",
-              "overview": "../../resources/crosstenant-migration-overview.md",
-              "resources":[
-                "crossTenantMigrationJob",
-                "crossTenantMigrationTask",
-                "migrationsRoot"
-              ],
-              "complexTypes":[
-                "crossTenantMigrationServiceStatusDetails",
-                "error",
-                "exchangeOnlineCrossTenantMigrationSettings"
               ]
             },
             {
@@ -1982,20 +1931,6 @@
               "resources": [
                 "identityProvider",
                 "openIdConnectProvider"
-              ]
-            },
-            {
-              "name": "Multitenant organization",
-              "overview": "../../resources/multitenantorganization-overview.md",
-              "keywords": [
-                "MTO"
-              ],
-              "resources": [
-                "multiTenantOrganization",
-                "multiTenantOrganizationMember",
-                "multiTenantOrganizationJoinRequestRecord",
-                "multiTenantOrganizationPartnerConfigurationTemplate",
-                "multiTenantOrganizationIdentitySyncPolicyTemplate"
               ]
             },
             {
@@ -2792,6 +2727,9 @@
                 "signInEventsActivity",
                 "signInEventsAppActivity",
                 "summarizedSignIn"
+              ],
+              "complexTypes": [
+                "tokenProtectionStatusDetails"
               ]
             }
           ]
@@ -2926,7 +2864,18 @@
           ],
           "complexTypes": [
             "microsoft.graph.security.aiAgentEvidence",
+            "microsoft.graph.security.dnsEvidence",
+            "microsoft.graph.security.fileHashEvidence",
+            "microsoft.graph.security.gitHubOrganizationEvidence",
+            "microsoft.graph.security.gitHubRepoEvidence",
+            "microsoft.graph.security.gitHubUserEvidence",
+            "microsoft.graph.security.hostLogonSessionEvidence",
+            "microsoft.graph.security.malwareEvidence",
+            "microsoft.graph.security.networkConnectionEvidence",
+            "microsoft.graph.security.sasTokenEvidence",
             "microsoft.graph.security.securityGroupEvidence",
+            "microsoft.graph.security.servicePrincipalEvidence",
+            "microsoft.graph.security.submissionMailEvidence",
             "microsoft.graph.security.teamsMessageEvidence",
             "microsoft.graph.security.userAccount"
           ]
@@ -2995,6 +2944,7 @@
               "classificationError",
               "classificationInnerError",
               "computeRightsAndInheritanceResult",
+              "contentActivityMetadata",
               "contentBase",
               "customMetadataDictionary",
               "deviceMetadata",
@@ -3719,7 +3669,7 @@
     },
     {
       "name": "Tenants",
-      "shouldSort": true,
+      "shouldSort": false,
       "overview": "../../resources/tenants-overview.md",
       "keywords": [
         "tenant management",
@@ -3753,6 +3703,72 @@
             "microsoft.graph.tenantGovernanceServices.governanceInvitation",
             "microsoft.graph.tenantGovernanceServices.governanceRequest",
             "microsoft.graph.tenantGovernanceServices.governanceRelationship"
+          ]
+        },
+        {
+          "name": "Cross-tenant access",
+          "overview": "../../resources/crosstenantaccesspolicy-overview.md",
+          "keywords": [
+            "Cross-tenant access settings",
+            "XTAP"
+          ],
+          "resources": [
+            "crossTenantAccessPolicy",
+            "crossTenantAccessPolicyConfigurationDefault",
+            "crossTenantAccessPolicyConfigurationPartner",
+            "crossTenantIdentitySyncPolicyPartner",
+            "m365CapabilityBase"
+          ],
+          "childNodes": [
+            {
+              "name": "Microsoft 365 capabilities",
+              "resources": [
+                "crossTenantCalendarAvailabilityBasic",
+                "crossTenantCalendarAvailabilityLimitedDetails",
+                "crossTenantCalendarSharingFreeBusyDetail",
+                "crossTenantCalendarSharingFreeBusyReviewer",
+                "crossTenantCalendarSharingFreeBusySimple",
+                "crossTenantMailTipsAll",
+                "crossTenantMailTipsLimited",
+                "crossTenantMigration",
+                "crossTenantOpenProfileCard",
+                "crossTenantPlacesDeskBooking",
+                "crossTenantPlacesRoomBooking"
+              ],
+              "complexTypes": [
+                "m365CapabilityInboundAccess",
+                "m365CapabilityResourceScope",
+                "m365CapabilityResourceScopes"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Cross-tenant migration",
+          "overview": "../../resources/crosstenant-migration-overview.md",
+          "resources":[
+            "crossTenantMigrationJob",
+            "crossTenantMigrationTask",
+            "migrationsRoot"
+          ],
+          "complexTypes":[
+            "crossTenantMigrationServiceStatusDetails",
+            "error",
+            "exchangeOnlineCrossTenantMigrationSettings"
+          ]
+        },
+        {
+          "name": "Multitenant organization",
+          "overview": "../../resources/multitenantorganization-overview.md",
+          "keywords": [
+            "MTO"
+          ],
+          "resources": [
+            "multiTenantOrganization",
+            "multiTenantOrganizationMember",
+            "multiTenantOrganizationJoinRequestRecord",
+            "multiTenantOrganizationPartnerConfigurationTemplate",
+            "multiTenantOrganizationIdentitySyncPolicyTemplate"
           ]
         }
       ]

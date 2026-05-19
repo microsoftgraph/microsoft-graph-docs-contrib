@@ -6,31 +6,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Models\AuthenticationEventListener;
+use Microsoft\Graph\Beta\Generated\Models\OnVerifiedIdClaimValidationListener;
+use Microsoft\Graph\Beta\Generated\Models\OnVerifiedIdClaimValidationCustomExtensionHandler;
+use Microsoft\Graph\Beta\Generated\Models\CustomExtensionOverwriteConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\CustomExtensionClientConfiguration;
+use Microsoft\Graph\Beta\Generated\Models\CustomExtensionBehaviorOnError;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestBody = new AuthenticationEventListener();
+$requestBody = new OnVerifiedIdClaimValidationListener();
 $requestBody->setOdataType('#microsoft.graph.onVerifiedIdClaimValidationListener');
 $requestBody->setDisplayName('Verified ID Claim Validation Listener (updated)');
-$additionalData = [
-	'handler' => [
-		'@odata.type' => '#microsoft.graph.onVerifiedIdClaimValidationCustomExtensionHandler',
-		'configuration' => [
-			'@odata.type' => '#microsoft.graph.customExtensionOverwriteConfiguration',
-			'clientConfiguration' => [
-				'@odata.type' => '#microsoft.graph.customExtensionClientConfiguration',
-				'maximumRetries' => 1,
-				'timeoutInMilliseconds' => 2000,
-			],
-			'behaviorOnError' => [
-				'@odata.type' => '#microsoft.graph.customExtensionBehaviorOnError',
-			],
-		],
-	],
-];
-$requestBody->setAdditionalData($additionalData);
+$handler = new OnVerifiedIdClaimValidationCustomExtensionHandler();
+$handler->setOdataType('#microsoft.graph.onVerifiedIdClaimValidationCustomExtensionHandler');
+$handlerConfiguration = new CustomExtensionOverwriteConfiguration();
+$handlerConfiguration->setOdataType('#microsoft.graph.customExtensionOverwriteConfiguration');
+$handlerConfigurationClientConfiguration = new CustomExtensionClientConfiguration();
+$handlerConfigurationClientConfiguration->setOdataType('#microsoft.graph.customExtensionClientConfiguration');
+$handlerConfigurationClientConfiguration->setMaximumRetries(1);
+$handlerConfigurationClientConfiguration->setTimeoutInMilliseconds(2000);
+$handlerConfiguration->setClientConfiguration($handlerConfigurationClientConfiguration);
+$handlerConfigurationBehaviorOnError = new CustomExtensionBehaviorOnError();
+$handlerConfigurationBehaviorOnError->setOdataType('#microsoft.graph.customExtensionBehaviorOnError');
+$handlerConfiguration->setBehaviorOnError($handlerConfigurationBehaviorOnError);
+$handler->setConfiguration($handlerConfiguration);
+$requestBody->setHandler($handler);
 
 $result = $graphServiceClient->identity()->authenticationEventListeners()->byAuthenticationEventListenerId('authenticationEventListener-id')->patch($requestBody)->wait();
 

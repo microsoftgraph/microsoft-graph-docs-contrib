@@ -46,7 +46,7 @@ If successful, this method returns `200 OK` response code and a collection of [l
 
 ## Example
 Here is an example of how to call this API.
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/v1.0/me/outlook/supportedLanguages
 
 ---
 
-##### Response
+### Response
 The following example shows the response.
 <!-- {
   "blockType": "response",

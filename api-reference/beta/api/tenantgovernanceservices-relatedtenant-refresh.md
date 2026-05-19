@@ -86,6 +86,10 @@ POST https://graph.microsoft.com/beta/directory/tenantGovernance/relatedTenants/
 [!INCLUDE [sample-code](../includes/snippets/php/relatedtenantthisrefresh-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/relatedtenantthisrefresh-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/relatedtenantthisrefresh-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
