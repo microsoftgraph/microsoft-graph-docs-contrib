@@ -54,7 +54,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ## Example
 Here is an example of how to call this API.
-##### Request
+### Request
 This example shows how to delete a cell and shift the other cells up.
 
 # [HTTP](#tab/http)
@@ -97,7 +97,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 The following example shows the response. 
 <!-- {
   "blockType": "response"

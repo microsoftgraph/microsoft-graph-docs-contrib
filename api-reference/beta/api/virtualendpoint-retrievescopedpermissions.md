@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get the permissions and corresponding scope IDs for which the authenticated user has access.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 

@@ -70,8 +70,12 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: Get all alerts
 
+Get a list of [alert](../resources/security-alert.md) objects.
+
+#### Request
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -112,7 +116,8 @@ GET https://graph.microsoft.com/v1.0/security/alerts_v2
 
 ---
 
-### Response
+#### Response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -287,6 +292,80 @@ Content-type: application/json
         "systemTags" : [
             "Defender Experts"
       ]
+    }
+  ]
+}
+```
+
+### Example 2: Get all alerts from Microsoft Sentinel
+
+The following example shows how to get all security alerts that originated from Microsoft Sentinel.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "security_list_alerts_sentinel"
+}
+-->
+```http
+GET https://graph.microsoft.com/v1.0/security/alerts_v2?$filter=serviceSource eq 'microsoftSentinel'
+```
+
+#### Response
+
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.security.alert)"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.security.alert",
+      "id": "da637878227677560813_-334257894",
+      "providerAlertId": "da637878227677560813_-334257894",
+      "incidentId": "33",
+      "status": "new",
+      "severity": "high",
+      "classification": "unknown",
+      "determination": "unknown",
+      "serviceSource": "microsoftSentinel",
+      "detectionSource": "scheduledAlerts",
+      "detectorId": "a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6",
+      "tenantId": "b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c",
+      "title": "Suspicious sign-in activity detected",
+      "description": "Multiple failed sign-in attempts followed by a successful sign-in detected from an unusual location.",
+      "recommendedActions": "Review the user's recent activity and verify the legitimacy of the sign-in.",
+      "category": "CredentialAccess",
+      "assignedTo": null,
+      "alertWebUrl": "https://security.microsoft.com/alerts/da637878227677560813_-334257894?tid=b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c",
+      "incidentWebUrl": "https://security.microsoft.com/incidents/33?tid=b3c1b5fc-828c-45fa-a1e1-10d74f6d6e9c",
+      "actorDisplayName": null,
+      "threatDisplayName": null,
+      "threatFamilyName": null,
+      "mitreTechniques": [
+        "T1110"
+      ],
+      "createdDateTime": "2026-05-05T08:30:00.0000000Z",
+      "lastUpdateDateTime": "2026-05-05T09:15:00.0000000Z",
+      "resolvedDateTime": null,
+      "firstActivityDateTime": "2026-05-05T07:00:00.000Z",
+      "lastActivityDateTime": "2026-05-05T08:25:00.000Z",
+      "comments": [],
+      "evidence": [],
+      "systemTags": []
     }
   ]
 }

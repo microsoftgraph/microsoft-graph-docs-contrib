@@ -19,7 +19,7 @@ Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) that
 App roles that are assigned to service principals are also known as [application permissions](/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Application permissions can be granted directly by creating app role assignments, or through a [consent experience](/azure/active-directory/develop/application-consent-experience).
 
 
->**Note** This request might have replication delays for app role assignments that were recently granted or removed.
+>**Note** This request might have replication delays for app role assignments that were recently granted or removed. Learn more in [Designing for eventual consistency for Microsoft Entra](https://devblogs.microsoft.com/identity/designing-for-eventual-consistency-for-microsoft-entra/).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

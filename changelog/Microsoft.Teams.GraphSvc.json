@@ -151,6 +151,80 @@
     {
       "ChangeList": [
         {
+          "Id": "a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+          "ApiChange": "Method",
+          "ChangedApiName": "startMigration",
+          "ChangeType": "Addition",
+          "Description": "Added the [startMigration](https://learn.microsoft.com/en-us/graph/api/chat-startmigration?view=graph-rest-1.0) method to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+          "ApiChange": "Method",
+          "ChangedApiName": "completeMigration",
+          "ChangeType": "Addition",
+          "Description": "Added the [completeMigration](https://learn.microsoft.com/en-us/graph/api/chat-completemigration?view=graph-rest-1.0) method to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+          "ApiChange": "Method",
+          "ChangedApiName": "startMigration",
+          "ChangeType": "Addition",
+          "Description": "Added the [startMigration](https://learn.microsoft.com/en-us/graph/api/channel-startmigration?view=graph-rest-1.0) method to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+          "ApiChange": "Property",
+          "ChangedApiName": "migrationMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **migrationMode** property to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+          "ApiChange": "Property",
+          "ChangedApiName": "originalCreatedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **originalCreatedDateTime** property to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+          "ApiChange": "Property",
+          "ChangedApiName": "migrationMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **migrationMode** property to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+          "ApiChange": "Property",
+          "ChangedApiName": "originalCreatedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **originalCreatedDateTime** property to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
+          "Target": "channel"
+        },
+        {
+          "Id": "a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "migrationMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **migrationMode** enumeration type.",
+          "Target": "migrationMode"
+        }
+      ],
+      "Id": "a1b2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-05-16T00:00:00.0000000Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "4e6379bf-f90c-46c4-a4f8-f5336fcd31f6",
           "ApiChange": "Relationship",
           "ChangedApiName": "targetedMessages",

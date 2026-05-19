@@ -13,10 +13,14 @@ use Microsoft\Graph\Generated\Models\X509CertificateAuthenticationModeConfigurat
 use Microsoft\Graph\Generated\Models\X509CertificateAuthenticationMode;
 use Microsoft\Graph\Generated\Models\X509CertificateRule;
 use Microsoft\Graph\Generated\Models\X509CertificateRuleType;
+use Microsoft\Graph\Generated\Models\X509CertificateAuthorityScope;
+use Microsoft\Graph\Generated\Models\IncludeTarget;
+use Microsoft\Graph\Generated\Models\AuthenticationMethodTargetType;
+use Microsoft\Graph\Generated\Models\X509CertificateIssuerHintsConfiguration;
+use Microsoft\Graph\Generated\Models\X509CertificateIssuerHintsState;
 use Microsoft\Graph\Generated\Models\X509CertificateCRLValidationConfiguration;
 use Microsoft\Graph\Generated\Models\X509CertificateCRLValidationConfigurationState;
 use Microsoft\Graph\Generated\Models\AuthenticationMethodTarget;
-use Microsoft\Graph\Generated\Models\AuthenticationMethodTargetType;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -47,6 +51,21 @@ $rulesArray []= $rulesX509CertificateRule2;
 $authenticationModeConfiguration->setRules($rulesArray);
 
 $requestBody->setAuthenticationModeConfiguration($authenticationModeConfiguration);
+$certificateAuthorityScopesX509CertificateAuthorityScope1 = new X509CertificateAuthorityScope();
+$certificateAuthorityScopesX509CertificateAuthorityScope1->setSubjectKeyIdentifier('aaaaaaaabbbbcccc111122222222222222333333');
+$certificateAuthorityScopesX509CertificateAuthorityScope1->setPublicKeyInfrastructureIdentifier('Contoso PKI');
+$includeTargetsIncludeTarget1 = new IncludeTarget();
+$includeTargetsIncludeTarget1->setId('aaaaaaaa-bbbb-cccc-1111-222222222222');
+$includeTargetsIncludeTarget1->setTargetType(new AuthenticationMethodTargetType('group'));
+$includeTargetsArray []= $includeTargetsIncludeTarget1;
+$certificateAuthorityScopesX509CertificateAuthorityScope1->setIncludeTargets($includeTargetsArray);
+
+$certificateAuthorityScopesArray []= $certificateAuthorityScopesX509CertificateAuthorityScope1;
+$requestBody->setCertificateAuthorityScopes($certificateAuthorityScopesArray);
+
+$issuerHintsConfiguration = new X509CertificateIssuerHintsConfiguration();
+$issuerHintsConfiguration->setState(new X509CertificateIssuerHintsState('enabled'));
+$requestBody->setIssuerHintsConfiguration($issuerHintsConfiguration);
 $crlValidationConfiguration = new X509CertificateCRLValidationConfiguration();
 $crlValidationConfiguration->setState(new X509CertificateCRLValidationConfigurationState('disabled'));
 $crlValidationConfiguration->setExemptedCertificateAuthoritiesSubjectKeyIdentifiers([]);

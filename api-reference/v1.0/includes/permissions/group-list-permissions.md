@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|GroupMember.Read.All|Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All, Group.Read.All|
+|Delegated (work or school account)|Group-NestingSupport.ReadWrite.All|Directory.Read.All, Directory.ReadWrite.All, Group.ManageProtection.All, Group.Read.All, Group.ReadWrite.All, GroupMember.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|GroupMember.Read.All|Directory.Read.All, Directory.ReadWrite.All, Group.Read.All, Group.ReadWrite.All|
+|Application|Group-NestingSupport.ReadWrite.All|Directory.Read.All, Directory.ReadWrite.All, Group.ManageProtection.All, Group.Read.All, Group.ReadWrite.All, GroupMember.Read.All|
 
