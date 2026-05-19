@@ -324,8 +324,8 @@ When API changes involve adding new properties or relationships to an existing r
 
 5. **Optional query parameters section (for GET/LIST files):**
    - Update the boilerplate text to specify whether all, some (which ones), or no OData query parameters are supported
-   - Format OData query parameters in Markdown code font: `$filter`, `$select`, `$expand`, `$top`, `$orderby`, `$search`
-   - Document supported operators for `$filter` using format: `$filter` (`eq`, `ne`)
+   - Format OData query parameters in Markdown code font: `$filter` (`eq`, `ne`), `$select`, `$expand`, `$top`, `$orderby`, `$search`
+   - `$filter` must include supported operators, which is a summary of callouts within all property descriptions on the resource page.
 
 6. **Request headers section:**
    - Keep unchanged

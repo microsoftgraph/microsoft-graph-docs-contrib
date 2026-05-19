@@ -1,11 +1,11 @@
 ---
 title: "Create remoteDesktopSecurityConfiguration"
 description: "Create a new remoteDesktopSecurityConfiguration object on the servicePrincipal."
-author: "SanDeo-MSFT"
+author: "mjsantani"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
-ms.date: 04/04/2024
+ms.date: 01/02/2026
 ---
 
 # Create remoteDesktopSecurityConfiguration
@@ -44,7 +44,7 @@ You can specify the following properties when creating a **remoteDesktopSecurity
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isRemoteDesktopProtocolEnabled|Boolean|Whether new Microsoft Entra ID [Remote Desktop Services (RDS) authentication protocol](/openspecs/windows_protocols/ms-rdpbcgr/dc43f040-d75d-49a9-90c6-0c9999281136) to authenticate a user to [Microsoft Entra joined](/azure/active-directory/devices/concept-directory-join) or [Microsoft Entra hybrid joined](/azure/active-directory/devices/concept-hybrid-join) devices.over RDP is enabled or not. Required.|
+|isRemoteDesktopProtocolEnabled|Boolean|Whether new Microsoft Entra ID [Remote Desktop Services (RDS) authentication protocol](/openspecs/windows_protocols/ms-rdpbcgr/dc43f040-d75d-49a9-90c6-0c9999281136) to authenticate a user to [Microsoft Entra joined](/azure/active-directory/devices/concept-directory-join) or [Microsoft Entra hybrid joined](/azure/active-directory/devices/concept-hybrid-join) devices over RDP is enabled or not. Required.|
 
 
 

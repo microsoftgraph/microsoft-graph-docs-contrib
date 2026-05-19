@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), an access package resource role is a reference to a role defined in a resource. These are automatically present after [a resource is added to an access package catalog](../api/entitlementmanagement-post-accesspackageresourcerequests.md). That reference can be used after creating an access package to specify the roles of each of the catalog's resources into which an access package should deliver, by [creating an access package resource role scope](../api/accesspackage-post-accesspackageresourcerolescopes.md).
+In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), an access package resource role is a reference to a role defined in a resource. Access package resource roles are automatically present after [a resource is added to an access package catalog](../api/entitlementmanagement-post-accesspackageresourcerequests.md). That reference can be used after creating an access package to specify the roles of each of the catalog's resources into which an access package should deliver, by [creating an access package resource role scope](../api/accesspackage-post-accesspackageresourcerolescopes.md).
 
 ## Methods
 
@@ -30,7 +30,8 @@ In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), 
 |displayName|String|The display name of the resource role such as the role defined by the application.|
 |id|String| Read-only.|
 |originId|String|The unique identifier of the resource role in the origin system. For a SharePoint Online site, the originId is the sequence number of the role in the site. |
-|originSystem|String|The type of the resource in the origin system, such as `SharePointOnline`, `AadApplication` or `AadGroup`.|
+|originSystem|String|The type of the resource in the origin system, such as `SharePointOnline`, `AadApplication`, `AzureResources` or `AadGroup`.|
+|type|roleType|The role type for the Azure resource role. The possible values are: `active`, `eligible`, `application`, `delegated`, `unknownFutureValue`. The values `active` and `eligible` are only supported where **originSystem** is `AzureResources` while `application` and `delegated` aren't currently implemented.|
 
 ## Relationships
 
@@ -57,7 +58,8 @@ The following JSON representation shows the resource type.
   "displayName": "String",
   "id": "String (identifier)",
   "originId": "String",
-  "originSystem": "String"
+  "originSystem": "String",
+  "type": "String"
 }
 ```
 

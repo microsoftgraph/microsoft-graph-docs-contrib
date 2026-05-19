@@ -21,6 +21,58 @@
     {
       "ChangeList": [
         {
+          "Id": "167f9cc0-048f-4a0b-be5a-5a17fe7d89ba",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityGovernanceUserSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityGovernanceUserSettings](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernanceusersettings?view=graph-rest-beta) resource.",
+          "Target": "identityGovernanceUserSettings"
+        },
+        {
+          "Id": "167f9cc0-048f-4a0b-be5a-5a17fe7d89ba",
+          "ApiChange": "Resource",
+          "ChangedApiName": "approverDelegate",
+          "ChangeType": "Addition",
+          "Description": "Added the [approverDelegate](https://learn.microsoft.com/en-us/graph/api/resources/approverdelegate?view=graph-rest-beta) resource.",
+          "Target": "approverDelegate"
+        }
+      ],
+      "Id": "167f9cc0-048f-4a0b-be5a-5a17fe7d89ba",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-05-13T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1f219972-a2f2-4a20-a77a-95f7c3456a11",
+          "ApiChange": "Property",
+          "ChangedApiName": "identityGovernance",
+          "ChangeType": "Addition",
+          "Description": "Added the **identityGovernance** property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "33537a5f-f7d5-4f51-b0ef-0c0fe4b92709",
+          "ApiChange": "Member",
+          "ChangedApiName": "allDirectoryAgentIdentities",
+          "ChangeType": "Addition",
+          "Description": "Add the `allDirectoryAgentIdentities` member to the **allowedTargetScope** enumeration.",
+          "Target": "allowedTargetScope"
+        }
+      ],
+      "Id": "1f219972-a2f2-4a20-a77a-95f7c3456a11",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-05-13T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "33537a5f-f7d5-4f51-b0ef-0c0fe4b92709",
           "ApiChange": "Member",
           "ChangedApiName": "allDirectoryAgentIdentities",
@@ -1383,6 +1435,32 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-03-17T02:51:10.3743047Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+     {
+      "ChangeList": [
+        {
+          "Id": "db219d29-ed6a-41ad-9bd5-fc34428c931d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "roleType",
+          "ChangeType": "Addition",
+          "Description": "Added the **roleType** enumeration type.",
+          "Target": "roleType"
+        },
+        {
+          "Id": "db219d29-ed6a-41ad-9bd5-fc34428c931d",
+          "ApiChange": "Property",
+          "ChangedApiName": "type",
+          "ChangeType": "Addition",
+          "Description": "Added the **type** property to the [accessPackageResourceRole](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageResourceRole?view=graph-rest-beta) resource.",
+          "Target": "accessPackageResourceRole"
+        }
+      ],
+      "Id": "db219d29-ed6a-41ad-9bd5-fc34428c931d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-05-01T15:07:31.3830842Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     },

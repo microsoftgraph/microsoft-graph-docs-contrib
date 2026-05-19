@@ -56,6 +56,7 @@ The application authentication methods policy API offers the following restricti
 | symmetricKeyAddition        | Restrict symmetric keys on applications.                                | Block new symmetric keys on applications created on or after 01/01/2019.                                                                      |
 | symmetricKeyLifetime        | Enforce a max lifetime range for a symmetric key.                       | Restrict all new symmetric keys to a maximum of 30 days for applications created after 01/01/2019.                                            |
 | trustedCertificateAuthority | Enforce the list of trusted certificate authorities.                    | Block all new asymmetric key credentials if the issuer is not listed in the trusted certificate authority list.                               |
+| uriAdditionWithoutUniqueTenantIdentifier | Block new identifier URIs for apps unless they are one of the [secure formats](https://aka.ms/identifier-uri-policy). | Block new identifier URIs for apps unless they contain a unique tenant identifier like the tenant ID, appId (client ID), or verified domain. |
 
 > [!Note]
 > All lifetime restrictions are expressed in ISO-8601 duration format (For example: P4DT12H30M5S).

@@ -219,6 +219,21 @@ After updating the changelog, update the What's new section in `concepts/whats-n
   - For **v1.0** documentation: Do NOT append any query string parameters
 - Example format: `Added the [resourceName](/graph/api/resources/resourcename) resource to manage XYZ.`
 
+**Authoring principles for What's New entries:**
+
+- **Lead with the doc action verb.** Start with "Added", "Updated", or "Changed" to signal what was documented. For new resources, use `Added the [resource](/path) resource type and related methods for...`. For new properties or relationships on an existing resource, use `Added the **propertyName** relationship to the [resource](/path) resource.` For new enum members, use `Added the \`memberName\` member to the [enumName](/path) enumeration...` and describe the capability it enables.
+- **Describe the capability, not the objects.** Say what users can now *do*. Do not enumerate properties, methods, complex types, or enumerations — those are discoverable from the linked pages.
+- **Do not say "new"** — the section context implies it. Do not qualify with the API version — the section structure (v1.0 vs. beta) already communicates this.
+- **Link only to the root entry point** — the entity type, function, or property that triggers the capability. If the change introduces an entity type, everything else (properties, methods, complex types) depends on it and doesn't need separate mention. If the change is a function or property addition, link to that and its parent resource.
+- **Keep entries to 1–4 sentences.**
+
+| Scenario | ❌ Avoid | ✅ Correct |
+|----------|----------|-----------|
+| New entity type with operations | List the resource, each method, and every complex type separately. | `Added the [driveItem](/graph/api/resources/driveitem) resource type and related methods for managing drive items. Use it to list, get, create, update, and delete files and folders.` |
+| New function + property addition | List the function, the property, and all supporting complex types. | `Added support for programmatic FIDO2 passkey registration. Use the [creationOptions](/graph/api/fido2authenticationmethod-creationoptions) function to get WebAuthn credential creation options, then complete registration by posting the **publicKeyCredential** property to the [fido2AuthenticationMethod](/graph/api/resources/fido2authenticationmethod) resource.` |
+| New property or relationship on existing resource | Name all new properties individually. | `Added the **inheritedAppRoleAssignments** and **inheritedOauth2PermissionGrants** relationships to the [agentIdentity](/graph/api/resources/agentidentity) resource. Use these to retrieve the permissions an agent identity inherits from its parent blueprint service principal.` |
+| New enum member | List only the enum type without explaining the capability, where possible. | `Added \`targetAgentIdentitySponsorOrOwner\` to the filter options for [access package assignments](/graph/api/accesspackageassignment-filterbycurrentuser), enabling sponsors and owners of agent identities to view access package activity for the agent identities they manage.` |
+
 ### Updating the Table of Contents (TOC)
 
 After updating What's new, update the appropriate TOC mapping file to make new documentation discoverable:

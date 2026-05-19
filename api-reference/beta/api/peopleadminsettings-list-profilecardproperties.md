@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: "rwaithera"
 ms.subservice: "people"
 doc_type: "apiPageType"
-ms.date: 09/19/2024
+ms.date: 02/25/2026
 ---
 
 # List profileCardProperties
@@ -119,6 +119,7 @@ Content-type: application/json
   "value": [
     {
       "directoryPropertyName": "CustomAttribute1",
+      "isVisible": true,
       "annotations": [
         {
           "displayName": "Cost Center",

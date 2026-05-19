@@ -53,7 +53,7 @@ The following table shows the properties that are required when you create a pro
 If successful, this method returns a `201, Created` response code and [program](../resources/program.md) object in the response body.
 
 ## Example
-##### Request
+### Request
 In the request body, supply a JSON representation of the [program](../resources/program.md) object.
 
 
@@ -102,7 +102,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

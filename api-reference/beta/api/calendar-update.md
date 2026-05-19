@@ -61,11 +61,14 @@ In the request body, supply the values for relevant fields that should be update
 |isDefaultCalendar|Boolean|True if this calendar is the user's default calendar, false otherwise.|
 |name|String|The calendar name.|
 
+> [!IMPORTANT]
+> Calendar container properties in group calendars are read-only and can't be modified. `PATCH` requests that target these properties fail with a `405 Method Not Allowed` response.
+
 ## Response
 
 If successful, this method returns a `200 OK` response code and updated [calendar](../resources/calendar.md) object in the response body.
 ## Example
-##### Request
+### Request
 The following example updates the name of the signed-in user's default calendar.
 
 # [HTTP](#tab/http)
@@ -108,7 +111,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

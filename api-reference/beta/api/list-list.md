@@ -108,6 +108,7 @@ Content-type: application/json
       "name": "Documents",
       "createdDateTime": "2016-08-30T08:32:00Z",
       "lastModifiedDateTime": "2016-08-30T08:32:00Z",
+      "itemCount": 312,
       "list": {
         "hidden": false,
         "template": "documentLibrary"
@@ -118,6 +119,7 @@ Content-type: application/json
       "name": "MicroFeed",
       "createdDateTime": "2016-08-30T08:32:00Z",
       "lastModifiedDateTime": "2016-08-30T08:32:00Z",
+      "itemCount": 45,
       "list": {
         "hidden": false,
         "template": "genericList"

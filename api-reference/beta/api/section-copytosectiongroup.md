@@ -61,7 +61,7 @@ If successful, this method returns a `202 Accepted` response code and an `Operat
 
 ## Example
 Here's an example of how to call this API.
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -110,7 +110,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 The following example shows the response.
 <!-- {
   "blockType": "response"

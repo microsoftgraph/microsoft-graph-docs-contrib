@@ -64,11 +64,11 @@ If successful, this method returns a `200 OK` response code and [governanceRoleA
   "name": "get_governanceroleassignment"
 }-->
 Get a [governanceRoleAssignment](../resources/governanceroleassignment.md) on subscription "Wingtip Toys - Prod"
-##### Request
+### Request
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignments/0ba78f41-ee7a-4227-adb9-1499431b2164?$filter=resourceId+eq+'e5e7d29d-5465-45ac-885f-4716a5ee74b5'
 ```
-##### Response
+### Response
 <!-- {
   "blockType": "response",
   "truncated": false,

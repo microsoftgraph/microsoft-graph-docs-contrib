@@ -69,7 +69,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Example 
 
-##### Request
+### Request
 
 Here's an example request on how to opt out a user from Delve and disable the user's contribution on content relevancy for the whole organization.
 
@@ -82,7 +82,7 @@ Content-type: application/json
 }
 ```
 
-##### Response
+### Response
 
 The following example shows the response. Note: The response object shown here might be shortened for readability.
 

@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [agentregistry-deprecation-note](../includes/agentregistry-deprecation-note.md)]
+
 Create a new [agentInstance](../resources/agentinstance.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -140,7 +142,7 @@ Content-Type: application/json
     "iconUrl": "https://example.com/icon.png",
     "provider": {
       "organization": "Test Organization",
-      "url": "https://test.com"
+      "url": "https://contoso.com"
     },
     "protocolVersion": "1.0",
     "version": "1.0.0",

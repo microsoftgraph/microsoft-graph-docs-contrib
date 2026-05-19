@@ -69,7 +69,10 @@ Alerts are detailed warnings about suspicious activities in a customer's tenant 
 
 The security API offers two types of alerts that aggregate other alerts from security providers and make analyzing attacks and determining responses easier: 
 - [Alerts and incidents](#alerts-and-incidents) - these are the latest generation of alerts in the Microsoft Graph security API. They're represented by the [alert](security-alert.md) resource and its collection, [incident](security-incident.md) resource, defined in the `microsoft.graph.security` namespace.
-- [Legacy alerts](#legacy-alerts) - these are the first generation of alerts in the Microsoft Graph security API. They're represented by the [alert](alert.md) resource defined in the `microsoft.graph` namespace.
+- [Legacy alerts](#legacy-alerts) - these are the first generation of alerts in the Microsoft Graph security AI. They're represented by the [alert](alert.md) resource defined in the `microsoft.graph` namespace.
+
+> [!IMPORTANT]
+> To view Sentinel alerts and incidents you must onboard Sentinel to the Defender Portal. For more information see [Connect Microsoft Sentinel to the Microsoft Defender portal](/unified-secops/microsoft-sentinel-onboard).
 
 ### Alerts and incidents
 
@@ -87,8 +90,7 @@ Alerts from the following security providers are available via these rich alerts
 
 ### Legacy alerts
 
-> [!NOTE]
-> The legacy alerts API is deprecated and will be removed by April 2026. We recommend that you migrate to the new [alerts and incidents](/graph/api/resources/security-alert) API.
+[!INCLUDE [security-alerts-v1-deprecation](../includes/security-alerts-v1-deprecation.md)]
 
 The legacy [alert](alert.md) resources federate calling of supported Azure and Microsoft 365 Defender security providers. They aggregate common alert data among the different domains to allow applications to unify and streamline management of security issues across all integrated solutions. They enable applications to correlate alerts and context to improve threat protection and response.
 

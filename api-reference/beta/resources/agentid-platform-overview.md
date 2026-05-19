@@ -6,7 +6,7 @@ ms.author: ombongifaith
 ms.reviewer: dastrock,yukarppa,etbasser,kvenkit 
 ms.subservice: entra-applications
 ms.topic: overview
-ms.date: 11/18/2025
+ms.date: 05/05/2026
 doc_type: conceptualPageType
 ms.localizationpriority: high
 
@@ -31,16 +31,15 @@ The following core components comprise Microsoft Entra Agent ID's architecture:
 | **Blueprint principal** | Record of blueprint's addition to a tenant | [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) |
 | **Agent identity** | Primary identity for authentication | [agentIdentity](../resources/agentidentity.md) |
 | **Agent user** | Optional account for scenarios that require a user account | [agentUser](../resources/agentUser.md) |
-| **Agent registry** | Centralized repository for agent management that serves as the platform for managing agent card manifests, agent instances, and agent collections. | <ul><li>[agentRegistry](../resources/agentregistry.md)</li><li>[agentCardManifest](../resources/agentcardmanifest.md)</li><li>[agentInstance](../resources/agentinstance.md)</li><li>[agentCollection](../resources/agentcollection.md)</li> |
+| **Agent registry** (deprecated) | Centralized repository for agent management that serves as the platform for managing agent card manifests, agent instances, and agent collections. | <ul><li>[agentRegistry](../resources/agentregistry.md)</li><li>[agentCardManifest](../resources/agentcardmanifest.md)</li><li>[agentInstance](../resources/agentinstance.md)</li><li>[agentCollection](../resources/agentcollection.md)</li> |
 
-Learn more about the agent identity architecture in the following articles:
-- [Agent identity and blueprint concepts in Microsoft Entra ID](/entra/agent-id/identity-platform/key-concepts)
-- [Agent identities, service principals, and applications](/entra/agent-id/identity-platform/agent-service-principals)
-- [What is the Microsoft Entra Agent Registry?](/entra/agent-id/identity-platform/what-is-agent-registry)
+[!INCLUDE [agentregistry-deprecation-note](../includes/agentregistry-deprecation-note.md)]
+
+Learn more about the agent identity architecture in [Microsoft Entra Agent ID key concepts](/entra/agent-id/key-concepts).
 
 ## Related APIs for security and governance for agents
 
-Microsoft Entra Agent ID extends the comprehensive security and governance capabilities of Microsoft Entra to AI agents, including Conditional Access, Identity Protection, and audit logs.
+Microsoft Entra Agent ID extends the comprehensive security and governance capabilities of Microsoft Entra to AI agents, including Conditional Access, Identity Protection, governance, and audit logs.
 
 ### Ownership and accountability
 
@@ -65,9 +64,20 @@ You can programmatically apply Conditional Access policies to enforce access pol
 
 Microsoft Entra ID Protection continuously evaluates agent risk based on various signals and machine learning. You can use the [agentRiskDetection](../resources/agentriskdetection.md) and [riskyAgent](../resources/riskyagent.md) resource types to identify and manage agent risk in your organization, including dismissing or confirming detected risks. Confirmed risks can trigger automated remediation actions such as Conditional Access policy enforcement.
 
-### Audit Logs
+### Governance
 
-Microsoft Entra [signIn logs](../resources/signin.md) capture activities performed by agent identities, providing visibility into agent operations for compliance and security monitoring - from creation of agent identities to configuration changes on agents including assignments of roles and permissions.
+Microsoft Entra ID Governance extends to AI agents, enabling you to manage the access lifecycle of agent identities in the same way as other identities. With governance applied to agent identities, you can ensure agents have a responsible person providing oversight throughout the agent lifecycle, and that agent access doesn't persist longer than needed.
+
+- Use **access packages** via the [entitlement management APIs](../resources/entitlementmanagement.md) to assign agent identities access to security groups, application OAuth permissions (including Microsoft Graph permissions), and Microsoft Entra roles. The agent identity itself, its owner, its sponsor, or an administrator can request access packages on behalf of the agent.
+- Assign **sponsors** to agent identities and agent users to designate accountable human users responsible for making decisions about the agent's lifecycle and access. Sponsors receive notifications when access package assignments approach expiry and can approve renewals or allow access to expire.
+- Use **access reviews** to periodically verify that agent identities still need the access they have.
+- Use **lifecycle workflows** to automate agent identity sponsor lifecycle tasks for effective governance and compliance, such as triggering notifications when agent identity sponsor changes or transferring sponsorship responsibilities from a user to their manager.
+
+For a complete overview of governance capabilities for agent identities, see [Microsoft Entra ID Governance for agent identities](/entra/id-governance/agent-id-governance-overview).
+
+### Activity monitoring
+
+Microsoft Entra [sign-in reports](../resources/signin.md) and [audit logs](../resources/directoryaudit.md) capture activities performed by agent identities, providing visibility into agent operations for compliance and security monitoring - from creation of agent identities to configuration changes on agents including assignments of roles and permissions.
 
 ## Permissions for managing agent identities
 

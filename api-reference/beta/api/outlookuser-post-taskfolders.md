@@ -46,7 +46,7 @@ In the request body, supply a JSON representation of [outlookTaskFolder](../reso
 If successful, this method returns `201 Created` response code and [outlookTaskFolder](../resources/outlooktaskfolder.md) object in the response body.
 
 ## Example
-##### Request
+### Request
 The following example creates a task folder called Volunteer in the default task group (`My Tasks`) of the user's mailbox.
 
 # [HTTP](#tab/http)
@@ -94,7 +94,7 @@ Content-type: application/json
 ---
 
 In the request body, supply a JSON representation of [outlookTaskFolder](../resources/outlooktaskfolder.md) object.
-##### Response
+### Response
 The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

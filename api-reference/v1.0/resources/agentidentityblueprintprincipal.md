@@ -2,7 +2,7 @@
 title: "agentIdentityBlueprintPrincipal resource type"
 description: "Represents an agent identity blueprint principal in a directory. An Agent Identity Blueprint principal is a specialized service principal that serves as the parent blueprint for creating agent identity instances within the Microsoft Entra ID ecosystem."
 author: "zallison22"
-ms.date: 02/26/2026
+ms.date: 04/16/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-agent-id"
 doc_type: resourcePageType
@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents an agent identity blueprint principal in a tenant. An agent identity blueprint principal is instantiated from an [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object and is used to create [agent identities](../resources/agentidentity.md) within a Microsoft Entra ID tenant, and perform various identity management operations that affect all agent identities created.
+Represents an agent identity blueprint principal in a tenant. An agent identity blueprint principal is instantiated from an [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object and is used to create [agent identities](../resources/agentidentity.md) within a Microsoft Entra ID tenant, and perform various identity management operations that affect all agent identities created.
 
 Inherits from [servicePrincipal](../resources/serviceprincipal.md).
 

@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: "jessieli-ad"
 doc_type: apiPageType
 ms.subservice: change-notifications
-ms.date: 07/26/2024
+ms.date: 05/05/2026
 ---
 
 # Delete subscription
@@ -29,6 +29,8 @@ Depending on the resource and the permission type (delegated or application) req
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
+|[aiInsights](/microsoft-365/copilot/extensibility/api/ai-services/meeting-insights/resources/callaiinsight) <br /> `/copilot/users/{userId}/onlineMeetings/getAllAiInsights` <br /> Copilot AI insights from meetings that a particular user is part of. | OnlineMeetingAiInsight.Read.All    | Not supported.  | OnlineMeetingAiInsight.Read.All |
+|[aiInsights](/microsoft-365/copilot/extensibility/api/ai-services/meeting-insights/resources/callaiinsight) <br/> `/copilot/users/{userId}/onlineMeetings/{onlineMeetingId}/aiInsights` <br/> Copilot AI insights for a particular meeting. | OnlineMeetingAiInsight.Read.All    | Not supported.  | OnlineMeetingAiInsight.Read.All |
 |[aiInteraction](/microsoft-365-copilot/extensibility/api/ai-services/interaction-export/resources/aiinteraction)  <br /> `copilot/users/{userId}/interactionHistory/getAllEnterpriseInteractions`  <br /> Copilot AI interactions that a particular user is part of. | AiEnterpriseInteraction.Read  | Not supported.  | AiEnterpriseInteraction.Read.All, AiEnterpriseInteraction.Read.User  |
 |[aiInteraction](/microsoft-365-copilot/extensibility/api/ai-services/interaction-export/resources/aiinteraction)  <br /> `copilot/interactionHistory/getAllEnterpriseInteractions`  <br /> Copilot AI interactions in an organization. | Not supported.  | Not supported.  | AiEnterpriseInteraction.Read.All  |
 |[approvalItems](../resources/approvalItem.md) | Not supported.  | Not supported.  | ApprovalSolution.ReadWrite.All  |
@@ -98,6 +100,9 @@ Depending on the resource and the permission type (delegated or application) req
 > - AiEnterpriseInteraction.Read.User
 
 [!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
+
+<!-- ### aiInsights -->
+[!INCLUDE [copilot-aiinsights-subscription-notes.md](../../includes/copilot-aiinsights-subscription-notes.md)]
 
 <!-- ### aiInteraction -->
 [!INCLUDE [copilot-aiinteraction-subscription-notes.md](../../includes/copilot-aiinteraction-subscription-notes.md)]

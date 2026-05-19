@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "3de9aa4d-804f-47e0-9ea6-fb9ed7a669f8",
+          "ApiChange": "Property",
+          "ChangedApiName": "isVisible",
+          "ChangeType": "Addition",
+          "Description": "Added the **isVisible** property to the [profileCardProperty](https://learn.microsoft.com/en-us/graph/api/resources/profileCardProperty?view=graph-rest-beta) resource.",
+          "Target": "profileCardProperty"
+        }
+      ],
+      "Id": "3de9aa4d-804f-47e0-9ea6-fb9ed7a669f8",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-05-06T09:13:51.9590841Z",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "People"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "e8083562-3402-4ba6-8a2f-58fee02a363b",
           "ApiChange": "Relationship",
           "ChangedApiName": "profilePropertySettings",
@@ -279,6 +297,40 @@
       "CreatedDateTime": "2024-09-16T14:35:08.1357387Z",
       "WorkloadArea": "People and workplace intelligence",
       "SubArea": "People admin settings"	  
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b700e7e9-db00-4dd0-971c-f707508ec7cc",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Deletion",
+          "Description": "Removed the GET operation from the [photoUpdateSettings](https://learn.microsoft.com/en-us/graph/api/resources/photoUpdateSettings?view=graph-rest-beta) resource.",
+          "Target": "photoUpdateSettings"
+        },
+        {
+          "Id": "b700e7e9-db00-4dd0-971c-f707508ec7cc",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Deletion",
+          "Description": "Removed the POST operation from the [photoUpdateSettings](https://learn.microsoft.com/en-us/graph/api/resources/photoUpdateSettings?view=graph-rest-beta) resource.",
+          "Target": "photoUpdateSettings"
+        },
+        {
+          "Id": "b700e7e9-db00-4dd0-971c-f707508ec7cc",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
+          "ChangeType": "Addition",
+          "Description": "Removed the DELETE operation from the [photoUpdateSettings](https://learn.microsoft.com/en-us/graph/api/resources/photoUpdateSettings?view=graph-rest-beta) resource.",
+          "Target": "photoUpdateSettings"
+        }
+      ],
+      "Id": "b700e7e9-db00-4dd0-971c-f707508ec7cc",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-05-14T14:35:08.1357387Z",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "Photo update settings"	  
     },
     {
       "ChangeList": [

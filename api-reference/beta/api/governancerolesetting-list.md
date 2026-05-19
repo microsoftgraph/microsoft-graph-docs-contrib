@@ -59,11 +59,11 @@ This example shows how an administrator lists role settings for the resource Win
   "blockType": "request",
   "name": "get_governancerolesettings"
 }-->
-##### Request
+### Request
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources/e5e7d29d-5465-45ac-885f-4716a5ee74b5/roleSettings
 ```
-##### Response
+### Response
 <!-- {
   "blockType": "response",
   "truncated": true,

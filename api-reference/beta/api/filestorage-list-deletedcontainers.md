@@ -115,7 +115,7 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.fileStorageContainer",
       "id": "b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z",
       "displayName": "My File Storage Container",
-      "createdDateTime": "2021-11-24T15:41:52.347Z",
+      "createdDateTime": "2021-11-24T15:41:52.347Z"
     }
   ]
 }

@@ -21,7 +21,7 @@ const agentInstance = {
     iconUrl: 'https://example.com/icon.png',
     provider: {
       organization: 'Test Organization',
-      url: 'https://test.com'
+      url: 'https://contoso.com'
     },
     protocolVersion: '1.0',
     version: '1.0.0',

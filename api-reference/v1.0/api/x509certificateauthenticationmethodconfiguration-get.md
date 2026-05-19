@@ -5,7 +5,7 @@ author: "vimrang"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 03/10/2025
+ms.date: 12/09/2025
 ---
 
 # Get x509CertificateAuthenticationMethodConfiguration
@@ -50,7 +50,6 @@ If successful, this method returns a `200 OK` response code and a [x509Certifica
 ## Examples
 
 ### Request
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -129,6 +128,18 @@ Content-Type: application/json
         "state": "disabled",
         "exemptedCertificateAuthoritiesSubjectKeyIdentifiers": []
     },
+    "certificateAuthorityScopes": [
+        {
+            "subjectKeyIdentifier": "aaaaaaaabbbbcccc111122222222222222333333",
+            "publicKeyInfrastructureIdentifier": "Contoso PKI",
+            "includeTargets": [
+            {
+                "id": "aaaaaaaa-bbbb-cccc-1111-222222222222",
+                "targetType": "group"
+            }
+            ]
+        } 
+    ],
     "includeTargets": [
         {
             "targetType": "group",
@@ -139,4 +150,3 @@ Content-Type: application/json
     "excludeTargets": []
 }
 ```
-

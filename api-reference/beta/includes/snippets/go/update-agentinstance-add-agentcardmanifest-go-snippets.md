@@ -32,7 +32,7 @@ agentCardManifest.SetIconUrl(&iconUrl)
 provider := graphmodels.NewAgentProvider()
 organization := "Test Organization"
 provider.SetOrganization(&organization) 
-url := "https://test.com"
+url := "https://contoso.com"
 provider.SetUrl(&url) 
 agentCardManifest.SetProvider(provider)
 protocolVersion := "1.0"

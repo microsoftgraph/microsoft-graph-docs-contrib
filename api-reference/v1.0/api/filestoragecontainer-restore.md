@@ -112,7 +112,7 @@ Content-Type: application/json
   "id": "b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z",
   "displayName": "My Application Storage Container",
   "containerTypeId": "91710488-5756-407f-9046-fbe5f0b4de73",
-  "createdDateTime": "2021-11-24T15:41:52.347Z",
+  "createdDateTime": "2021-11-24T15:41:52.347Z"
 }
 ```
 

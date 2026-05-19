@@ -64,7 +64,7 @@ This resource supports:
 |visibility|String|Controls whether the administrative unit and its members are hidden or public. Can be set to `HiddenMembership`. If not set, the default value is `null` and the default behavior is public. When set to `HiddenMembership`, only members of the administrative unit can list other members of the administrative unit.|
 
 > [!TIP]
-> Directory extensions and associated data are returned by default while schema extensions and associated data returned only on `$select`.
+> Directory extensions and associated data are returned by default while schema extensions and associated data require `$select` to retrieve.
 
 ## Relationships
 | Relationship | Type    |Description|

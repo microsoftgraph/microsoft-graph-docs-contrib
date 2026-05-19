@@ -254,5 +254,565 @@
     "apiPath": "/drives/{drive-id}/items/{driveItem-id}/assignSensitivityLabel",
     "operation": "POST",
     "cloud": "UsGov"
+  },
+  {
+    "fileName": "cloudpc-changeuseraccounttype.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpc-createsnapshot.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpc-endgraceperiod.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpc-get.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpc-getcloudpcconnectivityhistory.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpc-getcloudpclaunchinfo.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpc-getfrontlinecloudpcaccessstate.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpc-getprovisionedcloudpcs.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpc-getsupportedcloudpcremoteactions.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpc-poweroff.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpc-poweron.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpc-reboot.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpc-rename.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpc-reprovision.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpc-resize.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpc-restore.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpc-retrievecloudpccountbystatus.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpc-retrievecloudpclaunchdetail.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpc-retrievecloudpcremoteactionresults.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpc-retrievefrontlinecloudpcdetail.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpc-retrievereviewstatus.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpc-retrievesnapshots.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpc-retrypartneragentinstallation.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpc-setreviewstatus.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpc-start.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpc-stop.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpc-troubleshoot.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpc-validatebulkresize.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcauditevent-get.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcauditevent-getauditactivitytypes.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcbulkaction-get.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcbulkaction-retry.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpccloudapp-retrievediscoveredapps.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcdeviceimage-delete.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcdeviceimage-get.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcdeviceimage-getsourceimages.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcdeviceimage-retryupload.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcdeviceimage-reupload.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcexportjob-get.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcexternalpartner-configureagent.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcexternalpartner-deployagent.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcexternalpartner-get.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcexternalpartner-retrieveactionreports.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcexternalpartner-update.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcfrontlineserviceplan-get.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcgalleryimage-get.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpconpremisesconnection-delete.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpconpremisesconnection-get.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpconpremisesconnection-runhealthcheck.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpconpremisesconnection-update.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpconpremisesconnection-updateaddomainpassword.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcorganizationsettings-get.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcorganizationsettings-update.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcprovisioningpolicy-apply.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcprovisioningpolicy-applyconfig.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcprovisioningpolicy-assign.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcprovisioningpolicy-delete.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcprovisioningpolicy-get.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcprovisioningpolicy-retrievepolicyapplyactionresult.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcprovisioningpolicy-retrievepolicyapplyschedule.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcprovisioningpolicy-retry.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcprovisioningpolicy-schedulepolicyapplytask.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcprovisioningpolicy-update.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcreport-retrievecloudpcclientappusagereport.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcreport-retrievecloudpcrecommendationreports.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcreports-getactionstatusreports.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcreports-getcloudpcperformancereport.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcreports-getcloudpcrecommendationreports.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcreports-getconnectionqualityreports.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcreports-getdailyaggregatedremoteconnectionreports.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcreports-getfrontlinereport.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcreports-getinaccessiblecloudpcreports.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcreports-getrawremoteconnectionreports.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcreports-getrealtimeremoteconnectionlatency.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcreports-getrealtimeremoteconnectionstatus.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcreports-getremoteconnectionhistoricalreports.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcreports-gettotalaggregatedremoteconnectionreports.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcreports-post-exportjobs.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcreports-retrievebulkactionstatusreport.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcreports-retrievecloudpcrecommendationreports.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcreports-retrieveconnectionqualityreports.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcsnapshot-getstorageaccounts.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcsnapshot-getsubscriptions.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcsnapshot-importsnapshot.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcsnapshot-purgeimportedsnapshot.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcusersetting-assign.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcusersetting-delete.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcusersetting-get.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcusersetting-update.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcusersettingspersistencedetail-batchcleanupusersettingspersistenceprofile.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcusersettingspersistencedetail-retrieveusersettingspersistenceprofiles.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "cloudpcusersettingspersistencedetail-retrieveusersettingspersistenceprofileusage.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "virtualendpoint-geteffectivepermissions.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "virtualendpoint-list-auditevents.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "virtualendpoint-list-bulkactions.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "virtualendpoint-list-cloudpcs.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "virtualendpoint-list-deviceimages.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "virtualendpoint-list-externalpartners.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "virtualendpoint-list-frontlineserviceplans.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "virtualendpoint-list-galleryimages.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "virtualendpoint-list-onpremisesconnections.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "virtualendpoint-list-provisioningpolicies.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "virtualendpoint-list-serviceplans.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "virtualendpoint-list-supportedregions.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "virtualendpoint-list-usersettings.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "virtualendpoint-post-bulkactions.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "virtualendpoint-post-deviceimages.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "virtualendpoint-post-externalpartners.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "virtualendpoint-post-onpremisesconnections.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "virtualendpoint-post-provisioningpolicies.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "virtualendpoint-post-usersettings.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
+  },
+  {
+    "fileName": "virtualendpoint-retrievescopedpermissions.md",
+    "cloud": "UsGovL5",
+    "description": "Per ransun"
   }
 ]

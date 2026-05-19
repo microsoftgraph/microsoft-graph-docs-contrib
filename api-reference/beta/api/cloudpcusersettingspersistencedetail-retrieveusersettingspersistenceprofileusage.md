@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Retrieve the usage of Cloud PC [user settings persistence](../resources/cloudpcusersettingspersistencedetail.md) in the selected Cloud PC policy assignment.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

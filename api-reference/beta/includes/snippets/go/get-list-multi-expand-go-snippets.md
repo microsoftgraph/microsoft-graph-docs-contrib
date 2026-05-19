@@ -16,7 +16,7 @@ import (
 )
 
 requestParameters := &graphsites.ItemListsItemRequestBuilderGetQueryParameters{
-	Select: [] string {"name","lastModifiedDateTime"},
+	Select: [] string {"name","lastModifiedDateTime","itemCount"},
 	Expand: [] string {"columns(select=name,description)","items(expand=fields(select=Name,Color,Quantity)",")"},
 }
 configuration := &graphsites.ItemListsItemRequestBuilderGetRequestConfiguration{

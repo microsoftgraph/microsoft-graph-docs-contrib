@@ -52,7 +52,7 @@ In the request body, provide a JSON object with the following parameters.
 
 If successful, this method returns a `200 OK` response code and a collection of [scheduleInformation](../resources/scheduleinformation.md) objects for each object in the `schedules` parameter.
 ## Example
-##### Request
+### Request
 The following example gets the availability information for two users for the specified date, time, and time zone.
 
 
@@ -106,7 +106,7 @@ Content-Type: application/json
 
 ---
 
-##### Response
+### Response
 The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
