@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 Send a new [chatMessage](../resources/chatmessage.md) in the specified [chat](../resources/chat.md). This API can't create a new chat; you must use the [list chats](chat-list.md) method to retrieve the ID of an existing chat before you can create a chat message.
 
-> **Note**: We don't recommend that you use this API for data migration. It doesn't have the throughput necessary for a typical migration.
-
-> **Note**: It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.
+> **Notes:**
+> - We don't recommend that you use this API for data migration via the standard create message flow. For data migration scenarios, use the [import messages](/graph/teams-import-messages) flow instead.
+> - It's a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -53,7 +53,9 @@ If successful, this method returns a `201 Created` response code and a new [chat
 
 For a more comprehensive list of examples, see [Create chatMessage in a channel or a chat](chatmessage-post.md).
 
-### Request
+### Example 1: Create a chatMessage
+
+#### Request
 
 The following example shows a request.
 
@@ -105,7 +107,7 @@ Content-type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -156,6 +158,95 @@ Content-type: application/json
     "mentions": [],
     "reactions": [],
     "messageHistory": []
+}
+```
+
+### Example 2: Import a message
+
+The following example shows how to import a message. For more information, see [Import messages into Microsoft Teams chats and channels using Microsoft Graph](/graph/teams-import-messages).
+
+> **Note**: The permission scope `Teamwork.Migrate.All` is required for this scenario. The target chat must be in migration mode.
+
+> [!IMPORTANT]
+> The **createdDateTime** must be unique down to the millisecond within the target chat. If a message with the same **createdDateTime** exists, the request fails with `409 Conflict`. Adjust the **createdDateTime** and retry. For more information, see [Import messages into Microsoft Teams chats and channels using Microsoft Graph](/graph/teams-import-messages).
+
+#### Request
+
+The following example shows how to import a message into a chat on behalf of a user using the **createdDateTime** and **from** properties in the request body.
+
+<!-- {
+  "blockType": "request",
+  "name": "import_chatmessage",
+  "sampleKeys": ["19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2"]
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/chats/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/messages
+
+{
+   "createdDateTime": "2019-02-04T19:58:15.511Z",
+   "from": {
+      "user": {
+         "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+         "displayName": "Robin Kline",
+         "userIdentityType": "aadUser"
+      }
+   },
+   "body": {
+      "contentType": "html",
+      "content": "Hello World"
+   }
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+
+```http
+HTTP/1.1 201 Created
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats('19%3A4b6bed8d24574f6a9e436813cb2617d8%40thread.tacv2')/messages/$entity",
+    "id": "1616991463150",
+    "replyToId": null,
+    "etag": "1616991463150",
+    "messageType": "message",
+    "createdDateTime": "2019-02-04T19:58:15.511Z",
+    "lastModifiedDateTime": null,
+    "deletedDateTime": null,
+    "subject": null,
+    "summary": null,
+    "chatId": "19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2",
+    "importance": "normal",
+    "locale": "en-us",
+    "webUrl": null,
+    "channelIdentity": null,
+    "policyViolation": null,
+    "eventDetail": null,
+    "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+            "displayName": "Robin Kline",
+            "userIdentityType": "aadUser"
+        }
+    },
+    "body": {
+        "contentType": "html",
+        "content": "Hello World"
+    },
+    "attachments": [],
+    "mentions": [],
+    "reactions": []
 }
 ```
 
