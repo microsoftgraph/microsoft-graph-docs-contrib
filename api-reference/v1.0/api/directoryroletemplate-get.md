@@ -93,7 +93,9 @@ GET https://graph.microsoft.com/v1.0/directoryRoleTemplates/62e90394-69f5-4237-9
 ---
 
 ### Response
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
