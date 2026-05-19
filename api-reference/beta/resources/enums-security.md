@@ -166,6 +166,14 @@ Namespace: microsoft.graph.security
 |unknown|
 |unknownFutureValue|
 
+### entityDefinitionInputRole values
+
+|Member|
+|:---|
+|impacted|
+|related|
+|unknownFutureValue|
+
 ### entityType values 
 
 |Member|
@@ -186,6 +194,29 @@ Namespace: microsoft.graph.security
 |ewsSettings|
 |mailDelegation|
 |userInboxRule|
+|unknownFutureValue|
+
+### manualAlertEntityType values
+
+|Member|
+|:---|
+|user|
+|device|
+|file|
+|ip|
+|url|
+|cloudApplication|
+|mailbox|
+|securityGroup|
+|azureResource|
+|amazonResource|
+|googleCloudResource|
+|oAuthApplication|
+|emailMessage|
+|emailCluster|
+|process|
+|registryKey|
+|registryValue|
 |unknownFutureValue|
 
 ### logDataProvider values 
