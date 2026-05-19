@@ -1,7 +1,7 @@
 ---
 title: "entityDefinitionInput resource type"
 description: "Represents an entity definition input for manual alert creation in Microsoft 365 Defender."
-author: "BenAlfasi"
+author: "a-merberg"
 ms.date: 05/18/2026
 ms.localizationpriority: medium
 ms.subservice: "security"
