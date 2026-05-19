@@ -133,7 +133,9 @@ GET https://graph.microsoft.com/beta/me/insights/trending
 ---
 
 #### Response
-The following example shows the response. Note: The response object shown here might be shortened for readability. See an example un-truncated response at the bottom of the page.
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability. See an example un-truncated response at the bottom of the page.
 <!-- {
   "blockType": "response",
   "truncated": true,
