@@ -65,6 +65,11 @@ Supports additional theme colors in the [scheduleEntityTheme](/graph/api/resourc
 
 ## May 2026: New in preview only
 
+### Device and app management | Cloud PC
+
+- Added the [cloudPcPool](/graph/api/resources/cloudpcpool?view=graph-rest-beta&preserve-view=true) resource and its derived type [cloudPcAgentPool](/graph/api/resources/cloudpcagentpool?view=graph-rest-beta&preserve-view=true) to enable management of Cloud PC pools for agentic workloads.
+- Added the [cloudPcPoolAssignment](/graph/api/resources/cloudpcpoolassignment?view=graph-rest-beta&preserve-view=true) resource and its derived type [cloudPcAgentPoolUserAssignment](/graph/api/resources/cloudpcagentpooluserassignment?view=graph-rest-beta&preserve-view=true) to manage pool assignments.
+
 ### Files
 
 Use the [Upsert permissions](/graph/api/filestoragecontainer-patch-permissions?view=graph-rest-beta&preserve-view=true) API to create or update up to 10 [permission](/graph/api/resources/permission?view=graph-rest-beta&preserve-view=true) objects on a [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true) in a single request.
@@ -191,8 +196,6 @@ Added the **deprecationDate** property to the [applicationTemplate](/graph/api/r
 - The `/me/cloudPCs/{cloudPCId}/getCloudPcLaunchInfo` and `/users/{userId}/cloudPCs/{cloudPCId}/getCloudPcLaunchInfo` endpoints are deprecated and will stop returning data on October 30, 2026. Going forward, use the [retrieveCloudPcLaunchDetail](/graph/api/cloudpc-retrievecloudpclaunchdetail?view=graph-rest-beta&preserve-view=true) API.
 - Added the [cloudPcOnPremisesConnectionSubnetIpDetail](/graph/api/resources/cloudpconpremisesconnectionsubnetipdetail?view=graph-rest-beta&preserve-view=true) resource type to represent the subnet IP details of a Cloud PC on-premises connection.
 - Use the **subnetPrivateIpDetail** property on [cloudPcOnPremisesConnection](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true) to get detailed information about the subnet's private IP addresses associated with the subnet.
-- Added the [cloudPcPool](/graph/api/resources/cloudpcpool?view=graph-rest-beta&preserve-view=true) resource and its derived type [cloudPcAgentPool](/graph/api/resources/cloudpcagentpool?view=graph-rest-beta&preserve-view=true) to enable management of Cloud PC pools for agentic workloads.
-- Added the [cloudPcPoolAssignment](/graph/api/resources/cloudpcpoolassignment?view=graph-rest-beta&preserve-view=true) resource and its derived type [cloudPcAgentPoolUserAssignment](/graph/api/resources/cloudpcagentpooluserassignment?view=graph-rest-beta&preserve-view=true) to manage pool assignments.
 
 ### Files
 
