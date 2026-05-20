@@ -92,7 +92,6 @@ DELETE https://graph.microsoft.com/v1.0/security/labels/filePlanReferences/6cf65
 
 The following example shows the response.
 
->
 <!-- {
   "blockType": "response",
   "truncated": true
