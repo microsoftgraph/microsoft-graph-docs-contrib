@@ -94,7 +94,6 @@ DELETE https://graph.microsoft.com/v1.0/security/labels/retentionLabels/9563a605
 
 The following example shows the response.
 
->
 <!-- {
   "blockType": "response",
   "truncated": true
