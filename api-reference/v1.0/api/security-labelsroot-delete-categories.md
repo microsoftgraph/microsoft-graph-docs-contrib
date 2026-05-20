@@ -45,7 +45,8 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-Here's an example of a request.
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -88,8 +89,9 @@ DELETE https://graph.microsoft.com/v1.0/security/labels/categories/6cf65e55-6baf
 ---
 
 ### Response
-Here's an example of the response.
->
+
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true
