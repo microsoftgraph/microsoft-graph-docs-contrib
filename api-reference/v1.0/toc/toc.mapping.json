@@ -13,7 +13,8 @@
       "overview": "../../resources/groups-overview.md",
       "resources": [
         "group",
-        "groupLifecyclePolicy"
+        "groupLifecyclePolicy",
+        "ownerlessGroupPolicy"
       ]
     },
     {
@@ -1212,6 +1213,7 @@
                 "smsAuthenticationMethodConfiguration",
                 "temporaryAccessPassAuthenticationMethodConfiguration",
                 "softwareOathAuthenticationMethodConfiguration",
+                "verifiableCredentialsAuthenticationMethodConfiguration",
                 "voiceAuthenticationMethodConfiguration",
                 "x509CertificateAuthenticationMethodConfiguration"
               ]
@@ -1244,16 +1246,6 @@
                     "ipNamedLocation"
                   ]
                 }
-              ]
-            },
-            {
-              "name": "Cross-tenant access",
-              "overview": "../../resources/crosstenantaccesspolicy-overview.md",
-              "resources": [
-                "crossTenantAccessPolicy",
-                "crossTenantAccessPolicyConfigurationDefault",
-                "crossTenantAccessPolicyConfigurationPartner",
-                "crossTenantIdentitySyncPolicyPartner"
               ]
             },
             {
@@ -1310,20 +1302,6 @@
               "name": "Identity provider (deprecated)",
               "resources": [
                 "identityProvider"
-              ]
-            },
-            {
-              "name": "Multitenant organization",
-              "overview": "../../resources/multitenantorganization-overview.md",
-              "keywords": [
-                "MTO"
-              ],
-              "resources": [
-                "multiTenantOrganization",
-                "multiTenantOrganizationMember",
-                "multiTenantOrganizationJoinRequestRecord",
-                "multiTenantOrganizationPartnerConfigurationTemplate",
-                "multiTenantOrganizationIdentitySyncPolicyTemplate"
               ]
             },
             {
@@ -1706,7 +1684,18 @@
           ],
           "complexTypes": [
             "microsoft.graph.security.aiAgentEvidence",
+            "microsoft.graph.security.dnsEvidence",
+            "microsoft.graph.security.fileHashEvidence",
+            "microsoft.graph.security.gitHubOrganizationEvidence",
+            "microsoft.graph.security.gitHubRepoEvidence",
+            "microsoft.graph.security.gitHubUserEvidence",
+            "microsoft.graph.security.hostLogonSessionEvidence",
+            "microsoft.graph.security.malwareEvidence",
+            "microsoft.graph.security.networkConnectionEvidence",
+            "microsoft.graph.security.sasTokenEvidence",
             "microsoft.graph.security.securityGroupEvidence",
+            "microsoft.graph.security.servicePrincipalEvidence",
+            "microsoft.graph.security.submissionMailEvidence",
             "microsoft.graph.security.teamsMessageEvidence",
             "microsoft.graph.security.userAccount"
           ]
@@ -2317,7 +2306,7 @@
     },
     {
       "name": "Tenants",
-      "shouldSort": true,
+      "shouldSort": false,
       "overview": "../../resources/tenants-overview.md",
       "keywords": [
         "tenant management",
@@ -2339,6 +2328,34 @@
             "configurationBaseline",
             "configurationDrift",
             "configurationSnapshotJob"
+          ]
+        },
+        {
+          "name": "Cross-tenant access",
+          "overview": "../../resources/crosstenantaccesspolicy-overview.md",
+          "keywords": [
+            "Cross-tenant access settings",
+            "XTAP"
+          ],
+          "resources": [
+            "crossTenantAccessPolicy",
+            "crossTenantAccessPolicyConfigurationDefault",
+            "crossTenantAccessPolicyConfigurationPartner",
+            "crossTenantIdentitySyncPolicyPartner"
+          ]
+        },
+        {
+          "name": "Multitenant organization",
+          "overview": "../../resources/multitenantorganization-overview.md",
+          "keywords": [
+            "MTO"
+          ],
+          "resources": [
+            "multiTenantOrganization",
+            "multiTenantOrganizationMember",
+            "multiTenantOrganizationJoinRequestRecord",
+            "multiTenantOrganizationPartnerConfigurationTemplate",
+            "multiTenantOrganizationIdentitySyncPolicyTemplate"
           ]
         }
       ]

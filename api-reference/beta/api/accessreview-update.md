@@ -60,7 +60,7 @@ If successful, this method returns a `202 Accepted` response code and an [access
 
 This is an example of updating a one-time (not reoccurring) access review.
 
-##### Request
+### Request
 In the request body, supply a JSON representation of the new properties of the [accessReview](../resources/accessreview.md) object.
 
 
@@ -108,7 +108,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

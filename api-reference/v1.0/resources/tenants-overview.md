@@ -7,7 +7,7 @@ ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.subservice: "entra-directory-management"
 ms.topic: overview
-ms.date: 04/17/2026
+ms.date: 05/11/2026
 # Customer intent: As a developer integrating with Microsoft Graph, I want to know which tenant management APIs are available so I can choose the right APIs to programmatically manage my organization's tenant configurations and governance at scale.
 ---
 
@@ -33,6 +33,25 @@ Currently, only the **Microsoft 365 Backup Storage** APIs are generally availabl
 ### [Configuration management](/graph/api/resources/unified-tenant-configuration-management-api-overview)
 
 Define a baseline of your tenant configuration settings and monitor them over time. Detect and resolve configuration drift across workloads such as Conditional Access policies, security defaults, and identity providers.
+
+---
+
+:::image type="icon" source="/graph/images/tenants/cross-tenant-access-icon.svg" alt-text="" border="false":::
+
+### [Cross-tenant access](/graph/api/resources/crosstenantaccesspolicy-overview)
+
+Define and control the external organizations that your users can collaborate with for seamless and secure collaboration. Configure cross-tenant access policies to specify:
+- Which organizations and in what Microsoft Azure clouds can your users collaborate with?
+- Is the collaboration limited to specific users in the organizations?
+- What authentication controls are applied to users from the organizations?
+
+---
+
+:::image type="icon" source="/graph/images/tenants/multitenant-org-icon.svg" alt-text="" border="false":::
+
+### [Multitenant organizations](/graph/api/resources/multitenantorganization-overview)
+
+Define and manage an organization that spans multiple Microsoft Entra tenants. Add or remove member tenants, configure roles, and set up cross-tenant access and synchronization templates so all tenants collaborate as a single entity.
 
 ---
 

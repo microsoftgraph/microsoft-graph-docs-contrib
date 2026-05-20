@@ -18,6 +18,7 @@ Password credential configuration object that contains properties to configure r
 
 | Property                                    | Type                            | Description |
 | :------------------------------------------ | :------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------- |
+| excludeActors                | [appManagementPolicyActorExemptions](appmanagementpolicyactorexemptions.md)                         | Collection of custom security attribute exemptions. If an actor user or service principal has the custom security attribute defined in this section, they're exempted from the restriction.  This means that calls the user or service principal makes to create or update apps are exempt from this policy enforcement.  |
 | maxLifetime                                 | Duration                        | String value that indicates the maximum lifetime for password expiration, defined as an ISO 8601 duration. For example, `P4DT12H30M5S` represents four days, 12 hours, 30 minutes, and five seconds. This property is required when **restrictionType** is set to `passwordLifetime`.|
 | restrictForAppsCreatedAfterDateTime         | DateTimeOffset                  | Specifies the date from which the policy restriction applies to newly created applications. For existing applications, the enforcement date can be retroactively applied.|
 | restrictionType                             | appCredentialRestrictionType    | The type of restriction being applied. The possible values are: `passwordAddition`, `passwordLifetime`, `symmetricKeyAddition`, `symmetricKeyLifetime`, `customPasswordAddition`, and `unknownFutureValue`. Each value of restrictionType can be used only once per policy.|
@@ -40,9 +41,12 @@ The following JSON representation shows the resource type.
 ```json
 {
   "@odata.type": "#microsoft.graph.passwordCredentialConfiguration",
-  "restrictionType": "String",
-  "state": "String",
+  "excludeActors": {
+    "@odata.type": "microsoft.graph.appManagementPolicyActorExemptions"
+  },
+  "maxLifetime": "String (duration)",
   "restrictForAppsCreatedAfterDateTime": "String (DateTime)",
-  "maxLifetime": "String (duration)"
+  "restrictionType": "String",
+  "state": "String"
 }
 ```

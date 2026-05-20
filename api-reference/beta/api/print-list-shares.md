@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 You can get additional properties via a [Get printerShare](printershare-get.md) request.
 
 ## Example
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/print/shares
 
 ---
 
-##### Response
+### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

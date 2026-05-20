@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and collection of [g
 
 ## Example
 
-##### Request
+### Request
 
 # [HTTP](#tab/http)
 
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/groupLifecyclePolicies
 
 ---
 
-##### Response
+### Response
 
 Note: The response object shown here might be shortened for readability.
 

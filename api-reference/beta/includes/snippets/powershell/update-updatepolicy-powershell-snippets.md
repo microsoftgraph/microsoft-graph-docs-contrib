@@ -20,6 +20,6 @@ $params = @{
 	}
 }
 
-Update-MgBetaWindowsUpdatesPolicy -UpdatePolicyId $updatePolicyId -BodyParameter $params
+Update-MgBetaWindowsUpdatesUpdatePolicy -UpdatePolicyId $updatePolicyId -BodyParameter $params
 
 ```

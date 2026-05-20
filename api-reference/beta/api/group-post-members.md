@@ -17,6 +17,14 @@ Namespace: microsoft.graph
 
 Add a member to a security or Microsoft 365 [group](../resources/group.md). When using the API to add multiple members in one request, you can add up to only 20 members. 
 
+> [!NOTE]
+> This request might have replication delays for groups that were recently created. When a group is created, it can take a short time for the object to fully replicate across Microsoft Entra ID directory replicas. During this window, requests to add members to the group might return a `400 Bad Request` error with the message: *"The source resource object or one of the objects being referenced do not exist."*
+>
+> To mitigate this behavior:
+> - **Retry after a brief delay** — wait a few seconds and retry the request. The delay is typically brief.
+>
+> For more information, see [Designing for Eventual Consistency for Microsoft Entra](https://devblogs.microsoft.com/identity/designing-for-eventual-consistency-for-microsoft-entra/).
+
 [!INCLUDE [groups-allowed-member-types](../../../concepts/includes/groups-allowed-member-types.md)]
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -80,7 +88,7 @@ When using the `PATCH /groups/{group-id}` syntax, supply a JSON object that cont
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It returns a `400 Bad Request` response code when the object is already a member of the group or is unsupported as a group member. It returns a `404 Not Found` response code when the object being added doesn't exist. It returns `403 Unauthorized` in one of the following scenarios:
+If successful, this method returns a `204 No Content` response code. It returns a `400 Bad Request` response code when the object is already a member of the group, is unsupported as a group member, or when the group was recently created and hasn't fully replicated (error message: *"The source resource object or one of the objects being referenced do not exist."* — retry after a brief delay). It returns a `404 Not Found` response code when the object being added doesn't exist. It returns `403 Forbidden` in one of the following scenarios:
 - You're attempting to add a member to a [group that can't be managed through Microsoft Graph](../resources/groups-overview.md#types-of-groups-supported-in-microsoft-graph). This API supports only security and Microsoft 365 groups.
 - You're attempting to add a member you don't have permissions to add. Refer to the preceding [Permissions](#permissions) section for the permissions required to add different member types.
 - You're attempting to add a member to a role-assignable group and you don't have the required permissions.

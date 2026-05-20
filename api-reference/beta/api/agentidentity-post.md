@@ -20,7 +20,7 @@ Create a new [agentIdentity](../resources/agentidentity.md) object from the spec
 ## Permissions
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "serviceprincipal_post_serviceprincipals" } -->
+<!-- { "blockType": "permissions", "name": "agentidentity_post" } -->
 [!INCLUDE [permissions-table](../includes/permissions/agentidentity-post-permissions.md)]
 
 [!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]

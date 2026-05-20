@@ -144,7 +144,9 @@ Content-Type: application/json
 ---
 
 #### Response
-The response includes the updated settings for automatic replies. Note: The response object shown here might be shortened for readability.
+The response includes the updated settings for automatic replies.
+
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "update_mailboxsettings_1",
@@ -255,7 +257,9 @@ Content-Type: application/json
 ---
 
 #### Response
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "update_mailboxsettings_2",

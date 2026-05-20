@@ -13,6 +13,15 @@ ms.custom: sfi-ropc-nochange
 
 Namespace: microsoft.graph
 
+### notifyMembers values
+
+|Member|
+|:---|
+|all|
+|allowSelected|
+|blockSelected|
+|unknownFutureValue|
+
 ### readingCoachStoryType values
 
 |Member|
@@ -3972,4 +3981,11 @@ Possible values for user account types (group membership), per Windows definitio
 |read|
 |write|
 |create|
+|unknownFutureValue|
+
+### customSecurityAttributeComparisonOperator values
+
+|Member|
+|:---|
+|equals|
 |unknownFutureValue|
