@@ -4,8 +4,8 @@ ms.topic: include
 ms.localizationpriority: medium
 ---
 
-|Permission type|Least privileged permission|Higher privileged permissions|
+|Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|CloudPC.ReadWrite.All|Not supported.|
+|Delegated (work or school account)|CloudPC.ReadWrite.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|CloudPC.ReadWrite.All|Not supported.|
+|Application|CloudPC.ReadWrite.All|Not available.|
