@@ -47,6 +47,10 @@ Use the mailbox import and export APIs in Microsoft Graph to build solutions tha
 
 ## May 2026: New in preview only
 
+### Device and app management | Cloud PC
+
+- Updated [retrieveCloudPcTroubleshootReports](/graph/api/cloudpcreports-retrievecloudpctroubleshootreports?view=graph-rest-beta&preserve-view=true) to support new report types — tenant-level network, connection failure, health, active connection, mean-time-to-failure, and remote sign-in metrics; configuration-level connection metrics; Cloud PC-level network, error, duration, remote sign-in, and health reports; user and device list reports; and tabular view reports. The previously supported `troubleshootDetailsReport`, `troubleshootTrendCountReport`, `troubleshootRegionalReport`, and `troubleshootIssueCountReport` report names are no longer accepted; use the new values in the [cloudPCTroubleshootReportType](/graph/api/resources/cloudpcreports?view=graph-rest-beta&preserve-view=true#cloudpctroubleshootreporttype-values) enumeration instead.
+
 ### Identity and access | Identity and sign-in
 
 - Added the [onVerifiedIdClaimValidationCustomExtension](/graph/api/resources/onverifiedidclaimvalidationcustomextension?view=graph-rest-beta&preserve-view=true) and [onVerifiedIdClaimValidationListener](/graph/api/resources/onverifiedidclaimvalidationlistener?view=graph-rest-beta&preserve-view=true) resource types and associated methods to support custom logic for claim validation from Verified ID credential presentations during authentication flows through Microsoft Entra custom authentication extensions in External ID.

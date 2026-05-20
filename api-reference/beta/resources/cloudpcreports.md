@@ -24,8 +24,7 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 |:---|:---|:---|
 |[Get action status reports](../api/cloudpcreports-getactionstatusreports.md)|Stream|Get the remote action status reports, including data such as the Cloud PC ID, Cloud PC device display name, initiating user's principal name, device owner's user principal name, action taken, and action state.|
 |[Get bulk action status reports](../api/cloudpcreports-retrievebulkactionstatusreport.md)|Stream|Get the bulk remote action status reports, including data such as the bulk action ID, bulk action display name, initiating user's principal name, action type, and action state.|
-|[Get Cloud PC monitoring reports](../api/cloudpcreports-retrievecloudpcmonitoringreports.md)|Stream|Get monitoring reports for Cloud PCs.|
-|[Get Cloud PC troubleshooting reports](../api/cloudpcreports-retrievecloudpctroubleshootreports.md)|Stream|Get troubleshooting reports for Cloud PCs.|
+|[Get Cloud PC troubleshooting reports](../api/cloudpcreports-retrievecloudpctroubleshootreports.md)|Stream|Get Cloud PC reports, including tenant-level, configuration, user and device, and view data table reports for monitoring and troubleshooting Cloud PCs.|
 |[Get frontline report](../api/cloudpcreports-getfrontlinereport.md)|Stream| Get Frontline Cloud PC license usage reports, such as **servicePlanId**, **licenseCount**, and **claimedLicenseCount**, for real-time, 7 days, or 28 days trend.|
 |[Get inaccessible Cloud PC reports](../api/cloudpcreports-getinaccessiblecloudpcreports.md)|Stream|Get inaccessible Cloud PCs with details, including the latest health state, failed connection count, failed health check count, and system status.|
 |[Get raw remote connection reports](../api/cloudpcreports-getrawremoteconnectionreports.md)|Stream|Get the raw real-time remote connection report for a Cloud PC without any calculation or aggregation.|
@@ -58,16 +57,6 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 | cloudPcInsightReport       | Indicates Cloud PC-level configuration data with insights. The `cloudPcInsightReport` member isn't currently implemented. Don't use.   |
 
 ### cloudPCTroubleshootReportType values
-
-| Member                        | Description       |
-| :---------------------------- | :---------------- |
-| troubleshootDetailsReport     | The daily Cloud PC troubleshooting details, including performance issues, network issues, and reliability issues.|
-| troubleshootTrendCountReport  | The aggregated report that shows the number and trend of issues per tenant.|
-| troubleshootRegionalReport    | The daily regional aggregated report that shows network quality issues by region, including round-trip time issues, connection quality issues, and reliability issues.|
-| unknownFutureValue            | Evolvable enumeration sentinel value. Don't use.|
-| troubleshootIssueCountReport  | The aggregated report over 28 days that shows the number of performance issues, network issues, and reliability issues.|
-
-### cloudPCMonitoringReportType values
 
 | Member                        | Description       |
 | :---------------------------- | :---------------- |
