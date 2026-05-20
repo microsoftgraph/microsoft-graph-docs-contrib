@@ -3,6 +3,56 @@
     {
       "ChangeList": [
         {
+          "Id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+          "ApiChange": "Resource",
+          "ChangedApiName": "manualAlert",
+          "ChangeType": "Addition",
+          "Description": "Added the [manualAlert](https://learn.microsoft.com/en-us/graph/api/resources/security-manualalert?view=graph-rest-beta) resource type that derives from [alert](https://learn.microsoft.com/en-us/graph/api/resources/security-alert?view=graph-rest-beta).",
+          "Target": "manualAlert"
+        },
+        {
+          "Id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+          "ApiChange": "Resource",
+          "ChangedApiName": "entityDefinitionInput",
+          "ChangeType": "Addition",
+          "Description": "Added the [entityDefinitionInput](https://learn.microsoft.com/en-us/graph/api/resources/security-entitydefinitioninput?view=graph-rest-beta) complex type.",
+          "Target": "entityDefinitionInput"
+        },
+        {
+          "Id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "manualAlertEntityType",
+          "ChangeType": "Addition",
+          "Description": "Added the **manualAlertEntityType** enumeration type.",
+          "Target": "manualAlertEntityType"
+        },
+        {
+          "Id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "entityDefinitionInputRole",
+          "ChangeType": "Addition",
+          "Description": "Added the **entityDefinitionInputRole** enumeration type.",
+          "Target": "entityDefinitionInputRole"
+        },
+        {
+          "Id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+          "ApiChange": "Method",
+          "ChangedApiName": "Create manualAlert",
+          "ChangeType": "Addition",
+          "Description": "Added the [Create manualAlert](https://learn.microsoft.com/en-us/graph/api/security-alert-post-manualalert?view=graph-rest-beta) method to the [alert](https://learn.microsoft.com/en-us/graph/api/resources/security-alert?view=graph-rest-beta) resource.",
+          "Target": "alert"
+        }
+      ],
+      "Id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-05-19T00:00:00.0000000Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Alerts and incidents"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "3015f3d8-b93e-46f9-b81b-e476d2398b9c",
           "ApiChange": "Enumeration",
           "ChangedApiName": "environmentKind",

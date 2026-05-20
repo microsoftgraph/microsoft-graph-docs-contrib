@@ -2873,11 +2873,13 @@
             "microsoft.graph.security.alert",
             "microsoft.graph.security.alertEvidence",
             "microsoft.graph.security.incident",
-            "microsoft.graph.security.incidentTask"
+            "microsoft.graph.security.incidentTask",
+            "microsoft.graph.security.manualAlert"
           ],
           "complexTypes": [
             "microsoft.graph.security.aiAgentEvidence",
             "microsoft.graph.security.dnsEvidence",
+            "microsoft.graph.security.entityDefinitionInput",
             "microsoft.graph.security.fileHashEvidence",
             "microsoft.graph.security.gitHubOrganizationEvidence",
             "microsoft.graph.security.gitHubRepoEvidence",
