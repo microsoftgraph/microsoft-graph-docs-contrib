@@ -92,7 +92,6 @@ DELETE https://graph.microsoft.com/v1.0/security/labels/categories/6cf65e55-6baf
 
 The following example shows the response.
 
->
 <!-- {
   "blockType": "response",
   "truncated": true
