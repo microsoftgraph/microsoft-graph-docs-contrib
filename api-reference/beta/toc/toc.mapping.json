@@ -592,6 +592,8 @@
           "overview": "../../resources/cloudpc-api-overview.md",
           "resources": [
             "cloudPC",
+            "cloudPcAgentPool",
+            "cloudPcAgentPoolUserAssignment",
             "cloudPcAuditEvent",
             "cloudPcBulkAction",
             "cloudPcCloudApp",
@@ -604,6 +606,8 @@
             "cloudPcManagedLicense",
             "cloudPcOnPremisesConnection",
             "cloudPcOrganizationSettings",
+            "cloudPcPool",
+            "cloudPcPoolAssignment",
             "cloudPcProvisioningPolicy",
             "cloudPcReport",
             "cloudPcServicePlan",
@@ -619,10 +623,15 @@
             "cloudPcAgentHealthCheckDetail",
             "cloudPcAgentHealthCheckStatusDetail",
             "cloudPcAgentHealthCheckSummary",
+            "cloudPcAgentPoolBillingConfiguration",
+            "cloudPcAgentPoolCapabilityConfiguration",
+            "cloudPcAgentPoolScalingPolicy",
+            "cloudPcAgentPoolSessionUsage",
             "cloudPcAgentStatusDetail",
             "cloudPcAuditActor",
             "cloudPcAuditProperty",
             "cloudPcAuditResource",
+            "cloudPcAutomaticDiscoveredAppDetail",
             "cloudPcBulkDisasterRecovery",
             "cloudPcBulkDisasterRecoveryFailback",
             "cloudPcBulkDisasterRecoveryFailover",
@@ -639,6 +648,7 @@
             "cloudPcBulkCreateSnapshot",
             "cloudPcBulkSetReviewStatus",
             "cloudPcCloudAppDetail",
+            "cloudPcConfiguration",
             "cloudPcConnectionSetting",
             "cloudPcConnectivityEvent",
             "cloudPcConnectivityResult",
@@ -651,6 +661,7 @@
             "cloudpcexternalpartneractionreport",
             "cloudpcexternalpartneractionresult",
             "cloudpcexternalpartneragentsetting",
+            "cloudPcFilePathAppDetail",
             "cloudPcForensicStorageAccount",
             "cloudPcFrontlineSharedDeviceDetail",
             "cloudPcHealthCheckItem",
@@ -659,13 +670,17 @@
             "cloudPcLoginResult",
             "cloudPcManagementAssignmentTarget",
             "cloudPcManagementGroupAssignmentTarget",
+            "cloudPcMicrosoftHostedNetworkConfiguration",
+            "cloudPcNetworkConfiguration",
             "cloudPcNotificationSetting",
             "cloudPcOnPremisesConnectionStatusDetail",
             "cloudPcOnPremisesConnectionStatusDetails",
             "cloudPcOnPremisesConnectionSubnetIpDetail",
             "cloudPcPartnerAgentInstallResult",
+            "cloudPcPoolCapabilityConfiguration",
             "cloudPcProvisioningPolicyAssignment",
             "cloudPcProvisioningPolicyAutopatch",
+            "cloudPcRegionGroupConfiguration",
             "cloudPcRemoteActionCapability",
             "cloudPcResizeValidationResult",
             "cloudPcRestorePointSetting",
@@ -1249,7 +1264,6 @@
             "onPremisesSyncBehavior",
             "organization",
             "orgContact",
-            "tenantInformation",
             "bitlockerRecoveryKey",
             "deviceLocalCredentialInfo",
             "featureRolloutPolicy",
@@ -1262,6 +1276,7 @@
             {
               "name": "Mobility management policy",
               "resources": [
+                "mobilityManagementPolicy",
                 "mobileAppManagementPolicy",
                 "mobileDeviceManagementPolicy"
               ]
@@ -1859,44 +1874,6 @@
               ]
             },
             {
-              "name": "Cross-tenant access",
-              "overview": "../../resources/crosstenantaccesspolicy-overview.md",
-              "keywords": [
-                "Cross-tenant access settings",
-                "XTAP"
-              ],
-              "resources": [
-                "crossTenantAccessPolicy",
-                "crossTenantAccessPolicyConfigurationDefault",
-                "crossTenantAccessPolicyConfigurationPartner",
-                "crossTenantIdentitySyncPolicyPartner",
-                "m365CapabilityBase"
-              ],
-              "childNodes": [
-                {
-                  "name": "Microsoft 365 capabilities",
-                  "resources": [
-                    "crossTenantCalendarAvailabilityBasic",
-                    "crossTenantCalendarAvailabilityLimitedDetails",
-                    "crossTenantCalendarSharingFreeBusyDetail",
-                    "crossTenantCalendarSharingFreeBusyReviewer",
-                    "crossTenantCalendarSharingFreeBusySimple",
-                    "crossTenantMailTipsAll",
-                    "crossTenantMailTipsLimited",
-                    "crossTenantMigration",
-                    "crossTenantOpenProfileCard",
-                    "crossTenantPlacesDeskBooking",
-                    "crossTenantPlacesRoomBooking"
-                  ],
-                  "complexTypes": [
-                    "m365CapabilityInboundAccess",
-                    "m365CapabilityResourceScope",
-                    "m365CapabilityResourceScopes"
-                  ]
-                }
-              ]
-            },
-            {
               "name": "Cross-tenant shared user profiles",
               "resources": [
                 "inboundSharedUserProfile",
@@ -1913,20 +1890,6 @@
                 "onPasswordSubmitCustomExtension",
                 "onVerifiedIdClaimValidationCustomExtension",
                 "onTokenIssuanceStartCustomExtension"
-              ]
-            },
-            {
-              "name": "Cross-tenant migration",
-              "overview": "../../resources/crosstenant-migration-overview.md",
-              "resources":[
-                "crossTenantMigrationJob",
-                "crossTenantMigrationTask",
-                "migrationsRoot"
-              ],
-              "complexTypes":[
-                "crossTenantMigrationServiceStatusDetails",
-                "error",
-                "exchangeOnlineCrossTenantMigrationSettings"
               ]
             },
             {
@@ -1982,20 +1945,6 @@
               "resources": [
                 "identityProvider",
                 "openIdConnectProvider"
-              ]
-            },
-            {
-              "name": "Multitenant organization",
-              "overview": "../../resources/multitenantorganization-overview.md",
-              "keywords": [
-                "MTO"
-              ],
-              "resources": [
-                "multiTenantOrganization",
-                "multiTenantOrganizationMember",
-                "multiTenantOrganizationJoinRequestRecord",
-                "multiTenantOrganizationPartnerConfigurationTemplate",
-                "multiTenantOrganizationIdentitySyncPolicyTemplate"
               ]
             },
             {
@@ -3746,6 +3695,9 @@
         "backup",
         "recovery"
       ],
+      "resources": [
+        "tenantInformation"
+      ],
       "childNodes": [
         {
           "name": "Configuration management",
@@ -3768,6 +3720,72 @@
             "microsoft.graph.tenantGovernanceServices.governanceInvitation",
             "microsoft.graph.tenantGovernanceServices.governanceRequest",
             "microsoft.graph.tenantGovernanceServices.governanceRelationship"
+          ]
+        },
+        {
+          "name": "Cross-tenant access",
+          "overview": "../../resources/crosstenantaccesspolicy-overview.md",
+          "keywords": [
+            "Cross-tenant access settings",
+            "XTAP"
+          ],
+          "resources": [
+            "crossTenantAccessPolicy",
+            "crossTenantAccessPolicyConfigurationDefault",
+            "crossTenantAccessPolicyConfigurationPartner",
+            "crossTenantIdentitySyncPolicyPartner",
+            "m365CapabilityBase"
+          ],
+          "childNodes": [
+            {
+              "name": "Microsoft 365 capabilities",
+              "resources": [
+                "crossTenantCalendarAvailabilityBasic",
+                "crossTenantCalendarAvailabilityLimitedDetails",
+                "crossTenantCalendarSharingFreeBusyDetail",
+                "crossTenantCalendarSharingFreeBusyReviewer",
+                "crossTenantCalendarSharingFreeBusySimple",
+                "crossTenantMailTipsAll",
+                "crossTenantMailTipsLimited",
+                "crossTenantMigration",
+                "crossTenantOpenProfileCard",
+                "crossTenantPlacesDeskBooking",
+                "crossTenantPlacesRoomBooking"
+              ],
+              "complexTypes": [
+                "m365CapabilityInboundAccess",
+                "m365CapabilityResourceScope",
+                "m365CapabilityResourceScopes"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Cross-tenant migration",
+          "overview": "../../resources/crosstenant-migration-overview.md",
+          "resources":[
+            "crossTenantMigrationJob",
+            "crossTenantMigrationTask",
+            "migrationsRoot"
+          ],
+          "complexTypes":[
+            "crossTenantMigrationServiceStatusDetails",
+            "error",
+            "exchangeOnlineCrossTenantMigrationSettings"
+          ]
+        },
+        {
+          "name": "Multitenant organization",
+          "overview": "../../resources/multitenantorganization-overview.md",
+          "keywords": [
+            "MTO"
+          ],
+          "resources": [
+            "multiTenantOrganization",
+            "multiTenantOrganizationMember",
+            "multiTenantOrganizationJoinRequestRecord",
+            "multiTenantOrganizationPartnerConfigurationTemplate",
+            "multiTenantOrganizationIdentitySyncPolicyTemplate"
           ]
         }
       ]
@@ -3896,4 +3914,3 @@
     }
   ]
 }
-

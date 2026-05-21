@@ -101,7 +101,9 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGVmMDEzMTM4LTZmYWUtNDdkNC1
 ---
 
 ### Response
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "message_get_attachments_v1",

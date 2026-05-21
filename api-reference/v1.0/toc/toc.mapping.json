@@ -809,7 +809,6 @@
             "onPremisesDirectorySynchronization",
             "organization",
             "orgContact",
-            "tenantInformation",
             "bitlockerRecoveryKey",
             "deviceLocalCredentialInfo"
           ],
@@ -1213,6 +1212,7 @@
                 "smsAuthenticationMethodConfiguration",
                 "temporaryAccessPassAuthenticationMethodConfiguration",
                 "softwareOathAuthenticationMethodConfiguration",
+                "verifiableCredentialsAuthenticationMethodConfiguration",
                 "voiceAuthenticationMethodConfiguration",
                 "x509CertificateAuthenticationMethodConfiguration"
               ]
@@ -1245,16 +1245,6 @@
                     "ipNamedLocation"
                   ]
                 }
-              ]
-            },
-            {
-              "name": "Cross-tenant access",
-              "overview": "../../resources/crosstenantaccesspolicy-overview.md",
-              "resources": [
-                "crossTenantAccessPolicy",
-                "crossTenantAccessPolicyConfigurationDefault",
-                "crossTenantAccessPolicyConfigurationPartner",
-                "crossTenantIdentitySyncPolicyPartner"
               ]
             },
             {
@@ -1311,20 +1301,6 @@
               "name": "Identity provider (deprecated)",
               "resources": [
                 "identityProvider"
-              ]
-            },
-            {
-              "name": "Multitenant organization",
-              "overview": "../../resources/multitenantorganization-overview.md",
-              "keywords": [
-                "MTO"
-              ],
-              "resources": [
-                "multiTenantOrganization",
-                "multiTenantOrganizationMember",
-                "multiTenantOrganizationJoinRequestRecord",
-                "multiTenantOrganizationPartnerConfigurationTemplate",
-                "multiTenantOrganizationIdentitySyncPolicyTemplate"
               ]
             },
             {
@@ -2341,6 +2317,9 @@
         "backup",
         "recovery"
       ],
+      "resources": [
+        "tenantInformation"
+      ],
       "childNodes": [
         {
           "name": "Configuration management",
@@ -2351,6 +2330,34 @@
             "configurationBaseline",
             "configurationDrift",
             "configurationSnapshotJob"
+          ]
+        },
+        {
+          "name": "Cross-tenant access",
+          "overview": "../../resources/crosstenantaccesspolicy-overview.md",
+          "keywords": [
+            "Cross-tenant access settings",
+            "XTAP"
+          ],
+          "resources": [
+            "crossTenantAccessPolicy",
+            "crossTenantAccessPolicyConfigurationDefault",
+            "crossTenantAccessPolicyConfigurationPartner",
+            "crossTenantIdentitySyncPolicyPartner"
+          ]
+        },
+        {
+          "name": "Multitenant organization",
+          "overview": "../../resources/multitenantorganization-overview.md",
+          "keywords": [
+            "MTO"
+          ],
+          "resources": [
+            "multiTenantOrganization",
+            "multiTenantOrganizationMember",
+            "multiTenantOrganizationJoinRequestRecord",
+            "multiTenantOrganizationPartnerConfigurationTemplate",
+            "multiTenantOrganizationIdentitySyncPolicyTemplate"
           ]
         }
       ]
@@ -2444,5 +2451,4 @@
     }
   ]
 }
-
 

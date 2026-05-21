@@ -113,7 +113,9 @@ In the request body, supply a JSON representation of [attachment](../resources/a
 
 ### Response
 
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "create_file_attachment_from_event_beta",
@@ -212,7 +214,9 @@ Content-type: application/json
 
 ### Response
 
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "create_item_attachment_from_event",
