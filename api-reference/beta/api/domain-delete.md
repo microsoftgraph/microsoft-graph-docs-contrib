@@ -55,7 +55,7 @@ Don't supply a request body for this method.
 If successful, this method returns `204 No Content` response code. It does not return a response body.
 
 ## Example
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -98,7 +98,7 @@ DELETE https://graph.microsoft.com/beta/domains/contoso.com
 
 ---
 
-##### Response
+### Response
 
 Note: The response object shown here might be shortened for readability.
 <!-- {

@@ -52,10 +52,6 @@ items:
     href: ../../api/peopleadminsettings-post-profilecardproperties.md
   - name: List photo update settings
     href: ../../api/peopleadminsettings-list-photoupdatesettings.md
-  - name: Create photo update setting
-    href: ../../api/peopleadminsettings-post-photoupdatesettings.md
-  - name: Delete photo update setting
-    href: ../../api/peopleadminsettings-delete-photoupdatesettings.md
   - name: List profile sources
     href: ../../api/peopleadminsettings-list-profilesources.md
   - name: Create profile source
@@ -78,14 +74,8 @@ items:
       href: ../../resources/photoupdatesettings.md
     - name: List
       href: ../../api/peopleadminsettings-list-photoupdatesettings.md
-    - name: Create
-      href: ../../api/peopleadminsettings-post-photoupdatesettings.md
-    - name: Get
-      href: ../../api/photoupdatesettings-get.md
     - name: Update
       href: ../../api/photoupdatesettings-update.md
-    - name: Delete
-      href: ../../api/peopleadminsettings-delete-photoupdatesettings.md
   - name: Profile card property
     items:
     - name: Profile card property
@@ -163,14 +153,8 @@ items:
     href: ../../resources/photoupdatesettings.md
   - name: List
     href: ../../api/peopleadminsettings-list-photoupdatesettings.md
-  - name: Create
-    href: ../../api/peopleadminsettings-post-photoupdatesettings.md
-  - name: Get
-    href: ../../api/photoupdatesettings-get.md
   - name: Update
     href: ../../api/photoupdatesettings-update.md
-  - name: Delete
-    href: ../../api/peopleadminsettings-delete-photoupdatesettings.md
 - name: Name pronunciation settings
   items:
   - name: Name pronunciation settings

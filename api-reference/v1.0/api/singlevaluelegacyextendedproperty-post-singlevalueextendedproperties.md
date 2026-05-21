@@ -20,6 +20,7 @@ The following user resources are supported:
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md)
 - [event](../resources/event.md)
+- [mailboxFolder](../resources/mailboxfolder.md)
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md)
 
@@ -46,6 +47,7 @@ Depending on the resource you're creating the extended property in and the permi
 | group [calendar](../resources/calendar.md) | Group.ReadWrite.All | Not supported | Not supported |
 | group [event](../resources/event.md) | Group.ReadWrite.All | Not supported | Not supported |
 | group [post](../resources/post.md) | Group.ReadWrite.All | Not supported | Not supported |
+| [mailboxFolder](../resources/mailboxfolder.md) | MailboxFolder.Read | Not supported. | MailboxFolder.Read.All | 
 | [mailFolder](../resources/mailfolder.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
 | [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
 
@@ -57,7 +59,7 @@ instance, and include the properties of the new resource instance _and extended 
 Some resources support creation in more than one way. For more information on creating these resource instances,
 see the corresponding articles for creating a [message](../resources/message.md), [mailFolder](../api/user-post-mailfolders.md),
 [event](../api/user-post-events.md), [calendar](../api/user-post-calendars.md),
-[contact](../api/user-post-contacts.md), [contactFolder](../api/user-post-contactfolders.md),
+[contact](../api/user-post-contacts.md), [contactFolder](../api/user-post-contactfolders.md), [mailboxFolder](../api/mailbox-post-folders.md),
 [group event](../api/group-post-events.md), and [group post](../resources/post.md).
 
 The following is the syntax of the requests.
@@ -82,6 +84,8 @@ POST /users/{id|userPrincipalName}/contacts
 
 POST /me/contactFolders
 POST /users/{id|userPrincipalName}/contactFolders
+
+POST /admin/exchange/mailboxes/{mailboxId}/folders
 
 POST /groups/{id}/events
 
@@ -120,6 +124,8 @@ PATCH /users/{id|userPrincipalName}/contacts/{id}
 
 PATCH /me/contactFolders/{id}
 PATCH /users/{id|userPrincipalName}/contactFolders/{id}
+
+PATCH /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}
 
 PATCH /groups/{id}/events/{id}
 ```

@@ -1,6 +1,6 @@
 ---
 title: "mailboxItem: delta"
-description: "Get a set of mailboxItem objects that have been added, deleted, or updated in a specified folder."
+description: "Get a set of mailboxItem objects that were added, deleted, or updated in a specified folder."
 author: "cparker-msft"
 ms.date: 12/06/2024
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a set of [mailboxItem](../resources/mailboxitem.md) objects that have been added, deleted, or updated in a specified [mailboxFolder](../resources/mailboxfolder.md).
+Get a set of [mailboxItem](../resources/mailboxitem.md) objects that were added, deleted, or updated in a specified [mailboxFolder](../resources/mailboxfolder.md).
 
 A **delta** function call for items in a folder is similar to a GET request, except that by appropriately applying [state tokens](/graph/delta-query-overview) in one or more of these calls, you can [query for incremental changes in the items in that folder](/graph/delta-query-messages). This approach allows you to maintain and synchronize a local store of a user's mailbox items without having to fetch the entire set of items from the server every time.
 
@@ -60,7 +60,7 @@ Tracking changes in items incurs a round of one or more **delta** function calls
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Prefer|odata.maxpagesize={x}. Optional.|
+|Prefer|odata.maxpagesize={x}. Optional. Controls page size.|
 
 ## Request body
 

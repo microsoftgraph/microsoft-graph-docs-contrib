@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 List all [cloudPcSnapshot](../resources/cloudpcsnapshot.md) resources for a Cloud PC.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 

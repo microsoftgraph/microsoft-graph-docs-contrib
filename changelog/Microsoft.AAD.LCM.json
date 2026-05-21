@@ -3,6 +3,42 @@
     {
       "ChangeList": [
         {
+          "Id": "14e09aad-a686-4b3d-88ab-a1076e2d052b",
+          "ApiChange": "Property",
+          "ChangedApiName": "processingInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **processingInfo** property to the [taskProcessingResult](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-taskProcessingResult?view=graph-rest-beta) resource.",
+          "Target": "taskProcessingResult"
+        }
+      ],
+      "Id": "14e09aad-a686-4b3d-88ab-a1076e2d052b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-05-06T17:17:32.7978124Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "19398a2e-7e68-4d1b-b786-a0b73775007d",
+          "ApiChange": "Property",
+          "ChangedApiName": "processingInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **processingInfo** property to the [taskProcessingResult](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-taskProcessingResult?view=graph-rest-1.0) resource.",
+          "Target": "taskProcessingResult"
+        }
+      ],
+      "Id": "19398a2e-7e68-4d1b-b786-a0b73775007d",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-05-06T17:17:32.7986703Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "3c6e3081-1ae2-4f9d-bd88-242f194293de",
           "ApiChange": "Member",
           "ChangedApiName": "canceling",

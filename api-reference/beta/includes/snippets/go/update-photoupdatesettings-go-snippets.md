@@ -17,11 +17,11 @@ import (
 
 requestBody := graphmodels.NewPhotoUpdateSettings()
 allowedRoles := []string {
-	"String",
+
 }
 requestBody.SetAllowedRoles(allowedRoles)
 additionalData := map[string]interface{}{
-	"source" : "String", 
+	"source" : "cloud", 
 }
 requestBody.SetAdditionalData(additionalData)
 

@@ -54,7 +54,7 @@ A successful response returns a `200 OK` that contains a JSON collection of **re
 ## Example
 The following example shows how to call this API.
 
-##### Request
+### Request
 The following example shows the request.
 
 # [HTTP](#tab/http)
@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/me/onenote/notebooks/getRecentNotebooks(inc
 
 ---
 
-##### Response
+### Response
 The following example shows the response.
 
 <!-- {

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Retrieve the [Cloud PC](../resources/cloudpc.md) count grouped by status.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 

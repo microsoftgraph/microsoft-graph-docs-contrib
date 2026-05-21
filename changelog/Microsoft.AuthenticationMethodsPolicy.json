@@ -3,18 +3,84 @@
     {
       "ChangeList": [
         {
-          "Id": "a38378c7-f9c4-4995-9869-d664e67c082c",
-          "ApiChange": "Property",
-          "ChangedApiName": "targetedAuthenticationMethod",
-          "ChangeType": "Change",
-          "Description": "Updated the **targetedAuthenticationMethod** property of the [authenticationMethodsRegistrationCampaignIncludeTarget](https://learn.microsoft.com/en-us/graph/api/resources/authenticationmethodsregistrationcampaignincludetarget?view=graph-rest-beta) resource to support `Fido2` in addition to `microsoftAuthenticator`. Organizations can now use registration campaigns to nudge users to register and sign in with phishing-resistant passkeys (FIDO2).",
-          "Target": "authenticationMethodsRegistrationCampaignIncludeTarget"
+          "Id": "4ff140b9-1b5e-4ee9-9658-1e7bf40fb35a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "verifiableCredentialAuthenticationMethodTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [verifiableCredentialAuthenticationMethodTarget](https://learn.microsoft.com/en-us/graph/api/resources/verifiableCredentialAuthenticationMethodTarget?view=graph-rest-1.0) resource.",
+          "Target": "verifiableCredentialAuthenticationMethodTarget"
+        },
+        {
+          "Id": "4ff140b9-1b5e-4ee9-9658-1e7bf40fb35a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "verifiableCredentialsAuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [verifiableCredentialsAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/verifiableCredentialsAuthenticationMethodConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "verifiableCredentialsAuthenticationMethodConfiguration"
         }
       ],
-      "Id": "a38378c7-f9c4-4995-9869-d664e67c082c",
+      "Id": "4ff140b9-1b5e-4ee9-9658-1e7bf40fb35a",
       "Cloud": "Prod",
-      "Version": "beta",
-      "CreatedDateTime": "2026-05-21T09:35:24.0000000Z",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-05-15T19:34:17.4836438Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a1291988-4148-44c0-81e7-a5ec3c74c7c0",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "x509CertificateIssuerHintsState",
+          "ChangeType": "Addition",
+          "Description": "Added the **x509CertificateIssuerHintsState** enumeration type.",
+          "Target": "x509CertificateIssuerHintsState"
+        },
+        {
+          "Id": "a1291988-4148-44c0-81e7-a5ec3c74c7c0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "includeTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [includeTarget](https://learn.microsoft.com/en-us/graph/api/resources/includeTarget?view=graph-rest-1.0) resource.",
+          "Target": "includeTarget"
+        },
+        {
+          "Id": "a1291988-4148-44c0-81e7-a5ec3c74c7c0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "x509CertificateAuthorityScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [x509CertificateAuthorityScope](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateAuthorityScope?view=graph-rest-1.0) resource.",
+          "Target": "x509CertificateAuthorityScope"
+        },
+        {
+          "Id": "a1291988-4148-44c0-81e7-a5ec3c74c7c0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "x509CertificateIssuerHintsConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [x509CertificateIssuerHintsConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateIssuerHintsConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "x509CertificateIssuerHintsConfiguration"
+        },
+        {
+          "Id": "a1291988-4148-44c0-81e7-a5ec3c74c7c0",
+          "ApiChange": "Property",
+          "ChangedApiName": "certificateAuthorityScopes",
+          "ChangeType": "Addition",
+          "Description": "Added the **certificateAuthorityScopes** property to the [x509CertificateAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateAuthenticationMethodConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "x509CertificateAuthenticationMethodConfiguration"
+        },
+        {
+          "Id": "a1291988-4148-44c0-81e7-a5ec3c74c7c0",
+          "ApiChange": "Property",
+          "ChangedApiName": "issuerHintsConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **issuerHintsConfiguration** property to the [x509CertificateAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateAuthenticationMethodConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "x509CertificateAuthenticationMethodConfiguration"
+        }
+      ],
+      "Id": "a1291988-4148-44c0-81e7-a5ec3c74c7c0",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-05-07T19:11:23.3967948Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     },
@@ -124,7 +190,7 @@
       "Id": "a1b2c3d4-5e6f-7890-abcd-ef1234567890",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2026-01-26T00:00:00.0000000Z",
+      "CreatedDateTime": "2026-01-26T00:00:00Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     },
@@ -877,7 +943,7 @@
       "CreatedDateTime": "2023-11-02T16:40:54.9462605Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
-      },
+    },
     {
       "ChangeList": [
         {
@@ -1131,8 +1197,8 @@
       "SubArea": "Identity and sign-in"
     },
     {
-       "ChangeList": [
-         {
+      "ChangeList": [
+        {
           "Id": "6ce1df57-2f89-4556-b0f0-f99d3429cf83",
           "ApiChange": "Resource",
           "ChangedApiName": "verifiableCredentialAuthenticationMethodTarget",

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get a list of [cloudPcDiscoveredApp](../resources/cloudpcdiscoveredapp.md) objects whose [appdetails](../resources/cloudpccloudappdetail.md) can be used to map to a [cloudPcCloudApp](../resources/cloudpccloudapp.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -33,7 +33,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 
 ``` http
-POST /deviceManagement/virtualEndpoint/cloudApps/retrieveDiscoveredApps(sourceId={value},provisioningPolicyId={value})
+GET /deviceManagement/virtualEndpoint/cloudApps/retrieveDiscoveredApps(sourceId={sourceId},provisioningPolicyId=@provisioningPolicyId)
 ```
 
 ## Query parameters

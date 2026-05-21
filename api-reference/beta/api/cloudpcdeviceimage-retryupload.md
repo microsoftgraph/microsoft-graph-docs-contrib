@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Retry the upload of a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object that previously failed.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 

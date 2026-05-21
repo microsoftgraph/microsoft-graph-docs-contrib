@@ -61,7 +61,7 @@ If successful, this method returns a `201, Created` response code and a [program
 
 
 ## Example
-##### Request
+### Request
 In the request body, supply a JSON representation of the [programControl](../resources/programcontrol.md) object.
 
 
@@ -111,7 +111,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
