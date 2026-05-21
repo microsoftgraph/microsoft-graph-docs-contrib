@@ -252,10 +252,14 @@ items:
       href: ../../resources/cloudpccloudapp.md
     - name: List
       href: ../../api/virtualendpoint-list-cloudapps.md
+    - name: Create
+      href: ../../api/virtualendpoint-post-cloudapps.md
     - name: Get
       href: ../../api/cloudpccloudapp-get.md
     - name: Update
       href: ../../api/cloudpccloudapp-update.md
+    - name: Delete
+      href: ../../api/cloudpccloudapp-delete.md
     - name: Publish
       href: ../../api/cloudpccloudapp-publish.md
     - name: Unpublish
@@ -637,6 +641,8 @@ items:
       href: ../../resources/cloudpcauditproperty.md
     - name: Cloud PC audit resource
       href: ../../resources/cloudpcauditresource.md
+    - name: Cloud PC automatic discovered app detail
+      href: ../../resources/cloudpcautomaticdiscoveredappdetail.md
     - name: Cloud PC bulk create snapshot
       href: ../../resources/cloudpcbulkcreatesnapshot.md
     - name: Cloud PC bulk disaster recovery
@@ -695,6 +701,8 @@ items:
       href: ../../resources/cloudpcexternalpartneractionresult.md
     - name: Cloud PC external partner agent setting
       href: ../../resources/cloudpcexternalpartneragentsetting.md
+    - name: Cloud PC file path app detail
+      href: ../../resources/cloudpcfilepathappdetail.md
     - name: Cloud PC forensic storage account
       href: ../../resources/cloudpcforensicstorageaccount.md
     - name: Cloud PC frontline shared device detail
