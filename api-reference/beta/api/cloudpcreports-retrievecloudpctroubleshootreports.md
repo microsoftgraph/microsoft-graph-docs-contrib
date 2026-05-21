@@ -53,7 +53,7 @@ The following table lists the parameters that you can use with this action.
 |filter|String|OData `$filter` syntax. Supported filters are: `and`, `or`, `gt`, `ge`, and `eq`. Required for most **reportName** values, but optional for some. For mandatory filter parameters required by each report name, see the tables in this section.|
 |groupBy|String collection|A list of columns that describe how to group the data in the report. Optional.|
 |orderBy|String collection|Specifies the order by column name. Optional.|
-|reportName|[cloudPCTroubleshootReportType](../resources/cloudpcreports.md#cloudpctroubleshootreporttype-values)|The report name. The possible values are: `troubleshootTenantGlobalFilterReport`, `troubleshootTenantNetworkTrendReport`, `troubleshootTenantNetworkAggregatedReport`, `troubleshootTenantConnectionFailureRateTrendReport`, `troubleshootTenantConnectionFailureRateAggregatedReport`, `troubleshootTenantCloudPCHealthTrendReport`, `troubleshootTenantCloudPCHealthAggregatedReport`, `troubleshootTenantActiveConnectionCountTrendReport`, `troubleshootTenantActiveConnectionCountAggregatedReport`, `troubleshootTenantMeanTimeToFailureTrendReport`, `troubleshootTenantMeanTimeToFailureAggregatedReport`, `troubleshootTenantRemoteSignInTimeTrendReport`, `troubleshootTenantRemoteSignInTimeAggregatedReport`, `troubleshootEventsOfViewDataTableReport`, `troubleshootTenantEnvironmentMetricsOfViewDataTableReport`, `troubleshootCloudPCMetricsOfViewDataTableReport`, `troubleshootConfigurationConnectionCountTrendV1Report`, `troubleshootConfigurationTotalConnectionCountBarV1Report`, `troubleshootConfigurationGlobalFilterV1Report`, `troubleshootConnectionConfigurationOfViewDataTableV1Report`, `troubleshootTenantConnectedDevicesOfViewDataTableReport`, `troubleshootEnvironmentOverviewOfViewDataTableReport`, `troubleshootCloudPCNetworkTrendReport`, `troubleshootCloudPCNetworkAggregatedReport`, `troubleshootCloudPCErrorTrendReport`, `troubleshootCloudPCErrorAggregatedReport`, `troubleshootCloudPCDurationTrendReport`, `troubleshootCloudPCDurationAggregatedReport`, `troubleshootCloudPCRemoteSignInTimeTrendReport`, `troubleshootCloudPCRemoteSignInTimeAggregatedReport`, `troubleshootCloudPCListReport`, `troubleshootCloudPCHealthTrendReport`, `troubleshootMatchedUserReport`, `troubleshootMatchedCloudPCReport`, `troubleshootUserListReport`, `troubleshootVMPerformanceReport`, `getAIEnabledStateCPCReport`, `reserveLicenseReport`, `unknownFutureValue`. Use the `Prefer: include-unknown-enum-members` request header to receive future members added to this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) by their actual name instead of `unknownFutureValue`. Required.|
+|reportName|[cloudPCTroubleshootReportType](../resources/cloudpcreports.md#cloudpctroubleshootreporttype-values)|The report name. The possible values are: `troubleshootTenantGlobalFilterReport`, `troubleshootTenantNetworkTrendReport`, `troubleshootTenantNetworkAggregatedReport`, `troubleshootTenantConnectionFailureRateTrendReport`, `troubleshootTenantConnectionFailureRateAggregatedReport`, `troubleshootTenantCloudPCHealthTrendReport`, `troubleshootTenantCloudPCHealthAggregatedReport`, `troubleshootTenantActiveConnectionCountTrendReport`, `troubleshootTenantActiveConnectionCountAggregatedReport`, `troubleshootTenantMeanTimeToFailureTrendReport`, `troubleshootTenantMeanTimeToFailureAggregatedReport`, `troubleshootTenantRemoteSignInTimeTrendReport`, `troubleshootTenantRemoteSignInTimeAggregatedReport`, `troubleshootEventsOfViewDataTableReport`, `troubleshootTenantEnvironmentMetricsOfViewDataTableReport`, `troubleshootCloudPCMetricsOfViewDataTableReport`, `troubleshootConfigurationConnectionCountTrendV1Report`, `troubleshootConfigurationTotalConnectionCountBarV1Report`, `troubleshootConfigurationGlobalFilterV1Report`, `troubleshootConnectionConfigurationOfViewDataTableV1Report`, `troubleshootTenantConnectedDevicesOfViewDataTableReport`, `troubleshootEnvironmentOverviewOfViewDataTableReport`, `troubleshootCloudPCNetworkTrendReport`, `troubleshootCloudPCNetworkAggregatedReport`, `troubleshootCloudPCErrorTrendReport`, `troubleshootCloudPCErrorAggregatedReport`, `troubleshootCloudPCDurationTrendReport`, `troubleshootCloudPCDurationAggregatedReport`, `troubleshootCloudPCRemoteSignInTimeTrendReport`, `troubleshootCloudPCRemoteSignInTimeAggregatedReport`, `troubleshootCloudPCListReport`, `troubleshootCloudPCHealthTrendReport`, `troubleshootMatchedUserReport`, `troubleshootMatchedCloudPCReport`, `troubleshootUserListReport`, `unknownFutureValue`. Use the `Prefer: include-unknown-enum-members` request header to receive future members added to this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) by their actual name instead of `unknownFutureValue`. Required.|
 |search|String|The search string. Optional.|
 |select|String collection|OData `$select` syntax. The selected columns of the reports. Optional.|
 |skip|Int32|Number of records to skip. Optional.|
@@ -94,8 +94,6 @@ The following table lists the mandatory filter parameters for view data table re
 | `troubleshootTenantConnectedDevicesOfViewDataTableReport`, `troubleshootTenantEnvironmentMetricsOfViewDataTableReport` | `TimeRange`, `PolicyNameParam`, `RegionParam`, `UserSettingNameParam`, `ServicePlanTypeParam`, `ServicePlanNameParam`, `OSBuildVersionParam`, `AADJoinTypeParam`, `ImageNameParam`, `GatewayRegionParam`, `ClientOSParam`, `ClientTypeParam`, `TransportTypeParam`, `CloudPCEndpointCountryRegionParam`, `CloudPCEndpointStateParam`, `CloudPCEndpointCityParam` |
 | `troubleshootEventsOfViewDataTableReport` | `TimeRange`, `PolicyNameParam`, `RegionParam`, `UserSettingNameParam`, `ServicePlanTypeParam`, `ServicePlanNameParam`, `OSBuildVersionParam`, `AADJoinTypeParam`, `ImageNameParam`, `GatewayRegionParam`, `ClientOSParam`, `ClientTypeParam`, `TransportTypeParam`, `UPNParam`, `CloudPCIdParam`, `CloudPCEndpointCountryRegionParam`, `CloudPCEndpointStateParam`, `CloudPCEndpointCityParam` |
 | `troubleshootConnectionConfigurationOfViewDataTableV1Report` | `TimeRange`, `CloudPCStatusParam`, `RegionParam`, `PolicyNameParam`, `UserSettingNameParam`, `ImageNameParam`, `ServicePlanNameParam`, `ServicePlanTypeParam`, `OSVersionParam`, `OSBuildVersionParam`, `ClientOSParam`, `ClientTypeParam`, `ClientVersionParam`, `TeamsAppV2VersionParam`, `MMRVersionParam`, `CloudPCIdParam`, `UPNParam`, `AADJoinTypeParam`, `GatewayRegionParam`, `TransportTypeParam`, `CloudPCEndpointCountryRegionParam`, `CloudPCEndpointStateParam`, `CloudPCEndpointCityParam` |
-
-For `troubleshootVMPerformanceReport`, `getAIEnabledStateCPCReport`, and `reserveLicenseReport`, the **filter** parameter is optional.
 
 ## Response
 
@@ -548,52 +546,6 @@ The following table describes the columns in the returned report when you specif
 | ConnectionFailureRate | The rate of connection failures as a percentage. |
 | ActiveConnectionCount | The count of active connections. |
 | HealthPercentage | The health percentage of Cloud PC systems. |
-
-The following table describes the columns in the returned report when you specify `troubleshootVMPerformanceReport` for the **reportName** property in your API call.
-
-| Column | Description |
-|:-------|:------------|
-| MetricName | Azure Monitor metric name. |
-| TimeStamp | Data point timestamp (UTC). |
-| Average | Average aggregation value. |
-| Minimum | Minimum aggregation value. |
-| Maximum | Maximum aggregation value. |
-| Total | Total or sum aggregation value. |
-| Count | Count aggregation value. |
-
-The following table describes the columns in the returned report when you specify `getAIEnabledStateCPCReport` for the **reportName** property in your API call.
-
-| Column | Description |
-|:-------|:------------|
-| CloudPCId | The unique identifier of the Cloud PC. |
-| UserId | The unique identifier of the user. |
-| ManagedDeviceName | The name of the managed device. |
-| ProvisioningPolicyName | The name of the provisioning policy. |
-| ServicePlanName | The name of the service plan. |
-| State | The AI-enabled state of the Cloud PC. |
-| UserDisplayName | The display name of the user. |
-| ProvisionedDateTime | The date and time when the Cloud PC was provisioned. |
-| ProvisioningPolicyId | The unique identifier of the provisioning policy. |
-| CopilotPlusEnabledDateTime | The date and time when Copilot+ was enabled. |
-| CopilotPlusErrorCode | The error code for Copilot+ enablement failures. |
-| ErrorMessage | The descriptive error message if applicable. |
-| EngineeringAction | The engineering action taken for AI enablement. |
-
-The following table describes the columns in the returned report when you specify `reserveLicenseReport` for the **reportName** property in your API call.
-
-| Column | Description |
-|:-------|:------------|
-| UserDisplayName | The display name of the user. |
-| UserPrincipalName | The User Principal Name of the user. |
-| UserId | The unique identifier of the user. |
-| TenantId | The unique identifier of the tenant. |
-| ProvisioningPolicyId | The unique identifier of the provisioning policy. |
-| PolicyName | The name of the policy applied. |
-| ProvisioningStatus | The provisioning status of the Cloud PC. |
-| Licensed | Indicates whether the user has a license assigned. |
-| LastMeteredRemainingSeconds | The remaining seconds in the last metered period. |
-| TotalAllocatedTimeInSeconds | The total allocated time in seconds. |
-| SubscriptionAnnualPassExpirationDate | The expiration date of the annual pass subscription. |
 
 ## Examples
 

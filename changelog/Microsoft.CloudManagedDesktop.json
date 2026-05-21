@@ -511,30 +511,6 @@
           "ChangeType": "Addition",
           "Description": "Added the `troubleshootUserListReport` member to the **cloudPCTroubleshootReportType** enumeration.",
           "Target": "cloudPCTroubleshootReportType"
-        },
-        {
-          "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
-          "ApiChange": "Member",
-          "ChangedApiName": "troubleshootVMPerformanceReport",
-          "ChangeType": "Addition",
-          "Description": "Added the `troubleshootVMPerformanceReport` member to the **cloudPCTroubleshootReportType** enumeration.",
-          "Target": "cloudPCTroubleshootReportType"
-        },
-        {
-          "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
-          "ApiChange": "Member",
-          "ChangedApiName": "getAIEnabledStateCPCReport",
-          "ChangeType": "Addition",
-          "Description": "Added the `getAIEnabledStateCPCReport` member to the **cloudPCTroubleshootReportType** enumeration.",
-          "Target": "cloudPCTroubleshootReportType"
-        },
-        {
-          "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",
-          "ApiChange": "Member",
-          "ChangedApiName": "reserveLicenseReport",
-          "ChangeType": "Addition",
-          "Description": "Added the `reserveLicenseReport` member to the **cloudPCTroubleshootReportType** enumeration.",
-          "Target": "cloudPCTroubleshootReportType"
         }
       ],
       "Id": "a509d571-b0c7-4e88-a1ea-c034f854bd73",

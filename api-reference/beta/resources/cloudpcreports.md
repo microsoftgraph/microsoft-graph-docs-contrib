@@ -95,9 +95,6 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 | troubleshootMatchedUserReport | Indicates report of users matched to specified troubleshoot criteria. |
 | troubleshootMatchedCloudPCReport | Indicates report of Cloud PCs matched to specified troubleshoot criteria. |
 | troubleshootUserListReport | Indicates list report of users with troubleshoot details. |
-| troubleshootVMPerformanceReport | Indicates VM performance troubleshoot report for Cloud PCs. |
-| getAIEnabledStateCPCReport | Indicates the AI-enabled state report for Cloud PCs. |
-| reserveLicenseReport | Indicates the reserve license report for Cloud PCs. |
 | unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
