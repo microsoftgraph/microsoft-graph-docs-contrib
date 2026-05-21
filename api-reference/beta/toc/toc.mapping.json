@@ -1264,7 +1264,6 @@
             "onPremisesSyncBehavior",
             "organization",
             "orgContact",
-            "tenantInformation",
             "bitlockerRecoveryKey",
             "deviceLocalCredentialInfo",
             "featureRolloutPolicy",
@@ -3684,7 +3683,7 @@
     },
     {
       "name": "Tenants",
-      "shouldSort": false,
+      "shouldSort": true,
       "overview": "../../resources/tenants-overview.md",
       "keywords": [
         "tenant management",
@@ -3695,6 +3694,9 @@
         "multitenant",
         "backup",
         "recovery"
+      ],
+      "resources": [
+        "tenantInformation"
       ],
       "childNodes": [
         {
@@ -3912,4 +3914,3 @@
     }
   ]
 }
-
