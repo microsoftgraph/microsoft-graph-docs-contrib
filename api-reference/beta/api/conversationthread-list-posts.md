@@ -91,7 +91,9 @@ GET https://graph.microsoft.com/beta/groups/0d75b8dc-c42d-44dd-890a-751a99c0589f
 ---
 
 ### Response
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

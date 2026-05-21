@@ -6,7 +6,7 @@ ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-ms.date: 07/22/2024
+ms.date: 05/06/2026
 ---
 
 # authenticationMethodsRegistrationCampaignIncludeTarget resource type
@@ -19,7 +19,7 @@ Represents the users and groups that are targeted for [authentication method reg
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The object identifier of a Microsoft Entra user or group.|
-|targetedAuthenticationMethod|String|The authentication method that the user is prompted to register. The value must be `microsoftAuthenticator`.|
+|targetedAuthenticationMethod|String|The authentication method that the user is prompted to register. The value can be `Fido2` or `microsoftAuthenticator`.|
 |targetType|authenticationMethodTargetType|The type of the authentication method target. The possible values are: `user`, `group`, `unknownFutureValue`.|
 
 ## Relationships
