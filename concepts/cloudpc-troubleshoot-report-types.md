@@ -383,6 +383,26 @@ The following table lists the mandatory filter parameters for user and device re
 | EventDateTime | The date and time when the event occurred. |
 | HealthPercentage | The health percentage of Cloud PC systems. |
 
+#### troubleshootCloudPCMetricsOfViewDataTableReport
+
+| Column | Description |
+|:-------|:------------|
+| TenantId | The unique identifier of the tenant. |
+| EventDateTime | The date and time when the event occurred. |
+| TotalActiveConnectionCountAvg | The average count of total active connections. |
+| AvgRoundTripTimeInMs | The average round trip time in milliseconds. |
+| AvgBandwidthInMbps | The average bandwidth in megabits per second. |
+| ConnectionSuccessCount | The number of successful connections. |
+| ConnectionFailCount | The number of failed connections. |
+| ConnectionFailurePercentage | The percentage of connection failures. |
+| HealthyCount | The number of healthy Cloud PCs. |
+| UnhealthyCount | The number of unhealthy Cloud PCs. |
+| UnknownCount | The number of Cloud PCs with unknown health status. |
+| HealthPercentage | The health percentage of Cloud PC systems. |
+| TotalDurationInHour | The total duration time in hours. |
+| AvgDurationInHour | The average duration time in hours. |
+| RemoteSignInTimeInSecondAvg | The average remote sign-in time in seconds. |
+
 ## View data table reports
 
 ### Mandatory filter parameters
@@ -395,9 +415,6 @@ The following table lists the mandatory filter parameters for view data table re
 | `troubleshootTenantConnectedDevicesOfViewDataTableReport`, `troubleshootTenantEnvironmentMetricsOfViewDataTableReport` | `TimeRange`, `PolicyNameParam`, `RegionParam`, `UserSettingNameParam`, `ServicePlanTypeParam`, `ServicePlanNameParam`, `OSBuildVersionParam`, `AADJoinTypeParam`, `ImageNameParam`, `GatewayRegionParam`, `ClientOSParam`, `ClientTypeParam`, `TransportTypeParam`, `CloudPCEndpointCountryRegionParam`, `CloudPCEndpointStateParam`, `CloudPCEndpointCityParam` |
 | `troubleshootEventsOfViewDataTableReport` | `TimeRange`, `PolicyNameParam`, `RegionParam`, `UserSettingNameParam`, `ServicePlanTypeParam`, `ServicePlanNameParam`, `OSBuildVersionParam`, `AADJoinTypeParam`, `ImageNameParam`, `GatewayRegionParam`, `ClientOSParam`, `ClientTypeParam`, `TransportTypeParam`, `UPNParam`, `CloudPCIdParam`, `CloudPCEndpointCountryRegionParam`, `CloudPCEndpointStateParam`, `CloudPCEndpointCityParam` |
 | `troubleshootConnectionConfigurationOfViewDataTableV1Report` | `TimeRange`, `CloudPCStatusParam`, `RegionParam`, `PolicyNameParam`, `UserSettingNameParam`, `ImageNameParam`, `ServicePlanNameParam`, `ServicePlanTypeParam`, `OSVersionParam`, `OSBuildVersionParam`, `ClientOSParam`, `ClientTypeParam`, `ClientVersionParam`, `TeamsAppV2VersionParam`, `MMRVersionParam`, `CloudPCIdParam`, `UPNParam`, `AADJoinTypeParam`, `GatewayRegionParam`, `TransportTypeParam`, `CloudPCEndpointCountryRegionParam`, `CloudPCEndpointStateParam`, `CloudPCEndpointCityParam` |
-
-> [!NOTE]
-> `troubleshootCloudPCMetricsOfViewDataTableReport` is treated as a user and device report. Its mandatory filter parameters are listed in [User and device reports](#user-and-device-reports). Its response columns are listed in this section.
 
 ### Response columns
 
@@ -473,26 +490,6 @@ The following table lists the mandatory filter parameters for view data table re
 | ResultType | The type of result for the event. |
 | EventLevel | The severity level of the event. |
 | CloudDeviceHealthState | The health state of the Cloud PC device. |
-
-#### troubleshootCloudPCMetricsOfViewDataTableReport
-
-| Column | Description |
-|:-------|:------------|
-| TenantId | The unique identifier of the tenant. |
-| EventDateTime | The date and time when the event occurred. |
-| TotalActiveConnectionCountAvg | The average count of total active connections. |
-| AvgRoundTripTimeInMs | The average round trip time in milliseconds. |
-| AvgBandwidthInMbps | The average bandwidth in megabits per second. |
-| ConnectionSuccessCount | The number of successful connections. |
-| ConnectionFailCount | The number of failed connections. |
-| ConnectionFailurePercentage | The percentage of connection failures. |
-| HealthyCount | The number of healthy Cloud PCs. |
-| UnhealthyCount | The number of unhealthy Cloud PCs. |
-| UnknownCount | The number of Cloud PCs with unknown health status. |
-| HealthPercentage | The health percentage of Cloud PC systems. |
-| TotalDurationInHour | The total duration time in hours. |
-| AvgDurationInHour | The average duration time in hours. |
-| RemoteSignInTimeInSecondAvg | The average remote sign-in time in seconds. |
 
 #### troubleshootConnectionConfigurationOfViewDataTableV1Report
 
