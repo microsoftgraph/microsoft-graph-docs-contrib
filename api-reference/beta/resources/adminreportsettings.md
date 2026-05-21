@@ -30,7 +30,10 @@ Represents the tenant-level settings for Microsoft 365 reports.
 | displayConcealedNames | Boolean | If set to `true`, all reports conceal user information such as usernames, groups, and sites. If `false`, all reports show identifiable information. This property represents a setting in the Microsoft 365 admin center. Required. |
 
 ## Relationships
-None.
+
+| Relationship | Type | Description |
+| ------------ | ---- | ----------- |
+| sharePoint | [sharePointReportSettings](../resources/sharepointreportsettings.md) | A container for SharePoint-specific report settings. Access the SharePoint API usage report metrics through the operations defined on this resource type. |
 
 ## JSON representation
 

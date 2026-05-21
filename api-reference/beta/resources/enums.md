@@ -90,6 +90,16 @@ Namespace: microsoft.graph
 |mediaFiles|
 |unknownFutureValue|
 
+### apiUsageReportOnboardingStatus values
+
+|Member|
+|:---|
+|enabling|
+|enabled|
+|disabling|
+|disabled|
+|unknownFutureValue|
+
 ### csaStarLevel values
 
 |Member|

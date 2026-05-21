@@ -2764,6 +2764,7 @@
           ],
           "complexTypes": [
             "admin",
+            "apiUsageReportEnablementStatus",
             "office365ActiveUserCounts",
             "office365ActiveUserDetail",
             "office365GroupsActivityCounts",
