@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: "FaithOmbongi"
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
-ms.date: 10/24/2024
+ms.date: 05/21/2026
 ---
 
 # directoryObject: checkMemberGroups
@@ -23,6 +23,12 @@ Check for membership in a specified list of [group](../resources/group.md) IDs, 
 This function is transitive.
 
 You can check up to a maximum of 20 groups per request. This function supports all groups provisioned in Microsoft Entra ID. Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
+
+> [!IMPORTANT]
+> Microsoft Graph evaluates the **groupIds** collection as a single request. If the request is invalid (for example, a malformed group ID), the entire request fails. If the caller doesn't have access to evaluate certain groups (for example, groups with hidden membership), the response might include only the groups that the caller is authorized to evaluate.
+
+> [!NOTE]
+> Response time depends on your tenant's directory structure, including group nesting depth and membership size. Microsoft Graph doesn't publish latency targets for transitive membership APIs.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -94,6 +100,13 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|Device.Read.All|Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|Device.Read.All|Device.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+
+> [!IMPORTANT]
+> To evaluate membership in groups with [hidden membership](/graph/api/resources/group#group-visibility-options), additional access is required:
+> - **Application permissions**: The app must have the `Member.Read.Hidden` permission.
+> - **Delegated permissions**: The signed-in user must be a member of the hidden-membership group.
+>
+> If neither condition is met, hidden-membership groups are not evaluated and those group IDs are omitted from the response.
 
 ## HTTP request
 
