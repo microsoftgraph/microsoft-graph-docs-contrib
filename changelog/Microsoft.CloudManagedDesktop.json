@@ -159,6 +159,48 @@
     {
       "ChangeList": [
         {
+          "Id": "28bafbf7-eef1-47a8-9626-b368814728dd",
+          "ApiChange": "Member",
+          "ChangedApiName": "iconPathInvalid",
+          "ChangeType": "Addition",
+          "Description": "Added the `iconPathInvalid` member to the **cloudPcCloudAppActionFailedErrorCode** enumeration.",
+          "Target": "cloudPcCloudAppActionFailedErrorCode"
+        },
+        {
+          "Id": "28bafbf7-eef1-47a8-9626-b368814728dd",
+          "ApiChange": "Member",
+          "ChangedApiName": "filePathInvalid",
+          "ChangeType": "Addition",
+          "Description": "Added the `filePathInvalid` member to the **cloudPcCloudAppActionFailedErrorCode** enumeration.",
+          "Target": "cloudPcCloudAppActionFailedErrorCode"
+        },
+        {
+          "Id": "28bafbf7-eef1-47a8-9626-b368814728dd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcAutomaticDiscoveredAppDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcAutomaticDiscoveredAppDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcAutomaticDiscoveredAppDetail?view=graph-rest-beta) resource.",
+          "Target": "cloudPcAutomaticDiscoveredAppDetail"
+        },
+        {
+          "Id": "28bafbf7-eef1-47a8-9626-b368814728dd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcFilePathAppDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcFilePathAppDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcFilePathAppDetail?view=graph-rest-beta) resource.",
+          "Target": "cloudPcFilePathAppDetail"
+        }
+      ],
+      "Id": "28bafbf7-eef1-47a8-9626-b368814728dd",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-05-20T03:23:29.3266697Z",
+      "WorkloadArea": "Devices and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "24c3dd99-4bf3-4573-977c-3211216b0b74",
           "ApiChange": "Property",
           "ChangedApiName": "scopeIds",
