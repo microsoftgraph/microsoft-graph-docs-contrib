@@ -1,6 +1,6 @@
 ---
 title: "cloudPcReports: retrieveCloudPcTroubleshootReports"
-description: "Get Cloud PC reports, including tenant-level, configuration, user and device, and view data table reports for monitoring and troubleshooting Cloud PCs."
+description: "Get Cloud PC troubleshooting reports, including tenant-level, configuration, user and device, and view data table reports."
 author: "abbyzhccc"
 ms.date: 05/20/2026
 ms.localizationpriority: medium
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get Cloud PC reports. You can get tenant-level reports, configuration reports, user and device reports, and view data table reports for Cloud PC monitoring and troubleshooting.
+Get Cloud PC troubleshooting reports. You can get tenant-level reports, configuration reports, user and device reports, and view data table reports.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
