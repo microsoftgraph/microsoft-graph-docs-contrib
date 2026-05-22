@@ -2745,6 +2745,18 @@
               "complexTypes": [
                 "tokenProtectionStatusDetails"
               ]
+            },
+            {
+              "name": "Identity correlation reports (preview)",
+              "resources": [
+                "correlatedIdentity",
+                "identityCorrelation"
+              ],
+              "complexTypes": [
+                "attributeInfo",
+                "correlationError",
+                "identityInfo"
+              ]
             }
           ]
         },
