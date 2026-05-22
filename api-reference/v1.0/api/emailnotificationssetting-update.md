@@ -73,7 +73,7 @@ PATCH https://graph.microsoft.com/v1.0/solutions/backupRestore/emailNotification
 Content-Type: application/json
 
 {
-  "isEnabled": "true",
+  "isEnabled": true,
   "additionalEvents": "restoreAndPolicyUpdates",
   "recipients": {
     "role": "custom",
