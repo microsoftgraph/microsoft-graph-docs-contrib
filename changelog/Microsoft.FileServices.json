@@ -15,7 +15,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "sharePoint",
           "ChangeType": "Addition",
-          "Description": "Added the **sharePoint** relationship to the [adminReportSettings](https://learn.microsoft.com/en-us/graph/api/resources/adminReportSettings?view=graph-rest-beta) resource.",
+          "Description": "Added the **sharePoint** relationship to the [adminReportSettings](https://learn.microsoft.com/en-us/graph/api/resources/adminreportsettings?view=graph-rest-beta) resource.",
           "Target": "adminReportSettings"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "apiUsageReportEnablementStatus",
           "ChangeType": "Addition",
-          "Description": "Added the [apiUsageReportEnablementStatus](https://learn.microsoft.com/en-us/graph/api/resources/apiUsageReportEnablementStatus?view=graph-rest-beta) resource.",
+          "Description": "Added the [apiUsageReportEnablementStatus](https://learn.microsoft.com/en-us/graph/api/resources/apiusagereportenablementstatus?view=graph-rest-beta) resource.",
           "Target": "apiUsageReportEnablementStatus"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharePointReportSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [sharePointReportSettings](https://learn.microsoft.com/en-us/graph/api/resources/sharePointReportSettings?view=graph-rest-beta) resource.",
+          "Description": "Added the [sharePointReportSettings](https://learn.microsoft.com/en-us/graph/api/resources/sharepointreportsettings?view=graph-rest-beta) resource.",
           "Target": "sharePointReportSettings"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "disableApiUsageReport",
           "ChangeType": "Addition",
-          "Description": "Added the [disableApiUsageReport](https://learn.microsoft.com/en-us/graph/api/sharePointReportSettings-disableApiUsageReport?view=graph-rest-beta) method to the [sharePointReportSettings](https://learn.microsoft.com/en-us/graph/api/resources/sharePointReportSettings?view=graph-rest-beta) resource.",
+          "Description": "Added the [disableApiUsageReport](https://learn.microsoft.com/en-us/graph/api/sharepointreportsettings-disableapiusagereport?view=graph-rest-beta) method to the [sharePointReportSettings](https://learn.microsoft.com/en-us/graph/api/resources/sharepointreportsettings?view=graph-rest-beta) resource.",
           "Target": "sharePointReportSettings"
         },
         {
@@ -47,7 +47,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "enableApiUsageReport",
           "ChangeType": "Addition",
-          "Description": "Added the [enableApiUsageReport](https://learn.microsoft.com/en-us/graph/api/sharePointReportSettings-enableApiUsageReport?view=graph-rest-beta) method to the [sharePointReportSettings](https://learn.microsoft.com/en-us/graph/api/resources/sharePointReportSettings?view=graph-rest-beta) resource.",
+          "Description": "Added the [enableApiUsageReport](https://learn.microsoft.com/en-us/graph/api/sharepointreportsettings-enableapiusagereport?view=graph-rest-beta) method to the [sharePointReportSettings](https://learn.microsoft.com/en-us/graph/api/resources/sharepointreportsettings?view=graph-rest-beta) resource.",
           "Target": "sharePointReportSettings"
         },
         {
@@ -55,7 +55,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "List apiUsageReportMetrics",
           "ChangeType": "Addition",
-          "Description": "Added the [List apiUsageReportMetrics](https://learn.microsoft.com/en-us/graph/api/sharePointReportSettings-list-apiusagereportmetrics?view=graph-rest-beta) method to the [sharePointReportSettings](https://learn.microsoft.com/en-us/graph/api/resources/sharePointReportSettings?view=graph-rest-beta) resource.",
+          "Description": "Added the [List apiUsageReportMetrics](https://learn.microsoft.com/en-us/graph/api/sharepointreportsettings-list-apiusagereportmetrics?view=graph-rest-beta) method to the [sharePointReportSettings](https://learn.microsoft.com/en-us/graph/api/resources/sharepointreportsettings?view=graph-rest-beta) resource.",
           "Target": "sharePointReportSettings"
         }
       ],

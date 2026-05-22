@@ -2760,7 +2760,8 @@
           "overview": "../../resources/report.md",
           "resources": [
             "adminReportSettings",
-            "reportRoot"
+            "reportRoot",
+            "sharePointReportSettings"
           ],
           "complexTypes": [
             "admin",

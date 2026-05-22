@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /admin/reportSettings/sharePoint/apiusagereportmetrics
+GET /admin/reportSettings/sharePoint/apiUsageReportMetrics
 ```
 
 ## Optional query parameters
@@ -66,7 +66,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/reportSettings/sharePoint/apiusagereportmetrics
+GET https://graph.microsoft.com/beta/admin/reportSettings/sharePoint/apiUsageReportMetrics
 ```
 
 ### Response

@@ -16,9 +16,6 @@ Namespace: microsoft.graph
 
 Represents the enablement status of a specific API usage report metric for SharePoint. This resource indicates whether a particular metric is being collected and reported.
 
-## Methods
-None.
-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
