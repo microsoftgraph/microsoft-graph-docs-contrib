@@ -229,7 +229,7 @@ Content-type: application/json
       "@odata.type": "#microsoft.graph.teamworkSection",
       "@odata.etag": "\"1742515200\"",
       "id": "b2c3d4e5-f6a7-8901-bcde-f12345678901",
-      "displayName": "TeamsAndChannels",
+      "displayName": "Teams and Channels",
       "sectionType": "systemDefined",
       "sortType": "nameAlphabetical",
       "isExpanded": true,

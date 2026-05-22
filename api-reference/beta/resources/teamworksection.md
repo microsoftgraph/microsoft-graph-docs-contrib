@@ -62,7 +62,7 @@ System-defined sections are provisioned by the service and appear in every user'
 | MeetingChats | The meeting chats section. |
 | EngageCommunities | The communities section. |
 
-System-defined sections can't be deleted, and only the **sortType** property can be updated. Attempts to update other properties or to delete a system-defined section return `403 Forbidden`. Listing [items](teamworksectionitem.md) on a system-defined section by calling [List items](../api/teamworksection-list-items.md) isn't supported and returns `400 Bad Request`. When [List sections](../api/userteamwork-list-sections.md) or [Get teamworkSection](../api/teamworksection-get.md) is called with `?$expand=items`, system-defined sections are returned with an empty **items** array because system-defined section contents aren't exposed through the public Graph API.
+System-defined sections can't be deleted, and only the **sortType** property can be updated. Attempts to update other properties or to delete a system-defined section return `403 Forbidden`. Listing [items](teamworksectionitem.md) on a system-defined section by calling [List items](../api/teamworksection-list-items.md) isn't supported and returns `400 Bad Request`. When either [List sections](../api/userteamwork-list-sections.md) or [Get teamworkSection](../api/teamworksection-get.md) is called with `?$expand=items`, system-defined sections are returned with an empty **items** array because system-defined section contents aren't exposed through the public Graph API.
 
 ### sectionSortType values
 
