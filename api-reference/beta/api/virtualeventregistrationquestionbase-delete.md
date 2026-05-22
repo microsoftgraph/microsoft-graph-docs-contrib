@@ -1,6 +1,6 @@
 ---
 title: "Delete virtualEventRegistrationQuestionBase"
-description: "Delete a registration question from a webinar or townhall."
+description: "Delete a registration question from a webinar or town hall."
 author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
