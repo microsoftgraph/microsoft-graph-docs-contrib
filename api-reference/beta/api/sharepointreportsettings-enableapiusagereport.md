@@ -65,7 +65,7 @@ If successful, this action returns a `200 OK` response code and an [apiUsageRepo
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "sharepointreportsettingsthis.enableapiusagereport"
+  "name": "sharepointreportsettings_enableapiusagereport"
 }
 -->
 ``` http
