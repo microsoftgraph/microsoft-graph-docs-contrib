@@ -792,6 +792,8 @@ items:
     items:
     - name: Admin
       href: ../../resources/admin.md
+    - name: API usage report enablement status
+      href: ../../resources/apiusagereportenablementstatus.md
     - name: Office 365 active user counts
       href: ../../resources/office365activeusercounts.md
     - name: Office 365 active user detail
