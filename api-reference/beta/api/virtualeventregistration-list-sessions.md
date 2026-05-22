@@ -45,7 +45,7 @@ GET /solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}
 To list the sessions registrations of a town hall:
 
 ```http
-GET /solutions/virtualEvents/townhallS/{townhallId}/registrations/{registrationId}/sessions
+GET /solutions/virtualEvents/townhalls/{townhallId}/registrations/{registrationId}/sessions
 ```
 
 ## Request headers

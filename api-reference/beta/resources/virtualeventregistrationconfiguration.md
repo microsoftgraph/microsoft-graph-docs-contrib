@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the registration configuration of a [virtualEventWebinar](../resources/virtualeventwebinar.md).
+Represents the registration configuration of a virtual event, such as a webinar or town hall.
 Base type of [virtualEventWebinarRegistrationConfiguration](../resources/virtualeventwebinarregistrationconfiguration.md) and [virtualEventTownhallRegistrationConfiguration](../resources/virtualeventtownhallregistrationconfiguration.md).  
 
 Inherits from [entity](../resources/entity.md).

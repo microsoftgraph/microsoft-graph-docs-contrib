@@ -24,15 +24,15 @@
           "ChangedApiName": "isManualApprovalEnabled",
           "ChangeType": "Addition",
           "Description": "Added the **isManualApprovalEnabled** property to the [virtualEventWebinarRegistrationConfiguration ](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventWebinarRegistrationConfiguration?view=graph-rest-beta) resource.",
-          "Target": "virtualEventWebinarRegistrationConfiguration "
+          "Target": "virtualEventWebinarRegistrationConfiguration"
         },
         {
           "Id": "b1e145ad-965e-474e-afa6-28a008f989a4",
           "ApiChange": "Property",
           "ChangedApiName": "isWaitlistEnabled",
           "ChangeType": "Addition",
-          "Description": "Added the **isWaitlistEnabled** property to the [virtualEventWebinarRegistrationConfiguration ](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventWebinarRegistrationConfiguration ?view=graph-rest-beta) resource.",
-          "Target": "virtualEventWebinarRegistrationConfiguration "
+          "Description": "Added the **isWaitlistEnabled** property to the [virtualEventWebinarRegistrationConfiguration ](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventWebinarRegistrationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "virtualEventWebinarRegistrationConfiguration"
         },
         {
           "Id": "b1e145ad-965e-474e-afa6-28a008f989a4",

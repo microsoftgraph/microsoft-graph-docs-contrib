@@ -116,6 +116,10 @@ Added the [contentActivityMetadata](/graph/api/resources/contentactivitymetadata
 
 Use the **scopeInfo** property on [teamsAppInstallation](/graph/api/resources/teamsappinstallation?view=graph-rest-beta&preserve-view=true) to get the details of the scope in which the app is installed.
 
+### Teamwork and communications | Calls and online meetings
+
+ - Use the [virtualEventTownhallRegistrationConfiguration](/graph/api/resources/virtualeventtownhallregistrationconfiguration?view=graph-rest-beta&preserve-view=true) resource to manage attendee access for town halls and enable more controlled, scalable audience management.
+
 ## April 2026: New and generally available
 
 ### Applications
@@ -260,11 +264,7 @@ Updated the capabilities of the [auditLogQuery](/graph/api/resources/security-au
 ### Security | Microsoft Defender for Identity
 
 Use the **sensorTypes** property on [sensorCandidate](/graph/api/resources/security-sensorcandidate?view=graph-rest-beta&preserve-view=true) to get the list of device types for the sensor.
-
-### Teamwork and communications | Calls and online meetings
-
-Added the [registration configuration](/graph/api/resources/virtualeventtownhallregistrationconfiguration?view=graph-rest-beta&preserve-view=true) to the [virtualEventTownhall](/graph/api/resources/virtualeventtownhall?view=graph-rest-beta&preserve-view=true). Organizers can manage attendee access using registration settings on the **virtualEventTownhallRegistrationConfiguration** resource. This update enables more controlled and scalable audience management for large‑scale town hall experiences. 
-
+ 
 ### Teamwork and communications | Messaging
 
 - Use the targeted messages APIs to manage messages in Microsoft Teams that are visible only to specified recipients within group chats or channels:
