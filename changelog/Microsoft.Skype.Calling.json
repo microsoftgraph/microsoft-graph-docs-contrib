@@ -31,7 +31,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isWaitlistEnabled",
           "ChangeType": "Addition",
-          "Description": "Added the **isWaitlistEnabled** property to the [virtualEventWebinarRegistrationConfiguration ](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventWebinarRegistrationConfiguration?view=graph-rest-beta) resource.",
+          "Description": "Added the **isWaitlistEnabled** property to the [virtualEventWebinarRegistrationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventWebinarRegistrationConfiguration?view=graph-rest-beta) resource.",
           "Target": "virtualEventWebinarRegistrationConfiguration"
         },
         {
