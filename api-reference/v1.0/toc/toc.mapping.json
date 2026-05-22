@@ -809,7 +809,6 @@
             "onPremisesDirectorySynchronization",
             "organization",
             "orgContact",
-            "tenantInformation",
             "bitlockerRecoveryKey",
             "deviceLocalCredentialInfo"
           ],
@@ -1213,6 +1212,7 @@
                 "smsAuthenticationMethodConfiguration",
                 "temporaryAccessPassAuthenticationMethodConfiguration",
                 "softwareOathAuthenticationMethodConfiguration",
+                "verifiableCredentialsAuthenticationMethodConfiguration",
                 "voiceAuthenticationMethodConfiguration",
                 "x509CertificateAuthenticationMethodConfiguration"
               ]
@@ -2305,7 +2305,7 @@
     },
     {
       "name": "Tenants",
-      "shouldSort": false,
+      "shouldSort": true,
       "overview": "../../resources/tenants-overview.md",
       "keywords": [
         "tenant management",
@@ -2316,6 +2316,9 @@
         "multitenant",
         "backup",
         "recovery"
+      ],
+      "resources": [
+        "tenantInformation"
       ],
       "childNodes": [
         {
@@ -2448,5 +2451,4 @@
     }
   ]
 }
-
 
