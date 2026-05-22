@@ -52,6 +52,7 @@ You can specify the following properties when you create a [virtualEventTownhall
 |Property|Type|Description|
 |:---|:---|:---|
 | audience | [meetingAudience](../resources/virtualeventtownhall.md#meetingaudience-values) | The audience to whom the town hall is visible. |
+| capacity | Integer | Represents the expected number of attendees for virtual events. |
 | coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | The identity information of coorganizers of the town hall. |
 | description | [itemBody](../resources/itembody.md) | A description of the town hall. |
 | displayName | String | Display name of the town hall. |
@@ -104,7 +105,8 @@ Accept-Language: en-US
     ],
     "settings": {
       "isAttendeeEmailNotificationEnabled": false
-    }
+    },
+    "capacity": 5000
 }
 ```
 
@@ -146,6 +148,7 @@ Accept-Language: en-US
       "timeZone": "Pacific Standard Time" 
     },
     "audience": "organization",
+    "capacity": 5000,
     "createdBy": {
       "application": null,
       "device": null,

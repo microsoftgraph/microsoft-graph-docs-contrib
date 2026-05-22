@@ -116,6 +116,10 @@ Added the [contentActivityMetadata](/graph/api/resources/contentactivitymetadata
 
 Use the **scopeInfo** property on [teamsAppInstallation](/graph/api/resources/teamsappinstallation?view=graph-rest-beta&preserve-view=true) to get the details of the scope in which the app is installed.
 
+### Teamwork and communications | Calls and online meetings
+
+Introduce the`capacity` property to  [virtual event town hall](/graph/api/resources/virtualeventtownhall) and [virtual event session](/graph/api/resources/virtualeventsession). This property allows customers to specify the expected attendee size when creating or updating town hall and retrieve it later. Validation ensures compliance with SKU and licensing limits, returning actionable errors when capacity exceeds entitlement.  
+
 ## April 2026: New and generally available
 
 ### Applications
@@ -182,6 +186,7 @@ Manage Teams apps at the channel level within a team using the following APIs:
 ### Agents
 
 Added deprecation notices to the [agentRegistry](/graph/api/resources/agentregistry?view=graph-rest-beta&preserve-view=true), [agentCardManifest](/graph/api/resources/agentcardmanifest?view=graph-rest-beta&preserve-view=true), [agentCollection](/graph/api/resources/agentcollection?view=graph-rest-beta&preserve-view=true), and [agentInstance](/graph/api/resources/agentinstance?view=graph-rest-beta&preserve-view=true) resources and their related operations. These Agent Registry APIs will be replaced by Agent 365-based APIs starting May 1, 2026.
+
 
 ### Applications
 
