@@ -33,7 +33,7 @@ The following API use cases are supported for managing applications through the 
 | Use cases | API operations |
 | -- | -- |
 | Register an application and configure its basic properties | [Create application](../api/application-post-applications.md) |
-| Configure properties for a registered application including:  <ul><li>Basic properties such as display name, logo, and tags</li><li>Permissions</li><li>Assign apps to users</li><li>Set the basic identifier URIs</li><li>The Microsoft accounts that the app supports</li><li>App roles</li></ul> | [Update application](../api/application-update.md) |
+| Configure properties for a registered application including:  <ul><li>Basic properties such as display name, logo, and tags</li><li>Permissions</li><li>Assign apps to users</li><li>Set the basic identifier URIs</li><li>The Microsoft accounts that the app supports</li><li>Deactivate an app without deleting it</li><li>App roles</li></ul> | [Update application](../api/application-update.md) |
 | Delete an application | [Delete application](../api/application-delete.md) |
 | Manage deleted applications | <ul><li>[List deletedItems](../api/directory-deleteditems-list.md)</li><li>[List deletedItems owners by a user](../api/directory-deleteditems-getuserownedobjects.md)</li><li>[Get deleted item](../api/directory-deleteditems-get.md)</li><li>[Permanently delete item](../api/directory-deleteditems-delete.md)</li><li>[Restore deleted item](../api/directory-deleteditems-restore.md)</li></ul> |
 | Manage password credentials for an application | <ul><li>[application: addPassword](../api/application-addpassword.md)</li><li>[application: removePassword](../api/application-removepassword.md)</li></ul> |

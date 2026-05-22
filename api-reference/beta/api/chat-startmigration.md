@@ -21,6 +21,10 @@ You can define a minimum timestamp for content migration that enables the import
 - The **createdDateTime** can only be moved towards the past.
 - The **createdDateTime** can't be updated to a value newer than the current **createdDateTime**.
 
+> [!NOTE]
+> - The application that calls **startMigration** owns the migration session end to end. The same application must call [import message](chat-post-messages.md#example-2-import-a-message) and [completeMigration](chat-completemigration.md) for the same thread. No other application can invoke these APIs on the thread until the owning application completes the migration.
+> - Once a chat enters migration mode, a banner is displayed in the Teams client that indicates the conversation is in import mode. This banner remains visible until migration is completed by [completeMigration](chat-completemigration.md).
+
 [!INCLUDE [chat-support](../../includes/supported-chats-for-import.md)]
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -51,7 +55,7 @@ In the request body, supply a JSON representation of the following parameters.
 
 | Parameter       | Type | Description |
 |:---------------|:--------|:--------|
-|conversationCreationDateTime|DateTimeOffset|The minimum timestamp for the messages to be migrated. The timestamp must be older than the current **createdDateTime** of the channel. If not provided, the current date and time is used. Optional.|
+|conversationCreationDateTime|DateTimeOffset|The minimum timestamp for the messages to be migrated. The timestamp must be older than the current **createdDateTime** of the chat. If not provided, the current date and time is used. Optional.|
 
 ## Response
 
@@ -197,7 +201,7 @@ HTTP/1.1 400 Bad Request
 ## Related content
 
 - [chat: completeMigration](chat-completemigration.md)
-- [Import message with older timestamp](channel-post-messages.md#example-2-import-messages)
+- [Import a message](chat-post-messages.md#example-2-import-a-message).
 - [Get message import status](chatmessage-get.md)
 - [channel: completeMigration](channel-completemigration.md)
 - [channel: startMigration](channel-startmigration.md)

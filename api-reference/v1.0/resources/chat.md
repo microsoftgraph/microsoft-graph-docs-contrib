@@ -32,6 +32,8 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 |[Remove member](../api/chat-delete-members.md)|None|Remove a user from the chat.|
 |[Get chat between user and app](../api/userscopeteamsappinstallation-get-chat.md) | [chat](chat.md)| Get one-on-one chat between user and the app |
 |[Remove all access for user](../api/chat-removeallaccessforuser.md)|None|Remove access to a chat for a user.|
+|[Start migration](../api/chat-startmigration.md)|[chat](chat.md)| Start the migration of external messages by enabling migration mode in an existing [chat](../resources/chat.md).|
+|[Complete migration](../api/chat-completemigration.md)|[chat](chat.md)| Complete the migration of external messages by removing migration mode from a [chat](../resources/chat.md).|
 | **Messages** |||
 |[List messages in a chat](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a chat. |
 |[Get message reply](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Get a single message in a chat. |
@@ -67,7 +69,9 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 | id| String| The chat's unique identifier. Read-only.|
 | isHiddenForAllMembers | Boolean | Indicates whether the chat is hidden for all its members. Read-only.|
 | lastUpdatedDateTime| dateTimeOffset|  Date and time at which the chat was renamed or the list of members was last changed. Read-only.|
+| migrationMode|[migrationMode](../resources/channel.md#migrationmode-values)|Indicates whether a chat is in migration mode. This value is `null` for chats that never entered migration mode. The possible values are: `inProgress`, `completed`, `unknownFutureValue`.|
 | onlineMeetingInfo | [teamworkOnlineMeetingInfo](../resources/teamworkonlinemeetinginfo.md) | Represents details about an online meeting. If the chat isn't associated with an online meeting, the property is empty. Read-only.|
+| originalCreatedDateTime|dateTimeOffset|Timestamp of the original creation time for the chat. The value is `null` if the chat never entered migration mode.|
 | tenantId| String | The identifier of the tenant in which the chat was created. Read-only.|
 | topic| String|  (Optional) Subject or topic for the chat. Only available for group chats.|
 | viewpoint|[chatViewpoint](../resources/chatviewpoint.md)|Represents caller-specific information about the chat, such as the last message read date and time. This property is populated only when the request is made in a delegated context.|
@@ -106,21 +110,18 @@ The following JSON representation shows the resource type.
 
 ```json
 {
-  "createdDateTime": "dateTimeOffset",
-  "chatType": "string",
-  "id": "string (identifier)",  
+  "chatType": "String",
+  "createdDateTime": "String (timestamp)",
+  "id": "String (identifier)",
   "isHiddenForAllMembers": "Boolean",
-  "lastUpdatedDateTime": "dateTimeOffset",
-  "onlineMeetingInfo": {
-    "@odata.type": "microsoft.graph.teamworkOnlineMeetingInfo"
-  },
-  "tenantId": "string",
-  "topic": "string",
-  
-  "viewpoint": {
-    "@odata.type": "microsoft.graph.chatViewpoint"
-  },
-  "webUrl": "string",
+  "lastUpdatedDateTime": "String (timestamp)",
+  "migrationMode": "String",
+  "onlineMeetingInfo": {"@odata.type": "microsoft.graph.teamworkOnlineMeetingInfo"},
+  "originalCreatedDateTime": "String (timestamp)",
+  "tenantId": "String",
+  "topic": "String",
+  "viewpoint": {"@odata.type": "microsoft.graph.chatViewpoint"},
+  "webUrl": "String"
 }
 ```
 

@@ -1,6 +1,6 @@
 ---
 title: "Create question"
-description: "Create a registration question for a webinar."
+description: "Create a registration question for a webinar or town hall."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -11,7 +11,9 @@ ms.date: 08/13/2024
 # Create question
 Namespace: microsoft.graph
 
-Create a [registration question](../resources/virtualeventregistrationquestionbase.md) for a [webinar](../resources/virtualeventwebinar.md).
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Create a [registration question](../resources/virtualeventregistrationquestionbase.md) for a [webinar](../resources/virtualeventwebinar.md) or [town hall](../resources/virtualeventtownhall.md).
 
 You can create either a [predefined registration question](../resources/virtualeventregistrationpredefinedquestion.md) or a [custom registration question](../resources/virtualeventregistrationcustomquestion.md).
 
@@ -32,6 +34,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ```http
 POST /solutions/virtualEvents/webinars/{webinarId}/registrationConfiguration/questions
+
+POST /solutions/virtualEvents/townhalls/{townhallId}/registrationConfiguration/questions
 ```
 
 ## Request headers

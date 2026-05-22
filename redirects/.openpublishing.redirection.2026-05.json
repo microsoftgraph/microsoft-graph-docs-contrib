@@ -4,6 +4,11 @@
       "source_path_from_root": "/concepts/onenote-branding.md",
       "redirect_url": "https://learn.microsoft.com/en-us/graph/integrate-with-onenote",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/photoupdatesettings-get.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/peopleadminsettings-list-photoupdatesettings?view=graph-rest-beta",
+      "redirect_document_id":false
     }
   ]
 }

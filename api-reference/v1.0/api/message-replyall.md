@@ -121,7 +121,7 @@ The following example shows the response.
   "truncated": true
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 ```
 ### Example 2: Reply-all in MIME format to a message
 ##### Request
@@ -176,4 +176,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

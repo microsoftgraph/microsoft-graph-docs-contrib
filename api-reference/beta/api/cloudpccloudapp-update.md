@@ -47,13 +47,13 @@ PATCH /deviceManagement/virtualEndpoint/cloudApps/{id}
 
 In the request body, supply a JSON representation of the [cloudPcCloudApp](../resources/cloudpccloudapp.md) object.
 
-The following table shows the properties that you can use when you updated a **cloudPcCloudApp**.
+The following table shows the properties that you can use when you update a **cloudPcCloudApp**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|appDetail|[cloudPcCloudAppDetail](../resources/cloudpccloudappdetail.md)|The details about the cloud app. These values come initially from the **appDetail** property of the associated discovered app. The **iconPath**, **iconIndex**, and **commandLineArguments** properties can be changed as needed when you update the cloud app. Supports `$select`.|
-|description|String|The description associated with the cloud app. The maximum allowed length for this property is 512 characters. Supports `$filter`, `$select`, and `$orderBy`.|
-|displayName|String|The display name for the cloud app that appears on the end-user portal and must be unique within a single provisioning policy. It uses the discovered app name as the default value. The maximum allowed length for this property is 64 characters. For example, `Paint`. Supports `$filter`, `$select`, and `$orderBy`.|
+|appDetail|[cloudPcCloudAppDetail](../resources/cloudpccloudappdetail.md)|The details about the cloud app. This is a polymorphic type. Use **@odata.type** to specify the derived type: `#microsoft.graph.cloudPcFilePathAppDetail` for apps with a manually specified file path, or `#microsoft.graph.cloudPcAutomaticDiscoveredAppDetail` for automatically discovered apps. These values come initially from the **appDetail** property of the associated discovered app. The **iconPath**, **iconIndex**, and **commandLineArguments** properties can be changed as needed when you update the cloud app. Supports `$select`. Optional.|
+|description|String|The description associated with the cloud app. The maximum allowed length for this property is 512 characters. Supports `$filter`, `$select`, and `$orderBy`. Optional.|
+|displayName|String|The display name for the cloud app that appears on the end-user portal and must be unique within a single provisioning policy. It uses the discovered app name as the default value. The maximum allowed length for this property is 64 characters. For example, `Paint`. Supports `$filter`, `$select`, and `$orderBy`. Optional.|
 
 ## Response
 
@@ -79,6 +79,7 @@ Content-Type: application/json
   "@odata.type": "#microsoft.graph.cloudPcCloudApp",
   "displayName": "Cloud App example3",
   "appDetail": {
+    "@odata.type": "#microsoft.graph.cloudPcAutomaticDiscoveredAppDetail",
     "iconPath": "C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\powershell_ise.exe"
   }
 }

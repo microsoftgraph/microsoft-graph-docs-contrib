@@ -35,7 +35,7 @@ var requestBody = new CustomTaskExtension
 	CallbackConfiguration = new CustomTaskExtensionCallbackConfiguration
 	{
 		OdataType = "#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
-		TimeoutDuration = TimeSpan.Parse("PT5M"),
+		TimeoutDuration = TimeSpan.Parse("PT30M"),
 	},
 };
 

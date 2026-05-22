@@ -52,7 +52,7 @@ If successful, this method returns a `202 Accepted` response code. It doesn't re
 | Retry-After  | Time period in seconds. Request maker should wait this long after submitting a request to check for the status. |
 
 ## Example
-##### Request
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -98,7 +98,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 
 ```http
 {
