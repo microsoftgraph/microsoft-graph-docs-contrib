@@ -60,80 +60,6 @@ items:
       href: ../../api/configurationsnapshotjob-get.md
     - name: Delete
       href: ../../api/configurationsnapshotjob-delete.md
-- name: Governance (preview)
-  items:
-  - name: Overview
-    href: ../../resources/tenantgovernanceservices-tenantgovernance-overview.md
-  - name: Tenant governance setting
-    items:
-    - name: Tenant governance setting
-      href: ../../resources/tenantgovernanceservices-tenantgovernancesetting.md
-    - name: Get
-      href: ../../api/tenantgovernanceservices-tenantgovernancesetting-get.md
-    - name: Update
-      href: ../../api/tenantgovernanceservices-tenantgovernancesetting-update.md
-    - name: Enable related tenants
-      href: ../../api/tenantgovernanceservices-tenantgovernancesetting-enablerelatedtenants.md
-  - name: Related tenant
-    items:
-    - name: Related tenant
-      href: ../../resources/tenantgovernanceservices-relatedtenant.md
-    - name: List
-      href: ../../api/tenantgovernanceservices-list-relatedtenants.md
-    - name: Get
-      href: ../../api/tenantgovernanceservices-relatedtenant-get.md
-    - name: Refresh
-      href: ../../api/tenantgovernanceservices-relatedtenant-refresh.md
-    - name: Refresh status
-      href: ../../api/tenantgovernanceservices-relatedtenant-refreshstatus.md
-  - name: Governance policy template
-    items:
-    - name: Governance policy template
-      href: ../../resources/tenantgovernanceservices-governancepolicytemplate.md
-    - name: List
-      href: ../../api/tenantgovernanceservices-list-governancepolicytemplates.md
-    - name: Create
-      href: ../../api/tenantgovernanceservices-post-governancepolicytemplates.md
-    - name: Get
-      href: ../../api/tenantgovernanceservices-governancepolicytemplate-get.md
-    - name: Update
-      href: ../../api/tenantgovernanceservices-governancepolicytemplate-update.md
-    - name: Delete
-      href: ../../api/tenantgovernanceservices-delete-governancepolicytemplates.md
-  - name: Governance invitation
-    items:
-    - name: Governance invitation
-      href: ../../resources/tenantgovernanceservices-governanceinvitation.md
-    - name: List
-      href: ../../api/tenantgovernanceservices-list-governanceinvitations.md
-    - name: Create
-      href: ../../api/tenantgovernanceservices-post-governanceinvitations.md
-    - name: Get
-      href: ../../api/tenantgovernanceservices-governanceinvitation-get.md
-    - name: Delete
-      href: ../../api/tenantgovernanceservices-governanceinvitation-delete.md
-  - name: Governance request
-    items:
-    - name: Governance request
-      href: ../../resources/tenantgovernanceservices-governancerequest.md
-    - name: List
-      href: ../../api/tenantgovernanceservices-list-governancerequests.md
-    - name: Create
-      href: ../../api/tenantgovernanceservices-post-governancerequests.md
-    - name: Get
-      href: ../../api/tenantgovernanceservices-governancerequest-get.md
-    - name: Update
-      href: ../../api/tenantgovernanceservices-governancerequest-update.md
-  - name: Governance relationship
-    items:
-    - name: Governance relationship
-      href: ../../resources/tenantgovernanceservices-governancerelationship.md
-    - name: List
-      href: ../../api/tenantgovernanceservices-list-governancerelationships.md
-    - name: Get
-      href: ../../api/tenantgovernanceservices-governancerelationship-get.md
-    - name: Update
-      href: ../../api/tenantgovernanceservices-governancerelationship-update.md
 - name: Cross-tenant access
   displayName: Cross-tenant access settings, XTAP
   items:
@@ -290,6 +216,80 @@ items:
       href: ../../resources/error.md
     - name: Exchange online Cross-tenant migration settings
       href: ../../resources/exchangeonlinecrosstenantmigrationsettings.md
+- name: Governance (preview)
+  items:
+  - name: Overview
+    href: ../../resources/tenantgovernanceservices-tenantgovernance-overview.md
+  - name: Tenant governance setting
+    items:
+    - name: Tenant governance setting
+      href: ../../resources/tenantgovernanceservices-tenantgovernancesetting.md
+    - name: Get
+      href: ../../api/tenantgovernanceservices-tenantgovernancesetting-get.md
+    - name: Update
+      href: ../../api/tenantgovernanceservices-tenantgovernancesetting-update.md
+    - name: Enable related tenants
+      href: ../../api/tenantgovernanceservices-tenantgovernancesetting-enablerelatedtenants.md
+  - name: Related tenant
+    items:
+    - name: Related tenant
+      href: ../../resources/tenantgovernanceservices-relatedtenant.md
+    - name: List
+      href: ../../api/tenantgovernanceservices-list-relatedtenants.md
+    - name: Get
+      href: ../../api/tenantgovernanceservices-relatedtenant-get.md
+    - name: Refresh
+      href: ../../api/tenantgovernanceservices-relatedtenant-refresh.md
+    - name: Refresh status
+      href: ../../api/tenantgovernanceservices-relatedtenant-refreshstatus.md
+  - name: Governance policy template
+    items:
+    - name: Governance policy template
+      href: ../../resources/tenantgovernanceservices-governancepolicytemplate.md
+    - name: List
+      href: ../../api/tenantgovernanceservices-list-governancepolicytemplates.md
+    - name: Create
+      href: ../../api/tenantgovernanceservices-post-governancepolicytemplates.md
+    - name: Get
+      href: ../../api/tenantgovernanceservices-governancepolicytemplate-get.md
+    - name: Update
+      href: ../../api/tenantgovernanceservices-governancepolicytemplate-update.md
+    - name: Delete
+      href: ../../api/tenantgovernanceservices-delete-governancepolicytemplates.md
+  - name: Governance invitation
+    items:
+    - name: Governance invitation
+      href: ../../resources/tenantgovernanceservices-governanceinvitation.md
+    - name: List
+      href: ../../api/tenantgovernanceservices-list-governanceinvitations.md
+    - name: Create
+      href: ../../api/tenantgovernanceservices-post-governanceinvitations.md
+    - name: Get
+      href: ../../api/tenantgovernanceservices-governanceinvitation-get.md
+    - name: Delete
+      href: ../../api/tenantgovernanceservices-governanceinvitation-delete.md
+  - name: Governance request
+    items:
+    - name: Governance request
+      href: ../../resources/tenantgovernanceservices-governancerequest.md
+    - name: List
+      href: ../../api/tenantgovernanceservices-list-governancerequests.md
+    - name: Create
+      href: ../../api/tenantgovernanceservices-post-governancerequests.md
+    - name: Get
+      href: ../../api/tenantgovernanceservices-governancerequest-get.md
+    - name: Update
+      href: ../../api/tenantgovernanceservices-governancerequest-update.md
+  - name: Governance relationship
+    items:
+    - name: Governance relationship
+      href: ../../resources/tenantgovernanceservices-governancerelationship.md
+    - name: List
+      href: ../../api/tenantgovernanceservices-list-governancerelationships.md
+    - name: Get
+      href: ../../api/tenantgovernanceservices-governancerelationship-get.md
+    - name: Update
+      href: ../../api/tenantgovernanceservices-governancerelationship-update.md
 - name: Multitenant organization
   displayName: MTO
   items:
@@ -347,3 +347,11 @@ items:
       href: ../../api/multitenantorganizationidentitysyncpolicytemplate-update.md
     - name: Reset
       href: ../../api/multitenantorganizationidentitysyncpolicytemplate-resettodefaultsettings.md
+- name: Tenant information
+  items:
+  - name: Tenant information
+    href: ../../resources/tenantinformation.md
+  - name: Find tenant by domain name
+    href: ../../api/tenantrelationship-findtenantinformationbydomainname.md
+  - name: Find tenant by tenant ID
+    href: ../../api/tenantrelationship-findtenantinformationbytenantid.md
