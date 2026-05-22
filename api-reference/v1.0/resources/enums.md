@@ -2734,6 +2734,25 @@ Possible values for user account types (group membership), per Windows definitio
 | deliverAfterCampaignEnd |
 | unknownFutureValue |
 
+### notificationEventsType values
+
+| Member |
+| ---- |
+| none |
+| restoreAndPolicyUpdates |
+| unknownFutureValue |
+
+### notificationRecipientsType values
+
+| Member |
+| ---- |
+| none |
+| globalAdmins |
+| backupAdmins |
+| custom |
+| allAdmins |
+| unknownFutureValue |
+
 ### oAuthAppScope values
 
 | Member |
