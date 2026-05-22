@@ -41,14 +41,6 @@
             "ChangeType": "Addition",
             "Description": "Added the [emailNotificationsSetting](https://learn.microsoft.com/en-us/graph/api/resources/emailNotificationsSetting?view=graph-rest-1.0) resource.",
             "Target": "emailNotificationsSetting"
-          },
-          {
-            "Id": "d3dee94f-3c8b-475f-9aaf-b1a94b873b46",
-            "ApiChange": "Resource",
-            "ChangedApiName": "emailIdentity",
-            "ChangeType": "Addition",
-            "Description": "Added the [emailIdentity](https://learn.microsoft.com/en-us/graph/api/resources/emailIdentity?view=graph-rest-1.0) resource.",
-            "Target": "emailIdentity"
           }
         ],
         "Id": "d3dee94f-3c8b-475f-9aaf-b1a94b873b46",
