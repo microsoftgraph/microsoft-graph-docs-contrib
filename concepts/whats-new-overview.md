@@ -118,7 +118,8 @@ Use the **scopeInfo** property on [teamsAppInstallation](/graph/api/resources/te
 
 ### Teamwork and communications | Calls and online meetings
 
-Introduce the`capacity` property to  [virtual event town hall](/graph/api/resources/virtualeventtownhall) and [virtual event session](/graph/api/resources/virtualeventsession). This property allows customers to specify the expected attendee size when creating or updating town hall and retrieve it later. Validation ensures compliance with SKU and licensing limits, returning actionable errors when capacity exceeds entitlement.  
+- Use the [virtualEventTownhallRegistrationConfiguration](/graph/api/resources/virtualeventtownhallregistrationconfiguration?view=graph-rest-beta&preserve-view=true) resource to manage attendee access for town halls and enable more controlled, scalable audience management.
+- Added the `capacity` property to [virtual event town hall](/graph/api/resources/virtualeventtownhall?view=graph-rest-beta&preserve-view=true). This property allows customers to specify the expected attendee size when creating or updating a town hall or session and retrieve it later. Validation ensures compliance with SKU and licensing limits, returning actionable errors when capacity exceeds entitlement.
 
 ## April 2026: New and generally available
 
@@ -265,7 +266,7 @@ Updated the capabilities of the [auditLogQuery](/graph/api/resources/security-au
 ### Security | Microsoft Defender for Identity
 
 Use the **sensorTypes** property on [sensorCandidate](/graph/api/resources/security-sensorcandidate?view=graph-rest-beta&preserve-view=true) to get the list of device types for the sensor.
-
+ 
 ### Teamwork and communications | Messaging
 
 - Use the targeted messages APIs to manage messages in Microsoft Teams that are visible only to specified recipients within group chats or channels:

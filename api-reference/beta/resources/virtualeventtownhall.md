@@ -73,6 +73,8 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 |Relationship|Type|Description|
 |:---|:---|:---|
 | presenters | [virtualEventPresenter](../resources/virtualeventpresenter.md) collection | Presenters' information of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md).|
+| registrationConfiguration | [virtualEventTownhallRegistrationConfiguration](../resources/virtualeventtownhallregistrationconfiguration.md) | Registration configuration of the town hall. |
+| registrations | [virtualEventRegistration](../resources/virtualeventregistration.md) collection | Registration records of the town hall. |
 | sessions | [virtualEventSession](../resources/virtualeventsession.md)  collection | Sessions of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). |
 
 ## JSON representation
@@ -90,19 +92,40 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.virtualEventTownhall",
-  "audience": "String",
-  "capacity": "Integer",
-  "coOrganizers": [{"@odata.type": "microsoft.graph.communicationsUserIdentity"}],
-  "createdBy": {"@odata.type": "microsoft.graph.communicationsIdentitySet"},
-  "description": {"@odata.type": "microsoft.graph.itemBody"},
-  "displayName": "String",
-  "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
-  "externalEventInformation" : [{"@odata.type": "microsoft.graph.virtualEventExternalInformation"}],
   "id": "String (identifier)",
-  "invitedAttendees": [{"@odata.type": "microsoft.graph.identity"}],
-  "isInviteOnly": "Boolean",
-  "settings": {"@odata.type": "microsoft.graph.virtualEventSettings"},
-  "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
-  "status": "String"
+  "status": "String",
+  "displayName": "String",
+  "description": {
+    "@odata.type": "microsoft.graph.itemBody"
+  },
+  "startDateTime": {
+    "@odata.type": "microsoft.graph.dateTimeTimeZone"
+  },
+  "endDateTime": {
+    "@odata.type": "microsoft.graph.dateTimeTimeZone"
+  },
+  "createdBy": {
+    "@odata.type": "microsoft.graph.communicationsIdentitySet"
+  },
+  "settings": {
+    "@odata.type": "microsoft.graph.virtualEventSettings"
+  },
+  "externalEventInformation": [
+    {
+      "@odata.type": "microsoft.graph.virtualEventExternalInformation"
+    }
+  ],
+  "audience": "String",
+  "coOrganizers": [
+    {
+      "@odata.type": "microsoft.graph.communicationsUserIdentity"
+    }
+  ],
+  "invitedAttendees": [
+    {
+      "@odata.type": "microsoft.graph.identity"
+    }
+  ],
+  "isInviteOnly": "Boolean"
 }
 ```
