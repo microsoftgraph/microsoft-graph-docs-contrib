@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "a38378c7-f9c4-4995-9869-d664e67c082c",
+          "ApiChange": "Property",
+          "ChangedApiName": "targetedAuthenticationMethod",
+          "ChangeType": "Change",
+          "Description": "Updated the **targetedAuthenticationMethod** property of the [authenticationMethodsRegistrationCampaignIncludeTarget](https://learn.microsoft.com/en-us/graph/api/resources/authenticationmethodsregistrationcampaignincludetarget?view=graph-rest-beta) resource to support `Fido2` in addition to `microsoftAuthenticator`. Organizations can now use registration campaigns to nudge users to register and sign in with phishing-resistant passkeys (FIDO2).",
+          "Target": "authenticationMethodsRegistrationCampaignIncludeTarget"
+        }
+      ],
+      "Id": "a38378c7-f9c4-4995-9869-d664e67c082c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-05-21T09:35:24.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "4ff140b9-1b5e-4ee9-9658-1e7bf40fb35a",
           "ApiChange": "Resource",
           "ChangedApiName": "verifiableCredentialAuthenticationMethodTarget",
