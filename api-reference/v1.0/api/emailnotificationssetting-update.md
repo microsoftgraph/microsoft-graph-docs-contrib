@@ -52,7 +52,7 @@ PATCH /solutions/backupRestore/emailNotificationsSetting
 |:---|:---|:---|
 |additionalEvents|notificationEventsType|Indicates whether to opt in to additional policy and restore updates. Possible values: `none`, `restoreAndPolicyUpdates`, `unknownFutureValue`.|
 |isEnabled|Boolean|Indicates whether notifications are enabled.|
-|recipients|[notificationRecipients](../resources/notificationrecipients.md)|A list of recipients who receive the notifications.|
+|recipients|[notificationRecipients](../resources/notificationrecipients.md)|Specifies the recipients who receive the notifications.|
 
 ## Response
 

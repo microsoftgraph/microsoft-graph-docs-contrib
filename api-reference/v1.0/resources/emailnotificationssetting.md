@@ -25,7 +25,7 @@ Represents the email settings for multi-admin notifications.
 |:---|:---|:---|
 |additionalEvents|notificationEventsType|Indicates whether to opt in to additional policy and restore updates. Possible values: `none`, `restoreAndPolicyUpdates`, `unknownFutureValue`.|
 |isEnabled|Boolean|Indicates whether notifications are enabled.|
-|recipients|[notificationRecipients](../resources/notificationrecipients.md)|A list of recipients who receive the notifications.|
+|recipients|[notificationRecipients](../resources/notificationrecipients.md)|The notificationRecipients object that specifies the recipients who receive the notifications.|
 
 ## Relationships
 None.
