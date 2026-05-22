@@ -67,6 +67,32 @@
       "SubArea": "Calls and online meetings"
     },
     {
+       "ChangeList": [
+        {
+          "Id": "721aca61-943c-4876-ad1f-063720d75265",
+          "ApiChange": "Property",
+          "ChangedApiName": "capacity",
+          "ChangeType": "Addition",
+          "Description": "Added the **capacity** property to the [town hall](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventtownhall?view=graph-rest-beta) resource.",
+          "Target": "townHall"
+        },
+        {
+          "Id": "721aca61-943c-4876-ad1f-063720d75265",
+          "ApiChange": "Property",
+          "ChangedApiName": "capacity",
+          "ChangeType": "Addition",
+          "Description": "Added the **capacity** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
+          "Target": "virtualEventSession"
+        }
+      ],
+      "Id": "721aca61-943c-4876-ad1f-063720d75265",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2026-05-22T00:27:39.1921591Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call" 
+    },
+    {
       "ChangeList": [
         {
           "Id": "bd16e1cf-95de-4af4-b71c-0be1d682b4ef",

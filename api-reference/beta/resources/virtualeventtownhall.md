@@ -37,6 +37,7 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 |Property|Type|Description|
 |:---|:---|:---|
 | audience | [meetingAudience](#meetingaudience-values) | The audience to whom the town hall is visible. The possible values are: `everyone`, `organization`, `unknownFutureValue`.  |
+| capacity | Integer | Represents the expected number of attendees. |
 | coOrganizers  | [communicationsUserIdentity](communicationsuseridentity.md) collection | Identity information of the coorganizers of the town hall. |
 | createdBy | [communicationsIdentitySet](communicationsidentityset.md) | Identity information of the creator of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). Read-only. |
 | description | [itemBody](../resources/itembody.md) | Description of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). |
