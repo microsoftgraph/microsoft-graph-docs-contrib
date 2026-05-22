@@ -39,9 +39,9 @@ This method supports the `$expand` OData query parameter to help customize the r
 When `$expand=items` is specified, the response includes the **items** collection inline on each section:
 
 - For [user-defined sections](../resources/teamworksection.md#sectiontype-values), the **items** collection contains the chats, channels, meetings, and communities organized within the section.
-- For [system-defined sections](../resources/teamworksection.md#system-defined-sections), the **items** collection is always returned as an empty array (`[]`). System-defined section contents aren't exposed through the public Graph API. To enumerate items in a user-defined section without using `$expand`, use [List items](teamworksection-list-items.md).
+- For [system-defined sections](../resources/teamworksection.md#system-defined-sections), the **items** collection is always returned as an empty array (`[]`). System-defined section contents aren't exposed through the public Graph API. To enumerate items in a user-defined section without using `$expand`, use [List items](../api/teamworksection-list-items.md).
 
-When `$expand=items` is specified, the response doesn't include the **@microsoft.graph.sectionsOrder** and **@microsoft.graph.sectionsVersion** instance annotations. To obtain both the items and these annotations, issue a separate request to [List sections](userteamwork-list-sections.md) without `$expand`.
+When `$expand=items` is specified, the response doesn't include the **@microsoft.graph.sectionsOrder** and **@microsoft.graph.sectionsVersion** instance annotations. To obtain both the items and these annotations, issue a separate request without `$expand`.
 
 ## Request headers
 
@@ -171,41 +171,14 @@ The following example uses `$expand=items` to return each section together with 
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_teamworksections_expand_items",
   "sampleKeys": ["10f8c3a6-3e2a-4e8b-9c7d-5a4b6c8d9e0f"]
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/users/10f8c3a6-3e2a-4e8b-9c7d-5a4b6c8d9e0f/teamwork/sections?$expand=items
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-teamworksections-expand-items-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-teamworksections-expand-items-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-teamworksections-expand-items-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-teamworksections-expand-items-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-teamworksections-expand-items-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/list-teamworksections-expand-items-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 

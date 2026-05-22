@@ -96,7 +96,7 @@ Use the **scopeInfo** property on [teamsAppInstallation](/graph/api/resources/te
 
 ### Teamwork and communications | Messaging
 
-Added support for `$expand` on the **items** relationship of [teamworkSection](/graph/api/resources/teamworksection?view=graph-rest-beta&preserve-view=true) so that you can retrieve a section together with its chats, channels, meetings, and communities in a single request when calling [List sections](/graph/api/userteamwork-list-sections?view=graph-rest-beta&preserve-view=true) or [Get teamworkSection](/graph/api/teamworksection-get?view=graph-rest-beta&preserve-view=true).
+Added support for `$expand` on the **items** relationship of the [teamworkSection](/graph/api/resources/teamworksection?view=graph-rest-beta&preserve-view=true) resource to retrieve a section together with its chats, channels, meetings, and communities in a single request.
 
 ## April 2026: New and generally available
 
