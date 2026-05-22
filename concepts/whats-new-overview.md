@@ -123,7 +123,7 @@ Use the **scopeInfo** property on [teamsAppInstallation](/graph/api/resources/te
 
 ### Teamwork and communications | Messaging
 
-Added support for `$expand` on the **items** relationship of the [teamworkSection](/graph/api/resources/teamworksection?view=graph-rest-beta&preserve-view=true) resource to retrieve a section together with its chats, channels, meetings, and communities in a single request.
+Added support for `$expand` on the **items** relationship of the [teamworkSection](/graph/api/resources/teamworksection?view=graph-rest-beta&preserve-view=true) resource to retrieve a section together with its items in a single request.
 
 ### Teamwork and communications | Calls and online meetings
 
