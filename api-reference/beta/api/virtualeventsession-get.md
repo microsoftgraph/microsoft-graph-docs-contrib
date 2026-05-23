@@ -169,7 +169,8 @@ Content-Type: application/json
     "recordAutomatically": null,
     "watermarkProtection": null,
     "allowParticipantsToChangeName": null,
-    "meetingSpokenLanguageTag": "en-US"
+    "meetingSpokenLanguageTag": "en-US",
+    "capacity": 10000
   }
 }
 ```
