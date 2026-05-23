@@ -17,7 +17,7 @@ Resource-specific consent (RSC) allows apps to request permissions scoped to a s
 |:---|:---|:---|
 | VirtualEvent.Read.Chat | [Webinar](/graph/api/resources/virtualeventwebinar) and [town hall](/graph/api/resources/virtualeventtownhall) | Read information for this webinar or town hall, including schedules, speakers, event settings, and webinar registrations. |
 | OnlineMeetingArtifact.Read.Chat | [Attendance report](/graph/api/resources/meetingattendancereport) and [attendance record](/graph/api/resources/attendancerecord) | Read attendance reports and attendance records for this webinar or town hall.  |
-| VirtualEventRegistration-Anon.ReadWrite.Chat | [Virtual event registrations](/graph/api/resources/virtualeventregistration) | Register attendees and cancel registrations for this webinar. |
+| VirtualEventRegistration-Anon.ReadWrite.Chat | [Virtual event registrations](/graph/api/resources/virtualeventregistration) | Register attendees and cancel registrations for this webinar or town hall. |
 
 #### Traditional authentication flow
 
