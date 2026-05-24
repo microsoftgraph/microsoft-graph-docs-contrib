@@ -1,7 +1,7 @@
 ---
 title: "apiUsageReportEnablementStatus resource type"
 description: "Represents the enablement status of a specific API usage report metric."
-author: "abkakhan"
+author: "abhishekkakhandiki"
 ms.date: 05/21/2026
 ms.localizationpriority: medium
 ms.subservice: "reports"

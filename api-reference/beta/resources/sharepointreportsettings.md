@@ -1,7 +1,7 @@
 ---
 title: "sharePointReportSettings resource type"
 description: "Represents the tenant-level settings for SharePoint API usage reports."
-author: "abkakhan"
+author: "abhishekkakhandiki"
 ms.date: 05/21/2026
 ms.localizationpriority: medium
 ms.subservice: "reports"

@@ -1,7 +1,7 @@
 ---
 title: "sharePointReportSettings: disableApiUsageReport"
 description: "Disable a SharePoint API usage report metric for the tenant."
-author: "abkakhan"
+author: "abhishekkakhandiki"
 ms.date: 05/21/2026
 ms.localizationpriority: medium
 ms.subservice: "reports"
