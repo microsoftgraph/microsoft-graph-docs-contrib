@@ -444,6 +444,34 @@ items:
       items:
       - name: Token protection status details
         href: ../../resources/tokenprotectionstatusdetails.md
+  - name: Identity correlation reports (preview)
+    items:
+    - name: Correlated identity
+      items:
+      - name: Correlated identity
+        href: ../../resources/correlatedidentity.md
+      - name: List
+        href: ../../api/identitycorrelation-list-identities.md
+      - name: Get
+        href: ../../api/correlatedidentity-get.md
+    - name: Identity correlation
+      items:
+      - name: Identity correlation
+        href: ../../resources/identitycorrelation.md
+      - name: List
+        href: ../../api/reportroot-list-correlations.md
+      - name: Get
+        href: ../../api/identitycorrelation-get.md
+      - name: List identities
+        href: ../../api/identitycorrelation-list-identities.md
+    - name: Complex types
+      items:
+      - name: Attribute info
+        href: ../../resources/attributeinfo.md
+      - name: Correlation error
+        href: ../../resources/correlationerror.md
+      - name: Identity info
+        href: ../../resources/identityinfo.md
 - name: Monitoring reports (preview)
   items:
   - name: Overview
