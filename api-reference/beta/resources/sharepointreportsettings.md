@@ -6,6 +6,7 @@ ms.date: 05/21/2026
 ms.localizationpriority: medium
 ms.subservice: "reports"
 doc_type: resourcePageType
+toc.title: SharePoint report settings
 ---
 
 # sharePointReportSettings resource type
