@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 05/18/2026
+ms.date: 05/25/2026
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -3861,6 +3861,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | 432e76f0-8af6-4315-a853-66ab9538f480 | b3e5ebc6-1c23-4337-8286-3f27165addb4 |
 | DisplayText | Read and write all scenario monitoring alerts | Read and write all scenario monitoring alert configurations. |
 | Description | Allows the app to read and write all scenario monitoring alerts, without a signed-in user. | Allows the app to read and write all scenario monitoring alert configurations, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### IdentityNotifications.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 52ced3dd-dbb6-41a0-9ce5-61a056be97b8 | 59cd3e28-aa9c-4f72-a734-1b592eb06853 |
+| DisplayText | Read all identity notification settings and templates | Read identity notification settings and templates |
+| Description | Allows the app to read identity notification settings, email templates, and prerequisites without a signed-in user. | Allows the app to read identity notification settings, email templates, and prerequisites on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### IdentityNotifications.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | d9fe7b9f-cb27-4289-9cb4-54debd9d3c25 | c9c9fdea-4ecc-4d82-a2ea-3feff3489275 |
+| DisplayText | Read and write all identity notification settings and templates | Read and write identity notification settings and templates |
+| Description | Allows the app to read and write identity notification settings, customize email templates, and send test emails without a signed-in user. | Allows the app to read and write identity notification settings, customize email templates, and send test emails on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
