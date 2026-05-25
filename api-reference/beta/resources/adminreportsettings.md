@@ -33,7 +33,7 @@ Represents the tenant-level settings for Microsoft 365 reports.
 
 | Relationship | Type | Description |
 | ------------ | ---- | ----------- |
-| sharePoint | [sharePointReportSettings](../resources/sharepointreportsettings.md) | A container for SharePoint-specific report settings. Access the SharePoint API usage report metrics through the operations defined on this resource type. |
+| sharePoint | [sharePointReportSettings](../resources/sharepointreportsettings.md) | A container for SharePoint-specific report settings. Access the SharePoint API usage report metrics through the operations defined on the [sharePointReportSettings](../resources/sharepointreportsettings.md) resource type. |
 
 ## JSON representation
 

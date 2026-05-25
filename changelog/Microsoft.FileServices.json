@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "apiUsageReportEnablementStatus",
           "ChangeType": "Addition",
-          "Description": "Added the [apiUsageReportEnablementStatus](https://learn.microsoft.com/en-us/graph/api/resources/apiusagereportenablementstatus?view=graph-rest-beta) resource.",
+          "Description": "Added the [apiUsageReportEnablementStatus](https://learn.microsoft.com/en-us/graph/api/resources/apiusagereportenablementstatus?view=graph-rest-beta) resource type.",
           "Target": "apiUsageReportEnablementStatus"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharePointReportSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [sharePointReportSettings](https://learn.microsoft.com/en-us/graph/api/resources/sharepointreportsettings?view=graph-rest-beta) resource.",
+          "Description": "Added the [sharePointReportSettings](https://learn.microsoft.com/en-us/graph/api/resources/sharepointreportsettings?view=graph-rest-beta) resource and an associated method.",
           "Target": "sharePointReportSettings"
         },
         {
@@ -49,21 +49,13 @@
           "ChangeType": "Addition",
           "Description": "Added the [enableApiUsageReport](https://learn.microsoft.com/en-us/graph/api/sharepointreportsettings-enableapiusagereport?view=graph-rest-beta) method to the [sharePointReportSettings](https://learn.microsoft.com/en-us/graph/api/resources/sharepointreportsettings?view=graph-rest-beta) resource.",
           "Target": "sharePointReportSettings"
-        },
-        {
-          "Id": "47429c7d-024e-4b43-ac1a-43f466fcbe10",
-          "ApiChange": "Method",
-          "ChangedApiName": "List apiUsageReportMetrics",
-          "ChangeType": "Addition",
-          "Description": "Added the [List apiUsageReportMetrics](https://learn.microsoft.com/en-us/graph/api/sharepointreportsettings-list-apiusagereportmetrics?view=graph-rest-beta) method to the [sharePointReportSettings](https://learn.microsoft.com/en-us/graph/api/resources/sharepointreportsettings?view=graph-rest-beta) resource.",
-          "Target": "sharePointReportSettings"
         }
       ],
       "Id": "47429c7d-024e-4b43-ac1a-43f466fcbe10",
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2026-05-21T16:37:14.4021233Z",
-      "WorkloadArea": "Files",
+      "WorkloadArea": "Sites and lists",
       "SubArea": ""
     },
     {

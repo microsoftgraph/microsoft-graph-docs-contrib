@@ -1,20 +1,20 @@
 ---
-title: "List apiUsageReportMetrics"
-description: "Get the list of SharePoint API usage report metrics and their enablement status for the tenant."
-author: "abhishekkakhandiki"
-ms.date: 05/21/2026
+title: "Get identityCorrelation"
+description: "Get an identity correlation report."
+author: "tolian"
+ms.date: 05/07/2026
 ms.localizationpriority: medium
-ms.subservice: "reports"
+ms.subservice: "entra-monitoring-health"
 doc_type: apiPageType
 ---
 
-# List apiUsageReportMetrics
+# Get identityCorrelation
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of [SharePoint API usage report metrics and their enablement status](../resources/apiusagereportenablementstatus.md) for the tenant. Currently, only the `EgressReport` metric is supported.
+Get an [identityCorrelation](../resources/identitycorrelation.md) object.
 
 ## Permissions
 
@@ -22,10 +22,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "sharepointreportsettings-list-apiusagereportmetrics-permissions"
+  "name": "identitycorrelation-get-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/sharepointreportsettings-list-apiusagereportmetrics-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/identitycorrelation-get-permissions.md)]
+
+[!INCLUDE [rbac-identity-correlation-apis-read](../includes/rbac-for-apis/rbac-identity-correlation-apis-read.md)]
 
 ## HTTP request
 
@@ -34,12 +36,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-GET /admin/reportSettings/sharePoint/apiUsageReportMetrics
+GET /reports/correlations/{identityCorrelationId}
 ```
 
 ## Optional query parameters
 
-This method doesn't support the [OData query parameters](/graph/query-parameters) to help customize the response.
+Not supported.
 
 ## Request headers
 
@@ -53,7 +55,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [apiUsageReportEnablementStatus](../resources/apiusagereportenablementstatus.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and an [identityCorrelation](../resources/identitycorrelation.md) object in the response body.
 
 ## Examples
 
@@ -62,11 +64,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "list_apiusagereportmetrics"
+  "name": "get_identitycorrelation"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/admin/reportSettings/sharePoint/apiUsageReportMetrics
+GET https://graph.microsoft.com/beta/reports/correlations/{identityCorrelationId}
 ```
 
 ### Response
@@ -76,7 +78,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.apiUsageReportEnablementStatus)"
+  "@odata.type": "microsoft.graph.identityCorrelation"
 }
 -->
 ``` http
@@ -84,12 +86,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.apiUsageReportEnablementStatus",
-      "metric": "EgressReport",
-      "onboardingStatus": "enabled"
-    }
-  ]
+  "@odata.type": "#microsoft.graph.identityCorrelation",
+  "id": "a1b2c3d4-5678-90ab-cdef-1234567890ab",
+  "startDateTime": "2026-05-01T00:00:00Z",
+  "endDateTime": "2026-05-01T01:30:00Z",
+  "error": null,
+  "servicePrincipal": {
+    "id": "550e8400-e29b-41d4-a716-446655440000"
+  }
 }
 ```
