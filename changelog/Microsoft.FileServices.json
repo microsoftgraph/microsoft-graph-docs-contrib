@@ -49,14 +49,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [enableApiUsageReport](https://learn.microsoft.com/en-us/graph/api/sharepointreportsettings-enableapiusagereport?view=graph-rest-beta) method to the [sharePointReportSettings](https://learn.microsoft.com/en-us/graph/api/resources/sharepointreportsettings?view=graph-rest-beta) resource.",
           "Target": "sharePointReportSettings"
-        },
-        {
-          "Id": "47429c7d-024e-4b43-ac1a-43f466fcbe10",
-          "ApiChange": "Method",
-          "ChangedApiName": "List apiUsageReportMetrics",
-          "ChangeType": "Addition",
-          "Description": "Added the [List apiUsageReportMetrics](https://learn.microsoft.com/en-us/graph/api/sharepointreportsettings-list-apiusagereportmetrics?view=graph-rest-beta) method to the [sharePointReportSettings](https://learn.microsoft.com/en-us/graph/api/resources/sharepointreportsettings?view=graph-rest-beta) resource.",
-          "Target": "sharePointReportSettings"
         }
       ],
       "Id": "47429c7d-024e-4b43-ac1a-43f466fcbe10",
