@@ -2760,12 +2760,10 @@
           "overview": "../../resources/report.md",
           "resources": [
             "adminReportSettings",
-            "reportRoot",
-            "sharePointReportSettings"
+            "reportRoot"
           ],
           "complexTypes": [
             "admin",
-            "apiUsageReportEnablementStatus",
             "office365ActiveUserCounts",
             "office365ActiveUserDetail",
             "office365GroupsActivityCounts",
@@ -3212,9 +3210,11 @@
         "recycleBinItem",
         "richLongRunningOperation",
         "permission",
-        "sharepointSettings"
+        "sharepointSettings",
+        "sharePointReportSettings"
       ],
       "complexTypes": [
+        "apiUsageReportEnablementStatus",
         "identityInput"
       ],
       "childNodes": [
