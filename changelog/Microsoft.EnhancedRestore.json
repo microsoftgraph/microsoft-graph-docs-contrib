@@ -39,7 +39,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "emailNotificationsSetting",
             "ChangeType": "Addition",
-            "Description": "Added the [emailNotificationsSetting](https://learn.microsoft.com/en-us/graph/api/resources/emailNotificationsSetting?view=graph-rest-1.0) resource.",
+            "Description": "Added the [emailNotificationsSetting](https://learn.microsoft.com/en-us/graph/api/resources/emailNotificationsSetting?view=graph-rest-1.0) resource and associated methods.",
             "Target": "emailNotificationsSetting"
           }
         ],
@@ -47,8 +47,8 @@
         "Cloud": "Prod",
         "Version": "v1.0",
         "CreatedDateTime": "2026-05-22T05:23:25.6143227Z",
-        "WorkloadArea": "EnhancedRestore",
-        "SubArea": "Backup and Restore"
+        "WorkloadArea": "Backup and recovery",
+        "SubArea": ""
       },
       {
           "ChangeList": [
