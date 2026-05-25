@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "apiUsageReportEnablementStatus",
           "ChangeType": "Addition",
-          "Description": "Added the [apiUsageReportEnablementStatus](https://learn.microsoft.com/en-us/graph/api/resources/apiusagereportenablementstatus?view=graph-rest-beta) resource.",
+          "Description": "Added the [apiUsageReportEnablementStatus](https://learn.microsoft.com/en-us/graph/api/resources/apiusagereportenablementstatus?view=graph-rest-beta) resource type.",
           "Target": "apiUsageReportEnablementStatus"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sharePointReportSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [sharePointReportSettings](https://learn.microsoft.com/en-us/graph/api/resources/sharepointreportsettings?view=graph-rest-beta) resource.",
+          "Description": "Added the [sharePointReportSettings](https://learn.microsoft.com/en-us/graph/api/resources/sharepointreportsettings?view=graph-rest-beta) resource and an associated method.",
           "Target": "sharePointReportSettings"
         },
         {

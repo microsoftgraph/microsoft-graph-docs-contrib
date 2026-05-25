@@ -1,13 +1,12 @@
 ---
 title: "apiUsageReportEnablementStatus resource type"
-description: "Represents the enablement status of a specific API usage report metric for SharePoint"
+description: "Represents the enablement status of a specific API usage report metric for SharePoint."
 author: "abhishekkakhandiki"
 ms.date: 05/21/2026
 ms.localizationpriority: medium
 ms.subservice: "reports"
 doc_type: resourcePageType
 toc.title: API usage report enablement status
----
 ---
 
 # apiUsageReportEnablementStatus resource type

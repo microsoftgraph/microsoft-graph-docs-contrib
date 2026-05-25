@@ -1,6 +1,6 @@
 ---
 title: "List apiUsageReportMetrics"
-description: "Get the list of SharePoint API usage report metrics and their enablement status."
+description: "Get the list of SharePoint API usage report metrics and their enablement status for the tenant."
 author: "abhishekkakhandiki"
 ms.date: 05/21/2026
 ms.localizationpriority: medium
