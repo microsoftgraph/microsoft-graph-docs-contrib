@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the list of SharePoint API usage report metrics and their enablement status for the tenant. Currently, only the `EgressReport` metric is supported.
+Get the list of [SharePoint API usage report metrics and their enablement status](../resources/apiusagereportenablementstatus.md) for the tenant. Currently, only the `EgressReport` metric is supported.
 
 ## Permissions
 

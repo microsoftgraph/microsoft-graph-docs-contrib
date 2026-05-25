@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enable a SharePoint API usage report metric for the tenant. After you enable a metric, SharePoint starts collecting and reporting data for that specific usage metric.
+Enable a [SharePoint API usage report metric](../resources/apiusagereportenablementstatus.md) for the tenant. After you enable a metric, SharePoint starts collecting and reporting data for that specific usage metric.
 
 ## Permissions
 

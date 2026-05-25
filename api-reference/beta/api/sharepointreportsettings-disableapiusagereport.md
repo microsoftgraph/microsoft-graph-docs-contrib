@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Disable a SharePoint API usage report metric for the tenant. After you disable a metric, SharePoint stops collecting and reporting data for that specific usage metric.
+Disable a [SharePoint API usage report metric](../resources/apiusagereportenablementstatus.md) for the tenant. After you disable a metric, SharePoint stops collecting and reporting data for that specific usage metric.
 
 ## Permissions
 
