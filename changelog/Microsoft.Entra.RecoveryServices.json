@@ -143,8 +143,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2026-03-23T04:41:39.4922903Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
+      "WorkloadArea": "Backup and recovery",
+      "SubArea": "Entra backup and recovery"
     }
   ]
 }
