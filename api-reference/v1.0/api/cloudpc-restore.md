@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Restore a specific [cloudPC](../resources/cloudpc.md) object to a previous state from a snapshot. Use this API to trigger a remote action that restores a Cloud PC device to a previous state.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 

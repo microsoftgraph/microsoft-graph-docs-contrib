@@ -45,7 +45,7 @@ If successful, this method returns `204 No Content` response code. It doesn't re
 
 ## Example
 Here is an example of how to call this API.
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -83,7 +83,7 @@ DELETE https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/
 
 ---
 
-##### Response
+### Response
 The following example shows the response. 
 <!-- {
   "blockType": "response"

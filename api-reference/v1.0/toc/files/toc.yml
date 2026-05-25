@@ -172,6 +172,8 @@ items:
     href: ../../api/filestoragecontainer-update-permissions.md
   - name: Delete permissions
     href: ../../api/filestoragecontainer-delete-permissions.md
+  - name: Upsert permissions
+    href: ../../api/filestoragecontainer-patch-permissions.md
   - name: List custom property
     href: ../../api/filestoragecontainer-list-customproperty.md
   - name: Add custom property

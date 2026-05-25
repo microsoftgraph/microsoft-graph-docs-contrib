@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 
-Get-MgBetaWindowsUpdatesPolicy -UpdatePolicyId $updatePolicyId
+Get-MgBetaWindowsUpdatesUpdatePolicy -UpdatePolicyId $updatePolicyId
 
 ```

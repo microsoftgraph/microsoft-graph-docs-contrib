@@ -28,7 +28,7 @@ clientConfiguration.setTimeoutInMilliseconds(1000);
 customTaskExtension.setClientConfiguration(clientConfiguration);
 com.microsoft.graph.models.identitygovernance.CustomTaskExtensionCallbackConfiguration callbackConfiguration = new com.microsoft.graph.models.identitygovernance.CustomTaskExtensionCallbackConfiguration();
 callbackConfiguration.setOdataType("#microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration");
-PeriodAndDuration timeoutDuration = PeriodAndDuration.ofDuration(Duration.parse("PT5M"));
+PeriodAndDuration timeoutDuration = PeriodAndDuration.ofDuration(Duration.parse("PT30M"));
 callbackConfiguration.setTimeoutDuration(timeoutDuration);
 customTaskExtension.setCallbackConfiguration(callbackConfiguration);
 com.microsoft.graph.models.identitygovernance.CustomTaskExtension result = graphClient.identityGovernance().lifecycleWorkflows().customTaskExtensions().post(customTaskExtension);

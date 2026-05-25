@@ -210,7 +210,7 @@ The response body includes an object representing the requested resource instanc
 [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) object.
 
 ## Example
-##### Request
+### Request
 This example gets and expands the specified event by including a multi-value extended property. The filter returns the
 extended property that has its **id** matching the string `StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation`
 (with URL encoding removed here for ease of reading).
@@ -219,7 +219,7 @@ extended property that has its **id** matching the string `StringArray {66f5a359
 ```http
 GET https://graph.microsoft.com/beta/me/events('AAMkAGE1M2_bs88AACbuFiiAAA=')?$expand=multiValueExtendedProperties($filter=id%20eq%20'StringArray%20{66f5a359-4659-4830-9070-00050ec6ac6e}%20Name%20Recreation')
 ```
-##### Response
+### Response
 
 The response body includes all the properties of the specified event and extended property returned from the filter.
 

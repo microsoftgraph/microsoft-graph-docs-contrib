@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // Dependencies
 using Microsoft.Graph.Beta.Models;
 
-var requestBody = new CustomAuthenticationExtension
+var requestBody = new OnVerifiedIdClaimValidationCustomExtension
 {
 	OdataType = "#microsoft.graph.onVerifiedIdClaimValidationCustomExtension",
 	DisplayName = "Verified ID Claim Validation",

@@ -17,7 +17,8 @@ List all the [groups](../resources/group.md) available in an organization, exclu
 
 This operation returns by default only a subset of the properties for each group. These default properties are noted in the [Properties](../resources/group.md#properties) section. To get properties that are _not_ returned by default, do a [GET](group-get.md) operation for the group and specify the properties in a `$select` OData query option. The **hasMembersWithLicenseErrors** and **isArchived** properties are an exception and are not returned in the `$select` query.
 
-> **Note:** This request might have replication delays for groups that were recently created, updated, or deleted.
+> [!NOTE]
+> This request might have replication delays for groups that were recently created, updated, or deleted. Recently created or updated groups might not appear in results immediately, and recently deleted groups might still appear in results briefly. Retry the request after a brief delay. For more information, see [Designing for Eventual Consistency for Microsoft Entra](https://devblogs.microsoft.com/identity/designing-for-eventual-consistency-for-microsoft-entra/).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

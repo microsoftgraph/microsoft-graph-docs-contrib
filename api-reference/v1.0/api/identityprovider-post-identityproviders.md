@@ -59,7 +59,7 @@ If successful, this method returns `201 Created` response code and [identityProv
 
 The following example creates an **identityProvider**.
 
-##### Request
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -109,7 +109,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 
 <!-- {
   "blockType": "response",

@@ -42,7 +42,7 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 |appliedConditionalAccessPolicies|[appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md) collection|A list of conditional access policies that the corresponding sign-in activity triggers. Apps need more Conditional Access-related privileges to read the details of this property. For more information, see [Permissions for viewing applied conditional access (CA) policies in sign-ins](../api/signin-list.md#permissions).|
 |appOwnerTenantId|String|The identifier of the tenant that owns the client application. <br/><br/> Supports `$filter` (`eq`).|
 |appliedEventListeners|[appliedAuthenticationEventListener](../resources/appliedauthenticationeventlistener.md) collection|Detailed information about the listeners, such as Azure Logic Apps and Azure Functions, which the corresponding events in the sign-in event triggered.|
-|appTokenProtectionStatus|tokenProtectionStatus|Token protection creates a cryptographically secure tie between the token and the device it's issued to. This field indicates whether the app token was bound to the device.|
+|appTokenProtectionStatus|tokenProtectionStatus|Deprecated. Use **tokenProtectionStatusDetails** instead. Token protection creates a cryptographically secure tie between the token and the device it's issued to. This field indicates whether the app token was bound to the device.|
 |authenticationAppDeviceDetails|[authenticationAppDeviceDetails](../resources/authenticationappdevicedetails.md)|Provides details about the app and device used during a Microsoft Entra authentication step.|
 |authenticationAppPolicyEvaluationDetails|[authenticationAppPolicyDetails](../resources/authenticationapppolicydetails.md) collection|Provides details of the Microsoft Entra policies applied to a user and client authentication app during an authentication step.|
 |authenticationContextClassReferences|[authenticationContext](authenticationcontext.md) collection|Contains a collection of values that represent the conditional access authentication contexts applied to the sign-in.|
@@ -100,10 +100,11 @@ The [Microsoft Entra data retention policies](/azure/active-directory/reports-mo
 |sessionId|String|Identifier of the session that was generated during the sign-in.|
 |signInIdentifier|String|The identification that the user provided to sign in. It can be the userPrincipalName, but is also populated when a user signs in using other identifiers.|
 |signInIdentifierType|signInIdentifierType|The type of sign in identifier. The possible values are: `userPrincipalName`, `phoneNumber`, `proxyAddress`, `qrCode`, `onPremisesUserPrincipalName`, `unknownFutureValue`.|
-|signInTokenProtectionStatus|tokenProtectionStatus|Token protection creates a cryptographically secure tie between the token and the device it's issued to. This field indicates whether the signin token was bound to the device or not. The possible values are: `none`, `bound`, `unbound`, `unknownFutureValue`.|
+|signInTokenProtectionStatus|tokenProtectionStatus|Deprecated. Use **tokenProtectionStatusDetails** instead. Token protection creates a cryptographically secure tie between the token and the device it's issued to. This field indicates whether the sign-in token was bound to the device. The possible values are: `none`, `bound`, `unbound`, `unknownFutureValue`.|
 |status|[signInStatus](signinstatus.md)|The sign-in status. Includes the error code and description of the error (for a sign-in failure). <br/><br/> Supports `$filter` (`eq`) on **errorCode** property.|
 |tokenIssuerName|String|The name of the identity provider. For example, `sts.microsoft.com`. <br/><br/> Supports `$filter` (`eq`).|
 |tokenIssuerType|tokenIssuerType|The type of identity provider. The possible values are: `AzureAD`, `ADFederationServices`, `UnknownFutureValue`, `AzureADBackupAuth`, `ADFederationServicesMFAAdapter`, `NPSExtension`. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `AzureADBackupAuth` , `ADFederationServicesMFAAdapter` , `NPSExtension`.|
+|tokenProtectionStatusDetails|[tokenProtectionStatusDetails](../resources/tokenprotectionstatusdetails.md)|The status of the token protection for a request in the sign-in logs. For more information, see [Conditional Access: Token Protection](/entra/identity/conditional-access/concept-token-protection).|
 |uniqueTokenIdentifier|String|A unique base64-encoded request identifier used to track tokens issued by Microsoft Entra ID as they're redeemed at resource providers.|
 |userAgent|String|The user agent information related to sign-in. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |userDisplayName|String|The display name of the user. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
@@ -240,6 +241,9 @@ The following JSON representation shows the resource type.
   },
   "tokenIssuerName": "String",
   "tokenIssuerType": "String",
+  "tokenProtectionStatusDetails": {
+    "@odata.type": "microsoft.graph.tokenProtectionStatusDetails"
+  },
   "userAgent": "String",
   "userDisplayName": "String",
   "userId": "String",

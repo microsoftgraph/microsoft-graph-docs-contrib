@@ -30,7 +30,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |emailInfo|[emailDetails](../resources/emaildetails.md)|The email notification details for the ownerless group policy, including the sender, subject, and body.|
-|enabledGroupIds|String collection|The collection of IDs for groups to which the policy is enabled.|
+|enabledGroupIds|String collection|The collection of IDs for groups to which the policy is enabled. If empty, the policy is enabled for all groups in the tenant.|
 |isEnabled|Boolean|Indicates whether the ownerless group policy is enabled in the tenant. Setting this property to `false` clears the values of all other policy parameters.|
 |maxMembersToNotify|Int64|The maximum number of members to notify. Value range is 0-90. Members are prioritized by recent group activity (most active first). If there aren't enough active members to fill the limit, remaining slots are filled with other eligible group members from the directory.|
 |notificationDurationInWeeks|Int64|The number of weeks for the notification duration. Value range is 1-7.|

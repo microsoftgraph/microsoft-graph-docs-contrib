@@ -15,6 +15,34 @@ items:
       href: ../../api/backuprestoreroot-get.md
     - name: Enable
       href: ../../api/backuprestoreroot-enable.md
+  - name: Browse session
+    items:
+    - name: Overview
+      href: ../../resources/browsesessionbase.md
+    - name: One drive for business browse session
+      items:
+      - name: One drive for business browse session
+        href: ../../resources/onedriveforbusinessbrowsesession.md
+      - name: Create
+        href: ../../api/backuprestoreroot-post-onedriveforbusinessbrowsesessions.md
+      - name: Get
+        href: ../../api/onedriveforbusinessbrowsesession-get.md
+      - name: List
+        href: ../../api/backuprestoreroot-list-onedriveforbusinessbrowsesessions.md
+      - name: browse
+        href: ../../api/onedriveforbusinessbrowsesession-browse.md
+    - name: Share point browse session
+      items:
+      - name: Share point browse session
+        href: ../../resources/sharepointbrowsesession.md
+      - name: Create
+        href: ../../api/backuprestoreroot-post-sharepointbrowsesessions.md
+      - name: Get
+        href: ../../api/sharepointbrowsesession-get.md
+      - name: List
+        href: ../../api/backuprestoreroot-list-sharepointbrowsesessions.md
+      - name: browse
+        href: ../../api/sharepointbrowsesession-browse.md
   - name: Protection policy
     items:
     - name: Protection policy
@@ -181,6 +209,12 @@ items:
         href: ../../resources/driverestoreartifact.md
       - name: List
         href: ../../api/onedriveforbusinessrestoresession-list-driverestoreartifacts.md
+    - name: Granular drive restore artifact
+      items:
+      - name: Granular drive restore artifact
+        href: ../../resources/granulardriverestoreartifact.md
+      - name: List
+        href: ../../api/onedriveforbusinessrestoresession-list-granulardriverestoreartifacts.md
     - name: Mailbox restore artifact
       items:
       - name: Mailbox restore artifact
@@ -193,6 +227,12 @@ items:
         href: ../../resources/siterestoreartifact.md
       - name: List
         href: ../../api/sharepointrestoresession-list-siterestoreartifacts.md
+    - name: Granular site restore artifact
+      items:
+      - name: Granular site restore artifact
+        href: ../../resources/granularsiterestoreartifact.md
+      - name: List
+        href: ../../api/sharepointrestoresession-list-granularsiterestoreartifacts.md
   - name: Restore artifacts bulk request
     href: ../../resources/restoreartifactsbulkrequestbase.md
     items:
@@ -260,6 +300,8 @@ items:
         href: ../../api/backuprestoreroot-post-onedriveforbusinessrestoresessions.md
       - name: List
         href: ../../api/onedriveforbusinessrestoresession-list-driverestoreartifacts.md
+      - name: List granularDriveRestoreArtifacts
+        href: ../../api/onedriveforbusinessrestoresession-list-granulardriverestoreartifacts.md
       - name: Update
         href: ../../api/onedriveforbusinessrestoresession-update.md
     - name: Exchange restore session
@@ -280,6 +322,8 @@ items:
         href: ../../api/backuprestoreroot-post-sharepointrestoresessions.md
       - name: List
         href: ../../api/sharepointrestoresession-list-siterestoreartifacts.md
+      - name: List granularSiteRestoreArtifacts
+        href: ../../api/sharepointrestoresession-list-granularsiterestoreartifacts.md
       - name: Update
         href: ../../api/sharepointrestoresession-update.md
   - name: Service app
@@ -302,6 +346,8 @@ items:
     items:
     - name: Artifact query
       href: ../../resources/artifactquery.md
+    - name: Browse query response item
+      href: ../../resources/browsequeryresponseitem.md
     - name: Restore point search response
       href: ../../resources/restorepointsearchresponse.md
     - name: Restore point search result

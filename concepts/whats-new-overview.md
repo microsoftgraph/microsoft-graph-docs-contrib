@@ -3,7 +3,7 @@ title: "What's new in Microsoft Graph"
 description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, and other resources."
 author: "lauragra"
 ms.localizationpriority: high
-ms.date: 04/28/2026
+ms.date: 05/14/2026
 ms.topic: whats-new
 ---
 
@@ -25,11 +25,14 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 - Added the [agentUser](/graph/api/resources/agentuser) resource type and related methods for managing the lifecycle of agent user identities.
 - Added [verifiedIdProfile](/graph/api/resources/verifiedidprofile) resources and related profile configuration for configuring Microsoft Entra Verified ID.
 
-### Mailbox import and export
+### Files
 
-Use the mailbox import and export APIs in Microsoft Graph to build solutions that integrate with mailbox resources for data import and export scenarios. For more information, see [Overview of the mailbox import and export APIs in Microsoft Graph](/graph/mailbox-import-export-concept-overview).
+Use the [Upsert permissions](/graph/api/filestoragecontainer-patch-permissions) API to create or update up to 10 [permission](/graph/api/resources/permission) objects on a [fileStorageContainer](/graph/api/resources/filestoragecontainer) in a single request.
 
-## March 2026: New in preview only
+### Groups
+
+Added the [ownerlessGroupPolicy](/graph/api/resources/ownerlessgrouppolicy) resource type and related methods to the v1.0 endpoint. Use this policy to configure actionable email notifications that prompt active members of ownerless Microsoft 365 groups to accept ownership when the sole owner leaves the organization or their account is disabled.
+
 ### Identity and access | Directory management
 
 Use the [deviceRegistrationPolicy](/graph/api/resources/deviceregistrationpolicy) resource type and its related methods to manage the policy that controls device registration quota restrictions, additional authentication, and authorization policies for your Microsoft Entra tenant.
@@ -38,17 +41,98 @@ Use the [deviceRegistrationPolicy](/graph/api/resources/deviceregistrationpolicy
 
 - Added the [onVerifiedIdClaimValidationCustomExtension](/graph/api/resources/onverifiedidclaimvalidationcustomextension) and [onVerifiedIdClaimValidationListener](/graph/api/resources/onverifiedidclaimvalidationlistener) resource types and associated methods to support custom logic for claim validation from Verified ID credential presentations during authentication flows through Microsoft Entra custom authentication extensions in External ID.
 - Added claim validation and match-confidence capabilities to [Verified ID profiles](/graph/api/resources/verifiedidprofile), enabling stronger claim verification and more flexible matching.
+- Enhanced the [x509CertificateAuthenticationMethodConfiguration](/graph/api/resources/x509certificateauthenticationmethodconfiguration) resource type with the following capabilities for certificate-based authentication (CBA):
+    - Scoping CBA to specific certificate authorities and restrict which groups of users can authenticate using certificates from those CAs.
+    - Controlling whether issuer hints are sent to the client to filter the certificates shown in the certificate picker.
+- Updated the **targetedAuthenticationMethod** property of the [authenticationMethodsRegistrationCampaignIncludeTarget](/graph/api/resources/authenticationmethodsregistrationcampaignincludetarget) resource to support `Fido2` in addition to `microsoftAuthenticator` for authentication method registration campaigns. Organizations can now use registration campaigns to nudge users to register and sign in with phishing-resistant passkeys (FIDO2).
+
+### Mailbox import and export
+
+Use the mailbox import and export APIs in Microsoft Graph to build solutions that integrate with mailbox resources for data import and export scenarios. For more information, see [Overview of the mailbox import and export APIs in Microsoft Graph](/graph/mailbox-import-export-concept-overview).
+
+### Security | Alerts and incidents
+
+- Added the migration guide [Migrate from legacy alerts to the alerts and incidents API](/graph/alertsv1-alertsv2-migration) to help you transition your apps from the deprecated Microsoft Graph security alerts v1 API to the new alerts and incidents API.
+- Extended the [alertEvidence](/graph/api/resources/security-alertevidence) base type with additional derived types to provide detailed context about various artifacts involved in [security alerts](/graph/api/resources/security-alert).
+
+### Teamwork and communications | Messaging
+
+- [Enable migration mode on an existing channel](/graph/api/channel-startmigration) to support channel migration of external messages.
+- [Enable migration mode on an existing chat](/graph/api/chat-startmigration) to support chat migration of external messages.
+- [Complete chat migration by disabling migration mode](/graph/api/chat-completemigration).
+- Added the **migrationMode** and **originalCreatedDateTime** properties to the [channel](/graph/api/resources/channel) resource.
+- Added the **migrationMode** and **originalCreatedDateTime** properties to the [chat](/graph/api/resources/chat) resource.
+- Added the [migrationMode](/graph/api/resources/channel#migrationmode-values) enum.
+
+### Teamwork and communications | Shifts
+
+Supports additional theme colors in the [scheduleEntityTheme](/graph/api/resources/enums) enumeration for the **theme** property on [openShiftItem](/graph/api/resources/openshiftitem), [shiftItem](/graph/api/resources/shiftitem), [shiftActivity](/graph/api/resources/shiftactivity), and [timeOffItem](/graph/api/resources/timeoffitem).
 
 ## May 2026: New in preview only
 
+### Device and app management | Cloud PC
+
+- [Create](/graph/api/virtualendpoint-post-cloudapps?view=graph-rest-beta&preserve-view=true) or [delete](/graph/api/cloudpccloudapp-delete?view=graph-rest-beta&preserve-view=true) a [cloud app](/graph/api/resources/cloudpccloudapp?view=graph-rest-beta&preserve-view=true).
+- Extended the **appDetail** property on [cloudPcCloudApp](/graph/api/resources/cloudpccloudapp?view=graph-rest-beta&preserve-view=true) to support the [cloudPcAutomaticDiscoveredAppDetail](/graph/api/resources/cloudpcautomaticdiscoveredappdetail?view=graph-rest-beta&preserve-view=true) type for apps automatically discovered from the *start* menu, and the [cloudPcFilePathAppDetail](/graph/api/resources/cloudpcfilepathappdetail.md) type for apps manually created when a file path is specified.
+- Added the `iconPathInvalid` and `filePathInvalid` members as supported values for the **actionFailedErrorCode** property on the [cloudPcCloudApp](/graph/api/resources/cloudpccloudapp?view=graph-rest-beta&preserve-view=true). Use these members to indicate that the icon or file path specified for the cloud app is invalid.
+- Added the [cloudPcPool](/graph/api/resources/cloudpcpool?view=graph-rest-beta&preserve-view=true) resource and its derived type [cloudPcAgentPool](/graph/api/resources/cloudpcagentpool?view=graph-rest-beta&preserve-view=true) to enable management of Cloud PC pools for agentic workloads.
+- Added the [cloudPcPoolAssignment](/graph/api/resources/cloudpcpoolassignment?view=graph-rest-beta&preserve-view=true) resource and its derived type [cloudPcAgentPoolUserAssignment](/graph/api/resources/cloudpcagentpooluserassignment?view=graph-rest-beta&preserve-view=true) to manage pool assignments.
+- Use `australiaNewZealand` as a new supported value in the **geographicLocationType** property of the [cloudPcSupportedRegion](/graph/api/resources/cloudpcsupportedregion?view=graph-rest-beta&preserve-view=true) and [cloudPcDomainJoinConfiguration](/graph/api/resources/cloudpcdomainjoinconfiguration?view=graph-rest-beta&preserve-view=true) resources.
+
+### Files
+
+Use the [Upsert permissions](/graph/api/filestoragecontainer-patch-permissions?view=graph-rest-beta&preserve-view=true) API to create or update up to 10 [permission](/graph/api/resources/permission?view=graph-rest-beta&preserve-view=true) objects on a [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true) in a single request.
+
+### Identity and access | Governance
+
+Added the [approverDelegate](/graph/api/resources/approverdelegate?view=graph-rest-beta&preserve-view=true) and [identityGovernanceUserSettings](/graph/api/resources/identitygovernanceusersettings?view=graph-rest-beta&preserve-view=true) resources to enable users to delegate their approval responsibilities for access package approvals and access reviews.
+
 ### Identity and access | Identity and sign-in
 
+- Added the **blueprintId** and **source** agent-descriptive properties to [agentRiskDetection](/graph/api/resources/agentriskdetection?view=graph-rest-beta&preserve-view=true) and [riskyAgent](/graph/api/resources/riskyagent?view=graph-rest-beta&preserve-view=true) resources.
 - Added the [onVerifiedIdClaimValidationCustomExtension](/graph/api/resources/onverifiedidclaimvalidationcustomextension?view=graph-rest-beta&preserve-view=true) and [onVerifiedIdClaimValidationListener](/graph/api/resources/onverifiedidclaimvalidationlistener?view=graph-rest-beta&preserve-view=true) resource types and associated methods to support custom logic for claim validation from Verified ID credential presentations during authentication flows through Microsoft Entra custom authentication extensions in External ID.
 - Added support for Microsoft 365 cross-tenant access policy capabilities that allow administrators to control access to Microsoft 365 resources and data when collaborating with external organizations. Use the [crossTenantAccessPolicyConfigurationDefault](/graph/api/resources/crosstenantaccesspolicyconfigurationdefault?view=graph-rest-beta&preserve-view=true) and [crossTenantAccessPolicyConfigurationPartner](/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-beta&preserve-view=true) resources with the new **m365Capabilities** relationship to manage capabilities including profile sharing, calendar sharing, migration, mail tips, and Places booking across organizational boundaries.
+- Updated the **targetedAuthenticationMethod** property of the [authenticationMethodsRegistrationCampaignIncludeTarget](/graph/api/resources/authenticationmethodsregistrationcampaignincludetarget?view=graph-rest-beta&preserve-view=true) resource to support `Fido2` in addition to `microsoftAuthenticator` for authentication method registration campaigns. Organizations can now use registration campaigns to nudge users to register and sign in with phishing-resistant passkeys (FIDO2).
 
 ### People and workplace intelligence | People admin settings
 
-Use the **isVisible** property on [profileCardProperty](/graph/api/resources/profilecardproperty?view=graph-rest-beta&preserve-view=true) to indicate whether the given directory property should be shown on a user’s profile card.
+Use the **isVisible** property on [profileCardProperty](/graph/api/resources/profilecardproperty?view=graph-rest-beta&preserve-view=true) to indicate whether the given directory property should be shown on a user's profile card.
+
+### People and workplace intelligence | Photo update settings
+
+Use the [List](/graph/api/peopleadminsettings-list-photoupdatesettings?view=graph-rest-beta&preserve-view=true) and [Update](/graph/api/photoupdatesettings-update?view=graph-rest-beta&preserve-view=true) methods as the only operations for the [photoUpdateSettings](/graph/api/resources/photoupdatesettings?view=graph-rest-beta&preserve-view=true) to get and update the **photoUpdateSettings** properties.
+
+### Reports | Identity and access reports
+
+Added the [identityCorrelation](/graph/api/resources/identitycorrelation?view=graph-rest-beta&preserve-view=true) resource type and related methods for viewing identity correlation reports between on-premises directories and Microsoft Entra ID.
+
+### Security | Alerts and incidents
+
+Use the following new resources that extend the [alertEvidence](/graph/api/resources/security-alertevidence?view=graph-rest-beta&preserve-view=true) base type to provide detailed context about various artifacts involved in security alerts:
+- [dnsEvidence](/graph/api/resources/security-dnsevidence?view=graph-rest-beta&preserve-view=true)
+- [fileHashEvidence](/graph/api/resources/security-filehashevidence?view=graph-rest-beta&preserve-view=true)
+- [gitHubOrganizationEvidence](/graph/api/resources/security-githuborganizationevidence?view=graph-rest-beta&preserve-view=true)
+- [gitHubRepoEvidence](/graph/api/resources/security-githubrepoevidence?view=graph-rest-beta&preserve-view=true)
+- [gitHubUserEvidence](/graph/api/resources/security-githubuserevidence?view=graph-rest-beta&preserve-view=true)
+- [hostLogonSessionEvidence](/graph/api/resources/security-hostlogonsessionevidence?view=graph-rest-beta&preserve-view=true)
+- [malwareEvidence](/graph/api/resources/security-malwareevidence?view=graph-rest-beta&preserve-view=true)
+- [networkConnectionEvidence](/graph/api/resources/security-networkconnectionevidence?view=graph-rest-beta&preserve-view=true)
+- [sasTokenEvidence](/graph/api/resources/security-sastokenevidence?view=graph-rest-beta&preserve-view=true)
+- [servicePrincipalEvidence](/graph/api/resources/security-serviceprincipalevidence?view=graph-rest-beta&preserve-view=true)
+- [submissionMailEvidence](/graph/api/resources/security-submissionmailevidence?view=graph-rest-beta&preserve-view=true)
+
+### Security | Data security and compliance
+
+Added the [contentActivityMetadata](/graph/api/resources/contentactivitymetadata?view=graph-rest-beta&preserve-view=true) resource to represent and track Data Loss Prevention (DLP) enforcement result metadata for content entries, including identifiers, timestamps, and policy statuses.
+
+### Teamwork and communications | Apps
+
+Use the **scopeInfo** property on [teamsAppInstallation](/graph/api/resources/teamsappinstallation?view=graph-rest-beta&preserve-view=true) to get the details of the scope in which the app is installed.
+
+### Teamwork and communications | Calls and online meetings
+
+- Use the [virtualEventTownhallRegistrationConfiguration](/graph/api/resources/virtualeventtownhallregistrationconfiguration?view=graph-rest-beta&preserve-view=true) resource to manage attendee access for town halls and enable more controlled, scalable audience management.
+- Added the `capacity` property to [virtual event town hall](/graph/api/resources/virtualeventtownhall?view=graph-rest-beta&preserve-view=true). This property allows customers to specify the expected attendee size when creating or updating a town hall or session and retrieve it later. Validation ensures compliance with SKU and licensing limits, returning actionable errors when capacity exceeds entitlement.
 
 ## April 2026: New and generally available
 
@@ -56,11 +140,16 @@ Use the **isVisible** property on [profileCardProperty](/graph/api/resources/pro
 
 - Added the [approvedClientApp](/graph/api/resources/approvedclientapp) resource type for managing approved client applications for [remote desktop access](/graph/api/resources/remotedesktopsecurityconfiguration).
 - Added the **managerApplications** property to the [application](/graph/api/resources/application) and [agentIdentityBlueprint](/graph/api/resources/agentidentityblueprint) resources to enable Microsoft first-party applications to be designated as managers of agent blueprints.
+- Made the following changes to [application management policies](/graph/api/resources/applicationauthenticationmethodpolicy):
+  - Added [identifier URI restrictions](/graph/api/resources/identifieruriconfiguration) to allow tenant administrators to enforce [secure settings of application ID URIs](/entra/identity-platform/identifier-uri-restrictions).
+  - Added [excluded actors](/graph/api/resources/appmanagementpolicyactorexemptions) feature to all restrictions to allow tenant administrators to specify set of users and service principals, who are allowed to modify properties that would be otherwise restricted by the policy.
 
 ### Backup storage
 
 - When a [protection policy is deactivated](/graph/api/protectionpolicybase-deactivate), backup activity stops immediately, no new backups are taken, and the protected resources are no longer covered by the policy. Any backups taken before deactivation are retained according to the retention policy, after which they're offboarded. You can restore data using previous restore points even after deactivation.
 - A [protection policy can be deleted](/graph/api/protectionpolicybase-delete) only after it was [deactivated](/graph/api/protectionpolicybase-deactivate). When you delete a policy, all associated protection units are removed, and backup protection stops for the resources previously covered by the policy. Existing backup data is retained according to the retention policy before it's offboarded. You can restore data using previous restore points even after deletion.
+- Use browse sessions to browse backed up OneDriveForBusiness and SharePoint data at a specific point in time. Create a [oneDriveForBusinessBrowseSession](/graph/api/resources/onedriveforbusinessbrowsesession) or [sharePointBrowseSession](/graph/api/resources/sharepointbrowsesession), and then call the [browse](/graph/api/onedriveforbusinessbrowsesession-browse) method to explore the backed up content.
+- Use granular restore artifacts for fine-grained restores of individual items. List [granularDriveRestoreArtifact](/graph/api/resources/granulardriverestoreartifact) objects from a [oneDriveForBusinessRestoreSession](/graph/api/onedriveforbusinessrestoresession-list-granulardriverestoreartifacts), or list [granularSiteRestoreArtifact](/graph/api/resources/granularsiterestoreartifact) objects from a [sharePointRestoreSession](/graph/api/sharepointrestoresession-list-granularsiterestoreartifacts).
 
 ### Files
 
@@ -68,13 +157,14 @@ Use the **isVisible** property on [profileCardProperty](/graph/api/resources/pro
 - Use the [List activities](/graph/api/itemactivity-list) API to retrieve recent activities that took place on a [drive](/graph/api/resources/drive), [list](/graph/api/resources/list), item, or within an item hierarchy.
 - Added support for [sharePointGroup](/graph/api/resources/sharepointgroup) and its [members](/graph/api/resources/sharepointgroupmember) in a SharePoint Embedded container, enabling apps to work with SharePoint permission groups and manage their members.
 
-
 ### Identity and access | Governance
 
 Use `approverRemove` as a new supported value for the **requestType** property of the [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest) resource. For more information, see [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest).
 
 ### Identity and access | Identity and sign-in
 
+- Added the [verifiableCredentialsAuthenticationMethodConfiguration](/graph/api/resources/verifiablecredentialsauthenticationmethodconfiguration) resource type and related methods to the v1.0 endpoint. Use it to configure verifiable credentials as an authentication method for user sign-in.
+- Added the [verifiableCredentialAuthenticationMethodTarget](/graph/api/resources/verifiablecredentialauthenticationmethodtarget) resource type to the v1.0 endpoint. Use it to specify groups and users enabled to use verifiable credentials for authentication.
 - Use `riskRemediation` as part of [conditional access grant controls](/graph/api/resources/conditionalaccessgrantcontrols) to enforce a User Risk [conditional access policy](/graph/api/resources/conditionalaccesspolicy). When you select "Require risk remediation" in your policy's grant controls, Microsoft Entra ID Protection manages the appropriate remediation flow based on the threat observed and the user's authentication method. In passwordless Risky User sessions, it updates risk details with `microsoftRevokedSessions`.
 
 ### Security | Alerts and incidents
@@ -103,6 +193,7 @@ Manage Teams apps at the channel level within a team using the following APIs:
 ### Agents
 
 Added deprecation notices to the [agentRegistry](/graph/api/resources/agentregistry?view=graph-rest-beta&preserve-view=true), [agentCardManifest](/graph/api/resources/agentcardmanifest?view=graph-rest-beta&preserve-view=true), [agentCollection](/graph/api/resources/agentcollection?view=graph-rest-beta&preserve-view=true), and [agentInstance](/graph/api/resources/agentinstance?view=graph-rest-beta&preserve-view=true) resources and their related operations. These Agent Registry APIs will be replaced by Agent 365-based APIs starting May 1, 2026.
+
 
 ### Applications
 
@@ -183,7 +274,7 @@ Updated the capabilities of the [auditLogQuery](/graph/api/resources/security-au
 ### Security | Microsoft Defender for Identity
 
 Use the **sensorTypes** property on [sensorCandidate](/graph/api/resources/security-sensorcandidate?view=graph-rest-beta&preserve-view=true) to get the list of device types for the sensor.
-
+ 
 ### Teamwork and communications | Messaging
 
 - Use the targeted messages APIs to manage messages in Microsoft Teams that are visible only to specified recipients within group chats or channels:

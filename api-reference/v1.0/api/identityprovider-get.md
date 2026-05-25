@@ -51,7 +51,7 @@ If successful, this method returns `200 OK` response code and a [identityProvide
 
 The following example retrieves a specific **identityProvider**.
 
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 
 ---
 
-##### Response
+### Response
 
 <!-- {
   "blockType": "response",

@@ -93,6 +93,10 @@ GET https://graph.microsoft.com/beta/directory/tenantGovernance/governancePolicy
 [!INCLUDE [sample-code](../includes/snippets/php/get-governancepolicytemplate-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-governancepolicytemplate-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-governancepolicytemplate-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -194,6 +198,10 @@ GET https://graph.microsoft.com/beta/directory/tenantGovernance/governancePolicy
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-governancepolicytemplate-default-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-governancepolicytemplate-default-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
