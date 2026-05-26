@@ -159,8 +159,8 @@
           "Cloud": "Prod",
           "Version": "v1.0",
           "CreatedDateTime": "2026-05-11T08:04:14.5024207Z",
-          "WorkloadArea": "EnhancedRestore",
-          "SubArea": "Backup and Restore"
+          "WorkloadArea": "Backup and recovery",
+          "SubArea": "Microsoft 365 backup and storage"
       },
       {
           "ChangeList": [
@@ -177,8 +177,8 @@
           "Cloud": "Prod",
           "Version": "beta",
           "CreatedDateTime": "2026-03-05T08:07:36.2586417Z",
-          "WorkloadArea": "EnhancedRestore",
-          "SubArea": "Backup and Restore"
+          "WorkloadArea": "Backup and recovery",
+          "SubArea": "Microsoft 365 backup and storage"
         },
         {
           "ChangeList": [
@@ -219,8 +219,8 @@
         "Cloud": "Prod",
         "Version": "beta",
         "CreatedDateTime": "2026-03-18T10:06:27Z",
-        "WorkloadArea": "Backup storage",
-        "SubArea": ""
+        "WorkloadArea": "Backup and recovery",
+        "SubArea": "Microsoft 365 backup and storage"
       },
       {
         "ChangeList": [
@@ -301,8 +301,8 @@
         "Cloud": "Prod",
         "Version": "v1.0",
         "CreatedDateTime": "2025-10-06T09:04:09.9482742Z",
-        "WorkloadArea": "Backup restore",
-        "SubArea": ""
+        "WorkloadArea": "Backup and recovery",
+        "SubArea": "Microsoft 365 backup and storage"
       },
       {
         "ChangeList": [
@@ -383,8 +383,8 @@
         "Cloud": "Prod",
         "Version": "beta",
         "CreatedDateTime": "2025-08-21T06:57:08.0896659Z",
-        "WorkloadArea": "Backup storage",
-        "SubArea": ""
+        "WorkloadArea": "Backup and recovery",
+        "SubArea": "Microsoft 365 backup and storage"
       },
       {
         "ChangeList": [
@@ -433,8 +433,8 @@
         "Cloud": "Prod",
         "Version": "v1.0",
         "CreatedDateTime": "2025-07-21T11:07:05.8540762Z",
-        "WorkloadArea": "Backup storage",
-        "SubArea": ""
+        "WorkloadArea": "Backup and recovery",
+        "SubArea": "Microsoft 365 backup and storage"
       },
       {
         "ChangeList": [
@@ -483,8 +483,8 @@
         "Cloud": "Prod",
         "Version": "beta",
         "CreatedDateTime": "2025-06-17T09:39:55.7553844Z",
-        "WorkloadArea": "Backup storage",
-        "SubArea": ""
+        "WorkloadArea": "Backup and recovery",
+        "SubArea": "Microsoft 365 backup and storage"
       },
       {
         "ChangeList": [
@@ -533,8 +533,8 @@
         "Cloud": "Prod",
         "Version": "v1.0",
         "CreatedDateTime": "2025-06-02T20:56:50.6135343Z",
-        "WorkloadArea": "EnhancedRestore",
-        "SubArea": "Backup and Restore"
+        "WorkloadArea": "Backup and recovery",
+        "SubArea": "Microsoft 365 backup and storage"
       },
       {
         "ChangeList": [
@@ -607,8 +607,8 @@
         "Cloud": "Prod",
         "Version": "v1.0",
         "CreatedDateTime": "2025-05-20T07:45:06.6167349Z",
-        "WorkloadArea": "Backup storage",
-        "SubArea": ""
+        "WorkloadArea": "Backup and recovery",
+        "SubArea": "Microsoft 365 backup and storage"
       },
       {
         "ChangeList": [
@@ -689,8 +689,8 @@
         "Cloud": "Prod",
         "Version": "beta",
         "CreatedDateTime": "2025-02-06T17:35:40.7754113Z",
-        "WorkloadArea": "Backup storage",
-        "SubArea": ""
+        "WorkloadArea": "Backup and recovery",
+        "SubArea": "Microsoft 365 backup and storage"
       },
       {
         "ChangeList": [
@@ -707,8 +707,8 @@
         "Cloud": "Review",
         "Version": "beta",
         "CreatedDateTime": "2024-11-13T06:06:47.9890636Z",
-        "WorkloadArea": "EnhancedRestore",
-        "SubArea": "Backup and Restore"
+        "WorkloadArea": "Backup and recovery",
+        "SubArea": "Microsoft 365 backup and storage"
       },
       {
           "ChangeList": [
@@ -781,8 +781,8 @@
           "Cloud": "Prod",
           "Version": "beta",
           "CreatedDateTime": "2024-12-16T07:45:06.6167349Z",
-          "WorkloadArea": "Backup storage",
-          "SubArea": ""
+          "WorkloadArea": "Backup and recovery",
+          "SubArea": "Microsoft 365 backup and storage"
         },
        {
         "ChangeList": [
@@ -831,8 +831,8 @@
         "Cloud": "Prod",
         "Version": "beta",
         "CreatedDateTime": "2024-12-04T07:34:17.3898972Z",
-        "WorkloadArea": "Backup storage",
-        "SubArea": ""
+        "WorkloadArea": "Backup and recovery",
+        "SubArea": "Microsoft 365 backup and storage"
        },
        {
         "ChangeList": [
@@ -881,8 +881,8 @@
         "Cloud": "Prod",
         "Version": "beta",
         "CreatedDateTime": "2024-10-16T16:34:31.8488321Z",
-        "WorkloadArea": "Backup storage",
-        "SubArea": ""
+        "WorkloadArea": "Backup and recovery",
+        "SubArea": "Microsoft 365 backup and storage"
       },
       {
         "ChangeList": [
@@ -963,8 +963,8 @@
         "Cloud": "Prod",
         "Version": "beta",
         "CreatedDateTime": "2024-07-26T06:23:33.4182656Z",
-        "WorkloadArea": "EnhancedRestore",
-        "SubArea": "Backup and Restore"
+        "WorkloadArea": "Backup and recovery",
+        "SubArea": "Microsoft 365 backup and storage"
       },
       {
       "ChangeList": [
@@ -1437,8 +1437,8 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2024-08-06T09:35:44.3571799Z",
-      "WorkloadArea": "Backup storage",
-      "SubArea": ""
+      "WorkloadArea": "Backup and recovery",
+      "SubArea": "Microsoft 365 backup and storage"
     },
     {
       "ChangeList": [
@@ -1839,8 +1839,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2024-05-30T09:35:44.3571799Z",
-      "WorkloadArea": "Backup storage",
-      "SubArea": ""
+      "WorkloadArea": "Backup and recovery",
+      "SubArea": "Microsoft 365 backup and storage"
     },
     {
       "ChangeList": [
@@ -1873,8 +1873,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2024-10-08T06:23:33.4182656Z",
-      "WorkloadArea": "Backup storage",
-      "SubArea": ""
+      "WorkloadArea": "Backup and recovery",
+      "SubArea": "Microsoft 365 backup and storage"
     },
     {
       "ChangeList": [
@@ -1907,8 +1907,8 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2024-10-08T06:23:33.4182656Z",
-      "WorkloadArea": "Backup storage",
-      "SubArea": ""
+      "WorkloadArea": "Backup and recovery",
+      "SubArea": "Microsoft 365 backup and storage"
     },
     {
       "ChangeList": [
@@ -1965,8 +1965,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-06-27T01:08:05.3436315Z",
-      "WorkloadArea": "EnhancedRestore",
-      "SubArea": "Backup and Restore"
+      "WorkloadArea": "Backup and recovery",
+      "SubArea": "Microsoft 365 backup and storage"
     },
     {
       "ChangeList": [
@@ -2047,8 +2047,8 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2025-09-24T01:08:05.3436315Z",
-      "WorkloadArea": "Backup storage",
-      "SubArea": ""
+      "WorkloadArea": "Backup and recovery",
+      "SubArea": "Microsoft 365 backup and storage"
     },
     {
       "ChangeList": [
@@ -2201,8 +2201,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2026-02-06T12:03:04.3321855Z",
-      "WorkloadArea": "EnhancedRestore",
-      "SubArea": "Backup and Restore"
+      "WorkloadArea": "Backup and recovery",
+      "SubArea": "Microsoft 365 backup and storage"
     },
     {
       "ChangeList": [
@@ -2235,8 +2235,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2026-03-03T21:51:07.3764487Z",
-      "WorkloadArea": "EnhancedRestore",
-      "SubArea": "Backup and Restore"
+      "WorkloadArea": "Backup and recovery",
+      "SubArea": "Microsoft 365 backup and storage"
     },
     {
       "ChangeList": [
@@ -2301,8 +2301,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2026-04-06T00:00:00Z",
-      "WorkloadArea": "Backup storage",
-      "SubArea": ""
+      "WorkloadArea": "Backup and recovery",
+      "SubArea": "Microsoft 365 backup and storage"
     }
   ]
 }

@@ -52,8 +52,17 @@ Use the mailbox import and export APIs in Microsoft Graph to build solutions tha
 
 ### Security | Alerts and incidents
 
-- Added the migration guide [Migrate from legacy alerts to the alerts and incidents API](/graph/api/resources/alertsv1-alertsv2-migration) to help you transition your apps from the deprecated Microsoft Graph security alerts v1 API to the new alerts and incidents API.
+- Added the migration guide [Migrate from legacy alerts to the alerts and incidents API](/graph/alertsv1-alertsv2-migration) to help you transition your apps from the deprecated Microsoft Graph security alerts v1 API to the new alerts and incidents API.
 - Extended the [alertEvidence](/graph/api/resources/security-alertevidence) base type with additional derived types to provide detailed context about various artifacts involved in [security alerts](/graph/api/resources/security-alert).
+
+### Teamwork and communications | Messaging
+
+- [Enable migration mode on an existing channel](/graph/api/channel-startmigration) to support channel migration of external messages.
+- [Enable migration mode on an existing chat](/graph/api/chat-startmigration) to support chat migration of external messages.
+- [Complete chat migration by disabling migration mode](/graph/api/chat-completemigration).
+- Added the **migrationMode** and **originalCreatedDateTime** properties to the [channel](/graph/api/resources/channel) resource.
+- Added the **migrationMode** and **originalCreatedDateTime** properties to the [chat](/graph/api/resources/chat) resource.
+- Added the [migrationMode](/graph/api/resources/channel#migrationmode-values) enum.
 
 ### Teamwork and communications | Shifts
 
@@ -95,8 +104,7 @@ Use the [List](/graph/api/peopleadminsettings-list-photoupdatesettings?view=grap
 
 ### Reports | Identity and access reports
 
-- Added the [identityCorrelation](/graph/api/resources/identitycorrelation?view=graph-rest-beta&preserve-view=true) resource type and related methods for viewing identity correlation reports between on-premises directories and Microsoft Entra ID.
-
+Added the [identityCorrelation](/graph/api/resources/identitycorrelation?view=graph-rest-beta&preserve-view=true) resource type and related methods for viewing identity correlation reports between on-premises directories and Microsoft Entra ID.
 
 ### Security | Alerts and incidents
 
@@ -178,18 +186,11 @@ Manage Teams apps at the channel level within a team using the following APIs:
 
 ### Teamwork and communications | Messaging
 
-- [Enable migration mode on an existing channel](/graph/api/channel-startmigration) to support channel migration of external messages.
-- [Enable migration mode on an existing chat](/graph/api/chat-startmigration) to support chat migration of external messages.
-- [Complete chat migration by disabling migration mode](/graph/api/chat-completemigration).
-- Added the **migrationMode** and **originalCreatedDateTime** properties to the [channel](/graph/api/resources/channel) resource.
-- Added the **migrationMode** and **originalCreatedDateTime** properties to the [chat](/graph/api/resources/chat) resource.
-- Added the [migrationMode](/graph/api/resources/migrationmode) enum.
 - Removed the `model` parameters and payment-model guidance from Microsoft Teams export APIs and related change-notification documentation. The `model` query parameter is no longer required and is ignored if supplied. For more information, see [Payment models and licensing requirements for Microsoft Teams APIs](/graph/teams-licenses).
 - The following Microsoft Teams APIs support **@odata.nextLink** pagination to handle increased channel limits. When the result set spans multiple pages, the response includes the **@odata.nextLink** property with a URL for retrieving the next page of results:
   - [List channels](/graph/api/channel-list)
   - [List incomingChannels](/graph/api/team-list-incomingchannels)
   - [List allChannels](/graph/api/team-list-allchannels)
-
 
 ## April 2026: New in preview only
 
