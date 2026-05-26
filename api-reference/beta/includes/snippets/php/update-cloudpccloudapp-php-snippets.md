@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\CloudPcCloudApp;
-use Microsoft\Graph\Beta\Generated\Models\CloudPcCloudAppDetail;
+use Microsoft\Graph\Beta\Generated\Models\CloudPcAutomaticDiscoveredAppDetail;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -15,7 +15,8 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 $requestBody = new CloudPcCloudApp();
 $requestBody->setOdataType('#microsoft.graph.cloudPcCloudApp');
 $requestBody->setDisplayName('Cloud App example3');
-$appDetail = new CloudPcCloudAppDetail();
+$appDetail = new CloudPcAutomaticDiscoveredAppDetail();
+$appDetail->setOdataType('#microsoft.graph.cloudPcAutomaticDiscoveredAppDetail');
 $appDetail->setIconPath('C:\Windows\system32\WindowsPowerShell\v1.0\powershell_ise.exe');
 $requestBody->setAppDetail($appDetail);
 

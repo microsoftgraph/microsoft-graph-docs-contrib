@@ -18,7 +18,7 @@ import (
 requestBody := graphmodels.NewCloudPcCloudApp()
 displayName := "Cloud App example3"
 requestBody.SetDisplayName(&displayName) 
-appDetail := graphmodels.NewCloudPcCloudAppDetail()
+appDetail := graphmodels.NewCloudPcAutomaticDiscoveredAppDetail()
 iconPath := "C:\Windows\system32\WindowsPowerShell\v1.0\powershell_ise.exe"
 appDetail.SetIconPath(&iconPath) 
 requestBody.SetAppDetail(appDetail)
