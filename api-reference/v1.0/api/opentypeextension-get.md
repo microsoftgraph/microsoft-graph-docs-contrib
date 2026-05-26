@@ -20,9 +20,9 @@ The following table lists the three scenarios where you can get an open extensio
 
 |**GET scenario**|**Supported resources**|**Response body**|
 |:-----|:-----|:-----|
-|Get a specific extension from a known resource instance.| [Device](../resources/device.md), [event](../resources/event.md), [group](../resources/group.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md), [organization](../resources/organization.md), [personal contact](../resources/contact.md), [user](../resources/user.md), [todoTask](../resources/todotask.md), [todoTaskList](../resources/todotasklist.md).  | Open extension only.|
-|Get a known resource instance expanded with a specific extension.|Device, event, group, group event, group post, message, organization, personal contact, user, todoTask, todoTaskList. |A resource instance expanded with the open extension.|
-|Find and expand resource instances with a specific extension. |Event, group event, group post, message, personal contact, task, task list.|Resource instances expanded with the open extension.|
+|Get a specific extension from a known resource instance.| [Device](../resources/device.md), [event](../resources/event.md), [group](../resources/group.md), [group event](../resources/event.md), [group post](../resources/post.md), [message](../resources/message.md), [note](../resources/note.md), [organization](../resources/organization.md), [personal contact](../resources/contact.md), [user](../resources/user.md), [todoTask](../resources/todotask.md), [todoTaskList](../resources/todotasklist.md).  | Open extension only.|
+|Get a known resource instance expanded with a specific extension.|Device, event, group, group event, group post, message, note, organization, personal contact, user, todoTask, todoTaskList. |A resource instance expanded with the open extension.|
+|Find and expand resource instances with a specific extension. |Event, group event, group post, message, note, personal contact, task, task list.|Resource instances expanded with the open extension.|
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -38,6 +38,7 @@ Depending on the resource that contains the extension and the permission type (d
 | [group event](../resources/event.md) | Group.Read.All | Not supported | Not supported |
 | [group post](../resources/post.md) | Group.Read.All | Not supported | Group.Read.All |
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
+| [note](../resources/note.md) | ShortNotes.Read | ShortNotes.Read | ShortNotes.Read.All |
 | [organization](../resources/organization.md) | User.Read | Not supported | Organization.Read.All |
 | [personal contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
@@ -61,6 +62,7 @@ GET /groups/{Id}/extensions/{extensionId}
 GET /groups/{Id}/events/{Id}/extensions/{extensionId}
 GET /groups/{Id}/threads/{Id}/posts/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/messages/{Id}/extensions/{extensionId}
+GET /users/{userId|userPrincipalName}/notes/{noteId}/extensions/{extensionId}
 GET /organization/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/contacts/{Id}/extensions/{extensionId}
 GET /users/{Id|userPrincipalName}/extensions/{extensionId}
@@ -80,6 +82,7 @@ GET /users/{Id|userPrincipalName}/events/{Id}?$expand=extensions($filter=id eq '
 GET /groups/{Id}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /groups/{Id}/threads/{Id}/posts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/messages/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/notes/{noteId}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{Id}?$expand=extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/todo/lists/{Id}?$expand=extensions($filter=id eq '{extensionId}')
@@ -108,6 +111,7 @@ GET /users/{Id|userPrincipalName}/events?$filter=Extensions/any(f:f/id eq '{exte
 GET /groups/{Id}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 GET /groups/{Id}/threads/{Id}/posts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/messages?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/notes?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 ```
 

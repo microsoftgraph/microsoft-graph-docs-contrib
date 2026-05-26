@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "c2ee4c0c-8407-5e61-b6d6-efbd9b92b5af",
+          "ApiChange": "Resource",
+          "ChangedApiName": "note",
+          "ChangeType": "Addition",
+          "Description": "Added the [note](https://learn.microsoft.com/en-us/graph/api/resources/note?view=graph-rest-v1.0) resource and associated methods.",
+          "Target": "note"
+        },
+        {
+          "Id": "c2ee4c0c-8407-5e61-b6d6-efbd9b92b5af",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "notes",
+          "ChangeType": "Addition",
+          "Description": "Added the **notes** relationship to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-v1.0) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "c2ee4c0c-8407-5e61-b6d6-efbd9b92b5af",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-04-22T04:37:15.9215878Z",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "0ae06baf-014f-40b1-909a-3bd7704a7a66",
           "ApiChange": "Method",
           "ChangedApiName": "Delete",

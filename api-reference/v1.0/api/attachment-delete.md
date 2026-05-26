@@ -1,29 +1,30 @@
 ---
 title: "Delete attachment"
-description: "Delete an attachment from a calendar event, mail message, or group post."
+description: "Delete an attachment from a calendar event, mail message, note, or group post."
 ms.localizationpriority: medium
 author: "SuryaLashmiS"
 ms.subservice: "outlook"
 doc_type: apiPageType
-ms.date: 08/08/2024
+ms.date: 04/15/2026
 ---
 
 # Delete attachment
 
 Namespace: microsoft.graph
 
-Delete an attachment from a user calendar event, mail message, or group post.
+Delete an attachment from a user calendar event, mail message, note, or group post.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
-Depending on the resource (**event**, **message**, **outlookTask**, or **post**) that the attachment is attached to and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
+Depending on the resource (**event**, **message**, **note**, or **post**) that the attachment is attached to and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
 | [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
+| [note](../resources/note.md) | ShortNotes.ReadWrite | ShortNotes.ReadWrite | ShortNotes.ReadWrite.All |
 | [post](../resources/post.md) | Group.ReadWrite.All | Not supported | Not supported |
 
 
@@ -85,6 +86,15 @@ example shows one level of nesting, but a message can be located in a child of a
 DELETE /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
+
+Attachments for a [note](../resources/note.md) in a user's mailbox.
+<!-- { "blockType": "ignored" } -->
+
+```http
+DELETE /me/notes/{id}/attachments/{id}
+DELETE /users/{id | userPrincipalName}/notes/{id}/attachments/{id}
+```
+
 Attachments for a [post](../resources/post.md) in a [thread](../resources/conversationthread.md) thta belongs to a [conversation](../resources/conversation.md) of a group.
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -103,9 +113,13 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
-## Example
-### Request
-The following example shows a request to delete an attachment on an event.
+## Examples
+
+### Example 1: Delete an event attachment
+The following example shows how to delete an attachment on an [event](../resources/event.md).
+#### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -146,7 +160,34 @@ DELETE https://graph.microsoft.com/v1.0/me/events/{id}/attachments/{id}
 
 ---
 
-### Response
+#### Response
+
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
+### Example 2: Delete a note attachment
+The following example shows how to delete an attachment on a [note](../resources/note.md).
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "delete_attachment_from_note"
+} -->
+
+```http
+DELETE https://graph.microsoft.com/v1.0/me/notes/AAMkAGI2THVSAAA=/attachments/AAMkAGI2attach2
+```
+
+#### Response
+
 The following example shows the response.
 <!-- {
   "blockType": "response",

@@ -28,6 +28,7 @@ The following user resources are supported:
 - [mailboxItem](../resources/mailboxitem.md)
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md)
+- [note](../resources/note.md)
 
 As well as the following group resources:
 
@@ -56,6 +57,7 @@ Depending on the resource you're getting the extended property from and the perm
 | [mailboxItem](../resources/mailboxitem.md) | MailboxItem.Read | Not supported. | MailboxItem.Read.All |
 | [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+| [note](../resources/note.md) | ShortNotes.Read | ShortNotes.Read | ShortNotes.Read |
 
 ## HTTP request
 
@@ -121,6 +123,15 @@ Get a **mailboxItem** instance:
 ```http
 GET /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/items?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/items/{mailboxItemId}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+```
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
+
+Get a **note** instance:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/notes/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/notes/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
 [!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
