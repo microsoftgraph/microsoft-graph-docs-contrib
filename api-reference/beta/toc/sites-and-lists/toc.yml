@@ -262,14 +262,6 @@ items:
     href: ../../api/permission-grant.md
   - name: Revoke grants on sharing link
     href: ../../api/permission-revokegrants.md
-- name: SharePoint settings
-  items:
-  - name: SharePoint settings
-    href: ../../resources/sharepointsettings.md
-  - name: Get
-    href: ../../api/sharepointsettings-get.md
-  - name: Update
-    href: ../../api/sharepointsettings-update.md
 - name: SharePoint report settings
   items:
   - name: SharePoint report settings
@@ -280,6 +272,14 @@ items:
     href: ../../api/sharepointreportsettings-enableapiusagereport.md
   - name: Disable API usage report
     href: ../../api/sharepointreportsettings-disableapiusagereport.md
+- name: SharePoint settings
+  items:
+  - name: SharePoint settings
+    href: ../../resources/sharepointsettings.md
+  - name: Get
+    href: ../../api/sharepointsettings-get.md
+  - name: Update
+    href: ../../api/sharepointsettings-update.md
 - name: Pages
   items:
   - name: Base site page
