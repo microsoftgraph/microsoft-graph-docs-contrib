@@ -14,7 +14,7 @@ const customDataProvidedResourceUploadSession = {
   isUploadDone: true
 };
 
-await client.api('/identityGovernance/entitlementManagement/accessPackageCatalogs/73eb2497-3b88-4c0a-8bb3-68ba8162beff/accessPackageResources/99ab2454-3b88-4c0a-8bb3-68ba8162beff/uploadSessions/23f27c15-72f9-45fe-9e9c-e3d8f75bdc44')
+await client.api('/identityGovernance/catalogs/{catalogId}/accessPackageResources/{accessPackageResourceId}/uploadSessions/{customDataProvidedResourceUploadSessionId}')
 	.version('beta')
 	.update(customDataProvidedResourceUploadSession);
 

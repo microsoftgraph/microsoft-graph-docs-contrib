@@ -3,6 +3,128 @@
     {
       "ChangeList": [
         {
+          "Id": "7c4b9e2f-8a3d-4f1b-9c5e-6d2a8f3b1e4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "exportItemResponse",
+          "ChangeType": "Addition",
+          "Description": "Added the [exportItemResponse](https://learn.microsoft.com/en-us/graph/api/resources/exportItemResponse?view=graph-rest-1.0) resource type.",
+          "Target": "exportItemResponse"
+        },
+        {
+          "Id": "7c4b9e2f-8a3d-4f1b-9c5e-6d2a8f3b1e4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mailboxItemImportSession",
+          "ChangeType": "Addition",
+          "Description": "Added the [mailboxItemImportSession](https://learn.microsoft.com/en-us/graph/api/resources/mailboxItemImportSession?view=graph-rest-1.0) resource type.",
+          "Target": "mailboxItemImportSession"
+        },
+        {
+          "Id": "7c4b9e2f-8a3d-4f1b-9c5e-6d2a8f3b1e4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "exchangeSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [exchangeSettings](https://learn.microsoft.com/en-us/graph/api/resources/exchangeSettings?view=graph-rest-1.0) resource type.",
+          "Target": "exchangeSettings"
+        },
+        {
+          "Id": "7c4b9e2f-8a3d-4f1b-9c5e-6d2a8f3b1e4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mailbox",
+          "ChangeType": "Addition",
+          "Description": "Added the [mailbox](https://learn.microsoft.com/en-us/graph/api/resources/mailbox?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "mailbox"
+        },
+        {
+          "Id": "7c4b9e2f-8a3d-4f1b-9c5e-6d2a8f3b1e4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mailboxFolder",
+          "ChangeType": "Addition",
+          "Description": "Added the [mailboxFolder](https://learn.microsoft.com/en-us/graph/api/resources/mailboxFolder?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "mailboxFolder"
+        },
+        {
+          "Id": "7c4b9e2f-8a3d-4f1b-9c5e-6d2a8f3b1e4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mailboxItem",
+          "ChangeType": "Addition",
+          "Description": "Added the [mailboxItem](https://learn.microsoft.com/en-us/graph/api/resources/mailboxItem?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "mailboxItem"
+        },
+        {
+          "Id": "7c4b9e2f-8a3d-4f1b-9c5e-6d2a8f3b1e4c",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "exchange",
+          "ChangeType": "Addition",
+          "Description": "Added the **exchange** relationship to the [userSettings](https://learn.microsoft.com/en-us/graph/api/resources/userSettings?view=graph-rest-1.0) resource.",
+          "Target": "userSettings"
+        },
+        {
+          "Id": "7c4b9e2f-8a3d-4f1b-9c5e-6d2a8f3b1e4c",
+          "ApiChange": "Method",
+          "ChangedApiName": "createImportSession",
+          "ChangeType": "Addition",
+          "Description": "Added the [createImportSession](https://learn.microsoft.com/en-us/graph/api/mailbox-createImportSession?view=graph-rest-1.0) method to the [mailbox](https://learn.microsoft.com/en-us/graph/api/resources/mailbox?view=graph-rest-1.0) resource.",
+          "Target": "mailbox"
+        },
+        {
+          "Id": "7c4b9e2f-8a3d-4f1b-9c5e-6d2a8f3b1e4c",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "mailboxes",
+          "ChangeType": "Addition",
+          "Description": "Added the **mailboxes** relationship to the [exchangeAdmin](https://learn.microsoft.com/en-us/graph/api/resources/exchangeadmin?view=graph-rest-v1.0) resource.",
+          "Target": "exchangeAdmin"
+        },
+        {
+          "Id": "7c4b9e2f-8a3d-4f1b-9c5e-6d2a8f3b1e4c",
+          "ApiChange": "Method",
+          "ChangedApiName": "exportItems",
+          "ChangeType": "Addition",
+          "Description": "Added the [exportItems](https://learn.microsoft.com/en-us/graph/api/mailbox-exportItems?view=graph-rest-1.0) method to the [mailbox](https://learn.microsoft.com/en-us/graph/api/resources/mailbox?view=graph-rest-1.0) resource.",
+          "Target": "mailbox"
+        },
+        {
+          "Id": "7c4b9e2f-8a3d-4f1b-9c5e-6d2a8f3b1e4c",
+          "ApiChange": "Method",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/mailboxFolder-delta?view=graph-rest-1.0) method to the [mailboxFolder](https://learn.microsoft.com/en-us/graph/api/resources/mailboxFolder?view=graph-rest-1.0) resource.",
+          "Target": "mailboxFolder"
+        },
+        {
+          "Id": "7c4b9e2f-8a3d-4f1b-9c5e-6d2a8f3b1e4c",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "bindingParameter",
+          "ChangeType": "Addition",
+          "Description": "Added the **bindingParameter** parameter to the [delta](https://learn.microsoft.com/en-us/graph/api/mailboxFolder-delta?view=graph-rest-1.0) method.",
+          "Target": "delta"
+        },
+        {
+          "Id": "7c4b9e2f-8a3d-4f1b-9c5e-6d2a8f3b1e4c",
+          "ApiChange": "Method",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](https://learn.microsoft.com/en-us/graph/api/mailboxItem-delta?view=graph-rest-1.0) method to the [mailboxItem](https://learn.microsoft.com/en-us/graph/api/resources/mailboxItem?view=graph-rest-1.0) resource.",
+          "Target": "mailboxItem"
+        },
+        {
+          "Id": "7c4b9e2f-8a3d-4f1b-9c5e-6d2a8f3b1e4c",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "bindingParameter",
+          "ChangeType": "Addition",
+          "Description": "Added the **bindingParameter** parameter to the [delta](https://learn.microsoft.com/en-us/graph/api/mailboxItem-delta?view=graph-rest-1.0) method.",
+          "Target": "delta"
+        }
+      ],
+      "Id": "7c4b9e2f-8a3d-4f1b-9c5e-6d2a8f3b1e4c",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-05-06T17:36:39.9393866Z",
+      "WorkloadArea": "Mailbox import and export",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b1dd3bfb-7296-4d50-a5c5-deac8a81a49e",
           "ApiChange": "Resource",
           "ChangedApiName": "note",
@@ -24,6 +146,56 @@
       "Version": "beta",
       "CreatedDateTime": "2026-04-22T04:37:15.9215878Z",
       "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "398a57c5-adf4-4754-b96d-5f32acd83838",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "notifyMembers",
+          "ChangeType": "Addition",
+          "Description": "Added the **notifyMembers** enumeration type.",
+          "Target": "notifyMembers"
+        },
+        {
+          "Id": "398a57c5-adf4-4754-b96d-5f32acd83838",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [emailDetails](https://learn.microsoft.com/en-us/graph/api/resources/emailDetails?view=graph-rest-1.0) resource.",
+          "Target": "emailDetails"
+        },
+        {
+          "Id": "398a57c5-adf4-4754-b96d-5f32acd83838",
+          "ApiChange": "Resource",
+          "ChangedApiName": "targetOwners",
+          "ChangeType": "Addition",
+          "Description": "Added the [targetOwners](https://learn.microsoft.com/en-us/graph/api/resources/targetOwners?view=graph-rest-1.0) resource.",
+          "Target": "targetOwners"
+        },
+        {
+          "Id": "398a57c5-adf4-4754-b96d-5f32acd83838",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ownerlessGroupPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [ownerlessGroupPolicy](https://learn.microsoft.com/en-us/graph/api/resources/ownerlessGroupPolicy?view=graph-rest-1.0) resource.",
+          "Target": "ownerlessGroupPolicy"
+        },
+        {
+          "Id": "398a57c5-adf4-4754-b96d-5f32acd83838",
+          "ApiChange": "Resource",
+          "ChangedApiName": "policyRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [policyRoot](https://learn.microsoft.com/en-us/graph/api/resources/policyRoot?view=graph-rest-1.0) resource.",
+          "Target": "policyRoot"
+        }
+      ],
+      "Id": "398a57c5-adf4-4754-b96d-5f32acd83838",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-05-12T10:00:32.4538041Z",
+      "WorkloadArea": "Groups",
       "SubArea": ""
     },
     {

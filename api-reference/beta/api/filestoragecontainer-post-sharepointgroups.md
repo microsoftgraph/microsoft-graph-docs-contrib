@@ -126,8 +126,9 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.sharePointGroup",
-  "id" : "4",
+  "id" : "ZGYwZTEzYTgtOTExOS00MjdmLWEzNjktOTdjOWM3YjNlYjcyXzE0",
   "title": "Sample Group",
-  "description": "This is sample description"
+  "description": "This is sample description",
+  "principalId": "4"
 }
 ```

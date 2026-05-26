@@ -42,7 +42,7 @@ In the request body, supply an array of [patchContentCommand](../resources/patch
 
 If successful, this method returns a `204 No Content` response code.  No JSON data is returned for a PATCH request.
 ## Example
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -75,7 +75,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 The following example shows the response. 
 <!-- {
   "blockType": "response"

@@ -20,6 +20,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+|mailboxes|[mailbox](../resources/mailbox.md) collection|Represents a user's mailboxes.|
 |tracing|[messageTracingRoot](../resources/messagetracingroot.md)|Represents a container for administrative resources to trace messages.|
 
 ## JSON representation

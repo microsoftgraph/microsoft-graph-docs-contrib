@@ -11,7 +11,7 @@ var result = await graphClient.Directory.DeletedItems.GraphGroup.GetAsync((reque
 {
 	requestConfiguration.QueryParameters.Count = true;
 	requestConfiguration.QueryParameters.Orderby = new string []{ "deletedDateTime asc" };
-	requestConfiguration.QueryParameters.Select = new string []{ "id","DisplayName","deletedDateTime" };
+	requestConfiguration.QueryParameters.Select = new string []{ "id","displayName","deletedDateTime" };
 	requestConfiguration.Headers.Add("ConsistencyLevel", "eventual");
 });
 

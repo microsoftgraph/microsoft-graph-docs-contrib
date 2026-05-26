@@ -1,5 +1,131 @@
 {
   "changelog": [    
+        {
+      "ChangeList": [
+        {
+          "Id": "b1e145ad-965e-474e-afa6-28a008f989a4",
+          "ApiChange": "Property",
+          "ChangedApiName": "isManualApprovalEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isManualApprovalEnabled** property to the [virtualEventRegistrationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistrationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistrationConfiguration"
+        },
+        {
+          "Id": "b1e145ad-965e-474e-afa6-28a008f989a4",
+          "ApiChange": "Property",
+          "ChangedApiName": "isWaitlistEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isWaitlistEnabled** property to the [virtualEventRegistrationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistrationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistrationConfiguration"
+        },
+        {
+          "Id": "b1e145ad-965e-474e-afa6-28a008f989a4",
+          "ApiChange": "Property",
+          "ChangedApiName": "isManualApprovalEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isManualApprovalEnabled** property to the [virtualEventWebinarRegistrationConfiguration ](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventWebinarRegistrationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "virtualEventWebinarRegistrationConfiguration"
+        },
+        {
+          "Id": "b1e145ad-965e-474e-afa6-28a008f989a4",
+          "ApiChange": "Property",
+          "ChangedApiName": "isWaitlistEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isWaitlistEnabled** property to the [virtualEventWebinarRegistrationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventWebinarRegistrationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "virtualEventWebinarRegistrationConfiguration"
+        },
+        {
+          "Id": "b1e145ad-965e-474e-afa6-28a008f989a4",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "registrationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **registrationConfiguration** relationship to the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventTownhall?view=graph-rest-beta) resource.",
+          "Target": "virtualEventTownhall"
+        },
+        {
+          "Id": "b1e145ad-965e-474e-afa6-28a008f989a4",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "registrations",
+          "ChangeType": "Addition",
+          "Description": "Added the **registrations** relationship to the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventTownhall?view=graph-rest-beta) resource.",
+          "Target": "virtualEventTownhall"
+        },
+        {
+          "Id": "b1e145ad-965e-474e-afa6-28a008f989a4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventTownhallRegistrationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualEventTownhallRegistrationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventTownhallRegistrationConfiguration?view=graph-rest-beta) resource and an associated method.",
+          "Target": "virtualEventTownhallRegistrationConfiguration"
+        }
+      ],
+      "Id": "b1e145ad-965e-474e-afa6-28a008f989a4",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-05-22T15:53:01.6352074Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+       "ChangeList": [
+        {
+          "Id": "721aca61-943c-4876-ad1f-063720d75265",
+          "ApiChange": "Property",
+          "ChangedApiName": "capacity",
+          "ChangeType": "Addition",
+          "Description": "Added the **capacity** property to the [town hall](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventtownhall?view=graph-rest-beta) resource.",
+          "Target": "townHall"
+        },
+        {
+          "Id": "721aca61-943c-4876-ad1f-063720d75265",
+          "ApiChange": "Property",
+          "ChangedApiName": "capacity",
+          "ChangeType": "Addition",
+          "Description": "Added the **capacity** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
+          "Target": "virtualEventSession"
+        }
+      ],
+      "Id": "721aca61-943c-4876-ad1f-063720d75265",
+      "Cloud": "Review",
+      "Version": "beta",
+      "CreatedDateTime": "2026-05-22T00:27:39.1921591Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call" 
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "bd16e1cf-95de-4af4-b71c-0be1d682b4ef",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "meetingEngagementType",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingEngagementType** enumeration type.",
+          "Target": "meetingEngagementType"
+        },
+        {
+          "Id": "bd16e1cf-95de-4af4-b71c-0be1d682b4ef",
+          "ApiChange": "Resource",
+          "ChangedApiName": "meetingEngagement",
+          "ChangeType": "Addition",
+          "Description": "Added the [meetingEngagement](https://learn.microsoft.com/en-us/graph/api/resources/meetingEngagement?view=graph-rest-beta) resource.",
+          "Target": "meetingEngagement"
+        },
+        {
+          "Id": "bd16e1cf-95de-4af4-b71c-0be1d682b4ef",
+          "ApiChange": "Property",
+          "ChangedApiName": "engagements",
+          "ChangeType": "Addition",
+          "Description": "Added the **engagements** property to the [attendanceRecord](https://learn.microsoft.com/en-us/graph/api/resources/attendanceRecord?view=graph-rest-beta) resource.",
+          "Target": "attendanceRecord"
+        }
+      ],
+      "Id": "bd16e1cf-95de-4af4-b71c-0be1d682b4ef",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-05-05T20:46:26.7145941Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Call"
+    },
     {
       "ChangeList": [
         {

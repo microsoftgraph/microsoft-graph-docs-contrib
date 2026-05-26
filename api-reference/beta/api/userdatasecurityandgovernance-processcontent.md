@@ -75,7 +75,7 @@ If successful, this action returns a `200 OK`  response code and a [processConte
 
 #### Request
 
-The following example shows a request from an enterprise app, which might be a non-AI and AI app. The text that you send using `data` can be any text from your app. If your app is an AI app, you would send the user's prompt.
+The following example shows a request from an enterprise app, which can be a non-AI app or an AI app. The text that you send using `data` can be any text from your app — for example, a document body, a chat message, or the user's prompt if your app is an AI app.
 
 # [HTTP](#tab/http)
 <!-- {

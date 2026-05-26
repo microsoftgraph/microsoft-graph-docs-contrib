@@ -6,7 +6,7 @@ ms.author: ombongifaith
 ms.reviewer: Licantrop0
 ms.subservice: ent-mcp-server
 ms.topic: get-started
-ms.date: 11/18/2025
+ms.date: 05/20/2026
 
 #customer intent: As a developer, I want to configure my AI client to connect to the Microsoft MCP Server so that I can integrate enterprise data into my applications.
 ---
@@ -190,11 +190,14 @@ The naming of MCP scopes follows the pattern `MCP.{microsoft-graph-scope-name}`.
 - MCP.Application.Read.All
 - MCP.AuditLog.Read.All
 - MCP.AuthenticationContext.Read.All
+- MCP.DelegatedPermissionGrant.Read.All
 - MCP.Device.Read.All
 - MCP.DirectoryRecommendations.Read.All
 - MCP.Domain.Read.All
 - MCP.EntitlementManagement.Read.All
+- MCP.Group.Read.All
 - MCP.GroupMember.Read.All
+- MCP.GroupSettings.Read.All
 - MCP.HealthMonitoringAlert.Read.All
 - MCP.IdentityRiskEvent.Read.All
 - MCP.IdentityRiskyServicePrincipal.Read.All
@@ -208,6 +211,7 @@ The naming of MCP scopes follows the pattern `MCP.{microsoft-graph-scope-name}`.
 - MCP.NetworkAccess.Read.All
 - MCP.NetworkAccess-Reports.Read.All
 - MCP.Organization.Read.All
+- MCP.OrgContact.Read.All
 - MCP.Policy.Read.All
 - MCP.Policy.Read.ConditionalAccess
 - MCP.ProvisioningLog.Read.All
@@ -215,10 +219,13 @@ The naming of MCP scopes follows the pattern `MCP.{microsoft-graph-scope-name}`.
 - MCP.RoleAssignmentSchedule.Read.Directory
 - MCP.RoleEligibilitySchedule.Read.Directory
 - MCP.RoleManagement.Read.Directory
+- MCP.SecurityAlert.Read.All
+- MCP.SecurityIncident.Read.All
+- MCP.ServiceHealth.Read.All
+- MCP.ServiceMessage.Read.All
 - MCP.Synchronization.Read.All
 - MCP.User.Read.All
 - MCP.UserAuthenticationMethod.Read.All
-- MCP.GroupSettings.Read.All
 
 ---
 

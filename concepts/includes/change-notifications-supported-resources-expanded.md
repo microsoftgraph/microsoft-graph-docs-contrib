@@ -5,7 +5,7 @@ ms.reviewer: ric.lewis
 ms.subservice: change-notifications
 ms.topic: include
 ms.localizationpriority: high
-ms.date: 11/07/2024
+ms.date: 05/05/2026
 ---
 
 <!-- markdownlint-disable MD041-->
@@ -15,12 +15,12 @@ An app can subscribe to changes on the Microsoft Graph resources listed in the t
 > [!NOTE]
 > For Microsoft Teams resources, the **per-organization limit of 10,000 total subscriptions** is shared cumulatively across **all Teams change notification subscriptions** in the tenant. It includes subscriptions created for different Teams resources—such as chats, chat messages, call transcripts, call recordings, channels, teams, and conversation members—which **all count toward the same organizational quota**. When the combined number of active Teams subscriptions reaches this limit, **any additional subscription creation request for a Teams resource fails** with a `403 Forbidden` error.
 
-
 > [!div class="mx-tableFixed"]
 > | Resource | Supported resource paths | Limitations |
 > |---|---|---|
 > | Cloud printing [printer][] | Changes when a print job is ready to be downloaded (jobFetchable event): `/print/printers/{id}/jobs` | - |
 > | Cloud printing [printTaskDefinition][] | Changes when there's a valid job in the queue (jobStarted event): `/print/printtaskdefinition/{id}/tasks` | - |
+ > | Copilot [aiInsights][] | Copilot AI insights from meetings that a particular user is part of: `/copilot/users/{userId}/onlineMeetings/getAllAiInsights` <br><br> Copilot AI insights for a particular meeting: `/copilot/users/{userId}/onlineMeetings/{onlineMeetingId}/aiInsights` | Maximum subscription quotas for AI insights across all meetings for a user: <ul><li>Per app and user combination: 1</li><li>Per user (delegated): 10</li><li>Per organization: 10,000 total subscriptions.</li></ul><br><br>Maximum subscription quotas for AI insights of a specific meeting: <ul><li>Per app and user + meeting combination: 1</li><li>Per user and meeting combination (delegated): 1</li><li>Per organization: 10,000 total subscriptions (shared)</li></ul> |
 > | Copilot [aiInteraction][] | Copilot AI interactions that a particular user is part of: `copilot/users/{userId}/interactionHistory/getAllEnterpriseInteractions` <br><br> Copilot AI interactions in an organization: `copilot/interactionHistory/getAllEnterpriseInteractions` | Maximum subscription quotas: <ul><li> Per app and tenant combination (for subscriptions tracking AI interactions across a tenant): 1</li> <li> Per app and user combination (for subscriptions tracking AI interactions a particular user is part of): 1</li> <li> Per user (for subscriptions tracking AI interactions a particular user is part of): 10 subscriptions.</li> <li> Per organization: 10,000 total subscriptions.</li></ul> |
 > | [driveItem][] on OneDrive (personal) | Changes to content within the hierarchy of _any folder_: `/users/{id}/drive/root` | - |
 > | [driveItem][] on OneDrive for work or school | Changes to content within the hierarchy of the _root folder_: `/drives/{id}/root` , `/users/{id}/drive/root` | - |
@@ -57,6 +57,7 @@ An app can subscribe to changes on the Microsoft Graph resources listed in the t
 Some of these resources support rich notifications (notifications with resource data). For their details, see [Set up change notifications that include resource data](/graph/change-notifications-with-resource-data#supported-resources).
 
 [aiInteraction]: /graph/api/resources/aiinteraction
+[aiInsights]: /microsoft-365/copilot/extensibility/api/ai-services/meeting-insights/resources/callaiinsight
 [channel]: /graph/api/resources/channel
 [chat]: /graph/api/resources/chat
 [contact]: /graph/api/resources/contact

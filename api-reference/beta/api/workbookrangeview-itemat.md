@@ -51,7 +51,7 @@ If successful, this method returns `200 OK` response code and [workbookRangeView
 
 ## Example
 Here is an example of how to call this API.
-##### Request
+### Request
 The following example shows a request.
 <!-- {
   "blockType": "request",
@@ -62,8 +62,10 @@ GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range(a
 
 ```
 
-##### Response
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

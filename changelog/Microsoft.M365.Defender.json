@@ -3,6 +3,58 @@
     {
       "ChangeList": [
         {
+          "Id": "8379ddd0-e101-4994-994f-36d29a65811d",
+          "ApiChange": "Property",
+          "ChangedApiName": "categories",
+          "ChangeType": "Addition",
+          "Description": "Added the **categories** property to the [alert](https://learn.microsoft.com/en-us/graph/api/resources/security-alert?view=graph-rest-beta) resource.",
+          "Target": "alert"
+        },
+        {
+          "Id": "8379ddd0-e101-4994-994f-36d29a65811d",
+          "ApiChange": "Property",
+          "ChangedApiName": "category",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **category** property on the [alert](https://learn.microsoft.com/en-us/graph/api/resources/security-alert?view=graph-rest-beta) resource. Use the **categories** property instead.",
+          "Target": "alert"
+        }
+      ],
+      "Id": "8379ddd0-e101-4994-994f-36d29a65811d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-05-06T09:53:42.0329384Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Alerts and incidents"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fecc7d38-924a-4137-a934-8d0d83035f20",
+          "ApiChange": "Property",
+          "ChangedApiName": "categories",
+          "ChangeType": "Addition",
+          "Description": "Added the **categories** property to the [alert](https://learn.microsoft.com/en-us/graph/api/resources/security-alert?view=graph-rest-1.0) resource.",
+          "Target": "alert"
+        },
+        {
+          "Id": "fecc7d38-924a-4137-a934-8d0d83035f20",
+          "ApiChange": "Property",
+          "ChangedApiName": "category",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **category** property on the [alert](https://learn.microsoft.com/en-us/graph/api/resources/security-alert?view=graph-rest-1.0) resource. Use the **categories** property instead.",
+          "Target": "alert"
+        }
+      ],
+      "Id": "fecc7d38-924a-4137-a934-8d0d83035f20",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-05-06T09:53:42.0336216Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Alerts and incidents"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "724993ad-638e-4e15-a537-621ca6862b7f",
           "ApiChange": "EnumType",
           "ChangedApiName": "correlationReason",
@@ -1707,6 +1759,282 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2023-08-03T07:42:28.4357385Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Alerts and incidents"
+    },
+    {
+      "ChangeList": [
+	  {
+          "Id": "c74499c6-2390-435f-9051-0e8e6e12858d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "ioTDeviceImportanceType",
+          "ChangeType": "Addition",
+          "Description": "Added the **ioTDeviceImportanceType** enumeration type.",
+          "Target": "ioTDeviceImportanceType"
+        },
+        {
+          "Id": "c74499c6-2390-435f-9051-0e8e6e12858d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "protocolType",
+          "ChangeType": "Addition",
+          "Description": "Added the **protocolType** enumeration type.",
+          "Target": "protocolType"
+        },
+        {
+          "Id": "c74499c6-2390-435f-9051-0e8e6e12858d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "servicePrincipalType",
+          "ChangeType": "Addition",
+          "Description": "Added the **servicePrincipalType** enumeration type.",
+          "Target": "servicePrincipalType"
+        },
+        {
+          "Id": "c74499c6-2390-435f-9051-0e8e6e12858d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "gitHubOrganizationEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [gitHubOrganizationEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-gitHubOrganizationEvidence?view=graph-rest-beta) resource type.",
+          "Target": "gitHubOrganizationEvidence"
+        },
+        {
+          "Id": "c74499c6-2390-435f-9051-0e8e6e12858d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "gitHubRepoEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [gitHubRepoEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-gitHubRepoEvidence?view=graph-rest-beta) resource type.",
+          "Target": "gitHubRepoEvidence"
+        },
+        {
+          "Id": "c74499c6-2390-435f-9051-0e8e6e12858d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "gitHubUserEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [gitHubUserEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-gitHubUserEvidence?view=graph-rest-beta) resource type.",
+          "Target": "gitHubUserEvidence"
+        },
+        {
+          "Id": "c74499c6-2390-435f-9051-0e8e6e12858d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "hostLogonSessionEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [hostLogonSessionEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-hostLogonSessionEvidence?view=graph-rest-beta) resource type.",
+          "Target": "hostLogonSessionEvidence"
+        },
+        {
+          "Id": "c74499c6-2390-435f-9051-0e8e6e12858d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ioTDeviceEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [ioTDeviceEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-ioTDeviceEvidence?view=graph-rest-beta) resource type.",
+          "Target": "ioTDeviceEvidence"
+        },
+        {
+          "Id": "c74499c6-2390-435f-9051-0e8e6e12858d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "malwareEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [malwareEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-malwareEvidence?view=graph-rest-beta) resource type.",
+          "Target": "malwareEvidence"
+        },
+        {
+          "Id": "c74499c6-2390-435f-9051-0e8e6e12858d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "networkConnectionEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [networkConnectionEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-networkConnectionEvidence?view=graph-rest-beta) resource type.",
+          "Target": "networkConnectionEvidence"
+        },
+        {
+          "Id": "c74499c6-2390-435f-9051-0e8e6e12858d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "nicEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [nicEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-nicEvidence?view=graph-rest-beta) resource type.",
+          "Target": "nicEvidence"
+        },
+        {
+          "Id": "c74499c6-2390-435f-9051-0e8e6e12858d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sasTokenEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [sasTokenEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-sasTokenEvidence?view=graph-rest-beta) resource type.",
+          "Target": "sasTokenEvidence"
+        },
+        {
+          "Id": "c74499c6-2390-435f-9051-0e8e6e12858d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "servicePrincipalEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [servicePrincipalEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-servicePrincipalEvidence?view=graph-rest-beta) resource type.",
+          "Target": "servicePrincipalEvidence"
+        },
+        {
+          "Id": "c74499c6-2390-435f-9051-0e8e6e12858d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "submissionMailEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [submissionMailEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-submissionMailEvidence?view=graph-rest-beta) resource type.",
+          "Target": "submissionMailEvidence"
+        },
+        {
+          "Id": "c74499c6-2390-435f-9051-0e8e6e12858d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "dnsEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [dnsEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-dnsEvidence?view=graph-rest-beta) resource type.",
+          "Target": "dnsEvidence"
+        },
+        {
+          "Id": "c74499c6-2390-435f-9051-0e8e6e12858d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fileHashEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [fileHashEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-fileHashEvidence?view=graph-rest-beta) resource type.",
+          "Target": "fileHashEvidence"
+        }
+      ],
+      "Id": "c74499c6-2390-435f-9051-0e8e6e12858d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-05-12T08:39:34.8295307Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Alerts and incidents"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e6a554f5-665f-4d7a-812a-dbc68de7e4d5",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "ioTDeviceImportanceType",
+          "ChangeType": "Addition",
+          "Description": "Added the **ioTDeviceImportanceType** enumeration type.",
+          "Target": "ioTDeviceImportanceType"
+        },
+        {
+          "Id": "e6a554f5-665f-4d7a-812a-dbc68de7e4d5",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "protocolType",
+          "ChangeType": "Addition",
+          "Description": "Added the **protocolType** enumeration type.",
+          "Target": "protocolType"
+        },
+        {
+          "Id": "e6a554f5-665f-4d7a-812a-dbc68de7e4d5",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "servicePrincipalType",
+          "ChangeType": "Addition",
+          "Description": "Added the **servicePrincipalType** enumeration type.",
+          "Target": "servicePrincipalType"
+        },
+        {
+          "Id": "e6a554f5-665f-4d7a-812a-dbc68de7e4d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "gitHubOrganizationEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [gitHubOrganizationEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-gitHubOrganizationEvidence?view=graph-rest-1.0) resource type.",
+          "Target": "gitHubOrganizationEvidence"
+        },
+        {
+          "Id": "e6a554f5-665f-4d7a-812a-dbc68de7e4d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "gitHubRepoEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [gitHubRepoEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-gitHubRepoEvidence?view=graph-rest-1.0) resource type.",
+          "Target": "gitHubRepoEvidence"
+        },
+        {
+          "Id": "e6a554f5-665f-4d7a-812a-dbc68de7e4d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "gitHubUserEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [gitHubUserEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-gitHubUserEvidence?view=graph-rest-1.0) resource type.",
+          "Target": "gitHubUserEvidence"
+        },
+        {
+          "Id": "e6a554f5-665f-4d7a-812a-dbc68de7e4d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "hostLogonSessionEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [hostLogonSessionEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-hostLogonSessionEvidence?view=graph-rest-1.0) resource type.",
+          "Target": "hostLogonSessionEvidence"
+        },
+        {
+          "Id": "e6a554f5-665f-4d7a-812a-dbc68de7e4d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ioTDeviceEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [ioTDeviceEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-ioTDeviceEvidence?view=graph-rest-1.0) resource type.",
+          "Target": "ioTDeviceEvidence"
+        },
+        {
+          "Id": "e6a554f5-665f-4d7a-812a-dbc68de7e4d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "malwareEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [malwareEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-malwareEvidence?view=graph-rest-1.0) resource type.",
+          "Target": "malwareEvidence"
+        },
+        {
+          "Id": "e6a554f5-665f-4d7a-812a-dbc68de7e4d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "networkConnectionEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [networkConnectionEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-networkConnectionEvidence?view=graph-rest-1.0) resource type.",
+          "Target": "networkConnectionEvidence"
+        },
+        {
+          "Id": "e6a554f5-665f-4d7a-812a-dbc68de7e4d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "nicEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [nicEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-nicEvidence?view=graph-rest-1.0) resource type.",
+          "Target": "nicEvidence"
+        },
+        {
+          "Id": "e6a554f5-665f-4d7a-812a-dbc68de7e4d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sasTokenEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [sasTokenEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-sasTokenEvidence?view=graph-rest-1.0) resource type.",
+          "Target": "sasTokenEvidence"
+        },
+        {
+          "Id": "e6a554f5-665f-4d7a-812a-dbc68de7e4d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "servicePrincipalEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [servicePrincipalEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-servicePrincipalEvidence?view=graph-rest-1.0) resource type.",
+          "Target": "servicePrincipalEvidence"
+        },
+        {
+          "Id": "e6a554f5-665f-4d7a-812a-dbc68de7e4d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "submissionMailEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [submissionMailEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-submissionMailEvidence?view=graph-rest-1.0) resource type.",
+          "Target": "submissionMailEvidence"
+        },
+        {
+          "Id": "e6a554f5-665f-4d7a-812a-dbc68de7e4d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "dnsEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [dnsEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-dnsEvidence?view=graph-rest-1.0) resource type.",
+          "Target": "dnsEvidence"
+        },
+        {
+          "Id": "e6a554f5-665f-4d7a-812a-dbc68de7e4d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fileHashEvidence",
+          "ChangeType": "Addition",
+          "Description": "Added the [fileHashEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-fileHashEvidence?view=graph-rest-1.0) resource type.",
+          "Target": "fileHashEvidence"
+        }
+      ],
+      "Id": "e6a554f5-665f-4d7a-812a-dbc68de7e4d5",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-05-12T07:42:28.4357385Z",
       "WorkloadArea": "Security",
       "SubArea": "Alerts and incidents"
     },

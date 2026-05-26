@@ -12,7 +12,7 @@ use Microsoft\Graph\Beta\Generated\DeviceManagement\VirtualEndpoint\OnPremisesCo
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new UpdateAdDomainPasswordPostRequestBody();
-$requestBody->setAdDomainPassword('AdDomainPassword value');
+$requestBody->setAdDomainPassword('AdDomainPassword_XXXX');
 
 $graphServiceClient->deviceManagement()->virtualEndpoint()->onPremisesConnections()->byCloudPcOnPremisesConnectionId('cloudPcOnPremisesConnection-id')->updateAdDomainPassword()->post($requestBody)->wait();
 

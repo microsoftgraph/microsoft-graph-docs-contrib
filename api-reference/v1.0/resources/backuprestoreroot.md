@@ -34,12 +34,14 @@ Represents the Microsoft 365 Backup Storage service in a tenant.
 
 |Relationship|Type|Description|
 |:---|:---|:---|
+|browseSessions|[browseSessionBase](../resources/browsesessionbase.md) collection|The list of browse sessions in the tenant.|
 |driveInclusionRules|[driveProtectionRule](../resources/driveprotectionrule.md) collection|The list of drive inclusion rules applied to the tenant.|
 |driveProtectionUnits|[driveProtectionUnit](../resources/driveprotectionunit.md) collection|The list of drive protection units in the tenant.|
 |exchangeProtectionPolicies|[exchangeProtectionPolicy](../resources/exchangeprotectionpolicy.md) collection|The list of Exchange protection policies in the tenant.|
 |exchangeRestoreSessions|[exchangeRestoreSession](../resources/exchangerestoresession.md) collection|The list of Exchange restore sessions available in the tenant.|
 |mailboxInclusionRules|[mailboxProtectionRule](../resources/mailboxprotectionrule.md) collection|The list of mailbox inclusion rules applied to the tenant.|
 |mailboxProtectionUnits|[mailboxProtectionUnit](../resources/mailboxprotectionunit.md) collection|The list of mailbox protection units in the tenant.|
+|oneDriveForBusinessBrowseSessions|[oneDriveForBusinessBrowseSession](../resources/onedriveforbusinessbrowsesession.md) collection|The list of OneDrive for Business browse sessions in the tenant.|
 |oneDriveForBusinessProtectionPolicies|[oneDriveForBusinessProtectionPolicy](../resources/onedriveforbusinessprotectionpolicy.md) collection|The list of OneDrive for Business protection policies in the tenant.|
 |oneDriveForBusinessRestoreSessions|[oneDriveForBusinessRestoreSession](../resources/onedriveforbusinessrestoresession.md) collection|The list of OneDrive for Business restore sessions available in the tenant.|
 |protectionPolicies|[protectionPolicyBase](../resources/protectionpolicybase.md) collection|List of protection policies in the tenant.|
@@ -47,6 +49,7 @@ Represents the Microsoft 365 Backup Storage service in a tenant.
 |restorePoints|[restorePoint](../resources/restorepoint.md) collection|List of restore points in the tenant.|
 |restoreSessions|[restoreSessionBase](../resources/restoresessionbase.md) collection|List of restore sessions in the tenant.|
 |serviceApps|[serviceApp](../resources/serviceapp.md) collection|List of Backup Storage apps in the tenant.|
+|sharePointBrowseSessions|[sharePointBrowseSession](../resources/sharepointbrowsesession.md) collection|The list of SharePoint browse sessions in the tenant.|
 |sharePointProtectionPolicies|[sharePointProtectionPolicy](../resources/sharepointprotectionpolicy.md) collection|The list of SharePoint protection policies in the tenant.|
 |sharePointRestoreSessions|[sharePointRestoreSession](../resources/sharepointrestoresession.md) collection|The list of SharePoint restore sessions available in the tenant.|
 |siteInclusionRules|[siteProtectionRule](../resources/siteprotectionrule.md) collection|The list of site inclusion rules applied to the tenant.|

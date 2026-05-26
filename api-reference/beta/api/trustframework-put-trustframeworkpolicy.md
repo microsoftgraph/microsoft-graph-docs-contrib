@@ -58,7 +58,7 @@ The response will be one of the following:
 
 The following example updates a **trustFrameworkPolicy**.
 
-##### Request
+### Request
 
 <!-- {
   "blockType": "ignored",
@@ -74,7 +74,7 @@ Content-Type: application/xml
 </TrustFrameworkPolicy>
 ```
 
-##### Response
+### Response
 
 <!-- {
   "blockType": "ignored",
