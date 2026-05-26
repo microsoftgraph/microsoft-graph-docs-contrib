@@ -51,7 +51,8 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-Here's an example of a request.
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -94,7 +95,9 @@ GET https://graph.microsoft.com/beta/security/triggers/retentionEvents
 ---
 
 ### Response
-Here's an example of a request.
+
+The following example shows a request.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
