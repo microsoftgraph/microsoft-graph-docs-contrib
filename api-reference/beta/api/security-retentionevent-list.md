@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/security/triggers/retentionEvents
 
 ### Response
 
-The following example shows a request.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
