@@ -45,8 +45,8 @@ The following table lists the mandatory filter parameters for tenant-level repor
 | userSettingName | The name of the user setting configuration. |
 | servicePlanType | The Cloud PC service plan type (FrontlineShared, FrontlineDedicated, Enterprise, or Reserve). |
 | servicePlanName | The name of the service plan. |
-| oSBuildVersion | The operating system build version. |
-| aADJoinType | The Azure Active Directory join type. |
+| osBuildVersion | The operating system build version. |
+| aadJoinType | The Azure Active Directory join type. |
 | imageName | The name of the OS image used. |
 | gatewayRegion | The region where the gateway is located. |
 | clientOS | The client operating system. |
