@@ -203,7 +203,7 @@ Added deprecation notices to the [agentRegistry](/graph/api/resources/agentregis
 
 Added the **deprecationDate** property to the [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta&preserve-view=true) resource to indicate when an application will be removed from the Microsoft Entra application gallery.
 
-### Backup storage
+### Backup and recovery
 
 - When a [protection policy is deactivated](/graph/api/protectionpolicybase-deactivate?view=graph-rest-beta&preserve-view=true), backup activity stops immediately, no new backups are taken, and the protected resources are no longer covered by the policy. Any backups taken before deactivation are retained according to the retention policy, after which they're offboarded. You can restore data using previous restore points even after deactivation.
 - A [protection policy can be deleted](/graph/api/protectionpolicybase-delete?view=graph-rest-beta&preserve-view=true) only after it was [deactivated](/graph/api/protectionpolicybase-deactivate?view=graph-rest-beta&preserve-view=true). When you delete a policy, all associated protection units are removed, and backup protection stops for the resources previously covered by the policy. Existing backup data is retained according to the retention policy before it's offboarded. You can restore data using previous restore points even after deletion.
@@ -211,6 +211,8 @@ Added the **deprecationDate** property to the [applicationTemplate](/graph/api/r
 - [Update](/graph/api/driveprotectionunit-update?view=graph-rest-beta&preserve-view=true) the **billingPolicyId** property on a [driveProtectionUnit](/graph/api/resources/driveprotectionunit?view=graph-rest-beta&preserve-view=true) object.
 - [Update](/graph/api/mailboxprotectionunit-update?view=graph-rest-beta&preserve-view=true) the **billingPolicyId** property on a [mailboxProtectionUnit](/graph/api/resources/mailboxprotectionunit?view=graph-rest-beta&preserve-view=true) object.
 - [Update](/graph/api/siteprotectionunit-update?view=graph-rest-beta&preserve-view=true) the **billingPolicyId** property on a [siteProtectionUnit](/graph/api/resources/siteprotectionunit?view=graph-rest-beta&preserve-view=true) object.
+- Use the **destinationType** property on [granularRestoreArtifactBase](/graph/api/resources/granularrestoreartifactbase?view=graph-rest-beta&preserve-view=true), [granularDriveRestoreArtifact](/graph/api/resources/granulardriverestoreartifact?view=graph-rest-beta&preserve-view=true), and [granularSiteRestoreArtifact](/graph/api/resources/granularsiterestoreartifact?view=graph-rest-beta&preserve-view=true) to specify the restoration destination, such as in-place restore.
+- Use the **@microsoft.graph.conflictBehavior** annotation when [creating a OneDrive restore session](/graph/api/backuprestoreroot-post-onedriveforbusinessrestoresessions?view=graph-rest-beta&preserve-view=true) or [creating a SharePoint restore session](/graph/api/backuprestoreroot-post-sharepointrestoresessions?view=graph-rest-beta&preserve-view=true) to control conflict resolution during granular restore operations.
 
 ### Device and app management | Cloud PC
 
