@@ -15,6 +15,9 @@ Namespace: microsoft.graph
 
 Activate a [serviceApp](../resources/serviceapp.md).
 
+> [!NOTE]
+> This API is intended for use by registered backup controller applications. If it's called via Microsoft Graph PowerShell, it returns a `403 Forbidden` response code because the Microsoft Graph PowerShell SDK isn't a supported client for this operation.
+
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
