@@ -20,7 +20,7 @@ Represents a role assignment configuration for delegated administration in a gov
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|groupName|String|The display name of the security group referenced by the **group** navigation property. Read-only.|
+|groupDisplayName|String|The display name of the security group referenced by the **group** navigation property, captured when the policy template is created or updated. The value is not refreshed automatically when the underlying group is renamed; it is refreshed only the next time the policy template is updated. Read-only.|
 |roleTemplates|[microsoft.graph.tenantGovernanceServices.roleTemplate](../resources/tenantgovernanceservices-roletemplate.md) collection|A collection of role templates that define the roles to be assigned to the group in the governed tenant. |
 
 ## Relationships
@@ -38,7 +38,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.tenantGovernanceServices.delegatedAdministrationRoleAssignment",
-  "groupName": "String",
+  "groupDisplayName": "String",
   "roleTemplates": [
     {
       "@odata.type": "microsoft.graph.tenantGovernanceServices.roleTemplate"
