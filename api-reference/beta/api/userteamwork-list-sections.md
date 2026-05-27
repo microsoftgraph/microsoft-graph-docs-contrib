@@ -34,7 +34,14 @@ GET /users/{user-id}/teamwork/sections
 
 ## Optional query parameters
 
-This method doesn't support [OData query parameters](/graph/query-parameters) to customize the response.
+This method supports the `$expand` OData query parameter to help customize the response. Only the **items** relationship can be expanded, and only one level of expansion is supported. For more information, see [OData query parameters](/graph/query-parameters).
+
+When `$expand=items` is specified, the response includes the **items** collection inline on each section:
+
+- For [user-defined sections](../resources/teamworksection.md#sectiontype-values), the **items** collection contains the chats, channels, meetings, and communities organized within the section.
+- For [system-defined sections](../resources/teamworksection.md#system-defined-sections), the **items** collection is always returned as an empty array (`[]`). System-defined section contents aren't exposed through the public Graph API. To enumerate items in a user-defined section without using `$expand`, use [List items](../api/teamworksection-list-items.md).
+
+When `$expand=items` is specified, the response doesn't include the **@microsoft.graph.sectionsOrder** and **@microsoft.graph.sectionsVersion** instance annotations. To obtain both the items and these annotations, issue a separate request without `$expand`.
 
 ## Request headers
 
@@ -59,7 +66,9 @@ The response includes the following OData instance annotations on the collection
 
 ## Examples
 
-### Request
+### Example 1: List sections
+
+#### Request
 
 The following example shows a request.
 
@@ -99,7 +108,7 @@ GET https://graph.microsoft.com/beta/users/10f8c3a6-3e2a-4e8b-9c7d-5a4b6c8d9e0f/
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -151,6 +160,83 @@ Content-type: application/json
       "isHierarchicalViewEnabled": true,
       "createdDateTime": "2024-06-10T08:00:00Z",
       "lastModifiedDateTime": "2025-02-28T16:45:00Z"
+    }
+  ]
+}
+```
+
+### Example 2: List sections with items expanded
+
+The following example uses `$expand=items` to return each section together with its items collection in a single request. The user-defined section returns its items inline, while the system-defined section returns an empty **items** array because system-defined section contents aren't exposed through the public Graph API.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "list_teamworksections_expand_items",
+  "sampleKeys": ["10f8c3a6-3e2a-4e8b-9c7d-5a4b6c8d9e0f"]
+}-->
+```http
+GET https://graph.microsoft.com/beta/users/10f8c3a6-3e2a-4e8b-9c7d-5a4b6c8d9e0f/teamwork/sections?$expand=items
+```
+
+#### Response
+
+The following example shows the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.teamworkSection)"
+}-->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.teamworkSection",
+      "@odata.etag": "\"1742515200\"",
+      "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "displayName": "Favorites",
+      "sectionType": "userDefined",
+      "sortType": "mostRecent",
+      "isExpanded": true,
+      "isHierarchicalViewEnabled": false,
+      "createdDateTime": "2025-01-15T10:30:00Z",
+      "lastModifiedDateTime": "2025-03-01T14:22:00Z",
+      "items": [
+        {
+          "@odata.type": "#microsoft.graph.teamworkSectionItem",
+          "id": "19:d5b2c3a4-e6f7-8901-abcd-ef3456789012@thread.v2",
+          "itemType": "chat",
+          "createdDateTime": "2025-02-10T09:15:00Z",
+          "lastModifiedDateTime": "2025-03-05T11:30:00Z"
+        },
+        {
+          "@odata.type": "#microsoft.graph.teamworkSectionItem",
+          "id": "19:e6f7a8b9-0123-4567-89ab-cdef01234567@thread.tacv2",
+          "itemType": "channel",
+          "createdDateTime": "2025-01-20T14:00:00Z",
+          "lastModifiedDateTime": "2025-03-01T08:45:00Z"
+        }
+      ]
+    },
+    {
+      "@odata.type": "#microsoft.graph.teamworkSection",
+      "@odata.etag": "\"1742515200\"",
+      "id": "b2c3d4e5-f6a7-8901-bcde-f12345678901",
+      "displayName": "Teams and Channels",
+      "sectionType": "systemDefined",
+      "sortType": "nameAlphabetical",
+      "isExpanded": true,
+      "isHierarchicalViewEnabled": true,
+      "createdDateTime": "2024-06-10T08:00:00Z",
+      "lastModifiedDateTime": "2025-02-28T16:45:00Z",
+      "items": []
     }
   ]
 }
