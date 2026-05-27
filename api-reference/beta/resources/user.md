@@ -73,6 +73,9 @@ The [agentUser](../resources/agentuser.md) resource inherits from this resource.
 | **Cloud PC**|||
 |[List Cloud PCs](../api/user-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List the [cloudPC](../resources/cloudpc.md) devices that are attributed to the signed-in user.|
 |[Get launch info](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md)|Get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for the signed-in user.|
+| **Cloud PC pool**|||
+|[List Cloud PC pools](../api/user-list-cloudpcpools.md)|[cloudPcPool](../resources/cloudpcpool.md) collection|List the [cloudPcPool](../resources/cloudpcpool.md) objects that the signed-in user can access.|
+|[Get Cloud PC pool](../api/user-get-cloudpcpool.md)|[cloudPcPool](../resources/cloudpcpool.md)|Read the properties and relationships of a [cloudPcPool](../resources/cloudpcpool.md) object that the signed-in user can access.|
 | **Data security and governance** | | |
 |[Compute protection scopes](../api/userprotectionscopecontainer-compute.md)|[policyUserScope](../resources/policyuserscope.md) collection|Compute the protection scopes for the signed-in user. |
 |[Create content activity](../api/activitiescontainer-post-contentactivities.md)|[contentActivity](../resources/contentactivity.md)|Create a content activity for the signed-in user. |
@@ -364,6 +367,7 @@ For example, Cameron is an administrator of a directory for an elementary school
 |calendarView|[event](event.md) collection|The calendar view for the calendar. Read-only. Nullable.|
 |calendars|[calendar](calendar.md) collection|The user's calendars. Read-only. Nullable.|
 |cloudPCs|[cloudPC](../resources/cloudpc.md) collection|The user's Cloud PCs. Read-only. Nullable.|
+|cloudPcPools|[cloudPcPool](../resources/cloudpcpool.md) collection|The user's Cloud PC pools. Read-only. Nullable.|
 |communications|[userCloudCommunication](../resources/usercloudcommunication.md)|The user's communications settings on Teams.|
 |contactFolders|[contactFolder](contactfolder.md) collection|The user's contacts folders. Read-only. Nullable.|
 |contacts|[contact](contact.md) collection|The user's contacts. Read-only. Nullable.|

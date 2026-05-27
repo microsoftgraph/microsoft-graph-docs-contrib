@@ -110,7 +110,9 @@ GET https://graph.microsoft.com/beta/me/events/{id}/attachments
 
 ### Response
 
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "event_get_attachments_beta",

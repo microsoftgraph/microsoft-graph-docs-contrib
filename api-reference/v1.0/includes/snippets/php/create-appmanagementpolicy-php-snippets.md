@@ -12,6 +12,9 @@ use Microsoft\Graph\Generated\Models\PasswordCredentialConfiguration;
 use Microsoft\Graph\Generated\Models\AppCredentialRestrictionType;
 use Microsoft\Graph\Generated\Models\AppManagementRestrictionState;
 use Microsoft\Graph\Generated\Models\KeyCredentialConfiguration;
+use Microsoft\Graph\Generated\Models\CustomAppManagementApplicationConfiguration;
+use Microsoft\Graph\Generated\Models\IdentifierUriConfiguration;
+use Microsoft\Graph\Generated\Models\IdentifierUriRestriction;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -48,18 +51,15 @@ $passwordCredentialsArray []= $passwordCredentialsPasswordCredentialConfiguratio
 $restrictions->setPasswordCredentials($passwordCredentialsArray);
 
 $restrictions->setKeyCredentials([]);
-$additionalData = [
-'applicationRestrictions' => [
-	'identifierUris' => [
-		'nonDefaultUriAddition' => [
-			'state' => 'disabled',
-			'excludeAppsReceivingV2Tokens' => true,
-			'excludeSaml' => true,
-		],
-	],
-],
-];
-$restrictions->setAdditionalData($additionalData);
+$restrictionsApplicationRestrictions = new CustomAppManagementApplicationConfiguration();
+$restrictionsApplicationRestrictionsIdentifierUris = new IdentifierUriConfiguration();
+$restrictionsApplicationRestrictionsIdentifierUrisNonDefaultUriAddition = new IdentifierUriRestriction();
+$restrictionsApplicationRestrictionsIdentifierUrisNonDefaultUriAddition->setState(new AppManagementRestrictionState('disabled'));
+$restrictionsApplicationRestrictionsIdentifierUrisNonDefaultUriAddition->setExcludeAppsReceivingV2Tokens(true);
+$restrictionsApplicationRestrictionsIdentifierUrisNonDefaultUriAddition->setExcludeSaml(true);
+$restrictionsApplicationRestrictionsIdentifierUris->setNonDefaultUriAddition($restrictionsApplicationRestrictionsIdentifierUrisNonDefaultUriAddition);
+$restrictionsApplicationRestrictions->setIdentifierUris($restrictionsApplicationRestrictionsIdentifierUris);
+$restrictions->setApplicationRestrictions($restrictionsApplicationRestrictions);
 $requestBody->setRestrictions($restrictions);
 
 $result = $graphServiceClient->policies()->appManagementPolicies()->post($requestBody)->wait();

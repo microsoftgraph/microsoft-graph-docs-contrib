@@ -610,6 +610,8 @@
           "overview": "../../resources/cloudpc-api-overview.md",
           "resources": [
             "cloudPC",
+            "cloudPcAgentPool",
+            "cloudPcAgentPoolUserAssignment",
             "cloudPcAuditEvent",
             "cloudPcBulkAction",
             "cloudPcCloudApp",
@@ -622,6 +624,8 @@
             "cloudPcManagedLicense",
             "cloudPcOnPremisesConnection",
             "cloudPcOrganizationSettings",
+            "cloudPcPool",
+            "cloudPcPoolAssignment",
             "cloudPcProvisioningPolicy",
             "cloudPcReport",
             "cloudPcServicePlan",
@@ -637,10 +641,15 @@
             "cloudPcAgentHealthCheckDetail",
             "cloudPcAgentHealthCheckStatusDetail",
             "cloudPcAgentHealthCheckSummary",
+            "cloudPcAgentPoolBillingConfiguration",
+            "cloudPcAgentPoolCapabilityConfiguration",
+            "cloudPcAgentPoolScalingPolicy",
+            "cloudPcAgentPoolSessionUsage",
             "cloudPcAgentStatusDetail",
             "cloudPcAuditActor",
             "cloudPcAuditProperty",
             "cloudPcAuditResource",
+            "cloudPcAutomaticDiscoveredAppDetail",
             "cloudPcBulkDisasterRecovery",
             "cloudPcBulkDisasterRecoveryFailback",
             "cloudPcBulkDisasterRecoveryFailover",
@@ -657,6 +666,7 @@
             "cloudPcBulkCreateSnapshot",
             "cloudPcBulkSetReviewStatus",
             "cloudPcCloudAppDetail",
+            "cloudPcConfiguration",
             "cloudPcConnectionSetting",
             "cloudPcConnectivityEvent",
             "cloudPcConnectivityResult",
@@ -669,6 +679,7 @@
             "cloudpcexternalpartneractionreport",
             "cloudpcexternalpartneractionresult",
             "cloudpcexternalpartneragentsetting",
+            "cloudPcFilePathAppDetail",
             "cloudPcForensicStorageAccount",
             "cloudPcFrontlineSharedDeviceDetail",
             "cloudPcHealthCheckItem",
@@ -677,13 +688,17 @@
             "cloudPcLoginResult",
             "cloudPcManagementAssignmentTarget",
             "cloudPcManagementGroupAssignmentTarget",
+            "cloudPcMicrosoftHostedNetworkConfiguration",
+            "cloudPcNetworkConfiguration",
             "cloudPcNotificationSetting",
             "cloudPcOnPremisesConnectionStatusDetail",
             "cloudPcOnPremisesConnectionStatusDetails",
             "cloudPcOnPremisesConnectionSubnetIpDetail",
             "cloudPcPartnerAgentInstallResult",
+            "cloudPcPoolCapabilityConfiguration",
             "cloudPcProvisioningPolicyAssignment",
             "cloudPcProvisioningPolicyAutopatch",
+            "cloudPcRegionGroupConfiguration",
             "cloudPcRemoteActionCapability",
             "cloudPcResizeValidationResult",
             "cloudPcRestorePointSetting",
@@ -1267,7 +1282,6 @@
             "onPremisesSyncBehavior",
             "organization",
             "orgContact",
-            "tenantInformation",
             "bitlockerRecoveryKey",
             "deviceLocalCredentialInfo",
             "featureRolloutPolicy",
@@ -2749,6 +2763,18 @@
               "complexTypes": [
                 "tokenProtectionStatusDetails"
               ]
+            },
+            {
+              "name": "Identity correlation reports (preview)",
+              "resources": [
+                "correlatedIdentity",
+                "identityCorrelation"
+              ],
+              "complexTypes": [
+                "attributeInfo",
+                "correlationError",
+                "identityInfo"
+              ]
             }
           ]
         },
@@ -3529,6 +3555,7 @@
                 "virtualEventPresenter",
                 "virtualEventRegistration",
                 "virtualEventWebinarRegistrationConfiguration",
+                "virtualEventTownhallRegistrationConfiguration",
                 "virtualEventRegistrationQuestionBase",
                 "virtualEventSession",
                 "virtualEventTownhall",
@@ -3687,7 +3714,7 @@
     },
     {
       "name": "Tenants",
-      "shouldSort": false,
+      "shouldSort": true,
       "overview": "../../resources/tenants-overview.md",
       "keywords": [
         "tenant management",
@@ -3698,6 +3725,9 @@
         "multitenant",
         "backup",
         "recovery"
+      ],
+      "resources": [
+        "tenantInformation"
       ],
       "childNodes": [
         {
@@ -3915,4 +3945,3 @@
     }
   ]
 }
-
