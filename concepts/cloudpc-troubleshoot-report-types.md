@@ -39,28 +39,28 @@ The following table lists the mandatory filter parameters for tenant-level repor
 
 | Column | Description |
 |:-------|:------------|
-| tenantId | The unique identifier of the tenant. |
-| policyName | The name of the policy applied. |
-| region | The region where the Cloud PC is located. |
-| userSettingName | The name of the user setting configuration. |
-| servicePlanType | The Cloud PC service plan type (FrontlineShared, FrontlineDedicated, Enterprise, or Reserve). |
-| servicePlanName | The name of the service plan. |
-| osBuildVersion | The operating system build version. |
-| aadJoinType | The Azure Active Directory join type. |
-| imageName | The name of the OS image used. |
-| gatewayRegion | The region where the gateway is located. |
-| clientOS | The client operating system. |
-| clientType | The type of client device. |
-| transportType | The transport protocol type used. |
+| TenantId | The unique identifier of the tenant. |
+| PolicyName | The name of the policy applied. |
+| Region | The region where the Cloud PC is located. |
+| UserSettingName | The name of the user setting configuration. |
+| ServicePlanType | The Cloud PC service plan type (FrontlineShared, FrontlineDedicated, Enterprise, or Reserve). |
+| ServicePlanName | The name of the service plan. |
+| OSBuildVersion | The operating system build version. |
+| AADJoinType | The Azure Active Directory join type. |
+| ImageName | The name of the OS image used. |
+| GatewayRegion | The region where the gateway is located. |
+| ClientOS | The client operating system. |
+| ClientType | The type of client device. |
+| TransportType | The transport protocol type used. |
 
 #### troubleshootTenantNetworkTrendReport
 
 | Column | Description |
 |:-------|:------------|
-| avgRoundTripTimeInMs | The average round trip time in milliseconds. |
-| tenantId | The unique identifier of the tenant. |
-| eventDateTime | The date and time when the event occurred. |
-| groupColumn | The metric used for grouping data (policyName, region, userSettingName, ServicePlanType, ServicePlanName, OSBuildVersion, AADJoinType, ImageName, GatewayRegion, ClientOS, ClientType, TransportType, CloudPCEndpointCountryRegion, CloudPCEndpointState, or CloudPCEndpointCity). |
+| AvgRoundTripTimeInMs | The average round trip time in milliseconds. |
+| TenantId | The unique identifier of the tenant. |
+| EventDateTime | The date and time when the event occurred. |
+| GroupColumn | The metric used for grouping data (PolicyName, Region, UserSettingName, ServicePlanType, ServicePlanName, OSBuildVersion, AADJoinType, ImageName, GatewayRegion, ClientOS, ClientType, TransportType, CloudPCEndpointCountryRegion, CloudPCEndpointState, or CloudPCEndpointCity). |
 
 #### troubleshootTenantNetworkAggregatedReport
 
