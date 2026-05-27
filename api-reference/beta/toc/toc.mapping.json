@@ -3222,8 +3222,8 @@
         "recycleBinItem",
         "richLongRunningOperation",
         "permission",
-        "sharepointSettings",
-        "sharePointReportSettings"
+        "sharePointReportSettings",
+        "sharepointSettings"
       ],
       "complexTypes": [
         "apiUsageReportEnablementStatus",

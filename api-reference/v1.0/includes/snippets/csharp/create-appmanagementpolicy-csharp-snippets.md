@@ -8,7 +8,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Models;
-using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new AppManagementPolicy
 {
@@ -51,31 +50,16 @@ var requestBody = new AppManagementPolicy
 		KeyCredentials = new List<KeyCredentialConfiguration>
 		{
 		},
-		AdditionalData = new Dictionary<string, object>
+		ApplicationRestrictions = new CustomAppManagementApplicationConfiguration
 		{
+			IdentifierUris = new IdentifierUriConfiguration
 			{
-				"applicationRestrictions" , new UntypedObject(new Dictionary<string, UntypedNode>
+				NonDefaultUriAddition = new IdentifierUriRestriction
 				{
-					{
-						"identifierUris", new UntypedObject(new Dictionary<string, UntypedNode>
-						{
-							{
-								"nonDefaultUriAddition", new UntypedObject(new Dictionary<string, UntypedNode>
-								{
-									{
-										"state", new UntypedString("disabled")
-									},
-									{
-										"excludeAppsReceivingV2Tokens", new UntypedBoolean(true)
-									},
-									{
-										"excludeSaml", new UntypedBoolean(true)
-									},
-								})
-							},
-						})
-					},
-				})
+					State = AppManagementRestrictionState.Disabled,
+					ExcludeAppsReceivingV2Tokens = true,
+					ExcludeSaml = true,
+				},
 			},
 		},
 	},

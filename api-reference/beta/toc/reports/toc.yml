@@ -816,22 +816,10 @@ items:
         href: ../../api/reportroot-getyammergroupsactivitygroupcounts.md
       - name: Get activity counts
         href: ../../api/reportroot-getyammergroupsactivitycounts.md
-  - name: Share point report settings
-    items:
-    - name: Share point report settings
-      href: ../../resources/sharepointreportsettings.md
-    - name: List
-      href: ../../api/sharepointreportsettings-list-apiusagereportmetrics.md
-    - name: Enable API usage report
-      href: ../../api/sharepointreportsettings-enableapiusagereport.md
-    - name: Disable API usage report
-      href: ../../api/sharepointreportsettings-disableapiusagereport.md
   - name: Complex types
     items:
     - name: Admin
       href: ../../resources/admin.md
-    - name: API usage report enablement status
-      href: ../../resources/apiusagereportenablementstatus.md
     - name: Office 365 active user counts
       href: ../../resources/office365activeusercounts.md
     - name: Office 365 active user detail
