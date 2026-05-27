@@ -18,6 +18,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## June 2026: New in preview only
+
+### Backup storage
+
+Use the new full workload backup APIs to protect entire Microsoft 365 workloads (SharePoint Online, OneDrive for work or school, and Exchange Online) with minimal administrative overhead. Instead of manually selecting each item to protect, you can create a protection policy that backs up all data in a workload and then specify only the items to exclude from backup. For more information, see [exclusionUnitBase](/graph/api/resources/exclusionunitbase?view=graph-rest-beta&preserve-view=true) and [exclusionUnitBulkAdditionJob](/graph/api/resources/exclusionunitbulkadditionjob?view=graph-rest-beta&preserve-view=true).
+
 ## May 2026: New and generally available
 
 ### Agents
