@@ -239,6 +239,8 @@ The following example shows how to create a granular restore session that restor
 
 > **Note:** The `@microsoft.graph.conflictBehavior` annotation is only supported for granular restore sessions. If specified on a non-granular session, a `400 Bad Request` is returned.
 
+> Mixed destination type within a single granular restore session is not supported.
+
 #### Request
 
 The following example shows a request.
