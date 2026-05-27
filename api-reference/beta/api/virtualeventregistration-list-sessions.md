@@ -1,6 +1,6 @@
 ---
 title: "List sessions for a virtual event registration"
-description: "Get a list of sessions that a registrant registered for in a webinar."
+description: "Get a list of sessions that a registrant registered for in a webinar or town hall."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -14,11 +14,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [sessions](../resources/virtualeventsession.md) that a registrant registered for in a [webinar](../resources/virtualeventwebinar.md).
+Get a list of [sessions](../resources/virtualeventsession.md) that a registrant registered for in a [webinar](../resources/virtualeventwebinar.md) or [town hall](../resources/virtualeventtownhall.md).
 
 > [!NOTE]
 > 
-> Currently, this API only supports single session webinars and returns a single session. 
+> Currently, this API only supports single session webinars or town halls and returns a single session. 
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -35,8 +35,17 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
+
+To list the sessions registrations of a webinar:
+
 ```http
 GET /solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}/sessions
+```
+
+To list the sessions registrations of a town hall:
+
+```http
+GET /solutions/virtualEvents/townhalls/{townhallId}/registrations/{registrationId}/sessions
 ```
 
 ## Request headers
@@ -45,7 +54,7 @@ GET /solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

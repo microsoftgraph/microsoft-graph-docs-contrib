@@ -52,7 +52,7 @@ If successful, this method returns a `201 Created` response code and [trustFrame
 
 The following example creates a **trustFrameworkPolicy**.
 
-##### Request
+### Request
 
 <!-- {
   "blockType": "ignored",
@@ -68,7 +68,7 @@ Content-Type: application/xml
 </TrustFrameworkPolicy>
 ```
 
-##### Response
+### Response
 
 <!-- {
   "blockType": "ignored",

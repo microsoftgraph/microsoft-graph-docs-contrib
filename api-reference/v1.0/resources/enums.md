@@ -3,7 +3,7 @@ title: "Enum values"
 description: "Microsoft Graph enumeration values."
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
-ms.date: 12/02/2025
+ms.date: 01/20/2026
 author: "MSGraphDocsvTeam"
 doc_type: enumPageType
 ms.custom: sfi-ropc-nochange
@@ -12,6 +12,15 @@ ms.custom: sfi-ropc-nochange
 # Enum values
 
 Namespace: microsoft.graph
+
+### notifyMembers values
+
+|Member|
+|:---|
+|all|
+|allowSelected|
+|blockSelected|
+|unknownFutureValue|
 
 ### readingCoachStoryType values
 
@@ -886,6 +895,14 @@ Namespace: microsoft.graph
 | policyOID |
 | unknownFutureValue |
 
+### x509CertificateIssuerHintsState values
+
+| Member |
+| ---- |
+| disabled |
+| enabled |
+| unknownFutureValue |
+
 ### x509CertificateCRLValidationConfigurationState values
 
 | Member |
@@ -1320,6 +1337,29 @@ Namespace: microsoft.graph
 | darkPink |
 | darkYellow |
 | unknownFutureValue |
+| darkRed |
+| cranberry |
+| darkOrange |
+| bronze |
+| peach |
+| gold |
+| lime |
+| forest |
+| lightGreen |
+| jade |
+| lightTeal |
+| darkTeal |
+| steel |
+| skyBlue |
+| blueGray |
+| lavender |
+| lilac |
+| plum |
+| magenta |
+| darkBrown |
+| beige |
+| charcoal |
+| silver |
 
 ### timeOffReasonIconType values
 
@@ -2998,6 +3038,46 @@ Possible values for user account types (group membership), per Windows definitio
 | mfa |
 | unknownFutureValue |
 
+### browsableResourceType values
+
+|Member|
+|:---|
+|none|
+|site|
+|documentLibrary|
+|folder|
+|unknownFutureValue|
+
+### browseQueryOrder values
+
+|Member|
+|:---|
+|pathAsc|
+|pathDsc|
+|nameAsc|
+|nameDsc|
+|unknownFutureValue|
+
+### browseQueryResponseItemType values
+
+|Member|
+|:---|
+|none|
+|site|
+|documentLibrary|
+|folder|
+|file|
+|unknownFutureValue|
+
+### browseSessionStatus values
+
+|Member|
+|:---|
+|creating|
+|created|
+|failed|
+|unknownFutureValue|
+
 ### browserSharedCookieSourceEnvironment values
 
 | Member |
@@ -3699,6 +3779,7 @@ Possible values for user account types (group membership), per Windows definitio
 |standard|
 |bulk|
 |unknownFutureValue|
+|granular|
 
 ### sharePointMigrationJobErrorLevel values
 
@@ -3909,4 +3990,11 @@ Possible values for user account types (group membership), per Windows definitio
 |read|
 |write|
 |create|
+|unknownFutureValue|
+
+### customSecurityAttributeComparisonOperator values
+
+|Member|
+|:---|
+|equals|
 |unknownFutureValue|

@@ -1,8 +1,8 @@
 ---
 title: "cloudPcReports: retrieveCloudPcTroubleshootReports"
-description: "Get troubleshooting reports for Cloud PCs."
+description: "Get Cloud PC troubleshooting reports, including tenant-level, configuration, user and device, and view data table reports."
 author: "abbyzhccc"
-ms.date: 12/10/2024
+ms.date: 05/21/2026
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get troubleshooting reports for Cloud PCs. You can get a regional troubleshooting report, a report with troubleshooting details, a report with troubleshooting trends, or a report on the number of troubleshooting issues.
+Get Cloud PC troubleshooting reports. You can get tenant-level reports, configuration reports, user and device reports, and view data table reports. For the report types grouped by scope, including the mandatory filter parameters and response columns per `reportName`, see [Cloud PC troubleshoot report types](/graph/cloudpc-troubleshoot-report-types).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -50,89 +50,20 @@ The following table lists the parameters that you can use with this action.
 
 |Parameter|Type|Description|
 |:--------|:---|:----------|
-|filter|String|OData `$filter` syntax. Supported filters are: `and`, `or`, `gt` ,`ge`, and `eq`. Optional.|
+|filter|String|OData `$filter` syntax. Supported filters are: `and`, `or`, `gt`, `ge`, and `eq`. Required for most **reportName** values, but optional for some. For the mandatory filter parameters per **reportName**, see [Cloud PC troubleshoot report types](/graph/cloudpc-troubleshoot-report-types).|
 |groupBy|String collection|A list of columns that describe how to group the data in the report. Optional.|
 |orderBy|String collection|Specifies the order by column name. Optional.|
-|reportName|[cloudPCTroubleshootReportType](../resources/cloudpcreports.md#cloudpctroubleshootreporttype-values)|The report name. The possible values are: `troubleshootDetailsReport`, `troubleshootTrendCountReport`, `troubleshootRegionalReport`, `unknownFutureValue`, `troubleshootIssueCountReport`. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `troubleshootIssueCountReport`. The default value is `troubleshootDetailsReport`.|
+|reportName|[cloudPCTroubleshootReportType](../resources/cloudpcreports.md#cloudpctroubleshootreporttype-values)|The report name. The possible values are: `troubleshootTenantGlobalFilterReport`, `troubleshootTenantNetworkTrendReport`, `troubleshootTenantNetworkAggregatedReport`, `troubleshootTenantConnectionFailureRateTrendReport`, `troubleshootTenantConnectionFailureRateAggregatedReport`, `troubleshootTenantCloudPCHealthTrendReport`, `troubleshootTenantCloudPCHealthAggregatedReport`, `troubleshootTenantActiveConnectionCountTrendReport`, `troubleshootTenantActiveConnectionCountAggregatedReport`, `troubleshootTenantMeanTimeToFailureTrendReport`, `troubleshootTenantMeanTimeToFailureAggregatedReport`, `troubleshootTenantRemoteSignInTimeTrendReport`, `troubleshootTenantRemoteSignInTimeAggregatedReport`, `troubleshootEventsOfViewDataTableReport`, `troubleshootTenantEnvironmentMetricsOfViewDataTableReport`, `troubleshootCloudPCMetricsOfViewDataTableReport`, `troubleshootConfigurationConnectionCountTrendV1Report`, `troubleshootConfigurationTotalConnectionCountBarV1Report`, `troubleshootConfigurationGlobalFilterV1Report`, `troubleshootConnectionConfigurationOfViewDataTableV1Report`, `troubleshootTenantConnectedDevicesOfViewDataTableReport`, `troubleshootEnvironmentOverviewOfViewDataTableReport`, `troubleshootCloudPCNetworkTrendReport`, `troubleshootCloudPCNetworkAggregatedReport`, `troubleshootCloudPCErrorTrendReport`, `troubleshootCloudPCErrorAggregatedReport`, `troubleshootCloudPCDurationTrendReport`, `troubleshootCloudPCDurationAggregatedReport`, `troubleshootCloudPCRemoteSignInTimeTrendReport`, `troubleshootCloudPCRemoteSignInTimeAggregatedReport`, `troubleshootCloudPCListReport`, `troubleshootCloudPCHealthTrendReport`, `troubleshootMatchedUserReport`, `troubleshootMatchedCloudPCReport`, `troubleshootUserListReport`, `unknownFutureValue`. For the report type description and scope grouping, see [Cloud PC troubleshoot report types](/graph/cloudpc-troubleshoot-report-types). Use the `Prefer: include-unknown-enum-members` request header to receive future members added to this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) by their actual name instead of `unknownFutureValue`. Required.|
 |search|String|The search string. Optional.|
 |select|String collection|OData `$select` syntax. The selected columns of the reports. Optional.|
 |skip|Int32|Number of records to skip. Optional.|
-|top|Int32|The number of top records to return. If not specified, the default limit is 25, with a maximum of 100. Optional.|
+|top|Int32|The number of top records to return. If not specified, the default limit is 25, with a maximum of 1000. Optional.|
+
+Parameter values can be empty strings (`''`) if you don't want to filter on that dimension, unless the report type marks them as required. The maximum supported date range is 28 days for tenant-level and user and device reports, and 180 days for configuration-level reports.
 
 ## Response
 
-If successful, this action returns a `200 OK` response code and a Stream in the response body.
-
-The following table describes the columns in the returned report when you specify `troubleshootRegionalReport` for the **reportName** property in your API call.
-
-| Member                       | Description                                                                           |
-|:-----------------------------|:--------------------------------------------------------------------------------------|
-| AvgBandwidthInMbps           | The average available bandwidth in Mbps of certain `HostRegion`-`GatewayRegion` pair.     |
-| AvgRoundTripTimeInMs         | The average round trip time in milliseconds of certain `HostRegion`-`GatewayRegion` pair. |
-| BandwidthIssueCount          | The number of Cloud PC instances with available bandwidth issues.                     |
-| BandwidthStabilityIssueCount | The number of Cloud PC instances with bandwidth stability issues.                     |
-| ConnectErrorIssueCount       | The number of Cloud PC instances with connection error issues.                        |
-| ConnectionErrorCount         | The number of connection errors in certain `HostRegion`-`GatewayRegion` pair.             |
-| ConnectionQualityIssueCount  | The number of Cloud PC instances with connection quality issues.                      |
-| GatewayRegion                | The region where the gateway is located.                                              |
-| HostRegion                   | The region where the Cloud PC provision is located.                                   |
-| RTTIssueCount                | The number of Cloud PC instances with round-trip time issues.                         |
-| RTTStabilityIssueCount       | The number of Cloud PC instances with round-trip time stability issues.               |
-| StabilityIssueCount          | The number of Cloud PC instances with stability issues.                               |
-
-The following table describes the columns in the returned report when you specify `troubleshootDetailsReport` for the **reportName** property in your API call.
-
-| Member                      | Description                                    |
-|:----------------------------|:-----------------------------------------------|
-| AvailableBandwidthInMbpsAvg | The average available bandwidth in Mbps.       |
-| ConnectionErrorCount        | The number of connection errors.               |
-| CurrentCPU                  | The current CPU usage of the resource.         |
-| CurrentDiskInGB             | The current disk usage in GB.                  |
-| CurrentRamInGB              | The current RAM usage in GB.                   |
-| CurrentSize                 | The current size of the resource.              |
-| HasNetworkIssue             | Indicates a network issue.                     |
-| HasPerformanceIssue         | Indicates a performance issue.                 |
-| HasReliabilityIssue         | Indicates a reliability issue.                 |
-| ProvisionPolicyName         | The name of the provision policy.              |
-| RecommendedRamInGB          | The recommended RAM usage in GB.               |
-| RecommendedCPU              | The recommended CPU usage for the resource.    |
-| RecommendedDiskInGB         | The recommended disk usage in GB.              |
-| RecommendedSize             | The recommended size for the resource.         |
-| RoundTripTimeInMsAvg        | The average round-trip time in milliseconds.   |
-| UsageInsight                | Insights on the current usage of the resource. |
-
-The following table describes the columns in the returned report when you specify `troubleshootTrendCountReport` for the **reportName** property in your API call.
-
-| Member                             | Description                                                                          |
-|:-----------------------------------|:-------------------------------------------------------------------------------------|
-| CpuIssueCloudPcCount               | The number of Cloud PC instances with CPU issues.                                    |
-| CpuIssueTrend                      | The trend in the weekly number of Cloud PC instances with CPU issues.                |
-| ConnectionQualityIssueCloudPcCount | The number of Cloud PC instances with connection quality issues.                     |
-| ConnectionQualityIssueTrend        | The trend in the weekly number of Cloud PC instances with connection quality issues. |
-| MemoryIssueCloudPcCount            | The number of Cloud PC instances with memory issues.                                 |
-| MemoryIssueTrend                   | The trend in the weekly number of Cloud PC instances with memory issues.             |
-| NetworkIssueCount                  | The number of network issues.                                                        |
-| PerformanceIssueCount              | The number of performance issues.                                                    |
-| ReliabilityIssueCount              | The number of reliability issues.                                                    |
-| RTTIssueCloudPcCount               | The number of Cloud PC instances with round-trip time issues.                        |
-| RTTIssueTrend                      | The trend in the weekly number of Cloud PC instances with round-trip time issues.    |
-| StabilityIssueCloudPcCount         | The number of Cloud PC instances with stability issues.                              |
-| StabilityIssueTrend                | The trend in the weekly number of Cloud PC instances with stability issues.          |
-| TotalImpactedCloudPcCount          | The total count of impacted Cloud PCs.                                               |
-
-The following table describes the columns in the returned report when you specify `troubleshootIssueCountReport` for the **reportName** property in your API call.
-
-| Member                      | Description                                      |
-|:----------------------------|:-------------------------------------------------|
-| AsofDate                    | The date and time of when the data was recorded. |
-| ConnectionQualityIssueCount | The number of connection quality issues.         |
-| CpuIssueCount               | The number of CPU issues.                        |
-| MemoryIssueCount            | The number of memory issues.                     |
-| NetworkIssueCount           | The number of network issues.                    |
-| PerformanceIssueCount       | The number of performance issues.                |
-| ReliabilityIssueCount       | The number of reliability issues.                |
-| RTTIssueCount               | The number of round-trip time issues.            |
-| StabilityIssueCount         | The number of stability issues.                  |
+If successful, this action returns a `200 OK` response code and a Stream in the response body. The columns returned in the Stream vary by **reportName**. For the response columns per **reportName**, see [Cloud PC troubleshoot report types](/graph/cloudpc-troubleshoot-report-types).
 
 ## Examples
 
@@ -151,27 +82,18 @@ POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/r
 Content-Type: application/json
 
 {
-  "reportName": "troubleshootDetailsReport",
+  "reportName": "troubleshootTenantActiveConnectionCountTrendReport",
   "select": [
-    "CloudPcId",
-    "ManagedDeviceName",
-    "UserPrincipalName",
-    "UsageInsight",
-    "CurrentSize",
-    "CurrentCPU",
-    "CurrentRamInGB",
-    "CurrentDiskInGB",
-    "RecommendedSize",
-    "RecommendedCPU",
-    "RecommendedRamInGB",
-    "RecommendedDiskInGB",
-    "ProvisionPolicyName",
-    "RoundTripTimeInMsAvg",
-    "AvailableBandwidthInMbpsAvg"
+    "EventDateTime",
+    "TotalActiveConnectionCountAvg",
+    "GroupColumn"
   ],
-  "search": "",
+  "filter": "(TimeRange eq 'Last 7 days') and (PolicyNameParam eq '') and (RegionParam eq '') and (UserSettingNameParam eq '') and (ServicePlanTypeParam eq 'Enterprise') and (ServicePlanNameParam eq '') and (OSBuildVersionParam eq '') and (AADJoinTypeParam eq '') and (ImageNameParam eq '') and (GatewayRegionParam eq '') and (ClientOSParam eq '') and (ClientTypeParam eq '') and (TransportTypeParam eq '') and (CloudPCEndpointCountryRegionParam eq '') and (CloudPCEndpointStateParam eq '') and (CloudPCEndpointCityParam eq '')",
+  "top": 1000,
   "skip": 0,
-  "top": 50
+  "groupBy": [
+    "GatewayRegion"
+  ]
 }
 ```
 
@@ -213,89 +135,33 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
+Content-Type: application/octet-stream
 
 {
-  "TotalRowCount": 1,
+  "TotalRowCount": 840,
   "Schema": [
     {
-      "Column": "CloudPcId",
-      "PropertyType": "String"
+      "Column": "EventDateTime",
+      "PropertyType": "DateTime"
     },
     {
-      "Column": "ManagedDeviceName",
-      "PropertyType": "String"
-    },
-    {
-      "Column": "UserPrincipalName",
-      "PropertyType": "String"
-    },
-    {
-      "Column": "UsageInsight",
-      "PropertyType": "String"
-    },
-    {
-      "Column": "CurrentSize",
-      "PropertyType": "Int"
-    },
-    {
-      "Column": "CurrentCPU",
-      "PropertyType": "Int"
-    },
-    {
-      "Column": "CurrentRamInGB",
-      "PropertyType": "Int"
-    },
-    {
-      "Column": "CurrentDiskInGB",
-      "PropertyType": "Int"
-    },
-    {
-      "Column": "RecommendedSize",
-      "PropertyType": "String"
-    },
-    {
-      "Column": "RecommendedCPU",
-      "PropertyType": "Int"
-    },
-    {
-      "Column": "RecommendedRamInGB",
-      "PropertyType": "Int"
-    },
-    {
-      "Column": "RecommendedDiskInGB",
-      "PropertyType": "Int"
-    },
-    {
-      "Column": "ProvisionPolicyName",
-      "PropertyType": "String"
-    },
-    {
-      "Column": "RoundTripTimeInMsAvg",
+      "Column": "TotalActiveConnectionCountAvg",
       "PropertyType": "Double"
     },
     {
-      "Column": "AvailableBandwidthInMbpsAvg",
-      "PropertyType": "Double"
+      "Column": "GroupColumn",
+      "PropertyType": "String"
     }
   ],
   "Values": [
-    [
-      "f5ff445f-7488-40f8-8ab9-ee784a9c1f33",
-      "Cloud PC-Ana Bowman",
-      "ana@contoso.com",
-      "Performance",
-      "2",
-      "4",
-      "64",
-      "Undersized",
-      "4",
-      "8",
-      "128",
-      "policy1",
-      "200.1",
-      "50.65"
-    ]
+    ["2026-03-25T04:00:00", 0.63, "australiaeast"],
+    ["2026-03-25T04:00:00", 2.88, "japaneast"],
+    ["2026-03-25T04:00:00", 3.63, "japanwest"],
+    ["2026-03-25T04:00:00", 7.88, "southeastasia"],
+    ["2026-03-25T04:00:00", 10.0, "westus2"],
+    ["2026-03-25T08:00:00", 0.75, "israelcentral"],
+    ["2026-03-25T08:00:00", 1.75, "japaneast"],
+    ["2026-03-25T08:00:00", 8.13, "southeastasia"]
   ]
 }
 ```

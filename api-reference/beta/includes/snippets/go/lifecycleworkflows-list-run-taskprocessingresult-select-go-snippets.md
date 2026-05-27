@@ -16,7 +16,7 @@ import (
 )
 
 requestParameters := &graphidentitygovernance.LifecycleWorkflowsWorkflowsItemRunsItemTaskProcessingResultsRequestBuilderGetQueryParameters{
-	Select: [] string {"id","failureReason","processingStatus","subject"},
+	Select: [] string {"id","failureReason","processingStatus","subject","task"},
 }
 configuration := &graphidentitygovernance.LifecycleWorkflowsWorkflowsItemRunsItemTaskProcessingResultsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,

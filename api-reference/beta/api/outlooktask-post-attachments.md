@@ -111,7 +111,9 @@ Content-type: application/json
 
 #### Response
 
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "add_file_attachment_to_task",
@@ -210,7 +212,9 @@ Content-type: application/json
 
 #### Response
 
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "add_item_attachment_to_task",

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Get a list of [cloudPcUserSetting](../resources/cloudpcusersetting.md) objects and their properties.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get the result of the latest apply operation of a provision policy. `Frontline shared` only. Administrators only.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 

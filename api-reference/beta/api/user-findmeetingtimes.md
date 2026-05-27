@@ -125,7 +125,7 @@ By setting the **returnSuggestionReasons** parameter, you also get an explanatio
 
 Notice that the request specifies time in the PST time zone. By default, the response returns meeting time suggestions in UTC. You can use the `Prefer: outlook.timezone` request header to specify PST as well for the time values in the response.
 
-##### Request
+### Request
 Here is the example request.
 
 # [HTTP](#tab/http)
@@ -210,7 +210,7 @@ Content-Type: application/json
 
 ---
 
-##### Response
+### Response
 Here is an example response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

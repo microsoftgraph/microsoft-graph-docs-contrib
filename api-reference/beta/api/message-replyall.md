@@ -39,6 +39,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/messages/{id}/replyAll
 POST /users/{id | userPrincipalName}/messages/{id}/replyAll
 POST /me/mailFolders/{id}/messages/{id}/replyAll
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll

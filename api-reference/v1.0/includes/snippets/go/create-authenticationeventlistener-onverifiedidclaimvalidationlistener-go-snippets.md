@@ -39,24 +39,24 @@ conditions.SetApplications(applications)
 requestBody.SetConditions(conditions)
 authenticationEventsFlowId := "5a8e8f57-82b2-4cbf-b145-3e6e0c154897"
 requestBody.SetAuthenticationEventsFlowId(&authenticationEventsFlowId) 
-additionalData := map[string]interface{}{
-	"priority" : int32(500) , 
-handler := graph.New()
-configuration := graph.New()
-clientConfiguration := graph.New()
+handler := graphmodels.NewOnVerifiedIdClaimValidationCustomExtensionHandler()
+configuration := graphmodels.NewCustomExtensionOverwriteConfiguration()
+clientConfiguration := graphmodels.NewCustomExtensionClientConfiguration()
 maximumRetries := int32(1)
 clientConfiguration.SetMaximumRetries(&maximumRetries) 
 timeoutInMilliseconds := int32(2000)
 clientConfiguration.SetTimeoutInMilliseconds(&timeoutInMilliseconds) 
-	configuration.SetClientConfiguration(clientConfiguration)
-behaviorOnError := graph.New()
-	configuration.SetBehaviorOnError(behaviorOnError)
-	handler.SetConfiguration(configuration)
-customExtension := graph.New()
+configuration.SetClientConfiguration(clientConfiguration)
+behaviorOnError := graphmodels.NewCustomExtensionBehaviorOnError()
+configuration.SetBehaviorOnError(behaviorOnError)
+handler.SetConfiguration(configuration)
+customExtension := graphmodels.NewOnVerifiedIdClaimValidationCustomExtension()
 id := "6a0a3429-be77-0aed-951e-1c8aed62bf8a"
 customExtension.SetId(&id) 
-	handler.SetCustomExtension(customExtension)
-	requestBody.SetHandler(handler)
+handler.SetCustomExtension(customExtension)
+requestBody.SetHandler(handler)
+additionalData := map[string]interface{}{
+	"priority" : int32(500) , 
 }
 requestBody.SetAdditionalData(additionalData)
 

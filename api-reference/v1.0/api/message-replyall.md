@@ -37,6 +37,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/messages/{id}/replyAll
 POST /users/{id | userPrincipalName}/messages/{id}/replyAll
 POST /me/mailFolders/{id}/messages/{id}/replyAll
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/replyAll
@@ -120,7 +121,7 @@ The following example shows the response.
   "truncated": true
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 202 Accepted
 ```
 ### Example 2: Reply-all in MIME format to a message
 ##### Request
@@ -175,4 +176,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

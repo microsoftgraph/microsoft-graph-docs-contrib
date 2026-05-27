@@ -46,7 +46,7 @@ If successful, returns a `204 No Content` response. It doesn't return anything i
 
 ## Example
 
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -88,7 +88,7 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/synchronization/job
 
 ---
 
-##### Response
+### Response
 The following example shows the response.
 <!-- {
   "blockType": "response"

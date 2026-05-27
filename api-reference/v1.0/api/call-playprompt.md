@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a [playPromptOpe
 ## Example
 The following example shows how to call this API.
 
-##### Request
+### Request
 The following example shows the request.
 
 
@@ -114,7 +114,7 @@ Content-Length: 166
 
 ---
 
-##### Response
+### Response
 The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.

@@ -45,7 +45,7 @@ No request body should be supplied.
 If successful, this method returns a `200, OK` response code and an array of [programControl](../resources/programcontrol.md) objects in the response body.
 
 ## Example
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/beta/programs/673a7379-9c38-4f01-bd9d-4fda7260b8
 
 ---
 
-##### Response
+### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
