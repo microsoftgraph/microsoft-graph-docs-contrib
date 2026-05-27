@@ -61,6 +61,8 @@ The following example shows a request.
 ```http
 DELETE https://graph.microsoft.com/beta/security/labels/citations/f44dkle55-6baf-44ff-5dcc-08d8de97b1d5
 
+```
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-citationtemplate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
