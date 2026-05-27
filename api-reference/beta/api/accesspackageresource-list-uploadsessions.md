@@ -56,8 +56,7 @@ This method supports the `$expand`, `$filter`, `$top`, `$skip`, `$orderby`, `$co
 The **name**, **size**, and **uploadedDateTime** proeprties also support `$orderby` as shown in the following examples: 
 
 Get upload session with files sorted by **uploadedDateTime**:
-```http
-Get upload session with files sorted by **uploadedDateTime**:
+
 ```http
 GET /identityGovernance/entitlementManagement/catalogs/{catalogId}/accessPackageResources/{resourceId}/uploadSessions/{sessionId}?$expand=files($orderby=uploadedDateTime desc)
 ```
