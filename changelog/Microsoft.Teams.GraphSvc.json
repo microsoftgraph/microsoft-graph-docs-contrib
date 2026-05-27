@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "f86650d5-516f-46bb-a459-c6029ee76f27",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "items",
+          "ChangeType": "Update",
+          "Description": "Added support for `$expand` on the **items** relationship to the [list](https://learn.microsoft.com/en-us/graph/api/userteamwork-list-sections?view=graph-rest-beta) and [get](https://learn.microsoft.com/en-us/graph/api/teamworksection-get?view=graph-rest-beta) operations of [teamworkSection](https://learn.microsoft.com/en-us/graph/api/resources/teamworksection?view=graph-rest-beta). System-defined sections return an empty **items** array because their contents aren't exposed through the public Graph API.",
+          "Target": "teamworkSection"
+        }
+      ],
+      "Id": "f86650d5-516f-46bb-a459-c6029ee76f27",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-05-26T04:21:00.0759809Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a64a38fa-ff9f-4d0f-9b62-da917b46f423",
           "ApiChange": "Resource",
           "ChangedApiName": "groupChatTeamsAppInstallationScopeInfo",
