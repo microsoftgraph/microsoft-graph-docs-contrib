@@ -2446,7 +2446,8 @@
         "mailSearchFolder",
         "messageRule",
         "note",
-        "exchangeMessageTrace"
+        "exchangeMessageTrace",
+        "userConfiguration"
       ],
       "childNodes": [
         {
@@ -2463,20 +2464,11 @@
             "singleValueLegacyExtendedProperty",
             "multiValueLegacyExtendedProperty"
           ]
-        },
-        {
-          "name": "User configuration (preview)",
-          "overview": "../../resources/userconfiguration-api-overview.md",
-          "resources": [
-            "userConfiguration"
-          ],
-          "complexTypes": [
-            "structuredDataEntry",
-            "structuredDataEntryTypedValue"
-          ]
         }
       ],
       "complexTypes":[
+        "structuredDataEntry",
+        "structuredDataEntryTypedValue",
         "updateAllMessagesReadStateOperation"
       ]
     },

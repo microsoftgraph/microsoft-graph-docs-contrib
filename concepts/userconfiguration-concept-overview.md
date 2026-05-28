@@ -37,10 +37,9 @@ A single **userConfiguration** object can carry any combination of these propert
 
 ## API reference
 
-Looking for the API reference for this service? See [Use the user configuration API in Microsoft Graph (preview)](/graph/api/resources/userconfiguration-api-overview?view=graph-rest-beta&preserve-view=true).
+Looking for the API reference for this service? See the [userConfiguration](/graph/api/resources/userconfiguration?view=graph-rest-beta&preserve-view=true) resource type and its supported methods.
 
 ## Next steps
 
-- To learn more about the user configuration API, see [Use the user configuration API in Microsoft Graph (preview)](/graph/api/resources/userconfiguration-api-overview?view=graph-rest-beta&preserve-view=true).
-- Explore the [userConfiguration](/graph/api/resources/userconfiguration?view=graph-rest-beta&preserve-view=true) resource and its supported methods.
+- Explore the [userConfiguration](/graph/api/resources/userconfiguration?view=graph-rest-beta&preserve-view=true) resource type and its supported methods (Create, Get, Update, Delete).
 - Try the user configuration API in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
