@@ -3291,7 +3291,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read and write access packages and related entitlement management resources without a signed-in user. | Allows the app to request access to and management of access packages and related entitlement management resources on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
-[!INCLUDE [EntitlementManagement.ReadWrite](../includes/permissions-notes/entitlementmanagement.readwrite.md)]
+[!INCLUDE [EntitlementManagement.ReadWrite](../includes/permissions-notes/entitlementmanagement.readwrite.all.md)]
 
 ---
 
