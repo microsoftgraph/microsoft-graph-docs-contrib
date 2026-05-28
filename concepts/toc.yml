@@ -691,7 +691,7 @@ items:
     - name: Subscribe to change notifications
       href: outlook-change-notifications-overview.md
     - name: User configuration overview (preview)
-      href: userconfiguration-concept-overview.md
+      href: user-configuration-concept-overview.md
   - name: Mailbox import and export
     items:
     - name: Overview
