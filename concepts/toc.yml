@@ -435,7 +435,11 @@ items:
       href: intune-concept-overview.md
       displayName: Intune
     - name: Cloud PC (preview)
-      href: cloudpc-concept-overview.md
+      items:
+      - name: Overview
+        href: cloudpc-concept-overview.md
+      - name: Troubleshoot report types
+        href: cloudpc-troubleshoot-report-types.md
     - name: Device updates (preview)
       items:
       - name: Overview
