@@ -7,7 +7,7 @@ ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.subservice: "entra-directory-management"
 ms.topic: overview
-ms.date: 05/11/2026
+ms.date: 05/21/2026
 # Customer intent: As a developer integrating with Microsoft Graph, I want to know which tenant management APIs are available so I can choose the right APIs to programmatically manage my organization's tenant configurations and governance at scale.
 ---
 
@@ -33,6 +33,14 @@ Currently, only the **Microsoft 365 Backup Storage** APIs are generally availabl
 ### [Configuration management](/graph/api/resources/unified-tenant-configuration-management-api-overview)
 
 Define a baseline of your tenant configuration settings and monitor them over time. Detect and resolve configuration drift across workloads such as Conditional Access policies, security defaults, and identity providers.
+
+---
+
+### [Tenant information](/graph/api/resources/tenantinformation)
+
+:::image type="icon" source="/graph/images/tenants/tenant-information-icon.svg" alt-text="" border="false":::
+
+Look up a tenant's publicly shared Microsoft Entra details, such as the display name, default domain name, federation brand name, and tenant ID. Use this resource to find a tenant by domain name or tenant ID for cross-tenant discovery and directory lookup scenarios.
 
 ---
 

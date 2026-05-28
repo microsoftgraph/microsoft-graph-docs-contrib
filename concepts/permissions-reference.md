@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 05/11/2026
+ms.date: 05/25/2026
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -3865,6 +3865,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### IdentityNotifications.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 52ced3dd-dbb6-41a0-9ce5-61a056be97b8 | 59cd3e28-aa9c-4f72-a734-1b592eb06853 |
+| DisplayText | Read all identity notification settings and templates | Read identity notification settings and templates |
+| Description | Allows the app to read identity notification settings, email templates, and prerequisites without a signed-in user. | Allows the app to read identity notification settings, email templates, and prerequisites on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### IdentityNotifications.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | d9fe7b9f-cb27-4289-9cb4-54debd9d3c25 | c9c9fdea-4ecc-4d82-a2ea-3feff3489275 |
+| DisplayText | Read and write all identity notification settings and templates | Read and write identity notification settings and templates |
+| Description | Allows the app to read and write identity notification settings, customize email templates, and send test emails without a signed-in user. | Allows the app to read and write identity notification settings, customize email templates, and send test emails on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
 ### IdentityProvider.Read.All
 
 | Category | Application | Delegated |
@@ -4392,6 +4414,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Manage all license assignments | Manage all license assignments |
 | Description | Allows an app to manage license assignments for users and groups, without a signed-in user. | Allows an app to manage license assignments for users and groups, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
+
+---
+
+### LifecyclePolicies-Guests.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 1bbb7916-b98a-449f-8ee4-c68bfcba5724 |
+| DisplayText | - | Read identity lifecycle policies for external guests |
+| Description | - | Allows the app to read identity lifecycle policies for external guests on behalf of the signed-in user. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### LifecyclePolicies-Guests.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | d9ec82ed-63db-4905-b1b3-859b74d2bbf5 |
+| DisplayText | - | Read and write identity lifecycle policies for external guests |
+| Description | - | Allows the app to create, update, and delete identity lifecycle policies for external guests on behalf of the signed-in user. |
+| AdminConsentRequired | - | Yes |
 
 ---
 

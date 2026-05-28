@@ -348,16 +348,18 @@ items:
     - name: Data Connect troubleshooting
       href: data-connect-troubleshooting.md
       displayName: Microsoft Graph Data Connect troubleshooting
-  - name: Backup storage
+  - name: Backup and recovery
     items:
-    - name: Overview
-      href: backup-storage-concept-overview.md
-    - name: Managing information barriers for file storage containers
-      href: information-barrier-for-file-storage-containers.md
-    - name: Filtering mailbox artifacts with granular search queries
-      href: backup-restore-granular-search.md
-    - name: Error codes
-      href: backup-storage-error-codes.md
+    - name: Microsoft 365 backup and storage
+      items:
+      - name: Overview
+        href: backup-storage-concept-overview.md
+      - name: Managing information barriers for file storage containers
+        href: information-barrier-for-file-storage-containers.md
+      - name: Filtering mailbox artifacts with granular search queries
+        href: backup-restore-granular-search.md
+      - name: Error codes
+        href: backup-storage-error-codes.md
   - name: Calendar
     items:
     - name: Overview
@@ -433,7 +435,11 @@ items:
       href: intune-concept-overview.md
       displayName: Intune
     - name: Cloud PC (preview)
-      href: cloudpc-concept-overview.md
+      items:
+      - name: Overview
+        href: cloudpc-concept-overview.md
+      - name: Troubleshoot report types
+        href: cloudpc-troubleshoot-report-types.md
     - name: Device updates (preview)
       items:
       - name: Overview

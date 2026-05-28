@@ -1,0 +1,128 @@
+---
+title: "Update cloudPcPool"
+description: "Update the properties of a cloudPcPool object."
+author: "yityu"
+ms.localizationpriority: medium
+ms.subservice: "cloud-pc"
+doc_type: apiPageType
+ms.date: 03/23/2026
+---
+
+# Update cloudPcPool
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Update the properties of a [cloudPcPool](../resources/cloudpcpool.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
+## Permissions
+
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- { "blockType": "permissions", "name": "cloudpcpool_update" } -->
+[!INCLUDE [permissions-table](../includes/permissions/cloudpcpool-update-permissions.md)]
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+
+```http
+PATCH /deviceManagement/virtualEndpoint/cloudPcPools/{cloudPcPool-id}
+```
+
+## Request headers
+
+| Name          | Description               |
+| :------------ | :------------------------ |
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|Content-Type|application/json. Required.|
+
+## Request body
+
+You must specify the **@odata.type** property and the value of the [cloudPcPool](../resources/cloudpcpool.md) object type to update. For example, `"@odata.type": "#microsoft.graph.cloudPcAgentPool"`.
+
+The following table lists the properties that can be updated for a [cloudPcPool](../resources/cloudpcpool.md).
+
+|Property|Type|Description|
+|:---|:---|:---|
+|@odata.type|String|The type of the cloud PC pool to update. Required.|
+|billingConfiguration|[cloudPcAgentPoolBillingConfiguration](../resources/cloudpcagentpoolbillingconfiguration.md)|The billing configuration for the agent pool, including billing type and billing plan identifier.|
+|capabilities|[cloudPcPoolCapabilityConfiguration](../resources/cloudpcpoolcapabilityconfiguration.md)|The capabilities configuration for the pool, including single sign-on settings.|
+|cloudPcConfiguration|[cloudPcConfiguration](../resources/cloudpcconfiguration.md)|The Cloud PC specification, including image and operating system locale settings for provisioning.|
+|description|String|The description of the pool. The maximum length is 512 characters.|
+|displayName|String|The display name of the pool. The name is unique across Cloud PC pools in an organization. The maximum length is 60 characters.|
+|scalingPolicy|[cloudPcAgentPoolScalingPolicy](../resources/cloudpcagentpoolscalingpolicy.md)|The scaling policy defining minimum and maximum Cloud PC counts for the pool.|
+
+## Response
+
+If successful, this method returns a `204 No Content` response code.
+
+## Examples
+
+### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_cloudpcpool"
+}
+-->
+
+```http
+PATCH https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPcPools/a1b2c3d4-e5f6-7890-abcd-ef1234567890
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.cloudPcAgentPool",
+  "displayName": "Contoso Development Pool Updated",
+  "description": "Contoso Development Pool Description Updated"
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-cloudpcpool-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-cloudpcpool-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-cloudpcpool-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-cloudpcpool-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-cloudpcpool-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-cloudpcpool-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+
+```http
+HTTP/1.1 204 No Content
+```
