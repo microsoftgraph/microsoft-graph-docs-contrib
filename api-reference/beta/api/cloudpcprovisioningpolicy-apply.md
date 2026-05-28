@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Apply the current [provisioning policy](../resources/cloudpcprovisioningpolicy.md) configuration to all Cloud PC devices under a specified policy. You can apply policy settings such as `region` and `singleSignOn`. This action also supports reprovisioning for Frontline shared mode Cloud PCs by using the **reservePercentage** parameter to control the percentage of Cloud PCs to keep available during the process.
+Apply the current [provisioning policy](../resources/cloudpcprovisioningpolicy.md) configuration to all Cloud PC devices under a specified policy. You can apply policy settings such as `region` and `singleSignOn`. This action also supports reprovisioning for frontline shared mode Cloud PCs by using the **reservePercentage** parameter to control the percentage of Cloud PCs that remain available during the process.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
@@ -97,9 +97,9 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Reprovision Frontline shared Cloud PCs with a reserve percentage
+### Example 2: Reprovision frontline shared Cloud PCs with a reserve percentage
 
-The following example shows how to reprovision Frontline shared Cloud PCs under a specified provisioning policy while keeping 80% of Cloud PCs available.
+The following example shows how to reprovision frontline shared Cloud PCs under a specified provisioning policy and keep 80% of Cloud PCs available.
 
 #### Request
 
