@@ -204,6 +204,8 @@
           "resources": [
             "backupRestoreRoot",
             "emailNotificationsSetting",
+            "exclusionUnitBase",
+            "exclusionUnitBulkAdditionJob",
             "protectionPolicyBase",
             "protectionRuleBase",
             "protectionUnitBase",
@@ -220,6 +222,22 @@
               "resources": [
                 "oneDriveForBusinessBrowseSession",
                 "sharePointBrowseSession"
+              ]
+            },
+            {
+              "name": "Exclusion unit",
+              "resources": [
+                "driveExclusionUnit",
+                "mailboxExclusionUnit",
+                "siteExclusionUnit"
+              ]
+            },
+            {
+              "name": "Exclusion unit bulk addition job",
+              "resources": [
+                "driveExclusionUnitsBulkAdditionJob",
+                "mailboxExclusionUnitsBulkAdditionJob",
+                "siteExclusionUnitsBulkAdditionJob"
               ]
             },
             {

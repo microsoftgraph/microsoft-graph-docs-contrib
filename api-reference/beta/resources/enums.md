@@ -2004,6 +2004,16 @@ Namespace: microsoft.graph
 | failedPublish |
 | unknownFutureValue |
 
+### exclusionUnitBulkJobStatus values
+
+|Member|
+|:---|
+|created|
+|active|
+|completed|
+|completedWithErrors|
+|unknownFutureValue|
+
 ### externalEmailOtpState values
 
 | Member |
@@ -5470,6 +5480,14 @@ Possible values for user account types (group membership), per Windows definitio
 |junk|
 |notJunk|
 |phish|
+|unknownFutureValue|
+
+### backupPolicyProtectionMode values
+
+|Member|
+|:---|
+|standard|
+|fullServiceBackup|
 |unknownFutureValue|
 
 ### protectionSource values

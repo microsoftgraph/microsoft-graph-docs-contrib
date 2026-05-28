@@ -46,6 +46,66 @@ items:
     href: ../../api/emailnotificationssetting-get.md
   - name: Update
     href: ../../api/emailnotificationssetting-update.md
+- name: Exclusion unit
+  href: ../../resources/exclusionunitbase.md
+  items:
+  - name: Drive exclusion unit
+    items:
+    - name: Drive exclusion unit
+      href: ../../resources/driveexclusionunit.md
+    - name: List
+      href: ../../api/onedriveforbusinessprotectionpolicy-list-driveexclusionunits.md
+    - name: Get
+      href: ../../api/driveexclusionunit-get.md
+  - name: Mailbox exclusion unit
+    items:
+    - name: Mailbox exclusion unit
+      href: ../../resources/mailboxexclusionunit.md
+    - name: List
+      href: ../../api/exchangeprotectionpolicy-list-mailboxexclusionunits.md
+    - name: Get
+      href: ../../api/mailboxexclusionunit-get.md
+  - name: Site exclusion unit
+    items:
+    - name: Site exclusion unit
+      href: ../../resources/siteexclusionunit.md
+    - name: List
+      href: ../../api/sharepointprotectionpolicy-list-siteexclusionunits.md
+    - name: Get
+      href: ../../api/siteexclusionunit-get.md
+- name: Exclusion unit bulk addition job
+  href: ../../resources/exclusionunitbulkadditionjob.md
+  items:
+  - name: Drive exclusion units bulk addition job
+    items:
+    - name: Drive exclusion units bulk addition job
+      href: ../../resources/driveexclusionunitsbulkadditionjob.md
+    - name: List
+      href: ../../api/onedriveforbusinessprotectionpolicy-list-driveexclusionunitsbulkadditionjobs.md
+    - name: Create
+      href: ../../api/onedriveforbusinessprotectionpolicy-post-driveexclusionunitsbulkadditionjobs.md
+    - name: Get
+      href: ../../api/driveexclusionunitsbulkadditionjob-get.md
+  - name: Mailbox exclusion units bulk addition job
+    items:
+    - name: Mailbox exclusion units bulk addition job
+      href: ../../resources/mailboxexclusionunitsbulkadditionjob.md
+    - name: List
+      href: ../../api/exchangeprotectionpolicy-list-mailboxexclusionunitsbulkadditionjobs.md
+    - name: Create
+      href: ../../api/exchangeprotectionpolicy-post-mailboxexclusionunitsbulkadditionjobs.md
+    - name: Get
+      href: ../../api/mailboxexclusionunitsbulkadditionjob-get.md
+  - name: Site exclusion units bulk addition job
+    items:
+    - name: Site exclusion units bulk addition job
+      href: ../../resources/siteexclusionunitsbulkadditionjob.md
+    - name: List
+      href: ../../api/sharepointprotectionpolicy-list-siteexclusionunitsbulkadditionjobs.md
+    - name: Create
+      href: ../../api/sharepointprotectionpolicy-post-siteexclusionunitsbulkadditionjobs.md
+    - name: Get
+      href: ../../api/siteexclusionunitsbulkadditionjob-get.md
 - name: Protection policy
   items:
   - name: Protection policy
@@ -68,14 +128,34 @@ items:
       href: ../../api/backuprestoreroot-post-exchangeprotectionpolicies.md
     - name: Update
       href: ../../api/exchangeprotectionpolicy-update.md
-  - name: OneDrive for Business protection policy
+    - name: List mailbox exclusion units
+      href: ../../api/exchangeprotectionpolicy-list-mailboxexclusionunits.md
+    - name: Get mailbox exclusion unit
+      href: ../../api/mailboxexclusionunit-get.md
+    - name: List mailbox exclusion units bulk addition jobs
+      href: ../../api/exchangeprotectionpolicy-list-mailboxexclusionunitsbulkadditionjobs.md
+    - name: Create mailbox exclusion units bulk addition job
+      href: ../../api/exchangeprotectionpolicy-post-mailboxexclusionunitsbulkadditionjobs.md
+    - name: Get mailbox exclusion units bulk addition job
+      href: ../../api/mailboxexclusionunitsbulkadditionjob-get.md
+  - name: OneDrive for work or school protection policy
     items:
-    - name: OneDrive for Business protection policy
+    - name: OneDrive for work or school protection policy
       href: ../../resources/onedriveforbusinessprotectionpolicy.md
     - name: Create
       href: ../../api/backuprestoreroot-post-onedriveforbusinessprotectionpolicies.md
     - name: Update
       href: ../../api/onedriveforbusinessprotectionpolicy-update.md
+    - name: List drive exclusion units
+      href: ../../api/onedriveforbusinessprotectionpolicy-list-driveexclusionunits.md
+    - name: Get drive exclusion unit
+      href: ../../api/driveexclusionunit-get.md
+    - name: List drive exclusion units bulk addition jobs
+      href: ../../api/onedriveforbusinessprotectionpolicy-list-driveexclusionunitsbulkadditionjobs.md
+    - name: Create drive exclusion units bulk addition job
+      href: ../../api/onedriveforbusinessprotectionpolicy-post-driveexclusionunitsbulkadditionjobs.md
+    - name: Get drive exclusion units bulk addition job
+      href: ../../api/driveexclusionunitsbulkadditionjob-get.md
   - name: SharePoint protection policy
     items:
     - name: SharePoint protection policy
@@ -84,6 +164,16 @@ items:
       href: ../../api/backuprestoreroot-post-sharepointprotectionpolicies.md
     - name: Update
       href: ../../api/sharepointprotectionpolicy-update.md
+    - name: List site exclusion units
+      href: ../../api/sharepointprotectionpolicy-list-siteexclusionunits.md
+    - name: Get site exclusion unit
+      href: ../../api/siteexclusionunit-get.md
+    - name: List site exclusion units bulk addition jobs
+      href: ../../api/sharepointprotectionpolicy-list-siteexclusionunitsbulkadditionjobs.md
+    - name: Create site exclusion units bulk addition job
+      href: ../../api/sharepointprotectionpolicy-post-siteexclusionunitsbulkadditionjobs.md
+    - name: Get site exclusion units bulk addition job
+      href: ../../api/siteexclusionunitsbulkadditionjob-get.md
 - name: Protection rule
   href: ../../resources/protectionrulebase.md
   items:
