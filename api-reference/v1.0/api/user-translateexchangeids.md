@@ -20,8 +20,41 @@ Translate identifiers of Outlook-related resources between formats.
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- { "blockType": "permissions", "name": "user_translateexchangeids" } -->
+Application permissions are supported only for the request URL that identifies a user in the path.
+
+Permissions for the following HTTP request:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /me/translateExchangeIds
+```
+
+<!-- {
+  "blockType": "permissions",
+  "name": "user_translateexchangeids",
+  "requestUrls": ["POST /me/translateExchangeIds"]
+} -->
 [!INCLUDE [permissions-table](../includes/permissions/user-translateexchangeids-permissions.md)]
+
+Permissions for the following HTTP request:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
+POST /users/{id | userPrincipalName}/translateExchangeIds
+```
+
+<!-- {
+  "blockType": "permissions",
+  "name": "user_translateexchangeids_2",
+  "requestUrls": ["POST /users/{id}/translateExchangeIds"]
+} -->
+|Permission type|Least privileged permissions|Higher privileged permissions|
+|:---|:---|:---|
+|Delegated (work or school account)|User.ReadBasic.All|AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.Read, User.Read.All, User.ReadWrite, User.ReadWrite.All|
+|Delegated (personal Microsoft account)|User.Read|User.ReadWrite|
+|Application|User.Read.All|AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.ReadWrite.All|
 
 ## HTTP request
 
@@ -29,7 +62,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ```http
 POST /me/translateExchangeIds
-POST /users/{id|userPrincipalName}/translateExchangeIds
+POST /users/{id | userPrincipalName}/translateExchangeIds
 ```
 
 ## Request headers
@@ -152,4 +185,3 @@ Content-type: application/json
   ]
 }
 ```
-
