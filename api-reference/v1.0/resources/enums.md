@@ -698,6 +698,15 @@ Namespace: microsoft.graph
 | unknownFutureValue |
 | approverRemove |
 
+### accessPackageSubjectLifecycle values
+
+| Member |
+| ------------------ |
+| notDefined |
+| notGoverned |
+| governed |
+| unknownFutureValue |
+
 ### accessPackageSubjectType values
 
 | Member |
