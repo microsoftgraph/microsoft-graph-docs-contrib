@@ -337,6 +337,14 @@
           "ChangeType": "Addition",
           "Description": "Added the [Delete](https://learn.microsoft.com/en-us/graph/api/userconfiguration-delete?view=graph-rest-beta) method to the [userConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/userConfiguration?view=graph-rest-beta) resource.",
           "Target": "userConfiguration"
+        },
+        {
+          "Id": "8f70e7ce-d948-4dfc-a6d2-a3a9d56e2930",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "userConfigurations",
+          "ChangeType": "Addition",
+          "Description": "Added the **userConfigurations** relationship to the [mailFolder](https://learn.microsoft.com/en-us/graph/api/resources/mailFolder?view=graph-rest-beta) resource.",
+          "Target": "mailFolder"
         }
       ],
       "Id": "8f70e7ce-d948-4dfc-a6d2-a3a9d56e2930",
