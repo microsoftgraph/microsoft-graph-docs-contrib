@@ -83,10 +83,10 @@ The following values are allowed for the **type** parameter.
 The following values are allowed for the **scope** parameter.
 
 | Value          | Description                                                |
-|:---------------|:------------------------------------------------------------
-| anonymous    | Anyone with the link has access, without needing to sign in. It may include people outside of your organization. An administrator may disable support for anonymous links.
-| organization | Anyone signed into your organization (tenant) can use the link to get access. Only available in OneDrive for Business and SharePoint.
-| users        | Specific people in the recipient's collection can use the link to get access. Only available in OneDrive for Business and SharePoint.
+|:---------------|:------------------------------------------------------------|
+| anonymous    | Anyone with the link has access, without needing to sign in. It may include people outside of your organization. An administrator may disable support for anonymous links. |
+| organization | Anyone signed into your organization (tenant) can use the link to get access. Only available in OneDrive for Business and SharePoint. |
+| users        | Specific people in the recipient's collection can use the link to get access. Only available in OneDrive for Business and SharePoint. |
 
 ## Response
 
