@@ -60,6 +60,8 @@ Use the mailbox import and export APIs in Microsoft Graph to build solutions tha
 
 - Added the migration guide [Migrate from legacy alerts to the alerts and incidents API](/graph/alertsv1-alertsv2-migration) to help you transition your apps from the deprecated Microsoft Graph security alerts v1 API to the new alerts and incidents API.
 - Extended the [alertEvidence](/graph/api/resources/security-alertevidence) base type with additional derived types to provide detailed context about various artifacts involved in [security alerts](/graph/api/resources/security-alert).
+- Added the **categories** property to the [alert](/graph/api/resources/security-alert) resource.
+- Deprecated the **category** property on the [alert](/graph/api/resources/security-alert) resource. Use the **categories** property instead.
 
 ### Teamwork and communications | Messaging
 
@@ -115,18 +117,20 @@ Added the [identityCorrelation](/graph/api/resources/identitycorrelation?view=gr
 
 ### Security | Alerts and incidents
 
-Use the following new resources that extend the [alertEvidence](/graph/api/resources/security-alertevidence?view=graph-rest-beta&preserve-view=true) base type to provide detailed context about various artifacts involved in security alerts:
-- [dnsEvidence](/graph/api/resources/security-dnsevidence?view=graph-rest-beta&preserve-view=true)
-- [fileHashEvidence](/graph/api/resources/security-filehashevidence?view=graph-rest-beta&preserve-view=true)
-- [gitHubOrganizationEvidence](/graph/api/resources/security-githuborganizationevidence?view=graph-rest-beta&preserve-view=true)
-- [gitHubRepoEvidence](/graph/api/resources/security-githubrepoevidence?view=graph-rest-beta&preserve-view=true)
-- [gitHubUserEvidence](/graph/api/resources/security-githubuserevidence?view=graph-rest-beta&preserve-view=true)
-- [hostLogonSessionEvidence](/graph/api/resources/security-hostlogonsessionevidence?view=graph-rest-beta&preserve-view=true)
-- [malwareEvidence](/graph/api/resources/security-malwareevidence?view=graph-rest-beta&preserve-view=true)
-- [networkConnectionEvidence](/graph/api/resources/security-networkconnectionevidence?view=graph-rest-beta&preserve-view=true)
-- [sasTokenEvidence](/graph/api/resources/security-sastokenevidence?view=graph-rest-beta&preserve-view=true)
-- [servicePrincipalEvidence](/graph/api/resources/security-serviceprincipalevidence?view=graph-rest-beta&preserve-view=true)
-- [submissionMailEvidence](/graph/api/resources/security-submissionmailevidence?view=graph-rest-beta&preserve-view=true)
+- Use the following new resources that extend the [alertEvidence](/graph/api/resources/security-alertevidence?view=graph-rest-beta&preserve-view=true) base type to provide detailed context about various artifacts involved in security alerts:
+  - [dnsEvidence](/graph/api/resources/security-dnsevidence?view=graph-rest-beta&preserve-view=true)
+  - [fileHashEvidence](/graph/api/resources/security-filehashevidence?view=graph-rest-beta&preserve-view=true)
+  - [gitHubOrganizationEvidence](/graph/api/resources/security-githuborganizationevidence?view=graph-rest-beta&preserve-view=true)
+  - [gitHubRepoEvidence](/graph/api/resources/security-githubrepoevidence?view=graph-rest-beta&preserve-view=true)
+  - [gitHubUserEvidence](/graph/api/resources/security-githubuserevidence?view=graph-rest-beta&preserve-view=true)
+  - [hostLogonSessionEvidence](/graph/api/resources/security-hostlogonsessionevidence?view=graph-rest-beta&preserve-view=true)
+  - [malwareEvidence](/graph/api/resources/security-malwareevidence?view=graph-rest-beta&preserve-view=true)
+  - [networkConnectionEvidence](/graph/api/resources/security-networkconnectionevidence?view=graph-rest-beta&preserve-view=true)
+  - [sasTokenEvidence](/graph/api/resources/security-sastokenevidence?view=graph-rest-beta&preserve-view=true)
+  - [servicePrincipalEvidence](/graph/api/resources/security-serviceprincipalevidence?view=graph-rest-beta&preserve-view=true)
+  - [submissionMailEvidence](/graph/api/resources/security-submissionmailevidence?view=graph-rest-beta&preserve-view=true)
+- Added the **categories** property to the [alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true) resource.
+- Deprecated the **category** property on the [alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true) resource. Use the **categories** property instead.
 
 ### Security | Data security and compliance
 
