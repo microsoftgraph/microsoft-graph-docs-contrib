@@ -20,9 +20,7 @@ Translate identifiers of Outlook-related resources between formats.
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-Application permissions are supported only for the request URL that identifies a user in the path.
-
-Permissions for the following HTTP request:
+Permissions to translate Exchange IDs for the signed-in user:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -37,7 +35,7 @@ POST /me/translateExchangeIds
 } -->
 [!INCLUDE [permissions-table](../includes/permissions/user-translateexchangeids-permissions.md)]
 
-Permissions for the following HTTP request:
+Permissions to translate Exchange IDs for a user:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -58,10 +56,19 @@ POST /users/{id | userPrincipalName}/translateExchangeIds
 
 ## HTTP request
 
+To translate Exchange IDs for the signed-in user using delegated (`/me`) permissions:
+
 <!-- { "blockType": "ignored" } -->
 
 ```http
 POST /me/translateExchangeIds
+```
+
+To translate Exchange IDs using either delegated or application permissions:
+
+<!-- { "blockType": "ignored" } -->
+
+```http
 POST /users/{id | userPrincipalName}/translateExchangeIds
 ```
 
