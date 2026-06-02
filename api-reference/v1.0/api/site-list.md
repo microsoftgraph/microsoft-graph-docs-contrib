@@ -16,9 +16,9 @@ List all available [sites][] in an organization.
 
 Specific filter criteria and query options are also supported and described below:
 
-| Filter statement             | Select statement        | Description
-|:-----------------------------|:------------------------|:--------------------
-|`siteCollection/root ne null` | `siteCollection,webUrl` | Lists all root-level site collections in the organization. Useful for discovering the home site for each geography.
+| Filter statement             | Select statement        | Description|
+|:-----------------------------|:------------------------|:--------------------|
+|`siteCollection/root ne null` | `siteCollection,webUrl` | Lists all root-level site collections in the organization. Useful for discovering the home site for each geography.|
 
 In addition, you can use a **[$search][]** query against the `/sites` collection to find sites matching given keywords.
 If you want to list all sites across all geographies, refer to [getAllSites][].
