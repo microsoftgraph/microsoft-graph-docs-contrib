@@ -6,14 +6,14 @@ ms.localizationpriority: high
 ms.subservice: "outlook"
 ms.custom: scenarios:getting-started
 doc_type: conceptual
-ms.date: 12/08/2025
+ms.date: 02/06/2025
 ---
 
 # Overview of the user configuration API in Microsoft Graph (preview)
 
-The user configuration API in Microsoft Graph lets your application store and retrieve per-folder configuration data alongside the contents of an Exchange Online mailbox. A [userConfiguration](/graph/api/resources/userconfiguration?view=graph-rest-beta&preserve-view=true) object—also known as a folder associated item (FAI)—is associated with a specific mail folder and identified by a key that's unique within that folder. Each object applies to a single folder rather than the whole mailbox. This scoping lets your app keep state close to the content it relates to.
+The user configuration API in Microsoft Graph lets your application store and retrieve per-folder configuration data alongside the contents of an Exchange Online mailbox. A [userConfiguration](/graph/api/resources/userconfiguration?view=graph-rest-beta&preserve-view=true) object (folder associated item, FAI) is associated with a specific mail folder and identified by a key that's unique within that folder. Each object applies to a single folder rather than the whole mailbox. This scoping lets your app keep state close to the content it relates to.
 
-The API gives your app full create, read, update, and delete control over **userConfiguration** objects, and supports multiple payload styles so you can store the format that best fits your scenario: arbitrary binary data, serialized XML, or strongly typed key-value pairs.
+The API gives your app full create, read, update, and delete control over **userConfiguration** objects, and supports multiple payload styles that let you store the format that best fits your scenario: arbitrary binary data, serialized XML, or strongly typed key-value pairs.
 
 ## Why integrate with the user configuration API?
 
@@ -27,13 +27,13 @@ User configuration objects live inside the mailbox. As a result, the data sits c
 
 ### Choose the payload style that fits your data
 
-The **userConfiguration** resource supports three payload properties so you can pick the right shape for your scenario:
+The **userConfiguration** resource supports three payload properties, and you can pick the right shape for your scenario:
 
 - Use **binaryData** for arbitrary binary content.
 - Use **xmlData** for serialized XML.
 - Use **structuredData** to store typed key-value pairs without serializing your own format. The [structuredDataEntry](/graph/api/resources/structureddataentry?view=graph-rest-beta&preserve-view=true) and [structuredDataEntryTypedValue](/graph/api/resources/structureddataentrytypedvalue?view=graph-rest-beta&preserve-view=true) complex types model the supported value types.
 
-A single **userConfiguration** object can carry any combination of these properties, so you can mix payload styles as your app evolves.
+A single **userConfiguration** object can carry any combination of these properties. You can mix payload styles as your app evolves.
 
 ## API reference
 
