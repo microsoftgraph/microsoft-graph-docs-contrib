@@ -203,10 +203,6 @@ Added the **createdByAppId** property to the [application](/graph/api/resources/
 - Added new authentication event resources to support Just-In-Time (JIT) user migration scenarios from legacy authentication systems:
   - Use the [onPasswordSubmitListener](/graph/api/resources/onpasswordsubmitlistener) resource to configure authentication event listeners that trigger during password submission.
   - Use the [onPasswordSubmitCustomExtension](/graph/api/resources/onpasswordsubmitcustomextension) resource to configure custom extensions that validate passwords against external legacy authentication systems.
-- Added the following properties and their associated complex types to the [crossTenantAccessPolicyConfigurationDefault](/graph/api/resources/crosstenantaccesspolicyconfigurationdefault?view=graph-rest-beta&preserve-view=true) and [crossTenantAccessPolicyConfigurationPartner](/graph/api/resources/crosstenantaccesspolicyconfigurationpartner?view=graph-rest-beta&preserve-view=true) resources of cross-tenant access policy APIs to support Microsoft 365 collaboration and app service connect settings:
-  - **appServiceConnectInbound** property to get or set the default or partner-specific configuration for inbound app service connect settings.
-  - **m365CollaborationInbound** property to get or set the default or partner-specific configuration for inbound Microsoft 365 collaboration settings.
-  - **m365CollaborationOutbound** property get or set the default or partner-specific configuration for outbound Microsoft 365 collaboration settings.
 
 ### People and workplace intelligence | People admin settings
 
@@ -228,7 +224,7 @@ Added [ad hoc call](/graph/api/resources/adhoccall) support to change notificati
 
 For more information, see [Get change notifications for transcripts and recordings using Microsoft Graph](teams-changenotifications-callrecording-and-calltranscript.md).
 
-### Tenant management | Configuration management
+### Tenants | Configuration management
 
 The new Tenant Configuration Management APIs in Microsoft Graph allow administrators to control and manage configuration settings across a single workload or multiple workloads within an organization. To learn more about supported use cases, see [Use the Tenant Configuration Management APIs in Microsoft Graph](/graph/api/resources/unified-tenant-configuration-management-api-overview).
 
@@ -315,7 +311,7 @@ Use the **administrationScopeTargets** relationship on the [workflowBase](/graph
 - Added migration guidance for Microsoft Defender for Endpoint (MDE) advanced hunting APIs to help organizations transition from the retired APIs that were available through the `https://api.securitycenter.microsoft.com` endpoint to the advanced hunting APIs available in Microsoft Graph. For more information, see [Migrate from the older APIs](/graph/api/resources/security-api-overview#migrate-from-older-apis).
 - The Defender for Identity sensor management APIs let you discover eligible servers, control automatic onboarding, activate or deactivate the unified agent, and manage required auditing settings during activation—all through a single management interface.
 
-### Tenant management | Governance
+### Tenants | Governance
 
 Introduced the tenant governance API set to enable organizations to manage and govern relationships with other tenants. Key capabilities include:
 - Activating invitation reception and related tenant discovery
