@@ -50,6 +50,8 @@ You can use Microsoft Graph APIs for application management to perform the follo
   - Configure basic application properties, such as the application name, logo, and owners.
   - Configure the application credentials such as the client secret, certificates, and federated credentials.
   - Allow or restrict users and groups from accessing the application.
+  - Specify which type of user accounts are permitted to log into your registered application.
+  - Specify whether the app can be used in any Entra tenant or is restricted to specific Entra tenants.
 - Get the **application templates** for apps registered in the Microsoft Entra application gallery and add an app from the gallery to your tenant.
 - For **service principals**:
   - Create and manage service principals programmatically.

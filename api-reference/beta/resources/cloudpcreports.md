@@ -24,7 +24,7 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 |:---|:---|:---|
 |[Get action status reports](../api/cloudpcreports-getactionstatusreports.md)|Stream|Get the remote action status reports, including data such as the Cloud PC ID, Cloud PC device display name, initiating user's principal name, device owner's user principal name, action taken, and action state.|
 |[Get bulk action status reports](../api/cloudpcreports-retrievebulkactionstatusreport.md)|Stream|Get the bulk remote action status reports, including data such as the bulk action ID, bulk action display name, initiating user's principal name, action type, and action state.|
-|[Get Cloud PC troubleshooting reports](../api/cloudpcreports-retrievecloudpctroubleshootreports.md)|Stream|Get troubleshooting reports for Cloud PCs.|
+|[Get Cloud PC troubleshooting reports](../api/cloudpcreports-retrievecloudpctroubleshootreports.md)|Stream|Get Cloud PC troubleshooting reports, including tenant-level, configuration, user and device, and view data table reports.|
 |[Get frontline report](../api/cloudpcreports-getfrontlinereport.md)|Stream| Get Frontline Cloud PC license usage reports, such as **servicePlanId**, **licenseCount**, and **claimedLicenseCount**, for real-time, 7 days, or 28 days trend.|
 |[Get inaccessible Cloud PC reports](../api/cloudpcreports-getinaccessiblecloudpcreports.md)|Stream|Get inaccessible Cloud PCs with details, including the latest health state, failed connection count, failed health check count, and system status.|
 |[Get raw remote connection reports](../api/cloudpcreports-getrawremoteconnectionreports.md)|Stream|Get the raw real-time remote connection report for a Cloud PC without any calculation or aggregation.|
@@ -60,11 +60,42 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 
 | Member                        | Description       |
 | :---------------------------- | :---------------- |
-| troubleshootDetailsReport     | The daily Cloud PC troubleshooting details, including performance issues, network issues, and reliability issues.|
-| troubleshootTrendCountReport  | The aggregated report that shows the number and trend of issues per tenant.|
-| troubleshootRegionalReport    | The daily regional aggregated report that shows network quality issues by region, including round-trip time issues, connection quality issues, and reliability issues.|
-| unknownFutureValue            | Evolvable enumeration sentinel value. Don't use.|
-| troubleshootIssueCountReport  | The aggregated report over 28 days that shows the number of performance issues, network issues, and reliability issues.|
+| troubleshootTenantGlobalFilterReport | Indicates the global filter parameters for tenant-level troubleshoot reports. |
+| troubleshootTenantNetworkTrendReport | Indicates time-series trend of network metrics at tenant level. |
+| troubleshootTenantNetworkAggregatedReport | Indicates aggregated network metrics at tenant level. |
+| troubleshootTenantConnectionFailureRateTrendReport | Indicates time-series trend of connection failure rate at tenant level. |
+| troubleshootTenantConnectionFailureRateAggregatedReport | Indicates aggregated connection failure rate at tenant level. |
+| troubleshootTenantCloudPCHealthTrendReport | Indicates time-series trend of Cloud PC health metrics at tenant level. |
+| troubleshootTenantCloudPCHealthAggregatedReport | Indicates aggregated Cloud PC health metrics at tenant level. |
+| troubleshootTenantActiveConnectionCountTrendReport | Indicates time-series trend of active connection count at tenant level. |
+| troubleshootTenantActiveConnectionCountAggregatedReport | Indicates aggregated active connection count at tenant level. |
+| troubleshootTenantMeanTimeToFailureTrendReport | Indicates time-series trend of Mean Time To Failure at tenant level. |
+| troubleshootTenantMeanTimeToFailureAggregatedReport | Indicates aggregated Mean Time To Failure at tenant level. |
+| troubleshootTenantRemoteSignInTimeTrendReport | Indicates time-series trend of remote sign-in time at tenant level. |
+| troubleshootTenantRemoteSignInTimeAggregatedReport | Indicates aggregated remote sign-in time at tenant level. |
+| troubleshootEventsOfViewDataTableReport | Indicates tabular view of troubleshoot events. |
+| troubleshootTenantEnvironmentMetricsOfViewDataTableReport | Indicates tabular view of tenant-level environment metrics. |
+| troubleshootCloudPCMetricsOfViewDataTableReport | Indicates tabular view of Cloud PC-level troubleshoot metrics. |
+| troubleshootConfigurationConnectionCountTrendV1Report | Indicates time-series trend of connection count grouped by configuration. |
+| troubleshootConfigurationTotalConnectionCountBarV1Report | Indicates total connection count distribution by configuration. |
+| troubleshootConfigurationGlobalFilterV1Report | Indicates the global filter parameters for configuration-level troubleshoot reports. |
+| troubleshootConnectionConfigurationOfViewDataTableV1Report | Indicates tabular view of connection configuration data. |
+| troubleshootTenantConnectedDevicesOfViewDataTableReport | Indicates tabular view of connected devices at tenant level. |
+| troubleshootEnvironmentOverviewOfViewDataTableReport | Indicates tabular view of environment overview metrics. |
+| troubleshootCloudPCNetworkTrendReport | Indicates time-series trend of network metrics at Cloud PC level. |
+| troubleshootCloudPCNetworkAggregatedReport | Indicates aggregated network metrics at Cloud PC level. |
+| troubleshootCloudPCErrorTrendReport | Indicates time-series trend of connection errors at Cloud PC level. |
+| troubleshootCloudPCErrorAggregatedReport | Indicates aggregated connection error metrics at Cloud PC level. |
+| troubleshootCloudPCDurationTrendReport | Indicates time-series trend of connection duration at Cloud PC level. |
+| troubleshootCloudPCDurationAggregatedReport | Indicates aggregated connection duration at Cloud PC level. |
+| troubleshootCloudPCRemoteSignInTimeTrendReport | Indicates time-series trend of remote sign-in time at Cloud PC level. |
+| troubleshootCloudPCRemoteSignInTimeAggregatedReport | Indicates aggregated remote sign-in time at Cloud PC level. |
+| troubleshootCloudPCListReport | Indicates list report of Cloud PCs with troubleshoot details. |
+| troubleshootCloudPCHealthTrendReport | Indicates time-series trend of health metrics at Cloud PC level. |
+| troubleshootMatchedUserReport | Indicates report of users matched to specified troubleshoot criteria. |
+| troubleshootMatchedCloudPCReport | Indicates report of Cloud PCs matched to specified troubleshoot criteria. |
+| troubleshootUserListReport | Indicates list report of users with troubleshoot details. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## Relationships
 

@@ -79,8 +79,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-11-04T22:35:48.9004462Z",
-      "WorkloadArea": "Microsoft.Cross.Tenant.Migration",
-      "SubArea": ""
+      "WorkloadArea": "Tenants",
+      "SubArea": "Cross-tenant migration"
     }
   ]
 }

@@ -13,6 +13,15 @@ ms.custom: sfi-ropc-nochange
 
 Namespace: microsoft.graph
 
+### notifyMembers values
+
+|Member|
+|:---|
+|all|
+|allowSelected|
+|blockSelected|
+|unknownFutureValue|
+
 ### readingCoachStoryType values
 
 |Member|
@@ -688,6 +697,15 @@ Namespace: microsoft.graph
 | onBehalfAdd |
 | unknownFutureValue |
 | approverRemove |
+
+### accessPackageSubjectLifecycle values
+
+| Member |
+| ------------------ |
+| notDefined |
+| notGoverned |
+| governed |
+| unknownFutureValue |
 
 ### accessPackageSubjectType values
 
@@ -3020,6 +3038,46 @@ Possible values for user account types (group membership), per Windows definitio
 | mfa |
 | unknownFutureValue |
 
+### browsableResourceType values
+
+|Member|
+|:---|
+|none|
+|site|
+|documentLibrary|
+|folder|
+|unknownFutureValue|
+
+### browseQueryOrder values
+
+|Member|
+|:---|
+|pathAsc|
+|pathDsc|
+|nameAsc|
+|nameDsc|
+|unknownFutureValue|
+
+### browseQueryResponseItemType values
+
+|Member|
+|:---|
+|none|
+|site|
+|documentLibrary|
+|folder|
+|file|
+|unknownFutureValue|
+
+### browseSessionStatus values
+
+|Member|
+|:---|
+|creating|
+|created|
+|failed|
+|unknownFutureValue|
+
 ### browserSharedCookieSourceEnvironment values
 
 | Member |
@@ -3721,6 +3779,7 @@ Possible values for user account types (group membership), per Windows definitio
 |standard|
 |bulk|
 |unknownFutureValue|
+|granular|
 
 ### sharePointMigrationJobErrorLevel values
 
@@ -3931,4 +3990,11 @@ Possible values for user account types (group membership), per Windows definitio
 |read|
 |write|
 |create|
+|unknownFutureValue|
+
+### customSecurityAttributeComparisonOperator values
+
+|Member|
+|:---|
+|equals|
 |unknownFutureValue|

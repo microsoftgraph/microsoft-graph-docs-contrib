@@ -126,6 +126,19 @@ Namespace: microsoft.graph
 |deletedWithinMoreThan3Months|
 |unknownFutureValue|
 
+### enforcementResultStatus values
+
+|Member|
+|:---|
+|success|
+|missingOrInvalidConfiguration|
+|userOverride|
+|agentFailure|
+|enforcementTimeout|
+|oSOverride|
+|processNonExistent|
+|other|
+
 ### fedRampLevel values
 
 |Member|
@@ -1990,6 +2003,16 @@ Namespace: microsoft.graph
 | published |
 | failedPublish |
 | unknownFutureValue |
+
+### exclusionUnitBulkJobStatus values
+
+|Member|
+|:---|
+|created|
+|active|
+|completed|
+|completedWithErrors|
+|unknownFutureValue|
 
 ### externalEmailOtpState values
 
@@ -5457,6 +5480,14 @@ Possible values for user account types (group membership), per Windows definitio
 |junk|
 |notJunk|
 |phish|
+|unknownFutureValue|
+
+### backupPolicyProtectionMode values
+
+|Member|
+|:---|
+|standard|
+|fullServiceBackup|
 |unknownFutureValue|
 
 ### protectionSource values

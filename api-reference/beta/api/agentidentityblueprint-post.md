@@ -2,7 +2,7 @@
 title: "Create agentIdentityBlueprint"
 description: "Create a new agent identity blueprint."
 author: "zallison22"
-ms.date: 10/27/2025
+ms.date: 05/20/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-agent-id"
 doc_type: apiPageType
@@ -24,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "agentidentityblueprint_post" } -->
 [!INCLUDE [permissions-table](../includes/permissions/agentidentityblueprint-post-permissions.md)]
 
-[!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]
+[!INCLUDE [rbac-agentid-apis-post](../includes/rbac-for-apis/rbac-agentid-apis-post.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

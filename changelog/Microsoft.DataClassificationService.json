@@ -1,5 +1,57 @@
-﻿{
+{
   "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "c6ec8d31-b2e6-463a-a440-1461b2fddf86",
+          "ApiChange": "Resource",
+          "ChangedApiName": "contentActivityMetadata",
+          "ChangeType": "Addition",
+          "Description": "Added the [contentActivityMetadata](https://learn.microsoft.com/graph/api/resources/contentactivitymetadata?view=graph-rest-beta) resource type.",
+          "Target": "contentActivityMetadata"
+        },
+        {
+          "Id": "c6ec8d31-b2e6-463a-a440-1461b2fddf86",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "enforcementResultStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **enforcementResultStatus** enumeration type.",
+          "Target": "enforcementResultStatus"
+        }
+      ],
+      "Id": "c6ec8d31-b2e6-463a-a440-1461b2fddf86",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-05-13T16:52:44.8032878Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Data security and compliance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6557ba0e-e152-4737-acad-833397b3e369",
+          "ApiChange": "Member",
+          "ChangedApiName": "copyToClipboard",
+          "ChangeType": "Addition",
+          "Description": "Added the `copyToClipboard` member to the **userActivityType** enumeration.",
+          "Target": "userActivityType"
+        },
+        {
+          "Id": "6557ba0e-e152-4737-acad-833397b3e369",
+          "ApiChange": "Member",
+          "ChangedApiName": "copyToClipboard",
+          "ChangeType": "Addition",
+          "Description": "Added the `copyToClipboard` member to the **userActivityTypes** enumeration.",
+          "Target": "userActivityTypes"
+        }
+      ],
+      "Id": "6557ba0e-e152-4737-acad-833397b3e369",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-05-26T17:15:06.1799522Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
     {
       "ChangeList": [
         {

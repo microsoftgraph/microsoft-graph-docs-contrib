@@ -47,7 +47,7 @@ If successful, this method returns a `200 OK` response code and a [participant](
 
 ## Example
 
-##### Request
+### Request
 The following example shows the request.
 
 # [HTTP](#tab/http)
@@ -89,7 +89,7 @@ GET https://graph.microsoft.com/v1.0/communications/calls/7531d31f-d10d-44de-802
 
 ---
 
-##### Response
+### Response
 
 > **Note:** The response object shown here might be shortened for readability.
 

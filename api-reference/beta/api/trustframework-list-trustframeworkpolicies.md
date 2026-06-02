@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following example retrieves all **trustFrameworkPolicies**.
 
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/trustFramework/policies
 
 ---
 
-##### Response
+### Response
 
 <!-- {
   "blockType": "response",

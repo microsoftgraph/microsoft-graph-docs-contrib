@@ -66,12 +66,12 @@ This example shows how to get my role assignments on the subscription Wingtip To
   "blockType": "request",
   "name": "get_governanceroleassignments"
 }-->
-##### Request
+### Request
 
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignments?$filter=subjectId+eq+'918e54be-12c4-4f4c-a6d3-2ee0e3661c51'
 ```
-##### Response
+### Response
 <!-- {
   "blockType": "response",
   "truncated": true,

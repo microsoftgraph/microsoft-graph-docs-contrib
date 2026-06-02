@@ -46,7 +46,7 @@ Don't supply a request body for this method.
 If successful, this method returns a `204, No Content` response code. It doesn't return anything in the response body.
 
 ## Example
-##### Request
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -87,7 +87,7 @@ DELETE https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30
 
 ---
 
-##### Response
+### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

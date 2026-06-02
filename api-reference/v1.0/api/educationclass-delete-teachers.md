@@ -59,7 +59,7 @@ DELETE https://graph.microsoft.com/v1.0/education/classes/{class-id}/teachers/{t
 ---
 
 ### Response
-The following example shows a response. 
+The following example shows the response. 
 <!-- {
   "blockType": "response"
 } -->

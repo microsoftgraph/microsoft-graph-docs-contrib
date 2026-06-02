@@ -75,7 +75,7 @@ Within a round of **delta** function calls bound by the date range of a **calend
 Filter the events under `@removed` for the date range that your scenario requires.
 
 ## Example
-##### Request
+### Request
 
 The following example shows how to make a single **delta** function call, and limit the maximum number of events 
 in the response body to 2.
@@ -120,7 +120,7 @@ Prefer: odata.maxpagesize=2
 
 ---
 
-##### Response
+### Response
 If the request is successful, the response would include a state token, which is either a _skipToken_ 
 (in an _@odata.nextLink_ response header) or a _deltaToken_ (in an _@odata.deltaLink_ response header). 
 Respectively, they indicate whether you should continue with the round or you have completed 

@@ -58,7 +58,7 @@ If successful, this method returns `204 No Content` response code. If unsuccessf
 
 The following example updates the definition of the token lifetime **identityProvider** and sets it as the organization default.
 
-##### Request
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -106,7 +106,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 
 <!-- {
   "blockType": "response",
