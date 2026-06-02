@@ -3,7 +3,7 @@ title: "Set up Microsoft Graph change notifications with resource data"
 description: "Learn how to set up Microsoft Graph change notifications with resource data to receive updated resources directly in the notification payload."
 author: FaithOmbongi
 ms.author: ombongifaith
-ms.reviewer: keylimesoda
+ms.reviewer: jessieli-ad
 ms.topic: concept-article
 ms.subservice: "change-notifications"
 ms.localizationpriority: high
@@ -170,11 +170,16 @@ Follow these steps to validate tokens and the apps that generate them:
     - Validate the "audience" in the token matches your app ID.
     - If you have more than one app receiving change notifications, make sure to check for multiple IDs.
 
-4. Validate that the token's `azp` property matches the expected value of `0bf30f3b-4a52-48df-9a82-234910c4a086`, which represents the Microsoft Graph change notification publisher.
+4. Validate the token's caller identity to ensure the notification originates from the Microsoft Graph change notification service. The expected caller identity is `0bf30f3b-4a52-48df-9a82-234910c4a086`. The claim used to represent the caller application depends on the token's version:
+    - For v1.0 tokens (`ver` = `"1.0"`), the caller identity is represented by the `appid` claim.
+    - For v2.0 tokens (`ver` = `"2.0"`), the caller identity is represented by the `azp` claim.
+
+    > [!IMPORTANT]
+    > Failure to validate the appropriate claim may result in accepting notifications from an untrusted publisher.
 
 ### Example JWT token
 
-The following example shows the properties in the JWT token needed for validation.
+The following example shows the properties in a v2.0 JWT token needed for validation.
 
 ```json
 {

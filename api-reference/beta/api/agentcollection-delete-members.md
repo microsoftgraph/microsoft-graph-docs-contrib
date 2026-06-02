@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [agentregistry-deprecation-note](../includes/agentregistry-deprecation-note.md)]
+
 Remove an [agentInstance](../resources/agentinstance.md) object from an [agentCollection](../resources/agentcollection.md).
 
 ## Permissions

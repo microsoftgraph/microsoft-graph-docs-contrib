@@ -12,6 +12,7 @@ use Microsoft\Graph\Beta\Generated\Models\ProcessContentRequest;
 use Microsoft\Graph\Beta\Generated\Models\ProcessContentMetadataBase;
 use Microsoft\Graph\Beta\Generated\Models\ProcessConversationMetadata;
 use Microsoft\Graph\Beta\Generated\Models\TextContent;
+use Microsoft\Graph\Beta\Generated\Models\ContentCategory;
 use Microsoft\Graph\Beta\Generated\Models\ActivityMetadata;
 use Microsoft\Graph\Beta\Generated\Models\UserActivityType;
 use Microsoft\Graph\Beta\Generated\Models\DeviceMetadata;
@@ -38,10 +39,7 @@ $contentEntriesProcessContentMetadataBase1->setSequenceNumber(0);
 $contentEntriesProcessContentMetadataBase1->setIsTruncated(false);
 $contentEntriesProcessContentMetadataBase1->setCreatedDateTime(new \DateTime('2025-05-27T17:23:20'));
 $contentEntriesProcessContentMetadataBase1->setModifiedDateTime(new \DateTime('2025-05-27T17:23:20'));
-$additionalData = [
-	'contentCategory' => 'ai',
-];
-$contentEntriesProcessContentMetadataBase1->setAdditionalData($additionalData);
+$contentEntriesProcessContentMetadataBase1->setContentCategory(new ContentCategory('ai'));
 $contentEntriesArray []= $contentEntriesProcessContentMetadataBase1;
 $contentToProcess->setContentEntries($contentEntriesArray);
 

@@ -2,7 +2,7 @@
 title: "List deletedItems (directory objects)"
 ms.date: 11/17/2025
 description: "Retrieve a list of recently deleted items from deleted items."
-author: "keylimesoda"
+author: "FaithOmbongi"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
@@ -52,8 +52,6 @@ The following table shows the least privileged permission or permissions require
 | [certificateAuthorityDetail](../resources/certificateauthoritydetail.md) | PublicKeyInfrastructure.Read.All | Not supported. | PublicKeyInfrastructure.Read.All |
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
-
-[!INCLUDE [rbac-directory-deleted-items-apis](../includes/rbac-for-apis/rbac-directory-deleted-items-apis.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

@@ -1,11 +1,11 @@
 ---
 title: "cloudPC resource type"
 description: "Represents a cloud-managed virtual desktop."
-author: "AshleyYangSZ"
+author: "danipocket"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
-ms.date: 11/19/2024
+ms.date: 05/05/2026
 ---
 
 # cloudPC resource type
@@ -49,7 +49,8 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |[Retrieve snapshots](../api/cloudpc-retrievesnapshots.md)|[cloudPcSnapshot](../resources/cloudpcsnapshot.md) collection|Get a list of [cloudPcSnapshot](../resources/cloudpcsnapshot.md) resources for a Cloud PC.|
 |[Get frontline access state](../api/cloudpc-getfrontlinecloudpcaccessstate.md)|[frontlineCloudPcAccessState](#frontlinecloudpcaccessstate-values)|Get the access state of the frontline Cloud PC. The possible values are: `unassigned`, `noLicensesAvailable`, `activationFailed`, `active`, `activating`, `standbyMode`, `unknownFutureValue`. The `noLicensesAvailable` member is deprecated and stopped returning on September 30, 2024.|
 |[Get launch info (deprecated)](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPcLaunchInfo](../resources/cloudpclaunchinfo.md)|Get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for a specific Cloud PC that belongs to the current signed-in user. This API is deprecated and will stop returning data on October 30, 2026. Going forward, use the [Retrieve launch detail](../api/cloudpc-retrievecloudpclaunchdetail.md) API.|
-|[Retrieve frontline Cloud PC detail](../api/cloudpc-retrievefrontlinecloudpcdetail.md)|[frontlineCloudPcDetail](../resources/frontlinecloudpcdetail.md)|Get the [frontlineCloudPcDetail](../resources/frontlinecloudpcdetail.md) of a frontline [Cloud PC](../resources/cloudpc.md).
+|[Retrieve frontline Cloud PC detail](../api/cloudpc-retrievefrontlinecloudpcdetail.md)|[frontlineCloudPcDetail](../resources/frontlinecloudpcdetail.md)|Get the [frontlineCloudPcDetail](../resources/frontlinecloudpcdetail.md) of a frontline [Cloud PC](../resources/cloudpc.md).|
+
 ## Properties
 
 |Property|Type|Description|
@@ -79,6 +80,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |provisioningPolicyId|String|The provisioning policy ID of the Cloud PC.|
 |provisioningPolicyName|String|The provisioning policy that is applied during the provisioning of Cloud PCs.|
 |provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|The type of licenses to be used when provisioning Cloud PCs using this policy. The possible values are: `dedicated`, `shared`, `unknownFutureValue`, `sharedByUser`, `sharedByEntraGroup`, `reserve`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `sharedByUser`, `sharedByEntraGroup`, `reserve`. The default value is `dedicated`. The `shared` member is deprecated and will stop returning on April 30, 2027; going forward, use the `sharedByUser` member. |
+|scopeIds|String collection|The scope IDs of the corresponding permission. Currently, it's the Intune scope tag ID. Read-only.|
 |servicePlanId|String|The service plan ID of the Cloud PC.|
 |servicePlanName|String|The service plan name of the Cloud PC.|
 |servicePlanType|[cloudPcServicePlanType](../resources/cloudpcserviceplan.md#cloudpcserviceplantype-values)|The service plan type of the Cloud PC.|
@@ -204,6 +206,7 @@ The following JSON representation shows the resource type.
   "servicePlanId": "String",
   "servicePlanName": "String",
   "servicePlanType": "String",
+  "scopeIds": ["String"],
   "sharedDeviceDetail": {"@odata.type": "microsoft.graph.cloudPcFrontlineSharedDeviceDetail"},
   "status": "String",
   "userAccountType": "String",

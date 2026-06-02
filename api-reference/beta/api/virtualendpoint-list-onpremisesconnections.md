@@ -18,7 +18,7 @@ Get a list of the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesco
 
 [!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 

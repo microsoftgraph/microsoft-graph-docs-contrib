@@ -37,17 +37,14 @@ applications.SetIncludeAllApplications(&includeAllApplications)
 applications.SetAdditionalData(additionalData)
 conditions.SetApplications(applications)
 requestBody.SetConditions(conditions)
-additionalData := map[string]interface{}{
-handler := graph.New()
+handler := graphmodels.NewOnPasswordMigrationCustomExtensionHandler()
 migrationPropertyId := "extension_b7b1c57b532f40b8b5ed4b7a7ba67401_requiresMigration"
 handler.SetMigrationPropertyId(&migrationPropertyId) 
-customExtension := graph.New()
+customExtension := graphmodels.NewOnPasswordSubmitCustomExtension()
 id := "6fc5012e-7665-43d6-9708-4370863f4e6e"
 customExtension.SetId(&id) 
-	handler.SetCustomExtension(customExtension)
-	requestBody.SetHandler(handler)
-}
-requestBody.SetAdditionalData(additionalData)
+handler.SetCustomExtension(customExtension)
+requestBody.SetHandler(handler)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 authenticationEventListeners, err := graphClient.Identity().AuthenticationEventListeners().Post(context.Background(), requestBody, nil)

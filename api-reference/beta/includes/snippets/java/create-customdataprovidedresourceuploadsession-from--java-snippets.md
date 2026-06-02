@@ -17,7 +17,7 @@ additionalData.put("accessReviewId", "9e4b1c6f-2a3d-4f8e-9b7a-5c1e2d3f4a6b");
 additionalData.put("accessReviewInstanceId", "6a9b1c6f-2a3d-4f8e-9b7a-5c1e2d3f4a6b");
 data.setAdditionalData(additionalData);
 customDataProvidedResourceUploadSession.setData(data);
-CustomDataProvidedResourceUploadSession result = graphClient.identityGovernance().entitlementManagement().accessPackageCatalogs().byAccessPackageCatalogId("{accessPackageCatalog-id}").accessPackageResources().byAccessPackageResourceId("{accessPackageResource-id}").uploadSessions().post(customDataProvidedResourceUploadSession);
+CustomDataProvidedResourceUploadSession result = graphClient.identityGovernance().catalogs().byAccessPackageCatalogId("{accessPackageCatalog-id}").accessPackageResources().byAccessPackageResourceId("{accessPackageResource-id}").uploadSessions().post(customDataProvidedResourceUploadSession);
 
 
 ```

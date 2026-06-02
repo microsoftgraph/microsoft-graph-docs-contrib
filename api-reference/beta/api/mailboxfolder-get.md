@@ -38,7 +38,7 @@ GET /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}/childFolders
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -53,6 +53,9 @@ Don't supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a [mailboxFolder](../resources/mailboxfolder.md) object in the response body.
+
+> [!NOTE]
+> This API might return a redirect when the requested folder is in an autoexpanded archive mailbox. For more information, see [Handle archive mailbox redirects](/graph/handle-archive-mailbox-redirects).
 
 ## Examples
 

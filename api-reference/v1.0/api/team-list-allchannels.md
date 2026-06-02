@@ -52,6 +52,8 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [channel](../resources/channel.md) objects in the response body. The response also includes the **@odata.id** property which can be used to access the channel and run other operations on the [channel](../resources/channel.md) object.
 
+When the result set spans multiple pages, the response includes an **@odata.nextLink** property with a URL for retrieving the next page of results. For details about how to page through results, see [Paging Microsoft Graph data in your app](/graph/paging).
+
 > [!Note]
 > Currently, invoking the URL returned from the **@odata.id** property fails for cross-tenant shared channels. You can solve this issue if you remove the `/tenants/{tenant-id}` part from the URL before you call this API. For more information, see [Known issues with Microsoft Graph](/graph/known-issues#unable-to-access-a-cross-tenant-shared-channel-when-the-request-url-contains-tenantscross-tenant-id).
 
@@ -126,6 +128,7 @@ Content-Type: application/json
       "displayName": "General",
       "description": "AutoTestTeam_20210311_150740.2550_fim3udfdjen9",
       "membershipType": "standard",
+      "layoutType": null,
       "tenantId": "b3246f44-b4gb-4627-96c6-25b18fa2c910",
       "isArchived": false
     },
@@ -135,6 +138,7 @@ Content-Type: application/json
       "createdDateTime": "2020-05-27T19:22:25.692Z",
       "displayName": "Shared channel from Contoso",
       "membershipType": "shared",
+      "layoutType": null,
       "tenantId": "b3246f44-b4gb-5678-96c6-25b18fa2c910",
       "isArchived": false
     }
@@ -142,6 +146,8 @@ Content-Type: application/json
 }
 ```
 
+> [!NOTE]
+> This API has a [known issue](/graph/known-issues#layouttype-property-returns-null-when-listing-all-channels) related to listing channels. The **layoutType** property returns `null` when listing channels. To get the layout type of a specific channel, use the [Get channel](../api/channel-get.md) API. Full support for **layoutType** in list operations is planned for a future release.
 
 ### Example 2: List all shared channels
 
@@ -211,6 +217,7 @@ Content-Type: application/json
       "createdDateTime": "2020-05-27T19:22:25.692Z",
       "displayName": "Shared channel from Contoso",
       "membershipType": "shared",
+      "layoutType": null,
       "tenantId": "b3246f44-b4gb-5678-96c6-25b18fa2c910",
       "isArchived": false
     }

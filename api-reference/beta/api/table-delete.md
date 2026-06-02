@@ -47,7 +47,7 @@ If successful, this method returns `200 OK` response code. It doesn't return any
 
 ## Example
 Here's an example of how to call this API.
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)
@@ -85,7 +85,7 @@ DELETE https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|
 
 ---
 
-##### Response
+### Response
 The following example shows the response. 
 <!-- {
   "blockType": "response"

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get a list of the [cloudPcFrontLineServicePlan](../resources/cloudpcfrontlineserviceplan.md) objects and their properties.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 

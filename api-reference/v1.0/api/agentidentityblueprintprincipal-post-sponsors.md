@@ -12,7 +12,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Add sponsors to an [agent identity blueprint principal](../resources/agentidentityblueprintprincipal.md) by posting to the sponsors collection.
+Add sponsors to an [agent identity blueprint principal](../resources/agentidentityblueprintprincipal.md). Sponsors can include users, groups, or service principals. Sponsors may not include agent users.
+
+A single blueprint principal may have up to 100 sponsors. No more than 5 sponsors may be groups. Only groups with dynamic membership or Microsoft 365 groups are supported as sponsors. Role-assignable groups can't be set as sponsors.
 
 ## Permissions
 

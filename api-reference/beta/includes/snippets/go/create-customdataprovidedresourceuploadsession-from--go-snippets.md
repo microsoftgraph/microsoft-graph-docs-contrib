@@ -29,7 +29,7 @@ data.SetAdditionalData(additionalData)
 requestBody.SetData(data)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
-uploadSessions, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogs().ByAccessPackageCatalogId("accessPackageCatalog-id").AccessPackageResources().ByAccessPackageResourceId("accessPackageResource-id").UploadSessions().Post(context.Background(), requestBody, nil)
+uploadSessions, err := graphClient.IdentityGovernance().Catalogs().ByAccessPackageCatalogId("accessPackageCatalog-id").AccessPackageResources().ByAccessPackageResourceId("accessPackageResource-id").UploadSessions().Post(context.Background(), requestBody, nil)
 
 
 ```

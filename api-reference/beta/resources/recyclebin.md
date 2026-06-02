@@ -28,7 +28,7 @@ Inherits from [baseItem](baseitem.md).
 
 | Property | Type   | Description                                                                                                              |
 |:---------|:-------|:-------------------------------------------------------------------------------------------------------------------------|
-|id| String | The unique identifier for the **recycleBin** object. Returned only on `$select`. Inherited from [baseItem](baseitem.md). |
+|id| String | The unique identifier for the **recycleBin** object. Requires `$select` to retrieve. Inherited from [baseItem](baseitem.md). |
 |settings|[recycleBinSettings](./recyclebinsettings.md)|Settings of the recycleBin.|
 
 ## Relationships

@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.topic: overview
 ms.subservice: entra-directory-management
-ms.date: 03/18/2026
+ms.date: 04/16/2026
 # Customer intent: As a developer integrating with Microsoft Graph, I want to understand the Entra Backup and Recovery APIs so that I can programmatically back up, preview, and restore my tenant's directory objects.
 ---
 
@@ -18,7 +18,7 @@ Namespace: microsoft.graph.entraRecoveryServices
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The [Microsoft Entra Backup and Recovery](/entra/identity/backup-recovery/overview) APIs in Microsoft Graph enable you to programmatically back up and restore critical directory objects to a previously known good state. These APIs help IT administrators recover from accidental changes or security compromises by viewing available backups, previewing restoration changes, executing recovery operations, and monitoring job progress.
+The [Microsoft Entra Backup and Recovery](/entra/backup/overview) APIs in Microsoft Graph enable you to programmatically back up and restore critical directory objects to a previously known good state. These APIs help IT administrators recover from accidental changes or security compromises by viewing available backups, previewing restoration changes, executing recovery operations, and monitoring job progress.
 
 ## Supported directory objects
 
@@ -170,6 +170,10 @@ In addition to Microsoft Graph permissions, the signed-in user must be assigned 
 ## Throttling
 
 The backup and recovery APIs follow standard [Microsoft Graph service-specific throttling limits](/graph/throttling-limits). Monitor `429 Too Many Requests` responses and implement retry logic using the `Retry-After` header.
+
+## Licensing and pricing
+
+For licensing and pricing details, see [Microsoft Entra Backup and Recovery overview (Preview)](/entra/backup/overview).
 
 ## Related content
 

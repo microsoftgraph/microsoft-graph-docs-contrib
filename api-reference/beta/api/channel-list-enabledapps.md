@@ -51,7 +51,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [teamsApp](../resources/teamsapp.md) objects in the response body. The response also includes the **@odata.id** property which can be used to access the **teamsApp** and run other operations on the [teamsApp](../resources/teamsApp.md) object.
+If successful, this method returns a `200 OK` response code and a collection of [teamsApp](../resources/teamsapp.md) objects in the response body. The response also includes the **@odata.id** property which can be used to access the **teamsApp** and run other operations on the [teamsApp](../resources/teamsapp.md) object.
 
 ## Examples
 

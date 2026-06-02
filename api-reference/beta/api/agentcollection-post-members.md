@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [agentregistry-deprecation-note](../includes/agentregistry-deprecation-note.md)]
+
 Add an [agentInstance](../resources/agentinstance.md) to an [agentCollection](../resources/agentcollection.md).To add multiple agentInstance in batch, consider using [JSON batching](/graph/json-batching).
 
 ## Permissions

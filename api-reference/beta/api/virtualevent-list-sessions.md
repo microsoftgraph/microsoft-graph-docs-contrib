@@ -150,6 +150,7 @@ Content-Type: application/json
       "isBroadcast": null,
       "broadcastSettings": null,
       "capabilities": [],
+      "capacity": 10000,
       "audioConferencing": null,
       "chatInfo": null,
       "videoTeleconferenceId": null,

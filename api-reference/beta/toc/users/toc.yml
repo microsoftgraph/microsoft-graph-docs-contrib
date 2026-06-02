@@ -90,6 +90,12 @@ items:
       href: ../../api/user-list-cloudpcs.md
     - name: Get launch info
       href: ../../api/cloudpc-getcloudpclaunchinfo.md
+  - name: Cloud PC pool
+    items:
+    - name: List Cloud PC pools
+      href: ../../api/user-list-cloudpcpools.md
+    - name: Get Cloud PC pool
+      href: ../../api/user-get-cloudpcpool.md
   - name: Data security and governance
     items:
     - name: Compute protection scopes
@@ -196,6 +202,10 @@ items:
       href: ../../api/user-sendmail.md
     - name: Get mail tips
       href: ../../api/user-getmailtips.md
+    - name: List notes
+      href: ../../api/user-list-notes.md
+    - name: Create note
+      href: ../../api/user-post-notes.md
   - name: Notes
     items:
     - name: List notebooks

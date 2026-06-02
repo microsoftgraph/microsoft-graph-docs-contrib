@@ -127,6 +127,9 @@ configuration:
             When the updates in this PR are ready for external customers to use, please replace the **do not merge** label with **ready to merge**.
 
 
+            If this PR includes schema-related changes, verify that the updates are visible in the metadata endpoint before merging: [https://graph.microsoft.com/beta/$metadata](https://graph.microsoft.com/beta/$metadata) for `beta` changes, or [https://graph.microsoft.com/v1.0/$metadata](https://graph.microsoft.com/v1.0/$metadata) for `v1.0` changes.
+
+
             Check the content review workflow [here](https://eng.ms/cid/27dee76c-3a60-4e65-8fdf-08ea849b3498/fid/3a993b6c9d547e46f59d8d7851f191c38bbbea6ead01253dc62fcdd8101a1ff9).
       - removeLabel:
           label: content review in progress
@@ -1014,6 +1017,33 @@ configuration:
       then:
       - addLabel:
           label: ready to merge
+    - description: Remove do not merge label when pull request is labeled ready to merge
+      if:
+      - payloadType: Pull_Request
+      - labelAdded:
+          label: ready to merge
+      - isOpen
+      then:
+      - removeLabel:
+          label: do not merge
+    - description: Remove ready to merge label when pull request is labeled do not merge
+      if:
+      - payloadType: Pull_Request
+      - labelAdded:
+          label: do not merge
+      - isOpen
+      then:
+      - removeLabel:
+          label: ready to merge
+    - description: Remove resolved awaiting prod deployment label when pull request is labeled schema live
+      if:
+      - payloadType: Pull_Request
+      - labelAdded:
+          label: schema live
+      - isOpen
+      then:
+      - removeLabel:
+          label: 'resolved: awaiting prod deployment'
     - description: Add do not merge label to new pull requests opened by contributors
       if:
       - payloadType: Pull_Request

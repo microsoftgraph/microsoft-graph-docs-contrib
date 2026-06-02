@@ -2,7 +2,7 @@
 title: "subscription resource type"
 description: "Represents a subscription that allows a client app to receive change notifications about changes to data in Microsoft Graph."
 ms.localizationpriority: high
-author: "keylimesoda"
+author: "jessieli-ad"
 ms.subservice: change-notifications
 doc_type: resourcePageType
 ms.date: 06/10/2024

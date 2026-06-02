@@ -70,6 +70,7 @@ This resource supports:
 | applicationTemplateId | String | Unique identifier of the [applicationTemplate](../resources/applicationtemplate.md). Supports `$filter` (`eq`, `not`, `ne`). Read-only. `null` if the app wasn't created from an application template.|
 | appRoles | [appRole](approle.md) collection | The collection of roles defined for the application. With [app role assignments](approleassignment.md), these roles can be assigned to users, groups, or service principals associated with other applications. Not nullable. |
 |certification|[certification](certification.md)|Specifies the certification status of the application.|
+|createdByAppId|String|The **appId** of the application that created this application. Set internally by Microsoft Entra ID. Read-only.|
 | createdDateTime | DateTimeOffset | The date and time the application was registered. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. <br><br> Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, and `eq` on `null` values) and `$orderby`. |
 | deletedDateTime | DateTimeOffset | The date and time the application was deleted. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
 | description | String | Free text field to provide a description of the application object to end users. The maximum allowed size is 1,024 characters. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `startsWith`) and `$search`. |
@@ -83,6 +84,7 @@ This resource supports:
 | isFallbackPublicClient | Boolean | Specifies the fallback application type as public client, such as an installed application running on a mobile device. The default value is `false`, which means the fallback application type is confidential client such as a web app. There are certain scenarios where Microsoft Entra ID can't determine the client application type. For example, the [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) flow where it's configured without specifying a redirect URI. In those cases, Microsoft Entra ID interprets the application type based on the value of this property.|
 | keyCredentials | [keyCredential](keycredential.md) collection | The collection of key credentials associated with the application. Not nullable. Supports `$filter` (`eq`, `not`, `ge`, `le`). |
 | logo | Stream | The main logo for the application. Not nullable. |
+| managerApplications | Guid collection | A collection of application IDs for Microsoft first-party applications designated as managers. Manager applications can create service principals, agent identities, and agent users for managed agent blueprints. Limited to a maximum of 10 entries. Not nullable. Only supported on [agentIdentityBlueprint](agentidentityblueprint.md) objects; attempts to set this property on non-agent-blueprint applications return an error. Not returned by default; must be explicitly requested via `$select`. |
 | nativeAuthenticationApisEnabled | nativeAuthenticationApisEnabled | Specifies whether the Native Authentication APIs are enabled for the application. The possible values are: `none` and `all`. Default is `none`. For more information, see [Native Authentication](/entra/external-id/customers/concept-native-authentication). |
 | notes | String | Notes relevant for the management of the application. |
 | oauth2RequiredPostResponse | Boolean | Specifies whether, as part of OAuth 2.0 token requests, Microsoft Entra ID allows POST requests, as opposed to GET requests. The default is `false`, which specifies that only GET requests are allowed. |
@@ -158,6 +160,7 @@ The following JSON representation shows the resource type.
   "applicationTemplateId": "String",
   "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
   "certification": {"@odata.type": "microsoft.graph.certification"},
+  "createdByAppId": "String",
   "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",
   "disabledByMicrosoftStatus": "String",
@@ -170,6 +173,7 @@ The following JSON representation shows the resource type.
   "isFallbackPublicClient": false,
   "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
   "logo": "Stream",
+  "managerApplications": ["Guid"],
   "nativeAuthenticationApisEnabled": "String",
   "notes": "String",
   "oauth2RequiredPostResponse": false,

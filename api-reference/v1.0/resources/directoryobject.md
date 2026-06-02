@@ -2,7 +2,7 @@
 title: "directoryObject resource type"
 description: "Represents a Microsoft Entra object."
 ms.localizationpriority: high
-author: "keylimesoda"
+author: "FaithOmbongi"
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType
 ms.date: 07/22/2024

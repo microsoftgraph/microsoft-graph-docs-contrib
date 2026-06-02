@@ -33,6 +33,7 @@ All examples are relative to a **[list][]**; for example, `https://graph.microso
 | [Update][]                                                               | [fieldValueSet][]                  | Update the properties on a listItem.                                      |
 | [Delete][]                                                               | No Content                         | Removes an item from a list.                                              |
 | [Get analytics][]                                                        | [itemAnalytics][]                  | Get analytics for this resource.                                          |
+| [Get recent activities](../api/itemactivity-list.md)       | [itemActivity](../resources/itemactivity.md) collection | List the recent [activities](../resources/itemactivity.md) that took place on a [drive](../resources/drive.md), [list](../resources/list.md), item, or within an item hierarchy. |
 | [Get column values][Get]                                                 | listItem                           | Get column values from listItem.                                          |
 | [Update column values][Update]                                           | [fieldValueSet][]                  | Update column values on a listItem.                                       |
 | [List document set version](../api/listitem-list-documentsetversions.md)  | [documentSetVersion][] collection  | Get a list of the versions of a document set item in a list.              |

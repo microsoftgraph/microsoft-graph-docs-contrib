@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 List the supported regions that are available for creating Cloud PC connections.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 
@@ -129,7 +129,8 @@ Content-Type: application/json
       "regionRestrictionDetail": {
         "cPURestricted": true,
         "gPURestricted": true,
-        "nestedVirtualizationRestricted": true
+        "nestedVirtualizationRestricted": true,
+        "availabilityZoneRestricted": true
       }
     }
   ]

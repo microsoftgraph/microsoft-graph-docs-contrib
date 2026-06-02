@@ -57,6 +57,7 @@ PATCH /policies/crossTenantAccessPolicy/partners/{id}
 | b2bCollaborationOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your partner-specific configuration for users in your organization going outbound to access resources in another organization via Microsoft Entra B2B collaboration. |
 | b2bDirectConnectInbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your partner-specific configuration for users from other organizations accessing your resources via Microsoft Entra B2B direct connect. |
 | b2bDirectConnectOutbound | [crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md) | Defines your partner-specific configuration for users in your organization going outbound to access resources in another organization via Microsoft Entra B2B direct connect. |
+| blockServiceProviderOutboundAccess | Boolean | Specifies whether users can use granular delegated admin privileges (GDAP) to sign-in and access resources in other organizations. Default value is `false`. Optional. |
 | inboundTrust | [crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md) | Determines the partner-specific configuration for trusting other Conditional Access claims from external Microsoft Entra organizations. |
 | m365CollaborationInbound | [crossTenantAccessPolicyM365CollaborationInboundSetting](../resources/crosstenantaccesspolicym365collaborationinboundsetting.md) | Defines your partner-specific configuration for inbound Microsoft 365 collaboration settings. |
 | m365CollaborationOutbound | [crossTenantAccessPolicyM365CollaborationOutboundSetting](../resources/crosstenantaccesspolicym365collaborationoutboundsetting.md) | Defines your partner-specific configuration for outbound Microsoft 365 collaboration settings. |
@@ -305,6 +306,7 @@ The following example shows how to configure the partner-specific cross-tenant a
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_crosstenantaccesspolicyconfigurationpartner_m365collab"
@@ -329,6 +331,36 @@ Content-Type: application/json
   }
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-crosstenantaccesspolicyconfigurationpartner-m365collab-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/update-crosstenantaccesspolicyconfigurationpartner-m365collab-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-crosstenantaccesspolicyconfigurationpartner-m365collab-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-crosstenantaccesspolicyconfigurationpartner-m365collab-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/update-crosstenantaccesspolicyconfigurationpartner-m365collab-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-crosstenantaccesspolicyconfigurationpartner-m365collab-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-crosstenantaccesspolicyconfigurationpartner-m365collab-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

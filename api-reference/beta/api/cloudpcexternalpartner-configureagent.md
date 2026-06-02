@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Configure the [cloudPcExternalPartnerAgentSetting](../resources/cloudpcexternalpartneragentsetting.md) of the [cloudPcExternalPartner](../resources/cloudpcexternalpartner.md) object. This setting is used for RMM partner agent installation. RMM partners must contact the Microsoft team to complete onboarding and add the agent URL prefix to the allow list before using this API. If `autoDeploymentEnabled` is enabled, the new provisioned Cloud PC is triggered agent deployment automatically. Currently supports only Windows 365 Business Cloud PC.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 
@@ -90,8 +90,28 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcexternalpartnerthisconfigureagent-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/cloudpcexternalpartnerthisconfigureagent-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/cloudpcexternalpartnerthisconfigureagent-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/cloudpcexternalpartnerthisconfigureagent-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/cloudpcexternalpartnerthisconfigureagent-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/cloudpcexternalpartnerthisconfigureagent-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

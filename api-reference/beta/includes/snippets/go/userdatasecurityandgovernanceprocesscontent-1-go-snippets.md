@@ -46,10 +46,8 @@ createdDateTime , err := time.Parse(time.RFC3339, "2025-05-27T17:23:20")
 processContentMetadataBase.SetCreatedDateTime(&createdDateTime) 
 modifiedDateTime , err := time.Parse(time.RFC3339, "2025-05-27T17:23:20")
 processContentMetadataBase.SetModifiedDateTime(&modifiedDateTime) 
-additionalData := map[string]interface{}{
-	"contentCategory" : "ai", 
-}
-processContentMetadataBase.SetAdditionalData(additionalData)
+contentCategory := graphmodels.AI_CONTENTCATEGORY 
+processContentMetadataBase.SetContentCategory(&contentCategory) 
 
 contentEntries := []graphmodels.ProcessContentMetadataBaseable {
 	processContentMetadataBase,

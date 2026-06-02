@@ -119,6 +119,7 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.riskyAgentUser",
     "id": "229da549-7a91-4365-900f-d4ef49a759a0",
     "agentDisplayName": "RiskyUserFirstPartyApp2",
+    "blueprintId": "b3390471-68c5-466a-9ac2-b93e2a454532",
     "identityType": "agentUser",
     "isDeleted": false,
     "isEnabled": true,

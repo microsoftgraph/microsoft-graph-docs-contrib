@@ -47,7 +47,7 @@ You can specify the following properties when you create a **userSource**.
 |Property|Type|Description|
 |:---|:---|:---|
 |email|String|SMTP address of the user.|
-|includedSources|microsoft.graph.security.sourceType|Specifies which sources are included in this group. The possible values are: `mailbox`, `site`.|
+|includedSources|microsoft.graph.security.sourceType|Specifies which sources are included in this group. The possible values are: `mailbox`. Only `mailbox` is applicable for user sources.|
 
 
 ## Response
@@ -70,7 +70,7 @@ Content-Type: application/json
 
 {
     "email": "admin@contoso.com",
-    "includedSources": "mailbox, site"
+    "includedSources": "mailbox"
 }
 ```
 
@@ -96,7 +96,7 @@ Content-Type: application/json
     "holdStatus": "applied",
     "id": "c25c3914-f9f7-43ee-9cba-a25377e0cec6",
     "email": "admin@contoso.com",
-    "includedSources": "mailbox,site",
+    "includedSources": "mailbox",
     "siteWebUrl": "",
     "createdBy": {
         "user": {

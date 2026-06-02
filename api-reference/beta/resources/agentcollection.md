@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [agentregistry-deprecation-note](../includes/agentregistry-deprecation-note.md)]
+
 Represents a collection of [agent instances](../resources/agentinstance.md) in the [agentRegistry](../resources/agentregistry.md). Agent collections provide a way to organize and group related agent instances for management and organizational purposes.
 
 Agent collections allow grouping of agent instances for organizational and access control purposes. Special collections are `Global` and `Quarantined`.

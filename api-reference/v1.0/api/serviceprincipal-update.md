@@ -12,7 +12,7 @@ ms.date: 10/01/2024
 
 Namespace: microsoft.graph
 
-Update the properties of [servicePrincipal](../resources/serviceprincipal.md) object. This API can also update an [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object when the **@odata.type** property is set to `#microsoft.graph.agentIdentityBlueprintPrincipal`.
+Update the properties of [servicePrincipal](../resources/serviceprincipal.md) object. This API can also update an [agentIdentityBlueprintPrincipal](../resources/agentidentityblueprintprincipal.md) object when the **@odata.type** property is set to `#microsoft.graph.agentIdentityBlueprintPrincipal`, or an [agentIdentity](../resources/agentidentity.md) object when the **@odata.type** property is set to `#microsoft.graph.agentIdentity`.
 
 > [!IMPORTANT]
 > - Using PATCH to set [**passwordCredential**](../resources/passwordcredential.md) is not supported. Use the [addPassword](./serviceprincipal-addpassword.md) and [removePassword](./serviceprincipal-removepassword.md) methods to update the password or secret for a servicePrincipal.
@@ -129,7 +129,9 @@ Content-type: application/json
 
 #### Response
 
-The following example shows the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response"
 } -->

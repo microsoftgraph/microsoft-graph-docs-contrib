@@ -40,7 +40,7 @@ GET /users/{id | userPrincipalName}/insights/shared
 Expand the resource referenced by a **shared** insight:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/v1.0/me/insights/shared/{id}/resource
+GET /me/insights/shared/{id}/resource
 ```
 
 ## Optional query parameters

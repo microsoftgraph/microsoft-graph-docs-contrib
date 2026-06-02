@@ -16,6 +16,8 @@ ms.date: 03/25/2026
 
 The [Microsoft MCP Server for Enterprise](/graph/mcp-server/overview) enables AI agents to query enterprise data in your Microsoft Entra tenant by using natural language. Learn how to connect a Microsoft Copilot Studio agent to the Microsoft MCP Server for Enterprise using a custom connector.
 
+> [!VIDEO 074a71f0-54a2-4c61-8ec4-5343167f56ea]
+
 ## Prerequisites
 
 - A Microsoft Entra tenant.

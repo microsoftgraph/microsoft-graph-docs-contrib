@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Represents the reason behind a specific state of a risky user, sign-in, or service principal. This enumeration is used by multiple resources.
 
-The following table lists the members of an `[evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations)`. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `m365DAdminDismissedDetection`, `adminConfirmedServicePrincipalCompromised`, `adminDismissedAllRiskForServicePrincipal`, `userChangedPasswordOnPremises`, `adminDismissedRiskForSignIn`, `adminConfirmedAccountSafe`.
+The following table lists the members of an `[evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations)`. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `m365DAdminDismissedDetection`, `adminConfirmedServicePrincipalCompromised`, `adminDismissedAllRiskForServicePrincipal`, `userChangedPasswordOnPremises`, `adminDismissedRiskForSignIn`, `adminConfirmedAccountSafe`, `microsoftRevokedSessions`.
 
 ## Members
 
@@ -38,6 +38,7 @@ The following table lists the members of an `[evolvable enumeration](/graph/best
 | userChangedPasswordOnPremises | The user changed their password on-premises.<br/><br/>Applies to:<ul><li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li></ul> |
 | adminDismissedRiskForSignIn | An admin dismissed the risk for the sign-in.<br/><br/>Applies to:<ul><li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li></ul> |
 | adminConfirmedAccountSafe | An admin confirmed the account as safe.<br/><br/>Applies to:<ul><li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li></ul> |
+| microsoftRevokedSessions | Microsoft revoked the user's sessions.<br/><br/>Applies to:<ul><li>[riskDetection](../resources/riskdetection.md)</li><li>[riskUserActivity](../resources/riskuseractivity.md)</li><li>[riskyUser](../resources/riskyuser.md)</li><li>[signIn](../resources/signin.md)</li></ul> |
 
 ## JSON representation
 

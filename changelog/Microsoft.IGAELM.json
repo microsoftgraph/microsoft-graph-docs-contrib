@@ -1,6 +1,120 @@
 {
   "changelog": [
     {
+      "Id": "a7e3b21c-5f0d-4a82-b6c9-1e8d4f7a3b5c",
+      "Cloud": "Prod",
+      "CreatedDateTime": "2026-05-12T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "ChangeList": [
+        {
+          "Id": "a7e3b21c-5f0d-4a82-b6c9-1e8d4f7a3b5c",
+          "ApiChange": "Relationship",
+          "Description": "Added the **subjects** navigation property to the **entitlementManagement** resource type.",
+          "Target": "entitlementManagement",
+          "ChangeType": "Addition",
+          "ChangedApiName": "subjects"
+        }
+      ],
+      "Version": "v1.0",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fecf9991-74c3-47ac-9cb0-8e587d5b440f",
+          "ApiChange": "Property",
+          "ChangedApiName": "subjectLifecycle",
+          "ChangeType": "Addition",
+          "Description": "Added the `subjectLifecycle` property to the **accessPackageSubject** resource type.",
+          "Target": "accessPackageSubject"
+        },
+        {
+          "Id": "fecf9991-74c3-47ac-9cb0-8e587d5b440f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "accessPackageSubjectLifecycle",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageSubjectLifecycle** enumeration with members `notDefined`, `notGoverned`, `governed`, and `unknownFutureValue`.",
+          "Target": "accessPackageSubjectLifecycle"
+        }
+      ],
+      "Id": "fecf9991-74c3-47ac-9cb0-8e587d5b440f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-05-27T04:20:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "680f5e12-ea90-4e5d-b489-7f2440d6ee8a",
+          "ApiChange": "Member",
+          "ChangedApiName": "approverRemove",
+          "ChangeType": "Addition",
+          "Description": "Added the `approverRemove` member to the **accessPackageRequestType** enumeration.",
+          "Target": "accessPackageRequestType"
+        }
+      ],
+      "Id": "680f5e12-ea90-4e5d-b489-7f2440d6ee8a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-04-08T18:19:41.5003577Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "167f9cc0-048f-4a0b-be5a-5a17fe7d89ba",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityGovernanceUserSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityGovernanceUserSettings](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernanceusersettings?view=graph-rest-beta) resource.",
+          "Target": "identityGovernanceUserSettings"
+        },
+        {
+          "Id": "167f9cc0-048f-4a0b-be5a-5a17fe7d89ba",
+          "ApiChange": "Resource",
+          "ChangedApiName": "approverDelegate",
+          "ChangeType": "Addition",
+          "Description": "Added the [approverDelegate](https://learn.microsoft.com/en-us/graph/api/resources/approverdelegate?view=graph-rest-beta) resource.",
+          "Target": "approverDelegate"
+        }
+      ],
+      "Id": "167f9cc0-048f-4a0b-be5a-5a17fe7d89ba",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-05-13T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1f219972-a2f2-4a20-a77a-95f7c3456a11",
+          "ApiChange": "Property",
+          "ChangedApiName": "identityGovernance",
+          "ChangeType": "Addition",
+          "Description": "Added the **identityGovernance** property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "33537a5f-f7d5-4f51-b0ef-0c0fe4b92709",
+          "ApiChange": "Member",
+          "ChangedApiName": "allDirectoryAgentIdentities",
+          "ChangeType": "Addition",
+          "Description": "Add the `allDirectoryAgentIdentities` member to the **allowedTargetScope** enumeration.",
+          "Target": "allowedTargetScope"
+        }
+      ],
+      "Id": "1f219972-a2f2-4a20-a77a-95f7c3456a11",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-05-13T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
       "ChangeList": [
         {
           "Id": "33537a5f-f7d5-4f51-b0ef-0c0fe4b92709",
@@ -986,7 +1100,7 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     },
-     {
+    {
       "ChangeList": [
         {
           "Id": "78c826f9-c657-4977-b855-0b5f2ea3e7b3",
@@ -1371,6 +1485,32 @@
     {
       "ChangeList": [
         {
+          "Id": "db219d29-ed6a-41ad-9bd5-fc34428c931d",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "roleType",
+          "ChangeType": "Addition",
+          "Description": "Added the **roleType** enumeration type.",
+          "Target": "roleType"
+        },
+        {
+          "Id": "db219d29-ed6a-41ad-9bd5-fc34428c931d",
+          "ApiChange": "Property",
+          "ChangedApiName": "type",
+          "ChangeType": "Addition",
+          "Description": "Added the **type** property to the [accessPackageResourceRole](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageResourceRole?view=graph-rest-beta) resource.",
+          "Target": "accessPackageResourceRole"
+        }
+      ],
+      "Id": "db219d29-ed6a-41ad-9bd5-fc34428c931d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-05-01T15:07:31.3830842Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "6061da50-e6a4-4914-8aaf-903c261922e0",
           "ApiChange": "Enumeration",
           "ChangedApiName": "connectorType",
@@ -1652,7 +1792,7 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     },
-     {
+    {
       "ChangeList": [
         {
           "Id": "8c6bfd24-a94d-4fb2-b1df-9f1539efadc7",

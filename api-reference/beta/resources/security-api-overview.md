@@ -105,6 +105,9 @@ The beta version of the security API offers two types of alerts that aggregate o
 - [Alerts and incidents](#alerts-and-incidents) - the latest generation of alerts in the Microsoft Graph security API. They're represented by the [alert](security-alert.md) resource and its collection, [incident](security-incident.md) resource, defined in the `microsoft.graph.security` namespace.
 - [Legacy alerts](#legacy-alerts) - the first generation of alerts in the Microsoft Graph security API. They're represented by the [alert](alert.md) resource defined in the `microsoft.graph` namespace.
 
+> [!IMPORTANT]
+> To view Sentinel alerts and incidents you must onboard Sentinel to the Defender Portal. For more information see [Connect Microsoft Sentinel to the Microsoft Defender portal](/unified-secops/microsoft-sentinel-onboard).
+
 ### Alerts and incidents
 
 These [alert](security-alert.md) resources first pull alert data from security provider services, that are either part of or integrated with [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender?view=o365-worldwide&preserve-view=true). Then they consume the data to return rich, valuable clues about a completed or ongoing attack, the impacted assets, and associated [evidence](security-alertevidence.md). In addition, they automatically correlate other alerts with the same attack techniques or the same attacker into an [incident](security-incident.md) to provide a broader context of an attack. They recommend response and remediation actions, offering consistent actionability across all the different providers. The rich content makes it easier for analysts to investigate and respond to threats collectively.
@@ -121,8 +124,7 @@ Alerts from the following security providers are available via these rich alerts
 
 ### Legacy alerts
 
-> [!NOTE]
-> The legacy alerts API is deprecated and will be removed by April 2026. We recommend that you migrate to the new [alerts and incidents](/graph/api/resources/security-alert) API.
+[!INCLUDE [security-alerts-v1-deprecation](../includes/security-alerts-v1-deprecation.md)]
 
 The legacy [alert](alert.md) resources federate calling of supported Azure and Microsoft 365 Defender security providers. They aggregate common alert data among the different domains to allow applications to unify and streamline the management of security issues across all integrated solutions. They enable applications to correlate alerts and context to improve threat protection and response.
 

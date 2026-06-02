@@ -43,7 +43,7 @@ In the request body, supply a JSON representation of an [educationClass](../reso
 If successful, this method returns a `204 No Content` response code and an [educationClass](../resources/educationclass.md) object in the response body.
 
 ## Example
-##### Request
+### Request
 The following example shows a request.
 
 # [HTTP](#tab/http)

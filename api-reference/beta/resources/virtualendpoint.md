@@ -46,6 +46,8 @@ Inherits from [entity](../resources/entity.md).
 |[Retrieve tenant encryption setting](../api/virtualendpoint-retrievetenantencryptionsetting.md)|[cloudPcTenantEncryptionSetting](../resources/cloudpctenantencryptionsetting.md)|Retrieve the [cloudPcTenantEncryptionSetting](../resources/cloudpctenantencryptionsetting.md) associated with the current authenticated user.|
 |[List cloud apps](../api/virtualendpoint-list-cloudapps.md)|[cloudPcCloudApp](../resources/cloudpccloudapp.md) collection|List all the [cloudPcCloudApp](../resources/cloudpccloudapp.md) objects filtered by a provision policy ID.|
 |[List managed licenses](../api/virtualendpoint-list-managedlicenses.md)|[cloudPcManagedLicense](../resources/cloudpcmanagedlicense.md) collection|Get information about [cloudPcManagedLicense](../resources/cloudpcmanagedlicense.md) objects that the Cloud PC service manages directly.|
+|[List Cloud PC pools](../api/virtualendpoint-list-cloudpcpools.md)|[cloudPcPool](../resources/cloudpcpool.md) collection|List the properties and relationships of the [cloudPcPool](../resources/cloudpcpool.md) objects.|
+|[Create Cloud PC pool](../api/virtualendpoint-post-cloudpcpools.md)|[cloudPcPool](../resources/cloudpcpool.md)|Create a new [cloudPcPool](../resources/cloudpcpool.md) object.|
 |[List external partner settings (deprecated)](../api/virtualendpoint-list-externalpartnersettings.md)|[cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) collection|Get a list of the [cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) objects and their properties.|
 |[Create external partner setting (deprecated)](../api/virtualendpoint-post-externalpartnersettings.md)|[cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md)|Create a new [cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) object.|
 
@@ -62,6 +64,7 @@ Inherits from [entity](../resources/entity.md).
 |auditEvents|[cloudPcAuditEvent](../resources/cloudpcauditevent.md) collection|Cloud PC audit event.|
 |bulkActions|[cloudPcBulkAction](../resources/cloudpcbulkaction.md) collection|Bulk actions applied to a Cloud PC.|
 |cloudApps|[cloudPcCloudApp](../resources/cloudpccloudapp.md) collection|A collection of cloud apps that are built on frontline shared options and provide Windows 365 end users with access to app-only sessions instead of a full desktop experience.|
+|cloudPcPools|[cloudPcPool](../resources/cloudpcpool.md) collection|The Cloud PC pools managed by the virtual endpoint.|
 |cloudPCs|[cloudPC](../resources/cloudpc.md) collection|Cloud managed virtual desktops.|
 |crossCloudGovernmentOrganizationMapping|[cloudPcCrossCloudGovernmentOrganizationMapping](../resources/cloudpccrosscloudgovernmentorganizationmapping.md)|Cloud PC organization mapping between public and US Government Community Cloud (GCC) organizations.|
 |deviceImages|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) collection|The image resource on Cloud PC.|
@@ -72,6 +75,7 @@ Inherits from [entity](../resources/entity.md).
 |onPremisesConnections|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) collection|A defined collection of Azure resource information that can be used to establish on-premises network connectivity for Cloud PCs.|
 |organizationSettings|[cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) |The Cloud PC organization settings for a tenant. |
 |provisioningPolicies|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) collection|Cloud PC provisioning policy.|
+|reports|[cloudPcReports](../resources/cloudpcreports.md)|Cloud PC-related reports. Read-only.|
 |report|[cloudPcReport](../resources/cloudpcreport.md)|Cloud PC-related reports. Read-only.|
 |servicePlans|[cloudPcServicePlan](../resources/cloudpcserviceplan.md) collection|Cloud PC service plans.|
 |snapshots|[cloudPcSnapshot](../resources/cloudpcsnapshot.md) collection|Cloud PC snapshots.|
@@ -79,8 +83,6 @@ Inherits from [entity](../resources/entity.md).
 |userSettings|[cloudPcUserSetting](../resources/cloudpcusersetting.md) collection|Cloud PC user settings. |
 |tenantEncryptionSetting|[cloudPcTenantEncryptionSetting](../resources/cloudPcTenantEncryptionSetting.md) collection|Cloud PC encryption setting for a tenant. |
 |externalPartnerSettings (deprecated)|[cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) collection|The external partner settings on a Cloud PC.|
-|reports (deprecated)|[cloudPcReports](../resources/cloudpcreports.md)|Cloud PC-related reports.|
-
 ## JSON representation
 
 The following JSON representation shows the resource type.

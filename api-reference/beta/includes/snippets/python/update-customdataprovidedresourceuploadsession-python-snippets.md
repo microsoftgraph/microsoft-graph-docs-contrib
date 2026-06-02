@@ -12,7 +12,7 @@ request_body = CustomDataProvidedResourceUploadSession(
 	is_upload_done = True,
 )
 
-result = await graph_client.identity_governance.entitlement_management.access_package_catalogs.by_access_package_catalog_id('accessPackageCatalog-id').access_package_resources.by_access_package_resource_id('accessPackageResource-id').upload_sessions.by_custom_data_provided_resource_upload_session_id('customDataProvidedResourceUploadSession-id').patch(request_body)
+result = await graph_client.identity_governance.catalogs.by_access_package_catalog_id('accessPackageCatalog-id').access_package_resources.by_access_package_resource_id('accessPackageResource-id').upload_sessions.by_custom_data_provided_resource_upload_session_id('customDataProvidedResourceUploadSession-id').patch(request_body)
 
 
 ```

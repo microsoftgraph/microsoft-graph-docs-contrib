@@ -65,7 +65,7 @@ In the request body, supply a JSON representation of the following parameters.
 If successful, this action returns a `200 OK` response code and a [restorePointSearchResponse](../resources/restorepointsearchresponse.md) object in the response body.
 
 > [!NOTE]
-> - Calls return a maximum of five restore points.
+> - Calls return one restore point per protection unit.
 > - You can include a maximum of 20 protection units in a single request, and the response isn't paginated.
 > - When you provide an expression for the **artifactQuery** property, you must provide only one protection unit ID in the **protectionUnitIds** property.
 

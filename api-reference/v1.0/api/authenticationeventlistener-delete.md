@@ -23,6 +23,7 @@ Delete an [authenticationEventListener](../resources/authenticationeventlistener
 - [onEmailOtpSendListener](../resources/onemailotpsendlistener.md) resource type
 - [onFraudProtectionLoadStartListener](../resources/onfraudprotectionloadstartlistener.md) resource type
 - [onPasswordSubmitListener](../resources/onpasswordsubmitlistener.md) resource type
+- [onVerifiedIdClaimValidationListener](../resources/onverifiedidclaimvalidationlistener.md) resource type
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

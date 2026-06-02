@@ -1,11 +1,11 @@
 ---
 title: "Get targetDeviceGroup"
 description: "Read the properties and relationships of a targetDeviceGroup object for the remoteDesktopSecurityConfiguration object on the servicePrincipal."
-author: "SanDeo-MSFT"
+author: "mjsantani"
 ms.localizationpriority: medium
 ms.subservice: "entra-applications"
 doc_type: apiPageType
-ms.date: 04/18/2024
+ms.date: 01/02/2026
 ---
 
 # Get targetDeviceGroup
@@ -106,10 +106,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.targetDeviceGroup",
-    "id": "b9e4eae4-b781-45a1-ce65-f2dd8ac3b696",
-    "displayName": "Device Group A"
-  }
+  "@odata.type": "#microsoft.graph.targetDeviceGroup",
+  "id": "b9e4eae4-b781-45a1-ce65-f2dd8ac3b696",
+  "displayName": "Device Group A"
 }
 ```

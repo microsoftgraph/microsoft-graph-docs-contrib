@@ -118,7 +118,8 @@ Content-Type: application/json
       "computerDnsName": "win-11.def.defensor.local",
       "senseClientVersion": "10.8780.27711.1000",
       "lastSeenDateTime": "2024-10-29T19:55:10.9452778Z",
-      "domainName": "def.defensor.local"
+      "domainName": "def.defensor.local",
+      "sensorTypes": ["domainController", "adfs"]
     }
   ]
 }

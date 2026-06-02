@@ -4,7 +4,7 @@ ms.topic: include
 ---
 
 > [!IMPORTANT]
-> In addition to the delegated permissions, the signed-in user needs to belong to a [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) that allows them to view alerts. The following least privileged roles are supported for this operation.
+> For delegated access using work or school accounts, the admin must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json). This operation supports the following built-in roles, which provide only the least privilege necessary:
 > - Global Reader
 > - Security Administrator
 > - Security Operator

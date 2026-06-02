@@ -70,8 +70,30 @@ items:
     items:
     - name: AI agent evidence
       href: ../../resources/security-aiagentevidence.md
+    - name: DNS evidence
+      href: ../../resources/security-dnsevidence.md
+    - name: File hash evidence
+      href: ../../resources/security-filehashevidence.md
+    - name: GitHub organization evidence
+      href: ../../resources/security-githuborganizationevidence.md
+    - name: GitHub repo evidence
+      href: ../../resources/security-githubrepoevidence.md
+    - name: GitHub user evidence
+      href: ../../resources/security-githubuserevidence.md
+    - name: Host logon session evidence
+      href: ../../resources/security-hostlogonsessionevidence.md
+    - name: Malware evidence
+      href: ../../resources/security-malwareevidence.md
+    - name: Network connection evidence
+      href: ../../resources/security-networkconnectionevidence.md
+    - name: SAS token evidence
+      href: ../../resources/security-sastokenevidence.md
     - name: Security group evidence
       href: ../../resources/security-securitygroupevidence.md
+    - name: Service principal evidence
+      href: ../../resources/security-serviceprincipalevidence.md
+    - name: Submission mail evidence
+      href: ../../resources/security-submissionmailevidence.md
     - name: Teams message evidence
       href: ../../resources/security-teamsmessageevidence.md
     - name: User account
@@ -332,6 +354,8 @@ items:
       href: ../../resources/classificationinnererror.md
     - name: Compute rights and inheritance result
       href: ../../resources/computerightsandinheritanceresult.md
+    - name: Content activity metadata
+      href: ../../resources/contentactivitymetadata.md
     - name: Content base
       href: ../../resources/contentbase.md
     - name: Custom metadata dictionary
@@ -1340,6 +1364,42 @@ items:
       href: ../../resources/security-whoiscontact.md
     - name: WHOIS nameserver
       href: ../../resources/security-whoisnameserver.md
+- name: Threat intelligence indicator (deprecated)
+  items:
+  - name: Threat intelligence indicator (deprecated)
+    href: ../../resources/tiindicator.md
+  - name: Get
+    href: ../../api/tiindicator-get.md
+  - name: Create
+    href: ../../api/tiindicators-post.md
+  - name: List
+    href: ../../api/tiindicators-list.md
+  - name: Update
+    href: ../../api/tiindicator-update.md
+  - name: Delete
+    href: ../../api/tiindicator-delete.md
+  - name: Delete multiple
+    href: ../../api/tiindicator-deletetiindicators.md
+  - name: Delete multiple by external ID
+    href: ../../api/tiindicator-deletetiindicatorsbyexternalid.md
+  - name: Submit multiple
+    href: ../../api/tiindicator-submittiindicators.md
+  - name: Update multiple
+    href: ../../api/tiindicator-updatetiindicators.md
+  - name: Methods supported by each target product
+    items:
+    - name: Create tiIndicator
+      href: ../../api/tiindicators-post.md
+    - name: Submit tiIndicators
+      href: ../../api/tiindicator-submittiindicators.md
+    - name: Update tiIndicator
+      href: ../../api/tiindicator-update.md
+    - name: Update tiIndicators
+      href: ../../api/tiindicator-updatetiindicators.md
+    - name: Delete tiIndicator
+      href: ../../api/tiindicator-delete.md
+    - name: Delete tiIndicators
+      href: ../../api/tiindicator-deletetiindicators.md
 - name: Threat submission (preview)
   items:
   - name: Threat submission
@@ -1390,39 +1450,3 @@ items:
       href: ../../api/security-urlthreatsubmission-post-urlthreats.md
     - name: Get
       href: ../../api/security-urlthreatsubmission-get.md
-- name: tiIndicator resource type (deprecated)
-  items:
-  - name: tiIndicator resource type (deprecated)
-    href: ../../resources/tiindicator.md
-  - name: Get
-    href: ../../api/tiindicator-get.md
-  - name: Create
-    href: ../../api/tiindicators-post.md
-  - name: List
-    href: ../../api/tiindicators-list.md
-  - name: Update
-    href: ../../api/tiindicator-update.md
-  - name: Delete
-    href: ../../api/tiindicator-delete.md
-  - name: Delete multiple
-    href: ../../api/tiindicator-deletetiindicators.md
-  - name: Delete multiple by external ID
-    href: ../../api/tiindicator-deletetiindicatorsbyexternalid.md
-  - name: Submit multiple
-    href: ../../api/tiindicator-submittiindicators.md
-  - name: Update multiple
-    href: ../../api/tiindicator-updatetiindicators.md
-  - name: Methods supported by each target product
-    items:
-    - name: Create tiIndicator
-      href: ../../api/tiindicators-post.md
-    - name: Submit tiIndicators
-      href: ../../api/tiindicator-submittiindicators.md
-    - name: Update tiIndicator
-      href: ../../api/tiindicator-update.md
-    - name: Update tiIndicators
-      href: ../../api/tiindicator-updatetiindicators.md
-    - name: Delete tiIndicator
-      href: ../../api/tiindicator-delete.md
-    - name: Delete tiIndicators
-      href: ../../api/tiindicator-deletetiindicators.md

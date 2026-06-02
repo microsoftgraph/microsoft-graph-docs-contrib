@@ -16,7 +16,9 @@ Namespace: microsoft.graph
 
 Send a new [chatMessage](../resources/chatmessage.md) in the specified [channel](../resources/channel.md).
 
-> **Note**: It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.
+> **Notes**: 
+> - We don't recommend that you use this API for data migration via the standard create message flow. For data migration scenarios, use the [import messages](/graph/teams-import-messages) flow instead.
+> - It's a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -172,13 +174,17 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Import messages
+### Example 2: Import a message
+The following example shows how to import a message. For more information, see [Import messages into Microsoft Teams chats and channels using Microsoft Graph](/graph/teams-import-messages).
 
-> **Note**: The permission scope `Teamwork.Migrate.All` is required for this scenario.
+> **Note**: The permission scope `Teamwork.Migrate.All` is required for this scenario. The target channel must be in migration mode. The **from** property attributes the message to a user in the same tenant as the authenticated application. The **createdDateTime** value must be later than the channel **createdDateTime** and must not be in the future.
+
+> [!IMPORTANT]
+> The **createdDateTime** must be unique down to the millisecond within the target channel. If a message with the same **createdDateTime** exists, the request fails with `409 Conflict`. Adjust the **createdDateTime** and retry. For more information, see [Import messages into Microsoft Teams chats and channels using Microsoft Graph](/graph/teams-import-messages).
 
 #### Request
 
-The following example shows how to import back-in-time messages using the `createDateTime` and `from` keys in the request body.
+The following example shows how to import back-in-time messages using the **createdDateTime** and **from** properties in the request body.
 
 
 # [HTTP](#tab/http)
@@ -283,7 +289,7 @@ HTTP/1.1 200 OK
 }
 ```
 
-### Example 3: Import messages with inline images
+### Example 3: Import a message with inline images
 
 > [!NOTE]
 > Currently, inline images are the only media type supported by the import message API schema.

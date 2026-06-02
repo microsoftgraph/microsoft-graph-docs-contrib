@@ -18,17 +18,17 @@ Represents more detail about an undergraduate, graduate, postgraduate degree, or
 
 ## Properties
 
-| Property     | Type        | Description                                                   |
-|:-------------|:------------|:--------------------------------------------------------------|
-|abbreviation  |String       |Shortened name of the degree or program (example: PhD, MBA)    |
-|activities    |String       |Extracurricular activities undertaken alongside the program.   |
-|awards        |String       |Any awards or honors associated with the program.              |
-|description   |String       |Short description of the program provided by the user.         |
-|displayName   |String       |Long-form name of the program that the user provided.          |
-|fieldsOfStudy |String       |Majors and minors associated with the program. (if applicable) |
-|grade         |String       |The final grade, class, GPA, or score.                          |
-|notes         |String       |More notes the user provided.                        |
-|webUrl        |String       |Link to the degree or program page.                            |
+| Property     | Type             | Description                                                   |
+|:-------------|:-----------------|:--------------------------------------------------------------|
+|abbreviation  |String            |Shortened name of the degree or program, for example, `PhD` and `MBA`.    |
+|activities    |String collection |Extracurricular activities undertaken alongside the program.   |
+|awards        |String collection |Any awards or honors associated with the program.              |
+|description   |String            |Short description of the program provided by the user.         |
+|displayName   |String            |Long-form name of the program that the user provided.          |
+|fieldsOfStudy |String collection |Majors and minors associated with the program, if applicable. |
+|grade         |String            |The final grade, class, grade point average (GPA), or score.                         |
+|notes         |String            |More notes provided by the user.                                  |
+|webUrl        |String            |Link to the degree or program page.                            |
 
 ## JSON representation
 
@@ -46,11 +46,11 @@ The following JSON representation shows the resource type.
 ```json
 {
   "abbreviation": "String",
-  "activities": "String",
-  "awards": "String",
+  "activities": ["String"],
+  "awards": ["String"],
   "description": "String",
   "displayName": "String",
-  "fieldsOfStudy": "String",
+  "fieldsOfStudy": ["String"],
   "grade": "String",
   "notes": "String",
   "webUrl": "String"

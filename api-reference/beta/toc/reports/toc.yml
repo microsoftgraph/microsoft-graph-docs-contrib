@@ -348,6 +348,14 @@ items:
             href: ../../api/healthmonitoring-alertconfiguration-get.md
           - name: Update
             href: ../../api/healthmonitoring-alertconfiguration-update.md
+    - name: Premium license utilization (preview)
+      items:
+      - name: Entra ID P1/P2 license utilization
+        items:
+        - name: Entra ID P1/P2 license utilization
+          href: ../../resources/azureadpremiumlicenseinsight.md
+        - name: Get
+          href: ../../api/azureadpremiumlicenseinsight-get.md
     - name: Service principal sign-in activity (preview)
       items:
       - name: Service principal sign-in activity (preview)
@@ -356,7 +364,7 @@ items:
         href: ../../api/reportroot-list-serviceprincipalsigninactivities.md
       - name: Get
         href: ../../api/serviceprincipalsigninactivity-get.md
-  - name: Microsoft Entra logs
+  - name: Microsoft Entra logs and reports
     items:
     - name: Overview
       href: ../../resources/azure-ad-auditlog-overview.md
@@ -396,18 +404,6 @@ items:
         href: ../../api/auditlogroot-list-signups.md
       - name: Get
         href: ../../api/selfservicesignup-get.md
-    - name: Sign in events activity
-      items:
-      - name: Sign in events activity
-        href: ../../resources/signineventsactivity.md
-      - name: List
-        href: ../../api/auditlogroot-list-signineventssummary.md
-    - name: Sign in events app activity
-      items:
-      - name: Sign in events app activity
-        href: ../../resources/signineventsappactivity.md
-      - name: List
-        href: ../../api/auditlogroot-list-signineventsappsummary.md
     - name: Sign-in
       items:
       - name: Sign-in
@@ -422,9 +418,21 @@ items:
         href: ../../api/signin-confirmsafe.md
       - name: Dismiss
         href: ../../api/signin-dismiss.md
-    - name: Summarized sign in
+    - name: Sign-in events activity
       items:
-      - name: Summarized sign in
+      - name: Sign-in events activity
+        href: ../../resources/signineventsactivity.md
+      - name: List
+        href: ../../api/auditlogroot-list-signineventssummary.md
+    - name: Sign-in events app activity
+      items:
+      - name: Sign-in events app activity
+        href: ../../resources/signineventsappactivity.md
+      - name: List
+        href: ../../api/auditlogroot-list-signineventsappsummary.md
+    - name: Summarized sign-in
+      items:
+      - name: Summarized sign-in
         href: ../../resources/summarizedsignin.md
       - name: Get summarized MSI sign-ins
         href: ../../api/auditlogroot-getsummarizedmsisignins.md
@@ -432,7 +440,39 @@ items:
         href: ../../api/auditlogroot-getsummarizednoninteractivesignins.md
       - name: Get summarized service principal sign-ins
         href: ../../api/auditlogroot-getsummarizedserviceprincipalsignins.md
-- name: Microsoft 365 monitoring reports (preview)
+    - name: Complex types
+      items:
+      - name: Token protection status details
+        href: ../../resources/tokenprotectionstatusdetails.md
+  - name: Identity correlation reports (preview)
+    items:
+    - name: Correlated identity
+      items:
+      - name: Correlated identity
+        href: ../../resources/correlatedidentity.md
+      - name: List
+        href: ../../api/identitycorrelation-list-identities.md
+      - name: Get
+        href: ../../api/correlatedidentity-get.md
+    - name: Identity correlation
+      items:
+      - name: Identity correlation
+        href: ../../resources/identitycorrelation.md
+      - name: List
+        href: ../../api/reportroot-list-correlations.md
+      - name: Get
+        href: ../../api/identitycorrelation-get.md
+      - name: List identities
+        href: ../../api/identitycorrelation-list-identities.md
+    - name: Complex types
+      items:
+      - name: Attribute info
+        href: ../../resources/attributeinfo.md
+      - name: Correlation error
+        href: ../../resources/correlationerror.md
+      - name: Identity info
+        href: ../../resources/identityinfo.md
+- name: Monitoring reports (preview)
   items:
   - name: Overview
     href: ../../resources/m365-monitoring-api-overview.md

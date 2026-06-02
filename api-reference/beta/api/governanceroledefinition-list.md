@@ -56,11 +56,11 @@ If successful, this method returns a `200 OK` response code and collection of [g
   "name": "get_governanceroledefinitions"
 }-->
 This example shows how to get all role definitions of the subscription Wingtip Toys - Prod.
-##### Request
+### Request
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources/e5e7d29d-5465-45ac-885f-4716a5ee74b5/roleDefinitions  
 ```
-##### Response
+### Response
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -14,6 +14,6 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 $requestBody = new CustomDataProvidedResourceUploadSession();
 $requestBody->setIsUploadDone(true);
 
-$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackageCatalogs()->byAccessPackageCatalogId('accessPackageCatalog-id')->accessPackageResources()->byAccessPackageResourceId('accessPackageResource-id')->uploadSessions()->byCustomDataProvidedResourceUploadSessionId('customDataProvidedResourceUploadSession-id')->patch($requestBody)->wait();
+$result = $graphServiceClient->identityGovernance()->catalogs()->byAccessPackageCatalogId('accessPackageCatalog-id')->accessPackageResources()->byAccessPackageResourceId('accessPackageResource-id')->uploadSessions()->byCustomDataProvidedResourceUploadSessionId('customDataProvidedResourceUploadSession-id')->patch($requestBody)->wait();
 
 ```

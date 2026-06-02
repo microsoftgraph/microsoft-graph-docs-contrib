@@ -58,12 +58,12 @@ Get a role assignment request
   "blockType": "request",
   "name": "get_governanceroleassignmentrequest"
 }-->
-##### Request
+### Request
 
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests/e68ff888-4af5-4ccb-8b74-39156090344b
 ```
-##### Response
+### Response
 <!-- {
   "blockType": "response",
   "truncated": true,

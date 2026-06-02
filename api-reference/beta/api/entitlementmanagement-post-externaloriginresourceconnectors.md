@@ -16,16 +16,13 @@ Namespace: microsoft.graph
 
 Creates a new [externalOriginResourceConnector](../resources/externaloriginresourceconnector.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "entitlementmanagement-post-externaloriginresourceconnectors-permissions"
-}
--->
-
+<!-- { "blockType": "permissions", "name": "entitlementmanagement_post_externaloriginresourceconnectors" } -->
 [!INCLUDE [permissions-table](../includes/permissions/entitlementmanagement-post-externaloriginresourceconnectors-permissions.md)]
 
 ## HTTP request
@@ -69,6 +66,7 @@ If successful, this method returns a `201 Created` response code and an [externa
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_externaloriginresourceconnector_from_"
@@ -96,6 +94,35 @@ Content-Type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-externaloriginresourceconnector-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-externaloriginresourceconnector-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-externaloriginresourceconnector-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-externaloriginresourceconnector-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-externaloriginresourceconnector-from--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-externaloriginresourceconnector-from--powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-externaloriginresourceconnector-from--python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

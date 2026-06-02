@@ -15,7 +15,7 @@ items:
   - name: Get drive root
     href: ../../api/driveitem-get.md
   - name: List activities
-    href: ../../api/activities-list.md
+    href: ../../api/itemactivity-list.md
   - name: List followed items
     href: ../../api/drive-list-following.md
   - name: List children
@@ -40,6 +40,8 @@ items:
     href: ../../api/itemanalytics-get.md
   - name: Get activities by interval
     href: ../../api/itemactivity-getbyinterval.md
+  - name: Get recent activities
+    href: ../../api/itemactivity-list.md
   - name: List children
     href: ../../api/driveitem-list-children.md
   - name: List versions
@@ -184,6 +186,8 @@ items:
     href: ../../api/filestoragecontainer-update-permissions.md
   - name: Delete permissions
     href: ../../api/filestoragecontainer-delete-permissions.md
+  - name: Upsert permissions
+    href: ../../api/filestoragecontainer-patch-permissions.md
   - name: List custom property
     href: ../../api/filestoragecontainer-list-customproperty.md
   - name: Add custom property
@@ -448,3 +452,5 @@ items:
     href: ../../resources/filestoragecontainertyperegistrationsettings.md
   - name: File storage container type settings
     href: ../../resources/filestoragecontainertypesettings.md
+  - name: SharePoint group identity
+    href: ../../resources/sharepointgroupidentity.md

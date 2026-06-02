@@ -18,7 +18,7 @@ Permanently delete a calendar folder and the events that it contains and remove 
 > [!Note]
 > Folders aren't placed in the **purges** folder when they're permanently deleted. Permanently deleted folders are removed from the mailbox.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 
@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /users/{id | userPrincipalName}/calendar/{calendarId}/permanentDelete
+POST /users/{id | userPrincipalName}/calendars/{calendarId}/permanentDelete
 ```
 
 ## Request headers
@@ -64,35 +64,11 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/users/b4c80c57-5c59-4a3d-912a-a83985988b82/calendar/permanentDelete
+POST https://graph.microsoft.com/v1.0/users/b4c80c57-5c59-4a3d-912a-a83985988b82/calendars/permanentDelete
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/calendarthispermanentdelete-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/calendarthispermanentdelete-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/calendarthispermanentdelete-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/calendarthispermanentdelete-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/calendarthispermanentdelete-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/calendarthispermanentdelete-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/calendarthispermanentdelete-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

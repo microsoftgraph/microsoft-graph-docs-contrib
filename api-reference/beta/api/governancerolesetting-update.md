@@ -68,7 +68,7 @@ This API returns the standard HTTP error codes. In addition, it returns the foll
 
 ## Example 
 This example updates the role setting for Custom Role 3 in the subscription Wingtip Toys - Prod.
-##### Request
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -119,7 +119,7 @@ Content-type: application/json
 
 ---
 
-##### Response
+### Response
 <!-- {
   "blockType": "response"
 } -->

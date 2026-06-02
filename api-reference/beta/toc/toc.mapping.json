@@ -75,6 +75,7 @@
                   "name": "Remote desktop security policy",
                   "resources": [
                     "remoteDesktopSecurityConfiguration",
+                    "approvedClientApp",
                     "targetDeviceGroup"
                   ]
                 }
@@ -144,132 +145,174 @@
       "name": "Agents",
       "overview": "../../resources/agentid-platform-overview.md",
       "shouldSort": true,
-      "childNodes": [
-          {
-            "name": "Agent identities",
-            "resources": [
-              "agentIdentityBlueprint",
-              "agentIdentityBlueprintPrincipal",
-              "agentIdentity"
-            ]
-          },
-          {
-            "name": "Agent user (preview)",
-            "resources": [
-              "agentUser"
-            ]
-          },
-          {
-            "name": "Agent registry (preview)",
-            "resources": [
-              "agentRegistry",
-              "agentInstance",
-              "agentCardManifest",
-              "agentCollection"
-            ]
-          }
+      "childNodes": [ 
+        {
+          "name": "Agent identities",
+          "resources": [
+            "agentIdentityBlueprint",
+            "agentIdentityBlueprintPrincipal",
+            "agentIdentity"
+          ],
+          "childNodes": [
+            {
+              "name": "Agent identity blueprint",
+              "resources": [
+                "inheritablePermission"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Agent user",
+          "resources": [
+            "agentUser"
+          ]
+        },
+        {
+          "name": "Agent registry (preview)",
+          "resources": [
+            "agentRegistry",
+            "agentInstance",
+            "agentCardManifest",
+            "agentCollection"
+          ]
+        }
       ]
     },
     {
-      "name": "Backup storage",
-      "shouldSort": true,
-      "keywords": [
-        "M365 Backup Storage",
-        "Microsoft 365 Backup Storage",
-        "Enhanced Restore"
-      ],
-      "resources": [
-        "backupRestoreRoot",
-        "emailNotificationsSetting",
-        "protectionPolicyBase",
-        "protectionRuleBase",
-        "protectionUnitBase",
-        "restoreArtifactBase",
-        "restoreArtifactsBulkRequestBase",
-        "restorePoint",
-        "restoreSessionBase",
-        "serviceApp"
-      ],
+      "name": "Backup and recovery",
+      "overview": "../../resources/tenants-backup-recovery-overview.md",
       "childNodes": [
         {
-          "name": "Browse session",
-          "overview": "../../resources/browsesessionbase.md",
+          "name": "Entra backup and recovery",
+          "overview": "../../resources/entrarecoveryservices-backup-recovery-overview.md",
           "resources": [
-            "oneDriveForBusinessBrowseSession",
-            "sharePointBrowseSession"
+            "microsoft.graph.entraRecoveryServices.recoveryJob",
+            "microsoft.graph.entraRecoveryServices.recoveryJobBase",
+            "microsoft.graph.entraRecoveryServices.recoveryPreviewJob",
+            "microsoft.graph.entraRecoveryServices.snapshot"
           ]
         },
         {
-          "name": "Protection policy",
+          "name": "Microsoft 365 backup and storage",
+          "shouldSort": true,
+          "keywords": [
+            "M365 Backup Storage",
+            "Microsoft 365 Backup Storage",
+            "Enhanced Restore"
+          ],
           "resources": [
-            "exchangeProtectionPolicy",
-            "oneDriveForBusinessProtectionPolicy",
-            "sharePointProtectionPolicy"
-          ]
-        },
-        {
-          "name": "Protection rule",
-          "resources": [
-            "driveProtectionRule",
-            "mailboxProtectionRule",
-            "siteProtectionRule"
-          ]
-        },
-        {
-          "name": "Protection unit",
-          "resources": [
-            "driveProtectionUnit",
-            "mailboxProtectionUnit",
-            "siteProtectionUnit"
-          ]
-        },
-        {
-          "name": "Protection units bulk job",
-          "resources": [
-            "protectionUnitsBulkJobBase",
-            "driveProtectionUnitsBulkAdditionJob",
-            "mailboxProtectionUnitsBulkAdditionJob",
-            "siteProtectionUnitsBulkAdditionJob"
-          ]
-        },
-        {
-          "name": "Restore artifact",
-          "resources": [
-            "granularMailBoxRestoreArtifact",
-            "driveRestoreArtifact",
-            "granularDriveRestoreArtifact",
-            "mailboxRestoreArtifact",
-            "siteRestoreArtifact",
-            "granularSiteRestoreArtifact"
-          ]
-        },
-        {
-          "name": "Restore artifacts bulk request",
-          "resources": [
-            "driveRestoreArtifactsBulkAdditionRequest",
-            "mailboxRestoreArtifactsBulkAdditionRequest",
-            "siteRestoreArtifactsBulkAdditionRequest"
-          ]
-        },
-        {
-          "name": "Restore session",
-          "resources": [
-            "oneDriveForBusinessRestoreSession",
-            "exchangeRestoreSession",
-            "sharePointRestoreSession"
+            "backupRestoreRoot",
+            "emailNotificationsSetting",
+            "exclusionUnitBase",
+            "exclusionUnitBulkAdditionJob",
+            "protectionPolicyBase",
+            "protectionRuleBase",
+            "protectionUnitBase",
+            "restoreArtifactBase",
+            "restoreArtifactsBulkRequestBase",
+            "restorePoint",
+            "restoreSessionBase",
+            "serviceApp"
+          ],
+          "childNodes": [
+            {
+              "name": "Browse session",
+              "overview": "../../resources/browsesessionbase.md",
+              "resources": [
+                "oneDriveForBusinessBrowseSession",
+                "sharePointBrowseSession"
+              ]
+            },
+            {
+              "name": "Exclusion unit",
+              "resources": [
+                "driveExclusionUnit",
+                "mailboxExclusionUnit",
+                "siteExclusionUnit"
+              ]
+            },
+            {
+              "name": "Exclusion unit bulk addition job",
+              "resources": [
+                "driveExclusionUnitsBulkAdditionJob",
+                "mailboxExclusionUnitsBulkAdditionJob",
+                "siteExclusionUnitsBulkAdditionJob"
+              ]
+            },
+            {
+              "name": "Protection policy",
+              "resources": [
+                "exchangeProtectionPolicy",
+                "oneDriveForBusinessProtectionPolicy",
+                "sharePointProtectionPolicy"
+              ]
+            },
+            {
+              "name": "Protection rule",
+              "resources": [
+                "driveProtectionRule",
+                "mailboxProtectionRule",
+                "siteProtectionRule"
+              ]
+            },
+            {
+              "name": "Protection unit",
+              "resources": [
+                "driveProtectionUnit",
+                "mailboxProtectionUnit",
+                "siteProtectionUnit"
+              ]
+            },
+            {
+              "name": "Protection units bulk job",
+              "resources": [
+                "protectionUnitsBulkJobBase",
+                "driveProtectionUnitsBulkAdditionJob",
+                "mailboxProtectionUnitsBulkAdditionJob",
+                "siteProtectionUnitsBulkAdditionJob"
+              ]
+            },
+            {
+              "name": "Restore artifact",
+              "resources": [
+                "granularMailBoxRestoreArtifact",
+                "driveRestoreArtifact",
+                "granularDriveRestoreArtifact",
+                "mailboxRestoreArtifact",
+                "siteRestoreArtifact",
+                "granularSiteRestoreArtifact"
+              ]
+            },
+            {
+              "name": "Restore artifacts bulk request",
+              "resources": [
+                "driveRestoreArtifactsBulkAdditionRequest",
+                "mailboxRestoreArtifactsBulkAdditionRequest",
+                "siteRestoreArtifactsBulkAdditionRequest"
+              ]
+            },
+            {
+              "name": "Restore session",
+              "resources": [
+                "oneDriveForBusinessRestoreSession",
+                "exchangeRestoreSession",
+                "sharePointRestoreSession"
+              ]
+            }
+          ],
+          "complexTypes": [
+            "artifactQuery",
+            "browseQueryResponseItem",
+            "notificationRecipients",
+            "protectionPolicyArtifactCount",
+            "restorePointSearchResponse",
+            "restorePointSearchResult",
+            "retentionSetting",
+            "serviceStatus",
+            "timePeriod"
           ]
         }
-      ],
-      "complexTypes": [
-        "artifactQuery",
-        "browseQueryResponseItem",
-        "notificationRecipients",
-        "protectionPolicyArtifactCount",
-        "restorePointSearchResponse",
-        "restorePointSearchResult",
-        "retentionSetting",
-        "serviceStatus",
-        "timePeriod"
       ]
     },
     {
@@ -567,6 +610,8 @@
           "overview": "../../resources/cloudpc-api-overview.md",
           "resources": [
             "cloudPC",
+            "cloudPcAgentPool",
+            "cloudPcAgentPoolUserAssignment",
             "cloudPcAuditEvent",
             "cloudPcBulkAction",
             "cloudPcCloudApp",
@@ -579,6 +624,8 @@
             "cloudPcManagedLicense",
             "cloudPcOnPremisesConnection",
             "cloudPcOrganizationSettings",
+            "cloudPcPool",
+            "cloudPcPoolAssignment",
             "cloudPcProvisioningPolicy",
             "cloudPcReport",
             "cloudPcServicePlan",
@@ -594,10 +641,15 @@
             "cloudPcAgentHealthCheckDetail",
             "cloudPcAgentHealthCheckStatusDetail",
             "cloudPcAgentHealthCheckSummary",
+            "cloudPcAgentPoolBillingConfiguration",
+            "cloudPcAgentPoolCapabilityConfiguration",
+            "cloudPcAgentPoolScalingPolicy",
+            "cloudPcAgentPoolSessionUsage",
             "cloudPcAgentStatusDetail",
             "cloudPcAuditActor",
             "cloudPcAuditProperty",
             "cloudPcAuditResource",
+            "cloudPcAutomaticDiscoveredAppDetail",
             "cloudPcBulkDisasterRecovery",
             "cloudPcBulkDisasterRecoveryFailback",
             "cloudPcBulkDisasterRecoveryFailover",
@@ -614,6 +666,7 @@
             "cloudPcBulkCreateSnapshot",
             "cloudPcBulkSetReviewStatus",
             "cloudPcCloudAppDetail",
+            "cloudPcConfiguration",
             "cloudPcConnectionSetting",
             "cloudPcConnectivityEvent",
             "cloudPcConnectivityResult",
@@ -626,6 +679,7 @@
             "cloudpcexternalpartneractionreport",
             "cloudpcexternalpartneractionresult",
             "cloudpcexternalpartneragentsetting",
+            "cloudPcFilePathAppDetail",
             "cloudPcForensicStorageAccount",
             "cloudPcFrontlineSharedDeviceDetail",
             "cloudPcHealthCheckItem",
@@ -634,12 +688,17 @@
             "cloudPcLoginResult",
             "cloudPcManagementAssignmentTarget",
             "cloudPcManagementGroupAssignmentTarget",
+            "cloudPcMicrosoftHostedNetworkConfiguration",
+            "cloudPcNetworkConfiguration",
             "cloudPcNotificationSetting",
             "cloudPcOnPremisesConnectionStatusDetail",
             "cloudPcOnPremisesConnectionStatusDetails",
+            "cloudPcOnPremisesConnectionSubnetIpDetail",
             "cloudPcPartnerAgentInstallResult",
+            "cloudPcPoolCapabilityConfiguration",
             "cloudPcProvisioningPolicyAssignment",
             "cloudPcProvisioningPolicyAutopatch",
+            "cloudPcRegionGroupConfiguration",
             "cloudPcRemoteActionCapability",
             "cloudPcResizeValidationResult",
             "cloudPcRestorePointSetting",
@@ -1122,7 +1181,8 @@
       "complexTypes": [
         "fileStorageContainerTypeRegistrationSettings",
         "fileStorageContainerTypeAgentSettings",
-        "fileStorageContainerTypeSettings"
+        "fileStorageContainerTypeSettings",
+        "sharePointGroupIdentity"
       ],
       "childNodes": [
         {
@@ -1222,7 +1282,6 @@
             "onPremisesSyncBehavior",
             "organization",
             "orgContact",
-            "tenantInformation",
             "bitlockerRecoveryKey",
             "deviceLocalCredentialInfo",
             "featureRolloutPolicy",
@@ -1235,6 +1294,7 @@
             {
               "name": "Mobility management policy",
               "resources": [
+                "mobilityManagementPolicy",
                 "mobileAppManagementPolicy",
                 "mobileDeviceManagementPolicy"
               ]
@@ -1300,16 +1360,6 @@
                     "unifiedRbacResourceAction"
                   ]
                 }
-              ]
-            },
-            {
-              "name": "Entra Backup and Recovery",
-              "overview": "../../resources/entrarecoveryservices-backup-recovery-overview.md",
-              "resources": [
-                "microsoft.graph.entraRecoveryServices.recoveryJob",
-                "microsoft.graph.entraRecoveryServices.recoveryJobBase",
-                "microsoft.graph.entraRecoveryServices.recoveryPreviewJob",
-                "microsoft.graph.entraRecoveryServices.snapshot"
               ]
             }
           ]
@@ -1738,6 +1788,7 @@
                 "onFraudProtectionLoadStartListener",
                 "onInteractiveAuthFlowStartListener",
                 "onPasswordSubmitListener",
+                "onVerifiedIdClaimValidationListener",
                 "onPhoneMethodLoadStartListener",
                 "onTokenIssuanceStartListener",
                 "onUserCreateStartListener"
@@ -1841,20 +1892,6 @@
               ]
             },
             {
-              "name": "Cross-tenant access",
-              "overview": "../../resources/crosstenantaccesspolicy-overview.md",
-              "keywords": [
-                "Cross-tenant access settings",
-                "XTAP"
-              ],
-              "resources": [
-                "crossTenantAccessPolicy",
-                "crossTenantAccessPolicyConfigurationDefault",
-                "crossTenantAccessPolicyConfigurationPartner",
-                "crossTenantIdentitySyncPolicyPartner"
-              ]
-            },
-            {
               "name": "Cross-tenant shared user profiles",
               "resources": [
                 "inboundSharedUserProfile",
@@ -1869,21 +1906,8 @@
                 "onAttributeCollectionSubmitCustomExtension",
                 "onOtpSendCustomExtension",
                 "onPasswordSubmitCustomExtension",
+                "onVerifiedIdClaimValidationCustomExtension",
                 "onTokenIssuanceStartCustomExtension"
-              ]
-            },
-            {
-              "name": "Cross-tenant migration",
-              "overview": "../../resources/crosstenant-migration-overview.md",
-              "resources":[
-                "crossTenantMigrationJob",
-                "crossTenantMigrationTask",
-                "migrationsRoot"
-              ],
-              "complexTypes":[
-                "crossTenantMigrationServiceStatusDetails",
-                "error",
-                "exchangeOnlineCrossTenantMigrationSettings"
               ]
             },
             {
@@ -1939,20 +1963,6 @@
               "resources": [
                 "identityProvider",
                 "openIdConnectProvider"
-              ]
-            },
-            {
-              "name": "Multitenant organization",
-              "overview": "../../resources/multitenantorganization-overview.md",
-              "keywords": [
-                "MTO"
-              ],
-              "resources": [
-                "multiTenantOrganization",
-                "multiTenantOrganizationMember",
-                "multiTenantOrganizationJoinRequestRecord",
-                "multiTenantOrganizationPartnerConfigurationTemplate",
-                "multiTenantOrganizationIdentitySyncPolicyTemplate"
               ]
             },
             {
@@ -2435,6 +2445,7 @@
         "mailFolderOperation",
         "mailSearchFolder",
         "messageRule",
+        "note",
         "exchangeMessageTrace",
         "userConfiguration"
       ],
@@ -2462,7 +2473,7 @@
       ]
     },
     {
-      "name": "Mailbox import and export (preview)",
+      "name": "Mailbox import and export",
       "overview": "../../resources/mailbox-import-export-api-overview.md",
       "keywords": [
         "Exchange",
@@ -2725,11 +2736,17 @@
                     "userRegistrationActivitySummary",
                     "userSignInUsageByAuthMethodActivity"
                   ]
+                },
+                {
+                  "name": "Premium license utilization (preview)",
+                  "resources": [
+                    "azureADPremiumLicenseInsight"
+                  ]
                 }
               ]
             },
             {
-              "name": "Microsoft Entra logs",
+              "name": "Microsoft Entra logs and reports",
               "overview": "../../resources/azure-ad-auditlog-overview.md",
               "shouldSort": true,
               "resources": [
@@ -2742,12 +2759,27 @@
                 "signInEventsActivity",
                 "signInEventsAppActivity",
                 "summarizedSignIn"
+              ],
+              "complexTypes": [
+                "tokenProtectionStatusDetails"
+              ]
+            },
+            {
+              "name": "Identity correlation reports (preview)",
+              "resources": [
+                "correlatedIdentity",
+                "identityCorrelation"
+              ],
+              "complexTypes": [
+                "attributeInfo",
+                "correlationError",
+                "identityInfo"
               ]
             }
           ]
         },
         {
-          "name": "Microsoft 365 monitoring reports (preview)",
+          "name": "Monitoring reports (preview)",
           "overview": "../../resources/m365-monitoring-api-overview.md",
           "resources": [
             "serviceActivity"
@@ -2876,7 +2908,18 @@
           ],
           "complexTypes": [
             "microsoft.graph.security.aiAgentEvidence",
+            "microsoft.graph.security.dnsEvidence",
+            "microsoft.graph.security.fileHashEvidence",
+            "microsoft.graph.security.gitHubOrganizationEvidence",
+            "microsoft.graph.security.gitHubRepoEvidence",
+            "microsoft.graph.security.gitHubUserEvidence",
+            "microsoft.graph.security.hostLogonSessionEvidence",
+            "microsoft.graph.security.malwareEvidence",
+            "microsoft.graph.security.networkConnectionEvidence",
+            "microsoft.graph.security.sasTokenEvidence",
             "microsoft.graph.security.securityGroupEvidence",
+            "microsoft.graph.security.servicePrincipalEvidence",
+            "microsoft.graph.security.submissionMailEvidence",
             "microsoft.graph.security.teamsMessageEvidence",
             "microsoft.graph.security.userAccount"
           ]
@@ -2945,6 +2988,7 @@
               "classificationError",
               "classificationInnerError",
               "computeRightsAndInheritanceResult",
+              "contentActivityMetadata",
               "contentBase",
               "customMetadataDictionary",
               "deviceMetadata",
@@ -3396,7 +3440,11 @@
             "resourceSpecificPermissionGrant"
           ],
           "complexTypes": [
-            "customAppSettings"
+            "customAppSettings",
+            "groupChatTeamsAppInstallationScopeInfo",
+            "personalTeamsAppInstallationScopeInfo",
+            "teamsAppInstallationScopeInfo",
+            "teamTeamsAppInstallationScopeInfo"
           ]
         },
         {
@@ -3508,6 +3556,7 @@
                 "virtualEventPresenter",
                 "virtualEventRegistration",
                 "virtualEventWebinarRegistrationConfiguration",
+                "virtualEventTownhallRegistrationConfiguration",
                 "virtualEventRegistrationQuestionBase",
                 "virtualEventSession",
                 "virtualEventTownhall",
@@ -3573,6 +3622,7 @@
             "chatMessage",
             "pinnedChatMessageInfo",
             "deletedChat",
+            "targetedChatMessage",
             "team",
             "teamworkTag",
             "teamworkTagMember"
@@ -3597,6 +3647,16 @@
                   "name": "Send notification to multiple users in bulk",
                   "href": "../../api/teamwork-sendactivitynotificationtorecipients.md"
                 }
+              ]
+            },
+            {
+              "name": "Sections (preview)",
+              "resources": [
+                "teamworkSection",
+                "teamworkSectionItem"
+              ],
+              "complexTypes": [
+                "sectionDisplayIcon"
               ]
             }
           ],
@@ -3654,8 +3714,22 @@
       ]
     },
     {
-      "name": "Tenant management",
+      "name": "Tenants",
       "shouldSort": true,
+      "overview": "../../resources/tenants-overview.md",
+      "keywords": [
+        "tenant management",
+        "tenant configuration",
+        "tenant governance",
+        "Lighhouse",
+        "cross-tenant access",
+        "multitenant",
+        "backup",
+        "recovery"
+      ],
+      "resources": [
+        "tenantInformation"
+      ],
       "childNodes": [
         {
           "name": "Configuration management",
@@ -3678,6 +3752,72 @@
             "microsoft.graph.tenantGovernanceServices.governanceInvitation",
             "microsoft.graph.tenantGovernanceServices.governanceRequest",
             "microsoft.graph.tenantGovernanceServices.governanceRelationship"
+          ]
+        },
+        {
+          "name": "Cross-tenant access",
+          "overview": "../../resources/crosstenantaccesspolicy-overview.md",
+          "keywords": [
+            "Cross-tenant access settings",
+            "XTAP"
+          ],
+          "resources": [
+            "crossTenantAccessPolicy",
+            "crossTenantAccessPolicyConfigurationDefault",
+            "crossTenantAccessPolicyConfigurationPartner",
+            "crossTenantIdentitySyncPolicyPartner",
+            "m365CapabilityBase"
+          ],
+          "childNodes": [
+            {
+              "name": "Microsoft 365 capabilities",
+              "resources": [
+                "crossTenantCalendarAvailabilityBasic",
+                "crossTenantCalendarAvailabilityLimitedDetails",
+                "crossTenantCalendarSharingFreeBusyDetail",
+                "crossTenantCalendarSharingFreeBusyReviewer",
+                "crossTenantCalendarSharingFreeBusySimple",
+                "crossTenantMailTipsAll",
+                "crossTenantMailTipsLimited",
+                "crossTenantMigration",
+                "crossTenantOpenProfileCard",
+                "crossTenantPlacesDeskBooking",
+                "crossTenantPlacesRoomBooking"
+              ],
+              "complexTypes": [
+                "m365CapabilityInboundAccess",
+                "m365CapabilityResourceScope",
+                "m365CapabilityResourceScopes"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Cross-tenant migration",
+          "overview": "../../resources/crosstenant-migration-overview.md",
+          "resources":[
+            "crossTenantMigrationJob",
+            "crossTenantMigrationTask",
+            "migrationsRoot"
+          ],
+          "complexTypes":[
+            "crossTenantMigrationServiceStatusDetails",
+            "error",
+            "exchangeOnlineCrossTenantMigrationSettings"
+          ]
+        },
+        {
+          "name": "Multitenant organization",
+          "overview": "../../resources/multitenantorganization-overview.md",
+          "keywords": [
+            "MTO"
+          ],
+          "resources": [
+            "multiTenantOrganization",
+            "multiTenantOrganizationMember",
+            "multiTenantOrganizationJoinRequestRecord",
+            "multiTenantOrganizationPartnerConfigurationTemplate",
+            "multiTenantOrganizationIdentitySyncPolicyTemplate"
           ]
         }
       ]
@@ -3806,4 +3946,3 @@
     }
   ]
 }
-
