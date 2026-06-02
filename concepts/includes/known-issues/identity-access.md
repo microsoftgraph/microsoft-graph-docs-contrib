@@ -54,3 +54,14 @@ In the future, either permission will be sufficient to call both methods.
 } -->
 
 The [conditionalAccessPolicy](/graph/api/resources/conditionalaccesspolicy) API currently requires consent to the *Policy.Read.All* permission to call the POST and PATCH methods. In the future, the *Policy.ReadWrite.ConditionalAccess* permission will enable you to read policies from the directory.
+
+### FIDO2 provisioning API requires self-service setup to be enabled
+
+<!-- {
+  "ms.author": "samudapuram",
+  "ms.reviewer": "intelligentaccesspm"
+} -->
+
+To use the FIDO2 provisioning API ([Create fido2AuthenticationMethod](/graph/api/authentication-post-fido2methods)), administrators must enable **Allow self-service setup** in the FIDO2 authentication method policy. In the current v1.0 release, this setting also enables end-user FIDO2 registration through My sign-ins. You can't enable API-based provisioning independently of self-service registration. This dependency is planned for removal in a future update.
+
+**Microsoft Entra External ID:** External users don't have access to My sign-ins, so enabling this setting doesn't affect self-service registration for external users. Administrators must still enable the setting to use the provisioning API.

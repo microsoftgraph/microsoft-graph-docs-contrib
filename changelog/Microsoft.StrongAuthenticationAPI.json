@@ -3,6 +3,120 @@
     {
       "ChangeList": [
         {
+          "Id": "51f6b3cc-54b0-43aa-8ccc-1cf60a618664",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webauthnAuthenticationExtensionsClientInputs",
+          "ChangeType": "Addition",
+          "Description": "Added the [webauthnAuthenticationExtensionsClientInputs](https://learn.microsoft.com/en-us/graph/api/resources/webauthnAuthenticationExtensionsClientInputs?view=graph-rest-1.0) resource.",
+          "Target": "webauthnAuthenticationExtensionsClientInputs"
+        },
+        {
+          "Id": "51f6b3cc-54b0-43aa-8ccc-1cf60a618664",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webauthnAuthenticationExtensionsClientOutputs",
+          "ChangeType": "Addition",
+          "Description": "Added the [webauthnAuthenticationExtensionsClientOutputs](https://learn.microsoft.com/en-us/graph/api/resources/webauthnAuthenticationExtensionsClientOutputs?view=graph-rest-1.0) resource.",
+          "Target": "webauthnAuthenticationExtensionsClientOutputs"
+        },
+        {
+          "Id": "51f6b3cc-54b0-43aa-8ccc-1cf60a618664",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webauthnAuthenticatorAttestationResponse",
+          "ChangeType": "Addition",
+          "Description": "Added the [webauthnAuthenticatorAttestationResponse](https://learn.microsoft.com/en-us/graph/api/resources/webauthnAuthenticatorAttestationResponse?view=graph-rest-1.0) resource.",
+          "Target": "webauthnAuthenticatorAttestationResponse"
+        },
+        {
+          "Id": "51f6b3cc-54b0-43aa-8ccc-1cf60a618664",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webauthnAuthenticatorSelectionCriteria",
+          "ChangeType": "Addition",
+          "Description": "Added the [webauthnAuthenticatorSelectionCriteria](https://learn.microsoft.com/en-us/graph/api/resources/webauthnAuthenticatorSelectionCriteria?view=graph-rest-1.0) resource.",
+          "Target": "webauthnAuthenticatorSelectionCriteria"
+        },
+        {
+          "Id": "51f6b3cc-54b0-43aa-8ccc-1cf60a618664",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webauthnCredentialCreationOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [webauthnCredentialCreationOptions](https://learn.microsoft.com/en-us/graph/api/resources/webauthnCredentialCreationOptions?view=graph-rest-1.0) resource.",
+          "Target": "webauthnCredentialCreationOptions"
+        },
+        {
+          "Id": "51f6b3cc-54b0-43aa-8ccc-1cf60a618664",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webauthnPublicKeyCredential",
+          "ChangeType": "Addition",
+          "Description": "Added the [webauthnPublicKeyCredential](https://learn.microsoft.com/en-us/graph/api/resources/webauthnPublicKeyCredential?view=graph-rest-1.0) resource.",
+          "Target": "webauthnPublicKeyCredential"
+        },
+        {
+          "Id": "51f6b3cc-54b0-43aa-8ccc-1cf60a618664",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webauthnPublicKeyCredentialCreationOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [webauthnPublicKeyCredentialCreationOptions](https://learn.microsoft.com/en-us/graph/api/resources/webauthnPublicKeyCredentialCreationOptions?view=graph-rest-1.0) resource.",
+          "Target": "webauthnPublicKeyCredentialCreationOptions"
+        },
+        {
+          "Id": "51f6b3cc-54b0-43aa-8ccc-1cf60a618664",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webauthnPublicKeyCredentialDescriptor",
+          "ChangeType": "Addition",
+          "Description": "Added the [webauthnPublicKeyCredentialDescriptor](https://learn.microsoft.com/en-us/graph/api/resources/webauthnPublicKeyCredentialDescriptor?view=graph-rest-1.0) resource.",
+          "Target": "webauthnPublicKeyCredentialDescriptor"
+        },
+        {
+          "Id": "51f6b3cc-54b0-43aa-8ccc-1cf60a618664",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webauthnPublicKeyCredentialParameters",
+          "ChangeType": "Addition",
+          "Description": "Added the [webauthnPublicKeyCredentialParameters](https://learn.microsoft.com/en-us/graph/api/resources/webauthnPublicKeyCredentialParameters?view=graph-rest-1.0) resource.",
+          "Target": "webauthnPublicKeyCredentialParameters"
+        },
+        {
+          "Id": "51f6b3cc-54b0-43aa-8ccc-1cf60a618664",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webauthnPublicKeyCredentialRpEntity",
+          "ChangeType": "Addition",
+          "Description": "Added the [webauthnPublicKeyCredentialRpEntity](https://learn.microsoft.com/en-us/graph/api/resources/webauthnPublicKeyCredentialRpEntity?view=graph-rest-1.0) resource.",
+          "Target": "webauthnPublicKeyCredentialRpEntity"
+        },
+        {
+          "Id": "51f6b3cc-54b0-43aa-8ccc-1cf60a618664",
+          "ApiChange": "Resource",
+          "ChangedApiName": "webauthnPublicKeyCredentialUserEntity",
+          "ChangeType": "Addition",
+          "Description": "Added the [webauthnPublicKeyCredentialUserEntity](https://learn.microsoft.com/en-us/graph/api/resources/webauthnPublicKeyCredentialUserEntity?view=graph-rest-1.0) resource.",
+          "Target": "webauthnPublicKeyCredentialUserEntity"
+        },
+        {
+          "Id": "51f6b3cc-54b0-43aa-8ccc-1cf60a618664",
+          "ApiChange": "Property",
+          "ChangedApiName": "publicKeyCredential",
+          "ChangeType": "Addition",
+          "Description": "Added the **publicKeyCredential** property to the [fido2AuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/fido2AuthenticationMethod?view=graph-rest-1.0) resource.",
+          "Target": "fido2AuthenticationMethod"
+        },
+        {
+          "Id": "51f6b3cc-54b0-43aa-8ccc-1cf60a618664",
+          "ApiChange": "Method",
+          "ChangedApiName": "creationOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [creationOptions](https://learn.microsoft.com/en-us/graph/api/fido2AuthenticationMethod-creationOptions?view=graph-rest-1.0) method to the [fido2AuthenticationMethod](https://learn.microsoft.com/en-us/graph/api/resources/fido2AuthenticationMethod?view=graph-rest-1.0) resource.",
+          "Target": "fido2AuthenticationMethod"
+        }
+      ],
+      "Id": "51f6b3cc-54b0-43aa-8ccc-1cf60a618664",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-06-02T22:24:36.5244106Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "02aed374-de85-437f-a6fb-9b62b4495f3b",
           "ApiChange": "Enumeration",
           "ChangedApiName": "passkeyType",
