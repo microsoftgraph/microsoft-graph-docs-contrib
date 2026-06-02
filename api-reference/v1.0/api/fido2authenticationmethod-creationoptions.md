@@ -16,8 +16,7 @@ Retrieve [creation options](../resources/webauthncredentialcreationoptions.md) r
 
 > [!NOTE]
 > This API applies a system-defined challenge timeout of 5 minutes. Unlike the beta version of this API, custom challenge timeout values are not supported in v1.0.
-
-> [!NOTE]
+>
 > This API has a [known issue](/graph/known-issues#fido2-provisioning-api-requires-self-service-setup-to-be-enabled) that requires **Allow self-service setup** to be enabled in the FIDO2 authentication method policy.
 
 ## Permissions
@@ -35,6 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 ## HTTP request
 
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 <!-- {
   "blockType": "ignored"
 }

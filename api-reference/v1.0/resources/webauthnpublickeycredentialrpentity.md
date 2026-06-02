@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the relying party that requests WebAuthn credential creation. The relying party is the entity, such as a website or service, that requests the creation of a credential.
+Represents the relying party that requests WebAuthn credential creation. The relying party is the entity, such as a website or service, that requests the creation of a credential. Configured in the **rp** proeprty of [webauthnPublicKeyCredentialCreationOptions](../resources/webauthnpublickeycredentialcreationoptions.md).
 
 ## Properties
 |Property|Type|Description|

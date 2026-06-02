@@ -19,18 +19,10 @@ Create a new [fido2AuthenticationMethod](../resources/fido2authenticationmethod.
 2. Use the returned options to create a new credential in the browser or authenticator using the WebAuthn API.
 3. POST the resulting public key credential to this API to complete registration.
 
-### Known issues
-
-#### Provisioning by credential providers
-
-The FIDO2 provisioning API supports adding passkeys that are active upon creation. Provisioning, where passkeys are pre-registered with Microsoft Entra ID during device manufacturing or distribution and kept disabled until an administrator enables them, aren't supported in the current v1.0 release.
-
-#### Self-service setup requirement
-
-To use the FIDO2 provisioning API, administrators must enable **Allow self-service setup** in the FIDO2 authentication method policy. In the current v1.0 release, this setting also enables end-user FIDO2 registration through My sign-ins. You can't enable API-based provisioning independently of self-service registration. This dependency is planned for removal in a future update. For more information, see [Known issue: FIDO2 provisioning API requires self-service setup to be enabled](/graph/known-issues#fido2-provisioning-api-requires-self-service-setup-to-be-enabled).
-
 > [!NOTE]
-> **Microsoft Entra External ID:** External users don't have access to My sign-ins, so enabling this setting doesn't affect self-service registration for external users. Administrators must still enable the setting to use the provisioning API.
+> This API has the following known issues:
+> - It doesn't support provisioning of pre-registered passkeys. For more information, see [Known issue: Provisioning of pre-registred passkeys not supported](/graph/known-issues#provisioning-of-pre-registred-passkeys-not-supported)
+> - Admins must enable **Allow self-service setup** in the FIDO2 authentication method policy to use the FIDO2 provisioning API. For more information, see [Known issue: FIDO2 provisioning API requires self-service setup to be enabled](/graph/known-issues#fido2-provisioning-api-requires-self-service-setup-to-be-enabled).
 
 ## Permissions
 
@@ -46,6 +38,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
 ## HTTP request
+
+[!INCLUDE [me-apis-sign-in-note](../includes/me-apis-sign-in-note.md)]
 
 <!-- {
   "blockType": "ignored"
