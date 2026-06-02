@@ -5620,7 +5620,7 @@ In addition to tracking incremental changes on events in a **calendarView** (col
   - collation
   - scaling
 - Expand documents when [listing pring jobs](/graph/api/printer-list-jobs?view=graph-rest-beta&preserve-view=true).
-- [Register a printer]() and use the [printerCreateOperation](/graph/api/resources/printercreateoperation?view=graph-rest-beta&preserve-view=true) resource to track and verify the registration of the printer.
+- Register a printer and use the [printerCreateOperation](/graph/api/resources/printercreateoperation?view=graph-rest-beta&preserve-view=true) resource to track and verify the registration of the printer.
 - [Get long-running printer registration operation](/graph/api/printoperation-get?view=graph-rest-beta&preserve-view=true) within current user or app's tenant.
 - A few renaming of properties and enum types - see details in the [June](https://developer.microsoft.com/graph/changelog#june-2020) changelog updates for cloud printing.
 
