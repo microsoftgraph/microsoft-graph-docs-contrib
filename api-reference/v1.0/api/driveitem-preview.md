@@ -60,10 +60,10 @@ POST /shares/{shareId}/driveItem/preview
 The body of the request defines properties of the embeddable URL your application is requesting.
 The request should be a JSON object with the following properties.
 
-|   Name      |  Type         | Description
-|:------------|:--------------|:-----------------------------------------------
-| page        | string/number | Optional. Page number of document to start at, if applicable. Specified as string for future use cases around file types such as ZIP.
-| zoom        | number        | Optional. Zoom level to start at, if applicable.
+|   Name      |  Type         | Description|
+|:------------|:--------------|:-----------------------------------------------|
+| page        | string/number | Optional. Page number of document to start at, if applicable. Specified as string for future use cases around file types such as ZIP.|
+| zoom        | number        | Optional. Zoom level to start at, if applicable.|
 
 ## Response
 
@@ -77,11 +77,11 @@ The request should be a JSON object with the following properties.
 
 The response will be a JSON object containing the following properties:
 
-| Name           | Type   | Description
-|:---------------|:-------|:---------------------------------------------------
-| getUrl         | string | URL suitable for embedding using HTTP GET (iframes, etc.)
-| postUrl        | string | URL suitable for embedding using HTTP POST (form post, JS, etc.)
-| postParameters | string | POST parameters to include if using postUrl
+| Name           | Type   | Description|
+|:---------------|:-------|:---------------------------------------------------|
+| getUrl         | string | URL suitable for embedding using HTTP GET (iframes, etc.)|
+| postUrl        | string | URL suitable for embedding using HTTP POST (form post, JS, etc.)|
+| postParameters | string | POST parameters to include if using postUrl|
 
 Either getUrl, postUrl, or both might be returned depending on the current state of embed support for the specified options.
 
