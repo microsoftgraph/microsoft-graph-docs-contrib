@@ -420,6 +420,13 @@ Use the **welcomeMessageEnabled** property on the [group](/graph/api/resources/g
 - Added `riskRemediation` as a new member to the [conditionalAccessGrantControl](/graph/api/resources/conditionalaccessgrantcontrols?view=graph-rest-beta&preserve-view=true#builtincontrols-property) enumeration. This value allows users to self-remediate their user risk through conditional access policies.
 - Use the **groupSyncInbound** property on [crossTenantIdentitySyncPolicyPartner](/graph/api/resources/crosstenantidentitysyncpolicypartner?view=graph-rest-beta&preserve-view=true) to define whether groups can be synchronized from a partner tenant in cross-tenant access policy settings.
 
+### Mail | Message trace
+
+- [Create](/graph/api/mailsearchfolder-post-userconfigurations?view=graph-rest-beta&preserve-view=true), [Get](/graph/api/userconfiguration-get?view=graph-rest-beta&preserve-view=true), [Update](/graph/api/userconfiguration-update?view=graph-rest-beta&preserve-view=true), and [Delete](/graph/api/userconfiguration-delete?view=graph-rest-beta&preserve-view=true) [userConfiguration](/graph/api/resources/userconfiguration?view=graph-rest-beta&preserve-view=true) objects.
+- Use the **binaryData** property on [userConfiguration](/graph/api/resources/userconfiguration?view=graph-rest-beta&preserve-view=true) for arbitrary binary content.
+- Use the **xmlData** property on [userConfiguration](/graph/api/resources/userconfiguration?view=graph-rest-beta&preserve-view=true) for serialized XML.
+- Use the **structuredData** property on [userConfiguration](/graph/api/resources/userconfiguration?view=graph-rest-beta&preserve-view=true) to store typed key-value pairs without serializing your own format.
+
 ### Reports | Identity and access reports
 
 Added `qrCode` as a new supported value for the **usageAuthMethod** enumeration that is the type for the **authMethod** property on [credentialUsageSummary](/graph/api/resources/credentialusagesummary?view=graph-rest-beta&preserve-view=true), [userCredentialUsageDetails](/graph/api/resources/usercredentialusagedetails?view=graph-rest-beta&preserve-view=true), [userEventsSummary](/graph/api/resources/usereventssummary?view=graph-rest-beta&preserve-view=true), and [userRegistrationActivitySummary](/graph/api/resources/userregistrationactivitysummary?view=graph-rest-beta&preserve-view=true) resources. This value represents the use of the [QR code](/graph/api/resources/qrcodepinauthenticationmethod?view=graph-rest-beta&preserve-view=true) as an authentication method.
