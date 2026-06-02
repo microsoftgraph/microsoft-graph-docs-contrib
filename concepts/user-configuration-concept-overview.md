@@ -6,7 +6,7 @@ ms.localizationpriority: high
 ms.subservice: "outlook"
 ms.custom: scenarios:getting-started
 doc_type: conceptual
-ms.date: 02/06/2025
+ms.date: 06/02/2026
 ---
 
 # Overview of the user configuration API in Microsoft Graph (preview)
