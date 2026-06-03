@@ -90,6 +90,16 @@ Namespace: microsoft.graph
 |mediaFiles|
 |unknownFutureValue|
 
+### apiUsageReportOnboardingStatus values
+
+|Member|
+|:---|
+|enabling|
+|enabled|
+|disabling|
+|disabled|
+|unknownFutureValue|
+
 ### csaStarLevel values
 
 |Member|
@@ -2003,6 +2013,16 @@ Namespace: microsoft.graph
 | published |
 | failedPublish |
 | unknownFutureValue |
+
+### exclusionUnitBulkJobStatus values
+
+|Member|
+|:---|
+|created|
+|active|
+|completed|
+|completedWithErrors|
+|unknownFutureValue|
 
 ### externalEmailOtpState values
 
@@ -5470,6 +5490,14 @@ Possible values for user account types (group membership), per Windows definitio
 |junk|
 |notJunk|
 |phish|
+|unknownFutureValue|
+
+### backupPolicyProtectionMode values
+
+|Member|
+|:---|
+|standard|
+|fullServiceBackup|
 |unknownFutureValue|
 
 ### protectionSource values

@@ -32,6 +32,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "ignored" } -->
 
 ```http
+GET /me/drive/items/{item-id}/content?format={format}
+GET /me/drive/root:/{path and filename}:/content?format={format}
 GET /drive/items/{item-id}/content?format={format}
 GET /drive/root:/{path and filename}:/content?format={format}
 ```
@@ -135,4 +137,3 @@ For more information about how errors are returned, see [Error responses][error-
   "suppressions": [
   ]
 } -->
-

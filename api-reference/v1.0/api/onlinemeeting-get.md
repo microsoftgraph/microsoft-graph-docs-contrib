@@ -57,14 +57,13 @@ Permissions for the following HTTP requests:
 GET /users/{userId}/onlineMeetings/{meetingId}
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 GET /users/{userId}/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'{joinMeetingId}'
-GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 ```
 
 <!-- { 
   "blockType": "permissions", 
   "name": "onlinemeeting_get_2", 
-  "requestUrls": ["GET /users/{userId}/onlineMeetings/{meetingId}", "GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'", "GET /users/{userId}/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'{joinMeetingId}'", "GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'", "GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'"],
+  "requestUrls": ["GET /users/{userId}/onlineMeetings/{meetingId}", "GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'", "GET /users/{userId}/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'{joinMeetingId}'", "GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'"],
   "mergePermissions": true
  } -->
 [!INCLUDE [permissions-table](../includes/permissions/onlinemeeting-get-2-permissions.md)]

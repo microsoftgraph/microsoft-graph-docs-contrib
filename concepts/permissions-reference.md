@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 05/18/2026
+ms.date: 06/01/2026
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -3291,6 +3291,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Description | Allows the app to read and write access packages and related entitlement management resources without a signed-in user. | Allows the app to request access to and management of access packages and related entitlement management resources on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
+[!INCLUDE [EntitlementManagement.ReadWrite.All](../includes/permissions-notes/entitlementmanagement.readwrite.all.md)]
+
 ---
 
 ### EntitlementMgmt-SubjectAccess.ReadWrite
@@ -3740,6 +3742,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### Group-XTenantIdentitySync.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 35b96aac-d839-4362-abd4-7381f2b27ccd | f7c0661b-4247-48ac-a371-05ff047614c6 |
+| DisplayText | Read all Group Cross-Tenant Identity Synchronization properties | Read all Group Cross-Tenant Identity Synchronization properties |
+| Description | Allows the app to read all Cross-Tenant Identity Synchronization properties on Groups, without a signed-in user. | Allows the app to read all Cross-Tenant Identity Synchronization properties on Groups, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
 ### Group.Create
 
 | Category | Application | Delegated |
@@ -3861,6 +3874,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | 432e76f0-8af6-4315-a853-66ab9538f480 | b3e5ebc6-1c23-4337-8286-3f27165addb4 |
 | DisplayText | Read and write all scenario monitoring alerts | Read and write all scenario monitoring alert configurations. |
 | Description | Allows the app to read and write all scenario monitoring alerts, without a signed-in user. | Allows the app to read and write all scenario monitoring alert configurations, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### IdentityNotifications.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 52ced3dd-dbb6-41a0-9ce5-61a056be97b8 | 59cd3e28-aa9c-4f72-a734-1b592eb06853 |
+| DisplayText | Read all identity notification settings and templates | Read identity notification settings and templates |
+| Description | Allows the app to read identity notification settings, email templates, and prerequisites without a signed-in user. | Allows the app to read identity notification settings, email templates, and prerequisites on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### IdentityNotifications.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | d9fe7b9f-cb27-4289-9cb4-54debd9d3c25 | c9c9fdea-4ecc-4d82-a2ea-3feff3489275 |
+| DisplayText | Read and write all identity notification settings and templates | Read and write identity notification settings and templates |
+| Description | Allows the app to read and write identity notification settings, customize email templates, and send test emails without a signed-in user. | Allows the app to read and write identity notification settings, customize email templates, and send test emails on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -9308,6 +9343,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### User.Create
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 4240f680-4f73-4082-a766-aa916a2dc9b3 | d8ce6a2a-46ff-438e-96bc-020f23870a55 |
+| DisplayText | Create users | Create users |
+| Description | Allows the app to create users, without a signed-in user. | Allows the app to create users, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
 ### User.DeleteRestore.All
 
 | Category | Application | Delegated |
@@ -9403,6 +9449,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 ![personal Microsoft accounts][MSA] The *User.ReadBasic.All* delegated permission is available for consent in personal Microsoft accounts.
 
 [!INCLUDE [User.ReadBasic.All](../includes/permissions-notes/user.readbasic.all.md)]
+
+---
+
+### User.ReadUpdate.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 5639c449-cfd9-4088-bc48-3e16da108bf8 | f8b099f1-a6ce-4e00-8fff-5f783ff4faeb |
+| DisplayText | Read and update users | Read and update users |
+| Description | Allows the app to read and update users, without a signed-in user. | Allows the app to read and update users, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 

@@ -262,6 +262,16 @@ items:
     href: ../../api/permission-grant.md
   - name: Revoke grants on sharing link
     href: ../../api/permission-revokegrants.md
+- name: SharePoint report settings
+  items:
+  - name: SharePoint report settings
+    href: ../../resources/sharepointreportsettings.md
+  - name: List
+    href: ../../api/sharepointreportsettings-list-apiusagereportmetrics.md
+  - name: Enable API usage report
+    href: ../../api/sharepointreportsettings-enableapiusagereport.md
+  - name: Disable API usage report
+    href: ../../api/sharepointreportsettings-disableapiusagereport.md
 - name: SharePoint settings
   items:
   - name: SharePoint settings
@@ -466,5 +476,7 @@ items:
       href: ../../api/termstore-relation-post.md
 - name: Complex types
   items:
+  - name: API usage report enablement status
+    href: ../../resources/apiusagereportenablementstatus.md
   - name: Identity input
     href: ../../resources/identityinput.md

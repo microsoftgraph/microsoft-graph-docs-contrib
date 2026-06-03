@@ -339,6 +339,32 @@
       "CreatedDateTime": "2026-03-23T18:25:50.8152046Z",
       "WorkloadArea": "Tenants",
       "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6c0c5048-cd47-4e3f-a1a8-2950d1b8d12d",
+          "ApiChange": "Property",
+          "ChangedApiName": "groupDisplayName",
+          "ChangeType": "Addition",
+          "Description": "Added the **groupDisplayName** property to the [delegatedAdministrationRoleAssignment](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-delegatedadministrationroleassignment?view=graph-rest-beta) resource.",
+          "Target": "delegatedAdministrationRoleAssignment"
+        },
+        {
+          "Id": "6c0c5048-cd47-4e3f-a1a8-2950d1b8d12d",
+          "ApiChange": "Property",
+          "ChangedApiName": "groupDisplayName",
+          "ChangeType": "Addition",
+          "Description": "Added the **groupDisplayName** property to the [delegatedAdministrationRoleAssignmentSnapshot](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-delegatedadministrationroleassignmentsnapshot?view=graph-rest-beta) resource.",
+          "Target": "delegatedAdministrationRoleAssignmentSnapshot"
+        }
+      ],
+      "Id": "6c0c5048-cd47-4e3f-a1a8-2950d1b8d12d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-06-02T17:43:19.8866900Z",
+      "WorkloadArea": "Tenants",
+      "SubArea": "Governance"
     }
   ]
 }

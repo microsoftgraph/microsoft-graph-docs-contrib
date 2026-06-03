@@ -18,12 +18,17 @@ A representation of a passkey (FIDO2) registered to a user. Passkey (FIDO2) is a
 
 This is a derived type that inherits from the [authenticationMethod](authenticationmethod.md) resource type.
 
+> [!NOTE]
+> This resource has a [known issue](/graph/known-issues#fido2-provisioning-api-requires-self-service-setup-to-be-enabled) related to creating FIDO2 authentication methods that requires **Allow self-service setup** to be enabled in the FIDO2 authentication method policy.
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/fido2authenticationmethod-list.md)|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md) collection|Retrieve a list of a user's **fido2AuthenticationMethod** objects and their properties.|
+|[Create](../api/authentication-post-fido2methods.md)|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|Create a new **fido2AuthenticationMethod** object for a user.|
 |[Get](../api/fido2authenticationmethod-get.md)|[fido2AuthenticationMethod](../resources/fido2authenticationmethod.md)|Read the properties and relationships of a user's **fido2AuthenticationMethod** object.|
 |[Delete](../api/fido2authenticationmethod-delete.md)|None|Delete a user's **fido2AuthenticationMethod** object.|
+|[Creation options](../api/fido2authenticationmethod-creationoptions.md)|[webauthnCredentialCreationOptions](../resources/webauthncredentialcreationoptions.md)|Retrieve creation options required to generate and register a passkey for a user.|
 
 
 ## Properties
@@ -37,6 +42,7 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 |id|String|The authentication method identifier.|
 |model|String|The manufacturer-assigned model of the FIDO2 passkey.|
 |passkeyType|passkeyType|The type of passkey. The possible values are: `deviceBound`, `synced`, `unknownFutureValue`.|
+|publicKeyCredential|[webauthnPublicKeyCredential](../resources/webauthnpublickeycredential.md)|Contains the WebAuthn public key credential information being registered. This property is used only for write requests and isn't returned on read operations.|
 
 ## Relationships
 None.
@@ -65,7 +71,10 @@ The following JSON representation shows the resource type.
   "displayName": "String",
   "id": "String (identifier)",
   "model": "String",
-  "passkeyType": "String"
+  "passkeyType": "String",
+  "publicKeyCredential": {
+    "@odata.type": "microsoft.graph.webauthnPublicKeyCredential"
   }
+}
 ```
 
