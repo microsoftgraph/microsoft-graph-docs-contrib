@@ -18,7 +18,7 @@ Translate identifiers of Outlook-related resources between formats.
 
 ## Permissions
 
-Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 Permissions to translate Exchange IDs for the signed-in user:
 
@@ -28,11 +28,11 @@ Permissions to translate Exchange IDs for the signed-in user:
 POST /me/translateExchangeIds
 ```
 
-<!-- {
-  "blockType": "permissions",
-  "name": "user_translateexchangeids",
+<!-- { 
+  "blockType": "permissions", 
+  "name": "user_translateexchangeids", 
   "requestUrls": ["POST /me/translateExchangeIds"]
-} -->
+ } -->
 [!INCLUDE [permissions-table](../includes/permissions/user-translateexchangeids-permissions.md)]
 
 Permissions to translate Exchange IDs for a user:
@@ -43,16 +43,12 @@ Permissions to translate Exchange IDs for a user:
 POST /users/{id | userPrincipalName}/translateExchangeIds
 ```
 
-<!-- {
-  "blockType": "permissions",
-  "name": "user_translateexchangeids_2",
+<!-- { 
+  "blockType": "permissions", 
+  "name": "user_translateexchangeids_2", 
   "requestUrls": ["POST /users/{id}/translateExchangeIds"]
-} -->
-|Permission type|Least privileged permissions|Higher privileged permissions|
-|:---|:---|:---|
-|Delegated (work or school account)|User.ReadBasic.All|AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.Read, User.Read.All, User.ReadWrite, User.ReadWrite.All|
-|Delegated (personal Microsoft account)|User.Read|User.ReadWrite|
-|Application|User.Read.All|AgentIdUser.ReadWrite.All, AgentIdUser.ReadWrite.IdentityParentedBy, User.ReadWrite.All|
+ } -->
+[!INCLUDE [permissions-table](../includes/permissions/user-translateexchangeids-2-permissions.md)]
 
 ## HTTP request
 
