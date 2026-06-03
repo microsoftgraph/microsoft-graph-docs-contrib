@@ -561,7 +561,10 @@ Use the **welcomeMessageEnabled** property on the [group](/graph/api/resources/g
 
 ### Mail | Message trace
 
-Use the [userConfiguration](/graph/api/resources/userconfiguration?view=graph-rest-beta&preserve-view=true) resource and its associated methods to manage user-specific settings, metadata, or application data tied to mailbox folders, using XML, binary, or dictionary formats.
+- [Create](/graph/api/mailsearchfolder-post-userconfigurations?view=graph-rest-beta&preserve-view=true), [Get](/graph/api/userconfiguration-get?view=graph-rest-beta&preserve-view=true), [Update](/graph/api/userconfiguration-update?view=graph-rest-beta&preserve-view=true), and [Delete](/graph/api/userconfiguration-delete?view=graph-rest-beta&preserve-view=true) [userConfiguration](/graph/api/resources/userconfiguration?view=graph-rest-beta&preserve-view=true) objects.
+- Use the **binaryData** property on [userConfiguration](/graph/api/resources/userconfiguration?view=graph-rest-beta&preserve-view=true) for arbitrary binary content.
+- Use the **xmlData** property on [userConfiguration](/graph/api/resources/userconfiguration?view=graph-rest-beta&preserve-view=true) for serialized XML.
+- Use the **structuredData** property on [userConfiguration](/graph/api/resources/userconfiguration?view=graph-rest-beta&preserve-view=true) to store typed key-value pairs without serializing your own format.
 
 ### Reports | Identity and access reports
 
