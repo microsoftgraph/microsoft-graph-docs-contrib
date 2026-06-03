@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents the location attributes of an application, used to indicate where its infrastructure operates and where the owning organization is based. The **location** property of the [applicationRiskFactorGeneralInfo](applicationriskfactorgeneralinfo.md) resource is an **applicationLocation** object.
 
 
