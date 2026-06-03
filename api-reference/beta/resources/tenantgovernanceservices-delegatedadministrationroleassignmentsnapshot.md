@@ -19,6 +19,7 @@ Represents a snapshot of a delegated administration role assignment configuratio
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|groupDisplayName|String|The display name of the security group identified by **groupId** at the time the snapshot was created. Read-only.|
 |groupId|String|The object ID of the role-assignable security group in the governing tenant that will be assigned the specified roles.|
 |roleTemplates|[microsoft.graph.tenantGovernanceServices.roleTemplate](../resources/tenantgovernanceservices-roletemplate.md) collection|The collection of role templates that define the Microsoft Entra roles to be assigned.|
 
@@ -35,6 +36,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.tenantGovernanceServices.delegatedAdministrationRoleAssignmentSnapshot",
+  "groupDisplayName": "String",
   "groupId": "String",
   "roleTemplates": [
     {
