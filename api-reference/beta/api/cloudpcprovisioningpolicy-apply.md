@@ -5,7 +5,7 @@ author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
-ms.date: 04/18/2024
+ms.date: 05/18/2026
 ---
 
 # cloudPcProvisioningPolicy: apply
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Apply the current [provisioning policy](../resources/cloudpcprovisioningpolicy.md) configuration to all Cloud PC devices under a specified policy. Currently, the region is the only policy setting that you can apply.
+Apply the current [provisioning policy](../resources/cloudpcprovisioningpolicy.md) configuration to all Cloud PC devices under a specified policy. You can apply policy settings such as `region` and `singleSignOn`. This action also supports reprovisioning for frontline shared mode Cloud PCs by using the **reservePercentage** parameter to control the percentage of Cloud PCs that remain available during the process.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
@@ -47,7 +47,7 @@ POST /deviceManagement/virtualEndpoint/provisioningPolicies/{id}/apply
 
 In the request body, supply a JSON representation of the parameters.
 
-The following table shows the parameter that you can use with this method.
+The following table shows the parameters that you can use with this method.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
@@ -60,14 +60,17 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Request
+### Example 1: Apply a policy setting to Cloud PCs
+
+The following example shows how to apply a policy setting such as `region` to all Cloud PC devices under a specified provisioning policy.
+
+#### Request
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "apply_cloudpcprovisioningpolicy"
+  "name": "apply_cloudpcprovisioningpolicy_policysettings"
 }
 -->
 
@@ -76,38 +79,48 @@ POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provision
 Content-Type: application/json
 
 {
-  "policySettings": "region",
-  "reservePercentage": 80,
+  "policySettings": "region"
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/apply-cloudpcprovisioningpolicy-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### Response
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/apply-cloudpcprovisioningpolicy-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+The following example shows the response.
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/apply-cloudpcprovisioningpolicy-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/apply-cloudpcprovisioningpolicy-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+``` http
+HTTP/1.1 204 No Content
+```
 
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/apply-cloudpcprovisioningpolicy-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+### Example 2: Reprovision frontline shared Cloud PCs with a reserve percentage
 
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/apply-cloudpcprovisioningpolicy-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+The following example shows how to reprovision frontline shared Cloud PCs under a specified provisioning policy and keep 80% of Cloud PCs available.
 
----
+#### Request
 
-### Response
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "apply_cloudpcprovisioningpolicy_frontline"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/1d164206-bf41-4fd2-8424-a3192d39ffff/apply
+Content-Type: application/json
+
+{
+  "reservePercentage": 80
+}
+```
+
+#### Response
 
 The following example shows the response.
 
