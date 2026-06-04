@@ -17,6 +17,9 @@ Namespace: microsoft.graph.security
 Represents an entity definition input for manual alert creation. Each entity definition specifies a security entity (such as a user, device, or IP address) associated with the alert, along with its identifier and role in the alert context. Used in the **entityDefinitions** property of [manualAlert](../resources/security-manualalert.md).
 
 
+## Methods
+None.
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
