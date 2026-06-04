@@ -23,7 +23,7 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|entityIdentifier|String|The type of identifier used for the entity. The supported identifiers depend on the **entityType**. See [supported entity identifiers](#supported-entity-identifiers).|
+|entityIdentifier|String|The type of identifier used for the entity. The supported identifiers depend on the **entityType**. See [supported entity identifiers](#supported-entity-identifiers). Key.|
 |entityType|microsoft.graph.security.manualAlertEntityType|The type of entity. The possible values are: `user`, `device`, `file`, `ip`, `url`, `cloudApplication`, `mailbox`, `securityGroup`, `azureResource`, `amazonResource`, `googleCloudResource`, `oAuthApplication`, `emailMessage`, `emailCluster`, `process`, `registryKey`, `registryValue`, `unknownFutureValue`.|
 |identifierValue|String|The actual identifier value for the entity (for example, `john@contoso.com` for a user, or `192.168.1.1` for an IP address). Maximum 1000 characters.|
 |role|microsoft.graph.security.entityDefinitionInputRole|The role of the entity in the alert context. The possible values are: `impacted`, `related`, `unknownFutureValue`.|
@@ -60,14 +60,15 @@ The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.entityDefinitionInput",
-  "openType": false
+  "openType": false,
+  "keyProperty": "entityIdentifier"
 }
 -->
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.entityDefinitionInput",
   "entityType": "String",
-  "entityIdentifier": "String",
+  "entityIdentifier": "String (identifier)",
   "identifierValue": "String",
   "role": "String"
 }
