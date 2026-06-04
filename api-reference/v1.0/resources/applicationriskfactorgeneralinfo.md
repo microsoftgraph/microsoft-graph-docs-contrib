@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents general information about an application that contributes to its overall risk profile, including its business background, operational resilience, and data handling practices. The **general** property of the [applicationRiskFactors](applicationriskfactors.md) resource is an **applicationRiskFactorGeneralInfo** object.
 
 
@@ -28,7 +26,7 @@ Represents general information about an application that contributes to its over
 |hostingCompanyName|String|Specifies the name of the company or provider that hosts the application's infrastructure.|
 |location|[applicationLocation](../resources/applicationlocation.md)|Provides the geographical and operational location information for the application, including data center and headquarters regions.|
 |privacyPolicy|String|Specifies the URL of the application's privacy policy.|
-|processedDataTypes|applicationDataType|Specifies the types of data the application processes. The possible values are: `none`, `codingFiles`, `creditCards`, `databaseFiles`, `documents`, `mediaFiles`, `unknownFutureValue`.|
+|processedDataTypes|applicationDataType|Specifies the types of data the application processes. The possible values are: `none`, `codingFiles`, `creditCards`, `databaseFiles`, `documents`, `mediaFiles`, `unknownFutureValue`. This is a multi-value flags enum.|
 |termsOfService|String|Specifies the URL of the application's terms of service.|
 
 ## Relationships

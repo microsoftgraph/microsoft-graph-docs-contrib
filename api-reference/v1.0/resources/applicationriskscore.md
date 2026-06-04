@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents a set of Microsoft-generated numerical scores that quantify the overall risk posture of an application. Each score reflects a specific dimension—security, compliance, legal, and provider reputation—aggregated into a total composite score ranging from 0 (high risk) to 10 (low risk). The **riskScore** property of the [applicationTemplate](applicationtemplate.md) resource is an **applicationRiskScore** object. For more information, see [Find your cloud app and calculate risk scores](/defender-cloud-apps/risk-score).
 
 ## Properties
