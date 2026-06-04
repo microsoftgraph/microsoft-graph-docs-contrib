@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Provides SSL/TLS certificate validation and risk assessment details for an application, highlighting potential security misconfigurations or trust issues. The **certificate** property of the [applicationRiskFactorSecurityInfo](applicationriskfactorsecurityinfo.md) resource is an **applicationRiskFactorCertificateInfo** object.
 
 

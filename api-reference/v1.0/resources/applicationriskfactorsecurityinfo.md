@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents the set of security characteristics used to evaluate the overall security health of an application. It includes details about encryption, authentication, audit logging, SSL/TLS configuration, and exposure to known vulnerabilities. The **security** property of the [applicationRiskFactors](applicationriskfactors.md) resource is an **applicationRiskFactorSecurityInfo** object.
 
 ## Properties
@@ -43,7 +41,7 @@ Represents the set of security characteristics used to evaluate the overall secu
 |isHeartbleedProof|Boolean|Indicates whether the application’s SSL implementation is protected from the Heartbleed vulnerability.|
 |lastBreachDate|Date|Specifies the date of the last publicly reported data breach or security incident related to the application, if known.|
 |latestValidSSL|sslVersion|Specifies the latest SSL/TLS protocol version supported by the application. The possible values are: `none`, `ssl3_0`, `tls1_0`, `tls1_1`, `tls1_2`, `tls1_3`, `notSupported`, `unknownFutureValue`.|
-|passwordPolicy|passwordPolicy|Specifies the password policy enforced by the application. The possible values are: `none`, `changePasswordPeriod`, `charactersCombination`, `passwordHistoryAndReuse`, `passwordLengthLimit`, `personalInformationUse`, `unknownFutureValue`.|
+|passwordPolicy|passwordPolicy|Specifies the password policy enforced by the application. The possible values are: `none`, `changePasswordPeriod`, `charactersCombination`, `passwordHistoryAndReuse`, `passwordLengthLimit`, `personalInformationUse`, `unknownFutureValue`. This is a multi-value flags enum.|
 |restEncryptionType|restEncryptionType|Specifies the encryption algorithm used for data at rest. The possible values are: `none`, `aes`, `bitlocker`, `blowfish`, `des`, `rc4`, `rsa`, `notSupported`, `unknownFutureValue`.|
 
 ## Relationships

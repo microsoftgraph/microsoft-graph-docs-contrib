@@ -2039,6 +2039,58 @@
       "CreatedDateTime": "2026-03-12T15:25:36.8590438Z",
       "WorkloadArea": "Personal contacts",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f9f49965-306e-4d71-bcd2-35028f0899f0",
+          "ApiChange": "Permission",
+          "ChangedApiName": "MailTips.ReadBasic.Shared",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `MailTips.ReadBasic.Shared` delegated permission to the [getMailTips](https://learn.microsoft.com/en-us/graph/api/user-getmailtips?view=graph-rest-1.0) method of the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
+          "Target": "getMailTips"
+        },
+        {
+          "Id": "f9f49965-306e-4d71-bcd2-35028f0899f0",
+          "ApiChange": "Permission",
+          "ChangedApiName": "MailTips.ReadBasic.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `MailTips.ReadBasic.All` application permission to the [getMailTips](https://learn.microsoft.com/en-us/graph/api/user-getmailtips?view=graph-rest-1.0) method of the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
+          "Target": "getMailTips"
+        }
+      ],
+      "Id": "f9f49965-306e-4d71-bcd2-35028f0899f0",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-05-15T15:25:36.8590438Z",
+      "WorkloadArea": "User",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "22b8b59e-8f23-47f4-a043-76fea8586b97",
+          "ApiChange": "Permission",
+          "ChangedApiName": "MailTips.ReadBasic.Shared",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `MailTips.ReadBasic.Shared` delegated permission to the [getMailTips](https://learn.microsoft.com/en-us/graph/api/user-getmailtips?view=graph-rest-beta) method of the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "getMailTips"
+        },
+        {
+          "Id": "22b8b59e-8f23-47f4-a043-76fea8586b97",
+          "ApiChange": "Permission",
+          "ChangedApiName": "MailTips.ReadBasic.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `MailTips.ReadBasic.All` application permission to the [getMailTips](https://learn.microsoft.com/en-us/graph/api/user-getmailtips?view=graph-rest-beta) method of the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "getMailTips"
+        }
+      ],
+      "Id": "22b8b59e-8f23-47f4-a043-76fea8586b97",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-06-03T15:25:36.8590438Z",
+      "WorkloadArea": "User",
+      "SubArea": ""
     }
   ]
 }

@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents legal compliance information and data management policies for an application, including data retention practices, GDPR alignment, ownership rights, and DMCA adherence. The **legal** property of the [applicationRiskFactors](applicationriskfactors.md) resource is an **applicationRiskFactorLegalInfo** object.
 
 

@@ -12,8 +12,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents the compliance certifications, attestations, and standards that an application or service provider meets. These compliance frameworks are used to assess the application's alignment with recognized industry, government, and data protection requirements. The **compliance** property of the [applicationRiskFactors](applicationriskfactors.md) resource is an **applicationSecurityCompliance** object.
 
 
@@ -33,11 +31,11 @@ Represents the compliance certifications, attestations, and standards that an ap
 |glba|Boolean|Indicates whether the application complies with the Gramm–Leach–Bliley Act (GLBA) for financial data protection.|
 |hipaa|Boolean|Indicates whether the application complies with the Health Insurance Portability and Accountability Act (HIPAA).|
 |hitrust|Boolean|Indicates whether the application holds HITRUST certification, demonstrating alignment with healthcare and data security standards.|
-|isae3402|Boolean|Indicates whether the application complies with International Standard on Assurance Engagements (ISAE) 3,402 requirements.|
+|isae3402|Boolean|Indicates whether the application complies with International Standard on Assurance Engagements (ISAE) 3402 requirements.|
 |iso27001|Boolean|Indicates whether the application is certified against ISO/IEC 27001 for information security management systems (ISMS).|
 |iso27002|Boolean|Indicates whether the application follows ISO/IEC 27002 security control best practices.|
-|iso27017|Boolean|Indicates whether the application complies with ISO/IEC 27,017 standards for cloud security controls.|
-|iso27018|Boolean|Indicates whether the application complies with ISO/IEC 27,018 standards for protecting personally identifiable information (PII) in cloud environments.|
+|iso27017|Boolean|Indicates whether the application complies with ISO/IEC 27017 standards for cloud security controls.|
+|iso27018|Boolean|Indicates whether the application complies with ISO/IEC 27018 standards for protecting personally identifiable information (PII) in cloud environments.|
 |itar|Boolean|Indicates whether the application complies with International Traffic in Arms Regulations (ITAR).|
 |jerichoForumCommandments|Boolean|Indicates whether the application aligns with Jericho Forum security principles for deperimeterized environments.|
 |pci|pciVersion|Specifies the Payment Card Industry (PCI) Data Security Standard (DSS) version the application complies with. The possible values are: `none`, `v3_2_1`, `v4`, `notSupported`, `unknownFutureValue`.|
