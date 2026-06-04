@@ -3241,9 +3241,11 @@
         "recycleBinItem",
         "richLongRunningOperation",
         "permission",
+        "sharePointReportSettings",
         "sharepointSettings"
       ],
       "complexTypes": [
+        "apiUsageReportEnablementStatus",
         "identityInput"
       ],
       "childNodes": [

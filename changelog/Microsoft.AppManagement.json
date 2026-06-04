@@ -3,11 +3,237 @@
     {
       "ChangeList": [
         {
+          "Id": "f2264e7e-ed00-4adc-a67c-965de3f824c5",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "applicationDataType",
+          "ChangeType": "Addition",
+          "Description": "Added the **applicationDataType** enumeration type.",
+          "Target": "applicationDataType"
+        },
+        {
+          "Id": "f2264e7e-ed00-4adc-a67c-965de3f824c5",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "csaStarLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **csaStarLevel** enumeration type.",
+          "Target": "csaStarLevel"
+        },
+        {
+          "Id": "f2264e7e-ed00-4adc-a67c-965de3f824c5",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "dataProtection",
+          "ChangeType": "Addition",
+          "Description": "Added the **dataProtection** enumeration type.",
+          "Target": "dataProtection"
+        },
+        {
+          "Id": "f2264e7e-ed00-4adc-a67c-965de3f824c5",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "dataRetentionLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **dataRetentionLevel** enumeration type.",
+          "Target": "dataRetentionLevel"
+        },
+        {
+          "Id": "f2264e7e-ed00-4adc-a67c-965de3f824c5",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "fedRampLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **fedRampLevel** enumeration type.",
+          "Target": "fedRampLevel"
+        },
+        {
+          "Id": "f2264e7e-ed00-4adc-a67c-965de3f824c5",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "holdType",
+          "ChangeType": "Addition",
+          "Description": "Added the **holdType** enumeration type.",
+          "Target": "holdType"
+        },
+        {
+          "Id": "f2264e7e-ed00-4adc-a67c-965de3f824c5",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "passwordPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the **passwordPolicy** enumeration type.",
+          "Target": "passwordPolicy"
+        },
+        {
+          "Id": "f2264e7e-ed00-4adc-a67c-965de3f824c5",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "pciVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the **pciVersion** enumeration type.",
+          "Target": "pciVersion"
+        },
+        {
+          "Id": "f2264e7e-ed00-4adc-a67c-965de3f824c5",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "restEncryptionType",
+          "ChangeType": "Addition",
+          "Description": "Added the **restEncryptionType** enumeration type.",
+          "Target": "restEncryptionType"
+        },
+        {
+          "Id": "f2264e7e-ed00-4adc-a67c-965de3f824c5",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "sslVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the **sslVersion** enumeration type.",
+          "Target": "sslVersion"
+        },
+        {
+          "Id": "f2264e7e-ed00-4adc-a67c-965de3f824c5",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "userOwnership",
+          "ChangeType": "Addition",
+          "Description": "Added the **userOwnership** enumeration type.",
+          "Target": "userOwnership"
+        },
+        {
+          "Id": "f2264e7e-ed00-4adc-a67c-965de3f824c5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicationLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [applicationLocation](https://learn.microsoft.com/en-us/graph/api/resources/applicationlocation?view=graph-rest-1.0) resource.",
+          "Target": "applicationLocation"
+        },
+        {
+          "Id": "f2264e7e-ed00-4adc-a67c-965de3f824c5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicationRiskFactorCertificateInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [applicationRiskFactorCertificateInfo](https://learn.microsoft.com/en-us/graph/api/resources/applicationriskfactorcertificateinfo?view=graph-rest-1.0) resource.",
+          "Target": "applicationRiskFactorCertificateInfo"
+        },
+        {
+          "Id": "f2264e7e-ed00-4adc-a67c-965de3f824c5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicationRiskFactorGeneralInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [applicationRiskFactorGeneralInfo](https://learn.microsoft.com/en-us/graph/api/resources/applicationriskfactorgeneralinfo?view=graph-rest-1.0) resource.",
+          "Target": "applicationRiskFactorGeneralInfo"
+        },
+        {
+          "Id": "f2264e7e-ed00-4adc-a67c-965de3f824c5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicationRiskFactorLegalInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [applicationRiskFactorLegalInfo](https://learn.microsoft.com/en-us/graph/api/resources/applicationriskfactorlegalinfo?view=graph-rest-1.0) resource.",
+          "Target": "applicationRiskFactorLegalInfo"
+        },
+        {
+          "Id": "f2264e7e-ed00-4adc-a67c-965de3f824c5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicationRiskFactorLegalInfoGdpr",
+          "ChangeType": "Addition",
+          "Description": "Added the [applicationRiskFactorLegalInfoGdpr](https://learn.microsoft.com/en-us/graph/api/resources/applicationriskfactorlegalinfogdpr?view=graph-rest-1.0) resource.",
+          "Target": "applicationRiskFactorLegalInfoGdpr"
+        },
+        {
+          "Id": "f2264e7e-ed00-4adc-a67c-965de3f824c5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicationRiskFactors",
+          "ChangeType": "Addition",
+          "Description": "Added the [applicationRiskFactors](https://learn.microsoft.com/en-us/graph/api/resources/applicationriskfactors?view=graph-rest-1.0) resource.",
+          "Target": "applicationRiskFactors"
+        },
+        {
+          "Id": "f2264e7e-ed00-4adc-a67c-965de3f824c5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicationRiskFactorSecurityInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [applicationRiskFactorSecurityInfo](https://learn.microsoft.com/en-us/graph/api/resources/applicationriskfactorsecurityinfo?view=graph-rest-1.0) resource.",
+          "Target": "applicationRiskFactorSecurityInfo"
+        },
+        {
+          "Id": "f2264e7e-ed00-4adc-a67c-965de3f824c5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicationRiskScore",
+          "ChangeType": "Addition",
+          "Description": "Added the [applicationRiskScore](https://learn.microsoft.com/en-us/graph/api/resources/applicationriskscore?view=graph-rest-1.0) resource.",
+          "Target": "applicationRiskScore"
+        },
+        {
+          "Id": "f2264e7e-ed00-4adc-a67c-965de3f824c5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicationSecurityCompliance",
+          "ChangeType": "Addition",
+          "Description": "Added the [applicationSecurityCompliance](https://learn.microsoft.com/en-us/graph/api/resources/applicationsecuritycompliance?view=graph-rest-1.0) resource.",
+          "Target": "applicationSecurityCompliance"
+        },
+        {
+          "Id": "f2264e7e-ed00-4adc-a67c-965de3f824c5",
+          "ApiChange": "Property",
+          "ChangedApiName": "deprecationDate",
+          "ChangeType": "Addition",
+          "Description": "Added the **deprecationDate** property to the [applicationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/applicationtemplate?view=graph-rest-1.0) resource.",
+          "Target": "applicationTemplate"
+        },
+        {
+          "Id": "f2264e7e-ed00-4adc-a67c-965de3f824c5",
+          "ApiChange": "Property",
+          "ChangedApiName": "endpoints",
+          "ChangeType": "Addition",
+          "Description": "Added the **endpoints** property to the [applicationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/applicationtemplate?view=graph-rest-1.0) resource.",
+          "Target": "applicationTemplate"
+        },
+        {
+          "Id": "f2264e7e-ed00-4adc-a67c-965de3f824c5",
+          "ApiChange": "Property",
+          "ChangedApiName": "isEntraIntegrated",
+          "ChangeType": "Addition",
+          "Description": "Added the **isEntraIntegrated** property to the [applicationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/applicationtemplate?view=graph-rest-1.0) resource.",
+          "Target": "applicationTemplate"
+        },
+        {
+          "Id": "f2264e7e-ed00-4adc-a67c-965de3f824c5",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastModifiedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastModifiedDateTime** property to the [applicationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/applicationtemplate?view=graph-rest-1.0) resource.",
+          "Target": "applicationTemplate"
+        },
+        {
+          "Id": "f2264e7e-ed00-4adc-a67c-965de3f824c5",
+          "ApiChange": "Property",
+          "ChangedApiName": "riskFactors",
+          "ChangeType": "Addition",
+          "Description": "Added the **riskFactors** property to the [applicationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/applicationtemplate?view=graph-rest-1.0) resource.",
+          "Target": "applicationTemplate"
+        },
+        {
+          "Id": "f2264e7e-ed00-4adc-a67c-965de3f824c5",
+          "ApiChange": "Property",
+          "ChangedApiName": "riskScore",
+          "ChangeType": "Addition",
+          "Description": "Added the **riskScore** property to the [applicationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/applicationtemplate?view=graph-rest-1.0) resource.",
+          "Target": "applicationTemplate"
+        },
+        {
+          "Id": "f2264e7e-ed00-4adc-a67c-965de3f824c5",
+          "ApiChange": "Term",
+          "ChangedApiName": "licenseRequired",
+          "ChangeType": "Addition",
+          "Description": "Added the [licenseRequired](https://learn.microsoft.com/en-us/?view=graph-rest-1.0) resource.",
+          "Target": "Microsoft.AAD.AppManagement"
+        }
+      ],
+      "Id": "f2264e7e-ed00-4adc-a67c-965de3f824c5",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-06-03T12:14:00Z",
+      "WorkloadArea": "Applications",
+      "SubArea": "Service principal"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "698db058-5109-4754-80a9-b05647cd3d80",
           "ApiChange": "Property",
           "ChangedApiName": "deprecationDate",
           "ChangeType": "Addition",
-          "Description": "Added the **deprecationDate** property to the [applicationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/applicationTemplate?view=graph-rest-beta) resource.",
+          "Description": "Added the **deprecationDate** property to the [applicationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/applicationtemplate?view=graph-rest-beta) resource.",
           "Target": "applicationTemplate"
         }
       ],
@@ -25,7 +251,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isEntraIntegrated",
           "ChangeType": "Addition",
-          "Description": "Added the **isEntraIntegrated** property to the [applicationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/applicationTemplate?view=graph-rest-beta) resource.",
+          "Description": "Added the **isEntraIntegrated** property to the [applicationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/applicationtemplate?view=graph-rest-beta) resource.",
           "Target": "applicationTemplate"
         }
       ],
@@ -149,7 +375,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "applicationLocation",
           "ChangeType": "Addition",
-          "Description": "Added the [applicationLocation](https://learn.microsoft.com/en-us/graph/api/resources/applicationLocation?view=graph-rest-beta) resource.",
+          "Description": "Added the [applicationLocation](https://learn.microsoft.com/en-us/graph/api/resources/applicationlocation?view=graph-rest-beta) resource.",
           "Target": "applicationLocation"
         },
         {
@@ -157,7 +383,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "applicationRiskFactorCertificateInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [applicationRiskFactorCertificateInfo](https://learn.microsoft.com/en-us/graph/api/resources/applicationRiskFactorCertificateInfo?view=graph-rest-beta) resource.",
+          "Description": "Added the [applicationRiskFactorCertificateInfo](https://learn.microsoft.com/en-us/graph/api/resources/applicationriskfactorcertificateinfo?view=graph-rest-beta) resource.",
           "Target": "applicationRiskFactorCertificateInfo"
         },
         {
@@ -165,7 +391,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "applicationRiskFactorGeneralInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [applicationRiskFactorGeneralInfo](https://learn.microsoft.com/en-us/graph/api/resources/applicationRiskFactorGeneralInfo?view=graph-rest-beta) resource.",
+          "Description": "Added the [applicationRiskFactorGeneralInfo](https://learn.microsoft.com/en-us/graph/api/resources/applicationriskfactorgeneralinfo?view=graph-rest-beta) resource.",
           "Target": "applicationRiskFactorGeneralInfo"
         },
         {
@@ -173,7 +399,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "applicationRiskFactorLegalInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [applicationRiskFactorLegalInfo](https://learn.microsoft.com/en-us/graph/api/resources/applicationRiskFactorLegalInfo?view=graph-rest-beta) resource.",
+          "Description": "Added the [applicationRiskFactorLegalInfo](https://learn.microsoft.com/en-us/graph/api/resources/applicationriskfactorlegalinfo?view=graph-rest-beta) resource.",
           "Target": "applicationRiskFactorLegalInfo"
         },
         {
@@ -181,7 +407,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "applicationRiskFactorLegalInfoGdpr",
           "ChangeType": "Addition",
-          "Description": "Added the [applicationRiskFactorLegalInfoGdpr](https://learn.microsoft.com/en-us/graph/api/resources/applicationRiskFactorLegalInfoGdpr?view=graph-rest-beta) resource.",
+          "Description": "Added the [applicationRiskFactorLegalInfoGdpr](https://learn.microsoft.com/en-us/graph/api/resources/applicationriskfactorlegalinfogdpr?view=graph-rest-beta) resource.",
           "Target": "applicationRiskFactorLegalInfoGdpr"
         },
         {
@@ -189,7 +415,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "applicationRiskFactors",
           "ChangeType": "Addition",
-          "Description": "Added the [applicationRiskFactors](https://learn.microsoft.com/en-us/graph/api/resources/applicationRiskFactors?view=graph-rest-beta) resource.",
+          "Description": "Added the [applicationRiskFactors](https://learn.microsoft.com/en-us/graph/api/resources/applicationriskfactors?view=graph-rest-beta) resource.",
           "Target": "applicationRiskFactors"
         },
         {
@@ -197,7 +423,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "applicationRiskFactorSecurityInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [applicationRiskFactorSecurityInfo](https://learn.microsoft.com/en-us/graph/api/resources/applicationRiskFactorSecurityInfo?view=graph-rest-beta) resource.",
+          "Description": "Added the [applicationRiskFactorSecurityInfo](https://learn.microsoft.com/en-us/graph/api/resources/applicationriskfactorsecurityinfo?view=graph-rest-beta) resource.",
           "Target": "applicationRiskFactorSecurityInfo"
         },
         {
@@ -205,7 +431,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "applicationRiskScore",
           "ChangeType": "Addition",
-          "Description": "Added the [applicationRiskScore](https://learn.microsoft.com/en-us/graph/api/resources/applicationRiskScore?view=graph-rest-beta) resource.",
+          "Description": "Added the [applicationRiskScore](https://learn.microsoft.com/en-us/graph/api/resources/applicationriskscore?view=graph-rest-beta) resource.",
           "Target": "applicationRiskScore"
         },
         {
@@ -213,7 +439,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "applicationSecurityCompliance",
           "ChangeType": "Addition",
-          "Description": "Added the [applicationSecurityCompliance](https://learn.microsoft.com/en-us/graph/api/resources/applicationSecurityCompliance?view=graph-rest-beta) resource.",
+          "Description": "Added the [applicationSecurityCompliance](https://learn.microsoft.com/en-us/graph/api/resources/applicationsecuritycompliance?view=graph-rest-beta) resource.",
           "Target": "applicationSecurityCompliance"
         },
         {
@@ -221,7 +447,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "endpoints",
           "ChangeType": "Addition",
-          "Description": "Added the **endpoints** property to the [applicationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/applicationTemplate?view=graph-rest-beta) resource.",
+          "Description": "Added the **endpoints** property to the [applicationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/applicationtemplate?view=graph-rest-beta) resource.",
           "Target": "applicationTemplate"
         },
         {
@@ -229,7 +455,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "lastModifiedDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the **lastModifiedDateTime** property to the [applicationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/applicationTemplate?view=graph-rest-beta) resource.",
+          "Description": "Added the **lastModifiedDateTime** property to the [applicationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/applicationtemplate?view=graph-rest-beta) resource.",
           "Target": "applicationTemplate"
         },
         {
@@ -237,7 +463,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "riskFactors",
           "ChangeType": "Addition",
-          "Description": "Added the **riskFactors** property to the [applicationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/applicationTemplate?view=graph-rest-beta) resource.",
+          "Description": "Added the **riskFactors** property to the [applicationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/applicationtemplate?view=graph-rest-beta) resource.",
           "Target": "applicationTemplate"
         },
         {
@@ -245,7 +471,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "riskScore",
           "ChangeType": "Addition",
-          "Description": "Added the **riskScore** property to the [applicationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/applicationTemplate?view=graph-rest-beta) resource.",
+          "Description": "Added the **riskScore** property to the [applicationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/applicationtemplate?view=graph-rest-beta) resource.",
           "Target": "applicationTemplate"
         }
       ],
