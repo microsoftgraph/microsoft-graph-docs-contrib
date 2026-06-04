@@ -141,12 +141,7 @@ The following JSON representation shows the resource type.
   "investigationState": "String",
   "linkToIncident": "Integer",
   "isExcludedFromCorrelation": "Boolean",
-  "sentinelWorkspace": "String",
-  "entityDefinitions": [
-    {
-      "@odata.type": "microsoft.graph.security.entityDefinitionInput"
-    }
-  ]
+  "sentinelWorkspace": "String"
 }
 ```
 
