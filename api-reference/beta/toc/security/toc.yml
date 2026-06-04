@@ -864,6 +864,14 @@ items:
       href: ../../api/security-autoauditingconfiguration-get.md
     - name: Update
       href: ../../api/security-autoauditingconfiguration-update.md
+  - name: Sensor migration
+    items:
+    - name: Sensor migration
+      href: ../../resources/security-sensormigration.md
+    - name: List
+      href: ../../api/security-identitycontainer-list-sensormigration.md
+    - name: Migrate
+      href: ../../api/security-sensormigration-migrate.md
   - name: Complex types
     items:
     - name: Account
