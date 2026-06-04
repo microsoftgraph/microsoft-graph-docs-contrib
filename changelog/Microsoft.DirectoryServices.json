@@ -353,8 +353,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2026-03-27T22:57:06.7301343Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Identity and sign-in"
+      "WorkloadArea": "Tenants",
+      "SubArea": "Cross-tenant access"
     },
     {
       "ChangeList": [
@@ -435,8 +435,8 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2026-03-27T22:57:06.7303992Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Identity and sign-in"
+      "WorkloadArea": "Tenants",
+      "SubArea": "Cross-tenant access"
     },
       {
         "ChangeList": [
@@ -729,8 +729,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2026-04-23T00:00:00.000Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
+      "WorkloadArea": "Tenants",
+      "SubArea": "Cross-tenant access"
     },
     {
       "ChangeList": [
@@ -917,8 +917,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-08-21T19:55:22.5588336Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
+      "WorkloadArea": "Tenants",
+      "SubArea": "Cross-tenant access"
     },
     {
       "ChangeList": [
@@ -1037,8 +1037,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2025-04-25T19:25:52.9252889Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Identity and sign-in"
+      "WorkloadArea": "Tenants",
+      "SubArea": "Cross-tenant access"
     },
     {
       "ChangeList": [
@@ -1897,8 +1897,8 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2024-06-18T00:00:00.0166075Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Identity and sign-in"
+      "WorkloadArea": "Tenants",
+      "SubArea": "Cross-tenant access"
     },
     {
       "ChangeList": [
@@ -2123,8 +2123,8 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2024-04-02T16:45:20.304139Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Identity and sign-in"
+      "WorkloadArea": "Tenants",
+      "SubArea": "Cross-tenant access"
     },
     {
       "ChangeList": [
@@ -2433,8 +2433,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-11-06T16:45:20.304139Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Identity and sign-in"
+      "WorkloadArea": "Tenants",
+      "SubArea": "Cross-tenant access"
     },
     {
       "ChangeList": [
@@ -2563,8 +2563,8 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2024-04-23T00:00:00.000Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Identity and sign-in"
+      "WorkloadArea": "Tenants",
+      "SubArea": "Multitenant organization"
     },
     {
       "ChangeList": [
@@ -2831,8 +2831,8 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2023-07-26T00:00:00.0123959Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
+      "WorkloadArea": "Tenants",
+      "SubArea": ""
     },
     {
       "ChangeList": [
@@ -2953,8 +2953,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-05-25T00:00:00.0166075Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Identity and sign-in"
+      "WorkloadArea": "Tenants",
+      "SubArea": "Cross-tenant access"
     },
     {
       "ChangeList": [
@@ -3275,8 +3275,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-08-24T00:00:00.000Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Identity and sign-in"
+      "WorkloadArea": "Tenants",
+      "SubArea": "Multitenant organization"
     },
     {
       "ChangeList": [
@@ -3461,8 +3461,8 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2023-05-11T00:00:00.000Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Identity and sign-in"
+      "WorkloadArea": "Tenants",
+      "SubArea": "Cross-tenant access"
     },
     {
       "ChangeList": [
@@ -3663,8 +3663,8 @@
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2023-02-27T00:00:26.8027648Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Identity and sign-in"
+      "WorkloadArea": "Tenants",
+      "SubArea": "Cross-tenant access"
     },
     {
       "ChangeList": [
@@ -3807,8 +3807,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-01-23T00:00:00.1309263Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Identity and sign-in"
+      "WorkloadArea": "Tenants",
+      "SubArea": "Cross-tenant access"
     },
     {
       "ChangeList": [
@@ -4017,8 +4017,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-01-23T00:00:00.000Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Identity and sign-in"
+      "WorkloadArea": "Tenants",
+      "SubArea": "Cross-tenant access"
     },
     {
       "ChangeList": [
@@ -4681,8 +4681,8 @@
       "Cloud": "prd",
       "Version": "v1.0",
       "CreatedDateTime": "2022-06-30T00:00:00Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Identity and sign-in"
+      "WorkloadArea": "Tenants",
+      "SubArea": "Cross-tenant access"
     },
     {
       "ChangeList": [
@@ -5127,8 +5127,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-05-23T00:00:00.8027648Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Identity and sign-in"
+      "WorkloadArea": "Tenants",
+      "SubArea": "Cross-tenant access"
     },
     {
       "ChangeList": [
@@ -5145,8 +5145,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2022-04-26T00:00:00Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Identity and sign-in"
+      "WorkloadArea": "Tenants",
+      "SubArea": "Cross-tenant access"
     },
     {
       "ChangeList": [
@@ -5259,8 +5259,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2022-07-21T00:00:00.0123959Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
+      "WorkloadArea": "Tenants",
+      "SubArea": ""
     },
     {
       "ChangeList": [
@@ -5949,8 +5949,8 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2022-02-07T00:00:00Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Identity and sign-in"
+      "WorkloadArea": "Tenants",
+      "SubArea": "Cross-tenant access"
     },
     {
       "ChangeList": [
@@ -15705,8 +15705,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2026-01-21T15:10:03.772112Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Identity and sign-in"
+      "WorkloadArea": "Tenants",
+      "SubArea": "Cross-tenant access"
     },
     {
       "ChangeList": [

@@ -1,6 +1,6 @@
 ---
 title: "virtualEventRegistration: cancel"
-description: "Cancel a registrant's registration record for a webinar."
+description: "Cancel a registrant's registration record for a webinar or town hall."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancel a registrant's [registration record](../resources/virtualeventregistration.md) for a [webinar](../resources/virtualeventwebinar.md). 
+Cancel a registrant's [registration record](../resources/virtualeventregistration.md) for a [webinar](../resources/virtualeventwebinar.md) or [town hall](../resources/virtualeventtownhall.md). 
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -34,8 +34,17 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
+
+To cancel registration of a webinar:
+
 ```http
 POST /solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}/cancel
+```
+
+To cancel registration of a town hall:
+
+```http
+POST /solutions/virtualEvents/townhalls/{townhallId}/registrations/{registrationId}/cancel
 ```
 
 ## Request headers

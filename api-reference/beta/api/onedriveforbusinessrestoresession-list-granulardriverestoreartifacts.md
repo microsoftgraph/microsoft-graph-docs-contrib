@@ -60,6 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -128,6 +129,7 @@ Content-Type: application/json
       "restorePointDateTime": "0001-01-01T00:00:00Z",
       "startDateTime": "0001-01-01T00:00:00Z",
       "completionDateTime": "0001-01-01T00:00:00Z",
+      "destinationType": "inPlace",
       "directoryObjectId": "f3846f8d-80a6-4480-ae20-5966ebdf2009"
     },
     {
@@ -141,6 +143,7 @@ Content-Type: application/json
       "restorePointDateTime": "0001-01-01T00:00:00Z",
       "startDateTime": "0001-01-01T00:00:00Z",
       "completionDateTime": "0001-01-01T00:00:00Z",
+      "destinationType": "inPlace",
       "directoryObjectId": "f3846f8d-80a6-4480-ae20-5966ebdf2009"
     }
   ]

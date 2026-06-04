@@ -435,7 +435,11 @@ items:
       href: intune-concept-overview.md
       displayName: Intune
     - name: Cloud PC (preview)
-      href: cloudpc-concept-overview.md
+      items:
+      - name: Overview
+        href: cloudpc-concept-overview.md
+      - name: Troubleshoot report types
+        href: cloudpc-troubleshoot-report-types.md
     - name: Device updates (preview)
       items:
       - name: Overview
@@ -686,6 +690,8 @@ items:
       href: outlook-immutable-id.md
     - name: Subscribe to change notifications
       href: outlook-change-notifications-overview.md
+    - name: User configuration overview (preview)
+      href: user-configuration-concept-overview.md
   - name: Mailbox import and export
     items:
     - name: Overview

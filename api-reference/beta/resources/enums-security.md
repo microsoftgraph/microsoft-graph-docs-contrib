@@ -795,6 +795,7 @@ Namespace: microsoft.graph.security
 |uploadFile|
 |downloadText|
 |downloadFile|
+|copyToClipboard|
 |unknownFutureValue|
 
 ### userActivityType values
@@ -805,6 +806,7 @@ Namespace: microsoft.graph.security
 |uploadFile|
 |downloadText|
 |downloadFile|
+|copyToClipboard|
 |unknownFutureValue|
 
 ### labelActionSource values

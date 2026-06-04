@@ -364,14 +364,6 @@ items:
         href: ../../api/unifiedroleassignment-get.md
       - name: Delete
         href: ../../api/unifiedroleassignment-delete.md
-  - name: Tenant information
-    items:
-    - name: Tenant information
-      href: ../../resources/tenantinformation.md
-    - name: Find tenant by domain name
-      href: ../../api/tenantrelationship-findtenantinformationbydomainname.md
-    - name: Find tenant by tenant ID
-      href: ../../api/tenantrelationship-findtenantinformationbytenantid.md
 - name: Governance
   displayName: Identity Governance, Access reviews, Entitlement Management, Terms of Use, Privileged Identity Management, Microsoft Entra ID Governance
   items:
@@ -1543,10 +1535,14 @@ items:
         href: ../../resources/fido2authenticationmethod.md
       - name: List
         href: ../../api/fido2authenticationmethod-list.md
+      - name: Create
+        href: ../../api/authentication-post-fido2methods.md
       - name: Get
         href: ../../api/fido2authenticationmethod-get.md
       - name: Delete
         href: ../../api/fido2authenticationmethod-delete.md
+      - name: Creation options
+        href: ../../api/fido2authenticationmethod-creationoptions.md
     - name: Microsoft Authenticator
       items:
       - name: Microsoft Authenticator

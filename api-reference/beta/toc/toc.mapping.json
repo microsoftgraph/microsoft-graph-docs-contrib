@@ -204,6 +204,8 @@
           "resources": [
             "backupRestoreRoot",
             "emailNotificationsSetting",
+            "exclusionUnitBase",
+            "exclusionUnitBulkAdditionJob",
             "protectionPolicyBase",
             "protectionRuleBase",
             "protectionUnitBase",
@@ -220,6 +222,22 @@
               "resources": [
                 "oneDriveForBusinessBrowseSession",
                 "sharePointBrowseSession"
+              ]
+            },
+            {
+              "name": "Exclusion unit",
+              "resources": [
+                "driveExclusionUnit",
+                "mailboxExclusionUnit",
+                "siteExclusionUnit"
+              ]
+            },
+            {
+              "name": "Exclusion unit bulk addition job",
+              "resources": [
+                "driveExclusionUnitsBulkAdditionJob",
+                "mailboxExclusionUnitsBulkAdditionJob",
+                "siteExclusionUnitsBulkAdditionJob"
               ]
             },
             {
@@ -631,6 +649,7 @@
             "cloudPcAuditActor",
             "cloudPcAuditProperty",
             "cloudPcAuditResource",
+            "cloudPcAutomaticDiscoveredAppDetail",
             "cloudPcBulkDisasterRecovery",
             "cloudPcBulkDisasterRecoveryFailback",
             "cloudPcBulkDisasterRecoveryFailover",
@@ -660,6 +679,7 @@
             "cloudpcexternalpartneractionreport",
             "cloudpcexternalpartneractionresult",
             "cloudpcexternalpartneragentsetting",
+            "cloudPcFilePathAppDetail",
             "cloudPcForensicStorageAccount",
             "cloudPcFrontlineSharedDeviceDetail",
             "cloudPcHealthCheckItem",
@@ -1262,7 +1282,6 @@
             "onPremisesSyncBehavior",
             "organization",
             "orgContact",
-            "tenantInformation",
             "bitlockerRecoveryKey",
             "deviceLocalCredentialInfo",
             "featureRolloutPolicy",
@@ -2744,6 +2763,18 @@
               "complexTypes": [
                 "tokenProtectionStatusDetails"
               ]
+            },
+            {
+              "name": "Identity correlation reports (preview)",
+              "resources": [
+                "correlatedIdentity",
+                "identityCorrelation"
+              ],
+              "complexTypes": [
+                "attributeInfo",
+                "correlationError",
+                "identityInfo"
+              ]
             }
           ]
         },
@@ -3211,9 +3242,11 @@
         "recycleBinItem",
         "richLongRunningOperation",
         "permission",
+        "sharePointReportSettings",
         "sharepointSettings"
       ],
       "complexTypes": [
+        "apiUsageReportEnablementStatus",
         "identityInput"
       ],
       "childNodes": [
@@ -3526,6 +3559,7 @@
                 "virtualEventPresenter",
                 "virtualEventRegistration",
                 "virtualEventWebinarRegistrationConfiguration",
+                "virtualEventTownhallRegistrationConfiguration",
                 "virtualEventRegistrationQuestionBase",
                 "virtualEventSession",
                 "virtualEventTownhall",
@@ -3684,7 +3718,7 @@
     },
     {
       "name": "Tenants",
-      "shouldSort": false,
+      "shouldSort": true,
       "overview": "../../resources/tenants-overview.md",
       "keywords": [
         "tenant management",
@@ -3695,6 +3729,9 @@
         "multitenant",
         "backup",
         "recovery"
+      ],
+      "resources": [
+        "tenantInformation"
       ],
       "childNodes": [
         {
@@ -3912,4 +3949,3 @@
     }
   ]
 }
-

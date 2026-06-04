@@ -22,7 +22,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "agentidentityblueprint_post" } -->
 [!INCLUDE [permissions-table](../includes/permissions/agentidentityblueprint-post-permissions.md)]
 
-[!INCLUDE [rbac-agentid-apis-write](../includes/rbac-for-apis/rbac-agentid-apis-write.md)]
+[!INCLUDE [rbac-agentid-apis-post](../includes/rbac-for-apis/rbac-agentid-apis-post.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,9 @@ In the request body, supply a JSON representation of [agent identity blueprint](
 
 ## Response
 
-If successful, this method returns `201 Created` response code and an [agent identity blueprint](../resources/agentidentityblueprint.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [agentIdentityBlueprint](../resources/agentidentityblueprint.md) object in the response body.
+
+For information about errors returned by agent identity APIs, see [Microsoft agent identity platform error codes](/entra/agent-id/identity-platform/error-codes).
 
 ## Examples
 

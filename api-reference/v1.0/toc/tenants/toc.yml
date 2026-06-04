@@ -164,3 +164,11 @@ items:
       href: ../../api/multitenantorganizationidentitysyncpolicytemplate-update.md
     - name: Reset
       href: ../../api/multitenantorganizationidentitysyncpolicytemplate-resettodefaultsettings.md
+- name: Tenant information
+  items:
+  - name: Tenant information
+    href: ../../resources/tenantinformation.md
+  - name: Find tenant by domain name
+    href: ../../api/tenantrelationship-findtenantinformationbydomainname.md
+  - name: Find tenant by tenant ID
+    href: ../../api/tenantrelationship-findtenantinformationbytenantid.md
