@@ -42,7 +42,6 @@ Inherits from [microsoft.graph.security.alert](../resources/security-alert.md).
 |detectionSource|[microsoft.graph.security.detectionSource](../resources/security-detectionsource.md)|Detection technology or sensor that identified the notable component or activity. Inherited from [microsoft.graph.security.alert](../resources/security-alert.md).|
 |detectorId|String|The ID of the detector that triggered the alert. Inherited from [microsoft.graph.security.alert](../resources/security-alert.md).|
 |determination|[microsoft.graph.security.alertDetermination](../resources/security-alert.md#alertdetermination-values)|Specifies the result of the investigation, whether the alert represents a true attack and if so, the nature of the attack. Inherited from [microsoft.graph.security.alert](../resources/security-alert.md).|
-|entityDefinitions|[microsoft.graph.security.entityDefinitionInput](../resources/security-entitydefinitioninput.md) collection|Collection of entity definitions associated with the alert. Must contain 1 to 100 items. Required for creation.|
 |evidence|[microsoft.graph.security.alertEvidence](../resources/security-alertevidence.md) collection|Collection of evidence related to the alert. Inherited from [microsoft.graph.security.alert](../resources/security-alert.md).|
 |firstActivityDateTime|DateTimeOffset|The earliest activity associated with the alert. Inherited from [microsoft.graph.security.alert](../resources/security-alert.md).|
 |id|String|Unique identifier for the alert. Inherited from [microsoft.graph.entity](../resources/entity.md).|
@@ -69,7 +68,9 @@ Inherits from [microsoft.graph.security.alert](../resources/security-alert.md).
 |title|String|Brief identifying string value describing the alert. Inherited from [microsoft.graph.security.alert](../resources/security-alert.md).|
 
 ## Relationships
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|entityDefinitions|[microsoft.graph.security.entityDefinitionInput](../resources/security-entitydefinitioninput.md) collection|The entities associated with the alert. Each item specifies a security entity (such as a user, device, or IP address), its identifier, and its role in the alert context.|
 
 ## JSON representation
 The following JSON representation shows the resource type.
