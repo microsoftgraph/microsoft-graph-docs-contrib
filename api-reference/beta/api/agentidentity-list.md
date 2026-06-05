@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [agentIdentity](../resources/agentidentity.md) objects. Does not return other types of service principal objects.
+Retrieve a list of [agentIdentity](../resources/agentidentity.md) objects. Doesn't return other types of service principal objects.
 
 ## Permissions
 
