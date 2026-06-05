@@ -29,7 +29,7 @@ Creating a subscription requires read permission to the resource. For example, t
 Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing the permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
 
 > [!NOTE]
-> - Due to security restrictions, Microsoft Graph subscriptions do not support write access permissions when only read access permissions are needed.
+> - Due to security restrictions, Microsoft Graph subscriptions don't support write access permissions when only read access permissions are needed.
 > - Some resources support change notifications in multiple scenarios, each of which may require different permissions. In those cases, use the resource path to differentiate the scenarios.
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
