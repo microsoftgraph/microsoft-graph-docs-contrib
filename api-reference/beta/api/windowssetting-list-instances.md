@@ -39,7 +39,7 @@ For a specific user:
 -->
 ```http
 GET /users/{user-id}@{tenant-id}/settings/windows/{windowsSettingId}/instances
-````
+```
 
 > [!NOTE]
 > The `{tenant-id}` value must match the tenant ID of the calling user. To find your tenant ID, see [How to find your Microsoft Entra tenant ID](/entra/fundamentals/how-to-find-tenant).
