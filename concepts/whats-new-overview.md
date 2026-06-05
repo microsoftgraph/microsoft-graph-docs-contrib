@@ -48,7 +48,7 @@ Use the [user configuration API in Microsoft Graph](/graph/user-configuration-co
 
 ### Security
 
-- Introduced [sensor migration](../api-reference/beta/resources/security-sensormigration.md) capabilities to migrate eligible Microsoft Defender for Identity sensors.
+- Introduced [sensor migration](/graph/api/resources/security-sensormigration?view=graph-rest-beta&preserve-view=true) capabilities to migrate eligible Microsoft Defender for Identity sensors.
 - Use the [Create manualAlert](/graph/api/security-alert-post-manualalert?view=graph-rest-beta&preserve-view=true) method to create a manual security alert with specified entities and metadata. The new [manualAlert](/graph/api/resources/security-manualalert?view=graph-rest-beta&preserve-view=true) resource type derives from [alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true) and uses the [entityDefinitionInput](/graph/api/resources/security-entitydefinitioninput?view=graph-rest-beta&preserve-view=true) complex type to specify associated entities.
 
 ### Sites and lists
