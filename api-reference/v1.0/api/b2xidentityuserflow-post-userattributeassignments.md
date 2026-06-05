@@ -56,7 +56,7 @@ The following table lists the properties that are required when you create the [
 |requiresVerification|Boolean|Determines whether the identityUserFlowAttribute requires verification. This is only used for verifying the user's phone number or email address.|
 |userAttributeValues|[userAttributeValuesItem](../resources/userattributevaluesitem.md) collection|The input options for the user flow attribute. Only applicable when the userInputType is `radioSingleSelect`, `dropdownSingleSelect`, or `checkboxMultiSelect`.|
 |userInputType|identityUserFlowAttributeInputType|The input type of the user flow attribute. The possible values are: `textBox`, `dateTimeDropdown`, `radioSingleSelect`, `dropdownSingleSelect`, `emailBox`, `checkboxMultiSelect`.|
-|userAttribute|[identityUserFlowAttribute](../resources/identityuserflowattribute.md)|The identifier for the user flow attribute to include in the user flow assignment.
+|userAttribute|[identityUserFlowAttribute](../resources/identityuserflowattribute.md)|The identifier for the user flow attribute to include in the user flow assignment.|
 
 ## Response
 
