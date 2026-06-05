@@ -40,7 +40,7 @@ GET /networkAccess/connectivity/remoteNetworks/{remoteNetworkId}/connectivityCon
 ```
 
 ## Optional query parameters
-This method does not supports OData query parameters.
+This method doesn't supports OData query parameters.
 
 ## Request headers
 |Name|Description|
