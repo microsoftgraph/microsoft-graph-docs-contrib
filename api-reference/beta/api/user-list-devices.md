@@ -42,7 +42,7 @@ GET /me/devices
 
 ## Request headers
 
-| Header |Value
+| Header |Value |
 |:----|:------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 |Accept | application/json |

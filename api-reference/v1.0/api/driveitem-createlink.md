@@ -56,7 +56,7 @@ The request should be a JSON object with the following properties.
 |   Name       |  Type  |                                 Description                                  |
 | :------------| :----- | :--------------------------------------------------------------------------- |
 | **type**     | string | The type of sharing link to create. Either `view`, `edit`, or `embed`.       |
-| **password** | string | The password of the sharing link set by the creator. Optional and OneDrive Personal only.
+| **password** | string | The password of the sharing link set by the creator. Optional and OneDrive Personal only.|
 | **expirationDateTime** | string | A String with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission. |
 | **retainInheritedPermissions** |  Boolean          | Optional. If `true` (default), any existing inherited permissions are retained on the shared item when sharing this item for the first time. If `false`, all existing permissions are removed when sharing for the first time.  |
 | **scope** | string | Optional. The scope of link to create. Either `anonymous`, `organization`, or `users`. |
@@ -76,11 +76,11 @@ The following values are allowed for the **type** parameter.
 The following values are allowed for the **scope** parameter.
 If the **scope** parameter isn't specified, the default link type for the organization is created.
 
-| Value          | Description
-|:---------------|:------------------------------------------------------------
-| `anonymous`    | Anyone with the link has access, without needing to sign in. It may include people outside of your organization. Anonymous link support may be disabled by an administrator.
-| `organization` | Anyone signed into your organization (tenant) can use the link to get access. Only available in OneDrive for Business and SharePoint.
-| `users`        | Share only with people you choose inside or outside the organization.
+| Value          | Description|
+|:---------------|:------------------------------------------------------------|
+| `anonymous`    | Anyone with the link has access, without needing to sign in. It may include people outside of your organization. Anonymous link support may be disabled by an administrator.|
+| `organization` | Anyone signed into your organization (tenant) can use the link to get access. Only available in OneDrive for Business and SharePoint.|
+| `users`        | Share only with people you choose inside or outside the organization.|
 
 
 ## Response
