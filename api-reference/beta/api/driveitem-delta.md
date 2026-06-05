@@ -50,7 +50,7 @@ GET /users/{userId | userPrincipalName}/drive/root/delta
 
 | Parameter   | Type  | Description                                                                                                                          |
 |:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| token  | string | Optional. If unspecified, enumerates the hierarchy's current state. If `latest`, returns empty response with latest delta token. If a previous delta token returns new state since that token.
+| token  | string | Optional. If unspecified, enumerates the hierarchy's current state. If `latest`, returns empty response with latest delta token. If a previous delta token returns new state since that token. |
 
 ## Optional query parameters
 

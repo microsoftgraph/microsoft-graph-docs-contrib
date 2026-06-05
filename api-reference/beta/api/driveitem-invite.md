@@ -87,7 +87,7 @@ When inviting multiple recipients, it's possible for the notification to succeed
 The following table shows some other errors that your app might encounter within the nested **innererror** objects when sending notification fails. Apps aren't required to handle these errors.
 
 | Code                           | Description                                                                          |
-|:-------------------------------|:--------------------------------------------------------------------------------------
+|:-------------------------------|:--------------------------------------------------------------------------------------|
 | accountVerificationRequired    | Account verification is required to unblock sending notifications. |
 | hipCheckRequired               | Need to solve HIP (Host Intrusion Prevention) check to unblock sending notifications. |
 | exchangeInvalidUser            | Current user's mailbox wasn't found. |
