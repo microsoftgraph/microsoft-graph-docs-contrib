@@ -51,7 +51,7 @@ PATCH /directory/certificateAuthorities/certificateBasedApplicationConfiguration
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code and doesn't return anything in the response body.
 
 ## Examples
 
