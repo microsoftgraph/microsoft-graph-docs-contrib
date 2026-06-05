@@ -49,7 +49,7 @@ This method supports the `$expand`, `$filter` and `$select` [OData query paramet
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
