@@ -68,6 +68,7 @@ The following example shows a request.
 
 ```http
 GET /security/auditLog/queries
+```
 
 ---
 

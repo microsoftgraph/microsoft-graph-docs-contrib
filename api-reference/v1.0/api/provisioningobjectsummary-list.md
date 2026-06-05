@@ -228,7 +228,7 @@ Content-type: application/json
 }
 
 ```
-### Example 2: Error reponse
+### Example 2: Error response
 
 ### Request
 

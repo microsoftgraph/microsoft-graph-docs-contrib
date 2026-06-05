@@ -24,7 +24,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 [!INCLUDE [rbac-synchronization-apis](../includes/rbac-for-apis/rbac-synchronization-apis.md)]
 
-### HTTP Request
+## HTTP Request
 
 ```http
 GET applications/{id}/synchronization/templates/{templateId}
@@ -41,20 +41,20 @@ GET servicePrincipals/{id}/synchronization/templates/{templateId}
 
 Don't supply a request body for this method.
 
-### Response
+## Response
 
 If successful, this method returns a `200 OK` response code and a [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) object in the response body.
 
-### Example
+## Example
 
-##### Request
+### Request
 The following example shows a request.
 
 ```http
 GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/synchronization/templates/Slack
 ```
 
-##### Response
+### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned in an actual call.
 

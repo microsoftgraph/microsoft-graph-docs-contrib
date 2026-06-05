@@ -46,7 +46,7 @@ POST /identityGovernance/entitlementManagement/accessPackageCatalogs/{accessPack
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Content-Type| multipart/form-data; boundary={your-boundary}. Required.
+|Content-Type| multipart/form-data; boundary={your-boundary}. Required.|
 
 ## Request body
 

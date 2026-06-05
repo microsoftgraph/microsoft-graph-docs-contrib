@@ -32,8 +32,8 @@ DELETE /sites/{site-id}/pageTemplates/{pageTemplate-id}/microsoft.graph.pageTemp
 
 ## Request headers
 
-| Name       | Description
-|:-----------|:----------------------------------------
+| Name       | Description |
+|:-----------|:----------------------------------------|
 |Authorization|Bearer {token} Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 | _if-match_ | etag. If this request header is included and the eTag provided doesn't match the current tag on the item, a `412 Precondition Failed` response is returned and the item isn't deleted.|
 

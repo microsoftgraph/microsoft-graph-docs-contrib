@@ -191,6 +191,8 @@ Content-Type: application/json
 {
     "hostName": "www.contoso.com"
 }
+```
+
 #### Response
 
 The following example shows the response.

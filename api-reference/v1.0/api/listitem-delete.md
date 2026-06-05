@@ -37,7 +37,7 @@ DELETE /sites/{site-id}/lists/{list-id}/items/{item-id}
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| _if-match_ | ``etag`If this request header is included and the eTag provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.
+| _if-match_ | ``etag`If this request header is included and the eTag provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.|
 
 ## Request body
 

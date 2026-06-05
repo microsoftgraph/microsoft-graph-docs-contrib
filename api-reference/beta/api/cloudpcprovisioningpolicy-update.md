@@ -51,8 +51,8 @@ The following table shows the properties that can be updated for the [cloudPcPro
 
 |Property|Type|Description|
 |:---|:---|:---|
-|autopatch|[cloudPcProvisioningPolicyAutopatch](../resources/cloudpcprovisioningpolicyautopatch.md)|Indicates the Windows Autopatch settings for Cloud PCs using this provisioning policy. The settings take effect when the tenant enrolls in Autopatch and the **managedType** of the **microsoftManagedDesktop** property is set as `starterManaged`.|
-|autopilotConfiguration|[cloudPcAutopilotConfiguration](../resources/cloudpcautopilotconfiguration.md)|The specific settings for Windows Autopilot that enable Windows 365 customers to experience it on Cloud PC.|
+|autopatch|[cloudPcProvisioningPolicyAutopatch](../resources/cloudpcprovisioningpolicyautopatch.md)|Indicates the Windows Autopatch settings for Cloud PCs using this provisioning policy. The settings take effect when the tenant enrolls in Autopatch and the **managedType** of the **microsoftManagedDesktop** property is set as `starterManaged`. When you update a provisioning policy with **autopatch**, you must use a delegated token and the signed-in user must have the Intune Administrator role.|
+|autopilotConfiguration|[cloudPcAutopilotConfiguration](../resources/cloudpcautopilotconfiguration.md)|The specific settings for Windows Autopilot that enable Windows 365 customers to experience it on Cloud PC. Updating **autopilotConfiguration** requires the permissions listed in the **Permissions** section for this API. In delegated scenarios, the signed-in user must also have the `Microsoft.Intune/DeviceConfigurations/Assign` Intune RBAC permission.|
 |description|String|The provisioning policy description.|
 |displayName|String|The display name for the provisioning policy. |
 |domainJoinConfigurations|[cloudPcDomainJoinConfiguration](../resources/cloudpcdomainjoinconfiguration.md) collection|Specifies a list ordered by priority on how Cloud PCs join Microsoft Entra ID.|
