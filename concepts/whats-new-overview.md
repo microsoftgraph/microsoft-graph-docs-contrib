@@ -46,11 +46,15 @@ Use the [cloudPcProvisioningPolicy: apply](/graph/api/cloudpcprovisioningpolicy-
 
 Use the [user configuration API in Microsoft Graph](/graph/user-configuration-concept-overview) to build solutions that store and retrieve per-folder configuration data alongside Exchange Online mailbox content.
 
+### Security | Microsoft Defender for Identity
+
+Introduced [sensor migration](../api-reference/beta/resources/security-sensormigration.md) capabilities to migrate eligible Microsoft Defender for Identity sensors.
+
 ### Sites and lists
 
 Added the [sharePointReportSettings](/graph/api/resources/sharepointreportsettings?view=graph-rest-beta&preserve-view=true) resource type and related methods for managing SharePoint API usage report metrics. Use the [enableApiUsageReport](/graph/api/sharepointreportsettings-enableapiusagereport?view=graph-rest-beta&preserve-view=true) and [disableApiUsageReport](/graph/api/sharepointreportsettings-disableapiusagereport?view=graph-rest-beta&preserve-view=true) methods to control which metrics are collected and reported for your tenant.
 
-### Tenant management | Governance
+### Tenants | Governance
 
 Added the **groupDisplayName** property to the [delegatedAdministrationRoleAssignment](/graph/api/resources/tenantgovernanceservices-delegatedadministrationroleassignment?view=graph-rest-beta&preserve-view=true) and [delegatedAdministrationRoleAssignmentSnapshot](/graph/api/resources/tenantgovernanceservices-delegatedadministrationroleassignmentsnapshot?view=graph-rest-beta&preserve-view=true) resources. This property surfaces the display name of the security group inline, so consumers don't need to make a separate Microsoft Graph `/groups/{id}` call to resolve it.
 
@@ -165,6 +169,8 @@ Added the [identityCorrelation](/graph/api/resources/identitycorrelation?view=gr
 - Added the **categories** property to the [alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true) resource.
 - Deprecated the **category** property on the [alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true) resource. Use the **categories** property instead.
 
+Use the [Create manualAlert](/graph/api/security-alert-post-manualalert?view=graph-rest-beta&preserve-view=true) method to create a manual security alert with specified entities and metadata. The new [manualAlert](/graph/api/resources/security-manualalert?view=graph-rest-beta&preserve-view=true) resource type derives from [alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true) and uses the [entityDefinitionInput](/graph/api/resources/security-entitydefinitioninput?view=graph-rest-beta&preserve-view=true) complex type to specify associated entities.
+
 ### Security | Data security and compliance
 
 Added the [contentActivityMetadata](/graph/api/resources/contentactivitymetadata?view=graph-rest-beta&preserve-view=true) resource to represent and track Data Loss Prevention (DLP) enforcement result metadata for content entries, including identifiers, timestamps, and policy statuses.
@@ -186,6 +192,16 @@ Added the following properties and their associated complex types to the [crossT
   - **m365CollaborationOutbound** property get or set the default or partner-specific configuration for outbound Microsoft 365 collaboration settings.
 
 ## April 2026: New and generally available
+
+### Tenants | Configuration management
+
+The new Tenant Configuration Management APIs in Microsoft Graph allow administrators to control and manage configuration settings across a single workload or multiple workloads within an organization. To learn more about supported use cases, see [Use the Tenant Configuration Management APIs in Microsoft Graph](/graph/api/resources/unified-tenant-configuration-management-api-overview).
+
+### Calendars | Places
+
+Added a known issue of RBAC in [Places update API](/graph/api/place-update): update requests may still succeed without *Exchange Administrator* role but result in unexpected behaviors.
+
+## March 2026: New in preview only
 
 ### Applications
 
