@@ -86,8 +86,8 @@ This API returns the standard HTTP error codes. In addition, it also returns the
 | 400 BadRequest | SubjectNotFound                             | The `subjectId` provided in the request body cannot be found. |
 | 400 BadRequest | PendingRoleAssignmentRequest                | There already exists a pending [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) in the system. |
 | 400 BadRequest | RoleAssignmentExists                        | The [governanceRoleAssignment](../resources/governanceroleassignment.md) requested to be created already exists in the system. |
-| 400 BadRequest | RoleAssignmentDoesNotExist                  | The [governanceRoleAssignment](../resources/governanceroleassignment.md) requested to be updated/extended does not exist in the system. |
-| 400 BadRequest | RoleAssignmentRequestPolicyValidationFailed | The [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) does not meet internal policies and cannot be created. |
+| 400 BadRequest | RoleAssignmentDoesNotExist                  | The [governanceRoleAssignment](../resources/governanceroleassignment.md) requested to be updated/extended doesn't exist in the system. |
+| 400 BadRequest | RoleAssignmentRequestPolicyValidationFailed | The [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) doesn't meet internal policies and cannot be created. |
 
 ## Examples
 
