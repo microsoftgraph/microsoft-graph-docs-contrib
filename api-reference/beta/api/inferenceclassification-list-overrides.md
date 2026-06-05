@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get the [Focused Inbox](../resources/manage-focused-inbox.md) overrides that a user has set up to always classify messages from certain senders in specific ways.
 
-Each override corresponds to an SMTP address of a sender. Initially, a user does not have any overrides.
+Each override corresponds to an SMTP address of a sender. Initially, a user doesn't have any overrides.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
