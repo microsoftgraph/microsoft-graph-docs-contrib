@@ -87,7 +87,7 @@ If unsuccessful, this method returns one of the responses below:
 |Bad request|400|badRequest|Input fields are invalid|{"code": "badRequest","message": "Input field {fieldName} is invalid"}.|
 |Bad request|400|badRequest|badRequest|{"code": "badRequest","message": "Input field {fieldName} shouldn't be empty"}.|
 |Forbidden|403|Forbidden|The provider isn't valid to create course activity for the given learning content|When the registrationId/learningProviderId doesn't match with the provider with which the learningContent is created.|
-|Forbidden|403|Forbidden|The user license is not valid to perform the operation|When the user for which the assignment is being created does not have a premium license.|
+|Forbidden|403|Forbidden|The user license is not valid to perform the operation|When the user for which the assignment is being created doesn't have a premium license.|
 
 ## Examples
 
