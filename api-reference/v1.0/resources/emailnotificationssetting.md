@@ -2,7 +2,7 @@
 title: "emailNotificationsSetting resource type"
 description: "Represents the email settings for multi-admin notifications."
 author: "Vassu05"
-ms.date: 05/29/2025
+ms.date: 05/22/2026
 ms.localizationpriority: medium
 ms.subservice: "m365-backup-storage"
 doc_type: resourcePageType
@@ -11,8 +11,6 @@ doc_type: resourcePageType
 # emailNotificationsSetting resource type
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the email settings for multi-admin notifications.
 

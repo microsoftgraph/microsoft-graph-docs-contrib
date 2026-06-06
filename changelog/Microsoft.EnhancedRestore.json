@@ -1,5 +1,55 @@
 {
   "changelog": [
+    {
+        "ChangeList": [
+          {
+            "Id": "d3dee94f-3c8b-475f-9aaf-b1a94b873b46",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "notificationEventsType",
+            "ChangeType": "Addition",
+            "Description": "Added the **notificationEventsType** enumeration type.",
+            "Target": "notificationEventsType"
+          },
+          {
+            "Id": "d3dee94f-3c8b-475f-9aaf-b1a94b873b46",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "notificationRecipientsType",
+            "ChangeType": "Addition",
+            "Description": "Added the **notificationRecipientsType** enumeration type.",
+            "Target": "notificationRecipientsType"
+          },
+          {
+            "Id": "d3dee94f-3c8b-475f-9aaf-b1a94b873b46",
+            "ApiChange": "Resource",
+            "ChangedApiName": "notificationRecipients",
+            "ChangeType": "Addition",
+            "Description": "Added the [notificationRecipients](https://learn.microsoft.com/en-us/graph/api/resources/notificationRecipients?view=graph-rest-1.0) resource.",
+            "Target": "notificationRecipients"
+          },
+          {
+            "Id": "d3dee94f-3c8b-475f-9aaf-b1a94b873b46",
+            "ApiChange": "Relationship",
+            "ChangedApiName": "emailNotificationsSetting",
+            "ChangeType": "Addition",
+            "Description": "Added the **emailNotificationsSetting** relationship to the [backupRestoreRoot](https://learn.microsoft.com/en-us/graph/api/resources/backupRestoreRoot?view=graph-rest-1.0) resource.",
+            "Target": "backupRestoreRoot"
+          },
+          {
+            "Id": "d3dee94f-3c8b-475f-9aaf-b1a94b873b46",
+            "ApiChange": "Resource",
+            "ChangedApiName": "emailNotificationsSetting",
+            "ChangeType": "Addition",
+            "Description": "Added the [emailNotificationsSetting](https://learn.microsoft.com/en-us/graph/api/resources/emailNotificationsSetting?view=graph-rest-1.0) resource and associated methods.",
+            "Target": "emailNotificationsSetting"
+          }
+        ],
+        "Id": "d3dee94f-3c8b-475f-9aaf-b1a94b873b46",
+        "Cloud": "Prod",
+        "Version": "v1.0",
+        "CreatedDateTime": "2026-05-22T05:23:25.6143227Z",
+        "WorkloadArea": "Backup and recovery",
+        "SubArea": ""
+      },
       {
           "ChangeList": [
             {

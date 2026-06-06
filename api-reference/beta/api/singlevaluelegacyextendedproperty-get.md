@@ -297,6 +297,8 @@ Get a **mailboxFolder** instance:
 ```http
 GET /admin/exchange/mailboxes/{mailboxId}/folders?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
 GET /admin/exchange/mailboxes/{mailboxId}/folders/{mailboxFolderId}?$filter=singleValueExtendedProperties/Any(ep: ep/id eq '{id_value}' and ep/value eq '{property_value}')
+```
+
 Get **note** instances:
 <!-- { "blockType": "ignored" } -->
 ```http

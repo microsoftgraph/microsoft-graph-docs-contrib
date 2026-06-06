@@ -66,12 +66,20 @@ items:
       href: ../../api/security-incidenttask-update.md
     - name: Execute response action
       href: ../../api/security-incidenttask-executeresponseaction.md
+  - name: Manual alert
+    items:
+    - name: Manual alert
+      href: ../../resources/security-manualalert.md
+    - name: Create
+      href: ../../api/security-alert-post-manualalert.md
   - name: Complex types
     items:
     - name: AI agent evidence
       href: ../../resources/security-aiagentevidence.md
     - name: DNS evidence
       href: ../../resources/security-dnsevidence.md
+    - name: Entity definition input
+      href: ../../resources/security-entitydefinitioninput.md
     - name: File hash evidence
       href: ../../resources/security-filehashevidence.md
     - name: GitHub organization evidence

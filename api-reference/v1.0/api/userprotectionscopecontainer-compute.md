@@ -160,8 +160,6 @@ Content-type: application/json
 
 The following example shows the response. It indicates that uploadText, downloadText, uploadFile, or downloadFile activities for 'subdomain.domain1.com', 'domain2.com' or 'https://subdomain.domain3.com/content/subcontent' require offline evaluation. UploadText activity for 'subdomain.domain1.com', 'domain2.com' or 'https://subdomain.domain3.com/content/subcontent' require inline evaluation.
 
-```http
-
 > **Note:** The response object shown here might be shortened for readability.
 
 ```http

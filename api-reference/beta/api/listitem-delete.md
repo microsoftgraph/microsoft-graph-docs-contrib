@@ -36,9 +36,9 @@ DELETE /sites/{site-id}/lists/{list-id}/items/{item-id}
 
 ## Optional request headers
 
-| Name       | Value | Description
-|:-----------|:------|:--------------------------------------------------------
-| _if-match_ | etag  | If this request header is included and the eTag provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.
+| Name       | Value | Description |
+|:-----------|:------|:--------------------------------------------------------|
+| _if-match_ | etag  | If this request header is included and the eTag provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted. |
 
 ## Request body
 
