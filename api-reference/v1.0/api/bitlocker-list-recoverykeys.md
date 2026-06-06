@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Get a list of the [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) objects and their properties. 
 
-This operation does not return the **key** property. For information about how to read the **key** property, see [Get bitlockerRecoveryKey](bitlockerrecoverykey-get.md).
+This operation doesn't return the **key** property. For information about how to read the **key** property, see [Get bitlockerRecoveryKey](bitlockerrecoverykey-get.md).
 
 You can use this API to programmatically iterate through the list of recovery keys in the tenant and identify devices with BitLocker enabled. For more information, see the sample PowerShell code in [BitLocker recovery process](/windows/security/operating-system-security/data-protection/bitlocker/recovery-process#helpdesk-recovery-in-microsoft-entra-id).
 
@@ -52,7 +52,7 @@ GET /informationProtection/bitlocker/recoveryKeys
 
 ## Optional query parameters
 
-This method supports the `$filter` OData query parameter to filter results by the **deviceId** of the device that the key was most recently backed up to. This method does not support `$top`. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` OData query parameter to filter results by the **deviceId** of the device that the key was most recently backed up to. This method doesn't support `$top`. For general information, see [OData query parameters](/graph/query-parameters).
 
 The response might also contain an `odata.nextLink`, which you can use to page through the result set. For details, see [Paging Microsoft Graph data](/graph/paging).
 
