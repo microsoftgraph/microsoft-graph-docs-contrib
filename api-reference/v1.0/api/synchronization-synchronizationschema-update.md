@@ -122,7 +122,7 @@ HTTP/1.1 204 No Content
 ### Example 2: Add attribute "CustomAttribute" to the target system schema
 
 #### Request
-The following example shows a request. It assumes that the attribute "CustomAttribute" does not exist in the target directory schema. If it does exist, the attribute is updated.
+The following example shows a request. It assumes that the attribute "CustomAttribute" doesn't exist in the target directory schema. If it does exist, the attribute is updated.
 
 >**Note:** The request object shown here is shortened for readability. Supply all the properties in an actual call.
 
