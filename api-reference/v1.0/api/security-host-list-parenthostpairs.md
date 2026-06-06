@@ -55,8 +55,8 @@ The following properties can be used for `$select` calls.
 |Property|Example|Notes|
 |:---|:---|:---|
 |All [hostPair](../resources/security-hostpair.md) properties|`$select=id,firstSeenDateTime`|Use the name as it appears in the [hostPair](../resources/security-hostpair.md) resource.|
-|parentHost|`$select=parentHost`|Does not support selecting on nested properties (for example `parentHost/id`).|
-|childHost|`$select=childHost`|Does not support selecting on nested properties (for example `childHost/id`).|
+|parentHost|`$select=parentHost`|Doesn't support selecting on nested properties (for example `parentHost/id`).|
+|childHost|`$select=childHost`|Doesn't support selecting on nested properties (for example `childHost/id`).|
 
 ## Request headers
 |Name|Description|
