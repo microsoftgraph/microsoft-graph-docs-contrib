@@ -46,9 +46,10 @@ Use the [cloudPcProvisioningPolicy: apply](/graph/api/cloudpcprovisioningpolicy-
 
 Use the [user configuration API in Microsoft Graph](/graph/user-configuration-concept-overview) to build solutions that store and retrieve per-folder configuration data alongside Exchange Online mailbox content.
 
-### Security | Microsoft Defender for Identity
+### Security
 
-Introduced [sensor migration](../api-reference/beta/resources/security-sensormigration.md) capabilities to migrate eligible Microsoft Defender for Identity sensors.
+- Introduced [sensor migration](/graph/api/resources/security-sensormigration?view=graph-rest-beta&preserve-view=true) capabilities to migrate eligible Microsoft Defender for Identity sensors.
+- Use the [Create manualAlert](/graph/api/security-alert-post-manualalert?view=graph-rest-beta&preserve-view=true) method to create a manual security alert with specified entities and metadata. The new [manualAlert](/graph/api/resources/security-manualalert?view=graph-rest-beta&preserve-view=true) resource type derives from [alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true) and uses the [entityDefinitionInput](/graph/api/resources/security-entitydefinitioninput?view=graph-rest-beta&preserve-view=true) complex type to specify associated entities.
 
 ### Sites and lists
 
@@ -68,6 +69,10 @@ Application permissions for the [user: translateExchangeIds](/graph/api/user-tra
 
 - Added the [agentUser](/graph/api/resources/agentuser) resource type and related methods for managing the lifecycle of agent user identities.
 - Added [verifiedIdProfile](/graph/api/resources/verifiedidprofile) resources and related profile configuration for configuring Microsoft Entra Verified ID.
+
+### Backup storage
+
+Added the [emailNotificationsSetting](/graph/api/resources/emailnotificationssetting) resource and its associated methods to configure multi-admin email notifications for Microsoft 365 Backup Storage, including which administrators or custom recipients receive notifications and which event types they're notified about.
 
 ### Files
 
@@ -168,8 +173,6 @@ Added the [identityCorrelation](/graph/api/resources/identitycorrelation?view=gr
   - [submissionMailEvidence](/graph/api/resources/security-submissionmailevidence?view=graph-rest-beta&preserve-view=true)
 - Added the **categories** property to the [alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true) resource.
 - Deprecated the **category** property on the [alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true) resource. Use the **categories** property instead.
-
-Use the [Create manualAlert](/graph/api/security-alert-post-manualalert?view=graph-rest-beta&preserve-view=true) method to create a manual security alert with specified entities and metadata. The new [manualAlert](/graph/api/resources/security-manualalert?view=graph-rest-beta&preserve-view=true) resource type derives from [alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true) and uses the [entityDefinitionInput](/graph/api/resources/security-entitydefinitioninput?view=graph-rest-beta&preserve-view=true) complex type to specify associated entities.
 
 ### Security | Data security and compliance
 
