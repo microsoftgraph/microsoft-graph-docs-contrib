@@ -23,6 +23,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "accesspackage_getapplicablepolicyrequirements" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackage-getapplicablepolicyrequirements-permissions.md)]
 
+[!INCLUDE [rbac-accesspackage-getapplicablepolicyrequirements](../includes/rbac-for-apis/accesspackage-getapplicablepolicyrequirements.md)]
+
 ## HTTP request
 
 <!-- {
