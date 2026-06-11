@@ -241,7 +241,6 @@ Content-Type: application/json
 
 ---
 
-
 ---
 
 #### Response
@@ -415,3 +414,4 @@ Content-Type: application/json
   }
 }
 ```
+
