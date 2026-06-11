@@ -19,6 +19,8 @@ Retrieve [creation options](../resources/webauthncredentialcreationoptions.md) r
 >
 > This API has a [known issue](/graph/known-issues#fido2-provisioning-api-requires-self-service-setup-to-be-enabled) that requires **Allow self-service setup** to be enabled in the FIDO2 authentication method policy.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

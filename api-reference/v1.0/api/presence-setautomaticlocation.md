@@ -20,7 +20,7 @@ Update the automatic work location for a [user](../resources/user.md). The autom
 
 Use this operation from clients or services that automatically detect location (for example, Teams, network and location agents, or OEM docking apps). It doesn't clear manual or scheduled signals.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
