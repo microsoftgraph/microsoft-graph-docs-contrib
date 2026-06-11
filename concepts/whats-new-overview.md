@@ -171,7 +171,8 @@ Use the [List](/graph/api/peopleadminsettings-list-photoupdatesettings?view=grap
 
 ### Reports | Identity and access reports
 
-Added the [identityCorrelation](/graph/api/resources/identitycorrelation?view=graph-rest-beta&preserve-view=true) resource type and related methods for viewing identity correlation reports between on-premises directories and Microsoft Entra ID.
+- Added the [identityCorrelation](/graph/api/resources/identitycorrelation?view=graph-rest-beta&preserve-view=true) resource type and related methods for viewing identity correlation reports between on-premises directories and Microsoft Entra ID.
+- Added the `passwordSubmit` member to the [authenticationEventType](/graph/api/resources/enums?view=graph-rest-beta&preserve-view=true#authenticationeventtype-values) enumeration, surfaced through [appliedAuthenticationEventListener](/graph/api/resources/appliedauthenticationeventlistener?view=graph-rest-beta&preserve-view=true), to identify password-submission events in sign-in flows.
 
 ### Security | Alerts and incidents
 

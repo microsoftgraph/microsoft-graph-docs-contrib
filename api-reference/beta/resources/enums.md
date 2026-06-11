@@ -4645,6 +4645,7 @@ Possible values for user account types (group membership), per Windows definitio
 |attributeCollectionStart|
 |attributeCollectionSubmit|
 |emailOtpSend|
+|passwordSubmit|
 
 ### microsoftAuthenticatorAuthenticationMethodClientAppName values
 
