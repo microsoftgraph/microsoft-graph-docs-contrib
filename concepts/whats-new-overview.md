@@ -116,6 +116,7 @@ Use the mailbox import and export APIs in Microsoft Graph to build solutions tha
 
 - Added the migration guide [Migrate from legacy alerts to the alerts and incidents API](/graph/alertsv1-alertsv2-migration) to help you transition your apps from the deprecated Microsoft Graph security alerts v1 API to the new alerts and incidents API.
 - Extended the [alertEvidence](/graph/api/resources/security-alertevidence) base type with additional derived types to provide detailed context about various artifacts involved in [security alerts](/graph/api/resources/security-alert).
+- Added support for the **microsoftSecurityForAI** service source for [security alerts](/graph/api/resources/security-alert).
 - Added the **categories** property to the [alert](/graph/api/resources/security-alert) resource.
 - Deprecated the **category** property on the [alert](/graph/api/resources/security-alert) resource. Use the **categories** property instead.
 
@@ -254,6 +255,7 @@ Use `approverRemove` as a new supported value for the **requestType** property o
 
 - Added the **categories** property to the [alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true) resource.
 - Deprecated the **category** property on the [alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true) resource. Use the **categories** property instead.
+- Added the **microsoftSecurityForAI** member to the **serviceSource** enumeration type for the [alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true) resource to identify alerts created by Microsoft Defender for AI.
 
 ### Teamwork and communications | Apps
 

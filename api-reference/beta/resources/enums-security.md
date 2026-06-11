@@ -945,6 +945,7 @@ Namespace: microsoft.graph.security
 |microsoftDefenderForCloud|
 |microsoftSentinel|
 |microsoftThreatIntelligence|
+|microsoftSecurityForAI|
 
 ### environmentKind values 
 
