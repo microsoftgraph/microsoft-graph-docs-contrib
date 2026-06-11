@@ -311,7 +311,7 @@ Use the **administrationScopeTargets** relationship on the [workflowBase](/graph
 - Added migration guidance for Microsoft Defender for Endpoint (MDE) advanced hunting APIs to help organizations transition from the retired APIs that were available through the `https://api.securitycenter.microsoft.com` endpoint to the advanced hunting APIs available in Microsoft Graph. For more information, see [Migrate from the older APIs](/graph/api/resources/security-api-overview#migrate-from-older-apis).
 - The Defender for Identity sensor management APIs let you discover eligible servers, control automatic onboarding, activate or deactivate the unified agent, and manage required auditing settings during activation—all through a single management interface.
 
-### Tenants | Governance
+### Tenants | Tenant governance
 
 Introduced the tenant governance API set to enable organizations to manage and govern relationships with other tenants. Key capabilities include:
 - Activating invitation reception and related tenant discovery
