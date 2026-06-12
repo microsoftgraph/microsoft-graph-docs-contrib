@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "52f06bbd-0deb-4603-8267-171d0138c929",
+          "ApiChange": "Method",
+          "ChangedApiName": "fileStorageContainer",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get fileStorageContainer permission](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-get-permissions?view=graph-rest-beta) method to the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainer"
+        },
+        {
+          "Id": "52f06bbd-0deb-4603-8267-171d0138c929",
+          "ApiChange": "Method",
+          "ChangedApiName": "fileStorageContainer",
+          "ChangeType": "Change",
+          "Description": "Updated the [Update fileStorageContainer permission](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-update-permissions?view=graph-rest-beta) method to support the `PATCH /storage/fileStorage/containers/{containerId}/permissions(email='{email}')` and `PATCH /storage/fileStorage/containers/{containerId}/permissions(userPrincipalName='{userPrincipalName}')` endpoints.",
+          "Target": "fileStorageContainer"
+        },
+        {
+          "Id": "52f06bbd-0deb-4603-8267-171d0138c929",
+          "ApiChange": "Method",
+          "ChangedApiName": "fileStorageContainer",
+          "ChangeType": "Change",
+          "Description": "Updated the [Delete fileStorageContainer permission](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-delete-permissions?view=graph-rest-beta) method to support the `DELETE /storage/fileStorage/containers/{containerId}/permissions(email='{email}')` and `DELETE /storage/fileStorage/containers/{containerId}/permissions(userPrincipalName='{userPrincipalName}')` endpoints.",
+          "Target": "fileStorageContainer"
+        }
+      ],
+      "Id": "52f06bbd-0deb-4603-8267-171d0138c929",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-06-11T00:00:00Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "10db11ae-ca4a-4252-9034-f5791814123c",
           "ApiChange": "Parameter",
           "ChangedApiName": "@microsoft.graph.conflictBehavior",
@@ -15,6 +49,24 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2026-06-11T00:00:00.0000000Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c945f437-2c4d-4061-b53a-f8c787737202",
+          "ApiChange": "Method",
+          "ChangedApiName": "fileStorageContainer",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get fileStorageContainer permission](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-get-permissions?view=graph-rest-1.0) method to the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-1.0) resource.",
+          "Target": "fileStorageContainer"
+        }
+      ],
+      "Id": "c945f437-2c4d-4061-b53a-f8c787737202",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-06-11T00:00:00Z",
       "WorkloadArea": "Files",
       "SubArea": ""
     },

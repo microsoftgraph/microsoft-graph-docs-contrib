@@ -97,6 +97,7 @@ Added the [emailNotificationsSetting](/graph/api/resources/emailnotificationsset
 ### Files
 
 - Use the [Upsert permissions](/graph/api/filestoragecontainer-patch-permissions) API to create or update up to 10 [permission](/graph/api/resources/permission) objects on a [fileStorageContainer](/graph/api/resources/filestoragecontainer) in a single request.
+- Use the [Get fileStorageContainer permission](/graph/api/filestoragecontainer-get-permissions) API to get a specific [permission](/graph/api/resources/permission) from a [fileStorageContainer](/graph/api/resources/filestoragecontainer) object.
 - Added the **@microsoft.graph.conflictBehavior** annotation parameter to the [Create permission](/graph/api/filestoragecontainer-post-permissions) method. Use `fail` to return a `409 Conflict` response code when the identity exists with a different role, or `replace` to update the existing role.
 
 ### Groups
@@ -156,6 +157,8 @@ Supports additional theme colors in the [scheduleEntityTheme](/graph/api/resourc
 ### Files
 
 - Use the [Upsert permissions](/graph/api/filestoragecontainer-patch-permissions?view=graph-rest-beta&preserve-view=true) API to create or update up to 10 [permission](/graph/api/resources/permission?view=graph-rest-beta&preserve-view=true) objects on a [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true) in a single request.
+- Added `/storage/fileStorage/containers/{containerId}/permissions(email='{email}')` and `/storage/fileStorage/containers/{containerId}/permissions(userPrincipalName='{userPrincipalName}')` as supported endpoints for the [Update fileStorageContainer permission](/graph/api/filestoragecontainer-update-permissions?view=graph-rest-beta&preserve-view=true) and [Delete fileStorageContainer permission](/graph/api/filestoragecontainer-delete-permissions?view=graph-rest-beta&preserve-view=true) APIs. Use either the permission ID or the user's **email** or **userPrincipalName** to target a permission.
+- Use the [Get fileStorageContainer permission](/graph/api/filestoragecontainer-get-permissions?view=graph-rest-beta&preserve-view=true) API to get a specific [permission](/graph/api/resources/permission?view=graph-rest-beta&preserve-view=true) from a [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true) object by using either the permission ID or the user's **email** or **userPrincipalName** to target a permission.
 - Added the **@microsoft.graph.conflictBehavior** annotation parameter to the [Create permission](/graph/api/filestoragecontainer-post-permissions?view=graph-rest-beta&preserve-view=true) method. Use `fail` to return a `409 Conflict` response code when the identity exists with a different role, or `replace` to update the existing role.
 
 ### Identity and access | Governance
