@@ -44,6 +44,7 @@ Every **accessReviewInstance** contains a list of [decisions](accessreviewinstan
 ## Properties
 | Property | Type | Description |
 | :-------------------------| :---------------------------------- | :---------- |
+| delegatedBy | [userIdentity](../resources/useridentity.md) collection | The identities of users who delegated this review instance to the current reviewer. Null if the instance wasn't delegated. Only returned via [filterByCurrentUser](../api/accessreviewinstance-filterbycurrentuser.md) when explicitly requested via `$select`. Read-only. |
 | endDateTime | DateTimeOffset | DateTime when review instance is scheduled to end. The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Supports `$select`. Read-only.|
 | errors | [accessReviewError](accessreviewerror.md) collection| Collection of errors in an access review instance lifecycle. Read-only. |
 | fallbackReviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| This collection of reviewer scopes is used to define the list of fallback reviewers. These fallback reviewers are notified to take action if no users are found from the list of reviewers specified. This could occur when either the group owner is specified as the reviewer but the group owner doesn't exist, or manager is specified as reviewer but a user's manager doesn't exist. Supports `$select`.|
@@ -77,12 +78,17 @@ The following JSON representation shows the resource type.
 
 ```json
 {
- "@odata.type": "#microsoft.graph.accessReviewInstance",
- "id": "string (identifier)",
- "startDateTime": "string (timestamp)",
- "endDateTime": "string (timestamp)",
- "status": "string",
- "scope": {
+  "@odata.type": "#microsoft.graph.accessReviewInstance",
+  "id": "string (identifier)",
+  "startDateTime": "string (timestamp)",
+  "endDateTime": "string (timestamp)",
+  "status": "string",
+  "delegatedBy": [
+    {
+      "@odata.type": "microsoft.graph.userIdentity"
+    }
+  ],
+  "scope": {
     "@odata.type": "microsoft.graph.accessReviewScope"
   },
   "reviewers": [

@@ -814,6 +814,7 @@ Namespace: microsoft.graph.security
 |microsoftDefenderForCloud|
 |microsoftSentinel|
 |microsoftThreatIntelligence|
+|microsoftSecurityForAI|
 
 ### serviceStatus values
 

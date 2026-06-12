@@ -320,7 +320,7 @@
       "Version": "beta",
       "CreatedDateTime": "2026-03-12T18:25:50.8142806Z",
       "WorkloadArea": "Tenants",
-      "SubArea": "Governance"
+      "SubArea": "Tenant governance"
     },
     {
       "ChangeList": [
@@ -338,7 +338,7 @@
       "Version": "beta",
       "CreatedDateTime": "2026-03-23T18:25:50.8152046Z",
       "WorkloadArea": "Tenants",
-      "SubArea": "Governance"
+      "SubArea": "Tenant governance"
     },
     {
       "ChangeList": [
@@ -364,7 +364,7 @@
       "Version": "beta",
       "CreatedDateTime": "2026-06-02T17:43:19.8866900Z",
       "WorkloadArea": "Tenants",
-      "SubArea": "Governance"
+      "SubArea": "Tenant governance"
     }
   ]
 }

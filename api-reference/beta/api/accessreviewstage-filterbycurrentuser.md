@@ -39,9 +39,12 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|on|accessReviewStageFilterByCurrentUserOptions|Filters results based on the calling user. Allowed value is `reviewer`. This returns all accessReviewStage objects on the accessReviewInstance where the calling user is a reviewer. Required.|
+|on|accessReviewStageFilterByCurrentUserOptions|Filters results based on the calling user. Possible values are `reviewer`, `unknownFutureValue`, `directReviewer`, and `delegatedReviewer`. Use the `Prefer: include-unknown-enum-members` request header to get the `directReviewer` and `delegatedReviewer` values in this evolvable enumeration. `reviewer` returns all accessReviewStage objects on the accessReviewInstance where the calling user is a reviewer, `directReviewer` returns only stages with decisions directly assigned to the current user, and `delegatedReviewer` returns only stages with decisions delegated to the current user. Required.|
 
 This function also supports the `$select`, `$filter`, `$orderby`, `$skip` and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+>[!NOTE]
+>The `delegatedBy` property isn't returned for **accessReviewStage** responses. Use `delegatedReviewer` only to filter the returned stages.
 
 ## Request headers
 |Name|Description|
@@ -144,4 +147,3 @@ Content-Type: application/json
     ]
 }
 ```
-

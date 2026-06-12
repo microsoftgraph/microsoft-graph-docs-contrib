@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 06/01/2026
+ms.date: 06/08/2026
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -240,10 +240,10 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 | Category | Application | Delegated |
 |--|--|--|
-| Identifier | ad25cc1d-84d8-47df-a08e-b34c2e800819 | - |
-| DisplayText | Create agent identities without an agent blueprint parent | - |
-| Description | Allows the app to create agent identities, even if the app is not the parent agent identity blueprint. | - |
-| AdminConsentRequired | Yes | - |
+| Identifier | ad25cc1d-84d8-47df-a08e-b34c2e800819 | e75eeac6-d759-4ba3-ae5c-773a27efafba |
+| DisplayText | Create agent identities without an agent blueprint parent | Create agent identities without an agent blueprint parent |
+| Description | Allows the app to create agent identities, even if the app is not the parent agent identity blueprint. | Allows client to create agent identities, even if client is not the parent agent identity blueprint. |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 
@@ -440,7 +440,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | b782c9ad-6f2b-4894-a21b-72bf22417f0a | ad57fb88-4658-4fd6-ab7d-e43184b08e4e |
 | DisplayText | Read and write all agent ID users' full profiles | Read and write all agent ID users' full profiles |
-| Description | Allows the app to read and update agent ID user profiles and read basic company properties without a signed in user. | Allows the app to read and write the full set of profile properties, reports, and managers of agent ID users in your organization, and read basic company properties, on behalf of the signed-in user. |
+| Description | Allows the app to create agent users, read and update agent ID user profiles and read basic company properties, delete and restore agent users without a signed in user. | Allows the app to create agent users, read and write the full set of profile properties, reports, and managers of agent ID users, delete and restore agent users in your organization, and read basic company properties, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -450,8 +450,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | 4aa6e624-eee0-40ab-bdd8-f9639038a614 | 52a417d9-0b3c-4466-9a3b-66960de73d74 |
-| DisplayText | Read and write all agent ID users' full profiles | Read and write all agent ID users' full profiles |
-| Description | Allows the app to read and update ID agent user profiles and read basic company properties without a signed in user. | Allows the app to read and write the full set of profile properties, reports, and managers of agent ID users in your organization, and read basic company properties, on behalf of the signed-in user. |
+| DisplayText | Read and write full profiles of agent ID users under an agent blueprint | Read and write full profiles of agent ID users under an agent blueprint |
+| Description | Allows the app to create agent users, read and update agent ID user profiles, delete and restore agent users under an agent blueprint, and read basic company properties without a signed-in user. | Allows the app to create agent users, read and write the full set of profile properties, reports, and managers of agent ID users in your organization, delete and restore agent users under an agent blueprint, and read basic company properties, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -10439,4 +10439,3 @@ Learn more about [RSC authorization framework and RSC permissions](/microsofttea
 + [Grant or revoke Microsoft Graph permissions programmatically](permissions-grant-via-msgraph.md)
 
 [MSA]: images/permissions-reference/msa.svg "personal Microsoft accounts (MSA)"
-
