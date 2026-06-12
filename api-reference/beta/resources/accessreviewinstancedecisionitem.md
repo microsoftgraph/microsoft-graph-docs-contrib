@@ -36,21 +36,22 @@ Represents a Microsoft Entra [access review](accessreviewsv2-overview.md) decisi
 |accessReviewId|String|The identifier of the accessReviewInstance parent. Supports `$select`. Read-only.|
 |appliedBy|[userIdentity](../resources/useridentity.md)|The identifier of the user who applied the decision. `00000000-0000-0000-0000-000000000000` if the assigned reviewer hasn't applied the decision or it was automatically applied. Read-only.|
 |appliedDateTime|DateTimeOffset|The timestamp when the approval decision was applied. The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Supports `$select`. Read-only.|
-|applyResult|String|The result of applying the decision. Possible values: `New`, `AppliedSuccessfully`, `AppliedWithUnknownFailure`, `AppliedSuccessfullyButObjectNotFound`, and `ApplyNotSupported`. Supports `$select`, `$orderby`, and `$filter` (`eq` only). Read-only.|
 |applyDescription|String| The description of the apply result. |
+|applyResult|String|The result of applying the decision. Possible values: `New`, `AppliedSuccessfully`, `AppliedWithUnknownFailure`, `AppliedSuccessfullyButObjectNotFound`, and `ApplyNotSupported`. Supports `$select`, `$orderby`, and `$filter` (`eq` only). Read-only.|
 |decision|String|Result of the review. Possible values: `Approve`, `Deny`, `NotReviewed`, or `DontKnow`. Supports `$select`, `$orderby`, and `$filter` (`eq` only). |
+|delegatedBy|[userIdentity](../resources/useridentity.md) collection|The identities of users who delegated this decision item to the current reviewer. Null if the item wasn't delegated. A collection because multiple reviewers can delegate to the same user. Only returned via [filterByCurrentUser](../api/accessreviewinstancedecisionitem-filterbycurrentuser.md) when explicitly requested via `$select`. Read-only.|
 |id|String| The identifier of the decision. Inherited from [entity](../resources/entity.md). Supports `$select`. Read-only.|
 |justification|String|Justification left by the reviewer when they made the decision.|
-| target | [accessReviewInstanceDecisionItemTarget](accessreviewinstancedecisionitemtarget.md)  | The target of this specific decision. Decision targets can be of different types – each one with its own specific properties. See [accessReviewInstanceDecisionItemTarget](accessreviewinstancedecisionitemtarget.md). Read-only. <br/> This property is replaced by the `principal` and `resource` properties in v1.0.|
 | permission | [accessReviewInstanceDecisionItemPermission](accessReviewInstanceDecisionItemPermission.md) | The permission that grants the principal access to a resource. |
 |principal|[identity](../resources/identity.md)|Every decision item in an access review represents a principal's access to a resource. This property represents details of the principal. For example, if a decision item represents access of User "Bob" to Group "Sales" - The principal is "Bob" and the resource is "Sales". Principals can be of two types - userIdentity and servicePrincipalIdentity. Supports `$select`. Read-only.|
 |principalLink|String|Link to the principal object. For example: `https://graph.microsoft.com/v1.0/users/a6c7aecb-cbfd-4763-87ef-e91b4bd509d9`. Read-only.|
+|principalResourceMembership|[decisionItemPrincipalResourceMembership](../resources/decisionItemPrincipalResourceMembership.md)| Every decision item in an access review represents a principal's membership to a resource. This property provides the details of the membership. For example, whether the principal has direct access or indirect access to the resource. Supports `$select`. Read-only.|
 |recommendation|String|A system-generated recommendation for the approval decision based off last interactive sign-in to tenant. Recommend approve if sign-in is within 30 days of start of review. Recommend deny if sign-in is greater than 30 days of start of review. Recommendation not available otherwise. Possible values: `Approve`, `Deny`, or `NoInfoAvailable`. Supports `$select`, `$orderby`, and `$filter` (`eq` only). Read-only.|
 |resource|[accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md)|Every decision item in an access review represents a principal's access to a resource. This property represents details of the resource. For example, if a decision item represents access of User "Bob" to Group "Sales" - The principal is Bob and the resource is "Sales". Resources can be of multiple types. See [accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md). Read-only.|
 |resourceLink|String|A link to the resource. For example, `https://graph.microsoft.com/v1.0/servicePrincipals/c86300f3-8695-4320-9f6e-32a2555f5ff8`. Supports `$select`. Read-only.|
 |reviewedBy|[userIdentity](../resources/useridentity.md)| The identifier of the reviewer. `00000000-0000-0000-0000-000000000000` if the assigned reviewer hasn't reviewed. Supports `$select`. Read-only.|
 |reviewedDateTime|DateTimeOffset| The timestamp when the review decision occurred. Supports `$select`. Read-only.|
-|principalResourceMembership|[decisionItemPrincipalResourceMembership](../resources/decisionItemPrincipalResourceMembership.md)| Every decision item in an access review represents a principal's membership to a resource. This property provides the details of the membership. For example, whether the principal has direct access or indirect access to the resource. Supports `$select`. Read-only.|
+| target | [accessReviewInstanceDecisionItemTarget](accessreviewinstancedecisionitemtarget.md)  | The target of this specific decision. Decision targets can be of different types – each one with its own specific properties. See [accessReviewInstanceDecisionItemTarget](accessreviewinstancedecisionitemtarget.md). Read-only. <br/> This property is replaced by the `principal` and `resource` properties in v1.0.|
 
 
 ## Relationships
@@ -83,6 +84,11 @@ The following JSON representation shows the resource type.
   },
   "reviewedDateTime": "String (timestamp)",
   "decision": "String",
+  "delegatedBy": [
+    {
+      "@odata.type": "microsoft.graph.userIdentity"
+    }
+  ],
   "justification": "String",
   "appliedBy": {
     "@odata.type": "microsoft.graph.userIdentity"

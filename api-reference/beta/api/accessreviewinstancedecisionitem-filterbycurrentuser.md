@@ -51,13 +51,16 @@ The following table shows the query parameters that can be used with this method
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|on|accessReviewInstanceDecisionItemFilterByCurrentUserOptions|Filter to query decision objects for the current user. Possible values are `reviewer`, `unknownFutureValue`. Use `reviewer`. Required.|
+|on|accessReviewInstanceDecisionItemFilterByCurrentUserOptions|Filter to query decision objects for the current user. Possible values are `reviewer`, `unknownFutureValue`, `directReviewer`, and `delegatedReviewer`. Use the `Prefer: include-unknown-enum-members` request header to get the `directReviewer` and `delegatedReviewer` values in this evolvable enumeration. `reviewer` returns all decision items for the current reviewer, `directReviewer` returns only decision items directly assigned to the current user, and `delegatedReviewer` returns only decision items delegated to the current user. Required.|
 
 
 ## Optional query parameters
 This method supports the `$select`, `$filter`, `$orderby`, `$skip`, `$apply`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 The default page size for this API is 100 **accessReviewInstanceDecisionItem** objects. To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
+
+>[!NOTE]
+>The **delegatedBy** property isn't returned by default. To retrieve it, use `$select=delegatedBy` in your query.
 
 ## Request headers
 |Name|Description|
@@ -73,7 +76,7 @@ If successful, this function returns a `200 OK` response code and a [accessRevie
 
 ## Examples
 
-### Example 1: Retrieve all decisions on an accessReviewInstance for which the calling user is the reviewer
+### Example 1: Retrieve all decisions on an accessReviewInstance for which the calling user is the reviewer directly or through delegation
 
 #### Request
 
@@ -173,7 +176,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Retrieve all decisions on an accessReviewStage of a multi-stage access review for which the calling user is the reviewer
+### Example 2: Retrieve all decisions on an accessReviewStage of a multi-stage access review for which the calling user is the reviewer directly or through delegation
 
 #### Request
 
@@ -274,7 +277,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: Retrieve an unique list of principals on an user centric access review or BYOD review instance for which the calling user is the reviewer
+### Example 3: Retrieve a unique list of principals on a user-centric access review or BYOD review instance for which the calling user is the reviewer directly or through delegation
 
 #### Request
 
@@ -350,7 +353,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 4: Retrieve an unique list of resources for an user centric access review or BYOD review instance for which the calling user is the reviewer
+### Example 4: Retrieve a unique list of resources for a user-centric access review or BYOD review instance for which the calling user is the reviewer directly or through delegation
 
 #### Request
 
@@ -408,14 +411,66 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(accessReviewInstanceDecisionItem)",
-    "value": [
-        {
-            "resource": {
+     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(accessReviewInstanceDecisionItem)",
+     "value": [
+         {
+             "resource": {
                 "displayName": "Sample resource",
                 "id": "f83a9c09-3248-41f7-adcb-d68dd59f9477"
             }
         }
-    ]
+     ]
+}
+```
+
+### Example 5: List delegated decision items with delegation source
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "accessreviewinstancedecisionitem_filterbycurrentuser_5"
+}
+-->
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/{accessReviewInstanceId}/decisions/filterByCurrentUser(on='delegatedReviewer')?$select=id,principal,decision,delegatedBy
+```
+
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "accessreviewinstancedecisionitem_filterbycurrentuser_5",
+  "@odata.type": "Collection(microsoft.graph.accessReviewInstanceDecisionItem)"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(accessReviewInstanceDecisionItem)",
+  "value": [
+    {
+      "id": "d1c3a5f2-4e6b-8a9d-0c1e-2f3a4b5c6d7e",
+      "principal": {
+        "@odata.type": "#microsoft.graph.userIdentity",
+        "id": "f4a5b6c7-d8e9-0a1b-2c3d-4e5f6a7b8c9d",
+        "displayName": "Adele Vance",
+        "userPrincipalName": "adelev@contoso.com"
+      },
+      "decision": "NotReviewed",
+      "delegatedBy": [
+        {
+          "@odata.type": "#microsoft.graph.userIdentity",
+          "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+          "displayName": "Alex Wilber",
+          "userPrincipalName": "alexw@contoso.com"
+        }
+      ]
+    }
+  ]
 }
 ```

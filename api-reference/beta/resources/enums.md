@@ -1033,12 +1033,32 @@ Namespace: microsoft.graph
 | onBehalfOf |
 | samlOnBehalfOf |
 
+### accessReviewInstanceFilterByCurrentUserOptions values
+
+| Member |
+| ------------------ |
+| reviewer |
+| unknownFutureValue |
+| directReviewer |
+| delegatedReviewer |
+
 ### accessReviewInstanceDecisionItemFilterByCurrentUserOptions values
 
 | Member |
 | ------------------ |
 | reviewer |
 | unknownFutureValue |
+| directReviewer |
+| delegatedReviewer |
+
+### accessReviewScheduleDefinitionFilterByCurrentUserOptions values
+
+| Member |
+| ------------------ |
+| reviewer |
+| unknownFutureValue |
+| directReviewer |
+| delegatedReviewer |
 
 ### accessReviewStageFilterByCurrentUserOptions values
 
@@ -1046,6 +1066,8 @@ Namespace: microsoft.graph
 | ------------------ |
 | reviewer |
 | unknownFutureValue |
+| directReviewer |
+| delegatedReviewer |
 
 ### continuousAccessEvaluationMode values
 
