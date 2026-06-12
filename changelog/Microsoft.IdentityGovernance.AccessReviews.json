@@ -3,6 +3,48 @@
     {
       "ChangeList": [
         {
+          "Id": "f3dcf90b-1d60-48dd-a438-b10e1072b087",
+          "ApiChange": "Property",
+          "ChangedApiName": "delegatedBy",
+          "ChangeType": "Addition",
+          "Description": "Added the **delegatedBy** property to the [accessReviewInstance](https://learn.microsoft.com/en-us/graph/api/resources/accessreviewinstance?view=graph-rest-beta) resource to identify the users who delegated an access review to the current reviewer.",
+          "Target": "accessReviewInstance"
+        },
+        {
+          "Id": "f3dcf90b-1d60-48dd-a438-b10e1072b087",
+          "ApiChange": "Property",
+          "ChangedApiName": "delegatedBy",
+          "ChangeType": "Addition",
+          "Description": "Added the **delegatedBy** property to the [accessReviewInstanceDecisionItem](https://learn.microsoft.com/en-us/graph/api/resources/accessreviewinstancedecisionitem?view=graph-rest-beta) resource to identify the users who delegated an access review to the current reviewer.",
+          "Target": "accessReviewInstanceDecisionItem"
+        },
+        {
+          "Id": "f3dcf90b-1d60-48dd-a438-b10e1072b087",
+          "ApiChange": "Member",
+          "ChangedApiName": "directReviewer",
+          "ChangeType": "Addition",
+          "Description": "Added the `directReviewer` member to the filter options for the [accessReviewScheduleDefinition: filterByCurrentUser](https://learn.microsoft.com/en-us/graph/api/accessreviewscheduledefinition-filterbycurrentuser?view=graph-rest-beta), [accessReviewInstance: filterByCurrentUser](https://learn.microsoft.com/en-us/graph/api/accessreviewinstance-filterbycurrentuser?view=graph-rest-beta), [accessReviewStage: filterByCurrentUser](https://learn.microsoft.com/en-us/graph/api/accessreviewstage-filterbycurrentuser?view=graph-rest-beta), and [accessReviewInstanceDecisionItem: filterByCurrentUser](https://learn.microsoft.com/en-us/graph/api/accessreviewinstancedecisionitem-filterbycurrentuser?view=graph-rest-beta) APIs to return items directly assigned to the current reviewer.",
+          "Target": "filterByCurrentUser"
+        },
+        {
+          "Id": "f3dcf90b-1d60-48dd-a438-b10e1072b087",
+          "ApiChange": "Member",
+          "ChangedApiName": "delegatedReviewer",
+          "ChangeType": "Addition",
+          "Description": "Added the `delegatedReviewer` member to the filter options for the [accessReviewScheduleDefinition: filterByCurrentUser](https://learn.microsoft.com/en-us/graph/api/accessreviewscheduledefinition-filterbycurrentuser?view=graph-rest-beta), [accessReviewInstance: filterByCurrentUser](https://learn.microsoft.com/en-us/graph/api/accessreviewinstance-filterbycurrentuser?view=graph-rest-beta), [accessReviewStage: filterByCurrentUser](https://learn.microsoft.com/en-us/graph/api/accessreviewstage-filterbycurrentuser?view=graph-rest-beta), and [accessReviewInstanceDecisionItem: filterByCurrentUser](https://learn.microsoft.com/en-us/graph/api/accessreviewinstancedecisionitem-filterbycurrentuser?view=graph-rest-beta) APIs to return items delegated to the current reviewer.",
+          "Target": "filterByCurrentUser"
+        }
+      ],
+      "Id": "f3dcf90b-1d60-48dd-a438-b10e1072b087",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2026-06-11T21:43:31.0560040Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "3b10c86d-2560-4d0c-9f38-bac2ccbba480",
           "ApiChange": "EnumType",
           "ChangedApiName": "accessReviewStageFilterByCurrentUserOptions",

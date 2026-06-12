@@ -77,7 +77,7 @@ Pronouns serve as substitutes for a person's name in sentences, with gender-neut
 
 ## Why configure profile source precedence in your organization?
 
-Profile source precedence allows administrators to control how profile data is displayed across Microsoft 365 experiences. When multiple sources provide overlapping data, administrators can define the authoritative source of profile data by configuring the order of data source priority using the [profilePropertySetting](/graph/api/resources/profilepropertysetting) API. For more information, see [Manage profile source precedence settings for an organization using the Microsoft Graph API (preview)](/graph/profilepriority-configure-profilepropertysetting).
+Profile source precedence allows administrators to control how profile data is displayed across Microsoft 365 experiences. When multiple sources provide overlapping data, administrators can define the authoritative source of profile data by configuring the order of data source priority using the [profilePropertySetting](/graph/api/resources/profilepropertysetting) API. For more information, see [Manage profile source precedence in Microsoft 365](/graph/profilepriority-configure-profilepropertysetting).
 
 ## Why integrate with document-based insights?
 

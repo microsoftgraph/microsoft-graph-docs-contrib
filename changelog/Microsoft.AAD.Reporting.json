@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "09d9ee90-6f2a-4eac-8072-5d539b69492f",
+          "ApiChange": "Member",
+          "ChangedApiName": "passwordSubmit",
+          "ChangeType": "Addition",
+          "Description": "Added the `passwordSubmit` member to the **authenticationEventType** enumeration.",
+          "Target": "authenticationEventType"
+        }
+      ],
+      "Id": "09d9ee90-6f2a-4eac-8072-5d539b69492f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-06-11T17:15:00.0000000Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "24fc1539-9c94-46ea-b2c9-2dff1e63d133",
           "ApiChange": "Resource",
           "ChangedApiName": "identityCorrelation",

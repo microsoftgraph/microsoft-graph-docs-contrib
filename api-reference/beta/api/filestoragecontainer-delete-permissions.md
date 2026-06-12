@@ -5,7 +5,7 @@ author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
-ms.date: 11/12/2024
+ms.date: 05/19/2026
 ---
 
 # Delete permissions
@@ -39,7 +39,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ```http
 DELETE /storage/fileStorage/containers/{containerId}/permissions/{permissionId}
+DELETE /storage/fileStorage/containers/{containerId}/permissions(email='{email}')
+DELETE /storage/fileStorage/containers/{containerId}/permissions(userPrincipalName='{userPrincipalName}')
 ```
+
+Use the `{email}` or `{userPrincipalName}` alternate key only for permissions granted to a user. Use `{permissionId}` for other permission types. Alternate key values are strings and must be URL-encoded if they contain characters that aren't valid in a URL.
+
 ## Request headers
 |Name|Description|
 |:---|:---|
@@ -52,46 +57,54 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Request
+### Example 1: Delete a permission by ID
+
+The following example shows how to delete a permission by ID.
+
+#### Request
+
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_filestoragecontainer_permissions"
+  "name": "delete_filestoragecontainer_permissions_by_id"
 }
 -->
 ```http
-DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/permissions/cmVhZGVyX2k6MCMuZnxtZW1iZXJzaGlwfHJvcnlicjExMUBvdXRsb29rLmNvbQ
+DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/permissions/cmVhZGVyX2k6MCMuZnxtZW1iZXJzaGlwfGpobmFAY29udG9zby5jb20
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-filestoragecontainer-permissions-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### Response
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-filestoragecontainer-permissions-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+The following example shows the response.
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-filestoragecontainer-permissions-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+```http
+HTTP/1.1 204 No Content
+```
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-filestoragecontainer-permissions-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+### Example 2: Delete a permission by userPrincipalName
 
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/delete-filestoragecontainer-permissions-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+The following example shows how to use the **userPrincipalName** alternate key to delete a permission.
 
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/delete-filestoragecontainer-permissions-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### Request
 
----
+The following example shows a request.
 
-### Response
+<!-- {
+  "blockType": "request",
+  "name": "delete_filestoragecontainer_permissions_by_userprincipalname"
+}
+-->
+```http
+DELETE https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/permissions(userPrincipalName='jhan@contoso.com')
+```
+
+#### Response
 The following example shows the response.
 <!-- {
   "blockType": "response",

@@ -50,7 +50,7 @@ Look up a tenant's publicly shared Microsoft Entra details, such as the display 
 
 :::image type="icon" source="/graph/images/tenants/governance-icon.svg" alt-text="" border="false":::
 
-### [Governance](/graph/api/resources/tenantgovernanceservices-tenantgovernance-overview)
+### [Tenant governance](/graph/api/resources/tenantgovernanceservices-tenantgovernance-overview)
 
 Discover related tenants and establish governance relationships at scale. Configure cross-tenant delegated administration, manage multitenant applications across governed tenants, and enforce consistent governance policies.
 

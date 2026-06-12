@@ -8,11 +8,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.DeviceManagement.VirtualEndpoint.ProvisioningPolicies.Item.Apply;
-using Microsoft.Graph.Beta.Models;
 
 var requestBody = new ApplyPostRequestBody
 {
-	PolicySettings = CloudPcPolicySettingType.Region,
 	ReservePercentage = 80,
 };
 

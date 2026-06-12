@@ -11,8 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const apply = {
-  policySettings: 'region',
-  reservePercentage: 80,
+  policySettings: 'region'
 };
 
 await client.api('/deviceManagement/virtualEndpoint/provisioningPolicies/1d164206-bf41-4fd2-8424-a3192d39ffff/apply')

@@ -1,14 +1,14 @@
 ---
-title: "Update fileStoreContainer permission"
-description: "Update fileStorageContainer permission."
+title: "Update fileStorageContainer permission"
+description: "Update a permission on a fileStorageContainer object."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.subservice: "onedrive"
 doc_type: apiPageType
-ms.date: 11/12/2024
+ms.date: 05/19/2026
 ---
 
-# Update fileStoreContainer permission
+# Update fileStorageContainer permission
 
 
 Namespace: microsoft.graph
@@ -37,7 +37,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 -->
 ```http
 PATCH /storage/fileStorage/containers/{containerId}/permissions/{permissionId}
+PATCH /storage/fileStorage/containers/{containerId}/permissions(email='{email}')
+PATCH /storage/fileStorage/containers/{containerId}/permissions(userPrincipalName='{userPrincipalName}')
 ```
+
+Use the `{email}` or `{userPrincipalName}` alternate key only for permissions granted to a user. Use `{permissionId}` for other permission types. Alternate key values are strings and must be URL-encoded if they contain characters that aren't valid in a URL.
 
 ## Request headers
 |Name|Description|
@@ -55,20 +59,25 @@ In the request body, supply the new value for the **roles** property.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code.
+If successful, this method returns a `200 OK` response code and an updated [permission](../resources/permission.md) object in the response body.
 
 ## Examples
 
-### Request
+### Example 1: Update a permission by ID
+
+The following example shows how to update a permission by ID.
+
+#### Request
+
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
-  "name": "update_filestoragecontainer_permissions"
+  "name": "update_filestoragecontainer_permissions_by_id"
 }
 -->
 ```http
-PATCH https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/permissions/cmVhZGVyX2k6MCMuZnxtZW1iZXJzaGlwfHJvcnlicjExMUBvdXRsb29rLmNvbQ
+PATCH https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/permissions/cmVhZGVyX2k6MCMuZnxtZW1iZXJzaGlwfGpobmFAY29udG9zby5jb20
 Content-Type: application/json
 
 {
@@ -76,40 +85,85 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-filestoragecontainer-permissions-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+#### Response
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-filestoragecontainer-permissions-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-filestoragecontainer-permissions-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-filestoragecontainer-permissions-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-filestoragecontainer-permissions-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/update-filestoragecontainer-permissions-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-### Response
 The following example shows the response.
+
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.permission"
 }
 -->
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.permission",
+  "id": "cmVhZGVyX2k6MCMuZnxtZW1iZXJzaGlwfGpobmFAY29udG9zby5jb20",
+  "roles": [
+    "manager"
+  ],
+  "grantedToV2": {
+    "user": {
+      "id": "71392b2f-1765-406e-86af-5907d9bdb2ab",
+      "displayName": "Jacob Hancock",
+      "userPrincipalName": "jhan@contoso.com",
+      "email": "jhan@contoso.com"
+    }
+  }
+}
+```
+
+### Example 2: Update a permission by userPrincipalName
+
+The following example shows how to use the **userPrincipalName** alternate key to update a permission.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_filestoragecontainer_permissions_by_userprincipalname"
+}
+-->
+```http
+PATCH https://graph.microsoft.com/beta/storage/fileStorage/containers/b!ISJs1WRro0y0EWgkUYcktDa0mE8zSlFEqFzqRn70Zwp1CEtDEBZgQICPkRbil_5Z/permissions(userPrincipalName='jhan@contoso.com')
+Content-Type: application/json
+
+{
+  "roles": ["manager"]
+}
+```
+
+#### Response
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.permission"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.permission",
+  "id": "cmVhZGVyX2k6MCMuZnxtZW1iZXJzaGlwfGpobmFAY29udG9zby5jb20",
+  "roles": [
+    "manager"
+  ],
+  "grantedToV2": {
+    "user": {
+      "id": "71392b2f-1765-406e-86af-5907d9bdb2ab",
+      "displayName": "Jacob Hancock",
+      "userPrincipalName": "jhan@contoso.com",
+      "email": "jhan@contoso.com"
+    }
+  }
+}
 ```
 

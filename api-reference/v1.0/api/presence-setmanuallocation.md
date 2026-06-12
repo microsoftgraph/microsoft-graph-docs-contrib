@@ -18,7 +18,7 @@ Set the manual work location signal for a [user](../resources/user.md). The expl
 - Precision (within the same layer): more precise wins (for example, office + building > office)
 - If a manual location is set, it overrides both automatic and scheduled settings.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

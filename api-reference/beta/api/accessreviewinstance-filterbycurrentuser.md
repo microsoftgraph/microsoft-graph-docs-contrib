@@ -34,10 +34,20 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/filterByCurrentUser(on='reviewer')
 ```
 
+## Function parameters
+In the request URL, provide the following query parameters with values.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|on|accessReviewInstanceFilterByCurrentUserOptions|Filters results based on the calling user. Possible values are `reviewer`, `unknownFutureValue`, `directReviewer`, and `delegatedReviewer`. Use the `Prefer: include-unknown-enum-members` request header to get the `directReviewer` and `delegatedReviewer` values in this evolvable enumeration. `reviewer` returns all instances where the calling user is a reviewer, `directReviewer` returns only instances directly assigned to the calling user, and `delegatedReviewer` returns only instances delegated to the calling user. Required.|
+
 ## Optional query parameters
 This method supports `$select`, `$filter`, `$orderby`, `$skip` and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 The default page size for this API is 100 **accessReviewInstance** objects. To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
+
+>[!NOTE]
+>The **delegatedBy** property isn't returned by default. To retrieve it, use `$select=delegatedBy` in your query.
 
 ## Request headers
 |Name|Description|
@@ -53,7 +63,9 @@ If successful, this function returns a `200 OK` response code and a [accessRevie
 
 ## Examples
 
-### Request
+### Example 1: List access review instances assigned directly or through delegation to the current user
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -95,7 +107,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 ---
 
-### Response
+#### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -138,5 +150,91 @@ Content-Type: application/json
             }
         }
     ]
+}
+```
+
+### Example 2: List access review instances delegated to the current user
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "accessreviewinstance_filterbycurrentuser_2"
+}
+-->
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/filterByCurrentUser(on='delegatedReviewer')?$select=id,displayName,status,delegatedBy
+```
+
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "accessreviewinstance_filterbycurrentuser_2",
+  "@odata.type": "Collection(microsoft.graph.accessReviewInstance)"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(accessReviewInstance)",
+  "value": [
+    {
+      "id": "b2c3d4e5-f6a7-8901-bcde-f12345678901",
+      "displayName": "Q2 Application Access Review",
+      "status": "InProgress",
+      "delegatedBy": [
+        {
+          "@odata.type": "#microsoft.graph.userIdentity",
+          "id": "71fa965f-1234-5678-abcd-ef1234567890",
+          "displayName": "Alex Chen",
+          "userPrincipalName": "alexc@contoso.com"
+        }
+      ]
+    }
+  ]
+}
+```
+
+### Example 3: List access review instances directly assigned to the current user
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "accessreviewinstance_filterbycurrentuser_3"
+}
+-->
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitionId}/instances/filterByCurrentUser(on='directReviewer')?$select=id,displayName,status
+```
+
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "name": "accessreviewinstance_filterbycurrentuser_3",
+  "@odata.type": "Collection(microsoft.graph.accessReviewInstance)"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(accessReviewInstance)",
+  "value": [
+    {
+      "id": "9d8c7b6a-5432-10fe-dcba-9876543210ff",
+      "displayName": "Q2 Guest Access Review",
+      "status": "InProgress"
+    }
+  ]
 }
 ```

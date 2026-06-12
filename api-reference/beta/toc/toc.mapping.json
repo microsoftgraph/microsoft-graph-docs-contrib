@@ -3747,7 +3747,7 @@
           ]
         },
         {
-          "name": "Governance (preview)",
+          "name": "Tenant governance (preview)",
           "overview": "../../resources/tenantgovernanceservices-tenantgovernance-overview.md",
           "resources": [
             "microsoft.graph.tenantGovernanceServices.tenantGovernanceSetting",
