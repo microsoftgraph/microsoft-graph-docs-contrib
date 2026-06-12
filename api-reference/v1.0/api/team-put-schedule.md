@@ -51,6 +51,9 @@ PUT /teams/{teamId}/schedule
 
 In the request body, supply a JSON representation of a [schedule](../resources/schedule.md) object.
 
+> [!NOTE]
+> You must set the **timeZone** property to an IANA time zone database (tz database) name, such as `America/Chicago` or `Europe/London`. For the full list of valid values, see [List of tz database time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
+
 ## Response
 
 If successful, this method returns a `200 OK` response code and a [schedule](../resources/schedule.md) object in the response body.
