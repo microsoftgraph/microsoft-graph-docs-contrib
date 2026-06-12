@@ -15,8 +15,8 @@ ms.topic: include
 > - The least privileged permission is `EntitlementMgmt-SubjectAccess.ReadWrite`.
 >
 > **Administrators canceling requests submitted by others:**
-> - The signed-in user **must** be assigned a supported administrator role *(or the caller must hold the `EntitlementManagement.ReadWrite.All` permission, which is the least privileged permission for this scenario)*.
-> - Supported roles, from least to most privileged:
+> - The least privileged permission is `EntitlementManagement.ReadWrite.All`.
+> - The signed-in user **must** be assigned a supported administrator role. Supported roles, from least to most privileged:
 >     - A [role in the Entitlement Management system](/entra/id-governance/entitlement-management-delegate):
 >         - *Access package assignment manager*. **This is the least privileged option**
 >         - *Access package manager*
