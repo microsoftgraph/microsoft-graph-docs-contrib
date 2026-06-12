@@ -23,8 +23,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "accesspackage_getapplicablepolicyrequirements" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackage-getapplicablepolicyrequirements-permissions.md)]
 
-[!INCLUDE [rbac-accesspackage-getapplicablepolicyrequirements](../includes/rbac-for-apis/accesspackage-getapplicablepolicyrequirements.md)]
-
 ## HTTP request
 
 <!-- {
@@ -45,14 +43,14 @@ None.
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
-Don't supply a request body for this method if you wish to retrieve a list of access package requirements as in example 1. If you want to get policy requirements for user scope as in example 2, you must supply a request body.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code and an [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) collection in the response body, one object for each policy for which the user is an **allowedRequestor**. If there's a policy with no requirements, the **accessPackageAssignmentRequestRequirements** has `false` and `null` values. If there are no policies where the user is an **allowedRequestor**, an empty collection is returned instead.
 
 ## Examples
 
-### Example 1: Retrieve a list of access package requirements to create an access package
+### Example 1: Retrieve a list of access package requirements
 
 #### Request
 
@@ -143,123 +141,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Get policy requirements for a given user scope
-
-#### Request
-
-The following example shows a request.
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "sampleKeys": ["b15419bb-5ffc-ea11-b207-c8d9d21f4e9a"],
-  "name": "get_req_for_given_user"
-}-->
-
-```http
-POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackages/b15419bb-5ffc-ea11-b207-c8d9d21f4e9a/getApplicablePolicyRequirements
-
-{
-        "subject": {
-            "objectId": "5acd375c-8acb-45de-a958-fa0dd89259ad"
-        }
-    }
-```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-req-for-given-user-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-req-for-given-user-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-req-for-given-user-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-req-for-given-user-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-req-for-given-user-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-req-for-given-user-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-req-for-given-user-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-#### Response
-
-The following example shows the response.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.accessPackageAssignmentRequestRequirements)"
-}
--->
-
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-    "value": [
-        {
-            "policyId": "d6322c23-04d6-eb11-b22b-c8d9d21f4e9a",
-            "policyDisplayName": "Initial Policy",
-            "policyDescription": "Initial Policy",
-            "isApprovalRequired": false,
-            "isApprovalRequiredForExtension": false,
-            "isRequestorJustificationRequired": false,
-            "questions": [
-                {
-                    "@odata.type": "#microsoft.graph.textInputQuestion",
-                    "id": "5a7f2a8f-b802-4438-bec6-09599bc43e13",
-                    "isRequired": false,
-                    "isAnswerEditable": true,
-                    "sequence": 0,
-                    "isSingleLineQuestion": true,
-                    "text": {
-                        "defaultText": "Enter your mail",
-                        "localizedTexts": []
-                    }
-                }
-            ],
-            "existingAnswers": [
-                {
-                    "@odata.type": "#microsoft.graph.answerString",
-                    "displayValue": "admin@contoso.com",
-                    "value": "admin@contoso.com",
-                    "answeredQuestion": {
-                        "@odata.type": "#microsoft.graph.textInputQuestion",
-                        "id": "5a7f2a8f-b802-4438-bec6-09599bc43e13",
-                        "isRequired": false,
-                        "isAnswerEditable": true,
-                        "sequence": 0,
-                        "isSingleLineQuestion": true,
-                        "text": {
-                            "defaultText": "Enter your mail",
-                            "localizedTexts": []
-                        }
-                    }
-                }
-            ],
-            "schedule": []
-        }
-    ]
-}
-```
-
-### Example 3: Get policy requirements for verifiable credential status requirements
+### Example 2: Get policy requirements for verifiable credential status requirements
 
 #### Request
 

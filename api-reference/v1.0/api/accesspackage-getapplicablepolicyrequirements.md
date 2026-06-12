@@ -21,8 +21,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "accesspackage_getapplicablepolicyrequirements" } -->
 [!INCLUDE [permissions-table](../includes/permissions/accesspackage-getapplicablepolicyrequirements-permissions.md)]
 
-[!INCLUDE [rbac-accesspackage-getapplicablepolicyrequirements](../includes/rbac-for-apis/accesspackage-getapplicablepolicyrequirements.md)]
-
 ## HTTP request
 
 <!-- {
@@ -106,7 +104,33 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "microsoft.graph.accessPackageAssignmentRequestRequirements"
+      "policyId": "d6322c23-04d6-eb11-b22b-c8d9d21f4e9a",
+      "policyDisplayName": "Initial Policy",
+      "policyDescription": "Initial Policy",
+      "isApprovalRequiredForAdd": false,
+      "isApprovalRequiredForUpdate": false,
+      "isRequestorJustificationRequired": false,
+      "allowCustomAssignmentSchedule": true,
+      "schedule": {
+        "expiration": {
+          "endDateTime": null,
+          "duration": "P365D",
+          "type": "afterDuration"
+        }
+      },
+      "questions": [
+        {
+          "@odata.type": "#microsoft.graph.textInputQuestion",
+          "id": "0fd349e2-a3a7-4712-af08-660f29c12b90",
+          "isRequired": true,
+          "sequence": 0,
+          "isSingleLineQuestion": true,
+          "text": {
+            "defaultText": "What is your display name",
+            "localizedTexts": []
+          }
+        }
+      ]
     }
   ]
 }
