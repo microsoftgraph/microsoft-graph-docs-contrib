@@ -16,6 +16,8 @@ Namespace: microsoft.graph.callRecords
 
 Represents the network trace route hops collected for a [media stream](callrecords-mediastream.md).
 
+The `traceRouteHops` collection is not currently supported and returns an empty array.
+
 ## Properties
 
 | Property     | Type        | Description |
