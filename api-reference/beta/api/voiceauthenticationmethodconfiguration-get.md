@@ -6,7 +6,7 @@ ms.reviewer: intelligentaccesspm
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 04/05/2024
+ms.date: 06/15/2026
 ---
 
 # Get voiceAuthenticationMethodConfiguration
@@ -119,7 +119,8 @@ Content-Type: application/json
       }
     ],
     "excludeTargets": [],
-    "isOfficePhoneAllowed": "true"
+    "isOfficePhoneAllowed": "true",
+    "callerIdNumber": null
   }
 }
 ```
