@@ -1,5 +1,41 @@
 {
   "changelog": [
+	{
+      "ChangeList": [
+        {
+          "Id": "41ef4b19-6726-4902-bd04-b860fdfee83a",
+          "ApiChange": "Property",
+          "ChangedApiName": "tenantId",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantId** property to the [userAccount](https://learn.microsoft.com/en-us/graph/api/resources/security-userAccount?view=graph-rest-beta) resource.",
+          "Target": "userAccount"
+        }
+      ],
+      "Id": "41ef4b19-6726-4902-bd04-b860fdfee83a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-06-15T12:29:49.3057503Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Alerts and incidents"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b3888feb-5f4a-42c3-bfed-3785141c6f0f",
+          "ApiChange": "Property",
+          "ChangedApiName": "tenantId",
+          "ChangeType": "Addition",
+          "Description": "Added the **tenantId** property to the [userAccount](https://learn.microsoft.com/en-us/graph/api/resources/security-userAccount?view=graph-rest-1.0) resource.",
+          "Target": "userAccount"
+        }
+      ],
+      "Id": "b3888feb-5f4a-42c3-bfed-3785141c6f0f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-06-15T12:29:49.306421Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Alerts and incidents"
+    },
     {
       "ChangeList": [
         {
