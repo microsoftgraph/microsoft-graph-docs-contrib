@@ -2,7 +2,7 @@
 title: "correlationReason enum type"
 description: "The reasons alerts or incidents are correlated together."
 author: "HarelDamti"
-ms.date: 02/24/2026
+ms.date: 05/06/2026
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: enumPageType
@@ -11,8 +11,6 @@ doc_type: enumPageType
 # correlationReason enum type
 
 Namespace: microsoft.graph.security
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 The reasons alerts or incidents are correlated together through the [alert: moveAlerts](../api/security-alert-movealerts.md) and [incident: mergeIncidents](../api/security-incident-mergeincidents.md) APIs.
 
