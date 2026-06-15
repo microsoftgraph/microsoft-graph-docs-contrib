@@ -47,7 +47,7 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/v
 
 |Property|Type|Description|
 |:---|:---|:---|
-|callerIdNumber|String|The caller ID phone number to display when voice call authentication method calls are placed.|
+|callerIdNumber|String|The caller ID phone number to display when voice call authentication method calls are placed. Only US phone numbers are supported. The value should be a 10-digit US number (for example, `2065551234`) or an 11-digit number with the US country code prefix `1` (for example, `12065551234`). Non-numeric characters are ignored. If the value isn't a valid US phone number, the system default caller ID is used.|
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from the policy.|
 |isOfficePhoneAllowed|Boolean|`true` if users can register office phones, otherwise, `false`.|
 |state|authenticationMethodState|The possible values are: `enabled`, `disabled`.|
