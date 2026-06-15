@@ -43,6 +43,8 @@ PATCH /security/attackSimulation/simulations/{simulationId}
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
+[!IMPORTANT] You can only update simulations that are in draft status. Simulations in any other state do not support updates.
+
 |Property|Type|Description|
 |:---|:---|:---|
 |attackTechnique|[simulationAttackTechnique](../resources/simulation.md#simulationattacktechnique-values)|The social engineering technique used in the attack simulation and training campaign. Supports `$filter` and `$orderby`. The possible values are: `unknown`, `credentialHarvesting`, `attachmentMalware`, `driveByUrl`, `linkInAttachment`, `linkToMalwareFile`, `unknownFutureValue`, `oAuthConsentGrant`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `oAuthConsentGrant`. For more information about the types of social engineering attack techniques, see [simulations](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations).|
@@ -51,12 +53,12 @@ PATCH /security/attackSimulation/simulations/{simulationId}
 |durationInDays|Int32|Simulation duration in days.|
 |excludedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|Users excluded from the simulation.|
 |includedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|Users targeted in the simulation.|
-|payload|[payload](../resources/payload.md)|Payload associated with the simulation.|
+|payload|[payload](../resources/payload.md)|Payload associated with the simulation. Required|
 |status|[simulationStatus](../resources/simulation.md#simulationstatus-values)|Status of the attack simulation and training campaign. Supports `$filter` and `$orderby`. The possible values are: `unknown`, `draft`, `running`, `scheduled`, `succeeded`, `failed`, `cancelled`, `excluded`, `unknownFutureValue`.|
 
 ## Response
 
-If successful, this method returns a `202 Accepted` response code and a tracking header named `location` in the response.
+This method returns a `202 Accepted` response code and a tracking header named `location` in the response that you should poll to determine the outcome of the operation.
 
 ## Examples
 
