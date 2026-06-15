@@ -30,7 +30,7 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|callerIdNumber|String|The caller ID number to be used when voice call authentication method phone calls are placed. Only US phone numbers are supported. The value must be specified in [E.164](https://en.wikipedia.org/wiki/E.164) format, for example, `+15551234567`.|
+|callerIdNumber|String|The caller ID phone number to display when voice call authentication method calls are placed.|
 |excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from the policy.|
 |id|String|The authentication method policy identifier.|
 |isOfficePhoneAllowed|Boolean|`true` if users can register office phones, otherwise, `false`. |
@@ -56,7 +56,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.voiceAuthenticationMethodConfiguration",
   "id": "String (identifier)",
   "state": "String",
-  "callerIdNumber": "+15551234567",
+  "callerIdNumber": "String",
   "excludeTargets": [
     {
       "@odata.type": "microsoft.graph.excludeTarget"
