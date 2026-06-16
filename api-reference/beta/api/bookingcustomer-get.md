@@ -30,7 +30,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 GET /solutions/bookingbusinesses/{id}/customers/{id}
 ```
 
-> **Note:** This method currently requires the ID to be Base64 encoded. GUID IDs do not work.
+> **Note:** This method currently requires the ID to be Base64 encoded. GUID IDs don't work.
 
 ## Optional query parameters
 

@@ -34,7 +34,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/application-addkey-permissions.md)]
 
 > [!NOTE]
-> An application does not need any specific permission to roll its own keys. 
+> An application doesn't need any specific permission to roll its own keys. 
 
 [!INCLUDE [rbac-apps-serviceprincipal-creds-apis](../includes/rbac-for-apis/rbac-apps-serviceprincipal-creds-apis.md)]
 

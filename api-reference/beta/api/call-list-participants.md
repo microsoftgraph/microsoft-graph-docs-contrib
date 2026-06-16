@@ -36,7 +36,7 @@ GET /communications/calls/{id}/participants
 ```
 > **Notes:**
 > - The `/app` path is deprecated. Going forward, use the `/communications` path.
-> - This request does not support peer-to-peer calls.
+> - This request doesn't support peer-to-peer calls.
 
 ## Optional query parameters
 

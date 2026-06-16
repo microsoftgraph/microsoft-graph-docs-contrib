@@ -61,7 +61,7 @@ The following table shows the parameters that can be used with this action.
 |scopeType|String|The type of the scope where the alert is created. `DirectoryRole` is the only supported one for Microsoft Entra roles. |
 |scopeId|String|The identifier of the scope where the alert applies. `/` is the only supported one for the tenant.|
 
-For refreshing a single alert, do not specify a request body.
+For refreshing a single alert, don't specify a request body.
 
 ## Response
 

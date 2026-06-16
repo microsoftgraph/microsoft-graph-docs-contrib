@@ -37,7 +37,7 @@ GET /privacy/subjectRightsRequests/{subjectRightsRequestId}/notes
 ```
 
 ## Optional query parameters
-This method does not support the [OData query parameters](/graph/query-parameters) to help customize the response.
+This method doesn't support the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|

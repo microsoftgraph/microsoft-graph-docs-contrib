@@ -61,7 +61,7 @@ This method also supports some of the [OData Query Parameters](/graph/query-para
 **CalendarView** with `$top` has a minimum value of 1 and maximum of 1000.
 
 > [!NOTE]
-> The **createdDateTime** and **lastModifiedDateTime** properties of [event](../resources/event.md) do not support `$select`. To get their values, simply query on **calendarView** without applying `$select`.
+> The **createdDateTime** and **lastModifiedDateTime** properties of [event](../resources/event.md) don't support `$select`. To get their values, simply query on **calendarView** without applying `$select`.
 
 ## Request headers
 | Name       | Type | Description |

@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [verticalSection](../resources/verticalSection.md) object.
 
-If the vertical section does not exist, this method returns a `404 NotFound` response code.
+If the vertical section doesn't exist, this method returns a `404 NotFound` response code.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -52,7 +52,7 @@ In the request body, supply a JSON representation of the [verticalSection](../re
 
 If successful, this method returns a `200 OK` response code and an updated [verticalSection](../resources/verticalSection.md) object in the response body.
 
-If the vertical section does not exist, this method returns a `404 NotFound` response code.
+If the vertical section doesn't exist, this method returns a `404 NotFound` response code.
 
 ## Examples
 

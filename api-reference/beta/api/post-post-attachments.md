@@ -60,7 +60,7 @@ In the request body, provide a JSON object that includes a **post** parameter.
 
 ## Response
 
-If successful, this method returns `202 Accepted` response code. It does not return a response body.
+If successful, this method returns `202 Accepted` response code. It doesn't return a response body.
 
 ## Examples
 ### Example 1: Include a file attachment

@@ -60,7 +60,7 @@ If successful, this method returns `200 OK` response code and a collection of [t
 ## Example
 
 ##### Request 1
-The following example does not specify the `timeZoneStandard` parameter, and gets the list of supported time zones represented in the Windows time zone format.
+The following example doesn't specify the `timeZoneStandard` parameter, and gets the list of supported time zones represented in the Windows time zone format.
 
 # [HTTP](#tab/http)
 <!-- {

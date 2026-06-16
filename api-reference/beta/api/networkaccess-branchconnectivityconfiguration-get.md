@@ -39,7 +39,7 @@ GET /networkAccess/connectivity/branches/{branchSiteId}/connectivityConfiguratio
 ```
 
 ## Optional query parameters
-This method does not supports OData query parameters.
+This method doesn't supports OData query parameters.
 
 ## Request headers
 |Name|Description|

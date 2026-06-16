@@ -51,7 +51,7 @@ GET /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/versions/{vers
 
 ## Optional query parameters
 
-This method does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method doesn't support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
