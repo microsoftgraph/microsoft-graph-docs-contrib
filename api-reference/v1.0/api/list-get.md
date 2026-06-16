@@ -40,7 +40,7 @@ GET /sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
 
 ## Request body
 
-Do not supply a request body with this method.
+Don't supply a request body with this method.
 
 ## Example
 

@@ -65,7 +65,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the [approvalStage](../resources/approvalstage.md) object in the response body. If the caller does not have the right permissions, the method returns a `403 Forbidden` response code.
+If successful, this method returns a `200 OK` response code and the [approvalStage](../resources/approvalstage.md) object in the response body. If the caller doesn't have the right permissions, the method returns a `403 Forbidden` response code.
 
 ## Examples
 

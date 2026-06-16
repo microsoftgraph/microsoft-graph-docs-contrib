@@ -39,7 +39,7 @@ GET /chats/{chat-id}
 
 ## Optional query parameters
 
-This operation does not currently support [OData query parameters](/graph/query-parameters) to customize the response.
+This operation doesn't currently support [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 

@@ -40,7 +40,7 @@ DELETE /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/canvasLayout/ho
 |Name|Description|
 |:------|:------------|
 |Authorization| Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| _if-match_ | eTag. If this request header is included and the eTag provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.|
+| _if-match_ | eTag. If this request header is included and the eTag provided doesn't match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.|
 
 ## Request body
 
@@ -48,7 +48,7 @@ Don't supply a request body with this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content`. It does not return anything in the response body.
+If successful, this method returns a `204 No Content`. It doesn't return anything in the response body.
 
 ## Example
 

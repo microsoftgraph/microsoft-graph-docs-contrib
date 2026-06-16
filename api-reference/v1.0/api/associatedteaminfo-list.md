@@ -38,7 +38,7 @@ GET /users/{user-id}/teamwork/associatedTeams
 ```
 
 ## Optional query parameters
-This method does not currently support the [OData query parameters](/graph/query-parameters) to customize the response.
+This method doesn't currently support the [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 |Name|Description|

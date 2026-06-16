@@ -30,7 +30,7 @@ The signed-in user must also be assigned one of the following [directory roles](
 + Attribute Assignment Administrator
 + Attribute Definition Administrator
 
-By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes.
+By default, Global Administrator and other administrator roles don't have permissions to read, define, or assign custom security attributes.
 
 ## HTTP request
 
