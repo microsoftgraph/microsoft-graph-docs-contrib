@@ -11,7 +11,6 @@ from msgraph.generated.models.profile_card_annotation import ProfileCardAnnotati
 from msgraph.generated.models.display_name_localization import DisplayNameLocalization
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ProfileCardProperty(
-	directory_property_name = "CustomAttribute1",
 	annotations = [
 		ProfileCardAnnotation(
 			display_name = "Cost Center",
@@ -23,6 +22,10 @@ request_body = ProfileCardProperty(
 			],
 		),
 	],
+	directory_property_name = "CustomAttribute1",
+	additional_data = {
+			"is_visible" : True,
+	}
 )
 
 result = await graph_client.admin.people.profile_card_properties.post(request_body)
