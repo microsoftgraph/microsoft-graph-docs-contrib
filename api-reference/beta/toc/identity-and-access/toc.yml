@@ -1498,6 +1498,8 @@ items:
         href: ../../api/identitygovernance-workflow-delete.md
       - name: Activate
         href: ../../api/identitygovernance-workflow-activate.md
+      - name: Activate and wait
+        href: ../../api/identitygovernance-workflow-activateandwait.md
       - name: Activate with scope
         href: ../../api/identitygovernance-workflow-activatewithscope.md
       - name: List users in scope
@@ -1547,6 +1549,52 @@ items:
         items:
         - name: Overview
           href: ../../resources/identitygovernance-lifecycleworkflows-reporting-overview.md
+        - name: Run
+          items:
+          - name: Run
+            href: ../../resources/identitygovernance-run.md
+          - name: List runs
+            href: ../../api/identitygovernance-workflow-list-runs.md
+          - name: Get runs
+            href: ../../api/identitygovernance-run-get.md
+          - name: Get summary
+            href: ../../api/identitygovernance-run-summary.md
+          - name: List subjectProcessingResults
+            href: ../../api/identitygovernance-run-list-subjectprocessingresults.md
+          - name: List task processing results
+            href: ../../api/identitygovernance-run-list-taskprocessingresults.md
+          - name: List reprocessedRuns
+            href: ../../api/identitygovernance-run-list-reprocessedruns.md
+          - name: Remove reprocessedRuns
+            href: ../../api/identitygovernance-run-delete-reprocessedruns.md
+        - name: Subject processing result
+          items:
+          - name: Subject processing result
+            href: ../../resources/identitygovernance-subjectprocessingresult.md
+          - name: List (from run)
+            href: ../../api/identitygovernance-run-list-subjectprocessingresults.md
+          - name: List (from taskReport)
+            href: ../../api/identitygovernance-taskreport-list-subjectprocessingresults.md
+          - name: Get
+            href: ../../api/identitygovernance-subjectprocessingresult-get.md
+        - name: Task processing result
+          items:
+          - name: Task processing result
+            href: ../../resources/identitygovernance-taskprocessingresult.md
+          - name: Resume
+            href: ../../api/identitygovernance-taskprocessingresult-resume.md
+        - name: Task report
+          items:
+          - name: Task report
+            href: ../../resources/identitygovernance-taskreport.md
+          - name: List task reports
+            href: ../../api/identitygovernance-workflow-list-taskreports.md
+          - name: Get summary
+            href: ../../api/identitygovernance-taskreport-summary.md
+          - name: List subjectProcessingResults
+            href: ../../api/identitygovernance-taskreport-list-subjectprocessingresults.md
+          - name: List task processing results
+            href: ../../api/identitygovernance-taskreport-list-taskprocessingresults.md
         - name: User processing result
           items:
           - name: User processing result
@@ -1563,38 +1611,6 @@ items:
             href: ../../api/identitygovernance-userprocessingresult-list-reprocessedruns.md
           - name: Remove reprocessedRuns
             href: ../../api/identitygovernance-userprocessingresult-delete-reprocessedruns.md
-        - name: Task report
-          items:
-          - name: Task report
-            href: ../../resources/identitygovernance-taskreport.md
-          - name: List task reports
-            href: ../../api/identitygovernance-workflow-list-taskreports.md
-          - name: Get summary
-            href: ../../api/identitygovernance-taskreport-summary.md
-          - name: List task processing results
-            href: ../../api/identitygovernance-taskreport-list-taskprocessingresults.md
-        - name: Run
-          items:
-          - name: Run
-            href: ../../resources/identitygovernance-run.md
-          - name: List runs
-            href: ../../api/identitygovernance-workflow-list-runs.md
-          - name: Get runs
-            href: ../../api/identitygovernance-run-get.md
-          - name: Get summary
-            href: ../../api/identitygovernance-run-summary.md
-          - name: List task processing results
-            href: ../../api/identitygovernance-run-list-taskprocessingresults.md
-          - name: List reprocessedRuns
-            href: ../../api/identitygovernance-run-list-reprocessedruns.md
-          - name: Remove reprocessedRuns
-            href: ../../api/identitygovernance-run-delete-reprocessedruns.md
-        - name: Task processing result
-          items:
-          - name: Task processing result
-            href: ../../resources/identitygovernance-taskprocessingresult.md
-          - name: Resume
-            href: ../../api/identitygovernance-taskprocessingresult-resume.md
     - name: Workflow template
       items:
       - name: Workflow template
@@ -1647,6 +1663,10 @@ items:
         href: ../../api/identitygovernance-insights-workflowsprocessedbycategory.md
     - name: Complex types
       items:
+      - name: Attribute set entry
+        href: ../../resources/identitygovernance-attributesetentry.md
+      - name: Awaited workflow processing result
+        href: ../../resources/identitygovernance-awaitedworkflowprocessingresult.md
       - name: Custom callout extension
         href: ../../resources/customcalloutextension.md
       - name: Custom extension authentication configuration
@@ -1669,6 +1689,8 @@ items:
         href: ../../resources/identitygovernance-customtaskextensioncallbackdata.md
       - name: Custom task extension callout data
         href: ../../resources/identitygovernance-customtaskextensioncalloutdata.md
+      - name: Custom task extension response data
+        href: ../../resources/identitygovernance-customtaskextensionresponsedata.md
       - name: Email settings
         href: ../../resources/emailsettings.md
       - name: Identity
@@ -1689,6 +1711,10 @@ items:
         href: ../../resources/identitygovernance-ondemandexecutiononly.md
       - name: Parameter
         href: ../../resources/identitygovernance-parameter.md
+      - name: Provisioning attribute mapping
+        href: ../../resources/identitygovernance-provisioningattributemapping.md
+      - name: Provisioning object workflow subject
+        href: ../../resources/identitygovernance-provisioningobjectworkflowsubject.md
       - name: Rule based subject set
         href: ../../resources/identitygovernance-rulebasedsubjectset.md
       - name: Run summary
@@ -1709,6 +1735,8 @@ items:
         href: ../../resources/identitygovernance-workflowexecutionconditions.md
       - name: Workflow execution trigger
         href: ../../resources/identitygovernance-workflowexecutiontrigger.md
+      - name: Workflow subject
+        href: ../../resources/identitygovernance-workflowsubject.md
   - name: Privileged Identity Management iteration 3
     items:
     - name: PIM for Microsoft Entra roles
