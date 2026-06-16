@@ -75,6 +75,42 @@
     {
       "ChangeList": [
         {
+          "Id": "32e046a3-e9cd-473b-8e39-ae85a0a3aaf6",
+          "ApiChange": "EnumMember",
+          "ChangedApiName": "microsoftSecurityForAI",
+          "ChangeType": "Addition",
+          "Description": "Added the **microsoftSecurityForAI** member to the **serviceSource** enumeration type for the [alert](https://learn.microsoft.com/en-us/graph/api/resources/security-alert?view=graph-rest-beta) resource.",
+          "Target": "serviceSource"
+        }
+      ],
+      "Id": "32e046a3-e9cd-473b-8e39-ae85a0a3aaf6",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-05-17T00:00:00.0000000Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Alerts and incidents"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "325f3edc-abc4-4265-935d-c6dde885252d",
+          "ApiChange": "EnumMember",
+          "ChangedApiName": "microsoftSecurityForAI",
+          "ChangeType": "Addition",
+          "Description": "Added the **microsoftSecurityForAI** member to the **serviceSource** enumeration type for the [alert](https://learn.microsoft.com/en-us/graph/api/resources/security-alert?view=graph-rest-1.0) resource.",
+          "Target": "serviceSource"
+        }
+      ],
+      "Id": "325f3edc-abc4-4265-935d-c6dde885252d",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-06-16T00:00:00.0000000Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Alerts and incidents"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "8379ddd0-e101-4994-994f-36d29a65811d",
           "ApiChange": "Property",
           "ChangedApiName": "categories",
