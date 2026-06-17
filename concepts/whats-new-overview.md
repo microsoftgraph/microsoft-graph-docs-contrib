@@ -68,6 +68,7 @@ Use the [cloudPcProvisioningPolicy: apply](/graph/api/cloudpcprovisioningpolicy-
 ### Identity and access | Governance
 
 - Added reviewer delegation support to the [accessReviewInstance: filterByCurrentUser](/graph/api/accessreviewinstance-filterbycurrentuser?view=graph-rest-beta&preserve-view=true) API for access reviews.
+- Added provisioning workflow support to [lifecycle workflows](/graph/api/resources/identitygovernance-workflow?view=graph-rest-beta&preserve-view=true). Use the `activateAndWait` action to run workflows synchronously for non-user subjects such as provisioning objects.
 
 ### Mail
 
@@ -178,8 +179,6 @@ Supports additional theme colors in the [scheduleEntityTheme](/graph/api/resourc
 - Added the **@microsoft.graph.conflictBehavior** annotation parameter to the [Create permission](/graph/api/filestoragecontainer-post-permissions?view=graph-rest-beta&preserve-view=true) method. Use `fail` to return a `409 Conflict` response code when the identity exists with a different role, or `replace` to update the existing role.
 
 ### Identity and access | Governance
-
-Added provisioning workflow support to [lifecycle workflows](/graph/api/resources/identitygovernance-workflow?view=graph-rest-beta&preserve-view=true). Use the `activateAndWait` action to run workflows synchronously for non-user subjects such as provisioning objects.
 
 Added the [approverDelegate](/graph/api/resources/approverdelegate?view=graph-rest-beta&preserve-view=true) and [identityGovernanceUserSettings](/graph/api/resources/identitygovernanceusersettings?view=graph-rest-beta&preserve-view=true) resources to enable users to delegate their approval responsibilities for access package approvals and access reviews.
 
