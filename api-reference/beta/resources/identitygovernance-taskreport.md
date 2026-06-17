@@ -24,6 +24,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |[List task reports](../api/identitygovernance-workflow-list-taskreports.md)|[microsoft.graph.identityGovernance.taskReport](../resources/identitygovernance-taskreport.md) collection|Get a list of the [taskReport](../resources/identitygovernance-taskreport.md) objects and their properties.|
 |[Get summary](../api/identitygovernance-taskreport-summary.md)|[microsoft.graph.identityGovernance.taskReportSummary](../resources/identitygovernance-taskreportsummary.md)|Read the properties and relationships of a [taskReport](../resources/identitygovernance-taskreport.md) object.|
+|[List subjectProcessingResults](../api/identitygovernance-taskreport-list-subjectprocessingresults.md)|[microsoft.graph.identityGovernance.subjectProcessingResult](../resources/identitygovernance-subjectprocessingresult.md) collection|Get a list of subjectProcessingResult objects for the task report.|
 |[List task processing results](../api/identitygovernance-taskreport-list-taskprocessingresults.md)|[microsoft.graph.identityGovernance.taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) collection|Get the taskProcessingResult resources for a task report.|
 
 ## Properties
@@ -45,6 +46,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
+|subjectProcessingResults|[microsoft.graph.identityGovernance.subjectProcessingResult](../resources/identitygovernance-subjectprocessingresult.md) collection|The subject-level processing results associated with this task report.|
 |task|[task](../resources/identitygovernance-task.md)|The related lifecycle workflow task.<br><br>Supports `$filter`(`eq`, `ne`) and `$expand`.|
 |taskDefinition|[microsoft.graph.identityGovernance.taskDefinition](../resources/identitygovernance-taskdefinition.md)|The taskDefinition associated with the related lifecycle workflow task.<br><br>Supports `$filter`(`eq`, `ne`) and `$expand`.|
 |taskProcessingResults|[microsoft.graph.identityGovernance.taskProcessingResult](../resources/identitygovernance-taskprocessingresult.md) collection|The related lifecycle workflow taskProcessingResults.|

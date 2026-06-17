@@ -5,7 +5,7 @@ author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
-ms.date: 07/22/2024
+ms.date: 05/10/2026
 ---
 
 # userAccount resource type
@@ -24,6 +24,7 @@ Represents common properties for a user account.
 | displayName               | String | The user display name in Microsoft Entra ID.                             |
 | domainName                | String | The name of the Active Directory domain of which the user is a member.   |
 | resourceAccessEvents|[microsoft.graph.security.resourceAccessEvent](../resources/security-resourceaccessevent.md) collection | Information on resource access attempts made by the user account. |
+| tenantId                  | String | The Microsoft Entra tenant ID of the user account.                       |
 | userPrincipalName         | String | The user principal name of the account in Microsoft Entra ID.            |
 | userSid                   | String | The local security identifier of the user account.                       |
 
@@ -45,6 +46,7 @@ The following JSON representation shows the resource type.
   "accountName": "String",
   "activeDirectoryObjectGuid": "Guid",
   "azureAdUserId": "String",
+  "tenantId": "String",
   "displayName": "String",
   "domainName": "String",
   "resourceAccessEvents": [

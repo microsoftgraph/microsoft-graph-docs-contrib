@@ -29,6 +29,7 @@ When a security provider detects a threat, it creates an alert in the system. Mi
 |[Get](../api/security-alert-get.md)|[microsoft.graph.security.alert](security-alert.md)|Get the properties of an [alert](../resources/security-alert.md) object in an organization based on the specified alert **id** property.|
 |[Update](../api/security-alert-update.md)|[microsoft.graph.security.alert](../resources/security-alert.md)|Update the properties of an [alert](../resources/security-alert.md) object in an organization based on the specified alert **id** property.|
 |[Create comment](../api/security-alert-post-comments.md)| [alertComment](../resources/security-alertcomment.md) | Create a comment for an existing [alert](../resources/security-alert.md) based on the specified alert **id** property.|
+|[Move alerts](../api/security-alert-movealerts.md)|[microsoft.graph.security.mergeResponse](../resources/security-mergeresponse.md)|Move one or more [alert](../resources/security-alert.md) resources to a new or existing [incident](../resources/security-incident.md).|
 
 ## Properties
 

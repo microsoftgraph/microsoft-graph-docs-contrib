@@ -43,6 +43,7 @@ For more information about using custom task extensions, refer to the links in t
 |endpointConfiguration|[microsoft.graph.customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|Details for allowing the custom task extension to call the logic app. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |id|String| Inherited from [entity](../resources/entity.md).<br><br>Supports `$filter`(`eq`, `ne`) and `$orderby`.|
 |lastModifiedDateTime|DateTimeOffset|When the custom extension was last modified.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
+|replyMode|microsoft.graph.identityGovernance.customTaskExtensionReplyMode|Specifies how the custom task extension replies to the lifecycle workflows service. The possible values are: `none`, `callback`, `response`, `unknownFutureValue`.|
 
 ## Relationships
 
@@ -81,7 +82,8 @@ The following JSON representation shows the resource type.
     "@odata.type": "microsoft.graph.customExtensionCallbackConfiguration"
   },
   "createdDateTime": "String (timestamp)",
-  "lastModifiedDateTime": "String (timestamp)"
+  "lastModifiedDateTime": "String (timestamp)",
+  "replyMode": "String"
 }
 ```
 

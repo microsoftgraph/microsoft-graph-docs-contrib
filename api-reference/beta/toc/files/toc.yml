@@ -180,6 +180,8 @@ items:
     href: ../../api/filestoragecontainer-get-drive.md
   - name: List permissions
     href: ../../api/filestoragecontainer-list-permissions.md
+  - name: Get permission
+    href: ../../api/filestoragecontainer-get-permissions.md
   - name: Add permissions
     href: ../../api/filestoragecontainer-post-permissions.md
   - name: Update permissions

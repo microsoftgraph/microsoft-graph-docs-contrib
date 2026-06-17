@@ -20,7 +20,9 @@ Inherits from [customExtensionData](../resources/customextensiondata.md).
 
 ## Properties
 
-None.
+|Property|Type|Description|
+|:---|:---|:---|
+|targetSubject|[microsoft.graph.identityGovernance.workflowSubject](../resources/identitygovernance-workflowsubject.md)|The target subject for workflow execution.|
 
 ## Relationships
  
@@ -42,6 +44,9 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCalloutData"
+  "@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCalloutData",
+  "targetSubject": {
+    "@odata.type": "microsoft.graph.identityGovernance.workflowSubject"
+  }
 }
 ```

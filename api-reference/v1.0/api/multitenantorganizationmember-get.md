@@ -5,7 +5,7 @@ author: "rolyon"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
-ms.date: 06/21/2024
+ms.date: 05/14/2026
 ---
 
 # Get multiTenantOrganizationMember
@@ -21,7 +21,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "multitenantorganizationmember_get" } -->
 [!INCLUDE [permissions-table](../includes/permissions/multitenantorganizationmember-get-permissions.md)]
 
-If called with MultiTenantOrganization.ReadBasic.All permission, the caller can only read the **displayName** and **tenantId** properties.
+The properties returned depend on the permission granted:
+
+- *MultiTenantOrganization.ReadBasic.All* (delegated): Returns only the **displayName** and **tenantId** properties.
+- *MultiTenantOrganization.Read.All*, *MultiTenantOrganization.ReadWrite.All*, or *Directory.Read.All* (delegated or application): Returns all properties.
 
 [!INCLUDE [rbac-multitenantorganization-apis-read](../includes/rbac-for-apis/rbac-multitenantorganization-apis-read.md)]
 
@@ -144,4 +147,3 @@ Content-Type: application/json
     }
 }
 ```
-
