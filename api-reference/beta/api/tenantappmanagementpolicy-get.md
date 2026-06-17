@@ -116,17 +116,126 @@ Content-type: application/json
     "id": "00000000-0000-0000-0000-000000000000",
     "displayName": "Default app management tenant policy",
     "description": "Default tenant policy that enforces app management restrictions on applications and service principals. To apply policy to targeted resources, create a new policy under appManagementPolicies collection.",
-    "isEnabled": false,
+    "isEnabled": true,
     "applicationRestrictions": {
         "passwordCredentials": [],
-        "keyCredentials":[],
+        "keyCredentials": [],
         "identifierUris": {
           "nonDefaultUriAddition": null
+        },
+        "redirectUris": {
+          "uriWithBlockedScheme": {
+            "state": "enabled",
+            "blockedSchemes": [
+              "http",
+              "ftp"
+            ],
+            "exemptFormats": [
+              "http://example.com/login"
+            ],
+            "web": {
+              "blockedSchemes": [
+                "custom-ftps"
+              ]
+            },
+            "spa": {
+              "blockedSchemes": [
+                "myapp"
+              ],
+              "exemptFormats": [
+                "https://spa.example.com/auth"
+              ]
+            },
+            "publicClient": {
+              "blockedSchemes": [
+                "msauth"
+              ],
+              "exemptFormats": [
+                "https://public.example.com/auth"
+              ]
+            }
+          },
+          "uriWithoutAllowedScheme": {
+            "state": "enabled",
+            "allowedSchemes": [
+              "https"
+            ],
+            "web": {
+              "allowedSchemes": [
+                "https"
+              ]
+            },
+            "spa": {
+              "allowedSchemes": [
+                "https",
+                "msal"
+              ]
+            },
+            "publicClient": {
+              "allowedSchemes": [
+                "myapp"
+              ]
+            }
+          },
+          "uriWithBlockedDomain": {
+            "state": "enabled",
+            "blockedDomains": [
+              "contoso-short.com",
+              "tempuri.org"
+            ],
+            "web": {
+              "blockedDomains": [
+                "short.contoso.com"
+              ]
+            },
+            "spa": {
+              "blockedDomains": [
+                "contoso.dev"
+              ]
+            },
+            "publicClient": {
+              "blockedDomains": [
+                "mspreview.contoso.com"
+              ]
+            }
+          },
+          "uriWithoutAllowedDomain": {
+            "state": "enabled",
+            "allowedDomains": [
+              "contoso.com",
+              "login.microsoftonline.com"
+            ],
+            "web": {
+              "allowedDomains": [
+                "app.contoso.com"
+              ]
+            },
+            "spa": {
+              "allowedDomains": [
+                "spa.contoso.com"
+              ]
+            },
+            "publicClient": {
+              "allowedDomains": [
+                "app://contoso"
+              ]
+            }
+          },
+          "uriWithWildcard": {
+            "state": "enabled",
+            "excludeFormats": {
+              "excludeWildcardsInPath": true,
+              "excludeWildcardsInPathWithDomains": [
+                "contoso.com",
+                "fabrikam.com"
+              ]
+            }
+          }
         }
     },
     "servicePrincipalRestrictions": {
         "passwordCredentials": [],
-        "keyCredentials":[]
+        "keyCredentials": []
     }
 }
 ```
