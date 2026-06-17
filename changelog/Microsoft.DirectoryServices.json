@@ -3,6 +3,120 @@
     {
       "ChangeList": [
         {
+          "Id": "03fd2dc2-83d7-4b32-967f-af8bc6d3ce06",
+          "ApiChange": "Property",
+          "ChangedApiName": "redirectUris",
+          "ChangeType": "Addition",
+          "Description": "Added the **redirectUris** property to the [appManagementApplicationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/appmanagementapplicationconfiguration?view=graph-rest-beta) resource.",
+          "Target": "appManagementApplicationConfiguration"
+        },
+        {
+          "Id": "03fd2dc2-83d7-4b32-967f-af8bc6d3ce06",
+          "ApiChange": "Property",
+          "ChangedApiName": "redirectUris",
+          "ChangeType": "Addition",
+          "Description": "Added the **redirectUris** property to the [customAppManagementApplicationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/customappmanagementapplicationconfiguration?view=graph-rest-beta) resource.",
+          "Target": "customAppManagementApplicationConfiguration"
+        },
+        {
+          "Id": "03fd2dc2-83d7-4b32-967f-af8bc6d3ce06",
+          "ApiChange": "Resource",
+          "ChangedApiName": "redirectUriAllowedDomainConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [redirectUriAllowedDomainConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/redirecturialloweddomainconfiguration?view=graph-rest-beta) resource.",
+          "Target": "redirectUriAllowedDomainConfiguration"
+        },
+        {
+          "Id": "03fd2dc2-83d7-4b32-967f-af8bc6d3ce06",
+          "ApiChange": "Resource",
+          "ChangedApiName": "redirectUriAllowedSchemeConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [redirectUriAllowedSchemeConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/redirecturiallowedschemeconfiguration?view=graph-rest-beta) resource.",
+          "Target": "redirectUriAllowedSchemeConfiguration"
+        },
+        {
+          "Id": "03fd2dc2-83d7-4b32-967f-af8bc6d3ce06",
+          "ApiChange": "Resource",
+          "ChangedApiName": "redirectUriBlockedDomainConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [redirectUriBlockedDomainConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/redirecturiblockeddomainconfiguration?view=graph-rest-beta) resource.",
+          "Target": "redirectUriBlockedDomainConfiguration"
+        },
+        {
+          "Id": "03fd2dc2-83d7-4b32-967f-af8bc6d3ce06",
+          "ApiChange": "Resource",
+          "ChangedApiName": "redirectUriBlockedSchemeConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [redirectUriBlockedSchemeConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/redirecturiblockedschemeconfiguration?view=graph-rest-beta) resource.",
+          "Target": "redirectUriBlockedSchemeConfiguration"
+        },
+        {
+          "Id": "03fd2dc2-83d7-4b32-967f-af8bc6d3ce06",
+          "ApiChange": "Resource",
+          "ChangedApiName": "redirectUriConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [redirectUriConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/redirecturiconfiguration?view=graph-rest-beta) resource.",
+          "Target": "redirectUriConfiguration"
+        },
+        {
+          "Id": "03fd2dc2-83d7-4b32-967f-af8bc6d3ce06",
+          "ApiChange": "Resource",
+          "ChangedApiName": "redirectUriPlatformAllowedDomainConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [redirectUriPlatformAllowedDomainConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/redirecturiplatformalloweddomainconfiguration?view=graph-rest-beta) resource.",
+          "Target": "redirectUriPlatformAllowedDomainConfiguration"
+        },
+        {
+          "Id": "03fd2dc2-83d7-4b32-967f-af8bc6d3ce06",
+          "ApiChange": "Resource",
+          "ChangedApiName": "redirectUriPlatformAllowedSchemeConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [redirectUriPlatformAllowedSchemeConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/redirecturiplatformallowedschemeconfiguration?view=graph-rest-beta) resource.",
+          "Target": "redirectUriPlatformAllowedSchemeConfiguration"
+        },
+        {
+          "Id": "03fd2dc2-83d7-4b32-967f-af8bc6d3ce06",
+          "ApiChange": "Resource",
+          "ChangedApiName": "redirectUriPlatformBlockedDomainConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [redirectUriPlatformBlockedDomainConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/redirecturiplatformblockeddomainconfiguration?view=graph-rest-beta) resource.",
+          "Target": "redirectUriPlatformBlockedDomainConfiguration"
+        },
+        {
+          "Id": "03fd2dc2-83d7-4b32-967f-af8bc6d3ce06",
+          "ApiChange": "Resource",
+          "ChangedApiName": "redirectUriPlatformBlockedSchemeConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [redirectUriPlatformBlockedSchemeConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/redirecturiplatformblockedschemeconfiguration?view=graph-rest-beta) resource.",
+          "Target": "redirectUriPlatformBlockedSchemeConfiguration"
+        },
+        {
+          "Id": "03fd2dc2-83d7-4b32-967f-af8bc6d3ce06",
+          "ApiChange": "Resource",
+          "ChangedApiName": "redirectUriWildcardConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [redirectUriWildcardConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/redirecturiwildcardconfiguration?view=graph-rest-beta) resource.",
+          "Target": "redirectUriWildcardConfiguration"
+        },
+        {
+          "Id": "03fd2dc2-83d7-4b32-967f-af8bc6d3ce06",
+          "ApiChange": "Resource",
+          "ChangedApiName": "redirectUriWildcardExcludeFormats",
+          "ChangeType": "Addition",
+          "Description": "Added the [redirectUriWildcardExcludeFormats](https://learn.microsoft.com/en-us/graph/api/resources/redirecturiwildcardexcludeformats?view=graph-rest-beta) resource.",
+          "Target": "redirectUriWildcardExcludeFormats"
+        }
+      ],
+      "Id": "03fd2dc2-83d7-4b32-967f-af8bc6d3ce06",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-06-17T11:01:45.511772Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b18a7db8-92de-4d28-b025-71d5d3fc511a",
           "ApiChange": "Enumeration",
           "ChangedApiName": "customSecurityAttributeComparisonOperator",
@@ -438,30 +552,30 @@
       "WorkloadArea": "Tenants",
       "SubArea": "Cross-tenant access"
     },
-      {
-        "ChangeList": [
-          {
-            "Id": "745059d3-8cd1-4100-a646-c3508fa939d9",
-            "ApiChange": "Property",
-            "ChangedApiName": "managerApplications",
-            "ChangeType": "Addition",
-            "Description": "Added the **managerApplications** property to the [agentIdentityBlueprint](https://learn.microsoft.com/en-us/graph/api/resources/agentIdentityBlueprint?view=graph-rest-beta) resource.",
-            "Target": "agentIdentityBlueprint"
-          },
-          {
-            "Id": "745059d3-8cd1-4100-a646-c3508fa939d9",
-            "ApiChange": "Property",
-            "ChangedApiName": "managerApplications",
-            "ChangeType": "Addition",
-            "Description": "Added the **managerApplications** property to the [application](https://learn.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
-            "Target": "application"
-          }
-        ],
-        "Id": "745059d3-8cd1-4100-a646-c3508fa939d9",
-        "Cloud": "Prod",
-        "Version": "beta",
-        "CreatedDateTime": "2026-03-16T16:11:03.4585233Z",
-        "WorkloadArea": "Identity and access",
+    {
+      "ChangeList": [
+        {
+          "Id": "745059d3-8cd1-4100-a646-c3508fa939d9",
+          "ApiChange": "Property",
+          "ChangedApiName": "managerApplications",
+          "ChangeType": "Addition",
+          "Description": "Added the **managerApplications** property to the [agentIdentityBlueprint](https://learn.microsoft.com/en-us/graph/api/resources/agentIdentityBlueprint?view=graph-rest-beta) resource.",
+          "Target": "agentIdentityBlueprint"
+        },
+        {
+          "Id": "745059d3-8cd1-4100-a646-c3508fa939d9",
+          "ApiChange": "Property",
+          "ChangedApiName": "managerApplications",
+          "ChangeType": "Addition",
+          "Description": "Added the **managerApplications** property to the [application](https://learn.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.",
+          "Target": "application"
+        }
+      ],
+      "Id": "745059d3-8cd1-4100-a646-c3508fa939d9",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-03-16T16:11:03.4585233Z",
+      "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     },
     {
@@ -854,7 +968,7 @@
       "WorkloadArea": "Applications",
       "SubArea": ""
     },
-        {
+    {
       "ChangeList": [
         {
           "Id": "856ffb1c-ecf1-4201-bf49-db39aa042b3c",
@@ -964,7 +1078,7 @@
       "WorkloadArea": "Groups",
       "SubArea": ""
     },
-     {
+    {
       "ChangeList": [
         {
           "Id": "09afe499-9b77-43d7-af4d-c36fa7c14aeb",
@@ -1021,8 +1135,8 @@
       "CreatedDateTime": "2025-06-26T23:18:09.7666936Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
-     },
-     {
+    },
+    {
       "ChangeList": [
         {
           "Id": "2f9ab027-9e3a-49ed-aa2c-7ebbb4d9fb66",
@@ -1085,8 +1199,8 @@
       "SubArea": ""
     },
     {
-    "ChangeList": [
-      {
+      "ChangeList": [
+        {
           "Id": "d3a0c8a3-b8d6-45fc-8c57-2bb7be5e6b42",
           "ApiChange": "Property",
           "ChangedApiName": "globalSecureAccess",
@@ -15780,4 +15894,3 @@
     }
   ]
 }
-
