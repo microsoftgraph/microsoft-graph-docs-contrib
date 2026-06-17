@@ -1,11 +1,11 @@
 ---
 title: "customAppManagementApplicationConfiguration resource type"
 description: "Custom app management application configuration object that contains properties which can be configured to enable various restrictions specific to applications."
-author: "yogesh-randhawa"
+author: "antonvano"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-ms.date: 09/13/2024
+ms.date: 01/14/2026
 ---
 
 # customAppManagementApplicationConfiguration resource type
@@ -22,6 +22,7 @@ Custom app management application configuration object that contains properties 
 | :------------- | :---------------------------------------------------------- | :-------------------------------------------- |
 | audiences      | [audiencesConfiguration](../resources/audiencesconfiguration.md)         | Property to restrict creation or update of apps based on their target **signInAudience** types.                             |
 | identifierUris | [identifierUriConfiguration](identifieruriconfiguration.md) | Configuration for identifierUris restrictions.|
+| redirectUris   | [redirectUriConfiguration](redirecturiconfiguration.md)     | Configuration for redirect URI validation rules and restrictions. |
 
 ## Relationships
 
@@ -45,6 +46,9 @@ The following JSON representation shows the resource type.
   },
   "identifierUris": {
     "@odata.type": "microsoft.graph.identifierUriConfiguration"
+  },
+  "redirectUris": {
+    "@odata.type": "microsoft.graph.redirectUriConfiguration"
   }
 }
 ```

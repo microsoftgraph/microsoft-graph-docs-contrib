@@ -68,13 +68,13 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ### Request
 
-The following example shows a request.
+The following example shows a request that configures password credentials, key credentials, identifier URIs, and redirect URI restrictions.
 
 # [HTTP](#tab/http)
 
 <!-- {
-  "blockType": "request",
-  "name": "update_tenantAppManagementPolicy"
+    "blockType": "request",
+    "name": "update_tenantAppManagementPolicy"
 }-->
 
 ```msgraph-interactive
@@ -143,6 +143,115 @@ Content-Type: application/json
                     ]
                 }
             }
+        },
+        "redirectUris": {
+            "uriWithBlockedScheme": {
+                "state": "enabled",
+                "blockedSchemes": [
+                    "http",
+                    "ftp"
+                ],
+                "exemptFormats": [
+                    "http://example.com/login"
+                ],
+                "web": {
+                    "blockedSchemes": [
+                        "custom-ftps"
+                    ]
+                },
+                "spa": {
+                    "blockedSchemes": [
+                        "myapp"
+                    ],
+                    "exemptFormats": [
+                        "https://spa.example.com/auth"
+                    ]
+                },
+                "publicClient": {
+                    "blockedSchemes": [
+                        "msauth"
+                    ],
+                    "exemptFormats": [
+                        "https://public.example.com/auth"
+                    ]
+                }
+            },
+            "uriWithoutAllowedScheme": {
+                "state": "enabled",
+                "allowedSchemes": [
+                    "https"
+                ],
+                "web": {
+                    "allowedSchemes": [
+                        "https"
+                    ]
+                },
+                "spa": {
+                    "allowedSchemes": [
+                        "https",
+                        "msal"
+                    ]
+                },
+                "publicClient": {
+                    "allowedSchemes": [
+                        "myapp"
+                    ]
+                }
+            },
+            "uriWithBlockedDomain": {
+                "state": "enabled",
+                "blockedDomains": [
+                    "contoso-short.com",
+                    "tempuri.org"
+                ],
+                "web": {
+                    "blockedDomains": [
+                        "short.contoso.com"
+                    ]
+                },
+                "spa": {
+                    "blockedDomains": [
+                        "contoso.dev"
+                    ]
+                },
+                "publicClient": {
+                    "blockedDomains": [
+                        "mspreview.contoso.com"
+                    ]
+                }
+            },
+            "uriWithoutAllowedDomain": {
+                "state": "enabled",
+                "allowedDomains": [
+                    "contoso.com",
+                    "login.microsoftonline.com"
+                ],
+                "web": {
+                    "allowedDomains": [
+                        "app.contoso.com"
+                    ]
+                },
+                "spa": {
+                    "allowedDomains": [
+                        "spa.contoso.com"
+                    ]
+                },
+                "publicClient": {
+                    "allowedDomains": [
+                        "app://contoso"
+                    ]
+                }
+            },
+            "uriWithWildcard": {
+                "state": "enabled",
+                "excludeFormats": {
+                    "excludeWildcardsInPath": true,
+                    "excludeWildcardsInPathWithDomains": [
+                        "contoso.com",
+                        "fabrikam.com"
+                    ]
+                }
+            }
         }
     }
 }
@@ -191,12 +300,8 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Update tenantAppManagementPolicy",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
+## Related content
+
+- [tenantAppManagementPolicy](../resources/tenantappmanagementpolicy.md)
+- [appManagementApplicationConfiguration](../resources/appmanagementapplicationconfiguration.md)
+- [redirectUriConfiguration](../resources/redirecturiconfiguration.md)
