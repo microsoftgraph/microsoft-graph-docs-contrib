@@ -1581,9 +1581,12 @@
                 "customExtensionClientConfiguration",
                 "customExtensionData",
                 "customExtensionEndpointConfiguration",
+                "microsoft.graph.identityGovernance.attributeSetEntry",
+                "microsoft.graph.identityGovernance.awaitedWorkflowProcessingResult",
                 "microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
                 "microsoft.graph.identityGovernance.customTaskExtensionCallbackData",
                 "microsoft.graph.identityGovernance.customTaskExtensionCalloutData",
+                "microsoft.graph.identityGovernance.customTaskExtensionResponseData",
                 "emailSettings",
                 "identity",
                 "identityGovernance",
@@ -1592,6 +1595,8 @@
                 "logicAppTriggerEndpointConfiguration",
                 "microsoft.graph.identityGovernance.onDemandExecutionOnly",
                 "microsoft.graph.identityGovernance.parameter",
+                "microsoft.graph.identityGovernance.provisioningAttributeMapping",
+                "microsoft.graph.identityGovernance.provisioningObjectWorkflowSubject",
                 "microsoft.graph.identityGovernance.ruleBasedSubjectSet",
                 "microsoft.graph.identityGovernance.runSummary",
                 "subjectSet",
@@ -1601,7 +1606,8 @@
                 "microsoft.graph.identityGovernance.userSummary",
                 "microsoft.graph.identityGovernance.workflowBase",
                 "microsoft.graph.identityGovernance.workflowExecutionConditions",
-                "microsoft.graph.identityGovernance.workflowExecutionTrigger"
+                "microsoft.graph.identityGovernance.workflowExecutionTrigger",
+                "microsoft.graph.identityGovernance.workflowSubject"
               ],
               "childNodes": [
                 {
@@ -1618,10 +1624,11 @@
                         "Lifecycle Workflows reporting"
                       ],
                       "resources": [
-                        "microsoft.graph.identityGovernance.userProcessingResult",
-                        "microsoft.graph.identityGovernance.taskReport",
                         "microsoft.graph.identityGovernance.run",
-                        "microsoft.graph.identityGovernance.taskProcessingResult"
+                        "microsoft.graph.identityGovernance.subjectProcessingResult",
+                        "microsoft.graph.identityGovernance.taskProcessingResult",
+                        "microsoft.graph.identityGovernance.taskReport",
+                        "microsoft.graph.identityGovernance.userProcessingResult"
                       ]
                     }
                   ]

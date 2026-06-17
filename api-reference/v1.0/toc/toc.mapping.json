@@ -1685,6 +1685,8 @@
           ],
           "complexTypes": [
             "microsoft.graph.security.aiAgentEvidence",
+            "microsoft.graph.security.correlationReason",
+            "microsoft.graph.security.mergeResponse",
             "microsoft.graph.security.dnsEvidence",
             "microsoft.graph.security.fileHashEvidence",
             "microsoft.graph.security.gitHubOrganizationEvidence",

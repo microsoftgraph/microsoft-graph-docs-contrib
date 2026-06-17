@@ -23,6 +23,7 @@ Inherits from [customExtensionData](../resources/customextensiondata.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |operationStatus|microsoft.graph.identityGovernance.customTaskExtensionOperationStatus|Operation status that's provided by the Azure Logic App indicating whenever the Azure Logic App has run successfully or not. Supported values: `completed`, `failed`, `unknownFutureValue`.|
+|targetSubject|[microsoft.graph.identityGovernance.workflowSubject](../resources/identitygovernance-workflowsubject.md)|The workflow subject that was processed and passed to the callback.|
 
 ## Relationships
 
@@ -40,6 +41,9 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.identityGovernance.customTaskExtensionCallbackData",
-  "operationStatus": "String"
+  "operationStatus": "String",
+  "targetSubject": {
+    "@odata.type": "microsoft.graph.identityGovernance.workflowSubject"
+  }
 }
 ```

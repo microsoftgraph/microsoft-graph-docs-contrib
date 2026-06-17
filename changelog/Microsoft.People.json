@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "b657572a-5578-4a21-a968-26a731a9fdab",
+          "ApiChange": "Property",
+          "ChangedApiName": "isVisible",
+          "ChangeType": "Addition",
+          "Description": "Added the **isVisible** property to the [profileCardProperty](https://learn.microsoft.com/en-us/graph/api/resources/profileCardProperty?view=graph-rest-1.0) resource.",
+          "Target": "profileCardProperty"
+        }
+      ],
+      "Id": "b657572a-5578-4a21-a968-26a731a9fdab",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-06-15T13:13:51.9590841Z",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "People admin settings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "3de9aa4d-804f-47e0-9ea6-fb9ed7a669f8",
           "ApiChange": "Property",
           "ChangedApiName": "isVisible",
@@ -16,7 +34,7 @@
       "Version": "beta",
       "CreatedDateTime": "2026-05-06T09:13:51.9590841Z",
       "WorkloadArea": "People and workplace intelligence",
-      "SubArea": "People"
+      "SubArea": "People admin settings"
     },
     {
       "ChangeList": [

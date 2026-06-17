@@ -216,7 +216,64 @@ items:
       href: ../../resources/error.md
     - name: Exchange online Cross-tenant migration settings
       href: ../../resources/exchangeonlinecrosstenantmigrationsettings.md
-- name: Governance (preview)
+- name: Multitenant organization
+  displayName: MTO
+  items:
+  - name: Overview
+    href: ../../resources/multitenantorganization-overview.md
+  - name: Multitenant organization
+    items:
+    - name: Multitenant organization
+      href: ../../resources/multitenantorganization.md
+    - name: Create
+      href: ../../api/tenantrelationship-put-multitenantorganization.md
+    - name: Get
+      href: ../../api/multitenantorganization-get.md
+    - name: Update
+      href: ../../api/multitenantorganization-update.md
+  - name: Member
+    items:
+    - name: Member
+      href: ../../resources/multitenantorganizationmember.md
+    - name: List
+      href: ../../api/multitenantorganization-list-tenants.md
+    - name: Add
+      href: ../../api/multitenantorganization-post-tenants.md
+    - name: Get
+      href: ../../api/multitenantorganizationmember-get.md
+    - name: Update
+      href: ../../api/multitenantorganizationmember-update.md
+    - name: Remove
+      href: ../../api/multitenantorganization-delete-tenants.md
+  - name: Join request
+    items:
+    - name: Join request
+      href: ../../resources/multitenantorganizationjoinrequestrecord.md
+    - name: Get
+      href: ../../api/multitenantorganizationjoinrequestrecord-get.md
+    - name: Update
+      href: ../../api/multitenantorganizationjoinrequestrecord-update.md
+  - name: Partner configuration template
+    items:
+    - name: Partner configuration template
+      href: ../../resources/multitenantorganizationpartnerconfigurationtemplate.md
+    - name: Get
+      href: ../../api/multitenantorganizationpartnerconfigurationtemplate-get.md
+    - name: Update
+      href: ../../api/multitenantorganizationpartnerconfigurationtemplate-update.md
+    - name: Reset
+      href: ../../api/multitenantorganizationpartnerconfigurationtemplate-resettodefaultsettings.md
+  - name: Identity sync policy template
+    items:
+    - name: Identity sync policy template
+      href: ../../resources/multitenantorganizationidentitysyncpolicytemplate.md
+    - name: Get
+      href: ../../api/multitenantorganizationidentitysyncpolicytemplate-get.md
+    - name: Update
+      href: ../../api/multitenantorganizationidentitysyncpolicytemplate-update.md
+    - name: Reset
+      href: ../../api/multitenantorganizationidentitysyncpolicytemplate-resettodefaultsettings.md
+- name: Tenant governance (preview)
   items:
   - name: Overview
     href: ../../resources/tenantgovernanceservices-tenantgovernance-overview.md
@@ -290,63 +347,6 @@ items:
       href: ../../api/tenantgovernanceservices-governancerelationship-get.md
     - name: Update
       href: ../../api/tenantgovernanceservices-governancerelationship-update.md
-- name: Multitenant organization
-  displayName: MTO
-  items:
-  - name: Overview
-    href: ../../resources/multitenantorganization-overview.md
-  - name: Multitenant organization
-    items:
-    - name: Multitenant organization
-      href: ../../resources/multitenantorganization.md
-    - name: Create
-      href: ../../api/tenantrelationship-put-multitenantorganization.md
-    - name: Get
-      href: ../../api/multitenantorganization-get.md
-    - name: Update
-      href: ../../api/multitenantorganization-update.md
-  - name: Member
-    items:
-    - name: Member
-      href: ../../resources/multitenantorganizationmember.md
-    - name: List
-      href: ../../api/multitenantorganization-list-tenants.md
-    - name: Add
-      href: ../../api/multitenantorganization-post-tenants.md
-    - name: Get
-      href: ../../api/multitenantorganizationmember-get.md
-    - name: Update
-      href: ../../api/multitenantorganizationmember-update.md
-    - name: Remove
-      href: ../../api/multitenantorganization-delete-tenants.md
-  - name: Join request
-    items:
-    - name: Join request
-      href: ../../resources/multitenantorganizationjoinrequestrecord.md
-    - name: Get
-      href: ../../api/multitenantorganizationjoinrequestrecord-get.md
-    - name: Update
-      href: ../../api/multitenantorganizationjoinrequestrecord-update.md
-  - name: Partner configuration template
-    items:
-    - name: Partner configuration template
-      href: ../../resources/multitenantorganizationpartnerconfigurationtemplate.md
-    - name: Get
-      href: ../../api/multitenantorganizationpartnerconfigurationtemplate-get.md
-    - name: Update
-      href: ../../api/multitenantorganizationpartnerconfigurationtemplate-update.md
-    - name: Reset
-      href: ../../api/multitenantorganizationpartnerconfigurationtemplate-resettodefaultsettings.md
-  - name: Identity sync policy template
-    items:
-    - name: Identity sync policy template
-      href: ../../resources/multitenantorganizationidentitysyncpolicytemplate.md
-    - name: Get
-      href: ../../api/multitenantorganizationidentitysyncpolicytemplate-get.md
-    - name: Update
-      href: ../../api/multitenantorganizationidentitysyncpolicytemplate-update.md
-    - name: Reset
-      href: ../../api/multitenantorganizationidentitysyncpolicytemplate-resettodefaultsettings.md
 - name: Tenant information
   items:
   - name: Tenant information

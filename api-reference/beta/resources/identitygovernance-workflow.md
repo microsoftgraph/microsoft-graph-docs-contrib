@@ -30,6 +30,7 @@ Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 |[Update](../api/identitygovernance-workflow-update.md)|[microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md)|Update the properties of a [workflow](../resources/identitygovernance-workflow.md) object.|
 |[Delete](../api/identitygovernance-workflow-delete.md)|None|Deletes a [workflow](../resources/identitygovernance-workflow.md) object.|
 |[Activate](../api/identitygovernance-workflow-activate.md)|None|Run a workflow on-demand.|
+|[Activate and wait](../api/identitygovernance-workflow-activateandwait.md)|[microsoft.graph.identityGovernance.awaitedWorkflowProcessingResult](../resources/identitygovernance-awaitedworkflowprocessingresult.md)|Activate a workflow for a subject and synchronously wait for completion.|
 |[Activate with scope](../api/identitygovernance-workflow-activatewithscope.md)|None|Run a workflow on-demand with a specific scope.|
 |[List users in scope](../api/workflow-list-executionscope.md)|[microsoft.graph.user](../resources/user.md) collection|Get a list of users who are in the scope of the execution conditions of a [workflow](../resources/identitygovernance-workflow.md) object.|
 |[Cancel workflow processing](../api/identitygovernance-workflow-cancelprocessing.md)|None|Cancel workflow runs that are currently in progress or queued.|

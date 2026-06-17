@@ -11,7 +11,6 @@ using Microsoft.Graph.Models;
 
 var requestBody = new ProfileCardProperty
 {
-	DirectoryPropertyName = "CustomAttribute1",
 	Annotations = new List<ProfileCardAnnotation>
 	{
 		new ProfileCardAnnotation
@@ -25,6 +24,13 @@ var requestBody = new ProfileCardProperty
 					DisplayName = "центр затрат",
 				},
 			},
+		},
+	},
+	DirectoryPropertyName = "CustomAttribute1",
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"isVisible" , true
 		},
 	},
 };
