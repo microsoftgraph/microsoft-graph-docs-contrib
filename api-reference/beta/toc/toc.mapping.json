@@ -2635,9 +2635,14 @@
       "resources": [
         "contact",
         "contactFolder",
+        "distributionList",
+        "distributionListMember",
         "outlookCategory",
         "contactMergeSuggestions",
         "insightsSettings"
+      ],
+      "complexTypes": [
+        "member"
       ],
       "childNodes": [
         {

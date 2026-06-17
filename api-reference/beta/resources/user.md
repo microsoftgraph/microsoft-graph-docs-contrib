@@ -374,6 +374,7 @@ For example, Cameron is an administrator of a directory for an elementary school
 |createdObjects|[directoryObject](directoryobject.md) collection|Directory objects that the user created. Read-only. Nullable.|
 |dataSecurityAndGovernance|[userDataSecurityAndGovernance](../resources/userDatasecurityandgovernance.md)| The data security and governance settings for the user. Read-only. Nullable.|
 |directReports|[directoryObject](directoryobject.md) collection|The users and contacts that report to the user. (The users and contacts with their manager property set to this user.) Read-only. Nullable. Supports `$expand`. |
+|distributionLists|[distributionList](distributionlist.md) collection|The personal distribution lists in the user's mailbox. Read-only. Nullable.|
 |drive|[drive](drive.md)|The user's OneDrive. Read-only.|
 |drives|[drive](drive.md) collection| A collection of drives available for this user. Read-only. |
 |employeeExperience|[employeeExperienceUser](employeeexperienceuser.md)| The employee experience resources for the user. Read-only. Nullable.|

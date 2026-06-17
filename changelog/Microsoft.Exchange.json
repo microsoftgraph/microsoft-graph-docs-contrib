@@ -3,6 +3,128 @@
     {
       "ChangeList": [
         {
+          "Id": "274e41e1-3ea4-4e48-b14e-4b75a15a6bdc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "distributionList",
+          "ChangeType": "Addition",
+          "Description": "Added the [distributionList](https://learn.microsoft.com/en-us/graph/api/resources/distributionList?view=graph-rest-beta) resource type.",
+          "Target": "distributionList"
+        },
+        {
+          "Id": "274e41e1-3ea4-4e48-b14e-4b75a15a6bdc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "distributionListMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [distributionListMember](https://learn.microsoft.com/en-us/graph/api/resources/distributionListMember?view=graph-rest-beta) resource type.",
+          "Target": "distributionListMember"
+        },
+        {
+          "Id": "274e41e1-3ea4-4e48-b14e-4b75a15a6bdc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "member",
+          "ChangeType": "Addition",
+          "Description": "Added the [member](https://learn.microsoft.com/en-us/graph/api/resources/member?view=graph-rest-beta) complex type.",
+          "Target": "member"
+        },
+        {
+          "Id": "274e41e1-3ea4-4e48-b14e-4b75a15a6bdc",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "recipientType",
+          "ChangeType": "Addition",
+          "Description": "Added the **recipientType** enumeration type.",
+          "Target": "recipientType"
+        },
+        {
+          "Id": "274e41e1-3ea4-4e48-b14e-4b75a15a6bdc",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "distributionLists",
+          "ChangeType": "Addition",
+          "Description": "Added the **distributionLists** relationship to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "274e41e1-3ea4-4e48-b14e-4b75a15a6bdc",
+          "ApiChange": "Method",
+          "ChangedApiName": "List distributionLists",
+          "ChangeType": "Addition",
+          "Description": "Added the [List distributionLists](https://learn.microsoft.com/en-us/graph/api/user-list-distributionlists?view=graph-rest-beta) method to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "274e41e1-3ea4-4e48-b14e-4b75a15a6bdc",
+          "ApiChange": "Method",
+          "ChangedApiName": "Create distributionList",
+          "ChangeType": "Addition",
+          "Description": "Added the [Create distributionList](https://learn.microsoft.com/en-us/graph/api/user-post-distributionlists?view=graph-rest-beta) method to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "274e41e1-3ea4-4e48-b14e-4b75a15a6bdc",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get distributionList",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get distributionList](https://learn.microsoft.com/en-us/graph/api/distributionlist-get?view=graph-rest-beta) method.",
+          "Target": "distributionList"
+        },
+        {
+          "Id": "274e41e1-3ea4-4e48-b14e-4b75a15a6bdc",
+          "ApiChange": "Method",
+          "ChangedApiName": "Update distributionList",
+          "ChangeType": "Addition",
+          "Description": "Added the [Update distributionList](https://learn.microsoft.com/en-us/graph/api/distributionlist-update?view=graph-rest-beta) method.",
+          "Target": "distributionList"
+        },
+        {
+          "Id": "274e41e1-3ea4-4e48-b14e-4b75a15a6bdc",
+          "ApiChange": "Method",
+          "ChangedApiName": "Delete distributionList",
+          "ChangeType": "Addition",
+          "Description": "Added the [Delete distributionList](https://learn.microsoft.com/en-us/graph/api/distributionlist-delete?view=graph-rest-beta) method.",
+          "Target": "distributionList"
+        },
+        {
+          "Id": "274e41e1-3ea4-4e48-b14e-4b75a15a6bdc",
+          "ApiChange": "Method",
+          "ChangedApiName": "addMembers",
+          "ChangeType": "Addition",
+          "Description": "Added the [addMembers](https://learn.microsoft.com/en-us/graph/api/distributionlist-addmembers?view=graph-rest-beta) method to the [distributionList](https://learn.microsoft.com/en-us/graph/api/resources/distributionList?view=graph-rest-beta) resource.",
+          "Target": "distributionList"
+        },
+        {
+          "Id": "274e41e1-3ea4-4e48-b14e-4b75a15a6bdc",
+          "ApiChange": "Method",
+          "ChangedApiName": "deleteMembers",
+          "ChangeType": "Addition",
+          "Description": "Added the [deleteMembers](https://learn.microsoft.com/en-us/graph/api/distributionlist-deletemembers?view=graph-rest-beta) method to the [distributionList](https://learn.microsoft.com/en-us/graph/api/resources/distributionList?view=graph-rest-beta) resource.",
+          "Target": "distributionList"
+        },
+        {
+          "Id": "274e41e1-3ea4-4e48-b14e-4b75a15a6bdc",
+          "ApiChange": "Method",
+          "ChangedApiName": "List distributionListMembers",
+          "ChangeType": "Addition",
+          "Description": "Added the [List distributionListMembers](https://learn.microsoft.com/en-us/graph/api/distributionlist-list-distributionlistmembers?view=graph-rest-beta) method.",
+          "Target": "distributionList"
+        },
+        {
+          "Id": "274e41e1-3ea4-4e48-b14e-4b75a15a6bdc",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get distributionListMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get distributionListMember](https://learn.microsoft.com/en-us/graph/api/distributionlist-get-distributionlistmember?view=graph-rest-beta) method.",
+          "Target": "distributionList"
+        }
+      ],
+      "Id": "274e41e1-3ea4-4e48-b14e-4b75a15a6bdc",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-06-16T00:00:00.0000000Z",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "7c4b9e2f-8a3d-4f1b-9c5e-6d2a8f3b1e4c",
           "ApiChange": "Resource",
           "ChangedApiName": "exportItemResponse",
