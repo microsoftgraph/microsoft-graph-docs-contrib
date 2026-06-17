@@ -1,67 +1,50 @@
 ---
 title: "People and workplace intelligence in Microsoft Graph"
-description: "Learn about Microsoft Graph API options that let you build smarter apps for accessing user data: the people API, insights API, profile API, and profile card API."
+description: "Learn how Microsoft Graph and Microsoft 365 experiences use people data, profile cards, profile sources, insights, and analytics."
 author: "simonhult"
 ms.localizationpriority: high
 ms.subservice: "insights"
 ms.custom: scenarios:getting-started
-ms.date: 11/07/2024
+ms.date: 06/12/2026
 ms.topic: article
 ---
 
 # People and workplace intelligence in Microsoft Graph
 
-The hundreds of millions of users of Microsoft 365 cloud services form part of the core of Microsoft Graph. The users' data is carefully managed, protected, and with proper authorization, made available by Microsoft Graph services to drive productivity and creativity in businesses. 
+The hundreds of millions of users of Microsoft 365 cloud services form part of the core of Microsoft Graph. The users' data is carefully managed, protected, and with proper authorization, made available by Microsoft Graph services to drive productivity and creativity in businesses.
 
-The _profile API_ lets you, as app developers, model and represent people in Microsoft 365 services, and the profile card API lets administrators control the information showing on users' profile cards in the organization.
+Copilot and Copilot Search are the main entry points for information about users in your organization. Copilot has access to all available person-related information in the organization, which includes the Microsoft 365 Person Representation as well as people-related information embedded into documents, emails, and Teams chats.
+
+The Microsoft 365 Person Representation encompasses the complete set of properties, attributes, and associated personal contact information that are representative of a user in the Microsoft 365 tenant. The Microsoft 365 Person dataset is maintained and stored in the Primary Data Location of the user.
+
+There are two main constituents of the Microsoft 365 Person Representation:
+
+1. Microsoft 365 User Profile ([profile resource type](/graph/api/resources/profile?view=graph-rest-beta&preserve-view=true)), which constitutes the information that can be viewed by other users within the tenant about the Microsoft 365 person. This includes the user's Microsoft Entra ID account details along with work position and skills/competence information from other sources. For details, see [People data sources in Microsoft 365](#why-configure-people-data-sources).
+1. My Microsoft 365 People dataset ([contact resource type](/graph/api/resources/contact)), which represents the list of the user's Microsoft 365 contacts along with the user's version of their contacts' Microsoft 365 profile. This edited or unedited version of another user's profile will always remain private in the current user's mailbox and won't be replicated anywhere. For more information, see [Manage contacts in Outlook](https://support.microsoft.com/office/manage-contacts-in-outlook-e5fc2d01-2a15-46fe-90f2-b8ebea8f1b29).
+
+Copilot Search and the Microsoft 365 profile card consolidate these two constituents into one representation of a person, providing a personalized view of all Microsoft Entra ID users you're allowed to look up, and enabling Copilot Search to look up users based on all information in the people representation.
+
+To enable discovery, organizational structure exploration, rich people search, and full-fidelity collaboration experiences, the Microsoft 365 profile of users in the tenant is replicated and kept in sync across geos both when a Multi-Geo tenant is first set up and in response to certain user actions. For more details, see [User experience in a Multi-Geo environment](/microsoft-365/enterprise/multi-geo-user-experience#microsoft-365-person-experience).
+
+## Why configure people data sources?
+
+The Microsoft 365 User Profile is built based on multiple people data sources:
+
+- Microsoft Entra ID: Identity and account data, including people data that the tenant admin syncs to Microsoft Entra ID.
+- Copilot connectors for people data, which customers can configure to ingest company data related to people into Microsoft 365.
+- SharePoint: Many customers use the SharePoint user profile to upload and manage people data, both for specific SharePoint usage and customer-specific people data.
+- Organizational data in Microsoft 365: For organizations that manage organizational data via the [Organizational data in Microsoft 365](/viva/organizational-data) platform.
+- People Skills: AI-inferred skill data for users.
+- User edits: Users can edit certain parts of the user profile. For more information, see [Update your profile](https://support.microsoft.com/office/update-your-profile-0ddb9ebf-2850-4533-b07f-cba2c90acbc1).
+
+Copilot uses this complete person data for reasoning and searching for people based on the full set of person data known in Microsoft 365.
+
+The Microsoft 365 profile card exposes the key people data and can be customized by the admin to suit the organization's needs. For details, see [Profile cards in Microsoft 365](https://support.microsoft.com/office/profile-cards-in-microsoft-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501). Users can fulfill their data subject rights by exporting their complete person representation. For more information, see [Export data from your profile card](https://support.microsoft.com/office/export-data-from-your-profile-card-d809f83f-c077-4a95-9b6c-4f093305163d#id0ebf=how_to_export_data_from_your_profile).
 
 As ubiquitous the user's data is in Microsoft Graph, data derived from the user's interactions is particularly interesting. It provides intelligent insights that can answer questions such as the following:
 
-- "Search for People who’s name starts with ‘J’"
+- "Search for people whose name starts with 'J'"
 - "Which documents are most interesting to this person?"
-
-You can use the _people API_ and _insights API_ in Microsoft Graph to build smarter apps that can, respectively, access the relevant people and documents for a user.
-
-The people API returns people ordered by relevance to a user, based on that user's contacts, organization directory, and recent communications on email. This is particularly useful for people-picking scenarios.
-
-The insights API uses advanced analytics and machine learning to provide the most relevant files users need throughout their work day. The API powers familiar Microsoft 365 experiences, including SharePoint Home, the Discover view in OneDrive for Business, and Outlook on the web.
-
-![People and insights API return relevant people and documents for a user](images/social-intel-concept-overview-data-update2020-1.png)
-
-## Why integrate with people data?
-
-The people API returns data of a single entity, [person](/graph/api/resources/person), which includes typical data of an individual in today's business world. What makes this **person** data especially useful is its _relevance_ with respect to a Microsoft Graph user. Relevance is noted in the results returned which are ordered from most relevant to least relevant. You can use the following Microsoft Graph APIs to search for people inside an organization.
-
-- [/search](search-concept-person.md)
-- [/people](/graph/api/resources/person) (maintenance mode)
-
-### Use the /search endpoint
-
-We encourage developers to use the `/search` endpoint when building their products; the `/people` endpoint is in maintenance mode. The following are reasons to consider using the `/search` endpoint:
-
-- All future investments in people search will be made available via `/search`; for example, natural language search like "John the accountant in Nairobi".
-- Attribute search matching on attributes other than name and email is available.
-- Better relevance results from `/search` give better results due to the use of artificial intelligence, better data models, and sophisticated spell correction.
-- Lower **cost of goods** when using `/search`, but specifically lower latency.
-
-### Browse people by relevance
-
-You can browse people who are related to the signed-in user or to some other user in the signed-in user's organization, provided you have got the appropriate [authorization](people-insights-overview.md#authorization). You get a collection of **person** objects that are ordered by relevance. You can further [customize](people-insights-overview.md#browse-people) the collection of **person** objects that is returned in the response by specifying the query parameters `top`, `skip`, `orderby`, `select`, and `filter`.
-
-### Fuzzy searches based on people criteria
-
-The people API lets you search for people relevant to the signed-in user, provided that your app has got permissions by that user. (Read more on [people permissions](permissions-reference.md).)
-
-Fuzzy searches return results based on an exact match and also on inferences about the intent of the search. To illustrate this, the following example returns **person** objects relevant to the signed-in user whose name, _or email address_, contains a word that starts with 'j'.
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET /me/people/?$search=j
-```
-
-## Why integrate with the profile API (preview)?
-
-The [profile](/graph/api/resources/profile) API represents the next generation in modeling and representing people in Microsoft 365 services. Profile data can be used together with people data to build customized experiences based on Microsoft Graph.
 
 ## Why configure profile cards in your organization?
 
@@ -77,15 +60,23 @@ Pronouns serve as substitutes for a person's name in sentences, with gender-neut
 
 ## Why configure profile source precedence in your organization?
 
-Profile source precedence allows administrators to control how profile data is displayed across Microsoft 365 experiences. When multiple sources provide overlapping data, administrators can define the authoritative source of profile data by configuring the order of data source priority using the [profilePropertySetting](/graph/api/resources/profilepropertysetting) API. For more information, see [Manage profile source precedence in Microsoft 365](/graph/profilepriority-configure-profilepropertysetting).
+Profile source precedence allows administrators to control how profile data is displayed and used across Microsoft 365 experiences. When multiple sources provide overlapping data, administrators can define the authoritative source of profile data by configuring the order of data source priority using the [profilePropertySetting](/graph/api/resources/profilepropertysetting) API. For more information, see [Manage profile source precedence settings for an organization using the Microsoft Graph API (preview)](/graph/profilepriority-configure-profilepropertysetting).
+
+Examples of how the source precedence settings impact Microsoft 365 experiences:
+
+- The work position information, such as job title, on the profile card will show the value provided by the highest precedence source that has a value for this property. Assume an HR repository connector source is configured to have higher precedence than Microsoft Entra ID. If both sources provide a job title, then only the job title from the connector is presented.
+- Copilot uses the value provided by the highest precedence source to answer questions about, for example, another user's job title.
+- Core Microsoft 365 applications, such as Office applications, Viva applications, Outlook, Teams, Org Explorer, and People Search, also respect the precedence settings when presenting people information.
+- A third-party experience that consumes the profile via Microsoft Graph `/users/{id}/profile` only gets the property value for job title from the highest precedence source.
+- For multivalue data like email address and phone, the data from all sources is provided on the API and presented in the order defined by the source precedence, except in case of exact duplicates.
 
 ## Why integrate with document-based insights?
 
 ### Use intelligence to improve collaboration
 
-During a typical work day, users often interact with large amounts of information stored across many documents and collaborate with other users in many different ways. It's important that they can always find what they need, when they need it.
+During a typical workday, users often interact with large amounts of information stored across many documents and collaborate with other users in many ways. It's important that they can always find what they need when they need it.
 
-You can use the insights API, which includes the [trending](/graph/api/resources/insights-trending), [shared](/graph/api/resources/insights-shared), and [used](/graph/api/resources/insights-used) APIs, to surface files from across Microsoft 365 based on your users' current context and needs, making users more productive and improving collaboration in your organization. Organizations can [customize privacy settings](insights-customize-item-insights-privacy.md) for these document-based insights, and control the availability of these insights in specific Microsoft 365 experiences.
+You can use the insights API, which includes the [trending](/graph/api/resources/insights-trending), [shared](/graph/api/resources/insights-shared), and [used](/graph/api/resources/insights-used) APIs, to surface files from across Microsoft 365 based on your users' current context and needs, making users more productive and improving collaboration in your organization. Organizations can [customize privacy settings](insights-customize-item-insights-privacy.md) for these document-based insights and control the availability of these insights in specific Microsoft 365 experiences.
 
 It is easy to render the results from the insights API in your app. Every result comes with a set of common visualization properties, like a preview image URL or preview text.
 
@@ -104,31 +95,3 @@ The insights API provides a similar functionality with the [used](/graph/api/res
 [Microsoft Viva Insights](/viva/insights/introduction) provides insight into how people spend their time and who they spend it with. This data can help people plan their day, gain insights into their different work patterns, and help them balance work and life.
 
 The analytics API enables you to synchronize or integrate user analytics data with a custom, third-party app to support a wide range of scenarios that can help improve user productivity and collaboration. For example, you could integrate Viva Insights data with mobile device activities to help users keep track of all their work and social activities and plan their day all within one app.
- 
-## API reference
-
-Looking for the API reference for these services?
-
-- [Use the Microsoft Graph API to integrate people and workplace intelligence in an app (v1.0)](/graph/api/resources/social-overview)
-- [Use the Microsoft Graph API to integrate people and workplace intelligence in an app (beta)](/graph/api/resources/social-overview?view=graph-rest-beta&preserve-view=true)
-- The People API [person](/graph/api/resources/person) resource
-- [Profile (preview)](/graph/api/resources/profile) resource
-- [Profile source](/graph/api/resources/profilesource) resource
-- [Profile card property](/graph/api/resources/profilecardproperty) resource
-- [Profile property setting (preview)](/graph/api/resources/profilepropertysetting?view=graph-rest-beta&preserve-view=true) resource
-- [Pronouns settings](/graph/api/resources/pronounssettings) resource
-- [Insights API](/graph/api/resources/officegraphinsights)
-- [Analytics API (preview)](/graph/api/resources/useranalytics)
-
-## Next steps
-
-- Use the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to try out the people, insights, and analytics APIs with your own files. Sign in, expand **People** or **Insights** in the column on the left, and try their sample queries.
-- Find more about the [people API](people-insights-overview.md).
-- See how to [customize the profile card](add-properties-profilecard.md).
-- See how to [manage pronouns settings for an organization](pronouns-configure-pronouns-availability.md).
-- See how to [manage profile source settings for an organization](profilesource-configure-settings.md).
-- See how to [manage profile source precedence settings for an organization (preview)](/graph/profilepriority-configure-profilepropertysetting).
-- Find out more about [item insights](item-insights-overview.md), [customizing item insights privacy for users (preview)](insights-customize-item-insights-privacy.md), and the [item insights settings API (preview)](/graph/api/resources/insightssettings) that supports the customization.
-- Find more about the [analytics API](/graph/api/resources/social-overview#help-users-balance-work-and-life).
-- Find more about the [profile API](/graph/api/resources/profile?view=graph-rest-beta&preserve-view=true).
-  

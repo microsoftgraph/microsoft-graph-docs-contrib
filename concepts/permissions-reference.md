@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 06/08/2026
+ms.date: 06/15/2026
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -7075,6 +7075,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### SecurityAlert.Create.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 06870c4c-7370-4a2a-ad10-239a337af816 | 7417b8c6-a088-4c4c-99c7-bca9ab3eb9ba |
+| DisplayText | Create security alerts | Create security alerts |
+| Description | Allows the app to create security alerts, without a signed-in user. | Allows the app to create security alerts, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
 ### SecurityAlert.Read.All
 
 | Category | Application | Delegated |
@@ -10439,3 +10450,4 @@ Learn more about [RSC authorization framework and RSC permissions](/microsofttea
 + [Grant or revoke Microsoft Graph permissions programmatically](permissions-grant-via-msgraph.md)
 
 [MSA]: images/permissions-reference/msa.svg "personal Microsoft accounts (MSA)"
+

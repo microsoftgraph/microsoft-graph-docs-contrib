@@ -36,6 +36,15 @@ Namespace: microsoft.graph.identityGovernance
 |failed|
 |unknownFutureValue|
 
+### customTaskExtensionReplyMode values 
+
+|Member|
+|:---|
+|none|
+|callback|
+|response|
+|unknownFutureValue|
+
 ### lifecycleTaskCategory values 
 
 
@@ -44,6 +53,7 @@ Namespace: microsoft.graph.identityGovernance
 |:---|
 |joiner|
 |leaver|
+|extensibility|
 |unknownFutureValue|
 
 ### lifecycleWorkflowCategory values 
@@ -54,6 +64,7 @@ Namespace: microsoft.graph.identityGovernance
 |:---|
 |joiner|
 |leaver|
+|extensibility|
 |unknownFutureValue|
 
 
@@ -78,8 +89,9 @@ Namespace: microsoft.graph.identityGovernance
 |:---|
 |scheduled|
 |onDemand|
-|unknownFutureValue|
 |activatedWithScope|
+|extensibilityOnDemand|
+|unknownFutureValue|
 
 
 ### workflowTriggerTimeBasedAttribute values 
