@@ -66,6 +66,36 @@ items:
       href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
     - name: Get multi-value property
       href: ../../api/multivaluelegacyextendedproperty-get.md
+- name: Distribution list
+  items:
+  - name: Distribution list
+    href: ../../resources/distributionlist.md
+  - name: List
+    href: ../../api/user-list-distributionlists.md
+  - name: Create
+    href: ../../api/user-post-distributionlists.md
+  - name: Get
+    href: ../../api/distributionlist-get.md
+  - name: Update
+    href: ../../api/distributionlist-update.md
+  - name: Delete
+    href: ../../api/distributionlist-delete.md
+  - name: Add members
+    href: ../../api/distributionlist-addmembers.md
+  - name: Delete members
+    href: ../../api/distributionlist-deletemembers.md
+  - name: List members
+    href: ../../api/distributionlist-list-distributionlistmembers.md
+  - name: Get member
+    href: ../../api/distributionlist-get-distributionlistmember.md
+- name: Distribution list member
+  items:
+  - name: Distribution list member
+    href: ../../resources/distributionlistmember.md
+  - name: List
+    href: ../../api/distributionlist-list-distributionlistmembers.md
+  - name: Get
+    href: ../../api/distributionlist-get-distributionlistmember.md
 - name: Outlook category (deprecated)
   items:
   - name: Outlook category (deprecated)
@@ -120,3 +150,7 @@ items:
       href: ../../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md
     - name: Get multi-value property
       href: ../../api/multivaluelegacyextendedproperty-get.md
+- name: Complex types
+  items:
+  - name: Member (preview)
+    href: ../../resources/member.md
