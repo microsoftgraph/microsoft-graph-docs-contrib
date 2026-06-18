@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 >**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported.
 
-Update an existing [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) or create one if it does not exist.
+Update an existing [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) or create one if it doesn't exist.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -51,7 +51,7 @@ In the request body, provide an XML representation of the [trustFrameworkPolicy]
 
 The response will be one of the following:
 - If a [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) exists, a successful request returns a `200 OK` response code.
-- If a [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) does not exist, a successful request returns a `201 Created` response code.
+- If a [trustFrameworkPolicy](../resources/trustframeworkpolicy.md) doesn't exist, a successful request returns a `201 Created` response code.
 - If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Example

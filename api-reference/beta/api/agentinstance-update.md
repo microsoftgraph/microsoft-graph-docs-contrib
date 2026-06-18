@@ -81,7 +81,7 @@ If successful, this method returns a `200 OK` response code and an updated [agen
 
 #### Request
 
-The following example shows a request. The request also creates the agentCardManifest if it does not already exist.
+The following example shows a request. The request also creates the agentCardManifest if it doesn't already exist.
 
 # [HTTP](#tab/http)
 <!-- {

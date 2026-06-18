@@ -96,7 +96,7 @@ Specifying the `$value` parameter returns the message content in MIME format, an
 ## Examples
 ### Example 1: Get a specific message
 #### Request
-The first example gets the specified message. It does not specify any header to indicate the format of the body to be returned.
+The first example gets the specified message. It doesn't specify any header to indicate the format of the body to be returned.
 
 # [HTTP](#tab/http)
 <!-- {

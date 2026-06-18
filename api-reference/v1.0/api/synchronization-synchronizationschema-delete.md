@@ -43,7 +43,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `201 No Content` response code. It does not return anything in response body.
+If successful, this method returns a `201 No Content` response code. It doesn't return anything in response body.
 
 ## Example
 

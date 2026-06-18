@@ -23,7 +23,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 <!-- { "blockType": "permissions", "name": "driveitem_search" } -->
 [!INCLUDE [permissions-table](../includes/permissions/driveitem-search-permissions.md)]
 
->**Note:** This method does not support the Sites.Selected application permission.
+>**Note:** This method doesn't support the Sites.Selected application permission.
 
 ## HTTP request
 

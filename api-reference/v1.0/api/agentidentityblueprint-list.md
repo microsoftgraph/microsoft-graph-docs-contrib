@@ -12,7 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get a list of the [agentIdentityBlueprint](../resources/agentidentityblueprint.md) objects and their properties. Does not return other types of application objects.
+Get a list of the [agentIdentityBlueprint](../resources/agentidentityblueprint.md) objects and their properties. Doesn't return other types of application objects.
 
 ## Permissions
 

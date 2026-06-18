@@ -375,7 +375,7 @@ Content-type: application/json
 }
 ```
 
-If there are no custom security attributes assigned to the service principal or if the calling principal does not have access, the response will look like:
+If there are no custom security attributes assigned to the service principal or if the calling principal doesn't have access, the response will look like:
 
 ```http
 HTTP/1.1 200 OK

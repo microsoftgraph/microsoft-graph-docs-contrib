@@ -36,7 +36,7 @@ GET /identityProtection/riskDetections/{id}
 ```
 
 ## Optional query parameters
-This method does not support any [OData query parameters](/graph/query-parameters) to help customize the response.
+This method doesn't support any [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Name      |Description|

@@ -89,7 +89,7 @@ The following example gets the specified event. It specifies the following:
 - A `Prefer: outlook.timezone` header to get date time values returned in Pacific Standard Time.
 - A `$select` query parameter to return specific properties. Without a `$select` parameter, all of the event properties will be returned.
 
-The request does not specify any `Prefer: outlook.body-content-type` header to indicate a specific format for the returned event body.
+The request doesn't specify any `Prefer: outlook.body-content-type` header to indicate a specific format for the returned event body.
 
 
 # [HTTP](#tab/http)
@@ -350,7 +350,7 @@ GET https://graph.microsoft.com/beta/me/events/AAMkADAGAADDdm4NAAA=?$select=subj
 
 The following example shows the response. The **locations** property includes details for the 3 locations that the event is organized for.
 
-Because the request does not specify any `Prefer: outlook.timezone` or `Prefer: outlook.body-content-type` header,
+Because the request doesn't specify any `Prefer: outlook.timezone` or `Prefer: outlook.body-content-type` header,
 the **start** and **end** properties are displayed in the default UTC time zone, and the body is in the default HTML format.
 
 <!-- {

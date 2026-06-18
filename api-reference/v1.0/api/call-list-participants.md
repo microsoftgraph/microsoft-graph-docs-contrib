@@ -31,7 +31,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 GET /communications/calls/{id}/participants
 ```
-> **Note:** This request does not support peer-to-peer calls.
+> **Note:** This request doesn't support peer-to-peer calls.
 
 ## Optional query parameters
 

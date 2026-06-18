@@ -94,7 +94,7 @@ The first example gets all the user's events. It specifies the following:
 - A `Prefer: outlook.timezone` header to get date time values returned in Pacific Standard Time.
 - A `$select` query parameter to return specific properties. Without a `$select` parameter, all of the event properties will be returned.
 
-The request does not specify any `Prefer: outlook.body-content-type` header to indicate a specific format for the returned event body.
+The request doesn't specify any `Prefer: outlook.body-content-type` header to indicate a specific format for the returned event body.
 
 #### Request
 

@@ -39,7 +39,7 @@ GET /reports/authenticationMethods/userRegistrationDetails/{userId}
 
 ## Optional query parameters
 
-This method does not support the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method doesn't support the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

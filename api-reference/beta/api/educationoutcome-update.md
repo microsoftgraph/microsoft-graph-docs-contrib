@@ -45,7 +45,7 @@ In the request body, supply the values for relevant fields that should be update
 
 The **educationOutcome** object will be one of the following derived types: **educationPointsOutcome**, **educationFeedbackOutcome**, or **educationRubricOutcome**. Supply the specific properties relevant to the type of outcome you're updating.
 
-All derived outcome types have a regular and a "published" property appropriate to that type of outcome; for example, **points** and **publishedPoints**, **feedback** and **publishedFeedback**. Do not update the "published" property; it is for internal use. For example, to assign points to an **educationPointsOutcome**, update the **points** property, but do not update **publishedPoints**.
+All derived outcome types have a regular and a "published" property appropriate to that type of outcome; for example, **points** and **publishedPoints**, **feedback** and **publishedFeedback**. Don't update the "published" property; it is for internal use. For example, to assign points to an **educationPointsOutcome**, update the **points** property, but don't update **publishedPoints**.
 
 ## Response
 
