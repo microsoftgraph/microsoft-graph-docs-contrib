@@ -3065,7 +3065,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "virtualEventSession",
           "ChangeType": "Addition",
-          "Description": "Added the [LIST](https://learn.microsoft.com/en-us/graph/api/virtualeventsession-list?view=graph-rest-beta) operation to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
+          "Description": "Added the **LIST** operation to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
           "Target": "virtualEventSession"
         }
       ],
@@ -3237,7 +3237,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "virtualEventRegistrant",
           "ChangeType": "Addition",
-          "Description": "Added the [virtualEventRegistrant](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistrant?view=graph-rest-beta) resource",
+          "Description": "Added the **virtualEventRegistrant** resource",
           "Target": "virtualEventRegistrant"
         },
         {
@@ -5259,7 +5259,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "presence,change notifications",
           "ChangeType": "Addition",
-          "Description": "The [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence) resource now supports [change notifications](https://learn.microsoft.com/en-us/graph/webhooks).",
+          "Description": "The [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence) resource now supports **change notifications**.",
           "Target": "presence,change notifications"
         }
       ],
@@ -5379,7 +5379,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "webhook",
           "ChangeType": "Addition",
-          "Description": "Added support for [webhook](https://learn.microsoft.com/en-us/graph/api/resources/webhooks?view=graph-rest-1.0) subscriptions to call records.",
+          "Description": "Added support for **webhook** subscriptions to call records.",
           "Target": "webhook"
         },
         {
@@ -5403,7 +5403,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "List sessions",
           "ChangeType": "Addition",
-          "Description": "Added the [List sessions](https://learn.microsoft.com/en-us/graph/api/callrecords-session-list?view=graph-rest-beta) API.",
+          "Description": "Added the **List sessions** API.",
           "Target": "List sessions"
         }
       ],
@@ -5659,7 +5659,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "webhook",
           "ChangeType": "Addition",
-          "Description": "Added support for [webhook](https://learn.microsoft.com/en-us/graph/api/resources/webhooks?view=graph-rest-1.0) subscriptions to call records.",
+          "Description": "Added support for **webhook** subscriptions to call records.",
           "Target": "webhook"
         }
       ],

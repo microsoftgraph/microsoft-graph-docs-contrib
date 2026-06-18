@@ -219,7 +219,7 @@
               "ApiChange": "Method",
               "ChangedApiName": "browse",
               "ChangeType": "Addition",
-              "Description": "Added the [browse](https://learn.microsoft.com/en-us/graph/api/browseSessionBase-browse?view=graph-rest-1.0) method to the [browseSessionBase](https://learn.microsoft.com/en-us/graph/api/resources/browseSessionBase?view=graph-rest-1.0) resource.",
+              "Description": "Added the **browse** method to the [browseSessionBase](https://learn.microsoft.com/en-us/graph/api/resources/browseSessionBase?view=graph-rest-1.0) resource.",
               "Target": "browseSessionBase"
             },
             {
@@ -227,7 +227,7 @@
               "ApiChange": "Method",
               "ChangedApiName": "browse",
               "ChangeType": "Addition",
-              "Description": "Added the [browse](https://learn.microsoft.com/en-us/graph/api/browseSessionBase-browse?view=graph-rest-1.0) method to the [browseSessionBase](https://learn.microsoft.com/en-us/graph/api/resources/browseSessionBase?view=graph-rest-1.0) resource.",
+              "Description": "Added the **browse** method to the [browseSessionBase](https://learn.microsoft.com/en-us/graph/api/resources/browseSessionBase?view=graph-rest-1.0) resource.",
               "Target": "browseSessionBase"
             }
           ],
@@ -2269,7 +2269,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "browse",
           "ChangeType": "Addition",
-          "Description": "Added the [browse](https://learn.microsoft.com/en-us/graph/api/browseSessionBase-browse?view=graph-rest-beta) method to the [browseSessionBase](https://learn.microsoft.com/en-us/graph/api/resources/browseSessionBase?view=graph-rest-beta) resource.",
+          "Description": "Added the **browse** method to the [browseSessionBase](https://learn.microsoft.com/en-us/graph/api/resources/browseSessionBase?view=graph-rest-beta) resource.",
           "Target": "browseSessionBase"
         }
       ],

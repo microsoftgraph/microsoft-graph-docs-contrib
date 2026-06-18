@@ -219,7 +219,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "appliedCategory",
           "ChangeType": "Addition",
-          "Description": "Added the [appliedCategory](https://learn.microsoft.com/en-us/graph/api/resources/security-appliedCategory?view=graph-rest-beta) resource type.",
+          "Description": "Added the **appliedCategory** resource type.",
           "Target": "appliedCategory"
         },
         {
@@ -227,7 +227,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "authority",
           "ChangeType": "Addition",
-          "Description": "Added the [authority](https://learn.microsoft.com/en-us/graph/api/resources/security-authority?view=graph-rest-beta) resource type.",
+          "Description": "Added the **authority** resource type.",
           "Target": "authority"
         },
         {
@@ -235,7 +235,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "citation",
           "ChangeType": "Addition",
-          "Description": "Added the [citation](https://learn.microsoft.com/en-us/graph/api/resources/security-citation?view=graph-rest-beta) resource type.",
+          "Description": "Added the **citation** resource type.",
           "Target": "citation"
         },
         {
@@ -243,7 +243,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "department",
           "ChangeType": "Addition",
-          "Description": "Added the [department](https://learn.microsoft.com/en-us/graph/api/resources/security-department?view=graph-rest-beta) resource type.",
+          "Description": "Added the **department** resource type.",
           "Target": "department"
         },
         {
@@ -259,7 +259,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "subCategory",
           "ChangeType": "Addition",
-          "Description": "Added the [subCategory](https://learn.microsoft.com/en-us/graph/api/resources/security-subCategory?view=graph-rest-beta) resource type.",
+          "Description": "Added the **subCategory** resource type.",
           "Target": "subCategory"
         },
         {
@@ -453,7 +453,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "appliedCategory",
           "ChangeType": "Addition",
-          "Description": "Added the [appliedCategory](https://learn.microsoft.com/en-us/graph/api/resources/security-appliedCategory?view=graph-rest-v1.0) resource type.",
+          "Description": "Added the **appliedCategory** resource type.",
           "Target": "appliedCategory"
         },
         {
@@ -461,7 +461,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "authority",
           "ChangeType": "Addition",
-          "Description": "Added the [authority](https://learn.microsoft.com/en-us/graph/api/resources/security-authority?view=graph-rest-v1.0) resource type.",
+          "Description": "Added the **authority** resource type.",
           "Target": "authority"
         },
         {
@@ -469,7 +469,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "citation",
           "ChangeType": "Addition",
-          "Description": "Added the [citation](https://learn.microsoft.com/en-us/graph/api/resources/security-citation?view=graph-rest-v1.0) resource type.",
+          "Description": "Added the **citation** resource type.",
           "Target": "citation"
         },
         {
@@ -477,7 +477,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "department",
           "ChangeType": "Addition",
-          "Description": "Added the [department](https://learn.microsoft.com/en-us/graph/api/resources/security-department?view=graph-rest-v1.0) resource type.",
+          "Description": "Added the **department** resource type.",
           "Target": "department"
         },
         {
@@ -493,7 +493,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "subCategory",
           "ChangeType": "Addition",
-          "Description": "Added the [subCategory](https://learn.microsoft.com/en-us/graph/api/resources/security-subCategory?view=graph-rest-v1.0) resource type.",
+          "Description": "Added the **subCategory** resource type.",
           "Target": "subCategory"
         },
         {

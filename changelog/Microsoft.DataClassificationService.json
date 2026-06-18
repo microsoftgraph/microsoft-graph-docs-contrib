@@ -949,7 +949,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "computeRightsAndInheritance",
           "ChangeType": "Addition",
-          "Description": "Added the [computeRightsAndInheritance](https://learn.microsoft.com/en-us/graph/api/sensitivityLabel-computeRightsAndInheritance?view=graph-rest-1.0) method to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/sensitivityLabel?view=graph-rest-1.0) resource.",
+          "Description": "Added the [computeRightsAndInheritance](https://learn.microsoft.com/en-us/graph/api/sensitivityLabel-computeRightsAndInheritance?view=graph-rest-1.0) method to the **sensitivityLabel** resource.",
           "Target": "sensitivityLabel"
         },
         {
@@ -973,7 +973,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "computeInheritance",
           "ChangeType": "Addition",
-          "Description": "Added the [computeInheritance](https://learn.microsoft.com/en-us/graph/api/sensitivityLabel-computeInheritance?view=graph-rest-1.0) method to the [sensitivityLabel](https://learn.microsoft.com/en-us/graph/api/resources/sensitivityLabel?view=graph-rest-1.0) resource.",
+          "Description": "Added the [computeInheritance](https://learn.microsoft.com/en-us/graph/api/sensitivityLabel-computeInheritance?view=graph-rest-1.0) method to the **sensitivityLabel** resource.",
           "Target": "sensitivityLabel"
         },
         {

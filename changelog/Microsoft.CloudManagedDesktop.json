@@ -595,7 +595,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "availabilityZoneRestricted",
           "ChangeType": "Addition",
-          "Description": "Added the **availabilityZoneRestricted** property to the [cloudPcSupportedRegionRestrictionDetail](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcSupportedRegionRestrictionDetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **availabilityZoneRestricted** property to the **cloudPcSupportedRegionRestrictionDetail** resource.",
           "Target": "cloudPcSupportedRegionRestrictionDetail"
         }
       ],
@@ -1333,7 +1333,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcSnapshotImportActionResult",
           "ChangeType": "Addition",
-          "Description": "Added the [cloudPcSnapshotImportActionResult](https://learn.microsoft.com/en-us/graph/resources/cloudpcsnapshotimportactionresult?view=graph-rest-beta) resource type.",
+          "Description": "Added the **cloudPcSnapshotImportActionResult** resource type.",
           "Target": "cloudPcSnapshotImportActionResult"
         },
         {
@@ -1341,7 +1341,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcSnapshotImportActionDetail",
           "ChangeType": "Addition",
-          "Description": "Added the [cloudPcSnapshotImportActionDetail](https://learn.microsoft.com/en-us/graph/resources/cloudpcsnapshotimportactiondetail?view=graph-rest-beta) resource type.",
+          "Description": "Added the **cloudPcSnapshotImportActionDetail** resource type.",
           "Target": "cloudPcSnapshotImportActionDetail"
         },
         {
@@ -1349,7 +1349,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcStorageBlobDetail",
           "ChangeType": "Addition",
-          "Description": "Added the [cloudPcSnapshotImportActionDetail](https://learn.microsoft.com/en-us/graph/resources/cloudpcstorageblobdetail?view=graph-rest-beta) resource type.",
+          "Description": "Added the **cloudPcSnapshotImportActionDetail** resource type.",
           "Target": "cloudPcStorageBlobDetail"
         },
         {
@@ -1515,7 +1515,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "osArchitecture",
           "ChangeType": "Addition",
-          "Description": "Added the **osArchitecture** property to the [cloudPcDeviceImage](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcDeviceImage?view=graph-rest-beta) resource.",
+          "Description": "Added the **osArchitecture** property to the **cloudPcDeviceImage** resource.",
           "Target": "cloudPcDeviceImage"
         },
         {
@@ -1523,7 +1523,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "osArchitecture",
           "ChangeType": "Addition",
-          "Description": "Added the **osArchitecture** property to the [cloudPcGalleryImage](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcGalleryImage?view=graph-rest-beta) resource.",
+          "Description": "Added the **osArchitecture** property to the **cloudPcGalleryImage** resource.",
           "Target": "cloudPcGalleryImage"
         }
       ],
@@ -1861,7 +1861,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "geographicLocationType",
           "ChangeType": "Addition",
-          "Description": "Added the **geographicLocationType** property to the [cloudPcDomainJoinConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcDomainJoinConfiguration?view=graph-rest-beta) resource.",
+          "Description": "Added the **geographicLocationType** property to the **cloudPcDomainJoinConfiguration** resource.",
           "Target": "cloudPcDomainJoinConfiguration"
         },
         {
@@ -1869,7 +1869,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "geographicLocationType",
           "ChangeType": "Addition",
-          "Description": "Added the **geographicLocationType** property to the [cloudPcSupportedRegion](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcSupportedRegion?view=graph-rest-beta) resource.",
+          "Description": "Added the **geographicLocationType** property to the **cloudPcSupportedRegion** resource.",
           "Target": "cloudPcSupportedRegion"
         }
       ],
@@ -2331,7 +2331,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "endDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the **endDateTime** property to the [cloudPcPolicyScheduledApplyActionDetail](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcPolicyScheduledApplyActionDetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **endDateTime** property to the **cloudPcPolicyScheduledApplyActionDetail** resource.",
           "Target": "cloudPcPolicyScheduledApplyActionDetail"
         },
         {
@@ -2339,7 +2339,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "nextRunDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the **nextRunDateTime** property to the [cloudPcPolicyScheduledApplyActionDetail](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcPolicyScheduledApplyActionDetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **nextRunDateTime** property to the **cloudPcPolicyScheduledApplyActionDetail** resource.",
           "Target": "cloudPcPolicyScheduledApplyActionDetail"
         },
         {
@@ -2347,7 +2347,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "startDateTime",
           "ChangeType": "Addition",
-          "Description": "Added the **startDateTime** property to the [cloudPcPolicyScheduledApplyActionDetail](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcPolicyScheduledApplyActionDetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **startDateTime** property to the **cloudPcPolicyScheduledApplyActionDetail** resource.",
           "Target": "cloudPcPolicyScheduledApplyActionDetail"
         },
         {
@@ -2355,7 +2355,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "timezone",
           "ChangeType": "Addition",
-          "Description": "Added the **timezone** property to the [cloudPcPolicyScheduledApplyActionDetail](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcPolicyScheduledApplyActionDetail?view=graph-rest-beta) resource.",
+          "Description": "Added the **timezone** property to the **cloudPcPolicyScheduledApplyActionDetail** resource.",
           "Target": "cloudPcPolicyScheduledApplyActionDetail"
         }
       ],

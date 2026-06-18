@@ -7,7 +7,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "permissionsManagement",
           "ChangeType": "Deprecated",
-          "Description": "Deprecated the **permissionsManagement** relationship of the [identityGovernance](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance?view=graph-rest-beta) resource. This deprecation applies to all Microsoft Entra Permissions Management APIs. More information can be found [here](https://aka.ms/MEPMretire).",
+          "Description": "Deprecated the **permissionsManagement** relationship of the [identityGovernance](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance?view=graph-rest-beta) resource. This deprecation applies to all Microsoft Entra Permissions Management APIs. More information can be found **here**.",
           "Target": "identityGovernance"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "permissionsAnalytics",
           "ChangeType": "Deprecated",
-          "Description": "Deprecated the **permissionsAnalytics** relationship of the [identityGovernance](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance?view=graph-rest-beta) resource. This deprecation applies to all Microsoft Entra Permissions Management APIs. More information can be found [here](https://aka.ms/MEPMretire).",
+          "Description": "Deprecated the **permissionsAnalytics** relationship of the [identityGovernance](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance?view=graph-rest-beta) resource. This deprecation applies to all Microsoft Entra Permissions Management APIs. More information can be found **here**.",
           "Target": "identityGovernance"
         }
       ],
