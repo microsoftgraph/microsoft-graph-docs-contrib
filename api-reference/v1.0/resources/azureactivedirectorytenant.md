@@ -17,8 +17,8 @@ Used in the identity sources of an [connectedOrganization](connectedOrganization
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The name of the Microsoft Entra tenant. Read only. |
-|tenantId|String|The ID of the Microsoft Entra tenant. Read only. |
+|displayName|String|The name of the Microsoft Entra tenant. Read-only. |
+|tenantId|String|The ID of the Microsoft Entra tenant. Read-only. |
 
 ## Relationships
 None.
