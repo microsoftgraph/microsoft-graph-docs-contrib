@@ -798,6 +798,33 @@ Namespace: microsoft.graph
 | allowedRequestor |
 | unknownFutureValue |
 
+### accessPackageSuggestionFilterByCurrentUserOptions values
+
+| Member |
+| ---- |
+| none |
+| relatedPeopleAssignments |
+| assignmentHistory |
+| unknownFutureValue |
+
+### accessPackageSuggestionRelatedPeopleInsightLevel values
+
+| Member |
+| ---- |
+| disabled |
+| count |
+| countAndNames |
+| unknownFutureValue |
+
+### approverInformationVisibility values
+
+| Member |
+| ---- |
+| default |
+| notVisible |
+| visible |
+| unknownFutureValue |
+
 ### accessPackageRequestState values
 
 | Member |
