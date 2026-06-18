@@ -45,7 +45,7 @@ This resource supports:
 |description|String|The description for the directory role. Read-only. Supports `$filter` (`eq`), `$search`, `$select`.|
 |displayName|String|The display name for the directory role. Read-only. Supports `$filter` (`eq`), `$search`, `$select`. |
 |id|String|The unique identifier for the directory role. Inherited from [directoryObject](directoryobject.md). Key, Not nullable, Read-only. Supports `$filter` (`eq`), `$select`.|
-|roleTemplateId|String| The **id** of the [directoryRoleTemplate](directoryroletemplate.md) that this role is based on. The property must be specified when activating a directory role in a tenant with a POST operation. After the directory role has been activated, the property is read only. Supports `$filter` (`eq`), `$select`. |
+|roleTemplateId|String| The **id** of the [directoryRoleTemplate](directoryroletemplate.md) that this role is based on. The property must be specified when activating a directory role in a tenant with a POST operation. After the directory role has been activated, the property is read-only. Supports `$filter` (`eq`), `$select`. |
 
 ## Relationships
 | Relationship | Type |Description|
