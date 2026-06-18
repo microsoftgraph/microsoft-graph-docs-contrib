@@ -39,12 +39,12 @@ For more information about tabs, see [Build tabs for Teams](/microsoftteams/plat
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|  id              |   string                  |  Identifier that uniquely identifies a specific instance of a channel tab. Read only.     |
+|  id              |   string                  |  Identifier that uniquely identifies a specific instance of a channel tab. Read-only.     |
 |  displayName            |   string                  |  Name of the tab.     |
 |  name (deprecated)      |   string                  |  Name of the tab.     |
 |  teamsAppId (deprecated)|   string             |  App definition identifier of the tab. This value can't be changed after tab creation. Because this property is deprecated, we recommend expanding **teamsApp** to retrieve the application that is linked to the tab. |
 |  sortOrderIndex  |   string                  |  Index of the order used for sorting tabs.     |
-|  webUrl          |   string                  |  Deep link URL of the tab instance. Read only.     |
+|  webUrl          |   string                  |  Deep link URL of the tab instance. Read-only.     |
 |  configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  Container for custom settings applied to a tab. The tab is considered configured only once this property is set.     |
 
 ## Relationships
