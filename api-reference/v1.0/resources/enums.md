@@ -675,6 +675,16 @@ Namespace: microsoft.graph
 | approver |
 | unknownFutureValue |
 
+### roleType values
+
+| Member |
+| ------ |
+| active |
+| eligible |
+| application |
+| delegated |
+| unknownFutureValue |
+
 ### unifiedRoleManagementPolicyRuleTargetOperations values
 
 | Member |

@@ -273,6 +273,32 @@
     {
       "ChangeList": [
         {
+          "Id": "b26be12a-1a52-489f-b223-dc9d2b0a8c31",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "roleType",
+          "ChangeType": "Addition",
+          "Description": "Added the **roleType** enumeration type.",
+          "Target": "roleType"
+        },
+        {
+          "Id": "b26be12a-1a52-489f-b223-dc9d2b0a8c31",
+          "ApiChange": "Property",
+          "ChangedApiName": "type",
+          "ChangeType": "Addition",
+          "Description": "Added the **type** property to the [accessPackageResourceRole](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageResourceRole?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageResourceRole"
+        }
+      ],
+      "Id": "b26be12a-1a52-489f-b223-dc9d2b0a8c31",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-06-18T14:46:42.7323209Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ea679487-f221-4111-955b-f3b581261ada",
           "ApiChange": "Enumeration",
           "ChangedApiName": "accessPackageSuggestionFilterByCurrentUserOptions",
