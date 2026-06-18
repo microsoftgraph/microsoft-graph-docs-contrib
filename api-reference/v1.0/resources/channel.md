@@ -66,7 +66,7 @@ where files are shared, and where tabs are added.
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|createdDateTime|dateTimeOffset|Read only. Timestamp at which the channel was created.|
+|createdDateTime|dateTimeOffset|Read-only. Timestamp at which the channel was created.|
 |description|String|Optional textual description for the channel.|
 |displayName|String|Channel name as it will appear to the user in Microsoft Teams. The maximum length is 50 characters.|
 |email|String| The email address for sending messages to the channel. Read-only.|
