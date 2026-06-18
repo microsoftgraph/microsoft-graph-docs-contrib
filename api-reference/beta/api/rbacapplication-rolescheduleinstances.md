@@ -42,7 +42,7 @@ The following table shows the query parameters that can be used with this method
 |directoryScopeId|String|Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use `/` for tenant-wide scope. Use **appScopeId** to limit the scope to an application only. |
 |appScopeId|String|Identifier of the app-specific scope when the assignment scope is app-specific. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use `/` for tenant-wide app scopes. Use **directoryScopeId** to limit the scope to particular directory objects, for example, administrative units. |
 |principalId|String|Identifier of the principal to which the schedules belong. |
-|roleDefinitionId|String|Identifier of the unifiedRoleDefinition for the assignment. Read only.|
+|roleDefinitionId|String|Identifier of the unifiedRoleDefinition for the assignment. Read-only.|
 
 ## Request headers
 |Name|Description|
