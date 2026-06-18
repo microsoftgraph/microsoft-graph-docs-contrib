@@ -5,7 +5,7 @@ author: "awang119"
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "cloud-communications"
-ms.date: 11/08/2024
+ms.date: 06/04/2026
 ---
 
 # onlineMeeting resource type
@@ -77,6 +77,7 @@ Inherits from [onlineMeetingBase](../resources/onlinemeetingbase.md).
 | meetingOptionsWebUrl | String | Provides the URL to the Teams meeting options page for the specified meeting. This link allows *only the organizer* to configure meeting settings. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | meetingSpokenLanguageTag | String | Specifies the spoken language used during the meeting for recording and transcription purposes. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | meetingTemplateId | String | The ID of the [meeting template](/microsoftteams/create-custom-meeting-template). |
+| meetingType | [onlineMeetingType](../resources/onlinemeetingbase.md#onlinemeetingtype-values) | The type of the online meeting. The possible values are: `adhoc`, `scheduled`, `recurring`, `broadcast`, `meetnow`, `unknownFutureValue`. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | participants | [meetingParticipants](meetingparticipants.md) | The participants associated with the online meeting, including the organizer and the attendees. |
 | recordAutomatically | Boolean | Indicates whether to record the meeting automatically. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 |sensitivityLabelAssignment|[onlineMeetingSensitivityLabelAssignment](../resources/onlinemeetingsensitivitylabelassignment.md)|Specifies the sensitivity label applied to the Teams meeting.|
@@ -199,6 +200,7 @@ The following JSON representation shows the resource type.
   "meetingOptionsWebUrl": "String",
   "meetingSpokenLanguageTag": "String",
   "meetingTemplateId": "String",
+  "meetingType": "String",
   "sensitivityLabelAssignment": {
       "@odata.type": "microsoft.graph.onlineMeetingSensitivityLabelAssignment"
   },
