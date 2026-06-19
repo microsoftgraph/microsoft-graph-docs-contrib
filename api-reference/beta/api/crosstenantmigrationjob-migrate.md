@@ -1,6 +1,6 @@
 ---
-title: "crossTenantMigrationJob: validate"
-description: "Validate the configuration of a crossTenantMigrationJob asynchronously."
+title: "crossTenantMigrationJob: migrate"
+description: "Migrate a crossTenantMigrationJob asynchronously."
 author: "danguilliams"
 ms.date: 05/05/2026
 ms.localizationpriority: medium
@@ -8,15 +8,15 @@ ms.subservice: "t2t-migration"
 doc_type: apiPageType
 ---
 
-# crossTenantMigrationJob: validate
+# crossTenantMigrationJob: migrate
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Validate the configuration of a [cross-tenant migration job](../resources/crosstenantmigrationjob.md) asynchronously. This action doesn't migrate any content, but goes through validation for the specified workloads to find any errors or misconfigurations that affect an actual migration job. The job must be in a `submitted` or `validateFailed` status before you can call this action.
+Migrate a [cross-tenant migration job](../resources/crosstenantmigrationjob.md) asynchronously. The job must pass validation before migration can start. After a job is created by using the [Create crossTenantMigrationJob](../api/migrationsroot-post-crosstenantmigrationjobs.md) method and validated by using the [validate](../api/crosstenantmigrationjob-validate.md) action, call this action to start the migration of user data from the source tenant to the target tenant for the specified workloads. Validation results expire after seven days; if expired, revalidate the job before you call the **migrate** API.
 
-This action is asynchronous. After you call the **validate** API, poll the [Get crossTenantMigrationJob](../api/crosstenantmigrationjob-get.md) endpoint to check for a terminal status of `validatePassed` or `validateFailed`.
+This action is asynchronous. After you call the **migrate** API, poll the [Get crossTenantMigrationJob](../api/crosstenantmigrationjob-get.md) endpoint to check for a terminal status of `completed`, `completedWithErrors`, or `failed`.
 
 ## Permissions
 
@@ -24,10 +24,10 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- {
   "blockType": "permissions",
-  "name": "crosstenantmigrationjob-validate-permissions"
+  "name": "crosstenantmigrationjob-migrate-permissions"
 }
 -->
-[!INCLUDE [permissions-table](../includes/permissions/crosstenantmigrationjob-validate-permissions.md)]
+[!INCLUDE [permissions-table](../includes/permissions/crosstenantmigrationjob-migrate-permissions.md)]
 
 [!INCLUDE [access-requirements](../includes/rbac-for-apis/rbac-crosstenantmigration-apis.md)]
 
@@ -38,7 +38,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /solutions/migrations/crossTenantMigrationJobs/{crossTenantMigrationJobId}/validate
+POST /solutions/migrations/crossTenantMigrationJobs/{crossTenantMigrationJobId}/migrate
 ```
 
 ## Request headers
@@ -60,7 +60,8 @@ This method can also return the following error codes in the response body.
 | Status code | Description |
 |:---|:---|
 | `404 Not Found` | The specified **crossTenantMigrationJob** wasn't found. |
-| `409 Conflict` | The job isn't in a valid status for validation. The job must be in `submitted` or `validateFailed` status. |
+| `409 Conflict` | The job isn't in a valid status for migration. The job must be in `validatePassed`, `failed`, or `completedWithErrors` status. |
+| `409 Conflict` | The validation results expired (more than seven days ago). Revalidate the job before you call the **migrate** API. |
 
 ## Examples
 
@@ -69,11 +70,11 @@ This method can also return the following error codes in the response body.
 The following example shows a request.
 <!-- {
   "blockType": "request",
-  "name": "crosstenantmigrationjobthis.validate"
+  "name": "crosstenantmigrationjobthis.migrate"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/solutions/migrations/crossTenantMigrationJobs/add14989-2b21-4001-81bd-a18b0bac1dea/validate
+POST https://graph.microsoft.com/beta/solutions/migrations/crossTenantMigrationJobs/add14989-2b21-4001-81bd-a18b0bac1dea/migrate
 ```
 
 ### Response
@@ -94,9 +95,9 @@ Content-Type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.crossTenantMigrationJob",
   "id": "add14989-2b21-4001-81bd-a18b0bac1dea",
   "displayName": "Contoso_migration_job",
-  "status": "validateSubmitted",
-  "jobType": "validate",
-  "message": "Validation job has been submitted successfully",
+  "status": "processing",
+  "jobType": "migrate",
+  "message": "Migration job has been submitted successfully",
   "completeAfterDateTime": "2026-05-22T17:14:52Z",
   "sourceTenantId": "12345678-1234-1234-1234-123456789012",
   "targetTenantId": "87654321-4321-4321-4321-210987654321",
