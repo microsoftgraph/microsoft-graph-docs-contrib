@@ -1,5 +1,46 @@
 {
-  "changelog": [
+  "changelog": [ 
+    {
+      "ChangeList": [
+        { "Id": "d6dafc7e-e1bf-44d0-80be-759a2366c56d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudVideoInteropInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudVideoInteropInfo](https://learn.microsoft.com/en-us/graph/api/resources/cloudVideoInteropInfo?view=graph-rest-beta) resource.",
+          "Target": "cloudVideoInteropInfo"
+        },
+        {
+          "Id": "d6dafc7e-e1bf-44d0-80be-759a2366c56d",
+          "ApiChange": "Property",
+          "ChangedApiName": "cloudVideoInteropInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudVideoInteropInfo** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-beta) resource.",
+          "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "d6dafc7e-e1bf-44d0-80be-759a2366c56d",
+          "ApiChange": "Property",
+          "ChangedApiName": "cloudVideoInteropInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudVideoInteropInfo** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "d6dafc7e-e1bf-44d0-80be-759a2366c56d",
+          "ApiChange": "Property",
+          "ChangedApiName": "cloudVideoInteropInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudVideoInteropInfo** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
+          "Target": "virtualEventSession"
+        }
+      ],
+      "Id": "d6dafc7e-e1bf-44d0-80be-759a2366c56d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-06-19T00:26:49.9451195Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    }, 
     {
       "ChangeList": [
         {

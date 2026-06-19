@@ -43,6 +43,7 @@ Inherits from [entity](../resources/entity.md).
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for an online meeting. Read-only. |
 | chatInfo              | [chatInfo](chatinfo.md) | The chat information associated with this online meeting.  |
 | chatRestrictions      | [chatRestrictions](../resources/chatrestrictions.md) | Specifies the configuration settings for meeting chat restrictions. |
+| cloudVideoInteropInfo      | [cloudVideoInteropInfo](cloudvideointeropinfo.md) | Conferencing device integration settings for [Cloud Video Interop (CVI)](/microsoftteams/cloud-video-interop). Read-only. |
 | expiryDateTime | DateTimeOffset | Indicates the date and time when the meeting resource expires. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 | id | String | The default ID associated with the online meeting. Read-only.    |
 | isEndToEndEncryptionEnabled | Boolean | Indicates whether end-to-end encryption (E2EE) is enabled for the online meeting.  |
@@ -153,6 +154,7 @@ The following JSON representation shows the resource type.
   "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
   "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
   "chatRestrictions":{"@odata.type": "microsoft.graph.chatRestrictions"},
+  "cloudVideoInteropInfo": {"@odata.type": "microsoft.graph.cloudVideoInteropInfo"},
   "expiryDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "isEndToEndEncryptionEnabled": "Boolean",
