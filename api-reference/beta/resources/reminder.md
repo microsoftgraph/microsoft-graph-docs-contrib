@@ -21,7 +21,7 @@ A reminder for an [event](event.md) in a user [calendar](calendar.md).
 |:---------------|:--------|:----------|
 |changeKey|String|Identifies the version of the reminder. Every time the reminder is changed, **changeKey** changes as well. This allows Exchange to apply changes to the correct version of the object.|
 |eventEndTime|[DateTimeTimeZone](datetimetimezone.md)|The date, time and time zone that the event ends.|
-|eventId|String|The unique ID of the event. Read only.|
+|eventId|String|The unique ID of the event. Read-only.|
 |eventLocation|[Location](location.md)|The location of the event.|
 |eventStartTime|[DateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the event starts.|
 |eventSubject|String|The text of the event's subject line.|

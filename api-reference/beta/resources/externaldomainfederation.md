@@ -20,9 +20,9 @@ Used in the identity sources of an [connectedOrganization](connectedOrganization
 
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
-| displayName |String | The name of the identity source, typically also the domain name. Read only. |
-| domainName |String | The domain name. Read only. |
-| issuerUri |String | The issuerURI of the incoming federation. Read only. |
+| displayName |String | The name of the identity source, typically also the domain name. Read-only. |
+| domainName |String | The domain name. Read-only. |
+| issuerUri |String | The issuerURI of the incoming federation. Read-only. |
 
 ## Relationships
 

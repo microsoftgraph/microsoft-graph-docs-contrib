@@ -23,7 +23,7 @@ This type has the following properties:
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
 | id |String | The ID of the connected organization in entitlement management. |
-| description |String | The name of the connected organization. Read only. |
+| description |String | The name of the connected organization. Read-only. |
 | isBackup | Boolean | Not used now. |
 
 ## Relationships

@@ -21,9 +21,9 @@ Used in the identity sources of a [connectedOrganization](connectedOrganization.
 
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
-| cloudInstance | String | The ID of the cloud where the tenant is located, one of `microsoftonline.com`, `microsoftonline.us` or `partner.microsoftonline.cn`. Read only. |
-| displayName |String | The name of the Microsoft Entra tenant. Read only. |
-| tenantId |String | The ID of the Microsoft Entra tenant. Read only. |
+| cloudInstance | String | The ID of the cloud where the tenant is located, one of `microsoftonline.com`, `microsoftonline.us` or `partner.microsoftonline.cn`. Read-only. |
+| displayName |String | The name of the Microsoft Entra tenant. Read-only. |
+| tenantId |String | The ID of the Microsoft Entra tenant. Read-only. |
 
 ## Relationships
 
