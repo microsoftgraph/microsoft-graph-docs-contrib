@@ -749,6 +749,7 @@ Namespace: microsoft.graph.security
 |sPSharingNotifyUser|
 |sPSharingGenerateIncidentReport|
 |restrictWebGrounding|
+|policyTip|
 
 ### executionMode values
 
