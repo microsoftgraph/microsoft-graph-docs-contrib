@@ -420,7 +420,7 @@ Content-type: application/json
 }
 ```
 
-If there are no custom security attributes assigned to the user or if the calling principal does not have access, the following block shows the response:
+If there are no custom security attributes assigned to the user or if the calling principal doesn't have access, the following block shows the response:
 
 ```http
 HTTP/1.1 200 OK

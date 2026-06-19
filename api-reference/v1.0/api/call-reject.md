@@ -16,7 +16,7 @@ Enable a bot to reject an incoming call. The incoming call request can be an inv
 
 The bot is expected to answer or reject the call before the call times out. The current timeout value is 15 seconds.
 
-This API does not end existing calls that have already been answered. Use [delete call](../api/call-delete.md) to end a call.
+This API doesn't end existing calls that have already been answered. Use [delete call](../api/call-delete.md) to end a call.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

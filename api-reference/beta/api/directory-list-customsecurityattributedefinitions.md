@@ -32,7 +32,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 > - Attribute Assignment Administrator
 > - Attribute Definition Administrator
 >
-> By default, Global Administrator and other administrator roles do not have permissions to read, define, or assign custom security attributes.
+> By default, Global Administrator and other administrator roles don't have permissions to read, define, or assign custom security attributes.
 
 ## HTTP request
 

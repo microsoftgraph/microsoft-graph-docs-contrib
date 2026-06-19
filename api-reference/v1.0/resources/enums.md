@@ -675,6 +675,16 @@ Namespace: microsoft.graph
 | approver |
 | unknownFutureValue |
 
+### roleType values
+
+| Member |
+| ------ |
+| active |
+| eligible |
+| application |
+| delegated |
+| unknownFutureValue |
+
 ### unifiedRoleManagementPolicyRuleTargetOperations values
 
 | Member |
@@ -796,6 +806,33 @@ Namespace: microsoft.graph
 | Member |
 | ------------------ |
 | allowedRequestor |
+| unknownFutureValue |
+
+### accessPackageSuggestionFilterByCurrentUserOptions values
+
+| Member |
+| ---- |
+| none |
+| relatedPeopleAssignments |
+| assignmentHistory |
+| unknownFutureValue |
+
+### accessPackageSuggestionRelatedPeopleInsightLevel values
+
+| Member |
+| ---- |
+| disabled |
+| count |
+| countAndNames |
+| unknownFutureValue |
+
+### approverInformationVisibility values
+
+| Member |
+| ---- |
+| default |
+| notVisible |
+| visible |
 | unknownFutureValue |
 
 ### accessPackageRequestState values

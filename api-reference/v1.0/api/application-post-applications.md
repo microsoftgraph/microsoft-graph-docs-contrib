@@ -16,7 +16,7 @@ Create a new [application](../resources/application.md) object. This API can als
 
 > [!IMPORTANT]
 >
-> Do not share application client IDs (**appId**) in API documentation or code samples.
+> Don't share application client IDs (**appId**) in API documentation or code samples.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

@@ -39,7 +39,7 @@ GET /identity/conditionalAccess/authenticationStrength/policies/{authenticationS
 ```
 
 ## Optional query parameters
-This method does not support OData query parameters.
+This method doesn't support OData query parameters.
 
 ## Request headers
 |Name|Description|

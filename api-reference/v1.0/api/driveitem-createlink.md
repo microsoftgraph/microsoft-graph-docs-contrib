@@ -324,7 +324,7 @@ Content-Type: application/json
 
 ## Remarks
 
-* Links created using this action do not expire unless a default expiration policy is enforced for the organization.
+* Links created using this action don't expire unless a default expiration policy is enforced for the organization.
 * Links are visible in the sharing permissions for the item and can be removed by an owner of the item.
 * Links always point to the current version of a item unless the item is checked out (SharePoint only).
 

@@ -98,7 +98,7 @@ If an object with the **uniqueName** already exists, this method updates the [gr
 
 ### Example 1: Create a Microsoft 365 group if it doesn't exist
 
-The following example creates a Microsoft 365 group because a group with the specified **uniqueName** value does not exist. Because the owners are not specified, the calling user is automatically added as the owner of the group.
+The following example creates a Microsoft 365 group because a group with the specified **uniqueName** value doesn't exist. Because the owners are not specified, the calling user is automatically added as the owner of the group.
 
 #### Request
 
@@ -211,7 +211,7 @@ Content-type: application/json
 
 ### Example 2: Create a security group with an owner and members if it doesn't exist
 
-The following example creates a security group with an owner and members specified because a group with the specified **uniqueName** value does not exist. Note that a maximum of 20 relationships, such as owners and members, can be added as part of group creation. You can then add more members by using the [add member](/graph/api/group-post-members?view=graph-rest-beta&preserve-view=true) API or JSON batching.
+The following example creates a security group with an owner and members specified because a group with the specified **uniqueName** value doesn't exist. Note that a maximum of 20 relationships, such as owners and members, can be added as part of group creation. You can then add more members by using the [add member](/graph/api/group-post-members?view=graph-rest-beta&preserve-view=true) API or JSON batching.
 
 A non-admin user can't add themselves to the group owners collection. For more information, see the related [known issue](/graph/known-issues#non-admin-user-cant-add-self-as-group-owner-during-group-creation-or-update).
 

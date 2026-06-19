@@ -21,7 +21,7 @@ The following RBAC providers are currently supported:
 - Cloud PC 
 - device management (Intune)
 
-In contrast, [unifiedRoleAssignment](../resources/unifiedroleassignment.md) does not support update.
+In contrast, [unifiedRoleAssignment](../resources/unifiedroleassignment.md) doesn't support update.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

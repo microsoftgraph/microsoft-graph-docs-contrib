@@ -47,7 +47,7 @@ The values of `startDateTime` and `endDateTime` are interpreted using the timezo
 This method also supports some of the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 > [!NOTE]
-> The **createdDateTime** and **lastModifiedDateTime** properties of [event](../resources/event.md) do not support `$select`. To get their values, simply query on **calendarView** without applying `$select`.
+> The **createdDateTime** and **lastModifiedDateTime** properties of [event](../resources/event.md) don't support `$select`. To get their values, simply query on **calendarView** without applying `$select`.
 
 ## Request headers
 

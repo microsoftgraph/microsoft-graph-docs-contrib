@@ -53,7 +53,7 @@ You can specify the following properties when creating an **organizationalBrandi
 |Property|Type|Description|
 |:---|:---|:---|
 |name|String|The name of the branding theme. Required.|
-|isDefaultTheme|Boolean|Indicates whether the theme is set as the default branding theme for the entire tenant and includes all applications within the tenant. When set to `true`, this theme is automatically applied to any application that does not have a specific theme assigned. This property is useful for enforcing consistent branding across multiple apps without configuring each one individually. Optional.|  
+|isDefaultTheme|Boolean|Indicates whether the theme is set as the default branding theme for the entire tenant and includes all applications within the tenant. When set to `true`, this theme is automatically applied to any application that doesn't have a specific theme assigned. This property is useful for enforcing consistent branding across multiple apps without configuring each one individually. Optional.|  
 
 
 

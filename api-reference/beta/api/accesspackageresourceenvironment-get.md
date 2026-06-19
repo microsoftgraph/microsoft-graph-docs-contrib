@@ -36,7 +36,7 @@ GET /identityGovernance/entitlementManagement/accessPackageResourceEnvironments/
 ```
 
 ## Optional query parameters
-This method does not currently support [OData query parameters](/graph/query-parameters).
+This method doesn't currently support [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|

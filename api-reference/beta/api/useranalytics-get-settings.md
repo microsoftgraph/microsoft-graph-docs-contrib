@@ -33,7 +33,7 @@ GET /me/analytics/settings
 
 ## Optional query parameters
 
-This method does not support optional query parameters to customize the response.
+This method doesn't support optional query parameters to customize the response.
 
 ## Request headers
 

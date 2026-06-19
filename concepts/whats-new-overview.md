@@ -28,9 +28,19 @@ Evaluate applications in the Microsoft Entra application gallery by using the [a
 
 [Upsert](/graph/api/filestoragecontainer-patch-permissions) (create or update) up to 40 permissions on a [fileStorageContainer](/graph/api/resources/filestoragecontainer) in a single request. The limit increased from 10 to 40 [permission](/graph/api/resources/permission) objects per request.
 
+### Identity and access | Governance
+
+Added the **type** property to the [accessPackageResourceRole](/graph/api/resources/accesspackageresourcerole) resource to indicate whether an Azure resource role is active or eligible, enabling PIM-based role assignments for Azure resources in access packages.
+
 ### Identity and access | Identity and sign-in
 
 Added support for programmatic FIDO2 passkey registration. Use the [creationOptions](/graph/api/fido2authenticationmethod-creationoptions) function to get WebAuthn credential creation options, then complete registration by posting the new **publicKeyCredential** property to the [fido2AuthenticationMethod](/graph/api/resources/fido2authenticationmethod) resource.
+
+### Identity and access | Governance
+
+- Added the [accessPackageSuggestion](/graph/api/resources/accesspackagesuggestion) resource type and related methods for discovering suggested access packages based on related people insights and assignment history. Use the [filterByCurrentUser](/graph/api/accesspackagesuggestions-filterbycurrentuser) function to retrieve personalized suggestions.
+- Added the **approverInformationVisibility** property to the [accessPackageApprovalStage](/graph/api/resources/accesspackageapprovalstage) resource to control whether approver information is visible to requestors.
+- Added the [endUserSettings](/graph/api/resources/endusersettings) resource type and related methods for configuring access package suggestion behavior, including related people insight levels and approver detail visibility.
 
 ### People and workplace intelligence
 
@@ -95,6 +105,10 @@ Personal distribution lists enable users to group email recipients together and 
 ### Sites and lists
 
 Added the [sharePointReportSettings](/graph/api/resources/sharepointreportsettings?view=graph-rest-beta&preserve-view=true) resource type and related methods for managing SharePoint API usage report metrics. Use the [enableApiUsageReport](/graph/api/sharepointreportsettings-enableapiusagereport?view=graph-rest-beta&preserve-view=true) and [disableApiUsageReport](/graph/api/sharepointreportsettings-disableapiusagereport?view=graph-rest-beta&preserve-view=true) methods to control which metrics are collected and reported for your tenant.
+
+### Teamwork and communications | Calls and online meetings
+
+Use the **meetingType** property on [onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-beta&preserve-view=true) and [virtualEventSession](/graph/api/resources/virtualeventsession?view=graph-rest-beta&preserve-view=true) to determine whether a meeting is ad hoc, scheduled, recurring, a broadcast, or a *Meet now* session. The property is defined on the [onlineMeetingBase](/graph/api/resources/onlinemeetingbase?view=graph-rest-beta&preserve-view=true) resource and uses the [onlineMeetingType](/graph/api/resources/onlinemeetingbase?view=graph-rest-beta&preserve-view=true#onlinemeetingtype-values) enumeration.
 
 ### Teamwork and communications | Shift management
 

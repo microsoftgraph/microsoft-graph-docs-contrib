@@ -1383,7 +1383,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "onBehalfOfUserId",
           "ChangeType": "Addition",
-          "Description": "Added the `onBehalfOfUserId` parameter to the [clockIn](https://learn.microsoft.com/en-us/graph/api/timeCard?view=graph-rest-1.0) method.",
+          "Description": "Added the `onBehalfOfUserId` parameter to the **clockIn** method.",
           "Target": "clockIn"
         }
       ],
@@ -1401,7 +1401,7 @@
           "ApiChange": "Parameter",
           "ChangedApiName": "onBehalfOfUserId",
           "ChangeType": "Addition",
-          "Description": "Added the `onBehalfOfUserId` parameter to the [clockIn](https://learn.microsoft.com/en-us/graph/api/timeCard?view=graph-rest-1.0) method.",
+          "Description": "Added the `onBehalfOfUserId` parameter to the **clockIn** method.",
           "Target": "clockIn"
         }
       ],

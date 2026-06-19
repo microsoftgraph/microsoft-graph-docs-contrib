@@ -54,7 +54,7 @@ _id_ property is always returned.
 - There is limited support for `$filter` and `$orderby`:
   * The only supported `$filter` expressions are `$filter=receivedDateTime+ge+{value}` 
   or `$filter=receivedDateTime+gt+{value}`.
-  * The only supported `$orderby` expression is `$orderby=receivedDateTime+desc`. If you do not include
+  * The only supported `$orderby` expression is `$orderby=receivedDateTime+desc`. If you don't include
   an `$orderby` expression, the return order is not guaranteed. 
 - There is no support for `$search`.
 
