@@ -3,6 +3,80 @@
     {
       "ChangeList": [
         {
+          "Id": "f43f5db8-bbad-41ba-9b28-b17c2013c888",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "historyEntityType",
+          "ChangeType": "Addition",
+          "Description": "Added the **historyEntityType** enumeration type.",
+          "Target": "historyEntityType"
+        },
+        {
+          "Id": "f43f5db8-bbad-41ba-9b28-b17c2013c888",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "historyEventType",
+          "ChangeType": "Addition",
+          "Description": "Added the **historyEventType** enumeration type.",
+          "Target": "historyEventType"
+        },
+        {
+          "Id": "f43f5db8-bbad-41ba-9b28-b17c2013c888",
+          "ApiChange": "Member",
+          "ChangedApiName": "completionInHostedApp",
+          "ChangeType": "Addition",
+          "Description": "Added the `completionInHostedApp` member to the **plannerTaskCompletionRequirements** enumeration.",
+          "Target": "plannerTaskCompletionRequirements"
+        },
+        {
+          "Id": "f43f5db8-bbad-41ba-9b28-b17c2013c888",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerTaskData",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerTaskData](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskData?view=graph-rest-beta) resource.",
+          "Target": "plannerTaskData"
+        },
+        {
+          "Id": "f43f5db8-bbad-41ba-9b28-b17c2013c888",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerTaskDetailsData",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerTaskDetailsData](https://learn.microsoft.com/en-us/graph/api/resources/plannerTaskDetailsData?view=graph-rest-beta) resource.",
+          "Target": "plannerTaskDetailsData"
+        },
+        {
+          "Id": "f43f5db8-bbad-41ba-9b28-b17c2013c888",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerHistoryItem",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerHistoryItem](https://learn.microsoft.com/en-us/graph/api/resources/plannerHistoryItem?view=graph-rest-beta) resource and an associated method.",
+          "Target": "plannerHistoryItem"
+        },
+        {
+          "Id": "f43f5db8-bbad-41ba-9b28-b17c2013c888",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "historyItems",
+          "ChangeType": "Addition",
+          "Description": "Added the **historyItems** relationship to the [plannerPlan](https://learn.microsoft.com/en-us/graph/api/resources/plannerPlan?view=graph-rest-beta) resource.",
+          "Target": "plannerPlan"
+        },
+        {
+          "Id": "f43f5db8-bbad-41ba-9b28-b17c2013c888",
+          "ApiChange": "Resource",
+          "ChangedApiName": "taskHistoryItem",
+          "ChangeType": "Addition",
+          "Description": "Added the [taskHistoryItem](https://learn.microsoft.com/en-us/graph/api/resources/taskHistoryItem?view=graph-rest-beta) resource.",
+          "Target": "taskHistoryItem"
+        }
+      ],
+      "Id": "f43f5db8-bbad-41ba-9b28-b17c2013c888",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-06-19T07:35:12.7210574Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "0341bdcb-189b-4298-aaca-6b519455fc34",
           "ApiChange": "Property",
           "ChangedApiName": "publicationName",
