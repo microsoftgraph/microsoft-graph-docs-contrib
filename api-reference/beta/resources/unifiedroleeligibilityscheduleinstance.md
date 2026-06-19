@@ -35,7 +35,7 @@ Inherits from [unifiedRoleScheduleInstanceBase](../resources/unifiedroleschedule
 |id|String|The unique identifier for the roleEligibilityScheduleInstance. Key, not nullable, Read-only.Inherited from [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md).|
 |memberType|String|Membership type of the assignment. It can either be `Inherited`, `Direct`, or `Group`.|
 |principalId|String|Identifier of the principal to which the assignment is being granted to. Can be a group or a user. Inherited from [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md).|
-|roleDefinitionId|String|Identifier of the unifiedRoleDefinition the assignment is for. Read only. Inherited from [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md).<br> Supports `$filter` (`eq`).|
+|roleDefinitionId|String|Identifier of the unifiedRoleDefinition the assignment is for. Read-only. Inherited from [unifiedRoleScheduleInstanceBase](../resources/unifiedrolescheduleinstancebase.md).<br> Supports `$filter` (`eq`).|
 |roleEligibilityScheduleId|String|Identifier of the parent roleEligibilitySchedule for this instance.|
 |startDateTime|DateTimeOffset|Time that the roleEligibilityScheduleInstance will start.|
 
