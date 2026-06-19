@@ -59,6 +59,7 @@ You can specify the following properties when you create a [virtualEventTownhall
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the town hall ends. |
 | invitedAttendees | [identity](../resources/identity.md) collection | The identities of the attendees invited to the town hall. The supported identities are: [communicationsGuestIdentity](../resources/communicationsguestidentity.md) and [communicationsUserIdentity](../resources/communicationsuseridentity.md). |
 | isInviteOnly | Boolean | Indicates whether the town hall is only open to invited people and groups within your organization. The **isInviteOnly** property can only be `true` if the value of the **audience** property is set to `organization`. |
+| isRegistrationRequired |Boolean| Indicates if the attendees must complete the registration flow before they can attend. Inherited from [virtualEvent](../resources/virtualevent.md). Optional.|
 | settings | [virtualEventSettings](../resources/virtualeventsettings.md) | The town hall settings. |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the town hall starts. |
 
@@ -71,7 +72,6 @@ If successful, this method returns a `201 Created` response code and a [virtualE
 ### Request
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_virtualeventtownhall"
@@ -103,18 +103,13 @@ Accept-Language: en-US
         "tenantId": "77229959-e479-4a73-b6e0-ddac27be315c" 
       }
     ],
+    "isRegistrationRequired": false,
     "settings": {
       "isAttendeeEmailNotificationEnabled": false
     },
     "capacity": 5000
 }
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-virtualeventtownhall-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -169,6 +164,7 @@ Accept-Language: en-US
     "settings": {
       "isAttendeeEmailNotificationEnabled": false
     },
+    "isRegistrationRequired": false,
     "isInviteOnly": false,
     "externalEventInformation": []
 }
