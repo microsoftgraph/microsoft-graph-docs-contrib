@@ -54,7 +54,7 @@ The following table shows the optional and required properties when you create t
 |isValidationOnly|Boolean|A Boolean that determines whether the call is a validation or an actual call. Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.|
 |justification|String|A message provided by users and administrators when create the request about why it is needed. Optional when **action** is `AdminRemove`.|
 |principalId|String|Identifier of the principal to which the assignment is being granted to. For example, a user or a group. For groups, they must be assignable to roles, that is, the **isAssignableToRole** of the group property set to `true`.|
-|roleDefinitionId|String|Identifier of the unifiedRoleDefinition the assignment is for. Required. Read only.|
+|roleDefinitionId|String|Identifier of the unifiedRoleDefinition the assignment is for. Required. Read-only.|
 |scheduleInfo|[requestSchedule](../resources/requestschedule.md)|The schedule object of the role assignment request. This property is not required when the **action** is `AdminRemove`.|
 |ticketInfo|[ticketInfo](../resources/ticketinfo.md)|The ticketInfo object attached to the role assignment request which includes details of the ticket number and ticket system. Optional.|
 
