@@ -343,7 +343,11 @@ Content-Length: 1574
   "allowMeetingChat": "enabled",
   "allowTeamworkReactions": true,
   "meetingOptionsWebUrl": "https://teams.microsoft.com/meetingOptions/?meetingId=abc123",
-  "meetingType": "scheduled"
+  "cloudVideoInteropInfo": {
+   "tenantKey": "94f39e13-d027-4cfa-bcd3-4b8b0c2017ef",
+   "videoTeleconferenceId": "123456789",
+   "moreInfoWebUrl": "https://cvi.vendor.com/join-instructions"
+  }
 }
 ```
 >**Note:** If 'Accept-Language: ja' is specified to indicate Japanese, for example, the response will include the following.

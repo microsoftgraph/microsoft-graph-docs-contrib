@@ -1,5 +1,46 @@
 {
-  "changelog": [
+  "changelog": [ 
+    {
+      "ChangeList": [
+        { "Id": "d6dafc7e-e1bf-44d0-80be-759a2366c56d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudVideoInteropInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudVideoInteropInfo](https://learn.microsoft.com/en-us/graph/api/resources/cloudVideoInteropInfo?view=graph-rest-beta) resource.",
+          "Target": "cloudVideoInteropInfo"
+        },
+        {
+          "Id": "d6dafc7e-e1bf-44d0-80be-759a2366c56d",
+          "ApiChange": "Property",
+          "ChangedApiName": "cloudVideoInteropInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudVideoInteropInfo** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-beta) resource.",
+          "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "d6dafc7e-e1bf-44d0-80be-759a2366c56d",
+          "ApiChange": "Property",
+          "ChangedApiName": "cloudVideoInteropInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudVideoInteropInfo** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "d6dafc7e-e1bf-44d0-80be-759a2366c56d",
+          "ApiChange": "Property",
+          "ChangedApiName": "cloudVideoInteropInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudVideoInteropInfo** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
+          "Target": "virtualEventSession"
+        }
+      ],
+      "Id": "d6dafc7e-e1bf-44d0-80be-759a2366c56d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-06-19T00:26:49.9451195Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    }, 
     {
       "ChangeList": [
         {
@@ -133,6 +174,39 @@
       "CreatedDateTime": "2026-05-22T00:27:39.1921591Z",
       "WorkloadArea": "Cloud communications",
       "SubArea": "Call" 
+    },
+    {
+      "ChangeList": [
+        {"Id": "8aa183d2-7bc3-4935-95ff-aef0791161cb",
+          "ApiChange": "Property",
+          "ChangedApiName": "isRegistrationRequired",
+          "ChangeType": "Addition",
+          "Description": "Added the **isRegistrationRequired** property to the [virtualEvent](https://learn.microsoft.com/en-us/graph/api/resources/virtualEvent?view=graph-rest-beta) resource.",
+          "Target": "virtualEvent"
+        },
+        {
+          "Id": "8aa183d2-7bc3-4935-95ff-aef0791161cb",
+          "ApiChange": "Property",
+          "ChangedApiName": "isRegistrationRequired",
+          "ChangeType": "Addition",
+          "Description": "Added the **isRegistrationRequired** property to the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventTownhall?view=graph-rest-beta) resource.",
+          "Target": "virtualEventTownhall"
+        },
+        {
+          "Id": "8aa183d2-7bc3-4935-95ff-aef0791161cb",
+          "ApiChange": "Property",
+          "ChangedApiName": "isRegistrationRequired",
+          "ChangeType": "Addition",
+          "Description": "Added the **isRegistrationRequired** property to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventWebinar?view=graph-rest-beta) resource.",
+          "Target": "virtualEventWebinar"
+        }
+      ],
+      "Id": "8aa183d2-7bc3-4935-95ff-aef0791161cb",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-06-19T00:21:50.826006Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [

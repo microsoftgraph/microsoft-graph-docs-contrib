@@ -186,6 +186,8 @@ items:
       href: ../../api/migrationsroot-delete-crosstenantmigrationjobs.md
     - name: cancel
       href: ../../api/crosstenantmigrationjob-cancel.md
+    - name: migrate
+      href: ../../api/crosstenantmigrationjob-migrate.md
     - name: validate
       href: ../../api/crosstenantmigrationjob-validate.md
     - name: List users

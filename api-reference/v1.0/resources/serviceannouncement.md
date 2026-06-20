@@ -28,9 +28,9 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |-|-|-|
-|healthOverviews|Collection([serviceHealth](servicehealth.md))|A collection of service health information for tenant. This property is a contained navigation property, it is nullable and readonly.|
-|issues|Collection([serviceHealthIssue](servicehealthissue.md))|A collection of service issues for tenant. This property is a contained navigation property, it is nullable and readonly.|
-|messages|Collection([serviceUpdateMessage](serviceupdatemessage.md))|A collection of service messages for tenant. This property is a contained navigation property, it is nullable and readonly.|
+|healthOverviews|Collection([serviceHealth](servicehealth.md))|A collection of service health information for tenant. This property is a contained navigation property, it is nullable and read-only.|
+|issues|Collection([serviceHealthIssue](servicehealthissue.md))|A collection of service issues for tenant. This property is a contained navigation property, it is nullable and read-only.|
+|messages|Collection([serviceUpdateMessage](serviceupdatemessage.md))|A collection of service messages for tenant. This property is a contained navigation property, it is nullable and read-only.|
 
 ## JSON representation
 The following JSON representation shows the resource type.

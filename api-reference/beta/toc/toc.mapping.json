@@ -2897,8 +2897,7 @@
         "securityAction",
         "secureScore",
         "secureScoreControlProfile",
-        "tiIndicator",
-        "microsoft.graph.security.detectionRule"
+        "tiIndicator"
       ],
       "childNodes": [
         {
@@ -2980,6 +2979,51 @@
           ],
           "complexTypes": [
             "microsoft.graph.security.auditInfo"
+          ]
+        },
+        {
+          "name": "Custom detection rules",
+          "resources": [
+            "microsoft.graph.security.detectionRule"
+          ],
+          "complexTypes": [
+            "microsoft.graph.security.detectionAction",
+            "microsoft.graph.security.alertTemplate",
+            "microsoft.graph.security.alertCustomDetails",
+            "microsoft.graph.security.ruleSchedule",
+            "microsoft.graph.security.queryCondition",
+            "microsoft.graph.security.mitreTactic",
+            "microsoft.graph.security.mitreTechnique",
+            "microsoft.graph.security.entityMappingConfiguration",
+            "microsoft.graph.security.entityMapping",
+            "microsoft.graph.security.accountEntityMapping",
+            "microsoft.graph.security.amazonResourceEntityMapping",
+            "microsoft.graph.security.azureResourceEntityMapping",
+            "microsoft.graph.security.cloudApplicationEntityMapping",
+            "microsoft.graph.security.dnsEntityMapping",
+            "microsoft.graph.security.fileEntityMapping",
+            "microsoft.graph.security.googleCloudResourceEntityMapping",
+            "microsoft.graph.security.hostEntityMapping",
+            "microsoft.graph.security.ipEntityMapping",
+            "microsoft.graph.security.mailboxEntityMapping",
+            "microsoft.graph.security.mailClusterEntityMapping",
+            "microsoft.graph.security.mailMessageEntityMapping",
+            "microsoft.graph.security.oauthApplicationEntityMapping",
+            "microsoft.graph.security.processEntityMapping",
+            "microsoft.graph.security.registryValueEntityMapping",
+            "microsoft.graph.security.securityGroupEntityMapping",
+            "microsoft.graph.security.urlEntityMapping",
+            "microsoft.graph.security.automatedActionSet",
+            "microsoft.graph.security.automatedAction",
+            "microsoft.graph.security.accountObjectIdAction",
+            "microsoft.graph.security.accountSidAction",
+            "microsoft.graph.security.deviceAction",
+            "microsoft.graph.security.isolateDeviceAction",
+            "microsoft.graph.security.emailAction",
+            "microsoft.graph.security.fileAction",
+            "microsoft.graph.security.stopAndQuarantineFileAction",
+            "microsoft.graph.security.responseAction",
+            "microsoft.graph.security.impactedAsset"
           ]
         },
         {
@@ -3316,6 +3360,7 @@
         "plannerPlan",
         "plannerTask",
         "plannerBucket",
+        "plannerHistoryItem",
         "plannerPlanDetails",
         "plannerRoster",
         "plannerUser",
@@ -3368,6 +3413,8 @@
         "plannerTaskChatReaction",
         "plannerTaskChatReactionEvent",
         "plannerTaskCreation",
+        "plannerTaskData",
+        "plannerTaskDetailsData",
         "plannerTaskPropertyRule",
         "plannerTaskRecurrence",
         "plannerTeamsPublicationInfo",
@@ -3396,6 +3443,12 @@
                 "businessScenarioTask"
               ]
             }
+          ]
+        },
+        {
+          "name": "Planner history item",
+          "resources": [
+            "taskHistoryItem"
           ]
         },
         {
@@ -3560,10 +3613,11 @@
               "complexTypes": [
                 "actionItem",
                 "aiOnlineMeeting",
+                "cloudVideoInteropInfo",
+                "identitySet",
                 "meetingNote",
                 "meetingNoteSubpoint",
-                "mentionEvent",
-                "identitySet"
+                "mentionEvent"
               ]
             },
             {
