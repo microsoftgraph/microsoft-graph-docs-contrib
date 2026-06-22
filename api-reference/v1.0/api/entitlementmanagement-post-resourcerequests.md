@@ -522,3 +522,107 @@ Content-type: application/json
   "state": "delivered"
 }
 ```
+
+### Example 6: Add a Management Group Resource to catalog
+
+#### Request
+
+The following example shows a request for adding a management group resource to a catalog.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests_management_group"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/resourceRequests
+Content-type: application/json
+
+{
+    "requestType": "adminAdd",
+    "resource": {
+        "displayName": "test-mgmtgroup",
+        "description": "test-mgmtgroup",
+        "resourceType": "ManagementGroup",
+        "originId": "/providers/Microsoft.Management/managementGroups/test-mgmtgroup",
+        "originSystem": "AzureResources"
+    },
+    "catalog": {
+        "id": "e8368470-afaf-44da-ba86-13a7318f1995"
+    }
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "id": "99e156fe-d152-4005-b019-6ba816f411ea",
+  "requestType": "adminAdd",
+  "state": "delivered"
+}
+```
+
+### Example 7: Add a Subscription Resource to catalog
+
+#### Request
+
+The following example shows a request for adding a Subscription resource to a catalog.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests_subscription_resource"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/resourceRequests
+Content-type: application/json
+
+{
+    "requestType": "adminAdd",
+    "resource": {
+        "displayName": "Dev",
+        "description": "Dev",
+        "resourceType": "Subscription",
+        "originId": "/subscriptions/828b526f-c769-4b19-9797-734b4843b978",
+        "originSystem": "AzureResources"
+    },
+    "catalog": {
+        "id": "e8368470-afaf-44da-ba86-13a7318f1995"
+    }
+}
+```
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "id": "13ac6518-0597-452c-98ff-59c52b391dae",
+  "requestType": "adminAdd",
+  "state": "delivered"
+}
+```

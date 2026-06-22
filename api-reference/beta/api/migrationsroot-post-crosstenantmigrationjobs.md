@@ -14,7 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md).
+Create a new [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md). A job defines the migration batch but doesn't start validation or migration. After you create the job, call [validate](../api/crosstenantmigrationjob-validate.md) to verify tenant and resource configuration, then call [migrate](../api/crosstenantmigrationjob-migrate.md) to begin the actual migration.
+
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -62,7 +63,7 @@ You can specify the following properties when creating a **crossTenantMigrationJ
 |exchangeSettings|[exchangeOnlineCrossTenantMigrationSettings](../resources/exchangeonlinecrosstenantmigrationsettings.md)|Settings for Exchange Online migrations. Optional, but required if Exchange is a specified workload.|
 |workloads|String collection|Workloads to migrate on the resources. Optional. If excluded, all available workloads are included in the migration.|
 |resourceType|String|Type of resources to migrate. Only `Users` is supported at this time. Required.|
-|resources|String collection|Object IDs (GUID) of the resources to migrate. Limit of 2,000 resources per [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) Required.|
+|resources|String collection|Object IDs (GUID) of the resources to migrate. Limit of 2,000 resources per [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md). Required.|
 
 
 
@@ -155,18 +156,24 @@ Content-Type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/migrations/crossTenantMigrationJobs/$entity",
   "id": "add14989-2b21-4001-81bd-a18b0bac1dea",
   "displayName": "Contoso_migration_job",
-  "jobType" : "migrate",
-  "status": "Submitted",
+  "jobType": "validate",
+  "status": "submitted",
   "message": "",
   "completeAfterDateTime": "2023-12-17T20:38:04.101Z",
+  "targetTenantId": "87654321-4321-4321-4321-210987654321",
   "sourceTenantId": "12345678-1234-1234-1234-123456789012",
   "exchangeSettings": {
-    "targetDeliveryDomain": "fabirkam.onmicrosoft.com",
+    "targetDeliveryDomain": "fabrikam.onmicrosoft.com",
     "sourceEndpoint": "sampleEndpointText"
   },
-  "resourceType":"Users",
+  "resources": [
+    "4dd550d9-9ea2-4e71-a16b-60b1d1c4f506",
+    "63f15b55-f61a-49cb-a599-2e3d233afb2c",
+    "41d94bac-3a53-47d6-a89e-583830104e15"
+  ],
+  "resourceType": "Users",
   "workloads": ["Teams", "Exchange", "ODSP"],
-  "createdBy": "66055c84-3b6e-4d14-9b9e-4c7f4105962e",
+  "createdBy": "admin@fabrikam.onmicrosoft.com",
   "createdDateTime": "2025-11-14T20:55:10.5427196Z",
   "lastUpdatedDateTime": "2025-11-14T20:55:10.5427196Z"
 }

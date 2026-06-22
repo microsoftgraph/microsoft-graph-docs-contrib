@@ -7,7 +7,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "sharedInsight",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [List shared](https://learn.microsoft.com/en-us/graph/api/insights-list-shared?view=graph-rest-beta) method of the [sharedInsight](https://learn.microsoft.com/en-us/graph/api/resources/sharedInsight?view=graph-rest-beta) resource. This API is deprecated and will stop returning data after November, 2026.",
+          "Description": "Deprecated the [List shared](https://learn.microsoft.com/en-us/graph/api/insights-list-shared?view=graph-rest-beta) method of the **sharedInsight** resource. This API is deprecated and will stop returning data after November, 2026.",
           "Target": "sharedInsight"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "usedInsight",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [List used](https://learn.microsoft.com/en-us/graph/api/insights-list-used?view=graph-rest-beta) method of the [usedInsight](https://learn.microsoft.com/en-us/graph/api/resources/usedInsight?view=graph-rest-beta) resource. This API is deprecated and will stop returning data after November, 2026.",
+          "Description": "Deprecated the [List used](https://learn.microsoft.com/en-us/graph/api/insights-list-used?view=graph-rest-beta) method of the **usedInsight** resource. This API is deprecated and will stop returning data after November, 2026.",
           "Target": "usedInsight"
         }
       ],
@@ -33,7 +33,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "sharedInsight",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [List shared](https://learn.microsoft.com/en-us/graph/api/insights-list-shared?view=graph-rest-1.0) method of the [sharedInsight](https://learn.microsoft.com/en-us/graph/api/resources/sharedInsight?view=graph-rest-1.0) resource. This API is deprecated and will stop returning data after November, 2026.",
+          "Description": "Deprecated the [List shared](https://learn.microsoft.com/en-us/graph/api/insights-list-shared?view=graph-rest-1.0) method of the **sharedInsight** resource. This API is deprecated and will stop returning data after November, 2026.",
           "Target": "sharedInsight"
         },
         {
@@ -41,7 +41,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "usedInsight",
           "ChangeType": "Deprecation",
-          "Description": "Deprecated the [List used](https://learn.microsoft.com/en-us/graph/api/insights-list-used?view=graph-rest-1.0) method of the [usedInsight](https://learn.microsoft.com/en-us/graph/api/resources/usedInsight?view=graph-rest-1.0) resource. This API is deprecated and will stop returning data after November, 2026.",
+          "Description": "Deprecated the [List used](https://learn.microsoft.com/en-us/graph/api/insights-list-used?view=graph-rest-1.0) method of the **usedInsight** resource. This API is deprecated and will stop returning data after November, 2026.",
           "Target": "usedInsight"
         }
       ],

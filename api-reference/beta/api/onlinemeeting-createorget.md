@@ -207,6 +207,7 @@ Content-Type: application/json
         "messageId": "0",
         "replyChainMessageId": null
     },
+    "meetingType": "scheduled"
 }
 ```
 
@@ -244,7 +245,8 @@ Content-Type: application/json
             }
         ]
     },
-    "subject": "Create a meeting with customId provided"
+    "subject": "Create a meeting with customId provided",
+    "meetingType": "scheduled"
 }
 ```
 
@@ -340,6 +342,7 @@ Content-Type: application/json
         "messageId": "1599805818399",
         "replyChainMessageId": null
     },
+    "meetingType": "scheduled"
 }
 ```
 

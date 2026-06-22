@@ -3227,7 +3227,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getAllEnterpriseInteractions",
           "ChangeType": "Addition",
-          "Description": "Added the [getAllEnterpriseInteractions](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/api-reference/aiInteractionHistory-getAllEnterpriseInteractions?view=graph-rest-beta) method to the [aiInteractionHistory](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionHistory?view=graph-rest-beta) resource.",
+          "Description": "Added the **getAllEnterpriseInteractions** method to the [aiInteractionHistory](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionHistory?view=graph-rest-beta) resource.",
           "Target": "aiInteractionHistory"
         }
       ],
@@ -3565,7 +3565,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "getAllEnterpriseInteractions",
           "ChangeType": "Addition",
-          "Description": "Added the [getAllEnterpriseInteractions](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/api-reference/aiInteractionHistory-getAllEnterpriseInteractions?view=graph-rest-1.0) method to the [aiInteractionHistory](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionHistory?view=graph-rest-1.0) resource.",
+          "Description": "Added the **getAllEnterpriseInteractions** method to the [aiInteractionHistory](https://learn.microsoft.com/en-us/graph/api/resources/aiInteractionHistory?view=graph-rest-1.0) resource.",
           "Target": "aiInteractionHistory"
         },
         {

@@ -591,7 +591,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "place",
           "ChangeType": "Addition",
-          "Description": "Added the [create](https://learn.microsoft.com/en-us/graph/api/place-create?view=graph-rest-beta) operation to the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta) resource.",
+          "Description": "Added the **create** operation to the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta) resource.",
           "Target": "place"
         },
         {

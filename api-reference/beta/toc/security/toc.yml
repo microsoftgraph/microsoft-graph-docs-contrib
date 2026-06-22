@@ -290,6 +290,112 @@ items:
     items:
     - name: Audit info
       href: ../../resources/security-auditinfo.md
+- name: Custom detection rules
+  items:
+  - name: Rules root
+    items:
+    - name: Rules root
+      href: ../../resources/security-rulesroot.md
+    - name: List
+      href: ../../api/security-rulesroot-list-detectionrules.md
+    - name: Create
+      href: ../../api/security-rulesroot-post-detectionrules.md
+    - name: Get
+      href: ../../api/security-detectionrule-get.md
+    - name: Update
+      href: ../../api/security-detectionrule-update.md
+    - name: Delete
+      href: ../../api/security-rulesroot-delete-detectionrules.md
+  - name: Detection rule
+    items:
+    - name: Detection rule
+      href: ../../resources/security-detectionrule.md
+    - name: List
+      href: ../../api/security-rulesroot-list-detectionrules.md
+    - name: Create
+      href: ../../api/security-rulesroot-post-detectionrules.md
+    - name: Get
+      href: ../../api/security-detectionrule-get.md
+    - name: Update
+      href: ../../api/security-detectionrule-update.md
+    - name: Delete
+      href: ../../api/security-rulesroot-delete-detectionrules.md
+  - name: Complex types
+    items:
+    - name: Account entity mapping
+      href: ../../resources/security-accountentitymapping.md
+    - name: Account object id action
+      href: ../../resources/security-accountobjectidaction.md
+    - name: Account sid action
+      href: ../../resources/security-accountsidaction.md
+    - name: Alert custom details
+      href: ../../resources/security-alertcustomdetails.md
+    - name: Alert template
+      href: ../../resources/security-alerttemplate.md
+    - name: Amazon resource entity mapping
+      href: ../../resources/security-amazonresourceentitymapping.md
+    - name: Automated action
+      href: ../../resources/security-automatedaction.md
+    - name: Automated action set
+      href: ../../resources/security-automatedactionset.md
+    - name: Azure resource entity mapping
+      href: ../../resources/security-azureresourceentitymapping.md
+    - name: Cloud application entity mapping
+      href: ../../resources/security-cloudapplicationentitymapping.md
+    - name: Detection action
+      href: ../../resources/security-detectionaction.md
+    - name: Device action
+      href: ../../resources/security-deviceaction.md
+    - name: DNS entity mapping
+      href: ../../resources/security-dnsentitymapping.md
+    - name: Email action
+      href: ../../resources/security-emailaction.md
+    - name: Entity mapping
+      href: ../../resources/security-entitymapping.md
+    - name: Entity mapping configuration
+      href: ../../resources/security-entitymappingconfiguration.md
+    - name: File action
+      href: ../../resources/security-fileaction.md
+    - name: File entity mapping
+      href: ../../resources/security-fileentitymapping.md
+    - name: Google cloud resource entity mapping
+      href: ../../resources/security-googlecloudresourceentitymapping.md
+    - name: Host entity mapping
+      href: ../../resources/security-hostentitymapping.md
+    - name: Impacted asset
+      href: ../../resources/security-impactedasset.md
+    - name: IP entity mapping
+      href: ../../resources/security-ipentitymapping.md
+    - name: Isolate device action
+      href: ../../resources/security-isolatedeviceaction.md
+    - name: Mail cluster entity mapping
+      href: ../../resources/security-mailclusterentitymapping.md
+    - name: Mail message entity mapping
+      href: ../../resources/security-mailmessageentitymapping.md
+    - name: Mailbox entity mapping
+      href: ../../resources/security-mailboxentitymapping.md
+    - name: Mitre tactic
+      href: ../../resources/security-mitretactic.md
+    - name: Mitre technique
+      href: ../../resources/security-mitretechnique.md
+    - name: OAuth application entity mapping
+      href: ../../resources/security-oauthapplicationentitymapping.md
+    - name: Process entity mapping
+      href: ../../resources/security-processentitymapping.md
+    - name: Query condition
+      href: ../../resources/security-querycondition.md
+    - name: Registry value entity mapping
+      href: ../../resources/security-registryvalueentitymapping.md
+    - name: Response action
+      href: ../../resources/security-responseaction.md
+    - name: Rule schedule
+      href: ../../resources/security-ruleschedule.md
+    - name: Security group entity mapping
+      href: ../../resources/security-securitygroupentitymapping.md
+    - name: Stop and quarantine file action
+      href: ../../resources/security-stopandquarantinefileaction.md
+    - name: URL entity mapping
+      href: ../../resources/security-urlentitymapping.md
 - name: Data security and compliance
   items:
   - name: Content activity
@@ -432,20 +538,6 @@ items:
       href: ../../resources/textcontent.md
     - name: User scope
       href: ../../resources/userscope.md
-- name: Detection rule
-  items:
-  - name: Detection rule
-    href: ../../resources/security-detectionrule.md
-  - name: List
-    href: ../../api/security-detectionrule-list.md
-  - name: Get
-    href: ../../api/security-detectionrule-get.md
-  - name: Create
-    href: ../../api/security-detectionrule-post-detectionrules.md
-  - name: Update
-    href: ../../api/security-detectionrule-update.md
-  - name: Delete
-    href: ../../api/security-detectionrule-delete.md
 - name: Discovered cloud apps (preview)
   items:
   - name: Overview

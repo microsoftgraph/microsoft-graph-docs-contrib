@@ -785,7 +785,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userPurpose",
           "ChangeType": "Addition",
-          "Description": "Added the [userPurpose](https://learn.microsoft.com/en-us/graph/api/resources/userpurpose?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **userPurpose** resource type.",
           "Target": "userPurpose"
         },
         {

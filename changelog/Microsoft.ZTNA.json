@@ -169,7 +169,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "enrichedAuditLogs",
           "ChangeType": "Addition",
-          "Description": "Added the [enrichedAuditLogs](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-enrichedAuditLogs?view=graph-rest-beta) resource.",
+          "Description": "Added the **enrichedAuditLogs** resource.",
           "Target": "enrichedAuditLogs"
         },
         {
@@ -289,7 +289,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "enrichedAuditLogsSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [enrichedAuditLogsSettings](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-enrichedAuditLogsSettings?view=graph-rest-beta) resource type.",
+          "Description": "Added the **enrichedAuditLogsSettings** resource type.",
           "Target": "enrichedAuditLogsSettings"
         },
         {
@@ -1117,7 +1117,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "webCategories",
           "ChangeType": "Addition",
-          "Description": "Added the **webCategories** property to the [connectivity](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-conenctivity?view=graph-rest-beta) resource type.",
+          "Description": "Added the **webCategories** property to the **connectivity** resource type.",
           "Target": "connectivity"
         }
       ],
