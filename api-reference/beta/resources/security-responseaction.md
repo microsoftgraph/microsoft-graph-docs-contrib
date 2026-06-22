@@ -1,20 +1,23 @@
 ---
-title: "responseAction resource type"
+title: "responseAction resource type (deprecated)"
 description: "Describes an action taken on impacted assets as set in the custom detection rule."
 author: "mmekler"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
-ms.date: 03/06/2024
+ms.date: 05/25/2026
 ---
 
-# responseAction resource type
+# responseAction resource type (deprecated)
 
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes an action taken on [impacted assets](../resources/security-impactedasset.md) as set in a [custom detection rule](../resources/security-detectionrule.md). For more information, see [response actions](/microsoft-365/security/defender/custom-detection-rules#4-specify-actions)
+> [!IMPORTANT]
+> The **responseAction** resource type and all 17 derived types are deprecated and will be removed on 2026-10-01. Use [automatedAction](../resources/security-automatedaction.md) (grouped via [automatedActionSet](../resources/security-automatedactionset.md)) on the [detectionAction](../resources/security-detectionaction.md) resource instead.
+
+Describes an action taken on [impacted assets](../resources/security-impactedasset.md) as set in a [custom detection rule](../resources/security-detectionrule.md). For more information, see [response actions](/microsoft-365/security/defender/custom-detection-rules#4-specify-actions).
 
 This type is abstract and has multiple response action types that are derived from it:
 

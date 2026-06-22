@@ -52,6 +52,7 @@ PATCH /solutions/virtualEvents/townhalls/{id}
 | displayName | String | Display name of the town hall. |
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall ends. |
 | invitedAttendees | [identity](../resources/identity.md) collection | The identities of the attendees invited to the town hall. The supported identities are: [communicationsGuestIdentity](../resources/communicationsguestidentity.md) and [communicationsUserIdentity](../resources/communicationsuseridentity.md). |
+| isRegistrationRequired |Boolean| Indicates whether attendee registration is enabled for the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). Optional.|
 | settings | [virtualEventSettings](../resources/virtualeventsettings.md) | The town hall settings. |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall starts. |
 
@@ -160,7 +161,8 @@ Content-Type: application/json
   "settings": {
       "isAttendeeEmailNotificationEnabled": false
   },
-  "isInviteOnly": false,  
+  "isInviteOnly": false,
+  "isRegistrationRequired": false,
   "coOrganizers": [
     {
       "id": "7b7e1acd-a3e0-4533-8c1d-c1a4ca0b2e2b",

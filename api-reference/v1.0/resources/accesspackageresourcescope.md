@@ -26,8 +26,8 @@ If the resource is in an access package catalog but hasn't yet had its roles add
 |displayName|String|The display name of the scope.|
 |id|String| Read-only.|
 |isRootScope|Boolean|True if the scopes are arranged in a hierarchy and this is the top or root scope of the resource.|
-|originId|String|The unique identifier for the scope in the resource as defined in the origin system.|
-|originSystem|String|The origin system for the scope.|
+|originId|String| The unique identifier of the resource in the origin system. If a Microsoft Entra group, originId is the identifier of the group. Supports `$filter` (`eq`).|
+|originSystem|String| The type of the resource in the origin system, such as `SharePointOnline`, `AadApplication`, `AadGroup`, `AzureResources`, or `CustomDataProvidedResource`. Supports `$filter` (`eq`).|
 
 ## Relationships
 

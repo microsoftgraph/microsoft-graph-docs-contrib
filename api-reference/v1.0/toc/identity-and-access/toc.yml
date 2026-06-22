@@ -770,6 +770,18 @@ items:
         href: ../../api/accesspackageassignmentworkflowextension-delete.md
     - name: Access package subject
       href: ../../resources/accesspackagesubject.md
+    - name: Access package suggestion
+      items:
+      - name: Access package suggestion
+        href: ../../resources/accesspackagesuggestion.md
+      - name: Filter by current user
+        href: ../../api/accesspackagesuggestions-filterbycurrentuser.md
+    - name: Available access package
+      items:
+      - name: Available access package
+        href: ../../resources/availableaccesspackage.md
+      - name: List resourceRoleScopes
+        href: ../../api/availableaccesspackage-list-resourcerolescopes.md
     - name: Connected organization
       items:
       - name: Connected organization
@@ -800,6 +812,14 @@ items:
           href: ../../api/connectedorganization-post-internalsponsors.md
         - name: Remove
           href: ../../api/connectedorganization-delete-internalsponsors.md
+    - name: End user settings
+      items:
+      - name: End user settings
+        href: ../../resources/endusersettings.md
+      - name: Get
+        href: ../../api/endusersettings-get.md
+      - name: Update
+        href: ../../api/endusersettings-update.md
     - name: Entitlement management settings
       items:
       - name: Entitlement management settings
@@ -846,6 +866,12 @@ items:
         href: ../../resources/accesspackageresourceattributesource.md
       - name: Access package resource scope
         href: ../../resources/accesspackageresourcescope.md
+      - name: Access package suggestion reason
+        href: ../../resources/accesspackagesuggestionreason.md
+      - name: Access package suggestion related people based
+        href: ../../resources/accesspackagesuggestionrelatedpeoplebased.md
+      - name: Access package suggestion self assignment history based
+        href: ../../resources/accesspackagesuggestionselfassignmenthistorybased.md
       - name: Access package text input question
         href: ../../resources/accesspackagetextinputquestion.md
       - name: Access package user directory attribute store

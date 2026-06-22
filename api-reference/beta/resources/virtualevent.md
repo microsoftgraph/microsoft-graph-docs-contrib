@@ -38,9 +38,18 @@ Inherits from [entity](../resources/entity.md).
 |endDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|The end time of the virtual event. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones).|
 |externalEventInformation|[virtualEventExternalInformation](../resources/virtualeventexternalinformation.md) collection|The external information of a virtual event. Returned only for event organizers or coorganizers; otherwise, `null`. |
 |id|String|The unique identifier of the virtual event. Inherited from [entity](../resources/entity.md).|
+|isRegistrationRequired|Boolean| Indicates whether attendee registration is enabled for the virtual event.|
 |settings|[virtualEventSettings](../resources/virtualeventsettings.md)| The virtual event settings. |
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Start time of the virtual event. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones).|
 |status|[virtualEventStatus](#virtualeventstatus-values)|The status of the virtual event. The possible values are: `draft`, `published`, `canceled`, `unknownFutureValue`.|
+
+> [!NOTE]
+> Note: The `isRegistrationRequired` property controls whether the virtual event uses the registration workflow.
+>When `isRegistrationRequired` is set to false, registration-related APIs can still be invoked. However, these calls do not trigger the full registration experience. Instead, they behave as an add-to-calendar action, allowing attendees to add the event to their calendar without completing a registration process.
+>For webinars, registration is enabled by default (`isRegistrationRequired` = true).
+>For town halls, registration is not enabled by default. If registration is required for a town hall, the organizer must explicitly set `isRegistrationRequired` to true when configuring the virtual event.
+
+This ensures that registration-related APIs invoke the full registration workflow and attendee registration experience.
 
 ### virtualEventStatus values
 
@@ -79,6 +88,7 @@ The following JSON representation shows the resource type.
   "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "externalEventInformation" : [{"@odata.type": "microsoft.graph.virtualEventExternalInformation"}],
   "id": "String (identifier)",
+  "isRegistrationRequired": "Boolean",
   "settings": {"@odata.type": "microsoft.graph.virtualEventSettings"},
   "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "status": "String"

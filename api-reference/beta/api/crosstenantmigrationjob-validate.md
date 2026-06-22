@@ -1,8 +1,8 @@
 ---
 title: "crossTenantMigrationJob: validate"
-description: "Validate the configuration of a crossTenantMigrationJob"
+description: "Validate the configuration of a crossTenantMigrationJob asynchronously."
 author: "danguilliams"
-ms.date: 10/30/2025
+ms.date: 05/05/2026
 ms.localizationpriority: medium
 ms.subservice: "t2t-migration"
 doc_type: apiPageType
@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Validate the configuration of a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md). This function doesn't migrate any content, but goes through validation for the specified workloads to find any errors or misconfigurations that would affect an actual migration job. 
+Validate the configuration of a [cross-tenant migration job](../resources/crosstenantmigrationjob.md) asynchronously. This action doesn't migrate any content, but goes through validation for the specified workloads to find any errors or misconfigurations that affect an actual migration job. The job must be in a `submitted` or `validateFailed` status before you can call this action.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+This action is asynchronous. After you call the **validate** API, poll the [Get crossTenantMigrationJob](../api/crosstenantmigrationjob-get.md) endpoint to check for a terminal status of `validatePassed` or `validateFailed`.
 
 ## Permissions
 
@@ -38,7 +38,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 }
 -->
 ``` http
-POST /solutions/migrations/crossTenantMigrationJobs/validate
+POST /solutions/migrations/crossTenantMigrationJobs/{crossTenantMigrationJobId}/validate
 ```
 
 ## Request headers
@@ -46,87 +46,35 @@ POST /solutions/migrations/crossTenantMigrationJobs/validate
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-|Content-Type|application/json. Required.|
 
 ## Request body
 
-In the request body, supply a JSON representation of the parameters.
-
-The following table lists the parameters that are required when you call this action.
-
-|Parameter|Type|Description|
-|:---|:---|:---|
-|displayName|String|Name of the crossTenantMigrationJob to validate|
-|completeAfterDateTime|String|When the CrossTenantMigrationJob|
-|sourceTenantId|String|Source tenant for the CrossTenantMigrationJob|
-|exchangeSettings|[exchangeOnlineCrossTenantMigrationSettings](../resources/exchangeonlinecrosstenantmigrationsettings.md)|Exchange migration settings for the CrossTenantMigrationJob|
-|workloads|String collection|Workloads to validate for the CrossTenantMigrationJob  |
-|resourceType|String|Type of resource in the CrossTenantMigrationJob.|
-|resources|String collection|Identifiers of the users in the CrossTenantMigrationJob to validate|
-
-
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this action returns a `201 Created` response code and a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) in the response body.
+If successful, this action returns a `200 OK` response code and a [crossTenantMigrationJob](../resources/crosstenantmigrationjob.md) in the response body.
+
+This method can also return the following error codes in the response body.
+
+| Status code | Description |
+|:---|:---|
+| `404 Not Found` | The specified **crossTenantMigrationJob** wasn't found. |
+| `409 Conflict` | The job isn't in a valid status for validation. The job must be in `submitted` or `validateFailed` status. |
 
 ## Examples
 
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "crosstenantmigrationjobthis.validate"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/solutions/migrations/crossTenantMigrationJobs/validate
-Content-Type: application/json
-
-{
-  "displayName": "Contoso_migration_validation_job",
-  "completeAfterDateTime": "2025-05-22T17:14:52Z",
-  "sourceTenantId": "12345678-1234-1234-1234-123456789012",
-  "exchangeSettings": {
-    "targetDeliveryDomain": "fabrikam.com",
-    "sourceEndpoint": "EXOHandler"
-  },
-  "resources": [
-    "b5b8bc4f-0e36-4ad3-8ddf-248b68260b89",
-    "ac87d040-a081-426c-a73b-81133f458a29"
-  ],
-  "workloads": [ "Teams" ],
-  "resourceType": "Users"
-}
+POST https://graph.microsoft.com/beta/solutions/migrations/crossTenantMigrationJobs/add14989-2b21-4001-81bd-a18b0bac1dea/validate
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/crosstenantmigrationjobthisvalidate-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/crosstenantmigrationjobthisvalidate-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/crosstenantmigrationjobthisvalidate-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/crosstenantmigrationjobthisvalidate-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/crosstenantmigrationjobthisvalidate-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/crosstenantmigrationjobthisvalidate-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -139,31 +87,32 @@ The following example shows the response.
 }
 -->
 ``` http
-HTTP/1.1 201 Created
+HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.crossTenantMigrationJob",
-  "id": "0d1d9dbb-7676-4731-a601-5e8406fd7bcf",
-  "displayName": "Contoso_migration_validation_job",
+  "id": "add14989-2b21-4001-81bd-a18b0bac1dea",
+  "displayName": "Contoso_migration_job",
   "status": "validateSubmitted",
   "jobType": "validate",
   "message": "Validation job has been submitted successfully",
-  "completeAfterDateTime": "2025-05-22T17:14:52Z",
+  "completeAfterDateTime": "2026-05-22T17:14:52Z",
   "sourceTenantId": "12345678-1234-1234-1234-123456789012",
   "targetTenantId": "87654321-4321-4321-4321-210987654321",
   "resourceType": "users",
   "resources": [],
   "workloads": [
-    "teams"
+    "Teams",
+    "Exchange",
+    "ODSP"
   ],
   "createdBy": "admin@fabrikam.onmicrosoft.com",
-  "createdDateTime": "2025-11-07T00:19:21.4810014Z",
-  "lastUpdatedDateTime": "2025-11-07T00:19:21Z",
+  "createdDateTime": "2026-05-04T20:55:10.5427196Z",
+  "lastUpdatedDateTime": "2026-05-04T20:55:10Z",
   "exchangeSettings": {
     "targetDeliveryDomain": "fabrikam.com",
     "sourceEndpoint": "EXOHandler"
   }
 }
 ```
-

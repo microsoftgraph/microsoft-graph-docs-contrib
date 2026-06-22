@@ -335,7 +335,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "todoTask, change notifications",
           "ChangeType": "Addition",
-          "Description": "Added [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-beta) to the resources supported for [change notifications](https://learn.microsoft.com/en-us/graph/webhooks).",
+          "Description": "Added [todoTask](https://learn.microsoft.com/en-us/graph/api/resources/todoTask?view=graph-rest-beta) to the resources supported for **change notifications**.",
           "Target": "todoTask, change notifications"
         }
       ],

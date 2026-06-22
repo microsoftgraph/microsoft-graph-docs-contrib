@@ -3,6 +3,648 @@
 	{
       "ChangeList": [
         {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "detectionRuleStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **detectionRuleStatus** enumeration type.",
+          "Target": "detectionRuleStatus"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accountObjectIdAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [accountObjectIdAction](https://learn.microsoft.com/en-us/graph/api/resources/security-accountObjectIdAction?view=graph-rest-beta) resource.",
+          "Target": "accountObjectIdAction"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accountSidAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [accountSidAction](https://learn.microsoft.com/en-us/graph/api/resources/security-accountSidAction?view=graph-rest-beta) resource.",
+          "Target": "accountSidAction"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "alertCustomDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [alertCustomDetails](https://learn.microsoft.com/en-us/graph/api/resources/security-alertCustomDetails?view=graph-rest-beta) resource.",
+          "Target": "alertCustomDetails"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "alertTemplate",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **alertTemplate** resource.",
+          "Target": "alertTemplate"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "allowFileResponseAction",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [allowFileResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-allowFileResponseAction?view=graph-rest-beta) resource.",
+          "Target": "allowFileResponseAction"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "automatedAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [automatedAction](https://learn.microsoft.com/en-us/graph/api/resources/security-automatedAction?view=graph-rest-beta) resource.",
+          "Target": "automatedAction"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "automatedActionSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [automatedActionSet](https://learn.microsoft.com/en-us/graph/api/resources/security-automatedActionSet?view=graph-rest-beta) resource.",
+          "Target": "automatedActionSet"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "blockFileResponseAction",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [blockFileResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-blockFileResponseAction?view=graph-rest-beta) resource.",
+          "Target": "blockFileResponseAction"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "collectInvestigationPackageResponseAction",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [collectInvestigationPackageResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-collectInvestigationPackageResponseAction?view=graph-rest-beta) resource.",
+          "Target": "collectInvestigationPackageResponseAction"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "detectionAction",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **detectionAction** resource.",
+          "Target": "detectionAction"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceAction](https://learn.microsoft.com/en-us/graph/api/resources/security-deviceAction?view=graph-rest-beta) resource.",
+          "Target": "deviceAction"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "disableUserResponseAction",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [disableUserResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-disableUserResponseAction?view=graph-rest-beta) resource.",
+          "Target": "disableUserResponseAction"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "emailAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [emailAction](https://learn.microsoft.com/en-us/graph/api/resources/security-emailAction?view=graph-rest-beta) resource.",
+          "Target": "emailAction"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fileAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [fileAction](https://learn.microsoft.com/en-us/graph/api/resources/security-fileAction?view=graph-rest-beta) resource.",
+          "Target": "fileAction"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "forceUserPasswordResetResponseAction",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [forceUserPasswordResetResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-forceUserPasswordResetResponseAction?view=graph-rest-beta) resource.",
+          "Target": "forceUserPasswordResetResponseAction"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "hardDeleteResponseAction",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [hardDeleteResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-hardDeleteResponseAction?view=graph-rest-beta) resource.",
+          "Target": "hardDeleteResponseAction"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "impactedAsset",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [impactedAsset](https://learn.microsoft.com/en-us/graph/api/resources/security-impactedAsset?view=graph-rest-beta) resource.",
+          "Target": "impactedAsset"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "impactedDeviceAsset",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [impactedDeviceAsset](https://learn.microsoft.com/en-us/graph/api/resources/security-impactedDeviceAsset?view=graph-rest-beta) resource.",
+          "Target": "impactedDeviceAsset"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "impactedMailboxAsset",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [impactedMailboxAsset](https://learn.microsoft.com/en-us/graph/api/resources/security-impactedMailboxAsset?view=graph-rest-beta) resource.",
+          "Target": "impactedMailboxAsset"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "impactedUserAsset",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [impactedUserAsset](https://learn.microsoft.com/en-us/graph/api/resources/security-impactedUserAsset?view=graph-rest-beta) resource.",
+          "Target": "impactedUserAsset"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "initiateInvestigationResponseAction",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [initiateInvestigationResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-initiateInvestigationResponseAction?view=graph-rest-beta) resource.",
+          "Target": "initiateInvestigationResponseAction"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "isolateDeviceAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [isolateDeviceAction](https://learn.microsoft.com/en-us/graph/api/resources/security-isolateDeviceAction?view=graph-rest-beta) resource.",
+          "Target": "isolateDeviceAction"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "isolateDeviceResponseAction",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [isolateDeviceResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-isolateDeviceResponseAction?view=graph-rest-beta) resource.",
+          "Target": "isolateDeviceResponseAction"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "markUserAsCompromisedResponseAction",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [markUserAsCompromisedResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-markUserAsCompromisedResponseAction?view=graph-rest-beta) resource.",
+          "Target": "markUserAsCompromisedResponseAction"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mitreTactic",
+          "ChangeType": "Addition",
+          "Description": "Added the [mitreTactic](https://learn.microsoft.com/en-us/graph/api/resources/security-mitreTactic?view=graph-rest-beta) resource.",
+          "Target": "mitreTactic"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mitreTechnique",
+          "ChangeType": "Addition",
+          "Description": "Added the [mitreTechnique](https://learn.microsoft.com/en-us/graph/api/resources/security-mitreTechnique?view=graph-rest-beta) resource.",
+          "Target": "mitreTechnique"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "moveToDeletedItemsResponseAction",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [moveToDeletedItemsResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-moveToDeletedItemsResponseAction?view=graph-rest-beta) resource.",
+          "Target": "moveToDeletedItemsResponseAction"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "moveToInboxResponseAction",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [moveToInboxResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-moveToInboxResponseAction?view=graph-rest-beta) resource.",
+          "Target": "moveToInboxResponseAction"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "moveToJunkResponseAction",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [moveToJunkResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-moveToJunkResponseAction?view=graph-rest-beta) resource.",
+          "Target": "moveToJunkResponseAction"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceGroups",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceGroups** property to the [organizationalScope](https://learn.microsoft.com/en-us/graph/api/resources/security-organizationalScope?view=graph-rest-beta) resource.",
+          "Target": "organizationalScope"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "organizationalScope",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [organizationalScope](https://learn.microsoft.com/en-us/graph/api/resources/security-organizationalScope?view=graph-rest-beta) resource.",
+          "Target": "organizationalScope"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "organizationalScope",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [organizationalScope](https://learn.microsoft.com/en-us/graph/api/resources/security-organizationalScope?view=graph-rest-beta) resource.",
+          "Target": "organizationalScope"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "queryCondition",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [queryCondition](https://learn.microsoft.com/en-us/graph/api/resources/security-queryCondition?view=graph-rest-beta) resource.",
+          "Target": "queryCondition"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "responseAction",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [responseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-responseAction?view=graph-rest-beta) resource.",
+          "Target": "responseAction"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "restrictAppExecutionResponseAction",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [restrictAppExecutionResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-restrictAppExecutionResponseAction?view=graph-rest-beta) resource.",
+          "Target": "restrictAppExecutionResponseAction"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Property",
+          "ChangedApiName": "frequency",
+          "ChangeType": "Addition",
+          "Description": "Added the **frequency** property to the [ruleSchedule](https://learn.microsoft.com/en-us/graph/api/resources/security-ruleSchedule?view=graph-rest-beta) resource.",
+          "Target": "ruleSchedule"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ruleSchedule",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [ruleSchedule](https://learn.microsoft.com/en-us/graph/api/resources/security-ruleSchedule?view=graph-rest-beta) resource.",
+          "Target": "ruleSchedule"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ruleSchedule",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [ruleSchedule](https://learn.microsoft.com/en-us/graph/api/resources/security-ruleSchedule?view=graph-rest-beta) resource.",
+          "Target": "ruleSchedule"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "runAntivirusScanResponseAction",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [runAntivirusScanResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-runAntivirusScanResponseAction?view=graph-rest-beta) resource.",
+          "Target": "runAntivirusScanResponseAction"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "runDetails",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [runDetails](https://learn.microsoft.com/en-us/graph/api/resources/security-runDetails?view=graph-rest-beta) resource.",
+          "Target": "runDetails"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "softDeleteResponseAction",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [softDeleteResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-softDeleteResponseAction?view=graph-rest-beta) resource.",
+          "Target": "softDeleteResponseAction"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "stopAndQuarantineFileAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [stopAndQuarantineFileAction](https://learn.microsoft.com/en-us/graph/api/resources/security-stopAndQuarantineFileAction?view=graph-rest-beta) resource.",
+          "Target": "stopAndQuarantineFileAction"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "stopAndQuarantineFileResponseAction",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [stopAndQuarantineFileResponseAction](https://learn.microsoft.com/en-us/graph/api/resources/security-stopAndQuarantineFileResponseAction?view=graph-rest-beta) resource.",
+          "Target": "stopAndQuarantineFileResponseAction"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accountEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [accountEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-accountEntityMapping?view=graph-rest-beta) resource.",
+          "Target": "accountEntityMapping"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "alertTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [alertTemplate](https://learn.microsoft.com/en-us/graph/api/resources/security-alertTemplate?view=graph-rest-beta) resource.",
+          "Target": "alertTemplate"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "amazonResourceEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [amazonResourceEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-amazonResourceEntityMapping?view=graph-rest-beta) resource.",
+          "Target": "amazonResourceEntityMapping"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureResourceEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureResourceEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-azureResourceEntityMapping?view=graph-rest-beta) resource.",
+          "Target": "azureResourceEntityMapping"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudApplicationEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudApplicationEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-cloudApplicationEntityMapping?view=graph-rest-beta) resource.",
+          "Target": "cloudApplicationEntityMapping"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "detectionAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [detectionAction](https://learn.microsoft.com/en-us/graph/api/resources/security-detectionAction?view=graph-rest-beta) resource.",
+          "Target": "detectionAction"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdBy",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdBy** property to the [detectionRule](https://learn.microsoft.com/en-us/graph/api/resources/security-detectionRule?view=graph-rest-beta) resource.",
+          "Target": "detectionRule"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdDateTime** property to the [detectionRule](https://learn.microsoft.com/en-us/graph/api/resources/security-detectionRule?view=graph-rest-beta) resource.",
+          "Target": "detectionRule"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Property",
+          "ChangedApiName": "description",
+          "ChangeType": "Addition",
+          "Description": "Added the **description** property to the [detectionRule](https://learn.microsoft.com/en-us/graph/api/resources/security-detectionRule?view=graph-rest-beta) resource.",
+          "Target": "detectionRule"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Property",
+          "ChangedApiName": "detectionAction",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **detectionAction** property from the [detectionRule](https://learn.microsoft.com/en-us/graph/api/resources/security-detectionRule?view=graph-rest-beta) resource.",
+          "Target": "detectionRule"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "detectionRule",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [detectionRule](https://learn.microsoft.com/en-us/graph/api/resources/security-detectionRule?view=graph-rest-beta) resource.",
+          "Target": "detectionRule"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Property",
+          "ChangedApiName": "displayName",
+          "ChangeType": "Addition",
+          "Description": "Added the **displayName** property to the [detectionRule](https://learn.microsoft.com/en-us/graph/api/resources/security-detectionRule?view=graph-rest-beta) resource.",
+          "Target": "detectionRule"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Property",
+          "ChangedApiName": "id",
+          "ChangeType": "Addition",
+          "Description": "Added the **id** property to the [detectionRule](https://learn.microsoft.com/en-us/graph/api/resources/security-detectionRule?view=graph-rest-beta) resource.",
+          "Target": "detectionRule"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Property",
+          "ChangedApiName": "isEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isEnabled** property to the [detectionRule](https://learn.microsoft.com/en-us/graph/api/resources/security-detectionRule?view=graph-rest-beta) resource.",
+          "Target": "detectionRule"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastModifiedBy",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastModifiedBy** property to the [detectionRule](https://learn.microsoft.com/en-us/graph/api/resources/security-detectionRule?view=graph-rest-beta) resource.",
+          "Target": "detectionRule"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastModifiedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastModifiedDateTime** property to the [detectionRule](https://learn.microsoft.com/en-us/graph/api/resources/security-detectionRule?view=graph-rest-beta) resource.",
+          "Target": "detectionRule"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "detectionRule",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [detectionRule](https://learn.microsoft.com/en-us/graph/api/resources/security-detectionRule?view=graph-rest-beta) resource.",
+          "Target": "detectionRule"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Property",
+          "ChangedApiName": "status",
+          "ChangeType": "Addition",
+          "Description": "Added the **status** property to the [detectionRule](https://learn.microsoft.com/en-us/graph/api/resources/security-detectionRule?view=graph-rest-beta) resource.",
+          "Target": "detectionRule"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "detectionAction",
+          "ChangeType": "Addition",
+          "Description": "Added the **detectionAction** relationship to the [detectionRule](https://learn.microsoft.com/en-us/graph/api/resources/security-detectionRule?view=graph-rest-beta) resource.",
+          "Target": "detectionRule"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "dnsEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [dnsEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-dnsEntityMapping?view=graph-rest-beta) resource.",
+          "Target": "dnsEntityMapping"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "entityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [entityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-entityMapping?view=graph-rest-beta) resource.",
+          "Target": "entityMapping"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "entityMappingConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [entityMappingConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/security-entityMappingConfiguration?view=graph-rest-beta) resource.",
+          "Target": "entityMappingConfiguration"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "fileEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [fileEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-fileEntityMapping?view=graph-rest-beta) resource.",
+          "Target": "fileEntityMapping"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "googleCloudResourceEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [googleCloudResourceEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-googleCloudResourceEntityMapping?view=graph-rest-beta) resource.",
+          "Target": "googleCloudResourceEntityMapping"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "hostEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [hostEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-hostEntityMapping?view=graph-rest-beta) resource.",
+          "Target": "hostEntityMapping"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ipEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [ipEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-ipEntityMapping?view=graph-rest-beta) resource.",
+          "Target": "ipEntityMapping"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mailboxEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [mailboxEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-mailboxEntityMapping?view=graph-rest-beta) resource.",
+          "Target": "mailboxEntityMapping"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mailClusterEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [mailClusterEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-mailClusterEntityMapping?view=graph-rest-beta) resource.",
+          "Target": "mailClusterEntityMapping"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mailMessageEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [mailMessageEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-mailMessageEntityMapping?view=graph-rest-beta) resource.",
+          "Target": "mailMessageEntityMapping"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "oAuthApplicationEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [oAuthApplicationEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-oAuthApplicationEntityMapping?view=graph-rest-beta) resource.",
+          "Target": "oAuthApplicationEntityMapping"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "processEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [processEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-processEntityMapping?view=graph-rest-beta) resource.",
+          "Target": "processEntityMapping"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "protectionRule",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **protectionRule** resource.",
+          "Target": "protectionRule"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "registryValueEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [registryValueEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-registryValueEntityMapping?view=graph-rest-beta) resource.",
+          "Target": "registryValueEntityMapping"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "securityGroupEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [securityGroupEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-securityGroupEntityMapping?view=graph-rest-beta) resource.",
+          "Target": "securityGroupEntityMapping"
+        },
+        {
+          "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+          "ApiChange": "Resource",
+          "ChangedApiName": "urlEntityMapping",
+          "ChangeType": "Addition",
+          "Description": "Added the [urlEntityMapping](https://learn.microsoft.com/en-us/graph/api/resources/security-urlEntityMapping?view=graph-rest-beta) resource.",
+          "Target": "urlEntityMapping"
+        }
+      ],
+      "Id": "d00fba97-7866-4478-ad29-386b813a4125",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-06-17T09:12:53.9791702Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "41ef4b19-6726-4902-bd04-b860fdfee83a",
           "ApiChange": "Property",
           "ChangedApiName": "tenantId",

@@ -1,5 +1,5 @@
 ---
-title: "incidentTaskResponseAction resource type"
+title: "incidentTaskResponseAction resource type (deprecated)"
 description: "Represents a base type for all incident task response actions in Microsoft Defender XDR."
 author: "BenAlfasi"
 ms.date: 06/25/2025
@@ -8,11 +8,14 @@ ms.subservice: "security"
 doc_type: resourcePageType
 ---
 
-# incidentTaskResponseAction resource type
+# incidentTaskResponseAction resource type (deprecated)
 
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!IMPORTANT]
+> The **incidentTaskResponseAction** resource type is deprecated and will be removed on October 1, 2026. Use [automatedAction](../resources/security-automatedaction.md) (grouped via [automatedActionSet](../resources/security-automatedactionset.md)) on the [detectionAction](../resources/security-detectionaction.md) resource instead.
 
 Represents the base type for all incident task response actions in Microsoft Defender XDR. This is an abstract type that cannot be instantiated directly but serves as the parent type for the following specific response actions that can be executed on incident tasks.
 
