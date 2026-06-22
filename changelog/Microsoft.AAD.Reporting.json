@@ -821,7 +821,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "conditionalAccessAudience",
           "ChangeType": "Addition",
-          "Description": "Added the [conditionalAccessAudience](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessAudience?view=graph-rest-beta) resource.",
+          "Description": "Added the **conditionalAccessAudience** resource.",
           "Target": "conditionalAccessAudience"
         },
         {

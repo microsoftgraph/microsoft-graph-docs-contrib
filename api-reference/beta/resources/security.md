@@ -36,6 +36,7 @@ None.
 |incidentTasks|[microsoft.graph.security.incidentTask](security-incidenttask.md) collection|A collection of tasks associated with security incidents.|
 |incidents | [microsoft.graph.security.incident](security-incident.md) collection | A collection of incidents in Microsoft 365 Defender, each of which is a set of correlated alerts and associated metadata that reflects the story of an attack.|
 |partner| [microsoft.graph.partner.security.partnerSecurity](../resources/partner-security-partnersecurity.md) | A container that safeguards the Microsoft Azure resources of Microsoft Cloud Solution Provider (CSP) partners' customers, including alerts, scores, and all aspects of security. |
+|rules|[microsoft.graph.security.rulesRoot](../resources/security-rulesroot.md)|Container for the security rules configured in Microsoft Defender XDR, including [custom detection rules](../resources/security-detectionrule.md).|
 |secureScores | [secureScore](securescore.md) collection | Measurements of tenants' security posture to help protect them from threats. |
 |securityCopilot | [securityCopilot](../resources/securitycopilot.md) collection | Represents the resources related to Microsoft Security Copilot. |
 |securityactions|[securityAction](../resources/securityaction.md) collection|Actions that respond to alerts to block malicious activities.|

@@ -931,7 +931,10 @@
                 "accessPackageAssignmentRequestWorkflowExtension",
                 "accessPackageAssignmentWorkflowExtension",
                 "accessPackageSubject",
+                "accessPackageSuggestion",
+                "availableAccessPackage",
                 "connectedOrganization",
+                "endUserSettings",
                 "entitlementManagementSettings"
               ],
               "complexTypes": [
@@ -953,6 +956,9 @@
                 "accessPackageResourceAttributeQuestion",
                 "accessPackageResourceAttributeSource",
                 "accessPackageResourceScope",
+                "accessPackageSuggestionReason",
+                "accessPackageSuggestionRelatedPeopleBased",
+                "accessPackageSuggestionSelfAssignmentHistoryBased",
                 "accessPackageTextInputQuestion",
                 "accessPackageUserDirectoryAttributeStore",
                 "attributeRuleMembers",

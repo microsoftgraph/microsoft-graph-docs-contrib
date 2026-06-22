@@ -28,7 +28,8 @@ In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), 
 |displayName|String|The display name of the resource role such as the role defined by the application.|
 |id|String| Read-only.|
 |originId|String|The unique identifier of the resource role in the origin system. For a SharePoint Online site, the originId is the sequence number of the role in the site. |
-|originSystem|String|The type of the resource in the origin system, such as `SharePointOnline`, `AadApplication`, or `AadGroup`.|
+|originSystem|String|The type of the resource in the origin system, such as `SharePointOnline`, `AadApplication`, `AzureResources`, or `AadGroup`.|
+|type|roleType|The role type for the Azure resource role. The possible values are: `active`, `eligible`, `application`, `delegated`, `unknownFutureValue`. The values `active` and `eligible` are only supported where **originSystem** is `AzureResources` while `application` and `delegated` aren't currently implemented.|
 
 ## Relationships
 
@@ -55,6 +56,7 @@ The following JSON representation shows the resource.
   "displayName": "String",
   "id": "String (identifier)",
   "originId": "String",
-  "originSystem": "String"
+  "originSystem": "String",
+  "type": "String"
 }
 ```

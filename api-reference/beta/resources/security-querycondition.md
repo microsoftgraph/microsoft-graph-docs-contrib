@@ -5,7 +5,7 @@ author: "mmekler"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
-ms.date: 03/06/2024
+ms.date: 05/25/2026
 ---
 
 # queryCondition resource type
@@ -17,10 +17,11 @@ Namespace: microsoft.graph.security
 Represents the [advanced hunting](../api/security-security-runhuntingquery.md) query that defines the behavior of a [custom detection rule](../resources/security-detectionrule.md).
 
 ## Properties
-| Property             | Type           | Description                                                                |
-|:---------------------|:---------------|:---------------------------------------------------------------------------|
-| lastModifiedDateTime | DateTimeOffset | Timestamp of when the query in the custom detection rule was last updated. |
-| queryText            | String         | Contents of the query.                                                     |
+
+|Property|Type|Description|
+|:---|:---|:---|
+|queryText|String|Contents of the query.|
+|lastModifiedDateTime (deprecated)|DateTimeOffset|Timestamp of when the query in the custom detection rule was last updated. **Deprecated.** This property will be removed from this resource on 2026-10-01.|
 
 ## Relationships
 None.

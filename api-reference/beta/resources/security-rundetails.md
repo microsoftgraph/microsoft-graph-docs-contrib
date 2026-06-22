@@ -1,18 +1,21 @@
 ---
-title: "runDetails resource type"
+title: "runDetails resource type (deprecated)"
 description: "Represents an instance of a custom detection rule run."
 author: "mmekler"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
-ms.date: 03/06/2024
+ms.date: 05/25/2026
 ---
 
-# runDetails resource type
+# runDetails resource type (deprecated)
 
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!IMPORTANT]
+> The **runDetails** resource type is deprecated and will be removed on 2026-10-01. Run history is no longer surfaced through the custom detection rules API.
 
 Represents an instance of a [custom detection rule](../resources/security-detectionrule.md) run.
 

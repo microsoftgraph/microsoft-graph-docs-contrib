@@ -405,7 +405,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "state",
           "ChangeType": "Addition",
-          "Description": "Added the **state** property to the [externalConnection](https://learn.microsoft.com/en-us/graph/api/resources/externalconnection?view=graph-rest-beta) resource.",
+          "Description": "Added the **state** property to the **externalConnection** resource.",
           "Target": "externalConnection"
         },
         {
@@ -413,7 +413,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "externalGroup",
           "ChangeType": "Addition",
-          "Description": "Added the [externalGroup](https://learn.microsoft.com/en-us/graph/api/resources/externalgroup?view=graph-rest-beta) resource.",
+          "Description": "Added the **externalGroup** resource.",
           "Target": "externalGroup"
         },
         {
@@ -421,7 +421,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "externalGroupMember",
           "ChangeType": "Addition",
-          "Description": "Added the [externalGroupMember](https://learn.microsoft.com/en-us/graph/api/resources/externalgroupmember?view=graph-rest-beta) resource.",
+          "Description": "Added the **externalGroupMember** resource.",
           "Target": "externalGroupMember"
         },
         {
@@ -487,7 +487,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "aliases,isRefinable,labels",
           "ChangeType": "Addition",
-          "Description": "Added the **aliases**, **isRefinable**, and **labels** properties to the [property](https://learn.microsoft.com/en-us/graph/api/resources/property?view=graph-rest-beta) entity.",
+          "Description": "Added the **aliases**, **isRefinable**, and **labels** properties to the **property** entity.",
           "Target": "property"
         },
         {
@@ -495,7 +495,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "get externalItem",
           "ChangeType": "Addition",
-          "Description": "Added the [get externalItem](https://learn.microsoft.com/en-us/graph/api/externalitem-get?view=graph-rest-beta) operation.",
+          "Description": "Added the **get externalItem** operation.",
           "Target": "get externalItem"
         }
       ],
@@ -521,7 +521,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "content,properties",
           "ChangeType": "Change",
-          "Description": "The [externalItem](https://learn.microsoft.com/en-us/graph/api/resources/externalitem?view=graph-rest-beta) resource now supports updating the **content** and **properties** properties.",
+          "Description": "The **externalItem** resource now supports updating the **content** and **properties** properties.",
           "Target": "externalItem"
         },
         {
@@ -529,7 +529,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "Retry-After",
           "ChangeType": "Change",
-          "Description": "Operations on [externalItem](https://learn.microsoft.com/en-us/graph/api/resources/externalitem?view=graph-rest-beta) resources now return a **Retry-After** header when they are throttled.",
+          "Description": "Operations on **externalItem** resources now return a **Retry-After** header when they are throttled.",
           "Target": "externalItem"
         }
       ],
@@ -547,7 +547,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "authorizedAppIds",
           "ChangeType": "Change",
-          "Description": "Renamed the **authorizedApps** property to **authorizedAppIds**. See [configuration](https://learn.microsoft.com/en-us/graph/api/resources/configuration?view=graph-rest-beta) resource. Moved this resource to the microsoft.graph.externalConnectors namespace.",
+          "Description": "Renamed the **authorizedApps** property to **authorizedAppIds**. See **configuration** resource. Moved this resource to the microsoft.graph.externalConnectors namespace.",
           "Target": "configuration"
         },
         {
@@ -555,7 +555,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "connectionOperation",
           "ChangeType": "Change",
-          "Description": "Moved the [connectionOperation](https://learn.microsoft.com/en-us/graph/api/resources/connectionOperation?view=graph-rest-beta) resource to the microsoft.graph.externalConnectors namespace.",
+          "Description": "Moved the **connectionOperation** resource to the microsoft.graph.externalConnectors namespace.",
           "Target": "connectionOperation"
         },
         {
@@ -563,7 +563,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "externalConnection",
           "ChangeType": "Change",
-          "Description": "Moved the [externalConnection](https://learn.microsoft.com/en-us/graph/api/resources/externalConnection?view=graph-rest-beta) resource to the microsoft.graph.externalConnectors namespace.",
+          "Description": "Moved the **externalConnection** resource to the microsoft.graph.externalConnectors namespace.",
           "Target": "externalConnection"
         },
         {
@@ -571,7 +571,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "externalGroup",
           "ChangeType": "Change",
-          "Description": "Moved the [externalGroup](https://learn.microsoft.com/en-us/graph/api/resources/externalGroup?view=graph-rest-beta) resource to the microsoft.graph.externalConnectors namespace.",
+          "Description": "Moved the **externalGroup** resource to the microsoft.graph.externalConnectors namespace.",
           "Target": "externalGroup"
         },
         {
@@ -579,7 +579,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "externalGroupMember",
           "ChangeType": "Change",
-          "Description": "Moved the [externalGroupMember](https://learn.microsoft.com/en-us/graph/api/resources/externalGroupMember?view=graph-rest-beta) resource to the microsoft.graph.externalConnectors namespace.",
+          "Description": "Moved the **externalGroupMember** resource to the microsoft.graph.externalConnectors namespace.",
           "Target": "externalGroupMember"
         },
         {
@@ -587,7 +587,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "externalItem",
           "ChangeType": "Change",
-          "Description": "Moved the [externalItem](https://learn.microsoft.com/en-us/graph/api/resources/externalItem?view=graph-rest-beta) resource to the microsoft.graph.externalConnectors namespace.",
+          "Description": "Moved the **externalItem** resource to the microsoft.graph.externalConnectors namespace.",
           "Target": "externalItem"
         },
         {
@@ -595,7 +595,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "schema",
           "ChangeType": "Change",
-          "Description": "Moved the [schema](https://learn.microsoft.com/en-us/graph/api/resources/schema?view=graph-rest-beta) resource to the microsoft.graph.externalConnectors namespace.",
+          "Description": "Moved the **schema** resource to the microsoft.graph.externalConnectors namespace.",
           "Target": "schema"
         },
         {
@@ -603,7 +603,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "acl",
           "ChangeType": "Change",
-          "Description": "Moved the [acl](https://learn.microsoft.com/en-us/graph/api/resources/acl?view=graph-rest-beta) resource to the microsoft.graph.externalConnectors namespace.",
+          "Description": "Moved the **acl** resource to the microsoft.graph.externalConnectors namespace.",
           "Target": "acl"
         },
         {
@@ -611,7 +611,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "configuration",
           "ChangeType": "Change",
-          "Description": "Moved the [configuration](https://learn.microsoft.com/en-us/graph/api/resources/configuration?view=graph-rest-beta) resource to the microsoft.graph.externalConnectors namespace.",
+          "Description": "Moved the **configuration** resource to the microsoft.graph.externalConnectors namespace.",
           "Target": "configuration"
         },
         {
@@ -619,7 +619,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "externalItemContent",
           "ChangeType": "Change",
-          "Description": "Moved the [externalItemContent](https://learn.microsoft.com/en-us/graph/api/resources/externalItemContent?view=graph-rest-beta) resource to the microsoft.graph.externalConnectors namespace.",
+          "Description": "Moved the **externalItemContent** resource to the microsoft.graph.externalConnectors namespace.",
           "Target": "externalItemContent"
         },
         {
@@ -635,7 +635,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "property",
           "ChangeType": "Change",
-          "Description": "Moved the [property](https://learn.microsoft.com/en-us/graph/api/resources/property?view=graph-rest-beta) resource to the microsoft.graph.externalConnectors namespace.",
+          "Description": "Moved the **property** resource to the microsoft.graph.externalConnectors namespace.",
           "Target": "property"
         },
         {
@@ -787,7 +787,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isContent",
           "ChangeType": "Deletion",
-          "Description": "Removed the **isContent** property from the [property](https://learn.microsoft.com/en-us/graph/api/resources/property?view=graph-rest-beta) resource.",
+          "Description": "Removed the **isContent** property from the **property** resource.",
           "Target": "property"
         },
         {
@@ -795,7 +795,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "error",
           "ChangeType": "Change",
-          "Description": "Changed the type of the **error** property in the [connectionOperation](https://learn.microsoft.com/en-us/graph/api/resources/connectionOperation?view=graph-rest-beta) resource to be of [publicError](https://learn.microsoft.com/en-us/graph/api/resources/publicerror?view=graph-rest-beta) type instead.",
+          "Description": "Changed the type of the **error** property in the **connectionOperation** resource to be of [publicError](https://learn.microsoft.com/en-us/graph/api/resources/publicerror?view=graph-rest-beta) type instead.",
           "Target": "connectionOperation"
         },
         {
@@ -881,7 +881,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "connectionOperation",
           "ChangeType": "Addition",
-          "Description": "Added the [connectionOperation](https://learn.microsoft.com/en-us/graph/api/resources/connectionOperation?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **connectionOperation** resource type.",
           "Target": "connectionOperation"
         },
         {
@@ -889,7 +889,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "externalConnection",
           "ChangeType": "Addition",
-          "Description": "Added the [externalConnection](https://learn.microsoft.com/en-us/graph/api/resources/externalConnection?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **externalConnection** resource type.",
           "Target": "externalConnection"
         },
         {
@@ -897,7 +897,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "externalItem",
           "ChangeType": "Addition",
-          "Description": "Added the [externalItem](https://learn.microsoft.com/en-us/graph/api/resources/externalItem?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **externalItem** resource type.",
           "Target": "externalItem"
         },
         {
@@ -905,7 +905,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "schema",
           "ChangeType": "Addition",
-          "Description": "Added the [schema](https://learn.microsoft.com/en-us/graph/api/resources/schema?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **schema** resource type.",
           "Target": "schema"
         },
         {
@@ -913,7 +913,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "acl",
           "ChangeType": "Addition",
-          "Description": "Added the [acl](https://learn.microsoft.com/en-us/graph/api/resources/acl?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **acl** resource type.",
           "Target": "acl"
         },
         {
@@ -921,7 +921,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "configuration",
           "ChangeType": "Addition",
-          "Description": "Added the [configuration](https://learn.microsoft.com/en-us/graph/api/resources/configuration?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **configuration** resource type.",
           "Target": "configuration"
         },
         {
@@ -929,7 +929,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "externalItemContent",
           "ChangeType": "Addition",
-          "Description": "Added the [externalItemContent](https://learn.microsoft.com/en-us/graph/api/resources/externalItemContent?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **externalItemContent** resource type.",
           "Target": "externalItemContent"
         },
         {
@@ -945,7 +945,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "property",
           "ChangeType": "Addition",
-          "Description": "Added the [property](https://learn.microsoft.com/en-us/graph/api/resources/property?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **property** resource type.",
           "Target": "property"
         },
         {
@@ -1043,7 +1043,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "groups",
           "ChangeType": "Addition",
-          "Description": "Added the **groups** relationship to the [externalConnection](https://learn.microsoft.com/en-us/graph/api/resources/externalConnection?view=graph-rest-1.0) resource.",
+          "Description": "Added the **groups** relationship to the **externalConnection** resource.",
           "Target": "externalConnection"
         },
         {
@@ -1051,7 +1051,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "externalGroup",
           "ChangeType": "Addition",
-          "Description": "Added the [externalGroup](https://learn.microsoft.com/en-us/graph/api/resources/externalGroup?view=graph-rest-1.0) resource type.",
+          "Description": "Added the **externalGroup** resource type.",
           "Target": "externalGroup"
         },
         {
@@ -1769,7 +1769,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "isExactMatchRequired",
           "ChangeType": "Addition",
-          "Description": "Added the **isExactMatchRequired** property to the [property](https://learn.microsoft.com/en-us/graph/api/resources/property?view=graph-rest-beta) resource.",
+          "Description": "Added the **isExactMatchRequired** property to the **property** resource.",
           "Target": "property"
         }
       ],
@@ -1945,7 +1945,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "rankingHint",
           "ChangeType": "Addition",
-          "Description": "Added the **rankingHint** property to the [property](https://learn.microsoft.com/en-us/graph/api/resources/property?view=graph-rest-beta) resource.",
+          "Description": "Added the **rankingHint** property to the **property** resource.",
           "Target": "property"
         }
       ],

@@ -1,18 +1,21 @@
 ---
-title: "impactedMailboxAsset resource type"
+title: "impactedMailboxAsset resource type (deprecated)"
 description: "Represents a mailbox that was identified in an alert triggered by a custom detection rule."
 author: "mmekler"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: resourcePageType
-ms.date: 03/06/2024
+ms.date: 05/25/2026
 ---
 
-# impactedMailboxAsset resource type
+# impactedMailboxAsset resource type (deprecated)
 
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+> [!IMPORTANT]
+> The **impactedMailboxAsset** resource type is deprecated and will be removed on 2026-10-01. Use [entityMapping](../resources/security-entitymapping.md) and its derived types via `alertTemplate.entityMappings` instead. See the [custom detection rule](../resources/security-detectionrule.md) topic for the new shape.
 
 Represents a mailbox that was identified in an alert triggered by a [custom detection rule](../resources/security-detectionrule.md).
 

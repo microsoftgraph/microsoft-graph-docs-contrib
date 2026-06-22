@@ -999,7 +999,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "restore",
           "ChangeType": "Addition",
-          "Description": "Added the [restore](https://learn.microsoft.com/en-us/graph/api/crossTenantAccessPolicyConfigurationDomainBasedPartner-restore?view=graph-rest-beta) method to the [crossTenantAccessPolicyConfigurationDomainBasedPartner](https://learn.microsoft.com/en-us/graph/api/resources/crossTenantAccessPolicyConfigurationDomainBasedPartner?view=graph-rest-beta) resource.",
+          "Description": "Added the **restore** method to the **crossTenantAccessPolicyConfigurationDomainBasedPartner** resource.",
           "Target": "crossTenantAccessPolicyConfigurationDomainBasedPartner"
         },
         {
@@ -1023,7 +1023,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "restore",
           "ChangeType": "Addition",
-          "Description": "Added the [restore](https://learn.microsoft.com/en-us/graph/api/serviceProviderConstraints-restore?view=graph-rest-beta) method to the [serviceProviderConstraints](https://learn.microsoft.com/en-us/graph/api/resources/serviceProviderConstraints?view=graph-rest-beta) resource.",
+          "Description": "Added the **restore** method to the **serviceProviderConstraints** resource.",
           "Target": "serviceProviderConstraints"
         }
       ],
@@ -10177,7 +10177,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "acceptRecommendations, applyDecisions, get, list, list pendingAccessReviewInstances, sendReminder, stop",
           "ChangeType": "Addition",
-          "Description": "Added the [acceptRecommendations](https://learn.microsoft.com/en-us/graph/api/accessreviewinstance-acceptrecommendations?view=graph-rest-1.0), [applyDecisions](https://learn.microsoft.com/en-us/graph/api/accessreviewinstance-applydecisions?view=graph-rest-1.0), [get](https://learn.microsoft.com/en-us/graph/api/accessreviewinstance-get?view=graph-rest-1.0), [list](https://learn.microsoft.com/en-us/graph/api/accessreviewinstance-list?view=graph-rest-1.0), [list pendingAccessReviewInstances](https://learn.microsoft.com/en-us/graph/api/accessreviewinstance-pendingaccessreviewinstances?view=graph-rest-1.0), [sendReminder](https://learn.microsoft.com/en-us/graph/api/accessreviewinstance-sendreminder?view=graph-rest-1.0), [stop](https://learn.microsoft.com/en-us/graph/api/accessreviewinstance-stop?view=graph-rest-1.0) methods to the [accessReviewInstance](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-1.0) resource.",
+          "Description": "Added the [acceptRecommendations](https://learn.microsoft.com/en-us/graph/api/accessreviewinstance-acceptrecommendations?view=graph-rest-1.0), [applyDecisions](https://learn.microsoft.com/en-us/graph/api/accessreviewinstance-applydecisions?view=graph-rest-1.0), [get](https://learn.microsoft.com/en-us/graph/api/accessreviewinstance-get?view=graph-rest-1.0), **list**, [list pendingAccessReviewInstances](https://learn.microsoft.com/en-us/graph/api/accessreviewinstance-pendingaccessreviewinstances?view=graph-rest-1.0), [sendReminder](https://learn.microsoft.com/en-us/graph/api/accessreviewinstance-sendreminder?view=graph-rest-1.0), [stop](https://learn.microsoft.com/en-us/graph/api/accessreviewinstance-stop?view=graph-rest-1.0) methods to the [accessReviewInstance](https://learn.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-1.0) resource.",
           "Target": "accessReviewInstance"
         },
         {
@@ -10185,7 +10185,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "list, list pendingApproval, update",
           "ChangeType": "Addition",
-          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/accessreviewinstancedecisionitem-list?view=graph-rest-1.0), [list pendingApproval](https://learn.microsoft.com/en-us/graph/api/accessreviewinstancedecisionitem-listpendingapproval?view=graph-rest-1.0), [update](https://learn.microsoft.com/en-us/graph/api/accessreviewinstancedecisionitem-update?view=graph-rest-1.0) methods to the [accessReviewInstanceDecisionItem](https://learn.microsoft.com/en-us/graph/api/resources/accessreviewinstancedecisionitem?view=graph-rest-1.0) resource.",
+          "Description": "Added the **list**, [list pendingApproval](https://learn.microsoft.com/en-us/graph/api/accessreviewinstancedecisionitem-listpendingapproval?view=graph-rest-1.0), [update](https://learn.microsoft.com/en-us/graph/api/accessreviewinstancedecisionitem-update?view=graph-rest-1.0) methods to the [accessReviewInstanceDecisionItem](https://learn.microsoft.com/en-us/graph/api/resources/accessreviewinstancedecisionitem?view=graph-rest-1.0) resource.",
           "Target": "accessReviewInstanceDecisionItem"
         },
         {
@@ -10193,7 +10193,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "create, delete, get, list, update",
           "ChangeType": "Addition",
-          "Description": "Added the [create](https://learn.microsoft.com/en-us/graph/api/accessreviewset-post-definitions?view=graph-rest-1.0), [delete](https://learn.microsoft.com/en-us/graph/api/accessreviewscheduledefinition-delete?view=graph-rest-1.0), [get](https://learn.microsoft.com/en-us/graph/api/accessreviewscheduledefinition-get?view=graph-rest-1.0), [list](https://learn.microsoft.com/en-us/graph/api/accessreviewscheduledefinition-list?view=graph-rest-1.0), [update](https://learn.microsoft.com/en-us/graph/api/accessreviewscheduledefinition-update?view=graph-rest-1.0) methods to the [accessReviewScheduleDefinition](https://learn.microsoft.com/en-us/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-1.0) resource.",
+          "Description": "Added the [create](https://learn.microsoft.com/en-us/graph/api/accessreviewset-post-definitions?view=graph-rest-1.0), [delete](https://learn.microsoft.com/en-us/graph/api/accessreviewscheduledefinition-delete?view=graph-rest-1.0), [get](https://learn.microsoft.com/en-us/graph/api/accessreviewscheduledefinition-get?view=graph-rest-1.0), **list**, [update](https://learn.microsoft.com/en-us/graph/api/accessreviewscheduledefinition-update?view=graph-rest-1.0) methods to the [accessReviewScheduleDefinition](https://learn.microsoft.com/en-us/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-1.0) resource.",
           "Target": "accessReviewScheduleDefinition"
         }
       ],
@@ -10987,7 +10987,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "provisionOnDemand,synchronizationJob",
           "ChangeType": "Addition",
-          "Description": "Added the [provisionOnDemand](https://learn.microsoft.com/en-us/graph/api/synchronization-synchronizationjob-provision-on-demand?view=graph-rest-beta) method to the [synchronizationJob](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationJob?view=graph-rest-beta) resource",
+          "Description": "Added the **provisionOnDemand** method to the [synchronizationJob](https://learn.microsoft.com/en-us/graph/api/resources/synchronization-synchronizationJob?view=graph-rest-beta) resource",
           "Target": "provisionOnDemand,synchronizationJob"
         }
       ],
@@ -11119,7 +11119,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "userPurpose",
           "ChangeType": "Addition",
-          "Description": "Added the new **userPurpose** property to [mailboxSettings](https://learn.microsoft.com/en-us/graph/api/resources/mailboxsettings?view=graph-rest-beta). See [userPurpose resource type](https://learn.microsoft.com/en-us/graph/api/resources/userPurpose?view=graph-rest-beta) for information on the supported use cases.",
+          "Description": "Added the new **userPurpose** property to [mailboxSettings](https://learn.microsoft.com/en-us/graph/api/resources/mailboxsettings?view=graph-rest-beta). See **userPurpose resource type** for information on the supported use cases.",
           "Target": "mailboxSettings,userPurpose resource type"
         },
         {
@@ -11127,7 +11127,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "userPurpose",
           "ChangeType": "Addition",
-          "Description": "Added new [userPurpose](https://learn.microsoft.com/en-us/graph/api/resources/userPurpose?view=graph-rest-beta) complex type.",
+          "Description": "Added new **userPurpose** complex type.",
           "Target": "userPurpose"
         }
       ],
@@ -12763,7 +12763,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "appleIdentityProvider",
           "ChangeType": "Addition",
-          "Description": "To support configuring an Apple identity provider in Azure AD B2C tenant, introduced new resource type [appleIdentityProvider](https://learn.microsoft.com/en-us/graph/api/resources/appleidentityprovider?view=graph-rest-beta) entity.",
+          "Description": "To support configuring an Apple identity provider in Azure AD B2C tenant, introduced new resource type **appleIdentityProvider** entity.",
           "Target": "appleIdentityProvider"
         },
         {
@@ -12795,7 +12795,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "identityProviderBase",
           "ChangeType": "Addition",
-          "Description": "To support creating identity providers in an Azure AD and Azure AD B2C tenant, introduced [post](https://learn.microsoft.com/en-us/graph/api/identityproviderbase-post-identityproviders?view=graph-rest-beta) operation.",
+          "Description": "To support creating identity providers in an Azure AD and Azure AD B2C tenant, introduced **post** operation.",
           "Target": "identityProviderBase"
         },
         {
@@ -12803,7 +12803,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "identityProviderBase",
           "ChangeType": "Addition",
-          "Description": "To support listing all identity provider configurations in an Azure AD and Azure AD B2C tenant, introduced [list](https://learn.microsoft.com/en-us/graph/api/identityproviderbase-list?view=graph-rest-beta) operation.",
+          "Description": "To support listing all identity provider configurations in an Azure AD and Azure AD B2C tenant, introduced **list** operation.",
           "Target": "identityProviderBase"
         },
         {

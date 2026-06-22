@@ -3,6 +3,88 @@
     {
       "ChangeList": [
         {
+          "Id": "db208668-ad3c-46cb-b07c-aceb3e8f0fbf",
+          "ApiChange": "Method",
+          "ChangedApiName": "migrate",
+          "ChangeType": "Addition",
+          "Description": "Added the [migrate](https://learn.microsoft.com/en-us/graph/api/crossTenantMigrationJob-migrate?view=graph-rest-beta) method to the [crossTenantMigrationJob](https://learn.microsoft.com/en-us/graph/api/resources/crossTenantMigrationJob?view=graph-rest-beta) resource.",
+          "Target": "crossTenantMigrationJob"
+        },
+        {
+          "Id": "db208668-ad3c-46cb-b07c-aceb3e8f0fbf",
+          "ApiChange": "Method",
+          "ChangedApiName": "validate",
+          "ChangeType": "Change",
+          "Description": "Changed the behavior of the [validate](https://learn.microsoft.com/en-us/graph/api/crossTenantMigrationJob-validate?view=graph-rest-beta) method on the [crossTenantMigrationJob](https://learn.microsoft.com/en-us/graph/api/resources/crossTenantMigrationJob?view=graph-rest-beta) resource to validate an existing job as an entity-bound action. Going forward, use the `POST /solutions/migrations/crossTenantMigrationJobs/{crossTenantMigrationJobId}/validate` endpoint to trigger the validation of an existing cross-tenant migration job.",
+          "Target": "crossTenantMigrationJob"
+        },
+        {
+          "Id": "db208668-ad3c-46cb-b07c-aceb3e8f0fbf",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "displayName",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **displayName** parameter from the [validate](https://learn.microsoft.com/en-us/graph/api/crossTenantMigrationJob-validate?view=graph-rest-beta) method.",
+          "Target": "validate"
+        },
+        {
+          "Id": "db208668-ad3c-46cb-b07c-aceb3e8f0fbf",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "completeAfterDateTime",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **completeAfterDateTime** parameter from the [validate](https://learn.microsoft.com/en-us/graph/api/crossTenantMigrationJob-validate?view=graph-rest-beta) method.",
+          "Target": "validate"
+        },
+        {
+          "Id": "db208668-ad3c-46cb-b07c-aceb3e8f0fbf",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "sourceTenantId",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **sourceTenantId** parameter from the [validate](https://learn.microsoft.com/en-us/graph/api/crossTenantMigrationJob-validate?view=graph-rest-beta) method.",
+          "Target": "validate"
+        },
+        {
+          "Id": "db208668-ad3c-46cb-b07c-aceb3e8f0fbf",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "exchangeSettings",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **exchangeSettings** parameter from the [validate](https://learn.microsoft.com/en-us/graph/api/crossTenantMigrationJob-validate?view=graph-rest-beta) method.",
+          "Target": "validate"
+        },
+        {
+          "Id": "db208668-ad3c-46cb-b07c-aceb3e8f0fbf",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "workloads",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **workloads** parameter from the [validate](https://learn.microsoft.com/en-us/graph/api/crossTenantMigrationJob-validate?view=graph-rest-beta) method.",
+          "Target": "validate"
+        },
+        {
+          "Id": "db208668-ad3c-46cb-b07c-aceb3e8f0fbf",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "resourceType",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **resourceType** parameter from the [validate](https://learn.microsoft.com/en-us/graph/api/crossTenantMigrationJob-validate?view=graph-rest-beta) method.",
+          "Target": "validate"
+        },
+        {
+          "Id": "db208668-ad3c-46cb-b07c-aceb3e8f0fbf",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "resources",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **resources** parameter from the [validate](https://learn.microsoft.com/en-us/graph/api/crossTenantMigrationJob-validate?view=graph-rest-beta) method.",
+          "Target": "validate"
+        }
+      ],
+      "Id": "db208668-ad3c-46cb-b07c-aceb3e8f0fbf",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-06-19T23:11:16.5022242Z",
+      "WorkloadArea": "Tenants",
+      "SubArea": "Cross-tenant migration"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "2dc1c797-28b7-4890-b6a4-3a9bc4b38eec",
           "ApiChange": "Enumeration",
           "ChangedApiName": "crossTenantMigrationJobStatus",
