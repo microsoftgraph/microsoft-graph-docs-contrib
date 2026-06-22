@@ -3217,7 +3217,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "protectionRule",
           "ChangeType": "Addition",
-          "Description": "Added the [protectionRule](https://learn.microsoft.com/en-us/graph/api/resources/security-protectionRule?view=graph-rest-beta) resource",
+          "Description": "Added the protectionRule resource",
           "Target": "protectionRule"
         }
       ],
