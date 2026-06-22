@@ -620,6 +620,8 @@ items:
         href: ../../api/virtualappointment-sendvirtualappointmentsms.md
     - name: Complex types
       items:
+      - name: Cloud video interop info
+        href: ../../resources/cloudvideointeropinfo.md
       - name: Identity set
         href: ../../resources/identityset.md
   - name: Virtual events
