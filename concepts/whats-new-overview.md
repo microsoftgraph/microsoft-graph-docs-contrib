@@ -3,7 +3,7 @@ title: "What's new in Microsoft Graph"
 description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, and other resources."
 author: "lauragra"
 ms.localizationpriority: high
-ms.date: 06/15/2026
+ms.date: 06/23/2026
 ms.topic: whats-new
 ---
 
@@ -59,6 +59,9 @@ The **timeZone** property of the [schedule](/graph/api/resources/schedule) resou
 Application permissions for the [user: translateExchangeIds](/graph/api/user-translateexchangeids) API are supported only for request URLs that identify a user in the path.
 
 ## June 2026: New in preview only
+
+### Agents | Agent identities
+Added the **appRoleAssignmentRequired** property to the [agentIdentity](/graph/api/resources/agentidentity?view=graph-rest-beta&preserve-view=true) resource. This property indicates whether users or service principals must be explicitly granted an app role assignment before they can access the agent identity.
 
 ### Backup storage
 
@@ -185,7 +188,7 @@ Use the mailbox import and export APIs in Microsoft Graph to build solutions tha
 
 ### People and workplace intelligence | People admin settings
 
-Use the **isVisible** property on [profileCardProperty](/graph/api/resources/profilecardproperty) to indicate whether the given directory property should be shown on a user’s profile card.
+Use the **isVisible** property on [profileCardProperty](/graph/api/resources/profilecardproperty) to indicate whether the given directory property should be shown on a user's profile card.
 
 ### Security | Alerts and incidents
 
