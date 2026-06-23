@@ -11,6 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const apply = {
+  isForceUserLogoffEnabled: false,
   reservePercentage: 80
 };
 

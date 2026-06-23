@@ -31,10 +31,10 @@ const accessPackageResourceRoleScope = {
         description: '/resourceGroups/rg',
         displayName: '/resourceGroups/rg',
         isRootScope: false,
-                originSystem: 'AzureResources',
-                originId: '/subscriptions/828b526f-c769-4b19-9797-734b4843b978/resourceGroups/rg'
-            }
-        };
+        originSystem: 'AzureResources',
+        originId: '/subscriptions/828b526f-c769-4b19-9797-734b4843b978/resourceGroups/rg'
+    }
+};
 
 await client.api('/identityGovernance/entitlementManagement/accessPackages/5f7f4c7d-b3f5-4988-a17b-3f09b6f5a9ee/accessPackageResourceRoleScopes')
 	.version('beta')

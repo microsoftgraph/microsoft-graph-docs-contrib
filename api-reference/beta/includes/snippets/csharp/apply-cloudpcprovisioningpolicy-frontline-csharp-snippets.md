@@ -12,6 +12,12 @@ using Microsoft.Graph.Beta.DeviceManagement.VirtualEndpoint.ProvisioningPolicies
 var requestBody = new ApplyPostRequestBody
 {
 	ReservePercentage = 80,
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"isForceUserLogoffEnabled" , false
+		},
+	},
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
