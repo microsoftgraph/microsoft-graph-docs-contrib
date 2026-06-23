@@ -5,7 +5,7 @@ author: "danipocket"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: resourcePageType
-ms.date: 05/05/2026
+ms.date: 06/01/2026
 ---
 
 # cloudPcProvisioningPolicy resource type
@@ -32,6 +32,7 @@ Represents a Cloud PC provisioning policy.
 |[Schedule policy apply task](../api/cloudpcprovisioningpolicy-schedulepolicyapplytask.md)|None|Schedule a policy apply task for a [provisioning policy](../resources/cloudpcprovisioningpolicy.md).|
 |[Retrieve policy apply action result](../api/cloudpcprovisioningpolicy-retrievepolicyapplyactionresult.md)|[cloudPcPolicyApplyActionResult](../resources/cloudpcpolicyapplyactionresult.md)|Retrieve the result of a policy apply action for a [provisioning policy](../resources/cloudpcprovisioningpolicy.md).|
 |[Retrieve policy apply schedule](../api/cloudpcprovisioningpolicy-retrievepolicyapplyschedule.md)|[cloudPcPolicyScheduledApplyActionDetail](../resources/cloudpcpolicyscheduledapplyactiondetail.md)|Retrieve the schedule for a policy apply action for a [provisioning policy](../resources/cloudpcprovisioningpolicy.md).|
+|[Retrieve policy update status result](../api/cloudpcprovisioningpolicy-retrievepolicyupdatestatusresult.md)|[cloudPcPolicyPendingApplyStatusResult](../resources/cloudpcpolicypendingapplystatusresult.md)|Retrieve the pending apply status of a [provisioning policy](../resources/cloudpcprovisioningpolicy.md) to determine whether unapplied changes exist for Cloud PCs.|
 
 ## Properties
 

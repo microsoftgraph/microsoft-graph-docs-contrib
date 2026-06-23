@@ -3,6 +3,48 @@
     {
       "ChangeList": [
         {
+          "Id": "ddd9e07d-bacf-449d-86ae-7b4aaeac7358",
+          "ApiChange": "Property",
+          "ChangedApiName": "isForceUserLogoffEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isForceUserLogoffEnabled** property to the [cloudPcPolicyScheduledApplyActionDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcpolicyscheduledapplyactiondetail?view=graph-rest-beta) resource.",
+          "Target": "cloudPcPolicyScheduledApplyActionDetail"
+        },
+        {
+          "Id": "ddd9e07d-bacf-449d-86ae-7b4aaeac7358",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "isForceUserLogoffEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isForceUserLogoffEnabled** parameter to the [apply](https://learn.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-apply?view=graph-rest-beta) method.",
+          "Target": "apply"
+        },
+        {
+          "Id": "ddd9e07d-bacf-449d-86ae-7b4aaeac7358",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcPolicyPendingApplyStatusResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcPolicyPendingApplyStatusResult](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcpolicypendingapplystatusresult?view=graph-rest-beta) resource type.",
+          "Target": "cloudPcPolicyPendingApplyStatusResult"
+        },
+        {
+          "Id": "ddd9e07d-bacf-449d-86ae-7b4aaeac7358",
+          "ApiChange": "Method",
+          "ChangedApiName": "retrievePolicyUpdateStatusResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [retrievePolicyUpdateStatusResult](https://learn.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-retrievepolicyupdatestatusresult?view=graph-rest-beta) method to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
+          "Target": "cloudPcProvisioningPolicy"
+        }
+      ],
+      "Id": "ddd9e07d-bacf-449d-86ae-7b4aaeac7358",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-06-22T00:00:00.0000000Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "28bafbf7-eef1-47a8-9626-b368814728dd",
           "ApiChange": "Member",
           "ChangedApiName": "iconPathInvalid",

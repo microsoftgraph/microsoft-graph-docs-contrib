@@ -8934,10 +8934,12 @@ items:
       href: ../../resources/windowsupdates-softwareupdatecatalogentry.md
     - name: Software update filter
       href: ../../resources/windowsupdates-softwareupdatefilter.md
-    - name: Updatable asset enrollment
+    - name: Updatable asset enrollment (deprecated)
       href: ../../resources/windowsupdates-updatableassetenrollment.md
     - name: Updatable asset error
       href: ../../resources/windowsupdates-updatableasseterror.md
+    - name: Update category enrollment information
+      href: ../../resources/windowsupdates-updatecategoryenrollmentinformation.md
     - name: Update management enrollment
       href: ../../resources/windowsupdates-updatemanagementenrollment.md
     - name: User experience settings
