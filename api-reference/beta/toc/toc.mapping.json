@@ -695,6 +695,7 @@
             "cloudPcOnPremisesConnectionStatusDetails",
             "cloudPcOnPremisesConnectionSubnetIpDetail",
             "cloudPcPartnerAgentInstallResult",
+            "cloudPcPolicyPendingApplyStatusResult",
             "cloudPcPoolCapabilityConfiguration",
             "cloudPcProvisioningPolicyAssignment",
             "cloudPcProvisioningPolicyAutopatch",
