@@ -3,6 +3,88 @@
     {
       "ChangeList": [
         {
+          "Id": "ee9d9d3a-1ba3-406a-a53a-e43a2508acd9",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "enrollmentState",
+          "ChangeType": "Addition",
+          "Description": "Added the **enrollmentState** enumeration type.",
+          "Target": "enrollmentState"
+        }, 
+        {
+          "Id": "ee9d9d3a-1ba3-406a-a53a-e43a2508acd9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "updateCategoryEnrollmentInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [updateCategoryEnrollmentInformation](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-updatecategoryenrollmentinformation?view=graph-rest-beta) resource type.",
+          "Target": "updateCategoryEnrollmentInformation"
+        },
+        {
+          "Id": "ee9d9d3a-1ba3-406a-a53a-e43a2508acd9",
+          "ApiChange": "Property",
+          "ChangedApiName": "updateCategory",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **updateCategory** property from the [updateManagementEnrollment](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-updateManagementEnrollment?view=graph-rest-beta) resource.",
+          "Target": "updateManagementEnrollment"
+        }, 
+        {
+          "Id": "ee9d9d3a-1ba3-406a-a53a-e43a2508acd9",
+          "ApiChange": "Property",
+          "ChangedApiName": "feature",
+          "ChangeType": "Addition",
+          "Description": "Added the **feature** property to the [updateManagementEnrollment](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-updateManagementEnrollment?view=graph-rest-beta) resource.",
+          "Target": "updateManagementEnrollment"
+        }, 
+        {
+          "Id": "ee9d9d3a-1ba3-406a-a53a-e43a2508acd9",
+          "ApiChange": "Property",
+          "ChangedApiName": "quality",
+          "ChangeType": "Addition",
+          "Description": "Added the **quality** property to the [updateManagementEnrollment](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-updateManagementEnrollment?view=graph-rest-beta) resource.",
+          "Target": "updateManagementEnrollment"
+        }, 
+        {
+          "Id": "ee9d9d3a-1ba3-406a-a53a-e43a2508acd9",
+          "ApiChange": "Property",
+          "ChangedApiName": "driver",
+          "ChangeType": "Addition",
+          "Description": "Added the **driver** property to the [updateManagementEnrollment](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-updateManagementEnrollment?view=graph-rest-beta) resource.",
+          "Target": "updateManagementEnrollment"
+        },
+        {
+          "Id": "ee9d9d3a-1ba3-406a-a53a-e43a2508acd9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "updatableAssetEnrollment",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [updatableAssetEnrollment](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-updatableAssetEnrollment?view=graph-rest-beta) resource. The **updatableAssetEnrollment** resource is deprecated and stopped returning data on July 1, 2024.",
+          "Target": "updatableAssetEnrollment"
+        },
+        {
+          "Id": "ee9d9d3a-1ba3-406a-a53a-e43a2508acd9",
+          "ApiChange": "Property",
+          "ChangedApiName": "enrollments",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **enrollments** property from the [azureADDevice](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-azureADDevice?view=graph-rest-beta) resource.",
+          "Target": "azureADDevice"
+        },
+        {
+          "Id": "ee9d9d3a-1ba3-406a-a53a-e43a2508acd9",
+          "ApiChange": "Property",
+          "ChangedApiName": "enrollment",
+          "ChangeType": "Addition",
+          "Description": "Added the **enrollment** property to the [azureADDevice](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-azureADDevice?view=graph-rest-beta) resource.",
+          "Target": "azureADDevice"
+        } 
+      ],
+      "Id": "ee9d9d3a-1ba3-406a-a53a-e43a2508acd9",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-06-26T23:34:50.3183446Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Device updates"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "810c8ce0-9065-4b32-a737-fd2221a4ed71",
           "ApiChange": "Resource",
           "ChangedApiName": "remediationUpdateFilter",

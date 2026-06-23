@@ -906,6 +906,7 @@
             "microsoft.graph.windowsUpdates.softwareUpdateFilter",
             "microsoft.graph.windowsUpdates.updatableAssetEnrollment",
             "microsoft.graph.windowsUpdates.updatableAssetError",
+            "microsoft.graph.windowsUpdates.updateCategoryEnrollmentInformation",
             "microsoft.graph.windowsUpdates.updateManagementEnrollment",
             "microsoft.graph.windowsUpdates.userExperienceSettings",
             "microsoft.graph.windowsUpdates.windowsUpdateFilter"

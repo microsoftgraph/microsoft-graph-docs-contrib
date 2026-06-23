@@ -68,6 +68,10 @@ Use the new full workload backup APIs to protect entire Microsoft 365 workloads 
 
 Use the [cloudPcProvisioningPolicy: apply](/graph/api/cloudpcprovisioningpolicy-apply?view=graph-rest-beta&preserve-view=true) method to apply policy settings such as `region` and `singleSignOn`. This method also supports reprovisioning for frontline shared mode Cloud PCs by using the **reservePercentage** parameter to control the percentage of Cloud PCs that remain available during the process.
 
+### Device and app management | Device updates
+
+Added the [updateCategoryEnrollmentInformation](/graph/api/resources/windowsupdates-updatecategoryenrollmentinformation?view=graph-rest-beta&preserve-view=true) resource type to manage per-category enrollment state for Windows Updates. Use it to track enrollment state changes across update categories and access the current enrollment configuration through the [updateManagementEnrollment](/graph/api/resources/windowsupdates-updatemanagementenrollment?view=graph-rest-beta&preserve-view=true) and [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice?view=graph-rest-beta&preserve-view=true) resources.
+
 ### Files
 
 [Upsert](/graph/api/filestoragecontainer-patch-permissions?view=graph-rest-beta&preserve-view=true) (create or update) up to 40 permissions on a [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true) in a single request. The limit increased from 10 to 40 [permission](/graph/api/resources/permission?view=graph-rest-beta&preserve-view=true) objects per request.
