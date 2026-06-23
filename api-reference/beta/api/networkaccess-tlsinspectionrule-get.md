@@ -130,7 +130,7 @@ Content-Type: application/json
       {
         "@odata.type": "#microsoft.graph.networkaccess.tlsInspectionFqdnDestination",
         "values": [
-          "www.contoso.test.com",
+          "www.contoso.com",
           "*.contoso.org"
         ]
       },
