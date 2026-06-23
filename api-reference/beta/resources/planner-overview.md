@@ -179,11 +179,6 @@ The delta payload objects that the Planner delta query can currently return are 
 
 Use the corresponding `GET` methods on the resource to obtain the initial state of objects to be populated into the local cache.
 
-
-### Looking at history for the plan
-
-Planner supports an [API](../api/plannerplan-list-historyitems.md) to get the [history](plannerhistoryitem.md) of changes made to [tasks](plannertask.md) within a [plan](plannerplan.md).
-
 ### Differentiating between object creation and object modification
 
 In certain scenarios, the caller might want to distinguish between object creation and object modification within Planner's delta query feed.

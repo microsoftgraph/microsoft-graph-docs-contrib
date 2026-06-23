@@ -3362,7 +3362,6 @@
         "plannerPlan",
         "plannerTask",
         "plannerBucket",
-        "plannerHistoryItem",
         "plannerPlanDetails",
         "plannerRoster",
         "plannerUser",
@@ -3415,8 +3414,6 @@
         "plannerTaskChatReaction",
         "plannerTaskChatReactionEvent",
         "plannerTaskCreation",
-        "plannerTaskData",
-        "plannerTaskDetailsData",
         "plannerTaskPropertyRule",
         "plannerTaskRecurrence",
         "plannerTeamsPublicationInfo",
@@ -3445,12 +3442,6 @@
                 "businessScenarioTask"
               ]
             }
-          ]
-        },
-        {
-          "name": "Planner history item",
-          "resources": [
-            "taskHistoryItem"
           ]
         },
         {
