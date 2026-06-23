@@ -306,9 +306,10 @@
             "browseQueryResponseItem",
             "notificationRecipients",
             "protectionPolicyArtifactCount",
+            "retentionSetting",
             "restorePointSearchResponse",
             "restorePointSearchResult",
-            "retentionSetting",
+            "restoreSearchArtifactQueryExpression",
             "serviceStatus",
             "timePeriod"
           ]
