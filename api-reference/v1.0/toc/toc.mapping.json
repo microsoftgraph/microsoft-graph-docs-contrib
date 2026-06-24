@@ -1822,6 +1822,12 @@
           ]
         },
         {
+          "name": "Email and collaboration protection",
+          "resources": [
+            "microsoft.graph.security.analyzedEmail"
+          ]
+        },
+        {
           "name": "Identities",
           "resources": [
             "microsoft.graph.security.healthIssue",

@@ -116,6 +116,14 @@ Personal distribution lists enable users to group email recipients together and 
 
 Added the [policyTipAction](/graph/api/resources/policytipaction?view=graph-rest-beta&preserve-view=true) resource type and the `policyTip` member to the **dlpAction** enumeration. This enables applications to receive policy tip guidance as a standalone action when DLP policies are triggered through the processContent and protectionScopes APIs.
 
+### Security | Email and collaboration protection
+
+Use the [analyzedEmail](/graph/api/resources/security-analyzedemail?view=graph-rest-beta&preserve-view=true) resource type and its associated methods to give Security Operations teams direct, near real-time access to query email threats, indicators of compromise (IOCs), attack vectors, and evidence in a tenant. Email metadata, verdict information, related underlying entities such as attachments and URLs, filters, and timeline events are returned to support investigation and response.
+
+- [List analyzedEmails](/graph/api/security-collaborationroot-list-analyzedemails?view=graph-rest-beta&preserve-view=true) under the collaboration root to retrieve email records for a time range with support for `$filter`, `$top`, `$count`, and `$skiptoken`.
+- [Get analyzedEmail](/graph/api/security-analyzedemail-get?view=graph-rest-beta&preserve-view=true) to read the properties of a specific email, including its attachments, URLs, threat detection details, and timeline events.
+- [analyzedEmail: remediate](/graph/api/security-analyzedemail-remediate?view=graph-rest-beta&preserve-view=true) to trigger purge actions (move to junk, move to Inbox, soft delete, hard delete, move to deleted items, move to quarantine) for SOAR integrations, playbooks, and automations.
+
 ### Sites and lists
 
 Added the [sharePointReportSettings](/graph/api/resources/sharepointreportsettings?view=graph-rest-beta&preserve-view=true) resource type and related methods for managing SharePoint API usage report metrics. Use the [enableApiUsageReport](/graph/api/sharepointreportsettings-enableapiusagereport?view=graph-rest-beta&preserve-view=true) and [disableApiUsageReport](/graph/api/sharepointreportsettings-disableapiusagereport?view=graph-rest-beta&preserve-view=true) methods to control which metrics are collected and reported for your tenant.
