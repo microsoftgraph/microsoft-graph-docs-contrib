@@ -254,6 +254,10 @@ Use the [List](/graph/api/peopleadminsettings-list-photoupdatesettings?view=grap
 - Added the [identityCorrelation](/graph/api/resources/identitycorrelation?view=graph-rest-beta&preserve-view=true) resource type and related methods for viewing identity correlation reports between on-premises directories and Microsoft Entra ID.
 - Added the `passwordSubmit` member to the [authenticationEventType](/graph/api/resources/enums?view=graph-rest-beta&preserve-view=true#authenticationeventtype-values) enumeration, surfaced through [appliedAuthenticationEventListener](/graph/api/resources/appliedauthenticationeventlistener?view=graph-rest-beta&preserve-view=true), to identify password-submission events in sign-in flows.
 
+### Security | Advanced hunting
+
+Added the [getHuntingSchema](/graph/api/security-security-gethuntingschema?view=graph-rest-beta&preserve-view=true) method to the [security](/graph/api/resources/security?view=graph-rest-beta&preserve-view=true) resource to retrieve the available tables, columns, and functions for Microsoft Defender XDR advanced hunting queries.
+
 ### Security | Alerts and incidents
 
 - Use the following new resources that extend the [alertEvidence](/graph/api/resources/security-alertevidence?view=graph-rest-beta&preserve-view=true) base type to provide detailed context about various artifacts involved in security alerts:
