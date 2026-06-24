@@ -1,6 +1,16 @@
 {
     "redirections": [
         {
+            "source_path": "api-reference/beta/resources/accessreviewdatauploadtriggercallbackdata.md",
+            "redirect_url": "/graph/api/resources/customdataprovidedresourcepayloads-data?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "api-reference/beta/resources/accessreviewresourcedatauploadsessioncontextdata.md",
+            "redirect_url": "/graph/api/resources/customdataprovidedresourcepayloads-accessreviewcontextdata?view=graph-rest-beta",
+            "redirect_document_id": false
+        },
+        {
             "source_path": "api-reference/beta/api/readingassignmentsubmission-get.md",
             "redirect_url": "api-reference/beta/api/reportsroot-list-readingassignmentsubmissions.md",
             "redirect_document_id": false

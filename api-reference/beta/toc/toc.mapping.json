@@ -1467,6 +1467,7 @@
                 "accessPackageResourceRole",
                 "accessPackageResource",
                 "customDataProvidedResource",
+                "customDataProvidedResourceAccessReviewUploadSession",
                 "accessPackageResourceEnvironment",
                 "accessPackageResourceRequest",
                 "accessPackageAssignmentRequestWorkflowExtension",
@@ -1551,8 +1552,12 @@
                 "verifiedCredentialClaims",
                 "verifiedCredentialData",
                 "customDataProvidedResourceUploadSessionRequest",
-                "accessReviewDataUploadTriggerCallbackData",
-                "customDataProvidedResourceFile"
+                "customDataProvidedResourceFile",
+                "microsoft.graph.customDataProvidedResourcePayloads.accessReviewContextData",
+                "microsoft.graph.customDataProvidedResourcePayloads.accessReviewContextDataBase",
+                "microsoft.graph.customDataProvidedResourcePayloads.applyDecisionContextData",
+                "microsoft.graph.customDataProvidedResourcePayloads.calloutRequest",
+                "microsoft.graph.customDataProvidedResourcePayloads.data"
               ]
             },
             {
