@@ -105,6 +105,10 @@ Introduced programmatic management of personal distribution lists in user mailbo
 
 Personal distribution lists enable users to group email recipients together and send messages to all members at once without entering each address individually.
 
+### Reports | Identity and access reports
+
+Added the [identityAnalyticsRoot](/graph/api/resources/identityanalyticsroot?view=graph-rest-beta&preserve-view=true) resource type to provide point-in-time identity analytics for your tenant, starting with analytics about your groups such as their membership, ownership, and type.
+
 ### Security
 
 - Introduced [sensor migration](/graph/api/resources/security-sensormigration?view=graph-rest-beta&preserve-view=true) capabilities to migrate eligible Microsoft Defender for Identity sensors.

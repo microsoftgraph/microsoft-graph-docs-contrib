@@ -2790,6 +2790,13 @@
                 "correlationError",
                 "identityInfo"
               ]
+            },
+            {
+              "name": "Identity analytics (preview)",
+              "resources": [
+                "groupAnalytics",
+                "identityAnalyticsRoot"
+              ]
             }
           ]
         },
