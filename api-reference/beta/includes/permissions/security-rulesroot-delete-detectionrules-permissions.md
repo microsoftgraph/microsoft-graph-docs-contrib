@@ -9,4 +9,3 @@ ms.localizationpriority: medium
 |Delegated (work or school account)|CustomDetection.ReadWrite.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|CustomDetection.ReadWrite.All|Not available.|
-

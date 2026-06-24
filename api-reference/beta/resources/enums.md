@@ -282,6 +282,24 @@ Namespace: microsoft.graph
 |failedActivation|
 |unknownFutureValue|
 
+### historyEntityType values
+
+|Member|
+|:---|
+|task|
+|unknownFutureValue|
+
+### historyEventType values
+
+|Member|
+|:---|
+|created|
+|updated|
+|deleted|
+|undeleted|
+|moved|
+|unknownFutureValue|
+
 ### provisionState values
 
 | Member |
@@ -521,6 +539,7 @@ Namespace: microsoft.graph
 | unknownFutureValue |
 | formCompletion |
 | approvalCompletion |
+| completionInHostedApp |
 
 ### plannerApprovalStatus values
 

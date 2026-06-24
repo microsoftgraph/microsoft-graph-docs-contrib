@@ -49,7 +49,7 @@ Inherits from [entity](../resources/entity.md).
 |sourceTenantId|String|ID (GUID) of the tenant that content is migrated from.|
 |status|crossTenantMigrationJobStatus|Most recent status of the migration job. Read-only. The possible values are: `submitted`, `approved`, `processing`, `cuttingOver`, `inProgress`, `completed`, `completedWithErrors`, `failed`, `cancelled`, `pendingCancel`, `adminActionRequired`, `validateSubmitted`, `validateProcessing`, `validateInProgress`, `validatePassed`, `validateFailed`, `pendingDelete`, and `deleted`.|
 |targetTenantId|String|ID of the tenant that content is migrated to. Read-only.|
-|workloads|String collection|Workloads to migrate. Supported workloads are `Teams`, `Exchange`, and `ODSP` (OneDrive and SharePoint).|
+|workloads|String collection|Workloads to migrate. Supported workloads are `Teams`, `Exchange`, and `ODSP` (OneDrive/SharePoint).|
 
 ## Relationships
 |Relationship|Type|Description|

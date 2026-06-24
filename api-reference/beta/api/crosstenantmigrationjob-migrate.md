@@ -68,6 +68,7 @@ This method can also return the following error codes in the response body.
 ### Request
 
 The following example shows a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
