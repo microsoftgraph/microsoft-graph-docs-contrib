@@ -214,6 +214,12 @@ For details about report views and names, see [Microsoft 365 reports - SharePoin
 | [Get storage](../api/reportroot-getsharepointsiteusagestorage.md)        | Stream      | Get the trend of storage allocated and consumed during the reporting period.                                                                                                                                    |
 | [Get pages](../api/reportroot-getsharepointsiteusagepages.md)            | Stream      | Get the number of pages viewed across all sites.                                                                                                                                                                |
 
+### SharePoint API usage
+
+| Method                                                                                     | Return type | Description                                                                           |
+| :----------------------------------------------------------------------------------------- | :---------- | :------------------------------------------------------------------------------------ |
+| [Get SharePoint API usage](../api/reportroot-getsharepointapiusage.md)                     | Stream      | Get aggregated OneDrive and SharePoint API usage metrics for a tenant. |
+
 ### Skype for Business activity
 
 For details about report views and names, see [Skype for Business activity](/skypeforbusiness/skype-for-business-online-reporting/activity-report).

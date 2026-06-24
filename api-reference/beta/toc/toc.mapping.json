@@ -2816,7 +2816,9 @@
             "office365GroupsActivityFileCounts",
             "office365GroupsActivityGroupCounts",
             "office365GroupsActivityStorage",
-            "office365ServicesUserCounts"
+            "office365ServicesUserCounts",
+            "sharePointApiUsageDataPoint",
+            "sharePointApiUsageReport"
           ]
         },
         {
