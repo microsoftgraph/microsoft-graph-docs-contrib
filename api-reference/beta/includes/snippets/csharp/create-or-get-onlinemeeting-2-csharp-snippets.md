@@ -37,6 +37,12 @@ var requestBody = new CreateOrGetPostRequestBody
 		},
 	},
 	Subject = "Create a meeting with customId provided",
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"meetingType" , "scheduled"
+		},
+	},
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

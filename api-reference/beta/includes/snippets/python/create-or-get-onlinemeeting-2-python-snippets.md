@@ -33,6 +33,9 @@ request_body = CreateOrGetPostRequestBody(
 		],
 	),
 	subject = "Create a meeting with customId provided",
+	additional_data = {
+			"meeting_type" : "scheduled",
+	}
 )
 
 result = await graph_client.me.online_meetings.create_or_get.post(request_body)

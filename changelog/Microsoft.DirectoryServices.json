@@ -15891,6 +15891,24 @@
       "CreatedDateTime": "2026-03-31T15:28:36.2770719Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c327d619-2141-4517-b546-a89ffaf3929e",
+          "ApiChange": "Property",
+          "ChangedApiName": "appRoleAssignmentRequired",
+          "ChangeType": "Addition",
+          "Description": "Added the **appRoleAssignmentRequired** property to the [agentIdentity](https://learn.microsoft.com/en-us/graph/api/resources/agentidentity?view=graph-rest-beta) resource.",
+          "Target": "agentIdentity"
+        }
+      ],
+      "Id": "c327d619-2141-4517-b546-a89ffaf3929e",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-06-23T07:49:43.0000000Z",
+      "WorkloadArea": "Agents",
+      "SubArea": "Agent identities"
     }
   ]
 }

@@ -306,9 +306,10 @@
             "browseQueryResponseItem",
             "notificationRecipients",
             "protectionPolicyArtifactCount",
+            "retentionSetting",
             "restorePointSearchResponse",
             "restorePointSearchResult",
-            "retentionSetting",
+            "restoreSearchArtifactQueryExpression",
             "serviceStatus",
             "timePeriod"
           ]
@@ -2789,6 +2790,13 @@
                 "correlationError",
                 "identityInfo"
               ]
+            },
+            {
+              "name": "Identity analytics (preview)",
+              "resources": [
+                "groupAnalytics",
+                "identityAnalyticsRoot"
+              ]
             }
           ]
         },
@@ -2815,7 +2823,9 @@
             "office365GroupsActivityFileCounts",
             "office365GroupsActivityGroupCounts",
             "office365GroupsActivityStorage",
-            "office365ServicesUserCounts"
+            "office365ServicesUserCounts",
+            "sharePointApiUsageDataPoint",
+            "sharePointApiUsageReport"
           ]
         },
         {

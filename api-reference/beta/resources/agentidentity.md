@@ -67,6 +67,7 @@ This resource is an open type that allows additional properties beyond those doc
 |odata.type|String| `#microsoft.graph.agentIdentity`. Distinguishes this object as an agent identity. Can be used to identify this object as an agent identity, instead of another kind of service principal. |
 |accountEnabled|Boolean|`true` if the agent identity account is enabled; otherwise, `false`. If set to `false`, then no users are able to sign in to this app, even if they're assigned to it. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |agentIdentityBlueprintId|String|The **appId** of the agent identity blueprint that defines the configuration for this agent identity.|
+|appRoleAssignmentRequired|Boolean|Specifies whether users or other service principals need to be granted an app role assignment for this agent identity before users can sign in or apps can get tokens. The default value is `false`. Not nullable. Inherited from [servicePrincipal](../resources/serviceprincipal.md). Supports `$filter` (`eq`, `ne`, `NOT`).|
 |customSecurityAttributes|[customSecurityAttributeValue](../resources/customsecurityattributevalue.md)|An open complex type that holds the value of a custom security attribute that is assigned to a directory object. Nullable. Requires `$select` to retrieve. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |createdByAppId|String|The **appId** of the application that created this agent identity. Set internally by Microsoft Entra ID. Read-only. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |createdDateTime|DateTimeOffset|The date and time the agent identity was created. Read-only. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
@@ -106,6 +107,7 @@ The following JSON representation shows the resource type. Only a subset of all 
   "id": "String (identifier)",
   "accountEnabled": "Boolean",
   "agentIdentityBlueprintId": "String",
+  "appRoleAssignmentRequired": "Boolean",
   "createdByAppId": "String",
   "createdDateTime": "String (timestamp)",
   "disabledByMicrosoftStatus": "String",

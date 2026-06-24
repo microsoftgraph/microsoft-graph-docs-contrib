@@ -14,6 +14,8 @@ items:
       href: ../../resources/security.md
     - name: Run hunting query
       href: ../../api/security-security-runhuntingquery.md
+    - name: Get hunting schema
+      href: ../../api/security-security-gethuntingschema.md
   - name: Hunting query results
     href: ../../resources/security-huntingqueryresults.md
   - name: Hunting row result
@@ -292,6 +294,20 @@ items:
       href: ../../resources/security-auditinfo.md
 - name: Custom detection rules
   items:
+  - name: Rules root
+    items:
+    - name: Rules root
+      href: ../../resources/security-rulesroot.md
+    - name: List
+      href: ../../api/security-rulesroot-list-detectionrules.md
+    - name: Create
+      href: ../../api/security-rulesroot-post-detectionrules.md
+    - name: Get
+      href: ../../api/security-detectionrule-get.md
+    - name: Update
+      href: ../../api/security-detectionrule-update.md
+    - name: Delete
+      href: ../../api/security-rulesroot-delete-detectionrules.md
   - name: Detection rule
     items:
     - name: Detection rule

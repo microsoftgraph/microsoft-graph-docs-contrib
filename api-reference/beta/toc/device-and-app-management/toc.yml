@@ -432,6 +432,8 @@ items:
       href: ../../api/cloudpcprovisioningpolicy-retrievepolicyapplyactionresult.md
     - name: Retrieve policy apply schedule
       href: ../../api/cloudpcprovisioningpolicy-retrievepolicyapplyschedule.md
+    - name: Retrieve policy update status result
+      href: ../../api/cloudpcprovisioningpolicy-retrievepolicyupdatestatusresult.md
   - name: Cloud PC report
     items:
     - name: Cloud PC report
@@ -733,6 +735,8 @@ items:
       href: ../../resources/cloudpconpremisesconnectionsubnetIpdetail.md
     - name: Cloud PC partner agent install result
       href: ../../resources/cloudpcpartneragentinstallresult.md
+    - name: Cloud PC policy pending apply status result
+      href: ../../resources/cloudpcpolicypendingapplystatusresult.md
     - name: Cloud PC pool capability configuration
       href: ../../resources/cloudpcpoolcapabilityconfiguration.md
     - name: Cloud PC provisioning policy assignment

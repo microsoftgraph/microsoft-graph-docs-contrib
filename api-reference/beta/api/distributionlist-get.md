@@ -61,6 +61,7 @@ If successful, this method returns a `200 OK` response code and a [distributionL
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_distributionlist"
@@ -69,6 +70,12 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/me/distributionLists/AAMkAGI2THVSAAA=
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-distributionlist-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

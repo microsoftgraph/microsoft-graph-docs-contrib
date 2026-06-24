@@ -3,6 +3,72 @@
     {
       "ChangeList": [
         {
+          "Id": "1fa63eb3-bbbb-4cb6-bb79-69f28c34c4ce",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityAnalyticsRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityAnalyticsRoot](https://learn.microsoft.com/en-us/graph/api/resources/identityanalyticsroot?view=graph-rest-beta) resource.",
+          "Target": "identityAnalyticsRoot"
+        },
+        {
+          "Id": "1fa63eb3-bbbb-4cb6-bb79-69f28c34c4ce",
+          "ApiChange": "Resource",
+          "ChangedApiName": "groupAnalytics",
+          "ChangeType": "Addition",
+          "Description": "Added the [groupAnalytics](https://learn.microsoft.com/en-us/graph/api/resources/groupanalytics?view=graph-rest-beta) resource.",
+          "Target": "groupAnalytics"
+        },
+        {
+          "Id": "1fa63eb3-bbbb-4cb6-bb79-69f28c34c4ce",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "groupTypeEnum",
+          "ChangeType": "Addition",
+          "Description": "Added the **groupTypeEnum** enumeration type.",
+          "Target": "groupTypeEnum"
+        },
+        {
+          "Id": "1fa63eb3-bbbb-4cb6-bb79-69f28c34c4ce",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "identityAnalytics",
+          "ChangeType": "Addition",
+          "Description": "Added the **identityAnalytics** relationship to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportroot?view=graph-rest-beta) resource.",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "1fa63eb3-bbbb-4cb6-bb79-69f28c34c4ce",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "groups",
+          "ChangeType": "Addition",
+          "Description": "Added the **groups** relationship to the [identityAnalyticsRoot](https://learn.microsoft.com/en-us/graph/api/resources/identityanalyticsroot?view=graph-rest-beta) resource.",
+          "Target": "identityAnalyticsRoot"
+        },
+        {
+          "Id": "1fa63eb3-bbbb-4cb6-bb79-69f28c34c4ce",
+          "ApiChange": "Method",
+          "ChangedApiName": "List groupAnalytics",
+          "ChangeType": "Addition",
+          "Description": "Added the [List groupAnalytics](https://learn.microsoft.com/en-us/graph/api/identityanalyticsroot-list-groups?view=graph-rest-beta) method to the [groupAnalytics](https://learn.microsoft.com/en-us/graph/api/resources/groupanalytics?view=graph-rest-beta) resource.",
+          "Target": "groupAnalytics"
+        },
+        {
+          "Id": "1fa63eb3-bbbb-4cb6-bb79-69f28c34c4ce",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get groupAnalytics",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get groupAnalytics](https://learn.microsoft.com/en-us/graph/api/groupanalytics-get?view=graph-rest-beta) method to the [groupAnalytics](https://learn.microsoft.com/en-us/graph/api/resources/groupanalytics?view=graph-rest-beta) resource.",
+          "Target": "groupAnalytics"
+        }
+      ],
+      "Id": "1fa63eb3-bbbb-4cb6-bb79-69f28c34c4ce",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-06-25T22:00:52.5681182Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "09d9ee90-6f2a-4eac-8072-5d539b69492f",
           "ApiChange": "Member",
           "ChangedApiName": "passwordSubmit",
@@ -260,7 +326,7 @@
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
     },
-     {
+    {
       "ChangeList": [
         {
           "Id": "e47691c4-0416-4bcd-be07-f706d5d5350d",

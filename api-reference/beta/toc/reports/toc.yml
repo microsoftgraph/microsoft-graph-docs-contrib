@@ -752,6 +752,10 @@ items:
         href: ../../api/reportroot-getsharepointsiteusagestorage.md
       - name: Get pages
         href: ../../api/reportroot-getsharepointsiteusagepages.md
+    - name: SharePoint API usage
+      items:
+      - name: Get SharePoint API usage
+        href: ../../api/reportroot-getsharepointapiusage.md
     - name: Skype for Business activity
       items:
       - name: Get user detail
@@ -836,6 +840,10 @@ items:
       href: ../../resources/office365groupsactivitystorage.md
     - name: Office 365 services user counts
       href: ../../resources/office365servicesusercounts.md
+    - name: Share point API usage data point
+      href: ../../resources/sharepointapiusagedatapoint.md
+    - name: Share point API usage report
+      href: ../../resources/sharepointapiusagereport.md
 - name: Microsoft Defender for Office 365 security reports
   items:
   - name: Overview
