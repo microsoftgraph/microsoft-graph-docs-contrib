@@ -25,7 +25,7 @@ Organizations often need to consolidate or reorganize Microsoft 365 environments
 
 ## Key features
 
-- **Create migration jobs**: Define workloads (Teams, Exchange, ODSP) and resources to migrate.
+- **Create migration jobs**: Define workloads (Teams, Exchange, OneDrive and SharePoint) and resources to migrate.
 - **Retrieve migration jobs**: Get details for all jobs or a specific job.
 - **Update migration jobs**: Modify the `completeAfterDateTime` property.
 - **Cancel migration jobs or specific users**: Stop migrations in progress.
