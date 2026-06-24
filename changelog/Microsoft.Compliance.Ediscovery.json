@@ -3,6 +3,42 @@
     {
       "ChangeList": [
         {
+          "Id": "bd38883e-6758-48cb-a74b-2c7ad2ec95c9",
+          "ApiChange": "Member",
+          "ChangedApiName": "cloudNativeHtmlConversion",
+          "ChangeType": "Addition",
+          "Description": "Added the `cloudNativeHtmlConversion` member to the [additionalDataOptions](https://learn.microsoft.com/graph/api/resources/security-ediscoveryaddtoreviewsetoperation?view=graph-rest-beta#additionaldataoptions-values) enumeration.",
+          "Target": "additionalDataOptions"
+        }
+      ],
+      "Id": "bd38883e-6758-48cb-a74b-2c7ad2ec95c9",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-06-24T17:33:16.7805181Z",
+      "WorkloadArea": "Security",
+      "SubArea": "eDiscovery"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "bd38883e-6758-48cb-a74b-2c7ad2ec95c9",
+          "ApiChange": "Member",
+          "ChangedApiName": "cloudNativeHtmlConversion",
+          "ChangeType": "Addition",
+          "Description": "Added the `cloudNativeHtmlConversion` member to the [additionalDataOptions](https://learn.microsoft.com/graph/api/resources/security-ediscoveryaddtoreviewsetoperation#additionaldataoptions-values) enumeration.",
+          "Target": "additionalDataOptions"
+        }
+      ],
+      "Id": "bd38883e-6758-48cb-a74b-2c7ad2ec95c9",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-06-24T17:33:16.7805181Z",
+      "WorkloadArea": "Security",
+      "SubArea": "eDiscovery"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "e45f1bb8-e874-49b1-8055-967c42bf53a3",
           "ApiChange": "Member",
           "ChangedApiName": "optimizedPartitionSize",
