@@ -306,9 +306,10 @@
             "browseQueryResponseItem",
             "notificationRecipients",
             "protectionPolicyArtifactCount",
+            "retentionSetting",
             "restorePointSearchResponse",
             "restorePointSearchResult",
-            "retentionSetting",
+            "restoreSearchArtifactQueryExpression",
             "serviceStatus",
             "timePeriod"
           ]
@@ -695,6 +696,7 @@
             "cloudPcOnPremisesConnectionStatusDetails",
             "cloudPcOnPremisesConnectionSubnetIpDetail",
             "cloudPcPartnerAgentInstallResult",
+            "cloudPcPolicyPendingApplyStatusResult",
             "cloudPcPoolCapabilityConfiguration",
             "cloudPcProvisioningPolicyAssignment",
             "cloudPcProvisioningPolicyAutopatch",
@@ -905,6 +907,7 @@
             "microsoft.graph.windowsUpdates.softwareUpdateFilter",
             "microsoft.graph.windowsUpdates.updatableAssetEnrollment",
             "microsoft.graph.windowsUpdates.updatableAssetError",
+            "microsoft.graph.windowsUpdates.updateCategoryEnrollmentInformation",
             "microsoft.graph.windowsUpdates.updateManagementEnrollment",
             "microsoft.graph.windowsUpdates.userExperienceSettings",
             "microsoft.graph.windowsUpdates.windowsUpdateFilter"
@@ -1464,6 +1467,7 @@
                 "accessPackageResourceRole",
                 "accessPackageResource",
                 "customDataProvidedResource",
+                "customDataProvidedResourceAccessReviewUploadSession",
                 "accessPackageResourceEnvironment",
                 "accessPackageResourceRequest",
                 "accessPackageAssignmentRequestWorkflowExtension",
@@ -1548,8 +1552,12 @@
                 "verifiedCredentialClaims",
                 "verifiedCredentialData",
                 "customDataProvidedResourceUploadSessionRequest",
-                "accessReviewDataUploadTriggerCallbackData",
-                "customDataProvidedResourceFile"
+                "customDataProvidedResourceFile",
+                "microsoft.graph.customDataProvidedResourcePayloads.accessReviewContextData",
+                "microsoft.graph.customDataProvidedResourcePayloads.accessReviewContextDataBase",
+                "microsoft.graph.customDataProvidedResourcePayloads.applyDecisionContextData",
+                "microsoft.graph.customDataProvidedResourcePayloads.calloutRequest",
+                "microsoft.graph.customDataProvidedResourcePayloads.data"
               ]
             },
             {
@@ -2787,6 +2795,13 @@
                 "correlationError",
                 "identityInfo"
               ]
+            },
+            {
+              "name": "Identity analytics (preview)",
+              "resources": [
+                "groupAnalytics",
+                "identityAnalyticsRoot"
+              ]
             }
           ]
         },
@@ -2813,7 +2828,9 @@
             "office365GroupsActivityFileCounts",
             "office365GroupsActivityGroupCounts",
             "office365GroupsActivityStorage",
-            "office365ServicesUserCounts"
+            "office365ServicesUserCounts",
+            "sharePointApiUsageDataPoint",
+            "sharePointApiUsageReport"
           ]
         },
         {

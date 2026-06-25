@@ -5,7 +5,7 @@ author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
-ms.date: 05/18/2026
+ms.date: 06/01/2026
 ---
 
 # cloudPcProvisioningPolicy: apply
@@ -51,8 +51,9 @@ The following table shows the parameters that you can use with this method.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
+|isForceUserLogoffEnabled|Boolean|For *Frontline shared* only. Indicates whether active Cloud PC sessions are forcibly signed out when reprovisioning begins. When `true`, connected users are immediately signed out and reprovisioning starts right away; **reservePercentage** must be set to `0` when this parameter is `true`, otherwise the request fails. When `false`, reprovisioning waits until the user disconnects. The default value is `false`. Optional.|
 |policySettings|cloudPcPolicySettingType|The target property of the apply action. The possible values are: `region`, `singleSignOn`, `unknownFutureValue`. The default value is `region`. This action applies `region` as a value if this parameter is `null`.|
-|reservePercentage|Int32|For `Frontline shared` only. The percentage of Cloud PCs to keep available. Administrators can set this property to a value from 0 to 99. Cloud PCs are reprovisioned only when there are no active and connected Cloud PC users.|
+|reservePercentage|Int32|For *Frontline shared* only. The percentage of Cloud PCs to keep available. Administrators can set this property to a value from `0` to `99`. Cloud PCs are reprovisioned only when there are no active and connected Cloud PC users.|
 
 ## Response
 
@@ -144,6 +145,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provision
 Content-Type: application/json
 
 {
+  "isForceUserLogoffEnabled": false,
   "reservePercentage": 80
 }
 ```
@@ -170,6 +172,71 @@ Content-Type: application/json
 
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/apply-cloudpcprovisioningpolicy-frontline-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 3: Reprovision frontline shared Cloud PCs and force user sign-out
+
+The following example shows how to immediately reprovision frontline shared Cloud PCs under a specified provisioning policy by forcibly signing out active sessions. When **isForceUserLogoffEnabled** is `true`, **reservePercentage** must be set to `0`.
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "apply_cloudpcprovisioningpolicy_frontline_forcelogoff"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/provisioningPolicies/1d164206-bf41-4fd2-8424-a3192d39ffff/apply
+Content-Type: application/json
+
+{
+  "isForceUserLogoffEnabled": true,
+  "reservePercentage": 0
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/apply-cloudpcprovisioningpolicy-frontline-forcelogoff-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/apply-cloudpcprovisioningpolicy-frontline-forcelogoff-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/apply-cloudpcprovisioningpolicy-frontline-forcelogoff-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/apply-cloudpcprovisioningpolicy-frontline-forcelogoff-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/apply-cloudpcprovisioningpolicy-frontline-forcelogoff-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/apply-cloudpcprovisioningpolicy-frontline-forcelogoff-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

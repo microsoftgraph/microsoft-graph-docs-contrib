@@ -25,7 +25,7 @@ None.
 |Property|Type|Description|
 |:---|:---|:---|
 |action|[microsoft.graph.security.caseAction](../resources/security-caseoperation.md#caseaction-values)| The type of action the operation represents. The possible values are: `contentExport`, `applyTags`, `convertToPdf`, `index`, `estimateStatistics`, `addToReviewSet`, `holdUpdate`, `unknownFutureValue`, `purgeData`, `exportReport`, `exportResult`, `holdPolicySync`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `purgeData`, `exportReport`, `exportResult`, `holdPolicySync`. Inherited from [caseOperation](../resources/security-caseoperation.md).|
-|additionalDataOptions|[microsoft.graph.security.additionalDataOptions](#additionaldataoptions-values)| The options to add items to the review set. The possible values are: `allVersions`, `linkedFiles`, `unknownFutureValue`, `advancedIndexing`, `listAttachments`, `htmlTranscripts`, `messageConversationExpansion`, `locationsWithoutHits`, `allItemsInFolder`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `advancedIndexing`, `listAttachments`, `htmlTranscripts`, `messageConversationExpansion`, `locationsWithoutHits`, `allItemsInFolder`.|
+|additionalDataOptions|[microsoft.graph.security.additionalDataOptions](#additionaldataoptions-values)| The options to add items to the review set. The possible values are: `allVersions`, `linkedFiles`, `unknownFutureValue`, `advancedIndexing`, `listAttachments`, `htmlTranscripts`, `messageConversationExpansion`, `locationsWithoutHits`, `allItemsInFolder`, `cloudNativeHtmlConversion`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `advancedIndexing`, `listAttachments`, `htmlTranscripts`, `messageConversationExpansion`, `locationsWithoutHits`, `allItemsInFolder`, `cloudNativeHtmlConversion`.|
 |cloudAttachmentVersion|microsoft.graph.security.cloudAttachmentVersion| Specifies the number of most recent versions of cloud attachments to collect. The possible values are: `latest`, `recent10`, `recent100`, `all`, `unknownFutureValue`. |
 |completedDateTime|DateTimeOffset| The date and time the operation was completed. Inherited from [caseOperation](../resources/security-caseoperation.md).|
 |createdBy|[identitySet](../resources/identityset.md)| The user that created the operation. Inherited from [caseOperation](../resources/security-caseoperation.md).|
@@ -51,6 +51,7 @@ None.
 |messageConversationExpansion| Include conversation context around a hit.|
 |locationsWithoutHits| Look for unindexed items even in locations without hits.|
 |allItemsInFolder| Include all content in the folder if the folder itself matches a query.|
+|cloudNativeHtmlConversion| Convert items to cloud-native HTML format during review set collection.|
 
 ### itemsToInclude values
 

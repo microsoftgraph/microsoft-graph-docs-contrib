@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let detectionRule = await client.api('/security/rules/detectionRules/7506')
+let detectionRule = await client.api('/security/rules/detectionRules/office-encoded-powershell')
 	.version('beta')
 	.get();
 

@@ -53,6 +53,7 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_distributionlist"
@@ -61,6 +62,12 @@ The following example shows a request.
 ``` http
 DELETE https://graph.microsoft.com/beta/me/distributionLists/AAMkAGI2THVSAAA=
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-distributionlist-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

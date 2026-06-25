@@ -48,7 +48,7 @@ The following table lists the properties that you can set when you add a **teamw
 
 | Property | Type | Description |
 |:---------|:-----|:------------|
-| id | String | The conversation ID of the chat, channel, meeting, or community to add to the section. For community items, the service automatically normalizes the ID to the `19:{id}@EngageCommunity` format. Required. |
+| id | String | The conversation ID of the chat, channel, meeting, or community to add to the section. For a community (Viva Engage) item, you can provide either the bare community ID returned when you [list communities](../api/employeeexperience-list-communities.md) (for example, `eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIxOTAzMzYyMTIyMTAifQ`) or the full `19:{communityId}@EngageCommunity` thread ID. When you provide a bare community ID, the service automatically normalizes it to the `19:{communityId}@EngageCommunity` format; an ID that already includes the thread prefix is used as-is. Required. |
 
 ## Response
 
@@ -73,9 +73,13 @@ The following errors are possible.
 
 ## Examples
 
-### Request
+### Example 1: Add a chat to a section
 
-The following example shows a request to add a chat to a section.
+The following example shows how to add a chat to a section.
+
+#### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -119,7 +123,7 @@ If-Match: "1742515200"
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -141,6 +145,82 @@ Location: https://graph.microsoft.com/beta/users/10f8c3a6-3e2a-4e8b-9c7d-5a4b6c8
   "id": "19:d5b2c3a4-e6f7-8901-abcd-ef3456789012@thread.v2",
   "itemType": "chat",
   "createdDateTime": "2026-03-08T10:00:00Z",
+  "lastModifiedDateTime": null
+}
+```
+
+### Example 2: Add a community to a section
+
+The following example shows how to add a Viva Engage community to a section. The request provides the bare community ID returned when you [list communities](../api/employeeexperience-list-communities.md). The service normalizes the community ID to the `19:{communityId}@EngageCommunity` format that is returned in the response.
+
+#### Request
+
+The following example shows a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "add_teamworksectionitem_community",
+  "sampleKeys": ["10f8c3a6-3e2a-4e8b-9c7d-5a4b6c8d9e0f", "a1b2c3d4-e5f6-7890-abcd-ef1234567890"]
+}-->
+```http
+POST https://graph.microsoft.com/beta/users/10f8c3a6-3e2a-4e8b-9c7d-5a4b6c8d9e0f/teamwork/sections/a1b2c3d4-e5f6-7890-abcd-ef1234567890/items
+Content-type: application/json
+If-Match: "1742515210"
+
+{
+  "id": "eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIxOTAzMzYyMTIyMTAifQ"
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/add-teamworksectionitem-community-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/add-teamworksectionitem-community-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/add-teamworksectionitem-community-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/add-teamworksectionitem-community-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/add-teamworksectionitem-community-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/add-teamworksectionitem-community-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response. The **id** property is returned in the normalized `19:{communityId}@EngageCommunity` format.
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.teamworkSectionItem"
+}-->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Location: https://graph.microsoft.com/beta/users/10f8c3a6-3e2a-4e8b-9c7d-5a4b6c8d9e0f/teamwork/sections/a1b2c3d4-e5f6-7890-abcd-ef1234567890/items/19:eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIxOTAzMzYyMTIyMTAifQ@EngageCommunity
+
+{
+  "@odata.type": "#microsoft.graph.teamworkSectionItem",
+  "@odata.etag": "\"1742515220\"",
+  "id": "19:eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIxOTAzMzYyMTIyMTAifQ@EngageCommunity",
+  "itemType": "community",
+  "createdDateTime": "2026-03-08T10:05:00Z",
   "lastModifiedDateTime": null
 }
 ```

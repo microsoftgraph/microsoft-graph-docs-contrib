@@ -502,6 +502,8 @@ items:
       href: ../../resources/restorepointsearchresponse.md
     - name: Restore point search result
       href: ../../resources/restorepointsearchresult.md
+    - name: Restore search artifact query expression
+      href: ../../resources/restoresearchartifactqueryexpression.md
     - name: Retention setting
       href: ../../resources/retentionsetting.md
     - name: Service status

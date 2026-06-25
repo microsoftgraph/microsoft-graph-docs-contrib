@@ -36,6 +36,15 @@ Namespace: microsoft.graph.identityGovernance
 |failed|
 |unknownFutureValue|
 
+### customDataProvidedResourceUploadStatus values
+
+|Member|
+|:---|
+|active|
+|complete|
+|expired|
+|unknownFutureValue|
+
 ### customTaskExtensionReplyMode values 
 
 |Member|
@@ -113,6 +122,15 @@ Namespace: microsoft.graph.identityGovernance
 |:---|
 |add|
 |remove|
+|unknownFutureValue|
+
+### principalType values
+
+|Member|
+|:---|
+|user|
+|group|
+|servicePrincipal|
 |unknownFutureValue|
 
 

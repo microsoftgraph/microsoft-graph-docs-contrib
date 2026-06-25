@@ -20,6 +20,7 @@ Connects Microsoft security products, services, and partners to streamline secur
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Run hunting query](../api/security-security-runhuntingquery.md)|[microsoft.graph.security.huntingQueryResults](../resources/security-huntingqueryresults.md)|Queries a specified set of event, activity, or entity data supported by Microsoft 365 Defender to proactively look for specific threats in your environment.|
+|[Get hunting schema](../api/security-security-gethuntingschema.md)|[microsoft.graph.security.huntingSchemaResult](../resources/security-huntingschemaresult.md)|Retrieves the advanced hunting schema accessible to the signed-in user, including the tables and functions the user is authorized to query and invoke.|
 
 ## Properties
 None.
