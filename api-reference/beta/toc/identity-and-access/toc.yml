@@ -1377,8 +1377,12 @@ items:
         href: ../../resources/accesspackagetextinputquestion.md
       - name: Access package user directory attribute store
         href: ../../resources/accesspackageuserdirectoryattributestore.md
-      - name: Access review data upload trigger callback data
-        href: ../../resources/accessreviewdatauploadtriggercallbackdata.md
+      - name: Access review context data
+        href: ../../resources/customdataprovidedresourcepayloads-accessreviewcontextdata.md
+      - name: Access review context data base
+        href: ../../resources/customdataprovidedresourcepayloads-accessreviewcontextdatabase.md
+      - name: Apply decision context data
+        href: ../../resources/customdataprovidedresourcepayloads-applydecisioncontextdata.md
       - name: Approval settings
         href: ../../resources/approvalsettings.md
       - name: Approval stage
@@ -1387,6 +1391,8 @@ items:
         href: ../../resources/assignmentreviewsettings.md
       - name: Azure active directory tenant
         href: ../../resources/azureactivedirectorytenant.md
+      - name: Callout request
+        href: ../../resources/customdataprovidedresourcepayloads-calloutrequest.md
       - name: Connected organization members
         href: ../../resources/connectedorganizationmembers.md
       - name: Connection info
@@ -1417,6 +1423,8 @@ items:
         href: ../../resources/customextensionhandlerinstance.md
       - name: Custom extension stage setting
         href: ../../resources/customextensionstagesetting.md
+      - name: Data
+        href: ../../resources/customdataprovidedresourcepayloads-data.md
       - name: Domain identity source
         href: ../../resources/domainidentitysource.md
       - name: Entitlement management
