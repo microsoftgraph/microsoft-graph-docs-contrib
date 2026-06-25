@@ -769,7 +769,13 @@ items:
       - name: Delete
         href: ../../api/accesspackageassignmentworkflowextension-delete.md
     - name: Access package subject
-      href: ../../resources/accesspackagesubject.md
+      items:
+      - name: Access package subject
+        href: ../../resources/accesspackagesubject.md
+      - name: Get
+        href: ../../api/accesspackagesubject-get.md
+      - name: Update
+        href: ../../api/accesspackagesubject-update.md
     - name: Access package suggestion
       items:
       - name: Access package suggestion

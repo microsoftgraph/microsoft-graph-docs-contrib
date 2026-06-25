@@ -1161,6 +1161,8 @@ items:
         href: ../../resources/customdataprovidedresource.md
       - name: Create
         href: ../../api/customdataprovidedresource-post-uploadsessions.md
+    - name: Custom data provided resource access review upload session
+      href: ../../resources/customdataprovidedresourceaccessreviewuploadsession.md
     - name: Access package resource environment
       items:
       - name: Access package resource environment
