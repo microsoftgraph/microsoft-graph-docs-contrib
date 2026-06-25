@@ -1,4 +1,4 @@
-﻿{
+{
   "changelog": [
     {
       "ChangeList": [
@@ -654,7 +654,7 @@
       "WorkloadArea": "Security",
       "SubArea": ""
     },
-        {
+    {
       "ChangeList": [
         {
           "Id": "434ab3d3-04a9-4ee4-b70d-31e49940e98d",
@@ -717,6 +717,240 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2026-02-05T08:11:41.618548Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "dbf1a1ed-b3f2-476b-aa30-ee40ca5e269f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "security",
+          "ChangeType": "Addition",
+          "Description": "Added the [security](https://learn.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-1.0) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "dbf1a1ed-b3f2-476b-aa30-ee40ca5e269f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "antispamDirectionality",
+          "ChangeType": "Addition",
+          "Description": "Added the **antispamDirectionality** enumeration type.",
+          "Target": "antispamDirectionality"
+        },
+        {
+          "Id": "dbf1a1ed-b3f2-476b-aa30-ee40ca5e269f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "deliveryAction",
+          "ChangeType": "Addition",
+          "Description": "Added the **deliveryAction** enumeration type.",
+          "Target": "deliveryAction"
+        },
+        {
+          "Id": "dbf1a1ed-b3f2-476b-aa30-ee40ca5e269f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "deliveryLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the **deliveryLocation** enumeration type.",
+          "Target": "deliveryLocation"
+        },
+        {
+          "Id": "dbf1a1ed-b3f2-476b-aa30-ee40ca5e269f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "eventSource",
+          "ChangeType": "Addition",
+          "Description": "Added the **eventSource** enumeration type.",
+          "Target": "eventSource"
+        },
+        {
+          "Id": "dbf1a1ed-b3f2-476b-aa30-ee40ca5e269f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "remediationAction",
+          "ChangeType": "Addition",
+          "Description": "Added the **remediationAction** enumeration type.",
+          "Target": "remediationAction"
+        },
+        {
+          "Id": "dbf1a1ed-b3f2-476b-aa30-ee40ca5e269f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "remediationSeverity",
+          "ChangeType": "Addition",
+          "Description": "Added the **remediationSeverity** enumeration type.",
+          "Target": "remediationSeverity"
+        },
+        {
+          "Id": "dbf1a1ed-b3f2-476b-aa30-ee40ca5e269f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "threatType",
+          "ChangeType": "Addition",
+          "Description": "Added the **threatType** enumeration type.",
+          "Target": "threatType"
+        },
+        {
+          "Id": "dbf1a1ed-b3f2-476b-aa30-ee40ca5e269f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "timelineEventType",
+          "ChangeType": "Addition",
+          "Description": "Added the **timelineEventType** enumeration type.",
+          "Target": "timelineEventType"
+        },
+        {
+          "Id": "dbf1a1ed-b3f2-476b-aa30-ee40ca5e269f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "verdictCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the **verdictCategory** enumeration type.",
+          "Target": "verdictCategory"
+        },
+        {
+          "Id": "dbf1a1ed-b3f2-476b-aa30-ee40ca5e269f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "analyzedEmailAttachment",
+          "ChangeType": "Addition",
+          "Description": "Added the [analyzedEmailAttachment](https://learn.microsoft.com/en-us/graph/api/resources/security-analyzedEmailAttachment?view=graph-rest-1.0) resource.",
+          "Target": "analyzedEmailAttachment"
+        },
+        {
+          "Id": "dbf1a1ed-b3f2-476b-aa30-ee40ca5e269f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "analyzedEmailAuthenticationDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [analyzedEmailAuthenticationDetail](https://learn.microsoft.com/en-us/graph/api/resources/security-analyzedEmailAuthenticationDetail?view=graph-rest-1.0) resource.",
+          "Target": "analyzedEmailAuthenticationDetail"
+        },
+        {
+          "Id": "dbf1a1ed-b3f2-476b-aa30-ee40ca5e269f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "analyzedEmailDeliveryDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [analyzedEmailDeliveryDetail](https://learn.microsoft.com/en-us/graph/api/resources/security-analyzedEmailDeliveryDetail?view=graph-rest-1.0) resource.",
+          "Target": "analyzedEmailDeliveryDetail"
+        },
+        {
+          "Id": "dbf1a1ed-b3f2-476b-aa30-ee40ca5e269f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "analyzedEmailDlpRuleInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [analyzedEmailDlpRuleInfo](https://learn.microsoft.com/en-us/graph/api/resources/security-analyzedEmailDlpRuleInfo?view=graph-rest-1.0) resource.",
+          "Target": "analyzedEmailDlpRuleInfo"
+        },
+        {
+          "Id": "dbf1a1ed-b3f2-476b-aa30-ee40ca5e269f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "analyzedEmailExchangeTransportRuleInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [analyzedEmailExchangeTransportRuleInfo](https://learn.microsoft.com/en-us/graph/api/resources/security-analyzedEmailExchangeTransportRuleInfo?view=graph-rest-1.0) resource.",
+          "Target": "analyzedEmailExchangeTransportRuleInfo"
+        },
+        {
+          "Id": "dbf1a1ed-b3f2-476b-aa30-ee40ca5e269f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "analyzedEmailRecipientDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [analyzedEmailRecipientDetail](https://learn.microsoft.com/en-us/graph/api/resources/security-analyzedEmailRecipientDetail?view=graph-rest-1.0) resource.",
+          "Target": "analyzedEmailRecipientDetail"
+        },
+        {
+          "Id": "dbf1a1ed-b3f2-476b-aa30-ee40ca5e269f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "analyzedEmailSenderDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [analyzedEmailSenderDetail](https://learn.microsoft.com/en-us/graph/api/resources/security-analyzedEmailSenderDetail?view=graph-rest-1.0) resource.",
+          "Target": "analyzedEmailSenderDetail"
+        },
+        {
+          "Id": "dbf1a1ed-b3f2-476b-aa30-ee40ca5e269f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "analyzedEmailUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the [analyzedEmailUrl](https://learn.microsoft.com/en-us/graph/api/resources/security-analyzedEmailUrl?view=graph-rest-1.0) resource.",
+          "Target": "analyzedEmailUrl"
+        },
+        {
+          "Id": "dbf1a1ed-b3f2-476b-aa30-ee40ca5e269f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "compromiseIndicator",
+          "ChangeType": "Addition",
+          "Description": "Added the [compromiseIndicator](https://learn.microsoft.com/en-us/graph/api/resources/security-compromiseIndicator?view=graph-rest-1.0) resource.",
+          "Target": "compromiseIndicator"
+        },
+        {
+          "Id": "dbf1a1ed-b3f2-476b-aa30-ee40ca5e269f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "detonationBehaviourDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [detonationBehaviourDetails](https://learn.microsoft.com/en-us/graph/api/resources/security-detonationBehaviourDetails?view=graph-rest-1.0) resource.",
+          "Target": "detonationBehaviourDetails"
+        },
+        {
+          "Id": "dbf1a1ed-b3f2-476b-aa30-ee40ca5e269f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "detonationChain",
+          "ChangeType": "Addition",
+          "Description": "Added the [detonationChain](https://learn.microsoft.com/en-us/graph/api/resources/security-detonationChain?view=graph-rest-1.0) resource.",
+          "Target": "detonationChain"
+        },
+        {
+          "Id": "dbf1a1ed-b3f2-476b-aa30-ee40ca5e269f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "detonationDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [detonationDetails](https://learn.microsoft.com/en-us/graph/api/resources/security-detonationDetails?view=graph-rest-1.0) resource.",
+          "Target": "detonationDetails"
+        },
+        {
+          "Id": "dbf1a1ed-b3f2-476b-aa30-ee40ca5e269f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "detonationObservables",
+          "ChangeType": "Addition",
+          "Description": "Added the [detonationObservables](https://learn.microsoft.com/en-us/graph/api/resources/security-detonationObservables?view=graph-rest-1.0) resource.",
+          "Target": "detonationObservables"
+        },
+        {
+          "Id": "dbf1a1ed-b3f2-476b-aa30-ee40ca5e269f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "threatDetectionDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [threatDetectionDetail](https://learn.microsoft.com/en-us/graph/api/resources/security-threatDetectionDetail?view=graph-rest-1.0) resource.",
+          "Target": "threatDetectionDetail"
+        },
+        {
+          "Id": "dbf1a1ed-b3f2-476b-aa30-ee40ca5e269f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "timelineEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [timelineEvent](https://learn.microsoft.com/en-us/graph/api/resources/security-timelineEvent?view=graph-rest-1.0) resource.",
+          "Target": "timelineEvent"
+        },
+        {
+          "Id": "dbf1a1ed-b3f2-476b-aa30-ee40ca5e269f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "analyzedEmail",
+          "ChangeType": "Addition",
+          "Description": "Added the [analyzedEmail](https://learn.microsoft.com/en-us/graph/api/resources/security-analyzedEmail?view=graph-rest-1.0) resource.",
+          "Target": "analyzedEmail"
+        },
+        {
+          "Id": "dbf1a1ed-b3f2-476b-aa30-ee40ca5e269f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "collaborationRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [collaborationRoot](https://learn.microsoft.com/en-us/graph/api/resources/security-collaborationRoot?view=graph-rest-1.0) resource.",
+          "Target": "collaborationRoot"
+        },
+        {
+          "Id": "dbf1a1ed-b3f2-476b-aa30-ee40ca5e269f",
+          "ApiChange": "Method",
+          "ChangedApiName": "remediate",
+          "ChangeType": "Addition",
+          "Description": "Added the [remediate](https://learn.microsoft.com/en-us/graph/api/security-analyzedEmail-remediate?view=graph-rest-1.0) method to the [analyzedEmail](https://learn.microsoft.com/en-us/graph/api/resources/security-analyzedEmail?view=graph-rest-1.0) resource.",
+          "Target": "analyzedEmail"
+        }
+      ],
+      "Id": "dbf1a1ed-b3f2-476b-aa30-ee40ca5e269f",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-06-24T06:21:42.919633Z",
       "WorkloadArea": "Security",
       "SubArea": ""
     }

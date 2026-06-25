@@ -110,14 +110,21 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
       "id": "fb95f07d-9e73-411d-99ab-7eca3a5122b1",
       "errors": [],
-      "enrollments": [
-        {
-          "@odata.type": "microsoft.graph.windowsUpdates.updateManagementEnrollment",
-          "updateCategory": "feature"
+      "enrollment": {
+        "feature": {
+          "enrollmentState": "enrolled",
+          "lastModifiedDateTime": "2024-01-31T23:34:50.3183446Z"
+        },
+        "quality": {
+          "enrollmentState": "notEnrolled",
+          "lastModifiedDateTime": "2024-03-31T23:34:50.3183446Z"
+        },
+        "driver": {
+          "enrollmentState": "enrolling",
+          "lastModifiedDateTime": "2024-03-31T23:34:50.3183446Z"
         }
-      ]
+      }
     }
   ]
 }
 ```
-

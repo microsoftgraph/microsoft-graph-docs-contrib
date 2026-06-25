@@ -36,6 +36,10 @@ $participants->setAttendees($attendeesArray);
 
 $requestBody->setParticipants($participants);
 $requestBody->setSubject('Create a meeting with customId provided');
+$additionalData = [
+'meetingType' => 'scheduled',
+];
+$requestBody->setAdditionalData($additionalData);
 
 $result = $graphServiceClient->me()->onlineMeetings()->createOrGet()->post($requestBody)->wait();
 

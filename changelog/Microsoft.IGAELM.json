@@ -1,6 +1,32 @@
 {
   "changelog": [
     {
+      "ChangeList": [
+        {
+          "Id": "bbaab297-9f65-4f97-8abb-a67a10d5a6e1",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get](https://learn.microsoft.com/en-us/graph/api/accesspackagesubject-get?view=graph-rest-1.0) method to the [accessPackageSubject](https://learn.microsoft.com/en-us/graph/api/resources/accesspackagesubject?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageSubject"
+        },
+        {
+          "Id": "bbaab297-9f65-4f97-8abb-a67a10d5a6e1",
+          "ApiChange": "Method",
+          "ChangedApiName": "Update",
+          "ChangeType": "Addition",
+          "Description": "Added the [Update](https://learn.microsoft.com/en-us/graph/api/accesspackagesubject-update?view=graph-rest-1.0) method to the [accessPackageSubject](https://learn.microsoft.com/en-us/graph/api/resources/accesspackagesubject?view=graph-rest-1.0) resource.",
+          "Target": "accessPackageSubject"
+        }
+      ],
+      "Id": "bbaab297-9f65-4f97-8abb-a67a10d5a6e1",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-06-23T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
       "Id": "a7e3b21c-5f0d-4a82-b6c9-1e8d4f7a3b5c",
       "Cloud": "Prod",
       "CreatedDateTime": "2026-05-12T00:00:00Z",

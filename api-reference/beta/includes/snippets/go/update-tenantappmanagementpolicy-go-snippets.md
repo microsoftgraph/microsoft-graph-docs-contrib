@@ -118,6 +118,141 @@ excludeActors.SetCustomSecurityAttributes(customSecurityAttributes)
 nonDefaultUriAddition.SetExcludeActors(excludeActors)
 identifierUris.SetNonDefaultUriAddition(nonDefaultUriAddition)
 applicationRestrictions.SetIdentifierUris(identifierUris)
+redirectUris := graphmodels.NewRedirectUriConfiguration()
+uriWithBlockedScheme := graphmodels.NewRedirectUriBlockedSchemeConfiguration()
+state := graphmodels.ENABLED_APPMANAGEMENTRESTRICTIONSTATE 
+uriWithBlockedScheme.SetState(&state) 
+blockedSchemes := []string {
+	"http",
+	"ftp",
+}
+uriWithBlockedScheme.SetBlockedSchemes(blockedSchemes)
+exemptFormats := []string {
+	"http://example.com/login",
+}
+uriWithBlockedScheme.SetExemptFormats(exemptFormats)
+web := graphmodels.NewRedirectUriPlatformBlockedSchemeConfiguration()
+blockedSchemes := []string {
+	"custom-ftps",
+}
+web.SetBlockedSchemes(blockedSchemes)
+uriWithBlockedScheme.SetWeb(web)
+spa := graphmodels.NewRedirectUriPlatformBlockedSchemeConfiguration()
+blockedSchemes := []string {
+	"myapp",
+}
+spa.SetBlockedSchemes(blockedSchemes)
+exemptFormats := []string {
+	"https://spa.example.com/auth",
+}
+spa.SetExemptFormats(exemptFormats)
+uriWithBlockedScheme.SetSpa(spa)
+publicClient := graphmodels.NewRedirectUriPlatformBlockedSchemeConfiguration()
+blockedSchemes := []string {
+	"msauth",
+}
+publicClient.SetBlockedSchemes(blockedSchemes)
+exemptFormats := []string {
+	"https://public.example.com/auth",
+}
+publicClient.SetExemptFormats(exemptFormats)
+uriWithBlockedScheme.SetPublicClient(publicClient)
+redirectUris.SetUriWithBlockedScheme(uriWithBlockedScheme)
+uriWithoutAllowedScheme := graphmodels.NewRedirectUriAllowedSchemeConfiguration()
+state := graphmodels.ENABLED_APPMANAGEMENTRESTRICTIONSTATE 
+uriWithoutAllowedScheme.SetState(&state) 
+allowedSchemes := []string {
+	"https",
+}
+uriWithoutAllowedScheme.SetAllowedSchemes(allowedSchemes)
+web := graphmodels.NewRedirectUriPlatformAllowedSchemeConfiguration()
+allowedSchemes := []string {
+	"https",
+}
+web.SetAllowedSchemes(allowedSchemes)
+uriWithoutAllowedScheme.SetWeb(web)
+spa := graphmodels.NewRedirectUriPlatformAllowedSchemeConfiguration()
+allowedSchemes := []string {
+	"https",
+	"msal",
+}
+spa.SetAllowedSchemes(allowedSchemes)
+uriWithoutAllowedScheme.SetSpa(spa)
+publicClient := graphmodels.NewRedirectUriPlatformAllowedSchemeConfiguration()
+allowedSchemes := []string {
+	"myapp",
+}
+publicClient.SetAllowedSchemes(allowedSchemes)
+uriWithoutAllowedScheme.SetPublicClient(publicClient)
+redirectUris.SetUriWithoutAllowedScheme(uriWithoutAllowedScheme)
+uriWithBlockedDomain := graphmodels.NewRedirectUriBlockedDomainConfiguration()
+state := graphmodels.ENABLED_APPMANAGEMENTRESTRICTIONSTATE 
+uriWithBlockedDomain.SetState(&state) 
+blockedDomains := []string {
+	"contoso-short.com",
+	"tempuri.org",
+}
+uriWithBlockedDomain.SetBlockedDomains(blockedDomains)
+web := graphmodels.NewRedirectUriPlatformBlockedDomainConfiguration()
+blockedDomains := []string {
+	"short.contoso.com",
+}
+web.SetBlockedDomains(blockedDomains)
+uriWithBlockedDomain.SetWeb(web)
+spa := graphmodels.NewRedirectUriPlatformBlockedDomainConfiguration()
+blockedDomains := []string {
+	"contoso.dev",
+}
+spa.SetBlockedDomains(blockedDomains)
+uriWithBlockedDomain.SetSpa(spa)
+publicClient := graphmodels.NewRedirectUriPlatformBlockedDomainConfiguration()
+blockedDomains := []string {
+	"mspreview.contoso.com",
+}
+publicClient.SetBlockedDomains(blockedDomains)
+uriWithBlockedDomain.SetPublicClient(publicClient)
+redirectUris.SetUriWithBlockedDomain(uriWithBlockedDomain)
+uriWithoutAllowedDomain := graphmodels.NewRedirectUriAllowedDomainConfiguration()
+state := graphmodels.ENABLED_APPMANAGEMENTRESTRICTIONSTATE 
+uriWithoutAllowedDomain.SetState(&state) 
+allowedDomains := []string {
+	"contoso.com",
+	"login.microsoftonline.com",
+}
+uriWithoutAllowedDomain.SetAllowedDomains(allowedDomains)
+web := graphmodels.NewRedirectUriPlatformAllowedDomainConfiguration()
+allowedDomains := []string {
+	"app.contoso.com",
+}
+web.SetAllowedDomains(allowedDomains)
+uriWithoutAllowedDomain.SetWeb(web)
+spa := graphmodels.NewRedirectUriPlatformAllowedDomainConfiguration()
+allowedDomains := []string {
+	"spa.contoso.com",
+}
+spa.SetAllowedDomains(allowedDomains)
+uriWithoutAllowedDomain.SetSpa(spa)
+publicClient := graphmodels.NewRedirectUriPlatformAllowedDomainConfiguration()
+allowedDomains := []string {
+	"app://contoso",
+}
+publicClient.SetAllowedDomains(allowedDomains)
+uriWithoutAllowedDomain.SetPublicClient(publicClient)
+redirectUris.SetUriWithoutAllowedDomain(uriWithoutAllowedDomain)
+uriWithWildcard := graphmodels.NewRedirectUriWildcardConfiguration()
+state := graphmodels.ENABLED_APPMANAGEMENTRESTRICTIONSTATE 
+uriWithWildcard.SetState(&state) 
+excludeFormats := graphmodels.NewRedirectUriWildcardExcludeFormats()
+excludeWildcardsInPath := true
+excludeFormats.SetExcludeWildcardsInPath(&excludeWildcardsInPath) 
+excludeWildcardsInPathWithDomains := []string {
+	"contoso.com",
+	"fabrikam.com",
+}
+excludeFormats.SetExcludeWildcardsInPathWithDomains(excludeWildcardsInPathWithDomains)
+uriWithWildcard.SetExcludeFormats(excludeFormats)
+redirectUris.SetUriWithWildcard(uriWithWildcard)
+applicationRestrictions.SetRedirectUris(redirectUris)
 requestBody.SetApplicationRestrictions(applicationRestrictions)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go

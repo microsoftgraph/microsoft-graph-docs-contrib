@@ -1,6 +1,48 @@
 {
   "changelog": [
     {
+      "ChangeList": [
+        {
+          "Id": "42f3dd5e-5a3f-4a28-8b51-f8f49e9018d6",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "granularRestoreItems",
+          "ChangeType": "Addition",
+          "Description": "Added the **granularRestoreItems** enumeration type.",
+          "Target": "granularRestoreItems"
+        },
+        {
+          "Id": "42f3dd5e-5a3f-4a28-8b51-f8f49e9018d6",
+          "ApiChange": "Property",
+          "ChangedApiName": "queryExpression",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **queryExpression** property of the [artifactQuery](https://learn.microsoft.com/en-us/graph/api/resources/artifactquery?view=graph-rest-beta) resource. Use the **structuredQueryExpression** property instead.",
+          "Target": "artifactQuery"
+        },
+        {
+          "Id": "42f3dd5e-5a3f-4a28-8b51-f8f49e9018d6",
+          "ApiChange": "Property",
+          "ChangedApiName": "structuredQueryExpression",
+          "ChangeType": "Addition",
+          "Description": "Added the **structuredQueryExpression** property to the [artifactQuery](https://learn.microsoft.com/en-us/graph/api/resources/artifactquery?view=graph-rest-beta) resource.",
+          "Target": "artifactQuery"
+        },
+        {
+          "Id": "42f3dd5e-5a3f-4a28-8b51-f8f49e9018d6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "restoreSearchArtifactQueryExpression",
+          "ChangeType": "Addition",
+          "Description": "Added the [restoreSearchArtifactQueryExpression](https://learn.microsoft.com/en-us/graph/api/resources/restoresearchartifactqueryexpression?view=graph-rest-beta) resource.",
+          "Target": "restoreSearchArtifactQueryExpression"
+        }
+      ],
+      "Id": "42f3dd5e-5a3f-4a28-8b51-f8f49e9018d6",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-06-23T09:52:03.5646538Z",
+      "WorkloadArea": "Backup and recovery",
+      "SubArea": "Microsoft 365 backup and storage"
+      },
+      {
         "ChangeList": [
           {
             "Id": "d3dee94f-3c8b-475f-9aaf-b1a94b873b46",

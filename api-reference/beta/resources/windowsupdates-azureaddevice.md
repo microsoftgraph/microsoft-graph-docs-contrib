@@ -17,6 +17,7 @@ Namespace: microsoft.graph.windowsUpdates
 Represents a device in Microsoft Entra ID that is registered with Windows Autopatch.
 
 A Microsoft Entra device is automatically created through one of the following methods:
+
 * [updatableAsset: enrollAssets](../api/windowsupdates-updatableasset-enrollassets.md)
 * [updatableAsset: enrollAssetsById](../api/windowsupdates-updatableasset-enrollassetsbyid.md)
 * [deploymentAudience: updateAudience](../api/windowsupdates-deploymentaudience-updateaudience.md)
@@ -27,6 +28,7 @@ A Microsoft Entra device is automatically created through one of the following m
 Inherits from [updatableAsset](../resources/windowsupdates-updatableasset.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List Microsoft Entra devices](../api/adminwindowsupdates-list-updatableassets-azureaddevice.md)|[microsoft.graph.windowsUpdates.azureADDevice](../resources/windowsupdates-azureaddevice.md) collection|Get a list of the [azureADDevice](../resources/windowsupdates-azureaddevice.md) objects and their properties.|
@@ -38,16 +40,19 @@ Inherits from [updatableAsset](../resources/windowsupdates-updatableasset.md).
 |[Unenroll by ID](../api/windowsupdates-updatableasset-unenrollassetsbyid.md)|None|Unenroll [azureADDevice](../resources/windowsupdates-azureaddevice.md) resources of the same type from update management by Windows Autopatch.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|enrollments|[microsoft.graph.windowsUpdates.updatableAssetEnrollment](../resources/windowsupdates-updatableassetenrollment.md) collection|Specifies areas in which the device is enrolled. Read-only. Returned by default.|
-|errors|[microsoft.graph.windowsUpdates.updatableAssetError](../resources/windowsupdates-updatableasseterror.md) collection|Specifies any errors that prevent the device from being enrolled in update management or receving deployed content. Read-only. Returned by default.|
+|enrollment|[microsoft.graph.windowsUpdates.updateManagementEnrollment](../resources/windowsupdates-updatemanagementenrollment.md)|Specifies the update management enrollment for the device. Read-only. Returned by default.|
+|errors|[microsoft.graph.windowsUpdates.updatableAssetError](../resources/windowsupdates-updatableasseterror.md) collection|Specifies any errors that prevent the device from being enrolled in update management or receiving deployed content. Read-only. Returned by default.|
 |id|String|An identifier for the device. Key. Not nullable. Read-only. Returned by default. Inherited from [updatableAsset](../resources/windowsupdates-updatableasset.md)|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -66,10 +71,6 @@ The following JSON representation shows the resource type.
       "@odata.type": "microsoft.graph.windowsUpdates.azureADDeviceRegistrationError"
     }
   ],
-  "enrollments": [
-    {
-      "@odata.type": "microsoft.graph.windowsUpdates.updateManagementEnrollment"
-    }
-  ]
+  "enrollment": {"@odata.type": "#microsoft.graph.windowsUpdates.updateManagementEnrollment"}
 }
 ```

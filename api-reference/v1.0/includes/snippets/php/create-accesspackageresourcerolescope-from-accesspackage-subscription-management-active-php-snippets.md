@@ -1,0 +1,50 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```php
+
+<?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Generated\Models\AccessPackageResourceRoleScope;
+use Microsoft\Graph\Generated\Models\AccessPackageResourceRole;
+use Microsoft\Graph\Generated\Models\AccessPackageResource;
+use Microsoft\Graph\Generated\Models\AccessPackageResourceScope;
+
+
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
+
+$requestBody = new AccessPackageResourceRoleScope();
+$role = new AccessPackageResourceRole();
+$role->setOriginId('/subscriptions/828b526f-c769-4b19-9797-734b4843b978/providers/Microsoft.Authorization/roleDefinitions/76cc9ee4-d5d3-4a45-a930-26add3d73475');
+$role->setDisplayName('Access Review Operator Service Role');
+$role->setDescription('Lets you grant Access Review System app permissions to discover and revoke access as needed by the access review process.');
+$roleResource = new AccessPackageResource();
+$roleResource->setId('b09a0288-a83e-4ae6-8a53-bc09aeb966ea');
+$roleResource->setDescription('Dev');
+$roleResource->setDisplayName('Dev');
+$roleResource->setOriginId('/subscriptions/828b526f-c769-4b19-9797-734b4843b978');
+$roleResource->setOriginSystem('AzureResources');
+$additionalData = [
+	'resourceType' => 'Subscription',
+];
+$roleResource->setAdditionalData($additionalData);
+$role->setResource($roleResource);
+$role->setOriginSystem('AzureResources');
+$additionalData = [
+	'type' => 'active',
+];
+$role->setAdditionalData($additionalData);
+$requestBody->setRole($role);
+$scope = new AccessPackageResourceScope();
+$scope->setId('c66c1e22-1093-46fb-a8a8-c0e334113ca4');
+$scope->setDescription('Root');
+$scope->setDisplayName('Root');
+$scope->setIsRootScope(true);
+$scope->setOriginSystem('AzureResources');
+$scope->setOriginId('/subscriptions/828b526f-c769-4b19-9797-734b4843b978');
+$requestBody->setScope($scope);
+
+$result = $graphServiceClient->identityGovernance()->entitlementManagement()->accessPackages()->byAccessPackageId('accessPackage-id')->resourceRoleScopes()->post($requestBody)->wait();
+
+```

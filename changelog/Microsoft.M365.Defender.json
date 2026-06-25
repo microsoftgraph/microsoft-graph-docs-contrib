@@ -753,6 +753,80 @@
     {
       "ChangeList": [
         {
+          "Id": "59e9c275-8452-4bae-b107-28a32a278788",
+          "ApiChange": "Method",
+          "ChangedApiName": "getHuntingSchema",
+          "ChangeType": "Addition",
+          "Description": "Added the [getHuntingSchema](https://learn.microsoft.com/en-us/graph/api/security-security-gethuntingschema?view=graph-rest-beta) method to the [security](https://learn.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "59e9c275-8452-4bae-b107-28a32a278788",
+          "ApiChange": "Resource",
+          "ChangedApiName": "huntingSchemaResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [huntingSchemaResult](https://learn.microsoft.com/en-us/graph/api/resources/security-huntingschemaresult?view=graph-rest-beta) resource.",
+          "Target": "huntingSchemaResult"
+        },
+        {
+          "Id": "59e9c275-8452-4bae-b107-28a32a278788",
+          "ApiChange": "Resource",
+          "ChangedApiName": "huntingSchemaTable",
+          "ChangeType": "Addition",
+          "Description": "Added the [huntingSchemaTable](https://learn.microsoft.com/en-us/graph/api/resources/security-huntingschematable?view=graph-rest-beta) resource.",
+          "Target": "huntingSchemaTable"
+        },
+        {
+          "Id": "59e9c275-8452-4bae-b107-28a32a278788",
+          "ApiChange": "Resource",
+          "ChangedApiName": "huntingSchemaTableColumn",
+          "ChangeType": "Addition",
+          "Description": "Added the [huntingSchemaTableColumn](https://learn.microsoft.com/en-us/graph/api/resources/security-huntingschematablecolumn?view=graph-rest-beta) resource.",
+          "Target": "huntingSchemaTableColumn"
+        },
+        {
+          "Id": "59e9c275-8452-4bae-b107-28a32a278788",
+          "ApiChange": "Resource",
+          "ChangedApiName": "huntingSchemaFunctions",
+          "ChangeType": "Addition",
+          "Description": "Added the [huntingSchemaFunctions](https://learn.microsoft.com/en-us/graph/api/resources/security-huntingschemafunctions?view=graph-rest-beta) resource.",
+          "Target": "huntingSchemaFunctions"
+        },
+        {
+          "Id": "59e9c275-8452-4bae-b107-28a32a278788",
+          "ApiChange": "Resource",
+          "ChangedApiName": "huntingSchemaBuiltInFunction",
+          "ChangeType": "Addition",
+          "Description": "Added the [huntingSchemaBuiltInFunction](https://learn.microsoft.com/en-us/graph/api/resources/security-huntingschemabuiltinfunction?view=graph-rest-beta) resource.",
+          "Target": "huntingSchemaBuiltInFunction"
+        },
+        {
+          "Id": "59e9c275-8452-4bae-b107-28a32a278788",
+          "ApiChange": "Resource",
+          "ChangedApiName": "huntingSchemaSavedFunction",
+          "ChangeType": "Addition",
+          "Description": "Added the [huntingSchemaSavedFunction](https://learn.microsoft.com/en-us/graph/api/resources/security-huntingschemasavedfunction?view=graph-rest-beta) resource.",
+          "Target": "huntingSchemaSavedFunction"
+        },
+        {
+          "Id": "59e9c275-8452-4bae-b107-28a32a278788",
+          "ApiChange": "Resource",
+          "ChangedApiName": "huntingSchemaFunctionParameter",
+          "ChangeType": "Addition",
+          "Description": "Added the [huntingSchemaFunctionParameter](https://learn.microsoft.com/en-us/graph/api/resources/security-huntingschemafunctionparameter?view=graph-rest-beta) resource.",
+          "Target": "huntingSchemaFunctionParameter"
+        }
+      ],
+      "Id": "59e9c275-8452-4bae-b107-28a32a278788",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-06-24T11:05:11.5465777Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Advanced hunting"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "8379ddd0-e101-4994-994f-36d29a65811d",
           "ApiChange": "Property",
           "ChangedApiName": "categories",
@@ -4353,7 +4427,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sensorCandidate",
           "ChangeType": "Addition",
-          "Description": "Added the [sensorCandidate](https://learn.microsoft.com/en-us/graph/api/resources/security-sensorCandidate?view=graph-rest-beta) resource.",
+          "Description": "Added the [sensorCandidate](https://learn.microsoft.com/en-us/graph/api/resources/security-sensorcandidate?view=graph-rest-beta) resource.",
           "Target": "sensorCandidate"
         },
         {
@@ -4361,7 +4435,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "sensorCandidateActivationConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [sensorCandidateActivationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/security-sensorCandidateActivationConfiguration?view=graph-rest-beta) resource.",
+          "Description": "Added the [sensorCandidateActivationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/security-sensorcandidateactivationconfiguration?view=graph-rest-beta) resource.",
           "Target": "sensorCandidateActivationConfiguration"
         },
         {
@@ -4369,7 +4443,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "activate",
           "ChangeType": "Addition",
-          "Description": "Added the [activate](https://learn.microsoft.com/en-us/graph/api/security-sensorCandidate-activate?view=graph-rest-beta) method to the [sensorCandidate](https://learn.microsoft.com/en-us/graph/api/resources/security-sensorCandidate?view=graph-rest-beta) resource.",
+          "Description": "Added the [activate](https://learn.microsoft.com/en-us/graph/api/security-sensorcandidate-activate?view=graph-rest-beta) method to the [sensorCandidate](https://learn.microsoft.com/en-us/graph/api/resources/security-sensorcandidate?view=graph-rest-beta) resource.",
           "Target": "sensorCandidate"
         }
       ],
@@ -4447,7 +4521,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "aiAgentEvidence",
           "ChangeType": "Addition",
-          "Description": "Added the [aiAgentEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-aiAgentEvidence?view=graph-rest-beta) resource type.",
+          "Description": "Added the [aiAgentEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-aiagentevidence?view=graph-rest-beta) resource type.",
           "Target": "aiAgentEvidence"
         }
       ],
@@ -4473,7 +4547,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "aiAgentEvidence",
           "ChangeType": "Addition",
-          "Description": "Added the [aiAgentEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-aiAgentEvidence?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [aiAgentEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-aiagentevidence?view=graph-rest-1.0) resource type.",
           "Target": "aiAgentEvidence"
         }
       ],
@@ -4491,7 +4565,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "activeDirectoryDomainEvidence",
             "ChangeType": "Addition",
-            "Description": "Added the [activeDirectoryDomainEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-activeDirectoryDomainEvidence?view=graph-rest-1.0) resource.",
+            "Description": "Added the [activeDirectoryDomainEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-activedirectorydomainevidence?view=graph-rest-1.0) resource.",
             "Target": "activeDirectoryDomainEvidence"
           },
           {
@@ -4499,7 +4573,7 @@
             "ApiChange": "Property",
             "ChangedApiName": "resourceAccessEvents",
             "ChangeType": "Addition",
-            "Description": "Added the **resourceAccessEvents** property to the [deviceEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-deviceEvidence?view=graph-rest-1.0) resource.",
+            "Description": "Added the **resourceAccessEvents** property to the [deviceEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-deviceevidence?view=graph-rest-1.0) resource.",
             "Target": "deviceEvidence"
           },
           {
@@ -4507,7 +4581,7 @@
             "ApiChange": "Resource",
             "ChangedApiName": "mailboxConfigurationEvidence",
             "ChangeType": "Addition",
-            "Description": "Added the [mailboxConfigurationEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-mailboxConfigurationEvidence?view=graph-rest-1.0) resource.",
+            "Description": "Added the [mailboxConfigurationEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-mailboxconfigurationevidence?view=graph-rest-1.0) resource.",
             "Target": "mailboxConfigurationEvidence"
           },
           {
@@ -4533,7 +4607,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "resourceAccessEvents",
           "ChangeType": "Addition",
-          "Description": "Added the **resourceAccessEvents** property to the [deviceEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-deviceEvidence?view=graph-rest-beta) resource.",
+          "Description": "Added the **resourceAccessEvents** property to the [deviceEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-deviceevidence?view=graph-rest-beta) resource.",
           "Target": "deviceEvidence"
         },
 		    {
@@ -4541,7 +4615,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "mailboxConfigurationEvidence",
           "ChangeType": "Addition",
-          "Description": "Added the [mailboxConfigurationEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-mailboxConfigurationEvidence?view=graph-rest-beta) resource.",
+          "Description": "Added the [mailboxConfigurationEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-mailboxconfigurationevidence?view=graph-rest-beta) resource.",
           "Target": "mailboxConfigurationEvidence"
         },
 		    {
@@ -4549,7 +4623,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "activeDirectoryDomainEvidence",
           "ChangeType": "Addition",
-          "Description": "Added the [activeDirectoryDomainEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-activeDirectoryDomainEvidence?view=graph-rest-beta) resource.",
+          "Description": "Added the [activeDirectoryDomainEvidence](https://learn.microsoft.com/en-us/graph/api/resources/security-activedirectorydomainevidence?view=graph-rest-beta) resource.",
           "Target": "activeDirectoryDomainEvidence"
         },
 		    {
@@ -4611,7 +4685,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "autoAuditingConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [autoAuditingConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/security-autoAuditingConfiguration?view=graph-rest-beta) resource.",
+          "Description": "Added the [autoAuditingConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/security-autoauditingconfiguration?view=graph-rest-beta) resource.",
           "Target": "autoAuditingConfiguration"
         },
         {
@@ -4619,7 +4693,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "autoAuditingConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the **autoAuditingConfiguration** relationship to the [settingsContainer](https://learn.microsoft.com/en-us/graph/api/resources/security-settingsContainer?view=graph-rest-beta) resource.",
+          "Description": "Added the **autoAuditingConfiguration** relationship to the [settingsContainer](https://learn.microsoft.com/en-us/graph/api/resources/security-settingscontainer?view=graph-rest-beta) resource.",
           "Target": "settingsContainer"
         }
       ],
@@ -4637,7 +4711,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "autoAuditingConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [autoAuditingConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/security-autoAuditingConfiguration?view=graph-rest-1.0) resource.",
+          "Description": "Added the [autoAuditingConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/security-autoauditingconfiguration?view=graph-rest-1.0) resource.",
           "Target": "autoAuditingConfiguration"
         },
         {
@@ -4645,7 +4719,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "autoAuditingConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the **autoAuditingConfiguration** relationship to the [settingsContainer](https://learn.microsoft.com/en-us/graph/api/resources/security-settingsContainer?view=graph-rest-1.0) resource.",
+          "Description": "Added the **autoAuditingConfiguration** relationship to the [settingsContainer](https://learn.microsoft.com/en-us/graph/api/resources/security-settingscontainer?view=graph-rest-1.0) resource.",
           "Target": "settingsContainer"
         },
         {
@@ -4653,7 +4727,7 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "settings",
           "ChangeType": "Addition",
-          "Description": "Added the **settings** relationship to the [identityContainer](https://learn.microsoft.com/en-us/graph/api/resources/security-identityContainer?view=graph-rest-1.0) resource.",
+          "Description": "Added the **settings** relationship to the [identityContainer](https://learn.microsoft.com/en-us/graph/api/resources/security-identitycontainer?view=graph-rest-1.0) resource.",
           "Target": "identityContainer"
         },
         {
@@ -4661,7 +4735,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "settingsContainer",
           "ChangeType": "Addition",
-          "Description": "Added the [settingsContainer](https://learn.microsoft.com/en-us/graph/api/resources/security-settingsContainer?view=graph-rest-1.0) resource.",
+          "Description": "Added the [settingsContainer](https://learn.microsoft.com/en-us/graph/api/resources/security-settingscontainer?view=graph-rest-1.0) resource.",
           "Target": "settingsContainer"
         }
       ],

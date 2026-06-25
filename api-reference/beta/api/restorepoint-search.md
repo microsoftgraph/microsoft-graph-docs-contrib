@@ -80,7 +80,7 @@ For a list of possible error responses, see [Backup Storage API error responses]
 #### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "restorepoint_search"
@@ -100,35 +100,6 @@ Content-Type: application/json
     "tags": "fastRestore"
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/restorepoint-search-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/restorepoint-search-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/restorepoint-search-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/restorepoint-search-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/restorepoint-search-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/restorepoint-search-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/restorepoint-search-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 #### Response
@@ -205,7 +176,6 @@ Content-Type: application/json
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "restorepoint_search_artifactquery"
@@ -229,33 +199,6 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/restorepoint-search-artifactquery-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/restorepoint-search-artifactquery-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/restorepoint-search-artifactquery-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/restorepoint-search-artifactquery-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/restorepoint-search-artifactquery-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/restorepoint-search-artifactquery-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/restorepoint-search-artifactquery-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -288,6 +231,79 @@ Content-Type: application/json
           "@odata.type": "#microsoft.graph.siteProtectionUnit",
           "id": "23014d8c-71fe-4d00-a01a-31850bc5b42a",
           "siteId": "344d9337-d8f0-456e-92cd-00a3abdd2093",
+          "policyId": "9fec8e78-bce4-4aaf-ab1b-5451cc387264"
+        },
+        "tags": "fastRestore"
+      }
+    }
+  ]
+}
+```
+
+### Example 3: Search with structuredQueryExpression
+
+#### Request
+
+The following example shows a request using the new structured query expression.
+
+<!-- {
+  "blockType": "request",
+  "name": "restorepoint_search_structuredquery"
+}
+-->
+```http
+POST https://graph.microsoft.com/beta/solutions/backupRestore/restorePoints/search
+Content-Type: application/json
+
+{
+  "artifactQuery": {
+    "structuredQueryExpression": {
+      "senders": ["abc@contoso.com"],
+      "subjects": ["Check email", "Important"],
+      "hasAttachment": true,
+      "items": ["email"]
+    }
+  },
+  "protectionUnitIds": ["23014d8c-71fe-4d00-a01a-31850bc5b42a"],
+  "protectionTimePeriod": {
+    "startDateTime": "2021-01-01T00:00:00Z",
+    "endDateTime": "2021-01-30T00:00:00Z"
+  },
+  "restorePointPreference": "oldest"
+}
+```
+
+---
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.restorePointSearchResponse"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "/solutions/backupRestore/$metadata#restorePoints",
+  "searchResponseId": "M2UyZDAwMDAwMDMxMzkzYTMyNj",
+  "searchResults": [
+    {
+      "artifactHitCount": 26,
+      "restorePoint": {
+        "@odata.type": "#microsoft.graph.restorePoint",
+        "id": "1f1fccc3-a642-4f61-bf49-f37b9a888279",
+        "protectionDateTime": "2023-01-04T00:00:00Z",
+        "expirationDateTime": "2024-01-04T00:00:00Z",
+        "protectionUnit": {
+          "@odata.type": "#microsoft.graph.mailboxProtectionUnit",
+          "id": "23014d8c-71fe-4d00-a01a-31850bc5b42a",
+          "userId": "344d9337-d8f0-456e-92cd-00a3abdd2093",
           "policyId": "9fec8e78-bce4-4aaf-ab1b-5451cc387264"
         },
         "tags": "fastRestore"
