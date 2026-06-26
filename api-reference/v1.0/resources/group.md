@@ -6,7 +6,7 @@ author: "yuhko-msft"
 ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.subservice: "entra-groups"
 doc_type: resourcePageType
-ms.date: 10/17/2024
+ms.date: 05/26/2026
 ---
 
 # group resource type
@@ -133,6 +133,7 @@ This resource supports:
 
 | Property | Type | Description |
 |:-|:-|:-|
+| accessType | [groupAccessType](groupaccesstype.md) | Indicates the type of access to the group. The possible values are: `none`, `private`, `secret`, `public`, `unknownFutureValue`. Requires `$select` to retrieve. Supported only on the Get group API (`GET /groups/{ID}`). |
 | allowExternalSenders | Boolean | Indicates if people external to the organization can send messages to the group. The default value is `false`. <br><br>Requires `$select` to retrieve. Supported only on the Get group API (`GET /groups/{ID}`). |
 | assignedLabels | [assignedLabel](assignedlabel.md) collection | The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group. <br><br>Requires `$select` to retrieve. This property can be updated only in delegated scenarios where the caller requires both the Microsoft Graph permission and [a supported administrator role](/purview/get-started-with-sensitivity-labels#permissions-required-to-create-and-manage-sensitivity-labels).|
 | assignedLicenses | [assignedLicense](assignedlicense.md) collection | The licenses that are assigned to the group. <br><br>Requires `$select` to retrieve. Supports `$filter` (`eq`). Read-only. |
@@ -150,6 +151,7 @@ This resource supports:
 | id | String | The unique identifier for the group. <br><br>Returned by default. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.<br><br>Supports `$filter` (`eq`, `ne`, `not`, `in`). |
 | isArchived | Boolean | When a group is associated with a team, this property determines whether the team is in read-only mode.<br/>To read this property, use the `/group/{groupId}/team` endpoint or the [Get team](../api/team-get.md) API. To update this property, use the [archiveTeam](../api/team-archive.md) and [unarchiveTeam](../api/team-unarchive.md) APIs. |
 | isAssignableToRole | Boolean | Indicates whether this group can be assigned to a Microsoft Entra role. Optional. <br><br>This property can only be set while creating the group and is immutable. If set to `true`, the **securityEnabled** property must also be set to `true`, **visibility** must be `Hidden`, and the group can't be a dynamic group (that is, **groupTypes** can't contain `DynamicMembership`). <br/><br/>Only callers with at least the Privileged Role Administrator role can set this property. The caller must also be assigned the _RoleManagement.ReadWrite.Directory_ permission to set this property or update the membership of such groups. For more, see [Using a group to manage Microsoft Entra role assignments](https://go.microsoft.com/fwlink/?linkid=2103037)<br><br>Using this feature requires a Microsoft Entra ID P1 license. Returned by default. Supports `$filter` (`eq`, `ne`, `not`). |
+| isFavorite | Boolean | Indicates whether the user marked the group as favorite. Requires `$select` to retrieve. Supported only on the Get group API (`GET /groups/{ID}`). |
 | isManagementRestricted | Boolean | Indicates whether the group is a member of a restricted management administrative unit. If not set, the default value is `null` and the default behavior is false. Read-only. <br/><br/> To manage a group member of a restricted management administrative unit, the administrator or calling app must be assigned a Microsoft Entra role at the scope of the restricted management administrative unit. <br><br>Requires `$select` to retrieve. |
 | isSubscribedByMail | Boolean | Indicates whether the signed-in user is subscribed to receive email conversations. The default value is `true`. <br><br>Requires `$select` to retrieve. Supported only on the Get group API (`GET /groups/{ID}`). |
 | licenseProcessingState | String | Indicates the status of the group license assignment to all group members. The default value is `false`. Read-only. Possible values: `QueuedForProcessing`, `ProcessingInProgress`, and `ProcessingComplete`.<br><br>Requires `$select` to retrieve. Read-only. |
@@ -176,7 +178,9 @@ This resource supports:
 | serviceProvisioningErrors | [serviceProvisioningError](serviceprovisioningerror.md) collection | Errors published by a federated service describing a nontransient, service-specific error regarding the properties or link from a group object. <br><br> Supports `$filter` (`eq`, `not`, for isResolved and serviceInstance). |
 | theme | string | Specifies a Microsoft 365 group's color theme. Possible values are `Teal`, `Purple`, `Green`, `Blue`, `Pink`, `Orange`, or `Red`. <br><br>Returned by default. |
 | uniqueName | String | The unique identifier that can be assigned to a group and used as an alternate key. Immutable. Read-only. |
-| unseenCount | Int32 | Count of conversations that received new posts since the signed-in user last visited the group. <br><br>Requires `$select` to retrieve. Supported only on the Get group API (`GET /groups/{ID}`). |
+| unseenConversationsCount | Int32 | Count of conversations that have had one or more new posts delivered since the signed-in user's last visit to the group. This property is the same as **unseenCount**. <br><br>Requires `$select` to retrieve. Supported only on the Get group API (`GET /groups/{ID}`). |
+| unseenCount | Int32 | Count of conversations that have received new posts since the signed-in user last visited the group. This property is the same as **unseenConversationsCount**.<br><br>Requires `$select` to retrieve. Supported only on the Get group API (`GET /groups/{ID}`). |
+| unseenMessagesCount | Int32 | Count of new posts that have been delivered to the group's conversations since the signed-in user's last visit to the group. <br><br>Requires `$select` to retrieve. Supported only on the Get group API (`GET /groups/{ID}`). |
 | visibility | String | Specifies the group join policy and group content visibility for groups. The possible values are: `Private`, `Public`, or `HiddenMembership`. `HiddenMembership` can be set only for Microsoft 365 groups when the groups are created. It can't be updated later. Other values of visibility can be updated after group creation.<br> If visibility value isn't specified during group creation on Microsoft Graph, a security group is created as `Private` by default, and the Microsoft 365 group is `Public`. Groups assignable to roles are always `Private`. To learn more, see [group visibility options](#group-visibility-options). <br><br>Returned by default. Nullable. |
 
 ### Group visibility options
@@ -259,7 +263,9 @@ The following JSON representation shows the resource type.
     "hasMembersWithLicenseErrors",
     "isSubscribedByMail",
     "licenseProcessingState",
-    "unseenCount"
+    "unseenConversationsCount",
+    "unseenCount",
+    "unseenMessagesCount"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.group",
@@ -360,6 +366,7 @@ The following JSON representation shows the resource type.
 
 ```json
 {
+  "accessType": "String",
   "allowExternalSenders": "Boolean",
   "acceptedSenders": [{ "@odata.type": "microsoft.graph.directoryObject" }],
   "assignedLicenses": [{ "@odata.type": "microsoft.graph.assignedLicense" }],
@@ -381,6 +388,7 @@ The following JSON representation shows the resource type.
   "hideFromOutlookClients": "Boolean",
   "id": "String (identifier)",
   "isAssignableToRole": "Boolean",
+  "isFavorite": "Boolean",
   "isManagementRestricted": "Boolean",
   "isSubscribedByMail": "Boolean",
   "licenseProcessingState": "String",
@@ -415,7 +423,9 @@ The following JSON representation shows the resource type.
   "sites": [{ "@odata.type": "microsoft.graph.site" }],
   "threads": [{ "@odata.type": "microsoft.graph.conversationThread" }],
   "uniqueName": "String",
+  "unseenConversationsCount": "Int32",
   "unseenCount": "Int32",
+  "unseenMessagesCount": "Int32",
   "visibility": "String"
 }
 ```

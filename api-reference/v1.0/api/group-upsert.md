@@ -72,7 +72,7 @@ The following table lists the properties that are required when you create the [
 > - Creating a group using the **Group.Create** application permission without specifying owners creates the group anonymously and the group isn't modifiable. Add owners to the group while creating it to specify owners who can modify the group.
 > - Creating a Microsoft 365 group programmatically with an app-only context and without specifying owners creates the group anonymously. Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.
 > - A non-admin user can't add themselves to the group owners collection. For more information, see the related [known issue](/graph/known-issues#non-admin-user-cant-add-self-as-group-owner-during-group-creation-or-update).
-> - The following properties can't be set in the initial POST request and must be set in a subsequent PATCH request: **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isSubscribedByMail**, **unseenCount**.
+> - The following properties can't be set in the initial POST request and must be set in a subsequent PATCH request: **accessType**, **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isFavorite**, **isSubscribedByMail**, **unseenConversationsCount**, **unseenCount**, **unseenMessagesCount**.
 
 Because the **group** resource supports [extensions](/graph/extensibility-overview), you can add custom properties with your own data to the group while creating it.
 

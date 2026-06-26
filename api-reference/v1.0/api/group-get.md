@@ -192,7 +192,7 @@ Here's an example of a GET request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
+GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315?$select=accessType,allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenConversationsCount,unseenCount,unseenMessagesCount
 ```
 
 # [C#](#tab/csharp)
@@ -241,16 +241,19 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups(allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount)/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups(accessType,allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenConversationsCount,unseenCount,unseenMessagesCount)/$entity",
     "id": "02bd9fd6-8f93-4758-87c3-1fb73740a315",
+    "accessType": "private",
     "allowExternalSenders": false,
     "autoSubscribeNewMembers": false,
     "isSubscribedByMail": false,
-    "unseenCount": 3
+    "unseenConversationsCount": 3,
+    "unseenCount": 3,
+    "unseenMessagesCount": 5
 }
 ```
 
-### Example 4: Check if the management of a group is restricted
+### Example 3: Check if the management of a group is restricted
 
 The following example shows how to check whether the management of a group is restricted.
 

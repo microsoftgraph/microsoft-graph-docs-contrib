@@ -3,7 +3,7 @@ title: "Enum values"
 description: "Microsoft Graph enumeration values."
 ms.localizationpriority: medium
 ms.subservice: "non-product-specific"
-ms.date: 01/20/2026
+ms.date: 05/26/2026
 author: "MSGraphDocsvTeam"
 doc_type: enumPageType
 ms.custom: sfi-ropc-nochange
@@ -139,6 +139,16 @@ Namespace: microsoft.graph
 | inactive |
 | active |
 | unknownfuturevalue |
+
+### groupAccessType values
+
+| Member |
+| -------------------- |
+| none |
+| private |
+| secret |
+| public |
+| unknownFutureValue |
 
 ### siteLockState values
 
