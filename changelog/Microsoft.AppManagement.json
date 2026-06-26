@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "4f5a91d5-eb58-4097-98d3-d512fd8a1de4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applicationTemplateCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the [applicationTemplateCategory](https://learn.microsoft.com/en-us/graph/api/resources/applicationtemplatecategory?view=graph-rest-beta) resource.",
+          "Target": "applicationTemplateCategory"
+        },
+        {
+          "Id": "4f5a91d5-eb58-4097-98d3-d512fd8a1de4",
+          "ApiChange": "Method",
+          "ChangedApiName": "categories",
+          "ChangeType": "Addition",
+          "Description": "Added the [categories](https://learn.microsoft.com/en-us/graph/api/applicationtemplate-categories?view=graph-rest-beta) method to the [applicationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/applicationtemplate?view=graph-rest-beta) resource.",
+          "Target": "applicationTemplate"
+        }
+      ],
+      "Id": "4f5a91d5-eb58-4097-98d3-d512fd8a1de4",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-06-26T12:37:37.470201Z",
+      "WorkloadArea": "Applications",
+      "SubArea": "Service principal"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "f2264e7e-ed00-4adc-a67c-965de3f824c5",
           "ApiChange": "Enumeration",
           "ChangedApiName": "applicationDataType",

@@ -195,7 +195,7 @@ Here's an example  of a GET request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
+GET https://graph.microsoft.com/beta/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd?$select=accessType,allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenConversationsCount,unseenCount,unseenMessagesCount
 ```
 
 # [C#](#tab/csharp)
@@ -244,12 +244,15 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount)/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(accessType,allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenConversationsCount,unseenCount,unseenMessagesCount)/$entity",
     "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
+    "accessType": "private",
     "allowExternalSenders": false,
     "autoSubscribeNewMembers": false,
     "isSubscribedByMail": false,
-    "unseenCount": 0
+    "unseenConversationsCount": 0,
+    "unseenCount": 0,
+    "unseenMessagesCount": 0
 }
 ```
 

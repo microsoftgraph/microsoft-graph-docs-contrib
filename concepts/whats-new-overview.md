@@ -28,6 +28,10 @@ Evaluate applications in the Microsoft Entra application gallery by using the [a
 
 [Upsert](/graph/api/filestoragecontainer-patch-permissions) (create or update) up to 40 permissions on a [fileStorageContainer](/graph/api/resources/filestoragecontainer) in a single request. The limit increased from 10 to 40 [permission](/graph/api/resources/permission) objects per request.
 
+### Groups
+
+- Added the **accessType**, **isFavorite**, **unseenConversationsCount**, and **unseenMessagesCount** properties to the [group](/graph/api/resources/group) resource. Use these properties to manage access settings and track conversation activity for Microsoft 365 groups. Added the **groupAccessType** enumeration type to support the **accessType** property on the [group](/graph/api/resources/group) resource.
+
 ### Identity and access | Governance
 
 - Added the [Get](/graph/api/accesspackagesubject-get) and [Update](/graph/api/accesspackagesubject-update) methods to the [accessPackageSubject](/graph/api/resources/accesspackagesubject) resource type to manage the subject lifecycle of external directory users in Microsoft Entra entitlement management.
@@ -76,6 +80,10 @@ Added the [policyTipAction](/graph/api/resources/policytipaction?view=graph-rest
 ### Agents | Agent identities
 
 Added the **appRoleAssignmentRequired** property to the [agentIdentity](/graph/api/resources/agentidentity?view=graph-rest-beta&preserve-view=true) resource. This property indicates whether users or service principals must be explicitly granted an app role assignment before they can access the agent identity.
+
+### Applications | Service principal
+
+Added the [categories](/graph/api/applicationtemplate-categories?view=graph-rest-beta&preserve-view=true) method to the [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta&preserve-view=true) resource type to retrieve the list of supported categories that can appear in the `categories` property. Each entry is returned as an [applicationTemplateCategory](/graph/api/resources/applicationtemplatecategory?view=graph-rest-beta&preserve-view=true) with the API value and a localizable display name.
 
 ### Backup storage
 
