@@ -153,6 +153,8 @@ items:
     href: ../../api/applicationtemplate-get.md
   - name: Instantiate
     href: ../../api/applicationtemplate-instantiate.md
+  - name: categories
+    href: ../../api/applicationtemplate-categories.md
 - name: On-premises publishing
   items:
   - name: Overview
