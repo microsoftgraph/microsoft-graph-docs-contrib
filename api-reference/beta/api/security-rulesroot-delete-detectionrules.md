@@ -25,7 +25,6 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "name": "security-rulesroot-delete-detectionrules-permissions"
 }
 -->
-
 [!INCLUDE [permissions-table](../includes/permissions/security-rulesroot-delete-detectionrules-permissions.md)]
 
 [!INCLUDE [rbac-security-detection-rules-apis-write](../includes/rbac-for-apis/rbac-security-detection-rules-apis-write.md)]
@@ -79,5 +78,4 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 204 No Content
-
 ```

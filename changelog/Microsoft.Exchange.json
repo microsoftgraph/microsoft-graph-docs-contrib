@@ -2213,6 +2213,56 @@
       "CreatedDateTime": "2026-06-03T15:25:36.8590438Z",
       "WorkloadArea": "User",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b2b30232-33d2-4495-a3c7-5f0c4ba9facd",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "groupAccessType",
+          "ChangeType": "Addition",
+          "Description": "Added the **groupAccessType** enumeration type.",
+          "Target": "groupAccessType"
+        },
+        {
+          "Id": "b2b30232-33d2-4495-a3c7-5f0c4ba9facd",
+          "ApiChange": "Property",
+          "ChangedApiName": "accessType",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessType** property to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource.",
+          "Target": "group"
+        },
+        {
+          "Id": "b2b30232-33d2-4495-a3c7-5f0c4ba9facd",
+          "ApiChange": "Property",
+          "ChangedApiName": "isFavorite",
+          "ChangeType": "Addition",
+          "Description": "Added the **isFavorite** property to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource.",
+          "Target": "group"
+        },
+        {
+          "Id": "b2b30232-33d2-4495-a3c7-5f0c4ba9facd",
+          "ApiChange": "Property",
+          "ChangedApiName": "unseenConversationsCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **unseenConversationsCount** property to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource.",
+          "Target": "group"
+        },
+        {
+          "Id": "b2b30232-33d2-4495-a3c7-5f0c4ba9facd",
+          "ApiChange": "Property",
+          "ChangedApiName": "unseenMessagesCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **unseenMessagesCount** property to the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource.",
+          "Target": "group"
+        }
+      ],
+      "Id": "b2b30232-33d2-4495-a3c7-5f0c4ba9facd",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-06-26T06:57:05.931789Z",
+      "WorkloadArea": "Groups",
+      "SubArea": ""
     }
   ]
 }

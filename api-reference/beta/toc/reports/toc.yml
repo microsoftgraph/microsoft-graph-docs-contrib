@@ -472,6 +472,18 @@ items:
         href: ../../resources/correlationerror.md
       - name: Identity info
         href: ../../resources/identityinfo.md
+  - name: Identity analytics (preview)
+    items:
+    - name: Group analytics
+      items:
+      - name: Group analytics
+        href: ../../resources/groupanalytics.md
+      - name: List
+        href: ../../api/identityanalyticsroot-list-groups.md
+      - name: Get
+        href: ../../api/groupanalytics-get.md
+    - name: Identity analytics root
+      href: ../../resources/identityanalyticsroot.md
 - name: Monitoring reports (preview)
   items:
   - name: Overview

@@ -70,7 +70,7 @@ The following table specifies the properties that can be updated.
 | writebackConfiguration                     | [groupWritebackConfiguration](../resources/groupwritebackconfiguration.md)                                                                  | Specifies whether or not a group is configured to write back group object properties to on-premise Active Directory. These properties are used when group writeback is configured in the [Microsoft Entra Connect](/azure/active-directory/hybrid/how-to-connect-group-writeback-v2) sync client.|  
 
 > [!IMPORTANT]
-> - To update these properties (**allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isSubscribedByMail**, **unseenCount**, **welcomeMessageEnabled**), you must:
+> - To update these properties (**accessType**, **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isFavorite**, **isSubscribedByMail**, **unseenConversationsCount**, **unseenCount**, **unseenMessagesCount**, **welcomeMessageEnabled**), you must:
 >    - Specify them in their own PATCH request without including other properties from the previous table
 >    - Have the Group.ReadWrite.All permission (*Directory.ReadWrite.All* is not supported for these properties)
 > - Only a subset of the group API that pertains to core group administration and management supports application and delegated permissions. All other members of the group API, including updating **autoSubscribeNewMembers**, support only delegated permissions.
@@ -87,7 +87,7 @@ Use this API to manage the [directory, schema, and open extensions](/graph/exten
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code—except a `200 OK` response code when updating the following properties: **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isSubscribedByMail**, **unseenCount**, **welcomeMessageEnabled**.
+If successful, this method returns a `204 No Content` response code—except a `200 OK` response code when updating the following properties: **accessType**, **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isFavorite**, **isSubscribedByMail**, **unseenConversationsCount**, **unseenCount**, **unseenMessagesCount**, **welcomeMessageEnabled**.
 
 ### Errors
 
