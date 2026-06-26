@@ -159,10 +159,6 @@ Added the [policyTipAction](/graph/api/resources/policytipaction?view=graph-rest
 
 Added the [sharePointReportSettings](/graph/api/resources/sharepointreportsettings?view=graph-rest-beta&preserve-view=true) resource type and related methods for managing SharePoint API usage report metrics. Use the [enableApiUsageReport](/graph/api/sharepointreportsettings-enableapiusagereport?view=graph-rest-beta&preserve-view=true) and [disableApiUsageReport](/graph/api/sharepointreportsettings-disableapiusagereport?view=graph-rest-beta&preserve-view=true) methods to control which metrics are collected and reported for your tenant.
 
-### Tasks and plans
-
-Added support for tracking task history in Planner. Use the [plannerHistoryItem](/graph/api/resources/plannerhistoryitem?view=graph-rest-beta&preserve-view=true) resource and [List historyItems](/graph/api/plannerplan-list-historyitems?view=graph-rest-beta&preserve-view=true) method to retrieve the history of changes made to tasks within a plan. The [taskHistoryItem](/graph/api/resources/taskhistoryitem?view=graph-rest-beta&preserve-view=true) resource provides snapshots of task states before and after each change through [plannerTaskData](/graph/api/resources/plannertaskdata?view=graph-rest-beta&preserve-view=true) and [plannerTaskDetailsData](/graph/api/resources/plannertaskdetailsdata?view=graph-rest-beta&preserve-view=true).
-
 ### Teamwork and communications | Calls and online meetings
 
 - Use the **isRegistrationRequired** property on the [virtualEventTownhall](/graph/api/resources/virtualeventtownhall?view=graph-rest-beta&preserve-view=true) and [virtualEventWebinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true) resources to specify if attendees must complete the registration flow before they can attend.

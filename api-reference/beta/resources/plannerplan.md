@@ -31,7 +31,6 @@ Represents a plan in Microsoft 365. Either a [group](group.md) or a [user](user.
 |[List plan tasks](../api/plannerplan-list-tasks.md) |[plannerTask](plannertask.md) collection| Get a **plannerTask** object collection.|
 |[Get delta](../api/plannerplan-delta.md) | [plannerPlan](../resources/plannerplan.md) collection | Get newly created, updated, or deleted **plannerPlan** objects in either a **group** or a [plannerRoster](plannerroster.md) type container without having to perform a full read of the entire resource collection. |
 |[Get usage rights](../api/plannerplan-getusagerights.md)|[planUsageRight](../resources/planusageright.md)|Get the usage rights for a specific [plan](../resources/plannerplan.md) based on its sensitivity label assignment and the requesting user's permissions.|
-|[List history items](../api/plannerplan-list-historyitems.md)|[plannerHistoryItem](plannerhistoryitem.md) collection|Get the [history](../resources/plannerhistoryitem.md) of changes made to tasks within a [plan](../resources/plannerplan.md).|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -54,7 +53,6 @@ Represents a plan in Microsoft 365. Either a [group](group.md) or a [user](user.
 |:---------------|:--------|:----------|
 |buckets|[plannerBucket](plannerbucket.md) collection| Collection of buckets in the plan. Read-only. Nullable.|
 |details|[plannerPlanDetails](plannerplandetails.md)| Extra details about the plan. Read-only. Nullable. |
-|historyItems|[plannerHistoryItem](plannerhistoryitem.md) collection| Collection of history items for entities in the plan. Read-only. Nullable. |
 |tasks|[plannerTask](plannertask.md) collection| Collection of tasks in the plan. Read-only. Nullable. |
 
 ## JSON representation

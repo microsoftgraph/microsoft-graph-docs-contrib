@@ -9,6 +9,36 @@
       "source_path_from_root": "/api-reference/beta/api/photoupdatesettings-get.md",
       "redirect_url": "https://learn.microsoft.com/en-us/graph/api/peopleadminsettings-list-photoupdatesettings?view=graph-rest-beta",
       "redirect_document_id":false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/api/plannerplan-list-historyitems.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/plannerplan-list-tasks?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/resources/plannerhistoryitem.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/plannerplan?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/resources/taskhistoryitem.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/plannertask?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/resources/plannerdelta.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/plannerplan-delta?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/resources/plannertaskdata.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/plannertask?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/resources/plannertaskdetailsdata.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/plannertaskdetails?view=graph-rest-beta",
+      "redirect_document_id": false
     }
   ]
 }
