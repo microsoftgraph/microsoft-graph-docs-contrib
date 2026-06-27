@@ -30,6 +30,8 @@ Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 |[Activate](../api/identitygovernance-workflow-activate.md)|None|Run a workflow on-demand.|
 |[Activate with scope](../api/identitygovernance-workflow-activatewithscope.md)|None|Run a workflow on-demand with a specific scope.|
 |[List users in scope](../api/workflow-list-executionscope.md)|[microsoft.graph.user](../resources/user.md) collection|Get a list of users who are in the scope of the execution conditions of a [workflow](../resources/identitygovernance-workflow.md) object.|
+|[Preview task failures](../api/identitygovernance-workflow-previewtaskfailures.md)|[microsoft.graph.identityGovernance.previewFailedTask](../resources/identitygovernance-previewfailedtask.md) collection|Validate the tasks configured in a workflow to check for configuration errors.|
+|[Preview workflow](../api/identitygovernance-workflow-previewworkflow.md)|None|Run a workflow in preview mode for selected directory objects without affecting production users.|
 |**Deleted workflows**|:---|:---|
 |[List](../api/identitygovernance-lifecycleworkflowscontainer-list-deleteditems.md)|[microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md) collection|Get a list of deleted [workflow](../resources/identitygovernance-workflow.md) objects and their properties.|
 |[Get](../api/identitygovernance-deleteditemcontainer-get.md)|[microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md)|Get a deleted [workflow](../resources/identitygovernance-workflow.md).|
@@ -61,6 +63,7 @@ Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 |createdBy|[user](../resources/user.md)|The unique identifier of the Microsoft Entra user that created the [workflow](../resources/identitygovernance-workflow.md) object. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).<br><br>Supports `$filter`(`eq`, `ne`) and `$expand`.|
 |executionScope|[microsoft.graph.user](../resources/user.md) collection|The list of users that meet the [workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md) of a workflow.|
 |lastModifiedBy|[user](../resources/user.md)|The user who last modified the [workflow](../resources/identitygovernance-workflow.md) object. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).<br><br>Supports `$filter`(`eq`, `ne`) and `$expand`.|
+|previewScope|[microsoft.graph.directoryObject](../resources/directoryobject.md) collection|The preview scope for the workflow.|
 |runs|[microsoft.graph.identityGovernance.run](../resources/identitygovernance-run.md) collection|Workflow runs.|
 |taskReports|[microsoft.graph.identityGovernance.taskReport](../resources/identitygovernance-taskreport.md) collection|Represents the aggregation of task execution data for tasks within a [workflow](../resources/identitygovernance-workflow.md) object.|
 |tasks|[microsoft.graph.identityGovernance.task](../resources/identitygovernance-task.md) collection|Represents the configured tasks to execute and their execution sequence within a [workflow](../resources/identitygovernance-workflow.md) object. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). Required.|

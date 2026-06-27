@@ -94,6 +94,7 @@ Namespace: microsoft.graph.identityGovernance
 |onDemand|
 |unknownFutureValue|
 |activatedWithScope|
+|preview|
 
 
 ### workflowTriggerTimeBasedAttribute values 

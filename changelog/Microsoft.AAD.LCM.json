@@ -3,6 +3,56 @@
     {
       "ChangeList": [
         {
+          "Id": "db374ade-275a-44d8-a947-5734820fbade",
+          "ApiChange": "Resource",
+          "ChangedApiName": "previewFailedTask",
+          "ChangeType": "Addition",
+          "Description": "Added the [previewFailedTask](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-previewFailedTask?view=graph-rest-1.0) resource type.",
+          "Target": "previewFailedTask"
+        },
+        {
+          "Id": "db374ade-275a-44d8-a947-5734820fbade",
+          "ApiChange": "Method",
+          "ChangedApiName": "previewTaskFailures",
+          "ChangeType": "Addition",
+          "Description": "Added the [workflow: previewTaskFailures](https://learn.microsoft.com/en-us/graph/api/identitygovernance-workflow-previewtaskfailures?view=graph-rest-1.0) method to the [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflow?view=graph-rest-1.0) resource.",
+          "Target": "workflow"
+        },
+        {
+          "Id": "db374ade-275a-44d8-a947-5734820fbade",
+          "ApiChange": "Method",
+          "ChangedApiName": "previewWorkflow",
+          "ChangeType": "Addition",
+          "Description": "Added the [workflow: previewWorkflow](https://learn.microsoft.com/en-us/graph/api/identitygovernance-workflow-previewworkflow?view=graph-rest-1.0) method to the [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflow?view=graph-rest-1.0) resource.",
+          "Target": "workflow"
+        },
+        {
+          "Id": "db374ade-275a-44d8-a947-5734820fbade",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "previewScope",
+          "ChangeType": "Addition",
+          "Description": "Added the **previewScope** relationship to the [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflow?view=graph-rest-1.0) resource.",
+          "Target": "workflow"
+        },
+        {
+          "Id": "db374ade-275a-44d8-a947-5734820fbade",
+          "ApiChange": "Member",
+          "ChangedApiName": "preview",
+          "ChangeType": "Addition",
+          "Description": "Added the `preview` member to the **workflowExecutionType** enumeration.",
+          "Target": "workflowExecutionType"
+        }
+      ],
+      "Id": "db374ade-275a-44d8-a947-5734820fbade",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-06-26T00:38:50.4327137Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "6a9c6f5d-eeb3-438e-b9f2-4705836e94fe",
           "ApiChange": "Enumeration",
           "ChangedApiName": "customTaskExtensionReplyMode",
