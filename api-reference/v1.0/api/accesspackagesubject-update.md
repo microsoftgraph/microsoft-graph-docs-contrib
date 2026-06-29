@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Update an external directory user represented by an existing [accessPackageSubject](../resources/accesspackagesubject.md) object to change the subject lifecycle.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

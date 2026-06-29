@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Get the properties of an external directory user represented by an existing [accessPackageSubject](../resources/accesspackagesubject.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

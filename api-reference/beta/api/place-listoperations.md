@@ -21,7 +21,7 @@ List all existing [placeOperation](../resources/placeoperation.md) objects. This
 >- Operations are retained for 15 days from creation.
 >- This API has a throttling limit of three calls per second. For more information, see [Microsoft Graph service-specific throttling limits](/graph/throttling-limits).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
