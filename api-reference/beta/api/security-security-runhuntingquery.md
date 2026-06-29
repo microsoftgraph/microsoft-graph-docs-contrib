@@ -13,13 +13,13 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Query a specified set of event, activity, or entity data supported by Microsoft 365 Defender to proactively look for specific threats in your environment.
+Query a specified set of event, activity, or entity data supported by Microsoft Defender XDR to proactively look for specific threats in your environment.
 
-This method is for advanced hunting in Microsoft 365 Defender. This method includes a query in Kusto Query Language (KQL). It specifies a data table in the [advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-schema-tables?view=o365-worldwide&preserve-view=true) and a piped sequence of operators to filter or search that data and format the query output in specific ways. 
+This method is for advanced hunting in Microsoft Defender XDR. This method includes a query in Kusto Query Language (KQL). It specifies a data table in the [advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-schema-tables?view=o365-worldwide&preserve-view=true) and a piped sequence of operators to filter or search that data and format the query output in specific ways. 
 
 Find out more about [hunting for threats across devices, emails, apps, and identities](/microsoft-365/security/defender/advanced-hunting-query-emails-devices?view=o365-worldwide&preserve-view=true). Learn about [KQL](/azure/data-explorer/kusto/query/).
 
-For information on using advanced hunting in the [Microsoft 365 Defender portal](/microsoft-365/security/defender/microsoft-365-defender-portal?view=o365-worldwide&preserve-view=true), see [Proactively hunt for threats with advanced hunting in Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview?view=o365-worldwide&preserve-view=true).
+For information on using advanced hunting in the [Microsoft Defender portal](/microsoft-365/security/defender/microsoft-365-defender-portal?view=o365-worldwide&preserve-view=true), see [Proactively hunt for threats with advanced hunting in Microsoft Defender XDR](/microsoft-365/security/defender/advanced-hunting-overview?view=o365-worldwide&preserve-view=true).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -28,6 +28,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "security_security_runhuntingquery" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-security-runhuntingquery-permissions.md)]
+
+> [!IMPORTANT]
+> The signed-in user also needs one of the following roles:
+>
+> - A [Microsoft Defender XDR Unified role-based access control (RBAC) role](/microsoft-365/security/defender/manage-rbac) that grants advanced hunting access.
+> - A [Microsoft Entra ID role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) that provides only the least privilege necessary: Security Reader, Global Reader, Security Operator, or Security Administrator.
 
 ## HTTP request
 <!-- {
@@ -49,14 +55,15 @@ POST /security/runHuntingQuery
 
 ## Request body
 
-In the request body, provide a JSON object for the `Query` parameter, and optionally include a `Timespan` parameter.
+In the request body, provide a JSON object for the `query` parameter, and optionally include a `timespan` parameter and a `workspaceId` parameter.
 
 | Parameter    | Type            | Description                                                                                                                      | Example                                                            |
 |:-------------|:----------------|:---------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------|
-| Query        | String          | Required. The hunting query in Kusto Query Language (KQL). For more information, see [KQL quick reference](/azure/data-explorer/kql-quick-reference). |                                                                    |
-| Timespan     | String          | Optional. The interval of time over which to query data, in ISO 8601 format. The default value is 30 days, meaning if no startTime is specified, the query looks back 30 days from now. If a time filter is specified in both the query and the startTime parameter, the shorter time span is applied. For example, if the query has a filter for the last 7 days and the startTime is 10 days ago, the query only looks back seven days. | |
+| query        | String          | Required. The hunting query in Kusto Query Language (KQL). For more information, see [KQL quick reference](/azure/data-explorer/kql-quick-reference). |                                                                    |
+| timespan     | String          | Optional. The interval of time over which to query data, in ISO 8601 format. The default value is 30 days. If a time filter is specified in both the query and the **timespan** parameter, the shorter time span is applied. | |
+| workspaceId  | Guid            | Optional. The GUID of a specific Log Analytics workspace to target. If omitted, the service uses the caller's primary workspace. If the workspace isn't found or not accessible, the service falls back to the caller's primary workspace. | `00000000-0000-0000-0000-000000000001` |
 
-The following examples show the possible formats for the `Timepsan` parameter:
+The following examples show the possible formats for the `timespan` parameter:
 
 - **Date/Date**: "2024-02-01T08:00:00Z/2024-02-15T08:00:00Z" - Start and end dates.
 - **Duration/endDate**: "P30D/2024-02-15T08:00:00Z" - A period before the end date.
@@ -91,7 +98,7 @@ The following example specifies a KQL query and:
 POST https://graph.microsoft.com/beta/security/runHuntingQuery
 
 {
-    "Query": "DeviceProcessEvents | where InitiatingProcessFileName =~ \"powershell.exe\" | project Timestamp, FileName, InitiatingProcessFileName | order by Timestamp desc | limit 2"
+    "query": "DeviceProcessEvents | where InitiatingProcessFileName =~ \"powershell.exe\" | project Timestamp, FileName, InitiatingProcessFileName | order by Timestamp desc | limit 2"
 }
 ```
 
@@ -184,8 +191,8 @@ This example specifies a KQL query and looks into the [deviceProcessEvents](/mic
 POST https://graph.microsoft.com/beta/security/runHuntingQuery
 
 {
-    "Query": "DeviceProcessEvents",
-    "Timespan": "P90D"
+    "query": "DeviceProcessEvents",
+    "timespan": "P90D"
 }
 ```
 
@@ -255,6 +262,72 @@ Content-type: application/json
         },
         {
             "Timestamp": "2020-08-30T06:38:30.5163363Z",
+            "FileName": "conhost.exe",
+            "InitiatingProcessFileName": "powershell.exe"
+        }
+    ]
+}
+```
+
+### Example 3: Query against a specific workspace
+
+#### Request
+
+The following example specifies a KQL query and targets a specific Log Analytics workspace by passing the optional **workspaceId** parameter.
+
+<!-- {
+  "blockType": "request",
+  "name": "security_runhuntingquery_example3"
+}
+-->
+```http
+POST https://graph.microsoft.com/beta/security/runHuntingQuery
+Content-Type: application/json
+
+{
+    "query": "DeviceProcessEvents | where InitiatingProcessFileName =~ \"powershell.exe\" | project Timestamp, FileName, InitiatingProcessFileName | order by Timestamp desc | limit 2",
+    "timespan": "P1D",
+    "workspaceId": "00000000-0000-0000-0000-000000000001"
+}
+```
+
+#### Response
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.security.huntingQueryResults",
+  "truncated": true
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "schema": [
+        {
+            "name": "Timestamp",
+            "type": "DateTime"
+        },
+        {
+            "name": "FileName",
+            "type": "String"
+        },
+        {
+            "name": "InitiatingProcessFileName",
+            "type": "String"
+        }
+    ],
+    "results": [
+        {
+            "Timestamp": "2026-03-10T06:38:35.766Z",
+            "FileName": "conhost.exe",
+            "InitiatingProcessFileName": "powershell.exe"
+        },
+        {
+            "Timestamp": "2026-03-10T06:38:30.516Z",
             "FileName": "conhost.exe",
             "InitiatingProcessFileName": "powershell.exe"
         }
