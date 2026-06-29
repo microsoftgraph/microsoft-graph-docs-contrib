@@ -57,7 +57,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: List granular site restore artifacts
+
+The following example shows how to get a list of [granular site restore artifacts](../resources/granularsiterestoreartifact.md).
+
+#### Request
 
 The following example shows a request.
 # [HTTP](#tab/http)
@@ -100,7 +104,7 @@ GET https://graph.microsoft.com/beta/solutions/backupRestore/sharePointRestoreSe
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -146,6 +150,79 @@ Content-Type: application/json
       "siteId": "f3846f8d-80a6-4480-ae20-5966ebdf2009"
     }
   ]
+}
+```
+
+### Example 2: List granular site restore artifacts with a failed artifact
+
+The following example shows how to get a list of [granular site restore artifacts](../resources/granularsiterestoreartifact.md) that includes a failed artifact with error details.
+
+#### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "list_granularsiterestoreartifact_with_error"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/solutions/backupRestore/sharePointRestoreSessions/01b9d504-a6a4-464b-b2e1-0085d9fab651/granularSiteRestoreArtifacts
+```
+
+#### Response
+
+The following example shows the response with a failed artifact that includes error details.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.granularSiteRestoreArtifact)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#solutions/backupRestore/sharePointRestoreSessions('01b9d504-a6a4-464b-b2e1-0085d9fab651')/granularSiteRestoreArtifacts",
+  "value": [
+    {
+      "id": "f3846f8d-80a6-4480-ae20-5966ebdf2009,26380145-c085-4772-b5ef-94de6bc9447e,3be2f282-276a-4a1a-8db0-8bf0849df84d,292dcd7d-b1c3-40e5-afc3-7c10503a0eac",
+      "browseSessionId": "m_RtZ8BiiUXOK69cuN6gwubfm9_yeVlDg8s6hci01_cVOAE",
+      "restoredItemKey": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "webUrl": "https://contoso.sharepoint.com/sites/testsite/Shared Documents/Report.docx",
+      "restoredItemPath": "/sites/testsite/Shared Documents",
+      "restoredItemWebUrl": "https://contoso.sharepoint.com/sites/testsite-restore/Shared Documents/Report.docx",
+      "status": "succeeded",
+      "destinationType": "new",
+      "restorePointDateTime": "2024-06-01T00:00:00Z",
+      "startDateTime": "2024-06-02T10:00:00Z",
+      "completionDateTime": "2024-06-02T10:30:00Z",
+      "siteId": "f3846f8d-80a6-4480-ae20-5966ebdf2009",
+      "error": null
+    },
+    {
+      "id": "f3846f8d-80a6-4480-ae20-5966ebdf2009,26380145-c085-4772-b5ef-94de6bc9447e,3be2f282-276a-4a1a-8db0-8bf0849df84d,8d1ba53f-986a-409f-bf90-3bf55dbd7526",
+      "browseSessionId": "m_RtZ8BiiUXOK69cuN6gwubfm9_yeVlDg8s6hci01_cVOAE",
+      "restoredItemKey": "",
+      "webUrl": "https://contoso.sharepoint.com/sites/testsite/Shared Documents/Archive.zip",
+      "restoredItemPath": "",
+      "restoredItemWebUrl": "",
+      "status": "failed",
+      "destinationType": "new",
+      "restorePointDateTime": "2024-06-01T00:00:00Z",
+      "startDateTime": "2024-06-02T10:00:00Z",
+      "completionDateTime": "2024-06-02T10:15:00Z",
+      "siteId": "f3846f8d-80a6-4480-ae20-5966ebdf2009",
+      "error": {
+        "code": "Unknown",
+        "message": "The restore operation for this item encountered an error. Please retry the operation.",
+        "details": [],
+        "innerError": null
+      }
+    }
+  ]
+
 }
 ```
 

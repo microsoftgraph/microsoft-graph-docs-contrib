@@ -31,6 +31,7 @@ Inherits from [granularRestoreArtifactBase](../resources/granularrestoreartifact
 |browseSessionId|String|The unique identifier of the [browseSession](../resources/browsesessionbase.md). Inherited from [granularRestoreArtifactBase](../resources/granularrestoreartifactbase.md).|
 |completionDateTime|DateTimeOffset|Date time when the artifact's restoration completes. Inherited from [granularRestoreArtifactBase](../resources/granularrestoreartifactbase.md).|
 |destinationType|[destinationType](../resources/driverestoreartifact.md#destinationtype-values)|The restoration destination. Inherited from [granularRestoreArtifactBase](../resources/granularrestoreartifactbase.md). The possible values are: `new`, `inPlace`, `unknownFutureValue`.|
+|error|[publicError](../resources/publicerror.md)|Contains error details if the restoration fails or completes with an error. Inherited from [granularRestoreArtifactBase](../resources/granularrestoreartifactbase.md).|
 |id|String|The unique identifier for the artifact. Inherited from [entity](../resources/entity.md).|
 |restoredItemKey|String|The unique identifier for the restored artifact. Inherited from [granularRestoreArtifactBase](../resources/granularrestoreartifactbase.md).|
 |restoredItemPath|String|The path of the restored artifact. It's the path of the folder where all the artifacts are restored within a granular restore session. Inherited from [granularRestoreArtifactBase](../resources/granularrestoreartifactbase.md).|
@@ -70,6 +71,9 @@ The following JSON representation shows the resource type.
   "siteId": "String",
   "startDateTime": "String (timestamp)",
   "completionDateTime": "String (timestamp)",
-  "destinationType": "String"
+  "destinationType": "String",
+  "error": {
+    "@odata.type": "microsoft.graph.publicError"
+  }
 }
 ```
