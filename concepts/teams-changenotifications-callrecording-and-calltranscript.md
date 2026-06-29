@@ -19,6 +19,22 @@ This article describes scenarios for the **transcript** and **recording** resour
 > [!NOTE]
 > If you request a subscription **expirationDateTime** that is more than 1 hour in the future, you must subscribe to lifecycle notifications by including a **lifecycleNotificationUrl** property in your subscription request. Otherwise, your subscription request fails with the following error message: *lifecycleNotificationUrl is required for subscription creation on this resource when the expirationDateTime value exceeds 1 hour*.
 
+## Tenant admin control over transcript subscriptions
+
+If a tenant administrator turns off Graph API access to transcripts, **creating or renewing** a subscription to any transcript change-notification resource fails with `403 Forbidden` and the `GraphAccessToTranscriptsDisabled` inner-error code. Branch on the `innerError.code` value, not the message text — messages are subject to change.
+
+Affected endpoints:
+
+- [`communications/onlineMeetings/getAllTranscripts`](/graph/api/onlinemeeting-getalltranscripts)
+- [`communications/adhocCalls/getAllTranscripts`](/graph/api/adhoccall-getalltranscripts)
+- [`communications/onlineMeetings/{onlineMeetingId}/transcripts`](/graph/api/onlinemeeting-getalltranscripts)
+- [`communications/adhocCalls/{adhocCallId}/transcripts`](/graph/api/adhoccall-getalltranscripts)
+- [`users/{userId}/onlineMeetings/getAllTranscripts`](/graph/api/onlinemeeting-getalltranscripts)
+- [`users/{userId}/adhocCalls/getAllTranscripts`](/graph/api/adhoccall-getalltranscripts)
+- [`appCatalogs/teamsApps/{teams-app-id}/installedToOnlineMeetings/getAllTranscripts`](/graph/api/onlinemeeting-getalltranscripts)
+
+The setting blocks creating and renewing transcript subscriptions while it is off. This control applies to transcript resources only; recording subscriptions are unaffected. For an example error payload, see [Get callTranscript](/graph/api/calltranscript-get#error-responses).
+
 ## Subscribe to transcripts available at the tenant level
 
 This section describes the methods to subscribe to transcripts available at the tenant level for both online meetings and ad hoc calls.

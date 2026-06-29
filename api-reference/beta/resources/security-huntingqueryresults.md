@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The results of running a [query for advanced hunting](../api/security-security-runhuntingquery.md).
+The results of running an advanced hunting query, returned by either the [runHuntingQuery](../api/security-security-runhuntingquery.md) action or the [getRunHuntingQuery](../api/security-security-getrunhuntingquery.md) function.
 
 ## Properties
 |Property|Type|Description|

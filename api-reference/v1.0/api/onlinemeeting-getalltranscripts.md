@@ -24,7 +24,6 @@ To learn more about using the Microsoft Teams export APIs to export content, see
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
-
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -38,9 +37,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 ```http
 GET /users/{usersId}/onlineMeetings/getAllTranscripts(meetingOrganizerUserId='{userId}',startDateTime={startDateTime},endDateTime={endDateTime})
 ```
+
 >**Note:** The request fails if you don't pass the function parameter **meetingOrganizerUserId**, or a filter clause with **MeetingOrganizer/User/Id**.
 
 ## Function parameters
+
 In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
@@ -59,13 +60,23 @@ This method supports the following OData query parameter to help customize the r
 
 ## Request headers
 
-| Header       | Value |
-|:---------------|:--------|
+| Header      | Value |
+|:------------|:------|
 |Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [callTranscript](../resources/calltranscript.md) objects in the response body.
+
+### Error responses
+
+This API is governed by tenant administrator settings for transcript access. Branch on the `innerError.code` value, not the message text — messages are subject to change.
+
+| Status | Error code (`innerError.code`) | Condition |
+|--------|--------------------------------|-----------|
+| `403 Forbidden` | `GraphAccessToTranscriptsDisabled` | A tenant administrator has turned off Graph API access to transcripts. No retry succeeds until access is re-enabled. |
+
+The `transcriptContentUrl` returned by this function points at the transcript `/content` endpoint, which is additionally subject to the tenant's speaker-attribution setting. For that error and an example error payload, see [Get callTranscript](../api/calltranscript-get.md#error-responses).
 
 ## Examples
 
@@ -83,6 +94,7 @@ The following example shows a request.
   "sampleKeys": ["8b081ef6-4792-4def-b2c9-c363a1bf41d5"],
   "name": "get_alltranscripts"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/onlineMeetings/getAllTranscripts?$filter=MeetingOrganizer/User/Id eq '8b081ef6-4792-4def-b2c9-c363a1bf41d5'
 ```
@@ -122,6 +134,7 @@ GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -168,11 +181,13 @@ The following example shows a request to get all transcripts of a given meeting 
 The following example shows a request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "sampleKeys": ["8b081ef6-4792-4def-b2c9-c363a1bf41d5", "2024-01-15T00:00:00Z", "2024-01-31T00:00:00Z"],
   "name": "get_alltranscripts_with_dates"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/onlineMeetings/getAllTranscripts(meetingOrganizerUserId='8b081ef6-4792-4def-b2c9-c363a1bf41d5', startDateTime=2024-01-15T00:00:00Z, endDateTime=2024-01-31T00:00:00Z)
 ```
@@ -212,6 +227,7 @@ GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

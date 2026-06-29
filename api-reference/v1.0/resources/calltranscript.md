@@ -14,6 +14,9 @@ Namespace: microsoft.graph
 
 Represents a transcript associated with an [online meeting](onlinemeeting.md) and [ad hoc calls](adhoccall.md).
 
+> [!NOTE]
+> For more information on access to transcripts through this API, see [Tenant administrator controls for transcript access](../api/calltranscript-get.md#tenant-administrator-controls-for-transcript-access).
+
 ## Methods
 
 |  Method       |  Return Type  | Description|

@@ -12,7 +12,7 @@ ms.date: 12/02/2025
 
 Namespace: microsoft.graph
 
-Retrieve the list of [callTranscript](../resources/calltranscript.md) objects associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md). This API supports the retrieval of call transcripts from all meeting types except live events.
+Retrieve the list of [callTranscript](../resources/calltranscript.md) objects associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md). This API supports the retrieval of call transcripts from all meeting types except live events. Access to this API is governed by tenant administrator settings. For more information, see [Error responses](#error-responses).
 
 > [!NOTE]
 >
@@ -56,8 +56,8 @@ This method supports the `$select`, `$filter`, and `$top`  [OData query paramete
 ## Request headers
 
 | Header       | Value |
-|:---------------|:--------|
-|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|:-------------|:------|
+|Authorization |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
 
 ## Request body
 
@@ -66,6 +66,25 @@ Don't supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [callTranscript](../resources/calltranscript.md) objects in the response body.
+
+### Error responses
+If a tenant administrator has turned off Graph API access to transcripts for the tenant, this request returns `403 Forbidden` with the `GraphAccessToTranscriptsDisabled` inner-error code. There is no request-side workaround; the app receives this response until an administrator re-enables access.
+
+<!-- { "blockType": "ignored" } -->
+```http
+HTTP/1.1 403 Forbidden
+Content-Type: application/json
+
+{
+  "error": {
+    "code": "Forbidden",
+    "message": "Graph API access to transcripts is disabled for this tenant.",
+    "innerError": {
+      "code": "GraphAccessToTranscriptsDisabled"
+    }
+  }
+}
+```
 
 ## Examples
 
@@ -121,8 +140,7 @@ GET https://graph.microsoft.com/v1.0/users/ba321e0d-79ee-478d-8e28-85a19507f456/
 
 The following example shows the response.
 
-> [!NOTE]
-> The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -201,6 +219,5 @@ Content-Type: application/json
     ]
 }
 ```
-
 
 </details>
