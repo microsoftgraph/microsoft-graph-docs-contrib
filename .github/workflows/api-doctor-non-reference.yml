@@ -1,0 +1,17 @@
+# This file runs on non-reference to do nothing
+# It is required so that the "required status check" actually happens in the PR,
+# even though no files are checked.
+name: API Doctor validation
+on:
+  pull_request:
+    branches:
+    - main
+    - live
+    paths-ignore:
+    - api-reference/**
+
+jobs:
+  validate-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - run: 'echo "No validation required for non-reference files"'
