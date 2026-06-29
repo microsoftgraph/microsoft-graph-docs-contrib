@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 06/22/2026
+ms.date: 06/29/2026
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -1229,6 +1229,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### Calendars.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 470229df-a15a-4b08-9d95-8c534862b362 | - |
+| DisplayText | Read all users' work hours and locations | - |
+| Description | Allows the app to read work hours and locations settings, recurrences, and occurrences for all users in the organization, without a signed-in user. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
 ### Calendars.Read.Shared
 
 | Category | Application | Delegated |
@@ -1278,6 +1289,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 ![personal Microsoft accounts][MSA] The *Calendars.ReadWrite* delegated permission is available for consent in personal Microsoft accounts.
 
 [!INCLUDE [Calendars.ReadWrite](../includes/permissions-notes/calendars.readwrite.md)]
+
+---
+
+### Calendars.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | d91697b0-a708-4c11-a712-8fb2dc081aa2 | - |
+| DisplayText | Read and write all users' work hours and locations | - |
+| Description | Allows the app to read, create, update, and delete work hours and locations settings, recurrences, and occurrences for all users in the organization, without a signed-in user. | - |
+| AdminConsentRequired | Yes | - |
 
 ---
 
@@ -1472,6 +1494,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### Calls.ReportSyntheticMedia.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 050b0d28-840a-4ff6-bdf9-cc6221acbc1f | - |
+| DisplayText | Report synthetic media detections in calls | - |
+| Description | Allows the app to report synthetic media detections for participants in calls, without a signed-in user. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
 ### CallTranscripts.Read.All
 
 | Category | Application | Delegated |
@@ -1479,6 +1512,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | 4cd61b6d-8692-40bf-9d90-7f38db5e5fce | fbace248-5d8e-441c-85ca-cc19221a69a2 |
 | DisplayText | Read all call transcripts | Read all transcripts of calls.  |
 | Description | Allows the app to read call transcripts for all calls without a signed-in user. | Allows the app to read all transcripts of calls, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### CaseManagement.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | b328f35f-712c-40d6-b6b4-95449d77b352 | 7bdc421c-99cd-4b67-a749-aa8e92775f7e |
+| DisplayText | Read all cases, relations, tasks, attachments and activities | Read all cases, relations, tasks, attachments and activities |
+| Description | Allows the app to read all cases, relations, tasks, attachments and activities, without a signed-in user. | Allows the app to read all cases, relations, tasks, attachments and activities, on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### CaseManagement.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 57ac77a0-bb98-4ba8-bf9a-7af06dcdcc1f | 363a0763-d7eb-40bc-9457-6be55acd81e2 |
+| DisplayText | Read and write to all cases, relations, tasks, attachments and activities | Read and write to all cases, relations, tasks, attachments and activities |
+| Description | Allows the app to read and write to all cases, relations, tasks, attachments and activities, without a signed-in user. | Allows the app to read and write to all cases, relations, tasks, attachments and activities, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -4857,6 +4912,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### MailboxItem.ReadWrite
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | ec1ade38-5268-4bc8-87fa-b230e42f7a88 |
+| DisplayText | - | Read and write your mailbox items |
+| Description | - | Allows the app to read, write, and delete the user's mailbox items, on behalf of the signed-in user. |
+| AdminConsentRequired | - | Yes |
+
+---
+
+### MailboxItem.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 1583d471-fede-4e7c-b062-57e9d60cfb49 | - |
+| DisplayText | Read and write all users' mailbox items | - |
+| Description | Allows the app to read, write, and delete all users' mailbox items, without a signed-in user. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
 ### MailboxSettings.Read
 
 | Category | Application | Delegated |
@@ -7728,6 +7805,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Read and write all Viva Engage storylines | Read and write all Viva Engage storylines |
 | Description | Allows the app to modify Viva Engage storylines, read all storylines properties, update storyline properties, and delete storyline properties without a signed-in user. | Allows the app to modify the Viva Engage storyline and read all storyline properties on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
+
+---
+
+### SubjectNameRegistration.ReadWrite
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | fb0d7592-1943-4141-a7bc-b7ae45b84ecf |
+| DisplayText | - | Read and write a subject name registration. |
+| Description | - | Allows the app to read and write all the subject name registration properties on behalf of the signed-in user. |
+| AdminConsentRequired | - | No |
 
 ---
 

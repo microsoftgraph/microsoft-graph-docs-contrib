@@ -8,6 +8,7 @@ doc_type: apiPageType
 ms.date: 09/18/2025
 ---
 
+
 # Get callTranscript
 
 Namespace: microsoft.graph
@@ -51,12 +52,37 @@ To use application permissions for this API, tenant administrators must create a
 > * This API is available for a meeting that hasn't expired. For more information, see [Limits and specifications for Microsoft Teams](/microsoftteams/limits-specifications-teams#meeting-expiration).
 > * This API is also available to users who are part of the meeting calendar invite, which applies to both private chat meetings and channel meetings.
 
+### Tenant administrator controls for transcript access
+
+Access to transcripts through this API requires the appropriate Graph permissions and is also
+governed by two independent tenant administrator settings:
+
+* **Graph API access to transcripts.** When disabled, all transcript requests (metadata, `metadataContent`, and `content`) return `403 Forbidden` with the `GraphAccessToTranscriptsDisabled` inner-error code, regardless of the requested format.
+
+* **Speaker attribution.** When disabled, transcript content can be retrieved only without speaker information.
+
+A tenant administrator configures these meeting settings in the Teams Admin Center, or by using the `Set-CsTeamsMeetingConfiguration` cmdlet.
+
+The `/content` endpoint supports two formats:
+
+* `text/vtt` (default) — WebVTT with timestamped utterances and `<v Speaker>` voice tags (speaker-attributed).
+* `application/vnd.microsoft.graph.transcript+text` — timestamped utterances without speaker information (speaker-unattributed).
+
+Select `text/vtt` with either the `Accept` header or the `$format` query parameter. The `application/vnd.microsoft.graph.transcript+text` format must be selected with the `Accept` header; it isn't supported through the `$format` query parameter.
+
+When the tenant administrator has disabled speaker attribution, requesting the attributed format
+(`text/vtt`) returns `403 Forbidden` with the `SpeakerAttributionNotAllowed` inner-error code. Retry with the unattributed format to retrieve the transcript. The speaker-attribution setting never blocks the unattributed format, but it remains subject to the Graph API access to transcripts setting.
+
+> [!NOTE]
+> The `application/vnd.microsoft.graph.transcript+text` format and the related tenant administrator controls take effect at the end of July 2026.
+
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
+On the `/content` endpoints, select the transcript content format with the `Accept` request header, as described in [Transcript content formats](#transcript-content-formats).
 
 Get a single transcript for an online meeting
 
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}/transcripts/{transcriptId}
 GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}
@@ -64,9 +90,18 @@ GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}
 
 Get the content of a single transcript for an online meeting
 
+* Both transcription and speaker attribution are enabled
+
 ```http
-GET me/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
-GET users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
+GET /me/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
+GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
+```
+
+* Transcription is enabled, but speaker attribution is disabled
+
+```http
+GET /me/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
+GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
 ```
 
 Get a single transcript for an ad hoc call
@@ -78,8 +113,18 @@ GET /users/{userId}/adhocCalls/{callId}/transcripts/{transcriptId}
 
 Get the content of a single transcript for an ad hoc call
 
+* Both transcription and speaker attribution are enabled
+
+<!-- { "blockType": "ignored" } -->
 ```http
-GET me/adhocCalls/{callId}/transcripts/{transcriptId}/content
+GET /me/adhocCalls/{callId}/transcripts/{transcriptId}/content
+GET /users/{userId}/adhocCalls/{callId}/transcripts/{transcriptId}/content
+```
+
+* Transcription is enabled, but speaker attribution is disabled
+
+```http
+GET /me/adhocCalls/{callId}/transcripts/{transcriptId}/content
 GET /users/{userId}/adhocCalls/{callId}/transcripts/{transcriptId}/content
 ```
 
@@ -90,8 +135,9 @@ This method supports the `$select` [OData query parameter](/graph/query-paramete
 ### Request headers
 
 | Header       | Value |
-|:---------------|:--------|
-|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+|:-------------|:--------|
+|Authorization | Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+| Accept       | `text/vtt` or `application/vnd.microsoft.graph.transcript+text`. Optional. On the `/content` endpoints, selects the transcript content format. For `text/vtt`, this is equivalent to the `$format` query parameter; the `application/vnd.microsoft.graph.transcript+text` format is supported only through this header.|
 
 ### Request body
 
@@ -99,7 +145,62 @@ Don't supply a request body for this method.
 
 ### Response
 
-If successful, this method returns a `200 OK` response code and a [callTranscript](../resources/callTranscript.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [callTranscript](../resources/calltranscript.md) object in the response body.
+
+### Transcript content formats
+
+The `/content` endpoint supports the following formats. Select `text/vtt` with either the `$format` query parameter or the `Accept` request header. The `application/vnd.microsoft.graph.transcript+text` format must be selected with the `Accept` request header.
+
+| Format | Speaker attribution | Description |
+|--------|---------------------|-------------|
+| `text/vtt` | Yes | WebVTT with timestamped utterances and `<v Speaker>` voice tags. Returned by default. |
+| `application/vnd.microsoft.graph.transcript+text` | No | Timestamped utterances only, without `<v Speaker>` voice tags. |
+
+If the tenant disallows speaker attribution, requests for `text/vtt` fail with `403 Forbidden` / `SpeakerAttributionNotAllowed`; request `application/vnd.microsoft.graph.transcript+text` instead.
+
+### Error responses
+
+This API is governed by tenant administrator settings for transcript access and speaker attribution. Branch on the `innerError.code` value, not the message text. Messages are subject to change.
+
+#### Graph API access to transcripts is disabled
+
+If a tenant administrator has turned off Graph API access to transcripts for the tenant, all transcript requests — metadata, `metadataContent`, and `content` — return `403 Forbidden` with the `GraphAccessToTranscriptsDisabled` inner-error code. There is no request-side workaround; the app receives this response until an administrator re-enables access.
+
+<!-- { "blockType": "ignored" } -->
+```http
+HTTP/1.1 403 Forbidden
+Content-Type: application/json
+
+{
+  "error": {
+    "code": "Forbidden",
+    "message": "Graph API access to transcripts is disabled for this tenant.",
+    "innerError": {
+      "code": "GraphAccessToTranscriptsDisabled"
+    }
+  }
+}
+```
+
+#### Speaker-attributed content is disabled
+
+When a tenant administrator disallows speaker attribution, the `/content` endpoints return `403 Forbidden` with the `SpeakerAttributionNotAllowed` inner-error code **only if the request asks for a speaker-attributed format** (`text/vtt`). Retry the same request asking for the unattributed format, `application/vnd.microsoft.graph.transcript+text`, which succeeds. This error applies to the `/content` endpoints only (per-meeting and ad hoc); transcript metadata requests are unaffected.
+
+<!-- { "blockType": "ignored" } -->
+```http
+HTTP/1.1 403 Forbidden
+Content-Type: application/json
+
+{
+  "error": {
+    "code": "Forbidden",
+    "message": "Speaker-attributed transcript content is disabled for this tenant. Retry with Accept 'application/vnd.microsoft.graph.transcript+text'.",
+    "innerError": {
+      "code": "SpeakerAttributionNotAllowed"
+    }
+  }
+}
+```
 
 ### Examples
 
@@ -120,6 +221,7 @@ The following example shows how to get a single transcript of an online meeting.
   "sampleKeys": ["ba321e0d-79ee-478d-8e28-85a19507f456", "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ", "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4"]
 }
 -->
+
 ``` http
 GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4
 ```
@@ -204,6 +306,7 @@ The following example shows how to get a single transcript of an ad hoc call.
   "sampleKeys": ["f2e8e111-3887-4936-87f8-639292c70d34", "5f3640e7-a59c-4bec-82ca-e66251f795b7", "MyMjMTk6NWFiOWQ2OGUxNDhlNDgyNThmYmMzOWYwOGUzOTkyN2NAdGhyZWFkLnYyIyM1ZjM2NDBlNy1hNTljLTRiZWMtODJjYS1lNjYyNTFmNzk1YjctMTc1NDg5MjIyMi1UcmFuc2NyaXB0VjIjIzA="]
 }
 -->
+
 ``` http
 GET https://graph.microsoft.com/beta/users/f2e8e111-3887-4936-87f8-639292c70d34/adhocCalls/5f3640e7-a59c-4bec-82ca-e66251f795b7/transcripts/MyMjMTk6NWFiOWQ2OGUxNDhlNDgyNThmYmMzOWYwOGUzOTkyN2NAdGhyZWFkLnYyIyM1ZjM2NDBlNy1hNTljLTRiZWMtODJjYS1lNjYyNTFmNzk1YjctMTc1NDg5MjIyMi1UcmFuc2NyaXB0VjIjIzA=
 
@@ -276,17 +379,18 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Get a callTranscript content for an online meeting
+### Example 3: Get a callTranscript content for an online meeting where speaker-attributed content is enabled
 
 #### Request
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_callTranscript_content",
+  "name": "get_callTranscript_content_online_speaker_attribution_enabled",
   "sampleKeys": ["ba321e0d-79ee-478d-8e28-85a19507f456", "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ", "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4"]
 }
 -->
+
 ``` http
 GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/content
 ```
@@ -343,19 +447,21 @@ WEBVTT
 <v User Name>This is a transcript test.</v>
 ```
 
-### Example 4: Get a callTranscript content for an ad hoc call
+### Example 4: Get a callTranscript content for an ad hoc call when speaker-attributed content is disabled
 
 #### Request
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_callTranscript_content_adhoc",
-  "sampleKeys": ["f2e8e111-3887-4936-87f8-639292c70d34/adhocCalls/5f3640e7-a59c-4bec-82ca-e66251f795b7", "MyMjMTk6NWFiOWQ2OGUxNDhlNDgyNThmYmMzOWYwOGUzOTkyN2NAdGhyZWFkLnYyIyM1ZjM2NDBlNy1hNTljLTRiZWMtODJjYS1lNjYyNTFmNzk1YjctMTc1NDg5MjIyMi1UcmFuc2NyaXB0VjIjIzA=/"]
+  "name": "get_callTranscript_content_adhoc_speaker_attribution_disabled",
+  "sampleKeys": ["f2e8e111-3887-4936-87f8-639292c70d34", "5f3640e7-a59c-4bec-82ca-e66251f795b7", "MyMjMTk6NWFiOWQ2OGUxNDhlNDgyNThmYmMzOWYwOGUzOTkyN2NAdGhyZWFkLnYyIyM1ZjM2NDBlNy1hNTljLTRiZWMtODJjYS1lNjYyNTFmNzk1YjctMTc1NDg5MjIyMi1UcmFuc2NyaXB0VjIjIzA="]
 }
 -->
+
 ``` http
-GET https://graph.microsoft.com/beta/users/f2e8e111-3887-4936-87f8-639292c70d34/adhocCalls/5f3640e7-a59c-4bec-82ca-e66251f795b7/transcripts/MyMjMTk6NWFiOWQ2OGUxNDhlNDgyNThmYmMzOWYwOGUzOTkyN2NAdGhyZWFkLnYyIyM1ZjM2NDBlNy1hNTljLTRiZWMtODJjYS1lNjYyNTFmNzk1YjctMTc1NDg5MjIyMi1UcmFuc2NyaXB0VjIjIzA=/content?$format=text/vtt
+GET https://graph.microsoft.com/beta/users/f2e8e111-3887-4936-87f8-639292c70d34/adhocCalls/5f3640e7-a59c-4bec-82ca-e66251f795b7/transcripts/MyMjMTk6NWFiOWQ2OGUxNDhlNDgyNThmYmMzOWYwOGUzOTkyN2NAdGhyZWFkLnYyIyM1ZjM2NDBlNy1hNTljLTRiZWMtODJjYS1lNjYyNTFmNzk1YjctMTc1NDg5MjIyMi1UcmFuc2NyaXB0VjIjIzA=/content
+Accept: application/vnd.microsoft.graph.transcript+text
 ```
 
 # [C#](#tab/csharp)
@@ -400,72 +506,210 @@ The response contains the transcript in the body as bytes. The `content-type` he
   "@odata.type": "stream"
 }
 -->
+
 ```http
 HTTP/1.1 200 OK
-Content-type: text/vtt
+Content-type: application/vnd.microsoft.graph.transcript+text
 
-WEBVTT
+00:00:01.500 --> 00:00:04.000 
 
-00:00:03.663 --> 00:00:07.903
-<v MOD Administrator>Hello. Hello. Hello. Hello. Hello. Hello.</v>
+Hello, thanks for joining. 
 
-00:00:08.063 --> 00:00:08.103
-<v MOD Administrator>Oh.</v>
+00:00:04.000 --> 00:00:07.200 
+
+Glad to be here. 
 ```
 
-### Example 5: Get a callTranscript content specifying $format query param
+### Example 5: Get a callTranscript content for an online meeting when speaker-attributed content is disabled
+
+The following example shows how to get the content of a single transcript of an online meeting when speaker-attributed content is disabled.
 
 #### Request
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_callTranscript_content_format",
+  "name": "get_callTranscript_content_online_speaker_attribution_disabled",
   "sampleKeys": ["ba321e0d-79ee-478d-8e28-85a19507f456", "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ", "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4"]
 }
 -->
+
 ``` http
-GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/content?$format=text/vtt
+GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/content
+Accept: application/vnd.microsoft.graph.transcript+text
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-calltranscript-content-format-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-calltranscript-content-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-calltranscript-content-format-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/get-calltranscript-content-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-calltranscript-content-format-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-calltranscript-content-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-calltranscript-content-format-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-calltranscript-content-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-calltranscript-content-format-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/get-calltranscript-content-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-calltranscript-content-format-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-calltranscript-content-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-calltranscript-content-format-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/get-calltranscript-content-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ---
 
 #### Response
 
-Response contains bytes for the transcript in the body. The `content-type` header specifies the type of the transcript content.
+The response contains the transcript content in the body as bytes. The `content-type` header specifies the type of the transcript content. Negative offsets indicate that the transcription began while the conversation was ongoing.
+
+> [!NOTE]
+> The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "stream"
+}
+-->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/vnd.microsoft.graph.transcript+text
+
+00:00:01.500 --> 00:00:04.000 
+
+Hello, thanks for joining. 
+
+00:00:04.000 --> 00:00:07.200 
+
+Glad to be here. 
+```
+
+### Example 6: Get unattributed callTranscript content
+
+The following example shows how to get transcript content without speaker attribution. Request this format using the `Accept` header.
+
+#### Request
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/content
+Accept: application/vnd.microsoft.graph.transcript+text
+```
+
+#### Response
+
+The response contains the transcript content in the body as bytes, without `<v Speaker>` voice tags. The content-type header specifies the type of the transcript content.
+
+> [!NOTE]
+> The response object shown here might be shortened for readability.
+
+<!-- { "blockType": "ignored" } -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/vnd.microsoft.graph.transcript+text
+
+00:00:16.246 --> 00:00:17.726
+This is a transcript test.
+```
+
+### Example 7: Speaker attribution disabled by tenant policy
+
+The following example shows the response when speaker attribution is disabled for the tenant and the request asks for an attributed format (`text/vtt`). Retry with `application/vnd.microsoft.graph.transcript+text` to receive the unattributed transcript.
+
+#### Request
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4/content
+Accept: text/vtt
+```
+
+#### Response
+
+<!-- { "blockType": "ignored" } -->
+```http
+HTTP/1.1 403 Forbidden
+Content-Type: application/json
+
+{
+  "error": {
+    "code": "Forbidden",
+    "message": "Speaker-attributed transcript content is disabled for this tenant. Retry with Accept 'application/vnd.microsoft.graph.transcript+text'.",
+    "innerError": {
+      "code": "SpeakerAttributionNotAllowed"
+    }
+  }
+}
+```
+
+### Example 8: Get a callTranscript content for an ad hoc call when speaker-attributed content is enabled
+
+The following example shows how to get the content of a single transcript of an ad hoc call when speaker-attributed content is enabled.
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_callTranscript_content_adhoc_speaker_attribution_enabled",
+  "sampleKeys": ["f2e8e111-3887-4936-87f8-639292c70d34", "5f3640e7-a59c-4bec-82ca-e66251f795b7", "MyMjMTk6NWFiOWQ2OGUxNDhlNDgyNThmYmMzOWYwOGUzOTkyN2NAdGhyZWFkLnYyIyM1ZjM2NDBlNy1hNTljLTRiZWMtODJjYS1lNjYyNTFmNzk1YjctMTc1NDg5MjIyMi1UcmFuc2NyaXB0VjIjIzA="]
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/beta/users/f2e8e111-3887-4936-87f8-639292c70d34/adhocCalls/5f3640e7-a59c-4bec-82ca-e66251f795b7/transcripts/MyMjMTk6NWFiOWQ2OGUxNDhlNDgyNThmYmMzOWYwOGUzOTkyN2NAdGhyZWFkLnYyIyM1ZjM2NDBlNy1hNTljLTRiZWMtODJjYS1lNjYyNTFmNzk1YjctMTc1NDg5MjIyMi1UcmFuc2NyaXB0VjIjIzA=/content
+Accept: text/vtt
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-calltranscript-content-adhoc-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-calltranscript-content-adhoc-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-calltranscript-content-adhoc-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-calltranscript-content-adhoc-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-calltranscript-content-adhoc-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-calltranscript-content-adhoc-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The response contains the transcript in the body as bytes. The `content-type` header specifies the type of the transcript content. Negative offsets indicate that the transcription began while the conversation was ongoing.
 
 >[!NOTE]
->The response object shown here might be shortened for readability.
+> The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -478,11 +722,14 @@ Content-type: text/vtt
 
 WEBVTT
 
-0:0:0.0 --> 0:0:5.320
-<v User Name>This is a transcript test.</v>
+00:00:01.500 --> 00:00:04.000 
+<v User Name>Hello, thanks for joining.</v>
+
+00:00:04.000 --> 00:00:07.200 
+<v User Name>Glad to be here.</v>
 ```
 
-### Example 6: Get a callTranscript metadataContent for online meetings
+### Example 9: Get a callTranscript metadataContent for online meetings
 
 #### Request
 
@@ -547,7 +794,7 @@ WEBVTT
 {"startDateTime":"2023-03-08T08:22:30.0461639+00:00","endDateTime":"2023-03-08T08:22:31.5261639+00:00","speakerName":"User Name","spokenText":"This is a transcription test.","spokenLanguage":"en-us"}
 ```
 
-### Example 7: Get a callTranscript metadataContent for ad hoc calls
+### Example 10: Get a callTranscript metadataContent for ad hoc calls
 
 #### Request
 
@@ -616,7 +863,7 @@ WEBVTT
 {"startDateTime":"2025-08-11T06:03:51.0390101+00:00","endDateTime":"2025-08-11T06:03:51.0790101+00:00","speakerName":"MOD Administrator","spokenText":"Oh.","spokenLanguage":"en-us"}
 ```
 
-### Example 8: Get a callTranscript from a corresponding recording using contentCorrelationId
+### Example 11: Get a callTranscript from a corresponding recording using contentCorrelationId
 
 The following example shows how to get a single transcript of an online meeting corresponding to a recording using the **contentCorrelationId** property.
 
