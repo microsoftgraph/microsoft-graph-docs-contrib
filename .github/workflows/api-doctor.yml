@@ -18,7 +18,7 @@ env:
 
 jobs:
   validate-docs:
-    name: Validate reference docs
+    name: API Doctor Validation
     # Must be Windows because NuGet-published ApiDoctor
     # is Windows only.
     runs-on: windows-latest

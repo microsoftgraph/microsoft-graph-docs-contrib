@@ -12,6 +12,7 @@ on:
 
 jobs:
   validate-docs:
+    name: API Doctor Validation
     runs-on: ubuntu-latest
     steps:
       - run: 'echo "No validation required for non-reference files"'
