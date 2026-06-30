@@ -1,0 +1,28 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```csharp
+
+// Code snippets are only available for the latest version. Current version is 5.x
+
+// Dependencies
+using Microsoft.Graph.Beta.Security.MicrosoftGraphSecurityRunHuntingQuery;
+
+var requestBody = new RunHuntingQueryPostRequestBody
+{
+	Query = "DeviceProcessEvents | where InitiatingProcessFileName =~ \"powershell.exe\" | project Timestamp, FileName, InitiatingProcessFileName | order by Timestamp desc | limit 2",
+	Timespan = "P1D",
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"workspaceId" , "00000000-0000-0000-0000-000000000001"
+		},
+	},
+};
+
+// To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
+var result = await graphClient.Security.MicrosoftGraphSecurityRunHuntingQuery.PostAsync(requestBody);
+
+
+```

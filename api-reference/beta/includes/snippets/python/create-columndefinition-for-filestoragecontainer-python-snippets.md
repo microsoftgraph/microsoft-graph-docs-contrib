@@ -21,6 +21,9 @@ request_body = ColumnDefinition(
 		lines_for_editing = 0,
 		max_length = 255,
 	),
+	additional_data = {
+			"is_searchable" : False,
+	}
 )
 
 result = await graph_client.storage.file_storage.containers.by_file_storage_container_id('fileStorageContainer-id').columns.post(request_body)

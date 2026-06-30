@@ -24,6 +24,10 @@ $text->setAppendChangesToExistingText(false);
 $text->setLinesForEditing(0);
 $text->setMaxLength(255);
 $requestBody->setText($text);
+$additionalData = [
+	'isSearchable' => false,
+];
+$requestBody->setAdditionalData($additionalData);
 
 $result = $graphServiceClient->storage()->fileStorage()->containers()->byFileStorageContainerId('fileStorageContainer-id')->columns()->post($requestBody)->wait();
 
