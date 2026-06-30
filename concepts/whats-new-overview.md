@@ -166,6 +166,7 @@ Added the [identityAnalyticsRoot](/graph/api/resources/identityanalyticsroot?vie
 
 ### Sites and lists
 
+- Added the **isSearchable** property to the [columnDefinition](/graph/api/resources/columndefinition?view=graph-rest-beta&preserve-view=true) resource type to enable independent control of the searchable state of a column, separate from the **indexed** property. This property is currently supported only for columns in a [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true).
 - Added the [sharePointReportSettings](/graph/api/resources/sharepointreportsettings?view=graph-rest-beta&preserve-view=true) resource type and related methods for managing SharePoint API usage report metrics. Use the [enableApiUsageReport](/graph/api/sharepointreportsettings-enableapiusagereport?view=graph-rest-beta&preserve-view=true) and [disableApiUsageReport](/graph/api/sharepointreportsettings-disableapiusagereport?view=graph-rest-beta&preserve-view=true) methods to control which metrics are collected and reported for your tenant.
 
 ### Teamwork and communications | Calls and online meetings
