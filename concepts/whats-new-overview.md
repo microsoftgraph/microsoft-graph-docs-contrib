@@ -89,6 +89,10 @@ Evaluate applications in the Microsoft Entra application gallery by using the [a
 - Deprecated the **queryExpression** property on the [artifactQuery](/graph/api/resources/artifactquery?view=graph-rest-beta&preserve-view=true) resource. Use the **structuredQueryExpression** property instead to create structured search queries.
 - Added the **error** property of type [publicError](/graph/api/resources/publicerror?view=graph-rest-beta&preserve-view=true) to the [granularRestoreArtifactBase](/graph/api/resources/granularrestoreartifactbase?view=graph-rest-beta&preserve-view=true) resource and its derived types. Use this property to get error details when a granular restore operation for an individual artifact fails or completes with an error.
 
+### Files
+
+- Use the new [lockInfo](/graph/api/resources/lockinfo) property on the [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta&preserve-view=true) resource to read lock metadata for an item in OneDrive or SharePoint, including the lock type, when it was created, when it expires, and which users currently hold the lock.
+
 ### Teamwork and communications | Calls and online meetings
 
 Use the **isRegistrationRequired** property on the [virtualEventTownhall](/graph/api/resources/virtualeventtownhall?view=graph-rest-beta&preserve-view=true) and [virtualEventWebinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true) resources to specify if attendees must complete the registration flow before they can attend.
@@ -209,7 +213,6 @@ Added the **groupDisplayName** property to the [delegatedAdministrationRoleAssig
 ### Files
 
 - Use the [Upsert permissions](/graph/api/filestoragecontainer-patch-permissions) API to create or update up to 10 [permission](/graph/api/resources/permission) objects on a [fileStorageContainer](/graph/api/resources/filestoragecontainer) in a single request.
-- Use the new [lockInfo](/graph/api/resources/lockinfo) property on the [driveItem](/graph/api/resources/driveitem) resource to read lock metadata for an item in OneDrive or SharePoint, including the lock type, when it was created, when it expires, and which users currently hold the lock.
 - Use the [Get fileStorageContainer permission](/graph/api/filestoragecontainer-get-permissions) API to get a specific [permission](/graph/api/resources/permission) from a [fileStorageContainer](/graph/api/resources/filestoragecontainer) object.
 - Added the **@microsoft.graph.conflictBehavior** annotation parameter to the [Create permission](/graph/api/filestoragecontainer-post-permissions) method. Use `fail` to return a `409 Conflict` response code when the identity exists with a different role, or `replace` to update the existing role.
 
