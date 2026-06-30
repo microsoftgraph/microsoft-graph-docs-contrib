@@ -114,6 +114,7 @@ Content-Type: application/json
   "hidden": false,
   "id": "99ddcf45-e2f7-4f17-82b0-6fba34445103",
   "indexed": false,
+  "isSearchable": false,
   "name": "Title",
   "text": {
     "allowMultipleLines": false,
