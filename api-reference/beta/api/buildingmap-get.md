@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Get the [map](../resources/buildingmap.md) of a building in IMDF format.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
