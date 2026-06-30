@@ -279,6 +279,48 @@
           "ApiChange": "Method",
           "ChangedApiName": "cancelProcessing",
           "ChangeType": "Addition",
+          "Description": "Added the [cancelProcessing](https://learn.microsoft.com/en-us/graph/api/identityGovernance-workflow-cancelProcessing?view=graph-rest-1.0) method to the [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflow?view=graph-rest-1.0) resource.",
+          "Target": "workflow"
+        },
+        {
+          "Id": "3c6e3081-1ae2-4f9d-bd88-242f194293de",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cancelScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [cancelScope](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-cancelscope?view=graph-rest-1.0) complex type.",
+          "Target": "cancelScope"
+        },
+        {
+          "Id": "3c6e3081-1ae2-4f9d-bd88-242f194293de",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cancelRunsScope",
+          "ChangeType": "Addition",
+          "Description": "Added the [cancelRunsScope](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-cancelrunsscope?view=graph-rest-1.0) complex type.",
+          "Target": "cancelRunsScope"
+        }
+      ],
+      "Id": "3c6e3081-1ae2-4f9d-bd88-242f194293de",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-06-30T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3c6e3081-1ae2-4f9d-bd88-242f194293de",
+          "ApiChange": "Member",
+          "ChangedApiName": "canceling",
+          "ChangeType": "Addition",
+          "Description": "Added the `canceling` member to the **lifecycleWorkflowProcessingStatus** enumeration.",
+          "Target": "lifecycleWorkflowProcessingStatus"
+        },
+        {
+          "Id": "3c6e3081-1ae2-4f9d-bd88-242f194293de",
+          "ApiChange": "Method",
+          "ChangedApiName": "cancelProcessing",
+          "ChangeType": "Addition",
           "Description": "Added the [cancelProcessing](https://learn.microsoft.com/en-us/graph/api/identityGovernance-workflow-cancelProcessing?view=graph-rest-beta) method to the [workflow](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-workflow?view=graph-rest-beta) resource.",
           "Target": "workflow"
         }
