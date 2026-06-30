@@ -40,44 +40,48 @@ The type-related properties (boolean, calculated, choice, currency, dateTime, lo
 
 | Property                  | Type                            | Description                                                                                                                         |
 | :------------------------ | :------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------- |
-| **columnGroup**           | string                          | For site columns, the name of the group this column belongs to. Helps organize related columns.                                     |
-| **description**           | string                          | The user-facing description of the column.                                                                                          |
-| **displayName**           | string                          | The user-facing name of the column.                                                                                                 |
-| **enforceUniqueValues**   | Boolean                         | If `true`, no two list items may have the same value for this column.                                                               |
-| **hidden**                | Boolean                         | Specifies whether the column is displayed in the user interface.                                                                    |
-| **id**                    | string                          | The unique identifier for the column.                                                                                               |
-| **indexed**               | Boolean                         | Specifies whether the column values can used for sorting and searching.                                                             |
-| **name**                  | string                          | The API-facing name of the column as it appears in the [fields][] on a [listItem][]. For the user-facing name, see **displayName**. |
-| **readOnly**              | Boolean                         | Specifies whether the column values can be modified.                                                                                |
-| **required**              | Boolean                         | Specifies whether the column value isn't optional.                                                                                  |
-| **boolean**               | [booleanColumn][]               | This column stores Boolean values.                                                                                                  |
-| **calculated**            | [calculatedColumn][]            | This column's data is calculated based on other columns.                                                                            |
-| **choice**                | [choiceColumn][]                | This column stores data from a list of choices.                                                                                     |
-| **currency**              | [currencyColumn][]              | This column stores currency values.                                                                                                 |
-| **dateTime**              | [dateTimeColumn][]              | This column stores DateTime values.                                                                                                 |
-| **defaultValue**          | [defaultColumnValue][]          | The default value for this column.                                                                                                  |
-| **geolocation**           | [geolocationColumn][]           | This column stores a geolocation.                                                                                                   |
-| **lookup**                | [lookupColumn][]                | This column's data is looked up from another source in the site.                                                                    |
-| **number**                | [numberColumn][]                | This column stores number values.                                                                                                   |
-| **personOrGroup**         | [personOrGroupColumn][]         | This column stores Person or Group values.                                                                                          |
-| **text**                  | [textColumn][]                  | This column stores text values.                                                                                                     |
-| **isDeletable**           | Boolean                         | Indicates whether this column can be deleted.                                                                                       |
-| **propagateChanges**      | Boolean                         | If `true`, changes to this column will be propagated to lists that implement the column.                                            |
-| **isReorderable**         | Boolean                         | Indicates whether values in the column can be reordered. Read-only.                                                                 |
-| **isSealed**              | Boolean                         | Specifies whether the column can be changed.                                                                                        |
-| **validation**            | [columnValidation][]            | This column stores validation formula and message for the column.                                                                   |
-| **hyperlinkOrPicture**    | [hyperlinkOrPictureColumn][]    | This column stores hyperlink or picture values.                                                                                     |
-| **term**                  | [termColumn][]                  | This column stores taxonomy terms.                                                                                                  |
-| **sourceContentType**     | [contentTypeInfo][]             | ContentType from which this column is inherited from. Used only to fetch contentTypes columns.                                      |
-| **thumbnail**             | [thumbnailColumn][]             | This column stores thumbnail values.                                                                                                |
-| **type**                  | columnTypes                     | For site columns, the type of column. Read-only.                                                                                    |
-| **contentApprovalStatus** | [contentApprovalStatusColumn][] | This column stores content approval status.                                                                                         |
+| boolean                   | [booleanColumn][]               | This column stores Boolean values.                                                                                                  |
+| calculated                | [calculatedColumn][]            | This column's data is calculated based on other columns.                                                                            |
+| choice                    | [choiceColumn][]                | This column stores data from a list of choices.                                                                                     |
+| columnGroup               | string                          | For site columns, the name of the group this column belongs to. Helps organize related columns.                                     |
+| contentApprovalStatus     | [contentApprovalStatusColumn][] | This column stores content approval status.                                                                                         |
+| currency                  | [currencyColumn][]              | This column stores currency values.                                                                                                 |
+| dateTime                  | [dateTimeColumn][]              | This column stores DateTime values.                                                                                                 |
+| defaultValue              | [defaultColumnValue][]          | The default value for this column.                                                                                                  |
+| description               | string                          | The user-facing description of the column.                                                                                          |
+| displayName               | string                          | The user-facing name of the column.                                                                                                 |
+| enforceUniqueValues       | Boolean                         | If `true`, no two list items may have the same value for this column.                                                               |
+| geolocation               | [geolocationColumn][]           | This column stores a geolocation.                                                                                                   |
+| hidden                    | Boolean                         | Specifies whether the column is displayed in the user interface.                                                                    |
+| hyperlinkOrPicture        | [hyperlinkOrPictureColumn][]    | This column stores hyperlink or picture values.                                                                                     |
+| id                        | string                          | The unique identifier for the column.                                                                                               |
+| indexed                   | Boolean                         | Specifies whether the column values can be used for sorting and searching.                                                          |
+| isDeletable               | Boolean                         | Indicates whether this column can be deleted.                                                                                       |
+| isReorderable             | Boolean                         | Indicates whether values in the column can be reordered. Read-only.                                                                 |
+| isSearchable              | Boolean                         | Specifies whether the column values can be used for searching. Currently supported only for columns in a [fileStorageContainer][]. |
+| isSealed                  | Boolean                         | Specifies whether the column can be changed.                                                                                        |
+| lookup                    | [lookupColumn][]                | This column's data is looked up from another source in the site.                                                                    |
+| name                      | string                          | The API-facing name of the column as it appears in the [fields][] on a [listItem][]. For the user-facing name, see **displayName**. |
+| number                    | [numberColumn][]                | This column stores number values.                                                                                                   |
+| personOrGroup             | [personOrGroupColumn][]         | This column stores Person or Group values.                                                                                          |
+| propagateChanges          | Boolean                         | If `true`, changes to this column will be propagated to lists that implement the column.                                            |
+| readOnly                  | Boolean                         | Specifies whether the column values can be modified.                                                                                |
+| required                  | Boolean                         | Specifies whether the column value isn't optional.                                                                                  |
+| sourceContentType         | [contentTypeInfo][]             | ContentType from which this column is inherited from. Used only to fetch contentTypes columns.                                      |
+| term                      | [termColumn][]                  | This column stores taxonomy terms.                                                                                                  |
+| text                      | [textColumn][]                  | This column stores text values.                                                                                                     |
+| thumbnail                 | [thumbnailColumn][]             | This column stores thumbnail values.                                                                                                |
+| type                      | columnTypes                     | For site columns, the type of column. Read-only.                                                                                    |
+| validation                | [columnValidation][]            | This column stores validation formula and message for the column.                                                                   |
+
+> [!NOTE]
+> The **isSearchable** and **indexed** properties are related but independent. If **isSearchable** isn't explicitly specified, it uses the value of **indexed**. After you set **isSearchable**, it becomes independent of **indexed**. If only **isSearchable** is specified, the searchable state of the column is updated without changing its indexed state. The **isSearchable** property is currently supported only for columns in a [fileStorageContainer][].
 
 ## Relationships
 
 | Relationship     | Type                 | Description                                |
 | :--------------- | :------------------- | :----------------------------------------- |
-| **sourceColumn** | [columnDefinition][] | The source column for content type column. |
+| sourceColumn     | [columnDefinition][] | The source column for content type column. |
 
 >**Note:** These properties correspond to the SharePoint [SPFieldType][] enumeration.
 Note that the most common field types are represented in the previous table. However, this beta API is still missing some.
@@ -113,6 +117,7 @@ The following JSON representation shows the resource type.
   "hyperlinkOrPicture": {"@odata.type": "microsoft.graph.hyperlinkOrPictureColumn"},
   "id": "String (identifier)",
   "indexed": "Boolean",
+  "isSearchable": "Boolean",
   "isDeletable": "Boolean",
   "isReorderable": "Boolean",
   "isSealed": "Boolean",
@@ -156,6 +161,7 @@ The following JSON representation shows the resource type.
 [hyperlinkOrPictureColumn]: hyperlinkOrPictureColumn.md
 [columnValidation]: columnValidation.md
 [contentTypeInfo]: contentTypeInfo.md
+[fileStorageContainer]: filestoragecontainer.md
 
 [SPFieldType]: /previous-versions/office/sharepoint-server/ms428806(v=office.15)
 

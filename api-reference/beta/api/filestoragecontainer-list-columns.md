@@ -118,6 +118,7 @@ Content-Type: application/json
       "hidden": false,
       "id": "99ddcf45-e2f7-4f17-82b0-6fba34445103",
       "indexed": false,
+      "isSearchable": false,
       "name": "Title",
       "readOnly": false,
       "required": false,
@@ -133,6 +134,7 @@ Content-Type: application/json
       "displayName": "Address",
       "id": "11dfef35-e2f7-4f17-82b0-6fba34445103",
       "indexed": false,
+      "isSearchable": false,
       "name": "Address",
       "readOnly": false,
       "required": false,
@@ -146,4 +148,3 @@ Content-Type: application/json
   ]
 }
 ```
-
