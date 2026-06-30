@@ -209,6 +209,7 @@ Added the **groupDisplayName** property to the [delegatedAdministrationRoleAssig
 ### Files
 
 - Use the [Upsert permissions](/graph/api/filestoragecontainer-patch-permissions) API to create or update up to 10 [permission](/graph/api/resources/permission) objects on a [fileStorageContainer](/graph/api/resources/filestoragecontainer) in a single request.
+- Use the new [lockInfo](/graph/api/resources/lockinfo) property on the [driveItem](/graph/api/resources/driveitem) resource to read lock metadata for an item in OneDrive or SharePoint, including the lock type, when it was created, when it expires, and which users currently hold the lock.
 - Use the [Get fileStorageContainer permission](/graph/api/filestoragecontainer-get-permissions) API to get a specific [permission](/graph/api/resources/permission) from a [fileStorageContainer](/graph/api/resources/filestoragecontainer) object.
 - Added the **@microsoft.graph.conflictBehavior** annotation parameter to the [Create permission](/graph/api/filestoragecontainer-post-permissions) method. Use `fail` to return a `409 Conflict` response code when the identity exists with a different role, or `replace` to update the existing role.
 
