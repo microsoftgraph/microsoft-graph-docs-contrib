@@ -1,5 +1,39 @@
 {
   "changelog": [
+         {
+          "ChangeList": [
+            {
+              "Id": "7df05f59-57cd-4888-9906-0ac103d04d95",
+              "ApiChange": "Property",
+              "ChangedApiName": "error",
+              "ChangeType": "Addition",
+              "Description": "Added the **error** property to the [granularRestoreArtifactBase](https://learn.microsoft.com/en-us/graph/api/resources/granularRestoreArtifactBase?view=graph-rest-beta) resource.",
+              "Target": "granularRestoreArtifactBase"
+            },
+            {
+              "Id": "7df05f59-57cd-4888-9906-0ac103d04d95",
+              "ApiChange": "Property",
+              "ChangedApiName": "error",
+              "ChangeType": "Addition",
+              "Description": "Added the **error** property to the [granularDriveRestoreArtifact](https://learn.microsoft.com/en-us/graph/api/resources/granulardriverestoreartifact?view=graph-rest-beta) resource.",
+              "Target": "granularDriveRestoreArtifact"
+            },
+            {
+              "Id": "7df05f59-57cd-4888-9906-0ac103d04d95",
+              "ApiChange": "Property",
+              "ChangedApiName": "error",
+              "ChangeType": "Addition",
+              "Description": "Added the **error** property to the [granularSiteRestoreArtifact](https://learn.microsoft.com/en-us/graph/api/resources/granularsiterestoreartifact?view=graph-rest-beta) resource.",
+              "Target": "granularSiteRestoreArtifact"
+            }
+          ],
+          "Id": "7df05f59-57cd-4888-9906-0ac103d04d95",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2026-06-26T09:51:40.9529754Z",
+          "WorkloadArea": "Backup and recovery",
+          "SubArea": ""
+         },
     {
       "ChangeList": [
         {

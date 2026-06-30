@@ -56,21 +56,6 @@ Namespace: microsoft.graph.identityGovernance
 |leaver|
 |unknownFutureValue|
 
-
-### lifecycleWorkflowProcessingStatus values 
-
-
-
-|Member|
-|:---|
-|queued|
-|inProgress|
-|completed|
-|completedWithErrors|
-|canceled|
-|failed|
-|unknownFutureValue|
-
 ### valueType values 
 
 

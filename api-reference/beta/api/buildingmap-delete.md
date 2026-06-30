@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Delete the [map](../resources/buildingmap.md) of a specific building.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

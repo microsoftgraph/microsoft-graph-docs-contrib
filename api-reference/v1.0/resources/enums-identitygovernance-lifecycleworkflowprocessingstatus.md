@@ -2,7 +2,7 @@
 title: "lifecycleWorkflowProcessingStatus enum type"
 description: "Microsoft Graph identityGovernance lifecycleWorkflowProcessingStatus enumeration type"
 author: "owinfreyATL"
-ms.date: 03/27/2026
+ms.date: 06/29/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: enumPageType
@@ -18,8 +18,6 @@ Describes the execution status of a lifecycle workflow. This enum is used by the
 - [task processing result](../resources/identitygovernance-taskprocessingresult.md)
 - [task report](../resources/identitygovernance-taskreport.md)
 - [user processing result](../resources/identitygovernance-userprocessingresult.md)
-- [subject processing result](../resources/identitygovernance-subjectprocessingresult.md)
-- [awaited workflow processing result](../resources/identitygovernance-awaitedworkflowprocessingresult.md)
 
 ## lifecycleWorkflowProcessingStatus values
 

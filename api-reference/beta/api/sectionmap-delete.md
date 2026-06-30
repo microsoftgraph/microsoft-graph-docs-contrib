@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Delete a [sectionMap](../resources/sectionmap.md) object on a specified floor.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

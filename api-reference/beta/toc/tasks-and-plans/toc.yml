@@ -200,6 +200,8 @@ items:
         href: ../../api/businessscenariotask-update.md
       - name: Delete
         href: ../../api/businessscenarioplanner-delete-tasks.md
+- name: Planner history item
+  items: []
 - name: Task formats
   items:
   - name: Planner assigned to task board task format
