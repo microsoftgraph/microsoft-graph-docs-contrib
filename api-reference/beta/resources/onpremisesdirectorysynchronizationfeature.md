@@ -21,6 +21,7 @@ Consists of [directory synchronization](../resources/onpremisesdirectorysynchron
 
 | Property                                         | Type    | Description                                                                                                                                                  |
 | :----------------------------------------------- | :------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| allowOnPremUpdateOfOnPremisesObjectIdentifierEnabled | Boolean | When `true`, allows clients to update the **onPremisesObjectIdentifier** property for on-premises Active Directory synced objects.                                                |
 | blockCloudObjectTakeoverThroughHardMatchEnabled  | Boolean | Used to block cloud object takeover via source anchor hard match if enabled.                                                                                 |
 | blockSoftMatchEnabled                            | Boolean | Use to block soft match for all objects if enabled for the  tenant. Customers are encouraged to enable this feature and keep it enabled until soft matching is required again for their tenancy. This flag should be enabled again after any soft matching has been completed and is no longer needed.                                                                                                  |
 | bypassDirSyncOverridesEnabled                    | Boolean | When `true`, persists the values of _Mobile_ and _OtherMobile_ in on-premises AD during sync cycles instead of values of _MobilePhone_ or _AlternateMobilePhones_ in Microsoft Entra ID.                                    |
@@ -74,6 +75,7 @@ The following JSON representation shows the resource type.
   "groupWriteBackEnabled": "Boolean",
   "blockSoftMatchEnabled": "Boolean",
   "blockCloudObjectTakeoverThroughHardMatchEnabled": "Boolean",
-  "bypassDirSyncOverridesEnabled": "Boolean"
+  "bypassDirSyncOverridesEnabled": "Boolean",
+  "allowOnPremUpdateOfOnPremisesObjectIdentifierEnabled": "Boolean"
 }
 ```
