@@ -16,11 +16,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Represents a base class for apply actions in the [accessReviewScheduleSettings](accessreviewschedulesettings.md) of an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) object. The following derived types are supported:
+In an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md), the **applyActions** property of [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) configures the actions to take on reviewed users after an access review instance is completed. The following derived types are supported:
 
-- [removeAccessApplyAction](removeaccessapplyaction.md) indicates removing access of an entity being reviewed upon completion of the review. This is the default type for the applyActions property in accessReviewScheduleSettings and doesn't need to be specified.
+- [removeAccessApplyAction](../resources/removeaccessapplyaction.md) indicates removing access of an entity being reviewed upon completion of the review. This is the default type for the **applyActions** property of [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) and doesn't need to be specified.
 
-- [disableAndDeleteUserApplyAction](disableanddeleteuserapplyaction.md) indicates disabling and deleting the user being reviewed upon completion of the review. This is the non-default type and must be explicitly specified in accessReviewScheduleSettings.
+- [disableAndDeleteUserApplyAction](../resources/disableanddeleteuserapplyaction.md) indicates disabling and deleting the user being reviewed upon completion of the review. This type must be explicitly specified in the **applyActions** property of [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md).
 
 ## Properties
 None.

@@ -12,7 +12,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Represents the identities of the reviewers who were contacted to complete a review.
+In an [accessReviewInstance](../resources/accessreviewinstance.md), the **contactedReviewers** property contains the identities of reviewers who were contacted to complete the review.
 
 Inherits from [entity](entity.md).
 

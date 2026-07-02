@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Represents the permission that grants a principal access to a resource that is represented through an [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) object. **accessReviewInstanceDecisionItemPermission** is an open type that allows for other properties to be passed in.
+In an [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md), the **permission** property represents the permission that grants a principal access to a resource. **accessReviewInstanceDecisionItemPermission** is an open type that allows other properties to be passed in.
 
 
 ## Properties

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Represents a service principal under review in an [accessReviewInstance](accessreviewinstance.md).
+In an [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md), the **target** property can contain an **accessReviewInstanceDecisionItemServicePrincipalTarget** object for a service principal under review.
 
 Inherits from [accessReviewInstanceDecisionItemTarget](../resources/accessreviewinstancedecisionitemtarget.md).
 

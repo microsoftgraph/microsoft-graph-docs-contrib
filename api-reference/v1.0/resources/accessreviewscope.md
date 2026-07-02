@@ -12,13 +12,14 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-The **accessReviewScope** defines what entities are reviewed in an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). It's an abstract type that is inherited by [accessReviewQueryScope](accessreviewqueryscope.md), [principalResourceMembershipsScope](principalresourcemembershipsscope.md), and [accessReviewReviewerScope](accessreviewreviewerscope.md). 
+Use **accessReviewScope** to configure what is reviewed in the following properties:
+- [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md): **scope**, **instanceEnumerationScope**
+- [accessReviewInstance](../resources/accessreviewinstance.md): **scope**
+- [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md): **scopes**
 
-For **scope** property on an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) see [accessReviewQueryScope](accessreviewqueryscope.md) and [principalResourceMembershipsScope](principalresourcemembershipsscope.md).
+This abstract type is inherited by [accessReviewQueryScope](../resources/accessreviewqueryscope.md), [principalResourceMembershipsScope](../resources/principalresourcemembershipsscope.md), and [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md).
 
-For **reviewers** property on an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) see [accessReviewReviewerScope](accessreviewreviewerscope.md).
-
-Specifying the OData type in the **scope** is highly recommended for all types but required for [principalResourceMembershipsScope](principalresourcemembershipsscope.md) and [accessReviewInactiveUserQueryScope](../resources/accessreviewinactiveusersqueryscope.md).
+Specifying the OData type in **scope** is highly recommended for all types but required for [principalResourceMembershipsScope](../resources/principalresourcemembershipsscope.md) and [accessReviewInactiveUsersQueryScope](../resources/accessreviewinactiveusersqueryscope.md).
 
 ## Properties
 None.
