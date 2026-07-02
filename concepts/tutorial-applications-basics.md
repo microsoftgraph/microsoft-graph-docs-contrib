@@ -1,8 +1,8 @@
 ---
 title: Programmatically Manage Microsoft Entra Apps Using Microsoft Graph
 description: Learn how to use Microsoft Graph to streamline your app lifecycle.
-author: FaithOmbongi
-ms.author: ombongifaith
+author: AlexFilipin
+ms.author: alfilipi 
 ms.reviewer: sureshja
 ms.localizationpriority: medium
 ms.topic: how-to

@@ -1,7 +1,7 @@
 ---
 title: "multiTenantOrganizationIdentitySyncPolicyTemplate: resetToDefaultSettings"
 description: "Reset the cross-tenant access policy template with user synchronization settings for a multitenant organization to the default values."
-author: "rolyon"
+author: "hafowler"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType

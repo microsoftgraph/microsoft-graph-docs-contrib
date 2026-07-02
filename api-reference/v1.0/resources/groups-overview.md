@@ -1,8 +1,7 @@
 ---
 title: Manage Groups in Microsoft Graph
 description: Discover how to use the Microsoft Graph groups API to create and manage groups, simplifying access management for your organization.
-author: FaithOmbongi
-ms.author: ombongifaith
+author: "yuhko-msft"
 ms.reviewer: yuhko, khotzteam, aadgroupssg
 ms.localizationpriority: high
 ms.subservice: entra-groups

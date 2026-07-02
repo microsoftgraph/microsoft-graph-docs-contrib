@@ -1,8 +1,8 @@
 ---
 title: Review guest access to groups using access reviews APIs
 description: Learn how to create and manage access reviews for guest access to Microsoft 365 groups using the access reviews API.
-author: FaithOmbongi
-ms.author: ombongifaith
+author: jyothig123
+ms.author: jgangadhar 
 ms.reviewer: jgangadhar
 ms.topic: tutorial
 ms.localizationpriority: medium

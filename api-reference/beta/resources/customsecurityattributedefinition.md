@@ -1,7 +1,7 @@
 ---
 title: "customSecurityAttributeDefinition resource type"
 description: "Represents the schema of a custom security attribute (key-value pair)."
-author: "rolyon"
+author: "simundru"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType

@@ -1,7 +1,7 @@
 ---
 title: "lifecycleWorkflowProcessingStatus enum type"
 description: "Microsoft Graph identityGovernance lifecycleWorkflowProcessingStatus enumeration type"
-author: "owinfreyATL"
+author: "AlexFilipin"
 ms.date: 03/27/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"

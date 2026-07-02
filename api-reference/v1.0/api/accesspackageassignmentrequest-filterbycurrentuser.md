@@ -1,7 +1,7 @@
 ---
 title: "accessPackageAssignmentRequest: filterByCurrentUser"
 description: "Retrieve a list of accesspackageassignmentrequest objects filtered on the signed-in user."
-author: "markwahl-msft"
+author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType

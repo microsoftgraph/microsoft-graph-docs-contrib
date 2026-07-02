@@ -1,8 +1,8 @@
 ---
 title: Set employeeLeaveDateTime
 description: Configure the employeeLeaveDateTime property for a user using Microsoft Graph.
-author: FaithOmbongi
-ms.author: ombongifaith
+author: AlexFilipin
+ms.author: alfilipi 
 ms.reviewer: Alexander.Filipin
 ms.localizationpriority: medium
 ms.subservice: entra-id-governance

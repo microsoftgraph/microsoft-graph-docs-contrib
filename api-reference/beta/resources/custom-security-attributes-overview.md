@@ -1,7 +1,7 @@
 ---
 title: "Overview of custom security attributes using the Microsoft Graph API"
 description: "Learn how to programmatically define your own custom security attributes and assign them to Microsoft Entra objects using the Microsoft Graph API."
-author: "rolyon"
+author: "simundru"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: conceptualPageType

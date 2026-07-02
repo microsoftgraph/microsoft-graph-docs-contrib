@@ -2,8 +2,7 @@
 title: Working with users in Microsoft Graph
 description: Access and manage user data using Microsoft Graph to build personalized app experiences.
 ms.localizationpriority: high
-author: FaithOmbongi
-ms.author: ombongifaith
+author: "yyuank"
 ms.reviewer: yyuank, iamut
 ms.subservice: entra-users
 doc_type: conceptualPageType

@@ -1,7 +1,7 @@
 ---
 title: "Create identitySynchronization"
 description: "Create a cross-tenant user and optionally group synchronization policy for a partner-specific configuration."
-author: "rolyon"
+author: "hafowler"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
