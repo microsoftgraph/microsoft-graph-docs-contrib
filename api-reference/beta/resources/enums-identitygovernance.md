@@ -124,6 +124,16 @@ Namespace: microsoft.graph.identityGovernance
 |remove|
 |unknownFutureValue|
 
+### matchMode values
+
+
+
+|Member|
+|:---|
+|any|
+|all|
+|unknownFutureValue|
+
 ### principalType values
 
 |Member|
@@ -133,6 +143,17 @@ Namespace: microsoft.graph.identityGovernance
 |servicePrincipal|
 |unknownFutureValue|
 
+### quarantineType values
+
+
+
+|Member|
+|:---|
+|notQuarantined|
+|countBasedThresholdExceeded|
+|percentageBasedThresholdExceeded|
+|multipleConditionsExceeded|
+|unknownFutureValue|
 
 
 
