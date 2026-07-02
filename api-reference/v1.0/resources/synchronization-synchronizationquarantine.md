@@ -12,7 +12,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Provides information about the quarantine state of a [synchronizationJob](synchronization-synchronizationjob.md).
+Provides information about the quarantine state of a [synchronizationJob](../resources/synchronization-synchronizationjob.md). This object is configured in the **quarantine** property of [synchronizationStatus](../resources/synchronization-synchronizationstatus.md).
 
 ## Properties
 | Property       | Type    |Description|

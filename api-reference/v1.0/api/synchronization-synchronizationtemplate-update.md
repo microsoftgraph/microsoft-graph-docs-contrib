@@ -12,7 +12,7 @@ ms.date: 06/21/2024
 
 Namespace: microsoft.graph
 
-Update (override) the synchronization template associated with a given application.
+Update (override) the [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) associated with a given application.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

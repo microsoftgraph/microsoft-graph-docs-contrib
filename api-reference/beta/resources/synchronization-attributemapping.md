@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines how values for the given target attribute should flow during synchronization. This object is defined in the [synchronizationSchema resource type](../resources/synchronization-synchronizationschema.md).
+Defines how values for the given target attribute should flow during synchronization. This object is configured in the **attributeMappings** property of [objectMapping](../resources/synchronization-objectmapping.md).
 
 ## Properties
 

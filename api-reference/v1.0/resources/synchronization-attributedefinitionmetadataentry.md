@@ -12,15 +12,17 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Metadata for the given object.
+Metadata for the given object. This object is configured in the **metadata** property of [attributeDefinition](../resources/synchronization-attributedefinition.md).
 
 ## Properties
+
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |key|attributeDefinitionMetadata|The possible values are: `BaseAttributeName`, `ComplexObjectDefinition`, `IsContainer`, `IsCustomerDefined`, `IsDomainQualified`, `LinkPropertyNames`, `LinkTypeName`, `MaximumLength`, `ReferencedProperty`. |
 |value|String|Value of the metadata property.|
 
 ### Supported key-value pairs
+
 | Key       |Value|
 |:---------------|:----------|
 |BaseAttributeName| If this attribute inherits from another object, this is the name of the base attribute.|

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the synchronization templates associated with a given application or service principal.
+List [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) objects associated with a given application or service principal.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

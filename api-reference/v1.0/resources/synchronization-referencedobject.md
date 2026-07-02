@@ -12,7 +12,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Describes a reference to another object defined in the same [directory definition](synchronization-directorydefinition.md).
+Describes a reference to another object defined in the same [directory definition](../resources/synchronization-directorydefinition.md). This object is configured in the **referencedObjects** property of [attributeDefinition](../resources/synchronization-attributedefinition.md).
 
 ## Properties
 

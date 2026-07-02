@@ -12,7 +12,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Represents the current status of the [synchronizationJob](synchronization-synchronizationjob.md).
+Represents the current status (**status** property) of the [synchronizationJob](../resources/synchronization-synchronizationjob.md).
 
 ## Properties
 

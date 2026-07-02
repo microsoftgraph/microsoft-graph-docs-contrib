@@ -12,7 +12,7 @@ ms.date: 04/03/2024
 
 Namespace: microsoft.graph
 
-Defines how a value should be extracted (or transformed) from the source object. For example, it can be a value taken from a given attribute on the source object, or it can be a more complex expression of string concatenation/extraction/replacement based on several source attributes.
+Defines how a value should be extracted (or transformed) from the source object. For example, it can be a value taken from a given attribute on the source object, or it can be a more complex expression of string concatenation/extraction/replacement based on several source attributes. This object is configured in the **source** property of [attributeMapping](../resources/synchronization-attributemapping.md).
 
 ## Properties
 

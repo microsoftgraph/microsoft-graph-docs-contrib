@@ -12,7 +12,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Describes a single parameter used in an [attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md).
+Describes a single parameter (**parameters** property) used in an [attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md).
 
 ## Properties
 

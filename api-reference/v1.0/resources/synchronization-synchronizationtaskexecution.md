@@ -12,7 +12,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Summarizes the results of the synchronization job run.
+Summarizes the results of the synchronization job run. This object is configured in the **lastExecution**, **lastSuccessfulExecution**, and **lastSuccessfulExecutionWithExports** properties of [synchronizationStatus](../resources/synchronization-synchronizationstatus.md).
 
 ## Properties
 | Property       | Type    |Description|

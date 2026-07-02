@@ -12,7 +12,7 @@ ms.date: 06/21/2024
 
 Namespace: microsoft.graph
 
-Retrieve the existing synchronization job and its properties.
+Retrieve an existing [synchronizationJob](../resources/synchronization-synchronizationjob.md) and its properties.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
