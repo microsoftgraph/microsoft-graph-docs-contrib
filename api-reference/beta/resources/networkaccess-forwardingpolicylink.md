@@ -1,11 +1,11 @@
 ---
 title: "forwardingPolicyLink resource type"
 description: "A forwardingPolicyLink represents the association between a forwarding policy and another forwarding profile."
-author: Moti-ba
+author: katabish
 ms.localizationpriority: medium
 ms.subservice: entra-global-secure-access
 doc_type: resourcePageType
-ms.date: 07/22/2024
+ms.date: 04/02/2026
 ---
 
 # forwardingPolicyLink resource type
@@ -14,7 +14,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A forwardingPolicyLink represents the association between a forwarding policy and another forwarding profile.
+A forwardingPolicyLink represents the association between a [forwarding policy](../resources/networkaccess-forwardingpolicy.md) and a [forwarding profile](../resources/networkaccess-forwardingprofile.md).
 
 
 Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).
@@ -33,6 +33,7 @@ Inherits from [microsoft.graph.networkaccess.policyLink](../resources/networkacc
 |id|String|Unique identifier. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |state|microsoft.graph.networkaccess.status|Link Status. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md). The possible values are: `enabled`, `disabled`.|
 |version|String|Version number. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md).|
+|priority|Int32|Priority of the policy within the forwarding profile.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -54,7 +55,8 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.networkaccess.forwardingPolicyLink",
   "id": "String (identifier)",
   "state": "String",
-  "version": "String"
+  "version": "String",
+  "priority": "Integer"
 }
 ```
 
