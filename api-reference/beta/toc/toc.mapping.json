@@ -1334,13 +1334,6 @@
                 "adminDynamics",
                 "adminForms",
                 "adminTodo"
-              ],
-              "complexTypes": [
-                "admin",
-                "appsAndServicesSettings",
-                "customerVoiceSettings",
-                "formsSettings",
-                "todoSettings"
               ]
             },
             {

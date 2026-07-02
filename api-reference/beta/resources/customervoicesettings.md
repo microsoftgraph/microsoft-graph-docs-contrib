@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Company-wide settings for Microsoft Dynamics 365 Customer Voice.
+Company-wide settings for Microsoft Dynamics 365 Customer Voice. This object is configured in the **customerVoice** property of [adminDynamics](../resources/admindynamics.md).
 
 ## Properties
 |Property|Type|Description|
