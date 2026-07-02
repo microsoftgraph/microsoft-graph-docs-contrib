@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a privateAccessSensor object.
+Read the properties and relationships of a [privateAccessSensor](../resources/privateaccesssensor.md) object.
 
 ## Permissions
 
