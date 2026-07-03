@@ -1,8 +1,8 @@
 ---
 title: "Automate mover tasks when employees change jobs by using the Microsoft Graph lifecycle workflows APIs"
 description: "Follow the steps in this tutorial to create a mover workflow to automate tasks when employees change jobs."
-author: owinfreyATL
-ms.author: owinfrey
+author: AlexFilipin
+ms.author: alfilipi 
 ms.reviewer: Alexander.Filipin
 ms.topic: tutorial
 ms.localizationpriority: medium

@@ -12,7 +12,7 @@ ms.date: 06/21/2024
 
 Namespace: microsoft.graph
 
-List existing jobs for a given application instance (service principal).
+List existing [synchronizationJob](../resources/synchronization-synchronizationjob.md) objects for a given application instance (service principal).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

@@ -12,7 +12,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Represents service principals whose access to a resource is represented through an [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) object. **accessReviewInstanceDecisionItemServicePrincipalResource** is an open type that allows for other properties to be passed in.
+In an [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md), the **resource** property can contain an **accessReviewInstanceDecisionItemServicePrincipalResource** object for a service principal resource. This open type allows other properties to be passed in.
 
 Inherits from [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md).
 

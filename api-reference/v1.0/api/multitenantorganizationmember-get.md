@@ -1,7 +1,7 @@
 ---
 title: "Get multiTenantOrganizationMember"
 description: "Get a tenant and its properties in the multitenant organization."
-author: "rolyon"
+author: "hafowler"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType

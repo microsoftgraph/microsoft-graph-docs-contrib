@@ -12,7 +12,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Represents an error that occurred during the synchronization process.
+Represents an error that occurred during the synchronization process. Configured in the **error** property of the [synchronizationTaskExecution](../resources/synchronization-synchronizationtaskexecution.md) and [synchronizationQuarantine](../resources/synchronization-synchronizationquarantine.md) resources.
 
 ## Properties
 

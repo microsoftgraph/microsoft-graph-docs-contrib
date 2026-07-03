@@ -1,7 +1,6 @@
 ---
-author: owinfreyATL
+author: "AlexFilipin"
 ms.topic: include
-ms.author: owinfrey
 ---
 
 > [!IMPORTANT]

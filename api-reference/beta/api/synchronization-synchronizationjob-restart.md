@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restart a stopped synchronization job, forcing it to reprocess all the objects in the directory. Optionally clears existing the synchronization state and previous errors.
+Restart a stopped [synchronizationJob](../resources/synchronization-synchronizationjob.md), forcing it to reprocess all the objects in the directory. Optionally clears existing the synchronization state and previous errors.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

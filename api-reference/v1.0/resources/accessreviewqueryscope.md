@@ -12,7 +12,11 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-An accessReviewQueryScope object defines what is reviewed in an [access review](../resources/accessreviewsv2-overview.md). To scope an access review to inactive users, see [accessReviewInactiveUserQueryScope](../resources/accessreviewinactiveusersqueryscope.md). 
+Use **accessReviewQueryScope** to configure what is reviewed in the following properties:
+- [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md): **scope**, **instanceEnumerationScope**
+- [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md): **scopes**
+
+To scope an access review to inactive users, see [accessReviewInactiveUsersQueryScope](../resources/accessreviewinactiveusersqueryscope.md).
 
 Inherits from [accessReviewScope](../resources/accessreviewscope.md).
 

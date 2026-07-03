@@ -1,8 +1,8 @@
 ---
 title: "Complete employee offboarding tasks in real time on their last day of work using Lifecycle Workflows APIs"
 description: "Complete employee offboarding tasks in real time on their last day of work using Lifecycle Workflows APIs in Microsoft Graph."
-author: FaithOmbongi
-ms.author: ombongifaith
+author: AlexFilipin
+ms.author: alfilipi 
 ms.reviewer: Alexander.Filipin
 ms.localizationpriority: medium
 ms.subservice: entra-id-governance

@@ -1,8 +1,7 @@
 ---
 title: Backup and Recovery APIs
 description: Backup and Recovery APIs
-author: FaithOmbongi
-ms.author: ombongifaith
+author: egreenberg14
 ms.date: 04/29/2026
 ms.topic: include
 ms.subservice: non-product-specific

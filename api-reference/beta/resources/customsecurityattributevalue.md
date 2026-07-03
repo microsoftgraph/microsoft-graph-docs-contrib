@@ -1,7 +1,7 @@
 ---
 title: "customSecurityAttributeValue resource type"
 description: "An open complex type that holds the value of a custom security attribute that is assigned to a directory object."
-author: "rolyon"
+author: "simundru"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType

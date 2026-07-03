@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the progress of a [synchronizationJob](synchronization-synchronizationjob.md) toward completion.
+Represents the **progress** of a [synchronizationJob](../resources/synchronization-synchronizationjob.md) toward completion.
 
 ## Properties
 

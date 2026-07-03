@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines a set of clauses that an object must satisfy to be considered in scope. An object is considered in scope for the group (the group is evaluated to `true`) only if all the clauses of the group are evaluated to `true`.
+Defines a set of clauses that an object must satisfy to be considered in scope. An object is considered in scope for the group (the group is evaluated to `true`) only if all the clauses of the group are evaluated to `true`. This object is configured in the **groups**, **categoryFilterGroups**, and **inputFilterGroups** properties of [filter](../resources/synchronization-filter.md).
 
 ## Properties
 | Property       | Type    |Description|

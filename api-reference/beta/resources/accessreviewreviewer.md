@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Object representing the identities of the reviewers who were contacted to complete a review.
+In an [accessReviewInstance](../resources/accessreviewinstance.md), the **contactedReviewers** property contains the identities of reviewers who were contacted to complete the review.
 
 Inherits from [entity](entity.md).
 

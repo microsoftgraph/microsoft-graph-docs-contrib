@@ -11,7 +11,7 @@ ms.date: 04/04/2024
 # synchronization: acquireAccessToken
 Namespace: microsoft.graph
 
-Acquire an OAuth access token to authorize the Microsoft Entra provisioning service to provision users into an application.
+Acquire an OAuth access token from the [synchronization](../resources/synchronization-synchronization.md) resource to authorize the Microsoft Entra provisioning service to provision users into an application.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

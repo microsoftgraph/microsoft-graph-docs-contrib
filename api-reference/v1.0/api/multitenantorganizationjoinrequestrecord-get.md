@@ -1,7 +1,7 @@
 ---
 title: "Get multiTenantOrganizationJoinRequestRecord"
 description: "Get the status of a tenant joining a multitenant organization."
-author: "rolyon"
+author: "hafowler"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType

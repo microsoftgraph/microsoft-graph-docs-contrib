@@ -2,7 +2,7 @@
 title: "Create accessPackageResourceRequest"
 description: "Create a new accessPackageResourceRequest object to request the addition of a resource to an access package catalog, update of a resource, or the removal of a resource from a catalog."
 ms.localizationpriority: medium
-author: "markwahl-msft"
+author: "AlexFilipin"
 ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ms.date: 03/19/2024

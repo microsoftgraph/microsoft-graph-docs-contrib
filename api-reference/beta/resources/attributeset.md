@@ -1,7 +1,7 @@
 ---
 title: "attributeSet resource type"
 description: "Represents a group of related custom security attribute definitions."
-author: "rolyon"
+author: "simundru"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType

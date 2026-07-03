@@ -88,16 +88,13 @@ Added the **allowOnPremUpdateOfOnPremisesObjectIdentifierEnabled** property to t
 ### Applications | Service principal
 
 - Added the [categories](/graph/api/applicationtemplate-categories?view=graph-rest-beta&preserve-view=true) method to the [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta&preserve-view=true) resource type to retrieve the list of supported categories that can appear in the `categories` property. Each entry is returned as an [applicationTemplateCategory](/graph/api/resources/applicationtemplatecategory?view=graph-rest-beta&preserve-view=true) with the API value and a localizable display name.
+- Added the **enforcementScope** property to the [servicePrincipalLockConfiguration](/graph/api/resources/serviceprincipallockconfiguration?view=graph-rest-beta&preserve-view=true) resource type to define where service principal lock validation is enforced.
 
 ### Backup and recovery | Microsoft 365 Backup and Storage
 
 - Added support for full workload backup APIs to protect entire Microsoft 365 workloads (SharePoint Online, OneDrive for work or school, and Exchange Online) with minimal administrative overhead. Create a protection policy that backs up all data in a workload and specify only the items to exclude from backup. For more information, see [exclusionUnitBase](/graph/api/resources/exclusionunitbase?view=graph-rest-beta&preserve-view=true).
 - Deprecated the **queryExpression** property on the [artifactQuery](/graph/api/resources/artifactquery?view=graph-rest-beta&preserve-view=true) resource. Use the **structuredQueryExpression** property instead to create structured search queries.
 - Added the **error** property of type [publicError](/graph/api/resources/publicerror?view=graph-rest-beta&preserve-view=true) to the [granularRestoreArtifactBase](/graph/api/resources/granularrestoreartifactbase?view=graph-rest-beta&preserve-view=true) resource and its derived types. Use this property to get error details when a granular restore operation for an individual artifact fails or completes with an error.
-
-### Files
-
-- Use the new [lockInfo](/graph/api/resources/lockinfo?view=graph-rest-beta&preserve-view=true) property on the [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta&preserve-view=true) resource to read lock metadata for an item in OneDrive or SharePoint, including the lock type, when it was created, when it expires, and which users currently hold the lock.
 
 ### Device and app management | Cloud PC
 

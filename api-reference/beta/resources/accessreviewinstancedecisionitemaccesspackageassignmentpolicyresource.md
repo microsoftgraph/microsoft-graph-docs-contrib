@@ -15,9 +15,9 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Represents an access package assignment policy for which access is represented through an [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) object. **accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource** is an open type that allows other properties to be passed in.
+In an [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md), the **resource** property can contain an **accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource** object for an access package assignment policy. This open type allows other properties to be passed in.
 
-Inherits from [accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionItemresource.md).
+Inherits from [accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md).
 
 ## Properties
 |Property|Type|Description|

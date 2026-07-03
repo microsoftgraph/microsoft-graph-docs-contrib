@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Represents details of the type of membership that a principal has to the resource associated with an [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) object. For example, the principal can have direct or indirect access to the resource. Each decision in an access review represents a principal's access to a resource.
+In an [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md), the **principalResourceMembership** property provides details about the type of membership that a principal has to the associated resource. For example, the principal can have direct or indirect access to the resource.
 
 ## Properties
 

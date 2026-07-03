@@ -1,7 +1,7 @@
 ---
 title: "Update attributeSet"
 description: "Update the properties of an attributeSet object."
-author: "rolyon"
+author: "simundru"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType

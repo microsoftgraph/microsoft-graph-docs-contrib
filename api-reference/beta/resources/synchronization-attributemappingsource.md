@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines how a value should be extracted (or transformed) from the source object. For example, it can be a value taken from a given attribute on the source object, or it can be a more complex expression of string concatenation/extraction/replacement based on several source attributes.
+Defines how a value should be extracted (or transformed) from the **source** object in an [attributeMapping](../resources/synchronization-attributemapping.md). For example, it can be a value taken from a given attribute on the source object, or it can be a more complex expression of string concatenation/extraction/replacement based on several source attributes.
 
 ## Properties
 
