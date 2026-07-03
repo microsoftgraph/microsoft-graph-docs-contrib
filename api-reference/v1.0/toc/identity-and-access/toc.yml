@@ -785,6 +785,8 @@ items:
         href: ../../api/identitygovernance-workflow-activatewithscope.md
       - name: List users in scope
         href: ../../api/workflow-list-executionscope.md
+      - name: Cancel workflow processing
+        href: ../../api/identitygovernance-workflow-cancelprocessing.md
       - name: Clear quarantine
         href: ../../api/identitygovernance-workflow-clearquarantine.md
       - name: Preview task failures

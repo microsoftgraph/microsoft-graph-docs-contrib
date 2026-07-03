@@ -1159,6 +1159,7 @@
         "fileStorageContainerTypeRegistrationSettings",
         "fileStorageContainerTypeAgentSettings",
         "fileStorageContainerTypeSettings",
+        "lockInfo",
         "sharePointGroupIdentity"
       ],
       "childNodes": [
