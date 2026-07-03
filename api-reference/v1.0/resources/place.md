@@ -40,6 +40,7 @@ Inherits from [entity](../resources/entity.md).
 |id |String |The unique identifier for the **place**. Read-only. This identifier isn't immutable and can change if the mailbox or tenant configuration changes. |
 |isWheelChairAccessible |Boolean |Indicates whether the **place** is wheelchair accessible. |
 |parentId |String |The ID of a parent **place**. |
+|placeId |String |A stable service-level identifier for the **place** object used by Places workloads. |
 |phone |String |The phone number of the **place**. |
 |tags |String collection |Custom tags that are associated with the **place** for categorization or filtering. |
 
@@ -68,6 +69,7 @@ The following JSON representation shows the resource type.
   "isWheelChairAccessible": "Boolean",
   "label": "String",
   "parentId": "String",
+  "placeId": "String",
   "phone": "String",
   "tags": ["String"]
 }
