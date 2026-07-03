@@ -13,6 +13,9 @@ ms.date: 04/03/2024
 Namespace: microsoft.graph
 
 Represents a key-value pair.
+This object is configured in the following resources:
+- **attributeCollection** property of [contentCustomization](../resources/contentcustomization.md), which is used by [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md)
+- **additionalDetails** property of [directoryAudit](../resources/directoryaudit.md)
 
 ## Properties
 

@@ -13,7 +13,7 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Describes a set of token claims used to link together all the authentication artifacts issued from a single interactive root authentication.
+Describes a set of token claims used to link together all the authentication artifacts issued from a single interactive root authentication. This object is configured in the **linkableIdentifiers** property of [auditActivityInitiator](../resources/auditactivityinitiator.md).
 
 
 ## Properties

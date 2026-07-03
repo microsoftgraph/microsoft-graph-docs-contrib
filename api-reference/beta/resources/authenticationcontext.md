@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the conditional access authentication context of a sign-in event. 
+Describes the conditional access authentication context of a sign-in event. This object is configured in the **authenticationContextClassReferences** property of [signIn](../resources/signin.md).
 
 For more information about authentication context in conditional access, see the [conditional access context documentation](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#authentication-context-preview). 
 
@@ -41,4 +41,3 @@ The following JSON representation shows the resource type.
   "detail": "String"
 }
 ```
-

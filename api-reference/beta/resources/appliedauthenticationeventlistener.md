@@ -14,13 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the [authentication event listeners](authenticationeventlistener.md) such as Azure Logic Apps and Azure Functions that are triggered by the corresponding events in a [sign-in](../resources/signin.md) or [sign-up](../resources/selfservicesignup.md) event.
+Represents the [authentication event listeners](../resources/authenticationeventlistener.md) such as Azure Logic Apps and Azure Functions that are triggered by the corresponding events. This object is configured in the **appliedEventListeners** property of [signIn](../resources/signin.md) and [selfServiceSignUp](../resources/selfservicesignup.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |eventType|authenticationEventType|The type of authentication event that triggered the [custom authentication extension](../resources/customauthenticationextension.md) request. The possible values are: `tokenIssuanceStart`, `pageRenderStart`, `unknownFutureValue`, `attributeCollectionStart`, `attributeCollectionSubmit`, `emailOtpSend`, `passwordSubmit`. Use the `Prefer: include-unknown-enum-members` request header to get the following values in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `attributeCollectionStart`, `attributeCollectionSubmit`, `emailOtpSend`, `passwordSubmit`. |
-|executedListenerId|String|ID of the [authentication event listener](authenticationeventlistener.md) that was executed.|
+|executedListenerId|String|ID of the [authentication event listener](../resources/authenticationeventlistener.md) that was executed.|
 |handlerResult|[authenticationEventHandlerResult](../resources/authenticationeventhandlerresult.md)|The result from the listening client, such as an Azure Logic App and Azure Functions, of this authentication event.|
 
 ## Relationships
@@ -43,4 +43,3 @@ The following JSON representation shows the resource type.
   }
 }
 ```
-

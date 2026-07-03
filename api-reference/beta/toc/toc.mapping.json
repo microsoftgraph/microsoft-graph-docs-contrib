@@ -2590,9 +2590,6 @@
                 "signInEventsActivity",
                 "signInEventsAppActivity",
                 "summarizedSignIn"
-              ],
-              "complexTypes": [
-                "tokenProtectionStatusDetails"
               ]
             },
             {
@@ -2600,11 +2597,6 @@
               "resources": [
                 "correlatedIdentity",
                 "identityCorrelation"
-              ],
-              "complexTypes": [
-                "attributeInfo",
-                "correlationError",
-                "identityInfo"
               ]
             },
             {

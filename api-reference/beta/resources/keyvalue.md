@@ -15,11 +15,11 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Provides more authentication processing information, such as the server name and the presence of hints for sign in and domain.
-The configuration of this resource is shared by the following objects:
-+ The **attributeCollection** property of the [contentCustomization](contentcustomization.md) complex type of [organizationalBrandingProperties](organizationalbrandingproperties.md).
-+ The **additionalDetails** property of the [directoryAudit](directoryaudit.md) resource type.
-+ The **authenticationProcessingDetails** property of the [signIn](signin.md) resource type.
-+ The **additionalDetails** property of the [impactedResource](impactedresource.md) resource type.
+This object is configured in the following resources:
+- **attributeCollection** property of [contentCustomization](../resources/contentcustomization.md), which is used by [organizationalBrandingProperties](../resources/organizationalbrandingproperties.md)
+- **additionalDetails** property of [directoryAudit](../resources/directoryaudit.md)
+- **authenticationProcessingDetails** property of [signIn](../resources/signin.md)
+- **additionalDetails** property of [impactedResource](../resources/impactedresource.md)
 
 ## Properties
 
@@ -88,5 +88,4 @@ The following JSON representation shows the resource type.
   "suppressions": []
 }
 -->
-
 
