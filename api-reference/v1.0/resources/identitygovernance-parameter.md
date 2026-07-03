@@ -12,7 +12,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph.identityGovernance
 
-Represents the allowed arguments that are defined in a [taskDefinition](../resources/identitygovernance-taskdefinition.md) for built-in lifecycle workflow tasks.
+Represents the allowed arguments that are defined in the **parameters** property of the [taskDefinition](../resources/identitygovernance-taskdefinition.md) resource for built-in lifecycle workflow tasks.
 
 ## Properties
 

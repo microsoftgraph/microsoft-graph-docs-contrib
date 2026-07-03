@@ -12,7 +12,7 @@ ms.date: 04/04/2024
 
 Namespace: microsoft.graph.identityGovernance
 
-Provide a summary of user processing results for a specified time period. Because the amount of user processing results returned by the List API call can be overwhelming, this summary allows the administrator to get a quick overview based on counts.
+Provide a [userSummary](../resources/identitygovernance-usersummary.md) for [userProcessingResult](../resources/identitygovernance-userprocessingresult.md) objects over a specified time period. Because the number of user processing results returned by the list API can be overwhelming, this summary allows administrators to get a quick overview based on counts.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

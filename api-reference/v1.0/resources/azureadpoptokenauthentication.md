@@ -13,7 +13,7 @@ ms.date: 07/22/2024
 Namespace: microsoft.graph
 
 
-Defines the Proof Of Possession (PoP) token authentication model to authenticate a logic app with a [accessPackageAssignmentRequestWorkflowExtensions](../resources/accesspackageassignmentrequestworkflowextension.md) or a [accessPackageAssignmentWorkflowExtensions](../resources/accesspackageassignmentworkflowextension.md) object.
+Defines the Proof Of Possession (PoP) token authentication model to authenticate a logic app with a [customTaskExtension](../resources/identitygovernance-customtaskextension.md), [accessPackageAssignmentRequestWorkflowExtensions](../resources/accesspackageassignmentrequestworkflowextension.md) or a [accessPackageAssignmentWorkflowExtensions](../resources/accesspackageassignmentworkflowextension.md) object.
 
 
 Inherits from [customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md).

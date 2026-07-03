@@ -98,32 +98,6 @@
             "webApplicationSegment",
             "corsConfiguration_v2"
           ],
-          "complexTypes": [
-            "applicationSegment",
-            "corsConfiguration",
-            "hybridAgentUpdaterConfiguration",
-            "kerberosSignOnSettings",
-            "keyCredential",
-            "onPremisesApplicationSegment",
-            "onPremisesPublishing",
-            "onPremisesPublishingSingleSignOn",
-            "passwordCredential",
-            "segmentConfiguration",
-            "updateWindow",
-            "verifiedCustomDomainCertificatesMetadata",
-            "webApplicationSegment",
-            "webSegmentConfiguration"
-          ]
-        },
-        {
-          "name": "Synchronization",
-          "overview": "../../resources/synchronization-overview.md",
-          "resources": [
-            "synchronization",
-            "synchronizationTemplate",
-            "synchronizationJob",
-            "synchronizationSchema"
-          ],
           "childNodes": [
             {
               "name": "Synchronization job",
@@ -1458,45 +1432,6 @@
                 "microsoft.graph.identityGovernance.customTaskExtension",
                 "microsoft.graph.identityGovernance.lifecycleManagementSettings",
                 "microsoft.graph.identitygovernance.insights"
-              ],
-              "complexTypes": [
-                "azureAdPopTokenAuthentication",
-                "azureAdTokenAuthentication",
-                "customCalloutExtension",
-                "customExtensionAuthenticationConfiguration",
-                "customExtensionCallbackConfiguration",
-                "customExtensionCalloutRequest",
-                "customExtensionCalloutResponse",
-                "customExtensionClientConfiguration",
-                "customExtensionData",
-                "customExtensionEndpointConfiguration",
-                "microsoft.graph.identityGovernance.attributeSetEntry",
-                "microsoft.graph.identityGovernance.awaitedWorkflowProcessingResult",
-                "microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
-                "microsoft.graph.identityGovernance.customTaskExtensionCallbackData",
-                "microsoft.graph.identityGovernance.customTaskExtensionCalloutData",
-                "microsoft.graph.identityGovernance.customTaskExtensionResponseData",
-                "emailSettings",
-                "identity",
-                "identityGovernance",
-                "keyValuePair",
-                "microsoft.graph.identityGovernance.lifecycleWorkflowsContainer",
-                "logicAppTriggerEndpointConfiguration",
-                "microsoft.graph.identityGovernance.onDemandExecutionOnly",
-                "microsoft.graph.identityGovernance.parameter",
-                "microsoft.graph.identityGovernance.provisioningAttributeMapping",
-                "microsoft.graph.identityGovernance.provisioningObjectWorkflowSubject",
-                "microsoft.graph.identityGovernance.ruleBasedSubjectSet",
-                "microsoft.graph.identityGovernance.runSummary",
-                "subjectSet",
-                "microsoft.graph.identityGovernance.taskReportSummary",
-                "microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
-                "microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
-                "microsoft.graph.identityGovernance.userSummary",
-                "microsoft.graph.identityGovernance.workflowBase",
-                "microsoft.graph.identityGovernance.workflowExecutionConditions",
-                "microsoft.graph.identityGovernance.workflowExecutionTrigger",
-                "microsoft.graph.identityGovernance.workflowSubject"
               ],
               "childNodes": [
                 {

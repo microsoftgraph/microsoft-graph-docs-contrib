@@ -14,7 +14,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The workflowExecutionTrigger type represents the workflow execution trigger when the [workflow runs on schedule](../resources/identitygovernance-triggerandscopebasedconditions.md). Inherited by the following derived types:
+The derived types of this abstract object are configured in the **trigger** property of the [triggerAndScopeBasedConditions](../resources/identitygovernance-triggerandscopebasedconditions.md) resource when a lifecycle workflow runs on schedule. Inherited by the following derived types:
 
 + [userInactivityTrigger](../resources/identitygovernance-userinactivitytrigger.md)
 + [timeBasedAttributeTrigger](../resources/identitygovernance-timebasedattributetrigger.md)

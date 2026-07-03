@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A shared object that is used in entitlement management access package assignment policies, role management policies, and lifecycle workflows.
+A shared object that is used in entitlement management access package assignment policies, role management policies, and lifecycle workflows through the **scope** property of the [triggerAndScopeBasedConditions](../resources/identitygovernance-triggerandscopebasedconditions.md) resource.
 
 + In entitlement management, used in the request, approval, and assignment review settings of an access package assignment policy.
 + In role management policies, used in the approval settings that are defined in rules for role management policies.

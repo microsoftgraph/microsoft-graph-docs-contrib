@@ -12,7 +12,7 @@ ms.date: 06/10/2026
 
 Namespace: microsoft.graph.identityGovernance
 
-Run a [workflow](../resources/identitygovernance-workflow.md) in preview mode for selected directory objects without affecting production users. This action triggers workflow processing in preview mode, and results can be retrieved using the [List userProcessingResults](../api/identitygovernance-workflow-list-userprocessingresults.md) operation with `$filter=workflowExecutionType eq 'preview'`.
+Run a [workflow](../resources/identitygovernance-workflow.md) in preview mode for selected directory objects without affecting production users. This action triggers workflow processing in preview mode, and results can be retrieved by using the [List userProcessingResults](../api/identitygovernance-workflow-list-userprocessingresults.md) operation with `$filter=workflowExecutionType eq 'previewMode'`.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

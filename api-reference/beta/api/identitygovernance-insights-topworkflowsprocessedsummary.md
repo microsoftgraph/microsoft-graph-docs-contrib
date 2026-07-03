@@ -14,7 +14,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provide a summary of the workflows processed the most, known as top workflows, for a specified period in a tenant. Workflow basic details are given, along with run information. For information about tasks processed, see [insights: topTasksProcessedSummary](identitygovernance-insights-toptasksprocessedsummary.md).
+Provide a summary from the [insights](../resources/identitygovernance-insights.md) resource of the [workflow](../resources/identitygovernance-workflow.md) objects processed the most, known as top workflows, for a specified period in a tenant. Workflow basic details are given, along with run information. For information about tasks processed, see [insights: topTasksProcessedSummary](../api/identitygovernance-insights-toptasksprocessedsummary.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
