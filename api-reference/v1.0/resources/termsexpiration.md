@@ -13,7 +13,7 @@ ms.date: 07/26/2024
 
 Namespace: microsoft.graph
 
-Provides additional settings for the scheduled expiration of the agreement.
+Provides additional settings for the scheduled expiration of a terms of use [agreement](../resoruces/agreement.md).
 
 ## Properties
 
