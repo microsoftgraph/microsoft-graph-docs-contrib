@@ -1,8 +1,8 @@
 ---
 title: Identify and remediate risk by using ID Protection APIs
 description: Learn how to use Microsoft Entra ID Protection APIs to identify and remediate identity-based risks, ensuring the security of user accounts.
-author: ebasseri 
-ms.author: etbasser
+author: FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: Etan.Basseri
 ms.localizationpriority: medium
 ms.subservice: entra-sign-in

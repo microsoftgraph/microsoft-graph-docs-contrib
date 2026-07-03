@@ -1,9 +1,9 @@
 ---
 title: "Use Microsoft MCP Server for Enterprise from Copilot Studio"
 description: "Learn how to connect a Microsoft Copilot Studio agent to the Microsoft MCP Server for Enterprise to query Microsoft Graph data using natural language."
-author: Licantrop0
-ms.author: lucaspol
-ms.reviewer: lucaspol
+author: msewaweru
+ms.author: eunicewaweru
+ms.reviewer: Licantrop0
 ms.subservice: ent-mcp-server
 ms.topic: how-to
 ms.custom: msecd-doc-authoring-106
