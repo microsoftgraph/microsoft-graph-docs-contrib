@@ -1619,10 +1619,6 @@
                 "agreementAcceptance",
                 "agreementFile",
                 "agreementFileLocalization"
-              ],
-              "complexTypes": [
-                "agreementFileData",
-                "termsExpiration"
               ]
             }
           ]
