@@ -12,7 +12,7 @@ ms.date: 04/04/2024
 
 Namespace: microsoft.graph
 
-Select a user and provision the account on-demand. The rate limit for this API is 5 requests per 10 seconds.
+Select a user and provision the account on-demand for a [synchronizationJob](../resources/synchronization-synchronizationjob.md). The rate limit for this API is 5 requests per 10 seconds.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

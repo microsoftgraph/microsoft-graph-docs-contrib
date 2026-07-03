@@ -45,7 +45,7 @@ The following table shows the properties accepted to create an accessReview.
 
 | Property | Type | Description |
 |:-------------|:------------|:------------|
-| additionalNotificationRecipients   |[accessReviewNotificationRecipientItem](../resources/accessReviewNotificationRecipientItem.md) collection| Defines the list of additional users or group members to be notified of the access review progress. |
+| additionalNotificationRecipients   |[accessReviewNotificationRecipientItem](../resources/accessreviewnotificationrecipientitem.md) collection| Defines the list of additional users or group members to be notified of the access review progress. |
 | descriptionForAdmins | String | Context of the review provided to admins. Required. |
   descriptionForReviewers | String | Context of the review provided to reviewers in email notifications. Email notifications support up to 256 characters. Required. |
 | displayName | String | Name of access review series. Required.|

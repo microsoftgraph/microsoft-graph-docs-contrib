@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a key-value pair where the key is a string and the value is a string.
+Represents a key-value pair where the key is a string and the value is a string. This object is configured in the **metadata** property of [synchronizationRule](../resources/synchronization-synchronizationrule.md).
 
 ## Properties
 | Property	   | Type	|Description|

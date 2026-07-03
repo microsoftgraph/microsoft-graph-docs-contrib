@@ -23,6 +23,12 @@ var requestBody = new ColumnDefinition
 		LinesForEditing = 0,
 		MaxLength = 255,
 	},
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"isSearchable" , false
+		},
+	},
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

@@ -12,7 +12,7 @@ ms.date: 06/21/2024
 
 Namespace: microsoft.graph
 
-Temporarily stop a running synchronization job. All the progress, including job state, is persisted, and the job will continue from where it left off when a [start](../api/synchronization-synchronizationjob-start.md) call is made.
+Temporarily stop a running [synchronizationJob](../resources/synchronization-synchronizationjob.md). All the progress, including job state, is persisted, and the job will continue from where it left off when a [start](../api/synchronization-synchronizationjob-start.md) call is made.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

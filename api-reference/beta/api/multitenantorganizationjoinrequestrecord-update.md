@@ -1,7 +1,7 @@
 ---
 title: "Update multiTenantOrganizationJoinRequestRecord"
 description: "Join a multi-tenant organization."
-author: "rolyon"
+author: "hafowler"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType

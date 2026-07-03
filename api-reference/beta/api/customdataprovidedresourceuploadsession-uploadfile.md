@@ -84,7 +84,6 @@ principalId,principalType,permissionId,permissionName,permissionDescription,perm
 ```
 
 # [JavaScript](#tab/javascript)
-
 [!INCLUDE [sample-code](../includes/snippets/javascript/customdataprovidedresourceuploadsessionthisuploadfile-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

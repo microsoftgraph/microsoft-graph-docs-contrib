@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains a key credential associated with an application or a service principal. The **keyCredentials** property of the [application](application.md) and [servicePrincipal](serviceprincipal.md) entities is a collection of **keyCredential**.
+Contains a key credential associated with an application or a service principal. Configured in the **keyCredentials** property of the [application](../resources/application.md) and [servicePrincipal](../resources/serviceprincipal.md) entities, and in the **verifiedCustomDomainKeyCredential** property of [onPremisesPublishing](../resources/onpremisespublishing.md) to represent the key credential for a custom domain.
 
 To add a keyCredential using Microsoft Graph, see [Add a certificate to an app using Microsoft Graph](/graph/applications-how-to-add-certificate).
 

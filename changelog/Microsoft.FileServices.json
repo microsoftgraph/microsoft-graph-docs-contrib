@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "6d254a28-972d-40ca-aa3d-c9f57e9e2cce",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "lockType",
+          "ChangeType": "Addition",
+          "Description": "Added the **lockType** enumeration type.",
+          "Target": "lockType"
+        },
+        {
+          "Id": "6d254a28-972d-40ca-aa3d-c9f57e9e2cce",
+          "ApiChange": "Property",
+          "ChangedApiName": "lockInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **lockInfo** property to the [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) resource.",
+          "Target": "driveItem"
+        },
+        {
+          "Id": "6d254a28-972d-40ca-aa3d-c9f57e9e2cce",
+          "ApiChange": "Resource",
+          "ChangedApiName": "lockInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [lockInfo](https://learn.microsoft.com/en-us/graph/api/resources/lockInfo?view=graph-rest-beta) resource.",
+          "Target": "lockInfo"
+        }
+      ],
+      "Id": "6d254a28-972d-40ca-aa3d-c9f57e9e2cce",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-06-30T19:53:05.5331055Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "5403f9c8-942c-4940-8776-f4041057dce9",
           "ApiChange": "Property",
           "ChangedApiName": "isSearchable",

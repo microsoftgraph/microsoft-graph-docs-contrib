@@ -1,7 +1,7 @@
 ---
 title: "List multiTenantOrganizationMembers"
 description: "List the tenants and their properties in the multitenant organization."
-author: "rolyon"
+author: "hafowler"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType

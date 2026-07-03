@@ -1,8 +1,8 @@
 ---
 title: "Review admin role assignments using access reviews APIs"
 description: "Learn how to use the access reviews APIs to periodically review users and groups with both active and eligible privileged roles."
-author: FaithOmbongi
-ms.author: ombongifaith
+author: jyothig123
+ms.author: jgangadhar 
 ms.topic: tutorial
 ms.reviewer: jgangadhar, rianakarim
 ms.localizationpriority: medium

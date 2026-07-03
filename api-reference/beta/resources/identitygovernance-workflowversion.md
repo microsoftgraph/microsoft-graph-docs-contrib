@@ -40,6 +40,7 @@ Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 |isEnabled|Boolean|Whether the workflow is enabled or disabled. If this setting is `true`, the workflow can be run on demand or on schedule when **isSchedulingEnabled** is `true`. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).<br><br>Supports `$filter`(`eq`, `ne`) and `orderBy`.|
 |isSchedulingEnabled|Boolean|If `true`, the Lifecycle Workflow engine executes the workflow based on the schedule defined by tenant settings. Cannot be `true` for a disabled workflow (where **isEnabled** is `false`). Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).<br><br>Supports `$filter`(`eq`, `ne`) and `orderBy`.|
 |lastModifiedDateTime|DateTimeOffset|The date time when the `workflow` was last modified. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
+|settings|[microsoft.graph.identityGovernance.workflowSetting](../resources/identitygovernance-workflowsetting.md)|The settings of the workflow version, including its quarantine configuration.|
 |versionNumber|Int32|The version of the workflow.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
 
 ## Relationships
@@ -75,6 +76,10 @@ The following JSON representation shows the resource type.
   "isEnabled": "Boolean",
   "isSchedulingEnabled": "Boolean",
   "lastModifiedDateTime": "String (timestamp)",
-  "versionNumber": "Integer"
+  "versionNumber": "Integer",
+  "settings": {
+    "@odata.type": "microsoft.graph.identityGovernance.workflowSetting"
+  }
 }
 ```
+

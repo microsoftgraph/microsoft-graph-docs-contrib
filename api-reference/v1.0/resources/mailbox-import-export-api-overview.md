@@ -22,7 +22,7 @@ These APIs support access to data in users' primary mailboxes and shared mailbox
 The following steps allow your app to systematically export and import contents from Exchange mailboxes:
 
 1. [Get a list of mailboxes that belong to a particular user](../api/usersettings-list-exchange.md).
-2. Discover the contents of the mailbox as a set of [folders](./mailboxfolder.md) and [items](./mailboxitem.md).
+2. Discover the contents of the mailbox as a set of [folders](./mailboxfolder.md) and [items](./mailboxitem.md). Use the **id** property returned by [List folders](../api/mailbox-list-folders.md) as the folder identifier for mailbox import and export operations. For example, filter folders by class with `$filter=type eq 'IPF.Appointment'` to find calendar-class folders.
 3. [Export items from a mailbox](../api/mailbox-exportitems.md).
 4. Create or update mailbox [folders](./mailboxfolder.md).
 5. [Import an item into the same or a different mailbox](../api/mailbox-createimportsession.md).

@@ -11,7 +11,7 @@ ms.date: 06/25/2024
 # accessReviewInstanceDecisionItem: filterByCurrentUser
 Namespace: microsoft.graph
 
-Retrieve all decision items for an instance of an access review or a stage of an instance of a multi-stage access review, for which the calling user is the reviewer. The decision items are represented by [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects on a given [accessReviewInstance](../resources/accessreviewinstance.md) or [accessReviewStage](../resources/accessReviewStage.md) for which the calling user is the reviewer.
+Retrieve all decision items for an instance of an access review or a stage of an instance of a multi-stage access review for which the calling user is the reviewer. The decision items are presented as [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects on a given [accessReviewInstance](../resources/accessreviewinstance.md) or [accessReviewStage](../resources/accessreviewstage.md) for which the calling user is the reviewer.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

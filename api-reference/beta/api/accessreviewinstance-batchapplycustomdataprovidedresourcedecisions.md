@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enables reviewers to set the `applyResult` and `applyDescription` on all [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects in batches by using **customDataProvidedResourceId**.
+Enables reviewers to set the **applyResult** and **applyDescription** on all [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects in a specific [accessReviewInstance](../resources/accessreviewinstance.md) in batches by using **customDataProvidedResourceId**.
 
 **NOTE:** The access review instance must be in an `Applying` state.
 

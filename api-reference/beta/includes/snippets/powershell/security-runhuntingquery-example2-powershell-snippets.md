@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Beta.Security
 
 $params = @{
-	Query = "DeviceProcessEvents"
-	Timespan = "P90D"
+	query = "DeviceProcessEvents"
+	timespan = "P90D"
 }
 
 Start-MgBetaSecurityHuntingQuery -BodyParameter $params

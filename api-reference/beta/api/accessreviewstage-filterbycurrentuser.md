@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Return all [accessReviewStage](../resources/accessReviewStage.md) objects on a given [accessReviewInstance](../resources/accessreviewinstance.md) where the calling user is a reviewer on one or more [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects.
+Return all [accessReviewStage](../resources/accessreviewstage.md) objects on a given [accessReviewInstance](../resources/accessreviewinstance.md) where the calling user is a reviewer on one or more [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

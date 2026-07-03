@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Summarizes the results of the synchronization job run.
+Summarizes the results of the synchronization job run. This object is configured in the **lastExecution**, **lastSuccessfulExecution**, and **lastSuccessfulExecutionWithExports** properties of [synchronizationStatus](../resources/synchronization-synchronizationstatus.md).
 
 ## Properties
 | Property       | Type    |Description|

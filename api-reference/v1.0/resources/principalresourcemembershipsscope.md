@@ -12,7 +12,7 @@ ms.date: 04/03/2024
 
 Namespace: microsoft.graph
 
-The principalResourceMembershipsScope is a type of [accessReviewScope](accessreviewscope.md) which allows you to select a collection of principal scopes and a collection of resource scopes and review access of selected principals to selected resources. It's used to configure the **scope** property of an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md).
+In an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md), the **scope** property can be configured with a **principalResourceMembershipsScope** object to review selected principals' access to selected resources.
 
 Inherits from [accessReviewScope](../resources/accessreviewscope.md).
 

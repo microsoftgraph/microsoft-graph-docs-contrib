@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an error that occurred during the synchronization process.
+Represents an error that occurred during the synchronization process. Configured in the **error** property of the [synchronizationTaskExecution](../resources/synchronization-synchronizationtaskexecution.md) and [synchronizationQuarantine](../resources/synchronization-synchronizationquarantine.md) resources.
 
 ## Properties
 

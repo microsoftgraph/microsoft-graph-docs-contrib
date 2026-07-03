@@ -12,7 +12,7 @@ ms.date: 06/21/2024
 
 Namespace: microsoft.graph
 
-List all the functions currently supported in the [attributeMappingSource](../resources/synchronization-attributemappingsource.md).
+List all the functions currently supported in the [attributeMappingSource](../resources/synchronization-attributemappingsource.md) for a [synchronizationSchema](../resources/synchronization-synchronizationschema.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

@@ -12,9 +12,14 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-The **accessReviewReviewerScope** defines who will review instances of an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) or [user consent requests](consentrequests-overview.md). 
+Use **accessReviewReviewerScope** to configure reviewers in the following properties:
+- [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md): **reviewers**, **fallbackReviewers**, **backupReviewers**
+- [accessReviewInstance](../resources/accessreviewinstance.md): **reviewers**, **fallbackReviewers**
+- [accessReviewStage](../resources/accessreviewstage.md): **reviewers**, **fallbackReviewers**
 
-Reviewers can be specified as a static list of users (that is, specific users, group owners, and group members) or dynamically in which every user is reviewed by their manager, group or application owners. To create a self-review (where users review their own access) in Microsoft Entra access reviews, the **reviewers** property of the [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) should be an empty collection.
+This type is also used for [user consent requests](../resources/consentrequests-overview.md).
+
+Reviewers can be specified as a static list of users (that is, specific users, group owners, and group members) or dynamically, in which every user is reviewed by their manager, group owners, or application owners. To create a self-review (where users review their own access) in Microsoft Entra access reviews, the **reviewers** property of the [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) should be an empty collection.
 
 Inherits from [accessReviewScope](../resources/accessreviewscope.md).
 

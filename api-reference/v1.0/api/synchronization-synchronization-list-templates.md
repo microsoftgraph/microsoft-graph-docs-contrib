@@ -12,7 +12,7 @@ ms.date: 06/21/2024
 
 Namespace: microsoft.graph
 
-List the synchronization templates associated with a given application or service principal.
+List [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) objects associated with a given application or service principal.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

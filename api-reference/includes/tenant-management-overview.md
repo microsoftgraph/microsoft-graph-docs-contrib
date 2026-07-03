@@ -1,8 +1,7 @@
 ---
 title: Manage your tenants by using Microsoft Graph
 description: Use the Microsoft Graph tenant management APIs to back up data, manage configuration settings, and govern tenants at scale programmatically.
-author: FaithOmbongi
-ms.author: ombongifaith
+author: "hafowler"
 ms.date: 04/30/2026
 ms.topic: include
 ms.subservice: non-product-specific

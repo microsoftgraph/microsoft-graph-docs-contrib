@@ -1,8 +1,8 @@
 ---
 title: "Assign privileged roles using PIM for Microsoft Entra roles APIs"
 description: "Learn how to create a role-assignable security group and use PIM APIs to assign the security group eligibility to a Microsoft Entra admin role."
-author: FaithOmbongi
-ms.author: ombongifaith
+author: jyothig123
+ms.author: jgangadhar 
 ms.reviewer: rianakarim
 ms.topic: tutorial
 ms.localizationpriority: medium

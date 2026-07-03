@@ -3,8 +3,7 @@ title: "Identity and access reports API overview"
 description: "Access identity and access reports to monitor, investigate, and troubleshoot all activities in your tenant."
 ms.localizationpriority: medium
 ms.subservice: entra-monitoring-health
-author: faithombongi
-ms.author: ombongifaith
+author: egreenberg14
 ms.reviewer: egreenberg
 doc_type: conceptualPageType
 ms.topic: overview

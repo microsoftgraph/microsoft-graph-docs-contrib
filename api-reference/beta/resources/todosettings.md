@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Company-wide settings for Microsoft Todo.
+Company-wide settings for Microsoft Todo. This object is configured in the **settings** property of [adminTodo](../resources/admintodo.md).
 
 ## Properties
 |Property|Type|Description|

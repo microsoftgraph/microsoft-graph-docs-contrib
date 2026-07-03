@@ -1,9 +1,9 @@
 ---
 title: Use Microsoft MCP Server for Enterprise from Microsoft Foundry
 description: "Learn how to connect Microsoft MCP Server for Enterprise as a tool in your Microsoft Foundry project to query Microsoft Entra data using natural language."
-author: msewaweru
-ms.author: eunicewaweru
-ms.reviewer: FaithOmbongi
+author: Licantrop0
+ms.author: lucaspol
+ms.reviewer: lucaspol
 ms.subservice: ent-mcp-server
 ms.topic: how-to
 ms.date: 04/15/2026
