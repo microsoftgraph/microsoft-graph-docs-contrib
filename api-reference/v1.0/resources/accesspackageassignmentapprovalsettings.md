@@ -11,7 +11,7 @@ ms.date: 10/04/2024
 
 Namespace: microsoft.graph
 
-Used for the **requestApprovalSettings** property of an [access package assignment policy](accesspackageassignmentpolicy.md). Provides additional settings to indicate if approval is needed for new requests for an access package assignment through that policy or for updates to existing requests, and to select who must approve each request.
+Used for the **requestApprovalSettings** property of an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md). Provides additional settings to indicate if approval is needed for new requests for an access package assignment through that policy or for updates to existing requests, and to select who must approve each request.
 
 ## Properties
 |Property|Type|Description|

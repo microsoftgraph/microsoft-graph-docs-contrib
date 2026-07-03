@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Apply approve or deny decision on an [approvalStep](../resources/approvalStep.md) object.
+Apply an approve or deny decision on an [approvalStep](../resources/approvalstep.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

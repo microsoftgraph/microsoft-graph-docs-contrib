@@ -16,9 +16,13 @@ Namespace: microsoft.graph
 
 In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), an access package resource scope is a reference to a scope within a resource, for those resources that have multiple scopes.
 
-You can determine the access package resource scope, for a resource that has roles already added to an access package, by using [list accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) to return a collection of [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) objects.
+You can determine the access package resource scope, for a resource that has roles already added to an access package, by using [list accessPackageResourceRoleScopes](../api/accesspackage-list-accesspackageresourcerolescopes.md) to return a collection of [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) objects.
 
 If the resource is in an access package catalog but hasn't yet had its roles added to an access package, you can determine the access package resource scope by using [list accessPackageResources](../api/accesspackagecatalog-list-accesspackageresources.md) and including `$expand=accessPackageResourceScopes,accessPackageResourceEnvironment` in the query.
+
+In entitlement management, this object is configured in the following properties and relationships:
+- **accessPackageResourceScope** relationship of [accessPackageAssignmentResourceRole](../resources/accesspackageassignmentresourcerole.md) and [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md)
+- **accessPackageResourceScopes** relationship of [accessPackageCatalog](../resources/accesspackagecatalog.md), [accessPackageResource](../resources/accesspackageresource.md), and [customDataProvidedResource](../resources/customdataprovidedresource.md)
 
 ## Properties
 

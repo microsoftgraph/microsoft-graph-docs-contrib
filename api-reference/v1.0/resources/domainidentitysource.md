@@ -11,7 +11,7 @@ ms.date: 04/03/2024
 
 Namespace: microsoft.graph
 
-Used in the identity sources of an [connectedOrganization](connectedOrganization.md). The `@odata.type` value `#microsoft.graph.domainIdentitySource` indicates that this type identifies a domain as an identity source for a connected organization.
+Used in the **identitySources** property of [connectedOrganization](../resources/connectedorganization.md). The `@odata.type` value `#microsoft.graph.domainIdentitySource` indicates that this type identifies a domain as an identity source for a connected organization.
 
 ## Properties
 |Property|Type|Description|

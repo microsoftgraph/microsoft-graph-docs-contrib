@@ -12,7 +12,7 @@ ms.date: 08/08/2024
 
 Namespace: microsoft.graph
 
-The configuration details for the logic app's endpoint that is associated with a custom access package workflow extension. Derived from the [customExtensionEndpointConfiguration](customextensionendpointconfiguration.md) abstract type.
+The configuration details for the logic app's endpoint that is associated with a custom access package workflow extension. Derived from the [customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md) abstract type.
 
 ## Properties
 

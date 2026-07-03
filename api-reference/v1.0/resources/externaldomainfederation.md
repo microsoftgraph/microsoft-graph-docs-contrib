@@ -12,7 +12,7 @@ ms.date: 07/22/2024
 Namespace: microsoft.graph
 
 
-Used in the identity sources of an [connectedOrganization](connectedOrganization.md). The `@odata.type` value `#microsoft.graph.externalDomainFederation` indicates that this type identifies a domain with a configured identity provider as an identity source for a connected organization.
+Used in the identity sources of an [connectedOrganization](../resources/connectedorganization.md). The `@odata.type` value `#microsoft.graph.externalDomainFederation` indicates that this type identifies a domain with a configured identity provider as an identity source for a connected organization.
 
 ## Properties
 |Property|Type|Description|

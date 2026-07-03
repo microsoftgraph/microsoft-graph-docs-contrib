@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Represents a question in a specific language.
 
+In entitlement management, this object is configured in the **localizedTexts** property of **accessPackageLocalizedContent**.
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

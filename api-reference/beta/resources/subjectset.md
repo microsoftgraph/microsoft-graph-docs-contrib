@@ -24,14 +24,20 @@ This object is an abstract base type from which the following resources are deri
 
 | Resource | Feature | Description |
 |---|---|---|
-|[connectedOrganizationMembers](connectedorganizationmembers.md) | Entitlement Management | Represents members of a connected organization in an access package assignment policy. |
-|[externalSponsors](externalsponsors.md) | Entitlement Management | Represents user's connected organization external sponsors for access package assignments. |
+|[connectedOrganizationMembers](../resources/connectedorganizationmembers.md) | Entitlement Management | Represents members of a connected organization in an access package assignment policy. |
+|[externalSponsors](../resources/externalsponsors.md) | Entitlement Management | Represents user's connected organization external sponsors for access package assignments. |
 |[groupBasedSubjectSet](../resources/identitygovernance-groupbasedsubjectset.md) | Lifecycle Workflows | Represents the group that is the scope of a lifecycle workflow. |
-|[groupMembers](groupmembers.md) | Entitlement Management | Represents a collection of users part of a group in the tenant who are allowed as requestor, approver, or reviewer. |
-|[internalSponsors](internalsponsors.md) | Entitlement Management | Represents user's connected organization internal sponsors as the approver for access package assignments. |
-|[requestorManager](requestormanager.md) | Entitlement Management | Represents the manager of the requestor as approver for access package assignments. |
-|[ruleBasedSubjectSet](../resources/identitygovernance-ruleBasedSubjectSet.md) | Lifecycle Workflows | Represents the rules to define the subjects for the scope of a lifecycle workflow. |
-|[singleUser](singleuser.md) | Entitlement Management | Represents a single user as approver to access packages. |
+|[groupMembers](../resources/groupmembers.md) | Entitlement Management | Represents a collection of users part of a group in the tenant who are allowed as requestor, approver, or reviewer. |
+|[internalSponsors](../resources/internalsponsors.md) | Entitlement Management | Represents user's connected organization internal sponsors as the approver for access package assignments. |
+|[requestorManager](../resources/requestormanager.md) | Entitlement Management | Represents the manager of the requestor as approver for access package assignments. |
+|[ruleBasedSubjectSet](../resources/identitygovernance-rulebasedsubjectset.md) | Lifecycle Workflows | Represents the rules to define the subjects for the scope of a lifecycle workflow. |
+|[singleUser](../resources/singleuser.md) | Entitlement Management | Represents a single user as approver to access packages. |
+
+In entitlement management, this object is configured in the following properties and relationships:
+- **escalationApprovers** property of [accessPackageApprovalStage](../resources/accesspackageapprovalstage.md)
+- **fallbackEscalationApprovers** property of [accessPackageApprovalStage](../resources/accesspackageapprovalstage.md)
+- **fallbackPrimaryApprovers** property of [accessPackageApprovalStage](../resources/accesspackageapprovalstage.md)
+- **primaryApprovers** property of [accessPackageApprovalStage](../resources/accesspackageapprovalstage.md)
 
 ## Properties
 

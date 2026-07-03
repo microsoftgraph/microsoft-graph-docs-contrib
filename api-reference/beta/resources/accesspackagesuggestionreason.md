@@ -16,7 +16,9 @@ Namespace: microsoft.graph
 
 Base type for reasons why an access package is suggested to an end user in [Microsoft Entra entitlement management](entitlementmanagement-overview.md). This is an abstract type that is inherited by more specific suggestion reason types.
 
-Base type of [accessPackageSuggestionRelatedPeopleBased](accesspackagesuggestionrelatedpeoplebased.md) and [accessPackageSuggestionSelfAssignmentHistoryBased](accesspackagesuggestionselfassignmenthistorybased.md).
+Base type of [accessPackageSuggestionRelatedPeopleBased](../resources/accesspackagesuggestionrelatedpeoplebased.md) and [accessPackageSuggestionSelfAssignmentHistoryBased](../resources/accesspackagesuggestionselfassignmenthistorybased.md).
+
+In entitlement management, this object is configured in the **reasons** property of [accessPackageSuggestion](../resources/accesspackagesuggestion.md).
 
 ## Properties
 

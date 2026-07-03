@@ -14,6 +14,11 @@ Namespace: microsoft.graph
 
 Connection settings that define how long Microsoft Entra ID can wait for a response from an external app before it shuts down the connection when trying to trigger the external app.
 
+In entitlement management, this object is configured in the **clientConfiguration** property of:
+- [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md)
+- [accessPackageAssignmentWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md)
+- [customCalloutExtension](../resources/customcalloutextension.md)
+
 ## Properties
 
 |Property|Type|Description|

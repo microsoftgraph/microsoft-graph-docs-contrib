@@ -12,7 +12,7 @@ ms.date: 07/26/2024
 
 Namespace: microsoft.graph
 
-Defines when to execute a [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) or [accessPackageAssignmentWorkflowExtension](../resources/accessPackageAssignmentWorkflowExtension.md) object.
+Defines when to execute a [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) or [accessPackageAssignmentWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md) object.
 
 Inherits from [entity](../resources/entity.md).
 
