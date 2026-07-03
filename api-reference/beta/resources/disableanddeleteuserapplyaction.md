@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Disable any B2B guest user who is denied in an access review for 30 days, and then delete their account. This option doesn't contain any configuration options.
+In an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md), the **applyActions** property of [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) can use **disableAndDeleteUserApplyAction** to disable a denied B2B guest user for 30 days and then delete their account. This option doesn't contain any configuration options.
 
 Inherits from [accessReviewApplyAction](../resources/accessreviewapplyaction.md).
 

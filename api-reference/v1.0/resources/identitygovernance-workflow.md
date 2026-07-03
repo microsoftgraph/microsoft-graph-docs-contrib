@@ -30,6 +30,7 @@ Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 |[Activate](../api/identitygovernance-workflow-activate.md)|None|Run a workflow on-demand.|
 |[Activate with scope](../api/identitygovernance-workflow-activatewithscope.md)|None|Run a workflow on-demand with a specific scope.|
 |[List users in scope](../api/workflow-list-executionscope.md)|[microsoft.graph.user](../resources/user.md) collection|Get a list of users who are in the scope of the execution conditions of a [workflow](../resources/identitygovernance-workflow.md) object.|
+|[Clear quarantine](../api/identitygovernance-workflow-clearquarantine.md)|[microsoft.graph.identityGovernance.workflow](../resources/identitygovernance-workflow.md)|Release a quarantined workflow so that it resumes processing.|
 |[Preview task failures](../api/identitygovernance-workflow-previewtaskfailures.md)|[microsoft.graph.identityGovernance.previewFailedTask](../resources/identitygovernance-previewfailedtask.md) collection|Validate the tasks configured in a workflow to check for configuration errors.|
 |[Preview workflow](../api/identitygovernance-workflow-previewworkflow.md)|None|Run a workflow in preview mode for selected directory objects without affecting production users.|
 |**Deleted workflows**|:---|:---|
@@ -53,6 +54,8 @@ Inherits from [workflowBase](../resources/identitygovernance-workflowbase.md).
 |isSchedulingEnabled|Boolean|If `true`, the Lifecycle Workflow engine executes the workflow based on the schedule defined by [tenant settings](identitygovernance-lifecyclemanagementsettings.md). Cannot be `true` for a disabled workflow (where **isEnabled** is `false`). Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md). Optional. Defaults to `false`.<br><br>Supports `$filter`(`eq`, `ne`) and `orderBy`.|
 |lastModifiedDateTime|DateTimeOffset|The date time when the `workflow` was last modified. Inherited from [workflowBase](../resources/identitygovernance-workflowbase.md).<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
 |nextScheduleRunDateTime|DateTimeOffset|The date time when the `workflow` is expected to run next based on the schedule interval, if there are any users matching the execution conditions. <br><br>Supports `$filter`(`lt`,`gt`) and `$orderby`.|
+|quarantineDetails|[microsoft.graph.identityGovernance.quarantineDetails](../resources/identitygovernance-quarantinedetails.md)|The current quarantine state of the workflow. Read-only.|
+|settings|[microsoft.graph.identityGovernance.workflowSetting](../resources/identitygovernance-workflowsetting.md)|The settings of the workflow, including its quarantine configuration.|
 |version|Int32|The current version number of the workflow. Value is 1 when the workflow is first created.<br><br>Supports `$filter`(`lt`, `le`, `gt`, `ge`, `eq`, `ne`) and `$orderby`.|
 
 ## Relationships
@@ -97,6 +100,12 @@ The following JSON representation shows the resource type.
   "isEnabled": "Boolean",
   "isSchedulingEnabled": "Boolean",
   "nextScheduleRunDateTime": "String (timestamp)",
-  "version": "Integer"
+  "version": "Integer",
+  "quarantineDetails": {
+    "@odata.type": "microsoft.graph.identityGovernance.quarantineDetails"
+  },
+  "settings": {
+    "@odata.type": "microsoft.graph.identityGovernance.workflowSetting"
+  }
 }
 ```

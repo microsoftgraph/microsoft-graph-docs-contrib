@@ -12,7 +12,7 @@ ms.date: 06/21/2024
 
 Namespace: microsoft.graph
 
-Retrieve a synchronization template by its identifier.
+Retrieve a [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) object by its identifier.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

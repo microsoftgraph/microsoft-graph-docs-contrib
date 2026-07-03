@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A [webSegmentConfiguration](websegmentconfiguration.md) object represents application segments for an on-premises wildcard application published through Microsoft Entra application proxy.
+A [webSegmentConfiguration](websegmentconfiguration.md) object represents application segments for an on-premises wildcard application published through Microsoft Entra application proxy. This object is configured in the **segmentsConfiguration** property of [onPremisesPublishing](../resources/onpremisespublishing.md).
 
 Inherits from [segmentConfiguration](segmentconfiguration.md).
 

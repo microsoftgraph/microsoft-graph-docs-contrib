@@ -11,11 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const customDataProvidedResourceUploadSession = {
-  source: 'BuildingAccessData',
-  type: '#microsoft.graph.accessReviewDataUploadTriggerCallbackData',
+  '@odata.type': '#microsoft.graph.customDataProvidedResourceAccessReviewUploadSession',
   data: {
-      accessReviewId: '9e4b1c6f-2a3d-4f8e-9b7a-5c1e2d3f4a6b',
-      accessReviewInstanceId: '6a9b1c6f-2a3d-4f8e-9b7a-5c1e2d3f4a6b'
+    '@odata.type': '#microsoft.graph.customDataProvidedResourcePayloads.accessReviewContextData',
+    reviewDefinitionId: '9e4b1c6f-2a3d-4f8e-9b7a-5c1e2d3f4a6b',
+    reviewInstanceId: '15eeb4df-8a4d-4f8e-9b7a-6b3e1c7f5a9d'
   }
 };
 

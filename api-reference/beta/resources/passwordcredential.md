@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a password credential associated with an application or a service principal. The **passwordCredentials** property of the [application](application.md) and [servicePrincipal](serviceprincipal.md) entities is a collection of **passwordCredential** objects.
+Represents a password credential associated with an application or a service principal. Configured in the **passwordCredentials** property of the [application](../resources/application.md) and [servicePrincipal](../resources/serviceprincipal.md) entities, and in the **verifiedCustomDomainPasswordCredential** property of [onPremisesPublishing](../resources/onpremisespublishing.md) to represent the password credential for a custom domain.
 
 To update the **passwordCredential** property, use the following methods:
 - [application: addPassword](../api/application-addpassword.md)
@@ -24,7 +24,7 @@ To update the **passwordCredential** property, use the following methods:
 
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 | customKeyIdentifier | Binary | Do not use. |
 | displayName | String | Friendly name for the password. Optional. |

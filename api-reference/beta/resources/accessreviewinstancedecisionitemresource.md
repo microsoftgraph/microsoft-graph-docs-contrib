@@ -16,9 +16,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Every decision item in an access review represents a principal's access to a resource. An **accessReviewInstanceDecisionItemResource** object identifies the resource.
+In an [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md), the **resource** property identifies the resource associated with the decision item.
 
-[accessReviewInstanceDecisionItemResource](accessreviewinstancedecisionitemresource.md) is an open type that allows for other properties to be passed in and is the base type for the following resources: [accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource](accessreviewinstancedecisionitemaccesspackageassignmentpolicyresource.md), [accessReviewInstanceDecisionItemAzureRoleResource](accessreviewinstancedecisionitemazureroleresource.md), [accessReviewInstanceDecisionItemServicePrincipalResource](accessreviewinstancedecisionitemserviceprincipalresource.md), and [accessReviewInstanceDecisionItemCustomDataProvidedResource](accessReviewInstanceDecisionItemCustomDataProvidedResource.md).
+An [accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md) object is an open type that allows other properties to be passed in and is the base type for the following resources:
+- [accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource](../resources/accessreviewinstancedecisionitemaccesspackageassignmentpolicyresource.md)
+- [accessReviewInstanceDecisionItemAzureRoleResource](../resources/accessreviewinstancedecisionitemazureroleresource.md)
+- [accessReviewInstanceDecisionItemServicePrincipalResource](../resources/accessreviewinstancedecisionitemserviceprincipalresource.md)
+- [accessReviewInstanceDecisionItemCustomDataProvidedResource](../resources/accessreviewinstancedecisionitemcustomdataprovidedresource.md)
 
 ## Properties
 |Property|Type|Description|

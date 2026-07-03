@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update privacy settings to display or return the specified type of insights in an organization. The type of settings can be contact insights, item insights, or people insights.
+Update privacy settings to display or return the specified type of [insightsSettings](../resources/insightssettings.md) in an organization. The type of settings can be contact insights, item insights, or people insights.
 
 To learn more about customizing insights privacy for your organization, see:
 -  [Customize item insights privacy](/graph/insights-customize-item-insights-privacy) 

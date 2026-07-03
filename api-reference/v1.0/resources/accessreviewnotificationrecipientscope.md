@@ -12,7 +12,7 @@ ms.date: 08/01/2024
 
 Namespace: microsoft.graph
 
-The **accessReviewNotificationRecipientScope** represents a base class for defining users who receive notifications on instances of [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) objects. It's inherited by [accessReviewNotificationRecipientQueryScope](../resources/accessReviewNotificationRecipientQueryScope.md).
+In an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md), the **additionalNotificationRecipients** property configures [accessReviewNotificationRecipientItem](../resources/accessreviewnotificationrecipientitem.md) objects, and each item's **notificationRecipientScope** property uses **accessReviewNotificationRecipientScope** to define who receives notification emails. It's inherited by [accessReviewNotificationRecipientQueryScope](../resources/accessreviewnotificationrecipientqueryscope.md).
 ## Properties
 None.
 

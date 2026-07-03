@@ -2,7 +2,7 @@
 title: "accessPackageSuggestions: filterByCurrentUser"
 description: "Retrieve suggested access packages for the current end user based on various criteria including related people insights."
 ms.localizationpriority: medium
-author: "myra-ramdenbourg"
+author: "AlexFilipin"
 ms.subservice: "entra-id-governance"
 doc_type: "apiPageType"
 ms.date: 05/14/2026

@@ -13,9 +13,11 @@ toc.title: User last sign-in recommendation insight setting
 
 Namespace: microsoft.graph
 
-The **userLastSignInRecommendationInsightSetting** allows you to configure the last sign-in date and time of a user as an insight to aid the reviewers to make decisions for an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) object.
+Use **userLastSignInRecommendationInsightSetting** to configure last sign-in insights in the following properties:
+- [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md): **recommendationInsightSettings**
+- [accessReviewStageSettings](../resources/accessreviewstagesettings.md): **recommendationInsightsSettings**
 
-Inherits from [accessReviewRecommendationInsightSetting](accessReviewRecommendationInsightSetting.md).
+Inherits from [accessReviewRecommendationInsightSetting](../resources/accessreviewrecommendationinsightsetting.md).
 
 ## Properties
 | Property    | Type   | Description |

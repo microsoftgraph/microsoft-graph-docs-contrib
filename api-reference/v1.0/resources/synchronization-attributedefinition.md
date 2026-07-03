@@ -12,7 +12,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-Describes an attribute of an object.
+Describes an attribute of an object. This object is configured in the **attributes** property of [objectDefinition](../resources/synchronization-objectdefinition.md).
 
 ## Properties
 

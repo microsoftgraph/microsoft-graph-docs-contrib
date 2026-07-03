@@ -1,7 +1,7 @@
 ---
 title: "allowedValue resource type"
 description: "Represents a predefined value that is allowed for a custom security attribute definition."
-author: "rolyon"
+author: "simundru"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: resourcePageType

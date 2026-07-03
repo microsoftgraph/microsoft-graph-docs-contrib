@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Groups
 
-Get-MgGroup -GroupId $groupId -Property "allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount" 
+Get-MgGroup -GroupId $groupId -Property "accessType,allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenConversationsCount,unseenCount,unseenMessagesCount" 
 
 ```

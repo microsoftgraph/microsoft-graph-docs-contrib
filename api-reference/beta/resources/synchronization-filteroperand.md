@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains a collection of values for the operand.
+Contains a collection of values for the operand. This object is configured in the **targetOperand** property of [filterClause](../resources/synchronization-filterclause.md).
 
 ## Properties
 | Property       | Type    |Description|

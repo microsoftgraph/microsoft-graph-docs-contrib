@@ -1,7 +1,7 @@
 ---
 title: "Remove multiTenantOrganizationMember"
 description: "Remove a tenant from a multitenant organization."
-author: "rolyon"
+author: "hafowler"
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType

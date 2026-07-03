@@ -110,6 +110,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | lastModifiedBy       | [identitySet][]    | Identity of the user, device, and application, which last modified the item. Read-only.
 | lastModifiedDateTime | DateTimeOffset     | Date and time at which the item was last modified. Read-only.
 | location             | [geoCoordinates][] | Location metadata, if the item has location data. Read-only.
+| lockInfo             | [lockInfo][]       | Lock metadata for the item, including the lock type, when it was created, when it expires, and which users currently hold the lock. Read-only.
 | malware              | [malware][]        | Malware metadata, if the item was detected to contain malware. Read-only.
 | media                | [media][]          | Information about the media (audio or video) item. Read-write. Only on OneDrive for Business and SharePoint.
 | name                 | String             | The name of the item (filename and extension). Read-write.
@@ -200,6 +201,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
   "folder": { "@odata.type": "microsoft.graph.folder" },
   "image": { "@odata.type": "microsoft.graph.image" },
   "location": { "@odata.type": "microsoft.graph.geoCoordinates" },
+  "lockInfo": { "@odata.type": "microsoft.graph.lockInfo" },
   "malware": { "@odata.type": "microsoft.graph.malware" },
   "media": { "@odata.type": "microsoft.graph.media" },
   "package": { "@odata.type": "microsoft.graph.package" },
@@ -272,6 +274,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 [itemRetentionLabel]: itemretentionlabel.md
 [geoCoordinates]: geocoordinates.md
 [listItem]: listitem.md
+[lockInfo]: lockinfo.md
 [malware]: malware.md
 [media]: media.md
 [package]: package.md

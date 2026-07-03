@@ -11,8 +11,8 @@ const options = {
 const client = Client.init(options);
 
 const huntingQueryResults = {
-    Query: 'DeviceProcessEvents',
-    Timespan: 'P90D'
+    query: 'DeviceProcessEvents',
+    timespan: 'P90D'
 };
 
 await client.api('/security/runHuntingQuery')

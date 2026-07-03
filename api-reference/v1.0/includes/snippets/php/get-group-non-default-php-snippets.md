@@ -13,7 +13,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new GroupItemRequestBuilderGetRequestConfiguration();
 $queryParameters = GroupItemRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->select = ["allowExternalSenders","autoSubscribeNewMembers","isSubscribedByMail","unseenCount"];
+$queryParameters->select = ["accessType","allowExternalSenders","autoSubscribeNewMembers","isSubscribedByMail","unseenConversationsCount","unseenCount","unseenMessagesCount"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 

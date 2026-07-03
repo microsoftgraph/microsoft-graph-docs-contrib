@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the schedule used to run a [synchronizationJob](synchronization-synchronizationjob.md).
+Defines the schedule (**schedule** property) used to run a [synchronizationJob](../resources/synchronization-synchronizationjob.md).
 
 ## Properties
 | Property       | Type    |Description|

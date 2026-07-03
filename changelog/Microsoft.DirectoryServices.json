@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "d7e4f60b-8767-480e-b630-ba5c7e87777f",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "servicePrincipalLockScope",
+          "ChangeType": "Addition",
+          "Description": "Added the **servicePrincipalLockScope** enumeration type.",
+          "Target": "servicePrincipalLockScope"
+        },
+        {
+          "Id": "d7e4f60b-8767-480e-b630-ba5c7e87777f",
+          "ApiChange": "Property",
+          "ChangedApiName": "enforcementScope",
+          "ChangeType": "Addition",
+          "Description": "Added the **enforcementScope** property to the [servicePrincipalLockConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/servicePrincipalLockConfiguration?view=graph-rest-beta) resource.",
+          "Target": "servicePrincipalLockConfiguration"
+        }
+      ],
+      "Id": "d7e4f60b-8767-480e-b630-ba5c7e87777f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-07-02T21:51:23.730351Z",
+      "WorkloadArea": "Applications",
+      "SubArea": "Service principal"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "03fd2dc2-83d7-4b32-967f-af8bc6d3ce06",
           "ApiChange": "Property",
           "ChangedApiName": "redirectUris",
@@ -15909,6 +15935,42 @@
       "CreatedDateTime": "2026-06-23T07:49:43.0000000Z",
       "WorkloadArea": "Agents",
       "SubArea": "Agent identities"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "80321c58-08c7-4ddc-8e31-b2d8ac90a6fc-1",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowOnPremUpdateOfOnPremisesObjectIdentifierEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowOnPremUpdateOfOnPremisesObjectIdentifierEnabled** property to the [onPremisesDirectorySynchronizationFeature](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationFeature?view=graph-rest-beta) resource.",
+          "Target": "onPremisesDirectorySynchronizationFeature"
+        }
+      ],
+      "Id": "80321c58-08c7-4ddc-8e31-b2d8ac90a6fc",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-04-28T00:29:28.9774225Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e626d61c-b366-4d11-83ac-99b273f6d6f8-1",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowOnPremUpdateOfOnPremisesObjectIdentifierEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowOnPremUpdateOfOnPremisesObjectIdentifierEnabled** property to the [onPremisesDirectorySynchronizationFeature](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesDirectorySynchronizationFeature?view=graph-rest-1.0) resource.",
+          "Target": "onPremisesDirectorySynchronizationFeature"
+        }
+      ],
+      "Id": "e626d61c-b366-4d11-83ac-99b273f6d6f8",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-07-01T00:29:28.9774225Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     }
   ]
 }

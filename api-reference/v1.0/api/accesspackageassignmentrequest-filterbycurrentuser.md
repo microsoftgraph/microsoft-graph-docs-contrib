@@ -1,7 +1,7 @@
 ---
 title: "accessPackageAssignmentRequest: filterByCurrentUser"
 description: "Retrieve a list of accesspackageassignmentrequest objects filtered on the signed-in user."
-author: "markwahl-msft"
+author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
@@ -36,7 +36,7 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|on|[accessPackageAssignmentRequestFilterByCurrentUserOptions](../resources/accesspackageassignmentrequestfilterbycurrentuseroptions.md)|The list of user options that can be used to filter on the access package assignment requests list. The possible values are `target`, `createdBy`, `approver`.|
+|on|[accessPackageAssignmentRequestFilterByCurrentUserOptions](../resources/accesspackageassignmentrequestfilterbycurrentuseroptions.md)|The list of user options that can be used to filter on the access package assignment requests list.|
 
 ## Request headers
 |Name|Description|

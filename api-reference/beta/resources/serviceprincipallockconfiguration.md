@@ -27,6 +27,7 @@ For more information about managing this object, see [Lock sensitive properties 
 | credentialsWithUsageVerify | Boolean | Locks the keyCredentials and passwordCredentials properties for modification where credential **usage** type is `Verify`. This locks OAuth service principals.                                                   |
 | credentialsWithUsageSign   | Boolean | Locks the keyCredentials and passwordCredentials properties for modification where credential **usage** type is `Sign`.                                                                 |
 | tokenEncryptionKeyId       | Boolean | Locks the tokenEncryptionKeyId property for modification on the service principal.                                                                            |
+| enforcementScope           | servicePrincipalLockScope | Specifies the scope where service principal lock validation is enforced. The possible values are: `notConfigured`, `foreignTenantOnly`, `everywhere`, `unknownFutureValue`. Not nullable. Read-only. |
 
 ## Relationships
 None.
@@ -49,7 +50,7 @@ The following JSON representation shows the resource type.
    "allProperties": "Boolean",
    "credentialsWithUsageVerify": "Boolean",
    "credentialsWithUsageSign": "Boolean",
-   "tokenEncryptionKeyId": "Boolean"
+   "tokenEncryptionKeyId": "Boolean",
+   "enforcementScope": "String"
 }
 ```
-

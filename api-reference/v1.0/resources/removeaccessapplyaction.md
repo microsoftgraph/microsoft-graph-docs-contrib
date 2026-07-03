@@ -12,7 +12,7 @@ ms.date: 04/03/2024
 
 Namespace: microsoft.graph
 
-Removes access to a resource for those denied in an access review of that resource. This is the default option chosen for [accessReviewApplyAction](../resources/accessreviewapplyaction.md) if an option isn't passed in.
+In an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md), the **applyActions** property of [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) uses **removeAccessApplyAction** as the default action to remove access from a resource for denied reviewers.
 
 Inherits from [accessReviewApplyAction](../resources/accessreviewapplyaction.md).
 

@@ -4061,6 +4061,15 @@ Possible values for user account types (group membership), per Windows definitio
 | reported |
 | unknownFutureValue |
 
+### servicePrincipalLockScope values
+
+| Member |
+| ------------------ |
+| notConfigured |
+| foreignTenantOnly |
+| everywhere |
+| unknownFutureValue |
+
 ### serviceUpdateCategory values
 
 | Member |
@@ -6034,6 +6043,15 @@ Possible values for user account types (group membership), per Windows definitio
 |notArchived|
 |fullyArchived|
 |reactivating|
+|unknownFutureValue|
+
+### lockType values
+
+|Member|
+|:---|
+|none|
+|exclusive|
+|shared|
 |unknownFutureValue|
 
 ### baselineParameterType values 

@@ -1,7 +1,7 @@
 ---
 title: "Create attributeSet"
 description: "Create a new attributeSet object."
-author: "rolyon"
+author: "simundru"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType

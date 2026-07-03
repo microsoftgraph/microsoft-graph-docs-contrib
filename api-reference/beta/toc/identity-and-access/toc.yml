@@ -1516,6 +1516,8 @@ items:
         href: ../../api/workflow-list-executionscope.md
       - name: Cancel workflow processing
         href: ../../api/identitygovernance-workflow-cancelprocessing.md
+      - name: Clear quarantine
+        href: ../../api/identitygovernance-workflow-clearquarantine.md
       - name: preview task failures
         href: ../../api/identitygovernance-workflow-previewtaskfailures.md
       - name: preview workflow

@@ -102,6 +102,28 @@ Namespace: microsoft.graph.identityGovernance
 |remove|
 |unknownFutureValue|
 
+### matchMode values
+
+
+
+|Member|
+|:---|
+|any|
+|all|
+|unknownFutureValue|
+
+### quarantineType values
+
+
+
+|Member|
+|:---|
+|notQuarantined|
+|countBasedThresholdExceeded|
+|percentageBasedThresholdExceeded|
+|multipleConditionsExceeded|
+|unknownFutureValue|
+
 
 
 <!--
