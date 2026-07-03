@@ -725,7 +725,7 @@ items:
       href: ../../resources/cloudpcmicrosofthostednetworkconfiguration.md
     - name: Cloud PC network configuration
       href: ../../resources/cloudpcnetworkconfiguration.md
-    - name: Cloud PC notification setting
+    - name: Cloud PC notification setting (deprecated)
       href: ../../resources/cloudpcnotificationsetting.md
     - name: Cloud PC on-premises connection status detail
       href: ../../resources/cloudpconpremisesconnectionstatusdetail.md
