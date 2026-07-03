@@ -18,6 +18,13 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## July 2026: New and generally available
+
+### Users
+
+- Added the `User.Create` permission as the least privileged permission to [create a user](/graph/api/user-post-users).
+- Added the `User.ReadUpdate.All` permission as the least privileged permission to [update a user](/graph/api/user-update).
+
 ## June 2026: New and generally available
 
 ### Applications | Service principal
