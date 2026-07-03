@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "5ac5461c-2fd3-4d85-8954-424bd912b3dd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcNotificationSetting",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [cloudPcNotificationSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcNotificationSetting?view=graph-rest-beta) resource. This resource will stop returning data on July 14, 2026.",
+          "Target": "cloudPcNotificationSetting"
+        },
+        {
+          "Id": "5ac5461c-2fd3-4d85-8954-424bd912b3dd",
+          "ApiChange": "Property",
+          "ChangedApiName": "notificationSetting",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **notificationSetting** property on [cloudPcUserSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcUserSetting?view=graph-rest-beta) resource. This property will stop returning data on July 14, 2026.",
+          "Target": "cloudPcUserSetting"
+        }
+      ],
+      "Id": "5ac5461c-2fd3-4d85-8954-424bd912b3dd",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-07-02T02:37:21.9934442Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ddd9e07d-bacf-449d-86ae-7b4aaeac7358",
           "ApiChange": "Property",
           "ChangedApiName": "isForceUserLogoffEnabled",
