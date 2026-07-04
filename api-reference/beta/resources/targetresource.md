@@ -12,7 +12,7 @@ ms.date: 03/21/2024
 
 Namespace: microsoft.graph
 
-Represents target resource types associated with audit activity. 
+Represents target resource types associated with audit activity. This object is configured in the **targetResources** property of [directoryAudit](../resources/directoryaudit.md).
 
 
 ## Properties
@@ -24,7 +24,7 @@ Represents target resource types associated with audit activity.
 |type|String|Describes the resource type.  Example values include `Application`, `Group`, `ServicePrincipal`, and `User`.|
 |userPrincipalName|String|When **type** is set to `User`, this includes the user name that initiated the action; `null` for other types.|
 |groupType|groupType|When **type** is set to `Group`, this indicates the group type.  The possible values are: `unifiedGroups`, `azureAD`, and `unknownFutureValue`|
-|modifiedProperties|[modifiedProperty](modifiedproperty.md) collection|Indicates name, old value and new value of each attribute that changed. Property values depend on the operation **type**.|
+|modifiedProperties|[modifiedProperty](../resources/modifiedproperty.md) collection|Indicates name, old value and new value of each attribute that changed. Property values depend on the operation **type**.|
 
 ## Relationships
 None.
@@ -63,5 +63,4 @@ The following JSON representation shows the resource type.
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

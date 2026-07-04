@@ -14,7 +14,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provide a summary of all workflows processed within a tenant for a specified period. Because the amount of results for listed workflows as returned by the [List workflows](../api/identitygovernance-lifecycleworkflowscontainer-list-workflows.md) doesn't tell you which workflows were processed from the list of created workflows, this summary gives you a quick overview of processed status based on counts.
+Provide a summary from the [insights](../resources/identitygovernance-insights.md) resource of [workflow](../resources/identitygovernance-workflow.md) objects processed within a tenant for a specified period. Because the list returned by [List workflows](../api/identitygovernance-lifecycleworkflowscontainer-list-workflows.md) doesn't indicate which workflows were processed, this summary gives you a quick overview based on counts.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

@@ -1,8 +1,8 @@
 ---
 title: "Automate employee onboarding tasks before their first day of work using Lifecycle Workflows APIs"
 description: "Learn how to automate employee onboarding tasks before their first day of work using Lifecycle Workflows APIs in Microsoft Graph."
-author: AlexFilipin
-ms.author: alfilipi 
+author: FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: Alexander.Filipin
 ms.topic: tutorial
 ms.localizationpriority: medium

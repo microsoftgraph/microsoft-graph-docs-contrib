@@ -12,10 +12,10 @@ ms.date: 10/04/2024
 
 Namespace: microsoft.graph
 
-Identifies a relationship to another user in the tenant who can approve. Used in the approval settings of an [access package assignment policy](accesspackageassignmentpolicy.md).
-This resource is a subtype of [subjectSet](subjectset.md), in which the `@odata.type` value `#microsoft.graph.targetUserSponsors` indicates that a requesting user's sponsors are the approvers. When creating an access package assignment policy approval stage with **targetUserSponsors**, also include another approver, such as a single user or group member, in case the requesting user doesn't have sponsors.
+Identifies a relationship to another user in the tenant who can approve. Used in the approval settings of an [access package assignment policy](../resources/accesspackageassignmentpolicy.md).
+This resource is a subtype of [subjectSet](../resources/subjectset.md), in which the `@odata.type` value `#microsoft.graph.targetUserSponsors` indicates that a requesting user's sponsors are the approvers. When creating an access package assignment policy approval stage with **targetUserSponsors**, also include another approver, such as a single user or group member, in case the requesting user doesn't have sponsors.
 
-Inherits from [subjectSet](subjectset.md).
+Inherits from [subjectSet](../resources/subjectset.md).
 
 ## Properties
 

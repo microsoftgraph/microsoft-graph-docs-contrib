@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides the name and type of network from which the user signed in.
+Provides the name and type of network from which the user signed in. This object is configured in the **networkLocationDetails** property of [signIn](../resources/signin.md).
 
 ## Properties
 
@@ -52,4 +52,3 @@ The following JSON representation shows the resource type.
   "section": "documentation",
   "tocPath": ""
 }-->
-

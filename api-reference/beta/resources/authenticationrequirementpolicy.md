@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Entra ID can require users to pass an MFA check before accessing resources. If an MFA check is required, this resource identifies the policy that requires MFA. 
+Microsoft Entra ID can require users to pass an MFA check before accessing resources. If an MFA check is required, this resource identifies the policy that requires MFA. This object is configured in the **authenticationRequirementPolicies** property of [signIn](../resources/signin.md).
 
 
 ## Properties

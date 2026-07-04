@@ -13,7 +13,7 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Describes a complex property that represents an access token's unique identifier and the time when the token was issued. **uniqueTokenIdentifier** is unique for every access token.
+Describes a complex property that represents an access token's unique identifier and the time when the token was issued. **uniqueTokenIdentifier** is unique for every access token. This object is configured in the **tokenDetails** property of [linkableIdentifiers](../resources/linkableidentifiers.md).
 
 ## Properties
 |Property|Type|Description|

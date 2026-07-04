@@ -98,32 +98,6 @@
             "webApplicationSegment",
             "corsConfiguration_v2"
           ],
-          "complexTypes": [
-            "applicationSegment",
-            "corsConfiguration",
-            "hybridAgentUpdaterConfiguration",
-            "kerberosSignOnSettings",
-            "keyCredential",
-            "onPremisesApplicationSegment",
-            "onPremisesPublishing",
-            "onPremisesPublishingSingleSignOn",
-            "passwordCredential",
-            "segmentConfiguration",
-            "updateWindow",
-            "verifiedCustomDomainCertificatesMetadata",
-            "webApplicationSegment",
-            "webSegmentConfiguration"
-          ]
-        },
-        {
-          "name": "Synchronization",
-          "overview": "../../resources/synchronization-overview.md",
-          "resources": [
-            "synchronization",
-            "synchronizationTemplate",
-            "synchronizationJob",
-            "synchronizationSchema"
-          ],
           "childNodes": [
             {
               "name": "Synchronization job",
@@ -145,7 +119,7 @@
       "name": "Agents",
       "overview": "../../resources/agentid-platform-overview.md",
       "shouldSort": true,
-      "childNodes": [ 
+      "childNodes": [
         {
           "name": "Agent identities",
           "resources": [
@@ -359,7 +333,7 @@
             "placeOperation",
             "roomList"
           ],
-          "complexTypes": [            
+          "complexTypes": [
             "mailboxDetails",
             "placeMode",
             "assignedPlaceMode",
@@ -370,30 +344,30 @@
             "placeExecutionResult",
             "placeOperationProgress"
           ],
-           "childNodes": [
+          "childNodes": [
             {
               "name": "Devices (preview)",
-              "resources":[
+              "resources": [
                 "workplaceSensorDevice"
               ]
             },
             {
-             "name": "Maps (preview)",
-             "resources":[
-               "buildingMap",
-               "fixtureMap",
-               "footprintMap",
-               "levelMap",
-               "sectionMap",
-               "unitMap"
-             ],
+              "name": "Maps (preview)",
+              "resources": [
+                "buildingMap",
+                "fixtureMap",
+                "footprintMap",
+                "levelMap",
+                "sectionMap",
+                "unitMap"
+              ],
               "complexTypes": [
                 "importBuildingMapSetting"
               ]
-             }
-           ]
-         },
-         {
+            }
+          ]
+        },
+        {
           "name": "Work hours and locations",
           "resources": [
             "workHoursAndLocationsSetting",
@@ -595,7 +569,7 @@
             "microsoft.graph.cloudLicensing.allotment",
             "microsoft.graph.cloudLicensing.assignment",
             "microsoft.graph.cloudLicensing.assignmentError",
-            "microsoft.graph.cloudLicensing.usageRight",          
+            "microsoft.graph.cloudLicensing.usageRight",
             "microsoft.graph.cloudLicensing.waitingMember"
           ],
           "complexTypes": [
@@ -1185,6 +1159,7 @@
         "fileStorageContainerTypeRegistrationSettings",
         "fileStorageContainerTypeAgentSettings",
         "fileStorageContainerTypeSettings",
+        "lockInfo",
         "sharePointGroupIdentity"
       ],
       "childNodes": [
@@ -1439,81 +1414,6 @@
                 "insiderRiskyUserApproval",
                 "entraIdProtectionRiskyUserApproval",
                 "customDataProvidedResourceUploadSession"
-              ],
-              "complexTypes": [
-                "accessPackageAnswer",
-                "accessPackageAnswerChoice",
-                "accessPackageAnswerString",
-                "accessPackageAssignmentRequestCallbackData",
-                "accessPackageAssignmentRequestRequirements",
-                "accessPackageLocalizedContent",
-                "accessPackageLocalizedText",
-                "accessPackageMultipleChoiceQuestion",
-                "accessPackageQuestion",
-                "accessPackageResourceAttribute",
-                "accessPackageResourceAttributeDestination",
-                "accessPackageResourceAttributeQuestion",
-                "accessPackageResourceAttributeSource",
-                "accessPackageResourceScope",
-                "accessPackageSuggestionReason",
-                "accessPackageSuggestionRelatedPeopleBased",
-                "accessPackageSuggestionSelfAssignmentHistoryBased",
-                "accessPackageTextInputQuestion",
-                "accessPackageUserDirectoryAttributeStore",
-                "approvalSettings",
-                "approvalStage",
-                "assignmentReviewSettings",
-                "azureActiveDirectoryTenant",
-                "azureAdPopTokenAuthentication",
-                "azureAdTokenAuthentication",
-                "connectedOrganizationMembers",
-                "connectionInfo",
-                "crossCloudAzureActiveDirectoryTenant",
-                "customCalloutExtension",
-                "customExtensionAuthenticationConfiguration",
-                "customExtensionCallbackConfiguration",
-                "customExtensionCalloutInstance",
-                "customExtensionClientConfiguration",
-                "customExtensionData",
-                "customExtensionEndpointConfiguration",
-                "customExtensionHandler",
-                "customExtensionHandlerInstance",
-                "customExtensionStageSetting",
-                "domainIdentitySource",
-                "entitlementManagement",
-                "expirationPattern",
-                "externalDomainFederation",
-                "externalSponsors",
-                "groupMembers",
-                "identitySource",
-                "internalSponsors",
-                "logicAppTriggerEndpointConfiguration",
-                "patternedRecurrence",
-                "recurrencePattern",
-                "recurrenceRange",
-                "requestSchedule",
-                "requestorManager",
-                "requestorSettings",
-                "singleUser",
-                "socialIdentitySource",
-                "subjectSet",
-                "targetUserSponsors",
-                "userSet",
-                "verifiableCredentialRequired",
-                "verifiableCredentialRequirementStatus",
-                "verifiableCredentialRetrieved",
-                "verifiableCredentialSettings",
-                "verifiableCredentialType",
-                "verifiableCredentialVerified",
-                "verifiedCredentialClaims",
-                "verifiedCredentialData",
-                "customDataProvidedResourceUploadSessionRequest",
-                "customDataProvidedResourceFile",
-                "microsoft.graph.customDataProvidedResourcePayloads.accessReviewContextData",
-                "microsoft.graph.customDataProvidedResourcePayloads.accessReviewContextDataBase",
-                "microsoft.graph.customDataProvidedResourcePayloads.applyDecisionContextData",
-                "microsoft.graph.customDataProvidedResourcePayloads.calloutRequest",
-                "microsoft.graph.customDataProvidedResourcePayloads.data"
               ]
             },
             {
@@ -1533,45 +1433,6 @@
                 "microsoft.graph.identityGovernance.customTaskExtension",
                 "microsoft.graph.identityGovernance.lifecycleManagementSettings",
                 "microsoft.graph.identitygovernance.insights"
-              ],
-              "complexTypes": [
-                "azureAdPopTokenAuthentication",
-                "azureAdTokenAuthentication",
-                "customCalloutExtension",
-                "customExtensionAuthenticationConfiguration",
-                "customExtensionCallbackConfiguration",
-                "customExtensionCalloutRequest",
-                "customExtensionCalloutResponse",
-                "customExtensionClientConfiguration",
-                "customExtensionData",
-                "customExtensionEndpointConfiguration",
-                "microsoft.graph.identityGovernance.attributeSetEntry",
-                "microsoft.graph.identityGovernance.awaitedWorkflowProcessingResult",
-                "microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
-                "microsoft.graph.identityGovernance.customTaskExtensionCallbackData",
-                "microsoft.graph.identityGovernance.customTaskExtensionCalloutData",
-                "microsoft.graph.identityGovernance.customTaskExtensionResponseData",
-                "emailSettings",
-                "identity",
-                "identityGovernance",
-                "keyValuePair",
-                "microsoft.graph.identityGovernance.lifecycleWorkflowsContainer",
-                "logicAppTriggerEndpointConfiguration",
-                "microsoft.graph.identityGovernance.onDemandExecutionOnly",
-                "microsoft.graph.identityGovernance.parameter",
-                "microsoft.graph.identityGovernance.provisioningAttributeMapping",
-                "microsoft.graph.identityGovernance.provisioningObjectWorkflowSubject",
-                "microsoft.graph.identityGovernance.ruleBasedSubjectSet",
-                "microsoft.graph.identityGovernance.runSummary",
-                "subjectSet",
-                "microsoft.graph.identityGovernance.taskReportSummary",
-                "microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
-                "microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
-                "microsoft.graph.identityGovernance.userSummary",
-                "microsoft.graph.identityGovernance.workflowBase",
-                "microsoft.graph.identityGovernance.workflowExecutionConditions",
-                "microsoft.graph.identityGovernance.workflowExecutionTrigger",
-                "microsoft.graph.identityGovernance.workflowSubject"
               ],
               "childNodes": [
                 {
@@ -1694,10 +1555,6 @@
                 "agreementAcceptance",
                 "agreementFile",
                 "agreementFileLocalization"
-              ],
-              "complexTypes": [
-                "agreementFileData",
-                "termsExpiration"
               ]
             }
           ]
@@ -2229,7 +2086,6 @@
                 "microsoft.graph.networkAccess.threatIntelligencePolicy",
                 "microsoft.graph.networkAccess.threatIntelligencePolicyLink",
                 "microsoft.graph.networkAccess.threatIntelligenceRule"
-
               ]
             },
             {
@@ -2259,11 +2115,11 @@
             {
               "name": "Logs and monitoring",
               "resources": [
-              "microsoft.graph.networkaccess.reports",
-              "microsoft.graph.networkaccess.alert",
-              "microsoft.graph.networkaccess.deployment",
-              "microsoft.graph.networkaccess.networkAccessTraffic",
-              "microsoft.graph.networkaccess.remoteNetworkHealthEvent"
+                "microsoft.graph.networkaccess.reports",
+                "microsoft.graph.networkaccess.alert",
+                "microsoft.graph.networkaccess.deployment",
+                "microsoft.graph.networkaccess.networkAccessTraffic",
+                "microsoft.graph.networkaccess.remoteNetworkHealthEvent"
               ]
             }
           ]
@@ -2299,13 +2155,13 @@
             {
               "name": "Partner security score",
               "overview": "../../resources/partner-security-score-api-overview.md",
-              "resources":[
+              "resources": [
                 "microsoft.graph.partner.security.customerInsight",
                 "microsoft.graph.partner.security.partnerSecurityScore",
                 "microsoft.graph.partner.security.securityRequirement",
                 "microsoft.graph.partner.security.securityHistory"
               ],
-              "complexTypes":[
+              "complexTypes": [
                 "microsoft.graph.partner.security.adminsMfaEnforcedSecurityRequirement",
                 "microsoft.graph.partner.security.customerMfaInsight",
                 "microsoft.graph.partner.security.customersMfaEnforcedSecurityRequirement",
@@ -2437,7 +2293,7 @@
           ]
         }
       ],
-      "complexTypes":[
+      "complexTypes": [
         "structuredDataEntry",
         "structuredDataEntryTypedValue",
         "updateAllMessagesReadStateOperation"
@@ -2735,9 +2591,6 @@
                 "signInEventsActivity",
                 "signInEventsAppActivity",
                 "summarizedSignIn"
-              ],
-              "complexTypes": [
-                "tokenProtectionStatusDetails"
               ]
             },
             {
@@ -2745,11 +2598,6 @@
               "resources": [
                 "correlatedIdentity",
                 "identityCorrelation"
-              ],
-              "complexTypes": [
-                "attributeInfo",
-                "correlationError",
-                "identityInfo"
               ]
             },
             {
@@ -2884,7 +2732,7 @@
         },
         {
           "name": "Alerts and incidents",
-      "resources": [
+          "resources": [
             "microsoft.graph.security.alert",
             "microsoft.graph.security.alertEvidence",
             "microsoft.graph.security.incident",
@@ -3006,57 +2854,57 @@
             "microsoft.graph.security.sensitivityLabel",
             "tenantDataSecurityAndGovernance",
             "userDataSecurityAndGovernance"
-           ],
-            "complexTypes": [
-              "aiAgentInfo",
-              "aiInteractionEntity",
-              "activityMetadata",
-              "aiInteractionPlugin",
-              "autoLabeling",
-              "binaryContent",
-              "blockAccessAction",
-              "classifcationErrorBase",
-              "classificationError",
-              "classificationInnerError",
-              "computeRightsAndInheritanceResult",
-              "contentActivityMetadata",
-              "contentBase",
-              "customMetadataDictionary",
-              "deviceMetadata",
-              "dlpActionInfo",
-              "groupScope",
-              "integratedApplicationMetadata",
-              "labelActionBase",
-              "labelContentRight",
-              "labelPolicy",
-              "notifyUserAction",
-              "operatingSystemSpecifications",
-              "policyBinding",
-              "policyLocation",
-              "policyLocationApplication",
-              "policyLocationDomain",
-              "policyLocationUrl",
-              "policyScopeBase",
-              "policyTenantScope",
-              "policyUserScope",
-              "processContentBatchRequest",
-              "processContentRequest",
-              "processContentResponse",
-              "processContentResponses",
-              "processConversationMetadata",
-              "processFileMetadata",
-              "processingError",
-              "protectedApplicationMetadata",
-              "protectedContent",
-              "resourceAccessDetail",
-              "restrictAccessAction",
-              "restrictAccessActionBase",
-              "scopeBase",
-              "tenantScope",
-              "textContent",
-              "userScope"
-            ]
-          },
+          ],
+          "complexTypes": [
+            "aiAgentInfo",
+            "aiInteractionEntity",
+            "activityMetadata",
+            "aiInteractionPlugin",
+            "autoLabeling",
+            "binaryContent",
+            "blockAccessAction",
+            "classifcationErrorBase",
+            "classificationError",
+            "classificationInnerError",
+            "computeRightsAndInheritanceResult",
+            "contentActivityMetadata",
+            "contentBase",
+            "customMetadataDictionary",
+            "deviceMetadata",
+            "dlpActionInfo",
+            "groupScope",
+            "integratedApplicationMetadata",
+            "labelActionBase",
+            "labelContentRight",
+            "labelPolicy",
+            "notifyUserAction",
+            "operatingSystemSpecifications",
+            "policyBinding",
+            "policyLocation",
+            "policyLocationApplication",
+            "policyLocationDomain",
+            "policyLocationUrl",
+            "policyScopeBase",
+            "policyTenantScope",
+            "policyUserScope",
+            "processContentBatchRequest",
+            "processContentRequest",
+            "processContentResponse",
+            "processContentResponses",
+            "processConversationMetadata",
+            "processFileMetadata",
+            "processingError",
+            "protectedApplicationMetadata",
+            "protectedContent",
+            "resourceAccessDetail",
+            "restrictAccessAction",
+            "restrictAccessActionBase",
+            "scopeBase",
+            "tenantScope",
+            "textContent",
+            "userScope"
+          ]
+        },
         {
           "name": "eDiscovery",
           "overview": "../../resources/security-ediscovery-apioverview.md",
@@ -3838,12 +3686,12 @@
         {
           "name": "Cross-tenant migration",
           "overview": "../../resources/crosstenant-migration-overview.md",
-          "resources":[
+          "resources": [
             "crossTenantMigrationJob",
             "crossTenantMigrationTask",
             "migrationsRoot"
           ],
-          "complexTypes":[
+          "complexTypes": [
             "crossTenantMigrationServiceStatusDetails",
             "error",
             "exchangeOnlineCrossTenantMigrationSettings"
@@ -3977,8 +3825,7 @@
     {
       "resource": "subjectRightsRequest",
       "overview": "../../resources/subjectrightsrequest-subjectrightsrequestapioverview.md"
-    }
-    ,
+    },
     {
       "resource": "partnerSecurityAlert",
       "overview": "../../resources/partner-security-partnersecurityalert-api-overview.md"

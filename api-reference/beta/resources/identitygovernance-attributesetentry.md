@@ -14,7 +14,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a key-value pair in an attribute set, used to define the attributes of a [provisioningObjectWorkflowSubject](../resources/identitygovernance-provisioningobjectworkflowsubject.md).
+Represents a key-value pair in an attribute set. This object is configured in the **attributeSetEntries** property of the [provisioningObjectWorkflowSubject](../resources/identitygovernance-provisioningobjectworkflowsubject.md) resource.
 
 ## Properties
 

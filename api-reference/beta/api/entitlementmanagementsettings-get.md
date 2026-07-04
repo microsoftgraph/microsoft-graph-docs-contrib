@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties of an [entitlementManagementSettings](../resources/entitlementManagementSettings.md) object.
+Retrieve the properties of an [entitlementManagementSettings](../resources/entitlementmanagementsettings.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

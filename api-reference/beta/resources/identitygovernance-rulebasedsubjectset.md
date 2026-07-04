@@ -14,7 +14,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies the rules to define the subjects that are the scope of a lifecycle workflow [triggerAndScopeBasedConditions](../resources/identitygovernance-triggerandscopebasedconditions.md) configuration.
+Specifies the rules that define the subjects in scope for a lifecycle workflow. This object is configured in the **scope** property of the [triggerAndScopeBasedConditions](../resources/identitygovernance-triggerandscopebasedconditions.md) resource.
 
 Inherits from [subjectSet](../resources/subjectset.md).
 
@@ -22,7 +22,7 @@ Inherits from [subjectSet](../resources/subjectset.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|rule|String|The rule for the subject set. Lifecycle Workflows supports a rich set of [user properties](user.md#properties) for configuring the rules using `$filter` query expressions. For more information, see [supported user and query parameters](#supported-user-properties-and-query-parameters). |
+|rule|String|The rule for the subject set. Lifecycle Workflows supports a rich set of [user properties](../resources/user.md#properties) for configuring the rules using `$filter` query expressions. For more information, see [supported user and query parameters](#supported-user-properties-and-query-parameters). |
 
 >[!NOTE]
 > The rule evaluation is case-sensitive.

@@ -16,6 +16,9 @@ Namespace: microsoft.graph
 
 An access package resource attribute is the definition of a property that a user is required to have to be able to access an application. This structure is included in an [accessPackageResource](../resources/accesspackageresource.md) of a catalog, for an application whose roles are included in an access package in that catalog. When a user requests the access package, they must supply the value of the attribute, which, if the request is approved, is then written on the user's directory object. The application can then subsequently [read the attribute of the user](../api/user-get.md).
 
+In entitlement management, this object is configured in the following properties and relationships:
+- **attributes** property of [accessPackageResource](../resources/accesspackageresource.md)
+- **attributes** property of [customDataProvidedResource](../resources/customdataprovidedresource.md)
 
 ## Properties
 |Property|Type|Description|

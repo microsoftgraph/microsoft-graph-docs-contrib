@@ -18,6 +18,11 @@ In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), 
 
 In [PIM for Microsoft Entra roles](privilegedidentitymanagementv3-overview.md) and [PIM for Groups](privilegedidentitymanagement-for-groups-api-overview.md), use this resource to define the schedule for when the principal has an eligible or active role assignment.
 
+In entitlement management, this object is configured in the **schedule** property of:
+- [accessPackageAssignment](../resources/accesspackageassignment.md)
+- [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)
+- [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md)
+
 ## Properties
 
 | Property     | Type        | Description |

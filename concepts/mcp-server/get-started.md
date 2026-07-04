@@ -1,9 +1,9 @@
 ---
 title: Get Started With the Microsoft MCP Server for Enterprise
 description: "Microsoft MCP Server for Enterprise: Learn how to install, configure, and run the MCP Server in your MCP clients to query Microsoft Graph using natural language."
-author: Licantrop0
-ms.author: lucaspol
-ms.reviewer: lucaspol
+author: FaithOmbongi
+ms.author: ombongifaith
+ms.reviewer: Licantrop0
 ms.subservice: ent-mcp-server
 ms.topic: get-started
 ms.date: 05/20/2026

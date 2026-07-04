@@ -14,7 +14,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents execution conditions for provisioning workflows that use attribute mapping. This type is used to configure when a workflow should execute based on attribute-based criteria.
+Represents execution conditions for provisioning workflows that use attribute mapping. This object is configured in the **executionConditions** property of the [workflow](../resources/identitygovernance-workflow.md), [workflowTemplate](../resources/identitygovernance-workflowtemplate.md), and [workflowVersion](../resources/identitygovernance-workflowversion.md) resources when workflows execute based on attribute-based criteria.
 
 Inherits from [workflowExecutionConditions](../resources/identitygovernance-workflowexecutionconditions.md).
 

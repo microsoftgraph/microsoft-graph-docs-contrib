@@ -12,8 +12,7 @@ ms.date: 04/04/2024
 
 Namespace: microsoft.graph
 
-Remove a user or a group from the connected organization's external sponsors. The [external sponsors](../resources/externalsponsors.md) are a set of users who can approve requests on behalf of other users from that connected organization.
-
+Remove a user or a group from the **externalSponsors** relationship of a [connectedOrganization](../resources/connectedorganization.md). External sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

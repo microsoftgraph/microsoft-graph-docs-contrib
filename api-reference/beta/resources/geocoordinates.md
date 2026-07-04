@@ -13,11 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides geographic coordinates and elevation of a location based on metadata contained within the file.
-If a [**driveItem**](driveitem.md) has a non-null **location** facet, the item represents a file with a known location assocaited with it.
+Provides geographic coordinates and elevation of a location based on metadata contained within the file. This object is configured in the **geoCoordinates** property of [signInLocation](../resources/signinlocation.md).
+If a [**driveItem**](../resources/driveitem.md) has a non-null **location** facet, the item represents a file with a known location associated with it.
 
 > [!NOTE]
-> When updating the latitude and longitude of a photo, a [photo](photo.md) resource (empty or otherwise) must be provided.
+> When updating the latitude and longitude of a photo, a [photo](../resources/photo.md) resource (empty or otherwise) must be provided.
 
 ## Properties
 
@@ -61,5 +61,4 @@ The following JSON representation shows the resource type.
   "suppressions": []
 }
 -->
-
 

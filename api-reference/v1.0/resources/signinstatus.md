@@ -12,7 +12,7 @@ ms.date: 03/15/2024
 
 Namespace: microsoft.graph
 
-Provides the sign-in status (Success or Failure) of the sign-in.
+Provides the sign-in status (Success or Failure) of the sign-in. This object is configured in the **status** property of [signIn](../resources/signin.md).
 
 ## Properties
 

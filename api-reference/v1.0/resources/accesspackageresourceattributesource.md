@@ -12,7 +12,7 @@ ms.date: 04/03/2024
 
 Namespace: microsoft.graph
 
-An abstract type that exposes objects that define the properties the user configures with values that are passed to the end system or the request approver.  It's used in the **source** property of an [accessPackageResourceAttribute](accesspackageresourceattribute.md). This type is inherited by [accessPackageResourceAttributeQuestion](../resources/accesspackageresourceattributequestion.md).
+An abstract type that exposes objects that define the properties the user configures with values that are passed to the end system or the request approver. It's used in the **attributeSource** property of an [accessPackageResourceAttribute](../resources/accesspackageresourceattribute.md). This type is inherited by [accessPackageResourceAttributeQuestion](../resources/accesspackageresourceattributequestion.md).
 
 ## Properties
 None.

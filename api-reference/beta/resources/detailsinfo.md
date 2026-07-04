@@ -16,7 +16,11 @@ Namespace: microsoft.graph
 
 A property bag that can contain any information about the associated identity or system. This can include details about the property that is being provisioned or the source/target system.
 
-This resource is used by the [provisioningObjectSummary](provisioningobjectsummary.md) and [identityInfo](identityinfo.md) resources.
+This object is configured in **details** property of the following resources:
+- [identityInfo](../resources/identityinfo.md)
+- [provisionedIdentity](../resources/provisionedidentity.md)
+- [provisioningStep](../resources/provisioningstep.md)
+- [provisioningSystem](../resources/provisioningsystem.md)
 
 ## Properties
 The **detailsInfo** resource is a JSON string that contains other properties such as **ApplicationId**, **ObjectId**, and **UPN**. The set of properties varies based on the type of resource that is being provisioned. [List provisioningObjectSummary](../api/provisioningobjectsummary-list.md) shows an example.
@@ -38,5 +42,4 @@ The following JSON representation shows the resource type.
   "@odata.type": "microsoft.graph.detailsInfo"
 }
 ```
-
 

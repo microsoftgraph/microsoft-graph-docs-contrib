@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The configuration details for the logic app's endpoint that is associated with a custom access package workflow extension. Derived from the [customExtensionEndpointConfiguration](customextensionendpointconfiguration.md) abstract type.
+The configuration details for the logic app's endpoint that is associated with a [custom access package workflow extension](../resources/customaccesspackageworkflowextension.md). Derived from the [customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md) abstract type.
+
+This object is configured in the **endpointConfiguration** property of the [customTaskExtension](../resources/identitygovernance-customtaskextension.md) resource.
 
 ## Properties
 

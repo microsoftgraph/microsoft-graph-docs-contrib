@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract type that defines the result of authentication to [event listeners](authenticationeventlistener.md) in Microsoft Entra sign-ins. This abstract type is inherited by the [customExtensionCalloutResult](../resources/customextensioncalloutresult.md) resource type.
+An abstract type that defines the result of authentication to [event listeners](../resources/authenticationeventlistener.md) in Microsoft Entra sign-ins. This object is configured in the **handlerResult** property of [appliedAuthenticationEventListener](../resources/appliedauthenticationeventlistener.md). This abstract type is inherited by the [customExtensionCalloutResult](../resources/customextensioncalloutresult.md) resource type.
 
 ## Properties
 None.

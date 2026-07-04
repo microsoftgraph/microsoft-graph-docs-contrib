@@ -12,7 +12,7 @@ ms.date: 08/08/2024
 
 Namespace: microsoft.graph
 
-Indicates the identity of the application that performed the action or was changed. Includes the application ID, name, and service principal ID and name. This resource is used by the [directoryAudit](../api/directoryaudit-get.md) operation.
+Indicates the identity of the application that performed the action or was changed. Includes the application ID, name, and service principal ID and name. This object is configured in the **app** property of [auditActivityInitiator](../resources/auditactivityinitiator.md).
 
 ## Properties
 

@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Represents the status where a service requires a verifiable credential to be presented and the user has retrieved the presentation request.
 Inherits from [verifiableCredentialRequirementStatus](../resources/verifiablecredentialrequirementstatus.md).
-Used for the **verifiableCredentialRequirementStatus** property of [access package assignment request requirements](accessPackageAssignmentRequestRequirements.md).
+Used for the **verifiableCredentialRequirementStatus** property of [access package assignment request requirements](../resources/accesspackageassignmentrequestrequirements.md).
 
 
 ## Properties

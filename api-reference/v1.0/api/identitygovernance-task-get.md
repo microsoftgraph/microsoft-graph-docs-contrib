@@ -12,7 +12,7 @@ ms.date: 04/04/2024
 
 Namespace: microsoft.graph.identityGovernance
 
-Get a specific task from a [workflow](../resources/identitygovernance-workflow.md) or [workflowVersion](../resources/identitygovernance-workflowversion.md).
+Get a specific [task](../resources/identitygovernance-task.md) from a [workflow](../resources/identitygovernance-workflow.md) or [workflowVersion](../resources/identitygovernance-workflowversion.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

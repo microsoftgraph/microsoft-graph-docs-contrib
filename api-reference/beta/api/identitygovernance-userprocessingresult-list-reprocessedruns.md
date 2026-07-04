@@ -14,7 +14,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List user processing results of a workflow reprocessed run object.
+List reprocessed [run](../resources/identitygovernance-run.md) objects for a [userProcessingResult](../resources/identitygovernance-userprocessingresult.md).
 
 ## Permissions
 
