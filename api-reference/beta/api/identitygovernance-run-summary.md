@@ -14,7 +14,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a summary of [runs](identitygovernance-run-get.md) for a specified time period. Because the amount of runs returned by the List API call can be overwhelming, this summary allows the administrator to get a quick overview based on counts.
+Get a [runSummary](../resources/identitygovernance-runsummary.md) for [run](../resources/identitygovernance-run.md) objects over a specified time period. Because the number of runs returned by the list API call can be overwhelming, this summary allows administrators to get a quick overview based on counts.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

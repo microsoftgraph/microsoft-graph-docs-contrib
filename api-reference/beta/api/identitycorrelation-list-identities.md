@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the correlated identity results for an [identityCorrelation](../resources/identitycorrelation.md) object.
+List the [correlatedIdentity](../resources/correlatedidentity.md) results for an [identityCorrelation](../resources/identitycorrelation.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

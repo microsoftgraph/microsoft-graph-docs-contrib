@@ -1,8 +1,8 @@
 ---
 title: Configure Microsoft Entra Internet Access using Microsoft Graph APIs
 description: Configure Microsoft Entra Internet Access using Microsoft Graph APIs.
-author: jyothig123
-ms.author: jgangadhar 
+author: FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: fgomulka
 ms.topic: tutorial
 ms.localizationpriority: medium

@@ -14,7 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used in the request, approval, and assignment review settings of an [access package assignment policy](accesspackageassignmentpolicy.md). The  `@odata.type` value `#microsoft.graph.singleUser` indicates that this userSet identifies a specific user in the tenant who will be allowed as a requestor, approver, or reviewer.
+Used in the request, approval, and assignment review settings of an [access package assignment policy](../resources/accesspackageassignmentpolicy.md). The  `@odata.type` value `#microsoft.graph.singleUser` indicates that this userSet identifies a specific user in the tenant who will be allowed as a requestor, approver, or reviewer.
+
+In entitlement management, this subtype can be configured in:
+- **allowedRequestors** property of [requestorSettings](../resources/requestorsettings.md)
+- **primaryApprovers** and **escalationApprovers** properties of [approvalStage](../resources/approvalstage.md) and [accessPackageDynamicApprovalStage](../resources/accesspackagedynamicapprovalstage.md)
+- **primaryApprovers**, **fallbackPrimaryApprovers**, **escalationApprovers**, and **fallbackEscalationApprovers** properties of [accessPackageApprovalStage](../resources/accesspackageapprovalstage.md)
+- **reviewers** property of [assignmentReviewSettings](../resources/assignmentreviewsettings.md)
 
 ## Properties
 

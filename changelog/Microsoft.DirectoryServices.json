@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+          "ApiChange": "Permission",
+          "ChangedApiName": "User.ReadUpdate.All",
+          "ChangeType": "Addition",
+          "Description": "Added the `User.ReadUpdate.All` delegated and application permission as the least privileged permission to call the [Update user](https://learn.microsoft.com/en-us/graph/api/user-update?view=graph-rest-1.0) API.",
+          "Target": "user"
+        },
+        {
+          "Id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+          "ApiChange": "Permission",
+          "ChangedApiName": "User.Create",
+          "ChangeType": "Addition",
+          "Description": "Added the `User.Create` delegated and application permission as the least privileged permission to call the [Create user](https://learn.microsoft.com/en-us/graph/api/user-post-users?view=graph-rest-1.0) API.",
+          "Target": "user"
+        }
+      ],
+      "Id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-07-03T00:00:00.0000000Z",
+      "WorkloadArea": "Users",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "d7e4f60b-8767-480e-b630-ba5c7e87777f",
           "ApiChange": "Enumeration",
           "ChangedApiName": "servicePrincipalLockScope",

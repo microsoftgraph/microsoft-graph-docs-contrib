@@ -12,7 +12,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Used for the **accessPackageNotificationSettings** property of an [access package assignment policy](accesspackageassignmentpolicy.md). Provides details on if access package assignment email notifications are disabled within the specified access package assignment policy.
+Used for the **accessPackageNotificationSettings** property of an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md). Provides details on if access package assignment email notifications are disabled within the specified access package assignment policy.
 
 ## Properties
 |Property|Type|Description|

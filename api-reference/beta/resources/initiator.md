@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents information about who or what initiated the provisioning event. Inherits from [identity](../resources/identity.md).
+Represents information about who or what initiated the provisioning event. This object is configured in the **initiatedBy** property of [provisioningObjectSummary](../resources/provisioningobjectsummary.md). Inherits from [identity](../resources/identity.md).
 
 ## Properties
 
@@ -54,5 +54,4 @@ The following JSON representation shows the resource type.
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

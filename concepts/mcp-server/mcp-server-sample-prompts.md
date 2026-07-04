@@ -1,9 +1,9 @@
 ---
 title: Sample prompts for Microsoft MCP Server for Enterprise
 description: "Explore example natural language prompts to query Microsoft Entra identity data using the Microsoft MCP Server for Enterprise."
-author: Licantrop0
-ms.author: lucaspol
-ms.reviewer: lucaspol
+author: msewaweru
+ms.author: eunicewaweru
+ms.reviewer: Licantrop0
 ms.subservice: ent-mcp-server
 ms.topic: how-to
 ms.date: 01/21/2026

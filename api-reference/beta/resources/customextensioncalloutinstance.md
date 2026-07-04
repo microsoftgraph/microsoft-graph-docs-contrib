@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Defines the calls that were made by an instance of a custom extension callout.
 
+In entitlement management, this object is configured in the **customExtensionCalloutInstances** property of [accessPackageAssignment](../resources/accesspackageassignment.md) and [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md).
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

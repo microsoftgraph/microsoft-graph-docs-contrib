@@ -11,7 +11,7 @@ ms.date: 10/04/2024
 
 Namespace: microsoft.graph
 
-Used for the **stages** property of [approval settings](accesspackageassignmentapprovalsettings.md) in an [access package assignment policy](accesspackageassignmentpolicy.md). Specifies the primary, fallback, and escalation approvers of each stage.
+Used for the **stages** property of [accessPackageAssignmentApprovalSettings](../resources/accesspackageassignmentapprovalsettings.md) in an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md). Specifies the primary, fallback, and escalation approvers of each stage.
 
 ## Properties
 |Property|Type|Description|
@@ -24,7 +24,7 @@ Used for the **stages** property of [approval settings](accesspackageassignmenta
 |fallbackPrimaryApprovers|[subjectSet](../resources/subjectset.md) collection|The subjects, typically users, who are the fallback primary approvers.|
 |isApproverJustificationRequired|Boolean|Indicates whether the approver is required to provide a justification for approving a request.|
 |isEscalationEnabled|Boolean|If `true`, then one or more **escalationApprovers** are configured in this approval stage.|
-|primaryApprovers|[subjectSet](../resources/subjectset.md) collection|The subjects, typically users, who are asked to approve requests. A collection of [singleUser](singleuser.md), [groupMembers](groupmembers.md), [requestorManager](requestormanager.md), [internalSponsors](internalsponsors.md), [externalSponsors](externalsponsors.md), or [targetUserSponsors](targetusersponsors.md).|
+|primaryApprovers|[subjectSet](../resources/subjectset.md) collection|The subjects, typically users, who are asked to approve requests. A collection of [singleUser](../resources/singleuser.md), [groupMembers](../resources/groupmembers.md), [requestorManager](../resources/requestormanager.md), [internalSponsors](../resources/internalsponsors.md), [externalSponsors](../resources/externalsponsors.md), or [targetUserSponsors](../resources/targetusersponsors.md).|
 
 ### approverInformationVisibility values
 

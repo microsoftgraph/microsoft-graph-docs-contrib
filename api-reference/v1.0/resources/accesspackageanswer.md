@@ -14,6 +14,11 @@ Namespace: microsoft.graph
 
 Represents the answer a requestor provides to an [accessPackageQuestion](../resources/accesspackagequestion.md). The actual answer will be a subtype of this complex type, either [accessPackageAnswerString](../resources/accesspackageanswerstring.md) or [accessPackageAnswerChoice](../resources/accesspackageanswerchoice.md). These answers will be stored on an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.
 
+In entitlement management, this object is configured in the following properties and relationships:
+- **answers** property of [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md)
+- **answers** property of [accessPackageAssignmentRequestCalloutData](../resources/accesspackageassignmentrequestcalloutdata.md)
+- **existingAnswers** property of [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md)
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

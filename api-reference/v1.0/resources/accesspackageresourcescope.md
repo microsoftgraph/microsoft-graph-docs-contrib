@@ -12,11 +12,15 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), an access package resource scope is a reference to a scope within a resource, for those resources that have multiple scopes.
+In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), an access package resource scope is a reference to a scope within a resource, for those resources that have multiple scopes.
 
-You can determine the access package resource scope, for a resource that has roles already added to an access package, by using [list accessPackageResourceRoleScopes](../api/accesspackage-list-resourcerolescopes.md) to return a collection of [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) objects.
+You can determine the access package resource scope, for a resource that has roles already added to an access package, by using [list accessPackageResourceRoleScopes](../api/accesspackage-list-resourcerolescopes.md) to return a collection of [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) objects.
 
 If the resource is in an access package catalog but hasn't yet had its roles added to an access package, you can determine the access package resource scope by using [list accessPackageResources](../api/accesspackagecatalog-list-resources.md) and including `$expand=scopes` in the query.
+
+In entitlement management, this object is configured in the following properties and relationships:
+- **resourceScopes** relationship of [accessPackageCatalog](../resources/accesspackagecatalog.md)
+- **scopes** relationship of [[accessPackageResource](../resources/accesspackageresource.md)
 
 ## Properties
 
@@ -33,7 +37,7 @@ If the resource is in an access package catalog but hasn't yet had its roles add
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|resource|[accessPackageResource](accesspackageresource.md)| Read-only. Nullable.|
+|resource|[accessPackageResource](../resources/accesspackageresource.md)| Read-only. Nullable.|
 
 ## JSON representation
 

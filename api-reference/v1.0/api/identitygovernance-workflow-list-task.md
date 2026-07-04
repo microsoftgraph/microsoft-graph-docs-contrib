@@ -12,7 +12,7 @@ ms.date: 08/01/2025
 
 Namespace: microsoft.graph.identityGovernance
 
-Retrieve the details of the built-in tasks in Lifecycle Workflows.
+Retrieve the details of the built-in [task](../resources/identitygovernance-task.md) objects in a [workflow](../resources/identitygovernance-workflow.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

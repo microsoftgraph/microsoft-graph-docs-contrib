@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an attribute name-value pair used as an anchor or matching property during [identity correlation](../resources/identityinfo.md).
+Represents an attribute name-value pair used as an anchor or matching property during [identity correlation](../resources/identityinfo.md). This object is configured in the **anchor** and **matchingProperty** properties of [identityInfo](../resources/identityinfo.md).
 
 ## Properties
 |Property|Type|Description|

@@ -11,7 +11,7 @@ ms.date: 10/04/2024
 
 Namespace: microsoft.graph
 
-Settings configured in an [access package assignment policy](accesspackageassignmentpolicy.md) for the access reviews of assignments to an access package that were made through that policy. Provides settings to select reviewers of those assignments, and how often the assignments must be reviewed.
+Settings configured in the **reviewSettings** property of an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) for the access reviews of assignments to an access package that were made through that policy. Provides settings to select reviewers of those assignments, and how often the assignments must be reviewed.
 
 ## Properties
 |Property|Type|Description|

@@ -16,6 +16,8 @@ Represents access package suggestions that are based on the user's own assignmen
 
 Inherits from [accessPackageSuggestionReason](../resources/accesspackagesuggestionreason.md).
 
+In entitlement management, this subtype is configured in the **reasons** property of [accessPackageSuggestion](../resources/accesspackagesuggestion.md).
+
 ## Properties
 
 | Property     | Type        | Description |

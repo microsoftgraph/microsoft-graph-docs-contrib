@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents the metadata of the verifiable credential including the issuing authority, presented credentials, and the verified claims.
-Used for the **verifiedCredentialsData** property of [access package assignment request](accesspackageassignmentrequest.md).
+Used for the **verifiedCredentialsData** property of [access package assignment request](../resources/accesspackageassignmentrequest.md).
 
 ## Properties
 |Property|Type|Description|

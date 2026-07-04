@@ -16,6 +16,8 @@ Base type for **reasons** why an [access package is suggested](../resources/acce
 
 Base type of [accessPackageSuggestionRelatedPeopleBased](../resources/accesspackagesuggestionrelatedpeoplebased.md) and [accessPackageSuggestionSelfAssignmentHistoryBased](../resources/accesspackagesuggestionselfassignmenthistorybased.md).
 
+In entitlement management, this object is configured in the **reasons** property of [accessPackageSuggestion](../resources/accesspackagesuggestion.md).
+
 ## Properties
 
 None.

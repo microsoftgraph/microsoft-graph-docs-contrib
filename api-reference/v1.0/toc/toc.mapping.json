@@ -898,67 +898,6 @@
                 "connectedOrganization",
                 "endUserSettings",
                 "entitlementManagementSettings"
-              ],
-              "complexTypes": [
-                "accessPackageAnswer",
-                "accessPackageAnswerChoice",
-                "accessPackageAnswerString",
-                "accessPackageApprovalStage",
-                "accessPackageAssignmentApprovalSettings",
-                "accessPackageAssignmentRequestCallbackData",
-                "accessPackageAssignmentRequestRequirements",
-                "accessPackageAssignmentRequestorSettings",
-                "accessPackageAssignmentReviewSettings",
-                "accessPackageAutomaticRequestSettings",
-                "accessPackageLocalizedText",
-                "accessPackageMultipleChoiceQuestion",
-                "accessPackageQuestion",
-                "accessPackageResourceAttribute",
-                "accessPackageResourceAttributeDestination",
-                "accessPackageResourceAttributeQuestion",
-                "accessPackageResourceAttributeSource",
-                "accessPackageResourceScope",
-                "accessPackageSuggestionReason",
-                "accessPackageSuggestionRelatedPeopleBased",
-                "accessPackageSuggestionSelfAssignmentHistoryBased",
-                "accessPackageTextInputQuestion",
-                "accessPackageUserDirectoryAttributeStore",
-                "attributeRuleMembers",
-                "azureActiveDirectoryTenant",
-                "azureAdPopTokenAuthentication",
-                "connectedOrganizationMembers",
-                "connectionInfo",
-                "crossCloudAzureActiveDirectoryTenant",
-                "customCalloutExtension",
-                "customExtensionAuthenticationConfiguration",
-                "customExtensionCallbackConfiguration",
-                "customExtensionCalloutInstance",
-                "customExtensionClientConfiguration",
-                "customExtensionData",
-                "customExtensionEndpointConfiguration",
-                "customExtensionStageSetting",
-                "domainIdentitySource",
-                "entitlementManagement",
-                "entitlementManagementSchedule",
-                "expirationPattern",
-                "externalDomainFederation",
-                "externalSponsors",
-                "groupMembers",
-                "identitySource",
-                "internalSponsors",
-                "logicAppTriggerEndpointConfiguration",
-                "patternedRecurrence",
-                "recurrencePattern",
-                "recurrenceRange",
-                "requestorManager",
-                "singleServicePrincipal",
-                "singleUser",
-                "socialIdentitySource",
-                "subjectSet",
-                "targetAgentIdentitySponsorsOrOwners",
-                "targetApplicationOwners",
-                "targetManager",
-                "targetUserSponsors"
               ]
             },
             {
@@ -978,38 +917,6 @@
                 "microsoft.graph.identityGovernance.customTaskExtension",
                 "microsoft.graph.identityGovernance.lifecycleManagementSettings",
                 "microsoft.graph.identitygovernance.insights"
-              ],
-              "complexTypes": [
-                "azureAdPopTokenAuthentication",
-                "customCalloutExtension",
-                "customExtensionAuthenticationConfiguration",
-                "customExtensionCallbackConfiguration",
-                "customExtensionCalloutRequest",
-                "customExtensionCalloutResponse",
-                "customExtensionClientConfiguration",
-                "customExtensionData",
-                "customExtensionEndpointConfiguration",
-                "microsoft.graph.identityGovernance.customTaskExtensionCallbackConfiguration",
-                "microsoft.graph.identityGovernance.customTaskExtensionCallbackData",
-                "microsoft.graph.identityGovernance.customTaskExtensionCalloutData",
-                "emailSettings",
-                "identity",
-                "identityGovernance",
-                "keyValuePair",
-                "microsoft.graph.identityGovernance.lifecycleWorkflowsContainer",
-                "logicAppTriggerEndpointConfiguration",
-                "microsoft.graph.identityGovernance.onDemandExecutionOnly",
-                "microsoft.graph.identityGovernance.parameter",
-                "microsoft.graph.identityGovernance.ruleBasedSubjectSet",
-                "microsoft.graph.identityGovernance.runSummary",
-                "subjectSet",
-                "microsoft.graph.identityGovernance.taskReportSummary",
-                "microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
-                "microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
-                "microsoft.graph.identityGovernance.userSummary",
-                "microsoft.graph.identityGovernance.workflowBase",
-                "microsoft.graph.identityGovernance.workflowExecutionConditions",
-                "microsoft.graph.identityGovernance.workflowExecutionTrigger"
               ],
               "childNodes": [
                 {
@@ -1084,10 +991,6 @@
                 "agreementAcceptance",
                 "agreementFile",
                 "agreementFileLocalization"
-              ],
-              "complexTypes": [
-                "agreementFileData",
-                "termsExpiration"
               ]
             }
           ]
@@ -2429,4 +2332,3 @@
     }
   ]
 }
-

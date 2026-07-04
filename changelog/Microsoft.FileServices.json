@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "837003f5-7ffd-479a-b03f-cc82c35c4d8f",
+          "ApiChange": "Method",
+          "ChangedApiName": "lock",
+          "ChangeType": "Addition",
+          "Description": "Added the [lock](https://learn.microsoft.com/en-us/graph/api/driveitem-lock?view=graph-rest-beta) method to the **driveItem** resource. Use it to acquire an exclusive lock on a file or refresh an existing lock held by the calling user.",
+          "Target": "driveItem"
+        },
+        {
+          "Id": "837003f5-7ffd-479a-b03f-cc82c35c4d8f",
+          "ApiChange": "Method",
+          "ChangedApiName": "releaseLock",
+          "ChangeType": "Addition",
+          "Description": "Added the [releaseLock](https://learn.microsoft.com/en-us/graph/api/driveitem-releaselock?view=graph-rest-beta) method to the **driveItem** resource. Use it to release the exclusive lock the calling user currently holds on a file.",
+          "Target": "driveItem"
+        }
+      ],
+      "Id": "837003f5-7ffd-479a-b03f-cc82c35c4d8f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-07-02T14:58:08.3533648Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "6d254a28-972d-40ca-aa3d-c9f57e9e2cce",
           "ApiChange": "Enumeration",
           "ChangedApiName": "lockType",
@@ -23,7 +49,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "lockInfo",
           "ChangeType": "Addition",
-          "Description": "Added the [lockInfo](https://learn.microsoft.com/en-us/graph/api/resources/lockInfo?view=graph-rest-beta) resource.",
+          "Description": "Added the [lockInfo](https://learn.microsoft.com/en-us/graph/api/resources/lockinfo?view=graph-rest-beta) resource.",
           "Target": "lockInfo"
         }
       ],

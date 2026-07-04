@@ -13,13 +13,13 @@ ms.date: 04/03/2024
 Namespace: microsoft.graph
 
 
-Describes the status of the provisioning summary event. 
+Describes the status of the provisioning summary event. This object is configured in the **provisioningStatusInfo** property of [provisioningObjectSummary](../resources/provisioningobjectsummary.md).
 
 ## Properties
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|errorInformation|[provisioningErrorInfo](provisioningErrorInfo.md)| If status isn't success/ skipped details for the error are contained in this.|
+|errorInformation|[provisioningErrorInfo](../resources/provisioningerrorinfo.md)| If status isn't success/ skipped details for the error are contained in this.|
 |status|provisioningResult| The possible values are: `success`, `warning`, `failure`, `skipped`, `unknownFutureValue`.|
 
 ## JSON representation

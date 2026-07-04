@@ -15,7 +15,13 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-Callback settings that define how long Microsoft Entra ID can wait for a resume signal for the callout that it made to the logic app. This is an abstract type that's inherited by [customTaskExtensionCallbackConfiguration](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md).
+Callback settings that define how long Microsoft Entra ID can wait for a resume signal for the callout that it made to the logic app. This abstract type is inherited by [customTaskExtensionCallbackConfiguration](../resources/identitygovernance-customtaskextensioncallbackconfiguration.md). In Lifecycle Workflows, the derived types of this object are configured in the **callbackConfiguration** property of the [customTaskExtension](../resources/identitygovernance-customtaskextension.md) resource.
+
+In entitlement management, the derived types of this object are configured in the **callbackConfiguration** property of:
+- [accessPackageAssignmentCalloutData](../resources/accesspackageassignmentcalloutdata.md)
+- [accessPackageAssignmentRequestCalloutData](../resources/accesspackageassignmentrequestcalloutdata.md)
+- [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md)
+- [accessPackageAssignmentWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md)
 
 ## Properties
 |Property|Type|Description|

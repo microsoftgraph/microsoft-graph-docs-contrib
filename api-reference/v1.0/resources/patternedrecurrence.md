@@ -17,8 +17,8 @@ In [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md) 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|pattern|[recurrencePattern](recurrencepattern.md)|The frequency of an event. <br/><br/> For access reviews: <li>Do not specify this property for a one-time access review. <li> Only **interval**, **dayOfMonth**, and **type** (`weekly`, `absoluteMonthly`) properties of [recurrencePattern](recurrencepattern.md) are supported.|
-|range|[recurrenceRange](recurrencerange.md)|The duration of an event.|
+|pattern|[recurrencePattern](../resources/recurrencepattern.md)|The frequency of an event. <br/><br/> For access reviews: <li>Do not specify this property for a one-time access review. <li> Only **interval**, **dayOfMonth**, and **type** (`weekly`, `absoluteMonthly`) properties of [recurrencePattern](../resources/recurrencepattern.md) are supported.|
+|range|[recurrenceRange](../resources/recurrencerange.md)|The duration of an event.|
 
 ## Relationships
 

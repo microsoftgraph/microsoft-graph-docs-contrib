@@ -20,6 +20,10 @@ The following types are derived from connectionInfo:
 
 - [externalTokenBasedSapIagConnectionInfo](../resources/externaltokenbasedsapiagconnectioninfo.md)
 
+In entitlement management, this object is configured in the following properties and relationships:
+- **connectionInfo** property of [accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md)
+- **connectionInfo** property of [externalOriginResourceConnector](../resources/externaloriginresourceconnector.md)
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

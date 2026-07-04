@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents details of the managed identity that was used to sign into the target resource.
+Represents details of the managed identity that was used to sign into the target resource. This object is configured in the **managedServiceIdentity** property of [signIn](../resources/signin.md) and [summarizedSignIn](../resources/summarizedsignin.md).
 
 ## Properties
 |Property|Type|Description|
@@ -43,4 +43,3 @@ The following JSON representation shows the resource type.
   "federatedTokenIssuer": "String"
 }
 ```
-

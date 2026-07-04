@@ -114,6 +114,10 @@ items:
     href: ../../api/driveitem-removeretentionlabel.md
   - name: Lock or unlock record
     href: ../../api/driveitem-lockorunlockrecord.md
+  - name: Lock file
+    href: ../../api/driveitem-lock.md
+  - name: Release lock on file
+    href: ../../api/driveitem-releaselock.md
   - name: Create upload session
     href: ../../api/driveitem-createuploadsession.md
   - name: Download file (deprecated)
@@ -454,5 +458,7 @@ items:
     href: ../../resources/filestoragecontainertyperegistrationsettings.md
   - name: File storage container type settings
     href: ../../resources/filestoragecontainertypesettings.md
+  - name: Lock info
+    href: ../../resources/lockinfo.md
   - name: SharePoint group identity
     href: ../../resources/sharepointgroupidentity.md
