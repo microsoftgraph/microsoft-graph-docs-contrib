@@ -1,6 +1,6 @@
 ---
 title: "agreementFileData resource type"
-description: "Represents the blob of a Microsoft Entra terms of use agreement file."
+description: "Represents a Microsoft Entra terms of use agreement file."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.subservice: "entra-id-governance"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the blob of a Microsoft Entra terms of use agreement file.
+Represents a Microsoft Entra terms of use [agreement](../resources/agreement.md) file.
 
 ## Properties
 | Property       | Type | Description |

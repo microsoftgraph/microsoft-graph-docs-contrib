@@ -1,8 +1,8 @@
 ---
 title: "Manage access to resources using entitlement management APIs"
 description: "Learn how to use Microsoft Graph APIs to create a package of resources that internal users can request themselves."
-author: markwahl-msft
-ms.author: mwahl 
+author: FaithOmbongi
+ms.author: ombongifaith
 ms.reviewer: Mark.Wahl
 ms.topic: tutorial
 ms.localizationpriority: medium

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the custom authentication strength enforced in a conditional access policy. 
+Represents the custom authentication strength enforced in a conditional access policy. This object is configured in the **authenticationStrength** property of [appliedConditionalAccessPolicy](../resources/appliedconditionalaccesspolicy.md).
 
 ## Properties
 |Property|Type|Description|
@@ -41,4 +41,3 @@ The following JSON representation shows the resource type.
   "displayName": "String"
 }
 ```
-

@@ -18,6 +18,8 @@ Defines the sponsors, or owners, of a specific [agentIdentity](../resources/agen
 
 Inherits from [userSet](../resources/userset.md).
 
+In entitlement management, this subtype can be configured in the **primaryApprovers** and **fallbackPrimaryApprovers** properties of [accessPackageApprovalStage](../resources/accesspackageapprovalstage.md) for an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md).
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

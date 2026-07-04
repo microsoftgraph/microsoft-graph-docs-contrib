@@ -18,13 +18,18 @@ An abstract type that defines the configuration for apps that can extend the cus
 
 This abstract type is inherited by the following derived types.
 
-- [customAccessPackageWorkflowExtension](customaccesspackageworkflowextension.md)
+- [customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md)
 - [customAuthenticationExtension](../resources/customauthenticationextension.md)
 - [customTaskExtension](../resources/identitygovernance-customtaskextension.md)
-- [accessPackageAssignmentRequestWorkflowExtension](accesspackageassignmentrequestworkflowextension.md)
+- [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md)
 - [accessPackageAssignmentWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md)
 
-Inherits from [entity](entity.md).
+In entitlement management, the derived types of this object are configured in the following properties and relationships:
+- **accessPackageCustomWorkflowExtensions** relationship of [accessPackageCatalog](../resources/accesspackagecatalog.md)
+- **customExtension** relationship of [accessPackageDynamicApprovalStage](../resources/accesspackagedynamicapprovalstage.md)
+- **customExtension** relationship of [customExtensionStageSetting](../resources/customextensionstagesetting.md)
+
+Inherits from [entity](../resources/entity.md).
 
 ## Properties
 

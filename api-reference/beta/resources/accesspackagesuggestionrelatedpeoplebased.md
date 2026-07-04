@@ -16,7 +16,9 @@ Namespace: microsoft.graph
 
 Represents access package suggestions that are based on related people insights in [Microsoft Entra entitlement management](entitlementmanagement-overview.md). This suggestion type includes information about related users who may have access to similar resources, helping to provide contextual suggestions to end users.
 
-Inherits from [accessPackageSuggestionReason](accesspackagesuggestionreason.md).
+Inherits from [accessPackageSuggestionReason](../resources/accesspackagesuggestionreason.md).
+
+In entitlement management, this subtype is configured in the **reasons** property of [accessPackageSuggestion](../resources/accesspackagesuggestion.md).
 
 ## Properties
 

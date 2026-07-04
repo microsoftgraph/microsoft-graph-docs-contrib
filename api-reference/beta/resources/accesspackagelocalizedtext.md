@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 A complex type used to represent a string in a specific language.
 
+In entitlement management, this object is configured in the **localizedTexts** property of [accessPackageLocalizedContent](../resources/accesspackagelocalizedcontent.md).
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

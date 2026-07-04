@@ -13,7 +13,7 @@ ms.date: 04/03/2024
 Namespace: microsoft.graph
 
 
-Describes the status of the provisioning event and the associated errors. 
+Describes the status of the provisioning event and the associated errors. This object is configured in the **errorInformation** property of [provisioningStatusInfo](../resources/provisioningstatusinfo.md).
 
 ## Properties
 

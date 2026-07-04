@@ -14,7 +14,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the data send to Azure Logic Apps as part of a [custom extension callout request](../resources/customextensioncalloutrequest.md) when a custom task extension gets used as part of a lifecycle workflow execution.
+Represents the data sent to Azure Logic Apps as part of a [customExtensionCalloutRequest](../resources/customextensioncalloutrequest.md). This object is configured in the **data** property of that resource for the [customTaskExtension](../resources/identitygovernance-customtaskextension.md) resource.
 
 Inherits from [customExtensionData](../resources/customextensiondata.md).
 

@@ -10,9 +10,11 @@ ms.date: 07/26/2024
 
 # entitlementManagement resource type
 
-The entitlement management singleton is the container for entitlement management resources, including [accessPackageCatalog](accesspackagecatalog.md), [connectedOrganization](connectedorganization.md), and [entitlementManagementSettings](entitlementmanagementsettings.md).  For a full list of resources see [entitlement management overview](entitlementmanagement-overview.md).
+Namespace: microsoft.graph
 
-Inherits from [entity](entity.md).
+The entitlement management singleton is the container for entitlement management resources, including [accessPackageCatalog](../resources/accesspackagecatalog.md), [connectedOrganization](../resources/connectedorganization.md), and [entitlementManagementSettings](../resources/entitlementmanagementsettings.md). For a full list of resources, see [entitlement management overview](../resources/entitlementmanagement-overview.md).
+
+Inherits from [entity](../resources/entity.md).
 
 ## Methods
 
@@ -21,7 +23,7 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|This value indicates the resource is a singleton. Read-only. Inherited from [entity](entity.md).|
+|id|String|This value indicates the resource is a singleton. Read-only. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|

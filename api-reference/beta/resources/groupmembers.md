@@ -14,8 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used in the request, approval, and assignment review settings of an [access package assignment policy](accesspackageassignmentpolicy.md). 
+Used in the request, approval, and assignment review settings of an [access package assignment policy](../resources/accesspackageassignmentpolicy.md). 
 The `@odata.type` value `#microsoft.graph.groupMembers` indicates that this type identifies a collection of users in the tenant who are allowed as requestor, approver, or reviewer, who are the members of a specific group.
+
+In entitlement management, this subtype can be configured in:
+- **allowedRequestors** property of [requestorSettings](../resources/requestorsettings.md)
+- **primaryApprovers** and **escalationApprovers** properties of [approvalStage](../resources/approvalstage.md) and [accessPackageDynamicApprovalStage](../resources/accesspackagedynamicapprovalstage.md)
+- **primaryApprovers**, **fallbackPrimaryApprovers**, **escalationApprovers**, and **fallbackEscalationApprovers** properties of [accessPackageApprovalStage](../resources/accesspackageapprovalstage.md)
+- **reviewers** property of [assignmentReviewSettings](../resources/assignmentreviewsettings.md) for an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md)
 
 ## Properties
 

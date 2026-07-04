@@ -14,7 +14,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A container for the relationships that expose the Microsoft Entra ID Governance Lifecycle Workflows API capabilities.
+A container for the relationships that expose the Microsoft Entra ID Governance Lifecycle Workflows API capabilities. This object is configured in the **lifecycleWorkflows** relationship of the [identityGovernance](../resources/identitygovernance.md) resource.
 
 Inherits from [entity](../resources/entity.md).
 

@@ -14,16 +14,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used for the **requestorSettings** property of an [access package assignment policy](accesspackageassignmentpolicy.md). Provides additional settings to select who can create a request for an access package on that policy.
+Used for the **requestorSettings** property of an [access package assignment policy](../resources/accesspackageassignmentpolicy.md). Provides additional settings to select who can create a request for an access package on that policy.
 
 | Who can request | scopeType | allowedRequestors collection|
 |:----------------|:----------|:------------------|
 |No one|`NoSubjects`|empty array|
-|Specific individual user in your directory|`SpecificDirectorySubjects`|[singleUser](singleuser.md)|
-|Users in your directory who are members of a group|`SpecificDirectorySubjects`|[groupMembers](groupmembers.md)|
+|Specific individual user in your directory|`SpecificDirectorySubjects`|[singleUser](../resources/singleuser.md)|
+|Users in your directory who are members of a group|`SpecificDirectorySubjects`|[groupMembers](../resources/groupmembers.md)|
 |Users in your directory with `userType` value of `member`|`AllExistingDirectoryMemberUsers`|empty array|
 |Users in your directory|`AllExistingDirectorySubjects`|empty array|
-|Users in specific connected organizations|`SpecificConnectedOrganizationSubjects`|[connectedOrganizationMembers](connectedorganizationmembers.md)|
+|Users in specific connected organizations|`SpecificConnectedOrganizationSubjects`|[connectedOrganizationMembers](../resources/connectedorganizationmembers.md)|
 |Users from any connected organizations that have the state property of the connected organization set to `configured`.|`AllConfiguredConnectedOrganizationSubjects`|empty array|
 |Any user|`AllExternalSubjects`|empty array|
 

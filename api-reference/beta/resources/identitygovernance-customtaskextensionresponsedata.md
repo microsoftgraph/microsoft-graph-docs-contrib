@@ -14,7 +14,7 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the data returned from [custom task extensions](../resources/identitygovernance-customtaskextension.md) in response to a callout from a lifecycle workflow.
+Represents the data returned from [customTaskExtension](../resources/identitygovernance-customtaskextension.md) callouts. This object is configured in the **data** property of the [customExtensionCalloutResponse](../resources/customextensioncalloutresponse.md) resource.
 
 Inherits from [customExtensionData](../resources/customextensiondata.md).
 

@@ -13,6 +13,7 @@ ms.date: 04/03/2024
 Namespace: microsoft.graph.identityGovernance
 
 An abstract type that exposes the properties for configuring a custom lifecycle workflow. This resource is inherited by the following resource types:
+
 + [workflow](../resources/identitygovernance-workflow.md)
 + [workflowVersion](../resources/identitygovernance-workflowversion.md)
 

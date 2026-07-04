@@ -12,7 +12,9 @@ ms.date: 08/08/2024
 
 Namespace: microsoft.graph
 
-Key value pair for action parameters.
+Key-value pair for action parameters. This object is configured in the following resources:
+- **synchronizationJobSettings** property of [synchronizationJob](../resources/synchronization-synchronizationjob.md)
+- **arguments** property of [task](../resources/identitygovernance-task.md) (Lifecycle Workflows)
 
 ## Properties
 

@@ -18,6 +18,11 @@ Represents the abstract base for data payloads associated with a [customDataProv
 
 - [accessReviewContextDataBase](../resources/customdataprovidedresourcepayloads-accessreviewcontextdatabase.md)
 
+In entitlement management, the derived types of this object are configured in the **data** property of:
+- [customDataProvidedResourceAccessReviewUploadSession](../resources/customdataprovidedresourceaccessreviewuploadsession.md)
+- [calloutRequest](../resources/customdataprovidedresourcepayloads-calloutrequest.md)
+- [customDataProvidedResourceUploadSession](../resources/customdataprovidedresourceuploadsession.md)
+- [customDataProvidedResourceUploadSessionRequest](../resources/customdataprovidedresourceuploadsessionrequest.md)
 
 ## Properties
 None.

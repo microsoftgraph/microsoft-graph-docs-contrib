@@ -12,7 +12,7 @@ ms.date: 07/26/2024
 
 Namespace: microsoft.graph
 
-Defines the Microsoft Entra application used to authenticate an app with a custom extension. Only the app ID of the application is required. Derived from [customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md).
+Defines the Microsoft Entra application used to authenticate a logic app with a [customTaskExtension](../resources/identitygovernance-customtaskextension.md), [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md), or [accessPackageAssignmentWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md). This object is configured in the **authenticationConfiguration** property of those resources. Only the app ID of the application is required. Derived from [customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md).
 
 ## Properties
 

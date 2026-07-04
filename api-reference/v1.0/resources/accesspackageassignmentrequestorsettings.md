@@ -11,7 +11,7 @@ ms.date: 04/03/2024
 
 Namespace: microsoft.graph
 
-Provides additional settings to select who can create a request for an access package on that policy, and what they can include in their request. The requestor settings of an [access package assignment policy](accesspackageassignmentpolicy.md) uses this resource.
+Provides additional settings to select who can create a request for an access package on that policy, and what they can include in their request. This object is configured in the **requestorSettings** property of an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md).
 
 ## Properties
 |Property|Type|Description|

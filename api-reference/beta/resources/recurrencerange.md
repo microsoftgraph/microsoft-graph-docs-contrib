@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 In a [patternedRecurrence](../resources/patternedrecurrence.md) object, the **range** property defines the date range over which an event recurs. This shared object is also used for [calendar events](../resources/event.md) and [access package assignments](../resources/accesspackageassignment.md) in Microsoft Entra ID.
 
-You can specify the date range for a recurring event in one of 3 ways depending on your scenario. While you must always specify a **startDate** value for the date range, you can specify a recurring event that ends by a specific date, or that doesn't end, or that ends after a specific number of occurrences. Note that the actual occurrences within the date range always follow the recurrence pattern that you specify for the recurring event. A recurring event is always defined by its [recurrencePattern](recurrencepattern.md) (how frequently the event repeats), and its **recurrenceRange** (for how long the event repeats).
+You can specify the date range for a recurring event in one of 3 ways depending on your scenario. While you must always specify a **startDate** value for the date range, you can specify a recurring event that ends by a specific date, or that doesn't end, or that ends after a specific number of occurrences. Note that the actual occurrences within the date range always follow the recurrence pattern that you specify for the recurring event. A recurring event is always defined by its [recurrencePattern](../resources/recurrencepattern.md) (how frequently the event repeats), and its **recurrenceRange** (for how long the event repeats).
 
 
 ## Properties

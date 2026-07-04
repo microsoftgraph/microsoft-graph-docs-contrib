@@ -12,9 +12,7 @@ ms.date: 04/04/2024
 
 Namespace: microsoft.graph
 
-Create a new [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) or [accessPackageAssignmentWorkflowExtension](../resources/accessPackageAssignmentWorkflowExtension.md) object and add it to an existing [accessPackageCatalog](../resources/accesspackagecatalog.md) object.
-
-You must explicitly provide an `@odata.type` property that indicates whether the object is an  **accessPackageAssignmentRequestWorkflowExtension** or an **accessPackageAssignmentWorkflowExtension**.
+Create a new [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) or [accessPackageAssignmentWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md) object in the **accessPackageCustomWorkflowExtensions** relationship of an [accessPackageCatalog](../resources/accesspackagecatalog.md). You must explicitly provide an `@odata.type` property that indicates whether the object is an **accessPackageAssignmentRequestWorkflowExtension** or an **accessPackageAssignmentWorkflowExtension**.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -46,7 +44,7 @@ POST /identityGovernance/entitlementManagement/catalogs/{catalogId}/customWorkfl
 
 ## Request body
 
-In the request body, supply a JSON representation of the [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) or [accessPackageAssignmentWorkflowExtension](../resources/accessPackageAssignmentWorkflowExtension.md) object.
+In the request body, supply a JSON representation of the [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) or [accessPackageAssignmentWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md) object.
 
 You can specify the following properties when creating a **accessPackageCustomWorkflowExtension**.
 
@@ -62,7 +60,7 @@ You must also supply an **@odata.type** property with a value of the specific ac
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) or [accessPackageAssignmentWorkflowExtension](../resources/accessPackageAssignmentWorkflowExtension.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) or [accessPackageAssignmentWorkflowExtension](../resources/accesspackageassignmentworkflowextension.md) object in the response body.
 
 ## Examples
 
