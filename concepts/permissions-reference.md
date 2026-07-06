@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 06/29/2026
+ms.date: 07/06/2026
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -131,7 +131,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | 3ee18438-e6e5-4858-8f1c-d7b723b45213 | ada96a26-9579-4c29-a578-c3482a765716 |
-| DisplayText | Read all agent card manifests in Agent Registry | Read agent card manifests in Agent Registry |
+| DisplayText | Read all agent card manifests in Agent Registry | Read all agent card manifests in Agent Registry |
 | Description | Allows the app to read all agent card manifests in your organization's Agent Registry without a signed-in user. | Allows the app to read agent card manifests in your organization's Agent Registry on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
@@ -164,7 +164,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | e65ee1da-d1d5-467b-bdd0-3e9bb94e6e0c | fa50be38-fdff-469c-96dc-ef5fce3c64bf |
-| DisplayText | Read all collections in Agent Registry | Read collections in Agent Registry |
+| DisplayText | Read all collections in Agent Registry, except quarantined and global | Read all collections in Agent Registry, except quarantined and global |
 | Description | Allows the app to read all collections and their membership in your organization's Agent Registry without a signed-in user. | Allows the app to read collections and their membership in your organization's Agent Registry on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
@@ -197,7 +197,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | feb31d7d-a227-4487-898c-e014840d07b3 | 6d8a7002-a05e-4b95-a768-0e6f0badc6c8 |
-| DisplayText | Read and write all collections in Agent Registry | Read and write collections in Agent Registry |
+| DisplayText | Read and write all collections in Agent Registry, except quarantined and global | Read and write collections in Agent Registry, except quarantined and global |
 | Description | Allows the app to create, read, update, and delete all collections and manage their membership in your organization's Agent Registry without a signed-in user. | Allows the app to create, read, update, and delete collections and manage their membership in your organization's Agent Registry on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
@@ -242,7 +242,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | ad25cc1d-84d8-47df-a08e-b34c2e800819 | e75eeac6-d759-4ba3-ae5c-773a27efafba |
 | DisplayText | Create agent identities without an agent blueprint parent | Create agent identities without an agent blueprint parent |
-| Description | Allows the app to create agent identities, even if the app is not the parent agent identity blueprint. | Allows client to create agent identities, even if client is not the parent agent identity blueprint. |
+| Description | Allows the client to create agent identities without a signed-in user, even if the client is not the parent agent identity blueprint. | Allows the client to create agent identities on behalf of the signed-in user, even if the client is not the parent agent identity blueprint. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -252,8 +252,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | 4c390976-b2b7-42e0-9187-c6be3bead001 | - |
-| DisplayText | Create agent identities linked to itself. | - |
-| Description | Allows the app to create linked agent identities without a signed-in user. | - |
+| DisplayText | Create and manage agent identities as the parent agent identity blueprint | - |
+| Description | Allows the app to create agent identities as the parent agent identity blueprint and fully manage them, including reading, updating, and deleting, without a signed-in user. | - |
 | AdminConsentRequired | Yes | - |
 
 ---
@@ -264,7 +264,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 5b016f9b-18eb-41d4-869a-66931914d1c8 | c8ee41e5-35e7-4fe9-8ecb-93493adcac5b |
 | DisplayText | Delete and restore agent identities | Delete and restore agent identities |
-| Description | Allows the app to delete and restore agent identities without a signed-in user. | Allows the client to delete and restore agent identities. |
+| Description | Allows the client to delete and restore agent identities without a signed-in user. | Allows the client to delete and restore agent identities on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -275,7 +275,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 69ee0943-4fa4-4ec8-8e52-d12e4ea661a3 | a501206a-e364-4a3f-be6e-765806d0e323 |
 | DisplayText | Enable or disable agent identities | Enable or disable agent identities |
-| Description | Allows the app to enable or disable agent identities without a signed-in user. | Allows the client to enable or disable agent identities. |
+| Description | Allows the client to enable or disable agent identities without a signed-in user. | Allows the client to enable or disable agent identities on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -286,7 +286,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | b2b8f011-2898-4234-9092-5059f6c1ebfa | 5e850691-d86a-4b24-bfa6-8a52fb37a0c1 |
 | DisplayText | Read all agent identities | Read all agent identities |
-| Description | Allows the app to read all agent identities without a signed-in user. | Allows the client to read all agent identities. |
+| Description | Allows the app to read all agent identities without a signed-in user. | Allows the client to read all agent identities on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -297,7 +297,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | dcf7150a-88d4-4fe6-9be1-c2744c455397 | 4a4facd5-0ee1-49b7-a5b2-fdcc2491685e |
 | DisplayText | Read and write all agent identities | Read and write all agent identities |
-| Description | Allows the app to read, update, and delete agent identities without a signed-in user. | Allows the client to read, update, and delete agent identities on behalf of the signed-in user. |
+| Description | Allows the client to read, update, create, and delete agent identities without a signed-in user. | Allows the client to read, update, create, and delete agent identities on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -319,7 +319,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | ea4b2453-ad2d-4d94-9155-10d5d9493ce9 | 8fc15edd-ba24-494e-9bf6-d38e1b7ba8fd |
 | DisplayText | Create agent identity blueprints. | Create agent identity blueprints. |
-| Description | Allows creating new agent identity blueprints without a signed-in user. | Allows creating new agent identity blueprints with a signed-in user. |
+| Description | Allows creating new agent identity blueprints without a signed-in user. | Allows creating new agent identity blueprints on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -330,7 +330,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 3f80b699-6405-4e36-a4df-4f19950ff91e | f12ba1f6-afb7-4685-9a30-21e8c3f551d8 |
 | DisplayText | Delete and restore agent identity blueprints. | Delete and restore agent identity blueprints. |
-| Description | Allows deleting or restoring agent identity blueprints without a signed-in user. | Allows deleting or restoring agent identity blueprints with a signed-in user. |
+| Description | Allows deleting or restoring agent identity blueprints without a signed-in user. | Allows deleting or restoring agent identity blueprints on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -341,7 +341,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 7547a7d1-36fa-4479-9c31-559a600eaa4f | 26512dc8-1364-4e9f-867c-6d8b22a9e162 |
 | DisplayText | Read all agent identity blueprints | Read all agent identity blueprints |
-| Description | Allows the app to read all agent identity blueprints without a signed-in user. | Allows the client to read all agent identity blueprints. |
+| Description | Allows the client to read all agent identity blueprints without a signed-in user. | Allows the client to read all agent identity blueprints on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -352,7 +352,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 7fddd33b-d884-4ec0-8696-72cff90ff825 | 4fd490fc-1467-48eb-8a4c-421597ab0402 |
 | DisplayText | Read and write all agent identity blueprints. | Read and write all agent identity blueprints. |
-| Description | Allows the app to read, update, create, and delete agent identity blueprints without a signed-in user. | Allows the app to read, update, create, and delete agent identity blueprints on behalf of the signed-in user. |
+| Description | Allows the client to read, update, create, and delete agent identity blueprints without a signed-in user. | Allows the client to read, update, create, and delete agent identity blueprints on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -385,7 +385,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 8959696d-d07e-4916-9b1e-3ba9ce459161 | 00dcd896-6b23-42ce-b5de-c58493c05e22 |
 | DisplayText | Create agent identity blueprint principals. | Create agent identity blueprint principals. |
-| Description | Allows creating new agent identity blueprint principals without a signed-in user. | Allows creating new agent identity blueprint principals with a signed-in user. |
+| Description | Allows creating new agent identity blueprint principals without a signed-in user. | Allows creating new agent identity blueprint principals on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -396,7 +396,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | f86a2dd8-9298-4675-bd78-f5a3572da2d7 | 2c70023e-a482-4af2-9ff1-51ded53e6bad |
 | DisplayText | Delete and restore agent identity blueprint principals. | Delete and restore agent identity blueprint principals. |
-| Description | Allows deleting or restoring agent identity blueprint principals without a signed-in user. | Allows deleting or restoring agent identity blueprint principals with a signed-in user. |
+| Description | Allows deleting or restoring agent identity blueprint principals without a signed-in user. | Allows deleting or restoring agent identity blueprint principals on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -407,7 +407,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | a0bdd23d-8b19-4682-b428-574d96527c6f | e7475e0a-9f02-43e2-a250-5c2ea74ccd0e |
 | DisplayText | Enable or disable agent identity blueprint principals. | Enable or disable agent identity blueprint principals. |
-| Description | Allows enabling or disabling agent identity blueprint principals without a signed-in user. | Allows enabling or disabling agent identity blueprint principals with a signed-in user. |
+| Description | Allows enabling or disabling agent identity blueprint principals without a signed-in user. | Allows enabling or disabling agent identity blueprint principals on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -418,7 +418,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 |--|--|--|
 | Identifier | 9361dea9-4524-493d-941d-f1b65aaf6c7c | 88c856a2-de61-4632-b2d4-ac503cbc8dd2 |
 | DisplayText | Read agent identity blueprint principals. | Read agent identity blueprint principals. |
-| Description | Allows reading agent identity blueprint principals without a signed-in user. | Allows reading agent identity blueprint principals with a signed-in user. |
+| Description | Allows reading agent identity blueprint principals without a signed-in user. | Allows reading agent identity blueprint principals on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
@@ -461,7 +461,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | 799a4732-85b8-4c67-b048-75f0e88a232b | 4c3c738a-2df0-4877-bf4a-f796950ff34c |
-| DisplayText | Read all agent instances in Agent Registry | Read agent instances in Agent Registry |
+| DisplayText | Read all agent instances in Agent Registry | Read all agent instances in Agent Registry |
 | Description | Allows the app to read all agent instances and their related collections in your organization's Agent Registry without a signed-in user. | Allows the app to read agent instances and their related collections in your organization's Agent Registry on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
@@ -3819,6 +3819,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### Group.ManageProtection.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 60f8cea0-2476-45c9-ab18-70e79e60ad14 | 36263ed6-285e-4f84-b25a-62ec2ba17d29 |
+| DisplayText | Manage the Microsoft Information Protection (MIP) label for M365 and security groups. | Manage the Microsoft Information Protection (MIP) label for M365 and security groups. |
+| Description | Allows the app to list groups, and to read their basic properties and manage the MIP label for all label enabled groups without a signed-in user. | Allows the app to list groups, and to read their basic properties and manage the MIP label for all label enabled groups on behalf of the signed-in user.  |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
 ### Group.Read.All
 
 | Category | Application | Delegated |
@@ -5771,6 +5782,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### Policy.Read.CrossTenantAccess
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 8fc84b9a-5c21-479b-ba9d-02d252d062aa | b337372a-8b4d-428d-9cd8-3d7363865736 |
+| DisplayText | Read your organization's cross tenant access policies | Read your organization's cross tenant access policies |
+| Description | Allows the app to read your organization's cross tenant access policies without a signed-in user. | Allows the app to read your organization's cross tenant access policies on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
 ### Policy.Read.DeviceConfiguration
 
 | Category | Application | Delegated |
@@ -6684,6 +6706,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | eb158f57-df43-4751-8b21-b8932adb3d34 | f2833d75-a4e6-40ab-86d4-6dfe73c97605 |
 | DisplayText | Read and write Records Management configuration, labels and policies | Read and write Records Management configuration, labels, and policies |
 | Description | Allow the application to create, update and delete any data from Records Management, such as configuration, labels, and policies without the signed in user. | Allow the application to create, update and delete any data from Records Management, such as configuration, labels, and policies on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### RemoteTenantGroups.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | faa08cc0-0dcd-4ea9-9f9c-8b16f842b36e | d207fff0-6e36-4360-a23b-495e23b60385 |
+| DisplayText | Read RemoteTenantGroups information | Read RemoteTenantGroups information |
+| Description | Allows the app to read available properties on remoteTenantGroups, without a signed-in user. | Allows the app to read available properties of remoteTenantGroups, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
