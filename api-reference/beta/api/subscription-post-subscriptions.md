@@ -291,6 +291,37 @@ Content-type: application/json
 }
 ```
 
+### Example 2: Create a subscription targeting a Web Push endpoint
+
+The following example creates a subscription that delivers encrypted change notifications to a browser-native Web Push endpoint (such as `web.push.apple.com`, `fcm.googleapis.com`, or `updates.push.services.mozilla.com`).
+
+Before creating this subscription, the browser-based application must:
+
+1. Call the [getVapidPublicKey](subscription-getvapidpublickey.md) function on the subscription collection to obtain Microsoft Graph's VAPID public key (RFC 8292).
+2. Call `PushManager.subscribe({ applicationServerKey: <vapidPublicKey> })` to register with the browser's push service. The browser returns a `PushSubscription` containing `endpoint`, `p256dh`, and `auth` values.
+
+The application then creates the subscription with the **notificationUrl** set to the bare push service endpoint URL, and the **vapidPublicKey**, **webPushEncryptionP256dhPublicKey**, and **webPushEncryptionSecret** properties set to the values returned by the browser. After creation, Microsoft Graph encrypts each notification per RFC 8291 using the stored keys and signs the request with VAPID before posting to the push service.
+
+#### Request
+
+```http
+POST https://graph.microsoft.com/beta/subscriptions
+Content-type: application/json
+
+{
+  "changeType": "created,updated",
+  "notificationUrl": "https://web.push.apple.com/QKmFUwSBFK8g7iY4t1...",
+  "resource": "me/mailFolders('Inbox')/messages",
+  "expirationDateTime": "2026-12-31T11:00:00.0000000Z",
+  "clientState": "secretClientValue",
+  "vapidPublicKey": "BNKm...base64url-encoded-server-vapid-public-key...",
+  "webPushEncryptionP256dhPublicKey": "BNcR...base64url-encoded-client-public-key...",
+  "webPushEncryptionSecret": "tBHI...base64url-encoded-auth-secret..."
+}
+```
+
+> **Note:** The **webPushEncryptionSecret** property is write-only. It's never returned in `GET` responses (returned as `null`). Treat the value as a secret.
+
 #### Notification endpoint validation
 
 The subscription notification endpoint (specified in the **notificationUrl** property) must be capable of responding to a validation request as described in [Set up notifications for changes in user data](/graph/change-notifications-overview#notification-endpoint-validation). If validation fails, the request to create the subscription returns a 400 Bad Request error.
