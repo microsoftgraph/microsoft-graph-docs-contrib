@@ -16,6 +16,8 @@ Namespace: microsoft.graph.identityGovernance
 
 Release a quarantined [workflow](../resources/identitygovernance-workflow.md) so that it resumes processing. A workflow is automatically quarantined when a run exceeds the threshold conditions defined in its [quarantineConfiguration](../resources/identitygovernance-quarantineconfiguration.md). After an administrator reviews the cause of the quarantine, calling this action clears the quarantine state and allows the workflow to run again.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
