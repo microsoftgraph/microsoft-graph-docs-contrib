@@ -440,10 +440,6 @@ items:
         href: ../../api/auditlogroot-getsummarizednoninteractivesignins.md
       - name: Get summarized service principal sign-ins
         href: ../../api/auditlogroot-getsummarizedserviceprincipalsignins.md
-    - name: Complex types
-      items:
-      - name: Token protection status details
-        href: ../../resources/tokenprotectionstatusdetails.md
   - name: Identity correlation reports (preview)
     items:
     - name: Correlated identity
@@ -464,14 +460,6 @@ items:
         href: ../../api/identitycorrelation-get.md
       - name: List identities
         href: ../../api/identitycorrelation-list-identities.md
-    - name: Complex types
-      items:
-      - name: Attribute info
-        href: ../../resources/attributeinfo.md
-      - name: Correlation error
-        href: ../../resources/correlationerror.md
-      - name: Identity info
-        href: ../../resources/identityinfo.md
   - name: Identity analytics (preview)
     items:
     - name: Group analytics
