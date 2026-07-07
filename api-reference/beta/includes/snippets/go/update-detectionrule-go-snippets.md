@@ -16,14 +16,12 @@ import (
 )
 
 requestBody := graphmodelssecurity.NewDetectionRule()
+status := graphmodels.DISABLED_DETECTIONRULESTATUS 
+requestBody.SetStatus(&status) 
 queryCondition := graphmodelssecurity.NewQueryCondition()
 queryText := "DeviceProcessEvents | where InitiatingProcessFileName in~ ('winword.exe','excel.exe','outlook.exe') | where FileName == 'powershell.exe' | where ProcessCommandLine has '-enc'"
 queryCondition.SetQueryText(&queryText) 
 requestBody.SetQueryCondition(queryCondition)
-additionalData := map[string]interface{}{
-	"status" : "disabled", 
-}
-requestBody.SetAdditionalData(additionalData)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 detectionRules, err := graphClient.Security().Rules().DetectionRules().ByDetectionRuleId("detectionRule-id").Patch(context.Background(), requestBody, nil)

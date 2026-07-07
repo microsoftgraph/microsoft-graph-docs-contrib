@@ -92,6 +92,7 @@ For more information about how errors are returned, see [Error responses and res
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "driveItem_lock"
@@ -106,6 +107,12 @@ Content-Type: application/json
   "durationMinutes": 30
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/driveitem-lock-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -136,6 +143,7 @@ The request body is identical to the acquire case; only the file's current state
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "driveItem_lock_refresh"
@@ -150,6 +158,12 @@ Content-Type: application/json
   "durationMinutes": 10
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/driveitem-lock-refresh-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

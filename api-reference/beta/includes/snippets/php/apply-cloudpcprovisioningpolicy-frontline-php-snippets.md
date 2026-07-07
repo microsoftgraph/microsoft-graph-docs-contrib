@@ -12,11 +12,8 @@ use Microsoft\Graph\Beta\Generated\DeviceManagement\VirtualEndpoint\Provisioning
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ApplyPostRequestBody();
+$requestBody->setIsForceUserLogoffEnabled(false);
 $requestBody->setReservePercentage(80);
-$additionalData = [
-	'isForceUserLogoffEnabled' => false,
-];
-$requestBody->setAdditionalData($additionalData);
 
 $graphServiceClient->deviceManagement()->virtualEndpoint()->provisioningPolicies()->byCloudPcProvisioningPolicyId('cloudPcProvisioningPolicy-id')->apply()->post($requestBody)->wait();
 
