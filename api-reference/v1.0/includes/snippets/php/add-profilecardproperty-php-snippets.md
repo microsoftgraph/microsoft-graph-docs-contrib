@@ -26,10 +26,7 @@ $annotationsArray []= $annotationsProfileCardAnnotation1;
 $requestBody->setAnnotations($annotationsArray);
 
 $requestBody->setDirectoryPropertyName('CustomAttribute1');
-$additionalData = [
-'isVisible' => true,
-];
-$requestBody->setAdditionalData($additionalData);
+$requestBody->setIsVisible(true);
 
 $result = $graphServiceClient->admin()->people()->profileCardProperties()->post($requestBody)->wait();
 

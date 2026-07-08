@@ -9,6 +9,7 @@ use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Graph\Generated\Models\AccessPackageResourceRoleScope;
 use Microsoft\Graph\Generated\Models\AccessPackageResourceRole;
 use Microsoft\Graph\Generated\Models\AccessPackageResource;
+use Microsoft\Graph\Generated\Models\RoleType;
 use Microsoft\Graph\Generated\Models\AccessPackageResourceScope;
 
 
@@ -32,10 +33,7 @@ $additionalData = [
 $roleResource->setAdditionalData($additionalData);
 $role->setResource($roleResource);
 $role->setOriginSystem('AzureResources');
-$additionalData = [
-	'type' => 'eligible',
-];
-$role->setAdditionalData($additionalData);
+$role->setType(new RoleType('eligible'));
 $requestBody->setRole($role);
 $scope = new AccessPackageResourceScope();
 $scope->setId('338613b3-b410-4c6d-b5e9-45590bc8a357');

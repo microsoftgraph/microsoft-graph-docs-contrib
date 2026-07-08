@@ -10,12 +10,12 @@ const options = {
 
 const client = Client.init(options);
 
-const aAMkAGI2THVSAAA= = {
+const distributionList = {
   displayName: 'Updated Project Team'
 };
 
 await client.api('/me/distributionLists/AAMkAGI2THVSAAA=')
 	.version('beta')
-	.update(aAMkAGI2THVSAAA=);
+	.update(distributionList);
 
 ```

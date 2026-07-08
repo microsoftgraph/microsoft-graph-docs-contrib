@@ -704,7 +704,6 @@ Accept: text/vtt
 
 ---
 
-
 #### Response
 
 The response contains the transcript in the body as bytes. The `content-type` header specifies the type of the transcript content. Negative offsets indicate that the transcription began while the conversation was ongoing.

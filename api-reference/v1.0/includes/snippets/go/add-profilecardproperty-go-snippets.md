@@ -40,11 +40,8 @@ annotations := []graphmodels.ProfileCardAnnotationable {
 requestBody.SetAnnotations(annotations)
 directoryPropertyName := "CustomAttribute1"
 requestBody.SetDirectoryPropertyName(&directoryPropertyName) 
-additionalData := map[string]interface{}{
-	isVisible := true
+isVisible := true
 requestBody.SetIsVisible(&isVisible) 
-}
-requestBody.SetAdditionalData(additionalData)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 profileCardProperties, err := graphClient.Admin().People().ProfileCardProperties().Post(context.Background(), requestBody, nil)

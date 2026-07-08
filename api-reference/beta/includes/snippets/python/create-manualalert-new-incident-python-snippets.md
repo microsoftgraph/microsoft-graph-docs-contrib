@@ -6,10 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # Code snippets are only available for the latest version. Current version is 1.x
 from msgraph_beta import GraphServiceClient
-from msgraph_beta.generated.models.security.alert import Alert
+from msgraph_beta.generated.models.security.manual_alert import ManualAlert
 from msgraph_beta.generated.models.alert_severity import AlertSeverity
+from msgraph_beta.generated.models.security.entity_definition_input import EntityDefinitionInput
+from msgraph_beta.generated.models.manual_alert_entity_type import ManualAlertEntityType
+from msgraph_beta.generated.models.entity_definition_input_role import EntityDefinitionInputRole
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
-request_body = Alert(
+request_body = ManualAlert(
 	odata_type = "#microsoft.graph.security.manualAlert",
 	title = "Suspicious login from TOR exit node",
 	description = "User account showed login activity from known TOR exit node. Manual investigation revealed potential account compromise.",
@@ -19,22 +22,20 @@ request_body = Alert(
 	mitre_techniques = [
 		"T1078",
 	],
-	additional_data = {
-			"entity_definitions" : [
-				{
-						"entity_type" : "user",
-						"entity_identifier" : "userPrincipalName",
-						"identifier_value" : "john.doe@contoso.com",
-						"role" : "impacted",
-				},
-				{
-						"entity_type" : "ip",
-						"entity_identifier" : "address",
-						"identifier_value" : "185.220.101.50",
-						"role" : "related",
-				},
-			],
-	}
+	entity_definitions = [
+		EntityDefinitionInput(
+			entity_type = ManualAlertEntityType.User,
+			entity_identifier = "userPrincipalName",
+			identifier_value = "john.doe@contoso.com",
+			role = EntityDefinitionInputRole.Impacted,
+		),
+		EntityDefinitionInput(
+			entity_type = ManualAlertEntityType.Ip,
+			entity_identifier = "address",
+			identifier_value = "185.220.101.50",
+			role = EntityDefinitionInputRole.Related,
+		),
+	],
 )
 
 result = await graph_client.security.alerts_v2.post(request_body)

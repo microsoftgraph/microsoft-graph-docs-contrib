@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let applicationTemplate = await client.api('/applicationTemplates/microsoft.graph.categories')
+let categories = await client.api('/applicationTemplates/microsoft.graph.categories')
 	.version('beta')
 	.header('Accept-Language','cs')
 	.get();

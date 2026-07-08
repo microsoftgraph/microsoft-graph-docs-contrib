@@ -24,6 +24,8 @@ hidden := false
 requestBody.SetHidden(&hidden) 
 indexed := false
 requestBody.SetIndexed(&indexed) 
+isSearchable := false
+requestBody.SetIsSearchable(&isSearchable) 
 name := "Title"
 requestBody.SetName(&name) 
 text := graphmodels.NewTextColumn()
@@ -36,11 +38,6 @@ text.SetLinesForEditing(&linesForEditing)
 maxLength := int32(255)
 text.SetMaxLength(&maxLength) 
 requestBody.SetText(text)
-additionalData := map[string]interface{}{
-	isSearchable := false
-requestBody.SetIsSearchable(&isSearchable) 
-}
-requestBody.SetAdditionalData(additionalData)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 columns, err := graphClient.Storage().FileStorage().Containers().ByFileStorageContainerId("fileStorageContainer-id").Columns().Post(context.Background(), requestBody, nil)

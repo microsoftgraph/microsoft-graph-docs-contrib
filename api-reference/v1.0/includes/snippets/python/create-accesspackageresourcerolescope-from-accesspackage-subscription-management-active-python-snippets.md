@@ -9,6 +9,7 @@ from msgraph import GraphServiceClient
 from msgraph.generated.models.access_package_resource_role_scope import AccessPackageResourceRoleScope
 from msgraph.generated.models.access_package_resource_role import AccessPackageResourceRole
 from msgraph.generated.models.access_package_resource import AccessPackageResource
+from msgraph.generated.models.role_type import RoleType
 from msgraph.generated.models.access_package_resource_scope import AccessPackageResourceScope
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = AccessPackageResourceRoleScope(
@@ -27,9 +28,7 @@ request_body = AccessPackageResourceRoleScope(
 			}
 		),
 		origin_system = "AzureResources",
-		additional_data = {
-				"type" : "active",
-		}
+		type = RoleType.Active,
 	),
 	scope = AccessPackageResourceScope(
 		id = "c66c1e22-1093-46fb-a8a8-c0e334113ca4",

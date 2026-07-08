@@ -75,6 +75,7 @@ The following example releases the lock the calling user currently holds on the 
 ### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "driveItem_releaseLock"
@@ -84,6 +85,12 @@ The following example shows a request.
 ```http
 POST https://graph.microsoft.com/beta/drives/{drive-id}/items/{item-id}/releaseLock
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/driveitem-releaselock-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const addMembers = {
+const distributionList = {
   members: [
     {
       displayName: 'Megan Bowen',
@@ -23,6 +23,6 @@ const addMembers = {
 
 await client.api('/me/distributionLists/AAMkAGI2THVSAAA=/addMembers')
 	.version('beta')
-	.post(addMembers);
+	.post(distributionList);
 
 ```

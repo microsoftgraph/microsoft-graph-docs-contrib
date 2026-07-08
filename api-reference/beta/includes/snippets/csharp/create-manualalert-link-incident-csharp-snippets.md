@@ -8,9 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models.Security;
-using Microsoft.Kiota.Abstractions.Serialization;
 
-var requestBody = new Alert
+var requestBody = new ManualAlert
 {
 	OdataType = "#microsoft.graph.security.manualAlert",
 	Title = "Malicious file detected on device",
@@ -18,45 +17,22 @@ var requestBody = new Alert
 	Category = "Execution",
 	Severity = AlertSeverity.High,
 	RecommendedActions = "Isolate device, remove file, scan for additional IOCs",
-	AdditionalData = new Dictionary<string, object>
+	LinkToIncident = 28282L,
+	EntityDefinitions = new List<EntityDefinitionInput>
 	{
+		new EntityDefinitionInput
 		{
-			"linkToIncident" , 28282
+			EntityType = ManualAlertEntityType.File,
+			EntityIdentifier = "sha256",
+			IdentifierValue = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+			Role = EntityDefinitionInputRole.Related,
 		},
+		new EntityDefinitionInput
 		{
-			"entityDefinitions" , new List<object>
-			{
-				new UntypedObject(new Dictionary<string, UntypedNode>
-				{
-					{
-						"entityType", new UntypedString("file")
-					},
-					{
-						"entityIdentifier", new UntypedString("sha256")
-					},
-					{
-						"identifierValue", new UntypedString("e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855")
-					},
-					{
-						"role", new UntypedString("related")
-					},
-				}),
-				new UntypedObject(new Dictionary<string, UntypedNode>
-				{
-					{
-						"entityType", new UntypedString("device")
-					},
-					{
-						"entityIdentifier", new UntypedString("deviceName")
-					},
-					{
-						"identifierValue", new UntypedString("DESKTOP-VICTIM01")
-					},
-					{
-						"role", new UntypedString("impacted")
-					},
-				}),
-			}
+			EntityType = ManualAlertEntityType.Device,
+			EntityIdentifier = "deviceName",
+			IdentifierValue = "DESKTOP-VICTIM01",
+			Role = EntityDefinitionInputRole.Impacted,
 		},
 	},
 };
