@@ -27,12 +27,7 @@ var requestBody = new ProfileCardProperty
 		},
 	},
 	DirectoryPropertyName = "CustomAttribute1",
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"isVisible" , true
-		},
-	},
+	IsVisible = true,
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

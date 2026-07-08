@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let aAMkAGI2member1 = await client.api('/me/distributionLists/AAMkAGI2THVSAAA=/distributionListMembers/AAMkAGI2member1')
+let distributionListMember = await client.api('/me/distributionLists/AAMkAGI2THVSAAA=/distributionListMembers/AAMkAGI2member1')
 	.version('beta')
 	.get();
 

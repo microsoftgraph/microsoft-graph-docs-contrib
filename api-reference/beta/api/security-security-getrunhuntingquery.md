@@ -87,14 +87,21 @@ The following example specifies a KQL query that:
 - Projects two columns (`Timestamp`, `Title`).
 - Limits the output to two records.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "security_getrunhuntingquery_example1"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/getRunHuntingQuery(query='AlertInfo%20%7C%20project%20Timestamp%2C%20Title%20%7C%20take%202',timespan='P1D')
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/security-getrunhuntingquery-example1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -141,14 +148,21 @@ Content-type: application/json
 
 The following example shows a GET request that targets a specific Log Analytics workspace by passing the optional **workspaceId** parameter.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "security_getrunhuntingquery_example2"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/getRunHuntingQuery(query='AlertInfo%20%7C%20project%20Timestamp%2C%20Title%20%7C%20take%202',timespan='P1D',workspaceId=00000000-0000-0000-0000-000000000001)
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/security-getrunhuntingquery-example2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

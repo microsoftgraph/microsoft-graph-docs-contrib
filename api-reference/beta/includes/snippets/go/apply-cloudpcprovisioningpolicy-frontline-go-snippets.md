@@ -16,13 +16,10 @@ import (
 )
 
 requestBody := graphdevicemanagement.NewApplyPostRequestBody()
+isForceUserLogoffEnabled := false
+requestBody.SetIsForceUserLogoffEnabled(&isForceUserLogoffEnabled) 
 reservePercentage := int32(80)
 requestBody.SetReservePercentage(&reservePercentage) 
-additionalData := map[string]interface{}{
-	isForceUserLogoffEnabled := false
-requestBody.SetIsForceUserLogoffEnabled(&isForceUserLogoffEnabled) 
-}
-requestBody.SetAdditionalData(additionalData)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 graphClient.DeviceManagement().VirtualEndpoint().ProvisioningPolicies().ByCloudPcProvisioningPolicyId("cloudPcProvisioningPolicy-id").Apply().Post(context.Background(), requestBody, nil)

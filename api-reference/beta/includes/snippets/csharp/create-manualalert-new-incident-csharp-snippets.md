@@ -8,9 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models.Security;
-using Microsoft.Kiota.Abstractions.Serialization;
 
-var requestBody = new Alert
+var requestBody = new ManualAlert
 {
 	OdataType = "#microsoft.graph.security.manualAlert",
 	Title = "Suspicious login from TOR exit node",
@@ -22,42 +21,21 @@ var requestBody = new Alert
 	{
 		"T1078",
 	},
-	AdditionalData = new Dictionary<string, object>
+	EntityDefinitions = new List<EntityDefinitionInput>
 	{
+		new EntityDefinitionInput
 		{
-			"entityDefinitions" , new List<object>
-			{
-				new UntypedObject(new Dictionary<string, UntypedNode>
-				{
-					{
-						"entityType", new UntypedString("user")
-					},
-					{
-						"entityIdentifier", new UntypedString("userPrincipalName")
-					},
-					{
-						"identifierValue", new UntypedString("john.doe@contoso.com")
-					},
-					{
-						"role", new UntypedString("impacted")
-					},
-				}),
-				new UntypedObject(new Dictionary<string, UntypedNode>
-				{
-					{
-						"entityType", new UntypedString("ip")
-					},
-					{
-						"entityIdentifier", new UntypedString("address")
-					},
-					{
-						"identifierValue", new UntypedString("185.220.101.50")
-					},
-					{
-						"role", new UntypedString("related")
-					},
-				}),
-			}
+			EntityType = ManualAlertEntityType.User,
+			EntityIdentifier = "userPrincipalName",
+			IdentifierValue = "john.doe@contoso.com",
+			Role = EntityDefinitionInputRole.Impacted,
+		},
+		new EntityDefinitionInput
+		{
+			EntityType = ManualAlertEntityType.Ip,
+			EntityIdentifier = "address",
+			IdentifierValue = "185.220.101.50",
+			Role = EntityDefinitionInputRole.Related,
 		},
 	},
 };

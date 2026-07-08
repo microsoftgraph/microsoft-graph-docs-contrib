@@ -9,12 +9,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 com.microsoft.graph.beta.models.security.DetectionRule detectionRule = new com.microsoft.graph.beta.models.security.DetectionRule();
+detectionRule.setStatus(com.microsoft.graph.beta.models.security.DetectionRuleStatus.Disabled);
 com.microsoft.graph.beta.models.security.QueryCondition queryCondition = new com.microsoft.graph.beta.models.security.QueryCondition();
 queryCondition.setQueryText("DeviceProcessEvents | where InitiatingProcessFileName in~ ('winword.exe','excel.exe','outlook.exe') | where FileName == 'powershell.exe' | where ProcessCommandLine has '-enc'");
 detectionRule.setQueryCondition(queryCondition);
-HashMap<String, Object> additionalData = new HashMap<String, Object>();
-additionalData.put("status", "disabled");
-detectionRule.setAdditionalData(additionalData);
 com.microsoft.graph.models.security.DetectionRule result = graphClient.security().rules().detectionRules().byDetectionRuleId("{detectionRule-id}").patch(detectionRule);
 
 

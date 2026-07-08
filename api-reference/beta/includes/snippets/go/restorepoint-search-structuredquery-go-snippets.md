@@ -18,26 +18,24 @@ import (
 
 requestBody := graphsolutions.NewSearchPostRequestBody()
 artifactQuery := graphmodels.NewArtifactQuery()
-additionalData := map[string]interface{}{
-structuredQueryExpression := graph.New()
-	senders := []string {
-		"abc@contoso.com",
-	}
-	structuredQueryExpression.SetSenders(senders)
-	subjects := []string {
-		"Check email",
-		"Important",
-	}
-	structuredQueryExpression.SetSubjects(subjects)
-	hasAttachment := true
-structuredQueryExpression.SetHasAttachment(&hasAttachment) 
-	items := []string {
-		"email",
-	}
-	structuredQueryExpression.SetItems(items)
-	artifactQuery.SetStructuredQueryExpression(structuredQueryExpression)
+structuredQueryExpression := graphmodels.NewRestoreSearchArtifactQueryExpression()
+senders := []string {
+	"abc@contoso.com",
 }
-artifactQuery.SetAdditionalData(additionalData)
+structuredQueryExpression.SetSenders(senders)
+subjects := []string {
+	"Check email",
+	"Important",
+}
+structuredQueryExpression.SetSubjects(subjects)
+hasAttachment := true
+structuredQueryExpression.SetHasAttachment(&hasAttachment) 
+items := []graphmodels.GranularRestoreItemsable {
+	granularRestoreItems := graphmodels.EMAIL_GRANULARRESTOREITEMS 
+	structuredQueryExpression.SetGranularRestoreItems(&granularRestoreItems)
+}
+structuredQueryExpression.SetItems(items)
+artifactQuery.SetStructuredQueryExpression(structuredQueryExpression)
 requestBody.SetArtifactQuery(artifactQuery)
 protectionUnitIds := []string {
 	"23014d8c-71fe-4d00-a01a-31850bc5b42a",

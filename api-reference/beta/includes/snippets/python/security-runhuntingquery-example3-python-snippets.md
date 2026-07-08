@@ -11,9 +11,7 @@ from msgraph_beta.generated.security.microsoft_graph_security_run_hunting_query.
 request_body = RunHuntingQueryPostRequestBody(
 	query = "DeviceProcessEvents | where InitiatingProcessFileName =~ \"powershell.exe\" | project Timestamp, FileName, InitiatingProcessFileName | order by Timestamp desc | limit 2",
 	timespan = "P1D",
-	additional_data = {
-			"workspace_id" : "00000000-0000-0000-0000-000000000001",
-	}
+	workspace_id = UUID("00000000-0000-0000-0000-000000000001"),
 )
 
 result = await graph_client.security.microsoft_graph_security_run_hunting_query.post(request_body)

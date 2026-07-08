@@ -11,15 +11,10 @@ using Microsoft.Graph.Beta.Models.Security;
 
 var requestBody = new DetectionRule
 {
+	Status = DetectionRuleStatus.Disabled,
 	QueryCondition = new QueryCondition
 	{
 		QueryText = "DeviceProcessEvents | where InitiatingProcessFileName in~ ('winword.exe','excel.exe','outlook.exe') | where FileName == 'powershell.exe' | where ProcessCommandLine has '-enc'",
-	},
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"status" , "disabled"
-		},
 	},
 };
 

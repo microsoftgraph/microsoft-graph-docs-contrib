@@ -9,40 +9,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 // Dependencies
 using Microsoft.Graph.Beta.Solutions.BackupRestore.RestorePoints.Search;
 using Microsoft.Graph.Beta.Models;
-using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new SearchPostRequestBody
 {
 	ArtifactQuery = new ArtifactQuery
 	{
-		AdditionalData = new Dictionary<string, object>
+		StructuredQueryExpression = new RestoreSearchArtifactQueryExpression
 		{
+			Senders = new List<string>
 			{
-				"structuredQueryExpression" , new UntypedObject(new Dictionary<string, UntypedNode>
-				{
-					{
-						"senders", new UntypedArray(new List<UntypedNode>
-						{
-							new UntypedString("abc@contoso.com"),
-						})
-					},
-					{
-						"subjects", new UntypedArray(new List<UntypedNode>
-						{
-							new UntypedString("Check email"),
-							new UntypedString("Important"),
-						})
-					},
-					{
-						"hasAttachment", new UntypedBoolean(true)
-					},
-					{
-						"items", new UntypedArray(new List<UntypedNode>
-						{
-							new UntypedString("email"),
-						})
-					},
-				})
+				"abc@contoso.com",
+			},
+			Subjects = new List<string>
+			{
+				"Check email",
+				"Important",
+			},
+			HasAttachment = true,
+			Items = new List<GranularRestoreItems?>
+			{
+				GranularRestoreItems.Email,
 			},
 		},
 	},

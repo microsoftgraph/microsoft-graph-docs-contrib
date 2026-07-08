@@ -43,10 +43,8 @@ resource.SetAdditionalData(additionalData)
 role.SetResource(resource)
 originSystem := "AzureResources"
 role.SetOriginSystem(&originSystem) 
-additionalData := map[string]interface{}{
-	"type" : "eligible", 
-}
-role.SetAdditionalData(additionalData)
+type := graphmodels.ELIGIBLE_ROLETYPE 
+role.SetType(&type) 
 requestBody.SetRole(role)
 scope := graphmodels.NewAccessPackageResourceScope()
 id := "338613b3-b410-4c6d-b5e9-45590bc8a357"

@@ -8,25 +8,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models.Security;
-using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new DetectionRule
 {
 	OdataType = "#microsoft.graph.security.detectionRule",
 	Id = "office-encoded-powershell",
 	DisplayName = "Suspicious encoded PowerShell from Office",
+	Description = "Detects encoded PowerShell processes launched by Office applications, a common phishing payload pattern.",
+	Status = DetectionRuleStatus.Enabled,
 	QueryCondition = new QueryCondition
 	{
 		QueryText = "DeviceProcessEvents | where InitiatingProcessFileName in~ ('winword.exe','excel.exe','outlook.exe') | where FileName == 'powershell.exe' | where ProcessCommandLine has '-enc'",
 	},
 	Schedule = new RuleSchedule
 	{
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"frequency" , "PT1H"
-			},
-		},
+		Frequency = TimeSpan.Parse("PT1H"),
 	},
 	DetectionAction = new DetectionAction
 	{
@@ -36,93 +32,49 @@ var requestBody = new DetectionRule
 			Description = "An Office app launched an encoded PowerShell command, which may indicate phishing-driven code execution.",
 			Severity = AlertSeverity.High,
 			RecommendedActions = "Investigate the parent Office document, isolate the device, and review the user's recent email activity.",
-			AdditionalData = new Dictionary<string, object>
+			EntityMappings = new EntityMappingConfiguration
 			{
+				Accounts = new List<AccountEntityMapping>
 				{
-					"entityMappings" , new UntypedObject(new Dictionary<string, UntypedNode>
+					new AccountEntityMapping
 					{
-						{
-							"accounts", new UntypedArray(new List<UntypedNode>
-							{
-								new UntypedObject(new Dictionary<string, UntypedNode>
-								{
-									{
-										"nameColumn", new UntypedString("AccountName")
-									},
-									{
-										"ntDomainColumn", new UntypedString("AccountDomain")
-									},
-									{
-										"sidColumn", new UntypedString("AccountSid")
-									},
-								}),
-							})
-						},
-						{
-							"hosts", new UntypedArray(new List<UntypedNode>
-							{
-								new UntypedObject(new Dictionary<string, UntypedNode>
-								{
-									{
-										"deviceIdColumn", new UntypedString("DeviceId")
-									},
-									{
-										"nameColumn", new UntypedString("DeviceName")
-									},
-								}),
-							})
-						},
-						{
-							"files", new UntypedArray(new List<UntypedNode>
-							{
-								new UntypedObject(new Dictionary<string, UntypedNode>
-								{
-									{
-										"nameColumn", new UntypedString("FileName")
-									},
-									{
-										"sha1Column", new UntypedString("SHA1")
-									},
-									{
-										"sha256Column", new UntypedString("SHA256")
-									},
-								}),
-							})
-						},
-					})
+						NameColumn = "AccountName",
+						NtDomainColumn = "AccountDomain",
+						SidColumn = "AccountSid",
+					},
 				},
+				Hosts = new List<HostEntityMapping>
 				{
-					"tactics" , new List<object>
+					new HostEntityMapping
 					{
-						new UntypedObject(new Dictionary<string, UntypedNode>
-						{
-							{
-								"tactic", new UntypedString("Execution")
-							},
-							{
-								"techniques", new UntypedArray(new List<UntypedNode>
-								{
-									new UntypedObject(new Dictionary<string, UntypedNode>
-									{
-										{
-											"technique", new UntypedString("T1059.001")
-										},
-									}),
-								})
-							},
-						}),
-					}
+						DeviceIdColumn = "DeviceId",
+						NameColumn = "DeviceName",
+					},
+				},
+				Files = new List<FileEntityMapping>
+				{
+					new FileEntityMapping
+					{
+						NameColumn = "FileName",
+						Sha1Column = "SHA1",
+						Sha256Column = "SHA256",
+					},
 				},
 			},
-		},
-	},
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"description" , "Detects encoded PowerShell processes launched by Office applications, a common phishing payload pattern."
-		},
-		{
-			"status" , "enabled"
+			Tactics = new List<MitreTactic>
+			{
+				new MitreTactic
+				{
+					Tactic = "Execution",
+					Techniques = new List<MitreTechnique>
+					{
+						new MitreTechnique
+						{
+							Technique = "T1059.001",
+						},
+					},
+				},
+			},
 		},
 	},
 };

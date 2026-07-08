@@ -10,6 +10,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // Dependencies
 import (
 	  "context"
+	  "github.com/google/uuid"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
 	  graphsecurity "github.com/microsoftgraph/msgraph-beta-sdk-go/security"
 	  //other-imports
@@ -20,10 +21,8 @@ query := "DeviceProcessEvents | where InitiatingProcessFileName =~ \"powershell.
 requestBody.SetQuery(&query) 
 timespan := "P1D"
 requestBody.SetTimespan(&timespan) 
-additionalData := map[string]interface{}{
-	"workspaceId" : "00000000-0000-0000-0000-000000000001", 
-}
-requestBody.SetAdditionalData(additionalData)
+workspaceId := uuid.MustParse("00000000-0000-0000-0000-000000000001")
+requestBody.SetWorkspaceId(&workspaceId) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 microsoftGraphSecurityRunHuntingQuery, err := graphClient.Security().MicrosoftGraphSecurityRunHuntingQuery().Post(context.Background(), requestBody, nil)

@@ -14,10 +14,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 $requestBody = new RunHuntingQueryPostRequestBody();
 $requestBody->setQuery('DeviceProcessEvents | where InitiatingProcessFileName =~ \"powershell.exe\" | project Timestamp, FileName, InitiatingProcessFileName | order by Timestamp desc | limit 2');
 $requestBody->setTimespan('P1D');
-$additionalData = [
-	'workspaceId' => '00000000-0000-0000-0000-000000000001',
-];
-$requestBody->setAdditionalData($additionalData);
+$requestBody->setWorkspaceId('00000000-0000-0000-0000-000000000001');
 
 $result = $graphServiceClient->security()->microsoftGraphSecurityRunHuntingQuery()->post($requestBody)->wait();
 

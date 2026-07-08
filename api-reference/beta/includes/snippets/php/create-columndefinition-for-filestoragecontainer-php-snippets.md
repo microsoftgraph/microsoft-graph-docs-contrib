@@ -17,6 +17,7 @@ $requestBody->setDescription('test');
 $requestBody->setEnforceUniqueValues(false);
 $requestBody->setHidden(false);
 $requestBody->setIndexed(false);
+$requestBody->setIsSearchable(false);
 $requestBody->setName('Title');
 $text = new TextColumn();
 $text->setAllowMultipleLines(false);
@@ -24,10 +25,6 @@ $text->setAppendChangesToExistingText(false);
 $text->setLinesForEditing(0);
 $text->setMaxLength(255);
 $requestBody->setText($text);
-$additionalData = [
-	'isSearchable' => false,
-];
-$requestBody->setAdditionalData($additionalData);
 
 $result = $graphServiceClient->storage()->fileStorage()->containers()->byFileStorageContainerId('fileStorageContainer-id')->columns()->post($requestBody)->wait();
 
