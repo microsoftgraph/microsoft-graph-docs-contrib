@@ -15,7 +15,12 @@ Namespace: microsoft.graph
 
 Create a new [group setting](../resources/groupsetting.md) based on the templates available in [groupSettingTemplates](../resources/groupsettingtemplate.md). These settings can be at the tenant-level or at the group level.
 
-Group settings apply to only Microsoft 365 groups. The template named `Group.Unified` can be used to configure tenant-wide Microsoft 365 group settings, while the template named `Group.Unified.Guest` can be used to configure group-specific settings.
+The following group setting templates are available for groups:
+
+- `Group.Unified`: Configure settings for all or specific Microsoft 365 groups.
+- `Group.Unified.Guest`: Configure guest access settings for a specific Microsoft 365 group.
+- `Group.Security`: Configure settings for all or specific cloud security groups, such as enabling MIP sensitivity labels. Requires a Microsoft Entra ID P1 license.
+- `Group.Security.Policies`: Configure settings for a specific cloud security group. Requires a Microsoft Entra ID P1 license.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -266,6 +271,184 @@ Content-type: application/json
     "id": "a06fa228-3042-4662-bd09-33e298da1afe",
     "displayName": null,
     "templateId": "08d542b9-071f-4e16-94b0-74abb372e3d9",
+    "values": [
+        {
+            "name": "AllowToAddGuests",
+            "value": "false"
+        }
+    ]
+}
+```
+
+### Example 3: Enable sensitivity labels for all cloud security groups in the tenant
+
+Only the [groupSettingTemplates](../resources/groupsettingtemplate.md) object named `Group.Security` can be applied to all cloud security groups at the tenant-level.
+
+> [!NOTE]
+> This feature requires a Microsoft Entra ID P1 license.
+
+#### Request
+
+# [HTTP](#tab/http)
+
+<!-- {
+  "blockType": "request",
+  "name": "create_groupsetting_security_miplabels"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/groupSettings
+Content-type: application/json
+
+{
+    "templateId": "d209f6fa-3839-4d70-b83f-60b1c64d0e8f",
+    "values": [
+        {
+            "name": "EnableMIPLabels",
+            "value": "true"
+        }
+    ]
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.groupSetting"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groupSettings/$entity",
+    "id": "3e4a9b9d-1234-5678-abcd-1234567890ab",
+    "displayName": null,
+    "templateId": "d209f6fa-3839-4d70-b83f-60b1c64d0e8f",
+    "values": [
+        {
+            "name": "EnableMIPLabels",
+            "value": "true"
+        }
+    ]
+}
+```
+
+### Example 4: Block guests for a specific cloud security group
+
+Only the [groupSettingTemplates](../resources/groupsettingtemplate.md) object named `Group.Security.Policies` can be applied to specific cloud security groups.
+
+> [!NOTE]
+> This feature requires a Microsoft Entra ID P1 license.
+
+#### Request
+
+# [HTTP](#tab/http)
+
+<!-- {
+  "blockType": "request",
+  "name": "create_groupsetting_security_policies"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/groups/{securityGroupId}/settings
+Content-type: application/json
+
+{
+    "templateId": "7e0abea2-5c20-405f-9658-bfc9a523fd49",
+    "values": [
+        {
+            "name": "AllowToAddGuests",
+            "value": "false"
+        }
+    ]
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.groupSetting"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groupSettings/$entity",
+    "id": "fa6df613-abcd-1234-add2-1234567890ab",
+    "displayName": null,
+    "templateId": "7e0abea2-5c20-405f-9658-bfc9a523fd49",
     "values": [
         {
             "name": "AllowToAddGuests",

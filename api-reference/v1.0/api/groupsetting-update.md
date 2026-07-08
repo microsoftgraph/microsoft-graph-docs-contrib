@@ -210,6 +210,42 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
+Use the `Group.Security` template (`d209f6fa-3839-4d70-b83f-60b1c64d0e8f`) to enable MIP sensitivity labels for all cloud security groups and keep the preexisting setting for `AllowToAddGuests`. You must have already [created a **groupSetting** object](../api/group-post-settings.md) from this template; replace the identifier in the URL with the ID of the existing **groupSetting** object.
+> [!NOTE]
+> This feature requires a Microsoft Entra ID P1 license.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "update_groupsetting_security_miplabels"
+}-->
+
+```msgraph-interactive
+PATCH https://graph.microsoft.com/v1.0/groupSettings/{groupSettingId}
+Content-type: application/json
+
+{
+    "values": [
+        {
+            "name": "EnableMIPLabels",
+            "value": "true"
+        }
+    ]
+}
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": false
+} -->
+
+```http
+HTTP/1.1 204 No Content
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
