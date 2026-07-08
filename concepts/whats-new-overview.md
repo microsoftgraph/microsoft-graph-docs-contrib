@@ -202,6 +202,10 @@ Personal distribution lists enable users to group email recipients together and 
 
 Added the [identityAnalyticsRoot](/graph/api/resources/identityanalyticsroot?view=graph-rest-beta&preserve-view=true) resource type to provide point-in-time identity analytics for your tenant, starting with analytics about your groups such as their membership, ownership, and type.
 
+### People and workplace intelligence | Places
+
+Manage the service plans associated with workspace desks and use a consistent **placeId** identifier across [place](/graph/api/resources/place?view=graph-rest-beta&preserve-view=true) types.
+
 ### Security | Advanced hunting
 
 - Added the [getRunHuntingQuery](/graph/api/security-security-getrunhuntingquery?view=graph-rest-beta&preserve-view=true) function as a GET-based companion to [runHuntingQuery](/graph/api/security-security-runhuntingquery?view=graph-rest-beta&preserve-view=true) for running advanced hunting queries against Microsoft Defender XDR data.

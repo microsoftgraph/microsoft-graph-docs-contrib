@@ -3,6 +3,56 @@
     {
       "ChangeList": [
         {
+          "Id": "ed248348-7cc3-45b4-97ed-08e980401e25",
+          "ApiChange": "Resource",
+          "ChangedApiName": "placeServicePlanInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [placeServicePlanInfo](https://learn.microsoft.com/en-us/graph/api/resources/placeserviceplaninfo?view=graph-rest-beta) resource.",
+          "Target": "placeServicePlanInfo"
+        },
+        {
+          "Id": "ed248348-7cc3-45b4-97ed-08e980401e25",
+          "ApiChange": "Property",
+          "ChangedApiName": "servicePlans",
+          "ChangeType": "Addition",
+          "Description": "Added the **servicePlans** property to the [desk](https://learn.microsoft.com/en-us/graph/api/resources/desk?view=graph-rest-beta) resource.",
+          "Target": "desk"
+        },
+        {
+          "Id": "ed248348-7cc3-45b4-97ed-08e980401e25",
+          "ApiChange": "Property",
+          "ChangedApiName": "placeId",
+          "ChangeType": "Addition",
+          "Description": "Added the **placeId** property to the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta) resource.",
+          "Target": "place"
+        },
+        {
+          "Id": "ed248348-7cc3-45b4-97ed-08e980401e25",
+          "ApiChange": "Property",
+          "ChangedApiName": "placeId",
+          "ChangeType": "Change",
+          "Description": "Updated the **placeId** property on the [room](https://learn.microsoft.com/en-us/graph/api/resources/room?view=graph-rest-beta) resource to be inherited from the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta) base resource.",
+          "Target": "room"
+        },
+        {
+          "Id": "ed248348-7cc3-45b4-97ed-08e980401e25",
+          "ApiChange": "Property",
+          "ChangedApiName": "placeId",
+          "ChangeType": "Change",
+          "Description": "Updated the **placeId** property on the [workspace](https://learn.microsoft.com/en-us/graph/api/resources/workspace?view=graph-rest-beta) resource to be inherited from the [place](https://learn.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta) base resource.",
+          "Target": "workspace"
+        }
+      ],
+      "Id": "ed248348-7cc3-45b4-97ed-08e980401e25",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-07-08T06:18:39.7163201Z",
+      "WorkloadArea": "Calendar",
+      "SubArea": "Places"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "32395157-c113-44fb-8f3c-80f8da0f2c3f",
           "ApiChange": "Enumeration",
           "ChangedApiName": "placeFeatureEnablement",
