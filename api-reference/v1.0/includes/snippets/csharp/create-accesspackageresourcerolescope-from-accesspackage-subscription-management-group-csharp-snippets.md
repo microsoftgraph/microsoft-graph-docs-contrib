@@ -32,12 +32,7 @@ var requestBody = new AccessPackageResourceRoleScope
 			},
 		},
 		OriginSystem = "AzureResources",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"type" , "eligible"
-			},
-		},
+		Type = RoleType.Eligible,
 	},
 	Scope = new AccessPackageResourceScope
 	{

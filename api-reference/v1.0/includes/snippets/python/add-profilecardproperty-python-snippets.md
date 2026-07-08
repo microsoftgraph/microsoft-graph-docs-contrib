@@ -23,9 +23,7 @@ request_body = ProfileCardProperty(
 		),
 	],
 	directory_property_name = "CustomAttribute1",
-	additional_data = {
-			"is_visible" : True,
-	}
+	is_visible = True,
 )
 
 result = await graph_client.admin.people.profile_card_properties.post(request_body)

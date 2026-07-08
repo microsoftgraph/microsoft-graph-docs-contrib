@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const distributionLists = {
+const distributionList = {
   displayName: 'Project Team',
   members: [
     {
@@ -28,6 +28,6 @@ const distributionLists = {
 
 await client.api('/me/distributionLists')
 	.version('beta')
-	.post(distributionLists);
+	.post(distributionList);
 
 ```

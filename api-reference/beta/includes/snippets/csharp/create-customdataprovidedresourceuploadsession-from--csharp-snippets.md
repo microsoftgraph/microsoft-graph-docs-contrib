@@ -8,22 +8,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models;
+using Microsoft.Graph.Beta.Models.CustomDataProvidedResourcePayloads;
 
-var requestBody = new CustomDataProvidedResourceUploadSession
+var requestBody = new CustomDataProvidedResourceAccessReviewUploadSession
 {
 	OdataType = "#microsoft.graph.customDataProvidedResourceAccessReviewUploadSession",
-	Data = new CustomExtensionData
+	Data = new AccessReviewContextData
 	{
 		OdataType = "#microsoft.graph.customDataProvidedResourcePayloads.accessReviewContextData",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"reviewDefinitionId" , "9e4b1c6f-2a3d-4f8e-9b7a-5c1e2d3f4a6b"
-			},
-			{
-				"reviewInstanceId" , "15eeb4df-8a4d-4f8e-9b7a-6b3e1c7f5a9d"
-			},
-		},
+		ReviewDefinitionId = "9e4b1c6f-2a3d-4f8e-9b7a-5c1e2d3f4a6b",
+		ReviewInstanceId = "15eeb4df-8a4d-4f8e-9b7a-6b3e1c7f5a9d",
 	},
 };
 

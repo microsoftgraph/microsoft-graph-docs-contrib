@@ -15,6 +15,7 @@ var requestBody = new ColumnDefinition
 	EnforceUniqueValues = false,
 	Hidden = false,
 	Indexed = false,
+	IsSearchable = false,
 	Name = "Title",
 	Text = new TextColumn
 	{
@@ -22,12 +23,6 @@ var requestBody = new ColumnDefinition
 		AppendChangesToExistingText = false,
 		LinesForEditing = 0,
 		MaxLength = 255,
-	},
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"isSearchable" , false
-		},
 	},
 };
 

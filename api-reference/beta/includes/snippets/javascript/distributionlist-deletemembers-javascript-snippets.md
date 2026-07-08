@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const deleteMembers = {
+const distributionList = {
   members: [
     {
       key: 'MeganB@contoso.com',
@@ -22,6 +22,6 @@ const deleteMembers = {
 
 await client.api('/me/distributionLists/AAMkAGI2THVSAAA=/deleteMembers')
 	.version('beta')
-	.post(deleteMembers);
+	.post(distributionList);
 
 ```
