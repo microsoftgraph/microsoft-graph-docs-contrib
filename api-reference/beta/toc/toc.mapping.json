@@ -336,6 +336,7 @@
           "complexTypes": [
             "mailboxDetails",
             "placeMode",
+            "placeServicePlanInfo",
             "assignedPlaceMode",
             "dropInPlaceMode",
             "reservablePlaceMode",

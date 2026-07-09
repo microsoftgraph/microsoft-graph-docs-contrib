@@ -38,13 +38,14 @@ Base type of [building](../resources/building.md), [desk](../resources/desk.md),
 |Property |Type |Description |
 |:--|:--|:--|
 |address |[physicalAddress](./physicaladdress.md) |The physical address of the **place**, including the street, city, state, country or region, and postal code. |
-|label |String |User-defined description of the **place**.|
 |displayName |String |The name that is associated with the **place**. |
 |geoCoordinates|[outlookGeoCoordinates](./outlookgeocoordinates.md)|Specifies the **place** location in latitude, longitude, and (optionally) altitude coordinates.|
 |id |String |The unique identifier for the **place**. Read-only. This identifier isn't immutable and can change if the mailbox or tenant configuration changes. |
 |isWheelChairAccessible |Boolean |Indicates whether the **place** is wheelchair accessible. |
+|label |String |User-defined description of the **place**.|
 |parentId |String |The ID of a parent **place**. |
 |phone |String |The phone number of the **place**. |
+|placeId |String |An alternative immutable unique identifier of the **place**. Read-only. |
 |tags |String collection |Custom tags that are associated with the **place** for categorization or filtering. |
 
 ## Relationships
@@ -75,6 +76,7 @@ The following JSON representation shows the resource type.
   "label": "String",
   "parentId": "String",
   "phone": "String",
+  "placeId": "String (alternative identifier)",
   "tags": ["String"]
 }
 ```

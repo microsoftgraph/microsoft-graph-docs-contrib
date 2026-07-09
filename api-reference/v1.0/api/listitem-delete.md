@@ -45,6 +45,7 @@ Don't supply a request body with this method.
 
 ## Example
 
+### Request
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "delete-item-site", "scopes": "files.readwrite sites.readwrite.all" } -->
@@ -83,7 +84,7 @@ DELETE https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{i
 
 ---
 
-## Response
+### Response
 
 If successful, this call returns a `204 No Content` response to indicate that resource was deleted and there was nothing to return.
 
