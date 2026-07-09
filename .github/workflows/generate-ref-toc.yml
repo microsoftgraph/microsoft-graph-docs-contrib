@@ -64,17 +64,17 @@ jobs:
     - name: Get token
       id: get_token
       if: ${{ inputs.pull_request }}
-      uses: microsoftgraph/get-app-token@v1.0.4
+      uses: actions/create-github-app-token@v3
       continue-on-error: true
       with:
-        application-id: ${{ secrets.APPLICATION_ID }}
-        application-private-key: ${{ secrets.APPLICATION_PRIVATE_KEY }}
+        client-id: ${{ secrets.APPLICATION_ID }}
+        private-key: ${{ secrets.APPLICATION_PRIVATE_KEY }}
     - name: Commit updates and open pull request
       id: commit-if-needed
       working-directory: ./docs
       shell: pwsh
       env:
-        GH_TOKEN: ${{ steps.get_token.outputs.app-token }}
+        GH_TOKEN: ${{ steps.get_token.outputs.token }}
         PULL_REQUEST: ${{ inputs.pull_request }}
         V1_OUTCOME: ${{ steps.v1_gen.outcome }}
         BETA_OUTCOME: ${{ steps.beta_gen.outcome }}
