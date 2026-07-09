@@ -6,7 +6,7 @@ ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: medium
 ms.subservice: "entra-directory-management"
 doc_type: apiPageType
-ms.date: 04/04/2024
+ms.date: 06/05/2026
 ---
 
 # Update directorySetting
@@ -119,6 +119,41 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
+### Response
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+## Example 2: Enable sensitivity labels for all cloud security groups in the tenant
+
+Use the `Group.Security` template (`d209f6fa-3839-4d70-b83f-60b1c64d0e8f`) to enable MIP sensitivity labels for all cloud security groups and keep the preexisting setting for `AllowToAddGuests`. You must have already [created a **directorySetting** object](../api/group-post-settings.md) from this template; replace the identifier in the URL with the ID of the existing **directorySetting** object.
+
+> [!NOTE]
+> This feature requires a Microsoft Entra ID P1 license.
+
+### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "update_directorysetting_security_miplabels"
+}-->
+```msgraph-interactive
+PATCH https://graph.microsoft.com/beta/settings/{directorySettingId}
+Content-type: application/json
+
+{
+    "values": [
+        {
+            "name": "EnableMIPLabels",
+            "value": "true"
+        }
+    ]
+}
+```
 
 ### Response
 <!-- {
