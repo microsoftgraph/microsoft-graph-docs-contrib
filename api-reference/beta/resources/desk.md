@@ -37,6 +37,8 @@ For the list of supported methods, see [place](./place.md).
 |mode |[placeMode](./placemode.md) |The mode of the desk. The supported modes are:<ul><li>[assignedPlaceMode](./assignedplacemode.md) - Desks that are assigned to a user.</li><li>[reservablePlaceMode](./reservableplacemode.md) - Desks that can be booked in advance using desk reservation tools.</li><li>[dropInPlaceMode](./dropinplacemode.md) - First come, first served desks. When you plug into a peripheral on one of these desks, the desk is booked for you, assuming the peripheral is associated with the desk in the Microsoft Teams Rooms pro management portal.</li><li>[unavailablePlaceMode](./unavailableplacemode.md) - Desks that are taken down for maintenance or marked as not reservable.</li></ul> |
 |parentId|String|The ID of a parent [section](./section.md). Inherited from [place](./place.md).|
 |phone|String|The phone number of the **desk**. Inherited from [place](./place.md).|
+|placeId|String|An alternative immutable unique identifier of the **desk**. Read-only. Inherited from [place](./place.md).|
+|servicePlans|[placeServicePlanInfo](./placeserviceplaninfo.md) collection|Service plans associated with the **desk**.|
 |tags|String collection|Custom tags that are associated with the **desk** for categorization or filtering. Inherited from [place](./place.md).|
 
 ## Relationships
@@ -69,6 +71,8 @@ The following JSON representation shows the resource type.
   "mode": {"@odata.type": "microsoft.graph.placeMode"},
   "parentId": "String",
   "phone": "String",
+  "placeId": "String (alternative identifier)",
+  "servicePlans": [{"@odata.type": "microsoft.graph.placeServicePlanInfo"}],
   "tags": ["String"]
 }
 ```

@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "1322d67b-062b-4bf1-94ff-e352030120aa",
+          "ApiChange": "Property",
+          "ChangedApiName": "assignedLabels",
+          "ChangeType": "Change",
+          "Description": "Updated the **assignedLabels** property on the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource to support assigning sensitivity labels to cloud security groups in addition to Microsoft 365 groups. For cloud security groups, this property is immutable once set. Requires a Microsoft Entra ID P1 license.",
+          "Target": "group"
+        },
+        {
+          "Id": "1322d67b-062b-4bf1-94ff-e352030120aa",
+          "ApiChange": "Resource",
+          "ChangedApiName": "groupSettingTemplate",
+          "ChangeType": "Change",
+          "Description": "Added the `Group.Security` and `Group.Security.Policies` setting templates to the [groupSettingTemplate](https://learn.microsoft.com/en-us/graph/api/resources/groupsettingtemplate?view=graph-rest-1.0) resource. Use these templates to configure tenant-wide or per-object settings for cloud security groups, including enabling Microsoft Information Protection (MIP) sensitivity labels (**EnableMIPLabels**) and controlling guest access (**AllowToAddGuests**). Requires a Microsoft Entra ID P1 license.",
+          "Target": "groupSettingTemplate"
+        },
+        {
+          "Id": "1322d67b-062b-4bf1-94ff-e352030120aa",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Group.ManageProtection.All",
+          "ChangeType": "Addition",
+          "Description": "Added the *Group.ManageProtection.All* delegated permission as the least privilege permission for updating the **assignedLabels** property on the [group](https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource.",
+          "Target": "group"
+        }
+      ],
+      "Id": "1322d67b-062b-4bf1-94ff-e352030120aa",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-07-08T00:00:00.0000000Z",
+      "WorkloadArea": "Groups",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
           "ApiChange": "Permission",
           "ChangedApiName": "User.ReadUpdate.All",

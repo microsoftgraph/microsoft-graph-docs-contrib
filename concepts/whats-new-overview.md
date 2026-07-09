@@ -20,6 +20,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 
 ## July 2026: New and generally available
 
+### Groups
+
+- Made the following changes to group sensitivity labels:
+    - Added support for assigning sensitivity labels to cloud security groups via the **assignedLabels** property on the [group](/graph/api/resources/group) resource. For more information, see [Sensitivity labels for Microsoft 365 groups and cloud security groups](/entra/identity/users/groups-sensitivity-labels).
+    - Added the `Group.ManageProtection.All` delegated permission as the least privilege permission for updating the **assignedLabels** property on the [group](/graph/api/resources/group) resource. App-only scenarios aren't supported.
+
 ### Users
 
 - Added the `User.Create` permission as the least privileged permission to [create a user](/graph/api/user-post-users).
@@ -195,6 +201,10 @@ Personal distribution lists enable users to group email recipients together and 
 ### Reports | Identity and access reports
 
 Added the [identityAnalyticsRoot](/graph/api/resources/identityanalyticsroot?view=graph-rest-beta&preserve-view=true) resource type to provide point-in-time identity analytics for your tenant, starting with analytics about your groups such as their membership, ownership, and type.
+
+### People and workplace intelligence | Places
+
+Manage the service plans associated with workspace desks and use a consistent **placeId** identifier across [place](/graph/api/resources/place?view=graph-rest-beta&preserve-view=true) types.
 
 ### Security | Advanced hunting
 
