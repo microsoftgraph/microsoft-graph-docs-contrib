@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "bc5518cc-5349-4f8f-8743-40f8fc7812fd",
+          "ApiChange": "Method",
+          "ChangedApiName": "getByUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [getByUser](https://learn.microsoft.com/en-us/graph/api/filestoragecontainer-getbyuser?view=graph-rest-beta) method to the [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainer"
+        }
+      ],
+      "Id": "bc5518cc-5349-4f8f-8743-40f8fc7812fd",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-07-09T09:42:10.9016484Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "837003f5-7ffd-479a-b03f-cc82c35c4d8f",
           "ApiChange": "Method",
           "ChangedApiName": "lock",
