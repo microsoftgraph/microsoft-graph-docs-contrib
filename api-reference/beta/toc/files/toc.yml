@@ -172,6 +172,8 @@ items:
     href: ../../api/filestoragecontainer-update.md
   - name: Delete
     href: ../../api/filestorage-delete-containers.md
+  - name: getByUser
+    href: ../../api/filestoragecontainer-getbyuser.md
   - name: Activate
     href: ../../api/filestoragecontainer-activate.md
   - name: Restore deleted
