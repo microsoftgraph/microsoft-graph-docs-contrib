@@ -191,13 +191,15 @@ Added the **callerIdNumber** property to the [voiceAuthenticationMethodConfigura
 
 Use the [user configuration API in Microsoft Graph](/graph/user-configuration-concept-overview) to build solutions that store and retrieve per-folder configuration data alongside Exchange Online mailbox content.
 
-Introduced programmatic management of personal distribution lists in user mailboxes through the [distributionList](/graph/api/resources/distributionlist?view=graph-rest-beta&preserve-view=true) and [distributionListMember](/graph/api/resources/distributionlistmember?view=graph-rest-beta&preserve-view=true) resource types. You can now:
-- Create, read, update, and delete distribution lists in a user's mailbox
-- Add and remove members from distribution lists
-- Retrieve expanded member information with resolved contact details and recipient types
-- List all distribution lists owned by a user
+### Search
 
-Personal distribution lists enable users to group email recipients together and send messages to all members at once without entering each address individually.
+- Added the **informationProtectionLabel** property to the [externalItem](/graph/api/resources/externalconnectors-externalitem?view=graph-rest-beta&preserve-view=true) resource to specify the Microsoft Purview sensitivity label associated with an external item.
+- Introduced programmatic management of personal distribution lists in user mailboxes through the [distributionList](/graph/api/resources/distributionlist?view=graph-rest-beta&preserve-view=true) and [distributionListMember](/graph/api/resources/distributionlistmember?view=graph-rest-beta&preserve-view=true) resource types. You can now:
+  - Create, read, update, and delete distribution lists in a user's mailbox
+  - Add and remove members from distribution lists
+  - Retrieve expanded member information with resolved contact details and recipient types
+  - List all distribution lists owned by a user
+- Personal distribution lists enable users to group email recipients together and send messages to all members at once without entering each address individually.
 
 ### Reports | Identity and access reports
 
