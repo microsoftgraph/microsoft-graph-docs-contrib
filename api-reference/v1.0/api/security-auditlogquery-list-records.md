@@ -14,8 +14,8 @@ Namespace: microsoft.graph.security
 
 Get a list of the [auditLogRecord](../resources/security-auditlogrecord.md) objects and their properties.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
