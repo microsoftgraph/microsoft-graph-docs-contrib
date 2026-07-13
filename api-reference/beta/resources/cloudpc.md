@@ -67,6 +67,7 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |id|String|The unique identifier for the Cloud PC. Read-only.|
 |imageDisplayName|String|Name of the OS image that's on the Cloud PC.|
 |lastLoginResult|[cloudPcLoginResult](../resources/cloudpcloginresult.md)|The last login result of the Cloud PC. For example, `{ "time": "2014-01-01T00:00:00Z"}`.|
+|lastLogoffDateTime|DateTimeOffset|The date and time when the user last logged off from the Cloud PC session. Returns `null` if the user has never established a session or if a session is currently active. The timestamp is shown in ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Returned only when explicitly selected with `$select`.|
 |lastModifiedDateTime|DateTimeOffset|The last modified date and time of the Cloud PC. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014, is `2014-01-01T00:00:00Z`.|
 |lastRemoteActionResult|[cloudPcRemoteActionResult](../resources/cloudpcremoteactionresult.md)|The last remote action result of the enterprise Cloud PCs. The supported remote actions are: `Reboot`, `Rename`, `Reprovision`, `Restore`, `Troubleshoot`.|
 |managedDeviceId|String|The Intune device ID of the Cloud PC.|
@@ -180,7 +181,8 @@ The following JSON representation shows the resource type.
   "@odata.type": "#microsoft.graph.cloudPC",
   "aadDeviceId": "String",
   "allotmentDisplayName": "String",
-  "connectivityResult": "String",
+  "connectivityResult": {"@odata.type": "microsoft.graph.cloudPcConnectivityResult"},
+  "connectionSetting": {"@odata.type": "microsoft.graph.cloudPcConnectionSetting"},
   "connectionSettings": {"@odata.type": "microsoft.graph.cloudPcConnectionSettings"},
   "deviceRegionName": "String",
   "disasterRecoveryCapability": {"@odata.type": "microsoft.graph.cloudPcDisasterRecoveryCapability"},
@@ -190,15 +192,17 @@ The following JSON representation shows the resource type.
   "groupDetail": {"@odata.type": "microsoft.graph.cloudPcEntraGroupDetail"},
   "id": "String (identifier)",
   "imageDisplayName": "String",
-  "lastLoginResult": "String",
+  "lastLoginResult": {"@odata.type": "microsoft.graph.cloudPcLoginResult"},
+  "lastLogoffDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
-  "lastRemoteActionResult": "String",
+  "lastRemoteActionResult": {"@odata.type": "microsoft.graph.cloudPcRemoteActionResult"},
   "managedDeviceId": "String",
   "managedDeviceName": "String",
   "onPremisesConnectionName": "String",
   "osVersion": "String",
-  "partnerAgentInstallResults": "String",
+  "partnerAgentInstallResults": [{"@odata.type": "microsoft.graph.cloudPcPartnerAgentInstallResult"}],
   "powerState": "String",
+  "productType": "String",
   "provisionedDateTime": "String (timestamp)",
   "provisioningPolicyId": "String",
   "provisioningPolicyName": "String",
@@ -209,6 +213,7 @@ The following JSON representation shows the resource type.
   "scopeIds": ["String"],
   "sharedDeviceDetail": {"@odata.type": "microsoft.graph.cloudPcFrontlineSharedDeviceDetail"},
   "status": "String",
+  "statusDetail": {"@odata.type": "microsoft.graph.cloudPcStatusDetail"},
   "userAccountType": "String",
   "userExperienceType": "String",
   "userDetail": {"@odata.type": "microsoft.graph.cloudPcEntraUserDetail"},
