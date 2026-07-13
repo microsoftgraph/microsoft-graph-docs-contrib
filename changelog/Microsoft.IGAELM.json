@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "01c542b5-f4e5-48ec-9fe8-8b63fdb7ad42",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalSapAcConnectionInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalSapAcConnectionInfo](https://learn.microsoft.com/en-us/graph/api/resources/externalsapacconnectioninfo?view=graph-rest-beta) complex type.",
+          "Target": "externalSapAcConnectionInfo"
+        },
+        {
+          "Id": "01c542b5-f4e5-48ec-9fe8-8b63fdb7ad42",
+          "ApiChange": "Resource",
+          "ChangedApiName": "clientCredentialAuthenticationInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [clientCredentialAuthenticationInfo](https://learn.microsoft.com/en-us/graph/api/resources/clientcredentialauthenticationinfo?view=graph-rest-beta) complex type.",
+          "Target": "clientCredentialAuthenticationInfo"
+        },
+        {
+          "Id": "01c542b5-f4e5-48ec-9fe8-8b63fdb7ad42",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationInfo](https://learn.microsoft.com/en-us/graph/api/resources/authenticationinfo?view=graph-rest-beta) abstract complex type.",
+          "Target": "authenticationInfo"
+        }
+      ],
+      "Id": "01c542b5-f4e5-48ec-9fe8-8b63fdb7ad42",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-07-13T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "bbaab297-9f65-4f97-8abb-a67a10d5a6e1",
           "ApiChange": "Method",
           "ChangedApiName": "Get",

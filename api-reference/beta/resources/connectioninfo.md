@@ -18,6 +18,7 @@ The connectionInfo object defines the resource locator that is used to communica
 
 The following types are derived from connectionInfo:
 
+- [externalSapAcConnectionInfo](../resources/externalsapacconnectioninfo.md)
 - [externalTokenBasedSapIagConnectionInfo](../resources/externaltokenbasedsapiagconnectioninfo.md)
 
 In entitlement management, this object is configured in the following properties and relationships:
