@@ -14,6 +14,7 @@ use Microsoft\Graph\Beta\Generated\Models\ExternalConnectors\IdentitySourceType;
 use Microsoft\Graph\Beta\Generated\Models\ExternalConnectors\Properties;
 use Microsoft\Graph\Beta\Generated\Models\ExternalConnectors\ExternalItemContent;
 use Microsoft\Graph\Beta\Generated\Models\ExternalConnectors\ExternalItemContentType;
+use Microsoft\Graph\Beta\Generated\Models\ExternalConnectors\ExternalItemInformationProtectionLabel;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -35,16 +36,19 @@ $requestBody->setAcl($aclArray);
 
 $properties = new Properties();
 $additionalData = [
-'title' => 'Error in the payment gateway',
+'title' => 'Fix issues with Payment gateway',
 'priority' => 1,
 'assignee' => 'john@contoso.com',
 ];
 $properties->setAdditionalData($additionalData);
 $requestBody->setProperties($properties);
 $content = new ExternalItemContent();
-$content->setValue('Error in payment gateway...');
+$content->setValue('Payment gateway module has the following tasks to be completed...');
 $content->setType(new ExternalItemContentType('text'));
 $requestBody->setContent($content);
+$informationProtectionLabel = new ExternalItemInformationProtectionLabel();
+$informationProtectionLabel->setSensitivityLabelId('b6a62c3c-d471-4a3e-9f5f-93c1f928b02d');
+$requestBody->setInformationProtectionLabel($informationProtectionLabel);
 
 $result = $graphServiceClient->external()->connections()->byExternalConnectionId('externalConnection-id')->items()->byExternalItemId('externalItem-id')->put($requestBody)->wait();
 
