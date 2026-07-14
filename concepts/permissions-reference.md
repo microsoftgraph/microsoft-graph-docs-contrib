@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 07/06/2026
+ms.date: 07/13/2026
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -5826,6 +5826,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### Policy.Read.Recovery
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 447f996a-7c58-4ce7-9a9e-da80381a45ab | 61faa1e9-0931-4f9a-94ba-bc2e3505c685 |
+| DisplayText | Read your organization's recovery policy | Read your organization's recovery policy |
+| Description | Allows the application to read and update the organization's recovery policy without a signed-in user. | Allows the application to read the organization's recovery policy on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
 ### Policy.ReadWrite.AccessReview
 
 | Category | Application | Delegated |
@@ -6012,6 +6023,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | DisplayText | Manage consent and permission grant policies | Manage consent and permission grant policies |
 | Description | Allows the app to manage policies related to consent and permission grants for applications, without a signed-in user. | Allows the app to manage policies related to consent and permission grants for applications, on behalf of the signed-in user. |
 | AdminConsentRequired | Yes | Yes |
+
+---
+
+### Policy.ReadWrite.Recovery
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 1e7a2f4c-e602-4b1b-9547-304dd65c4cc2 |
+| DisplayText | - | Read and write your organization's recovery policy |
+| Description | - | Allows the application to read and update the organization's recovery policy on behalf of the signed-in user. |
+| AdminConsentRequired | - | Yes |
 
 ---
 
@@ -8936,6 +8958,50 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 ---
 
+### TeamworkCustomEmoji.Create
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 72464cd4-58fd-4116-8a9e-b74757574757 |
+| DisplayText | - | Create custom emoji |
+| Description | - | Create custom emoji on behalf of the signed-in user. |
+| AdminConsentRequired | - | No |
+
+---
+
+### TeamworkCustomEmoji.Create.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 85643b08-0e25-4d99-9d68-04ba0fef9740 | - |
+| DisplayText | Create custom emoji | - |
+| Description | Create custom emoji without a signed-in user. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
+### TeamworkCustomEmoji.Read
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | - | 89b231b1-414e-4dd4-bb87-d59906da4e05 |
+| DisplayText | - | Read custom emoji |
+| Description | - | Read custom emoji on behalf of the signed-in user. |
+| AdminConsentRequired | - | No |
+
+---
+
+### TeamworkCustomEmoji.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 1efa3d37-1703-4685-9a59-baf6296fb956 | - |
+| DisplayText | Read custom emoji | - |
+| Description | Read custom emoji without a signed-in user. | - |
+| AdminConsentRequired | Yes | - |
+
+---
+
 ### TeamworkDevice.Read.All
 
 | Category | Application | Delegated |
@@ -10096,6 +10162,28 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Identifier | 4869299f-18c3-40c8-98f2-222657e67db1 | db39086a-da7d-4cbd-9ac0-6816f9a80c95 |
 | DisplayText | Read and write all users' QR methods | Read and write all users' QR methods. |
 | Description | Allows the application to read and write QR authentication methods of all users in your organization, without a signed-in user. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. | Allows the app to read and write QR authentication methods of all users in your organization that the signed-in user has access to. This does not allow the app to see secret information like passwords, or to sign-in or otherwise use the authentication methods. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### UserAuthMethod-ResourceKey.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 94ed018c-a499-47e0-beef-803b93873ece | c86e40fc-66fd-4d68-802e-b90e3038f5e8 |
+| DisplayText | Read and write all users' external authentication methods | Read the keys associated with the user representing a resource account. |
+| Description | Allows the app to read the keys associated with the user representing a resource account. | Allows the app to read the keys associated with the user representing a resource account. |
+| AdminConsentRequired | Yes | Yes |
+
+---
+
+### UserAuthMethod-ResourceKey.ReadWrite.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 1bf7461f-222a-4525-9760-f7739228d0f4 | e71dec0d-02b4-429d-a49a-030950d45faa |
+| DisplayText | Read and delete all users' external authentication methods | Read and delete the keys associated with the user representing a resource account. |
+| Description | Allows the app to read and delete the keys associated with the user representing a resource account. | Allows the app to read and delete the keys associated with the user representing a resource account. |
 | AdminConsentRequired | Yes | Yes |
 
 ---
