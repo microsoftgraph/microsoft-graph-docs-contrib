@@ -159,6 +159,7 @@ Use the **isRegistrationRequired** property on the [virtualEventTownhall](/graph
 ### Device and app management | Cloud PC
 
 - Use the [cloudPcProvisioningPolicy: apply](/graph/api/cloudpcprovisioningpolicy-apply?view=graph-rest-beta&preserve-view=true) method to apply policy settings such as `region` and `singleSignOn`. This method also supports reprovisioning for frontline shared mode Cloud PCs by using the **reservePercentage** parameter to control the percentage of Cloud PCs that remain available during the process.
+- Use the **lastLogoffDateTime** property on [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) to get the date and time when the user last logged off from the Cloud PC session.
 - [Retrieve](/graph/api/cloudpcprovisioningpolicy-retrievepolicyupdatestatusresult?view=graph-rest-beta&preserve-view=true) the pending apply status of a [provisioning policy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) to determine whether unapplied changes exist for Cloud PCs.
 - Use the **isForceUserLogoffEnabled** parameter and property on [cloudPcProvisioningPolicy: apply](/graph/api/cloudpcprovisioningpolicy-apply?view=graph-rest-beta&preserve-view=true) and [cloudPcPolicyScheduledApplyActionDetail](/graph/api/resources/cloudpcpolicyscheduledapplyactiondetail?view=graph-rest-beta&preserve-view=true) to indicate whether active Cloud PC sessions are forcibly signed out when reprovisioning begins.
 - Deprecated the **notificationSetting** property on the [cloudPcUserSetting](/graph/api/resources/cloudpcusersetting?view=graph-rest-beta&preserve-view=true) resource. This property will stop returning data on July 14, 2026.
@@ -191,13 +192,15 @@ Added the **callerIdNumber** property to the [voiceAuthenticationMethodConfigura
 
 Use the [user configuration API in Microsoft Graph](/graph/user-configuration-concept-overview) to build solutions that store and retrieve per-folder configuration data alongside Exchange Online mailbox content.
 
-Introduced programmatic management of personal distribution lists in user mailboxes through the [distributionList](/graph/api/resources/distributionlist?view=graph-rest-beta&preserve-view=true) and [distributionListMember](/graph/api/resources/distributionlistmember?view=graph-rest-beta&preserve-view=true) resource types. You can now:
-- Create, read, update, and delete distribution lists in a user's mailbox
-- Add and remove members from distribution lists
-- Retrieve expanded member information with resolved contact details and recipient types
-- List all distribution lists owned by a user
+### Search
 
-Personal distribution lists enable users to group email recipients together and send messages to all members at once without entering each address individually.
+- Added the **informationProtectionLabel** property to the [externalItem](/graph/api/resources/externalconnectors-externalitem?view=graph-rest-beta&preserve-view=true) resource to specify the Microsoft Purview sensitivity label associated with an external item.
+- Introduced programmatic management of personal distribution lists in user mailboxes through the [distributionList](/graph/api/resources/distributionlist?view=graph-rest-beta&preserve-view=true) and [distributionListMember](/graph/api/resources/distributionlistmember?view=graph-rest-beta&preserve-view=true) resource types. You can now:
+  - Create, read, update, and delete distribution lists in a user's mailbox
+  - Add and remove members from distribution lists
+  - Retrieve expanded member information with resolved contact details and recipient types
+  - List all distribution lists owned by a user
+- Personal distribution lists enable users to group email recipients together and send messages to all members at once without entering each address individually.
 
 ### Reports | Identity and access reports
 
