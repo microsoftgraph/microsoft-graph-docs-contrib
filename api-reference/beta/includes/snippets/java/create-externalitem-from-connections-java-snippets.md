@@ -25,15 +25,18 @@ acl.add(acl2);
 externalItem.setAcl(acl);
 com.microsoft.graph.beta.models.externalconnectors.Properties properties = new com.microsoft.graph.beta.models.externalconnectors.Properties();
 HashMap<String, Object> additionalData = new HashMap<String, Object>();
-additionalData.put("title", "Error in the payment gateway");
+additionalData.put("title", "Fix issues with Payment gateway");
 additionalData.put("priority", 1);
 additionalData.put("assignee", "john@contoso.com");
 properties.setAdditionalData(additionalData);
 externalItem.setProperties(properties);
 com.microsoft.graph.beta.models.externalconnectors.ExternalItemContent content = new com.microsoft.graph.beta.models.externalconnectors.ExternalItemContent();
-content.setValue("Error in payment gateway...");
+content.setValue("Payment gateway module has the following tasks to be completed...");
 content.setType(com.microsoft.graph.beta.models.externalconnectors.ExternalItemContentType.Text);
 externalItem.setContent(content);
+com.microsoft.graph.beta.models.externalconnectors.ExternalItemInformationProtectionLabel informationProtectionLabel = new com.microsoft.graph.beta.models.externalconnectors.ExternalItemInformationProtectionLabel();
+informationProtectionLabel.setSensitivityLabelId("b6a62c3c-d471-4a3e-9f5f-93c1f928b02d");
+externalItem.setInformationProtectionLabel(informationProtectionLabel);
 com.microsoft.graph.models.externalconnectors.ExternalItem result = graphClient.external().connections().byExternalConnectionId("{externalConnection-id}").items().byExternalItemId("{externalItem-id}").put(externalItem);
 
 

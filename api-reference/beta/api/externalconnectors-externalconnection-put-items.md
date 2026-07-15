@@ -35,12 +35,12 @@ Choose the permission or permissions marked as least privileged for this API. Us
 PUT /external/connections/{connection-id}/items/{item-id}
 ```
 
-## Path parameters
+**Path parameters**
 
 | Parameter     | Type   | Description                                         |
 |:--------------|:-------|:----------------------------------------------------|
 | connection-id | string | The `id` property of the containing [externalConnection](../resources/externalconnectors-externalconnection.md) |
-| item-id       | string | The developer-provided `id` property of the [externalItem](../resources/externalconnectors-externalitem.md). If no item already exists with this `id`, a new item is created. If an item already exists with this `id`, it is overwritten by the object sent in the body. |
+| item-id       | string | The developer-provided `id` property of the [externalItem](../resources/externalconnectors-externalitem.md). If no item already exists with this `id`, a new item is created. If an item already exists with this `id`, it's overwritten by the object sent in the body. |
 
 ## Request headers
 
@@ -53,9 +53,7 @@ PUT /external/connections/{connection-id}/items/{item-id}
 
 In the request body, supply a JSON representation of an [externalItem](../resources/externalconnectors-externalitem.md) object. The payload is limited to 4 MB.
 
-### Creating an externalItem
-
-When creating an `externalItem`, the following fields are required: `acl`, and `properties`. The `properties` object must contain at least one property.
+When you create an **externalItem**, the following properties are required: **acl** and **properties**. The **properties** object must contain at least one property. You can also use the **informationProtectionLabel** property to set a Microsoft Purview sensitivity label on an **externalItem**.
 
 All `DateTime` type properties must be in ISO 8601 format.
 
@@ -120,14 +118,17 @@ Content-type: application/json
     }
   ],
   "properties": {
-    "title": "Error in the payment gateway",
+    "title": "Fix issues with Payment gateway",
     "priority": 1,
     "assignee": "john@contoso.com"
   },
   "content": {
-    "value": "Error in payment gateway...",
+    "value": "Payment gateway module has the following tasks to be completed...",
     "type": "text"
-  }
+  },
+  "informationProtectionLabel": { 
+    "sensitivityLabelId": "b6a62c3c-d471-4a3e-9f5f-93c1f928b02d"
+  } 
 }
 ```
 
@@ -161,9 +162,7 @@ Content-type: application/json
 
 ---
 
-<!-- markdownlint-disable MD024 -->
 #### Response
-<!-- markdownlint-enable MD024 -->
 
 The following example shows the response.
 

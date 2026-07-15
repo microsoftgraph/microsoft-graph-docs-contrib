@@ -96,6 +96,8 @@ items:
     href: ../../resources/externalconnectors-displaytemplate.md
   - name: External item content
     href: ../../resources/externalconnectors-externalitemcontent.md
+  - name: External item information protection label
+    href: ../../resources/externalconnectors-externaliteminformationprotectionlabel.md
   - name: Item id resolver
     href: ../../resources/externalconnectors-itemidresolver.md
   - name: Json
