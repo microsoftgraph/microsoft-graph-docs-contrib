@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "86b3c165-21dc-4b88-939d-0335f7dc23f1",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastLogoffDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastLogoffDateTime** property to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+          "Target": "cloudPC"
+        }
+      ],
+      "Id": "86b3c165-21dc-4b88-939d-0335f7dc23f1",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-07-13T00:00:00.0000000Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "5ac5461c-2fd3-4d85-8954-424bd912b3dd",
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcNotificationSetting",

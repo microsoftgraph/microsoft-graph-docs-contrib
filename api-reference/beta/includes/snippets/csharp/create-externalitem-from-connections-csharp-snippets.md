@@ -33,7 +33,7 @@ var requestBody = new ExternalItem
 		AdditionalData = new Dictionary<string, object>
 		{
 			{
-				"title" , "Error in the payment gateway"
+				"title" , "Fix issues with Payment gateway"
 			},
 			{
 				"priority" , 1
@@ -45,8 +45,12 @@ var requestBody = new ExternalItem
 	},
 	Content = new ExternalItemContent
 	{
-		Value = "Error in payment gateway...",
+		Value = "Payment gateway module has the following tasks to be completed...",
 		Type = ExternalItemContentType.Text,
+	},
+	InformationProtectionLabel = new ExternalItemInformationProtectionLabel
+	{
+		SensitivityLabelId = "b6a62c3c-d471-4a3e-9f5f-93c1f928b02d",
 	},
 };
 

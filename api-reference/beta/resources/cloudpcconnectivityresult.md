@@ -49,7 +49,7 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.cloudPcConnectivityResult",
-  "failedHealthCheckItems": "String",
+  "failedHealthCheckItems": [{"@odata.type": "microsoft.graph.cloudPcHealthCheckItem"}],
   "status": "String",
   "updatedDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)"

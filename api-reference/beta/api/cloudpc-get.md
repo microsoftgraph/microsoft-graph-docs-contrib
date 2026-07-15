@@ -180,7 +180,7 @@ The following example shows a request.
 -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/40cee9d2-03fb-4066-8d35-dbdf2875c33f?$select=id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,connectivityResult,allotmentDisplayName,deviceRegionName,productType,provisionedDateTime,sharedDeviceDetail,groupDetail,userDetail
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/40cee9d2-03fb-4066-8d35-dbdf2875c33f?$select=id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,lastLogoffDateTime,connectivityResult,allotmentDisplayName,deviceRegionName,productType,provisionedDateTime,sharedDeviceDetail,groupDetail,userDetail
 ```
 
 # [C#](#tab/csharp)
@@ -196,7 +196,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/4
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-cloudpc-selected-properties-javascript-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -238,6 +238,7 @@ Content-Type: application/json
     "lastLoginResult": {
         "time": "2021-06-23T09:28:32.8260335Z"
     },
+    "lastLogoffDateTime": "2021-06-23T10:15:00Z",
     "lastRemoteActionResult": {
       "actionName": "Reboot",
       "actionState": "done",
@@ -248,16 +249,17 @@ Content-Type: application/json
       "statusDetails": null
     },
     "connectivityResult": {
-      "status": "unavailable",
-      "updatedDatetime": "2022-03-22T10:28:32.8260335Z",
       "failedHealthCheckItems": [
         {
+          "additionalDetails": "SessionHost unhealthy: SessionHost is not joined to a domain",
           "displayName": "DomainJoinCheck",
-          "result": "failure",
           "lastHealthCheckDateTime": "2022-03-22T10:28:32.8260335Z",
-          "additionalDetails": "SessionHost unhealthy: SessionHost is not joined to a domain"
+          "result": "failure"
         }
-      ]
+      ],
+      "status": "unavailable",
+      "updatedDateTime": "2022-03-22T10:28:32.8260335Z",
+      "lastModifiedDateTime": "2022-03-22T10:28:32.8260335Z"
     },
     "allotmentDisplayName": null,
     "deviceRegionName": "eastus2",

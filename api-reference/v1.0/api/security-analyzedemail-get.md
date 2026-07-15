@@ -92,7 +92,6 @@ GET https://graph.microsoft.com/v1.0/security/collaboration/analyzedEmails/{anal
 
 ---
 
-
 #### Response
 
 The following example shows the response.
@@ -234,7 +233,6 @@ GET https://graph.microsoft.com/v1.0/security/collaboration/analyzedEmails/{anal
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

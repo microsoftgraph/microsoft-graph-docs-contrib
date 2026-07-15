@@ -96,7 +96,6 @@ POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/work
 
 ---
 
-
 ### Response
 
 The following example shows the response.
