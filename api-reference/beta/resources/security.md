@@ -32,6 +32,7 @@ None.
 |alerts_v2 | [microsoft.graph.security.alert](security-alert.md) collection | A collection of alerts in Microsoft 365 Defender.|
 |auditLog|[microsoft.graph.security.auditCoreRoot](../resources/security-auditcoreroot.md)|The entry point for Microsoft Purview audit log queries and operations.|
 |attackSimulation|[attackSimulationRoot](../resources/attacksimulationroot.md)|Provides tenants capability to launch a simulated and realistic phishing attack and learn from it.|
+|caseManagement|[microsoft.graph.security.caseManagementRoot](../resources/security-casemanagementroot.md)|The entry point for security case management APIs, including cases, tasks, activities, relations, and attachments.|
 |collaboration|[microsoft.graph.security.collaborationRoot](../resources/security-collaborationroot.md)|Enables read and other actions on collaborative entities in Microsoft Defender.|
 |identities|[microsoft.graph.security.identityContainer](../resources/security-identityContainer.md)|A container for security identities APIs.|
 |incidentTasks|[microsoft.graph.security.incidentTask](security-incidenttask.md) collection|A collection of tasks associated with security incidents.|
