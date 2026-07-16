@@ -3098,6 +3098,42 @@
             "microsoft.graph.security.discoveredCloudAppDevice",
             "microsoft.graph.security.endpointDiscoveredCloudAppDetail"
           ]
+        },
+        {
+          "name": "Case management",
+          "overview": "../../resources/security-casemanagementroot.md",
+          "resources": [
+            "microsoft.graph.security.caseManagement.caseManagementEntity",
+            "microsoft.graph.security.caseManagement.case",
+            "microsoft.graph.security.caseManagement.genericCase",
+            "microsoft.graph.security.caseManagement.incidentCase",
+            "microsoft.graph.security.caseManagement.activity",
+            "microsoft.graph.security.caseManagement.comment",
+            "microsoft.graph.security.caseManagement.auditLog",
+            "microsoft.graph.security.caseManagement.activityResourceDetails",
+            "microsoft.graph.security.caseManagement.modifiedProperty",
+            "microsoft.graph.security.caseManagement.valueProperty",
+            "microsoft.graph.security.caseManagement.stringValueProperty",
+            "microsoft.graph.security.caseManagement.booleanValueProperty",
+            "microsoft.graph.security.caseManagement.alertCounts",
+            "microsoft.graph.security.caseManagement.alertStatusCounts",
+            "microsoft.graph.security.caseManagement.incidentSeverityCounts",
+            "microsoft.graph.security.caseManagement.impactedAssetsCounts",
+            "microsoft.graph.security.caseManagement.investigation",
+            "microsoft.graph.security.caseManagement.customFieldValues",
+            "microsoft.graph.security.caseManagement.customFieldValue",
+            "microsoft.graph.security.caseManagement.customFieldStringValue",
+            "microsoft.graph.security.caseManagement.customFieldNumberValue",
+            "microsoft.graph.security.caseManagement.customFieldDateTimeValue",
+            "microsoft.graph.security.caseManagement.customFieldOptionsValue",
+            "microsoft.graph.security.caseManagement.attachmentOrigin",
+            "microsoft.graph.security.caseManagement.attachment",
+            "microsoft.graph.security.caseManagement.relation",
+            "microsoft.graph.security.caseManagement.incidentRelation",
+            "microsoft.graph.security.caseManagement.recommendationRelation",
+            "microsoft.graph.security.caseManagement.workspaceIndicatorRelation",
+            "microsoft.graph.security.caseManagement.task"
+          ]
         }
       ]
     },

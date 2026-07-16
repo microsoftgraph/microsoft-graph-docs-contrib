@@ -260,6 +260,90 @@ items:
       href: ../../resources/security-auditlogrecord.md
     - name: List
       href: ../../api/security-auditlogquery-list-records.md
+- name: Case management
+  items:
+  - name: Overview
+    href: ../../resources/security-casemanagementroot.md
+  - name: Case management root
+    href: ../../resources/security-casemanagementroot.md
+  - name: Case management entity
+    href: ../../resources/security-casemanagement-casemanagemententity.md
+  - name: Case
+    items:
+    - name: Case
+      href: ../../resources/security-casemanagement-case.md
+    - name: List
+      href: ../../api/security-casemanagementroot-list-cases.md
+    - name: Create
+      href: ../../api/security-casemanagementroot-post-cases.md
+    - name: Get
+      href: ../../api/security-casemanagement-case-get.md
+    - name: Update
+      href: ../../api/security-casemanagement-case-update.md
+    - name: Delete
+      href: ../../api/security-casemanagementroot-delete-cases.md
+  - name: Generic case
+    href: ../../resources/security-casemanagement-genericcase.md
+  - name: Incident case
+    href: ../../resources/security-casemanagement-incidentcase.md
+  - name: Activity
+    items:
+    - name: Activity
+      href: ../../resources/security-casemanagement-activity.md
+    - name: List
+      href: ../../api/security-casemanagement-case-list-activities.md
+    - name: Create
+      href: ../../api/security-casemanagement-case-post-activities.md
+    - name: Get
+      href: ../../api/security-casemanagement-activity-get.md
+    - name: Update
+      href: ../../api/security-casemanagement-activity-update.md
+    - name: Delete
+      href: ../../api/security-casemanagement-activity-delete.md
+  - name: Comment
+    href: ../../resources/security-casemanagement-comment.md
+  - name: Audit log
+    href: ../../resources/security-casemanagement-auditlog.md
+  - name: Attachment
+    items:
+    - name: Attachment
+      href: ../../resources/security-casemanagement-attachment.md
+    - name: List
+      href: ../../api/security-casemanagement-case-list-attachments.md
+    - name: Create
+      href: ../../api/security-casemanagement-case-post-attachments.md
+    - name: Get
+      href: ../../api/security-casemanagement-attachment-get.md
+    - name: Update
+      href: ../../api/security-casemanagement-attachment-update.md
+  - name: Relation
+    items:
+    - name: Relation
+      href: ../../resources/security-casemanagement-relation.md
+    - name: List
+      href: ../../api/security-casemanagement-case-list-relations.md
+    - name: Create
+      href: ../../api/security-casemanagement-case-post-relations.md
+    - name: Update
+      href: ../../api/security-casemanagement-relation-update.md
+  - name: Incident relation
+    href: ../../resources/security-casemanagement-incidentrelation.md
+  - name: Recommendation relation
+    href: ../../resources/security-casemanagement-recommendationrelation.md
+  - name: Workspace indicator relation
+    href: ../../resources/security-casemanagement-workspaceindicatorrelation.md
+  - name: Task
+    items:
+    - name: Task
+      href: ../../resources/security-casemanagement-task.md
+    - name: List
+      href: ../../api/security-casemanagement-case-list-tasks.md
+    - name: Create
+      href: ../../api/security-casemanagement-case-post-tasks.md
+    - name: Get
+      href: ../../api/security-casemanagement-task-get.md
+    - name: Update
+      href: ../../api/security-casemanagement-task-update.md
 - name: Cloud zones or scopes (preview)
   items:
   - name: Zone

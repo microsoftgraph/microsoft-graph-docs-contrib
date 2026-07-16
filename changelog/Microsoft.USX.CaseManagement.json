@@ -1,0 +1,352 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "caseManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the **caseManagement** relationship to the [security](https://learn.microsoft.com/en-us/graph/api/resources/security?view=graph-rest-beta) resource.",
+          "Target": "security"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "caseManagementRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [caseManagementRoot](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagementroot?view=graph-rest-beta) resource.",
+          "Target": "caseManagementRoot"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "attachmentOriginType",
+          "ChangeType": "Addition",
+          "Description": "Added the **attachmentOriginType** enumeration type.",
+          "Target": "attachmentOriginType"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "attachmentScanResult",
+          "ChangeType": "Addition",
+          "Description": "Added the **attachmentScanResult** enumeration type.",
+          "Target": "attachmentScanResult"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "auditAction",
+          "ChangeType": "Addition",
+          "Description": "Added the **auditAction** enumeration type.",
+          "Target": "auditAction"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "caseTaskCategory",
+          "ChangeType": "Addition",
+          "Description": "Added the **caseTaskCategory** enumeration type.",
+          "Target": "caseTaskCategory"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "caseTaskPriority",
+          "ChangeType": "Addition",
+          "Description": "Added the **caseTaskPriority** enumeration type.",
+          "Target": "caseTaskPriority"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "incidentClassification",
+          "ChangeType": "Addition",
+          "Description": "Added the **incidentClassification** enumeration type.",
+          "Target": "incidentClassification"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "incidentDetermination",
+          "ChangeType": "Addition",
+          "Description": "Added the **incidentDetermination** enumeration type.",
+          "Target": "incidentDetermination"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "incidentSeverity",
+          "ChangeType": "Addition",
+          "Description": "Added the **incidentSeverity** enumeration type.",
+          "Target": "incidentSeverity"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "taskStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **taskStatus** enumeration type.",
+          "Target": "taskStatus"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "activityResourceDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [activityResourceDetails](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-activityresourcedetails?view=graph-rest-beta) resource.",
+          "Target": "activityResourceDetails"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "alertCounts",
+          "ChangeType": "Addition",
+          "Description": "Added the [alertCounts](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-alertcounts?view=graph-rest-beta) resource.",
+          "Target": "alertCounts"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "alertStatusCounts",
+          "ChangeType": "Addition",
+          "Description": "Added the [alertStatusCounts](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-alertstatuscounts?view=graph-rest-beta) resource.",
+          "Target": "alertStatusCounts"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attachmentOrigin",
+          "ChangeType": "Addition",
+          "Description": "Added the [attachmentOrigin](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-attachmentorigin?view=graph-rest-beta) resource.",
+          "Target": "attachmentOrigin"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "booleanValueProperty",
+          "ChangeType": "Addition",
+          "Description": "Added the [booleanValueProperty](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-booleanvalueproperty?view=graph-rest-beta) resource.",
+          "Target": "booleanValueProperty"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customFieldDateTimeValue",
+          "ChangeType": "Addition",
+          "Description": "Added the [customFieldDateTimeValue](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-customfielddatetimevalue?view=graph-rest-beta) resource.",
+          "Target": "customFieldDateTimeValue"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customFieldNumberValue",
+          "ChangeType": "Addition",
+          "Description": "Added the [customFieldNumberValue](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-customfieldnumbervalue?view=graph-rest-beta) resource.",
+          "Target": "customFieldNumberValue"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customFieldOptionsValue",
+          "ChangeType": "Addition",
+          "Description": "Added the [customFieldOptionsValue](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-customfieldoptionsvalue?view=graph-rest-beta) resource.",
+          "Target": "customFieldOptionsValue"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customFieldStringValue",
+          "ChangeType": "Addition",
+          "Description": "Added the [customFieldStringValue](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-customfieldstringvalue?view=graph-rest-beta) resource.",
+          "Target": "customFieldStringValue"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customFieldValue",
+          "ChangeType": "Addition",
+          "Description": "Added the [customFieldValue](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-customfieldvalue?view=graph-rest-beta) resource.",
+          "Target": "customFieldValue"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customFieldValues",
+          "ChangeType": "Addition",
+          "Description": "Added the [customFieldValues](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-customfieldvalues?view=graph-rest-beta) resource.",
+          "Target": "customFieldValues"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "impactedAssetsCounts",
+          "ChangeType": "Addition",
+          "Description": "Added the [impactedAssetsCounts](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-impactedassetscounts?view=graph-rest-beta) resource.",
+          "Target": "impactedAssetsCounts"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "incidentSeverityCounts",
+          "ChangeType": "Addition",
+          "Description": "Added the [incidentSeverityCounts](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-incidentseveritycounts?view=graph-rest-beta) resource.",
+          "Target": "incidentSeverityCounts"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "investigation",
+          "ChangeType": "Addition",
+          "Description": "Added the [investigation](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-investigation?view=graph-rest-beta) resource.",
+          "Target": "investigation"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "modifiedProperty",
+          "ChangeType": "Addition",
+          "Description": "Added the [modifiedProperty](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-modifiedproperty?view=graph-rest-beta) resource.",
+          "Target": "modifiedProperty"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "stringValueProperty",
+          "ChangeType": "Addition",
+          "Description": "Added the [stringValueProperty](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-stringvalueproperty?view=graph-rest-beta) resource.",
+          "Target": "stringValueProperty"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "valueProperty",
+          "ChangeType": "Addition",
+          "Description": "Added the [valueProperty](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-valueproperty?view=graph-rest-beta) resource.",
+          "Target": "valueProperty"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "activity",
+          "ChangeType": "Addition",
+          "Description": "Added the [activity](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-activity?view=graph-rest-beta) resource.",
+          "Target": "activity"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "auditLog",
+          "ChangeType": "Addition",
+          "Description": "Added the [auditLog](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-auditlog?view=graph-rest-beta) resource.",
+          "Target": "auditLog"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "case",
+          "ChangeType": "Addition",
+          "Description": "Added the [case](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-case?view=graph-rest-beta) resource.",
+          "Target": "case"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "caseManagementEntity",
+          "ChangeType": "Addition",
+          "Description": "Added the [caseManagementEntity](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-casemanagemententity?view=graph-rest-beta) resource.",
+          "Target": "caseManagementEntity"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "comment",
+          "ChangeType": "Addition",
+          "Description": "Added the [comment](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-comment?view=graph-rest-beta) resource.",
+          "Target": "comment"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "genericCase",
+          "ChangeType": "Addition",
+          "Description": "Added the [genericCase](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-genericcase?view=graph-rest-beta) resource.",
+          "Target": "genericCase"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "incidentCase",
+          "ChangeType": "Addition",
+          "Description": "Added the [incidentCase](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-incidentcase?view=graph-rest-beta) resource.",
+          "Target": "incidentCase"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "incidentRelation",
+          "ChangeType": "Addition",
+          "Description": "Added the [incidentRelation](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-incidentrelation?view=graph-rest-beta) resource.",
+          "Target": "incidentRelation"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "recommendationRelation",
+          "ChangeType": "Addition",
+          "Description": "Added the [recommendationRelation](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-recommendationrelation?view=graph-rest-beta) resource.",
+          "Target": "recommendationRelation"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "relation",
+          "ChangeType": "Addition",
+          "Description": "Added the [relation](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-relation?view=graph-rest-beta) resource.",
+          "Target": "relation"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "task",
+          "ChangeType": "Addition",
+          "Description": "Added the [task](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-task?view=graph-rest-beta) resource.",
+          "Target": "task"
+        },
+        {
+          "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workspaceIndicatorRelation",
+          "ChangeType": "Addition",
+          "Description": "Added the [workspaceIndicatorRelation](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-workspaceindicatorrelation?view=graph-rest-beta) resource.",
+          "Target": "workspaceIndicatorRelation"
+        }
+      ],
+      "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-06-29T11:54:47.6149712Z",
+      "WorkloadArea": "Security",
+      "SubArea": "eDiscovery"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "cf7d4359-6548-4943-9cac-7d10143d56ff",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attachment",
+          "ChangeType": "Addition",
+          "Description": "Added the [attachment](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-attachment?view=graph-rest-beta) resource.",
+          "Target": "attachment"
+        }
+      ],
+      "Id": "cf7d4359-6548-4943-9cac-7d10143d56ff",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-07-15T11:54:47.6156797Z",
+      "WorkloadArea": "Security",
+      "SubArea": "eDiscovery"
+    }
+  ]
+}

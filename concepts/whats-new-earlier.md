@@ -143,6 +143,10 @@ Added the [getHuntingSchema](/graph/api/security-security-gethuntingschema?view=
 - Deprecated the **category** property on the [alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true) resource. Use the **categories** property instead.
 - Added the **microsoftSecurityForAI** member to the **serviceSource** enumeration type for the [alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true) resource to identify alerts created by Microsoft Defender for AI.
 
+### Security | Case management
+
+- Added the **caseManagement** relationship to the [security](/graph/api/resources/security?view=graph-rest-beta&preserve-view=true) resource and related APIs to help security teams create and manage investigation cases, including tasks, activities, relations, and attachments.
+
 ### Security | Data security and compliance
 
 Added the [contentActivityMetadata](/graph/api/resources/contentactivitymetadata?view=graph-rest-beta&preserve-view=true) resource to represent and track Data Loss Prevention (DLP) enforcement result metadata for content entries, including identifiers, timestamps, and policy statuses.
