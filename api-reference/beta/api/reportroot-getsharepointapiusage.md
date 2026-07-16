@@ -14,14 +14,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get aggregated usage data for all applications in a tenant. This API retrieves usage data by predefined period or by specific date (you may specify a period or a date, but not both). The response format differs by content type: JSON returns a structured format with separate `summary` and `details` properties, while CSV returns a flat structure with the summary as the first data row.
+Get aggregated usage data for all applications in a tenant. Specify either a `period` or a `date`, but not both. Optionally filter the results by application ID. Data is returned in CSV format by default, or in JSON format when requested through the `$format` query parameter.
 
-The API supports two query patterns:
+Use the optional reportType parameter to choose which usage metrics to return: egressReport (default) includes usage (UsageMB in CSV, usageMB in JSON), and throttlingReport includes throttled request counts (ThrottledRequests in CSV, throttledRequests in JSON). Each report type must be enabled (onboarded) for the tenant before its data is available. Use [enableApiUsageReport](../api/sharepointreportsettings-enableapiusagereport.md) to enable a report metric, [disableApiUsageReport](../api/sharepointreportsettings-disableapiusagereport.md) to disable it, and [List apiUsageReportMetrics](../api/sharepointreportsettings-list-apiusagereportmetrics.md) to check the enablement status. If you request a report type that isn't enabled for the tenant, this method returns a `403 Forbidden` response with the error code `accessDenied` and the message "Tenant is not enabled for this report type."
 
-- **Period-based**: Get usage for the last N days (`D1`, `D7`, or `D30`).
-- **Date-based**: Get usage for a specific date.
-
-Results can be optionally filtered by application ID(s). Data is returned in CSV format by default, or JSON format when explicitly requested via the `$format` query parameter.
+[!NOTE]
+CSV column headers use PascalCase (ThrottledRequests) while JSON properties use camelCase (throttledRequests) to maintain consistency with other Microsoft Graph reporting APIs.
 
 ## Permissions
 
@@ -41,6 +39,10 @@ GET /reports/getSharePointApiUsage(period='{period_value}')
 GET /reports/getSharePointApiUsage(date={date_value})
 GET /reports/getSharePointApiUsage(period='{period_value}',appId='{appId_value}')
 GET /reports/getSharePointApiUsage(date={date_value},appId='{appId_value}')
+GET /reports/getSharePointApiUsage(period='{period_value}',reportType='{reportType_value}')
+GET /reports/getSharePointApiUsage(date={date_value},reportType='{reportType_value}')
+GET /reports/getSharePointApiUsage(period='{period_value}',appId='{appId_value}',reportType='{reportType_value}')
+GET /reports/getSharePointApiUsage(date={date_value},appId='{appId_value}',reportType='{reportType_value}')
 GET /reports/getSharePointApiUsage(period='{period_value}')?$format={format}
 ```
 
@@ -53,6 +55,7 @@ In the request URL, provide the following parameters with values.
 | appId     | String           | Optional. A comma-separated list of application GUIDs to filter results. When specified, only detail rows for the specified applications are returned and the summary row is excluded.                     |
 | date      | Date             | Required if **period** isn't specified. Specifies the date for the report. Accepts `YYYY-MM-DD` format (for example, `2026-02-05`). Can't be used with **period**. Can't be a future date. |
 | period    | String           | Required if **date** isn't specified. Specifies the length of time over which the report is aggregated. The supported values are: `D1`, `D7`, `D30`. Can't be used with **date**.                        |
+| reportType | String | Optional. The type of usage report to return. The possible values are: `egressReport`, `throttlingReport`. Default is `egressReport`. The report type determines which columns appear in the response: egressReport includes usageMB and excludes throttledRequests; throttlingReport includes throttledRequests and excludes usageMB. |
 
 ## Optional query parameters
 
@@ -86,15 +89,21 @@ If successful with CSV format, this method returns a `200 OK` response with cont
 
 > **Note:** Unlike most other Microsoft Graph reports APIs that return a `302 Found` redirect to a preauthenticated download URL, this API returns the CSV data directly in the response body with a `200 OK` response.
 
-The CSV file has the following column headers:
+The CSV file column headers depend on the `reportType` parameter:
 
-`UsageDateTime,ServiceArea,TenantId,AppId,UsageMB,UsageRequests,ActiveApps`
+- `egressReport` (default):
 
-The first data row is a summary row with **ActiveApps** populated and **AppId** empty. Subsequent rows are per-app, per-date details with **AppId** populated and **ActiveApps** empty. Data points are ordered by **UsageDateTime** descending (most recent first).
+  `UsageDateTime,ServiceArea,TenantId,appId,UsageMB,UsageRequests,ActiveApps`
+
+- `throttlingReport`:
+
+  `UsageDateTime,ServiceArea,TenantId,AppId,UsageRequests,ThrottledRequests,ActiveApps`
+
+The first data row is a summary row with ActiveApps populated and AppId empty. Subsequent rows are per-app, per-date details with AppId populated and ActiveApps empty. Data points are ordered by UsageDateTime descending (most recent first).
 
 ### JSON format
 
-If successful with JSON format, this method returns a structured object with `summary` and `details` properties. The `summary` contains aggregated totals, and `details` contains an array of per-application, per-date details. The `summary` is `null` when an `appId` filter is specified. The `details` array supports pagination via `$skip` and `$top` query parameters.
+If successful with JSON format, this method returns a structured object with `summary` and `details` properties. The `summary` contains aggregated totals, and `details` contains an array of per-application, per-date details. The `summary` is `null` when an `appId` filter is specified. The `details` array supports pagination via `$skip` and `$top` query parameters. Each data point includes the usageMB property for the egressReport or the throttledRequests property for the throttlingReport.
 
 ## Examples
 
@@ -353,7 +362,140 @@ Content-Type: application/json
 > **Note:** When an `appId` filter is specified, the `summary` property is `null` and only filtered detail rows appear in the `details` array.
 
 
-### Example 6: No data available
+### Example 6: Get throttling report (CSV format)
+
+#### Request
+
+The following example shows a request that returns the throttling report. The response includes the `throttledRequests` column instead of `usageMB`.
+
+<!-- {
+  "blockType": "request",
+  "name": "reportroot_getsharepointapiusage_throttling_csv"
+}
+-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/reports/getSharePointApiUsage(period='D7',reportType='throttlingReport')?$format=text/csv
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "stream"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: text/csv
+
+UsageDateTime,ServiceArea,TenantId,AppId,UsageRequests,ThrottledRequests,ActiveApps
+2026-02-04T00:00:00Z,OneDrive and SharePoint,12345678-1234-1234-1234-123456789abc,,15000,320,5
+2026-02-04T00:00:00Z,OneDrive and SharePoint,12345678-1234-1234-1234-123456789abc,00000003-0000-0ff1-ce00-000000000000,8500,210,
+2026-02-04T00:00:00Z,OneDrive and SharePoint,12345678-1234-1234-1234-123456789abc,ab9b8c07-8f02-4f72-87fa-80105867a763,4500,90,
+```
+
+### Example 7: Get throttling report (JSON format)
+
+#### Request
+
+The following example shows a request that returns the throttling report in JSON format. Each data point includes the `throttledRequests` property instead of `usageMB`.
+
+<!-- {
+  "blockType": "request",
+  "name": "reportroot_getsharepointapiusage_throttling_json"
+}
+-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/reports/getSharePointApiUsage(period='D7',reportType='throttlingReport')?$format=application/json
+```
+
+#### Response
+
+The following example shows the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "stream"
+}
+-->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "summary": {
+    "usageDateTime": "2026-02-04T00:00:00Z",
+    "serviceArea": "OneDrive and SharePoint",
+    "tenantId": "12345678-1234-1234-1234-123456789abc",
+    "appId": null,
+    "usageRequests": 15000,
+    "throttledRequests": 320,
+    "activeApps": 5
+  },
+  "details": [
+    {
+      "usageDateTime": "2026-02-04T00:00:00Z",
+      "serviceArea": "OneDrive and SharePoint",
+      "tenantId": "12345678-1234-1234-1234-123456789abc",
+      "appId": "00000003-0000-0ff1-ce00-000000000000",
+      "usageRequests": 8500,
+      "throttledRequests": 210,
+      "activeApps": null
+    },
+    {
+      "usageDateTime": "2026-02-04T00:00:00Z",
+      "serviceArea": "OneDrive and SharePoint",
+      "tenantId": "12345678-1234-1234-1234-123456789abc",
+      "appId": "ab9b8c07-8f02-4f72-87fa-80105867a763",
+      "usageRequests": 4500,
+      "throttledRequests": 90,
+      "activeApps": null
+    }
+  ]
+}
+```
+
+### Example 8: Get throttling report filtered by application ID (CSV format)
+
+#### Request
+
+The following example shows a request that returns the throttling report for a specific application. Because an `appId` filter is specified, only detail rows are returned and the summary row is excluded.
+
+<!-- {
+  "blockType": "request",
+  "name": "reportroot_getsharepointapiusage_throttling_filter"
+}
+-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/reports/getSharePointApiUsage(period='D7',reportType='throttlingReport',appId='00000003-0000-0ff1-ce00-000000000000')?$format=text/csv
+```
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "stream"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: text/csv
+
+UsageDateTime,ServiceArea,TenantId,AppId,UsageRequests,ThrottledRequests,ActiveApps
+2026-02-04T00:00:00Z,OneDrive and SharePoint,12345678-1234-1234-1234-123456789abc,00000003-0000-0ff1-ce00-000000000000,8500,210,
+2026-02-03T00:00:00Z,OneDrive and SharePoint,12345678-1234-1234-1234-123456789abc,00000003-0000-0ff1-ce00-000000000000,7000,180,
+```
+
+### Example 9: No data available
 
 #### Request
 
@@ -381,7 +523,7 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 7: Error - Missing both parameters
+### Example 10: Error - Missing both parameters
 
 #### Request
 
@@ -415,7 +557,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 8: Error - Both parameters provided
+### Example 11: Error - Both parameters provided
 
 #### Request
 
@@ -450,7 +592,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 9: Error - Invalid period
+### Example 12: Error - Invalid period
 
 #### Request
 
@@ -485,7 +627,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 10: Error - Tenant not onboarded for preview
+### Example 13: Error - Tenant not onboarded for preview
 
 #### Request
 
@@ -516,6 +658,46 @@ Content-Type: application/json
   "error": {
     "code": "accessDenied",
     "message": "Tenant {tenantId} is not enabled for this preview feature."
+  }
+}
+```
+
+### Example 14: Error - Report type not enabled for the tenant
+
+#### Request
+
+The following example shows a request for a report type that the tenant hasn't enabled (onboarded).
+<!-- {
+  "blockType": "request",
+  "name": "reportroot_getsharepointapiusage_error_reporttypenotenabled"
+}
+-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/reports/getSharePointApiUsage(period='D7',reportType='throttlingReport')
+```
+
+#### Response
+
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.error"
+}
+-->
+```http
+HTTP/1.1 403 Forbidden
+Content-Type: application/json
+
+{
+  "error": {
+    "code": "accessDenied",
+    "message": "Tenant is not enabled for this report type.",
+    "innerError": {
+      "date": "2026-06-25T22:53:30",
+      "request-id": "2b4784fc-4d55-4d4c-94f8-09edab9db300",
+      "client-request-id": "526cdd74-ba54-2e21-debe-72a65718a7b9"
+    }
   }
 }
 ```
