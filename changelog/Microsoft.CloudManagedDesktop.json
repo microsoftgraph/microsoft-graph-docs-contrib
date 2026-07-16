@@ -3,6 +3,56 @@
     {
       "ChangeList": [
         {
+          "Id": "9b2be02b-bce1-432d-be58-7dccb317e229",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcOrganizationActionStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcOrganizationActionStatus](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcorganizationactiondetail?view=graph-rest-beta) enumeration type.",
+          "Target": "cloudPcOrganizationActionStatus"
+        },
+        {
+          "Id": "9b2be02b-bce1-432d-be58-7dccb317e229",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "cloudPcOrganizationActionType",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcOrganizationActionType](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcorganizationactiondetail?view=graph-rest-beta) enumeration type.",
+          "Target": "cloudPcOrganizationActionType"
+        },
+        {
+          "Id": "9b2be02b-bce1-432d-be58-7dccb317e229",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPcOrganizationActionDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPcOrganizationActionDetail](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcorganizationactiondetail?view=graph-rest-beta) resource.",
+          "Target": "cloudPcOrganizationActionDetail"
+        },
+        {
+          "Id": "9b2be02b-bce1-432d-be58-7dccb317e229",
+          "ApiChange": "Method",
+          "ChangedApiName": "organizationAction",
+          "ChangeType": "Addition",
+          "Description": "Added the [organizationAction](https://learn.microsoft.com/en-us/graph/api/cloudpc-organizationaction?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+          "Target": "cloudPC"
+        },
+        {
+          "Id": "9b2be02b-bce1-432d-be58-7dccb317e229",
+          "ApiChange": "Method",
+          "ChangedApiName": "retrieveOrganizationActionDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [retrieveOrganizationActionDetail](https://learn.microsoft.com/en-us/graph/api/cloudpc-retrieveorganizationactiondetail?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+          "Target": "cloudPC"
+        }
+      ],
+      "Id": "9b2be02b-bce1-432d-be58-7dccb317e229",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-03-05T13:17:57.0099938Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "86b3c165-21dc-4b88-939d-0335f7dc23f1",
           "ApiChange": "Property",
           "ChangedApiName": "lastLogoffDateTime",
@@ -5751,7 +5801,7 @@
           "ApiChange": "Member",
           "ChangedApiName": "remoteConnectionQualityReports",
           "ChangeType": "Addition",
-          "Description": "Added the Â´remoteConnectionQualityReportsÂ´ member to the **cloudPcReportName** enumeration type.",
+          "Description": "Added the `remoteConnectionQualityReports` member to the **cloudPcReportName** enumeration type.",
           "Target": "cloudPcReportName"
         },
         {
@@ -5971,7 +6021,7 @@
           "ApiChange": "Enum type",
           "ChangedApiName": "cloudPcReportName",
           "ChangeType": "Change",
-          "Description": "Added the Â´noLicenseAvailableConnectivityFailureReportÂ´ member to the **cloudPcReportName** enumeration type.",
+          "Description": "Added the `noLicenseAvailableConnectivityFailureReport` member to the **cloudPcReportName** enumeration type.",
           "Target": "cloudPcReportName"
         }
       ],
@@ -6689,7 +6739,7 @@
           "ApiChange": "Enum type",
           "ChangedApiName": "cloudPcReportName",
           "ChangeType": "Change",
-          "Description": "Added the Â´sharedUseLicenseUsageReportÂ´ and Â´sharedUseLicenseUsageRealTimeReportÂ´ members to the **cloudPcReportName** enumeration type.",
+          "Description": "Added the `sharedUseLicenseUsageReport` and `sharedUseLicenseUsageRealTimeReport` members to the **cloudPcReportName** enumeration type.",
           "Target": "cloudPcReportName"
         },
         {
