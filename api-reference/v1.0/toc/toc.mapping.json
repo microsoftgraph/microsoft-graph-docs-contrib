@@ -896,6 +896,12 @@
                 "accessPackageSuggestion",
                 "availableAccessPackage",
                 "connectedOrganization",
+                "customDataProvidedResource",
+                "customDataProvidedResourceAccessReviewUploadSession",
+                "customDataProvidedResourceFile",
+                "customDataProvidedResourceUploadSession",
+                "customDataProvidedResourceUploadSessionRequest",
+                "customDataProvidedResourceUploadStats",
                 "endUserSettings",
                 "entitlementManagementSettings"
               ]

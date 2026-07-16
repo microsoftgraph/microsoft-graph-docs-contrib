@@ -35,6 +35,17 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 - Added the `User.Create` permission as the least privileged permission to [create a user](/graph/api/user-post-users).
 - Added the `User.ReadUpdate.All` permission as the least privileged permission to [update a user](/graph/api/user-update).
 
+### Identity and access | Governance
+
+Promoted the **Bring Your Own Data (BYOD) Upload** APIs from beta to v1.0, enabling upload of external access data for access reviews. The promoted surface includes:
+
+- [customDataProvidedResourceUploadSession](/graph/api/resources/customdataprovidedresourceuploadsession) base resource and [customDataProvidedResourceAccessReviewUploadSession](/graph/api/resources/customdataprovidedresourceaccessreviewuploadsession) derived type
+- [customDataProvidedResourceFile](/graph/api/resources/customdataprovidedresourcefile), [customDataProvidedResourceUploadStats](/graph/api/resources/customdataprovidedresourceuploadstats), and [customDataProvidedResourceUploadSessionRequest](/graph/api/resources/customdataprovidedresourceuploadsessionrequest) resources
+- Supporting resource types: [data](/graph/api/resources/customdataprovidedresourcepayloads-data), [accessReviewContextDataBase](/graph/api/resources/customdataprovidedresourcepayloads-accessreviewcontextdatabase), [accessReviewContextData](/graph/api/resources/customdataprovidedresourcepayloads-accessreviewcontextdata), and [applyDecisionContextData](/graph/api/resources/customdataprovidedresourcepayloads-applydecisioncontextdata)
+- [uploadFile](/graph/api/customdataprovidedresourceuploadsession-uploadfile) action
+- **uploadSessions** navigation property on [accessPackageResource](/graph/api/resources/accesspackageresource)
+- [customDataProvidedResourceUploadStatus](/graph/api/resources/enums#customdataprovidedresourceuploadstatus-values) enumeration
+
 ## July 2026: New in preview only
 
 ### Change notifications
@@ -117,6 +128,14 @@ Evaluate applications in the Microsoft Entra application gallery by using the [a
 ### Identity and access | Directory management
 
 - Added the [deviceRegistrationPolicy](/graph/api/resources/deviceregistrationpolicy) resource type and related methods to manage the policy that controls device registration quota restrictions, additional authentication, and authorization policies for your Microsoft Entra tenant.
+- Added the [Get](/graph/api/accesspackagesubject-get) and [Update](/graph/api/accesspackagesubject-update) methods to the [accessPackageSubject](/graph/api/resources/accesspackagesubject) resource type to manage the subject lifecycle of external directory users in Microsoft Entra entitlement management.
+- Added the **type** property to the [accessPackageResourceRole](/graph/api/resources/accesspackageresourcerole) resource to indicate whether an Azure resource role is active or eligible, enabling PIM-based role assignments for Azure resources in access packages.
+- Added the [accessPackageSuggestion](/graph/api/resources/accesspackagesuggestion) resource type and related methods for discovering suggested access packages based on related people insights and assignment history. Use the [filterByCurrentUser](/graph/api/accesspackagesuggestions-filterbycurrentuser) function to retrieve personalized suggestions.
+- Added the **approverInformationVisibility** property to the [accessPackageApprovalStage](/graph/api/resources/accesspackageapprovalstage) resource to control whether approver information is visible to requestors.
+- Added the [endUserSettings](/graph/api/resources/endusersettings) resource type and related methods for configuring access package suggestion behavior, including related people insight levels and approver detail visibility.
+- Added workflow preview operations to the [workflow](/graph/api/resources/identitygovernance-workflow) resource type in Lifecycle Workflows, enabling you to validate tasks and run workflows in preview mode without affecting production users.
+- Added the [customDataProvidedResourceUploadSession](/graph/api/resources/customdataprovidedresourceuploadsession) resource type and related methods for uploading external access data (Bring Your Own Data) for access reviews.
+- Added the [customDataProvidedResource](/graph/api/resources/customdataprovidedresource) resource type, an access package resource that represents an external application whose access data is provided through the Bring Your Own Data (BYOD) flow for catalog user access reviews.
 
 ### Identity and access | Identity and sign-in
 
