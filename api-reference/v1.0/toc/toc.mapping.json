@@ -475,6 +475,7 @@
             "cloudPcGalleryImage",
             "cloudPcProvisioningPolicy",
             "cloudPcReport",
+            "cloudPcServicePlan",
             "cloudPcUserSetting"
           ],
           "complexTypes": [

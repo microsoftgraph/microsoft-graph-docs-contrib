@@ -1,24 +1,20 @@
 ---
 title: "List servicePlans"
 description: "List the currently available service plans that an organization can purchase for their Cloud PCs."
-author: "RuiHou105"
+author: "johnnyjiang1"
 ms.localizationpriority: medium
 ms.subservice: "cloud-pc"
 doc_type: apiPageType
-ms.date: 04/04/2024
+ms.date: 06/08/2026
 ---
 
 # List servicePlans
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 List the currently available [service plans](../resources/cloudpcserviceplan.md) that an organization can purchase for their Cloud PCs.
 
 For examples of currently available service plans, see [Windows 365 compare plans and pricing](https://www.microsoft.com/windows-365/business/compare-plans-pricing). Currently, the Microsoft Graph API is available for Windows 365 Enterprise.
-
-[!INCLUDE [national-cloud-support](../../includes/global-us-l4.md)]
 
 ## Permissions
 
@@ -59,9 +55,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Example
 
 ### Request
-
-
-# [HTTP](#tab/http)
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_servicePlans"
@@ -69,41 +63,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/servicePlans
+GET https://graph.microsoft.com/v1.0/deviceManagement/virtualEndpoint/servicePlans
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-serviceplans-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-serviceplans-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-serviceplans-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-serviceplans-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-serviceplans-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-serviceplans-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/list-serviceplans-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
-
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -122,11 +86,9 @@ Content-Type: application/json
       "@odata.type": "#microsoft.graph.cloudPcServicePlan",
       "id": "dea1edd3-edd3-dea1-d3ed-a1ded3eda1de",
       "displayName": "Cloud PC - Level 1 - 1vCPU/2GB",
-      "type": "enterprise",
       "vCpuCount": 1,
       "ramInGB": 2,
-      "storageInGB": 64,
-      "userProfileInGB": 25
+      "storageInGB": 64
     }
   ]
 }
