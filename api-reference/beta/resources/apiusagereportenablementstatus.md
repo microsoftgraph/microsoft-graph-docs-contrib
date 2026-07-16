@@ -20,7 +20,7 @@ Represents the enablement status of a specific API usage report metric for Share
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|metric|String|The name of the API usage report metric. Currently, only `EgressReport` is supported.|
+|metric|String|The name of the API usage report metric. The supported values are: `egressReport`, `throttlingReport`.|
 |onboardingStatus|apiUsageReportOnboardingStatus|The current onboarding status of the metric. The possible values are: `enabling`, `enabled`, `disabling`, `disabled`, `unknownFutureValue`.|
 
 ## Relationships

@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "9d04abdc-5136-41f1-b5a0-e15965b2e120",
+          "ApiChange": "Method",
+          "ChangedApiName": "getSharePointApiUsage",
+          "ChangeType": "Change",
+          "Description": "Updated the [getSharePointApiUsage](https://learn.microsoft.com/en-us/graph/api/reportroot-getsharepointapiusage?view=graph-rest-beta) method to support the optional `reportType` parameter, which selects between the `egressReport` and `throttlingReport` usage reports.",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "9d04abdc-5136-41f1-b5a0-e15965b2e120",
+          "ApiChange": "Property",
+          "ChangedApiName": "throttledRequests",
+          "ChangeType": "Addition",
+          "Description": "Added the **throttledRequests** property to the [sharePointApiUsageDataPoint](https://learn.microsoft.com/en-us/graph/api/resources/sharepointapiusagedatapoint?view=graph-rest-beta) resource. This property is returned in the `throttlingReport`.",
+          "Target": "sharePointApiUsageDataPoint"
+        }
+      ],
+      "Id": "9d04abdc-5136-41f1-b5a0-e15965b2e120",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-07-15T22:47:57.3874986Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "bc5518cc-5349-4f8f-8743-40f8fc7812fd",
           "ApiChange": "Method",
           "ChangedApiName": "getByUser",
