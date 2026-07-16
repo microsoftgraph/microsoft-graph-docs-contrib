@@ -50,7 +50,7 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|metric|String|The name of the API usage report metric to enable. Currently, only `EgressReport` is supported. Required.|
+|metric|String|The name of the API usage report metric to enable. The supported values are: `egressReport`, `throttlingReport`. Required.|
 
 ## Response
 
@@ -72,7 +72,7 @@ POST https://graph.microsoft.com/beta/admin/reportSettings/sharePoint/enableApiU
 Content-Type: application/json
 
 {
-  "metric": "EgressReport"
+  "metric": "egressReport"
 }
 ```
 
@@ -118,7 +118,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.apiUsageReportEnablementStatus",
-  "metric": "EgressReport",
+  "metric": "egressReport",
   "onboardingStatus": "enabling"
 }
 ```
