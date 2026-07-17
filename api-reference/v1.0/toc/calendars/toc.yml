@@ -390,6 +390,8 @@ items:
       href: ../../resources/mailboxdetails.md
     - name: Place mode
       href: ../../resources/placemode.md
+    - name: Place service plan info
+      href: ../../resources/placeserviceplaninfo.md
     - name: Reservable place mode
       href: ../../resources/reservableplacemode.md
     - name: Resource link

@@ -158,6 +158,11 @@ Evaluate applications in the Microsoft Entra application gallery by using the [a
 
 - Added the [Overview of the mailbox import and export APIs in Microsoft Graph](/graph/mailbox-import-export-concept-overview) to help you build solutions for mailbox import and export scenarios.
 
+### People and workplace intelligence | Places
+
+- Added the **servicePlans** property to the [desk](/graph/api/resources/desk) resource to manage the service plans associated with workspace desks.
+- Added the **placeId** property to the [place](/graph/api/resources/place) resource to provide a stable identifier across place types.
+
 ### Security | Alerts and incidents
 
 - Added the migration guide [Migrate from legacy alerts to the alerts and incidents API](/graph/alertsv1-alertsv2-migration) to help you transition your apps from the deprecated Microsoft Graph security alerts v1 API to the new alerts and incidents API.
