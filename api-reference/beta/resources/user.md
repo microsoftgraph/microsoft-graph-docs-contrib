@@ -175,6 +175,7 @@ The [agentUser](../resources/agentuser.md) resource inherits from this resource.
 | **Sponsors** |||
 | [Assign](../api/user-post-sponsors.md) | None | Assign a user a sponsor. |
 | [List](../api/user-list-sponsors.md) | [directoryObject](../resources/directoryobject.md) collection | Get the users and groups who are this user's sponsors. |
+| [List sponsorOf](../api/user-list-sponsorof.md) | [directoryObject](../resources/directoryobject.md) collection | Get the directory objects that this user sponsors. |
 | [Remove](../api/user-delete-sponsors.md) | None | Remove a user's sponsor. |
 | [List invited by](../api/user-list-invitedby.md)|[directoryObject](../resources/directoryobject.md)|Get the user or service principal that invited the specified user into the tenant.|
 | **Teamwork** |||
@@ -408,6 +409,7 @@ For example, Cameron is an administrator of a directory for an elementary school
 |security|[security](security.md) |Nullable.|
 |settings|[userSettings](usersettings.md) | Read-only. Nullable.|
 |solutions|[userSolutionRoot](../resources/usersolutionroot.md)| Represents a user's custom solution entity. Read-Only. Nullable.|
+|sponsorOf|[directoryObject](../resources/directoryobject.md) collection|Directory objects that this user sponsors, such as guest users, agent users, agent blueprints, agent blueprint principals, and agent identities. If the user is a member of a group that's a sponsor, the objects sponsored by that group are also included. Read-only. Nullable. Supports `$filter`, `$count`, `$select`, `$expand`, `$top`, and `$skip`.|
 |sponsors|[directoryObject](../resources/directoryobject.md) collection|The users and groups responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated. (HTTP Methods: GET, POST, DELETE.). Supports `$expand`.|
 |teamwork|[userTeamwork](userteamwork.md)| A container for Microsoft Teams features available for the user. Read-only. Nullable.|
 |todo|[todo](todo.md)|Represents the To Do services available to a user. |

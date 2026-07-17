@@ -929,6 +929,15 @@ Namespace: microsoft.graph
 | assignmentOneDayBeforeExpiration |
 | unknownFutureValue |
 
+### customDataProvidedResourceUploadStatus values
+
+| Member |
+| ---- |
+| active |
+| complete |
+| expired |
+| unknownFutureValue |
+
 ### customExtensionCalloutInstanceStatus values
 
 | Member |

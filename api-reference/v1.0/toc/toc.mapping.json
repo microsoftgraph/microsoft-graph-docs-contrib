@@ -475,6 +475,7 @@
             "cloudPcGalleryImage",
             "cloudPcProvisioningPolicy",
             "cloudPcReport",
+            "cloudPcServicePlan",
             "cloudPcUserSetting"
           ],
           "complexTypes": [
@@ -896,6 +897,12 @@
                 "accessPackageSuggestion",
                 "availableAccessPackage",
                 "connectedOrganization",
+                "customDataProvidedResource",
+                "customDataProvidedResourceAccessReviewUploadSession",
+                "customDataProvidedResourceFile",
+                "customDataProvidedResourceUploadSession",
+                "customDataProvidedResourceUploadSessionRequest",
+                "customDataProvidedResourceUploadStats",
                 "endUserSettings",
                 "entitlementManagementSettings"
               ]
