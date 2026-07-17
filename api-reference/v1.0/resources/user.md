@@ -137,6 +137,7 @@ This resource supports:
 | **Sponsors** | | |
 | [Assign](../api/user-post-sponsors.md) | None | Assign a user a sponsor. |
 | [List](../api/user-list-sponsors.md) | [directoryObject](../resources/directoryobject.md) collection | Get the users and groups who are this user's sponsors. |
+| [List sponsorOf](../api/user-list-sponsorof.md) | [directoryObject](../resources/directoryobject.md) collection | Get the directory objects that this user sponsors. |
 | [Remove](../api/user-delete-sponsors.md) | None | Remove a user's sponsor. |
 | **Teamwork** |  |  |
 | [List associated teams](../api/associatedteaminfo-list.md) | [associatedTeamInfo](associatedteaminfo.md) collection | Get the list of teams in Microsoft Teams that a user is associated with. |
@@ -340,6 +341,7 @@ For example: Cameron is the administrator of a directory for an elementary schoo
 |planner|[plannerUser](planneruser.md)| Entry-point to the Planner resource that might exist for a user. Read-only.|
 |registeredDevices|[directoryObject](directoryobject.md) collection|Devices that are registered for the user. Read-only. Nullable. Supports `$expand` and returns up to 100 objects.|
 |solutions|[userSolutionRoot](../resources/usersolutionroot.md)|The identifier that relates the user to the working time schedule triggers. Read-Only. Nullable|
+|sponsorOf|[directoryObject](../resources/directoryobject.md) collection|Directory objects that this user sponsors, such as guest users, agent users, agent blueprints, agent blueprint principals, and agent identities. If the user is a member of a group that's a sponsor, the objects sponsored by that group are also included. Read-only. Nullable. Supports `$filter`, `$count`, `$select`, `$expand`, `$top`, and `$skip`.|
 |sponsors|[directoryObject](../resources/directoryobject.md) collection|The users and groups responsible for this guest's privileges in the tenant and keeping the guest's information and access updated. (HTTP Methods: GET, POST, DELETE.). Supports `$expand`.|
 |teamwork|[userTeamwork](userteamwork.md)| A container for Microsoft Teams features available for the user. Read-only. Nullable.|
 |todo|[todo](todo.md)|Represents the To Do services available to a user. |

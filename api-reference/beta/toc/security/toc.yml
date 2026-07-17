@@ -264,8 +264,6 @@ items:
   items:
   - name: Overview
     href: ../../resources/security-casemanagementroot.md
-  - name: Case management root
-    href: ../../resources/security-casemanagementroot.md
   - name: Case management entity
     href: ../../resources/security-casemanagement-casemanagemententity.md
   - name: Case
@@ -304,6 +302,40 @@ items:
     href: ../../resources/security-casemanagement-comment.md
   - name: Audit log
     href: ../../resources/security-casemanagement-auditlog.md
+  - name: Activity resource details
+    href: ../../resources/security-casemanagement-activityresourcedetails.md
+  - name: Modified property
+    href: ../../resources/security-casemanagement-modifiedproperty.md
+  - name: Value property
+    href: ../../resources/security-casemanagement-valueproperty.md
+  - name: String value property
+    href: ../../resources/security-casemanagement-stringvalueproperty.md
+  - name: Boolean value property
+    href: ../../resources/security-casemanagement-booleanvalueproperty.md
+  - name: Alert counts
+    href: ../../resources/security-casemanagement-alertcounts.md
+  - name: Alert status counts
+    href: ../../resources/security-casemanagement-alertstatuscounts.md
+  - name: Incident severity counts
+    href: ../../resources/security-casemanagement-incidentseveritycounts.md
+  - name: Impacted assets counts
+    href: ../../resources/security-casemanagement-impactedassetscounts.md
+  - name: Investigation
+    href: ../../resources/security-casemanagement-investigation.md
+  - name: Custom field values
+    href: ../../resources/security-casemanagement-customfieldvalues.md
+  - name: Custom field value
+    href: ../../resources/security-casemanagement-customfieldvalue.md
+  - name: Custom field string value
+    href: ../../resources/security-casemanagement-customfieldstringvalue.md
+  - name: Custom field number value
+    href: ../../resources/security-casemanagement-customfieldnumbervalue.md
+  - name: Custom field date time value
+    href: ../../resources/security-casemanagement-customfielddatetimevalue.md
+  - name: Custom field options value
+    href: ../../resources/security-casemanagement-customfieldoptionsvalue.md
+  - name: Attachment origin
+    href: ../../resources/security-casemanagement-attachmentorigin.md
   - name: Attachment
     items:
     - name: Attachment
