@@ -230,6 +230,8 @@ items:
       href: ../../api/user-post-sponsors.md
     - name: List
       href: ../../api/user-list-sponsors.md
+    - name: List sponsorOf
+      href: ../../api/user-list-sponsorof.md
     - name: Remove
       href: ../../api/user-delete-sponsors.md
   - name: Teamwork

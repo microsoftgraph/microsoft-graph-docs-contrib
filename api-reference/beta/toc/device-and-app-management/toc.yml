@@ -220,6 +220,10 @@ items:
       href: ../../api/cloudpc-getcloudpclaunchinfo.md
     - name: Retrieve frontline Cloud PC detail
       href: ../../api/cloudpc-retrievefrontlinecloudpcdetail.md
+    - name: Trigger a Cloud PC organization action
+      href: ../../api/cloudpc-organizationaction.md
+    - name: Retrieve a Cloud PC organization action detail
+      href: ../../api/cloudpc-retrieveorganizationactiondetail.md
   - name: Cloud PC agent pool
     href: ../../resources/cloudpcagentpool.md
   - name: Cloud PC agent pool user assignment
@@ -366,6 +370,8 @@ items:
       href: ../../api/cloudpconpremisesconnection-runhealthcheck.md
     - name: Update Active Directory domain password
       href: ../../api/cloudpconpremisesconnection-updateaddomainpassword.md
+  - name: Cloud PC organization action detail
+    href: ../../resources/cloudpcorganizationactiondetail.md
   - name: Cloud PC organization settings
     items:
     - name: Cloud PC organization settings

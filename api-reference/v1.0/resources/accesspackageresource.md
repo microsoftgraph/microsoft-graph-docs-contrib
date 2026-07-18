@@ -12,7 +12,7 @@ ms.date: 07/22/2024
 
 Namespace: microsoft.graph
 
-In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), an access package resource is a reference to a resource associated with an access package catalog. The roles for the access package resource can be used in one or more access packages. To request to associate a resource with an access package catalog, or remove a resource from a catalog, create an [accessPackageResourceRequest](accesspackageresourcerequest.md).
+In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), an access package resource is a reference to a resource associated with an access package catalog for which an access package can be configured to provide access. This can be a group, an app, a SharePoint Online site, or an external application represented by [customDataProvidedResource](customdataprovidedresource.md). To request an access package resource, or remove a resource from an access package, create an [accessPackageResourceRequest](accesspackageresourcerequest.md).
 
 ## Methods
 
@@ -20,6 +20,9 @@ In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), 
 |:-------------|:------------|:------------|
 | [List](../api/accesspackagecatalog-list-resources.md) | [accessPackageResource](accesspackageresource.md) collection | Retrieve a list of accessPackageResource objects in a catalog. |
 | [Refresh](../api/accesspackageresource-refresh.md)|None|Refresh the resource information from the originSystem.|
+| [List uploadSessions](../api/accesspackageresource-list-uploadsessions.md) | [customDataProvidedResourceUploadSession](../resources/customdataprovidedresourceuploadsession.md) collection | Get a list of the upload sessions created on an accessPackageResource. |
+| [Create customDataProvidedResourceUploadSession](../api/accesspackageresource-post-uploadsessions.md) | [customDataProvidedResourceUploadSession](../resources/customdataprovidedresourceuploadsession.md) | Create a new upload session on an accessPackageResource. |
+| [Delete customDataProvidedResourceUploadSession](../api/accesspackageresource-delete-uploadsessions.md) | None | Delete an upload session from an accessPackageResource. |
 
 ## Properties
 
@@ -41,6 +44,7 @@ In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), 
 |environment|[accessPackageResourceEnvironment](../resources/accesspackageresourceenvironment.md)|Contains the environment information for the resource. This can be set using either the `@odata.bind` annotation or the environment's *originId*.Supports `$expand`.|
 |roles|[accessPackageResourceRole](accesspackageresourcerole.md) collection| Read-only. Nullable. Supports `$expand`.|
 |scopes|[accessPackageResourceScope](accesspackageresourcescope.md) collection| Read-only. Nullable. Supports `$expand`.|
+|uploadSessions|[customDataProvidedResourceUploadSession](../resources/customdataprovidedresourceuploadsession.md) collection|The upload sessions for uploading external access data to this resource through the Bring Your Own Data (BYOD) flow.|
 
 ## JSON representation
 

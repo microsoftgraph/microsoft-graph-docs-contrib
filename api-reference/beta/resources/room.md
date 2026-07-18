@@ -42,6 +42,7 @@ For the list of supported methods, see [place](./place.md).
 |nickname |String |A short, friendly name for the **room**, often used for easier identification or display in UI. |
 |parentId |String |The ID of a parent [floor](./floor.md) or [section](./section.md). Inherited from [place](../resources/place.md). |
 |phone |String |The phone number of the **room**. Inherited from [place](../resources/place.md).|
+|placeId |String |A stable service-level identifier for the **room** object used by Places workloads. Inherited from [place](../resources/place.md). |
 |tags |String collection |Custom tags that are associated with the **room** for categorization or filtering. Inherited from [place](../resources/place.md).|
 |teamsEnabledState |placeFeatureEnablement |A state that indicates whether the room is enabled for Microsoft Teams. The possible values are: `unknown`, `enabled`, `disabled`, `unknownFutureValue`.|
 |videoDeviceName |String |The name of the video device that is available in the **room**. |
@@ -90,6 +91,7 @@ The following JSON representation shows the resource type.
   "nickname": "String",
   "parentId": "String",
   "phone": "String",
+  "placeId": "String (alternative identifier)",
   "tags": ["String"],
   "teamsEnabledState": "String",
   "videoDeviceName": "String"

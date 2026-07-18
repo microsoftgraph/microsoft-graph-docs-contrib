@@ -22,7 +22,7 @@ For examples of currently available service plans, see [Windows 365 compare plan
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List](../api/virtualendpoint-list-serviceplans.md)|[cloudPcServicePlan](../resources/cloudpcserviceplan.md) collection|List the currently available service plans that the organization can purchase for the Cloud PCs.|
+|[List](../api/virtualendpoint-list-serviceplans.md)|[cloudPcServicePlan](../resources/cloudpcserviceplan.md) collection|List the currently available [service plans](../resources/cloudpcserviceplan.md) that an organization can purchase for their Cloud PCs.|
 
 ## Properties
 
@@ -33,7 +33,7 @@ For examples of currently available service plans, see [Windows 365 compare plan
 |provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|Specifies the type of license used when provisioning Cloud PCs. By default, the license type is `dedicated`. The possible values are: `dedicated`, `shared`, `unknownFutureValue`, `sharedByUser`, `sharedByEntraGroup`, `reserve`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `sharedByUser`, `sharedByEntraGroup`, `reserve`. The `shared` member is deprecated and will stop returning on April 30, 2027; going forward, use the `sharedByUser` member.|
 |ramInGB|Int32|The size of the RAM in GB. Read-only.|
 |supportedSolution|[cloudPcManagementService](../resources/cloudpconpremisesconnection.md#cloudpcmanagementservice-values)|The supported service or solution for the region. The possible values are: `windows365`, `devBox`, `rpaBox`, `microsoft365Opal`, `microsoft365BizChat`, `unknownFutureValue`. Read-only.|
-|storageInGB|Int32|The size of the OS Disk in GB. Read-only.|
+|storageInGB|Int32|The size of the operating system disk in GB. Read-only.|
 |type|[cloudPcServicePlanType](#cloudpcserviceplantype-values)|The type of the service plan. The possible values are: `enterprise`, `business`, `unknownFutureValue`. Read-only.|
 |userProfileInGB|Int32|The size of the user profile disk in GB. Read-only.|
 |vCpuCount|Int32|The number of vCPUs. Read-only.|
