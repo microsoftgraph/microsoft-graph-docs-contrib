@@ -3,6 +3,146 @@
     {
       "ChangeList": [
         {
+          "Id": "faacff08-2ce3-4f6d-a724-c8c581e5c4c3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customDataProvidedResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [customDataProvidedResource](https://learn.microsoft.com/en-us/graph/api/resources/customdataprovidedresource) resource, a derived type of [accessPackageResource](https://learn.microsoft.com/en-us/graph/api/resources/accesspackageresource), to the v1.0 endpoint.",
+          "Target": "customDataProvidedResource"
+        },
+        {
+          "Id": "faacff08-2ce3-4f6d-a724-c8c581e5c4c3",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "catalogs",
+          "ChangeType": "Addition",
+          "Description": "Added the **catalogs** relationship to the [identityGovernance](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance) resource in v1.0.",
+          "Target": "identityGovernance"
+        }
+      ],
+      "Id": "faacff08-2ce3-4f6d-a724-c8c581e5c4c3",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-07-16T16:18:47.9270476Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "82f50cff-b5e6-45af-9831-aa5519d38852",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "customDataProvidedResourceUploadStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **customDataProvidedResourceUploadStatus** enumeration type to the v1.0 endpoint.",
+          "Target": "customDataProvidedResourceUploadStatus"
+        },
+        {
+          "Id": "82f50cff-b5e6-45af-9831-aa5519d38852",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customDataProvidedResourceUploadSession",
+          "ChangeType": "Addition",
+          "Description": "Added the [customDataProvidedResourceUploadSession](https://learn.microsoft.com/en-us/graph/api/resources/customdataprovidedresourceuploadsession) resource to the v1.0 endpoint.",
+          "Target": "customDataProvidedResourceUploadSession"
+        },
+        {
+          "Id": "82f50cff-b5e6-45af-9831-aa5519d38852",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customDataProvidedResourceAccessReviewUploadSession",
+          "ChangeType": "Addition",
+          "Description": "Added the [customDataProvidedResourceAccessReviewUploadSession](https://learn.microsoft.com/en-us/graph/api/resources/customdataprovidedresourceaccessreviewuploadsession) resource to the v1.0 endpoint.",
+          "Target": "customDataProvidedResourceAccessReviewUploadSession"
+        },
+        {
+          "Id": "82f50cff-b5e6-45af-9831-aa5519d38852",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customDataProvidedResourceFile",
+          "ChangeType": "Addition",
+          "Description": "Added the [customDataProvidedResourceFile](https://learn.microsoft.com/en-us/graph/api/resources/customdataprovidedresourcefile) resource to the v1.0 endpoint.",
+          "Target": "customDataProvidedResourceFile"
+        },
+        {
+          "Id": "82f50cff-b5e6-45af-9831-aa5519d38852",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customDataProvidedResourceUploadStats",
+          "ChangeType": "Addition",
+          "Description": "Added the [customDataProvidedResourceUploadStats](https://learn.microsoft.com/en-us/graph/api/resources/customdataprovidedresourceuploadstats) resource to the v1.0 endpoint.",
+          "Target": "customDataProvidedResourceUploadStats"
+        },
+        {
+          "Id": "82f50cff-b5e6-45af-9831-aa5519d38852",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customDataProvidedResourceUploadSessionRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the [customDataProvidedResourceUploadSessionRequest](https://learn.microsoft.com/en-us/graph/api/resources/customdataprovidedresourceuploadsessionrequest) resource to the v1.0 endpoint.",
+          "Target": "customDataProvidedResourceUploadSessionRequest"
+        },
+        {
+          "Id": "82f50cff-b5e6-45af-9831-aa5519d38852",
+          "ApiChange": "Resource",
+          "ChangedApiName": "data",
+          "ChangeType": "Addition",
+          "Description": "Added the [data](https://learn.microsoft.com/en-us/graph/api/resources/customdataprovidedresourcepayloads-data) resource to the v1.0 endpoint.",
+          "Target": "data"
+        },
+        {
+          "Id": "82f50cff-b5e6-45af-9831-aa5519d38852",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewContextDataBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewContextDataBase](https://learn.microsoft.com/en-us/graph/api/resources/customdataprovidedresourcepayloads-accessreviewcontextdatabase) resource to the v1.0 endpoint.",
+          "Target": "accessReviewContextDataBase"
+        },
+        {
+          "Id": "82f50cff-b5e6-45af-9831-aa5519d38852",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewContextData",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewContextData](https://learn.microsoft.com/en-us/graph/api/resources/customdataprovidedresourcepayloads-accessreviewcontextdata) resource to the v1.0 endpoint.",
+          "Target": "accessReviewContextData"
+        },
+        {
+          "Id": "82f50cff-b5e6-45af-9831-aa5519d38852",
+          "ApiChange": "Resource",
+          "ChangedApiName": "applyDecisionContextData",
+          "ChangeType": "Addition",
+          "Description": "Added the [applyDecisionContextData](https://learn.microsoft.com/en-us/graph/api/resources/customdataprovidedresourcepayloads-applydecisioncontextdata) resource to the v1.0 endpoint.",
+          "Target": "applyDecisionContextData"
+        },
+        {
+          "Id": "82f50cff-b5e6-45af-9831-aa5519d38852",
+          "ApiChange": "Method",
+          "ChangedApiName": "uploadFile",
+          "ChangeType": "Addition",
+          "Description": "Added the [uploadFile](https://learn.microsoft.com/en-us/graph/api/customdataprovidedresourceuploadsession-uploadfile) method to the [customDataProvidedResourceUploadSession](https://learn.microsoft.com/en-us/graph/api/resources/customdataprovidedresourceuploadsession) resource in v1.0.",
+          "Target": "customDataProvidedResourceUploadSession"
+        },
+        {
+          "Id": "82f50cff-b5e6-45af-9831-aa5519d38852",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageResource](https://learn.microsoft.com/en-us/graph/api/resources/accesspackageresource) resource to the v1.0 endpoint.",
+          "Target": "accessPackageResource"
+        },
+        {
+          "Id": "82f50cff-b5e6-45af-9831-aa5519d38852",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "uploadSessions",
+          "ChangeType": "Addition",
+          "Description": "Added the **uploadSessions** relationship to the [accessPackageResource](https://learn.microsoft.com/en-us/graph/api/resources/accesspackageresource) resource in v1.0.",
+          "Target": "accessPackageResource"
+        }
+      ],
+      "Id": "82f50cff-b5e6-45af-9831-aa5519d38852",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-07-16T20:35:46.7685215Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "f1cb09f8-0e5b-4fb1-9882-e9017e36754e",
           "ApiChange": "Enumeration",
           "ChangedApiName": "customDataProvidedResourceUploadStatus",

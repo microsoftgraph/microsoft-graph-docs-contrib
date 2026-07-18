@@ -50,6 +50,8 @@ Represents a cloud-managed virtual desktop. This Cloud PC is also enrolled in In
 |[Get frontline access state](../api/cloudpc-getfrontlinecloudpcaccessstate.md)|[frontlineCloudPcAccessState](#frontlinecloudpcaccessstate-values)|Get the access state of the frontline Cloud PC. The possible values are: `unassigned`, `noLicensesAvailable`, `activationFailed`, `active`, `activating`, `standbyMode`, `unknownFutureValue`. The `noLicensesAvailable` member is deprecated and stopped returning on September 30, 2024.|
 |[Get launch info (deprecated)](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPcLaunchInfo](../resources/cloudpclaunchinfo.md)|Get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for a specific Cloud PC that belongs to the current signed-in user. This API is deprecated and will stop returning data on October 30, 2026. Going forward, use the [Retrieve launch detail](../api/cloudpc-retrievecloudpclaunchdetail.md) API.|
 |[Retrieve frontline Cloud PC detail](../api/cloudpc-retrievefrontlinecloudpcdetail.md)|[frontlineCloudPcDetail](../resources/frontlinecloudpcdetail.md)|Get the [frontlineCloudPcDetail](../resources/frontlinecloudpcdetail.md) of a frontline [Cloud PC](../resources/cloudpc.md).|
+|[Trigger a Cloud PC organization action](../api/cloudpc-organizationaction.md)|[cloudPcOrganizationActionDetail](../resources/cloudpcorganizationactiondetail.md)|Trigger a Cloud PC organization action.|
+|[Retrieve a Cloud PC organization action detail](../api/cloudpc-retrieveorganizationactiondetail.md)|[cloudPcOrganizationActionDetail](../resources/cloudpcorganizationactiondetail.md)|Retrieve the details of a [cloudPcOrganizationActionDetail](../resources/cloudpcorganizationactiondetail.md).|
 
 ## Properties
 

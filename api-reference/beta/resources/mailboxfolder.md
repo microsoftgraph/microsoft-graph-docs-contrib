@@ -29,6 +29,7 @@ This resource supports [delta query](/graph/delta-query-overview) to track incre
 |[Get delta](../api/mailboxfolder-delta.md)|[mailboxFolder](../resources/mailboxfolder.md) collection|Get a set of [mailboxFolder](../resources/mailboxfolder.md) objects that were added, deleted, or removed from the user's mailbox.|
 |[List child mailbox folders](../api/mailboxfolder-list-childfolders.md)|[mailboxFolder](../resources/mailboxfolder.md) collection|Get the [mailboxFolder](../resources/mailboxfolder.md) collection under the specified **mailboxFolder** in a mailbox.|
 |[List items in folder](../api/mailboxfolder-list-items.md)|[mailboxItem](../resources/mailboxitem.md) collection|Get the [mailboxItem](../resources/mailboxitem.md) collection within a specified [mailboxFolder](../resources/mailboxfolder.md) in a mailbox.|
+|[Delete item in folder](../api/mailboxfolder-delete-items.md)|None|Delete a [mailboxItem](../resources/mailboxitem.md) from a [mailboxFolder](../resources/mailboxfolder.md) in a mailbox.|
 |**Extended properties**| | |
 |[Create single-value property](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md)|[mailboxFolder](../resources/mailboxfolder.md)|Create one or more single-value extended properties in a new or existing mailbox folder.|
 |[Get single-value property](../api/singlevaluelegacyextendedproperty-get.md)|[mailboxFolder](../resources/mailboxfolder.md)|Get mailbox folders that contain a single-value extended property by using `$expand` or `$filter`.|
