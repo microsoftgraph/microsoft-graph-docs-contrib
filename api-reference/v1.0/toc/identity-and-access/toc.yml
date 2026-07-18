@@ -750,6 +750,16 @@ items:
           href: ../../api/connectedorganization-post-internalsponsors.md
         - name: Remove
           href: ../../api/connectedorganization-delete-internalsponsors.md
+    - name: Custom data provided resource
+      items:
+      - name: Custom data provided resource
+        href: ../../resources/customdataprovidedresource.md
+      - name: List uploadSessions
+        href: ../../api/accesspackageresource-list-uploadsessions.md
+      - name: Create customDataProvidedResourceUploadSession
+        href: ../../api/accesspackageresource-post-uploadsessions.md
+      - name: Delete customDataProvidedResourceUploadSession
+        href: ../../api/accesspackageresource-delete-uploadsessions.md
     - name: Custom data provided resource access review upload session
       href: ../../resources/customdataprovidedresourceaccessreviewuploadsession.md
     - name: Custom data provided resource file

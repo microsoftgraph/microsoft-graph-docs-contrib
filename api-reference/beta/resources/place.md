@@ -45,7 +45,7 @@ Base type of [building](../resources/building.md), [desk](../resources/desk.md),
 |label |String |User-defined description of the **place**.|
 |parentId |String |The ID of a parent **place**. |
 |phone |String |The phone number of the **place**. |
-|placeId |String |An alternative immutable unique identifier of the **place**. Read-only. |
+|placeId |String |A stable service-level identifier for the **place** object used by Places workloads. |
 |tags |String collection |Custom tags that are associated with the **place** for categorization or filtering. |
 
 ## Relationships
