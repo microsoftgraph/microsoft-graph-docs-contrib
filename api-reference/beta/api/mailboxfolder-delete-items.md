@@ -72,6 +72,7 @@ The following example shows how to soft-delete a mailbox item in a folder by usi
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_mailboxitem_softdelete",
@@ -81,6 +82,12 @@ The following example shows a request.
 ```http
 DELETE https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab09c93/folders/inbox/items/AAMkADk0MzI?disposalType=softDelete
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-mailboxitem-softdelete-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -103,6 +110,7 @@ The following example shows how to hard-delete an eligible mailbox item in Recov
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_mailboxitem_harddelete",
@@ -112,6 +120,12 @@ The following example shows a request.
 ```http
 DELETE https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0648f21@aab09c93/folders/recoverableitemsdeletions/items/AAMkADk0MzI?disposalType=hardDelete
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-mailboxitem-harddelete-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

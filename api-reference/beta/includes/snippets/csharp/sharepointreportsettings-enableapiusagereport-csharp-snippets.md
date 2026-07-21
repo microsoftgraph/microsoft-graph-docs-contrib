@@ -11,7 +11,7 @@ using Microsoft.Graph.Beta.Admin.ReportSettings.SharePoint.EnableApiUsageReport;
 
 var requestBody = new EnableApiUsageReportPostRequestBody
 {
-	Metric = "EgressReport",
+	Metric = "egressReport",
 };
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp

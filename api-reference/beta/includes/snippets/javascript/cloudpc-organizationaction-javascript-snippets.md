@@ -10,12 +10,12 @@ const options = {
 
 const client = Client.init(options);
 
-const apiUsageReportEnablementStatus = {
-  metric: 'egressReport'
+const cloudPcOrganizationActionDetail = {
+  actionType: 'activate'
 };
 
-await client.api('/admin/reportSettings/sharePoint/disableApiUsageReport')
+await client.api('/deviceManagement/virtualEndpoint/organizationAction')
 	.version('beta')
-	.post(apiUsageReportEnablementStatus);
+	.post(cloudPcOrganizationActionDetail);
 
 ```

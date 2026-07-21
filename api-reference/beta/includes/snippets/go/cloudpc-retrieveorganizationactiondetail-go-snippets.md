@@ -11,16 +11,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphadmin "github.com/microsoftgraph/msgraph-beta-sdk-go/admin"
 	  //other-imports
 )
 
-requestBody := graphadmin.NewEnableApiUsageReportPostRequestBody()
-metric := "egressReport"
-requestBody.SetMetric(&metric) 
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
-enableApiUsageReport, err := graphClient.Admin().ReportSettings().SharePoint().EnableApiUsageReport().Post(context.Background(), requestBody, nil)
+actionType := "activate"
+retrieveOrganizationActionDetail, err := graphClient.DeviceManagement().VirtualEndpoint().RetrieveOrganizationActionDetailWithActionType(&actionType).Get(context.Background(), nil)
 
 
 ```
