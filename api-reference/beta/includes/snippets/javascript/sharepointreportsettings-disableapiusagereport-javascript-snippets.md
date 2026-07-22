@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const apiUsageReportEnablementStatus = {
-  metric: 'EgressReport'
+  metric: 'egressReport'
 };
 
 await client.api('/admin/reportSettings/sharePoint/disableApiUsageReport')

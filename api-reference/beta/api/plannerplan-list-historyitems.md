@@ -20,11 +20,7 @@ Get the [history](../resources/plannerhistoryitem.md) of changes made to tasks w
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "plannerplan-list-historyitems-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "plannerplan_list_historyitems" } -->
 [!INCLUDE [permissions-table](../includes/permissions/plannerplan-list-historyitems-permissions.md)]
 
 ## HTTP request
@@ -63,6 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following example shows how to get task [history items](../resources/plannerhistoryitem.md) for a plan with a date filter.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_plannerhistoryitem_datefilter"
@@ -71,6 +68,32 @@ The following example shows how to get task [history items](../resources/planner
 ``` http
 GET https://graph.microsoft.com/beta/planner/plans/nETqF5FS2LkCp935s-FIFm2QAFkHM/historyItems?$filter=occurredDateTime gt 2025-11-01T00:00:00Z and occurredDateTime lt 2025-12-01T00:00:00Z
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-plannerhistoryitem-datefilter-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-plannerhistoryitem-datefilter-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-plannerhistoryitem-datefilter-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-plannerhistoryitem-datefilter-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-plannerhistoryitem-datefilter-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-plannerhistoryitem-datefilter-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
