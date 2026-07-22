@@ -12,7 +12,7 @@ use Microsoft\Graph\Beta\Generated\Admin\ReportSettings\SharePoint\EnableApiUsag
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new EnableApiUsageReportPostRequestBody();
-$requestBody->setMetric('EgressReport');
+$requestBody->setMetric('egressReport');
 
 $result = $graphServiceClient->admin()->reportSettings()->sharePoint()->enableApiUsageReport()->post($requestBody)->wait();
 

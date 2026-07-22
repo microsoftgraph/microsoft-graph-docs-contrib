@@ -58,14 +58,21 @@ If successful, this method returns a `200 OK` response code and a collection of 
 #### Request
 
 The following example shows a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_sponsorof"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/025e5e3e-e5b7-4eb4-ba1f-4e5b0579f1a2/sponsorOf
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-sponsorof-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -108,15 +115,22 @@ Content-Type: application/json
 #### Request
 
 The following example shows a request that filters the sponsored objects by user type.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_sponsorof_filter"
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/025e5e3e-e5b7-4eb4-ba1f-4e5b0579f1a2/sponsorOf?$filter=microsoft.graph.user/userType eq 'Guest'
 ConsistencyLevel: eventual
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-sponsorof-filter-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

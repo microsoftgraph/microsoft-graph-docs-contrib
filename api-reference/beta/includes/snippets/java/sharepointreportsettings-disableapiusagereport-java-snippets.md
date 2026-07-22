@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 com.microsoft.graph.beta.admin.reportsettings.sharepoint.disableapiusagereport.DisableApiUsageReportPostRequestBody disableApiUsageReportPostRequestBody = new com.microsoft.graph.beta.admin.reportsettings.sharepoint.disableapiusagereport.DisableApiUsageReportPostRequestBody();
-disableApiUsageReportPostRequestBody.setMetric("EgressReport");
+disableApiUsageReportPostRequestBody.setMetric("egressReport");
 var result = graphClient.admin().reportSettings().sharePoint().disableApiUsageReport().post(disableApiUsageReportPostRequestBody);
 
 

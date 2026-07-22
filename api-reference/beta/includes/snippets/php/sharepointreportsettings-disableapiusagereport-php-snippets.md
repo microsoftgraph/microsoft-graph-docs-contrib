@@ -12,7 +12,7 @@ use Microsoft\Graph\Beta\Generated\Admin\ReportSettings\SharePoint\DisableApiUsa
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new DisableApiUsageReportPostRequestBody();
-$requestBody->setMetric('EgressReport');
+$requestBody->setMetric('egressReport');
 
 $result = $graphServiceClient->admin()->reportSettings()->sharePoint()->disableApiUsageReport()->post($requestBody)->wait();
 

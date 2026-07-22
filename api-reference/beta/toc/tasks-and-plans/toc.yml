@@ -30,6 +30,8 @@ items:
     href: ../../api/plannerplan-delta.md
   - name: Get usage rights
     href: ../../api/plannerplan-getusagerights.md
+  - name: List history items
+    href: ../../api/plannerplan-list-historyitems.md
 - name: Planner task
   items:
   - name: Planner task
@@ -64,6 +66,14 @@ items:
     href: ../../api/plannerbucket-delete.md
   - name: Get delta
     href: ../../api/plannerbucket-delta.md
+- name: Planner history item
+  items:
+  - name: Planner history item
+    href: ../../resources/plannerhistoryitem.md
+  - name: List
+    href: ../../api/plannerplan-list-historyitems.md
+  - name: Task history item
+    href: ../../resources/taskhistoryitem.md
 - name: Planner plan details
   items:
   - name: Planner plan details
@@ -200,8 +210,6 @@ items:
         href: ../../api/businessscenariotask-update.md
       - name: Delete
         href: ../../api/businessscenarioplanner-delete-tasks.md
-- name: Planner history item
-  items: []
 - name: Task formats
   items:
   - name: Planner assigned to task board task format
@@ -336,6 +344,10 @@ items:
     href: ../../resources/plannertaskcompletionrequirementdetails.md
   - name: Planner task creation
     href: ../../resources/plannertaskcreation.md
+  - name: Planner task data
+    href: ../../resources/plannertaskdata.md
+  - name: Planner task details data
+    href: ../../resources/plannertaskdetailsdata.md
   - name: Planner task property rule
     href: ../../resources/plannertaskpropertyrule.md
   - name: Planner task recurrence
