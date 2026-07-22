@@ -2043,6 +2043,9 @@
                 "callRecording",
                 "callTranscript"
               ],
+              "complexTypes": [
+                "cloudVideoInteropInfo"
+              ],
               "childNodes": [
                 {
                   "name": "Virtual appointment",
@@ -2069,6 +2072,7 @@
                 "virtualEventPresenter",
                 "virtualEventRegistration",
                 "virtualEventWebinarRegistrationConfiguration",
+                "virtualEventTownhallRegistrationConfiguration",
                 "virtualEventRegistrationQuestionBase",
                 "virtualEventSession",
                 "virtualEventTownhall",

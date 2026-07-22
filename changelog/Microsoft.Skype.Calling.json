@@ -2,6 +2,160 @@
   "changelog": [ 
     {
       "ChangeList": [
+        {
+          "Id": "bbbf35ea-27b2-47d9-acc4-ab23f6e5f323",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingType",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingType** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "bbbf35ea-27b2-47d9-acc4-ab23f6e5f323",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingType",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingType** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "bbbf35ea-27b2-47d9-acc4-ab23f6e5f323",
+          "ApiChange": "Property",
+          "ChangedApiName": "meetingType",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingType** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventSession"
+        },
+        {
+          "Id": "bbbf35ea-27b2-47d9-acc4-ab23f6e5f323",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "onlineMeetingType",
+          "ChangeType": "Addition",
+          "Description": "Added the **onlineMeetingType** enumeration type.",
+          "Target": "onlineMeetingType"
+        },
+        {
+          "Id": "bbbf35ea-27b2-47d9-acc4-ab23f6e5f323",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudVideoInteropInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudVideoInteropInfo](https://learn.microsoft.com/en-us/graph/api/resources/cloudVideoInteropInfo?view=graph-rest-1.0) resource.",
+          "Target": "cloudVideoInteropInfo"
+        },
+        {
+          "Id": "bbbf35ea-27b2-47d9-acc4-ab23f6e5f323",
+          "ApiChange": "Property",
+          "ChangedApiName": "cloudVideoInteropInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudVideoInteropInfo** property to the [onlineMeetingBase](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeetingBase?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeetingBase"
+        },
+        {
+          "Id": "bbbf35ea-27b2-47d9-acc4-ab23f6e5f323",
+          "ApiChange": "Property",
+          "ChangedApiName": "cloudVideoInteropInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudVideoInteropInfo** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "bbbf35ea-27b2-47d9-acc4-ab23f6e5f323",
+          "ApiChange": "Property",
+          "ChangedApiName": "cloudVideoInteropInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudVideoInteropInfo** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventSession"
+        },
+        {
+          "Id": "bbbf35ea-27b2-47d9-acc4-ab23f6e5f323",
+          "ApiChange": "Property",
+          "ChangedApiName": "isRegistrationRequired",
+          "ChangeType": "Addition",
+          "Description": "Added the **isRegistrationRequired** property to the [virtualEvent](https://learn.microsoft.com/en-us/graph/api/resources/virtualEvent?view=graph-rest-1.0) resource.",
+          "Target": "virtualEvent"
+        },
+        {
+          "Id": "bbbf35ea-27b2-47d9-acc4-ab23f6e5f323",
+          "ApiChange": "Property",
+          "ChangedApiName": "isRegistrationRequired",
+          "ChangeType": "Addition",
+          "Description": "Added the **isRegistrationRequired** property to the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventTownhall?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventTownhall"
+        },
+        {
+          "Id": "bbbf35ea-27b2-47d9-acc4-ab23f6e5f323",
+          "ApiChange": "Property",
+          "ChangedApiName": "isRegistrationRequired",
+          "ChangeType": "Addition",
+          "Description": "Added the **isRegistrationRequired** property to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventWebinar?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventWebinar"
+        },
+        {
+          "Id": "bbbf35ea-27b2-47d9-acc4-ab23f6e5f323",
+          "ApiChange": "Property",
+          "ChangedApiName": "capacity",
+          "ChangeType": "Addition",
+          "Description": "Added the **capacity** property to the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventTownhall?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventTownhall"
+        },
+        {
+          "Id": "bbbf35ea-27b2-47d9-acc4-ab23f6e5f323",
+          "ApiChange": "Property",
+          "ChangedApiName": "capacity",
+          "ChangeType": "Addition",
+          "Description": "Added the **capacity** property to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventSession"
+        },
+        {
+          "Id": "bbbf35ea-27b2-47d9-acc4-ab23f6e5f323",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventTownhallRegistrationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [virtualEventTownhallRegistrationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventTownhallRegistrationConfiguration?view=graph-rest-1.0) resource and an associated method.",
+          "Target": "virtualEventTownhallRegistrationConfiguration"
+        },
+        {
+          "Id": "bbbf35ea-27b2-47d9-acc4-ab23f6e5f323",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "registrationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **registrationConfiguration** relationship to the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventTownhall?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventTownhall"
+        },
+        {
+          "Id": "bbbf35ea-27b2-47d9-acc4-ab23f6e5f323",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "registrations",
+          "ChangeType": "Addition",
+          "Description": "Added the **registrations** relationship to the [virtualEventTownhall](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventTownhall?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventTownhall"
+        },
+       {
+          "Id": "bbbf35ea-27b2-47d9-acc4-ab23f6e5f323",
+          "ApiChange": "Property",
+          "ChangedApiName": "isManualApprovalEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isManualApprovalEnabled** property to the [virtualEventRegistrationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistrationConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventRegistrationConfiguration"
+        },
+        {
+          "Id": "bbbf35ea-27b2-47d9-acc4-ab23f6e5f323",
+          "ApiChange": "Property",
+          "ChangedApiName": "isWaitlistEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isWaitlistEnabled** property to the [virtualEventRegistrationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistrationConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "virtualEventRegistrationConfiguration"
+        }
+      ],
+      "Id": "bbbf35ea-27b2-47d9-acc4-ab23f6e5f323",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-07-22T00:00:00.0000000Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
         { "Id": "d6dafc7e-e1bf-44d0-80be-759a2366c56d",
           "ApiChange": "Resource",
           "ChangedApiName": "cloudVideoInteropInfo",

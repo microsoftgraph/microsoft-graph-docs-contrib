@@ -57,6 +57,7 @@ You can specify the following properties when you create a [virtualEventWebinar]
 | description | [itemBody](../resources/itembody.md) | A description of the webinar. |
 | displayName | String | The display name of the webinar. |
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the webinar ends. |
+| isRegistrationRequired | Boolean | Indicates whether attendee registration is enabled for the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). Optional. |
 | settings | [virtualEventSettings](../resources/virtualeventsettings.md) | The webinar settings. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the webinar starts. |
 
@@ -70,7 +71,6 @@ If successful, this method returns a `201 Created` response code and a [virtualE
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_virtualeventwebinar"
@@ -103,15 +103,10 @@ Content-Type: application/json
     ],
     "settings": {
       "isAttendeeEmailNotificationEnabled": false
-    }
+    },
+    "isRegistrationRequired": true
 }
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-virtualeventwebinar-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -163,6 +158,7 @@ Content-Type: application/json
     "settings": {
       "isAttendeeEmailNotificationEnabled": false
     },
+    "isRegistrationRequired": true,
     "externalEventInformation": []
 }
 ```
