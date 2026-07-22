@@ -32,6 +32,8 @@ GET /planner/tasks
 ## Optional query parameters
 This method requires planId [filter](/graph/query-parameters) to be specified.
 
+When you call this API with application-only permissions, you must scope the request to a single plan by using a `$filter` query parameter of the form `planId eq '{planId}'`, and you must include a `$select` query parameter that specifies exactly these three non-id properties: `percentComplete`, `assignments`, and `creationSource`. For example, `$select=percentComplete,assignments,creationSource`. Selecting a different number of non-id properties returns a `405 Method Not Allowed` response, and selecting three non-id properties other than these returns a `403 Forbidden` response. The **id** property is always returned and can be included in `$select` without counting toward this limit.
+
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
