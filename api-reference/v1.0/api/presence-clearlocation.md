@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Clear the work location signals for a [user](../resources/user.md), including both the manual and automatic layers for the current date.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
