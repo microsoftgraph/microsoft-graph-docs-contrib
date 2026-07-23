@@ -1,6 +1,6 @@
 ---
 title: "virtualEventRegistration: cancel"
-description: "Cancel a registrant's registration record for a webinar."
+description: "Cancel a registrant's registration record for a webinar or town hall."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -11,7 +11,7 @@ ms.date: 08/06/2024
 # virtualEventRegistration: cancel
 Namespace: microsoft.graph
 
-Cancel a registrant's [registration record](../resources/virtualeventregistration.md) for a [webinar](../resources/virtualeventwebinar.md). 
+Cancel a registrant's [registration record](../resources/virtualeventregistration.md) for a [webinar](../resources/virtualeventwebinar.md) or [town hall](../resources/virtualeventtownhall.md). 
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -33,8 +33,17 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
+
+To cancel the registration of a webinar:
+
 ```http
 POST /solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}/cancel
+```
+
+To cancel the registration of a town hall:
+
+```http
+POST /solutions/virtualEvents/townhalls/{townhallId}/registrations/{registrationId}/cancel
 ```
 
 ## Request headers
@@ -53,7 +62,6 @@ If successful, this action returns a `204 No Content` response code.
 
 ### Request
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "virtualeventregistrationthis.cancel"
@@ -62,38 +70,6 @@ The following example shows a request.
 ```http
 POST https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21-a8a6-4a6b-97f8-ced53d30f143/registrations/127962bb-84e1-7b62-fd98-1c9d39def7b6/cancel
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/virtualeventregistrationthiscancel-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/virtualeventregistrationthiscancel-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/virtualeventregistrationthiscancel-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/virtualeventregistrationthiscancel-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/virtualeventregistrationthiscancel-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/virtualeventregistrationthiscancel-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/virtualeventregistrationthiscancel-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
----
 
 ### Response
 The following example shows the response.

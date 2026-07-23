@@ -1,6 +1,6 @@
 ---
 title: "List sessions for a virtual event registration"
-description: "Get a list of sessions that a registrant registered for in a webinar."
+description: "Get a list of sessions that a registrant registered for in a webinar or town hall."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -11,13 +11,13 @@ ms.date: 08/06/2024
 # List sessions for a virtual event registration
 Namespace: microsoft.graph
 
-Get a list of [sessions](../resources/virtualeventsession.md) summaries that a registrant registered for in a [webinar](../resources/virtualeventwebinar.md). A session summary contains only the **endDateTime**, **id**, **joinWebUrl**, **startDateTime**, and **subject** of a virtual event session. The remaining session properties are `null`.
+Get a list of [sessions](../resources/virtualeventsession.md) summaries that a registrant registered for in a [webinar](../resources/virtualeventwebinar.md) or [town hall](../resources/virtualeventtownhall.md). A session summary contains only the **endDateTime**, **id**, **joinWebUrl**, **startDateTime**, and **subject** of a virtual event session. The remaining session properties are `null`.
 
 To get all the properties of a **virtualEventSession**, use the [Get virtualEventSession](../api/virtualeventsession-get.md) method. 
 
 > [!NOTE]
 > 
-> Virtual event webinars can only have a singular virtual event session. A single session summary will be returned in the collection.
+> Virtual event webinars and town halls can only have a singular virtual event session. A single session summary will be returned in the collection.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -37,8 +37,17 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
+
+To list the session registrations of a webinar:
+
 ```http
 GET /solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}/sessions
+```
+
+To list the session registrations of a town hall:
+
+```http
+GET /solutions/virtualEvents/townhalls/{townhallId}/registrations/{registrationId}/sessions
 ```
 
 ## Request headers
@@ -68,7 +77,6 @@ Currently, only the following properties of a **virtualEventSession** object con
 ### Request
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_virtualeventregistrationsessions"
@@ -78,37 +86,6 @@ The following example shows a request.
 GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21-a8a6-4a6b-97f8-ced53d30f143/registrations/127962bb-84e1-7b62-fd98-1c9d39def7b6/sessions
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-virtualeventregistrationsessions-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-virtualeventregistrationsessions-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-virtualeventregistrationsessions-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-virtualeventregistrationsessions-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-virtualeventregistrationsessions-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-virtualeventregistrationsessions-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/list-virtualeventregistrationsessions-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
----
 
 ### Response
 The following example shows the response.
