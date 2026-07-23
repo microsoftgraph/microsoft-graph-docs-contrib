@@ -1,14 +1,15 @@
 ---
-title: "Create m365CapabilityBase for partner"
+title: "Create Microsoft 365 capability for partner"
 description: "Create a new Microsoft 365 cross-tenant capability for a partner organization in the cross-tenant access policy."
 author: "lasharma"
 ms.date: 04/23/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+toc.title: Create Microsoft 365 capability
 ---
 
-# Create m365CapabilityBase for partner
+# Create Microsoft 365 capability for partner
 
 Namespace: microsoft.graph
 
@@ -24,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "crosstenantaccesspolicyconfigurationpartner_post_m365capabilities" } -->
 [!INCLUDE [permissions-table](../includes/permissions/crosstenantaccesspolicyconfigurationpartner-post-m365capabilities-permissions.md)]
+
+[!INCLUDE [rbac-xtap-m365capabilities-apis-write](../includes/rbac-for-apis/rbac-xtap-m365capabilities-apis-write.md)]
 
 ## HTTP request
 

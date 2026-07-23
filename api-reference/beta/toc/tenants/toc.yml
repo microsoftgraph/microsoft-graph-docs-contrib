@@ -87,6 +87,8 @@ items:
       href: ../../api/crosstenantaccesspolicyconfigurationdefault-list-m365capabilities.md
     - name: Create Microsoft 365 capability
       href: ../../api/crosstenantaccesspolicyconfigurationdefault-post-m365capabilities.md
+    - name: Update Microsoft 365 capability
+      href: ../../api/crosstenantaccesspolicyconfigurationdefault-update-m365capabilities.md
   - name: Partner settings
     items:
     - name: Partner settings
@@ -113,6 +115,10 @@ items:
       href: ../../api/crosstenantaccesspolicyconfigurationpartner-list-m365capabilities.md
     - name: Create Microsoft 365 capability
       href: ../../api/crosstenantaccesspolicyconfigurationpartner-post-m365capabilities.md
+    - name: Update Microsoft 365 capability
+      href: ../../api/crosstenantaccesspolicyconfigurationpartner-update-m365capabilities.md
+    - name: Delete Microsoft 365 capability
+      href: ../../api/crosstenantaccesspolicyconfigurationpartner-delete-m365capabilities.md
   - name: Partner user and group sync settings
     items:
     - name: Partner user and group sync settings

@@ -7625,7 +7625,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "RoleManagement.Read.CloudPC",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission of `RoleManagement.Read.CloudPC` to the read operations of the [unifiedRoleDefinition](https://learn.microsoft.com/graph/api/resources/unifiedroledefinition?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission of `RoleManagement.Read.CloudPC` to the read operations of the [unifiedRoleDefinition](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroledefinition?view=graph-rest-beta) resource.",
           "Target": "unifiedRoleDefinition"
         },
         {
@@ -7633,7 +7633,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "RoleManagement.ReadWrite.CloudPC",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission of `RoleManagement.ReadWrite.CloudPC` to the read and write operations of the [unifiedRoleDefinition](https://learn.microsoft.com/graph/api/resources/unifiedroledefinition?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission of `RoleManagement.ReadWrite.CloudPC` to the read and write operations of the [unifiedRoleDefinition](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroledefinition?view=graph-rest-beta) resource.",
           "Target": "unifiedRoleDefinition"
         },
         {
@@ -7649,7 +7649,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "RoleManagement.ReadWrite.CloudPC",
           "ChangeType": "Addition",
-          "Description": "Added support for the delegated permission of `RoleManagement.ReadWrite.CloudPC` to the read and write operations of the [unifiedRoleDefinition](https://learn.microsoft.com/graph/api/resources/unifiedroledefinition?view=graph-rest-beta) resource.",
+          "Description": "Added support for the delegated permission of `RoleManagement.ReadWrite.CloudPC` to the read and write operations of the [unifiedRoleDefinition](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroledefinition?view=graph-rest-beta) resource.",
           "Target": "unifiedRoleDefinition"
         }
       ],
@@ -8529,7 +8529,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "reupload",
           "ChangeType": "Addition",
-          "Description": "Added the [reupload](https://learn.microsoft.com/graph/api/cloudpcdeviceimage-reupload?view=graph-rest-beta) method to the [cloudPcDeviceImage](https://learn.microsoft.com/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta) resource.",
+          "Description": "Added the [reupload](https://learn.microsoft.com/en-us/graph/api/cloudpcdeviceimage-reupload?view=graph-rest-beta) method to the [cloudPcDeviceImage](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta) resource.",
           "Target": "cloudPcDeviceImage"
         }
       ],
