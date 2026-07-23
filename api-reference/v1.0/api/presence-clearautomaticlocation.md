@@ -21,7 +21,7 @@ Clear the automatic work location signal for a [user](../resources/user.md). Aft
 
 Use this operation when you need to remove the current autodetected signal without affecting manual or scheduled layers.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

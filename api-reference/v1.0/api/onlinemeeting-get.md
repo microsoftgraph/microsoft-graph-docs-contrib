@@ -25,8 +25,6 @@ Teams live event attendee report **(deprecated)** and Teams live event recording
 > [!CAUTION]
 > Teams live events was not removed on September 30, 2024, as previously announced. You can continue to use Teams live events; however, to get the latest new features and experiences, we recommend that you use [Teams town halls](https://support.microsoft.com/en-us/office/switch-from-microsoft-teams-live-events-to-town-halls-c71bf6e2-ece1-4809-900e-51271f39ac72) and the [Microsoft Graph virtual event townhall APIs](../resources/virtualeventtownhall.md) instead.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
-
 ## Permissions
 
 The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -333,6 +331,12 @@ Content-Length: 1574
   },
   "meetingOptionsWebUrl": "https://teams.microsoft.com/meetingOptions/?meetingId=abc123",
   "meetingSpokenLanguageTag": "en-US",
+  "meetingType": "scheduled",
+  "cloudVideoInteropInfo": {
+    "tenantKey": "94f39e13-d027-4cfa-bcd3-4b8b0c2017ef",
+    "videoTeleconferenceId": "123456789",
+    "moreInfoWebUrl": "https://cvi.vendor.com/join-instructions"
+  },
   "startDateTime": "2018-05-30T00:30:00Z",
   "subject": "Test Meeting.",
   "videoTeleconferenceId": "123456789",

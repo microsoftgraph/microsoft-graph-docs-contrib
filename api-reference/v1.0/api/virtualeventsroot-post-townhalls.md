@@ -49,12 +49,14 @@ You can specify the following properties when you create a [virtualEventTownhall
 |Property|Type|Description|
 |:---|:---|:---|
 | audience | meetingAudience | The audience to whom the town hall is visible. The possible values are: `everyone`, `organization`, and `unknownFutureValue`. |
+| capacity | Int32 | Represents the expected number of attendees for the town hall. |  
 | coOrganizers  | [communicationsUserIdentity](../resources/communicationsuseridentity.md) collection | The identity information of coorganizers of the town hall. |
 | description | [itemBody](../resources/itembody.md) | A description of the town hall. |
 | displayName | String | Display name of the town hall. |
 | endDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the town hall ends. |
 | invitedAttendees | [identity](../resources/identity.md) collection | The identities of the attendees invited to the town hall. The supported identities are: [communicationsGuestIdentity](../resources/communicationsguestidentity.md) and [communicationsUserIdentity](../resources/communicationsuseridentity.md). |
 | isInviteOnly | Boolean | Indicates whether the town hall is only open to invited people and groups within your organization. The **isInviteOnly** property can only be `true` if the value of the **audience** property is set to `organization`. |
+| isRegistrationRequired | Boolean | Indicates whether attendees must complete the registration flow before they can attend. Inherited from [virtualEvent](../resources/virtualevent.md). Optional. |
 | settings | [virtualEventSettings](../resources/virtualeventsettings.md) | The virtual event settings. |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | The date and time when the town hall starts. |
 
@@ -67,7 +69,6 @@ If successful, this method returns a `201 Created` response code and a [virtualE
 ### Request
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_virtualeventtownhall"
@@ -100,17 +101,11 @@ Content-Type: application/json
     ],
     "settings": {
       "isAttendeeEmailNotificationEnabled": false
-    }
+    },
+    "capacity": 5000,
+    "isRegistrationRequired": false
 }
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-virtualeventtownhall-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
----
 
 ### Response
 
@@ -143,6 +138,7 @@ Content-Type: application/json
       "timeZone": "Pacific Standard Time" 
     },
     "audience": "organization",
+    "capacity": 5000,
     "createdBy": {
       "application": null,
       "device": null,
@@ -164,6 +160,7 @@ Content-Type: application/json
     },
     "invitedAttendees": [],
     "isInviteOnly": false,
+    "isRegistrationRequired": false,
     "externalEventInformation": []
 }
 ```

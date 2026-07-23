@@ -57,6 +57,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for an online meeting. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).                                                  |
 | chatInfo              | [chatInfo](chatinfo.md)                       | The chat information associated with this online meeting. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md).                                                                 |
 | chatRestrictions      | [chatRestrictions](../resources/chatrestrictions.md) | Specifies the configuration settings for meeting chat restrictions. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
+| cloudVideoInteropInfo | [cloudVideoInteropInfo](cloudvideointeropinfo.md) | Conferencing device integration settings for [Cloud Video Interop (CVI)](/microsoftteams/cloud-video-interop). Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | creationDateTime      | DateTime                                      | The meeting creation time in UTC. Read-only.                                                                               |
 | endDateTime           | DateTime                                      | The meeting end time in UTC. Required when you create an online meeting. |
 | expiryDateTime | DateTimeOffset | Indicates the date and time when the meeting resource expires. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
@@ -71,6 +72,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | meetingOptionsWebUrl | String | Provides the URL to the Teams meeting options page for the specified meeting. This link allows *only the organizer* to configure meeting settings. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | meetingSpokenLanguageTag | String | Specifies the spoken language used during the meeting for recording and transcription purposes. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | meetingTemplateId | String | The ID of the [meeting template](/microsoftteams/create-custom-meeting-template). |
+| meetingType | [onlineMeetingType](../resources/onlinemeetingbase.md#onlinemeetingtype-values) | The type of the online meeting. The possible values are: `adhoc`, `scheduled`, `recurring`, `broadcast`, `meetnow`, `unknownFutureValue`. Read-only. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 | participants          | [meetingParticipants](meetingparticipants.md) | The participants associated with the online meeting, including the organizer and the attendees.                       |
 | recordAutomatically | Boolean | Indicates whether to record the meeting automatically. Inherited from [onlineMeetingBase](../resources/onlinemeetingbase.md). |
 |sensitivityLabelAssignment|[onlineMeetingSensitivityLabelAssignment](../resources/onlinemeetingsensitivitylabelassignment.md)|Specifies the sensitivity label applied to the Teams meeting.|
@@ -155,6 +157,7 @@ The following JSON representation shows the resource type.
   "broadcastSettings": {"@odata.type": "microsoft.graph.broadcastMeetingSettings"},
   "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
   "chatRestrictions": {"@odata.type": "microsoft.graph.chatRestrictions"},
+  "cloudVideoInteropInfo": {"@odata.type": "microsoft.graph.cloudVideoInteropInfo"},
   "creationDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
   "expiryDateTime": "String (timestamp)",
@@ -170,6 +173,7 @@ The following JSON representation shows the resource type.
   "meetingOptionsWebUrl": "String",
   "meetingSpokenLanguageTag": "String",
   "meetingTemplateId": "String",
+  "meetingType": "String",
   "participants": {"@odata.type": "microsoft.graph.meetingParticipants"},
   "recordAutomatically": "Boolean",
   "sensitivityLabelAssignment": {"@odata.type": "microsoft.graph.onlineMeetingSensitivityLabelAssignment"},
