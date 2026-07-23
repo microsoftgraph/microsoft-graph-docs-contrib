@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "ff336a48-25f3-45ef-bb0e-8fb543d1e02a",
+          "ApiChange": "Method",
+          "ChangedApiName": "shareSnapshot",
+          "ChangeType": "Addition",
+          "Description": "Added the shareSnapshot method to the [cloudPC](https://learn.microsoft.com/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+          "Target": "cloudPC"
+        }
+      ],
+      "Id": "ff336a48-25f3-45ef-bb0e-8fb543d1e02a",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-07-23T03:03:24.5590754Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Cloud PC"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "1d8ecff7-b00e-4385-8b7a-81819b66c86b",
           "ApiChange": "Resource",
           "ChangedApiName": "cloudPcServicePlan",
