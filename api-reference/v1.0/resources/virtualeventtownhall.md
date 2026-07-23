@@ -47,6 +47,7 @@ The following table shows the roles that can perform various actions on virtual 
 |Property|Type|Description|
 |:---|:---|:---|
 | audience | meetingAudience | The audience to whom the town hall is visible. The possible values are: `everyone`, `organization`, and `unknownFutureValue`.  |
+| capacity | Int32 | Represents the expected number of attendees for the town hall. |
 | coOrganizers  | [communicationsUserIdentity](communicationsuseridentity.md) collection | Identity information of the coorganizers of the town hall. |
 | createdBy | [communicationsIdentitySet](communicationsidentityset.md) | Identity information of the creator of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). Read-only. |
 | description | [itemBody](../resources/itembody.md) | Description of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). |
@@ -56,6 +57,7 @@ The following table shows the roles that can perform various actions on virtual 
 | id | String | Unique identifier of the town hall. Inherited from [entity](../resources/entity.md). Read-only. |
 | invitedAttendees | [identity](../resources/identity.md) collection | The attendees invited to the town hall. The supported identities are: [communicationsUserIdentity](../resources/communicationsuseridentity.md) and [communicationsGuestIdentity](../resources/communicationsguestidentity.md). |
 | isInviteOnly | Boolean | Indicates whether the town hall is only open to invited people and groups within your organization. The **isInviteOnly** property can only be `true` if the value of the **audience** property is set to `organization`. |
+| isRegistrationRequired | Boolean | Indicates whether attendee registration is enabled for the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). |
 | settings | [virtualEventSettings](../resources/virtualeventsettings.md) | The virtual event settings. |
 | startDateTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Date and time when the town hall starts. The **timeZone** property _can_ be set to any of the time zones currently supported by Windows. For details on how to get all available time zones using PowerShell, see [Get-TimeZone](/powershell/module/microsoft.powershell.management/get-timezone#example-3-get-all-available-time-zones). Inherited from [virtualEvent](../resources/virtualevent.md). |
 | status | virtualEventStatus | Status of the town hall. The possible values are: `draft`, `published`, `canceled`, and `unknownFutureValue`. Inherited from [virtualEvent](../resources/virtualevent.md). |
@@ -65,6 +67,8 @@ The following table shows the roles that can perform various actions on virtual 
 |Relationship|Type|Description|
 |:---|:---|:---|
 | presenters | [virtualEventPresenter](../resources/virtualeventpresenter.md) collection | Presenters' information of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md).|
+| registrationConfiguration | [virtualEventTownhallRegistrationConfiguration](../resources/virtualeventtownhallregistrationconfiguration.md) | Registration configuration of the town hall. |
+| registrations | [virtualEventRegistration](../resources/virtualeventregistration.md) collection | Registration records of the town hall. |
 | sessions | [virtualEventSession](../resources/virtualeventsession.md)  collection | Sessions of the town hall. Inherited from [virtualEvent](../resources/virtualevent.md). |
 
 ## JSON representation
@@ -83,6 +87,7 @@ The following JSON representation shows the resource type.
 {
   "@odata.type": "#microsoft.graph.virtualEventTownhall",
   "audience": "String",
+  "capacity": "Int32",
   "coOrganizers": [{"@odata.type": "microsoft.graph.communicationsUserIdentity"}],
   "createdBy": {"@odata.type": "microsoft.graph.communicationsIdentitySet"},
   "description": {"@odata.type": "microsoft.graph.itemBody"},
@@ -91,6 +96,7 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "invitedAttendees": [{"@odata.type": "microsoft.graph.identity"}],
   "isInviteOnly": "Boolean",
+  "isRegistrationRequired": "Boolean",
   "settings": {"@odata.type": "microsoft.graph.virtualEventSettings"},
   "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "status": "String"

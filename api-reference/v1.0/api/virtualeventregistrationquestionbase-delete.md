@@ -1,6 +1,6 @@
 ---
 title: "Delete virtualEventRegistrationQuestionBase"
-description: "Delete a registration question from a webinar."
+description: "Delete a registration question from a webinar or town hall."
 author: "frankpeng7"
 ms.localizationpriority: medium
 ms.subservice: "cloud-communications"
@@ -11,7 +11,7 @@ ms.date: 08/13/2024
 # Delete virtualEventRegistrationQuestionBase
 Namespace: microsoft.graph
 
-Delete a registration question from a [webinar](../resources/virtualeventwebinar.md). The question can either be a [predefined registration question](../resources/virtualeventregistrationpredefinedquestion.md) or a [custom registration question](../resources/virtualeventregistrationcustomquestion.md). 
+Delete a registration question from a [webinar](../resources/virtualeventwebinar.md) or [town hall](../resources/virtualeventtownhall.md). The question can either be a [predefined registration question](../resources/virtualeventregistrationpredefinedquestion.md) or a [custom registration question](../resources/virtualeventregistrationcustomquestion.md). 
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -28,8 +28,17 @@ Choose the permission or permissions marked as least privileged for this API. Us
   "blockType": "ignored"
 }
 -->
+
+To delete a question from the registration configuration of a webinar:
+
 ```http
 DELETE /solutions/virtualEvents/webinars/{webinarId}/registrationConfiguration/questions/{questionId}
+```
+
+To delete a question from the registration configuration of a town hall:
+
+```http
+DELETE /solutions/virtualEvents/townhalls/{townhallId}/registrationConfiguration/questions/{questionId}
 ```
 
 ## Request headers
@@ -51,7 +60,6 @@ If successful, this method returns a `204 No Content` response code.
 ### Request
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_virtualeventregistrationquestion",
@@ -61,36 +69,6 @@ The following example shows a request.
 ```http
 DELETE https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21-a8a6-4a6b-97f8-ced53d30f143/registrationConfiguration/questions/f3115d4c-9896-42fc-a649-8ca5e3c3a43f
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-virtualeventregistrationquestion-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-virtualeventregistrationquestion-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-virtualeventregistrationquestion-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-virtualeventregistrationquestion-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/delete-virtualeventregistrationquestion-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/delete-virtualeventregistrationquestion-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/delete-virtualeventregistrationquestion-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ---
 

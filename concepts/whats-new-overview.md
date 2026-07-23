@@ -37,12 +37,7 @@ Added the [cloudPcServicePlan](/graph/api/resources/cloudpcserviceplan) resource
 
 ### Identity and access | Directory management
 
-- Added the **sponsorOf** relationship to the [user](/graph/api/resources/user) resource type to represent the directory objects that a user sponsors.
-
-### Users
-
-- Added the `User.Create` permission as the least privileged permission to [create a user](/graph/api/user-post-users).
-- Added the `User.ReadUpdate.All` permission as the least privileged permission to [update a user](/graph/api/user-update).
+Added the **sponsorOf** relationship to the [user](/graph/api/resources/user) resource type to represent the directory objects that a user sponsors.
 
 ### Identity and access | Governance
 
@@ -54,6 +49,17 @@ Promoted the **Bring Your Own Data (BYOD) Upload** APIs from beta to v1.0, enabl
 - [uploadFile](/graph/api/customdataprovidedresourceuploadsession-uploadfile) action
 - **uploadSessions** navigation property on [accessPackageResource](/graph/api/resources/accesspackageresource)
 - [customDataProvidedResourceUploadStatus](/graph/api/resources/enums#customdataprovidedresourceuploadstatus-values) enumeration
+
+### Teamwork and communications | Calls and online meetings
+
+ - Added the **meetingType** and **cloudVideoInteropInfo** properties to the [onlineMeetingBase](/graph/api/resources/onlinemeetingbase) resource to help determine the type of an online meeting and retrieve Cloud Video Interop settings.
+ - Added the **isRegistrationRequired** and **capacity** properties to virtual events (for example, [virtualEvent](/graph/api/resources/virtualevent), [virtualEventTownhall](/graph/api/resources/virtualeventtownhall), and [virtualEventSession](/graph/api/resources/virtualeventsession)) to control registration requirements and expected attendance.
+ - Added the [virtualEventTownhallRegistrationConfiguration](/graph/api/resources/virtualeventtownhallregistrationconfiguration) resource type and related methods to manage attendee registration for town halls.
+
+### Users
+
+- Added the `User.Create` permission as the least privileged permission to [create a user](/graph/api/user-post-users).
+- Added the `User.ReadUpdate.All` permission as the least privileged permission to [update a user](/graph/api/user-update).
 
 ## July 2026: New in preview only
 
