@@ -251,6 +251,8 @@ Added redirect URI validation and restriction capabilities to [tenant app manage
 
 Added the **callerIdNumber** property to the [voiceAuthenticationMethodConfiguration](/graph/api/resources/voiceauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true) resource. Use this property to configure the phone number displayed as the caller ID when voice call authentication is initiated.
 
+Added updated identity fields to the [agentRiskDetection](/graph/api/resources/agentriskdetection?view=graph-rest-beta&preserve-view=true) resource type to make it easier to identify the associated identity in agent risk detections. Deprecated the legacy agent identity properties; they will be removed after 2027-04-28.
+
 ### Mail
 
 Use the [user configuration API in Microsoft Graph](/graph/user-configuration-concept-overview) to build solutions that store and retrieve per-folder configuration data alongside Exchange Online mailbox content.
