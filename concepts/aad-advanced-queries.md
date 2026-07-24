@@ -14,7 +14,7 @@ ms.date: 08/29/2025
 
 # Advanced query capabilities on Microsoft Entra ID objects
 
-Microsoft Graph supports advanced query capabilities on various Microsoft Entra ID objects, also called *directory objects*, to help you efficiently access data. Examples include the addition of **not** (`not`), **not equals** (`ne`), and **ends with** (`endsWith`) operators on the `$filter` query parameter.
+Microsoft Graph supports advanced query capabilities on various Microsoft Entra ID objects, also called *directory objects*, to help you efficiently access data. Examples include the addition of **not** (`not`), **not equals** (`ne`), and **ends with** (`endsWith`) operators on the `$filter` query parameter. testPR
 
 The Microsoft Graph query engine uses an index store to fulfill query requests. To add support for extra query capabilities on some properties, those properties are indexed in a separate store. This separate indexing improves query performance. However, these advanced query capabilities aren't available by default. The requestor must set the **ConsistencyLevel** header to `eventual` *and*, except for `$search`, use the `$count` query parameter. The **ConsistencyLevel** header and `$count` are referred to as *advanced query parameters*.
 
