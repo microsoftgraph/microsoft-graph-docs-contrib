@@ -1,14 +1,15 @@
 ---
-title: "Create m365CapabilityBase for default policy"
+title: "Create Microsoft 365 capability for default policy"
 description: "Create a new Microsoft 365 cross-tenant capability for the default cross-tenant access policy."
 author: "lasharma"
 ms.date: 04/23/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+toc.title: Create Microsoft 365 capability
 ---
 
-# Create m365CapabilityBase for default policy
+# Create Microsoft 365 capability for default policy
 
 Namespace: microsoft.graph
 
@@ -24,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "crosstenantaccesspolicyconfigurationdefault_post_m365capabilities" } -->
 [!INCLUDE [permissions-table](../includes/permissions/crosstenantaccesspolicyconfigurationdefault-post-m365capabilities-permissions.md)]
+
+[!INCLUDE [rbac-xtap-m365capabilities-apis-write](../includes/rbac-for-apis/rbac-xtap-m365capabilities-apis-write.md)]
 
 ## HTTP request
 

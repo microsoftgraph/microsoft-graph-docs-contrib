@@ -1,14 +1,15 @@
 ---
-title: "List m365Capabilities for default policy"
+title: "List Microsoft 365 capabilities for default policy"
 description: "Get a list of Microsoft 365 cross-tenant capabilities configured for the default cross-tenant access policy."
 author: "lasharma"
 ms.date: 04/23/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: apiPageType
+toc.title: List Microsoft 365 capabilities
 ---
 
-# List m365Capabilities for default policy
+# List Microsoft 365 capabilities for default policy
 
 Namespace: microsoft.graph
 
@@ -24,6 +25,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 <!-- { "blockType": "permissions", "name": "crosstenantaccesspolicyconfigurationdefault_list_m365capabilities" } -->
 [!INCLUDE [permissions-table](../includes/permissions/crosstenantaccesspolicyconfigurationdefault-list-m365capabilities-permissions.md)]
+
+[!INCLUDE [rbac-xtap-m365capabilities-apis-read](../includes/rbac-for-apis/rbac-xtap-m365capabilities-apis-read.md)]
 
 ## HTTP request
 
