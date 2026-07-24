@@ -117,10 +117,10 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "name": "name-value",
-  "classId": "11b0131d-43c8-4bbb-b2c8-e80f9a50834a",
-  "changeKey": "changeKey-value",
-  "id": "id-value"
+  "name": "My Calendars",
+  "classId": "0006f0b7-0000-0000-c000-000000000046",
+  "changeKey": "NreqLYgxdE2DpHBBId74XwAAAAAGZw==",
+  "id": "AAMkAGVmMDEzMTM4LTZm="
 }
 ```
 
