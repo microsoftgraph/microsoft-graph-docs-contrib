@@ -120,7 +120,7 @@ The following example shows a request that filters the sponsored objects by user
 }
 -->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users/025e5e3e-e5b7-4eb4-ba1f-4e5b0579f1a2/sponsorOf?$filter=microsoft.graph.user/userType eq 'Guest'
+GET https://graph.microsoft.com/v1.0/users/025e5e3e-e5b7-4eb4-ba1f-4e5b0579f1a2/sponsorOf?$filter=microsoft.graph.user/userType eq 'Guest'&$count=true
 ConsistencyLevel: eventual
 ```
 
