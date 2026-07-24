@@ -416,6 +416,10 @@ items:
         href: ../../api/virtualappointment-sendvirtualappointmentremindersms.md
       - name: Send virtual appointment SMS
         href: ../../api/virtualappointment-sendvirtualappointmentsms.md
+    - name: Complex types
+      items:
+      - name: Cloud video interop info
+        href: ../../resources/cloudvideointeropinfo.md
   - name: Presence
     items:
     - name: Presence
@@ -478,6 +482,12 @@ items:
         href: ../../resources/virtualeventwebinarregistrationconfiguration.md
       - name: Get
         href: ../../api/virtualeventwebinarregistrationconfiguration-get.md
+    - name: Virtual event townhall registration configuration
+      items:
+      - name: Virtual event townhall registration configuration
+        href: ../../resources/virtualeventtownhallregistrationconfiguration.md
+      - name: Get
+        href: ../../api/virtualeventtownhallregistrationconfiguration-get.md
     - name: Virtual event registration question
       items:
       - name: Virtual event registration question

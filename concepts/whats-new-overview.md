@@ -69,6 +69,7 @@ Added the **vapidPublicKey**, **webPushEncryptionP256dhPublicKey**, and **webPus
 
 ### Device and app management | Cloud PC
 
+- Added the [shareSnapshot](/graph/api/cloudpc-sharesnapshot?view=graph-rest-beta&preserve-view=true) method to the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) resource type. Use it to copy a Cloud PC snapshot to an Azure storage account.
 - Added support for activating or deactivating an organization for Windows 365 for Agents. Use the [cloudPC: organizationAction](/graph/api/cloudpc-organizationaction?view=graph-rest-beta&preserve-view=true) action to trigger the operation.
 - Use the [cloudPC: retrieveOrganizationActionDetail](/graph/api/cloudpc-retrieveorganizationactiondetail?view=graph-rest-beta&preserve-view=true) method to retrieve the status and details of an organization action.
 
@@ -96,7 +97,22 @@ Added the **vapidPublicKey**, **webPushEncryptionP256dhPublicKey**, and **webPus
 
 ### Identity and access | Identity and sign-in
 
-Added support for programmatic FIDO2 passkey registration. Use the [creationOptions](/graph/api/fido2authenticationmethod-creationoptions) function to get WebAuthn credential creation options, then complete registration by posting the new **publicKeyCredential** property to the [fido2AuthenticationMethod](/graph/api/resources/fido2authenticationmethod) resource.
+- Added support for programmatic FIDO2 passkey registration. Use the [creationOptions](/graph/api/fido2authenticationmethod-creationoptions?view=graph-rest-beta&preserve-view=true) function to get WebAuthn credential creation options, then complete registration by posting the new **publicKeyCredential** property to the [fido2AuthenticationMethod](/graph/api/resources/fido2authenticationmethod?view=graph-rest-beta&preserve-view=true) resource.
+- Added support to update and delete Microsoft 365 cross-tenant capabilities in the cross-tenant access policy. For details, see [m365CapabilityBase](/graph/api/resources/m365capabilitybase?view=graph-rest-beta&preserve-view=true).
+
+Enhanced the [verifiedIdProfile](/graph/api/resources/verifiedidprofile?view=graph-rest-beta&preserve-view=true) resource with expanded verification capabilities:
+- Added the **methodType** property to [verifiedIdProfileConfiguration](/graph/api/resources/verifiedidprofileconfiguration?view=graph-rest-beta&preserve-view=true) to specify the verification method category, including tenant custom credentials, verified employee credentials, and identity verification partners. Introduced the **verifiedIdMethodType** enumeration to support these scenarios.
+- Added the **manifestUrl** property to [verifiedIdProfileConfiguration](/graph/api/resources/verifiedidprofileconfiguration?view=graph-rest-beta&preserve-view=true) to reference the credential issuer's manifest defining the credential schema and issuer details.
+- Added the `verification` member to the **verifiedIdUsageConfigurationPurpose** enumeration to enable just-in-time identity verification scenarios, such as step-up authentication enforcement through Conditional Access policies.
+
+### Mailbox import and export
+
+Added the [Delete mailboxItem](/graph/api/mailboxfolder-delete-items?view=graph-rest-beta&preserve-view=true) method to delete an individual [mailboxItem](/graph/api/resources/mailboxitem?view=graph-rest-beta&preserve-view=true) from a mailbox folder by using the mailbox import and export APIs. Use the **disposalType** query parameter to specify soft-delete or hard-delete semantics.
+
+### People and workplace intelligence
+
+- Updated [Manage profile source precedence in Microsoft 365](/graph/profilepriority-configure-profilepropertysetting) to clarify supported data sources for HR and work position data, explain how source precedence affects single-value versus multi-value properties, and add guidance on correctly configuring and removing tenant-level settings using the Microsoft Graph API or PowerShell.
+- Added the [People data sources in Microsoft 365](/graph/people-data-sources) concept article that describes the data sources that build the Microsoft 365 user profile, including Microsoft Entra ID, Copilot connectors, Organizational data, SharePoint, People Skills, user edits, and the API user source. The article also provides a reference table of built-in source IDs (GUIDs) and explains how source metadata appears in the profile API output.
 
 ### Mailbox import and export
 
@@ -108,6 +124,12 @@ Added the [Delete mailboxItem](/graph/api/mailboxfolder-delete-items?view=graph-
 - Added the [People data sources in Microsoft 365](/graph/people-data-sources) concept article that describes the data sources that build the Microsoft 365 user profile, including Microsoft Entra ID, Copilot connectors, Organizational data, SharePoint, People Skills, user edits, and the API user source. The article also provides a reference table of built-in source IDs (GUIDs) and explains how source metadata appears in the profile API output.
 
 ### Security | Alerts and incidents
+
+- Added the **tenantId** property to the [userAccount](/graph/api/resources/security-useraccount) resource to provide the Entra home tenant ID for the compromised user account indicated in a [security alert](/graph/api/resources/security-alert) where the alert evidence is related to a [processEvidence](/graph/api/resources/security-processevidence), [userEvidence](/graph/api/resources/security-userevidence), or [mailboxEvidence](/graph/api/resources/security-mailboxevidence).
+- Added the [alert: moveAlerts](/graph/api/security-alert-movealerts) and [incident: mergeIncidents](/graph/api/security-incident-mergeincidents) actions to support moving alerts and merging incidents in Microsoft Defender.
+- Added the [correlationReason](/graph/api/resources/security-correlationreason) enumeration and [mergeResponse](/graph/api/resources/security-mergeresponse) resource type.
+
+### Security | eDiscovery
 
 - Added the **tenantId** property to the [userAccount](/graph/api/resources/security-useraccount) resource to provide the Entra home tenant ID for the compromised user account indicated in a [security alert](/graph/api/resources/security-alert) where the alert evidence is related to a [processEvidence](/graph/api/resources/security-processevidence), [userEvidence](/graph/api/resources/security-userevidence), or [mailboxEvidence](/graph/api/resources/security-mailboxevidence).
 - Added the [alert: moveAlerts](/graph/api/security-alert-movealerts) and [incident: mergeIncidents](/graph/api/security-incident-mergeincidents) actions to support moving alerts and merging incidents in Microsoft Defender.
@@ -143,6 +165,7 @@ Evaluate applications in the Microsoft Entra application gallery by using the [a
 
 - Added the [getSharePointApiUsage](/graph/api/reportroot-getsharepointapiusage?view=graph-rest-beta&preserve-view=true) method to the [reportRoot](/graph/api/resources/reportroot?view=graph-rest-beta&preserve-view=true) resource to retrieve aggregated OneDrive and SharePoint API usage metrics for a tenant, including egress usage and throttling metrics.
 - [Upsert](/graph/api/filestoragecontainer-patch-permissions) (create or update) up to 40 permissions on a [fileStorageContainer](/graph/api/resources/filestoragecontainer) in a single request. The limit increased from 10 to 40 [permission](/graph/api/resources/permission) objects per request.
+- The [driveItem: extractSensitivityLabels](/graph/api/driveitem-extractsensitivitylabels?view=graph-rest-beta&preserve-view=true) API isn't supported for Microsoft SharePoint Embedded containers.
 
 ### Groups
 
@@ -150,51 +173,23 @@ Evaluate applications in the Microsoft Entra application gallery by using the [a
 
 ### Identity and access | Directory management
 
-- Added the [deviceRegistrationPolicy](/graph/api/resources/deviceregistrationpolicy) resource type and related methods to manage the policy that controls device registration quota restrictions, additional authentication, and authorization policies for your Microsoft Entra tenant.
-- Added the [Get](/graph/api/accesspackagesubject-get) and [Update](/graph/api/accesspackagesubject-update) methods to the [accessPackageSubject](/graph/api/resources/accesspackagesubject) resource type to manage the subject lifecycle of external directory users in Microsoft Entra entitlement management.
-- Added the **type** property to the [accessPackageResourceRole](/graph/api/resources/accesspackageresourcerole) resource to indicate whether an Azure resource role is active or eligible, enabling PIM-based role assignments for Azure resources in access packages.
-- Added the [accessPackageSuggestion](/graph/api/resources/accesspackagesuggestion) resource type and related methods for discovering suggested access packages based on related people insights and assignment history. Use the [filterByCurrentUser](/graph/api/accesspackagesuggestions-filterbycurrentuser) function to retrieve personalized suggestions.
-- Added the **approverInformationVisibility** property to the [accessPackageApprovalStage](/graph/api/resources/accesspackageapprovalstage) resource to control whether approver information is visible to requestors.
-- Added the [endUserSettings](/graph/api/resources/endusersettings) resource type and related methods for configuring access package suggestion behavior, including related people insight levels and approver detail visibility.
-- Added workflow preview operations to the [workflow](/graph/api/resources/identitygovernance-workflow) resource type in Lifecycle Workflows, enabling you to validate tasks and run workflows in preview mode without affecting production users.
-- Added the [customDataProvidedResourceUploadSession](/graph/api/resources/customdataprovidedresourceuploadsession) resource type and related methods for uploading external access data (Bring Your Own Data) for access reviews.
-- Added the [customDataProvidedResource](/graph/api/resources/customdataprovidedresource) resource type, an access package resource that represents an external application whose access data is provided through the Bring Your Own Data (BYOD) flow for catalog user access reviews.
+Added the `cloudNativeHtmlConversion` member to the [additionalDataOptions](/graph/api/resources/security-ediscoveryaddtoreviewsetoperation#additionaldataoptions-values) enumeration.
 
-### Identity and access | Identity and sign-in
+### Tasks and plans
 
-- Added the [onVerifiedIdClaimValidationCustomExtension](/graph/api/resources/onverifiedidclaimvalidationcustomextension) and [onVerifiedIdClaimValidationListener](/graph/api/resources/onverifiedidclaimvalidationlistener) resource types and associated methods to support custom logic for claim validation from Verified ID credential presentations during authentication flows through Microsoft Entra custom authentication extensions in External ID.
-- Added claim validation and match-confidence capabilities to [Verified ID profiles](/graph/api/resources/verifiedidprofile), enabling stronger claim verification and more flexible matching.
-- Enhanced the [x509CertificateAuthenticationMethodConfiguration](/graph/api/resources/x509certificateauthenticationmethodconfiguration) resource type with the following capabilities for certificate-based authentication (CBA):
-    - Scoping CBA to specific certificate authorities and restricting which groups of users can authenticate using certificates from those CAs.
-    - Controlling whether issuer hints are sent to the client to filter the certificates shown in the certificate picker.
-- Updated the **targetedAuthenticationMethod** property of the [authenticationMethodsRegistrationCampaignIncludeTarget](/graph/api/resources/authenticationmethodsregistrationcampaignincludetarget) resource to support `Fido2` in addition to `microsoftAuthenticator` for authentication method registration campaigns. Organizations can now use registration campaigns to nudge users to register and sign in with phishing-resistant passkeys (FIDO2).
+- Added the [plannerHistoryItem](/graph/api/resources/plannerhistoryitem?view=graph-rest-beta&preserve-view=true) resource type and [List historyItems](/graph/api/plannerplan-list-historyitems?view=graph-rest-beta&preserve-view=true) method to audit task changes within a Planner plan. Track when tasks are created, updated, deleted, or moved, and filter by **occurredDateTime** to retrieve changes within specific time ranges.
 
-### Mailbox import and export
+### Teamwork and communications | Graph API controls
 
-- Added the [Overview of the mailbox import and export APIs in Microsoft Graph](/graph/mailbox-import-export-concept-overview) to help you build solutions for mailbox import and export scenarios.
+Updated Microsoft Graph documentation for transcript APIs to add guidance on tenant administrator controls that govern transcript access and speaker attribution. For more information, see [Get change notifications for transcripts and recordings using Microsoft Graph](teams-changenotifications-callrecording-and-calltranscript.md).
 
-### People and workplace intelligence | Places
+### Teamwork and communications | Shift management
 
-- Added the **servicePlans** property to the [desk](/graph/api/resources/desk) resource to manage the service plans associated with workspace desks.
-- Added the **placeId** property to the [place](/graph/api/resources/place) resource to provide a stable identifier across place types.
+The **timeZone** property of the [schedule](/graph/api/resources/schedule) resource must be set to an IANA time zone name, such as `America/Chicago` or `Europe/London`. For more information, see [Create or replace schedule](/graph/api/team-put-schedule).
 
-### Security | Alerts and incidents
+### Users
 
-- Added the migration guide [Migrate from legacy alerts to the alerts and incidents API](/graph/alertsv1-alertsv2-migration) to help you transition your apps from the deprecated Microsoft Graph security alerts v1 API to the new alerts and incidents API.
-- Extended the [alertEvidence](/graph/api/resources/security-alertevidence) base type with additional derived types to provide detailed context about various artifacts involved in [security alerts](/graph/api/resources/security-alert).
-
-### Teamwork and communications | Messaging
-
-- [Enable migration mode on an existing channel](/graph/api/channel-startmigration) to support channel migration of external messages.
-- [Enable migration mode on an existing chat](/graph/api/chat-startmigration) to support chat migration of external messages.
-- [Complete chat migration by disabling migration mode](/graph/api/chat-completemigration).
-- Added the **migrationMode** and **originalCreatedDateTime** properties to the [channel](/graph/api/resources/channel) resource.
-- Added the **migrationMode** and **originalCreatedDateTime** properties to the [chat](/graph/api/resources/chat) resource.
-- Added the [migrationMode](/graph/api/resources/channel#migrationmode-values) enum.
-
-### Teamwork and communications | Shifts
-
-- Added support for additional theme colors in the [scheduleEntityTheme](/graph/api/resources/enums) enumeration for the **theme** property on [openShiftItem](/graph/api/resources/openshiftitem), [shiftItem](/graph/api/resources/shiftitem), [shiftActivity](/graph/api/resources/shiftactivity), and [timeOffItem](/graph/api/resources/timeoffitem).
+Application permissions for the [user: translateExchangeIds](/graph/api/user-translateexchangeids) API are supported only for request URLs that identify a user in the path.
 
 ## June 2026: New in preview only
 
@@ -234,6 +229,7 @@ Added the [updateCategoryEnrollmentInformation](/graph/api/resources/windowsupda
 - Added the [getByUser](/graph/api/filestoragecontainer-getbyuser?view=graph-rest-beta&preserve-view=true) method to the [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true) resource. Use it to get the list of file storage containers that are owned by a specified user.
 - [Upsert](/graph/api/filestoragecontainer-patch-permissions?view=graph-rest-beta&preserve-view=true) (create or update) up to 40 permissions on a [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true) in a single request. The limit increased from 10 to 40 [permission](/graph/api/resources/permission?view=graph-rest-beta&preserve-view=true) objects per request.
 - Added the [driveItem: lock](/graph/api/driveitem-lock?view=graph-rest-beta&preserve-view=true) method to the [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta&preserve-view=true) resource. Use it to acquire or refresh an exclusive lock on a file; use the related `releaseLock` method to release it when editing is complete.
+- The [driveItem: extractSensitivityLabels](/graph/api/driveitem-extractsensitivitylabels?view=graph-rest-beta&preserve-view=true) API isn't supported for Microsoft SharePoint Embedded containers.
 
 ### Identity and access | Directory management
 
@@ -248,6 +244,8 @@ Added redirect URI validation and restriction capabilities to [tenant app manage
 ### Identity and access | Identity and sign-in
 
 Added the **callerIdNumber** property to the [voiceAuthenticationMethodConfiguration](/graph/api/resources/voiceauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true) resource. Use this property to configure the phone number displayed as the caller ID when voice call authentication is initiated.
+
+Added updated identity fields to the [agentRiskDetection](/graph/api/resources/agentriskdetection?view=graph-rest-beta&preserve-view=true) resource type to make it easier to identify the associated identity in agent risk detections. Deprecated the legacy agent identity properties; they will be removed after 2027-04-28.
 
 ### Mail
 

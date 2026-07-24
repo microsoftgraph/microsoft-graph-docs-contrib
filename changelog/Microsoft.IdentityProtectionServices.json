@@ -1,6 +1,56 @@
-{
+ {
   "changelog": [
        {
+      "ChangeList": [
+        {
+          "Id": "b9cf7493-f32a-40f7-9f43-fbdd04f8fe7e",
+          "ApiChange": "Member",
+          "ChangedApiName": "user",
+          "ChangeType": "Addition",
+          "Description": "Added the `user` member to the **agentIdentityType** enumeration.",
+          "Target": "agentIdentityType"
+        },
+        {
+          "Id": "b9cf7493-f32a-40f7-9f43-fbdd04f8fe7e",
+          "ApiChange": "Property",
+          "ChangedApiName": "displayName",
+          "ChangeType": "Addition",
+          "Description": "Added the **displayName** property to the [agentRiskDetection](https://learn.microsoft.com/en-us/graph/api/resources/agentRiskDetection?view=graph-rest-beta) resource.",
+          "Target": "agentRiskDetection"
+        },
+        {
+          "Id": "b9cf7493-f32a-40f7-9f43-fbdd04f8fe7e",
+          "ApiChange": "Property",
+          "ChangedApiName": "identityId",
+          "ChangeType": "Addition",
+          "Description": "Added the **identityId** property to the [agentRiskDetection](https://learn.microsoft.com/en-us/graph/api/resources/agentRiskDetection?view=graph-rest-beta) resource.",
+          "Target": "agentRiskDetection"
+        },
+        {
+          "Id": "b9cf7493-f32a-40f7-9f43-fbdd04f8fe7e",
+          "ApiChange": "Property",
+          "ChangedApiName": "agentId",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **agentId** property in the [agentRiskDetection](https://learn.microsoft.com/en-us/graph/api/resources/agentRiskDetection?view=graph-rest-beta) resource. Use **identityId** instead. This property will be removed after 2027-04-28.",
+          "Target": "agentRiskDetection"
+        },
+        {
+          "Id": "b9cf7493-f32a-40f7-9f43-fbdd04f8fe7e",
+          "ApiChange": "Property",
+          "ChangedApiName": "agentDisplayName",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **agentDisplayName** property in the [agentRiskDetection](https://learn.microsoft.com/en-us/graph/api/resources/agentRiskDetection?view=graph-rest-beta) resource. Use **displayName** instead. This property will be removed after 2027-04-28.",
+          "Target": "agentRiskDetection"
+        }
+      ],
+      "Id": "b9cf7493-f32a-40f7-9f43-fbdd04f8fe7e",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-07-23T20:45:40.3303757Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
       "ChangeList": [
         {
           "Id": "3a5aeca2-a3c0-4dcb-99da-6b4ccb935d96",

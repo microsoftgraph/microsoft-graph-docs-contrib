@@ -20,7 +20,7 @@ Specifies the resource that a cross-tenant capability policy applies to. This ty
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|resourceId|String|The ID of the resource to modify (a user or group ID).|
+|resourceId|String|The ID of the resource to modify. The value is either `All`, to apply the capability to all resources of the type specified by **resourceType** (all users or all groups), or the GUID of a specific user or group.|
 |resourceType|[m365ResourceType](#m365resourcetype-values)|The type of resource. The possible values are: `none`, `group`, `user`, `unknownFutureValue`.|
 
 ### m365ResourceType values
