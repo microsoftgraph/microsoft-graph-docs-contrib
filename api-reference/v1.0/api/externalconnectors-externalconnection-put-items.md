@@ -39,7 +39,7 @@ PUT /external/connections/{connection-id}/items/{item-id}
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [externalItem](../resources/externalconnectors-externalitem.md) object.
+In the request body, supply a JSON representation of the [externalItem](../resources/externalconnectors-externalitem.md) object. The payload is limited to 30 MB.
 
 You can specify the following properties when creating an [externalItem](../resources/externalconnectors-externalitem.md).
 
