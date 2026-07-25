@@ -1360,7 +1360,8 @@
                 "accessReviewInstanceDecisionItem",
                 "accessReviewHistoryDefinition",
                 "accessReviewHistoryInstance",
-                "accessReviewPolicy"
+                "accessReviewPolicy",
+                "unifiedRoot"
               ]
             },
             {
