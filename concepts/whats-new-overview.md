@@ -147,6 +147,10 @@ Added the `cloudNativeHtmlConversion` member to the [additionalDataOptions](/gra
 
 Updated Microsoft Graph documentation for transcript APIs to add guidance on tenant administrator controls that govern transcript access and speaker attribution. For more information, see [Get change notifications for transcripts and recordings using Microsoft Graph](teams-changenotifications-callrecording-and-calltranscript.md).
 
+### Teamwork and communications | Messaging
+
+Added the [chatMessageBody](/graph/api/resources/chatmessagebody?view=graph-rest-beta&preserve-view=true) resource type to support Teams-specific message content formats, including `markdown`.
+
 ### Teamwork and communications | Shift management
 
 The **timeZone** property of the [schedule](/graph/api/resources/schedule) resource must be set to an IANA time zone name, such as `America/Chicago` or `Europe/London`. For more information, see [Create or replace schedule](/graph/api/team-put-schedule).
@@ -237,6 +241,9 @@ Added redirect URI validation and restriction capabilities to [tenant app manage
 
 ### Identity and access | Governance
 
+- Added user-centric (catalog-scope) access reviews to the [accessReviewSet](/graph/api/resources/accessreviewset?view=graph-rest-beta&preserve-view=true) resource through the **unified** relationship, routed through the dedicated `accessReviews/unified` path segment. A reviewer evaluates a principal's access across all groups and applications in an entitlement management catalog in a single review, and can manage user-centric access review definitions through the unified route.
+- Added the [accessReviewStage: acceptRecommendations](/graph/api/accessreviewstage-acceptrecommendations?view=graph-rest-beta&preserve-view=true) and [accessReviewStage: batchRecordDecisions](/graph/api/accessreviewstage-batchrecorddecisions?view=graph-rest-beta&preserve-view=true) methods to the [accessReviewStage](/graph/api/resources/accessreviewstage?view=graph-rest-beta&preserve-view=true) resource. Use them to accept recommendations or record decisions in bulk for decision items within a single stage of a multi-stage access review.
+- Added the [accessReviewInstanceDecisionItemAccessPackageResource](/graph/api/resources/accessreviewinstancedecisionitemaccesspackageresource?view=graph-rest-beta&preserve-view=true) resource type to represent an access package for which access is reviewed through an [accessReviewInstanceDecisionItem](/graph/api/resources/accessreviewinstancedecisionitem?view=graph-rest-beta&preserve-view=true).
 - Added reviewer delegation support to the [accessReviewInstance: filterByCurrentUser](/graph/api/accessreviewinstance-filterbycurrentuser?view=graph-rest-beta&preserve-view=true) API for access reviews.
 - Added provisioning workflow support to [lifecycle workflows](/graph/api/resources/identitygovernance-workflow?view=graph-rest-beta&preserve-view=true). Use the `activateAndWait` action to run workflows synchronously for non-user subjects such as provisioning objects.
 - Added support for automatically quarantining Lifecycle Workflows to stop a workflow from processing more users than expected. Configure thresholds using the **quarantineConfiguration** property on [lifecycleManagementSettings](/graph/api/resources/identitygovernance-lifecyclemanagementsettings?view=graph-rest-beta&preserve-view=true), and clear a quarantine by calling [clearQuarantine](/graph/api/identitygovernance-workflow-clearquarantine?view=graph-rest-beta&preserve-view=true).
@@ -278,6 +285,10 @@ Manage the service plans associated with workspace desks and use a consistent **
 
 - Use the [Create manualAlert](/graph/api/security-alert-post-manualalert?view=graph-rest-beta&preserve-view=true) method to create a manual security alert with specified entities and metadata. The new [manualAlert](/graph/api/resources/security-manualalert?view=graph-rest-beta&preserve-view=true) resource type derives from [alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true) and uses the [entityDefinitionInput](/graph/api/resources/security-entitydefinitioninput?view=graph-rest-beta&preserve-view=true) complex type to specify associated entities.
 - Added the **tenantId** property to the [userAccount](/graph/api/resources/security-useraccount?view=graph-rest-beta&preserve-view=true) resource to provide the Entra home tenant ID for the compromised user account indicated in a [security alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true) where the alert evidence is related to a [processEvidence](/graph/api/resources/security-processevidence?view=graph-rest-beta&preserve-view=true), [userEvidence](/graph/api/resources/security-userevidence?view=graph-rest-beta&preserve-view=true), or [mailboxEvidence](/graph/api/resources/security-mailboxevidence?view=graph-rest-beta&preserve-view=true).
+
+### Security | Audit log query
+
+Expanded audit log coverage with 28 new [auditData](/graph/api/resources/security-auditdata?view=graph-rest-beta&preserve-view=true) derived types and corresponding [auditLogRecordType](/graph/api/resources/security-auditlogrecordtype?view=graph-rest-beta&preserve-view=true) enumeration members. Query audit events for AI and Copilot services (Dragon Copilot, Security Copilot, Copilot session sharing), security and compliance workloads (Defender for AI, threat submission entities, compliance policy grading), and productivity services (Fabric policy, Viva Glint campaigns, Azure AI Search, Teams user concerns, Spark Core). Added the **dynamicProperties** property of type [auditRecordTypeDictionary](/graph/api/resources/security-auditrecordtypedictionary?view=graph-rest-beta&preserve-view=true) to enable access to workload-specific audit event properties.
 
 ### Security | Custom detection rules
 

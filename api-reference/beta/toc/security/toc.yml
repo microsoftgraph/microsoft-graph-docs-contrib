@@ -260,6 +260,68 @@ items:
       href: ../../resources/security-auditlogrecord.md
     - name: List
       href: ../../api/security-auditlogquery-list-records.md
+  - name: Complex types
+    items:
+    - name: AI span outputs audit record
+      href: ../../resources/security-aispanoutputsauditrecord.md
+    - name: Alert submission audit record
+      href: ../../resources/security-alertsubmissionauditrecord.md
+    - name: Alert submission result detail audit record
+      href: ../../resources/security-alertsubmissionresultdetailauditrecord.md
+    - name: Audit data
+      href: ../../resources/security-auditdata.md
+    - name: Audit record type dictionary
+      href: ../../resources/security-auditrecordtypedictionary.md
+    - name: Azure AI Search audit record
+      href: ../../resources/security-azureaisearchauditrecord.md
+    - name: Compliance policy grading SharePoint audit record
+      href: ../../resources/security-compliancepolicygradingsharepointauditrecord.md
+    - name: Compliance SIT grading SharePoint audit record
+      href: ../../resources/security-compliancesitgradingsharepointauditrecord.md
+    - name: Copilot session sharing audit record
+      href: ../../resources/security-copilotsessionsharingauditrecord.md
+    - name: Defender Security for AI configuration audit record
+      href: ../../resources/security-defendersecurityforaiconfigurationauditrecord.md
+    - name: Dragon Copilot access record
+      href: ../../resources/security-dragoncopilotaccessrecord.md
+    - name: Dragon Copilot admin record
+      href: ../../resources/security-dragoncopilotadminrecord.md
+    - name: Dragon Copilot clinical data record
+      href: ../../resources/security-dragoncopilotclinicaldatarecord.md
+    - name: Dragon Copilot session record
+      href: ../../resources/security-dragoncopilotsessionrecord.md
+    - name: EOP submission feed entity audit record
+      href: ../../resources/security-eopsubmissionfeedentityauditrecord.md
+    - name: Fabric policy record
+      href: ../../resources/security-fabricpolicyrecord.md
+    - name: MDASH audit record
+      href: ../../resources/security-mdashauditrecord.md
+    - name: Microsoft Teams user concern audit record
+      href: ../../resources/security-microsoftteamsuserconcernauditrecord.md
+    - name: MOS agent info record V2
+      href: ../../resources/security-mosagentinforecordv2.md
+    - name: MSP vector search content metadata audit record
+      href: ../../resources/security-mspvectorsearchcontentmetadataauditrecord.md
+    - name: P4 AI risk score record
+      href: ../../resources/security-p4airiskscorerecord.md
+    - name: Security Copilot identity management audit record
+      href: ../../resources/security-securitycopilotidentitymanagementauditrecord.md
+    - name: Security Development Lifecycle AI log audit record
+      href: ../../resources/security-securitydevelopmentlifecycleailogauditrecord.md
+    - name: Sonar detonation entity audit record
+      href: ../../resources/security-sonardetonationentityauditrecord.md
+    - name: Sonar file detonation entity audit record
+      href: ../../resources/security-sonarfiledetonationentityauditrecord.md
+    - name: Sonar submission entity audit record
+      href: ../../resources/security-sonarsubmissionentityauditrecord.md
+    - name: Sonar URL detonation entity audit record
+      href: ../../resources/security-sonarurldetonationentityauditrecord.md
+    - name: Spark Core custom live pool record
+      href: ../../resources/security-sparkcorecustomlivepoolrecord.md
+    - name: Submission entity audit record
+      href: ../../resources/security-submissionentityauditrecord.md
+    - name: Viva Glint agentic campaign audit record
+      href: ../../resources/security-vivaglintagenticcampaignauditrecord.md
 - name: Case management
   items:
   - name: Overview
