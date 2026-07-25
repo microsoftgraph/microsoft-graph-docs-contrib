@@ -2668,6 +2668,15 @@ Namespace: microsoft.graph
 | text |
 | html |
 
+### chatMessageBodyContentType values
+
+| Member |
+| ---------- |
+| text |
+| html |
+| markdown |
+| unknownFutureValue |
+
 ### locationType values
 
 | Member |

@@ -18,6 +18,12 @@ An abstract type that represents audit log data in an [auditLogRecord](../resour
 
 The [defaultAuditData](../resources/security-defaultauditdata.md) type is an open type that contains the raw JSON audit data for Microsoft 365 services that don't have a specific derived type.
 
+## Properties
+
+|Property|Type|Description|
+|:---|:---|:---|
+|dynamicProperties|[microsoft.graph.security.auditRecordTypeDictionary](../resources/security-auditrecordtypedictionary.md)|An open-type dictionary that contains dynamic audit event properties as name-value pairs.|
+
 ## Relationships
 
 None.
@@ -32,6 +38,9 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.security.auditData"
+  "@odata.type": "#microsoft.graph.security.auditData",
+  "dynamicProperties": {
+    "@odata.type": "#microsoft.graph.security.auditRecordTypeDictionary"
+  }
 }
 ```
