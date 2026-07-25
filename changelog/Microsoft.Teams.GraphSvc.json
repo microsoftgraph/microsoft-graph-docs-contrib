@@ -3913,6 +3913,48 @@
       "CreatedDateTime": "2026-04-01T05:32:18.4592149Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Apps"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "390ddd14-a5eb-47f7-8335-f6cf37089fbe",
+          "ApiChange": "Resource",
+          "ChangedApiName": "chatMessageBody",
+          "ChangeType": "Addition",
+          "Description": "Added the [chatMessageBody](https://learn.microsoft.com/en-us/graph/api/resources/chatmessagebody?view=graph-rest-beta) resource. It introduces the evolvable **chatMessageBodyContentType** enumeration, which supports additional content types such as `markdown` for Teams messages.",
+          "Target": "chatMessageBody"
+        },
+        {
+          "Id": "390ddd14-a5eb-47f7-8335-f6cf37089fbe",
+          "ApiChange": "Property",
+          "ChangedApiName": "body",
+          "ChangeType": "Update",
+          "Description": "Changed the type of the **body** property on the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatmessage?view=graph-rest-beta) resource from [itemBody](https://learn.microsoft.com/en-us/graph/api/resources/itembody?view=graph-rest-beta) to [chatMessageBody](https://learn.microsoft.com/en-us/graph/api/resources/chatmessagebody?view=graph-rest-beta). The `text` and `html` content type values are unchanged.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "390ddd14-a5eb-47f7-8335-f6cf37089fbe",
+          "ApiChange": "Property",
+          "ChangedApiName": "body",
+          "ChangeType": "Update",
+          "Description": "Changed the type of the **body** property on the [chatMessageInfo](https://learn.microsoft.com/en-us/graph/api/resources/chatmessageinfo?view=graph-rest-beta) resource from [itemBody](https://learn.microsoft.com/en-us/graph/api/resources/itembody?view=graph-rest-beta) to [chatMessageBody](https://learn.microsoft.com/en-us/graph/api/resources/chatmessagebody?view=graph-rest-beta). The `text` and `html` content type values are unchanged.",
+          "Target": "chatMessageInfo"
+        },
+        {
+          "Id": "390ddd14-a5eb-47f7-8335-f6cf37089fbe",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "chatMessageBodyContentType",
+          "ChangeType": "Addition",
+          "Description": "Added the evolvable **chatMessageBodyContentType** enumeration type, which supports the `text`, `html`, and `markdown` content type values for the **messageBodyContentType** property of the [chatMessageBody](https://learn.microsoft.com/en-us/graph/api/resources/chatmessagebody?view=graph-rest-beta) resource.",
+          "Target": "chatMessageBodyContentType"
+        }
+      ],
+      "Id": "390ddd14-a5eb-47f7-8335-f6cf37089fbe",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-07-24T17:14:39.0000000Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
     }
   ]
 }
