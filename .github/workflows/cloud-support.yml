@@ -16,16 +16,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout docs repo
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
       with:
         path: docs
     - name: Checkout metadata repo
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
       with:
         repository: microsoftgraph/msgraph-metadata
         path: metadata
     - name: Checkout tool repo
-      uses: actions/checkout@v6
+      uses: actions/checkout@v7
       with:
         repository: microsoftgraph/msgraph-cloud-support
         path: tool
