@@ -86,7 +86,9 @@ The following table lists the possible values for the error types.
 
 ## Examples
 
-### Request
+### Example 1: Assign a sensitivity label
+
+#### Request
 
 The following example shows a request.
 
@@ -110,7 +112,7 @@ Content-Type: application/json
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
 
@@ -146,6 +148,7 @@ Content-Type: application/json
 
 Alternatively, identify the user by their user principal name.
 
+<!-- { "blockType": "request", "name": "assignSensitivityLabel_apponly_upn", "tags": "service.graph", "sampleKeys": ["016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U"] } -->
 ``` http
 POST https://graph.microsoft.com/v1.0/drives/{drive-id}/items/016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U/assignSensitivityLabel
 Content-Type: application/json
@@ -165,6 +168,7 @@ Content-Type: application/json
 <!-- { "blockType": "response" } -->
 ```http
 HTTP/1.1 202 Accepted
+Location: https://contoso.sharepoint.com/_api/v2.0/monitor/QXNzaWduU2Vuc2l0aXZpdHlMYWJlbCxiMzc3ODY3OS04OWQ3LTRkYmYtYjg0MC1jYWM1NzRhY2FlNmE?tempAuth=******
 ```
 
 ### Remarks
