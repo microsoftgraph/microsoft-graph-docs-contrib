@@ -6,7 +6,7 @@ ms.reviewer: "mbhargav, khotzteam, aadgroupssg"
 ms.localizationpriority: high
 ms.subservice: "entra-groups"
 doc_type: apiPageType
-ms.date: 08/20/2024
+ms.date: 07/27/2026
 ---
 
 # Update group
@@ -33,6 +33,8 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/group-update-permissions.md)]
 
 ### Permissions for specific scenarios
+
+- *Group-NestingSupport.ReadWrite.All* is the least privileged permission to update the **disableNesting** property.
 
 - *Group.ManageProtection.All* delegated permission is the least privileged permission to update the **assignedLabels** property for cloud security groups. App-only scenarios aren't supported.
 
