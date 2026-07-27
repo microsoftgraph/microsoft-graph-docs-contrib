@@ -908,6 +908,10 @@ items:
       href: ../../api/security-ediscoverycase-delete-legalholds.md
     - name: Retry policy
       href: ../../api/security-ediscoveryholdpolicy-retrypolicy.md
+    - name: Enable policy
+      href: ../../api/security-ediscoveryholdpolicy-enablepolicy.md
+    - name: Disable policy
+      href: ../../api/security-ediscoveryholdpolicy-disablepolicy.md
     - name: Site sources
       items:
       - name: List

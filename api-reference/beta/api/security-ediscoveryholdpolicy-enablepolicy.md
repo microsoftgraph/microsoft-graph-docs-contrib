@@ -1,0 +1,84 @@
+---
+title: "ediscoveryHoldPolicy: enablePolicy"
+description: "Enable an eDiscovery legal hold policy to apply the hold across all the data sources included in the policy."
+author: "OmkarVedak"
+ms.date: 07/24/2026
+ms.localizationpriority: medium
+ms.subservice: "ediscovery"
+doc_type: apiPageType
+---
+
+# ediscoveryHoldPolicy: enablePolicy
+
+Namespace: microsoft.graph.security
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Enable an [eDiscovery hold policy](../resources/security-ediscoveryholdpolicy.md) (legal hold) to apply the hold across all the data sources included in the policy in a single operation.
+
+This operation runs asynchronously. To track completion, [get the ediscoveryHoldPolicy](../api/security-ediscoveryholdpolicy-get.md) and review its **isEnabled** and **errors** properties.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
+## Permissions
+
+Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
+
+<!-- {
+  "blockType": "permissions",
+  "name": "security-ediscoveryholdpolicy-enablepolicy-permissions"
+}
+-->
+[!INCLUDE [permissions-table](../includes/permissions/security-ediscoveryholdpolicy-enablepolicy-permissions.md)]
+[!INCLUDE [rbac-ediscovery-write](../includes/rbac-for-apis/rbac-ediscovery-apis-write.md)]
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/legalHolds/{ediscoveryHoldPolicyId}/enablePolicy
+```
+
+## Request headers
+
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
+
+## Request body
+
+Don't supply a request body for this method.
+
+## Response
+
+If successful, this action returns a `204 No Content` response code.
+
+## Examples
+
+### Request
+
+The following example shows a request.
+<!-- {
+  "blockType": "request",
+  "name": "ediscoveryholdpolicythis.enablepolicy"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/c2940e86-57c0-4b6d-acce-9944bdfdf58a/legalHolds/21292627-70a5-47e1-aef1-5f70c6d0bb42/enablePolicy
+```
+
+
+### Response
+
+The following example shows the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
