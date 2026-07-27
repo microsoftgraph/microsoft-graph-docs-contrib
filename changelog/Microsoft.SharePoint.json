@@ -33,7 +33,7 @@
           "ChangeType": "Addition",
           "Description": "Added the [sharePointReportSettings](https://learn.microsoft.com/en-us/graph/api/resources/sharepointreportsettings?view=graph-rest-beta) resource and an associated method.",
           "Target": "sharePointReportSettings"
-        },
+          },
         {
           "Id": "47429c7d-024e-4b43-ac1a-43f466fcbe10",
           "ApiChange": "Method",
@@ -49,7 +49,7 @@
           "ChangeType": "Addition",
           "Description": "Added the [enableApiUsageReport](https://learn.microsoft.com/en-us/graph/api/sharepointreportsettings-enableapiusagereport?view=graph-rest-beta) method to the [sharePointReportSettings](https://learn.microsoft.com/en-us/graph/api/resources/sharepointreportsettings?view=graph-rest-beta) resource.",
           "Target": "sharePointReportSettings"
-        }
+          }
       ],
       "Id": "47429c7d-024e-4b43-ac1a-43f466fcbe10",
       "Cloud": "Prod",
@@ -465,40 +465,40 @@
       "SubArea": ""
     },
     {
-      "Id": "87e904df-d6a6-4e69-a697-bdfa505f9d2d",
-      "Version": "beta",
-      "WorkloadArea": "Sites and lists",
-      "SubArea": "",
-      "CreatedDateTime": "2026-07-27T06:57:00.0000000Z",
       "ChangeList": [
         {
-          "Description": "Added the **appliedByUser** parameter to the [assignSensitivityLabel](https://learn.microsoft.com/en-us/graph/api/driveitem-assignsensitivitylabel?view=graph-rest-beta&preserve-view=true) action on [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta&preserve-view=true). This parameter allows app-only callers to specify the user on whose behalf the label is applied.",
           "Id": "87e904df-d6a6-4e69-a697-bdfa505f9d2d",
           "ApiChange": "Parameter",
-          "Target": "driveItem",
+          "ChangedApiName": "appliedByUser",
           "ChangeType": "Addition",
-          "ChangedApiName": "appliedByUser"
+          "Description": "Added the **appliedByUser** parameter to the [assignSensitivityLabel](https://learn.microsoft.com/en-us/graph/api/driveitem-assignsensitivitylabel?view=graph-rest-beta&preserve-view=true) action on [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta&preserve-view=true). This parameter allows app-only callers to specify the user on whose behalf the label is applied.",
+          "Target": "driveItem"
         }
       ],
-      "Cloud": "Prod"
+      "Id": "87e904df-d6a6-4e69-a697-bdfa505f9d2d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-07-27T06:57:00.0000000Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
     },
     {
-      "Id": "0ed23253-c04f-42ae-8648-de8a21154a97",
-      "Version": "v1.0",
-      "WorkloadArea": "Sites and lists",
-      "SubArea": "",
-      "CreatedDateTime": "2026-07-27T06:57:00.0000000Z",
       "ChangeList": [
         {
-          "Description": "Added the **appliedByUser** parameter to the [assignSensitivityLabel](https://learn.microsoft.com/en-us/graph/api/driveitem-assignsensitivitylabel?view=graph-rest-1.0&preserve-view=true) action on [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0&preserve-view=true). This parameter allows app-only callers to specify the user on whose behalf the label is applied.",
           "Id": "0ed23253-c04f-42ae-8648-de8a21154a97",
           "ApiChange": "Parameter",
-          "Target": "driveItem",
+          "ChangedApiName": "appliedByUser",
           "ChangeType": "Addition",
-          "ChangedApiName": "appliedByUser"
+          "Description": "Added the **appliedByUser** parameter to the [assignSensitivityLabel](https://learn.microsoft.com/en-us/graph/api/driveitem-assignsensitivitylabel?view=graph-rest-1.0&preserve-view=true) action on [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0&preserve-view=true). This parameter allows app-only callers to specify the user on whose behalf the label is applied.",
+          "Target": "driveItem"
         }
       ],
-      "Cloud": "Prod"
+      "Id": "0ed23253-c04f-42ae-8648-de8a21154a97",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-07-27T06:57:00.0000000Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
     }
   ]
 }
