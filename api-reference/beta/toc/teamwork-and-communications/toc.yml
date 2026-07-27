@@ -1313,6 +1313,8 @@ items:
         href: ../../resources/sectiondisplayicon.md
   - name: Complex types
     items:
+    - name: Chat message body
+      href: ../../resources/chatmessagebody.md
     - name: Forward to chat result
       href: ../../resources/forwardtochatresult.md
 - name: Shift management
