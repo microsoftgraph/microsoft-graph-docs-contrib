@@ -65,6 +65,7 @@ In the request body, provide the ID for the sensitivity label that is to be assi
 | sensitivityLabelId  | String  | Required. ID of the sensitivity label to be assigned, or empty string to remove the sensitivity label.              |
 | assignmentMethod    | [sensitivityLabelAssignmentMethod](/graph/api/resources/sensitivitylabelassignment?view=graph-rest-1.0&preserve-view=true#sensitivitylabelassignmentmethod-values) | Optional. The assignment method of the label on the document. Indicates whether the assignment of the label was done automatically, standard, or as a privileged operation (the equivalent of an administrator operation).     |
 | justificationText   | String | Optional. Justification text for audit purposes, and is required when downgrading/removing a label.  |
+| appliedByUser       | [userIdentity](/graph/api/resources/useridentity?view=graph-rest-1.0&preserve-view=true) | Optional. The identity of the user on whose behalf the label is applied. Supported only in application (app-only) context. Specify either `id` (Entra Object ID) or `userPrincipalName`. |
 
 ## Response
 
@@ -121,6 +122,50 @@ Location: https://contoso.sharepoint.com/_api/v2.0/monitor/QXNzaWduU2Vuc2l0aXZpd
 
 The value of the `Location` header provides a URL for a service that returns the current state of the assignSensitivityLabel operation.
 You can use this information to [determine when the assignSensitivityLabel operation finishes](/graph/long-running-actions-overview).
+
+### Example 2: Assign a sensitivity label on behalf of a user (app-only)
+
+#### Request
+
+The following example shows an app-only request that assigns a label on behalf of a specific user, identified by Entra Object ID.
+
+<!-- { "blockType": "request", "name": "assignSensitivityLabel_apponly_id", "tags": "service.graph", "sampleKeys": ["016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U"] } -->
+``` http
+POST https://graph.microsoft.com/v1.0/drives/{drive-id}/items/016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U/assignSensitivityLabel
+Content-Type: application/json
+
+{
+  "sensitivityLabelId": "5feba255-812e-446a-ac59-a7044ef827b5",
+  "assignmentMethod": "standard",
+  "justificationText": "test_justification",
+  "appliedByUser": {
+    "id": "4a2ec3c4-1b2d-3e4f-5a6b-7c8d9e0f1a2b"
+  }
+}
+```
+
+Alternatively, identify the user by their user principal name.
+
+``` http
+POST https://graph.microsoft.com/v1.0/drives/{drive-id}/items/016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U/assignSensitivityLabel
+Content-Type: application/json
+
+{
+  "sensitivityLabelId": "5feba255-812e-446a-ac59-a7044ef827b5",
+  "assignmentMethod": "standard",
+  "justificationText": "test_justification",
+  "appliedByUser": {
+    "userPrincipalName": "adelev@contoso.com"
+  }
+}
+```
+
+#### Response
+
+<!-- { "blockType": "response" } -->
+```http
+HTTP/1.1 202 Accepted
+```
 
 ### Remarks
 
