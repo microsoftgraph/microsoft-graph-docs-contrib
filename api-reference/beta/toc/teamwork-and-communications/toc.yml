@@ -1311,6 +1311,28 @@ items:
       items:
       - name: Section display icon
         href: ../../resources/sectiondisplayicon.md
+  - name: Custom emoji (preview)
+    items:
+    - name: Teamwork messaging
+      items:
+      - name: Teamwork messaging
+        href: ../../resources/teamworkmessaging.md
+      - name: List customEmojis
+        href: ../../api/teamworkmessaging-list-customemojis.md
+      - name: Create teamworkCustomEmoji
+        href: ../../api/teamworkmessaging-post-customemojis.md
+    - name: Teamwork custom emoji
+      items:
+      - name: Teamwork custom emoji
+        href: ../../resources/teamworkcustomemoji.md
+      - name: List
+        href: ../../api/teamworkmessaging-list-customemojis.md
+      - name: Create
+        href: ../../api/teamworkmessaging-post-customemojis.md
+    - name: Complex types
+      items:
+      - name: Custom emoji from identity set
+        href: ../../resources/customemojifromidentityset.md
   - name: Complex types
     items:
     - name: Chat message body

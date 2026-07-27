@@ -3621,6 +3621,16 @@
               "complexTypes": [
                 "sectionDisplayIcon"
               ]
+            },        
+            {
+              "name": "Custom emoji (preview)",
+              "resources": [
+                "teamworkMessaging",
+                "teamworkCustomEmoji"
+              ],
+              "complexTypes": [
+                  "customEmojiFromIdentitySet"
+              ]
             }
           ],
           "complexTypes": [

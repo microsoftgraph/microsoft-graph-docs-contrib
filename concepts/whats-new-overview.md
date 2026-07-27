@@ -186,6 +186,8 @@ Updated Microsoft Graph documentation for transcript APIs to add guidance on ten
 
 The **timeZone** property of the [schedule](/graph/api/resources/schedule) resource must be set to an IANA time zone name, such as `America/Chicago` or `Europe/London`. For more information, see [Create or replace schedule](/graph/api/team-put-schedule).
 
+- Introduced custom emoji management capabilities for Microsoft Teams through the new [teamworkCustomEmoji](/graph/api/resources/teamworkcustomemoji) resource type and [teamworkMessaging](/graph/api/resources/teamworkmessaging) resource. You can now [upload custom emojis](/graph/api/teamworkmessaging-post-customemojis) to your tenant and [retrieve a list of available custom emojis](/graph/api/teamworkmessaging-list-customemojis) that users can include in chat and channel messages.
+
 ### Users
 
 Application permissions for the [user: translateExchangeIds](/graph/api/user-translateexchangeids) API are supported only for request URLs that identify a user in the path.
