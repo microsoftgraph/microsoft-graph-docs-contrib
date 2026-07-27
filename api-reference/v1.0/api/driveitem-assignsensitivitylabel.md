@@ -146,7 +146,19 @@ Content-Type: application/json
 }
 ```
 
-Alternatively, identify the user by their user principal name.
+#### Response
+
+<!-- { "blockType": "response" } -->
+```http
+HTTP/1.1 202 Accepted
+Location: https://contoso.sharepoint.com/_api/v2.0/monitor/QXNzaWduU2Vuc2l0aXZpdHlMYWJlbCxiMzc3ODY3OS04OWQ3LTRkYmYtYjg0MC1jYWM1NzRhY2FlNmE?tempAuth=******
+```
+
+### Example 3: Assign a sensitivity label on behalf of a user using UPN (app-only)
+
+#### Request
+
+The following example shows an app-only request that identifies the user by their user principal name.
 
 <!-- { "blockType": "request", "name": "assignSensitivityLabel_apponly_upn", "tags": "service.graph", "sampleKeys": ["016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U"] } -->
 ``` http
