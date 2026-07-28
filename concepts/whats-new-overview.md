@@ -136,21 +136,9 @@ Added the [Delete mailboxItem](/graph/api/mailboxfolder-delete-items?view=graph-
 
 - Added the [plannerHistoryItem](/graph/api/resources/plannerhistoryitem?view=graph-rest-beta&preserve-view=true) resource type and [List historyItems](/graph/api/plannerplan-list-historyitems?view=graph-rest-beta&preserve-view=true) method to audit task changes within a Planner plan. Track when tasks are created, updated, deleted, or moved, and filter by **occurredDateTime** to retrieve changes within specific time ranges.
 
-### Teamwork and communications | Graph API controls
-
-Updated Microsoft Graph documentation for transcript APIs to add guidance on tenant administrator controls that govern transcript access and speaker attribution. For more information, see [Get change notifications for transcripts and recordings using Microsoft Graph](/graph/teams-changenotifications-callrecording-and-calltranscript).
-
 ### Teamwork and communications | Messaging
 
 Added the [chatMessageBody](/graph/api/resources/chatmessagebody?view=graph-rest-beta&preserve-view=true) resource type to support Teams-specific message content formats, including `markdown`.
-
-### Teamwork and communications | Shift management
-
-The **timeZone** property of the [schedule](/graph/api/resources/schedule) resource must be set to an IANA time zone name, such as `America/Chicago` or `Europe/London`. For more information, see [Create or replace schedule](/graph/api/team-put-schedule).
-
-### Users
-
-Application permissions for the [user: translateExchangeIds](/graph/api/user-translateexchangeids) API are supported only for request URLs that identify a user in the path.
 
 ## June 2026: New and generally available
 
@@ -178,7 +166,7 @@ Added the `cloudNativeHtmlConversion` member to the [additionalDataOptions](/gra
 
 ### Teamwork and communications | Graph API controls
 
-Updated Microsoft Graph documentation for transcript APIs to add guidance on tenant administrator controls that govern transcript access and speaker attribution. For more information, see [Get change notifications for transcripts and recordings using Microsoft Graph](teams-changenotifications-callrecording-and-calltranscript.md).
+Updated Microsoft Graph documentation for transcript APIs to add guidance on tenant administrator controls that govern transcript access and speaker attribution. For more information, see [Get change notifications for transcripts and recordings using Microsoft Graph](/graph/teams-changenotifications-callrecording-and-calltranscript).
 
 ### Teamwork and communications | Shift management
 
