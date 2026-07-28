@@ -27,6 +27,7 @@ Inherits from [b2BSignInActivityMetricsBase](../resources/tenantgovernanceservic
 |Relationship|Type|Description|
 |:---|:---|:---|
 |initial|[microsoft.graph.tenantGovernanceServices.b2BSignInActivityMetricsInitial](../resources/tenantgovernanceservices-b2bsigninactivitymetricsinitial.md)|B2B sign-in activity metrics corresponding to initial snapshots where metrics were aggregated for the first time.|
+|investigationHints|[microsoft.graph.tenantGovernanceServices.actionStep](../resources/tenantgovernanceservices-actionstep.md) collection|Ordered drill-in guidance for investigating sign-in user and application counts. This collection is returned only when explicitly requested by using a nested `$expand` query parameter, for example `$expand=b2BSignInActivityMetrics($expand=investigationHints)`.|
 |recent|[microsoft.graph.tenantGovernanceServices.b2BSignInActivityMetricsRecent](../resources/tenantgovernanceservices-b2bsigninactivitymetricsrecent.md)|B2B sign-in activity metrics corresponding to recent snapshots where metrics were found to have sufficiently changed.|
 
 ## JSON representation

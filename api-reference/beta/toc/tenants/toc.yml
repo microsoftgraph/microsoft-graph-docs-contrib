@@ -355,6 +355,20 @@ items:
       href: ../../api/tenantgovernanceservices-governancerelationship-get.md
     - name: Update
       href: ../../api/tenantgovernanceservices-governancerelationship-update.md
+  - name: Complex types
+    items:
+    - name: Action step
+      href: ../../resources/tenantgovernanceservices-actionstep.md
+    - name: Action URL
+      href: ../../resources/tenantgovernanceservices-actionurl.md
+    - name: B 2 b registration metrics
+      href: ../../resources/tenantgovernanceservices-b2bregistrationmetrics.md
+    - name: B 2 b sign in activity metrics
+      href: ../../resources/tenantgovernanceservices-b2bsigninactivitymetrics.md
+    - name: Billing metrics
+      href: ../../resources/tenantgovernanceservices-billingmetrics.md
+    - name: Multitenant application metrics
+      href: ../../resources/tenantgovernanceservices-multitenantapplicationmetrics.md
 - name: Tenant information
   items:
   - name: Tenant information

@@ -152,6 +152,11 @@ Added the [chatMessageBody](/graph/api/resources/chatmessagebody?view=graph-rest
 
 The **timeZone** property of the [schedule](/graph/api/resources/schedule) resource must be set to an IANA time zone name, such as `America/Chicago` or `Europe/London`. For more information, see [Create or replace schedule](/graph/api/team-put-schedule).
 
+### Tenants | Tenant governance
+
+- Added the **isMicrosoftInfrastructure** property to the [relatedTenant](/graph/api/resources/tenantgovernanceservices-relatedtenant?view=graph-rest-beta&preserve-view=true) resource. Use it to identify whether a discovered related tenant is a Microsoft infrastructure tenant.
+- Added the **investigationHints** relationship to the metrics resources ([b2bRegistrationMetrics](/graph/api/resources/tenantgovernanceservices-b2bregistrationmetrics?view=graph-rest-beta&preserve-view=true), [b2BSignInActivityMetrics](/graph/api/resources/tenantgovernanceservices-b2bsigninactivitymetrics?view=graph-rest-beta&preserve-view=true), [billingMetrics](/graph/api/resources/tenantgovernanceservices-billingmetrics?view=graph-rest-beta&preserve-view=true), [multiTenantApplicationMetrics](/graph/api/resources/tenantgovernanceservices-multitenantapplicationmetrics?view=graph-rest-beta&preserve-view=true)) for [relatedTenant](/graph/api/resources/tenantgovernanceservices-relatedtenant?view=graph-rest-beta&preserve-view=true). Use it to retrieve ordered steps that reference Microsoft Graph or Azure Resource Manager APIs to help investigate aggregate metric values. Use nested `$expand` to retrieve hints.
+
 ### Users
 
 Application permissions for the [user: translateExchangeIds](/graph/api/user-translateexchangeids) API are supported only for request URLs that identify a user in the path.
