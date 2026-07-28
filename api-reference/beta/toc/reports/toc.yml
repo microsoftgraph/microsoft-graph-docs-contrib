@@ -766,6 +766,10 @@ items:
       items:
       - name: Get SharePoint API usage
         href: ../../api/reportroot-getsharepointapiusage.md
+    - name: SharePoint Embedded
+      items:
+      - name: Get SharePoint Embedded file storage container usage summary
+        href: ../../api/reportroot-getmicrosoftappsfilestoragecontainerusagesummary.md
     - name: Skype for Business activity
       items:
       - name: Get user detail
