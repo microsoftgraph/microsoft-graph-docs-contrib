@@ -1,7 +1,7 @@
 ---
 title: "Use the Microsoft Graph APIs for Microsoft Threat Intelligence"
 description: "The Microsoft Threat Intelligence APIs in Microsoft Graph help organizations conduct threat infrastructure analysis and gather actionable threat intelligence."
-author: "prtanej-microsoft"
+author: "prtanej"
 ms.localizationpriority: medium
 ms.subservice: "security"
 doc_type: conceptualPageType
