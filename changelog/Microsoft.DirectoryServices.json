@@ -3,6 +3,90 @@
     {
       "ChangeList": [
         {
+          "Id": "f3347f42-0a1f-4d7e-b38a-f0ea25200498",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "remoteTenantGroups",
+          "ChangeType": "Addition",
+          "Description": "Added the **remoteTenantGroups** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource.",
+          "Target": "directory"
+        },
+        {
+          "Id": "f3347f42-0a1f-4d7e-b38a-f0ea25200498",
+          "ApiChange": "Resource",
+          "ChangedApiName": "remoteTenantGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the [remoteTenantGroup](https://learn.microsoft.com/en-us/graph/api/resources/remotetenantgroup?view=graph-rest-beta) resource.",
+          "Target": "remoteTenantGroup"
+        },
+        {
+          "Id": "f3347f42-0a1f-4d7e-b38a-f0ea25200498",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get remoteTenantGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get remoteTenantGroup](https://learn.microsoft.com/en-us/graph/api/remotetenantgroup-get?view=graph-rest-beta) method to the [remoteTenantGroup](https://learn.microsoft.com/en-us/graph/api/resources/remotetenantgroup?view=graph-rest-beta) resource.",
+          "Target": "remoteTenantGroup"
+        },
+        {
+          "Id": "f3347f42-0a1f-4d7e-b38a-f0ea25200498",
+          "ApiChange": "Method",
+          "ChangedApiName": "List remoteTenantGroup objects",
+          "ChangeType": "Addition",
+          "Description": "Added the [List remoteTenantGroup objects](https://learn.microsoft.com/en-us/graph/api/directory-list-remotetenantgroups?view=graph-rest-beta) method to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-beta) resource.",
+          "Target": "directory"
+        }
+      ],
+      "Id": "f3347f42-0a1f-4d7e-b38a-f0ea25200498",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-07-27T21:13:08.2494757Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "0c335844-273f-4b7a-9773-c5ad85f546ac",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "remoteTenantGroups",
+          "ChangeType": "Addition",
+          "Description": "Added the **remoteTenantGroups** relationship to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-1.0) resource.",
+          "Target": "directory"
+        },
+        {
+          "Id": "0c335844-273f-4b7a-9773-c5ad85f546ac",
+          "ApiChange": "Resource",
+          "ChangedApiName": "remoteTenantGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the [remoteTenantGroup](https://learn.microsoft.com/en-us/graph/api/resources/remotetenantgroup?view=graph-rest-1.0) resource.",
+          "Target": "remoteTenantGroup"
+        },
+        {
+          "Id": "0c335844-273f-4b7a-9773-c5ad85f546ac",
+          "ApiChange": "Method",
+          "ChangedApiName": "Get remoteTenantGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get remoteTenantGroup](https://learn.microsoft.com/en-us/graph/api/remotetenantgroup-get?view=graph-rest-1.0) method to the [remoteTenantGroup](https://learn.microsoft.com/en-us/graph/api/resources/remotetenantgroup?view=graph-rest-1.0) resource.",
+          "Target": "remoteTenantGroup"
+        },
+        {
+          "Id": "0c335844-273f-4b7a-9773-c5ad85f546ac",
+          "ApiChange": "Method",
+          "ChangedApiName": "List remoteTenantGroup objects",
+          "ChangeType": "Addition",
+          "Description": "Added the [List remoteTenantGroup objects](https://learn.microsoft.com/en-us/graph/api/directory-list-remotetenantgroups?view=graph-rest-1.0) method to the [directory](https://learn.microsoft.com/en-us/graph/api/resources/directory?view=graph-rest-1.0) resource.",
+          "Target": "directory"
+        }
+      ],
+      "Id": "0c335844-273f-4b7a-9773-c5ad85f546ac",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-07-27T21:13:08.2499229Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "f1a1c4e2-9b3d-4a7e-8c2f-1d4e6a8b9c0d",
           "ApiChange": "Relationship",
           "ChangedApiName": "sponsorOf",
@@ -275,7 +359,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "appManagementPolicyActorExemptions",
           "ChangeType": "Addition",
-          "Description": "Added the [appManagementPolicyActorExemptions](https://learn.microsoft.com/en-us/graph/api/resources/appManagementPolicyActorExemptions?view=graph-rest-1.0) resource.",
+          "Description": "Added the [appManagementPolicyActorExemptions](https://learn.microsoft.com/en-us/graph/api/resources/appmanagementpolicyactorexemptions?view=graph-rest-1.0) resource.",
           "Target": "appManagementPolicyActorExemptions"
         },
         {
@@ -6781,7 +6865,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "internalSponsors",
           "ChangeType": "Addition",
-          "Description": "Added the [internalSponsors](https://learn.microsoft.com/en-us/graph/api/resources/internalSponsors?view=graph-rest-1.0) resource type.",
+          "Description": "Added the [internalSponsors](https://learn.microsoft.com/en-us/graph/api/resources/internalsponsors?view=graph-rest-1.0) resource type.",
           "Target": "internalSponsors"
         },
         {
@@ -10971,7 +11055,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "conditionalAccessSessionControl,applicationEnforcedRestrictionsSessionControl,cloudAppSecuritySessionControl,signInFrequencySessionControl,persistentBrowserSessionControl,conditionalAccessSessionControls,conditionalAccessApplications,conditionalAccessUsers,conditionalAccessPlatforms,conditionalAccessLocations,conditionalAccessConditionSet,conditionalAccessGrantControls",
           "ChangeType": "Addition",
-          "Description": "Added new complex types: [conditionalAccessSessionControl](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessSessionControl), [applicationEnforcedRestrictionsSessionControl](https://learn.microsoft.com/en-us/graph/api/resources/applicationEnforcedRestrictionsSessionControl), [cloudAppSecuritySessionControl](https://learn.microsoft.com/en-us/graph/api/resources/cloudAppSecuritySessionControl), [signInFrequencySessionControl](https://learn.microsoft.com/en-us/graph/api/resources/signInFrequencySessionControl), [persistentBrowserSessionControl](https://learn.microsoft.com/en-us/graph/api/resources/persistentBrowserSessionControl), [conditionalAccessSessionControls](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessSessionControls), [conditionalAccessApplications](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessApplications), [conditionalAccessUsers](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessUsers), [conditionalAccessPlatforms](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessPlatforms), [conditionalAccessLocations](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessLocations), [conditionalAccessConditionSet](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessConditionSet), [conditionalAccessGrantControls](https://learn.microsoft.com/en-us/graph/api/resources/conditionalAccessGrantControls), ",
+          "Description": "Added new complex types: [conditionalAccessSessionControl](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesssessioncontrol), [applicationEnforcedRestrictionsSessionControl](https://learn.microsoft.com/en-us/graph/api/resources/applicationenforcedrestrictionssessioncontrol), [cloudAppSecuritySessionControl](https://learn.microsoft.com/en-us/graph/api/resources/cloudappsecuritysessioncontrol), [signInFrequencySessionControl](https://learn.microsoft.com/en-us/graph/api/resources/signinfrequencysessioncontrol), [persistentBrowserSessionControl](https://learn.microsoft.com/en-us/graph/api/resources/persistentbrowsersessioncontrol), [conditionalAccessSessionControls](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesssessioncontrols), [conditionalAccessApplications](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccessapplications), [conditionalAccessUsers](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccessusers), [conditionalAccessPlatforms](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccessplatforms), [conditionalAccessLocations](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccesslocations), [conditionalAccessConditionSet](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccessconditionset), [conditionalAccessGrantControls](https://learn.microsoft.com/en-us/graph/api/resources/conditionalaccessgrantcontrols).",
           "Target": "conditionalAccessSessionControl,applicationEnforcedRestrictionsSessionControl,cloudAppSecuritySessionControl,signInFrequencySessionControl,persistentBrowserSessionControl,conditionalAccessSessionControls,conditionalAccessApplications,conditionalAccessUsers,conditionalAccessPlatforms,conditionalAccessLocations,conditionalAccessConditionSet,conditionalAccessGrantControls"
         },
         {

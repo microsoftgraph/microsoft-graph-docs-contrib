@@ -25,6 +25,8 @@ Represents a legal hold policy. Legal holds are holds that are tied to an eDisco
 |[Update](../api/security-ediscoveryholdpolicy-update.md)|[microsoft.graph.security.ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md)|Update the properties of an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object.|
 |[Delete](../api/security-ediscoverycase-delete-legalholds.md)|None|Delete an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md) object.|
 |[Retry policy](../api/security-ediscoveryholdpolicy-retrypolicy.md)|None|Trigger a retry of an [eDiscovery hold policy](../resources/security-ediscoveryholdpolicy.md).|
+|[Enable policy](../api/security-ediscoveryholdpolicy-enablepolicy.md)|None|Enable an [eDiscovery hold policy](../resources/security-ediscoveryholdpolicy.md) to apply the hold across all the data sources included in the policy.|
+|[Disable policy](../api/security-ediscoveryholdpolicy-disablepolicy.md)|None|Disable an [eDiscovery hold policy](../resources/security-ediscoveryholdpolicy.md) to release the hold across all the data sources included in the policy.|
 | **Site sources** |||
 |[List](../api/security-ediscoveryholdpolicy-list-sitesources.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md) collection|Get a list of the [siteSource](../resources/security-sitesource.md) objects associated with an [ediscoveryHoldPolicy](../resources/security-ediscoveryholdpolicy.md).|
 |[Create](../api/security-ediscoveryholdpolicy-post-sitesources.md)|[microsoft.graph.security.siteSource](../resources/security-sitesource.md)|Create a new [siteSource](../resources/security-sitesource.md) object.|
