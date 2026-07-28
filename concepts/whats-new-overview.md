@@ -216,10 +216,6 @@ Application permissions for the [user: translateExchangeIds](/graph/api/user-tra
 - Deprecated the **queryExpression** property on the [artifactQuery](/graph/api/resources/artifactquery?view=graph-rest-beta&preserve-view=true) resource. Use the **structuredQueryExpression** property instead to create structured search queries.
 - Added the **error** property of type [publicError](/graph/api/resources/publicerror?view=graph-rest-beta&preserve-view=true) to the [granularRestoreArtifactBase](/graph/api/resources/granularrestoreartifactbase?view=graph-rest-beta&preserve-view=true) resource and its derived types. Use this property to get error details when a granular restore operation for an individual artifact fails or completes with an error.
 
-### Teamwork and communications | Calls and online meetings
-
-Use the **isRegistrationRequired** property on the [virtualEventTownhall](/graph/api/resources/virtualeventtownhall?view=graph-rest-beta&preserve-view=true) and [virtualEventWebinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true) resources to specify if attendees must complete the registration flow before they can attend.
-
 ### Device and app management | Cloud PC
 
 - Use the [cloudPcProvisioningPolicy: apply](/graph/api/cloudpcprovisioningpolicy-apply?view=graph-rest-beta&preserve-view=true) method to apply policy settings such as `region` and `singleSignOn`. This method also supports reprovisioning for frontline shared mode Cloud PCs by using the **reservePercentage** parameter to control the percentage of Cloud PCs that remain available during the process.
@@ -236,6 +232,7 @@ Added the [updateCategoryEnrollmentInformation](/graph/api/resources/windowsupda
 
 - Added the [getByUser](/graph/api/filestoragecontainer-getbyuser?view=graph-rest-beta&preserve-view=true) method to the [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true) resource. Use it to get the list of file storage containers that are owned by a specified user.
 - [Upsert](/graph/api/filestoragecontainer-patch-permissions?view=graph-rest-beta&preserve-view=true) (create or update) up to 40 permissions on a [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true) in a single request. The limit increased from 10 to 40 [permission](/graph/api/resources/permission?view=graph-rest-beta&preserve-view=true) objects per request.
+- Added the [transferPrincipalOwnership](/graph/api/filestoragecontainer-transferprincipalownership?view=graph-rest-beta&preserve-view=true) action to the [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true) resource. Use it to transfer the principal ownership of a user-owned container from one user to another.
 - Added the [driveItem: lock](/graph/api/driveitem-lock?view=graph-rest-beta&preserve-view=true) method to the [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta&preserve-view=true) resource. Use it to acquire or refresh an exclusive lock on a file; use the related `releaseLock` method to release it when editing is complete.
 - The [driveItem: extractSensitivityLabels](/graph/api/driveitem-extractsensitivitylabels?view=graph-rest-beta&preserve-view=true) API isn't supported for Microsoft SharePoint Embedded containers.
 

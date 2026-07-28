@@ -14,9 +14,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a location where multiple users or a group of users can store files and access them via an application. All file system objects in a **fileStorageContainer** are returned as [driveItem](../resources/driveitem.md) resources. 
+Represents a location where multiple users or a group of users can store files and access them via an application. All file system objects in a **fileStorageContainer** are returned as [driveItem](../resources/driveitem.md) resources.
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/filestorage-list-containers.md)|[fileStorageContainer](../resources/filestoragecontainer.md) collection|Get a list of [fileStorageContainer](../resources/filestoragecontainer.md) objects that are accessible to a caller.|
@@ -30,7 +31,7 @@ Represents a location where multiple users or a group of users can store files a
 |[Remove deleted](../api/filestorage-delete-deletedcontainers.md)|None|Remove a deleted [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Permanently delete](../api/filestoragecontainer-permanentdelete.md)|None|Permanently delete a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Get drive](../api/filestoragecontainer-get-drive.md)|[drive](../resources/drive.md)|Get the drive resource from a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
-|[List permissions](../api/filestoragecontainer-list-permissions.md)|[permission](../resources/permission.md) collection| List permissions on a fileStorageContainer.|
+|[List permissions](../api/filestoragecontainer-list-permissions.md)|[permission](../resources/permission.md) collection|List permissions on a fileStorageContainer.|
 |[Get permission](../api/filestoragecontainer-get-permissions.md)|[permission](../resources/permission.md)|Get a specific [permission](../resources/permission.md) from a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Add permissions](../api/filestoragecontainer-post-permissions.md)|[permission](../resources/permission.md)|Add permission to a fileStorageContainer.|
 |[Update permissions](../api/filestoragecontainer-update-permissions.md)|[permission](../resources/permission.md)|Update permission on a fileStorageContainer.|
@@ -40,7 +41,7 @@ Represents a location where multiple users or a group of users can store files a
 |[Add custom property](../api/filestoragecontainer-post-customproperty.md)|[filestoragecontainercustompropertyvalue](../resources/filestoragecontainercustompropertyvalue.md)|Create custom property to the fileStorageContainer.|
 |[Update custom property](../api/filestoragecontainer-update-customproperty.md)|[filestoragecontainercustompropertyvalue](../resources/filestoragecontainercustompropertyvalue.md)|Update custom property on a fileStorageContainer.|
 |[Delete custom property](../api/filestoragecontainer-delete-customproperty.md)|None|Delete a custom property from a fileStorageContainer.|
-|[List columns](../api/filestoragecontainer-list-columns.md)|[columnDefinition](../resources/columndefinition.md) collection|Get the collection of columns represented as [columnDefinition](../resources/columndefinition.md) resources in a  [fileStorageContainer](../resources/filestoragecontainer.md).  |
+|[List columns](../api/filestoragecontainer-list-columns.md)|[columnDefinition](../resources/columndefinition.md) collection|Get the collection of columns represented as [columnDefinition](../resources/columndefinition.md) resources in a [fileStorageContainer](../resources/filestoragecontainer.md).|
 |[Create column](../api/filestoragecontainer-post-columns.md)|[columnDefinition](../resources/columndefinition.md)|Create a column for a [fileStorageContainer](../resources/filestoragecontainer.md) that specifies a [columnDefinition](../resources/columndefinition.md).|
 |[Get column](../api/filestoragecontainer-get-column.md)|[columnDefinition](../resources/columndefinition.md)|Get the properties of a column represented as a [columnDefinition](../resources/columndefinition.md) in a [fileStorageContainer](../resources/filestoragecontainer.md).|
 |[Update column](../api/filestoragecontainer-update-column.md)|[columnDefinition](../resources/columndefinition.md)|Update an existing column represented as a [columnDefinition](../resources/columndefinition.md) in a [fileStorageContainer](../resources/filestoragecontainer.md).|
@@ -50,6 +51,7 @@ Represents a location where multiple users or a group of users can store files a
 |[Delete recycle bin items](../api/recyclebinitem-delete.md)|None|Delete [recycleBinItem](../resources/recyclebinitem.md) objects permanently from the [recycleBin](../resources/recyclebin.md) of a [fileStorageContainer](../resources/filestoragecontainer.md).|
 |[List recycle bin items](../api/filestoragecontainer-list-recyclebinitem.md)|[recycleBinItem](../resources/recyclebinitem.md) collection|List recycle bin items in a fileStorageContainer.|
 |[Lock](../api/filestoragecontainer-lock.md)|None|Lock a [fileStorageContainer](../resources/filestoragecontainer.md) to prevent modifications to its content.|
+|[Transfer principal ownership](../api/filestoragecontainer-transferprincipalownership.md)|None|Transfer the principal ownership of a user-owned [fileStorageContainer](../resources/filestoragecontainer.md) from one user to another.|
 |[Unlock](../api/filestoragecontainer-unlock.md)|None|Unlock a [fileStorageContainer](../resources/filestoragecontainer.md) for users and application-only identities to allow the addition, updating, and deletion of content.|
 |[Create migration job](../api/filestoragecontainer-post-migrationjobs.md)|[sharePointMigrationJob](../resources/sharepointmigrationjob.md)|Create a new [sharePointMigrationJob](../resources/sharepointmigrationjob.md) object that is scheduled to run at a later time to migrate content from an intermediary storage to the target [fileStorageContainer](../resources/filestoragecontainer.md).|
 |[Provision migration containers](../api/filestoragecontainer-provisionmigrationcontainers.md)|[sharePointMigrationContainerInfo](../resources/sharepointmigrationcontainerinfo.md)|Provision SharePoint-managed Azure blob containers as temporary storage for migration content and metadata.|
@@ -57,6 +59,7 @@ Represents a location where multiple users or a group of users can store files a
 |[Unarchive](../api/filestoragecontainer-unarchive.md)|None|Unarchive an archived [fileStorageContainer](../resources/filestoragecontainer.md).|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |archivalDetails|[siteArchivalDetails](../resources/sitearchivaldetails.md)|Archival details of the **fileStorageContainer**. Read-write.|
@@ -77,6 +80,7 @@ Represents a location where multiple users or a group of users can store files a
 |informationBarrier|[informationBarrier](../resources/informationBarrier.md)|Information barrier of a **fileStorageContainer**. Read-write.|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
 |columns|[columnDefinition](../resources/columndefinition.md) collection|The set of custom structured metadata supported by the **fileStorageContainer**. Read-write.|
@@ -87,6 +91,7 @@ Represents a location where multiple users or a group of users can store files a
 |migrationJobs|[sharePointMigrationJob](../resources/sharepointmigrationjob.md) collection|The collection of **sharePointMigrationJob** objects local to the container. Read-write.|
 
 ### roles property values
+
 |Value|Description|
 |:---|:---|
 |reader|Readers can read **fileStorageContainer** metadata and the content inside.|
@@ -94,8 +99,8 @@ Represents a location where multiple users or a group of users can store files a
 |manager|Managers can read and modify **fileStorageContainer** metadata and contents inside and manage the permissions to the container.|
 |owner|Owners can read and modify **fileStorageContainer** metadata and contents inside, manage container permissions, and delete and restore containers.|
 
-
 ## JSON representation
+
 The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
@@ -131,4 +136,3 @@ The following JSON representation shows the resource type.
   "archivalDetails": { "@odata.type": "microsoft.graph.siteArchivalDetails" }
 }
 ```
-
