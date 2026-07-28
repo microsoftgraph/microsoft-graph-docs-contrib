@@ -311,6 +311,10 @@ Expanded audit log coverage with 28 new [auditData](/graph/api/resources/securit
 ### Security | Identities
 - Introduced [sensor migration](/graph/api/resources/security-sensormigration?view=graph-rest-beta&preserve-view=true) capabilities to migrate eligible Microsoft Defender for Identity sensors.
 
+### SharePoint Embedded
+
+- Added the [getMicrosoftAppsFileStorageContainerUsageSummary](/graph/api/reportroot-getmicrosoftappsfilestoragecontainerusagesummary?view=graph-rest-beta&preserve-view=true) method to retrieve storage usage data for SharePoint Embedded file storage containers. Use it to get tenant-level, geo-level, and app-level metrics for active containers and storage consumption with hierarchical expansion support.
+
 ### Sites and lists
 
 - Added the **isSearchable** property to the [columnDefinition](/graph/api/resources/columndefinition?view=graph-rest-beta&preserve-view=true) resource type to enable independent control of the searchable state of a column, separate from the **indexed** property. This property is currently supported only for columns in a [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true).

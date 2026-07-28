@@ -3,6 +3,64 @@
     {
       "ChangeList": [
         {
+          "Id": "f31c6384-2660-4a91-89c2-909583fdf609",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftAppsFileStorageContainerUsage",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoftAppsFileStorageContainerUsage](https://learn.microsoft.com/en-us/graph/api/resources/microsoftappsfilestoragecontainerusage?view=graph-rest-beta) resource type.",
+          "Target": "microsoftAppsFileStorageContainerUsage"
+        },
+        {
+          "Id": "f31c6384-2660-4a91-89c2-909583fdf609",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftAppsFileStorageContainerGeoUsage",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoftAppsFileStorageContainerGeoUsage](https://learn.microsoft.com/en-us/graph/api/resources/microsoftappsfilestoragecontainergeousage?view=graph-rest-beta) resource type.",
+          "Target": "microsoftAppsFileStorageContainerGeoUsage"
+        },
+        {
+          "Id": "f31c6384-2660-4a91-89c2-909583fdf609",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftAppsFileStorageContainerAppUsage",
+          "ChangeType": "Addition",
+          "Description": "Added the [microsoftAppsFileStorageContainerAppUsage](https://learn.microsoft.com/en-us/graph/api/resources/microsoftappsfilestoragecontainerappusage?view=graph-rest-beta) resource type.",
+          "Target": "microsoftAppsFileStorageContainerAppUsage"
+        },
+        {
+          "Id": "f31c6384-2660-4a91-89c2-909583fdf609",
+          "ApiChange": "Method",
+          "ChangedApiName": "microsoftAppsFileStorageContainerUsageSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [getMicrosoftAppsFileStorageContainerUsageSummary](https://learn.microsoft.com/en-us/graph/api/reportroot-getmicrosoftappsfilestoragecontainerusagesummary?view=graph-rest-beta) method to the [reportRoot](https://learn.microsoft.com/en-us/graph/api/resources/reportroot?view=graph-rest-beta) resource.",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "f31c6384-2660-4a91-89c2-909583fdf609",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "usageByDataLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the **usageByDataLocation** relationship to the [microsoftAppsFileStorageContainerUsage](https://learn.microsoft.com/en-us/graph/api/resources/microsoftappsfilestoragecontainerusage?view=graph-rest-beta) resource type.",
+          "Target": "microsoftAppsFileStorageContainerUsage"
+        },
+        {
+          "Id": "f31c6384-2660-4a91-89c2-909583fdf609",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "usageByApp",
+          "ChangeType": "Addition",
+          "Description": "Added the **usageByApp** relationship to the [microsoftAppsFileStorageContainerGeoUsage](https://learn.microsoft.com/en-us/graph/api/resources/microsoftappsfilestoragecontainergeousage?view=graph-rest-beta) resource type.",
+          "Target": "microsoftAppsFileStorageContainerGeoUsage"
+        }
+      ],
+      "Id": "f31c6384-2660-4a91-89c2-909583fdf609",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-07-27T19:17:25.1642380Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Microsoft 365 usage reports"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a8f29d3c-156e-4b92-8d4f-7c8e9f0a1b2c",
           "ApiChange": "Relationship",
           "ChangedApiName": "sharePoint",

@@ -2626,6 +2626,9 @@
           "overview": "../../resources/report.md",
           "resources": [
             "adminReportSettings",
+            "microsoftAppsFileStorageContainerAppUsage",
+            "microsoftAppsFileStorageContainerGeoUsage",
+            "microsoftAppsFileStorageContainerUsage",
             "reportRoot"
           ],
           "complexTypes": [
