@@ -71,6 +71,7 @@ If successful, this method returns a `201 Created` response code and a [virtualE
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_virtualeventwebinar"
@@ -107,6 +108,12 @@ Content-Type: application/json
     "isRegistrationRequired": true
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-virtualeventwebinar-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
