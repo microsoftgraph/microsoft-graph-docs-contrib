@@ -61,6 +61,7 @@ Represents a Cloud PC provisioning policy.
 |microsoftManagedDesktop|[microsoftManagedDesktop](../resources/microsoftmanageddesktop.md)|The specific settings to **microsoftManagedDesktop** that enables Microsoft Managed Desktop customers to get device managed experience for Cloud PC. To enable **microsoftManagedDesktop** to provide more value, an admin needs to specify certain settings in it. Supports `$filter`, `$select`, and `$orderBy`.|
 |provisioningType|[cloudPcProvisioningType](../resources/cloudpcprovisioningpolicy.md#cloudpcprovisioningtype-values)|Specifies the type of licenses to be used when provisioning Cloud PCs using this policy. The possible values are `dedicated`, `shared`, `unknownFutureValue`, `sharedByUser`, `sharedByEntraGroup`, `reserve`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `sharedByUser`, `sharedByEntraGroup`, `reserve`. The `shared` member is deprecated and will stop returning on April 30, 2027; going forward, use the `sharedByUser` member. For example, a `dedicated` service plan can be assigned to only one user and provision only one Cloud PC. The `shared` and `sharedByUser` plans require customers to purchase a shared service plan. Each shared license purchased can enable up to three Cloud PCs, with only one user signed in at a time. The `sharedByEntraGroup` plan also requires the purchase of a shared service plan. Each shared license under this plan can enable one Cloud PC, which is shared for the group according to the assignments of this policy. By default, the license type is `dedicated` if the **provisioningType** isn't specified when you create the **cloudPcProvisioningPolicy**. You can't change this property after the **cloudPcProvisioningPolicy** is created.|
 |scopeIds|String collection|The list of scope tag IDs for this resource. Read-only.|
+|snapshotResetMode|[cloudPcSnapshotResetMode](../resources/cloudpcprovisioningpolicy.md#cloudpcsnapshotresetmode-values)|Indicates whether snapshot reset is available for this provisioning policy. The possible values are: `notApplicable`, `enabled`, `disabled`, `unknownFutureValue`. The default value is `notApplicable`.|
 |userExperienceType|[cloudPcUserExperienceType](../resources/cloudpcprovisioningpolicy.md#cloudpcuserexperiencetype-values)|Specifies the type of cloud object the end user can access. The possible values are: `cloudPc`, `cloudApp`, `unknownFutureValue`. `cloudPc` indicates that the end user can access the entire desktop. `cloudApp` indicates that the end user can only access apps published under this provisioning policy. The type can't be changed once the provisioning policy is created. If not specified during creation, the default value is `cloudPc`. When `cloudApp` is selected, the **provisioningType** must be `sharedByEntraGroup`. Supports `$filter`, `$select`, `$orderBy`.|
 |userSettingsPersistenceConfiguration|[cloudPcUserSettingsPersistenceConfiguration](../resources/cloudpcusersettingspersistenceconfiguration.md)|Indicates specific settings that enable the persistence of user application settings between Cloud PC sessions. The default value is `null`. This feature is only available for Cloud PC provisioning policies of type `sharedByEntraGroup`. Supports `$select`. |
 |windowsSetting|[cloudPcWindowsSettings](../resources/cloudpcwindowssetting.md)|Indicates a specific Windows setting to configure during the creation of Cloud PCs for this provisioning policy. Supports `$select`. |
@@ -80,6 +81,15 @@ Represents a Cloud PC provisioning policy.
 | sharedByUser     | Indicates the provisioning policy when a dedicated Cloud PC is provisioned for each user in the assignment group. Users are always connected to the same Cloud PC. However, Cloud PC availability is limited by the total number of active sessions. |
 | sharedByEntraGroup   | Indicates the provisioning policy associated with Cloud PCs shared by a Microsoft Entra (Azure AD) group. When a shared Cloud PC is provisioned, it becomes available for any user in the Microsoft Entra ID assignment group to connect to. Users may be connected to a different Cloud PC on each connection and availability is limited by the number of provisioned Cloud PCs. |
 | reserve | Indicates that the policy should use dedicated, per-user, time-bound licenses when Cloud PCs are provisioned. These Cloud PCs that use the reserve policy can be checked out and checked in by the user multiple times, and the time-bound license is consumed only after the Cloud PC is checked out. Currently, each user can obtain 10 hours of usage time from each reserve service plan instance. |
+
+### cloudPcSnapshotResetMode values
+
+|Member|Description|
+|:---|:---|
+| notApplicable | Indicates that snapshot reset isn't applicable to the provisioning policy. |
+| enabled | Indicates that snapshot reset is enabled for the provisioning policy. |
+| disabled | Indicates that snapshot reset is disabled for the provisioning policy. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ### cloudPcUserExperienceType values
 
@@ -135,6 +145,7 @@ The following JSON representation shows the resource type.
   "onPremisesConnectionId": "String",
   "provisioningType": "String",
   "scopeIds": ["String"],
+  "snapshotResetMode": "String",
   "userExperienceType": "String",
   "userSettingsPersistenceConfiguration": {"@odata.type": "microsoft.graph.cloudPcUserSettingsPersistenceConfiguration"},
   "windowsSetting": {"@odata.type": "microsoft.graph.cloudPcWindowsSetting"},
