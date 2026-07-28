@@ -37,7 +37,8 @@ Added the [cloudPcServicePlan](/graph/api/resources/cloudpcserviceplan) resource
 
 ### Identity and access | Directory management
 
-Added the **sponsorOf** relationship to the [user](/graph/api/resources/user) resource type to represent the directory objects that a user sponsors.
+- Added the [remoteTenantGroup](/graph/api/resources/remotetenantgroup) resource type and related methods to retrieve groups from remote Microsoft Entra tenants through the directory resource.
+- Added the **sponsorOf** relationship to the [user](/graph/api/resources/user) resource type to represent the directory objects that a user sponsors.
 
 ### Identity and access | Governance
 
@@ -82,6 +83,7 @@ Added the **vapidPublicKey**, **webPushEncryptionP256dhPublicKey**, and **webPus
 
 ### Identity and access | Directory management
 
+- Added the [remoteTenantGroup](/graph/api/resources/remotetenantgroup?view=graph-rest-beta&preserve-view=true) resource type and related methods to retrieve groups from remote Microsoft Entra tenants through the directory resource.
 - Added the **sponsorOf** relationship to the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource type to represent the directory objects that a user sponsors.
 
 ### Identity and access | Governance

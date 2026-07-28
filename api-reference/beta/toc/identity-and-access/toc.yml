@@ -112,6 +112,8 @@ items:
       href: ../../resources/directory.md
     - name: List
       href: ../../api/directory-deleteditems-list.md
+    - name: List remote tenant groups
+      href: ../../api/directory-list-remotetenantgroups.md
     - name: Get
       href: ../../api/directory-deleteditems-get.md
     - name: Restore
@@ -586,6 +588,14 @@ items:
         href: ../../api/admintodo-get.md
       - name: Update
         href: ../../api/admintodo-update.md
+  - name: Remote tenant group
+    items:
+    - name: Remote tenant group
+      href: ../../resources/remotetenantgroup.md
+    - name: List
+      href: ../../api/directory-list-remotetenantgroups.md
+    - name: Get
+      href: ../../api/remotetenantgroup-get.md
   - name: Role management
     displayName: Unified RBAC
     items:

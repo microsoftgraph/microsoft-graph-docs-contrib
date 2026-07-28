@@ -814,7 +814,8 @@
             "organization",
             "orgContact",
             "bitlockerRecoveryKey",
-            "deviceLocalCredentialInfo"
+            "deviceLocalCredentialInfo",
+            "remoteTenantGroup"
           ],
           "childNodes": [
             {

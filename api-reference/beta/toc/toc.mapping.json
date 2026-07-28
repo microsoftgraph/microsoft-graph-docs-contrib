@@ -1266,6 +1266,7 @@
             "bitlockerRecoveryKey",
             "deviceLocalCredentialInfo",
             "featureRolloutPolicy",
+            "remoteTenantGroup",
             "organizationSettings",
             "uxSetting",
             "deviceTemplate",
