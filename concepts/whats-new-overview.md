@@ -18,12 +18,7 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
-
 ## July 2026: New and generally available
-
-### Applications | Service principal
-
-Evaluate applications in the Microsoft Entra application gallery by using the [applicationTemplate](/graph/api/resources/applicationtemplate) resource type, including the **riskScore** and **riskFactors** properties for risk assessment.
 
 ### Device and app management | Cloud PC
 
@@ -35,9 +30,8 @@ Added the **allowOnPremUpdateOfOnPremisesObjectIdentifierEnabled** property to t
 
 ### Groups
 
-- Made the following changes to group sensitivity labels:
-    - Added support for assigning sensitivity labels to cloud security groups via the **assignedLabels** property on the [group](/graph/api/resources/group) resource. For more information, see [Sensitivity labels for Microsoft 365 groups and cloud security groups](/entra/identity/users/groups-sensitivity-labels).
-    - Added the `Group.ManageProtection.All` delegated permission as the least privilege permission for updating the **assignedLabels** property on the [group](/graph/api/resources/group) resource. App-only scenarios aren't supported.
+- Added support for assigning sensitivity labels to cloud security groups via the **assignedLabels** property on the [group](/graph/api/resources/group) resource. For more information, see [Sensitivity labels for Microsoft 365 groups and cloud security groups](/entra/identity/users/groups-sensitivity-labels).
+- Added the `Group.ManageProtection.All` delegated permission as the least privilege permission for updating the **assignedLabels** property on the [group](/graph/api/resources/group) resource. App-only scenarios aren't supported.
 
 ### Identity and access | Directory management
 
@@ -85,6 +79,10 @@ Added the **vapidPublicKey**, **webPushEncryptionP256dhPublicKey**, and **webPus
 - Added the **allowOnPremUpdateOfOnPremisesObjectIdentifierEnabled** property to the [onPremisesDirectorySynchronizationFeature](/graph/api/resources/onpremisesdirectorysynchronizationfeature?view=graph-rest-beta&preserve-view=true) resource.
 - Added the [getByUser](/graph/api/filestoragecontainer-getbyuser?view=graph-rest-beta&preserve-view=true) method to the [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true) resource to retrieve a list of file storage containers owned by a user, with optional filtering by role (owner or principalOwner).
 
+### Groups
+
+Added the `Group.ManageProtection.All` delegated permission as the least privilege permission for updating the **assignedLabels** property on the [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) resource. App-only scenarios aren't supported.
+
 ### Identity and access | Directory management
 
 Added the **sponsorOf** relationship to the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource type to represent the directory objects that a user sponsors.
@@ -105,6 +103,10 @@ Added support for automatically quarantining Lifecycle Workflows to stop a workf
 
 Added the [Delete mailboxItem](/graph/api/mailboxfolder-delete-items?view=graph-rest-beta&preserve-view=true) method to delete an individual [mailboxItem](/graph/api/resources/mailboxitem?view=graph-rest-beta&preserve-view=true) from a mailbox folder by using the mailbox import and export APIs. Use the **disposalType** query parameter to specify soft-delete or hard-delete semantics.
 
+### Reports
+
+Added the [getSharePointApiUsage](/graph/api/reportroot-getsharepointapiusage?view=graph-rest-beta&preserve-view=true) method to the [reportRoot](/graph/api/resources/reportroot?view=graph-rest-beta&preserve-view=true) resource to retrieve aggregated OneDrive and SharePoint API usage metrics for a tenant, including egress usage and throttling metrics.
+
 ### Tasks and plans
 
 Added the [plannerHistoryItem](/graph/api/resources/plannerhistoryitem?view=graph-rest-beta&preserve-view=true) resource type and [List historyItems](/graph/api/plannerplan-list-historyitems?view=graph-rest-beta&preserve-view=true) method to audit task changes within a Planner plan. Track when tasks are created, updated, deleted, or moved, and filter by **occurredDateTime** to retrieve changes within specific time ranges.
@@ -119,11 +121,10 @@ Added the [chatMessageBody](/graph/api/resources/chatmessagebody?view=graph-rest
 
 Evaluate applications in the Microsoft Entra application gallery by using the [applicationTemplate](/graph/api/resources/applicationtemplate) resource type, including the **riskScore** and **riskFactors** properties for risk assessment.
 
-### Files | Reports
+### Files
 
-- Added the [getSharePointApiUsage](/graph/api/reportroot-getsharepointapiusage?view=graph-rest-beta&preserve-view=true) method to the [reportRoot](/graph/api/resources/reportroot?view=graph-rest-beta&preserve-view=true) resource to retrieve aggregated OneDrive and SharePoint API usage metrics for a tenant, including egress usage and throttling metrics.
 - [Upsert](/graph/api/filestoragecontainer-patch-permissions) (create or update) up to 40 permissions on a [fileStorageContainer](/graph/api/resources/filestoragecontainer) in a single request. The limit increased from 10 to 40 [permission](/graph/api/resources/permission) objects per request.
-- The [driveItem: extractSensitivityLabels](/graph/api/driveitem-extractsensitivitylabels?view=graph-rest-beta&preserve-view=true) API isn't supported for Microsoft SharePoint Embedded containers.
+- The [driveItem: extractSensitivityLabels](/graph/api/driveitem-extractsensitivitylabels) API isn't supported for Microsoft SharePoint Embedded containers.
 
 ### Groups
 
@@ -181,10 +182,6 @@ Application permissions for the [user: translateExchangeIds](/graph/api/user-tra
 - Deprecated the **queryExpression** property on the [artifactQuery](/graph/api/resources/artifactquery?view=graph-rest-beta&preserve-view=true) resource. Use the **structuredQueryExpression** property instead to create structured search queries.
 - Added the **error** property of type [publicError](/graph/api/resources/publicerror?view=graph-rest-beta&preserve-view=true) to the [granularRestoreArtifactBase](/graph/api/resources/granularrestoreartifactbase?view=graph-rest-beta&preserve-view=true) resource and its derived types. Use this property to get error details when a granular restore operation for an individual artifact fails or completes with an error.
 
-### Teamwork and communications | Calls and online meetings
-
-Use the **isRegistrationRequired** property on the [virtualEventTownhall](/graph/api/resources/virtualeventtownhall?view=graph-rest-beta&preserve-view=true) and [virtualEventWebinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true) resources to specify if attendees must complete the registration flow before they can attend.
-
 ### Device and app management | Cloud PC
 
 - Use the [cloudPcProvisioningPolicy: apply](/graph/api/cloudpcprovisioningpolicy-apply?view=graph-rest-beta&preserve-view=true) method to apply policy settings such as `region` and `singleSignOn`. This method also supports reprovisioning for frontline shared mode Cloud PCs by using the **reservePercentage** parameter to control the percentage of Cloud PCs that remain available during the process.
@@ -219,13 +216,20 @@ Added redirect URI validation and restriction capabilities to [tenant app manage
 
 ### Identity and access | Identity and sign-in
 
-Added the **callerIdNumber** property to the [voiceAuthenticationMethodConfiguration](/graph/api/resources/voiceauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true) resource. Use this property to configure the phone number displayed as the caller ID when voice call authentication is initiated.
-
-Added updated identity fields to the [agentRiskDetection](/graph/api/resources/agentriskdetection?view=graph-rest-beta&preserve-view=true) resource type to make it easier to identify the associated identity in agent risk detections. Deprecated the legacy agent identity properties; they will be removed after 2027-04-28.
+- Added the **callerIdNumber** property to the [voiceAuthenticationMethodConfiguration](/graph/api/resources/voiceauthenticationmethodconfiguration?view=graph-rest-beta&preserve-view=true) resource. Use this property to configure the phone number displayed as the caller ID when voice call authentication is initiated.
+- Added updated identity fields to the [agentRiskDetection](/graph/api/resources/agentriskdetection?view=graph-rest-beta&preserve-view=true) resource type to make it easier to identify the associated identity in agent risk detections. Deprecated the legacy agent identity properties; they will be removed after 2027-04-28.
 
 ### Mail
 
 Use the [user configuration API in Microsoft Graph](/graph/user-configuration-concept-overview) to build solutions that store and retrieve per-folder configuration data alongside Exchange Online mailbox content.
+
+### People and workplace intelligence | Places
+
+Manage the service plans associated with workspace desks and use a consistent **placeId** identifier across [place](/graph/api/resources/place?view=graph-rest-beta&preserve-view=true) types.
+
+### Reports | Identity and access reports
+
+Added the [identityAnalyticsRoot](/graph/api/resources/identityanalyticsroot?view=graph-rest-beta&preserve-view=true) resource type to provide point-in-time identity analytics for your tenant, starting with analytics about your groups such as their membership, ownership, and type.
 
 ### Search
 
@@ -237,18 +241,6 @@ Use the [user configuration API in Microsoft Graph](/graph/user-configuration-co
   - List all distribution lists owned by a user
 - Personal distribution lists enable users to group email recipients together and send messages to all members at once without entering each address individually.
 
-### Security | Alerts and incidents
-
-Added the **tenantId** property to the [userAccount](/graph/api/resources/security-useraccount?view=graph-rest-beta&preserve-view=true) resource to provide the Entra home tenant ID for the compromised user account indicated in a [security alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true) where the alert evidence is related to a [processEvidence](/graph/api/resources/security-processevidence?view=graph-rest-beta&preserve-view=true), [userEvidence](/graph/api/resources/security-userevidence?view=graph-rest-beta&preserve-view=true), or [mailboxEvidence](/graph/api/resources/security-mailboxevidence?view=graph-rest-beta&preserve-view=true).
-
-### Reports | Identity and access reports
-
-Added the [identityAnalyticsRoot](/graph/api/resources/identityanalyticsroot?view=graph-rest-beta&preserve-view=true) resource type to provide point-in-time identity analytics for your tenant, starting with analytics about your groups such as their membership, ownership, and type.
-
-### People and workplace intelligence | Places
-
-Manage the service plans associated with workspace desks and use a consistent **placeId** identifier across [place](/graph/api/resources/place?view=graph-rest-beta&preserve-view=true) types.
-
 ### Security | Advanced hunting
 
 - Added the [getRunHuntingQuery](/graph/api/security-security-getrunhuntingquery?view=graph-rest-beta&preserve-view=true) function as a GET-based companion to [runHuntingQuery](/graph/api/security-security-runhuntingquery?view=graph-rest-beta&preserve-view=true) for running advanced hunting queries against Microsoft Defender XDR data.
@@ -256,8 +248,8 @@ Manage the service plans associated with workspace desks and use a consistent **
 
 ### Security | Alerts and incidents
 
-- Use the [Create manualAlert](/graph/api/security-alert-post-manualalert?view=graph-rest-beta&preserve-view=true) method to create a manual security alert with specified entities and metadata. The new [manualAlert](/graph/api/resources/security-manualalert?view=graph-rest-beta&preserve-view=true) resource type derives from [alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true) and uses the [entityDefinitionInput](/graph/api/resources/security-entitydefinitioninput?view=graph-rest-beta&preserve-view=true) complex type to specify associated entities.
 - Added the **tenantId** property to the [userAccount](/graph/api/resources/security-useraccount?view=graph-rest-beta&preserve-view=true) resource to provide the Entra home tenant ID for the compromised user account indicated in a [security alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true) where the alert evidence is related to a [processEvidence](/graph/api/resources/security-processevidence?view=graph-rest-beta&preserve-view=true), [userEvidence](/graph/api/resources/security-userevidence?view=graph-rest-beta&preserve-view=true), or [mailboxEvidence](/graph/api/resources/security-mailboxevidence?view=graph-rest-beta&preserve-view=true).
+- Use the [Create manualAlert](/graph/api/security-alert-post-manualalert?view=graph-rest-beta&preserve-view=true) method to create a manual security alert with specified entities and metadata. The new [manualAlert](/graph/api/resources/security-manualalert?view=graph-rest-beta&preserve-view=true) resource type derives from [alert](/graph/api/resources/security-alert?view=graph-rest-beta&preserve-view=true) and uses the [entityDefinitionInput](/graph/api/resources/security-entitydefinitioninput?view=graph-rest-beta&preserve-view=true) complex type to specify associated entities.
 
 ### Security | Audit log query
 
@@ -265,15 +257,15 @@ Expanded audit log coverage with 28 new [auditData](/graph/api/resources/securit
 
 ### Security | Custom detection rules
 
-- Updated the [custom detection rules API](/graph/api/resources/security-detectionrule?view=graph-rest-beta&preserve-view=true) in Microsoft 365 Defender with new capabilities, including: Infrastructure-as-code (IaC) support through user-defined IDs, custom run frequency, flexible entity mapping, custom alert details, and configurable response actions.
+Updated the [custom detection rules API](/graph/api/resources/security-detectionrule?view=graph-rest-beta&preserve-view=true) in Microsoft 365 Defender with new capabilities, including: Infrastructure-as-code (IaC) support through user-defined IDs, custom run frequency, flexible entity mapping, custom alert details, and configurable response actions.
 
 ### Security | Data security and compliance
 
-- Added the [policyTipAction](/graph/api/resources/policytipaction?view=graph-rest-beta&preserve-view=true) resource type and the `policyTip` member to the **dlpAction** enumeration. This enables applications to receive policy tip guidance as a standalone action when DLP policies are triggered through the processContent and protectionScopes APIs.
+Added the [policyTipAction](/graph/api/resources/policytipaction?view=graph-rest-beta&preserve-view=true) resource type and the `policyTip` member to the **dlpAction** enumeration. This enables applications to receive policy tip guidance as a standalone action when DLP policies are triggered through the processContent and protectionScopes APIs.
 
 ### Security | eDiscovery
 
-- Added the `cloudNativeHtmlConversion` member to the [additionalDataOptions](/graph/api/resources/security-ediscoveryaddtoreviewsetoperation?view=graph-rest-beta&preserve-view=true#additionaldataoptions-values) enumeration.
+Added the `cloudNativeHtmlConversion` member to the [additionalDataOptions](/graph/api/resources/security-ediscoveryaddtoreviewsetoperation?view=graph-rest-beta&preserve-view=true#additionaldataoptions-values) enumeration.
 
 ### Security | Email and collaboration protection
 
@@ -283,7 +275,8 @@ Expanded audit log coverage with 28 new [auditData](/graph/api/resources/securit
 - [analyzedEmail: remediate](/graph/api/security-analyzedemail-remediate?view=graph-rest-beta&preserve-view=true) to trigger purge actions (move to junk, move to Inbox, soft delete, hard delete, move to deleted items, move to quarantine) for SOAR integrations, playbooks, and automations.
 
 ### Security | Identities
-- Introduced [sensor migration](/graph/api/resources/security-sensormigration?view=graph-rest-beta&preserve-view=true) capabilities to migrate eligible Microsoft Defender for Identity sensors.
+
+Introduced [sensor migration](/graph/api/resources/security-sensormigration?view=graph-rest-beta&preserve-view=true) capabilities to migrate eligible Microsoft Defender for Identity sensors.
 
 ### Sites and lists
 
@@ -314,7 +307,7 @@ Added the **groupDisplayName** property to the [delegatedAdministrationRoleAssig
 
 ### Users
 
-- Application permissions for the [user: translateExchangeIds](/graph/api/user-translateexchangeids?view=graph-rest-beta&preserve-view=true) API are supported only for request URLs that identify a user in the path.
+Application permissions for the [user: translateExchangeIds](/graph/api/user-translateexchangeids?view=graph-rest-beta&preserve-view=true) API are supported only for request URLs that identify a user in the path.
 
 ## Contribute to Microsoft Graph
 
