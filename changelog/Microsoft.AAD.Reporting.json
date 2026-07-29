@@ -3,6 +3,56 @@
     {
       "ChangeList": [
         {
+          "Id": "1aa30cd5-36f9-4569-a810-eda9a538cfc3",
+          "ApiChange": "Member",
+          "ChangedApiName": "internetAppBlockedByPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the `internetAppBlockedByPolicy` member to the **alertType** enumeration.",
+          "Target": "alertType"
+        },
+        {
+          "Id": "1aa30cd5-36f9-4569-a810-eda9a538cfc3",
+          "ApiChange": "Member",
+          "ChangedApiName": "privateAppBlockedByConnector",
+          "ChangeType": "Addition",
+          "Description": "Added the `privateAppBlockedByConnector` member to the **alertType** enumeration.",
+          "Target": "alertType"
+        },
+        {
+          "Id": "1aa30cd5-36f9-4569-a810-eda9a538cfc3",
+          "ApiChange": "Member",
+          "ChangedApiName": "remoteNetworkTunnelConnectivity",
+          "ChangeType": "Addition",
+          "Description": "Added the `remoteNetworkTunnelConnectivity` member to the **alertType** enumeration.",
+          "Target": "alertType"
+        },
+        {
+          "Id": "1aa30cd5-36f9-4569-a810-eda9a538cfc3",
+          "ApiChange": "Member",
+          "ChangedApiName": "remoteNetworkBgpConnectivity",
+          "ChangeType": "Addition",
+          "Description": "Added the `remoteNetworkBgpConnectivity` member to the **alertType** enumeration.",
+          "Target": "alertType"
+        },
+        {
+          "Id": "1aa30cd5-36f9-4569-a810-eda9a538cfc3",
+          "ApiChange": "Member",
+          "ChangedApiName": "gsa",
+          "ChangeType": "Addition",
+          "Description": "Added the `gsa` member to the **scenario** enumeration.",
+          "Target": "scenario"
+        }
+      ],
+      "Id": "1aa30cd5-36f9-4569-a810-eda9a538cfc3",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-07-28T20:20:59.2844447Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "1fa63eb3-bbbb-4cb6-bb79-69f28c34c4ce",
           "ApiChange": "Resource",
           "ChangedApiName": "identityAnalyticsRoot",

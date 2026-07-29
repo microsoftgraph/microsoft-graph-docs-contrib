@@ -123,6 +123,10 @@ Added the [Delete mailboxItem](/graph/api/mailboxfolder-delete-items?view=graph-
 - Updated [Manage profile source precedence in Microsoft 365](/graph/profilepriority-configure-profilepropertysetting) to clarify supported data sources for HR and work position data, explain how source precedence affects single-value versus multi-value properties, and add guidance on correctly configuring and removing tenant-level settings using the Microsoft Graph API or PowerShell.
 - Added the [People data sources in Microsoft 365](/graph/people-data-sources) concept article that describes the data sources that build the Microsoft 365 user profile, including Microsoft Entra ID, Copilot connectors, Organizational data, SharePoint, People Skills, user edits, and the API user source. The article also provides a reference table of built-in source IDs (GUIDs) and explains how source metadata appears in the profile API output.
 
+### Reports | Identity and access reports
+
+Added Global Secure Access support to Microsoft Entra Health monitoring. The [alert](/graph/api/resources/healthmonitoring-alert?view=graph-rest-beta&preserve-view=true) resource now supports the `gsa` scenario and the `internetAppBlockedByPolicy`, `privateAppBlockedByConnector`, `remoteNetworkTunnelConnectivity`, and `remoteNetworkBgpConnectivity` alert types.
+
 ### Security | Alerts and incidents
 
 - Added the **tenantId** property to the [userAccount](/graph/api/resources/security-useraccount) resource to provide the Entra home tenant ID for the compromised user account indicated in a [security alert](/graph/api/resources/security-alert) where the alert evidence is related to a [processEvidence](/graph/api/resources/security-processevidence), [userEvidence](/graph/api/resources/security-userevidence), or [mailboxEvidence](/graph/api/resources/security-mailboxevidence).
