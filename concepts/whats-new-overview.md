@@ -29,6 +29,10 @@ Evaluate applications in the Microsoft Entra application gallery by using the [a
 
 Added the [cloudPcServicePlan](/graph/api/resources/cloudpcserviceplan) resource type and related methods for managing Windows 365 service plans. Use the **servicePlans** relationship on [virtualEndpoint](/graph/api/resources/virtualendpoint) to discover available service plans that an organization can purchase for Cloud PCs.
 
+### Files
+
+Added the **allowOnPremUpdateOfOnPremisesObjectIdentifierEnabled** property to the [onPremisesDirectorySynchronizationFeature](/graph/api/resources/onpremisesdirectorysynchronizationfeature) resource.
+
 ### Groups
 
 - Made the following changes to group sensitivity labels:
@@ -43,6 +47,7 @@ Added the **sponsorOf** relationship to the [user](/graph/api/resources/user) re
 
 - Added the [Get](/graph/api/accesspackagesubject-get) and [Update](/graph/api/accesspackagesubject-update) methods to the [accessPackageSubject](/graph/api/resources/accesspackagesubject) resource type to manage the subject lifecycle of external directory users in Microsoft Entra entitlement management.
 - Added the [cancelProcessing](/graph/api/identitygovernance-workflow-cancelprocessing) method to the [workflow](/graph/api/resources/identitygovernance-workflow) resource to cancel workflow runs that are currently in progress or queued.
+- Added workflow preview operations to the [workflow](/graph/api/resources/identitygovernance-workflow) resource type in Lifecycle Workflows, enabling you to validate tasks and run workflows in preview mode without affecting production users.
 - Promoted the **Bring Your Own Data (BYOD) Upload** APIs from beta to v1.0, enabling upload of external access data for access reviews. The promoted surface includes:
   - [customDataProvidedResourceUploadSession](/graph/api/resources/customdataprovidedresourceuploadsession) base resource and [customDataProvidedResourceAccessReviewUploadSession](/graph/api/resources/customdataprovidedresourceaccessreviewuploadsession) derived type
   - [customDataProvidedResourceFile](/graph/api/resources/customdataprovidedresourcefile), [customDataProvidedResourceUploadStats](/graph/api/resources/customdataprovidedresourceuploadstats), and [customDataProvidedResourceUploadSessionRequest](/graph/api/resources/customdataprovidedresourceuploadsessionrequest) resources
@@ -76,19 +81,17 @@ Added the **vapidPublicKey**, **webPushEncryptionP256dhPublicKey**, and **webPus
 
 ### Files
 
-- Updated the [getSharePointApiUsage](/graph/api/reportroot-getsharepointapiusage?view=graph-rest-beta&preserve-view=true) method to support the optional `reportType` parameter for retrieving throttling metrics. Use `reportType='throttlingReport'` to get throttled request counts via the **throttledRequests** property on the [sharePointApiUsageDataPoint](/graph/api/resources/sharepointapiusagedatapoint?view=graph-rest-beta&preserve-view=true) resource, or use `reportType='egressReport'` (default) to get egress usage via the **usageMB** property.
-- Added the [Upsert permissions](/graph/api/filestoragecontainer-patch-permissions) (create or update) up to 40 permissions on a [fileStorageContainer](/graph/api/resources/filestoragecontainer) in a single request. The limit increased from 10 to 40 [permission](/graph/api/resources/permission) objects per request.
+- Updated the [getSharePointApiUsage](/graph/api/reportroot-getsharepointapiusage?view=graph-rest-beta&preserve-view=true) method to support the optional **reportType** parameter for retrieving throttling metrics. Use `reportType='throttlingReport'` to get throttled request counts via the **throttledRequests** property on the [sharePointApiUsageDataPoint](/graph/api/resources/sharepointapiusagedatapoint?view=graph-rest-beta&preserve-view=true) resource, or use `reportType='egressReport'` (default) to get egress usage via the **usageMB** property.
 - Added the **allowOnPremUpdateOfOnPremisesObjectIdentifierEnabled** property to the [onPremisesDirectorySynchronizationFeature](/graph/api/resources/onpremisesdirectorysynchronizationfeature?view=graph-rest-beta&preserve-view=true) resource.
 - Added the [getByUser](/graph/api/filestoragecontainer-getbyuser?view=graph-rest-beta&preserve-view=true) method to the [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true) resource to retrieve a list of file storage containers owned by a user, with optional filtering by role (owner or principalOwner).
 
 ### Identity and access | Directory management
 
-- Added the **sponsorOf** relationship to the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource type to represent the directory objects that a user sponsors.
+Added the **sponsorOf** relationship to the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource type to represent the directory objects that a user sponsors.
 
 ### Identity and access | Governance
 
-- Added workflow preview operations to the [workflow](/graph/api/resources/identitygovernance-workflow) resource type in Lifecycle Workflows, enabling you to validate tasks and run workflows in preview mode without affecting production users.
-- Added support for automatically quarantining Lifecycle Workflows to stop a workflow from processing more users than expected. Configure thresholds using the **quarantineConfiguration** property on [lifecycleManagementSettings](/graph/api/resources/identitygovernance-lifecyclemanagementsettings), and clear a quarantine by calling [clearQuarantine](/graph/api/identitygovernance-workflow-clearquarantine).
+Added support for automatically quarantining Lifecycle Workflows to stop a workflow from processing more users than expected. Configure thresholds using the **quarantineConfiguration** property on [lifecycleManagementSettings](/graph/api/resources/identitygovernance-lifecyclemanagementsettings?view=graph-rest-beta&preserve-view=true), and clear a quarantine by calling [clearQuarantine](/graph/api/identitygovernance-workflow-clearquarantine?view=graph-rest-beta&preserve-view=true).
 
 ### Identity and access | Identity and sign-in
 
