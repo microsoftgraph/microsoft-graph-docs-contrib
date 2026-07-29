@@ -120,16 +120,8 @@ GET https://graph.microsoft.com/beta/reports/getMicrosoft365CopilotUsageUserDeta
 [!INCLUDE [sample-code](../includes/snippets/java/reportroot-getmicrosoft365copilotusageuserdetail-csv-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getmicrosoft365copilotusageuserdetail-csv-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/reportroot-getmicrosoft365copilotusageuserdetail-csv-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/reportroot-getmicrosoft365copilotusageuserdetail-csv-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -193,16 +185,8 @@ GET https://graph.microsoft.com/beta/reports/getMicrosoft365CopilotUsageUserDeta
 [!INCLUDE [sample-code](../includes/snippets/java/reportroot-getmicrosoft365copilotusageuserdetail-json-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getmicrosoft365copilotusageuserdetail-json-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/reportroot-getmicrosoft365copilotusageuserdetail-json-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/reportroot-getmicrosoft365copilotusageuserdetail-json-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

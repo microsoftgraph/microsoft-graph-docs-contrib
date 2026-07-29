@@ -70,6 +70,14 @@ Added the **vapidPublicKey**, **webPushEncryptionP256dhPublicKey**, and **webPus
 
 ### Device and app management | Cloud PC
 
+- Updated [retrieveCloudPcTroubleshootReports](/graph/api/cloudpcreports-retrievecloudpctroubleshootreports?view=graph-rest-beta&preserve-view=true) on the [cloudPcReports](/graph/api/resources/cloudpcreports?view=graph-rest-beta&preserve-view=true) resource to support new troubleshooting report types across tenant, configuration, user and device, and view data table scopes.
+- [Create](/graph/api/virtualendpoint-post-cloudapps?view=graph-rest-beta&preserve-view=true) or [delete](/graph/api/cloudpccloudapp-delete?view=graph-rest-beta&preserve-view=true) a [cloud app](/graph/api/resources/cloudpccloudapp?view=graph-rest-beta&preserve-view=true).
+- Extended the **appDetail** property on [cloudPcCloudApp](/graph/api/resources/cloudpccloudapp?view=graph-rest-beta&preserve-view=true) to support the [cloudPcAutomaticDiscoveredAppDetail](/graph/api/resources/cloudpcautomaticdiscoveredappdetail?view=graph-rest-beta&preserve-view=true) type for apps automatically discovered from the *start* menu, and the [cloudPcFilePathAppDetail](/graph/api/resources/cloudpcfilepathappdetail.md) type for apps manually created when a file path is specified.
+- Added the `iconPathInvalid` and `filePathInvalid` members as supported values for the **actionFailedErrorCode** property on the [cloudPcCloudApp](/graph/api/resources/cloudpccloudapp?view=graph-rest-beta&preserve-view=true). Use these members to indicate that the icon or file path specified for the cloud app is invalid.
+- Added the [cloudPcPool](/graph/api/resources/cloudpcpool?view=graph-rest-beta&preserve-view=true) resource and its derived type [cloudPcAgentPool](/graph/api/resources/cloudpcagentpool?view=graph-rest-beta&preserve-view=true) to enable management of Cloud PC pools for agentic workloads.
+- Added the [cloudPcPoolAssignment](/graph/api/resources/cloudpcpoolassignment?view=graph-rest-beta&preserve-view=true) resource and its derived type [cloudPcAgentPoolUserAssignment](/graph/api/resources/cloudpcagentpooluserassignment?view=graph-rest-beta&preserve-view=true) to manage pool assignments.
+- Use `australiaNewZealand` as a new supported value in the **geographicLocationType** property of the [cloudPcSupportedRegion](/graph/api/resources/cloudpcsupportedregion?view=graph-rest-beta&preserve-view=true) and [cloudPcDomainJoinConfiguration](/graph/api/resources/cloudpcdomainjoinconfiguration?view=graph-rest-beta&preserve-view=true) resources.
+- Added the **snapshotResetMode** property to the [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true) resource to indicate whether snapshot reset is available for a provisioning policy.
 - Added the **shareSnapshot** method to the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) resource type. Use it to copy a Cloud PC snapshot to an Azure storage account.
 - Added support for activating or deactivating an organization for Windows 365 for Agents. Use the [cloudPC: organizationAction](/graph/api/cloudpc-organizationaction?view=graph-rest-beta&preserve-view=true) action to trigger the operation.
 - Use the [cloudPC: retrieveOrganizationActionDetail](/graph/api/cloudpc-retrieveorganizationactiondetail?view=graph-rest-beta&preserve-view=true) method to retrieve the status and details of an organization action.
@@ -152,6 +160,11 @@ Added the [chatMessageBody](/graph/api/resources/chatmessagebody?view=graph-rest
 
 The **timeZone** property of the [schedule](/graph/api/resources/schedule) resource must be set to an IANA time zone name, such as `America/Chicago` or `Europe/London`. For more information, see [Create or replace schedule](/graph/api/team-put-schedule).
 
+### Tenants | Tenant governance
+
+- Added the **isMicrosoftInfrastructure** property to the [relatedTenant](/graph/api/resources/tenantgovernanceservices-relatedtenant?view=graph-rest-beta&preserve-view=true) resource. Use it to identify whether a discovered related tenant is a Microsoft infrastructure tenant.
+- Added the **investigationHints** relationship to the metrics resources ([b2bRegistrationMetrics](/graph/api/resources/tenantgovernanceservices-b2bregistrationmetrics?view=graph-rest-beta&preserve-view=true), [b2BSignInActivityMetrics](/graph/api/resources/tenantgovernanceservices-b2bsigninactivitymetrics?view=graph-rest-beta&preserve-view=true), [billingMetrics](/graph/api/resources/tenantgovernanceservices-billingmetrics?view=graph-rest-beta&preserve-view=true), [multiTenantApplicationMetrics](/graph/api/resources/tenantgovernanceservices-multitenantapplicationmetrics?view=graph-rest-beta&preserve-view=true)) for [relatedTenant](/graph/api/resources/tenantgovernanceservices-relatedtenant?view=graph-rest-beta&preserve-view=true). Use it to retrieve ordered steps that reference Microsoft Graph or Azure Resource Manager APIs to help investigate aggregate metric values. Use nested `$expand` to retrieve hints.
+
 ### Users
 
 Application permissions for the [user: translateExchangeIds](/graph/api/user-translateexchangeids) API are supported only for request URLs that identify a user in the path.
@@ -211,10 +224,6 @@ Application permissions for the [user: translateExchangeIds](/graph/api/user-tra
 - Deprecated the **queryExpression** property on the [artifactQuery](/graph/api/resources/artifactquery?view=graph-rest-beta&preserve-view=true) resource. Use the **structuredQueryExpression** property instead to create structured search queries.
 - Added the **error** property of type [publicError](/graph/api/resources/publicerror?view=graph-rest-beta&preserve-view=true) to the [granularRestoreArtifactBase](/graph/api/resources/granularrestoreartifactbase?view=graph-rest-beta&preserve-view=true) resource and its derived types. Use this property to get error details when a granular restore operation for an individual artifact fails or completes with an error.
 
-### Teamwork and communications | Calls and online meetings
-
-Use the **isRegistrationRequired** property on the [virtualEventTownhall](/graph/api/resources/virtualeventtownhall?view=graph-rest-beta&preserve-view=true) and [virtualEventWebinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true) resources to specify if attendees must complete the registration flow before they can attend.
-
 ### Device and app management | Cloud PC
 
 - Use the [cloudPcProvisioningPolicy: apply](/graph/api/cloudpcprovisioningpolicy-apply?view=graph-rest-beta&preserve-view=true) method to apply policy settings such as `region` and `singleSignOn`. This method also supports reprovisioning for frontline shared mode Cloud PCs by using the **reservePercentage** parameter to control the percentage of Cloud PCs that remain available during the process.
@@ -231,6 +240,7 @@ Added the [updateCategoryEnrollmentInformation](/graph/api/resources/windowsupda
 
 - Added the [getByUser](/graph/api/filestoragecontainer-getbyuser?view=graph-rest-beta&preserve-view=true) method to the [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true) resource. Use it to get the list of file storage containers that are owned by a specified user.
 - [Upsert](/graph/api/filestoragecontainer-patch-permissions?view=graph-rest-beta&preserve-view=true) (create or update) up to 40 permissions on a [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true) in a single request. The limit increased from 10 to 40 [permission](/graph/api/resources/permission?view=graph-rest-beta&preserve-view=true) objects per request.
+- Added the [transferPrincipalOwnership](/graph/api/filestoragecontainer-transferprincipalownership?view=graph-rest-beta&preserve-view=true) action to the [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true) resource. Use it to transfer the principal ownership of a user-owned container from one user to another.
 - Added the [driveItem: lock](/graph/api/driveitem-lock?view=graph-rest-beta&preserve-view=true) method to the [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta&preserve-view=true) resource. Use it to acquire or refresh an exclusive lock on a file; use the related `releaseLock` method to release it when editing is complete.
 - The [driveItem: extractSensitivityLabels](/graph/api/driveitem-extractsensitivitylabels?view=graph-rest-beta&preserve-view=true) API isn't supported for Microsoft SharePoint Embedded containers.
 
@@ -310,6 +320,10 @@ Expanded audit log coverage with 28 new [auditData](/graph/api/resources/securit
 
 ### Security | Identities
 - Introduced [sensor migration](/graph/api/resources/security-sensormigration?view=graph-rest-beta&preserve-view=true) capabilities to migrate eligible Microsoft Defender for Identity sensors.
+
+### SharePoint Embedded
+
+- Added the [getMicrosoftAppsFileStorageContainerUsageSummary](/graph/api/reportroot-getmicrosoftappsfilestoragecontainerusagesummary?view=graph-rest-beta&preserve-view=true) method to retrieve storage usage data for SharePoint Embedded file storage containers. Use it to get tenant-level, geo-level, and app-level metrics for active containers and storage consumption with hierarchical expansion support.
 
 ### Sites and lists
 

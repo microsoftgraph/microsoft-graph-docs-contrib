@@ -224,6 +224,8 @@ items:
     href: ../../api/filestoragecontainer-list-recyclebinitem.md
   - name: Lock
     href: ../../api/filestoragecontainer-lock.md
+  - name: Transfer principal ownership
+    href: ../../api/filestoragecontainer-transferprincipalownership.md
   - name: Unlock
     href: ../../api/filestoragecontainer-unlock.md
   - name: Create migration job

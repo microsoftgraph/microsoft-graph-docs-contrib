@@ -3,6 +3,72 @@
     {
       "ChangeList": [
         {
+          "Id": "359964dc-981e-4695-896f-496cc6debbbc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "actionStep",
+          "ChangeType": "Addition",
+          "Description": "Added the [actionStep](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-actionstep?view=graph-rest-beta) resource.",
+          "Target": "actionStep"
+        },
+        {
+          "Id": "359964dc-981e-4695-896f-496cc6debbbc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "actionUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the [actionUrl](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-actionurl?view=graph-rest-beta) resource.",
+          "Target": "actionUrl"
+        },
+        {
+          "Id": "359964dc-981e-4695-896f-496cc6debbbc",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "investigationHints",
+          "ChangeType": "Addition",
+          "Description": "Added the **investigationHints** relationship to the [b2bRegistrationMetrics](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-b2bregistrationmetrics?view=graph-rest-beta) resource.",
+          "Target": "b2bRegistrationMetrics"
+        },
+        {
+          "Id": "359964dc-981e-4695-896f-496cc6debbbc",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "investigationHints",
+          "ChangeType": "Addition",
+          "Description": "Added the **investigationHints** relationship to the [b2BSignInActivityMetrics](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-b2bsigninactivitymetrics?view=graph-rest-beta) resource.",
+          "Target": "b2BSignInActivityMetrics"
+        },
+        {
+          "Id": "359964dc-981e-4695-896f-496cc6debbbc",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "investigationHints",
+          "ChangeType": "Addition",
+          "Description": "Added the **investigationHints** relationship to the [multiTenantApplicationMetrics](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-multitenantapplicationmetrics?view=graph-rest-beta) resource.",
+          "Target": "multiTenantApplicationMetrics"
+        },
+        {
+          "Id": "359964dc-981e-4695-896f-496cc6debbbc",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "investigationHints",
+          "ChangeType": "Addition",
+          "Description": "Added the **investigationHints** relationship to the [billingMetrics](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-billingmetrics?view=graph-rest-beta) resource.",
+          "Target": "billingMetrics"
+        },
+        {
+          "Id": "359964dc-981e-4695-896f-496cc6debbbc",
+          "ApiChange": "Property",
+          "ChangedApiName": "isMicrosoftInfrastructure",
+          "ChangeType": "Addition",
+          "Description": "Added the **isMicrosoftInfrastructure** property to the [relatedTenant](https://learn.microsoft.com/en-us/graph/api/resources/tenantgovernanceservices-relatedtenant?view=graph-rest-beta) resource.",
+          "Target": "relatedTenant"
+        }
+      ],
+      "Id": "359964dc-981e-4695-896f-496cc6debbbc",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-07-28T16:48:34.5557030Z",
+      "WorkloadArea": "Tenants",
+      "SubArea": "Tenant governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "fe2854a4-f777-4a0d-bde5-045ecf444092",
           "ApiChange": "Relationship",
           "ChangedApiName": "tenantGovernance",

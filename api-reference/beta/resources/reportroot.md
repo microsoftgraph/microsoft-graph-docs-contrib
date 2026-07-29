@@ -220,6 +220,12 @@ For details about report views and names, see [Microsoft 365 reports - SharePoin
 | :----------------------------------------------------------------------------------------- | :---------- | :------------------------------------------------------------------------------------ |
 | [Get SharePoint API usage](../api/reportroot-getsharepointapiusage.md)                     | Stream      | Get aggregated OneDrive and SharePoint API usage metrics for a tenant. |
 
+### SharePoint Embedded
+
+| Method                                                                                     | Return type | Description                                                                           |
+| :----------------------------------------------------------------------------------------- | :---------- | :------------------------------------------------------------------------------------ |
+| [Get SharePoint Embedded file storage container usage summary](../api/reportroot-getmicrosoftappsfilestoragecontainerusagesummary.md) | [microsoftAppsFileStorageContainerUsage](../resources/microsoftappsfilestoragecontainerusage.md) | Get storage usage data for SharePoint Embedded file storage containers in a tenant. |
+
 ### Skype for Business activity
 
 For details about report views and names, see [Skype for Business activity](/skypeforbusiness/skype-for-business-online-reporting/activity-report).

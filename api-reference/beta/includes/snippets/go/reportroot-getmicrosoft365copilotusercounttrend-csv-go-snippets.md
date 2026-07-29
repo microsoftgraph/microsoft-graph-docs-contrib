@@ -18,16 +18,17 @@ import (
 
 requestFormat := "text/csv"
 
-requestParameters := &graphreports.ReportsGetMicrosoft365CopilotUserCountTrendWithPeriodRequestBuilderGetQueryParameters{
+requestParameters := &graphreports.ReportsGetMicrosoft365CopilotUserCountTrendWithPeriodWithVersionRequestBuilderGetQueryParameters{
 	Format: &requestFormat,
 }
-configuration := &graphreports.ReportsGetMicrosoft365CopilotUserCountTrendWithPeriodRequestBuilderGetRequestConfiguration{
+configuration := &graphreports.ReportsGetMicrosoft365CopilotUserCountTrendWithPeriodWithVersionRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 period := "{period}"
-graphClient.Reports().GetMicrosoft365CopilotUserCountTrendWithPeriod(&period).Get(context.Background(), configuration)
+version := "{version}"
+graphClient.Reports().GetMicrosoft365CopilotUserCountTrendWithPeriodWithVersion(&period, &version).Get(context.Background(), configuration)
 
 
 ```

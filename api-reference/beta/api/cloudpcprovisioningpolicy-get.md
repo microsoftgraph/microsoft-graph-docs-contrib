@@ -159,7 +159,8 @@ Content-Type: application/json
     "userSettingsPersistenceConfiguration": {
         "userSettingsPersistenceEnabled": false,
         "userSettingsPersistenceStorageSizeCategory": "fourGB"
-    }
+    },
+    "snapshotResetMode": "notApplicable"
 }
 ```
 
@@ -275,7 +276,8 @@ Content-Type: application/json
     "userSettingsPersistenceConfiguration": {
         "userSettingsPersistenceEnabled": false,
         "userSettingsPersistenceStorageSizeCategory": "fourGB"
-    }
+    },
+    "snapshotResetMode": "notApplicable"
 }
 ```
 

@@ -18,16 +18,17 @@ import (
 
 requestFormat := "application/json"
 
-requestParameters := &graphreports.ReportsGetMicrosoft365CopilotUsageUserDetailWithPeriodRequestBuilderGetQueryParameters{
+requestParameters := &graphreports.ReportsGetMicrosoft365CopilotUsageUserDetailWithPeriodWithVersionRequestBuilderGetQueryParameters{
 	Format: &requestFormat,
 }
-configuration := &graphreports.ReportsGetMicrosoft365CopilotUsageUserDetailWithPeriodRequestBuilderGetRequestConfiguration{
+configuration := &graphreports.ReportsGetMicrosoft365CopilotUsageUserDetailWithPeriodWithVersionRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 period := "{period}"
-graphClient.Reports().GetMicrosoft365CopilotUsageUserDetailWithPeriod(&period).Get(context.Background(), configuration)
+version := "{version}"
+graphClient.Reports().GetMicrosoft365CopilotUsageUserDetailWithPeriodWithVersion(&period, &version).Get(context.Background(), configuration)
 
 
 ```

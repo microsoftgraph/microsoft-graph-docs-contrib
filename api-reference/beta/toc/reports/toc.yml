@@ -576,6 +576,16 @@ items:
       href: ../../api/adminreportsettings-get.md
     - name: Update
       href: ../../api/adminreportsettings-update.md
+  - name: Microsoft apps file storage container app usage
+    href: ../../resources/microsoftappsfilestoragecontainerappusage.md
+  - name: Microsoft apps file storage container geo usage
+    href: ../../resources/microsoftappsfilestoragecontainergeousage.md
+  - name: Microsoft apps file storage container usage
+    items:
+    - name: Microsoft apps file storage container usage
+      href: ../../resources/microsoftappsfilestoragecontainerusage.md
+    - name: Get SharePoint Embedded file storage container usage summary
+      href: ../../api/reportroot-getmicrosoftappsfilestoragecontainerusagesummary.md
   - name: Report root
     items:
     - name: Report root
@@ -756,6 +766,10 @@ items:
       items:
       - name: Get SharePoint API usage
         href: ../../api/reportroot-getsharepointapiusage.md
+    - name: SharePoint Embedded
+      items:
+      - name: Get SharePoint Embedded file storage container usage summary
+        href: ../../api/reportroot-getmicrosoftappsfilestoragecontainerusagesummary.md
     - name: Skype for Business activity
       items:
       - name: Get user detail

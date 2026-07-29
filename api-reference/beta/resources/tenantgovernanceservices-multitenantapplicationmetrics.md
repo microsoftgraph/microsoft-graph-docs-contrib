@@ -27,6 +27,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |Relationship|Type|Description|
 |:---|:---|:---|
 |initial|[microsoft.graph.tenantGovernanceServices.multiTenantApplicationMetricsInitial](../resources/tenantgovernanceservices-multitenantapplicationmetricsinitial.md)|Multitenant application metrics corresponding to initial snapshots where metrics were aggregated for the first time.|
+|investigationHints|[microsoft.graph.tenantGovernanceServices.actionStep](../resources/tenantgovernanceservices-actionstep.md) collection|Ordered drill-in guidance for investigating multitenant application counts. This collection is returned only when explicitly requested by using a nested `$expand` query parameter, for example `$expand=multiTenantApplicationMetrics($expand=investigationHints)`.|
 |recent|[microsoft.graph.tenantGovernanceServices.multiTenantApplicationMetricsRecent](../resources/tenantgovernanceservices-multitenantapplicationmetricsrecent.md)|Multitenant application metrics corresponding to recent snapshots where metrics were found to have sufficiently changed.|
 
 ## JSON representation

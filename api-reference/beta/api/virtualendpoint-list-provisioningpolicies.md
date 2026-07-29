@@ -158,7 +158,8 @@ Content-Type: application/json
       "userSettingsPersistenceConfiguration": {
           "userSettingsPersistenceEnabled": true,
           "userSettingsPersistenceStorageSizeCategory": "fourGB"
-      }
+      },
+      "snapshotResetMode": "notApplicable"
     }
   ]
 }

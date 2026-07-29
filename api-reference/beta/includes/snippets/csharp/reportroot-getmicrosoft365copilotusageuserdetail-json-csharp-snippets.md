@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 // Code snippets are only available for the latest version. Current version is 5.x
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=csharp
-await graphClient.Reports.GetMicrosoft365CopilotUsageUserDetailWithPeriod("{period}").GetAsync((requestConfiguration) =>
+await graphClient.Reports.GetMicrosoft365CopilotUsageUserDetailWithPeriodWithVersion("{period}","{version}").GetAsync((requestConfiguration) =>
 {
 	requestConfiguration.QueryParameters.Format = "application/json";
 });
