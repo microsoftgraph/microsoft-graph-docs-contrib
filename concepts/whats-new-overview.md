@@ -81,6 +81,7 @@ Added the **vapidPublicKey**, **webPushEncryptionP256dhPublicKey**, and **webPus
 - Added the **shareSnapshot** method to the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) resource type. Use it to copy a Cloud PC snapshot to an Azure storage account.
 - Added support for activating or deactivating an organization for Windows 365 for Agents. Use the [cloudPC: organizationAction](/graph/api/cloudpc-organizationaction?view=graph-rest-beta&preserve-view=true) action to trigger the operation.
 - Use the [cloudPC: retrieveOrganizationActionDetail](/graph/api/cloudpc-retrieveorganizationactiondetail?view=graph-rest-beta&preserve-view=true) method to retrieve the status and details of an organization action.
+- Added the **permissions** relationship to the [list](/graph/api/resources/list) and [listItem](/graph/api/resources/listitem) resources in v1.0. Use the [list permissions](/graph/api/list-list-permissions) and [create permission](/graph/api/list-post-permissions) methods to manage permissions for SharePoint lists and list items.
 
 ### Files
 

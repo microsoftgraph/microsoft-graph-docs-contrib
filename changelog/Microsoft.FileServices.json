@@ -6101,6 +6101,64 @@
       "CreatedDateTime": "2026-03-23T00:00:00.000Z",
       "WorkloadArea": "Files",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e8c810be-0269-4f57-ba81-868186971d1a",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "permissions",
+          "ChangeType": "Addition",
+          "Description": "Added the **permissions** relationship to the [list](https://learn.microsoft.com/en-us/graph/api/resources/list?view=graph-rest-1.0) resource.",
+          "Target": "list"
+        },
+        {
+          "Id": "e8c810be-0269-4f57-ba81-868186971d1a",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added the [create](https://learn.microsoft.com/en-us/graph/api/list-post-permissions?view=graph-rest-1.0) operation to the [list](https://learn.microsoft.com/en-us/graph/api/resources/list?view=graph-rest-1.0) resource.",
+          "Target": "list"
+        },
+        {
+          "Id": "e8c810be-0269-4f57-ba81-868186971d1a",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [get](https://learn.microsoft.com/en-us/graph/api/list-list-permissions?view=graph-rest-1.0) operation to the [list](https://learn.microsoft.com/en-us/graph/api/resources/list?view=graph-rest-1.0) resource.",
+          "Target": "list"
+        },
+        {
+          "Id": "e8c810be-0269-4f57-ba81-868186971d1a",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "permissions",
+          "ChangeType": "Addition",
+          "Description": "Added the **permissions** relationship to the [listItem](https://learn.microsoft.com/en-us/graph/api/resources/listItem?view=graph-rest-1.0) resource.",
+          "Target": "listItem"
+        },
+        {
+          "Id": "e8c810be-0269-4f57-ba81-868186971d1a",
+          "ApiChange": "Method",
+          "ChangedApiName": "POST",
+          "ChangeType": "Addition",
+          "Description": "Added the [create](https://learn.microsoft.com/en-us/graph/api/listItem-post-permissions?view=graph-rest-1.0) operation to the [listItem](https://learn.microsoft.com/en-us/graph/api/resources/listItem?view=graph-rest-1.0) resource.",
+          "Target": "listItem"
+        },
+        {
+          "Id": "e8c810be-0269-4f57-ba81-868186971d1a",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [get](https://learn.microsoft.com/en-us/graph/api/listItem-list-permissions?view=graph-rest-1.0) operation to the [listItem](https://learn.microsoft.com/en-us/graph/api/resources/listItem?view=graph-rest-1.0) resource.",
+          "Target": "listItem"
+        }
+      ],
+      "Id": "e8c810be-0269-4f57-ba81-868186971d1a",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-07-29T21:02:48.8898539Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
     }
   ]
 }
