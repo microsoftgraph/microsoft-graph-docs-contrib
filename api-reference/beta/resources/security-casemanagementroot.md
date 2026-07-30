@@ -25,6 +25,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
+|caseTypeConfigurations|[microsoft.graph.security.caseManagement.caseTypeConfiguration](../resources/security-casemanagement-casetypeconfiguration.md) collection|The collection of case type configurations that define the statuses and custom fields available for each case type. Read-only. Supports `$select`, `$count`, and `$expand` of the `statuses` and `customFields` relationships.|
 |cases|[microsoft.graph.security.caseManagement.case](../resources/security-casemanagement-case.md) collection|The collection of security cases managed through the case management entry point. Supports `$filter`, `$orderby`, `$select`, `$top`, `$skip`, and `$count`.|
 
 ## JSON representation

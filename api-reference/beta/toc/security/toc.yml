@@ -438,6 +438,42 @@ items:
       href: ../../api/security-casemanagement-task-get.md
     - name: Update
       href: ../../api/security-casemanagement-task-update.md
+  - name: Case type configuration
+    items:
+    - name: Case type configuration
+      href: ../../resources/security-casemanagement-casetypeconfiguration.md
+    - name: List
+      href: ../../api/security-casemanagementroot-list-casetypeconfigurations.md
+    - name: Get
+      href: ../../api/security-casemanagement-casetypeconfiguration-get.md
+    - name: List customFields
+      href: ../../api/security-casemanagement-casetypeconfiguration-list-customfields.md
+    - name: List statuses
+      href: ../../api/security-casemanagement-casetypeconfiguration-list-statuses.md
+  - name: Custom field definition
+    items:
+    - name: Custom field definition
+      href: ../../resources/security-casemanagement-customfielddefinition.md
+    - name: List
+      href: ../../api/security-casemanagement-casetypeconfiguration-list-customfields.md
+    - name: Get
+      href: ../../api/security-casemanagement-customfielddefinition-get.md
+  - name: String custom field definition
+    href: ../../resources/security-casemanagement-stringcustomfielddefinition.md
+  - name: Number custom field definition
+    href: ../../resources/security-casemanagement-numbercustomfielddefinition.md
+  - name: Date time custom field definition
+    href: ../../resources/security-casemanagement-datetimecustomfielddefinition.md
+  - name: Options custom field definition
+    href: ../../resources/security-casemanagement-optionscustomfielddefinition.md
+  - name: Status definition
+    items:
+    - name: Status definition
+      href: ../../resources/security-casemanagement-statusdefinition.md
+    - name: List
+      href: ../../api/security-casemanagement-casetypeconfiguration-list-statuses.md
+    - name: Get
+      href: ../../api/security-casemanagement-statusdefinition-get.md
 - name: Cloud zones or scopes (preview)
   items:
   - name: Zone

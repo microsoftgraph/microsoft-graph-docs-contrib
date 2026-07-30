@@ -3,6 +3,88 @@
     {
       "ChangeList": [
         {
+          "Id": "b9a8de1f-7a39-4c1e-82c8-a992f97049f0",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "caseTypeConfigurations",
+          "ChangeType": "Addition",
+          "Description": "Added the **caseTypeConfigurations** relationship to the [caseManagementRoot](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagementroot?view=graph-rest-beta) resource.",
+          "Target": "caseManagementRoot"
+        },
+        {
+          "Id": "8e70de67-07d0-4102-9791-3d6bbab8a6c7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "caseTypeConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [caseTypeConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-casetypeconfiguration?view=graph-rest-beta) resource.",
+          "Target": "caseTypeConfiguration"
+        },
+        {
+          "Id": "9e21f0bb-042b-4f45-8018-14f94f50c11d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customFieldDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [customFieldDefinition](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-customfielddefinition?view=graph-rest-beta) resource.",
+          "Target": "customFieldDefinition"
+        },
+        {
+          "Id": "4817d929-e48e-41d2-abc7-03b8e678805c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customStatusDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [customStatusDefinition](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-customstatusdefinition?view=graph-rest-beta) resource.",
+          "Target": "customStatusDefinition"
+        },
+        {
+          "Id": "a5ffc697-e223-4c29-b193-cfa8d3cca83e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "dateTimeCustomFieldDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [dateTimeCustomFieldDefinition](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-datetimecustomfielddefinition?view=graph-rest-beta) resource.",
+          "Target": "dateTimeCustomFieldDefinition"
+        },
+        {
+          "Id": "682518de-e604-492b-a82a-0ce4ff8d6d94",
+          "ApiChange": "Resource",
+          "ChangedApiName": "numberCustomFieldDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [numberCustomFieldDefinition](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-numbercustomfielddefinition?view=graph-rest-beta) resource.",
+          "Target": "numberCustomFieldDefinition"
+        },
+        {
+          "Id": "73074c83-1380-40cd-8826-5f73bb023adc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "optionsCustomFieldDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [optionsCustomFieldDefinition](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-optionscustomfielddefinition?view=graph-rest-beta) resource.",
+          "Target": "optionsCustomFieldDefinition"
+        },
+        {
+          "Id": "af6d08ab-8223-4d16-a051-7042931141e8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "statusDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [statusDefinition](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-statusdefinition?view=graph-rest-beta) resource.",
+          "Target": "statusDefinition"
+        },
+        {
+          "Id": "9f9995ca-c122-4ed3-9067-7c5fb26db899",
+          "ApiChange": "Resource",
+          "ChangedApiName": "stringCustomFieldDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [stringCustomFieldDefinition](https://learn.microsoft.com/en-us/graph/api/resources/security-casemanagement-stringcustomfielddefinition?view=graph-rest-beta) resource.",
+          "Target": "stringCustomFieldDefinition"
+        }
+      ],
+      "Id": "8848e169-52e7-46df-b9bf-bd0eac36bbae",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-07-30T00:00:00.0000000Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Case management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "06358117-e9b7-432f-bc96-a4f93deb8566",
           "ApiChange": "Relationship",
           "ChangedApiName": "caseManagement",

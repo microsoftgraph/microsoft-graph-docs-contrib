@@ -140,6 +140,10 @@ Added the [Delete mailboxItem](/graph/api/mailboxfolder-delete-items?view=graph-
 - Added the [alert: moveAlerts](/graph/api/security-alert-movealerts) and [incident: mergeIncidents](/graph/api/security-incident-mergeincidents) actions to support moving alerts and merging incidents in Microsoft Defender.
 - Added the [correlationReason](/graph/api/resources/security-correlationreason) enumeration and [mergeResponse](/graph/api/resources/security-mergeresponse) resource type.
 
+### Security | Case management
+
+Added APIs to discover the case type configuration for each case type in Microsoft Defender case management. Use the [caseTypeConfiguration](/graph/api/resources/security-casemanagement-casetypeconfiguration?view=graph-rest-beta&preserve-view=true) resource and the **caseTypeConfigurations** relationship on [caseManagementRoot](/graph/api/resources/security-casemanagementroot?view=graph-rest-beta&preserve-view=true) to read the allowed [status](/graph/api/resources/security-casemanagement-statusdefinition?view=graph-rest-beta&preserve-view=true) tree and the [custom-field](/graph/api/resources/security-casemanagement-customfielddefinition?view=graph-rest-beta&preserve-view=true) schema that apply to cases of that type.
+
 ### Security | eDiscovery
 
 - Added the `cloudNativeHtmlConversion` member to the [additionalDataOptions](/graph/api/resources/security-ediscoveryaddtoreviewsetoperation#additionaldataoptions-values) enumeration.
