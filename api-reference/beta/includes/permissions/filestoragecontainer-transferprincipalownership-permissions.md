@@ -10,4 +10,3 @@ ms.localizationpriority: medium
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|Not supported.|Not supported.|
 
-
