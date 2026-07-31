@@ -81,6 +81,7 @@ Added the **vapidPublicKey**, **webPushEncryptionP256dhPublicKey**, and **webPus
 - Added the **shareSnapshot** method to the [cloudPC](/graph/api/resources/cloudpc?view=graph-rest-beta&preserve-view=true) resource type. Use it to copy a Cloud PC snapshot to an Azure storage account.
 - Added support for activating or deactivating an organization for Windows 365 for Agents. Use the [cloudPC: organizationAction](/graph/api/cloudpc-organizationaction?view=graph-rest-beta&preserve-view=true) action to trigger the operation.
 - Use the [cloudPC: retrieveOrganizationActionDetail](/graph/api/cloudpc-retrieveorganizationactiondetail?view=graph-rest-beta&preserve-view=true) method to retrieve the status and details of an organization action.
+- Added the **permissions** relationship to the [list](/graph/api/resources/list) and [listItem](/graph/api/resources/listitem) resources in v1.0. Use the [list permissions](/graph/api/list-list-permissions) and [create permission](/graph/api/list-post-permissions) methods to manage permissions for SharePoint lists and list items.
 
 ### Files
 
@@ -138,6 +139,10 @@ Added the [Delete mailboxItem](/graph/api/mailboxfolder-delete-items?view=graph-
 - Added the **tenantId** property to the [userAccount](/graph/api/resources/security-useraccount) resource to provide the Entra home tenant ID for the compromised user account indicated in a [security alert](/graph/api/resources/security-alert) where the alert evidence is related to a [processEvidence](/graph/api/resources/security-processevidence), [userEvidence](/graph/api/resources/security-userevidence), or [mailboxEvidence](/graph/api/resources/security-mailboxevidence).
 - Added the [alert: moveAlerts](/graph/api/security-alert-movealerts) and [incident: mergeIncidents](/graph/api/security-incident-mergeincidents) actions to support moving alerts and merging incidents in Microsoft Defender.
 - Added the [correlationReason](/graph/api/resources/security-correlationreason) enumeration and [mergeResponse](/graph/api/resources/security-mergeresponse) resource type.
+
+### Security | Case management
+
+Added APIs to discover the case type configuration for each case type in Microsoft Defender case management. Use the [caseTypeConfiguration](/graph/api/resources/security-casemanagement-casetypeconfiguration?view=graph-rest-beta&preserve-view=true) resource and the **caseTypeConfigurations** relationship on [caseManagementRoot](/graph/api/resources/security-casemanagementroot?view=graph-rest-beta&preserve-view=true) to read the allowed [status](/graph/api/resources/security-casemanagement-statusdefinition?view=graph-rest-beta&preserve-view=true) tree and the [custom-field](/graph/api/resources/security-casemanagement-customfielddefinition?view=graph-rest-beta&preserve-view=true) schema that apply to cases of that type.
 
 ### Security | eDiscovery
 

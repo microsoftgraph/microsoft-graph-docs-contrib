@@ -3170,7 +3170,14 @@
             "microsoft.graph.security.caseManagement.incidentRelation",
             "microsoft.graph.security.caseManagement.recommendationRelation",
             "microsoft.graph.security.caseManagement.workspaceIndicatorRelation",
-            "microsoft.graph.security.caseManagement.task"
+            "microsoft.graph.security.caseManagement.task",
+            "microsoft.graph.security.caseManagement.caseTypeConfiguration",
+            "microsoft.graph.security.caseManagement.customFieldDefinition",
+            "microsoft.graph.security.caseManagement.stringCustomFieldDefinition",
+            "microsoft.graph.security.caseManagement.numberCustomFieldDefinition",
+            "microsoft.graph.security.caseManagement.dateTimeCustomFieldDefinition",
+            "microsoft.graph.security.caseManagement.optionsCustomFieldDefinition",
+            "microsoft.graph.security.caseManagement.statusDefinition"
           ]
         }
       ]
