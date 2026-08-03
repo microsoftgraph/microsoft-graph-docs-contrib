@@ -9,7 +9,7 @@ jobs:
   verify-temp-docstubs:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - name: Validate temp-docstubs folder
         run: |
           ./scripts/validate-temp-docstubs.ps1

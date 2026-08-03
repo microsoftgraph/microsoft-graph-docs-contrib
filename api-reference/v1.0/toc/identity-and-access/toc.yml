@@ -110,6 +110,8 @@ items:
       href: ../../resources/directory.md
     - name: List
       href: ../../api/directory-deleteditems-list.md
+    - name: List remote tenant groups
+      href: ../../api/directory-list-remotetenantgroups.md
     - name: Get
       href: ../../api/directory-deleteditems-get.md
     - name: Restore
@@ -334,6 +336,14 @@ items:
       href: ../../api/organization-get.md
     - name: Update
       href: ../../api/organization-update.md
+  - name: Remote tenant group
+    items:
+    - name: Remote tenant group
+      href: ../../resources/remotetenantgroup.md
+    - name: List
+      href: ../../api/directory-list-remotetenantgroups.md
+    - name: Get
+      href: ../../api/remotetenantgroup-get.md
   - name: Role management
     items:
     - name: Role management

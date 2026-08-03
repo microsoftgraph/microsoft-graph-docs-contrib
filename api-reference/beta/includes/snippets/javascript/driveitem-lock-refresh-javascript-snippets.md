@@ -10,12 +10,12 @@ const options = {
 
 const client = Client.init(options);
 
-const lock = {
+const lockInfo = {
   durationMinutes: 10
 };
 
 await client.api('/drives/{drive-id}/items/{item-id}/lock')
 	.version('beta')
-	.post(lock);
+	.post(lockInfo);
 
 ```

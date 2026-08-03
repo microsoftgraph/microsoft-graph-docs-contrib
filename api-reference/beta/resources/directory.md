@@ -39,6 +39,7 @@ Inherits from [entity](entity.md).
 | Method                                                                                     | Return Type                                      | Description                            |
 | :----------------------------------------------------------------------------------------- | :----------------------------------------------- | :------------------------------------- |
 | [List](../api/directory-deleteditems-list.md)                                | [directoryObject](directoryobject.md) collection | Gets a list of recently deleted items. |
+| [List remote tenant groups](../api/directory-list-remotetenantgroups.md) | [remoteTenantGroup](remotetenantgroup.md) collection | Gets a list of the remote tenant groups in the directory. |
 | [Get](../api/directory-deleteditems-get.md)                                   | [directoryObject](directoryobject.md)            | Gets the properties of a deleted item. |
 | [Restore](../api/directory-deleteditems-restore.md)                           | [directoryObject](directoryobject.md)            | Restores a recently deleted item.      |
 | [Permanently delete](../api/directory-deleteditems-delete.md)                      | None                                             | Permanently deletes an item.           |
@@ -71,6 +72,7 @@ Inherits from [entity](entity.md).
 |publicKeyInfrastructure|[publicKeyInfrastructureRoot](../resources/publickeyinfrastructureroot.md)|The collection of public key infrastructure instances for the certificate-based authentication feature for users in a Microsoft Entra tenant.|
 | recommendations | [recommendation](../resources/recommendation.md) collection | List of recommended improvements to improve tenant posture. |
 | recovery | [microsoft.graph.entraRecoveryServices.recovery](entrarecoveryservices-recovery.md) | Represents the Entra backup and recovery service for the tenant. |
+| remoteTenantGroups | [remoteTenantGroup](remotetenantgroup.md) collection | Collection of groups in remote Microsoft Entra tenants that are available in the directory. |
 | subscriptions | [companySubscription](companysubscription.md) collection | List of commercial subscriptions that an organization has. |
 |templates|[template](../resources/template.md) |A container for templates, such as device templates used for onboarding devices in Microsoft Entra ID. |
 |tenantGovernance|[microsoft.graph.tenantGovernanceServices.tenantGovernance](../resources/tenantgovernanceservices-tenantgovernance.md)|Container for Microsoft Entra Tenant Governance capabilities.|

@@ -1266,6 +1266,7 @@
             "bitlockerRecoveryKey",
             "deviceLocalCredentialInfo",
             "featureRolloutPolicy",
+            "remoteTenantGroup",
             "organizationSettings",
             "uxSetting",
             "deviceTemplate",
@@ -2625,6 +2626,9 @@
           "overview": "../../resources/report.md",
           "resources": [
             "adminReportSettings",
+            "microsoftAppsFileStorageContainerAppUsage",
+            "microsoftAppsFileStorageContainerGeoUsage",
+            "microsoftAppsFileStorageContainerUsage",
             "reportRoot"
           ],
           "complexTypes": [
@@ -3166,7 +3170,14 @@
             "microsoft.graph.security.caseManagement.incidentRelation",
             "microsoft.graph.security.caseManagement.recommendationRelation",
             "microsoft.graph.security.caseManagement.workspaceIndicatorRelation",
-            "microsoft.graph.security.caseManagement.task"
+            "microsoft.graph.security.caseManagement.task",
+            "microsoft.graph.security.caseManagement.caseTypeConfiguration",
+            "microsoft.graph.security.caseManagement.customFieldDefinition",
+            "microsoft.graph.security.caseManagement.stringCustomFieldDefinition",
+            "microsoft.graph.security.caseManagement.numberCustomFieldDefinition",
+            "microsoft.graph.security.caseManagement.dateTimeCustomFieldDefinition",
+            "microsoft.graph.security.caseManagement.optionsCustomFieldDefinition",
+            "microsoft.graph.security.caseManagement.statusDefinition"
           ]
         }
       ]
@@ -3621,6 +3632,16 @@
               "complexTypes": [
                 "sectionDisplayIcon"
               ]
+            },        
+            {
+              "name": "Custom emoji (preview)",
+              "resources": [
+                "teamworkMessaging",
+                "teamworkCustomEmoji"
+              ],
+              "complexTypes": [
+                  "customEmojiFromIdentitySet"
+              ]
             }
           ],
           "complexTypes": [
@@ -3716,6 +3737,14 @@
             "microsoft.graph.tenantGovernanceServices.governanceInvitation",
             "microsoft.graph.tenantGovernanceServices.governanceRequest",
             "microsoft.graph.tenantGovernanceServices.governanceRelationship"
+          ],
+          "complexTypes": [
+            "microsoft.graph.tenantGovernanceServices.b2BSignInActivityMetrics",
+            "microsoft.graph.tenantGovernanceServices.b2bRegistrationMetrics",
+            "microsoft.graph.tenantGovernanceServices.billingMetrics",
+            "microsoft.graph.tenantGovernanceServices.actionStep",
+            "microsoft.graph.tenantGovernanceServices.actionUrl",
+            "microsoft.graph.tenantGovernanceServices.multiTenantApplicationMetrics"
           ]
         },
         {

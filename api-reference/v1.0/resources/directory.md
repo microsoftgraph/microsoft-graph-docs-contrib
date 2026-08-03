@@ -31,6 +31,7 @@ Inherits from [entity](entity.md).
 | Method                                                                                     | Return Type                                      | Description                            |
 | :----------------------------------------------------------------------------------------- | :----------------------------------------------- | :------------------------------------- |
 | [List](../api/directory-deleteditems-list.md)                                | [directoryObject](directoryobject.md) collection | Gets a list of recently deleted items. |
+| [List remote tenant groups](../api/directory-list-remotetenantgroups.md) | [remoteTenantGroup](remotetenantgroup.md) collection | Gets a list of the remote tenant groups in the directory. |
 | [Get](../api/directory-deleteditems-get.md)                                   | [directoryObject](directoryobject.md)            | Gets the properties of a deleted item. |
 | [Restore](../api/directory-deleteditems-restore.md)                           | [directoryObject](directoryobject.md)            | Restores a recently deleted item.      |
 | [Permanently delete](../api/directory-deleteditems-delete.md)                      | None                                             | Permanently deletes an item.           |
@@ -54,6 +55,7 @@ Inherits from [entity](entity.md).
 | federationConfigurations           | [identityProviderBase](../resources/identityproviderbase.md) collection                  | Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol. |
 | onPremisesSynchronization          | [onPremisesDirectorySynchronization](../resources/onpremisesdirectorysynchronization.md) | A container for on-premises directory synchronization functionalities that are available for the organization.      |
 |publicKeyInfrastructure|[publicKeyInfrastructureRoot](../resources/publickeyinfrastructureroot.md)|The collection of public key infrastructure instances for the certificate-based authentication feature for users in a Microsoft Entra tenant.|
+| remoteTenantGroups | [remoteTenantGroup](remotetenantgroup.md) collection | Collection of groups in remote Microsoft Entra tenants that are available in the directory. |
 | subscriptions                      | [companySubscription](companysubscription.md) collection                                 | List of commercial subscriptions that an organization acquired.                                                       |
 
 ## JSON representation

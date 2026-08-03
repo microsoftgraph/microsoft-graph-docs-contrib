@@ -39,6 +39,32 @@
     {
       "ChangeList": [
         {
+          "Id": "f21cfc24-0466-4bc4-b2d3-98167c79b913",
+          "ApiChange": "Method",
+          "ChangedApiName": "enablePolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the **enablePolicy** method to the [ediscoveryHoldPolicy](https://learn.microsoft.com/graph/api/resources/security-ediscoveryHoldPolicy?view=graph-rest-beta) resource.",
+          "Target": "ediscoveryHoldPolicy"
+        },
+        {
+          "Id": "f21cfc24-0466-4bc4-b2d3-98167c79b913",
+          "ApiChange": "Method",
+          "ChangedApiName": "disablePolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the **disablePolicy** method to the [ediscoveryHoldPolicy](https://learn.microsoft.com/graph/api/resources/security-ediscoveryHoldPolicy?view=graph-rest-beta) resource.",
+          "Target": "ediscoveryHoldPolicy"
+        }
+      ],
+      "Id": "f21cfc24-0466-4bc4-b2d3-98167c79b913",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-07-27T22:51:29.0000000Z",
+      "WorkloadArea": "Security",
+      "SubArea": "eDiscovery"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "e45f1bb8-e874-49b1-8055-967c42bf53a3",
           "ApiChange": "Member",
           "ChangedApiName": "optimizedPartitionSize",
