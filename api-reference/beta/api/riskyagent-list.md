@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a collection of [riskyAgent](../resources/riskyagent.md) objects.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
