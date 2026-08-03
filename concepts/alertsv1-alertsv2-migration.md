@@ -12,12 +12,12 @@ ms.topic: upgrade-and-migration-article
 
 # Migrate from legacy alerts to the alerts and incidents API
 
-The legacy Microsoft Graph security alerts API available through the `/security/alerts` endpoint is deprecated and will be retired on **August 31, 2026**. If your app currently uses the legacy alerts API to retrieve, monitor, or manage security alerts, you should migrate to the new [alerts and incidents API](/graph/api/resources/security-alert) in Microsoft 365 Defender, available through the `/security/alerts_v2` endpoint.
+The legacy Microsoft Graph security alerts API available through the `/security/alerts` endpoint is deprecated and will be retired on **October 15, 2026**. If your app currently uses the legacy alerts API to retrieve, monitor, or manage security alerts, you should migrate to the new [alerts and incidents API](/graph/api/resources/security-alert) in Microsoft 365 Defender, available through the `/security/alerts_v2` endpoint.
 
 This article describes the key differences between the two APIs, provides a field mapping reference, and outlines the steps to migrate your app.
 
 > [!IMPORTANT]
-> - After August 31, 2026, the legacy `/security/alerts` endpoint will stop returning data. Migrate your apps before this deadline to avoid disruption to your security operations workflows.
+> - After October 15, 2026, the legacy `/security/alerts` endpoint will stop returning data. Migrate your apps before this deadline to avoid disruption to your security operations workflows.
 >
 > - The new alerts and incidents API is **not** a direct, one-to-one replacement for the legacy alerts API. It surfaces alerts that are part of the Microsoft 365 Defender ecosystem. Alerts from sources that aren't integrated with Microsoft 365 Defender—such as a Microsoft Sentinel workspace that isn't connected to the Microsoft Defender portal, or standalone and tuned alerts—aren't returned by the new API. Review the [known differences and limitations](#known-differences-and-limitations) section before you begin your migration.
 
@@ -103,7 +103,7 @@ Before you change any code, identify all integrations, scripts, connectors, and 
 
 If you use Microsoft Sentinel, connect your workspace to the Microsoft Defender portal and confirm that relevant detections are promoted into incidents. Without this integration, Sentinel-generated alerts don't appear in the v2 API.
 
-While you prepare for onboarding, use the [Sentinel REST API](/rest/api/loganalytics/) to retrieve Sentinel alerts. Be aware that standalone Sentinel alerts aren't supported in the new API model, and the Sentinel REST API will be retired in the future. Prioritize Defender portal onboarding ahead of the August 31, 2026 deadline.
+While you prepare for onboarding, use the [Sentinel REST API](/rest/api/loganalytics/) to retrieve Sentinel alerts. Be aware that standalone Sentinel alerts aren't supported in the new API model, and the Sentinel REST API will be retired in the future. Prioritize Defender portal onboarding ahead of the October 15, 2026 deadline.
 
 For more information, see [Connect Microsoft Sentinel to the Microsoft Defender portal](/unified-secops/microsoft-sentinel-onboard) and [Transition your Microsoft Sentinel environment to the Defender portal](/azure/sentinel/move-to-defender).
 
