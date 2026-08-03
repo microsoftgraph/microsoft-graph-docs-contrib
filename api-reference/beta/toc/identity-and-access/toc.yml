@@ -2110,6 +2110,16 @@ items:
         href: ../../api/platformcredentialauthenticationmethod-get.md
       - name: Delete
         href: ../../api/platformcredentialauthenticationmethod-delete.md
+    - name: Resource account key authentication method
+      items:
+      - name: Resource account key authentication method
+        href: ../../resources/resourceaccountkeyauthenticationmethod.md
+      - name: List
+        href: ../../api/authentication-list-resourceaccountkeyauthenticationmethods.md
+      - name: Get
+        href: ../../api/resourceaccountkeyauthenticationmethod-get.md
+      - name: Delete
+        href: ../../api/resourceaccountkeyauthenticationmethod-delete.md
     - name: Software OATH
       items:
       - name: Software OATH
@@ -3407,6 +3417,12 @@ items:
         href: ../../api/verifiedidprofile-update.md
       - name: Delete
         href: ../../api/identityverifiedidroot-delete-profiles.md
+    - name: Complex types
+      items:
+      - name: Mobile drivers license configuration
+        href: ../../resources/mobiledriverslicenseconfiguration.md
+      - name: Verified id self service issuance
+        href: ../../resources/verifiedidselfserviceissuance.md
   - name: Web application firewall
     items:
     - name: Web application firewall provider

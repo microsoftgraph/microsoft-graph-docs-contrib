@@ -103,6 +103,8 @@ Added support for automatically quarantining Lifecycle Workflows to stop a workf
 
 ### Identity and access | Identity and sign-in
 
+- Added the [resourceAccountKeyAuthenticationMethod](/graph/api/resources/resourceaccountkeyauthenticationmethod?view=graph-rest-beta&preserve-view=true) resource type and related methods for managing resource account key credentials on shared devices. Use these APIs to list, get, and delete resource account key authentication methods for Teams Meeting Rooms and Teams phones that authenticate silently to Microsoft Entra ID.
+- Added support for programmatic FIDO2 passkey registration. Use the [creationOptions](/graph/api/fido2authenticationmethod-creationoptions?view=graph-rest-beta&preserve-view=true) function to get WebAuthn credential creation options, then complete registration by posting the new **publicKeyCredential** property to the [fido2AuthenticationMethod](/graph/api/resources/fido2authenticationmethod?view=graph-rest-beta&preserve-view=true) resource.
 - Added support to update and delete Microsoft 365 cross-tenant capabilities in the cross-tenant access policy. For details, see [m365CapabilityBase](/graph/api/resources/m365capabilitybase?view=graph-rest-beta&preserve-view=true).
 
 - Updated the [verifiedIdProfile](/graph/api/resources/verifiedidprofile?view=graph-rest-beta&preserve-view=true) resource to support mobile driver's license verification and self-service Verified ID issuance through MyAccount. Profiles can specify the verification method and credential manifest used for these experiences.
@@ -111,6 +113,15 @@ Added support for automatically quarantining Lifecycle Workflows to stop a workf
   - Added the **manifestUrl** property to [verifiedIdProfileConfiguration](/graph/api/resources/verifiedidprofileconfiguration?view=graph-rest-beta&preserve-view=true) to reference the credential issuer's manifest defining the credential schema and issuer details.
   - Added the `verification` member to the **verifiedIdUsageConfigurationPurpose** enumeration to enable just-in-time identity verification scenarios, such as step-up authentication enforcement through Conditional Access policies.
 
+### Security | Alerts and incidents
+
+- Added the **tenantId** property to the [userAccount](/graph/api/resources/security-useraccount) resource to provide the Entra home tenant ID for the compromised user account indicated in a [security alert](/graph/api/resources/security-alert) where the alert evidence is related to a [processEvidence](/graph/api/resources/security-processevidence), [userEvidence](/graph/api/resources/security-userevidence), or [mailboxEvidence](/graph/api/resources/security-mailboxevidence).
+- Added the [alert: moveAlerts](/graph/api/security-alert-movealerts) and [incident: mergeIncidents](/graph/api/security-incident-mergeincidents) actions to support moving alerts and merging incidents in Microsoft Defender.
+- Added the [correlationReason](/graph/api/resources/security-correlationreason) enumeration and [mergeResponse](/graph/api/resources/security-mergeresponse) resource type.
+
+### Security | eDiscovery
+
+Added the `cloudNativeHtmlConversion` member to the [additionalDataOptions](/graph/api/resources/security-ediscoveryaddtoreviewsetoperation#additionaldataoptions-values) enumeration.
 ### Mailbox import and export
 
 Added the [Delete mailboxItem](/graph/api/mailboxfolder-delete-items?view=graph-rest-beta&preserve-view=true) method to delete an individual [mailboxItem](/graph/api/resources/mailboxitem?view=graph-rest-beta&preserve-view=true) from a mailbox folder by using the mailbox import and export APIs. Use the **disposalType** query parameter to specify soft-delete or hard-delete semantics.

@@ -1651,6 +1651,7 @@
                 "passwordAuthenticationMethod",
                 "phoneAuthenticationMethod",
                 "platformCredentialAuthenticationMethod",
+                "resourceAccountKeyAuthenticationMethod",
                 "softwareOathAuthenticationMethod",
                 "temporaryAccessPassAuthenticationMethod",
                 "windowsHelloForBusinessAuthenticationMethod",
