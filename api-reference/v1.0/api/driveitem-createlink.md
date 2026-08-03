@@ -58,7 +58,7 @@ The request should be a JSON object with the following properties.
 | **type**     | string | The type of sharing link to create. Either `view`, `edit`, or `embed`.       |
 | **password** | string | The password of the sharing link set by the creator. Optional and OneDrive Personal only.|
 | **expirationDateTime** | string | A String with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission. |
-| **retainInheritedPermissions** |  Boolean          | Optional. If `true` (default), any existing inherited permissions are retained on the shared item when sharing this item for the first time. If `false`, all existing permissions are removed when sharing for the first time.  |
+| **retainInheritedPermissions** |  Boolean          | Optional. If `true` (default), any existing inherited permissions are retained on the shared item when sharing this item for the first time. If `false`, all existing permissions are removed when sharing for the first time. Not supported with SharePoint Embedded. |
 | **scope** | string | Optional. The scope of link to create. Either `anonymous`, `organization`, or `users`. |
 
 ### Link types
