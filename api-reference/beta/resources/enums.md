@@ -551,6 +551,17 @@ Namespace: microsoft.graph
 | cancelled |
 | unknownFutureValue |
 
+### plannerGoalStatus values
+
+| Member |
+| -------------------- |
+| notStarted |
+| onTrack |
+| behind |
+| atRisk |
+| closed |
+| unknownFutureValue |
+
 ### plannerTaskChatMentionType values
 
 | Member |

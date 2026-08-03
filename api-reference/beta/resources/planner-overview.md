@@ -125,6 +125,18 @@ To [retrieve the tasks in a plan](../api/plannerplan-list-tasks.md), make the fo
 GET /planner/plans/{plan-id}/tasks
 ```
 
+## Goals
+
+[Goals](../resources/plannergoal.md) express the high-level outcomes that a set of tasks in a plan is intended to accomplish. A plan can have multiple goals, and a task can be associated with multiple goals.
+
+To [retrieve the goals in a plan](../api/plannerplan-list-goals.md), make the following HTTP request.
+
+```http
+GET /planner/plans/{plan-id}/goals
+```
+
+Use the read-only **goalIds** property on a [plannerTask](../resources/plannertask.md) object to identify the goals associated with the task.
+
 ## Tasks
 
 Each task can be assigned to a user by adding an [assignment](plannerassignment.md) in the [assignments](plannerassignments.md) property on the task object.
@@ -252,4 +264,3 @@ The following are the possible values for the limit types.
 
 All Planner API `POST`, `PATCH`, and `DELETE` requests require the `If-Match` header to be specified with the last known etag value of the resource that is subject to the request.
 The 412 status code can also be returned if the etag value specified in the request no longer matches a version of the resource in the service. In this case, the clients should read the resource again and get a new etag.
-

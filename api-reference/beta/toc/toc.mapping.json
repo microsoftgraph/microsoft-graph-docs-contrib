@@ -3269,6 +3269,7 @@
         "plannerPlan",
         "plannerTask",
         "plannerBucket",
+        "plannerGoal",
         "plannerHistoryItem",
         "plannerPlanDetails",
         "plannerRoster",
