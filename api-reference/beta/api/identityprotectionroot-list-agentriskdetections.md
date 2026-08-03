@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties of a collection of [agentRiskDetection](../resources/agentriskdetection.md) objects.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

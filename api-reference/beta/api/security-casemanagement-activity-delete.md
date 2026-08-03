@@ -19,15 +19,13 @@ Delete a [comment](../resources/security-casemanagement-comment.md) activity fro
 > [!IMPORTANT]
 > You can't use this API to delete comment activities from [incidentCase](../resources/security-casemanagement-incidentcase.md) objects.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "security-casemanagement-activity-delete-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "security_casemanagement_activity_delete" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-casemanagement-activity-delete-permissions.md)]
 [!INCLUDE [rbac-case-management-apis](../includes/rbac-for-apis/rbac-case-management-apis.md)]
 
