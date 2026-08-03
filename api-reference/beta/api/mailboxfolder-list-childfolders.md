@@ -129,6 +129,7 @@ Content-length: 232
             "parentMailboxUrl": "https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93",
             "childFolderCount": 0,
             "totalItemCount": 20,
+            "wellKnownName": null,
             "type": "IPF.Note"
         },
         {
@@ -139,6 +140,7 @@ Content-length: 232
             "parentMailboxUrl": "https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93",
             "childFolderCount": 0,
             "totalItemCount": 1,
+            "wellKnownName": null,
             "type": "IPF.Note"
         }
     ]
