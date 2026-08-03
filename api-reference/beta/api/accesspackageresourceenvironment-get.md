@@ -26,7 +26,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
 
 > [!NOTE]
-> SharePoint Online resource environments are returned only when this API is called with delegated permissions. This scenario isn't supported with application permissions. To retrieve SharePoint site information using application permissions, use the [sites: getAllSites](../api/site-getallsites.md) API, which returns equivalent site information.
+> SharePoint Online resource environments are returned only when this API is called with delegated permissions. This scenario isn't supported with application permissions.
+>
+> A SharePoint Online resource environment corresponds to a SharePoint root site. To retrieve root site information using application permissions, use the [List sites](../api/site-list.md) API and filter on the `siteCollection/root` property: `GET /sites?$select=siteCollection,webUrl&$filter=siteCollection/root ne null`. Most organizations have a single root site; multi-geo organizations have a root site for each geo location.
 
 ## HTTP request
 
