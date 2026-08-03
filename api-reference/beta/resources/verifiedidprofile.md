@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Verified ID profiles defining set of properties and usage patterns. 
+Represents a set of properties and usage patterns for a Verified ID provider.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -36,12 +36,14 @@ Inherits from [entity](../resources/entity.md).
 |faceCheckConfiguration|[faceCheckConfiguration](../resources/facecheckconfiguration.md)| Set of properties configuring Entra Verified ID Face Check behavior. Required.|
 |id|String| Profile identifier. Inherited from [entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|DateTime the profile was last modified. Optional.|
+|mobileDriversLicenseConfiguration|[mobileDriversLicenseConfiguration](../resources/mobiledriverslicenseconfiguration.md)|Configuration for accepting mobile driver's licenses. Optional.|
 |name|String| Display name for the verified ID profile. Required.|
 |priority|Int32|Defines profile processing priority if multiple profiles are configured. Optional.|
+|selfServiceIssuance|[verifiedIdSelfServiceIssuance](../resources/verifiedidselfserviceissuance.md)|Configuration for self-service issuance. Optional.|
 |state|verifiedIdProfileState| Enablement state for the profile. The possible values are: `enabled`, `disabled`, `unknownFutureValue`. Required.|
-|verifierDid|String| Decentralized Identifier (DID) string that represents the verifier in the verifiable credential exchange. Required.|
 |verifiedIdProfileConfiguration|[verifiedIdProfileConfiguration](../resources/verifiedidprofileconfiguration.md)| Set of properties expressing the accepted issuer, claims binding, and credential type. Required.|
-|verifiedIdUsageConfigurations|[verifiedIdUsageConfiguration](../resources/verifiedidusageconfiguration.md) collection| Collection defining the usage purpose for the profile. The possible values are: `recovery`, `onboarding`, `all`, `unknownFutureValue`. Required.|
+|verifiedIdUsageConfigurations|[verifiedIdUsageConfiguration](../resources/verifiedidusageconfiguration.md) collection| Collection defining the usage purpose for the profile. The possible values are: `recovery`, `onboarding`, `all`, `unknownFutureValue`, `verification`. Use the `Prefer: include-unknown-enum-members` request header to get the following value from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `verification`. Required.|
+|verifierDid|String| Decentralized Identifier (DID) string that represents the verifier in the verifiable credential exchange. Required.|
 
 
 ## Relationships
@@ -73,11 +75,17 @@ The following JSON representation shows the resource type.
   "faceCheckConfiguration": {
     "@odata.type": "microsoft.graph.faceCheckConfiguration"
   },
+  "mobileDriversLicenseConfiguration": {
+    "@odata.type": "microsoft.graph.mobileDriversLicenseConfiguration"
+  },
   "verifiedIdUsageConfigurations": [
     {
       "@odata.type": "microsoft.graph.verifiedIdUsageConfiguration"
     }
-  ]
+  ],
+  "selfServiceIssuance": {
+    "@odata.type": "microsoft.graph.verifiedIdSelfServiceIssuance"
+  }
 }
 ```
 

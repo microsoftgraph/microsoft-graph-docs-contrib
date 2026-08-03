@@ -5857,6 +5857,16 @@ Possible values for user account types (group membership), per Windows definitio
 |disabled|
 |unknownFutureValue|
 
+### verifiedIdMethodType values
+
+|Member|
+|:---|
+|identityVerificationPartner|
+|tenantCustomCredential|
+|verifiedEmployee|
+|unknownFutureValue|
+|notConfigured|
+
 ### verifiedIdUsageConfigurationPurpose values 
 
 |Member|
@@ -5865,6 +5875,7 @@ Possible values for user account types (group membership), per Windows definitio
 |onboarding|
 |all|
 |unknownFutureValue|
+|verification|
 
 ### siteTemplateType values
 

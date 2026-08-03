@@ -1631,6 +1631,10 @@
               "name": "Verified ID",
               "resources": [
                 "verifiedIdProfile"
+              ],
+              "complexTypes": [
+                "mobileDriversLicenseConfiguration",
+                "verifiedIdSelfServiceIssuance"
               ]
             },
             {
