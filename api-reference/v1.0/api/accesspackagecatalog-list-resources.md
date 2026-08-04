@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
-ms.date: 03/08/2024
+ms.date: 07/31/2026
 ---
 
 # List resources
@@ -24,6 +24,9 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/accesspackagecatalog-list-resources-permissions.md)]
 
 [!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
+
+> [!NOTE]
+> SharePoint Online resources are returned only when this API is called with delegated permissions. This scenario isn't supported with application permissions. To retrieve SharePoint site information using application permissions, use the [sites: getAllSites](../api/site-getallsites.md) API, which returns equivalent site information.
 
 ## HTTP request
 

@@ -5,7 +5,7 @@ author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: apiPageType
-ms.date: 11/05/2024
+ms.date: 07/31/2026
 ---
 
 # Get accessPackageResourceEnvironment
@@ -24,6 +24,11 @@ Choose the permission or permissions marked as least privileged for this API. Us
 [!INCLUDE [permissions-table](../includes/permissions/accesspackageresourceenvironment-get-permissions.md)]
 
 [!INCLUDE [rbac-entitlement-catalog-reader](../includes/rbac-for-apis/rbac-entitlement-management-catalog-reader-apis-read.md)]
+
+> [!NOTE]
+> SharePoint Online resource environments are returned only when this API is called with delegated permissions. This scenario isn't supported with application permissions.
+>
+> A SharePoint Online resource environment corresponds to a SharePoint root site. To retrieve root site information using application permissions, use the [List sites](../api/site-list.md) API and filter on the `siteCollection/root` property: `GET /sites?$select=siteCollection,webUrl&$filter=siteCollection/root ne null`. Most organizations have a single root site; multi-geo organizations have a root site for each geo location.
 
 ## HTTP request
 
