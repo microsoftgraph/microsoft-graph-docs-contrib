@@ -53,6 +53,11 @@ claimBindings := []graphmodels.ClaimBindingable {
 	claimBinding1,
 }
 verifiedIdProfileConfiguration.SetClaimBindings(claimBindings)
+additionalData := map[string]interface{}{
+	"methodType" : "tenantCustomCredential", 
+	"manifestUrl" : "https://verifiedid.contoso.com/manifest", 
+}
+verifiedIdProfileConfiguration.SetAdditionalData(additionalData)
 requestBody.SetVerifiedIdProfileConfiguration(verifiedIdProfileConfiguration)
 faceCheckConfiguration := graphmodels.NewFaceCheckConfiguration()
 isEnabled := true
@@ -65,13 +70,30 @@ requestBody.SetFaceCheckConfiguration(faceCheckConfiguration)
 verifiedIdUsageConfiguration := graphmodels.NewVerifiedIdUsageConfiguration()
 isEnabledForTestOnly := true
 verifiedIdUsageConfiguration.SetIsEnabledForTestOnly(&isEnabledForTestOnly) 
-purpose := graphmodels.RECOVERY_VERIFIEDIDUSAGECONFIGURATIONPURPOSE 
+purpose := graphmodels.VERIFICATION_VERIFIEDIDUSAGECONFIGURATIONPURPOSE 
 verifiedIdUsageConfiguration.SetPurpose(&purpose) 
 
 verifiedIdUsageConfigurations := []graphmodels.VerifiedIdUsageConfigurationable {
 	verifiedIdUsageConfiguration,
 }
 requestBody.SetVerifiedIdUsageConfigurations(verifiedIdUsageConfigurations)
+additionalData := map[string]interface{}{
+mobileDriversLicenseConfiguration := graph.New()
+	acceptedRegions := []string {
+		"region-code",
+	}
+	mobileDriversLicenseConfiguration.SetAcceptedRegions(acceptedRegions)
+documentStandard := "document-standard"
+mobileDriversLicenseConfiguration.SetDocumentStandard(&documentStandard) 
+	requestBody.SetMobileDriversLicenseConfiguration(mobileDriversLicenseConfiguration)
+selfServiceIssuance := graph.New()
+	isEnabled := true
+selfServiceIssuance.SetIsEnabled(&isEnabled) 
+issuanceUrl := "https://verifiedid.contoso.com/issue"
+selfServiceIssuance.SetIssuanceUrl(&issuanceUrl) 
+	requestBody.SetSelfServiceIssuance(selfServiceIssuance)
+}
+requestBody.SetAdditionalData(additionalData)
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 profiles, err := graphClient.Identity().VerifiedId().Profiles().Post(context.Background(), requestBody, nil)

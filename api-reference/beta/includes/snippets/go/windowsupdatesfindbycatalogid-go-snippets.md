@@ -15,16 +15,16 @@ import (
 	  //other-imports
 )
 
-requestParameters := &graphadmin.WindowsUpdatesProductsfindByCatalogIdWithCatalogIDRequestBuilderGetQueryParameters{
-	Expand: [] string {"revisions($expand=catalogEntry,knowledgeBaseArticle)","knownIssues($expand=originatingKnowledgeBaseArticle,resolvingKnowledgeBaseArticle)"},
+requestParameters := &graphadmin.WindowsUpdatesProductsfindByKbNumberRequestBuilderGetQueryParameters{
+	Expand: [] string {"revisions($expand=catalogEntry,knowledgeBaseArticle)","knownIssues"},
 }
-configuration := &graphadmin.WindowsUpdatesProductsfindByCatalogIdWithCatalogIDRequestBuilderGetRequestConfiguration{
+configuration := &graphadmin.WindowsUpdatesProductsfindByKbNumberRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
-catalogID := "{catalogID}"
-microsoftGraphWindowsUpdatesFindByCatalogId, err := graphClient.Admin().Windows().Updates().Products().MicrosoftGraphWindowsUpdatesFindByCatalogIdWithCatalogID(&catalogID).GetAsFindByCatalogIdWithCatalogIDGetResponse(context.Background(), configuration)
+kbNumber := int32(1)
+microsoftGraphWindowsUpdatesFindByKbNumber, err := graphClient.Admin().Windows().Updates().Products().MicrosoftGraphWindowsUpdatesFindByKbNumberWithKbNumber(&kbNumber).GetAsFindByKbNumberWithKbNumberGetResponse(context.Background(), configuration)
 
 
 ```

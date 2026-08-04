@@ -36,6 +36,10 @@ request_body = VerifiedIdProfile(
 				verified_id_claim = "vc.credentialSubject.lastName",
 			),
 		],
+		additional_data = {
+				"method_type" : "tenantCustomCredential",
+				"manifest_url" : "https://verifiedid.contoso.com/manifest",
+		}
 	),
 	face_check_configuration = FaceCheckConfiguration(
 		is_enabled = True,
@@ -47,6 +51,18 @@ request_body = VerifiedIdProfile(
 			purpose = VerifiedIdUsageConfigurationPurpose.Recovery,
 		),
 	],
+	additional_data = {
+			"mobile_drivers_license_configuration" : {
+					"accepted_regions" : [
+						"region-code",
+					],
+					"document_standard" : "document-standard",
+			},
+			"self_service_issuance" : {
+					"is_enabled" : True,
+					"issuance_url" : "https://verifiedid.contoso.com/issue",
+			},
+	}
 )
 
 result = await graph_client.identity.verified_id.profiles.post(request_body)

@@ -109,7 +109,6 @@ GET https://graph.microsoft.com/v1.0/solutions/virtualEvents/webinars/f4b39f1c-5
 
 ---
 
-
 ---
 
 ### Response
