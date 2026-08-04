@@ -59,7 +59,8 @@ Added the **allowOnPremUpdateOfOnPremisesObjectIdentifierEnabled** property to t
 
 ### Teamwork and communications | Messaging
 
-Added the [targetedChatMessage](/graph/api/resources/targetedchatmessage) resource type and related methods for managing targeted messages in Microsoft Teams. Targeted messages are visible only to specified recipients within group chats and channels.
+- Documented support for the optional **ConsistencyLevel** request header when [getting hosted content for a chat message](/graph/api/chatmessagehostedcontent-get). Use `ConsistencyLevel: eventual` to retrieve hosted content for edited or deleted messages. Hosted content retrieval isn't supported for messages in deleted threads.
+- Added the [targetedChatMessage](/graph/api/resources/targetedchatmessage) resource type and related methods for managing targeted messages in Microsoft Teams. Targeted messages are visible only to specified recipients within group chats and channels.
   - Use the [getAllTargetedMessages](/graph/api/userteamwork-getalltargetedmessages) function to retrieve all targeted messages sent to a user across all group chats and channels.
   - Use the [getAllRetainedTargetedMessages](/graph/api/userteamwork-getallretainedtargetedmessages) function to retrieve retained targeted messages that were deleted by the sender but preserved by retention policies.
   - Use the [deleteTargetedMessage](/graph/api/userteamwork-deletetargetedmessage) action to delete a specific targeted message from a user's storage in a channel context.
