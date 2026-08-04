@@ -2,7 +2,7 @@
 title: "userTeamwork: deleteTargetedMessage"
 description: "Delete a specific targeted message from a channel context."
 author: "devjha-ms"
-ms.date: 02/16/2026
+ms.date: 08/04/2026
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
@@ -12,11 +12,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Delete a specific [targeted message](../resources/targetedchatmessage.md) from a channel context. Teams administrators can use this API to remove targeted messages by providing the message ID, team ID, and channel ID.
-
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -64,7 +60,6 @@ If successful, this action returns a `204 No Content` response code.
 
 The following example shows a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "userteamwork_deletetargetedmessage",
@@ -72,7 +67,7 @@ The following example shows a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/users/f47b5f54-6968-4706-a522-31e842b12345/teamwork/deleteTargetedMessage
+POST https://graph.microsoft.com/v1.0/users/f47b5f54-6968-4706-a522-31e842b12345/teamwork/deleteTargetedMessage
 Content-Type: application/json
 
 {
@@ -81,32 +76,6 @@ Content-Type: application/json
   "messageId": "1580849738240"
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/userteamwork-deletetargetedmessage-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/userteamwork-deletetargetedmessage-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/userteamwork-deletetargetedmessage-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/userteamwork-deletetargetedmessage-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/userteamwork-deletetargetedmessage-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/userteamwork-deletetargetedmessage-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 

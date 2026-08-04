@@ -3599,9 +3599,9 @@
           "resources": [
             "channel",
             "chat",
+            "deletedChat",
             "chatMessage",
             "pinnedChatMessageInfo",
-            "deletedChat",
             "targetedChatMessage",
             "team",
             "teamworkTag",

@@ -57,6 +57,13 @@ Added the **allowOnPremUpdateOfOnPremisesObjectIdentifierEnabled** property to t
  - Added the **isRegistrationRequired** and **capacity** properties to virtual events (for example, [virtualEvent](/graph/api/resources/virtualevent), [virtualEventTownhall](/graph/api/resources/virtualeventtownhall), and [virtualEventSession](/graph/api/resources/virtualeventsession)) to control registration requirements and expected attendance.
  - Added the [virtualEventTownhallRegistrationConfiguration](/graph/api/resources/virtualeventtownhallregistrationconfiguration) resource type and related methods to manage attendee registration for town halls.
 
+### Teamwork and communications | Messaging
+
+Added the [targetedChatMessage](/graph/api/resources/targetedchatmessage) resource type and related methods for managing targeted messages in Microsoft Teams. Targeted messages are visible only to specified recipients within group chats and channels.
+  - Use the [getAllTargetedMessages](/graph/api/userteamwork-getalltargetedmessages) function to retrieve all targeted messages sent to a user across all group chats and channels.
+  - Use the [getAllRetainedTargetedMessages](/graph/api/userteamwork-getallretainedtargetedmessages) function to retrieve retained targeted messages that were deleted by the sender but preserved by retention policies.
+  - Use the [deleteTargetedMessage](/graph/api/userteamwork-deletetargetedmessage) action to delete a specific targeted message from a user's storage in a channel context.
+
 ### Users
 
 - Added the `User.Create` permission as the least privileged permission to [create a user](/graph/api/user-post-users).

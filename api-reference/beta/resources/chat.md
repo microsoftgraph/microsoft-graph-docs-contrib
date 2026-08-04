@@ -116,7 +116,7 @@ Represents a chat that is a collection of [chatMessages](chatmessage.md) between
 | permissionGrants| [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection| A collection of permissions granted to apps for the chat.|
 | pinnedMessages | [pinnedChatMessageInfo](pinnedchatmessageinfo.md) collection | A collection of all the pinned messages in the chat. Nullable. |
 | tabs | [teamsTab](teamstab.md) collection | A collection of all the tabs in the chat. Nullable. |
-| targetedMessages | [targetedChatMessage](targetedchatmessage.md) collection | A collection of targeted messages in the chat that are visible only to specific users. Nullable. |
+| targetedMessages | [targetedChatMessage](targetedchatmessage.md) collection | A collection of targeted messages in the chat that are visible only to specific users. Nullable. You can't expand this relationship using `$expand`. Targeted messages can also be retrieved via the [userTeamwork: getAllTargetedMessages](../api/userteamwork-getalltargetedmessages.md) API. |
 
 ## JSON representation
 

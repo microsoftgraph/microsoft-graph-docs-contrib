@@ -3,6 +3,72 @@
     {
       "ChangeList": [
         {
+          "Id": "c01b88aa-0937-4d62-a7f3-91826312c21c",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "targetedMessages",
+          "ChangeType": "Addition",
+          "Description": "Added the **targetedMessages** relationship to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "c01b88aa-0937-4d62-a7f3-91826312c21c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "targetedChatMessage",
+          "ChangeType": "Addition",
+          "Description": "Added the [targetedChatMessage](https://learn.microsoft.com/en-us/graph/api/resources/targetedchatmessage?view=graph-rest-1.0) resource.",
+          "Target": "targetedChatMessage"
+        },
+        {
+          "Id": "c01b88aa-0937-4d62-a7f3-91826312c21c",
+          "ApiChange": "Method",
+          "ChangedApiName": "deleteTargetedMessage",
+          "ChangeType": "Addition",
+          "Description": "Added the [deleteTargetedMessage](https://learn.microsoft.com/en-us/graph/api/userteamwork-deletetargetedmessage?view=graph-rest-1.0) method to the [userteamwork](https://learn.microsoft.com/en-us/graph/api/resources/userteamwork?view=graph-rest-1.0) resource.",
+          "Target": "userTeamwork"
+        },
+        {
+          "Id": "c01b88aa-0937-4d62-a7f3-91826312c21c",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllRetainedTargetedMessages",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllRetainedTargetedMessages](https://learn.microsoft.com/en-us/graph/api/userteamwork-getallretainedtargetedmessages?view=graph-rest-1.0) method to the [userteamwork](https://learn.microsoft.com/en-us/graph/api/resources/userteamwork?view=graph-rest-1.0) resource.",
+          "Target": "userTeamwork"
+        },
+        {
+          "Id": "c01b88aa-0937-4d62-a7f3-91826312c21c",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllTargetedMessages",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllTargetedMessages](https://learn.microsoft.com/en-us/graph/api/userteamwork-getalltargetedmessages?view=graph-rest-1.0) method to the [userteamwork](https://learn.microsoft.com/en-us/graph/api/resources/userteamwork?view=graph-rest-1.0) resource.",
+          "Target": "userTeamwork"
+        },
+        {
+          "Id": "c01b88aa-0937-4d62-a7f3-91826312c21c",
+          "ApiChange": "Method",
+          "ChangedApiName": "chat",
+          "ChangeType": "Addition",
+          "Description": "Added the [Delete targetedChatMessage](https://learn.microsoft.com/en-us/graph/api/chat-delete-targetedmessages?view=graph-rest-1.0) method to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Target": "chat"
+        },
+        {
+          "Id": "c01b88aa-0937-4d62-a7f3-91826312c21c",
+          "ApiChange": "NavigationPropertyPath",
+          "ChangedApiName": "Org.OData.Capabilities.V1.ExpandRestrictions",
+          "ChangeType": "Addition",
+          "Description": "The **targetedMessages** relationship can't be expanded using `$expand`. Use the [getAllTargetedMessages](https://learn.microsoft.com/en-us/graph/api/userteamwork-getalltargetedmessages?view=graph-rest-1.0) API to get targeted messages.",
+          "Target": "chats"
+        }
+      ],
+      "Id": "c01b88aa-0937-4d62-a7f3-91826312c21c",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-08-04T04:51:35.6454742Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a64a38fa-ff9f-4d0f-9b62-da917b46f423",
           "ApiChange": "Resource",
           "ChangedApiName": "groupChatTeamsAppInstallationScopeInfo",
@@ -263,6 +329,14 @@
           "ChangeType": "Addition",
           "Description": "Added the [getAllTargetedMessages](https://learn.microsoft.com/graph/api/userteamwork-getalltargetedmessages?view=graph-rest-beta) method to the [userTeamwork](https://learn.microsoft.com/graph/api/resources/userteamwork?view=graph-rest-beta) resource.",
           "Target": "userTeamwork"
+        },
+        {
+          "Id": "4e6379bf-f90c-46c4-a4f8-f5336fcd31f6",
+          "ApiChange": "Method",
+          "ChangedApiName": "chat",
+          "ChangeType": "Addition",
+          "Description": "Added the [Delete targetedChatMessage](https://learn.microsoft.com/en-us/graph/api/chat-delete-targetedmessages?view=graph-rest-beta) method to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Target": "chat"
         }
       ],
       "Id": "4e6379bf-f90c-46c4-a4f8-f5336fcd31f6",
