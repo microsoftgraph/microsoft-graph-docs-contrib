@@ -41,7 +41,7 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range(address={address
 If successful, this method returns `200 OK` response code and [workbookRangeView](../resources/workbookrangeview.md) object in the response body.
 
 ## Example
-Here is an example of how to call this API.
+The following example shows how to call this API.
 ### Request
 The following example shows a request.
 
