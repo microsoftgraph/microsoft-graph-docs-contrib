@@ -14,14 +14,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Configuration defining the usage capability of a Verified ID credential
+Defines the usage capability of a Verified ID credential.
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |isEnabledForTestOnly|Boolean|Sets profile usage for evaluation (test-only) or production.|
-|purpose|verifiedIdUsageConfigurationPurpose|Sets the supported scenarios for a Verified ID profile. Currently only `recovery` is supported. The possible values are: `recovery`, `onboarding`, `all`, `unknownFutureValue`.|
+|purpose|verifiedIdUsageConfigurationPurpose|Sets the supported scenarios for a Verified ID profile. The possible values are: `recovery`, `onboarding`, `all`, `unknownFutureValue`, `verification`. Use the `Prefer: include-unknown-enum-members` request header to get the following value from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `verification`.|
 
 ## Relationships
 None.

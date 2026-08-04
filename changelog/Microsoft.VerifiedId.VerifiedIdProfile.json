@@ -1,5 +1,79 @@
-﻿{
+{
   "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "f7e5f8df-59e3-4ed0-be53-6e634d06ffbb",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "verifiedIdMethodType",
+          "ChangeType": "Addition",
+          "Description": "Added the **verifiedIdMethodType** enumeration type.",
+          "Target": "verifiedIdMethodType"
+        },
+        {
+          "Id": "f7e5f8df-59e3-4ed0-be53-6e634d06ffbb",
+          "ApiChange": "Member",
+          "ChangedApiName": "verification",
+          "ChangeType": "Addition",
+          "Description": "Added the `verification` member to the **verifiedIdUsageConfigurationPurpose** enumeration.",
+          "Target": "verifiedIdUsageConfigurationPurpose"
+        },
+        {
+          "Id": "f7e5f8df-59e3-4ed0-be53-6e634d06ffbb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mobileDriversLicenseConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [mobileDriversLicenseConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/mobiledriverslicenseconfiguration?view=graph-rest-beta) resource.",
+          "Target": "mobileDriversLicenseConfiguration"
+        },
+        {
+          "Id": "f7e5f8df-59e3-4ed0-be53-6e634d06ffbb",
+          "ApiChange": "Property",
+          "ChangedApiName": "manifestUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **manifestUrl** property to the [verifiedIdProfileConfiguration](https://learn.microsoft.com/graph/api/resources/verifiedidprofileconfiguration?view=graph-rest-beta) resource.",
+          "Target": "verifiedIdProfileConfiguration"
+        },
+        {
+          "Id": "f7e5f8df-59e3-4ed0-be53-6e634d06ffbb",
+          "ApiChange": "Property",
+          "ChangedApiName": "methodType",
+          "ChangeType": "Addition",
+          "Description": "Added the **methodType** property to the [verifiedIdProfileConfiguration](https://learn.microsoft.com/graph/api/resources/verifiedidprofileconfiguration?view=graph-rest-beta) resource.",
+          "Target": "verifiedIdProfileConfiguration"
+        },
+        {
+          "Id": "f7e5f8df-59e3-4ed0-be53-6e634d06ffbb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "verifiedIdSelfServiceIssuance",
+          "ChangeType": "Addition",
+          "Description": "Added the [verifiedIdSelfServiceIssuance](https://learn.microsoft.com/en-us/graph/api/resources/verifiedidselfserviceissuance?view=graph-rest-beta) resource.",
+          "Target": "verifiedIdSelfServiceIssuance"
+        },
+        {
+          "Id": "f7e5f8df-59e3-4ed0-be53-6e634d06ffbb",
+          "ApiChange": "Property",
+          "ChangedApiName": "mobileDriversLicenseConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **mobileDriversLicenseConfiguration** property to the [verifiedIdProfile](https://learn.microsoft.com/graph/api/resources/verifiedidprofile?view=graph-rest-beta) resource.",
+          "Target": "verifiedIdProfile"
+        },
+        {
+          "Id": "f7e5f8df-59e3-4ed0-be53-6e634d06ffbb",
+          "ApiChange": "Property",
+          "ChangedApiName": "selfServiceIssuance",
+          "ChangeType": "Addition",
+          "Description": "Added the **selfServiceIssuance** property to the [verifiedIdProfile](https://learn.microsoft.com/graph/api/resources/verifiedidprofile?view=graph-rest-beta) resource.",
+          "Target": "verifiedIdProfile"
+        }
+      ],
+      "Id": "f7e5f8df-59e3-4ed0-be53-6e634d06ffbb",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-08-03T16:49:56.8088212Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
     {
       "ChangeList": [
         {

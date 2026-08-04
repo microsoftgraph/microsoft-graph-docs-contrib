@@ -24,6 +24,8 @@ items:
     href: ../../api/plannerplan-movetocontainer.md
   - name: List plan buckets
     href: ../../api/plannerplan-list-buckets.md
+  - name: List plan goals
+    href: ../../api/plannerplan-list-goals.md
   - name: List plan tasks
     href: ../../api/plannerplan-list-tasks.md
   - name: Get delta
@@ -66,6 +68,14 @@ items:
     href: ../../api/plannerbucket-delete.md
   - name: Get delta
     href: ../../api/plannerbucket-delta.md
+- name: Planner goal
+  items:
+  - name: Planner goal
+    href: ../../resources/plannergoal.md
+  - name: Get goal
+    href: ../../api/plannergoal-get.md
+  - name: List goals
+    href: ../../api/plannerplan-list-goals.md
 - name: Planner history item
   items:
   - name: Planner history item
