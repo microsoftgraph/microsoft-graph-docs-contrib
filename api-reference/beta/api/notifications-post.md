@@ -94,7 +94,7 @@ Content-type: application/json
 ```
 
 ### Response
-Here's an example of the corresponding response.
+The following example shows the corresponding response.
 
 ```http
 HTTP/1.1 201
