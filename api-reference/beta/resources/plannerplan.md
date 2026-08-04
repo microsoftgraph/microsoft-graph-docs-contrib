@@ -14,24 +14,25 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a plan in Microsoft 365. Either a [group](group.md) or a [user](user.md) owns a plan. Plans contain a collection of [plannerTasks](plannertask.md). Plans can also have a collection of [plannerBuckets](plannerbucket.md). Each plan object has a [details](plannerplandetails.md) object that can contain more information about the plan. For more information about the relationships between groups, plans, and tasks, see [Planner](planner-overview.md).
+Represents a plan in Microsoft 365. Either a [group](../resources/group.md) or a [user](../resources/user.md) owns a plan. Plans contain a collection of [plannerTasks](../resources/plannertask.md). Plans can also have collections of [plannerBuckets](../resources/plannerbucket.md) and [plannerGoals](../resources/plannergoal.md). Each plan object has a [details](../resources/plannerplandetails.md) object that can contain more information about the plan. For more information about the relationships between groups, plans, and tasks, see [Planner](../resources/planner-overview.md).
 
 ## Methods
 
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
-|[Create](../api/planner-post-plans.md) | [plannerPlan](plannerplan.md) |Create a **plannerPlan** object.|
-|[Get](../api/plannerplan-get.md) | [plannerPlan](plannerplan.md) |Read properties and relationships of **plannerPlan** object.|
-|[Update](../api/plannerplan-update.md) | [plannerPlan](plannerplan.md)	|Update **plannerPlan** object. |
+|[Create](../api/planner-post-plans.md) | [plannerPlan](../resources/plannerplan.md) |Create a **plannerPlan** object.|
+|[Get](../api/plannerplan-get.md) | [plannerPlan](../resources/plannerplan.md) |Read properties and relationships of **plannerPlan** object.|
+|[Update](../api/plannerplan-update.md) | [plannerPlan](../resources/plannerplan.md)	|Update **plannerPlan** object. |
 |[Delete](../api/plannerplan-delete.md) | None | Delete **plannerPlan** object. |
-|[Archive plan](../api/plannerplan-archive.md) | [plannerPlan](plannerplan.md) | Archive a **plannerPlan** object.|
-|[Unarchive plan](../api/plannerplan-unarchive.md) | [plannerPlan](plannerplan.md) | Unarchive an archived **plannerPlan** object.|
+|[Archive plan](../api/plannerplan-archive.md) | [plannerPlan](../resources/plannerplan.md) | Archive a **plannerPlan** object.|
+|[Unarchive plan](../api/plannerplan-unarchive.md) | [plannerPlan](../resources/plannerplan.md) | Unarchive an archived **plannerPlan** object.|
 |[Move to container](../api/plannerplan-movetocontainer.md) | [plannerPlan](../resources/plannerplan.md) | Move a **plannerPlan** object from one **plannerPlanContainer** to another. |
-|[List plan buckets](../api/plannerplan-list-buckets.md) |[plannerBucket](plannerbucket.md) collection| Get a **plannerBucket** object collection.|
-|[List plan tasks](../api/plannerplan-list-tasks.md) |[plannerTask](plannertask.md) collection| Get a **plannerTask** object collection.|
-|[Get delta](../api/plannerplan-delta.md) | [plannerPlan](../resources/plannerplan.md) collection | Get newly created, updated, or deleted **plannerPlan** objects in either a **group** or a [plannerRoster](plannerroster.md) type container without having to perform a full read of the entire resource collection. |
+|[List plan buckets](../api/plannerplan-list-buckets.md) |[plannerBucket](../resources/plannerbucket.md) collection| Get a **plannerBucket** object collection.|
+|[List plan goals](../api/plannerplan-list-goals.md) |[plannerGoal](../resources/plannergoal.md) collection| Get the goals associated with the plan.|
+|[List plan tasks](../api/plannerplan-list-tasks.md) |[plannerTask](../resources/plannertask.md) collection| Get a **plannerTask** object collection.|
+|[Get delta](../api/plannerplan-delta.md) | [plannerPlan](../resources/plannerplan.md) collection | Get newly created, updated, or deleted **plannerPlan** objects in either a **group** or a [plannerRoster](../resources/plannerroster.md) type container without having to perform a full read of the entire resource collection. |
 |[Get usage rights](../api/plannerplan-getusagerights.md)|[planUsageRight](../resources/planusageright.md)|Get the usage rights for a specific [plan](../resources/plannerplan.md) based on its sensitivity label assignment and the requesting user's permissions.|
-|[List history items](../api/plannerplan-list-historyitems.md)|[plannerHistoryItem](plannerhistoryitem.md) collection|Get the [history](../resources/plannerhistoryitem.md) of changes made to tasks within a [plan](../resources/plannerplan.md).|
+|[List history items](../api/plannerplan-list-historyitems.md)|[plannerHistoryItem](../resources/plannerhistoryitem.md) collection|Get the [history](../resources/plannerhistoryitem.md) of changes made to tasks within a [plan](../resources/plannerplan.md).|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -52,10 +53,11 @@ Represents a plan in Microsoft 365. Either a [group](group.md) or a [user](user.
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|buckets|[plannerBucket](plannerbucket.md) collection| Collection of buckets in the plan. Read-only. Nullable.|
-|details|[plannerPlanDetails](plannerplandetails.md)| Extra details about the plan. Read-only. Nullable. |
-|historyItems|[plannerHistoryItem](plannerhistoryitem.md) collection| Collection of history items for entities in the plan. Read-only. Nullable. |
-|tasks|[plannerTask](plannertask.md) collection| Collection of tasks in the plan. Read-only. Nullable. |
+|buckets|[plannerBucket](../resources/plannerbucket.md) collection| Collection of buckets in the plan. Read-only. Nullable.|
+|details|[plannerPlanDetails](../resources/plannerplandetails.md)| Extra details about the plan. Read-only. Nullable. |
+|goals|[plannerGoal](../resources/plannergoal.md) collection| Collection of goals in the plan. Read-only. Nullable. |
+|historyItems|[plannerHistoryItem](../resources/plannerhistoryitem.md) collection| Collection of history items for entities in the plan. Read-only. Nullable. |
+|tasks|[plannerTask](../resources/plannertask.md) collection| Collection of tasks in the plan. Read-only. Nullable. |
 
 ## JSON representation
 

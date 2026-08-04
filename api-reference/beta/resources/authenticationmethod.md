@@ -35,6 +35,7 @@ This resource type is an abstract type that's inherited by the following derived
 + [windowsHelloForBusinessAuthenticationMethod](windowshelloforbusinessauthenticationmethod.md)
 + [platformCredentialAuthenticationMethod](platformcredentialauthenticationmethod.md)
 + [qrCodePinAuthenticationmethod](qrcodepinauthenticationmethod.md)
++ [resourceAccountKeyAuthenticationMethod](resourceaccountkeyauthenticationmethod.md)
 
 > [!IMPORTANT]
 > Listing users' authentication methods only returns methods supported on this API version and registered to the user. See [Microsoft Entra authentication methods API overview](authenticationmethods-overview.md) for a list of currently supported methods.

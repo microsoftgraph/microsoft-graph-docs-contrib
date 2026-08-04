@@ -53,6 +53,7 @@ Inherits from [entity](entity.md).
 |phoneMethods|[phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) collection|Represents the phone registered to a user for authentication. |
 |qrCodePinMethod|[qrCodePinAuthenticationMethod](../resources/qrcodepinauthenticationmethod.md)|Represents a QR code authentication method registered to a user for authentication.|
 |platformCredentialMethods|[platformCredentialAuthenticationMethod](../resources/platformcredentialauthenticationmethod.md) collection|Represents a platform credential instance registered to a user on Mac OS. |
+|resourceAccountKeyAuthenticationMethods|[resourceAccountKeyAuthenticationMethod](../resources/resourceaccountkeyauthenticationmethod.md) collection|Represents the resource account key credentials registered to a user for authentication on shared devices.|
 |softwareOathMethods|[softwareOathAuthenticationMethod](../resources/softwareoathauthenticationmethod.md) collection|The software OATH time-based one-time password (TOTP) applications registered to a user for authentication.|
 |temporaryAccessPassMethods|[temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) collection|Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.|
 |windowsHelloForBusinessMethods|[windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) collection|Represents the Windows Hello for Business authentication method registered to a user for authentication.|

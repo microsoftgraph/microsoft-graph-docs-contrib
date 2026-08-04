@@ -1631,6 +1631,10 @@
               "name": "Verified ID",
               "resources": [
                 "verifiedIdProfile"
+              ],
+              "complexTypes": [
+                "mobileDriversLicenseConfiguration",
+                "verifiedIdSelfServiceIssuance"
               ]
             },
             {
@@ -1647,6 +1651,7 @@
                 "passwordAuthenticationMethod",
                 "phoneAuthenticationMethod",
                 "platformCredentialAuthenticationMethod",
+                "resourceAccountKeyAuthenticationMethod",
                 "softwareOathAuthenticationMethod",
                 "temporaryAccessPassAuthenticationMethod",
                 "windowsHelloForBusinessAuthenticationMethod",
@@ -3264,6 +3269,7 @@
         "plannerPlan",
         "plannerTask",
         "plannerBucket",
+        "plannerGoal",
         "plannerHistoryItem",
         "plannerPlanDetails",
         "plannerRoster",

@@ -123,6 +123,7 @@ Content-length: 232
     "parentMailboxUrl": "https://graph.microsoft.com/beta/admin/exchange/mailboxes/MBX:e0643f21@a7809c93",
     "childFolderCount": 3,
     "totalItemCount": 58,
+    "wellKnownName": "inbox",
     "type": "IPF.Note"
 }
 ```
