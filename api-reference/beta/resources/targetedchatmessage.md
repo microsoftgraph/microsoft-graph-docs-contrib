@@ -28,8 +28,8 @@ Inherits from [chatMessage](../resources/chatmessage.md).
 |:---|:---|:---|
 |[Get all targeted messages](../api/userteamwork-getalltargetedmessages.md)|[targetedChatMessage](../resources/targetedchatmessage.md) collection|Get all [targeted messages](../resources/targetedchatmessage.md) sent to a specific user in group chats and channels.|
 |[Get all retained targeted messages](../api/userteamwork-getallretainedtargetedmessages.md)|[targetedChatMessage](../resources/targetedchatmessage.md) collection|Get all retained [targeted messages](../resources/targetedchatmessage.md) sent to a specific user in group chats and channels.|
-|[Delete targeted message for channel](../api/userteamwork-deletetargetedmessage.md)|None|Delete a specific [targeted message](../resources/targetedchatmessage.md) from a channel context.|
-|[Delete targeted message for chat](../api/chat-delete-targetedmessages.md)|None|Delete a specific [targeted message](../resources/targetedchatmessage.md) from a chat context. |
+|[Delete targeted message from channel](../api/userteamwork-deletetargetedmessage.md)|None|Delete a specific [targeted message](../resources/targetedchatmessage.md) from a channel context.|
+|[Delete targeted message from chat](../api/chat-delete-targetedmessages.md)|None|Delete a specific [targeted message](../resources/targetedchatmessage.md) from a chat context. |
 
 ## Properties
 |Property|Type|Description|
@@ -44,7 +44,7 @@ Inherits from [chatMessage](../resources/chatmessage.md).
 |eventDetail|[eventMessageDetail](../resources/eventmessagedetail.md)|Details about the event if this message represents a system event. Inherited from [chatMessage](../resources/chatmessage.md).|
 |from|[chatMessageFromIdentitySet](../resources/chatmessagefromidentityset.md)|Details about the sender of the targeted message. Inherited from [chatMessage](../resources/chatmessage.md).|
 |id|String|Unique identifier of the message. The message ID is only unique within the context of a single conversation (chat or channel) for a specific user. Inherited from [chatMessage](../resources/chatmessage.md).|
-|importance|chatMessageImportance|The importance of the message. The possible values are: `normal`, `high`, `urgent`. Inherited from [chatMessage](../resources/chatmessage.md).|
+|importance|chatMessageImportance|The importance of the message. The possible values are: `normal`, `high`, `urgent`, `unknownFutureValue`. Inherited from [chatMessage](../resources/chatmessage.md).|
 |lastEditedDateTime|DateTimeOffset|Date and time when the message was last edited. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is `2014-01-01T00:00:00Z`. Inherited from [chatMessage](../resources/chatmessage.md).|
 |lastModifiedDateTime|DateTimeOffset|Date and time when the message or any of its properties was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is `2014-01-01T00:00:00Z`. Inherited from [chatMessage](../resources/chatmessage.md).|
 |locale|String|The locale of the message as set by the client, formatted as `en-us`. Inherited from [chatMessage](../resources/chatmessage.md).|
@@ -53,7 +53,7 @@ Inherits from [chatMessage](../resources/chatmessage.md).
 |messageType|chatMessageType|The type of message. The possible values are: `message`, `chatEvent`, `typing`, `unknownFutureValue`, `systemEventMessage`. Use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `systemEventMessage`. Inherited from [chatMessage](../resources/chatmessage.md).|
 |onBehalfOf|[chatMessageFromIdentitySet](../resources/chatmessagefromidentityset.md)|Information about the user on whose behalf the message was sent. Inherited from [chatMessage](../resources/chatmessage.md).|
 |policyViolation|[chatMessagePolicyViolation](../resources/chatmessagepolicyviolation.md)|Information about policy violations applied to the message by data loss prevention (DLP) applications. Inherited from [chatMessage](../resources/chatmessage.md).|
-|reactions|[chatMessageReaction](../resources/chatmessagereaction.md) collection|The reactions applied to the message (for example, like, heart, laugh). Inherited from [chatMessage](../resources/chatmessage.md).|
+|reactions|[chatMessageReaction](../resources/chatmessagereaction.md) collection|The reactions applied to the message (for example, like, heart, and laugh). Inherited from [chatMessage](../resources/chatmessage.md).|
 |recipient|[identity](../resources/identity.md)|The intended recipient of the targeted message.|
 |replyToId|String|The ID of the parent message or root message of the thread. Inherited from [chatMessage](../resources/chatmessage.md).|
 |subject|String|The subject of the message. Inherited from [chatMessage](../resources/chatmessage.md).|

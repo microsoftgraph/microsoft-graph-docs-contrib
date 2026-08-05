@@ -779,6 +779,14 @@ items:
         href: ../../api/chat-post-pinnedmessages.md
       - name: Unpin message
         href: ../../api/chat-delete-pinnedmessages.md
+  - name: Deleted chat
+    items:
+    - name: Deleted chat
+      href: ../../resources/deletedchat.md
+    - name: Get
+      href: ../../api/deletedchat-get.md
+    - name: Undo delete
+      href: ../../api/deletedchat-undodelete.md
   - name: Chat message
     items:
     - name: Chat message
@@ -865,14 +873,18 @@ items:
       href: ../../api/chat-post-pinnedmessages.md
     - name: Unpin message
       href: ../../api/chat-delete-pinnedmessages.md
-  - name: Deleted chat
+  - name: Targeted chat message
     items:
-    - name: Deleted chat
-      href: ../../resources/deletedchat.md
-    - name: Get
-      href: ../../api/deletedchat-get.md
-    - name: Undo delete
-      href: ../../api/deletedchat-undodelete.md
+    - name: Targeted chat message
+      href: ../../resources/targetedchatmessage.md
+    - name: Get all targeted messages
+      href: ../../api/userteamwork-getalltargetedmessages.md
+    - name: Get all retained targeted messages
+      href: ../../api/userteamwork-getallretainedtargetedmessages.md
+    - name: Delete targeted message from channel
+      href: ../../api/userteamwork-deletetargetedmessage.md
+    - name: Delete targeted message from chat
+      href: ../../api/chat-delete-targetedmessages.md
   - name: Team
     items:
     - name: Team
@@ -1001,6 +1013,12 @@ items:
         href: ../../resources/userteamwork.md
       - name: Get
         href: ../../api/userteamwork-get.md
+      - name: Get all targeted messages
+        href: ../../api/userteamwork-getalltargetedmessages.md
+      - name: Get all retained targeted messages
+        href: ../../api/userteamwork-getallretainedtargetedmessages.md
+      - name: Delete targeted message
+        href: ../../api/userteamwork-deletetargetedmessage.md
 - name: Shift management
   items:
   - name: Day note

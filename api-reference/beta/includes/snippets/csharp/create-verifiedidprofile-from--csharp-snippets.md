@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // Dependencies
 using Microsoft.Graph.Beta.Models;
+using Microsoft.Kiota.Abstractions.Serialization;
 
 var requestBody = new VerifiedIdProfile
 {
@@ -35,6 +36,15 @@ var requestBody = new VerifiedIdProfile
 				VerifiedIdClaim = "vc.credentialSubject.lastName",
 			},
 		},
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"methodType" , "tenantCustomCredential"
+			},
+			{
+				"manifestUrl" , "https://verifiedid.contoso.com/manifest"
+			},
+		},
 	},
 	FaceCheckConfiguration = new FaceCheckConfiguration
 	{
@@ -47,6 +57,34 @@ var requestBody = new VerifiedIdProfile
 		{
 			IsEnabledForTestOnly = true,
 			Purpose = VerifiedIdUsageConfigurationPurpose.Recovery,
+		},
+	},
+	AdditionalData = new Dictionary<string, object>
+	{
+		{
+			"mobileDriversLicenseConfiguration" , new UntypedObject(new Dictionary<string, UntypedNode>
+			{
+				{
+					"acceptedRegions", new UntypedArray(new List<UntypedNode>
+					{
+						new UntypedString("region-code"),
+					})
+				},
+				{
+					"documentStandard", new UntypedString("document-standard")
+				},
+			})
+		},
+		{
+			"selfServiceIssuance" , new UntypedObject(new Dictionary<string, UntypedNode>
+			{
+				{
+					"isEnabled", new UntypedBoolean(true)
+				},
+				{
+					"issuanceUrl", new UntypedString("https://verifiedid.contoso.com/issue")
+				},
+			})
 		},
 	},
 };

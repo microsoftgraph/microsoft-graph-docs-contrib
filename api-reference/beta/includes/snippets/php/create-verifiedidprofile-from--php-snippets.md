@@ -39,6 +39,11 @@ $claimBindingsClaimBinding2->setVerifiedIdClaim('vc.credentialSubject.lastName')
 $claimBindingsArray []= $claimBindingsClaimBinding2;
 $verifiedIdProfileConfiguration->setClaimBindings($claimBindingsArray);
 
+$additionalData = [
+'methodType' => 'tenantCustomCredential',
+'manifestUrl' => 'https://verifiedid.contoso.com/manifest',
+];
+$verifiedIdProfileConfiguration->setAdditionalData($additionalData);
 $requestBody->setVerifiedIdProfileConfiguration($verifiedIdProfileConfiguration);
 $faceCheckConfiguration = new FaceCheckConfiguration();
 $faceCheckConfiguration->setIsEnabled(true);
@@ -46,10 +51,22 @@ $faceCheckConfiguration->setSourcePhotoClaimName('portrait');
 $requestBody->setFaceCheckConfiguration($faceCheckConfiguration);
 $verifiedIdUsageConfigurationsVerifiedIdUsageConfiguration1 = new VerifiedIdUsageConfiguration();
 $verifiedIdUsageConfigurationsVerifiedIdUsageConfiguration1->setIsEnabledForTestOnly(true);
-$verifiedIdUsageConfigurationsVerifiedIdUsageConfiguration1->setPurpose(new VerifiedIdUsageConfigurationPurpose('recovery'));
+$verifiedIdUsageConfigurationsVerifiedIdUsageConfiguration1->setPurpose(new VerifiedIdUsageConfigurationPurpose('verification'));
 $verifiedIdUsageConfigurationsArray []= $verifiedIdUsageConfigurationsVerifiedIdUsageConfiguration1;
 $requestBody->setVerifiedIdUsageConfigurations($verifiedIdUsageConfigurationsArray);
 
+$additionalData = [
+'mobileDriversLicenseConfiguration' => [
+'acceptedRegions' => [
+'region-code', ],
+'documentStandard' => 'document-standard',
+],
+'selfServiceIssuance' => [
+'isEnabled' => true,
+'issuanceUrl' => 'https://verifiedid.contoso.com/issue',
+],
+];
+$requestBody->setAdditionalData($additionalData);
 
 $result = $graphServiceClient->identity()->verifiedId()->profiles()->post($requestBody)->wait();
 

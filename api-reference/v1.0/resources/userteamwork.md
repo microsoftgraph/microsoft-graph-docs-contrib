@@ -19,6 +19,9 @@ Represents a container for the range of Microsoft Teams functionalities that are
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get](../api/userteamwork-get.md)|[userTeamwork](../resources/userteamwork.md)|Get userTeamwork settings for the specified [user](../resources/user.md), which includes the Microsoft Teams region and the locale chosen by the user.|
+|[Get all targeted messages](../api/userteamwork-getalltargetedmessages.md)|[targetedChatMessage](../resources/targetedchatmessage.md) collection|Get all [targeted messages](../resources/targetedchatmessage.md) sent to a specific user in group chats and channels.|
+|[Get all retained targeted messages](../api/userteamwork-getallretainedtargetedmessages.md)|[targetedChatMessage](../resources/targetedchatmessage.md) collection|Get all retained [targeted messages](../resources/targetedchatmessage.md) sent to a specific user in group chats and channels.|
+|[Delete targeted message](../api/userteamwork-deletetargetedmessage.md)|None|Delete a specific [targeted message](../resources/targetedchatmessage.md) from a channel context.|
 
 ## Properties
 

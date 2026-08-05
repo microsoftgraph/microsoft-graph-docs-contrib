@@ -2356,6 +2356,15 @@ Possible values for user account types (group membership), per Windows definitio
 | unknownFutureValue |
 | systemEventMessage |
 
+### chatMessageImportance values
+
+| Member |
+| ------ |
+| normal |
+| high |
+| urgent |
+| unknownFutureValue |
+
 ### chatMessagePolicyViolationDlpActionType values
 
 | Value |

@@ -11,7 +11,7 @@ from kiota_abstractions.base_request_configuration import RequestConfiguration
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 query_params = FoldersRequestBuilder.FoldersRequestBuilderGetQueryParameters(
 		filter = "type eq 'IPF.Appointment'",
-		select = ["displayName","type"],
+		select = ["displayName","parentMailboxUrl","type","wellKnownName"],
 		top = 5,
 )
 

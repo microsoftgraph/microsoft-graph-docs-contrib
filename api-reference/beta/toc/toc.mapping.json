@@ -3599,9 +3599,9 @@
           "resources": [
             "channel",
             "chat",
+            "deletedChat",
             "chatMessage",
             "pinnedChatMessageInfo",
-            "deletedChat",
             "targetedChatMessage",
             "team",
             "teamworkTag",
@@ -3770,6 +3770,7 @@
           "childNodes": [
             {
               "name": "Microsoft 365 capabilities",
+              "overview": "../../resources/m365-cross-tenant-access-policy-overview.md",
               "resources": [
                 "crossTenantCalendarAvailabilityBasic",
                 "crossTenantCalendarAvailabilityLimitedDetails",
