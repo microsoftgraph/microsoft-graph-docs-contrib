@@ -68,7 +68,7 @@ If successful, this method returns a `200 OK` response code and [group](../resou
 
 #### Request
 
-Here's an example  of a GET request.
+The following example shows a GET request.
 
 # [HTTP](#tab/http)
 
@@ -114,7 +114,7 @@ GET https://graph.microsoft.com/beta/groups/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4
 
 #### Response
 
-Here's an example  of the response. It includes only the default properties.
+The following example shows the response. It includes only the default properties.
 
 > **Note:** The response object shown here might be shortened for readability. All the default properties are returned in an actual call.
 
@@ -184,7 +184,7 @@ Content-type: application/json
 
 #### Request
 
-Here's an example  of a GET request.
+The following example shows a GET request.
 
 # [HTTP](#tab/http)
 
@@ -230,7 +230,7 @@ GET https://graph.microsoft.com/beta/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd
 
 #### Response
 
-Here's an example  of the response that includes the requested nondefault properties.
+The following example shows the response that includes the requested nondefault properties.
 
 <!-- {
   "blockType": "response",

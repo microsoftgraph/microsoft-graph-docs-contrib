@@ -46,7 +46,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}
 If successful, this method returns `200 OK` response code. It doesn't return anything in the response body.
 
 ## Example
-Here's an example of how to call this API.
+The following example shows how to call this API.
 ### Request
 The following example shows a request.
 
