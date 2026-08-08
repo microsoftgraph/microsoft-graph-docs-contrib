@@ -127,11 +127,17 @@ Content-type: application/json
 {
   "value": [
     {
-      "name": "name-value",
-      "color": {
-      },
-      "changeKey": "changeKey-value",
-      "id": "id-value"
+      "id": "AAMkADYCQM0GfRAAAcrRD-AAA=",
+      "name": "Marketing calendar",
+      "color": "auto",
+      "changeKey": "4xTfgHLeDkOqYVAkDNBn0QAAHKl46A==",
+      "canShare": true,
+      "canViewPrivateItems": true,
+      "canEdit": true,
+      "owner": {
+        "name": "Adele Vance",
+        "address": "adelev@contoso.com"
+      }
     }
   ]
 }
