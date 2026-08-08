@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "10cda337-0c4a-42dc-99ed-c5fc73a4a8e6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "guestSponsorTrigger",
+          "ChangeType": "Addition",
+          "Description": "Added the [guestSponsorTrigger](https://learn.microsoft.com/en-us/graph/api/resources/identitygovernance-guestsponsortrigger?view=graph-rest-beta) resource.",
+          "Target": "guestSponsorTrigger"
+        }
+      ],
+      "Id": "10cda337-0c4a-42dc-99ed-c5fc73a4a8e6",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-07-08T18:45:29.2658039Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "75c28233-1a3c-4287-8661-86d5ba6429e0",
           "ApiChange": "Member",
           "ChangedApiName": "quarantined",
@@ -1790,7 +1808,7 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Governance"
     },
-     {
+    {
       "ChangeList": [
         {
           "Id": "0955ba80-0bb6-47da-a37c-006dd0df80a6",
@@ -1924,7 +1942,7 @@
           "Description": "Added the [activationScope](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-activationScope?view=graph-rest-beta) resource.",
           "Target": "activationScope"
         },
-	{
+        {
           "Id": "07fd25a4-9a54-44e0-9c8e-9ca34e24bc1f",
           "ApiChange": "Resource",
           "ChangedApiName": "activateGroupScope",
@@ -1948,7 +1966,7 @@
           "Description": "Added the [activateRunScope](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance-activateRunScope?view=graph-rest-beta) resource.",
           "Target": "activateRunScope"
         }
-  ],
+      ],
       "Id": "07fd25a4-9a54-44e0-9c8e-9ca34e24bc1f",
       "Cloud": "Prod",
       "Version": "beta",
@@ -1974,7 +1992,7 @@
           "Description": "Added the **activatedWithScope** member to the **workflowExecutionType** enumeration.",
           "Target": "workflowExecutionType"
         },
-         {
+        {
           "Id": "4688a713-d9d5-4db3-9894-aafdcbe17694",
           "ApiChange": "Method",
           "ChangedApiName": "activateWithScope",
