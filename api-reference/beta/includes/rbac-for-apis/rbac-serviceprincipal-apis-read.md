@@ -1,11 +1,12 @@
 ---
 author: Jackson-Woods
 ms.topic: include
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1023
 ---
 
 > [!IMPORTANT]
-> For delegated access using work or school accounts where the signed-in user is acting on another user, they must be assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role that grants the permissions required for this operation. This operation supports the following built-in roles, which provide only the least privilege necessary:
-> - A non-admin member or guest user with default user permissions
+> For delegated access using work or school accounts, a non-admin member or guest user can perform this operation with default user permissions. A signed-in user can also perform this operation if they're assigned a supported [Microsoft Entra role](/entra/identity/role-based-access-control/permissions-reference?toc=%2Fgraph%2Ftoc.json) or a custom role that grants the permissions required for this operation. The following built-in roles are supported:
 > - Application Developer - read properties of service principals they own
 > - Directory Readers - read standard properties
 > - Global Reader
