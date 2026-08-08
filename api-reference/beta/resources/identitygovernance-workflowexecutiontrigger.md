@@ -20,6 +20,7 @@ The derived types of this abstract object are configured in the **trigger** prop
 + [timeBasedAttributeTrigger](../resources/identitygovernance-timebasedattributetrigger.md)
 + [attributeChangeTrigger](../resources/identitygovernance-attributechangetrigger.md)
 + [membershipChangeTrigger](../resources/identitygovernance-membershipchangetrigger.md)
++ [guestSponsorTrigger](../resources/identitygovernance-guestsponsortrigger.md)
 
 ## Properties
 
