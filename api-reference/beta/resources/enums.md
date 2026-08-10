@@ -6184,3 +6184,29 @@ Possible values for user account types (group membership), per Windows definitio
 |appliedSuccessfullyButObjectNotFound|
 |applyNotSupported|
 |unknownFutureValue|
+
+### mlClassificationMatchTolerance values
+
+|Member|
+|:---|
+|exact|
+|near|
+
+### sensitiveTypeScope values
+
+|Member|
+|:---|
+|fullDocument|
+|partialDocument|
+
+### mipWorkloads values
+
+|Member|
+|:---|
+|endpointDevices|
+|exchange|
+|oneDriveForBusiness|
+|sharePoint|
+|teams|
+|coldCrawl|
+|applications|

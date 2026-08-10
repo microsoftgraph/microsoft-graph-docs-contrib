@@ -2898,7 +2898,8 @@
             "contentActivity",
             "microsoft.graph.security.sensitivityLabel",
             "tenantDataSecurityAndGovernance",
-            "userDataSecurityAndGovernance"
+            "userDataSecurityAndGovernance",
+            "textClassificationRequest"
           ],
           "complexTypes": [
             "aiAgentInfo",
@@ -2911,12 +2912,14 @@
             "classifcationErrorBase",
             "classificationError",
             "classificationInnerError",
+            "classificationRequestContentMetaData",
             "computeRightsAndInheritanceResult",
             "contentActivityMetadata",
             "contentBase",
             "customMetadataDictionary",
             "deviceMetadata",
             "dlpActionInfo",
+            "embeddingInput",
             "groupScope",
             "integratedApplicationMetadata",
             "labelActionBase",

@@ -129,6 +129,10 @@ Added the **sponsorOf** relationship to the [user](/graph/api/resources/user?vie
 - Added the [alert: moveAlerts](/graph/api/security-alert-movealerts) and [incident: mergeIncidents](/graph/api/security-incident-mergeincidents) actions to support moving alerts and merging incidents in Microsoft Defender.
 - Added the [correlationReason](/graph/api/resources/security-correlationreason) enumeration and [mergeResponse](/graph/api/resources/security-mergeresponse) resource type.
 
+### Security | Data security and compliance
+
+Added the [embeddingInput](/graph/api/resources/embeddinginput?view=graph-rest-beta&preserve-view=true) resource type and the **embeddings** property on the [textClassificationRequest](/graph/api/resources/textclassificationrequest?view=graph-rest-beta&preserve-view=true) resource, so a caller can supply precomputed embedding vectors when classifying text and let the service skip recomputing them.
+
 ### Security | eDiscovery
 
 Added the `cloudNativeHtmlConversion` member to the [additionalDataOptions](/graph/api/resources/security-ediscoveryaddtoreviewsetoperation#additionaldataoptions-values) enumeration.
