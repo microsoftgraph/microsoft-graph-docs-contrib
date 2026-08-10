@@ -1108,6 +1108,17 @@ Namespace: microsoft.graph
 | unknownFutureValue |
 | strictLocation |
 
+### contentModality values
+
+| Member |
+| ------------------ |
+| audio |
+| video |
+| image |
+| text |
+| multimodal |
+| unknownFutureValue |
+
 ### msiType values
 
 | Member |
@@ -1674,6 +1685,15 @@ Namespace: microsoft.graph
 | officePhone |
 | microsoftAuthenticatorPush |
 | softwareOneTimePasscode |
+| unknownFutureValue |
+
+### detectionSeverity values
+
+| Member |
+| ------------------ |
+| low |
+| medium |
+| high |
 | unknownFutureValue |
 
 ### clientCredentialType values

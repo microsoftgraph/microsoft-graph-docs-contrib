@@ -3454,6 +3454,15 @@
                 "contentSharingSession",
                 "participant",
                 "addLargeGalleryViewOperation"
+              ],
+              "complexTypes": [
+                "audioMetadata",
+                "mediaMetadata",
+                "mediaSegment",
+                "streamingMetadata",
+                "syntheticMediaDetectionDetail",
+                "syntheticMediaDetectionInfo",
+                "videoMetadata"
               ]
             },
             {

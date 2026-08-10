@@ -147,6 +147,11 @@ Added the [getSharePointApiUsage](/graph/api/reportroot-getsharepointapiusage?vi
 
 ### Tasks and plans
 
+Added the [plannerHistoryItem](/graph/api/resources/plannerhistoryitem?view=graph-rest-beta&preserve-view=true) resource type and [List historyItems](/graph/api/plannerplan-list-historyitems?view=graph-rest-beta&preserve-view=true) method to audit task changes within a Planner plan. Track when tasks are created, updated, deleted, or moved, and filter by **occurredDateTime** to retrieve changes within specific time ranges.
+
+### Teamwork and communications | Calls and online meetings
+
+Detect and report synthetic (AI-generated) media in meeting calls using the [reportSyntheticMedia](/graph/api/participant-reportsyntheticmedia?view=graph-rest-beta&preserve-view=true) method on the [participant](/graph/api/resources/participant?view=graph-rest-beta&preserve-view=true) resource. Certified detection bots can analyze audio, video, or multimodal content in real time and report detections with confidence scores, severity levels, and detailed metadata. When a detection is reported, the service populates the **syntheticMediaDetection** property on the participant with a [syntheticMediaDetectionInfo](/graph/api/resources/syntheticmediadetectioninfo?view=graph-rest-beta&preserve-view=true) object, allowing all meeting participants to see and respond to the detection through roster updates. This capability helps organizations identify and mitigate risks from deepfake media, voice cloning, and other AI-generated content in collaborative scenarios.
 - Added the [plannerHistoryItem](/graph/api/resources/plannerhistoryitem?view=graph-rest-beta&preserve-view=true) resource type and [List historyItems](/graph/api/plannerplan-list-historyitems?view=graph-rest-beta&preserve-view=true) method to audit task changes within a Planner plan. Track when tasks are created, updated, deleted, or moved, and filter by **occurredDateTime** to retrieve changes within specific time ranges.
 - Added the [plannerGoal](/graph/api/resources/plannergoal?view=graph-rest-beta&preserve-view=true) resource type and related read methods for viewing goals in a Planner plan and understanding which goals are associated with each task.
 
