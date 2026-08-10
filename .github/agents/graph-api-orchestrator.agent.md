@@ -14,7 +14,7 @@ This orchestrator supports:
 - Review of generated Microsoft Graph API documentation in PR context
 - End-to-end generate + review flow
 
-This orchestrator does not perform scenario-based authoring, lifecycle editing, or general cleanup outside the capabilities explicitly covered by the two subagents.
+This orchestrator doesn't perform scenario-based authoring, lifecycle editing, or general cleanup outside the capabilities explicitly covered by the two subagents.
 
 ## Required inputs
 
