@@ -16,6 +16,8 @@ Namespace: microsoft.graph.security.caseManagement
 
 Get the [statusDefinition](../resources/security-casemanagement-statusdefinition.md) objects that make up the allowed status tree for a [caseTypeConfiguration](../resources/security-casemanagement-casetypeconfiguration.md). Each top-level status carries its inline custom statuses in the **customStatuses** property.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
