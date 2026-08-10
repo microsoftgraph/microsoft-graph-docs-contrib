@@ -51,6 +51,7 @@ Added the **allowOnPremUpdateOfOnPremisesObjectIdentifierEnabled** property to t
   - **uploadSessions** navigation property on [accessPackageResource](/graph/api/resources/accesspackageresource)
   - [customDataProvidedResourceUploadStatus](/graph/api/resources/enums#customdataprovidedresourceuploadstatus-values) enumeration
 
+Added support for user-centric (catalog-scope) access reviews through the **unified** relationship on the [accessReviewSet](/graph/api/resources/accessreviewset) resource. Use it to create and manage reviews that evaluate a principal's access across all groups and applications in an entitlement management catalog from a single review, and to accept recommendations or record decisions in bulk within a review stage.
 ### Teamwork and communications | Calls and online meetings
 
  - Added the **meetingType** and **cloudVideoInteropInfo** properties to the [onlineMeetingBase](/graph/api/resources/onlinemeetingbase) resource to help determine the type of an online meeting and retrieve Cloud Video Interop settings.

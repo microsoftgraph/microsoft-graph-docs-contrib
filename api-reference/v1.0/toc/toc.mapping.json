@@ -865,7 +865,8 @@
                 "accessReviewStage",
                 "accessReviewInstanceDecisionItem",
                 "accessReviewHistoryDefinition",
-                "accessReviewHistoryInstance"
+                "accessReviewHistoryInstance",
+                "unifiedRoot"
               ]
             },
             {

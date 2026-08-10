@@ -3,6 +3,96 @@
     {
       "ChangeList": [
         {
+          "Id": "ec61b0bf-2b95-46b9-93a9-da0086695f62",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRoot",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoot](https://learn.microsoft.com/graph/api/resources/unifiedroot) resource type to group the unified (vNext) access review collections under the `accessReviews/unified` path segment.",
+          "Target": "unifiedRoot"
+        },
+        {
+          "Id": "ec61b0bf-2b95-46b9-93a9-da0086695f62",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "unified",
+          "ChangeType": "Addition",
+          "Description": "Added the **unified** relationship to the [accessReviewSet](https://learn.microsoft.com/graph/api/resources/accessreviewset) resource as the entry point for the unified (vNext) access reviews API surface, routed through the dedicated `accessReviews/unified` path segment.",
+          "Target": "accessReviewSet"
+        },
+        {
+          "Id": "ec61b0bf-2b95-46b9-93a9-da0086695f62",
+          "ApiChange": "Method",
+          "ChangedApiName": "listDefinitions",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoot: list definitions](https://learn.microsoft.com/graph/api/unifiedroot-list-definitions) method to retrieve user-centric (catalog-scope) [accessReviewScheduleDefinition](https://learn.microsoft.com/graph/api/resources/accessreviewscheduledefinition) objects through the unified route.",
+          "Target": "unifiedRoot"
+        },
+        {
+          "Id": "ec61b0bf-2b95-46b9-93a9-da0086695f62",
+          "ApiChange": "Method",
+          "ChangedApiName": "postDefinitions",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoot: create definition](https://learn.microsoft.com/graph/api/unifiedroot-post-definitions) method to create a new user-centric (catalog-scope) [accessReviewScheduleDefinition](https://learn.microsoft.com/graph/api/resources/accessreviewscheduledefinition) object through the unified route.",
+          "Target": "unifiedRoot"
+        },
+        {
+          "Id": "ec61b0bf-2b95-46b9-93a9-da0086695f62",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "decisions",
+          "ChangeType": "Addition",
+          "Description": "Added the **decisions** relationship to the [unifiedRoot](https://learn.microsoft.com/graph/api/resources/unifiedroot) resource to list the [accessReviewInstanceDecisionItem](https://learn.microsoft.com/graph/api/resources/accessreviewinstancedecisionitem) objects across the unified (vNext) access reviews, routed through the `accessReviews/unified/decisions` path segment.",
+          "Target": "unifiedRoot"
+        },
+        {
+          "Id": "ec61b0bf-2b95-46b9-93a9-da0086695f62",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "definitions",
+          "ChangeType": "Addition",
+          "Description": "Added the **definitions** relationship to the [unifiedRoot](https://learn.microsoft.com/graph/api/resources/unifiedroot) resource to list the [accessReviewScheduleDefinition](https://learn.microsoft.com/graph/api/resources/accessreviewscheduledefinition) objects across the unified (vNext) access reviews, routed through the `accessReviews/unified/definitions` path segment.",
+          "Target": "unifiedRoot"
+        },
+        {
+          "Id": "ec61b0bf-2b95-46b9-93a9-da0086695f62",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "instances",
+          "ChangeType": "Addition",
+          "Description": "Added the **instances** relationship to the [unifiedRoot](https://learn.microsoft.com/graph/api/resources/unifiedroot) resource to list the [accessReviewInstance](https://learn.microsoft.com/graph/api/resources/accessreviewinstance) objects across the unified (vNext) access reviews, routed through the `accessReviews/unified/instances` path segment.",
+          "Target": "unifiedRoot"
+        },
+        {
+          "Id": "ec61b0bf-2b95-46b9-93a9-da0086695f62",
+          "ApiChange": "Method",
+          "ChangedApiName": "acceptRecommendations",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewStage: acceptRecommendations](https://learn.microsoft.com/graph/api/accessreviewstage-acceptrecommendations) method to accept the recommendations on all decision items that haven't been reviewed within a single [accessReviewStage](https://learn.microsoft.com/graph/api/resources/accessreviewstage).",
+          "Target": "accessReviewStage"
+        },
+        {
+          "Id": "ec61b0bf-2b95-46b9-93a9-da0086695f62",
+          "ApiChange": "Method",
+          "ChangedApiName": "batchRecordDecisions",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewStage: batchRecordDecisions](https://learn.microsoft.com/graph/api/accessreviewstage-batchrecorddecisions) method to record decisions in bulk for all decision items within a single [accessReviewStage](https://learn.microsoft.com/graph/api/resources/accessreviewstage).",
+          "Target": "accessReviewStage"
+        },
+        {
+          "Id": "ec61b0bf-2b95-46b9-93a9-da0086695f62",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessReviewInstanceDecisionItemAccessPackageResource",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessReviewInstanceDecisionItemAccessPackageResource](https://learn.microsoft.com/graph/api/resources/accessreviewinstancedecisionitemaccesspackageresource) resource type to represent an access package for which access is reviewed through an [accessReviewInstanceDecisionItem](https://learn.microsoft.com/graph/api/resources/accessreviewinstancedecisionitem).",
+          "Target": "accessReviewInstanceDecisionItemAccessPackageResource"
+        }
+      ],
+      "Id": "ec61b0bf-2b95-46b9-93a9-da0086695f62",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-08-10T00:00:00.0000000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "891dd626-981e-4ed6-869d-6491d883f388",
           "ApiChange": "Resource",
           "ChangedApiName": "unifiedRoot",

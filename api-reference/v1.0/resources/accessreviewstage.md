@@ -5,7 +5,7 @@ author: "isabelleatmsft"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
-ms.date: 05/23/2024
+ms.date: 07/30/2026
 ---
 
 # accessReviewStage resource type
@@ -23,6 +23,8 @@ Every **accessReviewStage** contains a list of [decision items](accessreviewinst
 |[Get](../api/accessreviewstage-get.md)|[accessReviewStage](../resources/accessreviewstage.md)|Read the properties and relationships of an [accessReviewStage](../resources/accessreviewstage.md) object.|
 |[Update](../api/accessreviewstage-update.md)|[accessReviewStage](../resources/accessreviewstage.md)|Update the properties of an [accessReviewStage](../resources/accessreviewstage.md) object.|
 |[Stop](../api/accessreviewstage-stop.md)|None|	Manually stop an accessReviewStage.|
+|[Accept recommendations](../api/accessreviewstage-acceptrecommendations.md)|None|Accept the recommendations on all decision items that haven't been reviewed within a single accessReviewStage.|
+|[Batch record decisions](../api/accessreviewstage-batchrecorddecisions.md)|None|Record decisions in bulk for all decision items within a single accessReviewStage.|
 |[Filter by current user](../api/accessreviewstage-filterbycurrentuser.md)|[accessReviewStage](../resources/accessreviewstage.md) collection|Returns all stages on a given [accessReviewInstance](accessReviewInstance.md)  for which the calling user is a reviewer.|
 |[List decisions from a stage of an instance](../api/accessreviewstage-list-decisions.md)|[accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) collection|Get the decisions made in an accessReviewStage.|
 
