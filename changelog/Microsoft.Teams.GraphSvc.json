@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "6241222f-bd41-4e48-ba36-83cbfd6e1066",
+          "ApiChange": "Method",
+          "ChangedApiName": "reorder",
+          "ChangeType": "Addition",
+          "Description": "Added the [reorder](https://learn.microsoft.com/en-us/graph/api/teamworksection-reorder?view=graph-rest-beta) method to the [teamworkSection](https://learn.microsoft.com/en-us/graph/api/resources/teamworksection?view=graph-rest-beta) resource.",
+          "Target": "teamworkSection"
+        },
+        {
+          "Id": "6241222f-bd41-4e48-ba36-83cbfd6e1066",
+          "ApiChange": "Method",
+          "ChangedApiName": "reorder",
+          "ChangeType": "Addition",
+          "Description": "Added the [reorder](https://learn.microsoft.com/en-us/graph/api/teamworksectionitem-reorder?view=graph-rest-beta) method to the [teamworkSectionItem](https://learn.microsoft.com/en-us/graph/api/resources/teamworksectionitem?view=graph-rest-beta) resource.",
+          "Target": "teamworkSectionItem"
+        }
+      ],
+      "Id": "6241222f-bd41-4e48-ba36-83cbfd6e1066",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-08-10T01:54:44.9863259Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Messaging"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c01b88aa-0937-4d62-a7f3-91826312c21c",
           "ApiChange": "Relationship",
           "ChangedApiName": "targetedMessages",
