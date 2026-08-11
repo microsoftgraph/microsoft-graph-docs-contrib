@@ -128,6 +128,7 @@ Added the **sponsorOf** relationship to the [user](/graph/api/resources/user?vie
 
 - Added the [guestSponsorTrigger](/graph/api/resources/identitygovernance-guestsponsortrigger?view=graph-rest-beta&preserve-view=true) resource type to initiate lifecycle workflows when guest users have fewer than the required number of sponsors.
 - Added support for automatically quarantining Lifecycle Workflows to stop a workflow from processing more users than expected. Configure thresholds using the **quarantineConfiguration** property on [lifecycleManagementSettings](/graph/api/resources/identitygovernance-lifecyclemanagementsettings?view=graph-rest-beta&preserve-view=true), and clear a quarantine by calling [clearQuarantine](/graph/api/identitygovernance-workflow-clearquarantine?view=graph-rest-beta&preserve-view=true).
+- Added the **parameters** property to the [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true) resource, typed as the new [accessPackageAssignmentRequestParameters](/graph/api/resources/accesspackageassignmentrequestparameters?view=graph-rest-beta&preserve-view=true) complex type, to bypass the approval requirement configured on the access package policy when creating an assignment request.
 
 ### Identity and access | Identity and sign-in
 

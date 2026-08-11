@@ -1419,6 +1419,9 @@
                 "insiderRiskyUserApproval",
                 "entraIdProtectionRiskyUserApproval",
                 "customDataProvidedResourceUploadSession"
+              ],
+              "complexTypes": [
+                "accessPackageAssignmentRequestParameters"
               ]
             },
             {

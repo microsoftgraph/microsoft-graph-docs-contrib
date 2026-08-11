@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "3c48af75-9eba-4aa8-8622-4d14d624d543",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAssignmentRequestParameters",
+          "ChangeType": "Addition",
+          "Description": "Added the **accessPackageAssignmentRequestParameters** complex type.",
+          "Target": "accessPackageAssignmentRequestParameters"
+        },
+        {
+          "Id": "3c48af75-9eba-4aa8-8622-4d14d624d543",
+          "ApiChange": "Property",
+          "ChangedApiName": "parameters",
+          "ChangeType": "Addition",
+          "Description": "Added the **parameters** property to the [accessPackageAssignmentRequest](https://learn.microsoft.com/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta) resource.",
+          "Target": "accessPackageAssignmentRequest"
+        }
+      ],
+      "Id": "3c48af75-9eba-4aa8-8622-4d14d624d543",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-08-10T20:44:34Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "bbaab297-9f65-4f97-8abb-a67a10d5a6e1",
           "ApiChange": "Method",
           "ChangedApiName": "Get",
