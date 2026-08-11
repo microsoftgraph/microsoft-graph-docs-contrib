@@ -406,6 +406,8 @@ items:
         href: ../../api/participant-mute.md
       - name: Mute all participants
         href: ../../api/participant-muteall.md
+      - name: Report synthetic media
+        href: ../../api/participant-reportsyntheticmedia.md
       - name: Start hold music
         href: ../../api/participant-startholdmusic.md
       - name: Stop hold music
@@ -416,6 +418,22 @@ items:
         href: ../../resources/addlargegalleryviewoperation.md
       - name: Get large gallery view operation status
         href: ../../api/addlargegalleryviewoperation-get.md
+    - name: Complex types
+      items:
+      - name: Audio metadata
+        href: ../../resources/audiometadata.md
+      - name: Media metadata
+        href: ../../resources/mediametadata.md
+      - name: Media segment
+        href: ../../resources/mediasegment.md
+      - name: Streaming metadata
+        href: ../../resources/streamingmetadata.md
+      - name: Synthetic media detection detail
+        href: ../../resources/syntheticmediadetectiondetail.md
+      - name: Synthetic media detection info
+        href: ../../resources/syntheticmediadetectioninfo.md
+      - name: Video metadata
+        href: ../../resources/videometadata.md
   - name: Call delegation
     items:
     - name: Overview

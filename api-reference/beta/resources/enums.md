@@ -1108,6 +1108,17 @@ Namespace: microsoft.graph
 | unknownFutureValue |
 | strictLocation |
 
+### contentModality values
+
+| Member |
+| ------------------ |
+| audio |
+| video |
+| image |
+| text |
+| multimodal |
+| unknownFutureValue |
+
 ### msiType values
 
 | Member |
@@ -1674,6 +1685,15 @@ Namespace: microsoft.graph
 | officePhone |
 | microsoftAuthenticatorPush |
 | softwareOneTimePasscode |
+| unknownFutureValue |
+
+### detectionSeverity values
+
+| Member |
+| ------------------ |
+| low |
+| medium |
+| high |
 | unknownFutureValue |
 
 ### clientCredentialType values
@@ -6184,3 +6204,29 @@ Possible values for user account types (group membership), per Windows definitio
 |appliedSuccessfullyButObjectNotFound|
 |applyNotSupported|
 |unknownFutureValue|
+
+### mlClassificationMatchTolerance values
+
+|Member|
+|:---|
+|exact|
+|near|
+
+### sensitiveTypeScope values
+
+|Member|
+|:---|
+|fullDocument|
+|partialDocument|
+
+### mipWorkloads values
+
+|Member|
+|:---|
+|endpointDevices|
+|exchange|
+|oneDriveForBusiness|
+|sharePoint|
+|teams|
+|coldCrawl|
+|applications|

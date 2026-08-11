@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 
 |Permission type|Least privileged permissions|Higher privileged permissions|
 |:---|:---|:---|
-|Delegated (work or school account)|MailboxItem.Read|Not available.|
+|Delegated (work or school account)|MailboxItem.Read|MailboxItem.ReadWrite|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
-|Application|MailboxItem.Read.All|Not available.|
+|Application|MailboxItem.Read.All|MailboxItem.ReadWrite.All|
 

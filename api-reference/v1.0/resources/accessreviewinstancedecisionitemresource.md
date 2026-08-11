@@ -5,7 +5,7 @@ author: "jyothig123"
 ms.localizationpriority: medium
 ms.subservice: "entra-id-governance"
 doc_type: resourcePageType
-ms.date: 07/22/2024
+ms.date: 07/30/2026
 ---
 
 # accessReviewInstanceDecisionItemResource resource type
@@ -16,6 +16,7 @@ In an [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisi
 
 An [accessReviewInstanceDecisionItemResource](../resources/accessreviewinstancedecisionitemresource.md) object is an open type that allows other properties to be passed in and is the base type for the following resources:
 - [accessReviewInstanceDecisionItemAccessPackageAssignmentPolicyResource](../resources/accessreviewinstancedecisionitemaccesspackageassignmentpolicyresource.md)
+- [accessReviewInstanceDecisionItemAccessPackageResource](../resources/accessreviewinstancedecisionitemaccesspackageresource.md)
 - [accessReviewInstanceDecisionItemAzureRoleResource](../resources/accessreviewinstancedecisionitemazureroleresource.md)
 - [accessReviewInstanceDecisionItemServicePrincipalResource](../resources/accessreviewinstancedecisionitemserviceprincipalresource.md)
 
@@ -24,7 +25,7 @@ An [accessReviewInstanceDecisionItemResource](../resources/accessreviewinstanced
 |:---|:---|:---|
 |displayName|String|Display name of the resource|
 |id|String|Identifier of the resource|
-|type|String|Type of resource. Types include: `Group`, `ServicePrincipal`, `DirectoryRole`, `AzureRole`, `AccessPackageAssignmentPolicy`.|
+|type|String|Type of resource. Types include: `Group`, `ServicePrincipal`, `DirectoryRole`, `AzureRole`, `AccessPackage`, `AccessPackageAssignmentPolicy`.|
 
 ## Relationships
 None.
