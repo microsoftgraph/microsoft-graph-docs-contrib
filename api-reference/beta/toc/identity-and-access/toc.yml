@@ -1277,6 +1277,10 @@ items:
         href: ../../api/customdataprovidedresourceuploadsession-update.md
       - name: Delete
         href: ../../api/accesspackageresource-delete-uploadsessions.md
+    - name: Complex types
+      items:
+      - name: Access package assignment request parameters
+        href: ../../resources/accesspackageassignmentrequestparameters.md
   - name: Lifecycle workflows
     displayName: LCW, Identity Governance, Joiner, Mover, Leaver
     items:
