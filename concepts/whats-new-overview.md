@@ -188,6 +188,10 @@ Detect and report synthetic (AI-generated) media in meeting calls using the [rep
 
 Updated Microsoft Graph documentation for transcript APIs to add guidance on tenant administrator controls that govern transcript access and speaker attribution. For more information, see [Get change notifications for transcripts and recordings using Microsoft Graph](teams-changenotifications-callrecording-and-calltranscript.md).
 
+### Teamwork and communications | Messaging
+
+- Added the **citations** property to the [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) resource type to represent inline citations that reference external sources cited in bot-generated messages.
+
 ### Teamwork and communications | Shift management
 
 The **timeZone** property of the [schedule](/graph/api/resources/schedule) resource must be set to an IANA time zone name, such as `America/Chicago` or `Europe/London`. For more information, see [Create or replace schedule](/graph/api/team-put-schedule).
