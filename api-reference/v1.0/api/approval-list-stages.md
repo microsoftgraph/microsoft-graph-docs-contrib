@@ -12,10 +12,10 @@ ms.date: 03/08/2024
 
 Namespace: microsoft.graph
 
-List the [approvalStage](../resources/approvalstage.md) objects associated with an [approval](../resources/approval.md). This API request is made by an approver in the following scenarios:
+List the [approvalStage](../resources/approvalstage.md) objects associated with an [approval](../resources/approval.md) in the following scenarios:
 
-In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), providing the identifier of the [access package assignment request](../resources/accesspackageassignmentrequest.md).
-In [PIM for Groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), providing the identifier of the [assignment schedule request](../resources/privilegedaccessgroupassignmentschedulerequest.md).
+In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), providing the identifier of the [access package assignment request](../resources/accesspackageassignmentrequest.md). Use this API to retrieve the approver's decision and the **justification** that the approver supplied. The requestor's own justification is a property of the [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) itself. The identifier of the approval is the same as the identifier of the access package assignment request.
+In [PIM for Groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), providing the identifier of the [assignment schedule request](../resources/privilegedaccessgroupassignmentschedulerequest.md). This API request is made by an approver.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -70,6 +70,8 @@ Don't supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of the [approvalStage](../resources/approvalstage.md) objects in the response body. If the caller doesn't have the right permissions, the method returns a `403 Forbidden` response code.
+
+In entitlement management, this method returns a `404 Not Found` response code when the specified access package assignment request didn't go through an approval workflow; for example, when the assignment was created directly by an administrator, or when the assignment policy doesn't require approval. A `404 Not Found` response therefore doesn't indicate a permissions problem.
 
 ## Examples
 
