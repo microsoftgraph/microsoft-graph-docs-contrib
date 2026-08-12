@@ -6,17 +6,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
-use Microsoft\Graph\Beta\Generated\Reports\GetMicrosoft365CopilotUserCountSummary(period='{period}',version='{version}')\GetMicrosoft365CopilotUserCountSummaryWithPeriodWithVersionRequestBuilderGetRequestConfiguration;
+use Microsoft\Graph\Beta\Generated\Reports\GetMicrosoft365CopilotUserCountSummary(period='{period}',version='@version')\GetMicrosoft365CopilotUserCountSummaryWithPeriodversion='@version'RequestBuilderGetRequestConfiguration;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestConfiguration = new GetMicrosoft365CopilotUserCountSummaryWithPeriodWithVersionRequestBuilderGetRequestConfiguration();
-$queryParameters = GetMicrosoft365CopilotUserCountSummaryWithPeriodWithVersionRequestBuilderGetRequestConfiguration::createQueryParameters();
+$requestConfiguration = new GetMicrosoft365CopilotUserCountSummaryWithPeriodversion='@version'RequestBuilderGetRequestConfiguration();
+$queryParameters = GetMicrosoft365CopilotUserCountSummaryWithPeriodversion='@version'RequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->format = "text/csv";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$graphServiceClient->reports()->getMicrosoft365CopilotUserCountSummaryWithPeriodWithVersion('{period}', '{version}', )->get($requestConfiguration)->wait();
+$graphServiceClient->reports()->getMicrosoft365CopilotUserCountSummaryWithPeriod('{period}', )->get($requestConfiguration)->wait();
 
 ```

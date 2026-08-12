@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\ChatMessage;
-use Microsoft\Graph\Beta\Generated\Models\ItemBody;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessageBody;
 use Microsoft\Graph\Beta\Generated\Models\BodyType;
 use Microsoft\Graph\Beta\Generated\Models\ChatMessageMention;
 use Microsoft\Graph\Beta\Generated\Models\ChatMessageMentionedIdentitySet;
@@ -20,7 +20,7 @@ use Microsoft\Graph\Beta\Generated\Models\ChatMessageHistoryItem;
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ChatMessage();
-$body = new ItemBody();
+$body = new ChatMessageBody();
 $body->setContentType(new BodyType('html'));
 $body->setContent('<at id=\"0\">GraphTesting</at>&nbsp;Hello team');
 $requestBody->setBody($body);

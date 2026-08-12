@@ -11,7 +11,7 @@ using Microsoft.Graph.Beta.Models;
 
 var requestBody = new ChatMessage
 {
-	Body = new ItemBody
+	Body = new ChatMessageBody
 	{
 		ContentType = BodyType.Html,
 		Content = "<img height=\"297\" src=\"../hostedContents/1/$value\" width=\"297\">",

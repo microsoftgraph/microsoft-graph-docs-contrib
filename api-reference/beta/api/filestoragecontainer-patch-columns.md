@@ -76,6 +76,7 @@ This API might also return the following error response codes for the entire req
 
 The following example shows a single delta patch request that mixes create and update items in one call. Items without an ID are treated as create operations; items with an ID are treated as update operations. Items that fail are reported inline with a **@Core.DataModificationException** annotation. The remaining items still succeed.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_columns_beta"
@@ -107,6 +108,12 @@ Content-Type: application/json
   ]
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/patch-columns-beta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

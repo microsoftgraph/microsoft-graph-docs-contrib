@@ -31,7 +31,7 @@ additionalData := map[string]interface{}{
 user.SetAdditionalData(additionalData)
 from.SetUser(user)
 requestBody.SetFrom(from)
-body := graphmodels.NewItemBody()
+body := graphmodels.NewChatMessageBody()
 contentType := graphmodels.HTML_BODYTYPE 
 body.SetContentType(&contentType) 
 content := "<div><div>\n<div><span><img height=\"250\" src=\"../hostedContents/1/$value\" width=\"176.2295081967213\" style=\"vertical-align:bottom; width:176px; height:250px\"></span>\n\n</div>\n\n\n</div>\n</div>"

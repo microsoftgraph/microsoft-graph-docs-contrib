@@ -16,7 +16,7 @@ import (
 )
 
 requestBody := graphmodels.NewChatMessage()
-body := graphmodels.NewItemBody()
+body := graphmodels.NewChatMessageBody()
 contentType := graphmodels.HTML_BODYTYPE 
 body.SetContentType(&contentType) 
 content := "<img height=\"297\" src=\"../hostedContents/1/$value\" width=\"297\">"

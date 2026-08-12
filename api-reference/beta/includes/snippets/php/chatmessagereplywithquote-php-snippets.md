@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Chats\Item\Messages\ReplyWithQuote\ReplyWithQuotePostRequestBody;
 use Microsoft\Graph\Beta\Generated\Models\ChatMessage;
-use Microsoft\Graph\Beta\Generated\Models\ItemBody;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessageBody;
 
 
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
@@ -16,7 +16,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 $requestBody = new ReplyWithQuotePostRequestBody();
 $requestBody->setMessageIds(['1728088338580', 	]);
 $replyMessage = new ChatMessage();
-$replyMessageBody = new ItemBody();
+$replyMessageBody = new ChatMessageBody();
 $replyMessageBody->setContent('Hello World');
 $replyMessage->setBody($replyMessageBody);
 $requestBody->setReplyMessage($replyMessage);

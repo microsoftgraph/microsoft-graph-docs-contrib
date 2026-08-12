@@ -22,7 +22,7 @@ messageIds := []string {
 }
 requestBody.SetMessageIds(messageIds)
 replyMessage := graphmodels.NewChatMessage()
-body := graphmodels.NewItemBody()
+body := graphmodels.NewChatMessageBody()
 content := "Hello World"
 body.SetContent(&content) 
 replyMessage.SetBody(body)

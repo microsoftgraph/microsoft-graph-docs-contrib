@@ -26,7 +26,7 @@ var requestBody = new ChatMessage
 			},
 		},
 	},
-	Body = new ItemBody
+	Body = new ChatMessageBody
 	{
 		ContentType = BodyType.Html,
 		Content = "Hello World",
