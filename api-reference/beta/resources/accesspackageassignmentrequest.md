@@ -42,7 +42,7 @@ In [Microsoft Entra Entitlement Management](entitlementmanagement-overview.md), 
 |expirationDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |id|String| Read-only.|
 |isValidationOnly|Boolean|True if the request isn't to be processed for assignment.|
-|justification|String|The requestor's supplied justification.|
+|justification|String|The requestor's supplied justification. To retrieve the **justification** supplied by the *approver*, use [List approvalSteps](../api/approval-list-steps.md); the identifier of the [approval](approval.md) is the same as the identifier of the access package assignment request.|
 |requestState|String|One of `PendingApproval`, `Canceled`,  `Denied`, `Delivering`, `Delivered`, `PartiallyDelivered`, `DeliveryFailed`, `Submitted`, or `Scheduled`. Read-only.|
 |requestStatus|String|More information on the request processing status. Read-only.|
 |requestType|String|One of `UserAdd`, `UserExtend`, `UserUpdate`, `UserRemove`, `AdminAdd`, `AdminRemove`, `ApproverRemove`, or `SystemRemove`. A request from the user has a **requestType** of `UserAdd`, `UserUpdate`, or `UserRemove`. Read-only.|
