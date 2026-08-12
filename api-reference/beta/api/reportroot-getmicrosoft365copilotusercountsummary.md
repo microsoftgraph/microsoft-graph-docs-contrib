@@ -127,6 +127,10 @@ GET https://graph.microsoft.com/beta/reports/getMicrosoft365CopilotUserCountSumm
 [!INCLUDE [sample-code](../includes/snippets/java/reportroot-getmicrosoft365copilotusercountsummary-csv-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getmicrosoft365copilotusercountsummary-csv-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/reportroot-getmicrosoft365copilotusercountsummary-csv-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -190,6 +194,10 @@ GET https://graph.microsoft.com/beta/reports/getMicrosoft365CopilotUserCountSumm
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/reportroot-getmicrosoft365copilotusercountsummary-json-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/reportroot-getmicrosoft365copilotusercountsummary-json-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

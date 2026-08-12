@@ -646,6 +646,8 @@ items:
       href: ../../api/userprotectionscopecontainer-compute.md
     - name: Process content
       href: ../../api/userdatasecurityandgovernance-processcontent.md
+  - name: Text classification request
+    href: ../../resources/textclassificationrequest.md
   - name: Complex types
     items:
     - name: Activity metadata
@@ -668,6 +670,8 @@ items:
       href: ../../resources/classificationerror.md
     - name: Classification inner error
       href: ../../resources/classificationinnererror.md
+    - name: Classification request content meta data
+      href: ../../resources/classificationrequestcontentmetadata.md
     - name: Compute rights and inheritance result
       href: ../../resources/computerightsandinheritanceresult.md
     - name: Content activity metadata
@@ -680,6 +684,8 @@ items:
       href: ../../resources/devicemetadata.md
     - name: Dlp action info
       href: ../../resources/dlpactioninfo.md
+    - name: Embedding input
+      href: ../../resources/embeddinginput.md
     - name: Group scope
       href: ../../resources/groupscope.md
     - name: Integrated application metadata

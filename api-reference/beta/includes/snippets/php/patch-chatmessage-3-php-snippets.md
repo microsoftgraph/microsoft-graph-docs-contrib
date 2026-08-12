@@ -11,7 +11,7 @@ use Microsoft\Graph\Beta\Generated\Models\ChatMessageType;
 use Microsoft\Graph\Beta\Generated\Models\ChatMessageImportance;
 use Microsoft\Graph\Beta\Generated\Models\ChatMessageFromIdentitySet;
 use Microsoft\Graph\Beta\Generated\Models\Identity;
-use Microsoft\Graph\Beta\Generated\Models\ItemBody;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessageBody;
 use Microsoft\Graph\Beta\Generated\Models\BodyType;
 use Microsoft\Graph\Beta\Generated\Models\ChatMessageAttachment;
 use Microsoft\Graph\Beta\Generated\Models\ChatMessageMention;
@@ -43,7 +43,7 @@ $additionalData = [
 ];
 $from->setAdditionalData($additionalData);
 $requestBody->setFrom($from);
-$body = new ItemBody();
+$body = new ChatMessageBody();
 $body->setContentType(new BodyType('html'));
 $body->setContent('<p><em>text</em></p><attachment id=\"e8f78756199240b88448ae0fc6db112d\"></attachment><attachment id=\"638464e32834471ea202007da60a5ae6\"></attachment>');
 $requestBody->setBody($body);

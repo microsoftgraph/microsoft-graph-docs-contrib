@@ -11,7 +11,7 @@ from msgraph_beta.generated.models.chat_message_type import ChatMessageType
 from msgraph_beta.generated.models.chat_message_importance import ChatMessageImportance
 from msgraph_beta.generated.models.chat_message_from_identity_set import ChatMessageFromIdentitySet
 from msgraph_beta.generated.models.identity import Identity
-from msgraph_beta.generated.models.item_body import ItemBody
+from msgraph_beta.generated.models.chat_message_body import ChatMessageBody
 from msgraph_beta.generated.models.body_type import BodyType
 from msgraph_beta.generated.models.chat_message_attachment import ChatMessageAttachment
 from msgraph_beta.generated.models.chat_message_mention import ChatMessageMention
@@ -38,7 +38,7 @@ request_body = ChatMessage(
 				"conversation" : None,
 		}
 	),
-	body = ItemBody(
+	body = ChatMessageBody(
 		content_type = BodyType.Html,
 		content = "<p><em>text</em></p><attachment id=\"e8f78756199240b88448ae0fc6db112d\"></attachment><attachment id=\"638464e32834471ea202007da60a5ae6\"></attachment>",
 	),

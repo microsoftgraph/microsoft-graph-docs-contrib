@@ -54,15 +54,22 @@ This method can return any of the [HTTP status codes](/graph/errors). The most c
 
 The following example shows a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "plannerplan_get_goals",
   "sampleKeys": ["V5pBRwb_vEugGKGpZuLnX5UAG9iy"]
 }
 -->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/planner/plans/V5pBRwb_vEugGKGpZuLnX5UAG9iy/goals
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/plannerplan-get-goals-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

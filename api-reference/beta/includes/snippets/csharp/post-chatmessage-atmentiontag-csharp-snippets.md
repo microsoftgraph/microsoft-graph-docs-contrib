@@ -11,7 +11,7 @@ using Microsoft.Graph.Beta.Models;
 
 var requestBody = new ChatMessage
 {
-	Body = new ItemBody
+	Body = new ChatMessageBody
 	{
 		ContentType = BodyType.Html,
 		Content = "<at id=\"0\">TestTag</at>&nbsp;Testing Tags",

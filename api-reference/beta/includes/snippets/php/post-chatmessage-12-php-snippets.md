@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 use Microsoft\Graph\Beta\GraphServiceClient;
 use Microsoft\Graph\Beta\Generated\Models\ChatMessage;
-use Microsoft\Graph\Beta\Generated\Models\ItemBody;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessageBody;
 use Microsoft\Graph\Beta\Generated\Models\BodyType;
 use Microsoft\Graph\Beta\Generated\Models\ChatMessageAttachment;
 use Microsoft\Graph\Beta\Generated\Models\ChatMessageHostedContent;
@@ -17,7 +17,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ChatMessage();
 $requestBody->setSubject('Announcement Subheading');
-$body = new ItemBody();
+$body = new ChatMessageBody();
 $body->setContentType(new BodyType('text'));
 $body->setContent('<attachment id=\"d7ddbf876ae340c3a03bada395ec7da7\"></attachment>Announcement text');
 $requestBody->setBody($body);

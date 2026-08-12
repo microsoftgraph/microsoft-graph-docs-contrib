@@ -28,7 +28,7 @@ HashMap<String, Object> additionalData1 = new HashMap<String, Object>();
 additionalData1.put("conversation", null);
 from.setAdditionalData(additionalData1);
 chatMessage.setFrom(from);
-ItemBody body = new ItemBody();
+ChatMessageBody body = new ChatMessageBody();
 body.setContentType(BodyType.Text);
 body.setContent("Edit text only");
 chatMessage.setBody(body);

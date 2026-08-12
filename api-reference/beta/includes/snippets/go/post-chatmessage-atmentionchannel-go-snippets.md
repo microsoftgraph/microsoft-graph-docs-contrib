@@ -16,7 +16,7 @@ import (
 )
 
 requestBody := graphmodels.NewChatMessage()
-body := graphmodels.NewItemBody()
+body := graphmodels.NewChatMessageBody()
 contentType := graphmodels.HTML_BODYTYPE 
 body.SetContentType(&contentType) 
 content := "<at id=\"0\">General</at>&nbsp;Hello there!"

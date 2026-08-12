@@ -17,7 +17,7 @@ user.setId("8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca");
 user.setDisplayName("John Doe");
 from.setUser(user);
 chatMessage.setFrom(from);
-ItemBody body = new ItemBody();
+ChatMessageBody body = new ChatMessageBody();
 body.setContentType(BodyType.Html);
 body.setContent("Hello World");
 chatMessage.setBody(body);

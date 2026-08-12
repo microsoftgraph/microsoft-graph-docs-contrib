@@ -13,7 +13,7 @@ LinkedList<String> messageIds = new LinkedList<String>();
 messageIds.add("1728088338580");
 replyWithQuotePostRequestBody.setMessageIds(messageIds);
 ChatMessage replyMessage = new ChatMessage();
-ItemBody body = new ItemBody();
+ChatMessageBody body = new ChatMessageBody();
 body.setContent("Hello World");
 replyMessage.setBody(body);
 replyWithQuotePostRequestBody.setReplyMessage(replyMessage);

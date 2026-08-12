@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.chats.item.messages.reply_with_quote.reply_with_quote_post_request_body import ReplyWithQuotePostRequestBody
 from msgraph_beta.generated.models.chat_message import ChatMessage
-from msgraph_beta.generated.models.item_body import ItemBody
+from msgraph_beta.generated.models.chat_message_body import ChatMessageBody
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ReplyWithQuotePostRequestBody(
 	message_ids = [
 		"1728088338580",
 	],
 	reply_message = ChatMessage(
-		body = ItemBody(
+		body = ChatMessageBody(
 			content = "Hello World",
 		),
 	),

@@ -11,7 +11,7 @@ using Microsoft.Graph.Beta.Models;
 
 var requestBody = new ChatMessage
 {
-	Body = new ItemBody
+	Body = new ChatMessageBody
 	{
 		ContentType = BodyType.Html,
 		Content = "Here's the latest budget. <attachment id=\"153fa47d-18c9-4179-be08-9879815a9f90\"></attachment>",

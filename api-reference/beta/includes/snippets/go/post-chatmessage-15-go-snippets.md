@@ -16,7 +16,7 @@ import (
 )
 
 requestBody := graphmodels.NewChatMessage()
-body := graphmodels.NewItemBody()
+body := graphmodels.NewChatMessageBody()
 contentType := graphmodels.HTML_BODYTYPE 
 body.SetContentType(&contentType) 
 content := "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"

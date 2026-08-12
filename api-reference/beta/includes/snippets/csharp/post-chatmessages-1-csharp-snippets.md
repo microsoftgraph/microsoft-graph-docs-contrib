@@ -11,7 +11,7 @@ using Microsoft.Graph.Beta.Models;
 
 var requestBody = new ChatMessage
 {
-	Body = new ItemBody
+	Body = new ChatMessageBody
 	{
 		Content = "Hello world",
 	},

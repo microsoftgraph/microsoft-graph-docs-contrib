@@ -11,7 +11,7 @@ use Microsoft\Graph\Beta\Generated\Models\ChatMessageType;
 use Microsoft\Graph\Beta\Generated\Models\ChatMessageImportance;
 use Microsoft\Graph\Beta\Generated\Models\ChatMessageFromIdentitySet;
 use Microsoft\Graph\Beta\Generated\Models\Identity;
-use Microsoft\Graph\Beta\Generated\Models\ItemBody;
+use Microsoft\Graph\Beta\Generated\Models\ChatMessageBody;
 use Microsoft\Graph\Beta\Generated\Models\BodyType;
 use Microsoft\Graph\Beta\Generated\Models\ChatMessageAttachment;
 use Microsoft\Graph\Beta\Generated\Models\ChatMessageMention;
@@ -45,7 +45,7 @@ $additionalData = [
 ];
 $from->setAdditionalData($additionalData);
 $requestBody->setFrom($from);
-$body = new ItemBody();
+$body = new ChatMessageBody();
 $body->setContentType(new BodyType('html'));
 $body->setContent('<div><div>\n<div>\n<div>\n<div>\n<div><at id=\"0\">Raghav</at><at id=\"1\">TestGlobalBot</at> YEAH');
 $requestBody->setBody($body);

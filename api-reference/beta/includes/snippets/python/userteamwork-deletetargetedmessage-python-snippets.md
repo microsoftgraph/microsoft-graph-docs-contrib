@@ -9,7 +9,7 @@ from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.users.item.teamwork.delete_targeted_message.delete_targeted_message_post_request_body import DeleteTargetedMessagePostRequestBody
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = DeleteTargetedMessagePostRequestBody(
-	team_id = "3Aeeaa4e946d674c4f8d4dded613780f45@thread.v2",
+	team_id = "9dda0ae1-e007-4a1d-81ec-2cf4b1274610",
 	channel_id = "19:eeaa4e946d674c4f8d4dded613780f45@thread.v2",
 	message_id = "1580849738240",
 )

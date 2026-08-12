@@ -20,7 +20,7 @@ additionalData.put("userIdentityType", "aadUser");
 user.setAdditionalData(additionalData);
 from.setUser(user);
 chatMessage.setFrom(from);
-ItemBody body = new ItemBody();
+ChatMessageBody body = new ChatMessageBody();
 body.setContentType(BodyType.Html);
 body.setContent("Hello World");
 chatMessage.setBody(body);

@@ -38,7 +38,7 @@ var requestBody = new ChatMessage
 			},
 		},
 	},
-	Body = new ItemBody
+	Body = new ChatMessageBody
 	{
 		ContentType = BodyType.Html,
 		Content = "<p><em>text</em></p><attachment id=\"e8f78756199240b88448ae0fc6db112d\"></attachment><attachment id=\"638464e32834471ea202007da60a5ae6\"></attachment>",

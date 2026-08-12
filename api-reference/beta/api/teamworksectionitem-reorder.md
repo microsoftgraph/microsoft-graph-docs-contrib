@@ -75,6 +75,7 @@ The following errors are possible.
 
 The following example reorders three items in the "Project Alpha" section.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "teamworksectionitem_reorder",
@@ -93,6 +94,12 @@ If-Match: "1742515200"
   ]
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/teamworksectionitem-reorder-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

@@ -12,7 +12,7 @@ using Microsoft.Graph.Beta.Models;
 var requestBody = new ChatMessage
 {
 	Subject = "Announcement Subheading",
-	Body = new ItemBody
+	Body = new ChatMessageBody
 	{
 		ContentType = BodyType.Text,
 		Content = "<attachment id=\"d7ddbf876ae340c3a03bada395ec7da7\"></attachment>Announcement text",

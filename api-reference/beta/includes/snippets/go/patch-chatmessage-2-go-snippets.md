@@ -49,7 +49,7 @@ from.SetConversation(&conversation)
 }
 from.SetAdditionalData(additionalData)
 requestBody.SetFrom(from)
-body := graphmodels.NewItemBody()
+body := graphmodels.NewChatMessageBody()
 contentType := graphmodels.HTML_BODYTYPE 
 body.SetContentType(&contentType) 
 content := "<div><div>\n<div>\n<div>\n<div>\n<div><at id=\"0\">Raghav</at><at id=\"1\">TestGlobalBot</at> YEAH"

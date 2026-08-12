@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ChatMessage chatMessage = new ChatMessage();
-ItemBody body = new ItemBody();
+ChatMessageBody body = new ChatMessageBody();
 body.setContentType(BodyType.Html);
 body.setContent("<at id=\"0\">TestTag</at>&nbsp;Testing Tags");
 chatMessage.setBody(body);

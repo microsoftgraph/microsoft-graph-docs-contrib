@@ -27,7 +27,6 @@ configuration := &graphreports.ReportsGetMicrosoft365CopilotUserCountSummaryWith
 
 // To initialize your graphClient, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=go
 period := "{period}"
-version := "{version}"
 graphClient.Reports().GetMicrosoft365CopilotUserCountSummaryWithPeriodWithVersion(&period, &version).Get(context.Background(), configuration)
 
 

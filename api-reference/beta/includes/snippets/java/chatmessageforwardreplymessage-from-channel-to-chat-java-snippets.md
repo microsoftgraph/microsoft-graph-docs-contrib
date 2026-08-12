@@ -16,7 +16,7 @@ LinkedList<String> messageIds = new LinkedList<String>();
 messageIds.add("1728088338580");
 forwardToChatPostRequestBody.setMessageIds(messageIds);
 ChatMessage additionalMessage = new ChatMessage();
-ItemBody body = new ItemBody();
+ChatMessageBody body = new ChatMessageBody();
 body.setContent("Hello World");
 additionalMessage.setBody(body);
 forwardToChatPostRequestBody.setAdditionalMessage(additionalMessage);

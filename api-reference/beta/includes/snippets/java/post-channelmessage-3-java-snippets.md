@@ -20,7 +20,7 @@ additionalData.put("userIdentityType", "aadUser");
 user.setAdditionalData(additionalData);
 from.setUser(user);
 chatMessage.setFrom(from);
-ItemBody body = new ItemBody();
+ChatMessageBody body = new ChatMessageBody();
 body.setContentType(BodyType.Html);
 body.setContent("<div><div>\n<div><span><img height=\"250\" src=\"../hostedContents/1/$value\" width=\"176.2295081967213\" style=\"vertical-align:bottom; width:176px; height:250px\"></span>\n\n</div>\n\n\n</div>\n</div>");
 chatMessage.setBody(body);

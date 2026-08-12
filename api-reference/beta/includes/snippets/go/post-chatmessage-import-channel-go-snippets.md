@@ -31,7 +31,7 @@ additionalData := map[string]interface{}{
 user.SetAdditionalData(additionalData)
 from.SetUser(user)
 requestBody.SetFrom(from)
-body := graphmodels.NewItemBody()
+body := graphmodels.NewChatMessageBody()
 contentType := graphmodels.HTML_BODYTYPE 
 body.SetContentType(&contentType) 
 content := "Hello World"

@@ -10,7 +10,7 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ChatMessage chatMessage = new ChatMessage();
 chatMessage.setSubject(null);
-ItemBody body = new ItemBody();
+ChatMessageBody body = new ChatMessageBody();
 body.setContentType(BodyType.Html);
 body.setContent("<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>");
 chatMessage.setBody(body);
