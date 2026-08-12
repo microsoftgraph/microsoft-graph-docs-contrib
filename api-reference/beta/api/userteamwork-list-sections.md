@@ -62,7 +62,7 @@ The response includes the following OData instance annotations on the collection
 | Annotation | Type | Description |
 |:-----------|:-----|:------------|
 | @microsoft.graph.sectionsOrder | String collection | An ordered array of section IDs that represent the user's preferred section order. |
-| @microsoft.graph.sectionsVersion | String | The current section hierarchy version. Use this value as the `If-Match` header for optimistic concurrency control on mutation operations (create, update, or delete sections, and add, remove, or move items). |
+| @microsoft.graph.sectionsVersion | String | The current section hierarchy version. Use this value as the `If-Match` header for optimistic concurrency control on mutation operations (create, update, delete, or reorder sections, and add, remove, move, or reorder items). |
 
 ## Examples
 

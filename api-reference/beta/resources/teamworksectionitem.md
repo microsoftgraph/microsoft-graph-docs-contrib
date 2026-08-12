@@ -24,6 +24,7 @@ Represents an item, such as a chat, channel, meeting, or community, that is orga
 | [Add](../api/teamworksection-post-items.md) | [teamworkSectionItem](teamworksectionitem.md) | Add an [item](../resources/teamworksectionitem.md), such as a chat, channel, meeting, or community, to a user-defined [section](../resources/teamworksection.md) in a user's [teamwork](../resources/userteamwork.md). |
 | [Remove](../api/teamworksectionitem-delete.md) | None | Remove an [item](../resources/teamworksectionitem.md) from a user-defined [section](../resources/teamworksection.md) in a user's [teamwork](../resources/userteamwork.md). |
 | [Move](../api/teamworksectionitem-move.md) | [teamworkSectionItem](teamworksectionitem.md) | Move an [item](../resources/teamworksectionitem.md) from one user-defined [section](../resources/teamworksection.md) to another user-defined section in a user's [teamwork](../resources/userteamwork.md). |
+| [Reorder](../api/teamworksectionitem-reorder.md) | [teamworkSectionItem](teamworksectionitem.md) collection | Reorder all [items](../resources/teamworksectionitem.md) in a user-defined [section](../resources/teamworksection.md) in a user's [teamwork](../resources/userteamwork.md). |
 
 ## Properties
 

@@ -18,6 +18,24 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+
+## August 2026: New and generally available
+
+### Files
+
+- Added the [Upsert columns](/graph/api/filestoragecontainer-patch-columns) method to the [fileStorageContainer](/graph/api/resources/filestoragecontainer) resource type to create or update up to 20 columnDefinition objects in a single request.
+
+## August 2026: New in preview only
+
+### Files
+
+- Added the [Upsert columns](/graph/api/filestoragecontainer-patch-columns?view=graph-rest-beta&preserve-view=true) method to the [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true) resource type to create or update up to 20 columnDefinition objects in a single request.
+
+### Teamwork and communications | Messaging
+
+- Added the [reorder sections](/graph/api/teamworksection-reorder?view=graph-rest-beta&preserve-view=true) and [reorder section items](/graph/api/teamworksectionitem-reorder?view=graph-rest-beta&preserve-view=true) actions. Use these actions to apply a complete custom order to a user's sections or to the items in a user-defined section.
+
+
 ## July 2026: New and generally available
 
 ### Device and app management | Cloud PC
@@ -110,6 +128,7 @@ Added the **sponsorOf** relationship to the [user](/graph/api/resources/user?vie
 
 - Added the [guestSponsorTrigger](/graph/api/resources/identitygovernance-guestsponsortrigger?view=graph-rest-beta&preserve-view=true) resource type to initiate lifecycle workflows when guest users have fewer than the required number of sponsors.
 - Added support for automatically quarantining Lifecycle Workflows to stop a workflow from processing more users than expected. Configure thresholds using the **quarantineConfiguration** property on [lifecycleManagementSettings](/graph/api/resources/identitygovernance-lifecyclemanagementsettings?view=graph-rest-beta&preserve-view=true), and clear a quarantine by calling [clearQuarantine](/graph/api/identitygovernance-workflow-clearquarantine?view=graph-rest-beta&preserve-view=true).
+- Added the **parameters** property to the [accessPackageAssignmentRequest](/graph/api/resources/accesspackageassignmentrequest?view=graph-rest-beta&preserve-view=true) resource, typed as the new [accessPackageAssignmentRequestParameters](/graph/api/resources/accesspackageassignmentrequestparameters?view=graph-rest-beta&preserve-view=true) complex type, to bypass the approval requirement configured on the access package policy when creating an assignment request.
 
 ### Identity and access | Identity and sign-in
 
