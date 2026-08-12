@@ -36,7 +36,7 @@ In addition, the calling user must have at minimum the **Security Reader** role 
 
 Microsoft Threat Intelligence APIs use per-tenant risk-based enforcement. The service evaluates the tenant that makes each request. If a tenant is identified as high risk, requests from that tenant are blocked until the tenant is successfully verified.
 
-The error message for a blocked request indicates the tenant's current verification state. When available, the message also includes a link to complete tenant verification.
+The error message for a blocked request indicates the current verification state of the tenant. When available, the message also includes a link to complete tenant verification.
 
 ## Common use cases
 
