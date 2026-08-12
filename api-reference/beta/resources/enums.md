@@ -5789,6 +5789,7 @@ Possible values for user account types (group membership), per Windows definitio
 |isItemVersioningEnabled|
 |itemMajorVersionLimit|
 |maxStoragePerContainerInBytes|
+|isOfficeRestricted|
 |unknownFutureValue|
 
 ### aggregationPeriod values
