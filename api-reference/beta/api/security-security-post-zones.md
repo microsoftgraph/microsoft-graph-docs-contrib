@@ -22,11 +22,7 @@ Create a new [zone](../resources/security-zone.md) object. You can create up to 
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
-<!-- {
-  "blockType": "permissions",
-  "name": "security-security-post-zones-permissions"
-}
--->
+<!-- { "blockType": "permissions", "name": "security_security_post_zones" } -->
 [!INCLUDE [permissions-table](../includes/permissions/security-security-post-zones-permissions.md)]
 
 [!INCLUDE [rbac-security-zone-apis-write](../includes/rbac-for-apis/rbac-security-zone-apis-write.md)]
