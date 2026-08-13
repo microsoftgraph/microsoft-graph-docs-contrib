@@ -84,18 +84,8 @@ items:
     href: ../../api/distributionlist-addmembers.md
   - name: Delete members
     href: ../../api/distributionlist-deletemembers.md
-  - name: List members
-    href: ../../api/distributionlist-list-distributionlistmembers.md
-  - name: Get member
-    href: ../../api/distributionlist-get-distributionlistmember.md
 - name: Distribution list member
-  items:
-  - name: Distribution list member
-    href: ../../resources/distributionlistmember.md
-  - name: List
-    href: ../../api/distributionlist-list-distributionlistmembers.md
-  - name: Get
-    href: ../../api/distributionlist-get-distributionlistmember.md
+  href: ../../resources/distributionlistmember.md
 - name: Outlook category (deprecated)
   items:
   - name: Outlook category (deprecated)

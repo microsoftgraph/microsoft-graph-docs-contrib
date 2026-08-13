@@ -18,7 +18,6 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
-
 ## August 2026: New and generally available
 
 ### Files
@@ -33,10 +32,13 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 - Added the [Upsert columns](/graph/api/filestoragecontainer-patch-columns?view=graph-rest-beta&preserve-view=true) method to the [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true) resource type to create or update up to 20 columnDefinition objects in a single request.
 - Added the **appliedByUser** parameter to the [assignSensitivityLabel](/graph/api/driveitem-assignsensitivitylabel?view=graph-rest-beta&preserve-view=true) action on the [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta&preserve-view=true) resource. This parameter allows app-only callers to specify the user identity on whose behalf the sensitivity label is applied, enabling label assignment for SharePoint Embedded containers.
 
+### Mail
+
+- Changed the **members** property on the [distributionList](/graph/api/resources/distributionlist?view=graph-rest-beta&preserve-view=true) resource to an expandable relationship. Use `$expand=members` with the [Get distribution list](/graph/api/distributionlist-get?view=graph-rest-beta&preserve-view=true) method instead of the removed standalone methods for listing and getting members.
+
 ### Teamwork and communications | Messaging
 
 - Added the [reorder sections](/graph/api/teamworksection-reorder?view=graph-rest-beta&preserve-view=true) and [reorder section items](/graph/api/teamworksectionitem-reorder?view=graph-rest-beta&preserve-view=true) actions. Use these actions to apply a complete custom order to a user's sections or to the items in a user-defined section.
-
 
 ## July 2026: New and generally available
 

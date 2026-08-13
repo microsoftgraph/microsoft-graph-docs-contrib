@@ -140,10 +140,11 @@ items:
     - name: Restore deleted policy
       href: ../../api/crosstenantidentitysyncpolicypartner-restore.md
   - name: Microsoft 365 capabilities
-    href: ../../resources/m365capabilitybase.md
     items:
     - name: Overview
       href: ../../resources/m365-cross-tenant-access-policy-overview.md
+    - name: Microsoft 365 capability base
+      href: ../../resources/m365capabilitybase.md
     - name: Cross-tenant calendar availability basic
       href: ../../resources/crosstenantcalendaravailabilitybasic.md
     - name: Cross-tenant calendar availability limited details

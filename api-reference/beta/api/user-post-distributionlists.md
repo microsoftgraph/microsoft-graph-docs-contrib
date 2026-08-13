@@ -52,7 +52,6 @@ You can specify the following properties when you create a **distributionList**.
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name of the distribution list. Required.|
-|members|[member](../resources/member.md) collection|The list of members to add to the distribution list. Optional.|
 
 ## Response
 
@@ -63,7 +62,6 @@ If successful, this method returns a `201 Created` response code and a [distribu
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_distributionlist"
@@ -74,47 +72,9 @@ POST https://graph.microsoft.com/beta/me/distributionLists
 Content-Type: application/json
 
 {
-  "displayName": "Project Team",
-  "members": [
-    {
-      "displayName": "Adele Vance",
-      "emailAddress": "AdeleV@contoso.com",
-      "recipientType": "mailbox"
-    },
-    {
-      "displayName": "Alex Wilber",
-      "emailAddress": "AlexW@contoso.com",
-      "recipientType": "mailbox"
-    }
-  ]
+  "displayName": "Project Team"
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-distributionlist-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-distributionlist-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-distributionlist-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-distributionlist-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-distributionlist-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/create-distributionlist-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -136,20 +96,6 @@ Content-Type: application/json
   "createdDateTime": "2024-03-15T10:30:00Z",
   "lastModifiedDateTime": "2024-03-15T10:30:00Z",
   "categories": [],
-  "displayName": "Project Team",
-  "members": [
-    {
-      "@odata.type": "#microsoft.graph.member",
-      "displayName": "Adele Vance",
-      "emailAddress": "AdeleV@contoso.com",
-      "recipientType": "mailbox"
-    },
-    {
-      "@odata.type": "#microsoft.graph.member",
-      "displayName": "Alex Wilber",
-      "emailAddress": "AlexW@contoso.com",
-      "recipientType": "mailbox"
-    }
-  ]
+  "displayName": "Project Team"
 }
 ```
