@@ -50,7 +50,6 @@ PATCH /users/{id | userPrincipalName}/distributionLists/{distributionList-id}
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name of the distribution list. Optional.|
-|members|[member](../resources/member.md) collection|The list of members in the distribution list. This replaces the entire member list. Optional.|
 
 ## Response
 
@@ -61,7 +60,6 @@ If successful, this method returns a `200 OK` response code and an updated [dist
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_distributionlist"
@@ -75,32 +73,6 @@ Content-Type: application/json
   "displayName": "Updated Project Team"
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-distributionlist-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-distributionlist-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-distributionlist-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-distributionlist-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-distributionlist-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/update-distributionlist-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -122,22 +94,6 @@ Content-Type: application/json
   "createdDateTime": "2024-03-15T10:30:00Z",
   "lastModifiedDateTime": "2024-03-25T09:45:00Z",
   "categories": [],
-  "displayName": "Updated Project Team",
-  "members": [
-    {
-      "@odata.type": "#microsoft.graph.member",
-      "displayName": "Adele Vance",
-      "key": "AdeleV@contoso.com",
-      "routingType": "SMTP",
-      "recipientType": "mailbox"
-    },
-    {
-      "@odata.type": "#microsoft.graph.member",
-      "displayName": "Alex Wilber",
-      "key": "AlexW@contoso.com",
-      "routingType": "SMTP",
-      "recipientType": "mailbox"
-    }
-  ]
+  "displayName": "Updated Project Team"
 }
 ```

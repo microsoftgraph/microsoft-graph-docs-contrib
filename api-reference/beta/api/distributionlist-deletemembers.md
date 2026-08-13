@@ -1,8 +1,8 @@
 ---
 title: "distributionList: deleteMembers"
 description: "Remove members from a distributionList."
-author: "kemwangi"
-ms.date: 06/09/2026
+author: "rwaithera"
+ms.date: 08/03/2026
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
@@ -51,7 +51,7 @@ The following table lists the parameters that are required when you call this ac
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|members|[member](../resources/member.md) collection|The list of members to remove from the distribution list. Each member must include an **emailAddress** to identify the member to remove. Other properties are ignored. Required.|
+|members|[member](../resources/member.md) collection|The members to remove from the distribution list. Each member must include **type** and either **key**, **memberId**, or both. The **displayName** property is ignored. Required.|
 
 ## Response
 
@@ -62,7 +62,6 @@ If successful, this action returns a `200 OK` response code and a [distributionL
 ### Request
 
 The following example shows a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "distributionlist_deletemembers"
@@ -76,38 +75,11 @@ Content-Type: application/json
   "members": [
     {
       "key": "MeganB@contoso.com",
-      "routingType": "SMTP",
-      "recipientType": "contact"
+      "type": "mailbox"
     }
   ]
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/distributionlist-deletemembers-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/distributionlist-deletemembers-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/distributionlist-deletemembers-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/distributionlist-deletemembers-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/distributionlist-deletemembers-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/distributionlist-deletemembers-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
