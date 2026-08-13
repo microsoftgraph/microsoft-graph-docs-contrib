@@ -1,61 +1,59 @@
 ---
 title: "auditLogQuery resource type"
-description: "Represents an audit log query that is used to query and retrieve relevant audit log records."
-author: "arishojaswi"
+description: "Represents a query against the Microsoft 365 unified audit log."
+author: "imsandhya7-spec"
+ms.subservice: security
 ms.localizationpriority: medium
-ms.subservice: "security"
 doc_type: resourcePageType
-ms.date: 09/10/2024
+ms.date: 06/17/2026
+toc.title: "Audit log query"
 ---
-
 # auditLogQuery resource type
 
 Namespace: microsoft.graph.security
 
-Represents an audit log query that is used to query and retrieve relevant audit log records.
+Represents a query against the Microsoft 365 unified audit log. Use this resource to define search parameters and retrieve audit log records.
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List audit log queries](../api/security-auditcoreroot-list-auditlogqueries.md)|[auditLogQuery](../resources/security-auditlogquery.md) collection|Get a list of the [auditLogQuery](../resources/security-auditlogquery.md) objects and their properties.|
-|[Create audit log query](../api/security-auditcoreroot-post-auditlogqueries.md)|[auditLogQuery](../resources/security-auditlogquery.md)|Create a new [auditLogQuery](../resources/security-auditlogquery.md) object.|
-|[Get audit log query](../api/security-auditlogquery-get.md)|[auditLogQuery](../resources/security-auditlogquery.md)|Read the properties and relationships of a [auditLogQuery](../resources/security-auditlogquery.md) object.|
+|[Get audit log query](../api/security-auditlogquery-get.md)|[auditLogQuery](../resources/security-auditlogquery.md)|Read the properties and relationships of an [auditLogQuery](../resources/security-auditlogquery.md) object.|
 |[List records](../api/security-auditlogquery-list-records.md)|[auditLogRecord](../resources/security-auditlogrecord.md) collection|Get the auditLogRecord resources from the records navigation property.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|administrativeUnitIdFilters|String collection|The administrative units tagged to an audit log record.|
-|displayName|String|The display name of the saved audit log query.|
-|filterEndDateTime|DateTimeOffset|The end date of the date range in the query.|
-|filterStartDateTime|DateTimeOffset|The start date of the date range in the query.|
-|id|String|Unique identifier for the audit log query. Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|ipAddressFilters|String collection|The IP address of the device that was used when the activity was logged.|
-|keywordFilter|String|Free text field to search non-indexed properties of the audit log.|
-|objectIdFilters|String collection|For SharePoint and OneDrive for Business activity, the full path name of the file or folder accessed by the user. For Exchange admin audit logging, the name of the object that was modified by the cmdlet.|
-|operationFilters|String collection|The name of the user or admin activity. For a description of the most common operations/activities, see [Search the audit log in the Office 365 Protection Center](https://go.microsoft.com/fwlink/p/?LinkId=708432).|
-|recordTypeFilters|[microsoft.graph.security.auditLogRecordType](../resources/security-auditlogrecordtype.md) collection|The type of operation indicated by the record. For the list of member values, see [auditLogRecordType](../resources/security-auditlogrecordtype.md).|
-|serviceFilter|String|Refers to the workload property in the audit record. This is the Microsoft service where the activity occurred. Optional.|
-|status|microsoft.graph.security.auditLogQueryStatus|Describes the current status of the query. The possible values are: `notStarted`, `running`, `succeeded`, `failed`, `cancelled`, `unknownFutureValue`.|
-|userPrincipalNameFilters|String collection|The UPN (user principal name) of the user who performed the action (specified in the operation property) that resulted in the record being logged; for example, _my_name@my_domain_name_.|
+|administrativeUnitIdFilters|String collection|The collection of administrative unit IDs to filter on.|
+|displayName|String|The display name of the audit log query.|
+|filterEndDateTime|DateTimeOffset|The end date and time of the audit log query filter.|
+|filterStartDateTime|DateTimeOffset|The start date and time of the audit log query filter.|
+|id|String|The unique identifier for the audit log query. Inherited from [entity](../resources/entity.md).|
+|ipAddressFilters|String collection|The collection of IP addresses to filter on.|
+|keywordFilter|String|The keyword to filter on.|
+|objectIdFilters|String collection|The collection of object IDs to filter on.|
+|operationFilters|String collection|The collection of operations to filter on.|
+|recordTypeFilters|[microsoft.graph.security.auditLogRecordType](../resources/security-auditlogrecordtype.md) collection|The collection of record types to filter on.|
+|serviceFilters|String collection|The collection of services to filter on.|
+|status|microsoft.graph.security.auditLogQueryStatus|The status of the audit log query. Possible values are: `notStarted`, `running`, `succeeded`, `failed`, `cancelled`, `unknownFutureValue`.|
+|userPrincipalNameFilters|String collection|The collection of user principal names to filter on.|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|records|[microsoft.graph.security.auditLogRecord](../resources/security-auditlogrecord.md) collection|An individual audit log record.|
+|records|[microsoft.graph.security.auditLogRecord](../resources/security-auditlogrecord.md) collection|The collection of audit log records retrieved by the query.|
 
 ## JSON representation
 
 The following JSON representation shows the resource type.
+
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
-  "@odata.type": "microsoft.graph.security.auditLogQuery",
-  "baseType": "microsoft.graph.entity",
-  "openType": false
+  "@odata.type": "microsoft.graph.security.auditLogQuery"
 }
 -->
 ``` json
@@ -65,26 +63,14 @@ The following JSON representation shows the resource type.
   "displayName": "String",
   "filterStartDateTime": "String (timestamp)",
   "filterEndDateTime": "String (timestamp)",
-  "recordTypeFilters": [
-    "String"
-  ],
+  "recordTypeFilters": ["String"],
   "keywordFilter": "String",
-  "serviceFilter": "String",
-  "operationFilters": [
-    "String"
-  ],
-  "userPrincipalNameFilters": [
-    "String"
-  ],
-  "ipAddressFilters": [
-    "String"
-  ],
-  "objectIdFilters": [
-    "String"
-  ],
-  "administrativeUnitIdFilters": [
-    "String"
-  ],
+  "serviceFilters": ["String"],
+  "operationFilters": ["String"],
+  "userPrincipalNameFilters": ["String"],
+  "ipAddressFilters": ["String"],
+  "objectIdFilters": ["String"],
+  "administrativeUnitIdFilters": ["String"],
   "status": "String"
 }
 ```

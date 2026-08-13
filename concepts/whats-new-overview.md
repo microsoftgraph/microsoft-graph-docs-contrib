@@ -254,6 +254,10 @@ Evaluate applications in the Microsoft Entra application gallery by using the [a
 - Added the migration guide [Migrate from legacy alerts to the alerts and incidents API](/graph/alertsv1-alertsv2-migration) to help you transition your apps from the deprecated Microsoft Graph security alerts v1 API to the new alerts and incidents API.
 - Extended the [alertEvidence](/graph/api/resources/security-alertevidence) base type with additional derived types to provide detailed context about various artifacts involved in [security alerts](/graph/api/resources/security-alert).
 
+### Security | Audit log query
+
+- Added [auditData](/graph/api/resources/security-auditdata) derived types to represent audit records for Microsoft 365 workloads, including Exchange, SharePoint, Microsoft Teams, Microsoft Entra ID, Compliance DLP, Microsoft Purview, Copilot, Sentinel, Viva Glint, Defender, Power Platform, Dragon Copilot, Fabric, and others. Added the **dynamicProperties** property of type **auditRecordTypeDictionary** to the **auditData** resource to enable dynamic audit event properties. Added corresponding members to the [auditLogRecordType](/graph/api/resources/security-auditlogrecordtype) enumeration.
+
 ### Teamwork and communications | Messaging
 
 Added the [chatMessageBody](/graph/api/resources/chatmessagebody?view=graph-rest-beta&preserve-view=true) resource type to support Teams-specific message content formats, including `markdown`.
