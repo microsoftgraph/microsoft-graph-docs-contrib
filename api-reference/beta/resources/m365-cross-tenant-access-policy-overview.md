@@ -30,14 +30,31 @@ The API gives administrators and applications programmatic, granular control ove
 
 Control exactly which Microsoft 365 capabilities external users from a trusted partner can use, and scope each capability to specific users, groups, or the entire tenant. Supported capabilities include:
 
-- Profile card and photo sharing.
 - Calendar availability (free/busy), with basic or limited-detail options.
 - Calendar sharing, at simple, detail, or reviewer fidelity.
 - MailTips shown while composing email.
-- Places — room and desk booking.
 - Mailbox migration between tenants (partner policy only).
+- Profile card and photo sharing.
+- Places — room and desk booking.
 
 Teams Shared Channels are also available between trusted tenants, but they're governed directly by Microsoft Entra B2B direct connect rather than by this API.
+
+### Scope capabilities to the right audience
+
+Enabling a capability doesn't have to expose the entire resource tenant. Each capability can be scoped to specific users, specific groups, or all users or groups in the tenant (depending on the resource scope type).
+Scoping works through two lists: an *include* list and an *exclude* list. Two rules govern how they interact:
+
+- **Exclude wins over include.** If a principal appears on both lists, they're out of scope.
+- **Use `"All"` to target every principal of the selected `resourceType`.** For example, `resourceType: user` with `resourceId: "All"` covers every user in the tenant, and `resourceType: group` with `resourceId: "All"` covers every group. You don't need to enumerate individual IDs.
+
+| Include | Exclude | Effective audience |
+| --- | --- | --- |
+| `"All"` | *(empty)* | All principals of the selected `resourceType` in the resource tenant. |
+| `"All"` | Group A | All users except members of Group A. |
+| Group A | *(empty)* | Members of Group A only. |
+| Group A | User X | Members of Group A except User X. |
+
+For the property names and JSON shape, see the **included** and **excluded** properties on [m365CapabilityResourceScopes](m365capabilityresourcescopes.md), and the `resourceType`/`resourceId` pair on [m365CapabilityResourceScope](m365capabilityresourcescope.md).
 
 ### Apply a consistent, two-tier policy model
 

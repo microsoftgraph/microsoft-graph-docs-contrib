@@ -3779,14 +3779,14 @@
             "crossTenantAccessPolicy",
             "crossTenantAccessPolicyConfigurationDefault",
             "crossTenantAccessPolicyConfigurationPartner",
-            "crossTenantIdentitySyncPolicyPartner",
-            "m365CapabilityBase"
+            "crossTenantIdentitySyncPolicyPartner"
           ],
           "childNodes": [
             {
               "name": "Microsoft 365 capabilities",
               "overview": "../../resources/m365-cross-tenant-access-policy-overview.md",
               "resources": [
+                "m365CapabilityBase",
                 "crossTenantCalendarAvailabilityBasic",
                 "crossTenantCalendarAvailabilityLimitedDetails",
                 "crossTenantCalendarSharingFreeBusyDetail",

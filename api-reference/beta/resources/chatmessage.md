@@ -70,6 +70,7 @@ The [targetedChatMessage](targetedchatmessage.md) resource is a specialized type
 |body|[chatMessageBody](chatmessagebody.md)|Plaintext/HTML/Markdown representation of the content of the chat message. Representation is specified by the **messageBodyContentType** (or deprecated **contentType**) property inside the body. The content is always in HTML if the chat message contains a [chatMessageMention](chatmessagemention.md). |
 |channelIdentity|[channelIdentity](channelidentity.md)|If the message was sent in a channel, represents identity of the channel.|
 |chatId|string|If the message was sent in a **chat**, represents the identity of the **chat**.|
+|citations|[chatMessageCitation](chatmessagecitation.md) collection|Read-only. Inline citations that reference external sources cited in the message. Citations are system-generated for bot messages and appear as a typed collection.|
 |createdDateTime|dateTimeOffset|Timestamp of when the chat message was created.|
 |deletedDateTime|dateTimeOffset|Read-only. Timestamp at which the chat message was deleted, or null if not deleted. |
 |etag| string | Read-only. Version number of the chat message. |
@@ -112,6 +113,7 @@ The following JSON representation shows the resource type.
     "summary",
     "attachments",
     "mentions",
+    "citations",
     "reactions",
     "policyViolation",
     "chatId",
@@ -127,6 +129,7 @@ The following JSON representation shows the resource type.
   "body": {"@odata.type": "microsoft.graph.chatMessageBody"},
   "channelIdentity": {"@odata.type": "microsoft.graph.channelIdentity"},
   "chatId": "String",
+  "citations": [{"@odata.type": "microsoft.graph.chatMessageCitation"}],
   "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",
   "etag": "String",

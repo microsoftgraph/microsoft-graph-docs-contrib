@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "87e904df-d6a6-4e69-a697-bdfa505f9d2d",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "appliedByUser",
+          "ChangeType": "Addition",
+          "Description": "Added the **appliedByUser** parameter to the [assignSensitivityLabel](https://learn.microsoft.com/en-us/graph/api/driveitem-assignsensitivitylabel?view=graph-rest-beta) action on [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta). This parameter allows app-only callers to specify the user on whose behalf the label is applied.",
+          "Target": "driveItem"
+        }
+      ],
+      "Id": "87e904df-d6a6-4e69-a697-bdfa505f9d2d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-08-12T06:57:00.0000000Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "3498fb14-8a27-478b-b9d7-391c6da24b98",
           "ApiChange": "Method",
           "ChangedApiName": "fileStorageContainer",
@@ -15,6 +33,24 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2026-08-10T18:38:43.9321467Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "0ed23253-c04f-42ae-8648-de8a21154a97",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "appliedByUser",
+          "ChangeType": "Addition",
+          "Description": "Added the **appliedByUser** parameter to the [assignSensitivityLabel](https://learn.microsoft.com/en-us/graph/api/driveitem-assignsensitivitylabel?view=graph-rest-1.0) action on [driveItem](https://learn.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0). This parameter allows app-only callers to specify the user on whose behalf the label is applied.",
+          "Target": "driveItem"
+        }
+      ],
+      "Id": "0ed23253-c04f-42ae-8648-de8a21154a97",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-08-12T06:57:00.0000000Z",
       "WorkloadArea": "Files",
       "SubArea": ""
     },

@@ -6,7 +6,7 @@ ms.date: 04/23/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-sign-in"
 doc_type: resourcePageType
-toc.title: "Microsoft 365 capabilities"
+toc.title: "Microsoft 365 capability base"
 ---
 
 # m365CapabilityBase resource type

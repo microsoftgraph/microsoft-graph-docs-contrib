@@ -24,12 +24,14 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 ### Files
 
 - Added the [Upsert columns](/graph/api/filestoragecontainer-patch-columns) method to the [fileStorageContainer](/graph/api/resources/filestoragecontainer) resource type to create or update up to 20 columnDefinition objects in a single request.
+- Added the **appliedByUser** parameter to the [assignSensitivityLabel](/graph/api/driveitem-assignsensitivitylabel) action on the [driveItem](/graph/api/resources/driveitem) resource. This parameter allows app-only callers to specify the user identity on whose behalf the sensitivity label is applied.
 
 ## August 2026: New in preview only
 
 ### Files
 
 - Added the [Upsert columns](/graph/api/filestoragecontainer-patch-columns?view=graph-rest-beta&preserve-view=true) method to the [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true) resource type to create or update up to 20 columnDefinition objects in a single request.
+- Added the **appliedByUser** parameter to the [assignSensitivityLabel](/graph/api/driveitem-assignsensitivitylabel?view=graph-rest-beta&preserve-view=true) action on the [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta&preserve-view=true) resource. This parameter allows app-only callers to specify the user identity on whose behalf the sensitivity label is applied, enabling label assignment for SharePoint Embedded containers.
 
 ### Teamwork and communications | Messaging
 
@@ -187,6 +189,10 @@ Detect and report synthetic (AI-generated) media in meeting calls using the [rep
 ### Teamwork and communications | Graph API controls
 
 Updated Microsoft Graph documentation for transcript APIs to add guidance on tenant administrator controls that govern transcript access and speaker attribution. For more information, see [Get change notifications for transcripts and recordings using Microsoft Graph](teams-changenotifications-callrecording-and-calltranscript.md).
+
+### Teamwork and communications | Messaging
+
+- Added the **citations** property to the [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta&preserve-view=true) resource type to represent inline citations that reference external sources cited in bot-generated messages.
 
 ### Teamwork and communications | Shift management
 
