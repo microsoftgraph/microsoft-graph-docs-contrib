@@ -25,6 +25,10 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 - Added the [Upsert columns](/graph/api/filestoragecontainer-patch-columns) method to the [fileStorageContainer](/graph/api/resources/filestoragecontainer) resource type to create or update up to 20 columnDefinition objects in a single request.
 - Added the **appliedByUser** parameter to the [assignSensitivityLabel](/graph/api/driveitem-assignsensitivitylabel) action on the [driveItem](/graph/api/resources/driveitem) resource. This parameter allows app-only callers to specify the user identity on whose behalf the sensitivity label is applied.
 
+### Identity and access | Directory management
+
+Added the [recovery](/graph/api/resources/entrarecoveryservices-recovery) resource type and related methods to programmatically recover critical Microsoft Entra directory objects from automatically created point-in-time snapshots. Use these APIs to inspect available snapshots, preview and scope changes before restoration, run recovery jobs, monitor progress, and review failed changes.
+
 ### Teamwork and communications | Calls and online meetings
 
 - Updated the [getAllRecordings](/graph/api/onlinemeeting-getallrecordings) and [getAllTranscripts](/graph/api/onlinemeeting-getalltranscripts) methods to document a service-update issue that can cause paginated requests to return an empty collection followed by duplicate items.
@@ -138,6 +142,10 @@ Added the `Group.ManageProtection.All` delegated permission as the least privile
 - Added the [remoteTenantGroup](/graph/api/resources/remotetenantgroup?view=graph-rest-beta&preserve-view=true) resource type and related methods to retrieve groups from remote Microsoft Entra tenants through the directory resource.
 - Added the **sponsorOf** relationship to the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource type to represent the directory objects that a user sponsors.
 - Added the **managerApplications** property to the [agentIdentity](/graph/api/resources/agentidentity?view=graph-rest-beta&preserve-view=true) and [agentIdentityBlueprintPrincipal](/graph/api/resources/agentidentityblueprintprincipal?view=graph-rest-beta&preserve-view=true) resource types to represent the collection of applications designated as managers of the backing agent identity blueprint.
+
+### Files | Reports
+
+Added the [getSharePointApiUsage](/graph/api/reportroot-getsharepointapiusage?view=graph-rest-beta&preserve-view=true) method to the [reportRoot](/graph/api/resources/reportroot?view=graph-rest-beta&preserve-view=true) resource to retrieve aggregated OneDrive and SharePoint API usage metrics for a tenant.
 
 ### Identity and access | Governance
 

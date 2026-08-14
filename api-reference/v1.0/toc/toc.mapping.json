@@ -841,6 +841,24 @@
                 "unifiedRoleDefinition",
                 "unifiedRoleAssignment"
               ]
+            },
+            {
+              "name": "Entra Backup and Recovery",
+              "overview": "../../resources/entrarecoveryservices-backup-recovery-overview.md",
+              "resources": [
+                "microsoft.graph.entraRecoveryServices.recovery",
+                "microsoft.graph.entraRecoveryServices.recoveryChangeObjectBase",
+                "microsoft.graph.entraRecoveryServices.recoveryJob",
+                "microsoft.graph.entraRecoveryServices.recoveryJobBase",
+                "microsoft.graph.entraRecoveryServices.recoveryPreviewJob",
+                "microsoft.graph.entraRecoveryServices.snapshot"
+              ],
+              "complexTypes": [
+                "microsoft.graph.entraRecoveryServices.entityTypeAndIds",
+                "microsoft.graph.entraRecoveryServices.recoveryJobEntityNameAndIdsFilter",
+                "microsoft.graph.entraRecoveryServices.recoveryJobEntityNamesFilter",
+                "microsoft.graph.entraRecoveryServices.recoveryJobFilteringCriteriaBase"
+              ]
             }
           ]
         },
