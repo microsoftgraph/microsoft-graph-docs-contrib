@@ -135,7 +135,9 @@ Added the `Group.ManageProtection.All` delegated permission as the least privile
 
 ### Identity and access | Directory management
 
-Added the **sponsorOf** relationship to the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource type to represent the directory objects that a user sponsors.
+- Added the [remoteTenantGroup](/graph/api/resources/remotetenantgroup?view=graph-rest-beta&preserve-view=true) resource type and related methods to retrieve groups from remote Microsoft Entra tenants through the directory resource.
+- Added the **sponsorOf** relationship to the [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true) resource type to represent the directory objects that a user sponsors.
+- Added the **managerApplications** property to the [agentIdentity](/graph/api/resources/agentidentity?view=graph-rest-beta&preserve-view=true) and [agentIdentityBlueprintPrincipal](/graph/api/resources/agentidentityblueprintprincipal?view=graph-rest-beta&preserve-view=true) resource types to represent the collection of applications designated as managers of the backing agent identity blueprint.
 
 ### Identity and access | Governance
 
