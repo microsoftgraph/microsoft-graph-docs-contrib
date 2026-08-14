@@ -1614,12 +1614,42 @@
           "name": "Audit log query",
           "overview": "../../resources/security-auditlogquery.md",
           "resources": [
+            "microsoft.graph.security.auditCoreRoot",
             "microsoft.graph.security.auditLogQuery",
             "microsoft.graph.security.auditLogRecord"
           ],
           "complexTypes": [
             "microsoft.graph.security.auditData",
-            "microsoft.graph.security.defaultAuditData"
+            "microsoft.graph.security.auditRecordTypeDictionary",
+            "microsoft.graph.security.aISpanOutputsAuditRecord",
+            "microsoft.graph.security.alertSubmissionAuditRecord",
+            "microsoft.graph.security.alertSubmissionResultDetailAuditRecord",
+            "microsoft.graph.security.azureAISearchAuditRecord",
+            "microsoft.graph.security.compliancePolicyGradingSharePointAuditRecord",
+            "microsoft.graph.security.complianceSitGradingSharePointAuditRecord",
+            "microsoft.graph.security.copilotSessionSharingAuditRecord",
+            "microsoft.graph.security.defaultAuditData",
+            "microsoft.graph.security.defenderSecurityForAIConfigurationAuditRecord",
+            "microsoft.graph.security.dragonCopilotAccessRecord",
+            "microsoft.graph.security.dragonCopilotAdminRecord",
+            "microsoft.graph.security.dragonCopilotClinicalDataRecord",
+            "microsoft.graph.security.dragonCopilotSessionRecord",
+            "microsoft.graph.security.eopSubmissionFeedEntityAuditRecord",
+            "microsoft.graph.security.fabricPolicyRecord",
+            "microsoft.graph.security.mDASHAuditRecord",
+            "microsoft.graph.security.microsoftTeamsUserConcernAuditRecord",
+            "microsoft.graph.security.mosAgentInfoRecordV2",
+            "microsoft.graph.security.mspVectorSearchContentMetadataAuditRecord",
+            "microsoft.graph.security.p4AIRiskScoreRecord",
+            "microsoft.graph.security.securityCopilotIdentityManagementAuditRecord",
+            "microsoft.graph.security.securityDevelopmentLifecycleAILogAuditRecord",
+            "microsoft.graph.security.sonarDetonationEntityAuditRecord",
+            "microsoft.graph.security.sonarFileDetonationEntityAuditRecord",
+            "microsoft.graph.security.sonarSubmissionEntityAuditRecord",
+            "microsoft.graph.security.sonarUrlDetonationEntityAuditRecord",
+            "microsoft.graph.security.sparkCoreCustomLivePoolRecord",
+            "microsoft.graph.security.submissionEntityAuditRecord",
+            "microsoft.graph.security.vivaGlintAgenticCampaignAuditRecord"
           ]
         },
         {

@@ -16,7 +16,9 @@ An abstract type that supports the audit logs of various Microsoft 365 services 
 
 ## Properties
 
-None.
+|Property|Type|Description|
+|:---|:---|:---|
+|dynamicProperties|[microsoft.graph.security.auditRecordTypeDictionary](../resources/security-auditrecordtypedictionary.md)|An open-type dictionary that contains dynamic audit event properties as name-value pairs.|
 
 ## Relationships
 
@@ -32,6 +34,9 @@ The following JSON representation shows the resource type.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.security.auditData"
+  "@odata.type": "#microsoft.graph.security.auditData",
+  "dynamicProperties": {
+    "@odata.type": "microsoft.graph.security.auditRecordTypeDictionary"
+  }
 }
 ```
