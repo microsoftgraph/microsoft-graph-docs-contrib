@@ -178,6 +178,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "text",
+        "messageBodyContentType": "text",
         "content": "Hello World"
     },
     "channelIdentity": {
@@ -210,7 +211,7 @@ Content-type: application/json
 
 {
   "body": {
-    "contentType": "html",
+    "messageBodyContentType": "html",
     "content": "Hello World <at id=\"0\">Jane Smith</at>"
   },
   "mentions": [
@@ -302,6 +303,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "Hello World <at id=\"0\">Jane Smith</at>"
     },
     "channelIdentity": {
@@ -353,7 +355,7 @@ Content-type: application/json
 {
     "subject": null,
     "body": {
-        "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
     },
     "attachments": [
@@ -442,6 +444,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
     },
     "channelIdentity": {
@@ -486,7 +489,7 @@ Content-type: application/json
 
 {
     "body": {
-        "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "Here's the latest budget. <attachment id=\"153fa47d-18c9-4179-be08-9879815a9f90\"></attachment>"
     },
     "attachments": [
@@ -573,6 +576,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "Here's the latest budget. <attachment id=\"153fa47d-18c9-4179-be08-9879815a9f90\"></attachment>"
     },
     "channelIdentity": {
@@ -617,7 +621,7 @@ Content-type: application/json
 
 {
     "body": {
-        "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "Testing with file share link. <attachment id=\"668f7fa8-8129-4de7-b32b-fe1b442e6ef1\"></attachment>"
     },
     "attachments": [
@@ -702,6 +706,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "Testing with file share link. <attachment id=\"668f7fa8-8129-4de7-b32b-fe1b442e6ef1\"></attachment>"
     },
     "channelIdentity": {
@@ -746,7 +751,7 @@ Content-type: application/json
 
 {
 	"body": {
-        "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "<img height=\"297\" src=\"../hostedContents/1/$value\" width=\"297\">"
     },
     "hostedContents":[
@@ -834,6 +839,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "<img height=\"297\" src=\"https://graph.microsoft.com/v1.0/chats/19:97641583cf154265a237da28ebbde27a@thread.v2/messages/1736180156294/hostedContents/aWQ9eF8wLWV1cy1kMTQtYjUxMDlhMDhkODZkM2ZjODBkNzFlYjUzMWM4ZDlmZGEsdHlwZT0xLHVybD1odHRwczovL3VzLWFwaS5hc20uc2t5cGUuY29tL3YxL29iamVjdHMvMC1ldXMtZDE0LWI1MTA5YTA4ZDg2ZDNmYzgwZDcxZWI1MzFjOGQ5ZmRhL3ZpZXdzL2ltZ3BzaF9mdWxsc2l6ZQ==/$value\" width=\"297\">"
     },
     "attachments": [],
@@ -868,7 +874,7 @@ Content-type: application/json
 {
     "subject": null,
     "body": {
-        "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
     },
     "attachments": [{
@@ -965,6 +971,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
     },
     "channelIdentity": {
@@ -1008,7 +1015,7 @@ Content-type: application/json
 
 {
     "body": {
-        "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "<at id=\"0\">General</at>&nbsp;Hello there!"
     },
     "mentions": [
@@ -1101,6 +1108,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "<at id=\"0\">General</at>&nbsp;Hello there!"
     },
     "channelIdentity": {
@@ -1150,7 +1158,7 @@ Content-type: application/json
 
 {
     "body": {
-        "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "<at id=\"0\">GraphTesting</at>&nbsp;Hello team"
     },
     "mentions": [
@@ -1245,6 +1253,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "<at id=\"0\">GraphTesting</at>&nbsp;Hello team"
     },
     "channelIdentity": {
@@ -1292,7 +1301,7 @@ Content-type: application/json
 
 {
     "body": {
-        "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "<at id=\"0\">TestTag</at>&nbsp;Testing Tags"
     },
     "mentions": [
@@ -1384,6 +1393,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "<at id=\"0\">TestTag</at>&nbsp;Testing Tags"
     },
     "channelIdentity": {
@@ -1437,7 +1447,7 @@ Content-type: application/json
 {
     "subject": null,
     "body": {
-        "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
     },
     "attachments": [
@@ -1528,6 +1538,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
     },
     "channelIdentity": {
@@ -1574,7 +1585,7 @@ Content-type: application/json
 {
     "subject": "Announcement Subheading",
     "body": {
-        "contentType": "text",
+        "messageBodyContentType": "text",
         "content": "<attachment id=\"d7ddbf876ae340c3a03bada395ec7da7\"></attachment>Announcement text"
     },
     "attachments": [
@@ -1675,6 +1686,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "text",
+        "messageBodyContentType": "text",
         "content": "<attachment id=\"d7ddbf876ae340c3a03bada395ec7da7\"></attachment>Announcement text"
     },
     "channelIdentity": {
@@ -1717,7 +1729,7 @@ Content-type: application/json
 
 {
     "body": {
-        "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "<emoji alt=\"😶‍🌫️\"></emoji>"
     }
 }
@@ -1798,6 +1810,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "<emoji id=\"faceinclouds\" alt=\"😶‍🌫️\" title=\"Face in clouds\"></emoji>"
     },
     "attachments": [],
@@ -1836,7 +1849,7 @@ Content-type: application/json
 
 {
   "body": {
-    "contentType": "html",
+    "messageBodyContentType": "html",
     "content": "<codeblock class=\"plaintext\"><code>Hello world</code></codeblock>"
   }
 }
@@ -1920,6 +1933,7 @@ Content-type: application/json
   },
   "body": {
     "contentType": "html",
+    "messageBodyContentType": "html",
     "content": "\n<codeblock class=\"plaintext\"><code>Hello world</code></codeblock>"
   },
   "attachments": [],
@@ -1949,7 +1963,7 @@ Content-Type: application/json
 
 {
   "body": {
-    "contentType": "html",
+    "messageBodyContentType": "html",
     "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
   },
   "attachments": [
@@ -2039,6 +2053,7 @@ Content-Type: application/json
   },
   "body": {
     "contentType": "text",
+    "messageBodyContentType": "text",
     "content": "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
   },
   "channelIdentity": {
@@ -2095,7 +2110,7 @@ POST https://graph.microsoft.com/beta/chats/19:4b6bed8d24574f6a9e436813cb2617d8@
       }
    },
    "body": {
-      "contentType": "html",
+      "messageBodyContentType": "html",
       "content": "Hello World"
    }
 }
@@ -2175,6 +2190,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "Hello World"
     },
     "attachments": [],
@@ -2217,7 +2233,7 @@ POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5
       }
    },
    "body": {
-      "contentType": "html",
+      "messageBodyContentType": "html",
       "content": "Hello World"
    }
 }
@@ -2296,6 +2312,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
+        "messageBodyContentType": "html",
         "content": "Hello World"
     },
     "channelIdentity": {

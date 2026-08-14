@@ -146,6 +146,7 @@ Content-type: application/json
             },
             "body": {
                 "contentType": "text",
+                "messageBodyContentType": "text",
                 "content": "Reply3"
             },
             "channelIdentity": {
@@ -188,6 +189,7 @@ Content-type: application/json
             },
             "body": {
                 "contentType": "text",
+                "messageBodyContentType": "text",
                 "content": "Reply2"
             },
             "channelIdentity": {
@@ -230,6 +232,7 @@ Content-type: application/json
             },
             "body": {
                 "contentType": "text",
+                "messageBodyContentType": "text",
                 "content": "Reply1"
             },
             "channelIdentity": {
