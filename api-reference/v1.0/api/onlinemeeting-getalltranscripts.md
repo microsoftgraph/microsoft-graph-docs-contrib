@@ -5,7 +5,7 @@ author: "bkeerthivasa"
 ms.localizationpriority: medium
 ms.subservice: "teams"
 doc_type: apiPageType
-ms.date: 09/10/2024
+ms.date: 08/13/2026
 ---
 
 # onlineMeeting: getAllTranscripts
@@ -23,6 +23,9 @@ For more information, see [delta query](/graph/delta-query-overview). For more e
 To learn more about using the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
+> [!NOTE]
+> This API has a [known issue](/graph/known-issues#apis-that-export-online-meeting-artifacts-may-return-duplicate-items-during-service-update) related to pagination token resets during a planned service update.
 
 ## Permissions
 
@@ -50,6 +53,9 @@ In the request URL, provide the following query parameters with values.
 |meetingOrganizerUserId|String|The user identifier of the meeting organizer that is used to filter artifacts for meetings organized by that specific user.|
 |startDateTime|DateTimeOffset|Optional parameter to filter for artifacts created after the given start date. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 
+> [!NOTE]
+> When using delta queries, follow the returned delta link without appending or reapplying filters. The token retains the filter from the initial request.
+
 ## Optional query parameters
 
 This method supports the following OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
@@ -70,10 +76,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Error responses
 
-This API is governed by tenant administrator settings for transcript access. Branch on the `innerError.code` value, not the message text — messages are subject to change.
+This API is governed by tenant administrator settings for transcript access. Branch on the `innerError.code` value, not the message text because messages are subject to change.
 
 | Status | Error code (`innerError.code`) | Condition |
-|--------|--------------------------------|-----------|
+|:-------|:--------------------------------|:----------|
+| `400 Bad Request` | `DeltaFilterNotAllowed` | A filter was supplied with a delta token. Follow the returned delta link without appending or reapplying filters. |
 | `403 Forbidden` | `GraphAccessToTranscriptsDisabled` | A tenant administrator has turned off Graph API access to transcripts. No retry succeeds until access is re-enabled. |
 
 The `transcriptContentUrl` returned by this function points at the transcript `/content` endpoint, which is additionally subject to the tenant's speaker-attribution setting. For that error and an example error payload, see [Get callTranscript](../api/calltranscript-get.md#error-responses).
