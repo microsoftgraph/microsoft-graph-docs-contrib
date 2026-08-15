@@ -2,7 +2,7 @@
 title: "Create recoveryPreviewJob"
 description: "Create a new preview job to enumerate changes required to restore to a snapshot's state."
 author: "yuhko-msft"
-ms.date: 03/04/2026
+ms.date: 06/05/2026
 ms.localizationpriority: medium
 ms.subservice: "entra-id"
 doc_type: apiPageType
@@ -11,8 +11,6 @@ doc_type: apiPageType
 # Create recoveryPreviewJob
 
 Namespace: microsoft.graph.entraRecoveryServices
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [recoveryPreviewJob](../resources/entrarecoveryservices-recoverypreviewjob.md) object to preview changes required to restore the tenant to a specific snapshot state. This operation follows the resource-based long running operation (RELO) pattern and returns a `202 Accepted` response with a `Location` header pointing to the job resource.
 
@@ -61,19 +59,14 @@ If successful, this method returns a `202 Accepted` response code with a `Locati
 The following example creates a preview job for all changes.
 
 #### Request
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_recoverypreviewjob_nofilter"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/directory/recovery/snapshots/MjAyNC0wOC0yNlQwMjozMDowMFo=/recoveryPreviewJobs
+POST https://graph.microsoft.com/v1.0/directory/recovery/snapshots/MjAyNC0wOC0yNlQwMjozMDowMFo=/recoveryPreviewJobs
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-recoverypreviewjob-nofilter-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -85,7 +78,7 @@ POST https://graph.microsoft.com/beta/directory/recovery/snapshots/MjAyNC0wOC0yN
 -->
 ``` http
 HTTP/1.1 202 Accepted
-Location: https://graph.microsoft.com/beta/directory/recovery/snapshots/MjAyNC0wOC0yNlQwMjozMDowMFo=/recoveryPreviewJobs/d3f8e7e8-7e87-4a7f-9d2c-c1c2d7e8e1f1
+Location: https://graph.microsoft.com/v1.0/directory/recovery/snapshots/MjAyNC0wOC0yNlQwMjozMDowMFo=/recoveryPreviewJobs/d3f8e7e8-7e87-4a7f-9d2c-c1c2d7e8e1f1
 ```
 
 ### Example 2: Create a preview job filtered by entity types
@@ -93,14 +86,13 @@ Location: https://graph.microsoft.com/beta/directory/recovery/snapshots/MjAyNC0w
 The following example creates a preview job for only user entity changes.
 
 #### Request
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_recoverypreviewjob_entitytypes"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/directory/recovery/snapshots/MjAyNC0wOC0yNlQwMjozMDowMFo=/recoveryPreviewJobs
+POST https://graph.microsoft.com/v1.0/directory/recovery/snapshots/MjAyNC0wOC0yNlQwMjozMDowMFo=/recoveryPreviewJobs
 Content-Type: application/json
 
 {
@@ -113,10 +105,6 @@ Content-Type: application/json
 }
 ```
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-recoverypreviewjob-entitytypes-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 #### Response
@@ -127,7 +115,7 @@ Content-Type: application/json
 -->
 ``` http
 HTTP/1.1 202 Accepted
-Location: https://graph.microsoft.com/beta/directory/recovery/snapshots/MjAyNC0wOC0yNlQwMjozMDowMFo=/recoveryPreviewJobs/d3f8e7e8-7e87-4a7f-9d2c-c1c2d7e8e1f1
+Location: https://graph.microsoft.com/v1.0/directory/recovery/snapshots/MjAyNC0wOC0yNlQwMjozMDowMFo=/recoveryPreviewJobs/d3f8e7e8-7e87-4a7f-9d2c-c1c2d7e8e1f1
 ```
 
 ### Example 3: Create a preview job filtered by specific entity IDs
@@ -135,14 +123,13 @@ Location: https://graph.microsoft.com/beta/directory/recovery/snapshots/MjAyNC0w
 The following example creates a preview job for specific users and groups.
 
 #### Request
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_recoverypreviewjob_entityids"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/directory/recovery/snapshots/MjAyNC0wOC0yNlQwMjozMDowMFo=/recoveryPreviewJobs
+POST https://graph.microsoft.com/v1.0/directory/recovery/snapshots/MjAyNC0wOC0yNlQwMjozMDowMFo=/recoveryPreviewJobs
 Content-Type: application/json
 
 {
@@ -168,10 +155,6 @@ Content-Type: application/json
 }
 ```
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-recoverypreviewjob-entityids-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 #### Response
@@ -182,5 +165,5 @@ Content-Type: application/json
 -->
 ``` http
 HTTP/1.1 202 Accepted
-Location: https://graph.microsoft.com/beta/directory/recovery/snapshots/MjAyNC0wOC0yNlQwMjozMDowMFo=/recoveryPreviewJobs/fa0f72f4-68e8-4625-846f-38865c49a086
+Location: https://graph.microsoft.com/v1.0/directory/recovery/snapshots/MjAyNC0wOC0yNlQwMjozMDowMFo=/recoveryPreviewJobs/fa0f72f4-68e8-4625-846f-38865c49a086
 ```

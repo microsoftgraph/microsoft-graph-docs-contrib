@@ -74,6 +74,7 @@ This resource is an open type that allows additional properties beyond those doc
 |disabledByMicrosoftStatus|String|Specifies whether Microsoft has disabled the registered Agent Identity Blueprint. The possible values are: `null` (default value), `NotDisabled`, and `DisabledDueToViolationOfServicesAgreement` (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement). Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |displayName|String|The display name for the agent identity. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |id|String|The unique identifier for the agent identity. Inherited from [directoryObject](../resources/directoryobject.md). Key. Not nullable. Read-only. Inherited from [entity](../resources/entity.md).|
+|managerApplications|Guid collection|The collection of application IDs designated as managers of this agent identity's backing [agentIdentityBlueprint](../resources/agentidentityblueprint.md). Read-only; the value is server-managed and reflects the **managerApplications** of the backing agentIdentityBlueprint. To change the managers, an owner or administrator must update the **managerApplications** property on the backing agentIdentityBlueprint **in the tenant where it's registered**. For multitenant agent identity blueprints, admins in a tenant where the blueprint is only consumed can't make this change — they must ask an owner or administrator in the blueprint's home tenant. Not nullable. Returned only on `$select`.|
 |servicePrincipalType|String|Set to __ServiceIdentity__ for all agent identities. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |tags|String collection|Custom strings that can be used to categorize and identify the agent identity. Not nullable. The value is the union of strings set here and on the associated Agent Identity Blueprint entity's **tags** property. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 
@@ -112,6 +113,9 @@ The following JSON representation shows the resource type. Only a subset of all 
   "createdDateTime": "String (timestamp)",
   "disabledByMicrosoftStatus": "String",
   "displayName": "String",
+  "managerApplications": [
+    "Guid"
+  ],
   "servicePrincipalType": "String",
   "tags": [
     "String"

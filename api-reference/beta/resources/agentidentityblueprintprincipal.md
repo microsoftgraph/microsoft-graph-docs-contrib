@@ -75,6 +75,7 @@ This resource is an open type that allows additional properties beyond those doc
 |displayName|String|The display name for the agent identity blueprint principal. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |id|String|The unique identifier for the agent identity blueprint principal. Inherited from [entity](../resources/entity.md). Key. Not nullable. Read-only.|
 |info|[informationalUrl](../resources/informationalurl.md)|Basic profile information of the acquired application such as app's marketing, support, terms of service and privacy statement URLs. The terms of service and privacy statement are surfaced to users through the user consent experience. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
+|managerApplications|Guid collection|The collection of application IDs designated as managers of this agent identity blueprint principal's backing [agentIdentityBlueprint](../resources/agentidentityblueprint.md). Read-only; the value is server-managed and reflects the **managerApplications** of the backing agentIdentityBlueprint. To change the managers, an owner or administrator must update the **managerApplications** property on the backing agentIdentityBlueprint **in the tenant where it's registered**. For multitenant agent identity blueprints, admins in a tenant where the blueprint is only consumed can't make this change — they must ask an owner or administrator in the blueprint's home tenant. Not nullable. Returned only on `$select`.|
 |publishedPermissionScopes|[permissionScope](../resources/permissionscope.md) collection|The delegated permissions exposed by the application. For more information, see the **oauth2PermissionScopes** property on the agent identity blueprint entity's **api** property. Not nullable. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |publisherName|String|The name of the Microsoft Entra tenant that published the application. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
 |servicePrincipalNames|String collection|Read-only **identifierUris** used to identify the permissions exposed by this app within Microsoft Entra ID. Not nullable. **Property blocked on Agent Identity Blueprint Principal**. Inherited from [servicePrincipal](../resources/serviceprincipal.md).|
@@ -136,6 +137,9 @@ The following JSON representation shows the resource type. Only a subset of all 
   "info": {
     "@odata.type": "microsoft.graph.informationalUrl"
   },
+  "managerApplications": [
+    "Guid"
+  ],
   "publishedPermissionScopes": [
     {
       "@odata.type": "microsoft.graph.permissionScope"
