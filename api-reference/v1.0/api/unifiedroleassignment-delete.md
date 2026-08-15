@@ -37,9 +37,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  EntitlementManagement.ReadWrite.All  |
+|Delegated (work or school account) |  RoleManagement.ReadWrite.EntitlementManagement, EntitlementManagement.ReadWrite.All  |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | EntitlementManagement.ReadWrite.All |
+|Application | RoleManagement.ReadWrite.EntitlementManagement, EntitlementManagement.ReadWrite.All |
 
 ## HTTP request
 
