@@ -22,6 +22,8 @@ Third-party bots can invoke this action only when the meeting tenant administrat
 
 The detection bot must be admitted to the call before it can call this action. For more information about registering a calling bot and joining calls, see [Calls and online meetings](../resources/communications-api-overview.md). The bot obtains the call ID and participant ID from the call roster and subsequent participant roster update notifications, and uses the [call](../resources/call.md)'s **id** as `{call-id}` and the [participant](../resources/participant.md)'s **id** as `{participant-id}` in the request URL.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 Choose the permission or permissions marked as least privileged for this API. Use a higher privileged permission or permissions [only if your app requires it](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions). For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
