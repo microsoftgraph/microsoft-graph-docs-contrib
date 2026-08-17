@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "a8278b4a-2f17-4011-be29-08722b68a879",
+          "ApiChange": "Method",
+          "ChangedApiName": "Update message",
+          "ChangeType": "Addition",
+          "Description": "Added support to update a [message](https://learn.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-1.0) by using a MIME payload in the [Update message](https://learn.microsoft.com/en-us/graph/api/message-update?view=graph-rest-1.0) method.",
+          "Target": "message"
+        },
+        {
+          "Id": "a8278b4a-2f17-4011-be29-08722b68a879",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Mail.Advanced.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for the `Mail.Advanced.ReadWrite` permission for MIME payload updates in the [Update message](https://learn.microsoft.com/en-us/graph/api/message-update?view=graph-rest-1.0) method.",
+          "Target": "message"
+        }
+      ],
+      "Id": "a8278b4a-2f17-4011-be29-08722b68a879",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-08-17T19:00:39.4601309Z",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "0ae06baf-014f-40b1-909a-3bd7704a7a66",
           "ApiChange": "Method",
           "ChangedApiName": "Delete",

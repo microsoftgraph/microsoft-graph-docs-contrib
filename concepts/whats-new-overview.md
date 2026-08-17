@@ -3,7 +3,7 @@ title: "What's new in Microsoft Graph"
 description: "Find out what's new in Microsoft Graph APIs, SDKs, documentation, and other resources."
 author: "lauragra"
 ms.localizationpriority: high
-ms.date: 06/23/2026
+ms.date: 08/17/2026
 ms.topic: whats-new
 ---
 
@@ -50,6 +50,10 @@ Added the **allowOnPremUpdateOfOnPremisesObjectIdentifierEnabled** property to t
   - [uploadFile](/graph/api/customdataprovidedresourceuploadsession-uploadfile) action
   - **uploadSessions** navigation property on [accessPackageResource](/graph/api/resources/accesspackageresource)
   - [customDataProvidedResourceUploadStatus](/graph/api/resources/enums#customdataprovidedresourceuploadstatus-values) enumeration
+
+### Mail
+
+Updated the [Update message](/graph/api/message-update) API to support MIME payload updates in addition to JSON patch updates. Use `Content-Type: text/plain` with a base64-encoded MIME body for the MIME path, which requires the `Mail.Advanced.ReadWrite` permission.
 
 ### Teamwork and communications | Calls and online meetings
 

@@ -1,11 +1,11 @@
 ---
 title: "Update message"
-description: "Update the properties of message object."
+description: "Update a message by using JSON or MIME payloads."
 author: "SuryaLashmiS"
 ms.localizationpriority: high
 ms.subservice: "outlook"
 doc_type: apiPageType
-ms.date: 06/21/2024
+ms.date: 08/17/2026
 ---
 
 # Update message
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Update the properties of a message object.
 
+This API supports updates by using either JSON or MIME payloads. JSON payloads update specific writable properties, while MIME payloads apply a higher-impact full message-content update.
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
@@ -21,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Mail.ReadWrite    |
-|Delegated (personal Microsoft account) | Mail.ReadWrite    |
-|Application | Mail.ReadWrite |
+|Delegated (work or school account) | Mail.ReadWrite (JSON payload), Mail.Advanced.ReadWrite (MIME payload)    |
+|Delegated (personal Microsoft account) | Mail.ReadWrite (JSON payload), Mail.Advanced.ReadWrite (MIME payload)    |
+|Application | Mail.ReadWrite (JSON payload), Mail.Advanced.ReadWrite (MIME payload) |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -37,9 +39,9 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 | Name       | Type | Description|
 |:-----------|:------|:----------|
 | Authorization  | string  |Bearer {token}. Required. Learn more about [authentication and authorization](/graph/auth/auth-concepts).|
-| Content-Type | string  | Nature of the data in the body of an entity. Required. |
+| Content-Type | string  | Nature of the data in the body of an entity. Required. Use `application/json` for a JSON object and `text/plain` for MIME content. |
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed. The following properties can be updated.
+When using JSON format, in the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed. The following properties can be updated.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -65,10 +67,16 @@ In the request body, supply the values for relevant fields that should be update
 Since the **message** resource supports [extensions](/graph/extensibility-overview), you can use the `PATCH` operation to
 add, update, or delete your own app-specific data in custom properties of an extension in an existing **message** instance.
 
+When specifying the body in MIME format, provide the MIME content as **a base64-encoded string** in the request body. MIME updates apply a full message-content update and require `Mail.Advanced.ReadWrite`.
+
 ## Response
 
 If successful, this method returns a `200 OK` response code and updated [message](../resources/message.md) object in the response body.
+
+If the request body includes malformed MIME content, this method returns `400 Bad request` and the following error message: "Invalid base64 string for MIME content."
 ## Example
+### Example 1: Update a message using JSON format
+
 ### Request
 The following example shows a request.
 
@@ -148,6 +156,34 @@ Content-type: application/json
 }
 ```
 
+### Example 2: Update a message using MIME format
+
+#### Request
+
+<!-- {
+  "blockType": "ignored",
+  "name": "update_message_mime"
+ }-->
+
+```http
+PATCH https://graph.microsoft.com/v1.0/me/messages/{id}
+Content-type: text/plain
+
+Q29udGVudC1UeXBlOiB0ZXh0L3BsYWluOyBjaGFyc2V0PSJ1cy1hc2NpaSINCk1pbWUtVmVyc2lvbjogMS4wDQpTdWJqZWN0OiBVcGRhdGVkIG1lc3NhZ2UNCg0KVXBkYXRlZCBtZXNzYWdlIGJvZHkgdmlhIE1JTUUu
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.message"
+ } -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+```
+
 ## Related content
 
 - [Add custom data to resources using extensions](/graph/extensibility-overview)
@@ -168,4 +204,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-
