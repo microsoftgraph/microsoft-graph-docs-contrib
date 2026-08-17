@@ -178,6 +178,10 @@ Added the [getSharePointApiUsage](/graph/api/reportroot-getsharepointapiusage?vi
   - Added the **manifestUrl** property to [verifiedIdProfileConfiguration](/graph/api/resources/verifiedidprofileconfiguration?view=graph-rest-beta&preserve-view=true) to reference the credential issuer's manifest defining the credential schema and issuer details.
   - Added the `verification` member to the **verifiedIdUsageConfigurationPurpose** enumeration to enable just-in-time identity verification scenarios, such as step-up authentication enforcement through Conditional Access policies.
 
+### Security | Advanced hunting
+
+Added the optional **workspaceId** parameter to the [runHuntingQuery](/graph/api/security-security-runhuntingquery) method to target a specific Log Analytics workspace.
+
 ### Security | Alerts and incidents
 
 - Added the **tenantId** property to the [userAccount](/graph/api/resources/security-useraccount) resource to provide the Entra home tenant ID for the compromised user account indicated in a [security alert](/graph/api/resources/security-alert) where the alert evidence is related to a [processEvidence](/graph/api/resources/security-processevidence), [userEvidence](/graph/api/resources/security-userevidence), or [mailboxEvidence](/graph/api/resources/security-mailboxevidence).

@@ -1,5 +1,23 @@
 {
   "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "464962b2-410c-44c4-a1bc-c8c12d7e7560",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "workspaceId",
+          "ChangeType": "Addition",
+          "Description": "Added the optional `workspaceId` parameter to the [runHuntingQuery](https://learn.microsoft.com/en-us/graph/api/security-security-runhuntingquery?view=graph-rest-1.0) method.",
+          "Target": "runHuntingQuery"
+        }
+      ],
+      "Id": "464962b2-410c-44c4-a1bc-c8c12d7e7560",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-08-17T13:00:00.0000000Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Advanced hunting"
+    },
 	{
       "ChangeList": [
         {
