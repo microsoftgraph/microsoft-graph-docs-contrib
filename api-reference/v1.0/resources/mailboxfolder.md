@@ -2,7 +2,7 @@
 title: "mailboxFolder resource type"
 description: "Represents a folder in a user's mailbox, such as inbox, drafts, or other user created folders."
 author: "cparker-msft"
-ms.date: 02/23/2026
+ms.date: 08/06/2026
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: resourcePageType
@@ -42,6 +42,7 @@ This resource supports [delta query](/graph/delta-query-overview) to track incre
 |parentFolderId|String|The unique identifier for the parent folder of this folder.|
 |totalItemCount|Int32|The number of items in the folder.|
 |type|String|Describes the folder class type.|
+|wellKnownName|String|The locale-independent well-known name of the folder for folders created by Outlook, such as `inbox`, `sentitems`, `drafts`, `deleteditems`, or `archive`. For user-created folders, the value is `null`. Read-only.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -68,6 +69,7 @@ The following JSON representation shows the resource type.
   "id": "String (identifier)",
   "parentFolderId": "String",
   "totalItemCount": "Int32",
+  "wellKnownName": "String",
   "type": "String"
 }
 ```

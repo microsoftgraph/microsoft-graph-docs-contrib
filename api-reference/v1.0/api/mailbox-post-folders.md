@@ -2,7 +2,7 @@
 title: "Create mailboxFolder"
 description: "Create a new mailboxFolder or child mailboxFolder in a user's mailbox."
 author: "cparker-msft"
-ms.date: 02/23/2026
+ms.date: 08/06/2026
 ms.localizationpriority: medium
 ms.subservice: "outlook"
 doc_type: apiPageType
@@ -60,7 +60,6 @@ If successful, this method returns a `201 Created` response code and a [mailboxF
 
 The following example shows how to create a new mailbox folder.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_mailboxfolder_from_",
@@ -81,12 +80,6 @@ POST https://graph.microsoft.com/v1.0/admin/exchange/mailboxes/MBX:e0648f21@aab0
     ]
 }
 ```
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-mailboxfolder-from--javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -111,6 +104,7 @@ Content-length: 179
   "parentMailboxUrl": "https://graph.microsoft.com/v1.0/admin/exchange/mailboxes/MBX:e0648f21@aab09c93",
   "childFolderCount": 0,
   "totalItemCount": 0,
+  "wellKnownName": null,
   "type": "IPF.Note"
 }
 ```
