@@ -118,7 +118,9 @@ If the drive doesn't exist and can't be provisioned automatically (when using de
 
 ## Examples
 
-### Request
+### Example 1: Get a drive
+
+#### Request
 
 The following example shows a request.
 # [HTTP](#tab/http)
@@ -158,10 +160,10 @@ GET /me/drive
 
 ---
 
-### Response
+#### Response
 
 The following example shows the response.
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.drive", "truncated": true, "name": ["get-drive-by-id", "get-drive-by-group", "get-drive-by-user", "get-drive-default" , "get-drive-by-site-id",] } -->
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.drive", "truncated": true, "name": ["get-drive-by-id", "get-drive-by-group", "get-drive-by-user", "get-drive-default", "get-drive-by-site-id"] } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -181,6 +183,36 @@ Content-type: application/json
         "remaining": 1099447353539,
         "state": "normal",
         "total": 1099511627776
+    }
+}
+```
+
+### Example 2: Get a drive and its settings
+
+The **settings** property isn't returned by default. The following example uses `$select` to explicitly request it in the response.
+
+#### Request
+
+The following example shows a request.
+<!-- { "blockType": "request", "name": "get-drive-settings" } -->
+
+```msgraph-interactive
+GET /drives/b!t18F8ybsHUq1z3LTz8xvZqP8zaSWjkFNhsME-Fepo75dTf9vQKfeRblBZjoSQrd7?$select=id,settings
+```
+
+#### Response
+
+The following example shows the response.
+<!-- { "blockType": "response", "@odata.type": "microsoft.graph.drive", "truncated": true, "name": "get-drive-settings" } -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "id": "b!t18F8ybsHUq1z3LTz8xvZqP8zaSWjkFNhsME-Fepo75dTf9vQKfeRblBZjoSQrd7",
+    "settings": {
+        "itemDefaultSensitivityLabelId": "bf7ea563-b848-4ec8-9155-b2054564cfe4"
     }
 }
 ```
