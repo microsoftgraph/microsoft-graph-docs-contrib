@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 const chatMessage = {
     body: {
-        contentType: 'html',
+        messageBodyContentType: 'html',
         content: '<emoji alt=\"😶‍🌫️\"></emoji>'
     }
 };

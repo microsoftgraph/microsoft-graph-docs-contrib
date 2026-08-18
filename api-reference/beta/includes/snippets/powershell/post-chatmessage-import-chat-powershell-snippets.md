@@ -16,7 +16,7 @@ $params = @{
 		}
 	}
 	body = @{
-		contentType = "html"
+		messageBodyContentType = "html"
 		content = "Hello World"
 	}
 }

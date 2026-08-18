@@ -10,7 +10,7 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ChatMessage chatMessage = new ChatMessage();
 ChatMessageBody body = new ChatMessageBody();
-body.setContentType(BodyType.Html);
+body.setMessageBodyContentType(ChatMessageBodyContentType.Html);
 body.setContent("Here's the latest budget. <attachment id=\"153fa47d-18c9-4179-be08-9879815a9f90\"></attachment>");
 chatMessage.setBody(body);
 LinkedList<ChatMessageAttachment> attachments = new LinkedList<ChatMessageAttachment>();

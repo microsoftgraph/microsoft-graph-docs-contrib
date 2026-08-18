@@ -8,13 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph import GraphServiceClient
 from msgraph.generated.models.chat_message import ChatMessage
 from msgraph.generated.models.item_body import ItemBody
-from msgraph.generated.models.body_type import BodyType
 from msgraph.generated.models.chat_message_attachment import ChatMessageAttachment
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ChatMessage(
 	body = ItemBody(
-		content_type = BodyType.Html,
 		content = "Testing with file share link. <attachment id=\"668f7fa8-8129-4de7-b32b-fe1b442e6ef1\"></attachment>",
+		additional_data = {
+				"message_body_content_type" : "html",
+		}
 	),
 	attachments = [
 		ChatMessageAttachment(

@@ -14,7 +14,7 @@ var requestBody = new ChatMessage
 	Subject = "Announcement Subheading",
 	Body = new ChatMessageBody
 	{
-		ContentType = BodyType.Text,
+		MessageBodyContentType = ChatMessageBodyContentType.Text,
 		Content = "<attachment id=\"d7ddbf876ae340c3a03bada395ec7da7\"></attachment>Announcement text",
 	},
 	Attachments = new List<ChatMessageAttachment>

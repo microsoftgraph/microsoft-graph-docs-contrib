@@ -81,7 +81,6 @@ DELETE https://graph.microsoft.com/beta/users/0a3e7ad0-8d1b-4e25-ad43-5b7c7c2b5f
 
 ---
 
-
 ### Response
 
 The following example shows the response.

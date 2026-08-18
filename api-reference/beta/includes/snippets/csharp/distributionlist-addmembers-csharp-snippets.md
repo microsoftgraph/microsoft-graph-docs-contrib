@@ -18,8 +18,12 @@ var requestBody = new AddMembersPostRequestBody
 		{
 			DisplayName = "Megan Bowen",
 			Key = "MeganB@contoso.com",
-			RoutingType = "SMTP",
-			RecipientType = RecipientType.Mailbox,
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"type" , "mailbox"
+				},
+			},
 		},
 	},
 };

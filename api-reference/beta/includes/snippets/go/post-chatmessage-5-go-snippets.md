@@ -17,10 +17,12 @@ import (
 
 requestBody := graphmodels.NewChatMessage()
 body := graphmodels.NewItemBody()
-contentType := graphmodels.HTML_BODYTYPE 
-body.SetContentType(&contentType) 
 content := "Testing with file share link. <attachment id=\"668f7fa8-8129-4de7-b32b-fe1b442e6ef1\"></attachment>"
 body.SetContent(&content) 
+additionalData := map[string]interface{}{
+	"messageBodyContentType" : "html", 
+}
+body.SetAdditionalData(additionalData)
 requestBody.SetBody(body)
 
 

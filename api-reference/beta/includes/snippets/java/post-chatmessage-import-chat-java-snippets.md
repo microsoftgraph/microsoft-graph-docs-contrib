@@ -21,7 +21,7 @@ user.setAdditionalData(additionalData);
 from.setUser(user);
 chatMessage.setFrom(from);
 ChatMessageBody body = new ChatMessageBody();
-body.setContentType(BodyType.Html);
+body.setMessageBodyContentType(ChatMessageBodyContentType.Html);
 body.setContent("Hello World");
 chatMessage.setBody(body);
 ChatMessage result = graphClient.chats().byChatId("{chat-id}").messages().post(chatMessage);

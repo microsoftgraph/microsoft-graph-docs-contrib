@@ -9,7 +9,7 @@ Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
 	subject = $null
 	body = @{
-		contentType = "html"
+		messageBodyContentType = "html"
 		content = "<attachment id="74d20c7f34aa4a7fb74e2b30004247c5"></attachment>"
 	}
 	attachments = @(

@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.chat_message import ChatMessage
 from msgraph_beta.generated.models.chat_message_body import ChatMessageBody
-from msgraph_beta.generated.models.body_type import BodyType
+from msgraph_beta.generated.models.chat_message_body_content_type import ChatMessageBodyContentType
 from msgraph_beta.generated.models.chat_message_attachment import ChatMessageAttachment
 from msgraph_beta.generated.models.chat_message_hosted_content import ChatMessageHostedContent
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ChatMessage(
 	subject = "Announcement Subheading",
 	body = ChatMessageBody(
-		content_type = BodyType.Text,
+		message_body_content_type = ChatMessageBodyContentType.Text,
 		content = "<attachment id=\"d7ddbf876ae340c3a03bada395ec7da7\"></attachment>Announcement text",
 	),
 	attachments = [

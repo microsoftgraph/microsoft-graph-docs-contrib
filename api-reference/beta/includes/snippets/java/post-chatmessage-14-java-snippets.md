@@ -10,7 +10,7 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ChatMessage chatMessage = new ChatMessage();
 ChatMessageBody body = new ChatMessageBody();
-body.setContentType(BodyType.Html);
+body.setMessageBodyContentType(ChatMessageBodyContentType.Html);
 body.setContent("<codeblock class=\"plaintext\"><code>Hello world</code></codeblock>");
 chatMessage.setBody(body);
 ChatMessage result = graphClient.chats().byChatId("{chat-id}").messages().post(chatMessage);
