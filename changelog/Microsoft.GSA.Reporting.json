@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "e5482e18-1c0f-46b1-9866-ecc72b7af299",
+          "ApiChange": "Property",
+          "ChangedApiName": "privateSourceIp",
+          "ChangeType": "Addition",
+          "Description": "Added the **privateSourceIp** property to the [connection](https://learn.microsoft.com/en-us/graph/api/resources/networkaccess-connection?view=graph-rest-beta) resource.",
+          "Target": "connection"
+        }
+      ],
+      "Id": "e5482e18-1c0f-46b1-9866-ecc72b7af299",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-08-18T13:21:17.8588709Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Network access"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "7e6f4535-a9b3-4839-8bc6-2942a64af02f",
           "ApiChange": "Resource",
           "ChangedApiName": "connectionSummary",

@@ -18,6 +18,12 @@ For details about previous updates to Microsoft Graph, see [Microsoft Graph what
 > [!IMPORTANT]
 > Features in _preview_ status are subject to change without notice, and might not be promoted to generally available (GA) status. Don't use preview features in production apps.
 
+## August 2026: New in preview only
+
+### Identity and access | Network access
+
+Added the **privateSourceIp** property to the [connection](/graph/api/resources/networkaccess-connection?view=graph-rest-beta&preserve-view=true) resource type to identify the original private source IP address of a network flow.
+
 ## July 2026: New and generally available
 
 ### Device and app management | Cloud PC

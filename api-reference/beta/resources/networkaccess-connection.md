@@ -45,6 +45,7 @@ In Global Secure Access (GSA) a connection represents multiple [networkAccessTra
 |networkProtocol|microsoft.graph.networkaccess.networkingProtocol|The network protocol of the connection. The possible values are: `ip`, `icmp`, `igmp`, `ggp`, `ipv4`, `tcp`, `pup`, `udp`, `idp`, `ipv6`, `ipv6RoutingHeader`, `ipv6FragmentHeader`, `ipSecEncapsulatingSecurityPayload`, `ipSecAuthenticationHeader`, `icmpV6`, `ipv6NoNextHeader`, `ipv6DestinationOptions`, `nd`, `raw`, `ipx`, `spx`, `spxII`, `unknownFutureValue`.|
 |popProcessingRegion|String|The Point-of-Presence processing region of the traffic.|
 |privateAccessDetails|[microsoft.graph.networkaccess.privateAccessDetails](../resources/networkaccess-privateaccessdetails.md)|Private access details.|
+|privateSourceIp|String|The private source IP address of the inner flow.|
 |receivedBytes|Int64|Accumulative bytes received.|
 |sentBytes|Int64|Accumulative bytes sent.|
 |sourceIp|String|The source IP of the connection.|
@@ -102,6 +103,7 @@ The following JSON representation shows the resource type.
   "privateAccessDetails": {
     "@odata.type": "microsoft.graph.networkaccess.privateAccessDetails"
   },
+  "privateSourceIp": "String",
   "deviceCategory": "String",
   "userPrincipalName": "String",
   "transportProtocol": "String",

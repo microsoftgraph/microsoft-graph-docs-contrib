@@ -131,6 +131,7 @@ Content-Type: application/json
     "destinationFqdn": "graph.microsoft.com",
     "userId": "87d349ed-44d7-43e1-9a83-5f2406dee5bd",
     "sourceIp": "192.168.1.100",
+    "privateSourceIp": "10.0.0.7",
     "sourcePort": 54321,
     "initiatingProcessName": "msedge.exe",
     "deviceId": "5b7c0300-45c3-487c-a6d3-a3098cb6e51b",
