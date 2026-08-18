@@ -25,6 +25,7 @@ Choose the permission or permissions marked as least privileged for this API. Us
 
 [!INCLUDE [rbac-ediscovery-custodian](../includes/rbac-for-apis/rbac-ediscovery-custodian-export-apis.md)]
 
+[!INCLUDE [rbac-ediscovery-apis-sitesread](../includes/rbac-for-apis/rbac-ediscovery-apis-sitesread.md)]
 ## HTTP request
 
 <!-- {
