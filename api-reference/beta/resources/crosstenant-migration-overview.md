@@ -43,7 +43,9 @@ Organizations often need to consolidate or reorganize Microsoft 365 environments
 
 ## Permissions
 
-To use this API, the calling app must have appropriate Microsoft Graph permissions. Typically, **Tenant administrator** privileges are required.
+Permissions vary by operation. List and Get operations support `CrossTenantContentMigration.Read.All` as the least privileged permission and `CrossTenantContentMigration.ReadWrite.All` as a higher privileged permission. All other operations require `CrossTenantContentMigration.ReadWrite.All`.
+
+Delegated permissions for work or school accounts and application permissions are supported. Delegated permissions for personal Microsoft accounts aren't supported. For delegated access, the signed-in user must also be assigned a supported Microsoft Entra role or a custom role that grants the permissions required for the operation. For the exact permissions and supported roles, see the **Permissions** section of each API operation.
 
 ## Related content
 
