@@ -7,7 +7,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.subservice: entra-applications
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 08/10/2026
+ms.date: 08/17/2026
 #Customer intent: As a developer, I want to learn more about the permissions available in Microsoft Graph, so that I understand the impact of granting specific permissions to my app.
 ---
 
@@ -4884,8 +4884,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | - | df96e8a0-f4e1-4ecf-8d83-a429f822cbd6 |
-| DisplayText | - | Allows the app to perform backup and restore of mailbox items |
-| Description | - | Allows the app to backup, restore, and modify mailbox items on behalf of the signed-in user. |
+| DisplayText | - | Export and import a user's mailbox items |
+| Description | - | Allows the app to export and import the user's mailbox items, on behalf of the signed-in user. |
 | AdminConsentRequired | - | Yes |
 
 ---
@@ -4895,8 +4895,8 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | Category | Application | Delegated |
 |--|--|--|
 | Identifier | 76577085-e73d-4f1d-b26a-85fb33892327 | - |
-| DisplayText | Allows the app to perform backup and restore for all mailbox items | - |
-| Description | Allows the app to backup, restore, and modify all mailbox items without a signed-in user. | - |
+| DisplayText | Export and import all the users' mailbox items | - |
+| Description | Allows the app to export and import all the users' mailbox items, without signed-in user. | - |
 | AdminConsentRequired | Yes | - |
 
 ---
@@ -6030,10 +6030,10 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 
 | Category | Application | Delegated |
 |--|--|--|
-| Identifier | - | 1e7a2f4c-e602-4b1b-9547-304dd65c4cc2 |
-| DisplayText | - | Read and write your organization's recovery policy |
-| Description | - | Allows the application to read and update the organization's recovery policy on behalf of the signed-in user. |
-| AdminConsentRequired | - | Yes |
+| Identifier | 795fc94d-3deb-4632-b1eb-e6d1a5f44918 | 1e7a2f4c-e602-4b1b-9547-304dd65c4cc2 |
+| DisplayText | Read and write your organization's recovery policy | Read and write your organization's recovery policy |
+| Description | Allows the application to read and update the organization's recovery policy without a signed-in user. | Allows the application to read and update the organization's recovery policy on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 
@@ -6069,6 +6069,17 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | AdminConsentRequired | - | No |
 
 ![personal Microsoft accounts][MSA] The *POP.AccessAsUser.All* delegated permission is available for consent in personal Microsoft accounts.
+
+---
+
+### PreAuthorizationGrant.Read.All
+
+| Category | Application | Delegated |
+|--|--|--|
+| Identifier | 66ae8ecc-328f-47f6-97ca-4d9e952df081 | 9c98cbde-410c-4719-9058-166504f17863 |
+| DisplayText | Read all preauthorization grants | Read all preauthorization grants |
+| Description | Allows the app to read preauthorization grants for service principals without a signed-in user. | Allows the app to read preauthorization grants for service principals on behalf of the signed-in user. |
+| AdminConsentRequired | Yes | Yes |
 
 ---
 

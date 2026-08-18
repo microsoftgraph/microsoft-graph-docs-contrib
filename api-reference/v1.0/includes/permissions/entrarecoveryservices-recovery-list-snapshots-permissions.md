@@ -9,3 +9,4 @@ ms.localizationpriority: medium
 |Delegated (work or school account)|EntraBackup.Read.All|Not available.|
 |Delegated (personal Microsoft account)|Not supported.|Not supported.|
 |Application|EntraBackup.Read.All|Not available.|
+

@@ -1,7 +1,7 @@
 ---
 title: "security: runHuntingQuery"
 description: "Run the hunting query API."
-ms.date: 11/11/2022
+ms.date: 07/02/2026
 author: "BenAlfasi"
 ms.localizationpriority: medium
 ms.subservice: "security"
@@ -48,12 +48,13 @@ POST /security/runHuntingQuery
 
 ## Request body
 
-In the request body, provide a JSON object for the `Query` parameter, and optionally include a `Timespan` parameter.
+In the request body, provide a JSON object with the `Query` property, and optionally include the `Timespan` and `workspaceId` properties.
 
 | Parameter    | Type            | Description                                                                                                                      | Example                                                            |
 |:-------------|:----------------|:---------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------|
 | Query        | String          | Required. The hunting query in Kusto Query Language (KQL). For more information, see [KQL quick reference](/azure/data-explorer/kql-quick-reference). |                                                                    |
 | Timespan     | String          | Optional. The interval of time over which to query data, in ISO 8601 format. The default value is 30 days, meaning if no startTime is specified, the query looks back 30 days from now. If a time filter is specified in both the query and the startTime parameter, the shorter time span is applied. For example, if the query has a filter for the last seven days and the startTime is 10 days ago, the query only looks back seven days. | |
+| workspaceId  | Guid            | Optional. The GUID of a specific Log Analytics workspace to target. If omitted, the service uses the caller's primary workspace. If the workspace isn't found or not accessible, the service falls back to the caller's primary workspace. | `00000000-0000-0000-0000-000000000001` |
 
 The following examples show the possible formats for the `Timespan` parameter:
 

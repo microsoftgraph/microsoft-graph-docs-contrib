@@ -35,6 +35,10 @@ Added the [recovery](/graph/api/resources/entrarecoveryservices-recovery) resour
 
 ## August 2026: New in preview only
 
+### Applications
+
+- Added the **coopEnforcement** property to the [authenticationBehaviors](/graph/api/resources/authenticationbehaviors?view=graph-rest-beta&preserve-view=true) resource. Application owners can use it to explicitly test Cross-Origin-Opener-Policy enforcement, temporarily suppress enforcement while remediating an incompatible browser authentication flow, or return to the service default.
+
 ### Files
 
 - Added the [Upsert columns](/graph/api/filestoragecontainer-patch-columns?view=graph-rest-beta&preserve-view=true) method to the [fileStorageContainer](/graph/api/resources/filestoragecontainer?view=graph-rest-beta&preserve-view=true) resource type to create or update up to 20 columnDefinition objects in a single request.
@@ -115,7 +119,7 @@ Added the **vapidPublicKey**, **webPushEncryptionP256dhPublicKey**, and **webPus
 
 - Updated [retrieveCloudPcTroubleshootReports](/graph/api/cloudpcreports-retrievecloudpctroubleshootreports?view=graph-rest-beta&preserve-view=true) on the [cloudPcReports](/graph/api/resources/cloudpcreports?view=graph-rest-beta&preserve-view=true) resource to support new troubleshooting report types across tenant, configuration, user and device, and view data table scopes.
 - [Create](/graph/api/virtualendpoint-post-cloudapps?view=graph-rest-beta&preserve-view=true) or [delete](/graph/api/cloudpccloudapp-delete?view=graph-rest-beta&preserve-view=true) a [cloud app](/graph/api/resources/cloudpccloudapp?view=graph-rest-beta&preserve-view=true).
-- Extended the **appDetail** property on [cloudPcCloudApp](/graph/api/resources/cloudpccloudapp?view=graph-rest-beta&preserve-view=true) to support the [cloudPcAutomaticDiscoveredAppDetail](/graph/api/resources/cloudpcautomaticdiscoveredappdetail?view=graph-rest-beta&preserve-view=true) type for apps automatically discovered from the *start* menu, and the [cloudPcFilePathAppDetail](/graph/api/resources/cloudpcfilepathappdetail.md) type for apps manually created when a file path is specified.
+- Extended the **appDetail** property on [cloudPcCloudApp](/graph/api/resources/cloudpccloudapp?view=graph-rest-beta&preserve-view=true) to support the [cloudPcAutomaticDiscoveredAppDetail](/graph/api/resources/cloudpcautomaticdiscoveredappdetail?view=graph-rest-beta&preserve-view=true) type for apps automatically discovered from the *start* menu, and the [cloudPcFilePathAppDetail](/graph/api/resources/cloudpcfilepathappdetail) type for apps manually created when a file path is specified.
 - Added the `iconPathInvalid` and `filePathInvalid` members as supported values for the **actionFailedErrorCode** property on the [cloudPcCloudApp](/graph/api/resources/cloudpccloudapp?view=graph-rest-beta&preserve-view=true). Use these members to indicate that the icon or file path specified for the cloud app is invalid.
 - Added the [cloudPcPool](/graph/api/resources/cloudpcpool?view=graph-rest-beta&preserve-view=true) resource and its derived type [cloudPcAgentPool](/graph/api/resources/cloudpcagentpool?view=graph-rest-beta&preserve-view=true) to enable management of Cloud PC pools for agentic workloads.
 - Added the [cloudPcPoolAssignment](/graph/api/resources/cloudpcpoolassignment?view=graph-rest-beta&preserve-view=true) resource and its derived type [cloudPcAgentPoolUserAssignment](/graph/api/resources/cloudpcagentpooluserassignment?view=graph-rest-beta&preserve-view=true) to manage pool assignments.
@@ -173,6 +177,10 @@ Added the [getSharePointApiUsage](/graph/api/reportroot-getsharepointapiusage?vi
   - Added the **methodType** property to [verifiedIdProfileConfiguration](/graph/api/resources/verifiedidprofileconfiguration?view=graph-rest-beta&preserve-view=true) to specify the verification method category, including tenant custom credentials, verified employee credentials, and identity verification partners. Introduced the **verifiedIdMethodType** enumeration to support these scenarios.
   - Added the **manifestUrl** property to [verifiedIdProfileConfiguration](/graph/api/resources/verifiedidprofileconfiguration?view=graph-rest-beta&preserve-view=true) to reference the credential issuer's manifest defining the credential schema and issuer details.
   - Added the `verification` member to the **verifiedIdUsageConfigurationPurpose** enumeration to enable just-in-time identity verification scenarios, such as step-up authentication enforcement through Conditional Access policies.
+
+### Security | Advanced hunting
+
+Added the optional **workspaceId** parameter to the [runHuntingQuery](/graph/api/security-security-runhuntingquery) method to target a specific Log Analytics workspace.
 
 ### Security | Alerts and incidents
 
