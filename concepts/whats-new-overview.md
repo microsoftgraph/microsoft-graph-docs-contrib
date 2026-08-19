@@ -123,6 +123,7 @@ Added support for user-centric (catalog-scope) access reviews through the **unif
 
 ### Backup and recovery | Microsoft 365 Backup and Storage
 
+Added the **createdBy**, **createdDateTime**, **lastModifiedBy**, and **lastModifiedDateTime** properties to the [browseQueryResponseItem](/graph/api/resources/browsequeryresponseitem?view=graph-rest-beta&preserve-view=true) resource. Use these properties to get the identity and timestamp details for when a browse item was created and last modified.
 - Added the **optimizedBrowse** parameter to the [sharePointBrowseSession: browse](/graph/api/sharepointbrowsesession-browse?view=graph-rest-beta&preserve-view=true) method of the [sharePointBrowseSession](/graph/api/resources/sharepointbrowsesession?view=graph-rest-beta&preserve-view=true) resource. Set this parameter to `true` to retrieve files and folders in a single request when the backup artifact has a single site and a single document library.
 - Added the **optimizedBrowse** parameter to the [oneDriveForBusinessBrowseSession: browse](/graph/api/onedriveforbusinessbrowsesession-browse?view=graph-rest-beta&preserve-view=true) method of the [oneDriveForBusinessBrowseSession](/graph/api/resources/onedriveforbusinessbrowsesession?view=graph-rest-beta&preserve-view=true) resource. Set this parameter to `true` to retrieve files and folders in a single request when the backup artifact has a single site and a single document library.
 
