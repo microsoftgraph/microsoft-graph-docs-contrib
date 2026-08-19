@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "e845e70f-0e71-4ef3-ab89-4b1bbb9d9953",
+          "ApiChange": "Property",
+          "ChangedApiName": "complianceUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **complianceUrl** property to the [policyTipAction](https://learn.microsoft.com/en-us/graph/api/resources/policyTipAction?view=graph-rest-beta) resource.",
+          "Target": "policyTipAction"
+        },
+        {
+          "Id": "e845e70f-0e71-4ef3-ab89-4b1bbb9d9953",
+          "ApiChange": "Property",
+          "ChangedApiName": "matchedConditionsDescription",
+          "ChangeType": "Addition",
+          "Description": "Added the **matchedConditionsDescription** property to the [policyTipAction](https://learn.microsoft.com/en-us/graph/api/resources/policyTipAction?view=graph-rest-beta) resource.",
+          "Target": "policyTipAction"
+        }
+      ],
+      "Id": "e845e70f-0e71-4ef3-ab89-4b1bbb9d9953",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2026-08-19T05:18:33.5364712Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Data security and compliance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "86651b97-6020-453d-9460-572f5efeb88b",
           "ApiChange": "Resource",
           "ChangedApiName": "embeddingInput",
