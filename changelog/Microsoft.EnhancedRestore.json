@@ -1,5 +1,31 @@
 {
   "changelog": [
+        {
+          "ChangeList": [
+            {
+              "Id": "a22559ba-bd75-4d84-9ad4-5eaa3795272d",
+              "ApiChange": "Method",
+              "ChangedApiName": "browse",
+              "ChangeType": "Update",
+              "Description": "Added the **optimizedBrowse** optional parameter to the [browse](https://learn.microsoft.com/graph/api/sharepointbrowsesession-browse?view=graph-rest-beta) method of the [sharePointBrowseSession](https://learn.microsoft.com/graph/api/resources/sharepointbrowsesession?view=graph-rest-beta) resource to directly browse files and folders when the artifact has a single site and a single document library.",
+              "Target": "sharePointBrowseSession"
+            },
+            {
+              "Id": "8521e56d-f301-4f1b-a2a9-40acb2b59d8a",
+              "ApiChange": "Method",
+              "ChangedApiName": "browse",
+              "ChangeType": "Update",
+              "Description": "Added the **optimizedBrowse** optional parameter to the [browse](https://learn.microsoft.com/graph/api/onedriveforbusinessbrowsesession-browse?view=graph-rest-beta) method of the [oneDriveForBusinessBrowseSession](https://learn.microsoft.com/graph/api/resources/onedriveforbusinessbrowsesession?view=graph-rest-beta) resource to directly browse files and folders when the artifact has a single site and a single document library.",
+              "Target": "oneDriveForBusinessBrowseSession"
+            }
+          ],
+          "Id": "cce61b61-33c8-47df-ae2b-6c022d2f9dba",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2026-08-19T21:52:42.9632648Z",
+          "WorkloadArea": "Backup and recovery",
+          "SubArea": "Microsoft 365 backup and storage"
+        },
          {
           "ChangeList": [
             {

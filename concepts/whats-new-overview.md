@@ -121,6 +121,11 @@ Added support for user-centric (catalog-scope) access reviews through the **unif
 
 ## July 2026: New in preview only
 
+### Backup and recovery | Microsoft 365 Backup and Storage
+
+- Added the **optimizedBrowse** parameter to the [sharePointBrowseSession: browse](/graph/api/sharepointbrowsesession-browse?view=graph-rest-beta&preserve-view=true) method of the [sharePointBrowseSession](/graph/api/resources/sharepointbrowsesession?view=graph-rest-beta&preserve-view=true) resource. Set this parameter to `true` to retrieve files and folders in a single request when the backup artifact has a single site and a single document library.
+- Added the **optimizedBrowse** parameter to the [oneDriveForBusinessBrowseSession: browse](/graph/api/onedriveforbusinessbrowsesession-browse?view=graph-rest-beta&preserve-view=true) method of the [oneDriveForBusinessBrowseSession](/graph/api/resources/onedriveforbusinessbrowsesession?view=graph-rest-beta&preserve-view=true) resource. Set this parameter to `true` to retrieve files and folders in a single request when the backup artifact has a single site and a single document library.
+
 ### Change notifications
 
 Added the **vapidPublicKey**, **webPushEncryptionP256dhPublicKey**, and **webPushEncryptionSecret** properties to the [subscription](/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true) resource to support encrypted change notifications delivered to browser-native Web Push endpoints (Apple, Mozilla, FCM). Browser-based applications can now register with Microsoft Graph to receive change notifications through the W3C Push API channel without operating a public webhook. See [RFC 8291](https://www.rfc-editor.org/rfc/rfc8291.html) and [RFC 8292](https://www.rfc-editor.org/rfc/rfc8292.html) for the underlying encryption and authentication protocols.

@@ -43,15 +43,16 @@ POST /solutions/backupRestore/sharePointBrowseSessions/{sharePointBrowseSessionI
 
 ## Request body
 
-Users should make a request with an empty body to get the list of the top browsable locations.
+To get top browsable locations, in the request body, supply an empty JSON object `{}`.
 
-In the request body, supply a JSON representation of the following parameters.
+To browse a specific scope, in the request body, supply a JSON representation of the following parameters.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
 |browseLocationItemKey|String|The item key of the location that you want to browse. Optional.|
-|browseResourceType|[browsableResourceType](../resources/enums.md#browsableresourcetype-values)|The type of the browsable location. Optional. The possible values are `none`, `site`, `documentLibrary`, `folder`, and `unknownFutureValue`. Optional.|
+|browseResourceType|[browsableResourceType](../resources/enums.md#browsableresourcetype-values)|The type of the browsable location. The possible values are `none`, `site`, `documentLibrary`, `folder`, and `unknownFutureValue`. Optional.|
 |filter|String|Contains the search expression. Optional.|
+|optimizedBrowse|Boolean|Indicates whether to use the optimized browse flow to directly retrieve files and folders when the artifact has a single site and single document library. Optional. Returns `409 Conflict` if multiple sites or document libraries exist.|
 |orderBy|[browseQueryOrder](../resources/enums.md#browsequeryorder-values)|Specifies the order by which response should be ordered. Optional.|
 
 The following table shows examples of possible formats for the filter expression. The filter is supported only on the `name` property.
@@ -63,6 +64,8 @@ The following table shows examples of possible formats for the filter expression
 ## Response
 
 If successful, this function returns a `200 OK` response code and a [browseQueryResponseItem](../resources/browsequeryresponseitem.md) collection in the response body.
+
+When **optimizedBrowse** is `true` but the artifact contains multiple sites or document libraries, this method returns a `409 Conflict` response code. In this case, use the regular browse flow.
 
 ## Examples
 
@@ -115,7 +118,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Browse a specify resource
+### Example 2: Browse a specific resource
 
 #### Request
 
@@ -366,6 +369,125 @@ Content-Type: application/json
             "type": "file",
             "itemsCount": 0,
             "sizeInBytes": "2504"
+        }
+    ]
+}
+```
+
+### Example 4: Browse items by using the optimized browse flow
+
+When the browse session targets a single site that contains a single document library, set **optimizedBrowse** to `true` to directly get the files and folders in the artifact without specifying **browseResourceType**.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "sharepointbrowsesessionthis.browse.optimized"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/solutions/backupRestore/sharePointBrowseSessions/m_RtZ8BiiUXOK69cuN6gwubfm9_yeVlDg8s6hci01_cVOAE/browse
+Content-Type: application/json
+
+{
+  "optimizedBrowse": true
+}
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.browseQueryResponseItem)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.browseQueryResponseItem)",
+    "@odata.count": 3,
+    "value": [
+        {
+            "itemKey": "a535851e-9fc6-4eb1-90ab-2955fd9117b5,2a8b7eaf-092a-4561-a25a-998ad2e5142e,38eec3f1-b879-44a6-8ae6-05bd46ed4b3d,f1a2b3c4-5678-90ab-cdef-1234567890ab",
+            "name": "Documents",
+            "webUrl": "https://contoso.sharepoint.com/sites/site1/Shared%20Documents",
+            "type": "folder"
+        },
+        {
+            "itemKey": "a535851e-9fc6-4eb1-90ab-2955fd9117b5,2a8b7eaf-092a-4561-a25a-998ad2e5142e,38eec3f1-b879-44a6-8ae6-05bd46ed4b3d,a1b2c3d4-5678-90ab-cdef-0987654321ba",
+            "name": "Site Assets",
+            "webUrl": "https://contoso.sharepoint.com/sites/site1/SiteAssets/Folder1",
+            "type": "folder"
+        },
+        {
+            "itemKey": "a535851e-9fc6-4eb1-90ab-2955fd9117b5,2a8b7eaf-092a-4561-a25a-998ad2e5142e,38eec3f1-b879-44a6-8ae6-05bd46ed4b3d,b2c3d4e5-6789-01ab-cdef-9876543210ba",
+            "name": "Presentation",
+            "webUrl": "https://contoso.sharepoint.com/sites/site1/SiteAssets/Presentation.ppt",
+            "type": "file"
+        }
+    ]
+}
+```
+
+### Example 5: Search items by using the optimized browse flow with a filter
+
+The following example uses the optimized browse flow together with a **filter** to return only the items whose name contains `Folder`.
+
+#### Request
+
+The following example shows a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "sharepointbrowsesessionthis.browse.optimizedfilter"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/solutions/backupRestore/sharePointBrowseSessions/m_RtZ8BiiUXOK69cuN6gwubfm9_yeVlDg8s6hci01_cVOAE/browse
+Content-Type: application/json
+
+{
+  "optimizedBrowse": true,
+  "filter": "(name -contains 'Folder')"
+}
+```
+
+#### Response
+
+The following example shows the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.browseQueryResponseItem)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.browseQueryResponseItem)",
+    "@odata.count": 2,
+    "value": [
+        {
+            "itemKey": "a535851e-9fc6-4eb1-90ab-2955fd9117b5,2a8b7eaf-092a-4561-a25a-998ad2e5142e,38eec3f1-b879-44a6-8ae6-05bd46ed4b3d,a1b2c3d4-5678-90ab-cdef-0987654321ba",
+            "name": "Folder1",
+            "webUrl": "https://contoso.sharepoint.com/sites/site1/SiteAssets/Folder1",
+            "type": "folder"
+        },
+        {
+            "itemKey": "a535851e-9fc6-4eb1-90ab-2955fd9117b5,2a8b7eaf-092a-4561-a25a-998ad2e5142e,38eec3f1-b879-44a6-8ae6-05bd46ed4b3d,b2c3d4e5-6789-01ab-cdef-9876543210ba",
+            "name": "FolderFile.txt",
+            "webUrl": "https://contoso.sharepoint.com/sites/site1/SiteAssets/Folder1/FolderFile.txt",
+            "type": "file"
         }
     ]
 }
