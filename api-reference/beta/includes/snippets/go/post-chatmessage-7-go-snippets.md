@@ -19,8 +19,8 @@ requestBody := graphmodels.NewChatMessage()
 subject := null
 requestBody.SetSubject(&subject) 
 body := graphmodels.NewChatMessageBody()
-contentType := graphmodels.HTML_BODYTYPE 
-body.SetContentType(&contentType) 
+messageBodyContentType := graphmodels.HTML_CHATMESSAGEBODYCONTENTTYPE 
+body.SetMessageBodyContentType(&messageBodyContentType) 
 content := "<attachment id=\"74d20c7f34aa4a7fb74e2b30004247c5\"></attachment>"
 body.SetContent(&content) 
 requestBody.SetBody(body)

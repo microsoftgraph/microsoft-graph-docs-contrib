@@ -59,6 +59,7 @@ If successful, this method returns a `202 Accepted` response code with a `Locati
 The following example creates a recovery job for all changes.
 
 #### Request
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_recoveryjob_nofilter"
@@ -67,6 +68,12 @@ The following example creates a recovery job for all changes.
 ``` http
 POST https://graph.microsoft.com/v1.0/directory/recovery/snapshots/MjAyNC0wOC0yNlQwMjozMDowMFo=/recoveryJobs
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-recoveryjob-nofilter-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ---
 
@@ -86,6 +93,7 @@ Location: https://graph.microsoft.com/v1.0/directory/recovery/snapshots/MjAyNC0w
 The following example creates a recovery job for only user entity changes.
 
 #### Request
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_recoveryjob_entitytypes"
@@ -105,6 +113,12 @@ Content-Type: application/json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-recoveryjob-entitytypes-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ---
 
 #### Response
@@ -123,6 +137,7 @@ Location: https://graph.microsoft.com/v1.0/directory/recovery/snapshots/MjAyNC0w
 The following example creates a recovery job for specific users and groups.
 
 #### Request
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_recoveryjob_entityids"
@@ -154,6 +169,12 @@ Content-Type: application/json
   }
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-recoveryjob-entityids-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ---
 

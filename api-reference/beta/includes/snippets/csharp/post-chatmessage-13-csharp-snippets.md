@@ -13,7 +13,7 @@ var requestBody = new ChatMessage
 {
 	Body = new ChatMessageBody
 	{
-		ContentType = BodyType.Html,
+		MessageBodyContentType = ChatMessageBodyContentType.Html,
 		Content = "<emoji alt=\"😶‍🌫️\"></emoji>",
 	},
 };

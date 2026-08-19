@@ -10,7 +10,7 @@ from msgraph_beta.generated.models.chat_message import ChatMessage
 from msgraph_beta.generated.models.chat_message_from_identity_set import ChatMessageFromIdentitySet
 from msgraph_beta.generated.models.identity import Identity
 from msgraph_beta.generated.models.chat_message_body import ChatMessageBody
-from msgraph_beta.generated.models.body_type import BodyType
+from msgraph_beta.generated.models.chat_message_body_content_type import ChatMessageBodyContentType
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ChatMessage(
 	created_date_time = "2019-02-04T19:58:15.511Z",
@@ -24,7 +24,7 @@ request_body = ChatMessage(
 		),
 	),
 	body = ChatMessageBody(
-		content_type = BodyType.Html,
+		message_body_content_type = ChatMessageBodyContentType.Html,
 		content = "Hello World",
 	),
 )

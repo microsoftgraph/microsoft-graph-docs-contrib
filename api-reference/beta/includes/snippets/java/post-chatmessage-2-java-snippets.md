@@ -10,7 +10,7 @@ GraphServiceClient graphClient = new GraphServiceClient(requestAdapter);
 
 ChatMessage chatMessage = new ChatMessage();
 ChatMessageBody body = new ChatMessageBody();
-body.setContentType(BodyType.Html);
+body.setMessageBodyContentType(ChatMessageBodyContentType.Html);
 body.setContent("Hello World <at id=\"0\">Jane Smith</at>");
 chatMessage.setBody(body);
 LinkedList<ChatMessageMention> mentions = new LinkedList<ChatMessageMention>();

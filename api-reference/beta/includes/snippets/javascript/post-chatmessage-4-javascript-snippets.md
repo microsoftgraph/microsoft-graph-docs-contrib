@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 const chatMessage = {
     body: {
-        contentType: 'html',
+        messageBodyContentType: 'html',
         content: 'Here\'s the latest budget. <attachment id=\"153fa47d-18c9-4179-be08-9879815a9f90\"></attachment>'
     },
     attachments: [

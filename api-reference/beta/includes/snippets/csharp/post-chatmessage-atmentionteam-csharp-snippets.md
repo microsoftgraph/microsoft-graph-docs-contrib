@@ -13,7 +13,7 @@ var requestBody = new ChatMessage
 {
 	Body = new ChatMessageBody
 	{
-		ContentType = BodyType.Html,
+		MessageBodyContentType = ChatMessageBodyContentType.Html,
 		Content = "<at id=\"0\">GraphTesting</at>&nbsp;Hello team",
 	},
 	Mentions = new List<ChatMessageMention>

@@ -17,8 +17,8 @@ import (
 
 requestBody := graphmodels.NewChatMessage()
 body := graphmodels.NewChatMessageBody()
-contentType := graphmodels.HTML_BODYTYPE 
-body.SetContentType(&contentType) 
+messageBodyContentType := graphmodels.HTML_CHATMESSAGEBODYCONTENTTYPE 
+body.SetMessageBodyContentType(&messageBodyContentType) 
 content := "<emoji alt=\"😶‍🌫️\"></emoji>"
 body.SetContent(&content) 
 requestBody.SetBody(body)

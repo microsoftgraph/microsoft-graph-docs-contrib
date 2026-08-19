@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "eb857460-af07-4472-bbbf-44066948647d",
+          "ApiChange": "Property",
+          "ChangedApiName": "wellKnownName",
+          "ChangeType": "Addition",
+          "Description": "Added the **wellKnownName** property to the [mailboxFolder](https://learn.microsoft.com/en-us/graph/api/resources/mailboxfolder?view=graph-rest-1.0) resource.",
+          "Target": "mailboxFolder"
+        }
+      ],
+      "Id": "eb857460-af07-4472-bbbf-44066948647d",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2026-08-18T19:01:38.2601002Z",
+      "WorkloadArea": "Mailbox import and export",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c7b587d4-6f9b-479a-8c75-48ac4053e4c2",
           "ApiChange": "Property",
           "ChangedApiName": "contactId",

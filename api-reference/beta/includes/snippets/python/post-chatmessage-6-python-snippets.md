@@ -8,12 +8,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 from msgraph_beta import GraphServiceClient
 from msgraph_beta.generated.models.chat_message import ChatMessage
 from msgraph_beta.generated.models.chat_message_body import ChatMessageBody
-from msgraph_beta.generated.models.body_type import BodyType
+from msgraph_beta.generated.models.chat_message_body_content_type import ChatMessageBodyContentType
 from msgraph_beta.generated.models.chat_message_hosted_content import ChatMessageHostedContent
 # To initialize your graph_client, see https://learn.microsoft.com/en-us/graph/sdks/create-client?from=snippets&tabs=python
 request_body = ChatMessage(
 	body = ChatMessageBody(
-		content_type = BodyType.Html,
+		message_body_content_type = ChatMessageBodyContentType.Html,
 		content = "<img height=\"297\" src=\"../hostedContents/1/$value\" width=\"297\">",
 	),
 	hosted_contents = [
